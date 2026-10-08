@@ -1,7 +1,8 @@
-import { FACTIONS, ORIGINS, startingFactions } from "./character";
+import { FACTIONS, ORIGINS, STATS, startingFactions } from "./character";
 import { journalEntry } from "./journal";
 import { SCENES } from "./story";
 import { ITEMS } from "./items";
+import { presentChoices } from "./engine";
 import type { Codex, ComplicationId, FactionId, GameState, JournalEntry, OriginId } from "./types";
 
 const SAVE_KEY = "saint-shard-3055-v1";
@@ -9,7 +10,7 @@ const SOUND_KEY = "saint-shard-sound";
 const TEXT_KEY = "saint-shard-text";
 const CODEX_KEY = "saint-shard-codex";
 
-function readStored(key: string): string | null {
+export function readStored(key: string): string | null {
   if (typeof window === "undefined") return null;
   try {
     return window.localStorage.getItem(key);
@@ -18,7 +19,7 @@ function readStored(key: string): string | null {
   }
 }
 
-function writeStored(key: string, value: string): boolean {
+export function writeStored(key: string, value: string): boolean {
   if (typeof window === "undefined") return false;
   try {
     window.localStorage.setItem(key, value);
@@ -26,6 +27,14 @@ function writeStored(key: string, value: string): boolean {
   } catch {
     return false;
   }
+}
+
+export function removeStored(key: string): boolean {
+  if (typeof window === "undefined") return false;
+  try {
+    window.localStorage.removeItem(key);
+    return true;
+  } catch { return false; }
 }
 
 const COMPLICATIONS = new Set<ComplicationId>(["debt", "optic", "on-file"]);
@@ -37,25 +46,34 @@ function isOrigin(value: unknown): value is OriginId {
 function isJournal(value: unknown): value is JournalEntry[] {
   return (
     Array.isArray(value) &&
-    value.every((entry) => entry && typeof entry.id === "string" && typeof entry.text === "string")
+    value.every((entry) => entry && typeof entry.id === "string" && typeof entry.text === "string" && (entry.kind === undefined || ["fact", "claim", "promise"].includes(entry.kind)))
   );
 }
 
 function isFactions(value: unknown): value is Record<FactionId, number> {
   if (!value || typeof value !== "object") return false;
-  return FACTIONS.every((faction) => typeof (value as Record<string, unknown>)[faction] === "number");
+  return FACTIONS.every((faction) => {
+    const score = (value as Record<string, unknown>)[faction];
+    return typeof score === "number" && Number.isInteger(score) && score >= -3 && score <= 5;
+  });
 }
 
 function migrate(data: Record<string, unknown>): GameState | null {
   if (typeof data.handle !== "string" || typeof data.sceneId !== "string") return null;
-  if (!SCENES[data.sceneId] || !isOrigin(data.origin)) return null;
+  if (!Object.hasOwn(SCENES, data.sceneId) || !isOrigin(data.origin)) return null;
   if (!data.stats || typeof data.creds !== "number" || typeof data.strain !== "number") return null;
   if (!Array.isArray(data.items) || !Array.isArray(data.journal) || !Array.isArray(data.rolls)) return null;
   if (!data.flags || typeof data.flags !== "object") return null;
+  const stats = data.stats as Record<string, unknown>;
+  if (!STATS.every((id) => typeof stats[id] === "number" && Number.isInteger(stats[id]) && (stats[id] as number) >= 0 && (stats[id] as number) <= 5)) return null;
+  if (!Number.isFinite(data.creds) || (data.creds as number) < 0 || !Number.isInteger(data.strain) || (data.strain as number) < 0 || (data.strain as number) > 5) return null;
+  if (Array.isArray(data.flags) || !Object.values(data.flags).every((value) => typeof value === "boolean")) return null;
+  if (!data.items.every((id) => typeof id === "string" && Object.hasOwn(ITEMS, id))) return null;
+  if (!data.rolls.every((roll) => roll && typeof roll.label === "string" && Number.isInteger(roll.roll) && roll.roll >= 1 && roll.roll <= 10 && Number.isFinite(roll.total) && Number.isFinite(roll.dc) && typeof roll.success === "boolean")) return null;
   const journal = data.journal.map((line) => (typeof line === "string" ? journalEntry(line) : line));
   if (!isJournal(journal)) return null;
   const complication = COMPLICATIONS.has(data.complication as ComplicationId) ? (data.complication as ComplicationId) : null;
-  return {
+  const state: GameState = {
     version: 2,
     handle: data.handle,
     givenName: typeof data.givenName === "string" && data.givenName ? data.givenName : data.handle,
@@ -73,10 +91,17 @@ function migrate(data: Record<string, unknown>): GameState | null {
     log: Array.isArray(data.log) ? data.log.filter((line): line is string => typeof line === "string").slice(0, 24) : [],
     sceneId: data.sceneId,
   };
+  if (data.pendingCheck !== undefined) {
+    const pending = data.pendingCheck as GameState["pendingCheck"];
+    const choice = pending && presentChoices(state, SCENES[state.sceneId]).find((entry) => entry.id === pending.choiceId && entry.check && entry.enabled);
+    if (!pending || pending.sceneId !== state.sceneId || !choice || !Number.isInteger(pending.roll) || pending.roll < 1 || pending.roll > 10) return null;
+    state.pendingCheck = { sceneId: state.sceneId, choiceId: pending.choiceId, roll: pending.roll };
+  }
+  return state;
 }
 
 export function parseSave(raw: string | null): GameState | null {
-  if (!raw) return null;
+  if (!raw || raw.length > 1_048_576) return null;
   try {
     const data = JSON.parse(raw) as Record<string, unknown>;
     if (data?.version !== 1 && data?.version !== 2) return null;
@@ -89,22 +114,22 @@ export function parseSave(raw: string | null): GameState | null {
 }
 
 export function loadSave(): GameState | null {
-  return parseSave(readStored(SAVE_KEY));
+  return parseSave(readStored(SAVE_KEY)) ?? parseSave(readStored(`${SAVE_KEY}-backup`));
 }
 
 export function writeSave(state: GameState): boolean {
+  const previous = readStored(SAVE_KEY);
+  if (previous && parseSave(previous)) writeStored(`${SAVE_KEY}-backup`, previous);
   return writeStored(SAVE_KEY, JSON.stringify(state));
 }
 
 export function clearSave(): boolean {
-  if (typeof window === "undefined") return false;
-  try {
-    window.localStorage.removeItem(SAVE_KEY);
-    return true;
-  } catch {
-    return false;
-  }
+  const removed = removeStored(SAVE_KEY);
+  return removeStored(`${SAVE_KEY}-backup`) && removed;
 }
+
+export function loadBackup(): GameState | null { return parseSave(readStored(`${SAVE_KEY}-backup`)); }
+export function usedBackup(): boolean { return !parseSave(readStored(SAVE_KEY)) && Boolean(loadBackup()); }
 
 export function loadSound(): boolean {
   return readStored(SOUND_KEY) === "on";

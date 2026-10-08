@@ -15,12 +15,18 @@ export function TitleScreen({
   onContinue,
   onNew,
   saveFailed,
+  recovered,
+  onSettings,
+  onSaves,
 }: {
   save: GameState | null;
   codex: Codex;
   onContinue: () => void;
   onNew: () => void;
   saveFailed: boolean;
+  recovered: boolean;
+  onSettings: () => void;
+  onSaves: () => void;
 }) {
   const [confirm, setConfirm] = useState(false);
   const scene = save ? getScene(save.sceneId) : null;
@@ -44,7 +50,10 @@ export function TitleScreen({
               {scene.finale ? `Read “${scene.endingTitle}”` : scene.ending ? "Continue the week" : "Continue"}
             </button>
           )}
+          <button className="ghost" type="button" onClick={onSaves}>Saves</button>
+          <button className="ghost" type="button" onClick={onSettings}>Settings</button>
         </div>
+        {recovered && <p role="status">Your last autosave could not be read. The automatic backup is ready to continue.</p>}
         {save && scene && (
           <p className="continue-note">
             {save.handle} {saveFailed ? "is available for this session. Keep this page open to keep your progress." : "is saved in this browser."} {currentGoal(save)}

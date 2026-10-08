@@ -82,14 +82,13 @@ function loopCrossfade(samples, fadeSeconds) {
   return out;
 }
 
-function theme() {
-  const chords = [
+function theme(chordsOverride = null, bar = 2) {
+  const chords = chordsOverride ?? [
     [110, 164.81, 220],
     [98, 146.83, 196],
     [87.31, 130.81, 174.61],
     [98, 155.56, 196],
   ];
-  const bar = 2;
   const fade = 0.45;
   const loopSeconds = bar * chords.length;
   const length = Math.floor(RATE * (loopSeconds + fade));
@@ -166,6 +165,9 @@ function sting(notes) {
 
 const files = {
   theme: theme(),
+  "theme-chapel": theme([[98, 146.83, 207.65], [98, 155.56, 220], [87.31, 130.81, 196], [98, 146.83, 233.08], [110, 164.81, 207.65], [98, 146.83, 196]], 4),
+  "theme-ward": theme([[130.81, 196, 261.63], [110, 164.81, 220], [87.31, 130.81, 174.61], [98, 146.83, 196], [130.81, 164.81, 261.63], [98, 196, 261.63]], 4),
+  "sting-memory": sting([392, 311.13, 196, 293.66]),
   rain: rain(),
   "sting-stall": sting([220, 277, 330]),
   "sting-chapel": sting([196, 247, 392]),

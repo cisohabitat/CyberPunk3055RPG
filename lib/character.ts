@@ -79,8 +79,8 @@ export const FACTION_INFO: Record<FactionId, { name: string; blurb: string }> = 
 };
 
 export const FACTION_CHECK: Record<FactionId, string> = {
-  quill: "No die reads this number. The stall remembers it.",
-  lumen: "At 2 or more, she uses your handle on the chapel step. No die reads this number.",
+  quill: "At 2 or more, call in a safe-room favor for a witness.",
+  lumen: "At 2 or more, she uses your handle on the chapel step and a witness transfer is easier.",
   helion: "At 1 or more, closing Ives's folio is easier.",
   wards: "At 1 or more, telling Kerr the names is easier.",
 };

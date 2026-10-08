@@ -238,6 +238,7 @@ export const ACT2_SCENES: Record<string, Scene> = {
     location: "District board, Ward Four",
     text: districtText,
     choices: [
+      { id: "origin-contract", label: "Call the contact who knew you before this job.", detail: "An origin-specific favor can earn a shelter, receiver, or freight clearance.", hideIfAnyFlag: ["origin_done", "act2_done"], next: (state) => `act2_origin_${state.origin}` },
       {
         id: "to-kerr",
         label: "Ward Four",
@@ -281,7 +282,10 @@ export const ACT2_SCENES: Record<string, Scene> = {
     location: "Ward Four",
     speaker: "Quill",
     text: streetText,
-    choices: [{ id: "read-board", label: "Read the board.", next: "districts" }],
+    choices: [
+      { id: "practice", label: "Learn one thing from the night.", detail: "Choose one practiced skill. Its checks gain +1 for the rest of this run.", hideIfFlag: "perk_trained", next: "act2_training" },
+      { id: "read-board", label: "Read the board.", next: "districts" },
+    ],
   },
   act2_kerr_door: {
     id: "act2_kerr_door",
@@ -447,6 +451,8 @@ export const ACT2_SCENES: Record<string, Scene> = {
     location: "The dry canal",
     text: middleText,
     choices: [
+      { id: "protect-witness", label: "Finish the promise to Nia Pell.", detail: "Move a living witness. A private roster did not give her a safe room.", requireAnyFlag: ["memory_redacted", "memory_witness"], hideIfFlag: "witness_done", next: "act2_witness_door" },
+      { id: "trace-order", label: "Trace Helion's counter-order.", detail: "Authenticate the command chain. An exported archive can draw surveillance.", requireFlag: "memory_intact", hideIfFlag: "archive_done", next: "act2_archive_door" },
       {
         id: "pay-tab",
         label: "Pay Quill's tab.",

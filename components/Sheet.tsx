@@ -1,10 +1,13 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { DialogFrame } from "./DialogFrame";
 import { Mark, originAccent } from "@/components/Mark";
 import { COMPLICATIONS, FACTIONS, FACTION_CHECK, FACTION_INFO, ORIGINS, STATS, STAT_INFO } from "@/lib/character";
 import { ITEMS } from "@/lib/items";
-import { journalTitle } from "@/lib/journal";
+import { journalKind, journalTitle, promiseStatus } from "@/lib/journal";
+import { learnedPerks } from "@/lib/progression";
+import { memoryDisposition } from "@/lib/evidence";
 import { metCast } from "@/lib/story/cast";
 import type { GameState } from "@/lib/types";
 
@@ -14,56 +17,28 @@ export function Sheet({ state, open, onClose, speaker }: { state: GameState; ope
   const [tab, setTab] = useState<"stats" | "gear" | "journal">("stats");
   const origin = ORIGINS[state.origin];
   const ref = useRef<HTMLElement>(null);
-  const closeRef = useRef(onClose);
-  closeRef.current = onClose;
+  const [narrow, setNarrow] = useState(false);
   const recent = (state.log ?? []).slice(-6).reverse();
-
   useEffect(() => {
-    if (!open) return;
-    const root = ref.current;
-    if (!root) return;
-    const narrow = window.matchMedia("(max-width: 1100px)").matches;
-    if (!narrow) return;
-    const focusable = () =>
-      [...root.querySelectorAll<HTMLElement>("button:not([disabled]), a[href], input, select, textarea")]
-        .filter((node) => node.tabIndex >= 0);
-    focusable()[0]?.focus();
-    function onKey(event: KeyboardEvent) {
-      if (event.key === "Escape") {
-        closeRef.current();
-        return;
-      }
-      if (event.key !== "Tab") return;
-      const nodes = focusable();
-      if (nodes.length === 0) return;
-      const first = nodes[0];
-      const last = nodes[nodes.length - 1];
-      if (event.shiftKey && document.activeElement === first) {
-        event.preventDefault();
-        last.focus();
-      } else if (!event.shiftKey && document.activeElement === last) {
-        event.preventDefault();
-        first.focus();
-      }
-    }
-    root.addEventListener("keydown", onKey);
-    return () => root.removeEventListener("keydown", onKey);
-  }, [open]);
+    const media = window.matchMedia("(max-width: 1100px)");
+    const update = () => setNarrow(media.matches);
+    update(); media.addEventListener("change", update);
+    return () => media.removeEventListener("change", update);
+  }, []);
 
-  return (
+  const content = (
     <aside
       ref={ref}
       id="runner-sheet"
-      className={open ? "sheet open" : "sheet"}
+      className={narrow ? "sheet open" : "sheet"}
       data-testid="sheet"
-      role={open ? "dialog" : "complementary"}
-      aria-modal={open ? true : undefined}
+      role="complementary"
       aria-label="Character sheet"
     >
       <div className="who">
         <Mark accent={originAccent(state.origin)} />
         <div>
-          <h2>{state.handle}</h2>
+          <h2 id="sheet-title">{state.handle}</h2>
           <p>
             {origin.name}
             {state.givenName !== state.handle ? ` · ${state.givenName}` : ""}
@@ -87,7 +62,7 @@ export function Sheet({ state, open, onClose, speaker }: { state: GameState; ope
           </li>
         ))}
       </ul>
-      <div className="tabs" role="tablist">
+      <div className="tabs" role="tablist" aria-label="Character details">
         {TABS.map((id, index) => (
           <button
             key={id}
@@ -116,8 +91,8 @@ export function Sheet({ state, open, onClose, speaker }: { state: GameState; ope
           </button>
         ))}
       </div>
-      {tab === "stats" && (
-        <div role="tabpanel" id="panel-stats" aria-labelledby="tab-stats">
+      <div hidden={tab !== "stats"} role="tabpanel" id="panel-stats" aria-labelledby="tab-stats">
+          {learnedPerks(state).map((perk) => <p className="perk" key={perk.stat}><strong>{perk.name}</strong> · {perk.description}</p>)}
           {STATS.map((stat) => (
             <div className="stat" key={stat}>
               <span className="stat-name">{STAT_INFO[stat].name}</span>
@@ -157,9 +132,7 @@ export function Sheet({ state, open, onClose, speaker }: { state: GameState; ope
             </ul>
           )}
         </div>
-      )}
-      {tab === "gear" && (
-        <ul className="gear" role="tabpanel" id="panel-gear" aria-labelledby="tab-gear">
+        <ul hidden={tab !== "gear"} className="gear" role="tabpanel" id="panel-gear" aria-labelledby="tab-gear">
           {state.items.length === 0 && <li className="empty">Pockets empty, which is a kind of honesty.</li>}
           {state.items.map((id) => (
             <li key={id}>
@@ -168,21 +141,22 @@ export function Sheet({ state, open, onClose, speaker }: { state: GameState; ope
             </li>
           ))}
         </ul>
-      )}
-      {tab === "journal" && (
-        <ul className="journal" role="tabpanel" id="panel-journal" aria-labelledby="tab-journal">
+        <ul hidden={tab !== "journal"} className="journal" role="tabpanel" id="panel-journal" aria-labelledby="tab-journal">
+          <li className="evidence-summary">{memoryDisposition(state)}</li>
           {state.journal.length === 0 && <li className="empty">The city has not told you anything you trust.</li>}
           {state.journal.map((entry) => (
             <li key={entry.id}>
               <strong>{journalTitle(entry)}</strong>
+              <small className="journal-kind">{journalKind(entry)}{journalKind(entry) === "promise" ? ` · ${promiseStatus(entry.id, state.flags)}` : ""}</small>
               <span>{entry.text}</span>
             </li>
           ))}
         </ul>
-      )}
       <button className="ghost sheet-toggle" type="button" onClick={onClose}>
         Close sheet
       </button>
     </aside>
   );
+  if (narrow) return open ? <DialogFrame titleId="sheet-title" className="sheet-drawer" onEscape={onClose}>{content}</DialogFrame> : null;
+  return content;
 }

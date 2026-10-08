@@ -13,43 +13,28 @@ export function DialogFrame({
   onEscape?: () => void;
   children: ReactNode;
 }) {
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLDialogElement>(null);
   const escape = useRef(onEscape);
   escape.current = onEscape;
 
   useEffect(() => {
     const root = ref.current;
     if (!root) return;
-    const focusable = () =>
-      [...root.querySelectorAll<HTMLElement>("button:not([disabled]), a[href], input, select, textarea")];
-    focusable()[0]?.focus();
-    function onKey(event: KeyboardEvent) {
-      if (event.key === "Escape") {
-        escape.current?.();
-        return;
-      }
-      if (event.key !== "Tab") return;
-      const nodes = focusable();
-      if (nodes.length === 0) return;
-      const first = nodes[0];
-      const last = nodes[nodes.length - 1];
-      if (event.shiftKey && document.activeElement === first) {
-        event.preventDefault();
-        last.focus();
-      } else if (!event.shiftKey && document.activeElement === last) {
-        event.preventDefault();
-        first.focus();
-      }
-    }
-    root.addEventListener("keydown", onKey);
-    return () => root.removeEventListener("keydown", onKey);
+    const opener = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    root.showModal();
+    if (!root.querySelector("button, input, select, textarea")) root.focus();
+    return () => {
+      root.close();
+      if (opener?.isConnected) opener.focus();
+      else document.getElementById("scene-top")?.focus({ preventScroll: true });
+    };
   }, []);
 
   return (
-    <div className="overlay">
-      <div ref={ref} className={className ? `dialog ${className}` : "dialog"} role="dialog" aria-modal="true" aria-labelledby={titleId}>
+    <dialog ref={ref} className="overlay" aria-labelledby={titleId} aria-modal="true" tabIndex={-1} onCancel={(event) => { event.preventDefault(); escape.current?.(); }}>
+      <div className={className ? `dialog ${className}` : "dialog"}>
         {children}
       </div>
-    </div>
+    </dialog>
   );
 }

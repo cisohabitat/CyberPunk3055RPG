@@ -26,7 +26,7 @@ export function Portrait({ speaker, origin, handle }: { speaker?: string; origin
   const label = name ? `${name}${role ? ` · ${role}` : ""}` : `${handle ?? plate.label} · ${plate.label}`;
   return (
     <figure className="portrait-frame">
-      <img className="portrait" src={src} alt="" />
+      <img className="portrait" src={src} alt="" width={220} height={294} decoding="async" />
       <figcaption>{label}</figcaption>
     </figure>
   );

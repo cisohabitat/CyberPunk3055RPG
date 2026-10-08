@@ -29,11 +29,29 @@ export const JOURNAL_TITLES: Record<string, string> = {
   calibration: "Calibration",
   "shard-copy": "The second copy",
   "clinic-debt": "Clinic marker",
+  "memory-signature": "Mara's signature",
+  "memory-order": "The counter-order",
+  "memory-roster": "The living witness",
+  "archive-promise": "Authenticate the receipt",
+  "witness-promise": "Protect Nia Pell",
+  "nia-account": "Nia's account",
+  "verified-order": "Command chain verified",
+  "archive-gap": "An unverified issuing key",
 };
 
 export function journalTitle(entry: JournalEntry): string {
   if (JOURNAL_TITLES[entry.id]) return JOURNAL_TITLES[entry.id];
   return entry.text.split(/\s+/).slice(0, 5).join(" ").replace(/[.,;:]$/, "");
+}
+
+export function journalKind(entry: JournalEntry): "fact" | "claim" | "promise" {
+  return entry.kind ?? (entry.id === "clinic-debt" ? "promise" : "fact");
+}
+
+export function promiseStatus(id: string, flags: Record<string, boolean>): string {
+  if (id === "witness-promise") return flags.witness_safe ? "Kept" : flags.witness_lost ? "Location exposed" : "Unresolved";
+  if (id === "archive-promise") return flags.order_verified ? "Corroborated" : flags.archive_unresolved ? "Gap recorded" : "Unresolved";
+  return "Recorded";
 }
 
 export function mergeJournal(current: JournalEntry[], incoming: Array<string | JournalEntry> | undefined): JournalEntry[] {

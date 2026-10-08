@@ -120,6 +120,8 @@ function choiceHidden(state: GameState, choice: Choice): boolean {
   if (choice.hideIfItem && state.items.includes(choice.hideIfItem)) return true;
   if (choice.requireFlag && !state.flags[choice.requireFlag]) return true;
   if (choice.requireAnyFlag && !choice.requireAnyFlag.some((flag) => state.flags[flag])) return true;
+  if (choice.requireAllFlags && !choice.requireAllFlags.every((flag) => state.flags[flag])) return true;
+  if (choice.requireOrigin && state.origin !== choice.requireOrigin) return true;
   if (choice.requireItem && !state.items.includes(choice.requireItem)) return true;
   if (choice.requireJournal && !state.journal.some((entry) => entry.id === choice.requireJournal)) return true;
   if (choice.hideIfJournal && state.journal.some((entry) => entry.id === choice.hideIfJournal)) return true;
@@ -128,6 +130,9 @@ function choiceHidden(state: GameState, choice: Choice): boolean {
 
 export function presentChoices(state: GameState, scene: Scene): VisibleChoice[] {
   return scene.choices.filter((choice) => !choiceHidden(state, choice)).map((choice) => {
+    if (choice.requireFaction && state.factions[choice.requireFaction.faction] < choice.requireFaction.min) {
+      return { ...choice, enabled: false, disabledReason: `Need ${FACTION_INFO[choice.requireFaction.faction].name} standing ${choice.requireFaction.min}` };
+    }
     if (choice.requireCreds !== undefined && state.creds < choice.requireCreds) {
       return { ...choice, enabled: false, disabledReason: `Need ${choice.requireCreds} creds` };
     }
@@ -138,6 +143,10 @@ export function presentChoices(state: GameState, scene: Scene): VisibleChoice[] 
 export function previewCheck(state: GameState, check: CheckSpec): CheckPreview {
   const parts = [{ label: STAT_INFO[check.stat].name, value: state.stats[check.stat] }];
   let bonus = state.stats[check.stat];
+  if (state.flags[`perk_${check.stat}`]) {
+    bonus += 1;
+    parts.push({ label: "Practiced under pressure", value: 1 });
+  }
   const origin = ORIGINS[state.origin];
   if (origin.perkStat === check.stat) {
     bonus += 1;
@@ -180,7 +189,7 @@ export function previewCheck(state: GameState, check: CheckSpec): CheckPreview {
 
 export function resolveCheck(state: GameState, choice: Choice, roll: number): CheckResult {
   if (!choice.check) throw new Error(`Choice ${choice.id} has no check`);
-  if (roll < 1 || roll > 10) throw new Error(`Bad roll ${roll}`);
+  if (!Number.isInteger(roll) || roll < 1 || roll > 10) throw new Error(`Bad roll ${roll}`);
   const preview = previewCheck(state, choice.check);
   const total = roll + preview.bonus;
   const success = total >= preview.dc;
@@ -243,6 +252,10 @@ export function commitChoice(
   const scene = getScene(state.sceneId);
   const legal = presentChoices(state, scene).find((option) => option.id === choice.id);
   if (!legal?.enabled) throw new Error(`Illegal choice ${choice.id} in ${state.sceneId}`);
+  choice = legal;
+  if (state.pendingCheck && (state.pendingCheck.choiceId !== choice.id || state.pendingCheck.sceneId !== state.sceneId || state.pendingCheck.roll !== rolled?.roll)) {
+    throw new Error("Finish the recorded roll first");
+  }
 
   let check: CheckResult | null = null;
   let next = applyEffect(state, choice.effects);
@@ -288,5 +301,14 @@ export function commitChoice(
       ? [...next.chapters, scene.endingTitle]
       : next.chapters;
   const log = [...(next.log ?? []), choice.label].slice(-24);
-  return { state: { ...next, sceneId, chapters, log }, check };
+  const { pendingCheck: _pending, ...completed } = next;
+  return { state: { ...completed, sceneId, chapters, log }, check };
+}
+
+export function stageCheck(state: GameState, choiceId: string, roll: number): GameState {
+  if (state.pendingCheck) return state;
+  const choice = presentChoices(state, getScene(state.sceneId)).find((entry) => entry.id === choiceId && entry.enabled);
+  if (!choice?.check) throw new Error("This choice is not a legal check");
+  resolveCheck(state, choice, roll);
+  return { ...state, pendingCheck: { sceneId: state.sceneId, choiceId, roll } };
 }

@@ -33,6 +33,15 @@ function medianAbs(samples: number[]) {
 }
 
 describe("beds", () => {
+  it("gives the chapel and wards distinct, seamless extended scores", () => {
+    const chapel = readWav("theme-chapel"); const ward = readWav("theme-ward");
+    for (const score of [chapel, ward]) {
+      assert.ok(score.samples.length / score.rate >= 23);
+      assert.ok(seam(score.samples) < 0.004);
+      assert.ok(maxJump(score.samples) < 0.05);
+    }
+    assert.notDeepEqual(chapel.samples.slice(0, 2000), ward.samples.slice(0, 2000));
+  });
   it("loops the theme without a click on the chord change", () => {
     const { samples } = readWav("theme");
     assert.ok(samples.length > 44100 * 7);
@@ -52,7 +61,7 @@ describe("beds", () => {
   });
 
   it("keeps the week and ward stings as short tones", () => {
-    for (const name of ["sting-week", "sting-ward"]) {
+    for (const name of ["sting-week", "sting-ward", "sting-memory"]) {
       const { samples } = readWav(name);
       assert.ok(samples.length < 44100 * 2, name);
       assert.ok(Math.abs(samples[0]) < 0.02, name);

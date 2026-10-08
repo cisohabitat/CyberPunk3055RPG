@@ -1,0 +1,92 @@
+import { PERKS } from "../progression";
+import type { GameState, Scene } from "../types";
+
+export const MISSION_SCENES: Record<string, Scene> = {
+  act2_training: {
+    id: "act2_training", location: "Ward Four",
+    text: "A week gives you time to practice one thing. You find a quiet stair, mark a circuit on paper, count your breath, and replay the moment the door almost closed. Choose what you will be better at the next time the city asks.",
+    choices: PERKS.map((perk) => ({ id: `learn-${perk.stat}`, label: perk.name, detail: perk.description, hideIfFlag: "perk_trained", effects: { flags: ["perk_trained", `perk_${perk.stat}`] }, next: "street_after" })),
+  },
+  act2_origin_gutterwire: {
+    id: "act2_origin_gutterwire", location: "Ward Four", speaker: "Sera",
+    text: "Sera knows the stair you grew up on. A shelter pump has stopped, and the rooms above it are taking coolant. She can hold a bed for Nia if you help the neighbors move the valve.\n\n\"No speeches. Put your shoulder here. Someone has to sleep upstairs tonight.\"",
+    choices: [
+      { id: "move-valve", label: "Brace the pump and turn the valve.", requireOrigin: "gutterwire", check: { stat: "nerve", dc: 8, label: "Hold the shelter pump" }, successEffects: { flags: ["origin_done", "origin_helped"], itemsAdd: ["witness-token"], factions: { wards: 1 } }, failEffects: { flags: ["origin_done"], strain: 1 }, resultSuccess: "The valve holds. Sera reserves the dry room.", resultFail: "The valve slips. You get the neighbors upstairs, but the spare room is lost.", nextSuccess: "act2_origin_return", nextFail: "act2_origin_return" },
+      { id: "leave-pump", label: "Leave the pump to its crew.", effects: { flags: ["origin_done"] }, next: "act2_origin_return" },
+    ],
+  },
+  act2_origin_spire: {
+    id: "act2_origin_spire", location: "Helion Spire", speaker: "Ives",
+    text: "The technician behind the service desk remembers your badge. Edda slides a receiver across the counter while Ives watches the queue. It can isolate a command receipt from the tower's surveillance carrier.\n\n\"I need the old maintenance key out of this terminal,\" Edda says. \"They still bill my shifts against it. Get it out clean and take the receiver.\"",
+    choices: [
+      { id: "clear-key", label: "Revoke Edda's old key.", requireOrigin: "spire", check: { stat: "chrome", dc: 9, label: "Close the maintenance key", itemBonuses: [{ item: "spoof-chip", amount: 1 }] }, successEffects: { flags: ["origin_done", "origin_helped"], itemsAdd: ["signal-baffle"], factions: { helion: -1 } }, failEffects: { flags: ["origin_done", "old_badge_traced"], factions: { helion: 1 }, strain: 1 }, resultSuccess: "Edda's next shift has her own number. The receiver is yours.", resultFail: "The terminal keeps the key and logs your old badge. Edda pulls the receiver back.", nextSuccess: "act2_origin_return", nextFail: "act2_origin_return" },
+      { id: "leave-key", label: "Keep your old clearance out of it.", effects: { flags: ["origin_done"] }, next: "act2_origin_return" },
+    ],
+  },
+  act2_origin_dustline: {
+    id: "act2_origin_dustline", location: "Canal freight gate", speaker: "Quill",
+    text: "Quill has a courier packet and a name you knew outside the dome. Asa cannot cross the canal gate with a medical parcel on their manifest. You know the service turn before the checkpoint.\n\n\"It goes to a clinic,\" Quill says, without making that a pitch. \"Get it there. Asa will leave you a clearance for one passenger.\"",
+    choices: [
+      { id: "courier-run", label: "Carry the parcel through the service turn.", requireOrigin: "dustline", check: { stat: "ghost", dc: 8, label: "Run the old freight route", itemBonuses: [{ item: "layout-scrap", amount: 1 }] }, successEffects: { flags: ["origin_done", "origin_helped"], itemsAdd: ["burner-route"], factions: { quill: 1 } }, failEffects: { flags: ["origin_done"], strain: 1, factions: { helion: 1 } }, resultSuccess: "The clinic signs the packet. Asa leaves the passenger clearance under the gate rail.", resultFail: "The clinic gets the parcel through an official desk. The route is exposed, and Asa cannot reuse it.", nextSuccess: "act2_origin_return", nextFail: "act2_origin_return" },
+      { id: "leave-parcel", label: "Let another courier take it.", effects: { flags: ["origin_done"] }, next: "act2_origin_return" },
+    ],
+  },
+  act2_origin_return: {
+    id: "act2_origin_return", location: "District board",
+    text: (state) => state.flags.origin_helped ? "Your contact has a reason to answer the next call. The favor left a practical thing in your pocket, and a person who can explain where it came from.\n\nThe district board still has the calls from this week." : "Your contact has their own work to finish. The old route is still a place you know; it is not a favor you earned.\n\nYou return to the district board with the calls from this week still waiting.",
+    choices: [{ id: "return-board", label: "Return to the board.", next: "districts" }],
+  },
+  act2_witness_door: {
+    id: "act2_witness_door", location: "Witness room, Glass Chapel", speaker: "Sister Lumen",
+    text: "Nia Pell waits behind a clinic curtain. She signed a housing slip, saw the evacuation canceled, and left through a service hatch. Her home is still on a Helion register.\n\n\"Don't publish my address and call that courage,\" she says. \"Give me somewhere they don't rent to me. Then I'll tell Sera what I saw.\"\n\nLumen has a transport chair. Getting it past the canal checkpoint is your part of the promise.",
+    choices: [
+      { id: "use-shelter", label: "Use the room the wards reserved.", detail: "Spend the shelter token. Nia gets a safe room without a roll.", requireItem: "witness-token", consumeItems: ["witness-token"], effects: { flags: ["witness_done", "witness_safe"], factions: { wards: 1 } }, next: "act2_witness_safe" },
+      { id: "use-freight", label: "Burn Asa's passenger clearance.", detail: "Spend the burner route. Nia passes as a freight passenger without a roll.", requireItem: "burner-route", consumeItems: ["burner-route"], effects: { flags: ["witness_done", "witness_safe"] }, next: "act2_witness_safe" },
+      { id: "quill-room", label: "Ask Quill to cover the room.", detail: "Standing 2 required. His guarantee costs one step of trust.", requireFaction: { faction: "quill", min: 2 }, effects: { flags: ["witness_done", "witness_safe"], factions: { quill: -1 } }, next: "act2_witness_safe" },
+      { id: "pay-room", label: "Pay for an unregistered clinic room.", detail: "Thirty creds. A safe transfer without a roll.", requireCreds: 30, effects: { creds: -30, flags: ["witness_done", "witness_safe"] }, next: "act2_witness_safe" },
+      { id: "slip-witness", label: "Take Nia through the canal service hatch.", check: { stat: "ghost", dc: 9, label: "Move Nia unseen", itemBonuses: [{ item: "layout-scrap", amount: 1 }] }, successEffects: { flags: ["witness_done", "witness_safe"], factions: { wards: 1 } }, failEffects: { strain: 1, flags: ["witness_checkpoint"] }, resultSuccess: "The chair reaches a back room. Nia chooses the name on its door.", resultFail: "A scanner stops the chair at the canal gate. You still have time to negotiate.", nextSuccess: "act2_witness_safe", nextFail: "act2_witness_checkpoint" },
+      { id: "leave-witness", label: "Leave the move unresolved.", detail: "The private record stays private. Nia still needs a safe route.", next: "act2_middle" },
+    ],
+  },
+  act2_witness_checkpoint: {
+    id: "act2_witness_checkpoint", location: "Canal checkpoint", speaker: "Kerr",
+    text: "The scanner sees a patient, a chair, and the empty space where a tenancy number should be. Kerr puts his hand over the screen.\n\n\"I can keep this off the register if you give me a clinic transfer I can sign. Get the desk to accept it. Then move.\"\n\nNia keeps her hands flat on the chair arms. She is watching what you do with her name.",
+    choices: [
+      { id: "clinic-transfer", label: "Trade Lumen's clinic marker for a transfer.", detail: "Spend the marker. Strain eases by 1; the clinic takes responsibility for the room.", requireItem: "clinic-marker", consumeItems: ["clinic-marker"], effects: { strain: -1, flags: ["witness_done", "witness_safe"] }, next: "act2_witness_safe" },
+      { id: "argue-transfer", label: "Make the desk accept an emergency transfer.", check: { stat: "face", dc: 8, label: "Keep Nia off the register", factionBonuses: [{ faction: "lumen", min: 2, amount: 1, label: "Clinic standing" }] }, successEffects: { flags: ["witness_done", "witness_safe"] }, failEffects: { flags: ["witness_done", "witness_lost"], factions: { helion: 1, wards: -1 } }, resultSuccess: "The desk stamps the clinic form. Kerr lifts his hand without waking the scanner.", resultFail: "The desk asks for tenancy. Nia has to give a number, and the tower gets her new room.", nextSuccess: "act2_witness_safe", nextFail: "act2_witness_lost" },
+      { id: "registered-transfer", label: "Accept a registered transfer.", detail: "Nia reaches medical care. Helion gets her location.", effects: { flags: ["witness_done", "witness_lost"], factions: { helion: 1 } }, next: "act2_witness_lost" },
+    ],
+  },
+  act2_witness_safe: {
+    id: "act2_witness_safe", location: "Witness room, Ward Nine", speaker: "Sera",
+    text: "Nia records the evacuation counter-order in her own words. Sera gives her a playback button and waits while she listens to herself.\n\n\"That part stays,\" Nia says. \"The address doesn't. If they ask where I am, tell them I am available through you.\"\n\nSera labels the account with its source. It now corroborates the receipt without publishing a home.",
+    choices: [{ id: "file-account", label: "Attach Nia's account to the evidence.", effects: { flags: ["witness_done", "witness_safe", "order_verified"], factions: { wards: 1 }, journal: [{ id: "nia-account", text: "Nia Pell corroborated Helion's canceled evacuation from a protected room.", kind: "fact" }] }, next: "act2_middle" }],
+  },
+  act2_witness_lost: {
+    id: "act2_witness_lost", location: "Glass Chapel", speaker: "Sister Lumen",
+    text: "Nia receives treatment, but her transfer is on the tenancy register. Lumen writes down which desk requested it.\n\n\"We can still keep her account,\" she says. \"We cannot tell her the room is private. Say exactly what happened.\"\n\nNia agrees to a recording through the clinic. She asks that Sera receive it before the tower calls her.",
+    choices: [{ id: "record-cost", label: "Keep the account and record the breach.", effects: { flags: ["witness_done", "witness_lost"], journal: [{ id: "nia-account", text: "Nia corroborated the order, but her clinic location entered Helion's tenancy register.", kind: "fact" }] }, next: "act2_middle" }],
+  },
+  act2_archive_door: {
+    id: "act2_archive_door", location: "Helion service archive", speaker: "Ives",
+    text: "Your intact export has a receipt number. The tower keeps its counterpart in a service archive, beside revisions to the maintenance schedule.\n\nIves meets you outside the reader. \"If you allege an instruction, identify its issuer. We will challenge anything less.\"\n\nYou can authenticate the command chain. A rejected query will reveal which record you brought.",
+    choices: [
+      { id: "trace-receipt", label: "Match the receipt to its issuing key.", check: { stat: "chrome", dc: 9, label: "Authenticate the counter-order", itemBonuses: [{ item: "signal-baffle", amount: 1 }, { item: "spoof-chip", amount: 1 }] }, successEffects: { flags: ["archive_done", "order_verified"], factions: { wards: 1, helion: -1 }, journal: [{ id: "verified-order", text: "The service archive authenticates the key that canceled Ward Nine's evacuation.", kind: "fact" }] }, failEffects: { strain: 1, flags: ["archive_flagged"], factions: { helion: 1 } }, resultSuccess: "The issuing key matches. Mara's account has a command chain attached.", resultFail: "The reader quarantines the key and logs your query. A technician offers another way to corroborate it.", nextSuccess: "act2_archive_verified", nextFail: "act2_archive_gap" },
+      { id: "leave-archive", label: "Keep the export without authenticating it.", detail: "The archive promise remains unresolved.", next: "act2_middle" },
+    ],
+  },
+  act2_archive_gap: {
+    id: "act2_archive_gap", location: "Helion service archive",
+    text: "Edda finds the shift ledger that used the issuing key. The reader blocked the digital chain; a maintenance invoice can still corroborate the instruction.\n\nShe can bill the search to your old employee number if you have one. Otherwise the archive charges twenty-five creds. The unverified export remains yours either way.",
+    choices: [
+      { id: "old-employee", label: "Use your old employee number.", requireOrigin: "spire", detail: "Your old badge acquires another trace. The invoice corroborates the order.", effects: { flags: ["archive_done", "order_verified", "old_badge_traced"], factions: { helion: 1 } }, next: "act2_archive_verified" },
+      { id: "buy-ledger", label: "Pay for the shift ledger.", requireCreds: 25, effects: { creds: -25, flags: ["archive_done", "order_verified"] }, next: "act2_archive_verified" },
+      { id: "keep-gap", label: "Record the gap. Keep the export.", effects: { flags: ["archive_done", "archive_unresolved"], journal: [{ id: "archive-gap", text: "The export names an issuing key; the service archive refused to authenticate it.", kind: "claim" }] }, next: "act2_middle" },
+    ],
+  },
+  act2_archive_verified: {
+    id: "act2_archive_verified", location: "The dry canal",
+    text: "The signature is still Mara's. The evacuation counter-order belongs to a tower key active sixteen seconds later. Neither fact cancels the other.\n\nYou can give Sera a chain someone outside the chapel can examine. The dead are no longer evidence only a corporation can authenticate.",
+    choices: [{ id: "keep-chain", label: "Keep both decisions attached.", effects: { flags: ["archive_done", "order_verified"], journal: [{ id: "verified-order", text: "An independent ledger corroborates Helion's canceled evacuation.", kind: "fact" }] }, next: "act2_middle" }],
+  },
+};

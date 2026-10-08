@@ -9,8 +9,11 @@ import { Sheet } from "@/components/Sheet";
 import { DISTRICT_ART, placeArt } from "@/lib/art";
 import { ORIGINS, STRAIN_MAX, STAT_INFO } from "@/lib/character";
 import { commitChoice, effectPreview, getScene, presentChoices, previewCheck, runDelta, sceneText, type VisibleChoice } from "@/lib/engine";
-import { locationCue, playCue, setBed } from "@/lib/sound";
-import { loadSound, loadTextStep, rememberEnding, writeSound, writeTextStep } from "@/lib/storage";
+import { locationCue, playCue, sceneMood, setBed } from "@/lib/sound";
+import { rememberEnding } from "@/lib/storage";
+import type { Preferences } from "@/lib/preferences";
+import { MemoryPlate } from "./MemoryPlate";
+import { aftermath } from "@/lib/evidence";
 import { endingCoda } from "@/lib/story";
 import { speakerRole } from "@/lib/story/cast";
 import { actName, currentGoal } from "@/lib/story/goal";
@@ -24,6 +27,10 @@ export function PlayScreen({
   onTitle,
   onNewRun,
   saveFailed,
+  preferences,
+  modalOpen,
+  onSettings,
+  onSaves,
 }: {
   state: GameState;
   onChange: (state: GameState) => void;
@@ -31,14 +38,17 @@ export function PlayScreen({
   onTitle: () => void;
   onNewRun: () => void;
   saveFailed: boolean;
+  preferences: Preferences;
+  modalOpen: boolean;
+  onSettings: () => void;
+  onSaves: () => void;
 }) {
   const scene = getScene(state.sceneId);
   const choices = presentChoices(state, scene);
   const [pending, setPending] = useState<VisibleChoice | null>(null);
   const [sheetOpen, setSheetOpen] = useState(false);
   const [confirmAbandon, setConfirmAbandon] = useState(false);
-  const [sound, setSound] = useState(false);
-  const [textStep, setTextStep] = useState(0);
+  const sound = preferences.sound;
   const [fault, setFault] = useState("");
   const [delta, setDelta] = useState<string[]>([]);
   const [flash, setFlash] = useState(false);
@@ -47,17 +57,23 @@ export function PlayScreen({
   const prior = useRef(state);
   const prose = sceneText(scene, state);
   const paragraphs = prose.split(/\n\n+/).filter((paragraph) => paragraph.length > 0);
-  const visibleCount = reduceMotion ? paragraphs.length : Math.min(shown, paragraphs.length);
+  const visibleCount = reduceMotion || preferences.reading === "all" ? paragraphs.length : Math.min(shown, paragraphs.length);
+  const recordedChoice = state.pendingCheck ? choices.find((choice) => choice.id === state.pendingCheck?.choiceId) : null;
+  const activeChoice = recordedChoice ?? pending;
 
   useEffect(() => {
-    setReduceMotion(window.matchMedia("(prefers-reduced-motion: reduce)").matches);
-    setSound(loadSound());
-    setTextStep(loadTextStep());
-  }, []);
+    const media = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const update = () => setReduceMotion(preferences.motion === "reduce" || media.matches);
+    update(); media.addEventListener("change", update);
+    return () => media.removeEventListener("change", update);
+  }, [preferences.motion]);
 
   useEffect(() => {
-    setBed(sound);
-  }, [sound]);
+    setBed(sound, sceneMood(scene.location));
+    if (sound) playCue(locationCue(scene.location, Boolean(scene.ending)));
+  }, [sound, scene.id, scene.location, scene.ending]);
+
+  useEffect(() => () => { setBed(false); }, []);
 
   useEffect(() => {
     if (prior.current !== state) {
@@ -69,7 +85,7 @@ export function PlayScreen({
   useEffect(() => {
     setSheetOpen(false);
     setPending(null);
-    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const reduce = preferences.motion === "reduce" || window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     setFlash(!reduce);
     const sceneTop = document.getElementById("scene-top");
     const header = document.querySelector(".topbar");
@@ -81,11 +97,14 @@ export function PlayScreen({
     }
     if (scene.ending && scene.endingTitle) document.title = `${scene.endingTitle} — Saint Shard`;
     else document.title = "Saint Shard — Kite City 3055";
-    if (sound) playCue(locationCue(scene.location, Boolean(scene.ending)));
+    sceneTop?.focus({ preventScroll: true });
+  }, [scene.id, preferences.motion]);
+
+  useEffect(() => {
     if (scene.id.startsWith("ending_") && scene.endingTitle) {
       rememberEnding(scene.id, scene.endingTitle, scene.finale ? state.items : undefined);
     }
-  }, [state.sceneId, scene.ending, scene.endingTitle, scene.finale, scene.id, scene.location, sound, state.items]);
+  }, [scene.endingTitle, scene.finale, scene.id, state.items]);
 
   useEffect(() => {
     setShown(1);
@@ -98,7 +117,8 @@ export function PlayScreen({
         if (sheetOpen) setSheetOpen(false);
         return;
       }
-      if (pending || confirmAbandon || sheetOpen || choices.length === 0) return;
+      if (activeChoice || confirmAbandon || sheetOpen || modalOpen || choices.length === 0) return;
+      if (event.target instanceof HTMLElement && event.target.closest("input, textarea, select, [contenteditable=true]")) return;
       if (event.metaKey || event.ctrlKey || event.altKey) return;
       const number = Number(event.key);
       if (!Number.isInteger(number) || number < 1 || number > 9) return;
@@ -123,19 +143,6 @@ export function PlayScreen({
     }
   }
 
-  function toggleSound() {
-    const next = !sound;
-    setSound(next);
-    writeSound(next);
-  }
-
-  function cycleText() {
-    const next = (textStep + 1) % 3;
-    setTextStep(next);
-    writeTextStep(next);
-    document.documentElement.dataset.text = String(next);
-  }
-
   return (
     <div className="screen">
       <a className="skip" href="#choices">
@@ -152,7 +159,7 @@ export function PlayScreen({
         <div className="meters">
           <div className="strain-readout">
             <span className="stat-name">Strain</span>
-            <div className={state.strain >= 4 ? "pips hot" : "pips"} data-testid="strain" aria-label={`Strain ${state.strain} of ${STRAIN_MAX}`}>
+            <div className={state.strain >= 4 ? "pips hot" : "pips"} data-testid="strain" role="meter" aria-valuemin={0} aria-valuemax={STRAIN_MAX} aria-valuenow={state.strain} aria-label={`Strain ${state.strain} of ${STRAIN_MAX}`}>
               {Array.from({ length: STRAIN_MAX }, (_, index) => (
                 <span key={index} className={index < state.strain ? "on" : ""} />
               ))}
@@ -163,11 +170,11 @@ export function PlayScreen({
           </div>
         </div>
         <div className="top-actions">
-          <button className="ghost" type="button" onClick={cycleText}>
-            Text {textStep + 1}
+          <button className="ghost" type="button" onClick={onSettings}>
+            Settings
           </button>
-          <button className="ghost" type="button" aria-pressed={sound} onClick={toggleSound}>
-            Sound {sound ? "on" : "off"}
+          <button className="ghost" type="button" onClick={onSaves}>
+            Saves
           </button>
           <button className="ghost sheet-toggle" type="button" data-testid="sheet-toggle" aria-expanded={sheetOpen} aria-controls="runner-sheet" onClick={() => setSheetOpen(true)}>
             Sheet
@@ -185,8 +192,9 @@ export function PlayScreen({
       <div className="layout">
         <main>
           <article
-            className={flash ? "scene flash" : "scene"}
+            className={`${flash ? "scene flash" : "scene"}${scene.memory || scene.id === "memo" ? " memory-scene" : ""}`}
             id="scene-top"
+            tabIndex={-1}
             data-testid="scene"
             style={{ backgroundImage: `linear-gradient(180deg, rgba(9,8,13,0.72), rgba(9,8,13,0.94)), url(${placeArt(scene.location)})` }}
           >
@@ -241,23 +249,26 @@ export function PlayScreen({
                       ))}
                   </ul>
                 )}
-                <div className="prose" data-testid="scene-text">
-                  {paragraphs.slice(0, visibleCount).map((paragraph, index) => (
-                    <p key={`${scene.id}-${index}`}>{paragraph}</p>
-                  ))}
-                </div>
-                {!reduceMotion && visibleCount < paragraphs.length && (
-                  <div className="prose-controls">
-                    <button className="ghost" type="button" data-testid="next-paragraph" onClick={() => setShown((count) => count + 1)}>
-                      Next line
-                    </button>
-                    <button className="ghost" type="button" data-testid="show-rest" onClick={() => setShown(paragraphs.length)}>
-                      Show the rest
-                    </button>
-                  </div>
-                )}
+
               </div>
             </div>
+            {scene.memory && <MemoryPlate state={state} />}
+            <div className="prose" data-testid="scene-text">
+              {paragraphs.slice(0, visibleCount).map((paragraph, index) => (
+                <p key={`${scene.id}-${index}`}>{paragraph}</p>
+              ))}
+            </div>
+            {!reduceMotion && visibleCount < paragraphs.length && (
+              <div className="prose-controls">
+                <button className="ghost" type="button" data-testid="next-paragraph" onClick={() => setShown((count) => count + 1)}>
+                  Next line
+                </button>
+                <button className="ghost" type="button" data-testid="show-rest" onClick={() => setShown(paragraphs.length)}>
+                  Show the rest
+                </button>
+              </div>
+            )}
+            {scene.finale && <section className="aftermath" aria-label="What your choices changed"><h2>What remains</h2>{aftermath(state).map((row) => <section key={row.title}><h3>{row.title}</h3><p>{row.text}</p></section>)}</section>}
             {fault && <p className="form-error">{fault}</p>}
             {choices.length > 0 && (
               <div className={scene.id === "districts" ? "choices cards" : "choices"} id="choices">
@@ -270,7 +281,7 @@ export function PlayScreen({
                       className="choice"
                       type="button"
                       data-testid={`choice-${choice.id}`}
-                      disabled={!choice.enabled || pending !== null}
+                      disabled={!choice.enabled || activeChoice !== null}
                       onClick={() => pick(choice)}
                     >
                       {scene.id === "districts" && DISTRICT_ART[choice.id] && (
@@ -305,14 +316,15 @@ export function PlayScreen({
             )}
           </article>
         </main>
-        <button className={sheetOpen ? "sheet-backdrop open" : "sheet-backdrop"} type="button" aria-label="Close sheet" onClick={() => setSheetOpen(false)} />
         <Sheet state={state} speaker={scene.speaker} open={sheetOpen} onClose={() => setSheetOpen(false)} />
       </div>
-      {pending?.check && (
+      {activeChoice?.check && (
         <CheckDialog
           state={state}
-          choice={pending}
+          choice={activeChoice}
           sound={sound}
+          reducedMotion={reduceMotion}
+          onStage={onChange}
           speaker={scene.speaker}
           onClose={() => setPending(null)}
           onCommit={(next) => {
@@ -324,7 +336,7 @@ export function PlayScreen({
       {confirmAbandon && (
         <DialogFrame titleId="abandon-title" onEscape={() => setConfirmAbandon(false)}>
           <h2 id="abandon-title">Abandon this run?</h2>
-          <p>This wipes {state.handle} from the browser. The city will not remember it.</p>
+          <p>This clears {state.handle}&apos;s active run and automatic backup. Manual save slots remain available.</p>
           <div className="dialog-actions">
             <button className="primary" type="button" data-testid="confirm-abandon" onClick={onAbandon}>
               Wipe it

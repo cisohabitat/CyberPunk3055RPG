@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { afterEach, describe, it } from "node:test";
 import { createCharacter } from "./engine.ts";
 import {
-  clearSave, emptyCodex, loadCodex, loadSave, loadSound, loadTextStep,
+  clearSave, emptyCodex, loadBackup, loadCodex, loadSave, loadSound, loadTextStep, usedBackup,
   rememberEnding, writeCodex, writeSave, writeSound, writeTextStep,
 } from "./storage.ts";
 
@@ -35,6 +35,20 @@ function assertDefaultsAndFailedWrites() {
 }
 
 describe("browser storage failures", () => {
+  it("recovers a corrupted autosave from the last valid backup and clears both", () => {
+    const values = new Map<string, string>();
+    installWindow({ localStorage: {
+      getItem(key: string) { return values.get(key) ?? null; },
+      setItem(key: string, value: string) { values.set(key, value); },
+      removeItem(key: string) { values.delete(key); },
+    } });
+    assert.equal(writeSave(state), true);
+    assert.equal(writeSave({ ...state, sceneId: "pay" }), true);
+    assert.deepEqual(loadBackup(), state);
+    values.set("saint-shard-3055-v1", "{");
+    assert.equal(usedBackup(), true); assert.deepEqual(loadSave(), state);
+    assert.equal(clearSave(), true); assert.equal(loadSave(), null); assert.equal(loadBackup(), null);
+  });
   it("works without a browser window", () => {
     Reflect.deleteProperty(globalThis, "window");
     assertDefaultsAndFailedWrites();

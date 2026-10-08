@@ -6,6 +6,7 @@ export type ComplicationId = "debt" | "optic" | "on-file";
 export type JournalEntry = {
   id: string;
   text: string;
+  kind?: "fact" | "claim" | "promise";
 };
 
 export type Effect = {
@@ -36,6 +37,7 @@ export type GameState = {
   rolls: RollLog[];
   log: string[];
   sceneId: string;
+  pendingCheck?: { sceneId: string; choiceId: string; roll: number };
 };
 
 export type EffectSpec = Effect | ((state: GameState) => Effect);
@@ -67,10 +69,13 @@ export type Choice = {
   hideIfItem?: string;
   requireFlag?: string;
   requireAnyFlag?: string[];
+  requireAllFlags?: string[];
+  requireOrigin?: OriginId;
   requireItem?: string;
   requireJournal?: string;
   hideIfJournal?: string;
   requireCreds?: number;
+  requireFaction?: { faction: FactionId; min: number };
   check?: CheckSpec;
   effects?: EffectSpec;
   successEffects?: EffectSpec;
@@ -89,6 +94,7 @@ export type Scene = {
   speaker?: string;
   ending?: boolean;
   finale?: boolean;
+  memory?: boolean;
   endingTitle?: string;
   text: string | ((state: GameState) => string);
   choices: Choice[];

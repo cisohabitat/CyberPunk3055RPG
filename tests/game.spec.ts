@@ -1,0 +1,136 @@
+import { test, expect, type Page } from "@playwright/test";
+import AxeBuilder from "@axe-core/playwright";
+import { createCharacter } from "../lib/engine";
+import type { GameState } from "../lib/types";
+import { exportRun } from "../lib/vault";
+
+function fixture(sceneId = "stall", extra: Partial<GameState> = {}): GameState {
+  return { ...createCharacter({ handle: "Rex", givenName: "Ada", origin: "spire", bonus: { chrome: 0, nerve: 0, face: 2, ghost: 0 }, complication: "optic" }), sceneId, ...extra };
+}
+async function openRun(page: Page, state = fixture()) {
+  await page.addInitScript((run) => { localStorage.setItem("saint-shard-3055-v1", JSON.stringify(run)); }, state);
+  await page.goto("/"); await page.getByTestId("continue-run").click();
+  await expect(page.getByTestId("scene")).toBeVisible();
+}
+test("new runner, settings, reading width and saved preferences", async ({ page }) => {
+  await page.goto("/"); await page.getByTestId("new-run").click();
+  await page.getByTestId("handle-input").fill("Rex"); await page.getByTestId("complication-debt").click();
+  await page.getByTestId("plus-chrome").click(); await page.getByTestId("plus-nerve").click(); await page.getByTestId("start-run").click();
+  await expect(page.getByTestId("goal")).toBeInViewport();
+  const scene = await page.getByTestId("scene").boundingBox(); const prose = await page.getByTestId("scene-text").boundingBox();
+  expect(prose!.width).toBeGreaterThan(scene!.width * 0.8);
+  await page.getByRole("button", { name: "Settings", exact: true }).click();
+  await page.getByLabel("Reading pace").selectOption("all"); await page.getByLabel("Contrast", { exact: true }).selectOption("high");
+  await page.getByLabel("Text size").selectOption("1"); await page.getByRole("button", { name: "Done", exact: true }).click();
+  await page.reload(); await page.getByTestId("continue-run").click();
+  await expect(page.locator("html")).toHaveAttribute("data-text", "1"); await expect(page.locator("html")).toHaveAttribute("data-contrast", "high");
+  await expect(page.getByTestId("show-rest")).toHaveCount(0);
+});
+test("a recorded roll survives reload and cannot be rerolled", async ({ page }) => {
+  const errors: string[] = []; page.on("pageerror", (error) => errors.push(error.message));
+  await page.goto("/"); await page.evaluate((run) => localStorage.setItem("saint-shard-3055-v1", JSON.stringify(run)), fixture("pay"));
+  await page.reload(); await page.getByTestId("continue-run").click(); await page.getByTestId("choice-haggle").click(); await page.getByTestId("roll-button").click();
+  const stored = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(stored.pendingCheck.roll).toBeGreaterThanOrEqual(1);
+  await page.reload(); await page.getByTestId("continue-run").click();
+  await expect(page.getByTestId("roll-button")).toHaveCount(0); await expect(page.getByTestId("continue-check")).toBeVisible();
+  await expect(page.locator(".total")).toContainText(String(stored.pendingCheck.roll));
+  await page.getByTestId("continue-check").click();
+  const committed = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(committed.pendingCheck).toBeUndefined(); expect(committed.rolls).toHaveLength(1); expect(errors).toEqual([]);
+});
+test("modal controls stay isolated and return focus", async ({ page }) => {
+  await openRun(page);
+  const settings = page.getByRole("button", { name: "Settings", exact: true }); await settings.click();
+  await page.keyboard.press("1"); await page.keyboard.press("Escape"); await expect(settings).toBeFocused();
+  await expect(page.getByTestId("choice-ask-pay")).toBeVisible();
+  if (page.viewportSize()!.width <= 1100) {
+    const toggle = page.getByTestId("sheet-toggle"); await toggle.click();
+    await page.keyboard.press("1"); await expect(page.getByTestId("choice-ask-pay")).toBeAttached();
+    await page.getByRole("tab", { name: "stats", exact: true }).focus();
+    await page.keyboard.press("ArrowRight"); await expect(page.getByRole("tab", { name: "gear", exact: true })).toBeFocused();
+    await page.keyboard.press("End"); await expect(page.getByRole("tab", { name: "journal", exact: true })).toBeFocused();
+    await page.keyboard.press("Escape"); await expect(toggle).toBeFocused();
+  }
+});
+test("slots, corrupted import, backup and export", async ({ page }) => {
+  await openRun(page); await page.getByRole("button", { name: "Saves", exact: true }).click();
+  await page.getByRole("button", { name: "Save to slot 1", exact: true }).click(); await expect(page.getByRole("status")).toContainText("Slot 1 saved");
+  const download = page.waitForEvent("download"); await page.getByRole("button", { name: "Export run", exact: true }).click(); expect((await download).suggestedFilename()).toBe("saint-shard-run.json");
+  await page.getByLabel("Import a saved run").setInputFiles({ name: "bad.json", mimeType: "application/json", buffer: Buffer.from('{"version":2,"stats":[]}') });
+  await expect(page.getByRole("status")).toContainText("supported");
+  await page.getByRole("button", { name: "Close saves", exact: true }).click(); await page.getByTestId("choice-ask-pay").click();
+  await page.getByRole("button", { name: "Saves", exact: true }).click(); await page.getByRole("button", { name: "Load slot 1", exact: true }).click(); await page.getByRole("button", { name: "Confirm load", exact: true }).click();
+  await expect(page.getByTestId("choice-ask-pay")).toBeVisible();
+});
+test("imports preserve pending outcomes", async ({ page }) => {
+  const state = fixture("pay", { pendingCheck: { sceneId: "pay", choiceId: "haggle", roll: 1 } });
+  await page.goto("/"); await page.getByRole("button", { name: "Saves", exact: true }).click();
+  await page.getByLabel("Import a saved run").setInputFiles({ name: "run.json", mimeType: "application/json", buffer: Buffer.from(exportRun(state)) });
+  await expect(page.getByTestId("continue-check")).toBeVisible(); await expect(page.getByTestId("roll-button")).toHaveCount(0);
+});
+for (const mode of ["blocked", "quota"] as const) test(`plays with ${mode} storage`, async ({ page }) => {
+  await page.addInitScript((kind) => {
+    if (kind === "blocked") Object.defineProperty(window, "localStorage", { get() { throw new DOMException("Blocked", "SecurityError"); } });
+    else Storage.prototype.setItem = function () { throw new DOMException("Full", "QuotaExceededError"); };
+  }, mode);
+  await page.goto("/"); await page.getByTestId("new-run").click(); await page.getByTestId("handle-input").fill("Rex"); await page.getByTestId("complication-debt").click(); await page.getByTestId("plus-chrome").click(); await page.getByTestId("plus-nerve").click(); await page.getByTestId("start-run").click();
+  await expect(page.getByRole("status")).toContainText("could not be saved"); await page.getByTestId("choice-ask-pay").click(); await expect(page.getByTestId("choice-haggle")).toBeVisible();
+});
+test("memory inspection, disposition and consequence entry", async ({ page }) => {
+  await openRun(page, fixture("mara_why", { items: ["shard"], flags: { heard_memo: true }, journal: [{ id: "ward-nine", text: "The original memo." }] }));
+  await page.getByTestId("choice-inspect-hour").click(); await expect(page.getByTestId("choice-seal-full")).toHaveCount(0);
+  for (const id of ["signature", "order", "roster"]) await page.getByTestId(`choice-inspect-${id}`).click();
+  await expect(page.getByTestId("memory-plate")).toContainText("3 / 3 inspected"); await page.getByTestId("choice-seal-witness").click();
+  const state = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!)); expect(state.flags.memory_witness).toBe(true);
+});
+for (const finale of ["ending_names", "ending_quiet", "ending_witness", "ending_listed"]) test(`finale ${finale} and its aftermath are readable`, async ({ page }) => {
+  await openRun(page, fixture(finale, { flags: { witness_safe: true, memory_witness: true, order_verified: true } }));
+  await expect(page.getByTestId("ending-title")).toBeVisible(); await expect(page.getByRole("heading", { name: "What remains", exact: true })).toBeVisible();
+  await page.getByRole("button", { name: "Title", exact: true }).click(); await expect(page.getByTestId("codex")).toContainText(/Said Aloud|Left to the Rain|Already Loose|On the Folio/);
+});
+test("automated accessibility checks for scene and settings", async ({ page }) => {
+  await openRun(page); expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations).toEqual([]);
+  await page.getByRole("button", { name: "Settings", exact: true }).click(); expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations).toEqual([]);
+});
+
+test("plays an uninterrupted campaign through evidence, practice, a contract and witness safety", async ({ page }) => {
+  test.setTimeout(60_000);
+  const errors: string[] = []; page.on("pageerror", (error) => errors.push(error.message));
+  await page.addInitScript(() => { Math.random = () => 0.75; });
+  await openRun(page);
+  const route = ["ask-pay", "haggle", "pocket", "accept", "side", "spoof-door", "go", "honest", "pact-copy", "copy", "heard", "inspect-hour", "inspect-signature", "inspect-order", "inspect-roster", "seal-witness", "talk-leave", "both", "week-after", "into-week", "practice", "learn-ghost", "read-board", "origin-contract", "clear-key", "return-board", "to-lumen", "hear-lumen", "walk-with-her", "protect-witness", "pay-room", "file-account", "stand", "back-to-board", "to-the-wall", "to-ward-nine", "face-sera", "read-names"];
+  for (const id of route) {
+    await page.getByTestId(`choice-${id}`).click();
+    if (await page.getByTestId("roll-button").count()) {
+      await page.getByTestId("roll-button").click(); await page.getByTestId("continue-check").click();
+    }
+  }
+  await expect(page.getByTestId("ending-title")).toBeVisible();
+  await expect(page.locator(".aftermath")).toContainText("Nia");
+  const saved = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(saved.flags.witness_safe).toBe(true); expect(saved.flags.order_verified).toBe(true);
+  expect(saved.flags.perk_ghost).toBe(true); expect(saved.items).toContain("signal-baffle");
+  expect(saved.sceneId).toBe("ending_names"); expect(errors).toEqual([]);
+});
+
+test("controller input navigates title and closes only the active dialog", async ({ page }) => {
+  await page.addInitScript(() => {
+    const pressed = Array(16).fill(false);
+    Object.defineProperty(window, "testPad", { value: pressed });
+    Object.defineProperty(navigator, "getGamepads", { value: () => [{ index: 0, mapping: "standard", buttons: pressed.map((value) => ({ pressed: value })) }] });
+    localStorage.setItem("saint-shard-preferences", JSON.stringify({ controller: true }));
+  });
+  await page.goto("/"); await page.getByRole("button", { name: "Settings", exact: true }).focus();
+  async function press(index: number) {
+    await page.evaluate(async (i) => {
+      const buttons = (window as unknown as { testPad: boolean[] }).testPad;
+      const frames = () => new Promise<void>((resolve) => requestAnimationFrame(() => requestAnimationFrame(() => resolve())));
+      buttons[i] = true; await frames(); buttons[i] = false; await frames();
+    }, index);
+  }
+  await press(0); await expect(page.getByRole("dialog")).toBeVisible();
+  await press(13); await expect(page.getByRole("dialog")).toBeVisible();
+  await press(1); await expect(page.getByRole("dialog")).toHaveCount(0);
+  await expect(page.getByRole("button", { name: "Settings", exact: true })).toBeFocused();
+});

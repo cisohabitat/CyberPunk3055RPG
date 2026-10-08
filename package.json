@@ -5,7 +5,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "tsx --test lib/*.test.ts"
+    "test": "tsx --test lib/*.test.ts",
+    "test:browser": "playwright test",
+    "story:report": "tsx scripts/story-report.ts",
+    "predev": "node scripts/generate-audio.mjs",
+    "prebuild": "node scripts/generate-audio.mjs",
+    "pretest": "node scripts/generate-audio.mjs"
   },
   "dependencies": {
     "next": "^15.5.4",
@@ -13,6 +18,8 @@
     "react-dom": "^19.1.1"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.64.0",
     "@types/node": "^22.15.0",
     "@types/react": "^19.1.0",
     "@types/react-dom": "^19.1.0",

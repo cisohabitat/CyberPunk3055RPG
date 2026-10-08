@@ -1,9 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { DialogFrame } from "@/components/DialogFrame";
 import { Portrait, reactionLine } from "@/components/Portrait";
-import { commitChoice, previewCheck, runDelta } from "@/lib/engine";
+import { commitChoice, previewCheck, runDelta, stageCheck } from "@/lib/engine";
 import { playCue } from "@/lib/sound";
 import { statVoice } from "@/lib/story/voices";
 import type { CheckResult, Choice, GameState } from "@/lib/types";
@@ -15,6 +15,8 @@ export function CheckDialog({
   speaker,
   onClose,
   onCommit,
+  onStage,
+  reducedMotion,
 }: {
   state: GameState;
   choice: Choice;
@@ -22,11 +24,15 @@ export function CheckDialog({
   speaker?: string;
   onClose: () => void;
   onCommit: (next: GameState) => void;
+  onStage: (next: GameState) => void;
+  reducedMotion: boolean;
 }) {
   const preview = previewCheck(state, choice.check!);
-  const [display, setDisplay] = useState<number | null>(null);
-  const [result, setResult] = useState<CheckResult | null>(null);
-  const [next, setNext] = useState<GameState | null>(null);
+  const [restored] = useState(() => state.pendingCheck ? commitChoice(state, choice, { roll: state.pendingCheck.roll }) : null);
+  const [display, setDisplay] = useState<number | null>(restored?.check?.roll ?? null);
+  const [result, setResult] = useState<CheckResult | null>(restored?.check ?? null);
+  const [next, setNext] = useState<GameState | null>(restored?.state ?? null);
+  const locked = useRef(Boolean(restored));
   const [rolling, setRolling] = useState(false);
   const chance = preview.hits === 10 ? "Certain" : preview.hits === 0 ? "No chance" : `${preview.hits} in 10`;
   const delta = next ? runDelta(state, next) : [];
@@ -37,7 +43,7 @@ export function CheckDialog({
 
   useEffect(() => {
     if (!rolling || !result) return;
-    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const reduce = reducedMotion;
     if (reduce) {
       setDisplay(result.roll);
       setRolling(false);
@@ -58,11 +64,15 @@ export function CheckDialog({
       setDisplay(1 + Math.floor(Math.random() * 10));
     }, 70);
     return () => window.clearInterval(id);
-  }, [rolling, result, sound]);
+  }, [rolling, result, sound, reducedMotion]);
 
   function roll() {
+    if (locked.current) return;
+    locked.current = true;
     const face = 1 + Math.floor(Math.random() * 10);
-    const committed = commitChoice(state, choice, { roll: face });
+    const staged = stageCheck(state, choice.id, face);
+    onStage(staged);
+    const committed = commitChoice(staged, choice, { roll: face });
     setResult(committed.check);
     setNext(committed.state);
     setRolling(true);

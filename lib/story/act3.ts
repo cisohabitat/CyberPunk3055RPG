@@ -128,6 +128,8 @@ export const ACT3_SCENES: Record<string, Scene> = {
       { id: "face-sera", label: "Tell her why you came.", next: "act3_arrival" },
       {
         id: "read-third",
+        hideIfFlag: "third_attempted",
+        effects: { flags: ["third_attempted"] },
         label: "Read the third name.",
         detail: "The optic helps. So do the wards.",
         check: {

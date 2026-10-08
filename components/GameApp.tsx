@@ -1,10 +1,16 @@
 "use client";
 
 import { useEffect, useLayoutEffect, useState } from "react";
-import { CreateScreen } from "@/components/CreateScreen";
-import { PlayScreen } from "@/components/PlayScreen";
-import { TitleScreen } from "@/components/TitleScreen";
-import { clearSave, emptyCodex, loadCodex, loadSave, loadTextStep, writeSave } from "@/lib/storage";
+import { useController } from "./useController";
+import { CreateScreen } from "./CreateScreen";
+import { PlayScreen } from "./PlayScreen";
+import { TitleScreen } from "./TitleScreen";
+import { SaveDialog } from "./SaveDialog";
+import { SettingsDialog } from "./SettingsDialog";
+import { clearSave, emptyCodex, loadCodex, loadSave, usedBackup, writeSave } from "@/lib/storage";
+import { applyPreferences, DEFAULT_PREFERENCES, loadPreferences, writePreferences, type Preferences } from "@/lib/preferences";
+import { setAudioMix, setBed } from "@/lib/sound";
+import { recordIncident } from "@/lib/diagnostics";
 import type { Codex, GameState } from "@/lib/types";
 
 export function GameApp() {
@@ -13,84 +19,45 @@ export function GameApp() {
   const [run, setRun] = useState<GameState | null>(null);
   const [saved, setSaved] = useState<GameState | null>(null);
   const [saveFailed, setSaveFailed] = useState(false);
+  const [recovered, setRecovered] = useState(false);
   const [codex, setCodex] = useState<Codex>(emptyCodex());
+  const [preferences, setPreferences] = useState<Preferences>(DEFAULT_PREFERENCES);
+  const [dialog, setDialog] = useState<"saves" | "settings" | null>(null);
+
+  useController(preferences.controller);
 
   useEffect(() => {
-    setSaved(loadSave());
-    setCodex(loadCodex());
-    document.documentElement.dataset.text = String(loadTextStep());
+    setSaved(loadSave()); setRecovered(usedBackup()); setCodex(loadCodex());
+    const loaded = loadPreferences(); setPreferences(loaded); applyPreferences(loaded);
     setReady(true);
   }, []);
+  useLayoutEffect(() => { window.scrollTo(0, 0); }, [screen]);
+  useEffect(() => { setAudioMix(preferences); }, [preferences]);
+  useEffect(() => { if (screen !== "play") setBed(false); }, [screen]);
 
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0);
-  }, [screen]);
-
-  useEffect(() => {
-    if (!ready || !run || screen !== "play") return;
-    setSaveFailed(!writeSave(run));
-    setSaved(run);
-  }, [ready, run, screen]);
-
-  function refreshCodex() {
-    setCodex(loadCodex());
+  function updateRun(next: GameState) {
+    const persisted = writeSave(next);
+    setSaveFailed(!persisted);
+    if (!persisted) recordIncident("save-unavailable");
+    setRun(next); setSaved(next);
   }
+  function updatePreferences(next: Preferences) {
+    setPreferences(next); applyPreferences(next); writePreferences(next);
+  }
+  function title() { setDialog(null); setRun(null); setCodex(loadCodex()); setScreen("title"); }
+  function load(next: GameState) { updateRun(next); setRecovered(false); setDialog(null); setScreen("play"); }
 
   if (!ready) return <div className="boot">Jacking in</div>;
-
-  if (screen === "play" && run) {
-    return (
-      <PlayScreen
-        state={run}
-        saveFailed={saveFailed}
-        onChange={setRun}
-        onAbandon={() => {
-          clearSave();
-          setSaved(null);
-          setRun(null);
-          refreshCodex();
-          setScreen("title");
-        }}
-        onTitle={() => {
-          setRun(null);
-          refreshCodex();
-          setScreen("title");
-        }}
-        onNewRun={() => {
-          clearSave();
-          setSaved(null);
-          setRun(null);
-          refreshCodex();
-          setScreen("create");
-        }}
-      />
-    );
-  }
-
-  if (screen === "create") {
-    return (
-      <CreateScreen
-        keepsakes={codex.keepsakes}
-        onBack={() => setScreen("title")}
-        onStart={(next) => {
-          setRun(next);
-          setScreen("play");
-        }}
-      />
-    );
-  }
-
-  return (
-    <TitleScreen
-      save={saved}
-      codex={codex}
-      saveFailed={saveFailed}
-      onContinue={() => {
-        if (!saved) return;
-        setRun(saved);
-        setScreen("play");
-      }}
-      onNew={() => setScreen("create")}
-    />
-  );
+  return <>
+    {screen === "play" && run ? <PlayScreen state={run} saveFailed={saveFailed} preferences={preferences}
+      modalOpen={dialog !== null} onSettings={() => setDialog("settings")} onSaves={() => setDialog("saves")}
+      onChange={updateRun} onTitle={title} onNewRun={() => { setCodex(loadCodex()); setRun(null); setScreen("create"); }}
+      onAbandon={() => { clearSave(); setSaved(null); setRun(null); setSaveFailed(false); title(); }} />
+      : screen === "create" ? <CreateScreen keepsakes={codex.keepsakes} onBack={title} onStart={load} />
+      : <TitleScreen save={saved} codex={codex} saveFailed={saveFailed} recovered={recovered}
+          onSettings={() => setDialog("settings")} onSaves={() => setDialog("saves")}
+          onContinue={() => { if (saved) load(saved); }} onNew={() => setScreen("create")} />}
+    {dialog === "settings" && <SettingsDialog preferences={preferences} onChange={updatePreferences} onClose={() => setDialog(null)} />}
+    {dialog === "saves" && <SaveDialog state={run ?? saved} onLoad={load} onClose={() => setDialog(null)} onTitle={screen === "play" ? title : undefined} />}
+  </>;
 }

@@ -697,6 +697,7 @@ Mara, still unedited: "Helion told me the dump was a flush, not a kill. I signed
 
 She does not ask you to forgive it. She asks you to keep the reason attached to the crime.`,
     choices: [
+      { id: "inspect-hour", label: "Open the hour on the memory bench.", detail: "Inspect the signature, counter-order, and roster. Decide what becomes evidence.", next: "memory_table" },
       {
         id: "why-signed",
         label: "Keep the reason with the hour.",
