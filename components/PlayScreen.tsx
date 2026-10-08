@@ -1,0 +1,203 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import { CheckDialog } from "@/components/CheckDialog";
+import { Mark, originAccent } from "@/components/Mark";
+import { Sheet } from "@/components/Sheet";
+import { STRAIN_MAX, STAT_INFO } from "@/lib/character";
+import { commitChoice, getScene, presentChoices, previewCheck, sceneText, type VisibleChoice } from "@/lib/engine";
+import { loadSound, writeSound } from "@/lib/storage";
+import type { GameState } from "@/lib/types";
+
+export function PlayScreen({
+  state,
+  onChange,
+  onAbandon,
+  onTitle,
+  onNewRun,
+}: {
+  state: GameState;
+  onChange: (state: GameState) => void;
+  onAbandon: () => void;
+  onTitle: () => void;
+  onNewRun: () => void;
+}) {
+  const scene = getScene(state.sceneId);
+  const choices = presentChoices(state, scene);
+  const [pending, setPending] = useState<VisibleChoice | null>(null);
+  const [sheetOpen, setSheetOpen] = useState(false);
+  const [confirmAbandon, setConfirmAbandon] = useState(false);
+  const [sound, setSound] = useState(false);
+  const [fault, setFault] = useState("");
+
+  useEffect(() => {
+    setSound(loadSound());
+  }, []);
+
+  useEffect(() => {
+    setSheetOpen(false);
+    setPending(null);
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    document.getElementById("scene-top")?.scrollIntoView({ block: "start", behavior: reduce ? "auto" : "smooth" });
+    if (scene.ending && scene.endingTitle) document.title = `${scene.endingTitle} — Saint Shard`;
+    else document.title = "Saint Shard — Kite City 3055";
+  }, [state.sceneId, scene.ending, scene.endingTitle]);
+
+  useEffect(() => {
+    function onKey(event: KeyboardEvent) {
+      if (pending || confirmAbandon || scene.ending) return;
+      const number = Number(event.key);
+      if (number < 1 || number > 9) return;
+      const choice = choices[number - 1];
+      if (choice?.enabled) pick(choice);
+    }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  });
+
+  function pick(choice: VisibleChoice) {
+    if (!choice.enabled) return;
+    setFault("");
+    if (choice.check) {
+      setPending(choice);
+      return;
+    }
+    try {
+      onChange(commitChoice(state, choice).state);
+    } catch {
+      setFault("The city glitched on that choice. Reload this page and continue the save.");
+    }
+  }
+
+  function toggleSound() {
+    const next = !sound;
+    setSound(next);
+    writeSound(next);
+  }
+
+  return (
+    <div className="screen">
+      <a className="skip" href="#choices">
+        Skip to choices
+      </a>
+      <header className="topbar">
+        <div className="brand">
+          <Mark accent={originAccent(state.origin)} />
+          <div>
+            Saint Shard
+            <small>Kite City 3055</small>
+          </div>
+        </div>
+        <div className="meters">
+          <div className={state.strain >= 4 ? "pips hot" : "pips"} data-testid="strain" aria-label={`Strain ${state.strain} of ${STRAIN_MAX}`}>
+            {Array.from({ length: STRAIN_MAX }, (_, index) => (
+              <span key={index} className={index < state.strain ? "on" : ""} />
+            ))}
+          </div>
+          <div className="creds" data-testid="creds">
+            {state.creds} cr
+          </div>
+        </div>
+        <div className="top-actions">
+          <button className="ghost" type="button" aria-pressed={sound} onClick={toggleSound}>
+            Sound {sound ? "on" : "off"}
+          </button>
+          <button className="ghost sheet-toggle" type="button" data-testid="sheet-toggle" onClick={() => setSheetOpen(true)}>
+            Sheet
+          </button>
+          <button className="ghost" type="button" onClick={() => setConfirmAbandon(true)}>
+            Abandon
+          </button>
+        </div>
+      </header>
+      <div className="layout">
+        <main>
+          <article className="scene" id="scene-top" data-testid="scene">
+            <p className="kicker">{scene.location}</p>
+            {scene.ending && (
+              <>
+                <p className="ending-kicker">Ending</p>
+                <h1 data-testid="ending-title">{scene.endingTitle}</h1>
+              </>
+            )}
+            {scene.speaker && <p className="speaker">{scene.speaker}</p>}
+            <div className="prose" data-testid="scene-text" aria-live="polite">
+              {sceneText(scene, state)
+                .split(/\n\n+/)
+                .map((paragraph, index) => (
+                  <p key={`${scene.id}-${index}`}>{paragraph}</p>
+                ))}
+            </div>
+            {fault && <p className="form-error">{fault}</p>}
+            {scene.ending ? (
+              <div className="actions">
+                <button className="primary" type="button" onClick={onNewRun}>
+                  New run
+                </button>
+                <button className="ghost" type="button" onClick={onTitle}>
+                  Title
+                </button>
+              </div>
+            ) : (
+              <div className="choices" id="choices">
+                {choices.map((choice, index) => {
+                  const odds = choice.check ? previewCheck(state, choice.check) : null;
+                  const chance = !odds ? null : odds.hits === 10 ? "certain" : odds.hits === 0 ? "no chance" : `${odds.hits} in 10`;
+                  return (
+                    <button
+                      key={choice.id}
+                      className="choice"
+                      type="button"
+                      data-testid={`choice-${choice.id}`}
+                      disabled={!choice.enabled || pending !== null}
+                      onClick={() => pick(choice)}
+                    >
+                      <span className="index">{index + 1}</span>
+                      <span className="label">{choice.label}</span>
+                      <span className="odds">
+                        {choice.disabledReason ??
+                          [odds ? `${STAT_INFO[odds.stat].name} · DC ${odds.dc} · ${chance}` : null, choice.detail]
+                            .filter(Boolean)
+                            .join(" · ")}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+            )}
+          </article>
+        </main>
+        <button className={sheetOpen ? "sheet-backdrop open" : "sheet-backdrop"} type="button" aria-label="Close sheet" onClick={() => setSheetOpen(false)} />
+        <Sheet state={state} open={sheetOpen} onClose={() => setSheetOpen(false)} />
+      </div>
+      {pending?.check && (
+        <CheckDialog
+          state={state}
+          choice={pending}
+          sound={sound}
+          onClose={() => setPending(null)}
+          onCommit={(next) => {
+            setPending(null);
+            onChange(next);
+          }}
+        />
+      )}
+      {confirmAbandon && (
+        <div className="overlay">
+          <div className="dialog" role="dialog" aria-modal="true" aria-labelledby="abandon-title">
+            <h2 id="abandon-title">Abandon this run?</h2>
+            <p>This wipes {state.handle} from the browser. The city will not remember it.</p>
+            <div className="dialog-actions">
+              <button className="primary" type="button" data-testid="confirm-abandon" onClick={onAbandon}>
+                Wipe it
+              </button>
+              <button className="ghost" type="button" onClick={() => setConfirmAbandon(false)}>
+                Keep going
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
