@@ -60,7 +60,13 @@ export function PlayScreen({
     setPending(null);
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     setFlash(!reduce);
-    document.getElementById("scene-top")?.scrollIntoView({ block: "start", behavior: reduce ? "auto" : "smooth" });
+    const sceneTop = document.getElementById("scene-top");
+    const header = document.querySelector(".topbar");
+    if (sceneTop) {
+      const offset = header ? header.getBoundingClientRect().height + 12 : 0;
+      const top = sceneTop.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top: Math.max(0, top), behavior: reduce ? "auto" : "smooth" });
+    }
     if (scene.ending && scene.endingTitle) document.title = `${scene.endingTitle} — Saint Shard`;
     else document.title = "Saint Shard — Kite City 3055";
     if (sound) playCue(locationCue(scene.location, Boolean(scene.ending)));

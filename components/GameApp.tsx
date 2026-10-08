@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import { CreateScreen } from "@/components/CreateScreen";
 import { PlayScreen } from "@/components/PlayScreen";
 import { TitleScreen } from "@/components/TitleScreen";
@@ -20,6 +20,10 @@ export function GameApp() {
     document.documentElement.dataset.text = String(loadTextStep());
     setReady(true);
   }, []);
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, [screen]);
 
   useEffect(() => {
     if (!ready || !run || screen !== "play") return;
