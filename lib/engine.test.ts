@@ -8,11 +8,12 @@ import {
   getScene,
   presentChoices,
   previewCheck,
+  runDelta,
   sceneText,
 } from "./engine.ts";
 import { ITEMS } from "./items.ts";
 import { parseSave } from "./storage.ts";
-import { SCENES, vaultNext } from "./story.ts";
+import { SCENES, endingCoda, vaultNext } from "./story.ts";
 import type { Choice, GameState, StatId } from "./types.ts";
 
 function bonusFor(origin: OriginId, seed: number): Record<StatId, number> {
@@ -87,8 +88,10 @@ describe("story graph", () => {
       assert.equal(scene.id, key);
       const ids = new Set(scene.choices.map((choice) => choice.id));
       assert.equal(ids.size, scene.choices.length, `${key} has duplicate choice ids`);
-      if (scene.ending) assert.equal(scene.choices.length, 0);
-      else assert.ok(scene.choices.length > 0, key);
+      if (scene.ending) {
+        assert.equal(scene.choices.length, 0);
+        assert.ok(endingCoda(scene.id).length > 10, scene.id);
+      } else assert.ok(scene.choices.length > 0, key);
 
       for (const choice of scene.choices) {
         if (choice.check) {
@@ -176,6 +179,32 @@ describe("economy and dice", () => {
     assert.equal(bitten.check?.crit, "fail");
     assert.equal(bitten.state.strain, 1);
     assert.equal(bitten.state.sceneId, "hatch_caught");
+  });
+
+  it("names what a roll changed", () => {
+    const state = make("gutterwire", { chrome: 0, nerve: 0, face: 2, ghost: 0 });
+    const caught = commitChoice({ ...state, sceneId: "hatch" }, getScene("hatch").choices[0], { roll: 1 });
+    assert.deepEqual(runDelta(state, caught.state), ["Strain +1"]);
+    const quiet = commitChoice({ ...state, sceneId: "hatch" }, getScene("hatch").choices[0], { roll: 10 });
+    assert.deepEqual(runDelta({ ...state, sceneId: "hatch" }, quiet.state), ["Gained Layout Scrap"]);
+  });
+
+  it("lets you leave a door and reuse a pass you already bought", () => {
+    let state = make("spire", { chrome: 0, nerve: 0, face: 2, ghost: 0 });
+    state = step(state, "accept");
+    const before = state.creds;
+    state = step(state, "pass");
+    assert.equal(state.sceneId, "front");
+    assert.equal(state.creds, before - PAY.pass);
+    state = step(state, "retreat");
+    assert.equal(state.sceneId, "route");
+    assert.equal(state.creds, before - PAY.pass);
+    const options = presentChoices(state, getScene("route"));
+    assert.equal(options.some((choice) => choice.id === "pass"), false);
+    assert.equal(options.find((choice) => choice.id === "use-pass")?.enabled, true);
+    state = step(state, "use-pass");
+    assert.equal(state.sceneId, "front");
+    assert.equal(state.creds, before - PAY.pass);
   });
 
   it("rejects a choice from the wrong room", () => {
@@ -278,6 +307,7 @@ describe("random runners", () => {
         const rng = mulberry32(seed * 17 + origin.length);
         let state = make(origin, bonusFor(origin, seed), "Nova");
         let stalls = 0;
+        let retreats = 0;
         const path: string[] = [];
         let finished = false;
         for (let guard = 0; guard < 48; guard += 1) {
@@ -292,8 +322,11 @@ describe("random runners", () => {
             stalls += 1;
             if (stalls > 2) options = options.filter((choice) => choice.id === "accept");
           }
+          const forward = options.filter((choice) => choice.id !== "retreat");
+          if (retreats >= 1 && forward.length > 0) options = forward;
           assert.ok(options.length > 0, `softlock at ${state.sceneId} after ${path.join(" > ")}`);
           const choice = options[Math.floor(rng() * options.length)] as Choice;
+          if (choice.id === "retreat") retreats += 1;
           path.push(`${state.sceneId}:${choice.id}`);
           const roll = choice.check ? 1 + Math.floor(rng() * 10) : undefined;
           state = commitChoice(state, choice, roll === undefined ? undefined : { roll }).state;

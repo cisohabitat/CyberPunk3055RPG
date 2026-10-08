@@ -150,6 +150,25 @@ function resolveNext(choice: Choice, state: GameState, success: boolean | null):
   return id;
 }
 
+export function runDelta(before: GameState, after: GameState): string[] {
+  const lines: string[] = [];
+  if (after.strain !== before.strain) {
+    const delta = after.strain - before.strain;
+    lines.push(`Strain ${delta > 0 ? "+" : ""}${delta}`);
+  }
+  if (after.creds !== before.creds) {
+    const delta = after.creds - before.creds;
+    lines.push(`${delta > 0 ? "+" : ""}${delta} cr`);
+  }
+  for (const id of after.items) {
+    if (!before.items.includes(id)) lines.push(`Gained ${ITEMS[id]?.name ?? id}`);
+  }
+  for (const id of before.items) {
+    if (!after.items.includes(id)) lines.push(`Lost ${ITEMS[id]?.name ?? id}`);
+  }
+  return lines;
+}
+
 export function commitChoice(
   state: GameState,
   choice: Choice,

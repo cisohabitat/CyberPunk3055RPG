@@ -1,12 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { CheckDialog } from "@/components/CheckDialog";
 import { Mark, originAccent } from "@/components/Mark";
 import { Sheet } from "@/components/Sheet";
-import { STRAIN_MAX, STAT_INFO } from "@/lib/character";
-import { commitChoice, getScene, presentChoices, previewCheck, sceneText, type VisibleChoice } from "@/lib/engine";
+import { ORIGINS, STRAIN_MAX, STAT_INFO } from "@/lib/character";
+import { commitChoice, getScene, presentChoices, previewCheck, runDelta, sceneText, type VisibleChoice } from "@/lib/engine";
 import { loadSound, writeSound } from "@/lib/storage";
+import { endingCoda } from "@/lib/story";
 import type { GameState } from "@/lib/types";
 
 export function PlayScreen({
@@ -29,10 +30,19 @@ export function PlayScreen({
   const [confirmAbandon, setConfirmAbandon] = useState(false);
   const [sound, setSound] = useState(false);
   const [fault, setFault] = useState("");
+  const [delta, setDelta] = useState<string[]>([]);
+  const prior = useRef(state);
 
   useEffect(() => {
     setSound(loadSound());
   }, []);
+
+  useEffect(() => {
+    if (prior.current !== state) {
+      setDelta(prior.current.sceneId === state.sceneId ? [] : runDelta(prior.current, state));
+      prior.current = state;
+    }
+  }, [state]);
 
   useEffect(() => {
     setSheetOpen(false);
@@ -45,9 +55,15 @@ export function PlayScreen({
 
   useEffect(() => {
     function onKey(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        if (confirmAbandon) setConfirmAbandon(false);
+        if (sheetOpen) setSheetOpen(false);
+        return;
+      }
       if (pending || confirmAbandon || scene.ending) return;
+      if (event.metaKey || event.ctrlKey || event.altKey) return;
       const number = Number(event.key);
-      if (number < 1 || number > 9) return;
+      if (!Number.isInteger(number) || number < 1 || number > 9) return;
       const choice = choices[number - 1];
       if (choice?.enabled) pick(choice);
     }
@@ -89,10 +105,13 @@ export function PlayScreen({
           </div>
         </div>
         <div className="meters">
-          <div className={state.strain >= 4 ? "pips hot" : "pips"} data-testid="strain" aria-label={`Strain ${state.strain} of ${STRAIN_MAX}`}>
-            {Array.from({ length: STRAIN_MAX }, (_, index) => (
-              <span key={index} className={index < state.strain ? "on" : ""} />
-            ))}
+          <div className="strain-readout">
+            <span className="stat-name">Strain</span>
+            <div className={state.strain >= 4 ? "pips hot" : "pips"} data-testid="strain" aria-label={`Strain ${state.strain} of ${STRAIN_MAX}`}>
+              {Array.from({ length: STRAIN_MAX }, (_, index) => (
+                <span key={index} className={index < state.strain ? "on" : ""} />
+              ))}
+            </div>
           </div>
           <div className="creds" data-testid="creds">
             {state.creds} cr
@@ -121,6 +140,21 @@ export function PlayScreen({
               </>
             )}
             {scene.speaker && <p className="speaker">{scene.speaker}</p>}
+            {delta.length > 0 && (
+              <p className="delta" data-testid="run-delta">
+                {delta.join(" · ")}
+              </p>
+            )}
+            {scene.ending && (
+              <ul className="recap" data-testid="ending-recap">
+                <li>{ORIGINS[state.origin].name}</li>
+                <li>{state.creds} cr</li>
+                <li>
+                  Strain {state.strain}/{STRAIN_MAX}
+                </li>
+                <li>{endingCoda(scene.id)}</li>
+              </ul>
+            )}
             <div className="prose" data-testid="scene-text" aria-live="polite">
               {sceneText(scene, state)
                 .split(/\n\n+/)

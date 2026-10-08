@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { commitChoice, previewCheck } from "@/lib/engine";
+import { useEffect, useRef, useState } from "react";
+import { commitChoice, previewCheck, runDelta } from "@/lib/engine";
 import { blip } from "@/lib/sound";
 import type { CheckResult, Choice, GameState } from "@/lib/types";
 
@@ -23,7 +23,26 @@ export function CheckDialog({
   const [result, setResult] = useState<CheckResult | null>(null);
   const [next, setNext] = useState<GameState | null>(null);
   const [rolling, setRolling] = useState(false);
+  const rollRef = useRef<HTMLButtonElement>(null);
+  const continueRef = useRef<HTMLButtonElement>(null);
   const chance = preview.hits === 10 ? "Certain" : preview.hits === 0 ? "No chance" : `${preview.hits} in 10`;
+  const delta = next ? runDelta(state, next) : [];
+
+  useEffect(() => {
+    rollRef.current?.focus();
+  }, []);
+
+  useEffect(() => {
+    if (result && !rolling) continueRef.current?.focus();
+  }, [result, rolling]);
+
+  useEffect(() => {
+    function onKey(event: KeyboardEvent) {
+      if (event.key === "Escape" && !result) onClose();
+    }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [onClose, result]);
 
   useEffect(() => {
     if (!rolling || !result) return;
@@ -84,16 +103,17 @@ export function CheckDialog({
             <p>{result.flavor}</p>
             {result.crit === "success" && <p>A ten. Strain eases.</p>}
             {result.crit === "fail" && <p>A one. Strain bites harder.</p>}
+            {delta.length > 0 && <p className="delta">{delta.join(" · ")}</p>}
           </div>
         )}
         <div className="dialog-actions">
           {!result && (
-            <button className="primary" type="button" data-testid="roll-button" onClick={roll}>
+            <button ref={rollRef} className="primary" type="button" data-testid="roll-button" onClick={roll}>
               Roll
             </button>
           )}
           {result && !rolling && next && (
-            <button className="primary" type="button" data-testid="continue-check" onClick={() => onCommit(next)}>
+            <button ref={continueRef} className="primary" type="button" data-testid="continue-check" onClick={() => onCommit(next)}>
               Continue
             </button>
           )}

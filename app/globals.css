@@ -161,9 +161,52 @@ button { cursor: pointer; }
   text-transform: uppercase;
 }
 
-.primary:disabled, .choice:disabled {
+.primary:disabled {
   cursor: not-allowed;
   opacity: 0.45;
+}
+
+.choice:disabled {
+  cursor: not-allowed;
+  border-color: var(--line);
+  background: transparent;
+}
+
+.choice:disabled .label,
+.choice:disabled .odds,
+.choice:disabled .index {
+  color: var(--dim);
+}
+
+.strain-readout {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.strain-readout .stat-name { font-size: 0.72rem; color: var(--muted); }
+
+.delta {
+  margin: 0 0 1rem;
+  color: var(--amber);
+  font-family: var(--font-display), sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.recap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.2rem;
+  color: var(--muted);
+  font-family: var(--font-display), sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .layout {

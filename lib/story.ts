@@ -323,11 +323,14 @@ That file is the product. Saints keep it. Then they sell it back to the same tow
       const money = state.flags.haggled
         ? "Ninety is already on your chip. Try not to donate it to a door."
         : "Fifty is on your chip. The rest of the city will try to take it.";
+      const passLine = state.items.includes("counterfeit-pass")
+        ? "The pass is already in your pocket. The basin will still want a story."
+        : "The penitent pass is a hundred. It scans often enough.";
       return `${money}
 
 "Three ways in. The front sells forgiveness to anyone with an appointment. The hatch behind the incinerator is for people who still sweat. The choir door runs on an old Helion pad. I would not kiss it."
 
-The penitent pass is a hundred. It scans often enough.`;
+${passLine}`;
     },
     choices: [
       {
@@ -335,11 +338,19 @@ The penitent pass is a hundred. It scans often enough.`;
         label: "Buy a counterfeit penitent pass.",
         detail: "Walk in as someone the basin expects.",
         requireCreds: PAY.pass,
+        hideIfItem: "counterfeit-pass",
         effects: {
           creds: -PAY.pass,
           itemsAdd: ["counterfeit-pass"],
           journal: ["A counterfeit penitent pass is burning a hole in your pocket."],
         },
+        next: "front",
+      },
+      {
+        id: "use-pass",
+        label: "Use the penitent pass.",
+        detail: "You already paid for the appointment.",
+        requireItem: "counterfeit-pass",
         next: "front",
       },
       { id: "hatch", label: "Take the maintenance hatch.", detail: "Behind the incinerator.", next: "hatch" },
@@ -374,6 +385,12 @@ The penitent pass is a hundred. It scans often enough.`;
         nextSuccess: "undercroft",
         nextFail: "undercroft",
       }),
+      {
+        id: "retreat",
+        label: "Pocket the pass and walk.",
+        detail: "The orderly has not logged you yet.",
+        next: "route",
+      },
     ],
   }),
   hatch: add({
@@ -395,6 +412,12 @@ The penitent pass is a hundred. It scans often enough.`;
         nextSuccess: "undercroft",
         nextFail: "hatch_caught",
       }),
+      {
+        id: "retreat",
+        label: "This vein is wrong. Turn around.",
+        detail: "Quill's other doors are still open.",
+        next: "route",
+      },
     ],
   }),
   hatch_caught: add({
@@ -448,6 +471,12 @@ The penitent pass is a hundred. It scans often enough.`;
         nextSuccess: "undercroft",
         nextFail: "undercroft",
       }),
+      {
+        id: "retreat",
+        label: "Leave the pad alone.",
+        detail: "Shock coils are a kind of opinion.",
+        next: "route",
+      },
     ],
   }),
   undercroft: add({
@@ -995,3 +1024,18 @@ There is no more conversation in this room. There is only the exit you can still
     choices: [],
   }),
 };
+
+const CODAS: Record<string, string> = {
+  ending_sold: "Helion bought the last clean copy of its own crime.",
+  ending_both: "The wards have the file. So does the tower that paid you.",
+  ending_burned: "Lumen kept the memory. The shard is gone.",
+  ending_smashed: "You broke the hour alone. Proof went with it.",
+  ending_ash: "A damaged hour changed hands, and then the week ended.",
+  ending_walk: "The chair still happens at dawn.",
+  ending_taken: "Kerr kept the glass. You kept your name.",
+  ending_sainted: "The chapel kept the reason you walked in.",
+};
+
+export function endingCoda(sceneId: string): string {
+  return CODAS[sceneId] ?? "";
+}
