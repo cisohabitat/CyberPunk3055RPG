@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { DialogFrame } from "@/components/DialogFrame";
 import { getScene } from "@/lib/engine";
-import { CODEX } from "@/lib/story";
+import { CODEX, endingCoda } from "@/lib/story";
 import { currentGoal } from "@/lib/story/goal";
 import type { Codex, GameState } from "@/lib/types";
 
@@ -69,7 +69,14 @@ export function TitleScreen({
               const seen = codex.seen.some((item) => item.id === entry.id);
               return (
                 <li key={entry.id} className={seen ? "seen" : "unseen"}>
-                  {seen ? entry.title : "—"}
+                  {seen ? (
+                    <>
+                      <strong>{entry.title}</strong>
+                      <span>{endingCoda(entry.id)}</span>
+                    </>
+                  ) : (
+                    "—"
+                  )}
                 </li>
               );
             })}

@@ -114,7 +114,9 @@ function vaultText(state: GameState): string {
       ? `Lumen puts two fingers on the plinth. "Break it after. I want to see the light go out."`
       : state.flags.pact_fake
         ? "Lumen believes you. Her optic is on the door, watching for Kerr, not for your hands."
-        : "The minute is yours. It does not feel like a gift.";
+        : state.flags.pact_sell
+          ? `You told her Ward Nine was not your job. She is not on this side of the glass. The plinth does not care what you called the crime.`
+          : "The minute is yours. It does not feel like a gift.";
   return `Mara Voss is under the halo, breathing on a four-count. The plinth is open for calibration. The shard is a tongue of glass, still warm from a life.
 
 ${pact}
@@ -146,12 +148,17 @@ function afterText(state: GameState): string {
     ? "Your pockets are honest. The chair upstairs is not. Dawn still has Mara's name on it."
     : state.flags.ash
       ? "What you carry is half a scream in glass. It flickers when the streetlight does."
-      : state.flags.copied
-        ? "Two copies of Mara's hour exist. One is in your pocket. One is a file that wants a witness."
-        : "Mara's hour is a weight in your pocket. It is smaller than three hundred names, and heavier.";
+      : state.flags.copy_failed
+        ? "The copy collapsed in the plinth. Only the original is warm, and it is the one in your pocket."
+        : state.flags.copied
+          ? "Two copies of Mara's hour exist. One is in your pocket. One is a file that wants a witness."
+          : "Mara's hour is a weight in your pocket. It is smaller than three hundred names, and heavier.";
+  const believed = state.flags.she_believes
+    ? "Lumen believed the reason you sold her. The stair will keep the version she bought."
+    : "";
   return `${beat}
 
-${hold}
+${hold}${believed ? `\n\n${believed}` : ""}
 
 Quill is a noodle stall away. He has never once been sentimental.`;
 }
@@ -676,6 +683,24 @@ The halo would have taken it out of her by dawn. It is in your hand instead.`,
         label: "Keep the hour.",
         detail: "You know what the glass is now.",
         effects: { flags: ["heard_memo"], journal: [TRUTH] },
+        next: "mara_why",
+      },
+    ],
+  }),
+  mara_why: add({
+    id: "mara_why",
+    location: "The chair room",
+    speaker: "Mara",
+    text: `The hour is not finished with you.
+
+Mara, still unedited: "Helion told me the dump was a flush, not a kill. I signed because the night shift was already in the building and I thought the tower would move them. They did not move them."
+
+She does not ask you to forgive it. She asks you to keep the reason attached to the crime.`,
+    choices: [
+      {
+        id: "why-signed",
+        label: "Keep the reason with the hour.",
+        detail: "No check. Kerr is still the door.",
         next: (state) => (state.flags.kerr_down || state.flags.kerr_slipped || state.flags.kerr_talked ? "after_kerr" : "kerr"),
       },
     ],

@@ -284,7 +284,9 @@ button { cursor: pointer; }
   border: 1px solid var(--line);
 }
 
-#scene-top { scroll-margin-top: 5.5rem; }
+.stat .hint { grid-column: 1 / -1; margin: 0; }
+
+#scene-top { scroll-margin-top: var(--header-h, 5.5rem); }
 
 .kicker, .speaker, .stat-name, .tab, .odds, .detail, .ending-kicker {
   font-family: var(--font-display), sans-serif;
@@ -703,6 +705,30 @@ input {
 .codex .seen { color: var(--ink); border-color: rgba(94, 242, 255, 0.55); }
 .codex .unseen { color: var(--dim); }
 
+.codex .seen span {
+  display: block;
+  margin-top: 0.25rem;
+  text-transform: none;
+  letter-spacing: 0;
+  font-family: var(--font-body), Georgia, serif;
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.prose-controls { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.4rem 0 0.8rem; }
+
 .sheet-backdrop { display: none; }
 
 @keyframes rise {
@@ -745,7 +771,21 @@ input {
 }
 
 @media (max-width: 700px) {
-  .brand { flex: 1 1 100%; }
+  .brand { flex: 0 1 auto; }
+  .topbar { gap: 0.45rem 0.65rem; }
+  .meters { margin-left: auto; }
+  .top-actions {
+    flex: 1 1 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.35rem;
+  }
+  .top-actions .ghost {
+    padding: 0.35rem 0.25rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    min-height: 2.4rem;
+  }
   .die.plate { width: 4.4rem; height: 4.4rem; font-size: 1.7rem; margin: 0.35rem 0; }
   .reaction .portrait-frame { width: 56px; }
   .dialog { padding: 0.85rem; }
