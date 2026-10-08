@@ -9,6 +9,25 @@ const SOUND_KEY = "saint-shard-sound";
 const TEXT_KEY = "saint-shard-text";
 const CODEX_KEY = "saint-shard-codex";
 
+function readStored(key: string): string | null {
+  if (typeof window === "undefined") return null;
+  try {
+    return window.localStorage.getItem(key);
+  } catch {
+    return null;
+  }
+}
+
+function writeStored(key: string, value: string): boolean {
+  if (typeof window === "undefined") return false;
+  try {
+    window.localStorage.setItem(key, value);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 const COMPLICATIONS = new Set<ComplicationId>(["debt", "optic", "on-file"]);
 
 function isOrigin(value: unknown): value is OriginId {
@@ -70,35 +89,38 @@ export function parseSave(raw: string | null): GameState | null {
 }
 
 export function loadSave(): GameState | null {
-  if (typeof window === "undefined") return null;
-  return parseSave(window.localStorage.getItem(SAVE_KEY));
+  return parseSave(readStored(SAVE_KEY));
 }
 
-export function writeSave(state: GameState) {
-  window.localStorage.setItem(SAVE_KEY, JSON.stringify(state));
+export function writeSave(state: GameState): boolean {
+  return writeStored(SAVE_KEY, JSON.stringify(state));
 }
 
-export function clearSave() {
-  window.localStorage.removeItem(SAVE_KEY);
+export function clearSave(): boolean {
+  if (typeof window === "undefined") return false;
+  try {
+    window.localStorage.removeItem(SAVE_KEY);
+    return true;
+  } catch {
+    return false;
+  }
 }
 
 export function loadSound(): boolean {
-  if (typeof window === "undefined") return false;
-  return window.localStorage.getItem(SOUND_KEY) === "on";
+  return readStored(SOUND_KEY) === "on";
 }
 
 export function writeSound(on: boolean) {
-  window.localStorage.setItem(SOUND_KEY, on ? "on" : "off");
+  return writeStored(SOUND_KEY, on ? "on" : "off");
 }
 
 export function loadTextStep(): number {
-  if (typeof window === "undefined") return 0;
-  const step = Number(window.localStorage.getItem(TEXT_KEY));
+  const step = Number(readStored(TEXT_KEY));
   return step === 1 || step === 2 ? step : 0;
 }
 
 export function writeTextStep(step: number) {
-  window.localStorage.setItem(TEXT_KEY, String(step === 1 || step === 2 ? step : 0));
+  return writeStored(TEXT_KEY, String(step === 1 || step === 2 ? step : 0));
 }
 
 export function emptyCodex(): Codex {
@@ -122,17 +144,16 @@ export function parseCodex(raw: string | null): Codex {
 }
 
 export function loadCodex(): Codex {
-  if (typeof window === "undefined") return emptyCodex();
-  return parseCodex(window.localStorage.getItem(CODEX_KEY));
+  return parseCodex(readStored(CODEX_KEY));
 }
 
 export function writeCodex(codex: Codex) {
-  window.localStorage.setItem(CODEX_KEY, JSON.stringify(codex));
+  return writeStored(CODEX_KEY, JSON.stringify(codex));
 }
 
 export function rememberEnding(id: string, title: string, keepsakes?: string[]) {
   const current = loadCodex();
   const seen = current.seen.some((entry) => entry.id === id) ? current.seen : [...current.seen, { id, title }];
   const nextKeepsakes = keepsakes?.filter((item) => ITEMS[item]) ?? current.keepsakes;
-  writeCodex({ seen, keepsakes: nextKeepsakes });
+  return writeCodex({ seen, keepsakes: nextKeepsakes });
 }

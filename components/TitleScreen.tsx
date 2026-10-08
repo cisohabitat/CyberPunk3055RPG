@@ -14,11 +14,13 @@ export function TitleScreen({
   codex,
   onContinue,
   onNew,
+  saveFailed,
 }: {
   save: GameState | null;
   codex: Codex;
   onContinue: () => void;
   onNew: () => void;
+  saveFailed: boolean;
 }) {
   const [confirm, setConfirm] = useState(false);
   const scene = save ? getScene(save.sceneId) : null;
@@ -45,7 +47,7 @@ export function TitleScreen({
         </div>
         {save && scene && (
           <p className="continue-note">
-            {save.handle} is saved in this browser. {currentGoal(save)}
+            {save.handle} {saveFailed ? "is available for this session. Keep this page open to keep your progress." : "is saved in this browser."} {currentGoal(save)}
           </p>
         )}
         <div className="rules">

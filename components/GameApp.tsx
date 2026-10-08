@@ -12,6 +12,7 @@ export function GameApp() {
   const [screen, setScreen] = useState<"title" | "create" | "play">("title");
   const [run, setRun] = useState<GameState | null>(null);
   const [saved, setSaved] = useState<GameState | null>(null);
+  const [saveFailed, setSaveFailed] = useState(false);
   const [codex, setCodex] = useState<Codex>(emptyCodex());
 
   useEffect(() => {
@@ -27,7 +28,7 @@ export function GameApp() {
 
   useEffect(() => {
     if (!ready || !run || screen !== "play") return;
-    writeSave(run);
+    setSaveFailed(!writeSave(run));
     setSaved(run);
   }, [ready, run, screen]);
 
@@ -41,6 +42,7 @@ export function GameApp() {
     return (
       <PlayScreen
         state={run}
+        saveFailed={saveFailed}
         onChange={setRun}
         onAbandon={() => {
           clearSave();
@@ -82,6 +84,7 @@ export function GameApp() {
     <TitleScreen
       save={saved}
       codex={codex}
+      saveFailed={saveFailed}
       onContinue={() => {
         if (!saved) return;
         setRun(saved);

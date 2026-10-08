@@ -68,10 +68,13 @@ Leaving a scene with a speaker sets `met_quill`, `met_mara`, `met_kerr`, `met_lu
 - Factions are quill, lumen, helion, and wards, clamped from −3 to 5.
 - A choice that changes a faction, an item, or a journal clue says so in `detail` when the consequence is real. `effectPreview` adds the numeric shift (creds, strain, items, factions) before the click. At Strain 4, `CheckDialog` shows "The chair is close." before the roll. `statVoice` in `lib/story/voices.ts` is the one sentence that stat says before the die. It does not change the bonus.
 - Save version is 2. The key is `saint-shard-3055-v1`. Sound is `saint-shard-sound`. Text size is `saint-shard-text` (`html[data-text]` 0, 1, or 2). Codex is `saint-shard-codex`. `log` is the recent choice labels.
+- Storage access catches blocked getters, failed reads, quota errors, and failed removals. Reads fall back to empty saves/codex and default preferences. Writes return a success boolean. `GameApp` uses the save result to show a session-only progress notice in play and on the title screen; a failed save must not prevent play. Sound and text controls still work without persisted preferences.
 
 ## Screens
 
 Desktop, wider than 1100px: the sheet is a 320px column, and the portrait is 220px. Tablet, 1100px and under: the sheet is a drawer with a focus trap, and the portrait is 160px. Phone, 700px and under: the portrait is 112px, district cards stack, and Text, Sound, Sheet, and Abandon share one row so the goal stays in the first screen. `viewportFit` is `cover`. The goal element is `data-testid="goal"`. Prose advances one paragraph at a time unless the player shows the rest or the browser asks for reduced motion. The live announcement is the place, the act, and the goal. Play a changed screen at 390px and at desktop, and confirm the goal is visible without opening the sheet.
+
+Story number shortcuts are disabled while the sheet is open. Sheet tabs use Left/Right arrows with wrapping, plus Home/End. The focus trap includes only buttons with a nonnegative tab index so the selected tab remains reachable after switching panels.
 
 ## Sound
 

@@ -23,12 +23,14 @@ export function PlayScreen({
   onAbandon,
   onTitle,
   onNewRun,
+  saveFailed,
 }: {
   state: GameState;
   onChange: (state: GameState) => void;
   onAbandon: () => void;
   onTitle: () => void;
   onNewRun: () => void;
+  saveFailed: boolean;
 }) {
   const scene = getScene(state.sceneId);
   const choices = presentChoices(state, scene);
@@ -96,7 +98,7 @@ export function PlayScreen({
         if (sheetOpen) setSheetOpen(false);
         return;
       }
-      if (pending || confirmAbandon || choices.length === 0) return;
+      if (pending || confirmAbandon || sheetOpen || choices.length === 0) return;
       if (event.metaKey || event.ctrlKey || event.altKey) return;
       const number = Number(event.key);
       if (!Number.isInteger(number) || number < 1 || number > 9) return;
@@ -175,6 +177,11 @@ export function PlayScreen({
           </button>
         </div>
       </header>
+      {saveFailed && (
+        <p className="form-error" role="status">
+          This run could not be saved in this browser. Keep this page open to keep your progress.
+        </p>
+      )}
       <div className="layout">
         <main>
           <article

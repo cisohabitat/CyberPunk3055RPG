@@ -8,6 +8,8 @@ import { journalTitle } from "@/lib/journal";
 import { metCast } from "@/lib/story/cast";
 import type { GameState } from "@/lib/types";
 
+const TABS = ["stats", "gear", "journal"] as const;
+
 export function Sheet({ state, open, onClose, speaker }: { state: GameState; open: boolean; onClose: () => void; speaker?: string }) {
   const [tab, setTab] = useState<"stats" | "gear" | "journal">("stats");
   const origin = ORIGINS[state.origin];
@@ -23,7 +25,8 @@ export function Sheet({ state, open, onClose, speaker }: { state: GameState; ope
     const narrow = window.matchMedia("(max-width: 1100px)").matches;
     if (!narrow) return;
     const focusable = () =>
-      [...root.querySelectorAll<HTMLElement>("button:not([disabled]), a[href], input, select, textarea")];
+      [...root.querySelectorAll<HTMLElement>("button:not([disabled]), a[href], input, select, textarea")]
+        .filter((node) => node.tabIndex >= 0);
     focusable()[0]?.focus();
     function onKey(event: KeyboardEvent) {
       if (event.key === "Escape") {
@@ -85,7 +88,7 @@ export function Sheet({ state, open, onClose, speaker }: { state: GameState; ope
         ))}
       </ul>
       <div className="tabs" role="tablist">
-        {(["stats", "gear", "journal"] as const).map((id) => (
+        {TABS.map((id, index) => (
           <button
             key={id}
             id={`tab-${id}`}
@@ -96,6 +99,18 @@ export function Sheet({ state, open, onClose, speaker }: { state: GameState; ope
             aria-controls={`panel-${id}`}
             tabIndex={tab === id ? 0 : -1}
             onClick={() => setTab(id)}
+            onKeyDown={(event) => {
+              let nextIndex: number;
+              if (event.key === "ArrowRight") nextIndex = (index + 1) % TABS.length;
+              else if (event.key === "ArrowLeft") nextIndex = (index + TABS.length - 1) % TABS.length;
+              else if (event.key === "Home") nextIndex = 0;
+              else if (event.key === "End") nextIndex = TABS.length - 1;
+              else return;
+              event.preventDefault();
+              const nextTab = TABS[nextIndex];
+              setTab(nextTab);
+              ref.current?.querySelector<HTMLButtonElement>(`#tab-${nextTab}`)?.focus();
+            }}
           >
             {id}
           </button>

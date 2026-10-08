@@ -41,6 +41,8 @@ At Strain 4, a risky check says the chair is close. At Strain 5, a bad night ins
 
 The same scene fits a phone, a tablet, and a desktop. On a wide screen the character sheet is a column beside the story. On a narrower screen it is a drawer, and the goal stays on the scene without opening it. Buttons stay large enough to tap.
 
+Number keys choose story options while the sheet is closed. In the sheet, Left and Right arrow keys switch between Stats, Gear, and Journal; Home and End select the first and last tabs.
+
 ## Deploy on Vercel
 
 Import this repository. The framework preset is Next.js. There are no environment variables and no database. `npm run build` is the production build.
@@ -48,6 +50,8 @@ Import this repository. The framework preset is Next.js. There are no environmen
 Pushes and pull requests run `.github/workflows/ci.yml`. The Test job runs `npm test`. The Build job runs only after that, and runs `npm run build`. A production deploy waits for both checks. If either fails, Vercel skips the production build and the live site stays on the last deploy that passed. Pull request previews still build immediately, with the same checks running beside them.
 
 Saves live in `localStorage` under `saint-shard-3055-v1` on the player's browser. Sound, text size, and the codex of endings already seen use their own keys on that same browser.
+
+If the browser blocks storage or cannot save, the game still opens and plays. A failed save shows a notice to keep the page open: that run can continue during the session, but reloading may lose its progress. Sound and text controls still work when their preferences cannot be stored.
 
 ## Changing the game
 
