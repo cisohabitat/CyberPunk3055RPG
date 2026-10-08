@@ -61,7 +61,7 @@ export function TitleScreen({
       </div>
       <div className="skyline" aria-hidden="true">
         {BARS.map((height, index) => (
-          <i key={height + index} style={{ height: `${height}%` }} />
+          <i key={index} style={{ height: `${height}%` }} />
         ))}
       </div>
       {confirm && (
