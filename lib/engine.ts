@@ -255,6 +255,17 @@ export function commitChoice(
     if (next.items.includes(itemId)) next = applyEffect(next, { itemsRemove: [itemId] });
   }
 
+  const metFlag: Record<string, string> = {
+    Quill: "met_quill",
+    Mara: "met_mara",
+    Kerr: "met_kerr",
+    "Sister Lumen": "met_lumen",
+    Ives: "met_ives",
+    Sera: "met_sera",
+  };
+  const met = scene.speaker ? metFlag[scene.speaker] : undefined;
+  if (met && !next.flags[met]) next = { ...next, flags: { ...next.flags, [met]: true } };
+
   const sceneId = resolveNext(choice, next, check ? check.success : null);
   const chapters =
     scene.endingTitle && sceneId !== scene.id && !next.chapters.includes(scene.endingTitle)

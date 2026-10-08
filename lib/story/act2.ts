@@ -1,3 +1,4 @@
+import { GOAL_WEEK } from "./goal";
 import type { GameState, Scene } from "../types";
 
 function districtText(state: GameState): string {
@@ -17,6 +18,79 @@ ${lumen ? "Glass Chapel is Lumen. She still has your name in a mouth that does n
 ${sold || state.flags.on_file ? "Helion Spire is a dry voice that already knows which hour moved." : "The Spire is not asking. Yet."}
 
 Pick the door that knows you. The others can wait for a week you do not have.`;
+}
+
+function weekCardText(state: GameState): string {
+  const did = state.flags.act1_sold
+    ? "You sold Mara's hour."
+    : state.flags.act1_both
+      ? "You sold the hour and let a copy walk."
+      : state.flags.act1_burned
+        ? "You broke the shard where Lumen could see it."
+        : state.flags.act1_smashed
+          ? "You broke the shard and kept the proof to yourself."
+          : state.flags.act1_ash
+            ? "You sold a damaged hour."
+            : state.flags.act1_walk
+              ? "You came back with empty hands."
+              : state.flags.act1_taken
+                ? "Kerr took the job off you."
+                : state.flags.act1_sainted
+                  ? "The chair took the night you walked in with."
+                  : "The job is over.";
+  return `The Hour\n\n${did}\n\nThe Week starts in the street. ${GOAL_WEEK}`;
+}
+
+function streetText(state: GameState): string {
+  const stall =
+    state.flags.act1_burned || state.flags.act1_smashed || state.flags.act1_walk
+      ? "Quill's stall is dark. The bowls are stacked. He priced your absence and went home."
+      : "The stall is open and pretending it was always open. Quill does not look up.";
+  const rumor =
+    state.flags.act1_both || state.flags.act1_burned
+      ? "Someone on the corner says Ward Nine like it is a file now, not a rumor."
+      : "Ward Nine is still a direction people lower their voice to say.";
+  const limp = state.flags.kerr_down
+    ? "You see Kerr at the far awning. The limp is worse. He sees you and does not cross."
+    : "";
+  return `A week of rain has rewritten the paint. ${stall}
+
+${rumor}${limp ? `\n\n${limp}` : ""}
+
+The route board is still there. The cards that know your name are the ones face up.`;
+}
+
+function kerrDoorText(state: GameState): string {
+  const knows = state.flags.act1_taken
+    ? "He already took the shard once. He wants the week you spent not paying that back."
+    : state.flags.kerr_down
+      ? "You put him on the tile. He has had a week to decide what the knee cost, and he wants that number said out loud."
+      : "He wants the weight of the glass. He already knows you were in the room.";
+  return `Kerr is under the same awning, a week deeper into the rain. ${knows}
+
+"You can tell me what the hour was worth," he says, "or you can walk past and let the canal be the argument."`;
+}
+
+function lumenDoorText(state: GameState): string {
+  const knows = state.flags.act1_burned
+    ? "She watched you break the shard. She wants the names walked back to the wall anyway."
+    : state.flags.act1_sold || state.flags.act1_both
+      ? "She knows the hour was sold. She still wants a person, not a receipt, on the stair at Ward Nine."
+      : "She wants the marker to mean a walk, not a souvenir.";
+  return `Sister Lumen is on the chapel step with the coat over the habit. ${knows}
+
+You can hear her out, or you can leave the step and keep the week unsaid.`;
+}
+
+function ivesDoorText(state: GameState): string {
+  const knows = state.flags.on_file
+    ? "Ives already has your old name. They want the rest of the hour to match it."
+    : state.flags.act1_both || state.flags.copied
+      ? "Ives knows there are two fires. They want the one you did not sell."
+      : "Ives wants the week closed in a folio before the street learns the verb.";
+  return `The Spire does not come down. It sends Ives, dry coat, open folio. ${knows}
+
+You can hear the price, or you can leave the page unfinished.`;
 }
 
 function kerrText(state: GameState): string {
@@ -123,7 +197,7 @@ export const ACT2_SCENES: Record<string, Scene> = {
         label: "Ward Four",
         detail: "Kerr is still counting.",
         hideIfFlag: "act2_done",
-        next: "act2_kerr",
+        next: "act2_kerr_door",
       },
       {
         id: "to-lumen",
@@ -131,7 +205,7 @@ export const ACT2_SCENES: Record<string, Scene> = {
         detail: "Lumen called the marker in.",
         hideIfFlag: "act2_done",
         requireAnyFlag: ["knows_truth", "lumen_here", "act1_burned", "act1_both"],
-        next: "act2_lumen",
+        next: "act2_lumen_door",
       },
       {
         id: "to-helion",
@@ -139,15 +213,58 @@ export const ACT2_SCENES: Record<string, Scene> = {
         detail: "A dry coat wants the rest of the hour.",
         hideIfFlag: "act2_done",
         requireAnyFlag: ["act1_sold", "act1_both", "act1_ash", "on_file"],
-        next: "act2_helion",
+        next: "act2_helion_door",
       },
       {
         id: "to-ward-nine",
         label: "Ward Nine",
         detail: "The coolant dump. The people who lived.",
         requireFlag: "act2_done",
-        next: "act3_arrival",
+        next: "ward_wall",
       },
+    ],
+  },
+  card_week: {
+    id: "card_week",
+    location: "The Week",
+    text: weekCardText,
+    choices: [{ id: "into-week", label: "Walk out into the week.", next: "street_after" }],
+  },
+  street_after: {
+    id: "street_after",
+    location: "Ward Four",
+    speaker: "Quill",
+    text: streetText,
+    choices: [{ id: "read-board", label: "Read the board.", next: "districts" }],
+  },
+  act2_kerr_door: {
+    id: "act2_kerr_door",
+    location: "Ward Four",
+    speaker: "Kerr",
+    text: kerrDoorText,
+    choices: [
+      { id: "hear-kerr", label: "Hear what the week cost.", next: "act2_kerr" },
+      { id: "leave-kerr", label: "Not the knee. Not tonight.", next: "districts" },
+    ],
+  },
+  act2_lumen_door: {
+    id: "act2_lumen_door",
+    location: "Glass Chapel",
+    speaker: "Sister Lumen",
+    text: lumenDoorText,
+    choices: [
+      { id: "hear-lumen", label: "Hear her out.", next: "act2_lumen" },
+      { id: "leave-lumen", label: "Leave the step.", next: "districts" },
+    ],
+  },
+  act2_helion_door: {
+    id: "act2_helion_door",
+    location: "Helion Spire",
+    speaker: "Ives",
+    text: ivesDoorText,
+    choices: [
+      { id: "hear-ives", label: "Hear the price.", next: "act2_helion" },
+      { id: "leave-ives", label: "Leave the folio closed.", next: "districts" },
     ],
   },
   act2_kerr: {
@@ -200,6 +317,7 @@ export const ACT2_SCENES: Record<string, Scene> = {
       {
         id: "walk-with-her",
         label: "Walk Ward Nine with her.",
+        detail: "Selling the week after this reads as a betrayal.",
         effects: { flags: ["walk_nine"], factions: { lumen: 1, wards: 1 } },
         next: "act2_middle",
       },
@@ -228,7 +346,7 @@ export const ACT2_SCENES: Record<string, Scene> = {
       {
         id: "give-copy",
         label: "Give Ives the second copy.",
-        detail: "The leak stops being yours.",
+        detail: "The leak stops being yours. The wards will remember this at the wall.",
         requireJournal: "shard-copy",
         effects: { flags: ["gave_copy"], factions: { helion: 2, wards: -1, lumen: -1 } },
         next: "act2_middle",
@@ -284,14 +402,14 @@ export const ACT2_SCENES: Record<string, Scene> = {
       {
         id: "stand",
         label: "Stand where the names are.",
-        detail: "The wards get a clumsy, public version.",
+        detail: "The wards will remember this at the wall.",
         effects: { flags: ["act2_stand"], factions: { wards: 1 } },
         next: "ending_week_wards",
       },
       {
         id: "deal",
         label: "Sell the week to Helion.",
-        detail: "Eighty creds. A quieter mouth.",
+        detail: "Eighty creds. The wards will remember this at the wall.",
         effects: (state) => ({
           creds: 80,
           flags: state.flags.walk_nine ? ["act2_deal", "betrayed_lumen"] : ["act2_deal"],
@@ -375,7 +493,7 @@ The district card is still there. The wall does not care that Helion heard it fi
         label: "The districts again.",
         detail: "Ward Nine has your name in someone else's mouth.",
         effects: { flags: ["act2_done"] },
-        next: "districts",
+        next: "card_wall",
       },
     ],
   },
@@ -391,7 +509,7 @@ The district card is still there. The wall does not care that Helion heard it fi
         label: "The districts again.",
         detail: "Ward Nine is still face down.",
         effects: { flags: ["act2_done"] },
-        next: "districts",
+        next: "card_wall",
       },
     ],
   },
@@ -407,7 +525,7 @@ The district card is still there. The wall does not care that Helion heard it fi
         label: "The districts again.",
         detail: "You can still contradict the receipt.",
         effects: { flags: ["act2_done"] },
-        next: "districts",
+        next: "card_wall",
       },
     ],
   },

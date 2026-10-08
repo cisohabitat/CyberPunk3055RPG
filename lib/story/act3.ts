@@ -1,4 +1,25 @@
+import { GOAL_WALL } from "./goal";
 import type { GameState, Scene } from "../types";
+
+function wallCardText(state: GameState): string {
+  const did = state.flags.act2_exposed
+    ? "The week got upstairs before you finished saying it."
+    : state.flags.act2_deal
+      ? "You sold the week. The receipt does not spend well where the names are."
+      : "You put the week in the street. The street got it half right.";
+  return `The Week\n\n${did}\n\nThe Wall is in Ward Nine. ${GOAL_WALL}`;
+}
+
+function wallText(state: GameState): string {
+  const tone = state.flags.act2_deal
+    ? "She does not mention the payment. The wall is doing that work."
+    : "She waits with the pencil capped.";
+  return `Sera stands you in front of the wall before she asks anything. The rain has eaten the lower rows. One name is still sharp, readable without a check or an optic: Ivo Pell, night shift, level two.
+
+"That one I can still read without a pencil," she says. "The rest need a person who was in the room, or an eye that cheats."
+
+${tone}`;
+}
 
 function arrivalText(state: GameState): string {
   const deal = state.flags.act2_exposed
@@ -66,6 +87,19 @@ She writes ${state.handle} under the last name, small, like a footnote that refu
 }
 
 export const ACT3_SCENES: Record<string, Scene> = {
+  card_wall: {
+    id: "card_wall",
+    location: "The Wall",
+    text: wallCardText,
+    choices: [{ id: "to-the-wall", label: "Go down to Ward Nine.", next: "districts" }],
+  },
+  ward_wall: {
+    id: "ward_wall",
+    location: "Ward Nine",
+    speaker: "Sera",
+    text: wallText,
+    choices: [{ id: "face-sera", label: "Tell her why you came.", next: "act3_arrival" }],
+  },
   act3_arrival: {
     id: "act3_arrival",
     location: "Ward Nine",

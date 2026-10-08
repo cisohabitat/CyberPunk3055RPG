@@ -102,6 +102,7 @@ export function CheckDialog({
           {delta.length > 0 && <p className="delta">{delta.join(" · ")}</p>}
         </div>
       )}
+      {state.strain >= 4 && !result && <p data-testid="chair-close">The chair is close.</p>}
       <div className="dialog-actions">
         {!result && (
           <button className="primary" type="button" data-testid="roll-button" onClick={roll}>

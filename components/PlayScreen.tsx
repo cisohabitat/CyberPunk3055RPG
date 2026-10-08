@@ -12,6 +12,8 @@ import { commitChoice, getScene, presentChoices, previewCheck, runDelta, sceneTe
 import { locationCue, playCue, setBed } from "@/lib/sound";
 import { loadSound, loadTextStep, rememberEnding, writeSound, writeTextStep } from "@/lib/storage";
 import { endingCoda } from "@/lib/story";
+import { speakerRole } from "@/lib/story/cast";
+import { currentGoal } from "@/lib/story/goal";
 import type { GameState } from "@/lib/types";
 
 export function PlayScreen({
@@ -173,6 +175,7 @@ export function PlayScreen({
               <Portrait speaker={scene.speaker} origin={state.origin} />
               <div>
                 <p className="kicker">{scene.location}</p>
+                <p className="goal" data-testid="goal">{currentGoal(state)}</p>
                 {scene.ending && state.chapters.length > 0 && (
                   <ol className="chapter-stack" data-testid="chapter-stack">
                     {state.chapters.map((title) => (
@@ -186,7 +189,12 @@ export function PlayScreen({
                     <h1 data-testid="ending-title">{scene.endingTitle}</h1>
                   </>
                 )}
-                {scene.speaker && <p className="speaker">{scene.speaker}</p>}
+                {scene.speaker && (
+                  <p className="speaker">
+                    {scene.speaker}
+                    {speakerRole(scene.speaker) ? ` · ${speakerRole(scene.speaker)}` : ""}
+                  </p>
+                )}
                 {delta.length > 0 && (
                   <p className="delta" data-testid="run-delta">
                     {delta.join(" · ")}
@@ -255,7 +263,7 @@ export function PlayScreen({
           </article>
         </main>
         <button className={sheetOpen ? "sheet-backdrop open" : "sheet-backdrop"} type="button" aria-label="Close sheet" onClick={() => setSheetOpen(false)} />
-        <Sheet state={state} open={sheetOpen} onClose={() => setSheetOpen(false)} />
+        <Sheet state={state} speaker={scene.speaker} open={sheetOpen} onClose={() => setSheetOpen(false)} />
       </div>
       {pending?.check && (
         <CheckDialog

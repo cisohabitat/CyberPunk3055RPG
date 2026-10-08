@@ -4,9 +4,11 @@ import { useState } from "react";
 import { Mark, originAccent } from "@/components/Mark";
 import { COMPLICATIONS, FACTIONS, FACTION_INFO, ORIGINS, STATS, STAT_INFO } from "@/lib/character";
 import { ITEMS } from "@/lib/items";
+import { journalTitle } from "@/lib/journal";
+import { metCast } from "@/lib/story/cast";
 import type { GameState } from "@/lib/types";
 
-export function Sheet({ state, open, onClose }: { state: GameState; open: boolean; onClose: () => void }) {
+export function Sheet({ state, open, onClose, speaker }: { state: GameState; open: boolean; onClose: () => void; speaker?: string }) {
   const [tab, setTab] = useState<"stats" | "gear" | "journal">("stats");
   const origin = ORIGINS[state.origin];
 
@@ -30,6 +32,15 @@ export function Sheet({ state, open, onClose }: { state: GameState; open: boolea
           {COMPLICATIONS[state.complication].name}. {COMPLICATIONS[state.complication].perk} {COMPLICATIONS[state.complication].cost}
         </p>
       )}
+      <h3 className="sheet-label">People</h3>
+      <ul className="cast" data-testid="cast">
+        {metCast(state, speaker).map((person) => (
+          <li key={person.name}>
+            <strong>{person.name}</strong>
+            <span>{person.role}</span>
+          </li>
+        ))}
+      </ul>
       <div className="tabs" role="tablist">
         {(["stats", "gear", "journal"] as const).map((id) => (
           <button key={id} className="tab" type="button" role="tab" aria-selected={tab === id} onClick={() => setTab(id)}>
@@ -85,7 +96,7 @@ export function Sheet({ state, open, onClose }: { state: GameState; open: boolea
           {state.journal.length === 0 && <li className="empty">The city has not told you anything you trust.</li>}
           {state.journal.map((entry) => (
             <li key={entry.id}>
-              <strong>{entry.id}</strong>
+              <strong>{journalTitle(entry)}</strong>
               <span>{entry.text}</span>
             </li>
           ))}

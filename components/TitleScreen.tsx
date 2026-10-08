@@ -4,6 +4,7 @@ import { useState } from "react";
 import { DialogFrame } from "@/components/DialogFrame";
 import { getScene } from "@/lib/engine";
 import { CODEX } from "@/lib/story";
+import { currentGoal } from "@/lib/story/goal";
 import type { Codex, GameState } from "@/lib/types";
 
 const BARS = [42, 78, 55, 96, 34, 88, 63, 110, 48, 74, 38, 92, 58, 84, 46, 70, 100, 52];
@@ -44,7 +45,7 @@ export function TitleScreen({
         </div>
         {save && scene && (
           <p className="continue-note">
-            {save.handle} is saved in this browser. {scene.ending ? scene.endingTitle : scene.location}.
+            {save.handle} is saved in this browser. {currentGoal(save)}
           </p>
         )}
         <div className="rules">

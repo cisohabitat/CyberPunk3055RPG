@@ -23,6 +23,19 @@ export function journalEntry(item: string | JournalEntry): JournalEntry {
   return { id: KNOWN[item] ?? slug(item), text: item };
 }
 
+export const JOURNAL_TITLES: Record<string, string> = {
+  "ward-nine": "Ward Nine",
+  "kerr-knee": "Kerr's knee",
+  calibration: "Calibration",
+  "shard-copy": "The second copy",
+  "clinic-debt": "Clinic marker",
+};
+
+export function journalTitle(entry: JournalEntry): string {
+  if (JOURNAL_TITLES[entry.id]) return JOURNAL_TITLES[entry.id];
+  return entry.text.split(/\s+/).slice(0, 5).join(" ").replace(/[.,;:]$/, "");
+}
+
 export function mergeJournal(current: JournalEntry[], incoming: Array<string | JournalEntry> | undefined): JournalEntry[] {
   const next = [...current];
   for (const item of incoming ?? []) {

@@ -1,6 +1,6 @@
 import { PAY } from "../economy";
 import { ITEMS } from "../items";
-import type { Choice, GameState, Scene } from "../types";
+import type { Choice, GameState, NextSpec, Scene } from "../types";
 
 const KNIFE = [{ item: "mono-knife", amount: 1 }];
 const SPOOF = [{ item: "spoof-chip", amount: 1 }];
@@ -131,8 +131,8 @@ function kerrText(state: GameState): string {
     ? "Sister Lumen stands at the halo controls with her hands open, so everyone can see she is not pressing them."
     : "";
   const line = holding
-    ? `"Put it down." Kerr fills the door. The knee is the only apology on him. "Helion pays me to know the weight of that glass."`
-    : `"Shard on the plinth. You on the floor." Kerr's coat is wet. His knee is set like it owes him money. "We can skip to the end."`;
+    ? `"Put it down." Kerr fills the door. The knee is the only apology on him. "That glass is Mara's hour. Helion pays me so the Ward Nine memo stays in her head, not in your pocket."`
+    : `"Shard on the plinth. You on the floor." Kerr's coat is wet. His knee is set like it owes him money. "That glass is an hour Helion paid to keep. We can skip to the end."`;
   return [room, lumen, line].filter(Boolean).join("\n\n");
 }
 
@@ -242,13 +242,17 @@ Somewhere a plinth holds the reason you came to Glass Chapel. You do not miss it
 }
 
 
+function shardNext(next: string): NextSpec {
+  return (state) => (state.items.includes("shard") && !state.flags.heard_memo ? "memo" : next);
+}
+
 function weekAfter(flag: string): Choice {
   return {
     id: "week-after",
     label: "The week after.",
     detail: "The job is over. The city is not.",
     effects: { flags: ["act1_done", flag] },
-    next: "districts",
+    next: "card_week",
   };
 }
 
@@ -548,7 +552,7 @@ ${passLine}`;
     speaker: "Sister Lumen",
     text: `A nurse with a shaved head and an optic that refocuses like it resents the distance. Her hands are clean. Her shoes are not.
 
-"You are not on the penitent list. The next sentence should be one you can survive."`,
+"You are not on the penitent list. Dawn puts Mara Voss in that chair so Helion can edit a crime out of her. The next sentence should be one you can survive."`,
     choices: [
       {
         id: "honest",
@@ -657,6 +661,25 @@ She waits. The optic is dark now, which means she is doing this as a person.`,
       { id: "go-chair", label: "Go to the chair.", next: vaultNext },
     ],
   }),
+  memo: add({
+    id: "memo",
+    location: "The chair room",
+    speaker: "Mara",
+    text: `The shard is warm against your palm, and it does not wait for you to be ready.
+
+Mara's voice, unedited: "I signed the coolant dump. Ward Nine. Three hundred on the night shift. I want that sentence to stay in my mouth."
+
+The halo would have taken it out of her by dawn. It is in your hand instead.`,
+    choices: [
+      {
+        id: "heard",
+        label: "Keep the hour.",
+        detail: "You know what the glass is now.",
+        effects: { flags: ["heard_memo"], journal: [TRUTH] },
+        next: (state) => (state.flags.kerr_down || state.flags.kerr_slipped || state.flags.kerr_talked ? "after_kerr" : "kerr"),
+      },
+    ],
+  }),
   vault_quiet: add({
     id: "vault_quiet",
     location: "The chair room",
@@ -668,7 +691,7 @@ She waits. The optic is dark now, which means she is doing this as a person.`,
         label: "Take the shard.",
         detail: "No copy. No fire. Just the hour in your hand.",
         effects: { itemsAdd: ["shard"] },
-        next: "kerr",
+        next: shardNext("kerr"),
       },
       checkChoice({
         id: "copy",
@@ -689,8 +712,8 @@ She waits. The optic is dark now, which means she is doing this as a person.`,
         failEffects: { itemsAdd: ["shard"], flags: ["copy_failed"], strain: 1 },
         resultSuccess: "The buffer drinks a full copy. The original comes free in your hand.",
         resultFail: "The copy collapses. You grab the original as the plinth starts to sulk.",
-        nextSuccess: "kerr",
-        nextFail: "kerr",
+        nextSuccess: shardNext("kerr"),
+        nextFail: shardNext("kerr"),
       }),
       checkChoice({
         id: "fry",
@@ -701,7 +724,7 @@ She waits. The optic is dark now, which means she is doing this as a person.`,
         failEffects: { strain: 2 },
         resultSuccess: "The halo dies. What ejects is half a voice.",
         resultFail: "The coil answers. Your nerves light up in the machine's dialect.",
-        nextSuccess: "kerr",
+        nextSuccess: shardNext("kerr"),
         nextFail: fryFail,
       }),
     ],
@@ -729,7 +752,7 @@ She waits. The optic is dark now, which means she is doing this as a person.`,
         successEffects: { itemsAdd: ["shard"], flags: ["kerr_talked"] },
         resultSuccess: "The name lands. He lets the shard leave with you, and hates the shift he's still on.",
         resultFail: "He has heard the rumor. He does not intend to hear it from you.",
-        nextSuccess: "after_kerr",
+        nextSuccess: shardNext("after_kerr"),
         nextFail: "kerr_fight",
       }),
       checkChoice({
@@ -741,7 +764,7 @@ She waits. The optic is dark now, which means she is doing this as a person.`,
         successEffects: { itemsAdd: ["shard"], flags: ["kerr_talked"] },
         resultSuccess: "He gives you one contemptuous inch. You spend it on the glass.",
         resultFail: "He doesn't buy a word. His hand is already moving.",
-        nextSuccess: "after_kerr",
+        nextSuccess: shardNext("after_kerr"),
         nextFail: "kerr_fight",
       }),
       checkChoice({
@@ -761,7 +784,7 @@ She waits. The optic is dark now, which means she is doing this as a person.`,
         successEffects: { flags: ["kerr_talked"] },
         resultSuccess: "He steps aside like the door frame hurts. The shard stays yours.",
         resultFail: "He hears you out. Then he decides the listening portion is over.",
-        nextSuccess: "after_kerr",
+        nextSuccess: shardNext("after_kerr"),
         nextFail: "kerr_fight",
       }),
       checkChoice({
@@ -777,7 +800,7 @@ She waits. The optic is dark now, which means she is doing this as a person.`,
         successEffects: { itemsAdd: ["shard"], flags: ["kerr_slipped"] },
         resultSuccess: "Lumen, the chair, the knee: something holds his eyes. You are already gone.",
         resultFail: "His hand finds your coat like it was waiting there.",
-        nextSuccess: "after_kerr",
+        nextSuccess: shardNext("after_kerr"),
         nextFail: "kerr_fight",
       }),
       checkChoice({
@@ -788,7 +811,7 @@ She waits. The optic is dark now, which means she is doing this as a person.`,
         failEffects: { strain: 2, itemsRemove: ["shard"] },
         resultSuccess: "He goes down breathing. You take the glass and the alley.",
         resultFail: "He is faster than the knee suggested.",
-        nextSuccess: "after_kerr",
+        nextSuccess: shardNext("after_kerr"),
         nextFail: strainRoute,
       }),
       checkChoice({
@@ -802,7 +825,7 @@ She waits. The optic is dark now, which means she is doing this as a person.`,
         failEffects: { strain: 2, itemsRemove: ["shard"] },
         resultSuccess: "The dose makes him polite. The rest is brief.",
         resultFail: "He tastes it and gets meaner before he gets slow.",
-        nextSuccess: "after_kerr",
+        nextSuccess: shardNext("after_kerr"),
         nextFail: strainRoute,
       }),
       checkChoice({
@@ -815,7 +838,7 @@ She waits. The optic is dark now, which means she is doing this as a person.`,
         failEffects: { strain: 2, itemsRemove: ["shard"] },
         resultSuccess: "The halo blows. Kerr eats floor. The glass that ejects is already dying.",
         resultFail: "The machine prefers you to the intruder protocol.",
-        nextSuccess: "after_kerr",
+        nextSuccess: shardNext("after_kerr"),
         nextFail: strainRoute,
       }),
       checkChoice({
@@ -839,7 +862,7 @@ She waits. The optic is dark now, which means she is doing this as a person.`,
         failEffects: { strain: 1 },
         resultSuccess: "The buffer takes the hour. Kerr takes offense a second too late.",
         resultFail: "The copy dies. So does the distance between you.",
-        nextSuccess: "after_kerr",
+        nextSuccess: shardNext("after_kerr"),
         nextFail: "kerr_fight",
       }),
     ],
@@ -860,7 +883,7 @@ There is no more conversation in this room. There is only the exit you can still
         failEffects: { strain: 2, itemsRemove: ["shard"] },
         resultSuccess: "You meet him and you are the one still standing.",
         resultFail: "The floor finds you first.",
-        nextSuccess: "after_kerr",
+        nextSuccess: shardNext("after_kerr"),
         nextFail: strainRoute,
       }),
       checkChoice({
@@ -874,7 +897,7 @@ There is no more conversation in this room. There is only the exit you can still
         failEffects: { strain: 2, itemsRemove: ["shard"] },
         resultSuccess: "The sedative wins the clinch for you.",
         resultFail: "He spits it out and puts you into the tile.",
-        nextSuccess: "after_kerr",
+        nextSuccess: shardNext("after_kerr"),
         nextFail: strainRoute,
       }),
       checkChoice({
@@ -887,7 +910,7 @@ There is no more conversation in this room. There is only the exit you can still
         failEffects: { strain: 2, itemsRemove: ["shard"] },
         resultSuccess: "The halo dies screaming. You come away with damaged proof.",
         resultFail: "It reaches for the nearer nervous system. That is yours.",
-        nextSuccess: "after_kerr",
+        nextSuccess: shardNext("after_kerr"),
         nextFail: strainRoute,
       }),
       {

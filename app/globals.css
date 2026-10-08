@@ -292,7 +292,15 @@ button { cursor: pointer; }
   text-transform: uppercase;
 }
 
-.kicker { color: var(--cyan); font-size: 0.78rem; margin: 0 0 0.8rem; }
+.kicker { color: var(--cyan); font-size: 0.78rem; margin: 0; }
+.goal {
+  margin: 0.35rem 0 0.8rem;
+  color: var(--ink);
+  font-size: 1.02rem;
+}
+.cast { list-style: none; padding: 0; margin: 0 0 0.8rem; }
+.cast li { display: flex; justify-content: space-between; gap: 0.75rem; margin: 0.2rem 0; }
+.cast span { color: var(--muted); }
 
 .ending-kicker { color: var(--magenta); margin: 0; }
 

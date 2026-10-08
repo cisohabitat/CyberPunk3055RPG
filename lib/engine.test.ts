@@ -13,6 +13,9 @@ import {
 } from "./engine.ts";
 import { ITEMS } from "./items.ts";
 import { parseSave } from "./storage.ts";
+import { journalTitle } from "./journal.ts";
+import { metCast, speakerRole } from "./story/cast.ts";
+import { GOAL_DECIDE, GOAL_LIFT, GOAL_WALL, GOAL_WEEK, currentGoal } from "./story/goal.ts";
 import { CODEX, SCENES, endingCoda, vaultNext } from "./story/index.ts";
 import type { Choice, GameState, StatId } from "./types.ts";
 
@@ -241,6 +244,8 @@ describe("scripted jobs", () => {
     assert.ok(copy?.check);
     assert.ok(previewCheck(state, copy.check).hits >= 7);
     state = step(state, "copy", 7);
+    assert.equal(state.sceneId, "memo");
+    state = step(state, "heard");
     state = step(state, "talk-leave", 5);
     state = step(state, "both");
     assert.equal(state.sceneId, "ending_both");
@@ -256,6 +261,8 @@ describe("scripted jobs", () => {
     state = step(state, "honest");
     state = step(state, "pact-break");
     state = step(state, "take");
+    assert.equal(state.sceneId, "memo");
+    state = step(state, "heard");
     state = step(state, "talk-leave", 6);
     state = step(state, "destroy");
     assert.equal(state.sceneId, "ending_burned");
@@ -294,6 +301,8 @@ describe("scripted jobs", () => {
     assert.equal(state.sceneId, "vault_quiet");
     state = step(state, "fry", 8);
     assert.equal(state.flags.ash, true);
+    assert.equal(state.sceneId, "memo");
+    state = step(state, "heard");
     state = step(state, "talk-leave", 8);
     state = step(state, "deliver-ash");
     assert.equal(state.sceneId, "ending_ash");
@@ -305,18 +314,27 @@ describe("scripted jobs", () => {
 describe("the week after", () => {
   const face: Record<StatId, number> = { chrome: 0, nerve: 0, face: 2, ghost: 0 };
 
+  function toBoard(state: GameState) {
+    const card = step(state, "week-after");
+    assert.equal(card.sceneId, "card_week");
+    const street = step(card, "into-week");
+    assert.equal(street.sceneId, "street_after");
+    return step(street, "read-board");
+  }
+
   it("opens Act 2 from three different Act 1 endings", () => {
     const base = make("spire", face);
-    const sold = step({ ...base, sceneId: "ending_sold" }, "week-after");
+    const sold = toBoard({ ...base, sceneId: "ending_sold" });
     assert.equal(sold.sceneId, "districts");
     assert.equal(sold.flags.act1_sold, true);
-    assert.equal(step(sold, "to-helion").sceneId, "act2_helion");
+    assert.equal(step(sold, "to-helion").sceneId, "act2_helion_door");
+    assert.equal(step(step(sold, "to-helion"), "hear-ives").sceneId, "act2_helion");
 
-    const burned = step({ ...base, sceneId: "ending_burned" }, "week-after");
-    assert.equal(step(burned, "to-lumen").sceneId, "act2_lumen");
+    const burned = toBoard({ ...base, sceneId: "ending_burned" });
+    assert.equal(step(step(burned, "to-lumen"), "hear-lumen").sceneId, "act2_lumen");
 
-    const sainted = step({ ...base, sceneId: "ending_sainted" }, "week-after");
-    assert.equal(step(sainted, "to-kerr").sceneId, "act2_kerr");
+    const sainted = toBoard({ ...base, sceneId: "ending_sainted" });
+    assert.equal(step(step(sainted, "to-kerr"), "hear-kerr").sceneId, "act2_kerr");
     const board = presentChoices(sainted, getScene("districts"));
     assert.equal(board.some((choice) => choice.id === "to-helion"), false);
     assert.equal(board.some((choice) => choice.id === "to-lumen"), false);
@@ -329,16 +347,22 @@ describe("the week after", () => {
       sceneId: "ending_sold",
       journal: [{ id: "ward-nine", text: "Mara Voss signed the Ward Nine coolant dump." }],
     };
-    state = step(state, "week-after");
+    state = toBoard(state);
     state = step(state, "to-helion");
+    state = step(state, "hear-ives");
     state = step(state, "refuse-ives");
     assert.equal(state.sceneId, "act2_middle");
     state = step(state, "deal");
     assert.equal(state.sceneId, "ending_week_deal");
     assert.ok(state.chapters.includes("The Sale"));
     state = step(state, "back-to-board");
+    assert.equal(state.sceneId, "card_wall");
+    state = step(state, "to-the-wall");
     assert.equal(presentChoices(state, getScene("districts")).some((choice) => choice.id === "to-kerr"), false);
     state = step(state, "to-ward-nine");
+    assert.equal(state.sceneId, "ward_wall");
+    assert.match(sceneText(getScene(state.sceneId), state), /Ivo Pell/);
+    state = step(state, "face-sera");
     assert.equal(state.sceneId, "act3_arrival");
     state = step(state, "read-names");
     assert.equal(state.sceneId, "ending_names");
@@ -465,6 +489,50 @@ describe("the week after", () => {
       keepsake: "clinic-marker",
     });
     assert.match(sceneText(getScene("stall"), state), /Clinic Marker/);
+  });
+
+  it("keeps a different goal for the job, the truth, the week, and the wall", () => {
+    const state = make("gutterwire", face);
+    assert.equal(currentGoal(state), GOAL_LIFT);
+    assert.match(currentGoal(state), /Mara Voss/);
+    assert.match(currentGoal(state), /Glass Chapel/);
+    const known = { ...state, journal: [{ id: "ward-nine", text: "The memo." }] };
+    assert.equal(currentGoal(known), GOAL_DECIDE);
+    assert.equal(currentGoal({ ...state, sceneId: "districts" }), GOAL_WEEK);
+    assert.equal(currentGoal({ ...state, sceneId: "ward_wall" }), GOAL_WALL);
+    assert.notEqual(GOAL_WEEK, GOAL_WALL);
+  });
+
+  it("plays the memo when the shard is taken without Lumen's honesty", () => {
+    let state = make("spire", face);
+    state = step(state, "accept");
+    state = step(state, "side");
+    state = step(state, "spoof-door", 8);
+    state = step(state, "go");
+    state = step(state, "brush");
+    state = step(state, "go-chair");
+    assert.equal(state.journal.some((entry) => entry.id === "ward-nine"), false);
+    state = step(state, "take");
+    assert.equal(state.sceneId, "memo");
+    assert.match(sceneText(getScene("memo"), state), /Three hundred/);
+    state = step(state, "heard");
+    assert.equal(state.journal.some((entry) => entry.id === "ward-nine"), true);
+    assert.equal(journalTitle(state.journal.find((entry) => entry.id === "ward-nine")!), "Ward Nine");
+    assert.equal(currentGoal(state), GOAL_DECIDE);
+    assert.ok(metCast(state, "Kerr").some((person) => person.name === "Mara Voss" && person.role === "The patient"));
+    assert.equal(speakerRole("Quill"), "The broker");
+    assert.equal(speakerRole("Mara"), "The patient");
+    assert.equal(speakerRole("Kerr"), "Her shadow");
+  });
+
+  it("shows the week in the street before the board", () => {
+    const burned = { ...make("gutterwire", face), flags: { act1_burned: true, kerr_down: true }, sceneId: "street_after" };
+    const text = sceneText(getScene("street_after"), burned);
+    assert.match(text, /stall is dark/);
+    assert.match(text, /limp/);
+    const card = sceneText(getScene("card_week"), { ...burned, flags: { ...burned.flags, act1_done: true }, sceneId: "card_week" });
+    assert.match(card, /The Week/);
+    assert.ok(card.includes(GOAL_WEEK));
   });
 
   it("gives every codex ending a scene and a coda", () => {
