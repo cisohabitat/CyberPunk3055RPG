@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Mark, originAccent } from "@/components/Mark";
-import { ORIGINS, STATS, STAT_INFO } from "@/lib/character";
+import { COMPLICATIONS, FACTIONS, FACTION_INFO, ORIGINS, STATS, STAT_INFO } from "@/lib/character";
 import { ITEMS } from "@/lib/items";
 import type { GameState } from "@/lib/types";
 
@@ -25,6 +25,11 @@ export function Sheet({ state, open, onClose }: { state: GameState; open: boolea
       <p className="perk">
         {origin.perk}. {origin.perkText}
       </p>
+      {state.complication && (
+        <p className="perk">
+          {COMPLICATIONS[state.complication].name}. {COMPLICATIONS[state.complication].perk} {COMPLICATIONS[state.complication].cost}
+        </p>
+      )}
       <div className="tabs" role="tablist">
         {(["stats", "gear", "journal"] as const).map((id) => (
           <button key={id} className="tab" type="button" role="tab" aria-selected={tab === id} onClick={() => setTab(id)}>
@@ -40,6 +45,16 @@ export function Sheet({ state, open, onClose }: { state: GameState; open: boolea
               <span>{state.stats[stat]}</span>
               <div className="track" aria-hidden="true">
                 <span style={{ width: `${(state.stats[stat] / 5) * 100}%` }} />
+              </div>
+            </div>
+          ))}
+          <h3 className="sheet-label">Factions</h3>
+          {FACTIONS.map((faction) => (
+            <div className="stat" key={faction} data-testid={`faction-${faction}`}>
+              <span className="stat-name">{FACTION_INFO[faction].name}</span>
+              <span>{state.factions[faction]}</span>
+              <div className="track" aria-hidden="true">
+                <span style={{ width: `${((state.factions[faction] + 3) / 8) * 100}%` }} />
               </div>
             </div>
           ))}
@@ -68,8 +83,11 @@ export function Sheet({ state, open, onClose }: { state: GameState; open: boolea
       {tab === "journal" && (
         <ul className="journal">
           {state.journal.length === 0 && <li className="empty">The city has not told you anything you trust.</li>}
-          {state.journal.map((line) => (
-            <li key={line}>{line}</li>
+          {state.journal.map((entry) => (
+            <li key={entry.id}>
+              <strong>{entry.id}</strong>
+              <span>{entry.text}</span>
+            </li>
           ))}
         </ul>
       )}

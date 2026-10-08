@@ -1,20 +1,24 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
+import { DialogFrame } from "@/components/DialogFrame";
+import { Portrait, reactionLine } from "@/components/Portrait";
 import { commitChoice, previewCheck, runDelta } from "@/lib/engine";
-import { blip } from "@/lib/sound";
+import { playCue } from "@/lib/sound";
 import type { CheckResult, Choice, GameState } from "@/lib/types";
 
 export function CheckDialog({
   state,
   choice,
   sound,
+  speaker,
   onClose,
   onCommit,
 }: {
   state: GameState;
   choice: Choice;
   sound: boolean;
+  speaker?: string;
   onClose: () => void;
   onCommit: (next: GameState) => void;
 }) {
@@ -23,26 +27,12 @@ export function CheckDialog({
   const [result, setResult] = useState<CheckResult | null>(null);
   const [next, setNext] = useState<GameState | null>(null);
   const [rolling, setRolling] = useState(false);
-  const rollRef = useRef<HTMLButtonElement>(null);
-  const continueRef = useRef<HTMLButtonElement>(null);
   const chance = preview.hits === 10 ? "Certain" : preview.hits === 0 ? "No chance" : `${preview.hits} in 10`;
   const delta = next ? runDelta(state, next) : [];
 
   useEffect(() => {
-    rollRef.current?.focus();
-  }, []);
-
-  useEffect(() => {
-    if (result && !rolling) continueRef.current?.focus();
+    if (result && !rolling) document.querySelector<HTMLButtonElement>("[data-testid=continue-check]")?.focus();
   }, [result, rolling]);
-
-  useEffect(() => {
-    function onKey(event: KeyboardEvent) {
-      if (event.key === "Escape" && !result) onClose();
-    }
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, [onClose, result]);
 
   useEffect(() => {
     if (!rolling || !result) return;
@@ -50,21 +40,22 @@ export function CheckDialog({
     if (reduce) {
       setDisplay(result.roll);
       setRolling(false);
-      if (sound) blip(result.success);
+      if (sound) playCue(result.success ? "sting-success" : "sting-fail");
       return;
     }
     let ticks = 0;
     const id = window.setInterval(() => {
       ticks += 1;
+      if (sound) playCue("dice-tick");
       if (ticks > 9) {
         window.clearInterval(id);
         setDisplay(result.roll);
         setRolling(false);
-        if (sound) blip(result.success);
+        if (sound) playCue(result.success ? "sting-success" : "sting-fail");
         return;
       }
       setDisplay(1 + Math.floor(Math.random() * 10));
-    }, 55);
+    }, 70);
     return () => window.clearInterval(id);
   }, [rolling, result, sound]);
 
@@ -77,53 +68,55 @@ export function CheckDialog({
   }
 
   return (
-    <div className="overlay">
-      <div className="dialog wide" role="dialog" aria-modal="true" aria-labelledby="check-title">
-        <h2 id="check-title">{preview.label}</h2>
-        <p>
-          {chance}. 1d10 + {preview.bonus} against DC {preview.dc}.
-        </p>
-        <ul className="math">
-          {preview.parts.map((part) => (
-            <li key={part.label}>
-              <span>{part.label}</span>
-              <span>+{part.value}</span>
-            </li>
-          ))}
-        </ul>
-        {display !== null && <div className={result && !rolling ? (result.success ? "die good" : "die bad") : "die"}>{display}</div>}
-        {result && !rolling && (
-          <div aria-live="polite">
-            <p className="total">
-              <span>
-                {result.roll} + {result.bonus} = {result.total}
-              </span>
-              <span>{result.success ? "Success" : "Miss"}</span>
-            </p>
-            <p>{result.flavor}</p>
-            {result.crit === "success" && <p>A ten. Strain eases.</p>}
-            {result.crit === "fail" && <p>A one. Strain bites harder.</p>}
-            {delta.length > 0 && <p className="delta">{delta.join(" · ")}</p>}
+    <DialogFrame titleId="check-title" className="wide" onEscape={result ? undefined : onClose}>
+      <h2 id="check-title">{preview.label}</h2>
+      <p>
+        {chance}. 1d10 + {preview.bonus} against DC {preview.dc}.
+      </p>
+      <ul className="math">
+        {preview.parts.map((part) => (
+          <li key={part.label}>
+            <span>{part.label}</span>
+            <span>+{part.value}</span>
+          </li>
+        ))}
+      </ul>
+      {display !== null && <div className={result && !rolling ? (result.success ? "die good" : "die bad") : "die"}>{display}</div>}
+      {result && !rolling && (
+        <div aria-live="polite">
+          <p className="total">
+            <span>
+              {result.roll} + {result.bonus} = {result.total}
+            </span>
+            <span>{result.success ? "Success" : "Miss"}</span>
+          </p>
+          <p>{result.flavor}</p>
+          <div className="reaction">
+            <Portrait speaker={speaker} origin={state.origin} />
+            <p>{reactionLine(speaker, result.success)}</p>
           </div>
-        )}
-        <div className="dialog-actions">
-          {!result && (
-            <button ref={rollRef} className="primary" type="button" data-testid="roll-button" onClick={roll}>
-              Roll
-            </button>
-          )}
-          {result && !rolling && next && (
-            <button ref={continueRef} className="primary" type="button" data-testid="continue-check" onClick={() => onCommit(next)}>
-              Continue
-            </button>
-          )}
-          {!result && (
-            <button className="ghost" type="button" onClick={onClose}>
-              Back
-            </button>
-          )}
+          {result.crit === "success" && <p>A ten. Strain eases.</p>}
+          {result.crit === "fail" && <p>A one. Strain bites harder.</p>}
+          {delta.length > 0 && <p className="delta">{delta.join(" · ")}</p>}
         </div>
+      )}
+      <div className="dialog-actions">
+        {!result && (
+          <button className="primary" type="button" data-testid="roll-button" onClick={roll}>
+            Roll
+          </button>
+        )}
+        {result && !rolling && next && (
+          <button className="primary" type="button" data-testid="continue-check" onClick={() => onCommit(next)}>
+            Continue
+          </button>
+        )}
+        {!result && (
+          <button className="ghost" type="button" onClick={onClose}>
+            Back
+          </button>
+        )}
       </div>
-    </div>
+    </DialogFrame>
   );
 }

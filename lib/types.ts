@@ -1,5 +1,12 @@
 export type StatId = "chrome" | "nerve" | "face" | "ghost";
 export type OriginId = "gutterwire" | "spire" | "dustline";
+export type FactionId = "quill" | "lumen" | "helion" | "wards";
+export type ComplicationId = "debt" | "optic" | "on-file";
+
+export type JournalEntry = {
+  id: string;
+  text: string;
+};
 
 export type Effect = {
   strain?: number;
@@ -8,20 +15,24 @@ export type Effect = {
   itemsRemove?: string[];
   flags?: string[];
   flagsOff?: string[];
-  journal?: string[];
+  journal?: Array<string | JournalEntry>;
+  factions?: Partial<Record<FactionId, number>>;
 };
 
 export type GameState = {
-  version: 1;
+  version: 2;
   handle: string;
   givenName: string;
   origin: OriginId;
+  complication: ComplicationId | null;
   stats: Record<StatId, number>;
+  factions: Record<FactionId, number>;
   creds: number;
   strain: number;
   items: string[];
   flags: Record<string, boolean>;
-  journal: string[];
+  journal: JournalEntry[];
+  chapters: string[];
   rolls: RollLog[];
   sceneId: string;
 };
@@ -29,12 +40,20 @@ export type GameState = {
 export type EffectSpec = Effect | ((state: GameState) => Effect);
 export type NextSpec = string | ((state: GameState) => string);
 
+export type FactionBonus = {
+  faction: FactionId;
+  min: number;
+  amount: number;
+  label: string;
+};
+
 export type CheckSpec = {
   stat: StatId;
   dc: number;
   label: string;
   itemBonuses?: { item: string; amount: number }[];
   flagBonuses?: { flag: string; amount: number; label: string }[];
+  factionBonuses?: FactionBonus[];
 };
 
 export type Choice = {
@@ -45,7 +64,9 @@ export type Choice = {
   hideIfAnyFlag?: string[];
   hideIfItem?: string;
   requireFlag?: string;
+  requireAnyFlag?: string[];
   requireItem?: string;
+  requireJournal?: string;
   requireCreds?: number;
   check?: CheckSpec;
   effects?: EffectSpec;
@@ -64,6 +85,7 @@ export type Scene = {
   location: string;
   speaker?: string;
   ending?: boolean;
+  finale?: boolean;
   endingTitle?: string;
   text: string | ((state: GameState) => string);
   choices: Choice[];
@@ -86,6 +108,11 @@ export type CheckPreview = {
   bonus: number;
   parts: BonusPart[];
   hits: number;
+};
+
+export type Codex = {
+  seen: { id: string; title: string }[];
+  keepsakes: string[];
 };
 
 export type CheckResult = CheckPreview & {

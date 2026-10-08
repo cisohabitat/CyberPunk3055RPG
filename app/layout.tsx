@@ -18,7 +18,7 @@ const body = Literata({
 export const metadata: Metadata = {
   title: "Saint Shard — Kite City 3055",
   description:
-    "A solo cyberpunk story RPG. One job, four stats, and a shard that remembers a crime. Saves in your browser.",
+    "A solo cyberpunk story RPG. One job becomes a week, then a ward. Saves in your browser.",
 };
 
 export const viewport: Viewport = {

@@ -1,17 +1,21 @@
 "use client";
 
 import { useState } from "react";
+import { DialogFrame } from "@/components/DialogFrame";
 import { getScene } from "@/lib/engine";
-import type { GameState } from "@/lib/types";
+import { CODEX } from "@/lib/story";
+import type { Codex, GameState } from "@/lib/types";
 
 const BARS = [42, 78, 55, 96, 34, 88, 63, 110, 48, 74, 38, 92, 58, 84, 46, 70, 100, 52];
 
 export function TitleScreen({
   save,
+  codex,
   onContinue,
   onNew,
 }: {
   save: GameState | null;
+  codex: Codex;
   onContinue: () => void;
   onNew: () => void;
 }) {
@@ -26,7 +30,7 @@ export function TitleScreen({
           Saint <span className="hot">Shard</span>
         </h1>
         <p className="logline">
-          A solo story RPG. One job, four stats, and a shard that remembers a crime the tower already paid to forget.
+          A solo story RPG. One job becomes a week, then a ward the tower already paid to forget.
         </p>
         <div className="actions">
           <button className="primary" type="button" data-testid="new-run" onClick={() => (save ? setConfirm(true) : onNew())}>
@@ -34,7 +38,7 @@ export function TitleScreen({
           </button>
           {save && scene && (
             <button className="ghost" type="button" data-testid="continue-run" onClick={onContinue}>
-              {scene.ending ? `Read “${scene.endingTitle}”` : "Continue"}
+              {scene.finale ? `Read “${scene.endingTitle}”` : scene.ending ? "Continue the week" : "Continue"}
             </button>
           )}
         </div>
@@ -57,6 +61,19 @@ export function TitleScreen({
             <p>Five pips. At the fifth, a bad night inside Glass Chapel can put you in the chair.</p>
           </section>
         </div>
+        <div className="codex" data-testid="codex">
+          <h2>Endings this browser has seen</h2>
+          <ul>
+            {CODEX.map((entry) => {
+              const seen = codex.seen.some((item) => item.id === entry.id);
+              return (
+                <li key={entry.id} className={seen ? "seen" : "unseen"}>
+                  {seen ? entry.title : "—"}
+                </li>
+              );
+            })}
+          </ul>
+        </div>
         <p className="fine">Corporate violence and memory editing. Original fiction. Progress stays on this device.</p>
       </div>
       <div className="skyline" aria-hidden="true">
@@ -65,20 +82,18 @@ export function TitleScreen({
         ))}
       </div>
       {confirm && (
-        <div className="overlay">
-          <div className="dialog" role="dialog" aria-modal="true" aria-labelledby="overwrite-title">
-            <h2 id="overwrite-title">Start over?</h2>
-            <p>A new character replaces {save?.handle}&apos;s save once you take the stool.</p>
-            <div className="dialog-actions">
-              <button className="primary" type="button" onClick={onNew}>
-                Start a new run
-              </button>
-              <button className="ghost" type="button" onClick={() => setConfirm(false)}>
-                Keep it
-              </button>
-            </div>
+        <DialogFrame titleId="overwrite-title" onEscape={() => setConfirm(false)}>
+          <h2 id="overwrite-title">Start over?</h2>
+          <p>A new character replaces {save?.handle}&apos;s save once you take the stool.</p>
+          <div className="dialog-actions">
+            <button className="primary" type="button" onClick={onNew}>
+              Start a new run
+            </button>
+            <button className="ghost" type="button" onClick={() => setConfirm(false)}>
+              Keep it
+            </button>
           </div>
-        </div>
+        </DialogFrame>
       )}
     </div>
   );

@@ -2,11 +2,14 @@
 
 import { useEffect, useRef, useState } from "react";
 import { CheckDialog } from "@/components/CheckDialog";
+import { DialogFrame } from "@/components/DialogFrame";
 import { Mark, originAccent } from "@/components/Mark";
+import { Portrait } from "@/components/Portrait";
 import { Sheet } from "@/components/Sheet";
 import { ORIGINS, STRAIN_MAX, STAT_INFO } from "@/lib/character";
 import { commitChoice, getScene, presentChoices, previewCheck, runDelta, sceneText, type VisibleChoice } from "@/lib/engine";
-import { loadSound, writeSound } from "@/lib/storage";
+import { locationCue, playCue, setBed } from "@/lib/sound";
+import { loadSound, loadTextStep, rememberEnding, writeSound, writeTextStep } from "@/lib/storage";
 import { endingCoda } from "@/lib/story";
 import type { GameState } from "@/lib/types";
 
@@ -29,13 +32,20 @@ export function PlayScreen({
   const [sheetOpen, setSheetOpen] = useState(false);
   const [confirmAbandon, setConfirmAbandon] = useState(false);
   const [sound, setSound] = useState(false);
+  const [textStep, setTextStep] = useState(0);
   const [fault, setFault] = useState("");
   const [delta, setDelta] = useState<string[]>([]);
+  const [flash, setFlash] = useState(false);
   const prior = useRef(state);
 
   useEffect(() => {
     setSound(loadSound());
+    setTextStep(loadTextStep());
   }, []);
+
+  useEffect(() => {
+    setBed(sound);
+  }, [sound]);
 
   useEffect(() => {
     if (prior.current !== state) {
@@ -48,10 +58,15 @@ export function PlayScreen({
     setSheetOpen(false);
     setPending(null);
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    setFlash(!reduce);
     document.getElementById("scene-top")?.scrollIntoView({ block: "start", behavior: reduce ? "auto" : "smooth" });
     if (scene.ending && scene.endingTitle) document.title = `${scene.endingTitle} — Saint Shard`;
     else document.title = "Saint Shard — Kite City 3055";
-  }, [state.sceneId, scene.ending, scene.endingTitle]);
+    if (sound) playCue(locationCue(scene.location, Boolean(scene.ending)));
+    if (scene.id.startsWith("ending_") && scene.endingTitle) {
+      rememberEnding(scene.id, scene.endingTitle, scene.finale ? state.items : undefined);
+    }
+  }, [state.sceneId, scene.ending, scene.endingTitle, scene.finale, scene.id, scene.location, sound, state.items]);
 
   useEffect(() => {
     function onKey(event: KeyboardEvent) {
@@ -60,7 +75,7 @@ export function PlayScreen({
         if (sheetOpen) setSheetOpen(false);
         return;
       }
-      if (pending || confirmAbandon || scene.ending) return;
+      if (pending || confirmAbandon || choices.length === 0) return;
       if (event.metaKey || event.ctrlKey || event.altKey) return;
       const number = Number(event.key);
       if (!Number.isInteger(number) || number < 1 || number > 9) return;
@@ -91,6 +106,13 @@ export function PlayScreen({
     writeSound(next);
   }
 
+  function cycleText() {
+    const next = (textStep + 1) % 3;
+    setTextStep(next);
+    writeTextStep(next);
+    document.documentElement.dataset.text = String(next);
+  }
+
   return (
     <div className="screen">
       <a className="skip" href="#choices">
@@ -118,6 +140,9 @@ export function PlayScreen({
           </div>
         </div>
         <div className="top-actions">
+          <button className="ghost" type="button" onClick={cycleText}>
+            Text {textStep + 1}
+          </button>
           <button className="ghost" type="button" aria-pressed={sound} onClick={toggleSound}>
             Sound {sound ? "on" : "off"}
           </button>
@@ -131,49 +156,52 @@ export function PlayScreen({
       </header>
       <div className="layout">
         <main>
-          <article className="scene" id="scene-top" data-testid="scene">
-            <p className="kicker">{scene.location}</p>
-            {scene.ending && (
-              <>
-                <p className="ending-kicker">Ending</p>
-                <h1 data-testid="ending-title">{scene.endingTitle}</h1>
-              </>
-            )}
-            {scene.speaker && <p className="speaker">{scene.speaker}</p>}
-            {delta.length > 0 && (
-              <p className="delta" data-testid="run-delta">
-                {delta.join(" · ")}
-              </p>
-            )}
-            {scene.ending && (
-              <ul className="recap" data-testid="ending-recap">
-                <li>{ORIGINS[state.origin].name}</li>
-                <li>{state.creds} cr</li>
-                <li>
-                  Strain {state.strain}/{STRAIN_MAX}
-                </li>
-                <li>{endingCoda(scene.id)}</li>
-              </ul>
-            )}
-            <div className="prose" data-testid="scene-text" aria-live="polite">
-              {sceneText(scene, state)
-                .split(/\n\n+/)
-                .map((paragraph, index) => (
-                  <p key={`${scene.id}-${index}`}>{paragraph}</p>
-                ))}
+          <article className={flash ? "scene flash" : "scene"} id="scene-top" data-testid="scene">
+            <div className="scene-row">
+              <Portrait speaker={scene.speaker} origin={state.origin} />
+              <div>
+                <p className="kicker">{scene.location}</p>
+                {scene.ending && state.chapters.length > 0 && (
+                  <ol className="chapter-stack" data-testid="chapter-stack">
+                    {state.chapters.map((title) => (
+                      <li key={title}>{title}</li>
+                    ))}
+                  </ol>
+                )}
+                {scene.ending && (
+                  <>
+                    <p className="ending-kicker">{scene.finale ? "Ending" : "Chapter"}</p>
+                    <h1 data-testid="ending-title">{scene.endingTitle}</h1>
+                  </>
+                )}
+                {scene.speaker && <p className="speaker">{scene.speaker}</p>}
+                {delta.length > 0 && (
+                  <p className="delta" data-testid="run-delta">
+                    {delta.join(" · ")}
+                  </p>
+                )}
+                {scene.ending && (
+                  <ul className="recap" data-testid="ending-recap">
+                    <li>{ORIGINS[state.origin].name}</li>
+                    <li>{state.creds} cr</li>
+                    <li>
+                      Strain {state.strain}/{STRAIN_MAX}
+                    </li>
+                    <li>{endingCoda(scene.id)}</li>
+                  </ul>
+                )}
+                <div className="prose" data-testid="scene-text" aria-live="polite">
+                  {sceneText(scene, state)
+                    .split(/\n\n+/)
+                    .map((paragraph, index) => (
+                      <p key={`${scene.id}-${index}`}>{paragraph}</p>
+                    ))}
+                </div>
+              </div>
             </div>
             {fault && <p className="form-error">{fault}</p>}
-            {scene.ending ? (
-              <div className="actions">
-                <button className="primary" type="button" onClick={onNewRun}>
-                  New run
-                </button>
-                <button className="ghost" type="button" onClick={onTitle}>
-                  Title
-                </button>
-              </div>
-            ) : (
-              <div className="choices" id="choices">
+            {choices.length > 0 && (
+              <div className={scene.id === "districts" ? "choices cards" : "choices"} id="choices">
                 {choices.map((choice, index) => {
                   const odds = choice.check ? previewCheck(state, choice.check) : null;
                   const chance = !odds ? null : odds.hits === 10 ? "certain" : odds.hits === 0 ? "no chance" : `${odds.hits} in 10`;
@@ -199,6 +227,16 @@ export function PlayScreen({
                 })}
               </div>
             )}
+            {scene.ending && (
+              <div className="actions">
+                <button className="primary" type="button" onClick={onNewRun}>
+                  New run
+                </button>
+                <button className="ghost" type="button" onClick={onTitle}>
+                  Title
+                </button>
+              </div>
+            )}
           </article>
         </main>
         <button className={sheetOpen ? "sheet-backdrop open" : "sheet-backdrop"} type="button" aria-label="Close sheet" onClick={() => setSheetOpen(false)} />
@@ -209,6 +247,7 @@ export function PlayScreen({
           state={state}
           choice={pending}
           sound={sound}
+          speaker={scene.speaker}
           onClose={() => setPending(null)}
           onCommit={(next) => {
             setPending(null);
@@ -217,20 +256,18 @@ export function PlayScreen({
         />
       )}
       {confirmAbandon && (
-        <div className="overlay">
-          <div className="dialog" role="dialog" aria-modal="true" aria-labelledby="abandon-title">
-            <h2 id="abandon-title">Abandon this run?</h2>
-            <p>This wipes {state.handle} from the browser. The city will not remember it.</p>
-            <div className="dialog-actions">
-              <button className="primary" type="button" data-testid="confirm-abandon" onClick={onAbandon}>
-                Wipe it
-              </button>
-              <button className="ghost" type="button" onClick={() => setConfirmAbandon(false)}>
-                Keep going
-              </button>
-            </div>
+        <DialogFrame titleId="abandon-title" onEscape={() => setConfirmAbandon(false)}>
+          <h2 id="abandon-title">Abandon this run?</h2>
+          <p>This wipes {state.handle} from the browser. The city will not remember it.</p>
+          <div className="dialog-actions">
+            <button className="primary" type="button" data-testid="confirm-abandon" onClick={onAbandon}>
+              Wipe it
+            </button>
+            <button className="ghost" type="button" onClick={() => setConfirmAbandon(false)}>
+              Keep going
+            </button>
           </div>
-        </div>
+        </DialogFrame>
       )}
     </div>
   );

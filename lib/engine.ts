@@ -1,11 +1,13 @@
-import { ORIGINS, POINTS, STAT_CAP, STATS, STAT_INFO, STRAIN_MAX, isValidName } from "./character";
+import { COMPLICATIONS, FACTIONS, FACTION_INFO, ORIGINS, POINTS, STAT_CAP, STATS, STAT_INFO, STRAIN_MAX, isValidName, startingFactions } from "./character";
 import { ITEMS } from "./items";
+import { mergeJournal } from "./journal";
 import { SCENES } from "./story";
 import type {
   CheckPreview,
   CheckResult,
   CheckSpec,
   Choice,
+  ComplicationId,
   Effect,
   EffectSpec,
   GameState,
@@ -13,6 +15,13 @@ import type {
   Scene,
   StatId,
 } from "./types";
+
+const FACTION_MIN = -3;
+const FACTION_MAX = 5;
+
+function clampFaction(value: number): number {
+  return Math.max(FACTION_MIN, Math.min(FACTION_MAX, value));
+}
 
 export type VisibleChoice = Choice & { enabled: boolean; disabledReason?: string };
 
@@ -31,8 +40,12 @@ export function createCharacter(input: {
   givenName: string;
   origin: OriginId;
   bonus: Record<StatId, number>;
+  complication?: ComplicationId | null;
+  keepsake?: string | null;
 }): GameState {
   const origin = ORIGINS[input.origin];
+  const complication = input.complication ?? null;
+  if (complication && !COMPLICATIONS[complication]) throw new Error("Invalid complication");
   const stats = { ...origin.stats };
   let spent = 0;
   for (const stat of STATS) {
@@ -47,17 +60,27 @@ export function createCharacter(input: {
   if (!isValidName(handle)) throw new Error("Invalid handle");
   const given = input.givenName.trim();
   if (given && !isValidName(given, 24)) throw new Error("Invalid given name");
+  const keepsake = input.keepsake && ITEMS[input.keepsake] ? input.keepsake : null;
+  const flags: Record<string, boolean> = {};
+  if (complication === "on-file") flags.on_file = true;
+  let creds = origin.creds;
+  let strain = 0;
+  if (complication === "debt") creds = Math.max(0, creds - 40);
+  if (complication === "optic") strain = 1;
   return {
-    version: 1,
+    version: 2,
     handle,
     givenName: given || handle,
     origin: input.origin,
+    complication,
     stats,
-    creds: origin.creds,
-    strain: 0,
-    items: [],
-    flags: {},
+    factions: startingFactions(input.origin, complication),
+    creds,
+    strain,
+    items: keepsake ? [keepsake] : [],
+    flags,
     journal: [],
+    chapters: [],
     rolls: [],
     sceneId: "stall",
   };
@@ -79,11 +102,13 @@ export function applyEffect(state: GameState, spec?: EffectSpec): GameState {
   const flags = { ...state.flags };
   for (const flag of effect.flagsOff ?? []) delete flags[flag];
   for (const flag of effect.flags ?? []) flags[flag] = true;
-  const journal = [...state.journal];
-  for (const line of effect.journal ?? []) {
-    if (!journal.includes(line)) journal.push(line);
+  const journal = mergeJournal(state.journal, effect.journal);
+  const factions = { ...state.factions };
+  for (const faction of FACTIONS) {
+    const delta = effect.factions?.[faction];
+    if (delta) factions[faction] = clampFaction((factions[faction] ?? 0) + delta);
   }
-  return { ...state, creds, strain, items, flags, journal };
+  return { ...state, creds, strain, items, flags, journal, factions };
 }
 
 function choiceHidden(state: GameState, choice: Choice): boolean {
@@ -91,7 +116,9 @@ function choiceHidden(state: GameState, choice: Choice): boolean {
   if (choice.hideIfAnyFlag?.some((flag) => state.flags[flag])) return true;
   if (choice.hideIfItem && state.items.includes(choice.hideIfItem)) return true;
   if (choice.requireFlag && !state.flags[choice.requireFlag]) return true;
+  if (choice.requireAnyFlag && !choice.requireAnyFlag.some((flag) => state.flags[flag])) return true;
   if (choice.requireItem && !state.items.includes(choice.requireItem)) return true;
+  if (choice.requireJournal && !state.journal.some((entry) => entry.id === choice.requireJournal)) return true;
   return false;
 }
 
@@ -122,6 +149,16 @@ export function previewCheck(state: GameState, check: CheckSpec): CheckPreview {
     if (state.flags[flagBonus.flag]) {
       bonus += flagBonus.amount;
       parts.push({ label: flagBonus.label, value: flagBonus.amount });
+    }
+  }
+  if (state.complication === "optic" && check.stat === "chrome") {
+    bonus += 1;
+    parts.push({ label: "Live optic", value: 1 });
+  }
+  for (const factionBonus of check.factionBonuses ?? []) {
+    if ((state.factions[factionBonus.faction] ?? 0) >= factionBonus.min) {
+      bonus += factionBonus.amount;
+      parts.push({ label: factionBonus.label, value: factionBonus.amount });
     }
   }
   let hits = 0;
@@ -166,6 +203,10 @@ export function runDelta(before: GameState, after: GameState): string[] {
   for (const id of before.items) {
     if (!after.items.includes(id)) lines.push(`Lost ${ITEMS[id]?.name ?? id}`);
   }
+  for (const faction of FACTIONS) {
+    const delta = after.factions[faction] - before.factions[faction];
+    if (delta) lines.push(`${FACTION_INFO[faction].name} ${delta > 0 ? "+" : ""}${delta}`);
+  }
   return lines;
 }
 
@@ -206,5 +247,9 @@ export function commitChoice(
   }
 
   const sceneId = resolveNext(choice, next, check ? check.success : null);
-  return { state: { ...next, sceneId }, check };
+  const chapters =
+    scene.endingTitle && sceneId !== scene.id && !next.chapters.includes(scene.endingTitle)
+      ? [...next.chapters, scene.endingTitle]
+      : next.chapters;
+  return { state: { ...next, sceneId, chapters }, check };
 }
