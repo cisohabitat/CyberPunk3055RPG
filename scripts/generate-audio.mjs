@@ -55,14 +55,23 @@ function mix(tracks) {
 }
 
 function theme() {
+  const chords = [
+    [110, 164.81, 220],
+    [98, 146.83, 196],
+    [87.31, 130.81, 174.61],
+    [98, 155.56, 196],
+  ];
   const seconds = 8;
   const length = RATE * seconds;
   const samples = new Array(length).fill(0);
   for (let i = 0; i < length; i += 1) {
     const t = i / RATE;
-    const drone = Math.sin(2 * Math.PI * 110 * t) * 0.16 + Math.sin(2 * Math.PI * 164.8 * t) * 0.08;
-    const pulse = Math.sin(2 * Math.PI * 220 * t) * (Math.sin(2 * Math.PI * 2 * t) > 0.2 ? 0.05 : 0);
-    samples[i] = drone + pulse;
+    const chord = chords[Math.floor(t / 2) % chords.length];
+    const pulse = Math.sin(2 * Math.PI * chord[2] * t) * (Math.sin(2 * Math.PI * 1.5 * t) > 0.35 ? 0.04 : 0);
+    samples[i] =
+      Math.sin(2 * Math.PI * chord[0] * t) * 0.14 +
+      Math.sin(2 * Math.PI * chord[1] * t) * 0.07 +
+      pulse;
   }
   return samples;
 }

@@ -63,6 +63,8 @@ export function createCharacter(input: {
   const keepsake = input.keepsake && ITEMS[input.keepsake] ? input.keepsake : null;
   const flags: Record<string, boolean> = {};
   if (complication === "on-file") flags.on_file = true;
+  if (complication === "debt") flags.debt = true;
+  if (complication === "optic") flags.optic = true;
   let creds = origin.creds;
   let strain = 0;
   if (complication === "debt") creds = Math.max(0, creds - 40);
@@ -119,6 +121,7 @@ function choiceHidden(state: GameState, choice: Choice): boolean {
   if (choice.requireAnyFlag && !choice.requireAnyFlag.some((flag) => state.flags[flag])) return true;
   if (choice.requireItem && !state.items.includes(choice.requireItem)) return true;
   if (choice.requireJournal && !state.journal.some((entry) => entry.id === choice.requireJournal)) return true;
+  if (choice.hideIfJournal && state.journal.some((entry) => entry.id === choice.hideIfJournal)) return true;
   return false;
 }
 
@@ -159,6 +162,12 @@ export function previewCheck(state: GameState, check: CheckSpec): CheckPreview {
     if ((state.factions[factionBonus.faction] ?? 0) >= factionBonus.min) {
       bonus += factionBonus.amount;
       parts.push({ label: factionBonus.label, value: factionBonus.amount });
+    }
+  }
+  for (const journalBonus of check.journalBonuses ?? []) {
+    if (state.journal.some((entry) => entry.id === journalBonus.id)) {
+      bonus += journalBonus.amount;
+      parts.push({ label: journalBonus.label, value: journalBonus.amount });
     }
   }
   let hits = 0;

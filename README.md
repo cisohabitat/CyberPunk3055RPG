@@ -2,7 +2,7 @@
 
 A solo story RPG set in **Kite City, 3055**. Four stats, a ten-sided die, and a campaign that keeps the first job. Your run saves in this browser.
 
-Quill wants the unedited hour Glass Chapel is about to cut out of a Helion executive. How you get in, who you trust, and what you do with the shard decide Act 1. The week after, and Ward Nine, can contradict it.
+Quill wants the unedited hour Glass Chapel is about to cut out of a Helion executive. How you get in, who you trust, and what you do with the shard decide Act 1. The week after forks on those choices, and Ward Nine can contradict them. The people and the rooms are illustrated.
 
 This is original fiction. It is not affiliated with any studio or with any existing cyberpunk game.
 

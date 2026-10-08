@@ -9,9 +9,11 @@ export const CODEX: { id: string; title: string }[] = [
   { id: "ending_sainted", title: "Sainted" },
   { id: "ending_week_wards", title: "Open Street" },
   { id: "ending_week_deal", title: "The Quiet Contract" },
+  { id: "ending_exposed", title: "Exposed" },
   { id: "ending_names", title: "Said Aloud" },
   { id: "ending_quiet", title: "Left to the Rain" },
   { id: "ending_witness", title: "Already Loose" },
+  { id: "ending_listed", title: "On the Folio" },
 ];
 
 const CODAS: Record<string, string> = {
@@ -23,11 +25,13 @@ const CODAS: Record<string, string> = {
   ending_walk: "The chair still happens at dawn.",
   ending_taken: "Kerr kept the glass. You kept your name.",
   ending_sainted: "The chapel kept the reason you walked in.",
+  ending_exposed: "The week got upstairs before you finished saying it.",
   ending_week_wards: "The wards got a clumsy, public version of the week.",
   ending_week_deal: "Helion paid for a quieter mouth.",
   ending_names: "You said the names, even if an earlier title sold them.",
   ending_quiet: "The wall kept the names. You kept your silence.",
   ending_witness: "The leak was already walking. You arrived in time to admit it.",
+  ending_listed: "Ives took the list. The wall kept the rain.",
 };
 
 export function endingCoda(sceneId: string): string {

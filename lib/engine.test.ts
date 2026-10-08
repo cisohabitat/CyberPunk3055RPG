@@ -386,6 +386,87 @@ describe("the week after", () => {
     assert.equal(debt.factions.quill, 2);
   });
 
+  it("sends a missed confession and an open folio to different rooms", () => {
+    const base = make("gutterwire", face);
+    const withClue = {
+      ...base,
+      sceneId: "act2_kerr",
+      journal: [{ id: "ward-nine", text: "Mara Voss signed the Ward Nine coolant dump." }],
+    };
+    const told = step(withClue, "tell-kerr", 10);
+    assert.equal(told.sceneId, "act2_middle");
+    assert.equal(told.flags.kerr_told, true);
+    const sold = step(withClue, "tell-kerr", 1);
+    assert.equal(sold.sceneId, "act2_heat");
+    assert.notEqual(told.sceneId, sold.sceneId);
+
+    const helion = { ...base, sceneId: "act2_helion" };
+    assert.equal(step(helion, "convince-ives", 10).sceneId, "act2_middle");
+    assert.equal(step(helion, "convince-ives", 1).sceneId, "act2_folio");
+  });
+
+  it("hides Quill's tab unless the debt complication was chosen", () => {
+    const clean = make("spire", face);
+    assert.equal(
+      presentChoices({ ...clean, sceneId: "act2_middle" }, getScene("act2_middle")).some((choice) => choice.id === "pay-tab"),
+      false,
+    );
+    const owing = createCharacter({
+      handle: "Rex",
+      givenName: "Ada",
+      origin: "dustline",
+      bonus: { chrome: 0, nerve: 0, face: 2, ghost: 0 },
+      complication: "debt",
+    });
+    const options = presentChoices({ ...owing, sceneId: "act2_middle", creds: 40 }, getScene("act2_middle"));
+    assert.equal(options.find((choice) => choice.id === "pay-tab")?.enabled, true);
+    const paid = step({ ...owing, sceneId: "act2_middle", creds: 40 }, "pay-tab");
+    assert.equal(paid.flags.quill_collected, true);
+    assert.equal(paid.creds, 0);
+  });
+
+  it("lets a live optic read Ward Nine without the chapel clue", () => {
+    const optic = createCharacter({
+      handle: "Rex",
+      givenName: "Ada",
+      origin: "spire",
+      bonus: { chrome: 2, nerve: 0, face: 0, ghost: 0 },
+      complication: "optic",
+    });
+    const wall = { ...optic, sceneId: "act3_arrival" };
+    assert.equal(presentChoices(wall, getScene("act3_arrival")).some((choice) => choice.id === "read-wall"), true);
+    const read = step(wall, "read-wall", 10);
+    assert.equal(read.sceneId, "ending_names");
+    assert.equal(read.journal.some((entry) => entry.id === "ward-nine"), true);
+    assert.match(sceneText(getScene(read.sceneId), read), /optic/);
+  });
+
+  it("marks the Helion deal as a betrayal after walking with Lumen", () => {
+    const state = make("spire", face);
+    const dealt = step({ ...state, sceneId: "act2_middle", flags: { ...state.flags, walk_nine: true } }, "deal");
+    assert.equal(dealt.sceneId, "ending_week_deal");
+    assert.equal(dealt.flags.betrayed_lumen, true);
+  });
+
+  it("adds the knee note to Kerr's check", () => {
+    const state = make("gutterwire", face);
+    state.journal = [{ id: "kerr-knee", text: "The knee is bad." }];
+    const check = SCENES.act2_kerr.choices.find((choice) => choice.id === "tell-kerr")?.check;
+    assert.ok(check);
+    assert.ok(previewCheck(state, check).parts.some((part) => part.label === "You know the knee"));
+  });
+
+  it("mentions a carried keepsake at the stall", () => {
+    const state = createCharacter({
+      handle: "Rex",
+      givenName: "Ada",
+      origin: "gutterwire",
+      bonus: face,
+      keepsake: "clinic-marker",
+    });
+    assert.match(sceneText(getScene("stall"), state), /Clinic Marker/);
+  });
+
   it("gives every codex ending a scene and a coda", () => {
     for (const entry of CODEX) {
       assert.equal(SCENES[entry.id]?.endingTitle, entry.title);

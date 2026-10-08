@@ -1,19 +1,36 @@
 import type { GameState, Scene } from "../types";
 
 function arrivalText(state: GameState): string {
-  const deal = state.flags.act2_deal
-    ? "You can still feel the eighty creds. They do not spend well down here."
-    : "The street version of the week got here before you did, wrong in the details and right about the tower.";
+  const deal = state.flags.act2_exposed
+    ? "Helion already has a version of this week. The wall has not agreed to it."
+    : state.flags.act2_deal
+      ? "You can still feel the payment. It does not spend well down here."
+      : "The street version of the week got here before you did, wrong in the details and right about the tower.";
+  const ives = state.flags.on_file && state.flags.act2_deal
+    ? "Ives is at the stair in a dry coat. The folio is the same one."
+    : state.flags.quill_collected
+      ? "Quill's tab is paid. That does not buy a name on this wall."
+      : state.flags.quill_refused
+        ? "Quill is not here. The interest still is."
+        : "";
   return `Ward Nine is a stack of housing with the coolant scars still on the lower floors. The dump took the bottom two levels and the tower called it maintenance. People moved up, and then they moved the names onto a wall the rain is trying to eat.
 
 Sera keeps the list. She has a hood, a pencil, and the patience of someone who has already done the funeral without a priest.
 
-${deal}
+${deal}${ives ? `\n\n${ives}` : ""}
 
 "If you know any of them," she says, "say them. If you sold them, you can still say them. The wall does not check your receipt."`;
 }
 
 function namesText(state: GameState): string {
+  if (state.flags.optic_read) {
+    return `The optic dragged the names off the concrete and would not give them back. ${state.handle} says them while the eye is still hot. Sera writes. The strain is the price of a clue you did not earn in the chapel.`;
+  }
+  if (state.flags.gave_copy) {
+    return `Helion already owns the file. You are repeating it out loud so Sera can hear a person say it, not a clerk. ${state.handle} does not get the clean version of this hour. The wall gets the names anyway.
+
+The pencil moves. The tower's copy does not get smaller. It also does not get to be the only voice.`;
+  }
   const sale = state.flags.act1_sold
     ? `You already sold the hour. ${state.handle} did that in a stall, for a number that felt like an ending. Sera listens anyway. You read the names off a memory Helion paid for, and the wall gets them back. The sale stands in a ledger. It does not stand here.`
     : state.flags.act1_ash
@@ -38,9 +55,11 @@ Sera does not chase you. Ward Nine has practice at people who get to the stair a
 
 function witnessText(state: GameState): string {
   return `You tell Sera the leak already started. ${
-    state.flags.act1_burned
-      ? "Lumen watched the glass go dark, and what she remembers has been walking the wards without you."
-      : "A second copy is loose. The tower bought one fire and did not get to own the other."
+    state.flags.betrayed_lumen
+      ? "You sold Lumen's week and then came down here to admit the fire. She is not on the stair. The leak walked without your loyalty."
+      : state.flags.act1_burned
+        ? "Lumen watched the glass go dark, and what she remembers has been walking the wards without you."
+        : "A second copy is loose. The tower bought one fire and did not get to own the other."
   }
 
 She writes ${state.handle} under the last name, small, like a footnote that refuses to be one. It is not absolution. It is a witness who arrived late and said so out loud.`;
@@ -70,12 +89,73 @@ export const ACT3_SCENES: Record<string, Scene> = {
         next: "ending_witness",
       },
       {
+        id: "read-wall",
+        label: "Read the wall with the optic.",
+        detail: "The eye does not turn off. The names might come up anyway.",
+        requireFlag: "optic",
+        hideIfFlag: "optic_burned",
+        hideIfJournal: "ward-nine",
+        check: {
+          stat: "chrome",
+          dc: 8,
+          label: "Read the etched names",
+          journalBonuses: [{ id: "calibration", amount: 1, label: "You kept the window" }],
+        },
+        successEffects: {
+          flags: ["optic_read", "spoke_names"],
+          strain: 1,
+          factions: { wards: 1 },
+          journal: ["Mara Voss signed the Ward Nine coolant dump. Three hundred people, one memo."],
+        },
+        failEffects: { strain: 1, flags: ["optic_burned"] },
+        resultSuccess: "The optic drags the names off the concrete. It costs you a pip of strain to keep them.",
+        resultFail: "The optic flares and keeps nothing. The wall is still just scratches.",
+        nextSuccess: "ending_names",
+        nextFail: "act3_arrival",
+      },
+      {
+        id: "let-ives",
+        label: "Let Ives take the list.",
+        detail: "The folio was always going to want this wall.",
+        requireFlag: "on_file",
+        requireAnyFlag: ["act2_deal"],
+        effects: { flags: ["ives_took_list"], factions: { helion: 1, wards: -2 } },
+        next: "ending_listed",
+      },
+      {
+        id: "say-anyway",
+        label: "Say the names with Ives listening.",
+        detail: "The folio is open. Your mouth can still be first.",
+        requireFlag: "on_file",
+        requireAnyFlag: ["act2_deal"],
+        check: { stat: "face", dc: 8, label: "Speak before the folio" },
+        successEffects: { flags: ["spoke_names"], factions: { wards: 1, helion: -1 } },
+        failEffects: { flags: ["ives_took_list"], factions: { helion: 1 } },
+        resultSuccess: "You get the names out before the pencil is a Helion exhibit.",
+        resultFail: "Ives thanks Sera and takes the page. Your voice arrives as a footnote.",
+        nextSuccess: "ending_names",
+        nextFail: "ending_listed",
+      },
+      {
         id: "leave-wall",
         label: "Leave the wall to the rain.",
         effects: { factions: { wards: -1 } },
         next: "ending_quiet",
       },
     ],
+  },
+  ending_listed: {
+    id: "ending_listed",
+    location: "Ending",
+    ending: true,
+    finale: true,
+    endingTitle: "On the Folio",
+    speaker: "Ives",
+    text: (state) =>
+      `Ives closes the list into the folio like it was always a Helion document that had been stored in the rain by mistake. Sera keeps the pencil. She does not keep the page.
+
+${state.handle} is still on file. Ward Nine is now a line item under resolved, which is the word the tower uses when it means owned.`,
+    choices: [],
   },
   ending_names: {
     id: "ending_names",

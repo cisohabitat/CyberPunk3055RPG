@@ -6,6 +6,7 @@ import { DialogFrame } from "@/components/DialogFrame";
 import { Mark, originAccent } from "@/components/Mark";
 import { Portrait } from "@/components/Portrait";
 import { Sheet } from "@/components/Sheet";
+import { DISTRICT_ART, placeArt } from "@/lib/art";
 import { ORIGINS, STRAIN_MAX, STAT_INFO } from "@/lib/character";
 import { commitChoice, getScene, presentChoices, previewCheck, runDelta, sceneText, type VisibleChoice } from "@/lib/engine";
 import { locationCue, playCue, setBed } from "@/lib/sound";
@@ -156,7 +157,12 @@ export function PlayScreen({
       </header>
       <div className="layout">
         <main>
-          <article className={flash ? "scene flash" : "scene"} id="scene-top" data-testid="scene">
+          <article
+            className={flash ? "scene flash" : "scene"}
+            id="scene-top"
+            data-testid="scene"
+            style={{ backgroundImage: `linear-gradient(180deg, rgba(9,8,13,0.72), rgba(9,8,13,0.94)), url(${placeArt(scene.location)})` }}
+          >
             <div className="scene-row">
               <Portrait speaker={scene.speaker} origin={state.origin} />
               <div>
@@ -214,6 +220,9 @@ export function PlayScreen({
                       disabled={!choice.enabled || pending !== null}
                       onClick={() => pick(choice)}
                     >
+                      {scene.id === "districts" && DISTRICT_ART[choice.id] && (
+                        <img className="card-art" src={DISTRICT_ART[choice.id]} alt="" />
+                      )}
                       <span className="index">{index + 1}</span>
                       <span className="label">{choice.label}</span>
                       <span className="odds">

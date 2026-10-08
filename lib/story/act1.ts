@@ -1,4 +1,5 @@
 import { PAY } from "../economy";
+import { ITEMS } from "../items";
 import type { Choice, GameState, Scene } from "../types";
 
 const KNIFE = [{ item: "mono-knife", amount: 1 }];
@@ -45,6 +46,10 @@ function stallText(state: GameState): string {
       : state.flags.on_file
         ? "Somewhere above the rain, a file with your old name is still open."
         : "";
+  const carried = state.items.map((id) => ITEMS[id]?.name).filter((name): name is string => Boolean(name));
+  const keepsake = carried.length
+    ? `You still have ${carried.join(" and ")} from a week this city already filed. Quill notices and does not ask.`
+    : "";
   const deal = state.flags.haggled
     ? "He already moved the advance to ninety. He will not enjoy being asked to fall in love with you twice."
     : state.flags.haggle_failed
@@ -54,7 +59,7 @@ function stallText(state: GameState): string {
 
 Quill nods at the stool across from him. "${state.handle}. Sit. Eat, or pretend."
 
-${complication ? complication + "\n\n" : ""}${deal}
+${complication ? complication + "\n\n" : ""}${keepsake ? keepsake + "\n\n" : ""}${deal}
 
 "Glass Chapel edits guilt. They keep the original. Mara Voss, Helion logistics, sits the chair at dawn. I want the shard from her hour in the chair. You want to remain the sort of person who can spend money."`;
 }

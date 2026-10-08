@@ -67,14 +67,23 @@ Under the overpass the traffic is a long electric animal. Ives holds the folio l
 }
 
 function middleText(state: GameState): string {
-  const from = state.flags.walk_nine
-    ? "Lumen's coat is still on the rail. She walked you this far and then let the canal speak."
-    : state.flags.ives_satisfied || state.flags.gave_copy
-      ? "Ives already has a tick on a page. The canal does not care about ticks."
-      : "Whoever collected you this week is not in the canal. The week is.";
+  const from = state.flags.kerr_told
+    ? "Kerr kept the names in his mouth. The canal is quieter for it."
+    : state.flags.walk_nine
+      ? "Lumen's coat is still on the rail. She walked you this far and then let the canal speak. Selling the week now is selling her with it."
+      : state.flags.gave_copy
+        ? "The second file is already upstairs. The canal is where you decide whether to repeat it."
+        : state.flags.ives_satisfied
+          ? "Ives already has a tick on a page. The canal does not care about ticks."
+          : "Whoever collected you this week is not in the canal. The week is.";
+  const tab = state.flags.debt && !state.flags.quill_settled
+    ? "Quill's tab is still open. He will not let the canal be the only meeting."
+    : state.flags.quill_collected
+      ? "The tab is paid. Quill's absence is the receipt."
+      : "";
   return `The dry canal under Ward Four is a rumor with a floor. Rain falls in, then finds a grate and pretends it never wanted to stay.
 
-${from}
+${from}${tab ? `\n\n${tab}` : ""}
 
 You can put the story in the street, where the wards will do something clumsy and public with it. Or you can sell the week to Helion and let the tower write the footnote. Both of them are a choice. Neither of them is clean.`;
 }
@@ -90,9 +99,15 @@ The card for Ward Nine is still on the board. The people who lived there have no
 
 function dealFinale(state: GameState): string {
   const prior = state.chapters[0] ? `You can still read ${state.chapters[0]} under this one.` : "The job has a second receipt.";
+  const price = state.flags.ives_open || state.flags.kerr_sold_you ? "Forty" : "Eighty";
+  const squeeze = state.flags.ives_open
+    ? "The folio never quite closed. The price knows it."
+    : state.flags.kerr_sold_you
+      ? "Kerr already rented your confession upstairs. This payment is the leftover."
+      : "The folio closes.";
   return `${prior}
 
-Ives pays without counting out loud. Eighty creds for a week of quiet, which is a polite way to buy your mouth. The folio closes. Your handle is a line item under "resolved."
+Ives pays without counting out loud. ${price} creds for a week of quiet, which is a polite way to buy your mouth. ${squeeze} Your handle is a line item under "resolved."
 
 Ward Nine does not get a memo about being resolved. The district card is still there when you want to find out what the tower thinks it bought.`;
 }
@@ -159,13 +174,14 @@ export const ACT2_SCENES: Record<string, Scene> = {
           dc: 7,
           label: "Give Kerr the truth",
           factionBonuses: [{ faction: "wards", min: 1, amount: 1, label: "The wards already trust you" }],
+          journalBonuses: [{ id: "kerr-knee", amount: 1, label: "You know the knee" }],
         },
         successEffects: { flags: ["kerr_told"], factions: { wards: 1 } },
-        failEffects: { strain: 1, factions: { helion: 1 } },
+        failEffects: { strain: 1, factions: { helion: 1 }, flags: ["kerr_sold_you"] },
         resultSuccess: "He sits. The knee agrees before he does.",
         resultFail: "He hears a confession and files it where Helion can rent it.",
         nextSuccess: "act2_middle",
-        nextFail: "act2_middle",
+        nextFail: "act2_heat",
       },
       {
         id: "refuse-kerr",
@@ -227,11 +243,11 @@ export const ACT2_SCENES: Record<string, Scene> = {
           factionBonuses: [{ faction: "helion", min: 1, amount: 1, label: "Helion already has your name" }],
         },
         successEffects: { flags: ["ives_satisfied"], factions: { helion: 1 } },
-        failEffects: { strain: 1 },
+        failEffects: { strain: 1, flags: ["ives_open"] },
         resultSuccess: "Ives ticks a box that was already going to be ticked.",
-        resultFail: "Ives closes the folio. Your name stays on the page.",
+        resultFail: "The folio stays open. Your name is the line they have not priced yet.",
         nextSuccess: "act2_middle",
-        nextFail: "act2_middle",
+        nextFail: "act2_folio",
       },
       {
         id: "refuse-ives",
@@ -247,6 +263,25 @@ export const ACT2_SCENES: Record<string, Scene> = {
     text: middleText,
     choices: [
       {
+        id: "pay-tab",
+        label: "Pay Quill's tab.",
+        detail: "Forty creds. The stall stops being a creditor.",
+        requireFlag: "debt",
+        hideIfFlag: "quill_settled",
+        requireCreds: 40,
+        effects: { creds: -40, flags: ["quill_collected", "quill_settled"], factions: { quill: 1 } },
+        next: "act2_middle",
+      },
+      {
+        id: "refuse-tab",
+        label: "Tell Quill the tab can wait.",
+        detail: "He will remember the interest in his face.",
+        requireFlag: "debt",
+        hideIfFlag: "quill_settled",
+        effects: { strain: 1, flags: ["quill_refused", "quill_settled"], factions: { quill: -1 } },
+        next: "act2_middle",
+      },
+      {
         id: "stand",
         label: "Stand where the names are.",
         detail: "The wards get a clumsy, public version.",
@@ -257,8 +292,90 @@ export const ACT2_SCENES: Record<string, Scene> = {
         id: "deal",
         label: "Sell the week to Helion.",
         detail: "Eighty creds. A quieter mouth.",
-        effects: { creds: 80, flags: ["act2_deal"], factions: { helion: 1, wards: -1 } },
+        effects: (state) => ({
+          creds: 80,
+          flags: state.flags.walk_nine ? ["act2_deal", "betrayed_lumen"] : ["act2_deal"],
+          factions: state.flags.walk_nine ? { helion: 1, wards: -1, lumen: -1 } : { helion: 1, wards: -1 },
+        }),
         next: "ending_week_deal",
+      },
+    ],
+  },
+  act2_heat: {
+    id: "act2_heat",
+    location: "The dry canal",
+    speaker: "Kerr",
+    text: `Kerr is already on the grate when you get there, and he is not alone in the story. Helion has the names you handed him. He looks sorry in the way a man looks sorry when the invoice cleared.
+
+"You can still stand in the street," he says. "They will already be listening. Or you take what is left of the quiet money. It is not eighty. It is what they pay for a confession they already own."`,
+    choices: [
+      {
+        id: "stand-heat",
+        label: "Stand anyway.",
+        detail: "The street can still be louder than the folio.",
+        check: { stat: "nerve", dc: 7, label: "Stand after Kerr sold you" },
+        successEffects: { flags: ["act2_stand"], factions: { wards: 1 } },
+        failEffects: { strain: 1, flags: ["act2_exposed"] },
+        resultSuccess: "You say the names where the steam can hear them. Kerr does not stop you.",
+        resultFail: "The listening post gets there first. The street version is already theirs.",
+        nextSuccess: "ending_week_wards",
+        nextFail: "ending_exposed",
+      },
+      {
+        id: "take-leftover",
+        label: "Take the leftover quiet.",
+        detail: "Forty creds. Kerr's invoice already cleared.",
+        effects: { creds: 40, flags: ["act2_deal"], factions: { helion: 1, wards: -1 } },
+        next: "ending_week_deal",
+      },
+    ],
+  },
+  act2_folio: {
+    id: "act2_folio",
+    location: "Helion Spire",
+    speaker: "Ives",
+    text: `The folio is still open. Ives has not priced you yet, which is worse than a number. Rain hits the overpass and does not come in.
+
+"Helion can pay forty for a week of quiet," they say. "Or you can try to close this in the street, where we are already writing."`,
+    choices: [
+      {
+        id: "cheap-deal",
+        label: "Take the forty.",
+        detail: "A smaller mouth. The page stays open.",
+        effects: { creds: 40, flags: ["act2_deal", "ives_open"], factions: { helion: 1 } },
+        next: "ending_week_deal",
+      },
+      {
+        id: "stand-folio",
+        label: "Close it in the street.",
+        check: { stat: "nerve", dc: 7, label: "Outshout an open folio" },
+        successEffects: { flags: ["act2_stand"], factions: { wards: 1, helion: -1 } },
+        failEffects: { strain: 1, flags: ["act2_exposed"] },
+        resultSuccess: "You leave the overpass talking. Ives has to chase a rumor.",
+        resultFail: "Ives lets you go and files the attempt. The week is already a Helion sentence.",
+        nextSuccess: "ending_week_wards",
+        nextFail: "ending_exposed",
+      },
+    ],
+  },
+  ending_exposed: {
+    id: "ending_exposed",
+    location: "Ending",
+    ending: true,
+    endingTitle: "Exposed",
+    text: (state) =>
+      `${state.handle}, the week got upstairs before you finished saying it. ${
+        state.flags.kerr_sold_you ? "Kerr sold the names." : "Ives kept the folio open."
+      } Ward Nine will already know a version of you that you did not approve.
+
+The district card is still there. The wall does not care that Helion heard it first.`,
+    choices: [
+      {
+        id: "back-to-board",
+        label: "The districts again.",
+        detail: "Ward Nine has your name in someone else's mouth.",
+        effects: { flags: ["act2_done"] },
+        next: "districts",
       },
     ],
   },

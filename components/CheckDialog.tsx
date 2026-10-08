@@ -81,7 +81,9 @@ export function CheckDialog({
           </li>
         ))}
       </ul>
-      {display !== null && <div className={result && !rolling ? (result.success ? "die good" : "die bad") : "die"}>{display}</div>}
+      {display !== null && (
+        <div className={result && !rolling ? (result.success ? "die plate good" : "die plate bad") : "die plate"}>{display}</div>
+      )}
       {result && !rolling && (
         <div aria-live="polite">
           <p className="total">

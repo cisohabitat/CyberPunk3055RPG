@@ -54,6 +54,7 @@ export type CheckSpec = {
   itemBonuses?: { item: string; amount: number }[];
   flagBonuses?: { flag: string; amount: number; label: string }[];
   factionBonuses?: FactionBonus[];
+  journalBonuses?: { id: string; amount: number; label: string }[];
 };
 
 export type Choice = {
@@ -67,6 +68,7 @@ export type Choice = {
   requireAnyFlag?: string[];
   requireItem?: string;
   requireJournal?: string;
+  hideIfJournal?: string;
   requireCreds?: number;
   check?: CheckSpec;
   effects?: EffectSpec;
