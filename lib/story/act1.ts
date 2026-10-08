@@ -1,5 +1,5 @@
-import { PAY } from "./economy";
-import type { Choice, GameState, Scene } from "./types";
+import { PAY } from "../economy";
+import type { Choice, GameState, Scene } from "../types";
 
 const KNIFE = [{ item: "mono-knife", amount: 1 }];
 const SPOOF = [{ item: "spoof-chip", amount: 1 }];
@@ -38,6 +38,13 @@ const ORIGIN_OPEN: Record<GameState["origin"], string> = {
 };
 
 function stallText(state: GameState): string {
+  const complication = state.complication === "debt"
+    ? "He knows the tab. He does not mention it, which is how Quill mentions things."
+    : state.complication === "optic"
+      ? "Your optic ticks once, hunting a frequency the stall does not have."
+      : state.flags.on_file
+        ? "Somewhere above the rain, a file with your old name is still open."
+        : "";
   const deal = state.flags.haggled
     ? "He already moved the advance to ninety. He will not enjoy being asked to fall in love with you twice."
     : state.flags.haggle_failed
@@ -47,7 +54,7 @@ function stallText(state: GameState): string {
 
 Quill nods at the stool across from him. "${state.handle}. Sit. Eat, or pretend."
 
-${deal}
+${complication ? complication + "\n\n" : ""}${deal}
 
 "Glass Chapel edits guilt. They keep the original. Mara Voss, Helion logistics, sits the chair at dawn. I want the shard from her hour in the chair. You want to remain the sort of person who can spend money."`;
 }
@@ -229,6 +236,17 @@ The orderly says "${state.givenName}" the way a person reads a chart. You answer
 Somewhere a plinth holds the reason you came to Glass Chapel. You do not miss it. That is the worst sentence you will never think.`;
 }
 
+
+function weekAfter(flag: string): Choice {
+  return {
+    id: "week-after",
+    label: "The week after.",
+    detail: "The job is over. The city is not.",
+    effects: { flags: ["act1_done", flag] },
+    next: "districts",
+  };
+}
+
 function add(scene: Scene): Scene {
   return scene;
 }
@@ -237,7 +255,7 @@ function checkChoice(choice: Choice): Choice {
   return choice;
 }
 
-export const SCENES: Record<string, Scene> = {
+export const ACT1_SCENES: Record<string, Scene> = {
   stall: add({
     id: "stall",
     location: "Noodle stall, Ward Four",
@@ -255,6 +273,7 @@ export const SCENES: Record<string, Scene> = {
           creds: state.flags.haggled ? PAY.haggled : PAY.base,
           flags: ["hired"],
           journal: [HIRED],
+          factions: { quill: 1 },
         }),
         next: "route",
       },
@@ -529,7 +548,7 @@ ${passLine}`;
       {
         id: "honest",
         label: "Quill sent me for the Voss shard.",
-        effects: { flags: ["knows_truth", "honest"], journal: [TRUTH] },
+        effects: { flags: ["knows_truth", "honest"], journal: [TRUTH], factions: { lumen: 1 } },
         next: "lumen_deal",
       },
       checkChoice({
@@ -539,6 +558,7 @@ ${passLine}`;
         successEffects: {
           flags: ["knows_truth", "she_believes"],
           journal: [TRUTH],
+          factions: { lumen: 1 },
         },
         failEffects: { flags: ["exposed", "alert"] },
         resultSuccess: "She studies your mouth, then decides to spend the truth on you.",
@@ -581,19 +601,19 @@ She waits. The optic is dark now, which means she is doing this as a person.`,
       {
         id: "pact-break",
         label: "I'll break it.",
-        effects: { flags: ["pact_break", "lumen_here"] },
+        effects: { flags: ["pact_break", "lumen_here"], factions: { lumen: 1, wards: 1 } },
         next: vaultNext,
       },
       {
         id: "pact-copy",
         label: "I'll copy it. You get the leak. I get paid.",
-        effects: { flags: ["pact_copy", "lumen_here"] },
+        effects: { flags: ["pact_copy", "lumen_here"], factions: { lumen: 1, quill: 1 } },
         next: vaultNext,
       },
       {
         id: "pact-sell",
         label: "Ward Nine is not my job.",
-        effects: { flags: ["pact_sell"] },
+        effects: { flags: ["pact_sell"], factions: { helion: 1, lumen: -1 } },
         next: vaultNext,
       },
       checkChoice({
@@ -635,6 +655,7 @@ She waits. The optic is dark now, which means she is doing this as a person.`,
   vault_quiet: add({
     id: "vault_quiet",
     location: "The chair room",
+    speaker: "Mara",
     text: vaultText,
     choices: [
       {
@@ -964,7 +985,7 @@ There is no more conversation in this room. There is only the exit you can still
     ending: true,
     endingTitle: "The Sale",
     text: soldText,
-    choices: [],
+    choices: [weekAfter("act1_sold")],
   }),
   ending_both: add({
     id: "ending_both",
@@ -972,7 +993,7 @@ There is no more conversation in this room. There is only the exit you can still
     ending: true,
     endingTitle: "Two Fires",
     text: bothText,
-    choices: [],
+    choices: [weekAfter("act1_both")],
   }),
   ending_burned: add({
     id: "ending_burned",
@@ -981,7 +1002,7 @@ There is no more conversation in this room. There is only the exit you can still
     endingTitle: "Unedited",
     speaker: "Sister Lumen",
     text: burnedText,
-    choices: [],
+    choices: [weekAfter("act1_burned")],
   }),
   ending_smashed: add({
     id: "ending_smashed",
@@ -989,7 +1010,7 @@ There is no more conversation in this room. There is only the exit you can still
     ending: true,
     endingTitle: "No Witness",
     text: smashedText,
-    choices: [],
+    choices: [weekAfter("act1_smashed")],
   }),
   ending_ash: add({
     id: "ending_ash",
@@ -997,7 +1018,7 @@ There is no more conversation in this room. There is only the exit you can still
     ending: true,
     endingTitle: "Half a Scream",
     text: ashText,
-    choices: [],
+    choices: [weekAfter("act1_ash")],
   }),
   ending_walk: add({
     id: "ending_walk",
@@ -1005,7 +1026,7 @@ There is no more conversation in this room. There is only the exit you can still
     ending: true,
     endingTitle: "Empty Hands",
     text: walkText,
-    choices: [],
+    choices: [weekAfter("act1_walk")],
   }),
   ending_taken: add({
     id: "ending_taken",
@@ -1013,7 +1034,7 @@ There is no more conversation in this room. There is only the exit you can still
     ending: true,
     endingTitle: "Collateral",
     text: takenText,
-    choices: [],
+    choices: [weekAfter("act1_taken")],
   }),
   ending_sainted: add({
     id: "ending_sainted",
@@ -1021,21 +1042,6 @@ There is no more conversation in this room. There is only the exit you can still
     ending: true,
     endingTitle: "Sainted",
     text: saintedText,
-    choices: [],
+    choices: [weekAfter("act1_sainted")],
   }),
 };
-
-const CODAS: Record<string, string> = {
-  ending_sold: "Helion bought the last clean copy of its own crime.",
-  ending_both: "The wards have the file. So does the tower that paid you.",
-  ending_burned: "Lumen kept the memory. The shard is gone.",
-  ending_smashed: "You broke the hour alone. Proof went with it.",
-  ending_ash: "A damaged hour changed hands, and then the week ended.",
-  ending_walk: "The chair still happens at dawn.",
-  ending_taken: "Kerr kept the glass. You kept your name.",
-  ending_sainted: "The chapel kept the reason you walked in.",
-};
-
-export function endingCoda(sceneId: string): string {
-  return CODAS[sceneId] ?? "";
-}

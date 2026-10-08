@@ -1,4 +1,4 @@
-import type { OriginId, StatId } from "./types";
+import type { ComplicationId, FactionId, OriginId, StatId } from "./types";
 
 export const STATS: StatId[] = ["chrome", "nerve", "face", "ghost"];
 
@@ -68,6 +68,58 @@ export const ORIGINS: Record<OriginId, Origin> = {
     creds: 40,
   },
 };
+
+export const FACTIONS: FactionId[] = ["quill", "lumen", "helion", "wards"];
+
+export const FACTION_INFO: Record<FactionId, { name: string; blurb: string }> = {
+  quill: { name: "Quill", blurb: "The stall. The advance. The man who does not do sentiment." },
+  lumen: { name: "Lumen", blurb: "Glass Chapel's nurse with an optic and a longer memory than the chair." },
+  helion: { name: "Helion", blurb: "The tower that paid to forget Ward Nine." },
+  wards: { name: "The wards", blurb: "People who still live under the leaks." },
+};
+
+export type Complication = {
+  id: ComplicationId;
+  name: string;
+  perk: string;
+  cost: string;
+  blurb: string;
+};
+
+export const COMPLICATIONS: Record<ComplicationId, Complication> = {
+  debt: {
+    id: "debt",
+    name: "Quill's tab",
+    perk: "He starts one step warmer.",
+    cost: "You start 40 creds poorer.",
+    blurb: "You already owe the stall. He will pretend that is loyalty.",
+  },
+  optic: {
+    id: "optic",
+    name: "Live optic",
+    perk: "Chrome checks +1.",
+    cost: "You begin the night at Strain 1. It does not power down.",
+    blurb: "A chapel leftover. The eye keeps looking after you ask it to stop.",
+  },
+  "on-file": {
+    id: "on-file",
+    name: "Still on file",
+    perk: "Helion already knows the name.",
+    cost: "The tower starts two steps ahead of you.",
+    blurb: "A badge you burned did not burn the record.",
+  },
+};
+
+export function startingFactions(origin: OriginId, complication: ComplicationId | null): Record<FactionId, number> {
+  const scores: Record<FactionId, number> = { quill: 0, lumen: 0, helion: 0, wards: 0 };
+  if (origin === "gutterwire") scores.wards = 1;
+  if (origin === "spire") scores.helion = 1;
+  if (origin === "dustline") scores.quill = 1;
+  if (complication === "debt") scores.quill += 1;
+  if (complication === "optic") scores.lumen += 1;
+  if (complication === "on-file") scores.helion += 2;
+  return scores;
+}
 
 export function isValidName(value: string, max = 18): boolean {
   const trimmed = value.trim();

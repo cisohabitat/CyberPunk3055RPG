@@ -1,8 +1,8 @@
 # Saint Shard
 
-A solo story RPG set in **Kite City, 3055**. One job, four stats, a ten-sided die. Your run saves in this browser.
+A solo story RPG set in **Kite City, 3055**. Four stats, a ten-sided die, and a campaign that keeps the first job. Your run saves in this browser.
 
-Quill wants the unedited hour Glass Chapel is about to cut out of a Helion executive. How you get in, who you trust, and what you do with the shard all change the ending.
+Quill wants the unedited hour Glass Chapel is about to cut out of a Helion executive. How you get in, who you trust, and what you do with the shard decide Act 1. The week after, and Ward Nine, can contradict it.
 
 This is original fiction. It is not affiliated with any studio or with any existing cyberpunk game.
 
@@ -28,6 +28,6 @@ Saves live in `localStorage` under `saint-shard-3055-v1` on the player's browser
 
 ## How a check works
 
-Roll **1d10** and add the stat, your origin perk if it matches, and any gear or clue that applies. Meet or beat the difficulty. A **10** on a success eases Strain. A **1** on a miss adds Strain.
+Roll **1d10** and add the stat, your origin perk if it matches, and any gear, clue, or faction standing that applies. A live optic adds to Chrome. Meet or beat the difficulty. A **10** on a success eases Strain. A **1** on a miss adds Strain.
 
 At Strain 5, a bad night inside Glass Chapel can end in the chair.

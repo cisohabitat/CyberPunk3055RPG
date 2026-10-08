@@ -13,7 +13,7 @@ import {
 } from "./engine.ts";
 import { ITEMS } from "./items.ts";
 import { parseSave } from "./storage.ts";
-import { SCENES, endingCoda, vaultNext } from "./story.ts";
+import { CODEX, SCENES, endingCoda, vaultNext } from "./story/index.ts";
 import type { Choice, GameState, StatId } from "./types.ts";
 
 function bonusFor(origin: OriginId, seed: number): Record<StatId, number> {
@@ -88,8 +88,11 @@ describe("story graph", () => {
       assert.equal(scene.id, key);
       const ids = new Set(scene.choices.map((choice) => choice.id));
       assert.equal(ids.size, scene.choices.length, `${key} has duplicate choice ids`);
-      if (scene.ending) {
-        assert.equal(scene.choices.length, 0);
+      if (scene.finale) {
+        assert.equal(scene.choices.length, 0, key);
+        assert.ok(endingCoda(scene.id).length > 10, scene.id);
+      } else if (scene.ending) {
+        assert.ok(scene.choices.length > 0, key);
         assert.ok(endingCoda(scene.id).length > 10, scene.id);
       } else assert.ok(scene.choices.length > 0, key);
 
@@ -299,6 +302,98 @@ describe("scripted jobs", () => {
   });
 });
 
+describe("the week after", () => {
+  const face: Record<StatId, number> = { chrome: 0, nerve: 0, face: 2, ghost: 0 };
+
+  it("opens Act 2 from three different Act 1 endings", () => {
+    const base = make("spire", face);
+    const sold = step({ ...base, sceneId: "ending_sold" }, "week-after");
+    assert.equal(sold.sceneId, "districts");
+    assert.equal(sold.flags.act1_sold, true);
+    assert.equal(step(sold, "to-helion").sceneId, "act2_helion");
+
+    const burned = step({ ...base, sceneId: "ending_burned" }, "week-after");
+    assert.equal(step(burned, "to-lumen").sceneId, "act2_lumen");
+
+    const sainted = step({ ...base, sceneId: "ending_sainted" }, "week-after");
+    assert.equal(step(sainted, "to-kerr").sceneId, "act2_kerr");
+    const board = presentChoices(sainted, getScene("districts"));
+    assert.equal(board.some((choice) => choice.id === "to-helion"), false);
+    assert.equal(board.some((choice) => choice.id === "to-lumen"), false);
+  });
+
+  it("reaches Ward Nine and can contradict the sale", () => {
+    let state = make("gutterwire", face);
+    state = {
+      ...state,
+      sceneId: "ending_sold",
+      journal: [{ id: "ward-nine", text: "Mara Voss signed the Ward Nine coolant dump." }],
+    };
+    state = step(state, "week-after");
+    state = step(state, "to-helion");
+    state = step(state, "refuse-ives");
+    assert.equal(state.sceneId, "act2_middle");
+    state = step(state, "deal");
+    assert.equal(state.sceneId, "ending_week_deal");
+    assert.ok(state.chapters.includes("The Sale"));
+    state = step(state, "back-to-board");
+    assert.equal(presentChoices(state, getScene("districts")).some((choice) => choice.id === "to-kerr"), false);
+    state = step(state, "to-ward-nine");
+    assert.equal(state.sceneId, "act3_arrival");
+    state = step(state, "read-names");
+    assert.equal(state.sceneId, "ending_names");
+    assert.equal(getScene(state.sceneId).finale, true);
+    assert.ok(state.chapters.includes("The Quiet Contract"));
+    assert.match(sceneText(getScene(state.sceneId), state), /sold the hour/);
+    assert.ok(endingCoda("ending_names").length > 10);
+  });
+
+  it("hides a clue the journal does not carry", () => {
+    const state = make("dustline", { chrome: 0, nerve: 0, face: 0, ghost: 2 });
+    const options = presentChoices({ ...state, sceneId: "act3_arrival" }, getScene("act3_arrival"));
+    assert.equal(options.some((choice) => choice.id === "read-names"), false);
+    assert.equal(options.some((choice) => choice.id === "leave-wall"), true);
+  });
+
+  it("lets faction standing and a live optic change the math", () => {
+    const state = make("spire", face);
+    const check = SCENES.act2_helion.choices.find((choice) => choice.id === "convince-ives")?.check;
+    assert.ok(check);
+    const preview = previewCheck(state, check);
+    assert.ok(preview.parts.some((part) => part.label === "Helion already has your name"));
+
+    const optic = createCharacter({
+      handle: "Rex",
+      givenName: "Ada",
+      origin: "spire",
+      bonus: { chrome: 2, nerve: 0, face: 0, ghost: 0 },
+      complication: "optic",
+    });
+    assert.equal(optic.strain, 1);
+    assert.equal(optic.factions.lumen, 1);
+    const copy = SCENES.vault_quiet.choices.find((choice) => choice.id === "copy")?.check;
+    assert.ok(copy);
+    assert.ok(previewCheck(optic, copy).parts.some((part) => part.label === "Live optic"));
+
+    const debt = createCharacter({
+      handle: "Rex",
+      givenName: "Ada",
+      origin: "dustline",
+      bonus: { chrome: 0, nerve: 0, face: 2, ghost: 0 },
+      complication: "debt",
+    });
+    assert.equal(debt.creds, 0);
+    assert.equal(debt.factions.quill, 2);
+  });
+
+  it("gives every codex ending a scene and a coda", () => {
+    for (const entry of CODEX) {
+      assert.equal(SCENES[entry.id]?.endingTitle, entry.title);
+      assert.ok(endingCoda(entry.id).length > 10, entry.id);
+    }
+  });
+});
+
 describe("random runners", () => {
   it("always finishes a job", () => {
     const endings = new Set<string>();
@@ -310,9 +405,9 @@ describe("random runners", () => {
         let retreats = 0;
         const path: string[] = [];
         let finished = false;
-        for (let guard = 0; guard < 48; guard += 1) {
+        for (let guard = 0; guard < 96; guard += 1) {
           const scene = getScene(state.sceneId);
-          if (scene.ending) {
+          if (scene.finale || (scene.ending && rng() < 0.55)) {
             endings.add(scene.id);
             finished = true;
             break;
@@ -342,7 +437,28 @@ describe("saves", () => {
   it("rejects junk and accepts a real run", () => {
     assert.equal(parseSave(null), null);
     assert.equal(parseSave("{"), null);
+    assert.equal(parseSave(JSON.stringify({ version: 9 })), null);
     assert.equal(parseSave(JSON.stringify({ version: 2 })), null);
+    const legacy = {
+      version: 1,
+      handle: "Rex",
+      givenName: "Ada",
+      origin: "gutterwire",
+      stats: { chrome: 1, nerve: 3, face: 4, ghost: 2 },
+      creds: 10,
+      strain: 0,
+      items: [],
+      flags: {},
+      journal: ["Mara Voss signed the Ward Nine coolant dump. Three hundred people, one memo."],
+      rolls: [],
+      sceneId: "stall",
+    };
+    const migrated = parseSave(JSON.stringify(legacy));
+    assert.equal(migrated?.version, 2);
+    assert.equal(migrated?.journal[0]?.id, "ward-nine");
+    assert.equal(migrated?.complication, null);
+    assert.equal(migrated?.factions.wards, 1);
+    assert.deepEqual(migrated?.chapters, []);
     const state = make("gutterwire", { chrome: 0, nerve: 0, face: 0, ghost: 2 });
     assert.deepEqual(parseSave(JSON.stringify(state))?.handle, "Rex");
   });

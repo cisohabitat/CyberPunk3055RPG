@@ -2,23 +2,34 @@
 
 import { useState } from "react";
 import { Mark, originAccent } from "@/components/Mark";
-import { ORIGINS, POINTS, STATS, STAT_INFO, isValidName } from "@/lib/character";
+import { COMPLICATIONS, ORIGINS, POINTS, STATS, STAT_INFO, isValidName } from "@/lib/character";
 import { createCharacter } from "@/lib/engine";
-import type { GameState, OriginId, StatId } from "@/lib/types";
+import { ITEMS } from "@/lib/items";
+import type { ComplicationId, GameState, OriginId, StatId } from "@/lib/types";
 
 const EMPTY: Record<StatId, number> = { chrome: 0, nerve: 0, face: 0, ghost: 0 };
 
-export function CreateScreen({ onBack, onStart }: { onBack: () => void; onStart: (state: GameState) => void }) {
+export function CreateScreen({
+  keepsakes = [],
+  onBack,
+  onStart,
+}: {
+  keepsakes?: string[];
+  onBack: () => void;
+  onStart: (state: GameState) => void;
+}) {
   const [handle, setHandle] = useState("");
   const [givenName, setGivenName] = useState("");
   const [origin, setOrigin] = useState<OriginId>("gutterwire");
+  const [complication, setComplication] = useState<ComplicationId | null>(null);
+  const [keepsake, setKeepsake] = useState("");
   const [bonus, setBonus] = useState(EMPTY);
   const profile = ORIGINS[origin];
   const remaining = POINTS - STATS.reduce((sum, stat) => sum + bonus[stat], 0);
   const given = givenName.trim();
   const handleOk = isValidName(handle);
   const givenOk = given.length === 0 || isValidName(given, 24);
-  const ready = handleOk && givenOk && remaining === 0;
+  const ready = handleOk && givenOk && remaining === 0 && complication !== null;
 
   function add(stat: StatId, delta: number) {
     setBonus((current) => {
@@ -38,7 +49,7 @@ export function CreateScreen({ onBack, onStart }: { onBack: () => void; onStart:
         onSubmit={(event) => {
           event.preventDefault();
           if (!ready) return;
-          onStart(createCharacter({ handle, givenName, origin, bonus }));
+          onStart(createCharacter({ handle, givenName, origin, bonus, complication, keepsake: keepsake || null }));
         }}
       >
         <p className="eyebrow">New runner</p>
@@ -92,6 +103,39 @@ export function CreateScreen({ onBack, onStart }: { onBack: () => void; onStart:
           </div>
         </fieldset>
         <fieldset>
+          <legend>Complication</legend>
+          <div className="origin-grid">
+            {Object.values(COMPLICATIONS).map((option) => (
+              <button
+                key={option.id}
+                type="button"
+                className="origin"
+                data-testid={`complication-${option.id}`}
+                aria-pressed={complication === option.id}
+                onClick={() => setComplication(option.id)}
+              >
+                <strong>{option.name}</strong>
+                <em>{option.perk}</em>
+                <span className="origin-copy">{option.blurb}</span>
+                <span className="origin-copy">{option.cost}</span>
+              </button>
+            ))}
+          </div>
+        </fieldset>
+        {keepsakes.length > 0 && (
+          <label className="keepsake">
+            <span>Carry one thing from a finished run</span>
+            <select data-testid="keepsake" value={keepsake} onChange={(event) => setKeepsake(event.target.value)}>
+              <option value="">Carry nothing</option>
+              {keepsakes.map((id) => (
+                <option key={id} value={id}>
+                  {ITEMS[id]?.name ?? id}
+                </option>
+              ))}
+            </select>
+          </label>
+        )}
+        <fieldset>
           <legend>{remaining} point{remaining === 1 ? "" : "s"} left</legend>
           <div className="points">
             {STATS.map((stat) => {
@@ -127,6 +171,7 @@ export function CreateScreen({ onBack, onStart }: { onBack: () => void; onStart:
           {!handleOk && handle.length > 0 && "Handles use letters, numbers, spaces, apostrophes, or hyphens."}
           {handleOk && !givenOk && "That given name has a character the city won't print."}
           {handleOk && givenOk && remaining !== 0 && "Spend both points. Every stat is a way through the job."}
+          {handleOk && givenOk && remaining === 0 && !complication && "Pick the complication. A second run should not start clean."}
         </p>
         <div className="actions">
           <button className="primary" type="submit" data-testid="start-run" disabled={!ready}>
