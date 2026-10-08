@@ -5,6 +5,7 @@ import { DialogFrame } from "@/components/DialogFrame";
 import { Portrait, reactionLine } from "@/components/Portrait";
 import { commitChoice, previewCheck, runDelta } from "@/lib/engine";
 import { playCue } from "@/lib/sound";
+import { statVoice } from "@/lib/story/voices";
 import type { CheckResult, Choice, GameState } from "@/lib/types";
 
 export function CheckDialog({
@@ -73,6 +74,7 @@ export function CheckDialog({
       <p>
         {chance}. 1d10 + {preview.bonus} against DC {preview.dc}.
       </p>
+      <p data-testid="stat-voice">{statVoice(preview.stat)}</p>
       <ul className="math">
         {preview.parts.map((part) => (
           <li key={part.label}>
