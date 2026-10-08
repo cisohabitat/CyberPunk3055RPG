@@ -24,6 +24,8 @@ npm run build
 
 Import this repository. The framework preset is Next.js. There are no environment variables and no database. `npm run build` is the production build.
 
+Pushes and pull requests run `.github/workflows/ci.yml`. The Test job runs `npm test`. The Build job runs only after that, and runs `npm run build`. A production deploy waits for both checks. If either fails, Vercel skips the production build and the live site stays on the last deploy that passed. Pull request previews still build immediately, with the same checks running beside them.
+
 Saves live in `localStorage` under `saint-shard-3055-v1` on the player's browser.
 
 ## How a check works
