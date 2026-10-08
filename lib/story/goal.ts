@@ -19,6 +19,13 @@ const WEEK = new Set([
 
 const WALL = new Set(["card_wall", "ward_wall", "ending_names", "ending_quiet", "ending_witness", "ending_listed"]);
 
+export function actName(state: GameState): string {
+  const id = state.sceneId;
+  if (WALL.has(id) || id.startsWith("act3_")) return "The Wall";
+  if (WEEK.has(id) || id.startsWith("act2_")) return "The Week";
+  return "The Hour";
+}
+
 export function currentGoal(state: GameState): string {
   const id = state.sceneId;
   if (WALL.has(id) || id.startsWith("act3_")) return GOAL_WALL;

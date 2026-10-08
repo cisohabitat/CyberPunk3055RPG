@@ -34,6 +34,7 @@ export type GameState = {
   journal: JournalEntry[];
   chapters: string[];
   rolls: RollLog[];
+  log: string[];
   sceneId: string;
 };
 

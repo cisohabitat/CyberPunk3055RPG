@@ -11,11 +11,16 @@ Rain ticks the plastic. Nobody is selling noodles.`;
   }
   const sold = state.flags.act1_sold || state.flags.act1_both || state.flags.act1_ash;
   const lumen = state.flags.knows_truth || state.flags.lumen_here || state.flags.act1_burned;
+  const orderly = state.items.includes("counterfeit-pass")
+    ? `The orderly from the basin is under the board, gold tooth, no coat. "Pass still scans," he says, and does not ask what you did with the hour.`
+    : "";
+  const badge = state.flags.on_file ? "The badge you burned is penciled on the underside of the Helion card." : "";
   return `Between jobs the city offers cards, not streets. You stand under a cracked route board in Ward Four and the rain writes on it faster than the tower does.
 
 Ward Four is Kerr. He collects.
 ${lumen ? "Glass Chapel is Lumen. She still has your name in a mouth that does not forget." : "Glass Chapel is quiet. You did not leave anyone there who is calling."}
 ${sold || state.flags.on_file ? "Helion Spire is a dry voice that already knows which hour moved." : "The Spire is not asking. Yet."}
+${orderly ? `\n\n${orderly}` : ""}${badge ? `\n\n${badge}` : ""}
 
 Pick the door that knows you. The others can wait for a week you do not have.`;
 }
@@ -46,6 +51,12 @@ function streetText(state: GameState): string {
     state.flags.act1_burned || state.flags.act1_smashed || state.flags.act1_walk
       ? "Quill's stall is dark. The bowls are stacked. He priced your absence and went home."
       : "The stall is open and pretending it was always open. Quill does not look up.";
+  const origin =
+    state.origin === "gutterwire"
+      ? "The leaks are the ones you grew up counting. This street still smells like that arithmetic."
+      : state.origin === "spire"
+        ? "The tower you used to wear is still up there, pretending it does not know this street."
+        : "The flats you invoiced to get here are a rumor under this rain.";
   const rumor =
     state.flags.act1_both || state.flags.act1_burned
       ? "Someone on the corner says Ward Nine like it is a file now, not a rumor."
@@ -53,9 +64,12 @@ function streetText(state: GameState): string {
   const limp = state.flags.kerr_down
     ? "You see Kerr at the far awning. The limp is worse. He sees you and does not cross."
     : "";
+  const tab = state.flags.debt ? "Quill's tab is still in the steam, even when he will not look at you." : "";
   return `A week of rain has rewritten the paint. ${stall}
 
-${rumor}${limp ? `\n\n${limp}` : ""}
+${origin}
+
+${rumor}${limp ? `\n\n${limp}` : ""}${tab ? `\n\n${tab}` : ""}
 
 The route board is still there. The cards that know your name are the ones face up.`;
 }
@@ -68,6 +82,8 @@ function kerrDoorText(state: GameState): string {
       : "He wants the weight of the glass. He already knows you were in the room.";
   return `Kerr is under the same awning, a week deeper into the rain. ${knows}
 
+He offers the knee as the price of the conversation: what it cost him, what it should cost you.
+
 "You can tell me what the hour was worth," he says, "or you can walk past and let the canal be the argument."`;
 }
 
@@ -77,18 +93,33 @@ function lumenDoorText(state: GameState): string {
     : state.flags.act1_sold || state.flags.act1_both
       ? "She knows the hour was sold. She still wants a person, not a receipt, on the stair at Ward Nine."
       : "She wants the marker to mean a walk, not a souvenir.";
+  const warm =
+    state.factions.lumen >= 2
+      ? `"${state.handle}," she says, before the coat, before the habit. "I already decided you were a person."`
+      : "You can hear her out, or you can leave the step and keep the week unsaid.";
   return `Sister Lumen is on the chapel step with the coat over the habit. ${knows}
 
-You can hear her out, or you can leave the step and keep the week unsaid.`;
+She holds the clinic marker out, a detail you can refuse to carry.
+
+${warm}`;
 }
 
 function ivesDoorText(state: GameState): string {
-  const knows = state.flags.on_file
-    ? "Ives already has your old name. They want the rest of the hour to match it."
-    : state.flags.act1_both || state.flags.copied
-      ? "Ives knows there are two fires. They want the one you did not sell."
-      : "Ives wants the week closed in a folio before the street learns the verb.";
-  return `The Spire does not come down. It sends Ives, dry coat, open folio. ${knows}
+  const file =
+    state.flags.on_file
+      ? "Ives still has the badge. He lets you see the dead chip before he says a handle. The number on it is the one you burned."
+      : "";
+  const greeting =
+    state.factions.helion >= 2
+      ? "He opens with the file, not the weather. Your name is already the first line."
+      : state.flags.on_file
+        ? "The folio is the badge's second page."
+        : state.flags.act1_both || state.flags.copied
+          ? "Ives knows there are two fires. They want the one you did not sell."
+          : "Ives wants the week closed in a folio before the street learns the verb.";
+  return `The Spire does not come down. It sends Ives, dry coat, open folio. ${file ? `${file} ` : ""}${greeting}
+
+A clause on the second page wants your initial. You can refuse it.
 
 You can hear the price, or you can leave the page unfinished.`;
 }
@@ -104,20 +135,27 @@ function kerrText(state: GameState): string {
 
 "I did my job," he says. "You did not do yours. The knee still wants a conversation, and I am the only one who will have it without a memo."`;
   }
-  const knee = state.flags.kerr_down
-    ? "He is limping hard enough that the rain has an opinion. You put him on the tile, and he has had a week to decide what that cost."
-    : "The knee is a private weather system. He stands like the doorway owes him rent.";
+  const knee = state.flags.refused_knee
+    ? "You would not price the limp at the door. He brings the knee up anyway, meaner for the refusal."
+    : state.flags.kerr_down
+      ? "He is limping hard enough that the rain has an opinion. You put him on the tile, and he has had a week to decide what that cost."
+      : "The knee is a private weather system. He stands like the doorway owes him rent.";
+  const note = state.journal.some((entry) => entry.id === "kerr-knee")
+    ? "You kept the note about the knee. He sees that you already know which step fails."
+    : "";
   return `Kerr is under the same awning Quill uses when he wants to look like a rumor. Quill is not here. That is the point.
 
-${knee}
+${knee}${note ? `\n\n${note}` : ""}
 
 "Week's up," he says. "Helion paid me to know the weight of that glass. You are the part of the weight I can still invoice."`;
 }
 
 function lumenText(state: GameState): string {
-  const marker = state.items.includes("clinic-marker")
-    ? "She turns the clinic marker over in her palm, the one she pressed into yours, and waits until you recognize it."
-    : "She does not have a marker to show you. She has the optic, dark, and the week she spent not selling your name.";
+  const marker = state.flags.refused_marker
+    ? "You refused the marker on the step. Her hand stays closed, and the week is colder for it."
+    : state.items.includes("clinic-marker") || state.journal.some((entry) => entry.id === "clinic-debt")
+      ? "The clinic marker is a debt with her name on it. She turns it over until you recognize the weight."
+      : "She does not have a marker to show you. She has the optic, dark, and the week she spent not selling your name.";
   return `Glass Chapel in daylight is a waiting room that has given up on being holy. Sister Lumen is on the step, coat over the habit, rain in the seams.
 
 ${marker}
@@ -126,16 +164,22 @@ ${marker}
 }
 
 function helionText(state: GameState): string {
-  const known = state.flags.on_file
-    ? `Ives says your old badge number before your handle. "We kept the name. Burning the badge was a hobby."`
-    : state.flags.act1_ash
-      ? `"You sold us a damaged hour," Ives says. "We would like the name of whoever fried the rest."`
-      : state.flags.copied || state.flags.act1_both
-        ? `"There are two fires," Ives says, pleased with the phrase. "We bought one. We would like the other to stop being a rumor."`
-        : `"The hour reached us," Ives says. "Helion likes a complete file. You are the incomplete part."`;
+  const known = state.flags.refused_clause
+    ? "You would not initial the clause. The blank line has your refusal in it, and Ives reads that as a fact."
+    : state.flags.on_file
+      ? `Ives says your old badge number before your handle. "We kept the name. Burning the badge was a hobby."`
+      : state.flags.act1_ash
+        ? `"You sold us a damaged hour," Ives says. "We would like the name of whoever fried the rest."`
+        : state.flags.copied || state.flags.act1_both
+          ? `"There are two fires," Ives says, pleased with the phrase. "We bought one. We would like the other to stop being a rumor."`
+          : `"The hour reached us," Ives says. "Helion likes a complete file. You are the incomplete part."`;
+  const copy = state.journal.some((entry) => entry.id === "shard-copy")
+    ? "The second copy is a sentence Ives can already quote. They are only deciding whether you will say it too."
+    : "";
+  const file = state.factions.helion >= 2 ? "Standing with the tower has moved the greeting. The file is the hello." : "";
   return `The Spire does not come down to Ward Four. It sends Ives, who has a dry coat and a folio that does not like rain.
 
-${known}
+${known}${copy ? `\n\n${copy}` : ""}${file ? `\n\n${file}` : ""}
 
 Under the overpass the traffic is a long electric animal. Ives holds the folio like a door they can open or close.`;
 }
@@ -156,6 +200,8 @@ function middleText(state: GameState): string {
       ? "The tab is paid. Quill's absence is the receipt."
       : "";
   return `The dry canal under Ward Four is a rumor with a floor. Rain falls in, then finds a grate and pretends it never wanted to stay.
+
+Ren Calder is on the grate, hood up. "Ivo Pell was not the only locker," she says. "Junie Calder worked the shift beside him. Say her if you get to the wall."
 
 ${from}${tab ? `\n\n${tab}` : ""}
 
@@ -244,6 +290,13 @@ export const ACT2_SCENES: Record<string, Scene> = {
     text: kerrDoorText,
     choices: [
       { id: "hear-kerr", label: "Hear what the week cost.", next: "act2_kerr" },
+      {
+        id: "refuse-knee",
+        label: "Refuse the knee.",
+        detail: "You will not price the limp.",
+        effects: { flags: ["refused_knee"] },
+        next: "act2_kerr",
+      },
       { id: "leave-kerr", label: "Not the knee. Not tonight.", next: "districts" },
     ],
   },
@@ -254,6 +307,13 @@ export const ACT2_SCENES: Record<string, Scene> = {
     text: lumenDoorText,
     choices: [
       { id: "hear-lumen", label: "Hear her out.", next: "act2_lumen" },
+      {
+        id: "refuse-marker",
+        label: "Refuse the marker.",
+        detail: "You will not carry what she is holding out.",
+        effects: { flags: ["refused_marker"] },
+        next: "act2_lumen",
+      },
       { id: "leave-lumen", label: "Leave the step.", next: "districts" },
     ],
   },
@@ -264,6 +324,13 @@ export const ACT2_SCENES: Record<string, Scene> = {
     text: ivesDoorText,
     choices: [
       { id: "hear-ives", label: "Hear the price.", next: "act2_helion" },
+      {
+        id: "refuse-clause",
+        label: "Refuse to initial the clause.",
+        detail: "The blank line can stay blank.",
+        effects: { flags: ["refused_clause"] },
+        next: "act2_helion",
+      },
       { id: "leave-ives", label: "Leave the folio closed.", next: "districts" },
     ],
   },

@@ -8,12 +8,13 @@ import { Portrait } from "@/components/Portrait";
 import { Sheet } from "@/components/Sheet";
 import { DISTRICT_ART, placeArt } from "@/lib/art";
 import { ORIGINS, STRAIN_MAX, STAT_INFO } from "@/lib/character";
-import { commitChoice, getScene, presentChoices, previewCheck, runDelta, sceneText, type VisibleChoice } from "@/lib/engine";
+import { commitChoice, effectPreview, getScene, presentChoices, previewCheck, runDelta, sceneText, type VisibleChoice } from "@/lib/engine";
 import { locationCue, playCue, setBed } from "@/lib/sound";
 import { loadSound, loadTextStep, rememberEnding, writeSound, writeTextStep } from "@/lib/storage";
 import { endingCoda } from "@/lib/story";
 import { speakerRole } from "@/lib/story/cast";
-import { currentGoal } from "@/lib/story/goal";
+import { actName, currentGoal } from "@/lib/story/goal";
+import { nightRetell } from "@/lib/story/retell";
 import type { GameState } from "@/lib/types";
 
 export function PlayScreen({
@@ -39,9 +40,15 @@ export function PlayScreen({
   const [fault, setFault] = useState("");
   const [delta, setDelta] = useState<string[]>([]);
   const [flash, setFlash] = useState(false);
+  const [shown, setShown] = useState(1);
+  const [reduceMotion, setReduceMotion] = useState(false);
   const prior = useRef(state);
+  const prose = sceneText(scene, state);
+  const paragraphs = prose.split(/\n\n+/).filter((paragraph) => paragraph.length > 0);
+  const visibleCount = reduceMotion ? paragraphs.length : Math.min(shown, paragraphs.length);
 
   useEffect(() => {
+    setReduceMotion(window.matchMedia("(prefers-reduced-motion: reduce)").matches);
     setSound(loadSound());
     setTextStep(loadTextStep());
   }, []);
@@ -64,9 +71,10 @@ export function PlayScreen({
     setFlash(!reduce);
     const sceneTop = document.getElementById("scene-top");
     const header = document.querySelector(".topbar");
+    const headerHeight = header ? header.getBoundingClientRect().height : 0;
+    document.documentElement.style.setProperty("--header-h", `${headerHeight + 12}px`);
     if (sceneTop) {
-      const offset = header ? header.getBoundingClientRect().height + 12 : 0;
-      const top = sceneTop.getBoundingClientRect().top + window.scrollY - offset;
+      const top = sceneTop.getBoundingClientRect().top + window.scrollY - (headerHeight + 12);
       window.scrollTo({ top: Math.max(0, top), behavior: reduce ? "auto" : "smooth" });
     }
     if (scene.ending && scene.endingTitle) document.title = `${scene.endingTitle} — Saint Shard`;
@@ -76,6 +84,10 @@ export function PlayScreen({
       rememberEnding(scene.id, scene.endingTitle, scene.finale ? state.items : undefined);
     }
   }, [state.sceneId, scene.ending, scene.endingTitle, scene.finale, scene.id, scene.location, sound, state.items]);
+
+  useEffect(() => {
+    setShown(1);
+  }, [state.sceneId, prose]);
 
   useEffect(() => {
     function onKey(event: KeyboardEvent) {
@@ -155,7 +167,7 @@ export function PlayScreen({
           <button className="ghost" type="button" aria-pressed={sound} onClick={toggleSound}>
             Sound {sound ? "on" : "off"}
           </button>
-          <button className="ghost sheet-toggle" type="button" data-testid="sheet-toggle" onClick={() => setSheetOpen(true)}>
+          <button className="ghost sheet-toggle" type="button" data-testid="sheet-toggle" aria-expanded={sheetOpen} aria-controls="runner-sheet" onClick={() => setSheetOpen(true)}>
             Sheet
           </button>
           <button className="ghost" type="button" onClick={() => setConfirmAbandon(true)}>
@@ -172,10 +184,16 @@ export function PlayScreen({
             style={{ backgroundImage: `linear-gradient(180deg, rgba(9,8,13,0.72), rgba(9,8,13,0.94)), url(${placeArt(scene.location)})` }}
           >
             <div className="scene-row">
-              <Portrait speaker={scene.speaker} origin={state.origin} />
+              <Portrait speaker={scene.speaker} origin={state.origin} handle={state.handle} />
               <div>
-                <p className="kicker">{scene.location}</p>
+                <p className="kicker">
+                  {scene.location}
+                  <span className="act-chip"> · {actName(state)}</span>
+                </p>
                 <p className="goal" data-testid="goal">{currentGoal(state)}</p>
+                <p className="sr-only" aria-live="polite">
+                  {scene.location}. {actName(state)}. {currentGoal(state)}
+                </p>
                 {scene.ending && state.chapters.length > 0 && (
                   <ol className="chapter-stack" data-testid="chapter-stack">
                     {state.chapters.map((title) => (
@@ -208,15 +226,29 @@ export function PlayScreen({
                       Strain {state.strain}/{STRAIN_MAX}
                     </li>
                     <li>{endingCoda(scene.id)}</li>
+                    {scene.finale &&
+                      nightRetell(state).map((line) => (
+                        <li key={line} data-testid="night-retell">
+                          {line}
+                        </li>
+                      ))}
                   </ul>
                 )}
-                <div className="prose" data-testid="scene-text" aria-live="polite">
-                  {sceneText(scene, state)
-                    .split(/\n\n+/)
-                    .map((paragraph, index) => (
-                      <p key={`${scene.id}-${index}`}>{paragraph}</p>
-                    ))}
+                <div className="prose" data-testid="scene-text">
+                  {paragraphs.slice(0, visibleCount).map((paragraph, index) => (
+                    <p key={`${scene.id}-${index}`}>{paragraph}</p>
+                  ))}
                 </div>
+                {!reduceMotion && visibleCount < paragraphs.length && (
+                  <div className="prose-controls">
+                    <button className="ghost" type="button" data-testid="next-paragraph" onClick={() => setShown((count) => count + 1)}>
+                      Next line
+                    </button>
+                    <button className="ghost" type="button" data-testid="show-rest" onClick={() => setShown(paragraphs.length)}>
+                      Show the rest
+                    </button>
+                  </div>
+                )}
               </div>
             </div>
             {fault && <p className="form-error">{fault}</p>}
@@ -241,7 +273,11 @@ export function PlayScreen({
                       <span className="label">{choice.label}</span>
                       <span className="odds">
                         {choice.disabledReason ??
-                          [odds ? `${STAT_INFO[odds.stat].name} · DC ${odds.dc} · ${chance}` : null, choice.detail]
+                          [
+                            odds ? `${STAT_INFO[odds.stat].name} · DC ${odds.dc} · ${chance}` : null,
+                            choice.detail,
+                            effectPreview(state, choice).join(" · ") || null,
+                          ]
                             .filter(Boolean)
                             .join(" · ")}
                       </span>

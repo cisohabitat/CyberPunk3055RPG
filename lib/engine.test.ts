@@ -5,6 +5,7 @@ import { PAY } from "./economy.ts";
 import {
   commitChoice,
   createCharacter,
+  effectPreview,
   getScene,
   presentChoices,
   previewCheck,
@@ -15,7 +16,7 @@ import { ITEMS } from "./items.ts";
 import { parseSave } from "./storage.ts";
 import { journalTitle } from "./journal.ts";
 import { metCast, speakerRole } from "./story/cast.ts";
-import { GOAL_DECIDE, GOAL_LIFT, GOAL_WALL, GOAL_WEEK, currentGoal } from "./story/goal.ts";
+import { GOAL_DECIDE, GOAL_LIFT, GOAL_WALL, GOAL_WEEK, actName, currentGoal } from "./story/goal.ts";
 import { CODEX, SCENES, endingCoda, vaultNext } from "./story/index.ts";
 import type { Choice, GameState, StatId } from "./types.ts";
 
@@ -246,6 +247,7 @@ describe("scripted jobs", () => {
     state = step(state, "copy", 7);
     assert.equal(state.sceneId, "memo");
     state = step(state, "heard");
+    state = step(state, "why-signed");
     state = step(state, "talk-leave", 5);
     state = step(state, "both");
     assert.equal(state.sceneId, "ending_both");
@@ -263,6 +265,7 @@ describe("scripted jobs", () => {
     state = step(state, "take");
     assert.equal(state.sceneId, "memo");
     state = step(state, "heard");
+    state = step(state, "why-signed");
     state = step(state, "talk-leave", 6);
     state = step(state, "destroy");
     assert.equal(state.sceneId, "ending_burned");
@@ -303,6 +306,7 @@ describe("scripted jobs", () => {
     assert.equal(state.flags.ash, true);
     assert.equal(state.sceneId, "memo");
     state = step(state, "heard");
+    state = step(state, "why-signed");
     state = step(state, "talk-leave", 8);
     state = step(state, "deliver-ash");
     assert.equal(state.sceneId, "ending_ash");
@@ -516,6 +520,9 @@ describe("the week after", () => {
     assert.equal(state.sceneId, "memo");
     assert.match(sceneText(getScene("memo"), state), /Three hundred/);
     state = step(state, "heard");
+    assert.equal(state.sceneId, "mara_why");
+    assert.match(sceneText(getScene("mara_why"), state), /I signed because/);
+    state = step(state, "why-signed");
     assert.equal(state.journal.some((entry) => entry.id === "ward-nine"), true);
     assert.equal(journalTitle(state.journal.find((entry) => entry.id === "ward-nine")!), "Ward Nine");
     assert.equal(currentGoal(state), GOAL_DECIDE);
@@ -523,6 +530,40 @@ describe("the week after", () => {
     assert.equal(speakerRole("Quill"), "The broker");
     assert.equal(speakerRole("Mara"), "The patient");
     assert.equal(speakerRole("Kerr"), "Her shadow");
+  });
+
+  it("lets a believed lie and a failed copy change a later sentence", () => {
+    const base = make("gutterwire", face);
+    const believed = sceneText(getScene("after_kerr"), { ...base, sceneId: "after_kerr", flags: { she_believes: true }, items: ["shard"] });
+    assert.match(believed, /believed the reason/);
+    const failed = sceneText(getScene("after_kerr"), { ...base, sceneId: "after_kerr", flags: { copy_failed: true }, items: ["shard"] });
+    assert.match(failed, /copy collapsed/);
+  });
+
+  it("colors the street with origin and the wall with standing", () => {
+    const base = make("gutterwire", face);
+    const street = sceneText(getScene("street_after"), { ...base, sceneId: "street_after" });
+    assert.match(street, /grew up counting/);
+    assert.equal(actName({ ...base, sceneId: "street_after" }), "The Week");
+    assert.equal(actName(base), "The Hour");
+    const wall = sceneText(getScene("ward_wall"), {
+      ...base,
+      sceneId: "ward_wall",
+      factions: { ...base.factions, wards: 2 },
+    });
+    assert.match(wall, /Ivo Pell/);
+    assert.match(wall, /Nia Pell/);
+    assert.match(wall, /Ada/);
+  });
+
+  it("previews a faction shift and keeps a choice log", () => {
+    const state = { ...make("gutterwire", face), sceneId: "act2_kerr", creds: 80 };
+    const pay = getScene("act2_kerr").choices.find((choice) => choice.id === "pay-kerr");
+    assert.ok(pay);
+    const preview = effectPreview(state, pay);
+    assert.ok(preview.some((line) => /wards/i.test(line)));
+    const next = step(make("gutterwire", face), "ask-pay");
+    assert.ok(next.log.includes("Ask what the job pays."));
   });
 
   it("shows the week in the street before the board", () => {
@@ -539,6 +580,7 @@ describe("the week after", () => {
     for (const entry of CODEX) {
       assert.equal(SCENES[entry.id]?.endingTitle, entry.title);
       assert.ok(endingCoda(entry.id).length > 10, entry.id);
+      assert.ok(endingCoda(entry.id).split(". ").length >= 2, entry.id);
     }
   });
 });
@@ -608,6 +650,7 @@ describe("saves", () => {
     assert.equal(migrated?.complication, null);
     assert.equal(migrated?.factions.wards, 1);
     assert.deepEqual(migrated?.chapters, []);
+    assert.deepEqual(migrated?.log, []);
     const state = make("gutterwire", { chrome: 0, nerve: 0, face: 0, ghost: 2 });
     assert.deepEqual(parseSave(JSON.stringify(state))?.handle, "Rex");
   });

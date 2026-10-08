@@ -84,6 +84,7 @@ export function createCharacter(input: {
     journal: [],
     chapters: [],
     rolls: [],
+    log: [],
     sceneId: "stall",
   };
 }
@@ -196,6 +197,21 @@ function resolveNext(choice: Choice, state: GameState, success: boolean | null):
   return id;
 }
 
+export function effectPreview(state: GameState, choice: Choice): string[] {
+  if (!choice.effects) return [];
+  const effect: Effect = typeof choice.effects === "function" ? choice.effects(state) : choice.effects;
+  const lines: string[] = [];
+  if (effect.strain) lines.push(`Strain ${effect.strain > 0 ? "+" : ""}${effect.strain}`);
+  if (effect.creds) lines.push(`${effect.creds > 0 ? "+" : ""}${effect.creds} cr`);
+  for (const id of effect.itemsAdd ?? []) lines.push(`Gain ${ITEMS[id]?.name ?? id}`);
+  for (const id of effect.itemsRemove ?? []) lines.push(`Lose ${ITEMS[id]?.name ?? id}`);
+  for (const faction of FACTIONS) {
+    const delta = effect.factions?.[faction];
+    if (delta) lines.push(`${FACTION_INFO[faction].name} ${delta > 0 ? "+" : ""}${delta}`);
+  }
+  return lines;
+}
+
 export function runDelta(before: GameState, after: GameState): string[] {
   const lines: string[] = [];
   if (after.strain !== before.strain) {
@@ -271,5 +287,6 @@ export function commitChoice(
     scene.endingTitle && sceneId !== scene.id && !next.chapters.includes(scene.endingTitle)
       ? [...next.chapters, scene.endingTitle]
       : next.chapters;
-  return { state: { ...next, sceneId, chapters }, check };
+  const log = [...(next.log ?? []), choice.label].slice(-24);
+  return { state: { ...next, sceneId, chapters, log }, check };
 }

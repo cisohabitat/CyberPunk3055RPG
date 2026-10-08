@@ -1,3 +1,4 @@
+import { speakerRole } from "@/lib/story/cast";
 import type { OriginId } from "@/lib/types";
 
 const FACES: Record<string, string> = {
@@ -16,11 +17,13 @@ const ORIGIN_ART: Record<OriginId, { src: string; label: string }> = {
   dustline: { src: "/art/canal.jpg", label: "Dustline" },
 };
 
-export function Portrait({ speaker, origin }: { speaker?: string; origin: OriginId }) {
+export function Portrait({ speaker, origin, handle }: { speaker?: string; origin: OriginId; handle?: string }) {
   const face = speaker ? FACES[speaker] : undefined;
   const plate = ORIGIN_ART[origin];
   const src = face ?? plate.src;
-  const label = speaker === "Sister Lumen" ? "Lumen" : speaker ?? plate.label;
+  const role = speaker ? speakerRole(speaker) : undefined;
+  const name = speaker === "Sister Lumen" ? "Lumen" : speaker;
+  const label = name ? `${name}${role ? ` · ${role}` : ""}` : `${handle ?? plate.label} · ${plate.label}`;
   return (
     <figure className="portrait-frame">
       <img className="portrait" src={src} alt="" />

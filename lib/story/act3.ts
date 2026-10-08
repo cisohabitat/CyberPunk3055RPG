@@ -10,13 +10,33 @@ function wallCardText(state: GameState): string {
   return `The Week\n\n${did}\n\nThe Wall is in Ward Nine. ${GOAL_WALL}`;
 }
 
+function hasJournal(state: GameState, id: string): boolean {
+  return state.journal.some((entry) => entry.id === id);
+}
+
 function wallText(state: GameState): string {
   const tone = state.flags.act2_deal
     ? "She does not mention the payment. The wall is doing that work."
     : "She waits with the pencil capped.";
-  return `Sera stands you in front of the wall before she asks anything. The rain has eaten the lower rows. One name is still sharp, readable without a check or an optic: Ivo Pell, night shift, level two.
+  const named = `${state.givenName}. She says it once, the way the wall has not been allowed to keep a living name, then she turns you toward the concrete.`;
+  const second = hasJournal(state, "ward-nine")
+    ? "The memo puts a second name in your mouth without a check: Junie Calder, night shift, the locker beside Ivo."
+    : "The second row is rain. You do not have the memo's name yet.";
+  const neighbor =
+    state.factions.wards >= 2
+      ? "The wards already know you. A neighbor's name is readable with no check and no optic: Nia Pell, level three, the cousin who signed the housing slip."
+      : "";
+  const window = hasJournal(state, "calibration")
+    ? "The four-minute window is still in your head. The scratches look like a clock."
+    : "";
+  const eye = state.flags.optic
+    ? "Your optic is already warm. Sera sees the red and does not ask you to darken it."
+    : "";
+  return `Sera stands you in front of the wall before she asks anything. ${named} The rain has eaten the lower rows. One name is still sharp, readable without a check or an optic: Ivo Pell, night shift, level two.
 
-"That one I can still read without a pencil," she says. "The rest need a person who was in the room, or an eye that cheats."
+${second}${neighbor ? `\n\n${neighbor}` : ""}${window ? `\n\n${window}` : ""}${eye ? `\n\n${eye}` : ""}
+
+"That one I can still read without a pencil," she says. "The third name needs the eye, or the wards, or both. The rest of the choice can wait until you have tried."
 
 ${tone}`;
 }
@@ -44,8 +64,11 @@ ${deal}${ives ? `\n\n${ives}` : ""}
 }
 
 function namesText(state: GameState): string {
+  const said = state.flags.spoke_names
+    ? "You said them. Sera's pencil does not ask whether you meant to."
+    : "";
   if (state.flags.optic_read) {
-    return `The optic dragged the names off the concrete and would not give them back. ${state.handle} says them while the eye is still hot. Sera writes. The strain is the price of a clue you did not earn in the chapel.`;
+    return `The optic dragged the names off the concrete and would not give them back. ${state.handle} says them while the eye is still hot. Sera writes. The strain is the price of a clue you did not earn in the chapel.${said ? ` ${said}` : ""}`;
   }
   if (state.flags.gave_copy) {
     return `Helion already owns the file. You are repeating it out loud so Sera can hear a person say it, not a clerk. ${state.handle} does not get the clean version of this hour. The wall gets the names anyway.
@@ -58,7 +81,7 @@ The pencil moves. The tower's copy does not get smaller. It also does not get to
       ? "The shard was half a scream when you sold it. The names were whole. You say the ones you kept, and Sera writes slower than the rain erases."
       : "You read what the chair tried to file away. Three hundred is a number. The wall wants them one at a time.";
   const first = state.chapters[0] ?? "The job";
-  return `${sale}
+  return `${sale}${said ? `\n\n${said}` : ""}
 
 Above this hour, the city already titled the job ${first}. This one is smaller and harder: a pencil, a wall, and your mouth doing a thing the tower cannot edit after the fact.`;
 }
@@ -75,13 +98,16 @@ Sera does not chase you. Ward Nine has practice at people who get to the stair a
 }
 
 function witnessText(state: GameState): string {
+  const admitted = state.flags.confirmed_leak
+    ? "You confirmed the leak out loud. That sentence is now on the wall beside the names."
+    : "";
   return `You tell Sera the leak already started. ${
     state.flags.betrayed_lumen
       ? "You sold Lumen's week and then came down here to admit the fire. She is not on the stair. The leak walked without your loyalty."
       : state.flags.act1_burned
         ? "Lumen watched the glass go dark, and what she remembers has been walking the wards without you."
         : "A second copy is loose. The tower bought one fire and did not get to own the other."
-  }
+  }${admitted ? ` ${admitted}` : ""}
 
 She writes ${state.handle} under the last name, small, like a footnote that refuses to be one. It is not absolution. It is a witness who arrived late and said so out loud.`;
 }
@@ -98,7 +124,30 @@ export const ACT3_SCENES: Record<string, Scene> = {
     location: "Ward Nine",
     speaker: "Sera",
     text: wallText,
-    choices: [{ id: "face-sera", label: "Tell her why you came.", next: "act3_arrival" }],
+    choices: [
+      { id: "face-sera", label: "Tell her why you came.", next: "act3_arrival" },
+      {
+        id: "read-third",
+        label: "Read the third name.",
+        detail: "The optic helps. So do the wards.",
+        check: {
+          stat: "chrome",
+          dc: 7,
+          label: "Read the third name",
+          flagBonuses: [{ flag: "optic", amount: 2, label: "Live optic" }],
+          factionBonuses: [{ faction: "wards", min: 1, amount: 1, label: "The wards" }],
+        },
+        successEffects: {
+          flags: ["read_third"],
+          journal: ["Pell the younger, maintenance, no shift listed."],
+        },
+        failEffects: { strain: 1 },
+        resultSuccess: "The third name comes up: Pell the younger, maintenance, no shift listed.",
+        resultFail: "The row stays rain. Ivo Pell is still the one you can say for free.",
+        nextSuccess: "act3_arrival",
+        nextFail: "ward_wall",
+      },
+    ],
   },
   act3_arrival: {
     id: "act3_arrival",

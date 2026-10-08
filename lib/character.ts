@@ -78,6 +78,13 @@ export const FACTION_INFO: Record<FactionId, { name: string; blurb: string }> = 
   wards: { name: "The wards", blurb: "People who still live under the leaks." },
 };
 
+export const FACTION_CHECK: Record<FactionId, string> = {
+  quill: "No die reads this number. The stall remembers it.",
+  lumen: "At 2 or more, she uses your handle on the chapel step. No die reads this number.",
+  helion: "At 1 or more, closing Ives's folio is easier.",
+  wards: "At 1 or more, telling Kerr the names is easier.",
+};
+
 export type Complication = {
   id: ComplicationId;
   name: string;

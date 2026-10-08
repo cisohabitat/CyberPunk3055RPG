@@ -50,4 +50,18 @@ describe("beds", () => {
     for (const sample of samples) peak = Math.max(peak, Math.abs(sample));
     assert.ok(peak > 0.05);
   });
+
+  it("keeps the week and ward stings as short tones", () => {
+    for (const name of ["sting-week", "sting-ward"]) {
+      const { samples } = readWav(name);
+      assert.ok(samples.length < 44100 * 2, name);
+      assert.ok(Math.abs(samples[0]) < 0.02, name);
+      assert.ok(Math.abs(samples[samples.length - 1]) < 0.02, name);
+      let peak = 0;
+      for (const sample of samples) peak = Math.max(peak, Math.abs(sample));
+      assert.ok(peak > 0.05, `${name} peak ${peak}`);
+      const loud = samples.filter((sample) => Math.abs(sample) > 0.2).length / samples.length;
+      assert.ok(loud < 0.35, `${name} loud ${loud}`);
+    }
+  });
 });

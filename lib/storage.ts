@@ -51,6 +51,7 @@ function migrate(data: Record<string, unknown>): GameState | null {
     journal,
     chapters: Array.isArray(data.chapters) ? data.chapters.filter((title): title is string => typeof title === "string") : [],
     rolls: data.rolls as GameState["rolls"],
+    log: Array.isArray(data.log) ? data.log.filter((line): line is string => typeof line === "string").slice(0, 24) : [],
     sceneId: data.sceneId,
   };
 }

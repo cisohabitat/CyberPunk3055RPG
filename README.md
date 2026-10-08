@@ -4,14 +4,14 @@ A solo story RPG in **Kite City, 3055**. You play it in the browser. The run sta
 
 Quill hires you to lift Mara Voss's unedited hour from Glass Chapel before dawn. Helion is about to edit a crime out of her: she signed the Ward Nine coolant dump, and three hundred people died. Kerr is paid to stop you. Sister Lumen may help you leak the hour or break it. A week later the city asks for a buyer or a witness. At Ward Nine, Sera keeps the dead on a wall, and that is the last choice.
 
-The current goal stays under the location while you play, and on the title screen when you continue:
+The current goal stays under the location while you play, and on the title screen when you continue. The place name sits beside the act: The Hour, The Week, or The Wall. Scene prose arrives one paragraph at a time, and you can show the rest. A choice that moves creds, strain, an item, or a faction says so before you take it. The sheet keeps a short list of what you already did.
 
 - Lift Mara Voss's hour from Glass Chapel before dawn. Kerr is paid to stop you.
 - You know what the hour is. Decide who gets it.
 - The week wants a buyer or a witness.
 - The wall has the names. Say them, or leave them to the rain.
 
-The first time the shard is in your hand, Mara says the memo herself. People you have met are listed with their role. The phone, the tablet, and the desktop each keep that goal on the scene.
+The first time the shard is in your hand, Mara says the memo, then why she signed. People you have met are listed with their role. A seen ending on the title screen shows its coda. Unseen endings stay blank. The phone, the tablet, and the desktop each keep that goal on the scene.
 
 This is original fiction. It is not affiliated with any studio or with any existing cyberpunk game.
 

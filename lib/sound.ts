@@ -96,6 +96,8 @@ export function playCue(name: string) {
 export function locationCue(location: string, ending: boolean): string {
   if (ending) return "sting-ending";
   const value = location.toLowerCase();
+  if (value.includes("ward nine")) return "sting-ward";
+  if (value.includes("district") || value.includes("board") || value === "the week") return "sting-week";
   if (value.includes("chapel") || value.includes("chair") || value.includes("stair")) return "sting-chapel";
   if (value.includes("ward") || value.includes("alley") || value.includes("canal") || value.includes("hatch")) return "sting-alley";
   if (value.includes("spire") || value.includes("helion")) return "sting-ending";

@@ -94,7 +94,7 @@ export function CheckDialog({
           </p>
           <p>{result.flavor}</p>
           <div className="reaction">
-            <Portrait speaker={speaker} origin={state.origin} />
+            <Portrait speaker={speaker} origin={state.origin} handle={state.handle} />
             <p>{reactionLine(speaker, result.success)}</p>
           </div>
           {result.crit === "success" && <p>A ten. Strain eases.</p>}

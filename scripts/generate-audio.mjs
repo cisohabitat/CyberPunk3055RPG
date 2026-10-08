@@ -170,6 +170,8 @@ const files = {
   "sting-stall": sting([220, 277, 330]),
   "sting-chapel": sting([196, 247, 392]),
   "sting-alley": sting([146, 174, 220]),
+  "sting-week": sting([174, 220, 262]),
+  "sting-ward": sting([130, 196, 247]),
   "sting-ending": sting([130, 164, 196, 262]),
   "dice-tick": tone(0.05, 740, 0.16),
   "sting-success": sting([523, 659, 784]),
