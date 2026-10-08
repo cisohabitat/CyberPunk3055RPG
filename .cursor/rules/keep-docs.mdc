@@ -1,0 +1,6 @@
+---
+description: Keep README.md and AGENTS.md current with Saint Shard
+alwaysApply: true
+---
+
+When a change alters how Saint Shard plays, looks, sounds, saves, or deploys, update README.md and AGENTS.md in the same change. Both files must still quote the four goal sentences from lib/story/goal.ts and the save key saint-shard-3055-v1. lib/docs.test.ts checks that. A change that does not move those facts can leave both files as they are. Do not update one and leave the other describing an older game.
