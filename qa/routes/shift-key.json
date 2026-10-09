@@ -1,0 +1,241 @@
+{
+  "name": "shift-key",
+  "character": {
+    "handle": "Replay",
+    "givenName": "Ada",
+    "origin": "spire",
+    "complication": "on-file",
+    "bonus": {
+      "chrome": 2,
+      "nerve": 0,
+      "face": 0,
+      "ghost": 0
+    }
+  },
+  "steps": [
+    {
+      "choiceId": "ask-pay"
+    },
+    {
+      "choiceId": "haggle",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "pocket"
+    },
+    {
+      "choiceId": "accept"
+    },
+    {
+      "choiceId": "side"
+    },
+    {
+      "choiceId": "spoof-door",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "go"
+    },
+    {
+      "choiceId": "honest"
+    },
+    {
+      "choiceId": "pact-copy"
+    },
+    {
+      "choiceId": "copy",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "heard"
+    },
+    {
+      "choiceId": "inspect-hour"
+    },
+    {
+      "choiceId": "inspect-signature"
+    },
+    {
+      "choiceId": "inspect-order"
+    },
+    {
+      "choiceId": "inspect-roster"
+    },
+    {
+      "choiceId": "reconstruct"
+    },
+    {
+      "choiceId": "separate-decisions"
+    },
+    {
+      "choiceId": "label-unverified"
+    },
+    {
+      "choiceId": "seal-full"
+    },
+    {
+      "choiceId": "talk-leave",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "both"
+    },
+    {
+      "choiceId": "week-after"
+    },
+    {
+      "choiceId": "into-week"
+    },
+    {
+      "choiceId": "practice"
+    },
+    {
+      "choiceId": "learn-chrome"
+    },
+    {
+      "choiceId": "read-board"
+    },
+    {
+      "choiceId": "origin-contract"
+    },
+    {
+      "choiceId": "clear-key",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "return-board"
+    },
+    {
+      "choiceId": "to-helion"
+    },
+    {
+      "choiceId": "hear-ives"
+    },
+    {
+      "choiceId": "refuse-ives"
+    },
+    {
+      "choiceId": "trace-order"
+    },
+    {
+      "choiceId": "agree-archive-terms"
+    },
+    {
+      "choiceId": "index-archive",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "catalog-is-proof"
+    },
+    {
+      "choiceId": "revise-source-test"
+    },
+    {
+      "choiceId": "trace-receipt",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "ask-named-source"
+    },
+    {
+      "choiceId": "keep-chain"
+    },
+    {
+      "choiceId": "hear-response"
+    },
+    {
+      "choiceId": "answer-with-source"
+    },
+    {
+      "choiceId": "stand"
+    },
+    {
+      "choiceId": "back-to-board"
+    },
+    {
+      "choiceId": "to-the-wall"
+    },
+    {
+      "choiceId": "to-ward-nine"
+    },
+    {
+      "choiceId": "visit-edda"
+    },
+    {
+      "choiceId": "review-edda-shift"
+    },
+    {
+      "choiceId": "authorize-shift-request",
+      "reload": true
+    },
+    {
+      "choiceId": "submit-key-closure",
+      "reload": true
+    },
+    {
+      "choiceId": "record-shift-response",
+      "reload": true
+    },
+    {
+      "choiceId": "visit-records"
+    },
+    {
+      "choiceId": "keep-limits"
+    },
+    {
+      "choiceId": "go-wall"
+    },
+    {
+      "choiceId": "face-sera"
+    },
+    {
+      "choiceId": "prepare-public-account"
+    },
+    {
+      "choiceId": "scope-corroborated"
+    },
+    {
+      "choiceId": "keep-recording-private"
+    },
+    {
+      "choiceId": "answer-authenticated-key"
+    },
+    {
+      "choiceId": "file-public-account",
+      "reload": true
+    },
+    {
+      "choiceId": "leave-wall"
+    }
+  ],
+  "expected": {
+    "sceneId": "ending_quiet",
+    "flags": {
+      "testimony_published": true,
+      "archive_key_authenticated": true,
+      "nia_public_consent": false,
+      "order_verified": true,
+      "edda_shift_done": true,
+      "edda_shift_consent": true,
+      "edda_shift_paid": true,
+      "edda_representation": false,
+      "edda_exposed": true,
+      "edda_public_consent": true,
+      "edda_supported": false
+    },
+    "journal": [
+      "wall-account",
+      "edda-shift-request",
+      "edda-shift-response"
+    ],
+    "creds": 390,
+    "strain": 1
+  }
+}

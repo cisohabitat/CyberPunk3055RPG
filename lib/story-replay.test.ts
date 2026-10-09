@@ -5,7 +5,7 @@ import { replayCampaign, type ReplaySpec } from "./story-replay";
 
 const load = (name: string): ReplaySpec => JSON.parse(readFileSync(`qa/routes/${name}.json`, "utf8"));
 describe("deterministic campaign replay", () => {
-  for (const name of ["authenticated", "witness-permission", "bounded-correction", "kit-archive", "kit-harness", "kit-guide", "kit-shroud", "pump-local", "pump-rebate", "pump-transfer", "pump-brace"]) it(`replays ${name} through saved checkpoints to an original finale`, () => {
+  for (const name of ["authenticated", "witness-permission", "bounded-correction", "kit-archive", "kit-harness", "kit-guide", "kit-shroud", "pump-local", "pump-rebate", "pump-transfer", "pump-brace", "shift-key", "shift-negotiation", "shift-pending", "shift-representative"]) it(`replays ${name} through saved checkpoints to an original finale`, () => {
     const spec = load(name); const result = replayCampaign(spec);
     assert.deepEqual(result, replayCampaign(spec));
     assert.ok(result.transcript.some((step) => step.restored && step.roll));

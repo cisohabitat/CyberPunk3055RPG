@@ -59,6 +59,7 @@ export const OPERATION_SCENES: Record<string, Scene> = {
       { id: "visit-pump", label: "See what became of the coolant emergency.", requireFlag: "pump_done", hideIfFlag: "visited_pump", next: "act3_pump_visit" },
       { id: "visit-nia", label: "Ask whether Nia wants a visitor.", requireAnyFlag: ["witness_safe", "witness_lost"], hideIfFlag: "visited_nia", next: "act3_witness_visit" },
       { id: "visit-records", label: "Sit at the records table.", hideIfFlag: "visited_records", next: "act3_records_visit" },
+      { id: "return-edda-payroll", label: "Return to Edda about a private payroll request.", requireAllFlags: ["archive_custody", "visited_edda"], requireAnyFlag: ["edda_exposed", "archive_method_face", "archive_method_nerve"], hideIfFlag: "edda_shift_done", next: "act3_edda_terms" },
       { id: "visit-edda", label: "Answer Edda’s message about the archive.", requireFlag: "archive_custody", hideIfFlag: "visited_edda", next: "act3_edda_visit" },
       { id: "go-wall", label: "Go directly to the names.", next: "ward_wall" },
     ],

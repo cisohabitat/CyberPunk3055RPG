@@ -24,6 +24,8 @@ export function journalEntry(item: string | JournalEntry): JournalEntry {
 }
 
 export const JOURNAL_TITLES: Record<string, string> = {
+  "edda-shift-request": "Edda’s private payroll request",
+  "edda-shift-response": "Edda’s payroll reply",
   "pump-repair": "Clinic coolant repair",
   "pump-transfer": "Cold-storage transfer",
   "ward-nine": "Ward Nine",
@@ -60,6 +62,7 @@ export function journalKind(entry: JournalEntry): "fact" | "claim" | "promise" {
 }
 
 export function promiseStatus(id: string, flags: Record<string, boolean>, journal: JournalEntry[] = []): string {
+  if (id === "edda-shift-request") return flags.edda_shift_paid ? "Temporary paid work" : flags.edda_shift_done ? "Review pending" : "Application open";
   if (id === "witness-promise") return flags.witness_lost ? "Location exposed" : flags.witness_safe && journal.some((entry) => entry.id === "nia-account") ? "Kept" : flags.witness_safe ? "Account pending" : "Unresolved";
   if (id === "archive-promise") return flags.order_verified ? "Corroborated" : flags.archive_unresolved ? "Gap recorded" : "Unresolved";
   return "Recorded";

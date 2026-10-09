@@ -382,3 +382,44 @@ test("local repair record and later Kerr visit preserve the original ending choi
   await expect(page.getByTestId("choice-leave-wall")).toBeVisible();
   await page.getByTestId("choice-leave-wall").click(); await expect(page.locator(".aftermath")).toContainText("authenticates no historical order");
 });
+
+test("private payroll consent leaves public source permission unchanged", async ({ page }) => {
+  await openRun(page, fixture("act3_edda_visit", { flags: { archive_custody: true, archive_method_face: true, edda_name_withheld: true, origin_helped: true } }));
+  await page.getByTestId("choice-review-edda-shift").click();
+  await expect(page.getByTestId("goal")).toBeInViewport();
+  expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
+  await page.getByTestId("choice-authorize-shift-request").click();
+  await expect(page.getByTestId("objectives")).toContainText("Campaign commitments");
+  await page.getByTestId("choice-submit-key-closure").click();
+  await page.reload(); await page.getByTestId("continue-run").click();
+  await page.getByTestId("choice-record-shift-response").click();
+  await expect(page.getByTestId("choice-return-edda-payroll")).toHaveCount(0);
+  const state = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(state.flags.edda_shift_paid).toBe(true); expect(state.flags.edda_public_consent).toBeUndefined(); expect(state.flags.edda_name_withheld).toBe(true);
+  for (const id of ["go-wall", "face-sera", "leave-wall"]) await page.getByTestId(`choice-${id}`).click();
+  await expect(page.locator(".aftermath")).toContainText("neither clears her name");
+});
+
+test("worker representation follows a paid bridge without restoring a shift", async ({ page }) => {
+  await openRun(page, fixture("act3_edda_visit", { creds: 100, flags: { archive_custody: true, edda_exposed: true } }));
+  for (const id of ["bridge-edda-shift", "return-edda-payroll", "authorize-shift-request"]) await page.getByTestId(`choice-${id}`).click();
+  await page.getByTestId("choice-fund-worker-representative").click();
+  await page.getByRole("button", { name: "Settings", exact: true }).click(); await page.getByLabel("Reading pace").selectOption("all"); await page.getByRole("button", { name: "Done", exact: true }).click();
+  await expect(page.getByTestId("scene-text")).toContainText("No shift has been restored");
+  expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
+  await page.reload(); await page.getByTestId("continue-run").click();
+  await page.getByTestId("choice-record-shift-response").click();
+  const state = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(state.creds).toBe(0); expect(state.flags.edda_supported).toBe(true); expect(state.flags.edda_shift_paid).toBeUndefined();
+  expect(state.journal.find((entry: { id: string }) => entry.id === "edda-shift-response").text).toContain("sixty-creds fee is spent");
+});
+
+test("a declined private application closes the optional route", async ({ page }) => {
+  await openRun(page, fixture("act3_edda_terms", { flags: { archive_custody: true, edda_exposed: true } }));
+  await page.getByTestId("choice-decline-shift-request").click();
+  await expect(page.getByTestId("choice-visit-edda")).toHaveCount(0);
+  await expect(page.getByTestId("choice-return-edda-payroll")).toHaveCount(0);
+  await expect(page.getByTestId("choice-go-wall")).toBeVisible();
+  const state = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(state.flags.edda_shift_done).toBe(true); expect(state.flags.edda_shift_consent).toBeUndefined(); expect(state.flags.edda_public_consent).toBeUndefined();
+});

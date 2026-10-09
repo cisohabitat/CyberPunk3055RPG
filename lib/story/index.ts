@@ -1,3 +1,4 @@
+import { EMPLOYMENT_SCENES } from "./employment";
 import { COMMUNITY_SCENES } from "./community";
 import { SUPPORT_SCENES } from "./support";
 import { TESTIMONY_SCENES } from "./testimony";
@@ -22,6 +23,7 @@ export const SCENES: Record<string, Scene> = {
   ...MISSION_SCENES,
   ...SUPPORT_SCENES,
   ...COMMUNITY_SCENES,
+  ...EMPLOYMENT_SCENES,
   ...ARCHIVE_SCENES,
   ...OPERATION_SCENES,
 };

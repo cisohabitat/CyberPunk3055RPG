@@ -182,3 +182,24 @@ describe("commitments and evidence continuity", () => {
     assert.match(nextStep(state), /outcome is already saved/);
   });
 });
+
+describe("employment commitment continuity", () => {
+  it("keeps the private request open until its actual response is recorded", () => {
+    const state = { ...base(), sceneId: "act3_edda_methods", flags: { edda_shift_consent: true, edda_exposed: true, edda_name_withheld: true } };
+    assert.equal(objectives(state).find((row) => row.id === "edda-shift")!.status, "Open");
+    assert.equal(promiseStatus("edda-shift-request", state.flags), "Application open");
+    assert.match(nextStep(state), /appointment guarantees no shift/);
+    const done = step(step(state, "fund-worker-representative"), "record-shift-response");
+    assert.equal(objectives(done).find((row) => row.id === "edda-shift")!.status, "Unresolved");
+    assert.match(objectives(done).at(-1)!.detail, /bought no restored shift/);
+    assert.equal(promiseStatus("edda-shift-request", done.flags), "Review pending");
+  });
+  it("completes a temporary-work objective while retaining the ongoing inquiry", () => {
+    const state = { ...base(), sceneId: "act3_edda_methods", flags: { edda_shift_consent: true, origin_helped: true, edda_exposed: true } };
+    const done = step(step(state, "submit-key-closure"), "record-shift-response");
+    const row = objectives(done).find((entry) => entry.id === "edda-shift")!;
+    assert.equal(row.status, "Complete"); assert.match(row.detail, /records inquiry continues/);
+    assert.equal(promiseStatus("edda-shift-request", done.flags), "Temporary paid work");
+    assert.equal(done.flags.edda_exposed, true); assert.equal(done.flags.edda_public_consent, undefined);
+  });
+});

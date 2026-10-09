@@ -870,3 +870,58 @@ describe("clinic coolant emergency", () => {
     assert.equal(visited.sceneId, "act3_neighborhood"); assert.throws(() => step(visited, "visit-pump"));
   });
 });
+
+describe("Edda's private employment request", () => {
+  const applicant = (sceneId = "act3_edda_visit"): GameState => ({ ...make("spire", { chrome: 2, nerve: 0, face: 0, ghost: 0 }), sceneId, creds: 150, strain: 0, flags: { archive_custody: true, edda_exposed: true, edda_name_withheld: true, order_verified: true } });
+  it("requires a suspended source and separate private authorization", () => {
+    assert.throws(() => step({ ...applicant(), flags: { archive_custody: true } }, "review-edda-shift"));
+    const terms = step(applicant(), "review-edda-shift");
+    const declined = step(terms, "decline-shift-request");
+    assert.equal(declined.flags.edda_shift_consent, undefined); assert.equal(declined.flags.edda_shift_done, true);
+    assert.throws(() => step(declined, "return-edda-payroll"));
+    const signed = step(terms, "authorize-shift-request");
+    assert.equal(signed.flags.edda_shift_consent, true); assert.equal(signed.flags.edda_public_consent, undefined);
+    assert.equal(signed.flags.edda_name_withheld, true); assert.equal(signed.journal.at(-1)!.kind, "promise");
+    assert.throws(() => step({ ...signed, flags: { archive_custody: true } }, "fund-worker-representative"));
+  });
+  it("allows an earlier paid bridge and a consented follow-up without refunding it", () => {
+    const supported = step(applicant(), "bridge-edda-shift"); assert.equal(supported.creds, 110);
+    const terms = step(parseSave(JSON.stringify(supported))!, "return-edda-payroll");
+    const methods = step(terms, "authorize-shift-request");
+    const represented = step(methods, "fund-worker-representative"); assert.equal(represented.creds, 50);
+    const done = step(represented, "record-shift-response");
+    assert.equal(done.flags.edda_supported, true); assert.equal(done.flags.edda_shift_paid, undefined);
+    assert.match(done.journal.at(-1)!.text, /No shift has been restored/);
+    assert.throws(() => step({ ...done, sceneId: "act3_edda_methods" }, "fund-worker-representative"));
+  });
+  it("limits the earned key-closure method to the successful Spire favor", () => {
+    const methods = step(step(applicant(), "review-edda-shift"), "authorize-shift-request");
+    assert.throws(() => step(methods, "submit-key-closure"));
+    assert.throws(() => step({ ...methods, origin: "dustline", flags: { ...methods.flags, origin_helped: true } }, "submit-key-closure"));
+    const reply = step({ ...methods, flags: { ...methods.flags, origin_helped: true } }, "submit-key-closure");
+    const done = step(reply, "record-shift-response"); assert.equal(done.creds, methods.creds);
+    assert.equal(done.flags.edda_shift_paid, true); assert.equal(done.flags.edda_exposed, true);
+    assert.match(done.journal.at(-1)!.text, /archive access remains suspended/);
+    assert.match(aftermath(done).find((row) => row.title === "Edda’s payroll request")!.text, /neither clears her name/);
+  });
+  it("restores a saved negotiation die and records paid work without changing evidence", () => {
+    const methods = step(step(applicant(), "review-edda-shift"), "authorize-shift-request");
+    const saved = parseSave(JSON.stringify({ ...methods, pendingCheck: { sceneId: methods.sceneId, choiceId: "negotiate-bench-shift", roll: 9 } }))!;
+    assert.throws(() => step(saved, "negotiate-bench-shift", 1));
+    const reply = step(saved, "negotiate-bench-shift", 9);
+    const done = step(reply, "record-shift-response");
+    assert.equal(done.flags.order_verified, true); assert.equal(done.flags.archive_key_authenticated, undefined);
+    assert.equal(done.flags.edda_public_consent, undefined);
+    assert.throws(() => step({ ...done, sceneId: "act3_edda_methods" }, "negotiate-bench-shift", 9));
+    assert.throws(() => step({ ...done, sceneId: "act3_edda_reply" }, "record-shift-response"));
+  });
+  it("keeps a failed attempt pending and preserves an affordable non-check route", () => {
+    const methods = step(step(applicant(), "review-edda-shift"), "authorize-shift-request");
+    assert.throws(() => step({ ...methods, creds: 59 }, "fund-worker-representative"));
+    const failed = step(methods, "reconcile-shift-ledger", 1); assert.equal(failed.strain, 2);
+    assert.equal(failed.flags.edda_shift_paid, undefined);
+    const done = step(parseSave(JSON.stringify(failed))!, "record-shift-response");
+    assert.equal(done.creds, 150); assert.match(done.journal.at(-1)!.text, /without offering an assignment/);
+    const poor = step({ ...methods, creds: 0 }, "leave-shift-pending"); assert.equal(poor.sceneId, "act3_edda_reply");
+  });
+});

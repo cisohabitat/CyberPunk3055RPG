@@ -28,6 +28,7 @@ export function objectives(state: GameState): Objective[] {
         : "After answering a district call, trace the issuing key from the dry canal. A failed query still leaves a ledger route.",
     });
   }
+  if (state.flags.edda_shift_consent) rows.push({ id: "edda-shift", title: "Bridge Edda’s suspended shift", status: state.flags.edda_shift_paid ? "Complete" : state.flags.edda_shift_done ? "Unresolved" : "Open", detail: state.flags.edda_shift_paid ? "Edda accepted one paid bench assignment. Archive access remains suspended and the records inquiry continues." : state.flags.edda_representation ? "A representative booked a review appointment. The sixty-creds fee bought no restored shift or inquiry decision." : state.flags.edda_shift_done ? "The signed application remains pending; no paid assignment was offered." : "Edda authorized a private payroll request. Choose one form of help, then record the actual response." });
   return rows;
 }
 
@@ -62,6 +63,9 @@ export function nextStep(state: GameState): string {
   if (state.sceneId === "act2_archive_prep") return "Prepare one retrieval route. A failed probe leaves staffed recovery available.";
   if (["act2_archive_compare", "act2_archive_challenge"].includes(state.sceneId)) return "Distinguish a catalog, a corroborating ledger, and an authenticated issuing key.";
   if (state.sceneId === "act2_archive_custody") return "Choose public attribution. Withholding a name cannot erase an existing signed extraction.";
+  if (state.sceneId === "act3_edda_terms") return "Ask for Edda’s private payroll authorization. Public source consent remains separate.";
+  if (state.sceneId === "act3_edda_methods") return "Choose one desk attempt, an earned key-closure receipt, or paid representation. A review appointment guarantees no shift.";
+  if (state.sceneId === "act3_edda_reply") return "Record temporary paid work or a pending application accurately. The records inquiry continues.";
   if (state.sceneId === "act3_edda_visit") return "Hear the source’s employment consequences; support does not settle the review.";
   if (state.sceneId === "act2_archive_gap") return "Corroborate the receipt through the ledger, or record the gap honestly.";
   if (state.sceneId === "act2_middle") {

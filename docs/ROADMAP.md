@@ -15,7 +15,7 @@ For the full future program, see the [AAA level production plan](AAA_PRODUCTION_
 
 All six foundation phases have implementation work in this candidate. The human production milestones remain open; the game is not certified as AAA. Treat each remaining milestone as an evidence gate, not a marketing claim.
 
-The [production slice expansion](PRODUCTION_SLICE.md) now adds interpretation and packet labeling, public source challenges, prepared witness transfers, four specialist methods, deferred testimony, privacy repair, and consequence visits. The current graph contains 95 scenes and 244 choices. Four played campaigns cover 192 choice activations and 53 distinct scenes. This advances the future program's gameplay slice; it does not complete its full production, external acceptance, or commercial launch gates.
+The [production slice expansion](PRODUCTION_SLICE.md) now adds interpretation and packet labeling, public source challenges, prepared witness transfers, four specialist methods, deferred testimony, privacy repair, and consequence visits. The current graph contains 98 scenes and 254 choices. Four played campaigns cover 192 choice activations and 53 distinct scenes. This advances the future program's gameplay slice; it does not complete its full production, external acceptance, or commercial launch gates.
 
 ## Order of the next production cycle
 
@@ -28,10 +28,12 @@ The [production slice expansion](PRODUCTION_SLICE.md) now adds interpretation an
 
 See [production direction](PRODUCTION.md), [release gates](RELEASE.md), and [credits and rights inventory](../CREDITS.md).
 
-The next implementation increment stages archive access, preparation, source comparison, retrieval, custody, and Edda’s employment consequence. Neighborhood visits can reconverge at the hub after custody. This supplies another playable mission pattern for phases 2–4 of the production program; staffing, campaign scale, final assets, external acceptance, and launch remain open. See the [slice verification record](PRODUCTION_SLICE.md).
+The archive increment staged archive access, preparation, source comparison, retrieval, custody, and Edda’s employment consequence. Neighborhood visits can reconverge at the hub after custody. This supplies another playable mission pattern for phases 2–4 of the production program; staffing, campaign scale, final assets, external acceptance, and launch remain open. See the [slice verification record](PRODUCTION_SLICE.md).
 
 The public-hearing increment adds source-scoped testimony, separate quotation permission, a playable evidence challenge, corrections and withdrawal, and a source brief. Three deterministic JSON campaign routes replay explicit die faces through saved-check checkpoints. These advance campaign consequences and QA reproducibility within the future systems program; they are not a complete writer authoring interface or external slice acceptance. See the [current slice record](PRODUCTION_SLICE.md).
 
 The equipment/recovery increment adds one purchased field kit with targeted check benefits, budget comparisons against witness care, a bounded once-per-week recovery visit, a quiet consequence-preserving follow-up, and resource assertions in seven deterministic QA routes. This develops specialization and opportunity costs within the systems phase. External balancing and production acceptance remain open; see [the slice record](PRODUCTION_SLICE.md).
 
 The neighborhood emergency increment adds a practical service task, four skill approaches, earned Kerr assistance, failure triage, maintenance-record custody, and delayed character consequences. The current graph is 95 scenes / 244 choices. This advances the systems and campaign-consequence phases; narrative production, commissioned assets, external balancing, and independent acceptance remain open. See [the slice record](PRODUCTION_SLICE.md).
+
+The employment increment extends Edda’s consequence into a consented private payroll request, an earned Spire-favor method, two skill checks, paid representation, a pending fallback, and an outcome reflected in campaign commitments and the ending. The current graph is 98 scenes / 254 choices, with fifteen deterministic full-campaign fixtures. Temporary paid work does not close the source inquiry; appointments do not count as restored wages. This advances character continuity and failure outcomes within the campaign phase. Full-scale production and independent acceptance remain open.
