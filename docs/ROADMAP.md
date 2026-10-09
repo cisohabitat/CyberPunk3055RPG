@@ -15,7 +15,7 @@ For the full future program, see the [AAA level production plan](AAA_PRODUCTION_
 
 All six foundation phases have implementation work in this candidate. The human production milestones remain open; the game is not certified as AAA. Treat each remaining milestone as an evidence gate, not a marketing claim.
 
-The [production slice expansion](PRODUCTION_SLICE.md) now adds interpretation and packet labeling, public source challenges, prepared witness transfers, four specialist methods, deferred testimony, privacy repair, and consequence visits. The current graph contains 81 scenes and 202 choices. Four played campaigns cover 192 choice activations and 53 distinct scenes. This advances the future program's gameplay slice; it does not complete its full production, external acceptance, or commercial launch gates.
+The [production slice expansion](PRODUCTION_SLICE.md) now adds interpretation and packet labeling, public source challenges, prepared witness transfers, four specialist methods, deferred testimony, privacy repair, and consequence visits. The current graph contains 87 scenes and 217 choices. Four played campaigns cover 192 choice activations and 53 distinct scenes. This advances the future program's gameplay slice; it does not complete its full production, external acceptance, or commercial launch gates.
 
 ## Order of the next production cycle
 
@@ -29,3 +29,5 @@ The [production slice expansion](PRODUCTION_SLICE.md) now adds interpretation an
 See [production direction](PRODUCTION.md), [release gates](RELEASE.md), and [credits and rights inventory](../CREDITS.md).
 
 The next implementation increment stages archive access, preparation, source comparison, retrieval, custody, and Edda’s employment consequence. Neighborhood visits can reconverge at the hub after custody. This supplies another playable mission pattern for phases 2–4 of the production program; staffing, campaign scale, final assets, external acceptance, and launch remain open. See the [slice verification record](PRODUCTION_SLICE.md).
+
+The public-hearing increment adds source-scoped testimony, separate quotation permission, a playable evidence challenge, corrections and withdrawal, and a source brief. Three deterministic JSON campaign routes replay explicit die faces through saved-check checkpoints. These advance campaign consequences and QA reproducibility within the future systems program; they are not a complete writer authoring interface or external slice acceptance. See the [current slice record](PRODUCTION_SLICE.md).

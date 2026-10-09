@@ -157,6 +157,7 @@ export const ACT3_SCENES: Record<string, Scene> = {
     speaker: "Sera",
     text: arrivalText,
     choices: [
+      { id: "prepare-public-account", label: "Prepare an account people can question after you leave.", detail: "Review source strength and witness publication permission before a public hearing.", requireFlag: "memory_prepared", hideIfFlag: "testimony_done", next: "act3_testimony_review" },
       {
         id: "read-names",
         label: "Read the names you kept.",

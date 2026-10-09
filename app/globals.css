@@ -882,3 +882,8 @@ html[data-motion="reduce"] *, html[data-motion="reduce"] *::before, html[data-mo
 @media (max-width: 700px) {
   .evidence-case dl { grid-template-columns: 1fr; gap: .5rem; }
 }
+
+.testimony-sources { margin: 0; }
+.testimony-sources > div + div { margin-top: 0.85rem; }
+.testimony-sources dt { color: var(--cyan); font-weight: 700; }
+.testimony-sources dd { margin: 0.25rem 0 0; }

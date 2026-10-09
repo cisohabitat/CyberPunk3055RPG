@@ -48,6 +48,10 @@ export function nextStep(state: GameState): string {
   if (state.sceneId === "act2_witness_arrival") return "Nia has a safe room. Let her review the account, or return before the week closes.";
   if (state.sceneId === "act2_witness_repair") return "Protect a new location without erasing the earlier breach.";
   if (state.sceneId === "act2_public_response") return "Answer with a corroborating source, a correction, or an explicit unresolved question.";
+  if (state.sceneId === "act3_testimony_review") return "Choose the scope your actual sources support. Public testimony supplies no new evidence.";
+  if (["act3_testimony_consent", "act3_testimony_nia"].includes(state.sceneId)) return "Recording consent and public quotation consent are separate. A private account can remain private.";
+  if (["act3_testimony_hearing", "act3_testimony_correction"].includes(state.sceneId)) return "Identify corroboration or key authentication precisely; preserve any correction beside the original claim.";
+  if (state.sceneId === "act3_testimony_record") return "File or withdraw the draft, then return to the original ending choices.";
   if (state.sceneId === "act3_neighborhood") return "Visit the people and records changed by your week, or go directly to the wall.";
   if (state.sceneId === "act2_witness_checkpoint") return "Recover the transfer at this checkpoint. A registered room provides care but exposes Nia's location.";
   if (state.sceneId === "act2_witness_safe") return "Attach Nia's account. A safe room and a recorded witness are separate steps.";

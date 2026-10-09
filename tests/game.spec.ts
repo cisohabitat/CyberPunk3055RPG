@@ -300,3 +300,30 @@ test("archive comparison, custody and worker follow-through survive reload", asy
   const stored = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
   expect(stored.creds).toBe(60); expect(stored.flags.edda_supported).toBe(true); expect(stored.flags.archive_key_authenticated).toBeUndefined();
 });
+
+test("public quotation needs separate permission and the filed account survives reload", async ({ page }) => {
+  await openRun(page, fixture("act3_arrival", { flags: { memory_prepared: true, order_verified: true, witness_safe: true, witness_consent: true }, journal: [{ id: "nia-account", text: "Nia approved a recording.", kind: "fact" }, { id: "ward-nine", text: "The original memo.", kind: "fact" }] }));
+  await page.getByRole("button", { name: "Settings", exact: true }).click(); await page.getByLabel("Reading pace").selectOption("all"); await page.getByRole("button", { name: "Done", exact: true }).click();
+  for (const id of ["prepare-public-account", "scope-corroborated"]) await page.getByTestId(`choice-${id}`).click();
+  await expect(page.getByTestId("testimony-brief")).toContainText("separate from permission to quote");
+  expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
+  await page.getByTestId("choice-ask-public-permission").click(); await page.getByTestId("choice-accept-public-permission").click();
+  await page.reload(); await page.getByTestId("continue-run").click();
+  await expect(page.getByTestId("testimony-brief")).toContainText("Nia authorized her approved words");
+  await expect(page.getByTestId("choice-answer-authenticated-key")).toHaveCount(0);
+  for (const id of ["answer-corroboration", "file-public-account"]) await page.getByTestId(`choice-${id}`).click();
+  await expect(page.getByTestId("choice-prepare-public-account")).toHaveCount(0);
+  await page.getByTestId("choice-read-names").click();
+  await expect(page.locator(".aftermath")).toContainText("Nia authorized her approved words");
+});
+
+test("an exposed witness cannot be publicly quoted and a draft can be withdrawn", async ({ page }) => {
+  await openRun(page, fixture("act3_arrival", { flags: { memory_prepared: true, witness_lost: true, witness_relocated: true }, journal: [{ id: "nia-account", text: "The clinic recording.", kind: "fact" }] }));
+  for (const id of ["prepare-public-account", "scope-bounded"]) await page.getByTestId(`choice-${id}`).click();
+  await expect(page.getByTestId("choice-ask-public-permission")).toHaveCount(0);
+  await expect(page.getByTestId("testimony-brief")).toContainText("including after relocation");
+  for (const id of ["keep-recording-private", "claim-key-anyway", "correct-hearing", "withdraw-public-account", "leave-wall"]) await page.getByTestId(`choice-${id}`).click();
+  await expect(page.locator(".aftermath")).toContainText("withdrew the draft");
+  const saved = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(saved.flags.order_verified).toBeUndefined(); expect(saved.flags.nia_public_consent).toBeUndefined(); expect(saved.flags.testimony_published).toBeUndefined(); expect(saved.flags.testimony_corrected).toBe(true);
+});

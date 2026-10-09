@@ -12,6 +12,8 @@ import {
   runDelta,
   sceneText,
 } from "./engine.ts";
+import { aftermath } from "./evidence";
+import { testimonyPacket } from "./testimony";
 import { ITEMS } from "./items.ts";
 import { parseSave } from "./storage.ts";
 import { journalTitle } from "./journal.ts";
@@ -696,5 +698,59 @@ describe("staged archive source and custody", () => {
     assert.equal(state.sceneId, "act2_archive_custody"); assert.equal(state.flags.archive_key_authenticated, undefined);
     state = step(state, "ask-named-source"); assert.equal(state.flags.edda_public_consent, true);
     assert.equal(state.flags.edda_exposed, true);
+  });
+});
+
+
+describe("public hearing source scope and witness permission", () => {
+  const hearing = (flags: Record<string, boolean> = {}): GameState => ({ ...make("spire", { chrome: 2, nerve: 0, face: 0, ghost: 0 }), sceneId: "act3_arrival", flags: { memory_prepared: true, ...flags } });
+  const begin = (state: GameState, scope: string) => step(step(state, "prepare-public-account"), scope);
+  it("files an authenticated source without a private witness and keeps original endings", () => {
+    let state = begin(hearing({ order_verified: true, archive_key_authenticated: true }), "scope-corroborated");
+    assert.throws(() => step(state, "ask-public-permission"));
+    state = step(state, "keep-recording-private"); state = step(state, "answer-authenticated-key");
+    state = parseSave(JSON.stringify(state))!; state = step(state, "file-public-account");
+    assert.equal(state.sceneId, "act3_arrival"); assert.equal(state.flags.testimony_published, true);
+    assert.equal(state.flags.nia_public_consent, undefined);
+    assert.equal(presentChoices(state, getScene(state.sceneId)).some((c) => c.id === "prepare-public-account"), false);
+    assert.equal(step(state, "leave-wall").sceneId, "ending_quiet");
+    assert.match(aftermath(state).find((row) => row.title === "Ward Nine")!.text, /public account/);
+  });
+  it("corrects an unsupported key claim without turning corroboration into authentication", () => {
+    let state = begin(hearing({ order_verified: true, memory_corrected: true }), "scope-corroborated");
+    state = step(state, "keep-recording-private"); assert.throws(() => step(state, "answer-authenticated-key"));
+    const standing = state.factions.wards; state = step(state, "claim-key-anyway");
+    assert.equal(state.factions.wards, standing - 1); state = step(state, "correct-hearing");
+    state = step(state, "file-public-account"); assert.equal(state.flags.archive_key_authenticated, undefined);
+    assert.match(state.journal.find((entry) => entry.id === "wall-account")!.text, /correction remains attached/);
+    assert.match(aftermath(state).find((row) => row.title === "The public packet")!.text, /obtained later/);
+  });
+  it("requires a safe approved recording and explicit public permission, preserved across reload", () => {
+    let state = hearing({ order_verified: true, witness_safe: true, witness_consent: true });
+    state.journal.push({ id: "nia-account", text: "Nia approved a private recording.", kind: "fact" });
+    state = begin(state, "scope-corroborated"); state = step(state, "ask-public-permission");
+    assert.equal(state.flags.nia_public_consent, undefined); state = step(state, "accept-public-permission");
+    state = parseSave(JSON.stringify(state))!; state = step(state, "answer-corroboration");
+    state = step(state, "file-public-account");
+    assert.match(state.journal.find((entry) => entry.id === "wall-account")!.text, /Nia authorized quotation/);
+    assert.match(testimonyPacket(state)[2].text, /address stays out/);
+  });
+  it("preserves refusal after a location breach, even following relocation", () => {
+    let state = hearing({ order_verified: true, witness_lost: true, witness_relocated: true, witness_consent: true });
+    state.journal.push({ id: "nia-account", text: "The clinic holds Nia’s account.", kind: "fact" });
+    state = begin(state, "scope-corroborated"); assert.throws(() => step(state, "ask-public-permission"));
+    assert.match(testimonyPacket(state)[2].text, /including after relocation/);
+    state = step(state, "keep-recording-private"); state = step(state, "answer-corroboration"); state = step(state, "file-public-account");
+    assert.equal(state.flags.nia_public_consent, undefined); assert.equal(state.flags.witness_lost, true);
+  });
+  it("can withdraw an authorized draft without publishing the recording or authenticating a key", () => {
+    let state = hearing({ order_verified: true, witness_safe: true, witness_consent: true });
+    state.journal.push({ id: "nia-account", text: "Nia approved a recording.", kind: "fact" });
+    state = begin(state, "scope-corroborated"); state = step(state, "ask-public-permission");
+    state = step(state, "accept-public-permission"); state = step(state, "answer-corroboration");
+    state = step(state, "withdraw-public-account");
+    assert.equal(state.flags.nia_public_consent, true); assert.equal(state.flags.testimony_published, undefined);
+    assert.equal(state.flags.archive_key_authenticated, undefined);
+    assert.match(aftermath(state).find((row) => row.title === "The public hearing")!.text, /not opened/);
   });
 });

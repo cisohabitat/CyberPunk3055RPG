@@ -10,7 +10,8 @@
     "story:report": "tsx scripts/story-report.ts",
     "predev": "node scripts/generate-audio.mjs",
     "prebuild": "node scripts/generate-audio.mjs",
-    "pretest": "node scripts/generate-audio.mjs"
+    "pretest": "node scripts/generate-audio.mjs",
+    "story:replay": "tsx scripts/story-replay.ts"
   },
   "dependencies": {
     "next": "^15.5.4",

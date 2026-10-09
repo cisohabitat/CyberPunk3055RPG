@@ -32,6 +32,7 @@ export const JOURNAL_TITLES: Record<string, string> = {
   "memory-signature": "Mara's signature",
   "memory-order": "The exported counter-order",
   "memory-roster": "The living witness",
+  "wall-account": "The public hearing",
   "archive-method": "Source comparison",
   "archive-custody": "Archive custody",
   "edda-review": "Edda’s shift review",
