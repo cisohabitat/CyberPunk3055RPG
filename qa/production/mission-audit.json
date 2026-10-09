@@ -29,10 +29,11 @@
       "act2_witness_repair"
     ],
     "laterScenes": [
-      "act3_witness_visit"
+      "act3_witness_visit",
+      "act3_nia_contact"
     ],
     "priority": "P1",
-    "finding": "The return has one acknowledgement. Give Nia a decision about continuing contact separate from testimony.",
+    "finding": "Nia can accept a clinic relay or pause future questions separately from existing account permissions. Independent character/access review remains open.",
     "truth": "A private room, approved recording, public quotation, and an earlier location breach are separate outcomes."
   },
   {
@@ -100,10 +101,12 @@
       "act2_notice_receipt"
     ],
     "laterScenes": [
-      "act3_records_visit"
+      "act3_notice_visit",
+      "act3_notice_repair",
+      "act3_notice_result"
     ],
     "priority": "P1",
-    "finding": "Second JSON encounter separates usable public routing from private delivery. Add a delayed distribution reply next cycle; comprehension and writer acceptance remain open.",
+    "finding": "Delayed replies distinguish acknowledged receipt from unknown attendance. Public monitoring has paid/private or free withdrawal responses, retaining earlier observation.",
     "truth": "Dispatch acceptance, public window visibility, patient receipt, and patient attendance are different outcomes. No home list is published by any method."
   }
 ]

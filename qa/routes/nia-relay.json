@@ -1,0 +1,224 @@
+{
+  "name": "nia-relay",
+  "character": {
+    "handle": "Replay",
+    "givenName": "Ada",
+    "origin": "spire",
+    "complication": "optic",
+    "bonus": {
+      "chrome": 0,
+      "nerve": 0,
+      "face": 2,
+      "ghost": 0
+    }
+  },
+  "steps": [
+    {
+      "choiceId": "ask-pay"
+    },
+    {
+      "choiceId": "haggle",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "pocket"
+    },
+    {
+      "choiceId": "accept"
+    },
+    {
+      "choiceId": "side"
+    },
+    {
+      "choiceId": "spoof-door",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "go"
+    },
+    {
+      "choiceId": "honest"
+    },
+    {
+      "choiceId": "pact-copy"
+    },
+    {
+      "choiceId": "copy",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "heard"
+    },
+    {
+      "choiceId": "inspect-hour"
+    },
+    {
+      "choiceId": "inspect-signature"
+    },
+    {
+      "choiceId": "inspect-order"
+    },
+    {
+      "choiceId": "inspect-roster"
+    },
+    {
+      "choiceId": "reconstruct"
+    },
+    {
+      "choiceId": "separate-decisions"
+    },
+    {
+      "choiceId": "label-unverified"
+    },
+    {
+      "choiceId": "seal-witness"
+    },
+    {
+      "choiceId": "talk-leave",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "both"
+    },
+    {
+      "choiceId": "week-after"
+    },
+    {
+      "choiceId": "into-week"
+    },
+    {
+      "choiceId": "practice"
+    },
+    {
+      "choiceId": "learn-ghost"
+    },
+    {
+      "choiceId": "read-board"
+    },
+    {
+      "choiceId": "origin-contract"
+    },
+    {
+      "choiceId": "clear-key",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "return-board"
+    },
+    {
+      "choiceId": "to-lumen"
+    },
+    {
+      "choiceId": "hear-lumen"
+    },
+    {
+      "choiceId": "walk-with-her"
+    },
+    {
+      "choiceId": "protect-witness"
+    },
+    {
+      "choiceId": "agree-terms"
+    },
+    {
+      "choiceId": "scout-patrol",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "ghost-transfer"
+    },
+    {
+      "choiceId": "defer-account"
+    },
+    {
+      "choiceId": "return-witness"
+    },
+    {
+      "choiceId": "review-account"
+    },
+    {
+      "choiceId": "file-account"
+    },
+    {
+      "choiceId": "hear-response"
+    },
+    {
+      "choiceId": "answer-with-source"
+    },
+    {
+      "choiceId": "stand"
+    },
+    {
+      "choiceId": "back-to-board"
+    },
+    {
+      "choiceId": "to-the-wall"
+    },
+    {
+      "choiceId": "to-ward-nine"
+    },
+    {
+      "choiceId": "visit-nia"
+    },
+    {
+      "choiceId": "ask-nia-contact",
+      "reload": true
+    },
+    {
+      "choiceId": "accept-clinic-relay",
+      "reload": true
+    },
+    {
+      "choiceId": "go-wall",
+      "reload": true
+    },
+    {
+      "choiceId": "face-sera"
+    },
+    {
+      "choiceId": "prepare-public-account"
+    },
+    {
+      "choiceId": "scope-corroborated"
+    },
+    {
+      "choiceId": "ask-public-permission"
+    },
+    {
+      "choiceId": "accept-public-permission",
+      "reload": true
+    },
+    {
+      "choiceId": "answer-corroboration"
+    },
+    {
+      "choiceId": "file-public-account",
+      "reload": true
+    },
+    {
+      "choiceId": "read-names"
+    }
+  ],
+  "expected": {
+    "sceneId": "ending_names",
+    "flags": {
+      "testimony_published": true,
+      "archive_key_authenticated": false,
+      "nia_public_consent": true,
+      "order_verified": true,
+      "nia_contact_set": true,
+      "nia_contact_relay": true,
+      "nia_contact_paused": false
+    },
+    "journal": [
+      "wall-account",
+      "nia-contact"
+    ]
+  }
+}

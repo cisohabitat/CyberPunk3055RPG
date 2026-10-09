@@ -232,6 +232,7 @@ button { cursor: pointer; }
   background-position: center;
   padding: 1rem;
 }
+.layout > main { min-width: 0; overflow-wrap: anywhere; }
 .scene.flash { animation: rise 280ms ease, edge 420ms ease; }
 
 .scene-row {
@@ -328,7 +329,8 @@ button { cursor: pointer; }
 
 .choice {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto minmax(0, 1fr);
+  min-width: 0;
   gap: 0.15rem 0.8rem;
   text-align: left;
   padding: 0.85rem 1rem;
@@ -343,7 +345,7 @@ button { cursor: pointer; }
   color: var(--cyan);
 }
 
-.choice .label { font-weight: 600; }
+.choice .label { font-weight: 600; overflow-wrap: anywhere; }
 
 .odds, .detail { color: var(--muted); font-size: 0.78rem; letter-spacing: 0.08em; }
 

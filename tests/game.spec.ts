@@ -41,6 +41,34 @@ test("a refused notice can recover without money or a repeated check", async ({ 
   const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
   expect(run.flags.notice_desk_refused).toBe(true); expect(run.flags.notice_public_route).toBe(true); expect(run.creds).toBe(0);
 });
+test("notice follow-up preserves observation after a funded response and reload", async ({ page }) => {
+  await openRun(page, fixture("act3_neighborhood", { creds: 10, flags: { notice_started: true, notice_done: true, notice_public_route: true } }));
+  for (const id of ["visit-notice", "record-public-reply", "return-notice-response", "fund-private-replies"]) await page.getByTestId(`choice-${id}`).click();
+  await page.reload(); await page.getByTestId("continue-run").click();
+  await page.getByTestId("choice-leave-notice-result").click();
+  await expect(page.getByTestId("choice-return-notice-response")).toHaveCount(0);
+  const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(run.creds).toBe(0); expect(run.flags.notice_monitored).toBe(true); expect(run.flags.notice_private_reply_booked).toBe(true);
+  await page.getByTestId("objectives").locator("summary").click();
+  await expect(page.getByTestId("objectives")).toContainText("new appointments unconfirmed");
+  expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations).toEqual([]);
+});
+test("Nia can pause questions without authorizing a recording", async ({ page }) => {
+  await openRun(page, fixture("act3_witness_visit", { flags: { witness_safe: true } }));
+  for (const id of ["ask-nia-contact", "give-nia-space"]) await page.getByTestId(`choice-${id}`).click();
+  const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(run.flags.nia_contact_paused).toBe(true); expect(run.flags.witness_consent).toBeUndefined(); expect(run.flags.nia_public_consent).toBeUndefined();
+});
+test("private receipt prose and choices fit largest text at 320 pixels", async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 844 });
+  await openRun(page, fixture("act3_notice_visit", { flags: { notice_started: true, notice_done: true, notice_private_confirmed: true } }));
+  await page.getByRole("button", { name: "Settings", exact: true }).click();
+  await page.getByLabel("Text size").selectOption("2"); await page.getByLabel("Contrast", { exact: true }).selectOption("high");
+  await page.getByRole("button", { name: "Done", exact: true }).click();
+  await expect(page.getByTestId("goal")).toBeInViewport();
+  await expect(page.getByTestId("choice-record-private-reply")).toBeVisible();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+});
 async function openRun(page: Page, state = fixture()) {
   await page.addInitScript((run) => {
     if (!localStorage.getItem("saint-shard-3055-v1")) localStorage.setItem("saint-shard-3055-v1", JSON.stringify(run));

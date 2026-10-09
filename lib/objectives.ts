@@ -7,6 +7,7 @@ export function objectives(state: GameState): Objective[] {
   const rows: Objective[] = [];
   const atWall = actName(state) === "The Wall";
   if (state.flags.notice_started) rows.push({ id: "notice", title: "Clinic appointment information", status: state.flags.notice_unresolved ? "Unresolved" : state.flags.notice_done ? "Complete" : atWall ? "Unresolved" : "Open", detail: state.flags.notice_unresolved ? "Distribution was left with staff; no patient receipt was observed." : state.flags.notice_done ? "Distribution was arranged without a public home list. Patient receipt and attendance are still unobserved." : "Choose a usable route or private channel without publishing home addresses." });
+  if (state.flags.notice_done && !state.flags.notice_unresolved) rows.push({ id: "notice-followup", title: "Check clinic distribution", status: state.flags.notice_monitored ? "Compromised" : state.flags.notice_followed_up ? "Complete" : "Open", detail: state.flags.notice_monitored ? `The advertised window was observed. ${state.flags.notice_private_reply_booked ? "A private reply channel is booked, with new appointments unconfirmed." : state.flags.notice_window_withdrawn ? "The window was withdrawn, with no replacement confirmed." : "Callers requested another time; no response is arranged."} No home list was published; attendance remains unknown.` : state.flags.notice_receipt_observed ? "Two private receipts were acknowledged. Other receipts and all attendance remain unknown." : "Return to Lumen at Ward Nine for a dispatch reply. No patient receipt is observed yet." });
   const account = state.journal.some((entry) => entry.id === "nia-account");
   if (state.flags.memory_witness || state.flags.memory_redacted) {
     rows.push({
@@ -40,6 +41,8 @@ export function unresolvedPromises(state: GameState): Objective[] {
 
 export function nextStep(state: GameState): string {
   if (state.pendingCheck) return "Finish the recorded roll. Its outcome is already saved.";
+  if (state.sceneId.startsWith("act3_notice_")) return "Keep dispatch, receipt and attendance separate. A private reply booking cannot erase an observed public window.";
+  if (state.sceneId === "act3_nia_contact") return "Nia chooses whether to answer future questions. Contact permission changes no testimony or public consent.";
   if (state.sceneId.startsWith("act2_notice_")) return "Separate public routing from private homes. Choose a channel; a dispatch receipt guarantees no attendance.";
   if (["memory_cross_exam", "memory_assurance", "memory_channel"].includes(state.sceneId)) return "Ask what Mara knew and who supplied her assurance. Attribute her answers; no testimony becomes an independent issuing-key test.";
   if (state.sceneId === "memory_table") {

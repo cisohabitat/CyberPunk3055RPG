@@ -360,6 +360,219 @@
           }
         }
       ]
+    },
+    {
+      "id": "act3_notice_visit",
+      "location": "Clinic return desk, Ward Nine",
+      "speaker": "Sister Lumen",
+      "text": [
+        {
+          "select": [
+            {
+              "when": {
+                "all": [
+                  "notice_unresolved"
+                ]
+              },
+              "text": "Lumen has the unopened routing bundle. Staff tried arranging a channel after you left, but there is no reply attached. You cannot tell who received an appointment."
+            },
+            {
+              "when": {
+                "all": [
+                  "notice_public_route"
+                ]
+              },
+              "text": "Lumen lays three callback slips beside the board copy. \"A tower observer stood at the stop during the window. Three people asked for a different time. I know those calls happened; I do not know who stayed home.\" The posted notice contained no home list."
+            },
+            {
+              "when": {
+                "all": [
+                  "notice_private_confirmed"
+                ]
+              },
+              "text": "Two sealed cards came back with receipt acknowledgements. Lumen covers the names before turning the slips toward you. \"Two reached somebody. The rest have no reply yet. An acknowledgement does not tell me they came to clinic.\""
+            }
+          ],
+          "fallback": "The desk has no dispatch reply attached. Do not infer patient receipt from a plan."
+        },
+        "\"You asked me to keep the records separate,\" she says. \"Keep the reply separate too.\""
+      ],
+      "choices": [
+        {
+          "id": "record-private-reply",
+          "label": "Record two receipt acknowledgements; keep attendance unknown.",
+          "next": "act3_neighborhood",
+          "requireFlag": "notice_private_confirmed",
+          "effects": {
+            "flags": [
+              "visited_notice",
+              "notice_followed_up",
+              "notice_receipt_observed"
+            ],
+            "journal": [
+              {
+                "id": "notice-reply",
+                "text": "Lumen showed two private card receipt acknowledgements with names covered. Other receipts and patient attendance remain unknown.",
+                "kind": "fact"
+              }
+            ]
+          }
+        },
+        {
+          "id": "record-public-reply",
+          "label": "Record monitoring and the callers’ request for another time.",
+          "next": "act3_neighborhood",
+          "requireFlag": "notice_public_route",
+          "effects": {
+            "flags": [
+              "visited_notice",
+              "notice_followed_up",
+              "notice_monitored"
+            ],
+            "journal": [
+              {
+                "id": "notice-reply",
+                "text": "Lumen reports a tower observer at the advertised clinic window and three callers asking for another time. No home list was published, and attendance is not established.",
+                "kind": "fact"
+              }
+            ]
+          }
+        },
+        {
+          "id": "repair-public-window",
+          "label": "Ask Lumen how to respond to the request for another time.",
+          "next": "act3_notice_repair",
+          "requireFlag": "notice_public_route",
+          "hideIfFlag": "notice_repair_done",
+          "effects": {
+            "flags": [
+              "visited_notice",
+              "notice_followed_up",
+              "notice_monitored"
+            ],
+            "journal": [
+              {
+                "id": "notice-reply",
+                "text": "Lumen reports a tower observer at the advertised clinic window and three callers asking for another time. No home list was published, and attendance is not established.",
+                "kind": "fact"
+              }
+            ]
+          }
+        },
+        {
+          "id": "record-unresolved-reply",
+          "label": "Keep distribution and attendance unresolved.",
+          "next": "act3_neighborhood",
+          "requireFlag": "notice_unresolved",
+          "effects": {
+            "flags": [
+              "visited_notice",
+              "notice_followed_up"
+            ],
+            "journal": [
+              {
+                "id": "notice-reply",
+                "text": "Lumen has no dispatch reply for the bundle left with staff. Receipt and attendance remain unknown.",
+                "kind": "fact"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "act3_notice_repair",
+      "location": "Clinic return desk, Ward Nine",
+      "speaker": "Sister Lumen",
+      "text": "Lumen can take the three callers’ replies through the clinic relay. Ten creds cover the private reply channel; staff will arrange any new time afterward. You will not receive their home list.\n\nOr she can withdraw the advertised window and leave staff to contact people individually. Removing the notice cannot erase the time the observer already saw. A withdrawn window is not a replacement appointment.",
+      "choices": [
+        {
+          "id": "fund-private-replies",
+          "label": "Pay ten creds for a private clinic reply channel.",
+          "next": "act3_notice_result",
+          "requireCreds": 10,
+          "detail": "A reply channel is booked. New appointments and attendance are not confirmed.",
+          "effects": {
+            "flags": [
+              "notice_repair_done",
+              "notice_private_reply_booked"
+            ],
+            "creds": -10,
+            "journal": [
+              {
+                "id": "notice-response",
+                "text": "Ten creds funded a private clinic reply channel for the callers. New appointments and attendance remain unconfirmed; the earlier public window was observed.",
+                "kind": "fact"
+              }
+            ]
+          }
+        },
+        {
+          "id": "withdraw-notice-window",
+          "label": "Withdraw the public window; leave individual contact with staff.",
+          "next": "act3_notice_result",
+          "detail": "No fee. The observer’s earlier knowledge remains. No replacement time is guaranteed.",
+          "effects": {
+            "flags": [
+              "notice_repair_done",
+              "notice_window_withdrawn"
+            ],
+            "journal": [
+              {
+                "id": "notice-response",
+                "text": "The advertised clinic window was withdrawn. Staff will attempt individual contact; there is no confirmed replacement time, and prior observation remains.",
+                "kind": "fact"
+              }
+            ]
+          }
+        },
+        {
+          "id": "leave-notice-response",
+          "label": "Keep the calls recorded without arranging another channel.",
+          "next": "act3_notice_result",
+          "effects": {
+            "flags": [
+              "notice_repair_done"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "act3_notice_result",
+      "location": "Clinic return desk, Ward Nine",
+      "speaker": "Sister Lumen",
+      "text": [
+        {
+          "select": [
+            {
+              "when": {
+                "all": [
+                  "notice_private_reply_booked"
+                ]
+              },
+              "text": "Lumen writes the relay booking under the callbacks. \"This buys a way to answer them. I will not mark it as three new appointments.\""
+            },
+            {
+              "when": {
+                "all": [
+                  "notice_window_withdrawn"
+                ]
+              },
+              "text": "Lumen lifts the public window from the board. Its pinholes remain. \"The observer saw the old time. Taking down the paper cannot take that back.\""
+            }
+          ],
+          "fallback": "The callbacks stay beside the notice. Lumen has recorded the request; no new channel or time was arranged."
+        },
+        "There is still no public home list. The reply and its limits remain beside the first dispatch record."
+      ],
+      "choices": [
+        {
+          "id": "leave-notice-result",
+          "label": "Return to the neighborhood with the reply recorded.",
+          "next": "act3_neighborhood"
+        }
+      ]
     }
   ]
 }
