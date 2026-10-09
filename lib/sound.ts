@@ -60,7 +60,7 @@ export function setBed(on: boolean, nextMood: SoundMood = "street") {
   pending = pending.then(async () => {
     try {
       if (id !== ticket || !want) return;
-      const audio = context(); if (audio.state === "suspended") await audio.resume();
+      const audio = context(); if (audio.state === "suspended") void audio.resume().catch(() => {});
       const name = nextMood === "street" ? "theme" : `theme-${nextMood}`;
       const [musicBuffer, rainBuffer] = await Promise.all([load(name), load("rain")]);
       if (id !== ticket || !want) return;
@@ -78,7 +78,7 @@ export function playCue(name: string) {
   const id = ticket;
   void (async () => {
     try {
-      const audio = context(); if (audio.state === "suspended") await audio.resume();
+      const audio = context(); if (audio.state === "suspended") void audio.resume().catch(() => {});
       const buffer = await load(name); if (!want || id !== ticket) return;
       source(buffer, "effects", name === "dice-tick" ? 0.22 : 0.5, false).node.start();
     } catch { /* Audio stays optional. */ }

@@ -197,3 +197,23 @@ test("invalid slot dates do not appear as usable recovery points", async ({ page
   await expect(page.getByRole("button", { name: "Load slot 1", exact: true })).toBeDisabled();
   await expect(page.getByRole("dialog")).not.toContainText("Invalid Date");
 });
+
+
+test("a delayed audio resume cannot block optional score loading or play", async ({ page }) => {
+  await page.addInitScript(() => {
+    const NativeContext = window.AudioContext;
+    class DelayedContext extends NativeContext {
+      get state(): AudioContextState { return "suspended"; }
+      resume(): Promise<void> { return new Promise(() => {}); }
+    }
+    Object.defineProperty(window, "AudioContext", { value: DelayedContext });
+  });
+  await openRun(page, fixture("memory_table", { items: ["shard"], flags: { heard_memo: true } }));
+  await page.getByRole("button", { name: "Settings", exact: true }).click();
+  const score = page.waitForResponse((response) => response.url().endsWith("/audio/theme-chapel.wav") && response.status() === 200);
+  await page.getByLabel("Sound enabled", { exact: true }).check(); await score;
+  await page.getByLabel("Sound enabled", { exact: true }).uncheck();
+  await page.getByRole("button", { name: "Done", exact: true }).click();
+  await page.getByTestId("choice-inspect-signature").click();
+  await expect(page.getByTestId("memory-plate")).toContainText("1 / 3 inspected");
+});

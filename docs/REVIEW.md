@@ -19,7 +19,7 @@ The weighted score is 7.025, rounded to 7.0. These grades describe the reviewed 
 - **Objective continuity:** memory promises could disappear among journal entries, and a safe room could be mistaken for a completed witness account. A compact commitments panel and contextual next step now distinguish transport, recording, corroboration, compromised privacy, and unresolved work. Week-closing choices warn about open memory promises.
 - **Phone pacing:** the memory panel repeated three long sealed descriptions before the inspection controls. Inspection now happens inside each fragment row; inspected source details expand on request.
 - **Input and reading controls:** the controller previously moved focus through sliders/selects without changing their values. Left/right now adjusts settings and switches sheet tabs. Reduced motion previously forced whole-scene reading despite a paragraph preference; those settings are now independent. Number-key repeats and number keys inside the desktop sheet cannot accidentally advance the story.
-- **Audio activation:** audio now unlocks directly from enabling sound or continuing a sound-enabled run, before asynchronous score loading. The browser suite exercises a real score request after the gesture.
+- **Audio activation:** audio now unlocks directly from enabling sound or continuing a sound-enabled run, before asynchronous score loading. The browser suite exercises a real score request after the gesture and a deliberately delayed resume promise. Score/cue loading no longer waits on resume, which can remain pending under browser policy or an unavailable audio device.
 - **Recovery metadata:** manual slots now reject invalid timestamp metadata instead of displaying an invalid date.
 
 ## Priority production work

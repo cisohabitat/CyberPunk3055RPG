@@ -99,3 +99,5 @@ Audio resumes from an explicit player gesture when sound is enabled or a saved s
 Inspecting a memory fragment opens its source text and moves focus to that source summary; the player can revisit or collapse inspected sources.
 
 At Ward Nine, Nia appears in a private witness ledger beside the memorial; she is explicitly a living witness, and her current address is not displayed.
+
+Score and cue loading never wait on `AudioContext.resume()`: browser policy or an unavailable audio device can delay that promise indefinitely. Resume requests are optional and nonblocking; player actions can retry activation.
