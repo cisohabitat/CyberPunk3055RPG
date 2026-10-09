@@ -10,9 +10,14 @@
       "nerve": 0,
       "face": 2,
       "ghost": 0
-    }
+    },
+    "startWithPrologue": true
   },
   "steps": [
+    {
+      "choiceId": "skip-opening",
+      "reload": true
+    },
     {
       "choiceId": "ask-pay"
     },

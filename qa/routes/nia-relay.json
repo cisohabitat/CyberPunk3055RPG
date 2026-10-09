@@ -10,9 +10,22 @@
       "nerve": 0,
       "face": 2,
       "ghost": 0
-    }
+    },
+    "startWithPrologue": true
   },
   "steps": [
+    {
+      "choiceId": "begin-opening",
+      "reload": true
+    },
+    {
+      "choiceId": "opening-exit",
+      "reload": true
+    },
+    {
+      "choiceId": "meet-quill",
+      "reload": true
+    },
     {
       "choiceId": "ask-pay"
     },

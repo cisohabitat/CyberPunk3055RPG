@@ -172,7 +172,7 @@ for (const mode of ["blocked", "quota"] as const) test(`plays with ${mode} stora
     else Storage.prototype.setItem = function () { throw new DOMException("Full", "QuotaExceededError"); };
   }, mode);
   await page.goto("/"); await page.getByTestId("new-run").click(); await page.getByTestId("handle-input").fill("Rex"); await page.getByTestId("complication-debt").click(); await page.getByTestId("plus-chrome").click(); await page.getByTestId("plus-nerve").click(); await page.getByTestId("start-run").click();
-  await expect(page.getByRole("status").filter({ hasText: "could not be saved" })).toContainText("could not be saved"); await page.getByTestId("choice-ask-pay").click(); await expect(page.getByTestId("choice-haggle")).toBeVisible();
+  await expect(page.getByRole("status").filter({ hasText: "could not be saved" })).toContainText("could not be saved"); await page.getByTestId("choice-skip-opening").click(); await page.getByTestId("choice-ask-pay").click(); await expect(page.getByTestId("choice-haggle")).toBeVisible();
 });
 test("memory inspection, disposition and consequence entry", async ({ page }) => {
   await openRun(page, fixture("mara_why", { items: ["shard"], flags: { heard_memo: true }, journal: [{ id: "ward-nine", text: "The original memo." }] }));
@@ -648,4 +648,59 @@ test("Fight Kerr displays costs before a saved critical result and commits once"
   await page.getByTestId("continue-check").click();
   const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
   expect(run.strain).toBe(0); expect(run.rolls).toHaveLength(1); expect(run.rolls[0].roll).toBe(10);
+});
+
+for (const [origin, complication, motive, root, reason] of [
+  ["gutterwire", "debt", "opening-survival", "grew up below these pipes", "keep tomorrow yours"],
+  ["spire", "optic", "opening-identity", "clearance stopped working", "claim on your name"],
+  ["dustline", "on-file", "opening-exit", "carried parcels across the flats", "way beyond the next closed door"],
+] as const) test(`new ${origin} runner enters through a personal prologue and resumes before the job`, async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/"); await page.getByTestId("new-run").click();
+  await page.getByTestId("handle-input").fill("Rex");
+  await page.getByTestId(`origin-${origin}`).click(); await page.getByTestId(`complication-${complication}`).click();
+  await page.getByTestId("plus-chrome").click(); await page.getByTestId("plus-nerve").click();
+  await page.getByTestId("start-run").click();
+  await expect(page.getByTestId("goal")).toBeInViewport();
+  await expect(page.getByTestId("goal")).toContainText("Find Quill");
+  await expect(page.getByTestId("choice-ask-pay")).toHaveCount(0);
+  await page.getByTestId("show-rest").click();
+  await expect(page.getByTestId("scene-text")).toContainText("People call you a runner");
+  await expect(page.getByTestId("scene-text")).toContainText("sliver of glass called a shard");
+  await expect(page.getByTestId("scene-text")).not.toContainText("Mara Voss");
+  const before = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  await page.getByTestId("choice-begin-opening").click(); await page.getByTestId("show-rest").click();
+  await expect(page.getByTestId("scene-text")).toContainText(root);
+  await page.getByTestId(`choice-${motive}`).click();
+  await page.reload(); await page.getByTestId("continue-run").click();
+  await expect(page.getByTestId("scene-text")).toContainText(reason);
+  await page.getByRole("button", { name: "Settings", exact: true }).click();
+  await page.getByLabel("Reading pace").selectOption("all");
+  await page.getByRole("button", { name: "Done", exact: true }).click();
+  await page.getByTestId("choice-hear-stallholder").click();
+  await expect(page.getByTestId("scene-text")).toContainText("sold that evening to make the rent");
+  await expect(page.getByTestId("goal")).toBeInViewport();
+  expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations).toEqual([]);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  await page.getByTestId("choice-take-the-stool").click();
+  await expect(page.getByTestId("scene-text")).toContainText(reason);
+  await expect(page.getByTestId("scene-text")).toContainText("stallholder’s story stays with you");
+  const after = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  for (const key of ["creds", "strain", "items", "stats", "factions", "rolls"]) expect(after[key]).toEqual(before[key]);
+  await page.getByTestId("choice-accept").click();
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!).flags.hired)).toBe(true);
+});
+test("returning runners can skip the prologue while old saves continue at the job", async ({ page }) => {
+  await openRun(page, fixture("stall"));
+  await expect(page.getByTestId("choice-begin-opening")).toHaveCount(0);
+  await expect(page.getByTestId("choice-ask-pay")).toBeVisible();
+  await page.getByRole("button", { name: "Saves", exact: true }).click();
+  await page.getByRole("button", { name: "Return to title", exact: true }).click();
+  await page.getByTestId("new-run").click(); await page.getByRole("button", { name: "Start a new run", exact: true }).click();
+  await page.getByTestId("handle-input").fill("Rex"); await page.getByTestId("complication-debt").click();
+  await page.getByTestId("plus-chrome").click(); await page.getByTestId("plus-nerve").click();
+  await page.getByTestId("start-run").click(); await page.getByTestId("choice-skip-opening").click();
+  await expect(page.getByTestId("choice-ask-pay")).toBeVisible();
+  const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(run.flags.opening_skipped).toBe(true); expect(run.flags.opening_survival).toBeUndefined(); expect(run.creds).toBe(20);
 });

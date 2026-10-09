@@ -1,5 +1,7 @@
 import type { GameState } from "../types";
 
+export const GOAL_ARRIVE = "Find Quill at the Ward Four noodle stall. Hear what he is offering.";
+
 export const GOAL_LIFT = "Lift Mara Voss's hour from Glass Chapel before dawn. Kerr is paid to stop you.";
 export const GOAL_DECIDE = "You know what the hour is. Decide who gets it.";
 export const GOAL_WEEK = "The week wants a buyer or a witness.";
@@ -28,6 +30,7 @@ export function actName(state: GameState): string {
 
 export function currentGoal(state: GameState): string {
   const id = state.sceneId;
+  if (id.startsWith("opening_")) return GOAL_ARRIVE;
   if (WALL.has(id) || id.startsWith("act3_")) return GOAL_WALL;
   if (WEEK.has(id) || id.startsWith("act2_")) return GOAL_WEEK;
   if (state.flags.heard_memo || state.journal.some((entry) => entry.id === "ward-nine")) return GOAL_DECIDE;

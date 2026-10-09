@@ -20,7 +20,7 @@ import { ITEMS } from "./items.ts";
 import { parseSave } from "./storage.ts";
 import { journalTitle } from "./journal.ts";
 import { metCast, speakerRole } from "./story/cast.ts";
-import { GOAL_DECIDE, GOAL_LIFT, GOAL_WALL, GOAL_WEEK, actName, currentGoal } from "./story/goal.ts";
+import { GOAL_ARRIVE, GOAL_DECIDE, GOAL_LIFT, GOAL_WALL, GOAL_WEEK, actName, currentGoal } from "./story/goal.ts";
 import { CODEX, SCENES, endingCoda, vaultNext } from "./story/index.ts";
 import type { Choice, GameState, StatId } from "./types.ts";
 
@@ -993,5 +993,56 @@ describe("playtest narrative and cost corrections", () => {
     assert.match(checkResourceCosts({ ...state, strain: 4 }, choice)[1], /Strain \+1/);
     assert.deepEqual(checkResourceCosts({ ...state, strain: 5 }, choice), []);
     assert.deepEqual(checkResourceCosts(state, getScene("stall").choices[0]), []);
+  });
+});
+
+
+describe("playable opening", () => {
+  const character = (origin: OriginId, complication: "debt" | "optic" | "on-file") => createCharacter({ handle: "Rex", givenName: "Ada", origin, bonus: { chrome: 1, nerve: 1, face: 0, ghost: 0 }, complication, startWithPrologue: true });
+  it("introduces the city and the runner before revealing the job", () => {
+    const state = character("gutterwire", "debt");
+    assert.equal(state.sceneId, "opening_city");
+    assert.equal(currentGoal(state), GOAL_ARRIVE);
+    assert.match(sceneText(getScene(state.sceneId), state), /People call you a runner/);
+    assert.match(sceneText(getScene(state.sceneId), state), /sliver of glass called a shard/);
+    assert.doesNotMatch(sceneText(getScene(state.sceneId), state) + currentGoal(state), /Mara|Kerr|three hundred|coolant dump/i);
+  });
+  it("makes every origin and complication personal without giving free resources", () => {
+    for (const origin of Object.keys(ORIGINS) as OriginId[]) for (const complication of ["debt", "optic", "on-file"] as const) for (const motive of ["opening-survival", "opening-identity", "opening-exit"]) {
+      const initial = character(origin, complication);
+      let state = step(initial, "begin-opening");
+      const personal = sceneText(getScene(state.sceneId), state);
+      assert.match(personal, new RegExp(`${initial.creds} creds`));
+      if (origin === "gutterwire") assert.match(personal, /grew up below these pipes/);
+      if (origin === "spire") assert.match(personal, /clearance stopped working/);
+      if (origin === "dustline") assert.match(personal, /carried parcels across the flats/);
+      if (complication === "debt") assert.match(personal, /debt still carries his name/);
+      if (complication === "optic") assert.match(personal, /still owe the clinic/);
+      if (complication === "on-file") assert.match(personal, /keeps a file under your old name/);
+      state = step(state, motive); state = step(state, "hear-stallholder");
+      const restored = parseSave(JSON.stringify(state)); assert.ok(restored);
+      state = step(restored, "take-the-stool");
+      assert.equal(state.sceneId, "stall"); assert.equal(state.flags.opening_complete, true);
+      assert.equal(state.flags.opening_neighbor_heard, true);
+      assert.equal(Object.keys(state.flags).filter((flag) => ["opening_survival", "opening_identity", "opening_exit"].includes(flag)).length, 1);
+      for (const key of ["creds", "strain", "items", "stats", "factions", "journal", "rolls"] as const) assert.deepEqual(state[key], initial[key]);
+      assert.match(sceneText(getScene(state.sceneId), state), /stallholder’s story stays with you/);
+      assert.equal(currentGoal(state), GOAL_LIFT);
+    }
+  });
+  it("allows a shorter approach or a complete skip without assigning a reason", () => {
+    const initial = character("dustline", "on-file");
+    const skipped = step(initial, "skip-opening");
+    assert.equal(skipped.sceneId, "stall"); assert.equal(skipped.flags.opening_skipped, true);
+    assert.equal(skipped.flags.opening_identity, undefined);
+    const direct = step(step(step(initial, "begin-opening"), "opening-exit"), "meet-quill");
+    assert.equal(direct.sceneId, "stall"); assert.equal(direct.flags.opening_neighbor_heard, undefined);
+    assert.match(sceneText(getScene(direct.sceneId), direct), /buy yourself a way/);
+  });
+  it("preserves the opening state on import while old job checkpoints stay at the job", () => {
+    const opening = character("spire", "optic");
+    assert.equal(parseSave(JSON.stringify(opening))?.sceneId, "opening_city");
+    const old = { ...opening, sceneId: "stall" };
+    assert.equal(parseSave(JSON.stringify(old))?.sceneId, "stall");
   });
 });

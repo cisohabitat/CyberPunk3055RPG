@@ -42,6 +42,7 @@ export function createCharacter(input: {
   bonus: Record<StatId, number>;
   complication?: ComplicationId | null;
   keepsake?: string | null;
+  startWithPrologue?: boolean;
 }): GameState {
   const origin = ORIGINS[input.origin];
   const complication = input.complication ?? null;
@@ -85,7 +86,7 @@ export function createCharacter(input: {
     chapters: [],
     rolls: [],
     log: [],
-    sceneId: "stall",
+    sceneId: input.startWithPrologue ? "opening_city" : "stall",
   };
 }
 

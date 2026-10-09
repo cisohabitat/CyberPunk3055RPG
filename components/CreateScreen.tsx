@@ -49,11 +49,12 @@ export function CreateScreen({
         onSubmit={(event) => {
           event.preventDefault();
           if (!ready) return;
-          onStart(createCharacter({ handle, givenName, origin, bonus, complication, keepsake: keepsake || null }));
+          onStart(createCharacter({ handle, givenName, origin, bonus, complication, keepsake: keepsake || null, startWithPrologue: true }));
         }}
       >
         <p className="eyebrow">New runner</p>
         <h1>Who walks in?</h1>
+        <p>You are a runner, taking work the towers leave off the record. Choose the life you bring with you. Your story begins on the way to a meeting.</p>
         <div className="names">
           <label>
             <span>Street handle</span>
@@ -171,11 +172,11 @@ export function CreateScreen({
           {!handleOk && handle.length > 0 && "Handles use letters, numbers, spaces, apostrophes, or hyphens."}
           {handleOk && !givenOk && "That given name has a character the city won't print."}
           {handleOk && givenOk && remaining !== 0 && "Spend both points. Every stat is a way through the job."}
-          {handleOk && givenOk && remaining === 0 && !complication && "Pick the complication. A second run should not start clean."}
+          {handleOk && givenOk && remaining === 0 && !complication && "Pick the complication. Everyone arrives carrying something."}
         </p>
         <div className="actions">
           <button className="primary" type="submit" data-testid="start-run" disabled={!ready}>
-            Take the stool
+            Enter Kite City
           </button>
           <button className="ghost" type="button" onClick={onBack}>
             Back

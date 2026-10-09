@@ -16,7 +16,8 @@ describe("deterministic campaign replay", () => {
     assert.deepEqual(new Set(endings),new Set(["ending_quiet","ending_names","ending_witness","ending_listed"]));
   });
   it("reports illegal choices and omitted die faces with the exact route step", () => {
-    const spec = load("authenticated");
+    const loaded = load("authenticated");
+    const spec = { ...loaded, character: { ...loaded.character, startWithPrologue: false } };
     assert.throws(() => replayCampaign({ ...spec, steps: [{ choiceId: "accept-public-permission" }] }), /step 1, stall: Choice accept-public-permission is unavailable/);
     assert.throws(() => replayCampaign({ ...spec, steps: [{ choiceId: "ask-pay" }, { choiceId: "haggle" }] }), /step 2, pay: A check requires/);
     assert.throws(() => replayCampaign({ ...spec, steps: [{ choiceId: "ask-pay", roll: 8 }] }), /non-check choice cannot carry/);

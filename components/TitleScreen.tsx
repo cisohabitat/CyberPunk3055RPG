@@ -41,7 +41,7 @@ export function TitleScreen({
           Saint <span className="hot">Shard</span>
         </h1>
         <p className="logline">
-          A solo story RPG. One job becomes a week, then a ward the tower already paid to forget.
+          In Kite City, an hour of memory can be bought. Tonight, a broker offers you work retrieving one. A solo story RPG about what you carry and what you choose to leave behind.
         </p>
         <div className="actions">
           <button className="primary" type="button" data-testid="new-run" onClick={() => (save ? setConfirm(true) : onNew())}>

@@ -1,3 +1,4 @@
+import { openingMotive } from "./opening";
 import { PAY } from "../economy";
 import { ITEMS } from "../items";
 import type { Choice, GameState, NextSpec, Scene } from "../types";
@@ -50,6 +51,8 @@ function stallText(state: GameState): string {
   const keepsake = carried.length
     ? `You still have ${carried.join(" and ")} from a week this city already filed. Quill notices and does not ask.`
     : "";
+  const motive = openingMotive(state);
+  const neighbor = state.flags.opening_neighbor_heard ? "The stallholder’s story stays with you: a man paid his rent with an evening he could no longer explain. You want to know whose hour Quill is buying." : "";
   const deal = state.flags.haggled
     ? "He already moved the advance to ninety. He will not enjoy being asked to fall in love with you twice."
     : state.flags.haggle_failed
@@ -59,7 +62,7 @@ function stallText(state: GameState): string {
 
 Quill nods at the stool across from him. "${state.handle}. Sit. Eat, or pretend."
 
-${complication ? complication + "\n\n" : ""}${keepsake ? keepsake + "\n\n" : ""}${deal}
+${motive ? motive + "\n\n" : ""}${neighbor ? neighbor + "\n\n" : ""}${complication ? complication + "\n\n" : ""}${keepsake ? keepsake + "\n\n" : ""}${deal}
 
 "Glass Chapel edits guilt. They keep the original. Mara Voss, Helion logistics, sits the chair at dawn. I want the shard from her hour in the chair. You want to remain the sort of person who can spend money."`;
 }

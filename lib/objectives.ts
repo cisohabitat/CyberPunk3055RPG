@@ -40,6 +40,8 @@ export function unresolvedPromises(state: GameState): Objective[] {
 }
 
 export function nextStep(state: GameState): string {
+  // The arrival goal already explains the opening; leave room for the story.
+  if (state.sceneId.startsWith("opening_")) return "";
   if (state.pendingCheck) return "Finish the recorded roll. Its outcome is already saved.";
   if (state.sceneId.startsWith("act3_notice_")) return "Keep dispatch, receipt and attendance separate. A private reply booking cannot erase an observed public window.";
   if (state.sceneId === "act3_nia_contact") return "Nia chooses whether to answer future questions. Contact permission changes no testimony or public consent.";
