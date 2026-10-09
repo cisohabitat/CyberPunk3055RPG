@@ -7,7 +7,7 @@
 3. Failure changes the situation while leaving an authored way forward.
 4. Reading remains comfortable on a phone and controllable with keyboard, touch, and optional controller input.
 
-The browser game remains a solo narrative RPG with 1d10 checks. Four original finales retain their identity. New work deepens evidence, opportunities, and aftermath within that format.
+The browser game remains a solo narrative RPG with 1d10 checks. Four original finales retain their identity. New work deepens evidence, opportunities, and aftermath within that format. See the [played production slice expansion](PRODUCTION_SLICE.md) for the current interpretation, preparation, specialization, and consequence systems.
 
 ## Narrative and systemic standards
 

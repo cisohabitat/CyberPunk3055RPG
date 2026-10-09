@@ -19,6 +19,7 @@ function step(state: GameState, id: string, roll?: number) {
 function examined(): GameState {
   let state = { ...base(), sceneId: "memory_table", items: ["shard"], flags: { heard_memo: true } };
   for (const fragment of FRAGMENTS) state = step(state, `inspect-${fragment.id}`);
+  for (const id of ["reconstruct", "separate-decisions", "label-unverified"]) state = step(state, id);
   return state;
 }
 
@@ -74,7 +75,7 @@ describe("memory evidence and promises", () => {
   it("protects a witness through a consumed origin tool", () => {
     let state = step(examined(), "seal-witness");
     state = { ...state, sceneId: "act2_middle", items: [...state.items, "burner-route"] };
-    state = step(state, "protect-witness"); state = step(state, "use-freight"); state = step(state, "file-account");
+    state = step(state, "protect-witness"); state = step(state, "agree-terms"); state = step(state, "use-existing-plan"); state = step(state, "use-freight"); state = step(state, "review-account"); state = step(state, "file-account");
     assert.equal(state.items.includes("burner-route"), false); assert.equal(state.flags.witness_safe, true);
     assert.equal(state.flags.order_verified, true); assert.match(aftermath(state).find((row) => row.title === "Nia Pell")!.text, /protected|outside Helion/);
     assert.equal(presentChoices(state, getScene(state.sceneId)).some((choice) => choice.id === "protect-witness"), false);

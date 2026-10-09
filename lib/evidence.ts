@@ -9,6 +9,9 @@ export function memoryDisposition(state: GameState): string {
   if (state.flags.memory_intact) return "Complete archive";
   if (state.flags.memory_redacted) return "Protected roster";
   if (state.flags.memory_witness) return "Witness chain";
+  if (state.flags.memory_prepared) return state.flags.memory_public_claim ? "Public allegation · issuer unverified" : "Bounded account · issuer unverified";
+  if (state.flags.memory_reconstructed) return "Sequence compared · custody undecided";
+  if (FRAGMENTS.every((fragment) => state.flags[fragment.flag])) return "Sources inspected · account undecided";
   return "Unexamined hour";
 }
 export function aftermath(state: GameState): { title: string; text: string }[] {
@@ -19,9 +22,14 @@ export function aftermath(state: GameState): { title: string; text: string }[] {
     { title: "Mara", text: state.flags.order_verified ? "Her signature and Helion's counter-order survive together. An investigator can distinguish her decision from the tower's later instruction." : state.flags.memory_intact ? "Her signature and the exported counter-order survive together. The issuing key remains unverified; preserving a receipt did not independently authenticate it." : state.flags.memory_redacted ? "Her signature survives with the worker locations withheld. The public account protects people and leaves a gap an investigator must explain." : heard ? "Her reason survives in your account. The tower's command chain still needs independent corroboration." : "You brought no recorded account of her decision to the wall. The tower's explanation remains unchallenged by you." },
   ];
   if (state.flags.witness_safe) rows.push({ title: "Nia Pell", text: account ? "Nia reaches a room outside Helion's tenancy register. She leaves a recorded account with Sera and chooses when it becomes public." : "Nia reaches a room outside Helion's tenancy register. Her account has not been attached to the evidence." });
-  else if (state.flags.witness_lost) rows.push({ title: "Nia Pell", text: account ? "Nia receives clinic care. Lumen keeps her account, but Nia's location is now in the tower's records." : "Nia receives clinic care, but her location is now in the tower's records. Her account has not been attached to the evidence." });
+  else if (state.flags.witness_lost) rows.push({ title: "Nia Pell", text: state.flags.witness_relocated ? `Nia reaches a second, private room. Her first location remains in the tower's records; moving again did not erase that breach.${account ? " Her approved account remains with Sera." : " Her account has not been attached to the evidence."}` : account ? "Nia receives clinic care. Lumen keeps her account, but Nia's location is now in the tower's records." : "Nia receives clinic care, but her location is now in the tower's records. Her account has not been attached to the evidence." });
   else if (state.flags.memory_witness || state.flags.memory_redacted) rows.push({ title: "Nia Pell", text: "You kept her location out of the archive. Her route remains unresolved; protecting an identity did not move the person." });
   if (state.flags.betrayed_lumen) rows.push({ title: "Lumen", text: "She stops using your marker as a promise. The clinic remains open; the next person must ask without your name." });
   if (state.flags.origin_helped) rows.push({ title: "Your old streets", text: "Your origin contact remembers that you returned the favor. A route, receipt, or shelter survives beyond this job." });
+  if (state.flags.memory_source_shared) rows.push({ title: "The public packet", text: "Neighbors can inspect an independent source beside the original account, with worker locations withheld. The two decisions remain distinct." });
+  else if (state.flags.memory_corrected) rows.push({ title: "The public packet", text: "Your correction remains attached to the allegation. The receipt's issuer is still unverified; the earlier sentence has not been erased." });
+  else if (state.flags.memory_doubled_down) rows.push({ title: "The public packet", text: "You repeated the allegation without an independent source. A neighbor withdrew his name from its distribution; the source challenge remains unanswered." });
+  else if (state.flags.memory_public_claim) rows.push({ title: "The public packet", text: state.flags.order_verified ? "The original allegation has since gained independent corroboration. You did not return to attach that source to the neighborhood packet." : "The packet names Helion before its issuing key is authenticated. The allegation remains a claim, not independent proof." });
+  if (state.flags.visited_nia) rows.push({ title: "The visit", text: account ? "You returned through the clinic and heard Nia's limits directly. Her approved words remain hers to authorize." : "You returned through the clinic. Nia had not authorized an account; the recorder stayed off." });
   return rows;
 }

@@ -11,11 +11,11 @@ export function objectives(state: GameState): Objective[] {
     rows.push({
       id: "witness", title: "Protect Nia Pell",
       status: state.flags.witness_lost ? "Compromised" : state.flags.witness_safe && account ? "Complete" : atWall ? "Unresolved" : "Open",
-      detail: state.flags.witness_lost ? account ? "Her account corroborates the order, but her clinic location is on Helion's register." : "Her clinic location is on Helion's register. Her account can still be preserved."
+      detail: state.flags.witness_lost ? state.flags.witness_relocated ? "Her new room is private. The first location was exposed; that breach remains part of the account." : account ? "Her account corroborates the order, but her clinic location is on Helion's register." : "Her clinic location is on Helion's register. Her account can still be preserved."
         : state.flags.witness_safe ? account ? "Her account is recorded without publishing her home." : atWall ? "Nia reached a safe room, but her account was not attached before the week ended." : "Nia has a safe room. Attach her account before moving on."
         : actName(state) === "The Hour" ? "During The Week, find a safe transfer through the clinic. The private roster alone does not move her."
         : atWall ? "The week ended without a protected account. Her location remains private; her route remains unresolved."
-        : "After answering a district call, finish the promise at the dry canal. A shelter, passenger route, favor, or thirty creds can secure a room.",
+        : "After answering a district call, agree Nia's terms and prepare a transfer. A shelter, passenger route, trained method, favor, or ninety creds can secure a room.",
     });
   }
   if (state.flags.memory_intact) {
@@ -39,8 +39,16 @@ export function nextStep(state: GameState): string {
   if (state.pendingCheck) return "Finish the recorded roll. Its outcome is already saved.";
   if (state.sceneId === "memory_table") {
     const count = ["memory_signature", "memory_order", "memory_roster"].filter((flag) => state.flags[flag]).length;
-    return count < 3 ? `Inspect the remaining ${3 - count} ${3 - count === 1 ? "fragment" : "fragments"}, then decide which record leaves the chapel.` : "Choose an archive, a redacted roster, or a witness chain. Each opens a different responsibility next week.";
+    return count < 3 ? `Inspect the remaining ${3 - count} ${3 - count === 1 ? "fragment" : "fragments"}, then compare their decisions.` : state.flags.memory_prepared ? "Choose an archive, a redacted roster, or a witness chain. Each opens a different responsibility next week." : "Compare the signature and the later order, then label what the packet can prove.";
   }
+  if (state.sceneId === "memory_reconstruction" || state.sceneId === "memory_challenge") return "Separate authorization, the later cancellation, and the questions neither source settles.";
+  if (state.sceneId === "memory_publication") return "Label the account's certainty. Custody and witness safety are separate decisions.";
+  if (state.sceneId === "act2_witness_brief") return "Agree what Nia authorizes before arranging the move.";
+  if (state.sceneId === "act2_witness_plan") return "Choose one preparation. Your trained skill can unlock a different transfer method.";
+  if (state.sceneId === "act2_witness_arrival") return "Nia has a safe room. Let her review the account, or return before the week closes.";
+  if (state.sceneId === "act2_witness_repair") return "Protect a new location without erasing the earlier breach.";
+  if (state.sceneId === "act2_public_response") return "Answer with a corroborating source, a correction, or an explicit unresolved question.";
+  if (state.sceneId === "act3_neighborhood") return "Visit the people and records changed by your week, or go directly to the wall.";
   if (state.sceneId === "act2_witness_checkpoint") return "Recover the transfer at this checkpoint. A registered room provides care but exposes Nia's location.";
   if (state.sceneId === "act2_witness_safe") return "Attach Nia's account. A safe room and a recorded witness are separate steps.";
   if (state.sceneId === "act2_archive_gap") return "Corroborate the receipt through the ledger, or record the gap honestly.";

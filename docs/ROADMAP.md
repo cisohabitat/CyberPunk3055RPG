@@ -13,7 +13,9 @@ For the full future program, see the [AAA level production plan](AAA_PRODUCTION_
 | 5. Audiovisual direction | Full-width phone prose, evidence timeline, explicit image dimensions, distinct extended chapel/ward scores, crossfades and independent mixer channels | Phone inspection, browser regression, score seam/duration checks | Commission coherent art and recorded performances; confirm rights and measure performance on target devices |
 | 6. QA and release | Browser matrix in CI, production blocked on failed checks, retained failure traces, local diagnostics export, story report, release/rollback guidance | Unit tests, TypeScript, production build, browser flows | External playtest rounds, manual accessibility evidence, licensing review, device budgets and localization review before claiming support |
 
-All six phases have implementation work in this candidate. The human production milestones remain open; the game is not certified as AAA. Treat each remaining milestone as an evidence gate, not a marketing claim.
+All six foundation phases have implementation work in this candidate. The human production milestones remain open; the game is not certified as AAA. Treat each remaining milestone as an evidence gate, not a marketing claim.
+
+The [production slice expansion](PRODUCTION_SLICE.md) now adds interpretation and packet labeling, public source challenges, prepared witness transfers, four specialist methods, deferred testimony, privacy repair, and consequence visits. The current graph contains 75 scenes and 188 choices. Four played campaigns cover 192 choice activations and 53 distinct scenes. This advances the future program's gameplay slice; it does not complete its full production, external acceptance, or commercial launch gates.
 
 ## Order of the next production cycle
 

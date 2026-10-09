@@ -15,6 +15,7 @@ import type { Preferences } from "@/lib/preferences";
 import { ObjectiveBrief } from "./ObjectiveBrief";
 import { unresolvedPromises } from "@/lib/objectives";
 import { MemoryPlate } from "./MemoryPlate";
+import { TransferBrief } from "./TransferBrief";
 import { aftermath } from "@/lib/evidence";
 import { endingCoda } from "@/lib/story";
 import { speakerRole } from "@/lib/story/cast";
@@ -257,7 +258,8 @@ export function PlayScreen({
               </div>
             </div>
             <ObjectiveBrief state={state} />
-            {scene.memory && <MemoryPlate state={state} choices={choices} onInspect={pick} />}
+            <TransferBrief state={state} />
+            {scene.memory && <MemoryPlate key={scene.id} state={state} choices={choices} onInspect={pick} />}
             <div className="prose" data-testid="scene-text">
               {paragraphs.slice(0, visibleCount).map((paragraph, index) => (
                 <p key={`${scene.id}-${index}`}>{paragraph}</p>

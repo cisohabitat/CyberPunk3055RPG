@@ -4,6 +4,7 @@ import { ACT2_SCENES } from "./act2";
 import { ACT3_SCENES } from "./act3";
 import { MEMORY_SCENES } from "./memory";
 import { MISSION_SCENES } from "./missions";
+import { OPERATION_SCENES } from "./operations";
 
 export { vaultNext } from "./act1";
 export { CODEX, endingCoda } from "./codas";
@@ -14,4 +15,5 @@ export const SCENES: Record<string, Scene> = {
   ...ACT3_SCENES,
   ...MEMORY_SCENES,
   ...MISSION_SCENES,
+  ...OPERATION_SCENES,
 };

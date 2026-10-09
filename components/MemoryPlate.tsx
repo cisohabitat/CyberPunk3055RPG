@@ -25,6 +25,15 @@ export function MemoryPlate({ state, choices, onInspect }: { state: GameState; c
           : <><h3>{fragment.title}</h3>{choice && <button type="button" className="ghost" data-testid={`choice-${choice.id}`} aria-keyshortcuts={String(choices.indexOf(choice) + 1)} disabled={!choice.enabled} onClick={() => { setLastInspected(fragment.id); onInspect(choice); }}>{choices.indexOf(choice) + 1} · Inspect {fragment.title.toLowerCase()}</button>}</>}
       </li>;
     })}</ol>
+    {inspected === 3 && <section className="evidence-case" aria-label="Evidence comparison" data-testid="evidence-case">
+      <h3>Build the account</h3>
+      <dl>
+        <div><dt>Recorded</dt><dd>Mara authorized the flush. The exported receipt records a later cancellation of evacuation.</dd></div>
+        <div><dt>Still unknown</dt><dd>Who issued the cancellation? What did Mara know before signing?</dd></div>
+        <div><dt>At risk</dt><dd>The roster can expose a living witness. Keeping her home private does not move her to safety.</dd></div>
+      </dl>
+      {state.flags.memory_prepared && <p className="packet-label"><strong>Packet label</strong> {state.flags.memory_public_claim ? "Helion accused · issuing key awaits corroboration" : "Cancellation recorded · issuing key unverified"}</p>}
+    </section>}
     <p className="hint">{memoryDisposition(state)} · Redaction changes the public record, not what you heard.</p>
   </section>;
 }

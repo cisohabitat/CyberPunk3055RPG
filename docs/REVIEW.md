@@ -34,6 +34,6 @@ See [the six-phase roadmap](ROADMAP.md) and [release gates](RELEASE.md). AAA is 
 
 ## Verification evidence
 
-The release candidate passes 70 unit tests, including 900 seeded campaigns, TypeScript checking, and a production build. The local browser matrix covers desktop and phone Chromium plus WebKit; GitHub CI additionally checks Firefox. Inspection-source focus and the uninterrupted memory/witness campaign have targeted regression coverage.
+The reviewed baseline passed 70 unit tests, including 900 seeded campaigns, TypeScript checking, and a production build. Its local browser matrix covered desktop and phone Chromium plus WebKit; GitHub CI additionally checked Firefox. Inspection-source focus and the uninterrupted memory/witness campaign had targeted regression coverage. The subsequent [production slice expansion](PRODUCTION_SLICE.md) adds interpretation, preparation, specialist methods, and consequence visits; the baseline grade remains provisional rather than increasing automatically with those additions.
 
 A production preview at a 390 × 844 browser viewport placed the first memory inspection control at y=624, within the initial screen. Inspection moved focus to the revealed source summary. Desktop and phone preview sessions reported no page errors. This is viewport evidence, not a physical-device performance measurement.

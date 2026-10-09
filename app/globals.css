@@ -867,3 +867,18 @@ html[data-motion="reduce"] *, html[data-motion="reduce"] *::before, html[data-mo
 .memory-timeline details p { font-size: .95rem; }
 .memory-timeline li h3 { margin: .25rem 0 .5rem; }
 .memory-timeline .ghost { font-size: .8rem; letter-spacing: .03em; }
+.evidence-case { border-top: 1px solid var(--line); padding-top: 1rem; }
+.evidence-case h3 { margin: 0 0 .75rem; font-family: var(--font-display), sans-serif; letter-spacing: .04em; }
+.evidence-case dl { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .8rem; margin: 0; }
+.evidence-case dl > div { padding: .75rem; border: 1px solid var(--line); background: rgba(0, 0, 0, .2); }
+.evidence-case dt { color: var(--cyan); font-family: var(--font-display), sans-serif; margin-bottom: .4rem; }
+.evidence-case dd { margin: 0; font-size: .9rem; line-height: 1.55; }
+.packet-label { padding: .7rem; border-left: 2px solid var(--cyan); font-size: .9rem; }
+.packet-label strong { display: block; color: var(--cyan); }
+.transfer-brief { margin: 1rem 0; padding: .8rem 1rem; border: 1px solid var(--line); background: rgba(7, 26, 31, .7); }
+.transfer-brief p { margin: .25rem 0; font-size: .92rem; }
+.transfer-brief strong { display: block; color: var(--cyan); font-family: var(--font-display), sans-serif; }
+.transfer-warning { color: var(--amber); }
+@media (max-width: 700px) {
+  .evidence-case dl { grid-template-columns: 1fr; gap: .5rem; }
+}

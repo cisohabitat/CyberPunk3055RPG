@@ -291,6 +291,7 @@ export function commitChoice(
     "Sister Lumen": "met_lumen",
     Ives: "met_ives",
     Sera: "met_sera",
+    "Nia Pell": "met_nia",
   };
   const met = scene.speaker ? metFlag[scene.speaker] : undefined;
   if (met && !next.flags[met]) next = { ...next, flags: { ...next.flags, [met]: true } };

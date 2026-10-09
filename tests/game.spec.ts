@@ -8,7 +8,9 @@ function fixture(sceneId = "stall", extra: Partial<GameState> = {}): GameState {
   return { ...createCharacter({ handle: "Rex", givenName: "Ada", origin: "spire", bonus: { chrome: 0, nerve: 0, face: 2, ghost: 0 }, complication: "optic" }), sceneId, ...extra };
 }
 async function openRun(page: Page, state = fixture()) {
-  await page.addInitScript((run) => { localStorage.setItem("saint-shard-3055-v1", JSON.stringify(run)); }, state);
+  await page.addInitScript((run) => {
+    if (!localStorage.getItem("saint-shard-3055-v1")) localStorage.setItem("saint-shard-3055-v1", JSON.stringify(run));
+  }, state);
   await page.goto("/"); await page.getByTestId("continue-run").click();
   await expect(page.getByTestId("scene")).toBeVisible();
 }
@@ -82,7 +84,9 @@ test("memory inspection, disposition and consequence entry", async ({ page }) =>
   await page.getByTestId("choice-inspect-hour").click(); await expect(page.getByTestId("choice-seal-full")).toHaveCount(0);
   for (const id of ["signature", "order", "roster"]) await page.getByTestId(`choice-inspect-${id}`).click();
   expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations).toEqual([]);
-  await expect(page.getByTestId("memory-plate")).toContainText("3 / 3 inspected"); await page.getByTestId("choice-seal-witness").click();
+  await expect(page.getByTestId("memory-plate")).toContainText("3 / 3 inspected");
+  await expect(page.getByTestId("choice-seal-witness")).toHaveCount(0);
+  for (const id of ["reconstruct", "separate-decisions", "label-unverified", "seal-witness"]) await page.getByTestId(`choice-${id}`).click();
   const state = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!)); expect(state.flags.memory_witness).toBe(true);
 });
 for (const finale of ["ending_names", "ending_quiet", "ending_witness", "ending_listed"]) test(`finale ${finale} and its aftermath are readable`, async ({ page }) => {
@@ -100,7 +104,7 @@ test("plays an uninterrupted campaign through evidence, practice, a contract and
   const errors: string[] = []; page.on("pageerror", (error) => errors.push(error.message));
   await page.addInitScript(() => { Math.random = () => 0.75; });
   await openRun(page);
-  const route = ["ask-pay", "haggle", "pocket", "accept", "side", "spoof-door", "go", "honest", "pact-copy", "copy", "heard", "inspect-hour", "inspect-signature", "inspect-order", "inspect-roster", "seal-witness", "talk-leave", "both", "week-after", "into-week", "practice", "learn-ghost", "read-board", "origin-contract", "clear-key", "return-board", "to-lumen", "hear-lumen", "walk-with-her", "protect-witness", "pay-room", "file-account", "stand", "back-to-board", "to-the-wall", "to-ward-nine", "face-sera", "read-names"];
+  const route = ["ask-pay", "haggle", "pocket", "accept", "side", "spoof-door", "go", "honest", "pact-copy", "copy", "heard", "inspect-hour", "inspect-signature", "inspect-order", "inspect-roster", "reconstruct", "separate-decisions", "label-unverified", "seal-witness", "talk-leave", "both", "week-after", "into-week", "practice", "learn-ghost", "read-board", "origin-contract", "clear-key", "return-board", "to-lumen", "hear-lumen", "walk-with-her", "protect-witness", "agree-terms", "use-existing-plan", "pay-room", "review-account", "file-account", "stand", "back-to-board", "to-the-wall", "to-ward-nine", "visit-nia", "acknowledge-nia", "face-sera", "read-names"];
   for (const id of route) {
     await page.getByTestId(`choice-${id}`).click();
     if (await page.getByTestId("roll-button").count()) {
@@ -148,7 +152,7 @@ test("commitments stay visible and week-closing choices warn about unfinished pr
   await page.getByTestId("objectives").locator("summary").click();
   await expect(page.getByTestId("objectives")).toContainText("Protect Nia Pell");
   await expect(page.getByTestId("choice-stand")).toContainText("promise remains unresolved");
-  await page.getByTestId("choice-protect-witness").click(); await page.getByTestId("choice-pay-room").click();
+  for (const id of ["protect-witness", "agree-terms", "use-existing-plan", "pay-room", "review-account"]) await page.getByTestId(`choice-${id}`).click();
   await expect(page.getByTestId("objectives")).toContainText("separate steps");
   await page.getByTestId("choice-file-account").click();
   await expect(page.getByTestId("objectives")).toContainText("1/1 complete");
@@ -196,6 +200,54 @@ test("invalid slot dates do not appear as usable recovery points", async ({ page
   await page.goto("/"); await page.getByRole("button", { name: "Saves", exact: true }).click();
   await expect(page.getByRole("button", { name: "Load slot 1", exact: true })).toBeDisabled();
   await expect(page.getByRole("dialog")).not.toContainText("Invalid Date");
+});
+
+test("a misleading interpretation can be revised without granting independent proof", async ({ page }) => {
+  await openRun(page, fixture("memory_table", { flags: { heard_memo: true } }));
+  for (const id of ["inspect-signature", "inspect-order", "inspect-roster"]) await page.getByTestId(`choice-${id}`).click();
+  await expect(page.getByTestId("evidence-case")).toContainText("Still unknown");
+  expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations).toEqual([]);
+  for (const id of ["reconstruct", "clear-mara"]) await page.getByTestId(`choice-${id}`).click();
+  await page.getByTestId("show-rest").click();
+  await expect(page.getByTestId("scene-text")).toContainText("does not remove her authorization");
+  for (const id of ["keep-both-decisions", "name-tower", "seal-full"]) await page.getByTestId(`choice-${id}`).click();
+  await page.reload(); await page.getByTestId("continue-run").click();
+  const state = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(state.flags.memory_public_claim).toBe(true); expect(state.flags.memory_intact).toBe(true); expect(state.flags.order_verified).toBeUndefined();
+});
+
+test("a prepared Ghost transfer keeps safety and consent separate across reload", async ({ page }) => {
+  await page.addInitScript(() => { Math.random = () => 0.75; });
+  await openRun(page, fixture("act2_middle", { flags: { memory_witness: true, perk_trained: true, perk_ghost: true } }));
+  for (const id of ["protect-witness", "agree-terms", "scout-patrol"]) await page.getByTestId(`choice-${id}`).click();
+  await page.getByTestId("roll-button").click(); await page.getByTestId("continue-check").click();
+  for (const id of ["ghost-transfer", "defer-account"]) await page.getByTestId(`choice-${id}`).click();
+  await expect(page.getByTestId("objectives")).toContainText("Attach her account");
+  await page.reload(); await page.getByTestId("continue-run").click();
+  for (const id of ["return-witness", "review-account", "file-account"]) await page.getByTestId(`choice-${id}`).click();
+  await expect(page.getByTestId("objectives")).toContainText("1/1 complete");
+  const state = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(state.flags.witness_method_ghost).toBe(true); expect(state.flags.witness_consent).toBe(true); expect(state.flags.order_verified).toBe(true);
+});
+
+test("a second transfer retains the compromised promise and honest revisit", async ({ page }) => {
+  await openRun(page, fixture("act2_middle", { creds: 150, flags: { memory_prepared: true, memory_witness: true, witness_lost: true, witness_done: true, order_verified: true }, journal: [{ id: "nia-account", text: "Approved account.", kind: "fact" }, { id: "ward-nine", text: "The memo.", kind: "fact" }] }));
+  for (const id of ["repair-location", "fund-second-room"]) await page.getByTestId(`choice-${id}`).click();
+  await expect(page.getByTestId("objectives")).toContainText("1 compromised");
+  for (const id of ["stand", "back-to-board", "to-the-wall", "to-ward-nine", "visit-nia"]) await page.getByTestId(`choice-${id}`).click();
+  await expect(page.getByTestId("scene-text")).toContainText("first one still gets calls");
+  for (const id of ["acknowledge-nia", "face-sera", "read-names"]) await page.getByTestId(`choice-${id}`).click();
+  await expect(page.locator(".aftermath")).toContainText("first location remains");
+});
+
+test("a specialist source answers the public challenge and changes the records visit", async ({ page }) => {
+  await openRun(page, fixture("act2_middle", { flags: { memory_prepared: true, memory_public_claim: true, memory_intact: true, perk_trained: true, perk_chrome: true }, journal: [{ id: "ward-nine", text: "The memo.", kind: "fact" }] }));
+  for (const id of ["trace-order", "isolate-key", "keep-chain", "hear-response"]) await page.getByTestId(`choice-${id}`).click();
+  await expect(page.getByTestId("choice-repeat-public-claim")).toHaveCount(0);
+  for (const id of ["answer-with-source", "stand", "back-to-board", "to-the-wall", "to-ward-nine", "visit-records"]) await page.getByTestId(`choice-${id}`).click();
+  await expect(page.getByTestId("scene-text")).toContainText("independent source");
+  for (const id of ["keep-limits", "face-sera", "read-names"]) await page.getByTestId(`choice-${id}`).click();
+  await expect(page.locator(".aftermath")).toContainText("worker locations withheld");
 });
 
 

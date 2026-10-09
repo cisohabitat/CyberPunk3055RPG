@@ -4,6 +4,8 @@ Saint Shard should grow into a premium narrative RPG with exceptional writing, p
 
 This plan covers six production phases from discovery through launch and continuing support. It supersedes the short-term scope of [ROADMAP.md](ROADMAP.md) for future production; that file remains the record of foundations already implemented. Proposed dates, quantities, thresholds, and budgets below are planning assumptions to validate in preproduction. They do not describe funded commitments or completed work.
 
+Current implementation progress is recorded in the [production slice expansion](PRODUCTION_SLICE.md). Its additional gameplay advances this program without marking the future production-quality, research, asset, or launch gates complete.
+
 ## Played baseline and production gaps
 
 On 9 October 2026, three campaigns were played through the local production build at code revision `df1b4bc`. Each started through character creation and continued through all three acts to a finale. Browser-driven play covered 115 choice activations and 41 distinct scenes. Dice were controlled: eight on successful checks and one on the two selected failure checks. These runs establish route behavior and support design observations; they do not measure ordinary completion time, spontaneous player decisions, or satisfaction.
