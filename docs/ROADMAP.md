@@ -1,6 +1,8 @@
 # Six-phase AAA ambition roadmap
 
-The original review graded the game **6.5/10 as a narrative RPG prototype**. This score is a qualitative assessment, not a player study. The current implementation substantially improves reliability, agency, continuity, and accessibility; a revised overall grade needs playtest evidence. AAA production quality requires a sustained art, performance, editorial, accessibility, and release program beyond code completion.
+The original review graded the game **6.5/10 as a narrative RPG prototype**. The [current review](REVIEW.md) grades it provisionally at **7.0/10**. These are qualitative assessments, not external player studies. The current implementation improves reliability, agency, continuity, and accessibility. AAA production quality requires a sustained art, performance, editorial, accessibility, and release program beyond code completion.
+
+For the full future program, see the [AAA level production plan](AAA_PRODUCTION_PLAN.md): three played campaigns, a proposed 24–30 month schedule, six production phases, campaign scope, systems and authoring work, art and audio pipelines, team capacity, budget assumptions, recurring playtests, launch gates, and twelve months of support. The table below records foundations already implemented; it does not mark those future production phases complete.
 
 | Phase | Implemented in this candidate | Evidence | Remaining production milestone |
 | --- | --- | --- | --- |
