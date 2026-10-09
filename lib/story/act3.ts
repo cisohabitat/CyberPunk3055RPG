@@ -24,7 +24,7 @@ function wallText(state: GameState): string {
     : "The second row is rain. You do not have the memo's name yet.";
   const neighbor =
     state.factions.wards >= 2
-      ? "The wards already know you. A neighbor's name is readable with no check and no optic: Nia Pell, level three, the cousin who signed the housing slip."
+      ? "The wards already know you. Beside the memorial, Sera keeps a private witness ledger. Nia Pell is a living witness, the cousin who signed the housing slip, not one of the dead. Her name is readable without a check or an optic; her current address is not on display."
       : "";
   const window = hasJournal(state, "calibration")
     ? "The four-minute window is still in your head. The scratches look like a clock."

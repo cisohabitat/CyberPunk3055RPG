@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
-import { createCharacter, commitChoice, getScene, presentChoices, previewCheck, stageCheck } from "./engine.ts";
+import { createCharacter, commitChoice, getScene, presentChoices, previewCheck, stageCheck, sceneText } from "./engine.ts";
 import { aftermath, FRAGMENTS } from "./evidence.ts";
 import { importRun, exportRun } from "./vault.ts";
 import { parseSave } from "./storage.ts";
@@ -158,6 +158,13 @@ describe("commitments and evidence continuity", () => {
     assert.equal(objectives(state)[0].status, "Unresolved");
     assert.match(objectives(state)[0].detail, /week ended/);
     assert.deepEqual(objectives(base()), []);
+  });
+  it("keeps a living witness out of the memorial's list of the dead", () => {
+    const state = { ...base(), sceneId: "ward_wall", factions: { ...base().factions, wards: 2 }, flags: { memory_witness: true, witness_safe: true } };
+    const text = sceneText(getScene(state.sceneId), state);
+    assert.match(text, /Nia Pell is a living witness/);
+    assert.match(text, /current address is not on display/);
+    assert.doesNotMatch(text, /Nia Pell, level three/);
   });
   it("does not invent a testimony or attached account in the aftermath", () => {
     assert.match(aftermath(base()).find((row) => row.title === "Mara")!.text, /no recorded account/);

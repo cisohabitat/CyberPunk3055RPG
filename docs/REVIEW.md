@@ -15,7 +15,7 @@ The weighted score is 7.025, rounded to 7.0. These grades describe the reviewed 
 
 ## Findings addressed in this revision
 
-- **Evidence continuity:** preserving the archive previously selected the verified aftermath without an authenticated issuing key. It now describes a retained but unverified receipt. The exposed-location witness route previously recorded corroboration without setting the corresponding state; it now does so while keeping the privacy failure explicit.
+- **Evidence continuity:** preserving the archive previously selected the verified aftermath without an authenticated issuing key. It now describes a retained but unverified receipt. The exposed-location witness route previously recorded corroboration without setting the corresponding state; it now does so while keeping the privacy failure explicit. At the wall, Nia is explicitly in a private witness ledger beside the memorial, rather than being presented as one of the dead or exposing her address.
 - **Objective continuity:** memory promises could disappear among journal entries, and a safe room could be mistaken for a completed witness account. A compact commitments panel and contextual next step now distinguish transport, recording, corroboration, compromised privacy, and unresolved work. Week-closing choices warn about open memory promises.
 - **Phone pacing:** the memory panel repeated three long sealed descriptions before the inspection controls. Inspection now happens inside each fragment row; inspected source details expand on request.
 - **Input and reading controls:** the controller previously moved focus through sliders/selects without changing their values. Left/right now adjusts settings and switches sheet tabs. Reduced motion previously forced whole-scene reading despite a paragraph preference; those settings are now independent. Number-key repeats and number keys inside the desktop sheet cannot accidentally advance the story.
@@ -34,6 +34,6 @@ See [the six-phase roadmap](ROADMAP.md) and [release gates](RELEASE.md). AAA is 
 
 ## Verification evidence
 
-The release candidate passes 69 unit tests, including 900 seeded campaigns, TypeScript checking, and a production build. The local browser matrix covers desktop and phone Chromium plus WebKit; GitHub CI additionally checks Firefox. Inspection-source focus and the uninterrupted memory/witness campaign have targeted regression coverage.
+The release candidate passes 70 unit tests, including 900 seeded campaigns, TypeScript checking, and a production build. The local browser matrix covers desktop and phone Chromium plus WebKit; GitHub CI additionally checks Firefox. Inspection-source focus and the uninterrupted memory/witness campaign have targeted regression coverage.
 
 A production preview at a 390 × 844 browser viewport placed the first memory inspection control at y=624, within the initial screen. Inspection moved focus to the revealed source summary. Desktop and phone preview sessions reported no page errors. This is viewport evidence, not a physical-device performance measurement.

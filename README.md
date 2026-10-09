@@ -97,3 +97,5 @@ This review adds a compact commitments panel, contextual next steps, and warning
 Audio resumes from an explicit player gesture when sound is enabled or a saved sound-enabled run is continued, so browser autoplay restrictions do not strand the score. Unsupported audio remains optional.
 
 Inspecting a memory fragment opens its source text and moves focus to that source summary; the player can revisit or collapse inspected sources.
+
+At Ward Nine, Nia appears in a private witness ledger beside the memorial; she is explicitly a living witness, and her current address is not displayed.
