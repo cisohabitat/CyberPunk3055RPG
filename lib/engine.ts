@@ -133,6 +133,9 @@ export function presentChoices(state: GameState, scene: Scene): VisibleChoice[] 
     if (choice.requireFaction && state.factions[choice.requireFaction.faction] < choice.requireFaction.min) {
       return { ...choice, enabled: false, disabledReason: `Need ${FACTION_INFO[choice.requireFaction.faction].name} standing ${choice.requireFaction.min}` };
     }
+    if (choice.requireStrain !== undefined && state.strain < choice.requireStrain) {
+      return { ...choice, enabled: false, disabledReason: state.strain === 0 ? "No strain to recover" : `Need Strain ${choice.requireStrain}` };
+    }
     if (choice.requireCreds !== undefined && state.creds < choice.requireCreds) {
       return { ...choice, enabled: false, disabledReason: `Need ${choice.requireCreds} creds` };
     }

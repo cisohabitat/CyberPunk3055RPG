@@ -1,3 +1,4 @@
+import { equippedKits } from "./loadout";
 import type { GameState } from "./types";
 
 export const FRAGMENTS = [
@@ -34,5 +35,7 @@ export function aftermath(state: GameState): { title: string; text: string }[] {
   if (state.flags.archive_custody) rows.push({ title: "Edda", text: state.flags.edda_exposed || state.flags.archive_method_face || state.flags.archive_method_nerve ? `The source can be traced to Edda. Her shift is suspended pending review.${state.flags.edda_supported ? " Your forty-creds contribution bridges the shift; it does not settle the review or erase exposure." : " The employment review remains unresolved."}` : "The circulating source withholds Edda’s name. Her shifts remain posted; Sera retains the original for inspection." });
   if (state.flags.testimony_published) rows.push({ title: "The public hearing", text: `${state.flags.testimony_source ? state.flags.archive_key_authenticated ? "The filed account identifies an authenticated issuing key." : "The filed account distinguishes independent corroboration from digital-key authentication." : "The filed account leaves corroboration unresolved. Public confidence supplied no new evidence."} ${state.flags.nia_public_consent ? "Nia authorized her approved words for this account through Sera, with her address withheld." : "Nia’s private recording was not quoted publicly."}${state.flags.testimony_corrected ? " The unsupported claim and its correction remain attached." : ""}` });
   else if (state.flags.testimony_withdrawn) rows.push({ title: "The public hearing", text: "You withdrew the draft. Attendees may remember the hearing; Nia’s recording was not opened to public circulation." });
+  for (const kit of equippedKits(state)) rows.push({ title: "Field equipment", text: `The ${kit.name} remains in your kit. It was available for specific mission checks without replacing a safe room, source, or person’s consent.` });
+  if (state.flags.week_recovered) rows.push({ title: "Your recovery", text: state.flags.recovery_clinic ? "You paid for staffed recovery. The pressure eased; the money stayed spent, and your outside promises kept their own status." : state.flags.recovery_favor ? "The clinic covered your rest at a cost to its trust. Recovery did not erase a location breach or verify a source." : "You took a short rest beside the canal. It eased pressure without completing the work waiting outside." });
   return rows;
 }

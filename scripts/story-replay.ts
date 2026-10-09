@@ -8,7 +8,7 @@ if (!files.length) throw new Error("No campaign replay fixtures found");
 for (const file of files) {
   try {
     const result = replayCampaign(JSON.parse(readFileSync(file, "utf8")) as ReplaySpec);
-    console.log(JSON.stringify({ file, name: result.name, steps: result.transcript.length, sceneId: result.state.sceneId, restoredCheckpoints: result.transcript.filter((step) => step.restored).length }));
+    console.log(JSON.stringify({ file, name: result.name, steps: result.transcript.length, sceneId: result.state.sceneId, creds: result.state.creds, strain: result.state.strain, restoredCheckpoints: result.transcript.filter((step) => step.restored).length }));
   } catch (error) {
     console.error(`${file}: ${error instanceof Error ? error.message : String(error)}`);
     process.exitCode = 1;

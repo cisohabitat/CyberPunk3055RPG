@@ -1,6 +1,9 @@
+import { FIELD_KITS } from "./loadout";
+
 export type ItemDef = { name: string; blurb: string };
 
 export const ITEMS: Record<string, ItemDef> = {
+  ...Object.fromEntries(FIELD_KITS.map((kit) => [kit.id, { name: kit.name, blurb: kit.uses }])),
   "signal-baffle": { name: "Signal Baffle", blurb: "A shielded receiver. Adds +1 to tracing a tower receipt. Quiet machines still leave paper." },
   "burner-route": { name: "Burner Route", blurb: "A one-use freight clearance. Move a witness without a checkpoint roll; the clearance burns afterward." },
   "witness-token": { name: "Shelter Token", blurb: "A room reserved by the wards. Grants a safe witness transfer without spending creds. The room is spent when used." },

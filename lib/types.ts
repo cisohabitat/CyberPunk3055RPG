@@ -75,6 +75,7 @@ export type Choice = {
   requireJournal?: string;
   hideIfJournal?: string;
   requireCreds?: number;
+  requireStrain?: number;
   requireFaction?: { faction: FactionId; min: number };
   check?: CheckSpec;
   effects?: EffectSpec;

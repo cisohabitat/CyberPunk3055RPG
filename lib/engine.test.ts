@@ -14,6 +14,7 @@ import {
 } from "./engine.ts";
 import { aftermath } from "./evidence";
 import { testimonyPacket } from "./testimony";
+import { FIELD_KITS } from "./loadout";
 import { ITEMS } from "./items.ts";
 import { parseSave } from "./storage.ts";
 import { journalTitle } from "./journal.ts";
@@ -752,5 +753,66 @@ describe("public hearing source scope and witness permission", () => {
     assert.equal(state.flags.nia_public_consent, true); assert.equal(state.flags.testimony_published, undefined);
     assert.equal(state.flags.archive_key_authenticated, undefined);
     assert.match(aftermath(state).find((row) => row.title === "The public hearing")!.text, /not opened/);
+  });
+});
+
+
+describe("field equipment and bounded recovery", () => {
+  const support = (sceneId: string): GameState => ({ ...make("spire", { chrome: 2, nerve: 0, face: 0, ghost: 0 }), sceneId, creds: 300, strain: 4 });
+  it("offers four distinct kits, charges once, and preserves their provenance across saves", () => {
+    for (const kit of FIELD_KITS) {
+      const before = support("act2_workshop"); let state = step(before, `buy-${kit.id}`);
+      assert.deepEqual(state.stats, before.stats); assert.equal(state.creds, before.creds - kit.price);
+      state = parseSave(JSON.stringify(state))!; assert.ok(state.items.includes(kit.id));
+      assert.match(state.journal.find((entry) => entry.id === "field-kit")!.text, new RegExp(kit.name));
+      assert.equal(presentChoices(state, getScene(state.sceneId)).some((c) => c.id === "visit-workshop"), false);
+      assert.throws(() => step({ ...state, sceneId: "act2_workshop" }, `buy-${kit.id}`));
+    }
+  });
+  it("blocks unaffordable purchases and leaves a poor witness runner a route forward", () => {
+    let state = { ...support("act2_workshop"), creds: 150 };
+    state = step(state, "buy-archive-probe"); assert.equal(state.creds, 10);
+    state = { ...state, sceneId: "act2_witness_door" };
+    assert.equal(presentChoices(state, getScene(state.sceneId)).find((c) => c.id === "pay-room")!.enabled, false);
+    assert.equal(presentChoices(state, getScene(state.sceneId)).find((c) => c.id === "slip-witness")!.enabled, true);
+    assert.equal(step(state, "leave-witness").sceneId, "act2_middle");
+    assert.throws(() => step({ ...support("act2_workshop"), creds: 99 }, "buy-desk-guide"));
+  });
+  it("applies each kit only to its authored mission checks and retains legacy die outcomes", () => {
+    for (const [item,scene,id] of [["archive-probe","act2_archive_door","trace-receipt"],["chair-harness","act2_witness_plan","steady-chair"],["desk-guide","act2_witness_checkpoint","argue-transfer"],["route-shroud","act2_witness_door","slip-witness"]]) {
+      const state = support(scene); const choice = getScene(scene).choices.find((c) => c.id === id)!;
+      const equipped = { ...state, items: [...state.items, item] };
+      assert.equal(previewCheck(equipped, choice.check!).bonus, previewCheck(state, choice.check!).bonus + 2);
+      const unrelated = getScene("pay").choices.find((c) => c.id === "haggle")!;
+      assert.deepEqual(previewCheck(equipped, unrelated.check!), previewCheck(state, unrelated.check!));
+    }
+    const legacy = { ...support("act2_archive_door"), pendingCheck: { sceneId: "act2_archive_door", choiceId: "trace-receipt", roll: 1 } };
+    const restored = parseSave(JSON.stringify(legacy))!;
+    assert.equal(step(restored, "trace-receipt", 1).sceneId, "act2_archive_gap");
+  });
+  it("charges paid care once, shows actual bounded relief, and preserves exposure", () => {
+    let state = { ...support("act2_recovery"), strain: 1, flags: { witness_lost: true } };
+    const choice = getScene(state.sceneId).choices.find((c) => c.id === "pay-recovery")!;
+    assert.ok(effectPreview(state, choice).includes("Strain -1"));
+    state = step(state, "pay-recovery"); assert.equal(state.strain, 0); assert.equal(state.creds, 255);
+    assert.equal(state.flags.witness_lost, true); assert.equal(state.flags.order_verified, undefined);
+    state = parseSave(JSON.stringify(state))!; state = step(state, "return-after-recovery");
+    assert.equal(presentChoices(state, getScene(state.sceneId)).some((c) => c.id === "take-recovery"), false);
+    assert.throws(() => step({ ...state, sceneId: "act2_recovery", strain: 5 }, "pay-recovery"));
+  });
+  it("uses clinic trust as a real opportunity cost and keeps paid care after betrayal", () => {
+    const before = { ...support("act2_recovery"), factions: { ...support("act2_recovery").factions, lumen: 2 } };
+    const state = step(before, "favor-recovery"); assert.equal(state.factions.lumen, 1); assert.equal(state.strain, 2); assert.equal(state.creds, before.creds);
+    const transfer = getScene("act2_witness_checkpoint").choices.find((c) => c.id === "argue-transfer")!.check!;
+    assert.equal(previewCheck(before, transfer).bonus, previewCheck(state, transfer).bonus + 1);
+    const betrayed = { ...before, flags: { betrayed_lumen: true } };
+    assert.throws(() => step(betrayed, "favor-recovery")); assert.equal(step(betrayed, "pay-recovery").strain, 1);
+  });
+  it("allows free bounded relief without funds and rejects forged zero-strain care", () => {
+    const before = { ...support("act2_recovery"), creds: 0 };
+    const state = step(before, "short-recovery"); assert.equal(state.strain, 3); assert.equal(state.creds, 0);
+    const rested = { ...before, strain: 0 }; const canonical = getScene(rested.sceneId).choices.find((c) => c.id === "short-recovery")!;
+    assert.throws(() => commitChoice(rested, { ...canonical, requireStrain: undefined }));
+    assert.equal(step(rested, "leave-recovery").sceneId, "act2_middle");
   });
 });

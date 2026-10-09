@@ -1,3 +1,4 @@
+import { SUPPORT_SCENES } from "./support";
 import { TESTIMONY_SCENES } from "./testimony";
 import { ARCHIVE_SCENES } from "./archive";
 import type { Scene } from "../types";
@@ -18,6 +19,7 @@ export const SCENES: Record<string, Scene> = {
   ...TESTIMONY_SCENES,
   ...MEMORY_SCENES,
   ...MISSION_SCENES,
+  ...SUPPORT_SCENES,
   ...ARCHIVE_SCENES,
   ...OPERATION_SCENES,
 };

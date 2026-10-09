@@ -327,3 +327,32 @@ test("an exposed witness cannot be publicly quoted and a draft can be withdrawn"
   const saved = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
   expect(saved.flags.order_verified).toBeUndefined(); expect(saved.flags.nia_public_consent).toBeUndefined(); expect(saved.flags.testimony_published).toBeUndefined(); expect(saved.flags.testimony_corrected).toBe(true);
 });
+
+test("field equipment costs compete with care and survive reload into check previews", async ({ page }) => {
+  await openRun(page, fixture("districts", { creds: 150 }));
+  await page.getByTestId("choice-visit-workshop").click();
+  await expect(page.getByTestId("field-kit-brief")).toContainText("Private witness care costs 90");
+  expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
+  await page.getByTestId("choice-buy-archive-probe").click();
+  await expect(page.getByTestId("choice-visit-workshop")).toHaveCount(0);
+  await page.reload(); await page.getByTestId("continue-run").click();
+  await page.evaluate(() => { const run = JSON.parse(localStorage.getItem("saint-shard-3055-v1")!); run.sceneId = "act2_archive_door"; localStorage.setItem("saint-shard-3055-v1", JSON.stringify(run)); });
+  await page.reload(); await page.getByTestId("continue-run").click();
+  await expect(page.getByTestId("field-kit-brief")).toContainText("Archive Probe · equipped");
+  await page.getByTestId("choice-trace-receipt").click();
+  await expect(page.locator("dialog[open]")).toContainText("Archive Probe");
+  const stored = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(stored.creds).toBe(10); expect(stored.stats.chrome).toBe(3); expect(stored.items).toContain("archive-probe");
+});
+
+test("paid recovery keeps a breach recorded and cannot be repeated after reload", async ({ page }) => {
+  await openRun(page, fixture("act2_middle", { creds: 100, strain: 4, flags: { witness_lost: true } }));
+  await page.getByTestId("choice-take-recovery").click();
+  expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
+  await page.getByTestId("choice-pay-recovery").click();
+  await page.reload(); await page.getByTestId("continue-run").click();
+  await page.getByTestId("choice-return-after-recovery").click();
+  await expect(page.getByTestId("choice-take-recovery")).toHaveCount(0);
+  const state = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(state.creds).toBe(55); expect(state.strain).toBe(1); expect(state.flags.witness_lost).toBe(true); expect(state.flags.order_verified).toBeUndefined();
+});

@@ -238,6 +238,7 @@ export const ACT2_SCENES: Record<string, Scene> = {
     location: "District board, Ward Four",
     text: districtText,
     choices: [
+      { id: "visit-workshop", label: "Compare field equipment at the repair bench.", detail: "One purchased kit this week. Keep funds for recovery and witness care.", hideIfAnyFlag: ["kit_bought", "act2_done"], next: "act2_workshop" },
       { id: "origin-contract", label: "Call the contact who knew you before this job.", detail: "An origin-specific favor can earn a shelter, receiver, or freight clearance.", hideIfAnyFlag: ["origin_done", "act2_done"], next: (state) => `act2_origin_${state.origin}` },
       {
         id: "to-kerr",
@@ -451,6 +452,7 @@ export const ACT2_SCENES: Record<string, Scene> = {
     location: "The dry canal",
     text: middleText,
     choices: [
+      { id: "take-recovery", label: "Make time for a recovery visit.", detail: "Once this week: paid care, a clinic favor, or a short rest. Recovery supplies no evidence or witness safety.", requireStrain: 1, hideIfFlag: "week_recovered", next: "act2_recovery" },
       { id: "protect-witness", label: "Finish the promise to Nia Pell.", detail: "Move a living witness. A private roster did not give her a safe room.", requireAnyFlag: ["memory_redacted", "memory_witness"], hideIfFlag: "witness_done", next: (state) => state.flags.witness_briefed ? "act2_witness_door" : "act2_witness_brief" },
       { id: "return-witness", label: "Return when Nia is ready to review her account.", detail: "The safe room remains hers. Recording still needs her approval.", requireFlag: "witness_deferred", next: "act2_witness_arrival" },
       { id: "repair-location", label: "Respond to the tower's inquiry at Nia's clinic.", detail: "A second move can protect her new location; it cannot erase the first breach.", requireFlag: "witness_lost", hideIfFlag: "witness_relocated", next: "act2_witness_repair" },

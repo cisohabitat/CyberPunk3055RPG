@@ -7,7 +7,7 @@ export type ReplaySpec = {
   name: string;
   character: Parameters<typeof createCharacter>[0];
   steps: ReplayStep[];
-  expected: { sceneId: string; flags?: Record<string, boolean>; journal?: string[] };
+  expected: { sceneId: string; flags?: Record<string, boolean>; journal?: string[]; creds?: number; strain?: number; items?: string[] };
 };
 
 const restore = (state: GameState) => {
@@ -41,5 +41,7 @@ export function replayCampaign(spec: ReplaySpec) {
     if (typeof expected !== "boolean" || Boolean(state.flags[flag]) !== expected) throw new Error(`${spec.name}: flag ${flag} did not match ${expected}`);
   }
   for (const id of spec.expected.journal ?? []) if (!state.journal.some((entry) => entry.id === id)) throw new Error(`${spec.name}: missing journal source ${id}`);
+  for (const key of ["creds", "strain"] as const) if (spec.expected[key] !== undefined && state[key] !== spec.expected[key]) throw new Error(`${spec.name}: ${key} expected ${spec.expected[key]}, reached ${state[key]}`);
+  for (const item of spec.expected.items ?? []) if (!state.items.includes(item)) throw new Error(`${spec.name}: missing equipment ${item}`);
   return { name: spec.name, state, transcript };
 }

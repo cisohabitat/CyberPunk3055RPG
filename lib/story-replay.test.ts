@@ -5,7 +5,7 @@ import { replayCampaign, type ReplaySpec } from "./story-replay";
 
 const load = (name: string): ReplaySpec => JSON.parse(readFileSync(`qa/routes/${name}.json`, "utf8"));
 describe("deterministic campaign replay", () => {
-  for (const name of ["authenticated", "witness-permission", "bounded-correction"]) it(`replays ${name} through saved checkpoints to an original finale`, () => {
+  for (const name of ["authenticated", "witness-permission", "bounded-correction", "kit-archive", "kit-harness", "kit-guide", "kit-shroud"]) it(`replays ${name} through saved checkpoints to an original finale`, () => {
     const spec = load(name); const result = replayCampaign(spec);
     assert.deepEqual(result, replayCampaign(spec));
     assert.ok(result.transcript.some((step) => step.restored && step.roll));
@@ -20,5 +20,7 @@ describe("deterministic campaign replay", () => {
   it("rejects a route whose asserted evidence state is false", () => {
     const spec = load("bounded-correction");
     assert.throws(() => replayCampaign({ ...spec, expected: { ...spec.expected, flags: { archive_key_authenticated: true } } }), /flag archive_key_authenticated/);
+    assert.throws(() => replayCampaign({ ...spec, expected: { ...spec.expected, creds: 0 } }), /creds expected 0/);
+    assert.throws(() => replayCampaign({ ...spec, expected: { ...spec.expected, items: ["archive-probe"] } }), /missing equipment archive-probe/);
   });
 });

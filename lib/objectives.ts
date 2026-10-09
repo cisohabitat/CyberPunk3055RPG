@@ -43,6 +43,9 @@ export function nextStep(state: GameState): string {
   }
   if (state.sceneId === "memory_reconstruction" || state.sceneId === "memory_challenge") return "Separate authorization, the later cancellation, and the questions neither source settles.";
   if (state.sceneId === "memory_publication") return "Label the account's certainty. Custody and witness safety are separate decisions.";
+  if (state.sceneId === "act2_workshop") return "Compare one kit against the money needed for care. Tools improve specific checks, not base stats.";
+  if (state.sceneId === "act2_recovery") return "Choose paid care, a clinic favor, or a short rest. Use this week’s recovery visit once.";
+  if (state.sceneId === "act2_recovery_after") return "Pressure eased; evidence, witness safety, and publication still need their own decisions.";
   if (state.sceneId === "act2_witness_brief") return "Agree what Nia authorizes before arranging the move.";
   if (state.sceneId === "act2_witness_plan") return "Choose one preparation. Your trained skill can unlock a different transfer method.";
   if (state.sceneId === "act2_witness_arrival") return "Nia has a safe room. Let her review the account, or return before the week closes.";

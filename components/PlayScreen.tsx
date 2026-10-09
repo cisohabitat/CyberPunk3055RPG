@@ -15,6 +15,7 @@ import type { Preferences } from "@/lib/preferences";
 import { ObjectiveBrief } from "./ObjectiveBrief";
 import { unresolvedPromises } from "@/lib/objectives";
 import { MemoryPlate } from "./MemoryPlate";
+import { FieldKitBrief } from "./FieldKitBrief";
 import { TestimonyBrief } from "./TestimonyBrief";
 import { ArchiveBrief } from "./ArchiveBrief";
 import { TransferBrief } from "./TransferBrief";
@@ -264,6 +265,7 @@ export function PlayScreen({
             <TransferBrief state={state} />
             <ArchiveBrief state={state} />
             <TestimonyBrief state={state} />
+            <FieldKitBrief state={state} />
             {scene.memory && <MemoryPlate key={scene.id} state={state} choices={choices} onInspect={pick} />}
             <div className="prose" data-testid="scene-text">
               {paragraphs.slice(0, visibleCount).map((paragraph, index) => (
