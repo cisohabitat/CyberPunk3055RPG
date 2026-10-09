@@ -69,6 +69,38 @@ test("private receipt prose and choices fit largest text at 320 pixels", async (
   await expect(page.getByTestId("choice-record-private-reply")).toBeVisible();
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
 });
+test("acquired sources are keyboard-readable without granting proof", async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 844 });
+  await openRun(page, fixture("memory_publication", { flags: { memory_prepared: true, memory_assurance_heard: true }, journal: [
+    { id: "mara-assurance", text: "Mara says she accepted a crew assignment; no dispatch confirmation is attached.", kind: "claim" },
+    { id: "public-packet", text: "An earlier allegation.", kind: "claim" },
+    { id: "packet-correction", text: "A later correction.", kind: "claim" },
+  ] }));
+  await page.getByRole("button", { name: "Settings", exact: true }).click();
+  await page.getByLabel("Text size").selectOption("2"); await page.getByLabel("Contrast", { exact: true }).selectOption("high");
+  await page.getByRole("button", { name: "Done", exact: true }).click();
+  const summary = page.getByTestId("source-ledger").locator("summary"); await summary.focus(); await page.keyboard.press("Enter");
+  await expect(page.getByTestId("source-ledger")).toHaveAttribute("open", "");
+  await expect(page.getByTestId("source-ledger")).toContainText("Recorded as claim");
+  await expect(page.getByTestId("source-ledger")).toContainText("Independent corroboration still needed");
+  await expect(page.getByTestId("source-ledger")).toContainText("An earlier allegation");
+  await expect(page.getByTestId("source-ledger")).toContainText("A later correction");
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations).toEqual([]);
+  const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(run.flags.order_verified).toBeUndefined(); expect(run.flags.nia_public_consent).toBeUndefined();
+});
+test("source review preserves quotation limits after relocation", async ({ page }) => {
+  await openRun(page, fixture("act3_testimony_review", { flags: { order_verified: true, witness_lost: true, witness_relocated: true, nia_contact_relay: true }, journal: [
+    { id: "nia-account", text: "Approved private recording.", kind: "fact" },
+    { id: "verified-order", text: "Independent corroboration, not an authenticated key.", kind: "fact" },
+  ] }));
+  await page.getByTestId("source-ledger").locator("summary").click();
+  await expect(page.getByTestId("source-ledger")).toContainText("key not authenticated");
+  await expect(page.getByTestId("source-ledger")).toContainText("Public quotation withheld after location breach");
+  await page.getByTestId("choice-scope-corroborated").click();
+  await expect(page.getByTestId("choice-ask-public-permission")).toHaveCount(0);
+});
 async function openRun(page: Page, state = fixture()) {
   await page.addInitScript((run) => {
     if (!localStorage.getItem("saint-shard-3055-v1")) localStorage.setItem("saint-shard-3055-v1", JSON.stringify(run));

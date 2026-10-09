@@ -227,7 +227,7 @@ If a network/device profile cannot meet a budget, optimize, supply a reduced ass
 - All shipped assets have documented rights, credits, and distribution terms. Store claims match implemented behavior and measured support.
 - CI Test and Build pass for the exact release revision; rollback, save compatibility, and support response are rehearsed.
 
-Dates do not override these gates. Regrade using the same weighted rubric as [REVIEW.md](REVIEW.md), supported by independent reviews and player observations. An internal target of at least 8.5/10 overall with no area below 8 can guide decisions; it does not predict review scores or establish AAA status.
+Dates do not override these gates. Regrade using the same weighted rubric as [REVIEW.md](REVIEW.md), supported by independent reviews and player observations. The revised internal target is a weighted 9.35/10 overall with no area below 9.0, using the existing review weights and independent whole-campaign evidence; this can guide decisions; it does not predict review scores or establish AAA status.
 
 ## Phase 6 Launch and continuing production
 

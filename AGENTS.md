@@ -182,3 +182,7 @@ An optional second JSON-authored encounter at the canal compares housing slips, 
 ### Delayed distribution and character boundaries
 
 At Ward Nine, the clinic notice gets a separate reply: two private receipt acknowledgements, an observed public window with callback requests, or unresolved staff dispatch. Public-window replies allow a ten-creds private reply channel or free withdrawal; neither confirms replacement appointments nor erases earlier observation. Nia’s optional contact conversation distinguishes a clinic relay from a pause in questions, with no new recording/public consent. Original visits remain usable. Save version 2, `saint-shard-3055-v1`, four finales and rules stay stable.
+
+### Acquired-source review
+
+The reconstruction/publication bench, archive comparison, district challenge, records visit and public hearing expose a keyboard-accessible acquired-source disclosure. It retains journal attribution, original claims/corrections and current corroboration/quotation status without supplying new evidence. The public hearing still shows its source-strength summary. A private contact relay is not public quotation; a prior location breach still withholds it. No player data is uploaded.

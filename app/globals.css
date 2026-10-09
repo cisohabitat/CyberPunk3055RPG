@@ -892,3 +892,10 @@ html[data-motion="reduce"] *, html[data-motion="reduce"] *::before, html[data-mo
 
 .portrait-placeholder { aspect-ratio: 3 / 4; background: linear-gradient(145deg, #0d2630, #100f16); }
 html[data-artwork="none"] .scene { background-color: #09080d; }
+
+.source-ledger { margin-top: .75rem; }
+.source-ledger summary { cursor: pointer; line-height: 1.5; overflow-wrap: anywhere; }
+.source-ledger ul { padding-left: 1.25rem; }
+.source-ledger li { margin: 1rem 0; overflow-wrap: anywhere; }
+.source-ledger h3 { font-size: 1em; margin-bottom: .3rem; }
+.source-ledger p { line-height: 1.6; }
