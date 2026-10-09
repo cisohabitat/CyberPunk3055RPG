@@ -242,11 +242,11 @@ test("a second transfer retains the compromised promise and honest revisit", asy
 
 test("a specialist source answers the public challenge and changes the records visit", async ({ page }) => {
   await openRun(page, fixture("act2_middle", { flags: { memory_prepared: true, memory_public_claim: true, memory_intact: true, perk_trained: true, perk_chrome: true }, journal: [{ id: "ward-nine", text: "The memo.", kind: "fact" }] }));
-  for (const id of ["trace-order", "isolate-key", "keep-chain", "hear-response"]) await page.getByTestId(`choice-${id}`).click();
+  for (const id of ["trace-order", "agree-archive-terms", "skip-archive-prep", "separate-source-tests", "isolate-key", "withhold-technician", "keep-chain", "hear-response"]) await page.getByTestId(`choice-${id}`).click();
   await expect(page.getByTestId("choice-repeat-public-claim")).toHaveCount(0);
   for (const id of ["answer-with-source", "stand", "back-to-board", "to-the-wall", "to-ward-nine", "visit-records"]) await page.getByTestId(`choice-${id}`).click();
   await expect(page.getByTestId("scene-text")).toContainText("independent source");
-  for (const id of ["keep-limits", "face-sera", "read-names"]) await page.getByTestId(`choice-${id}`).click();
+  for (const id of ["keep-limits", "go-wall", "face-sera", "read-names"]) await page.getByTestId(`choice-${id}`).click();
   await expect(page.locator(".aftermath")).toContainText("worker locations withheld");
 });
 
@@ -268,4 +268,35 @@ test("a delayed audio resume cannot block optional score loading or play", async
   await page.getByRole("button", { name: "Done", exact: true }).click();
   await page.getByTestId("choice-inspect-signature").click();
   await expect(page.getByTestId("memory-plate")).toContainText("1 / 3 inspected");
+});
+
+test("archive comparison, custody and worker follow-through survive reload", async ({ page }) => {
+  await openRun(page, fixture("act2_middle", { creds: 100, flags: { memory_prepared: true, memory_intact: true, perk_face: true } }));
+  await page.getByRole("button", { name: "Settings", exact: true }).click();
+  await page.getByLabel("Reading pace").selectOption("all");
+  await page.getByRole("button", { name: "Done", exact: true }).click();
+  await page.getByTestId("choice-trace-order").click();
+  await page.getByTestId("choice-agree-archive-terms").click();
+  await page.getByTestId("choice-skip-archive-prep").click();
+  await page.getByTestId("choice-catalog-is-proof").click();
+  await expect(page.getByTestId("scene-text")).toContainText("It isn't the record");
+  await page.getByTestId("choice-revise-source-test").click();
+  await expect(page.getByTestId("archive-brief")).toContainText("Only a successful key match");
+  const accessibility = await new AxeBuilder({ page }).analyze(); expect(accessibility.violations).toEqual([]);
+  await page.getByTestId("choice-request-invoice").click();
+  await expect(page.getByTestId("scene-text")).toContainText("Do not describe a maintenance countersignature");
+  await page.reload(); await page.getByTestId("continue-run").click();
+  await page.getByTestId("choice-withhold-technician").click();
+  await page.getByTestId("choice-keep-chain").click();
+  // Advance the same persisted run to the later visit without inventing a new source.
+  await page.evaluate(() => { const run = JSON.parse(localStorage.getItem("saint-shard-3055-v1")!); run.sceneId = "act3_neighborhood"; localStorage.setItem("saint-shard-3055-v1", JSON.stringify(run)); });
+  await page.reload(); await page.getByTestId("continue-run").click();
+  await page.getByTestId("choice-visit-edda").click();
+  await expect(page.getByTestId("scene-text")).toContainText("suspended pending a records review");
+  await page.getByTestId("choice-bridge-edda-shift").click();
+  await expect(page.getByTestId("choice-visit-edda")).toHaveCount(0);
+  await page.getByTestId("choice-visit-records").click(); await page.getByTestId("choice-keep-limits").click();
+  await expect(page.getByTestId("choice-visit-records")).toHaveCount(0);
+  const stored = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(stored.creds).toBe(60); expect(stored.flags.edda_supported).toBe(true); expect(stored.flags.archive_key_authenticated).toBeUndefined();
 });

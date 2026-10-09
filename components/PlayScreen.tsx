@@ -15,6 +15,7 @@ import type { Preferences } from "@/lib/preferences";
 import { ObjectiveBrief } from "./ObjectiveBrief";
 import { unresolvedPromises } from "@/lib/objectives";
 import { MemoryPlate } from "./MemoryPlate";
+import { ArchiveBrief } from "./ArchiveBrief";
 import { TransferBrief } from "./TransferBrief";
 import { aftermath } from "@/lib/evidence";
 import { endingCoda } from "@/lib/story";
@@ -210,6 +211,7 @@ export function PlayScreen({
                   {scene.location}
                   <span className="act-chip"> · {actName(state)}</span>
                 </p>
+                {!scene.endingTitle && <h1 className="sr-only">{scene.location} · {actName(state)}</h1>}
                 <p className="goal" data-testid="goal">{currentGoal(state)}</p>
                 <p className="sr-only" aria-live="polite">
                   {scene.location}. {actName(state)}. {currentGoal(state)}
@@ -259,6 +261,7 @@ export function PlayScreen({
             </div>
             <ObjectiveBrief state={state} />
             <TransferBrief state={state} />
+            <ArchiveBrief state={state} />
             {scene.memory && <MemoryPlate key={scene.id} state={state} choices={choices} onInspect={pick} />}
             <div className="prose" data-testid="scene-text">
               {paragraphs.slice(0, visibleCount).map((paragraph, index) => (

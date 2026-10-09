@@ -55,8 +55,9 @@ export const OPERATION_SCENES: Record<string, Scene> = {
     id: "act3_neighborhood", location: "Ward Nine", speaker: "Sera",
     text: (state) => `The way to the wall passes the clinic and a table where neighbors compare maintenance notices. The people from your week are here before your ending.\n\n${state.flags.witness_relocated ? "Lumen has left a message: Nia's second room is private. The first entry is still on the register." : state.flags.witness_lost ? "A tower inquiry sits unopened on the clinic desk. It names the room your transfer registered." : state.flags.witness_safe ? "The clinic has a blank address field and a message from Nia: ask before visiting." : state.flags.memory_witness || state.flags.memory_redacted ? "The clinic still has a transfer chair waiting. A protected roster did not finish the journey." : "The clinic has no transfer arranged in your name. Your promise concerned the archive."}\n\n${state.flags.memory_doubled_down ? "At the records table, a neighbor has stopped signing your packet." : state.flags.memory_corrected ? "At the records table, your correction is clipped to the allegation. Neither has been erased." : state.flags.memory_source_shared ? "At the records table, the independent source is attached. People can inspect the chain without a home address." : "At the records table, the export is still being compared with what people remember."}\n\nYou can hear what changed before going to the wall.`,
     choices: [
-      { id: "visit-nia", label: "Ask whether Nia wants a visitor.", requireAnyFlag: ["witness_safe", "witness_lost"], next: "act3_witness_visit" },
-      { id: "visit-records", label: "Sit at the records table.", next: "act3_records_visit" },
+      { id: "visit-nia", label: "Ask whether Nia wants a visitor.", requireAnyFlag: ["witness_safe", "witness_lost"], hideIfFlag: "visited_nia", next: "act3_witness_visit" },
+      { id: "visit-records", label: "Sit at the records table.", hideIfFlag: "visited_records", next: "act3_records_visit" },
+      { id: "visit-edda", label: "Answer Edda’s message about the archive.", requireFlag: "archive_custody", hideIfFlag: "visited_edda", next: "act3_edda_visit" },
       { id: "go-wall", label: "Go directly to the names.", next: "ward_wall" },
     ],
   },
@@ -64,12 +65,12 @@ export const OPERATION_SCENES: Record<string, Scene> = {
     id: "act3_witness_visit", location: "Witness room, Ward Nine", speaker: "Nia Pell",
     text: (state) => `${state.flags.witness_relocated ? "Nia answers through the clinic relay. 'The second room is quiet. The first one still gets calls. Both belong in your account.'" : state.flags.witness_lost ? "Nia agrees to a call through Lumen. 'They know the room. Don't tell the wall I was protected because you still have my words.'" : "Nia agrees to a visit through Sera. She has put the photograph where she can see it from bed. 'The room is mine to name. That matters more than what you called the job.'"}\n\n${state.journal.some((entry) => entry.id === "nia-account") ? "Her approved account is with Sera. She asks you to describe its source without turning her into a symbol." : "The recorder is still off. She has not given you an account to attach. A safe room bought no testimony."}\n\nShe asks which part you will remember when the wall asks for a sentence.`,
     choices: [
-      { id: "acknowledge-nia", label: "Remember the person and the limits she set.", effects: { flags: ["visited_nia"] }, next: "ward_wall" },
+      { id: "acknowledge-nia", label: "Remember the person and the limits she set.", effects: { flags: ["visited_nia"] }, next: (state) => state.flags.archive_custody ? "act3_neighborhood" : "ward_wall" },
     ],
   },
   act3_records_visit: {
     id: "act3_records_visit", location: "Ward Nine records table", speaker: "Sera",
     text: (state) => `${state.flags.order_verified ? "A mechanic has checked the independent source against the export. He points to two decisions: Mara's signature, then the cancellation. 'Now I can ask two questions instead of repeating one accusation.'" : "A mechanic has put a question mark beside the issuing key. 'The file says evacuation was canceled. I still need to know who sent it. Don't rub out the question mark because the wall is waiting.'"}\n\n${state.flags.memory_doubled_down ? "He has crossed his name off the distribution list. He will read a new source; he will not repeat the same unsupported certainty." : state.flags.memory_corrected ? "Your correction stays attached to the original packet. He says a correction is worth keeping because the first sentence already traveled." : "He keeps both the source and its limits in view."}\n\nSera closes the ledger. The names on the wall do not settle this inquiry. They tell you why it has to continue.`,
-    choices: [{ id: "keep-limits", label: "Leave the source and its limits available for inspection.", effects: { flags: ["visited_records"] }, next: "ward_wall" }],
+    choices: [{ id: "keep-limits", label: "Leave the source and its limits available for inspection.", effects: { flags: ["visited_records"] }, next: (state) => state.flags.archive_custody ? "act3_neighborhood" : "ward_wall" }],
   },
 };

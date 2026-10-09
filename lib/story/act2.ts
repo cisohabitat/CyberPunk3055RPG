@@ -455,7 +455,7 @@ export const ACT2_SCENES: Record<string, Scene> = {
       { id: "return-witness", label: "Return when Nia is ready to review her account.", detail: "The safe room remains hers. Recording still needs her approval.", requireFlag: "witness_deferred", next: "act2_witness_arrival" },
       { id: "repair-location", label: "Respond to the tower's inquiry at Nia's clinic.", detail: "A second move can protect her new location; it cannot erase the first breach.", requireFlag: "witness_lost", hideIfFlag: "witness_relocated", next: "act2_witness_repair" },
       { id: "hear-response", label: "Read the neighborhood's response to your packet.", detail: "Answer the source challenge before closing the week.", requireFlag: "memory_prepared", hideIfFlag: "memory_response_done", next: "act2_public_response" },
-      { id: "trace-order", label: "Trace Helion's counter-order.", detail: "Authenticate the command chain. An exported archive can draw surveillance.", requireFlag: "memory_intact", hideIfFlag: "archive_done", next: "act2_archive_door" },
+      { id: "trace-order", label: "Trace Helion's counter-order.", detail: "Authenticate the command chain. An exported archive can draw surveillance.", requireFlag: "memory_intact", hideIfFlag: "archive_done", next: (state) => state.flags.memory_prepared && !state.flags.archive_briefed ? "act2_archive_brief" : "act2_archive_door" },
       {
         id: "pay-tab",
         label: "Pay Quill's tab.",

@@ -67,7 +67,7 @@ describe("memory evidence and promises", () => {
     let state = step(examined(), "seal-full");
     assert.equal(state.flags.memory_intact, true); assert.equal(state.strain, 2);
     state = { ...state, sceneId: "act2_middle" };
-    state = step(state, "trace-order"); state = step(state, "trace-receipt", 10); state = step(state, "keep-chain");
+    state = step(state, "trace-order"); state = step(state, "agree-archive-terms"); state = step(state, "skip-archive-prep"); state = step(state, "separate-source-tests"); state = step(state, "trace-receipt", 10); state = step(state, "withhold-technician"); state = step(state, "keep-chain");
     assert.equal(state.flags.order_verified, true); assert.equal(state.flags.archive_done, true);
     assert.match(aftermath(state).find((row) => row.title === "Mara")!.text, /counter-order/);
     assert.equal(presentChoices(state, getScene(state.sceneId)).some((choice) => choice.id === "trace-order"), false);

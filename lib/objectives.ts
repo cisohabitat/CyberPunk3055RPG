@@ -51,6 +51,11 @@ export function nextStep(state: GameState): string {
   if (state.sceneId === "act3_neighborhood") return "Visit the people and records changed by your week, or go directly to the wall.";
   if (state.sceneId === "act2_witness_checkpoint") return "Recover the transfer at this checkpoint. A registered room provides care but exposes Nia's location.";
   if (state.sceneId === "act2_witness_safe") return "Attach Nia's account. A safe room and a recorded witness are separate steps.";
+  if (state.sceneId === "act2_archive_brief") return "Agree source access and publication limits before searching.";
+  if (state.sceneId === "act2_archive_prep") return "Prepare one retrieval route. A failed probe leaves staffed recovery available.";
+  if (["act2_archive_compare", "act2_archive_challenge"].includes(state.sceneId)) return "Distinguish a catalog, a corroborating ledger, and an authenticated issuing key.";
+  if (state.sceneId === "act2_archive_custody") return "Choose public attribution. Withholding a name cannot erase an existing signed extraction.";
+  if (state.sceneId === "act3_edda_visit") return "Hear the source’s employment consequences; support does not settle the review.";
   if (state.sceneId === "act2_archive_gap") return "Corroborate the receipt through the ledger, or record the gap honestly.";
   if (state.sceneId === "act2_middle") {
     if (objectives(state).some((row) => row.status === "Open")) return "Your memory promise is still open. Finish it here before closing the week, or choose to leave it unresolved.";

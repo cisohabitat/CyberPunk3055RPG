@@ -655,3 +655,46 @@ describe("saves", () => {
     assert.deepEqual(parseSave(JSON.stringify(state))?.handle, "Rex");
   });
 });
+
+describe("staged archive source and custody", () => {
+  const archiveRun = (): GameState => ({ ...make("spire", { chrome: 2, nerve: 0, face: 0, ghost: 0 }), sceneId: "act2_middle", flags: { memory_intact: true, memory_prepared: true } });
+  it("plays preparation, corrects catalog certainty, authenticates and restores custody", () => {
+    let state = step(archiveRun(), "trace-order");
+    assert.equal(state.sceneId, "act2_archive_brief");
+    state = step(state, "agree-archive-terms"); state = step(state, "index-archive", 10);
+    state = step(state, "catalog-is-proof"); assert.equal(state.flags.order_verified, undefined);
+    state = step(state, "revise-source-test");
+    const choice = presentChoices(state, getScene(state.sceneId)).find((c) => c.id === "trace-receipt")!;
+    assert.ok(previewCheck(state, choice.check!).parts.some((part) => part.label === "Index compared"));
+    state = step(state, "trace-receipt", 10); assert.equal(state.sceneId, "act2_archive_custody");
+    state = parseSave(JSON.stringify(state))!;
+    assert.equal(state.flags.archive_key_authenticated, true);
+    state = step(state, "withhold-technician"); state = step(state, "keep-chain");
+    assert.equal(state.flags.archive_custody, true); assert.equal(state.flags.edda_exposed, undefined);
+    assert.ok(metCast(state).some((person) => person.name === "Edda"));
+  });
+  it("keeps legacy archive retrieval direct and does not call an invoice key authentication", () => {
+    let legacy = { ...archiveRun(), sceneId: "act2_archive_door", flags: { memory_intact: true } };
+    const restored = parseSave(JSON.stringify({ ...legacy, pendingCheck: { sceneId: legacy.sceneId, choiceId: "trace-receipt", roll: 10 } }));
+    assert.ok(restored); assert.equal(restored.pendingCheck?.roll, 10);
+    assert.equal(step(restored, "trace-receipt", 10).sceneId, "act2_archive_verified");
+    let state = step(archiveRun(), "trace-order"); state = step(state, "agree-archive-terms");
+    state = step(state, "skip-archive-prep"); state = step(state, "separate-source-tests");
+    state = { ...state, flags: { ...state.flags, perk_face: true } }; state = step(state, "request-invoice");
+    assert.equal(state.flags.archive_key_authenticated, undefined);
+    assert.match(sceneText(getScene(state.sceneId), state), /Do not describe a maintenance countersignature/);
+    state = step(state, "withhold-technician"); state = { ...state, sceneId: "act3_edda_visit", creds: 100 };
+    assert.match(sceneText(getScene(state.sceneId), state), /suspended pending a records review/);
+    state = step(state, "bridge-edda-shift"); assert.equal(state.creds, 60);
+    assert.equal(presentChoices(state, getScene(state.sceneId)).some((c) => c.id === "visit-edda"), false);
+  });
+  it("recovers a failed probe through a paid ledger and preserves attribution exposure", () => {
+    let state = step(archiveRun(), "trace-order"); state = step(state, "agree-archive-terms");
+    state = step(state, "watch-archive", 1); state = step(state, "separate-source-tests");
+    state = step(state, "trace-receipt", 1); assert.equal(state.sceneId, "act2_archive_gap");
+    state = { ...state, creds: 100 }; state = step(state, "buy-ledger");
+    assert.equal(state.sceneId, "act2_archive_custody"); assert.equal(state.flags.archive_key_authenticated, undefined);
+    state = step(state, "ask-named-source"); assert.equal(state.flags.edda_public_consent, true);
+    assert.equal(state.flags.edda_exposed, true);
+  });
+});

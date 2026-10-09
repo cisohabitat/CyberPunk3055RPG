@@ -292,6 +292,7 @@ export function commitChoice(
     Ives: "met_ives",
     Sera: "met_sera",
     "Nia Pell": "met_nia",
+    Edda: "met_edda",
   };
   const met = scene.speaker ? metFlag[scene.speaker] : undefined;
   if (met && !next.flags[met]) next = { ...next, flags: { ...next.flags, [met]: true } };
