@@ -11,7 +11,10 @@
     "predev": "node scripts/generate-audio.mjs",
     "prebuild": "node scripts/generate-audio.mjs",
     "pretest": "node scripts/generate-audio.mjs",
-    "story:replay": "tsx scripts/story-replay.ts"
+    "story:replay": "tsx scripts/story-replay.ts",
+    "production:report": "tsx scripts/production-report.ts",
+    "production:probe": "node scripts/performance-probe.mjs",
+    "production:verify": "node scripts/verify-production.mjs"
   },
   "dependencies": {
     "next": "^15.5.4",

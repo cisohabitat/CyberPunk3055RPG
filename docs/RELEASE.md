@@ -42,3 +42,9 @@ Record the last passing commit and deployment before promotion. If a candidate l
 ## Localization preparation
 
 Keep stable ids separate from displayed prose. Inventory speaker labels, choice text, source labels, settings, error messages, codas, and dynamic aftermath before extracting strings. Test expansion and plurals. No translated language is advertised until its narrative and UI have been reviewed in that language.
+
+## Production report and candidate evidence
+
+After building, run `npm run production:report`. CI generates the same report and runs `production:verify` against a temporary production server, then retains production evidence for thirty days. It includes source/route coverage, authored mission data, an offline review catalog, asset hashes, and provisional per-file/aggregate gzip envelopes from `qa/production/budgets.json`. Technical violations fail Build. Hashes do not certify rights, and synthetic resource probes do not certify device support.
+
+Commercial candidate review uses `npm run production:report -- --release`, which fails while any of the six independent gates in `qa/production/acceptance.json` remains pending or lacks supporting evidence. The report validates evidence-reference existence. Gate status must come from completed human work. Existing demo hosting retains its established Test/Build deployment gate. See [six-phase execution](PHASE_EXECUTION.md) and the [research protocol](RESEARCH.md).

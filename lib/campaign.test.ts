@@ -1,3 +1,4 @@
+import { sceneMood } from "./sound";
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 import { createCharacter, commitChoice, getScene, presentChoices, previewCheck, stageCheck, sceneText } from "./engine.ts";
@@ -201,5 +202,24 @@ describe("employment commitment continuity", () => {
     assert.equal(row.status, "Complete"); assert.match(row.detail, /records inquiry continues/);
     assert.equal(promiseStatus("edda-shift-request", done.flags), "Temporary paid work");
     assert.equal(done.flags.edda_exposed, true); assert.equal(done.flags.edda_public_consent, undefined);
+  });
+});
+
+
+describe("presentation compatibility", () => {
+  it("defaults older preferences to illustrated play and validates text-only mode", () => {
+    assert.equal(parsePreferences("{}").artwork,"full");
+    assert.equal(parsePreferences(JSON.stringify({artwork:"none"})).artwork,"none");
+    assert.equal(parsePreferences(JSON.stringify({artwork:"unknown"})).artwork,"full");
+  });
+});
+
+
+describe("Week score routing", () => {
+  it("keeps chapel and ward identity while giving the week its own street bed", () => {
+    assert.equal(sceneMood("District board","The Week"),"week");
+    assert.equal(sceneMood("Glass Chapel","The Week"),"chapel");
+    assert.equal(sceneMood("Ward Nine coolant station","The Week"),"ward");
+    assert.equal(sceneMood("Noodle stall"),"street");
   });
 });

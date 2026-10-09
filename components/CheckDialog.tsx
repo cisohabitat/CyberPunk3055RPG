@@ -17,6 +17,7 @@ export function CheckDialog({
   onCommit,
   onStage,
   reducedMotion,
+  artwork = true,
 }: {
   state: GameState;
   choice: Choice;
@@ -26,6 +27,7 @@ export function CheckDialog({
   onCommit: (next: GameState) => void;
   onStage: (next: GameState) => void;
   reducedMotion: boolean;
+  artwork?: boolean;
 }) {
   const preview = previewCheck(state, choice.check!);
   const [restored] = useState(() => state.pendingCheck ? commitChoice(state, choice, { roll: state.pendingCheck.roll }) : null);
@@ -106,7 +108,7 @@ export function CheckDialog({
           </p>
           <p>{result.flavor}</p>
           <div className="reaction">
-            <Portrait speaker={speaker} origin={state.origin} handle={state.handle} />
+            <Portrait speaker={speaker} origin={state.origin} handle={state.handle} artwork={artwork} />
             <p>{reactionLine(speaker, result.success)}</p>
           </div>
           {result.crit === "success" && <p>A ten. Strain eases.</p>}

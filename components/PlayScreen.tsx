@@ -55,6 +55,7 @@ export function PlayScreen({
   const [sheetOpen, setSheetOpen] = useState(false);
   const [confirmAbandon, setConfirmAbandon] = useState(false);
   const sound = preferences.sound;
+  const mood = sceneMood(scene.location, actName(state));
   const [fault, setFault] = useState("");
   const [delta, setDelta] = useState<string[]>([]);
   const [flash, setFlash] = useState(false);
@@ -75,9 +76,9 @@ export function PlayScreen({
   }, [preferences.motion]);
 
   useEffect(() => {
-    setBed(sound, sceneMood(scene.location));
+    setBed(sound, mood);
     if (sound) playCue(locationCue(scene.location, Boolean(scene.ending)));
-  }, [sound, scene.id, scene.location, scene.ending]);
+  }, [sound, mood, scene.id, scene.location, scene.ending]);
 
   useEffect(() => () => { setBed(false); }, []);
 
@@ -204,10 +205,10 @@ export function PlayScreen({
             id="scene-top"
             tabIndex={-1}
             data-testid="scene"
-            style={{ backgroundImage: `linear-gradient(180deg, rgba(9,8,13,0.72), rgba(9,8,13,0.94)), url(${placeArt(scene.location)})` }}
+            style={{ backgroundImage: preferences.artwork === "none" ? undefined : `linear-gradient(180deg, rgba(9,8,13,0.72), rgba(9,8,13,0.94)), url(${placeArt(scene.location)})` }}
           >
             <div className="scene-row">
-              <Portrait speaker={scene.speaker} origin={state.origin} handle={state.handle} />
+              <Portrait speaker={scene.speaker} origin={state.origin} handle={state.handle} artwork={preferences.artwork !== "none"} />
               <div>
                 <p className="kicker">
                   {scene.location}
@@ -299,8 +300,8 @@ export function PlayScreen({
                       disabled={!choice.enabled || activeChoice !== null}
                       onClick={() => pick(choice)}
                     >
-                      {scene.id === "districts" && DISTRICT_ART[choice.id] && (
-                        <img className="card-art" src={DISTRICT_ART[choice.id]} alt="" />
+                      {preferences.artwork !== "none" && scene.id === "districts" && DISTRICT_ART[choice.id] && (
+                        <img className="card-art" src={DISTRICT_ART[choice.id]} alt="" loading="lazy" width={320} height={180} />
                       )}
                       <span className="index">{index + 1}</span>
                       <span className="label">{choice.label}</span>
@@ -340,6 +341,7 @@ export function PlayScreen({
           choice={activeChoice}
           sound={sound}
           reducedMotion={reduceMotion}
+          artwork={preferences.artwork !== "none"}
           onStage={onChange}
           speaker={scene.speaker}
           onClose={() => setPending(null)}

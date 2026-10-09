@@ -423,3 +423,39 @@ test("a declined private application closes the optional route", async ({ page }
   const state = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
   expect(state.flags.edda_shift_done).toBe(true); expect(state.flags.edda_shift_consent).toBeUndefined(); expect(state.flags.edda_public_consent).toBeUndefined();
 });
+
+test("text-only mode avoids artwork requests through reload and a rolled result", async ({ page }) => {
+  const art: string[]=[]; page.on("request",request=>{if(request.url().includes("/art/")) art.push(request.url());});
+  await page.addInitScript(()=>localStorage.setItem("saint-shard-preferences",JSON.stringify({artwork:"none",motion:"reduce"})));
+  await openRun(page,fixture("pay"));
+  await expect(page.locator("img.portrait")).toHaveCount(0); await expect(page.getByTestId("goal")).toBeInViewport();
+  await page.getByTestId("choice-haggle").click(); await page.getByTestId("roll-button").click();
+  await page.reload(); await page.getByTestId("continue-run").click();
+  await expect(page.locator("img.portrait")).toHaveCount(0); await page.getByTestId("continue-check").click();
+  expect(art).toEqual([]); expect((await new AxeBuilder({page}).analyze()).violations).toEqual([]);
+  await page.getByRole("button",{name:"Settings",exact:true}).click();
+  await expect(page.getByLabel("Artwork",{exact:true})).toHaveValue("none");
+  await page.getByLabel("Artwork",{exact:true}).selectOption("full"); await page.getByRole("button",{name:"Done",exact:true}).click();
+  await expect(page.locator("img.portrait")).toBeVisible();
+});
+
+test("district cards omit images in text-only mode and Week audio loads on demand", async ({page})=>{
+  await page.addInitScript(()=>localStorage.setItem("saint-shard-preferences",JSON.stringify({artwork:"none"})));
+  await openRun(page,fixture("districts")); await expect(page.locator("img.card-art")).toHaveCount(0);
+  await page.getByRole("button",{name:"Settings",exact:true}).click();
+  const response=page.waitForResponse(r=>r.url().endsWith("/audio/theme-week.wav")&&r.status()===200);
+  await page.getByLabel("Sound enabled",{exact:true}).check(); await response;
+  await page.getByLabel("Sound enabled",{exact:true}).uncheck(); await page.getByRole("button",{name:"Done",exact:true}).click();
+  await page.getByTestId("choice-to-kerr").click(); await expect(page.getByTestId("choice-hear-kerr")).toBeVisible();
+});
+
+test("a coolant follow-up spends trust once and describes a future appointment",async({page})=>{
+  await openRun(page,fixture("act3_pump_visit",{flags:{pump_restored:true,pump_done:true},factions:{quill:0,lumen:0,helion:0,wards:2}}));
+  for(const id of ["book-pump-inspection","wards-pump-inspection"]) await page.getByTestId(`choice-${id}`).click();
+  await page.reload(); await page.getByTestId("continue-run").click();
+  await expect(page.getByTestId("choice-book-pump-inspection")).toHaveCount(0);
+  await page.getByRole("button",{name:"Settings",exact:true}).click(); await page.getByLabel("Reading pace").selectOption("all"); await page.getByRole("button",{name:"Done",exact:true}).click();
+  await expect(page.getByTestId("scene-text")).toContainText("inspection itself is still due");
+  const saved=await page.evaluate(()=>JSON.parse(localStorage.getItem("saint-shard-3055-v1")!)); expect(saved.factions.wards).toBe(1); expect(saved.flags.order_verified).toBeUndefined();
+  expect((await new AxeBuilder({page}).analyze()).violations).toEqual([]);
+});

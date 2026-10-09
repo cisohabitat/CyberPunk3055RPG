@@ -4,7 +4,7 @@ Saint Shard should grow into a premium narrative RPG with exceptional writing, p
 
 This plan covers six production phases from discovery through launch and continuing support. It supersedes the short-term scope of [ROADMAP.md](ROADMAP.md) for future production; that file remains the record of foundations already implemented. Proposed dates, quantities, thresholds, and budgets below are planning assumptions to validate in preproduction. They do not describe funded commitments or completed work.
 
-Current implementation progress is recorded in the [production slice expansion](PRODUCTION_SLICE.md). Its additional gameplay advances this program without marking the future production-quality, research, asset, or launch gates complete.
+Current implementation progress is recorded in the [production slice expansion](PRODUCTION_SLICE.md) and [six-phase execution record](PHASE_EXECUTION.md). Its additional gameplay advances this program without marking the future production-quality, research, asset, or launch gates complete.
 
 ## Played baseline and production gaps
 

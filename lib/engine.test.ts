@@ -925,3 +925,25 @@ describe("Edda's private employment request", () => {
     const poor = step({ ...methods, creds: 0 }, "leave-shift-pending"); assert.equal(poor.sceneId, "act3_edda_reply");
   });
 });
+
+describe("coolant maintenance appointment", () => {
+  const repaired = (): GameState => ({ ...make("spire", {chrome:2,nerve:0,face:0,ghost:0}), sceneId:"act3_pump_visit",creds:30,flags:{pump_done:true,pump_restored:true} });
+  it("charges one future appointment, preserves cooling and survives a reload", () => {
+    const scheduled=step(step(repaired(),"book-pump-inspection"),"pay-pump-inspection");
+    const restored=parseSave(JSON.stringify(scheduled))!;
+    assert.equal(restored.creds,10); assert.equal(restored.flags.pump_inspection_booked,true);
+    assert.equal(restored.flags.order_verified,undefined);
+    assert.match(restored.journal.at(-1)!.text,/has not yet occurred/);
+    assert.throws(()=>step({...restored,sceneId:"act3_pump_schedule"},"pay-pump-inspection"));
+    assert.match(aftermath(restored).find(row=>row.title==="The clinic coolant")!.text,/has not happened yet/);
+  });
+  it("spends real neighborhood standing and blocks unfunded or unrepaired appointments", () => {
+    const state={...repaired(),factions:{...repaired().factions,wards:2}};
+    const done=step(step(state,"book-pump-inspection"),"wards-pump-inspection");
+    assert.equal(done.factions.wards,1); assert.equal(done.creds,30);
+    assert.throws(()=>step({...repaired(),flags:{pump_done:true,pump_failed:true}},"book-pump-inspection"));
+    const scheduled=step(repaired(),"book-pump-inspection");
+    assert.throws(()=>step({...scheduled,creds:19},"pay-pump-inspection"));
+    assert.equal(step(scheduled,"leave-pump-schedule").flags.pump_inspection_booked,undefined);
+  });
+});

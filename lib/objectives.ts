@@ -29,6 +29,7 @@ export function objectives(state: GameState): Objective[] {
     });
   }
   if (state.flags.edda_shift_consent) rows.push({ id: "edda-shift", title: "Bridge Edda’s suspended shift", status: state.flags.edda_shift_paid ? "Complete" : state.flags.edda_shift_done ? "Unresolved" : "Open", detail: state.flags.edda_shift_paid ? "Edda accepted one paid bench assignment. Archive access remains suspended and the records inquiry continues." : state.flags.edda_representation ? "A representative booked a review appointment. The sixty-creds fee bought no restored shift or inquiry decision." : state.flags.edda_shift_done ? "The signed application remains pending; no paid assignment was offered." : "Edda authorized a private payroll request. Choose one form of help, then record the actual response." });
+  if (state.flags.pump_attempted || state.flags.pump_done) rows.push({ id: "coolant", title: "Respond to the clinic coolant emergency", status: !state.flags.pump_done ? "Open" : state.flags.pump_left ? "Unresolved" : "Complete", detail: !state.flags.pump_done ? state.flags.pump_restored ? "Cooling is restored. Choose custody of the maintenance receipt before returning." : "The pump attempt failed. Arrange cold-storage transfer or leave its outcome unobserved." : state.flags.pump_restored ? `The spare restored cooling.${state.flags.pump_inspection_booked ? " A follow-up inspection is booked, but has not happened yet." : " Another inspection remains due."} This supplies no historical evidence.` : state.flags.pump_supplies_saved ? "Medicines reached another cold cabinet. The pump still needs a replacement relay." : "You left the transfer to clinic staff. Its delivery outcome was not observed by you." });
   return rows;
 }
 
@@ -44,6 +45,11 @@ export function nextStep(state: GameState): string {
   }
   if (state.sceneId === "memory_reconstruction" || state.sceneId === "memory_challenge") return "Separate authorization, the later cancellation, and the questions neither source settles.";
   if (state.sceneId === "memory_publication") return "Label the account's certainty. Custody and witness safety are separate decisions.";
+  if (state.sceneId === "act2_pump_brief") return "Choose whether to help. Kerr’s earlier response can earn assistance; present maintenance supplies no historical proof.";
+  if (state.sceneId === "act2_pump_methods") return "Choose one repair approach. Failure still leaves a cold-storage transfer route.";
+  if (state.sceneId === "act2_pump_triage") return "Preserve the medicines with a courier or carrying route, or leave staff to arrange an unobserved transfer.";
+  if (state.sceneId === "act2_pump_report") return "Choose who keeps the repair receipt. Patient names stay out of both copies.";
+  if (state.sceneId === "act3_pump_schedule") return "Book one future inspection with money or neighborhood standing. A booked visit is not a completed inspection.";
   if (state.sceneId === "act2_workshop") return "Compare one kit against the money needed for care. Tools improve specific checks, not base stats.";
   if (state.sceneId === "act2_recovery") return "Choose paid care, a clinic favor, or a short rest. Use this week’s recovery visit once.";
   if (state.sceneId === "act2_recovery_after") return "Pressure eased; evidence, witness safety, and publication still need their own decisions.";

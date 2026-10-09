@@ -26,6 +26,7 @@ export function journalEntry(item: string | JournalEntry): JournalEntry {
 export const JOURNAL_TITLES: Record<string, string> = {
   "edda-shift-request": "Edda’s private payroll request",
   "edda-shift-response": "Edda’s payroll reply",
+  "pump-inspection": "Coolant inspection appointment",
   "pump-repair": "Clinic coolant repair",
   "pump-transfer": "Cold-storage transfer",
   "ward-nine": "Ward Nine",

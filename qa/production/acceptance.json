@@ -1,0 +1,8 @@
+[
+  {"id":"discovery","phase":1,"requirement":"Consented discovery research, scope and funding acceptance","status":"pending","evidence":[]},
+  {"id":"slice","phase":2,"requirement":"Two fresh-player cohorts and independent slice craft review","status":"pending","evidence":[]},
+  {"id":"authoring-access","phase":3,"requirement":"Writer-authored mission review and supported assistive-technology flow","status":"pending","evidence":[]},
+  {"id":"content-rights","phase":4,"requirement":"Narrative edit, commissioned audiovisual acceptance and documented asset rights","status":"pending","evidence":[]},
+  {"id":"device-localization","phase":5,"requirement":"Named physical-device budgets, manual accessibility and native-language acceptance","status":"pending","evidence":[]},
+  {"id":"launch","phase":6,"requirement":"Release sign-off, rollback rehearsal, support staffing and launch capacity review","status":"pending","evidence":[]}
+]

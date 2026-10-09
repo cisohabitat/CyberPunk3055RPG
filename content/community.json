@@ -1,0 +1,544 @@
+{
+  "version": 1,
+  "scenes": [
+    {
+      "id": "act2_pump_brief",
+      "location": "Ward Nine coolant station",
+      "speaker": "Sister Lumen",
+      "text": "A pump beneath the clinic has stopped. Lumen has twenty minutes of cold storage left, and a trolley beside the cabinet. This is today's worn relay, not evidence of the dump that killed Ward Nine.\n\n'Help the room before you make it a sentence,' she says. 'If the spare won't start, we move the medicines.'\n\nKerr is standing at the freight gate. He has a service key and the same bad knee. Whether he stays depends on what passed between you in Ward Four.",
+      "choices": [
+        {
+          "id": "ask-kerr-pump",
+          "label": "Ask Kerr to hold the service door.",
+          "requireFlag": "kerr_told",
+          "hideIfAnyFlag": [
+            "kerr_sold_you",
+            "pump_kerr",
+            "pump_attempted",
+            "pump_done"
+          ],
+          "detail": "He heard the names earlier. His help adds +1 to this pump attempt; it grants no evidence.",
+          "effects": {
+            "flags": [
+              "pump_kerr"
+            ]
+          },
+          "next": "act2_pump_methods"
+        },
+        {
+          "id": "work-pump",
+          "label": "Choose a way to restore the coolant.",
+          "hideIfAnyFlag": [
+            "pump_attempted",
+            "pump_done"
+          ],
+          "next": "act2_pump_methods"
+        },
+        {
+          "id": "leave-pump-brief",
+          "label": "Leave Lumen to move the cabinet. Keep your other commitments.",
+          "next": "act2_middle"
+        }
+      ]
+    },
+    {
+      "id": "act2_pump_methods",
+      "location": "Ward Nine coolant station",
+      "speaker": "Kerr",
+      "text": [
+        {
+          "select": [
+            {
+              "when": {
+                "all": [
+                  "pump_kerr"
+                ]
+              },
+              "text": "Kerr props the door with his service key. 'The knee won't hold a wheel. The door I can do.' He stays where you can see him."
+            },
+            {
+              "when": {
+                "all": [
+                  "kerr_sold_you"
+                ]
+              },
+              "text": "Kerr leaves the gate key on a hook. 'You have no reason to want me behind you.' He steps out of the room."
+            }
+          ],
+          "fallback": "Kerr points out the service entrance, then leaves. The key belongs to this door, not to a favor you have earned."
+        },
+        "The relay, dispatcher, freight passage, and bypass offer different routes to the same spare circuit. There is time for one attempt. Your investigation equipment was designed for readers and transfers; it gives no pump bonus. If the attempt fails, the medicines still have a transfer route."
+      ],
+      "choices": [
+        {
+          "id": "isolate-pump",
+          "label": "Isolate the damaged relay and restart the spare.",
+          "hideIfAnyFlag": [
+            "pump_attempted",
+            "pump_done"
+          ],
+          "check": {
+            "stat": "chrome",
+            "dc": 8,
+            "label": "Restore the clinic coolant",
+            "flagBonuses": [
+              {
+                "flag": "pump_kerr",
+                "amount": 1,
+                "label": "Kerr holds the service door"
+              }
+            ]
+          },
+          "successEffects": {
+            "flags": [
+              "pump_attempted",
+              "pump_restored",
+              "pump_chrome"
+            ]
+          },
+          "failEffects": {
+            "flags": [
+              "pump_attempted",
+              "pump_failed",
+              "pump_chrome"
+            ],
+            "strain": 1
+          },
+          "resultSuccess": "The spare takes the load. The clinic's cold cabinet returns to its marked range.",
+          "resultFail": "The relay trips again. The cabinet has to be emptied before another restart.",
+          "nextSuccess": "act2_pump_report",
+          "nextFail": "act2_pump_triage"
+        },
+        {
+          "id": "dispatch-pump",
+          "label": "Get the maintenance dispatcher to send the spare crew.",
+          "hideIfAnyFlag": [
+            "pump_attempted",
+            "pump_done"
+          ],
+          "check": {
+            "stat": "face",
+            "dc": 8,
+            "label": "Restore the clinic coolant",
+            "flagBonuses": [
+              {
+                "flag": "pump_kerr",
+                "amount": 1,
+                "label": "Kerr holds the service door"
+              }
+            ]
+          },
+          "successEffects": {
+            "flags": [
+              "pump_attempted",
+              "pump_restored",
+              "pump_face"
+            ]
+          },
+          "failEffects": {
+            "flags": [
+              "pump_attempted",
+              "pump_failed",
+              "pump_face"
+            ],
+            "strain": 1
+          },
+          "resultSuccess": "You secure a repair slot under the pump number. The crew asks for no patient list.",
+          "resultFail": "The dispatcher closes the emergency slot. Lumen starts packing the cold cabinet.",
+          "nextSuccess": "act2_pump_report",
+          "nextFail": "act2_pump_triage"
+        },
+        {
+          "id": "route-pump",
+          "label": "Reach the service valve through the closed freight passage.",
+          "hideIfAnyFlag": [
+            "pump_attempted",
+            "pump_done"
+          ],
+          "check": {
+            "stat": "ghost",
+            "dc": 8,
+            "label": "Restore the clinic coolant",
+            "flagBonuses": [
+              {
+                "flag": "pump_kerr",
+                "amount": 1,
+                "label": "Kerr holds the service door"
+              }
+            ]
+          },
+          "successEffects": {
+            "flags": [
+              "pump_attempted",
+              "pump_restored",
+              "pump_ghost"
+            ]
+          },
+          "failEffects": {
+            "flags": [
+              "pump_attempted",
+              "pump_failed",
+              "pump_ghost"
+            ],
+            "strain": 1
+          },
+          "resultSuccess": "You open the bypass from the dry side. The gauge climbs into its marked range.",
+          "resultFail": "The freight gate locks before you reach the valve. There is no safe second pass tonight.",
+          "nextSuccess": "act2_pump_report",
+          "nextFail": "act2_pump_triage"
+        },
+        {
+          "id": "brace-pump",
+          "label": "Hold the manual bypass while Lumen switches the circuit.",
+          "hideIfAnyFlag": [
+            "pump_attempted",
+            "pump_done"
+          ],
+          "check": {
+            "stat": "nerve",
+            "dc": 8,
+            "label": "Restore the clinic coolant",
+            "flagBonuses": [
+              {
+                "flag": "pump_kerr",
+                "amount": 1,
+                "label": "Kerr holds the service door"
+              }
+            ]
+          },
+          "successEffects": {
+            "flags": [
+              "pump_attempted",
+              "pump_restored",
+              "pump_nerve"
+            ]
+          },
+          "failEffects": {
+            "flags": [
+              "pump_attempted",
+              "pump_failed",
+              "pump_nerve"
+            ],
+            "strain": 1
+          },
+          "resultSuccess": "You keep the wheel steady until the spare circuit takes over. Lumen taps your hand: release.",
+          "resultFail": "The wheel kicks back. You let go before it takes your hand; the spare circuit stays dark.",
+          "nextSuccess": "act2_pump_report",
+          "nextFail": "act2_pump_triage"
+        }
+      ]
+    },
+    {
+      "id": "act2_pump_triage",
+      "location": "Clinic loading ramp",
+      "speaker": "Sister Lumen",
+      "text": "The spare is still dark. Lumen seals the medicines in insulated boxes. A courier can take them to another cold cabinet for thirty-five creds. You can carry them up the service stairs yourself; the climb will cost you pressure.\n\nNeither option repairs the pump. Both preserve this cabinet's contents for tonight. Leaving means Lumen will arrange the transfer herself, drawing staff away from the clinic. There is no second roll at the broken relay.",
+      "choices": [
+        {
+          "id": "fund-cold-transfer",
+          "label": "Pay thirty-five creds for the cold-storage courier.",
+          "requireCreds": 35,
+          "requireFlag": "pump_failed",
+          "hideIfFlag": "pump_done",
+          "detail": "Preserve the medicines; the pump still needs repair.",
+          "effects": {
+            "creds": -35,
+            "flags": [
+              "pump_done",
+              "pump_supplies_saved",
+              "pump_courier"
+            ],
+            "journal": [
+              {
+                "id": "pump-transfer",
+                "text": "You funded a cold-storage transfer after the spare circuit failed. The medicines were preserved; the pump remains unrepaired.",
+                "kind": "fact"
+              }
+            ]
+          },
+          "next": "act2_middle"
+        },
+        {
+          "id": "carry-cold-transfer",
+          "label": "Carry the insulated boxes up the service stairs.",
+          "requireFlag": "pump_failed",
+          "hideIfFlag": "pump_done",
+          "detail": "Gain 2 strain, capped at 5. Preserve the medicines without repairing the pump.",
+          "effects": {
+            "strain": 2,
+            "flags": [
+              "pump_done",
+              "pump_supplies_saved",
+              "pump_carried"
+            ],
+            "journal": [
+              {
+                "id": "pump-transfer",
+                "text": "You carried the medicines to another cold cabinet. The pump remains unrepaired.",
+                "kind": "fact"
+              }
+            ]
+          },
+          "next": "act2_middle"
+        },
+        {
+          "id": "leave-cold-transfer",
+          "label": "Let Lumen divert her staff to the transfer.",
+          "requireFlag": "pump_failed",
+          "hideIfFlag": "pump_done",
+          "detail": "The clinic loses one step of trust. Record that you left the emergency to its staff.",
+          "effects": {
+            "flags": [
+              "pump_done",
+              "pump_left"
+            ],
+            "factions": {
+              "lumen": -1
+            },
+            "journal": [
+              {
+                "id": "pump-transfer",
+                "text": "You left the failed pump and transfer to clinic staff. Their outcome was not observed by you.",
+                "kind": "fact"
+              }
+            ]
+          },
+          "next": "act2_middle"
+        }
+      ]
+    },
+    {
+      "id": "act2_pump_report",
+      "location": "Ward Nine coolant station",
+      "speaker": "Sister Lumen",
+      "text": "The gauge holds. Lumen records the relay number, temperature, and next inspection date. Helion offers forty creds for a repair report carrying the contractor's handle and station number. It asks for no patient names.\n\nThe neighborhood can keep its own maintenance record instead. The circuit works either way. Choose who gets the receipt; today's repaired relay proves nothing about the old counter-order.",
+      "choices": [
+        {
+          "id": "keep-pump-local",
+          "label": "Leave the repair record with the neighborhood.",
+          "requireFlag": "pump_restored",
+          "hideIfFlag": "pump_done",
+          "detail": "Ward standing +1. No rebate; keep the contractor's handle off the tower receipt.",
+          "effects": {
+            "flags": [
+              "pump_done",
+              "pump_local"
+            ],
+            "factions": {
+              "wards": 1
+            },
+            "journal": [
+              {
+                "id": "pump-repair",
+                "text": "The clinic coolant was restored. The neighborhood retains the maintenance record; this repair authenticates no historical order.",
+                "kind": "fact"
+              }
+            ]
+          },
+          "next": "act2_middle"
+        },
+        {
+          "id": "file-pump-rebate",
+          "label": "File the contractor receipt with Helion for forty creds.",
+          "requireFlag": "pump_restored",
+          "hideIfFlag": "pump_done",
+          "detail": "Helion +1, wards \u22121. The tower gets your handle and station number, without patient names.",
+          "effects": {
+            "creds": 40,
+            "flags": [
+              "pump_done",
+              "pump_rebate"
+            ],
+            "factions": {
+              "helion": 1,
+              "wards": -1
+            },
+            "journal": [
+              {
+                "id": "pump-repair",
+                "text": "The clinic coolant was restored. Helion paid forty creds and received the contractor handle and station number, without patient names. This repair authenticates no historical order.",
+                "kind": "fact"
+              }
+            ]
+          },
+          "next": "act2_middle"
+        }
+      ]
+    },
+    {
+      "id": "act3_pump_visit",
+      "location": "Ward Nine clinic service door",
+      "speaker": "Kerr",
+      "text": [
+        {
+          "select": [
+            {
+              "when": {
+                "all": [
+                  "pump_restored"
+                ]
+              },
+              "text": "The gauge remains in range. The clinic has booked another inspection; your repair bought time, not a permanent cure."
+            },
+            {
+              "when": {
+                "all": [
+                  "pump_supplies_saved"
+                ]
+              },
+              "text": "The cold cabinet stands empty. The transferred medicines reached the other clinic; Lumen is still waiting for a replacement relay."
+            }
+          ],
+          "fallback": "Lumen's transfer trolley is gone. You did not stay to see where the boxes went. A blank beside the delivery line remains a blank."
+        },
+        {
+          "select": [
+            {
+              "when": {
+                "all": [
+                  "pump_rebate"
+                ]
+              },
+              "text": "A Helion contractor receipt is clipped beside the gauge. Your handle and the station number remain on it. No patient name was sent."
+            },
+            {
+              "when": {
+                "all": [
+                  "pump_local"
+                ]
+              },
+              "text": "The neighborhood's maintenance sheet hangs beside the gauge. Sera has left a space for the next inspection."
+            }
+          ],
+          "fallback": "The maintenance sheet still marks the relay for replacement."
+        },
+        {
+          "select": [
+            {
+              "when": {
+                "all": [
+                  "pump_kerr"
+                ]
+              },
+              "text": "Kerr turns the service key over in his palm. 'You told me the names. This time I kept a door open. That doesn't settle the rest of my week.'"
+            },
+            {
+              "when": {
+                "all": [
+                  "kerr_sold_you"
+                ]
+              },
+              "text": "Kerr stays outside. A useful key did not undo his earlier sale of your confession."
+            }
+          ],
+          "fallback": "Kerr checks the door catch. You shared a room with a broken machine; it has not made either of you the other's creditor."
+        },
+        {
+          "select": [
+            {
+              "when": {
+                "all": [
+                  "pump_inspection_paid"
+                ]
+              },
+              "text": "Lumen has booked a follow-up inspection with the twenty-creds fee you paid. The appointment is on the maintenance sheet; the inspection has not happened yet."
+            },
+            {
+              "when": {
+                "all": [
+                  "pump_inspection_wards"
+                ]
+              },
+              "text": "The neighborhood crew accepted the next inspection at a cost to your standing. Their appointment is recorded; the inspection itself is still due."
+            }
+          ],
+          "fallback": "The next inspection is still due. You have not booked a follow-up with this crew."
+        }
+      ],
+      "choices": [
+        {
+          "id": "book-pump-inspection",
+          "label": "Arrange the next inspection for the repaired circuit.",
+          "detail": "Book follow-up maintenance. An appointment does not mean the inspection has happened.",
+          "requireFlag": "pump_restored",
+          "hideIfFlag": "pump_inspection_booked",
+          "next": "act3_pump_schedule"
+        },
+        {
+          "id": "leave-pump-visit",
+          "label": "Return to the neighbors before the wall.",
+          "effects": {
+            "flags": [
+              "visited_pump"
+            ]
+          },
+          "next": "act3_neighborhood"
+        }
+      ]
+    },
+    {
+      "id": "act3_pump_schedule",
+      "location": "Ward Nine clinic service door",
+      "speaker": "Sister Lumen",
+      "text": "The spare is carrying the clinic now. Lumen marks the next inspection on the maintenance sheet. The circuit needs a person to return, not another speech about a completed repair.\n\nTwenty creds books a technician. Neighbors can cover the visit if they trust you enough to spend a crew slot. Either route records a future appointment; neither certifies a permanent cure. You can also leave the date for the clinic to arrange.",
+      "choices": [
+        {
+          "id": "pay-pump-inspection",
+          "label": "Pay twenty creds to book a technician.",
+          "detail": "Book one future inspection. No new repair or evidence is created.",
+          "requireCreds": 20,
+          "requireFlag": "pump_restored",
+          "hideIfFlag": "pump_inspection_booked",
+          "effects": {
+            "creds": -20,
+            "flags": [
+              "pump_inspection_booked",
+              "pump_inspection_paid"
+            ],
+            "journal": [
+              {
+                "kind": "fact",
+                "id": "pump-inspection",
+                "text": "You paid twenty creds for a future coolant inspection. The appointment is booked; the inspection has not yet occurred."
+              }
+            ]
+          },
+          "next": "act3_pump_visit"
+        },
+        {
+          "id": "wards-pump-inspection",
+          "label": "Ask the neighborhood crew to cover the inspection.",
+          "detail": "Ward standing 2 required; spend one step of trust for the future appointment.",
+          "requireFaction": {
+            "faction": "wards",
+            "min": 2
+          },
+          "requireFlag": "pump_restored",
+          "hideIfFlag": "pump_inspection_booked",
+          "effects": {
+            "factions": {
+              "wards": -1
+            },
+            "flags": [
+              "pump_inspection_booked",
+              "pump_inspection_wards"
+            ],
+            "journal": [
+              {
+                "kind": "fact",
+                "id": "pump-inspection",
+                "text": "The neighborhood crew booked a future coolant inspection at a cost to your standing. The inspection itself remains due."
+              }
+            ]
+          },
+          "next": "act3_pump_visit"
+        },
+        {
+          "id": "leave-pump-schedule",
+          "label": "Let the clinic arrange the next inspection.",
+          "next": "act3_pump_visit"
+        }
+      ]
+    }
+  ]
+}

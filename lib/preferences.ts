@@ -10,8 +10,9 @@ export type Preferences = {
   ambience: number;
   effects: number;
   controller: boolean;
+  artwork: "full" | "none";
 };
-export const DEFAULT_PREFERENCES: Preferences = { textStep: 0, contrast: "standard", reading: "paragraph", motion: "system", sound: false, music: 60, ambience: 50, effects: 70, controller: false };
+export const DEFAULT_PREFERENCES: Preferences = { textStep: 0, contrast: "standard", reading: "paragraph", motion: "system", sound: false, music: 60, ambience: 50, effects: 70, controller: false, artwork: "full" };
 export function parsePreferences(raw: string | null): Preferences {
   let data;
   try { data = raw ? JSON.parse(raw) : {}; } catch { data = {}; }
@@ -25,6 +26,7 @@ export function parsePreferences(raw: string | null): Preferences {
     sound: typeof data?.sound === "boolean" ? data.sound : defaults.sound,
     music: volume(data?.music, defaults.music), ambience: volume(data?.ambience, defaults.ambience), effects: volume(data?.effects, defaults.effects),
     controller: data?.controller === true,
+    artwork: data?.artwork === "none" ? "none" : "full",
   };
 }
 export function loadPreferences(): Preferences {
@@ -36,4 +38,5 @@ export function applyPreferences(value: Preferences) {
   document.documentElement.dataset.text = String(value.textStep);
   document.documentElement.dataset.contrast = value.contrast;
   document.documentElement.dataset.motion = value.motion;
+  document.documentElement.dataset.artwork = value.artwork;
 }

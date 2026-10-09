@@ -17,7 +17,7 @@ const ORIGIN_ART: Record<OriginId, { src: string; label: string }> = {
   dustline: { src: "/art/canal.jpg", label: "Dustline" },
 };
 
-export function Portrait({ speaker, origin, handle }: { speaker?: string; origin: OriginId; handle?: string }) {
+export function Portrait({ speaker, origin, handle, artwork = true }: { speaker?: string; origin: OriginId; handle?: string; artwork?: boolean }) {
   const face = speaker ? FACES[speaker] : undefined;
   const plate = ORIGIN_ART[origin];
   const src = face ?? plate.src;
@@ -26,7 +26,7 @@ export function Portrait({ speaker, origin, handle }: { speaker?: string; origin
   const label = name ? `${name}${role ? ` · ${role}` : ""}` : `${handle ?? plate.label} · ${plate.label}`;
   return (
     <figure className="portrait-frame">
-      <img className="portrait" src={src} alt="" width={220} height={294} decoding="async" />
+      {artwork ? <img className="portrait" src={src} alt="" width={220} height={294} decoding="async" /> : <div className="portrait-placeholder" aria-hidden="true" />}
       <figcaption>{label}</figcaption>
     </figure>
   );

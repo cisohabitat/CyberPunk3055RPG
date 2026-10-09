@@ -39,7 +39,9 @@ jobs:
       - run: npm ci
       - run: npx playwright install --with-deps chromium firefox webkit
       - run: npm run build
+      - run: npm run production:report
       - run: npm run test:browser
+      - run: npm run production:verify
       - name: Upload browser evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -49,3 +51,11 @@ jobs:
             playwright-report/
             test-results/
           retention-days: 7
+
+      - name: Upload production evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: production-evidence
+          path: qa/production/reports/
+          retention-days: 30

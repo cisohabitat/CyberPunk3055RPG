@@ -1,3 +1,4 @@
+import { mergeScenes } from "../authoring";
 import { EMPLOYMENT_SCENES } from "./employment";
 import { COMMUNITY_SCENES } from "./community";
 import { SUPPORT_SCENES } from "./support";
@@ -14,16 +15,16 @@ import { OPERATION_SCENES } from "./operations";
 export { vaultNext } from "./act1";
 export { CODEX, endingCoda } from "./codas";
 
-export const SCENES: Record<string, Scene> = {
-  ...ACT1_SCENES,
-  ...ACT2_SCENES,
-  ...ACT3_SCENES,
-  ...TESTIMONY_SCENES,
-  ...MEMORY_SCENES,
-  ...MISSION_SCENES,
-  ...SUPPORT_SCENES,
-  ...COMMUNITY_SCENES,
-  ...EMPLOYMENT_SCENES,
-  ...ARCHIVE_SCENES,
-  ...OPERATION_SCENES,
-};
+export const SCENES: Record<string, Scene> = mergeScenes(
+  ACT1_SCENES,
+  ACT2_SCENES,
+  ACT3_SCENES,
+  TESTIMONY_SCENES,
+  MEMORY_SCENES,
+  MISSION_SCENES,
+  SUPPORT_SCENES,
+  COMMUNITY_SCENES,
+  EMPLOYMENT_SCENES,
+  ARCHIVE_SCENES,
+  OPERATION_SCENES,
+);

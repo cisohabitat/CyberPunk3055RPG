@@ -1,6 +1,6 @@
 import type { Preferences } from "./preferences";
 
-export type SoundMood = "street" | "chapel" | "ward";
+export type SoundMood = "street" | "chapel" | "ward" | "week";
 let ctx: AudioContext | null = null;
 let theme: { node: AudioBufferSourceNode; gain: GainNode } | null = null;
 let rain: AudioBufferSourceNode | null = null;
@@ -84,11 +84,11 @@ export function playCue(name: string) {
     } catch { /* Audio stays optional. */ }
   })();
 }
-export function sceneMood(location: string): SoundMood {
+export function sceneMood(location: string, act = ""): SoundMood {
   const value = location.toLowerCase();
   if (value.includes("ward nine") || value.includes("wall") || value.includes("witness")) return "ward";
   if (value.includes("chapel") || value.includes("chair") || value.includes("memory")) return "chapel";
-  return "street";
+  return act === "The Week" ? "week" : "street";
 }
 export function locationCue(location: string, ending: boolean): string {
   if (ending) return "sting-ending";
