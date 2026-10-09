@@ -9,7 +9,7 @@ import { SaveDialog } from "./SaveDialog";
 import { SettingsDialog } from "./SettingsDialog";
 import { clearSave, emptyCodex, loadCodex, loadSave, usedBackup, writeSave } from "@/lib/storage";
 import { applyPreferences, DEFAULT_PREFERENCES, loadPreferences, writePreferences, type Preferences } from "@/lib/preferences";
-import { setAudioMix, setBed } from "@/lib/sound";
+import { setAudioMix, setBed, unlockAudio } from "@/lib/sound";
 import { recordIncident } from "@/lib/diagnostics";
 import type { Codex, GameState } from "@/lib/types";
 
@@ -42,10 +42,11 @@ export function GameApp() {
     setRun(next); setSaved(next);
   }
   function updatePreferences(next: Preferences) {
+    if (next.sound && !preferences.sound) unlockAudio();
     setPreferences(next); applyPreferences(next); writePreferences(next);
   }
   function title() { setDialog(null); setRun(null); setCodex(loadCodex()); setScreen("title"); }
-  function load(next: GameState) { updateRun(next); setRecovered(false); setDialog(null); setScreen("play"); }
+  function load(next: GameState) { if (preferences.sound) unlockAudio(); updateRun(next); setRecovered(false); setDialog(null); setScreen("play"); }
 
   if (!ready) return <div className="boot">Jacking in</div>;
   return <>

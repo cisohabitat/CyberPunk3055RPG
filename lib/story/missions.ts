@@ -65,7 +65,7 @@ export const MISSION_SCENES: Record<string, Scene> = {
   act2_witness_lost: {
     id: "act2_witness_lost", location: "Glass Chapel", speaker: "Sister Lumen",
     text: "Nia receives treatment, but her transfer is on the tenancy register. Lumen writes down which desk requested it.\n\n\"We can still keep her account,\" she says. \"We cannot tell her the room is private. Say exactly what happened.\"\n\nNia agrees to a recording through the clinic. She asks that Sera receive it before the tower calls her.",
-    choices: [{ id: "record-cost", label: "Keep the account and record the breach.", effects: { flags: ["witness_done", "witness_lost"], journal: [{ id: "nia-account", text: "Nia corroborated the order, but her clinic location entered Helion's tenancy register.", kind: "fact" }] }, next: "act2_middle" }],
+    choices: [{ id: "record-cost", label: "Keep the account and record the breach.", effects: { flags: ["witness_done", "witness_lost", "order_verified"], journal: [{ id: "nia-account", text: "Nia corroborated the order, but her clinic location entered Helion's tenancy register.", kind: "fact" }] }, next: "act2_middle" }],
   },
   act2_archive_door: {
     id: "act2_archive_door", location: "Helion service archive", speaker: "Ives",
@@ -87,6 +87,6 @@ export const MISSION_SCENES: Record<string, Scene> = {
   act2_archive_verified: {
     id: "act2_archive_verified", location: "The dry canal",
     text: "The signature is still Mara's. The evacuation counter-order belongs to a tower key active sixteen seconds later. Neither fact cancels the other.\n\nYou can give Sera a chain someone outside the chapel can examine. The dead are no longer evidence only a corporation can authenticate.",
-    choices: [{ id: "keep-chain", label: "Keep both decisions attached.", effects: { flags: ["archive_done", "order_verified"], journal: [{ id: "verified-order", text: "An independent ledger corroborates Helion's canceled evacuation.", kind: "fact" }] }, next: "act2_middle" }],
+    choices: [{ id: "keep-chain", label: "Keep both decisions attached.", effects: { flags: ["archive_done", "order_verified"], journal: [{ id: "verified-order", text: "An independent source corroborates Helion's canceled evacuation.", kind: "fact" }] }, next: "act2_middle" }],
   },
 };

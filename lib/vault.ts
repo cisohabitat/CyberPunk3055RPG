@@ -36,6 +36,7 @@ export function loadSlot(id: SlotId): Snapshot | null {
   if (!raw) return null;
   try {
     const data = JSON.parse(raw) as Snapshot;
+    if (data.format !== "saint-shard-save" || data.schema !== 1 || typeof data.savedAt !== "string" || !Number.isFinite(Date.parse(data.savedAt))) return null;
     return { ...data, state: importRun(raw) };
   } catch { return null; }
 }

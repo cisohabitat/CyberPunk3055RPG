@@ -11,7 +11,7 @@ The browser game remains a solo narrative RPG with 1d10 checks. Four original fi
 
 ## Narrative and systemic standards
 
-The memory bench distinguishes a recorded claim from authenticated documents. A protected roster is not a rescued witness; an export is not an authenticated command chain. Each disposition opens a corresponding task during The Week. A failed check introduces a specific cost or complication: checkpoint negotiation, clinic responsibility, a flagged badge, or an unverified ledger.
+The memory bench distinguishes a recorded claim from an exported receipt. The receipt's contents are visible; independent source verification is a separate task. A protected roster is not a rescued witness; an export is not an authenticated command chain. Each disposition opens a corresponding task during The Week. A failed check introduces a specific cost or complication: checkpoint negotiation, clinic responsibility, a flagged badge, or an unverified ledger.
 
 Quill talks in concrete prices and favors. Lumen talks in responsibility for patients. Ives asks for issuer, authorization, and record ownership. Sera asks who can speak for a name. Nia sets conditions on use of her account. Edit passages toward those motives, and use metaphors sparingly enough that each voice remains identifiable.
 

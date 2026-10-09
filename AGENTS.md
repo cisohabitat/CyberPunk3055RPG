@@ -72,7 +72,7 @@ Leaving a scene with a speaker sets `met_quill`, `met_mara`, `met_kerr`, `met_lu
 
 ## Screens
 
-Desktop, wider than 1100px: the sheet is a 320px column, and the portrait is 220px. Tablet, 1100px and under: the sheet is a drawer with a focus trap, and the portrait is 160px. Phone, 700px and under: the portrait is compact, prose spans the reading width below the scene header, district cards stack, and Settings, Saves, Sheet, and Abandon share one row so the goal stays in the first screen. `viewportFit` is `cover`. The goal element is `data-testid="goal"`. Prose advances one paragraph at a time unless the player shows the rest or the browser asks for reduced motion. The live announcement is the place, the act, and the goal. Play a changed screen at 390px and at desktop, and confirm the goal is visible without opening the sheet.
+Desktop, wider than 1100px: the sheet is a 320px column, and the portrait is 220px. Tablet, 1100px and under: the sheet is a drawer with a focus trap, and the portrait is 160px. Phone, 700px and under: the portrait is compact, prose spans the reading width below the scene header, district cards stack, and Settings, Saves, Sheet, and Abandon share one row so the goal stays in the first screen. `viewportFit` is `cover`. The goal element is `data-testid="goal"`. Prose advances one paragraph at a time unless the player shows the rest or selects whole-scene reading. The live announcement is the place, the act, and the goal. Play a changed screen at 390px and at desktop, and confirm the goal is visible without opening the sheet.
 
 Story number shortcuts are disabled while the sheet is open. Sheet tabs use Left/Right arrows with wrapping, plus Home/End. The drawer and dialogs use native `dialog.showModal()` for background isolation, focus trapping, Escape handling, and focus restoration. All sheet panels retain ids, with inactive panels hidden. Background story shortcuts also ignore form fields and other open dialogs.
 
@@ -99,3 +99,9 @@ Use `npm run story:report -- story-report.json` to inspect the graph and 900 see
 The deterministic score generator runs automatically before development, tests, and production builds. The chapel and ward beds and memory cue are generated assets; keep their source in `scripts/generate-audio.mjs`.
 
 The six-phase status and remaining production milestones are tracked in [docs/ROADMAP.md](docs/ROADMAP.md). The candidate contains 64 scenes and 149 choices; retain all four original finales.
+
+This review adds a compact commitments panel, contextual next steps, and warnings on week-closing choices when a memory promise remains open. The memory bench places inspection controls in each fragment row and expands inspected source details on request. Archive preservation alone is not independent verification; exposed-location testimony can corroborate an order without protecting its witness. Motion and reading pace are independent settings. Story shortcuts ignore key repeats and focus inside the character sheet. Manual slots reject invalid date metadata. See [the current review and grade](docs/REVIEW.md).
+
+Audio resumes from an explicit player gesture when sound is enabled or a saved sound-enabled run is continued, so browser autoplay restrictions do not strand the score. Unsupported audio remains optional.
+
+Inspecting a memory fragment opens its source text and moves focus to that source summary; the player can revisit or collapse inspected sources.

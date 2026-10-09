@@ -7,6 +7,7 @@ import { COMPLICATIONS, FACTIONS, FACTION_CHECK, FACTION_INFO, ORIGINS, STATS, S
 import { ITEMS } from "@/lib/items";
 import { journalKind, journalTitle, promiseStatus } from "@/lib/journal";
 import { learnedPerks } from "@/lib/progression";
+import { objectives } from "@/lib/objectives";
 import { memoryDisposition } from "@/lib/evidence";
 import { metCast } from "@/lib/story/cast";
 import type { GameState } from "@/lib/types";
@@ -143,11 +144,12 @@ export function Sheet({ state, open, onClose, speaker }: { state: GameState; ope
         </ul>
         <ul hidden={tab !== "journal"} className="journal" role="tabpanel" id="panel-journal" aria-labelledby="tab-journal">
           <li className="evidence-summary">{memoryDisposition(state)}</li>
+          {objectives(state).map((row) => <li key={`objective-${row.id}`}><strong>{row.title} · {row.status}</strong><span>{row.detail}</span></li>)}
           {state.journal.length === 0 && <li className="empty">The city has not told you anything you trust.</li>}
           {state.journal.map((entry) => (
             <li key={entry.id}>
               <strong>{journalTitle(entry)}</strong>
-              <small className="journal-kind">{journalKind(entry)}{journalKind(entry) === "promise" ? ` · ${promiseStatus(entry.id, state.flags)}` : ""}</small>
+              <small className="journal-kind">{journalKind(entry)}{journalKind(entry) === "promise" ? ` · ${promiseStatus(entry.id, state.flags, state.journal)}` : ""}</small>
               <span>{entry.text}</span>
             </li>
           ))}

@@ -17,7 +17,7 @@ export function SettingsDialog({ preferences, onChange, onClose }: { preferences
       {(["music", "ambience", "effects"] as const).map((channel) => <label key={channel}>{channel} · {preferences[channel]}%<input aria-label={`${channel} volume`} type="range" min={0} max={100} value={preferences[channel]} onChange={(event) => update(channel, Number(event.target.value))} /></label>)}
       <label className="check-label"><input type="checkbox" checked={preferences.controller} onChange={(event) => update("controller", event.target.checked)} />Controller support</label>
     </div>
-    <p className="hint">Controller: D-pad moves focus, A selects, B goes back. Number keys choose story options. Arrow keys switch sheet tabs.</p>
+    <p className="hint">Controller: D-pad up/down moves focus; left/right adjusts settings and sheet tabs. A selects; B goes back. Number keys choose story options. Arrow keys switch sheet tabs.</p>
     <p className="hint">Contains corporate violence, coercion, grief, and memory editing. Sound and motion are optional.</p>
     <div className="dialog-actions"><button type="button" className="primary" onClick={onClose}>Done</button><button type="button" className="ghost" onClick={() => downloadJson("saint-shard-diagnostics.json", diagnosticsReport())}>Export diagnostics</button></div>
     <p className="fine">Saint Shard {APP_VERSION} · Diagnostics stay on this device until you export them.</p>

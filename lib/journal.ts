@@ -30,7 +30,7 @@ export const JOURNAL_TITLES: Record<string, string> = {
   "shard-copy": "The second copy",
   "clinic-debt": "Clinic marker",
   "memory-signature": "Mara's signature",
-  "memory-order": "The counter-order",
+  "memory-order": "The exported counter-order",
   "memory-roster": "The living witness",
   "archive-promise": "Authenticate the receipt",
   "witness-promise": "Protect Nia Pell",
@@ -48,8 +48,8 @@ export function journalKind(entry: JournalEntry): "fact" | "claim" | "promise" {
   return entry.kind ?? (entry.id === "clinic-debt" ? "promise" : "fact");
 }
 
-export function promiseStatus(id: string, flags: Record<string, boolean>): string {
-  if (id === "witness-promise") return flags.witness_safe ? "Kept" : flags.witness_lost ? "Location exposed" : "Unresolved";
+export function promiseStatus(id: string, flags: Record<string, boolean>, journal: JournalEntry[] = []): string {
+  if (id === "witness-promise") return flags.witness_lost ? "Location exposed" : flags.witness_safe && journal.some((entry) => entry.id === "nia-account") ? "Kept" : flags.witness_safe ? "Account pending" : "Unresolved";
   if (id === "archive-promise") return flags.order_verified ? "Corroborated" : flags.archive_unresolved ? "Gap recorded" : "Unresolved";
   return "Recorded";
 }

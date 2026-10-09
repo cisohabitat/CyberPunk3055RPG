@@ -5,6 +5,8 @@ import { aftermath, FRAGMENTS } from "./evidence.ts";
 import { importRun, exportRun } from "./vault.ts";
 import { parseSave } from "./storage.ts";
 import { parsePreferences } from "./preferences.ts";
+import { objectives, nextStep, unresolvedPromises } from "./objectives.ts";
+import { promiseStatus } from "./journal.ts";
 import { simulateCampaign, storyReport } from "./story-report.ts";
 import type { GameState, OriginId } from "./types.ts";
 
@@ -86,7 +88,7 @@ describe("memory evidence and promises", () => {
   it("records a failed witness transfer honestly in the aftermath", () => {
     let state = { ...base(), sceneId: "act2_witness_checkpoint", flags: { memory_redacted: true } };
     state = step(state, "argue-transfer", 1); state = step(state, "record-cost");
-    assert.equal(state.flags.witness_lost, true); assert.match(aftermath(state).find((row) => row.title === "Nia Pell")!.text, /tower's records/);
+    assert.equal(state.flags.witness_lost, true); assert.equal(state.flags.order_verified, true); assert.match(aftermath(state).find((row) => row.title === "Nia Pell")!.text, /tower's records/);
   });
 });
 
@@ -125,5 +127,50 @@ describe("builds, gates and complete campaigns", () => {
       assert.ok(result.steps < 200); assert.ok(result.state.strain <= 5); assert.ok(result.state.creds >= 0);
     }
     assert.equal(reached.size, 4);
+  });
+});
+
+
+describe("commitments and evidence continuity", () => {
+  it("does not treat preserving an archive as independent authentication", () => {
+    const state = { ...base(), flags: { memory_intact: true } };
+    assert.match(aftermath(state).find((row) => row.title === "Mara")!.text, /remains unverified/);
+    assert.equal(objectives(state)[0].status, "Open");
+    assert.equal(objectives({ ...state, flags: { ...state.flags, order_verified: true } })[0].status, "Complete");
+  });
+  it("keeps a safe room separate from a recorded witness account", () => {
+    const state = { ...base(), sceneId: "act2_witness_safe", flags: { memory_witness: true, witness_safe: true } };
+    assert.equal(objectives(state)[0].status, "Open");
+    assert.equal(promiseStatus("witness-promise", state.flags), "Account pending");
+    assert.match(nextStep(state), /separate steps/);
+    const done = step(state, "file-account");
+    assert.equal(objectives(done)[0].status, "Complete"); assert.equal(unresolvedPromises(done).length, 0);
+    assert.equal(promiseStatus("witness-promise", done.flags, done.journal), "Kept");
+  });
+  it("records exposed-location testimony without claiming witness protection", () => {
+    let state = { ...base(), sceneId: "act2_witness_checkpoint", flags: { memory_witness: true } };
+    state = step(state, "registered-transfer"); state = step(state, "record-cost");
+    assert.equal(state.flags.order_verified, true); assert.equal(objectives(state)[0].status, "Compromised");
+    assert.equal(promiseStatus("witness-promise", state.flags), "Location exposed");
+  });
+  it("marks unfinished commitments unresolved at the wall without revealing new missions", () => {
+    const state = { ...base(), sceneId: "ward_wall", flags: { memory_witness: true } };
+    assert.equal(objectives(state)[0].status, "Unresolved");
+    assert.match(objectives(state)[0].detail, /week ended/);
+    assert.deepEqual(objectives(base()), []);
+  });
+  it("does not invent a testimony or attached account in the aftermath", () => {
+    assert.match(aftermath(base()).find((row) => row.title === "Mara")!.text, /no recorded account/);
+    const state = { ...base(), flags: { memory_witness: true, witness_safe: true } };
+    assert.match(aftermath(state).find((row) => row.title === "Nia Pell")!.text, /has not been attached/);
+    assert.equal(promiseStatus("witness-promise", { ...state.flags, order_verified: true }), "Account pending");
+  });
+  it("retains a recorded archive gap as an unresolved commitment", () => {
+    const state = { ...base(), sceneId: "act2_middle", flags: { memory_intact: true, archive_unresolved: true } };
+    assert.equal(objectives(state)[0].status, "Unresolved"); assert.equal(unresolvedPromises(state).length, 1); assert.match(nextStep(state), /gap is recorded/);
+  });
+  it("prioritizes saved die outcomes over navigation hints", () => {
+    const state = { ...base(), sceneId: "pay", pendingCheck: { sceneId: "pay", choiceId: "haggle", roll: 2 } };
+    assert.match(nextStep(state), /outcome is already saved/);
   });
 });

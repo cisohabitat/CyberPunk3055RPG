@@ -41,7 +41,7 @@ At Strain 4, a risky check says the chair is close. At Strain 5, a bad night ins
 
 The same scene fits a phone, a tablet, and a desktop. On a wide screen the character sheet is a column beside the story. On a narrower screen it is a drawer, and the goal stays on the scene without opening it. Buttons stay large enough to tap.
 
-Settings control text size, contrast, reading pace, motion, sound, separate music/ambience/effect volumes, and optional controller input. Controller D-pad moves focus, A selects, and B closes a dismissible dialog. Number keys choose story options while the sheet and other dialogs are closed. In the sheet, Left and Right arrow keys switch between Stats, Gear, and Journal; Home and End select the first and last tabs.
+Settings control text size, contrast, reading pace, motion, sound, separate music/ambience/effect volumes, and optional controller input. Controller D-pad up/down moves focus, left/right adjusts settings or sheet tabs, A selects, and B closes a dismissible dialog. Number keys choose story options while the sheet and other dialogs are closed. In the sheet, Left and Right arrow keys switch between Stats, Gear, and Journal; Home and End select the first and last tabs.
 
 ## Deploy on Vercel
 
@@ -57,7 +57,7 @@ If the browser blocks storage or cannot save, the game still opens and plays. A 
 
 ## The memory bench and the week
 
-After Mara explains her signature, open the memory bench to inspect three fragments: her account, Helion's authenticated counter-order, and the roster identifying Nia Pell as a living witness. The journal distinguishes claims, facts, and promises. Inspect all three before deciding which record leaves the room:
+After Mara explains her signature, open the memory bench to inspect three fragments: her account, an exported counter-order awaiting independent verification, and the roster identifying Nia Pell as a living witness. The journal distinguishes claims, facts, and promises. Inspect all three before deciding which record leaves the room:
 
 - **Complete archive:** preserve the chain and roster, take Strain and surveillance attention, and investigate its issuing key during The Week.
 - **Protected roster:** withhold worker locations, lose some public confidence, and move Nia to safety before attaching her account.
@@ -91,3 +91,9 @@ Read [AGENTS.md](AGENTS.md) before you change the story, the rules, the screens,
 The deterministic score generator runs automatically before development, tests, and production builds. The chapel and ward beds and memory cue are generated assets; keep their source in `scripts/generate-audio.mjs`.
 
 The six-phase status and remaining production milestones are tracked in [docs/ROADMAP.md](docs/ROADMAP.md). The candidate contains 64 scenes and 149 choices; retain all four original finales.
+
+This review adds a compact commitments panel, contextual next steps, and warnings on week-closing choices when a memory promise remains open. The memory bench places inspection controls in each fragment row and expands inspected source details on request. Archive preservation alone is not independent verification; exposed-location testimony can corroborate an order without protecting its witness. Motion and reading pace are independent settings. Story shortcuts ignore key repeats and focus inside the character sheet. Manual slots reject invalid date metadata. See [the current review and grade](docs/REVIEW.md).
+
+Audio resumes from an explicit player gesture when sound is enabled or a saved sound-enabled run is continued, so browser autoplay restrictions do not strand the score. Unsupported audio remains optional.
+
+Inspecting a memory fragment opens its source text and moves focus to that source summary; the player can revisit or collapse inspected sources.

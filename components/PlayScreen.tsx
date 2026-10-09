@@ -12,6 +12,8 @@ import { commitChoice, effectPreview, getScene, presentChoices, previewCheck, ru
 import { locationCue, playCue, sceneMood, setBed } from "@/lib/sound";
 import { rememberEnding } from "@/lib/storage";
 import type { Preferences } from "@/lib/preferences";
+import { ObjectiveBrief } from "./ObjectiveBrief";
+import { unresolvedPromises } from "@/lib/objectives";
 import { MemoryPlate } from "./MemoryPlate";
 import { aftermath } from "@/lib/evidence";
 import { endingCoda } from "@/lib/story";
@@ -57,7 +59,7 @@ export function PlayScreen({
   const prior = useRef(state);
   const prose = sceneText(scene, state);
   const paragraphs = prose.split(/\n\n+/).filter((paragraph) => paragraph.length > 0);
-  const visibleCount = reduceMotion || preferences.reading === "all" ? paragraphs.length : Math.min(shown, paragraphs.length);
+  const visibleCount = preferences.reading === "all" ? paragraphs.length : Math.min(shown, paragraphs.length);
   const recordedChoice = state.pendingCheck ? choices.find((choice) => choice.id === state.pendingCheck?.choiceId) : null;
   const activeChoice = recordedChoice ?? pending;
 
@@ -118,8 +120,8 @@ export function PlayScreen({
         return;
       }
       if (activeChoice || confirmAbandon || sheetOpen || modalOpen || choices.length === 0) return;
-      if (event.target instanceof HTMLElement && event.target.closest("input, textarea, select, [contenteditable=true]")) return;
-      if (event.metaKey || event.ctrlKey || event.altKey) return;
+      if (event.target instanceof HTMLElement && event.target.closest("input, textarea, select, [contenteditable=true], #runner-sheet")) return;
+      if (event.metaKey || event.ctrlKey || event.altKey || event.repeat) return;
       const number = Number(event.key);
       if (!Number.isInteger(number) || number < 1 || number > 9) return;
       const choice = choices[number - 1];
@@ -128,6 +130,8 @@ export function PlayScreen({
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   });
+
+  const openPromises = unresolvedPromises(state);
 
   function pick(choice: VisibleChoice) {
     if (!choice.enabled) return;
@@ -252,13 +256,14 @@ export function PlayScreen({
 
               </div>
             </div>
-            {scene.memory && <MemoryPlate state={state} />}
+            <ObjectiveBrief state={state} />
+            {scene.memory && <MemoryPlate state={state} choices={choices} onInspect={pick} />}
             <div className="prose" data-testid="scene-text">
               {paragraphs.slice(0, visibleCount).map((paragraph, index) => (
                 <p key={`${scene.id}-${index}`}>{paragraph}</p>
               ))}
             </div>
-            {!reduceMotion && visibleCount < paragraphs.length && (
+            {visibleCount < paragraphs.length && (
               <div className="prose-controls">
                 <button className="ghost" type="button" data-testid="next-paragraph" onClick={() => setShown((count) => count + 1)}>
                   Next line
@@ -273,6 +278,7 @@ export function PlayScreen({
             {choices.length > 0 && (
               <div className={scene.id === "districts" ? "choices cards" : "choices"} id="choices">
                 {choices.map((choice, index) => {
+                  if (scene.memory && choice.id.startsWith("inspect-")) return null;
                   const odds = choice.check ? previewCheck(state, choice.check) : null;
                   const chance = !odds ? null : odds.hits === 10 ? "certain" : odds.hits === 0 ? "no chance" : `${odds.hits} in 10`;
                   return (
@@ -294,6 +300,7 @@ export function PlayScreen({
                           [
                             odds ? `${STAT_INFO[odds.stat].name} · DC ${odds.dc} · ${chance}` : null,
                             choice.detail,
+                            openPromises.length && [choice.next, choice.nextSuccess, choice.nextFail].some((next) => typeof next === "string" && ["ending_week_wards", "ending_week_deal", "ending_exposed"].includes(next)) ? `${openPromises.length} memory ${openPromises.length === 1 ? "promise remains" : "promises remain"} unresolved if the week closes` : null,
                             effectPreview(state, choice).join(" · ") || null,
                           ]
                             .filter(Boolean)

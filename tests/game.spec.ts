@@ -81,6 +81,7 @@ test("memory inspection, disposition and consequence entry", async ({ page }) =>
   await openRun(page, fixture("mara_why", { items: ["shard"], flags: { heard_memo: true }, journal: [{ id: "ward-nine", text: "The original memo." }] }));
   await page.getByTestId("choice-inspect-hour").click(); await expect(page.getByTestId("choice-seal-full")).toHaveCount(0);
   for (const id of ["signature", "order", "roster"]) await page.getByTestId(`choice-inspect-${id}`).click();
+  expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations).toEqual([]);
   await expect(page.getByTestId("memory-plate")).toContainText("3 / 3 inspected"); await page.getByTestId("choice-seal-witness").click();
   const state = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!)); expect(state.flags.memory_witness).toBe(true);
 });
@@ -130,7 +131,69 @@ test("controller input navigates title and closes only the active dialog", async
     }, index);
   }
   await press(0); await expect(page.getByRole("dialog")).toBeVisible();
+  await page.getByLabel("Contrast", { exact: true }).focus(); await press(15);
+  await expect(page.locator("html")).toHaveAttribute("data-contrast", "high");
+  await page.getByLabel("music volume").focus(); await press(15);
+  await expect(page.getByLabel("music volume")).toHaveValue("61");
+  await press(14); await expect(page.getByLabel("music volume")).toHaveValue("60");
   await press(13); await expect(page.getByRole("dialog")).toBeVisible();
   await press(1); await expect(page.getByRole("dialog")).toHaveCount(0);
   await expect(page.getByRole("button", { name: "Settings", exact: true })).toBeFocused();
+});
+
+
+test("commitments stay visible and week-closing choices warn about unfinished promises", async ({ page }) => {
+  await openRun(page, fixture("act2_middle", { flags: { memory_witness: true } }));
+  await expect(page.getByTestId("objectives")).toContainText("promise is still open");
+  await page.getByTestId("objectives").locator("summary").click();
+  await expect(page.getByTestId("objectives")).toContainText("Protect Nia Pell");
+  await expect(page.getByTestId("choice-stand")).toContainText("promise remains unresolved");
+  await page.getByTestId("choice-protect-witness").click(); await page.getByTestId("choice-pay-room").click();
+  await expect(page.getByTestId("objectives")).toContainText("separate steps");
+  await page.getByTestId("choice-file-account").click();
+  await expect(page.getByTestId("objectives")).toContainText("1/1 complete");
+  await expect(page.getByTestId("choice-stand")).not.toContainText("promise remains unresolved");
+});
+
+test("reduced motion preserves the selected paragraph reading pace", async ({ page }) => {
+  await openRun(page, fixture("memo", { items: ["shard"] }));
+  await expect(page.getByTestId("scene-text").locator("p")).toHaveCount(1);
+  await page.getByTestId("show-rest").click();
+  expect(await page.getByTestId("scene-text").locator("p").count()).toBeGreaterThan(1);
+});
+
+test("sheet tabs stay isolated from story shortcuts and restore focus", async ({ page }) => {
+  await openRun(page);
+  if (page.viewportSize()!.width <= 1100) await page.getByTestId("sheet-toggle").click();
+  await page.getByRole("tab", { name: "journal", exact: true }).click(); await page.keyboard.press("1");
+  await expect(page.getByTestId("choice-ask-pay")).toBeVisible();
+  await page.keyboard.press("Home"); await expect(page.getByRole("tab", { name: "stats", exact: true })).toBeFocused();
+  await page.keyboard.press("End"); await expect(page.getByRole("tab", { name: "journal", exact: true })).toBeFocused();
+  if (page.viewportSize()!.width <= 1100) {
+    await page.keyboard.press("Escape"); await expect(page.getByTestId("sheet-toggle")).toBeFocused();
+  }
+});
+
+
+test("optional audio loads the scene score after an explicit player gesture", async ({ page }) => {
+  await openRun(page, fixture("memory_table", { items: ["shard"], flags: { heard_memo: true } }));
+  await page.getByRole("button", { name: "Settings", exact: true }).click();
+  const score = page.waitForResponse((response) => response.url().endsWith("/audio/theme-chapel.wav") && response.status() === 200);
+  await page.getByLabel("Sound enabled", { exact: true }).check(); await score;
+  await page.getByLabel("Sound enabled", { exact: true }).uncheck();
+  await page.getByRole("button", { name: "Done", exact: true }).click();
+  await page.getByTestId("choice-inspect-order").click();
+  await expect(page.getByTestId("memory-plate")).toContainText("1 / 3 inspected");
+  await expect(page.locator("#memory-source-order")).toBeFocused();
+  await expect(page.getByTestId("memory-plate").locator("details[open]")).toContainText("independent verification");
+});
+
+test("invalid slot dates do not appear as usable recovery points", async ({ page }) => {
+  await page.addInitScript((snapshot) => {
+    const data = JSON.parse(snapshot); data.savedAt = "invalid timestamp";
+    localStorage.setItem("saint-shard-slot-1", JSON.stringify(data));
+  }, exportRun(fixture()));
+  await page.goto("/"); await page.getByRole("button", { name: "Saves", exact: true }).click();
+  await expect(page.getByRole("button", { name: "Load slot 1", exact: true })).toBeDisabled();
+  await expect(page.getByRole("dialog")).not.toContainText("Invalid Date");
 });

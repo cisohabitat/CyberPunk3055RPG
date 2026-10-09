@@ -14,6 +14,13 @@ const cache = new Map<string, AudioBuffer>();
 const live = new Set<AudioBufferSourceNode>();
 
 function context() { if (!ctx) ctx = new AudioContext(); return ctx; }
+export function unlockAudio() {
+  if (typeof window === "undefined") return;
+  try {
+    const audio = context();
+    if (audio.state === "suspended") void audio.resume().catch(() => {});
+  } catch { /* Unsupported audio must never block play. */ }
+}
 function bus(channel: keyof typeof mix) {
   const audio = context();
   let gain = buses.get(channel);
