@@ -1,0 +1,275 @@
+{
+  "name": "freight-chrome",
+  "character": {
+    "handle": "Replay",
+    "givenName": "Ada",
+    "origin": "dustline",
+    "complication": "on-file",
+    "bonus": {
+      "chrome": 0,
+      "nerve": 0,
+      "face": 0,
+      "ghost": 2
+    },
+    "startWithPrologue": true
+  },
+  "steps": [
+    {
+      "choiceId": "begin-opening",
+      "reload": true
+    },
+    {
+      "choiceId": "opening-identity",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-stallholder",
+      "reload": true
+    },
+    {
+      "choiceId": "take-the-stool",
+      "reload": true
+    },
+    {
+      "choiceId": "ask-pay"
+    },
+    {
+      "choiceId": "haggle",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "pocket"
+    },
+    {
+      "choiceId": "accept"
+    },
+    {
+      "choiceId": "side"
+    },
+    {
+      "choiceId": "spoof-door",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "go"
+    },
+    {
+      "choiceId": "honest"
+    },
+    {
+      "choiceId": "pact-copy"
+    },
+    {
+      "choiceId": "copy",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "heard"
+    },
+    {
+      "choiceId": "inspect-hour"
+    },
+    {
+      "choiceId": "inspect-signature"
+    },
+    {
+      "choiceId": "inspect-order"
+    },
+    {
+      "choiceId": "inspect-roster"
+    },
+    {
+      "choiceId": "reconstruct"
+    },
+    {
+      "choiceId": "ignore-order"
+    },
+    {
+      "choiceId": "keep-both-decisions"
+    },
+    {
+      "choiceId": "name-tower"
+    },
+    {
+      "choiceId": "seal-full"
+    },
+    {
+      "choiceId": "talk-leave",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "both"
+    },
+    {
+      "choiceId": "week-after"
+    },
+    {
+      "choiceId": "into-week"
+    },
+    {
+      "choiceId": "practice"
+    },
+    {
+      "choiceId": "learn-chrome"
+    },
+    {
+      "choiceId": "read-board"
+    },
+    {
+      "choiceId": "origin-contract"
+    },
+    {
+      "choiceId": "plan-freight",
+      "reload": true
+    },
+    {
+      "choiceId": "accept-freight-terms",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-freight-seal",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-freight-manifest",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-freight-window",
+      "reload": true
+    },
+    {
+      "choiceId": "prepare-freight",
+      "reload": true
+    },
+    {
+      "choiceId": "prep-freight-reader",
+      "reload": true
+    },
+    {
+      "choiceId": "freight-chrome-stock",
+      "reload": true
+    },
+    {
+      "choiceId": "acknowledge-freight-receipt",
+      "reload": true
+    },
+    {
+      "choiceId": "return-freight-board",
+      "reload": true
+    },
+    {
+      "choiceId": "to-helion"
+    },
+    {
+      "choiceId": "hear-ives"
+    },
+    {
+      "choiceId": "refuse-ives"
+    },
+    {
+      "choiceId": "trace-order"
+    },
+    {
+      "choiceId": "agree-archive-terms"
+    },
+    {
+      "choiceId": "skip-archive-prep"
+    },
+    {
+      "choiceId": "separate-source-tests"
+    },
+    {
+      "choiceId": "trace-receipt",
+      "roll": 1,
+      "reload": true
+    },
+    {
+      "choiceId": "keep-gap"
+    },
+    {
+      "choiceId": "hear-response"
+    },
+    {
+      "choiceId": "correct-public-claim"
+    },
+    {
+      "choiceId": "stand"
+    },
+    {
+      "choiceId": "back-to-board"
+    },
+    {
+      "choiceId": "to-the-wall"
+    },
+    {
+      "choiceId": "to-ward-nine"
+    },
+    {
+      "choiceId": "visit-records"
+    },
+    {
+      "choiceId": "keep-limits"
+    },
+    {
+      "choiceId": "visit-asa",
+      "reload": true
+    },
+    {
+      "choiceId": "reflect-freight-motive",
+      "reload": true
+    },
+    {
+      "choiceId": "finish-freight-reflection",
+      "reload": true
+    },
+    {
+      "choiceId": "face-sera"
+    },
+    {
+      "choiceId": "prepare-public-account"
+    },
+    {
+      "choiceId": "scope-bounded"
+    },
+    {
+      "choiceId": "keep-recording-private"
+    },
+    {
+      "choiceId": "claim-key-anyway"
+    },
+    {
+      "choiceId": "correct-hearing",
+      "reload": true
+    },
+    {
+      "choiceId": "file-public-account",
+      "reload": true
+    },
+    {
+      "choiceId": "leave-wall"
+    }
+  ],
+  "expected": {
+    "sceneId": "ending_quiet",
+    "flags": {
+      "testimony_published": true,
+      "archive_key_authenticated": false,
+      "nia_public_consent": false,
+      "order_verified": false,
+      "testimony_corrected": true,
+      "visited_asa": true,
+      "freight_reflected": true,
+      "freight_done": true,
+      "freight_delivered": true,
+      "freight_clearance_earned": true
+    },
+    "journal": [
+      "wall-account"
+    ]
+  }
+}

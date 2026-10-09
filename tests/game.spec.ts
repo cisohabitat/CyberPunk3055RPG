@@ -704,3 +704,51 @@ test("returning runners can skip the prologue while old saves continue at the jo
   const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
   expect(run.flags.opening_skipped).toBe(true); expect(run.flags.opening_survival).toBeUndefined(); expect(run.creds).toBe(20);
 });
+
+function freightFixture(stat = "ghost", creds = 100): GameState {
+  return { ...createCharacter({ handle: "Rex", givenName: "Ada", origin: "dustline", bonus: { chrome: 0, nerve: 0, face: 0, ghost: 2 } }), sceneId: "act2_origin_dustline", creds, flags: { perk_trained: true, [`perk_${stat}`]: true }, factions: { quill: 2, lumen: 0, helion: 0, wards: 0 } };
+}
+async function inspectFreight(page: Page) {
+  for (const id of ["plan-freight", "accept-freight-terms", "inspect-freight-seal", "inspect-freight-manifest", "inspect-freight-window", "prepare-freight"]) await page.getByTestId(`choice-${id}`).click();
+}
+for (const [stat, prep, method] of [["ghost", "scout", "ghost-gap"], ["chrome", "reader", "chrome-stock"], ["face", "escort", "face-escort"], ["nerve", "brace", "nerve-ramp"]] as const) test(`freight ${stat} specialization observes custody before a one-use reward`, async ({ page }) => {
+  await page.addInitScript(() => { Math.random = () => 0.75; localStorage.setItem("saint-shard-preferences", JSON.stringify({ reading: "all", textStep: 2, contrast: "high", artwork: "none" })); });
+  await page.setViewportSize({ width: 320, height: 844 });
+  await openRun(page, freightFixture(stat)); await inspectFreight(page);
+  await page.getByTestId(`choice-prep-freight-${prep}`).click();
+  await page.reload(); await page.getByTestId("continue-run").click();
+  await expect(page.getByTestId("goal")).toBeInViewport();
+  await page.getByTestId(`choice-freight-${method}`).click();
+  if (stat === "nerve") { await page.getByTestId("roll-button").click(); await page.reload(); await page.getByTestId("continue-run").click(); await expect(page.getByTestId("roll-button")).toHaveCount(0); await page.getByTestId("continue-check").click(); }
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!).items)).not.toContain("burner-route");
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations).toEqual([]);
+  await page.getByTestId("choice-acknowledge-freight-receipt").click();
+  const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(run.flags.freight_delivered).toBe(true); expect(run.items).toContain("burner-route");
+  expect(run.flags.order_verified).toBeUndefined(); expect(run.flags.nia_public_consent).toBeUndefined();
+  await expect(page.getByTestId("scene-text")).toContainText("delivery, not patient treatment");
+  await page.getByTestId("choice-return-freight-board").click();
+  await expect(page.getByTestId("choice-origin-contract")).toHaveCount(0);
+});
+test("freight critical failure restores once and offers a free recorded recovery", async ({ page }) => {
+  await page.addInitScript(() => { Math.random = () => 0.05; });
+  await openRun(page, freightFixture("face", 0)); await inspectFreight(page);
+  await page.getByTestId("choice-freight-without-prep").click(); await page.getByTestId("choice-freight-service-run").click();
+  await page.getByTestId("roll-button").click(); await page.reload(); await page.getByTestId("continue-run").click();
+  await expect(page.getByTestId("roll-button")).toHaveCount(0); await page.getByTestId("continue-check").click();
+  await expect(page.getByTestId("choice-freight-recovery-courier")).toBeDisabled();
+  await page.getByTestId("choice-freight-recovery-desk").click(); await page.getByTestId("choice-acknowledge-freight-receipt").click();
+  const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(run.creds).toBe(0); expect(run.strain).toBe(2); expect(run.flags.freight_exposed).toBe(true); expect(run.items).not.toContain("burner-route"); expect(run.rolls).toHaveLength(1);
+});
+test("a late freight reply confirms stock without retroactive reward", async ({ page }) => {
+  await openRun(page, { ...freightFixture(), sceneId: "ward_wall", flags: { freight_started: true, freight_done: true, freight_unconfirmed: true, opening_exit: true } });
+  for (const id of ["visit-asa", "query-freight-receipt", "record-freight-reply"]) await page.getByTestId(`choice-${id}`).click();
+  await page.reload(); await page.getByTestId("continue-run").click();
+  await expect(page.getByTestId("choice-query-freight-receipt")).toHaveCount(0);
+  for (const id of ["reflect-freight-motive", "finish-freight-reflection"]) await page.getByTestId(`choice-${id}`).click();
+  await expect(page.getByTestId("choice-visit-asa")).toHaveCount(0);
+  const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(run.flags.freight_late_received).toBe(true); expect(run.items).not.toContain("burner-route"); expect(run.flags.order_verified).toBeUndefined(); expect(run.sceneId).toBe("ward_wall");
+});

@@ -24,6 +24,12 @@ export function journalEntry(item: string | JournalEntry): JournalEntry {
 }
 
 export const JOURNAL_TITLES: Record<string, string> = {
+  "freight-promise": "Asa’s delivery terms",
+  "freight-seal": "Diagnostic case seal",
+  "freight-manifest": "Clinic cargo slip",
+  "freight-window": "Gate service timetable",
+  "freight-receipt": "Clinic stock receipt",
+  "freight-late-reply": "Clinic stock reply",
   "edda-shift-request": "Edda’s private payroll request",
   "edda-shift-response": "Edda’s payroll reply",
   "pump-inspection": "Coolant inspection appointment",

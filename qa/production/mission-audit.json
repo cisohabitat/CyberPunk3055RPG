@@ -108,5 +108,27 @@
     "priority": "P1",
     "finding": "Delayed replies distinguish acknowledged receipt from unknown attendance. Public monitoring has paid/private or free withdrawal responses, retaining earlier observation.",
     "truth": "Dispatch acceptance, public window visibility, patient receipt, and patient attendance are different outcomes. No home list is published by any method."
+  },
+  {
+    "id": "freight-delivery",
+    "title": "Asa\u2019s sealed courier delivery",
+    "scenes": [
+      "act2_origin_dustline",
+      "act2_freight_brief",
+      "act2_freight_sources",
+      "act2_freight_prep",
+      "act2_freight_crossing",
+      "act2_freight_recovery",
+      "act2_freight_intake",
+      "act2_freight_result"
+    ],
+    "laterScenes": [
+      "act3_freight_visit",
+      "act3_freight_query",
+      "act3_freight_reflection"
+    ],
+    "priority": "P2",
+    "finding": "A staged origin favor offers preparation, specialist methods, recovery and an observed receipt. Other origin favors and independent mission review remain future work.",
+    "truth": "An intact sealed parcel, a clinic stock receipt, a private crossing, one passenger clearance and patient treatment are distinct outcomes. A late receipt creates no retroactive clearance or historical verification."
   }
 ]

@@ -3,6 +3,7 @@ import type { GameState } from "../types";
 export type CastMember = { name: string; role: string };
 
 const ORDER: CastMember[] = [
+  { name: "Asa", role: "The courier" },
   { name: "Quill", role: "The broker" },
   { name: "Mara Voss", role: "The patient" },
   { name: "Kerr", role: "Her shadow" },
@@ -31,6 +32,7 @@ export function metCast(state: GameState, speaker?: string): CastMember[] {
   }
   if (state.flags.met_ives || state.flags.gave_copy || state.flags.ives_open || state.flags.ives_satisfied) met.add("Ives");
   if (state.flags.met_sera) met.add("Sera");
+  if (state.flags.met_asa) met.add("Asa");
   if (state.flags.met_edda) met.add("Edda");
   if (state.flags.met_nia) met.add("Nia Pell");
   return ORDER.filter((person) => met.has(person.name));

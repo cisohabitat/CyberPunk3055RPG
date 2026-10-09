@@ -1046,3 +1046,81 @@ describe("playable opening", () => {
     assert.equal(parseSave(JSON.stringify(old))?.sceneId, "stall");
   });
 });
+
+
+describe("Asa’s staged freight mission", () => {
+  const start = (stat: StatId = "ghost", creds = 100): GameState => ({ ...make("dustline", { chrome: 0, nerve: 0, face: 0, ghost: 2 }), sceneId: "act2_origin_dustline", creds, flags: { perk_trained: true, [`perk_${stat}`]: true }, factions: { quill: 2, lumen: 0, helion: 0, wards: 0 } });
+  const prepare = (stat: StatId = "ghost", creds = 100) => {
+    let state = step(step(start(stat, creds), "plan-freight"), "accept-freight-terms");
+    for (const id of ["inspect-freight-seal", "inspect-freight-manifest", "inspect-freight-window", "prepare-freight"]) state = step(state, id);
+    return state;
+  };
+  it("requires three bounded source records and preserves them across a checkpoint", () => {
+    let state = step(step(start(), "plan-freight"), "accept-freight-terms");
+    assert.equal(presentChoices(state, getScene(state.sceneId)).some((choice) => choice.id === "prepare-freight"), false);
+    state = step(state, "inspect-freight-seal");
+    assert.equal(presentChoices(state, getScene(state.sceneId)).some((choice) => choice.id === "inspect-freight-seal"), false);
+    const restored = parseSave(JSON.stringify(state)); assert.ok(restored);
+    assert.equal(restored.flags.freight_seal, true); assert.equal(restored.flags.order_verified, undefined);
+    assert.deepEqual(restored.items, []);
+  });
+  it("each specialist needs its matching preparation, and earns a single clearance only after receipt", () => {
+    for (const [stat, prep, method] of [["ghost", "scout", "ghost-gap"], ["chrome", "reader", "chrome-stock"], ["face", "escort", "face-escort"], ["nerve", "brace", "nerve-ramp"]] as const) {
+      let state = step(prepare(stat), `prep-freight-${prep}`);
+      const choice = presentChoices(state, getScene(state.sceneId)).find((entry) => entry.id === `freight-${method}`)!;
+      assert.equal(choice.enabled, true);
+      if (stat === "ghost") {
+        const rolled = getScene(state.sceneId).choices.find((entry) => entry.id === "freight-service-run")!;
+        assert.equal(previewCheck(state, rolled.check!).hits, 9, "the maximum trained, mapped build still risks one die face without equipment");
+      }
+      assert.equal(presentChoices({ ...state, flags: { ...state.flags, [`perk_${stat}`]: false } }, getScene(state.sceneId)).some((entry) => entry.id === choice.id), false);
+      state = step(state, choice.id, stat === "nerve" ? 8 : undefined);
+      assert.equal(state.flags.origin_done, undefined); assert.equal(state.items.includes("burner-route"), false);
+      state = step(state, "acknowledge-freight-receipt");
+      assert.equal(state.flags.freight_delivered, true); assert.equal(state.flags.freight_clearance_earned, true);
+      assert.deepEqual(state.items, ["burner-route"]); assert.equal(state.flags.order_verified, undefined);
+      assert.equal(state.flags.witness_safe, undefined); assert.equal(state.flags.nia_public_consent, undefined);
+      assert.equal(presentChoices({ ...state, sceneId: "act2_freight_intake" }, getScene("act2_freight_intake")).some((entry) => entry.id === "acknowledge-freight-receipt"), false);
+      assert.equal(presentChoices({ ...state, sceneId: "act2_origin_dustline" }, getScene("act2_origin_dustline")).some((entry) => entry.id === "courier-run"), false);
+    }
+  });
+  it("critical failure keeps paid recovery exposed and supplies no fresh private attempt", () => {
+    let state = step(step(prepare("face"), "freight-without-prep"), "freight-service-run", 1);
+    assert.equal(state.sceneId, "act2_freight_recovery"); assert.equal(state.strain, 2);
+    assert.equal(state.flags.freight_exposed, true);
+    assert.equal(presentChoices(state, getScene(state.sceneId)).some((entry) => entry.id === "freight-service-run"), false);
+    const saved = parseSave(JSON.stringify(state)); assert.ok(saved);
+    state = step(step(saved, "freight-recovery-courier"), "acknowledge-freight-receipt");
+    assert.equal(state.creds, 75); assert.equal(state.flags.freight_delivered, true);
+    assert.equal(state.flags.freight_exposed, true); assert.equal(state.items.includes("burner-route"), false);
+  });
+  it("zero funds still allow observed delivery through the official desk", () => {
+    let state = step(step(prepare("nerve", 0), "freight-without-prep"), "freight-service-run", 1);
+    assert.equal(presentChoices(state, getScene(state.sceneId)).find((entry) => entry.id === "freight-recovery-courier")?.enabled, false);
+    state = step(step(state, "freight-recovery-desk"), "acknowledge-freight-receipt");
+    assert.equal(state.creds, 0); assert.equal(state.flags.freight_registered, true); assert.equal(state.flags.freight_delivered, true);
+    assert.deepEqual(state.items, []);
+  });
+  it("late stock confirmation resolves receipt without retroactive clearance or duplicate rewards", () => {
+    let state = step(step(step(prepare(), "freight-without-prep"), "freight-paid-courier"), "leave-freight-batch");
+    assert.equal(state.flags.freight_delivered, undefined); assert.equal(state.flags.freight_unconfirmed, true);
+    const before = state.creds;
+    state = step({ ...state, sceneId: "ward_wall" }, "visit-asa");
+    state = step(step(state, "query-freight-receipt"), "record-freight-reply");
+    assert.equal(state.flags.freight_late_received, true); assert.deepEqual(state.items, []); assert.equal(state.creds, before);
+    assert.equal(presentChoices(state, getScene(state.sceneId)).some((entry) => entry.id === "query-freight-receipt"), false);
+    state = step(step(state, "reflect-freight-motive"), "finish-freight-reflection");
+    assert.equal(state.sceneId, "ward_wall"); assert.equal(state.flags.visited_asa, true);
+    assert.equal(presentChoices(state, getScene(state.sceneId)).some((entry) => entry.id === "visit-asa"), false);
+  });
+  it("declining and abandoning retain unknown delivery, without a passenger or historical proof", () => {
+    for (const declined of [true, false]) {
+      let state = declined ? step(step(start(), "plan-freight"), "decline-freight") : step(step(step(prepare("face"), "freight-without-prep"), "freight-service-run", 1), "freight-return-case");
+      state = step({ ...state, sceneId: "act3_neighborhood" }, "visit-asa");
+      state = step(step(state, "query-freight-receipt"), "record-freight-reply");
+      assert.equal(state.flags.freight_late_unknown, true); assert.equal(state.flags.freight_late_received, undefined);
+      assert.deepEqual(state.items, []); assert.equal(state.flags.order_verified, undefined);
+      state = step(state, "close-freight-visit"); assert.equal(state.sceneId, "act3_neighborhood");
+    }
+  });
+});
