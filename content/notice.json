@@ -1,0 +1,365 @@
+{
+  "version": 1,
+  "scenes": [
+    {
+      "id": "act2_notice_brief",
+      "location": "Clinic dispatch desk, Glass Chapel",
+      "speaker": "Sister Lumen",
+      "text": "Lumen has two sheets on her desk. One lists clinic appointment windows. The other is a housing slip somebody proposed pinning beside the district board.\n\n\"They need to know where the clinic is,\" she says. \"They do not need to tell every landlord where they sleep. Dispatch wants a route it can verify. I need a notice people can actually use.\"\n\nHelp separate the routing information from the private list, then choose how to distribute it. This is present-day clinic work, not evidence about Ward Nine’s old command.",
+      "choices": [
+        {
+          "id": "accept-notice",
+          "label": "Compare the routing sources before choosing a notice.",
+          "next": "act2_notice_sources",
+          "effects": {
+            "flags": [
+              "notice_started"
+            ],
+            "journal": [
+              {
+                "id": "notice-promise",
+                "text": "Help the clinic distribute usable appointment information without publishing home addresses.",
+                "kind": "promise"
+              }
+            ]
+          }
+        },
+        {
+          "id": "leave-notice-brief",
+          "label": "Leave the distribution decision with clinic staff.",
+          "next": "act2_middle"
+        }
+      ]
+    },
+    {
+      "id": "act2_notice_sources",
+      "location": "Clinic dispatch desk, Glass Chapel",
+      "speaker": "Sister Lumen",
+      "text": "Three papers, three different jobs. The housing slip records private destinations. The bus map locates a public stop. The appointment card gives the clinic window and a dispatch return contact.\n\nRead each before choosing what belongs on a public board. No check changes the contents.",
+      "choices": [
+        {
+          "id": "read-notice-slip",
+          "label": "Read the housing slip.",
+          "next": "act2_notice_sources",
+          "hideIfFlag": "notice_slip",
+          "effects": {
+            "flags": [
+              "notice_slip"
+            ],
+            "journal": [
+              {
+                "id": "notice-slip",
+                "text": "The housing slip contains private destinations. It is not necessary for a public clinic route.",
+                "kind": "fact"
+              }
+            ]
+          }
+        },
+        {
+          "id": "read-notice-map",
+          "label": "Read the bus map.",
+          "next": "act2_notice_sources",
+          "hideIfFlag": "notice_map",
+          "effects": {
+            "flags": [
+              "notice_map"
+            ],
+            "journal": [
+              {
+                "id": "notice-map",
+                "text": "The public bus map identifies the clinic stop, not patient homes.",
+                "kind": "fact"
+              }
+            ]
+          }
+        },
+        {
+          "id": "read-notice-card",
+          "label": "Read the appointment card.",
+          "next": "act2_notice_sources",
+          "hideIfFlag": "notice_card",
+          "effects": {
+            "flags": [
+              "notice_card"
+            ],
+            "journal": [
+              {
+                "id": "notice-card",
+                "text": "The appointment card contains a clinic window and return contact. Publicizing the window enables monitoring of that time.",
+                "kind": "fact"
+              }
+            ]
+          }
+        },
+        {
+          "id": "plan-notice",
+          "label": "Choose how to distribute the appointment information.",
+          "next": "act2_notice_methods",
+          "requireAllFlags": [
+            "notice_slip",
+            "notice_map",
+            "notice_card"
+          ]
+        },
+        {
+          "id": "defer-notice",
+          "label": "Return the papers. Leave distribution unresolved.",
+          "next": "act2_middle",
+          "effects": {
+            "flags": [
+              "notice_done",
+              "notice_unresolved"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "act2_notice_methods",
+      "location": "Clinic dispatch desk, Glass Chapel",
+      "speaker": "Sister Lumen",
+      "text": "The public notice can carry a clinic stop and window without carrying homes. Private cards let patients receive details individually, but dispatch must accept them first.\n\nLumen wants the address fields left out of circulation. The desk wants an accountable return contact. You can meet both needs privately, or accept the monitoring risk of a usable public map. No method guarantees arrival.",
+      "choices": [
+        {
+          "id": "courier-notice",
+          "label": "Pay twenty creds for sealed appointment cards.",
+          "next": "act2_notice_receipt",
+          "requireCreds": 20,
+          "detail": "The courier accepts the route; no home addresses enter the public notice. Delivery is still future work.",
+          "effects": {
+            "flags": [
+              "notice_private_confirmed",
+              "notice_courier"
+            ],
+            "creds": -20
+          }
+        },
+        {
+          "id": "post-notice-map",
+          "label": "Publish the bus stop and clinic window, with no home addresses.",
+          "next": "act2_notice_receipt",
+          "detail": "No fee. Neighbors can find the clinic, but Helion can monitor the advertised window. No patient list is published.",
+          "effects": {
+            "flags": [
+              "notice_public_route"
+            ],
+            "factions": {
+              "helion": 1,
+              "wards": 1
+            }
+          }
+        },
+        {
+          "id": "negotiate-notice",
+          "label": "Ask the dispatch desk to take sealed cards without a tenancy list.",
+          "detail": "One attempt. Failure leaves paid delivery or a public stop map available.",
+          "check": {
+            "stat": "face",
+            "dc": 8,
+            "label": "Negotiate private distribution",
+            "itemBonuses": [
+              {
+                "item": "desk-guide",
+                "amount": 2
+              }
+            ]
+          },
+          "effects": {
+            "flags": [
+              "notice_attempted"
+            ]
+          },
+          "successEffects": {
+            "flags": [
+              "notice_private_confirmed"
+            ]
+          },
+          "failEffects": {
+            "flags": [
+              "notice_desk_refused"
+            ]
+          },
+          "resultSuccess": "The desk accepts sealed cards and a clinic return contact. It takes no housing list; receipt confirms acceptance, not delivery.",
+          "resultFail": "The dispatcher refuses an unregistered bundle. Your request names no patients. Choose another distribution method.",
+          "nextSuccess": "act2_notice_receipt",
+          "nextFail": "act2_notice_recovery"
+        },
+        {
+          "id": "carry-notice",
+          "label": "Carry the sealed cards through the service stair yourself.",
+          "detail": "One Nerve check. A failed crossing delays the cards and adds strain; paid delivery or a public map remains.",
+          "check": {
+            "stat": "nerve",
+            "dc": 7,
+            "label": "Carry the sealed cards",
+            "itemBonuses": [
+              {
+                "item": "chair-harness",
+                "amount": 2
+              }
+            ]
+          },
+          "effects": {
+            "flags": [
+              "notice_attempted"
+            ]
+          },
+          "successEffects": {
+            "flags": [
+              "notice_private_confirmed",
+              "notice_carried"
+            ]
+          },
+          "failEffects": {
+            "flags": [
+              "notice_delivery_delayed"
+            ],
+            "strain": 1
+          },
+          "resultSuccess": "You hand the sealed cards to the next dispatch desk. The clerk signs acceptance; nobody has confirmed patient receipt yet.",
+          "resultFail": "The lift stops short of the landing. You return with the unopened cards; the window is closing.",
+          "nextSuccess": "act2_notice_receipt",
+          "nextFail": "act2_notice_recovery"
+        }
+      ]
+    },
+    {
+      "id": "act2_notice_recovery",
+      "location": "Clinic dispatch desk, Glass Chapel",
+      "speaker": "Sister Lumen",
+      "text": [
+        {
+          "select": [
+            {
+              "when": {
+                "all": [
+                  "notice_delivery_delayed"
+                ]
+              },
+              "text": "The cards are still sealed, and the lift window has gone. Lumen takes the load off your hands. Nobody received a card during the failed crossing."
+            }
+          ],
+          "fallback": "The dispatcher refused the private bundle. Lumen reads the refusal once, then folds it under the cards. No patient names were given to the desk."
+        },
+        "\"Try another channel, not the same answer louder,\" she says. You can fund a courier, publish only the public stop and clinic window, or leave the task unresolved."
+      ],
+      "choices": [
+        {
+          "id": "courier-notice",
+          "label": "Pay twenty creds for sealed appointment cards.",
+          "next": "act2_notice_receipt",
+          "requireCreds": 20,
+          "detail": "The courier accepts the route; no home addresses enter the public notice. Delivery is still future work.",
+          "effects": {
+            "flags": [
+              "notice_private_confirmed",
+              "notice_courier"
+            ],
+            "creds": -20
+          }
+        },
+        {
+          "id": "post-notice-map",
+          "label": "Publish the bus stop and clinic window, with no home addresses.",
+          "next": "act2_notice_receipt",
+          "detail": "No fee. Neighbors can find the clinic, but Helion can monitor the advertised window. No patient list is published.",
+          "effects": {
+            "flags": [
+              "notice_public_route"
+            ],
+            "factions": {
+              "helion": 1,
+              "wards": 1
+            }
+          }
+        },
+        {
+          "id": "leave-notice-recovery",
+          "label": "Leave the unopened bundle with Lumen.",
+          "next": "act2_middle",
+          "effects": {
+            "flags": [
+              "notice_done",
+              "notice_unresolved"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "act2_notice_receipt",
+      "location": "Clinic dispatch desk, Glass Chapel",
+      "speaker": "Sister Lumen",
+      "text": [
+        {
+          "select": [
+            {
+              "when": {
+                "all": [
+                  "notice_public_route"
+                ]
+              },
+              "text": "The board carries the clinic stop and window. The housing sheet stays in Lumen’s drawer. Helion can watch the advertised time; it has received no home list from this notice."
+            },
+            {
+              "when": {
+                "all": [
+                  "notice_courier"
+                ]
+              },
+              "text": "The courier seals the appointment cards and signs a dispatch receipt. You paid for the channel. Patient receipt has not happened in front of you."
+            },
+            {
+              "when": {
+                "all": [
+                  "notice_carried"
+                ]
+              },
+              "text": "A clerk signs for the cards you carried. They are still sealed. An accepted bundle is not a completed set of appointments."
+            }
+          ],
+          "fallback": "The dispatcher accepts the sealed cards with the clinic as return contact. It does not demand the housing sheet."
+        },
+        "Lumen keeps the receipt. \"Come back when the window has passed. A plan deserves an answer, even if it was a good plan.\""
+      ],
+      "choices": [
+        {
+          "id": "record-private-notice",
+          "label": "Record private dispatch acceptance; delivery remains unobserved.",
+          "next": "act2_middle",
+          "requireFlag": "notice_private_confirmed",
+          "effects": {
+            "flags": [
+              "notice_done"
+            ],
+            "journal": [
+              {
+                "id": "notice-receipt",
+                "text": "Sealed appointment cards were accepted through a private channel. No public home list was supplied. Patient receipt and attendance remain unobserved.",
+                "kind": "fact"
+              }
+            ]
+          }
+        },
+        {
+          "id": "record-public-notice",
+          "label": "Record the public window and its monitoring risk.",
+          "next": "act2_middle",
+          "requireFlag": "notice_public_route",
+          "effects": {
+            "flags": [
+              "notice_done"
+            ],
+            "journal": [
+              {
+                "id": "notice-receipt",
+                "text": "The public board carries the bus stop and clinic window without home addresses. The advertised time can be monitored; patient attendance remains unobserved.",
+                "kind": "fact"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -88,5 +88,22 @@
     "priority": "P1",
     "finding": "Provide an accessible source summary before the player chooses a public scope.",
     "truth": "Public confidence creates no source, consent, or authentication."
+  },
+  {
+    "id": "clinic-notice",
+    "title": "Clinic distribution dispute",
+    "scenes": [
+      "act2_notice_brief",
+      "act2_notice_sources",
+      "act2_notice_methods",
+      "act2_notice_recovery",
+      "act2_notice_receipt"
+    ],
+    "laterScenes": [
+      "act3_records_visit"
+    ],
+    "priority": "P1",
+    "finding": "Second JSON encounter separates usable public routing from private delivery. Add a delayed distribution reply next cycle; comprehension and writer acceptance remain open.",
+    "truth": "Dispatch acceptance, public window visibility, patient receipt, and patient attendance are different outcomes. No home list is published by any method."
   }
 ]

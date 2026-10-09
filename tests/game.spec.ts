@@ -17,6 +17,30 @@ test("cross-examination preserves attributed answers through a reload", async ({
   expect(run.flags.order_verified).toBeUndefined();
   expect(run.journal.filter((entry: {id: string}) => entry.id.startsWith("mara-")).map((entry: {kind: string}) => entry.kind)).toEqual(["claim", "claim"]);
 });
+test("clinic notice sources gate distribution and preserve private dispatch", async ({ page }) => {
+  await openRun(page, fixture("act2_notice_brief", { creds: 20, flags: { memory_prepared: true } }));
+  await page.getByTestId("choice-accept-notice").click();
+  await expect(page.getByTestId("choice-plan-notice")).toHaveCount(0);
+  for (const id of ["read-notice-slip", "read-notice-map", "read-notice-card", "plan-notice", "courier-notice", "record-private-notice"]) await page.getByTestId(`choice-${id}`).click();
+  await page.reload(); await page.getByTestId("continue-run").click();
+  await expect(page.getByTestId("choice-help-clinic-notice")).toHaveCount(0);
+  const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(run.creds).toBe(0); expect(run.flags.notice_private_confirmed).toBe(true); expect(run.flags.order_verified).toBeUndefined();
+  await page.getByTestId("objectives").locator("summary").click();
+  await expect(page.getByTestId("objectives")).toContainText("still unobserved");
+  expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations).toEqual([]);
+});
+test("a refused notice can recover without money or a repeated check", async ({ page }) => {
+  await page.addInitScript(() => { Math.random = () => 0.05; });
+  await openRun(page, fixture("act2_notice_methods", { creds: 0, flags: { notice_started: true, notice_slip: true, notice_map: true, notice_card: true } }));
+  await page.getByTestId("choice-negotiate-notice").click(); await page.getByTestId("roll-button").click();
+  await page.reload(); await page.getByTestId("continue-run").click(); await page.getByTestId("continue-check").click();
+  await expect(page.getByTestId("choice-negotiate-notice")).toHaveCount(0);
+  await expect(page.getByTestId("choice-courier-notice")).toBeDisabled();
+  await page.getByTestId("choice-post-notice-map").click(); await page.getByTestId("choice-record-public-notice").click();
+  const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(run.flags.notice_desk_refused).toBe(true); expect(run.flags.notice_public_route).toBe(true); expect(run.creds).toBe(0);
+});
 async function openRun(page: Page, state = fixture()) {
   await page.addInitScript((run) => {
     if (!localStorage.getItem("saint-shard-3055-v1")) localStorage.setItem("saint-shard-3055-v1", JSON.stringify(run));

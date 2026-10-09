@@ -1,3 +1,4 @@
+import { NOTICE_SCENES } from "./notice";
 import { mergeScenes } from "../authoring";
 import { EMPLOYMENT_SCENES } from "./employment";
 import { COMMUNITY_SCENES } from "./community";
@@ -24,6 +25,7 @@ export const SCENES: Record<string, Scene> = mergeScenes(
   MISSION_SCENES,
   SUPPORT_SCENES,
   COMMUNITY_SCENES,
+  NOTICE_SCENES,
   EMPLOYMENT_SCENES,
   ARCHIVE_SCENES,
   OPERATION_SCENES,

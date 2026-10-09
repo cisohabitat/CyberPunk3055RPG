@@ -6,6 +6,7 @@ export type Objective = { id: string; title: string; status: "Open" | "Complete"
 export function objectives(state: GameState): Objective[] {
   const rows: Objective[] = [];
   const atWall = actName(state) === "The Wall";
+  if (state.flags.notice_started) rows.push({ id: "notice", title: "Clinic appointment information", status: state.flags.notice_unresolved ? "Unresolved" : state.flags.notice_done ? "Complete" : atWall ? "Unresolved" : "Open", detail: state.flags.notice_unresolved ? "Distribution was left with staff; no patient receipt was observed." : state.flags.notice_done ? "Distribution was arranged without a public home list. Patient receipt and attendance are still unobserved." : "Choose a usable route or private channel without publishing home addresses." });
   const account = state.journal.some((entry) => entry.id === "nia-account");
   if (state.flags.memory_witness || state.flags.memory_redacted) {
     rows.push({
@@ -38,8 +39,9 @@ export function unresolvedPromises(state: GameState): Objective[] {
 }
 
 export function nextStep(state: GameState): string {
-  if (["memory_cross_exam", "memory_assurance", "memory_channel"].includes(state.sceneId)) return "Ask what Mara knew and who supplied her assurance. Attribute her answers; no testimony becomes an independent issuing-key test.";
   if (state.pendingCheck) return "Finish the recorded roll. Its outcome is already saved.";
+  if (state.sceneId.startsWith("act2_notice_")) return "Separate public routing from private homes. Choose a channel; a dispatch receipt guarantees no attendance.";
+  if (["memory_cross_exam", "memory_assurance", "memory_channel"].includes(state.sceneId)) return "Ask what Mara knew and who supplied her assurance. Attribute her answers; no testimony becomes an independent issuing-key test.";
   if (state.sceneId === "memory_table") {
     const count = ["memory_signature", "memory_order", "memory_roster"].filter((flag) => state.flags[flag]).length;
     return count < 3 ? `Inspect the remaining ${3 - count} ${3 - count === 1 ? "fragment" : "fragments"}, then compare their decisions.` : state.flags.memory_prepared ? "Choose an archive, a redacted roster, or a witness chain. Each opens a different responsibility next week." : "Compare the signature and the later order, then label what the packet can prove.";

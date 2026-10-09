@@ -48,6 +48,11 @@ export const JOURNAL_TITLES: Record<string, string> = {
   "nia-account": "Nia's account",
   "verified-order": "Command chain verified",
   "archive-gap": "An unverified issuing key",
+  "notice-promise": "Private clinic distribution",
+  "notice-slip": "Private housing destinations",
+  "notice-map": "The public clinic stop",
+  "notice-card": "The appointment window",
+  "notice-receipt": "Clinic dispatch receipt",
   "mara-assurance": "The assurance Mara accepted",
   "mara-channel": "The unnamed dispatch relay",
   "memory-analysis": "Two decisions, separate questions",
@@ -65,6 +70,7 @@ export function journalKind(entry: JournalEntry): "fact" | "claim" | "promise" {
 }
 
 export function promiseStatus(id: string, flags: Record<string, boolean>, journal: JournalEntry[] = []): string {
+  if (id === "notice-promise") return flags.notice_unresolved ? "Distribution unresolved" : flags.notice_done ? "Dispatched; delivery unobserved" : "Distribution open";
   if (id === "edda-shift-request") return flags.edda_shift_paid ? "Temporary paid work" : flags.edda_shift_done ? "Review pending" : "Application open";
   if (id === "witness-promise") return flags.witness_lost ? "Location exposed" : flags.witness_safe && journal.some((entry) => entry.id === "nia-account") ? "Kept" : flags.witness_safe ? "Account pending" : "Unresolved";
   if (id === "archive-promise") return flags.order_verified ? "Corroborated" : flags.archive_unresolved ? "Gap recorded" : "Unresolved";

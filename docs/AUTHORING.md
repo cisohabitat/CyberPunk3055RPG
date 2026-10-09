@@ -28,3 +28,5 @@ Before accepting a change:
 5. Update README and AGENTS together, then the production slice record. Keep the source, tests, and record in one reviewable commit.
 
 The report records observed prose variants and unplayed scenes/choices. It also exports the complete declarative pump source, including its alternative text. An unplayed branch is a coverage gap, not a passing editor review. New conditions need targeted fixtures or continuity tests; structural validation cannot judge the prose’s truth or emotional value. Independent writer and narrative-editor acceptance remains pending in `qa/production/acceptance.json`.
+
+The second structured encounter lives in `content/notice.json`, compiled by `lib/story/notice.ts`. It demonstrates repeatable source inspection, static source requirements, distinct methods, failed-attempt recovery and conditional receipts without executable JSON. Production catalog exports both source files. This is internally authored pipeline evidence, not independent writer acceptance.

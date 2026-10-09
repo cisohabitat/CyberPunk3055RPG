@@ -8,6 +8,7 @@ import { SCENES } from "../lib/story";
 import { storyReport } from "../lib/story-report";
 import { replayCampaign, type ReplaySpec } from "../lib/story-replay";
 import { acceptanceSummary, budgetViolations, type AcceptanceGate } from "../lib/production";
+import notice from "../content/notice.json";
 import authored from "../content/community.json";
 import budgets from "../qa/production/budgets.json";
 import missions from "../qa/production/mission-audit.json";
@@ -59,7 +60,7 @@ const report = {
   revision: execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8" }).trim(),
   dirty: Boolean(execFileSync("git", ["status", "--porcelain"], { encoding: "utf8" }).trim()),
   graph: { scenes: graph.sceneCount, choices: graph.choiceCount, missing: graph.missing },
-  authoring: { source: "content/community.json", scenes: authored.scenes.length, choiceCount: authored.scenes.reduce((sum, scene) => sum + scene.choices.length, 0) },
+  authoring: { sources: ["content/community.json", "content/notice.json"], scenes: authored.scenes.length + notice.scenes.length, choiceCount: [...authored.scenes, ...notice.scenes].reduce((sum, scene) => sum + scene.choices.length, 0) },
   replayCoverage: { routes, scenes: variants.size, choices: coveredChoices.size, unplayedScenes: catalog.filter((scene) => scene.unplayedByFixtures).map((scene) => scene.id), unplayedChoices: graph.nodes.flatMap((scene) => scene.choices.filter((choice) => !coveredChoices.has(`${scene.id}:${choice.id}`)).map((choice) => `${scene.id}:${choice.id}`)) },
   budgets, violations, assets, acceptance,
   missionAudit: auditMissions(SCENES, missions, coveredChoices),
@@ -67,7 +68,7 @@ const report = {
 };
 mkdirSync(directory, { recursive: true });
 writeFileSync(`${directory}/production.json`, JSON.stringify(report, null, 2) + "\n");
-writeFileSync(`${directory}/story-catalog.json`, JSON.stringify({ catalog, authoredSource: authored }, null, 2) + "\n");
+writeFileSync(`${directory}/story-catalog.json`, JSON.stringify({ catalog, authoredSource: authored, authoredMissions: [{ source: "content/community.json", data: authored }, { source: "content/notice.json", data: notice }] }, null, 2) + "\n");
 const escape = (text: string) => text.replace(/[&<>"']/g, (char) => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[char]!));
 const cards = catalog.map((scene) => `<article><h2>${escape(scene.id)}</h2><p>${escape(scene.location)}</p><details><summary>${scene.choices.length} choices; ${scene.observedText.length} observed prose variants</summary>${scene.observedText.map((text) => `<pre>${escape(text)}</pre>`).join("")}${scene.unplayedByFixtures ? "<p>Not observed by the fixture set. Review source and add a route before accepting coverage.</p>" : ""}<ul>${scene.choices.map((choice) => `<li><code>${escape(choice.id)}</code> ${escape(choice.label)}${choice.check ? ` · ${escape(choice.check)}` : ""}</li>`).join("")}</ul><p>Destinations: ${scene.destinations.map(escape).join(", ")}</p></details></article>`).join("");
 writeFileSync(`${directory}/review.html`, `<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Saint Shard production review</title><style>body{font:18px system-ui;max-width:70rem;margin:auto;padding:1.5rem;background:#101019;color:#eee}article{border:1px solid #58616a;padding:1rem;margin:1rem 0}pre{white-space:pre-wrap;font:inherit;line-height:1.6}input{font:inherit;padding:.6rem;width:85%;background:#fff;color:#111}code{color:#7efaff}</style><body><main><h1>Saint Shard production review</h1><p>Internal QA source catalog. Contains full story spoilers. ${graph.sceneCount} scenes, ${graph.choiceCount} choices. Pending independent acceptance gates: ${acceptance.pending.length}.</p><label>Find a scene or choice <input id="search" type="search"></label>${cards}</main><script>document.getElementById('search').addEventListener('input',e=>{const q=e.target.value.toLowerCase();document.querySelectorAll('article').forEach(a=>a.hidden=!a.textContent.toLowerCase().includes(q))})</script></body></html>`);
