@@ -1,0 +1,89 @@
+[
+  {
+    "id": "memory-account",
+    "title": "Memory reconstruction",
+    "scenes": [
+      "memory_table",
+      "memory_reconstruction",
+      "memory_challenge",
+      "memory_publication"
+    ],
+    "laterScenes": [
+      "act2_public_response",
+      "act3_records_visit"
+    ],
+    "priority": "P1",
+    "finding": "Mara\u2019s claimed expectation cannot yet be questioned separately. Add optional cross-examination without awarding proof.",
+    "truth": "A signature establishes authorization; Mara\u2019s explanation is testimony; an exported issuing key needs an independent test."
+  },
+  {
+    "id": "witness-transfer",
+    "title": "Nia\u2019s transfer",
+    "scenes": [
+      "act2_witness_brief",
+      "act2_witness_plan",
+      "act2_witness_arrival",
+      "act2_witness_repair"
+    ],
+    "laterScenes": [
+      "act3_witness_visit"
+    ],
+    "priority": "P1",
+    "finding": "The return has one acknowledgement. Give Nia a decision about continuing contact separate from testimony.",
+    "truth": "A private room, approved recording, public quotation, and an earlier location breach are separate outcomes."
+  },
+  {
+    "id": "archive-search",
+    "title": "Edda\u2019s source retrieval",
+    "scenes": [
+      "act2_archive_brief",
+      "act2_archive_prep",
+      "act2_archive_compare",
+      "act2_archive_challenge",
+      "act2_archive_custody"
+    ],
+    "laterScenes": [
+      "act3_edda_visit",
+      "act3_edda_reply"
+    ],
+    "priority": "P2",
+    "finding": "Preserve source distinctions when extending the evidence UI.",
+    "truth": "A catalog identifies a source; a ledger corroborates cancellation; only the issuing-key test authenticates that key."
+  },
+  {
+    "id": "coolant-emergency",
+    "title": "Clinic coolant emergency",
+    "scenes": [
+      "act2_pump_brief",
+      "act2_pump_methods",
+      "act2_pump_triage",
+      "act2_pump_report"
+    ],
+    "laterScenes": [
+      "act3_pump_visit",
+      "act3_pump_schedule"
+    ],
+    "priority": "P2",
+    "finding": "A booked inspection remains future work; do not present it as an observed cure.",
+    "truth": "Cooling restored, medicines transferred, and maintenance scheduled are separate outcomes."
+  },
+  {
+    "id": "public-hearing",
+    "title": "The public hearing",
+    "scenes": [
+      "act3_testimony_review",
+      "act3_testimony_consent",
+      "act3_testimony_hearing",
+      "act3_testimony_record"
+    ],
+    "laterScenes": [
+      "ending_names",
+      "ending_quiet",
+      "ending_witness",
+      "ending_listed"
+    ],
+    "priority": "P1",
+    "finding": "Provide an accessible source summary before the player chooses a public scope.",
+    "truth": "Public confidence creates no source, consent, or authentication."
+  }
+]
