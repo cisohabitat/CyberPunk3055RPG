@@ -7,6 +7,16 @@ import { exportRun } from "../lib/vault";
 function fixture(sceneId = "stall", extra: Partial<GameState> = {}): GameState {
   return { ...createCharacter({ handle: "Rex", givenName: "Ada", origin: "spire", bonus: { chrome: 0, nerve: 0, face: 2, ghost: 0 }, complication: "optic" }), sceneId, ...extra };
 }
+test("cross-examination preserves attributed answers through a reload", async ({ page }) => {
+  await openRun(page, fixture("memory_reconstruction"));
+  for (const id of ["question-mara", "ask-evacuation-assurance", "record-assurance-limit"]) await page.getByTestId(`choice-${id}`).click();
+  await page.reload(); await page.getByTestId("continue-run").click();
+  await expect(page.getByTestId("choice-ask-evacuation-assurance")).toHaveCount(0);
+  for (const id of ["ask-command-contact", "record-channel-limit", "close-cross-exam", "separate-decisions"]) await page.getByTestId(`choice-${id}`).click();
+  const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(run.flags.order_verified).toBeUndefined();
+  expect(run.journal.filter((entry: {id: string}) => entry.id.startsWith("mara-")).map((entry: {kind: string}) => entry.kind)).toEqual(["claim", "claim"]);
+});
 async function openRun(page: Page, state = fixture()) {
   await page.addInitScript((run) => {
     if (!localStorage.getItem("saint-shard-3055-v1")) localStorage.setItem("saint-shard-3055-v1", JSON.stringify(run));

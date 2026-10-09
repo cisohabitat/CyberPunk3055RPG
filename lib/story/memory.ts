@@ -21,6 +21,7 @@ export const MEMORY_SCENES: Record<string, Scene> = {
     id: "memory_reconstruction", location: "Memory bench, Glass Chapel", speaker: "Mara", memory: true,
     text: "02:13: Mara signs the flush. 02:16: the exported receipt cancels evacuation, retaining that flush. 02:19: the exit log records Nia leaving.\n\nMara says she expected the workers to be moved. Her signature is visible. The receipt's issuing key is not independently authenticated. The exit log tells you who may be able to speak; it does not tell you what she will say.\n\nWhich account will you carry out?",
     choices: [
+      { id: "question-mara", label: "Ask Mara what she actually knew before signing.", detail: "Question her assurance and its source. Testimony does not authenticate the later order.", hideIfFlag: "memory_examined", next: "memory_cross_exam" },
       { id: "separate-decisions", label: "Keep Mara's authorization and the later counter-order separate.", detail: "Neither decision cancels the other. The issuer still needs corroboration.", effects: { flags: ["memory_reconstructed"], journal: [{ id: "memory-analysis", text: "Mara authorized the flush before the recorded evacuation cancellation. The receipt's issuer needs independent corroboration; her explanation is not absolution.", kind: "claim" }] }, next: "memory_publication" },
       { id: "clear-mara", label: "The later order clears Mara of responsibility.", detail: "Test that interpretation against her signature.", effects: { flags: ["memory_theory_cleared"] }, next: "memory_challenge" },
       { id: "ignore-order", label: "Her signature is enough. Leave the counter-order out.", detail: "Test whether the account explains the canceled evacuation.", effects: { flags: ["memory_theory_omitted"] }, next: "memory_challenge" },
@@ -32,6 +33,25 @@ export const MEMORY_SCENES: Record<string, Scene> = {
       ? "Mara puts a finger under her signature. \"That is mine. I signed it. Don't make the tower's next decision erase the one I made.\"\n\nThe later instruction explains why the promised evacuation did not happen. It does not establish what Mara knew beforehand, and it does not remove her authorization."
       : "The receipt stays lit beside the signature. Someone canceled evacuation after Mara authorized the flush. An account that omits that instruction leaves the workers' last chance unexplained.\n\nMara's signature remains hers. Keeping the later instruction does not mean accepting her explanation as fact.",
     choices: [{ id: "keep-both-decisions", label: "Keep both decisions. Mark what remains unknown.", effects: { flags: ["memory_reconstructed"], journal: [{ id: "memory-analysis", text: "The signature and the later evacuation cancellation are separate decisions. Mara's prior knowledge and the receipt's issuer remain questions, not acquittals.", kind: "claim" }] }, next: "memory_publication" }],
+  },
+  memory_cross_exam: {
+    id: "memory_cross_exam", location: "Memory bench, Glass Chapel", speaker: "Mara", memory: true,
+    text: (state) => `Mara pulls the chair away from the plinth. The hour keeps playing without her. "Ask me while I'm still here. They bought the hour so I wouldn't have to answer twice."\n\n${state.flags.memory_assurance_heard ? "Her account of the promise is recorded as testimony. There is no evacuation confirmation attached." : "She says the workers were supposed to leave. The signature contains no confirmation that they did."}\n\n${state.flags.memory_channel_heard ? "She identifies the channel she trusted, not a person whose issuing key you have verified." : "The later receipt names a channel. Ask whether she knew who stood behind it."}`,
+    choices: [
+      { id: "ask-evacuation-assurance", label: "What made you believe the workers were out?", hideIfFlag: "memory_assurance_heard", next: "memory_assurance" },
+      { id: "ask-command-contact", label: "Whose word did you trust on that channel?", hideIfFlag: "memory_channel_heard", next: "memory_channel" },
+      { id: "close-cross-exam", label: "Keep her answers attributed. Return to the two decisions.", detail: "No new source or authentication. Her signature remains her responsibility.", effects: { flags: ["memory_examined"] }, next: "memory_reconstruction" },
+    ],
+  },
+  memory_assurance: {
+    id: "memory_assurance", location: "Memory bench, Glass Chapel", speaker: "Mara", memory: true,
+    text: "'A green light on the dispatch channel. It meant the evacuation crew had been assigned. I let it mean they'd finished.'\n\nMara watches the signature complete again. 'I could have waited for the exit count. Waiting would have put my name on the delay. I told myself a crew assignment was enough.'\n\nThe hour contains her explanation, not a dispatch log confirming it. The roster records Nia leaving later. Neither establishes what every worker was told before the flush.",
+    choices: [{ id: "record-assurance-limit", label: "Record what she says, and the confirmation she never obtained.", effects: { flags: ["memory_assurance_heard"], journal: [{ id: "mara-assurance", text: "Mara says she treated an evacuation crew assignment as completion and did not wait for an exit count. This is her testimony; no independent dispatch confirmation is attached.", kind: "claim" }] }, next: "memory_cross_exam" }],
+  },
+  memory_channel: {
+    id: "memory_channel", location: "Memory bench, Glass Chapel", speaker: "Mara", memory: true,
+    text: "'Dispatch spoke through a shift relay. No face. I knew the channel had authority to assign crews; I didn't know who was on it.'\n\nShe turns the receipt toward you. 'Don't put a person in that blank because I was too willing to leave it blank myself.'\n\nHer answer explains whom she trusted. It cannot authenticate the later cancellation or identify its individual author. An independent record is still necessary.",
+    choices: [{ id: "record-channel-limit", label: "Keep the channel identified and the individual issuer unknown.", effects: { flags: ["memory_channel_heard"], journal: [{ id: "mara-channel", text: "Mara identifies a shift relay as the source of her assurance. She names no individual dispatcher. Her testimony does not authenticate the later issuing key.", kind: "claim" }] }, next: "memory_cross_exam" }],
   },
   memory_publication: {
     id: "memory_publication", location: "Memory bench, Glass Chapel", speaker: "Sister Lumen", memory: true,

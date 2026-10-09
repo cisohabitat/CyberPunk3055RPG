@@ -48,6 +48,8 @@ export const JOURNAL_TITLES: Record<string, string> = {
   "nia-account": "Nia's account",
   "verified-order": "Command chain verified",
   "archive-gap": "An unverified issuing key",
+  "mara-assurance": "The assurance Mara accepted",
+  "mara-channel": "The unnamed dispatch relay",
   "memory-analysis": "Two decisions, separate questions",
   "public-packet": "The public account",
   "packet-correction": "An attached correction",

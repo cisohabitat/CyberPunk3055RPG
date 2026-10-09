@@ -6,14 +6,17 @@
       "memory_table",
       "memory_reconstruction",
       "memory_challenge",
-      "memory_publication"
+      "memory_publication",
+      "memory_cross_exam",
+      "memory_assurance",
+      "memory_channel"
     ],
     "laterScenes": [
       "act2_public_response",
       "act3_records_visit"
     ],
     "priority": "P1",
-    "finding": "Mara\u2019s claimed expectation cannot yet be questioned separately. Add optional cross-examination without awarding proof.",
+    "finding": "Optional questions now attribute her assurance and unnamed relay separately. Human editing and comprehension review remain open.",
     "truth": "A signature establishes authorization; Mara\u2019s explanation is testimony; an exported issuing key needs an independent test."
   },
   {

@@ -25,3 +25,9 @@ Browser automation currently covers desktop/phone Chromium, Firefox, and WebKit.
 Blind-play research follows RESEARCH.md; recruitment, participants, recordings, commissioned art/audio and spending have not occurred. Internal controlled-dice replays and random-seed simulations remain separate evidence. Natural-dice browser runs should record actual dice and observations without claiming participant comprehension.
 
 Future full-production phases remain in AAA_PRODUCTION_PLAN.md. Before scaling, two fresh slice cohorts and independent craft review must demonstrate clarity, agency and repeatable production cost. A final score above 9.0 requires reviews of the whole campaign, including weak sections, and closure of the six human gates in qa/production/acceptance.json.
+
+## Cycle 2 implementation
+
+Three optional source-question scenes separate Mara’s claimed assurance from a dispatch confirmation and her channel identification from a named issuer. Journal entries are attributed claims. The direct reconstruction remains available, questions cannot repeat for rewards, and the finale retains what was asked with its source limits. A full campaign fixture restores each new scene across saves. This does not supply independent research or increase the grade.
+
+Cycle 2 local evidence: 145 unit tests, TypeScript and production compilation passed; the new flow passed desktop/phone browser checks. A directed campaign completed 73 scene visits / 54 distinct scenes with no exceptions. A separate natural-dice phone campaign completed 53 visits / 41 distinct scenes, ending quietly with 350 creds and strain 4 (dice 4, 4, 3, 9, 2, 8, 4, 3). These are internal observations; no participant comprehension is inferred.

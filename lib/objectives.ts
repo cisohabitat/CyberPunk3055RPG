@@ -38,6 +38,7 @@ export function unresolvedPromises(state: GameState): Objective[] {
 }
 
 export function nextStep(state: GameState): string {
+  if (["memory_cross_exam", "memory_assurance", "memory_channel"].includes(state.sceneId)) return "Ask what Mara knew and who supplied her assurance. Attribute her answers; no testimony becomes an independent issuing-key test.";
   if (state.pendingCheck) return "Finish the recorded roll. Its outcome is already saved.";
   if (state.sceneId === "memory_table") {
     const count = ["memory_signature", "memory_order", "memory_roster"].filter((flag) => state.flags[flag]).length;
