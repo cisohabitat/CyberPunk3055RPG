@@ -24,6 +24,8 @@ export function journalEntry(item: string | JournalEntry): JournalEntry {
 }
 
 export const JOURNAL_TITLES: Record<string, string> = {
+  "pump-repair": "Clinic coolant repair",
+  "pump-transfer": "Cold-storage transfer",
   "ward-nine": "Ward Nine",
   "kerr-knee": "Kerr's knee",
   calibration: "Calibration",

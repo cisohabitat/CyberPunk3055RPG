@@ -356,3 +356,29 @@ test("paid recovery keeps a breach recorded and cannot be repeated after reload"
   const state = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
   expect(state.creds).toBe(55); expect(state.strain).toBe(1); expect(state.flags.witness_lost).toBe(true); expect(state.flags.order_verified).toBeUndefined();
 });
+
+test("coolant failure survives reload and offers care without inventing a repair", async ({ page }) => {
+  await openRun(page, fixture("act2_pump_triage", { creds: 34, strain: 4, flags: { memory_prepared: true, pump_attempted: true, pump_failed: true } }));
+  await expect(page.getByTestId("goal")).toBeInViewport();
+  await expect(page.getByTestId("choice-fund-cold-transfer")).toBeDisabled();
+  expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
+  await page.reload(); await page.getByTestId("continue-run").click();
+  await page.getByTestId("choice-carry-cold-transfer").click();
+  await expect(page.getByTestId("choice-help-clinic-pump")).toHaveCount(0);
+  const state = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(state.strain).toBe(5); expect(state.flags.pump_supplies_saved).toBe(true); expect(state.flags.pump_restored).toBeUndefined(); expect(state.flags.order_verified).toBeUndefined();
+});
+
+test("local repair record and later Kerr visit preserve the original ending choices", async ({ page }) => {
+  await openRun(page, fixture("act2_pump_report", { flags: { memory_prepared: true, pump_attempted: true, pump_restored: true, pump_kerr: true } }));
+  await expect(page.getByTestId("goal")).toBeInViewport();
+  expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
+  await page.getByTestId("choice-keep-pump-local").click();
+  for (const id of ["stand", "back-to-board", "to-the-wall", "to-ward-nine", "visit-pump"]) await page.getByTestId(`choice-${id}`).click();
+  await page.getByRole("button", { name: "Settings", exact: true }).click(); await page.getByLabel("Reading pace").selectOption("all"); await page.getByRole("button", { name: "Done", exact: true }).click();
+  await expect(page.getByTestId("scene-text")).toContainText("kept a door open");
+  expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
+  for (const id of ["leave-pump-visit", "go-wall", "face-sera"]) await page.getByTestId(`choice-${id}`).click();
+  await expect(page.getByTestId("choice-leave-wall")).toBeVisible();
+  await page.getByTestId("choice-leave-wall").click(); await expect(page.locator(".aftermath")).toContainText("authenticates no historical order");
+});

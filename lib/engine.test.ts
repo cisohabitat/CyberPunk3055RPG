@@ -816,3 +816,57 @@ describe("field equipment and bounded recovery", () => {
     assert.equal(step(rested, "leave-recovery").sceneId, "act2_middle");
   });
 });
+
+describe("clinic coolant emergency", () => {
+  const pump = (sceneId = "act2_middle"): GameState => ({ ...make("spire", { chrome: 0, nerve: 0, face: 2, ghost: 0 }), sceneId, creds: 100, strain: 0, flags: { memory_prepared: true } });
+  it("offers four distinct single attempts and keeps field-kit bonuses out of maintenance", () => {
+    for (const id of ["isolate-pump", "dispatch-pump", "route-pump", "brace-pump"]) {
+      let state = step(step(pump(), "help-clinic-pump"), "work-pump");
+      const check = getScene(state.sceneId).choices.find((c) => c.id === id)!.check!;
+      assert.deepEqual(previewCheck({ ...state, items: FIELD_KITS.map((kit) => kit.id) }, check), previewCheck(state, check));
+      state = step(state, id, 9); assert.equal(state.flags.pump_restored, true);
+      assert.throws(() => step({ ...state, sceneId: "act2_pump_methods" }, id, 9));
+      state = step(state, "keep-pump-local");
+      assert.equal(state.creds, 100); assert.equal(state.flags.order_verified, undefined);
+      assert.throws(() => step({ ...state, sceneId: "act2_pump_report" }, "keep-pump-local"));
+    }
+  });
+  it("uses earned Kerr help, refuses help after betrayal, and restores a pending die", () => {
+    const brief = step({ ...pump(), flags: { memory_prepared: true, kerr_told: true } }, "help-clinic-pump");
+    assert.throws(() => step({ ...brief, flags: { ...brief.flags, kerr_sold_you: true } }, "ask-kerr-pump"));
+    const helped = step(brief, "ask-kerr-pump");
+    const check = getScene(helped.sceneId).choices[0].check!;
+    assert.equal(previewCheck(helped, check).bonus, previewCheck({ ...helped, flags: {} }, check).bonus + 1);
+    const pending = parseSave(JSON.stringify({ ...helped, pendingCheck: { sceneId: helped.sceneId, choiceId: "isolate-pump", roll: 9 } }))!;
+    assert.throws(() => step(pending, "isolate-pump", 1));
+    const repaired = step(pending, "isolate-pump", 9);
+    const filed = step(repaired, "file-pump-rebate"); assert.equal(filed.creds, 140);
+    assert.equal(filed.flags.order_verified, undefined); assert.equal(filed.flags.witness_safe, undefined);
+    const visit = { ...filed, sceneId: "act3_pump_visit" };
+    assert.match(sceneText(getScene(visit.sceneId), visit), /kept a door open/);
+    assert.match(aftermath(visit).find((row) => row.title === "The clinic coolant")!.text, /without patient names/);
+  });
+  it("fails into affordable care, physical fallback, or an explicitly unobserved outcome", () => {
+    let failed = step(step(step(pump(), "help-clinic-pump"), "work-pump"), "route-pump", 1);
+    assert.equal(failed.sceneId, "act2_pump_triage"); assert.equal(failed.strain, 2);
+    failed = parseSave(JSON.stringify(failed))!;
+    assert.throws(() => step({ ...failed, creds: 34 }, "fund-cold-transfer"));
+    for (const id of ["fund-cold-transfer", "carry-cold-transfer", "leave-cold-transfer"]) {
+      const state = step(failed, id); assert.equal(state.flags.pump_restored, undefined); assert.equal(state.flags.pump_done, true);
+      assert.equal(state.flags.order_verified, undefined);
+      assert.throws(() => step({ ...state, sceneId: "act2_pump_triage" }, id));
+      assert.equal(presentChoices(state, getScene(state.sceneId)).some((c) => c.id === "help-clinic-pump"), false);
+      if (id === "fund-cold-transfer") assert.equal(state.creds, 65);
+      if (id === "carry-cold-transfer") assert.equal(state.strain, 4);
+      if (id === "leave-cold-transfer") assert.match(aftermath(state).at(-1)!.text, /not observed/);
+    }
+  });
+  it("retains legacy routes and permits leaving before committing an attempt", () => {
+    assert.throws(() => step({ ...pump(), flags: {} }, "help-clinic-pump"));
+    const state = step(step(pump(), "help-clinic-pump"), "leave-pump-brief");
+    assert.equal(state.flags.pump_done, undefined); assert.equal(step(state, "help-clinic-pump").sceneId, "act2_pump_brief");
+    const finished = { ...pump(), flags: { memory_prepared: true, pump_done: true }, sceneId: "act3_neighborhood" };
+    const visited = step(step(finished, "visit-pump"), "leave-pump-visit");
+    assert.equal(visited.sceneId, "act3_neighborhood"); assert.throws(() => step(visited, "visit-pump"));
+  });
+});

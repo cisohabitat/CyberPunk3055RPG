@@ -15,7 +15,7 @@ For the full future program, see the [AAA level production plan](AAA_PRODUCTION_
 
 All six foundation phases have implementation work in this candidate. The human production milestones remain open; the game is not certified as AAA. Treat each remaining milestone as an evidence gate, not a marketing claim.
 
-The [production slice expansion](PRODUCTION_SLICE.md) now adds interpretation and packet labeling, public source challenges, prepared witness transfers, four specialist methods, deferred testimony, privacy repair, and consequence visits. The current graph contains 90 scenes and 229 choices. Four played campaigns cover 192 choice activations and 53 distinct scenes. This advances the future program's gameplay slice; it does not complete its full production, external acceptance, or commercial launch gates.
+The [production slice expansion](PRODUCTION_SLICE.md) now adds interpretation and packet labeling, public source challenges, prepared witness transfers, four specialist methods, deferred testimony, privacy repair, and consequence visits. The current graph contains 95 scenes and 244 choices. Four played campaigns cover 192 choice activations and 53 distinct scenes. This advances the future program's gameplay slice; it does not complete its full production, external acceptance, or commercial launch gates.
 
 ## Order of the next production cycle
 
@@ -33,3 +33,5 @@ The next implementation increment stages archive access, preparation, source com
 The public-hearing increment adds source-scoped testimony, separate quotation permission, a playable evidence challenge, corrections and withdrawal, and a source brief. Three deterministic JSON campaign routes replay explicit die faces through saved-check checkpoints. These advance campaign consequences and QA reproducibility within the future systems program; they are not a complete writer authoring interface or external slice acceptance. See the [current slice record](PRODUCTION_SLICE.md).
 
 The equipment/recovery increment adds one purchased field kit with targeted check benefits, budget comparisons against witness care, a bounded once-per-week recovery visit, a quiet consequence-preserving follow-up, and resource assertions in seven deterministic QA routes. This develops specialization and opportunity costs within the systems phase. External balancing and production acceptance remain open; see [the slice record](PRODUCTION_SLICE.md).
+
+The neighborhood emergency increment adds a practical service task, four skill approaches, earned Kerr assistance, failure triage, maintenance-record custody, and delayed character consequences. The current graph is 95 scenes / 244 choices. This advances the systems and campaign-consequence phases; narrative production, commissioned assets, external balancing, and independent acceptance remain open. See [the slice record](PRODUCTION_SLICE.md).

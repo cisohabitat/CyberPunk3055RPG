@@ -452,6 +452,7 @@ export const ACT2_SCENES: Record<string, Scene> = {
     location: "The dry canal",
     text: middleText,
     choices: [
+      { id: "help-clinic-pump", label: "Answer the clinic’s coolant emergency.", detail: "One repair attempt, then a cold-storage fallback. Today’s relay supplies no evidence about the old dump.", requireFlag: "memory_prepared", hideIfAnyFlag: ["pump_done", "act2_done"], next: (state) => state.flags.pump_restored ? "act2_pump_report" : state.flags.pump_failed ? "act2_pump_triage" : "act2_pump_brief" },
       { id: "take-recovery", label: "Make time for a recovery visit.", detail: "Once this week: paid care, a clinic favor, or a short rest. Recovery supplies no evidence or witness safety.", requireStrain: 1, hideIfFlag: "week_recovered", next: "act2_recovery" },
       { id: "protect-witness", label: "Finish the promise to Nia Pell.", detail: "Move a living witness. A private roster did not give her a safe room.", requireAnyFlag: ["memory_redacted", "memory_witness"], hideIfFlag: "witness_done", next: (state) => state.flags.witness_briefed ? "act2_witness_door" : "act2_witness_brief" },
       { id: "return-witness", label: "Return when Nia is ready to review her account.", detail: "The safe room remains hers. Recording still needs her approval.", requireFlag: "witness_deferred", next: "act2_witness_arrival" },
