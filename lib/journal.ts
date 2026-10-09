@@ -24,6 +24,10 @@ export function journalEntry(item: string | JournalEntry): JournalEntry {
 }
 
 export const JOURNAL_TITLES: Record<string, string> = {
+  "shelter-promise": "Shelter response terms",
+  "shelter-room": "Shelter room allocation",
+  "shelter-arrival": "Staffed hall arrival",
+  "shelter-followup": "Neighbor follow-up",
   "freight-promise": "Asa’s delivery terms",
   "freight-seal": "Diagnostic case seal",
   "freight-manifest": "Clinic cargo slip",

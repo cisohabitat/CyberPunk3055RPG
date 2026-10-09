@@ -1124,3 +1124,67 @@ describe("Asa’s staged freight mission", () => {
     }
   });
 });
+
+describe("Gutterwire shelter response", () => {
+  const start = (stat: StatId = "nerve", creds = 100): GameState => ({ ...make("gutterwire", { chrome: 0, nerve: 2, face: 0, ghost: 0 }), sceneId: "act2_origin_gutterwire", creds, flags: { perk_trained: true, [`perk_${stat}`]: true }, factions: { quill: 0, lumen: 0, helion: 0, wards: 2 } });
+  const prepare = (stat: StatId = "nerve", creds = 100) => step(step(start(stat, creds), "plan-shelter"), "accept-shelter");
+  it("keeps repair, resident allocation and witness transfer separate", () => {
+    for (const [stat, prep, method] of [["nerve", "brace", "turn-valve"], ["chrome", "controller", "local-control"], ["face", "crew", "crew-repair"]] as const) {
+      let state = step(prepare(stat), `shelter-prep-${prep}`);
+      if (stat === "nerve") assert.equal(previewCheck(state, getScene(state.sceneId).choices.find((entry) => entry.id === "shelter-turn-valve")!.check!).hits, 9);
+      else assert.equal(presentChoices({ ...state, flags: { ...state.flags, [`perk_${stat}`]: false } }, getScene(state.sceneId)).some((entry) => entry.id === `shelter-${method}`), false);
+      state = step(state, `shelter-${method}`, stat === "nerve" ? 8 : undefined);
+      assert.equal(state.flags.shelter_restored, true); assert.equal(state.flags.origin_done, undefined); assert.deepEqual(state.items, []);
+      const saved = parseSave(JSON.stringify(state)); assert.ok(saved);
+      state = step(saved, "shelter-carry-annex");
+      assert.deepEqual(state.items, ["witness-token"]); assert.equal(state.flags.shelter_reserved, true);
+      for (const flag of ["order_verified", "archive_key_authenticated", "witness_safe", "nia_public_consent"]) assert.equal(state.flags[flag], undefined);
+      assert.equal(presentChoices({ ...state, sceneId: "act2_shelter_rooms" }, getScene("act2_shelter_rooms")).length, 0);
+      assert.equal(presentChoices({ ...state, sceneId: "act2_origin_gutterwire" }, getScene("act2_origin_gutterwire")).some((entry) => entry.id === "move-valve"), false);
+    }
+  });
+  it("can retain all resident rooms without awarding a referral token", () => {
+    let state = step(step(step(prepare(), "shelter-no-prep"), "shelter-hire-fitter"), "shelter-all-residents");
+    assert.equal(state.creds, 60); assert.equal(state.factions.wards, 3);
+    assert.equal(state.flags.shelter_resident_rooms, true); assert.deepEqual(state.items, []);
+    assert.match(aftermath(state).find((row) => row.title === "Shelter neighbors")!.text, /no private referral/);
+  });
+  it("a critical miss offers a free evacuation without a second repair roll", () => {
+    let state = step(step(prepare("face", 0), "shelter-no-prep"), "shelter-turn-valve", 1);
+    assert.equal(state.sceneId, "act2_shelter_evacuation"); assert.equal(state.strain, 2);
+    assert.equal(presentChoices(state, getScene(state.sceneId)).some((entry) => entry.check), false);
+    const restored = parseSave(JSON.stringify(state)); assert.ok(restored);
+    state = step(step(restored, "shelter-guide-hall"), "shelter-confirm-hall");
+    assert.equal(state.creds, 0); assert.equal(state.strain, 3); assert.equal(state.rolls.length, 1);
+    assert.equal(state.flags.shelter_hall, true); assert.equal(state.flags.shelter_restored, undefined); assert.deepEqual(state.items, []);
+  });
+  it("trained Ghost evacuates via the prepared accessible ramp without claiming repair", () => {
+    let state = step(prepare("ghost"), "shelter-prep-ramp");
+    assert.equal(presentChoices({ ...state, flags: { ...state.flags, shelter_ramp: false } }, getScene(state.sceneId)).some((entry) => entry.id === "shelter-ghost-ramp"), false);
+    state = step(state, "shelter-ghost-ramp"); assert.equal(state.flags.shelter_done, undefined);
+    state = step(state, "shelter-confirm-hall"); assert.equal(state.flags.shelter_hall, true); assert.equal(state.rolls.length, 0);
+  });
+  it("paid and faction annex support have actual costs and cannot duplicate capacity", () => {
+    for (const choice of ["shelter-fund-annex", "shelter-ward-annex"]) {
+      let state = step(step(prepare("chrome"), "shelter-prep-controller"), "shelter-local-control");
+      const before = state.creds; state = step(state, choice);
+      assert.equal(state.creds, before - (choice === "shelter-fund-annex" ? 40 : 0));
+      assert.equal(state.factions.wards, choice === "shelter-ward-annex" ? 1 : 2);
+      state = step({ ...state, sceneId: "act2_witness_door" }, "use-shelter");
+      assert.equal(state.flags.witness_safe, true); assert.equal(state.items.includes("witness-token"), false);
+      state = step({ ...state, sceneId: "ward_wall" }, "visit-shelter-neighbors");
+      assert.match(sceneText(getScene(state.sceneId), state), /will not issue another/);
+      state = step(state, "shelter-carry-laundry"); assert.equal(state.sceneId, "ward_wall"); assert.deepEqual(state.items, []);
+      assert.equal(presentChoices(state, getScene(state.sceneId)).some((entry) => entry.id === "visit-shelter-neighbors"), false);
+    }
+  });
+  it("unobserved and declined responses stay unobserved after the neighbor visit", () => {
+    for (const declined of [true, false]) {
+      let state = declined ? step(step(start(), "plan-shelter"), "decline-shelter") : step(step(step(prepare(), "shelter-no-prep"), "shelter-start-evacuation"), "shelter-leave-crew");
+      state = step({ ...state, sceneId: "act3_neighborhood" }, "visit-shelter-neighbors");
+      assert.match(sceneText(getScene(state.sceneId), state), /no arrival count/);
+      state = step(state, "shelter-fund-laundry"); assert.equal(state.sceneId, "act3_neighborhood"); assert.equal(state.creds, 80);
+      assert.equal(state.flags.shelter_hall, undefined); assert.equal(state.flags.witness_safe, undefined); assert.deepEqual(state.items, []);
+    }
+  });
+});

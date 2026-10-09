@@ -1,3 +1,4 @@
+import { shelterOutcome } from "./story/shelter";
 import { freightOutcome } from "./story/freight";
 import { actName } from "./story/goal";
 import type { GameState } from "./types";
@@ -34,6 +35,7 @@ export function objectives(state: GameState): Objective[] {
   if (state.flags.edda_shift_consent) rows.push({ id: "edda-shift", title: "Bridge Edda’s suspended shift", status: state.flags.edda_shift_paid ? "Complete" : state.flags.edda_shift_done ? "Unresolved" : "Open", detail: state.flags.edda_shift_paid ? "Edda accepted one paid bench assignment. Archive access remains suspended and the records inquiry continues." : state.flags.edda_representation ? "A representative booked a review appointment. The sixty-creds fee bought no restored shift or inquiry decision." : state.flags.edda_shift_done ? "The signed application remains pending; no paid assignment was offered." : "Edda authorized a private payroll request. Choose one form of help, then record the actual response." });
   if (state.flags.pump_attempted || state.flags.pump_done) rows.push({ id: "coolant", title: "Respond to the clinic coolant emergency", status: !state.flags.pump_done ? "Open" : state.flags.pump_left ? "Unresolved" : "Complete", detail: !state.flags.pump_done ? state.flags.pump_restored ? "Cooling is restored. Choose custody of the maintenance receipt before returning." : "The pump attempt failed. Arrange cold-storage transfer or leave its outcome unobserved." : state.flags.pump_restored ? `The spare restored cooling.${state.flags.pump_inspection_booked ? " A follow-up inspection is booked, but has not happened yet." : " Another inspection remains due."} This supplies no historical evidence.` : state.flags.pump_supplies_saved ? "Medicines reached another cold cabinet. The pump still needs a replacement relay." : "You left the transfer to clinic staff. Its delivery outcome was not observed by you." });
   if (state.flags.freight_started) rows.push({ id: "freight", title: "Asa’s sealed clinic parcel", status: state.flags.freight_exposed ? "Compromised" : state.flags.freight_delivered || state.flags.freight_late_received ? "Complete" : state.flags.freight_done || atWall ? "Unresolved" : "Open", detail: freightOutcome(state) });
+  if (state.flags.shelter_started) rows.push({ id: "shelter", title: "Shelter residents and referral room", status: state.flags.shelter_unobserved || atWall && !state.flags.shelter_done ? "Unresolved" : state.flags.shelter_done ? "Complete" : "Open", detail: shelterOutcome(state) });
   return rows;
 }
 
@@ -45,6 +47,8 @@ export function nextStep(state: GameState): string {
   // The arrival goal already explains the opening; leave room for the story.
   if (state.sceneId.startsWith("opening_")) return "";
   if (state.pendingCheck) return "Finish the recorded roll. Its outcome is already saved.";
+  if (state.sceneId.startsWith("act2_shelter_")) return "Settle resident beds before reserving a private referral room. Evacuation and repair are different outcomes.";
+  if (state.sceneId === "act3_shelter_visit") return "Hear how the neighbors slept. Today’s help creates no replacement token or witness transfer.";
   if (state.sceneId.startsWith("act2_freight_")) return "Keep the parcel cold, distinguish a handover from an observed receipt, and preserve any exposed route.";
   if (state.sceneId === "act3_freight_reflection") return "Remember why you took work that night. The receipt keeps its own limits.";
   if (state.sceneId.startsWith("act3_freight_")) return "Ask what the clinic actually acknowledged. A late reply supplies no clearance or patient outcome.";

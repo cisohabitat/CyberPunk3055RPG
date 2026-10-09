@@ -1,0 +1,260 @@
+{
+  "name": "shelter-chrome",
+  "character": {
+    "handle": "Replay",
+    "givenName": "Ada",
+    "origin": "gutterwire",
+    "complication": "on-file",
+    "bonus": {
+      "chrome": 0,
+      "nerve": 2,
+      "face": 0,
+      "ghost": 0
+    },
+    "startWithPrologue": true
+  },
+  "steps": [
+    {
+      "choiceId": "begin-opening",
+      "reload": true
+    },
+    {
+      "choiceId": "opening-identity",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-stallholder",
+      "reload": true
+    },
+    {
+      "choiceId": "take-the-stool",
+      "reload": true
+    },
+    {
+      "choiceId": "ask-pay"
+    },
+    {
+      "choiceId": "haggle",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "pocket"
+    },
+    {
+      "choiceId": "accept"
+    },
+    {
+      "choiceId": "side"
+    },
+    {
+      "choiceId": "spoof-door",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "go"
+    },
+    {
+      "choiceId": "honest"
+    },
+    {
+      "choiceId": "pact-copy"
+    },
+    {
+      "choiceId": "copy",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "heard"
+    },
+    {
+      "choiceId": "inspect-hour"
+    },
+    {
+      "choiceId": "inspect-signature"
+    },
+    {
+      "choiceId": "inspect-order"
+    },
+    {
+      "choiceId": "inspect-roster"
+    },
+    {
+      "choiceId": "reconstruct"
+    },
+    {
+      "choiceId": "ignore-order"
+    },
+    {
+      "choiceId": "keep-both-decisions"
+    },
+    {
+      "choiceId": "name-tower"
+    },
+    {
+      "choiceId": "seal-full"
+    },
+    {
+      "choiceId": "talk-leave",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "both"
+    },
+    {
+      "choiceId": "week-after"
+    },
+    {
+      "choiceId": "into-week"
+    },
+    {
+      "choiceId": "practice"
+    },
+    {
+      "choiceId": "learn-chrome"
+    },
+    {
+      "choiceId": "read-board"
+    },
+    {
+      "choiceId": "origin-contract"
+    },
+    {
+      "choiceId": "plan-shelter",
+      "reload": true
+    },
+    {
+      "choiceId": "accept-shelter",
+      "reload": true
+    },
+    {
+      "choiceId": "shelter-prep-controller",
+      "reload": true
+    },
+    {
+      "choiceId": "shelter-local-control",
+      "reload": true
+    },
+    {
+      "choiceId": "shelter-fund-annex",
+      "reload": true
+    },
+    {
+      "choiceId": "shelter-return-board",
+      "reload": true
+    },
+    {
+      "choiceId": "to-helion"
+    },
+    {
+      "choiceId": "hear-ives"
+    },
+    {
+      "choiceId": "refuse-ives"
+    },
+    {
+      "choiceId": "trace-order"
+    },
+    {
+      "choiceId": "agree-archive-terms"
+    },
+    {
+      "choiceId": "skip-archive-prep"
+    },
+    {
+      "choiceId": "separate-source-tests"
+    },
+    {
+      "choiceId": "trace-receipt",
+      "roll": 1,
+      "reload": true
+    },
+    {
+      "choiceId": "keep-gap"
+    },
+    {
+      "choiceId": "hear-response"
+    },
+    {
+      "choiceId": "correct-public-claim"
+    },
+    {
+      "choiceId": "stand"
+    },
+    {
+      "choiceId": "back-to-board"
+    },
+    {
+      "choiceId": "to-the-wall"
+    },
+    {
+      "choiceId": "to-ward-nine"
+    },
+    {
+      "choiceId": "visit-records"
+    },
+    {
+      "choiceId": "keep-limits"
+    },
+    {
+      "choiceId": "visit-shelter-neighbors",
+      "reload": true
+    },
+    {
+      "choiceId": "shelter-carry-laundry",
+      "reload": true
+    },
+    {
+      "choiceId": "face-sera"
+    },
+    {
+      "choiceId": "prepare-public-account"
+    },
+    {
+      "choiceId": "scope-bounded"
+    },
+    {
+      "choiceId": "keep-recording-private"
+    },
+    {
+      "choiceId": "claim-key-anyway"
+    },
+    {
+      "choiceId": "correct-hearing",
+      "reload": true
+    },
+    {
+      "choiceId": "file-public-account",
+      "reload": true
+    },
+    {
+      "choiceId": "leave-wall"
+    }
+  ],
+  "expected": {
+    "sceneId": "ending_quiet",
+    "flags": {
+      "testimony_published": true,
+      "archive_key_authenticated": false,
+      "nia_public_consent": false,
+      "order_verified": false,
+      "testimony_corrected": true,
+      "shelter_done": true,
+      "shelter_visited": true,
+      "shelter_reserved": true,
+      "shelter_hall": false,
+      "shelter_unobserved": false,
+      "shelter_restored": true,
+      "shelter_followup_helped": true
+    },
+    "journal": [
+      "wall-account"
+    ],
+    "items": [
+      "witness-token"
+    ]
+  }
+}

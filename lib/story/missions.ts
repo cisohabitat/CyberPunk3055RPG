@@ -12,9 +12,10 @@ export const MISSION_SCENES: Record<string, Scene> = {
   },
   act2_origin_gutterwire: {
     id: "act2_origin_gutterwire", location: "Ward Four", speaker: "Sera",
-    text: "Sera knows the stair you grew up on. A shelter pump has stopped, and the rooms above it are taking coolant. She can hold a bed for Nia if you help the neighbors move the valve.\n\n\"No speeches. Put your shoulder here. Someone has to sleep upstairs tonight.\"",
+    text: "Sera knows the stair you grew up on. A shelter pump has stopped, and the rooms above it are taking coolant. Dry rooms could let her hold a bed for Nia, once the residents have somewhere to sleep.\n\n\"No speeches. Put your shoulder here. Someone has to sleep upstairs tonight.\"",
     choices: [
-      { id: "move-valve", label: "Brace the pump and turn the valve.", requireOrigin: "gutterwire", check: { stat: "nerve", dc: 8, label: "Hold the shelter pump" }, successEffects: { flags: ["origin_done", "origin_helped"], itemsAdd: ["witness-token"], factions: { wards: 1 } }, failEffects: { flags: ["origin_done"], strain: 1 }, resultSuccess: "The valve holds. Sera reserves the dry room.", resultFail: "The valve slips. You get the neighbors upstairs, but the spare room is lost.", nextSuccess: "act2_origin_return", nextFail: "act2_origin_return" },
+      { id: "plan-shelter", label: "Help Sera plan the repair and resident beds.", requireOrigin: "gutterwire", hideIfFlag: "origin_done", next: "act2_shelter_brief" },
+      { id: "move-valve", hideIfFlag: "origin_done", label: "Brace the pump and turn the valve.", requireOrigin: "gutterwire", check: { stat: "nerve", dc: 8, label: "Hold the shelter pump" }, successEffects: { flags: ["origin_done", "origin_helped"], itemsAdd: ["witness-token"], factions: { wards: 1 } }, failEffects: { flags: ["origin_done"], strain: 1 }, resultSuccess: "The valve holds. Sera reserves the dry room.", resultFail: "The valve slips. You get the neighbors upstairs, but the spare room is lost.", nextSuccess: "act2_origin_return", nextFail: "act2_origin_return" },
       { id: "leave-pump", label: "Leave the pump to its crew.", effects: { flags: ["origin_done"] }, next: "act2_origin_return" },
     ],
   },

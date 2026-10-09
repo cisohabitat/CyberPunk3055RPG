@@ -1,3 +1,4 @@
+import { shelterOutcome } from "./story/shelter";
 import { freightOutcome } from "./story/freight";
 import { shiftResponse } from "./story/employment";
 import { equippedKits } from "./loadout";
@@ -45,5 +46,6 @@ export function aftermath(state: GameState): { title: string; text: string }[] {
   if (state.flags.week_recovered) rows.push({ title: "Your recovery", text: state.flags.recovery_clinic ? "You paid for staffed recovery. The pressure eased; the money stayed spent, and your outside promises kept their own status." : state.flags.recovery_favor ? "The clinic covered your rest at a cost to its trust. Recovery did not erase a location breach or verify a source." : "You took a short rest beside the canal. It eased pressure without completing the work waiting outside." });
   if (state.flags.pump_done) rows.push({ title: "The clinic coolant", text: state.flags.pump_restored ? `The spare circuit restored cooling.${state.flags.pump_inspection_booked ? " A follow-up inspection is booked; it has not happened yet." : " Another inspection remains due."}${state.flags.pump_rebate ? " Helion retains your contractor handle and station number from the forty-creds rebate, without patient names." : " The neighborhood keeps its own repair record."} The repair authenticates no historical order.` : state.flags.pump_supplies_saved ? "The medicines reached another cold cabinet. The failed pump still needs a replacement relay." : "You left the transfer to clinic staff. Their delivery outcome was not observed by you." });
   if (state.flags.freight_started || state.flags.freight_declined) rows.push({ title: "Asa’s freight delivery", text: freightOutcome(state) });
+  if (state.flags.shelter_started || state.flags.shelter_declined) rows.push({ title: "Shelter neighbors", text: shelterOutcome(state) + (state.flags.shelter_followup_paid ? " You funded their laundry afterward." : state.flags.shelter_followup_helped ? " You helped carry their laundry afterward." : "") });
   return rows;
 }

@@ -130,5 +130,25 @@
     "priority": "P2",
     "finding": "A staged origin favor offers preparation, specialist methods, recovery and an observed receipt. Other origin favors and independent mission review remain future work.",
     "truth": "An intact sealed parcel, a clinic stock receipt, a private crossing, one passenger clearance and patient treatment are distinct outcomes. A late receipt creates no retroactive clearance or historical verification."
+  },
+  {
+    "id": "shelter-response",
+    "title": "Gutterwire shelter response",
+    "scenes": [
+      "act2_origin_gutterwire",
+      "act2_shelter_brief",
+      "act2_shelter_prep",
+      "act2_shelter_methods",
+      "act2_shelter_evacuation",
+      "act2_shelter_hall",
+      "act2_shelter_rooms",
+      "act2_shelter_result"
+    ],
+    "laterScenes": [
+      "act3_shelter_visit"
+    ],
+    "priority": "P2",
+    "finding": "Repair, accessible evacuation, consenting room allocation and later household response are playable. Independent narrative and comprehension review remain open.",
+    "truth": "A repaired valve, observed resident arrival, private referral capacity and Nia\u2019s actual transfer are different outcomes. Later laundry help cannot create a token or historical proof."
   }
 ]

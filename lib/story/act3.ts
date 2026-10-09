@@ -1,3 +1,4 @@
+import { shelterVisitChoice } from "./shelter";
 import { freightVisitChoice } from "./freight";
 import { GOAL_WALL } from "./goal";
 import type { GameState, Scene } from "../types";
@@ -126,6 +127,7 @@ export const ACT3_SCENES: Record<string, Scene> = {
     speaker: "Sera",
     text: wallText,
     choices: [
+      shelterVisitChoice(true),
       freightVisitChoice(true),
       { id: "face-sera", label: "Tell her why you came.", next: "act3_arrival" },
       {
