@@ -10,12 +10,15 @@ import { SettingsDialog } from "./SettingsDialog";
 import { clearSave, emptyCodex, loadCodex, loadSave, usedBackup, writeSave } from "@/lib/storage";
 import { applyPreferences, DEFAULT_PREFERENCES, loadPreferences, writePreferences, type Preferences } from "@/lib/preferences";
 import { setAudioMix, setBed, unlockAudio } from "@/lib/sound";
+import { checkpointLabel } from "@/lib/checkpoints";
 import { recordIncident } from "@/lib/diagnostics";
 import type { Codex, GameState } from "@/lib/types";
 
 export function GameApp() {
   const [ready, setReady] = useState(false);
   const [screen, setScreen] = useState<"title" | "create" | "play">("title");
+  const [playSession, setPlaySession] = useState(0);
+  const [restoreNotice, setRestoreNotice] = useState<string | null>(null);
   const [run, setRun] = useState<GameState | null>(null);
   const [saved, setSaved] = useState<GameState | null>(null);
   const [saveFailed, setSaveFailed] = useState(false);
@@ -46,15 +49,19 @@ export function GameApp() {
     setPreferences(next); applyPreferences(next); writePreferences(next);
   }
   function title() { setDialog(null); setRun(null); setCodex(loadCodex()); setScreen("title"); }
-  function load(next: GameState) { if (preferences.sound) unlockAudio(); updateRun(next); setRecovered(false); setDialog(null); setScreen("play"); }
+  function load(next: GameState, source = "Autosave") {
+    if (preferences.sound) unlockAudio();
+    updateRun(next); setRestoreNotice(source === "New run" ? null : `Loaded ${source} — ${checkpointLabel(next)}`);
+    setPlaySession((session) => session + 1); setRecovered(false); setDialog(null); setScreen("play");
+  }
 
   if (!ready) return <div className="boot">Jacking in</div>;
   return <>
-    {screen === "play" && run ? <PlayScreen state={run} saveFailed={saveFailed} preferences={preferences}
+    {screen === "play" && run ? <PlayScreen key={playSession} restoreNotice={restoreNotice} state={run} saveFailed={saveFailed} preferences={preferences}
       modalOpen={dialog !== null} onSettings={() => setDialog("settings")} onSaves={() => setDialog("saves")}
-      onChange={updateRun} onTitle={title} onNewRun={() => { setCodex(loadCodex()); setRun(null); setScreen("create"); }}
+      onChange={(next) => { setRestoreNotice(null); updateRun(next); }} onTitle={title} onNewRun={() => { setCodex(loadCodex()); setRun(null); setScreen("create"); }}
       onAbandon={() => { clearSave(); setSaved(null); setRun(null); setSaveFailed(false); title(); }} />
-      : screen === "create" ? <CreateScreen keepsakes={codex.keepsakes} onBack={title} onStart={load} />
+      : screen === "create" ? <CreateScreen keepsakes={codex.keepsakes} onBack={title} onStart={(next) => load(next, "New run")} />
       : <TitleScreen save={saved} codex={codex} saveFailed={saveFailed} recovered={recovered}
           onSettings={() => setDialog("settings")} onSaves={() => setDialog("saves")}
           onContinue={() => { if (saved) load(saved); }} onNew={() => setScreen("create")} />}

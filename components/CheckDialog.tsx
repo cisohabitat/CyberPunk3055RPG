@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { DialogFrame } from "@/components/DialogFrame";
 import { Portrait, reactionLine } from "@/components/Portrait";
-import { commitChoice, previewCheck, runDelta, stageCheck } from "@/lib/engine";
+import { commitChoice, checkResourceCosts, previewCheck, runDelta, stageCheck } from "@/lib/engine";
 import { playCue } from "@/lib/sound";
 import { statVoice } from "@/lib/story/voices";
 import type { CheckResult, Choice, GameState } from "@/lib/types";
@@ -37,6 +37,7 @@ export function CheckDialog({
   const locked = useRef(Boolean(restored));
   const [rolling, setRolling] = useState(false);
   const chance = preview.hits === 10 ? "Certain" : preview.hits === 0 ? "No chance" : `${preview.hits} in 10`;
+  const costs = checkResourceCosts(state, choice);
   const delta = next ? runDelta(state, next) : [];
 
   useEffect(() => {
@@ -86,6 +87,7 @@ export function CheckDialog({
       <p>
         {chance}. 1d10 + {preview.bonus} against DC {preview.dc}.
       </p>
+      {!result && costs.length > 0 && <p className="hint" data-testid="check-costs">{costs.join("; ")}. Before critical adjustments: a successful 10 eases Strain by one; a missed 1 adds one. Strain stays between zero and five.</p>}
       <p data-testid="stat-voice">{statVoice(preview.stat)}</p>
       <ul className="math">
         {preview.parts.map((part) => (

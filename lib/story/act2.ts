@@ -99,7 +99,7 @@ function lumenDoorText(state: GameState): string {
       : "You can hear her out, or you can leave the step and keep the week unsaid.";
   return `Sister Lumen is on the chapel step with the coat over the habit. ${knows}
 
-She holds the clinic marker out, a detail you can refuse to carry.
+${state.items.includes("clinic-marker") || state.journal.some((entry) => entry.id === "clinic-debt") ? "She asks whether you will answer the debt the clinic marker represents." : "She offers a clinic marker, holding it on her palm while she waits for your answer."}
 
 ${warm}`;
 }
@@ -154,13 +154,13 @@ function lumenText(state: GameState): string {
   const marker = state.flags.refused_marker
     ? "You refused the marker on the step. Her hand stays closed, and the week is colder for it."
     : state.items.includes("clinic-marker") || state.journal.some((entry) => entry.id === "clinic-debt")
-      ? "The clinic marker is a debt with her name on it. She turns it over until you recognize the weight."
-      : "She does not have a marker to show you. She has the optic, dark, and the week she spent not selling your name.";
+      ? "The clinic debt still has her name on it. She asks whether you remember its weight."
+      : "The offered marker is still on her palm. You have not taken it; hearing her out was no handover.";
   return `Glass Chapel in daylight is a waiting room that has given up on being holy. Sister Lumen is on the step, coat over the habit, rain in the seams.
 
 ${marker}
 
-"Ward Nine is still down there," she says. "The shard is a week old, wherever it went. I called the marker in because memory gets thin if nobody walks it back to the wall. Come with me, or tell me you are done and mean it."`;
+"Ward Nine is still down there," she says. "The shard is a week old, wherever it went. I called you back because memory gets thin if nobody walks it back to the wall. Come with me, or tell me you are done and mean it."`;
 }
 
 function helionText(state: GameState): string {
@@ -315,7 +315,7 @@ export const ACT2_SCENES: Record<string, Scene> = {
       {
         id: "refuse-marker",
         label: "Refuse the marker.",
-        detail: "You will not carry what she is holding out.",
+        detail: "Decline the clinic’s call. Any marker already in your pocket stays there.",
         effects: { flags: ["refused_marker"] },
         next: "act2_lumen",
       },

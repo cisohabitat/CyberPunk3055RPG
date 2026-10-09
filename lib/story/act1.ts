@@ -153,12 +153,13 @@ function afterText(state: GameState): string {
         : state.flags.copied
           ? "Two copies of Mara's hour exist. One is in your pocket. One is a file that wants a witness."
           : "Mara's hour is a weight in your pocket. It is smaller than three hundred names, and heavier.";
+  const copyWindow = state.flags.pact_copy && !state.flags.copied ? "You left the chair room without the second file you promised Lumen. The copying window is closed; an original alone does not keep that promise." : "";
   const believed = state.flags.she_believes
     ? "Lumen believed the reason you sold her. The stair will keep the version she bought."
     : "";
   return `${beat}
 
-${hold}${believed ? `\n\n${believed}` : ""}
+${hold}${copyWindow ? `\n\n${copyWindow}` : ""}${believed ? `\n\n${believed}` : ""}
 
 Quill is a noodle stall away. He has never once been sentimental.`;
 }

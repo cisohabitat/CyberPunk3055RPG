@@ -79,6 +79,7 @@ test("acquired sources are keyboard-readable without granting proof", async ({ p
   await page.getByRole("button", { name: "Settings", exact: true }).click();
   await page.getByLabel("Text size").selectOption("2"); await page.getByLabel("Contrast", { exact: true }).selectOption("high");
   await page.getByRole("button", { name: "Done", exact: true }).click();
+  await page.getByTestId("memory-review").locator(":scope > summary").click();
   const summary = page.getByTestId("source-ledger").locator("summary"); await summary.focus(); await page.keyboard.press("Enter");
   await expect(page.getByTestId("source-ledger")).toHaveAttribute("open", "");
   await expect(page.getByTestId("source-ledger")).toContainText("Recorded as claim");
@@ -151,10 +152,10 @@ test("modal controls stay isolated and return focus", async ({ page }) => {
 });
 test("slots, corrupted import, backup and export", async ({ page }) => {
   await openRun(page); await page.getByRole("button", { name: "Saves", exact: true }).click();
-  await page.getByRole("button", { name: "Save to slot 1", exact: true }).click(); await expect(page.getByRole("status")).toContainText("Slot 1 saved");
+  await page.getByRole("button", { name: "Save to slot 1", exact: true }).click(); await expect(page.getByRole("dialog").getByRole("status")).toContainText("Slot 1 saved");
   const download = page.waitForEvent("download"); await page.getByRole("button", { name: "Export run", exact: true }).click(); expect((await download).suggestedFilename()).toBe("saint-shard-run.json");
   await page.getByLabel("Import a saved run").setInputFiles({ name: "bad.json", mimeType: "application/json", buffer: Buffer.from('{"version":2,"stats":[]}') });
-  await expect(page.getByRole("status")).toContainText("supported");
+  await expect(page.getByRole("dialog").getByRole("status")).toContainText("supported");
   await page.getByRole("button", { name: "Close saves", exact: true }).click(); await page.getByTestId("choice-ask-pay").click();
   await page.getByRole("button", { name: "Saves", exact: true }).click(); await page.getByRole("button", { name: "Load slot 1", exact: true }).click(); await page.getByRole("button", { name: "Confirm load", exact: true }).click();
   await expect(page.getByTestId("choice-ask-pay")).toBeVisible();
@@ -171,7 +172,7 @@ for (const mode of ["blocked", "quota"] as const) test(`plays with ${mode} stora
     else Storage.prototype.setItem = function () { throw new DOMException("Full", "QuotaExceededError"); };
   }, mode);
   await page.goto("/"); await page.getByTestId("new-run").click(); await page.getByTestId("handle-input").fill("Rex"); await page.getByTestId("complication-debt").click(); await page.getByTestId("plus-chrome").click(); await page.getByTestId("plus-nerve").click(); await page.getByTestId("start-run").click();
-  await expect(page.getByRole("status")).toContainText("could not be saved"); await page.getByTestId("choice-ask-pay").click(); await expect(page.getByTestId("choice-haggle")).toBeVisible();
+  await expect(page.getByRole("status").filter({ hasText: "could not be saved" })).toContainText("could not be saved"); await page.getByTestId("choice-ask-pay").click(); await expect(page.getByTestId("choice-haggle")).toBeVisible();
 });
 test("memory inspection, disposition and consequence entry", async ({ page }) => {
   await openRun(page, fixture("mara_why", { items: ["shard"], flags: { heard_memo: true }, journal: [{ id: "ward-nine", text: "The original memo." }] }));
@@ -552,4 +553,99 @@ test("a coolant follow-up spends trust once and describes a future appointment",
   await expect(page.getByTestId("scene-text")).toContainText("inspection itself is still due");
   const saved=await page.evaluate(()=>JSON.parse(localStorage.getItem("saint-shard-3055-v1")!)); expect(saved.factions.wards).toBe(1); expect(saved.flags.order_verified).toBeUndefined();
   expect((await new AxeBuilder({page}).analyze()).violations).toEqual([]);
+});
+
+for (const reading of ["paragraph", "all"] as const) test(`fresh memory choices precede optional evidence in ${reading} mode`, async ({ page }) => {
+  await page.setViewportSize({ width: 400, height: 605 });
+  await page.addInitScript((pace) => localStorage.setItem("saint-shard-preferences", JSON.stringify({ reading: pace })), reading);
+  await openRun(page, fixture("memory_publication", { flags: { memory_prepared: true } }));
+  const review = page.getByTestId("memory-review");
+  await expect(review).not.toHaveAttribute("open", "");
+  expect(await page.locator("#choices").evaluate((choices) => Boolean(choices.compareDocumentPosition(document.querySelector('[data-testid="memory-review"]')!) & Node.DOCUMENT_POSITION_FOLLOWING))).toBe(true);
+  const skip = page.getByRole("link", { name: "Skip to choices" });
+  await skip.focus(); await page.keyboard.press("Enter");
+  await expect(page.locator("#choices")).toBeFocused();
+  await page.keyboard.press("Tab"); await expect(page.locator("#choices button").first()).toBeFocused();
+  await review.locator(":scope > summary").click();
+  await expect(page.getByTestId("memory-plate")).toBeVisible();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+});
+test("settings fit classic scrollbars at desktop and narrow widths in every text size", async ({ page }) => {
+  await page.goto("/");
+  await page.addStyleTag({ content: ".dialog.wide { scrollbar-gutter: stable; }" });
+  for (const width of [1180, 400, 320]) {
+    await page.setViewportSize({ width, height: 756 });
+    await page.getByRole("button", { name: "Settings", exact: true }).click();
+    for (const size of ["0", "1", "2"]) {
+      await page.getByLabel("Text size").selectOption(size);
+      expect(await page.locator(".settings-grid").evaluate((element) => element.scrollWidth <= element.clientWidth)).toBe(true);
+      expect(await page.getByRole("dialog").evaluate((element) => element.scrollWidth <= element.clientWidth)).toBe(true);
+    }
+    await page.getByRole("button", { name: "Done", exact: true }).click();
+  }
+});
+test("same-scene slot restores announce their source without gameplay deltas", async ({ page }) => {
+  await openRun(page, fixture("after_kerr", { creds: 120, strain: 4 }));
+  const other = fixture("after_kerr", { creds: 20, strain: 1 });
+  await page.evaluate((snapshot) => localStorage.setItem("saint-shard-slot-1", snapshot), exportRun(other));
+  await page.getByRole("button", { name: "Saves", exact: true }).click();
+  await page.getByRole("button", { name: "Load slot 1", exact: true }).click();
+  await page.getByRole("button", { name: "Cancel", exact: true }).click();
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!).creds)).toBe(120);
+  await page.getByRole("button", { name: "Load slot 1", exact: true }).click();
+  await page.getByRole("button", { name: "Confirm load", exact: true }).click();
+  await expect(page.getByTestId("restore-notice")).toContainText("Loaded Slot 1 — The Hour");
+  await expect(page.getByTestId("run-delta")).toHaveCount(0);
+  const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(run.creds).toBe(20); expect(run.strain).toBe(1);
+  const nextChapter = fixture("act2_lumen_door", { creds: 300, strain: 3 });
+  await page.evaluate((snapshot) => localStorage.setItem("saint-shard-slot-2", snapshot), exportRun(nextChapter));
+  await page.getByRole("button", { name: "Saves", exact: true }).click();
+  await page.getByRole("button", { name: "Load slot 2", exact: true }).click();
+  await page.getByRole("button", { name: "Confirm load", exact: true }).click();
+  await expect(page.getByTestId("restore-notice")).toContainText("Loaded Slot 2 — The Week");
+  await expect(page.getByTestId("run-delta")).toHaveCount(0);
+  await page.getByRole("button", { name: "Saves", exact: true }).click();
+  await page.getByRole("button", { name: "Load slot 1", exact: true }).click();
+  await page.getByRole("button", { name: "Confirm load", exact: true }).click();
+  await expect(page.getByTestId("restore-notice")).toContainText("Loaded Slot 1 — The Hour");
+  await expect(page.getByTestId("run-delta")).toHaveCount(0);
+});
+test("ending discovery shows chapter counts and opt-in spoiler-light replay hints", async ({ page }) => {
+  await page.goto("/");
+  for (const title of ["The Hour · 0/8 discovered", "The Week · 0/3 discovered", "The Wall · 0/4 discovered"]) await expect(page.getByRole("heading", { name: title })).toBeVisible();
+  await expect(page.locator(".codex .unseen")).toHaveCount(15);
+  await expect(page.getByText("The sources you carry and the account you choose affect what can be said.")).toHaveCount(0);
+  await page.getByRole("button", { name: "Show replay hints" }).click();
+  await expect(page.getByText("The sources you carry and the account you choose affect what can be said.")).toBeVisible();
+  await page.getByRole("button", { name: "Hide replay hints" }).click();
+  await expect(page.locator(".codex .seen")).toHaveCount(0);
+});
+
+
+test("Lumen offers a marker without a handover through hearing and reload", async ({ page }) => {
+  await openRun(page, fixture("act2_lumen_door", { items: [], flags: { act1_sold: true } }));
+  await page.getByTestId("next-paragraph").click();
+  await expect(page.getByTestId("scene-text")).toContainText("offers a clinic marker");
+  await page.getByTestId("choice-hear-lumen").click();
+  await page.reload(); await page.getByTestId("continue-run").click();
+  await page.getByRole("button", { name: "Settings", exact: true }).click();
+  await page.getByLabel("Reading pace").selectOption("all");
+  await page.getByRole("button", { name: "Done", exact: true }).click();
+  await expect(page.getByTestId("scene-text")).toContainText("still on her palm");
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!).items)).toEqual([]);
+});
+test("Fight Kerr displays costs before a saved critical result and commits once", async ({ page }) => {
+  await page.addInitScript(() => { Math.random = () => 0.95; });
+  await openRun(page, fixture("kerr", { strain: 0 }));
+  await expect(page.getByTestId("choice-fight")).toContainText("Success: Strain +1");
+  await expect(page.getByTestId("choice-fight")).toContainText("Miss: Strain +2");
+  await page.getByTestId("choice-fight").click();
+  await expect(page.getByTestId("check-costs")).toContainText("successful 10 eases Strain by one");
+  await page.getByTestId("roll-button").click();
+  await page.reload(); await page.getByTestId("continue-run").click();
+  await expect(page.getByTestId("roll-button")).toHaveCount(0);
+  await page.getByTestId("continue-check").click();
+  const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(run.strain).toBe(0); expect(run.rolls).toHaveLength(1); expect(run.rolls[0].roll).toBe(10);
 });

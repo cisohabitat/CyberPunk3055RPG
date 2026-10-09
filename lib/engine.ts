@@ -224,6 +224,22 @@ export function effectPreview(state: GameState, choice: Choice): string[] {
   return lines;
 }
 
+// Current-state resource changes before the existing critical adjustment.
+// Narrative flags, new items and sources stay out of this numeric preview.
+export function checkResourceCosts(state: GameState, choice: Choice): string[] {
+  if (!choice.check) return [];
+  const common = applyEffect(state, choice.effects);
+  const branches = [["Success", choice.successEffects], ["Miss", choice.failEffects]] as const;
+  const outcomes = branches.map(([label, effects]) => {
+    const next = applyEffect(common, effects);
+    const costs = [];
+    if (next.strain > state.strain) costs.push(`Strain +${next.strain - state.strain}`);
+    if (next.creds < state.creds) costs.push(`${next.creds - state.creds} cr`);
+    return { label, costs };
+  });
+  return outcomes.some((outcome) => outcome.costs.length) ? outcomes.map(({ label, costs }) => `${label}: ${costs.length ? costs.join(", ") : "no resource cost"} (before critical adjustment)`) : [];
+}
+
 export function runDelta(before: GameState, after: GameState): string[] {
   const lines: string[] = [];
   if (after.strain !== before.strain) {

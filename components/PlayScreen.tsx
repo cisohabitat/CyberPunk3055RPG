@@ -8,7 +8,7 @@ import { Portrait } from "@/components/Portrait";
 import { Sheet } from "@/components/Sheet";
 import { DISTRICT_ART, placeArt } from "@/lib/art";
 import { ORIGINS, STRAIN_MAX, STAT_INFO } from "@/lib/character";
-import { commitChoice, effectPreview, getScene, presentChoices, previewCheck, runDelta, sceneText, type VisibleChoice } from "@/lib/engine";
+import { commitChoice, effectPreview, checkResourceCosts, getScene, presentChoices, previewCheck, runDelta, sceneText, type VisibleChoice } from "@/lib/engine";
 import { locationCue, playCue, sceneMood, setBed } from "@/lib/sound";
 import { rememberEnding } from "@/lib/storage";
 import type { Preferences } from "@/lib/preferences";
@@ -19,7 +19,7 @@ import { FieldKitBrief } from "./FieldKitBrief";
 import { TestimonyBrief } from "./TestimonyBrief";
 import { ArchiveBrief } from "./ArchiveBrief";
 import { TransferBrief } from "./TransferBrief";
-import { aftermath } from "@/lib/evidence";
+import { aftermath, memoryDisposition } from "@/lib/evidence";
 import { endingCoda } from "@/lib/story";
 import { speakerRole } from "@/lib/story/cast";
 import { actName, currentGoal } from "@/lib/story/goal";
@@ -28,6 +28,7 @@ import type { GameState } from "@/lib/types";
 
 export function PlayScreen({
   state,
+  restoreNotice,
   onChange,
   onAbandon,
   onTitle,
@@ -39,6 +40,7 @@ export function PlayScreen({
   onSaves,
 }: {
   state: GameState;
+  restoreNotice?: string | null;
   onChange: (state: GameState) => void;
   onAbandon: () => void;
   onTitle: () => void;
@@ -262,12 +264,13 @@ export function PlayScreen({
 
               </div>
             </div>
+            {restoreNotice && <p className="restore-notice" role="status" data-testid="restore-notice">{restoreNotice}</p>}
             <ObjectiveBrief state={state} />
             <TransferBrief state={state} />
             <ArchiveBrief state={state} />
-            <TestimonyBrief state={state} />
+            {!scene.memory && <TestimonyBrief state={state} />}
             <FieldKitBrief state={state} />
-            {scene.memory && <MemoryPlate key={scene.id} state={state} choices={choices} onInspect={pick} />}
+            {scene.id === "memory_table" && <MemoryPlate key={scene.id} state={state} choices={choices} onInspect={pick} />}
             <div className="prose" data-testid="scene-text">
               {paragraphs.slice(0, visibleCount).map((paragraph, index) => (
                 <p key={`${scene.id}-${index}`}>{paragraph}</p>
@@ -286,7 +289,7 @@ export function PlayScreen({
             {scene.finale && <section className="aftermath" aria-label="What your choices changed"><h2>What remains</h2>{aftermath(state).map((row) => <section key={row.title}><h3>{row.title}</h3><p>{row.text}</p></section>)}</section>}
             {fault && <p className="form-error">{fault}</p>}
             {choices.length > 0 && (
-              <div className={scene.id === "districts" ? "choices cards" : "choices"} id="choices">
+              <div className={scene.id === "districts" ? "choices cards" : "choices"} id="choices" tabIndex={-1}>
                 {choices.map((choice, index) => {
                   if (scene.memory && choice.id.startsWith("inspect-")) return null;
                   const odds = choice.check ? previewCheck(state, choice.check) : null;
@@ -312,6 +315,7 @@ export function PlayScreen({
                             choice.detail,
                             openPromises.length && [choice.next, choice.nextSuccess, choice.nextFail].some((next) => typeof next === "string" && ["ending_week_wards", "ending_week_deal", "ending_exposed"].includes(next)) ? `${openPromises.length} memory ${openPromises.length === 1 ? "promise remains" : "promises remain"} unresolved if the week closes` : null,
                             effectPreview(state, choice).join(" · ") || null,
+                            checkResourceCosts(state, choice).join("; ") || null,
                           ]
                             .filter(Boolean)
                             .join(" · ")}
@@ -321,6 +325,7 @@ export function PlayScreen({
                 })}
               </div>
             )}
+            {scene.memory && scene.id !== "memory_table" && <details className="memory-review" data-testid="memory-review"><summary>Review the inspected memory · {memoryDisposition(state)}</summary><TestimonyBrief state={state} /><MemoryPlate key={scene.id} state={state} choices={choices} onInspect={pick} /></details>}
             {scene.ending && (
               <div className="actions">
                 <button className="primary" type="button" onClick={onNewRun}>

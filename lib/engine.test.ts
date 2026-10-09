@@ -3,6 +3,7 @@ import { describe, it } from "node:test";
 import { ORIGINS, type OriginId } from "./character.ts";
 import { PAY } from "./economy.ts";
 import {
+  checkResourceCosts,
   commitChoice,
   createCharacter,
   effectPreview,
@@ -945,5 +946,52 @@ describe("coolant maintenance appointment", () => {
     const scheduled=step(repaired(),"book-pump-inspection");
     assert.throws(()=>step({...scheduled,creds:19},"pay-pump-inspection"));
     assert.equal(step(scheduled,"leave-pump-schedule").flags.pump_inspection_booked,undefined);
+  });
+});
+
+
+describe("playtest narrative and cost corrections", () => {
+  const base = make("gutterwire", { chrome: 0, nerve: 2, face: 0, ghost: 0 });
+  it("Lumen offers but does not hand over an absent marker", () => {
+    const state = { ...base, sceneId: "act2_lumen_door", items: [], flags: { act1_sold: true } };
+    assert.match(sceneText(getScene(state.sceneId), state), /offers a clinic marker/);
+    const heard = step(state, "hear-lumen");
+    assert.match(sceneText(getScene(heard.sceneId), heard), /still on her palm/);
+    assert.deepEqual(heard.items, []);
+    assert.deepEqual(step(state, "refuse-marker").items, []);
+    assert.deepEqual(step(state, "leave-lumen").items, []);
+  });
+  it("an existing marker stays with the runner after hearing or refusal", () => {
+    const state = { ...base, sceneId: "act2_lumen_door", items: ["clinic-marker"] };
+    assert.match(sceneText(getScene(state.sceneId), state), /debt the clinic marker represents/);
+    assert.deepEqual(step(state, "hear-lumen").items, state.items);
+    assert.deepEqual(step(state, "refuse-marker").items, state.items);
+  });
+  it("a recorded clinic debt does not imply Lumen physically holds a marker", () => {
+    const state = { ...base, sceneId: "act2_lumen_door", items: [], journal: [{ id: "clinic-debt", text: "Clinic debt", kind: "promise" as const }] };
+    assert.match(sceneText(getScene(state.sceneId), state), /answer the debt/);
+    const heard = step(state, "hear-lumen");
+    assert.match(sceneText(getScene(heard.sceneId), heard), /clinic debt still/);
+    assert.doesNotMatch(sceneText(getScene(heard.sceneId), heard), /still on her palm|turns it over/);
+    assert.deepEqual(heard.items, []);
+  });
+  it("only an unfulfilled copying promise reports the closed window", () => {
+    for (const [pact, copied, closed] of [[true, false, true], [true, true, false], [false, false, false]]) {
+      const state = { ...base, sceneId: "after_kerr", flags: { pact_copy: pact, copied } };
+      assert.equal(sceneText(getScene(state.sceneId), state).includes("copying window is closed"), closed);
+    }
+  });
+  it("Fight Kerr previews both bounded costs without changing state or critical rules", () => {
+    const state = { ...base, sceneId: "kerr", strain: 0 };
+    const choice = getScene("kerr").choices.find((entry) => entry.id === "fight")!;
+    const before = JSON.stringify(state);
+    assert.deepEqual(checkResourceCosts(state, choice), ["Success: Strain +1 (before critical adjustment)", "Miss: Strain +2 (before critical adjustment)"]);
+    assert.equal(JSON.stringify(state), before);
+    assert.equal(commitChoice(state, choice, { roll: 8 }).state.strain, 1);
+    assert.equal(commitChoice(state, choice, { roll: 10 }).state.strain, 0);
+    assert.equal(commitChoice(state, choice, { roll: 1 }).state.strain, 3);
+    assert.match(checkResourceCosts({ ...state, strain: 4 }, choice)[1], /Strain \+1/);
+    assert.deepEqual(checkResourceCosts({ ...state, strain: 5 }, choice), []);
+    assert.deepEqual(checkResourceCosts(state, getScene("stall").choices[0]), []);
   });
 });

@@ -3,7 +3,8 @@
 import { useState } from "react";
 import { DialogFrame } from "@/components/DialogFrame";
 import { getScene } from "@/lib/engine";
-import { CODEX, endingCoda } from "@/lib/story";
+import { endingCoda } from "@/lib/story";
+import { endingGroups } from "@/lib/ending-discovery";
 import { currentGoal } from "@/lib/story/goal";
 import type { Codex, GameState } from "@/lib/types";
 
@@ -29,6 +30,7 @@ export function TitleScreen({
   onSaves: () => void;
 }) {
   const [confirm, setConfirm] = useState(false);
+  const [showReplayHints, setShowReplayHints] = useState(false);
   const scene = save ? getScene(save.sceneId) : null;
 
   return (
@@ -75,23 +77,25 @@ export function TitleScreen({
         </div>
         <div className="codex" data-testid="codex">
           <h2>Endings this browser has seen</h2>
-          <ul>
-            {CODEX.map((entry) => {
-              const seen = codex.seen.some((item) => item.id === entry.id);
-              return (
-                <li key={entry.id} className={seen ? "seen" : "unseen"}>
-                  {seen ? (
-                    <>
-                      <strong>{entry.title}</strong>
-                      <span>{endingCoda(entry.id)}</span>
-                    </>
-                  ) : (
-                    "—"
-                  )}
-                </li>
-              );
-            })}
-          </ul>
+          <p>Each run follows one chain. Other outcomes remain for future runs.</p>
+          <button className="ghost" type="button" aria-expanded={showReplayHints} aria-controls="replay-hints" onClick={() => setShowReplayHints(!showReplayHints)}>
+            {showReplayHints ? "Hide replay hints" : "Show replay hints"}
+          </button>
+          <div id="replay-hints">
+            {endingGroups(codex).map((group) => (
+              <section className="codex-chapter" key={group.title}>
+                <h3>{group.title} · {group.discovered}/{group.entries.length} discovered</h3>
+                {showReplayHints && <p>{group.hint}</p>}
+                <ul>
+                  {group.entries.map((entry) => (
+                    <li key={entry.id} className={entry.seen ? "seen" : "unseen"}>
+                      {entry.seen ? <><strong>{entry.title}</strong><span>{endingCoda(entry.id)}</span></> : "Undiscovered"}
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            ))}
+          </div>
         </div>
         <p className="fine">Corporate violence and memory editing. Original fiction. Progress stays on this device.</p>
       </div>
