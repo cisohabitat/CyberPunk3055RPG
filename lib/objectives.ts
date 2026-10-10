@@ -1,3 +1,4 @@
+import { windowRemaining } from "./chapel-window";
 import { spireOutcome } from "./story/spire";
 import { shelterOutcome } from "./story/shelter";
 import { freightOutcome } from "./story/freight";
@@ -90,6 +91,8 @@ export function nextStep(state: GameState): string {
   if (state.sceneId === "act2_recovery") return "Choose paid care, a clinic favor, or a short rest. Use this week’s recovery visit once.";
   if (state.sceneId === "act2_recovery_after") return "Pressure eased; evidence, witness safety, and publication still need their own decisions.";
   if (state.sceneId === "act2_witness_brief") return "Agree what Nia authorizes before arranging the move.";
+  if (state.sceneId === "chapel_window_plan" || state.sceneId === "chapel_window_exit") return `Service window: ${windowRemaining(state)} opportunities left. Preparation, entry and quiet exit share this allowance.`;
+  if (state.sceneId === "chapel_window_expired") return "The window is closed. Return to ordinary doors without a fee; patrol attention remains.";
   if (state.sceneId === "chapel_methods" || state.sceneId === "chapel_method_review") return "Prepare one access method; compare its cost and trace before committing.";
   if (state.sceneId === "act2_witness_support") return "Match preparation to a transport commitment. Recording permission remains separate.";
   if (state.sceneId === "act2_route_handling") return "Choose physical effort and a refundable deposit, or an accepted work bargain.";

@@ -7,6 +7,30 @@ import { exportRun } from "../lib/vault";
 function fixture(sceneId = "stall", extra: Partial<GameState> = {}): GameState {
   return { ...createCharacter({ handle: "Rex", givenName: "Ada", origin: "spire", bonus: { chrome: 0, nerve: 0, face: 2, ghost: 0 }, complication: "optic" }), sceneId, ...extra };
 }
+test("saved Chapel window preserves a pending die and spends shared opportunities once", async ({ page }) => {
+  await page.addInitScript(() => { Math.random = () => 0.75; });
+  await openRun(page, fixture("route", { creds: 0, strain: 0 }));
+  for (const id of ["begin-chapel-window", "window-scout-gap"]) await page.getByTestId(`choice-${id}`).click();
+  await expect(page.getByTestId("goal")).toContainText("2 opportunities");
+  await page.getByTestId("choice-window-use-gap").focus(); await page.keyboard.press("Enter"); await page.getByTestId("roll-button").click();
+  await page.reload(); await page.getByTestId("continue-run").click(); await page.getByTestId("continue-check").click();
+  await expect(page.getByTestId("goal")).toContainText("1 opportunity");
+  await page.getByTestId("choice-window-quiet-exit").click();
+  const s = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(s.flags.chapel_window_0).toBe(true); expect(s.flags.chapel_window_quiet_exit).toBe(true); expect(s.flags.watched).toBeUndefined();
+  expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations).toEqual([]);
+});
+for (const width of [390, 1440, 320]) test(`expired Chapel exit stays usable without funds at ${width}px`, async ({ page }) => {
+  await page.setViewportSize({ width, height: width < 700 ? 844 : 900 });
+  const art: string[] = []; page.on("request", r => { if (r.url().includes("/art/")) art.push(r.url()); });
+  if (width === 320) await page.addInitScript(() => localStorage.setItem("saint-shard-preferences", JSON.stringify({ textStep: 2, artwork: "none", contrast: "high", reading: "all", motion: "reduce" })));
+  await openRun(page, fixture("chapel_window_exit", { creds: 0, strain: 0, flags: { chapel_window_started: true, chapel_window_entered: true, chapel_window_0: true } }));
+  await expect(page.getByTestId("goal")).toBeInViewport(); await expect(page.getByTestId("choice-window-quiet-exit")).toHaveCount(0);
+  await page.getByTestId("choice-window-staffed-exit").click(); await page.reload(); await page.getByTestId("continue-run").click();
+  const s = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(s.creds).toBe(0); expect(s.strain).toBe(1); expect(s.flags.chapel_window_expired).toBe(true); expect(s.flags.watched).toBe(true);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true); if (width === 320) expect(art).toEqual([]);
+});
 test("prepared methods keep a service fee and recorded bargain die through reload", async ({ page }) => {
   await page.addInitScript(() => { Math.random = () => 0.75; });
   await openRun(page, fixture("route", { creds: 15, strain: 0 }));

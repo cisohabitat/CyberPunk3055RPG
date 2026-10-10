@@ -1,6 +1,9 @@
 import type { Choice, GameState } from "./types";
 
 export function chapelMethodResponse(state: GameState): string {
+  if (state.flags.chapel_window_staffed_exit) return "Lumen recognizes the visitor watch from the staffed stair. 'The service window closed. Their eyes didn't.'";
+  if (state.flags.chapel_window_nerve) return "Lumen tests the strained latch. 'You held it open with your hands. Maintenance will notice that.'";
+  if (state.flags.chapel_window_ghost) return "Lumen looks toward the quiet landing. 'You waited for their return pass. That left no new visitor entry.'";
   if (state.flags.chapel_method_chrome) return "Lumen glances at the dead service reader. 'You isolated it. The maintenance fault is on their log, even if your name isn't.'";
   if (state.flags.chapel_method_face) return "Lumen reads the service docket. 'The orderly accepted a shift, not a confession. You still owe the work you offered.'";
   return "";

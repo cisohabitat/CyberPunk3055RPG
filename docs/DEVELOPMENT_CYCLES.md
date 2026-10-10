@@ -173,3 +173,8 @@ The first complete browser gate caught a default-reading opening regression: the
 ## Roadmap phase 2, cycle 2 — encounter methods
 
 Prepared methods change Chapel machinery/work obligations, Nia’s transfer support and Kerr’s physical handling/work bargain. Costs and callbacks remain distinct from evidence, care and consent. See [ENCOUNTER_VARIETY.md](ENCOUNTER_VARIETY.md) for implementation, verification and the next two ordered cycles. Exact-revision CI and public release checks follow the push.
+
+
+## Roadmap phase 2, cycle 3 — saved local deadline
+
+Three saved Chapel opportunities now cover preparation, entry and exit. The first browser pass identified the missing allowance in the prominent goal; the corrected build passes twelve focused cases and four complete phone campaigns (323 visits). All 303 unit/replay cases pass, with 85 full fixtures and an explicit art decision for every one of 178 scenes. Expiry recovers without funds, and recorded dice cannot change after interruption. See [ENCOUNTER_VARIETY.md](ENCOUNTER_VARIETY.md). Exact-revision release checks follow the push.

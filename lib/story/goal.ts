@@ -1,4 +1,5 @@
 import type { GameState } from "../types";
+import { windowRemaining } from "../chapel-window";
 
 export const GOAL_ARRIVE = "Find Quill at the Ward Four noodle stall. Hear what he is offering.";
 
@@ -35,6 +36,11 @@ export function actName(state: GameState): string {
 
 export function currentGoal(state: GameState): string {
   const id = state.sceneId;
+  if (id === "chapel_window_plan" || id === "chapel_window_exit") {
+    const count = windowRemaining(state);
+    return `Service window: ${count} ${count === 1 ? "opportunity" : "opportunities"} left. Save one for a quiet exit, or use the staffed recovery.`;
+  }
+  if (id === "chapel_window_expired") return "The service window closed. Ordinary doors remain available without a fee.";
   if (id === "opening_self") return GOAL_SELF;
   if (id.startsWith("opening_")) return GOAL_ARRIVE;
   if (WALL.has(id) || id.startsWith("act3_")) return GOAL_WALL;

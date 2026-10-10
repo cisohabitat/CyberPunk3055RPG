@@ -405,6 +405,23 @@
       "scenes": [
         "act2_route_handling"
       ]
+    },
+    {
+      "treatment": "portrait",
+      "asset": "/art/quill.jpg",
+      "reason": "Reuse the existing Quill consultation at the same Chapel service bench. The saved action allowance is written information, not a real-time animation or an access outcome.",
+      "scenes": [
+        "chapel_window_plan",
+        "chapel_window_expired"
+      ]
+    },
+    {
+      "treatment": "background",
+      "asset": "/art/chapel.jpg",
+      "reason": "Reuse the established Chapel architecture for the service landing and staffed exit. The background makes no claim that a quiet exit succeeded.",
+      "scenes": [
+        "chapel_window_exit"
+      ]
     }
   ]
 }

@@ -274,3 +274,10 @@ See [the detailed phase execution and editorial evidence](docs/NARRATIVE_PACING.
 Chapel entry now offers machinery isolation or a service bargain with a paid tool reservation, a watched work docket and a once-only return shift. Nia can travel with an arranged volunteer against the runner’s own work, a prepared harness against physical strain, or a prepared scanner using Edda’s earned baffle. Her later reply remembers the transport; recording still needs separate permission. Kerr’s collection offers a refundable carrying-rig deposit or an accepted depot-work bargain; observed handover refunds the rig, while earlier registration and betrayal remain. Four scenes have explicit suitable reused-art decisions.
 
 See [the detailed Phase 2 cycle plan and internal evidence](docs/ENCOUNTER_VARIETY.md). Preserve version 2, `saint-shard-3055-v1`, 1d10, caps, recorded dice and original routes. Internal verification does not complete independent acceptance or change the provisional 7.8 grade.
+
+
+### Encounter variety — roadmap phase 2, cycle 3
+
+An optional Chapel service window shares three saved action opportunities between information, access and a quiet exit. The remaining count stays in the visible goal. Pausing, reloading or exporting a pending die never resets the allowance; repeating a used inspection is unavailable. Expiry changes the patrol attention and strain cost, with a free staffed exit or a return to ordinary doors. Chrome reader inspection, Ghost patrol timing and Nerve physical entry retain distinct preparation and consequences. Three new scenes have explicit reused Chapel/Quill art decisions.
+
+See [Phase 2 execution and acceptance evidence](docs/ENCOUNTER_VARIETY.md). Version 2, `saint-shard-3055-v1`, the original dice, caps, routes, evidence and permission boundaries remain. The saved-window implementation does not complete independent player or production acceptance.

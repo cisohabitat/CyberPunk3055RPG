@@ -1,3 +1,4 @@
+import { startWindow, windowResume } from "../chapel-window";
 import { chapelMethodResponse } from "../encounter-methods";
 import { openingMotive } from "./opening";
 import { PAY } from "../economy";
@@ -402,6 +403,7 @@ That file is the product. Saints keep it. Then they sell it back to the same tow
 ${passLine} Glass Chapel is three streets over. You leave the steam of the stall for its white light.`;
     },
     choices: [
+      { id: "begin-chapel-window", label: "Use the patrol’s service window. Three saved opportunities.", detail: "Scouting, entry and a quiet exit share the allowance. Resume without resetting it; expiry leaves ordinary doors available.", hideIfFlag: "chapel_window_done", effects: startWindow, next: windowResume },
       { id: "prepare-chapel-method", label: "Prepare machinery isolation or a service bargain.", hideIfFlag: "chapel_method_committed", next: (state) => state.flags.chapel_method_prepared ? "chapel_method_review" : "chapel_methods" },
       {
         id: "pass",
