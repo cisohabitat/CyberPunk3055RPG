@@ -197,3 +197,8 @@ Five conduct-selected cast expressions and seven scene plates give the opening o
 ## Roadmap phase 4, cycle 7 — directed audio candidates
 
 Three 64-second scene beds and five district textures accompany the stable campaign. Actual saved allowances drive Chapel pressure; quiet conversations and recorded testimony have sparse arrangements. Separate crossfades, deduplicated loading and a 24 MiB decoded cache retain optional audio and cancel obsolete starts. Eight new fixed stock synthetic quotations join the six preserved clips, including opening, revelation, boundaries and all four finales. Source/PCM records, a measured default-mix audition and character briefs accompany the media pack. Independent listening, casting, art and rights acceptance remain pending. Phase 5 fresh-player/accessibility/device work follows this phase handoff.
+
+
+## Roadmap phase 5, cycle 8 — accessible reading and decisions
+
+An internal audit identified unavoidable number shortcuts, removed reading-control focus, inaccessible disabled-choice requirements and unfocusable sheet panels. Settings now permit number-key opt-out; reveals focus the first new paragraph; choices separate names/descriptions and explain commitment; visible unavailable approaches have a native disclosure; active sheet panels are Tab stops. Abandon begins on Keep going. No engine, story, media or save outcome changes. Blank session and findings worksheets support actual fresh-player research without fabricated participants. See [PLAYER_EXPERIENCE.md](PLAYER_EXPERIENCE.md). Verify complete campaigns, exact-revision CI and public production before release; participant, manual accessibility and physical-device gates remain pending.

@@ -278,6 +278,12 @@ button { cursor: pointer; }
 
 .choices.cards { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
 .choices.cards .choice { grid-template-columns: auto 1fr; }
+.choices.cards .decision-help { grid-column: 1 / -1; }
+.decision-help h2 { margin: 0; font-size: 1rem; }
+.decision-help p { margin: 0.35rem 0; }
+.decision-help details { margin-top: 0.6rem; }
+.decision-help li { margin: 0.75rem 0; }
+.decision-help summary { cursor: pointer; }
 .card-art {
   grid-column: 1 / -1;
   width: 100%;

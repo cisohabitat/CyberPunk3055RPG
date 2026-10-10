@@ -122,6 +122,8 @@ Implementation brief and evidence handoff: [Phase 4 art and audio direction](ART
 
 **Cycle 8: first observations and revisions.**
 
+The internal keyboard/decision-clarity implementation and blank session evidence are described in [PLAYER_EXPERIENCE.md](PLAYER_EXPERIENCE.md). They prepare this cycle's human research; no participant findings or manual/device acceptance are inferred from automation.
+
 - Begin with the prepared [character sessions](CHARACTER_PLAYTEST.md): five opening/encounter players and five different full-campaign players as an exploratory starting point. Recruitment, consent and recordings require the research workflow; no contacts or participant sessions exist yet.
 - Use natural dice and let players skip optional content. Observe where they stop, misunderstand a choice, expect their build to act differently or become tired of reading.
 - Test job ownership/acceptance, immediate goals, evidence versus claims, named private response versus public permission, and delayed outcomes. Ask which choices felt consequential and why.

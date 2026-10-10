@@ -94,7 +94,7 @@ export function Sheet({ state, open, onClose, speaker }: { state: GameState; ope
           </button>
         ))}
       </div>
-      <div hidden={tab !== "stats"} role="tabpanel" id="panel-stats" aria-labelledby="tab-stats">
+      <div hidden={tab !== "stats"} role="tabpanel" id="panel-stats" aria-labelledby="tab-stats" tabIndex={0}>
           {learnedPerks(state).map((perk) => <p className="perk" key={perk.stat}><strong>{perk.name}</strong> · {perk.description}</p>)}
           {STATS.map((stat) => (
             <div className="stat" key={stat}>
@@ -135,7 +135,8 @@ export function Sheet({ state, open, onClose, speaker }: { state: GameState; ope
             </ul>
           )}
         </div>
-        <ul hidden={tab !== "gear"} className="gear" role="tabpanel" id="panel-gear" aria-labelledby="tab-gear">
+        <div hidden={tab !== "gear"} role="tabpanel" id="panel-gear" aria-labelledby="tab-gear" tabIndex={0}>
+        <ul className="gear">
           {state.items.length === 0 && <li className="empty">Pockets empty, which is a kind of honesty.</li>}
           {state.items.map((id) => (
             <li key={id}>
@@ -144,7 +145,9 @@ export function Sheet({ state, open, onClose, speaker }: { state: GameState; ope
             </li>
           ))}
         </ul>
-        <ul hidden={tab !== "journal"} className="journal" role="tabpanel" id="panel-journal" aria-labelledby="tab-journal">
+        </div>
+        <div hidden={tab !== "journal"} role="tabpanel" id="panel-journal" aria-labelledby="tab-journal" tabIndex={0}>
+        <ul className="journal">
           <li className="evidence-summary">{memoryDisposition(state)}</li>
           {objectives(state).map((row) => <li key={`objective-${row.id}`}><strong>{row.title} · {row.status}</strong><span>{row.detail}</span></li>)}
           {state.journal.length === 0 && <li className="empty">The city has not told you anything you trust.</li>}
@@ -156,6 +159,7 @@ export function Sheet({ state, open, onClose, speaker }: { state: GameState; ope
             </li>
           ))}
         </ul>
+        </div>
       <button className="ghost sheet-toggle" type="button" onClick={onClose}>
         Close sheet
       </button>

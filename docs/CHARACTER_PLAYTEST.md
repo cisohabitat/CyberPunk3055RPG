@@ -26,4 +26,6 @@ Start through character creation, keep natural dice and allow the player to choo
 
 Use `qa/research/character-observations.csv` as a blank local worksheet. Record observed behavior separately from quotations and the reviewer's interpretation. Never infer player consent from completion. Preserve failed/abandoned sessions. Report denominators, participant experience, accessibility setup, build revision, session type and recruiting limitations. Do not turn a small cohort into population percentages or an automatic craft grade.
 
+For Cycle 8, also use the blank `qa/research/cycle8-sessions.csv` for one record per session and `qa/research/cycle8-findings-template.md` for the evidence-led revision report. [PLAYER_EXPERIENCE.md](PLAYER_EXPERIENCE.md) defines response values, prompted versus spontaneous build recognition, withdrawal handling and the Cycle 9 accessibility/device handoff.
+
 Prioritize blockers and repeated comprehension failures before more content. Revise the weakest segment, then test with fresh participants. Evaluate narrative, gameplay, audiovisual, accessibility and technical quality through the existing independent rubric; update a gate only when its required evidence actually exists. Directed internal automation is compatibility evidence, not either cohort.

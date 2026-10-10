@@ -73,6 +73,7 @@ export function PlayScreen({
   const [shown, setShown] = useState(1);
   const [reduceMotion, setReduceMotion] = useState(false);
   const prior = useRef(state);
+  const readingFocus = useRef<{ sceneId: string; index: number } | null>(null);
   const priorSound = useRef<{ location: string; on: boolean; ending: boolean } | null>(null);
   const prose = sceneText(scene, state);
   const paragraphs = prose.split(/\n\n+/).filter((paragraph) => paragraph.length > 0);
@@ -80,6 +81,19 @@ export function PlayScreen({
   const dialogue = visibleDialogue(scene.id, scene.speaker, paragraphs.slice(0, visibleCount).join("\n\n"));
   const recordedChoice = state.pendingCheck ? choices.find((choice) => choice.id === state.pendingCheck?.choiceId) : null;
   const activeChoice = recordedChoice ?? pending;
+  const unavailableChoices = choices.filter((choice) => !choice.enabled);
+
+  useEffect(() => {
+    const target = readingFocus.current;
+    if (!target) return;
+    readingFocus.current = null;
+    if (target.sceneId === scene.id) document.getElementById(`reading-paragraph-${target.index}`)?.focus();
+  }, [visibleCount, scene.id]);
+
+  function revealParagraphs(count: number) {
+    readingFocus.current = { sceneId: scene.id, index: visibleCount };
+    setShown(count);
+  }
 
   useEffect(() => {
     const media = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -139,13 +153,16 @@ export function PlayScreen({
         if (sheetOpen) setSheetOpen(false);
         return;
       }
-      if (activeChoice || confirmAbandon || sheetOpen || modalOpen || choices.length === 0) return;
+      if (!preferences.numberShortcuts || activeChoice || confirmAbandon || sheetOpen || modalOpen || choices.length === 0) return;
       if (event.target instanceof HTMLElement && event.target.closest("input, textarea, select, [contenteditable=true], #runner-sheet")) return;
       if (event.metaKey || event.ctrlKey || event.altKey || event.repeat) return;
       const number = Number(event.key);
       if (!Number.isInteger(number) || number < 1 || number > 9) return;
       const choice = choices[number - 1];
-      if (choice?.enabled) pick(choice);
+      if (choice?.enabled) {
+        event.preventDefault();
+        pick(choice);
+      }
     }
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
@@ -290,19 +307,20 @@ export function PlayScreen({
             {scene.id === "memory_table" && <MemoryPlate key={scene.id} state={state} choices={choices} onInspect={pick} artwork={preferences.artwork !== "none"} />}
             <div className="prose" data-testid="scene-text">
               {paragraphs.slice(0, visibleCount).map((paragraph, index) => (
-                <p key={`${scene.id}-${index}`}>{paragraph}</p>
+                <p key={`${scene.id}-${index}`} id={`reading-paragraph-${index}`} tabIndex={-1}>{paragraph}</p>
               ))}
             </div>
             {visibleCount < paragraphs.length && (
               <div className="prose-controls">
-                <button className="ghost" type="button" data-testid="next-paragraph" onClick={() => setShown((count) => count + 1)}>
+                <button className="ghost" type="button" data-testid="next-paragraph" onClick={() => revealParagraphs(visibleCount + 1)}>
                   Next line
                 </button>
-                <button className="ghost" type="button" data-testid="show-rest" onClick={() => setShown(paragraphs.length)}>
+                <button className="ghost" type="button" data-testid="show-rest" onClick={() => revealParagraphs(paragraphs.length)}>
                   Show the rest
                 </button>
               </div>
             )}
+            {preferences.reading === "paragraph" && paragraphs.length > 1 && <p className="reading-progress hint" role="status" aria-atomic="true">{visibleCount} of {paragraphs.length} paragraphs shown</p>}
             {dialogue && <VoiceLine key={`${scene.id}-${dialogue.id}`} line={dialogue} enabled={sound && preferences.voices > 0 && !modalOpen && !sheetOpen && !confirmAbandon && !activeChoice} />}
             {scene.id === "memory_sequence" && <MemoryTimeline state={state} choices={choices} onPlace={pick} artwork={preferences.artwork !== "none"} reducedMotion={reduceMotion} />}
             {["act2_route_map", "act2_route_exit", "act2_route_review", "act2_route_crossing"].includes(scene.id) && <RouteBoard state={state} />}
@@ -311,7 +329,12 @@ export function PlayScreen({
             {scene.finale && <section className="aftermath" aria-label="What your choices changed"><h2>What remains</h2><details data-testid="aftermath-details"><summary>Review the factual aftermath</summary>{aftermath(state).map((row) => <section key={row.title}><h3>{row.title}</h3><p>{row.text}</p></section>)}</details></section>}
             {fault && <p className="form-error">{fault}</p>}
             {choices.length > 0 && (
-              <div className={scene.id === "districts" ? "choices cards" : "choices"} id="choices" tabIndex={-1}>
+              <div className={scene.id === "districts" ? "choices cards" : "choices"} id="choices" tabIndex={-1} role="region" aria-labelledby="choices-title">
+                <div className="decision-help">
+                  <h2 id="choices-title">Your next move</h2>
+                  <p className="hint">Selecting an option commits it. For a check, review the odds and costs first; Back leaves it unrolled.</p>
+                  {unavailableChoices.length > 0 && <details data-testid="unavailable-choices"><summary>Review unavailable approaches ({unavailableChoices.length})</summary><ul>{unavailableChoices.map((choice) => <li key={choice.id}><strong>{choice.label}</strong><p>{choice.disabledReason}</p></li>)}</ul></details>}
+                </div>
                 {choices.map((choice, index) => {
                   if (scene.memory && choice.id.startsWith("inspect-")) return null;
                   if (scene.id === "memory_sequence" && choice.id.startsWith("place-")) return null;
@@ -323,6 +346,9 @@ export function PlayScreen({
                       className="choice"
                       type="button"
                       data-testid={`choice-${choice.id}`}
+                      aria-labelledby={`choice-label-${choice.id}`}
+                      aria-describedby={`choice-detail-${choice.id}`}
+                      aria-keyshortcuts={preferences.numberShortcuts && choice.enabled && index < 9 ? String(index + 1) : undefined}
                       disabled={!choice.enabled || activeChoice !== null}
                       onClick={() => pick(choice)}
                     >
@@ -330,8 +356,8 @@ export function PlayScreen({
                         <img className="card-art" src={DISTRICT_ART[choice.id]} alt="" loading="lazy" width={320} height={180} />
                       )}
                       <span className="index">{index + 1}</span>
-                      <span className="label">{choice.label}</span>
-                      <span className="odds">
+                      <span className="label" id={`choice-label-${choice.id}`}>{choice.label}</span>
+                      <span className="odds" id={`choice-detail-${choice.id}`}>
                         {choice.disabledReason ??
                           [
                             odds ? `${STAT_INFO[odds.stat].name} · DC ${odds.dc} · ${chance}` : null,
@@ -387,7 +413,7 @@ export function PlayScreen({
             <button className="primary" type="button" data-testid="confirm-abandon" onClick={onAbandon}>
               Wipe it
             </button>
-            <button className="ghost" type="button" onClick={() => setConfirmAbandon(false)}>
+            <button className="ghost" type="button" data-dialog-initial-focus onClick={() => setConfirmAbandon(false)}>
               Keep going
             </button>
           </div>

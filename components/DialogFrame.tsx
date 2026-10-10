@@ -22,6 +22,7 @@ export function DialogFrame({
     if (!root) return;
     const opener = document.activeElement instanceof HTMLElement ? document.activeElement : null;
     root.showModal();
+    root.querySelector<HTMLElement>("[data-dialog-initial-focus]")?.focus({ preventScroll: true });
     if (!root.querySelector("button, input, select, textarea")) root.focus();
     return () => {
       root.close();

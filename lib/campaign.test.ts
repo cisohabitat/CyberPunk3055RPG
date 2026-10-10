@@ -49,6 +49,9 @@ describe("recorded checks and portable saves", () => {
   });
   it("imports a supported legacy state without an envelope", () => { const state = base(); assert.deepEqual(importRun(JSON.stringify(state)), state); });
   it("bounds preference values and handles malformed preferences", () => {
+    assert.equal(parsePreferences(null).numberShortcuts, true);
+    assert.equal(parsePreferences('{"numberShortcuts":false}').numberShortcuts, false);
+    assert.equal(parsePreferences('{"numberShortcuts":"false"}').numberShortcuts, true);
     assert.equal(parsePreferences(null).voices, 70);
     assert.equal(parsePreferences(JSON.stringify({ voices: -20 })).voices, 0);
     assert.equal(parsePreferences(JSON.stringify({ voices: 1000 })).voices, 100);
