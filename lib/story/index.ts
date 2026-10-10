@@ -1,3 +1,4 @@
+import { METHOD_SCENES } from "./encounter-methods";
 import { CHARACTER_ARC_SCENES } from "./character-arcs";
 import { SPIRE_SCENES } from "./spire";
 import { SHELTER_SCENES } from "./shelter";
@@ -41,4 +42,5 @@ export const SCENES: Record<string, Scene> = mergeScenes(
   OPERATION_SCENES,
   RELATIONSHIP_SCENES,
   CHARACTER_ARC_SCENES,
+  METHOD_SCENES,
 );

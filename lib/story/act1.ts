@@ -1,3 +1,4 @@
+import { chapelMethodResponse } from "../encounter-methods";
 import { openingMotive } from "./opening";
 import { PAY } from "../economy";
 import { ITEMS } from "../items";
@@ -401,6 +402,7 @@ That file is the product. Saints keep it. Then they sell it back to the same tow
 ${passLine} Glass Chapel is three streets over. You leave the steam of the stall for its white light.`;
     },
     choices: [
+      { id: "prepare-chapel-method", label: "Prepare machinery isolation or a service bargain.", hideIfFlag: "chapel_method_committed", next: (state) => state.flags.chapel_method_prepared ? "chapel_method_review" : "chapel_methods" },
       {
         id: "pass",
         label: "Buy a counterfeit penitent pass.",
@@ -590,9 +592,9 @@ ${passLine} Glass Chapel is three streets over. You leave the steam of the stall
     id: "lumen",
     location: "Chapel stair",
     speaker: "Sister Lumen",
-    text: `A nurse with a shaved head and an optic that refocuses like it resents the distance. Her hands are clean. Her shoes are not.
+    text: (state) => `A nurse with a shaved head and an optic that refocuses like it resents the distance. Her hands are clean. Her shoes are not.
 
-"You are not on the penitent list. Dawn puts Mara Voss in that chair so Helion can edit a crime out of her. The next sentence should be one you can survive."`,
+"You are not on the penitent list. Dawn puts Mara Voss in that chair so Helion can edit a crime out of her. The next sentence should be one you can survive."${chapelMethodResponse(state) ? `\n\n${chapelMethodResponse(state)}` : ""}`,
     choices: [
       {
         id: "honest",

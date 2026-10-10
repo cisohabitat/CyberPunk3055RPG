@@ -90,6 +90,9 @@ export function nextStep(state: GameState): string {
   if (state.sceneId === "act2_recovery") return "Choose paid care, a clinic favor, or a short rest. Use this week’s recovery visit once.";
   if (state.sceneId === "act2_recovery_after") return "Pressure eased; evidence, witness safety, and publication still need their own decisions.";
   if (state.sceneId === "act2_witness_brief") return "Agree what Nia authorizes before arranging the move.";
+  if (state.sceneId === "chapel_methods" || state.sceneId === "chapel_method_review") return "Prepare one access method; compare its cost and trace before committing.";
+  if (state.sceneId === "act2_witness_support") return "Match preparation to a transport commitment. Recording permission remains separate.";
+  if (state.sceneId === "act2_route_handling") return "Choose physical effort and a refundable deposit, or an accepted work bargain.";
   if (state.sceneId === "act2_witness_plan") return "Choose one preparation. Your trained skill can unlock a different transfer method.";
   if (state.sceneId === "act2_witness_arrival") return "Nia has a safe room. Let her review the account, or return before the week closes.";
   if (state.sceneId === "act2_witness_repair") return "Protect a new location without erasing the earlier breach.";

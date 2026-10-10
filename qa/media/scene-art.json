@@ -143,7 +143,7 @@
     {
       "treatment": "portrait",
       "asset": "/art/quill.jpg",
-      "reason": "Reuse Quill’s existing portrait for briefing, memory ownership questions and recurring street work. The counter remains the same place; no new setting plate is needed. His portrait does not reveal the buyer, memo contents or an accepted contract.",
+      "reason": "Reuse Quill\u2019s existing portrait for briefing, memory ownership questions and recurring street work. The counter remains the same place; no new setting plate is needed. His portrait does not reveal the buyer, memo contents or an accepted contract.",
       "scenes": [
         "stall",
         "pay",
@@ -178,7 +178,7 @@
     {
       "treatment": "portrait",
       "asset": "/art/lumen.jpg",
-      "reason": "Use Lumen’s established portrait for clinic, care, source and dispatch conversations. Her presence identifies the recurring speaker; no art claims treatment, witness safety or completed repair.",
+      "reason": "Use Lumen\u2019s established portrait for clinic, care, source and dispatch conversations. Her presence identifies the recurring speaker; no art claims treatment, witness safety or completed repair.",
       "scenes": [
         "lumen",
         "lumen_deal",
@@ -209,7 +209,7 @@
     {
       "treatment": "portrait",
       "asset": "/art/mara.jpg",
-      "reason": "Reuse Mara’s established portrait at the chair and during replay/interpretation of her recorded hour. Prose identifies recorded testimony; the portrait supplies no new live response, source proof or verdict.",
+      "reason": "Reuse Mara\u2019s established portrait at the chair and during replay/interpretation of her recorded hour. Prose identifies recorded testimony; the portrait supplies no new live response, source proof or verdict.",
       "scenes": [
         "memo",
         "mara_why",
@@ -222,7 +222,7 @@
     {
       "treatment": "portrait",
       "asset": "/art/kerr.jpg",
-      "reason": "Reuse Kerr’s established portrait for confrontation, checkpoint and repair guidance. It depicts no rolled outcome, injury or successful repair.",
+      "reason": "Reuse Kerr\u2019s established portrait for confrontation, checkpoint and repair guidance. It depicts no rolled outcome, injury or successful repair.",
       "scenes": [
         "kerr",
         "kerr_fight",
@@ -278,7 +278,7 @@
     {
       "treatment": "portrait",
       "asset": "/art/nia.jpg",
-      "reason": "Reuse Nia’s distinct portrait for private terms, review and contact. Never depict or expose a current address, moved witness or permission not present in the state.",
+      "reason": "Reuse Nia\u2019s distinct portrait for private terms, review and contact. Never depict or expose a current address, moved witness or permission not present in the state.",
       "scenes": [
         "act3_testimony_nia",
         "act2_witness_brief",
@@ -379,6 +379,31 @@
       "scenes": [
         "act2_lumen_quiet",
         "act3_lumen_boundary"
+      ]
+    },
+    {
+      "treatment": "portrait",
+      "asset": "/art/quill.jpg",
+      "reason": "Reuse Quill at the existing Chapel service consultation. Machinery preparation remains described in text; no disabled reader or accepted bargain is depicted.",
+      "scenes": [
+        "chapel_methods",
+        "chapel_method_review"
+      ]
+    },
+    {
+      "treatment": "portrait",
+      "asset": "/art/nia.jpg",
+      "reason": "Reuse Nia for her chair handling and volunteer terms in the same witness room; no completed move, care outcome or recording permission is shown.",
+      "scenes": [
+        "act2_witness_support"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/canal-dispatch.jpg",
+      "reason": "Reuse the same neutral depot case and planning alcove for handling commitments. No release, receipt or refund is illustrated.",
+      "scenes": [
+        "act2_route_handling"
       ]
     }
   ]

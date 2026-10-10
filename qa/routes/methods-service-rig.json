@@ -1,0 +1,315 @@
+{
+  "name": "methods-service-rig",
+  "character": {
+    "handle": "Replay",
+    "givenName": "Ada",
+    "origin": "spire",
+    "complication": "on-file",
+    "bonus": {
+      "chrome": 2,
+      "nerve": 0,
+      "face": 0,
+      "ghost": 0
+    },
+    "startWithPrologue": true
+  },
+  "steps": [
+    {
+      "choiceId": "begin-opening",
+      "reload": true
+    },
+    {
+      "choiceId": "opening-survival",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-stallholder",
+      "reload": true
+    },
+    {
+      "choiceId": "take-the-stool",
+      "reload": true
+    },
+    {
+      "choiceId": "ask-pay"
+    },
+    {
+      "choiceId": "haggle",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "pocket"
+    },
+    {
+      "choiceId": "accept"
+    },
+    {
+      "choiceId": "prepare-chapel-method",
+      "reload": true
+    },
+    {
+      "choiceId": "offer-chapel-service",
+      "reload": true
+    },
+    {
+      "choiceId": "bargain-service-entry",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "go"
+    },
+    {
+      "choiceId": "honest"
+    },
+    {
+      "choiceId": "pact-copy"
+    },
+    {
+      "choiceId": "tell-truth",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "heard"
+    },
+    {
+      "choiceId": "inspect-hour"
+    },
+    {
+      "choiceId": "inspect-signature"
+    },
+    {
+      "choiceId": "inspect-order"
+    },
+    {
+      "choiceId": "inspect-roster"
+    },
+    {
+      "choiceId": "reconstruct"
+    },
+    {
+      "choiceId": "separate-decisions"
+    },
+    {
+      "choiceId": "label-unverified"
+    },
+    {
+      "choiceId": "seal-full"
+    },
+    {
+      "choiceId": "sell",
+      "reload": true
+    },
+    {
+      "choiceId": "week-after"
+    },
+    {
+      "choiceId": "into-week"
+    },
+    {
+      "choiceId": "practice"
+    },
+    {
+      "choiceId": "learn-chrome"
+    },
+    {
+      "choiceId": "read-board"
+    },
+    {
+      "choiceId": "origin-contract"
+    },
+    {
+      "choiceId": "clear-key",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "return-board"
+    },
+    {
+      "choiceId": "to-helion"
+    },
+    {
+      "choiceId": "hear-ives"
+    },
+    {
+      "choiceId": "refuse-ives"
+    },
+    {
+      "choiceId": "answer-kerr-collection",
+      "reload": true
+    },
+    {
+      "choiceId": "promise-private-collection",
+      "reload": true
+    },
+    {
+      "choiceId": "route-entry-stairs",
+      "reload": true
+    },
+    {
+      "choiceId": "pause-kerr-exit",
+      "reload": true
+    },
+    {
+      "choiceId": "answer-kerr-collection",
+      "reload": true
+    },
+    {
+      "choiceId": "route-exit-gap",
+      "reload": true
+    },
+    {
+      "choiceId": "pause-kerr-route",
+      "reload": true
+    },
+    {
+      "choiceId": "answer-kerr-collection",
+      "reload": true
+    },
+    {
+      "choiceId": "depart-kerr-foot",
+      "reload": true
+    },
+    {
+      "choiceId": "compare-depot-handling",
+      "reload": true
+    },
+    {
+      "choiceId": "borrow-depot-rig",
+      "reload": true
+    },
+    {
+      "choiceId": "record-kerr-receipt",
+      "reload": true
+    },
+    {
+      "choiceId": "trace-order"
+    },
+    {
+      "choiceId": "agree-archive-terms"
+    },
+    {
+      "choiceId": "index-archive",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "catalog-is-proof"
+    },
+    {
+      "choiceId": "revise-source-test"
+    },
+    {
+      "choiceId": "trace-receipt",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "withhold-technician"
+    },
+    {
+      "choiceId": "keep-chain"
+    },
+    {
+      "choiceId": "hear-response"
+    },
+    {
+      "choiceId": "answer-with-source"
+    },
+    {
+      "choiceId": "stand"
+    },
+    {
+      "choiceId": "back-to-board"
+    },
+    {
+      "choiceId": "to-the-wall"
+    },
+    {
+      "choiceId": "to-ward-nine"
+    },
+    {
+      "choiceId": "visit-edda"
+    },
+    {
+      "choiceId": "respect-edda-source"
+    },
+    {
+      "choiceId": "visit-records"
+    },
+    {
+      "choiceId": "keep-limits"
+    },
+    {
+      "choiceId": "go-wall"
+    },
+    {
+      "choiceId": "face-sera"
+    },
+    {
+      "choiceId": "visit-kerr-collection",
+      "reload": true
+    },
+    {
+      "choiceId": "acknowledge-private-collection",
+      "reload": true
+    },
+    {
+      "choiceId": "ask-kerr-personal-question"
+    },
+    {
+      "choiceId": "keep-kerr-personal-answer",
+      "reload": true
+    },
+    {
+      "choiceId": "prepare-public-account"
+    },
+    {
+      "choiceId": "scope-corroborated"
+    },
+    {
+      "choiceId": "keep-recording-private"
+    },
+    {
+      "choiceId": "answer-authenticated-key"
+    },
+    {
+      "choiceId": "file-public-account",
+      "reload": true
+    },
+    {
+      "choiceId": "leave-wall",
+      "reload": true
+    }
+  ],
+  "expected": {
+    "sceneId": "ending_quiet",
+    "flags": {
+      "testimony_published": true,
+      "archive_key_authenticated": true,
+      "nia_public_consent": false,
+      "order_verified": true,
+      "confirmed_leak": false,
+      "ives_took_list": false,
+      "kerr_route_delivered": true,
+      "kerr_route_trace": false,
+      "kerr_route_visit": true,
+      "kerr_method_rig": true,
+      "kerr_rig_returned": true,
+      "witness_consent": false,
+      "chapel_method_face": true,
+      "chapel_shift_owed": true
+    },
+    "journal": [
+      "wall-account",
+      "kerr-collection-promise",
+      "kerr-itinerary",
+      "kerr-collection-outcome"
+    ],
+    "creds": 375,
+    "strain": 4
+  }
+}

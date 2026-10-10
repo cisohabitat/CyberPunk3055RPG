@@ -42,7 +42,7 @@ for (const id of ["act2_spire_brief", "act2_spire_sources", "act2_spire_recovery
 for (const id of ["act2_spire_prep", "act2_spire_methods"]) ENCOUNTERS[id] = SPIRE_TERMINAL;
 for (const id of ["act3_spire_visit", "act3_spire_reply"]) ENCOUNTERS[id] = SPIRE_PAYROLL;
 const CANAL_DISPATCH: Illustration = { src: "/art/canal-dispatch.jpg", small: "/art/canal-dispatch-small.jpg", caption: "Canal depot · the planning alcove", description: "A neutral transit diagram rests beneath a lamp in a sheltered canal alcove; a closed canvas case waits on a shelf. No selected route or completed handover is depicted." };
-for (const id of ["act2_route_map", "act2_route_exit", "act2_route_review", "act2_route_crossing", "act2_route_recovery"]) ENCOUNTERS[id] = CANAL_DISPATCH;
+for (const id of ["act2_route_map", "act2_route_exit", "act2_route_review", "act2_route_crossing", "act2_route_recovery", "act2_route_handling"]) ENCOUNTERS[id] = CANAL_DISPATCH;
 const CLINIC_CONVERSATION: Illustration = { src: "/art/clinic-conversation.jpg", small: "/art/clinic-conversation-small.jpg", caption: "Ward Four · the conversation room", description: "Two empty chairs face a modest lamp-lit clinic table with an unmarked envelope and ceramic cup; a closed reply drawer waits beside the rainy window." };
 for (const id of ["act2_response_invitation", "act2_response_agenda", "act3_response_visit"]) ENCOUNTERS[id] = CLINIC_CONVERSATION;
 export function sceneIllustration(sceneId: string): Illustration | undefined { return ENCOUNTERS[sceneId]; }

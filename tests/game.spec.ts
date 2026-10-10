@@ -7,6 +7,37 @@ import { exportRun } from "../lib/vault";
 function fixture(sceneId = "stall", extra: Partial<GameState> = {}): GameState {
   return { ...createCharacter({ handle: "Rex", givenName: "Ada", origin: "spire", bonus: { chrome: 0, nerve: 0, face: 2, ghost: 0 }, complication: "optic" }), sceneId, ...extra };
 }
+test("prepared methods keep a service fee and recorded bargain die through reload", async ({ page }) => {
+  await page.addInitScript(() => { Math.random = () => 0.75; });
+  await openRun(page, fixture("route", { creds: 15, strain: 0 }));
+  for (const id of ["prepare-chapel-method", "offer-chapel-service", "bargain-service-entry"]) await page.getByTestId(`choice-${id}`).click();
+  await page.getByTestId("roll-button").click(); await page.reload(); await page.getByTestId("continue-run").click();
+  await page.getByTestId("continue-check").click();
+  const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(run.creds).toBe(0); expect(run.flags.chapel_method_face).toBe(true); expect(run.flags.watched).toBe(true); expect(run.pendingCheck).toBeUndefined();
+  expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations).toEqual([]);
+});
+test("borrowed rig deposit survives reload and refunds only on recorded handover", async ({ page }) => {
+  await openRun(page, fixture("act2_route_crossing", { creds: 20, strain: 0, flags: { kerr_route_started: true, kerr_exit_gap: true } }));
+  for (const id of ["compare-depot-handling", "borrow-depot-rig"]) await page.getByTestId(`choice-${id}`).click();
+  await page.reload(); await page.getByTestId("continue-run").click();
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!).creds)).toBe(0);
+  await page.getByTestId("choice-record-kerr-receipt").click();
+  const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(run.creds).toBe(20); expect(run.strain).toBe(2); expect(run.flags.kerr_rig_returned).toBe(true);
+});
+test("Nia's volunteer bargain fits large text without art and keeps recording optional", async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 844 });
+  await page.addInitScript(() => localStorage.setItem("saint-shard-preferences", JSON.stringify({ textStep: 2, contrast: "high", artwork: "none", reading: "all", motion: "reduce" })));
+  await openRun(page, fixture("act2_witness_support", { creds: 0, strain: 0, flags: { witness_briefed: true, witness_escort: true } }));
+  await expect(page.getByTestId("goal")).toBeInViewport();
+  for (const id of ["promise-volunteer-shift", "defer-account", "work-witness-shift"]) await page.getByTestId(`choice-${id}`).click();
+  await page.reload(); await page.getByTestId("continue-run").click();
+  const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(run.strain).toBe(1); expect(run.flags.witness_consent).toBeUndefined();
+  await expect(page.getByTestId("choice-work-witness-shift")).toHaveCount(0);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+});
 test("cross-examination preserves attributed answers through a reload", async ({ page }) => {
   await openRun(page, fixture("memory_reconstruction"));
   for (const id of ["question-mara", "ask-evacuation-assurance", "record-assurance-limit"]) await page.getByTestId(`choice-${id}`).click();

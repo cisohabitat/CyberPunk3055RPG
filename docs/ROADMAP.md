@@ -51,6 +51,8 @@ Cycle 1 implementation and internal verification are recorded in [NARRATIVE_PACI
 
 ## Phase 2 — Build identity and encounter variety
 
+Cycle 2 implementation and the cycle 3–4 execution specifications are recorded in [ENCOUNTER_VARIETY.md](ENCOUNTER_VARIETY.md). The following cycles remain ordered; fresh-player recognition and independent acceptance are pending.
+
 **Problem:** choosing a different stat too often leads to essentially the same interaction. Replay should change the plan, risk and observed response.
 
 **Cycle 2: specialization in existing missions.**

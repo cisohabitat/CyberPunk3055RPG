@@ -168,3 +168,8 @@ Phase 1 implementation/internal verification is separate from its pending indepe
 
 
 The first complete browser gate caught a default-reading opening regression: the selected motive disappeared from the first paragraph after reload. A brief reminder restores it for all three motives without the longer recap. The stallholder assertion now checks both paying rent and forgetting the apology in the edited anecdote, retaining the human-cost check instead of an obsolete sentence. The final paired cut is 13.2%. All 33 focused browser cases and both additional complete default-reading campaigns pass after the correction. Complete exact-revision CI is required again before delivery.
+
+
+## Roadmap phase 2, cycle 2 — encounter methods
+
+Prepared methods change Chapel machinery/work obligations, Nia’s transfer support and Kerr’s physical handling/work bargain. Costs and callbacks remain distinct from evidence, care and consent. See [ENCOUNTER_VARIETY.md](ENCOUNTER_VARIETY.md) for implementation, verification and the next two ordered cycles. Exact-revision CI and public release checks follow the push.

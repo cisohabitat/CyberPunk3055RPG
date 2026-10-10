@@ -249,3 +249,10 @@ See [the phased execution and following production work](docs/CHARACTER_ARCS.md)
 Briefings and return visits are shorter, with existing visit/completion flags preserving unfinished work and once-only outcomes. A brief personal-motive reminder remains visible in the opening’s first paragraph after reload. Mara's bench interview is explicitly a replay embedded in the hour; the voluntary Week reply remains a separate current conversation. Thirty-three scenes receive prose edits, while canonical choice effects, gates, destinations, costs and saved outcomes stay the same. Two interview buttons now say Replay. Existing suitable art accompanies the scenes, with recorded-speaker/return rationales updated; all six fixed voice quotations retain their matching audio.
 
 See [the detailed phase execution and editorial evidence](docs/NARRATIVE_PACING.md) and [six-phase roadmap](docs/ROADMAP.md). The graph remains 171 scenes / 477 choices with 75 full-campaign replay fixtures. Preserve version 2 and `saint-shard-3055-v1`. Internal implementation does not complete the independent editor gate or raise the provisional 7.8 grade.
+
+
+### Encounter variety — roadmap phase 2, cycle 2
+
+Chapel entry now offers machinery isolation or a service bargain with a paid tool reservation, a watched work docket and a once-only return shift. Nia can travel with an arranged volunteer against the runner’s own work, a prepared harness against physical strain, or a prepared scanner using Edda’s earned baffle. Her later reply remembers the transport; recording still needs separate permission. Kerr’s collection offers a refundable carrying-rig deposit or an accepted depot-work bargain; observed handover refunds the rig, while earlier registration and betrayal remain. Four scenes have explicit suitable reused-art decisions.
+
+See [the detailed Phase 2 cycle plan and internal evidence](docs/ENCOUNTER_VARIETY.md). Preserve version 2, `saint-shard-3055-v1`, 1d10, caps, recorded dice and original routes. Internal verification does not complete independent acceptance or change the provisional 7.8 grade.
