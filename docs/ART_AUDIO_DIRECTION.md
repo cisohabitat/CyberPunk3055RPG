@@ -49,3 +49,26 @@ Twelve generated masters retain the existing cast, with five expressions and sev
 All 347 unit/replay cases, TypeScript and the production build passed. Thirty focused Chromium/phone/WebKit checks cover conduct selection, all four finale plates, title navigation, current-response refusals, text-only omission and missing-art recovery. Six primary full UI campaigns contain 474 scene visits, cover all three origins and the four original finales, and include two natural-dice runs. Images decode and gameplay resources/history remain intact. Four synthetic initial-load probes remain within 2 MiB with visible goals, no overflow and no layout shift; these are automation-host samples, not physical-device or percentile evidence.
 
 Exact-SHA CI and public production verification follow the push. Independent artistic/rights review remains pending, including the inherited reference-provenance caveat; no regrade is claimed.
+
+
+Cycle 6 release: `28b31a7f24d72876a014ac19f26ea29d310cd98d`, GitHub run `38065465146` passed 347 unit/replay and 572 browser checks. Production `dpl_AmAyBnaF9ADVwFxx4RkA1tUeey1y` is READY and the public alias resolves to that commit. Twelve public WebKit finale checks preserve resources/history across 390px, 1440px and 320px text-only/high-contrast profiles. The first deployment timed out waiting for CI; the same SHA was recreated after success, without bypassing the gate.
+
+
+## Cycle 7 implementation and mix evidence
+
+`theme-reading`, `theme-quiet` and `theme-pressure` are sparse 64-second mono compositions. Street, Chapel/clinic, Spire, canal and Ward Nine have distinct 64-second room textures. All eight files are 22050 Hz / PCM16, 2,822,444 bytes each; maximum measured seam jump is 0.001435 of full scale. Their second halves differ from the first. Original four 32-second stereo arrangements, cues and six earlier voice files remain unchanged. Music and ambience crossfade separately, late loads follow the latest scene plan, and a 24 MiB LRU decoded cache limits retained buffers. Active sources and in-flight decodes are additional memory; physical-device acceptance remains open.
+
+Eight new 24 kHz stock synthetic clips use `am_michael` for Quill, `af_sarah` for Mara, `am_adam` for Kerr, `af_heart` for Lumen, `af_bella` for Sera and `am_eric` for Ives. Each reads a fixed visible quotation. The four finales gain one short in-character response, preserving their original identity/actions and all costs/history. This is candidate coverage, not a casting or performer acceptance decision.
+
+Default gain staging: music bus 60% × bed gain 0.5, ambience bus 50% × bed gain 0.35, voice bus 70%. During a selected line, music and ambience duck to 40% of their chosen bus levels. A conservative RMS comparison against the quietest delivered voice gives approximately 19.4 dB separation from the loudest combined bed levels. This is an internal measurement, not an intelligibility guarantee or a reviewer-approved loudness target. `qa/media/phase4-audio-preview.mp3` presents eight seconds of each new score, then all eight new quotations at the default ducked mix; its exact sequence/gains are in `phase4-audition.json`. Individual full loops and clips remain available in the offline audition.
+
+Required independent listening: pronunciation and emotional intent; headphones/speaker/phone intelligibility and masking; long reading fatigue over two or more loop repetitions; crossfades and Sound/dialog/voice interruption; one whole chapter and finale. Record actual reviewer findings and revised mix targets before declaring audiovisual acceptance. Stock-style licensing records and supplied-art provenance still require a distribution-rights audit.
+
+
+## Cycle 7 internal verification and handoff
+
+All 349 unit/replay checks, TypeScript and the final production build pass. Thirty-six focused Chromium/phone/WebKit checks exercise selected quotations, bus ducking, separate volume, dialog/off/scene cancellation, saved-window/die persistence, missing music/voice recovery, and two rapid-navigation loading races. Nine final-build full UI campaigns contain 710 visits, including the four finales, Mara’s revised public refusal, Kerr’s acknowledged private-term breach, two natural-dice origins and a silent run. The silent run exactly matches the corresponding sounding run’s final save and makes zero audio requests. These are internal directed/adaptive automation, not fresh human playtests or proof of every possible route.
+
+The offline audition and updated media pack retain 30 PNG masters and 22 PCM masters, 62 delivered JPEGs, 42 delivered WAVs, synthesis sources, voice license copies, provenance and direction briefs. Check initial-load probes, exact-SHA CI and public deployment evidence before handback. Six independent commercial-production gates remain pending.
+
+Next phase: Phase 5 fresh-player observation, accessibility and named physical-device revisions. Use the prepared character playtest sessions and capture real findings; do not substitute these automated campaigns for recruited/consented sessions. Art direction, full-loop fatigue/intelligibility, performer acceptance and distribution-rights reviews still require named independent reviewers. No participants were contacted, no paid commissions were placed and no approval or 9+ regrade is claimed.

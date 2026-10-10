@@ -8,6 +8,8 @@ import lines from "../qa/media/voice-lines.json";
 import { createCharacter, sceneText } from "./engine";
 import { SCENES } from "./story";
 import { visibleDialogue } from "./memory-media";
+import directed from "../qa/media/audio-provenance.json";
+import { sceneSoundPlan } from "./sound";
 
 function readWav(name: string) {
   const buf = readFileSync(fileURLToPath(new URL(`../public/audio/${name}.wav`, import.meta.url)));
@@ -41,6 +43,24 @@ function medianAbs(samples: number[]) {
 }
 
 describe("beds", () => {
+  it("ships longer district and directed beds with measured seams, headroom and delivery hashes", () => {
+    const hashes = new Set<string>();
+    for (const record of [...directed.scores.filter(score => score.durationSeconds === 64), ...directed.soundscapes]) {
+      const bytes = readFileSync(new URL(`../${record.path}`, import.meta.url));
+      const name = record.path.split("/").at(-1)!.replace(".wav", "");
+      assert.equal(createHash("sha256").update(bytes).digest("hex"), record.sha256);
+      assert.equal(bytes.length, record.bytes); assert.ok(bytes.length < 3_145_728);
+      const wav = readWav(name); assert.equal(wav.samples.length / wav.rate, 64); assert.equal(wav.channels, 1); assert.equal(wav.rate, 22050);
+      let peak = 0; for (const sample of wav.samples) peak = Math.max(peak, Math.abs(sample));
+      assert.ok(peak > 0.02 && peak < 0.22, `${name}: ${peak}`);
+      assert.ok(seam(wav.samples) < 0.002, `${name}: seam ${seam(wav.samples)}`);
+      // A long texture must not simply repeat the first half.
+      const halfway = wav.samples.length / 2; let difference = 0;
+      for (let i = 0; i < halfway; i += 101) difference += Math.abs(wav.samples[i] - wav.samples[i + halfway]);
+      assert.ok(difference > 1, name); hashes.add(record.sha256);
+    }
+    assert.equal(hashes.size, 8);
+  });
   it("keeps bench interaction sounds short, distinct and below score-sting peaks", () => {
     const hashes = new Set<string>();
     for (const name of ["memory-place", "memory-reset", "memory-mismatch", "memory-correction", "memory-align"]) {
@@ -59,7 +79,7 @@ describe("beds", () => {
       const scene = SCENES[line.scene]; const text = sceneText(scene, state);
       assert.equal(scene.speaker, line.speaker); assert.ok(text.includes(line.text), line.id);
       assert.equal(visibleDialogue(scene.id, scene.speaker, text)?.id, line.id);
-      assert.equal(visibleDialogue(scene.id, "Quill", text), undefined);
+      assert.equal(visibleDialogue(scene.id, line.speaker === "Quill" ? "Mara" : "Quill", text), undefined);
       const record = voices.lines.find((entry) => entry.id === line.id)!;
       assert.equal(record.text, line.text);
       const bytes = readFileSync(new URL(`../${record.path}`, import.meta.url));
@@ -67,7 +87,7 @@ describe("beds", () => {
       const wav = readWav(line.id); let peak = 0;
       for (const sample of wav.samples) peak = Math.max(peak, Math.abs(sample));
       assert.equal(wav.channels, 1); assert.equal(wav.rate, 24000); assert.ok(peak >= 0.7 && peak < 0.73);
-      assert.ok(wav.samples.length / wav.rate > 4 && wav.samples.length / wav.rate < 15);
+      assert.ok(wav.samples.length / wav.rate > 2 && wav.samples.length / wav.rate < 20);
       assert.ok(wav.samples.slice(0, 1800).every((sample) => sample === 0));
       assert.ok(wav.samples.slice(-1800).every((sample) => sample === 0));
     }

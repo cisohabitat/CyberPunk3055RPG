@@ -192,3 +192,8 @@ Return work, access history, all supported transfer methods, depot costs and cli
 ## Roadmap phase 4, cycle 6 — directed art
 
 Five conduct-selected cast expressions and seven scene plates give the opening offer, recorded revelation, Chapel landing and original finales deliberate compositions. Explicit scene and conditional-portrait catalogs retain neutral unresolved treatment and reject mismatched speakers. Missing images retain readable descriptions/labels. Masters, delivery hashes, credits, audition and the media pack accompany the change. See [ART_AUDIO_DIRECTION.md](ART_AUDIO_DIRECTION.md). Release requires exact-revision CI, full UI campaigns, budget probing and live checks; external artistic and rights acceptance remain open.
+
+
+## Roadmap phase 4, cycle 7 — directed audio candidates
+
+Three 64-second scene beds and five district textures accompany the stable campaign. Actual saved allowances drive Chapel pressure; quiet conversations and recorded testimony have sparse arrangements. Separate crossfades, deduplicated loading and a 24 MiB decoded cache retain optional audio and cancel obsolete starts. Eight new fixed stock synthetic quotations join the six preserved clips, including opening, revelation, boundaries and all four finales. Source/PCM records, a measured default-mix audition and character briefs accompany the media pack. Independent listening, casting, art and rights acceptance remain pending. Phase 5 fresh-player/accessibility/device work follows this phase handoff.

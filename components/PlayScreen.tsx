@@ -12,7 +12,7 @@ import { DISTRICT_ART, placeArt, sceneIllustration } from "@/lib/art";
 import { SceneIllustration } from "./SceneIllustration";
 import { ORIGINS, STRAIN_MAX, STAT_INFO } from "@/lib/character";
 import { commitChoice, effectPreview, checkResourceCosts, getScene, presentChoices, previewCheck, runDelta, sceneText, type VisibleChoice } from "@/lib/engine";
-import { locationCue, playCue, sceneMood, setBed } from "@/lib/sound";
+import { locationCue, playCue, sceneSoundPlan, setBed } from "@/lib/sound";
 import { rememberEnding } from "@/lib/storage";
 import type { Preferences } from "@/lib/preferences";
 import { ObjectiveBrief } from "./ObjectiveBrief";
@@ -66,7 +66,7 @@ export function PlayScreen({
   const [sheetOpen, setSheetOpen] = useState(false);
   const [confirmAbandon, setConfirmAbandon] = useState(false);
   const sound = preferences.sound;
-  const mood = sceneMood(scene.location, actName(state));
+  const { mood, district } = sceneSoundPlan(state, scene.location, actName(state));
   const [fault, setFault] = useState("");
   const [delta, setDelta] = useState<string[]>([]);
   const [flash, setFlash] = useState(false);
@@ -89,11 +89,11 @@ export function PlayScreen({
   }, [preferences.motion]);
 
   useEffect(() => {
-    setBed(sound, mood);
+    setBed(sound, mood, district);
     const previous = priorSound.current;
     if (sound && (!previous?.on || previous.location !== scene.location || Boolean(scene.ending) !== previous.ending)) playCue(locationCue(scene.location, Boolean(scene.ending)));
     priorSound.current = { location: scene.location, on: sound, ending: Boolean(scene.ending) };
-  }, [sound, mood, scene.id, scene.location, scene.ending]);
+  }, [sound, mood, district, scene.id, scene.location, scene.ending]);
 
   useEffect(() => () => { setBed(false); }, []);
 

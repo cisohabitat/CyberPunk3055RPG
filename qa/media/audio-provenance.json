@@ -1,7 +1,8 @@
 {
   "source": [
     "scripts/score.mjs",
-    "scripts/generate-audio.mjs"
+    "scripts/generate-audio.mjs",
+    "scripts/scene-score.mjs"
   ],
   "method": "Original authored digital synthesis for scores and cues. No third-party samples, AI music service, actor recordings or trained voice models in this synthesis pipeline. Selected synthetic dialogue is documented separately in voice-provenance.json.",
   "tempoBpm": 60,
@@ -13,7 +14,7 @@
     71,
     69
   ],
-  "reviewStatus": "Automated signal and runtime checks; independent headphone, speaker and physical-device listening acceptance remains pending.",
+  "reviewStatus": "Automated signal/loop/runtime checks. New 64-second mono reading, quiet and saved-window pressure beds and five 64-second district textures. Independent headphones, speakers, physical-device and fatigue acceptance pending.",
   "scores": [
     {
       "path": "public/audio/theme.wav",
@@ -82,6 +83,63 @@
         0.0021668141727958007,
         0.0030823694570757164
       ]
+    },
+    {
+      "path": "public/audio/theme-reading.wav",
+      "sha256": "d2bd286b0cbe07c9e19fdc8fece829ba357b575e43d87b6f369e9d82f6806f0a",
+      "bytes": 2822444,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 64.0,
+      "peak": 0.13876766258735923,
+      "rms": 0.03353164942373136,
+      "seamJump": [
+        0.001434369945371869
+      ],
+      "title": "The Space Around an Answer",
+      "arrangement": "Recorded testimony: sparse glass and low suspended harmony, with long spaces for reading.",
+      "sourceFile": "/workspace/generated_audio/theme-reading.wav",
+      "sourceSha256": "d2bd286b0cbe07c9e19fdc8fece829ba357b575e43d87b6f369e9d82f6806f0a",
+      "source": "scripts/scene-score.mjs"
+    },
+    {
+      "path": "public/audio/theme-quiet.wav",
+      "sha256": "e5a9abd81a987e04156ecc9cee14dff9e28036a2d700d1f8fa9e55bfbb2012e2",
+      "bytes": 2822444,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 64.0,
+      "peak": 0.13861507003997925,
+      "rms": 0.033160705662172045,
+      "seamJump": [
+        3.051850947599719e-05
+      ],
+      "title": "A Cup Left Warm",
+      "arrangement": "Quiet conversations and the rain finale: warm low tones and an incomplete memory motif.",
+      "sourceFile": "/workspace/generated_audio/theme-quiet.wav",
+      "sourceSha256": "e5a9abd81a987e04156ecc9cee14dff9e28036a2d700d1f8fa9e55bfbb2012e2",
+      "source": "scripts/scene-score.mjs"
+    },
+    {
+      "path": "public/audio/theme-pressure.wav",
+      "sha256": "e740e39fe4507a6404931454de09aee696c37e6c678f15f6e2871fe3d775d6f6",
+      "bytes": 2822444,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 64.0,
+      "peak": 0.17120883816034424,
+      "rms": 0.03615906538578009,
+      "seamJump": [
+        0.001434369945371869
+      ],
+      "title": "Three Opportunities",
+      "arrangement": "An active local Chapel window: restrained low pulse; no real-time deadline is imposed.",
+      "sourceFile": "/workspace/generated_audio/theme-pressure.wav",
+      "sourceSha256": "e740e39fe4507a6404931454de09aee696c37e6c678f15f6e2871fe3d775d6f6",
+      "source": "scripts/scene-score.mjs"
     }
   ],
   "interactionCues": [
@@ -134,6 +192,103 @@
       "bytes": 30032,
       "sha256": "af92ab5ff3072808208a72d7539767fbd738091c35ae9fd2420050ce3ab5339d",
       "peak": 0.09579760124515518
+    }
+  ],
+  "soundscapes": [
+    {
+      "path": "public/audio/ambience-street.wav",
+      "sha256": "4f04e95f563d7be6909b88b75411387cd18e6ec33f78c55aa99326a6eed889b1",
+      "bytes": 2822444,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 64.0,
+      "peak": 0.05954161198767052,
+      "rms": 0.008077813827036654,
+      "seamJump": [
+        0.00018311105685598315
+      ],
+      "title": "Beneath the Awning",
+      "arrangement": "Sheltered drops, distant wheel resonance and a low ventilation tone.",
+      "sourceFile": "/workspace/generated_audio/ambience-street.wav",
+      "sourceSha256": "4f04e95f563d7be6909b88b75411387cd18e6ec33f78c55aa99326a6eed889b1",
+      "source": "scripts/scene-score.mjs"
+    },
+    {
+      "path": "public/audio/ambience-chapel.wav",
+      "sha256": "1f88dda25713b737a1356535246f29fde734282c56331b35eca4059743dc2f5f",
+      "bytes": 2822444,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 64.0,
+      "peak": 0.047944578386791586,
+      "rms": 0.007066094348553017,
+      "seamJump": [
+        0.00018311105685598315
+      ],
+      "title": "The Reader Room",
+      "arrangement": "Ventilation, intermittent glass resonance and distant pipe drops.",
+      "sourceFile": "/workspace/generated_audio/ambience-chapel.wav",
+      "sourceSha256": "1f88dda25713b737a1356535246f29fde734282c56331b35eca4059743dc2f5f",
+      "source": "scripts/scene-score.mjs"
+    },
+    {
+      "path": "public/audio/ambience-spire.wav",
+      "sha256": "a61df4ea032a6646a67d2441b88e5ce2979e8a62d09273690557f9e4a87f774b",
+      "bytes": 2822444,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 64.0,
+      "peak": 0.04654072695089572,
+      "rms": 0.005582306355249618,
+      "seamJump": [
+        0.00024414807580797754
+      ],
+      "title": "Above the Service Counter",
+      "arrangement": "A low maintenance motor and occasional soft relay clicks, without success indicators.",
+      "sourceFile": "/workspace/generated_audio/ambience-spire.wav",
+      "sourceSha256": "a61df4ea032a6646a67d2441b88e5ce2979e8a62d09273690557f9e4a87f774b",
+      "source": "scripts/scene-score.mjs"
+    },
+    {
+      "path": "public/audio/ambience-canal.wav",
+      "sha256": "9a687190ece6189762da93a2c3e0970ce6792f32b722dd3faffa6171f113735f",
+      "bytes": 2822444,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 64.0,
+      "peak": 0.059602649006622516,
+      "rms": 0.008002600692219261,
+      "seamJump": [
+        0.00012207403790398877
+      ],
+      "title": "The Dry Dispatch",
+      "arrangement": "A slow pump, hollow metallic drops and restrained water resonance.",
+      "sourceFile": "/workspace/generated_audio/ambience-canal.wav",
+      "sourceSha256": "9a687190ece6189762da93a2c3e0970ce6792f32b722dd3faffa6171f113735f",
+      "source": "scripts/scene-score.mjs"
+    },
+    {
+      "path": "public/audio/ambience-ward.wav",
+      "sha256": "98fd5bc52976a3f75b179b96f9fd30daecdd5ad3a299b1028ca33c8ee650a83e",
+      "bytes": 2822444,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 64.0,
+      "peak": 0.0478225043488876,
+      "rms": 0.007120842705211224,
+      "seamJump": [
+        0.00012207403790398877
+      ],
+      "title": "Under the Memorial Stair",
+      "arrangement": "Rain runoff and sheltered concrete drips, with no crowd or invented witness voices.",
+      "sourceFile": "/workspace/generated_audio/ambience-ward.wav",
+      "sourceSha256": "98fd5bc52976a3f75b179b96f9fd30daecdd5ad3a299b1028ca33c8ee650a83e",
+      "source": "scripts/scene-score.mjs"
     }
   ]
 }

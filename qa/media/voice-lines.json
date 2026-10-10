@@ -46,5 +46,69 @@
     "voice": "af_heart",
     "speed": 0.93,
     "text": "Because somebody should know which cup they take their tea in. Even when the city has made a case file out of them."
+  },
+  {
+    "id": "voice-quill-offer",
+    "scene": "stall",
+    "speaker": "Quill",
+    "voice": "am_michael",
+    "speed": 0.96,
+    "text": "Mara Voss, Helion logistics. Glass Chapel edits her memory at dawn. Bring me the original hour, intact."
+  },
+  {
+    "id": "voice-mara-revelation",
+    "scene": "memo",
+    "speaker": "Mara",
+    "voice": "af_sarah",
+    "speed": 0.98,
+    "text": "I signed the coolant dump. Ward Nine. Three hundred on the night shift. I want that sentence to stay in my mouth."
+  },
+  {
+    "id": "voice-kerr-boundary",
+    "scene": "act3_kerr_collection_response",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.98,
+    "text": "You can't unwrite the depot. You can stop asking me to pretend you kept the private part. Tell me what you'll put beside that promise."
+  },
+  {
+    "id": "voice-lumen-boundary",
+    "scene": "act3_lumen_boundary",
+    "speaker": "Sister Lumen",
+    "voice": "af_heart",
+    "speed": 0.93,
+    "text": "You may leave a private message at the desk. I decide whether to answer. That's all the permission I'm giving."
+  },
+  {
+    "id": "voice-sera-names",
+    "scene": "ending_names",
+    "speaker": "Sera",
+    "voice": "af_bella",
+    "speed": 0.95,
+    "text": "The wall has room for a voice. It has never had room for an excuse."
+  },
+  {
+    "id": "voice-sera-quiet",
+    "scene": "ending_quiet",
+    "speaker": "Sera",
+    "voice": "af_bella",
+    "speed": 0.95,
+    "text": "I have the pencil. The rain can wait with me."
+  },
+  {
+    "id": "voice-sera-witness",
+    "scene": "ending_witness",
+    "speaker": "Sera",
+    "voice": "af_bella",
+    "speed": 0.95,
+    "text": "Leave that beside what you know. Don't make it a clean story for me."
+  },
+  {
+    "id": "voice-ives-listed",
+    "scene": "ending_listed",
+    "speaker": "Ives",
+    "voice": "am_eric",
+    "speed": 0.98,
+    "text": "Your name is still on file. That is what the tower will keep."
   }
 ]

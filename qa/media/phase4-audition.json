@@ -1,0 +1,82 @@
+{
+  "disclosure": "Internal default-mix preview: music 60% at bed gain .5, ambience 50% at bed gain .35; while selected dialogue plays, both bed buses duck to 40% and voice uses 70%. Segment starts/ends fade for audition. This is not a listening or intelligibility acceptance record.",
+  "segments": [
+    {
+      "id": "bed-reading",
+      "music": "theme-reading",
+      "ambience": "chapel",
+      "voice": null,
+      "seconds": 8
+    },
+    {
+      "id": "bed-quiet",
+      "music": "theme-quiet",
+      "ambience": "ward",
+      "voice": null,
+      "seconds": 8
+    },
+    {
+      "id": "bed-pressure",
+      "music": "theme-pressure",
+      "ambience": "chapel",
+      "voice": null,
+      "seconds": 8
+    },
+    {
+      "id": "voice-quill-offer",
+      "music": "theme",
+      "ambience": "street",
+      "voice": "voice-quill-offer",
+      "seconds": 8.758666666666667
+    },
+    {
+      "id": "voice-mara-revelation",
+      "music": "theme-reading",
+      "ambience": "chapel",
+      "voice": "voice-mara-revelation",
+      "seconds": 7.592625
+    },
+    {
+      "id": "voice-kerr-boundary",
+      "music": "theme-ward",
+      "ambience": "ward",
+      "voice": "voice-kerr-boundary",
+      "seconds": 7.996666666666667
+    },
+    {
+      "id": "voice-lumen-boundary",
+      "music": "theme-quiet",
+      "ambience": "chapel",
+      "voice": "voice-lumen-boundary",
+      "seconds": 7.1033333333333335
+    },
+    {
+      "id": "voice-sera-names",
+      "music": "theme-ward",
+      "ambience": "ward",
+      "voice": "voice-sera-names",
+      "seconds": 4.998666666666667
+    },
+    {
+      "id": "voice-sera-quiet",
+      "music": "theme-quiet",
+      "ambience": "ward",
+      "voice": "voice-sera-quiet",
+      "seconds": 3.603291666666667
+    },
+    {
+      "id": "voice-sera-witness",
+      "music": "theme-ward",
+      "ambience": "ward",
+      "voice": "voice-sera-witness",
+      "seconds": 4.691291666666666
+    },
+    {
+      "id": "voice-ives-listed",
+      "music": "theme-ward",
+      "ambience": "ward",
+      "voice": "voice-ives-listed",
+      "seconds": 3.7179583333333333
+    }
+  ]
+}

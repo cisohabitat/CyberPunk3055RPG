@@ -1262,6 +1262,90 @@ async function observeVoices(page: Page) {
 }
 const voiceReview = (page: Page) => page.evaluate(() => (window as unknown as { voiceReview: { decoded: number; started: number; stopped: number; gains: number[] } }).voiceReview);
 
+async function observeBeds(page: Page) {
+  await page.addInitScript(() => {
+    localStorage.setItem("saint-shard-preferences", JSON.stringify({ sound: true, reading: "all", motion: "reduce" }));
+    const review = window as unknown as { bedReview: { decoded: string[]; started: string[] } };
+    review.bedReview = { decoded: [], started: [] };
+    const dataNames = new WeakMap<ArrayBuffer, string>(); const bufferNames = new WeakMap<AudioBuffer, string>();
+    const arrayBuffer = Response.prototype.arrayBuffer;
+    Response.prototype.arrayBuffer = function() { const name = this.url.split("/").at(-1)!; return arrayBuffer.call(this).then(data => { dataNames.set(data, name); return data; }); };
+    const decode = AudioContext.prototype.decodeAudioData;
+    AudioContext.prototype.decodeAudioData = function(data: ArrayBuffer) { const name = dataNames.get(data)!; return decode.call(this, data).then(buffer => { bufferNames.set(buffer, name); review.bedReview.decoded.push(name); return buffer; }); };
+    const start = AudioBufferSourceNode.prototype.start;
+    AudioBufferSourceNode.prototype.start = function(...args: Parameters<typeof start>) { if (this.loop && this.buffer) review.bedReview.started.push(bufferNames.get(this.buffer)!); return start.apply(this, args); };
+  });
+}
+const bedReview = (page: Page) => page.evaluate(() => (window as unknown as { bedReview: { decoded: string[]; started: string[] } }).bedReview);
+
+test("directed audio follows the saved local window without spending or rerolling for sound", async ({ page }) => {
+  await observeBeds(page); await page.addInitScript(() => { Math.random = () => .75; });
+  await openRun(page, fixture("chapel_window_plan", { flags: { chapel_window_started: true, chapel_window_2: true, chapel_window_scouted: true } }));
+  await expect.poll(async () => (await bedReview(page)).started).toContain("theme-pressure.wav");
+  await expect.poll(async () => (await bedReview(page)).started).toContain("ambience-chapel.wav");
+  await page.getByTestId("choice-window-use-gap").click(); await page.getByTestId("roll-button").click();
+  const recorded = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(recorded.pendingCheck.roll).toBe(8); expect(recorded.flags.chapel_window_2).toBe(true);
+  await page.reload(); await page.getByTestId("continue-run").click(); await page.getByTestId("continue-check").click();
+  await expect.poll(async () => (await bedReview(page)).started).toContain("theme-pressure.wav");
+  await page.getByTestId("choice-window-quiet-exit").click();
+  await expect.poll(async () => (await bedReview(page)).started).toContain("theme-chapel.wav");
+  const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(run.flags.chapel_window_0).toBe(true); expect(run.flags.chapel_window_done).toBe(true); expect(run.pendingCheck).toBeUndefined();
+  await page.getByRole("button", { name: "Settings", exact: true }).click(); await page.getByLabel("Sound enabled", { exact: true }).uncheck(); await page.getByRole("button", { name: "Done", exact: true }).click();
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!))).toEqual(run);
+});
+
+test("directed audio cancels an obsolete pending bed without delaying the new district", async ({ page }) => {
+  await observeBeds(page); let release!: () => void; const gate = new Promise<void>(resolve => { release = resolve; });
+  await page.route("**/audio/theme-pressure.wav", async route => { const response = await route.fetch(); await gate; await route.fulfill({ response }); });
+  await openRun(page, fixture("chapel_window_plan", { flags: { chapel_window_started: true, chapel_window_2: true } }));
+  await page.getByTestId("choice-pause-chapel-window").click();
+  await expect.poll(async () => (await bedReview(page)).started).toContain("theme.wav");
+  release(); await expect.poll(async () => (await bedReview(page)).decoded).toContain("theme-pressure.wav");
+  expect((await bedReview(page)).started).not.toContain("theme-pressure.wav");
+  const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!)); expect(run.flags.chapel_window_2).toBe(true);
+});
+
+test("directed audio returning to an active bed cancels a late pressure start", async ({ page }) => {
+  await observeBeds(page); let release!: () => void; const gate = new Promise<void>(resolve => { release = resolve; });
+  await page.route("**/audio/theme-pressure.wav", async route => { const response = await route.fetch(); await gate; await route.fulfill({ response }); });
+  await openRun(page, fixture("route", { flags: { chapel_window_started: true, chapel_window_2: true } }));
+  await expect.poll(async () => (await bedReview(page)).started.length).toBe(2);
+  const initial = (await bedReview(page)).started;
+  await page.getByTestId("choice-begin-chapel-window").click();
+  await page.getByTestId("choice-pause-chapel-window").click();
+  release(); await expect.poll(async () => (await bedReview(page)).decoded).toContain("theme-pressure.wav");
+  expect((await bedReview(page)).started).toEqual(initial);
+  expect((await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!))).flags.chapel_window_2).toBe(true);
+});
+
+test("directed audio keeps available ambience and readable dialogue when music and voice fail", async ({ page }) => {
+  await observeBeds(page); await page.route("**/audio/theme-reading.wav", route => route.abort()); await page.route("**/audio/voice-mara-revelation.wav", route => route.abort());
+  await openRun(page, fixture("memo"));
+  await expect.poll(async () => (await bedReview(page)).started).toContain("ambience-chapel.wav");
+  await page.getByRole("button", { name: "Listen to Mara" }).click(); await expect(page.getByTestId("voice-line")).toContainText("Voice unavailable");
+  await expect(page.getByTestId("scene-text")).toContainText("I signed the coolant dump");
+  await page.getByTestId("choice-heard").click();
+  expect((await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!))).flags.heard_memo).toBe(true);
+});
+
+test("directed dialogue candidates require Listen at the offer, revelation, boundaries and four finales", async ({ page }) => {
+  await observeVoices(page);
+  await page.addInitScript(() => localStorage.setItem("saint-shard-preferences", JSON.stringify({ sound: true, reading: "all", motion: "reduce" })));
+  const requests: string[] = []; page.on("request", request => { if (request.url().includes("/audio/voice-")) requests.push(request.url()); });
+  const scenes = [["stall", "Quill"], ["memo", "Mara"], ["act3_kerr_collection_response", "Kerr"], ["act3_lumen_boundary", "Lumen"], ["ending_names", "Sera"], ["ending_quiet", "Sera"], ["ending_witness", "Sera"], ["ending_listed", "Ives"]];
+  for (const [index, [scene, speaker]] of scenes.entries()) {
+    if (!index) await openRun(page, fixture(scene));
+    else { await page.evaluate(run => localStorage.setItem("saint-shard-3055-v1", JSON.stringify(run)), fixture(scene)); await page.reload(); await page.getByTestId("continue-run").click(); }
+    const before = requests.length; await expect(page.getByRole("button", { name: `Listen to ${speaker}` })).toBeVisible(); expect(requests.length).toBe(before);
+    expect((await voiceReview(page)).started).toBe(0);
+    await page.getByRole("button", { name: `Listen to ${speaker}` }).click(); await expect.poll(async () => (await voiceReview(page)).started).toBe(1);
+    if (await page.getByRole("button", { name: "Stop line" }).count()) await page.getByRole("button", { name: "Stop line" }).click();
+    expect(requests.length).toBe(before + 1);
+  }
+});
+
 test("selective voices follow visible text, duck the bed and retain separate volume", async ({ page }) => {
   await observeVoices(page);
   const requests: string[] = []; page.on("request", (request) => { if (request.url().includes("/audio/voice-")) requests.push(request.url()); });

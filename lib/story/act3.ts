@@ -258,7 +258,9 @@ export const ACT3_SCENES: Record<string, Scene> = {
     text: (state) =>
       `Ives closes the list into the folio like it was always a Helion document that had been stored in the rain by mistake. Sera keeps the pencil. She does not keep the page.
 
-${state.handle} is still on file. Ward Nine is now a line item under resolved, which is the word the tower uses when it means owned.`,
+${state.handle} is still on file. Ward Nine is now a line item under resolved, which is the word the tower uses when it means owned.
+
+"The folio is closed," Ives says. "Your name is still on file. That is what the tower will keep."`,
     choices: [],
   },
   ending_names: {
@@ -268,7 +270,7 @@ ${state.handle} is still on file. Ward Nine is now a line item under resolved, w
     finale: true,
     endingTitle: "Said Aloud",
     speaker: "Sera",
-    text: namesText,
+    text: (state) => `${namesText(state)}\n\n"One at a time," Sera says. "The wall has room for a voice. It has never had room for an excuse."`,
     choices: [],
   },
   ending_quiet: {
@@ -278,7 +280,7 @@ ${state.handle} is still on file. Ward Nine is now a line item under resolved, w
     finale: true,
     endingTitle: "Left to the Rain",
     speaker: "Sera",
-    text: quietText,
+    text: (state) => `${quietText(state)}\n\n"I won't call you back," Sera says. "I have the pencil. The rain can wait with me."`,
     choices: [],
   },
   ending_witness: {
@@ -288,7 +290,7 @@ ${state.handle} is still on file. Ward Nine is now a line item under resolved, w
     finale: true,
     endingTitle: "Already Loose",
     speaker: "Sera",
-    text: witnessText,
+    text: (state) => `${witnessText(state)}\n\n"You came late," Sera says. "Leave that beside what you know. Don't make it a clean story for me."`,
     choices: [],
   },
 };
