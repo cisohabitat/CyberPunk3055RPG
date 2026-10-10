@@ -155,6 +155,81 @@
           "sha256": "cff842342b2d4f6d49dbe5c0633f564b18f66a3d28d7fd12eda0aaed1fbf0673"
         }
       ]
+    },
+    {
+      "id": "spire-counter",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-10",
+      "sourceFile": "/workspace/generated_images/exec-0c97f210-ae50-4bb9-a02a-224dc83b5db9.png",
+      "sourceSha256": "f370e684e5d15af5bfb42ed74b3f4b8f2e69d4a379a21569699c1b891035cf1d",
+      "promptSummary": "Neutral Helion service counter: closed folio, folded shifts and sleeved receiver beneath amber light. No depicted handover or confirmed closure.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/spire-counter.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 220274,
+          "sha256": "57242dd57d1e0f8185c9bef6e59ba6cb710229ea5075efc79fa3bfd578b4993a"
+        },
+        {
+          "path": "public/art/spire-counter-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 63335,
+          "sha256": "656b363459614eed7c7e50c7575fb82651942f36bb04ba22f39130f58d033b1a"
+        }
+      ]
+    },
+    {
+      "id": "spire-terminal",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-10",
+      "sourceFile": "/workspace/generated_images/exec-e52ae49c-b2d3-4d31-bba9-3057ac739c8b.png",
+      "sourceSha256": "ddf65f2e46a4140683466d7030a702c220995338bfb765d15a814f8d2ed378f3",
+      "promptSummary": "Waiting Spire maintenance terminal: separate abstract panels, paper request, guarded latch and side reader. No successful or failed transaction depicted.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/spire-terminal.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 227678,
+          "sha256": "d26a856a8e3d512eaaf862eed795dd2122ca6071060f9bb418695f70e4101afc"
+        },
+        {
+          "path": "public/art/spire-terminal-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 62411,
+          "sha256": "28a010dbddf08d1adeb52c532becec8efa231efbd1b75898e1637f3c3e548f18"
+        }
+      ]
+    },
+    {
+      "id": "spire-payroll",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-10",
+      "sourceFile": "/workspace/generated_images/exec-95a57293-d629-4c3c-9f31-2c2692cb0705.png",
+      "sourceSha256": "f9d69f898805645d12a61d77b3d8cb6ea0b7d793d558272174909f17ef23eae7",
+      "promptSummary": "Later Ward Nine payroll table: neutral papers, closed folio, reply relay and empty chairs beside rain. No paid wage, refund or confirmed reply depicted.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/spire-payroll.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 224100,
+          "sha256": "c36beebe3c5dfac0461ecb398eea50156c6f08110790e497bd481c16d82c898a"
+        },
+        {
+          "path": "public/art/spire-payroll-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 62355,
+          "sha256": "cbfe247eb71bd3f76a2e2d4034757817e5a2021924f44dcb2fc627c0f9944679"
+        }
+      ]
     }
   ]
 }

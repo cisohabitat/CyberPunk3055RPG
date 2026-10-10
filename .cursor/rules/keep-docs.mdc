@@ -4,3 +4,5 @@ alwaysApply: true
 ---
 
 When a change alters how Saint Shard plays, looks, sounds, saves, or deploys, update README.md and AGENTS.md in the same change. Both files must still quote the four goal sentences from lib/story/goal.ts and the save key saint-shard-3055-v1. lib/docs.test.ts checks that. A change that does not move those facts can leave both files as they are. Do not update one and leave the other describing an older game.
+
+Every new scene needs an explicit art decision in qa/media/scene-art.json and accompanying art when its setting, character or major visual moment requires it. Ship needed art with the scene, reuse fitting assets, and record the rationale when text is sufficient. No automatic decisions for future scenes. Follow AGENTS.md and docs/AUTHORING.md; keep art consistent with known outcomes and preserve text-only mode.

@@ -191,7 +191,9 @@ Gutterwire runners can plan Sera’s shelter response before taking the direct v
 
 ### Illustrated encounters and original stereo score
 
-The title and first arrival show a new Kite City illustration. The memory bench, shelter briefing and freight briefing have dedicated framed scene art, with readable captions and descriptions. Nia, Edda and Asa now have distinct generated portraits. Text-only mode omits these images and their requests, including on the title. Narrow screens use 600-pixel scene images; the goal stays above the illustration.
+The title and first arrival show a new Kite City illustration. The memory bench, shelter briefing and freight briefing have dedicated framed scene art, with readable captions and descriptions. The Spire service counter, maintenance alcove and later payroll table also have accompanying illustrations, reused across related steps without claiming an outcome. Nia, Edda and Asa now have distinct generated portraits. Text-only mode omits these images and their requests, including on the title. Narrow screens use 600-pixel scene images; the goal stays above the illustration.
+
+New scenes must ship an explicit art decision and accompanying art when the setting, character or visual moment calls for it. Appropriate existing art can be reused; a deliberate text-only decision needs a rationale. The scene-art catalog and production checks enforce coverage. See [the authoring workflow](docs/AUTHORING.md).
 
 Enable Sound in Settings to hear four original 32-second stereo chapter arrangements: *Under the Awnings*, *An Hour in Glass*, *The Work Between* and *Names in the Rain*. A recurring memory motif links the felt keys, glass tones, soft bass and bowed textures. Existing channel volume controls, optional rain ambience and scene crossfades remain available. Audio is synthesized, with no actor recordings or third-party samples. Art provenance and an audition page are in `qa/media/`; independent visual, listening and physical-device acceptance remain open.
 

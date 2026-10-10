@@ -10,6 +10,12 @@ A change that does not move those facts can leave both files as they are. Do not
 
 Do not add accounts, a database, a 3D city, multiplayer, or a new dice system unless the task asks for it. The fiction is original.
 
+## Accompanying scene art — standing rule
+
+Every new scene must include an explicit art decision in `qa/media/scene-art.json` in the same change. If it introduces a distinct place, a character without suitable art, or a major visual moment, ship accompanying art when needed; reuse a fitting asset when it already communicates that moment. Record the rationale for `illustration`, `portrait`, `background` or `text`, including deliberate text-only treatment. Enumerate scene ids: no wildcard or automatic fallback decisions for future scenes. Revisit the decision when the scene’s setting, speaker or visual meaning changes.
+
+Add framed art through `lib/art.ts` with a description, caption and responsive sources. Art must match the scene’s actual knowledge and outcomes: do not depict unearned closure, payment, witness safety, evidence or consent. Neutral setting art can span unresolved and completed states; use state-specific art only when the corresponding outcome is known. Record new assets’ provenance and update the media audition and credits. Preserve text-only preferences, the visible goal, missing-art tolerance and media budgets; play at phone and desktop sizes. `npm test` and the production report reject missing, duplicate, stale or mismatched art decisions and missing files. These checks enforce a documented decision, not independent artistic acceptance. See [AUTHORING.md](docs/AUTHORING.md).
+
 ## Commands
 
 ```bash
@@ -205,7 +211,7 @@ Keep initial memory inspection interactive; on later memory steps place fresh pr
 
 ## Generated media treatment
 
-`lib/art.ts` owns the speaker portrait registry and four selected encounter illustrations. `SceneIllustration` displays semantic framed art after the goal/restore notice with fixed layout dimensions, responsive 600/1200-pixel sources and lazy decoding. The title receives the artwork preference explicitly; text-only mode never mounts these images. Preserve the goal position, paragraph pacing, source controls and missing-art tolerance. Nia, Edda and Asa now use generated portraits; existing seven portraits remain unchanged. Do not reuse a pre-resolution shelter image as proof of a successful evacuation. `qa/media/art-provenance.json` identifies seven image-generation masters and eleven optimized JPEGs; tests check delivered asset integrity.
+`lib/art.ts` owns the speaker portrait registry and twelve illustrated encounter scenes using seven environment plates. `SceneIllustration` displays semantic framed art after the goal/restore notice with fixed layout dimensions, responsive 600/1200-pixel sources and lazy decoding. The title receives the artwork preference explicitly; text-only mode never mounts these images. Preserve the goal position, paragraph pacing, source controls and missing-art tolerance. Nia, Edda and Asa now use generated portraits; existing seven portraits remain unchanged. Do not reuse a pre-resolution shelter image as proof of a successful evacuation. `qa/media/art-provenance.json` identifies ten image-generation masters and seventeen optimized JPEGs; tests check delivered asset integrity and explicit art decisions for all current scenes. The Spire counter, maintenance alcove and later payroll table use three neutral setting illustrations; adjacent steps reuse the appropriate plate, while the exit reflection keeps Edda’s portrait.
 
 `scripts/score.mjs` contains the original 60-BPM, eight-bar stereo arrangements. Event tails and finite room reflections wrap cyclically; both channels must retain low seam jumps, headroom and distinct musical voicings. Scores use 22050 Hz/16-bit stereo PCM (32 seconds, below the 3 MiB per-file envelope); legacy ambience and cues remain 44100 Hz mono. `generate-audio.mjs` writes both formats before dev/test/build, and memory chimes echo E–C–B–A. Keep independent mixer buses, gesture activation, nonblocking resumes, scene crossfades and optional audio failure handling. No save, check or evidence behavior changes with media. Independent listening, visual craft and commercial rights gates remain pending; generation is not commissioned production or a regrade.
 

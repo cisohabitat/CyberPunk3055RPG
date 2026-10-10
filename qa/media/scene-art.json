@@ -1,0 +1,300 @@
+{
+  "version": 1,
+  "decisions": [
+    {
+      "treatment": "illustration",
+      "asset": "/art/opening.jpg",
+      "reason": "Establish the inhabited city and arrival before the job; no memo evidence or ending is shown.",
+      "scenes": [
+        "opening_city"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/memory-bench.jpg",
+      "reason": "Establish the three-fragment inspection workspace without disclosing what the sources prove.",
+      "scenes": [
+        "memory_table"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/shelter.jpg",
+      "reason": "Establish the leaking landing and passable ramp before repair, evacuation or allocation is known.",
+      "scenes": [
+        "act2_shelter_brief"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/freight.jpg",
+      "reason": "Establish the sealed parcel and dispatch table before any delivery or intake is observed.",
+      "scenes": [
+        "act2_freight_brief"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/spire-counter.jpg",
+      "reason": "Establish and reuse the same service counter. Neutral papers and a sleeved receiver depict neither closure nor handover, including traced recovery.",
+      "scenes": [
+        "act2_spire_brief",
+        "act2_spire_sources",
+        "act2_spire_recovery",
+        "act2_spire_receipt"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/spire-terminal.jpg",
+      "reason": "Establish the service alcove and its maintenance machinery. Reuse the waiting terminal without success, failure or retired-account indicators.",
+      "scenes": [
+        "act2_spire_prep",
+        "act2_spire_methods"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/spire-payroll.jpg",
+      "reason": "Establish the later neighborhood payroll table. Reuse neutral documents without implying a reply, refunded invoice, restored wage or erased badge trace.",
+      "scenes": [
+        "act3_spire_visit",
+        "act3_spire_reply"
+      ]
+    },
+    {
+      "treatment": "portrait",
+      "asset": "/art/edda.jpg",
+      "reason": "Keep Edda identifiable during archive terms, payroll conversations and the service-exit reflection. Her portrait conveys no employment or key outcome; prose records the actual position.",
+      "scenes": [
+        "act2_spire_result",
+        "act3_edda_terms",
+        "act3_edda_methods",
+        "act3_edda_reply",
+        "act2_archive_brief",
+        "act2_archive_prep",
+        "act2_archive_compare",
+        "act2_archive_challenge",
+        "act2_archive_custody",
+        "act3_edda_visit"
+      ]
+    },
+    {
+      "treatment": "portrait",
+      "asset": "/art/sera.jpg",
+      "reason": "Keep Sera identifiable through shelter choices, witness review and the memorial. Her portrait depicts no household move, protected witness or successful public statement.",
+      "scenes": [
+        "act2_shelter_prep",
+        "act2_shelter_methods",
+        "act2_shelter_evacuation",
+        "act2_shelter_hall",
+        "act2_shelter_rooms",
+        "act2_shelter_result",
+        "act3_shelter_visit",
+        "ward_wall",
+        "act3_arrival",
+        "ending_names",
+        "ending_quiet",
+        "ending_witness",
+        "act3_testimony_review",
+        "act3_testimony_consent",
+        "act3_testimony_correction",
+        "act3_testimony_record",
+        "act2_origin_gutterwire",
+        "act2_witness_safe",
+        "act2_public_response",
+        "act3_neighborhood",
+        "act3_records_visit"
+      ]
+    },
+    {
+      "treatment": "portrait",
+      "asset": "/art/asa.jpg",
+      "reason": "Keep Asa identifiable during source inspection, transit choices and the later courier conversation. The portrait supplies no delivery or private-clearance confirmation.",
+      "scenes": [
+        "act2_freight_sources",
+        "act2_freight_prep",
+        "act2_freight_crossing",
+        "act2_freight_recovery",
+        "act2_freight_intake",
+        "act2_freight_result",
+        "act3_freight_visit",
+        "act3_freight_query",
+        "act3_freight_reflection"
+      ]
+    },
+    {
+      "treatment": "background",
+      "asset": "/art/stall.jpg",
+      "reason": "Reuse the existing street backdrop for arrival roleplay, route transitions and district navigation. Keep these connective steps focused on choices rather than introducing another framed illustration.",
+      "scenes": [
+        "opening_self",
+        "opening_approach",
+        "opening_neighbor",
+        "hatch",
+        "hatch_caught",
+        "side",
+        "districts",
+        "act2_training",
+        "act2_origin_return"
+      ]
+    },
+    {
+      "treatment": "portrait",
+      "asset": "/art/quill.jpg",
+      "reason": "Use the existing employer portrait for briefing and recurring street work; the setting remains a backdrop and the terms stay in readable prose.",
+      "scenes": [
+        "stall",
+        "pay",
+        "pay_yes",
+        "pay_no",
+        "why",
+        "chapel",
+        "route",
+        "street_after",
+        "act2_origin_dustline",
+        "act2_workshop"
+      ]
+    },
+    {
+      "treatment": "portrait",
+      "asset": "/art/orderly.jpg",
+      "reason": "Reuse the chapel attendant portrait for the existing entrance encounter; no new character or setting plate is needed for this exchange.",
+      "scenes": [
+        "front"
+      ]
+    },
+    {
+      "treatment": "background",
+      "asset": "/art/chapel.jpg",
+      "reason": "Reuse the established chapel backdrop for adjacent underground and alley transitions; these connective steps need no separate illustration.",
+      "scenes": [
+        "undercroft",
+        "after_kerr"
+      ]
+    },
+    {
+      "treatment": "portrait",
+      "asset": "/art/lumen.jpg",
+      "reason": "Use Lumen’s established portrait for clinic, care, source and dispatch conversations. Her presence identifies the recurring speaker; no art claims treatment, witness safety or completed repair.",
+      "scenes": [
+        "lumen",
+        "lumen_deal",
+        "lumen_cold",
+        "ending_burned",
+        "act2_lumen_door",
+        "act2_lumen",
+        "memory_publication",
+        "act2_witness_door",
+        "act2_witness_lost",
+        "act2_recovery",
+        "act2_recovery_after",
+        "act2_pump_brief",
+        "act2_pump_triage",
+        "act2_pump_report",
+        "act3_pump_schedule",
+        "act2_notice_brief",
+        "act2_notice_sources",
+        "act2_notice_methods",
+        "act2_notice_recovery",
+        "act2_notice_receipt",
+        "act3_notice_visit",
+        "act3_notice_repair",
+        "act3_notice_result",
+        "act2_witness_plan",
+        "act2_witness_repair"
+      ]
+    },
+    {
+      "treatment": "portrait",
+      "asset": "/art/mara.jpg",
+      "reason": "Reuse Mara’s established portrait while the memo and memory interpretation unfold. New source details belong to interactive inspection and prose, not an image that predetermines the interpretation.",
+      "scenes": [
+        "memo",
+        "mara_why",
+        "vault_quiet",
+        "memory_reconstruction",
+        "memory_challenge",
+        "memory_cross_exam",
+        "memory_assurance",
+        "memory_channel"
+      ]
+    },
+    {
+      "treatment": "portrait",
+      "asset": "/art/kerr.jpg",
+      "reason": "Reuse Kerr’s established portrait for confrontation, checkpoint and repair guidance. It depicts no rolled outcome, injury or successful repair.",
+      "scenes": [
+        "kerr",
+        "kerr_fight",
+        "act2_kerr_door",
+        "act2_kerr",
+        "act2_heat",
+        "act2_witness_checkpoint",
+        "act2_pump_methods",
+        "act3_pump_visit"
+      ]
+    },
+    {
+      "treatment": "text",
+      "reason": "Keep chapter cards and these outcome reflections in text; a shared outcome illustration would risk claiming evidence or consequences absent from a particular run.",
+      "scenes": [
+        "ending_sold",
+        "ending_both",
+        "ending_smashed",
+        "ending_ash",
+        "ending_walk",
+        "ending_taken",
+        "ending_sainted",
+        "card_week",
+        "ending_exposed",
+        "ending_week_wards",
+        "ending_week_deal",
+        "card_wall"
+      ]
+    },
+    {
+      "treatment": "portrait",
+      "asset": "/art/ives.jpg",
+      "reason": "Reuse the existing Helion official portrait for offers, origin work and source challenges. It conveys no authorized evidence extraction or authenticated historical command.",
+      "scenes": [
+        "act2_helion_door",
+        "act2_helion",
+        "act2_folio",
+        "ending_listed",
+        "act3_testimony_hearing",
+        "act2_origin_spire",
+        "act2_archive_door"
+      ]
+    },
+    {
+      "treatment": "background",
+      "asset": "/art/canal.jpg",
+      "reason": "Reuse the established dry-canal backdrop for recovery and archive transitions. Evidence status remains in prose rather than an outcome image.",
+      "scenes": [
+        "act2_middle",
+        "act2_archive_verified"
+      ]
+    },
+    {
+      "treatment": "portrait",
+      "asset": "/art/nia.jpg",
+      "reason": "Reuse Nia’s distinct portrait for private terms, review and contact. Never depict or expose a current address, moved witness or permission not present in the state.",
+      "scenes": [
+        "act3_testimony_nia",
+        "act2_witness_brief",
+        "act2_witness_arrival",
+        "act3_witness_visit",
+        "act3_nia_contact"
+      ]
+    },
+    {
+      "treatment": "background",
+      "asset": "/art/spire.jpg",
+      "reason": "Reuse the established Spire backdrop for the archive gap; an unresolved source position must not be illustrated as a recovered record.",
+      "scenes": [
+        "act2_archive_gap"
+      ]
+    }
+  ]
+}

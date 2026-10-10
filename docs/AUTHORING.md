@@ -19,6 +19,16 @@ The engine continues to enforce legal choices and saved dice. Conditional prose 
 
 For new authored files, import and compile them in a story module and add that module to the `mergeScenes` call in `lib/story/index.ts`. Existing complex TypeScript scenes remain supported. Do not migrate an entire campaign at once. The pump mission demonstrates the pipeline with four stat methods, earned help, failure triage, resource costs, conditional consequences, and follow-up maintenance.
 
+## Scene art is part of authoring
+
+For every new scene, decide whether its place, character or visual moment needs accompanying art. Ship that art in the same change when needed. Reuse an appropriate existing illustration, portrait or backdrop; create an original asset when existing art cannot establish the moment. A connective step or reflection may stay in text with a stated reason. Review this decision again if the location, speaker or visual meaning changes.
+
+Add every scene id explicitly to `qa/media/scene-art.json`, either in a suitable existing group or a new decision. Each decision needs `treatment` (`illustration`, `portrait`, `background` or `text`), a meaningful `reason`, and `asset` for the three visual treatments. A `text` decision has no asset. Grouped reuse is allowed only when the rationale fits every listed scene. Do not use prefixes, wildcards or a default that silently covers future scenes.
+
+Register framed illustrations in `lib/art.ts`; use 1200 × 800 and 600 × 400 JPEGs, readable captions and descriptive alt text. Keep each encoded file below the current artwork budget and inspect both phone and desktop presentation. Add generated-source details and delivery hashes to `qa/media/art-provenance.json`, the illustration to `qa/media/review.html`, and provenance to `CREDITS.md`. Supplied assets need their own source records. Preserve the player’s text-only preference and put the goal before the illustration.
+
+Art must communicate only what the player can know in that scene. Do not reuse an evacuation, payment, receipt or witness-safety image in a state where that outcome remains unknown. Neutral setting art can be reused through source inspection and unresolved recovery; outcome-specific art requires matching state conditions. `npm test` and `npm run production:report` reject missing scene decisions, unknown or duplicate ids, absent rationales, art mismatches and missing files. The production catalog shows each decision for review. Coverage does not replace visual judgment or the independent production acceptance gate.
+
 Before accepting a change:
 
 1. Run `npm test` and `npx tsc --noEmit`. Add meaningful tests for new legal/illegal paths and evidence continuity.
