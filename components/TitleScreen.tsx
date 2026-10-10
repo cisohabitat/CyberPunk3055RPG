@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { SceneIllustration } from "./SceneIllustration";
+import { OPENING_ART } from "@/lib/art";
 import { DialogFrame } from "@/components/DialogFrame";
 import { getScene } from "@/lib/engine";
 import { endingCoda } from "@/lib/story";
@@ -19,6 +21,7 @@ export function TitleScreen({
   recovered,
   onSettings,
   onSaves,
+  artwork = true,
 }: {
   save: GameState | null;
   codex: Codex;
@@ -28,6 +31,7 @@ export function TitleScreen({
   recovered: boolean;
   onSettings: () => void;
   onSaves: () => void;
+  artwork?: boolean;
 }) {
   const [confirm, setConfirm] = useState(false);
   const [showReplayHints, setShowReplayHints] = useState(false);
@@ -55,6 +59,7 @@ export function TitleScreen({
           <button className="ghost" type="button" onClick={onSaves}>Saves</button>
           <button className="ghost" type="button" onClick={onSettings}>Settings</button>
         </div>
+        {artwork && <SceneIllustration art={OPENING_ART} title />}
         {recovered && <p role="status">Your last autosave could not be read. The automatic backup is ready to continue.</p>}
         {save && scene && (
           <p className="continue-note">

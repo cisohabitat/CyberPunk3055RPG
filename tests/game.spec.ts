@@ -790,3 +790,47 @@ test("shelter later help preserves uncertainty and returns to its entry hub", as
   const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
   expect(run.sceneId).toBe("ward_wall"); expect(run.creds).toBe(80); expect(run.flags.shelter_hall).toBeUndefined(); expect(run.items).not.toContain("witness-token");
 });
+
+for (const [sceneId, path] of [["act3_witness_visit", "/art/nia.jpg"], ["act3_edda_visit", "/art/edda.jpg"], ["act2_freight_brief", "/art/asa.jpg"]]) test(`generated character portrait loads for ${sceneId}`, async ({ page }) => {
+  await openRun(page, fixture(sceneId));
+  const portrait = page.locator("img.portrait").first(); await expect(portrait).toHaveAttribute("src", path);
+  expect(await portrait.evaluate((image: HTMLImageElement) => image.decode().then(() => image.naturalWidth))).toBe(440);
+  await expect(page.getByTestId("goal")).toBeInViewport();
+});
+for (const [sceneId, name] of [["opening_city", "opening"], ["memory_table", "memory-bench"], ["act2_shelter_brief", "shelter"], ["act2_freight_brief", "freight"]]) test(`encounter illustration ${sceneId} preserves largest-text phone goals`, async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem("saint-shard-preferences", JSON.stringify({ textStep: 2, contrast: "high", motion: "reduce" })));
+  await page.setViewportSize({ width: 390, height: 844 });
+  await openRun(page, fixture(sceneId));
+  const plate = page.getByTestId("scene-illustration").locator("img");
+  await expect(plate).toHaveAttribute("src", `/art/${name}.jpg`);
+  const decoded = await plate.evaluate((image: HTMLImageElement) => image.decode().then(() => ({ width: image.naturalWidth, source: image.currentSrc })));
+  expect(decoded.width).toBeGreaterThan(0); expect(decoded.source).toMatch(new RegExp(`/art/${name}(-small)?[.]jpg$`));
+  await expect(plate).toHaveAttribute("alt", /.+/); await expect(page.getByTestId("goal")).toBeInViewport();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations).toEqual([]);
+});
+test("text-only title and encounter avoid generated art requests across reload", async ({ page }) => {
+  const requests: string[] = []; page.on("request", (request) => { if (request.url().includes("/art/")) requests.push(request.url()); });
+  await page.addInitScript(() => localStorage.setItem("saint-shard-preferences", JSON.stringify({ artwork: "none" })));
+  await openRun(page, fixture("opening_city")); await expect(page.getByTestId("scene-illustration")).toHaveCount(0);
+  await page.reload(); await expect(page.getByTestId("scene-illustration")).toHaveCount(0);
+  await page.getByTestId("continue-run").click(); await expect(page.getByTestId("scene-illustration")).toHaveCount(0);
+  expect(requests).toEqual([]);
+});
+test("the authored stereo score decodes after an explicit sound-enabled continuation", async ({ page }) => {
+  await page.addInitScript(() => {
+    localStorage.setItem("saint-shard-preferences", JSON.stringify({ sound: true }));
+    const recorded = window as unknown as { decodedScores: { channels: number; duration: number }[] };
+    recorded.decodedScores = [];
+    const decode = AudioContext.prototype.decodeAudioData;
+    AudioContext.prototype.decodeAudioData = function(data: ArrayBuffer) {
+      return decode.call(this, data).then((buffer) => { recorded.decodedScores.push({ channels: buffer.numberOfChannels, duration: buffer.duration }); return buffer; });
+    };
+  });
+  await openRun(page, fixture("districts"));
+  await expect.poll(() => page.evaluate(() => (window as unknown as { decodedScores: { channels: number; duration: number }[] }).decodedScores.some((score) => score.channels === 2 && score.duration === 32))).toBe(true);
+  await page.getByRole("button", { name: "Settings", exact: true }).click();
+  await page.getByLabel("Sound enabled", { exact: true }).uncheck(); await page.getByRole("button", { name: "Done", exact: true }).click();
+  const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(run.sceneId).toBe("districts"); expect(run.pendingCheck).toBeUndefined();
+});

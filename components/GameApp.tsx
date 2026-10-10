@@ -63,6 +63,7 @@ export function GameApp() {
       onAbandon={() => { clearSave(); setSaved(null); setRun(null); setSaveFailed(false); title(); }} />
       : screen === "create" ? <CreateScreen keepsakes={codex.keepsakes} onBack={title} onStart={(next) => load(next, "New run")} />
       : <TitleScreen save={saved} codex={codex} saveFailed={saveFailed} recovered={recovered}
+          artwork={preferences.artwork !== "none"}
           onSettings={() => setDialog("settings")} onSaves={() => setDialog("saves")}
           onContinue={() => { if (saved) load(saved); }} onNew={() => setScreen("create")} />}
     {dialog === "settings" && <SettingsDialog preferences={preferences} onChange={updatePreferences} onClose={() => setDialog(null)} />}

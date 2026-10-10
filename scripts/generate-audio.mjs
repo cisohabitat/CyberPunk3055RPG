@@ -1,12 +1,17 @@
 import { writeFileSync } from "node:fs";
+import { renderScores } from "./score.mjs";
 
 const RATE = 44100;
 
-function wav(samples) {
-  const data = Buffer.alloc(samples.length * 2);
-  for (let i = 0; i < samples.length; i += 1) {
-    const clamped = Math.max(-1, Math.min(1, samples[i]));
-    data.writeInt16LE((clamped * 32767) | 0, i * 2);
+function wav(input) {
+  const { rate, channels } = Array.isArray(input) ? { rate: RATE, channels: [input] } : input;
+  const channelCount = channels.length;
+  const data = Buffer.alloc(channels[0].length * channelCount * 2);
+  for (let i = 0; i < channels[0].length; i += 1) {
+    for (let c = 0; c < channelCount; c++) {
+      const clamped = Math.max(-1, Math.min(1, channels[c][i]));
+      data.writeInt16LE((clamped * 32767) | 0, (i * channelCount + c) * 2);
+    }
   }
   const header = Buffer.alloc(44);
   header.write("RIFF", 0);
@@ -15,10 +20,10 @@ function wav(samples) {
   header.write("fmt ", 12);
   header.writeUInt32LE(16, 16);
   header.writeUInt16LE(1, 20);
-  header.writeUInt16LE(1, 22);
-  header.writeUInt32LE(RATE, 24);
-  header.writeUInt32LE(RATE * 2, 28);
-  header.writeUInt16LE(2, 32);
+  header.writeUInt16LE(channelCount, 22);
+  header.writeUInt32LE(rate, 24);
+  header.writeUInt32LE(rate * channelCount * 2, 28);
+  header.writeUInt16LE(channelCount * 2, 32);
   header.writeUInt16LE(16, 34);
   header.write("data", 36);
   header.writeUInt32LE(data.length, 40);
@@ -66,10 +71,6 @@ function mix(tracks) {
   return samples;
 }
 
-function voice(t, freq) {
-  return Math.sin(2 * Math.PI * freq * t) * 0.86 + Math.sin(2 * Math.PI * freq * 1.004 * t) * 0.14;
-}
-
 function loopCrossfade(samples, fadeSeconds) {
   const n = Math.max(2, Math.floor(RATE * fadeSeconds));
   const out = samples.slice(0, samples.length - n);
@@ -80,37 +81,6 @@ function loopCrossfade(samples, fadeSeconds) {
     out[i] = out[i] * fadeIn + samples[samples.length - n + i] * fadeOut;
   }
   return out;
-}
-
-function theme(chordsOverride = null, bar = 2) {
-  const chords = chordsOverride ?? [
-    [110, 164.81, 220],
-    [98, 146.83, 196],
-    [87.31, 130.81, 174.61],
-    [98, 155.56, 196],
-  ];
-  const fade = 0.45;
-  const loopSeconds = bar * chords.length;
-  const length = Math.floor(RATE * (loopSeconds + fade));
-  const samples = new Array(length).fill(0);
-  for (let c = 0; c < chords.length; c += 1) {
-    const start = c * bar;
-    const end = start + bar + fade;
-    const chord = chords[c];
-    const from = Math.floor(RATE * start);
-    const to = Math.min(length, Math.floor(RATE * end));
-    for (let i = from; i < to; i += 1) {
-      const t = i / RATE;
-      const local = (t - start) / fade;
-      const remain = (end - t) / fade;
-      const edge = Math.min(1, local, remain);
-      const g = Math.sin((Math.min(1, Math.max(0, edge)) * Math.PI) / 2);
-      const body = voice(t, chord[0]) * 0.11 + voice(t, chord[1]) * 0.055 + voice(t, chord[2]) * 0.028;
-      const trem = 0.78 + 0.22 * Math.sin(2 * Math.PI * 0.25 * t);
-      samples[i] += body * g * trem;
-    }
-  }
-  return loopCrossfade(samples, fade);
 }
 
 function drip(samples, at, freq, gain, decay) {
@@ -154,8 +124,14 @@ function rain() {
 
 function sting(notes) {
   const bits = notes.map((note, index) => {
-    const body = tone(0.28, note, 0.22);
-    const offset = Math.floor(index * RATE * 0.11);
+    const length = Math.floor(RATE * 0.48);
+    const shape = env(length, RATE * 0.008, RATE * 0.09);
+    const body = Array.from({ length }, (_, i) => {
+      const t = i / RATE;
+      const p = 2 * Math.PI * note * t;
+      return (Math.sin(p) * Math.exp(-t / 0.23) + 0.2 * Math.sin(2.76 * p) * Math.exp(-t / 0.09)) * 0.22 * shape(i);
+    });
+    const offset = Math.floor(index * RATE * 0.15);
     const placed = new Array(offset + body.length).fill(0);
     for (let i = 0; i < body.length; i += 1) placed[offset + i] = body[i];
     return placed;
@@ -164,11 +140,8 @@ function sting(notes) {
 }
 
 const files = {
-  theme: theme(),
-  "theme-chapel": theme([[98, 146.83, 207.65], [98, 155.56, 220], [87.31, 130.81, 196], [98, 146.83, 233.08], [110, 164.81, 207.65], [98, 146.83, 196]], 4),
-  "theme-week": theme([[110, 146.83, 220], [123.47, 164.81, 246.94], [98, 146.83, 196], [110, 138.59, 207.65], [123.47, 146.83, 220], [98, 164.81, 246.94]], 4),
-  "theme-ward": theme([[130.81, 196, 261.63], [110, 164.81, 220], [87.31, 130.81, 174.61], [98, 146.83, 196], [130.81, 164.81, 261.63], [98, 196, 261.63]], 4),
-  "sting-memory": sting([392, 311.13, 196, 293.66]),
+  ...renderScores(),
+  "sting-memory": sting([329.63, 261.63, 246.94, 220]),
   rain: rain(),
   "sting-stall": sting([220, 277, 330]),
   "sting-chapel": sting([196, 247, 392]),
@@ -183,10 +156,11 @@ const files = {
 
 for (const [name, samples] of Object.entries(files)) {
   let peak = 0;
-  for (const sample of samples) peak = Math.max(peak, Math.abs(sample));
+  const channels = Array.isArray(samples) ? [samples] : samples.channels;
+  for (const channel of channels) for (const sample of channel) peak = Math.max(peak, Math.abs(sample));
   if (peak > 0.95) {
     const gain = 0.95 / peak;
-    for (let i = 0; i < samples.length; i += 1) samples[i] *= gain;
+    for (const channel of channels) for (let i = 0; i < channel.length; i += 1) channel[i] *= gain;
   }
   writeFileSync(new URL(`../public/audio/${name}.wav`, import.meta.url), wav(samples));
 }

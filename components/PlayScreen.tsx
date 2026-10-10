@@ -6,7 +6,8 @@ import { DialogFrame } from "@/components/DialogFrame";
 import { Mark, originAccent } from "@/components/Mark";
 import { Portrait } from "@/components/Portrait";
 import { Sheet } from "@/components/Sheet";
-import { DISTRICT_ART, placeArt } from "@/lib/art";
+import { DISTRICT_ART, placeArt, sceneIllustration } from "@/lib/art";
+import { SceneIllustration } from "./SceneIllustration";
 import { ORIGINS, STRAIN_MAX, STAT_INFO } from "@/lib/character";
 import { commitChoice, effectPreview, checkResourceCosts, getScene, presentChoices, previewCheck, runDelta, sceneText, type VisibleChoice } from "@/lib/engine";
 import { locationCue, playCue, sceneMood, setBed } from "@/lib/sound";
@@ -52,6 +53,7 @@ export function PlayScreen({
   onSaves: () => void;
 }) {
   const scene = getScene(state.sceneId);
+  const illustration = sceneIllustration(scene.id);
   const choices = presentChoices(state, scene);
   const [pending, setPending] = useState<VisibleChoice | null>(null);
   const [sheetOpen, setSheetOpen] = useState(false);
@@ -207,7 +209,7 @@ export function PlayScreen({
             id="scene-top"
             tabIndex={-1}
             data-testid="scene"
-            style={{ backgroundImage: preferences.artwork === "none" ? undefined : `linear-gradient(180deg, rgba(9,8,13,0.72), rgba(9,8,13,0.94)), url(${placeArt(scene.location)})` }}
+            style={{ backgroundImage: preferences.artwork === "none" || illustration ? undefined : `linear-gradient(180deg, rgba(9,8,13,0.72), rgba(9,8,13,0.94)), url(${placeArt(scene.location)})` }}
           >
             <div className="scene-row">
               <Portrait speaker={scene.speaker} origin={state.origin} handle={state.handle} artwork={preferences.artwork !== "none"} />
@@ -265,6 +267,7 @@ export function PlayScreen({
               </div>
             </div>
             {restoreNotice && <p className="restore-notice" role="status" data-testid="restore-notice">{restoreNotice}</p>}
+            {preferences.artwork !== "none" && illustration && <SceneIllustration art={illustration} />}
             <ObjectiveBrief state={state} />
             <TransferBrief state={state} />
             <ArchiveBrief state={state} />

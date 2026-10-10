@@ -1,15 +1,6 @@
 import { speakerRole } from "@/lib/story/cast";
+import { PORTRAIT_ART } from "@/lib/art";
 import type { OriginId } from "@/lib/types";
-
-const FACES: Record<string, string> = {
-  Quill: "/art/quill.jpg",
-  Orderly: "/art/orderly.jpg",
-  "Sister Lumen": "/art/lumen.jpg",
-  Kerr: "/art/kerr.jpg",
-  Mara: "/art/mara.jpg",
-  Ives: "/art/ives.jpg",
-  Sera: "/art/sera.jpg",
-};
 
 const ORIGIN_ART: Record<OriginId, { src: string; label: string }> = {
   gutterwire: { src: "/art/stall.jpg", label: "Gutterwire" },
@@ -18,7 +9,7 @@ const ORIGIN_ART: Record<OriginId, { src: string; label: string }> = {
 };
 
 export function Portrait({ speaker, origin, handle, artwork = true }: { speaker?: string; origin: OriginId; handle?: string; artwork?: boolean }) {
-  const face = speaker ? FACES[speaker] : undefined;
+  const face = speaker ? PORTRAIT_ART[speaker] : undefined;
   const plate = ORIGIN_ART[origin];
   const src = face ?? plate.src;
   const role = speaker ? speakerRole(speaker) : undefined;

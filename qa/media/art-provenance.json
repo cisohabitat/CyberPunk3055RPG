@@ -1,0 +1,160 @@
+{
+  "direction": "Original painted noir: petroleum blue, charcoal, aged verdigris, copper and restrained amber. Human-scale settings, character agency, readable silhouettes, no franchise reference or artist imitation.",
+  "disclosure": "AI-generated visual assets. These records document generation and supplied files; independent visual/rights acceptance remains pending.",
+  "assets": [
+    {
+      "id": "opening",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-10",
+      "sourceFile": "/workspace/generated_images/exec-e20aa55a-05ab-4173-b334-54142230bda1.png",
+      "sourceSha256": "d0324b1a8a36015179adaa803b392e8b912e01a68e300d065c980c6e110460c9",
+      "promptSummary": "Kite City under the awnings; inhabited lower wards and an intimate noodle stall before midnight.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/opening.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 269954,
+          "sha256": "9ef96fa0bcea5beef099cacc0f9d568efe37da4487835c4fc50a9ba8380c7b95"
+        },
+        {
+          "path": "public/art/opening-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 75546,
+          "sha256": "dd99312376552ab706fe066cae02294ded40672030f32c4d462ceb623242f3da"
+        }
+      ]
+    },
+    {
+      "id": "nia",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-10",
+      "sourceFile": "/workspace/generated_images/exec-0ba3961c-ff13-448a-92ce-877d842812c7.png",
+      "sourceSha256": "b6cec6bb24fdc458d9c92a25bf2a09fc41404f56d7da0fdc53b5228450bd3ffb",
+      "promptSummary": "Nia Pell, living witness, composed adult in a plum clinic cardigan with a closed notebook; no identifying address.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/nia.jpg",
+          "width": 440,
+          "height": 587,
+          "bytes": 48124,
+          "sha256": "d7303d8d8359b2ea99ac67c1ae8ebf676618f65268d0c006681e90315b35e41e"
+        }
+      ]
+    },
+    {
+      "id": "edda",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-10",
+      "sourceFile": "/workspace/generated_images/exec-dba71c77-774d-4abe-bc02-420089d91fd4.png",
+      "sourceSha256": "02d81a1d8592538f5a8425ec8a06d9d3c43d8e4309226ddc4042fe0d4fbe8f97",
+      "promptSummary": "Edda, older archive technician with practical glasses, repaired work jacket and a closed folio.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/edda.jpg",
+          "width": 440,
+          "height": 587,
+          "bytes": 59087,
+          "sha256": "6af115f70e05fbf24b71e7dedf74885e774dba1ac75f5d1689f1b66ee4931223"
+        }
+      ]
+    },
+    {
+      "id": "asa",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-10",
+      "sourceFile": "/workspace/generated_images/exec-6e0dc556-7f77-4780-8d22-47d8506dfe90.png",
+      "sourceSha256": "c44ec452cbed2856831f2404be546182e4085bfb6a2c1d47ff322cfdbb7e20b6",
+      "promptSummary": "Asa, nonbinary courier with weathered jacket, rust scarf, repaired strap and quiet direct gaze.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/asa.jpg",
+          "width": 440,
+          "height": 587,
+          "bytes": 62584,
+          "sha256": "cfe27e12f9b683a5178ce74bb4ca6634a1a7eca79df84c539d1504fc396d4fdf"
+        }
+      ]
+    },
+    {
+      "id": "memory-bench",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-10",
+      "sourceFile": "/workspace/generated_images/exec-db0d284a-7abe-4c90-8546-3de8515cd78d.png",
+      "sourceSha256": "2d57e8de7b7a81f9433ddfe7826bd01df2585075af9ae942057760a1675afde0",
+      "promptSummary": "Memory inspection bench with three glass slivers, empty padded chair and clinic task light; no disclosed evidence.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/memory-bench.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 197394,
+          "sha256": "0d53e523b3adfbf538585d14f6d930f8361c1155e0d7d443d35317292f0a16ad"
+        },
+        {
+          "path": "public/art/memory-bench-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 59214,
+          "sha256": "14662ba2b1b1260601313db846187335eccf1c716ece49795395f7a31e8573fc"
+        }
+      ]
+    },
+    {
+      "id": "shelter",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-10",
+      "sourceFile": "/workspace/generated_images/exec-85593438-356e-4e51-9033-eee31d629592.png",
+      "sourceSha256": "6dcc7c737ae81aee0ac35a978059f0b145293d2a8f7094e0f7e15a3f5a98a93d",
+      "promptSummary": "Shelter leak before resolution; accessible ramp, bucket, valve, blankets and a parked transport chair.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/shelter.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 278544,
+          "sha256": "682b53e06fcd9edd9f4092059fb109dd4750244447338b0530605057d6672916"
+        },
+        {
+          "path": "public/art/shelter-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 76838,
+          "sha256": "f2550b1f696923b749dfa91de978bdfd61398ca445cdf832226a5b84b205f98d"
+        }
+      ]
+    },
+    {
+      "id": "freight",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-10",
+      "sourceFile": "/workspace/generated_images/exec-0c4bbf2a-8cbd-4ace-be48-977af4b92b4b.png",
+      "sourceSha256": "573acd2593f7feafb8174fe96406f0ef33ddf92d32dfe50a68d35b6a991003c6",
+      "promptSummary": "Protected sealed diagnostic parcel at the canal dispatch table before delivery is confirmed.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/freight.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 243176,
+          "sha256": "50f7060ce80a77fe92fe11258527dd7e25d8a08d13db6604067306eaa2d2580f"
+        },
+        {
+          "path": "public/art/freight-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 69282,
+          "sha256": "cff842342b2d4f6d49dbe5c0633f564b18f66a3d28d7fd12eda0aaed1fbf0673"
+        }
+      ]
+    }
+  ]
+}

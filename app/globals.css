@@ -894,6 +894,10 @@ html[data-motion="reduce"] *, html[data-motion="reduce"] *::before, html[data-mo
 .testimony-sources dd { margin: 0.25rem 0 0; }
 
 .portrait-placeholder { aspect-ratio: 3 / 4; background: linear-gradient(145deg, #0d2630, #100f16); }
+.scene-illustration { margin: 1.1rem 0; border: 1px solid var(--line); background: #09080d; }
+.scene-illustration img { display: block; width: 100%; height: clamp(160px, 24vw, 280px); object-fit: cover; }
+.scene-illustration figcaption { padding: .5rem .75rem; color: var(--muted); font: .8rem var(--font-display), sans-serif; letter-spacing: .08em; text-transform: uppercase; }
+.title-illustration img { height: clamp(180px, 28vw, 320px); }
 html[data-artwork="none"] .scene { background-color: #09080d; }
 
 .source-ledger { margin-top: .75rem; }

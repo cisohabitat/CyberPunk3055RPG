@@ -1,0 +1,87 @@
+{
+  "source": [
+    "scripts/score.mjs",
+    "scripts/generate-audio.mjs"
+  ],
+  "method": "Original authored digital synthesis. No third-party samples, AI music service, actor recordings or trained voice models.",
+  "tempoBpm": 60,
+  "bars": 8,
+  "beatsPerBar": 4,
+  "motifMidi": [
+    76,
+    72,
+    71,
+    69
+  ],
+  "reviewStatus": "Automated signal and runtime checks; independent headphone, speaker and physical-device listening acceptance remains pending.",
+  "scores": [
+    {
+      "path": "public/audio/theme.wav",
+      "title": "Under the Awnings",
+      "arrangement": "Street / opening: felt-key motif, bass and sparse plucks.",
+      "durationSeconds": 32.0,
+      "sampleRate": 22050,
+      "channels": 2,
+      "bits": 16,
+      "sha256": "dc5fa5e4bf7775848f44d771ac2ff261e0d3043a8aa8bbbef6dafbb3fbea5909",
+      "bytes": 2822444,
+      "peak": 0.20789208655049288,
+      "rms": 0.0373106721072106,
+      "seamJump": [
+        0.0003357036042359691,
+        0.0005798516800439467
+      ]
+    },
+    {
+      "path": "public/audio/theme-chapel.wav",
+      "title": "An Hour in Glass",
+      "arrangement": "Memory / clinic: suspended harmony and struck glass.",
+      "durationSeconds": 32.0,
+      "sampleRate": 22050,
+      "channels": 2,
+      "bits": 16,
+      "sha256": "e61bbe51c7e299bff5c1e36acf181e2bc105c36057e9ca412c999742dd303624",
+      "bytes": 2822444,
+      "peak": 0.1489303262428663,
+      "rms": 0.033523202015739356,
+      "seamJump": [
+        0.000640888698995941,
+        0.0013122959074678793
+      ]
+    },
+    {
+      "path": "public/audio/theme-week.wav",
+      "title": "The Work Between",
+      "arrangement": "District work: restrained plucked movement and bass.",
+      "durationSeconds": 32.0,
+      "sampleRate": 22050,
+      "channels": 2,
+      "bits": 16,
+      "sha256": "43b3a672d030bb77262f1d353dd97c445800c17e7bf0baee32001fc23b9920c2",
+      "bytes": 2822444,
+      "peak": 0.20383312479018525,
+      "rms": 0.03924938094226277,
+      "seamJump": [
+        0.0010071108127079073,
+        0.0008850367748039186
+      ]
+    },
+    {
+      "path": "public/audio/theme-ward.wav",
+      "title": "Names in the Rain",
+      "arrangement": "Witness / memorial: warm bowed tones and an answering motif.",
+      "durationSeconds": 32.0,
+      "sampleRate": 22050,
+      "channels": 2,
+      "bits": 16,
+      "sha256": "501d4394d2aa640450487c9ec135b53d0ea37461323f264fda3dc5d47da21f87",
+      "bytes": 2822444,
+      "peak": 0.2150334177678762,
+      "rms": 0.04309166747700029,
+      "seamJump": [
+        0.0021668141727958007,
+        0.0030823694570757164
+      ]
+    }
+  ]
+}
