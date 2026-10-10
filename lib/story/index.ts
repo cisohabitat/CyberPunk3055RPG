@@ -16,6 +16,7 @@ import { ACT3_SCENES } from "./act3";
 import { MEMORY_SCENES } from "./memory";
 import { MISSION_SCENES } from "./missions";
 import { OPERATION_SCENES } from "./operations";
+import { RELATIONSHIP_SCENES } from "./relationships";
 
 export { vaultNext } from "./act1";
 export { CODEX, endingCoda } from "./codas";
@@ -37,4 +38,5 @@ export const SCENES: Record<string, Scene> = mergeScenes(
   EMPLOYMENT_SCENES,
   ARCHIVE_SCENES,
   OPERATION_SCENES,
+  RELATIONSHIP_SCENES,
 );

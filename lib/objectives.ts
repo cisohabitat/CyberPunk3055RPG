@@ -2,6 +2,7 @@ import { spireOutcome } from "./story/spire";
 import { shelterOutcome } from "./story/shelter";
 import { freightOutcome } from "./story/freight";
 import { actName } from "./story/goal";
+import { routeOutcome } from "./route-planning";
 import type { GameState } from "./types";
 
 export type Objective = { id: string; title: string; status: "Open" | "Complete" | "Compromised" | "Unresolved"; detail: string };
@@ -9,6 +10,7 @@ export type Objective = { id: string; title: string; status: "Open" | "Complete"
 export function objectives(state: GameState): Objective[] {
   const rows: Objective[] = [];
   const atWall = actName(state) === "The Wall";
+  if (state.flags.kerr_route_promised) rows.push({ id: "kerr-collection", title: "Kerr’s collection terms", status: state.flags.kerr_route_private && state.flags.kerr_route_trace ? "Compromised" : state.flags.kerr_route_delivered ? "Complete" : state.flags.kerr_route_done || atWall ? "Unresolved" : "Open", detail: routeOutcome(state) });
   if (state.flags.notice_started) rows.push({ id: "notice", title: "Clinic appointment information", status: state.flags.notice_unresolved ? "Unresolved" : state.flags.notice_done ? "Complete" : atWall ? "Unresolved" : "Open", detail: state.flags.notice_unresolved ? "Distribution was left with staff; no patient receipt was observed." : state.flags.notice_done ? "Distribution was arranged without a public home list. Patient receipt and attendance are still unobserved." : "Choose a usable route or private channel without publishing home addresses." });
   if (state.flags.notice_done && !state.flags.notice_unresolved) rows.push({ id: "notice-followup", title: "Check clinic distribution", status: state.flags.notice_monitored ? "Compromised" : state.flags.notice_followed_up ? "Complete" : "Open", detail: state.flags.notice_monitored ? `The advertised window was observed. ${state.flags.notice_private_reply_booked ? "A private reply channel is booked, with new appointments unconfirmed." : state.flags.notice_window_withdrawn ? "The window was withdrawn, with no replacement confirmed." : "Callers requested another time; no response is arranged."} No home list was published; attendance remains unknown.` : state.flags.notice_receipt_observed ? "Two private receipts were acknowledged. Other receipts and all attendance remain unknown." : "Return to Lumen at Ward Nine for a dispatch reply. No patient receipt is observed yet." });
   const account = state.journal.some((entry) => entry.id === "nia-account");
@@ -46,9 +48,12 @@ export function unresolvedPromises(state: GameState): Objective[] {
 }
 
 export function nextStep(state: GameState): string {
+  if (state.pendingCheck) return "Finish the recorded roll. Its outcome is already saved.";
+  if (["act2_route_map", "act2_route_exit", "act2_route_review"].includes(state.sceneId)) return "Plan an entry and an exit. Review the fee, strain and recipient registration before departing; your draft is saved.";
+  if (state.sceneId === "act2_route_crossing") return "Use the approach your exit prepared, or negotiate. Departure is already paid; a failed approach leaves recovery without another roll.";
+  if (state.sceneId === "act2_route_recovery") return "Choose a registered courier or leave the case held. Receipt, registration and the original promise retain separate outcomes.";
   // The arrival goal already explains the opening; leave room for the story.
   if (state.sceneId.startsWith("opening_")) return "";
-  if (state.pendingCheck) return "Finish the recorded roll. Its outcome is already saved.";
   if (state.sceneId === "act2_spire_sources") return "Read all three records. Her current account must stay open; a service request is not a closure receipt.";
   if (state.sceneId === "act2_spire_recovery") return "Choose paid closure or a free pending request. No second terminal roll can erase the badge log.";
   if (state.sceneId === "act2_spire_receipt") return "Check both registers before recording closure. An exposed badge prevents a receiver handover.";
@@ -103,6 +108,7 @@ export function nextStep(state: GameState): string {
   if (state.sceneId === "act3_edda_visit") return "Hear the source’s employment consequences; support does not settle the review.";
   if (state.sceneId === "act2_archive_gap") return "Corroborate the receipt through the ledger, or record the gap honestly.";
   if (state.sceneId === "act2_middle") {
+    if (state.flags.kerr_route_promised && !state.flags.kerr_route_done) return "Kerr’s collection is unfinished. Resume the saved plan or leave the promise open when closing the week.";
     if (objectives(state).some((row) => row.status === "Open")) return "Your memory promise is still open. Finish it here before closing the week, or choose to leave it unresolved.";
     if (unresolvedPromises(state).length) return "The archive gap is recorded. Closing the week leaves that issuing key unverified.";
   }

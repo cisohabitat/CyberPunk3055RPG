@@ -958,3 +958,18 @@ html[data-motion="reduce"] .fragment-placed { animation: none; }
 @media (prefers-reduced-motion: reduce) { .fragment-placed { animation: none; } }
 .voice-line { padding: 12px 0; border-block: 1px solid var(--line); margin: 16px 0; }
 .voice-line .hint { margin: 8px 0; }
+.cast li { flex-wrap: wrap; }
+.cast-conduct { display: block; flex-basis: 100%; grid-column: 1 / -1; color: var(--muted); font-size: .85rem; line-height: 1.5; padding-top: 5px; }
+.route-board { margin: 20px 0; padding: 16px; border: 1px solid var(--cyan); background: rgba(94,242,255,.035); }
+.route-heading { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: baseline; justify-content: space-between; }
+.route-heading h2 { margin: 0; font-size: 1.1rem; }
+.route-heading span { color: var(--muted); font-size: .85rem; }
+.route-lanes { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; }
+.route-lanes h3 { font-size: 1rem; }
+.route-lanes ul { list-style: none; margin: 0; padding: 0; }
+.route-lanes li { margin-bottom: 8px; padding: 12px; border: 1px solid var(--line); }
+.route-lanes p { font-size: .9rem; line-height: 1.5; margin: 6px 0 0; }
+.route-lanes .route-selected { border-color: var(--cyan); background: rgba(94,242,255,.06); }
+.route-summary { border-top: 1px solid var(--line); padding-top: 12px; overflow-wrap: anywhere; }
+.route-warning { color: var(--amber); border-left: 2px solid var(--amber); padding-left: 12px; }
+@media (max-width: 700px) { .route-lanes { grid-template-columns: 1fr; } }

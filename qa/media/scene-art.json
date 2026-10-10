@@ -315,6 +315,39 @@
         "memory_model_result",
         "memory_publication"
       ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/canal-dispatch.jpg",
+      "scenes": [
+        "act2_route_map",
+        "act2_route_exit",
+        "act2_route_review",
+        "act2_route_crossing",
+        "act2_route_recovery"
+      ],
+      "reason": "Neutral planning alcove before collection; unselected map and closed case communicate the setting across drafts, success and held-case recovery without depicting an earned outcome."
+    },
+    {
+      "treatment": "portrait",
+      "asset": "/art/kerr.jpg",
+      "scenes": [
+        "act2_kerr_collection_terms",
+        "act2_route_receipt",
+        "act3_kerr_collection",
+        "act3_kerr_collection_response",
+        "act3_kerr_personal_question"
+      ],
+      "reason": "Existing Kerr portrait accompanies personal terms, observed receipt and later replies; no fitting, treatment, forgiveness or new favor is illustrated."
+    },
+    {
+      "treatment": "portrait",
+      "asset": "/art/quill.jpg",
+      "scenes": [
+        "act2_quill_introduction",
+        "act3_quill_introduction"
+      ],
+      "reason": "Existing Quill portrait accompanies the depot recommendation and late repayment conversation; the original refusal remains recorded."
     }
   ]
 }

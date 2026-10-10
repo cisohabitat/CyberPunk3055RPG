@@ -22,11 +22,11 @@
     ],
     "priority": "P1",
     "finding": "A saved playable chronology and claim/source stress test now retain wrong attempts, corrections and disputed verdicts. District trust and later records reflect repetition separately from corroboration. Blind comprehension, challenge and pacing review remain open.",
-    "truth": "A signature establishes authorization; Mara\u2019s explanation is testimony; an exported issuing key needs an independent test."
+    "truth": "A signature establishes authorization; Mara’s explanation is testimony; an exported issuing key needs an independent test."
   },
   {
     "id": "witness-transfer",
-    "title": "Nia\u2019s transfer",
+    "title": "Nia’s transfer",
     "scenes": [
       "act2_witness_brief",
       "act2_witness_plan",
@@ -43,7 +43,7 @@
   },
   {
     "id": "archive-search",
-    "title": "Edda\u2019s source retrieval",
+    "title": "Edda’s source retrieval",
     "scenes": [
       "act2_archive_brief",
       "act2_archive_prep",
@@ -116,7 +116,7 @@
   },
   {
     "id": "freight-delivery",
-    "title": "Asa\u2019s sealed courier delivery",
+    "title": "Asa’s sealed courier delivery",
     "scenes": [
       "act2_origin_dustline",
       "act2_freight_brief",
@@ -154,6 +154,29 @@
     ],
     "priority": "P2",
     "finding": "Repair, accessible evacuation, consenting room allocation and later household response are playable. Independent narrative and comprehension review remain open.",
-    "truth": "A repaired valve, observed resident arrival, private referral capacity and Nia\u2019s actual transfer are different outcomes. Later laundry help cannot create a token or historical proof."
+    "truth": "A repaired valve, observed resident arrival, private referral capacity and Nia’s actual transfer are different outcomes. Later laundry help cannot create a token or historical proof."
+  },
+  {
+    "id": "kerr-collection",
+    "title": "Kerr’s personal depot collection",
+    "scenes": [
+      "act2_kerr_collection_terms",
+      "act2_quill_introduction",
+      "act2_route_map",
+      "act2_route_exit",
+      "act2_route_review",
+      "act2_route_crossing",
+      "act2_route_recovery",
+      "act2_route_receipt"
+    ],
+    "laterScenes": [
+      "act3_kerr_collection",
+      "act3_kerr_collection_response",
+      "act3_kerr_personal_question",
+      "act3_quill_introduction"
+    ],
+    "priority": "P1",
+    "finding": "Two saved crossings commit distinct fees, physical effort and recipient registration. Four skill approaches, unrepeated failure recovery and observed receipt feed delayed acknowledgement or denial; conduct retains earlier betrayal. Independent relationship writing and player comprehension review remain open.",
+    "truth": "Planning, departure, recipient registration, collection, observed handover and a hoped-for walk remain distinct. Later acknowledgement cannot erase disclosure, and equipment supplies no treatment outcome or historical proof."
   }
 ]

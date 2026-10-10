@@ -1120,3 +1120,50 @@ test("unavailable voices and source images preserve the playable evidence", asyn
   await expect(page.getByTestId("choice-ask-command-contact")).toHaveCount(0);
   expect((await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!))).flags.order_verified).toBeUndefined();
 });
+
+for (const [width, textOnly] of [[390, false], [1440, false], [320, true]] as const) test(`Kerr route draft, recorded roll and delayed receipt at ${width}px`, async ({ page }) => {
+  await page.setViewportSize({ width, height: width < 700 ? 844 : 900 });
+  await page.addInitScript((none) => { Math.random = () => .75; localStorage.setItem("saint-shard-preferences", JSON.stringify({ reading: "all", motion: "reduce", ...(none ? { artwork: "none", textStep: 2, contrast: "high" } : {}) })); }, textOnly);
+  const artwork: string[] = []; page.on("request", r => { if(r.url().includes("/art/")) artwork.push(r.url()); });
+  await openRun(page, fixture("act2_middle", { creds: 100, strain: 0, flags: { kerr_talked: true } }));
+  for(const id of ["answer-kerr-collection", "promise-private-collection"]) await page.getByTestId(`choice-${id}`).click();
+  await expect(page.getByTestId("goal")).toBeInViewport();
+  if(textOnly) await expect(page.getByTestId("scene-illustration")).toHaveCount(0);
+  else expect(await page.getByTestId("scene-illustration").locator("img").evaluate((img:HTMLImageElement) => img.decode().then(() => img.naturalWidth))).toBeGreaterThan(0);
+  await page.getByTestId("choice-route-entry-lift").focus(); await page.keyboard.press("Enter");
+  await page.reload(); await page.getByTestId("continue-run").click();
+  await expect(page.getByTestId("route-board")).toContainText("Coin lift · selected");
+  await expect(page.getByTestId("creds")).toContainText("100");
+  await page.getByTestId("choice-route-exit-gap").click();
+  await expect(page.getByTestId("choice-depart-kerr-lift")).toContainText("-10 cr");
+  expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations).toEqual([]);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  for(const id of ["depart-kerr-lift", "route-use-gap"]) await page.getByTestId(`choice-${id}`).click();
+  await page.getByTestId("roll-button").click(); await page.reload(); await page.getByTestId("continue-run").click();
+  await expect(page.getByTestId("roll-button")).toHaveCount(0);
+  await page.getByTestId("continue-check").click(); await page.getByTestId("choice-record-kerr-receipt").click();
+  await expect(page.getByTestId("choice-answer-kerr-collection")).toHaveCount(0);
+  for(const id of ["stand", "back-to-board", "to-the-wall", "to-ward-nine", "face-sera", "visit-kerr-collection", "acknowledge-private-collection", "ask-kerr-personal-question", "keep-kerr-personal-answer", "leave-wall"]) await page.getByTestId(`choice-${id}`).click();
+  await expect(page.locator(".aftermath")).toContainText("Kerr received his closed brace case");
+  const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(run.creds).toBe(90); expect(run.flags.kerr_route_trace).toBeUndefined(); expect(run.flags.kerr_question_done).toBe(true); expect(run.flags.order_verified).toBeUndefined();
+  if(textOnly) expect(artwork).toEqual([]);
+});
+
+test("Kerr failed collection preserves registration and refusal of further contact", async ({ page }) => {
+  await page.addInitScript(() => { Math.random = () => .05; localStorage.setItem("saint-shard-preferences", JSON.stringify({ reading: "all" })); });
+  await openRun(page, fixture("act2_middle", { creds: 20, strain: 0, stats: {chrome:1,face:1,ghost:1,nerve:1}, flags: { kerr_talked: true, kerr_sold_you: true } }));
+  for(const id of ["answer-kerr-collection", "promise-private-collection", "route-entry-gate", "route-exit-gap"]) await page.getByTestId(`choice-${id}`).click();
+  await expect(page.getByTestId("route-board")).toContainText("This entry breaks your private terms");
+  for(const id of ["depart-kerr-foot", "route-use-gap"]) await page.getByTestId(`choice-${id}`).click();
+  await page.getByTestId("roll-button").click(); await page.getByTestId("continue-check").click();
+  await expect(page.getByTestId("choice-route-use-gap")).toHaveCount(0);
+  await page.getByTestId("choice-fund-kerr-courier").click(); await page.reload(); await page.getByTestId("continue-run").click();
+  await expect(page.getByTestId("creds")).toContainText("0"); await page.getByTestId("choice-record-kerr-receipt").click();
+  for(const id of ["stand", "back-to-board", "to-the-wall", "to-ward-nine", "face-sera", "visit-kerr-collection", "answer-kerr-breach", "deny-kerr-disclosure"]) await page.getByTestId(`choice-${id}`).click();
+  await expect(page.getByTestId("choice-ask-kerr-personal-question")).toHaveCount(0);
+  if (await page.getByTestId("sheet-toggle").isVisible()) await page.getByTestId("sheet-toggle").click();
+  await expect(page.locator("#runner-sheet .cast")).toContainText("He sold your account to Helion");
+  const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(run.flags.kerr_route_trace).toBe(true); expect(run.flags.kerr_route_denied).toBe(true); expect(run.flags.kerr_route_delivered).toBe(true);
+});

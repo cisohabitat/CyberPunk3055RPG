@@ -10,6 +10,7 @@ import { learnedPerks } from "@/lib/progression";
 import { objectives } from "@/lib/objectives";
 import { memoryDisposition } from "@/lib/evidence";
 import { metCast } from "@/lib/story/cast";
+import { characterConduct } from "@/lib/relationships";
 import type { GameState } from "@/lib/types";
 
 const TABS = ["stats", "gear", "journal"] as const;
@@ -60,6 +61,7 @@ export function Sheet({ state, open, onClose, speaker }: { state: GameState; ope
           <li key={person.name}>
             <strong>{person.name}</strong>
             <span>{person.role}</span>
+            {characterConduct(state, person.name) && <small className="cast-conduct">Shared history · {characterConduct(state, person.name)}</small>}
           </li>
         ))}
       </ul>

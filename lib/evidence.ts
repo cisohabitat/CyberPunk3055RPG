@@ -3,6 +3,7 @@ import { shelterOutcome } from "./story/shelter";
 import { freightOutcome } from "./story/freight";
 import { shiftResponse } from "./story/employment";
 import { equippedKits } from "./loadout";
+import { relationshipAftermath } from "./relationships";
 import type { GameState } from "./types";
 
 export const FRAGMENTS = [
@@ -50,5 +51,5 @@ export function aftermath(state: GameState): { title: string; text: string }[] {
   if (state.flags.freight_started || state.flags.freight_declined) rows.push({ title: "Asa’s freight delivery", text: freightOutcome(state) });
   if (state.flags.shelter_started || state.flags.shelter_declined) rows.push({ title: "Shelter neighbors", text: shelterOutcome(state) + (state.flags.shelter_followup_paid ? " You funded their laundry afterward." : state.flags.shelter_followup_helped ? " You helped carry their laundry afterward." : "") });
   if (state.flags.spire_started || state.flags.spire_declined) rows.push({ title: "Edda’s maintenance key", text: spireOutcome(state) });
-  return rows;
+  return [...rows, ...relationshipAftermath(state)];
 }

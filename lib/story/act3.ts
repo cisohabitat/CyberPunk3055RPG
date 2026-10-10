@@ -2,6 +2,7 @@ import { spireVisitChoice } from "./spire";
 import { shelterVisitChoice } from "./shelter";
 import { freightVisitChoice } from "./freight";
 import { GOAL_WALL } from "./goal";
+import { kerrQuestionChoice, kerrVisitChoice, quillVisitChoice } from "./relationships";
 import type { GameState, Scene } from "../types";
 
 function wallCardText(state: GameState): string {
@@ -163,6 +164,9 @@ export const ACT3_SCENES: Record<string, Scene> = {
     speaker: "Sera",
     text: arrivalText,
     choices: [
+      kerrVisitChoice(),
+      quillVisitChoice(),
+      kerrQuestionChoice(),
       { id: "prepare-public-account", label: "Prepare an account people can question after you leave.", detail: "Review source strength and witness publication permission before a public hearing.", requireFlag: "memory_prepared", hideIfFlag: "testimony_done", next: "act3_testimony_review" },
       {
         id: "read-names",

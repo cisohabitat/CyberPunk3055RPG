@@ -376,6 +376,33 @@
           "sha256": "2b59d7f1b3834aa7d15cc651adb7afaca902f575176a964b47ba5fc17b127757"
         }
       ]
+    },
+    {
+      "id": "canal-dispatch",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-10",
+      "sourceFile": "/workspace/generated_images/exec-ae12a0d6-4078-4980-97c9-df3d49580bef.png",
+      "sourceSha256": "588acccf5ad8a0fc275b390391fff863d4070f35f92bd0a8f8ca9e8eeda71f30",
+      "referenceFile": "public/art/freight.jpg",
+      "referenceSha256": "50f7060ce80a77fe92fe11258527dd7e25d8a08d13db6604067306eaa2d2580f",
+      "promptSummary": "Neutral sheltered canal planning alcove, anonymous unselected transit schematic, closed personal brace case, lift and steps; no delivery, identity, treatment or evidence outcome.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/canal-dispatch.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 295408,
+          "sha256": "5c7ff9924557e8e8d5808838676f3ba96ce452555e8899e4930199c9a61e476c"
+        },
+        {
+          "path": "public/art/canal-dispatch-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 83670,
+          "sha256": "f840fc94854a7440b9a94aa09ebf3d51e8614c2b1566595c117f465f2e8d9914"
+        }
+      ]
     }
   ]
 }

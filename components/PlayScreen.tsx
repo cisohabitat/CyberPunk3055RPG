@@ -17,6 +17,7 @@ import { ObjectiveBrief } from "./ObjectiveBrief";
 import { unresolvedPromises } from "@/lib/objectives";
 import { MemoryTimeline } from "./MemoryTimeline";
 import { MemoryPlate } from "./MemoryPlate";
+import { RouteBoard } from "./RouteBoard";
 import { VoiceLine } from "./VoiceLine";
 import { memoryInteractionCue, visibleDialogue } from "@/lib/memory-media";
 import { FieldKitBrief } from "./FieldKitBrief";
@@ -301,6 +302,7 @@ export function PlayScreen({
             )}
             {dialogue && <VoiceLine key={`${scene.id}-${dialogue.id}`} line={dialogue} enabled={sound && preferences.voices > 0 && !modalOpen && !sheetOpen && !confirmAbandon && !activeChoice} />}
             {scene.id === "memory_sequence" && <MemoryTimeline state={state} choices={choices} onPlace={pick} artwork={preferences.artwork !== "none"} reducedMotion={reduceMotion} />}
+            {["act2_route_map", "act2_route_exit", "act2_route_review", "act2_route_crossing"].includes(scene.id) && <RouteBoard state={state} />}
             {scene.finale && <section className="aftermath" aria-label="What your choices changed"><h2>What remains</h2>{aftermath(state).map((row) => <section key={row.title}><h3>{row.title}</h3><p>{row.text}</p></section>)}</section>}
             {fault && <p className="form-error">{fault}</p>}
             {choices.length > 0 && (
@@ -329,7 +331,7 @@ export function PlayScreen({
                           [
                             odds ? `${STAT_INFO[odds.stat].name} · DC ${odds.dc} · ${chance}` : null,
                             choice.detail,
-                            openPromises.length && [choice.next, choice.nextSuccess, choice.nextFail].some((next) => typeof next === "string" && ["ending_week_wards", "ending_week_deal", "ending_exposed"].includes(next)) ? `${openPromises.length} memory ${openPromises.length === 1 ? "promise remains" : "promises remain"} unresolved if the week closes` : null,
+                            openPromises.length && [choice.next, choice.nextSuccess, choice.nextFail].some((next) => typeof next === "string" && ["ending_week_wards", "ending_week_deal", "ending_exposed"].includes(next)) ? `${openPromises.length} ${state.flags.kerr_route_promised ? "campaign" : "memory"} ${openPromises.length === 1 ? "promise remains" : "promises remain"} unresolved if the week closes` : null,
                             effectPreview(state, choice).join(" · ") || null,
                             checkResourceCosts(state, choice).join("; ") || null,
                           ]

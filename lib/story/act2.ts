@@ -1,3 +1,4 @@
+import { kerrCollectionChoice } from "./relationships";
 import { GOAL_WEEK } from "./goal";
 import type { GameState, Scene } from "../types";
 
@@ -194,7 +195,9 @@ function middleText(state: GameState): string {
         : state.flags.ives_satisfied
           ? "Ives already has a tick on a page. The canal does not care about ticks."
           : "Whoever collected you this week is not in the canal. The week is.";
-  const tab = state.flags.debt && !state.flags.quill_settled
+  const tab = state.flags.quill_repaid_late
+    ? "Quill kept the late payment beside the postponed tab. The money has arrived; the calendar has not changed."
+    : state.flags.debt && !state.flags.quill_settled
     ? "Quill's tab is still open. He will not let the canal be the only meeting."
     : state.flags.quill_collected
       ? "The tab is paid. Quill's absence is the receipt."
@@ -350,7 +353,7 @@ export const ACT2_SCENES: Record<string, Scene> = {
         label: "Pay the week.",
         detail: "Forty creds. He stops collecting.",
         requireCreds: 40,
-        effects: { creds: -40, factions: { wards: 1, quill: -1 } },
+        effects: { creds: -40, flags: ["kerr_week_paid"], factions: { wards: 1, quill: -1 } },
         next: "act2_middle",
       },
       {
@@ -375,7 +378,7 @@ export const ACT2_SCENES: Record<string, Scene> = {
       {
         id: "refuse-kerr",
         label: "Tell him the week is not for sale.",
-        effects: { factions: { wards: -1 } },
+        effects: { flags: ["kerr_week_refused"], factions: { wards: -1 } },
         next: "act2_middle",
       },
     ],
@@ -452,6 +455,7 @@ export const ACT2_SCENES: Record<string, Scene> = {
     location: "The dry canal",
     text: middleText,
     choices: [
+      kerrCollectionChoice,
       { id: "help-clinic-notice", label: "Help Lumen settle a clinic distribution notice.", requireFlag: "memory_prepared", hideIfFlag: "notice_done", next: "act2_notice_brief" },
       { id: "help-clinic-pump", label: "Answer the clinic’s coolant emergency.", detail: "One repair attempt, then a cold-storage fallback. Today’s relay supplies no evidence about the old dump.", requireFlag: "memory_prepared", hideIfAnyFlag: ["pump_done", "act2_done"], next: (state) => state.flags.pump_restored ? "act2_pump_report" : state.flags.pump_failed ? "act2_pump_triage" : "act2_pump_brief" },
       { id: "take-recovery", label: "Make time for a recovery visit.", detail: "Once this week: paid care, a clinic favor, or a short rest. Recovery supplies no evidence or witness safety.", requireStrain: 1, hideIfFlag: "week_recovered", next: "act2_recovery" },

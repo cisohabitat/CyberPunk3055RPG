@@ -24,6 +24,12 @@ export function journalEntry(item: string | JournalEntry): JournalEntry {
 }
 
 export const JOURNAL_TITLES: Record<string, string> = {
+  "kerr-collection-promise": "Kerr’s collection terms",
+  "kerr-itinerary": "The committed depot route",
+  "kerr-collection-outcome": "The observed collection outcome",
+  "kerr-collection-response": "Kerr’s reply to the disclosure",
+  "kerr-personal-answer": "The walk Kerr hopes for",
+  "quill-late-payment": "Quill’s late tab repayment",
   "timeline-mismatch": "The first timeline mismatch",
   "timeline-checked": "Timestamp comparison",
   "timeline-limit": "Unresolved timeline draft",
@@ -98,6 +104,7 @@ export function journalKind(entry: JournalEntry): "fact" | "claim" | "promise" {
 }
 
 export function promiseStatus(id: string, flags: Record<string, boolean>, journal: JournalEntry[] = []): string {
+  if (id === "kerr-collection-promise") return flags.kerr_route_private && flags.kerr_route_trace ? "Private terms broken; register remains" : flags.kerr_route_delivered ? "Receipt observed" : flags.kerr_route_done ? "Collection unfinished" : "Collection open";
   if (id === "spire-promise") return flags.old_badge_traced ? flags.spire_closure_recorded ? "Closed; badge trace remains" : "Badge traced; closure unresolved" : flags.spire_closure_recorded ? "Closure recorded" : flags.spire_done ? "Closure unresolved" : "Retirement open";
   if (id === "notice-promise") return flags.notice_unresolved ? "Distribution unresolved" : flags.notice_done ? "Dispatched; delivery unobserved" : "Distribution open";
   if (id === "edda-shift-request") return flags.edda_shift_paid ? "Temporary paid work" : flags.edda_shift_done ? "Review pending" : "Application open";
