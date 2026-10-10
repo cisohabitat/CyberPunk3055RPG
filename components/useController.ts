@@ -44,7 +44,7 @@ export function useController(enabled: boolean) {
         if (document.visibilityState !== "visible") continue;
         const dialogs = [...document.querySelectorAll("dialog[open]")];
         const root = dialogs.at(-1) ?? document;
-        const targets = [...root.querySelectorAll<HTMLElement>("button:not([disabled]), select:not([disabled]), input:not([disabled]), a[href]")]
+        const targets = [...root.querySelectorAll<HTMLElement>("button:not([disabled]), select:not([disabled]), input:not([disabled]), a[href], summary")]
           .filter((node) => node.tabIndex >= 0 && node.getClientRects().length > 0 && !node.closest("[inert]"));
         const active = document.activeElement;
         const index = targets.indexOf(active as HTMLElement);

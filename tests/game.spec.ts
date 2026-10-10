@@ -28,6 +28,26 @@ test("campaign integration Lumen reply records a visit without completing the wo
   const state = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
   expect(state.flags.chapel_response_heard).toBe(true); expect(state.flags.chapel_shift_kept).toBeUndefined(); expect(state.flags.betrayed_lumen).toBe(true); expect(state.flags.watched).toBe(true); expect(state.creds).toBe(0); expect(state.strain).toBe(0);
 });
+test("controller reaches and opens the campaign aftermath disclosure", async ({ page }) => {
+  await page.addInitScript(() => {
+    const pressed = Array(16).fill(false); Object.defineProperty(window, "testPad", { value: pressed });
+    Object.defineProperty(navigator, "getGamepads", { value: () => [{ index: 0, mapping: "standard", buttons: pressed.map(value => ({ pressed: value })) }] });
+    localStorage.setItem("saint-shard-preferences", JSON.stringify({ controller: true, reading: "all" }));
+  });
+  await openRun(page, fixture("ending_quiet", { flags: { witness_shift_owed: true } }));
+  const recap = page.getByTestId("aftermath-details"); const summary = recap.locator("summary");
+  await summary.focus(); await page.keyboard.press("Shift+Tab");
+  async function press(id: number) {
+    await page.evaluate(async id => {
+      const buttons = (window as unknown as { testPad: boolean[] }).testPad;
+      const frames = () => new Promise<void>(r => requestAnimationFrame(() => requestAnimationFrame(() => r())));
+      buttons[id] = true; await frames(); buttons[id] = false; await frames();
+    }, id);
+  }
+  await press(13); await expect(summary).toBeFocused();
+  await press(0); await expect(recap).toHaveAttribute("open", "");
+  await expect(recap.getByRole("heading", { name: "Volunteer return shift" })).toBeVisible();
+});
 for (const finale of ["ending_names", "ending_quiet", "ending_witness", "ending_listed"]) test(`campaign integration ${finale} offers a keyboard-readable factual recap`, async ({ page }) => {
   await page.addInitScript(() => localStorage.setItem("saint-shard-preferences", JSON.stringify({ artwork: "none", text: 2, contrast: "high", reading: "all" })));
   await page.setViewportSize({ width: 320, height: 844 });
