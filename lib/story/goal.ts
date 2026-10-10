@@ -41,6 +41,10 @@ export function currentGoal(state: GameState): string {
     return `Service window: ${count} ${count === 1 ? "opportunity" : "opportunities"} left. Save one for a quiet exit, or use the staffed recovery.`;
   }
   if (id === "chapel_window_expired") return "The service window closed. Ordinary doors remain available without a fee.";
+  if (id === "act2_notice_allocation" || id === "act2_notice_allocation_review") return "Allocate six cards across two clinic windows. Compare dispatch capacity and offer a private return contact.";
+  if (id === "act2_notice_counter") return "Resolve the extra later card: carry it, fund a carrier, revise the split or leave the offer open.";
+  if (id === "act2_notice_offer") return "Accept the return work once, or revise the draft. Dispatch acceptance is separate from receipt.";
+  if (id === "act2_notice_capacity" || id === "act2_notice_privacy_refusal") return "Keep the conflict or refusal recorded. Revise the plan, or leave distribution unresolved.";
   if (id === "opening_self") return GOAL_SELF;
   if (id.startsWith("opening_")) return GOAL_ARRIVE;
   if (WALL.has(id) || id.startsWith("act3_")) return GOAL_WALL;

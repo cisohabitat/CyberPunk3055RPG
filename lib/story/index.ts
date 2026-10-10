@@ -1,3 +1,4 @@
+import { ALLOCATION_SCENES } from "./notice-allocation";
 import { WINDOW_SCENES } from "./chapel-window";
 import { METHOD_SCENES } from "./encounter-methods";
 import { CHARACTER_ARC_SCENES } from "./character-arcs";
@@ -45,4 +46,5 @@ export const SCENES: Record<string, Scene> = mergeScenes(
   CHARACTER_ARC_SCENES,
   METHOD_SCENES,
   WINDOW_SCENES,
+  ALLOCATION_SCENES,
 );

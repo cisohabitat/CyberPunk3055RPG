@@ -15,6 +15,8 @@ Weighted total: **7.765**, rounded to **7.8**. Reliability is stronger than the 
 
 The [grade-based roadmap](ROADMAP.md) sets six phases and ten delivery cycles, prioritizing encounter variety and builds, narrative editing, expressive art/audio and independent revision. Its weighted target is 9.35 with every category at least 9.0, not an automatic or promised score. All six independent production acceptance gates remain pending.
 
+Phase 2 now has internally verified commitments, a saved local deadline and practical allocation/counteroffers across the three ordered cycles. See [the concrete methods, costs, campaign play and handoff](ENCOUNTER_VARIETY.md). These address the review’s RPG-variety weakness, but the baseline grade above has not been independently re-assessed. Integration/pacing, audiovisual direction and fresh-player/device acceptance remain the next phases.
+
 ---
 
 # Historical baseline review — 9 October 2026

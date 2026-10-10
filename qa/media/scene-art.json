@@ -422,6 +422,19 @@
       "scenes": [
         "chapel_window_exit"
       ]
+    },
+    {
+      "treatment": "portrait",
+      "asset": "/art/lumen.jpg",
+      "reason": "Reuse Lumen at the existing clinic dispatch desk for the six-card draft, capacity feedback and terms. Her portrait depicts neither accepted delivery nor medical results; all allocation information stays in readable text.",
+      "scenes": [
+        "act2_notice_allocation",
+        "act2_notice_allocation_review",
+        "act2_notice_capacity",
+        "act2_notice_privacy_refusal",
+        "act2_notice_offer",
+        "act2_notice_counter"
+      ]
     }
   ]
 }

@@ -5,7 +5,7 @@
       "id": "act2_notice_brief",
       "location": "Clinic dispatch desk, Glass Chapel",
       "speaker": "Sister Lumen",
-      "text": "Lumen has two sheets on her desk. One lists clinic appointment windows. The other is a housing slip somebody proposed pinning beside the district board.\n\n\"They need to know where the clinic is,\" she says. \"They do not need to tell every landlord where they sleep. Dispatch wants a route it can verify. I need a notice people can actually use.\"\n\nHelp separate the routing information from the private list, then choose how to distribute it. This is present-day clinic work, not evidence about Ward Nine’s old command.",
+      "text": "Lumen has two sheets on her desk. One lists clinic appointment windows. The other is a housing slip somebody proposed pinning beside the district board.\n\n\"They need to know where the clinic is,\" she says. \"They do not need to tell every landlord where they sleep. Dispatch wants a route it can verify. I need a notice people can actually use.\"\n\nHelp separate the routing information from the private list, then choose how to distribute it. This is present-day clinic work, not evidence about Ward Nine\u2019s old command.",
       "choices": [
         {
           "id": "accept-notice",
@@ -120,6 +120,12 @@
       "speaker": "Sister Lumen",
       "text": "The public notice can carry a clinic stop and window without carrying homes. Private cards let patients receive details individually, but dispatch must accept them first.\n\nLumen wants the address fields left out of circulation. The desk wants an accountable return contact. You can meet both needs privately, or accept the monitoring risk of a usable public map. No method guarantees arrival.",
       "choices": [
+        {
+          "id": "compare-notice-allocation",
+          "label": "Build a six-card schedule and negotiate its workload.",
+          "detail": "Drafts are free and saved. Compare clinic windows, courier capacity and the return contact; no stat roll changes their limits.",
+          "next": "act2_notice_allocation"
+        },
         {
           "id": "courier-notice",
           "label": "Pay twenty creds for sealed appointment cards.",
@@ -245,6 +251,12 @@
       ],
       "choices": [
         {
+          "id": "compare-notice-allocation",
+          "label": "Build a six-card schedule and negotiate its workload.",
+          "detail": "Drafts are free and saved. Compare clinic windows, courier capacity and the return contact; no stat roll changes their limits.",
+          "next": "act2_notice_allocation"
+        },
+        {
           "id": "courier-notice",
           "label": "Pay twenty creds for sealed appointment cards.",
           "next": "act2_notice_receipt",
@@ -299,7 +311,7 @@
                   "notice_public_route"
                 ]
               },
-              "text": "The board carries the clinic stop and window. The housing sheet stays in Lumen’s drawer. Helion can watch the advertised time; it has received no home list from this notice."
+              "text": "The board carries the clinic stop and window. The housing sheet stays in Lumen\u2019s drawer. Helion can watch the advertised time; it has received no home list from this notice."
             },
             {
               "when": {
@@ -420,7 +432,7 @@
         },
         {
           "id": "record-public-reply",
-          "label": "Record monitoring and the callers’ request for another time.",
+          "label": "Record monitoring and the callers\u2019 request for another time.",
           "next": "act3_neighborhood",
           "requireFlag": "notice_public_route",
           "effects": {
@@ -484,7 +496,7 @@
       "id": "act3_notice_repair",
       "location": "Clinic return desk, Ward Nine",
       "speaker": "Sister Lumen",
-      "text": "Lumen can take the three callers’ replies through the clinic relay. Ten creds cover the private reply channel; staff will arrange any new time afterward. You will not receive their home list.\n\nOr she can withdraw the advertised window and leave staff to contact people individually. Removing the notice cannot erase the time the observer already saw. A withdrawn window is not a replacement appointment.",
+      "text": "Lumen can take the three callers\u2019 replies through the clinic relay. Ten creds cover the private reply channel; staff will arrange any new time afterward. You will not receive their home list.\n\nOr she can withdraw the advertised window and leave staff to contact people individually. Removing the notice cannot erase the time the observer already saw. A withdrawn window is not a replacement appointment.",
       "choices": [
         {
           "id": "fund-private-replies",
@@ -511,7 +523,7 @@
           "id": "withdraw-notice-window",
           "label": "Withdraw the public window; leave individual contact with staff.",
           "next": "act3_notice_result",
-          "detail": "No fee. The observer’s earlier knowledge remains. No replacement time is guaranteed.",
+          "detail": "No fee. The observer\u2019s earlier knowledge remains. No replacement time is guaranteed.",
           "effects": {
             "flags": [
               "notice_repair_done",

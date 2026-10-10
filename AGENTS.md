@@ -281,3 +281,10 @@ See [the detailed Phase 2 cycle plan and internal evidence](docs/ENCOUNTER_VARIE
 An optional Chapel service window shares three saved action opportunities between information, access and a quiet exit. The remaining count stays in the visible goal. Pausing, reloading or exporting a pending die never resets the allowance; repeating a used inspection is unavailable. Expiry changes the patrol attention and strain cost, with a free staffed exit or a return to ordinary doors. Chrome reader inspection, Ghost patrol timing and Nerve physical entry retain distinct preparation and consequences. Three new scenes have explicit reused Chapel/Quill art decisions.
 
 See [Phase 2 execution and acceptance evidence](docs/ENCOUNTER_VARIETY.md). Version 2, `saint-shard-3055-v1`, the original dice, caps, routes, evidence and permission boundaries remain. The saved-window implementation does not complete independent player or production acceptance.
+
+
+### Encounter variety — roadmap phase 2, cycle 4
+
+Clinic notice distribution now offers a saved six-card schedule with separate clinic and dispatch limits. Four early/two later commits one strain of return work; three/three needs an extra trip at two strain or a ten-creds carrier. An overloaded window and a refused home-list contact are separate outcomes. Revise freely without erasing refusal; dispatch acceptance and later acknowledgements supply no attendance, care, evidence or recording permission. Existing channels and free unresolved recovery remain. Six scenes have explicit suitable Lumen portrait decisions.
+
+[Phase 2 implementation and handoff](docs/ENCOUNTER_VARIETY.md) records three cycles, 184 scenes / 534 choices, 92 complete replay fixtures, 320 unit checks and 18 primary complete internal UI campaigns. Native keyboard/controller, saved costs/dice, narrow text-only play and matching art remain required. Preserve version 2 and `saint-shard-3055-v1`. The independent production gates and 9+ target remain open; Phase 3 has not started.

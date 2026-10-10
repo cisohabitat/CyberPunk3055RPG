@@ -178,3 +178,8 @@ Prepared methods change Chapel machinery/work obligations, Nia’s transfer supp
 ## Roadmap phase 2, cycle 3 — saved local deadline
 
 Three saved Chapel opportunities now cover preparation, entry and exit. The first browser pass identified the missing allowance in the prominent goal; the corrected build passes twelve focused cases and four complete phone campaigns (323 visits). All 303 unit/replay cases pass, with 85 full fixtures and an explicit art decision for every one of 178 scenes. Expiry recovers without funds, and recorded dice cannot change after interruption. See [ENCOUNTER_VARIETY.md](ENCOUNTER_VARIETY.md). Exact-revision release checks follow the push.
+
+
+## Roadmap phase 2, cycle 4 — clinic allocation and counteroffers
+
+Six cards, two clinic windows and two dispatch capacities now support an actual draft, a capacity conflict, a privacy refusal and a work/fare counteroffer. Drafts save without charges; acceptance commits once, and later replies preserve actual acknowledgements separately from the plan. Ten targeted unit cases and seven new full routes bring the total to 320 unit/replay cases and 92 campaign fixtures. Twenty-four focused browser checks cover the planner and controller use across all three Phase 2 encounter types. Eight primary full campaigns (690 visits) include all three origins and a captured natural-dice run. All new scenes have explicit fitting art. See [ENCOUNTER_VARIETY.md](ENCOUNTER_VARIETY.md). The final exact-revision CI and public gate precede release; Phase 3 remains the next handoff rather than starting automatically.

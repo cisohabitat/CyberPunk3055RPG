@@ -1,0 +1,309 @@
+{
+  "name": "allocation-gutterwire",
+  "character": {
+    "handle": "Replay",
+    "givenName": "Ada",
+    "origin": "gutterwire",
+    "complication": "on-file",
+    "bonus": {
+      "chrome": 0,
+      "nerve": 2,
+      "face": 0,
+      "ghost": 0
+    },
+    "startWithPrologue": true
+  },
+  "steps": [
+    {
+      "choiceId": "begin-opening",
+      "reload": true
+    },
+    {
+      "choiceId": "opening-identity",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-stallholder",
+      "reload": true
+    },
+    {
+      "choiceId": "take-the-stool",
+      "reload": true
+    },
+    {
+      "choiceId": "ask-pay"
+    },
+    {
+      "choiceId": "haggle",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "pocket"
+    },
+    {
+      "choiceId": "accept"
+    },
+    {
+      "choiceId": "side"
+    },
+    {
+      "choiceId": "spoof-door",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "go"
+    },
+    {
+      "choiceId": "honest"
+    },
+    {
+      "choiceId": "pact-copy"
+    },
+    {
+      "choiceId": "copy",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "heard"
+    },
+    {
+      "choiceId": "inspect-hour"
+    },
+    {
+      "choiceId": "inspect-signature"
+    },
+    {
+      "choiceId": "inspect-order"
+    },
+    {
+      "choiceId": "inspect-roster"
+    },
+    {
+      "choiceId": "reconstruct"
+    },
+    {
+      "choiceId": "ignore-order"
+    },
+    {
+      "choiceId": "keep-both-decisions"
+    },
+    {
+      "choiceId": "name-tower"
+    },
+    {
+      "choiceId": "seal-full"
+    },
+    {
+      "choiceId": "talk-leave",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "both"
+    },
+    {
+      "choiceId": "week-after"
+    },
+    {
+      "choiceId": "into-week"
+    },
+    {
+      "choiceId": "practice"
+    },
+    {
+      "choiceId": "learn-ghost"
+    },
+    {
+      "choiceId": "read-board"
+    },
+    {
+      "choiceId": "origin-contract"
+    },
+    {
+      "choiceId": "plan-shelter",
+      "reload": true
+    },
+    {
+      "choiceId": "accept-shelter",
+      "reload": true
+    },
+    {
+      "choiceId": "shelter-prep-ramp",
+      "reload": true
+    },
+    {
+      "choiceId": "shelter-ghost-ramp",
+      "reload": true
+    },
+    {
+      "choiceId": "shelter-confirm-hall",
+      "reload": true
+    },
+    {
+      "choiceId": "shelter-return-board",
+      "reload": true
+    },
+    {
+      "choiceId": "to-helion"
+    },
+    {
+      "choiceId": "hear-ives"
+    },
+    {
+      "choiceId": "refuse-ives"
+    },
+    {
+      "choiceId": "trace-order"
+    },
+    {
+      "choiceId": "agree-archive-terms"
+    },
+    {
+      "choiceId": "skip-archive-prep"
+    },
+    {
+      "choiceId": "separate-source-tests"
+    },
+    {
+      "choiceId": "trace-receipt",
+      "roll": 1,
+      "reload": true
+    },
+    {
+      "choiceId": "keep-gap"
+    },
+    {
+      "choiceId": "help-clinic-notice",
+      "reload": true
+    },
+    {
+      "choiceId": "accept-notice",
+      "reload": true
+    },
+    {
+      "choiceId": "read-notice-slip",
+      "reload": true
+    },
+    {
+      "choiceId": "read-notice-map",
+      "reload": true
+    },
+    {
+      "choiceId": "read-notice-card",
+      "reload": true
+    },
+    {
+      "choiceId": "plan-notice",
+      "reload": true
+    },
+    {
+      "choiceId": "compare-notice-allocation",
+      "reload": true
+    },
+    {
+      "choiceId": "allocate-notice-42",
+      "reload": true
+    },
+    {
+      "choiceId": "offer-notice-clinic-contact",
+      "reload": true
+    },
+    {
+      "choiceId": "accept-notice-standard",
+      "reload": true
+    },
+    {
+      "choiceId": "record-private-notice",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-response"
+    },
+    {
+      "choiceId": "correct-public-claim"
+    },
+    {
+      "choiceId": "stand"
+    },
+    {
+      "choiceId": "back-to-board"
+    },
+    {
+      "choiceId": "to-the-wall"
+    },
+    {
+      "choiceId": "to-ward-nine"
+    },
+    {
+      "choiceId": "visit-records"
+    },
+    {
+      "choiceId": "keep-limits"
+    },
+    {
+      "choiceId": "visit-shelter-neighbors",
+      "reload": true
+    },
+    {
+      "choiceId": "shelter-carry-laundry",
+      "reload": true
+    },
+    {
+      "choiceId": "face-sera"
+    },
+    {
+      "choiceId": "prepare-public-account"
+    },
+    {
+      "choiceId": "scope-bounded"
+    },
+    {
+      "choiceId": "keep-recording-private"
+    },
+    {
+      "choiceId": "claim-key-anyway"
+    },
+    {
+      "choiceId": "correct-hearing",
+      "reload": true
+    },
+    {
+      "choiceId": "file-public-account",
+      "reload": true
+    },
+    {
+      "choiceId": "leave-wall"
+    }
+  ],
+  "expected": {
+    "sceneId": "ending_quiet",
+    "flags": {
+      "testimony_published": true,
+      "archive_key_authenticated": false,
+      "nia_public_consent": false,
+      "order_verified": false,
+      "testimony_corrected": true,
+      "shelter_done": true,
+      "shelter_visited": true,
+      "shelter_reserved": false,
+      "shelter_hall": true,
+      "shelter_unobserved": false,
+      "shelter_restored": false,
+      "shelter_followup_helped": true,
+      "notice_done": true,
+      "notice_private_confirmed": true,
+      "notice_allocation_committed": true,
+      "notice_allocation_42": true,
+      "notice_receipt_observed": false
+    },
+    "journal": [
+      "wall-account",
+      "notice-promise",
+      "notice-receipt",
+      "notice-allocation"
+    ]
+  }
+}

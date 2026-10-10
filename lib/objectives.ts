@@ -70,6 +70,7 @@ export function nextStep(state: GameState): string {
   if (state.sceneId.startsWith("act3_freight_")) return "Ask what the clinic actually acknowledged. A late reply supplies no clearance or patient outcome.";
   if (state.sceneId.startsWith("act3_notice_")) return "Keep dispatch, receipt and attendance separate. A private reply booking cannot erase an observed public window.";
   if (state.sceneId === "act3_nia_contact") return "Nia chooses whether to answer future questions. Contact permission changes no testimony or public consent.";
+  if (["act2_notice_allocation", "act2_notice_allocation_review", "act2_notice_offer", "act2_notice_counter", "act2_notice_capacity", "act2_notice_privacy_refusal"].includes(state.sceneId)) return "Early clinic/dispatch capacities: 4/4. Later capacities: 3/2. Drafts are free; homes cannot be a return contact.";
   if (state.sceneId.startsWith("act2_notice_")) return "Separate public routing from private homes. Choose a channel; a dispatch receipt guarantees no attendance.";
   if (["memory_cross_exam", "memory_assurance", "memory_channel"].includes(state.sceneId)) return "Replay what Mara knew and who supplied her assurance. Attribute her recorded answers; no testimony becomes an independent issuing-key test.";
   if (state.sceneId === "memory_sequence") return "Place the inspected fragments from earliest to latest, consulting source timestamps. Your draft is saved; reset changes no evidence.";
