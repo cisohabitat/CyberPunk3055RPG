@@ -1,0 +1,78 @@
+{
+  "format": "saint-shard-save",
+  "schema": 1,
+  "savedAt": "2026-10-10T22:02:27.108Z",
+  "checksum": "bd18c43c",
+  "state": {
+    "version": 2,
+    "handle": "Replay",
+    "givenName": "Ada",
+    "origin": "spire",
+    "complication": "on-file",
+    "stats": {
+      "chrome": 5,
+      "nerve": 2,
+      "face": 2,
+      "ghost": 1
+    },
+    "factions": {
+      "quill": 1,
+      "lumen": 0,
+      "helion": 3,
+      "wards": 0
+    },
+    "creds": 190,
+    "strain": 0,
+    "items": [],
+    "flags": {
+      "on_file": true,
+      "opening_survival": true,
+      "opening_neighbor_heard": true,
+      "opening_complete": true,
+      "met_quill": true,
+      "haggled": true,
+      "hired": true,
+      "chapel_window_started": true,
+      "chapel_window_2": true,
+      "chapel_window_scouted": true
+    },
+    "journal": [
+      {
+        "id": "quill-agreed-to-ninety-up-front",
+        "text": "Quill agreed to ninety up front."
+      },
+      {
+        "id": "quill-hired-you-to-lift-mara-voss-s-unedited-hou",
+        "text": "Quill hired you to lift Mara Voss's unedited hour from Glass Chapel."
+      }
+    ],
+    "chapters": [],
+    "rolls": [
+      {
+        "label": "Push Quill",
+        "roll": 8,
+        "total": 10,
+        "dc": 8,
+        "success": true
+      }
+    ],
+    "log": [
+      "Walk toward the stall.",
+      "Keep tomorrow paid for.",
+      "Ask her what she means.",
+      "Sit down and hear Quill’s offer.",
+      "Discuss the advance.",
+      "Push the advance.",
+      "Pocket the promise.",
+      "Take the job.",
+      "Use the patrol’s service window. Three saved opportunities.",
+      "Scout the patrol gap. Spend 1 opportunity."
+    ],
+    "sceneId": "chapel_window_plan",
+    "pendingCheck": {
+      "sceneId": "chapel_window_plan",
+      "choiceId": "window-use-gap",
+      "roll": 8
+    }
+  }
+}

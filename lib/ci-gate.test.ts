@@ -55,4 +55,12 @@ describe("production gate", () => {
     assert.match(workflow, /npm run build/);
     assert.match(vercel, /node scripts\/wait-for-ci\.mjs/);
   });
+
+  it("waits for a newer queued rerun even before its start time exists", () => {
+    assert.equal(productionDecision([
+      { ...run("Test", "completed", "success"), id: 100 },
+      { ...run("Build", "completed", "success"), id: 101 },
+      { ...run("Build", "queued", null), id: 102, started_at: null },
+    ]), "wait");
+  });
 });

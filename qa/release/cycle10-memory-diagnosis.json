@@ -1,0 +1,230 @@
+{
+  "schema": 1,
+  "revision": "c0b4895c3581810c9dce84c1393cd7637663a737",
+  "runtimeSources": {
+    "lib/sound.ts": "8488d57eaec7a981b3278e20b4dd30b6d13f2fdf7cea551d55cf12c0763248af",
+    "components/GameApp.tsx": "f28e8914214e6569fa632c1cb7f24730384c58afc10394734f254640d2c71266",
+    "components/PlayScreen.tsx": "9bdf9c37f46bea711633bcc50b24989b46e834a6575ea453bb775ff6d3a137b6",
+    "components/VoiceLine.tsx": "b7db21f857b9cb7b5b7188ec7e8ec4545d1c2568af0235eabf697154fb74433e"
+  },
+  "playwright": "1.64.0",
+  "chromium": "151.0.7922.173",
+  "arms": [
+    {
+      "name": "original",
+      "rounds": 24,
+      "imports": 216,
+      "heapFirstBytes": 5350940,
+      "heapLastBytes": 8170940,
+      "sourceCleanup": {
+        "sourcesCreated": 888,
+        "sourcesDisposed": 888,
+        "buffersCleared": 888,
+        "liveSources": 0,
+        "peakLiveSources": 3,
+        "starts": 888,
+        "stops": 888
+      },
+      "snapshots": [
+        {
+          "stage": "warm",
+          "sha256": "b3256073d240017610951551c2473e3346174484b3e691b57eaa9026a5fe89e1",
+          "detachedDialogs": 27
+        },
+        {
+          "stage": "end",
+          "sha256": "976584b18ed75c0d6286919caa9a1b02be92fc410748921a92cacf18bbe16eb1",
+          "detachedDialogs": 216
+        },
+        {
+          "stage": "settled",
+          "sha256": "6f53dde036043d41c56b6fb10043b8737ae1acb55ef8b701d668ea77ab18b6cc",
+          "detachedDialogs": 216
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "console-cleared",
+      "rounds": 24,
+      "imports": 216,
+      "heapFirstBytes": 5354708,
+      "heapLastBytes": 8173608,
+      "sourceCleanup": {
+        "sourcesCreated": 888,
+        "sourcesDisposed": 888,
+        "buffersCleared": 888,
+        "liveSources": 0,
+        "peakLiveSources": 3,
+        "starts": 888,
+        "stops": 888
+      },
+      "snapshots": [
+        {
+          "stage": "warm",
+          "sha256": "c00e5a4842402e7a07e325a831a2ca7f67c0401d01dbcb8ae2fc3ba43feb3422",
+          "detachedDialogs": 27
+        },
+        {
+          "stage": "end",
+          "sha256": "81a78263f7152820d110c0a4b8bdf61c5247cd1004a2a3c7c3628c732ece2957",
+          "detachedDialogs": 216
+        },
+        {
+          "stage": "settled",
+          "sha256": "c56236cf9c806e39f8efc7128919b4e0f1decca03f104d0081acbd0f0fa0b2fd",
+          "detachedDialogs": 216
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "handles-disposed",
+      "rounds": 24,
+      "imports": 216,
+      "heapFirstBytes": 5354396,
+      "heapLastBytes": 8296052,
+      "sourceCleanup": {
+        "sourcesCreated": 888,
+        "sourcesDisposed": 888,
+        "buffersCleared": 888,
+        "liveSources": 0,
+        "peakLiveSources": 3,
+        "starts": 888,
+        "stops": 888
+      },
+      "snapshots": [
+        {
+          "stage": "warm",
+          "sha256": "055a42145753196265f8ae8a0ae1dc99ac8456b43647d8440e0db1b59c99424e",
+          "detachedDialogs": 27
+        },
+        {
+          "stage": "end",
+          "sha256": "6d507dd67647abd83adccf10d8c8ad5121a9e32dc1cd5d830b38045c387c7a8e",
+          "detachedDialogs": 216
+        },
+        {
+          "stage": "settled",
+          "sha256": "6ac53fbf18c086042c36ec3259cf4e8e1d1076b6bd2576eb1cf94ea5d5208e09",
+          "detachedDialogs": 216
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "native-file",
+      "rounds": 24,
+      "imports": 216,
+      "heapFirstBytes": 5336104,
+      "heapLastBytes": 8134520,
+      "sourceCleanup": {
+        "sourcesCreated": 888,
+        "sourcesDisposed": 888,
+        "buffersCleared": 888,
+        "liveSources": 0,
+        "peakLiveSources": 3,
+        "starts": 888,
+        "stops": 888
+      },
+      "snapshots": [
+        {
+          "stage": "warm",
+          "sha256": "4e781ad99a36c7c2b6e7074ccc3ac508aaac1fb345fb65bcd1381d50e1ba7909",
+          "detachedDialogs": 27
+        },
+        {
+          "stage": "end",
+          "sha256": "5939f2ea0eaad81614e0c9e33749368c1f5e17e40cba0b1b1794b0f220db29d8",
+          "detachedDialogs": 216
+        },
+        {
+          "stage": "settled",
+          "sha256": "2c1a3f6907364b1382fd3241ab1885b915e0e1914626fe516c0cee9c58f46d06",
+          "detachedDialogs": 216
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "dom-event",
+      "rounds": 24,
+      "imports": 216,
+      "heapFirstBytes": 5226712,
+      "heapLastBytes": 6028520,
+      "sourceCleanup": {
+        "sourcesCreated": 888,
+        "sourcesDisposed": 888,
+        "buffersCleared": 888,
+        "liveSources": 0,
+        "peakLiveSources": 3,
+        "starts": 888,
+        "stops": 888
+      },
+      "snapshots": [
+        {
+          "stage": "warm",
+          "sha256": "2f9f29c0ff0fefa57f8bb77f1d2239025587358858343c8953c27d9797ec2523",
+          "detachedDialogs": 0
+        },
+        {
+          "stage": "end",
+          "sha256": "a69a9cc7ad96b8c70d664c42e21501d9c6043af98221225eb1b598bdc5e178ea",
+          "detachedDialogs": 0
+        },
+        {
+          "stage": "settled",
+          "sha256": "0a00a01d93941f236378294c5eee988e69645a31ffaef903d05ed8d0ebc70f58",
+          "detachedDialogs": 0
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "cdp-file",
+      "rounds": 24,
+      "imports": 216,
+      "heapFirstBytes": 5221204,
+      "heapLastBytes": 6019464,
+      "sourceCleanup": {
+        "sourcesCreated": 888,
+        "sourcesDisposed": 888,
+        "buffersCleared": 888,
+        "liveSources": 0,
+        "peakLiveSources": 3,
+        "starts": 888,
+        "stops": 888
+      },
+      "snapshots": [
+        {
+          "stage": "warm",
+          "sha256": "28fa26a8b78ca3352784d70256bffbbba15366bdeb1d8403bace683ad739e71d",
+          "detachedDialogs": 0
+        },
+        {
+          "stage": "end",
+          "sha256": "6b894134ae13b18d2785c4f7a25c27798661290f94dace130fb593d6c307f1c4",
+          "detachedDialogs": 0
+        },
+        {
+          "stage": "settled",
+          "sha256": "f427be8f5dd15598fe5fc3672f18a3a33b0a74db058ed0fb73f5d4e6345570da",
+          "detachedDialogs": 0
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "retainerPath": [
+    "GC roots",
+    "Global handles",
+    "internal DevTools console handle",
+    "HTMLInputElement",
+    "input[type=file]",
+    "label",
+    "div.dialog.wide",
+    "detached dialog.overlay"
+  ],
+  "finding": "Playwright _setInputFiles creates a retargeted input handle without disposing it. Clearing a separate CDP console session or emitted console args does not release it. Explicitly owned/released CDP native file handles and browser-local File/change events eliminate detached-dialog accumulation. No game leak fix is claimed.",
+  "limitations": "Internal controlled workloads on one host, same unchanged game build. Raw snapshots remain local. Heap includes debugger/JIT overhead and excludes resident/native audio memory; no device or human acceptance."
+}

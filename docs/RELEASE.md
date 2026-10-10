@@ -48,3 +48,8 @@ Keep stable ids separate from displayed prose. Inventory speaker labels, choice 
 After building, run `npm run production:report`. CI generates the same report and runs `production:verify` against a temporary production server, then retains production evidence for thirty days. It includes source/route coverage, authored mission data, an offline review catalog, asset hashes, and provisional per-file/aggregate gzip envelopes from `qa/production/budgets.json`. Technical violations fail Build. Hashes do not certify rights, and synthetic resource probes do not certify device support.
 
 Commercial candidate review uses `npm run production:report -- --release`, which fails while any of the six independent gates in `qa/production/acceptance.json` remains pending or lacks supporting evidence. The report validates evidence-reference existence. Gate status must come from completed human work. Existing demo hosting retains its established Test/Build deployment gate. See [six-phase execution](PHASE_EXECUTION.md) and the [research protocol](RESEARCH.md).
+
+
+## Cycle 10 endurance and rollback rehearsal
+
+[RELEASE_READINESS.md](RELEASE_READINESS.md) records the corrected diagnostic, immutable previous-public-release exports and same-origin isolated rollback/recovery command. Production waits at most twenty minutes for the exact revision, with bounded ten-second status requests; uncertain or unsuccessful checks still skip. Keep raw heap snapshots local because they can contain run data. Internal rehearsal does not switch the live alias or close any human production gate.

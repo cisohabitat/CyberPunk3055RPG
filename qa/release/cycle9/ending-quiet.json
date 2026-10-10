@@ -1,0 +1,271 @@
+{
+  "format": "saint-shard-save",
+  "schema": 1,
+  "savedAt": "2026-10-10T22:02:28.038Z",
+  "checksum": "62155141",
+  "state": {
+    "version": 2,
+    "handle": "BenchRunner",
+    "givenName": "BenchRunner",
+    "origin": "spire",
+    "complication": "on-file",
+    "stats": {
+      "chrome": 5,
+      "nerve": 2,
+      "face": 2,
+      "ghost": 1
+    },
+    "factions": {
+      "quill": 2,
+      "lumen": 2,
+      "helion": 1,
+      "wards": 4
+    },
+    "creds": 375,
+    "strain": 4,
+    "items": [
+      "signal-baffle"
+    ],
+    "flags": {
+      "on_file": true,
+      "opening_survival": true,
+      "opening_neighbor_heard": true,
+      "opening_complete": true,
+      "met_quill": true,
+      "haggled": true,
+      "hired": true,
+      "chapel_method_prepared": true,
+      "chapel_service_offer": true,
+      "chapel_method_committed": true,
+      "chapel_method_face": true,
+      "chapel_shift_owed": true,
+      "watched": true,
+      "knows_truth": true,
+      "honest": true,
+      "met_lumen": true,
+      "pact_copy": true,
+      "lumen_here": true,
+      "kerr_talked": true,
+      "met_kerr": true,
+      "heard_memo": true,
+      "met_mara": true,
+      "memory_signature": true,
+      "memory_order": true,
+      "memory_roster": true,
+      "memory_reconstructed": true,
+      "memory_prepared": true,
+      "memory_intact": true,
+      "act1_done": true,
+      "act1_sold": true,
+      "perk_trained": true,
+      "perk_chrome": true,
+      "origin_done": true,
+      "origin_helped": true,
+      "met_ives": true,
+      "kerr_route_promised": true,
+      "kerr_route_private": true,
+      "kerr_entry_stairs": true,
+      "kerr_exit_gap": true,
+      "kerr_route_ready": true,
+      "kerr_route_started": true,
+      "kerr_route_collected": true,
+      "kerr_method_rig": true,
+      "kerr_route_done": true,
+      "kerr_route_delivered": true,
+      "kerr_rig_returned": true,
+      "archive_briefed": true,
+      "met_edda": true,
+      "archive_indexed": true,
+      "archive_compared": true,
+      "archive_done": true,
+      "order_verified": true,
+      "archive_key_authenticated": true,
+      "archive_custody": true,
+      "edda_name_withheld": true,
+      "memory_response_done": true,
+      "memory_source_shared": true,
+      "met_sera": true,
+      "act2_stand": true,
+      "act2_done": true,
+      "chapel_response_heard": true,
+      "visited_edda": true,
+      "visited_records": true,
+      "kerr_route_visit": true,
+      "kerr_contact_open": true,
+      "kerr_question_done": true,
+      "testimony_source": true,
+      "testimony_no_quote": true,
+      "testimony_answered": true,
+      "testimony_done": true,
+      "testimony_published": true
+    },
+    "journal": [
+      {
+        "id": "quill-agreed-to-ninety-up-front",
+        "text": "Quill agreed to ninety up front."
+      },
+      {
+        "id": "quill-hired-you-to-lift-mara-voss-s-unedited-hou",
+        "text": "Quill hired you to lift Mara Voss's unedited hour from Glass Chapel."
+      },
+      {
+        "id": "chapel-shift-promise",
+        "kind": "promise",
+        "text": "The orderly accepted your own return shift. The tool reservation cost fifteen creds; entry left a watched work docket. No patient access or recording permission was offered."
+      },
+      {
+        "id": "ward-nine",
+        "text": "Mara Voss signed the Ward Nine coolant dump. Three hundred people, one memo."
+      },
+      {
+        "id": "memory-signature",
+        "text": "Mara authorizes the flush. She says the tower promised an evacuation. The signature proves authorization; her explanation still needs corroboration.",
+        "kind": "claim"
+      },
+      {
+        "id": "memory-order",
+        "text": "The exported receipt records an instruction canceling evacuation while retaining the flush. Its contents are visible; the issuing key still needs independent verification during The Week.",
+        "kind": "fact"
+      },
+      {
+        "id": "memory-roster",
+        "text": "Ivo Pell and Junie Calder were on shift. Nia Pell signed the housing slip and reached a service exit. She can corroborate the receipt, but a public roster would expose where she sleeps.",
+        "kind": "fact"
+      },
+      {
+        "id": "memory-analysis",
+        "text": "Mara authorized the flush before the recorded evacuation cancellation. The receipt's issuer needs independent corroboration; her explanation is not absolution.",
+        "kind": "claim"
+      },
+      {
+        "id": "public-packet",
+        "text": "The packet reports an evacuation cancellation after Mara's signature and explicitly marks the issuing key unverified.",
+        "kind": "claim"
+      },
+      {
+        "id": "archive-promise",
+        "text": "Trace the tower receipt to corroborate Mara's hour.",
+        "kind": "promise"
+      },
+      {
+        "id": "you-sold-mara-s-hour",
+        "text": "You sold Mara's hour."
+      },
+      {
+        "id": "kerr-collection-promise",
+        "kind": "promise",
+        "text": "You promised to collect Kerr's own unpowered brace without entering him on the depot recipient register. Delivery and treatment are separate outcomes."
+      },
+      {
+        "id": "kerr-itinerary",
+        "kind": "fact",
+        "text": "Departed through public stairs toward patrol gap. Spent 0 creds and took 1 planned strain. Entry used no recipient register."
+      },
+      {
+        "id": "kerr-collection-outcome",
+        "kind": "fact",
+        "text": "Kerr received his closed brace case. No depot recipient entry was made. No fitting, treatment result, historical evidence or witness permission was supplied."
+      },
+      {
+        "id": "verified-order",
+        "text": "The service archive authenticates the key that canceled Ward Nine's evacuation.",
+        "kind": "fact"
+      },
+      {
+        "id": "archive-custody",
+        "text": "Sera holds the source original and ledger reference. The circulating copy withholds Edda's name; any employer trace on the extraction remains.",
+        "kind": "fact"
+      },
+      {
+        "id": "chapel-return-response",
+        "kind": "fact",
+        "text": "Lumen reads the service docket. 'The orderly accepted a shift, not a confession. You still owe the work you offered.' Fifteen creds reserved the orderly’s tools. The accepted service bargain put your handle on a watched work docket. Earlier attention remains; a later quiet route did not erase it. You returned to Lumen to hear the Chapel record. No work was completed, watch erased or permission granted by this visit."
+      },
+      {
+        "id": "kerr-personal-answer",
+        "kind": "claim",
+        "text": "Kerr says he hopes to walk to a table without counting the steps. The brace has not been fitted or tested; this personal answer supplied no favor, evidence or treatment result."
+      },
+      {
+        "id": "wall-account",
+        "kind": "fact",
+        "text": "The public account identifies a reader-authenticated issuing key. Nia's private recording was not quoted publicly."
+      }
+    ],
+    "chapters": [
+      "The Sale",
+      "Open Street"
+    ],
+    "rolls": [
+      {
+        "label": "Authenticate the counter-order",
+        "roll": 8,
+        "total": 18,
+        "dc": 9,
+        "success": true
+      },
+      {
+        "label": "Map the command index",
+        "roll": 8,
+        "total": 15,
+        "dc": 7,
+        "success": true
+      },
+      {
+        "label": "Close the maintenance key",
+        "roll": 8,
+        "total": 15,
+        "dc": 9,
+        "success": true
+      },
+      {
+        "label": "Tell Kerr the truth",
+        "roll": 8,
+        "total": 11,
+        "dc": 8,
+        "success": true
+      },
+      {
+        "label": "Offer a service shift",
+        "roll": 8,
+        "total": 10,
+        "dc": 7,
+        "success": true
+      },
+      {
+        "label": "Push Quill",
+        "roll": 8,
+        "total": 10,
+        "dc": 8,
+        "success": true
+      }
+    ],
+    "log": [
+      "Read the neighborhood's response to your packet.",
+      "Attach the corroborating source, with locations withheld.",
+      "Stand where the names are.",
+      "The districts again.",
+      "Go down to Ward Nine.",
+      "Ward Nine",
+      "Ask Lumen what your Chapel route left behind.",
+      "Keep the actual reply. Return to the neighbors.",
+      "Answer Edda’s message about the archive.",
+      "Record her limits and leave the employment review unresolved.",
+      "Sit at the records table.",
+      "Leave the source and its limits available for inspection.",
+      "Go directly to the names.",
+      "Tell her why you came.",
+      "Hear Kerr’s response to the collection.",
+      "Keep the receipt and the limits in his own words.",
+      "Use the one question Kerr left open.",
+      "Keep the small answer without turning it into a favor.",
+      "Prepare an account people can question after you leave.",
+      "Attach independent corroboration and state what it establishes.",
+      "Keep Nia's words private; describe only the source status.",
+      "Identify the reader-authenticated issuing key and retain the original.",
+      "File the public account with its sources and limits.",
+      "Leave the wall to the rain."
+    ],
+    "sceneId": "ending_quiet"
+  }
+}

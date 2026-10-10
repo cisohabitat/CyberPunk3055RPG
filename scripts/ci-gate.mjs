@@ -3,7 +3,12 @@ export const BUILD_CHECK = "Build";
 
 export function latestRun(runs, name) {
   const matches = runs.filter((run) => run.name === name);
-  matches.sort((a, b) => String(b.started_at ?? "").localeCompare(String(a.started_at ?? "")));
+  // A newly queued rerun may have no started_at yet. GitHub's assigned run id
+  // still orders it after an earlier successful attempt.
+  matches.sort((a, b) => {
+    if (Number.isSafeInteger(a.id) && Number.isSafeInteger(b.id) && a.id !== b.id) return b.id - a.id;
+    return String(b.started_at ?? "").localeCompare(String(a.started_at ?? ""));
+  });
   return matches[0];
 }
 

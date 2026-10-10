@@ -326,3 +326,12 @@ Zero-volume channels avoid new media requests. Muting a channel stops its active
 Memory inspection/timeline controls respect the number-shortcut opt-out in their accessible labels. Controller navigation reaches active sheet panels. No new scene or asset is needed; existing accompanying art remains suitable. Preserve version 2, `saint-shard-3055-v1`, readable/silent/text-only play, visible goals, 1d10 and caps, all four finales and the 24 MiB decoded cache.
 
 `npm run production:audio-probe -- URL --minutes 10` exercises actual replay-generated states through native save import, voice cancellation, pagehide/resume and Sound off. Its bounded QA instrumentation is never imported by the game. Source cleanup and forced-GC JS heap samples support internal diagnosis; native audio memory, physical devices, two-hour endurance and human listening remain separate. The blank `qa/research/device-access-sessions.csv` records actual device/access reviews. See [PLAYER_EXPERIENCE.md](docs/PLAYER_EXPERIENCE.md) for verification and pending acceptance; no new grade is claimed.
+
+
+### Phase 6, cycle 10 — internal release readiness
+
+The endurance probe now releases its native file-input debugger handles, avoiding Playwright 1.64's retained closed save dialogs. It records forced-GC heap, DOM/listener counts, audio cleanup, source hashes and elapsed duration; `--workload idle` provides a control and `--snapshots PATH` saves local heap snapshots. Keep snapshots local because they can contain run data. This diagnosis does not imply a game memory-leak fix or physical-device acceptance.
+
+`npm run production:rehearse -- --previous PATH` compares separate built worktrees through one temporary local browser origin. Native previous-release exports cover a pending eight and all four finales; candidate/rollback/re-promotion preserve saves, slots, preferences and codex. Corruption recovery, cancelled replacement and once-only pending costs are rehearsed without switching the live site. Version 1 is tested with a labeled synthetic fixture.
+
+Production waits up to twenty minutes for exact-commit Test/Build success, with ten-second status-request limits. Failed, unreadable, late or timed-out checks still skip publication. No scene or asset is added; existing art remains suitable. Preserve version 2, `saint-shard-3055-v1`, 1d10, caps, four finales and the 24 MiB decoded cache. See [the implementation, repeatable checks and pending review](docs/RELEASE_READINESS.md). The provisional 7.8 grade and all six human acceptance gates remain unchanged.

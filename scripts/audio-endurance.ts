@@ -1,6 +1,7 @@
 import { chromium, expect } from "@playwright/test";
-import { readFileSync, mkdirSync, writeFileSync } from "node:fs";
-import { dirname } from "node:path";
+import { readFileSync, mkdirSync, mkdtempSync, rmSync, writeFileSync, appendFileSync } from "node:fs";
+import { dirname, join } from "node:path";
+import { tmpdir } from "node:os";
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import { commitChoice, createCharacter, getScene, presentChoices } from "../lib/engine";
@@ -10,6 +11,7 @@ import { exportRun } from "../lib/vault";
 import type { ReplaySpec } from "../lib/story-replay";
 import type { GameState } from "../lib/types";
 import { installAudioReview, type AudioReview } from "../qa/production/audio-review";
+import { setNativeFile } from "../qa/production/native-file";
 
 async function main() {
   const args = process.argv.slice(2), url = args[0];
@@ -18,6 +20,9 @@ async function main() {
   const minutes = Number(option("--minutes", "10"));
   if (!Number.isFinite(minutes) || minutes < 1 || minutes > 120) throw new Error("Minutes must be between 1 and 120");
   const out = option("--out", "qa/production/reports/audio-endurance.json");
+  const workload = option("--workload", "imports");
+  if (!["imports", "idle"].includes(workload)) throw new Error("Workload must be imports or idle");
+  const snapshotDir = option("--snapshots", "");
   const states = new Map<string, GameState>();
   for (const file of ["integration-names", "integration-quiet", "window-scouted"]) {
     const spec = JSON.parse(readFileSync(`qa/routes/${file}.json`, "utf8")) as ReplaySpec;
@@ -35,24 +40,36 @@ async function main() {
   }
   const revision = execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8" }).trim();
   const dirty = Boolean(execFileSync("git", ["status", "--porcelain"], { encoding: "utf8" }).trim());
-  const testedSources = Object.fromEntries(["lib/sound.ts", "components/GameApp.tsx", "components/PlayScreen.tsx", "components/VoiceLine.tsx", "qa/production/audio-review.ts", "scripts/audio-endurance.ts"].map(file => [file, createHash("sha256").update(readFileSync(file)).digest("hex")]));
+  const testedSources = Object.fromEntries(["lib/sound.ts", "components/GameApp.tsx", "components/PlayScreen.tsx", "components/VoiceLine.tsx", "qa/production/audio-review.ts", "qa/production/native-file.ts", "scripts/audio-endurance.ts"].map(file => [file, createHash("sha256").update(readFileSync(file)).digest("hex")]));
   const browser = await chromium.launch({ executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH, args: ["--no-sandbox"] });
   const page = await browser.newPage({ viewport: { width: 390, height: 844 }, reducedMotion: "reduce" });
-  const errors: string[] = [], samples: { seconds: number; heapBytes: number; audio: AudioReview }[] = [];
+  const errors: string[] = [], samples: { seconds: number; heapBytes: number; nodes: number; listeners: number; documents: number; audio: AudioReview }[] = [];
   page.on("pageerror", error => errors.push(error.message));
   // tsx preserves function names with a module helper; serialized browser QA needs it too.
   await page.addInitScript({ content: `var __name = (fn, name) => Object.defineProperty(fn, "name", { value: name, configurable: true }); (${installAudioReview.toString()})();` });
   await page.addInitScript(() => localStorage.setItem("saint-shard-preferences", JSON.stringify({ sound: true, reading: "all", motion: "reduce", artwork: "none", effects: 0 })));
   const cdp = await page.context().newCDPSession(page); await cdp.send("Performance.enable");
+  const fileDir = mkdtempSync(join(tmpdir(), "saint-shard-endurance-")), importPath = join(fileDir, "run.json");
+  const snapshots: string[] = [];
+  async function snapshot(label: string) {
+    if (!snapshotDir) return;
+    mkdirSync(snapshotDir, { recursive: true });
+    const path = join(snapshotDir, `${label}.heapsnapshot`); writeFileSync(path, "");
+    const listener = ({ chunk }: { chunk: string }) => appendFileSync(path, chunk);
+    cdp.on("HeapProfiler.addHeapSnapshotChunk", listener);
+    try { await cdp.send("HeapProfiler.takeHeapSnapshot", { reportProgress: false }); snapshots.push(path); }
+    finally { cdp.off("HeapProfiler.addHeapSnapshotChunk", listener); }
+  }
   const saved = () => page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
   const audio = () => page.evaluate(() => (window as unknown as { audioReview: AudioReview }).audioReview);
   const start = Date.now(); let rounds = 0, restored = 0;
   try {
     await page.goto(url);
     do {
-      for (const state of states.values()) {
+      for (const state of workload === "idle" ? (rounds === 0 ? [states.values().next().value!] : []) : states.values()) {
         await page.getByRole("button", { name: "Saves", exact: true }).click();
-        await page.getByLabel("Import a saved run").setInputFiles({ name: "audio-qa.json", mimeType: "application/json", buffer: Buffer.from(exportRun(state)) });
+        writeFileSync(importPath, exportRun(state));
+        await setNativeFile(cdp, importPath);
         const confirm = page.getByRole("button", { name: "Confirm load", exact: true });
         if (restored > 0) await confirm.click();
         await expect(page.getByRole("dialog")).toHaveCount(0);
@@ -77,10 +94,13 @@ async function main() {
       rounds++;
       await cdp.send("HeapProfiler.collectGarbage");
       const metrics = await cdp.send("Performance.getMetrics");
-      const sample = { seconds: (Date.now() - start) / 1000, heapBytes: metrics.metrics.find(m => m.name === "JSHeapUsedSize")!.value, audio: await audio() };
-      samples.push(sample); console.log(JSON.stringify({ round: rounds, seconds: sample.seconds, heapBytes: sample.heapBytes, live: sample.audio.liveSources }));
+      const metric = (name: string) => metrics.metrics.find(m => m.name === name)!.value;
+      const sample = { seconds: (Date.now() - start) / 1000, heapBytes: metric("JSHeapUsedSize"), nodes: metric("Nodes"), listeners: metric("JSEventListeners"), documents: metric("Documents"), audio: await audio() };
+      samples.push(sample); console.log(JSON.stringify({ round: rounds, seconds: sample.seconds, heapBytes: sample.heapBytes, nodes: sample.nodes, listeners: sample.listeners, live: sample.audio.liveSources }));
+      if (rounds === 3) await snapshot("warm");
       if (Date.now() - start < minutes * 60_000) await page.waitForTimeout(Math.min(30_000, minutes * 60_000 - (Date.now() - start)));
     } while (Date.now() - start < minutes * 60_000);
+    await snapshot("end");
     await page.getByRole("button", { name: "Settings", exact: true }).click();
     await page.getByLabel("Sound enabled", { exact: true }).uncheck();
     await expect.poll(async () => (await audio()).liveSources).toBe(0);
@@ -88,7 +108,7 @@ async function main() {
     mkdirSync(dirname(out), { recursive: true });
     const finalAudio = await audio();
     if (finalAudio.sourcesCreated !== finalAudio.sourcesDisposed || finalAudio.sourcesCreated !== finalAudio.buffersCleared) throw new Error("Final Sound off retained sources or buffers");
-    writeFileSync(out, JSON.stringify({ revision, dirty, testedSources, url, requestedMinutes: minutes, elapsedSeconds: (Date.now() - start) / 1000, rounds, restored, plans: [...states.keys()], finalAudio, samples, errors, limitations: "Internal authored-state automation on one host. Forced-GC JS heap excludes native audio buffers and resident memory; no physical-device, two-hour, human listening, or population-percentile acceptance." }, null, 2));
-  } finally { await browser.close(); }
+    writeFileSync(out, JSON.stringify({ revision, dirty, testedSources, url, workload, requestedMinutes: minutes, elapsedSeconds: (Date.now() - start) / 1000, rounds, restored, plans: [...states.keys()], finalAudio, samples, snapshots, errors, limitations: "Internal authored-state automation on one host. Native file input uses explicitly released CDP handles to avoid Playwright 1.64 retargeted-input retention. Forced-GC JS heap includes debugger/JIT overhead and excludes native audio buffers and resident memory. Snapshots can contain run data: keep local, never automatically upload. No physical-device, human listening, or population-percentile acceptance; duration is recorded, not assumed." }, null, 2));
+  } finally { await browser.close(); rmSync(fileDir, { recursive: true, force: true }); }
 }
 main().catch(error => { console.error(error); process.exitCode = 1; });

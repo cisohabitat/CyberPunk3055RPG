@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "url": "https://cyberpunk3055rpg.vercel.app/",
+  "revision": "c0b4895c3581810c9dce84c1393cd7637663a737",
+  "deploymentId": "dpl_5fe2MCQvkvywHWBADVhaKWXyvwUA",
+  "capturedAt": "2026-10-10T22:02:28.945Z",
+  "method": "Native Export run downloads from the previous public release. Internal replay/campaign states were imported first; pending die 8 is a directed fixture, not a natural roll. No real player data or human acceptance.",
+  "files": [
+    {
+      "file": "pending-window.json",
+      "sha256": "dbc2302540c26bbe12ba6e4913ecb57d6cdae32a235dc3e7460207559f9f250b",
+      "sceneId": "chapel_window_plan",
+      "origin": "spire",
+      "pendingCheck": {
+        "sceneId": "chapel_window_plan",
+        "choiceId": "window-use-gap",
+        "roll": 8
+      }
+    },
+    {
+      "file": "ending-names.json",
+      "sha256": "9632547e27c839f69a791ef95857470da56240d239751776726574ec4b68a9af",
+      "sceneId": "ending_names",
+      "origin": "spire",
+      "pendingCheck": null
+    },
+    {
+      "file": "ending-quiet.json",
+      "sha256": "d9ba4b7cad87413c82716e9ed8f2aaceacac2a2154245eb33782a2a518793a68",
+      "sceneId": "ending_quiet",
+      "origin": "spire",
+      "pendingCheck": null
+    },
+    {
+      "file": "ending-witness.json",
+      "sha256": "3882997ff8b38409c56b6e0bf25850615dec54dc5ebf525b949d4da888702baa",
+      "sceneId": "ending_witness",
+      "origin": "spire",
+      "pendingCheck": null
+    },
+    {
+      "file": "ending-listed.json",
+      "sha256": "86f6a03f08d141a5d4a1375d31deba8f63e6387e71186dc21ed89573996e6f92",
+      "sceneId": "ending_listed",
+      "origin": "spire",
+      "pendingCheck": null
+    }
+  ],
+  "errors": []
+}

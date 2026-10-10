@@ -1,0 +1,331 @@
+{
+  "format": "saint-shard-save",
+  "schema": 1,
+  "savedAt": "2026-10-10T22:02:28.910Z",
+  "checksum": "f0f26558",
+  "state": {
+    "version": 2,
+    "handle": "BenchRunner",
+    "givenName": "BenchRunner",
+    "origin": "spire",
+    "complication": "on-file",
+    "stats": {
+      "chrome": 5,
+      "nerve": 2,
+      "face": 2,
+      "ghost": 1
+    },
+    "factions": {
+      "quill": 2,
+      "lumen": 2,
+      "helion": 4,
+      "wards": 2
+    },
+    "creds": 450,
+    "strain": 2,
+    "items": [
+      "spoof-chip",
+      "signal-baffle"
+    ],
+    "flags": {
+      "on_file": true,
+      "opening_survival": true,
+      "opening_neighbor_heard": true,
+      "opening_complete": true,
+      "met_quill": true,
+      "haggled": true,
+      "hired": true,
+      "quiet": true,
+      "knows_truth": true,
+      "honest": true,
+      "met_lumen": true,
+      "pact_copy": true,
+      "lumen_here": true,
+      "copied": true,
+      "met_mara": true,
+      "heard_memo": true,
+      "memory_signature": true,
+      "memory_order": true,
+      "memory_roster": true,
+      "memory_assurance_heard": true,
+      "memory_channel_heard": true,
+      "memory_examined": true,
+      "memory_reconstructed": true,
+      "memory_prepared": true,
+      "memory_intact": true,
+      "kerr_talked": true,
+      "met_kerr": true,
+      "act1_done": true,
+      "act1_both": true,
+      "perk_trained": true,
+      "perk_chrome": true,
+      "origin_done": true,
+      "origin_helped": true,
+      "met_ives": true,
+      "kerr_told": true,
+      "pump_kerr": true,
+      "pump_attempted": true,
+      "pump_restored": true,
+      "pump_chrome": true,
+      "pump_done": true,
+      "pump_local": true,
+      "notice_started": true,
+      "notice_slip": true,
+      "notice_map": true,
+      "notice_card": true,
+      "notice_plan_invalid": true,
+      "notice_privacy_refused": true,
+      "notice_schedule_42": true,
+      "notice_plan_feasible": true,
+      "notice_allocation_committed": true,
+      "notice_private_confirmed": true,
+      "notice_allocation_42": true,
+      "notice_allocation_standard": true,
+      "notice_done": true,
+      "archive_briefed": true,
+      "met_edda": true,
+      "archive_indexed": true,
+      "archive_compared": true,
+      "archive_done": true,
+      "order_verified": true,
+      "archive_key_authenticated": true,
+      "archive_custody": true,
+      "edda_name_withheld": true,
+      "memory_response_done": true,
+      "memory_source_shared": true,
+      "met_sera": true,
+      "act2_deal": true,
+      "act2_done": true,
+      "visited_notice": true,
+      "notice_followed_up": true,
+      "notice_receipt_observed": true,
+      "pump_inspection_booked": true,
+      "pump_inspection_paid": true,
+      "visited_pump": true,
+      "visited_edda": true,
+      "visited_records": true,
+      "testimony_source": true,
+      "testimony_no_quote": true,
+      "testimony_answered": true,
+      "testimony_done": true,
+      "testimony_published": true,
+      "ives_took_list": true
+    },
+    "journal": [
+      {
+        "id": "quill-agreed-to-ninety-up-front",
+        "text": "Quill agreed to ninety up front."
+      },
+      {
+        "id": "quill-hired-you-to-lift-mara-voss-s-unedited-hou",
+        "text": "Quill hired you to lift Mara Voss's unedited hour from Glass Chapel."
+      },
+      {
+        "id": "the-choir-door-accepted-a-name-you-kept-on-a-chi",
+        "text": "The choir door accepted a name you kept on a chip."
+      },
+      {
+        "id": "ward-nine",
+        "text": "Mara Voss signed the Ward Nine coolant dump. Three hundred people, one memo."
+      },
+      {
+        "id": "shard-copy",
+        "text": "A second copy of Mara's hour exists."
+      },
+      {
+        "id": "memory-signature",
+        "text": "Mara authorizes the flush. She says the tower promised an evacuation. The signature proves authorization; her explanation still needs corroboration.",
+        "kind": "claim"
+      },
+      {
+        "id": "memory-order",
+        "text": "The exported receipt records an instruction canceling evacuation while retaining the flush. Its contents are visible; the issuing key still needs independent verification during The Week.",
+        "kind": "fact"
+      },
+      {
+        "id": "memory-roster",
+        "text": "Ivo Pell and Junie Calder were on shift. Nia Pell signed the housing slip and reached a service exit. She can corroborate the receipt, but a public roster would expose where she sleeps.",
+        "kind": "fact"
+      },
+      {
+        "id": "mara-assurance",
+        "text": "Mara says she treated an evacuation crew assignment as completion and did not wait for an exit count. This is her testimony; no independent dispatch confirmation is attached.",
+        "kind": "claim"
+      },
+      {
+        "id": "mara-channel",
+        "text": "Mara identifies a shift relay as the source of her assurance. She names no individual dispatcher. Her testimony does not authenticate the later issuing key.",
+        "kind": "claim"
+      },
+      {
+        "id": "memory-analysis",
+        "text": "Mara authorized the flush before the recorded evacuation cancellation. The receipt's issuer needs independent corroboration; her explanation is not absolution.",
+        "kind": "claim"
+      },
+      {
+        "id": "public-packet",
+        "text": "The packet reports an evacuation cancellation after Mara's signature and explicitly marks the issuing key unverified.",
+        "kind": "claim"
+      },
+      {
+        "id": "archive-promise",
+        "text": "Trace the tower receipt to corroborate Mara's hour.",
+        "kind": "promise"
+      },
+      {
+        "id": "pump-repair",
+        "text": "The clinic coolant was restored. The neighborhood retains the maintenance record; this repair authenticates no historical order.",
+        "kind": "fact"
+      },
+      {
+        "id": "notice-promise",
+        "text": "Help the clinic distribute usable appointment information without publishing home addresses.",
+        "kind": "promise"
+      },
+      {
+        "id": "notice-slip",
+        "text": "The housing slip contains private destinations. It is not necessary for a public clinic route.",
+        "kind": "fact"
+      },
+      {
+        "id": "notice-map",
+        "text": "The public bus map identifies the clinic stop, not patient homes.",
+        "kind": "fact"
+      },
+      {
+        "id": "notice-card",
+        "text": "The appointment card contains a clinic window and return contact. Publicizing the window enables monitoring of that time.",
+        "kind": "fact"
+      },
+      {
+        "id": "notice-privacy-refusal",
+        "kind": "fact",
+        "text": "Lumen refused a home-list return contact. No patient homes were dispatched; a revised clinic contact can be offered."
+      },
+      {
+        "id": "notice-allocation",
+        "kind": "fact",
+        "text": "Dispatch accepted six sealed cards: 4 early and 2 later, with the clinic as return contact. You carried the clinic return bundle for one strain. No home list was supplied. Card receipt, appointment attendance and care outcomes remain unobserved."
+      },
+      {
+        "id": "notice-receipt",
+        "text": "Sealed appointment cards were accepted through a private channel. No public home list was supplied. Patient receipt and attendance remain unobserved.",
+        "kind": "fact"
+      },
+      {
+        "id": "verified-order",
+        "text": "The service archive authenticates the key that canceled Ward Nine's evacuation.",
+        "kind": "fact"
+      },
+      {
+        "id": "archive-custody",
+        "text": "Sera holds the source original and ledger reference. The circulating copy withholds Edda's name; any employer trace on the extraction remains.",
+        "kind": "fact"
+      },
+      {
+        "id": "notice-reply",
+        "text": "Lumen showed two private card receipt acknowledgements with names covered. Other receipts and patient attendance remain unknown.",
+        "kind": "fact"
+      },
+      {
+        "kind": "fact",
+        "id": "pump-inspection",
+        "text": "You paid twenty creds for a future coolant inspection. The appointment is booked; the inspection has not yet occurred."
+      },
+      {
+        "id": "wall-account",
+        "kind": "fact",
+        "text": "The public account identifies a reader-authenticated issuing key. Nia's private recording was not quoted publicly."
+      }
+    ],
+    "chapters": [
+      "Two Fires",
+      "The Quiet Contract"
+    ],
+    "rolls": [
+      {
+        "label": "Authenticate the counter-order",
+        "roll": 8,
+        "total": 19,
+        "dc": 9,
+        "success": true
+      },
+      {
+        "label": "Map the command index",
+        "roll": 8,
+        "total": 15,
+        "dc": 7,
+        "success": true
+      },
+      {
+        "label": "Restore the clinic coolant",
+        "roll": 8,
+        "total": 16,
+        "dc": 8,
+        "success": true
+      },
+      {
+        "label": "Give Kerr the truth",
+        "roll": 8,
+        "total": 10,
+        "dc": 7,
+        "success": true
+      },
+      {
+        "label": "Close the maintenance key",
+        "roll": 8,
+        "total": 16,
+        "dc": 9,
+        "success": true
+      },
+      {
+        "label": "Walk past Kerr",
+        "roll": 8,
+        "total": 13,
+        "dc": 8,
+        "success": true
+      },
+      {
+        "label": "Copy the hour",
+        "roll": 8,
+        "total": 15,
+        "dc": 10,
+        "success": true
+      },
+      {
+        "label": "Spoof the choir door",
+        "roll": 8,
+        "total": 14,
+        "dc": 8,
+        "success": true
+      }
+    ],
+    "log": [
+      "Read the neighborhood's response to your packet.",
+      "Attach the corroborating source, with locations withheld.",
+      "Sell the week to Helion.",
+      "The districts again.",
+      "Go down to Ward Nine.",
+      "Ward Nine",
+      "Ask Lumen what happened to the clinic notice.",
+      "Record two receipt acknowledgements; keep attendance unknown.",
+      "See what became of the coolant emergency.",
+      "Arrange the next inspection for the repaired circuit.",
+      "Pay twenty creds to book a technician.",
+      "Return to the neighbors before the wall.",
+      "Answer Edda’s message about the archive.",
+      "Record her limits and leave the employment review unresolved.",
+      "Sit at the records table.",
+      "Leave the source and its limits available for inspection.",
+      "Go directly to the names.",
+      "Tell her why you came.",
+      "Prepare an account people can question after you leave.",
+      "Attach independent corroboration and state what it establishes.",
+      "Keep Nia's words private; describe only the source status.",
+      "Identify the reader-authenticated issuing key and retain the original.",
+      "File the public account with its sources and limits.",
+      "Let Ives take the list."
+    ],
+    "sceneId": "ending_listed"
+  }
+}

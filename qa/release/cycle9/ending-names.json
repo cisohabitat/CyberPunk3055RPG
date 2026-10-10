@@ -1,0 +1,234 @@
+{
+  "format": "saint-shard-save",
+  "schema": 1,
+  "savedAt": "2026-10-10T22:02:27.579Z",
+  "checksum": "85ec255e",
+  "state": {
+    "version": 2,
+    "handle": "BenchRunner",
+    "givenName": "BenchRunner",
+    "origin": "spire",
+    "complication": "optic",
+    "stats": {
+      "chrome": 3,
+      "nerve": 2,
+      "face": 4,
+      "ghost": 1
+    },
+    "factions": {
+      "quill": 2,
+      "lumen": 5,
+      "helion": -1,
+      "wards": 5
+    },
+    "creds": 390,
+    "strain": 2,
+    "items": [
+      "spoof-chip",
+      "signal-baffle"
+    ],
+    "flags": {
+      "optic": true,
+      "opening_identity": true,
+      "opening_neighbor_heard": true,
+      "opening_complete": true,
+      "met_quill": true,
+      "haggled": true,
+      "hired": true,
+      "quiet": true,
+      "knows_truth": true,
+      "honest": true,
+      "met_lumen": true,
+      "pact_copy": true,
+      "lumen_here": true,
+      "copied": true,
+      "met_mara": true,
+      "heard_memo": true,
+      "memory_signature": true,
+      "memory_order": true,
+      "memory_roster": true,
+      "memory_reconstructed": true,
+      "memory_prepared": true,
+      "memory_witness": true,
+      "kerr_talked": true,
+      "met_kerr": true,
+      "act1_done": true,
+      "act1_both": true,
+      "perk_trained": true,
+      "perk_ghost": true,
+      "origin_done": true,
+      "origin_helped": true,
+      "met_ives": true,
+      "walk_nine": true,
+      "witness_briefed": true,
+      "met_nia": true,
+      "witness_escort": true,
+      "witness_done": true,
+      "witness_safe": true,
+      "witness_shift_owed": true,
+      "witness_method_face": true,
+      "witness_shift_kept": true,
+      "witness_consent": true,
+      "order_verified": true,
+      "met_sera": true,
+      "memory_response_done": true,
+      "memory_source_shared": true,
+      "act2_stand": true,
+      "act2_done": true,
+      "visited_nia": true,
+      "testimony_source": true,
+      "nia_public_consent": true,
+      "testimony_answered": true,
+      "testimony_done": true,
+      "testimony_published": true,
+      "spoke_names": true
+    },
+    "journal": [
+      {
+        "id": "quill-agreed-to-ninety-up-front",
+        "text": "Quill agreed to ninety up front."
+      },
+      {
+        "id": "quill-hired-you-to-lift-mara-voss-s-unedited-hou",
+        "text": "Quill hired you to lift Mara Voss's unedited hour from Glass Chapel."
+      },
+      {
+        "id": "the-choir-door-accepted-a-name-you-kept-on-a-chi",
+        "text": "The choir door accepted a name you kept on a chip."
+      },
+      {
+        "id": "ward-nine",
+        "text": "Mara Voss signed the Ward Nine coolant dump. Three hundred people, one memo."
+      },
+      {
+        "id": "shard-copy",
+        "text": "A second copy of Mara's hour exists."
+      },
+      {
+        "id": "memory-signature",
+        "text": "Mara authorizes the flush. She says the tower promised an evacuation. The signature proves authorization; her explanation still needs corroboration.",
+        "kind": "claim"
+      },
+      {
+        "id": "memory-order",
+        "text": "The exported receipt records an instruction canceling evacuation while retaining the flush. Its contents are visible; the issuing key still needs independent verification during The Week.",
+        "kind": "fact"
+      },
+      {
+        "id": "memory-roster",
+        "text": "Ivo Pell and Junie Calder were on shift. Nia Pell signed the housing slip and reached a service exit. She can corroborate the receipt, but a public roster would expose where she sleeps.",
+        "kind": "fact"
+      },
+      {
+        "id": "memory-analysis",
+        "text": "Mara authorized the flush before the recorded evacuation cancellation. The receipt's issuer needs independent corroboration; her explanation is not absolution.",
+        "kind": "claim"
+      },
+      {
+        "id": "public-packet",
+        "text": "The packet reports an evacuation cancellation after Mara's signature and explicitly marks the issuing key unverified.",
+        "kind": "claim"
+      },
+      {
+        "id": "witness-promise",
+        "text": "Move Nia Pell to safety before publishing her account.",
+        "kind": "promise"
+      },
+      {
+        "id": "witness-shift-promise",
+        "kind": "promise",
+        "text": "The volunteer accepted your clinic return work for Nia’s transfer. The work is owed by you, not by Nia. Recording and public quotation require separate approval."
+      },
+      {
+        "id": "witness-return-shift",
+        "kind": "fact",
+        "text": "You worked the clinic return shift you promised the volunteer. Nia incurred no debt and supplied no recording permission through this work."
+      },
+      {
+        "id": "nia-account",
+        "text": "Nia Pell corroborated Helion's canceled evacuation from a protected room.",
+        "kind": "fact"
+      },
+      {
+        "id": "wall-account",
+        "kind": "fact",
+        "text": "The public account cites independent corroboration without claiming digital-key authentication. Nia authorized quotation of her approved account through Sera, with her address withheld."
+      }
+    ],
+    "chapters": [
+      "Two Fires",
+      "Open Street"
+    ],
+    "rolls": [
+      {
+        "label": "Arrange a clinic escort",
+        "roll": 8,
+        "total": 13,
+        "dc": 8,
+        "success": true
+      },
+      {
+        "label": "Close the maintenance key",
+        "roll": 8,
+        "total": 14,
+        "dc": 9,
+        "success": true
+      },
+      {
+        "label": "Walk past Kerr",
+        "roll": 8,
+        "total": 15,
+        "dc": 8,
+        "success": true
+      },
+      {
+        "label": "Copy the hour",
+        "roll": 8,
+        "total": 14,
+        "dc": 10,
+        "success": true
+      },
+      {
+        "label": "Spoof the choir door",
+        "roll": 8,
+        "total": 13,
+        "dc": 8,
+        "success": true
+      },
+      {
+        "label": "Push Quill",
+        "roll": 8,
+        "total": 12,
+        "dc": 8,
+        "success": true
+      }
+    ],
+    "log": [
+      "Ask the clinic for a volunteer escort.",
+      "Compare volunteer work, chair handling and signal isolation.",
+      "Offer your own return shift to the arranged volunteer.",
+      "Give her time. Leave the recorder off.",
+      "Keep your promised clinic return shift. Add 1 strain.",
+      "Return when Nia is ready to review her account.",
+      "Let Nia review and approve her account.",
+      "Attach Nia's account to the evidence.",
+      "Read the neighborhood's response to your packet.",
+      "Attach the corroborating source, with locations withheld.",
+      "Stand where the names are.",
+      "The districts again.",
+      "Go down to Ward Nine.",
+      "Ward Nine",
+      "Ask whether Nia wants a visitor.",
+      "Remember the person and the limits she set.",
+      "Tell her why you came.",
+      "Prepare an account people can question after you leave.",
+      "Attach independent corroboration and state what it establishes.",
+      "Ask Nia whether her approved words can enter this public account.",
+      "Accept Nia's terms for this account.",
+      "Identify independent corroboration, without calling it key authentication.",
+      "File the public account with its sources and limits.",
+      "Read the names you kept."
+    ],
+    "sceneId": "ending_names"
+  }
+}

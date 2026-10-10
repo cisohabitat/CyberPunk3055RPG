@@ -146,11 +146,13 @@ The internal interruption/muting/source-cleanup increment and prepared device wo
 
 **Cycle 10: assess the complete candidate and release readiness.**
 
+Internal endurance diagnosis, previous-release save fixtures, isolated rollback rehearsal and bounded CI waiting are implemented in [RELEASE_READINESS.md](RELEASE_READINESS.md). This is engineering preparation; the independent reviews and exit evidence below remain pending.
+
 - Obtain separate narrative, systems, art/audio and accessibility reviews using the six weighted categories above. Review representative core, optional, weak-build, failure and finale paths; do not score only the best slice.
 - Publish assessed category scores, rationale, build revision and limitations. A supported 9+ claim requires weighted overall above 9.0 and no category below 9.0; the stretch target remains 9.35. If it falls short, return to the weakest category and revise.
 - Close `qa/production/acceptance.json` gates only when their exact evidence exists. Discovery/funding, writer-authored content, rights, native-language claims and support staffing are not covered merely by good player ratings.
 - Keep exact-revision Test/Build, full browser regression, asset inventory/budgets and full replay matrix green. Rehearse rollback and old-save recovery on a release candidate.
-- Address the current CI/deploy timing mismatch: 460 browser checks take about ten minutes before other jobs finish, longer than the existing ten-minute production wait. Measure options to shard the suite or use a reviewed, bounded longer wait/CI-triggered promotion. Retain fail-closed exact-SHA requirements; until improved, retry the same revision after CI passes, as in the current release.
+- The twenty-minute bounded production wait now accommodates the last fourteen-minute CI run; status requests have ten-second limits. Keep measuring the full matrix (648 checks before this cycle) and retain fail-closed exact-SHA requirements. If a wait expires, retry the same revision only after CI passes.
 - Verify the public alias, actual media hashes, resumed saves, accessible mandatory flow and all four finales. Record known lower-severity issues, owners, supported platforms and support/incident arrangements.
 
 **Exit:** zero known severe progress-loss, incorrect-outcome or mandatory-access blockers; required manual, rights and production gates are supported by evidence. A high internal grade alone is insufficient for commercial AAA release acceptance.
