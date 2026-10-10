@@ -28,7 +28,7 @@ const finish = (state: GameState) => ({
 export const FREIGHT_SCENES: Record<string, Scene> = {
   act2_freight_brief: {
     id: "act2_freight_brief", location: "Canal freight gate", speaker: "Asa",
-    text: "Asa waits beside a cooling case with the battered courier badge you remember from the flats. ‘This is a diagnostic cartridge. The clinic can use it. My manifest can’t cross this gate.’\n\nThey put a finger on the seal. ‘Keep it cold. Get a stock receipt. No patient names in the book. If our service route stays private, I can spare one passenger clearance afterward. An official handover can get the parcel there, but it retires that route.’\n\nThe clearance is a favor for a completed private delivery, not a promise that someone received treatment. You can inspect the case before choosing a method.",
+    text: "Asa waits with a cooling case and the courier badge you remember from the flats.\n\n‘Diagnostic cartridge. Clinic stock. My manifest can't cross this gate.’ They touch the seal. ‘Keep it cold. Get a receipt. No patient names. If the service route stays private, I can spare one passenger clearance. Register the handover and that route retires.’\n\nThe cold case needs a carrier. The receipt will establish stock delivery, not treatment.",
     choices: [
       { id: "accept-freight-terms", label: "Take responsibility for the sealed parcel and its receipt.", hideIfFlag: "freight_done", effects: { flags: ["freight_started"], journal: [{ id: "freight-promise", text: "You agreed to carry Asa’s sealed diagnostic parcel to clinic stock and seek a receipt, without patient names on the manifest.", kind: "promise" }] }, next: "act2_freight_sources" },
       { id: "decline-freight", label: "Tell Asa to find another carrier.", effects: { flags: ["origin_done", "freight_done", "freight_declined"] }, next: "act2_freight_result" },
@@ -76,7 +76,7 @@ export const FREIGHT_SCENES: Record<string, Scene> = {
   },
   act2_freight_intake: {
     id: "act2_freight_intake", location: "Clinic freight hatch", speaker: "Asa",
-    text: "The clinic clerk has the case on the intake shelf. The indicator is still in the cold band. A stamped stock receipt would establish delivery of this parcel; it would say nothing about who received care.\n\nYou can wait for the clerk to check the seal and stamp it, or leave the case with the next batch and return before observing custody. Only a confirmed private delivery earns Asa’s one-use passenger clearance.",
+    text: "The case rests on the clinic's intake shelf, its indicator still cold. The clerk reaches for a stamp.\n\nWait for a checked seal and stock receipt, or leave it with the next batch before custody is confirmed. Only an observed private delivery earns Asa's clearance. The stock book records a parcel, not patient treatment.",
     choices: [
       { id: "acknowledge-freight-receipt", label: "Wait for the stamped clinic stock receipt.", requireFlag: "freight_at_intake", hideIfFlag: "freight_done", effects: finish, next: "act2_freight_result" },
       { id: "leave-freight-batch", label: "Leave the case in the batch without observing a receipt.", requireFlag: "freight_at_intake", hideIfFlag: "freight_done", effects: { flags: ["origin_done", "freight_done", "freight_unconfirmed"] }, next: "act2_freight_result" },
@@ -89,7 +89,13 @@ export const FREIGHT_SCENES: Record<string, Scene> = {
   },
   act3_freight_visit: {
     id: "act3_freight_visit", location: "Ward Nine courier table", speaker: "Asa",
-    text: (state) => `Asa is counting clinic slips beside the wall. They clear a place for you at the table.\n\n${freightOutcome(state)}\n\n${state.flags.freight_clearance_earned ? state.items.includes("burner-route") ? "Your one-use passenger clearance is still in your pack. Asa will not issue a second." : "The clearance is no longer in your pack. Asa will not replace it with another favor." : "No passenger clearance was issued for this delivery."}\n\n‘A parcel is somebody’s morning,’ they say. ‘What were you trying to carry for yourself?’`,
+    text: (state) => `Asa clears a place among the clinic slips.
+
+${state.flags.freight_late_received ? "‘The batch book finally answered. Received after you left. That doesn't buy back our passenger route.’" : state.flags.freight_delivered ? state.flags.freight_exposed ? "They hold up the receipt. ‘The parcel got there. The route is still exposed and retired.’" : "They tap the stock receipt. ‘The parcel got there, privately. One crossing was what I owed you.’" : state.flags.freight_late_unknown ? "‘No matching entry at this desk. Someone else may have carried it. I can't give you a receipt for that.’" : state.flags.freight_unconfirmed ? "‘You left it at intake. I brought the batch reference; we can ask before calling it delivered.’" : "‘I haven't seen a stock receipt for your case. That part is still open.’"}
+
+${state.flags.freight_clearance_earned ? state.items.includes("burner-route") ? "Your one-use clearance remains in your pack; Asa will not issue another." : "The clearance has left your pack; Asa will not replace it." : "No passenger clearance was earned."} No patient outcome is recorded here.
+
+‘A parcel is somebody's morning,’ they say. ‘What were you trying to carry for yourself?’`,
     choices: [
       { id: "query-freight-receipt", label: "Ask the clinic to check its stock book before claiming delivery.", requireAnyFlag: ["freight_unconfirmed", "freight_abandoned", "freight_declined"], hideIfFlag: "freight_queried", effects: { flags: ["freight_queried"] }, next: "act3_freight_query" },
       { id: "reflect-freight-motive", label: "Tell Asa why you took work that night.", next: "act3_freight_reflection" },

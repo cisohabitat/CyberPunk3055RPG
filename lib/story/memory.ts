@@ -20,7 +20,7 @@ export const MEMORY_SCENES: Record<string, Scene> = {
   },
   memory_reconstruction: {
     id: "memory_reconstruction", location: "Memory bench, Glass Chapel", speaker: "Mara", memory: true,
-    text: "The viewer lets you arrange the three inspected fragments and test an account before labeling it. You can also ask Mara about her assurance, or carry a direct interpretation.\n\nMara says she expected the workers to be moved. Her signature is visible. The receipt's issuing key is not independently authenticated. The exit log tells you who may be able to speak; it does not tell you what she will say.\n\nWhich account will you carry out?",
+    text: "The viewer holds three inspected fragments. Arrange their timestamps, replay Mara's recorded explanation, or carry a direct interpretation.\n\nHer signature is visible. Her assurance is testimony, not proof the workers left. The receipt's issuer remains unverified; the exit log identifies a possible witness, not an account she has agreed to give.\n\nWhat will you carry out?",
     choices: [
       { id: "assemble-timeline", label: "Reconstruct the hour on the timeline.", detail: "Arrange the inspected fragments, then test a claim against its source. Your draft survives a save.", requireAllFlags: ALL, hideIfFlag: "memory_model_tested", next: "memory_sequence" },
       { id: "question-mara", label: "Ask Mara what she actually knew before signing.", detail: "Question her assurance and its source. Testimony does not authenticate the later order.", hideIfFlag: "memory_examined", next: "memory_cross_exam" },
@@ -49,7 +49,7 @@ export const MEMORY_SCENES: Record<string, Scene> = {
   memory_sequence_result: {
     id: "memory_sequence_result", location: "Memory bench, Glass Chapel", speaker: "Mara", memory: true,
     text: (state) => sequenceCorrect(state)
-      ? "The three timestamps align: authorization, cancellation, exit. The ordering shows separate decisions, not an acquittal.\n\nMara watches the empty chair. 'Now ask what your sentence claims. The hour can't answer every question you put to it.'"
+      ? "The three timestamps align: authorization, cancellation, exit. The ordering shows separate decisions, not an acquittal.\n\nFrom the recorded interview, Mara says: 'Now ask what your sentence claims. The hour can't answer every question you put to it.'"
       : "The viewer marks a timestamp that runs backward. Your arrangement changes when a worker's exit appears to happen; the sources have not changed.\n\nYou can rebuild it, or record the chronology as unresolved. The mistaken draft stays in your history. No die roll can repair an inference.",
     choices: [
       { id: "rebuild-timeline", label: "Clear the slots and rebuild from the sources.", hideIfFlag: "memory_sequence_checked", effects: { flagsOff: TIMELINE_FLAGS }, next: "memory_sequence" },
@@ -76,7 +76,7 @@ export const MEMORY_SCENES: Record<string, Scene> = {
   },
   memory_model_result: {
     id: "memory_model_result", location: "Memory bench, Glass Chapel", speaker: "Sister Lumen", memory: true,
-    text: (state) => `${modelFeedback(state)}\n\n${state.flags.memory_model_sound ? 'Your verdict matches what the available sources can establish. Lumen keeps the limits beside the sentence.' : 'Your verdict does not match the source. Lumen will attach that challenge if you carry it forward. Revising keeps both the first verdict and the correction.'}\n\nNia has still given no account or permission. The next step chooses a packet label, then custody.`,
+    text: (state) => `${modelFeedback(state)}\n\n${state.flags.memory_model_sound ? 'Lumen keeps your bounded verdict beside its source.' : 'Your verdict does not match the source. Lumen will attach that challenge if you carry it forward. Revising keeps both the first verdict and the correction.'}\n\nNia has given no account or permission. Label the packet, then choose custody.`,
     choices: [
       { id: "record-tested-account", label: "Carry a bounded account with its source limits.", requireFlag: "memory_model_sound", effects: { flags: ["memory_reconstructed"], journal: [{ id: "memory-analysis", text: "The tested account keeps authorization and cancellation separate, with prior knowledge, issuer authentication and witness permission unresolved.", kind: "claim" }] }, next: "memory_publication" },
       { id: "revise-model", label: "Revise the verdict. Keep the first attempt beside the correction.", requireFlag: "memory_model_mismatch", effects: { flags: ["memory_reconstructed", "memory_model_corrected"], journal: [{ id: "bench-correction", text: "The runner corrected the bench verdict: authorization and cancellation remain separate; issuer authentication and witness permission require other sources. The first verdict is retained.", kind: "claim" }] }, next: "memory_publication" },
@@ -86,32 +86,34 @@ export const MEMORY_SCENES: Record<string, Scene> = {
   memory_challenge: {
     id: "memory_challenge", location: "Memory bench, Glass Chapel", speaker: "Mara", memory: true,
     text: (state) => state.flags.memory_theory_cleared
-      ? "Mara puts a finger under her signature. \"That is mine. I signed it. Don't make the tower's next decision erase the one I made.\"\n\nThe later instruction explains why the promised evacuation did not happen. It does not establish what Mara knew beforehand, and it does not remove her authorization."
+      ? "In the recording, Mara puts a finger under her signature. \"That is mine. I signed it. Don't make the tower's next decision erase the one I made.\"\n\nThe later instruction explains why the promised evacuation did not happen. It does not establish what Mara knew beforehand, and it does not remove her authorization."
       : "The receipt stays lit beside the signature. Someone canceled evacuation after Mara authorized the flush. An account that omits that instruction leaves the workers' last chance unexplained.\n\nMara's signature remains hers. Keeping the later instruction does not mean accepting her explanation as fact.",
     choices: [{ id: "keep-both-decisions", label: "Keep both decisions. Mark what remains unknown.", effects: { flags: ["memory_reconstructed"], journal: [{ id: "memory-analysis", text: "The signature and the later evacuation cancellation are separate decisions. Mara's prior knowledge and the receipt's issuer remain questions, not acquittals.", kind: "claim" }] }, next: "memory_publication" }],
   },
   memory_cross_exam: {
     id: "memory_cross_exam", location: "Memory bench, Glass Chapel", speaker: "Mara", memory: true,
-    text: (state) => `Mara pulls the chair away from the plinth. The hour keeps playing without her. "Ask me while I'm still here. They bought the hour so I wouldn't have to answer twice."\n\n${state.flags.memory_assurance_heard ? "Her account of the promise is recorded as testimony. There is no evacuation confirmation attached." : "She says the workers were supposed to leave. The signature contains no confirmation that they did."}\n\n${state.flags.memory_channel_heard ? "She identifies the channel she trusted, not a person whose issuing key you have verified." : "The later receipt names a channel. Ask whether she knew who stood behind it."}`,
+    text: (state) => `You open the interview embedded in the hour. Recorded Mara says, "Ask me while I'm still here. They bought the hour so I wouldn't have to answer twice." She is speaking to the recorder then; she cannot hear you now.
+
+${state.flags.memory_assurance_heard ? "Her assurance is testimony, not an evacuation confirmation." : "Choose the passage about the assurance she accepted."} ${state.flags.memory_channel_heard ? "She named a channel, not a verified individual issuer." : "Another passage names the channel she trusted."}`,
     choices: [
-      { id: "ask-evacuation-assurance", label: "What made you believe the workers were out?", hideIfFlag: "memory_assurance_heard", next: "memory_assurance" },
-      { id: "ask-command-contact", label: "Whose word did you trust on that channel?", hideIfFlag: "memory_channel_heard", next: "memory_channel" },
+      { id: "ask-evacuation-assurance", label: "Replay the assurance Mara accepted.", hideIfFlag: "memory_assurance_heard", next: "memory_assurance" },
+      { id: "ask-command-contact", label: "Replay whom Mara trusted on the channel.", hideIfFlag: "memory_channel_heard", next: "memory_channel" },
       { id: "close-cross-exam", label: "Keep her answers attributed. Return to the two decisions.", detail: "No new source or authentication. Her signature remains her responsibility.", effects: { flags: ["memory_examined"] }, next: "memory_reconstruction" },
     ],
   },
   memory_assurance: {
     id: "memory_assurance", location: "Memory bench, Glass Chapel", speaker: "Mara", memory: true,
-    text: "'A green light on the dispatch channel. It meant the evacuation crew had been assigned. I let it mean they'd finished.'\n\nMara watches the signature complete again. 'I could have waited for the exit count. Waiting would have put my name on the delay. I told myself a crew assignment was enough.'\n\nThe hour contains her explanation, not a dispatch log confirming it. The roster records Nia leaving later. Neither establishes what every worker was told before the flush.",
+    text: "'A green light on the dispatch channel. It meant the evacuation crew had been assigned. I let it mean they'd finished.'\n\nIn the recording, Mara watches the signature complete again. 'I could have waited for the exit count. Waiting would have put my name on the delay. I told myself a crew assignment was enough.'\n\nThe hour contains her explanation, not a dispatch log confirming it. The roster records Nia leaving later. Neither establishes what every worker was told before the flush.",
     choices: [{ id: "record-assurance-limit", label: "Record what she says, and the confirmation she never obtained.", effects: { flags: ["memory_assurance_heard"], journal: [{ id: "mara-assurance", text: "Mara says she treated an evacuation crew assignment as completion and did not wait for an exit count. This is her testimony; no independent dispatch confirmation is attached.", kind: "claim" }] }, next: "memory_cross_exam" }],
   },
   memory_channel: {
     id: "memory_channel", location: "Memory bench, Glass Chapel", speaker: "Mara", memory: true,
-    text: "'Dispatch spoke through a shift relay. No face. I knew the channel had authority to assign crews; I didn't know who was on it.'\n\nShe turns the receipt toward you. 'Don't put a person in that blank because I was too willing to leave it blank myself.'\n\nHer answer explains whom she trusted. It cannot authenticate the later cancellation or identify its individual author. An independent record is still necessary.",
+    text: "'Dispatch spoke through a shift relay. No face. I knew the channel had authority to assign crews; I didn't know who was on it.'\n\nHer recorded hand turns the receipt toward the interviewer. 'Don't put a person in that blank because I was too willing to leave it blank myself.'\n\nHer answer explains whom she trusted. It cannot authenticate the later cancellation or identify its individual author. An independent record is still necessary.",
     choices: [{ id: "record-channel-limit", label: "Keep the channel identified and the individual issuer unknown.", effects: { flags: ["memory_channel_heard"], journal: [{ id: "mara-channel", text: "Mara identifies a shift relay as the source of her assurance. She names no individual dispatcher. Her testimony does not authenticate the later issuing key.", kind: "claim" }] }, next: "memory_cross_exam" }],
   },
   memory_publication: {
     id: "memory_publication", location: "Memory bench, Glass Chapel", speaker: "Sister Lumen", memory: true,
-    text: "Lumen asks for the sentence that will accompany the file.\n\n\"People will repeat the sentence before they inspect the source. You can say what the receipt contains and what still needs checking. Or you can name the tower now and accept what happens when it challenges your proof.\"\n\nThe next choice labels the account. It does not move Nia, conceal her address, or authenticate a key. You will decide custody afterward.",
+    text: "Lumen asks for the sentence that will accompany the file.\n\n\"People will repeat the sentence before they inspect the source. You can say what the receipt contains and what still needs checking. Or you can name the tower now and accept what happens when it challenges your proof.\"\n\nLabel the account first; choose custody afterward. Neither label moves Nia or verifies the issuer.",
     choices: [
       { id: "label-unverified", label: "Describe the cancellation. Mark the issuing key unverified.", detail: "A bounded account. Independent corroboration remains necessary.", effects: { flags: ["memory_prepared"], journal: [{ id: "public-packet", text: "The packet reports an evacuation cancellation after Mara's signature and explicitly marks the issuing key unverified.", kind: "claim" }] }, next: "memory_table" },
       { id: "name-tower", label: "Accuse Helion publicly before authenticating the key.", detail: "The wards hear the allegation sooner. Helion will challenge its source. This does not verify the order.", effects: { flags: ["memory_prepared", "memory_public_claim"], factions: { wards: 1, helion: 1 }, journal: [{ id: "public-packet", text: "The packet accuses Helion of canceling evacuation before the issuing key is authenticated. The allegation is not independent proof.", kind: "claim" }] }, next: "memory_table" },

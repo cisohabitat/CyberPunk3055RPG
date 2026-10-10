@@ -1,0 +1,17 @@
+{
+  "routeVisits": 5462,
+  "changedVisits": 1533,
+  "beforeWords": 396104,
+  "afterWords": 343129,
+  "reductionPercent": 13.4,
+  "baselineGameplay": "091403ce9a4d2c612906b02df3f137d45aabddc4",
+  "baselineSource": "eafdf6fffda6b67a3c39f9956094c2b3d4cc2030",
+  "sceneCount": 171,
+  "editedSceneCount": 33,
+  "routes": 75,
+  "sampledVariants": 304,
+  "fixtureObservedScenes": 151,
+  "unobservedScenes": 20,
+  "method": "Paired sceneText calls against identical saved pre-choice states in all 75 baseline replay fixtures; aggregate route words, not unique script length or player reading time.",
+  "independentEditor": "pending"
+}

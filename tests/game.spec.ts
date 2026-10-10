@@ -1191,3 +1191,28 @@ for(const [scene,speaker] of [["act2_mara_quiet","Mara"],["act2_lumen_quiet","Si
  const line=page.getByTestId("voice-line");await expect(line).toContainText("synthetic");await line.getByRole("button",{name:`Listen to ${speaker === "Sister Lumen" ? "Lumen" : speaker}`}).click();await expect(line).toContainText("Playing selected dialogue");
  await page.getByTestId(`choice-${speaker==="Mara"?"keep-mara-quiet-answer":"keep-lumen-quiet-answer"}`).click();await expect(line).toHaveCount(0);
 });
+
+test("recorded interview replay survives reload without becoming a live response", async ({page}) => {
+ await page.addInitScript(()=>localStorage.setItem("saint-shard-preferences",JSON.stringify({reading:"all",sound:true})));
+ await openRun(page,fixture("memory_cross_exam",{flags:{heard_memo:true,memory_signature:true,memory_order:true,memory_roster:true}}));
+ await expect(page.getByTestId("scene-text")).toContainText("she cannot hear you now");
+ await page.getByTestId("choice-ask-evacuation-assurance").click();
+ await page.getByRole("button",{name:"Listen to Mara",exact:true}).click();
+ await expect(page.getByTestId("voice-line")).toContainText("Playing selected dialogue");
+ await page.getByTestId("choice-record-assurance-limit").click();await page.reload();await page.getByTestId("continue-run").click();
+ await expect(page.getByTestId("scene-text")).toContainText("testimony, not an evacuation confirmation");
+ for(const id of ["ask-command-contact","record-channel-limit","close-cross-exam","separate-decisions"])await page.getByTestId(`choice-${id}`).click();
+ const run=await page.evaluate(()=>JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+ expect(run.flags.order_verified).toBeUndefined();expect(run.flags.response_started).toBeUndefined();expect(run.journal.filter((j:{id:string})=>j.id.startsWith("mara-")).every((j:{kind:string})=>j.kind==="claim")).toBe(true);
+});
+
+test("edited neighborhood return keeps choices and commitments through a narrow text-only reload", async ({page}) => {
+ await page.setViewportSize({width:320,height:844});await page.addInitScript(()=>localStorage.setItem("saint-shard-preferences",JSON.stringify({reading:"all",artwork:"none",textStep:2,contrast:"high",motion:"reduce"})));
+ const artwork:string[]=[];page.on("request",r=>{if(r.url().includes("/art/"))artwork.push(r.url())});
+ await openRun(page,fixture("act3_neighborhood",{creds:0,flags:{memory_prepared:true,memory_intact:true,archive_custody:true}}));
+ await page.getByTestId("choice-visit-records").click();await page.getByTestId("choice-keep-limits").click();await page.reload();await page.getByTestId("continue-run").click();
+ await expect(page.getByTestId("goal")).toBeInViewport();await expect(page.getByTestId("choice-visit-records")).toHaveCount(0);await expect(page.getByTestId("choice-go-wall")).toBeEnabled();
+ expect((await new AxeBuilder({page}).withTags(["wcag2a","wcag2aa","wcag21aa"]).analyze()).violations).toEqual([]);
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);expect(artwork).toEqual([]);
+ const run=await page.evaluate(()=>JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));expect(run.creds).toBe(0);expect(run.flags.visited_records).toBe(true);expect(run.flags.order_verified).toBeUndefined();expect(run.flags.witness_safe).toBeUndefined();
+});

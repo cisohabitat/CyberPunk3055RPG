@@ -23,13 +23,13 @@ function wallText(state: GameState): string {
   const tone = state.flags.act2_deal
     ? "She does not mention the payment. The wall is doing that work."
     : "She waits with the pencil capped.";
-  const named = `${state.givenName}. She says it once, the way the wall has not been allowed to keep a living name, then she turns you toward the concrete.`;
+  const named = `‘${state.givenName}.’ Sera uses your own name, then turns you toward the concrete.`;
   const second = hasJournal(state, "ward-nine")
-    ? "The memo puts a second name in your mouth without a check: Junie Calder, night shift, the locker beside Ivo."
+    ? "You kept another name from the memo: Junie Calder, night shift, the locker beside Ivo."
     : "The second row is rain. You do not have the memo's name yet.";
   const neighbor =
     state.factions.wards >= 2
-      ? "The wards already know you. Beside the memorial, Sera keeps a private witness ledger. Nia Pell is a living witness, the cousin who signed the housing slip, not one of the dead. Her name is readable without a check or an optic; her current address is not on display."
+      ? "Beside the memorial is Sera’s private witness ledger. Nia Pell is a living witness, not one of the dead. The wards let you read her entry; her current address is not on display."
       : "";
   const window = hasJournal(state, "calibration")
     ? "The four-minute window is still in your head. The scratches look like a clock."
@@ -37,16 +37,21 @@ function wallText(state: GameState): string {
   const eye = state.flags.optic
     ? "Your optic is already warm. Sera sees the red and does not ask you to darken it."
     : "";
-  return `Sera stands you in front of the wall before she asks anything. ${named} The rain has eaten the lower rows. One name is still sharp, readable without a check or an optic: Ivo Pell, night shift, level two.
+  return `Sera stands you in front of the wall before she asks anything. ${named} The rain has eaten the lower rows. One name needs no optic: Ivo Pell, night shift, level two.
 
 ${second}${neighbor ? `\n\n${neighbor}` : ""}${window ? `\n\n${window}` : ""}${eye ? `\n\n${eye}` : ""}
 
-"That one I can still read without a pencil," she says. "The third name needs the eye, or the wards, or both. The rest of the choice can wait until you have tried."
+"Ivo stays legible," Sera says. "The third row needs your eye, or help from the wards. You can try. You can also tell me why you came."
 
 ${tone}`;
 }
 
 function arrivalText(state: GameState): string {
+  if (["response_visit", "lumen_boundary_visit", "kerr_route_visit", "quill_route_visit", "kerr_question_done", "testimony_done"].some(flag => state.flags[flag])) {
+    return `Sera turns back to the unfinished line on the wall. The people you visited have given their own answers; none can speak this one for you.
+
+${state.flags.on_file && state.flags.act2_deal ? "Ives waits with the folio open. Sera keeps her pencil in her hand." : "She keeps her pencil in her hand. ‘We still have the names.’"}`;
+  }
   const deal = state.flags.act2_exposed
     ? "Helion already has a version of this week. The wall has not agreed to it."
     : state.flags.act2_deal
@@ -59,9 +64,9 @@ function arrivalText(state: GameState): string {
       : state.flags.quill_refused
         ? "Quill is not here. The interest still is."
         : "";
-  return `Ward Nine is a stack of housing with the coolant scars still on the lower floors. The dump took the bottom two levels and the tower called it maintenance. People moved up, and then they moved the names onto a wall the rain is trying to eat.
+  return `Coolant scars climb Ward Nine’s lower floors. The tower called the dump maintenance. The neighbors moved upstairs and wrote the names where they could still reach them.
 
-Sera keeps the list. She has a hood, a pencil, and the patience of someone who has already done the funeral without a priest.
+Sera uncaps her pencil. She has kept the list through another week of rain.
 
 ${deal}${ives ? `\n\n${ives}` : ""}
 

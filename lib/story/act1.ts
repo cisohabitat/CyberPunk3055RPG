@@ -71,7 +71,7 @@ function ownerText(state: GameState): string {
   const question = state.flags.opening_neighbor_heard
     ? "You glance at the stallholder. Then you ask the question she left you: whose hour is it?"
     : "You keep your chip on the counter. Whose hour is it?";
-  return `${question}\n\n"Mara's," Quill says. "Her life. Her appointment. Helion booked the chair; I booked you."\n\n"Who gets it after you?"\n\nHe lets the steam pass between you. "Someone who pays for an original. You want Mara's reasons, ask Mara. I sell the route to the room, not an honest answer."\n\nHe has given you a name and a deadline. The buyer is still a blank. You can ask about the money, hear how the Chapel works, or accept those limits.`;
+  return `${question}\n\n"Mara's," Quill says. "Her life. Her appointment. Helion booked the chair; I booked you."\n\n"Who gets it after you?"\n\nHe lets the steam pass between you. "Someone who pays for an original. You want Mara's reasons, ask Mara. I sell the route to the room, not an honest answer."\n\nQuill turns back to his bowl. You have the owner’s name. The buyer is still a blank.`;
 }
 
 function payText(state: GameState): string {
@@ -726,7 +726,7 @@ The halo would have taken it out of her by dawn. It is in your hand instead.`,
     speaker: "Mara",
     text: `The hour is not finished with you.
 
-Mara, still unedited: "Helion told me the dump was a flush, not a kill. I signed because the night shift was already in the building and I thought the tower would move them. They did not move them."
+Mara’s recorded voice, still unedited: "Helion told me the dump was a flush, not a kill. I signed because the night shift was already in the building and I thought the tower would move them. They did not move them."
 
 She does not ask you to forgive it. She asks you to keep the reason attached to the crime.`,
     choices: [

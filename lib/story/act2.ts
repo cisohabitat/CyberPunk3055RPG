@@ -11,6 +11,11 @@ One card is still face down. Ward Nine. The coolant dump stopped being a rumor t
 
 Rain ticks the plastic. Nobody is selling noodles.`;
   }
+  if (state.flags.origin_done || state.flags.kit_bought) {
+    return `Back under the cracked board, you find the calls still face up. Kerr in Ward Four. Lumen at Glass Chapel if she is calling. Helion if it wants the hour.
+
+The work you accepted or refused stays in your record. It does not answer this week's question for you.`;
+  }
   const sold = state.flags.act1_sold || state.flags.act1_both || state.flags.act1_ash;
   const lumen = state.flags.knows_truth || state.flags.lumen_here || state.flags.act1_burned;
   const orderly = state.items.includes("counterfeit-pass")
@@ -187,6 +192,13 @@ Under the overpass the traffic is a long electric animal. Ives holds the folio l
 }
 
 function middleText(state: GameState): string {
+  const returned = ["response_started", "kerr_route_started", "kerr_route_declined", "notice_started", "pump_attempted", "week_recovered", "witness_done", "memory_response_done", "archive_done"].some(flag => state.flags[flag]);
+  if (returned) {
+    const tab = state.flags.debt && !state.flags.quill_settled ? " Quill's tab is still open." : state.flags.quill_repaid_late ? " Quill kept the late payment beside the postponement." : "";
+    return `The canal grate is wet again. Ren draws a line through the water with her shoe. ‘Junie Calder. Don't lose her between jobs.’${tab}
+
+Help with what remains, put the account in the street, or sell the week to Helion. Unfinished commitments stay unfinished when you leave.`;
+  }
   const from = state.flags.kerr_told
     ? "Kerr kept the names in his mouth. The canal is quieter for it."
     : state.flags.walk_nine
@@ -203,13 +215,13 @@ function middleText(state: GameState): string {
     : state.flags.quill_collected
       ? "The tab is paid. Quill's absence is the receipt."
       : "";
-  return `The dry canal under Ward Four is a rumor with a floor. Rain falls in, then finds a grate and pretends it never wanted to stay.
+  return `Rain finds the grate in Ward Four’s dry canal. Ren Calder lifts her feet from it.
 
-Ren Calder is on the grate, hood up. "Ivo Pell was not the only locker," she says. "Junie Calder worked the shift beside him. Say her if you get to the wall."
+"Junie Calder worked beside Ivo Pell," Ren says. "Say her if you get to the wall. She was my family before she was your evidence."
 
 ${from}${tab ? `\n\n${tab}` : ""}
 
-You can put the story in the street, where the wards will do something clumsy and public with it. Or you can sell the week to Helion and let the tower write the footnote. Both of them are a choice. Neither of them is clean.`;
+The street can carry your account. Helion can pay for your silence. There is still work you can choose before deciding whose week this becomes.`;
 }
 
 function wardsFinale(state: GameState): string {

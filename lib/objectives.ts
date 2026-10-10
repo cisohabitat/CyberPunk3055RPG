@@ -70,7 +70,7 @@ export function nextStep(state: GameState): string {
   if (state.sceneId.startsWith("act3_notice_")) return "Keep dispatch, receipt and attendance separate. A private reply booking cannot erase an observed public window.";
   if (state.sceneId === "act3_nia_contact") return "Nia chooses whether to answer future questions. Contact permission changes no testimony or public consent.";
   if (state.sceneId.startsWith("act2_notice_")) return "Separate public routing from private homes. Choose a channel; a dispatch receipt guarantees no attendance.";
-  if (["memory_cross_exam", "memory_assurance", "memory_channel"].includes(state.sceneId)) return "Ask what Mara knew and who supplied her assurance. Attribute her answers; no testimony becomes an independent issuing-key test.";
+  if (["memory_cross_exam", "memory_assurance", "memory_channel"].includes(state.sceneId)) return "Replay what Mara knew and who supplied her assurance. Attribute her recorded answers; no testimony becomes an independent issuing-key test.";
   if (state.sceneId === "memory_sequence") return "Place the inspected fragments from earliest to latest, consulting source timestamps. Your draft is saved; reset changes no evidence.";
   if (state.sceneId === "memory_sequence_result") return "Check the timestamp feedback. Rebuild a mismatch or retain the chronology as unresolved.";
   if (state.sceneId.startsWith("memory_model")) return "Test a claim against its source. Support, contradiction and missing authentication are different findings; retain any correction.";

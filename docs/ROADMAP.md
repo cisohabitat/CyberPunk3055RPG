@@ -34,6 +34,8 @@ These are rough discipline-effort estimates for a small team with writing, engin
 
 ## Phase 1 — Campaign editorial and pacing
 
+Cycle 1 implementation and internal verification are recorded in [NARRATIVE_PACING.md](NARRATIVE_PACING.md), with a 171-scene audit and paired route measurements. The independent editor exit remains pending. Complete and hand back this phase before beginning Phase 2; do not infer a new grade from shorter prose or passing checks.
+
 **Problem:** strong consequences are often expressed through repeated limits, receipts and procedural explanation. The dramatic experience needs to remain clear without making every conversation sound like a rules summary.
 
 **Cycle 1: edit and play the whole campaign.**

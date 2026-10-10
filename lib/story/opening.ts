@@ -48,7 +48,7 @@ export const OPENING_SCENES: Record<string, Scene> = {
   },
   opening_approach: {
     id: "opening_approach", location: "Ward Four night market",
-    text: (state) => `${openingMotive(state)}\n\nSteam rises through the awnings. A woman behind the noodle counter wipes rain off a menu while the tower advert plays above her: “Sleep without yesterday.” She sees you looking.\n\n“Funny thing to sell,” she says. “Yesterday.”\n\nQuill sits at the far end of her counter, coat buttoned, bowl untouched. He raises two fingers. You have a moment before you take the stool.`,
+    text: (state) => `Steam rises through the awnings. A woman behind the noodle counter wipes rain off a menu while the tower advert plays above her: “Sleep without yesterday.” She sees you looking.\n\n“Funny thing to sell,” she says. “Yesterday.”\n\nQuill sits at the far end of her counter, coat buttoned, bowl untouched. He raises two fingers. You have a moment before you take the stool.`,
     choices: [
       { id: "hear-stallholder", label: "Ask her what she means.", detail: "Hear one person’s experience of the memory trade. No check or purchase.", effects: { flags: ["opening_neighbor_heard"] }, next: "opening_neighbor" },
       { id: "meet-quill", label: "Take the stool opposite Quill.", effects: { flags: ["opening_complete"] }, next: "stall" },
@@ -56,7 +56,7 @@ export const OPENING_SCENES: Record<string, Scene> = {
   },
   opening_neighbor: {
     id: "opening_neighbor", location: "Noodle counter, Ward Four",
-    text: `“A regular came in last winter,” she says. “Asked if his wife had eaten here the night before. She had. They’d argued. He’d sold that evening to make the rent.”\n\nShe folds the damp edge of the menu flat. “He remembered getting paid. Didn’t remember what he needed to apologize for. Asked me to write it down so he could go home.”\n\nShe looks toward Quill. “I sell dinner. People remember it or they don’t. But if someone hires you to carry an hour, ask whose it was before you ask what it pays.”\n\nQuill moves his bowl aside. The woman turns back to the pot. You still need work; now you have a question to take with you.`,
+    text: "“A regular came in last winter,” she says. “He'd sold an argument with his wife to make the rent. Remembered getting paid. Didn't remember what he needed to apologize for. Asked me to write it down.”\n\nShe flattens the damp menu. “I sell dinner. But if someone hires you to carry an hour, ask whose it was before you ask what it pays.”\n\nQuill moves his bowl aside. You still need work; now you have a question to take with you.",
     choices: [{ id: "take-the-stool", label: "Sit down and hear Quill’s offer.", effects: { flags: ["opening_complete"] }, next: "stall" }],
   },
 };

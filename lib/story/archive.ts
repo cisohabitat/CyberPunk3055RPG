@@ -7,7 +7,7 @@ export const archiveArrival = (state: GameState) => state.flags.archive_briefed 
 export const ARCHIVE_SCENES: Record<string, Scene> = {
   act2_archive_brief: {
     id: "act2_archive_brief", location: "Helion service archive", speaker: "Edda",
-    text: "Edda opens the search desk before Ives arrives. 'The export tells you what it contains. My ledger can tell you whether that instruction reached a maintenance shift. Those are different tests.'\n\nShe offers access, not permission to publish her name. A countersigned invoice can be traced to her employer even if you withhold it from the public packet.\n\n'Compare the source before you choose a route. Then ask what you can distribute. I have to work here tomorrow.'",
+    text: "Edda opens the desk before Ives arrives.\n\n‘Your export records a cancellation. My ledger can show whether it reached the shift. Compare them. I have to work here tomorrow.’\n\nShe offers access, not public use of her name. A signed extraction can identify her to her employer even when you withhold her name from circulation. Custody comes after retrieval.",
     choices: [
       { id: "agree-archive-terms", label: "Agree to compare sources and decide custody afterward.", effects: { flags: ["archive_briefed"] }, next: "act2_archive_prep" },
       { id: "defer-archive", label: "Leave the search open for another day.", next: "act2_middle" },
@@ -33,7 +33,7 @@ export const ARCHIVE_SCENES: Record<string, Scene> = {
   },
   act2_archive_challenge: {
     id: "act2_archive_challenge", location: "Helion service archive", speaker: "Edda",
-    text: "'A catalog tells you where a record should be,' Edda says. 'It isn't the record. And my signature identifies the person checking the invoice. It doesn't become the command's issuing key.'\n\nThe catalog remains useful. Its limits tell you which retrieval to attempt; they do not end the inquiry.",
+    text: "Edda taps the catalog. ‘This tells us where to look. It isn't the record. My countersignature isn't the command's issuing key either.’\n\nThe record number remains useful. Retrieve its source before calling it proof.",
     choices: [{ id: "revise-source-test", label: "Keep the distinction and retrieve the actual record.", effects: { flags: ["archive_compared"] }, next: "act2_archive_door" }],
   },
   act2_archive_custody: {
