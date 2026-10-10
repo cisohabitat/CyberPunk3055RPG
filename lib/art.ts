@@ -47,6 +47,17 @@ const CLINIC_CONVERSATION: Illustration = { src: "/art/clinic-conversation.jpg",
 for (const id of ["act2_response_invitation", "act2_response_agenda", "act3_response_visit"]) ENCOUNTERS[id] = CLINIC_CONVERSATION;
 export function sceneIllustration(sceneId: string): Illustration | undefined { return ENCOUNTERS[sceneId]; }
 
+for (const id of ["stall", "pay", "job_owner"]) ENCOUNTERS[id] = { src: "/art/quill-offer.jpg", small: "/art/quill-offer-small.jpg", caption: "Ward Four · an offer, unanswered", description: "Quill waits beside an untouched bowl at an amber-lit stall counter while rain falls beyond the awning." };
+for (const id of ["memo", "mara_why"]) ENCOUNTERS[id] = { src: "/art/mara-revelation.jpg", small: "/art/mara-revelation-small.jpg", caption: "The recorded hour · Mara", description: "Mara's recorded likeness sits beside the cyan memory apparatus; her steady gaze carries no present-day permission." };
+for (const id of ["chapel_method_review", "chapel_window_exit"]) ENCOUNTERS[id] = { src: "/art/chapel-reader.jpg", small: "/art/chapel-reader-small.jpg", caption: "Glass Chapel · the maintenance landing", description: "A dim memory reader and mechanical latch face an empty wet stair beside a task lamp; their status is unresolved." };
+const FINALE_ART: Record<string, { caption: string; description: string }> = {
+  names: { caption: "Said Aloud · the pencil moves", description: "Sera writes indistinct marks on rain-worn memorial concrete, keeping a place for the names without displaying private identities." },
+  quiet: { caption: "Left to the Rain · the stair remains", description: "Rain falls over the empty memorial stair while Sera stands aside with her pencil held still." },
+  witness: { caption: "Already Loose · a late witness", description: "Sera listens beside the rain-worn wall, pencil poised over an unmarked notebook; no absolution or inquiry outcome is depicted." },
+  listed: { caption: "On the Folio · the page is taken", description: "Ives closes a black folio at the memorial stair while Sera retains her pencil and watches." },
+};
+for (const [id, art] of Object.entries(FINALE_ART)) ENCOUNTERS[`ending_${id}`] = { src: `/art/finale-${id}.jpg`, small: `/art/finale-${id}-small.jpg`, ...art };
+
 export const PORTRAIT_ART: Record<string, string> = {
   Quill: "/art/quill.jpg", Orderly: "/art/orderly.jpg", "Sister Lumen": "/art/lumen.jpg",
   Kerr: "/art/kerr.jpg", Mara: "/art/mara.jpg", Ives: "/art/ives.jpg", Sera: "/art/sera.jpg",
@@ -61,7 +72,18 @@ export const SOURCE_ART: Record<string, Illustration> = {
 const PORTRAIT_VARIANTS: Record<string, { speaker: string; src: string }> = {};
 for (const id of ["memory_cross_exam", "memory_assurance", "memory_channel", "memory_model_test", "memory_sequence_result"]) PORTRAIT_VARIANTS[id] = { speaker: "Mara", src: "/art/mara-questioning.jpg" };
 for (const id of ["memory_model_result", "memory_publication"]) PORTRAIT_VARIANTS[id] = { speaker: "Sister Lumen", src: "/art/lumen-challenging.jpg" };
-export function portraitArt(speaker?: string, sceneId?: string): string | undefined {
+export const PORTRAIT_STAGING = [
+  { speaker: "Mara", asset: "/art/mara-boundary.jpg", scenes: ["act2_response_agenda", "act2_response_refusal", "act2_response_terms", "act2_response_dispatch", "act3_response_visit"], allFlags: ["response_public_refused"], reason: "Mara's actual refusal remains a boundary after a private reply; this expression grants no new permission." },
+  { speaker: "Sister Lumen", asset: "/art/lumen-guarded.jpg", scenes: ["act2_lumen_quiet", "act3_lumen_boundary", "act3_chapel_return"], anyFlags: ["betrayed_lumen", "response_clinic_refused"], reason: "Recorded betrayal or refused clinic sponsorship informs guarded attention, without depicting forgiveness." },
+  { speaker: "Kerr", asset: "/art/kerr-closed.jpg", scenes: ["act2_route_receipt", "act3_kerr_collection", "act3_kerr_collection_response", "act3_kerr_personal_question"], allFlags: ["kerr_route_private", "kerr_route_trace"], reason: "Broken private collection terms keep a closed expression even after an observed handover or acknowledgement." },
+  { speaker: "Quill", asset: "/art/quill-waiting.jpg", scenes: ["act2_quill_introduction", "act3_quill_introduction"], allFlags: ["quill_refused"], reason: "The recorded postponed tab keeps Quill unsmiling; late repayment does not erase the earlier refusal." },
+  { speaker: "Sera", asset: "/art/sera-listening.jpg", scenes: ["act3_arrival", "ending_witness"], allFlags: ["confirmed_leak"], reason: "An admitted leak calls for attentive listening; it is not absolution or permission to quote another witness." },
+] as const;
+export function portraitArt(speaker?: string, sceneId?: string, flags: Readonly<Record<string, boolean>> = {}): string | undefined {
+  const conduct = PORTRAIT_STAGING.find(rule => rule.speaker === speaker && (rule.scenes as readonly string[]).includes(sceneId ?? "")
+    && (!("allFlags" in rule) || rule.allFlags.every(flag => flags[flag]))
+    && (!("anyFlags" in rule) || rule.anyFlags.some(flag => flags[flag])));
+  if (conduct) return conduct.asset;
   const variant = sceneId ? PORTRAIT_VARIANTS[sceneId] : undefined;
   return variant && variant.speaker === speaker ? variant.src : PORTRAIT_ART[speaker ?? ""];
 }

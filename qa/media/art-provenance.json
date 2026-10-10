@@ -430,6 +430,370 @@
           "sha256": "68d9ce04a6e557b460ba4d10c1d084f9b9a321f97b9f489343b947c6cd81c765"
         }
       ]
+    },
+    {
+      "id": "mara-boundary",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-10",
+      "sourceFile": "/workspace/generated_images/exec-ce69c0a4-4729-42aa-9619-36cac01ccce4.png",
+      "sourceSha256": "471d15eb7757dda3bc0ffe8342546cdb72472e83bfd5153f04e0ebeb9f435153",
+      "promptSummary": "Mara's attentive firm boundary; preserves dark tied hair, cyan portrait halo and coat.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/mara-boundary.jpg",
+          "width": 440,
+          "height": 587,
+          "bytes": 49771,
+          "sha256": "6374ec7a897a1719c908f4d1eece65e6181ecb8e9e1b662326b9020e03bce6f5"
+        }
+      ],
+      "references": [
+        {
+          "path": "public/art/mara.jpg",
+          "sha256": "2b1c67aa8a9519999a98e8559edc831406e2014fd42d91bf4ab1ae7b1e0d3214"
+        }
+      ],
+      "reviewStatus": "Internal cast/composition review; independent art and distribution-rights acceptance pending."
+    },
+    {
+      "id": "lumen-guarded",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-10",
+      "sourceFile": "/workspace/generated_images/exec-7f7a93eb-a0b4-4602-9bbe-dbdede8d8338.png",
+      "sourceSha256": "7fa3989211fe8b1708c428b3fc50ba41cf3a48083ae17233b95a9ad3d56448ac",
+      "promptSummary": "Guarded assessing Lumen with original bald head, left magenta optic and white collar.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/lumen-guarded.jpg",
+          "width": 440,
+          "height": 587,
+          "bytes": 53192,
+          "sha256": "bd971d777b9b60800cc3f5e73821b4bf7768c82f63eccacb91bc896a85d1390d"
+        }
+      ],
+      "references": [
+        {
+          "path": "public/art/lumen.jpg",
+          "sha256": "88cc611cc0cafbbd9cac910b4fdf454cb24fd1d4a8dc6ea6ba9f2822f890668e"
+        }
+      ],
+      "reviewStatus": "Internal cast/composition review; independent art and distribution-rights acceptance pending."
+    },
+    {
+      "id": "kerr-closed",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-10",
+      "sourceFile": "/workspace/generated_images/exec-b3a25aeb-f7eb-4cd7-80a2-0da291e533f1.png",
+      "sourceSha256": "bb53b7cd9f161a42bc0fb471467fdc2985f30ab58b0d0348a58e9eb560e0d41e",
+      "promptSummary": "Kerr's closed disappointed gaze preserves short hair, broad silhouette, repaired coat and arm.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/kerr-closed.jpg",
+          "width": 440,
+          "height": 587,
+          "bytes": 54330,
+          "sha256": "fe8743eab5af388a5ae7b6022c58d516653ded0de5407946b929135ccdf9b60d"
+        }
+      ],
+      "references": [
+        {
+          "path": "public/art/kerr.jpg",
+          "sha256": "ec67f4b4299b3ff3302f9e6ae399dc2988d3f086b4f75bd8db2f481884b500ea"
+        }
+      ],
+      "reviewStatus": "Internal cast/composition review; independent art and distribution-rights acceptance pending."
+    },
+    {
+      "id": "quill-waiting",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-10",
+      "sourceFile": "/workspace/generated_images/exec-229fb118-ed24-457f-8a69-f1116ca892ef.png",
+      "sourceSha256": "c4c6bb70702d981a4942f89fd8e3e3f5d55c5fe8f0645f6a23c185ebff58cda8",
+      "promptSummary": "Patient skeptical Quill retains lined face, grey hair, amber eyes and stall steam.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/quill-waiting.jpg",
+          "width": 440,
+          "height": 587,
+          "bytes": 73032,
+          "sha256": "8ed1f97159ed5acf9a09802df570e74a87a50ac377c7be63d940e3d0f3f0ad1b"
+        }
+      ],
+      "references": [
+        {
+          "path": "public/art/quill.jpg",
+          "sha256": "4971bcdc37e0853eb4bf0199b883d421ce7a71a77dd2b487c1974e616755311b"
+        }
+      ],
+      "reviewStatus": "Internal cast/composition review; independent art and distribution-rights acceptance pending."
+    },
+    {
+      "id": "sera-listening",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-10",
+      "sourceFile": "/workspace/generated_images/exec-bb996399-c4ae-4e0c-ad2d-8d8ffba3edae.png",
+      "sourceSha256": "78b952ca280d80cdaa2c0cd6e0324b0df4198f621657a792041871861095d5ec",
+      "promptSummary": "Attentive Sera with original hood and pencil, no victory or absolution.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/sera-listening.jpg",
+          "width": 440,
+          "height": 587,
+          "bytes": 70999,
+          "sha256": "2f6f082f184eb1f8bd6e44e64b8a92facde781d1a7f8d572a794a335a87e4369"
+        }
+      ],
+      "references": [
+        {
+          "path": "public/art/sera.jpg",
+          "sha256": "357cfe3e403cfc57140977271a62264157640a0c640da9bbd5272e39516b39cf"
+        }
+      ],
+      "reviewStatus": "Internal cast/composition review; independent art and distribution-rights acceptance pending."
+    },
+    {
+      "id": "quill-offer",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-10",
+      "sourceFile": "/workspace/generated_images/exec-ed6377c3-35af-4a43-8419-1a7345dbca96.png",
+      "sourceSha256": "ad279826c9f1190e0ceeca93e7be4a8e815c6b271773ca03c9edcc5965997faf",
+      "promptSummary": "Quill waiting beside untouched bowl, amber counter and rainy walkway; no accepted offer or advance shown.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/quill-offer.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 259163,
+          "sha256": "4aeaeecfdceb1c6e16b55aaf1552d47e782aba52b64e9dcbcf421d6e6c8e6ec3"
+        },
+        {
+          "path": "public/art/quill-offer-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 80606,
+          "sha256": "8f7d5a67c340db278cfa88c0f7fc1d8aa72fd8e271bc971c909e10d4de116b75"
+        }
+      ],
+      "references": [
+        {
+          "path": "public/art/quill.jpg",
+          "sha256": "4971bcdc37e0853eb4bf0199b883d421ce7a71a77dd2b487c1974e616755311b"
+        }
+      ],
+      "reviewStatus": "Internal cast/composition review; independent art and distribution-rights acceptance pending."
+    },
+    {
+      "id": "chapel-reader",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-10",
+      "sourceFile": "/workspace/generated_images/exec-729272ad-5628-4e1e-9132-50b6e0e1f4df.png",
+      "sourceSha256": "3fbc81b39bb76d50376024e5d85e45bc4ae55e018065c96cf03775d982d275fa",
+      "promptSummary": "Empty maintenance reader, ambiguous latch, tools behind glass and wet stair before entry.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/chapel-reader.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 309451,
+          "sha256": "1686a883834fff73bdb935fad6bc52083d20cfcb04669c067a073ae03abe9738"
+        },
+        {
+          "path": "public/art/chapel-reader-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 81447,
+          "sha256": "01a16c2155052da6aa0a123fbb8e6030bd37ec5b55efd2b46a001e4081b59401"
+        }
+      ],
+      "references": [],
+      "reviewStatus": "Internal cast/composition review; independent art and distribution-rights acceptance pending."
+    },
+    {
+      "id": "mara-revelation",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-10",
+      "sourceFile": "/workspace/generated_images/exec-bb9fd5dc-070a-4b5f-8096-3433fa3905b6.png",
+      "sourceSha256": "9bae7578b236aeb785d174994888c8c100d632f55ab244588d3d59add3dca58d",
+      "promptSummary": "Recorded Mara beside cyan memory apparatus; no present-day permission or authentication.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/mara-revelation.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 210095,
+          "sha256": "577a72c15542c6d7fa49a27d971f39877ac0006105024131b4084ca765681738"
+        },
+        {
+          "path": "public/art/mara-revelation-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 62121,
+          "sha256": "72562848863d46c04e909f913630e719028e71856c4b836c20ade145a5ad4b4c"
+        }
+      ],
+      "references": [
+        {
+          "path": "public/art/mara.jpg",
+          "sha256": "2b1c67aa8a9519999a98e8559edc831406e2014fd42d91bf4ab1ae7b1e0d3214"
+        }
+      ],
+      "reviewStatus": "Internal cast/composition review; independent art and distribution-rights acceptance pending."
+    },
+    {
+      "id": "finale-names",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-10",
+      "sourceFile": "/workspace/generated_images/exec-0053ebdd-58a4-486b-9a72-dac64e504aed.png",
+      "sourceSha256": "a049f26be0d8ef8ba3bf126a1089afd828748190bd5a73ec5845a8cd072ee821",
+      "promptSummary": "Sera writing anonymous marks on rain-worn memorial, no displayed private identities.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/finale-names.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 284789,
+          "sha256": "7a22dc054a9e6700b8a688dedc17f02dc672efe4cccaa979082e07ff2153e72c"
+        },
+        {
+          "path": "public/art/finale-names-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 81924,
+          "sha256": "8cd0509d1862947e9fc82878b37f7d48ce76b38bcfaf888eb6a5db314bf6c269"
+        }
+      ],
+      "references": [
+        {
+          "path": "public/art/sera.jpg",
+          "sha256": "357cfe3e403cfc57140977271a62264157640a0c640da9bbd5272e39516b39cf"
+        },
+        {
+          "path": "public/art/wardnine.jpg",
+          "sha256": "c53adb16eb278e6d2904cda51265cbfd79a964ad0cda43dce94edb432d5cbff0"
+        }
+      ],
+      "reviewStatus": "Internal cast/composition review; independent art and distribution-rights acceptance pending."
+    },
+    {
+      "id": "finale-quiet",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-10",
+      "sourceFile": "/workspace/generated_images/exec-8aca7006-b8c0-4962-b12f-7a0357ab9ce2.png",
+      "sourceSha256": "f1b56be9d417578016cf44a30d2f2c223a496c0c501e74bc125f3a3391b3898b",
+      "promptSummary": "Empty rainy memorial stair with Sera aside and pencil still.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/finale-quiet.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 294800,
+          "sha256": "ac9eaf092f9d3e79f6ddc9efdf5b306e0f0838cad1414f21f7159cc7c5061074"
+        },
+        {
+          "path": "public/art/finale-quiet-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 78706,
+          "sha256": "4341796646fc70459af7481f8df71720e2f37c304605ec687d09d75bb6b7560c"
+        }
+      ],
+      "references": [
+        {
+          "path": "public/art/sera.jpg",
+          "sha256": "357cfe3e403cfc57140977271a62264157640a0c640da9bbd5272e39516b39cf"
+        },
+        {
+          "path": "public/art/wardnine.jpg",
+          "sha256": "c53adb16eb278e6d2904cda51265cbfd79a964ad0cda43dce94edb432d5cbff0"
+        }
+      ],
+      "reviewStatus": "Internal cast/composition review; independent art and distribution-rights acceptance pending."
+    },
+    {
+      "id": "finale-witness",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-10",
+      "sourceFile": "/workspace/generated_images/exec-5c8e5849-db58-4581-af3e-fdc5d7140282.png",
+      "sourceSha256": "3b5b111516257b198f4a6666f0e4a7732d695e21e5352f812c61155e8e062332",
+      "promptSummary": "Sera listening beside wall and plain notebook; no absolution or inquiry finding.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/finale-witness.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 247623,
+          "sha256": "08b5ebc44ac43c137ac792901092963f3f21ab35a5ae12f7390a3125f3e66c37"
+        },
+        {
+          "path": "public/art/finale-witness-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 69937,
+          "sha256": "5c00c4fd455cc0e3f819c5ca1919a907eeba363838303dba0f7d3679fdb8f719"
+        }
+      ],
+      "references": [
+        {
+          "path": "public/art/sera.jpg",
+          "sha256": "357cfe3e403cfc57140977271a62264157640a0c640da9bbd5272e39516b39cf"
+        },
+        {
+          "path": "public/art/wardnine.jpg",
+          "sha256": "c53adb16eb278e6d2904cda51265cbfd79a964ad0cda43dce94edb432d5cbff0"
+        }
+      ],
+      "reviewStatus": "Internal cast/composition review; independent art and distribution-rights acceptance pending."
+    },
+    {
+      "id": "finale-listed",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-10",
+      "sourceFile": "/workspace/generated_images/exec-0bf8c30f-d1f8-4637-9fc8-5015ba15df9c.png",
+      "sourceSha256": "2945bd489ea0def96353400d641b757ad93eec41a6df5ced78737f8269dca8cf",
+      "promptSummary": "Ives closing folio at memorial while Sera keeps her pencil; no justice or payment.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/finale-listed.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 283489,
+          "sha256": "097e29b0e4558bcbfccfd9f2431b0cdc80c810d01b313b1a29407df4ebec1954"
+        },
+        {
+          "path": "public/art/finale-listed-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 74999,
+          "sha256": "adc674abba2e4e39af79a919cce5bfc5c9d9a4ff74deff6285eed220e7856f37"
+        }
+      ],
+      "references": [
+        {
+          "path": "public/art/ives.jpg",
+          "sha256": "0fbff0f64074ee10c85fb6e4f475f2c6df11b559b6a1ab11e78af4b4ed5e1fd8"
+        },
+        {
+          "path": "public/art/wardnine.jpg",
+          "sha256": "c53adb16eb278e6d2904cda51265cbfd79a964ad0cda43dce94edb432d5cbff0"
+        },
+        {
+          "path": "public/art/sera.jpg",
+          "sha256": "357cfe3e403cfc57140977271a62264157640a0c640da9bbd5272e39516b39cf"
+        }
+      ],
+      "reviewStatus": "Internal cast/composition review; independent art and distribution-rights acceptance pending."
     }
   ]
 }

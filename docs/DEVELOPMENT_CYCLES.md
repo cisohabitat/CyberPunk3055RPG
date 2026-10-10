@@ -187,3 +187,8 @@ Six cards, two clinic windows and two dispatch capacities now support an actual 
 ## Roadmap phase 3, cycle 5 — campaign integration
 
 Return work, access history, all supported transfer methods, depot costs and clinic proposals now follow the runner through warnings, records and all four finales. One short optional Lumen reply has explicit suitable portrait art; historical facts do not inflate commitment completion totals. Six primary internal UI campaigns contain 470 scene visits, including four directed finales and two natural-dice origins. The candidate has 185 scenes / 536 choices, 96 complete fixtures and 346 unit/replay cases; thirty-three focused browser checks cover the integrated flow and controller disclosure navigation and optional readable recap. See [CAMPAIGN_INTEGRATION.md](CAMPAIGN_INTEGRATION.md) for findings, limits and the proposed Phase 4 script/shot handoff. Exact-revision CI and live production checks precede handback. Independent acceptance and the 9+ target remain open.
+
+
+## Roadmap phase 4, cycle 6 — directed art
+
+Five conduct-selected cast expressions and seven scene plates give the opening offer, recorded revelation, Chapel landing and original finales deliberate compositions. Explicit scene and conditional-portrait catalogs retain neutral unresolved treatment and reject mismatched speakers. Missing images retain readable descriptions/labels. Masters, delivery hashes, credits, audition and the media pack accompany the change. See [ART_AUDIO_DIRECTION.md](ART_AUDIO_DIRECTION.md). Release requires exact-revision CI, full UI campaigns, budget probing and live checks; external artistic and rights acceptance remain open.

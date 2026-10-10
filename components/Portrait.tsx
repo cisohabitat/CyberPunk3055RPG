@@ -1,6 +1,7 @@
 import { speakerRole } from "@/lib/story/cast";
 import { portraitArt } from "@/lib/art";
 import type { OriginId } from "@/lib/types";
+import { useState } from "react";
 
 const ORIGIN_ART: Record<OriginId, { src: string; label: string }> = {
   gutterwire: { src: "/art/stall.jpg", label: "Gutterwire" },
@@ -8,8 +9,9 @@ const ORIGIN_ART: Record<OriginId, { src: string; label: string }> = {
   dustline: { src: "/art/canal.jpg", label: "Dustline" },
 };
 
-export function Portrait({ speaker, sceneId, origin, handle, artwork = true }: { speaker?: string; sceneId?: string; origin: OriginId; handle?: string; artwork?: boolean }) {
-  const face = portraitArt(speaker, sceneId);
+export function Portrait({ speaker, sceneId, origin, handle, flags, artwork = true }: { speaker?: string; sceneId?: string; origin: OriginId; handle?: string; flags?: Readonly<Record<string, boolean>>; artwork?: boolean }) {
+  const face = portraitArt(speaker, sceneId, flags);
+  const [failedSource, setFailedSource] = useState<string>();
   const plate = ORIGIN_ART[origin];
   const src = face ?? plate.src;
   const role = speaker ? speakerRole(speaker) : undefined;
@@ -17,7 +19,7 @@ export function Portrait({ speaker, sceneId, origin, handle, artwork = true }: {
   const label = name ? `${name}${role ? ` · ${role}` : ""}` : `${handle ?? plate.label} · ${plate.label}`;
   return (
     <figure className="portrait-frame">
-      {artwork ? <img className="portrait" src={src} alt="" width={220} height={294} decoding="async" /> : <div className="portrait-placeholder" aria-hidden="true" />}
+      {artwork && failedSource !== src ? <img className="portrait" src={src} alt="" width={220} height={294} decoding="async" onError={() => setFailedSource(src)} /> : <div className="portrait-placeholder" aria-hidden="true" />}
       <figcaption>{label}</figcaption>
     </figure>
   );

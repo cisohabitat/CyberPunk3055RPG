@@ -5,7 +5,7 @@ import { it } from "node:test";
 import provenance from "../qa/media/art-provenance.json";
 import decisions from "../qa/media/scene-art.json";
 import { SCENES } from "./story";
-import { portraitArt, sceneIllustration, SOURCE_ART, TITLE_ART } from "./art";
+import { portraitArt, sceneIllustration, SOURCE_ART, TITLE_ART, PORTRAIT_STAGING } from "./art";
 import { auditSceneArt } from "./scene-art";
 
 it("ships documented generated images without corrupting or enlarging their encoded files", () => {
@@ -27,6 +27,20 @@ it("ships documented generated images without corrupting or enlarging their enco
   for (const path of [TITLE_ART.src, TITLE_ART.small]) assert.ok(paths.has(`public${path}`), `Missing title art provenance: ${path}`);
   for (const art of Object.values(SOURCE_ART)) for (const path of [art.src, art.small]) assert.ok(paths.has(`public${path}`), `Missing source art provenance: ${path}`);
   for (const id of ["memory_assurance", "memory_publication"]) assert.ok(paths.has(`public${portraitArt(SCENES[id].speaker, id)}`));
+  for (const rule of PORTRAIT_STAGING) assert.ok(paths.has(`public${rule.asset}`), rule.asset);
+});
+
+it("stages actual boundaries and breaches without treating help as forgiveness", () => {
+  assert.equal(portraitArt("Kerr", "act3_kerr_collection", { kerr_route_private: true, kerr_route_trace: true, kerr_route_delivered: true, kerr_route_acknowledged: true }), "/art/kerr-closed.jpg");
+  assert.equal(portraitArt("Kerr", "act3_kerr_collection", { kerr_route_registered: true, kerr_route_trace: true, kerr_route_delivered: true }), "/art/kerr.jpg");
+  assert.equal(portraitArt("Kerr", "act3_kerr_collection", { kerr_route_private: true }), "/art/kerr.jpg");
+  assert.equal(portraitArt("Mara", "act3_response_visit", { response_received: true }), "/art/mara.jpg");
+  assert.equal(portraitArt("Mara", "act3_response_visit", { response_received: true, response_public_refused: true }), "/art/mara-boundary.jpg");
+  assert.equal(portraitArt("Sister Lumen", "act3_chapel_return", { betrayed_lumen: true, chapel_shift_kept: true }), "/art/lumen-guarded.jpg");
+  assert.equal(portraitArt("Quill", "act3_quill_introduction", { quill_refused: true, quill_repaid_late: true }), "/art/quill-waiting.jpg");
+  assert.equal(portraitArt("Sera", "ending_witness", { confirmed_leak: true }), "/art/sera-listening.jpg");
+  assert.equal(portraitArt("Sera", "ending_names", { confirmed_leak: true }), "/art/sera.jpg");
+  for (const speaker of ["Mara", "Kerr", "Quill", "Sera", "Sister Lumen"]) assert.equal(portraitArt(speaker, "unknown_scene", { response_public_refused: true, betrayed_lumen: true, kerr_route_private: true, kerr_route_trace: true }), portraitArt(speaker));
 });
 
 it("every scene has an explicit art decision matching delivered artwork", () => {

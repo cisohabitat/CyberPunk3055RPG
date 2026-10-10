@@ -897,6 +897,7 @@ html[data-motion="reduce"] *, html[data-motion="reduce"] *::before, html[data-mo
 .scene-illustration { margin: 1.1rem 0; border: 1px solid var(--line); background: #09080d; }
 .scene-illustration img { display: block; width: 100%; height: clamp(160px, 24vw, 280px); object-fit: cover; }
 .scene-illustration figcaption { padding: .5rem .75rem; color: var(--muted); font: .8rem var(--font-display), sans-serif; letter-spacing: .08em; text-transform: uppercase; }
+.scene-illustration .art-unavailable { padding: 1rem; color: var(--muted); }
 html[data-artwork="none"] .scene { background-color: #09080d; }
 
 .title-card { width: min(1100px, 100%); padding: 0; }

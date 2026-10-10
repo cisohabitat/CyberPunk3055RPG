@@ -7,6 +7,42 @@ import { exportRun } from "../lib/vault";
 function fixture(sceneId = "stall", extra: Partial<GameState> = {}): GameState {
   return { ...createCharacter({ handle: "Rex", givenName: "Ada", origin: "spire", bonus: { chrome: 0, nerve: 0, face: 2, ghost: 0 }, complication: "optic" }), sceneId, ...extra };
 }
+for (const [width, none] of [[390, false], [1440, false], [320, true]] as const) test(`directed art retains conduct and stages four finales at ${width}px`, async ({ page }) => {
+  await page.setViewportSize({ width, height: width < 700 ? 844 : 900 });
+  const requests: string[] = []; page.on("request", request => { if (request.url().includes("/art/")) requests.push(request.url()); });
+  await page.addInitScript(none => localStorage.setItem("saint-shard-preferences", JSON.stringify({ artwork: none ? "none" : "full", textStep: none ? 2 : 0, contrast: none ? "high" : "standard", reading: "all", motion: "reduce" })), none);
+  await openRun(page, fixture("act3_kerr_collection", { flags: { kerr_route_private: true, kerr_route_trace: true, kerr_route_delivered: true, kerr_route_acknowledged: true } }));
+  if (!none) await expect(page.locator(".scene-row .portrait")).toHaveAttribute("src", "/art/kerr-closed.jpg");
+  const goal = await page.getByTestId("goal").boundingBox(); expect(goal!.y + goal!.height).toBeLessThan(844);
+  await expect(page.getByTestId("scene-text")).toContainText("Don't call this private");
+  for (const id of ["names", "quiet", "witness", "listed"]) {
+    const run = fixture(`ending_${id}`, { flags: { confirmed_leak: true, betrayed_lumen: true, kerr_route_trace: true } });
+    await page.evaluate(run => localStorage.setItem("saint-shard-3055-v1", JSON.stringify(run)), run);
+    await page.reload(); await page.getByTestId("continue-run").click();
+    const plate = page.getByTestId("scene-illustration");
+    if (none) await expect(plate).toHaveCount(0);
+    else {
+      await expect(plate.locator("img")).toHaveAttribute("src", `/art/finale-${id}.jpg`);
+      await plate.scrollIntoViewIfNeeded();
+      await expect.poll(() => plate.locator("img").evaluate((img: HTMLImageElement) => img.complete && img.naturalWidth > 0)).toBe(true);
+    }
+    await expect(page.getByTestId("aftermath-details")).not.toHaveAttribute("open");
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    const saved = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!)); expect(saved.flags).toEqual(run.flags);
+  }
+  if (none) expect(requests).toEqual([]);
+});
+test("unavailable directed scene and portrait art leaves the job readable and playable", async ({ page }) => {
+  await page.route("**/art/**", route => route.abort());
+  await page.addInitScript(() => localStorage.setItem("saint-shard-preferences", JSON.stringify({ reading: "all", motion: "reduce" })));
+  await openRun(page, fixture());
+  await expect(page.locator(".art-unavailable")).toContainText("Quill waits");
+  await expect(page.locator(".scene-row .portrait-placeholder")).toBeVisible();
+  await expect(page.getByTestId("goal")).toBeVisible();
+  await expect(page.getByTestId("scene-text")).toContainText("Mara Voss");
+  await page.getByTestId("choice-accept").click();
+  await expect(page.getByTestId("scene-text")).toBeVisible();
+});
 test("campaign integration warns about return work and preserves it after closing the week", async ({ page }) => {
   await openRun(page, fixture("act2_middle", { strain: 0, creds: 0, flags: { chapel_shift_owed: true, witness_shift_owed: true } }));
   await expect(page.getByTestId("objectives")).toContainText("Campaign commitments");

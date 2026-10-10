@@ -99,6 +99,8 @@ Cycle 5 implementation and internal evidence are recorded in [CAMPAIGN_INTEGRATI
 
 **Cycle 6: coherent character and scene staging.**
 
+Implementation brief and evidence handoff: [Phase 4 art and audio direction](ART_AUDIO_DIRECTION.md). Generated candidates do not close the independent art, audio or distribution-rights gate.
+
 - Approve cast model sheets, district palette, lighting and composition rules. Start with Mara, Lumen, Kerr, Quill and Sera; keep existing suitable assets during the transition.
 - Build small expression sets for emotionally important moments. Select expressions from actual conduct, not merely faction score; neutral art remains valid for unresolved states.
 - Stage the opening offer, Chapel reveal, new encounter commitments, quiet conversations and four finales with deliberate close/medium/environment compositions. Establish a shot list instead of an image quota.

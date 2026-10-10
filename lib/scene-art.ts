@@ -1,5 +1,5 @@
 import decisions from "../qa/media/scene-art.json";
-import { placeArt, portraitArt, sceneIllustration } from "./art";
+import { placeArt, portraitArt, sceneIllustration, PORTRAIT_STAGING } from "./art";
 import type { Scene } from "./types";
 
 export type SceneArtDecision = {
@@ -10,7 +10,7 @@ export type SceneArtDecision = {
 
 /** Authoring/QA only: never silently assign art to a newly added scene. */
 export function auditSceneArt(scenes: Record<string, Scene>, source: unknown = decisions): Record<string, SceneArtDecision> {
-  const manifest = source as { version?: unknown; decisions?: unknown } | null;
+  const manifest = source as { version?: unknown; decisions?: unknown; variants?: unknown } | null;
   if (!manifest || manifest.version !== 1 || !Array.isArray(manifest.decisions)) throw new Error("Invalid scene art manifest");
   const result: Record<string, SceneArtDecision> = {};
   for (const entry of manifest.decisions) {
@@ -33,5 +33,11 @@ export function auditSceneArt(scenes: Record<string, Scene>, source: unknown = d
   }
   const missing = Object.keys(scenes).filter((id) => !Object.hasOwn(result, id));
   if (missing.length) throw new Error(`Missing scene art decision: ${missing.join(", ")}`);
+  if (JSON.stringify(manifest.variants) !== JSON.stringify(PORTRAIT_STAGING)) throw new Error("Conditional portrait catalog disagrees with conduct staging");
+  for (const rule of PORTRAIT_STAGING) for (const id of rule.scenes) {
+    if (!scenes[id] || scenes[id].speaker !== rule.speaker) throw new Error(`Conditional portrait speaker mismatch: ${id}`);
+    const flags = Object.fromEntries(("allFlags" in rule ? rule.allFlags : rule.anyFlags).map(flag => [flag, true]));
+    if (portraitArt(rule.speaker, id, flags) !== rule.asset) throw new Error(`Conditional portrait selection mismatch: ${id}`);
+  }
   return result;
 }

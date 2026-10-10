@@ -14,7 +14,7 @@ import budgets from "../qa/production/budgets.json";
 import missions from "../qa/production/mission-audit.json";
 import { auditMissions } from "../lib/mission-audit";
 import { auditSceneArt } from "../lib/scene-art";
-import { sceneIllustration } from "../lib/art";
+import { sceneIllustration, PORTRAIT_STAGING } from "../lib/art";
 
 const directory = resolve(process.argv.find((arg) => arg.startsWith("--out="))?.slice(6) ?? "qa/production/reports");
 const release = process.argv.includes("--release");
@@ -70,7 +70,7 @@ const report = {
   replayCoverage: { routes, scenes: variants.size, choices: coveredChoices.size, unplayedScenes: catalog.filter((scene) => scene.unplayedByFixtures).map((scene) => scene.id), unplayedChoices: graph.nodes.flatMap((scene) => scene.choices.filter((choice) => !coveredChoices.has(`${scene.id}:${choice.id}`)).map((choice) => `${scene.id}:${choice.id}`)) },
   budgets, violations, assets, acceptance,
   missionAudit: auditMissions(SCENES, missions, coveredChoices),
-  sceneArt: { source: "qa/media/scene-art.json", coveredScenes: Object.keys(sceneArt).length, decisions: sceneArt },
+  sceneArt: { source: "qa/media/scene-art.json", coveredScenes: Object.keys(sceneArt).length, decisions: sceneArt, conditionalPortraits: PORTRAIT_STAGING },
   limitations: ["Repository fixtures are directed internal QA, not fresh-player research.", "Static asset envelopes are regression limits, not LCP, INP, CLS, memory or physical-device measurements.", "Asset hashes identify supplied files; they do not establish copyright or license rights.", "Pending acceptance gates prevent commercial release acceptance; demo hosting retains its existing CI gate."]
 };
 mkdirSync(directory, { recursive: true });

@@ -11,4 +11,6 @@ Saint Shard is original fiction supplied in `cisohabitat/CyberPunk3055RPG`, with
 
 External player research, professional voice recording, and a rights audit have not been completed by this implementation. Complete those entries with contributor names and supporting records when production work is performed.
 
+Phase 4 adds five cast-continuity expression variants and seven deliberately staged scene plates generated with `image_gen.imagegen`. They use the existing fictional cast and memorial images as references, retaining the supplied references' undocumented provenance caveat. Generated PNG masters are retained; delivered JPEGs undergo resizing and encoding only. Exact references, source/delivery hashes and prompt summaries are in `qa/media/art-provenance.json`. The cast, composition and pronunciation briefs are in `docs/ART_AUDIO_DIRECTION.md`. Internal review does not provide independent artistic approval or establish distribution rights.
+
 The generated production asset manifest records byte sizes and SHA-256 hashes for supplied art, audio, and static build files. This identifies the reviewed versions and supplies no missing artist attribution, license, or commercial rights. The new Week bed uses the same procedural source pipeline and no third-party samples or actor recordings.

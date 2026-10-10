@@ -226,7 +226,7 @@ export function PlayScreen({
             style={{ backgroundImage: preferences.artwork === "none" || illustration ? undefined : `linear-gradient(180deg, rgba(9,8,13,0.72), rgba(9,8,13,0.94)), url(${placeArt(scene.location)})` }}
           >
             <div className="scene-row">
-              <Portrait speaker={scene.speaker} sceneId={scene.id} origin={state.origin} handle={state.handle} artwork={preferences.artwork !== "none"} />
+              <Portrait speaker={scene.speaker} sceneId={scene.id} flags={state.flags} origin={state.origin} handle={state.handle} artwork={preferences.artwork !== "none"} />
               <div>
                 <p className="kicker">
                   {scene.location}
