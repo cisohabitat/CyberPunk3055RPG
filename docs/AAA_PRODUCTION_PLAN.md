@@ -1,6 +1,6 @@
 # Saint Shard AAA Level Production Plan
 
-Saint Shard should grow into a premium narrative RPG with exceptional writing, playable memory investigations, distinctive character builds, coherent visual direction, directed sound, and dependable accessibility. The current game is a useful foundation, graded provisionally at **7.0/10**. Reaching the proposed standard requires a sustained production program, a funded team, and repeated independent player testing.
+Saint Shard should grow into a premium narrative RPG with exceptional writing, playable memory investigations, distinctive character builds, coherent visual direction, directed sound, and dependable accessibility. The current game is a useful foundation, graded provisionally at **7.8/10 in the latest internal review**. Reaching the proposed standard requires a sustained production program, a funded team, and repeated independent player testing.
 
 This plan covers six production phases from discovery through launch and continuing support. It supersedes the short-term scope of [ROADMAP.md](ROADMAP.md) for future production; that file remains the record of foundations already implemented. Proposed dates, quantities, thresholds, and budgets below are planning assumptions to validate in preproduction. They do not describe funded commitments or completed work.
 
@@ -60,6 +60,8 @@ The recurring loop should be: accept a problem, investigate its sources, prepare
 | Languages | English production master; localization-ready architecture from preproduction | Select launch languages using demand and supplier costs before script lock. |
 
 The scope is a starting envelope. It must fit the measured writer, artist, engineering, voice, localization, and QA capacity. A strong eight-hour campaign is preferable to a fifteen-hour campaign that repeats weak encounters.
+
+The current candidate’s [grade-based six-phase roadmap](ROADMAP.md) is the near-term ten-cycle quality program. Its internal 7.8 assessment and delivery scope do not replace the funding, staffing or independent acceptance gates in this full production plan.
 
 ## Schedule and dependencies
 

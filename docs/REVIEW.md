@@ -1,6 +1,25 @@
-# Current game review — 9 October 2026
+# Current internal game review — 10 October 2026
 
-**Provisional grade: 7.0/10 as a browser narrative RPG.** This is a code and playable-flow assessment, not an external player study. It is stronger than the original 6.5/10 prototype. It has a coherent setting, consequential choices, save recovery, and a tested campaign. It still needs substantially more authored encounter variety, art direction, performance measurements on supported hardware, and independent player/editorial review to meet its AAA ambition.
+**Provisional internal grade: 7.8/10 as a browser narrative RPG**, reviewing `091403c`. This is a qualitative assessment informed by source review, rendered UI inspection and internal automated campaign play; it is not an independent player study or an AAA acceptance grade. The earlier 7.0 assessment is retained below as history.
+
+| Area | Weight | Grade | Evidence and remaining weakness |
+| --- | --- | --- | --- |
+| Narrative and consequence | 20% | 8.0 | Opening motivations, remembered conduct, current Mara/Lumen goals and character beats across four finales are stronger. Procedural repetition and whole-campaign editorial quality remain concerns. |
+| RPG depth and replay | 20% | 7.0 | Investigation, route planning, costs, origins and failure recovery create agency. Similar encounter structures and limited build differentiation constrain replay. |
+| Visual presentation | 15% | 7.5 | Coherent interface, matching environmental plates, source illustrations and restrained expression variants. Expressive staging, complete cast model sheets and independent asset review remain needed. |
+| Audio production | 10% | 6.8 | Four distinct scores, optional cues and six fixed synthetic dialogue clips with independent controls. Coverage and production scope are limited; independent listening/mix and directed-performance review remain open. |
+| Usability and accessibility | 15% | 8.0 | Reading/contrast/motion/audio settings, save recovery and verified narrow text-only play. Physical-device and manual assistive-technology acceptance remain unproven. |
+| Engineering and release | 20% | 8.8 | Exact-revision CI, durable saves/dice and verified public media. CI exceeds the initial deployment wait, requiring a safe same-revision retry; long-session and supported-device evidence remain open. |
+
+Weighted total: **7.765**, rounded to **7.8**. Reliability is stronger than the gameplay and presentation. Content counts and passing tests support scope/compatibility, not enjoyment. Five full internal campaigns (four directed, one natural-dice), 276 unit tests and 460 browser checks passed for this revision; public WebKit flows passed at 390, 1440 and largest-text/high-contrast text-only 320 pixels. This does not demonstrate independent comprehension, accessibility, audiovisual craft or physical-device percentile performance.
+
+The [grade-based roadmap](ROADMAP.md) sets six phases and ten delivery cycles, prioritizing encounter variety and builds, narrative editing, expressive art/audio and independent revision. Its weighted target is 9.35 with every category at least 9.0, not an automatic or promised score. All six independent production acceptance gates remain pending.
+
+---
+
+# Historical baseline review — 9 October 2026
+
+**Baseline provisional grade: 7.0/10 as a browser narrative RPG.** This is a code and playable-flow assessment, not an external player study. It is stronger than the original 6.5/10 prototype. It has a coherent setting, consequential choices, save recovery, and a tested campaign. It still needs substantially more authored encounter variety, art direction, performance measurements on supported hardware, and independent player/editorial review to meet its AAA ambition.
 
 | Area | Weight | Grade | Evidence and limitation |
 | --- | --- | --- | --- |
