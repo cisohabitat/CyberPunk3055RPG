@@ -722,7 +722,8 @@ for (const [origin, complication, motive, root, reason] of [
   await page.getByLabel("Reading pace").selectOption("all");
   await page.getByRole("button", { name: "Done", exact: true }).click();
   await page.getByTestId("choice-hear-stallholder").click();
-  await expect(page.getByTestId("scene-text")).toContainText("sold that evening to make the rent");
+  await expect(page.getByTestId("scene-text")).toContainText("to make the rent");
+  await expect(page.getByTestId("scene-text")).toContainText("Remembered getting paid. Didn't remember what he needed to apologize for.");
   await expect(page.getByTestId("goal")).toBeInViewport();
   expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations).toEqual([]);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);

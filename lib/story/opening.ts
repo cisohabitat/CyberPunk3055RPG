@@ -13,6 +13,13 @@ export function openingMotive(state: GameState): string {
   return "";
 }
 
+function motiveReminder(state: GameState): string {
+  if (state.flags.opening_survival) return "You want work that will keep tomorrow yours.";
+  if (state.flags.opening_identity) return "You want work without another claim on your name.";
+  if (state.flags.opening_exit) return "You want a way beyond the next closed door.";
+  return "";
+}
+
 function selfText(state: GameState): string {
   const trouble = state.complication === "debt"
     ? `Your chip holds ${state.creds} creds. Quill covered a shortfall once. The debt still carries his name, and his invitation arrived before you found another way to pay it.`
@@ -48,7 +55,7 @@ export const OPENING_SCENES: Record<string, Scene> = {
   },
   opening_approach: {
     id: "opening_approach", location: "Ward Four night market",
-    text: (state) => `Steam rises through the awnings. A woman behind the noodle counter wipes rain off a menu while the tower advert plays above her: “Sleep without yesterday.” She sees you looking.\n\n“Funny thing to sell,” she says. “Yesterday.”\n\nQuill sits at the far end of her counter, coat buttoned, bowl untouched. He raises two fingers. You have a moment before you take the stool.`,
+    text: (state) => `${motiveReminder(state)}${motiveReminder(state) ? " " : ""}Steam rises through the awnings. A woman behind the noodle counter wipes rain off a menu while the tower advert plays above her: “Sleep without yesterday.” She sees you looking.\n\n“Funny thing to sell,” she says. “Yesterday.”\n\nQuill sits at the far end of her counter, coat buttoned, bowl untouched. He raises two fingers. You have a moment before you take the stool.`,
     choices: [
       { id: "hear-stallholder", label: "Ask her what she means.", detail: "Hear one person’s experience of the memory trade. No check or purchase.", effects: { flags: ["opening_neighbor_heard"] }, next: "opening_neighbor" },
       { id: "meet-quill", label: "Take the stool opposite Quill.", effects: { flags: ["opening_complete"] }, next: "stall" },

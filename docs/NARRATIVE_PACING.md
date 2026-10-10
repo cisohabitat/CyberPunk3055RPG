@@ -36,7 +36,7 @@ The Hour asks why this runner accepts the job and what the stolen hour actually 
 
 The [171-scene audit](../qa/editorial/phase1-audit.csv) lists active choices, the act's emotional question, retain/edit decisions, lengths, continuity checks and accompanying art decisions. The baseline includes 304 representative text samples: 151 scenes observed through fixtures, plus source previews for 20 scenes not reached by those fixtures. These are internal editorial/replay samples, not exhaustive conditional coverage or an independent editor's approval.
 
-Thirty-three scenes have authored prose changes. The pass shortens the stallholder anecdote and departure repetition, Edda/Asa/Kerr briefings, successful bench feedback and the Wall's surrounding recap. Return visits use existing completion/visit flags to give a shorter answer rather than replaying the entire briefing or journal outcome. Unfinished work, private custody, exposure, old betrayal, once-only referrals and unsettled commitments still have explicit warnings where they matter.
+Thirty-three scenes have authored prose changes. The chosen motive stays in the first paragraph after a reload as a brief reminder. The pass shortens the stallholder anecdote and departure repetition, Edda/Asa/Kerr briefings, successful bench feedback and the Wall's surrounding recap. Return visits use existing completion/visit flags to give a shorter answer rather than replaying the entire briefing or journal outcome. Unfinished work, private custody, exposure, old betrayal, once-only referrals and unsettled commitments still have explicit warnings where they matter.
 
 Mara's bench cross-examination is an interview embedded in the recorded hour. Its controls now say **Replay**, and its narration says she cannot hear the runner now. Adjacent recorded gestures and testimony use the same framing. The voluntary Week conversation remains current speech. The six fixed synthetic voice quotations are unchanged, so their matching audio needs no regeneration.
 
@@ -46,7 +46,7 @@ Every edited scene has an explicit art decision. The same people and places use 
 
 ## Measured scope and verification
 
-The [paired measurement](../qa/editorial/phase1-summary.json) evaluates new prose against the identical pre-choice states captured from all 75 baseline routes: **5,462 scene visits**, 396,104 words before and 343,129 after, a **13.4% aggregate reduction**. It is not a unique-script word count, a measured reading-time improvement or a grade increase. Cuts are selective: the longest repetitive returns shrink substantially, while the interview framing becomes slightly longer where clarity requires it.
+The [paired measurement](../qa/editorial/phase1-summary.json) evaluates new prose against the identical pre-choice states captured from all 75 baseline routes: **5,462 scene visits**, 396,104 words before and 343,762 after, a **13.2% aggregate reduction**. It is not a unique-script word count, a measured reading-time improvement or a grade increase. Cuts are selective: the longest repetitive returns shrink substantially, while the interview framing becomes slightly longer where clarity requires it.
 
 Examples of maximum sampled scene lengths: Spire return 109 → 56 words; shelter return 95 → 70; freight return 69 → 58; Edda's shift terms 96 → 59; first Wall introduction 125 → 95; Wall ledger 187 → 140. Conditional state and visit counts affect these maxima; they are not participant observations.
 
