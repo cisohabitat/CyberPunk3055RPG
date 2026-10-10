@@ -946,3 +946,15 @@ html[data-contrast="high"] .title-intro { background: #09080d; }
 .memory-source-card { min-width: 0; padding: .8rem; border: 1px solid var(--line); border-radius: .4rem; }
 .memory-source-card button { width: 100%; margin-top: .5rem; text-align: left; }
 .memory-source-bank summary { cursor: pointer; min-height: 2rem; overflow-wrap: anywhere; }
+/* Optional source close-ups and placement feedback never carry evidence text. */
+.source-art { margin: 12px 0; max-width: 450px; }
+.source-art img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; border: 1px solid var(--line); border-radius: 4px; }
+.source-art figcaption { font-size: .8rem; margin-top: 6px; color: var(--muted); }
+.source-art.compact { width: 90px; margin: 8px 0 0; }
+.source-art-missing { aspect-ratio: 3 / 2; display: grid; place-items: center; padding: 12px; border: 1px solid var(--line); font-size: .85rem; }
+.fragment-placed { animation: fragment-seat 240ms ease-out; }
+@keyframes fragment-seat { from { opacity: .6; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
+html[data-motion="reduce"] .fragment-placed { animation: none; }
+@media (prefers-reduced-motion: reduce) { .fragment-placed { animation: none; } }
+.voice-line { padding: 12px 0; border-block: 1px solid var(--line); margin: 16px 0; }
+.voice-line .hint { margin: 8px 0; }

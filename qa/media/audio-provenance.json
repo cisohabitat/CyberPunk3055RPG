@@ -3,7 +3,7 @@
     "scripts/score.mjs",
     "scripts/generate-audio.mjs"
   ],
-  "method": "Original authored digital synthesis. No third-party samples, AI music service, actor recordings or trained voice models.",
+  "method": "Original authored digital synthesis for scores and cues. No third-party samples, AI music service, actor recordings or trained voice models in this synthesis pipeline. Selected synthetic dialogue is documented separately in voice-provenance.json.",
   "tempoBpm": 60,
   "bars": 8,
   "beatsPerBar": 4,
@@ -82,6 +82,58 @@
         0.0021668141727958007,
         0.0030823694570757164
       ]
+    }
+  ],
+  "interactionCues": [
+    {
+      "path": "public/audio/memory-place.wav",
+      "durationSeconds": 0.22,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bits": 16,
+      "bytes": 19448,
+      "sha256": "f83b01db7ce6b9c4b723045e1003dd128ce9610504b8b572ac7d7452521f7327",
+      "peak": 0.09915463728751488
+    },
+    {
+      "path": "public/audio/memory-reset.wav",
+      "durationSeconds": 0.42,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bits": 16,
+      "bytes": 37088,
+      "sha256": "b974ce47877192cbb5157eadf213202053a899821a9c6d1b86f0d6749826656f",
+      "peak": 0.10501419110690634
+    },
+    {
+      "path": "public/audio/memory-mismatch.wav",
+      "durationSeconds": 0.36,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bits": 16,
+      "bytes": 31796,
+      "sha256": "9925c629806938f701a0d1ed056319178eeed9301ccade98dfbba07522198da2",
+      "peak": 0.08761864070558793
+    },
+    {
+      "path": "public/audio/memory-correction.wav",
+      "durationSeconds": 0.44,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bits": 16,
+      "bytes": 38852,
+      "sha256": "986bffa7da10b966894b4b6a0814a0ae3269da715ea9d29bbc064995a14546ef",
+      "peak": 0.09799493392742699
+    },
+    {
+      "path": "public/audio/memory-align.wav",
+      "durationSeconds": 0.34,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bits": 16,
+      "bytes": 30032,
+      "sha256": "af92ab5ff3072808208a72d7539767fbd738091c35ae9fd2420050ce3ab5339d",
+      "peak": 0.09579760124515518
     }
   ]
 }

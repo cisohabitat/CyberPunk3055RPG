@@ -12,7 +12,7 @@
     {
       "treatment": "illustration",
       "asset": "/art/memory-bench.jpg",
-      "reason": "Reuse the three-fragment viewer for the playable timeline in the same inspection workspace. The neutral plate shows neither a completed chronology nor an authenticated source.",
+      "reason": "Reuse the three-fragment viewer for the playable timeline in the same inspection workspace. The neutral plate shows neither a completed chronology nor an authenticated source. Opened sources have illustrative close-ups without readable identities or authentication; written evidence retains authority.",
       "scenes": [
         "memory_table",
         "memory_sequence"
@@ -186,7 +186,6 @@
         "ending_burned",
         "act2_lumen_door",
         "act2_lumen",
-        "memory_publication",
         "act2_witness_door",
         "act2_witness_lost",
         "act2_recovery",
@@ -204,8 +203,7 @@
         "act3_notice_repair",
         "act3_notice_result",
         "act2_witness_plan",
-        "act2_witness_repair",
-        "memory_model_result"
+        "act2_witness_repair"
       ]
     },
     {
@@ -218,12 +216,7 @@
         "vault_quiet",
         "memory_reconstruction",
         "memory_challenge",
-        "memory_cross_exam",
-        "memory_assurance",
-        "memory_channel",
-        "memory_sequence_result",
-        "memory_model",
-        "memory_model_test"
+        "memory_model"
       ]
     },
     {
@@ -300,6 +293,27 @@
       "reason": "Reuse the established Spire backdrop for the archive gap; an unresolved source position must not be illustrated as a recovered record.",
       "scenes": [
         "act2_archive_gap"
+      ]
+    },
+    {
+      "treatment": "portrait",
+      "asset": "/art/mara-questioning.jpg",
+      "reason": "Restrained questioning expression accompanies source limits and testimony; it conveys attention without implying approval, authentication or a known outcome.",
+      "scenes": [
+        "memory_cross_exam",
+        "memory_assurance",
+        "memory_channel",
+        "memory_model_test",
+        "memory_sequence_result"
+      ]
+    },
+    {
+      "treatment": "portrait",
+      "asset": "/art/lumen-challenging.jpg",
+      "reason": "Restrained questioning expression accompanies source limits and testimony; it conveys attention without implying approval, authentication or a known outcome.",
+      "scenes": [
+        "memory_model_result",
+        "memory_publication"
       ]
     }
   ]

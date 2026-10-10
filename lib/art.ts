@@ -49,6 +49,19 @@ export const PORTRAIT_ART: Record<string, string> = {
   "Nia Pell": "/art/nia.jpg", Edda: "/art/edda.jpg", Asa: "/art/asa.jpg",
 };
 
+export const SOURCE_ART: Record<string, Illustration> = {
+  signature: { src: "/art/fragment-signature.jpg", small: "/art/fragment-signature-small.jpg", caption: "Signature · illustrative close-up", description: "Illustration of a glass sliver with an abstract signature stroke in a copper cradle; written source details carry the evidence." },
+  order: { src: "/art/fragment-order.jpg", small: "/art/fragment-order-small.jpg", caption: "Command receipt · illustrative close-up", description: "Illustration of a receipt beneath glass beside relay hardware, with an empty issuer field; no authenticated issuer is depicted." },
+  roster: { src: "/art/fragment-roster.jpg", small: "/art/fragment-roster-small.jpg", caption: "Roster · illustrative close-up", description: "Illustration of anonymous tally rows and an exit diagram beside a closed privacy sleeve; no names, addresses or rescue outcome are depicted." },
+};
+const PORTRAIT_VARIANTS: Record<string, { speaker: string; src: string }> = {};
+for (const id of ["memory_cross_exam", "memory_assurance", "memory_channel", "memory_model_test", "memory_sequence_result"]) PORTRAIT_VARIANTS[id] = { speaker: "Mara", src: "/art/mara-questioning.jpg" };
+for (const id of ["memory_model_result", "memory_publication"]) PORTRAIT_VARIANTS[id] = { speaker: "Sister Lumen", src: "/art/lumen-challenging.jpg" };
+export function portraitArt(speaker?: string, sceneId?: string): string | undefined {
+  const variant = sceneId ? PORTRAIT_VARIANTS[sceneId] : undefined;
+  return variant && variant.speaker === speaker ? variant.src : PORTRAIT_ART[speaker ?? ""];
+}
+
 export function placeArt(location: string): string {
   const value = location.toLowerCase();
   return PLACES.find((place) => place.test(value))?.src ?? "/art/stall.jpg";

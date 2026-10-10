@@ -139,6 +139,12 @@ function sting(notes) {
   return mix(bits);
 }
 
+function memoryCue(notes, seconds) {
+  const samples = new Array(Math.floor(RATE * seconds)).fill(0);
+  notes.forEach((frequency, index) => drip(samples, Math.floor(RATE * (0.012 + index * 0.09)), frequency, 0.12, 0.035));
+  const shape = env(samples.length, RATE * 0.005, RATE * 0.03);
+  return samples.map((sample, index) => sample * shape(index));
+}
 const files = {
   ...renderScores(),
   "sting-memory": sting([329.63, 261.63, 246.94, 220]),
@@ -152,6 +158,11 @@ const files = {
   "dice-tick": tone(0.05, 740, 0.16),
   "sting-success": sting([523, 659, 784]),
   "sting-fail": sting([196, 146]),
+  "memory-place": memoryCue([1318.51], 0.22),
+  "memory-reset": memoryCue([659.25, 493.88, 329.63], 0.42),
+  "memory-mismatch": memoryCue([220, 233.08], 0.36),
+  "memory-correction": memoryCue([246.94, 261.63, 329.63], 0.44),
+  "memory-align": memoryCue([329.63, 392], 0.34),
 };
 
 for (const [name, samples] of Object.entries(files)) {

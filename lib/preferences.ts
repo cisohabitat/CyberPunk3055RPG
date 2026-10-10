@@ -9,10 +9,11 @@ export type Preferences = {
   music: number;
   ambience: number;
   effects: number;
+  voices: number;
   controller: boolean;
   artwork: "full" | "none";
 };
-export const DEFAULT_PREFERENCES: Preferences = { textStep: 0, contrast: "standard", reading: "paragraph", motion: "system", sound: false, music: 60, ambience: 50, effects: 70, controller: false, artwork: "full" };
+export const DEFAULT_PREFERENCES: Preferences = { textStep: 0, contrast: "standard", reading: "paragraph", motion: "system", sound: false, music: 60, ambience: 50, effects: 70, voices: 70, controller: false, artwork: "full" };
 export function parsePreferences(raw: string | null): Preferences {
   let data;
   try { data = raw ? JSON.parse(raw) : {}; } catch { data = {}; }
@@ -25,6 +26,7 @@ export function parsePreferences(raw: string | null): Preferences {
     motion: data?.motion === "reduce" ? "reduce" : "system",
     sound: typeof data?.sound === "boolean" ? data.sound : defaults.sound,
     music: volume(data?.music, defaults.music), ambience: volume(data?.ambience, defaults.ambience), effects: volume(data?.effects, defaults.effects),
+    voices: volume(data?.voices, defaults.voices),
     controller: data?.controller === true,
     artwork: data?.artwork === "none" ? "none" : "full",
   };

@@ -1,0 +1,6 @@
+[
+  {"id":"voice-mara-assurance","scene":"memory_assurance","speaker":"Mara","voice":"af_sarah","speed":0.98,"text":"A green light on the dispatch channel. It meant the evacuation crew had been assigned. I let it mean they'd finished."},
+  {"id":"voice-mara-channel","scene":"memory_channel","speaker":"Mara","voice":"af_sarah","speed":0.98,"text":"Dispatch spoke through a shift relay. No face. I knew the channel had authority to assign crews; I didn't know who was on it."},
+  {"id":"voice-mara-sequence","scene":"memory_sequence_result","speaker":"Mara","voice":"af_sarah","speed":0.98,"text":"Now ask what your sentence claims. The hour can't answer every question you put to it."},
+  {"id":"voice-lumen-publication","scene":"memory_publication","speaker":"Sister Lumen","voice":"af_heart","speed":0.93,"text":"People will repeat the sentence before they inspect the source. You can say what the receipt contains and what still needs checking. Or you can name the tower now and accept what happens when it challenges your proof."}
+]

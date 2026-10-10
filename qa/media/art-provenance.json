@@ -255,6 +255,127 @@
           "sha256": "a474c6927a753e8d4db6dc1938f6edc4b7619492b0210cbb01203b685576110d"
         }
       ]
+    },
+    {
+      "id": "fragment-signature",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-10",
+      "sourceFile": "/workspace/generated_images/exec-44729598-5328-44f1-a741-4fc2abf2a192.png",
+      "sourceSha256": "e2efef8202bf670a501125bd49ea016bc25998fa7b8fa4ca94f7225a47984ca4",
+      "referenceFile": "public/art/memory-bench.jpg",
+      "referenceSha256": "0d53e523b3adfbf538585d14f6d930f8361c1155e0d7d443d35317292f0a16ad",
+      "promptSummary": "Glass sliver with abstract signature stroke in worn copper cradle; no readable identity or outcome.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/fragment-signature.jpg",
+          "width": 900,
+          "height": 600,
+          "bytes": 113223,
+          "sha256": "d587dea6f54a2ac5bfe45961d1d499248133a7bb397a15e1ca7bca9735502764"
+        },
+        {
+          "path": "public/art/fragment-signature-small.jpg",
+          "width": 450,
+          "height": 300,
+          "bytes": 36485,
+          "sha256": "3e879a23fc2944902c20e2e86b8e470b606f4a4e357dad8c4aa4e6f3fc56ab20"
+        }
+      ]
+    },
+    {
+      "id": "fragment-order",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-10",
+      "sourceFile": "/workspace/generated_images/exec-0f22e71e-5a37-4791-b6cb-587bc60bee2b.png",
+      "sourceSha256": "71e3b0a6e7e9958e5933c6e45219ec75ae2306524b31c65a887e4c28eb15bef6",
+      "referenceFile": "public/art/memory-bench.jpg",
+      "referenceSha256": "0d53e523b3adfbf538585d14f6d930f8361c1155e0d7d443d35317292f0a16ad",
+      "promptSummary": "Receipt beneath glass, empty issuer field and relay hardware; no authenticated key or outcome indicator.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/fragment-order.jpg",
+          "width": 900,
+          "height": 600,
+          "bytes": 143295,
+          "sha256": "af887e9203e651dd95138cded06fd10110afb7f85bc601a75cd2152962cc1c8b"
+        },
+        {
+          "path": "public/art/fragment-order-small.jpg",
+          "width": 450,
+          "height": 300,
+          "bytes": 43568,
+          "sha256": "ad8884a43f4ca99946636ffa7baf08dea51822d4a1801ed2c3dd8db448b64f44"
+        }
+      ]
+    },
+    {
+      "id": "fragment-roster",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-10",
+      "sourceFile": "/workspace/generated_images/exec-64b446d2-d39c-4b17-ab2f-96487a41d0f2.png",
+      "sourceSha256": "78975f7ec4c1a459545024edfe6ff70ec7d595e10cd04b0d26ffbedb428747f7",
+      "referenceFile": "public/art/memory-bench.jpg",
+      "referenceSha256": "0d53e523b3adfbf538585d14f6d930f8361c1155e0d7d443d35317292f0a16ad",
+      "promptSummary": "Anonymous tally rows and exit diagram beside closed privacy sleeve; no witness identity, address, consent or rescue outcome.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/fragment-roster.jpg",
+          "width": 900,
+          "height": 600,
+          "bytes": 138238,
+          "sha256": "403456eecebfed8ef287ae627f893dc9953854fc6040828ff8ef49c2217f96d1"
+        },
+        {
+          "path": "public/art/fragment-roster-small.jpg",
+          "width": 450,
+          "height": 300,
+          "bytes": 42522,
+          "sha256": "a5e385adce7e2e8fb80709128ef520400db6128187778d0536b1f591499553b3"
+        }
+      ]
+    },
+    {
+      "id": "mara-questioning",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-10",
+      "sourceFile": "/workspace/generated_images/exec-c973d4a0-395f-4295-9fb9-ab70a72143d3.png",
+      "sourceSha256": "b4c5caf12144a16d70001473e9a43dbd1f812e934f94951d540bf9f7a44e743a",
+      "referenceFile": "public/art/mara.jpg",
+      "referenceSha256": "2b1c67aa8a9519999a98e8559edc831406e2014fd42d91bf4ab1ae7b1e0d3214",
+      "promptSummary": "Mara in the same restrained painted style and cyan halo, with subtle attentive questioning expression; no verdict outcome.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/mara-questioning.jpg",
+          "width": 440,
+          "height": 587,
+          "bytes": 51400,
+          "sha256": "afd31fb7aaf5217e823c9c9a218b55c6694f4e23b4080205d2de43af8307a60d"
+        }
+      ]
+    },
+    {
+      "id": "lumen-challenging",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-10",
+      "sourceFile": "/workspace/generated_images/exec-d908395d-e6ee-48e4-9619-897ff6469b08.png",
+      "sourceSha256": "9325fd63d29dcf5e8e56b010093bb033623809c7e562524bd75b68e8f19450d2",
+      "referenceFile": "public/art/lumen.jpg",
+      "referenceSha256": "88cc611cc0cafbbd9cac910b4fdf454cb24fd1d4a8dc6ea6ba9f2822f890668e",
+      "promptSummary": "Lumen in the same restrained painted style, optic and robe, with calm firmer expression; no approval or authentication outcome.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/lumen-challenging.jpg",
+          "width": 440,
+          "height": 587,
+          "bytes": 52735,
+          "sha256": "2b59d7f1b3834aa7d15cc651adb7afaca902f575176a964b47ba5fc17b127757"
+        }
+      ]
     }
   ]
 }

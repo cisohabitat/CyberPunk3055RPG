@@ -2,6 +2,12 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { describe, it } from "node:test";
 import { fileURLToPath } from "node:url";
+import { createHash } from "node:crypto";
+import voices from "../qa/media/voice-provenance.json";
+import lines from "../qa/media/voice-lines.json";
+import { createCharacter, sceneText } from "./engine";
+import { SCENES } from "./story";
+import { visibleDialogue } from "./memory-media";
 
 function readWav(name: string) {
   const buf = readFileSync(fileURLToPath(new URL(`../public/audio/${name}.wav`, import.meta.url)));
@@ -35,6 +41,41 @@ function medianAbs(samples: number[]) {
 }
 
 describe("beds", () => {
+  it("keeps bench interaction sounds short, distinct and below score-sting peaks", () => {
+    const hashes = new Set<string>();
+    for (const name of ["memory-place", "memory-reset", "memory-mismatch", "memory-correction", "memory-align"]) {
+      const { samples, rate } = readWav(name);
+      let peak = 0; for (const sample of samples) peak = Math.max(peak, Math.abs(sample));
+      assert.ok(peak > 0.02 && peak < 0.13, `${name}: ${peak}`);
+      assert.ok(samples.length / rate <= 0.45); assert.equal(samples[0], 0); assert.equal(samples.at(-1), 0);
+      hashes.add(createHash("sha256").update(readFileSync(new URL(`../public/audio/${name}.wav`, import.meta.url))).digest("hex"));
+    }
+    assert.equal(hashes.size, 5);
+  });
+  it("ships fixed synthetic quotes with matching text, bounded headroom and disclosure", () => {
+    const base = createCharacter({ handle: "VoiceReview", givenName: "Ada", origin: "spire", bonus: { chrome: 2, nerve: 0, face: 0, ghost: 0 } });
+    for (const line of lines) {
+      const state = { ...base, sceneId: line.scene, flags: { memory_slot_1_signature: true, memory_slot_2_order: true, memory_slot_3_roster: true } };
+      const scene = SCENES[line.scene]; const text = sceneText(scene, state);
+      assert.equal(scene.speaker, line.speaker); assert.ok(text.includes(line.text), line.id);
+      assert.equal(visibleDialogue(scene.id, scene.speaker, text)?.id, line.id);
+      assert.equal(visibleDialogue(scene.id, "Quill", text), undefined);
+      const record = voices.lines.find((entry) => entry.id === line.id)!;
+      assert.equal(record.text, line.text);
+      const bytes = readFileSync(new URL(`../${record.path}`, import.meta.url));
+      assert.equal(bytes.length, record.bytes); assert.equal(createHash("sha256").update(bytes).digest("hex"), record.sha256);
+      const wav = readWav(line.id); let peak = 0;
+      for (const sample of wav.samples) peak = Math.max(peak, Math.abs(sample));
+      assert.equal(wav.channels, 1); assert.equal(wav.rate, 24000); assert.ok(peak >= 0.7 && peak < 0.73);
+      assert.ok(wav.samples.length / wav.rate > 4 && wav.samples.length / wav.rate < 15);
+      assert.ok(wav.samples.slice(0, 1800).every((sample) => sample === 0));
+      assert.ok(wav.samples.slice(-1800).every((sample) => sample === 0));
+    }
+    const wrong = { ...base, flags: {} };
+    assert.equal(visibleDialogue("memory_sequence_result", "Mara", sceneText(SCENES.memory_sequence_result, wrong)), undefined);
+    const publication = sceneText(SCENES.memory_publication, base);
+    assert.equal(visibleDialogue("memory_publication", "Sister Lumen", publication.split("\n\n")[0]), undefined);
+  });
   it("renders stereo chapter arrangements with headroom and continuous seams on both channels", () => {
     for (const name of ["theme", "theme-chapel", "theme-week", "theme-ward"]) {
       const score = readWav(name);

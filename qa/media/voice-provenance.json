@@ -1,0 +1,125 @@
+{
+  "disclosure": "Stock synthetic voices generated offline with Kokoro v1.0; no actor session or individual voice clone was commissioned. Only the fixed authored quotations below are rendered. No model or speech service ships in the game.",
+  "generated": "2026-10-10",
+  "source": "scripts/generate-voices.py",
+  "driver": {
+    "name": "kokoro-onnx",
+    "version": "0.6.1",
+    "license": "MIT",
+    "url": "https://github.com/thewh1teagle/kokoro-onnx",
+    "licenseFile": "qa/media/voice-sources/kokoro-onnx-LICENSE.txt"
+  },
+  "model": {
+    "name": "Kokoro-82M v1.0",
+    "license": "Apache-2.0",
+    "card": "https://huggingface.co/hexgrad/Kokoro-82M",
+    "licenseFile": "qa/media/voice-sources/Kokoro-LICENSE.txt",
+    "files": [
+      {
+        "name": "kokoro-v1.0.onnx",
+        "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.onnx",
+        "sha256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+        "bytes": 325505369
+      },
+      {
+        "name": "voices-v1.0.bin",
+        "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin",
+        "sha256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+        "bytes": 28214398
+      }
+    ]
+  },
+  "processing": "PCM16 mono master retained; peak normalized to 0.72, eight-millisecond edge fades and 80 ms silence at each end; PCM16 mono delivery.",
+  "reviewStatus": "Automated signal, text matching and browser playback checks only. Independent listening, performance direction, physical-device and rights acceptance remain pending.",
+  "lines": [
+    {
+      "id": "voice-mara-assurance",
+      "scene": "memory_assurance",
+      "speaker": "Mara",
+      "voice": "af_sarah",
+      "speed": 0.98,
+      "text": "A green light on the dispatch channel. It meant the evacuation crew had been assigned. I let it mean they'd finished.",
+      "language": "en-us",
+      "path": "public/audio/voice-mara-assurance.wav",
+      "sourceFile": "/workspace/generated_audio/voice-mara-assurance.wav",
+      "sourceSha256": "dc7bc526c4c4a3fad82108460629cd10b6ca41111676ef65aff89097c8164da9",
+      "sha256": "240a33d9bcd20973fc898dd30479448dadbcb577526fc6bdf327549bd15b0c05",
+      "bytes": 328748,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 6.848,
+      "peak": 0.7199926755577257,
+      "rms": 0.08592972384074139
+    },
+    {
+      "id": "voice-mara-channel",
+      "scene": "memory_channel",
+      "speaker": "Mara",
+      "voice": "af_sarah",
+      "speed": 0.98,
+      "text": "Dispatch spoke through a shift relay. No face. I knew the channel had authority to assign crews; I didn't know who was on it.",
+      "language": "en-us",
+      "path": "public/audio/voice-mara-channel.wav",
+      "sourceFile": "/workspace/generated_audio/voice-mara-channel.wav",
+      "sourceSha256": "93313cba4a96c9c825b52b4d58c82259043de49c63b42264cb40ed5b44beb121",
+      "sha256": "30eb8166317b285d7fb8d080e954f62365c589fe4330b7e76ff0d0903658d9eb",
+      "bytes": 364588,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 7.594666666666667,
+      "peak": 0.7199926755577257,
+      "rms": 0.07808056846222462
+    },
+    {
+      "id": "voice-mara-sequence",
+      "scene": "memory_sequence_result",
+      "speaker": "Mara",
+      "voice": "af_sarah",
+      "speed": 0.98,
+      "text": "Now ask what your sentence claims. The hour can't answer every question you put to it.",
+      "language": "en-us",
+      "path": "public/audio/voice-mara-sequence.wav",
+      "sourceFile": "/workspace/generated_audio/voice-mara-sequence.wav",
+      "sourceSha256": "84976e7bf6ce056dcb020a7b3ca1efc9085ea956310fe9c57f9121d85c481775",
+      "sha256": "e506298640a60ab4223dde471996bc68df62bd8bbc303356c15e06e26e9f0cf8",
+      "bytes": 259594,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 5.407291666666667,
+      "peak": 0.7199926755577257,
+      "rms": 0.0765963703654968
+    },
+    {
+      "id": "voice-lumen-publication",
+      "scene": "memory_publication",
+      "speaker": "Sister Lumen",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "text": "People will repeat the sentence before they inspect the source. You can say what the receipt contains and what still needs checking. Or you can name the tower now and accept what happens when it challenges your proof.",
+      "language": "en-us",
+      "path": "public/audio/voice-lumen-publication.wav",
+      "sourceFile": "/workspace/generated_audio/voice-lumen-publication.wav",
+      "sourceSha256": "71792875c99c5504b33297f5344f3c87301e556863b3e7b2f9b6e1c1bfcbf1d9",
+      "sha256": "2745134ebbbad3b7668d919de84d21582356e460772d8fc67419f903a6970d14",
+      "bytes": 615946,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 12.831291666666667,
+      "peak": 0.7199926755577257,
+      "rms": 0.11238226046464368
+    }
+  ],
+  "generationEnvironment": {
+    "python": "3.12.14",
+    "kokoro-onnx": "0.6.1",
+    "onnxruntime": "1.31.0",
+    "numpy": "2.5.3",
+    "phonemizer": "3.4.0",
+    "espeakng-loader": "0.2.4",
+    "soundfile": "0.14.0"
+  }
+}

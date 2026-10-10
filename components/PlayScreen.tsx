@@ -17,6 +17,8 @@ import { ObjectiveBrief } from "./ObjectiveBrief";
 import { unresolvedPromises } from "@/lib/objectives";
 import { MemoryTimeline } from "./MemoryTimeline";
 import { MemoryPlate } from "./MemoryPlate";
+import { VoiceLine } from "./VoiceLine";
+import { memoryInteractionCue, visibleDialogue } from "@/lib/memory-media";
 import { FieldKitBrief } from "./FieldKitBrief";
 import { TestimonyBrief } from "./TestimonyBrief";
 import { ArchiveBrief } from "./ArchiveBrief";
@@ -67,9 +69,11 @@ export function PlayScreen({
   const [shown, setShown] = useState(1);
   const [reduceMotion, setReduceMotion] = useState(false);
   const prior = useRef(state);
+  const priorSound = useRef<{ location: string; on: boolean; ending: boolean } | null>(null);
   const prose = sceneText(scene, state);
   const paragraphs = prose.split(/\n\n+/).filter((paragraph) => paragraph.length > 0);
   const visibleCount = preferences.reading === "all" ? paragraphs.length : Math.min(shown, paragraphs.length);
+  const dialogue = visibleDialogue(scene.id, scene.speaker, paragraphs.slice(0, visibleCount).join("\n\n"));
   const recordedChoice = state.pendingCheck ? choices.find((choice) => choice.id === state.pendingCheck?.choiceId) : null;
   const activeChoice = recordedChoice ?? pending;
 
@@ -82,7 +86,9 @@ export function PlayScreen({
 
   useEffect(() => {
     setBed(sound, mood);
-    if (sound) playCue(locationCue(scene.location, Boolean(scene.ending)));
+    const previous = priorSound.current;
+    if (sound && (!previous?.on || previous.location !== scene.location || Boolean(scene.ending) !== previous.ending)) playCue(locationCue(scene.location, Boolean(scene.ending)));
+    priorSound.current = { location: scene.location, on: sound, ending: Boolean(scene.ending) };
   }, [sound, mood, scene.id, scene.location, scene.ending]);
 
   useEffect(() => () => { setBed(false); }, []);
@@ -151,7 +157,10 @@ export function PlayScreen({
       return;
     }
     try {
-      onChange(commitChoice(state, choice).state);
+      const next = commitChoice(state, choice).state;
+      onChange(next);
+      const cue = memoryInteractionCue(state, choice.id, next);
+      if (cue) playCue(cue);
     } catch {
       setFault("The city glitched on that choice. Reload this page and continue the save.");
     }
@@ -213,7 +222,7 @@ export function PlayScreen({
             style={{ backgroundImage: preferences.artwork === "none" || illustration ? undefined : `linear-gradient(180deg, rgba(9,8,13,0.72), rgba(9,8,13,0.94)), url(${placeArt(scene.location)})` }}
           >
             <div className="scene-row">
-              <Portrait speaker={scene.speaker} origin={state.origin} handle={state.handle} artwork={preferences.artwork !== "none"} />
+              <Portrait speaker={scene.speaker} sceneId={scene.id} origin={state.origin} handle={state.handle} artwork={preferences.artwork !== "none"} />
               <div>
                 <p className="kicker">
                   {scene.location}
@@ -274,7 +283,7 @@ export function PlayScreen({
             <ArchiveBrief state={state} />
             {!scene.memory && <TestimonyBrief state={state} />}
             <FieldKitBrief state={state} />
-            {scene.id === "memory_table" && <MemoryPlate key={scene.id} state={state} choices={choices} onInspect={pick} />}
+            {scene.id === "memory_table" && <MemoryPlate key={scene.id} state={state} choices={choices} onInspect={pick} artwork={preferences.artwork !== "none"} />}
             <div className="prose" data-testid="scene-text">
               {paragraphs.slice(0, visibleCount).map((paragraph, index) => (
                 <p key={`${scene.id}-${index}`}>{paragraph}</p>
@@ -290,7 +299,8 @@ export function PlayScreen({
                 </button>
               </div>
             )}
-            {scene.id === "memory_sequence" && <MemoryTimeline state={state} choices={choices} onPlace={pick} />}
+            {dialogue && <VoiceLine key={`${scene.id}-${dialogue.id}`} line={dialogue} enabled={sound && preferences.voices > 0 && !modalOpen && !sheetOpen && !confirmAbandon && !activeChoice} />}
+            {scene.id === "memory_sequence" && <MemoryTimeline state={state} choices={choices} onPlace={pick} artwork={preferences.artwork !== "none"} reducedMotion={reduceMotion} />}
             {scene.finale && <section className="aftermath" aria-label="What your choices changed"><h2>What remains</h2>{aftermath(state).map((row) => <section key={row.title}><h3>{row.title}</h3><p>{row.text}</p></section>)}</section>}
             {fault && <p className="form-error">{fault}</p>}
             {choices.length > 0 && (
@@ -331,7 +341,7 @@ export function PlayScreen({
                 })}
               </div>
             )}
-            {scene.memory && scene.id !== "memory_table" && <details className="memory-review" data-testid="memory-review"><summary>Review the inspected memory · {memoryDisposition(state)}</summary><TestimonyBrief state={state} /><MemoryPlate key={scene.id} state={state} choices={choices} onInspect={pick} /></details>}
+            {scene.memory && scene.id !== "memory_table" && <details className="memory-review" data-testid="memory-review"><summary>Review the inspected memory · {memoryDisposition(state)}</summary><TestimonyBrief state={state} /><MemoryPlate key={scene.id} state={state} choices={choices} onInspect={pick} artwork={preferences.artwork !== "none"} /></details>}
             {scene.ending && (
               <div className="actions">
                 <button className="primary" type="button" onClick={onNewRun}>

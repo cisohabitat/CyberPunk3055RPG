@@ -1006,11 +1006,13 @@ for (const [width, textOnly] of [[1440, false], [390, false], [320, true]] as co
   else expect(await page.getByTestId("scene-illustration").locator("img").evaluate((img: HTMLImageElement) => img.decode().then(() => img.naturalWidth))).toBeGreaterThan(0);
   await page.getByTestId("memory-workspace").getByText("The signature · available", { exact: true }).focus(); await page.keyboard.press("Enter");
   await expect(page.getByTestId("memory-workspace")).toContainText("02:13");
+  if (!textOnly) expect(await page.getByTestId("memory-workspace").locator(".source-art img").evaluate((img: HTMLImageElement) => img.decode().then(() => img.naturalWidth))).toBeGreaterThan(0);
   expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations).toEqual([]);
   await page.getByTestId("choice-place-signature").focus(); await page.keyboard.press("Enter");
   await expect(page.locator("#timeline-source-signature")).toBeFocused();
   await page.reload(); await page.getByTestId("continue-run").click();
   await expect(page.getByTestId("draft-timeline").locator("li").first()).toContainText("The signature");
+  await expect(page.locator(".fragment-placed")).toHaveCount(0);
   await expect(page.getByTestId("choice-place-signature")).toHaveCount(0);
   await expect(page.getByTestId("choice-test-timeline")).toHaveCount(0);
   for (const id of ["place-order", "place-roster", "test-timeline", "choose-model", "model-issuer", "verdict-unresolved", "record-tested-account", "label-unverified"]) await page.getByTestId(`choice-${id}`).click();
@@ -1032,4 +1034,89 @@ test("memory timeline recovers a mismatch and retains a disputed verdict after r
   expect(run.flags.memory_model_pending).toBe(true); expect(run.flags.order_verified).toBeUndefined();
   expect(run.journal.some((entry: {id: string}) => entry.id === "bench-challenge")).toBe(true);
   expect(run.sceneId).toBe("kerr");
+});
+
+async function observeVoices(page: Page) {
+  await page.addInitScript(() => {
+    localStorage.setItem("saint-shard-preferences", JSON.stringify({ sound: true }));
+    const review = window as unknown as { voiceReview: { decoded: number; started: number; stopped: number; gains: number[] } };
+    review.voiceReview = { decoded: 0, started: 0, stopped: 0, gains: [] };
+    const voices = new WeakSet<AudioBuffer>();
+    const decode = AudioContext.prototype.decodeAudioData;
+    AudioContext.prototype.decodeAudioData = function(data: ArrayBuffer) {
+      const voice = data.byteLength > 44 && new DataView(data).getUint32(24, true) === 24000;
+      return decode.call(this, data).then((buffer) => { if (voice) { voices.add(buffer); review.voiceReview.decoded++; } return buffer; });
+    };
+    const start = AudioBufferSourceNode.prototype.start;
+    AudioBufferSourceNode.prototype.start = function(...args: Parameters<typeof start>) { if (this.buffer && voices.has(this.buffer)) review.voiceReview.started++; return start.apply(this, args); };
+    const stop = AudioBufferSourceNode.prototype.stop;
+    AudioBufferSourceNode.prototype.stop = function(...args: Parameters<typeof stop>) { if (this.buffer && voices.has(this.buffer)) review.voiceReview.stopped++; return stop.apply(this, args); };
+    const target = AudioParam.prototype.setTargetAtTime;
+    AudioParam.prototype.setTargetAtTime = function(...args: Parameters<typeof target>) { review.voiceReview.gains.push(args[0]); return target.apply(this, args); };
+  });
+}
+const voiceReview = (page: Page) => page.evaluate(() => (window as unknown as { voiceReview: { decoded: number; started: number; stopped: number; gains: number[] } }).voiceReview);
+
+test("selective voices follow visible text, duck the bed and retain separate volume", async ({ page }) => {
+  await observeVoices(page);
+  const requests: string[] = []; page.on("request", (request) => { if (request.url().includes("/audio/voice-")) requests.push(request.url()); });
+  await openRun(page, fixture("memory_publication"));
+  await expect(page.getByTestId("voice-line")).toHaveCount(0); expect(requests).toEqual([]);
+  await page.getByTestId("next-paragraph").click();
+  await expect(page.getByRole("button", { name: "Listen to Lumen" })).toBeVisible(); expect(requests).toEqual([]);
+  expect(await page.locator("img.portrait").evaluate((img: HTMLImageElement) => img.decode().then(() => img.currentSrc))).toContain("lumen-challenging.jpg");
+  await page.getByRole("button", { name: "Listen to Lumen" }).click();
+  await expect.poll(async () => (await voiceReview(page)).started).toBe(1);
+  expect((await voiceReview(page)).gains).toContain(0.24);
+  const gainsBeforeStop = (await voiceReview(page)).gains.length;
+  await page.getByRole("button", { name: "Stop line" }).click();
+  await expect.poll(async () => (await voiceReview(page)).stopped).toBeGreaterThan(0);
+  expect((await voiceReview(page)).gains.slice(gainsBeforeStop)).toContain(0.6);
+  await page.getByRole("button", { name: "Settings", exact: true }).click();
+  await page.getByLabel("voices volume").focus(); await page.keyboard.press("Home"); await page.keyboard.press("ArrowRight");
+  await page.getByRole("button", { name: "Done", exact: true }).click();
+  const prefs = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-preferences")!));
+  expect(prefs.voices).toBe(1); expect(prefs.music).toBe(60); expect(prefs.effects).toBe(70);
+  expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations).toEqual([]);
+});
+
+test("cancelling a loading voice prevents late playback after Sound off", async ({ page }) => {
+  await observeVoices(page);
+  let release!: () => void;
+  const gate = new Promise<void>((resolve) => { release = resolve; });
+  await page.route("**/audio/voice-mara-assurance.wav", async (route) => {
+    const response = await route.fetch(); await gate; await route.fulfill({ response });
+  });
+  await openRun(page, fixture("memory_assurance"));
+  await page.getByTestId("show-rest").click();
+  await page.getByRole("button", { name: "Listen to Mara" }).click();
+  await expect(page.getByTestId("voice-line")).toContainText("Loading selected dialogue");
+  await page.getByRole("button", { name: "Stop line" }).click();
+  await page.getByRole("button", { name: "Settings", exact: true }).click();
+  await page.getByLabel("Sound enabled", { exact: true }).uncheck();
+  await page.getByRole("button", { name: "Done", exact: true }).click();
+  release();
+  await expect.poll(async () => (await voiceReview(page)).decoded).toBe(1);
+  expect((await voiceReview(page)).started).toBe(0);
+  await expect(page.getByRole("button", { name: "Listen to Mara" })).toBeDisabled();
+  await page.getByTestId("choice-record-assurance-limit").click();
+  expect((await voiceReview(page)).started).toBe(0);
+  expect((await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!))).flags.memory_assurance_heard).toBe(true);
+});
+
+test("unavailable voices and source images preserve the playable evidence", async ({ page }) => {
+  await observeVoices(page);
+  await page.route("**/audio/voice-mara-channel.wav", (route) => route.abort());
+  await page.route("**/art/fragment-*.jpg", (route) => route.abort());
+  await openRun(page, fixture("memory_channel", { flags: { memory_signature: true, memory_order: true, memory_roster: true } }));
+  await page.getByTestId("show-rest").click();
+  await page.getByRole("button", { name: "Listen to Mara" }).click();
+  await expect(page.getByTestId("voice-line")).toContainText("Voice unavailable");
+  await page.getByTestId("memory-review").locator("summary").first().click();
+  await page.locator("#memory-source-order").click();
+  await expect(page.locator(".source-art-missing")).toContainText("source text remains below");
+  await expect(page.getByTestId("memory-review")).toContainText("evacuation");
+  await page.getByTestId("choice-record-channel-limit").click();
+  await expect(page.getByTestId("choice-ask-command-contact")).toHaveCount(0);
+  expect((await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!))).flags.order_verified).toBeUndefined();
 });

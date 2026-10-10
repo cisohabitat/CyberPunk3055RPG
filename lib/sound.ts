@@ -8,7 +8,10 @@ let want = false;
 let ticket = 0;
 let mood: SoundMood = "street";
 let pending: Promise<void> = Promise.resolve();
-let mix = { music: 60, ambience: 50, effects: 70 };
+let mix = { music: 60, ambience: 50, effects: 70, voices: 70 };
+let voiceTicket = 0;
+let voiceNode: AudioBufferSourceNode | null = null;
+let speaking = false;
 const buses = new Map<string, GainNode>();
 const cache = new Map<string, AudioBuffer>();
 const live = new Set<AudioBufferSourceNode>();
@@ -25,12 +28,13 @@ function bus(channel: keyof typeof mix) {
   const audio = context();
   let gain = buses.get(channel);
   if (!gain) { gain = audio.createGain(); gain.connect(audio.destination); buses.set(channel, gain); }
-  gain.gain.setTargetAtTime(mix[channel] / 100, audio.currentTime, 0.04);
+  const duck = speaking && (channel === "music" || channel === "ambience") ? 0.4 : 1;
+  gain.gain.setTargetAtTime(mix[channel] / 100 * duck, audio.currentTime, 0.04);
   return gain;
 }
-export function setAudioMix(value: Pick<Preferences, "music" | "ambience" | "effects">) {
-  mix = { music: value.music, ambience: value.ambience, effects: value.effects };
-  if (ctx) for (const channel of ["music", "ambience", "effects"] as const) bus(channel);
+export function setAudioMix(value: Pick<Preferences, "music" | "ambience" | "effects" | "voices">) {
+  mix = { music: value.music, ambience: value.ambience, effects: value.effects, voices: value.voices };
+  if (ctx) for (const channel of ["music", "ambience", "effects", "voices"] as const) bus(channel);
 }
 async function load(name: string) {
   const cached = cache.get(name); if (cached) return cached;
@@ -56,7 +60,7 @@ export function setBed(on: boolean, nextMood: SoundMood = "street") {
   want = on; mood = nextMood;
   if (unchanged) return;
   const id = ++ticket;
-  if (!on) { stopBed(); if (ctx?.state === "running") void ctx.suspend().catch(() => {}); return; }
+  if (!on) { stopVoice(); stopBed(); if (ctx?.state === "running") void ctx.suspend().catch(() => {}); return; }
   pending = pending.then(async () => {
     try {
       if (id !== ticket || !want) return;
@@ -72,6 +76,42 @@ export function setBed(on: boolean, nextMood: SoundMood = "street") {
       if (!rain) { rain = source(rainBuffer, "ambience", 0.5, true).node; rain.start(); }
     } catch { /* Audio stays optional. */ }
   });
+}
+
+export type VoiceStatus = "loading" | "playing" | "idle" | "unavailable";
+function duckBed(on: boolean) {
+  speaking = on;
+  if (ctx) { bus("music"); bus("ambience"); }
+}
+export function stopVoice() {
+  ++voiceTicket;
+  if (voiceNode) { try { voiceNode.stop(); } catch { /* Already stopped. */ } }
+  voiceNode = null;
+  duckBed(false);
+}
+/** Explicit playback only. Cancelling a pending fetch must prevent a late start. */
+export function playVoice(name: string, report: (status: VoiceStatus) => void): () => void {
+  stopVoice();
+  const id = voiceTicket;
+  if (!want || mix.voices === 0) { report("idle"); return () => {}; }
+  report("loading");
+  unlockAudio();
+  void (async () => {
+    try {
+      const buffer = await load(name);
+      if (id !== voiceTicket || !want || mix.voices === 0) return;
+      const { node } = source(buffer, "voices", 1, false);
+      const cleanup = node.onended;
+      node.onended = (event) => {
+        cleanup?.call(node, event);
+        if (id === voiceTicket) { voiceNode = null; duckBed(false); report("idle"); }
+      };
+      voiceNode = node; duckBed(true); node.start(); report("playing");
+    } catch {
+      if (id === voiceTicket) { voiceNode = null; duckBed(false); report("unavailable"); }
+    }
+  })();
+  return () => { if (id === voiceTicket) stopVoice(); };
 }
 export function playCue(name: string) {
   if (typeof window === "undefined" || !want) return;

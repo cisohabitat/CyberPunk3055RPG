@@ -4,8 +4,9 @@ import { useEffect, useRef, useState } from "react";
 import { FRAGMENTS, memoryDisposition } from "@/lib/evidence";
 import type { VisibleChoice } from "@/lib/engine";
 import type { GameState } from "@/lib/types";
+import { SourceDetails } from "./SourceArtwork";
 
-export function MemoryPlate({ state, choices, onInspect }: { state: GameState; choices: VisibleChoice[]; onInspect: (choice: VisibleChoice) => void }) {
+export function MemoryPlate({ state, choices, onInspect, artwork }: { state: GameState; choices: VisibleChoice[]; onInspect: (choice: VisibleChoice) => void; artwork: boolean }) {
   const [lastInspected, setLastInspected] = useState<string | null>(null);
   const root = useRef<HTMLElement>(null);
   useEffect(() => {
@@ -21,7 +22,7 @@ export function MemoryPlate({ state, choices, onInspect }: { state: GameState; c
       const read = Boolean(state.flags[fragment.flag]);
       return <li key={fragment.id} className={read ? "examined" : "sealed"}>
         <span className="memory-time">{fragment.time}</span>
-        {read ? <details open={lastInspected === fragment.id}><summary id={`memory-source-${fragment.id}`}>{fragment.title} · inspected</summary><p>{fragment.text}</p><small>{fragment.kind} · {fragment.source}</small></details>
+        {read ? <SourceDetails id={fragment.id} summaryId={`memory-source-${fragment.id}`} summary={`${fragment.title} · inspected`} artwork={artwork} initialOpen={lastInspected === fragment.id}><p>{fragment.text}</p><small>{fragment.kind} · {fragment.source}</small></SourceDetails>
           : <><h3>{fragment.title}</h3>{choice && <button type="button" className="ghost" data-testid={`choice-${choice.id}`} aria-keyshortcuts={String(choices.indexOf(choice) + 1)} disabled={!choice.enabled} onClick={() => { setLastInspected(fragment.id); onInspect(choice); }}>{choices.indexOf(choice) + 1} · Inspect {fragment.title.toLowerCase()}</button>}</>}
       </li>;
     })}</ol>
