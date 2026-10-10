@@ -83,6 +83,8 @@ Cycles 2–4 implementation, verification and the Phase 3 handoff are recorded i
 
 ## Phase 3 — Campaign integration and emotional consequence
 
+Cycle 5 implementation and internal evidence are recorded in [CAMPAIGN_INTEGRATION.md](CAMPAIGN_INTEGRATION.md). Complete this phase before beginning Phase 4. Independent narrative/consequence acceptance remains pending.
+
 **Cycle 5: integrate and replay.**
 
 - Reconcile opening motivation, major methods, promises, refusals and failures through the Week and Wall. Prefer a short scene in which someone responds over another journal paragraph describing a response.

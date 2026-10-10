@@ -1,3 +1,4 @@
+import { encounterRecords, noticePlanRecord } from "./campaign-consequences";
 import { routeOutcome } from "./route-planning";
 import type { GameState } from "./types";
 
@@ -11,11 +12,17 @@ export function characterConduct(state: GameState, name: string): string | undef
     const past = state.flags.memory_model_corrected ? "You corrected the disputed interpretation; her signature remains." : state.flags.memory_model_contested || state.flags.memory_model_repeated ? "Your interpretation remains disputed." : state.flags.memory_assurance_heard || state.flags.memory_channel_heard ? "Her recorded answers are kept as attributed testimony." : state.flags.heard_memo ? "You heard her recorded authorization and explanation." : "";
     return [current, state.flags.response_public_refused ? "She refused public release of her new statement." : "", past].filter(Boolean).join(" ") || undefined;
   }
-  if (name === "Sister Lumen" && state.flags.response_started) return [state.flags.response_clinic_refused ? "She refused clinic endorsement." : "Hosting did not endorse the statement.", state.flags.lumen_boundary_visit ? "Private desk messages only; she decides whether to answer." : "Future contact has not been agreed.", state.flags.betrayed_lumen || state.flags.pact_fake && (state.flags.act1_sold || state.flags.act1_both) ? "Your earlier betrayal remains." : ""].filter(Boolean).join(" ");
+  if (name === "Nia Pell") return [state.flags.visited_nia ? "You returned to hear her limits." : "", ...encounterRecords(state).filter(row => ["witness-shift", "witness-method"].includes(row.id)).map(row => row.detail), state.flags.witness_lost ? "Her earlier location exposure remains." : "", state.flags.nia_public_consent ? "She approved her words for the public account, separately." : "No public quotation permission is recorded."].filter(Boolean).join(" ");
+  if (name === "Sister Lumen") {
+    const history = [...encounterRecords(state).filter(row => ["chapel-shift", "chapel-access"].includes(row.id)).map(row => row.detail), noticePlanRecord(state), state.flags.chapel_response_heard ? "You returned to hear her Chapel response." : "", state.flags.betrayed_lumen && !state.flags.response_started ? "Your earlier betrayal remains." : ""].filter(Boolean);
+    if (!state.flags.response_started) return history.join(" ") || undefined;
+    return [...history, lumenReplyConduct(state)].filter(Boolean).join(" ");
+  }
+
   if (name === "Kerr") {
     const collection = state.flags.kerr_route_denied ? "You denied the recorded disclosure; he closed further contact." : state.flags.kerr_route_acknowledged ? "You acknowledged the disclosure; the trace remains." : state.flags.kerr_route_promised ? state.flags.kerr_route_private && state.flags.kerr_route_trace ? "Private terms broken; recipient registration remains." : state.flags.kerr_route_delivered ? "Collection terms fulfilled; receipt observed." : state.flags.kerr_route_done ? "Collection promise unfinished." : "Collection promised; receipt not yet observed." : state.flags.kerr_route_declined ? "You declined the collection honestly." : "";
     const earlier = state.flags.kerr_sold_you ? "He sold your account to Helion." : state.flags.kerr_told ? "You told him the names; he kept them." : state.flags.kerr_week_paid ? "You paid his forty-creds demand." : state.flags.kerr_week_refused ? "You refused his demand." : "";
-    return [collection, earlier].filter(Boolean).join(" ") || undefined;
+    return [collection, earlier, ...encounterRecords(state).filter(row => ["depot-rig", "depot-work"].includes(row.id)).map(row => row.detail)].filter(Boolean).join(" ") || undefined;
   }
 }
 export function relationshipAftermath(state: GameState): { title: string; text: string }[] {
@@ -31,4 +38,8 @@ export function relationshipCoda(state: GameState): string | undefined {
   if (!state.flags.response_started) return;
   const action = state.sceneId === "ending_names" ? "As the names are read" : state.sceneId === "ending_witness" ? "As the leak joins the wall’s account" : state.sceneId === "ending_listed" ? "As Ives closes the folio" : "As you leave the wall to the rain";
   return `${action}, you remember ${state.flags.mara_quiet_heard ? "Mara’s cup and the morning she hopes to choose" : state.flags.lumen_quiet_heard ? "Lumen putting the cup back in the same place" : "the unsealed envelope between two chairs"}. ${state.flags.response_received ? "Her reply is waiting at the desk. It has not answered the names on the wall." : state.flags.response_sent ? "The dispatch stub is still a question, not an answer." : "The envelope has not left through your hands."}`;
+}
+
+function lumenReplyConduct(state: GameState): string {
+  return [state.flags.response_clinic_refused ? "She refused clinic endorsement." : "Hosting did not endorse the statement.", state.flags.lumen_boundary_visit ? "Private desk messages only; she decides whether to answer." : "Future contact has not been agreed.", state.flags.betrayed_lumen || state.flags.pact_fake && (state.flags.act1_sold || state.flags.act1_both) ? "Your earlier betrayal remains." : ""].filter(Boolean).join(" ");
 }

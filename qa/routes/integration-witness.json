@@ -1,0 +1,257 @@
+{
+  "name": "integration-witness",
+  "character": {
+    "handle": "Replay",
+    "givenName": "Ada",
+    "origin": "spire",
+    "complication": "on-file",
+    "bonus": {
+      "chrome": 2,
+      "nerve": 0,
+      "face": 0,
+      "ghost": 0
+    },
+    "startWithPrologue": true
+  },
+  "steps": [
+    {
+      "choiceId": "begin-opening",
+      "reload": true
+    },
+    {
+      "choiceId": "opening-survival",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-stallholder",
+      "reload": true
+    },
+    {
+      "choiceId": "take-the-stool",
+      "reload": true
+    },
+    {
+      "choiceId": "ask-pay"
+    },
+    {
+      "choiceId": "haggle",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "pocket"
+    },
+    {
+      "choiceId": "accept"
+    },
+    {
+      "choiceId": "begin-chapel-window",
+      "reload": true
+    },
+    {
+      "choiceId": "window-scout-gap",
+      "reload": true
+    },
+    {
+      "choiceId": "window-use-gap",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "window-quiet-exit",
+      "reload": true
+    },
+    {
+      "choiceId": "go"
+    },
+    {
+      "choiceId": "honest"
+    },
+    {
+      "choiceId": "pact-copy"
+    },
+    {
+      "choiceId": "copy",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "heard"
+    },
+    {
+      "choiceId": "inspect-hour"
+    },
+    {
+      "choiceId": "inspect-signature"
+    },
+    {
+      "choiceId": "inspect-order"
+    },
+    {
+      "choiceId": "inspect-roster"
+    },
+    {
+      "choiceId": "reconstruct"
+    },
+    {
+      "choiceId": "separate-decisions"
+    },
+    {
+      "choiceId": "label-unverified"
+    },
+    {
+      "choiceId": "seal-full"
+    },
+    {
+      "choiceId": "talk-leave",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "both"
+    },
+    {
+      "choiceId": "week-after"
+    },
+    {
+      "choiceId": "into-week"
+    },
+    {
+      "choiceId": "practice"
+    },
+    {
+      "choiceId": "learn-chrome"
+    },
+    {
+      "choiceId": "read-board"
+    },
+    {
+      "choiceId": "origin-contract"
+    },
+    {
+      "choiceId": "clear-key",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "return-board"
+    },
+    {
+      "choiceId": "to-helion"
+    },
+    {
+      "choiceId": "hear-ives"
+    },
+    {
+      "choiceId": "refuse-ives"
+    },
+    {
+      "choiceId": "trace-order"
+    },
+    {
+      "choiceId": "agree-archive-terms"
+    },
+    {
+      "choiceId": "index-archive",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "catalog-is-proof"
+    },
+    {
+      "choiceId": "revise-source-test"
+    },
+    {
+      "choiceId": "trace-receipt",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "withhold-technician"
+    },
+    {
+      "choiceId": "keep-chain"
+    },
+    {
+      "choiceId": "hear-response"
+    },
+    {
+      "choiceId": "answer-with-source"
+    },
+    {
+      "choiceId": "stand"
+    },
+    {
+      "choiceId": "back-to-board"
+    },
+    {
+      "choiceId": "to-the-wall"
+    },
+    {
+      "choiceId": "to-ward-nine"
+    },
+    {
+      "choiceId": "visit-chapel-return",
+      "reload": true
+    },
+    {
+      "choiceId": "record-chapel-return",
+      "reload": true
+    },
+    {
+      "choiceId": "visit-edda"
+    },
+    {
+      "choiceId": "respect-edda-source"
+    },
+    {
+      "choiceId": "visit-records"
+    },
+    {
+      "choiceId": "keep-limits"
+    },
+    {
+      "choiceId": "go-wall"
+    },
+    {
+      "choiceId": "face-sera"
+    },
+    {
+      "choiceId": "prepare-public-account"
+    },
+    {
+      "choiceId": "scope-corroborated"
+    },
+    {
+      "choiceId": "keep-recording-private"
+    },
+    {
+      "choiceId": "answer-authenticated-key"
+    },
+    {
+      "choiceId": "file-public-account",
+      "reload": true
+    },
+    {
+      "choiceId": "confirm-leak"
+    }
+  ],
+  "expected": {
+    "sceneId": "ending_witness",
+    "flags": {
+      "testimony_published": true,
+      "archive_key_authenticated": true,
+      "nia_public_consent": false,
+      "order_verified": true,
+      "confirmed_leak": true,
+      "ives_took_list": false,
+      "chapel_response_heard": true,
+      "chapel_window_quiet_exit": true
+    },
+    "journal": [
+      "wall-account",
+      "chapel-return-response"
+    ]
+  }
+}

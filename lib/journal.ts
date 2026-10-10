@@ -88,6 +88,9 @@ export const JOURNAL_TITLES: Record<string, string> = {
   "verified-order": "Command chain verified",
   "archive-gap": "An unverified issuing key",
   "nia-contact": "Nia’s future contact boundary",
+  "chapel-shift-promise": "Your Chapel return work",
+  "witness-shift-promise": "Your volunteer return work",
+  "chapel-return-response": "Lumen’s Chapel reply",
   "notice-reply": "The clinic distribution reply",
   "notice-response": "Response to the observed window",
   "notice-promise": "Private clinic distribution",
@@ -112,6 +115,8 @@ export function journalKind(entry: JournalEntry): "fact" | "claim" | "promise" {
 }
 
 export function promiseStatus(id: string, flags: Record<string, boolean>, journal: JournalEntry[] = []): string {
+  if (id === "chapel-shift-promise") return flags.chapel_shift_kept ? "Return shift kept; docket remains" : "Return shift open";
+  if (id === "witness-shift-promise") return flags.witness_shift_kept ? "Return shift kept; Nia owes nothing" : "Your return shift open";
   if (id === "kerr-collection-promise") return flags.kerr_route_private && flags.kerr_route_trace ? "Private terms broken; register remains" : flags.kerr_route_delivered ? "Receipt observed" : flags.kerr_route_done ? "Collection unfinished" : "Collection open";
   if (id === "spire-promise") return flags.old_badge_traced ? flags.spire_closure_recorded ? "Closed; badge trace remains" : "Badge traced; closure unresolved" : flags.spire_closure_recorded ? "Closure recorded" : flags.spire_done ? "Closure unresolved" : "Retirement open";
   if (id === "notice-promise") return flags.notice_unresolved ? "Distribution unresolved" : flags.notice_done ? "Dispatched; delivery unobserved" : "Distribution open";

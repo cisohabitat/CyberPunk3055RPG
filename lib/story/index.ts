@@ -1,3 +1,4 @@
+import { INTEGRATION_SCENES } from "./campaign-integration";
 import { ALLOCATION_SCENES } from "./notice-allocation";
 import { WINDOW_SCENES } from "./chapel-window";
 import { METHOD_SCENES } from "./encounter-methods";
@@ -26,6 +27,7 @@ export { vaultNext } from "./act1";
 export { CODEX, endingCoda } from "./codas";
 
 export const SCENES: Record<string, Scene> = mergeScenes(
+  INTEGRATION_SCENES,
   SPIRE_SCENES,
   SHELTER_SCENES,
   FREIGHT_SCENES,

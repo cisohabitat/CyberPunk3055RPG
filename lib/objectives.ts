@@ -1,3 +1,4 @@
+import { encounterRecords, noticePlanRecord } from "./campaign-consequences";
 import { windowRemaining } from "./chapel-window";
 import { spireOutcome } from "./story/spire";
 import { shelterOutcome } from "./story/shelter";
@@ -42,6 +43,9 @@ export function objectives(state: GameState): Objective[] {
   if (state.flags.freight_started) rows.push({ id: "freight", title: "Asa’s sealed clinic parcel", status: state.flags.freight_exposed ? "Compromised" : state.flags.freight_delivered || state.flags.freight_late_received ? "Complete" : state.flags.freight_done || atWall ? "Unresolved" : "Open", detail: freightOutcome(state) });
   if (state.flags.shelter_started) rows.push({ id: "shelter", title: "Shelter residents and referral room", status: state.flags.shelter_unobserved || atWall && !state.flags.shelter_done ? "Unresolved" : state.flags.shelter_done ? "Complete" : "Open", detail: shelterOutcome(state) });
   if (state.flags.spire_started) rows.push({ id: "spire-key", title: "Edda’s obsolete maintenance key", status: state.flags.old_badge_traced ? "Compromised" : state.flags.spire_closure_recorded ? "Complete" : state.flags.spire_done || atWall ? "Unresolved" : "Open", detail: spireOutcome(state) });
+  for (const row of encounterRecords(state).filter(row => !["chapel-access", "witness-method"].includes(row.id))) rows.push({ id: row.id, title: row.title, status: row.open ? atWall || state.flags.act2_done ? "Unresolved" : "Open" : "Complete", detail: row.detail });
+  const notice = rows.find(row => row.id === "notice");
+  if (notice && noticePlanRecord(state)) notice.detail = `${noticePlanRecord(state)} ${notice.detail}`;
   return rows;
 }
 
@@ -118,6 +122,9 @@ export function nextStep(state: GameState): string {
   if (state.sceneId === "act3_edda_visit") return "Hear the source’s employment consequences; support does not settle the review.";
   if (state.sceneId === "act2_archive_gap") return "Corroborate the receipt through the ledger, or record the gap honestly.";
   if (state.sceneId === "act2_middle") {
+    const work = encounterRecords(state).filter(row => row.open);
+    if (work.length) return `${work.map(row => row.title).join("; ")} remains open. Keep the work or handover before closing the week, or leave it unresolved.`;
+    if (state.flags.notice_started && !state.flags.notice_done) return "Clinic distribution is unfinished. Resume the saved draft or leave it unaccepted when closing the week.";
     if (state.flags.kerr_route_promised && !state.flags.kerr_route_done) return "Kerr’s collection is unfinished. Resume the saved plan or leave the promise open when closing the week.";
     if (objectives(state).some((row) => row.status === "Open")) return "Your memory promise is still open. Finish it here before closing the week, or choose to leave it unresolved.";
     if (unresolvedPromises(state).length) return "The archive gap is recorded. Closing the week leaves that issuing key unverified.";

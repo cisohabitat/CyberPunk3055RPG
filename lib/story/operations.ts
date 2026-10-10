@@ -1,3 +1,4 @@
+import { chapelReturnChoice } from "./campaign-integration";
 import { witnessMethodResponse } from "../encounter-methods";
 import { spireVisitChoice } from "./spire";
 import { shelterVisitChoice } from "./shelter";
@@ -62,11 +63,12 @@ export const OPERATION_SCENES: Record<string, Scene> = {
   act3_neighborhood: {
     id: "act3_neighborhood", location: "Ward Nine", speaker: "Sera",
     text: (state) => {
-      const returned = ["visited_nia", "visited_records", "visited_edda", "visited_notice", "visited_pump", "visited_asa", "spire_visited", "shelter_visited", "edda_shift_done"].some(flag => state.flags[flag]);
+      const returned = ["chapel_response_heard", "visited_nia", "visited_records", "visited_edda", "visited_notice", "visited_pump", "visited_asa", "spire_visited", "shelter_visited", "edda_shift_done"].some(flag => state.flags[flag]);
       if (returned) return "Back at the neighborhood table, someone makes room for your cup. The conversations you finished stay in the journal; the people still waiting need their own answer.\n\nYou can visit another contact or go to the names. Neither route settles an inquiry for you.";
       return `The clinic and the neighbors' table lie on the way to the wall. Your week has people waiting here.\n\n${state.flags.witness_relocated ? "Nia's second room is private. Lumen keeps the first register entry beside it." : state.flags.witness_lost ? "A tower inquiry names the room your transfer registered." : state.flags.witness_safe ? "Nia's message asks you to arrange a visit through the clinic." : state.flags.memory_witness || state.flags.memory_redacted ? "The transfer chair is still waiting. Protecting a roster did not move Nia." : "There is no transfer in your name. Your promise concerned the archive."}\n\n${state.flags.memory_doubled_down ? "One neighbor has stopped signing your packet." : state.flags.memory_corrected ? "The correction is clipped to your allegation." : state.flags.memory_source_shared ? "An independent source is attached at the records table." : "The records table is still comparing the export with what people remember."} Hear their answers, or go to Sera's names.`;
     },
     choices: [
+      chapelReturnChoice,
       shelterVisitChoice(),
       spireVisitChoice(),
       freightVisitChoice(),

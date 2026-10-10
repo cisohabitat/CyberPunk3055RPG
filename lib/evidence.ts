@@ -1,3 +1,4 @@
+import { encounterRecords, noticePlanRecord } from "./campaign-consequences";
 import { spireOutcome } from "./story/spire";
 import { shelterOutcome } from "./story/shelter";
 import { freightOutcome } from "./story/freight";
@@ -51,5 +52,12 @@ export function aftermath(state: GameState): { title: string; text: string }[] {
   if (state.flags.freight_started || state.flags.freight_declined) rows.push({ title: "Asa’s freight delivery", text: freightOutcome(state) });
   if (state.flags.shelter_started || state.flags.shelter_declined) rows.push({ title: "Shelter neighbors", text: shelterOutcome(state) + (state.flags.shelter_followup_paid ? " You funded their laundry afterward." : state.flags.shelter_followup_helped ? " You helped carry their laundry afterward." : "") });
   if (state.flags.spire_started || state.flags.spire_declined) rows.push({ title: "Edda’s maintenance key", text: spireOutcome(state) });
+  for (const row of encounterRecords(state)) rows.push({ title: row.title, text: row.detail });
+  const plan = noticePlanRecord(state);
+  if (plan) {
+    const distribution = rows.find(row => row.title === "Clinic distribution");
+    if (distribution) distribution.text = `${plan} ${distribution.text}`;
+    else rows.push({ title: "Clinic allocation proposal", text: `${plan} No patient receipt or attendance was observed through this proposal.` });
+  }
   return [...rows, ...relationshipAftermath(state)];
 }

@@ -7,6 +7,41 @@ import { exportRun } from "../lib/vault";
 function fixture(sceneId = "stall", extra: Partial<GameState> = {}): GameState {
   return { ...createCharacter({ handle: "Rex", givenName: "Ada", origin: "spire", bonus: { chrome: 0, nerve: 0, face: 2, ghost: 0 }, complication: "optic" }), sceneId, ...extra };
 }
+test("campaign integration warns about return work and preserves it after closing the week", async ({ page }) => {
+  await openRun(page, fixture("act2_middle", { strain: 0, creds: 0, flags: { chapel_shift_owed: true, witness_shift_owed: true } }));
+  await expect(page.getByTestId("objectives")).toContainText("Campaign commitments");
+  await expect(page.getByTestId("choice-stand")).toContainText("2 campaign promises remain unresolved");
+  await page.getByTestId("choice-work-chapel-shift").click(); await page.reload(); await page.getByTestId("continue-run").click();
+  await expect(page.getByTestId("choice-stand")).toContainText("1 campaign promise remains unresolved");
+  await expect(page.getByTestId("choice-work-chapel-shift")).toHaveCount(0);
+  await page.getByTestId("choice-stand").click();
+  const state = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(state.strain).toBe(1); expect(state.flags.chapel_shift_kept).toBe(true); expect(state.flags.witness_shift_kept).toBeUndefined();
+});
+test("campaign integration Lumen reply records a visit without completing the work", async ({ page }) => {
+  await openRun(page, fixture("act3_neighborhood", { strain: 0, creds: 0, flags: { chapel_method_face: true, chapel_shift_owed: true, watched: true, betrayed_lumen: true } }));
+  await page.getByTestId("choice-visit-chapel-return").click();
+  if (await page.getByTestId("show-rest").count()) await page.getByTestId("show-rest").click();
+  await expect(page.getByTestId("scene-text")).toContainText("doesn't unsell it");
+  await page.getByTestId("choice-record-chapel-return").click(); await page.reload(); await page.getByTestId("continue-run").click();
+  await expect(page.getByTestId("choice-visit-chapel-return")).toHaveCount(0);
+  const state = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(state.flags.chapel_response_heard).toBe(true); expect(state.flags.chapel_shift_kept).toBeUndefined(); expect(state.flags.betrayed_lumen).toBe(true); expect(state.flags.watched).toBe(true); expect(state.creds).toBe(0); expect(state.strain).toBe(0);
+});
+for (const finale of ["ending_names", "ending_quiet", "ending_witness", "ending_listed"]) test(`campaign integration ${finale} offers a keyboard-readable factual recap`, async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem("saint-shard-preferences", JSON.stringify({ artwork: "none", text: 2, contrast: "high", reading: "all" })));
+  await page.setViewportSize({ width: 320, height: 844 });
+  const art: string[] = []; page.on("request", r => { if (r.url().includes("/art/")) art.push(r.url()); });
+  await openRun(page, fixture(finale, { flags: { opening_identity: true, witness_shift_owed: true, kerr_method_rig: true, notice_schedule_60: true, notice_privacy_refused: true } }));
+  await expect(page.getByTestId("campaign-coda")).toContainText("not Nia’s");
+  const recap = page.getByTestId("aftermath-details");
+  await expect(recap).not.toHaveAttribute("open", "");
+  await recap.locator("summary").focus(); await page.keyboard.press("Enter");
+  await expect(recap.getByRole("heading", { name: "Borrowed depot rig" })).toBeVisible();
+  await expect(recap).toContainText("deposit remains held"); await expect(recap).toContainText("unaccepted draft");
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true); expect(art).toEqual([]);
+  expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations).toEqual([]);
+});
 for (const [scene, ids, flags, finalFlag] of [
   ["chapel_methods", ["offer-chapel-service", "bargain-service-entry"], {}, "chapel_shift_owed"],
   ["chapel_window_plan", ["window-scout-gap", "window-use-gap", "window-quiet-exit"], { chapel_window_started: true, chapel_window_3: true }, "chapel_window_quiet_exit"],
