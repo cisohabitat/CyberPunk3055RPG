@@ -12,13 +12,15 @@ import {
   previewCheck,
   runDelta,
   sceneText,
+  stageCheck,
 } from "./engine.ts";
 import { aftermath } from "./evidence";
+import { objectives } from "./objectives";
 import { testimonyPacket } from "./testimony";
 import { FIELD_KITS } from "./loadout";
 import { ITEMS } from "./items.ts";
 import { parseSave } from "./storage.ts";
-import { journalTitle } from "./journal.ts";
+import { journalTitle, promiseStatus } from "./journal.ts";
 import { metCast, speakerRole } from "./story/cast.ts";
 import { GOAL_ARRIVE, GOAL_DECIDE, GOAL_LIFT, GOAL_WALL, GOAL_WEEK, actName, currentGoal } from "./story/goal.ts";
 import { CODEX, SCENES, endingCoda, vaultNext } from "./story/index.ts";
@@ -1186,5 +1188,123 @@ describe("Gutterwire shelter response", () => {
       state = step(state, "shelter-fund-laundry"); assert.equal(state.sceneId, "act3_neighborhood"); assert.equal(state.creds, 80);
       assert.equal(state.flags.shelter_hall, undefined); assert.equal(state.flags.witness_safe, undefined); assert.deepEqual(state.items, []);
     }
+  });
+});
+
+describe("Spire maintenance-key retirement", () => {
+  const start = (stat: StatId = "chrome", creds = 100): GameState => ({ ...make("spire", { chrome: 2, nerve: 0, face: 0, ghost: 0 }), sceneId: "act2_origin_spire", creds, flags: { perk_trained: true, [`perk_${stat}`]: true }, factions: { quill: 0, lumen: 0, helion: 2, wards: 0 } });
+  const sources = (stat: StatId = "chrome", creds = 100) => step(step(start(stat, creds), "plan-spire-key"), "accept-spire-key");
+  const prepared = (stat: StatId = "chrome", creds = 100) => {
+    let state = sources(stat, creds);
+    for (const id of ["inspect-spire-billing", "inspect-spire-protocol", "inspect-spire-receiver", "plan-spire-key"]) state = step(state, id);
+    return state;
+  };
+  it("requires permission and all three current records before preparation", () => {
+    assert.throws(() => step({ ...start(), origin: "dustline" }, "plan-spire-key"));
+    let state = sources();
+    assert.equal(state.journal.at(-1)!.kind, "promise");
+    assert.throws(() => step(state, "plan-spire-key"));
+    assert.throws(() => step({ ...state, flags: {} }, "inspect-spire-billing"));
+    state = step(state, "inspect-spire-billing");
+    assert.match(sceneText(getScene(state.sceneId), state), /1\/3 checked/);
+    assert.match(sceneText(getScene(state.sceneId), state), /current payroll account are different numbers/);
+    state = step(step(state, "inspect-spire-protocol"), "inspect-spire-receiver");
+    state = step(state, "plan-spire-key");
+    assert.equal(state.sceneId, "act2_spire_prep");
+    const next = step(state, "spire-prep-fields");
+    assert.equal(presentChoices({ ...next, sceneId: "act2_spire_prep" }, getScene("act2_spire_prep")).length, 0);
+  });
+  it("supports four prepared skills and awards only a checked, untraced closure", () => {
+    for (const [stat, prep, method] of [["chrome", "reader", "local-reader"], ["face", "clerk", "clerk-signature"], ["ghost", "mirror", "mirror-cycle"], ["nerve", "latch", "hold-latch"]] as const) {
+      let state = prepared(stat);
+      assert.throws(() => step({ ...state, flags: { ...state.flags, [`perk_${stat}`]: false } }, `spire-prep-${prep}`));
+      state = step(state, `spire-prep-${prep}`);
+      assert.throws(() => step({ ...state, flags: { ...state.flags, [`perk_${stat}`]: false } }, `spire-${method}`, stat === "nerve" ? 8 : undefined));
+      state = step(state, `spire-${method}`, stat === "nerve" ? 8 : undefined);
+      assert.equal(state.flags.spire_key_revoked, true); assert.equal(state.flags.origin_done, undefined); assert.deepEqual(state.items, []);
+      state = step(parseSave(JSON.stringify(state))!, "acknowledge-spire-closure");
+      assert.equal(state.flags.spire_closure_recorded, true); assert.equal(state.flags.origin_helped, true);
+      assert.deepEqual(state.items, ["signal-baffle"]);
+      assert.equal(state.factions.helion, stat === "face" ? 0 : 1);
+      for (const flag of ["order_verified", "archive_key_authenticated", "witness_safe", "edda_shift_paid", "nia_public_consent"]) assert.equal(state.flags[flag], undefined);
+      assert.equal(presentChoices({ ...state, sceneId: "act2_spire_receipt" }, getScene("act2_spire_receipt")).length, 0);
+      assert.equal(presentChoices({ ...state, sceneId: "act2_spire_methods" }, getScene("act2_spire_methods")).length, 0);
+      assert.equal(presentChoices({ ...state, sceneId: "act2_origin_spire" }, getScene("act2_origin_spire")).some((choice) => ["plan-spire-key", "clear-key"].includes(choice.id)), false);
+    }
+  });
+  it("retains a risk on the maximum trained field-prepared build without the listed chip", () => {
+    const state = step(prepared(), "spire-prep-fields");
+    const check = getScene(state.sceneId).choices.find((choice) => choice.id === "spire-retire-terminal")!.check!;
+    assert.equal(previewCheck(state, check).hits, 9);
+    assert.equal(previewCheck({ ...state, items: ["archive-probe"] }, check).hits, 9);
+    assert.equal(previewCheck({ ...state, items: ["spoof-chip"] }, check).hits, 10);
+    const closed = step(step(state, "spire-retire-terminal", 8), "acknowledge-spire-closure");
+    assert.deepEqual(closed.items, ["signal-baffle"]);
+    const paid = step(step(step(prepared(), "spire-no-prep"), "spire-pay-processor"), "acknowledge-spire-closure");
+    assert.equal(paid.creds, 65); assert.equal(paid.rolls.length, 0);
+  });
+  it("preserves a staged miss and its badge trace through paid recovery and employment", () => {
+    let state = step(prepared("face"), "spire-no-prep");
+    state = parseSave(JSON.stringify(stageCheck(state, "spire-retire-terminal", 1)))!;
+    assert.equal(state.pendingCheck?.roll, 1);
+    state = step(state, "spire-retire-terminal", 1);
+    assert.equal(state.sceneId, "act2_spire_recovery"); assert.equal(state.strain, 2); assert.equal(state.flags.old_badge_traced, true);
+    assert.equal(presentChoices({ ...state, sceneId: "act2_spire_methods" }, getScene("act2_spire_methods")).length, 0);
+    state = step(step(state, "spire-recovery-processor"), "acknowledge-spire-closure");
+    assert.equal(state.creds, 65); assert.deepEqual(state.items, []); assert.equal(state.flags.origin_helped, undefined);
+    assert.equal(state.flags.old_badge_traced, true); assert.equal(state.flags.spire_closure_recorded, true);
+    assert.equal(objectives(state).find((row) => row.id === "spire-key")!.status, "Compromised");
+    assert.equal(promiseStatus("spire-promise", state.flags), "Closed; badge trace remains");
+    assert.match(aftermath(state).find((row) => row.title === "Edda’s maintenance key")!.text, /did not erase/);
+    state = { ...state, sceneId: "act3_edda_methods", flags: { ...state.flags, edda_shift_consent: true, edda_exposed: true, archive_custody: true } };
+    state = step(step(state, "submit-key-closure"), "record-shift-response");
+    assert.equal(state.flags.edda_shift_paid, true); assert.equal(state.flags.old_badge_traced, true); assert.equal(state.flags.edda_exposed, true);
+    assert.match(sceneText(getScene("act3_edda_reply"), state), /inquiry continues/);
+  });
+  it("permits zero-fund filing and records late closure without retroactive rewards", () => {
+    let state = step(step(prepared("face", 0), "spire-no-prep"), "spire-retire-terminal", 1);
+    assert.equal(presentChoices(state, getScene(state.sceneId)).find((choice) => choice.id === "spire-recovery-processor")!.enabled, false);
+    state = step(state, "spire-file-request");
+    assert.equal(state.flags.spire_pending, true); assert.equal(state.flags.spire_closure_recorded, undefined);
+    assert.equal(promiseStatus("spire-promise", state.flags), "Badge traced; closure unresolved");
+    state = step({ ...state, sceneId: "ward_wall" }, "visit-spire-key");
+    state = step(state, "query-spire-reply");
+    assert.equal(state.flags.spire_closure_recorded, undefined);
+    state = step(parseSave(JSON.stringify(state))!, "record-spire-reply");
+    assert.equal(state.sceneId, "ward_wall"); assert.equal(state.flags.spire_late_closed, true); assert.equal(state.flags.spire_pending, undefined);
+    assert.equal(state.flags.old_badge_traced, true); assert.equal(state.flags.origin_helped, undefined);
+    assert.equal(state.creds, 0); assert.deepEqual(state.items, []); assert.equal(state.rolls.length, 1);
+    assert.equal(state.journal.filter((entry) => entry.id === "spire-late-closure").length, 1);
+    assert.equal(presentChoices(state, getScene(state.sceneId)).some((choice) => choice.id === "visit-spire-key"), false);
+    assert.throws(() => step({ ...state, sceneId: "act3_spire_reply" }, "record-spire-reply"));
+  });
+  it("keeps a free unqueried request unresolved, with return paths from both hubs", () => {
+    const queued = step(step(step(prepared(), "spire-no-prep"), "spire-use-desk"), "spire-file-request");
+    assert.equal(objectives(queued).find((row) => row.id === "spire-key")!.status, "Unresolved");
+    for (const sceneId of ["ward_wall", "act3_neighborhood"]) {
+      const done = step(step({ ...queued, sceneId }, "visit-spire-key"), "close-spire-visit");
+      assert.equal(done.sceneId, sceneId); assert.equal(done.flags.spire_pending, true);
+      assert.deepEqual(done.items, []); assert.equal(done.flags.spire_closure_recorded, undefined);
+      assert.match(aftermath(done).find((row) => row.title === "Edda’s maintenance key")!.text, /Acceptance is not closure/);
+    }
+  });
+  it("declines or stops without inventing a later closure or work permission", () => {
+    const declined = step(step(start(), "plan-spire-key"), "decline-spire-key");
+    const stopped = step(step(step(prepared(), "spire-no-prep"), "spire-use-desk"), "spire-stop-request");
+    for (let state of [declined, stopped]) {
+      state = step({ ...state, sceneId: "act3_neighborhood" }, "visit-spire-key");
+      assert.throws(() => step(state, "query-spire-reply"));
+      state = step(state, "close-spire-visit");
+      assert.deepEqual(state.items, []); assert.equal(state.flags.spire_closure_recorded, undefined); assert.equal(state.flags.edda_shift_consent, undefined);
+    }
+  });
+  it("retains legacy key checks and closure-based employment without reward farming", () => {
+    const state = start();
+    const saved = parseSave(JSON.stringify(stageCheck(state, "clear-key", 8)))!;
+    const done = step(saved, "clear-key", 8);
+    assert.equal(done.sceneId, "act2_origin_return"); assert.equal(done.flags.origin_helped, true); assert.deepEqual(done.items, ["signal-baffle"]);
+    assert.throws(() => step({ ...done, sceneId: "act2_origin_spire" }, "clear-key", 8));
+    const visit = step(step({ ...done, sceneId: "ward_wall" }, "visit-spire-key"), "close-spire-visit");
+    assert.equal(visit.sceneId, "ward_wall"); assert.deepEqual(visit.items, ["signal-baffle"]);
   });
 });

@@ -1,3 +1,4 @@
+import { spireVisitChoice } from "./spire";
 import { shelterVisitChoice } from "./shelter";
 import { freightVisitChoice } from "./freight";
 import { kitBonuses } from "../loadout";
@@ -59,6 +60,7 @@ export const OPERATION_SCENES: Record<string, Scene> = {
     text: (state) => `The way to the wall passes the clinic and a table where neighbors compare maintenance notices. The people from your week are here before your ending.\n\n${state.flags.witness_relocated ? "Lumen has left a message: Nia's second room is private. The first entry is still on the register." : state.flags.witness_lost ? "A tower inquiry sits unopened on the clinic desk. It names the room your transfer registered." : state.flags.witness_safe ? "The clinic has a blank address field and a message from Nia: ask before visiting." : state.flags.memory_witness || state.flags.memory_redacted ? "The clinic still has a transfer chair waiting. A protected roster did not finish the journey." : "The clinic has no transfer arranged in your name. Your promise concerned the archive."}\n\n${state.flags.memory_doubled_down ? "At the records table, a neighbor has stopped signing your packet." : state.flags.memory_corrected ? "At the records table, your correction is clipped to the allegation. Neither has been erased." : state.flags.memory_source_shared ? "At the records table, the independent source is attached. People can inspect the chain without a home address." : "At the records table, the export is still being compared with what people remember."}\n\nYou can hear what changed before going to the wall.`,
     choices: [
       shelterVisitChoice(),
+      spireVisitChoice(),
       freightVisitChoice(),
       { id: "visit-notice", label: "Ask Lumen what happened to the clinic notice.", requireFlag: "notice_done", hideIfFlag: "visited_notice", next: "act3_notice_visit" },
       { id: "return-notice-response", label: "Return to Lumen about the observed clinic window.", requireAllFlags: ["visited_notice", "notice_monitored"], hideIfFlag: "notice_repair_done", next: "act3_notice_repair" },

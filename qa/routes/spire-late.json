@@ -1,0 +1,318 @@
+{
+  "name": "spire-late",
+  "character": {
+    "handle": "Replay",
+    "givenName": "Ada",
+    "origin": "spire",
+    "complication": "on-file",
+    "bonus": {
+      "chrome": 2,
+      "nerve": 0,
+      "face": 0,
+      "ghost": 0
+    },
+    "startWithPrologue": true
+  },
+  "steps": [
+    {
+      "choiceId": "begin-opening",
+      "reload": true
+    },
+    {
+      "choiceId": "opening-survival",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-stallholder",
+      "reload": true
+    },
+    {
+      "choiceId": "take-the-stool",
+      "reload": true
+    },
+    {
+      "choiceId": "ask-pay"
+    },
+    {
+      "choiceId": "haggle",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "pocket"
+    },
+    {
+      "choiceId": "accept"
+    },
+    {
+      "choiceId": "side"
+    },
+    {
+      "choiceId": "spoof-door",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "go"
+    },
+    {
+      "choiceId": "honest"
+    },
+    {
+      "choiceId": "pact-copy"
+    },
+    {
+      "choiceId": "copy",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "heard"
+    },
+    {
+      "choiceId": "inspect-hour"
+    },
+    {
+      "choiceId": "inspect-signature"
+    },
+    {
+      "choiceId": "inspect-order"
+    },
+    {
+      "choiceId": "inspect-roster"
+    },
+    {
+      "choiceId": "reconstruct"
+    },
+    {
+      "choiceId": "separate-decisions"
+    },
+    {
+      "choiceId": "label-unverified"
+    },
+    {
+      "choiceId": "seal-full"
+    },
+    {
+      "choiceId": "talk-leave",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "both"
+    },
+    {
+      "choiceId": "week-after"
+    },
+    {
+      "choiceId": "into-week"
+    },
+    {
+      "choiceId": "practice"
+    },
+    {
+      "choiceId": "learn-chrome"
+    },
+    {
+      "choiceId": "read-board"
+    },
+    {
+      "choiceId": "origin-contract"
+    },
+    {
+      "choiceId": "plan-spire-key",
+      "reload": true
+    },
+    {
+      "choiceId": "accept-spire-key",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-spire-billing",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-spire-protocol",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-spire-receiver",
+      "reload": true
+    },
+    {
+      "choiceId": "plan-spire-key",
+      "reload": true
+    },
+    {
+      "choiceId": "spire-no-prep",
+      "reload": true
+    },
+    {
+      "choiceId": "spire-retire-terminal",
+      "roll": 1,
+      "reload": true
+    },
+    {
+      "choiceId": "spire-file-request",
+      "reload": true
+    },
+    {
+      "choiceId": "spire-return-board",
+      "reload": true
+    },
+    {
+      "choiceId": "to-helion"
+    },
+    {
+      "choiceId": "hear-ives"
+    },
+    {
+      "choiceId": "refuse-ives"
+    },
+    {
+      "choiceId": "trace-order"
+    },
+    {
+      "choiceId": "agree-archive-terms"
+    },
+    {
+      "choiceId": "index-archive",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "catalog-is-proof"
+    },
+    {
+      "choiceId": "revise-source-test"
+    },
+    {
+      "choiceId": "trace-receipt",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "ask-named-source"
+    },
+    {
+      "choiceId": "keep-chain"
+    },
+    {
+      "choiceId": "hear-response"
+    },
+    {
+      "choiceId": "answer-with-source"
+    },
+    {
+      "choiceId": "stand"
+    },
+    {
+      "choiceId": "back-to-board"
+    },
+    {
+      "choiceId": "to-the-wall"
+    },
+    {
+      "choiceId": "to-ward-nine"
+    },
+    {
+      "choiceId": "visit-spire-key",
+      "reload": true
+    },
+    {
+      "choiceId": "query-spire-reply",
+      "reload": true
+    },
+    {
+      "choiceId": "record-spire-reply",
+      "reload": true
+    },
+    {
+      "choiceId": "visit-edda"
+    },
+    {
+      "choiceId": "review-edda-shift"
+    },
+    {
+      "choiceId": "authorize-shift-request",
+      "reload": true
+    },
+    {
+      "choiceId": "submit-key-closure",
+      "reload": true
+    },
+    {
+      "choiceId": "record-shift-response",
+      "reload": true
+    },
+    {
+      "choiceId": "visit-records"
+    },
+    {
+      "choiceId": "keep-limits"
+    },
+    {
+      "choiceId": "go-wall"
+    },
+    {
+      "choiceId": "face-sera"
+    },
+    {
+      "choiceId": "prepare-public-account"
+    },
+    {
+      "choiceId": "scope-corroborated"
+    },
+    {
+      "choiceId": "keep-recording-private"
+    },
+    {
+      "choiceId": "answer-authenticated-key"
+    },
+    {
+      "choiceId": "file-public-account",
+      "reload": true
+    },
+    {
+      "choiceId": "leave-wall"
+    }
+  ],
+  "expected": {
+    "sceneId": "ending_quiet",
+    "flags": {
+      "testimony_published": true,
+      "archive_key_authenticated": true,
+      "nia_public_consent": false,
+      "order_verified": true,
+      "edda_shift_done": true,
+      "edda_shift_consent": true,
+      "edda_shift_paid": true,
+      "edda_representation": false,
+      "edda_exposed": true,
+      "edda_public_consent": true,
+      "edda_supported": false,
+      "spire_visited": true,
+      "spire_done": true,
+      "spire_closure_recorded": true,
+      "spire_receiver_earned": false,
+      "old_badge_traced": true,
+      "spire_late_closed": true,
+      "spire_pending": false,
+      "spire_declined": false,
+      "origin_helped": false
+    },
+    "journal": [
+      "wall-account",
+      "edda-shift-request",
+      "edda-shift-response",
+      "spire-promise",
+      "spire-billing",
+      "spire-protocol",
+      "spire-receiver",
+      "spire-desk-request",
+      "spire-late-closure"
+    ],
+    "creds": 390,
+    "strain": 3
+  }
+}

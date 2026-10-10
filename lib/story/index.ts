@@ -1,3 +1,4 @@
+import { SPIRE_SCENES } from "./spire";
 import { SHELTER_SCENES } from "./shelter";
 import { FREIGHT_SCENES } from "./freight";
 import { OPENING_SCENES } from "./opening";
@@ -20,6 +21,7 @@ export { vaultNext } from "./act1";
 export { CODEX, endingCoda } from "./codas";
 
 export const SCENES: Record<string, Scene> = mergeScenes(
+  SPIRE_SCENES,
   SHELTER_SCENES,
   FREIGHT_SCENES,
   OPENING_SCENES,

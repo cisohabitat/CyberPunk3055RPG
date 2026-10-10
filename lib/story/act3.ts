@@ -1,3 +1,4 @@
+import { spireVisitChoice } from "./spire";
 import { shelterVisitChoice } from "./shelter";
 import { freightVisitChoice } from "./freight";
 import { GOAL_WALL } from "./goal";
@@ -128,6 +129,7 @@ export const ACT3_SCENES: Record<string, Scene> = {
     text: wallText,
     choices: [
       shelterVisitChoice(true),
+      spireVisitChoice(true),
       freightVisitChoice(true),
       { id: "face-sera", label: "Tell her why you came.", next: "act3_arrival" },
       {

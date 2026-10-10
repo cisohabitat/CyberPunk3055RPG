@@ -24,6 +24,14 @@ export function journalEntry(item: string | JournalEntry): JournalEntry {
 }
 
 export const JOURNAL_TITLES: Record<string, string> = {
+  "spire-promise": "Edda’s key-retirement terms",
+  "spire-billing": "Two billing numbers",
+  "spire-protocol": "Both-store retirement protocol",
+  "spire-receiver": "Receiver handover terms",
+  "spire-closure": "Matched key-closure receipt",
+  "spire-desk-request": "Accepted retirement request",
+  "spire-payroll-response": "Maintenance payroll position",
+  "spire-late-closure": "Later key-retirement reply",
   "shelter-promise": "Shelter response terms",
   "shelter-room": "Shelter room allocation",
   "shelter-arrival": "Staffed hall arrival",
@@ -83,6 +91,7 @@ export function journalKind(entry: JournalEntry): "fact" | "claim" | "promise" {
 }
 
 export function promiseStatus(id: string, flags: Record<string, boolean>, journal: JournalEntry[] = []): string {
+  if (id === "spire-promise") return flags.old_badge_traced ? flags.spire_closure_recorded ? "Closed; badge trace remains" : "Badge traced; closure unresolved" : flags.spire_closure_recorded ? "Closure recorded" : flags.spire_done ? "Closure unresolved" : "Retirement open";
   if (id === "notice-promise") return flags.notice_unresolved ? "Distribution unresolved" : flags.notice_done ? "Dispatched; delivery unobserved" : "Distribution open";
   if (id === "edda-shift-request") return flags.edda_shift_paid ? "Temporary paid work" : flags.edda_shift_done ? "Review pending" : "Application open";
   if (id === "witness-promise") return flags.witness_lost ? "Location exposed" : flags.witness_safe && journal.some((entry) => entry.id === "nia-account") ? "Kept" : flags.witness_safe ? "Account pending" : "Unresolved";

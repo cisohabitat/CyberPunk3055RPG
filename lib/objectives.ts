@@ -1,3 +1,4 @@
+import { spireOutcome } from "./story/spire";
 import { shelterOutcome } from "./story/shelter";
 import { freightOutcome } from "./story/freight";
 import { actName } from "./story/goal";
@@ -36,6 +37,7 @@ export function objectives(state: GameState): Objective[] {
   if (state.flags.pump_attempted || state.flags.pump_done) rows.push({ id: "coolant", title: "Respond to the clinic coolant emergency", status: !state.flags.pump_done ? "Open" : state.flags.pump_left ? "Unresolved" : "Complete", detail: !state.flags.pump_done ? state.flags.pump_restored ? "Cooling is restored. Choose custody of the maintenance receipt before returning." : "The pump attempt failed. Arrange cold-storage transfer or leave its outcome unobserved." : state.flags.pump_restored ? `The spare restored cooling.${state.flags.pump_inspection_booked ? " A follow-up inspection is booked, but has not happened yet." : " Another inspection remains due."} This supplies no historical evidence.` : state.flags.pump_supplies_saved ? "Medicines reached another cold cabinet. The pump still needs a replacement relay." : "You left the transfer to clinic staff. Its delivery outcome was not observed by you." });
   if (state.flags.freight_started) rows.push({ id: "freight", title: "Asa’s sealed clinic parcel", status: state.flags.freight_exposed ? "Compromised" : state.flags.freight_delivered || state.flags.freight_late_received ? "Complete" : state.flags.freight_done || atWall ? "Unresolved" : "Open", detail: freightOutcome(state) });
   if (state.flags.shelter_started) rows.push({ id: "shelter", title: "Shelter residents and referral room", status: state.flags.shelter_unobserved || atWall && !state.flags.shelter_done ? "Unresolved" : state.flags.shelter_done ? "Complete" : "Open", detail: shelterOutcome(state) });
+  if (state.flags.spire_started) rows.push({ id: "spire-key", title: "Edda’s obsolete maintenance key", status: state.flags.old_badge_traced ? "Compromised" : state.flags.spire_closure_recorded ? "Complete" : state.flags.spire_done || atWall ? "Unresolved" : "Open", detail: spireOutcome(state) });
   return rows;
 }
 
@@ -47,6 +49,11 @@ export function nextStep(state: GameState): string {
   // The arrival goal already explains the opening; leave room for the story.
   if (state.sceneId.startsWith("opening_")) return "";
   if (state.pendingCheck) return "Finish the recorded roll. Its outcome is already saved.";
+  if (state.sceneId === "act2_spire_sources") return "Read all three records. Her current account must stay open; a service request is not a closure receipt.";
+  if (state.sceneId === "act2_spire_recovery") return "Choose paid closure or a free pending request. No second terminal roll can erase the badge log.";
+  if (state.sceneId === "act2_spire_receipt") return "Check both registers before recording closure. An exposed badge prevents a receiver handover.";
+  if (state.sceneId.startsWith("act2_spire_")) return "Retire only the obsolete maintenance key. Keep current payroll, earlier charges and historical evidence separate.";
+  if (state.sceneId.startsWith("act3_spire_")) return "Record payroll’s actual reply. Later closure creates no earlier receiver handover or restored wage.";
   if (state.sceneId.startsWith("act2_shelter_")) return "Settle resident beds before reserving a private referral room. Evacuation and repair are different outcomes.";
   if (state.sceneId === "act3_shelter_visit") return "Hear how the neighbors slept. Today’s help creates no replacement token or witness transfer.";
   if (state.sceneId.startsWith("act2_freight_")) return "Keep the parcel cold, distinguish a handover from an observed receipt, and preserve any exposed route.";

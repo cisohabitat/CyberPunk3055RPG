@@ -838,3 +838,74 @@ test("the authored stereo score decodes after an explicit sound-enabled continua
   const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
   expect(run.sceneId).toBe("districts"); expect(run.pendingCheck).toBeUndefined();
 });
+
+function spireFixture(stat = "chrome", creds = 100): GameState {
+  return { ...createCharacter({ handle: "Rex", givenName: "Ada", origin: "spire", bonus: { chrome: 2, nerve: 0, face: 0, ghost: 0 } }), sceneId: "act2_origin_spire", creds, flags: { perk_trained: true, [`perk_${stat}`]: true }, factions: { quill: 0, lumen: 0, helion: 2, wards: 0 } };
+}
+async function readSpireSources(page: Page) {
+  for (const id of ["plan-spire-key", "accept-spire-key", "inspect-spire-billing", "inspect-spire-protocol", "inspect-spire-receiver", "plan-spire-key"]) await page.getByTestId(`choice-${id}`).click();
+}
+for (const [stat, prep, method] of [["chrome", "reader", "local-reader"], ["face", "clerk", "clerk-signature"], ["ghost", "mirror", "mirror-cycle"], ["nerve", "latch", "hold-latch"]] as const) test(`Spire ${stat} preparation earns only a matched closure and receiver`, async ({ page }) => {
+  await page.addInitScript(() => { Math.random = () => 0.75; localStorage.setItem("saint-shard-preferences", JSON.stringify({ textStep: 2, reading: "all", contrast: "high", motion: "reduce" })); });
+  await page.setViewportSize({ width: 320, height: 844 }); await openRun(page, spireFixture(stat));
+  await page.getByTestId("choice-plan-spire-key").click(); await page.getByTestId("choice-accept-spire-key").click();
+  await expect(page.getByTestId("choice-plan-spire-key")).toHaveCount(0);
+  await page.getByTestId("choice-inspect-spire-billing").click();
+  await expect(page.getByTestId("scene-text")).toContainText("1/3 checked");
+  await page.reload(); await page.getByTestId("continue-run").click();
+  await expect(page.getByTestId("choice-inspect-spire-billing")).toHaveCount(0);
+  for (const id of ["inspect-spire-protocol", "inspect-spire-receiver", "plan-spire-key", `spire-prep-${prep}`]) await page.getByTestId(`choice-${id}`).click();
+  await expect(page.getByTestId("goal")).toBeInViewport();
+  await page.getByTestId(`choice-spire-${method}`).click();
+  if (stat === "nerve") { await page.getByTestId("roll-button").click(); await page.reload(); await page.getByTestId("continue-run").click(); await expect(page.getByTestId("roll-button")).toHaveCount(0); await page.getByTestId("continue-check").click(); }
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!).items)).not.toContain("signal-baffle");
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations).toEqual([]);
+  await page.getByTestId("choice-acknowledge-spire-closure").click();
+  const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(run.flags.spire_closure_recorded).toBe(true); expect(run.items).toContain("signal-baffle");
+  for (const flag of ["order_verified", "archive_key_authenticated", "witness_safe", "edda_shift_paid", "nia_public_consent"]) expect(run.flags[flag]).toBeUndefined();
+  await expect(page.getByTestId("scene-text")).toContainText("Earlier disputed charges still need review");
+  await page.getByTestId("choice-spire-return-board").click(); await expect(page.getByTestId("choice-origin-contract")).toHaveCount(0);
+});
+test("Spire failed retirement restores once and permits a zero-fund pending request", async ({ page }) => {
+  await page.addInitScript(() => { Math.random = () => 0.05; localStorage.setItem("saint-shard-preferences", JSON.stringify({ reading: "all" })); });
+  await openRun(page, spireFixture("face", 0)); await readSpireSources(page);
+  await page.getByTestId("choice-spire-no-prep").click(); await page.getByTestId("choice-spire-retire-terminal").click();
+  await page.getByTestId("roll-button").click(); await page.reload(); await page.getByTestId("continue-run").click();
+  await expect(page.getByTestId("roll-button")).toHaveCount(0); await page.getByTestId("continue-check").click();
+  await expect(page.getByTestId("choice-spire-recovery-processor")).toBeDisabled();
+  await expect(page.getByTestId("choice-spire-retire-terminal")).toHaveCount(0);
+  await page.getByTestId("choice-spire-file-request").click(); await page.reload(); await page.getByTestId("continue-run").click();
+  await expect(page.getByTestId("scene-text")).toContainText("Acceptance is not closure");
+  const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(run.flags.spire_pending).toBe(true); expect(run.flags.old_badge_traced).toBe(true); expect(run.flags.spire_closure_recorded).toBeUndefined();
+  expect(run.creds).toBe(0); expect(run.strain).toBe(2); expect(run.rolls).toHaveLength(1); expect(run.pendingCheck).toBeUndefined(); expect(run.items).not.toContain("signal-baffle");
+});
+test("Spire paid recovery preserves the badge trail and withholds the receiver", async ({ page }) => {
+  await page.addInitScript(() => { Math.random = () => 0.05; localStorage.setItem("saint-shard-preferences", JSON.stringify({ reading: "all" })); });
+  await openRun(page, spireFixture("face")); await readSpireSources(page);
+  for (const id of ["spire-no-prep", "spire-retire-terminal"]) await page.getByTestId(`choice-${id}`).click();
+  await page.getByTestId("roll-button").click(); await page.getByTestId("continue-check").click();
+  await page.getByTestId("choice-spire-recovery-processor").click(); await page.getByTestId("choice-acknowledge-spire-closure").click();
+  await expect(page.getByTestId("scene-text")).toContainText("later closure did not erase it");
+  const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(run.flags.spire_closure_recorded).toBe(true); expect(run.flags.old_badge_traced).toBe(true); expect(run.flags.origin_helped).toBeUndefined();
+  expect(run.creds).toBe(65); expect(run.items).not.toContain("signal-baffle");
+});
+for (const hub of ["ward_wall", "act3_neighborhood"]) test(`Spire late payroll reply preserves exposure and returns to ${hub}`, async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem("saint-shard-preferences", JSON.stringify({ reading: "all" })));
+  await openRun(page, { ...spireFixture(), sceneId: hub, flags: { origin_done: true, spire_started: true, spire_done: true, spire_pending: true, spire_consent: true, old_badge_traced: true, archive_custody: true, edda_exposed: true } });
+  for (const id of ["visit-spire-key", "query-spire-reply"]) await page.getByTestId(`choice-${id}`).click();
+  await page.reload(); await page.getByTestId("continue-run").click();
+  await expect(page.getByTestId("scene-text")).toContainText("Don’t date it last week");
+  await page.getByTestId("choice-record-spire-reply").click(); await expect(page.getByTestId("choice-visit-spire-key")).toHaveCount(0);
+  let run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(run.sceneId).toBe(hub); expect(run.flags.spire_late_closed).toBe(true); expect(run.flags.spire_pending).toBeUndefined(); expect(run.flags.old_badge_traced).toBe(true);
+  expect(run.items).not.toContain("signal-baffle"); expect(run.flags.edda_shift_paid).toBeUndefined(); expect(run.flags.order_verified).toBeUndefined();
+  if (hub === "act3_neighborhood") {
+    for (const id of ["visit-edda", "review-edda-shift", "authorize-shift-request", "submit-key-closure", "record-shift-response"]) await page.getByTestId(`choice-${id}`).click();
+    run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+    expect(run.flags.edda_shift_paid).toBe(true); expect(run.flags.edda_exposed).toBe(true); expect(run.flags.old_badge_traced).toBe(true); expect(run.flags.edda_public_consent).toBeUndefined();
+  }
+});
