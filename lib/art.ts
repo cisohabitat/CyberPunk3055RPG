@@ -9,6 +9,10 @@ const PLACES: { test: (location: string) => boolean; src: string }[] = [
 ];
 
 export type Illustration = { src: string; small: string; caption: string; description: string };
+export const TITLE_ART: Illustration = {
+  src: "/art/title.jpg", small: "/art/title-small.jpg", caption: "Kite City · an hour of memory",
+  description: "Symbolic title art: a lone runner studies a luminous glass memory shard above Kite City's rainy walkways, beneath an immense blue dome.",
+};
 export const OPENING_ART: Illustration = {
   src: "/art/opening.jpg", small: "/art/opening-small.jpg", caption: "Kite City · before midnight",
   description: "An amber noodle stall shelters a rainy walkway beneath the city's immense dome.",

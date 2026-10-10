@@ -230,6 +230,31 @@
           "sha256": "cbfe247eb71bd3f76a2e2d4034757817e5a2021924f44dcb2fc627c0f9944679"
         }
       ]
+    },
+    {
+      "id": "title",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-10",
+      "sourceFile": "/workspace/generated_images/exec-ed443009-5848-46e8-b27d-844de176091d.png",
+      "sourceSha256": "7f331201a11cf23fd50428eca2b144afbee375cc0fb2748cfafadfc3571e4a5f",
+      "promptSummary": "Symbolic spoiler-free title key art: an unidentified runner with a luminous glass memory shard against rainy Kite City and its immense dome. Dark left-side menu space, readable right-side figure, no text or known story outcome.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/title.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 200247,
+          "sha256": "bc429bafbac720f8fe10d505761b92f226c7085fde95950899227cdba77c4543"
+        },
+        {
+          "path": "public/art/title-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 56439,
+          "sha256": "a474c6927a753e8d4db6dc1938f6edc4b7619492b0210cbb01203b685576110d"
+        }
+      ]
     }
   ]
 }

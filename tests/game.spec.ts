@@ -109,6 +109,50 @@ async function openRun(page: Page, state = fixture()) {
   await page.goto("/"); await page.getByTestId("continue-run").click();
   await expect(page.getByTestId("scene")).toBeVisible();
 }
+for (const [width, saved, large] of [[390, false, false], [1440, true, false], [320, true, true]] as const) test(`title key art and keyboard start controls at ${width}px`, async ({ page }) => {
+  await page.setViewportSize({ width, height: width < 700 ? 844 : 900 });
+  await page.addInitScript(({ run, large }) => {
+    localStorage.setItem("saint-shard-preferences", JSON.stringify({ textStep: large ? 2 : 0, contrast: large ? "high" : "standard", motion: "reduce" }));
+    if (run) localStorage.setItem("saint-shard-3055-v1", JSON.stringify(run));
+  }, { run: saved ? fixture() : null, large });
+  await page.goto("/");
+  await expect(page.getByRole("heading", { name: "Saint Shard", level: 1 })).toBeVisible();
+  const image = page.getByTestId("title-art").locator("img");
+  await expect(image).toHaveAttribute("src", "/art/title.jpg");
+  await expect(image).toHaveAttribute("alt", /Symbolic title art: a lone runner/);
+  expect(await image.evaluate((img: HTMLImageElement) => img.decode().then(() => img.naturalWidth))).toBeGreaterThan(0);
+  for (const id of saved ? ["continue-run", "new-run"] : ["new-run"]) {
+    const bounds = await page.getByTestId(id).boundingBox();
+    expect(bounds!.y + bounds!.height).toBeLessThanOrEqual(width < 700 ? 844 : 900);
+  }
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations).toEqual([]);
+  if (saved) {
+    await page.getByTestId("continue-run").focus(); await page.keyboard.press("Tab");
+    await expect(page.getByTestId("new-run")).toBeFocused(); await page.keyboard.press("Enter");
+    await expect(page.getByRole("dialog", { name: "Start over?" })).toBeVisible();
+    await page.getByRole("button", { name: "Keep it", exact: true }).click();
+    await expect(page.getByTestId("new-run")).toBeFocused();
+    await page.getByTestId("continue-run").focus(); await page.keyboard.press("Enter");
+    await expect(page.getByTestId("scene")).toBeVisible();
+    const state = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+    expect(state.sceneId).toBe("stall"); expect(state.handle).toBe("Rex");
+  } else {
+    await page.getByTestId("new-run").focus(); await page.keyboard.press("Enter");
+    await expect(page.getByTestId("handle-input")).toBeVisible();
+  }
+});
+test("unavailable title artwork leaves start and settings usable", async ({ page }) => {
+  await page.route("**/art/title*.jpg", (route) => route.abort());
+  await page.goto("/");
+  await expect(page.getByTestId("title-art")).toBeVisible();
+  await expect.poll(() => page.getByTestId("title-art").locator("img").evaluate((image: HTMLImageElement) => image.complete && image.naturalWidth === 0)).toBe(true);
+  await page.getByRole("button", { name: "Settings", exact: true }).click();
+  await page.getByLabel("Artwork", { exact: true }).selectOption("none");
+  await page.getByRole("button", { name: "Done", exact: true }).click();
+  await expect(page.getByTestId("title-art")).toHaveCount(0);
+  await page.getByTestId("new-run").click(); await expect(page.getByTestId("handle-input")).toBeVisible();
+});
 test("new runner, settings, reading width and saved preferences", async ({ page }) => {
   await page.goto("/"); await page.getByTestId("new-run").click();
   await page.getByTestId("handle-input").fill("Rex"); await page.getByTestId("complication-debt").click();

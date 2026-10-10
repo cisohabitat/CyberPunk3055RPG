@@ -5,7 +5,7 @@ import { it } from "node:test";
 import provenance from "../qa/media/art-provenance.json";
 import decisions from "../qa/media/scene-art.json";
 import { SCENES } from "./story";
-import { sceneIllustration } from "./art";
+import { sceneIllustration, TITLE_ART } from "./art";
 import { auditSceneArt } from "./scene-art";
 
 it("ships documented generated images without corrupting or enlarging their encoded files", () => {
@@ -24,6 +24,7 @@ it("ships documented generated images without corrupting or enlarging their enco
     const art = sceneIllustration(id);
     if (art) for (const path of [art.src, art.small]) assert.ok(paths.has(`public${path}`), `Missing generated illustration provenance: ${id} ${path}`);
   }
+  for (const path of [TITLE_ART.src, TITLE_ART.small]) assert.ok(paths.has(`public${path}`), `Missing title art provenance: ${path}`);
 });
 
 it("every scene has an explicit art decision matching delivered artwork", () => {
