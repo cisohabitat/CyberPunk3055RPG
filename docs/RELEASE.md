@@ -52,4 +52,4 @@ Commercial candidate review uses `npm run production:report -- --release`, which
 
 ## Cycle 10 endurance and rollback rehearsal
 
-[RELEASE_READINESS.md](RELEASE_READINESS.md) records the corrected diagnostic, immutable previous-public-release exports and same-origin isolated rollback/recovery command. Production waits at most twenty minutes for the exact revision, with bounded ten-second status requests; uncertain or unsuccessful checks still skip. Keep raw heap snapshots local because they can contain run data. Internal rehearsal does not switch the live alias or close any human production gate.
+[RELEASE_READINESS.md](RELEASE_READINESS.md) records the corrected diagnostic, immutable previous-public-release exports and same-origin isolated rollback/recovery command. Production waits at most twenty minutes for the exact revision, with bounded ten-second status requests and thirty-second polling (at most forty requests); uncertain or unsuccessful checks still skip. Keep raw heap snapshots local because they can contain run data. Internal rehearsal does not switch the live alias or close any human production gate.

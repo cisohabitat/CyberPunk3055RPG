@@ -2,6 +2,7 @@ import { BUILD_CHECK, TEST_CHECK, productionDecision } from "./ci-gate.mjs";
 
 export const CI_DEADLINE_MS = 20 * 60_000;
 export const CHECK_REQUEST_MS = 10_000;
+export const CI_POLL_MS = 30_000;
 
 async function readChecks(url, signal) {
   const response = await fetch(url, {
@@ -23,7 +24,7 @@ export async function waitForProductionChecks({
   url, read = readChecks, now = Date.now,
   sleep = ms => new Promise(resolve => setTimeout(resolve, ms)),
   onWait = message => console.log(message),
-  deadlineMs = CI_DEADLINE_MS, requestMs = CHECK_REQUEST_MS, intervalMs = 10_000,
+  deadlineMs = CI_DEADLINE_MS, requestMs = CHECK_REQUEST_MS, intervalMs = CI_POLL_MS,
 }) {
   const deadline = now() + deadlineMs;
   const timeout = { exitCode: 0, message: "CI did not finish in time. Skipping the production deploy." };

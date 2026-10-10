@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
-import { CHECK_REQUEST_MS, CI_DEADLINE_MS, waitForProductionChecks } from "../scripts/ci-wait.mjs";
+import { CHECK_REQUEST_MS, CI_DEADLINE_MS, CI_POLL_MS, waitForProductionChecks } from "../scripts/ci-wait.mjs";
 
 const passing = ["Test", "Build"].map(name => ({ name, status: "completed", conclusion: "success" }));
 const url = "https://api.github.com/repos/owner/repo/commits/exact-sha/check-runs?per_page=100";
@@ -29,6 +29,15 @@ describe("bounded production CI wait", () => {
       read: async () => { requests++; return []; },
     });
     assert.equal(result.exitCode, 0); assert.equal(time, 25); assert.equal(requests, 3);
+  });
+
+  it("limits the complete twenty-minute wait to forty status requests", async () => {
+    let time = 0, requests = 0;
+    const result = await waitForProductionChecks({ url, now: () => time, onWait,
+      sleep: async ms => { time += ms; }, read: async () => { requests++; return []; },
+    });
+    assert.equal(result.exitCode, 0); assert.equal(time, CI_DEADLINE_MS);
+    assert.equal(CI_POLL_MS, 30_000); assert.equal(requests, 40);
   });
 
   it("rejects checks that arrive after the deadline", async () => {
