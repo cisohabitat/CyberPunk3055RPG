@@ -130,3 +130,73 @@ describe("specialist archive methods", () => {
     }
   });
 });
+
+
+describe("saved timeline and source stress test", () => {
+  const enter = () => step(step(inspect(), "reconstruct"), "assemble-timeline");
+  const arrange = (order: string[]) => order.reduce((state, id) => step(state, `place-${id}`), enter());
+  it("checks all six orders and persists partial drafts without allowing duplicate placement", () => {
+    for (const order of [["signature", "order", "roster"], ["signature", "roster", "order"], ["order", "signature", "roster"], ["order", "roster", "signature"], ["roster", "signature", "order"], ["roster", "order", "signature"]]) {
+      let state = step(enter(), `place-${order[0]}`);
+      state = importRun(exportRun(state));
+      assert.equal(state.flags[`memory_slot_1_${order[0]}`], true);
+      assert.throws(() => step(state, `place-${order[0]}`));
+      assert.throws(() => step(state, "test-timeline"));
+      for (const id of order.slice(1)) state = step(state, `place-${id}`);
+      state = step(state, "test-timeline");
+      assert.equal(Boolean(state.flags.memory_sequence_checked), order.join() === "signature,order,roster");
+      assert.equal(state.flags.order_verified, undefined);
+      if (!state.flags.memory_sequence_checked) {
+        state = step(state, "rebuild-timeline");
+        assert.equal(Boolean(state.flags.memory_sequence_ready), false);
+        for (const id of ["signature", "order", "roster"]) state = step(state, `place-${id}`);
+        state = step(state, "test-timeline");
+        assert.equal(state.flags.memory_sequence_error, true);
+        assert.match(state.journal.find((entry) => entry.id === "timeline-mismatch")!.text, new RegExp(order[0] === "signature" ? "The signature" : order[0] === "order" ? "The counter-order" : "The living witness"));
+        assert.ok(state.journal.some((entry) => entry.id === "timeline-checked"));
+        assert.equal(state.flags.memory_sequence_checked, true);
+      }
+    }
+  });
+  it("gates source placement on inspection even for an old save at the new scene", () => {
+    assert.throws(() => step({ ...base(), sceneId: "memory_sequence" }, "place-order"));
+    const state = step(step(enter(), "place-roster"), "reset-timeline");
+    assert.equal(Boolean(state.flags.memory_placed_roster), false);
+    assert.equal(state.creds, base().creds); assert.equal(state.strain, 0);
+  });
+  it("distinguishes unsupported, contradicted and supported claims across every verdict", () => {
+    for (const [model, answer] of [["absolution", "contradicted"], ["issuer", "unresolved"], ["bounded", "supported"]]) {
+      for (const verdict of ["supported", "contradicted", "unresolved"]) {
+        let state = step(step(step(arrange(["signature", "order", "roster"]), "test-timeline"), "choose-model"), `model-${model}`);
+        state = importRun(exportRun(step(state, `verdict-${verdict}`)));
+        assert.equal(Boolean(state.flags.memory_model_sound), answer === verdict);
+        assert.equal(state.journal.find((entry) => entry.id === "bench-verdict")?.kind, "claim");
+        assert.equal(state.flags.order_verified, undefined); assert.equal(state.flags.nia_public_consent, undefined);
+        state = step(state, answer === verdict ? "record-tested-account" : "revise-model");
+        assert.equal(state.journal.some((entry) => entry.id === "bench-verdict"), true);
+        if (answer !== verdict) assert.equal(state.journal.some((entry) => entry.id === "bench-correction"), true);
+        state = step(state, "label-unverified");
+        assert.equal(presentChoices({ ...state, sceneId: "memory_reconstruction" }, getScene("memory_reconstruction")).some((choice) => choice.id === "assemble-timeline"), false);
+      }
+    }
+  });
+  it("retains an unresolved chronology and carries a disputed model into a one-time district correction or repetition", () => {
+    let state = step(step(arrange(["roster", "order", "signature"]), "test-timeline"), "leave-sequence-open");
+    state = step(step(step(state, "model-absolution"), "verdict-supported"), "carry-disputed-model");
+    state = step(state, "label-unverified");
+    const disputed = { ...state, sceneId: "act2_public_response" };
+    assert.throws(() => step(disputed, "hold-public-account"));
+    for (const response of ["correct-bench-model", "repeat-bench-model"]) {
+      let answered = step(importRun(exportRun(disputed)), response);
+      assert.equal(answered.factions.wards, disputed.factions.wards - (response.startsWith("correct") ? 1 : 2));
+      assert.throws(() => step(answered, response));
+      answered = step(answered, "hold-public-account");
+      assert.equal(answered.flags.memory_response_done, true);
+      assert.equal(answered.flags.order_verified, undefined);
+      assert.equal(answered.flags.memory_sequence_unresolved, true);
+      assert.equal(answered.journal.some((entry) => entry.id === "bench-verdict"), true);
+      assert.match(sceneText(getScene("act3_records_visit"), answered), response.startsWith("correct") ? /correction stays/ : /withheld their name/);
+      assert.match(aftermath(answered).find((row) => row.title === "The bench interpretation")!.text, response.startsWith("correct") ? /correction remains/ : /withheld their name/);
+    }
+  });
+});

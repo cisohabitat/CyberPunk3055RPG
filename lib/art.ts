@@ -17,9 +17,11 @@ export const OPENING_ART: Illustration = {
   src: "/art/opening.jpg", small: "/art/opening-small.jpg", caption: "Kite City · before midnight",
   description: "An amber noodle stall shelters a rainy walkway beneath the city's immense dome.",
 };
+const MEMORY_BENCH: Illustration = { src: "/art/memory-bench.jpg", small: "/art/memory-bench-small.jpg", caption: "Glass Chapel · the inspection bench", description: "Three luminous glass slivers stand in a worn copper viewer beside an empty clinic chair." };
 const ENCOUNTERS: Record<string, Illustration> = {
   opening_city: OPENING_ART,
-  memory_table: { src: "/art/memory-bench.jpg", small: "/art/memory-bench-small.jpg", caption: "Glass Chapel · the inspection bench", description: "Three luminous glass slivers stand in a worn copper viewer beside an empty clinic chair." },
+  memory_table: MEMORY_BENCH,
+  memory_sequence: MEMORY_BENCH,
   act2_shelter_brief: { src: "/art/shelter.jpg", small: "/art/shelter-small.jpg", caption: "Ward Four · the shelter landing", description: "A passable ramp runs beside the shelter stair; bags, a chair and a bucket wait beside a leaking valve." },
   act2_freight_brief: { src: "/art/freight.jpg", small: "/art/freight-small.jpg", caption: "Canal gate · dispatch", description: "A closed, sealed diagnostic case rests under a lamp at a sheltered canal dispatch table." },
 };

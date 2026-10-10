@@ -1,4 +1,5 @@
 import { FRAGMENTS } from "../evidence";
+import { TIMELINE_FLAGS, memorySequence, sequenceCorrect, modelClaim, modelFeedback, modelVerdict } from "../memory-model";
 import type { GameState, Scene } from "../types";
 
 const ALL = FRAGMENTS.map((fragment) => fragment.flag);
@@ -19,12 +20,67 @@ export const MEMORY_SCENES: Record<string, Scene> = {
   },
   memory_reconstruction: {
     id: "memory_reconstruction", location: "Memory bench, Glass Chapel", speaker: "Mara", memory: true,
-    text: "02:13: Mara signs the flush. 02:16: the exported receipt cancels evacuation, retaining that flush. 02:19: the exit log records Nia leaving.\n\nMara says she expected the workers to be moved. Her signature is visible. The receipt's issuing key is not independently authenticated. The exit log tells you who may be able to speak; it does not tell you what she will say.\n\nWhich account will you carry out?",
+    text: "The viewer lets you arrange the three inspected fragments and test an account before labeling it. You can also ask Mara about her assurance, or carry a direct interpretation.\n\nMara says she expected the workers to be moved. Her signature is visible. The receipt's issuing key is not independently authenticated. The exit log tells you who may be able to speak; it does not tell you what she will say.\n\nWhich account will you carry out?",
     choices: [
+      { id: "assemble-timeline", label: "Reconstruct the hour on the timeline.", detail: "Arrange the inspected fragments, then test a claim against its source. Your draft survives a save.", requireAllFlags: ALL, hideIfFlag: "memory_model_tested", next: "memory_sequence" },
       { id: "question-mara", label: "Ask Mara what she actually knew before signing.", detail: "Question her assurance and its source. Testimony does not authenticate the later order.", hideIfFlag: "memory_examined", next: "memory_cross_exam" },
       { id: "separate-decisions", label: "Keep Mara's authorization and the later counter-order separate.", detail: "Neither decision cancels the other. The issuer still needs corroboration.", effects: { flags: ["memory_reconstructed"], journal: [{ id: "memory-analysis", text: "Mara authorized the flush before the recorded evacuation cancellation. The receipt's issuer needs independent corroboration; her explanation is not absolution.", kind: "claim" }] }, next: "memory_publication" },
       { id: "clear-mara", label: "The later order clears Mara of responsibility.", detail: "Test that interpretation against her signature.", effects: { flags: ["memory_theory_cleared"] }, next: "memory_challenge" },
       { id: "ignore-order", label: "Her signature is enough. Leave the counter-order out.", detail: "Test whether the account explains the canceled evacuation.", effects: { flags: ["memory_theory_omitted"] }, next: "memory_challenge" },
+    ],
+  },
+  memory_sequence: {
+    id: "memory_sequence", location: "Memory bench, Glass Chapel", speaker: "Mara", memory: true,
+    text: "The slivers lie outside the viewer. Set down the earliest event first, then the next, then the last. Open a source card if you need its timestamp.\n\nThe viewer checks the order you build, not who is guilty. Resetting changes only your draft. A correct timeline cannot authenticate the receipt or speak for Nia.",
+    choices: [
+      ...[FRAGMENTS[1], FRAGMENTS[2], FRAGMENTS[0]].map((fragment) => ({
+        id: `place-${fragment.id}`, label: `Place ${fragment.title.toLowerCase()} in the next slot.`,
+        requireAllFlags: ALL, hideIfFlag: `memory_placed_${fragment.id}`,
+        effects: (state: GameState) => {
+          const count = memorySequence(state).filter(Boolean).length;
+          return { flags: [`memory_placed_${fragment.id}`, `memory_slot_${count + 1}_${fragment.id}`, ...(count === 2 ? ["memory_sequence_ready"] : [])] };
+        }, next: "memory_sequence",
+      })),
+      { id: "reset-timeline", label: "Clear the draft timeline.", requireAnyFlag: FRAGMENTS.map(({ id }) => `memory_placed_${id}`), effects: { flagsOff: TIMELINE_FLAGS }, next: "memory_sequence" },
+      { id: "test-timeline", label: "Check this chronology against the timestamps.", requireAllFlags: [...ALL, "memory_sequence_ready"], effects: (state) => ({ flags: [sequenceCorrect(state) ? "memory_sequence_checked" : "memory_sequence_error"], flagsOff: sequenceCorrect(state) ? ["memory_sequence_unresolved"] : ["memory_sequence_checked"], journal: sequenceCorrect(state) ? [{ id: "timeline-checked", text: "The runner checked the draft chronology against the inspected timestamps: authorization, cancellation, exit. This ordering authenticates no issuer and supplies no witness permission.", kind: "claim" }] : state.journal.some((entry) => entry.id === "timeline-mismatch") ? [] : [{ id: "timeline-mismatch", text: `The first mismatched draft was ${memorySequence(state).map((fragment) => `${fragment?.title} (${fragment?.time})`).join(" → ")}. The viewer found a timestamp running backward. This preserves the attempt, not a historical finding.`, kind: "claim" }] }), next: "memory_sequence_result" },
+      { id: "leave-timeline", label: "Return to the account without testing a draft.", next: "memory_reconstruction" },
+    ],
+  },
+  memory_sequence_result: {
+    id: "memory_sequence_result", location: "Memory bench, Glass Chapel", speaker: "Mara", memory: true,
+    text: (state) => sequenceCorrect(state)
+      ? "The three timestamps align: authorization, cancellation, exit. The ordering shows separate decisions, not an acquittal.\n\nMara watches the empty chair. 'Now ask what your sentence claims. The hour can't answer every question you put to it.'"
+      : "The viewer marks a timestamp that runs backward. Your arrangement changes when a worker's exit appears to happen; the sources have not changed.\n\nYou can rebuild it, or record the chronology as unresolved. The mistaken draft stays in your history. No die roll can repair an inference.",
+    choices: [
+      { id: "rebuild-timeline", label: "Clear the slots and rebuild from the sources.", hideIfFlag: "memory_sequence_checked", effects: { flagsOff: TIMELINE_FLAGS }, next: "memory_sequence" },
+      { id: "choose-model", label: "Choose a claim to test.", requireFlag: "memory_sequence_checked", next: "memory_model" },
+      { id: "leave-sequence-open", label: "Record the chronology as unresolved. Test a claim separately.", hideIfFlag: "memory_sequence_checked", effects: { flags: ["memory_sequence_unresolved"], journal: [{ id: "timeline-limit", text: "The runner left the draft chronology unresolved after a timestamp mismatch. The source timestamps remain available.", kind: "claim" }] }, next: "memory_model" },
+    ],
+  },
+  memory_model: {
+    id: "memory_model", location: "Memory bench, Glass Chapel", speaker: "Mara", memory: true,
+    text: "Pick a sentence to stress-test. The next screen puts its relevant source beside it; decide whether that source supports, contradicts, or leaves the sentence unresolved.\n\nTesting an overreach is safe. Carrying a verdict that the source cannot support leaves a challenge attached to your account.",
+    choices: [
+      { id: "model-absolution", label: "Test whether the later order erases Mara's authorization.", effects: { flags: ["memory_model_absolution"] }, next: "memory_model_test" },
+      { id: "model-issuer", label: "Test whether the receipt independently authenticates its issuer.", effects: { flags: ["memory_model_issuer"] }, next: "memory_model_test" },
+      { id: "model-bounded", label: "Test whether the hour records two separate decisions.", effects: { flags: ["memory_model_bounded"] }, next: "memory_model_test" },
+    ],
+  },
+  memory_model_test: {
+    id: "memory_model_test", location: "Memory bench, Glass Chapel", speaker: "Mara", memory: true,
+    text: (state) => `Your claim: ${modelClaim(state)}\n\n${state.flags.memory_model_absolution ? FRAGMENTS[0].text : state.flags.memory_model_issuer ? FRAGMENTS[1].text : `${FRAGMENTS[0].text} ${FRAGMENTS[1].text}`}\n\nChoose a verdict for this claim. Unresolved means the available source cannot establish it; it does not mean the claim is false.`,
+    choices: ["supported", "contradicted", "unresolved"].map((verdict) => ({
+      id: `verdict-${verdict}`, label: `The claim is ${verdict}.`,
+      effects: (state: GameState) => ({ flags: ["memory_model_tested", `memory_verdict_${verdict}`, ...(modelVerdict(state) === verdict ? ["memory_model_sound"] : ["memory_model_mismatch"])], journal: [{ id: "bench-verdict", text: `The runner tested: ${modelClaim(state)} Their verdict was ${verdict}. This is an interpretation, not independent evidence.`, kind: "claim" as const }] }), next: "memory_model_result",
+    })),
+  },
+  memory_model_result: {
+    id: "memory_model_result", location: "Memory bench, Glass Chapel", speaker: "Sister Lumen", memory: true,
+    text: (state) => `${modelFeedback(state)}\n\n${state.flags.memory_model_sound ? 'Your verdict matches what the available sources can establish. Lumen keeps the limits beside the sentence.' : 'Your verdict does not match the source. Lumen will attach that challenge if you carry it forward. Revising keeps both the first verdict and the correction.'}\n\nNia has still given no account or permission. The next step chooses a packet label, then custody.`,
+    choices: [
+      { id: "record-tested-account", label: "Carry a bounded account with its source limits.", requireFlag: "memory_model_sound", effects: { flags: ["memory_reconstructed"], journal: [{ id: "memory-analysis", text: "The tested account keeps authorization and cancellation separate, with prior knowledge, issuer authentication and witness permission unresolved.", kind: "claim" }] }, next: "memory_publication" },
+      { id: "revise-model", label: "Revise the verdict. Keep the first attempt beside the correction.", requireFlag: "memory_model_mismatch", effects: { flags: ["memory_reconstructed", "memory_model_corrected"], journal: [{ id: "bench-correction", text: "The runner corrected the bench verdict: authorization and cancellation remain separate; issuer authentication and witness permission require other sources. The first verdict is retained.", kind: "claim" }] }, next: "memory_publication" },
+      { id: "carry-disputed-model", label: "Carry my verdict with Lumen's challenge attached.", detail: "The district will ask you to answer the disputed interpretation. No evidence is authenticated.", requireFlag: "memory_model_mismatch", effects: { flags: ["memory_reconstructed", "memory_model_contested", "memory_model_pending"], journal: [{ id: "bench-challenge", text: "Lumen disputed the runner's verdict. The challenge travels beside the original interpretation and does not change the sources.", kind: "claim" }] }, next: "memory_publication" },
     ],
   },
   memory_challenge: {

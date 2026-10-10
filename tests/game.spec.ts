@@ -994,3 +994,42 @@ for (const hub of ["ward_wall", "act3_neighborhood"]) test(`Spire late payroll r
     expect(run.flags.edda_shift_paid).toBe(true); expect(run.flags.edda_exposed).toBe(true); expect(run.flags.old_badge_traced).toBe(true); expect(run.flags.edda_public_consent).toBeUndefined();
   }
 });
+
+for (const [width, textOnly] of [[1440, false], [390, false], [320, true]] as const) test(`playable memory timeline saves source tests at ${width}px`, async ({ page }) => {
+  await page.setViewportSize({ width, height: width < 700 ? 844 : 900 });
+  await page.addInitScript((none) => localStorage.setItem("saint-shard-preferences", JSON.stringify(none ? { artwork: "none", textStep: 2, contrast: "high" } : {})), textOnly);
+  const artwork: string[] = []; page.on("request", (request) => { if (request.url().includes("/art/")) artwork.push(request.url()); });
+  await openRun(page, fixture("memory_reconstruction", { flags: { heard_memo: true, memory_signature: true, memory_order: true, memory_roster: true } }));
+  await page.getByTestId("choice-assemble-timeline").click();
+  await expect(page.getByTestId("goal")).toBeInViewport();
+  if (textOnly) await expect(page.getByTestId("scene-illustration")).toHaveCount(0);
+  else expect(await page.getByTestId("scene-illustration").locator("img").evaluate((img: HTMLImageElement) => img.decode().then(() => img.naturalWidth))).toBeGreaterThan(0);
+  await page.getByTestId("memory-workspace").getByText("The signature · available", { exact: true }).focus(); await page.keyboard.press("Enter");
+  await expect(page.getByTestId("memory-workspace")).toContainText("02:13");
+  expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations).toEqual([]);
+  await page.getByTestId("choice-place-signature").focus(); await page.keyboard.press("Enter");
+  await expect(page.locator("#timeline-source-signature")).toBeFocused();
+  await page.reload(); await page.getByTestId("continue-run").click();
+  await expect(page.getByTestId("draft-timeline").locator("li").first()).toContainText("The signature");
+  await expect(page.getByTestId("choice-place-signature")).toHaveCount(0);
+  await expect(page.getByTestId("choice-test-timeline")).toHaveCount(0);
+  for (const id of ["place-order", "place-roster", "test-timeline", "choose-model", "model-issuer", "verdict-unresolved", "record-tested-account", "label-unverified"]) await page.getByTestId(`choice-${id}`).click();
+  const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(run.flags.memory_sequence_checked).toBe(true); expect(run.flags.memory_model_sound).toBe(true);
+  expect(run.flags.order_verified).toBeUndefined(); expect(run.flags.nia_public_consent).toBeUndefined(); expect(run.creds).toBe(fixture().creds);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  if (textOnly) expect(artwork).toEqual([]);
+  expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations).toEqual([]);
+});
+test("memory timeline recovers a mismatch and retains a disputed verdict after reload", async ({ page }) => {
+  await openRun(page, fixture("memory_sequence", { flags: { heard_memo: true, memory_signature: true, memory_order: true, memory_roster: true } }));
+  for (const id of ["place-roster", "place-order", "place-signature", "test-timeline"]) await page.getByTestId(`choice-${id}`).click();
+  await expect(page.getByTestId("choice-choose-model")).toHaveCount(0);
+  for (const id of ["rebuild-timeline", "place-signature", "place-order", "place-roster", "test-timeline", "choose-model", "model-absolution", "verdict-supported", "carry-disputed-model", "label-unverified", "seal-full"]) await page.getByTestId(`choice-${id}`).click();
+  await page.reload(); await page.getByTestId("continue-run").click();
+  const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(run.flags.memory_sequence_error).toBe(true); expect(run.flags.memory_sequence_checked).toBe(true);
+  expect(run.flags.memory_model_pending).toBe(true); expect(run.flags.order_verified).toBeUndefined();
+  expect(run.journal.some((entry: {id: string}) => entry.id === "bench-challenge")).toBe(true);
+  expect(run.sceneId).toBe("kerr");
+});

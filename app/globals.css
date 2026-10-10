@@ -938,3 +938,11 @@ html[data-contrast="high"] .title-intro { background: #09080d; }
 .codex-chapter { margin-top: 1.2rem; }
 .codex-chapter h3 { font-size: 1rem; }
 .codex-chapter .unseen { text-transform: none; }
+
+.memory-workspace h2 { font-size: 1.15em; margin: 0; }
+.memory-workspace .memory-header { flex-wrap: wrap; gap: .7rem; }
+.memory-workspace .memory-timeline p { margin: .4rem 0; overflow-wrap: anywhere; }
+.memory-source-bank { display: grid; gap: .65rem; }
+.memory-source-card { min-width: 0; padding: .8rem; border: 1px solid var(--line); border-radius: .4rem; }
+.memory-source-card button { width: 100%; margin-top: .5rem; text-align: left; }
+.memory-source-bank summary { cursor: pointer; min-height: 2rem; overflow-wrap: anywhere; }

@@ -1,7 +1,7 @@
 import { journalKind, journalTitle } from "./journal";
 import type { GameState } from "./types";
 
-const SOURCES = new Set(["memory-signature", "memory-order", "memory-roster", "mara-assurance", "mara-channel", "memory-analysis", "public-packet", "packet-correction", "archive-method", "verified-order", "archive-gap", "archive-custody", "nia-account", "wall-account"]);
+const SOURCES = new Set(["timeline-mismatch", "timeline-checked", "timeline-limit", "bench-verdict", "bench-challenge", "bench-correction", "bench-repeat", "memory-signature", "memory-order", "memory-roster", "mara-assurance", "mara-channel", "memory-analysis", "public-packet", "packet-correction", "archive-method", "verified-order", "archive-gap", "archive-custody", "nia-account", "wall-account"]);
 
 // Only show records the player has acquired. Keep the source text and its kind.
 export function sourceLedger(state: GameState) {

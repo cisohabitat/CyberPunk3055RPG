@@ -9,14 +9,19 @@
       "memory_publication",
       "memory_cross_exam",
       "memory_assurance",
-      "memory_channel"
+      "memory_channel",
+      "memory_sequence",
+      "memory_sequence_result",
+      "memory_model",
+      "memory_model_test",
+      "memory_model_result"
     ],
     "laterScenes": [
       "act2_public_response",
       "act3_records_visit"
     ],
     "priority": "P1",
-    "finding": "Optional questions now attribute her assurance and unnamed relay separately. Human editing and comprehension review remain open.",
+    "finding": "A saved playable chronology and claim/source stress test now retain wrong attempts, corrections and disputed verdicts. District trust and later records reflect repetition separately from corroboration. Blind comprehension, challenge and pacing review remain open.",
     "truth": "A signature establishes authorization; Mara\u2019s explanation is testimony; an exported issuing key needs an independent test."
   },
   {

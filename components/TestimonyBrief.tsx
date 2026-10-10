@@ -2,7 +2,7 @@ import { testimonyPacket } from "@/lib/testimony";
 import { sourceLedger, sourceReadiness } from "@/lib/source-ledger";
 import type { GameState } from "@/lib/types";
 
-const COMPARISON_SCENES = new Set(["memory_reconstruction", "memory_publication", "act2_archive_compare", "act2_public_response", "act3_records_visit"]);
+const COMPARISON_SCENES = new Set(["memory_sequence", "memory_sequence_result", "memory_model", "memory_model_test", "memory_model_result", "memory_reconstruction", "memory_publication", "act2_archive_compare", "act2_public_response", "act3_records_visit"]);
 export function TestimonyBrief({ state }: { state: GameState }) {
   const publicAccount = state.sceneId.startsWith("act3_testimony_");
   if (!publicAccount && !COMPARISON_SCENES.has(state.sceneId)) return null;

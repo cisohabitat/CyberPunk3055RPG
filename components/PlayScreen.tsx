@@ -15,6 +15,7 @@ import { rememberEnding } from "@/lib/storage";
 import type { Preferences } from "@/lib/preferences";
 import { ObjectiveBrief } from "./ObjectiveBrief";
 import { unresolvedPromises } from "@/lib/objectives";
+import { MemoryTimeline } from "./MemoryTimeline";
 import { MemoryPlate } from "./MemoryPlate";
 import { FieldKitBrief } from "./FieldKitBrief";
 import { TestimonyBrief } from "./TestimonyBrief";
@@ -289,12 +290,14 @@ export function PlayScreen({
                 </button>
               </div>
             )}
+            {scene.id === "memory_sequence" && <MemoryTimeline state={state} choices={choices} onPlace={pick} />}
             {scene.finale && <section className="aftermath" aria-label="What your choices changed"><h2>What remains</h2>{aftermath(state).map((row) => <section key={row.title}><h3>{row.title}</h3><p>{row.text}</p></section>)}</section>}
             {fault && <p className="form-error">{fault}</p>}
             {choices.length > 0 && (
               <div className={scene.id === "districts" ? "choices cards" : "choices"} id="choices" tabIndex={-1}>
                 {choices.map((choice, index) => {
                   if (scene.memory && choice.id.startsWith("inspect-")) return null;
+                  if (scene.id === "memory_sequence" && choice.id.startsWith("place-")) return null;
                   const odds = choice.check ? previewCheck(state, choice.check) : null;
                   const chance = !odds ? null : odds.hits === 10 ? "certain" : odds.hits === 0 ? "no chance" : `${odds.hits} in 10`;
                   return (

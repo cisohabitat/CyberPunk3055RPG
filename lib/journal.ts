@@ -24,6 +24,13 @@ export function journalEntry(item: string | JournalEntry): JournalEntry {
 }
 
 export const JOURNAL_TITLES: Record<string, string> = {
+  "timeline-mismatch": "The first timeline mismatch",
+  "timeline-checked": "Timestamp comparison",
+  "timeline-limit": "Unresolved timeline draft",
+  "bench-verdict": "The runner’s tested verdict",
+  "bench-challenge": "Lumen’s source challenge",
+  "bench-correction": "The bench verdict correction",
+  "bench-repeat": "The repeated bench verdict",
   "spire-promise": "Edda’s key-retirement terms",
   "spire-billing": "Two billing numbers",
   "spire-protocol": "Both-store retirement protocol",

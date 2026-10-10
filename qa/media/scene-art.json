@@ -12,9 +12,10 @@
     {
       "treatment": "illustration",
       "asset": "/art/memory-bench.jpg",
-      "reason": "Establish the three-fragment inspection workspace without disclosing what the sources prove.",
+      "reason": "Reuse the three-fragment viewer for the playable timeline in the same inspection workspace. The neutral plate shows neither a completed chronology nor an authenticated source.",
       "scenes": [
-        "memory_table"
+        "memory_table",
+        "memory_sequence"
       ]
     },
     {
@@ -142,7 +143,7 @@
     {
       "treatment": "portrait",
       "asset": "/art/quill.jpg",
-      "reason": "Reuse Quill’s existing portrait for briefing, memory ownership questions and recurring street work. The counter remains the same place; no new setting plate is needed. His portrait does not reveal the buyer, memo contents or an accepted contract.",
+      "reason": "Reuse Quill\u2019s existing portrait for briefing, memory ownership questions and recurring street work. The counter remains the same place; no new setting plate is needed. His portrait does not reveal the buyer, memo contents or an accepted contract.",
       "scenes": [
         "stall",
         "pay",
@@ -177,7 +178,7 @@
     {
       "treatment": "portrait",
       "asset": "/art/lumen.jpg",
-      "reason": "Use Lumen’s established portrait for clinic, care, source and dispatch conversations. Her presence identifies the recurring speaker; no art claims treatment, witness safety or completed repair.",
+      "reason": "Use Lumen\u2019s established portrait for clinic, care, source and dispatch conversations. Her presence identifies the recurring speaker; no art claims treatment, witness safety or completed repair.",
       "scenes": [
         "lumen",
         "lumen_deal",
@@ -203,13 +204,14 @@
         "act3_notice_repair",
         "act3_notice_result",
         "act2_witness_plan",
-        "act2_witness_repair"
+        "act2_witness_repair",
+        "memory_model_result"
       ]
     },
     {
       "treatment": "portrait",
       "asset": "/art/mara.jpg",
-      "reason": "Reuse Mara’s established portrait while the memo and memory interpretation unfold. New source details belong to interactive inspection and prose, not an image that predetermines the interpretation.",
+      "reason": "Reuse Mara\u2019s established portrait while the memo and memory interpretation unfold. New source details belong to interactive inspection and prose, not an image that predetermines the interpretation.",
       "scenes": [
         "memo",
         "mara_why",
@@ -218,13 +220,16 @@
         "memory_challenge",
         "memory_cross_exam",
         "memory_assurance",
-        "memory_channel"
+        "memory_channel",
+        "memory_sequence_result",
+        "memory_model",
+        "memory_model_test"
       ]
     },
     {
       "treatment": "portrait",
       "asset": "/art/kerr.jpg",
-      "reason": "Reuse Kerr’s established portrait for confrontation, checkpoint and repair guidance. It depicts no rolled outcome, injury or successful repair.",
+      "reason": "Reuse Kerr\u2019s established portrait for confrontation, checkpoint and repair guidance. It depicts no rolled outcome, injury or successful repair.",
       "scenes": [
         "kerr",
         "kerr_fight",
@@ -280,7 +285,7 @@
     {
       "treatment": "portrait",
       "asset": "/art/nia.jpg",
-      "reason": "Reuse Nia’s distinct portrait for private terms, review and contact. Never depict or expose a current address, moved witness or permission not present in the state.",
+      "reason": "Reuse Nia\u2019s distinct portrait for private terms, review and contact. Never depict or expose a current address, moved witness or permission not present in the state.",
       "scenes": [
         "act3_testimony_nia",
         "act2_witness_brief",

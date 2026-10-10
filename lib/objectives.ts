@@ -63,6 +63,10 @@ export function nextStep(state: GameState): string {
   if (state.sceneId === "act3_nia_contact") return "Nia chooses whether to answer future questions. Contact permission changes no testimony or public consent.";
   if (state.sceneId.startsWith("act2_notice_")) return "Separate public routing from private homes. Choose a channel; a dispatch receipt guarantees no attendance.";
   if (["memory_cross_exam", "memory_assurance", "memory_channel"].includes(state.sceneId)) return "Ask what Mara knew and who supplied her assurance. Attribute her answers; no testimony becomes an independent issuing-key test.";
+  if (state.sceneId === "memory_sequence") return "Place the inspected fragments from earliest to latest, consulting source timestamps. Your draft is saved; reset changes no evidence.";
+  if (state.sceneId === "memory_sequence_result") return "Check the timestamp feedback. Rebuild a mismatch or retain the chronology as unresolved.";
+  if (state.sceneId.startsWith("memory_model")) return "Test a claim against its source. Support, contradiction and missing authentication are different findings; retain any correction.";
+  if (state.sceneId === "act2_public_response" && state.flags.memory_model_pending) return "Answer the disputed bench verdict before responding to the packet’s source challenge.";
   if (state.sceneId === "memory_table") {
     const count = ["memory_signature", "memory_order", "memory_roster"].filter((flag) => state.flags[flag]).length;
     return count < 3 ? `Inspect the remaining ${3 - count} ${3 - count === 1 ? "fragment" : "fragments"}, then compare their decisions.` : state.flags.memory_prepared ? "Choose an archive, a redacted roster, or a witness chain. Each opens a different responsibility next week." : "Compare the signature and the later order, then label what the packet can prove.";
