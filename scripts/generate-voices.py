@@ -13,9 +13,13 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--model', required=True)
 parser.add_argument('--voices', required=True)
 parser.add_argument('--masters', default='/workspace/generated_audio')
+parser.add_argument('--only', nargs='+', help='Generate only these authored line ids; leave other delivery clips intact')
 args = parser.parse_args()
 root = pathlib.Path(__file__).resolve().parent.parent
 lines = json.loads((root / 'qa/media/voice-lines.json').read_text())
+if args.only:
+    assert set(args.only) <= {line['id'] for line in lines}, 'Unknown authored line id'
+    lines = [line for line in lines if line['id'] in args.only]
 provenance = root / 'qa/media/voice-provenance.json'
 if provenance.exists():
     expected = {file['name']: file['sha256'] for file in json.loads(provenance.read_text())['model']['files']}

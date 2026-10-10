@@ -1,3 +1,4 @@
+import { responseChoice } from "./character-arcs";
 import { kerrCollectionChoice } from "./relationships";
 import { GOAL_WEEK } from "./goal";
 import type { GameState, Scene } from "../types";
@@ -455,6 +456,7 @@ export const ACT2_SCENES: Record<string, Scene> = {
     location: "The dry canal",
     text: middleText,
     choices: [
+      responseChoice,
       kerrCollectionChoice,
       { id: "help-clinic-notice", label: "Help Lumen settle a clinic distribution notice.", requireFlag: "memory_prepared", hideIfFlag: "notice_done", next: "act2_notice_brief" },
       { id: "help-clinic-pump", label: "Answer the clinic’s coolant emergency.", detail: "One repair attempt, then a cold-storage fallback. Today’s relay supplies no evidence about the old dump.", requireFlag: "memory_prepared", hideIfAnyFlag: ["pump_done", "act2_done"], next: (state) => state.flags.pump_restored ? "act2_pump_report" : state.flags.pump_failed ? "act2_pump_triage" : "act2_pump_brief" },

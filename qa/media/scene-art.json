@@ -348,6 +348,38 @@
         "act3_quill_introduction"
       ],
       "reason": "Existing Quill portrait accompanies the depot recommendation and late repayment conversation; the original refusal remains recorded."
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/clinic-conversation.jpg",
+      "reason": "A neutral voluntary clinic table establishes current conversation and later receipt without depicting endorsement, public consent, medical improvement or an inquiry decision.",
+      "scenes": [
+        "act2_response_invitation",
+        "act2_response_agenda",
+        "act3_response_visit"
+      ]
+    },
+    {
+      "treatment": "portrait",
+      "asset": "/art/mara.jpg",
+      "reason": "Existing Mara portrait accompanies her present-day choices, refusal, personal hope and unfinished inquiry; it does not depict an acquired treatment result or absolution.",
+      "scenes": [
+        "act2_response_refusal",
+        "act2_response_terms",
+        "act2_mara_quiet",
+        "act2_response_dispatch",
+        "act2_response_receipt",
+        "act3_mara_followup"
+      ]
+    },
+    {
+      "treatment": "portrait",
+      "asset": "/art/lumen.jpg",
+      "reason": "Existing Lumen portrait accompanies ordinary care and her independently chosen contact limits, without implying clinic endorsement or public permission.",
+      "scenes": [
+        "act2_lumen_quiet",
+        "act3_lumen_boundary"
+      ]
     }
   ]
 }

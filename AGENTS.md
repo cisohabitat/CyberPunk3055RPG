@@ -104,7 +104,7 @@ Use `npm run story:report -- story-report.json` to inspect the graph and 900 see
 
 The deterministic score generator runs automatically before development, tests, and production builds. The chapel and ward beds and memory cue are generated assets; keep their source in `scripts/generate-audio.mjs`.
 
-The six-phase status and remaining production milestones are tracked in [docs/ROADMAP.md](docs/ROADMAP.md). The candidate contains 160 scenes and 453 choices; retain all four original finales.
+The six-phase status and remaining production milestones are tracked in [docs/ROADMAP.md](docs/ROADMAP.md). The candidate contains 171 scenes and 477 choices; retain all four original finales.
 
 This review adds a compact commitments panel, contextual next steps, and warnings on week-closing choices when a memory promise remains open. The memory bench places inspection controls in each fragment row and expands inspected source details on request. Archive preservation alone is not independent verification; exposed-location testimony can corroborate an order without protecting its witness. Motion and reading pace are independent settings. Story shortcuts ignore key repeats and focus inside the character sheet. Manual slots reject invalid date metadata. See [the current review and grade](docs/REVIEW.md).
 
@@ -164,7 +164,7 @@ After a signed extraction or named source exposes Edda and suspends her archive 
 
 A successful Spire old-key favor supplies an earned closure receipt. Otherwise reconcile the payroll ledger (Chrome DC 9), negotiate a supervised assignment (Face DC 8; Helion standing 2 adds +1), fund a sixty-creds worker-representation appointment, or leave the signed request pending. There is one desk attempt. Successful assistance secures one paid bench assignment while archive access remains suspended and the records inquiry continues. A failed check leaves the application pending; representation guarantees an appointment, not a wage or inquiry decision. Record the actual reply before returning to the neighborhood. The earlier forty-creds bridge is separate and stays spent.
 
-The commitments panel and journal distinguish an open application, temporary paid work, and unresolved review. The ending preserves exposure and the inquiry alongside the actual payroll response. New scenes live in `lib/story/employment.ts`; four full-campaign replay fixtures assert resources, permission, and outcomes through saved checkpoints. The current graph contains 160 scenes / 453 choices. All four original finales, base-stat and strain caps, 1d10, save version 2, and `saint-shard-3055-v1` remain unchanged.
+The commitments panel and journal distinguish an open application, temporary paid work, and unresolved review. The ending preserves exposure and the inquiry alongside the actual payroll response. New scenes live in `lib/story/employment.ts`; four full-campaign replay fixtures assert resources, permission, and outcomes through saved checkpoints. The current graph contains 171 scenes / 477 choices. All four original finales, base-stat and strain caps, 1d10, save version 2, and `saint-shard-3055-v1` remain unchanged.
 
 
 ### Six-phase production implementation
@@ -252,3 +252,12 @@ The Week’s dry canal offers Kerr’s optional personal brace collection. Accep
 A failed approach allows a twenty-creds registered courier or an unresolved held case, without another roll. Entry registration persists through an anonymous exit. A separate observed handover completes delivery, which supplies no treatment, evidence or witness permission. At the final arrival, Kerr responds to actual terms; acknowledgement of a breach keeps the trace and opens one personal question, while denial closes contact. Quill has a separate later response. The cast sheet derives conduct from recorded choices and retains Kerr’s earlier betrayal. All four finales append these outcomes. Twelve scenes have explicit art decisions, including a neutral canal dispatch illustration and existing conversation portraits; text-only mode omits the artwork.
 
 See [the execution and following-cycle plan](docs/RELATIONSHIP_SLICE.md). Sixty-eight full-campaign replay fixtures cover all four original finales and ten new relationship routes. Keep version 2, `saint-shard-3055-v1`, original choice ids, pending dice, 1d10 and stat/strain caps unchanged. Independent production acceptance and the 9+ target remain open.
+
+
+### Mara’s current reply and Lumen’s own terms
+
+At the Week’s dry canal, runners who heard the memo can visit Mara’s voluntary present-day conversation. Her new statement is separate from the recorded hour: she wants her own name on a private reply to the Ward Nine records desk. She refuses public release this week; Lumen refuses clinic sponsorship regardless of faction standing. Revise a refused proposal to private terms or leave it pending; refusal stays recorded. One optional quiet question can go to Mara or Lumen. Dispatch by walking (one strain) or courier (fifteen creds), or defer with terms saved. Costs cannot repeat.
+
+A later visit records the desk’s intake into an unanswered queue, not an inquiry finding. Lumen chooses private desk contact without automatic quotation, endorsement or partnership; earlier betrayal remains. All four finales open their aftermath with a distinct character beat and retain the factual recap. A neutral clinic conversation illustration accompanies the room’s introductions; other steps use fitting existing portraits. Two additional fixed synthetic quiet lines offer explicit Listen/Stop, using the existing optional voice mixer. They are generated offline; models and speech services never ship. The authoring generator supports `--only` to preserve existing clips.
+
+See [the phased execution and following production work](docs/CHARACTER_ARCS.md) and [prepared fresh-player protocol](docs/CHARACTER_PLAYTEST.md). The protocol and blank local observation worksheet are preparation; independent sessions have not been performed. Preserve all original routes, 1d10 and caps, version 2 and `saint-shard-3055-v1`, recorded dice, evidence and consent. The 9+ target and six human acceptance gates remain open.

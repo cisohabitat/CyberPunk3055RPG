@@ -24,6 +24,14 @@ export function journalEntry(item: string | JournalEntry): JournalEntry {
 }
 
 export const JOURNAL_TITLES: Record<string, string> = {
+  "mara-response-terms": "Mara’s current private terms",
+  "response-public-refusal": "Mara’s refusal of public release",
+  "response-clinic-refusal": "Lumen’s refusal of endorsement",
+  "mara-tomorrow": "The morning Mara hopes for",
+  "lumen-staying": "Why Lumen stays",
+  "mara-response-dispatch": "The private dispatch stub",
+  "mara-response-intake": "The unanswered records queue",
+  "lumen-contact-limit": "Lumen’s own contact terms",
   "kerr-collection-promise": "Kerr’s collection terms",
   "kerr-itinerary": "The committed depot route",
   "kerr-collection-outcome": "The observed collection outcome",

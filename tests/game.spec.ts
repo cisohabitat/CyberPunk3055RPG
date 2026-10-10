@@ -1167,3 +1167,27 @@ test("Kerr failed collection preserves registration and refusal of further conta
   const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
   expect(run.flags.kerr_route_trace).toBe(true); expect(run.flags.kerr_route_denied).toBe(true); expect(run.flags.kerr_route_delivered).toBe(true);
 });
+
+for (const [width,textOnly] of [[390,false],[1440,false],[320,true]] as const) test(`present-day response refusals, private dispatch and finale at ${width}px`,async({page})=>{
+ await page.setViewportSize({width,height:width<700?844:900});
+ await page.addInitScript(none=>localStorage.setItem("saint-shard-preferences",JSON.stringify({reading:"all",motion:"reduce",...(none?{artwork:"none",textStep:2,contrast:"high"}:{})})),textOnly);
+ const art:string[]=[];page.on("request",r=>{if(r.url().includes("/art/"))art.push(r.url())});
+ await openRun(page,fixture("act2_middle",{creds:15,strain:0,flags:{heard_memo:true,met_mara:true}}));
+ await page.getByTestId("choice-hear-mara-response").click();await expect(page.getByTestId("goal")).toBeInViewport();await expect(page.getByTestId("scene-text")).toContainText("her voice now");
+ if(textOnly)await expect(page.getByTestId("scene-illustration")).toHaveCount(0);else expect(await page.getByTestId("scene-illustration").locator("img").evaluate((x:HTMLImageElement)=>x.decode().then(()=>x.naturalWidth))).toBeGreaterThan(0);
+ for(const id of ["listen-response-terms","propose-public-response"])await page.getByTestId(`choice-${id}`).click();await page.reload();await page.getByTestId("continue-run").click();
+ await expect(page.getByTestId("scene-text")).toContainText("Not the board");await page.getByTestId("choice-revise-private-response").focus();await page.keyboard.press("Enter");
+ expect((await new AxeBuilder({page}).withTags(["wcag2a","wcag2aa","wcag21aa"]).analyze()).violations).toEqual([]);
+ for(const id of ["ask-mara-tomorrow","keep-mara-quiet-answer","defer-private-response","hear-mara-response","courier-private-response"])await page.getByTestId(`choice-${id}`).click();
+ await page.reload();await page.getByTestId("continue-run").click();await expect(page.getByTestId("creds")).toContainText("0");await expect(page.getByTestId("choice-courier-private-response")).toHaveCount(0);
+ const dispatched=await page.evaluate(()=>JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));expect(dispatched.flags.response_received).toBeUndefined();expect(dispatched.flags.response_public_refused).toBe(true);
+ for(const id of ["record-response-dispatch","stand","back-to-board","to-the-wall","to-ward-nine","face-sera","visit-mara-response","read-response-intake","finish-mara-response","visit-lumen-boundary","respect-lumen-boundary","leave-wall"])await page.getByTestId(`choice-${id}`).click();
+ await expect(page.getByTestId("relationship-coda")).toContainText("Mara’s cup");await expect(page.locator(".aftermath")).toContainText("unanswered queue");expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+ const run=await page.evaluate(()=>JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));expect(run.flags.response_received).toBe(true);expect(run.flags.order_verified).toBeUndefined();expect(run.flags.nia_public_consent).toBeUndefined();if(textOnly)expect(art).toEqual([]);
+});
+for(const [scene,speaker] of [["act2_mara_quiet","Mara"],["act2_lumen_quiet","Sister Lumen"]]) test(`current quiet dialogue is explicit and stops on departure: ${speaker}`,async({page})=>{
+ await page.addInitScript(()=>localStorage.setItem("saint-shard-preferences",JSON.stringify({reading:"all",sound:true})));
+ await openRun(page,fixture(scene,{flags:{heard_memo:true,response_started:true,response_private_consent:true}}));
+ const line=page.getByTestId("voice-line");await expect(line).toContainText("synthetic");await line.getByRole("button",{name:`Listen to ${speaker === "Sister Lumen" ? "Lumen" : speaker}`}).click();await expect(line).toContainText("Playing selected dialogue");
+ await page.getByTestId(`choice-${speaker==="Mara"?"keep-mara-quiet-answer":"keep-lumen-quiet-answer"}`).click();await expect(line).toHaveCount(0);
+});

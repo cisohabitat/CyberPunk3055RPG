@@ -24,6 +24,7 @@ import { FieldKitBrief } from "./FieldKitBrief";
 import { TestimonyBrief } from "./TestimonyBrief";
 import { ArchiveBrief } from "./ArchiveBrief";
 import { TransferBrief } from "./TransferBrief";
+import { relationshipCoda } from "@/lib/relationships";
 import { aftermath, memoryDisposition } from "@/lib/evidence";
 import { endingCoda } from "@/lib/story";
 import { speakerRole } from "@/lib/story/cast";
@@ -303,6 +304,7 @@ export function PlayScreen({
             {dialogue && <VoiceLine key={`${scene.id}-${dialogue.id}`} line={dialogue} enabled={sound && preferences.voices > 0 && !modalOpen && !sheetOpen && !confirmAbandon && !activeChoice} />}
             {scene.id === "memory_sequence" && <MemoryTimeline state={state} choices={choices} onPlace={pick} artwork={preferences.artwork !== "none"} reducedMotion={reduceMotion} />}
             {["act2_route_map", "act2_route_exit", "act2_route_review", "act2_route_crossing"].includes(scene.id) && <RouteBoard state={state} />}
+            {scene.finale && relationshipCoda(state) && <p className="relationship-coda" data-testid="relationship-coda">{relationshipCoda(state)}</p>}
             {scene.finale && <section className="aftermath" aria-label="What your choices changed"><h2>What remains</h2>{aftermath(state).map((row) => <section key={row.title}><h3>{row.title}</h3><p>{row.text}</p></section>)}</section>}
             {fault && <p className="form-error">{fault}</p>}
             {choices.length > 0 && (
@@ -331,7 +333,7 @@ export function PlayScreen({
                           [
                             odds ? `${STAT_INFO[odds.stat].name} · DC ${odds.dc} · ${chance}` : null,
                             choice.detail,
-                            openPromises.length && [choice.next, choice.nextSuccess, choice.nextFail].some((next) => typeof next === "string" && ["ending_week_wards", "ending_week_deal", "ending_exposed"].includes(next)) ? `${openPromises.length} ${state.flags.kerr_route_promised ? "campaign" : "memory"} ${openPromises.length === 1 ? "promise remains" : "promises remain"} unresolved if the week closes` : null,
+                            openPromises.length && [choice.next, choice.nextSuccess, choice.nextFail].some((next) => typeof next === "string" && ["ending_week_wards", "ending_week_deal", "ending_exposed"].includes(next)) ? `${openPromises.length} ${(state.flags.kerr_route_promised || state.flags.response_private_consent) ? "campaign" : "memory"} ${openPromises.length === 1 ? "promise remains" : "promises remain"} unresolved if the week closes` : null,
                             effectPreview(state, choice).join(" · ") || null,
                             checkResourceCosts(state, choice).join("; ") || null,
                           ]

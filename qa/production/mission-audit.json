@@ -178,5 +178,27 @@
     "priority": "P1",
     "finding": "Two saved crossings commit distinct fees, physical effort and recipient registration. Four skill approaches, unrepeated failure recovery and observed receipt feed delayed acknowledgement or denial; conduct retains earlier betrayal. Independent relationship writing and player comprehension review remain open.",
     "truth": "Planning, departure, recipient registration, collection, observed handover and a hoped-for walk remain distinct. Later acknowledgement cannot erase disclosure, and equipment supplies no treatment outcome or historical proof."
+  },
+  {
+    "id": "current-response",
+    "title": "Mara’s current reply and Lumen’s own terms",
+    "scenes": [
+      "act2_response_invitation",
+      "act2_response_agenda",
+      "act2_response_refusal",
+      "act2_response_terms",
+      "act2_mara_quiet",
+      "act2_lumen_quiet",
+      "act2_response_dispatch",
+      "act2_response_receipt"
+    ],
+    "laterScenes": [
+      "act3_response_visit",
+      "act3_mara_followup",
+      "act3_lumen_boundary"
+    ],
+    "priority": "P1",
+    "finding": "Present-day negotiation retains character refusals, one quiet question, dispatch costs and delayed intake. Refusal is independent of faction standing; revising a proposal does not delete it. Independent agency and pacing review remain open.",
+    "truth": "A current statement differs from a recorded hour. Private authorship, hosting, dispatch, receipt, endorsement, public permission and inquiry decisions are separate."
   }
 ]

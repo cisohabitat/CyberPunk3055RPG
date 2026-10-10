@@ -403,6 +403,33 @@
           "sha256": "f840fc94854a7440b9a94aa09ebf3d51e8614c2b1566595c117f465f2e8d9914"
         }
       ]
+    },
+    {
+      "id": "clinic-conversation",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-10",
+      "sourceFile": "/workspace/generated_images/exec-c5244056-fb12-42f9-91fd-3c190728fee0.png",
+      "sourceSha256": "20d8ec5c0b8d996eb2834d24eb96c392adaf3a8686a3ec183ecaf2b4e7548066",
+      "referenceFile": "public/art/spire-payroll.jpg",
+      "referenceSha256": "c36beebe3c5dfac0461ecb398eea50156c6f08110790e497bd481c16d82c898a",
+      "promptSummary": "Human-scale voluntary clinic conversation room, two empty chairs, unmarked envelope, cup, closed reply drawer and rainy window; no names, endorsement, acceptance, treatment or inquiry outcome.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/clinic-conversation.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 257566,
+          "sha256": "afe2cc73b2ff497b3f5d1416136b2fce339afef131ba9b0396dc5c4da68190bf"
+        },
+        {
+          "path": "public/art/clinic-conversation-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 69889,
+          "sha256": "68d9ce04a6e557b460ba4d10c1d084f9b9a321f97b9f489343b947c6cd81c765"
+        }
+      ]
     }
   ]
 }

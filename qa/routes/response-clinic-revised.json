@@ -1,0 +1,299 @@
+{
+  "name": "response-clinic-revised",
+  "character": {
+    "handle": "Replay",
+    "givenName": "Ada",
+    "origin": "spire",
+    "complication": "on-file",
+    "bonus": {
+      "chrome": 2,
+      "nerve": 0,
+      "face": 0,
+      "ghost": 0
+    },
+    "startWithPrologue": true
+  },
+  "steps": [
+    {
+      "choiceId": "begin-opening",
+      "reload": true
+    },
+    {
+      "choiceId": "opening-exit",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-stallholder",
+      "reload": true
+    },
+    {
+      "choiceId": "take-the-stool",
+      "reload": true
+    },
+    {
+      "choiceId": "ask-pay"
+    },
+    {
+      "choiceId": "haggle",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "pocket"
+    },
+    {
+      "choiceId": "accept"
+    },
+    {
+      "choiceId": "side"
+    },
+    {
+      "choiceId": "spoof-door",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "go"
+    },
+    {
+      "choiceId": "honest"
+    },
+    {
+      "choiceId": "pact-copy"
+    },
+    {
+      "choiceId": "copy",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "heard"
+    },
+    {
+      "choiceId": "inspect-hour"
+    },
+    {
+      "choiceId": "inspect-signature"
+    },
+    {
+      "choiceId": "inspect-order"
+    },
+    {
+      "choiceId": "inspect-roster"
+    },
+    {
+      "choiceId": "reconstruct"
+    },
+    {
+      "choiceId": "separate-decisions"
+    },
+    {
+      "choiceId": "label-unverified"
+    },
+    {
+      "choiceId": "seal-full"
+    },
+    {
+      "choiceId": "talk-leave",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "both"
+    },
+    {
+      "choiceId": "week-after"
+    },
+    {
+      "choiceId": "into-week"
+    },
+    {
+      "choiceId": "practice"
+    },
+    {
+      "choiceId": "learn-chrome"
+    },
+    {
+      "choiceId": "read-board"
+    },
+    {
+      "choiceId": "origin-contract"
+    },
+    {
+      "choiceId": "clear-key",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "return-board"
+    },
+    {
+      "choiceId": "to-helion"
+    },
+    {
+      "choiceId": "hear-ives"
+    },
+    {
+      "choiceId": "refuse-ives"
+    },
+    {
+      "choiceId": "hear-mara-response",
+      "reload": true
+    },
+    {
+      "choiceId": "listen-response-terms",
+      "reload": true
+    },
+    {
+      "choiceId": "propose-clinic-endorsement",
+      "reload": true
+    },
+    {
+      "choiceId": "revise-private-response",
+      "reload": true
+    },
+    {
+      "choiceId": "ask-lumen-staying",
+      "reload": true
+    },
+    {
+      "choiceId": "keep-lumen-quiet-answer",
+      "reload": true
+    },
+    {
+      "choiceId": "walk-private-response",
+      "reload": true
+    },
+    {
+      "choiceId": "record-response-dispatch",
+      "reload": true
+    },
+    {
+      "choiceId": "trace-order"
+    },
+    {
+      "choiceId": "agree-archive-terms"
+    },
+    {
+      "choiceId": "index-archive",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "catalog-is-proof"
+    },
+    {
+      "choiceId": "revise-source-test"
+    },
+    {
+      "choiceId": "trace-receipt",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "withhold-technician"
+    },
+    {
+      "choiceId": "keep-chain"
+    },
+    {
+      "choiceId": "hear-response"
+    },
+    {
+      "choiceId": "answer-with-source"
+    },
+    {
+      "choiceId": "deal"
+    },
+    {
+      "choiceId": "back-to-board"
+    },
+    {
+      "choiceId": "to-the-wall"
+    },
+    {
+      "choiceId": "to-ward-nine"
+    },
+    {
+      "choiceId": "visit-edda"
+    },
+    {
+      "choiceId": "respect-edda-source"
+    },
+    {
+      "choiceId": "visit-records"
+    },
+    {
+      "choiceId": "keep-limits"
+    },
+    {
+      "choiceId": "go-wall"
+    },
+    {
+      "choiceId": "face-sera"
+    },
+    {
+      "choiceId": "visit-mara-response",
+      "reload": true
+    },
+    {
+      "choiceId": "read-response-intake",
+      "reload": true
+    },
+    {
+      "choiceId": "finish-mara-response"
+    },
+    {
+      "choiceId": "visit-lumen-boundary"
+    },
+    {
+      "choiceId": "respect-lumen-boundary",
+      "reload": true
+    },
+    {
+      "choiceId": "prepare-public-account"
+    },
+    {
+      "choiceId": "scope-corroborated"
+    },
+    {
+      "choiceId": "keep-recording-private"
+    },
+    {
+      "choiceId": "answer-authenticated-key"
+    },
+    {
+      "choiceId": "file-public-account",
+      "reload": true
+    },
+    {
+      "choiceId": "let-ives"
+    }
+  ],
+  "expected": {
+    "sceneId": "ending_listed",
+    "flags": {
+      "testimony_published": true,
+      "archive_key_authenticated": true,
+      "nia_public_consent": false,
+      "order_verified": true,
+      "confirmed_leak": false,
+      "ives_took_list": true,
+      "response_started": true,
+      "response_received": true,
+      "response_public_refused": false,
+      "response_clinic_refused": true,
+      "response_visit": true,
+      "lumen_boundary_visit": true
+    },
+    "journal": [
+      "wall-account",
+      "mara-response-terms",
+      "mara-response-dispatch",
+      "mara-response-intake",
+      "lumen-contact-limit"
+    ],
+    "creds": 470,
+    "strain": 2
+  }
+}

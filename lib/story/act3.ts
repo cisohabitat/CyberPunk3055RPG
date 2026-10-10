@@ -1,3 +1,4 @@
+import { maraResponseVisit, lumenBoundaryVisit } from "./character-arcs";
 import { spireVisitChoice } from "./spire";
 import { shelterVisitChoice } from "./shelter";
 import { freightVisitChoice } from "./freight";
@@ -164,6 +165,8 @@ export const ACT3_SCENES: Record<string, Scene> = {
     speaker: "Sera",
     text: arrivalText,
     choices: [
+      maraResponseVisit,
+      lumenBoundaryVisit,
       kerrVisitChoice(),
       quillVisitChoice(),
       kerrQuestionChoice(),
