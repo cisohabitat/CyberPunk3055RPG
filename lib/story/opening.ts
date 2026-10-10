@@ -21,13 +21,18 @@ function selfText(state: GameState): string {
       : state.complication === "on-file"
         ? `Your chip holds ${state.creds} creds. Helion still keeps a file under your old name. Every official job asks for a number that leads back to it. Quill’s work comes through quieter doors.`
         : `Your chip holds ${state.creds} creds. It will buy a little time. You need work before that time runs out.`;
-  return `${ROOTS[state.origin]}\n\n${trouble}\n\nQuill is a broker: he finds the jobs people want done without a record. You have not agreed to this one. You are going to hear it. Under the street handle ${state.handle}, you can still decide what you are working toward.`;
+  const tomorrow = state.origin === "gutterwire"
+    ? "Tomorrow you will still need a dry place to sleep. You would like to choose whose door you knock on."
+    : state.origin === "spire"
+      ? "You still reach for the old badge at locked doors. You would like a life that does not need it."
+      : "Your route book has a blank page for the next crossing. You would like to choose the destination this time.";
+  return `${ROOTS[state.origin]}\n\n${trouble}\n\n${tomorrow} Quill brokers jobs without an official record. Tonight you are going to hear one, under the street handle ${state.handle}. What do you want it to buy?`;
 }
 
 export const OPENING_SCENES: Record<string, Scene> = {
   opening_city: {
     id: "opening_city", location: "Kite City, Ward Four · before midnight",
-    text: `Rain runs down the inside of Kite City’s dome. Above it, the Helion towers stay dry. Below it, you stand under a leaking awning with a message from Quill on your chip: “Ward Four noodle stall. Tonight. I have work.”\n\nThe year is 3055. Helion sells power, cooling, and the right to keep living under its roof. The lower wards keep the city running. You work between its official jobs: carrying things, opening doors, finding what someone would rather lose. People call you a runner.\n\nAcross the street, an advertisement promises a night without regret. At Glass Chapel, people pay to have an hour of memory edited out. The original survives in a sliver of glass called a shard. An hour can become something another person owns.\n\nQuill’s message says nothing about the work. The stall is a few streets away. For now, the choice is to hear him out.`,
+    text: `Rain runs down the inside of Kite City’s dome. Above it, Helion’s towers stay dry. Below it, your chip lights up: “Ward Four noodle stall. Tonight. I have work.” Quill, a broker. You need the work. You have not said yes.\n\nThe year is 3055. You carry things, open doors, find what someone would rather lose. People call you a runner. Across the street, a Glass Chapel advertisement promises a night without regret: pay to edit an hour of memory. The original survives in a sliver of glass called a shard.\n\nThe stall’s amber light cuts through the rain a few streets ahead. Find Quill. Hear the offer before you decide what it is worth.`,
     choices: [
       { id: "begin-opening", label: "Walk toward the stall.", next: "opening_self" },
       { id: "skip-opening", label: "Go straight to Quill’s meeting.", detail: "Skip the prologue and hear the job. No money, items, or stats change.", effects: { flags: ["opening_skipped"] }, next: "stall" },

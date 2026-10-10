@@ -22,7 +22,7 @@ import { ITEMS } from "./items.ts";
 import { parseSave } from "./storage.ts";
 import { journalTitle, promiseStatus } from "./journal.ts";
 import { metCast, speakerRole } from "./story/cast.ts";
-import { GOAL_ARRIVE, GOAL_DECIDE, GOAL_LIFT, GOAL_WALL, GOAL_WEEK, actName, currentGoal } from "./story/goal.ts";
+import { GOAL_ARRIVE, GOAL_SELF, GOAL_OFFER, GOAL_DECIDE, GOAL_LIFT, GOAL_WALL, GOAL_WEEK, actName, currentGoal } from "./story/goal.ts";
 import { CODEX, SCENES, endingCoda, vaultNext } from "./story/index.ts";
 import type { Choice, GameState, StatId } from "./types.ts";
 
@@ -503,7 +503,8 @@ describe("the week after", () => {
 
   it("keeps a different goal for the job, the truth, the week, and the wall", () => {
     const state = make("gutterwire", face);
-    assert.equal(currentGoal(state), GOAL_LIFT);
+    assert.equal(currentGoal(state), GOAL_OFFER);
+    assert.equal(currentGoal(step(state, "accept")), GOAL_LIFT);
     assert.match(currentGoal(state), /Mara Voss/);
     assert.match(currentGoal(state), /Glass Chapel/);
     const known = { ...state, journal: [{ id: "ward-nine", text: "The memo." }] };
@@ -569,7 +570,7 @@ describe("the week after", () => {
     const preview = effectPreview(state, pay);
     assert.ok(preview.some((line) => /wards/i.test(line)));
     const next = step(make("gutterwire", face), "ask-pay");
-    assert.ok(next.log.includes("Ask what the job pays."));
+    assert.ok(next.log.includes("Discuss the advance."));
   });
 
   it("shows the week in the street before the board", () => {
@@ -1029,7 +1030,7 @@ describe("playable opening", () => {
       assert.equal(Object.keys(state.flags).filter((flag) => ["opening_survival", "opening_identity", "opening_exit"].includes(flag)).length, 1);
       for (const key of ["creds", "strain", "items", "stats", "factions", "journal", "rolls"] as const) assert.deepEqual(state[key], initial[key]);
       assert.match(sceneText(getScene(state.sceneId), state), /stallholder’s story stays with you/);
-      assert.equal(currentGoal(state), GOAL_LIFT);
+      assert.equal(currentGoal(state), GOAL_OFFER);
     }
   });
   it("allows a shorter approach or a complete skip without assigning a reason", () => {
@@ -1040,6 +1041,50 @@ describe("playable opening", () => {
     const direct = step(step(step(initial, "begin-opening"), "opening-exit"), "meet-quill");
     assert.equal(direct.sceneId, "stall"); assert.equal(direct.flags.opening_neighbor_heard, undefined);
     assert.match(sceneText(getScene(direct.sceneId), direct), /buy yourself a way/);
+  });
+  it("keeps arrival, personal intent, offer and accepted job distinct", () => {
+    const initial = character("spire", "optic");
+    assert.equal(currentGoal(initial), GOAL_ARRIVE);
+    const self = step(initial, "begin-opening");
+    assert.equal(currentGoal(self), GOAL_SELF);
+    const offer = step(step(self, "opening-identity"), "meet-quill");
+    for (const sceneId of ["stall", "pay", "pay_yes", "pay_no", "why", "chapel", "job_owner"]) {
+      assert.equal(currentGoal({ ...offer, sceneId }), GOAL_OFFER);
+      assert.equal(currentGoal({ ...offer, sceneId, flags: { ...offer.flags, hired: true } }), GOAL_LIFT);
+    }
+    const firstParagraph = sceneText(getScene("stall"), offer).split("\n\n")[0];
+    for (const term of [/Mara Voss/, /Glass Chapel/, /dawn/, /Fifty now/, /two hundred/, /Kerr/]) assert.match(firstParagraph, term);
+    const hired = step(offer, "accept");
+    assert.equal(currentGoal(hired), GOAL_LIFT);
+    assert.equal(hired.creds, initial.creds + PAY.base);
+    assert.equal(hired.flags.hired, true);
+    assert.match(sceneText(getScene("route"), hired), /your name stays yours/);
+    assert.match(sceneText(getScene("undercroft"), { ...hired, sceneId: "undercroft" }), /keep your life yours/);
+  });
+  it("answers the ownership question without revealing the memo or granting proof", () => {
+    const initial = character("gutterwire", "debt");
+    const offer = step(step(step(step(initial, "begin-opening"), "opening-survival"), "hear-stallholder"), "take-the-stool");
+    let state = step(offer, "ask-owner");
+    assert.equal(state.sceneId, "job_owner");
+    assert.equal(state.flags.hired, undefined);
+    const reply = sceneText(getScene(state.sceneId), state);
+    assert.match(reply, /question she left you/);
+    assert.match(reply, /buyer is still a blank/);
+    assert.doesNotMatch(reply, /Ward Nine|coolant|three hundred|signed|verified/i);
+    for (const key of ["creds", "strain", "items", "stats", "factions", "journal", "rolls"] as const) assert.deepEqual(state[key], initial[key]);
+    state = parseSave(JSON.stringify(state))!;
+    state = step(state, "back-to-offer");
+    assert.equal(currentGoal(state), GOAL_OFFER);
+    assert.equal(presentChoices(state, getScene("stall")).some(choice => choice.id === "ask-owner"), false);
+    const recap = sceneText(getScene("stall"), state);
+    assert.match(recap, /not named his buyer/);
+    assert.doesNotMatch(recap, /story stays|grew up|came for enough/);
+    state = step(step(step(state, "ask-pay"), "haggle", 10), "pocket");
+    assert.match(sceneText(getScene("stall"), state).split("\n\n")[0], /Ninety now/);
+    assert.equal(step(state, "accept").creds, initial.creds + PAY.haggled);
+    const skipped = step(initial, "skip-opening");
+    const direct = step(skipped, "ask-owner");
+    assert.doesNotMatch(sceneText(getScene(direct.sceneId), direct), /stallholder|question she left/);
   });
   it("preserves the opening state on import while old job checkpoints stay at the job", () => {
     const opening = character("spire", "optic");

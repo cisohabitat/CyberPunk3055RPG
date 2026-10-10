@@ -31,6 +31,14 @@
       "reload": true
     },
     {
+      "choiceId": "ask-owner",
+      "reload": true
+    },
+    {
+      "choiceId": "back-to-offer",
+      "reload": true
+    },
+    {
       "choiceId": "ask-pay"
     },
     {
@@ -294,7 +302,8 @@
       "spire_late_closed": false,
       "spire_pending": false,
       "spire_declined": false,
-      "origin_helped": true
+      "origin_helped": true,
+      "job_owner_asked": true
     },
     "journal": [
       "wall-account",

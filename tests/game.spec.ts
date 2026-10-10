@@ -731,9 +731,46 @@ for (const [origin, complication, motive, root, reason] of [
   await expect(page.getByTestId("scene-text")).toContainText("stallholder’s story stays with you");
   const after = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
   for (const key of ["creds", "strain", "items", "stats", "factions", "rolls"]) expect(after[key]).toEqual(before[key]);
+  await expect(page.getByTestId("goal")).toContainText("Hear Quill's terms");
   await page.getByTestId("choice-accept").click();
+  await expect(page.getByTestId("goal")).toContainText("Lift Mara Voss");
   expect(await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!).flags.hired)).toBe(true);
 });
+for (const [width, textOnly] of [[390, false], [1440, true], [320, true]] as const) test(`Quill's offer stays unaccepted through questions and reload at ${width}px`, async ({ page }) => {
+  await page.setViewportSize({ width, height: 844 });
+  if (textOnly) await page.addInitScript(() => localStorage.setItem("saint-shard-preferences", JSON.stringify({ artwork: "none", textStep: 2, contrast: "high" })));
+  await page.goto("/"); await page.getByTestId("new-run").click();
+  await page.getByTestId("handle-input").fill("Rex");
+  await page.getByTestId("complication-debt").click();
+  await page.getByTestId("plus-chrome").click(); await page.getByTestId("plus-nerve").click();
+  await page.getByTestId("start-run").click();
+  for (const id of ["begin-opening", "opening-survival", "hear-stallholder", "take-the-stool"]) await page.getByTestId(`choice-${id}`).click();
+  // Default paragraph reading must expose the complete offer before any reveal click.
+  for (const term of ["Mara Voss", "Glass Chapel", "dawn", "Fifty now", "two hundred", "Kerr"]) await expect(page.getByTestId("scene-text")).toContainText(term);
+  await expect(page.getByTestId("goal")).toContainText("Hear Quill's terms");
+  await expect(page.getByTestId("goal")).toBeInViewport();
+  await page.getByTestId("choice-ask-owner").click();
+  await page.reload(); await page.getByTestId("continue-run").click();
+  await expect(page.getByTestId("goal")).toContainText("Hear Quill's terms");
+  await page.getByTestId("show-rest").click();
+  await expect(page.getByTestId("scene-text")).toContainText("buyer is still a blank");
+  let run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(run.creds).toBe(20); expect(run.flags.hired).toBeUndefined(); expect(run.journal).toEqual([]);
+  await page.getByTestId("choice-back-to-offer").click();
+  await expect(page.getByTestId("choice-ask-owner")).toHaveCount(0);
+  await expect(page.getByTestId("scene-text")).toContainText("Fifty now");
+  await expect(page.getByTestId("scene-text")).not.toContainText("grew up below");
+  await page.getByTestId("choice-accept").focus(); await page.keyboard.press("Enter");
+  await expect(page.getByTestId("goal")).toContainText("Lift Mara Voss");
+  await expect(page.getByTestId("scene-text")).toContainText("tomorrow paid for");
+  await expect(page.getByTestId("goal")).toBeInViewport();
+  run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(run.creds).toBe(70); expect(run.flags.hired).toBe(true);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations).toEqual([]);
+  if (textOnly) await expect(page.locator("img.portrait")).toHaveCount(0);
+});
+
 test("returning runners can skip the prologue while old saves continue at the job", async ({ page }) => {
   await openRun(page, fixture("stall"));
   await expect(page.getByTestId("choice-begin-opening")).toHaveCount(0);

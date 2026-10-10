@@ -142,7 +142,7 @@
     {
       "treatment": "portrait",
       "asset": "/art/quill.jpg",
-      "reason": "Use the existing employer portrait for briefing and recurring street work; the setting remains a backdrop and the terms stay in readable prose.",
+      "reason": "Reuse Quill’s existing portrait for briefing, memory ownership questions and recurring street work. The counter remains the same place; no new setting plate is needed. His portrait does not reveal the buyer, memo contents or an accepted contract.",
       "scenes": [
         "stall",
         "pay",
@@ -150,6 +150,7 @@
         "pay_no",
         "why",
         "chapel",
+        "job_owner",
         "route",
         "street_after",
         "act2_origin_dustline",

@@ -104,7 +104,7 @@ Use `npm run story:report -- story-report.json` to inspect the graph and 900 see
 
 The deterministic score generator runs automatically before development, tests, and production builds. The chapel and ward beds and memory cue are generated assets; keep their source in `scripts/generate-audio.mjs`.
 
-The six-phase status and remaining production milestones are tracked in [docs/ROADMAP.md](docs/ROADMAP.md). The candidate contains 142 scenes and 391 choices; retain all four original finales.
+The six-phase status and remaining production milestones are tracked in [docs/ROADMAP.md](docs/ROADMAP.md). The candidate contains 143 scenes and 393 choices; retain all four original finales.
 
 This review adds a compact commitments panel, contextual next steps, and warnings on week-closing choices when a memory promise remains open. The memory bench places inspection controls in each fragment row and expands inspected source details on request. Archive preservation alone is not independent verification; exposed-location testimony can corroborate an order without protecting its witness. Motion and reading pace are independent settings. Story shortcuts ignore key repeats and focus inside the character sheet. Manual slots reject invalid date metadata. See [the current review and grade](docs/REVIEW.md).
 
@@ -219,3 +219,9 @@ Keep initial memory inspection interactive; on later memory steps place fresh pr
 ## Spire staged key retirement
 
 Edda’s optional Spire favor now offers terms, three current-record inspections, one preparation, distinct Chrome/Face/Ghost/Nerve approaches, paid closure and staffed recovery. The original `clear-key` route remains compatible and cannot repeat after the origin favor ends. Retiring an obsolete maintenance key keeps her current account open; earlier charges and any archive inquiry remain separate. Only a checked, untraced closure earns one signal baffle. A failed roll keeps the old-badge trace through paid recovery; a free signed request remains pending until a later payroll reply is actually observed. Late closure can support Edda’s separately authorized private work application but earns no retroactive receiver, wage or historical authentication. The journal, commitments and ending preserve those distinctions. Both neighborhood and wall visits return to their entry hub. Save version 2, `saint-shard-3055-v1`, pending rolls, 1d10 rules, caps and all four original finales remain unchanged.
+
+## Opening pacing and job acceptance
+
+The arrival introduces the runner and memory trade in three paragraphs. Each origin names a concrete hope for tomorrow before choosing a reason for working. Quill states the target, deadline, advance, delivery payment and bodyguard in the first paragraph of the meeting; returning from a question uses a short terms recap. An optional ownership question follows the stallholder’s warning, identifies Mara as the owner of the hour and leaves Quill’s buyer unanswered. It grants no payment, proof or accepted contract and uses his existing portrait.
+
+Goals distinguish finding Quill, choosing a personal reason, considering his offer and the accepted job. The original mission goal appears after acceptance; investigation, week and wall goals keep their existing precedence. Quill responds to the chosen reason in the departure, and the Chapel undercroft recalls it when the risk becomes real. Existing saves, prologue skipping, payment amounts, dice, four finales and `saint-shard-3055-v1` remain compatible. The scene-art catalog documents the new conversation. This is an internal pacing revision, with blind-player acceptance still pending.

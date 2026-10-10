@@ -8,7 +8,7 @@ Record the exact build, device/OS/browser, network, input method, chosen origin,
 
 Ask the participant to begin a run and think aloud only if that is part of the consented protocol. Observe without teaching the rules or steering choices. At natural breaks ask:
 
-1. What are you trying to do right now, and who is stopping you?
+1. At the first meeting, have you accepted the job yet? Who owns the hour, what does Quill offer, and what is still unanswered? After accepting, what are you trying to do, who is stopping you, and what did you want the work to buy?
 2. What does Mara’s signature establish? What remains uncertain about the later order?
 3. What has changed for Nia? Which recording and publication permissions were actually given?
 4. Name one consequence you caused, and show where you learned it.

@@ -2,6 +2,9 @@ import type { GameState } from "../types";
 
 export const GOAL_ARRIVE = "Find Quill at the Ward Four noodle stall. Hear what he is offering.";
 
+export const GOAL_SELF = "Choose what you want tonight's work to buy.";
+export const GOAL_OFFER = "Hear Quill's terms. Decide whether to take Mara Voss's hour from Glass Chapel.";
+
 export const GOAL_LIFT = "Lift Mara Voss's hour from Glass Chapel before dawn. Kerr is paid to stop you.";
 export const GOAL_DECIDE = "You know what the hour is. Decide who gets it.";
 export const GOAL_WEEK = "The week wants a buyer or a witness.";
@@ -21,6 +24,8 @@ const WEEK = new Set([
 
 const WALL = new Set(["card_wall", "ward_wall", "ending_names", "ending_quiet", "ending_witness", "ending_listed"]);
 
+const BRIEFING = new Set(["stall", "pay", "pay_yes", "pay_no", "why", "chapel", "job_owner"]);
+
 export function actName(state: GameState): string {
   const id = state.sceneId;
   if (WALL.has(id) || id.startsWith("act3_")) return "The Wall";
@@ -30,9 +35,11 @@ export function actName(state: GameState): string {
 
 export function currentGoal(state: GameState): string {
   const id = state.sceneId;
+  if (id === "opening_self") return GOAL_SELF;
   if (id.startsWith("opening_")) return GOAL_ARRIVE;
   if (WALL.has(id) || id.startsWith("act3_")) return GOAL_WALL;
   if (WEEK.has(id) || id.startsWith("act2_")) return GOAL_WEEK;
   if (state.flags.heard_memo || state.journal.some((entry) => entry.id === "ward-nine")) return GOAL_DECIDE;
+  if (BRIEFING.has(id) && !state.flags.hired) return GOAL_OFFER;
   return GOAL_LIFT;
 }

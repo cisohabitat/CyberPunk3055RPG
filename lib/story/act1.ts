@@ -52,19 +52,26 @@ function stallText(state: GameState): string {
     ? `You still have ${carried.join(" and ")} from a week this city already filed. Quill notices and does not ask.`
     : "";
   const motive = openingMotive(state);
-  const neighbor = state.flags.opening_neighbor_heard ? "The stallholder’s story stays with you: a man paid his rent with an evening he could no longer explain. You want to know whose hour Quill is buying." : "";
+  const neighbor = state.flags.opening_neighbor_heard && !state.flags.job_owner_asked ? "The stallholder’s story stays with you. Whose hour are you being asked to carry?" : "";
   const deal = state.flags.haggled
     ? "He already moved the advance to ninety. He will not enjoy being asked to fall in love with you twice."
     : state.flags.haggle_failed
       ? "He has already refused you once. The bowl is still untouched."
       : "He has not touched the bowl. He did not come here to eat.";
-  return `${ORIGIN_OPEN[state.origin]}
+  const advance = state.flags.haggled ? "Ninety" : "Fifty";
+  if (state.flags.met_quill) {
+    const owner = state.flags.job_owner_asked ? "He has named the owner of the hour. He has not named his buyer." : "";
+    return `Quill turns the untouched bowl between his hands. "${advance} now. Two hundred for the intact shard. Before dawn. Those are the terms."\n\n${deal}${owner ? ` ${owner}` : ""}\n\nThe stallholder lifts another nest of noodles from the pot. Quill waits for your answer.`;
+  }
+  const arrival = state.flags.opening_complete ? "" : ORIGIN_OPEN[state.origin];
+  return `Quill moves his bowl aside. "${state.handle}. Mara Voss, Helion logistics. Glass Chapel edits her memory at dawn. Bring me the original hour, intact. ${advance} now, two hundred on delivery. Her bodyguard is Kerr. He is paid to stop you."\n\n${[arrival, motive, complication].filter(Boolean).join(" ")}\n\n${[neighbor, keepsake, "Quill has not touched his dinner. You have not agreed to the job."].filter(Boolean).join(" ")}`;
+}
 
-Quill nods at the stool across from him. "${state.handle}. Sit. Eat, or pretend."
-
-${motive ? motive + "\n\n" : ""}${neighbor ? neighbor + "\n\n" : ""}${complication ? complication + "\n\n" : ""}${keepsake ? keepsake + "\n\n" : ""}${deal}
-
-"Glass Chapel edits guilt. They keep the original. Mara Voss, Helion logistics, sits the chair at dawn. I want the shard from her hour in the chair. You want to remain the sort of person who can spend money."`;
+function ownerText(state: GameState): string {
+  const question = state.flags.opening_neighbor_heard
+    ? "You glance at the stallholder. Then you ask the question she left you: whose hour is it?"
+    : "You keep your chip on the counter. Whose hour is it?";
+  return `${question}\n\n"Mara's," Quill says. "Her life. Her appointment. Helion booked the chair; I booked you."\n\n"Who gets it after you?"\n\nHe lets the steam pass between you. "Someone who pays for an original. You want Mara's reasons, ask Mara. I sell the route to the room, not an honest answer."\n\nHe has given you a name and a deadline. The buyer is still a blank. You can ask about the money, hear how the Chapel works, or accept those limits.`;
 }
 
 function payText(state: GameState): string {
@@ -87,11 +94,18 @@ function undercroftText(state: GameState): string {
         : state.flags.scuffle
           ? "Your pulse is louder than the room. Someone felt the hatch move."
           : "No one is shouting yet. You file that under temporary.";
+  const motive = state.flags.opening_survival
+    ? "The advance is yours. Getting back out to spend it is still work."
+    : state.flags.opening_identity
+      ? "You came to keep your life yours. The chair upstairs offers to make that question simpler. You keep walking."
+      : state.flags.opening_exit
+        ? "You wanted a way beyond the next closed door. This one leads to somebody else's hour. You still have to decide what to do with it."
+        : "";
   return `Antiseptic and cheap incense are losing a fight in here. A bowl of extracted optics waits under a sign that says RECYCLE in a font meant to be kind.
 
 ${heat}
 
-The chair room is up a short stair. Someone is humming a hymn with the rhythm taken out.`;
+The chair room is up a short stair. Someone is humming a hymn with the rhythm taken out.${motive ? `\n\n${motive}` : ""}`;
 }
 
 function lumenColdText(state: GameState): string {
@@ -282,13 +296,14 @@ export const ACT1_SCENES: Record<string, Scene> = {
     speaker: "Quill",
     text: stallText,
     choices: [
-      { id: "ask-pay", label: "Ask what the job pays.", detail: "Money first. Always.", next: "pay" },
+      { id: "ask-pay", label: "Discuss the advance.", detail: "Hear the payment terms and decide whether to negotiate.", next: "pay" },
       { id: "ask-why", label: "Ask why he doesn't take it himself.", next: "why" },
       { id: "ask-chapel", label: "Ask what the Chapel actually does.", next: "chapel" },
+      { id: "ask-owner", label: "Ask whose hour you are taking, and who gets it.", detail: "Ask about the person behind the job. No check or payment.", hideIfFlag: "job_owner_asked", effects: { flags: ["job_owner_asked"] }, next: "job_owner" },
       {
         id: "accept",
         label: "Take the job.",
-        detail: "The advance hits your chip.",
+        detail: "An intact hour before dawn. Two hundred on delivery. The advance hits your chip now.",
         effects: (state) => ({
           creds: state.flags.haggled ? PAY.haggled : PAY.base,
           flags: ["hired"],
@@ -298,6 +313,13 @@ export const ACT1_SCENES: Record<string, Scene> = {
         next: "route",
       },
     ],
+  }),
+  job_owner: add({
+    id: "job_owner",
+    location: "Noodle stall, Ward Four",
+    speaker: "Quill",
+    text: ownerText,
+    choices: [{ id: "back-to-offer", label: "Keep the unanswered question. Return to the offer.", next: "stall" }],
   }),
   pay: add({
     id: "pay",
@@ -342,7 +364,7 @@ export const ACT1_SCENES: Record<string, Scene> = {
     id: "why",
     location: "Noodle stall, Ward Four",
     speaker: "Quill",
-    text: `"Because Kerr knows my face from a year I would rather sell than tell. Kerr does not know yours. If that changes, do not come back here to explain it to me. Explain it to the rain."`,
+    text: `"Because Kerr knows my face from a year I would rather sell than tell. Mara's bodyguard. Helion pays him to keep her hour in the chair room. He does not know your face yet."\n\nQuill pushes the bowl away. "A quiet door gives you time. A loud one brings him. If he finds you, getting out matters more than getting paid."`,
     choices: [{ id: "back", label: "That's enough biography.", next: "stall" }],
   }),
   chapel: add({
@@ -365,11 +387,18 @@ That file is the product. Saints keep it. Then they sell it back to the same tow
       const passLine = state.items.includes("counterfeit-pass")
         ? "The pass is already in your pocket. The basin will still want a story."
         : "The penitent pass is a hundred. It scans often enough.";
-      return `${money}
+      const reply = state.flags.opening_survival
+        ? 'You tell Quill you need tomorrow paid for. "Then do not spend your whole advance on my pass," he says. "There are other doors."'
+        : state.flags.opening_identity
+          ? 'You tell Quill your name stays yours. "The front desk will ask for one," he says. "The other doors ask different questions."'
+          : state.flags.opening_exit
+            ? 'You tell Quill this job is a step toward getting out. "Start by choosing how you get in," he says.'
+            : "";
+      return `${money}${reply ? ` ${reply}` : ""}
 
 "Three ways in. The front sells forgiveness to anyone with an appointment. The hatch behind the incinerator is for people who still sweat. The choir door runs on an old Helion pad. I would not kiss it."
 
-${passLine}`;
+${passLine} Glass Chapel is three streets over. You leave the steam of the stall for its white light.`;
     },
     choices: [
       {
