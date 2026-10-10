@@ -7,7 +7,7 @@ import type { VisibleChoice } from "@/lib/engine";
 import type { GameState } from "@/lib/types";
 import { SourceArtwork, SourceDetails } from "./SourceArtwork";
 
-export function MemoryTimeline({ state, choices, onPlace, artwork, reducedMotion }: { state: GameState; choices: VisibleChoice[]; onPlace: (choice: VisibleChoice) => void; artwork: boolean; reducedMotion: boolean }) {
+export function MemoryTimeline({ state, choices, onPlace, artwork, reducedMotion, numberShortcuts }: { state: GameState; choices: VisibleChoice[]; onPlace: (choice: VisibleChoice) => void; artwork: boolean; reducedMotion: boolean; numberShortcuts: boolean }) {
   const slots = memorySequence(state);
   const filled = slots.filter(Boolean).length;
   const last = slots[filled - 1]?.id;
@@ -34,7 +34,7 @@ export function MemoryTimeline({ state, choices, onPlace, artwork, reducedMotion
       const choice = choices.find((option) => option.id === `place-${fragment.id}`);
       return <div key={fragment.id} className="memory-source-card"><SourceDetails id={fragment.id} summaryId={`timeline-source-${fragment.id}`} summary={`${fragment.title}${state.flags[`memory_placed_${fragment.id}`] ? " · placed" : " · available"}`} artwork={artwork}>
         <p><strong>{fragment.time}</strong> · {fragment.source}</p><p>{fragment.text}</p>
-      </SourceDetails>{choice && <button type="button" className="ghost" data-testid={`choice-${choice.id}`} aria-keyshortcuts={String(choices.indexOf(choice) + 1)} disabled={!choice.enabled} onClick={() => onPlace(choice)}>{choices.indexOf(choice) + 1} · Place {fragment.title.toLowerCase()} next</button>}</div>;
+      </SourceDetails>{choice && <button type="button" className="ghost" data-testid={`choice-${choice.id}`} aria-keyshortcuts={numberShortcuts && choice.enabled && choices.indexOf(choice) < 9 ? String(choices.indexOf(choice) + 1) : undefined} disabled={!choice.enabled} onClick={() => onPlace(choice)}>{choices.indexOf(choice) + 1} · Place {fragment.title.toLowerCase()} next</button>}</div>;
     })}</div>
   </section>;
 }

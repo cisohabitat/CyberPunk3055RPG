@@ -1,6 +1,6 @@
 # Phase 5 — player experience and acceptance
 
-Cycle 8 implements the internal accessibility and decision-clarity pass. Fresh-player observation, manual assistive-technology review and physical-device acceptance remain pending. This document and the blank research worksheets are preparation, not completed research or a new grade.
+Cycles 8 and 9 implement the internal accessibility, decision-clarity and interruption pass. Fresh-player observation, manual assistive-technology review and physical-device acceptance remain pending. This document and the blank research worksheets are preparation, not completed research or a new grade.
 
 ## Cycle 8 scope and findings
 
@@ -50,3 +50,33 @@ Six complete internal UI campaigns contain 465 scene visits: four directed origi
 Four synthetic initial-load profiles measure 931,733 bytes at 390px illustrated, 1,269,949 bytes at 1440px illustrated and 351,273 bytes in either text-only profile. All remain under 2 MiB, with a visible goal, no overflow and zero measured layout shift. These are automation-host samples with Sound off, not physical-device or percentile results. The inventory remains 143 assets, 185 scenes, 536 choices and 96 replay fixtures, with no media/script/style budget violations.
 
 Exact-revision CI and public deployment verification follow the push and are recorded in `qa/production/reports/cycle8-evidence.json`. Human sessions, named assistive-technology review, physical devices, independent media acceptance and the provisional 7.8 grade remain separate. Cycle 9 should revise actual observed problems and collect the required manual/device evidence; this internal increment does not close Phase 5 acceptance.
+
+
+## Cycle 9 findings and implementation
+
+The baseline production revision `64bfe24` requested theme-reading, ambience-chapel and sting-chapel even when all four mixer volumes were zero. Muted channels now skip new loads; an already pending request may finish decoding but cannot start after that channel is muted. Unmuting starts only the requested channel. The decoded cache remains bounded to 24 MiB.
+
+The page previously had no visibility/pagehide pause handler. It now stops sources immediately and invalidates pending speech. Returning leaves sound paused until the player selects Resume sound. Resume starts the beds without replaying the entry cue or old voice, and moves focus back to the current scene before its button disappears. Sound-enabled preferences stay intact; imports, Continue and explicit Sound on remain activation gestures. Source disposal disconnects nodes/gains, clears source buffers and removes tracking immediately rather than relying exclusively on ended callbacks. Crossfading and ordinary completed playback retain normal cleanup.
+
+Two accessibility follow-ups complete Cycle 8 behavior: nested memory controls omit shortcut announcements when disabled, and controller navigation includes the active sheet panel. No story, graph, outcome, save schema or media asset changes; the existing art remains suitable.
+
+### Sustained internal probe
+
+Run `npm run production:audio-probe -- http://127.0.0.1:PORT --minutes 10 --out qa/production/reports/audio-endurance.json` against a fresh production build. Set `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` when needed. The script generates real states from three authored route fixtures, restores through native Saves/import/Confirm load, tests applicable explicit voices, checks pagehide/resume and exact saves, and ends with Sound off. Bounded QA instrumentation tracks created/disposed sources and cleared buffers; forced-GC heap samples are diagnostic JS measurements, excluding native AudioBuffer and resident memory. The probe changes only its isolated browser profile and performs no upload. Its report records revision, dirty state, duration, source counts, sound plans, samples and limitations.
+
+This ten-minute automation-host run does not replace the proposed two-hour replay on supported physical hardware, independent listening or manual assistive-technology acceptance. No fresh-player observations were supplied during this internal pass.
+
+### Manual device/access record
+
+Use the blank [device/access session sheet](../qa/research/device-access-sessions.csv). Record anonymous reviewer code, exact revision, model/OS/browser, input/assistive technology, network, preferences, raw timings/evidence and unresolved findings. Leave unassessed fields blank. Include NVDA/Firefox and VoiceOver/Safari, keyboard-only and a physical controller, actual Android/iPhone/desktop, cold load and repeated tab/app switches. Check pending-roll interruption, explicit audio resumption, silent/text-only play, native dialogs and reading/choice focus. Record actual long-session minutes and memory evidence; any severe finding requires a fix and retest on that profile before acceptance. Do not place internal automation in reviewer rows or close production acceptance gates without evidence.
+
+
+### Cycle 9 internal verification and release record
+
+The final candidate passes 349 unit/replay cases, TypeScript and production compilation. Sixty-three focused local checks pass across desktop Chromium, phone Chromium and WebKit, including the eight new interruption/muting/controller/shortcut cases, prior reading accessibility, delayed activation, bed races and unavailable media. The new tests suppress ended callbacks deliberately to verify immediate disposal of voice, bed and both crossfade sources. A recorded eight survives pause, return and reload before commitment; subsequent mixer changes preserve the committed state. These are synthetic interruptions, not physical app-switch evidence.
+
+Six primary complete internal UI campaigns cover 470 scene visits: names 63, quiet 81, witness 67, listed 96, natural-dice Gutterwire 76 and natural-dice Dustline 87. Every directed finale's entire state matches Cycle 8. The three sound-enabled directed runs include two explicit pagehide/resume interruptions and selected voice cancellation. The 320px largest-text/high-contrast quiet campaign requests no art/audio. Natural runs finish quiet at 350 creds / strain 5 and 330 creds / strain 2 respectively. No exception or horizontal overflow is observed. These are authored/adaptive internal campaigns, not fresh-player participants.
+
+Four final-build initial-load samples transfer 932,275 bytes on the illustrated phone, 1,270,491 on the illustrated desktop and 351,815 in either text-only profile. Goals are visible; measured layout shift and overflow are zero. These automation-host Sound-off samples remain below 2 MiB and establish no physical-device or percentile claim. Production reporting retains 185 scenes, 536 choices, 96 fixtures and 143 assets, with no budget violations and all six independent acceptance gates open.
+
+The ten-minute sustained-probe report, source hashes, exact-revision CI and public checks are recorded with the release in ignored `qa/production/reports/cycle9-evidence.json`. The release gate remains closed until the sustained probe and complete exact-revision Test/Build checks pass. Cycle 9 delivers internal fixes and prepared records; fresh-player repeat, named assistive-technology review, physical-device/two-hour acceptance, independent media/rights review and the provisional grade remain unchanged. Phase 6 begins with a readiness review after this phase handoff; no acceptance gate is closed by these internal checks.

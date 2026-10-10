@@ -202,3 +202,12 @@ Three 64-second scene beds and five district textures accompany the stable campa
 ## Roadmap phase 5, cycle 8 — accessible reading and decisions
 
 An internal audit identified unavoidable number shortcuts, removed reading-control focus, inaccessible disabled-choice requirements and unfocusable sheet panels. Settings now permit number-key opt-out; reveals focus the first new paragraph; choices separate names/descriptions and explain commitment; visible unavailable approaches have a native disclosure; active sheet panels are Tab stops. Abandon begins on Keep going. No engine, story, media or save outcome changes. Blank session and findings worksheets support actual fresh-player research without fabricated participants. See [PLAYER_EXPERIENCE.md](PLAYER_EXPERIENCE.md). Verify complete campaigns, exact-revision CI and public production before release; participant, manual accessibility and physical-device gates remain pending.
+
+
+## Roadmap phase 5, cycle 9 — audio interruption and device readiness
+
+Zero-volume channels avoid new media requests. Muting a channel stops its active sources; stopped nodes disconnect and release buffers immediately, including while ended callbacks are delayed. Hiding/leaving the page stops sound and cancels pending speech. Returning shows an explicit Resume sound control, which restarts the current beds without replaying the entry cue or cancelled voice. Saved preferences remain enabled; progress, costs, local allowances and recorded dice are unchanged.
+
+Memory inspection/timeline controls respect the number-shortcut opt-out in their accessible labels. Controller navigation reaches active sheet panels. No new scene or asset is needed; existing accompanying art remains suitable. Preserve version 2, `saint-shard-3055-v1`, readable/silent/text-only play, visible goals, 1d10 and caps, all four finales and the 24 MiB decoded cache.
+
+`npm run production:audio-probe -- URL --minutes 10` exercises actual replay-generated states through native save import, voice cancellation, pagehide/resume and Sound off. Its bounded QA instrumentation is never imported by the game. Source cleanup and forced-GC JS heap samples support internal diagnosis; native audio memory, physical devices, two-hour endurance and human listening remain separate. The blank `qa/research/device-access-sessions.csv` records actual device/access reviews. See [PLAYER_EXPERIENCE.md](PLAYER_EXPERIENCE.md) for verification and pending acceptance; no new grade is claimed.

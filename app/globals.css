@@ -284,6 +284,8 @@ button { cursor: pointer; }
 .decision-help details { margin-top: 0.6rem; }
 .decision-help li { margin: 0.75rem 0; }
 .decision-help summary { cursor: pointer; }
+.audio-paused { margin: 0.6rem 0; }
+.audio-paused p { margin: 0 0 0.4rem; color: var(--muted); }
 .card-art {
   grid-column: 1 / -1;
   width: 100%;

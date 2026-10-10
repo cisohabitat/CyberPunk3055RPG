@@ -5,8 +5,9 @@ import { windowRemaining } from "./chapel-window";
 export type SoundMood = "street" | "chapel" | "ward" | "week" | "reading" | "quiet" | "pressure";
 export type SoundDistrict = "street" | "chapel" | "spire" | "canal" | "ward";
 let ctx: AudioContext | null = null;
-let theme: { node: AudioBufferSourceNode; gain: GainNode } | null = null;
-let ambience: { node: AudioBufferSourceNode; gain: GainNode } | null = null;
+type AudioSource = { node: AudioBufferSourceNode; gain: GainNode; channel: keyof typeof mix; dispose: () => void };
+let theme: AudioSource | null = null;
+let ambience: AudioSource | null = null;
 let want = false;
 let ticket = 0;
 let playingMood: SoundMood | undefined;
@@ -21,14 +22,14 @@ const buses = new Map<string, GainNode>();
 const cache = new Map<string, AudioBuffer>();
 const loading = new Map<string, Promise<AudioBuffer>>();
 const CACHE_BYTES = 24 * 1024 * 1024;
-const live = new Set<AudioBufferSourceNode>();
+const live = new Map<AudioBufferSourceNode, AudioSource>();
 
 function context() { if (!ctx) ctx = new AudioContext(); return ctx; }
 export function unlockAudio() {
   if (typeof window === "undefined") return;
   try {
     const audio = context();
-    if (audio.state === "suspended") void audio.resume().catch(() => {});
+    if (audio.state !== "running" && audio.state !== "closed") void audio.resume().catch(() => {});
   } catch { /* Unsupported audio must never block play. */ }
 }
 function bus(channel: keyof typeof mix) {
@@ -40,8 +41,12 @@ function bus(channel: keyof typeof mix) {
   return gain;
 }
 export function setAudioMix(value: Pick<Preferences, "music" | "ambience" | "effects" | "voices">) {
+  const bedsChanged = (mix.music > 0) !== (value.music > 0) || (mix.ambience > 0) !== (value.ambience > 0);
   mix = { music: value.music, ambience: value.ambience, effects: value.effects, voices: value.voices };
+  if (mix.voices === 0) stopVoice();
+  for (const current of live.values()) if (mix[current.channel] === 0) stopSource(current);
   if (ctx) for (const channel of ["music", "ambience", "effects", "voices"] as const) bus(channel);
+  if (bedsChanged && want) { ++ticket; setBed(true, requestedMood, requestedDistrict); }
 }
 async function load(name: string) {
   const cached = cache.get(name); if (cached) { cache.delete(name); cache.set(name, cached); return cached; }
@@ -61,12 +66,25 @@ async function load(name: string) {
 function source(buffer: AudioBuffer, channel: keyof typeof mix, level: number, loop: boolean) {
   const audio = context(); const node = audio.createBufferSource(); const gain = audio.createGain();
   node.buffer = buffer; node.loop = loop; gain.gain.value = level;
-  node.connect(gain).connect(bus(channel)); live.add(node);
-  node.onended = () => { node.disconnect(); gain.disconnect(); live.delete(node); };
-  return { node, gain };
+  node.connect(gain).connect(bus(channel));
+  let disposed = false;
+  const dispose = () => {
+    if (disposed) return;
+    disposed = true;
+    node.onended = null;
+    node.disconnect(); gain.disconnect(); node.buffer = null;
+    live.delete(node);
+  };
+  const current = { node, gain, channel, dispose };
+  live.set(node, current); node.onended = dispose;
+  return current;
+}
+function stopSource(current: AudioSource) {
+  try { current.node.stop(); } catch { /* Already stopped. */ }
+  current.dispose();
 }
 function stopBed() {
-  for (const node of live) { try { node.stop(); } catch { /* Already stopped. */ } }
+  for (const current of live.values()) stopSource(current);
   theme = null; ambience = null;
   playingMood = undefined; playingDistrict = undefined;
 }
@@ -80,8 +98,10 @@ function crossfade(buffer: AudioBuffer, channel: "music" | "ambience", level: nu
 }
 export function setBed(on: boolean, nextMood: SoundMood = "street", nextDistrict: SoundDistrict = "street") {
   if (typeof window === "undefined") return;
-  const musicChanged = playingMood !== nextMood || !theme;
-  const ambienceChanged = playingDistrict !== nextDistrict || !ambience;
+  if (mix.music === 0 && theme) { stopSource(theme); theme = null; playingMood = undefined; }
+  if (mix.ambience === 0 && ambience) { stopSource(ambience); ambience = null; playingDistrict = undefined; }
+  const musicChanged = mix.music > 0 && (playingMood !== nextMood || !theme);
+  const ambienceChanged = mix.ambience > 0 && (playingDistrict !== nextDistrict || !ambience);
   const unchanged = want === on && !musicChanged && !ambienceChanged;
   const planChanged = requestedMood !== nextMood || requestedDistrict !== nextDistrict;
   requestedMood = nextMood; requestedDistrict = nextDistrict;
@@ -92,12 +112,13 @@ export function setBed(on: boolean, nextMood: SoundMood = "street", nextDistrict
   void (async () => {
     try {
       if (id !== ticket || !want) return;
-      const audio = context(); if (audio.state === "suspended") void audio.resume().catch(() => {});
+      if (!musicChanged && !ambienceChanged) return;
+      unlockAudio();
       const name = nextMood === "street" ? "theme" : `theme-${nextMood}`;
       const [musicResult, ambienceResult] = await Promise.allSettled([musicChanged ? load(name) : null, ambienceChanged ? load(`ambience-${nextDistrict}`) : null]);
       if (id !== ticket || !want) return;
-      if (musicResult.status === "fulfilled" && musicResult.value) { theme = crossfade(musicResult.value, "music", 0.5, theme); playingMood = nextMood; }
-      if (ambienceResult.status === "fulfilled" && ambienceResult.value) { ambience = crossfade(ambienceResult.value, "ambience", 0.35, ambience); playingDistrict = nextDistrict; }
+      if (mix.music > 0 && musicResult.status === "fulfilled" && musicResult.value) { theme = crossfade(musicResult.value, "music", 0.5, theme); playingMood = nextMood; }
+      if (mix.ambience > 0 && ambienceResult.status === "fulfilled" && ambienceResult.value) { ambience = crossfade(ambienceResult.value, "ambience", 0.35, ambience); playingDistrict = nextDistrict; }
     } catch { /* Audio stays optional. */ }
   })();
 }
@@ -109,7 +130,7 @@ function duckBed(on: boolean) {
 }
 export function stopVoice() {
   ++voiceTicket;
-  if (voiceNode) { try { voiceNode.stop(); } catch { /* Already stopped. */ } }
+  if (voiceNode) { const current = live.get(voiceNode); if (current) stopSource(current); }
   voiceNode = null;
   duckBed(false);
 }
@@ -138,12 +159,12 @@ export function playVoice(name: string, report: (status: VoiceStatus) => void): 
   return () => { if (id === voiceTicket) stopVoice(); };
 }
 export function playCue(name: string) {
-  if (typeof window === "undefined" || !want) return;
+  if (typeof window === "undefined" || !want || mix.effects === 0) return;
   const id = ticket;
   void (async () => {
     try {
-      const audio = context(); if (audio.state === "suspended") void audio.resume().catch(() => {});
-      const buffer = await load(name); if (!want || id !== ticket) return;
+      unlockAudio();
+      const buffer = await load(name); if (!want || mix.effects === 0 || id !== ticket) return;
       source(buffer, "effects", name === "dice-tick" ? 0.22 : 0.5, false).node.start();
     } catch { /* Audio stays optional. */ }
   })();

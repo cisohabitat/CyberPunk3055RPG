@@ -6,7 +6,7 @@ import type { VisibleChoice } from "@/lib/engine";
 import type { GameState } from "@/lib/types";
 import { SourceDetails } from "./SourceArtwork";
 
-export function MemoryPlate({ state, choices, onInspect, artwork }: { state: GameState; choices: VisibleChoice[]; onInspect: (choice: VisibleChoice) => void; artwork: boolean }) {
+export function MemoryPlate({ state, choices, onInspect, artwork, numberShortcuts }: { state: GameState; choices: VisibleChoice[]; onInspect: (choice: VisibleChoice) => void; artwork: boolean; numberShortcuts: boolean }) {
   const [lastInspected, setLastInspected] = useState<string | null>(null);
   const root = useRef<HTMLElement>(null);
   useEffect(() => {
@@ -23,7 +23,7 @@ export function MemoryPlate({ state, choices, onInspect, artwork }: { state: Gam
       return <li key={fragment.id} className={read ? "examined" : "sealed"}>
         <span className="memory-time">{fragment.time}</span>
         {read ? <SourceDetails id={fragment.id} summaryId={`memory-source-${fragment.id}`} summary={`${fragment.title} · inspected`} artwork={artwork} initialOpen={lastInspected === fragment.id}><p>{fragment.text}</p><small>{fragment.kind} · {fragment.source}</small></SourceDetails>
-          : <><h3>{fragment.title}</h3>{choice && <button type="button" className="ghost" data-testid={`choice-${choice.id}`} aria-keyshortcuts={String(choices.indexOf(choice) + 1)} disabled={!choice.enabled} onClick={() => { setLastInspected(fragment.id); onInspect(choice); }}>{choices.indexOf(choice) + 1} · Inspect {fragment.title.toLowerCase()}</button>}</>}
+          : <><h3>{fragment.title}</h3>{choice && <button type="button" className="ghost" data-testid={`choice-${choice.id}`} aria-keyshortcuts={numberShortcuts && choice.enabled && choices.indexOf(choice) < 9 ? String(choices.indexOf(choice) + 1) : undefined} disabled={!choice.enabled} onClick={() => { setLastInspected(fragment.id); onInspect(choice); }}>{choices.indexOf(choice) + 1} · Inspect {fragment.title.toLowerCase()}</button>}</>}
       </li>;
     })}</ol>
     {inspected === 3 && <section className="evidence-case" aria-label="Evidence comparison" data-testid="evidence-case">

@@ -26,6 +26,7 @@ export function GameApp() {
   const [codex, setCodex] = useState<Codex>(emptyCodex());
   const [preferences, setPreferences] = useState<Preferences>(DEFAULT_PREFERENCES);
   const [dialog, setDialog] = useState<"saves" | "settings" | null>(null);
+  const [audioPaused, setAudioPaused] = useState(false);
 
   useController(preferences.controller);
 
@@ -37,6 +38,21 @@ export function GameApp() {
   useLayoutEffect(() => { window.scrollTo(0, 0); }, [screen]);
   useEffect(() => { setAudioMix(preferences); }, [preferences]);
   useEffect(() => { if (screen !== "play") setBed(false); }, [screen]);
+  useEffect(() => {
+    function pause() {
+      if (!preferences.sound) return;
+      setBed(false);
+      setAudioPaused(true);
+    }
+    function visibility() { if (document.visibilityState !== "visible") pause(); }
+    document.addEventListener("visibilitychange", visibility);
+    window.addEventListener("pagehide", pause);
+    visibility();
+    return () => {
+      document.removeEventListener("visibilitychange", visibility);
+      window.removeEventListener("pagehide", pause);
+    };
+  }, [preferences.sound]);
 
   function updateRun(next: GameState) {
     const persisted = writeSave(next);
@@ -45,12 +61,14 @@ export function GameApp() {
     setRun(next); setSaved(next);
   }
   function updatePreferences(next: Preferences) {
-    if (next.sound && !preferences.sound) unlockAudio();
+    if (next.sound && !preferences.sound) { unlockAudio(); setAudioPaused(false); }
+    if (!next.sound) setAudioPaused(false);
     setPreferences(next); applyPreferences(next); writePreferences(next);
   }
   function title() { setDialog(null); setRun(null); setCodex(loadCodex()); setScreen("title"); }
   function load(next: GameState, source = "Autosave") {
     if (preferences.sound) unlockAudio();
+    setAudioPaused(false);
     updateRun(next); setRestoreNotice(source === "New run" ? null : `Loaded ${source} — ${checkpointLabel(next)}`);
     setPlaySession((session) => session + 1); setRecovered(false); setDialog(null); setScreen("play");
   }
@@ -58,6 +76,7 @@ export function GameApp() {
   if (!ready) return <div className="boot">Jacking in</div>;
   return <>
     {screen === "play" && run ? <PlayScreen key={playSession} restoreNotice={restoreNotice} state={run} saveFailed={saveFailed} preferences={preferences}
+      audioPaused={audioPaused} onResumeAudio={() => { unlockAudio(); setAudioPaused(false); }}
       modalOpen={dialog !== null} onSettings={() => setDialog("settings")} onSaves={() => setDialog("saves")}
       onChange={(next) => { setRestoreNotice(null); updateRun(next); }} onTitle={title} onNewRun={() => { setCodex(loadCodex()); setRun(null); setScreen("create"); }}
       onAbandon={() => { clearSave(); setSaved(null); setRun(null); setSaveFailed(false); title(); }} />

@@ -131,6 +131,8 @@ The internal keyboard/decision-clarity implementation and blank session evidence
 
 **Cycle 9: fresh repeat and supported-device acceptance.**
 
+The internal interruption/muting/source-cleanup increment and prepared device worksheet are recorded in [PLAYER_EXPERIENCE.md](PLAYER_EXPERIENCE.md). This advances device readiness; the fresh-repeat, manual accessibility and physical-device acceptance work below remains pending.
+
 - Repeat the revised slice and full campaign with fresh participants. For the production slice gate, use the existing broader proposal of two fresh cohorts of approximately 12–20 participants, a revision between them and declared recruitment limits. The exploratory ten-player starting study does not automatically satisfy that gate.
 - Proposed slice criteria: at least 80% explain the goal and testimony/corroboration distinction, at least 75% identify a personal consequence, median agency at least 4/5 and no recurring severe blocker. Add a prompted post-play question on how the selected build changed available methods; do not count a prompted answer as spontaneous recognition.
 - Report actual denominators, completions, abandonments, device/access setup and prompted versus unprompted answers. Small cohorts inform revisions; they cannot establish population review grades or device percentiles.

@@ -46,6 +46,8 @@ export function PlayScreen({
   modalOpen,
   onSettings,
   onSaves,
+  audioPaused,
+  onResumeAudio,
 }: {
   state: GameState;
   restoreNotice?: string | null;
@@ -58,6 +60,8 @@ export function PlayScreen({
   modalOpen: boolean;
   onSettings: () => void;
   onSaves: () => void;
+  audioPaused: boolean;
+  onResumeAudio: () => void;
 }) {
   const scene = getScene(state.sceneId);
   const illustration = sceneIllustration(scene.id);
@@ -65,7 +69,7 @@ export function PlayScreen({
   const [pending, setPending] = useState<VisibleChoice | null>(null);
   const [sheetOpen, setSheetOpen] = useState(false);
   const [confirmAbandon, setConfirmAbandon] = useState(false);
-  const sound = preferences.sound;
+  const sound = preferences.sound && !audioPaused;
   const { mood, district } = sceneSoundPlan(state, scene.location, actName(state));
   const [fault, setFault] = useState("");
   const [delta, setDelta] = useState<string[]>([]);
@@ -106,8 +110,8 @@ export function PlayScreen({
     setBed(sound, mood, district);
     const previous = priorSound.current;
     if (sound && (!previous?.on || previous.location !== scene.location || Boolean(scene.ending) !== previous.ending)) playCue(locationCue(scene.location, Boolean(scene.ending)));
-    priorSound.current = { location: scene.location, on: sound, ending: Boolean(scene.ending) };
-  }, [sound, mood, district, scene.id, scene.location, scene.ending]);
+    priorSound.current = { location: scene.location, on: preferences.sound, ending: Boolean(scene.ending) };
+  }, [sound, preferences.sound, mood, district, scene.id, scene.location, scene.ending]);
 
   useEffect(() => () => { setBed(false); }, []);
 
@@ -251,6 +255,7 @@ export function PlayScreen({
                 </p>
                 {!scene.endingTitle && <h1 className="sr-only">{scene.location} · {actName(state)}</h1>}
                 <p className="goal" data-testid="goal">{currentGoal(state)}</p>
+                {audioPaused && preferences.sound && <div className="audio-paused" data-testid="audio-paused"><p role="status">Sound paused while you were away.</p><button className="ghost" type="button" onClick={() => { onResumeAudio(); document.getElementById("scene-top")?.focus({ preventScroll: true }); }}>Resume sound</button></div>}
                 <p className="sr-only" aria-live="polite">
                   {scene.location}. {actName(state)}. {currentGoal(state)}
                 </p>
@@ -304,7 +309,7 @@ export function PlayScreen({
             <ArchiveBrief state={state} />
             {!scene.memory && <TestimonyBrief state={state} />}
             <FieldKitBrief state={state} />
-            {scene.id === "memory_table" && <MemoryPlate key={scene.id} state={state} choices={choices} onInspect={pick} artwork={preferences.artwork !== "none"} />}
+            {scene.id === "memory_table" && <MemoryPlate key={scene.id} state={state} choices={choices} onInspect={pick} artwork={preferences.artwork !== "none"} numberShortcuts={preferences.numberShortcuts} />}
             <div className="prose" data-testid="scene-text">
               {paragraphs.slice(0, visibleCount).map((paragraph, index) => (
                 <p key={`${scene.id}-${index}`} id={`reading-paragraph-${index}`} tabIndex={-1}>{paragraph}</p>
@@ -321,8 +326,8 @@ export function PlayScreen({
               </div>
             )}
             {preferences.reading === "paragraph" && paragraphs.length > 1 && <p className="reading-progress hint" role="status" aria-atomic="true">{visibleCount} of {paragraphs.length} paragraphs shown</p>}
-            {dialogue && <VoiceLine key={`${scene.id}-${dialogue.id}`} line={dialogue} enabled={sound && preferences.voices > 0 && !modalOpen && !sheetOpen && !confirmAbandon && !activeChoice} />}
-            {scene.id === "memory_sequence" && <MemoryTimeline state={state} choices={choices} onPlace={pick} artwork={preferences.artwork !== "none"} reducedMotion={reduceMotion} />}
+            {dialogue && <VoiceLine key={`${scene.id}-${dialogue.id}`} line={dialogue} paused={audioPaused && preferences.sound} enabled={sound && preferences.voices > 0 && !modalOpen && !sheetOpen && !confirmAbandon && !activeChoice} />}
+            {scene.id === "memory_sequence" && <MemoryTimeline state={state} choices={choices} onPlace={pick} artwork={preferences.artwork !== "none"} reducedMotion={reduceMotion} numberShortcuts={preferences.numberShortcuts} />}
             {["act2_route_map", "act2_route_exit", "act2_route_review", "act2_route_crossing"].includes(scene.id) && <RouteBoard state={state} />}
             {scene.finale && campaignCoda(state) && <p data-testid="campaign-coda">{campaignCoda(state)}</p>}
             {scene.finale && relationshipCoda(state) && <p className="relationship-coda" data-testid="relationship-coda">{relationshipCoda(state)}</p>}
@@ -374,7 +379,7 @@ export function PlayScreen({
                 })}
               </div>
             )}
-            {scene.memory && scene.id !== "memory_table" && <details className="memory-review" data-testid="memory-review"><summary>Review the inspected memory · {memoryDisposition(state)}</summary><TestimonyBrief state={state} /><MemoryPlate key={scene.id} state={state} choices={choices} onInspect={pick} artwork={preferences.artwork !== "none"} /></details>}
+            {scene.memory && scene.id !== "memory_table" && <details className="memory-review" data-testid="memory-review"><summary>Review the inspected memory · {memoryDisposition(state)}</summary><TestimonyBrief state={state} /><MemoryPlate key={scene.id} state={state} choices={choices} onInspect={pick} artwork={preferences.artwork !== "none"} numberShortcuts={preferences.numberShortcuts} /></details>}
             {scene.ending && (
               <div className="actions">
                 <button className="primary" type="button" onClick={onNewRun}>

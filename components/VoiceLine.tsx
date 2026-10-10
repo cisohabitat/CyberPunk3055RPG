@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { playVoice, type VoiceStatus } from "@/lib/sound";
 import type { DialogueLine } from "@/lib/memory-media";
 
-export function VoiceLine({ line, enabled }: { line: DialogueLine; enabled: boolean }) {
+export function VoiceLine({ line, enabled, paused = false }: { line: DialogueLine; enabled: boolean; paused?: boolean }) {
   const [status, setStatus] = useState<VoiceStatus>("idle");
   const cancel = useRef<(() => void) | null>(null);
   useEffect(() => {
@@ -17,7 +17,7 @@ export function VoiceLine({ line, enabled }: { line: DialogueLine; enabled: bool
       if (active) { cancel.current?.(); cancel.current = null; setStatus("idle"); }
       else cancel.current = playVoice(line.id, setStatus);
     }}>{active ? "Stop line" : `Listen to ${name}`}</button>
-    <p className="hint" role="status">{!enabled ? "Enable Sound and voice volume in Settings to listen." : status === "loading" ? "Loading selected dialogue…" : status === "unavailable" ? "Voice unavailable. The complete dialogue remains in the text." : status === "playing" ? "Playing selected dialogue · synthetic voice" : "Selected dialogue · synthetic voice"}</p>
+    <p className="hint" role="status">{paused ? "Resume sound to listen. Dialogue stays in the text." : !enabled ? "Enable Sound and voice volume in Settings to listen." : status === "loading" ? "Loading selected dialogue…" : status === "unavailable" ? "Voice unavailable. The complete dialogue remains in the text." : status === "playing" ? "Playing selected dialogue · synthetic voice" : "Selected dialogue · synthetic voice"}</p>
     <details><summary>Voice transcript</summary><p>{line.text}</p></details>
   </aside>;
 }
