@@ -1,8 +1,8 @@
-# Saint Shard roadmap: 7.8 to a supported 9+
+# Saint Shard roadmap: 8.2 to a supported 9+
 
-Updated 10 October 2026. Baseline: `091403c`, 171 scenes / 477 choices, 75 deterministic replay routes, 276 unit tests and 460 browser checks. Five complete internal UI campaigns reached the original finales without exceptions. The latest **internal weighted grade is 7.8/10**; the earlier documented baseline was 7.0. Neither is an independent player-study result. See [the current assessment](REVIEW.md).
+Updated 11 October 2026. Current candidate: 185 scenes, 536 choices, 99 deterministic replay routes and 393 unit checks. The latest **provisional internal weighted grade is 8.2/10**; historical assessments remain in [the review](REVIEW.md). Simulated play is the primary development proxy while independent participants are unavailable. It supports development decisions and provisional grading without inventing human participation.
 
-This roadmap improves the existing browser narrative RPG. The [funded AAA production program](AAA_PRODUCTION_PLAN.md) remains the separate 24–30 month proposal for staffing, expanded campaign scope, commissions, localization and launch support. Completing these ten development cycles does not complete that larger program or guarantee a review score.
+This roadmap improves the existing browser narrative RPG. The [funded AAA production program](AAA_PRODUCTION_PLAN.md) remains the separate 24–30 month proposal for staffing, expanded campaign scope, commissions, localization and launch support. Completing development cycles does not complete that larger program or guarantee a review score.
 
 ## Quality targets and priorities
 
@@ -10,14 +10,16 @@ Use the existing review weights. Targets guide review; they are not predicted in
 
 | Area | Weight | Current internal grade | Review target | Required improvement |
 | --- | --- | --- | --- | --- |
-| Narrative and consequence | 20% | 8.0 | 9.5 | Strong dramatic throughline, distinct voices, less repeated explanation, satisfying delayed responses |
-| RPG depth and replay | 20% | 7.0 | 9.5 | Different build methods and outcomes, legible tradeoffs, varied interactive encounters |
-| Visual presentation | 15% | 7.5 | 9.3 | Consistent cast, expressive staging, deliberate shot selection and complete asset review |
-| Audio production | 10% | 6.8 | 9.2 | Directed principal dialogue, varied score states, location identity and independent mix review |
-| Usability and accessibility | 15% | 8.0 | 9.3 | Clear decisions and journal, real-device play, manual assistive-technology acceptance |
-| Engineering and release | 20% | 8.8 | 9.2 | Preserve reliability, improve release predictability, prove long-session and device behavior |
+| Narrative and consequence | 20% | 8.2 | 9.5 | Strong dramatic throughline, distinct voices, less repeated explanation, satisfying delayed responses |
+| RPG depth and replay | 20% | 7.8 | 9.5 | Recognizable build methods and outcomes, legible tradeoffs, varied interactive encounters |
+| Visual presentation | 15% | 7.8 | 9.3 | Expressive staging, stronger visual storytelling, complete cast and asset review |
+| Audio production | 10% | 7.5 | 9.2 | Expressive principal dialogue, varied score states, location identity and mix review |
+| Usability and accessibility | 15% | 8.4 | 9.3 | Clear decisions and journal, easier long investigations, device and manual accessibility review |
+| Engineering and release | 20% | 9.0 | 9.2 | Preserve reliability and release predictability, establish supported-device performance |
 
-Current weighted total: **7.765**, rounded to 7.8. Target weighted total: **9.35**, with every area at least 9.0. Gameplay has the largest weighted shortfall (0.50 points), followed by narrative (0.30), visual presentation (0.27), audio (0.24), usability (0.195) and engineering (0.08). Prioritize experience improvements; more scenes and more automated checks do not themselves raise these grades.
+Current weighted total: **8.18**, rounded to 8.2. Target weighted total: **9.35**, with every area at least 9.0. Weighted shortfalls are RPG depth 0.34, narrative 0.26, visuals 0.225, audio 0.17, usability 0.135 and engineering 0.04. More scenes and automated checks alone do not raise these grades.
+
+The ten internal implementation cycles below have shipped their respective work; independent acceptance remains separate. The [latest narrative cycle](STORY_CLARITY_CYCLE.md) makes skipped-opening stakes and Week consequences explicit. Next, compare builds across the Chapel, witness transfer and Kerr collection with matched resources and failures; revise choices that still converge. Then strengthen staging and audio for the stable scenes and repeat simulated full-campaign review. Continue this findings-led loop without requiring participant recruitment to advance development.
 
 ## Delivery order and capacity
 

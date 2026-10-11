@@ -1,5 +1,15 @@
 import type { GameState } from "../types";
 
+export function weekRetell(state: GameState): string {
+  if (state.flags.act2_exposed) return "Helion filed its version of your failed attempt to speak in the street.";
+  if (state.flags.act2_deal) {
+    const price = state.flags.ives_open || state.flags.kerr_sold_you ? "forty" : "eighty";
+    return `You took Helion's ${price}-creds offer for a week of silence.`;
+  }
+  if (state.flags.act2_stand) return "You spoke Mara's name and Ward Nine in the street. The wards began repeating your account.";
+  return "The week's choice between speaking in the street and taking Helion's silence money remains unresolved.";
+}
+
 export function nightRetell(state: GameState): string[] {
   const chapel = state.flags.act1_sold
     ? "You left the chapel by selling Mara's hour."
@@ -18,13 +28,7 @@ export function nightRetell(state: GameState): string[] {
                 : state.flags.act1_sainted
                   ? "You left the chapel in the chair, and came back without the reason you walked in."
                   : "You left the chapel with the hour still undecided.";
-  const week = state.flags.act2_exposed
-    ? "The week got upstairs before you finished saying it."
-    : state.flags.act2_deal
-      ? "You sold the week to Helion."
-      : state.flags.act2_stand
-        ? "You put the week in the street and let the wards carry it."
-        : "The week ended before the street or the tower could price it.";
+  const week = weekRetell(state);
   const wall = state.flags.spoke_names
     ? "At the wall you said the names."
     : state.flags.confirmed_leak

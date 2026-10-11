@@ -1,4 +1,23 @@
-# Current internal game review — 10 October 2026
+# Current internal game review — 11 October 2026
+
+**Provisional internal grade: 8.2/10 as a browser narrative RPG.** This assesses the completed roadmap implementation and the [story clarity cycle](STORY_CLARITY_CYCLE.md), following `e1a3433`. Simulated play is the primary development proxy while independent participants are unavailable. This is an editorial judgment supported by source review, rendered UI and reproducible campaign observations; it is not a simulated participant average or independent AAA rating.
+
+| Area | Weight | Grade | Evidence and remaining weakness |
+| --- | --- | --- | --- |
+| Narrative and consequence | 20% | 8.2 | Concrete opening context, bounded source/consent continuity, remembered conduct and explicit chapter consequences. Character drama and whole-campaign pacing still need a stronger craft pass. |
+| RPG depth and replay | 20% | 7.8 | Saved Chapel allowance, method-specific preparations, practical allocation, Kerr route planning and failure recovery improve the old baseline. Progression remains compact and some encounters share a terms/preparation/check structure. |
+| Visual presentation | 15% | 7.8 | Deliberate responsive scene plates, expressive source feedback and state-aware art decisions. Reused staging, incomplete cast model sheets and limited visual storytelling remain weaknesses. |
+| Audio production | 10% | 7.5 | Fourteen optional fixed synthetic quotations, tension/quiet beds, district ambience and independent mixer controls. Performance expressiveness, dialogue coverage and subjective mix quality still constrain the score. |
+| Usability and accessibility | 15% | 8.4 | Actual-keyboard campaigns, separate reading/motion controls, concise decision names, interruption recovery and narrow text-only play. Long investigation paths remain demanding; manual assistive-technology and physical-device behavior are not established. |
+| Engineering and release | 20% | 9.0 | Durable saved outcomes, bounded media cleanup, replay/rollback tooling and an exact-commit release gate with a twenty-minute wait. Automated coverage is strong; device/network performance and independent acceptance remain incomplete. |
+
+Weighted total: **8.18**, rounded to **8.2**. The increase from the historical 7.8 reflects the accumulated encounter, integration, audiovisual, usability and release work since `091403c`; it is not a score increase awarded solely for this prose edit or a larger test count. The current audit preserves canonical choices and final states across 99 routes. Candidate verification includes 393 unit/replay checks, TypeScript, build/budgets, 15 local browser regressions and four complete UI campaigns. Full exact-revision CI and public checks remain mandatory before publication.
+
+The largest remaining quality gaps are **encounter variety and audiovisual craft**. The [updated roadmap](ROADMAP.md) keeps a weighted 9.35 target with every area at least 9.0. The next cycle compares build methods across multiple encounters, including failed and unfinished routes, then revises convergent decisions. Follow with stronger visual staging and expressive audio for stable scenes. Simulated evidence can drive those revisions now; the six independent production gates remain separately pending and do not block ordinary development.
+
+---
+
+# Historical internal review — 10 October 2026
 
 **Provisional internal grade: 7.8/10 as a browser narrative RPG**, reviewing `091403c`. This is a qualitative assessment informed by source review, rendered UI inspection and internal automated campaign play; it is not an independent player study or an AAA acceptance grade. The earlier 7.0 assessment is retained below as history.
 

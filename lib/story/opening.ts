@@ -13,6 +13,13 @@ export function openingMotive(state: GameState): string {
   return "";
 }
 
+export function skippedOpeningContext(state: GameState): string {
+  if (!state.flags.opening_skipped) return "";
+  if (state.origin === "gutterwire") return "You grew up under these pipes. The advance could pay for a dry place to sleep tomorrow. Whether this job is worth its terms is still yours to decide.";
+  if (state.origin === "spire") return "Your Helion badge no longer opens doors. The advance could buy time to build a life without it. You have not chosen what that life should be.";
+  return "You are a courier from the flats. The advance could buy your next crossing; the destination is still yours to choose.";
+}
+
 function motiveReminder(state: GameState): string {
   if (state.flags.opening_survival) return "You want work that will keep tomorrow yours.";
   if (state.flags.opening_identity) return "You want work without another claim on your name.";

@@ -196,9 +196,9 @@ function middleText(state: GameState): string {
   const returned = ["response_started", "kerr_route_started", "kerr_route_declined", "notice_started", "pump_attempted", "week_recovered", "witness_done", "memory_response_done", "archive_done"].some(flag => state.flags[flag]);
   if (returned) {
     const tab = state.flags.debt && !state.flags.quill_settled ? " Quill's tab is still open." : state.flags.quill_repaid_late ? " Quill kept the late payment beside the postponement." : "";
-    return `The canal grate is wet again. Ren draws a line through the water with her shoe. ‘Junie Calder. Don't lose her between jobs.’${tab}
+    return `Ren waits by the grate. You have heard why Junie matters to her.${tab}
 
-Help with what remains, put the account in the street, or sell the week to Helion. Unfinished commitments stay unfinished when you leave.`;
+Choose any remaining work, speak about Mara and Ward Nine in the street, or take Helion's money for silence. Leaving closes the week; unfinished commitments stay open.`;
   }
   const from = state.flags.kerr_told
     ? "Kerr kept the names in his mouth. The canal is quieter for it."
@@ -222,7 +222,7 @@ Help with what remains, put the account in the street, or sell the week to Helio
 
 ${from}${tab ? `\n\n${tab}` : ""}
 
-The street can carry your account. Helion can pay for your silence. There is still work you can choose before deciding whose week this becomes.`;
+You can speak about Mara and Ward Nine in the street, or take Helion's money for silence. Choose any remaining work before closing the week.`;
 }
 
 function wardsFinale(state: GameState): string {

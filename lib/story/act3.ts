@@ -3,15 +3,12 @@ import { spireVisitChoice } from "./spire";
 import { shelterVisitChoice } from "./shelter";
 import { freightVisitChoice } from "./freight";
 import { GOAL_WALL } from "./goal";
+import { weekRetell } from "./retell";
 import { kerrQuestionChoice, kerrVisitChoice, quillVisitChoice } from "./relationships";
 import type { GameState, Scene } from "../types";
 
 function wallCardText(state: GameState): string {
-  const did = state.flags.act2_exposed
-    ? "The week got upstairs before you finished saying it."
-    : state.flags.act2_deal
-      ? "You sold the week. The receipt does not spend well where the names are."
-      : "You put the week in the street. The street got it half right.";
+  const did = weekRetell(state);
   return `The Week\n\n${did}\n\nThe Wall is in Ward Nine. ${GOAL_WALL}`;
 }
 

@@ -4,6 +4,43 @@ import { createCharacter } from "../lib/engine";
 import type { GameState } from "../lib/types";
 import { exportRun } from "../lib/vault";
 
+for (const [origin, context] of [["gutterwire", "dry place to sleep"], ["spire", "build a life without it"], ["dustline", "next crossing"]] as const) test(`skipped ${origin} opening retains practical context without accepting the job`, async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem("saint-shard-preferences", JSON.stringify({ reading: "all", motion: "reduce", textStep: 2, contrast: "high" })));
+  const run = createCharacter({ handle: "Clarity", givenName: "Ada", origin, complication: "on-file", bonus: { chrome: 2, nerve: 0, face: 0, ghost: 0 }, startWithPrologue: true });
+  await openRun(page, run);
+  await page.getByTestId("choice-skip-opening").click();
+  await expect(page.getByTestId("scene-text")).toContainText(context);
+  const goal = await page.getByTestId("goal").boundingBox();
+  expect(goal!.y).toBeGreaterThanOrEqual(0); expect(goal!.y + goal!.height).toBeLessThanOrEqual(page.viewportSize()!.height);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  await page.reload(); await page.getByTestId("continue-run").click();
+  await expect(page.getByTestId("scene-text")).toContainText(context);
+  const restored = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(restored.flags.opening_skipped).toBe(true); expect(restored.flags.hired).toBeUndefined();
+  expect(restored.creds).toBe(run.creds); expect(restored.journal).toEqual(run.journal);
+  for (const flag of ["opening_survival", "opening_identity", "opening_exit"]) expect(restored.flags[flag]).toBeUndefined();
+  await page.getByTestId("choice-ask-owner").click(); await page.getByTestId("choice-back-to-offer").click();
+  await expect(page.getByTestId("scene-text")).not.toContainText(context);
+  await page.getByTestId("choice-accept").click();
+  const accepted = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(accepted.creds).toBe(run.creds + 50); expect(accepted.flags.hired).toBe(true);
+});
+
+for (const [sceneId, choice, price] of [["act2_middle", "deal", "eighty"], ["act2_folio", "cheap-deal", "forty"]] as const) test(`${price}-creds silence deal survives the chapter card and finale reload`, async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem("saint-shard-preferences", JSON.stringify({ reading: "all", motion: "reduce", artwork: "none", textStep: 2, contrast: "high" })));
+  const run = { ...createCharacter({ handle: "Clarity", givenName: "Ada", origin: "spire", complication: "on-file", bonus: { chrome: 2, nerve: 0, face: 0, ghost: 0 } }), sceneId };
+  await openRun(page, run);
+  await page.getByTestId(`choice-${choice}`).click(); await page.getByTestId("choice-back-to-board").click();
+  await expect(page.getByTestId("scene-text")).toContainText(`${price}-creds offer for a week of silence`);
+  await page.reload(); await page.getByTestId("continue-run").click();
+  await expect(page.getByTestId("scene-text")).toContainText(`${price}-creds offer for a week of silence`);
+  for (const id of ["to-the-wall", "to-ward-nine", "face-sera", "leave-wall"]) await page.getByTestId(`choice-${id}`).click();
+  await expect(page.getByTestId("night-retell").nth(1)).toContainText(`${price}-creds offer for a week of silence`);
+  const final = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(final.sceneId).toBe("ending_quiet"); expect(final.creds).toBe(run.creds + (price === "forty" ? 40 : 80));
+  for (const flag of ["order_verified", "archive_key_authenticated", "witness_safe", "nia_public_consent", "testimony_published"]) expect(final.flags[flag]).toBeUndefined();
+});
+
 test("later copy success replaces failed-copy prose across a saved check", async ({ page }) => {
   await page.addInitScript(() => {
     Math.random = () => 0;

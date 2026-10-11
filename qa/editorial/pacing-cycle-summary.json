@@ -1,0 +1,40 @@
+{
+  "method": "Identical pre-choice states from deterministic full-campaign fixtures; authored dice and retained source knowledge. Aggregate scene prose, excluding separately rendered finale retell. No reading-time or human-comprehension claim.",
+  "routes": 99,
+  "visits": 7254,
+  "canonicalDefinitionsUnchanged": true,
+  "finalStatesUnchanged": true,
+  "wordsBefore": 459604,
+  "wordsAfter": 458166,
+  "changePercent": -0.31,
+  "retellChangedVisits": 99,
+  "changedScenes": [
+    {
+      "scene": "stall",
+      "visits": 200,
+      "changedVisits": 3,
+      "before": 15603,
+      "after": 15582,
+      "maxBefore": 104,
+      "maxAfter": 104
+    },
+    {
+      "scene": "act2_middle",
+      "visits": 415,
+      "changedVisits": 415,
+      "before": 23805,
+      "after": 22119,
+      "maxBefore": 97,
+      "maxAfter": 97
+    },
+    {
+      "scene": "card_wall",
+      "visits": 99,
+      "changedVisits": 99,
+      "before": 3370,
+      "after": 3639,
+      "maxBefore": 35,
+      "maxAfter": 37
+    }
+  ]
+}

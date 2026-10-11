@@ -228,7 +228,7 @@
     },
     {
       "treatment": "text",
-      "reason": "Keep chapter cards and these outcome reflections in text; a shared outcome illustration would risk claiming evidence or consequences absent from a particular run.",
+      "reason": "Keep chapter cards and these outcome reflections in text; a shared outcome illustration would risk claiming evidence or consequences absent from a particular run. The Week card and finale retell state the actual silence offer, street speech or failed attempt without implying source authentication, witness safety or quotation consent.",
       "scenes": [
         "ending_sold",
         "ending_both",
@@ -260,7 +260,7 @@
     {
       "treatment": "background",
       "asset": "/art/canal.jpg",
-      "reason": "Reuse the established dry-canal backdrop for recovery and archive transitions. Evidence status remains in prose rather than an outcome image.",
+      "reason": "Reuse the established dry-canal backdrop for recovery and archive transitions. Evidence status remains in prose rather than an outcome image. Short canal returns retain Ren’s family context and an unresolved choice between street speech and paid silence; the setting depicts neither completed work nor publication.",
       "scenes": [
         "act2_middle",
         "act2_archive_verified"
@@ -429,7 +429,7 @@
     {
       "treatment": "illustration",
       "asset": "/art/quill-offer.jpg",
-      "reason": "Deliberate turning-point staging: Quill waits beside an untouched bowl at an amber-lit stall counter while rain falls beyond the awning. Prose remains authoritative about costs, evidence and permissions.",
+      "reason": "Deliberate turning-point staging: Quill waits beside an untouched bowl at an amber-lit stall counter while rain falls beyond the awning. Prose remains authoritative about costs, evidence and permissions. Full and skipped openings share the same unaccepted offer; practical runner context depicts no chosen motive or advance already paid.",
       "scenes": [
         "stall"
       ]

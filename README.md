@@ -342,3 +342,10 @@ Creation explains when an empty or whitespace-only street handle keeps entry una
 ### State-aware scene summaries
 
 A successful second copy now takes precedence over the earlier failed-copy sentence in the Chapel alley, while retaining the missed roll and its cost. Hearing drafts, journal records and factual aftermath distinguish an absent Nia recording from an approved private account. The Week's transfer option asks to arrange Nia's terms rather than asserting a prior relocation promise. Saved-check regressions cover the fail-then-success sequence and the original two-copy payout; recording and quotation permissions still require their own choices. Existing art accompanies these scenes; no new scene or voice quotation is added. Internal simulated play and regression checks supply no human acceptance or higher grade; 7.8 remains provisional.
+
+
+### Story clarity and simulated development validation
+
+Skipping the prologue now keeps a brief origin-specific practical stake at Quill’s first meeting without choosing a motive, accepting the contract or paying the advance. Canal returns avoid repeating Ren’s warning and explain street speech versus paid silence. Chapter cards and all four finale recaps name the actual forty/eighty-creds offer, street speech, failed attempt or unresolved Week; they grant no source authentication, witness safety, recording or public quotation permission.
+
+The [story clarity cycle](docs/STORY_CLARITY_CYCLE.md) records paired prose measurements and full/skip minimal/investigation campaigns. Simulated play is the primary development proxy while independent participants are unavailable; it can drive revisions and provisional grades without claiming human participation or closing separate production gates. The [current internal review](docs/REVIEW.md) is 8.2/10. Existing suitable art is retained with explicit updated rationales; no new scene or fixed voice quotation is added. Preserve version 2, `saint-shard-3055-v1`, recorded dice, 1d10, caps and all four finales.

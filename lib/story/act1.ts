@@ -1,6 +1,6 @@
 import { startWindow, windowResume } from "../chapel-window";
 import { chapelMethodResponse } from "../encounter-methods";
-import { openingMotive } from "./opening";
+import { openingMotive, skippedOpeningContext } from "./opening";
 import { PAY } from "../economy";
 import { ITEMS } from "../items";
 import type { Choice, GameState, NextSpec, Scene } from "../types";
@@ -65,7 +65,7 @@ function stallText(state: GameState): string {
     const owner = state.flags.job_owner_asked ? "He has named the owner of the hour. He has not named his buyer." : "";
     return `Quill turns the untouched bowl between his hands. "${advance} now. Two hundred for the intact shard. Before dawn. Those are the terms."\n\n${deal}${owner ? ` ${owner}` : ""}\n\nThe stallholder lifts another nest of noodles from the pot. Quill waits for your answer.`;
   }
-  const arrival = state.flags.opening_complete ? "" : ORIGIN_OPEN[state.origin];
+  const arrival = state.flags.opening_complete ? "" : skippedOpeningContext(state) || ORIGIN_OPEN[state.origin];
   return `Quill moves his bowl aside. "${state.handle}. Mara Voss, Helion logistics. Glass Chapel edits her memory at dawn. Bring me the original hour, intact. ${advance} now, two hundred on delivery. Her bodyguard is Kerr. He is paid to stop you."\n\n${[arrival, motive, complication].filter(Boolean).join(" ")}\n\n${[neighbor, keepsake, "Quill has not touched his dinner. You have not agreed to the job."].filter(Boolean).join(" ")}`;
 }
 
