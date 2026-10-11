@@ -1,5 +1,7 @@
 # Fresh-player slice research protocol
 
+For the next five-opening/five-campaign pilot and human listening/device work, use the [phase 3 study pack](PLAYER_STUDY_PACK.md), its spoiler-free participant brief and blank review sheets. This is prepared material; human sessions remain unperformed until actual records exist.
+
 Use this protocol for phases 1–2, then repeat its questions during beta. No recruitment, participant session, or external result has been completed by the repository tools. Obtain separate authorization for outreach and spending. The production review catalog contains spoilers; do not show it before a blind play session.
 
 Invite consented participants with a range of narrative-RPG familiarity and access needs. Explain the corporate violence, coercion, grief, and memory-editing content. Explain the purpose, who sees notes, how long they are kept, that participation can stop, and whether observation or recording is proposed. Obtain recording consent separately. Do not require names, player accounts, or full exported saves. Use a study-local participant code in research notes, not game telemetry.

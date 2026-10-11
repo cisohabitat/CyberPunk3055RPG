@@ -169,7 +169,8 @@ export function CreateScreen({
           </div>
         </fieldset>
         <p className="form-error" role="status">
-          {!handleOk && handle.length > 0 && "Handles use letters, numbers, spaces, apostrophes, or hyphens."}
+          {!handle.trim() && "Choose a street handle before entering the city."}
+          {handle.trim().length > 0 && !handleOk && "Handles use letters, numbers, spaces, apostrophes, or hyphens."}
           {handleOk && !givenOk && "That given name has a character the city won't print."}
           {handleOk && givenOk && remaining !== 0 && "Spend both points. Every stat is a way through the job."}
           {handleOk && givenOk && remaining === 0 && !complication && "Pick the complication. Everyone arrives carrying something."}
