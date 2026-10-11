@@ -1,0 +1,246 @@
+{
+  "cycle": "visual-staging",
+  "date": "2026-10-11",
+  "baseRevision": "7c745436d6cd170ce4dd34f7ded12f12e775048e",
+  "candidateFiles": {
+    "lib/art.ts": "b6c17ebee7f76ffa203af7d8464a2434965f40bf48b82e1c69e5819df7d34c68",
+    "app/globals.css": "3a9fae295b544139a6509a0d100fa6f1e2e5b598998f12d5db55d4aa88396e6b",
+    "tests/visual-staging.spec.ts": "61a3069e32796869a9c0ed8048704eff2fe2ad31f21210e85c363edf6cc6a4ca",
+    "qa/media/scene-art.json": "a2140e749b6adc0fd718b7898dc1aab392ca8a0440cdf883a7eb4fefb3da70a6",
+    "qa/media/art-provenance.json": "64501ac6a30eb7dbc93de3cb4407c2c56a65c6f3cc17666024bd363c06072a7b",
+    "public/art/mara-present.jpg": "c981bd1f21bfe996d6493e78987b4cffd63c06954d8d7be945a5799216866337",
+    "public/art/nia-arrival.jpg": "22829b36897ec6e10018754951c9ec8cf1ae6bdcacfd036e6508795961528fe7",
+    "public/art/kerr-handover-small.jpg": "210edf111c1b105e30bee4b3c17977dbd3ba4171d8cfad52387a374d431902c2",
+    "public/art/nia-arrival-small.jpg": "d9d01e6200c84b1891cf54b43c889f07850572615023ac73e67f45f60d5e5aae",
+    "public/art/kerr-handover.jpg": "30692b026b97a1bb5688d9f07588665ff944440dd4ad9e90be4a4f9df8adfa01",
+    "public/art/mara-present-small.jpg": "1eecf76d579895fd05a0fdeaff80cfa7766c1a29524b813fabe6c3e1cca98097",
+    "public/art/quill-offer.jpg": "c1dfbc8b368cd0d02542c14407a0b2733847425ce89d96e9ba2df49feae12c1c",
+    "public/art/quill-offer-small.jpg": "f8c07ba77633bc6f9727c57a6d063ad7bd81d762f3900c74ed70bea2f876c88d"
+  },
+  "unitReplayChecks": 413,
+  "focusedBrowserChecks": 45,
+  "campaigns": [
+    {
+      "route": "qa/routes/depot-build-chrome-failed.json",
+      "routeSha256": "dbe11065dc422cd44cadebe0e6670ee6b95fe6f6caabf37b9946f8ec8140c9e7",
+      "width": 390,
+      "artwork": "full",
+      "reading": "paragraph",
+      "visits": 76,
+      "reloads": 28,
+      "reveals": 68,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 350,
+        "strain": 2,
+        "rolls": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      "errors": [],
+      "failedMedia": []
+    },
+    {
+      "route": "qa/routes/response-clinic-revised.json",
+      "routeSha256": "1f88b73eda8fdb8ec0e4a6f03dbd49305cf49179489ef5ff6ec87ee7cc41dfb2",
+      "width": 320,
+      "artwork": "none",
+      "reading": "paragraph",
+      "visits": 76,
+      "reloads": 23,
+      "reveals": 68,
+      "final": {
+        "sceneId": "ending_listed",
+        "creds": 470,
+        "strain": 2,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "errors": [],
+      "failedMedia": []
+    },
+    {
+      "route": "qa/routes/response-private-lumen.json",
+      "routeSha256": "e0694e46822d9c541a1a0bcf61c85a1c849b9896d485cf76f10f1d34cee684fc",
+      "width": 390,
+      "artwork": "full",
+      "reading": "paragraph",
+      "visits": 75,
+      "reloads": 22,
+      "reveals": 67,
+      "final": {
+        "sceneId": "ending_witness",
+        "creds": 390,
+        "strain": 2,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "errors": [],
+      "failedMedia": []
+    },
+    {
+      "route": "qa/routes/response-private-mara.json",
+      "routeSha256": "ef349780bdf7c9e8ccff9938966f8cfa99c8b104f19e33448b1b4816742f8fef",
+      "width": 390,
+      "artwork": "full",
+      "reading": "paragraph",
+      "visits": 75,
+      "reloads": 22,
+      "reveals": 67,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 375,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "errors": [],
+      "failedMedia": []
+    },
+    {
+      "route": "qa/routes/response-public-pending.json",
+      "routeSha256": "da30f565eed647c374a4575c168880207c8252045368fbf29c2e3966bdb31d4a",
+      "width": 390,
+      "artwork": "full",
+      "reading": "paragraph",
+      "visits": 72,
+      "reloads": 19,
+      "reveals": 63,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 390,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "errors": [],
+      "failedMedia": []
+    },
+    {
+      "route": "qa/routes/response-public-revised.json",
+      "routeSha256": "9d0fb7fd5715b729907207aae3fbf21d19e3d52c13eb307ac5672f7c9e822e9c",
+      "width": 1440,
+      "artwork": "full",
+      "reading": "paragraph",
+      "visits": 74,
+      "reloads": 23,
+      "reveals": 67,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 375,
+        "strain": 2,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "errors": [],
+      "failedMedia": []
+    }
+  ],
+  "initialLoadSamples": [
+    {
+      "sceneId": "opening_city",
+      "width": 390,
+      "height": 844,
+      "artwork": "full",
+      "goalReadyMs": 2013,
+      "network": "Emulated 5 Mbps / 150 ms",
+      "elapsedToReadyMs": 3052,
+      "encodedResourceBytes": 937144,
+      "htmlBytes": 2195,
+      "titleLcpMs": 1260,
+      "layoutShift": 0,
+      "overflow": false,
+      "artworkRequests": 3,
+      "goalVisible": true
+    },
+    {
+      "sceneId": "opening_city",
+      "width": 390,
+      "height": 844,
+      "artwork": "none",
+      "goalReadyMs": 1902,
+      "network": "Emulated 5 Mbps / 150 ms",
+      "elapsedToReadyMs": 1940,
+      "encodedResourceBytes": 356684,
+      "htmlBytes": 2195,
+      "titleLcpMs": 1004,
+      "layoutShift": 0,
+      "overflow": false,
+      "artworkRequests": 0,
+      "goalVisible": true
+    },
+    {
+      "sceneId": "opening_city",
+      "width": 1440,
+      "height": 900,
+      "artwork": "full",
+      "goalReadyMs": 970,
+      "network": "Unthrottled automation host",
+      "elapsedToReadyMs": 1042,
+      "encodedResourceBytes": 1275360,
+      "htmlBytes": 2195,
+      "titleLcpMs": 232,
+      "layoutShift": 0,
+      "overflow": false,
+      "artworkRequests": 3,
+      "goalVisible": true
+    },
+    {
+      "sceneId": "opening_city",
+      "width": 1440,
+      "height": 900,
+      "artwork": "none",
+      "goalReadyMs": 907,
+      "network": "Unthrottled automation host",
+      "elapsedToReadyMs": 940,
+      "encodedResourceBytes": 356684,
+      "htmlBytes": 2195,
+      "titleLcpMs": 192,
+      "layoutShift": 0,
+      "overflow": false,
+      "artworkRequests": 0,
+      "goalVisible": true
+    }
+  ],
+  "grade": 8.2,
+  "limitations": "Internal source-familiar authored keyboard campaigns with directed dice and synthetic viewports. Hashes cover the listed changed runtime/media/QA files and route inputs, not the entire build. Initial WebKit candidate-selection test assumption was corrected; the affected check passed. No human participant, independent acceptance, physical-device or higher-grade claim. Exact-SHA CI and production verification follow push."
+}

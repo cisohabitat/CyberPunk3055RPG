@@ -559,34 +559,56 @@
     {
       "id": "quill-offer",
       "sourceTool": "image_gen.imagegen",
-      "generated": "2026-10-10",
-      "sourceFile": "/workspace/generated_images/exec-ed6377c3-35af-4a43-8419-1a7345dbca96.png",
-      "sourceSha256": "ad279826c9f1190e0ceeca93e7be4a8e815c6b271773ca03c9edcc5965997faf",
-      "promptSummary": "Quill waiting beside untouched bowl, amber counter and rainy walkway; no accepted offer or advance shown.",
-      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "generated": "2026-10-11",
+      "sourceFile": "/workspace/generated_images/exec-4e4c3c9e-e3a8-4f38-bdce-e9861cc5b670.png",
+      "sourceSha256": "9270a0a6e29932d625008392ccaf99f80df8689063dab238ccc5633323fc3a37",
+      "prompt": "Create an improved standalone 3:2 landscape cinematic story illustration for an original cyberpunk noir narrative game. Use the supplied reference to keep Quill's exact grey-haired older face, amber eyes, age, dark worn coat and stall identity. Change composition substantially: viewer sits across the narrow counter, Quill in left centre leaning forward with quiet intent, one relaxed hand beside an untouched ceramic noodle bowl, an empty counter space open to the viewer, steam curling into warm practical amber lamplight; distant petroleum blue rainy alley framed at right under canvas awning. No money or payment, no offered handshake, no gun, no lettering. The offer is unanswered. Strong restrained painted noir finish with visible subtle brush texture matching painterly character portraits, charcoal and petroleum blue, amber face and hands. One clear emotional focal point, readable small screen silhouettes, carefully natural anatomy. Rich atmospheric depth without excessive neon or microdetail, human scale. Full bleed single image, no panels, no captions, no border. 1536x1024 landscape.",
+      "promptSummary": "Create an improved standalone 3:2 landscape cinematic story illustration for an original cyberpunk noir narrative game. Use the supplied reference to keep Quill's exact grey-haired older face, amber eyes, age, dark worn coat and stall identity. Change composition substantially: viewer sits across the narrow counter, Quill in left centre leaning forward with quiet intent, one relaxed hand beside an untouched ceramic noodle bowl, an empty counter space open to the viewer, steam curling into warm practical amber lamplight; distant petroleum blue rainy alley framed at right under canvas awning. No money or payment, no offered handshake, no gun, no lettering. The offer is unanswered. Strong restrained painted noir finish with visible subtle brush texture matching painterly character portraits, charcoal and petroleum blue, amber face and hands. One clear emotional focal point, readable small screen silhouettes, carefully natural anatomy. Rich atmospheric depth without excessive neon or microdetail, human scale. Full bleed single image, no panels, no captions, no border. 1536x1024 landscape.",
+      "deliveryProcessing": "Sharp resize and JPEG encode only; original generated PNG retained. No crop or retouch.",
       "files": [
         {
           "path": "public/art/quill-offer.jpg",
           "width": 1200,
           "height": 800,
-          "bytes": 259163,
-          "sha256": "4aeaeecfdceb1c6e16b55aaf1552d47e782aba52b64e9dcbcf421d6e6c8e6ec3"
+          "bytes": 220896,
+          "sha256": "c1dfbc8b368cd0d02542c14407a0b2733847425ce89d96e9ba2df49feae12c1c"
         },
         {
           "path": "public/art/quill-offer-small.jpg",
           "width": 600,
           "height": 400,
-          "bytes": 80606,
-          "sha256": "8f7d5a67c340db278cfa88c0f7fc1d8aa72fd8e271bc971c909e10d4de116b75"
+          "bytes": 70212,
+          "sha256": "f8c07ba77633bc6f9727c57a6d063ad7bd81d762f3900c74ed70bea2f876c88d"
         }
       ],
       "references": [
         {
-          "path": "public/art/quill.jpg",
-          "sha256": "4971bcdc37e0853eb4bf0199b883d421ce7a71a77dd2b487c1974e616755311b"
+          "path": "public/art/quill-offer.jpg",
+          "sha256": "4aeaeecfdceb1c6e16b55aaf1552d47e782aba52b64e9dcbcf421d6e6c8e6ec3",
+          "revision": "7c745436d6cd170ce4dd34f7ded12f12e775048e"
         }
       ],
-      "reviewStatus": "Internal cast/composition review; independent art and distribution-rights acceptance pending."
+      "reviewStatus": "Internal character/composition inspection; independent art and distribution-rights acceptance pending.",
+      "supersedes": {
+        "sourceFile": "/workspace/generated_images/exec-ed6377c3-35af-4a43-8419-1a7345dbca96.png",
+        "sourceSha256": "ad279826c9f1190e0ceeca93e7be4a8e815c6b271773ca03c9edcc5965997faf",
+        "references": [
+          {
+            "path": "public/art/quill.jpg",
+            "sha256": "4971bcdc37e0853eb4bf0199b883d421ce7a71a77dd2b487c1974e616755311b"
+          }
+        ],
+        "deliveryHashes": [
+          {
+            "path": "public/art/quill-offer.jpg",
+            "sha256": "4aeaeecfdceb1c6e16b55aaf1552d47e782aba52b64e9dcbcf421d6e6c8e6ec3"
+          },
+          {
+            "path": "public/art/quill-offer-small.jpg",
+            "sha256": "8f7d5a67c340db278cfa88c0f7fc1d8aa72fd8e271bc971c909e10d4de116b75"
+          }
+        ]
+      }
     },
     {
       "id": "chapel-reader",
@@ -794,6 +816,108 @@
         }
       ],
       "reviewStatus": "Internal cast/composition review; independent art and distribution-rights acceptance pending."
+    },
+    {
+      "id": "mara-present",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-11",
+      "sourceFile": "/workspace/generated_images/exec-d6a20e3a-8fac-4720-9555-4e08827727bc.png",
+      "sourceSha256": "22596a1a90fb488fd36a30b715d5b63a56b512d58546c303b7a18ccfe9d04389",
+      "prompt": "Create a single 3:2 landscape painted cinematic illustration for an original cyberpunk noir narrative game. Preserve exactly the supplied Mara character identity: pale tired woman in her thirties, dark hair loosely tied back, slim dark charcoal collared shirt, restrained weary face. This is the present-day living woman in a modest clinic side room, NOT a projected recorded memory: remove all cyan halo/projection hardware. Seated three-quarter waist-up beside rain streaked window on left, attentive but firm and unsmiling, her hands resting naturally by an unmarked plain envelope and a plain ceramic tea cup on a small table; envelope partly turned toward herself. Empty spare chair on right separated by table space. No written text, seals, records receipt, signature, medical treatment, applause or forgiveness. Lumen is outside frame. Intimate side lighting, muted amber desk lamp and cool petroleum blue rain, charcoal, subtle aged plaster, carefully legible face and hand silhouette at phone scale. Restrained painted noir brush texture consistent with supplied portrait, cinematic foreground/table/midground/soft background depth, emotional specificity and natural anatomy. Full bleed, no frames/panels/captions, 1536x1024 landscape.",
+      "promptSummary": "Create a single 3:2 landscape painted cinematic illustration for an original cyberpunk noir narrative game. Preserve exactly the supplied Mara character identity: pale tired woman in her thirties, dark hair loosely tied back, slim dark charcoal collared shirt, restrained weary face. This is the present-day living woman in a modest clinic side room, NOT a projected recorded memory: remove all cyan halo/projection hardware. Seated three-quarter waist-up beside rain streaked window on left, attentive but firm and unsmiling, her hands resting naturally by an unmarked plain envelope and a plain ceramic tea cup on a small table; envelope partly turned toward herself. Empty spare chair on right separated by table space. No written text, seals, records receipt, signature, medical treatment, applause or forgiveness. Lumen is outside frame. Intimate side lighting, muted amber desk lamp and cool petroleum blue rain, charcoal, subtle aged plaster, carefully legible face and hand silhouette at phone scale. Restrained painted noir brush texture consistent with supplied portrait, cinematic foreground/table/midground/soft background depth, emotional specificity and natural anatomy. Full bleed, no frames/panels/captions, 1536x1024 landscape.",
+      "deliveryProcessing": "Sharp resize and JPEG encode only; original generated PNG retained. No crop or retouch.",
+      "files": [
+        {
+          "path": "public/art/mara-present.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 131838,
+          "sha256": "c981bd1f21bfe996d6493e78987b4cffd63c06954d8d7be945a5799216866337"
+        },
+        {
+          "path": "public/art/mara-present-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 38095,
+          "sha256": "1eecf76d579895fd05a0fdeaff80cfa7766c1a29524b813fabe6c3e1cca98097"
+        }
+      ],
+      "references": [
+        {
+          "path": "public/art/mara.jpg",
+          "sha256": "2b1c67aa8a9519999a98e8559edc831406e2014fd42d91bf4ab1ae7b1e0d3214",
+          "revision": "7c745436d6cd170ce4dd34f7ded12f12e775048e"
+        }
+      ],
+      "reviewStatus": "Internal character/composition inspection; independent art and distribution-rights acceptance pending."
+    },
+    {
+      "id": "nia-arrival",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-11",
+      "sourceFile": "/workspace/generated_images/exec-09ab2f78-aa0f-474a-8605-ab3f02bba9d4.png",
+      "sourceSha256": "ad4c15b331e639a15bb9ed70a344a7e6b830e4adb091d97474d73f1cf3744c23",
+      "prompt": "Create one standalone 3:2 landscape cinematic painted noir scene using supplied reference for exact Nia Pell identity, medium brown skin, short dark curly hair with grey strands, face in her forties, burgundy cardigan over grey top. Nia has arrived in a modest Ward Nine witness room and waits to decide whether to review her account. She sits in a practical wheelchair at a small table near a curtained rain streaked window, three-quarter seated view, one hand on her own chair arm and other resting lightly beside a CLOSED plain notebook. No recording device, no microphone, no camera in scene, no medical treatment, no readable names or writing, no sworn consent, no papers signed, no triumphant relief. Her look is attentive and self-possessed, slightly cautious, looking toward viewer. Warm practical amber table lamp contrasts muted petroleum blue window; aged plaster, curtains drawn partly, private ordinary room with dignified human scale. Keep visible portrait identity and clothes but bring consistent restrained brush texture of noir character portraits, strong focal face, clear silhouette and natural hands, purposeful composition with foreground table, midground person, soft room depth. No grids/panels/labels/borders. 1536x1024 landscape.",
+      "promptSummary": "Create one standalone 3:2 landscape cinematic painted noir scene using supplied reference for exact Nia Pell identity, medium brown skin, short dark curly hair with grey strands, face in her forties, burgundy cardigan over grey top. Nia has arrived in a modest Ward Nine witness room and waits to decide whether to review her account. She sits in a practical wheelchair at a small table near a curtained rain streaked window, three-quarter seated view, one hand on her own chair arm and other resting lightly beside a CLOSED plain notebook. No recording device, no microphone, no camera in scene, no medical treatment, no readable names or writing, no sworn consent, no papers signed, no triumphant relief. Her look is attentive and self-possessed, slightly cautious, looking toward viewer. Warm practical amber table lamp contrasts muted petroleum blue window; aged plaster, curtains drawn partly, private ordinary room with dignified human scale. Keep visible portrait identity and clothes but bring consistent restrained brush texture of noir character portraits, strong focal face, clear silhouette and natural hands, purposeful composition with foreground table, midground person, soft room depth. No grids/panels/labels/borders. 1536x1024 landscape.",
+      "deliveryProcessing": "Sharp resize and JPEG encode only; original generated PNG retained. No crop or retouch.",
+      "files": [
+        {
+          "path": "public/art/nia-arrival.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 142591,
+          "sha256": "22829b36897ec6e10018754951c9ec8cf1ae6bdcacfd036e6508795961528fe7"
+        },
+        {
+          "path": "public/art/nia-arrival-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 43412,
+          "sha256": "d9d01e6200c84b1891cf54b43c889f07850572615023ac73e67f45f60d5e5aae"
+        }
+      ],
+      "references": [
+        {
+          "path": "public/art/nia.jpg",
+          "sha256": "d7303d8d8359b2ea99ac67c1ae8ebf676618f65268d0c006681e90315b35e41e",
+          "revision": "7c745436d6cd170ce4dd34f7ded12f12e775048e"
+        }
+      ],
+      "reviewStatus": "Internal character/composition inspection; independent art and distribution-rights acceptance pending."
+    },
+    {
+      "id": "kerr-handover",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-11",
+      "sourceFile": "/workspace/generated_images/exec-e73f4514-307e-4799-998b-e4aa6a99edd9.png",
+      "sourceSha256": "ed04f4a66ad0188139a7d53a8c8c5623d6aa94ef5417bff558dce505c22c2a9f",
+      "prompt": "Create a single 3:2 landscape cinematic story illustration for an original cyberpunk painted noir game. Preserve exact supplied Kerr identity: broad middle aged man, short dark hair, heavy brow, square weathered face, repaired black coat, subdued visible left arm hardware. He is at Ward Four rain sheltered stall, sober guarded neutral expression, no smile/gratitude. Medium three-quarter waist-up composition: he checks a small unmarked tag on a CLOSED sturdy rectangular brace case resting between himself and the viewer on the wooden counter. One natural hand touches the case strap; no opened case, no wearing/fitting a brace, no medical treatment, no signed paperwork, no money, no handshake, no visible recipient identities, no text. Case fully closed, label blank and unreadable. Quiet observed handover, all registration terms still carried in written story, no promise of healing or forgiven betrayal. Warm amber lantern at frame side, cool petroleum blue rain alley beyond awning; charcoal painted brush texture matching supplied portrait, strong human scale face and closed-case silhouettes legible at phone size, rich light depth and carefully anatomically natural hands. Full bleed landscape, no panels/captions/borders, 1536x1024.",
+      "promptSummary": "Create a single 3:2 landscape cinematic story illustration for an original cyberpunk painted noir game. Preserve exact supplied Kerr identity: broad middle aged man, short dark hair, heavy brow, square weathered face, repaired black coat, subdued visible left arm hardware. He is at Ward Four rain sheltered stall, sober guarded neutral expression, no smile/gratitude. Medium three-quarter waist-up composition: he checks a small unmarked tag on a CLOSED sturdy rectangular brace case resting between himself and the viewer on the wooden counter. One natural hand touches the case strap; no opened case, no wearing/fitting a brace, no medical treatment, no signed paperwork, no money, no handshake, no visible recipient identities, no text. Case fully closed, label blank and unreadable. Quiet observed handover, all registration terms still carried in written story, no promise of healing or forgiven betrayal. Warm amber lantern at frame side, cool petroleum blue rain alley beyond awning; charcoal painted brush texture matching supplied portrait, strong human scale face and closed-case silhouettes legible at phone size, rich light depth and carefully anatomically natural hands. Full bleed landscape, no panels/captions/borders, 1536x1024.",
+      "deliveryProcessing": "Sharp resize and JPEG encode only; original generated PNG retained. No crop or retouch.",
+      "files": [
+        {
+          "path": "public/art/kerr-handover.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 179798,
+          "sha256": "30692b026b97a1bb5688d9f07588665ff944440dd4ad9e90be4a4f9df8adfa01"
+        },
+        {
+          "path": "public/art/kerr-handover-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 55993,
+          "sha256": "210edf111c1b105e30bee4b3c17977dbd3ba4171d8cfad52387a374d431902c2"
+        }
+      ],
+      "references": [
+        {
+          "path": "public/art/kerr.jpg",
+          "sha256": "ec67f4b4299b3ff3302f9e6ae399dc2988d3f086b4f75bd8db2f481884b500ea",
+          "revision": "7c745436d6cd170ce4dd34f7ded12f12e775048e"
+        }
+      ],
+      "reviewStatus": "Internal character/composition inspection; independent art and distribution-rights acceptance pending."
     }
   ]
 }

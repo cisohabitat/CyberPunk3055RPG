@@ -1,0 +1,62 @@
+import { expect, test, type Page } from "@playwright/test";
+import { createCharacter } from "../lib/engine";
+import type { GameState } from "../lib/types";
+
+const scenarios = [
+  { sceneId: "stall", art: "quill-offer", flags: {} },
+  { sceneId: "act2_response_invitation", art: "mara-present", flags: { heard_memo: true } },
+  { sceneId: "act2_response_agenda", art: "mara-present", flags: { response_started: true, response_public_refused: true, response_private_consent: true }, portrait: "mara-boundary" },
+  { sceneId: "act3_response_visit", art: "mara-present", flags: { response_started: true, response_pending: true } },
+  { sceneId: "act3_response_visit", art: "mara-present", flags: { response_started: true, response_sent: true, response_public_refused: true }, portrait: "mara-boundary" },
+  { sceneId: "act2_witness_arrival", art: "nia-arrival", flags: { witness_briefed: true, witness_safe: true, witness_done: true } },
+  { sceneId: "act2_route_receipt", art: "kerr-handover", flags: { kerr_route_collected: true, kerr_route_private: true } },
+  { sceneId: "act2_route_receipt", art: "kerr-handover", flags: { kerr_route_collected: true, kerr_route_private: true, kerr_route_trace: true, kerr_route_acknowledged: true }, portrait: "kerr-closed" },
+] as const;
+const base = createCharacter({ handle: "Visual QA", givenName: "Ada", origin: "spire", bonus: { chrome: 0, nerve: 0, face: 2, ghost: 0 } });
+async function open(page: Page, run: GameState, artwork: string) {
+  await page.addInitScript(({ run, artwork }) => {
+    localStorage.setItem("saint-shard-3055-v1", JSON.stringify(run));
+    localStorage.setItem("saint-shard-preferences", JSON.stringify({ reading: "all", artwork, sound: false, textStep: 2, contrast: "high", motion: "reduce" }));
+  }, { run, artwork });
+  await page.goto("/"); await page.getByTestId("continue-run").click();
+}
+for (const [width, artwork] of [[390, "full"], [1440, "full"], [320, "none"]] as const) test(`complete compositions preserve boundaries and saves at ${width}px`, async ({ browser, baseURL }) => {
+  test.setTimeout(90_000);
+  for (const scenario of scenarios) {
+    const context = await browser.newContext({ baseURL, viewport: { width, height: width > 700 ? 900 : 844 }, reducedMotion: "reduce" });
+    const page = await context.newPage(); const media: string[] = [];
+    page.on("request", r => { if (/\/(art|audio)\//.test(r.url())) media.push(r.url()); });
+    const run = { ...base, sceneId: scenario.sceneId, flags: { ...scenario.flags } };
+    await open(page, run, artwork);
+    const goal = await page.getByTestId("goal").boundingBox();
+    expect(goal!.y).toBeGreaterThanOrEqual(0); expect(goal!.y + goal!.height).toBeLessThanOrEqual(page.viewportSize()!.height);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    if (artwork === "none") { await expect(page.getByTestId("scene-illustration")).toHaveCount(0); expect(media).toEqual([]); }
+    else {
+      const img = page.getByTestId("scene-illustration").locator("img");
+      await expect(img).toHaveAttribute("src", `/art/${scenario.art}.jpg`);
+      await img.scrollIntoViewIfNeeded();
+      const decoded = await img.evaluate(async (el: HTMLImageElement) => { await el.decode(); const box = el.getBoundingClientRect(); return { width: el.naturalWidth, ratio: box.width / box.height, fit: getComputedStyle(el).objectFit, source: el.currentSrc }; });
+      expect(decoded.width).toBeGreaterThan(0); expect(decoded.ratio).toBeCloseTo(1.5, 2); expect(decoded.fit).toBe("contain");
+      await expect(img).toHaveAttribute("srcset", `/art/${scenario.art}-small.jpg 600w, /art/${scenario.art}.jpg 1200w`);
+      // Browsers may retain/prefer the larger candidate; both are valid deliveries.
+      expect(decoded.source).toMatch(new RegExp(`/art/${scenario.art}(-small)?[.]jpg$`));
+      if ("portrait" in scenario) await expect(page.locator(".scene-row .portrait")).toHaveAttribute("src", `/art/${scenario.portrait}.jpg`);
+    }
+    expect(await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!))).toEqual(run);
+    await context.close();
+  }
+});
+
+test("missing new scene plates retain their descriptions and actionable choices", async ({ browser, baseURL }) => {
+  for (const scenario of scenarios.filter(s => ["act2_response_invitation", "act2_witness_arrival", "act2_route_receipt"].includes(s.sceneId)).slice(0, 3)) {
+    const context = await browser.newContext({ baseURL }); const page = await context.newPage();
+    await page.route("**/art/**", r => r.abort());
+    await open(page, { ...base, sceneId: scenario.sceneId, flags: { ...scenario.flags } }, "full");
+    const figure = page.getByTestId("scene-illustration"); await figure.scrollIntoViewIfNeeded();
+    await expect(figure.locator(".art-unavailable")).not.toBeEmpty();
+    await expect(page.getByTestId("goal")).toBeVisible();
+    await expect(page.locator('[data-testid^="choice-"]:enabled').first()).toBeVisible();
+    await context.close();
+  }
+});

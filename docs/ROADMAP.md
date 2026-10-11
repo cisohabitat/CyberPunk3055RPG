@@ -224,3 +224,6 @@ The memory gameplay cycle adds a persistent three-slot timeline, claim/source ve
 
 
 The character and pacing cycle adds Mara’s current private reply, Lumen’s independent clinic/contact terms, distinct refused proposals, quiet questions, saved dispatch and delayed unanswered receipt. It also adds suitable room art, two fixed synthetic lines and character beats before all four factual finale recaps. The current candidate is 171 scenes / 477 choices with 75 full replay routes. This advances relationship agency, encounter variation and pacing, with internal full-campaign play and a neutral independent-session protocol. Following work remains full-campaign narrative editing, evidence-led build balancing, commissioned presentation and two fresh-player cohorts before a supported above-9.0 review. See [the execution phases and following milestones](CHARACTER_ARCS.md).
+
+
+The [visual staging cycle](VISUAL_STAGING_CYCLE.md) strengthens four stable character moments and preserves complete scene framing. This is a focused presentation improvement, not a new 9+ grade. Continue with the fourteen-clip performance and ambience review, then repeat campaign pacing/replay assessment. The provisional internal 8.2 grade and separate production gates remain unchanged.

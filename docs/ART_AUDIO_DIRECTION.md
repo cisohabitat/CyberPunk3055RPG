@@ -72,3 +72,8 @@ All 349 unit/replay checks, TypeScript and the final production build pass. Thir
 The offline audition and updated media pack retain 30 PNG masters and 22 PCM masters, 62 delivered JPEGs, 42 delivered WAVs, synthesis sources, voice license copies, provenance and direction briefs. Check initial-load probes, exact-SHA CI and public deployment evidence before handback. Six independent commercial-production gates remain pending.
 
 Next phase: Phase 5 fresh-player observation, accessibility and named physical-device revisions. Use the prepared character playtest sessions and capture real findings; do not substitute these automated campaigns for recruited/consented sessions. Art direction, full-loop fatigue/intelligibility, performer acceptance and distribution-rights reviews still require named independent reviewers. No participants were contacted, no paid commissions were placed and no approval or 9+ regrade is claimed.
+
+
+## Present-day visual staging cycle — 11 October 2026
+
+See [the shot decisions and validation](VISUAL_STAGING_CYCLE.md). Four generated compositions retain cast identity: an open counter and waiting bowl for Quill; ordinary light and an unmarked envelope for present-day Mara; a closed notebook and self-directed posture for Nia; a closed brace case and sober tag check for Kerr. The separate saved-conduct portraits remain authoritative for refusals and privacy breaches. Complete 3:2 framing replaces the previous shallow desktop crop. Audio and fixed quotations are unchanged in this cycle; the next audio pass should audition all fourteen clips and tune scene dynamics against this stable staging.

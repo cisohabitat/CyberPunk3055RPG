@@ -358,3 +358,10 @@ Kerr’s collection now offers four saved trained tasks alongside the original r
 One attempt persists through canal returns and reloads. Fees and waiting cannot repeat; failure or abandonment keeps registered-courier/unresolved recovery available. Handover remains separately observed. Entry registration, failed attempts, unpaid work and historical betrayal survive into Kerr’s response and finale records; no care, evidence or witness permission is granted. All ten new scenes have an explicit art decision and reuse the suitable neutral depot illustration with existing canal ambience; fixed voice quotations are unchanged.
 
 The [build comparison and phase validation](docs/DEPOT_BUILD_VARIETY.md) records 24 synthetic eligible-state comparisons, four distinct full campaigns and repeatable engine/browser checks. Preserve save version 2, `saint-shard-3055-v1`, recorded dice, 1d10, caps and all original finales. Simulated play remains the primary development proxy; the provisional internal grade stays 8.2 and separate production gates remain pending. The next phase improves visual staging and expressive audio for stable scenes.
+
+
+### Present-day scene staging
+
+Quill’s opening offer has a closer counter composition. Mara’s voluntary clinic conversation, Nia’s arrival before account approval and Kerr’s closed-case handover now have character-led scene plates. Frames retain their complete 3:2 composition on phone and desktop, keeping hands and significant objects visible. Refusal and privacy-breach portraits still reflect saved conduct; the pictures grant no additional permission or treatment outcome.
+
+The [visual staging cycle](docs/VISUAL_STAGING_CYCLE.md) records source references, responsive delivery and validation. Text-only play omits artwork, and unavailable plates retain descriptions and choices. Save version 2, `saint-shard-3055-v1`, recorded dice and all four finales are preserved. The internal grade remains 8.2; expressive audio is the next cycle.

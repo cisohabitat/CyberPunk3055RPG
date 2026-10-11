@@ -140,7 +140,7 @@
     {
       "treatment": "portrait",
       "asset": "/art/quill.jpg",
-      "reason": "Reuse Quill\u2019s existing portrait for briefing, memory ownership questions and recurring street work. The counter remains the same place; no new setting plate is needed. His portrait does not reveal the buyer, memo contents or an accepted contract.",
+      "reason": "Reuse Quill’s existing portrait for briefing, memory ownership questions and recurring street work. The counter remains the same place; no new setting plate is needed. His portrait does not reveal the buyer, memo contents or an accepted contract.",
       "scenes": [
         "pay_yes",
         "pay_no",
@@ -172,7 +172,7 @@
     {
       "treatment": "portrait",
       "asset": "/art/lumen.jpg",
-      "reason": "Use Lumen\u2019s established portrait for clinic, care, source and dispatch conversations. Her presence identifies the recurring speaker; no art claims treatment, witness safety or completed repair.",
+      "reason": "Use Lumen’s established portrait for clinic, care, source and dispatch conversations. Her presence identifies the recurring speaker; no art claims treatment, witness safety or completed repair.",
       "scenes": [
         "lumen",
         "lumen_deal",
@@ -203,7 +203,7 @@
     {
       "treatment": "portrait",
       "asset": "/art/mara.jpg",
-      "reason": "Reuse Mara\u2019s established portrait at the chair and during replay/interpretation of her recorded hour. Prose identifies recorded testimony; the portrait supplies no new live response, source proof or verdict.",
+      "reason": "Reuse Mara’s established portrait at the chair and during replay/interpretation of her recorded hour. Prose identifies recorded testimony; the portrait supplies no new live response, source proof or verdict.",
       "scenes": [
         "vault_quiet",
         "memory_reconstruction",
@@ -214,7 +214,7 @@
     {
       "treatment": "portrait",
       "asset": "/art/kerr.jpg",
-      "reason": "Reuse Kerr\u2019s established portrait for confrontation, checkpoint and repair guidance. It depicts no rolled outcome, injury or successful repair.",
+      "reason": "Reuse Kerr’s established portrait for confrontation, checkpoint and repair guidance. It depicts no rolled outcome, injury or successful repair.",
       "scenes": [
         "kerr",
         "kerr_fight",
@@ -260,7 +260,7 @@
     {
       "treatment": "background",
       "asset": "/art/canal.jpg",
-      "reason": "Reuse the established dry-canal backdrop for recovery and archive transitions. Evidence status remains in prose rather than an outcome image. Short canal returns retain Ren\u2019s family context and an unresolved choice between street speech and paid silence; the setting depicts neither completed work nor publication.",
+      "reason": "Reuse the established dry-canal backdrop for recovery and archive transitions. Evidence status remains in prose rather than an outcome image. Short canal returns retain Ren’s family context and an unresolved choice between street speech and paid silence; the setting depicts neither completed work nor publication.",
       "scenes": [
         "act2_middle",
         "act2_archive_verified"
@@ -269,11 +269,10 @@
     {
       "treatment": "portrait",
       "asset": "/art/nia.jpg",
-      "reason": "Reuse Nia\u2019s distinct portrait for private terms, review and contact. Never depict or expose a current address, moved witness or permission not present in the state. For an older save already at her reply, reuse remains suitable for her explicit one-answer terms without depicting renewed ongoing contact.",
+      "reason": "Reuse Nia’s distinct portrait for private terms, review and contact. Never depict or expose a current address, moved witness or permission not present in the state. For an older save already at her reply, reuse remains suitable for her explicit one-answer terms without depicting renewed ongoing contact.",
       "scenes": [
         "act3_testimony_nia",
         "act2_witness_brief",
-        "act2_witness_arrival",
         "act3_witness_visit",
         "act3_nia_contact"
       ]
@@ -324,7 +323,6 @@
       "asset": "/art/kerr.jpg",
       "scenes": [
         "act2_kerr_collection_terms",
-        "act2_route_receipt",
         "act3_kerr_collection",
         "act3_kerr_collection_response",
         "act3_kerr_personal_question"
@@ -342,8 +340,8 @@
     },
     {
       "treatment": "illustration",
-      "asset": "/art/clinic-conversation.jpg",
-      "reason": "A neutral voluntary clinic table establishes current conversation and later receipt without depicting endorsement, public consent, medical improvement or an inquiry decision.",
+      "asset": "/art/mara-present.jpg",
+      "reason": "Mara is physically present for the voluntary clinic conversation and later visit. Ordinary light, an unmarked envelope and cup distinguish her from the recorded hour; neither dispatch, endorsement, public permission nor an inquiry finding is pictured. Refusal remains visible in the separate conduct portrait.",
       "scenes": [
         "act2_response_invitation",
         "act2_response_agenda",
@@ -434,12 +432,12 @@
       "scenes": [
         "act3_chapel_return"
       ],
-      "reason": "Reuse Lumen\u2019s neutral conversation portrait for her short Ward Nine desk reply about the Chapel record. No new place, forgiveness, completed work or cleared patrol attention is illustrated."
+      "reason": "Reuse Lumen’s neutral conversation portrait for her short Ward Nine desk reply about the Chapel record. No new place, forgiveness, completed work or cleared patrol attention is illustrated."
     },
     {
       "treatment": "illustration",
       "asset": "/art/quill-offer.jpg",
-      "reason": "Deliberate turning-point staging: Quill waits beside an untouched bowl at an amber-lit stall counter while rain falls beyond the awning. Prose remains authoritative about costs, evidence and permissions. Full and skipped openings share the same unaccepted offer; practical runner context depicts no chosen motive or advance already paid.",
+      "reason": "Quill waits across an open counter beside an untouched bowl. The closer face, hand and steam composition stages an unanswered offer without depicting payment, a selected motive or evidence. Original and skipped openings share the plate.",
       "scenes": [
         "stall"
       ]
@@ -447,7 +445,7 @@
     {
       "treatment": "illustration",
       "asset": "/art/quill-offer.jpg",
-      "reason": "Deliberate turning-point staging: Quill waits beside an untouched bowl at an amber-lit stall counter while rain falls beyond the awning. Prose remains authoritative about costs, evidence and permissions.",
+      "reason": "Quill waits across an open counter beside an untouched bowl. The closer face, hand and steam composition stages an unanswered offer without depicting payment, a selected motive or evidence. Original and skipped openings share the plate.",
       "scenes": [
         "pay"
       ]
@@ -455,7 +453,7 @@
     {
       "treatment": "illustration",
       "asset": "/art/quill-offer.jpg",
-      "reason": "Deliberate turning-point staging: Quill waits beside an untouched bowl at an amber-lit stall counter while rain falls beyond the awning. Prose remains authoritative about costs, evidence and permissions.",
+      "reason": "Quill waits across an open counter beside an untouched bowl. The closer face, hand and steam composition stages an unanswered offer without depicting payment, a selected motive or evidence. Original and skipped openings share the plate.",
       "scenes": [
         "job_owner"
       ]
@@ -522,6 +520,22 @@
       "reason": "Deliberate turning-point staging: Ives closes a black folio at the memorial stair while Sera retains her pencil and watches. Prose remains authoritative about costs, evidence and permissions.",
       "scenes": [
         "ending_listed"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/nia-arrival.jpg",
+      "reason": "Nia is present after transport and controls whether her account is reviewed. Her closed notebook and attentive posture show an unresolved conversation, with no active recording, identifiable photograph, address or quotation permission depicted.",
+      "scenes": [
+        "act2_witness_arrival"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/kerr-handover.jpg",
+      "reason": "The receipt scene observes Kerr checking the tag and closed brace case. Neutral guarded staging supplies no fitting, treatment, gratitude or forgiven privacy breach; actual registration terms and the separate conduct portrait retain authority.",
+      "scenes": [
+        "act2_route_receipt"
       ]
     }
   ],

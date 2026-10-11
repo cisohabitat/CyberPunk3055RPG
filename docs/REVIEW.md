@@ -83,3 +83,6 @@ A production preview at a 390 × 844 browser viewport placed the first memory in
 ### Phase 3 integration follow-up — 10 October 2026
 
 Cycle 5 integrates return work, Chapel access outcomes, transfer methods and clinic allocations into commitments, character conduct and all four finales, with one short optional Lumen reply and an expandable factual recap. See [the integration evidence](CAMPAIGN_INTEGRATION.md). The 7.8 internal rubric remains the assessment of `091403c`; this implementation has not received an independent regrade. Passing internal regressions and full campaigns supports correctness, not the target 9+ craft, player-comprehension, rights or device claims.
+
+
+The [visual staging cycle](VISUAL_STAGING_CYCLE.md) strengthens four stable character moments and preserves complete scene framing. This is a focused presentation improvement, not a new 9+ grade. Continue with the fourteen-clip performance and ambience review, then repeat campaign pacing/replay assessment. The provisional internal 8.2 grade and separate production gates remain unchanged.
