@@ -198,7 +198,7 @@ function middleText(state: GameState): string {
     const tab = state.flags.debt && !state.flags.quill_settled ? " Quill's tab is still open." : state.flags.quill_repaid_late ? " Quill kept the late payment beside the postponement." : "";
     return `Ren waits by the grate. You have heard why Junie matters to her.${tab}
 
-Choose any remaining work, speak about Mara and Ward Nine in the street, or take Helion's money for silence. Leaving closes the week; unfinished commitments stay open.`;
+Choose any remaining work, speak about Mara and Ward Nine in the street, or take Helion's money for silence. Closing the week leaves unfinished commitments open.`;
   }
   const from = state.flags.kerr_told
     ? "Kerr kept the names in his mouth. The canal is quieter for it."

@@ -50,7 +50,7 @@ describe("opening and consequence clarity", () => {
     assert.match(sceneText(getScene("card_wall"), { ...initial, sceneId: "card_wall" }), /remains unresolved/);
     assert.doesNotMatch(nightRetell(initial)[1], /You spoke|You took/);
     const returned = { ...initial, sceneId: "act2_middle", flags: { witness_done: true, witness_safe: true, witness_account_deferred: true } };
-    assert.match(sceneText(getScene(returned.sceneId), returned), /unfinished commitments stay open/);
+    assert.match(sceneText(getScene(returned.sceneId), returned), /Closing the week leaves unfinished commitments open/);
     assert.doesNotMatch(sceneText(getScene(returned.sceneId), returned), /approved recording|permission|completed/);
     assert.equal(returned.journal.some(entry => entry.id === "nia-account"), false);
   });

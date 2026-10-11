@@ -9,7 +9,7 @@ Two baseline keyboard campaigns compared a skipped, minimal-content run with a f
 | Finding | Revision | Boundary preserved |
 | --- | --- | --- |
 | Skipping the prologue retains the contract but omits the concrete personal context supplied by the full opening. | Quill's first meeting supplies one short origin-specific practical possibility: dry sleep, a life without the old badge, or a next crossing. | Possibilities do not assign a motive, accept the job or grant an advance. Legacy checkpoints keep their original treatment. |
-| Canal returns repeat Ren's warning and describe the decision through “the week.” | The return briefly recalls Junie's importance and explains street speech versus Helion's money for silence. | Ren's first family introduction remains. Leaving still closes opportunities without completing open commitments. |
+| Canal returns repeat Ren's warning and describe the decision through “the week.” | The return briefly recalls Junie's importance and explains street speech versus Helion's money for silence. | Ren's first family introduction remains. Closing the week ends optional opportunities without completing open commitments; leaving the canal for work does not close it. |
 | Chapter cards and finale recaps describe “selling the week” without naming the actual bargain. | A shared recap names the forty/eighty-creds silence offer, street speech, failed attempt or unresolved choice. | The recap creates no authenticated source, approved recording, safety, quotation permission or filed hearing. |
 
 These observations establish what text is present and repeated. The editorial judgment is that concrete wording should make the bargain easier to understand; simulated play does not establish how an unfamiliar person interprets it.
@@ -18,7 +18,7 @@ These observations establish what text is present and repeated. The editorial ju
 
 The [aggregate audit](../qa/editorial/pacing-cycle-summary.json) compares the revised prose against **7,254 identical pre-choice states from 99 complete replay fixtures**. All canonical non-prose scene definitions and all replay final states match the baseline. Three added fixtures cover full/skip minimal campaigns and a skipped investigation campaign, including pending-roll and ordinary save checkpoints.
 
-Sampled scene prose changes from 459,604 to 458,166 words, a **0.31% aggregate reduction**. Canal visits account for 23,805 → 22,119 words across 415 visits, a **7.1% reduction**. The 99 Wall cards grow from 3,370 to 3,639 words to clarify the consequence. All 99 sampled final recaps also use the explicit Week wording; their separate rendered words are excluded from the scene-prose total. Counts are weighted by fixture visits, not unique-script length or measured reading time.
+Sampled scene prose changes from 459,604 to 457,885 words, a **0.37% aggregate reduction**. Canal visits account for 23,805 → 21,838 words across 415 visits, a **8.3% reduction**. The 99 Wall cards grow from 3,370 to 3,639 words to clarify the consequence. All 99 sampled final recaps also use the explicit Week wording; their separate rendered words are excluded from the scene-prose total. Counts are weighted by fixture visits, not unique-script length or measured reading time.
 
 Repeat the audit with a state-bearing baseline kept outside Git:
 
