@@ -50,7 +50,7 @@ export function objectives(state: GameState): Objective[] {
 }
 
 export function unresolvedPromises(state: GameState): Objective[] {
-  return objectives(state).filter((row) => row.status === "Open" || row.status === "Unresolved");
+  return objectives(state).filter((row) => row.status === "Open" || row.status === "Unresolved" || (row.id === "kerr-collection" && row.status === "Compromised" && !state.flags.kerr_route_delivered && !state.flags.kerr_route_done));
 }
 
 export function nextStep(state: GameState): string {
@@ -59,7 +59,7 @@ export function nextStep(state: GameState): string {
   if (state.sceneId.startsWith("act3_response_") || state.sceneId === "act3_mara_followup" || state.sceneId === "act3_lumen_boundary") return "Hear the actual reply and each person’s limits before returning to the wall.";
   if (["act2_route_map", "act2_route_exit", "act2_route_review"].includes(state.sceneId)) return "Plan an entry and an exit. Review the fee, strain and recipient registration before departing; your draft is saved.";
   if (state.sceneId === "act2_route_crossing") return "Use the approach your exit prepared, or negotiate. Departure is already paid; a failed approach leaves recovery without another roll.";
-  if (state.sceneId === "act2_route_recovery") return "Choose a registered courier or leave the case held. Receipt, registration and the original promise retain separate outcomes.";
+  if (state.sceneId === "act2_route_recovery") return "Choose a twenty-creds registered courier, pause for free, or close the request as unresolved. Pausing keeps the failed attempt and paid departure; return before the week closes.";
   // The arrival goal already explains the opening; leave room for the story.
   if (state.sceneId.startsWith("opening_")) return "";
   if (state.sceneId === "act2_spire_sources") return "Read all three records. Her current account must stay open; a service request is not a closure receipt.";
@@ -122,6 +122,7 @@ export function nextStep(state: GameState): string {
   if (state.sceneId === "act3_edda_visit") return "Hear the source’s employment consequences; support does not settle the review.";
   if (state.sceneId === "act2_archive_gap") return "Corroborate the receipt through the ledger, or record the gap honestly.";
   if (state.sceneId === "act2_middle") {
+    if (state.flags.kerr_route_failed && !state.flags.kerr_route_done && !state.flags.kerr_route_collected) return `Kerr's case is still held. Resume recovery through his collection request; departure is already paid and there is no second attempt.${state.creds < 20 ? " You cannot yet afford the twenty-creds courier." : " The twenty-creds courier is affordable, but registers Kerr as recipient."} Closing the week leaves the handover unresolved.`;
     const work = encounterRecords(state).filter(row => row.open);
     if (work.length) return `${work.map(row => row.title).join("; ")} remains open. Keep the work or handover before closing the week, or leave it unresolved.`;
     if (state.flags.notice_started && !state.flags.notice_done) return "Clinic distribution is unfinished. Resume the saved draft or leave it unaccepted when closing the week.";

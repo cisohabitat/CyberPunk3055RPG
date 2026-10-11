@@ -316,7 +316,7 @@
         "act2_route_crossing",
         "act2_route_recovery"
       ],
-      "reason": "Neutral planning alcove before collection; unselected map and closed case communicate the setting across drafts, success and held-case recovery without depicting an earned outcome."
+      "reason": "Neutral planning alcove before collection; unselected map and closed case communicate the setting across drafts, success and held-case recovery without depicting an earned outcome. Failed recovery can pause with the case still held and the promise open; this neutral alcove depicts no courier, payment or handover."
     },
     {
       "treatment": "portrait",

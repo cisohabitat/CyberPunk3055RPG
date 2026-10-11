@@ -4,7 +4,7 @@ import { commitChoice, createCharacter, effectPreview, getScene, presentChoices,
 import { aftermath } from "./evidence";
 import { characterConduct } from "./relationships";
 import { routePlan, routeResume } from "./route-planning";
-import { objectives } from "./objectives";
+import { nextStep, objectives, unresolvedPromises } from "./objectives";
 import { exportRun, importRun } from "./vault";
 import type { GameState } from "./types";
 const base = (): GameState => ({ ...createCharacter({ handle: "Rex", givenName: "Ada", origin: "dustline", bonus: { chrome: 0, nerve: 0, face: 2, ghost: 0 } }), sceneId: "act2_middle", creds: 100, flags: { kerr_talked: true } });
@@ -67,5 +67,46 @@ describe("Kerr collection and observed conduct", () => {
     assert.throws(() => step(visit(s), "answer-kerr-breach"));
     s = step(step(base(), "answer-kerr-collection"), "decline-kerr-collection"); s = step(visit(s), "acknowledge-kerr-collection"); s = step(s, "ask-kerr-personal-question");
     assert.match(sceneText(getScene(s.sceneId), s), /replacement is still at the depot/); assert.doesNotMatch(sceneText(getScene(s.sceneId), s), /received case/);
+  });
+});
+
+
+describe("failed collection can wait without rewriting its costs", () => {
+  for (const traced of [false, true]) it(`keeps a zero-credit failure open across repeated pause and restore (trace=${traced})`, () => {
+    let s = step(depart({ ...plan("lift", traced ? "ramp" : "gap"), creds: 10 }), traced ? "route-use-sensor" : "route-use-gap", 1);
+    const failed = importRun(exportRun(s));
+    assert.equal(s.creds, 0);
+    assert.throws(() => step(s, "fund-kerr-courier"));
+    for (let i = 0; i < 3; i++) {
+      s = importRun(exportRun(step(s, "pause-kerr-recovery")));
+      assert.equal(s.creds, 0); assert.equal(s.strain, failed.strain);
+      assert.equal(Boolean(s.flags.kerr_route_trace), traced);
+      assert.equal(s.flags.kerr_route_done, undefined);
+      assert.ok(unresolvedPromises(s).some(row => row.id === "kerr-collection"));
+      assert.match(nextStep(s), /cannot yet afford/);
+      assert.match(objectives(s).find(row => row.id === "kerr-collection")!.detail, /attempt failed.*case remains held/);
+      s = step(s, "answer-kerr-collection");
+      assert.equal(s.sceneId, "act2_route_recovery");
+    }
+    assert.deepEqual(s.journal, failed.journal);
+    assert.throws(() => step({ ...s, sceneId: "act2_route_crossing" }, traced ? "route-use-sensor" : "route-use-gap", 10));
+    assert.throws(() => step({ ...s, sceneId: "act2_route_review" }, "depart-kerr-lift"));
+    s = step({ ...s, creds: 20 }, "fund-kerr-courier");
+    assert.equal(s.creds, 0); assert.equal(s.flags.kerr_route_failed, true);
+    assert.equal(s.flags.kerr_route_trace, true); assert.equal(s.flags.kerr_route_delivered, undefined);
+    assert.match(objectives(s).find(row => row.id === "kerr-collection")!.detail, /record the handover/);
+    assert.doesNotMatch(objectives(s).find(row => row.id === "kerr-collection")!.detail, /case remains held/);
+    assert.throws(() => step({ ...s, sceneId: "act2_route_recovery" }, "pause-kerr-recovery"));
+    s = step(s, "record-kerr-receipt");
+    assert.equal(objectives(s).find(row => row.id === "kerr-collection")!.status, "Compromised");
+    assert.equal(unresolvedPromises(s).some(row => row.id === "kerr-collection"), false);
+  });
+  it("a paused promise closes honestly at the wall without inventing nondeparture", () => {
+    let s = step(step(depart(plan()), "route-use-gap", 1), "pause-kerr-recovery");
+    s = { ...s, sceneId: "act3_arrival", flags: { ...s.flags, act2_done: true } };
+    const row = objectives(s).find(row => row.id === "kerr-collection")!;
+    assert.equal(row.status, "Unresolved"); assert.match(row.detail, /week closed without a handover/);
+    assert.doesNotMatch(row.detail, /without departing|Recovery remains open/);
+    assert.throws(() => step({ ...s, sceneId: "act2_route_recovery" }, "pause-kerr-recovery"));
   });
 });

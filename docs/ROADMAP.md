@@ -1,6 +1,6 @@
 # Saint Shard roadmap: 8.2 to a supported 9+
 
-Updated 11 October 2026. Current candidate: 185 scenes, 536 choices, 99 deterministic replay routes and 393 unit checks. The latest **provisional internal weighted grade is 8.2/10**; historical assessments remain in [the review](REVIEW.md). Simulated play is the primary development proxy while independent participants are unavailable. It supports development decisions and provisional grading without inventing human participation.
+Updated 11 October 2026. Current candidate: 195 scenes, 579 choices and 111 deterministic replay routes. The latest **provisional internal weighted grade is 8.2/10**; historical assessments remain in [the review](REVIEW.md). Simulated play is the primary development proxy while independent participants are unavailable. It supports development decisions and provisional grading without inventing human participation.
 
 This roadmap improves the existing browser narrative RPG. The [funded AAA production program](AAA_PRODUCTION_PLAN.md) remains the separate 24–30 month proposal for staffing, expanded campaign scope, commissions, localization and launch support. Completing development cycles does not complete that larger program or guarantee a review score.
 
@@ -230,4 +230,6 @@ The [visual staging cycle](VISUAL_STAGING_CYCLE.md) strengthens four stable char
 
 The [audio craft cycle](AUDIO_CRAFT_CYCLE.md) implements the follow-through after visual staging: twenty fixed synthetic quotations, three phrased replacements and three explicit room textures. The subsequent [campaign craft cycle](CAMPAIGN_CRAFT_CYCLE.md) audits 108 complete routes, revises repeated canal/wall returns and makes chapter decisions reachable among optional work. Both retain grade 8.2 and open production gates.
 
-Next delivery: contrast resource-poor and failure-heavy complete campaigns with the four prepared builds. Audit affordable recovery, task resumption, open commitments and consequence rhythm. Revise the weakest observed stretch, with an explicit accompanying-art/audio decision for changed scenes, then repeat paired state comparisons and full keyboard play. Do not raise the grade merely for additional variants, media or checks.
+The [scarce-resource recovery cycle](SCARCE_RECOVERY_CYCLE.md) contrasts prepared builds with genuine zero-credit, no-sale campaigns. Failed collection now supports free pause/resume, visible held-case commitments and honest Week closure; its prices, original failed attempt and privacy consequences persist. The internal grade stays 8.2.
+
+Next delivery: play long investigations with limited source recall. Audit the reconstruction, source comparisons, hearing drafts and journal return path at phone and desktop sizes. Improve the weakest observed navigation or comprehension stretch, retaining uncertainty and source attribution, then repeat complete campaigns and release verification. Suitable accompanying art and audio remain required when scenes change. Continue broader economy coverage across other origins and witness/archive recovery; the depot increment does not prove whole-game balance.

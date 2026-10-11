@@ -15,7 +15,7 @@ Weighted total: **8.18**, rounded to **8.2**. The increase from the historical 7
 
 The [depot build-variety cycle](DEPOT_BUILD_VARIETY.md) adds saved circuit repair, patrol observation, load planning and liability contracts after comparing the three anchor encounters. Four named builds now have full authored campaigns through those anchors; failed tasks, costs, registration and unpaid work persist. This focused increment does not automatically raise the 8.2 grade.
 
-The largest remaining quality gaps are **encounter variety and audiovisual craft**. The [updated roadmap](ROADMAP.md) keeps a weighted 9.35 target with every area at least 9.0. The depot cycle revised convergent decisions; visual staging and audio follow-through now cover stable character moments. Next reassess pacing, consequence rhythm and replay value across complete campaigns. Simulated evidence can drive those revisions now; the six independent production gates remain separately pending and do not block ordinary development.
+The largest remaining quality gaps are **encounter variety and audiovisual craft**. The [updated roadmap](ROADMAP.md) keeps a weighted 9.35 target with every area at least 9.0. The depot cycle revised convergent decisions; visual staging and audio follow-through now cover stable character moments. The [scarce-resource recovery cycle](SCARCE_RECOVERY_CYCLE.md) adds tested zero-credit no-sale campaigns and fixes forced closure after a depot failure. Next reassess long-investigation navigation and source comprehension, while extending economy coverage beyond this focused depot increment. Simulated evidence can drive those revisions now; the six independent production gates remain separately pending and do not block ordinary development.
 
 ---
 

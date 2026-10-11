@@ -11,6 +11,7 @@ type ReturnBeat = {
 // neutral fallback. Do not give Ren or Sera private knowledge through these lines.
 export const RETURN_BEATS: Record<string, ReturnBeat[]> = {
   act2_middle: [
+    { label: "Pause recovery. Keep Kerr's request open.", when: s => s.flags.kerr_route_failed && !s.flags.kerr_route_done && !s.flags.kerr_route_collected, text: "The case stays on the depot shelf. You come back with the failed attempt still yours, but without calling Kerr's request closed. There is time left in the week to decide what you can afford." },
     { label: "Record the observed handover and its actual terms.", when: s => s.flags.kerr_route_delivered, text: s => s.flags.kerr_route_trace
       ? s.flags.kerr_route_private
         ? "Kerr has the closed case; the depot has the name you promised to keep out of its register. The handover is complete. It is one promise you cannot call kept."

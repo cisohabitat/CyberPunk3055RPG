@@ -1,0 +1,252 @@
+{
+  "name": "scarce-depot-held",
+  "character": {
+    "handle": "Low Reserve",
+    "givenName": "Ada",
+    "origin": "dustline",
+    "complication": "debt",
+    "bonus": {
+      "chrome": 0,
+      "nerve": 0,
+      "face": 0,
+      "ghost": 2
+    },
+    "startWithPrologue": true
+  },
+  "steps": [
+    {
+      "choiceId": "begin-opening",
+      "reload": true
+    },
+    {
+      "choiceId": "opening-survival",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-stallholder",
+      "reload": true
+    },
+    {
+      "choiceId": "take-the-stool",
+      "reload": true
+    },
+    {
+      "choiceId": "ask-pay"
+    },
+    {
+      "choiceId": "haggle",
+      "roll": 1,
+      "reload": true
+    },
+    {
+      "choiceId": "sit-with-it"
+    },
+    {
+      "choiceId": "accept"
+    },
+    {
+      "choiceId": "side"
+    },
+    {
+      "choiceId": "spoof-door",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "go"
+    },
+    {
+      "choiceId": "honest"
+    },
+    {
+      "choiceId": "pact-copy"
+    },
+    {
+      "choiceId": "copy",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "heard"
+    },
+    {
+      "choiceId": "inspect-hour"
+    },
+    {
+      "choiceId": "inspect-signature"
+    },
+    {
+      "choiceId": "inspect-order"
+    },
+    {
+      "choiceId": "inspect-roster"
+    },
+    {
+      "choiceId": "reconstruct"
+    },
+    {
+      "choiceId": "separate-decisions"
+    },
+    {
+      "choiceId": "label-unverified"
+    },
+    {
+      "choiceId": "seal-full"
+    },
+    {
+      "choiceId": "talk-leave",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "destroy"
+    },
+    {
+      "choiceId": "week-after"
+    },
+    {
+      "choiceId": "into-week",
+      "reload": true
+    },
+    {
+      "choiceId": "read-board",
+      "reload": true
+    },
+    {
+      "choiceId": "to-kerr",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-kerr",
+      "reload": true
+    },
+    {
+      "choiceId": "pay-kerr",
+      "reload": true
+    },
+    {
+      "choiceId": "answer-kerr-collection",
+      "reload": true
+    },
+    {
+      "choiceId": "promise-private-collection",
+      "reload": true
+    },
+    {
+      "choiceId": "route-entry-lift",
+      "reload": true
+    },
+    {
+      "choiceId": "route-exit-gap",
+      "reload": true
+    },
+    {
+      "choiceId": "depart-kerr-lift",
+      "reload": true
+    },
+    {
+      "choiceId": "route-use-gap",
+      "roll": 1,
+      "reload": true
+    },
+    {
+      "choiceId": "pause-kerr-recovery",
+      "reload": true
+    },
+    {
+      "choiceId": "take-recovery",
+      "reload": true
+    },
+    {
+      "choiceId": "short-recovery",
+      "reload": true
+    },
+    {
+      "choiceId": "return-after-recovery",
+      "reload": true
+    },
+    {
+      "choiceId": "help-clinic-pump",
+      "reload": true
+    },
+    {
+      "choiceId": "work-pump",
+      "reload": true
+    },
+    {
+      "choiceId": "route-pump",
+      "reload": true,
+      "roll": 1
+    },
+    {
+      "choiceId": "carry-cold-transfer",
+      "reload": true
+    },
+    {
+      "choiceId": "answer-kerr-collection",
+      "reload": true
+    },
+    {
+      "choiceId": "leave-kerr-case-held",
+      "reload": true
+    },
+    {
+      "choiceId": "stand",
+      "reload": true
+    },
+    {
+      "choiceId": "back-to-board",
+      "reload": true
+    },
+    {
+      "choiceId": "to-the-wall",
+      "reload": true
+    },
+    {
+      "choiceId": "to-ward-nine",
+      "reload": true
+    },
+    {
+      "choiceId": "go-wall",
+      "reload": true
+    },
+    {
+      "choiceId": "face-sera",
+      "reload": true
+    },
+    {
+      "choiceId": "visit-kerr-collection",
+      "reload": true
+    },
+    {
+      "choiceId": "acknowledge-private-collection",
+      "reload": true
+    },
+    {
+      "choiceId": "leave-wall",
+      "reload": true
+    }
+  ],
+  "expected": {
+    "sceneId": "ending_quiet",
+    "creds": 0,
+    "strain": 5,
+    "flags": {
+      "kerr_route_failed": true,
+      "kerr_route_delivered": false,
+      "kerr_route_trace": false,
+      "kerr_route_unresolved": true,
+      "pump_failed": true,
+      "pump_rebate": false,
+      "recovery_short": true,
+      "order_verified": false,
+      "witness_safe": false
+    },
+    "journal": [
+      "kerr-collection-promise",
+      "kerr-itinerary",
+      "week-recovery",
+      "kerr-collection-outcome"
+    ]
+  }
+}

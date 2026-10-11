@@ -1,0 +1,41 @@
+{
+  "method": "All pre-existing 108 authored complete campaign final states compared with pre-edit canonical hashes. One additive recovery choice; original prices, effects, dice and route outcomes preserved. Source-familiar synthetic play, no participant comprehension claim.",
+  "unchangedExistingFinalStates": 108,
+  "baselinePoorRoute": {
+    "minimumCredits": 0,
+    "recoveryEnabledChoices": 1,
+    "visits": 48,
+    "ending": "ending_quiet",
+    "choiceActivations": 47
+  },
+  "candidatePoorRecovery": {
+    "minimumCredits": 0,
+    "recoveryEnabledChoices": 2,
+    "variants": [
+      {
+        "route": "scarce-depot-courier",
+        "ending": "ending_quiet",
+        "finalCredits": 20,
+        "finalStrain": 2,
+        "choiceActivations": 58,
+        "visits": 59
+      },
+      {
+        "route": "scarce-depot-held",
+        "ending": "ending_quiet",
+        "finalCredits": 0,
+        "finalStrain": 5,
+        "choiceActivations": 56,
+        "visits": 57
+      },
+      {
+        "route": "scarce-depot-open",
+        "ending": "ending_quiet",
+        "finalCredits": 0,
+        "finalStrain": 4,
+        "choiceActivations": 47,
+        "visits": 48
+      }
+    ]
+  }
+}

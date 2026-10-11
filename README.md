@@ -380,3 +380,10 @@ Optional selected dialogue now includes Nia’s arrival, Mara’s present-day re
 Returning to the canal or the wall now reflects the job or conversation just completed, using saved conduct and actual evidence. The first meetings keep their introductions. Optional work and the chapter decision have separate headings; a keyboard-accessible link reaches street speech/paid silence or the final wall decision without selecting anything. Choices, numbering, costs and outcomes retain their original order and behavior. Existing canal/Sera art and accompanying sound fit the returns; no new scene or media is needed.
 
 The [campaign craft cycle](docs/CAMPAIGN_CRAFT_CYCLE.md) records paired comparisons across 108 routes and full keyboard play. Preserve save version 2, `saint-shard-3055-v1`, recorded dice, 1d10 and caps, all four finales, visible goals and silent/text-only parity. The internal grade stays 8.2. Next: resource-poor/failure-heavy campaign balance and recovery visibility.
+
+
+## Resource-poor recovery
+
+A failed Kerr collection can pause for free while the case remains held and the request stays open. Resume through his canal request before the week closes; the original failure, departure fee and recipient registration persist. The twenty-creds courier still requires funds and breaks private terms. Closing the request or leaving the Week keeps the actual unfinished outcome. An exposed but undelivered open request also appears in the chapter's unfinished-work warning.
+
+The [scarce-resource recovery cycle](docs/SCARCE_RECOVERY_CYCLE.md) records zero-credit no-sale campaigns, one-time free rest, successful rebate-funded recovery and repeated failure/unfinished endings. Existing neutral depot/canal art and sound remain suitable; no new scene or media is needed. Preserve save version 2, `saint-shard-3055-v1`, recorded dice, 1d10 and caps, and all four finales. The provisional internal grade remains 8.2. Next: long-investigation navigation and source comprehension, using simulated play as the development proxy.
