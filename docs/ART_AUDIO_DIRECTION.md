@@ -77,3 +77,7 @@ Next phase: Phase 5 fresh-player observation, accessibility and named physical-d
 ## Present-day visual staging cycle — 11 October 2026
 
 See [the shot decisions and validation](VISUAL_STAGING_CYCLE.md). Four generated compositions retain cast identity: an open counter and waiting bowl for Quill; ordinary light and an unmarked envelope for present-day Mara; a closed notebook and self-directed posture for Nia; a closed brace case and sober tag check for Kerr. The separate saved-conduct portraits remain authoritative for refusals and privacy breaches. Complete 3:2 framing replaces the previous shallow desktop crop. Audio and fixed quotations are unchanged in this cycle; the next audio pass should audition all fourteen clips and tune scene dynamics against this stable staging.
+
+## Audio craft follow-through — 11 October 2026
+
+Twenty fixed synthetic quotations now cover Nia’s arrival, Mara’s present-day request/public refusal and Kerr’s three observed handover terms. Three existing deliveries have deliberate phrase spacing. Distinct clinic, witness-room and stall textures replace broader beds for explicitly listed scenes; quiet conversation music leaves room for their words. The [cycle record](AUDIO_CRAFT_CYCLE.md) documents exact text, stock styles, timing, room synthesis and before/after audition. Existing scene plates remain suitable. This is a source-directed development candidate; no perceptual listening or professional performance acceptance is claimed.

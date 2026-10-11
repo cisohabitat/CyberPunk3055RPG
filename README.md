@@ -370,3 +370,7 @@ The [visual staging cycle](docs/VISUAL_STAGING_CYCLE.md) records source referenc
 ### Browser CI throughput
 
 The release pipeline runs the complete browser suite with four workers. All desktop/phone Chromium, Firefox and WebKit checks remain required, as do exact-commit Test/Build success and the fail-closed twenty-minute production gate. This addresses a measured two-worker run that passed after the gate timed out. Existing accompanying art remains suitable; gameplay, audio, saves and goals are unchanged.
+
+## Audio craft follow-through
+
+Optional selected dialogue now includes Nia’s arrival, Mara’s present-day request and public refusal, and Kerr’s actual handover terms. Twenty fixed synthetic quotations are available through Listen/Stop only when their words are visible. Quill’s offer, Mara’s revelation and Kerr’s later boundary use deliberate phrase spacing. Clinic, witness-room and stall ambience give these conversations distinct room textures; dialogue ducks the beds without changing story state. Sound off and unavailable clips retain the written scene. See [the audio craft cycle](docs/AUDIO_CRAFT_CYCLE.md) and [local media audition](qa/media/review.html). The provisional internal grade stays 8.2; complete-campaign pacing and consequence rhythm are next.

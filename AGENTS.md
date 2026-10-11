@@ -388,3 +388,7 @@ The [visual staging cycle](docs/VISUAL_STAGING_CYCLE.md) records source referenc
 ### Browser CI throughput
 
 The release pipeline runs the complete browser suite with four workers. All desktop/phone Chromium, Firefox and WebKit checks remain required, as do exact-commit Test/Build success and the fail-closed twenty-minute production gate. This addresses a measured two-worker run that passed after the gate timed out. Existing accompanying art remains suitable; gameplay, audio, saves and goals are unchanged.
+
+## Audio craft follow-through
+
+The candidate has twenty fixed synthetic quotations: six new visible lines for Nia, Mara and Kerr, plus phrased replacement deliveries for Quill’s offer, Mara’s revelation and Kerr’s later boundary. Keep exact visible-quotation selection and explicit Listen/Stop; the public refusal must not play on Lumen’s clinic-refusal branch, and handover clips must reflect private, breached or agreed-registration text. Source generation is offline only. Three deterministic 64-second room textures live in `scripts/room-textures.mjs`; explicit scene sets select clinic/witness/stall beds while retaining saved pressure and four ending identities. Preserve cancellation, mixer ducking, cache limits, silent play and unchanged save bytes. Update provenance, auditions and credits together. [Audio craft evidence](docs/AUDIO_CRAFT_CYCLE.md) distinguishes source/signal/browser checks from listening acceptance. The internal grade remains 8.2 and campaign craft is next.

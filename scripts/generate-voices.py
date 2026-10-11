@@ -29,7 +29,22 @@ model = Kokoro(args.model, args.voices)
 masters = pathlib.Path(args.masters)
 masters.mkdir(parents=True, exist_ok=True)
 for line in lines:
-    samples, rate = model.create(line['text'], voice=line['voice'], speed=line['speed'], lang='en-us')
+    segments = line.get('segments')
+    if segments:
+        assert ' '.join(part['text'] for part in segments) == line['text'], 'Phrasing must preserve the exact quotation'
+        pieces = []
+        for part in segments:
+            assert .75 <= part.get('speed', line['speed']) <= 1.15
+            assert 0 <= part.get('pauseAfter', 0) <= .8
+            clip, rate = model.create(part['text'], voice=line['voice'], speed=part.get('speed', line['speed']), lang='en-us')
+            clip = clip.copy()
+            fade = min(int(rate * .008), len(clip) // 2)
+            clip[:fade] *= np.linspace(0, 1, fade)
+            clip[-fade:] *= np.linspace(1, 0, fade)
+            pieces.extend([clip, np.zeros(int(rate * part.get('pauseAfter', 0)), dtype=clip.dtype)])
+        samples = np.concatenate(pieces)
+    else:
+        samples, rate = model.create(line['text'], voice=line['voice'], speed=line['speed'], lang='en-us')
     assert np.isfinite(samples).all() and len(samples) > rate
     master = masters / (line['id'] + '.wav')
     def write(path, data):

@@ -59,7 +59,7 @@ describe("beds", () => {
       for (let i = 0; i < halfway; i += 101) difference += Math.abs(wav.samples[i] - wav.samples[i + halfway]);
       assert.ok(difference > 1, name); hashes.add(record.sha256);
     }
-    assert.equal(hashes.size, 8);
+    assert.equal(hashes.size, 11);
   });
   it("keeps bench interaction sounds short, distinct and below score-sting peaks", () => {
     const hashes = new Set<string>();
@@ -75,7 +75,11 @@ describe("beds", () => {
   it("ships fixed synthetic quotes with matching text, bounded headroom and disclosure", () => {
     const base = createCharacter({ handle: "VoiceReview", givenName: "Ada", origin: "spire", bonus: { chrome: 2, nerve: 0, face: 0, ghost: 0 } });
     for (const line of lines) {
-      const state = { ...base, sceneId: line.scene, flags: { memory_slot_1_signature: true, memory_slot_2_order: true, memory_slot_3_roster: true } };
+      const state = { ...base, sceneId: line.scene, flags: { memory_slot_1_signature: true, memory_slot_2_order: true, memory_slot_3_roster: true,
+        ...(line.id === "voice-mara-public-refusal" ? { response_public_refused: true } : {}),
+        ...(line.id === "voice-kerr-handover-breached" ? { kerr_route_private: true, kerr_route_trace: true } : {}),
+        ...(line.id === "voice-kerr-handover-registered" ? { kerr_route_registered: true, kerr_route_trace: true } : {}),
+      } };
       const scene = SCENES[line.scene]; const text = sceneText(scene, state);
       assert.equal(scene.speaker, line.speaker); assert.ok(text.includes(line.text), line.id);
       assert.equal(visibleDialogue(scene.id, scene.speaker, text)?.id, line.id);
@@ -95,6 +99,22 @@ describe("beds", () => {
     assert.equal(visibleDialogue("memory_sequence_result", "Mara", sceneText(SCENES.memory_sequence_result, wrong)), undefined);
     const publication = sceneText(SCENES.memory_publication, base);
     assert.equal(visibleDialogue("memory_publication", "Sister Lumen", publication.split("\n\n")[0]), undefined);
+  });
+  it("keeps refusal and handover voices behind their exact visible quotations", () => {
+    const base = createCharacter({ handle: "Branches", givenName: "Ada", origin: "spire", bonus: { chrome: 2, nerve: 0, face: 0, ghost: 0 } });
+    for (const [flags, expected] of [[{}, "voice-kerr-handover-private"], [{ kerr_route_private: true, kerr_route_trace: true }, "voice-kerr-handover-breached"], [{ kerr_route_registered: true, kerr_route_trace: true }, "voice-kerr-handover-registered"]] as const) {
+      const state = { ...base, sceneId: "act2_route_receipt", flags };
+      const scene = SCENES[state.sceneId], text = sceneText(scene, state), before = JSON.stringify(state);
+      assert.equal(visibleDialogue(scene.id, scene.speaker, text)?.id, expected);
+      assert.equal(visibleDialogue(scene.id, scene.speaker, text.split("\n\n")[0]), undefined);
+      assert.equal(JSON.stringify(state), before);
+    }
+    const scene = SCENES.act2_response_refusal;
+    assert.equal(visibleDialogue(scene.id, scene.speaker, sceneText(scene, { ...base, flags: { response_clinic_refused: true } })), undefined);
+    for (const line of lines) if ("segments" in line && line.segments) {
+      assert.equal(line.segments.map(part => part.text).join(" "), line.text);
+      for (const part of line.segments) { assert.ok(part.pauseAfter >= 0 && part.pauseAfter <= .8); assert.ok(part.speed >= .75 && part.speed <= 1.15); }
+    }
   });
   it("renders stereo chapter arrangements with headroom and continuous seams on both channels", () => {
     for (const name of ["theme", "theme-chapel", "theme-week", "theme-ward"]) {

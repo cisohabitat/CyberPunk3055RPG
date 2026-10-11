@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-11",
+  "reviewType": "Internal source/signal review and authored browser campaigns; simulated play is the primary development proxy. No perceptual listening or human participation claimed.",
+  "baselineRevision": "e85f1d80582a54b5ba79ec54df7600820a635b76",
+  "inventory": {
+    "originalVoices": 14,
+    "currentVoices": 20,
+    "newQuotes": 6,
+    "phrasedReplacements": 3,
+    "unchangedOriginalDeliveryCount": 11,
+    "newRoomTextures": 3
+  },
+  "candidateTechnicalChecks": {
+    "unitChecks": 416,
+    "targetedBrowserChecks": 12,
+    "profiles": [
+      "desktop Chromium",
+      "phone Chromium",
+      "WebKit"
+    ],
+    "naturalClipCompletionChecks": 20,
+    "voiceErrors": [],
+    "voiceFailures": [],
+    "campaigns": 4,
+    "sceneVisits": 304,
+    "reloads": 98,
+    "completedVoiceOccurrences": 15,
+    "pairedOutcomeSummariesEqual": true,
+    "campaignErrors": [],
+    "failedCampaignMedia": [],
+    "finalLiveAudioSources": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "scopeNote": "Full campaigns and twenty-clip probe ran on the candidate before a final mapping extension kept the same stall ambience through pay_yes/pay_no/why. Final code receives required unit/build/browser CI and public verification separately.",
+  "grade": {
+    "overall": 8.2,
+    "audio": 7.5,
+    "changed": false
+  },
+  "next": "Complete-campaign pacing, optional-work density, consequence rhythm and build comparison."
+}

@@ -2,7 +2,8 @@
   "source": [
     "scripts/score.mjs",
     "scripts/generate-audio.mjs",
-    "scripts/scene-score.mjs"
+    "scripts/scene-score.mjs",
+    "scripts/room-textures.mjs"
   ],
   "method": "Original authored digital synthesis for scores and cues. No third-party samples, AI music service, actor recordings or trained voice models in this synthesis pipeline. Selected synthetic dialogue is documented separately in voice-provenance.json.",
   "tempoBpm": 60,
@@ -14,7 +15,7 @@
     71,
     69
   ],
-  "reviewStatus": "Automated signal/loop/runtime checks. New 64-second mono reading, quiet and saved-window pressure beds and five 64-second district textures. Independent headphones, speakers, physical-device and fatigue acceptance pending.",
+  "reviewStatus": "Automated signal/loop/runtime checks. Eight distinct 64-second district/room textures including clinic, witness room and sheltered stall. Source-informed development candidates; perceptual listening, physical-device and fatigue acceptance remain open.",
   "scores": [
     {
       "path": "public/audio/theme.wav",
@@ -289,6 +290,60 @@
       "sourceFile": "/workspace/generated_audio/ambience-ward.wav",
       "sourceSha256": "98fd5bc52976a3f75b179b96f9fd30daecdd5ad3a299b1028ca33c8ee650a83e",
       "source": "scripts/scene-score.mjs"
+    },
+    {
+      "path": "public/audio/ambience-clinic.wav",
+      "title": "A Chair Beside the Window",
+      "arrangement": "Soft filtered ventilation and restrained outside water; no treatment machine or consent signal.",
+      "sha256": "f57119d7216c7dada0d5d0293a3cdff4c9401af505eada3bb39793392ddfe1e6",
+      "bytes": 2822444,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 64.0,
+      "peak": 0.056001464888454845,
+      "rms": 0.011482255641412947,
+      "seamJump": [
+        0.0
+      ],
+      "sourceFile": "/workspace/generated_audio/audio-cycle/ambience-clinic.wav",
+      "sourceSha256": "f57119d7216c7dada0d5d0293a3cdff4c9401af505eada3bb39793392ddfe1e6"
+    },
+    {
+      "path": "public/audio/ambience-witness.wav",
+      "title": "Before the Words",
+      "arrangement": "Sheltered broadband rain and low room air; no recorder, crowd or witness location implied.",
+      "sha256": "49789a5dc8304a452ddd519ef315fa496dc59d81eb3131f0b7fc906676945876",
+      "bytes": 2822444,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 64.0,
+      "peak": 0.06076235236671041,
+      "rms": 0.013311516432716764,
+      "seamJump": [
+        0.0
+      ],
+      "sourceFile": "/workspace/generated_audio/audio-cycle/ambience-witness.wav",
+      "sourceSha256": "49789a5dc8304a452ddd519ef315fa496dc59d81eb3131f0b7fc906676945876"
+    },
+    {
+      "path": "public/audio/ambience-stall.wav",
+      "title": "Behind the Counter",
+      "arrangement": "Closer awning rain and diffuse low counter-room hum; no transaction-success cue.",
+      "sha256": "d81d4661de5c02df80b2320d709ddedf7e3ca7de4f9c2ba856b408fb07be5882",
+      "bytes": 2822444,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 64.0,
+      "peak": 0.08703878902554399,
+      "rms": 0.018569572014043568,
+      "seamJump": [
+        0.0
+      ],
+      "sourceFile": "/workspace/generated_audio/audio-cycle/ambience-stall.wav",
+      "sourceSha256": "d81d4661de5c02df80b2320d709ddedf7e3ca7de4f9c2ba856b408fb07be5882"
     }
   ]
 }

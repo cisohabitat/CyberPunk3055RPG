@@ -7,7 +7,7 @@
 | Narrative and consequence | 20% | 8.2 | Concrete opening context, bounded source/consent continuity, remembered conduct and explicit chapter consequences. Character drama and whole-campaign pacing still need a stronger craft pass. |
 | RPG depth and replay | 20% | 7.8 | Saved Chapel allowance, method-specific preparations, practical allocation, Kerr route planning and failure recovery improve the old baseline. Progression remains compact and some encounters share a terms/preparation/check structure. |
 | Visual presentation | 15% | 7.8 | Deliberate responsive scene plates, expressive source feedback and state-aware art decisions. Reused staging, incomplete cast model sheets and limited visual storytelling remain weaknesses. |
-| Audio production | 10% | 7.5 | Fourteen optional fixed synthetic quotations, tension/quiet beds, district ambience and independent mixer controls. Performance expressiveness, dialogue coverage and subjective mix quality still constrain the score. |
+| Audio production | 10% | 7.5 | Twenty optional fixed synthetic quotations, tension/quiet beds, district ambience and independent mixer controls. Performance expressiveness, dialogue coverage and subjective mix quality still constrain the score. |
 | Usability and accessibility | 15% | 8.4 | Actual-keyboard campaigns, separate reading/motion controls, concise decision names, interruption recovery and narrow text-only play. Long investigation paths remain demanding; manual assistive-technology and physical-device behavior are not established. |
 | Engineering and release | 20% | 9.0 | Durable saved outcomes, bounded media cleanup, replay/rollback tooling and an exact-commit release gate with a twenty-minute wait. Automated coverage is strong; device/network performance and independent acceptance remain incomplete. |
 
@@ -15,7 +15,7 @@ Weighted total: **8.18**, rounded to **8.2**. The increase from the historical 7
 
 The [depot build-variety cycle](DEPOT_BUILD_VARIETY.md) adds saved circuit repair, patrol observation, load planning and liability contracts after comparing the three anchor encounters. Four named builds now have full authored campaigns through those anchors; failed tasks, costs, registration and unpaid work persist. This focused increment does not automatically raise the 8.2 grade.
 
-The largest remaining quality gaps are **encounter variety and audiovisual craft**. The [updated roadmap](ROADMAP.md) keeps a weighted 9.35 target with every area at least 9.0. The latest cycle revised the depot’s convergent decisions. Next improve visual staging and expressive audio for stable scenes, then reassess replay value and audiovisual craft across full campaigns. Simulated evidence can drive those revisions now; the six independent production gates remain separately pending and do not block ordinary development.
+The largest remaining quality gaps are **encounter variety and audiovisual craft**. The [updated roadmap](ROADMAP.md) keeps a weighted 9.35 target with every area at least 9.0. The depot cycle revised convergent decisions; visual staging and audio follow-through now cover stable character moments. Next reassess pacing, consequence rhythm and replay value across complete campaigns. Simulated evidence can drive those revisions now; the six independent production gates remain separately pending and do not block ordinary development.
 
 ---
 
@@ -86,3 +86,5 @@ Cycle 5 integrates return work, Chapel access outcomes, transfer methods and cli
 
 
 The [visual staging cycle](VISUAL_STAGING_CYCLE.md) strengthens four stable character moments and preserves complete scene framing. This is a focused presentation improvement, not a new 9+ grade. Continue with the fourteen-clip performance and ambience review, then repeat campaign pacing/replay assessment. The provisional internal 8.2 grade and separate production gates remain unchanged.
+
+The [audio craft cycle](AUDIO_CRAFT_CYCLE.md) adds six scene-specific synthetic quotations, explicit phrase spacing in three replacements, and distinct clinic/witness/stall ambience. Exact visible-quote and branch checks preserve story authority. The internal overall grade remains 8.2 and audio 7.5: source/signal and playback evidence justify integration but do not demonstrate perceptual or emotional improvement. Next: complete-campaign pacing, optional-work density and consequence rhythm, using simulated play as the primary development proxy.

@@ -2,6 +2,17 @@ import assert from "node:assert/strict";
 import { it } from "node:test";
 import { createCharacter } from "./engine";
 import { sceneSoundPlan } from "./sound";
+import { SCENES } from "./story";
+
+it("stages present-day rooms without altering saved consent, costs or pressure", () => {
+  const base = createCharacter({ handle: "RoomReview", givenName: "Ada", origin: "spire", bonus: { chrome: 2, nerve: 0, face: 0, ghost: 0 } });
+  for (const [id, mood, district] of [["act2_response_invitation", "quiet", "clinic"], ["act2_response_refusal", "quiet", "clinic"], ["act3_lumen_boundary", "quiet", "clinic"], ["act2_witness_arrival", "quiet", "witness"], ["act2_route_receipt", "quiet", "stall"], ["stall", "street", "stall"]]) {
+    const state = { ...base, sceneId: id, flags: { response_public_refused: true, kerr_route_private: true, kerr_route_trace: true } }, before = JSON.stringify(state);
+    assert.deepEqual(sceneSoundPlan(state, SCENES[id].location), { mood, district });
+    assert.equal(JSON.stringify(state), before);
+  }
+  for (const id of ["pay", "pay_yes", "pay_no", "why", "job_owner"]) assert.deepEqual(sceneSoundPlan({ ...base, sceneId: id }, SCENES[id].location), { mood: "street", district: "stall" });
+});
 
 it("local pressure follows the saved allowance, while quiet and ending identities remain distinct", () => {
   const base = createCharacter({ handle: "SoundReview", givenName: "Ada", origin: "spire", bonus: { chrome: 2, nerve: 0, face: 0, ghost: 0 } });

@@ -227,3 +227,5 @@ The character and pacing cycle adds Mara’s current private reply, Lumen’s in
 
 
 The [visual staging cycle](VISUAL_STAGING_CYCLE.md) strengthens four stable character moments and preserves complete scene framing. This is a focused presentation improvement, not a new 9+ grade. Continue with the fourteen-clip performance and ambience review, then repeat campaign pacing/replay assessment. The provisional internal 8.2 grade and separate production gates remain unchanged.
+
+The [audio craft cycle](AUDIO_CRAFT_CYCLE.md) implements the follow-through after visual staging: twenty fixed synthetic quotations, three phrased replacements and three explicit room textures. It retains current grade 8.2 and open production gates. Next delivery: replay complete minimal and investigation campaigns across builds, measure optional-work density and consequence rhythm, compare opening/finale continuity, then revise the weakest observed stretch with accompanying art when its setting or visual meaning requires it. Do not raise the grade merely for additional media or checks.

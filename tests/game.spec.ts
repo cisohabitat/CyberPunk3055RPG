@@ -1363,6 +1363,46 @@ async function observeBeds(page: Page) {
 }
 const bedReview = (page: Page) => page.evaluate(() => (window as unknown as { bedReview: { decoded: string[]; started: string[] } }).bedReview);
 
+test("present-day room quotes follow refusal and handover terms without autoplay", async ({ page }) => {
+  await observeBeds(page);
+  const requests: string[] = []; page.on("request", request => { if (request.url().includes("/audio/voice-")) requests.push(request.url()); });
+  const cases = [
+    ["act2_witness_arrival", {}, "Nia Pell", "voice-nia-arrival", "witness"],
+    ["act2_response_invitation", {}, "Mara", "voice-mara-response", "clinic"],
+    ["act2_response_refusal", { response_public_refused: true }, "Mara", "voice-mara-public-refusal", "clinic"],
+    ["act2_route_receipt", {}, "Kerr", "voice-kerr-handover-private", "stall"],
+    ["act2_route_receipt", { kerr_route_private: true, kerr_route_trace: true }, "Kerr", "voice-kerr-handover-breached", "stall"],
+    ["act2_route_receipt", { kerr_route_registered: true, kerr_route_trace: true }, "Kerr", "voice-kerr-handover-registered", "stall"],
+  ] as const;
+  for (const [index, [sceneId, flags, speaker, voice, room]] of cases.entries()) {
+    if (!index) await openRun(page, fixture(sceneId, { flags }));
+    else { await page.evaluate(run => localStorage.setItem("saint-shard-3055-v1", JSON.stringify(run)), fixture(sceneId, { flags })); await page.reload(); await page.getByTestId("continue-run").click(); }
+    await expect.poll(async () => (await bedReview(page)).started).toContain(`ambience-${room}.wav`);
+    const before = await page.evaluate(() => localStorage.getItem("saint-shard-3055-v1")), count = requests.length;
+    const listen = page.getByRole("button", { name: `Listen to ${speaker}`, exact: true });
+    await expect(listen).toBeVisible(); expect(requests.length).toBe(count);
+    await listen.click(); await expect(page.getByTestId("voice-line")).toContainText("Playing selected dialogue");
+    expect(requests.at(-1)).toContain(`${voice}.wav`);
+    await page.getByRole("button", { name: "Stop line", exact: true }).click();
+    expect(await page.evaluate(() => localStorage.getItem("saint-shard-3055-v1"))).toBe(before);
+  }
+  await page.evaluate(run => localStorage.setItem("saint-shard-3055-v1", JSON.stringify(run)), fixture("act2_response_refusal", { flags: { response_clinic_refused: true } }));
+  await page.reload(); await page.getByTestId("continue-run").click();
+  await expect(page.getByTestId("voice-line")).toHaveCount(0);
+});
+
+test("leaving the clinic cancels its late ambience while the new district keeps playing", async ({ page }) => {
+  await observeBeds(page); let release!: () => void; const gate = new Promise<void>(resolve => { release = resolve; });
+  await page.route("**/audio/ambience-clinic.wav", async route => { const response = await route.fetch(); await gate; await route.fulfill({ response }); });
+  await openRun(page, fixture("act2_response_invitation"));
+  await page.getByTestId("choice-decline-response-request").click();
+  await expect.poll(async () => (await bedReview(page)).started).toContain("theme-week.wav");
+  release(); await expect.poll(async () => (await bedReview(page)).decoded).toContain("ambience-clinic.wav");
+  expect((await bedReview(page)).started).not.toContain("ambience-clinic.wav");
+  const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(run.flags.response_declined).toBe(true); expect(run.flags.response_sent).toBeUndefined();
+});
+
 test("directed audio follows the saved local window without spending or rerolling for sound", async ({ page }) => {
   await observeBeds(page); await page.addInitScript(() => { Math.random = () => .75; });
   await openRun(page, fixture("chapel_window_plan", { flags: { chapel_window_started: true, chapel_window_2: true, chapel_window_scouted: true } }));

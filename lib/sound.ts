@@ -3,7 +3,7 @@ import type { GameState } from "./types";
 import { windowRemaining } from "./chapel-window";
 
 export type SoundMood = "street" | "chapel" | "ward" | "week" | "reading" | "quiet" | "pressure";
-export type SoundDistrict = "street" | "chapel" | "spire" | "canal" | "ward";
+export type SoundDistrict = "street" | "chapel" | "spire" | "canal" | "ward" | "clinic" | "witness" | "stall";
 let ctx: AudioContext | null = null;
 type AudioSource = { node: AudioBufferSourceNode; gain: GainNode; channel: keyof typeof mix; dispose: () => void };
 let theme: AudioSource | null = null;
@@ -176,14 +176,16 @@ export function sceneMood(location: string, act = ""): SoundMood {
   return act === "The Week" ? "week" : "street";
 }
 const QUIET_SCENES = new Set(["act2_mara_quiet", "act2_lumen_quiet", "act3_lumen_boundary", "act3_mara_followup", "act3_kerr_personal_question", "act3_chapel_return", "ending_quiet"]);
+const CLINIC_SCENES = new Set(["act2_response_invitation", "act2_response_agenda", "act2_response_refusal", "act2_response_terms", "act2_response_dispatch", "act2_response_receipt", "act2_mara_quiet", "act2_lumen_quiet", "act3_response_visit", "act3_mara_followup", "act3_lumen_boundary"]);
+const ROOM_SCENES: Readonly<Record<string, SoundDistrict>> = { stall: "stall", pay: "stall", pay_yes: "stall", pay_no: "stall", why: "stall", job_owner: "stall", act2_route_receipt: "stall", act2_witness_arrival: "witness" };
 /** Read-only staging. A saved allowance is pressure; no real-time clock is added. */
 export function sceneSoundPlan(state: GameState, location: string, act = ""): { mood: SoundMood; district: SoundDistrict } {
   const value = location.toLowerCase();
-  const district: SoundDistrict = state.sceneId.startsWith("ending_") && ["ending_names", "ending_quiet", "ending_witness", "ending_listed"].includes(state.sceneId) ? "ward"
+  const district: SoundDistrict = CLINIC_SCENES.has(state.sceneId) ? "clinic" : ROOM_SCENES[state.sceneId] ?? (state.sceneId.startsWith("ending_") && ["ending_names", "ending_quiet", "ending_witness", "ending_listed"].includes(state.sceneId) ? "ward"
     : /ward nine|wall|witness/.test(value) ? "ward" : /chapel|chair|memory|clinic|conversation room/.test(value) ? "chapel"
-    : /spire|helion/.test(value) ? "spire" : /canal|depot/.test(value) ? "canal" : "street";
+    : /spire|helion/.test(value) ? "spire" : /canal|depot/.test(value) ? "canal" : "street");
   const pressure = state.sceneId.startsWith("chapel_window_") && state.flags.chapel_window_started && !state.flags.chapel_window_done && windowRemaining(state) > 0;
-  const mood = pressure ? "pressure" : QUIET_SCENES.has(state.sceneId) ? "quiet"
+  const mood = pressure ? "pressure" : QUIET_SCENES.has(state.sceneId) || CLINIC_SCENES.has(state.sceneId) || state.sceneId === "act2_witness_arrival" || state.sceneId === "act2_route_receipt" ? "quiet"
     : state.sceneId === "memo" || state.sceneId === "mara_why" || state.sceneId.startsWith("memory_") && state.sceneId !== "memory_table" ? "reading"
     : state.sceneId.startsWith("ending_") && district === "ward" ? "ward" : sceneMood(location, act);
   return { mood, district };

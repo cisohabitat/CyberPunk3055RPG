@@ -1,0 +1,98 @@
+{
+  "baselineRevision": "e85f1d80582a54b5ba79ec54df7600820a635b76",
+  "previewSha256": "acba0dce75433e675ddca7f2cc7d6d465a5c83f7d6cd44600ec984a3d7e2281f",
+  "rows": [
+    {
+      "label": "voice-quill-offer / previous delivery",
+      "startSeconds": 0.0,
+      "durationSeconds": 8.258666666666667,
+      "sourceSha256": "55c48480f0bfbe16a2ddbc69c799fb16c4b3fad9b7a2fc2f75eedc555ee5b838"
+    },
+    {
+      "label": "voice-quill-offer / phrase delivery",
+      "startSeconds": 9.258666666666667,
+      "durationSeconds": 8.996,
+      "sourceSha256": "d2709b67a0efdffdeba15544aec34bccec9eab44e830ae5438f864acce0b721f"
+    },
+    {
+      "label": "voice-mara-revelation / previous delivery",
+      "startSeconds": 19.254666666666665,
+      "durationSeconds": 7.092625,
+      "sourceSha256": "5b78ac3cc8fb448abdb5f89deba36ffc3dd34a4a39b7801bef617bdbcfb16a7c"
+    },
+    {
+      "label": "voice-mara-revelation / phrase delivery",
+      "startSeconds": 27.347291666666667,
+      "durationSeconds": 8.419291666666666,
+      "sourceSha256": "092f7f97e85e39adcf0b680d50ae93531f7e7dffd171cbf087e6be0a75bc314a"
+    },
+    {
+      "label": "voice-kerr-boundary / previous delivery",
+      "startSeconds": 36.76658333333334,
+      "durationSeconds": 7.496666666666667,
+      "sourceSha256": "59da1f59682c7810d7a2c0f6b3a2f7b65b7e1494272b2f5b1938bebf5bf4e03e"
+    },
+    {
+      "label": "voice-kerr-boundary / phrase delivery",
+      "startSeconds": 45.26325,
+      "durationSeconds": 8.206666666666667,
+      "sourceSha256": "07d190d01c2b4109e83c945d98763b651a590aa0eead16d385d7687765a421eb"
+    },
+    {
+      "label": "clinic / room excerpt at default ambience bus",
+      "startSeconds": 54.46991666666667,
+      "durationSeconds": 8.0,
+      "sourceSha256": "f57119d7216c7dada0d5d0293a3cdff4c9401af505eada3bb39793392ddfe1e6"
+    },
+    {
+      "label": "witness / room excerpt at default ambience bus",
+      "startSeconds": 63.46991666666667,
+      "durationSeconds": 8.0,
+      "sourceSha256": "49789a5dc8304a452ddd519ef315fa496dc59d81eb3131f0b7fc906676945876"
+    },
+    {
+      "label": "stall / room excerpt at default ambience bus",
+      "startSeconds": 72.46991666666666,
+      "durationSeconds": 8.0,
+      "sourceSha256": "d81d4661de5c02df80b2320d709ddedf7e3ca7de4f9c2ba856b408fb07be5882"
+    },
+    {
+      "label": "voice-nia-arrival / default ducked scene mix",
+      "startSeconds": 81.46991666666666,
+      "durationSeconds": 9.338,
+      "sourceSha256": "d491be8168f0903643430831328c9846014804e509e743b8905703a705ecd772"
+    },
+    {
+      "label": "voice-mara-response / default ducked scene mix",
+      "startSeconds": 91.80791666666667,
+      "durationSeconds": 8.151916666666667,
+      "sourceSha256": "5c4e0892fb0bf12b93b25fba541e832742a503c0447b40a34f3d6f9e70ad1ca4"
+    },
+    {
+      "label": "voice-mara-public-refusal / default ducked scene mix",
+      "startSeconds": 100.95983333333334,
+      "durationSeconds": 7.90125,
+      "sourceSha256": "4198455189cc74d64ed6a56187563d7a9ecdb46da43c70b2280ec040baada4f5"
+    },
+    {
+      "label": "voice-kerr-handover-private / default ducked scene mix",
+      "startSeconds": 109.86108333333334,
+      "durationSeconds": 3.572625,
+      "sourceSha256": "8af1a0d0a9dae118ff22b6db5a39479eb34ec3ca7806450cb5b1fb4390be3d30"
+    },
+    {
+      "label": "voice-kerr-handover-breached / default ducked scene mix",
+      "startSeconds": 114.43370833333333,
+      "durationSeconds": 6.717333333333333,
+      "sourceSha256": "e95bc5e15888311bbcd2010024af1574fe3dcce342e76fdc7a2557b67f92a24e"
+    },
+    {
+      "label": "voice-kerr-handover-registered / default ducked scene mix",
+      "startSeconds": 122.15104166666667,
+      "durationSeconds": 3.5512916666666667,
+      "sourceSha256": "515d3679665c0ca48220b017ee73cb140506c880661c1ea2ca3f74758bfc7421"
+    }
+  ],
+  "mix": "Voice .7; music .6*.5*.4 and ambience .5*.35*.4 while speaking; room-only excerpts .5*.35. Offline approximation of settled default buses.",
+  "limitations": "Source/signal comparison and audition artifact; does not constitute perceptual listening, physical-device, performance or rights acceptance."
+}

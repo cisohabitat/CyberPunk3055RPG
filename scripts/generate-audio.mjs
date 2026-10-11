@@ -1,6 +1,7 @@
 import { writeFileSync } from "node:fs";
 import { renderScores } from "./score.mjs";
 import { renderDirectedAudio } from "./scene-score.mjs";
+import { renderRoomTextures } from "./room-textures.mjs";
 
 const RATE = 44100;
 
@@ -149,6 +150,7 @@ function memoryCue(notes, seconds) {
 const files = {
   ...renderScores(),
   ...renderDirectedAudio(),
+  ...renderRoomTextures(),
   "sting-memory": sting([329.63, 261.63, 246.94, 220]),
   rain: rain(),
   "sting-stall": sting([220, 277, 330]),

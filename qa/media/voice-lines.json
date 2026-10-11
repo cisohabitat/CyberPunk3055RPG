@@ -53,7 +53,24 @@
     "speaker": "Quill",
     "voice": "am_michael",
     "speed": 0.96,
-    "text": "Mara Voss, Helion logistics. Glass Chapel edits her memory at dawn. Bring me the original hour, intact."
+    "text": "Mara Voss, Helion logistics. Glass Chapel edits her memory at dawn. Bring me the original hour, intact.",
+    "segments": [
+      {
+        "text": "Mara Voss, Helion logistics.",
+        "speed": 0.96,
+        "pauseAfter": 0.26
+      },
+      {
+        "text": "Glass Chapel edits her memory at dawn.",
+        "speed": 0.94,
+        "pauseAfter": 0.32
+      },
+      {
+        "text": "Bring me the original hour, intact.",
+        "speed": 0.94,
+        "pauseAfter": 0
+      }
+    ]
   },
   {
     "id": "voice-mara-revelation",
@@ -61,7 +78,29 @@
     "speaker": "Mara",
     "voice": "af_sarah",
     "speed": 0.98,
-    "text": "I signed the coolant dump. Ward Nine. Three hundred on the night shift. I want that sentence to stay in my mouth."
+    "text": "I signed the coolant dump. Ward Nine. Three hundred on the night shift. I want that sentence to stay in my mouth.",
+    "segments": [
+      {
+        "text": "I signed the coolant dump.",
+        "speed": 0.97,
+        "pauseAfter": 0.38
+      },
+      {
+        "text": "Ward Nine.",
+        "speed": 0.94,
+        "pauseAfter": 0.25
+      },
+      {
+        "text": "Three hundred on the night shift.",
+        "speed": 0.94,
+        "pauseAfter": 0.42
+      },
+      {
+        "text": "I want that sentence to stay in my mouth.",
+        "speed": 0.95,
+        "pauseAfter": 0
+      }
+    ]
   },
   {
     "id": "voice-kerr-boundary",
@@ -69,7 +108,24 @@
     "speaker": "Kerr",
     "voice": "am_adam",
     "speed": 0.98,
-    "text": "You can't unwrite the depot. You can stop asking me to pretend you kept the private part. Tell me what you'll put beside that promise."
+    "text": "You can't unwrite the depot. You can stop asking me to pretend you kept the private part. Tell me what you'll put beside that promise.",
+    "segments": [
+      {
+        "text": "You can't unwrite the depot.",
+        "speed": 0.96,
+        "pauseAfter": 0.32
+      },
+      {
+        "text": "You can stop asking me to pretend you kept the private part.",
+        "speed": 0.96,
+        "pauseAfter": 0.35
+      },
+      {
+        "text": "Tell me what you'll put beside that promise.",
+        "speed": 0.94,
+        "pauseAfter": 0
+      }
+    ]
   },
   {
     "id": "voice-lumen-boundary",
@@ -110,5 +166,104 @@
     "voice": "am_eric",
     "speed": 0.98,
     "text": "Your name is still on file. That is what the tower will keep."
+  },
+  {
+    "id": "voice-nia-arrival",
+    "scene": "act2_witness_arrival",
+    "speaker": "Nia Pell",
+    "voice": "af_nova",
+    "speed": 0.96,
+    "text": "Now I want to hear the words before anyone uses them. No address. No photograph. If I stop, you stop.",
+    "segments": [
+      {
+        "text": "Now I want to hear the words before anyone uses them.",
+        "speed": 0.96,
+        "pauseAfter": 0.3
+      },
+      {
+        "text": "No address. No photograph.",
+        "speed": 0.94,
+        "pauseAfter": 0.3
+      },
+      {
+        "text": "If I stop, you stop.",
+        "speed": 0.93,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-mara-response",
+    "scene": "act2_response_invitation",
+    "speaker": "Mara",
+    "voice": "af_sarah",
+    "speed": 0.96,
+    "text": "I want to answer in my own name. A private statement to the Ward Nine records desk. I won't make the clinic my alibi.",
+    "segments": [
+      {
+        "text": "I want to answer in my own name.",
+        "speed": 0.96,
+        "pauseAfter": 0.3
+      },
+      {
+        "text": "A private statement to the Ward Nine records desk.",
+        "speed": 0.96,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "I won't make the clinic my alibi.",
+        "speed": 0.94,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-mara-public-refusal",
+    "scene": "act2_response_refusal",
+    "speaker": "Mara",
+    "voice": "af_sarah",
+    "speed": 0.96,
+    "text": "Not the board. Not this week. I will answer the desk in my own name. I won't give you a crowd because you asked for one.",
+    "segments": [
+      {
+        "text": "Not the board. Not this week.",
+        "speed": 0.95,
+        "pauseAfter": 0.35
+      },
+      {
+        "text": "I will answer the desk in my own name.",
+        "speed": 0.96,
+        "pauseAfter": 0.3
+      },
+      {
+        "text": "I won't give you a crowd because you asked for one.",
+        "speed": 0.94,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-kerr-handover-private",
+    "scene": "act2_route_receipt",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.97,
+    "text": "No recipient entry. That was the part I asked you to keep."
+  },
+  {
+    "id": "voice-kerr-handover-breached",
+    "scene": "act2_route_receipt",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.95,
+    "text": "You brought the case. You also put my name in their register after promising not to. Those aren't the same line."
+  },
+  {
+    "id": "voice-kerr-handover-registered",
+    "scene": "act2_route_receipt",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.97,
+    "text": "We agreed they could register it. Leave that on the receipt."
   }
 ]
