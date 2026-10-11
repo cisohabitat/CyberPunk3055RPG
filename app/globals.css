@@ -943,6 +943,8 @@ html[data-contrast="high"] .title-intro { background: #09080d; }
 .memory-review { margin-top: 1.25rem; }
 .memory-review > summary { cursor: pointer; padding: .75rem 0; line-height: 1.5; }
 #choices { scroll-margin-top: calc(var(--header-h, 0px) + 1rem); }
+.choice-group-title { margin: 1rem 0 .25rem; font-size: 1.05rem; scroll-margin-top: calc(var(--header-h, 0px) + 1rem); }
+.decision-help > a { display: inline-block; padding-block: .6rem; }
 .restore-notice, .checkpoint-label { color: var(--cyan); overflow-wrap: anywhere; }
 .codex-chapter { margin-top: 1.2rem; }
 .codex-chapter h3 { font-size: 1rem; }

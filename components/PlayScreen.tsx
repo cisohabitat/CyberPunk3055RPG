@@ -2,7 +2,7 @@
 
 import { campaignCoda } from "@/lib/campaign-consequences";
 
-import { useEffect, useRef, useState } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 import { CheckDialog } from "@/components/CheckDialog";
 import { DialogFrame } from "@/components/DialogFrame";
 import { Mark, originAccent } from "@/components/Mark";
@@ -66,6 +66,9 @@ export function PlayScreen({
   const scene = getScene(state.sceneId);
   const illustration = sceneIllustration(scene.id);
   const choices = presentChoices(state, scene);
+  const decisionTitle = scene.id === "act2_middle" ? "Street or silence" : scene.id === "act3_arrival" ? "At the wall" : null;
+  const decisionIds = scene.id === "act2_middle" ? ["stand", "deal"] : ["read-names", "confirm-leak", "read-wall", "let-ives", "say-anyway", "leave-wall"];
+  const decisionIndex = decisionTitle ? choices.findIndex(choice => decisionIds.includes(choice.id)) : -1;
   const [pending, setPending] = useState<VisibleChoice | null>(null);
   const [sheetOpen, setSheetOpen] = useState(false);
   const [confirmAbandon, setConfirmAbandon] = useState(false);
@@ -339,42 +342,52 @@ export function PlayScreen({
                   <h2 id="choices-title">Your next move</h2>
                   <p className="hint">Selecting an option commits it. For a check, review the odds and costs first; Back leaves it unrolled.</p>
                   {unavailableChoices.length > 0 && <details data-testid="unavailable-choices"><summary>Review unavailable approaches ({unavailableChoices.length})</summary><ul>{unavailableChoices.map((choice) => <li key={choice.id}><strong>{choice.label}</strong><p>{choice.disabledReason}</p></li>)}</ul></details>}
+                  {decisionIndex > 0 && <a href="#chapter-decision" data-testid="decision-jump" onClick={event => {
+                    const target = document.getElementById("chapter-decision");
+                    if (!target) return;
+                    event.preventDefault();
+                    target.focus({ preventScroll: true });
+                    target.scrollIntoView({ block: "start", behavior: "instant" });
+                  }}>Go to {decisionTitle === "Street or silence" ? "street or silence decision" : "final decision"}</a>}
                 </div>
+                {decisionIndex > 0 && <h3 className="choice-group-title">People and unfinished work</h3>}
                 {choices.map((choice, index) => {
                   if (scene.memory && choice.id.startsWith("inspect-")) return null;
                   if (scene.id === "memory_sequence" && choice.id.startsWith("place-")) return null;
                   const odds = choice.check ? previewCheck(state, choice.check) : null;
                   const chance = !odds ? null : odds.hits === 10 ? "certain" : odds.hits === 0 ? "no chance" : `${odds.hits} in 10`;
                   return (
-                    <button
-                      key={choice.id}
-                      className="choice"
-                      type="button"
-                      data-testid={`choice-${choice.id}`}
-                      aria-labelledby={`choice-label-${choice.id}`}
-                      aria-describedby={`choice-detail-${choice.id}`}
-                      aria-keyshortcuts={preferences.numberShortcuts && choice.enabled && index < 9 ? String(index + 1) : undefined}
-                      disabled={!choice.enabled || activeChoice !== null}
-                      onClick={() => pick(choice)}
-                    >
-                      {preferences.artwork !== "none" && scene.id === "districts" && DISTRICT_ART[choice.id] && (
-                        <img className="card-art" src={DISTRICT_ART[choice.id]} alt="" loading="lazy" width={320} height={180} />
-                      )}
-                      <span className="index">{index + 1}</span>
-                      <span className="label" id={`choice-label-${choice.id}`}>{choice.label}</span>
-                      <span className="odds" id={`choice-detail-${choice.id}`}>
-                        {choice.disabledReason ??
-                          [
-                            odds ? `${STAT_INFO[odds.stat].name} · DC ${odds.dc} · ${chance}` : null,
-                            choice.detail,
-                            openPromises.length && [choice.next, choice.nextSuccess, choice.nextFail].some((next) => typeof next === "string" && ["ending_week_wards", "ending_week_deal", "ending_exposed"].includes(next)) ? `${openPromises.length} campaign ${openPromises.length === 1 ? "promise remains" : "promises remain"} unresolved if the week closes` : null,
-                            effectPreview(state, choice).join(" · ") || null,
-                            checkResourceCosts(state, choice).join("; ") || null,
-                          ]
-                            .filter(Boolean)
-                            .join(" · ")}
-                      </span>
-                    </button>
+                    <Fragment key={choice.id}>
+                      {index === decisionIndex && <h3 id="chapter-decision" className="choice-group-title" tabIndex={-1}>{decisionTitle}</h3>}
+                      <button
+                        className="choice"
+                        type="button"
+                        data-testid={`choice-${choice.id}`}
+                        aria-labelledby={`choice-label-${choice.id}`}
+                        aria-describedby={`choice-detail-${choice.id}`}
+                        aria-keyshortcuts={preferences.numberShortcuts && choice.enabled && index < 9 ? String(index + 1) : undefined}
+                        disabled={!choice.enabled || activeChoice !== null}
+                        onClick={() => pick(choice)}
+                      >
+                        {preferences.artwork !== "none" && scene.id === "districts" && DISTRICT_ART[choice.id] && (
+                          <img className="card-art" src={DISTRICT_ART[choice.id]} alt="" loading="lazy" width={320} height={180} />
+                        )}
+                        <span className="index">{index + 1}</span>
+                        <span className="label" id={`choice-label-${choice.id}`}>{choice.label}</span>
+                        <span className="odds" id={`choice-detail-${choice.id}`}>
+                          {choice.disabledReason ??
+                            [
+                              odds ? `${STAT_INFO[odds.stat].name} · DC ${odds.dc} · ${chance}` : null,
+                              choice.detail,
+                              openPromises.length && [choice.next, choice.nextSuccess, choice.nextFail].some((next) => typeof next === "string" && ["ending_week_wards", "ending_week_deal", "ending_exposed"].includes(next)) ? `${openPromises.length} campaign ${openPromises.length === 1 ? "promise remains" : "promises remain"} unresolved if the week closes` : null,
+                              effectPreview(state, choice).join(" · ") || null,
+                              checkResourceCosts(state, choice).join("; ") || null,
+                            ]
+                              .filter(Boolean)
+                              .join(" · ")}
+                        </span>
+                      </button>
+                    </Fragment>
                   );
                 })}
               </div>

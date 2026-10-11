@@ -2,6 +2,7 @@ import { depotShiftChoice, witnessShiftChoice } from "../encounter-methods";
 import { responseChoice } from "./character-arcs";
 import { kerrCollectionChoice } from "./relationships";
 import { GOAL_WEEK } from "./goal";
+import { campaignReturnBeat } from "./campaign-beats";
 import type { GameState, Scene } from "../types";
 
 function districtText(state: GameState): string {
@@ -196,9 +197,9 @@ function middleText(state: GameState): string {
   const returned = ["response_started", "kerr_route_started", "kerr_route_declined", "notice_started", "pump_attempted", "week_recovered", "witness_done", "memory_response_done", "archive_done"].some(flag => state.flags[flag]);
   if (returned) {
     const tab = state.flags.debt && !state.flags.quill_settled ? " Quill's tab is still open." : state.flags.quill_repaid_late ? " Quill kept the late payment beside the postponement." : "";
-    return `Ren waits by the grate. You have heard why Junie matters to her.${tab}
+    return `${campaignReturnBeat(state) ?? "Ren waits by the grate. You have heard why Junie matters to her."}${tab}
 
-Choose any remaining work, speak about Mara and Ward Nine in the street, or take Helion's money for silence. Closing the week leaves unfinished commitments open.`;
+Choose remaining work, street speech, or Helion's money for silence. Closing the week leaves unfinished commitments open.`;
   }
   const from = state.flags.kerr_told
     ? "Kerr kept the names in his mouth. The canal is quieter for it."

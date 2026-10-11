@@ -40,15 +40,18 @@ if (mode === "capture") {
     assert.equal(hash(replayCampaign(spec).state), expected, `${file}: canonical final state changed`);
   }
   const audit = new Map<string, { scene: string; visits: number; changedVisits: number; before: number; after: number; maxBefore: number; maxAfter: number }>();
+  const variants = new Map<string, { before: Set<string>; after: Set<string> }>();
   let before = 0, after = 0, retellChanges = 0;
   for (const visit of baseline.visits) {
     const current = sceneText(getScene(visit.state.sceneId), visit.state), oldWords = words(visit.text), newWords = words(current);
     before += oldWords; after += newWords;
+    const versions = variants.get(visit.state.sceneId) ?? { before: new Set<string>(), after: new Set<string>() };
+    versions.before.add(visit.text); versions.after.add(current); variants.set(visit.state.sceneId, versions);
     if (["ending_names", "ending_quiet", "ending_witness", "ending_listed"].includes(visit.state.sceneId) && hash(nightRetell(visit.state)) !== hash(visit.retell)) retellChanges++;
     const row = audit.get(visit.state.sceneId) ?? { scene: visit.state.sceneId, visits: 0, changedVisits: 0, before: 0, after: 0, maxBefore: 0, maxAfter: 0 };
     row.visits++; row.changedVisits += Number(current !== visit.text); row.before += oldWords; row.after += newWords;
     row.maxBefore = Math.max(row.maxBefore, oldWords); row.maxAfter = Math.max(row.maxAfter, newWords); audit.set(row.scene, row);
   }
-  const result = { method: "Identical pre-choice states from deterministic full-campaign fixtures; authored dice and retained source knowledge. Aggregate scene prose, excluding separately rendered finale retell. No reading-time or human-comprehension claim.", routes: Object.keys(baseline.finals).length, visits: baseline.visits.length, canonicalDefinitionsUnchanged: true, finalStatesUnchanged: true, wordsBefore: before, wordsAfter: after, changePercent: Number(((after / before - 1) * 100).toFixed(2)), retellChangedVisits: retellChanges, changedScenes: [...audit.values()].filter(row => row.changedVisits) };
+  const result = { method: "Identical pre-choice states from deterministic full-campaign fixtures; authored dice and retained source knowledge. Aggregate scene prose, excluding separately rendered finale retell. No reading-time or human-comprehension claim.", routes: Object.keys(baseline.finals).length, visits: baseline.visits.length, canonicalDefinitionsUnchanged: true, finalStatesUnchanged: true, wordsBefore: before, wordsAfter: after, changePercent: Number(((after / before - 1) * 100).toFixed(2)), retellChangedVisits: retellChanges, changedScenes: [...audit.values()].filter(row => row.changedVisits).map(row => ({ ...row, variantsBefore: variants.get(row.scene)!.before.size, variantsAfter: variants.get(row.scene)!.after.size })) };
   writeFileSync(outputPath, JSON.stringify(result, null, 2) + "\n"); console.log(JSON.stringify(result));
 }

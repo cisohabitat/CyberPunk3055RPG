@@ -4,6 +4,7 @@ import { shelterVisitChoice } from "./shelter";
 import { freightVisitChoice } from "./freight";
 import { GOAL_WALL } from "./goal";
 import { weekRetell } from "./retell";
+import { campaignReturnBeat } from "./campaign-beats";
 import { kerrQuestionChoice, kerrVisitChoice, quillVisitChoice } from "./relationships";
 import type { GameState, Scene } from "../types";
 
@@ -45,7 +46,7 @@ ${tone}`;
 
 function arrivalText(state: GameState): string {
   if (["response_visit", "lumen_boundary_visit", "kerr_route_visit", "quill_route_visit", "kerr_question_done", "testimony_done"].some(flag => state.flags[flag])) {
-    return `Sera turns back to the unfinished line on the wall. The people you visited have given their own answers; none can speak this one for you.
+    return `${campaignReturnBeat(state) ?? "Sera turns back to the unfinished line on the wall. The people you visited have given their own answers; none can speak this one for you."}
 
 ${state.flags.on_file && state.flags.act2_deal ? "Ives waits with the folio open. Sera keeps her pencil in her hand." : "She keeps her pencil in her hand. ‘We still have the names.’"}`;
   }

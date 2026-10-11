@@ -374,3 +374,9 @@ The release pipeline runs the complete browser suite with four workers. All desk
 ## Audio craft follow-through
 
 Optional selected dialogue now includes Nia’s arrival, Mara’s present-day request and public refusal, and Kerr’s actual handover terms. Twenty fixed synthetic quotations are available through Listen/Stop only when their words are visible. Quill’s offer, Mara’s revelation and Kerr’s later boundary use deliberate phrase spacing. Clinic, witness-room and stall ambience give these conversations distinct room textures; dialogue ducks the beds without changing story state. Sound off and unavailable clips retain the written scene. See [the audio craft cycle](docs/AUDIO_CRAFT_CYCLE.md) and [local media audition](qa/media/review.html). The provisional internal grade stays 8.2; complete-campaign pacing and consequence rhythm are next.
+
+## Campaign return craft
+
+Returning to the canal or the wall now reflects the job or conversation just completed, using saved conduct and actual evidence. The first meetings keep their introductions. Optional work and the chapter decision have separate headings; a keyboard-accessible link reaches street speech/paid silence or the final wall decision without selecting anything. Choices, numbering, costs and outcomes retain their original order and behavior. Existing canal/Sera art and accompanying sound fit the returns; no new scene or media is needed.
+
+The [campaign craft cycle](docs/CAMPAIGN_CRAFT_CYCLE.md) records paired comparisons across 108 routes and full keyboard play. Preserve save version 2, `saint-shard-3055-v1`, recorded dice, 1d10 and caps, all four finales, visible goals and silent/text-only parity. The internal grade stays 8.2. Next: resource-poor/failure-heavy campaign balance and recovery visibility.
