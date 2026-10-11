@@ -316,7 +316,7 @@ The endurance probe now releases its native file-input debugger handles, avoidin
 
 `npm run production:rehearse -- --previous PATH` compares separate built worktrees through one temporary local browser origin. Native previous-release exports cover a pending eight and all four finales; candidate/rollback/re-promotion preserve saves, slots, preferences and codex. Corruption recovery, cancelled replacement and once-only pending costs are rehearsed without switching the live site. Version 1 is tested with a labeled synthetic fixture.
 
-Production waits up to twenty minutes for exact-commit Test/Build success, with ten-second status-request limits and thirty-second polling (at most forty requests). Failed, unreadable, late or timed-out checks still skip publication. No scene or asset is added; existing art remains suitable. Preserve version 2, `saint-shard-3055-v1`, 1d10, caps, four finales and the 24 MiB decoded cache. See [the implementation, repeatable checks and pending review](docs/RELEASE_READINESS.md). The provisional 7.8 grade and all six human acceptance gates remain unchanged.
+Production waits up to thirty minutes for exact-commit Test/Build success, with ten-second status-request limits and thirty-second polling (at most sixty requests). Failed, unreadable, late or timed-out checks still skip publication. No scene or asset is added; existing art remains suitable. Preserve version 2, `saint-shard-3055-v1`, 1d10, caps, four finales and the 24 MiB decoded cache. See [the implementation, repeatable checks and pending review](docs/RELEASE_READINESS.md). The provisional 7.8 grade and all six human acceptance gates remain unchanged.
 
 
 ### Player validation response on 11 October 2026
@@ -369,7 +369,7 @@ The [visual staging cycle](docs/VISUAL_STAGING_CYCLE.md) records source referenc
 
 ### Browser CI throughput
 
-The release pipeline runs the complete browser suite with four workers. All desktop/phone Chromium, Firefox and WebKit checks remain required, as do exact-commit Test/Build success and the fail-closed twenty-minute production gate. This addresses a measured two-worker run that passed after the gate timed out. Existing accompanying art remains suitable; gameplay, audio, saves and goals are unchanged.
+The release pipeline runs the complete browser suite with four workers. All desktop/phone Chromium, Firefox and WebKit checks remain required, as do exact-commit Test/Build success and the fail-closed thirty-minute production gate. Four workers improve throughput; the bounded wait is now thirty minutes because a later complete four-profile run exceeded the previous twenty-minute window. Failed, unreadable or timed-out checks still skip publication. Existing accompanying art remains suitable; gameplay, audio, saves and goals are unchanged.
 
 ## Audio craft follow-through
 

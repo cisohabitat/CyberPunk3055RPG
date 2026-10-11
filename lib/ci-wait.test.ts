@@ -7,18 +7,18 @@ const url = "https://api.github.com/repos/owner/repo/commits/exact-sha/check-run
 const onWait = () => {};
 
 describe("bounded production CI wait", () => {
-  it("allows the full suite to complete after ten minutes on the exact commit URL", async () => {
+  it("allows the full suite to complete after twenty minutes on the exact commit URL", async () => {
     let time = 0;
     const result = await waitForProductionChecks({ url, now: () => time,
       sleep: async ms => { time += ms; }, onWait,
       read: async (requested: string, signal: AbortSignal) => {
         assert.equal(requested, url); assert.equal(signal.aborted, false);
-        return time >= 14 * 60_000 ? passing : [];
+        return time >= 24 * 60_000 ? passing : [];
       },
     });
     assert.equal(result.exitCode, 1);
-    assert.equal(time, 14 * 60_000);
-    assert.equal(CI_DEADLINE_MS, 20 * 60_000);
+    assert.equal(time, 24 * 60_000);
+    assert.equal(CI_DEADLINE_MS, 30 * 60_000);
     assert.equal(CHECK_REQUEST_MS, 10_000);
   });
 
@@ -31,13 +31,13 @@ describe("bounded production CI wait", () => {
     assert.equal(result.exitCode, 0); assert.equal(time, 25); assert.equal(requests, 3);
   });
 
-  it("limits the complete twenty-minute wait to forty status requests", async () => {
+  it("limits the complete thirty-minute wait to sixty status requests", async () => {
     let time = 0, requests = 0;
     const result = await waitForProductionChecks({ url, now: () => time, onWait,
       sleep: async ms => { time += ms; }, read: async () => { requests++; return []; },
     });
     assert.equal(result.exitCode, 0); assert.equal(time, CI_DEADLINE_MS);
-    assert.equal(CI_POLL_MS, 30_000); assert.equal(requests, 40);
+    assert.equal(CI_POLL_MS, 30_000); assert.equal(requests, 60);
   });
 
   it("rejects checks that arrive after the deadline", async () => {

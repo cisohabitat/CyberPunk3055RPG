@@ -32,7 +32,7 @@ Local verification passed 433 unit checks, TypeScript, production build/budgets,
 
 All three completed with zero page/media errors. Each consultation compared the exact saved state and shown prose before/after; a first-fragment lookup correctly found no counter-order until inspection. Existing canonical scene definitions, final-state hashes and authored prose/retells match the baseline across 111 campaigns and 8,109 visits. The reviewed aggregate is [investigation-navigation.json](../qa/editorial/investigation-navigation.json); raw states, reports and screenshots remain outside Git. The notebook composition was inspected at phone size. The React checklist found no new fetching, dependencies or save fields; small local derived lists use stable source ids and native labeled controls.
 
-Full four-profile exact-commit CI, load probes and public release verification remain required before publication.
+Revision `0a082e9` passed 433 unit checks, 856 browser checks and the production load probes; browser testing took 20.1 minutes and total CI 22.9 minutes. This exceeded the twenty-minute production wait, and Vercel correctly skipped publication. The follow-up expands only the bounded wait to thirty minutes, retaining ten-second request limits, thirty-second polling, all four browser profiles, exact-commit Test/Build success and fail-closed behavior. A regression exercises a successful check after twenty minutes and the sixty-request timeout bound. Full exact-commit CI, load probes and public release verification remain required before publication.
 
 ## Limits and next phase
 
