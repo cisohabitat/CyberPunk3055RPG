@@ -29,6 +29,8 @@ Four generated PNG masters remain in `/workspace/generated_images`. `qa/media/ar
 
 The redacted aggregate is `qa/editorial/visual-cycle-summary.json`. Raw campaign reports and screenshots are outside Git in `/workspace/saint-shard-validation/visual-cycle/`.
 
+The first pushed revision, `959ce53`, passed all 413 unit/replay and 788 browser checks. Browser CI took 18.8 minutes with two workers; total CI exceeded the twenty-minute production wait, so Vercel canceled the build. The direct same-SHA redeploy returned a team-access 403, and no CLI credential was configured. A follow-up sets browser CI to four workers to improve throughput and triggers a fresh Git-integrated deployment. All four browser profiles, checks, required Test/Build job names and the fail-closed twenty-minute gate remain required. Verify the follow-up run's complete results and production record before claiming it live.
+
 ## Following cycle
 
 Audition all fourteen existing clips against these stable scenes, then revise delivery, ambience and dialogue dynamics where actual listening finds a weakness. Keep fixed transcripts, provenance, interruption cleanup, natural completion and cache/transfer budgets together. Repeat sounding and silent campaigns before reassessing audio or the overall grade. This visual cycle supplies no human listening or commercial-production acceptance claim.

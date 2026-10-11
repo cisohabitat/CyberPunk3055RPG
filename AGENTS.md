@@ -383,3 +383,8 @@ The [build comparison and phase validation](docs/DEPOT_BUILD_VARIETY.md) records
 Quill’s opening offer has a closer counter composition. Mara’s voluntary clinic conversation, Nia’s arrival before account approval and Kerr’s closed-case handover now have character-led scene plates. Frames retain their complete 3:2 composition on phone and desktop, keeping hands and significant objects visible. Refusal and privacy-breach portraits still reflect saved conduct; the pictures grant no additional permission or treatment outcome.
 
 The [visual staging cycle](docs/VISUAL_STAGING_CYCLE.md) records source references, responsive delivery and validation. Text-only play omits artwork, and unavailable plates retain descriptions and choices. Save version 2, `saint-shard-3055-v1`, recorded dice and all four finales are preserved. The internal grade remains 8.2; expressive audio is the next cycle.
+
+
+### Browser CI throughput
+
+The release pipeline runs the complete browser suite with four workers. All desktop/phone Chromium, Firefox and WebKit checks remain required, as do exact-commit Test/Build success and the fail-closed twenty-minute production gate. This addresses a measured two-worker run that passed after the gate timed out. Existing accompanying art remains suitable; gameplay, audio, saves and goals are unchanged.

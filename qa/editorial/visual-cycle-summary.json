@@ -242,5 +242,21 @@
     }
   ],
   "grade": 8.2,
-  "limitations": "Internal source-familiar authored keyboard campaigns with directed dice and synthetic viewports. Hashes cover the listed changed runtime/media/QA files and route inputs, not the entire build. Initial WebKit candidate-selection test assumption was corrected; the affected check passed. No human participant, independent acceptance, physical-device or higher-grade claim. Exact-SHA CI and production verification follow push."
+  "limitations": "Internal source-familiar authored keyboard campaigns with directed dice and synthetic viewports. Hashes cover the listed changed runtime/media/QA files and route inputs, not the entire build. Initial WebKit candidate-selection test assumption was corrected; the affected check passed. No human participant, independent acceptance, physical-device or higher-grade claim. Exact-SHA CI and production verification follow push.",
+  "firstPushedRevision": "959ce539a4959c70c9c30cd4f20b8bc355617fb1",
+  "firstExactShaCi": {
+    "runId": 38137344339,
+    "unitReplayPassed": 413,
+    "browserPassed": 788,
+    "browserMinutes": 18.8,
+    "workers": 2,
+    "conclusion": "success",
+    "production": "Canceled by Ignored Build Step after twenty-minute wait"
+  },
+  "followup": {
+    "browserWorkers": 4,
+    "allProfilesAndChecksRequired": true,
+    "productionWaitMinutes": 20,
+    "reason": "Improve throughput after measured successful CI completed too late for the release gate; direct same-SHA redeploy returned a Vercel team-access 403."
+  }
 }

@@ -46,7 +46,7 @@ jobs:
           pactl set-default-sink saint_shard_ci
       - run: npm run build
       - run: npm run production:report
-      - run: npm run test:browser
+      - run: npm run test:browser -- --workers=4
       - run: npm run production:verify
       - name: Upload browser evidence
         if: always()
