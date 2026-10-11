@@ -93,7 +93,7 @@ export function CheckDialog({
         {preview.parts.map((part) => (
           <li key={part.label}>
             <span>{part.label}</span>
-            <span>+{part.value}</span>
+            <span>{part.value > 0 ? "+" : ""}{part.value}</span>
           </li>
         ))}
       </ul>

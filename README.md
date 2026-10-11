@@ -317,3 +317,12 @@ The endurance probe now releases its native file-input debugger handles, avoidin
 `npm run production:rehearse -- --previous PATH` compares separate built worktrees through one temporary local browser origin. Native previous-release exports cover a pending eight and all four finales; candidate/rollback/re-promotion preserve saves, slots, preferences and codex. Corruption recovery, cancelled replacement and once-only pending costs are rehearsed without switching the live site. Version 1 is tested with a labeled synthetic fixture.
 
 Production waits up to twenty minutes for exact-commit Test/Build success, with ten-second status-request limits and thirty-second polling (at most forty requests). Failed, unreadable, late or timed-out checks still skip publication. No scene or asset is added; existing art remains suitable. Preserve version 2, `saint-shard-3055-v1`, 1d10, caps, four finales and the 24 MiB decoded cache. See [the implementation, repeatable checks and pending review](docs/RELEASE_READINESS.md). The provisional 7.8 grade and all six human acceptance gates remain unchanged.
+
+
+### Player validation response on 11 October 2026
+
+Numerical choice previews show effective faction, strain and credit changes after existing bounds; a fully bounded change explicitly says unchanged. Check modifiers use a single sign. An exhausted Chapel window points to the viable staffed stair or ordinary-door recovery instead of asking the runner to save a nonexistent opportunity.
+
+Pausing Nia’s contact prevents a new hearing quotation request and keeps her approved recording private. An older save already at her explicit reply can continue under stated one-answer terms without reopening ongoing contact. Previous permissions, breaches and commitments remain recorded. Existing suitable Sera/Nia art is retained with updated scene-art rationales; no new scene or media asset is required.
+
+Preserve save version 2, `saint-shard-3055-v1`, recorded dice, 1d10 and caps, all four finales, visible goals and silent/text-only parity. Use [the player validation checklist](docs/PLAYER_VALIDATION_CHECKLIST.md) for subsequent assessment. The provisional 7.8 grade and six production acceptance gates remain open; this increment does not supply fresh-player, rights, physical-device or independent acceptance.

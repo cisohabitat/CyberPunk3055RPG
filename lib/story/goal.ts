@@ -38,6 +38,9 @@ export function currentGoal(state: GameState): string {
   const id = state.sceneId;
   if (id === "chapel_window_plan" || id === "chapel_window_exit") {
     const count = windowRemaining(state);
+    if (count === 0) return id === "chapel_window_exit"
+      ? "Service window: 0 opportunities left. Use the staffed stair; no fee, a visitor watch and up to 1 strain."
+      : "Service window: 0 opportunities left. Pause and return to the ordinary doors without a fee.";
     return `Service window: ${count} ${count === 1 ? "opportunity" : "opportunities"} left. Save one for a quiet exit, or use the staffed recovery.`;
   }
   if (id === "chapel_window_expired") return "The service window closed. Ordinary doors remain available without a fee.";

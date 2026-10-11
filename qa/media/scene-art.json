@@ -83,7 +83,7 @@
     {
       "treatment": "portrait",
       "asset": "/art/sera.jpg",
-      "reason": "Keep Sera identifiable through shelter choices, witness review and memorial first arrivals or shorter returns. Reuse fits the same speaker and place; the portrait depicts no household move, protected witness or successful statement.",
+      "reason": "Keep Sera identifiable through shelter choices, witness review and memorial first arrivals or shorter returns. Reuse fits the same speaker and place; the portrait depicts no household move, protected witness or successful statement. The neutral portrait also fits a paused-contact hearing; it depicts neither a renewed request nor quotation permission.",
       "scenes": [
         "act2_shelter_prep",
         "act2_shelter_methods",
@@ -269,7 +269,7 @@
     {
       "treatment": "portrait",
       "asset": "/art/nia.jpg",
-      "reason": "Reuse Nia’s distinct portrait for private terms, review and contact. Never depict or expose a current address, moved witness or permission not present in the state.",
+      "reason": "Reuse Nia’s distinct portrait for private terms, review and contact. Never depict or expose a current address, moved witness or permission not present in the state. For an older save already at her reply, reuse remains suitable for her explicit one-answer terms without depicting renewed ongoing contact.",
       "scenes": [
         "act3_testimony_nia",
         "act2_witness_brief",

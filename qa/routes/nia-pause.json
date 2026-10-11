@@ -193,10 +193,7 @@
       "choiceId": "scope-corroborated"
     },
     {
-      "choiceId": "ask-public-permission"
-    },
-    {
-      "choiceId": "accept-public-permission",
+      "choiceId": "keep-recording-private",
       "reload": true
     },
     {
@@ -215,7 +212,7 @@
     "flags": {
       "testimony_published": true,
       "archive_key_authenticated": false,
-      "nia_public_consent": true,
+      "nia_public_consent": false,
       "order_verified": true,
       "nia_contact_set": true,
       "nia_contact_relay": false,

@@ -213,14 +213,23 @@ function resolveNext(choice: Choice, state: GameState, success: boolean | null):
 export function effectPreview(state: GameState, choice: Choice): string[] {
   if (!choice.effects) return [];
   const effect: Effect = typeof choice.effects === "function" ? choice.effects(state) : choice.effects;
+  const after = applyEffect(state, effect);
   const lines: string[] = [];
-  if (effect.strain) lines.push(`Strain ${effect.strain > 0 ? "+" : ""}${effect.strain}`);
-  if (effect.creds) lines.push(`${effect.creds > 0 ? "+" : ""}${effect.creds} cr`);
+  if (effect.strain) {
+    const delta = after.strain - state.strain;
+    lines.push(delta ? `Strain ${delta > 0 ? "+" : ""}${delta}` : "Strain unchanged (at limit)");
+  }
+  if (effect.creds) {
+    const delta = after.creds - state.creds;
+    lines.push(delta ? `${delta > 0 ? "+" : ""}${delta} cr` : "Credits unchanged (at zero)");
+  }
   for (const id of effect.itemsAdd ?? []) lines.push(`Gain ${ITEMS[id]?.name ?? id}`);
   for (const id of effect.itemsRemove ?? []) lines.push(`Lose ${ITEMS[id]?.name ?? id}`);
   for (const faction of FACTIONS) {
-    const delta = effect.factions?.[faction];
-    if (delta) lines.push(`${FACTION_INFO[faction].name} ${delta > 0 ? "+" : ""}${delta}`);
+    if (effect.factions?.[faction]) {
+      const delta = after.factions[faction] - state.factions[faction];
+      lines.push(delta ? `${FACTION_INFO[faction].name} ${delta > 0 ? "+" : ""}${delta}` : `${FACTION_INFO[faction].name} unchanged (at limit)`);
+    }
   }
   return lines;
 }
