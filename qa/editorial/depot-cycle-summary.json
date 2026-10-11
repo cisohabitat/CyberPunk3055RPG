@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "scope": "Source-familiar authored keyboard campaigns with directed dice ten. Four successful and four failed/abandoned depot tasks; no humans or blind enjoyment measurement. All eight paths use unchanged branches after a final text correction to the separate paid/registered Face responses; final candidate unit and targeted UI checks cover that correction. Raw saves/reports remain private.",
+  "engineComparisons": 24,
+  "uiCampaigns": 8,
+  "visits": 613,
+  "reloads": 229,
+  "paragraphReveals": 547,
+  "pageErrors": 0,
+  "failedMedia": 0,
+  "newSceneViewportChecks": 30,
+  "localBrowserProfiles": [
+    "chromium",
+    "phone",
+    "webkit"
+  ],
+  "localNewBrowserChecksPassed": 33,
+  "unitReplayChecks": 413,
+  "campaignRouteCount": 107,
+  "scenes": 195,
+  "choices": 578,
+  "assets": 143,
+  "budgetViolations": 0,
+  "provisionalGrade": 8.2,
+  "pendingProductionAcceptanceGates": 6,
+  "finalSourceSha256": {
+    "lib/story/depot-methods.ts": "bc905eca6bd492c873cbfccfd199bd1e2d86e2ef61c53766ee6ccf4a4190b716",
+    "lib/depot-methods.ts": "e9f9e7c2e8d680d06a5a7228af6b8dad613c4abd61dc1909d314dc418a8f0417",
+    "lib/route-planning.ts": "34c86df343413980cc5e48221806cd2073361e3ce609f73976a45cc9179cb20e",
+    "lib/story/relationships.ts": "73504a4d9872ba7671deb1cdc77fa32924d91351e49652f45b612d4bb2d3bc1c",
+    "lib/story/act2.ts": "900d39d65512674b2a6bfda5d24d4e21fedaa41f9110512ab3a0c1d3a5cbac06",
+    "lib/encounter-methods.ts": "3bf19d55e402067d3aa2d9a3e927031d2239c508195ba0d8bee02de2258f785d",
+    "lib/art.ts": "cb469e105f570b87272e3d711cd7eece05a086e51bd12ab4888c230e2e4268b6",
+    "tests/depot.spec.ts": "6e7d3e89783963edae55542c13cf771087c0822338347540b8c5b4cef6a499ce"
+  },
+  "campaigns": [
+    {
+      "route": "qa/routes/depot-build-chrome-failed.json",
+      "width": 390,
+      "artwork": "none",
+      "visits": 76,
+      "reloads": 28,
+      "paragraphReveals": 68
+    },
+    {
+      "route": "qa/routes/depot-build-chrome.json",
+      "width": 320,
+      "artwork": "none",
+      "visits": 76,
+      "reloads": 28,
+      "paragraphReveals": 67
+    },
+    {
+      "route": "qa/routes/depot-build-face-failed.json",
+      "width": 390,
+      "artwork": "none",
+      "visits": 75,
+      "reloads": 27,
+      "paragraphReveals": 68
+    },
+    {
+      "route": "qa/routes/depot-build-face.json",
+      "width": 1440,
+      "artwork": "full",
+      "visits": 75,
+      "reloads": 27,
+      "paragraphReveals": 66
+    },
+    {
+      "route": "qa/routes/depot-build-ghost-failed.json",
+      "width": 390,
+      "artwork": "none",
+      "visits": 79,
+      "reloads": 31,
+      "paragraphReveals": 71
+    },
+    {
+      "route": "qa/routes/depot-build-ghost.json",
+      "width": 390,
+      "artwork": "full",
+      "visits": 80,
+      "reloads": 32,
+      "paragraphReveals": 70
+    },
+    {
+      "route": "qa/routes/depot-build-nerve-failed.json",
+      "width": 390,
+      "artwork": "none",
+      "visits": 76,
+      "reloads": 28,
+      "paragraphReveals": 69
+    },
+    {
+      "route": "qa/routes/depot-build-nerve.json",
+      "width": 390,
+      "artwork": "full",
+      "visits": 76,
+      "reloads": 28,
+      "paragraphReveals": 68
+    }
+  ]
+}

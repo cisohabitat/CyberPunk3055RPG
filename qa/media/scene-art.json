@@ -140,7 +140,7 @@
     {
       "treatment": "portrait",
       "asset": "/art/quill.jpg",
-      "reason": "Reuse Quill’s existing portrait for briefing, memory ownership questions and recurring street work. The counter remains the same place; no new setting plate is needed. His portrait does not reveal the buyer, memo contents or an accepted contract.",
+      "reason": "Reuse Quill\u2019s existing portrait for briefing, memory ownership questions and recurring street work. The counter remains the same place; no new setting plate is needed. His portrait does not reveal the buyer, memo contents or an accepted contract.",
       "scenes": [
         "pay_yes",
         "pay_no",
@@ -172,7 +172,7 @@
     {
       "treatment": "portrait",
       "asset": "/art/lumen.jpg",
-      "reason": "Use Lumen’s established portrait for clinic, care, source and dispatch conversations. Her presence identifies the recurring speaker; no art claims treatment, witness safety or completed repair.",
+      "reason": "Use Lumen\u2019s established portrait for clinic, care, source and dispatch conversations. Her presence identifies the recurring speaker; no art claims treatment, witness safety or completed repair.",
       "scenes": [
         "lumen",
         "lumen_deal",
@@ -203,7 +203,7 @@
     {
       "treatment": "portrait",
       "asset": "/art/mara.jpg",
-      "reason": "Reuse Mara’s established portrait at the chair and during replay/interpretation of her recorded hour. Prose identifies recorded testimony; the portrait supplies no new live response, source proof or verdict.",
+      "reason": "Reuse Mara\u2019s established portrait at the chair and during replay/interpretation of her recorded hour. Prose identifies recorded testimony; the portrait supplies no new live response, source proof or verdict.",
       "scenes": [
         "vault_quiet",
         "memory_reconstruction",
@@ -214,7 +214,7 @@
     {
       "treatment": "portrait",
       "asset": "/art/kerr.jpg",
-      "reason": "Reuse Kerr’s established portrait for confrontation, checkpoint and repair guidance. It depicts no rolled outcome, injury or successful repair.",
+      "reason": "Reuse Kerr\u2019s established portrait for confrontation, checkpoint and repair guidance. It depicts no rolled outcome, injury or successful repair.",
       "scenes": [
         "kerr",
         "kerr_fight",
@@ -260,7 +260,7 @@
     {
       "treatment": "background",
       "asset": "/art/canal.jpg",
-      "reason": "Reuse the established dry-canal backdrop for recovery and archive transitions. Evidence status remains in prose rather than an outcome image. Short canal returns retain Ren’s family context and an unresolved choice between street speech and paid silence; the setting depicts neither completed work nor publication.",
+      "reason": "Reuse the established dry-canal backdrop for recovery and archive transitions. Evidence status remains in prose rather than an outcome image. Short canal returns retain Ren\u2019s family context and an unresolved choice between street speech and paid silence; the setting depicts neither completed work nor publication.",
       "scenes": [
         "act2_middle",
         "act2_archive_verified"
@@ -269,7 +269,7 @@
     {
       "treatment": "portrait",
       "asset": "/art/nia.jpg",
-      "reason": "Reuse Nia’s distinct portrait for private terms, review and contact. Never depict or expose a current address, moved witness or permission not present in the state. For an older save already at her reply, reuse remains suitable for her explicit one-answer terms without depicting renewed ongoing contact.",
+      "reason": "Reuse Nia\u2019s distinct portrait for private terms, review and contact. Never depict or expose a current address, moved witness or permission not present in the state. For an older save already at her reply, reuse remains suitable for her explicit one-answer terms without depicting renewed ongoing contact.",
       "scenes": [
         "act3_testimony_nia",
         "act2_witness_brief",
@@ -391,9 +391,19 @@
     {
       "treatment": "illustration",
       "asset": "/art/canal-dispatch.jpg",
-      "reason": "Reuse the same neutral depot case and planning alcove for handling commitments. No release, receipt or refund is illustrated.",
+      "reason": "Reuse the neutral depot alcove and closed case for circuit repair, saved patrol observations, load planning and liability terms in the same location. No tactic, patrol beat, release, shift, receipt, recipient privacy or refund is depicted; text carries those states.",
       "scenes": [
-        "act2_route_handling"
+        "act2_route_handling",
+        "act2_depot_methods",
+        "act2_depot_relay",
+        "act2_depot_return",
+        "act2_depot_outer_pass",
+        "act2_depot_cart_pass",
+        "act2_depot_return_pass",
+        "act2_depot_carry",
+        "act2_depot_load",
+        "act2_depot_liability",
+        "act2_depot_contract"
       ]
     },
     {
@@ -424,7 +434,7 @@
       "scenes": [
         "act3_chapel_return"
       ],
-      "reason": "Reuse Lumen’s neutral conversation portrait for her short Ward Nine desk reply about the Chapel record. No new place, forgiveness, completed work or cleared patrol attention is illustrated."
+      "reason": "Reuse Lumen\u2019s neutral conversation portrait for her short Ward Nine desk reply about the Chapel record. No new place, forgiveness, completed work or cleared patrol attention is illustrated."
     },
     {
       "treatment": "illustration",

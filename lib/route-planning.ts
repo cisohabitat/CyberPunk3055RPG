@@ -1,4 +1,5 @@
 import type { Effect, GameState } from "./types";
+import { depotOutcome, depotResume } from "./depot-methods";
 
 export const ROUTE_ENTRIES = [
   { id: "stairs", title: "Public stairs", detail: "No register or fee. Add 1 strain on departure.", creds: 0, strain: 1, registered: false },
@@ -21,6 +22,7 @@ export function routePlan(state: GameState) {
 export function routeResume(state: GameState): string {
   if (state.flags.kerr_route_collected) return "act2_route_receipt";
   if (state.flags.kerr_route_failed) return "act2_route_recovery";
+  if (state.flags.depot_started) return depotResume(state);
   if (state.flags.kerr_route_started) return "act2_route_crossing";
   if (routePlan(state).ready) return "act2_route_review";
   return routePlan(state).entry ? "act2_route_exit" : "act2_route_map";
@@ -32,6 +34,9 @@ export function routeDeparture(state: GameState): Effect {
   return { creds: -plan.creds, strain: plan.strain, flags: ["kerr_route_started", ...(plan.entry?.registered ? ["kerr_route_trace"] : [])], journal: [{ id: "kerr-itinerary", kind: "fact", text: `Departed through ${plan.entry!.title.toLowerCase()} toward ${plan.exit!.title.toLowerCase()}. Spent ${plan.creds} creds and took ${plan.strain} planned strain.${plan.entry?.registered ? " The gate recorded the runner's handle and Kerr as recipient." : " Entry used no recipient register."}` }] };
 }
 export function routeOutcome(state: GameState): string {
+  return [collectionOutcome(state), depotOutcome(state)].filter(Boolean).join(" ");
+}
+function collectionOutcome(state: GameState): string {
   const breach = Boolean(state.flags.kerr_route_private && state.flags.kerr_route_trace);
   if (state.flags.kerr_route_delivered) return `Kerr received his closed brace case.${state.flags.kerr_route_trace ? breach ? " The private-collection promise was broken: the depot retains your handle and Kerr's recipient name." : " Registration was agreed before collection; the depot retains your handle and Kerr's recipient name." : " No depot recipient entry was made."} Delivery supplies no treatment outcome, historical evidence or witness permission.`;
   if (state.flags.kerr_route_done) return `The case remains held at the depot; Kerr has not received it.${state.flags.kerr_route_trace ? " Your handle and Kerr's recipient name remain on its register." : " No recipient entry was made."} The collection promise remains unfulfilled.`;

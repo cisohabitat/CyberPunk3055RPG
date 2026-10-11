@@ -1,0 +1,455 @@
+{
+  "schema": 1,
+  "scope": "24 source-familiar engine scenarios with matched synthetic eligible preparations; directed dice 8/1, including deterministic methods unaffected by dice. Not fresh-player or UI evidence.",
+  "conclusion": "The existing four Kerr stat approaches each make one DC 8 check; Chapel has a saved action allowance/service debt and Nia has preparation/standing/strain choices with separate consent.",
+  "rows": [
+    {
+      "encounter": "chapel",
+      "build": "chrome",
+      "directedDie": 8,
+      "syntheticPreparation": true,
+      "steps": [
+        {
+          "choice": "window-inspect-reader",
+          "check": "chrome 8"
+        },
+        {
+          "choice": "window-use-reader",
+          "check": null
+        },
+        {
+          "choice": "window-quiet-exit",
+          "check": null
+        }
+      ],
+      "end": "undercroft",
+      "credsSpent": 0,
+      "strainAdded": 1,
+      "recipientRegistered": false,
+      "witnessRecording": false
+    },
+    {
+      "encounter": "nia",
+      "build": "chrome",
+      "directedDie": 8,
+      "syntheticPreparation": true,
+      "steps": [
+        {
+          "choice": "chrome-transfer",
+          "check": null
+        }
+      ],
+      "end": "act2_witness_arrival",
+      "credsSpent": 0,
+      "strainAdded": 1,
+      "recipientRegistered": false,
+      "witnessRecording": false
+    },
+    {
+      "encounter": "kerr",
+      "build": "chrome",
+      "directedDie": 8,
+      "syntheticPreparation": true,
+      "steps": [
+        {
+          "choice": "route-use-sensor",
+          "check": "chrome 8"
+        }
+      ],
+      "end": "act2_route_receipt",
+      "credsSpent": 0,
+      "strainAdded": 0,
+      "recipientRegistered": false,
+      "witnessRecording": false
+    },
+    {
+      "encounter": "chapel",
+      "build": "chrome",
+      "directedDie": 1,
+      "syntheticPreparation": true,
+      "steps": [
+        {
+          "choice": "window-inspect-reader",
+          "check": "chrome 8"
+        },
+        {
+          "choice": "window-use-reader",
+          "check": null
+        },
+        {
+          "choice": "window-quiet-exit",
+          "check": null
+        }
+      ],
+      "end": "undercroft",
+      "credsSpent": 0,
+      "strainAdded": 1,
+      "recipientRegistered": false,
+      "witnessRecording": false
+    },
+    {
+      "encounter": "nia",
+      "build": "chrome",
+      "directedDie": 1,
+      "syntheticPreparation": true,
+      "steps": [
+        {
+          "choice": "chrome-transfer",
+          "check": null
+        }
+      ],
+      "end": "act2_witness_arrival",
+      "credsSpent": 0,
+      "strainAdded": 1,
+      "recipientRegistered": false,
+      "witnessRecording": false
+    },
+    {
+      "encounter": "kerr",
+      "build": "chrome",
+      "directedDie": 1,
+      "syntheticPreparation": true,
+      "steps": [
+        {
+          "choice": "route-use-sensor",
+          "check": "chrome 8"
+        }
+      ],
+      "end": "act2_route_receipt",
+      "credsSpent": 0,
+      "strainAdded": 0,
+      "recipientRegistered": false,
+      "witnessRecording": false
+    },
+    {
+      "encounter": "chapel",
+      "build": "ghost",
+      "directedDie": 8,
+      "syntheticPreparation": true,
+      "steps": [
+        {
+          "choice": "window-scout-gap",
+          "check": null
+        },
+        {
+          "choice": "window-use-gap",
+          "check": "ghost 8"
+        },
+        {
+          "choice": "window-quiet-exit",
+          "check": null
+        }
+      ],
+      "end": "undercroft",
+      "credsSpent": 0,
+      "strainAdded": 0,
+      "recipientRegistered": false,
+      "witnessRecording": false
+    },
+    {
+      "encounter": "nia",
+      "build": "ghost",
+      "directedDie": 8,
+      "syntheticPreparation": true,
+      "steps": [
+        {
+          "choice": "ghost-transfer",
+          "check": null
+        }
+      ],
+      "end": "act2_witness_arrival",
+      "credsSpent": 0,
+      "strainAdded": 1,
+      "recipientRegistered": false,
+      "witnessRecording": false
+    },
+    {
+      "encounter": "kerr",
+      "build": "ghost",
+      "directedDie": 8,
+      "syntheticPreparation": true,
+      "steps": [
+        {
+          "choice": "route-use-gap",
+          "check": "ghost 8"
+        }
+      ],
+      "end": "act2_route_receipt",
+      "credsSpent": 0,
+      "strainAdded": 0,
+      "recipientRegistered": false,
+      "witnessRecording": false
+    },
+    {
+      "encounter": "chapel",
+      "build": "ghost",
+      "directedDie": 1,
+      "syntheticPreparation": true,
+      "steps": [
+        {
+          "choice": "window-scout-gap",
+          "check": null
+        },
+        {
+          "choice": "window-use-gap",
+          "check": "ghost 8"
+        }
+      ],
+      "end": "chapel_window_expired",
+      "credsSpent": 0,
+      "strainAdded": 2,
+      "recipientRegistered": false,
+      "witnessRecording": false
+    },
+    {
+      "encounter": "nia",
+      "build": "ghost",
+      "directedDie": 1,
+      "syntheticPreparation": true,
+      "steps": [
+        {
+          "choice": "ghost-transfer",
+          "check": null
+        }
+      ],
+      "end": "act2_witness_arrival",
+      "credsSpent": 0,
+      "strainAdded": 1,
+      "recipientRegistered": false,
+      "witnessRecording": false
+    },
+    {
+      "encounter": "kerr",
+      "build": "ghost",
+      "directedDie": 1,
+      "syntheticPreparation": true,
+      "steps": [
+        {
+          "choice": "route-use-gap",
+          "check": "ghost 8"
+        }
+      ],
+      "end": "act2_route_recovery",
+      "credsSpent": 0,
+      "strainAdded": 2,
+      "recipientRegistered": false,
+      "witnessRecording": false
+    },
+    {
+      "encounter": "chapel",
+      "build": "nerve",
+      "directedDie": 8,
+      "syntheticPreparation": true,
+      "steps": [
+        {
+          "choice": "window-force-hatch",
+          "check": "nerve 8"
+        },
+        {
+          "choice": "window-quiet-exit",
+          "check": null
+        }
+      ],
+      "end": "undercroft",
+      "credsSpent": 0,
+      "strainAdded": 1,
+      "recipientRegistered": false,
+      "witnessRecording": false
+    },
+    {
+      "encounter": "nia",
+      "build": "nerve",
+      "directedDie": 8,
+      "syntheticPreparation": true,
+      "steps": [
+        {
+          "choice": "nerve-transfer",
+          "check": "nerve 9"
+        }
+      ],
+      "end": "act2_witness_arrival",
+      "credsSpent": 0,
+      "strainAdded": 1,
+      "recipientRegistered": false,
+      "witnessRecording": false
+    },
+    {
+      "encounter": "kerr",
+      "build": "nerve",
+      "directedDie": 8,
+      "syntheticPreparation": true,
+      "steps": [
+        {
+          "choice": "route-use-stairs",
+          "check": "nerve 8"
+        }
+      ],
+      "end": "act2_route_receipt",
+      "credsSpent": 0,
+      "strainAdded": 0,
+      "recipientRegistered": false,
+      "witnessRecording": false
+    },
+    {
+      "encounter": "chapel",
+      "build": "nerve",
+      "directedDie": 1,
+      "syntheticPreparation": true,
+      "steps": [
+        {
+          "choice": "window-force-hatch",
+          "check": "nerve 8"
+        }
+      ],
+      "end": "chapel_window_expired",
+      "credsSpent": 0,
+      "strainAdded": 2,
+      "recipientRegistered": false,
+      "witnessRecording": false
+    },
+    {
+      "encounter": "nia",
+      "build": "nerve",
+      "directedDie": 1,
+      "syntheticPreparation": true,
+      "steps": [
+        {
+          "choice": "nerve-transfer",
+          "check": "nerve 9"
+        }
+      ],
+      "end": "act2_witness_checkpoint",
+      "credsSpent": 0,
+      "strainAdded": 2,
+      "recipientRegistered": false,
+      "witnessRecording": false
+    },
+    {
+      "encounter": "kerr",
+      "build": "nerve",
+      "directedDie": 1,
+      "syntheticPreparation": true,
+      "steps": [
+        {
+          "choice": "route-use-stairs",
+          "check": "nerve 8"
+        }
+      ],
+      "end": "act2_route_recovery",
+      "credsSpent": 0,
+      "strainAdded": 2,
+      "recipientRegistered": false,
+      "witnessRecording": false
+    },
+    {
+      "encounter": "chapel",
+      "build": "face",
+      "directedDie": 8,
+      "syntheticPreparation": true,
+      "steps": [
+        {
+          "choice": "offer-chapel-service",
+          "check": null
+        },
+        {
+          "choice": "bargain-service-entry",
+          "check": "face 7"
+        }
+      ],
+      "end": "undercroft",
+      "credsSpent": 15,
+      "strainAdded": 0,
+      "recipientRegistered": false,
+      "witnessRecording": false
+    },
+    {
+      "encounter": "nia",
+      "build": "face",
+      "directedDie": 8,
+      "syntheticPreparation": true,
+      "steps": [
+        {
+          "choice": "face-transfer",
+          "check": null
+        }
+      ],
+      "end": "act2_witness_arrival",
+      "credsSpent": 0,
+      "strainAdded": 0,
+      "recipientRegistered": false,
+      "witnessRecording": false
+    },
+    {
+      "encounter": "kerr",
+      "build": "face",
+      "directedDie": 8,
+      "syntheticPreparation": true,
+      "steps": [
+        {
+          "choice": "route-negotiate",
+          "check": "face 8"
+        }
+      ],
+      "end": "act2_route_receipt",
+      "credsSpent": 0,
+      "strainAdded": 0,
+      "recipientRegistered": false,
+      "witnessRecording": false
+    },
+    {
+      "encounter": "chapel",
+      "build": "face",
+      "directedDie": 1,
+      "syntheticPreparation": true,
+      "steps": [
+        {
+          "choice": "offer-chapel-service",
+          "check": null
+        },
+        {
+          "choice": "bargain-service-entry",
+          "check": "face 7"
+        }
+      ],
+      "end": "route",
+      "credsSpent": 15,
+      "strainAdded": 1,
+      "recipientRegistered": false,
+      "witnessRecording": false
+    },
+    {
+      "encounter": "nia",
+      "build": "face",
+      "directedDie": 1,
+      "syntheticPreparation": true,
+      "steps": [
+        {
+          "choice": "face-transfer",
+          "check": null
+        }
+      ],
+      "end": "act2_witness_arrival",
+      "credsSpent": 0,
+      "strainAdded": 0,
+      "recipientRegistered": false,
+      "witnessRecording": false
+    },
+    {
+      "encounter": "kerr",
+      "build": "face",
+      "directedDie": 1,
+      "syntheticPreparation": true,
+      "steps": [
+        {
+          "choice": "route-negotiate",
+          "check": "face 8"
+        }
+      ],
+      "end": "act2_route_recovery",
+      "credsSpent": 0,
+      "strainAdded": 2,
+      "recipientRegistered": true,
+      "witnessRecording": false
+    }
+  ]
+}

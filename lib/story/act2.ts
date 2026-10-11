@@ -1,4 +1,4 @@
-import { witnessShiftChoice } from "../encounter-methods";
+import { depotShiftChoice, witnessShiftChoice } from "../encounter-methods";
 import { responseChoice } from "./character-arcs";
 import { kerrCollectionChoice } from "./relationships";
 import { GOAL_WEEK } from "./goal";
@@ -470,6 +470,7 @@ export const ACT2_SCENES: Record<string, Scene> = {
     text: middleText,
     choices: [
       witnessShiftChoice,
+      depotShiftChoice,
       { id: "work-chapel-shift", label: "Keep the service shift you promised at the Chapel. Add 1 strain.", requireFlag: "chapel_shift_owed", hideIfFlag: "chapel_shift_kept", effects: { strain: 1, flags: ["chapel_shift_kept"], journal: [{ id: "chapel-return-shift", kind: "fact", text: "You worked the service shift accepted by the orderly. The earlier work docket remains; it supplied no patient access or recording permission." }] }, next: "act2_middle" },
       responseChoice,
       kerrCollectionChoice,

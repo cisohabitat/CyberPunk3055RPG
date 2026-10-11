@@ -13,7 +13,9 @@
 
 Weighted total: **8.18**, rounded to **8.2**. The increase from the historical 7.8 reflects the accumulated encounter, integration, audiovisual, usability and release work since `091403c`; it is not a score increase awarded solely for this prose edit or a larger test count. The current audit preserves canonical choices and final states across 99 routes. Candidate verification includes 393 unit/replay checks, TypeScript, build/budgets, 15 local browser regressions and four complete UI campaigns. Full exact-revision CI and public checks remain mandatory before publication.
 
-The largest remaining quality gaps are **encounter variety and audiovisual craft**. The [updated roadmap](ROADMAP.md) keeps a weighted 9.35 target with every area at least 9.0. The next cycle compares build methods across multiple encounters, including failed and unfinished routes, then revises convergent decisions. Follow with stronger visual staging and expressive audio for stable scenes. Simulated evidence can drive those revisions now; the six independent production gates remain separately pending and do not block ordinary development.
+The [depot build-variety cycle](DEPOT_BUILD_VARIETY.md) adds saved circuit repair, patrol observation, load planning and liability contracts after comparing the three anchor encounters. Four named builds now have full authored campaigns through those anchors; failed tasks, costs, registration and unpaid work persist. This focused increment does not automatically raise the 8.2 grade.
+
+The largest remaining quality gaps are **encounter variety and audiovisual craft**. The [updated roadmap](ROADMAP.md) keeps a weighted 9.35 target with every area at least 9.0. The latest cycle revised the depot’s convergent decisions. Next improve visual staging and expressive audio for stable scenes, then reassess replay value and audiovisual craft across full campaigns. Simulated evidence can drive those revisions now; the six independent production gates remain separately pending and do not block ordinary development.
 
 ---
 
