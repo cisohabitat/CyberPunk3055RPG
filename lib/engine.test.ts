@@ -15,7 +15,7 @@ import {
   stageCheck,
 } from "./engine.ts";
 import { aftermath } from "./evidence";
-import { objectives } from "./objectives";
+import { objectives, unresolvedPromises } from "./objectives";
 import { testimonyPacket } from "./testimony";
 import { FIELD_KITS } from "./loadout";
 import { ITEMS } from "./items.ts";
@@ -1351,5 +1351,85 @@ describe("Spire maintenance-key retirement", () => {
     assert.throws(() => step({ ...done, sceneId: "act2_origin_spire" }, "clear-key", 8));
     const visit = step(step({ ...done, sceneId: "ward_wall" }, "visit-spire-key"), "close-spire-visit");
     assert.equal(visit.sceneId, "ward_wall"); assert.deepEqual(visit.items, ["signal-baffle"]);
+  });
+});
+
+describe("paused archive recovery", () => {
+  const failed = (origin: OriginId = "dustline", creds = 0, method: "trace-receipt" | "lift-carbon" = "trace-receipt") => {
+    const runner = createCharacter({ handle: "Low Reserve", givenName: "Ada", origin, complication: "debt", bonus: { chrome: 0, nerve: 0, face: 0, ghost: 2 } });
+    const atReader = { ...runner, sceneId: "act2_archive_door", creds, strain: 4, flags: { memory_intact: true, archive_briefed: true, ...(method === "lift-carbon" ? { perk_ghost: true } : {}) } };
+    const recorded = parseSave(JSON.stringify(stageCheck(atReader, method, 1)))!;
+    return step(recorded, method, 1);
+  };
+  it("resumes a failed physical retrieval without inventing a digital query or another roll", () => {
+    const original = failed("dustline", 0, "lift-carbon");
+    const state = step(step(original, "pause-archive-recovery"), "resume-archive-recovery");
+    assert.match(original.rolls.at(-1)!.label, /carbon ledger/);
+    assert.deepEqual(state.rolls, original.rolls);
+    const prose = sceneText(getScene(state.sceneId), state);
+    assert.match(prose, /failed archive roll/); assert.doesNotMatch(prose, /query|blocked the digital chain/);
+    assert.equal(state.flags.archive_key_authenticated, undefined);
+  });
+  it("pauses and reloads a zero-credit failed query without rewards, evidence or another roll", () => {
+    const original = failed();
+    let state = step(original, "pause-archive-recovery");
+    assert.equal(state.creds, 0); assert.equal(state.strain, 5);
+    assert.deepEqual(state.rolls, original.rolls); assert.deepEqual(state.factions, original.factions);
+    assert.equal(state.flags.archive_flagged, true); assert.equal(state.flags.archive_done, undefined);
+    assert.equal(state.flags.order_verified, undefined); assert.equal(state.flags.archive_key_authenticated, undefined);
+    assert.equal(state.journal.find(entry => entry.id === "archive-gap")?.kind, "claim");
+    assert.equal(promiseStatus("archive-promise", state.flags, state.journal), "Search paused");
+    assert.equal(objectives(state).find(row => row.id === "archive")?.status, "Open");
+    assert.equal(unresolvedPromises(state).some(row => row.id === "archive"), true);
+    assert.equal(presentChoices(state, getScene(state.sceneId)).some(c => c.id === "trace-order"), false);
+    for (let visit = 0; visit < 2; visit++) {
+      state = parseSave(JSON.stringify(state))!;
+      state = step(state, "resume-archive-recovery");
+      assert.equal(state.sceneId, "act2_archive_gap"); assert.deepEqual(state.rolls, original.rolls);
+      assert.equal(presentChoices(state, getScene(state.sceneId)).find(c => c.id === "buy-ledger")?.enabled, false);
+      state = step(state, "pause-archive-recovery");
+    }
+    assert.equal(state.journal.filter(entry => entry.id === "archive-gap").length, 1);
+    assert.equal(state.creds, 0); assert.equal(state.strain, 5);
+  });
+  it("charges a resumed ledger once while keeping the original failed-source record and custody step", () => {
+    const original = failed("gutterwire", 25);
+    let state = step(step(step(original, "pause-archive-recovery"), "resume-archive-recovery"), "buy-ledger");
+    state = parseSave(JSON.stringify(state))!;
+    assert.equal(state.creds, 0); assert.equal(state.sceneId, "act2_archive_custody");
+    assert.equal(state.flags.archive_paused, undefined); assert.equal(state.flags.archive_flagged, true);
+    assert.deepEqual(state.rolls, original.rolls); assert.deepEqual(state.factions, original.factions);
+    assert.throws(() => step(state, "buy-ledger"));
+    state = step(step(state, "withhold-technician"), "keep-chain");
+    assert.equal(state.flags.order_verified, true); assert.equal(state.flags.archive_key_authenticated, undefined);
+    assert.equal(state.flags.edda_public_consent, undefined); assert.equal(state.flags.nia_public_consent, undefined);
+    assert.equal(state.journal.find(entry => entry.id === "archive-gap")?.kind, "claim");
+    assert.equal(state.journal.find(entry => entry.id === "verified-order")?.kind, "fact");
+    assert.equal(presentChoices(state, getScene(state.sceneId)).some(c => c.id === "resume-archive-recovery"), false);
+  });
+  it("retains the Spire badge trace and its additional exposure when resuming without payment", () => {
+    const original = failed("spire");
+    const state = step(step(step(original, "pause-archive-recovery"), "resume-archive-recovery"), "old-employee");
+    assert.equal(state.creds, 0); assert.equal(state.flags.old_badge_traced, true);
+    assert.equal(state.factions.helion, original.factions.helion + 1);
+    assert.equal(state.flags.archive_flagged, true); assert.equal(state.flags.archive_key_authenticated, undefined);
+    assert.equal(state.flags.archive_paused, undefined); assert.deepEqual(state.rolls, original.rolls);
+  });
+  it("closes a resumed search honestly and removes the retry while retaining the gap", () => {
+    const state = step(step(step(failed(), "pause-archive-recovery"), "resume-archive-recovery"), "keep-gap");
+    assert.equal(state.flags.archive_done, true); assert.equal(state.flags.archive_unresolved, true);
+    assert.equal(state.flags.archive_paused, undefined); assert.equal(state.flags.order_verified, undefined);
+    assert.equal(objectives(state).find(row => row.id === "archive")?.status, "Unresolved");
+    assert.equal(promiseStatus("archive-promise", state.flags, state.journal), "Gap recorded");
+    assert.equal(presentChoices(state, getScene(state.sceneId)).some(c => c.id === "resume-archive-recovery"), false);
+    assert.throws(() => step(state, "trace-order"));
+  });
+  it("leaves a paused search unverified at the wall without granting care, custody or permission", () => {
+    const paused = step(failed(), "pause-archive-recovery");
+    const state = { ...paused, sceneId: "ward_wall" };
+    const objective = objectives(state).find(row => row.id === "archive")!;
+    assert.equal(objective.status, "Unresolved"); assert.match(objective.detail, /week ended.*paused/);
+    assert.match(aftermath(state).find(row => row.title === "Archive search")!.text, /No ledger was retrieved/);
+    for (const flag of ["archive_custody", "archive_key_authenticated", "order_verified", "witness_safe", "witness_consent", "nia_public_consent"]) assert.equal(state.flags[flag], undefined);
   });
 });

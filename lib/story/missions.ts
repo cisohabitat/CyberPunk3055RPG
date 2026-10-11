@@ -92,11 +92,12 @@ export const MISSION_SCENES: Record<string, Scene> = {
   },
   act2_archive_gap: {
     id: "act2_archive_gap", location: "Helion service archive",
-    text: "Edda finds the shift ledger that used the issuing key. The reader blocked the digital chain; a maintenance invoice can still corroborate the instruction.\n\nShe can bill the search to your old employee number if you have one. Otherwise the archive charges twenty-five creds. The unverified export remains yours either way.",
+    text: (state) => `Edda points to the staffed ledger desk. Your archive attempt supplied no independent record; a maintenance invoice can still corroborate the instruction.\n\nShe can bill the search to your old employee number if you have one. Otherwise the archive charges twenty-five creds. The unverified export remains yours either way.\n\n${state.flags.archive_paused ? "Your paused request is still at this desk. Returning does not repeat the failed archive roll or supply a new source." : "You can pause this ledger request without paying and return through the canal before the week closes. The failed archive attempt remains recorded. Leaving it open supplies no evidence."}`,
     choices: [
-      { id: "old-employee", label: "Use your old employee number.", requireOrigin: "spire", detail: "Your old badge acquires another trace. The invoice corroborates the order.", effects: { flags: ["archive_done", "order_verified", "old_badge_traced"], factions: { helion: 1 } }, next: archiveArrival },
-      { id: "buy-ledger", label: "Pay for the shift ledger.", requireCreds: 25, effects: { creds: -25, flags: ["archive_done", "order_verified"] }, next: archiveArrival },
-      { id: "keep-gap", label: "Record the gap. Keep the export.", effects: { flags: ["archive_done", "archive_unresolved"], journal: [{ id: "archive-gap", text: "The export names an issuing key; the service archive refused to authenticate it.", kind: "claim" }] }, next: "act2_middle" },
+      { id: "old-employee", label: "Use your old employee number.", requireOrigin: "spire", detail: "Your old badge acquires another trace. The invoice corroborates the order.", effects: { flags: ["archive_done", "order_verified", "old_badge_traced"], flagsOff: ["archive_paused"], factions: { helion: 1 } }, next: archiveArrival },
+      { id: "buy-ledger", label: "Pay for the shift ledger.", requireCreds: 25, effects: { creds: -25, flags: ["archive_done", "order_verified"], flagsOff: ["archive_paused"] }, next: archiveArrival },
+      { id: "keep-gap", label: "Record the gap. Keep the export.", detail: "Close this search as unresolved. The issuing key stays unauthenticated.", effects: { flags: ["archive_done", "archive_unresolved"], flagsOff: ["archive_paused"], journal: [{ id: "archive-gap", text: "The export names an issuing key; the service archive refused to authenticate it.", kind: "claim" }] }, next: "act2_middle" },
+      { id: "pause-archive-recovery", label: "Pause the ledger request and return later.", detail: "Free. Resume at this desk from the canal before closing the week; the failed attempt and its exposure remain.", effects: { flags: ["archive_paused"], journal: [{ id: "archive-gap", text: "The export names an issuing key; the service archive refused to authenticate it.", kind: "claim" }] }, next: "act2_middle" },
     ],
   },
   act2_archive_verified: {

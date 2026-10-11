@@ -33,6 +33,7 @@ export function objectives(state: GameState): Objective[] {
       status: state.flags.order_verified ? "Complete" : state.flags.archive_unresolved || atWall ? "Unresolved" : "Open",
       detail: state.flags.order_verified ? "An independent source corroborates the canceled evacuation."
         : state.flags.archive_unresolved ? "The issuing key remains unverified. The gap is recorded, not repaired."
+        : state.flags.archive_paused ? atWall ? "The week ended with the ledger request paused. No ledger was retrieved; the failed attempt and its exposure remain." : "The ledger request is paused. Resume it from the canal before closing the week; twenty-five creds or a Spire employee number can obtain corroboration, not digital-key authentication."
         : actName(state) === "The Hour" ? "During The Week, compare the exported receipt with an independent tower record."
         : atWall ? "The archive survived, but its issuing key was not independently verified."
         : "After answering a district call, trace the issuing key from the dry canal. A failed query still leaves a ledger route.",
@@ -120,7 +121,7 @@ export function nextStep(state: GameState): string {
   if (state.sceneId === "act3_edda_methods") return "Choose one desk attempt, an earned key-closure receipt, or paid representation. A review appointment guarantees no shift.";
   if (state.sceneId === "act3_edda_reply") return "Record temporary paid work or a pending application accurately. The records inquiry continues.";
   if (state.sceneId === "act3_edda_visit") return "Hear the source’s employment consequences; support does not settle the review.";
-  if (state.sceneId === "act2_archive_gap") return "Corroborate the receipt through the ledger, or record the gap honestly.";
+  if (state.sceneId === "act2_archive_gap") return "Obtain ledger corroboration, pause for free and return before the week closes, or close the search with its gap recorded. The failed archive attempt remains recorded.";
   if (state.sceneId === "act2_middle") {
     if (state.flags.kerr_route_failed && !state.flags.kerr_route_done && !state.flags.kerr_route_collected) return `Kerr's case is still held. Resume recovery through his collection request; departure is already paid and there is no second attempt.${state.creds < 20 ? " You cannot yet afford the twenty-creds courier." : " The twenty-creds courier is affordable, but registers Kerr as recipient."} Closing the week leaves the handover unresolved.`;
     const work = encounterRecords(state).filter(row => row.open);

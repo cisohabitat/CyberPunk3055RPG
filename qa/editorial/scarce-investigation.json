@@ -1,0 +1,185 @@
+{
+  "method": "Original 111 deterministic campaigns replayed against the candidate; final-state SHA-256 compared. New recovery choices intentionally change canonical definitions. Source-familiar authored dice; no blind comprehension or grade inference.",
+  "originalRoutes": 111,
+  "originalVisits": 8109,
+  "canonicalDefinitionsUnchanged": false,
+  "addedChoices": 2,
+  "existingFinalStatesUnchanged": true,
+  "finalStateDifferences": [],
+  "changedProseScenes": [
+    {
+      "scene": "act2_archive_gap",
+      "visits": 22
+    }
+  ],
+  "existingRetellChangedVisits": 0,
+  "baselineCampaigns": [
+    {
+      "origin": "dustline",
+      "kind": "archive",
+      "visits": 54,
+      "reloads": 35,
+      "creds": 0,
+      "strain": 5,
+      "pageErrors": 0,
+      "mediaErrors": 0
+    },
+    {
+      "origin": "dustline",
+      "kind": "witness",
+      "visits": 57,
+      "reloads": 38,
+      "creds": 0,
+      "strain": 5,
+      "pageErrors": 0,
+      "mediaErrors": 0
+    },
+    {
+      "origin": "gutterwire",
+      "kind": "archive",
+      "visits": 54,
+      "reloads": 35,
+      "creds": 20,
+      "strain": 5,
+      "pageErrors": 0,
+      "mediaErrors": 0
+    },
+    {
+      "origin": "gutterwire",
+      "kind": "witness",
+      "visits": 57,
+      "reloads": 38,
+      "creds": 20,
+      "strain": 5,
+      "pageErrors": 0,
+      "mediaErrors": 0
+    },
+    {
+      "origin": "spire",
+      "kind": "archive",
+      "visits": 54,
+      "reloads": 35,
+      "creds": 60,
+      "strain": 5,
+      "pageErrors": 0,
+      "mediaErrors": 0
+    },
+    {
+      "origin": "spire",
+      "kind": "witness",
+      "visits": 57,
+      "reloads": 38,
+      "creds": 60,
+      "strain": 5,
+      "pageErrors": 0,
+      "mediaErrors": 0
+    }
+  ],
+  "candidateCampaigns": [
+    {
+      "route": "scarce-archive-closed.json",
+      "width": 390,
+      "artwork": "full",
+      "reading": "paragraph",
+      "visits": 56,
+      "reloads": 37,
+      "credits": 0,
+      "strain": 5,
+      "finale": "ending_quiet",
+      "pageErrors": 0,
+      "mediaErrors": 0
+    },
+    {
+      "route": "scarce-archive-dustline.json",
+      "width": 390,
+      "artwork": "full",
+      "reading": "paragraph",
+      "visits": 67,
+      "reloads": 48,
+      "credits": 15,
+      "strain": 3,
+      "finale": "ending_quiet",
+      "pageErrors": 0,
+      "mediaErrors": 0
+    },
+    {
+      "route": "scarce-archive-gutterwire.json",
+      "width": 320,
+      "artwork": "none",
+      "reading": "paragraph",
+      "visits": 67,
+      "reloads": 48,
+      "credits": 35,
+      "strain": 3,
+      "finale": "ending_quiet",
+      "pageErrors": 0,
+      "mediaErrors": 0
+    },
+    {
+      "route": "scarce-archive-open.json",
+      "width": 390,
+      "artwork": "full",
+      "reading": "paragraph",
+      "visits": 57,
+      "reloads": 38,
+      "credits": 0,
+      "strain": 4,
+      "finale": "ending_quiet",
+      "pageErrors": 0,
+      "mediaErrors": 0
+    },
+    {
+      "route": "scarce-archive-spire.json",
+      "width": 1440,
+      "artwork": "full",
+      "reading": "paragraph",
+      "visits": 63,
+      "reloads": 44,
+      "credits": 60,
+      "strain": 4,
+      "finale": "ending_quiet",
+      "pageErrors": 0,
+      "mediaErrors": 0
+    },
+    {
+      "route": "scarce-witness-dustline.json",
+      "width": 390,
+      "artwork": "full",
+      "reading": "paragraph",
+      "visits": 57,
+      "reloads": 38,
+      "credits": 0,
+      "strain": 5,
+      "finale": "ending_quiet",
+      "pageErrors": 0,
+      "mediaErrors": 0
+    },
+    {
+      "route": "scarce-witness-gutterwire.json",
+      "width": 320,
+      "artwork": "none",
+      "reading": "paragraph",
+      "visits": 57,
+      "reloads": 38,
+      "credits": 20,
+      "strain": 5,
+      "finale": "ending_quiet",
+      "pageErrors": 0,
+      "mediaErrors": 0
+    },
+    {
+      "route": "scarce-witness-spire.json",
+      "width": 1440,
+      "artwork": "full",
+      "reading": "paragraph",
+      "visits": 57,
+      "reloads": 38,
+      "credits": 60,
+      "strain": 5,
+      "finale": "ending_quiet",
+      "pageErrors": 0,
+      "mediaErrors": 0
+    }
+  ],
+  "internalGrade": 8.2
+}
