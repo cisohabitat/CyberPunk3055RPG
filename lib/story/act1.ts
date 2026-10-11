@@ -167,10 +167,10 @@ function afterText(state: GameState): string {
     ? "Your pockets are honest. The chair upstairs is not. Dawn still has Mara's name on it."
     : state.flags.ash
       ? "What you carry is half a scream in glass. It flickers when the streetlight does."
-      : state.flags.copy_failed
-        ? "The copy collapsed in the plinth. Only the original is warm, and it is the one in your pocket."
-        : state.flags.copied
-          ? "Two copies of Mara's hour exist. One is in your pocket. One is a file that wants a witness."
+      : state.flags.copied
+        ? "Two copies of Mara's hour exist. One is in your pocket. One is a file that wants a witness."
+        : state.flags.copy_failed
+          ? "The copy collapsed in the plinth. Only the original is warm, and it is the one in your pocket."
           : "Mara's hour is a weight in your pocket. It is smaller than three hundred names, and heavier.";
   const copyWindow = state.flags.pact_copy && !state.flags.copied ? "You left the chair room without the second file you promised Lumen. The copying window is closed; an original alone does not keep that promise." : "";
   const believed = state.flags.she_believes

@@ -338,3 +338,7 @@ Keyboard QA uses Shift+Tab to reach earlier controls without relying on browser-
 ### Player-validation response phase 3 — study preparation
 
 Creation explains when an empty or whitespace-only street handle keeps entry unavailable; the existing character requirements and saved outcomes stay the same. The [study pack](docs/PLAYER_STUDY_PACK.md) provides a five-opening/five-campaign facilitator guide, spoiler-free participant brief, fourteen-clip inventory and blank listening/device records. It is preparation, with no new scene or media asset. Real participants, human listening, manual access/device review and subsequent findings-led revisions remain pending; the provisional grade stays 7.8 and no acceptance gate is closed.
+
+### State-aware scene summaries
+
+A successful second copy now takes precedence over the earlier failed-copy sentence in the Chapel alley, while retaining the missed roll and its cost. Hearing drafts, journal records and factual aftermath distinguish an absent Nia recording from an approved private account. The Week's transfer option asks to arrange Nia's terms rather than asserting a prior relocation promise. Saved-check regressions cover the fail-then-success sequence and the original two-copy payout; recording and quotation permissions still require their own choices. Existing art accompanies these scenes; no new scene or voice quotation is added. Internal simulated play and regression checks supply no human acceptance or higher grade; 7.8 remains provisional.
