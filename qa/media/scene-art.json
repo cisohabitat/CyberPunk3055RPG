@@ -12,7 +12,7 @@
     {
       "treatment": "illustration",
       "asset": "/art/memory-bench.jpg",
-      "reason": "Reuse the three-fragment viewer for the playable timeline in the same inspection workspace. The neutral plate shows neither a completed chronology nor an authenticated source. Opened sources have illustrative close-ups without readable identities or authentication; written evidence retains authority.",
+      "reason": "Reuse the three-fragment viewer for the playable timeline in the same inspection workspace. The neutral plate shows neither a completed chronology nor an authenticated source. Opened sources have illustrative close-ups without readable identities or authentication; written evidence retains authority. The optional investigation notebook is a text-only consultation of acquired sources and their already-inspected timestamps; it introduces no new scene or outcome image.",
       "scenes": [
         "memory_table",
         "memory_sequence"

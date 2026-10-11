@@ -2,6 +2,9 @@
 
 import { campaignCoda } from "@/lib/campaign-consequences";
 
+import { InvestigationNotebook } from "./InvestigationNotebook";
+import { canConsultSources } from "@/lib/investigation-notebook";
+
 import { Fragment, useEffect, useRef, useState } from "react";
 import { CheckDialog } from "@/components/CheckDialog";
 import { DialogFrame } from "@/components/DialogFrame";
@@ -71,6 +74,7 @@ export function PlayScreen({
   const decisionIndex = decisionTitle ? choices.findIndex(choice => decisionIds.includes(choice.id)) : -1;
   const [pending, setPending] = useState<VisibleChoice | null>(null);
   const [sheetOpen, setSheetOpen] = useState(false);
+  const [notebookOpen, setNotebookOpen] = useState(false);
   const [confirmAbandon, setConfirmAbandon] = useState(false);
   const sound = preferences.sound && !audioPaused;
   const { mood, district } = sceneSoundPlan(state, scene.location, actName(state));
@@ -127,6 +131,7 @@ export function PlayScreen({
 
   useEffect(() => {
     setSheetOpen(false);
+    setNotebookOpen(false);
     setPending(null);
     const reduce = preferences.motion === "reduce" || window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     setFlash(!reduce);
@@ -158,9 +163,10 @@ export function PlayScreen({
       if (event.key === "Escape") {
         if (confirmAbandon) setConfirmAbandon(false);
         if (sheetOpen) setSheetOpen(false);
+        if (notebookOpen) setNotebookOpen(false);
         return;
       }
-      if (!preferences.numberShortcuts || activeChoice || confirmAbandon || sheetOpen || modalOpen || choices.length === 0) return;
+      if (!preferences.numberShortcuts || activeChoice || confirmAbandon || sheetOpen || notebookOpen || modalOpen || choices.length === 0) return;
       if (event.target instanceof HTMLElement && event.target.closest("input, textarea, select, [contenteditable=true], #runner-sheet")) return;
       if (event.metaKey || event.ctrlKey || event.altKey || event.repeat) return;
       const number = Number(event.key);
@@ -308,6 +314,7 @@ export function PlayScreen({
             {restoreNotice && <p className="restore-notice" role="status" data-testid="restore-notice">{restoreNotice}</p>}
             {preferences.artwork !== "none" && illustration && <SceneIllustration art={illustration} />}
             <ObjectiveBrief state={state} />
+            {canConsultSources(state) && <div className="investigation-tools"><button className="ghost" type="button" data-testid="consult-sources" aria-haspopup="dialog" disabled={Boolean(activeChoice) || modalOpen} onClick={() => setNotebookOpen(true)}>Consult acquired sources</button></div>}
             <TransferBrief state={state} />
             <ArchiveBrief state={state} />
             {!scene.memory && <TestimonyBrief state={state} />}
@@ -329,7 +336,7 @@ export function PlayScreen({
               </div>
             )}
             {preferences.reading === "paragraph" && paragraphs.length > 1 && <p className="reading-progress hint" role="status" aria-atomic="true">{visibleCount} of {paragraphs.length} paragraphs shown</p>}
-            {dialogue && <VoiceLine key={`${scene.id}-${dialogue.id}`} line={dialogue} paused={audioPaused && preferences.sound} enabled={sound && preferences.voices > 0 && !modalOpen && !sheetOpen && !confirmAbandon && !activeChoice} />}
+            {dialogue && <VoiceLine key={`${scene.id}-${dialogue.id}`} line={dialogue} paused={audioPaused && preferences.sound} enabled={sound && preferences.voices > 0 && !modalOpen && !sheetOpen && !notebookOpen && !confirmAbandon && !activeChoice} />}
             {scene.id === "memory_sequence" && <MemoryTimeline state={state} choices={choices} onPlace={pick} artwork={preferences.artwork !== "none"} reducedMotion={reduceMotion} numberShortcuts={preferences.numberShortcuts} />}
             {["act2_route_map", "act2_route_exit", "act2_route_review", "act2_route_crossing"].includes(scene.id) && <RouteBoard state={state} />}
             {scene.finale && campaignCoda(state) && <p data-testid="campaign-coda">{campaignCoda(state)}</p>}
@@ -407,6 +414,7 @@ export function PlayScreen({
         </main>
         <Sheet state={state} speaker={scene.speaker} open={sheetOpen} onClose={() => setSheetOpen(false)} />
       </div>
+      {notebookOpen && <InvestigationNotebook state={state} onClose={() => setNotebookOpen(false)} />}
       {activeChoice?.check && (
         <CheckDialog
           state={state}

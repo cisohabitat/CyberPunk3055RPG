@@ -1,0 +1,147 @@
+{
+  "method": "Identical pre-choice states from deterministic full-campaign fixtures; authored dice and retained source knowledge. Aggregate scene prose, excluding separately rendered finale retell. No reading-time or human-comprehension claim.",
+  "routes": 111,
+  "visits": 8109,
+  "canonicalDefinitionsUnchanged": true,
+  "finalStatesUnchanged": true,
+  "wordsBefore": 518651,
+  "wordsAfter": 518651,
+  "changePercent": 0,
+  "retellChangedVisits": 0,
+  "changedScenes": [],
+  "consultationMethod": "Read-only timestamp lookup with actual Tab/Enter/arrows/typing; exact saved state and shown prose compared before and after each consultation. Source-familiar authored dice, not blind comprehension testing.",
+  "baselineLookup": {
+    "scene": "act3_testimony_hearing",
+    "journalRecords": 23,
+    "acquiredSources": 9,
+    "timestampInLaterLedger": false,
+    "searchControls": 0
+  },
+  "candidateLookup": {
+    "acquiredSources": 9,
+    "timestampMatches": 1,
+    "filterGroups": 4,
+    "acquiredOnly": true
+  },
+  "keyboardCampaigns": [
+    {
+      "route": "qa/routes/memory-timeline-bounded.json",
+      "width": 390,
+      "artwork": "full",
+      "reading": "paragraph",
+      "sceneVisits": 86,
+      "reloads": 37,
+      "consultations": [
+        {
+          "scene": "memory_table",
+          "records": 1,
+          "matches": 0
+        },
+        {
+          "scene": "memory_sequence",
+          "records": 3,
+          "matches": 1
+        },
+        {
+          "scene": "memory_sequence_result",
+          "records": 4,
+          "matches": 1
+        },
+        {
+          "scene": "memory_model_test",
+          "records": 4,
+          "matches": 1
+        },
+        {
+          "scene": "act2_archive_compare",
+          "records": 7,
+          "matches": 1
+        },
+        {
+          "scene": "act3_testimony_hearing",
+          "records": 9,
+          "matches": 1
+        }
+      ],
+      "pageErrors": 0,
+      "mediaErrors": 0,
+      "finale": "ending_quiet"
+    },
+    {
+      "route": "qa/routes/memory-timeline-corrected.json",
+      "width": 320,
+      "artwork": "none",
+      "reading": "paragraph",
+      "sceneVisits": 68,
+      "reloads": 22,
+      "consultations": [
+        {
+          "scene": "memory_table",
+          "records": 1,
+          "matches": 0
+        },
+        {
+          "scene": "memory_sequence",
+          "records": 3,
+          "matches": 1
+        },
+        {
+          "scene": "memory_sequence_result",
+          "records": 4,
+          "matches": 1
+        },
+        {
+          "scene": "memory_model_test",
+          "records": 5,
+          "matches": 1
+        },
+        {
+          "scene": "act2_archive_compare",
+          "records": 8,
+          "matches": 1
+        },
+        {
+          "scene": "act2_archive_gap",
+          "records": 9,
+          "matches": 1
+        },
+        {
+          "scene": "act3_testimony_hearing",
+          "records": 12,
+          "matches": 1
+        },
+        {
+          "scene": "act3_testimony_correction",
+          "records": 12,
+          "matches": 1
+        }
+      ],
+      "pageErrors": 0,
+      "mediaErrors": 0,
+      "finale": "ending_quiet"
+    },
+    {
+      "route": "qa/routes/witness-permission.json",
+      "width": 1440,
+      "artwork": "full",
+      "reading": "all",
+      "sceneVisits": 61,
+      "reloads": 12,
+      "consultations": [
+        {
+          "scene": "memory_table",
+          "records": 1,
+          "matches": 0
+        },
+        {
+          "scene": "act3_testimony_hearing",
+          "records": 6,
+          "matches": 1
+        }
+      ],
+      "pageErrors": 0,
+      "mediaErrors": 0,
+      "finale": "ending_names"
+    }
+  ]
+}
