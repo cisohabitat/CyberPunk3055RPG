@@ -88,3 +88,14 @@ test("opening consultation stops selected dialogue and leaves a recorded timelin
   await page.keyboard.press("Escape");
   await expect(listen).toBeEnabled(); expect(await saved(page)).toBe(before);
 });
+
+test("first-fragment consultation does not name an undiscovered witness or reveal her roster", async ({ page }) => {
+  await open(page, checkpoint("memory_table", "memory-timeline-bounded", "inspect-order"), "none");
+  const before = await saved(page); await keyboardActivate(page, page.getByTestId("consult-sources"));
+  const dialog = page.getByRole("dialog", { name: "Investigation notebook" });
+  await expect(dialog).not.toContainText("Nia");
+  await expect(page.getByTestId("notebook-memory-roster")).toHaveCount(0);
+  await expect(page.getByTestId("notebook-memory-order")).toHaveCount(0);
+  await expect(page.getByTestId("notebook-memory-signature")).toContainText("02:13");
+  expect(await saved(page)).toBe(before);
+});

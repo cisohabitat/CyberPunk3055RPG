@@ -5,7 +5,7 @@ import type { GameState } from "./types";
 export const SOURCE_GROUPS = [
   { id: "memory", label: "Recorded memory" },
   { id: "archive", label: "Archive records" },
-  { id: "witness", label: "Nia's account" },
+  { id: "witness", label: "Witness account" },
   { id: "interpretation", label: "Interpretations and corrections" },
 ] as const;
 export type SourceGroup = typeof SOURCE_GROUPS[number]["id"];

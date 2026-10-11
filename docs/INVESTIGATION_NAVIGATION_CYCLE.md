@@ -10,7 +10,7 @@ A fresh server for baseline commit `41abf9b` confirmed that `02:16` was absent f
 
 ## Focused implementation
 
-“Consult acquired sources” opens a native modal notebook at explicit reconstruction, archive and hearing contexts, after at least one source record exists. Search title, wording, recorded kind, inspected timestamp or attribution. Record groups distinguish recorded memory, archive records, Nia's account and interpretations/corrections. Source entries preserve acquisition order and exact wording/kind; there is no chronological sorting, auto-placement, suggested answer or new source.
+“Consult acquired sources” opens a native modal notebook at explicit reconstruction, archive and hearing contexts, after at least one source record exists. Search title, wording, recorded kind, inspected timestamp or attribution. Record groups distinguish recorded memory, archive records, witness accounts and interpretations/corrections. Early controls use generic witness/quotation labels so they do not reveal Nia's identity before her source is acquired. Source entries preserve acquisition order and exact wording/kind; there is no chronological sorting, auto-placement, suggested answer or new source.
 
 Acquired original fragments regain their existing timestamp and provenance in this view. Flags alone never expose an unacquired entry. The current cancellation and public-quotation limits stay visible independently of filters; an old receipt's “issuer still needs verification” wording stays attached even after a later authenticated key arrives. Allegations and corrections stay separate. No-match results offer a clear reset.
 
@@ -22,7 +22,7 @@ The existing memory bench, source close-ups, archive setting and hearing portrai
 
 ## Verification
 
-Local verification passed 433 unit checks, TypeScript, production build/budgets, all 111 saved replay routes and 18 focused browser checks across desktop/phone Chromium and WebKit. The focused checks exercise acquired-only source lookup, preserved partial chronology and saved bytes, current-versus-original limits, claims/corrections, empty-filter recovery, actual Tab/Enter/Escape, background-shortcut blocking, focus return, 320/390/1440px layouts, automated accessibility and selected-dialogue cancellation. A nested select label caused the first filter tests to fail; separate explicit label associations fixed the issue and the complete focused suite passed.
+Local verification passed 433 unit checks, TypeScript, production build/budgets, all 111 saved replay routes and 21 focused browser checks across desktop/phone Chromium and WebKit. The focused checks exercise acquired-only source lookup, preserved partial chronology and saved bytes, current-versus-original limits, claims/corrections, empty-filter recovery, actual Tab/Enter/Escape, background-shortcut blocking, focus return, 320/390/1440px layouts, automated accessibility and selected-dialogue cancellation. A first-fragment regression confirms that controls reveal neither the unacquired witness identity nor the roster/counter-order. A nested select label caused the first filter tests to fail; separate explicit label associations fixed the issue and the complete focused suite passed.
 
 | Full keyboard campaign | Presentation | Visits / reloads | Consultations | Finale |
 | --- | --- | --- | --- | --- |

@@ -28,7 +28,7 @@ export function InvestigationNotebook({ state, onClose }: { state: GameState; on
     </div>
     <section aria-label="Current source limits" className="notebook-limits">
       <h3>Current source limits</h3>
-      <dl><dt>Cancellation</dt><dd>{readiness.cancellation}</dd><dt>Nia’s public words</dt><dd>{readiness.quotation}</dd></dl>
+      <dl><dt>Cancellation</dt><dd>{readiness.cancellation}</dd><dt>Public quotation</dt><dd>{readiness.quotation}</dd></dl>
     </section>
     <p className="hint">Records keep their original wording and recorded status. A later source or correction stays separate. Filtering changes this view, not the account.</p>
     {visible.length ? <ol className="notebook-records" aria-label="Matching acquired records">{visible.map(record => <li key={record.id} data-testid={`notebook-${record.id}`}>
