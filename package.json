@@ -16,6 +16,8 @@
     "production:probe": "node scripts/performance-probe.mjs",
     "production:verify": "node scripts/verify-production.mjs",
     "production:audio-probe": "tsx scripts/audio-endurance.ts",
+    "production:experience": "tsx scripts/player-experience.ts",
+    "production:voices": "tsx scripts/voice-validation.ts",
     "production:rehearse": "tsx scripts/release-rehearsal.ts"
   },
   "dependencies": {

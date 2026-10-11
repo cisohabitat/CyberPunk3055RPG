@@ -326,3 +326,9 @@ Numerical choice previews show effective faction, strain and credit changes afte
 Pausing Nia’s contact prevents a new hearing quotation request and keeps her approved recording private. An older save already at her explicit reply can continue under stated one-answer terms without reopening ongoing contact. Previous permissions, breaches and commitments remain recorded. Existing suitable Sera/Nia art is retained with updated scene-art rationales; no new scene or media asset is required.
 
 Preserve save version 2, `saint-shard-3055-v1`, recorded dice, 1d10 and caps, all four finales, visible goals and silent/text-only parity. Use [the player validation checklist](docs/PLAYER_VALIDATION_CHECKLIST.md) for subsequent assessment. The provisional 7.8 grade and six production acceptance gates remain open; this increment does not supply fresh-player, rights, physical-device or independent acceptance.
+
+### Player experience validation — report response phase 2
+
+`npm run production:experience -- URL` plays authored full campaigns through real Tab order, Enter, Space, arrows and typing, including paragraph reveal and every fixture reload checkpoint. `npm run production:voices -- URL` verifies all fourteen selected quotations through natural completion, explicit cached replay, transcript parity, Stop and source cleanup. Reports record revision, source hashes, scope and limitations in ignored local QA outputs.
+
+Run active and idle audio probes with `--minutes 120` against an immutable build; only their recorded completed durations establish internal two-hour evidence. See [the repeatable protocol and coverage reconciliation](docs/EXPERIENCE_VALIDATION.md). No scene, asset or gameplay rule changes; preserve existing art, saves, goals, silent/text-only parity and the 24 MiB decoded cache. Human listening, fresh players, assistive technology, physical devices, rights and all six acceptance gates remain pending; the provisional grade stays 7.8.
