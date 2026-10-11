@@ -33,7 +33,8 @@ async function main() {
   for (const line of lines) if (!examples.has(line.id)) throw new Error(`No authored reachable example for ${line.id}`);
   const revision = execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8" }).trim();
   const dirty = Boolean(execFileSync("git", ["status", "--porcelain"], { encoding: "utf8" }).trim());
-  const testedSources = Object.fromEntries(["lib/sound.ts", "components/VoiceLine.tsx", "qa/media/voice-lines.json", "scripts/voice-validation.ts"].map(file => [file, createHash("sha256").update(readFileSync(file)).digest("hex")]));
+  const testedSources = Object.fromEntries(["lib/sound.ts", "lib/engine.ts", "lib/memory-media.ts", "components/VoiceLine.tsx", "components/GameApp.tsx", "components/PlayScreen.tsx", "qa/production/keyboard.ts", "qa/production/audio-review.ts", "qa/media/voice-lines.json", "scripts/voice-validation.ts"].map(file => [file, createHash("sha256").update(readFileSync(file)).digest("hex")]));
+  const testedRoutes = Object.fromEntries([...new Set([...examples.values()].map(example => example.route))].map(file => [file, createHash("sha256").update(readFileSync(`qa/routes/${file}`)).digest("hex")]));
   const browser = await chromium.launch({ executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH, args: ["--no-sandbox"] });
   const rows: { id: string; route: string; durationSeconds: number; voiceRequests: number; liveSourcesAfterEnd: number; created: number; disposed: number }[] = [];
   const errors: string[] = [], failures: string[] = [];
@@ -84,7 +85,8 @@ async function main() {
     }
     expect(errors).toEqual([]); expect(failures).toEqual([]);
     mkdirSync(dirname(out), { recursive: true });
-    writeFileSync(out, JSON.stringify({ revision, dirty, testedSources, url, elapsedSeconds: (Date.now() - started) / 1000, rows, errors, failures, limitations: "Internal directed, reachable replay states in separate QA contexts; these are not completed campaigns. Natural clip completion, explicit cached replay, Stop, transcript parity and cleanup are technical observations. No human listening, loudness comfort, artistic pronunciation, fatigue, rights or physical-device acceptance." }, null, 2));
+    const environment = { browser: "Chromium", browserVersion: browser.version(), platform: process.platform, nodeVersion: process.version, device: "cloud automation host; synthetic viewport" };
+    writeFileSync(out, JSON.stringify({ revision, dirty, testedSources, testedRoutes, environment, url, elapsedSeconds: (Date.now() - started) / 1000, rows, errors, failures, limitations: "Internal directed, reachable replay states in separate QA contexts; these are not completed campaigns. Natural clip completion, explicit cached replay, Stop, transcript parity and cleanup are technical observations. No human listening, loudness comfort, artistic pronunciation, fatigue, rights or physical-device acceptance." }, null, 2));
   } finally { await browser.close(); }
 }
 main().catch(error => { console.error(error); process.exitCode = 1; });

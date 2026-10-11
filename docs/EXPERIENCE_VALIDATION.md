@@ -8,7 +8,7 @@ A player configures readability and sound, creates a runner, reads and selects s
 
 ## Complete keyboard campaigns
 
-`npm run production:experience -- URL` starts from the title and uses actual browser Tab order, Enter, Space, arrows and typing. It does not click, programmatically focus, fill inputs, select options through an automation API or invoke number shortcuts. Fixtures guide the route and dice; these are directed regressions, not blind-player observations.
+`npm run production:experience -- URL` starts from the title and uses actual browser Tab/Shift+Tab order, Enter, Space, arrows and typing. It does not click, programmatically focus, fill inputs, select options through an automation API or invoke number shortcuts. Fixtures guide the route and dice; these are directed regressions, not blind-player observations. Earlier controls are reached backwards instead of wrapping through browser chrome, where page-directed automated keys may not return to content in Firefox.
 
 ```bash
 npm run production:experience -- http://127.0.0.1:PORT \
@@ -35,6 +35,8 @@ The 11 October local baseline checks reached Names at 320px, Quiet at 390px, Wit
 Each clip must stay silent before Listen, match visible dialogue and its expanded transcript, complete naturally and release its source while the two beds remain. Cached replay requires a second explicit activation, makes no duplicate file request and stops immediately. Sound off must dispose every source and clear its buffer. Listening leaves saves byte-for-byte unchanged. Failure of all media must still leave readable dialogue, choices and saves usable.
 
 The local baseline passed all fourteen selected clips. This establishes technical activation, transcript parity, completion, cancellation and cleanup. Intelligibility, pronunciation, musical masking, expressive delivery, startling levels and fatigue require independent headphones, speakers and phone sessions. Do not score those qualities from successful playback.
+
+CI starts a PulseAudio virtual null sink before the browser matrix. A device-free Firefox runner can create/start sources without advancing its audio clock, so it cannot verify natural ended cleanup. The null sink provides a clock while discarding output; no speaker, physical hardware or human listening is represented. Do not skip or weaken the ended-cleanup assertions to accommodate an unprovisioned runner.
 
 ## Endurance protocol and evidence identity
 

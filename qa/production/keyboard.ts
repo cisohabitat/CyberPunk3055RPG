@@ -1,12 +1,19 @@
 import { expect, type Locator, type Page } from "@playwright/test";
 
-/** QA navigation through the browser's actual Tab order. No programmatic focus,
+/** QA navigation through actual Tab/Shift+Tab order. No programmatic focus,
  * pointer clicks, input fills or number shortcuts are used by these helpers. */
 export async function tabTo(page: Page, target: Locator, limit = 240) {
   await expect(target).toBeVisible();
   for (let tabs = 0; tabs <= limit; tabs++) {
-    if (await target.evaluate(element => element === document.activeElement)) return tabs;
-    if (tabs < limit) await page.keyboard.press("Tab");
+    const direction = await target.evaluate(element => {
+      const active = document.activeElement;
+      if (element === active) return "reached";
+      // Go backwards to earlier controls instead of wrapping through browser
+      // chrome, where page-directed synthetic keys cannot reliably return.
+      return active && active !== document.body && Boolean(element.compareDocumentPosition(active) & Node.DOCUMENT_POSITION_FOLLOWING) ? "Shift+Tab" : "Tab";
+    });
+    if (direction === "reached") return tabs;
+    if (tabs < limit) await page.keyboard.press(direction);
   }
   throw new Error(`Control not reached after ${limit} Tabs: ${await target.evaluate(element => element.outerHTML.slice(0, 300))}`);
 }
