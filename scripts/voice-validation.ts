@@ -68,7 +68,9 @@ async function main() {
         await expect.poll(async () => (await audio()).sourcesCreated).toBe(created + 1);
         await expect(listen).toBeVisible({ timeout: 30_000 });
         const ended = await audio(), durationSeconds = (Date.now() - playStarted) / 1000;
-        expect(ended.liveSources).toBe(2); expect(ended.sourcesDisposed).toBe(1); expect(ended.buffersCleared).toBe(1);
+        expect(ended.liveSources).toBe(2);
+        expect(ended.disposed.filter(name => name.startsWith("voice-"))).toEqual([`${line.id}.wav`]);
+        expect(ended.cleared.filter(name => name.startsWith("voice-"))).toEqual([`${line.id}.wav`]);
         expect(ended.started.filter(name => name === `${line.id}.wav`)).toHaveLength(1); expect(await saved()).toBe(before);
         // Cached replay must remain explicit and Stop must dispose immediately.
         await keyboardActivate(page, listen); await expect(page.getByTestId("voice-line")).toContainText("Playing selected dialogue");

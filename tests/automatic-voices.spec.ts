@@ -6,13 +6,18 @@ const run = (sceneId = "memo") => ({ ...createCharacter({ handle: "VoiceDefault"
 const audio = (page: Page): Promise<AudioReview> => page.evaluate(() => (window as unknown as { audioReview: AudioReview }).audioReview);
 const speech = async (page: Page) => (await audio(page)).started.filter(name => name.startsWith("voice-"));
 const saved = (page: Page) => page.evaluate(() => localStorage.getItem("saint-shard-3055-v1"));
-async function open(page: Page, preferences?: object, scene = "memo") {
+async function open(page: Page, preferences?: object, scene = "memo", startMenu = false) {
   await page.addInitScript(installAudioReview, {});
   await page.addInitScript(({ state, preferences }) => {
     localStorage.setItem("saint-shard-3055-v1", JSON.stringify(state));
     if (preferences) localStorage.setItem("saint-shard-preferences", JSON.stringify(preferences));
   }, { state: run(scene), preferences });
-  await page.goto("/"); await page.getByTestId("continue-run").click();
+  await page.goto("/");
+  if (startMenu) {
+    await page.getByRole("heading", { name: "Saint Shard", exact: true }).click();
+    await expect.poll(async () => (await audio(page)).started).toContain("theme-title.flac");
+  }
+  await page.getByTestId("continue-run").click();
 }
 
 test("fresh preferences enable voices; reveal plays once and Stop survives dialogs and page resume", async ({ page }) => {
@@ -38,15 +43,17 @@ test("fresh preferences enable voices; reveal plays once and Stop survives dialo
 
 test("automatic voice completes naturally, releases its buffer and permits explicit replay", async ({ page }) => {
   test.setTimeout(40_000);
-  await open(page, { reading: "all", effects: 0 }, "job_owner"); const before = await saved(page);
+  await open(page, { reading: "all", effects: 0 }, "job_owner", true); const before = await saved(page);
   await expect.poll(() => speech(page)).toEqual(["voice-quill-job-owner.wav"]);
   await expect(page.getByRole("button", { name: "Listen to Quill", exact: true })).toBeVisible({ timeout: 25_000 });
   await expect.poll(async () => (await audio(page)).liveSources).toBe(2);
-  expect((await audio(page)).buffersCleared).toBe(1); expect(await saved(page)).toBe(before);
+  expect((await audio(page)).cleared.filter(name => name.startsWith("voice-"))).toEqual(["voice-quill-job-owner.wav"]); expect(await saved(page)).toBe(before);
+  expect((await audio(page)).disposed.filter(name => name.startsWith("voice-"))).toEqual(["voice-quill-job-owner.wav"]);
   await page.getByRole("button", { name: "Listen to Quill", exact: true }).click();
   await expect.poll(() => speech(page)).toHaveLength(2);
   await page.getByRole("button", { name: "Stop line", exact: true }).click();
   await expect.poll(async () => (await audio(page)).liveSources).toBe(2);
+  expect((await audio(page)).cleared.filter(name => name.startsWith("voice-"))).toEqual(["voice-quill-job-owner.wav", "voice-quill-job-owner.wav"]);
 });
 
 test("Edda speaks her explicitly attributed service line while Ives remains the primary portrait", async ({ page }) => {

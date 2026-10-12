@@ -8,17 +8,22 @@ import { keyboardActivate, keyboardSelect, tabTo } from "../qa/production/keyboa
 const fixture = (sceneId = "memo", extra: Partial<GameState> = {}): GameState => ({ ...createCharacter({ handle: "ExperienceQA", givenName: "Ada", origin: "spire", bonus: { chrome: 0, nerve: 0, face: 2, ghost: 0 } }), sceneId, ...extra });
 const saved = (page: Page) => page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
 const audio = (page: Page) => page.evaluate(() => (window as unknown as { audioReview: AudioReview }).audioReview);
-async function setup(page: Page, state: GameState, preferences = {}) {
+async function setup(page: Page, state: GameState, preferences = {}, startMenu = false) {
   await page.addInitScript(installAudioReview, {});
   await page.addInitScript(({ state, preferences }) => {
     localStorage.setItem("saint-shard-3055-v1", JSON.stringify(state));
     localStorage.setItem("saint-shard-preferences", JSON.stringify({ reading: "all", motion: "reduce", artwork: "none", sound: true, autoVoices: false, effects: 0, ...preferences }));
   }, { state, preferences });
-  await page.goto("/"); await page.getByTestId("continue-run").click();
+  await page.goto("/");
+  if (startMenu) {
+    await page.getByRole("heading", { name: "Saint Shard", exact: true }).click();
+    await expect.poll(async () => (await audio(page)).started).toContain("theme-title.flac");
+  }
+  await page.getByTestId("continue-run").click();
 }
 
 test("experience natural voice completion releases its source and leaves current beds active", async ({ page }) => {
-  await setup(page, fixture("stall"));
+  await setup(page, fixture("stall"), {}, true);
   await expect.poll(async () => (await audio(page)).liveSources).toBe(2);
   const before = await saved(page), created = (await audio(page)).sourcesCreated;
   await keyboardActivate(page, page.getByRole("button", { name: "Listen to Quill", exact: true }));
@@ -26,7 +31,10 @@ test("experience natural voice completion releases its source and leaves current
   await expect.poll(async () => (await audio(page)).sourcesCreated).toBe(created + 1);
   await expect(page.getByRole("button", { name: "Listen to Quill", exact: true })).toBeVisible({ timeout: 25_000 });
   const ended = await audio(page);
-  expect(ended.liveSources).toBe(2); expect(ended.sourcesDisposed).toBe(1); expect(ended.buffersCleared).toBe(1);
+  expect(ended.liveSources).toBe(2);
+  const spoken = ended.started.filter(name => name.startsWith("voice-")); expect(spoken).toHaveLength(1);
+  expect(ended.disposed.filter(name => name.startsWith("voice-"))).toEqual(spoken);
+  expect(ended.cleared.filter(name => name.startsWith("voice-"))).toEqual(spoken);
   expect(await saved(page)).toEqual(before);
   await page.getByRole("button", { name: "Settings", exact: true }).click();
   await page.getByLabel("Sound enabled", { exact: true }).uncheck();

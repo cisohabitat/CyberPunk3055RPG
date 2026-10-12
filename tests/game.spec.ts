@@ -1519,7 +1519,7 @@ test("directed audio returning to an active bed cancels a late pressure start", 
   await observeBeds(page); let release!: () => void; const gate = new Promise<void>(resolve => { release = resolve; });
   await page.route("**/audio/theme-pressure.flac", async route => { const response = await route.fetch(); await gate; await route.fulfill({ response }); });
   await openRun(page, fixture("route", { flags: { chapel_window_started: true, chapel_window_2: true } }));
-  await expect.poll(async () => (await bedReview(page)).started.length).toBe(2);
+  await expect.poll(async () => (await bedReview(page)).started.filter(name => name !== "theme-title.flac").length).toBe(2);
   const initial = (await bedReview(page)).started;
   await page.getByTestId("choice-begin-chapel-window").click();
   await page.getByTestId("choice-pause-chapel-window").click();

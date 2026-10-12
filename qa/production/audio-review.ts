@@ -2,10 +2,10 @@
 export type AudioReview = {
   sourcesCreated: number; sourcesDisposed: number; buffersCleared: number;
   liveSources: number; peakLiveSources: number; starts: number; stops: number;
-  started: string[]; decoded: string[];
+  started: string[]; decoded: string[]; disposed: string[]; cleared: string[];
 };
 export function installAudioReview({ suppressEnded = false }: { suppressEnded?: boolean } = {}) {
-  const review: AudioReview = { sourcesCreated: 0, sourcesDisposed: 0, buffersCleared: 0, liveSources: 0, peakLiveSources: 0, starts: 0, stops: 0, started: [], decoded: [] };
+  const review: AudioReview = { sourcesCreated: 0, sourcesDisposed: 0, buffersCleared: 0, liveSources: 0, peakLiveSources: 0, starts: 0, stops: 0, started: [], decoded: [], disposed: [], cleared: [] };
   (window as unknown as { audioReview: AudioReview }).audioReview = review;
   const ids = new WeakMap<AudioBufferSourceNode, number>(), live = new Set<number>();
   const dataNames = new WeakMap<ArrayBuffer, string>(), bufferNames = new WeakMap<AudioBuffer, string>();
@@ -35,11 +35,17 @@ export function installAudioReview({ suppressEnded = false }: { suppressEnded?: 
   AudioBufferSourceNode.prototype.stop = function(...args: Parameters<typeof stop>) { review.stops++; return stop.apply(this, args); };
   const disconnect = AudioBufferSourceNode.prototype.disconnect;
   AudioBufferSourceNode.prototype.disconnect = function() {
-    const id = ids.get(this); if (id !== undefined && live.delete(id)) review.sourcesDisposed++;
+    const id = ids.get(this); if (id !== undefined && live.delete(id)) {
+      review.sourcesDisposed++; remember(review.disposed, this.buffer ? bufferNames.get(this.buffer) ?? "unnamed" : "empty");
+    }
     review.liveSources = live.size; return (disconnect as () => void).call(this);
   };
   const buffer = Object.getOwnPropertyDescriptor(AudioBufferSourceNode.prototype, "buffer");
-  if (buffer?.set && buffer.get) Object.defineProperty(AudioBufferSourceNode.prototype, "buffer", { configurable: true, get: buffer.get, set(value: AudioBuffer | null) { if (value === null && buffer.get!.call(this)) review.buffersCleared++; buffer.set!.call(this, value); } });
+  if (buffer?.set && buffer.get) Object.defineProperty(AudioBufferSourceNode.prototype, "buffer", { configurable: true, get: buffer.get, set(value: AudioBuffer | null) {
+    const previous = buffer.get!.call(this) as AudioBuffer | null;
+    if (value === null && previous) { review.buffersCleared++; remember(review.cleared, bufferNames.get(previous) ?? "unnamed"); }
+    buffer.set!.call(this, value);
+  } });
   if (suppressEnded) {
     const handlers = new WeakMap<AudioBufferSourceNode, EventListener>();
     Object.defineProperty(AudioBufferSourceNode.prototype, "onended", { configurable: true, get() { return handlers.get(this) ?? null; }, set(value: EventListener | null) { if (value) handlers.set(this, value); else handlers.delete(this); } });

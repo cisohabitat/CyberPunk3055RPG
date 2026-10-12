@@ -5,7 +5,7 @@ import type { GameState } from "../lib/types";
 import { installAudioReview, type AudioReview } from "../qa/production/audio-review";
 
 const fixture = (sceneId = "memo", extra: Partial<GameState> = {}): GameState => ({ ...createCharacter({ handle: "DeviceQA", givenName: "Ada", origin: "spire", bonus: { chrome: 0, nerve: 0, face: 2, ghost: 0 } }), sceneId, items: ["shard"], ...extra });
-async function setup(page: Page, run = fixture(), preferences = {}, suppressEnded = false) {
+async function setup(page: Page, run = fixture(), preferences = {}, suppressEnded = false, startMenu = false) {
   await page.addInitScript(installAudioReview, { suppressEnded });
   await page.addInitScript(({ run, preferences }) => {
     if (!localStorage.getItem("saint-shard-3055-v1")) localStorage.setItem("saint-shard-3055-v1", JSON.stringify(run));
@@ -14,7 +14,12 @@ async function setup(page: Page, run = fixture(), preferences = {}, suppressEnde
     Object.defineProperty(document, "visibilityState", { configurable: true, get: () => visibility });
     (window as unknown as { changeVisibility: (value: string) => void }).changeVisibility = value => { visibility = value; document.dispatchEvent(new Event("visibilitychange")); };
   }, { run, preferences });
-  await page.goto("/"); await page.getByTestId("continue-run").click();
+  await page.goto("/");
+  if (startMenu) {
+    await page.getByRole("heading", { name: "Saint Shard", exact: true }).click();
+    await expect.poll(async () => (await review(page)).started).toContain("theme-title.flac");
+  }
+  await page.getByTestId("continue-run").click();
 }
 const review = (page: Page) => page.evaluate(() => (window as unknown as { audioReview: AudioReview }).audioReview);
 const saved = (page: Page) => page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
@@ -41,7 +46,7 @@ test("cycle 9 muted channels avoid requests and unmuting one starts only that ch
 });
 
 test("cycle 9 muting music releases both sides of a crossfade without ended callbacks", async ({ page }) => {
-  await setup(page, fixture("mara_why"), { effects: 0 }, true);
+  await setup(page, fixture("mara_why"), { effects: 0 }, true, true);
   await expect.poll(async () => (await review(page)).liveSources).toBe(2);
   await page.getByTestId("choice-inspect-hour").click();
   await expect.poll(async () => (await review(page)).liveSources).toBe(3);

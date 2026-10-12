@@ -4,8 +4,8 @@ import { installAudioReview, type AudioReview } from "../qa/production/audio-rev
 import { keyboardActivate } from "../qa/production/keyboard";
 import { createCharacter } from "../lib/engine";
 
-async function observe(page: Page) {
-  await page.addInitScript(installAudioReview);
+async function observe(page: Page, suppressEnded = false) {
+  await page.addInitScript(installAudioReview, { suppressEnded });
   await page.addInitScript(() => {
     const review = window as unknown as { titlePlayback?: { node: AudioBufferSourceNode; duration: number; startedAt: number; seam: number[] } };
     const start = AudioBufferSourceNode.prototype.start;
@@ -76,7 +76,7 @@ test("a keyboard menu interaction starts the default theme without using Play", 
 });
 
 test("title music respects mixer, hidden-page pause and voiced gameplay handoff", async ({ page }) => {
-  await observe(page); await page.setViewportSize({ width: 320, height: 844 });
+  await observe(page, true); await page.setViewportSize({ width: 320, height: 844 });
   const run = { ...createCharacter({ handle: "MenuQA", givenName: "Ada", origin: "spire", bonus: { chrome: 2, nerve: 0, face: 0, ghost: 0 } }), sceneId: "memo" };
   await page.addInitScript(run => {
     localStorage.setItem("saint-shard-3055-v1", JSON.stringify(run));

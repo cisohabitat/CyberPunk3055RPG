@@ -9,7 +9,7 @@ import { SaveDialog } from "./SaveDialog";
 import { SettingsDialog } from "./SettingsDialog";
 import { clearSave, emptyCodex, loadCodex, loadSave, usedBackup, writeSave } from "@/lib/storage";
 import { applyPreferences, DEFAULT_PREFERENCES, loadPreferences, writePreferences, type Preferences } from "@/lib/preferences";
-import { setAudioMix, setBed, unlockAudio, whenAudioRunning, type BedStatus } from "@/lib/sound";
+import { leaveMenuMusic, setAudioMix, setBed, unlockAudio, whenAudioRunning, type BedStatus } from "@/lib/sound";
 import { checkpointLabel } from "@/lib/checkpoints";
 import { recordIncident } from "@/lib/diagnostics";
 import type { Codex, GameState } from "@/lib/types";
@@ -103,6 +103,8 @@ export function GameApp() {
     }
   }
   function load(next: GameState, source = "Autosave") {
+    // Dispose menu sources before gameplay, including when ended is delayed.
+    if (screen === "title") { leaveMenuMusic(); setMenuMusicStatus("idle"); }
     if (preferences.sound) unlockAudio();
     setAudioPaused(false);
     updateRun(next); setRestoreNotice(source === "New run" ? null : `Loaded ${source} — ${checkpointLabel(next)}`);

@@ -121,6 +121,11 @@ function crossfade(buffer: AudioBuffer, channel: "music" | "ambience", level: nu
   if (previous) { previous.gain.gain.setTargetAtTime(0, audio.currentTime, 0.15); previous.node.stop(audio.currentTime + 0.8); }
   return next;
 }
+/** Cancel menu loading and dispose sources without suspending the next scene. */
+export function leaveMenuMusic() {
+  if (requestedMood !== "title") return;
+  ++ticket; want = false; stopVoice(); stopBed();
+}
 export function setBed(on: boolean, nextMood: SoundMood = "street", nextDistrict: SoundDistrict = "street", report?: (status: BedStatus) => void) {
   if (typeof window === "undefined") return;
   if (mix.music === 0 && theme) { stopSource(theme); theme = null; playingMood = undefined; }
