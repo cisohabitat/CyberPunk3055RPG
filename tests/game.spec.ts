@@ -1269,20 +1269,27 @@ for (const sceneId of ["opening_city", "act2_spire_brief", "act2_spire_methods",
   expect(requests).toEqual([]);
 });
 test("the authored stereo score decodes after an explicit sound-enabled continuation", async ({ page }) => {
-  type DecodedScore = { channels: number; duration: number; sampleRate: number };
+  type DecodedScore = { name: string; channels: number; duration: number; sampleRate: number };
   await page.addInitScript(() => {
     localStorage.setItem("saint-shard-preferences", JSON.stringify({ sound: true, autoVoices: false }));
     const recorded = window as unknown as { decodedScores: DecodedScore[] };
     recorded.decodedScores = [];
+    const names = new WeakMap<ArrayBuffer, string>();
+    const arrayBuffer = Response.prototype.arrayBuffer;
+    Response.prototype.arrayBuffer = function() {
+      const name = this.url.split("/").at(-1) ?? "unnamed";
+      return arrayBuffer.call(this).then(data => { names.set(data, name); return data; });
+    };
     const decode = AudioContext.prototype.decodeAudioData;
     AudioContext.prototype.decodeAudioData = function(data: ArrayBuffer) {
-      return decode.call(this, data).then((buffer) => { recorded.decodedScores.push({ channels: buffer.numberOfChannels, duration: buffer.duration, sampleRate: buffer.sampleRate }); return buffer; });
+      return decode.call(this, data).then((buffer) => { recorded.decodedScores.push({ name: names.get(data) ?? "unnamed", channels: buffer.numberOfChannels, duration: buffer.duration, sampleRate: buffer.sampleRate }); return buffer; });
     };
   });
   await openRun(page, fixture("districts"));
-  await expect.poll(() => page.evaluate(() => (window as unknown as { decodedScores: DecodedScore[] }).decodedScores)).toEqual(expect.arrayContaining([expect.objectContaining({ channels: 2 })]));
-  const score = await page.evaluate(() => (window as unknown as { decodedScores: DecodedScore[] }).decodedScores.find((buffer) => buffer.channels === 2)!);
-  // WebKit resampling can trim one output frame from the exact 32-second WAV.
+  await expect.poll(() => page.evaluate(() => (window as unknown as { decodedScores: DecodedScore[] }).decodedScores)).toEqual(expect.arrayContaining([expect.objectContaining({ name: "theme-week.flac", channels: 2 })]));
+  const score = await page.evaluate(() => (window as unknown as { decodedScores: DecodedScore[] }).decodedScores.find((buffer) => buffer.name === "theme-week.flac")!);
+  // Identify the gameplay score, even when the automatic title theme decoded
+  // first. WebKit resampling can trim one frame from the 32-second PCM master.
   expect(Math.abs(score.duration - 32)).toBeLessThanOrEqual(1 / score.sampleRate + Number.EPSILON);
   await page.getByRole("button", { name: "Settings", exact: true }).click();
   await page.getByLabel("Sound enabled", { exact: true }).uncheck(); await page.getByRole("button", { name: "Done", exact: true }).click();
