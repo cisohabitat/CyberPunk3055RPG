@@ -713,7 +713,7 @@ test("archive comparison, custody and worker follow-through survive reload", asy
   await expect(page.getByTestId("archive-brief")).toContainText("Only a successful key match");
   const accessibility = await new AxeBuilder({ page }).analyze(); expect(accessibility.violations).toEqual([]);
   await page.getByTestId("choice-request-invoice").click();
-  await expect(page.getByTestId("scene-text")).toContainText("Do not describe a maintenance countersignature");
+  await expect(page.getByTestId("scene-text")).toContainText("The ledger corroborates the cancellation; no reader authenticated its issuing key.");
   await page.reload(); await page.getByTestId("continue-run").click();
   await page.getByTestId("choice-withhold-technician").click();
   await page.getByTestId("choice-keep-chain").click();

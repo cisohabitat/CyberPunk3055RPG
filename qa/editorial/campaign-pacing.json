@@ -403,7 +403,7 @@
   ],
   "localValidation": {
     "unitReplayTests": 483,
-    "focusedBrowserChecks": 27,
+    "focusedBrowserChecks": 30,
     "profiles": [
       "chromium",
       "phone",
@@ -412,7 +412,9 @@
     "typecheck": "pass",
     "productionBuild": "pass",
     "mediaBudgets": "pass",
-    "loadProbes": 4
+    "loadProbes": 4,
+    "additionalArchiveBoundaryChecks": 3,
+    "ciCorrection": "The first full CI matrix passed 944 checks and failed the same superseded browser sentence assertion in four profiles. The assertion now verifies the revised corroboration/no-reader-authentication boundary; three additional local archive follow-through checks pass. Full exact-SHA CI is rerun after the correction."
   },
   "candidateVisits": 455,
   "candidateReloads": 195,
