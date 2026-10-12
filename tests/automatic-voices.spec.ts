@@ -49,6 +49,17 @@ test("automatic voice completes naturally, releases its buffer and permits expli
   await expect.poll(async () => (await audio(page)).liveSources).toBe(2);
 });
 
+test("Edda speaks her explicitly attributed service line while Ives remains the primary portrait", async ({ page }) => {
+  await open(page, undefined, "act2_origin_spire"); const before = await saved(page);
+  await expect(page.getByTestId("voice-line")).toHaveCount(0);
+  await page.getByTestId("show-rest").click();
+  await expect.poll(() => speech(page)).toEqual(["voice-edda-service-key.wav"]);
+  await expect(page.getByTestId("voice-line")).toHaveAttribute("aria-label", "Edda selected dialogue");
+  await expect(page.getByTestId("voice-line")).toContainText("They still bill my shifts");
+  await page.getByRole("button", { name: "Stop line", exact: true }).click();
+  expect(await saved(page)).toBe(before);
+});
+
 for (const preferences of [{ sound: false }, { voices: 0 }, { autoVoices: false }]) test(`saved ${JSON.stringify(preferences)} prevents automatic speech`, async ({ page }) => {
   const requests: string[] = []; page.on("request", request => { if (request.url().includes("/audio/voice-")) requests.push(request.url()); });
   await open(page, { reading: "all", ...preferences });

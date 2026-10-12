@@ -126,7 +126,9 @@ describe("beds", () => {
         ...(line.id === "voice-kerr-handover-registered" ? { kerr_route_registered: true, kerr_route_trace: true } : {}),
       } };
       const scene = SCENES[line.scene]; const text = sceneText(scene, state);
-      assert.equal(scene.speaker, line.speaker); assert.ok(text.includes(line.text), line.id);
+      assert.equal(scene.speaker, line.sceneSpeaker ?? line.speaker); assert.ok(text.includes(line.text), line.id);
+      if (line.attribution) { assert.ok(text.includes(line.attribution), line.id); assert.ok(line.attribution.includes(line.speaker), line.id); }
+      if (scene.speaker !== line.speaker) assert.ok(line.attribution, line.id);
       assert.equal(visibleDialogue(scene.id, scene.speaker, text)?.id, line.id);
       assert.equal(visibleDialogue(scene.id, line.speaker === "Quill" ? "Mara" : "Quill", text), undefined);
       const record = voices.lines.find((entry) => entry.id === line.id)!;
@@ -160,6 +162,15 @@ describe("beds", () => {
       assert.equal(line.segments.map(part => part.text).join(" "), line.text);
       for (const part of line.segments) { assert.ok(part.pauseAfter >= 0 && part.pauseAfter <= .8); assert.ok(part.speed >= .75 && part.speed <= 1.15); }
     }
+  });
+  it("voices Edda's attributed line without assigning it to the scene's primary portrait", () => {
+    const state = createCharacter({ handle: "Attribution", givenName: "Ada", origin: "spire", bonus: { chrome: 2, nerve: 0, face: 0, ghost: 0 } });
+    const scene = SCENES.act2_origin_spire, text = sceneText(scene, state), line = lines.find(line => line.id === "voice-edda-service-key")!;
+    assert.equal(scene.speaker, "Ives"); assert.equal(line.speaker, "Edda");
+    assert.equal(visibleDialogue(scene.id, scene.speaker, text)?.id, line.id);
+    assert.equal(visibleDialogue(scene.id, scene.speaker, line.text), undefined);
+    assert.equal(visibleDialogue(scene.id, "Edda", text), undefined);
+    assert.equal(visibleDialogue(scene.id, scene.speaker, text.replace(line.attribution!, "Ives says.")), undefined);
   });
   it("renders stereo chapter arrangements with headroom and continuous seams on both channels", () => {
     for (const name of ["theme", "theme-chapel", "theme-week", "theme-ward"]) {

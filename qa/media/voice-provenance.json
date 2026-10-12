@@ -30,7 +30,7 @@
     ]
   },
   "processing": "PCM16 mono master retained; optional exact-quotation phrase segments with bounded speed/pause and 8ms phrase edges; delivery peak normalized to 0.72, 8ms clip edges and 80ms head/tail silence.",
-  "reviewStatus": "Forty-five fixed stock synthetic quotations. The automatic-dialogue cycle adds twenty-three exact visible quotations using established character voices. Earlier twenty-two delivery hashes are unchanged. Signal, transcript, reachable-state and browser playback checks are technical review; no independent perceptual listening or commissioned actor session is claimed.",
+  "reviewStatus": "Forty-five fixed stock synthetic quotations. Twenty-three new deliveries; all earlier twenty-two hashes unchanged. Edda’s service-desk line uses af_kore with exact visible attribution despite Ives being the primary scene portrait. Source, signal and native playback review; no actor commission or independent perceptual acceptance.",
   "lines": [
     {
       "id": "voice-mara-assurance",
@@ -872,26 +872,6 @@
       "rms": 0.09039742632545586
     },
     {
-      "id": "voice-ives-act2-origin-spire",
-      "scene": "act2_origin_spire",
-      "speaker": "Ives",
-      "voice": "am_eric",
-      "speed": 0.98,
-      "text": "They still bill my shifts against it. Get it out clean and take the receiver.",
-      "language": "en-us",
-      "path": "public/audio/voice-ives-act2-origin-spire.wav",
-      "sourceFile": "/workspace/generated_audio/voice-expansion/voice-ives-act2-origin-spire.wav",
-      "sourceSha256": "88d402899119410b3fff0632ef8c0350ba7782a109ac7b2f4dcb49e7ae505ddb",
-      "sha256": "3a27064ce7c8f767da513441ab8cf980eedd9505147402137e489fa806c0838a",
-      "bytes": 212204,
-      "sampleRate": 24000,
-      "channels": 1,
-      "bits": 16,
-      "durationSeconds": 4.42,
-      "peak": 0.7199926755577257,
-      "rms": 0.11453808448300908
-    },
-    {
       "id": "voice-ives-act2-archive-door",
       "scene": "act2_archive_door",
       "speaker": "Ives",
@@ -1110,6 +1090,28 @@
       "durationSeconds": 4.786,
       "peak": 0.7199926755577257,
       "rms": 0.10176166160287375
+    },
+    {
+      "id": "voice-edda-service-key",
+      "scene": "act2_origin_spire",
+      "speaker": "Edda",
+      "voice": "af_kore",
+      "speed": 0.95,
+      "text": "They still bill my shifts against it. Get it out clean and take the receiver.",
+      "sceneSpeaker": "Ives",
+      "attribution": "\"I need the old maintenance key out of this terminal,\" Edda says.",
+      "language": "en-us",
+      "path": "public/audio/voice-edda-service-key.wav",
+      "sourceFile": "/workspace/generated_audio/voice-expansion/voice-edda-service-key.wav",
+      "sourceSha256": "766039796a353218665fd35427881a06312150be244d036ee0e0730e7cd5f550",
+      "sha256": "3dc89b7b44452079da65d4a3c1f01847340c32922f3fd0e275554bf828075ab0",
+      "bytes": 250762,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 5.223291666666666,
+      "peak": 0.7199926755577257,
+      "rms": 0.12888865430635754
     }
   ],
   "generationEnvironment": {
@@ -1120,5 +1122,12 @@
     "phonemizer": "3.4.0",
     "espeakng-loader": "0.2.4",
     "soundfile": "0.14.0"
-  }
+  },
+  "discardedCandidates": [
+    {
+      "id": "voice-ives-act2-origin-spire",
+      "sha256": "3a27064ce7c8f767da513441ab8cf980eedd9505147402137e489fa806c0838a",
+      "reason": "Quote explicitly belongs to Edda, while the scene primary portrait is Ives. Replaced before release by attributed Edda delivery; game state unchanged."
+    }
+  ]
 }

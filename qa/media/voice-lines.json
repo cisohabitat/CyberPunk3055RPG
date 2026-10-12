@@ -412,12 +412,14 @@
     "text": "No speeches. Put your shoulder here. Someone has to sleep upstairs tonight."
   },
   {
-    "id": "voice-ives-act2-origin-spire",
+    "id": "voice-edda-service-key",
     "scene": "act2_origin_spire",
-    "speaker": "Ives",
-    "voice": "am_eric",
-    "speed": 0.98,
-    "text": "They still bill my shifts against it. Get it out clean and take the receiver."
+    "speaker": "Edda",
+    "voice": "af_kore",
+    "speed": 0.95,
+    "text": "They still bill my shifts against it. Get it out clean and take the receiver.",
+    "sceneSpeaker": "Ives",
+    "attribution": "\"I need the old maintenance key out of this terminal,\" Edda says."
   },
   {
     "id": "voice-ives-act2-archive-door",

@@ -8,7 +8,7 @@ Returning players retain their saved Sound off and zero voice volume choices, in
 
 There are 45 fixed stock synthetic quotations, up from 22. All 22 earlier delivery files remain byte-identical. The 23 additions cover Quill's advance, negotiation, routes and ownership answer; Lumen's introduction; Mara's reason and recorded interview; Kerr's confrontation; the three origin contracts; archive access; clinic notice work; the Week's Kerr/Lumen conversations; Nia's transfer terms; checkpoint and breach recovery; Nia's later contact boundary; and Lumen's burned-hour response.
 
-These are existing authored quotations, spoken with the established seven character voice identities. They do not introduce new story choices, outcomes or scenes. Existing suitable portraits and illustrations accompany the scenes. A conditional line is selected only when the visible quotation and scene speaker match; a scene's declared speaker is not permission to voice another character's quotation.
+These are existing authored quotations, spoken with the seven established character voice identities plus Edda’s distinct stock voice. They do not introduce new story choices, outcomes or scenes. Existing suitable portraits and illustrations accompany the scenes. A conditional line is selected only when the visible quotation and scene speaker match; a scene's declared speaker is not permission to voice another character's quotation.
 
 ## Playback behavior
 
@@ -50,3 +50,9 @@ The first compressed candidate’s CI build failed in Next’s Google-font URL p
 ### Recorded-roll reload readiness
 
 The first full suite on the bundled-font candidate passed 991/992 checks. One WebKit saved-roll reload timed out waiting for window.load after navigation. Its readiness wait now uses DOMContentLoaded and actionable Continue/check controls, retaining every original pending-roll assertion and checking that the committed die equals the stored die. The regression deliberately holds font requests during restoration, proving optional fonts cannot prevent continuing the recorded outcome. Three repeated runs passed in each local Chromium, phone and WebKit profile; the release still requires the full four-browser suite. Runtime game behavior and media files are unchanged by this test correction.
+
+### Speaker attribution and campaign automation
+
+Edda explicitly speaks the Spire service-desk quotation while Ives is the primary scene portrait. A misassigned Ives candidate was discarded before release. The replacement uses Edda’s stock af_kore voice, an authored primary-scene binding and the exact visible attribution marker. Both marker and quote must be revealed; no story, met-character or consent flags change. All 22 earlier delivery hashes remain unchanged.
+
+A subsequent full suite again passed 991/992 checks; the older uninterrupted-campaign test exceeded its 60-second whole-route watchdog near the finale on WebKit. This same timeout occurred before the voice expansion. Its campaign watchdog is now 120 seconds while each action remains bounded to ten seconds and each persisted state is checked against the authoritative engine, retaining all final evidence, item, witness and ending assertions. Three repeated runs passed in each local desktop Chromium, phone and WebKit profile. These automation limits are not field responsiveness measurements.

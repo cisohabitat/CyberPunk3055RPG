@@ -3,7 +3,7 @@ import type { GameState } from "./types";
 
 export type DialogueLine = typeof lines[number];
 export function visibleDialogue(sceneId: string, speaker: string | undefined, visibleText: string): DialogueLine | undefined {
-  return lines.find((line) => line.scene === sceneId && line.speaker === speaker && visibleText.includes(line.text));
+  return lines.find((line) => line.scene === sceneId && (line.sceneSpeaker ?? line.speaker) === speaker && visibleText.includes(line.text) && (!line.attribution || visibleText.includes(line.attribution)));
 }
 export function memoryInteractionCue(before: GameState, choiceId: string, after: GameState): string | undefined {
   if (before.sceneId === "memory_sequence" && choiceId.startsWith("place-")) return "memory-place";

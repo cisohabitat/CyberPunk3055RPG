@@ -1,7 +1,7 @@
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { keyboardActivate } from "../qa/production/keyboard";
-import { createCharacter } from "../lib/engine";
+import { commitChoice, createCharacter, getScene, presentChoices } from "../lib/engine";
 import type { GameState } from "../lib/types";
 import { exportRun } from "../lib/vault";
 
@@ -536,16 +536,23 @@ test("automated accessibility checks for scene and settings", async ({ page }) =
 });
 
 test("plays an uninterrupted campaign through evidence, practice, a contract and witness safety", async ({ page }) => {
-  test.setTimeout(60_000);
+  test.setTimeout(120_000);
   const errors: string[] = []; page.on("pageerror", (error) => errors.push(error.message));
   await page.addInitScript(() => { Math.random = () => 0.75; });
   await openRun(page);
+  let expected = fixture();
   const route = ["ask-pay", "haggle", "pocket", "accept", "side", "spoof-door", "go", "honest", "pact-copy", "copy", "heard", "inspect-hour", "inspect-signature", "inspect-order", "inspect-roster", "reconstruct", "separate-decisions", "label-unverified", "seal-witness", "talk-leave", "both", "week-after", "into-week", "practice", "learn-ghost", "read-board", "origin-contract", "clear-key", "return-board", "to-lumen", "hear-lumen", "walk-with-her", "protect-witness", "agree-terms", "use-existing-plan", "pay-room", "review-account", "file-account", "stand", "back-to-board", "to-the-wall", "to-ward-nine", "visit-nia", "acknowledge-nia", "face-sera", "read-names"];
   for (const id of route) {
-    await page.getByTestId(`choice-${id}`).click();
-    if (await page.getByTestId("roll-button").count()) {
-      await page.getByTestId("roll-button").click(); await page.getByTestId("continue-check").click();
+    const choice = presentChoices(expected, getScene(expected.sceneId)).find(choice => choice.id === id && choice.enabled)!;
+    expect(choice, `${expected.sceneId}/${id}`).toBeDefined();
+    expected = commitChoice(expected, choice, choice.check ? { roll: 8 } : undefined).state;
+    await page.getByTestId(`choice-${id}`).click({ timeout: 10_000 });
+    if (choice.check) {
+      await page.getByTestId("roll-button").click({ timeout: 10_000 }); await page.getByTestId("continue-check").click({ timeout: 10_000 });
     }
+    // Verify every persisted outcome, not just the final flags. Each action and
+    // state assertion remains bounded independently of the campaign watchdog.
+    await expect.poll(() => page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!))).toEqual(expected);
   }
   await expect(page.getByTestId("ending-title")).toBeVisible();
   await expect(page.locator(".aftermath")).toContainText("Nia");
