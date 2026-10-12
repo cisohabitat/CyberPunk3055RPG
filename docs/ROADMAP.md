@@ -1,6 +1,6 @@
 # Saint Shard roadmap: 8.2 to a supported 9+
 
-Updated 11 October 2026. Current candidate: 195 scenes, 579 choices and 111 deterministic replay routes. The latest **provisional internal weighted grade is 8.2/10**; historical assessments remain in [the review](REVIEW.md). Simulated play is the primary development proxy while independent participants are unavailable. It supports development decisions and provisional grading without inventing human participation.
+Updated 12 October 2026. Current candidate: 197 scenes, 587 choices and 133 deterministic replay routes. The latest **provisional internal weighted grade is 8.2/10**; historical assessments remain in [the review](REVIEW.md). Simulated play is the primary development proxy while independent participants are unavailable. It supports development decisions and provisional grading without inventing human participation.
 
 This roadmap improves the existing browser narrative RPG. The [funded AAA production program](AAA_PRODUCTION_PLAN.md) remains the separate 24–30 month proposal for staffing, expanded campaign scope, commissions, localization and launch support. Completing development cycles does not complete that larger program or guarantee a review score.
 
@@ -10,16 +10,16 @@ Use the existing review weights. Targets guide review; they are not predicted in
 
 | Area | Weight | Current internal grade | Review target | Required improvement |
 | --- | --- | --- | --- | --- |
-| Narrative and consequence | 20% | 8.2 | 9.5 | Strong dramatic throughline, distinct voices, less repeated explanation, satisfying delayed responses |
+| Narrative and consequence | 20% | 8.3 | 9.5 | Strong dramatic throughline, distinct voices, less repeated explanation, satisfying delayed responses |
 | RPG depth and replay | 20% | 7.8 | 9.5 | Recognizable build methods and outcomes, legible tradeoffs, varied interactive encounters |
 | Visual presentation | 15% | 7.8 | 9.3 | Expressive staging, stronger visual storytelling, complete cast and asset review |
 | Audio production | 10% | 7.5 | 9.2 | Expressive principal dialogue, varied score states, location identity and mix review |
 | Usability and accessibility | 15% | 8.4 | 9.3 | Clear decisions and journal, easier long investigations, device and manual accessibility review |
 | Engineering and release | 20% | 9.0 | 9.2 | Preserve reliability and release predictability, establish supported-device performance |
 
-Current weighted total: **8.18**, rounded to 8.2. Target weighted total: **9.35**, with every area at least 9.0. Weighted shortfalls are RPG depth 0.34, narrative 0.26, visuals 0.225, audio 0.17, usability 0.135 and engineering 0.04. More scenes and automated checks alone do not raise these grades.
+Current weighted total: **8.20**, rounded to 8.2. Target weighted total: **9.35**, with every area at least 9.0. Weighted shortfalls are RPG depth 0.34, narrative 0.24, visuals 0.225, audio 0.17, usability 0.135 and engineering 0.04. More scenes and automated checks alone do not raise these grades.
 
-The ten internal implementation cycles below have shipped their respective work; independent acceptance remains separate. The [latest narrative cycle](STORY_CLARITY_CYCLE.md) makes skipped-opening stakes and Week consequences explicit. Next, compare builds across the Chapel, witness transfer and Kerr collection with matched resources and failures; revise choices that still converge. Then strengthen staging and audio for the stable scenes and repeat simulated full-campaign review. Continue this findings-led loop without requiring participant recruitment to advance development.
+The ten foundation cycles below have shipped their respective work; independent acceptance remains separate. The latest [character-presence cycle](CHARACTER_PRESENCE_CYCLE.md) adds a personal company/dispatch tradeoff and preserves its delayed intake consequence after contrasting prepared and scarce-budget campaigns. Next direct performance and mix for stable character moments, then revisit full-campaign pacing and build balance. Continue this findings-led loop with complete simulated play without requiring participant recruitment to advance development.
 
 ## Delivery order and capacity
 
@@ -238,4 +238,6 @@ The [scarce-investigation cycle](SCARCE_INVESTIGATION_CYCLE.md) adds free pause/
 
 The [finale continuity cycle](FINALE_CONTINUITY_CYCLE.md) follows failure-heavy paths through all four endings. Memorial action no longer implies publication; filed and withdrawn accounts, unused quotation permission, source originals and the private witness ledger keep their actual scope. The revised full-game internal grade remains 8.2: the weakest categories are still audiovisual craft and encounter variety.
 
-Next delivery: build one character-led encounter with a mutually exclusive practical sacrifice and delayed response, using a decision structure beyond the repeated terms/preparation/check pattern. Contrast a prepared build and a scarce-budget failure route through the whole campaign; neither restored trust nor witness permission should follow automatically. Ship suitable scene art and directed sound where the moment needs them. Then address performance/mix direction, campaign pacing and build balance in separate measured phases. Each phase includes complete proxy play, source/save checks, a reviewed craft assessment and exact-commit CI/public verification before release. The full above-9.0 production plan and category targets remain the long-term standard.
+The [character-presence cycle](CHARACTER_PRESENCE_CYCLE.md) turns Mara’s quiet answer into an optional resource/dispatch/company decision. Four immediate approaches lead to distinct personal memories; a sealed reply misses the current intake batch and can still be sent later. The new window illustration and continuous quiet clinic sound accompany this human-scale moment. Original campaign states and retells remain compatible. Narrative craft is provisionally 8.3, while the rounded weighted whole-game grade remains 8.2.
+
+Next delivery: performance and mix direction for the new Mara moment and two existing character turning points. Compare restrained phrase delivery and room balance, retain fixed readable transcripts and explicit playback, and play prepared/failed campaigns with interruption and silent/text-only parity. Generated/synthetic candidates can improve the available build without being represented as commissioned performances. Then revise whole-campaign pacing and build balance in separate phases, using complete proxy play, reviewed craft assessment, exact-SHA CI and public verification for each release. The full 9.35 production target and category floors remain the long-term standard.

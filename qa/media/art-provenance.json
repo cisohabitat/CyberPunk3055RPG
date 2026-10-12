@@ -918,6 +918,35 @@
         }
       ],
       "reviewStatus": "Internal character/composition inspection; independent art and distribution-rights acceptance pending."
+    },
+    {
+      "id": "mara-window",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-12",
+      "sourceFile": "/workspace/generated_images/exec-f37a8c3d-5d5f-496f-97f1-a2116509b076.png",
+      "sourceSha256": "d94c2a757f5f21ac401a0d383e6b6de733af9ae6f51b10de5b4017a0f81fb518",
+      "referenceFiles": [
+        "public/art/mara-present.jpg"
+      ],
+      "referenceSha256": "c981bd1f21bfe996d6493e78987b4cffd63c06954d8d7be945a5799216866337",
+      "promptSummary": "Closer clinic-window portrait of the same fictional Mara holding an ordinary cup, with an empty visitor chair and no papers, recorder or implied outcome. Original painted noir, petroleum blue and restrained amber; character agency without acquittal or restored trust.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained at sourceFile. Existing generated Mara reference retains its inherited undocumented portrait-source provenance caveat.",
+      "files": [
+        {
+          "path": "public/art/mara-window.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 217590,
+          "sha256": "493ae2aa5f2c324140ed8639d3acf04b27e2c7fa5661a7a3ea0c0c2c4beb38bc"
+        },
+        {
+          "path": "public/art/mara-window-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 56039,
+          "sha256": "0b1738ccbe2a137b9fba8b94c1b9af37767175daf57ff8cb356e17f8fffd151a"
+        }
+      ]
     }
   ]
 }

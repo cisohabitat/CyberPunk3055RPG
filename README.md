@@ -90,7 +90,7 @@ Read [AGENTS.md](AGENTS.md) before you change the story, the rules, the screens,
 
 The deterministic score generator runs automatically before development, tests, and production builds. The chapel and ward beds and memory cue are generated assets; keep their source in `scripts/generate-audio.mjs`.
 
-The six-phase status and remaining production milestones are tracked in [docs/ROADMAP.md](docs/ROADMAP.md). The candidate contains 171 scenes and 477 choices; retain all four original finales.
+The six-phase status and remaining production milestones are tracked in [docs/ROADMAP.md](docs/ROADMAP.md). The current candidate contains 197 scenes and 587 choices; retain all four original finales.
 
 This review adds a compact commitments panel, contextual next steps, and warnings on week-closing choices when a memory promise remains open. The memory bench places inspection controls in each fragment row and expands inspected source details on request. Archive preservation alone is not independent verification; exposed-location testimony can corroborate an order without protecting its witness. Motion and reading pace are independent settings. Story shortcuts ignore key repeats and focus inside the character sheet. Manual slots reject invalid date metadata. See [the current review and grade](docs/REVIEW.md).
 
@@ -410,3 +410,12 @@ Speaking the memorial names does not file a public hearing account. All four fac
 Ives takes the memorial page, while Sera keeps the separate private witness ledger. Archive originals and approved recordings retain their recorded custody and publication terms; quotation permission for a withdrawn draft does not open that recording to circulation. The handover preview and both voluntary/failed-interruption endings state this scope. Existing finale art, chapter beds and fixed quotations accompany these outcomes; no new scene or media asset is needed. Preserve version 2, `saint-shard-3055-v1`, recorded dice, 1d10, caps and all four original finales.
 
 See [the finale continuity cycle](docs/FINALE_CONTINUITY_CYCLE.md) and [current review](docs/REVIEW.md). Seven new authored full campaigns cover failures, corrected/withdrawn hearings and private custody. Source-familiar simulated play remains the available development proxy. The full-game internal grade stays 8.2; the next craft priority is encounter variety and audiovisual direction.
+
+
+## A chair beside the rain
+
+After Mara’s quiet answer, an optional window invitation gives company and private dispatch separate outcomes. Pay the existing fifteen-creds courier fee and stay, walk the reply at its ordinary one-strain cost and leave her hour alone, stay while the sealed reply misses the current intake batch, or decline company and arrange dispatch separately. Staying pending remains free; later dispatch can resume before the Week closes, and the subsequent intake slip records the next batch. These are authored scene events, with no real-time countdown.
+
+Mara’s later personal response, cast conduct and all four relationship codas remember the actual choice. The shared hour supplies no faction reward, treatment, acquittal, evidence or new witness permission. Original refusal, betrayal and exposure remain. Company outcomes and costs cannot be repeated; dispatch and receipt retain their separate commitments. Original acknowledgement/dispatch paths and existing saved rolls remain valid.
+
+Both new scenes have explicit art decisions and a new responsive clinic-window illustration with retained generation provenance. Existing quiet music and clinic ambience accompany them continuously, without voice autoplay; the fixed dialogue inventory is unchanged. Preserve silent/text-only play, visible goals, version 2, `saint-shard-3055-v1`, 1d10, caps and all four finales. The corpus now has 133 authored complete replay fixtures. See [the phase report](docs/CHARACTER_PRESENCE_CYCLE.md) and [updated review](docs/REVIEW.md). The rounded internal grade remains 8.2; performance/mix direction is next.

@@ -1655,3 +1655,38 @@ for (const action of ["read-names", "leave-wall", "let-ives", "say-anyway"]) tes
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
   expect((await new AxeBuilder({page}).withTags(["wcag2a","wcag2aa","wcag21aa"]).analyze()).violations).toEqual([]);
 });
+
+for(const [action,creds,width,none] of [["stay-with-mara-courier",15,390,false],["carry-reply-leave-mara",0,1440,false],["stay-with-mara-wait",0,320,true],["decline-mara-company",0,390,true]] as const) test(`Mara window choice retains company and dispatch through keyboard reload: ${action}`,async({page},testInfo)=>{
+ await page.setViewportSize({width,height:844});
+ await page.addInitScript(none=>localStorage.setItem("saint-shard-preferences",JSON.stringify({reading:"all",artwork:none?"none":"full",textStep:2,contrast:"high",motion:"reduce"})),none);
+ const art:string[]=[];page.on("request",r=>{if(r.url().includes("/art/"))art.push(r.url())});
+ await openRun(page,fixture("act2_mara_company",{creds,strain:2,flags:{heard_memo:true,response_started:true,response_private_consent:true,mara_quiet_heard:true,response_question_done:true}}));
+ await expect(page.getByTestId("goal")).toBeInViewport();
+ if(none)await expect(page.getByTestId("scene-illustration")).toHaveCount(0);else {
+  const image=page.getByTestId("scene-illustration").locator("img");expect(await image.evaluate((img:HTMLImageElement)=>img.decode().then(()=>img.naturalWidth))).toBeGreaterThan(0);
+  await page.screenshot({path:testInfo.outputPath("mara-window-choice.png"),fullPage:true});
+ }
+ if(!creds)await expect(page.getByTestId("choice-stay-with-mara-courier")).toBeDisabled();
+ await keyboardActivate(page,page.getByTestId(`choice-${action}`));await page.reload();await keyboardActivate(page,page.getByTestId("continue-run"));
+ let state=await page.evaluate(()=>JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));expect(state.creds).toBe(action==="stay-with-mara-courier"?0:creds);expect(state.strain).toBe(action==="carry-reply-leave-mara"?3:2);
+ if(action.startsWith("stay-")){
+  await expect(page.getByTestId("scene-text")).toContainText("cup");await keyboardActivate(page,page.getByTestId("choice-keep-mara-shared-hour"));
+  if(action==="stay-with-mara-wait"){
+   state=await page.evaluate(()=>JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));expect(state.flags.response_sent).toBeUndefined();
+   await keyboardActivate(page,page.getByTestId("choice-hear-mara-response"));await expect(page.getByTestId("choice-courier-private-response")).toBeDisabled();await keyboardActivate(page,page.getByTestId("choice-walk-private-response"));await expect(page.getByTestId("scene-text")).toContainText("next intake batch");
+  }
+ }else if(action==="decline-mara-company")await keyboardActivate(page,page.getByTestId("choice-walk-private-response"));
+ await keyboardActivate(page,page.getByTestId("choice-record-response-dispatch"));
+ await page.reload();await keyboardActivate(page,page.getByTestId("continue-run"));await expect(page.getByTestId("choice-hear-mara-response")).toHaveCount(0);
+ state=await page.evaluate(()=>JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));expect(state.flags.response_sent).toBe(true);expect(state.flags.response_received).toBeUndefined();expect(state.flags.order_verified).toBeUndefined();expect(state.flags.nia_public_consent).toBeUndefined();expect(state.flags.mara_company_kept).toBe(action.startsWith("stay-")?true:undefined);
+ const detail=(await new AxeBuilder({page}).withTags(["wcag2a","wcag2aa","wcag21aa"]).analyze());expect(detail.violations).toEqual([]);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);if(none)expect(art).toEqual([]);
+});
+
+test("Mara company keeps quiet music and clinic ambience continuous without voice autoplay",async({page})=>{
+ await observeBeds(page);const voices:string[]=[];page.on("request",r=>{if(r.url().includes("/audio/voice-"))voices.push(r.url())});
+ await openRun(page,fixture("act2_mara_company",{creds:15,flags:{heard_memo:true,response_started:true,response_private_consent:true,mara_quiet_heard:true,response_question_done:true}}));
+ await expect.poll(async()=>(await bedReview(page)).started).toContain("theme-quiet.wav");await expect.poll(async()=>(await bedReview(page)).started).toContain("ambience-clinic.wav");
+ await keyboardActivate(page,page.getByTestId("choice-stay-with-mara-courier"));await keyboardActivate(page,page.getByTestId("choice-keep-mara-shared-hour"));
+ const played=(await bedReview(page)).started;expect(played.filter(n=>n==="theme-quiet.wav")).toHaveLength(1);expect(played.filter(n=>n==="ambience-clinic.wav")).toHaveLength(1);expect(voices).toEqual([]);
+ const state=await page.evaluate(()=>JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));expect(state.creds).toBe(0);expect(state.flags.mara_company_kept).toBe(true);expect(state.flags.response_received).toBeUndefined();
+});

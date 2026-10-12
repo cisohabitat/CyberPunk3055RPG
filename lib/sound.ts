@@ -175,8 +175,8 @@ export function sceneMood(location: string, act = ""): SoundMood {
   if (value.includes("chapel") || value.includes("chair") || value.includes("memory")) return "chapel";
   return act === "The Week" ? "week" : "street";
 }
-const QUIET_SCENES = new Set(["act2_mara_quiet", "act2_lumen_quiet", "act3_lumen_boundary", "act3_mara_followup", "act3_kerr_personal_question", "act3_chapel_return", "ending_quiet"]);
-const CLINIC_SCENES = new Set(["act2_response_invitation", "act2_response_agenda", "act2_response_refusal", "act2_response_terms", "act2_response_dispatch", "act2_response_receipt", "act2_mara_quiet", "act2_lumen_quiet", "act3_response_visit", "act3_mara_followup", "act3_lumen_boundary"]);
+const QUIET_SCENES = new Set(["act2_mara_quiet", "act2_mara_company", "act2_mara_company_kept", "act2_lumen_quiet", "act3_lumen_boundary", "act3_mara_followup", "act3_kerr_personal_question", "act3_chapel_return", "ending_quiet"]);
+const CLINIC_SCENES = new Set(["act2_response_invitation", "act2_response_agenda", "act2_response_refusal", "act2_response_terms", "act2_response_dispatch", "act2_response_receipt", "act2_mara_quiet", "act2_mara_company", "act2_mara_company_kept", "act2_lumen_quiet", "act3_response_visit", "act3_mara_followup", "act3_lumen_boundary"]);
 const ROOM_SCENES: Readonly<Record<string, SoundDistrict>> = { stall: "stall", pay: "stall", pay_yes: "stall", pay_no: "stall", why: "stall", job_owner: "stall", act2_route_receipt: "stall", act2_witness_arrival: "witness" };
 /** Read-only staging. A saved allowance is pressure; no real-time clock is added. */
 export function sceneSoundPlan(state: GameState, location: string, act = ""): { mood: SoundMood; district: SoundDistrict } {

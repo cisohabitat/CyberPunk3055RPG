@@ -351,7 +351,7 @@
     {
       "treatment": "portrait",
       "asset": "/art/mara.jpg",
-      "reason": "Existing Mara portrait accompanies her present-day choices, refusal, personal hope and unfinished inquiry; it does not depict an acquired treatment result or absolution.",
+      "reason": "Existing Mara portrait supports the present-day hope, optional invitation, refusal and later personal response. A shared hour keeps its own record and grants no acquittal, source, treatment result or quotation permission; the actual new window moment has a dedicated neutral illustration.",
       "scenes": [
         "act2_response_refusal",
         "act2_response_terms",
@@ -536,6 +536,15 @@
       "reason": "The receipt scene observes Kerr checking the tag and closed brace case. Neutral guarded staging supplies no fitting, treatment, gratitude or forgiven privacy breach; actual registration terms and the separate conduct portrait retain authority.",
       "scenes": [
         "act2_route_receipt"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/mara-window.jpg",
+      "reason": "New character turning point: Mara chooses an ordinary cup orientation and invites company. The empty visitor chair, cup and rainy room show no chosen dispatch, paid courier, acquired testimony, restored trust or treatment. The same neutral plate fits a later shared hour; prose distinguishes a dispatched envelope from one still sealed.",
+      "scenes": [
+        "act2_mara_company",
+        "act2_mara_company_kept"
       ]
     }
   ],

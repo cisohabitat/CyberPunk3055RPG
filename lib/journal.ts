@@ -27,6 +27,7 @@ export const JOURNAL_TITLES: Record<string, string> = {
   "mara-response-terms": "Mara’s current private terms",
   "response-public-refusal": "Mara’s refusal of public release",
   "response-clinic-refusal": "Lumen’s refusal of endorsement",
+  "mara-window-choice": "Mara’s chosen window hour",
   "mara-tomorrow": "The morning Mara hopes for",
   "lumen-staying": "Why Lumen stays",
   "mara-response-dispatch": "The private dispatch stub",

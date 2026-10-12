@@ -1,0 +1,213 @@
+{
+  "method": "Source-familiar authored simulated play is the available proxy. Complete campaigns use actual creation, keyboard input, explicit dice and saved reloads, with no injected resources or flags during play. Separate browser tests begin at authored fixtures. Synthetic viewports, not physical-device or blind-session evidence. Raw state-bearing reports and screenshots remain outside Git.",
+  "baselineRevision": "275620c62862e366d5d16bc76bc9bb90eb29fe37",
+  "findings": [
+    "The existing quiet conversation ended in a single acknowledgement; courier and walked dispatch shared the same personal follow-up.",
+    "The first company candidate allowed unsent company then a walk without a lasting timing difference. Final scene/receipt now retain a missed intake batch and next-batch dispatch."
+  ],
+  "campaigns": [
+    {
+      "phase": "baseline",
+      "route": "baseline-prepared-courier",
+      "width": 1440,
+      "artwork": "full",
+      "visits": 75,
+      "reloads": 22,
+      "tabs": 428,
+      "finale": "ending_quiet",
+      "creds": 375,
+      "strain": 1,
+      "pageErrors": 0,
+      "mediaErrors": 0
+    },
+    {
+      "phase": "baseline",
+      "route": "baseline-prepared-walk",
+      "width": 390,
+      "artwork": "full",
+      "visits": 75,
+      "reloads": 22,
+      "tabs": 430,
+      "finale": "ending_quiet",
+      "creds": 390,
+      "strain": 2,
+      "pageErrors": 0,
+      "mediaErrors": 0
+    },
+    {
+      "phase": "baseline",
+      "route": "baseline-scarce-deferred",
+      "width": 320,
+      "artwork": "none",
+      "visits": 66,
+      "reloads": 47,
+      "tabs": 429,
+      "finale": "ending_quiet",
+      "creds": 0,
+      "strain": 5,
+      "pageErrors": 0,
+      "mediaErrors": 0
+    },
+    {
+      "phase": "baseline",
+      "route": "baseline-scarce-walk",
+      "width": 320,
+      "artwork": "none",
+      "visits": 67,
+      "reloads": 48,
+      "tabs": 432,
+      "finale": "ending_quiet",
+      "creds": 0,
+      "strain": 5,
+      "pageErrors": 0,
+      "mediaErrors": 0
+    },
+    {
+      "phase": "candidate",
+      "route": "mara-company-courier-stay",
+      "width": 1440,
+      "artwork": "full",
+      "visits": 76,
+      "reloads": 23,
+      "tabs": 431,
+      "finale": "ending_names",
+      "creds": 375,
+      "strain": 1,
+      "pageErrors": 0,
+      "mediaErrors": 0
+    },
+    {
+      "phase": "candidate",
+      "route": "mara-company-decline-company",
+      "width": 320,
+      "artwork": "none",
+      "visits": 76,
+      "reloads": 23,
+      "tabs": 442,
+      "finale": "ending_listed",
+      "creds": 470,
+      "strain": 2,
+      "pageErrors": 0,
+      "mediaErrors": 0
+    },
+    {
+      "phase": "candidate",
+      "route": "mara-company-scarce-leave",
+      "width": 320,
+      "artwork": "none",
+      "visits": 67,
+      "reloads": 48,
+      "tabs": 433,
+      "finale": "ending_quiet",
+      "creds": 0,
+      "strain": 5,
+      "pageErrors": 0,
+      "mediaErrors": 0
+    },
+    {
+      "phase": "candidate",
+      "route": "mara-company-scarce-resume",
+      "width": 390,
+      "artwork": "full",
+      "visits": 70,
+      "reloads": 51,
+      "tabs": 449,
+      "finale": "ending_quiet",
+      "creds": 0,
+      "strain": 5,
+      "pageErrors": 0,
+      "mediaErrors": 0
+    },
+    {
+      "phase": "candidate",
+      "route": "mara-company-scarce-stay",
+      "width": 1440,
+      "artwork": "full",
+      "visits": 67,
+      "reloads": 48,
+      "tabs": 430,
+      "finale": "ending_quiet",
+      "creds": 0,
+      "strain": 5,
+      "pageErrors": 0,
+      "mediaErrors": 0
+    },
+    {
+      "phase": "candidate",
+      "route": "mara-company-stay-later-courier",
+      "width": 1440,
+      "artwork": "full",
+      "visits": 78,
+      "reloads": 25,
+      "tabs": 447,
+      "finale": "ending_quiet",
+      "creds": 375,
+      "strain": 1,
+      "pageErrors": 0,
+      "mediaErrors": 0
+    },
+    {
+      "phase": "candidate",
+      "route": "mara-company-walk-leave",
+      "width": 390,
+      "artwork": "full",
+      "visits": 75,
+      "reloads": 22,
+      "tabs": 431,
+      "finale": "ending_witness",
+      "creds": 390,
+      "strain": 2,
+      "pageErrors": 0,
+      "mediaErrors": 0
+    }
+  ],
+  "counts": {
+    "baselineCampaigns": 4,
+    "baselineVisits": 283,
+    "baselineReloads": 139,
+    "candidateCampaigns": 7,
+    "candidateVisits": 509,
+    "candidateReloads": 240
+  },
+  "originalComparison": {
+    "method": "Original 126 authored full campaigns, identical pre-choice states and explicit dice. Two new scenes and an optional company choice are intentional. Existing labels, gates and destinations remain unchanged. The intake journal adds conditional batch wording for new company states only; original-route final states are compared exactly. Source-familiar simulated proxy, no blind-player claim.",
+    "originalRoutes": 126,
+    "originalVisits": 9028,
+    "existingFinalStatesUnchanged": true,
+    "finalStateDifferences": [],
+    "changedProseScenes": [],
+    "existingRetellChangedVisits": 0
+  },
+  "localVerification": {
+    "unitChecks": 477,
+    "focusedBrowserChecks": 15,
+    "profiles": [
+      "desktop Chromium",
+      "phone Chromium",
+      "WebKit"
+    ],
+    "typeScript": true,
+    "productionBuild": true,
+    "budgetViolations": [],
+    "replayFixtures": 133
+  },
+  "media": {
+    "newIllustration": "/art/mara-window.jpg",
+    "scenes": [
+      "act2_mara_company",
+      "act2_mara_company_kept"
+    ],
+    "responsiveSizes": [
+      1200,
+      600
+    ],
+    "audio": "Existing quiet theme and clinic ambience remain continuous, without voice autoplay; fixed quote inventory unchanged."
+  },
+  "grade": {
+    "narrative": 8.3,
+    "weighted": 8.2,
+    "roundedInternal": 8.2,
+    "basis": "Editorial comparison of practical company/dispatch sacrifice and distinct delayed personal responses against the acknowledgement-only baseline. Other categories unchanged."
+  },
+  "publication": "Exact-commit complete CI, four load probes and public checks remain release requirements before reporting publication."
+}

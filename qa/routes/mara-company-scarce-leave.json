@@ -1,0 +1,294 @@
+{
+  "name": "mara-company-scarce-leave",
+  "character": {
+    "handle": "Low Reserve",
+    "givenName": "Ada",
+    "origin": "dustline",
+    "complication": "debt",
+    "bonus": {
+      "chrome": 0,
+      "nerve": 0,
+      "face": 0,
+      "ghost": 2
+    },
+    "startWithPrologue": true
+  },
+  "steps": [
+    {
+      "choiceId": "begin-opening",
+      "reload": true
+    },
+    {
+      "choiceId": "opening-survival",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-stallholder",
+      "reload": true
+    },
+    {
+      "choiceId": "take-the-stool",
+      "reload": true
+    },
+    {
+      "choiceId": "ask-pay"
+    },
+    {
+      "choiceId": "haggle",
+      "roll": 1,
+      "reload": true
+    },
+    {
+      "choiceId": "sit-with-it"
+    },
+    {
+      "choiceId": "accept"
+    },
+    {
+      "choiceId": "side"
+    },
+    {
+      "choiceId": "spoof-door",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "go"
+    },
+    {
+      "choiceId": "honest"
+    },
+    {
+      "choiceId": "pact-copy"
+    },
+    {
+      "choiceId": "copy",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "heard"
+    },
+    {
+      "choiceId": "inspect-hour"
+    },
+    {
+      "choiceId": "inspect-signature"
+    },
+    {
+      "choiceId": "inspect-order"
+    },
+    {
+      "choiceId": "inspect-roster"
+    },
+    {
+      "choiceId": "reconstruct"
+    },
+    {
+      "choiceId": "separate-decisions"
+    },
+    {
+      "choiceId": "label-unverified"
+    },
+    {
+      "choiceId": "seal-witness"
+    },
+    {
+      "choiceId": "talk-leave",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "destroy"
+    },
+    {
+      "choiceId": "week-after"
+    },
+    {
+      "choiceId": "into-week",
+      "reload": true
+    },
+    {
+      "choiceId": "read-board",
+      "reload": true
+    },
+    {
+      "choiceId": "to-kerr",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-kerr",
+      "reload": true
+    },
+    {
+      "choiceId": "pay-kerr",
+      "reload": true
+    },
+    {
+      "choiceId": "answer-kerr-collection",
+      "reload": true
+    },
+    {
+      "choiceId": "promise-private-collection",
+      "reload": true
+    },
+    {
+      "choiceId": "route-entry-lift",
+      "reload": true
+    },
+    {
+      "choiceId": "route-exit-gap",
+      "reload": true
+    },
+    {
+      "choiceId": "depart-kerr-lift",
+      "reload": true
+    },
+    {
+      "choiceId": "route-use-gap",
+      "roll": 1,
+      "reload": true
+    },
+    {
+      "choiceId": "pause-kerr-recovery",
+      "reload": true
+    },
+    {
+      "choiceId": "protect-witness",
+      "reload": true
+    },
+    {
+      "choiceId": "agree-terms",
+      "reload": true
+    },
+    {
+      "choiceId": "use-existing-plan",
+      "reload": true
+    },
+    {
+      "choiceId": "slip-witness",
+      "roll": 1,
+      "reload": true
+    },
+    {
+      "choiceId": "registered-transfer",
+      "reload": true
+    },
+    {
+      "choiceId": "record-cost",
+      "reload": true
+    },
+    {
+      "choiceId": "repair-location",
+      "reload": true
+    },
+    {
+      "choiceId": "clinic-second-room",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-mara-response",
+      "reload": true
+    },
+    {
+      "choiceId": "listen-response-terms",
+      "reload": true
+    },
+    {
+      "choiceId": "propose-private-response",
+      "reload": true
+    },
+    {
+      "choiceId": "ask-mara-tomorrow",
+      "reload": true
+    },
+    {
+      "choiceId": "share-mara-window",
+      "reload": true
+    },
+    {
+      "choiceId": "carry-reply-leave-mara",
+      "reload": true
+    },
+    {
+      "choiceId": "record-response-dispatch",
+      "reload": true
+    },
+    {
+      "choiceId": "stand",
+      "reload": true
+    },
+    {
+      "choiceId": "back-to-board",
+      "reload": true
+    },
+    {
+      "choiceId": "to-the-wall",
+      "reload": true
+    },
+    {
+      "choiceId": "to-ward-nine",
+      "reload": true
+    },
+    {
+      "choiceId": "visit-nia",
+      "reload": true
+    },
+    {
+      "choiceId": "acknowledge-nia",
+      "reload": true
+    },
+    {
+      "choiceId": "face-sera",
+      "reload": true
+    },
+    {
+      "choiceId": "visit-kerr-collection",
+      "reload": true
+    },
+    {
+      "choiceId": "acknowledge-private-collection",
+      "reload": true
+    },
+    {
+      "choiceId": "visit-mara-response",
+      "reload": true
+    },
+    {
+      "choiceId": "read-response-intake",
+      "reload": true
+    },
+    {
+      "choiceId": "finish-mara-response",
+      "reload": true
+    },
+    {
+      "choiceId": "leave-wall",
+      "reload": true
+    }
+  ],
+  "expected": {
+    "sceneId": "ending_quiet",
+    "creds": 0,
+    "strain": 5,
+    "flags": {
+      "mara_company_chosen": true,
+      "mara_company_courier": false,
+      "mara_company_left": true,
+      "mara_company_waited": false,
+      "mara_company_declined": false,
+      "mara_company_kept": false,
+      "response_sent": true,
+      "response_received": true,
+      "order_verified": true,
+      "archive_key_authenticated": false,
+      "nia_public_consent": false,
+      "witness_lost": true,
+      "witness_relocated": true
+    },
+    "journal": [
+      "mara-window-choice",
+      "mara-tomorrow"
+    ]
+  }
+}
