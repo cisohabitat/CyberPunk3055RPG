@@ -1330,8 +1330,8 @@ test("memory timeline recovers a mismatch and retains a disputed verdict after r
 async function observeVoices(page: Page) {
   await page.addInitScript(() => {
     localStorage.setItem("saint-shard-preferences", JSON.stringify({ sound: true }));
-    const review = window as unknown as { voiceReview: { decoded: number; started: number; stopped: number; gains: number[] } };
-    review.voiceReview = { decoded: 0, started: 0, stopped: 0, gains: [] };
+    const review = window as unknown as { voiceReview: { decoded: number; started: number; stopped: number; gains: number[]; scheduled: { value: number; settling: number }[] } };
+    review.voiceReview = { decoded: 0, started: 0, stopped: 0, gains: [], scheduled: [] };
     const voices = new WeakSet<AudioBuffer>();
     const decode = AudioContext.prototype.decodeAudioData;
     AudioContext.prototype.decodeAudioData = function(data: ArrayBuffer) {
@@ -1343,10 +1343,10 @@ async function observeVoices(page: Page) {
     const stop = AudioBufferSourceNode.prototype.stop;
     AudioBufferSourceNode.prototype.stop = function(...args: Parameters<typeof stop>) { if (this.buffer && voices.has(this.buffer)) review.voiceReview.stopped++; return stop.apply(this, args); };
     const target = AudioParam.prototype.setTargetAtTime;
-    AudioParam.prototype.setTargetAtTime = function(...args: Parameters<typeof target>) { review.voiceReview.gains.push(args[0]); return target.apply(this, args); };
+    AudioParam.prototype.setTargetAtTime = function(...args: Parameters<typeof target>) { review.voiceReview.gains.push(args[0]); review.voiceReview.scheduled.push({ value: args[0], settling: args[2] }); return target.apply(this, args); };
   });
 }
-const voiceReview = (page: Page) => page.evaluate(() => (window as unknown as { voiceReview: { decoded: number; started: number; stopped: number; gains: number[] } }).voiceReview);
+const voiceReview = (page: Page) => page.evaluate(() => (window as unknown as { voiceReview: { decoded: number; started: number; stopped: number; gains: number[]; scheduled: { value: number; settling: number }[] } }).voiceReview);
 
 async function observeBeds(page: Page) {
   await page.addInitScript(() => {
@@ -1482,7 +1482,8 @@ test("selective voices follow visible text, duck the bed and retain separate vol
   expect(await page.locator("img.portrait").evaluate((img: HTMLImageElement) => img.decode().then(() => img.currentSrc))).toContain("lumen-challenging.jpg");
   await page.getByRole("button", { name: "Listen to Lumen" }).click();
   await expect.poll(async () => (await voiceReview(page)).started).toBe(1);
-  expect((await voiceReview(page)).gains).toContain(0.24);
+  expect((await voiceReview(page)).gains).toContain(0.6 * 0.28);
+  expect((await voiceReview(page)).gains).toContain(0.5 * 0.55);
   const gainsBeforeStop = (await voiceReview(page)).gains.length;
   await page.getByRole("button", { name: "Stop line" }).click();
   await expect.poll(async () => (await voiceReview(page)).stopped).toBeGreaterThan(0);
@@ -1493,6 +1494,45 @@ test("selective voices follow visible text, duck the bed and retain separate vol
   const prefs = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-preferences")!));
   expect(prefs.voices).toBe(1); expect(prefs.music).toBe(60); expect(prefs.effects).toBe(70);
   expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations).toEqual([]);
+});
+
+for (const [sceneId, speaker, voice, choiceId] of [
+  ["act2_mara_company", "Mara", "voice-mara-company", "stay-with-mara-wait"],
+  ["act2_lumen_quiet", "Lumen", "voice-lumen-staying", "keep-lumen-quiet-answer"],
+  ["act3_kerr_personal_question", "Kerr", "voice-kerr-personal", "keep-kerr-personal-answer"],
+] as const) test(`${speaker} personal voice reveals explicitly and restores the scene mix after end, Stop and departure`, async ({ page }) => {
+  await observeVoices(page);
+  const requests: string[] = []; page.on("request", request => { if (request.url().includes("/audio/voice-")) requests.push(request.url()); });
+  await openRun(page, fixture(sceneId, { flags: { response_private_consent: true, kerr_contact_open: true } }));
+  const saved = () => page.evaluate(() => localStorage.getItem("saint-shard-3055-v1"));
+  const before = await saved();
+  await expect(page.getByTestId("voice-line")).toHaveCount(0); expect(requests).toEqual([]);
+  await page.getByTestId("next-paragraph").click();
+  const listen = page.getByRole("button", { name: `Listen to ${speaker}`, exact: true });
+  await expect(listen).toBeVisible(); expect(requests).toEqual([]);
+  await listen.click(); await expect(page.getByTestId("voice-line")).toContainText("Playing selected dialogue");
+  expect(requests.at(-1)).toContain(`${voice}.wav`);
+  const ducked = (await voiceReview(page)).scheduled;
+  expect(ducked).toContainEqual({ value: 0.6 * 0.28, settling: 0.04 });
+  expect(ducked).toContainEqual({ value: 0.5 * 0.55, settling: 0.04 });
+  const atStop = ducked.length;
+  await page.getByRole("button", { name: "Stop line", exact: true }).click();
+  expect((await voiceReview(page)).scheduled.slice(atStop)).toContainEqual({ value: 0.6, settling: 0.18 });
+  expect((await voiceReview(page)).scheduled.slice(atStop)).toContainEqual({ value: 0.5, settling: 0.18 });
+  expect(await saved()).toBe(before);
+  await listen.click(); await expect(page.getByTestId("voice-line")).toContainText("Playing selected dialogue");
+  const atEnd = (await voiceReview(page)).scheduled.length;
+  await expect(listen).toBeVisible({ timeout: 20_000 });
+  expect((await voiceReview(page)).scheduled.slice(atEnd)).toContainEqual({ value: 0.6, settling: 0.18 });
+  expect((await voiceReview(page)).scheduled.slice(atEnd)).toContainEqual({ value: 0.5, settling: 0.18 });
+  expect(requests).toHaveLength(1); expect(await saved()).toBe(before);
+  await page.getByTestId("show-rest").click();
+  await listen.click(); await expect(page.getByTestId("voice-line")).toContainText("Playing selected dialogue");
+  const stopped = (await voiceReview(page)).stopped;
+  await page.getByTestId(`choice-${choiceId}`).click();
+  await expect.poll(async () => (await voiceReview(page)).stopped).toBeGreaterThan(stopped);
+  await expect(page.getByTestId("voice-line")).toHaveCount(0);
+  expect(requests).toHaveLength(1);
 });
 
 test("cancelling a loading voice prevents late playback after Sound off", async ({ page }) => {

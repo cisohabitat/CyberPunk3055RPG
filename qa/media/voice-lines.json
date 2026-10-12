@@ -45,7 +45,36 @@
     "speaker": "Sister Lumen",
     "voice": "af_heart",
     "speed": 0.93,
-    "text": "Because somebody should know which cup they take their tea in. Even when the city has made a case file out of them."
+    "text": "Because somebody should know which cup they take their tea in. Even when the city has made a case file out of them.",
+    "segments": [
+      { "text": "Because somebody should know which cup they take their tea in.", "speed": 0.96, "pauseAfter": 0.34 },
+      { "text": "Even when the city has made a case file out of them.", "speed": 0.93, "pauseAfter": 0 }
+    ]
+  },
+  {
+    "id": "voice-mara-company",
+    "scene": "act2_mara_company",
+    "speaker": "Mara",
+    "voice": "af_sarah",
+    "speed": 0.98,
+    "text": "Will you sit for a while? There's nothing to take down.",
+    "segments": [
+      { "text": "Will you sit for a while?", "speed": 0.97, "pauseAfter": 0.28 },
+      { "text": "There's nothing to take down.", "speed": 0.95, "pauseAfter": 0 }
+    ]
+  },
+  {
+    "id": "voice-kerr-personal",
+    "scene": "act3_kerr_personal_question",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.98,
+    "text": "One walk without counting the steps first. Not another door to stand in. Just the table where the rain doesn't land in the soup.",
+    "segments": [
+      { "text": "One walk without counting the steps first.", "speed": 0.94, "pauseAfter": 0.34 },
+      { "text": "Not another door to stand in.", "speed": 0.98, "pauseAfter": 0.27 },
+      { "text": "Just the table where the rain doesn't land in the soup.", "speed": 0.95, "pauseAfter": 0 }
+    ]
   },
   {
     "id": "voice-quill-offer",

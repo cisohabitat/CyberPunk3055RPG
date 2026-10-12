@@ -1,0 +1,218 @@
+{
+  "baselineRevision": "4ffec648b61e9983f6421cc08ce61110d56ad471",
+  "method": "Source-familiar authored full campaigns from actual creation through keyboard input, explicit dice and recorded-check reloads. Prepared/zero-credit states are earned; no injected resources. Fixed audible/silent pairs retain identical rendered character text and final aftermath. Not blind participants or physical hardware.",
+  "originalComparison": {
+    "method": "Identical pre-choice states from deterministic full-campaign fixtures; authored dice and retained source knowledge. Aggregate scene prose, excluding separately rendered finale retell. No reading-time or human-comprehension claim.",
+    "routes": 133,
+    "visits": 9537,
+    "canonicalDefinitionsUnchanged": true,
+    "finalStatesUnchanged": true,
+    "wordsBefore": 612024,
+    "wordsAfter": 612024,
+    "changePercent": 0,
+    "retellChangedVisits": 0,
+    "changedScenes": []
+  },
+  "completeCampaigns": [
+    {
+      "route": "qa/routes/performance-prepared.json",
+      "width": 390,
+      "artwork": "full",
+      "sound": true,
+      "visits": 92,
+      "reloads": 43,
+      "voices": 0,
+      "completedVoices": [],
+      "interruptions": 2,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 360,
+        "strain": 4,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "errors": [],
+      "failedMedia": [],
+      "phase": "baseline"
+    },
+    {
+      "route": "qa/routes/performance-prepared.json",
+      "width": 390,
+      "artwork": "full",
+      "sound": true,
+      "visits": 92,
+      "reloads": 43,
+      "voices": 2,
+      "completedVoices": [
+        "voice-mara-company.wav",
+        "voice-kerr-personal.wav"
+      ],
+      "interruptions": 2,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 360,
+        "strain": 4,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "errors": [],
+      "failedMedia": [],
+      "phase": "candidate-sound"
+    },
+    {
+      "route": "qa/routes/performance-prepared.json",
+      "width": 1440,
+      "artwork": "none",
+      "sound": false,
+      "visits": 92,
+      "reloads": 43,
+      "voices": 0,
+      "completedVoices": [],
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 360,
+        "strain": 4,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "errors": [],
+      "failedMedia": [],
+      "phase": "candidate-silent"
+    },
+    {
+      "route": "qa/routes/performance-scarce.json",
+      "width": 320,
+      "artwork": "none",
+      "sound": true,
+      "visits": 68,
+      "reloads": 49,
+      "voices": 1,
+      "completedVoices": [
+        "voice-lumen-staying.wav"
+      ],
+      "interruptions": 2,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 0,
+        "strain": 5,
+        "rolls": [
+          1,
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "errors": [],
+      "failedMedia": [],
+      "phase": "baseline"
+    },
+    {
+      "route": "qa/routes/performance-scarce.json",
+      "width": 390,
+      "artwork": "full",
+      "sound": true,
+      "visits": 68,
+      "reloads": 49,
+      "voices": 2,
+      "completedVoices": [
+        "voice-lumen-staying.wav",
+        "voice-kerr-personal.wav"
+      ],
+      "interruptions": 2,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 0,
+        "strain": 5,
+        "rolls": [
+          1,
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "errors": [],
+      "failedMedia": [],
+      "phase": "candidate-sound"
+    },
+    {
+      "route": "qa/routes/performance-scarce.json",
+      "width": 320,
+      "artwork": "none",
+      "sound": false,
+      "visits": 68,
+      "reloads": 49,
+      "voices": 0,
+      "completedVoices": [],
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 0,
+        "strain": 5,
+        "rolls": [
+          1,
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "errors": [],
+      "failedMedia": [],
+      "phase": "candidate-silent"
+    }
+  ],
+  "candidateVisits": 320,
+  "candidateReloads": 184,
+  "fixedVoices": 22,
+  "unchangedEarlierDeliveries": 19,
+  "localValidation": {
+    "unitReplayTests": 479,
+    "focusedBrowserChecks": 24,
+    "profiles": [
+      "chromium",
+      "phone",
+      "webkit"
+    ],
+    "typecheck": "pass",
+    "productionBuild": "pass",
+    "mediaBudgets": "pass",
+    "loadProbeSamples": 4,
+    "reachableVoicePlaybackChecks": 22,
+    "voiceScope": "All 22 reachable quotations: natural end, exact transcript, one fetch, cached replay, Stop, unchanged save bytes and complete Sound-off disposal."
+  },
+  "audition": {
+    "path": "qa/media/voice-performance-audition.json",
+    "intervals": 12,
+    "peak": 0.507758232367931
+  },
+  "grade": {
+    "overall": 8.2,
+    "audio": 7.5,
+    "status": "Provisional internal craft assessment; no new perceptual performance evidence."
+  },
+  "releaseRequirements": "Full exact-SHA CI including four browser profiles and four load probes, then exact-SHA Production and public complete campaigns. Captured outside Git after publishing."
+}

@@ -1,6 +1,6 @@
 {
   "disclosure": "Stock synthetic voices generated offline with Kokoro v1.0; no actor session or individual voice clone was commissioned. Only the fixed authored quotations below are rendered. No model or speech service ships in the game.",
-  "generated": "2026-10-11",
+  "generated": "2026-10-12",
   "source": "scripts/generate-voices.py",
   "driver": {
     "name": "kokoro-onnx",
@@ -30,7 +30,7 @@
     ]
   },
   "processing": "PCM16 mono master retained; optional exact-quotation phrase segments with bounded speed/pause and 8ms phrase edges; delivery peak normalized to 0.72, 8ms clip edges and 80ms head/tail silence.",
-  "reviewStatus": "Twenty stock synthetic voice candidates. Source and signal review, visible quotation and automated playback checks; no perceptual listening acceptance claimed. Three existing quotations receive explicit phrase spacing; six new visible quotations. Independent performance, physical-device and rights acceptance remain open.",
+  "reviewStatus": "Twenty-two stock synthetic fixed quotations. This cycle adds Mara\u2019s window invitation and Kerr\u2019s hoped-for walk, and phrases Lumen\u2019s existing answer. Established voice identities, exact visible text, bounded pauses, signal headroom and playback are reviewed. No perceptual listening, commissioned performance, physical-device or rights acceptance is claimed.",
   "lines": [
     {
       "id": "voice-mara-assurance",
@@ -139,18 +139,39 @@
       "voice": "af_heart",
       "speed": 0.93,
       "text": "Because somebody should know which cup they take their tea in. Even when the city has made a case file out of them.",
+      "segments": [
+        {
+          "text": "Because somebody should know which cup they take their tea in.",
+          "speed": 0.96,
+          "pauseAfter": 0.34
+        },
+        {
+          "text": "Even when the city has made a case file out of them.",
+          "speed": 0.93,
+          "pauseAfter": 0
+        }
+      ],
       "language": "en-us",
       "path": "public/audio/voice-lumen-staying.wav",
-      "sourceFile": "/workspace/generated_audio/voice-lumen-staying.wav",
-      "sourceSha256": "bd45f8d2924025f51b62bf63d948d086f9b2d573b14c1a71c0839316d79dc98c",
-      "sha256": "605d2f726f518badae76cea344a827b02dbf8998e9adc39ab09554887ecf3239",
-      "bytes": 313324,
+      "sourceFile": "/workspace/generated_audio/voice-performance/voice-lumen-staying.wav",
+      "sourceSha256": "a10549460c4a52a800d186ffca54c60324dab7cfae1bea806af1c6cbbdc8669c",
+      "sha256": "70ac47bfa9130e75cbc65c557b5268339f5b5c766c266cb5948854b9937c035e",
+      "bytes": 316682,
       "sampleRate": 24000,
       "channels": 1,
       "bits": 16,
-      "durationSeconds": 6.526666666666666,
-      "peak": 0.719970703125,
-      "rms": 0.09102882652851169
+      "durationSeconds": 6.596625,
+      "peak": 0.7199926755577257,
+      "rms": 0.0859151981345015,
+      "generated": "2026-10-12",
+      "direction": "Ordinary attention, then the human cost of being reduced to a file; keep care separate from endorsement.",
+      "superseded": {
+        "sha256": "605d2f726f518badae76cea344a827b02dbf8998e9adc39ab09554887ecf3239",
+        "sourceSha256": "bd45f8d2924025f51b62bf63d948d086f9b2d573b14c1a71c0839316d79dc98c",
+        "sourceFile": "/workspace/generated_audio/voice-lumen-staying.wav",
+        "durationSeconds": 6.526666666666666,
+        "revision": "4ffec648b61e9983f6421cc08ce61110d56ad471"
+      }
     },
     {
       "id": "voice-quill-offer",
@@ -556,6 +577,79 @@
       "durationSeconds": 3.5512916666666667,
       "peak": 0.7199926755577257,
       "rms": 0.09954326219280189
+    },
+    {
+      "id": "voice-mara-company",
+      "scene": "act2_mara_company",
+      "speaker": "Mara",
+      "voice": "af_sarah",
+      "speed": 0.98,
+      "text": "Will you sit for a while? There's nothing to take down.",
+      "segments": [
+        {
+          "text": "Will you sit for a while?",
+          "speed": 0.97,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "There's nothing to take down.",
+          "speed": 0.95,
+          "pauseAfter": 0
+        }
+      ],
+      "language": "en-us",
+      "path": "public/audio/voice-mara-company.wav",
+      "sourceFile": "/workspace/generated_audio/voice-performance/voice-mara-company.wav",
+      "sourceSha256": "a107998269a3958b2b75aa12b4d05b9c540abb098aa13b500d80d702f543c4a2",
+      "sha256": "2a856f430b4214530d5c558b0ffd10dc96d3892340cb7d0f1a6f1de514a4eb1d",
+      "bytes": 177226,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 3.691291666666667,
+      "peak": 0.7199926755577257,
+      "rms": 0.09368298901409401,
+      "generated": "2026-10-12",
+      "direction": "An invitation followed by reassurance; keep the established Mara voice. No promise of absolution or intake outcome."
+    },
+    {
+      "id": "voice-kerr-personal",
+      "scene": "act3_kerr_personal_question",
+      "speaker": "Kerr",
+      "voice": "am_adam",
+      "speed": 0.98,
+      "text": "One walk without counting the steps first. Not another door to stand in. Just the table where the rain doesn't land in the soup.",
+      "segments": [
+        {
+          "text": "One walk without counting the steps first.",
+          "speed": 0.94,
+          "pauseAfter": 0.34
+        },
+        {
+          "text": "Not another door to stand in.",
+          "speed": 0.98,
+          "pauseAfter": 0.27
+        },
+        {
+          "text": "Just the table where the rain doesn't land in the soup.",
+          "speed": 0.95,
+          "pauseAfter": 0
+        }
+      ],
+      "language": "en-us",
+      "path": "public/audio/voice-kerr-personal.wav",
+      "sourceFile": "/workspace/generated_audio/voice-performance/voice-kerr-personal.wav",
+      "sourceSha256": "2cfcd07fbbad477e5964ccfef05f75a2f691a308a9413190f6f3e255d805706c",
+      "sha256": "80cbd916e61aec0805355e60d70a792872db632ab6b8fe09c31d19a760c5303a",
+      "bytes": 383976,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 7.998583333333333,
+      "peak": 0.7199926755577257,
+      "rms": 0.08744241462830417,
+      "generated": "2026-10-12",
+      "direction": "A hoped-for ordinary walk; separate the former guard identity from the table he wants. No successful fitting or treatment is implied."
     }
   ],
   "generationEnvironment": {

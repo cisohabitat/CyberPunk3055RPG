@@ -23,7 +23,7 @@ it("local pressure follows the saved allowance, while quiet and ending identitie
   for (const flags of [{ chapel_window_started: true, chapel_window_0: true }, { chapel_window_started: true, chapel_window_3: true, chapel_window_done: true }, { chapel_window_started: true, chapel_window_0: true, chapel_window_3: true }, {}]) {
     assert.equal(sceneSoundPlan({ ...state, flags }, "Glass Chapel maintenance stair").mood, "chapel");
   }
-  assert.deepEqual(sceneSoundPlan({ ...base, sceneId: "act3_kerr_personal_question" }, "Ward Nine stall"), { mood: "quiet", district: "ward" });
+  assert.deepEqual(sceneSoundPlan({ ...base, sceneId: "act3_kerr_personal_question" }, "Ward Nine stall"), { mood: "quiet", district: "stall" });
   assert.deepEqual(sceneSoundPlan({ ...base, sceneId: "memo" }, "The chair room"), { mood: "reading", district: "chapel" });
   assert.deepEqual(sceneSoundPlan({ ...base, sceneId: "ending_quiet" }, "Ending"), { mood: "quiet", district: "ward" });
   assert.deepEqual(sceneSoundPlan({ ...base, sceneId: "ending_listed" }, "Ending"), { mood: "ward", district: "ward" });

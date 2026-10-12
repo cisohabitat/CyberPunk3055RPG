@@ -1,0 +1,236 @@
+{
+  "baselineRevision": "4ffec648b61e9983f6421cc08ce61110d56ad471",
+  "previewSha256": "b2fde1fb75dbac25260a0833c152f288fc0f14de73be057fc911f6dfb9c4b56d",
+  "rows": [
+    {
+      "label": "Lumen / previous delivery, dry default voice gain",
+      "startSeconds": 0.0,
+      "durationSeconds": 6.526666666666666,
+      "sourceSha256": {
+        "voice-lumen-staying-previous.wav": "605d2f726f518badae76cea344a827b02dbf8998e9adc39ab09554887ecf3239"
+      },
+      "district": null,
+      "speechDuck": null,
+      "peak": 0.503994872890408,
+      "voiceRms": 0.06372212321483167,
+      "musicRms": 0.0,
+      "ambienceRms": 0.0,
+      "bedRms": 0.0
+    },
+    {
+      "label": "lumen-staying / directed delivery, dry default voice gain",
+      "startSeconds": 7.526666666666666,
+      "durationSeconds": 6.596625,
+      "sourceSha256": {
+        "voice-lumen-staying.wav": "70ac47bfa9130e75cbc65c557b5268339f5b5c766c266cb5948854b9937c035e"
+      },
+      "district": null,
+      "speechDuck": null,
+      "peak": 0.503994872890408,
+      "voiceRms": 0.060140638694151045,
+      "musicRms": 0.0,
+      "ambienceRms": 0.0,
+      "bedRms": 0.0
+    },
+    {
+      "label": "mara-company / directed delivery, dry default voice gain",
+      "startSeconds": 15.123291666666667,
+      "durationSeconds": 3.691291666666667,
+      "sourceSha256": {
+        "voice-mara-company.wav": "2a856f430b4214530d5c558b0ffd10dc96d3892340cb7d0f1a6f1de514a4eb1d"
+      },
+      "district": null,
+      "speechDuck": null,
+      "peak": 0.503994872890408,
+      "voiceRms": 0.0655780923098658,
+      "musicRms": 0.0,
+      "ambienceRms": 0.0,
+      "bedRms": 0.0
+    },
+    {
+      "label": "kerr-personal / directed delivery, dry default voice gain",
+      "startSeconds": 19.814583333333335,
+      "durationSeconds": 7.998583333333333,
+      "sourceSha256": {
+        "voice-kerr-personal.wav": "80cbd916e61aec0805355e60d70a792872db632ab6b8fe09c31d19a760c5303a"
+      },
+      "district": null,
+      "speechDuck": null,
+      "peak": 0.503994872890408,
+      "voiceRms": 0.06120969023981291,
+      "musicRms": 0.0,
+      "ambienceRms": 0.0,
+      "bedRms": 0.0
+    },
+    {
+      "label": "Lumen / previous delivery and previous clinic mix",
+      "startSeconds": 28.813166666666667,
+      "durationSeconds": 6.526666666666666,
+      "sourceSha256": {
+        "voice-lumen-staying-previous.wav": "605d2f726f518badae76cea344a827b02dbf8998e9adc39ab09554887ecf3239",
+        "theme-quiet.wav": "e5a9abd81a987e04156ecc9cee14dff9e28036a2d700d1f8fa9e55bfbb2012e2",
+        "ambience-clinic.wav": "f57119d7216c7dada0d5d0293a3cdff4c9401af505eada3bb39793392ddfe1e6"
+      },
+      "district": "clinic",
+      "speechDuck": {
+        "music": 0.4,
+        "ambience": 0.4
+      },
+      "peak": 0.5076954481643082,
+      "voiceRms": 0.06372212321483167,
+      "musicRms": 0.004189819142608326,
+      "ambienceRms": 0.0008876726732781675,
+      "bedRms": 0.004292571509968771
+    },
+    {
+      "label": "Lumen / directed delivery, previous clinic mix",
+      "startSeconds": 36.33983333333333,
+      "durationSeconds": 6.596625,
+      "sourceSha256": {
+        "voice-lumen-staying.wav": "70ac47bfa9130e75cbc65c557b5268339f5b5c766c266cb5948854b9937c035e",
+        "theme-quiet.wav": "e5a9abd81a987e04156ecc9cee14dff9e28036a2d700d1f8fa9e55bfbb2012e2",
+        "ambience-clinic.wav": "f57119d7216c7dada0d5d0293a3cdff4c9401af505eada3bb39793392ddfe1e6"
+      },
+      "district": "clinic",
+      "speechDuck": {
+        "music": 0.4,
+        "ambience": 0.4
+      },
+      "peak": 0.4957955259865107,
+      "voiceRms": 0.060140638694151045,
+      "musicRms": 0.004182568115998576,
+      "ambienceRms": 0.0008872215279311401,
+      "bedRms": 0.004284457484502956
+    },
+    {
+      "label": "Lumen / directed delivery, revised clinic mix",
+      "startSeconds": 43.936458333333334,
+      "durationSeconds": 6.596625,
+      "sourceSha256": {
+        "voice-lumen-staying.wav": "70ac47bfa9130e75cbc65c557b5268339f5b5c766c266cb5948854b9937c035e",
+        "theme-quiet.wav": "e5a9abd81a987e04156ecc9cee14dff9e28036a2d700d1f8fa9e55bfbb2012e2",
+        "ambience-clinic.wav": "f57119d7216c7dada0d5d0293a3cdff4c9401af505eada3bb39793392ddfe1e6"
+      },
+      "district": "clinic",
+      "speechDuck": {
+        "music": 0.28,
+        "ambience": 0.55
+      },
+      "peak": 0.49687274086733585,
+      "voiceRms": 0.060140638694151045,
+      "musicRms": 0.0029277976811990032,
+      "ambienceRms": 0.0012199296009053177,
+      "bedRms": 0.00318322677100977
+    },
+    {
+      "label": "mara-company / same directed clip, previous mix and room",
+      "startSeconds": 51.53308333333333,
+      "durationSeconds": 3.691291666666667,
+      "sourceSha256": {
+        "voice-mara-company.wav": "2a856f430b4214530d5c558b0ffd10dc96d3892340cb7d0f1a6f1de514a4eb1d",
+        "theme-quiet.wav": "e5a9abd81a987e04156ecc9cee14dff9e28036a2d700d1f8fa9e55bfbb2012e2",
+        "ambience-clinic.wav": "f57119d7216c7dada0d5d0293a3cdff4c9401af505eada3bb39793392ddfe1e6"
+      },
+      "district": "clinic",
+      "speechDuck": {
+        "music": 0.4,
+        "ambience": 0.4
+      },
+      "peak": 0.5059546800134284,
+      "voiceRms": 0.0655780923098658,
+      "musicRms": 0.004766466733327265,
+      "ambienceRms": 0.0008963788075554863,
+      "bedRms": 0.004854517680274517
+    },
+    {
+      "label": "mara-company / same directed clip, revised mix and same room",
+      "startSeconds": 56.224375,
+      "durationSeconds": 3.691291666666667,
+      "sourceSha256": {
+        "voice-mara-company.wav": "2a856f430b4214530d5c558b0ffd10dc96d3892340cb7d0f1a6f1de514a4eb1d",
+        "theme-quiet.wav": "e5a9abd81a987e04156ecc9cee14dff9e28036a2d700d1f8fa9e55bfbb2012e2",
+        "ambience-clinic.wav": "f57119d7216c7dada0d5d0293a3cdff4c9401af505eada3bb39793392ddfe1e6"
+      },
+      "district": "clinic",
+      "speechDuck": {
+        "music": 0.28,
+        "ambience": 0.55
+      },
+      "peak": 0.505191607028413,
+      "voiceRms": 0.0655780923098658,
+      "musicRms": 0.003336526713329086,
+      "ambienceRms": 0.001232520860388794,
+      "bedRms": 0.0035627971361406304
+    },
+    {
+      "label": "kerr-personal / same directed clip, previous mix and room",
+      "startSeconds": 60.91566666666667,
+      "durationSeconds": 7.998583333333333,
+      "sourceSha256": {
+        "voice-kerr-personal.wav": "80cbd916e61aec0805355e60d70a792872db632ab6b8fe09c31d19a760c5303a",
+        "theme-quiet.wav": "e5a9abd81a987e04156ecc9cee14dff9e28036a2d700d1f8fa9e55bfbb2012e2",
+        "ambience-ward.wav": "98fd5bc52976a3f75b179b96f9fd30daecdd5ad3a299b1028ca33c8ee650a83e"
+      },
+      "district": "ward",
+      "speechDuck": {
+        "music": 0.4,
+        "ambience": 0.4
+      },
+      "peak": 0.507758232367931,
+      "voiceRms": 0.06120969023981291,
+      "musicRms": 0.004165766988552479,
+      "ambienceRms": 0.0005578848953016939,
+      "bedRms": 0.004202956114154145
+    },
+    {
+      "label": "kerr-personal / same directed clip, revised mix and same room",
+      "startSeconds": 69.91425,
+      "durationSeconds": 7.998583333333333,
+      "sourceSha256": {
+        "voice-kerr-personal.wav": "80cbd916e61aec0805355e60d70a792872db632ab6b8fe09c31d19a760c5303a",
+        "theme-quiet.wav": "e5a9abd81a987e04156ecc9cee14dff9e28036a2d700d1f8fa9e55bfbb2012e2",
+        "ambience-ward.wav": "98fd5bc52976a3f75b179b96f9fd30daecdd5ad3a299b1028ca33c8ee650a83e"
+      },
+      "district": "ward",
+      "speechDuck": {
+        "music": 0.28,
+        "ambience": 0.55
+      },
+      "peak": 0.5069877056184575,
+      "voiceRms": 0.06120969023981291,
+      "musicRms": 0.0029160368919867357,
+      "ambienceRms": 0.0007670917310398294,
+      "bedRms": 0.003015243140239556
+    },
+    {
+      "label": "Kerr / same directed clip, revised mix and closer stall room",
+      "startSeconds": 78.91283333333334,
+      "durationSeconds": 7.998583333333333,
+      "sourceSha256": {
+        "voice-kerr-personal.wav": "80cbd916e61aec0805355e60d70a792872db632ab6b8fe09c31d19a760c5303a",
+        "theme-quiet.wav": "e5a9abd81a987e04156ecc9cee14dff9e28036a2d700d1f8fa9e55bfbb2012e2",
+        "ambience-stall.wav": "d81d4661de5c02df80b2320d709ddedf7e3ca7de4f9c2ba856b408fb07be5882"
+      },
+      "district": "stall",
+      "speechDuck": {
+        "music": 0.28,
+        "ambience": 0.55
+      },
+      "peak": 0.5059073274941244,
+      "voiceRms": 0.06120969023981291,
+      "musicRms": 0.0029160368919867357,
+      "ambienceRms": 0.002005930113720109,
+      "bedRms": 0.0035452209684625697
+    }
+  ],
+  "mix": "Offline approximation of settled default buses: voice .7, quiet music .6*.5*duck, room .5*.35*duck. Dry intervals retain default voice gain. Runtime attack/release automation is verified separately.",
+  "runtimeMix": {
+    "speechDuck": {
+      "music": 0.28,
+      "ambience": 0.55
+    },
+    "attackSeconds": 0.04,
+    "releaseSeconds": 0.18
+  },
+  "limitations": "Source/signal comparison and labeled audition. Technical headroom does not establish perceptual comfort or emotional improvement. No human listening, physical-device, commissioned performance or rights acceptance claimed."
+}

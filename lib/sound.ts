@@ -1,6 +1,7 @@
 import type { Preferences } from "./preferences";
 import type { GameState } from "./types";
 import { windowRemaining } from "./chapel-window";
+import voiceMix from "../qa/media/voice-mix.json";
 
 export type SoundMood = "street" | "chapel" | "ward" | "week" | "reading" | "quiet" | "pressure";
 export type SoundDistrict = "street" | "chapel" | "spire" | "canal" | "ward" | "clinic" | "witness" | "stall";
@@ -36,8 +37,10 @@ function bus(channel: keyof typeof mix) {
   const audio = context();
   let gain = buses.get(channel);
   if (!gain) { gain = audio.createGain(); gain.connect(audio.destination); buses.set(channel, gain); }
-  const duck = speaking && (channel === "music" || channel === "ambience") ? 0.4 : 1;
-  gain.gain.setTargetAtTime(mix[channel] / 100 * duck, audio.currentTime, 0.04);
+  const bed = channel === "music" || channel === "ambience";
+  const duck = speaking && bed ? voiceMix.speechDuck[channel] : 1;
+  const settling = bed && !speaking ? voiceMix.releaseSeconds : voiceMix.attackSeconds;
+  gain.gain.setTargetAtTime(mix[channel] / 100 * duck, audio.currentTime, settling);
   return gain;
 }
 export function setAudioMix(value: Pick<Preferences, "music" | "ambience" | "effects" | "voices">) {
@@ -177,7 +180,7 @@ export function sceneMood(location: string, act = ""): SoundMood {
 }
 const QUIET_SCENES = new Set(["act2_mara_quiet", "act2_mara_company", "act2_mara_company_kept", "act2_lumen_quiet", "act3_lumen_boundary", "act3_mara_followup", "act3_kerr_personal_question", "act3_chapel_return", "ending_quiet"]);
 const CLINIC_SCENES = new Set(["act2_response_invitation", "act2_response_agenda", "act2_response_refusal", "act2_response_terms", "act2_response_dispatch", "act2_response_receipt", "act2_mara_quiet", "act2_mara_company", "act2_mara_company_kept", "act2_lumen_quiet", "act3_response_visit", "act3_mara_followup", "act3_lumen_boundary"]);
-const ROOM_SCENES: Readonly<Record<string, SoundDistrict>> = { stall: "stall", pay: "stall", pay_yes: "stall", pay_no: "stall", why: "stall", job_owner: "stall", act2_route_receipt: "stall", act2_witness_arrival: "witness" };
+const ROOM_SCENES: Readonly<Record<string, SoundDistrict>> = { stall: "stall", pay: "stall", pay_yes: "stall", pay_no: "stall", why: "stall", job_owner: "stall", act2_route_receipt: "stall", act3_kerr_personal_question: "stall", act2_witness_arrival: "witness" };
 /** Read-only staging. A saved allowance is pressure; no real-time clock is added. */
 export function sceneSoundPlan(state: GameState, location: string, act = ""): { mood: SoundMood; district: SoundDistrict } {
   const value = location.toLowerCase();
