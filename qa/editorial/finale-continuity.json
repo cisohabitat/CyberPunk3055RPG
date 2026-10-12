@@ -1,0 +1,226 @@
+{
+  "method": "Source-familiar simulated play is the available proxy. Authored complete campaigns use real character creation, keyboard input, explicit dice and actual reloads; no state or resources injected during those campaigns. Separate targeted browser regressions begin at authored fixtures. Synthetic viewports, not physical devices or blind sessions. Raw reports/screenshots remain outside Git.",
+  "baselineRevision": "6a7caa220e8af6669c23a3dfc44c7d6197674e7b",
+  "finding": [
+    "Speaking memorial names claimed a public account after no hearing or withdrawal.",
+    "Quiet departure described the report as unchallenged despite a corrected hearing remembered by attendees.",
+    "The corporate handover did not distinguish the memorial page from private witness ledger and independently held sources."
+  ],
+  "campaigns": [
+    {
+      "phase": "baseline",
+      "route": "finale-listed-archive",
+      "width": 390,
+      "artwork": "full",
+      "visits": 63,
+      "reloads": 12,
+      "tabs": 373,
+      "finale": "ending_listed",
+      "creds": 470,
+      "strain": 1,
+      "pageErrors": 0,
+      "mediaErrors": 0
+    },
+    {
+      "phase": "baseline",
+      "route": "finale-listed-private",
+      "width": 320,
+      "artwork": "none",
+      "visits": 63,
+      "reloads": 44,
+      "tabs": 419,
+      "finale": "ending_listed",
+      "creds": 180,
+      "strain": 5,
+      "pageErrors": 0,
+      "mediaErrors": 0
+    },
+    {
+      "phase": "baseline",
+      "route": "finale-names-consent-withdrawn",
+      "width": 1440,
+      "artwork": "full",
+      "visits": 61,
+      "reloads": 12,
+      "tabs": 362,
+      "finale": "ending_names",
+      "creds": 390,
+      "strain": 2,
+      "pageErrors": 0,
+      "mediaErrors": 0
+    },
+    {
+      "phase": "baseline",
+      "route": "finale-names-paused",
+      "width": 320,
+      "artwork": "none",
+      "visits": 57,
+      "reloads": 38,
+      "tabs": 379,
+      "finale": "ending_names",
+      "creds": 0,
+      "strain": 4,
+      "pageErrors": 0,
+      "mediaErrors": 0
+    },
+    {
+      "phase": "baseline",
+      "route": "finale-quiet-withdrawn",
+      "width": 390,
+      "artwork": "full",
+      "visits": 63,
+      "reloads": 44,
+      "tabs": 420,
+      "finale": "ending_quiet",
+      "creds": 0,
+      "strain": 5,
+      "pageErrors": 0,
+      "mediaErrors": 0
+    },
+    {
+      "phase": "baseline",
+      "route": "finale-witness-corrected",
+      "width": 1440,
+      "artwork": "full",
+      "visits": 68,
+      "reloads": 22,
+      "tabs": 434,
+      "finale": "ending_witness",
+      "creds": 330,
+      "strain": 3,
+      "pageErrors": 0,
+      "mediaErrors": 0
+    },
+    {
+      "phase": "candidate",
+      "route": "finale-listed-archive",
+      "width": 390,
+      "artwork": "full",
+      "visits": 63,
+      "reloads": 12,
+      "tabs": 373,
+      "finale": "ending_listed",
+      "creds": 470,
+      "strain": 1,
+      "pageErrors": 0,
+      "mediaErrors": 0
+    },
+    {
+      "phase": "candidate",
+      "route": "finale-listed-interrupted",
+      "width": 320,
+      "artwork": "none",
+      "visits": 63,
+      "reloads": 44,
+      "tabs": 420,
+      "finale": "ending_listed",
+      "creds": 180,
+      "strain": 5,
+      "pageErrors": 0,
+      "mediaErrors": 0
+    },
+    {
+      "phase": "candidate",
+      "route": "finale-listed-private",
+      "width": 320,
+      "artwork": "none",
+      "visits": 63,
+      "reloads": 44,
+      "tabs": 419,
+      "finale": "ending_listed",
+      "creds": 180,
+      "strain": 5,
+      "pageErrors": 0,
+      "mediaErrors": 0
+    },
+    {
+      "phase": "candidate",
+      "route": "finale-names-consent-withdrawn",
+      "width": 1440,
+      "artwork": "full",
+      "visits": 61,
+      "reloads": 12,
+      "tabs": 362,
+      "finale": "ending_names",
+      "creds": 390,
+      "strain": 2,
+      "pageErrors": 0,
+      "mediaErrors": 0
+    },
+    {
+      "phase": "candidate",
+      "route": "finale-names-paused",
+      "width": 320,
+      "artwork": "none",
+      "visits": 57,
+      "reloads": 38,
+      "tabs": 379,
+      "finale": "ending_names",
+      "creds": 0,
+      "strain": 4,
+      "pageErrors": 0,
+      "mediaErrors": 0
+    },
+    {
+      "phase": "candidate",
+      "route": "finale-quiet-withdrawn",
+      "width": 390,
+      "artwork": "full",
+      "visits": 63,
+      "reloads": 44,
+      "tabs": 420,
+      "finale": "ending_quiet",
+      "creds": 0,
+      "strain": 5,
+      "pageErrors": 0,
+      "mediaErrors": 0
+    },
+    {
+      "phase": "candidate",
+      "route": "finale-witness-corrected",
+      "width": 1440,
+      "artwork": "full",
+      "visits": 68,
+      "reloads": 22,
+      "tabs": 434,
+      "finale": "ending_witness",
+      "creds": 330,
+      "strain": 3,
+      "pageErrors": 0,
+      "mediaErrors": 0
+    }
+  ],
+  "originalComparison": {
+    "method": "Original 119 authored full campaigns, identical pre-choice states and explicit dice. One choice detail and ending prose changed intentionally; labels, gates, effects and destinations remain unchanged. Source-familiar simulated proxy, no blind-player claim.",
+    "originalRoutes": 119,
+    "originalVisits": 8590,
+    "existingFinalStatesUnchanged": true,
+    "finalStateDifferences": [],
+    "changedProseScenes": [
+      {
+        "scene": "ending_listed",
+        "visits": 4
+      }
+    ],
+    "existingRetellChangedVisits": 0
+  },
+  "localVerification": {
+    "unitChecks": 461,
+    "focusedBrowserChecks": 12,
+    "browserProfiles": [
+      "desktop Chromium",
+      "phone Chromium",
+      "WebKit"
+    ],
+    "typeScript": true,
+    "productionBuild": true,
+    "budgetViolations": [],
+    "replayFixtures": 126
+  },
+  "grade": {
+    "internal": 8.2,
+    "weighted": 8.18,
+    "basis": "Whole-game editorial reassessment; continuity correction does not change remaining encounter/visual/performance craft enough to increase the overall grade."
+  },
+  "publication": "Exact-commit full CI, four load probes and public checks are required before reporting release."
+}

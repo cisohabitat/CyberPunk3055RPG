@@ -21,11 +21,27 @@ export function memoryDisposition(state: GameState): string {
   if (FRAGMENTS.every((fragment) => state.flags[fragment.flag])) return "Sources inspected · account undecided";
   return "Unexamined hour";
 }
+function memorialAftermath(state: GameState): string {
+  const action = state.flags.spoke_names
+    ? "You spoke the memorial names. Sera keeps writing them beside the voices she has heard."
+    : state.flags.confirmed_leak
+      ? "You acknowledged the earlier leak beside the memorial. That admission supplies no new corroboration or witness permission."
+      : state.flags.ives_took_list
+        ? "Helion takes the memorial page. Sera keeps the private witness ledger and begins another page of names. Separately held sources keep their existing custody and publication terms."
+        : "You left without speaking the memorial names. Sera keeps restoring them.";
+  const hearing = state.flags.testimony_published
+    ? "Sera retains your filed public account with its source limits."
+    : state.flags.testimony_withdrawn
+      ? "You withdrew the hearing draft; attendees may remember what was said. The memorial choice does not publish that draft."
+      : "No final hearing account was filed. Earlier disclosures keep their existing scope.";
+  return `${action} ${hearing}`;
+}
+
 export function aftermath(state: GameState): { title: string; text: string }[] {
   const account = state.journal.some((entry) => entry.id === "nia-account");
   const heard = state.flags.heard_memo || state.journal.some((entry) => entry.id === "ward-nine");
   const rows = [
-    { title: "Ward Nine", text: state.flags.spoke_names ? "Sera places your testimony beside the names. Neighbors have a public account to challenge the maintenance report." : state.flags.confirmed_leak ? "Sera records where the leak began. The wards can trace a source beyond the tower's account." : state.flags.ives_took_list ? "Helion controls the paper list. Sera begins another from the people still willing to visit." : state.flags.testimony_published ? "Sera retains your public account and its source limits. You left the memorial without speaking the names; the inquiry still has a record." : "Sera keeps restoring the names without your testimony. The maintenance report remains unchallenged by you." },
+    { title: "Ward Nine", text: memorialAftermath(state) },
     { title: "Mara", text: state.flags.order_verified ? "Her signature and Helion's counter-order survive together. An investigator can distinguish her decision from the tower's later instruction." : state.flags.memory_intact ? "Her signature and the exported counter-order survive together. The issuing key remains unverified; preserving a receipt did not independently authenticate it." : state.flags.memory_redacted ? "Her signature survives with the worker locations withheld. The public account protects people and leaves a gap an investigator must explain." : heard ? "Her reason survives in your account. The tower's command chain still needs independent corroboration." : "You brought no recorded account of her decision to the wall. The tower's explanation remains unchallenged by you." },
   ];
   if (state.flags.memory_assurance_heard || state.flags.memory_channel_heard) rows.push({ title: "Mara’s answers", text: `${state.flags.memory_assurance_heard ? "Mara said she accepted a crew assignment without waiting for an exit count. Her account is retained as testimony, not a dispatch confirmation. " : ""}${state.flags.memory_channel_heard ? "She named a shift relay, not an independently identified dispatcher. " : ""}Questioning her did not erase her authorization or authenticate the cancellation.` });

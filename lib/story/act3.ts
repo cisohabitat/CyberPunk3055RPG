@@ -218,7 +218,7 @@ export const ACT3_SCENES: Record<string, Scene> = {
       {
         id: "let-ives",
         label: "Let Ives take the list.",
-        detail: "The folio was always going to want this wall.",
+        detail: "Ives takes the page of memorial names. Sera keeps the private witness ledger; separately held sources retain their custody and publication terms.",
         requireFlag: "on_file",
         requireAnyFlag: ["act2_deal"],
         effects: { flags: ["ives_took_list"], factions: { helion: 1, wards: -2 } },
@@ -254,7 +254,9 @@ export const ACT3_SCENES: Record<string, Scene> = {
     endingTitle: "On the Folio",
     speaker: "Ives",
     text: (state) =>
-      `Ives closes the list into the folio like it was always a Helion document that had been stored in the rain by mistake. Sera keeps the pencil. She does not keep the page.
+      `Ives closes the memorial list into the folio like it was always a Helion document that had been stored in the rain by mistake. Sera keeps the pencil. She does not keep the page.
+
+Her private witness ledger stays on the stair. ${state.flags.archive_custody ? "The archive original stays with Sera under its recorded source terms. " : ""}${state.journal.some(entry => entry.id === "nia-account") ? state.flags.testimony_published && state.flags.nia_public_consent ? "Nia’s approved words remain authorized only for the filed account, with her address withheld. " : "Nia’s recording stays outside public circulation. " : ""}Taking the memorial page opens no separately held source to Ives.
 
 ${state.handle} is still on file. Ward Nine is now a line item under resolved, which is the word the tower uses when it means owned.
 

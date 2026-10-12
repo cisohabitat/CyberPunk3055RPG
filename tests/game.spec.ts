@@ -1,5 +1,6 @@
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
+import { keyboardActivate } from "../qa/production/keyboard";
 import { createCharacter } from "../lib/engine";
 import type { GameState } from "../lib/types";
 import { exportRun } from "../lib/vault";
@@ -1629,4 +1630,28 @@ test("edited neighborhood return keeps choices and commitments through a narrow 
  expect((await new AxeBuilder({page}).withTags(["wcag2a","wcag2aa","wcag21aa"]).analyze()).violations).toEqual([]);
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);expect(artwork).toEqual([]);
  const run=await page.evaluate(()=>JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));expect(run.creds).toBe(0);expect(run.flags.visited_records).toBe(true);expect(run.flags.order_verified).toBeUndefined();expect(run.flags.witness_safe).toBeUndefined();
+});
+
+for (const action of ["read-names", "leave-wall", "let-ives", "say-anyway"]) test(`memorial scope survives a keyboard finale and reload: ${action}`, async ({page}) => {
+  await page.setViewportSize({width:320,height:844});
+  await page.addInitScript(() => { Math.random=()=>.05;localStorage.setItem("saint-shard-preferences",JSON.stringify({reading:"all",artwork:"none",textStep:2,contrast:"high",motion:"reduce"})); });
+  const run=fixture("act3_arrival",{flags:{heard_memo:true,on_file:true,act2_deal:true,testimony_done:true,testimony_withdrawn:true,nia_public_consent:true,witness_safe:true},journal:[{id:"ward-nine",text:"The memorial names.",kind:"fact"},{id:"nia-account",text:"An approved recording under private terms.",kind:"fact"}]});
+  await openRun(page,run);
+  await keyboardActivate(page,page.getByTestId(`choice-${action}`));
+  if(action==="say-anyway"){
+    await keyboardActivate(page,page.getByTestId("roll-button"));
+    await expect(page.getByTestId("continue-check")).toBeVisible();await page.reload();await page.getByTestId("continue-run").click();
+    await keyboardActivate(page,page.getByTestId("continue-check"));
+  }
+  await page.reload();await page.getByTestId("continue-run").click();
+  const details=page.getByTestId("aftermath-details");await keyboardActivate(page,details.locator("summary"));
+  await expect(details).toContainText("withdrew the hearing draft");await expect(details).not.toContainText("Neighbors have a public account");
+  if(action.includes("ives")||action==="say-anyway"){
+    await expect(page.getByTestId("scene-text")).toContainText("private witness ledger stays");
+    await expect(page.getByTestId("scene-text")).toContainText("recording stays outside public circulation");
+  }
+  const saved=await page.evaluate(()=>JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(saved.flags.testimony_published).toBeUndefined();expect(saved.flags.nia_public_consent).toBe(true);expect(saved.flags.archive_key_authenticated).toBeUndefined();
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+  expect((await new AxeBuilder({page}).withTags(["wcag2a","wcag2aa","wcag21aa"]).analyze()).violations).toEqual([]);
 });

@@ -401,3 +401,12 @@ The [investigation navigation cycle](docs/INVESTIGATION_NAVIGATION_CYCLE.md) rec
 A failed archive query can pause for free and resume at the same ledger desk through the canal before the Week closes. Pausing preserves the failed roll, strain, funds, exposure and unverified source record; it adds no authentication attempt or reward. The twenty-five-creds ledger and Spire employee-number routes retain their price or badge trace. Recording the gap closes the search; leaving the Week with it paused keeps an unfinished commitment and an honest factual aftermath. Later ledger corroboration stays separate from digital-key authentication and public quotation permission.
 
 The [scarce-investigation cycle](docs/SCARCE_INVESTIGATION_CYCLE.md) compares no-sale witness and archive campaigns across all three origins. Existing neutral archive setting art and sound accompany the paused desk; no new scene or media is required. Preserve version 2, `saint-shard-3055-v1`, recorded dice, 1d10 and caps, all four finales and text-only/silent play. The internal grade stays 8.2. Next: failure-heavy finale and source-custody continuity before a full-campaign regrade.
+
+
+## Memorial and hearing outcomes
+
+Speaking the memorial names does not file a public hearing account. All four factual finale recaps distinguish filed, withdrawn and unfiled hearing drafts from the memorial action. Withdrawal retains what attendees may remember; leaving quietly does not erase an earlier disclosure. Acknowledging the earlier leak supplies no new corroboration or witness permission.
+
+Ives takes the memorial page, while Sera keeps the separate private witness ledger. Archive originals and approved recordings retain their recorded custody and publication terms; quotation permission for a withdrawn draft does not open that recording to circulation. The handover preview and both voluntary/failed-interruption endings state this scope. Existing finale art, chapter beds and fixed quotations accompany these outcomes; no new scene or media asset is needed. Preserve version 2, `saint-shard-3055-v1`, recorded dice, 1d10, caps and all four original finales.
+
+See [the finale continuity cycle](docs/FINALE_CONTINUITY_CYCLE.md) and [current review](docs/REVIEW.md). Seven new authored full campaigns cover failures, corrected/withdrawn hearings and private custody. Source-familiar simulated play remains the available development proxy. The full-game internal grade stays 8.2; the next craft priority is encounter variety and audiovisual direction.
