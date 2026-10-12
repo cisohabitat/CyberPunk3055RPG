@@ -31,10 +31,10 @@ test("cycle 9 muted channels avoid requests and unmuting one starts only that ch
   await setup(page, fixture(), { music: 0, ambience: 0, effects: 0, voices: 0 });
   const before = await saved(page); await expect(page.getByTestId("scene-text")).toContainText("Ward Nine");
   expect(audio).toEqual([]); expect((await review(page)).liveSources).toBe(0);
-  await volume(page, "ambience", 1); await expect.poll(async () => (await review(page)).started).toContain("ambience-chapel.wav");
-  expect(audio).toEqual(["ambience-chapel.wav"]);
-  await volume(page, "music", 1); await expect.poll(async () => (await review(page)).started).toContain("theme-reading.wav");
-  expect(audio.sort()).toEqual(["ambience-chapel.wav", "theme-reading.wav"]);
+  await volume(page, "ambience", 1); await expect.poll(async () => (await review(page)).started).toContain("ambience-chapel.flac");
+  expect(audio).toEqual(["ambience-chapel.flac"]);
+  await volume(page, "music", 1); await expect.poll(async () => (await review(page)).started).toContain("theme-reading.flac");
+  expect(audio.sort()).toEqual(["ambience-chapel.flac", "theme-reading.flac"]);
   await volume(page, "music", 0); await expect.poll(async () => (await review(page)).liveSources).toBe(1);
   await volume(page, "ambience", 0); await expect.poll(async () => (await review(page)).liveSources).toBe(0);
   expect(await saved(page)).toEqual(before);

@@ -33,7 +33,7 @@ async function main() {
   for (const line of lines) if (!examples.has(line.id)) throw new Error(`No authored reachable example for ${line.id}`);
   const revision = execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8" }).trim();
   const dirty = Boolean(execFileSync("git", ["status", "--porcelain"], { encoding: "utf8" }).trim());
-  const testedSources = Object.fromEntries(["lib/sound.ts", "lib/engine.ts", "lib/memory-media.ts", "components/VoiceLine.tsx", "components/GameApp.tsx", "components/PlayScreen.tsx", "qa/production/keyboard.ts", "qa/production/audio-review.ts", "qa/media/voice-lines.json", "scripts/voice-validation.ts"].map(file => [file, createHash("sha256").update(readFileSync(file)).digest("hex")]));
+  const testedSources = Object.fromEntries(["lib/preferences.ts", "next.config.ts", "qa/media/bed-delivery.json", "lib/sound.ts", "lib/engine.ts", "lib/memory-media.ts", "components/VoiceLine.tsx", "components/GameApp.tsx", "components/PlayScreen.tsx", "qa/production/keyboard.ts", "qa/production/audio-review.ts", "qa/media/voice-lines.json", "scripts/voice-validation.ts"].map(file => [file, createHash("sha256").update(readFileSync(file)).digest("hex")]));
   const testedRoutes = Object.fromEntries([...new Set([...examples.values()].map(example => example.route))].map(file => [file, createHash("sha256").update(readFileSync(`qa/routes/${file}`)).digest("hex")]));
   const browser = await chromium.launch({ executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH, args: ["--no-sandbox"] });
   const rows: { id: string; route: string; durationSeconds: number; voiceRequests: number; liveSourcesAfterEnd: number; created: number; disposed: number }[] = [];

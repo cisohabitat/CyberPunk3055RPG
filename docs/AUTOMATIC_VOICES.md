@@ -29,10 +29,16 @@ The complete audition is [voice-expansion-preview.mp3](../qa/media/voice-expansi
 
 ## Verification
 
-The initial local candidate passed 485 unit/replay tests, TypeScript, a production build and media budgets (186 public media assets). The seven new automatic-dialogue scenarios passed on desktop Chromium, phone Chromium and WebKit (21 checks). Twenty-eight Chromium audio/sound regression checks passed, retaining explicit manual-mode coverage.
+The initial local candidate passed 485 unit/replay tests, TypeScript, a production build and media budgets (186 public media assets before the lossless bed deliveries). The seven new automatic-dialogue scenarios passed on desktop Chromium, phone Chromium and WebKit (21 checks). Twenty-eight Chromium audio/sound regression checks passed, retaining explicit manual-mode coverage.
 
 `npm run production:voices -- URL --automatic --out PATH` verifies all 45 reachable quotations through automatic start, natural completion, transcript parity, cached replay, Stop and mixer cleanup. Without `--automatic`, it exercises manual playback. `npm run production:experience` retains deliberate manual playback for its keyboard campaign checks. The deployment remains gated by the full four-browser CI suite.
 
 State-bearing browser results stay in private local QA outputs. Source-familiar simulated play remains the available development proxy. Technical playback and signal measurements do not establish pronunciation quality, emotional performance, human listening comfort or physical-device acceptance. The provisional internal grade remains 8.2; clip count alone does not raise it.
 
 Save version 2 and `saint-shard-3055-v1`, recorded pending dice, 1d10, stat/strain caps and all four original finales are unchanged.
+
+### Startup transfer correction
+
+Default Sound exposed an existing uncompressed-bed cost: the first desktop probe measured about 7 MB with illustrations, above the unchanged 2 MiB budget. Fifteen background beds now ship separate lossless FLAC files plus deterministic gzip HTTP transport, preserving every PCM sample and all original WAV masters. Next.js before-file rewrites and Content-Encoding headers serve the compressed transport at the FLAC URLs. Voice WAVs and the supplied title theme are unchanged. `qa/media/bed-delivery.json` records the hashes, encoder options and decoded PCM parity; the optional authoring script never runs in CI or builds. Browser checks exercise the actual FLAC URLs, decode, loop continuity, cancellation and source cleanup. A legacy notebook test explicitly selects manual, initially muted preferences before enabling Sound, preserving its original interruption assertion under the new defaults.
+
+The corrected local candidate passed 486 unit/replay checks, TypeScript and the production build. The four startup probes passed the unchanged 2 MiB budget: illustrated desktop measured 1,954,228 bytes, text-only desktop 1,035,552 bytes, illustrated phone 1,616,012 bytes and text-only phone 370,835 bytes. These are synthetic ready-to-play measurements, not field percentiles; resources still loading at that point are excluded. The public media inventory is 216 assets, with no per-asset budget violations.

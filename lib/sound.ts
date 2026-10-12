@@ -57,7 +57,7 @@ async function load(name: string) {
   const cached = cache.get(name); if (cached) { cache.delete(name); cache.set(name, cached); return cached; }
   const request = loading.get(name); if (request) return request;
   const pending = (async () => {
-    const extension = name === TITLE_MUSIC.name ? TITLE_MUSIC.extension : "wav";
+    const extension = name === TITLE_MUSIC.name ? TITLE_MUSIC.extension : name === "theme" || name.startsWith("theme-") || name.startsWith("ambience-") ? "flac" : "wav";
     const response = await fetch(`/audio/${name}.${extension}`);
     if (!response.ok) throw new Error("Audio unavailable");
     const buffer = await context().decodeAudioData(await response.arrayBuffer());

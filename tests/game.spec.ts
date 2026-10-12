@@ -612,7 +612,7 @@ test("optional audio loads the scene score after an explicit player gesture", as
   await page.addInitScript(() => localStorage.setItem("saint-shard-sound", "off"));
   await openRun(page, fixture("memory_table", { items: ["shard"], flags: { heard_memo: true } }));
   await page.getByRole("button", { name: "Settings", exact: true }).click();
-  const score = page.waitForResponse((response) => response.url().endsWith("/audio/theme-chapel.wav") && response.status() === 200);
+  const score = page.waitForResponse((response) => response.url().endsWith("/audio/theme-chapel.flac") && response.status() === 200);
   await page.getByLabel("Sound enabled", { exact: true }).check(); await score;
   await page.getByLabel("Sound enabled", { exact: true }).uncheck();
   await page.getByRole("button", { name: "Done", exact: true }).click();
@@ -693,7 +693,7 @@ test("a delayed audio resume cannot block optional score loading or play", async
   await page.addInitScript(() => localStorage.setItem("saint-shard-sound", "off"));
   await openRun(page, fixture("memory_table", { items: ["shard"], flags: { heard_memo: true } }));
   await page.getByRole("button", { name: "Settings", exact: true }).click();
-  const score = page.waitForResponse((response) => response.url().endsWith("/audio/theme-chapel.wav") && response.status() === 200);
+  const score = page.waitForResponse((response) => response.url().endsWith("/audio/theme-chapel.flac") && response.status() === 200);
   await page.getByLabel("Sound enabled", { exact: true }).check(); await score;
   await page.getByLabel("Sound enabled", { exact: true }).uncheck();
   await page.getByRole("button", { name: "Done", exact: true }).click();
@@ -933,7 +933,7 @@ test("district cards omit images in text-only mode and Week audio loads on deman
   await page.addInitScript(()=>localStorage.setItem("saint-shard-preferences",JSON.stringify({artwork:"none",sound:false})));
   await openRun(page,fixture("districts")); await expect(page.locator("img.card-art")).toHaveCount(0);
   await page.getByRole("button",{name:"Settings",exact:true}).click();
-  const response=page.waitForResponse(r=>r.url().endsWith("/audio/theme-week.wav")&&r.status()===200);
+  const response=page.waitForResponse(r=>r.url().endsWith("/audio/theme-week.flac")&&r.status()===200);
   await page.getByLabel("Sound enabled",{exact:true}).check(); await response;
   await page.getByLabel("Sound enabled",{exact:true}).uncheck(); await page.getByRole("button",{name:"Done",exact:true}).click();
   await page.getByTestId("choice-to-kerr").click(); await expect(page.getByTestId("choice-hear-kerr")).toBeVisible();
@@ -1439,7 +1439,7 @@ test("present-day room quotes follow refusal and handover terms without autoplay
   for (const [index, [sceneId, flags, speaker, voice, room]] of cases.entries()) {
     if (!index) await openRun(page, fixture(sceneId, { flags }));
     else { await page.evaluate(run => localStorage.setItem("saint-shard-3055-v1", JSON.stringify(run)), fixture(sceneId, { flags })); await page.reload(); await page.getByTestId("continue-run").click(); }
-    await expect.poll(async () => (await bedReview(page)).started).toContain(`ambience-${room}.wav`);
+    await expect.poll(async () => (await bedReview(page)).started).toContain(`ambience-${room}.flac`);
     const before = await page.evaluate(() => localStorage.getItem("saint-shard-3055-v1")), count = requests.length;
     const listen = page.getByRole("button", { name: `Listen to ${speaker}`, exact: true });
     await expect(listen).toBeVisible(); expect(requests.length).toBe(count);
@@ -1455,12 +1455,12 @@ test("present-day room quotes follow refusal and handover terms without autoplay
 
 test("leaving the clinic cancels its late ambience while the new district keeps playing", async ({ page }) => {
   await observeBeds(page); let release!: () => void; const gate = new Promise<void>(resolve => { release = resolve; });
-  await page.route("**/audio/ambience-clinic.wav", async route => { const response = await route.fetch(); await gate; await route.fulfill({ response }); });
+  await page.route("**/audio/ambience-clinic.flac", async route => { const response = await route.fetch(); await gate; await route.fulfill({ response }); });
   await openRun(page, fixture("act2_response_invitation"));
   await page.getByTestId("choice-decline-response-request").click();
-  await expect.poll(async () => (await bedReview(page)).started).toContain("theme-week.wav");
-  release(); await expect.poll(async () => (await bedReview(page)).decoded).toContain("ambience-clinic.wav");
-  expect((await bedReview(page)).started).not.toContain("ambience-clinic.wav");
+  await expect.poll(async () => (await bedReview(page)).started).toContain("theme-week.flac");
+  release(); await expect.poll(async () => (await bedReview(page)).decoded).toContain("ambience-clinic.flac");
+  expect((await bedReview(page)).started).not.toContain("ambience-clinic.flac");
   const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
   expect(run.flags.response_declined).toBe(true); expect(run.flags.response_sent).toBeUndefined();
 });
@@ -1468,15 +1468,15 @@ test("leaving the clinic cancels its late ambience while the new district keeps 
 test("directed audio follows the saved local window without spending or rerolling for sound", async ({ page }) => {
   await observeBeds(page); await page.addInitScript(() => { Math.random = () => .75; });
   await openRun(page, fixture("chapel_window_plan", { flags: { chapel_window_started: true, chapel_window_2: true, chapel_window_scouted: true } }));
-  await expect.poll(async () => (await bedReview(page)).started).toContain("theme-pressure.wav");
-  await expect.poll(async () => (await bedReview(page)).started).toContain("ambience-chapel.wav");
+  await expect.poll(async () => (await bedReview(page)).started).toContain("theme-pressure.flac");
+  await expect.poll(async () => (await bedReview(page)).started).toContain("ambience-chapel.flac");
   await page.getByTestId("choice-window-use-gap").click(); await page.getByTestId("roll-button").click();
   const recorded = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
   expect(recorded.pendingCheck.roll).toBe(8); expect(recorded.flags.chapel_window_2).toBe(true);
   await page.reload(); await page.getByTestId("continue-run").click(); await page.getByTestId("continue-check").click();
-  await expect.poll(async () => (await bedReview(page)).started).toContain("theme-pressure.wav");
+  await expect.poll(async () => (await bedReview(page)).started).toContain("theme-pressure.flac");
   await page.getByTestId("choice-window-quiet-exit").click();
-  await expect.poll(async () => (await bedReview(page)).started).toContain("theme-chapel.wav");
+  await expect.poll(async () => (await bedReview(page)).started).toContain("theme-chapel.flac");
   const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
   expect(run.flags.chapel_window_0).toBe(true); expect(run.flags.chapel_window_done).toBe(true); expect(run.pendingCheck).toBeUndefined();
   await page.getByRole("button", { name: "Settings", exact: true }).click(); await page.getByLabel("Sound enabled", { exact: true }).uncheck(); await page.getByRole("button", { name: "Done", exact: true }).click();
@@ -1485,32 +1485,32 @@ test("directed audio follows the saved local window without spending or rerollin
 
 test("directed audio cancels an obsolete pending bed without delaying the new district", async ({ page }) => {
   await observeBeds(page); let release!: () => void; const gate = new Promise<void>(resolve => { release = resolve; });
-  await page.route("**/audio/theme-pressure.wav", async route => { const response = await route.fetch(); await gate; await route.fulfill({ response }); });
+  await page.route("**/audio/theme-pressure.flac", async route => { const response = await route.fetch(); await gate; await route.fulfill({ response }); });
   await openRun(page, fixture("chapel_window_plan", { flags: { chapel_window_started: true, chapel_window_2: true } }));
   await page.getByTestId("choice-pause-chapel-window").click();
-  await expect.poll(async () => (await bedReview(page)).started).toContain("theme.wav");
-  release(); await expect.poll(async () => (await bedReview(page)).decoded).toContain("theme-pressure.wav");
-  expect((await bedReview(page)).started).not.toContain("theme-pressure.wav");
+  await expect.poll(async () => (await bedReview(page)).started).toContain("theme.flac");
+  release(); await expect.poll(async () => (await bedReview(page)).decoded).toContain("theme-pressure.flac");
+  expect((await bedReview(page)).started).not.toContain("theme-pressure.flac");
   const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!)); expect(run.flags.chapel_window_2).toBe(true);
 });
 
 test("directed audio returning to an active bed cancels a late pressure start", async ({ page }) => {
   await observeBeds(page); let release!: () => void; const gate = new Promise<void>(resolve => { release = resolve; });
-  await page.route("**/audio/theme-pressure.wav", async route => { const response = await route.fetch(); await gate; await route.fulfill({ response }); });
+  await page.route("**/audio/theme-pressure.flac", async route => { const response = await route.fetch(); await gate; await route.fulfill({ response }); });
   await openRun(page, fixture("route", { flags: { chapel_window_started: true, chapel_window_2: true } }));
   await expect.poll(async () => (await bedReview(page)).started.length).toBe(2);
   const initial = (await bedReview(page)).started;
   await page.getByTestId("choice-begin-chapel-window").click();
   await page.getByTestId("choice-pause-chapel-window").click();
-  release(); await expect.poll(async () => (await bedReview(page)).decoded).toContain("theme-pressure.wav");
+  release(); await expect.poll(async () => (await bedReview(page)).decoded).toContain("theme-pressure.flac");
   expect((await bedReview(page)).started).toEqual(initial);
   expect((await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!))).flags.chapel_window_2).toBe(true);
 });
 
 test("directed audio keeps available ambience and readable dialogue when music and voice fail", async ({ page }) => {
-  await observeBeds(page); await page.route("**/audio/theme-reading.wav", route => route.abort()); await page.route("**/audio/voice-mara-revelation.wav", route => route.abort());
+  await observeBeds(page); await page.route("**/audio/theme-reading.flac", route => route.abort()); await page.route("**/audio/voice-mara-revelation.wav", route => route.abort());
   await openRun(page, fixture("memo"));
-  await expect.poll(async () => (await bedReview(page)).started).toContain("ambience-chapel.wav");
+  await expect.poll(async () => (await bedReview(page)).started).toContain("ambience-chapel.flac");
   await page.getByRole("button", { name: "Listen to Mara" }).click(); await expect(page.getByTestId("voice-line")).toContainText("Voice unavailable");
   await expect(page.getByTestId("scene-text")).toContainText("I signed the coolant dump");
   await page.getByTestId("choice-heard").click();
@@ -1786,8 +1786,8 @@ for(const [action,creds,width,none] of [["stay-with-mara-courier",15,390,false],
 test("Mara company keeps quiet music and clinic ambience continuous without voice autoplay",async({page})=>{
  await observeBeds(page);const voices:string[]=[];page.on("request",r=>{if(r.url().includes("/audio/voice-"))voices.push(r.url())});
  await openRun(page,fixture("act2_mara_company",{creds:15,flags:{heard_memo:true,response_started:true,response_private_consent:true,mara_quiet_heard:true,response_question_done:true}}));
- await expect.poll(async()=>(await bedReview(page)).started).toContain("theme-quiet.wav");await expect.poll(async()=>(await bedReview(page)).started).toContain("ambience-clinic.wav");
+ await expect.poll(async()=>(await bedReview(page)).started).toContain("theme-quiet.flac");await expect.poll(async()=>(await bedReview(page)).started).toContain("ambience-clinic.flac");
  await keyboardActivate(page,page.getByTestId("choice-stay-with-mara-courier"));await keyboardActivate(page,page.getByTestId("choice-keep-mara-shared-hour"));
- const played=(await bedReview(page)).started;expect(played.filter(n=>n==="theme-quiet.wav")).toHaveLength(1);expect(played.filter(n=>n==="ambience-clinic.wav")).toHaveLength(1);expect(voices).toEqual([]);
+ const played=(await bedReview(page)).started;expect(played.filter(n=>n==="theme-quiet.flac")).toHaveLength(1);expect(played.filter(n=>n==="ambience-clinic.flac")).toHaveLength(1);expect(voices).toEqual([]);
  const state=await page.evaluate(()=>JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));expect(state.creds).toBe(0);expect(state.flags.mara_company_kept).toBe(true);expect(state.flags.response_received).toBeUndefined();
 });

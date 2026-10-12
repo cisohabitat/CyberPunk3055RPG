@@ -16,11 +16,11 @@ function checkpoint(sceneId: string, route = "memory-timeline-bounded", choiceId
   throw new Error(`Missing checkpoint ${sceneId}`);
 }
 const saved = (page: Page) => page.evaluate(() => localStorage.getItem("saint-shard-3055-v1"));
-async function open(page: Page, state: GameState, artwork = "full") {
-  await page.addInitScript(({ state, artwork }) => {
+async function open(page: Page, state: GameState, artwork = "full", preferences = {}) {
+  await page.addInitScript(({ state, artwork, preferences }) => {
     if (!localStorage.getItem("saint-shard-3055-v1")) localStorage.setItem("saint-shard-3055-v1", JSON.stringify(state));
-    localStorage.setItem("saint-shard-preferences", JSON.stringify({ reading: "paragraph", artwork, motion: "reduce", contrast: "high", textStep: 2, numberShortcuts: true }));
-  }, { state, artwork });
+    localStorage.setItem("saint-shard-preferences", JSON.stringify({ reading: "paragraph", artwork, motion: "reduce", contrast: "high", textStep: 2, numberShortcuts: true, ...preferences }));
+  }, { state, artwork, preferences });
   await page.goto("/"); await keyboardActivate(page, page.getByTestId("continue-run"));
 }
 for (const [width, artwork] of [[320, "none"], [390, "full"], [1440, "full"]] as const) test(`hearing notebook finds original timestamps and returns without committing at ${width}px`, async ({ page }) => {
@@ -74,7 +74,7 @@ test("search and record groups retain allegations, corrections and empty-result 
 });
 
 test("opening consultation stops selected dialogue and leaves a recorded timeline intact", async ({ page }) => {
-  await open(page, checkpoint("memory_sequence_result"));
+  await open(page, checkpoint("memory_sequence_result"), "full", { sound: false, autoVoices: false });
   if (await page.getByTestId("show-rest").count()) await keyboardActivate(page, page.getByTestId("show-rest"));
   await keyboardActivate(page, page.getByRole("button", { name: "Settings", exact: true }));
   await keyboardActivate(page, page.getByLabel("Sound enabled", { exact: true }));

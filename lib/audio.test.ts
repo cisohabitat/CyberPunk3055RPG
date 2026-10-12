@@ -3,6 +3,8 @@ import { readFileSync } from "node:fs";
 import { describe, it } from "node:test";
 import { fileURLToPath } from "node:url";
 import { createHash } from "node:crypto";
+import { gunzipSync } from "node:zlib";
+import beds from "../qa/media/bed-delivery.json";
 import voices from "../qa/media/voice-provenance.json";
 import lines from "../qa/media/voice-lines.json";
 import { createCharacter, sceneText } from "./engine";
@@ -28,6 +30,31 @@ function readWav(name: string) {
   }
   return { rate, channels, tracks, samples: tracks[0] };
 }
+
+describe("lossless background delivery", () => {
+  it("ships compressed beds with unchanged source PCM and checked gzip transport", () => {
+    assert.equal(beds.beds.length, 15);
+    for (const bed of beds.beds) {
+      const read = (path: string) => readFileSync(new URL(`../${path}`, import.meta.url));
+      const master = read(bed.source), delivery = read(bed.delivery), transport = read(bed.transport);
+      const sha = (bytes: Buffer) => createHash("sha256").update(bytes).digest("hex");
+      assert.equal(sha(master), bed.sourceSha256, bed.name);
+      assert.equal(sha(delivery), bed.sha256, bed.name);
+      assert.equal(sha(transport), bed.transportSha256, bed.name);
+      assert.deepEqual(gunzipSync(transport), delivery);
+      assert.equal(delivery.toString("ascii", 0, 4), "fLaC");
+      assert.equal(sha(master.subarray(44)), bed.pcmSha256);
+      assert.equal(createHash("md5").update(master.subarray(44)).digest("hex"), delivery.subarray(26, 42).toString("hex"));
+      const info = delivery.readBigUInt64BE(18);
+      assert.equal(Number(info >> 44n), bed.sampleRate);
+      assert.equal(Number((info >> 41n) & 7n) + 1, bed.channels);
+      assert.equal(Number((info >> 36n) & 31n) + 1, 16);
+      assert.equal(Number(info & ((1n << 36n) - 1n)) * bed.channels * 2, bed.pcmBytes);
+      assert.equal(transport.length, bed.transportBytes);
+      assert.ok(transport.length < master.length);
+    }
+  });
+});
 
 function seam(samples: number[]) {
   return Math.abs(samples[0] - samples[samples.length - 1]);
