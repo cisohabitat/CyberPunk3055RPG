@@ -460,15 +460,22 @@ test("new runner, settings, reading width and saved preferences", async ({ page 
 test("a recorded roll survives reload and cannot be rerolled", async ({ page }) => {
   const errors: string[] = []; page.on("pageerror", (error) => errors.push(error.message));
   await page.goto("/"); await page.evaluate((run) => localStorage.setItem("saint-shard-3055-v1", JSON.stringify(run)), fixture("pay"));
-  await page.reload(); await page.getByTestId("continue-run").click(); await page.getByTestId("choice-haggle").click(); await page.getByTestId("roll-button").click();
+  await page.reload({ waitUntil: "domcontentloaded" }); await page.getByTestId("continue-run").click(); await page.getByTestId("choice-haggle").click(); await page.getByTestId("roll-button").click();
   const stored = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
   expect(stored.pendingCheck.roll).toBeGreaterThanOrEqual(1);
-  await page.reload(); await page.getByTestId("continue-run").click();
-  await expect(page.getByTestId("roll-button")).toHaveCount(0); await expect(page.getByTestId("continue-check")).toBeVisible();
-  await expect(page.locator(".total")).toContainText(String(stored.pendingCheck.roll));
-  await page.getByTestId("continue-check").click();
-  const committed = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
-  expect(committed.pendingCheck).toBeUndefined(); expect(committed.rolls).toHaveLength(1); expect(errors).toEqual([]);
+  let releaseFonts!: () => void; const fonts = new Promise<void>(resolve => { releaseFonts = resolve; });
+  // Restore must be usable while optional font requests remain outstanding.
+  // Waiting for window.load would couple saved dice to those media requests.
+  await page.route("**/fonts/*.woff2", async route => { await fonts; await route.continue(); });
+  try {
+    await page.reload({ waitUntil: "domcontentloaded" }); await page.getByTestId("continue-run").click();
+    await expect(page.getByTestId("roll-button")).toHaveCount(0); await expect(page.getByTestId("continue-check")).toBeVisible();
+    await expect(page.locator(".total")).toContainText(String(stored.pendingCheck.roll));
+    await page.getByTestId("continue-check").click();
+    const committed = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+    expect(committed.pendingCheck).toBeUndefined(); expect(committed.rolls).toHaveLength(1); expect(errors).toEqual([]);
+    expect(committed.rolls[0].roll).toBe(stored.pendingCheck.roll);
+  } finally { releaseFonts(); }
 });
 test("modal controls stay isolated and return focus", async ({ page }) => {
   await openRun(page);

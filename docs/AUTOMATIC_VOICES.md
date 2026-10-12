@@ -46,3 +46,7 @@ The corrected local candidate passed 486 unit/replay checks, TypeScript and the 
 ### Font build dependency
 
 The first compressed candidate’s CI build failed in Next’s Google-font URL parser before browser testing. The same 23 WOFF2 files from the successful local build are now checked in, retaining all 53 original font-face declarations, Unicode ranges, weights, styles, fallback metrics and five Latin preloads. The typefaces remain Rajdhani and Literata, with SIL Open Font License copies and hashes. Builds no longer depend on a remote font response. This build repair changes no story or voice delivery.
+
+### Recorded-roll reload readiness
+
+The first full suite on the bundled-font candidate passed 991/992 checks. One WebKit saved-roll reload timed out waiting for window.load after navigation. Its readiness wait now uses DOMContentLoaded and actionable Continue/check controls, retaining every original pending-roll assertion and checking that the committed die equals the stored die. The regression deliberately holds font requests during restoration, proving optional fonts cannot prevent continuing the recorded outcome. Three repeated runs passed in each local Chromium, phone and WebKit profile; the release still requires the full four-browser suite. Runtime game behavior and media files are unchanged by this test correction.
