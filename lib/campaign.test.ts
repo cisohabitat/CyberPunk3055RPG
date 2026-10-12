@@ -56,7 +56,7 @@ describe("recorded checks and portable saves", () => {
     assert.equal(parsePreferences(JSON.stringify({ voices: -20 })).voices, 0);
     assert.equal(parsePreferences(JSON.stringify({ voices: 1000 })).voices, 100);
     assert.equal(parsePreferences(JSON.stringify({ voices: "loud" })).voices, 70);
-    assert.equal(parsePreferences("{").sound, false);
+    assert.equal(parsePreferences("{").sound, true);
     assert.equal(parsePreferences(JSON.stringify({ music: 1000, ambience: -1, effects: "loud" })).music, 100);
     assert.equal(parsePreferences(JSON.stringify({ ambience: -1 })).ambience, 0);
   });

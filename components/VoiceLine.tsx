@@ -3,17 +3,26 @@ import { useEffect, useRef, useState } from "react";
 import { playVoice, type VoiceStatus } from "@/lib/sound";
 import type { DialogueLine } from "@/lib/memory-media";
 
-export function VoiceLine({ line, enabled, paused = false }: { line: DialogueLine; enabled: boolean; paused?: boolean }) {
+export function VoiceLine({ line, enabled, automatic, paused = false }: { line: DialogueLine; enabled: boolean; automatic: boolean; paused?: boolean }) {
   const [status, setStatus] = useState<VoiceStatus>("idle");
   const cancel = useRef<(() => void) | null>(null);
+  const attempted = useRef(false);
   useEffect(() => {
     if (!enabled) { cancel.current?.(); cancel.current = null; setStatus("idle"); }
-    return () => { cancel.current?.(); cancel.current = null; };
-  }, [enabled]);
+    // Defer until the parent has enabled the scene mixer. Cleanup also makes
+    // Strict Mode's rehearsal and departure before activation harmless.
+    const timer = enabled && automatic && !attempted.current ? window.setTimeout(() => {
+      if (attempted.current) return;
+      attempted.current = true;
+      cancel.current = playVoice(line.id, setStatus);
+    }, 0) : undefined;
+    return () => { window.clearTimeout(timer); cancel.current?.(); cancel.current = null; setStatus("idle"); };
+  }, [enabled, automatic, line.id]);
   const active = status === "loading" || status === "playing";
   const name = line.speaker === "Sister Lumen" ? "Lumen" : line.speaker;
   return <aside className="voice-line" aria-label={`${name} selected dialogue`} data-testid="voice-line">
     <button type="button" className="ghost" disabled={!enabled} onClick={() => {
+      attempted.current = true;
       if (active) { cancel.current?.(); cancel.current = null; setStatus("idle"); }
       else cancel.current = playVoice(line.id, setStatus);
     }}>{active ? "Stop line" : `Listen to ${name}`}</button>

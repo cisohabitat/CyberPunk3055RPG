@@ -38,7 +38,7 @@ async function main() {
   const browser = await chromium.launch({ executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH, args: ["--no-sandbox"] });
   const rows: { id: string; route: string; durationSeconds: number; voiceRequests: number; liveSourcesAfterEnd: number; created: number; disposed: number }[] = [];
   const errors: string[] = [], failures: string[] = [];
-  const started = Date.now();
+  const started = Date.now(), automatic = args.includes("--automatic");
   try {
     for (const line of lines) {
       const context = await browser.newContext({ viewport: { width: 390, height: 844 }, reducedMotion: "reduce" });
@@ -49,22 +49,22 @@ async function main() {
         page.on("request", request => { if (new URL(request.url()).pathname === `/audio/${line.id}.wav`) voiceRequests++; });
         page.on("requestfailed", request => { if (new URL(request.url()).pathname.startsWith("/audio/")) failures.push(`${line.id}: ${request.failure()?.errorText}`); });
         await page.addInitScript({ content: `var __name = (fn, name) => Object.defineProperty(fn, "name", { value: name, configurable: true }); (${installAudioReview.toString()})();` });
-        await page.addInitScript(state => {
+        await page.addInitScript(({ state, automatic }) => {
           localStorage.setItem("saint-shard-3055-v1", JSON.stringify(state));
-          localStorage.setItem("saint-shard-preferences", JSON.stringify({ reading: "all", sound: true, motion: "reduce", artwork: "none", effects: 0 }));
-        }, example.state);
+          localStorage.setItem("saint-shard-preferences", JSON.stringify({ reading: "all", sound: true, autoVoices: automatic, motion: "reduce", artwork: "none", effects: 0 }));
+        }, { state: example.state, automatic });
         const audio = (): Promise<AudioReview> => page.evaluate(() => (window as unknown as { audioReview: AudioReview }).audioReview);
         const saved = () => page.evaluate(() => localStorage.getItem("saint-shard-3055-v1"));
         await page.goto(url); await keyboardActivate(page, page.getByTestId("continue-run"));
-        await expect.poll(async () => (await audio()).liveSources).toBe(2);
-        const before = await saved(), created = (await audio()).sourcesCreated;
-        expect(voiceRequests).toBe(0);
+        await expect.poll(async () => (await audio()).liveSources).toBe(automatic ? 3 : 2);
+        const before = await saved(), created = (await audio()).sourcesCreated - (automatic ? 1 : 0);
+        expect(voiceRequests).toBe(automatic ? 1 : 0);
         await expect(page.getByTestId("scene-text")).toContainText(line.text);
         await keyboardActivate(page, page.getByTestId("voice-line").locator("summary"));
         await expect(page.getByTestId("voice-line").locator("details")).toContainText(line.text);
         const listen = page.getByTestId("voice-line").getByRole("button", { name: /^Listen to / });
-        const playStarted = Date.now(); await keyboardActivate(page, listen);
-        await expect(page.getByTestId("voice-line")).toContainText("Playing selected dialogue");
+        const playStarted = Date.now();
+        if (!automatic) { await keyboardActivate(page, listen); await expect(page.getByTestId("voice-line")).toContainText("Playing selected dialogue"); }
         await expect.poll(async () => (await audio()).sourcesCreated).toBe(created + 1);
         await expect(listen).toBeVisible({ timeout: 30_000 });
         const ended = await audio(), durationSeconds = (Date.now() - playStarted) / 1000;
@@ -86,7 +86,7 @@ async function main() {
     expect(errors).toEqual([]); expect(failures).toEqual([]);
     mkdirSync(dirname(out), { recursive: true });
     const environment = { browser: "Chromium", browserVersion: browser.version(), platform: process.platform, nodeVersion: process.version, device: "cloud automation host; synthetic viewport" };
-    writeFileSync(out, JSON.stringify({ revision, dirty, testedSources, testedRoutes, environment, url, elapsedSeconds: (Date.now() - started) / 1000, rows, errors, failures, limitations: "Internal directed, reachable replay states in separate QA contexts; these are not completed campaigns. Natural clip completion, explicit cached replay, Stop, transcript parity and cleanup are technical observations. No human listening, loudness comfort, artistic pronunciation, fatigue, rights or physical-device acceptance." }, null, 2));
+    writeFileSync(out, JSON.stringify({ revision, dirty, testedSources, testedRoutes, environment, url, automatic, elapsedSeconds: (Date.now() - started) / 1000, rows, errors, failures, limitations: "Internal directed, reachable replay states in separate QA contexts; these are not completed campaigns. Natural clip completion, explicit cached replay, Stop, transcript parity and cleanup are technical observations. No human listening, loudness comfort, artistic pronunciation, fatigue, rights or physical-device acceptance." }, null, 2));
   } finally { await browser.close(); }
 }
 main().catch(error => { console.error(error); process.exitCode = 1; });

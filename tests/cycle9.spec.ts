@@ -9,7 +9,7 @@ async function setup(page: Page, run = fixture(), preferences = {}, suppressEnde
   await page.addInitScript(installAudioReview, { suppressEnded });
   await page.addInitScript(({ run, preferences }) => {
     if (!localStorage.getItem("saint-shard-3055-v1")) localStorage.setItem("saint-shard-3055-v1", JSON.stringify(run));
-    localStorage.setItem("saint-shard-preferences", JSON.stringify({ reading: "all", motion: "reduce", sound: true, ...preferences }));
+    localStorage.setItem("saint-shard-preferences", JSON.stringify({ reading: "all", motion: "reduce", sound: true, autoVoices: false, ...preferences }));
     let visibility = "visible";
     Object.defineProperty(document, "visibilityState", { configurable: true, get: () => visibility });
     (window as unknown as { changeVisibility: (value: string) => void }).changeVisibility = value => { visibility = value; document.dispatchEvent(new Event("visibilitychange")); };

@@ -145,7 +145,7 @@ export function stopVoice() {
   voiceNode = null;
   duckBed(false);
 }
-/** Explicit playback only. Cancelling a pending fetch must prevent a late start. */
+/** Revealed authored dialogue only. Cancellation prevents a late fetch start. */
 export function playVoice(name: string, report: (status: VoiceStatus) => void): () => void {
   stopVoice();
   const id = voiceTicket;

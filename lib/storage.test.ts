@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { afterEach, describe, it } from "node:test";
 import { createCharacter } from "./engine.ts";
+import { loadPreferences, parsePreferences } from "./preferences.ts";
 import {
   clearSave, emptyCodex, loadBackup, loadCodex, loadSave, loadSound, loadTextStep, usedBackup,
   rememberEnding, writeCodex, writeSave, writeSound, writeTextStep,
@@ -35,6 +36,16 @@ function assertDefaultsAndFailedWrites() {
 }
 
 describe("browser storage failures", () => {
+  it("defaults new players to automatic voices while preserving legacy and current mute choices", () => {
+    const values = new Map<string, string>();
+    installWindow({ localStorage: { getItem(key: string) { return values.get(key) ?? null; } } });
+    assert.equal(loadPreferences().sound, true); assert.equal(loadPreferences().autoVoices, true);
+    values.set("saint-shard-sound", "off"); assert.equal(loadPreferences().sound, false);
+    values.set("saint-shard-sound", "on"); assert.equal(loadPreferences().sound, true);
+    values.set("saint-shard-preferences", JSON.stringify({ sound: false, voices: 0, autoVoices: false }));
+    const muted = loadPreferences(); assert.equal(muted.sound, false); assert.equal(muted.voices, 0); assert.equal(muted.autoVoices, false);
+    assert.equal(parsePreferences('{"autoVoices":"false"}').autoVoices, true);
+  });
   it("recovers a corrupted autosave from the last valid backup and clears both", () => {
     const values = new Map<string, string>();
     installWindow({ localStorage: {

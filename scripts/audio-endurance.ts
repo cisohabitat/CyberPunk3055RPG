@@ -47,7 +47,7 @@ async function main() {
   page.on("pageerror", error => errors.push(error.message));
   // tsx preserves function names with a module helper; serialized browser QA needs it too.
   await page.addInitScript({ content: `var __name = (fn, name) => Object.defineProperty(fn, "name", { value: name, configurable: true }); (${installAudioReview.toString()})();` });
-  await page.addInitScript(() => localStorage.setItem("saint-shard-preferences", JSON.stringify({ sound: true, reading: "all", motion: "reduce", artwork: "none", effects: 0 })));
+  await page.addInitScript(() => localStorage.setItem("saint-shard-preferences", JSON.stringify({ sound: true, autoVoices: false, reading: "all", motion: "reduce", artwork: "none", effects: 0 })));
   const cdp = await page.context().newCDPSession(page); await cdp.send("Performance.enable");
   const fileDir = mkdtempSync(join(tmpdir(), "saint-shard-endurance-")), importPath = join(fileDir, "run.json");
   const snapshots: string[] = [];

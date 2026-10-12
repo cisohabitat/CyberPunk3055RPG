@@ -12,7 +12,7 @@ async function setup(page: Page, state: GameState, preferences = {}) {
   await page.addInitScript(installAudioReview, {});
   await page.addInitScript(({ state, preferences }) => {
     localStorage.setItem("saint-shard-3055-v1", JSON.stringify(state));
-    localStorage.setItem("saint-shard-preferences", JSON.stringify({ reading: "all", motion: "reduce", artwork: "none", sound: true, effects: 0, ...preferences }));
+    localStorage.setItem("saint-shard-preferences", JSON.stringify({ reading: "all", motion: "reduce", artwork: "none", sound: true, autoVoices: false, effects: 0, ...preferences }));
   }, { state, preferences });
   await page.goto("/"); await page.getByTestId("continue-run").click();
 }

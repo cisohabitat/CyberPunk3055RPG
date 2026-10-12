@@ -609,6 +609,7 @@ test("sheet tabs stay isolated from story shortcuts and restore focus", async ({
 
 
 test("optional audio loads the scene score after an explicit player gesture", async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem("saint-shard-sound", "off"));
   await openRun(page, fixture("memory_table", { items: ["shard"], flags: { heard_memo: true } }));
   await page.getByRole("button", { name: "Settings", exact: true }).click();
   const score = page.waitForResponse((response) => response.url().endsWith("/audio/theme-chapel.wav") && response.status() === 200);
@@ -689,6 +690,7 @@ test("a delayed audio resume cannot block optional score loading or play", async
     }
     Object.defineProperty(window, "AudioContext", { value: DelayedContext });
   });
+  await page.addInitScript(() => localStorage.setItem("saint-shard-sound", "off"));
   await openRun(page, fixture("memory_table", { items: ["shard"], flags: { heard_memo: true } }));
   await page.getByRole("button", { name: "Settings", exact: true }).click();
   const score = page.waitForResponse((response) => response.url().endsWith("/audio/theme-chapel.wav") && response.status() === 200);
@@ -928,7 +930,7 @@ test("text-only mode avoids artwork requests through reload and a rolled result"
 });
 
 test("district cards omit images in text-only mode and Week audio loads on demand", async ({page})=>{
-  await page.addInitScript(()=>localStorage.setItem("saint-shard-preferences",JSON.stringify({artwork:"none"})));
+  await page.addInitScript(()=>localStorage.setItem("saint-shard-preferences",JSON.stringify({artwork:"none",sound:false})));
   await openRun(page,fixture("districts")); await expect(page.locator("img.card-art")).toHaveCount(0);
   await page.getByRole("button",{name:"Settings",exact:true}).click();
   const response=page.waitForResponse(r=>r.url().endsWith("/audio/theme-week.wav")&&r.status()===200);
@@ -1255,7 +1257,7 @@ for (const sceneId of ["opening_city", "act2_spire_brief", "act2_spire_methods",
 test("the authored stereo score decodes after an explicit sound-enabled continuation", async ({ page }) => {
   type DecodedScore = { channels: number; duration: number; sampleRate: number };
   await page.addInitScript(() => {
-    localStorage.setItem("saint-shard-preferences", JSON.stringify({ sound: true }));
+    localStorage.setItem("saint-shard-preferences", JSON.stringify({ sound: true, autoVoices: false }));
     const recorded = window as unknown as { decodedScores: DecodedScore[] };
     recorded.decodedScores = [];
     const decode = AudioContext.prototype.decodeAudioData;
@@ -1388,7 +1390,7 @@ test("memory timeline recovers a mismatch and retains a disputed verdict after r
 
 async function observeVoices(page: Page) {
   await page.addInitScript(() => {
-    localStorage.setItem("saint-shard-preferences", JSON.stringify({ sound: true }));
+    localStorage.setItem("saint-shard-preferences", JSON.stringify({ sound: true, autoVoices: false }));
     const review = window as unknown as { voiceReview: { decoded: number; started: number; stopped: number; gains: number[]; scheduled: { value: number; settling: number }[] } };
     review.voiceReview = { decoded: 0, started: 0, stopped: 0, gains: [], scheduled: [] };
     const voices = new WeakSet<AudioBuffer>();
@@ -1409,7 +1411,7 @@ const voiceReview = (page: Page) => page.evaluate(() => (window as unknown as { 
 
 async function observeBeds(page: Page) {
   await page.addInitScript(() => {
-    localStorage.setItem("saint-shard-preferences", JSON.stringify({ sound: true, reading: "all", motion: "reduce" }));
+    localStorage.setItem("saint-shard-preferences", JSON.stringify({ sound: true, autoVoices: false, reading: "all", motion: "reduce" }));
     const review = window as unknown as { bedReview: { decoded: string[]; started: string[] } };
     review.bedReview = { decoded: [], started: [] };
     const dataNames = new WeakMap<ArrayBuffer, string>(); const bufferNames = new WeakMap<AudioBuffer, string>();
@@ -1517,7 +1519,7 @@ test("directed audio keeps available ambience and readable dialogue when music a
 
 test("directed dialogue candidates require Listen at the offer, revelation, boundaries and four finales", async ({ page }) => {
   await observeVoices(page);
-  await page.addInitScript(() => localStorage.setItem("saint-shard-preferences", JSON.stringify({ sound: true, reading: "all", motion: "reduce" })));
+  await page.addInitScript(() => localStorage.setItem("saint-shard-preferences", JSON.stringify({ sound: true, autoVoices: false, reading: "all", motion: "reduce" })));
   const requests: string[] = []; page.on("request", request => { if (request.url().includes("/audio/voice-")) requests.push(request.url()); });
   const scenes = [["stall", "Quill"], ["memo", "Mara"], ["act3_kerr_collection_response", "Kerr"], ["act3_lumen_boundary", "Lumen"], ["ending_names", "Sera"], ["ending_quiet", "Sera"], ["ending_witness", "Sera"], ["ending_listed", "Ives"]];
   for (const [index, [scene, speaker]] of scenes.entries()) {
@@ -1700,14 +1702,14 @@ for (const [width,textOnly] of [[390,false],[1440,false],[320,true]] as const) t
  const run=await page.evaluate(()=>JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));expect(run.flags.response_received).toBe(true);expect(run.flags.order_verified).toBeUndefined();expect(run.flags.nia_public_consent).toBeUndefined();if(textOnly)expect(art).toEqual([]);
 });
 for(const [scene,speaker] of [["act2_mara_quiet","Mara"],["act2_lumen_quiet","Sister Lumen"]]) test(`current quiet dialogue is explicit and stops on departure: ${speaker}`,async({page})=>{
- await page.addInitScript(()=>localStorage.setItem("saint-shard-preferences",JSON.stringify({reading:"all",sound:true})));
+ await page.addInitScript(()=>localStorage.setItem("saint-shard-preferences",JSON.stringify({reading:"all",sound:true,autoVoices:false})));
  await openRun(page,fixture(scene,{flags:{heard_memo:true,response_started:true,response_private_consent:true}}));
  const line=page.getByTestId("voice-line");await expect(line).toContainText("synthetic");await line.getByRole("button",{name:`Listen to ${speaker === "Sister Lumen" ? "Lumen" : speaker}`}).click();await expect(line).toContainText("Playing selected dialogue");
  await page.getByTestId(`choice-${speaker==="Mara"?"keep-mara-quiet-answer":"keep-lumen-quiet-answer"}`).click();await expect(line).toHaveCount(0);
 });
 
 test("recorded interview replay survives reload without becoming a live response", async ({page}) => {
- await page.addInitScript(()=>localStorage.setItem("saint-shard-preferences",JSON.stringify({reading:"all",sound:true})));
+ await page.addInitScript(()=>localStorage.setItem("saint-shard-preferences",JSON.stringify({reading:"all",sound:true,autoVoices:false})));
  await openRun(page,fixture("memory_cross_exam",{flags:{heard_memo:true,memory_signature:true,memory_order:true,memory_roster:true}}));
  await expect(page.getByTestId("scene-text")).toContainText("she cannot hear you now");
  await page.getByTestId("choice-ask-evacuation-assurance").click();

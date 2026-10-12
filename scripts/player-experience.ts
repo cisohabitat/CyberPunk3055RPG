@@ -44,7 +44,8 @@ async function main() {
     tabs += await keyboardSelect(page, page.getByLabel("Reading pace", { exact: true }), reading);
     tabs += await keyboardSelect(page, page.getByLabel("Motion", { exact: true }), "reduce");
     await activate(page.getByLabel("Number-key choices", { exact: true }));
-    if (sound) await activate(page.getByLabel("Sound enabled", { exact: true }));
+    if (!sound) await activate(page.getByLabel("Sound enabled", { exact: true }));
+    await activate(page.getByLabel("Play dialogue automatically", { exact: true }));
     await activate(page.getByRole("button", { name: "Done", exact: true }));
     // The first title uses default illustrated preferences. Attribute its requests
     // separately from requests after the player chooses text-only delivery.

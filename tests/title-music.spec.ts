@@ -29,7 +29,7 @@ async function clean(page: Page) {
 test("title music is opt-in and crosses its prepared loop before stopping", async ({ page }) => {
   test.setTimeout(90_000);
   await observe(page);
-  await page.addInitScript(() => localStorage.setItem("saint-shard-preferences", JSON.stringify({ sound: true, motion: "reduce" })));
+  await page.addInitScript(() => localStorage.setItem("saint-shard-preferences", JSON.stringify({ sound: true, autoVoices: false, motion: "reduce" })));
   const requests: string[] = []; page.on("request", r => { if (r.url().includes("/audio/")) requests.push(r.url()); });
   await page.goto("/"); await expect(page.getByTestId("title-screen")).toBeVisible();
   expect(requests).toEqual([]); const before = await saved(page);
@@ -57,7 +57,7 @@ test("title music respects mixer, hidden-page pause and voiced gameplay handoff"
   const run = { ...createCharacter({ handle: "MenuQA", givenName: "Ada", origin: "spire", bonus: { chrome: 2, nerve: 0, face: 0, ghost: 0 } }), sceneId: "memo" };
   await page.addInitScript(run => {
     localStorage.setItem("saint-shard-3055-v1", JSON.stringify(run));
-    localStorage.setItem("saint-shard-preferences", JSON.stringify({ reading: "all", motion: "reduce", artwork: "none", effects: 0, textStep: 2, contrast: "high" }));
+    localStorage.setItem("saint-shard-preferences", JSON.stringify({ autoVoices: false, reading: "all", motion: "reduce", artwork: "none", effects: 0, textStep: 2, contrast: "high" }));
   }, run);
   await page.goto("/"); const before = await saved(page);
   await keyboardActivate(page, page.getByRole("button", { name: "Play menu music", exact: true }));

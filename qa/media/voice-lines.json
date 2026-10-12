@@ -47,8 +47,16 @@
     "speed": 0.93,
     "text": "Because somebody should know which cup they take their tea in. Even when the city has made a case file out of them.",
     "segments": [
-      { "text": "Because somebody should know which cup they take their tea in.", "speed": 0.96, "pauseAfter": 0.34 },
-      { "text": "Even when the city has made a case file out of them.", "speed": 0.93, "pauseAfter": 0 }
+      {
+        "text": "Because somebody should know which cup they take their tea in.",
+        "speed": 0.96,
+        "pauseAfter": 0.34
+      },
+      {
+        "text": "Even when the city has made a case file out of them.",
+        "speed": 0.93,
+        "pauseAfter": 0
+      }
     ]
   },
   {
@@ -59,8 +67,16 @@
     "speed": 0.98,
     "text": "Will you sit for a while? There's nothing to take down.",
     "segments": [
-      { "text": "Will you sit for a while?", "speed": 0.97, "pauseAfter": 0.28 },
-      { "text": "There's nothing to take down.", "speed": 0.95, "pauseAfter": 0 }
+      {
+        "text": "Will you sit for a while?",
+        "speed": 0.97,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "There's nothing to take down.",
+        "speed": 0.95,
+        "pauseAfter": 0
+      }
     ]
   },
   {
@@ -71,9 +87,21 @@
     "speed": 0.98,
     "text": "One walk without counting the steps first. Not another door to stand in. Just the table where the rain doesn't land in the soup.",
     "segments": [
-      { "text": "One walk without counting the steps first.", "speed": 0.94, "pauseAfter": 0.34 },
-      { "text": "Not another door to stand in.", "speed": 0.98, "pauseAfter": 0.27 },
-      { "text": "Just the table where the rain doesn't land in the soup.", "speed": 0.95, "pauseAfter": 0 }
+      {
+        "text": "One walk without counting the steps first.",
+        "speed": 0.94,
+        "pauseAfter": 0.34
+      },
+      {
+        "text": "Not another door to stand in.",
+        "speed": 0.98,
+        "pauseAfter": 0.27
+      },
+      {
+        "text": "Just the table where the rain doesn't land in the soup.",
+        "speed": 0.95,
+        "pauseAfter": 0
+      }
     ]
   },
   {
@@ -294,5 +322,189 @@
     "voice": "am_adam",
     "speed": 0.97,
     "text": "We agreed they could register it. Leave that on the receipt."
+  },
+  {
+    "id": "voice-quill-pay",
+    "scene": "pay",
+    "speaker": "Quill",
+    "voice": "am_michael",
+    "speed": 0.96,
+    "text": "Fifty now. Two hundred when the shard is in my hand and not wandering around in your bloodstream. Kerr is her shadow. Kerr is why the number is not prettier."
+  },
+  {
+    "id": "voice-quill-pay-yes",
+    "scene": "pay_yes",
+    "speaker": "Quill",
+    "voice": "am_michael",
+    "speed": 0.96,
+    "text": "Ninety. I will not go higher unless you are secretly three people. Two hundred on delivery, and if you die I am billing the corpse for my time."
+  },
+  {
+    "id": "voice-quill-pay-no",
+    "scene": "pay_no",
+    "speaker": "Quill",
+    "voice": "am_michael",
+    "speed": 0.96,
+    "text": "Cute. Fifty. Count it if you want. The count will not change, and neither will my face."
+  },
+  {
+    "id": "voice-quill-route",
+    "scene": "route",
+    "speaker": "Quill",
+    "voice": "am_michael",
+    "speed": 0.96,
+    "text": "Three ways in. The front sells forgiveness to anyone with an appointment. The hatch behind the incinerator is for people who still sweat. The choir door runs on an old Helion pad. I would not kiss it."
+  },
+  {
+    "id": "voice-lumen-lumen",
+    "scene": "lumen",
+    "speaker": "Sister Lumen",
+    "voice": "af_heart",
+    "speed": 0.93,
+    "text": "You are not on the penitent list. Dawn puts Mara Voss in that chair so Helion can edit a crime out of her. The next sentence should be one you can survive."
+  },
+  {
+    "id": "voice-mara-mara-why",
+    "scene": "mara_why",
+    "speaker": "Mara",
+    "voice": "af_sarah",
+    "speed": 0.96,
+    "text": "Helion told me the dump was a flush, not a kill. I signed because the night shift was already in the building and I thought the tower would move them. They did not move them."
+  },
+  {
+    "id": "voice-kerr-kerr",
+    "scene": "kerr",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.97,
+    "text": "That glass is Mara's hour. Helion pays me so the Ward Nine memo stays in her head, not in your pocket."
+  },
+  {
+    "id": "voice-mara-memory-cross-exam",
+    "scene": "memory_cross_exam",
+    "speaker": "Mara",
+    "voice": "af_sarah",
+    "speed": 0.96,
+    "text": "Ask me while I'm still here. They bought the hour so I wouldn't have to answer twice."
+  },
+  {
+    "id": "voice-quill-job-owner",
+    "scene": "job_owner",
+    "speaker": "Quill",
+    "voice": "am_michael",
+    "speed": 0.96,
+    "text": "Her life. Her appointment. Helion booked the chair; I booked you."
+  },
+  {
+    "id": "voice-quill-act2-origin-dustline",
+    "scene": "act2_origin_dustline",
+    "speaker": "Quill",
+    "voice": "am_michael",
+    "speed": 0.96,
+    "text": "Get it there. Asa will leave you a clearance for one passenger."
+  },
+  {
+    "id": "voice-sera-act2-origin-gutterwire",
+    "scene": "act2_origin_gutterwire",
+    "speaker": "Sera",
+    "voice": "af_bella",
+    "speed": 0.95,
+    "text": "No speeches. Put your shoulder here. Someone has to sleep upstairs tonight."
+  },
+  {
+    "id": "voice-ives-act2-origin-spire",
+    "scene": "act2_origin_spire",
+    "speaker": "Ives",
+    "voice": "am_eric",
+    "speed": 0.98,
+    "text": "They still bill my shifts against it. Get it out clean and take the receiver."
+  },
+  {
+    "id": "voice-ives-act2-archive-door",
+    "scene": "act2_archive_door",
+    "speaker": "Ives",
+    "voice": "am_eric",
+    "speed": 0.98,
+    "text": "If you allege an instruction, identify its issuer. We will challenge anything less."
+  },
+  {
+    "id": "voice-lumen-act2-notice-brief",
+    "scene": "act2_notice_brief",
+    "speaker": "Sister Lumen",
+    "voice": "af_heart",
+    "speed": 0.93,
+    "text": "They do not need to tell every landlord where they sleep. Dispatch wants a route it can verify. I need a notice people can actually use."
+  },
+  {
+    "id": "voice-lumen-act2-notice-receipt",
+    "scene": "act2_notice_receipt",
+    "speaker": "Sister Lumen",
+    "voice": "af_heart",
+    "speed": 0.93,
+    "text": "Come back when the window has passed. A plan deserves an answer, even if it was a good plan."
+  },
+  {
+    "id": "voice-kerr-act2-kerr",
+    "scene": "act2_kerr",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.97,
+    "text": "Helion paid me to know the weight of that glass. You are the part of the weight I can still invoice."
+  },
+  {
+    "id": "voice-lumen-act2-lumen",
+    "scene": "act2_lumen",
+    "speaker": "Sister Lumen",
+    "voice": "af_heart",
+    "speed": 0.93,
+    "text": "The shard is a week old, wherever it went. I called you back because memory gets thin if nobody walks it back to the wall. Come with me, or tell me you are done and mean it."
+  },
+  {
+    "id": "voice-nia-act2-witness-brief",
+    "scene": "act2_witness_brief",
+    "speaker": "Nia Pell",
+    "voice": "af_nova",
+    "speed": 0.96,
+    "text": "You promised a witness. I promised nothing to a transmitter. I need care, a room they don't own, and a say in which words leave it. Can you do those separately?"
+  },
+  {
+    "id": "voice-kerr-act2-witness-checkpoint",
+    "scene": "act2_witness_checkpoint",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.97,
+    "text": "I can keep this off the register if you give me a clinic transfer I can sign. Get the desk to accept it. Then move."
+  },
+  {
+    "id": "voice-lumen-act2-witness-lost",
+    "scene": "act2_witness_lost",
+    "speaker": "Sister Lumen",
+    "voice": "af_heart",
+    "speed": 0.93,
+    "text": "We cannot tell her the room is private. Say exactly what happened."
+  },
+  {
+    "id": "voice-lumen-act2-witness-repair",
+    "scene": "act2_witness_repair",
+    "speaker": "Sister Lumen",
+    "voice": "af_heart",
+    "speed": 0.93,
+    "text": "We can move her again. It won't erase the first register entry. Say that to her before you call this repaired."
+  },
+  {
+    "id": "voice-nia-act3-nia-contact",
+    "scene": "act3_nia_contact",
+    "speaker": "Nia Pell",
+    "voice": "af_nova",
+    "speed": 0.96,
+    "text": "If you have another question, leave it with the clinic. I decide whether to answer. Or let this be the last question for a while. I can choose that even if you helped me."
+  },
+  {
+    "id": "voice-lumen-ending-burned",
+    "scene": "ending_burned",
+    "speaker": "Sister Lumen",
+    "voice": "af_heart",
+    "speed": 0.93,
+    "text": "Next time you are dying, come here first. We owe you a cheaper kind of edit."
   }
 ]

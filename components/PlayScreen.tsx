@@ -81,14 +81,14 @@ export function PlayScreen({
   const [fault, setFault] = useState("");
   const [delta, setDelta] = useState<string[]>([]);
   const [flash, setFlash] = useState(false);
-  const [shown, setShown] = useState(1);
+  const [shown, setShown] = useState<{ sceneId: string; prose: string; count: number } | null>(null);
   const [reduceMotion, setReduceMotion] = useState(false);
   const prior = useRef(state);
   const readingFocus = useRef<{ sceneId: string; index: number } | null>(null);
   const priorSound = useRef<{ location: string; on: boolean; ending: boolean } | null>(null);
   const prose = sceneText(scene, state);
   const paragraphs = prose.split(/\n\n+/).filter((paragraph) => paragraph.length > 0);
-  const visibleCount = preferences.reading === "all" ? paragraphs.length : Math.min(shown, paragraphs.length);
+  const visibleCount = preferences.reading === "all" ? paragraphs.length : Math.min(shown?.sceneId === scene.id && shown.prose === prose ? shown.count : 1, paragraphs.length);
   const dialogue = visibleDialogue(scene.id, scene.speaker, paragraphs.slice(0, visibleCount).join("\n\n"));
   const recordedChoice = state.pendingCheck ? choices.find((choice) => choice.id === state.pendingCheck?.choiceId) : null;
   const activeChoice = recordedChoice ?? pending;
@@ -103,7 +103,7 @@ export function PlayScreen({
 
   function revealParagraphs(count: number) {
     readingFocus.current = { sceneId: scene.id, index: visibleCount };
-    setShown(count);
+    setShown({ sceneId: scene.id, prose, count });
   }
 
   useEffect(() => {
@@ -155,7 +155,7 @@ export function PlayScreen({
   }, [scene.endingTitle, scene.finale, scene.id, state.items]);
 
   useEffect(() => {
-    setShown(1);
+    setShown(null);
   }, [state.sceneId, prose]);
 
   useEffect(() => {
@@ -336,7 +336,7 @@ export function PlayScreen({
               </div>
             )}
             {preferences.reading === "paragraph" && paragraphs.length > 1 && <p className="reading-progress hint" role="status" aria-atomic="true">{visibleCount} of {paragraphs.length} paragraphs shown</p>}
-            {dialogue && <VoiceLine key={`${scene.id}-${dialogue.id}`} line={dialogue} paused={audioPaused && preferences.sound} enabled={sound && preferences.voices > 0 && !modalOpen && !sheetOpen && !notebookOpen && !confirmAbandon && !activeChoice} />}
+            {dialogue && <VoiceLine key={`${scene.id}-${dialogue.id}`} line={dialogue} automatic={preferences.autoVoices} paused={audioPaused && preferences.sound} enabled={sound && preferences.voices > 0 && !modalOpen && !sheetOpen && !notebookOpen && !confirmAbandon && !activeChoice} />}
             {scene.id === "memory_sequence" && <MemoryTimeline state={state} choices={choices} onPlace={pick} artwork={preferences.artwork !== "none"} reducedMotion={reduceMotion} numberShortcuts={preferences.numberShortcuts} />}
             {["act2_route_map", "act2_route_exit", "act2_route_review", "act2_route_crossing"].includes(scene.id) && <RouteBoard state={state} />}
             {scene.finale && campaignCoda(state) && <p data-testid="campaign-coda">{campaignCoda(state)}</p>}

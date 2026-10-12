@@ -10,11 +10,12 @@ export type Preferences = {
   ambience: number;
   effects: number;
   voices: number;
+  autoVoices: boolean;
   controller: boolean;
   numberShortcuts: boolean;
   artwork: "full" | "none";
 };
-export const DEFAULT_PREFERENCES: Preferences = { textStep: 0, contrast: "standard", reading: "paragraph", motion: "system", sound: false, music: 60, ambience: 50, effects: 70, voices: 70, controller: false, numberShortcuts: true, artwork: "full" };
+export const DEFAULT_PREFERENCES: Preferences = { textStep: 0, contrast: "standard", reading: "paragraph", motion: "system", sound: true, music: 60, ambience: 50, effects: 70, voices: 70, autoVoices: true, controller: false, numberShortcuts: true, artwork: "full" };
 export function parsePreferences(raw: string | null): Preferences {
   let data;
   try { data = raw ? JSON.parse(raw) : {}; } catch { data = {}; }
@@ -28,6 +29,7 @@ export function parsePreferences(raw: string | null): Preferences {
     sound: typeof data?.sound === "boolean" ? data.sound : defaults.sound,
     music: volume(data?.music, defaults.music), ambience: volume(data?.ambience, defaults.ambience), effects: volume(data?.effects, defaults.effects),
     voices: volume(data?.voices, defaults.voices),
+    autoVoices: typeof data?.autoVoices === "boolean" ? data.autoVoices : defaults.autoVoices,
     controller: data?.controller === true,
     numberShortcuts: typeof data?.numberShortcuts === "boolean" ? data.numberShortcuts : defaults.numberShortcuts,
     artwork: data?.artwork === "none" ? "none" : "full",
@@ -35,7 +37,7 @@ export function parsePreferences(raw: string | null): Preferences {
 }
 export function loadPreferences(): Preferences {
   const raw = readStored("saint-shard-preferences");
-  return raw ? parsePreferences(raw) : { ...DEFAULT_PREFERENCES, sound: loadSound(), textStep: loadTextStep() };
+  return raw ? parsePreferences(raw) : { ...DEFAULT_PREFERENCES, sound: readStored("saint-shard-sound") === null ? DEFAULT_PREFERENCES.sound : loadSound(), textStep: loadTextStep() };
 }
 export function writePreferences(value: Preferences): boolean { return writeStored("saint-shard-preferences", JSON.stringify(value)); }
 export function applyPreferences(value: Preferences) {

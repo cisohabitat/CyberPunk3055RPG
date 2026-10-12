@@ -93,7 +93,7 @@ describe("beds", () => {
   it("ships fixed synthetic quotes with matching text, bounded headroom and disclosure", () => {
     const base = createCharacter({ handle: "VoiceReview", givenName: "Ada", origin: "spire", bonus: { chrome: 2, nerve: 0, face: 0, ghost: 0 } });
     for (const line of lines) {
-      const state = { ...base, sceneId: line.scene, flags: { memory_slot_1_signature: true, memory_slot_2_order: true, memory_slot_3_roster: true,
+      const state = { ...base, sceneId: line.scene, items: line.id === "voice-kerr-kerr" ? [...base.items, "shard"] : base.items, flags: { memory_slot_1_signature: true, memory_slot_2_order: true, memory_slot_3_roster: true,
         ...(line.id === "voice-mara-public-refusal" ? { response_public_refused: true } : {}),
         ...(line.id === "voice-kerr-handover-breached" ? { kerr_route_private: true, kerr_route_trace: true } : {}),
         ...(line.id === "voice-kerr-handover-registered" ? { kerr_route_registered: true, kerr_route_trace: true } : {}),
