@@ -1,0 +1,427 @@
+{
+  "baselineRevision": "0a2fafbcb6af6f1870eb9c70cb72e0fc6a56fbdd",
+  "method": "Source-familiar authored complete campaigns from actual character creation and keyboard input, explicit dice and native recorded-check reloads. Not blind participants, reading-time/fatigue measures or physical hardware.",
+  "comparison": {
+    "cosmeticLabelChange": {
+      "choiceId": "respect-edda-source",
+      "before": "Record her limits and leave the employment review unresolved.",
+      "after": "Record her limits and keep the source available.",
+      "normalization": "Only this label in canonical choices and saved log is normalized for comparison. No effects, gates, destinations, resources, flags, rolls, journal, inventory or version are normalized."
+    },
+    "method": "Identical pre-choice states from deterministic full-campaign fixtures; authored dice and retained source knowledge. Aggregate scene prose, excluding separately rendered finale retell. No reading-time or human-comprehension claim.",
+    "routes": 135,
+    "visits": 9697,
+    "canonicalDefinitionsUnchangedExceptListedLabel": true,
+    "finalStatesUnchangedExceptListedLogLabel": true,
+    "finalLabelDifferences": 54,
+    "wordsBefore": 622239,
+    "wordsAfter": 606749,
+    "changePercent": -2.49,
+    "retellChangedVisits": 0,
+    "changedScenes": [
+      {
+        "scene": "act2_archive_door",
+        "visits": 98,
+        "changedVisits": 98,
+        "before": 5488,
+        "after": 4312,
+        "maxBefore": 56,
+        "maxAfter": 44,
+        "variantsBefore": 1,
+        "variantsAfter": 1
+      },
+      {
+        "scene": "act3_neighborhood",
+        "visits": 323,
+        "changedVisits": 190,
+        "before": 14743,
+        "after": 10664,
+        "maxBefore": 52,
+        "maxAfter": 52,
+        "variantsBefore": 6,
+        "variantsAfter": 11
+      },
+      {
+        "scene": "act3_records_visit",
+        "visits": 95,
+        "changedVisits": 72,
+        "before": 6420,
+        "after": 5700,
+        "maxBefore": 98,
+        "maxAfter": 98,
+        "variantsBefore": 5,
+        "variantsAfter": 5
+      },
+      {
+        "scene": "act3_testimony_review",
+        "visits": 117,
+        "changedVisits": 117,
+        "before": 7839,
+        "after": 5616,
+        "maxBefore": 67,
+        "maxAfter": 48,
+        "variantsBefore": 1,
+        "variantsAfter": 1
+      },
+      {
+        "scene": "act3_testimony_hearing",
+        "visits": 117,
+        "changedVisits": 117,
+        "before": 8073,
+        "after": 5733,
+        "maxBefore": 69,
+        "maxAfter": 49,
+        "variantsBefore": 1,
+        "variantsAfter": 1
+      },
+      {
+        "scene": "act3_testimony_record",
+        "visits": 117,
+        "changedVisits": 117,
+        "before": 7190,
+        "after": 5526,
+        "maxBefore": 67,
+        "maxAfter": 59,
+        "variantsBefore": 5,
+        "variantsAfter": 5
+      },
+      {
+        "scene": "act2_archive_custody",
+        "visits": 72,
+        "changedVisits": 72,
+        "before": 4347,
+        "after": 2751,
+        "maxBefore": 69,
+        "maxAfter": 43,
+        "variantsBefore": 2,
+        "variantsAfter": 2
+      },
+      {
+        "scene": "act2_archive_verified",
+        "visits": 72,
+        "changedVisits": 72,
+        "before": 2952,
+        "after": 2592,
+        "maxBefore": 41,
+        "maxAfter": 36,
+        "variantsBefore": 1,
+        "variantsAfter": 1
+      },
+      {
+        "scene": "act3_edda_visit",
+        "visits": 68,
+        "changedVisits": 68,
+        "before": 4270,
+        "after": 2938,
+        "maxBefore": 63,
+        "maxAfter": 44,
+        "variantsBefore": 2,
+        "variantsAfter": 2
+      }
+    ]
+  },
+  "campaigns": [
+    {
+      "stage": "baseline",
+      "case": "minimal",
+      "route": "qa/routes/opening-skip-minimal.json",
+      "width": 1440,
+      "artwork": "none",
+      "reading": "paragraph",
+      "sound": false,
+      "visits": 28,
+      "reloads": 6,
+      "voices": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 390,
+        "strain": 0,
+        "rolls": [
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "errors": [],
+      "failedMedia": []
+    },
+    {
+      "stage": "baseline",
+      "case": "long",
+      "route": "qa/routes/performance-prepared.json",
+      "width": 390,
+      "artwork": "full",
+      "reading": "paragraph",
+      "sound": true,
+      "visits": 92,
+      "reloads": 43,
+      "voices": 2,
+      "interruptions": 2,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 360,
+        "strain": 4,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "errors": [],
+      "failedMedia": []
+    },
+    {
+      "stage": "baseline",
+      "case": "scarce",
+      "route": "qa/routes/performance-scarce.json",
+      "width": 320,
+      "artwork": "none",
+      "reading": "paragraph",
+      "sound": false,
+      "visits": 68,
+      "reloads": 49,
+      "voices": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 0,
+        "strain": 5,
+        "rolls": [
+          1,
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "errors": [],
+      "failedMedia": []
+    },
+    {
+      "stage": "candidate",
+      "case": "minimal",
+      "route": "qa/routes/opening-skip-minimal.json",
+      "width": 1440,
+      "artwork": "none",
+      "reading": "paragraph",
+      "sound": false,
+      "visits": 28,
+      "reloads": 6,
+      "voices": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 390,
+        "strain": 0,
+        "rolls": [
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "errors": [],
+      "failedMedia": []
+    },
+    {
+      "stage": "candidate",
+      "case": "long",
+      "route": "qa/routes/performance-prepared.json",
+      "width": 390,
+      "artwork": "full",
+      "reading": "paragraph",
+      "sound": true,
+      "visits": 92,
+      "reloads": 43,
+      "voices": 2,
+      "interruptions": 2,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 360,
+        "strain": 4,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "errors": [],
+      "failedMedia": []
+    },
+    {
+      "stage": "candidate",
+      "case": "scarce",
+      "route": "qa/routes/performance-scarce.json",
+      "width": 320,
+      "artwork": "none",
+      "reading": "paragraph",
+      "sound": false,
+      "visits": 68,
+      "reloads": 49,
+      "voices": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 0,
+        "strain": 5,
+        "rolls": [
+          1,
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "errors": [],
+      "failedMedia": []
+    },
+    {
+      "stage": "candidate",
+      "case": "face",
+      "route": "qa/routes/pacing-signed-face.json",
+      "width": 390,
+      "artwork": "full",
+      "reading": "paragraph",
+      "sound": false,
+      "visits": 67,
+      "reloads": 17,
+      "voices": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_witness",
+        "creds": 390,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "errors": [],
+      "failedMedia": []
+    },
+    {
+      "stage": "candidate",
+      "case": "nerve",
+      "route": "qa/routes/pacing-signed-nerve.json",
+      "width": 1440,
+      "artwork": "full",
+      "reading": "paragraph",
+      "sound": false,
+      "visits": 67,
+      "reloads": 17,
+      "voices": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_listed",
+        "creds": 470,
+        "strain": 1,
+        "rolls": [
+          10,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "errors": [],
+      "failedMedia": []
+    },
+    {
+      "stage": "candidate",
+      "case": "names",
+      "route": "qa/routes/gutterwire-harness.json",
+      "width": 390,
+      "artwork": "full",
+      "reading": "paragraph",
+      "sound": false,
+      "visits": 66,
+      "reloads": 15,
+      "voices": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 230,
+        "strain": 1,
+        "rolls": [
+          2,
+          2,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "errors": [],
+      "failedMedia": []
+    },
+    {
+      "stage": "candidate",
+      "case": "scarce-archive",
+      "route": "qa/routes/scarce-archive-gutterwire.json",
+      "width": 320,
+      "artwork": "none",
+      "reading": "paragraph",
+      "sound": false,
+      "visits": 67,
+      "reloads": 48,
+      "voices": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 35,
+        "strain": 3,
+        "rolls": [
+          10,
+          1,
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "errors": [],
+      "failedMedia": []
+    }
+  ],
+  "localValidation": {
+    "unitReplayTests": 483,
+    "focusedBrowserChecks": 27,
+    "profiles": [
+      "chromium",
+      "phone",
+      "webkit"
+    ],
+    "typecheck": "pass",
+    "productionBuild": "pass",
+    "mediaBudgets": "pass",
+    "loadProbes": 4
+  },
+  "candidateVisits": 455,
+  "candidateReloads": 195,
+  "artAndAudio": "Nine existing scenes retain explicit neutral art decisions and existing beds; all 22 fixed quotes and 162 media files remain. No new scene or media.",
+  "grade": {
+    "narrative": 8.4,
+    "weighted": 8.22,
+    "rounded": 8.2,
+    "basis": "Internal editorial comparison of actual Edda shift states, distinct returns and investigation pacing; no feature-count or test-count regrade."
+  },
+  "releaseRequirements": "Full exact-SHA CI across all four browser profiles and four load probes, authoritative production READY/alias proof and public complete campaigns, retained outside Git after publication."
+}

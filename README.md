@@ -428,3 +428,14 @@ Mara’s window invitation and Kerr’s hoped-for walk now have optional fixed s
 Listen/Stop remains explicit and waits for the quotation to be revealed. Complete text, separate channel preferences, natural-end/Stop/scene/off cancellation and silent/text-only play retain the same choices and costs. Existing Mara-window, Lumen and Kerr art fits these unchanged scenes; no new illustration or story scene is needed. Preserve version 2, `saint-shard-3055-v1`, recorded dice, 1d10, caps and all four finales.
 
 See [the performance and mix cycle](docs/VOICE_PERFORMANCE_CYCLE.md), retained model/delivery provenance and the twelve-interval audition in `qa/media/`. The corpus has 135 authored complete replay fixtures. Source-familiar simulated play remains the available development proxy; this work does not claim a commissioned actor session or perceptual listening acceptance. The provisional overall grade stays 8.2 and audio stays 7.5. Next: campaign-wide pacing and build balance.
+
+
+## Whole-campaign pacing and Edda’s actual shift
+
+Briefed archive visits now continue from the compared record number; legacy direct visits retain their first introduction. Custody keeps Edda’s employer trace and public naming separate, while the exit remembers the person behind the source. Edda’s unexposed visit retains posted shifts without asking to bridge an invented lost shift. A named copy or signed extraction still produces her reported suspension, even when the public copy withholds her name.
+
+The neutral source choice now says “Record her limits and keep the source available.” Its id, gates, effects and destination remain; old saved log labels still select the earned reply. Five neighborhood return selectors remember actual Lumen/Edda/Nia conduct with guarded flags and account custody. Empty or unknown logs retain a short neutral return. Hearing prose focuses on the source challenge and filing decision; quotation permission, earlier corrections and the independent memorial choices remain.
+
+All nine edited scenes retain explicit suitable art decisions and existing room/score plans. No new scene or media is needed; all twenty-two fixed quotations remain unchanged. The corpus now has 137 authored complete fixtures, including earned Face/Nerve signed-source routes. Preserve version 2, `saint-shard-3055-v1`, recorded pending checks, 1d10, caps and all four finales. The [phase record](docs/CAMPAIGN_PACING_CYCLE.md) compares the original 135 campaigns, allowing only the one declared display/log-label substitution. Raw state-bearing evidence remains outside Git. Source-familiar simulated play remains the available development proxy. Next: origin/stat build balance and meaningful opportunity costs.
+
+This pacing review provisionally grades narrative 8.4; the weighted total is 8.22, rounded to 8.2. It is an editorial assessment of the complete proxy campaigns, not a reading-speed, participant-average or feature-count result.

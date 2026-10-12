@@ -66,7 +66,7 @@
     {
       "treatment": "portrait",
       "asset": "/art/edda.jpg",
-      "reason": "Keep Edda identifiable during archive terms, payroll conversations and the service-exit reflection. Her portrait conveys no employment or key outcome; prose records the actual position.",
+      "reason": "Keep Edda identifiable during archive terms, payroll conversations and the service-exit reflection. Her portrait conveys no employment or key outcome; prose records the actual position. The pacing pass retains this neutral portrait for both posted shifts and an observed suspension, and for signed-source custody; it depicts no job loss, restored wage, key match or public permission.",
       "scenes": [
         "act2_spire_result",
         "act3_edda_terms",
@@ -83,7 +83,7 @@
     {
       "treatment": "portrait",
       "asset": "/art/sera.jpg",
-      "reason": "Keep Sera identifiable through shelter choices, witness review and memorial first arrivals or shorter returns. Reuse fits the same speaker and place; the portrait depicts no household move, protected witness or successful statement. The neutral portrait also fits a paused-contact hearing; it depicts neither a renewed request nor quotation permission. Wall returns distinguish actual receipt, contact limits and filing from the separate final decision; the neutral Sera portrait depicts neither forgiveness nor a spoken name.",
+      "reason": "Keep Sera identifiable through shelter choices, witness review and memorial first arrivals or shorter returns. Reuse fits the same speaker and place; the portrait depicts no household move, protected witness or successful statement. The neutral portrait also fits a paused-contact hearing; it depicts neither a renewed request nor quotation permission. Wall returns distinguish actual receipt, contact limits and filing from the separate final decision; the neutral Sera portrait depicts neither forgiveness nor a spoken name. Distinct neighborhood returns and shorter hearing/records prose remain at the same tables. The retained neutral portrait supplies no new recording, reopened contact, filed statement or resolved employment review.",
       "scenes": [
         "act2_shelter_prep",
         "act2_shelter_methods",
@@ -247,7 +247,7 @@
     {
       "treatment": "portrait",
       "asset": "/art/ives.jpg",
-      "reason": "Reuse the existing Helion official portrait for offers, origin work and source challenges. It conveys no authorized evidence extraction or authenticated historical command.",
+      "reason": "Reuse the existing Helion official portrait for offers, origin work and source challenges. It conveys no authorized evidence extraction or authenticated historical command. A briefed reader visit omits the repeated archive introduction; the legacy first encounter retains it. The hearing remains a source challenge at the same table, with no new visual event.",
       "scenes": [
         "act2_helion_door",
         "act2_helion",
@@ -260,7 +260,7 @@
     {
       "treatment": "background",
       "asset": "/art/canal.jpg",
-      "reason": "Reuse the established dry-canal backdrop for recovery and archive transitions. Evidence status remains in prose rather than an outcome image. Short canal returns retain Ren’s family context and an unresolved choice between street speech and paid silence; the setting depicts neither completed work nor publication. Consequence-specific returns reflect only earned work in prose; the neutral canal gives Ren no witness address, private statement or unearned outcome.",
+      "reason": "Reuse the established dry-canal backdrop for recovery and archive transitions. Evidence status remains in prose rather than an outcome image. Short canal returns retain Ren’s family context and an unresolved choice between street speech and paid silence; the setting depicts neither completed work nor publication. Consequence-specific returns reflect only earned work in prose; the neutral canal gives Ren no witness address, private statement or unearned outcome. The staged archive exit remembers Edda’s working shift beside the source; the neutral canal depicts no later employment response or completed inquiry.",
       "scenes": [
         "act2_middle",
         "act2_archive_verified"

@@ -3,6 +3,7 @@ import { witnessMethodResponse } from "../encounter-methods";
 import { spireVisitChoice } from "./spire";
 import { shelterVisitChoice } from "./shelter";
 import { freightVisitChoice } from "./freight";
+import { campaignReturnBeat } from "./campaign-beats";
 import { modelConsequence, modelClaim } from "../memory-model";
 import { kitBonuses } from "../loadout";
 import type { GameState, Scene } from "../types";
@@ -64,7 +65,7 @@ export const OPERATION_SCENES: Record<string, Scene> = {
     id: "act3_neighborhood", location: "Ward Nine", speaker: "Sera",
     text: (state) => {
       const returned = ["chapel_response_heard", "visited_nia", "visited_records", "visited_edda", "visited_notice", "visited_pump", "visited_asa", "spire_visited", "shelter_visited", "edda_shift_done"].some(flag => state.flags[flag]);
-      if (returned) return "Back at the neighborhood table, someone makes room for your cup. The conversations you finished stay in the journal; the people still waiting need their own answer.\n\nYou can visit another contact or go to the names. Neither route settles an inquiry for you.";
+      if (returned) return campaignReturnBeat(state) ?? "The places at the neighborhood table are still open. You can hear another person's answer or go to the names.";
       return `The clinic and the neighbors' table lie on the way to the wall. Your week has people waiting here.\n\n${state.flags.witness_relocated ? "Nia's second room is private. Lumen keeps the first register entry beside it." : state.flags.witness_lost ? "A tower inquiry names the room your transfer registered." : state.flags.witness_safe ? "Nia's message asks you to arrange a visit through the clinic." : state.flags.memory_witness || state.flags.memory_redacted ? "The transfer chair is still waiting. Protecting a roster did not move Nia." : "There is no transfer in your name. Your promise concerned the archive."}\n\n${state.flags.memory_doubled_down ? "One neighbor has stopped signing your packet." : state.flags.memory_corrected ? "The correction is clipped to your allegation." : state.flags.memory_source_shared ? "An independent source is attached at the records table." : "The records table is still comparing the export with what people remember."} Hear their answers, or go to Sera's names.`;
     },
     choices: [
@@ -100,7 +101,7 @@ export const OPERATION_SCENES: Record<string, Scene> = {
   },
   act3_records_visit: {
     id: "act3_records_visit", location: "Ward Nine records table", speaker: "Sera",
-    text: (state) => `${modelConsequence(state)}${state.flags.memory_model_tested ? "\n\n" : ""}${state.flags.order_verified ? "A mechanic has checked the independent source against the export. He points to two decisions: Mara's signature, then the cancellation. 'Now I can ask two questions instead of repeating one accusation.'" : "A mechanic has put a question mark beside the issuing key. 'The file says evacuation was canceled. I still need to know who sent it. Don't rub out the question mark because the wall is waiting.'"}\n\n${state.flags.memory_doubled_down ? "He has crossed his name off the distribution list. He will read a new source; he will not repeat the same unsupported certainty." : state.flags.memory_corrected ? "Your correction stays attached to the original packet. He says a correction is worth keeping because the first sentence already traveled." : "He keeps both the source and its limits in view."}\n\nSera closes the ledger. The names on the wall do not settle this inquiry. They tell you why it has to continue.`,
+    text: (state) => `${modelConsequence(state)}${state.flags.memory_model_tested ? "\n\n" : ""}${state.flags.order_verified ? "A mechanic has checked the independent source against the export. He points to two decisions: Mara's signature, then the cancellation. 'Now I can ask two questions instead of repeating one accusation.'" : "A mechanic has put a question mark beside the issuing key. 'The file says evacuation was canceled. I still need to know who sent it. Don't rub out the question mark because the wall is waiting.'"}${state.flags.memory_doubled_down ? "\n\nHe has crossed his name off the distribution list. He will read a new source; he will not repeat the same unsupported certainty." : state.flags.memory_corrected ? "\n\nYour correction stays attached to the original packet. He says a correction is worth keeping because the first sentence already traveled." : ""}\n\nSera closes the ledger. The names on the wall do not settle this inquiry. They tell you why it has to continue.`,
     choices: [{ id: "keep-limits", label: "Leave the source and its limits available for inspection.", effects: { flags: ["visited_records"] }, next: (state) => (state.flags.archive_custody || state.flags.pump_done) ? "act3_neighborhood" : "ward_wall" }],
   },
 };

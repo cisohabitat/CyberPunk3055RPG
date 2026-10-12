@@ -689,7 +689,7 @@ describe("staged archive source and custody", () => {
     state = step(state, "skip-archive-prep"); state = step(state, "separate-source-tests");
     state = { ...state, flags: { ...state.flags, perk_face: true } }; state = step(state, "request-invoice");
     assert.equal(state.flags.archive_key_authenticated, undefined);
-    assert.match(sceneText(getScene(state.sceneId), state), /Do not describe a maintenance countersignature/);
+    assert.match(sceneText(getScene(state.sceneId), state), /ledger corroborates the cancellation; no reader authenticated its issuing key/);
     state = step(state, "withhold-technician"); state = { ...state, sceneId: "act3_edda_visit", creds: 100 };
     assert.match(sceneText(getScene(state.sceneId), state), /suspended pending a records review/);
     state = step(state, "bridge-edda-shift"); assert.equal(state.creds, 60);

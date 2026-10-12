@@ -829,6 +829,65 @@ test("private payroll consent leaves public source permission unchanged", async 
   await expect(page.locator(".aftermath")).toContainText("neither clears her name");
 });
 
+for (const exposure of ["none", "edda_exposed", "archive_method_face", "archive_method_nerve"] as const) test(`Edda ${exposure} visit keeps posted shifts and suspension remedies distinct`, async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.addInitScript(() => localStorage.setItem("saint-shard-preferences", JSON.stringify({ reading: "all", motion: "reduce", textStep: 2, contrast: "high" })));
+  const flags = { archive_custody: true, edda_name_withheld: true, ...(exposure === "none" ? {} : { [exposure]: true }) };
+  await openRun(page, fixture("act3_edda_visit", { creds: 75, flags }));
+  const text = page.getByTestId("scene-text");
+  if (exposure === "none") {
+    await expect(text).toContainText("shifts are still posted");
+    await expect(text).not.toContainText("bridge");
+    await expect(text).not.toContainText("suspended");
+    await expect(page.getByTestId("choice-bridge-edda-shift")).toHaveCount(0);
+    await expect(page.getByTestId("choice-review-edda-shift")).toHaveCount(0);
+  } else {
+    await expect(text).toContainText("suspended pending a records review");
+    await expect(page.getByTestId("choice-bridge-edda-shift")).toBeEnabled();
+    await expect(page.getByTestId("choice-review-edda-shift")).toBeVisible();
+  }
+  await expect(page.getByTestId("goal")).toBeInViewport();
+  const keep = page.getByTestId("choice-respect-edda-source");
+  await expect(keep).toHaveText(/Record her limits and keep the source available/);
+  await keyboardActivate(page, keep);
+  await expect(text).toContainText(exposure === "none" ? "shifts are still posted" : "shift remains suspended");
+  const before = await page.evaluate(() => localStorage.getItem("saint-shard-3055-v1"));
+  await page.reload(); await keyboardActivate(page, page.getByTestId("continue-run"));
+  await expect(text).toContainText(exposure === "none" ? "shifts are still posted" : "shift remains suspended");
+  expect(await page.evaluate(() => localStorage.getItem("saint-shard-3055-v1"))).toBe(before);
+  const state = JSON.parse(before!); expect(state.creds).toBe(75); expect(state.flags.visited_edda).toBe(true);
+  expect(state.flags.edda_supported).toBeUndefined(); expect(state.flags.edda_shift_paid).toBeUndefined(); expect(state.flags.edda_public_consent).toBeUndefined();
+  expect(state.log.at(-1)).toBe("Record her limits and keep the source available.");
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations).toEqual([]);
+});
+
+test("neighborhood saved replies keep legacy Edda labels and paused unrecorded Nia contact", async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 844 });
+  await page.addInitScript(() => localStorage.setItem("saint-shard-preferences", JSON.stringify({ reading: "all", motion: "reduce", textStep: 2, contrast: "high", artwork: "none" })));
+  const old = "Record her limits and leave the employment review unresolved.";
+  const cases: { flags: Record<string, boolean>; log: string[]; expected: string }[] = [
+    { flags: { visited_edda: true }, log: [old], expected: "shifts are still posted" },
+    { flags: { visited_edda: true, archive_method_face: true }, log: [old], expected: "shift remains suspended" },
+    { flags: { visited_nia: true, nia_contact_paused: true }, log: ["Offer no further questions. Let her pause contact."], expected: "recorder stays off" },
+    { flags: { visited_nia: true, nia_contact_paused: true, nia_contact_relay: true }, log: ["Accept a clinic relay; Nia decides whether to answer."], expected: "places at the neighborhood table" },
+  ];
+  for (const [index, item] of cases.entries()) {
+    const state = fixture("act3_neighborhood", { flags: item.flags, log: item.log });
+    if (!index) await openRun(page, state);
+    else { await page.evaluate(run => localStorage.setItem("saint-shard-3055-v1", JSON.stringify(run)), state); await page.reload(); await keyboardActivate(page, page.getByTestId("continue-run")); }
+    const before = await page.evaluate(() => localStorage.getItem("saint-shard-3055-v1"));
+    await expect(page.getByTestId("scene-text")).toContainText(item.expected);
+    await expect(page.getByTestId("goal")).toBeInViewport();
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    await page.reload(); await keyboardActivate(page, page.getByTestId("continue-run"));
+    await expect(page.getByTestId("scene-text")).toContainText(item.expected);
+    expect(await page.evaluate(() => localStorage.getItem("saint-shard-3055-v1"))).toBe(before);
+    expect(JSON.parse(before!).flags.nia_public_consent).toBeUndefined();
+    expect(JSON.parse(before!).journal.some((entry: { id: string }) => entry.id === "nia-account")).toBe(false);
+  }
+});
+
 test("worker representation follows a paid bridge without restoring a shift", async ({ page }) => {
   await openRun(page, fixture("act3_edda_visit", { creds: 100, flags: { archive_custody: true, edda_exposed: true } }));
   for (const id of ["bridge-edda-shift", "return-edda-payroll", "authorize-shift-request"]) await page.getByTestId(`choice-${id}`).click();

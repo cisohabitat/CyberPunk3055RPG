@@ -2,6 +2,7 @@ import type { GameState } from "../types";
 
 type ReturnBeat = {
   label: string;
+  legacyLabels?: string[];
   when: (state: GameState) => boolean;
   text: string | ((state: GameState) => string);
 };
@@ -10,6 +11,15 @@ type ReturnBeat = {
 // requires the earned flag/journal fact; old or unrecognized logs use the hub's
 // neutral fallback. Do not give Ren or Sera private knowledge through these lines.
 export const RETURN_BEATS: Record<string, ReturnBeat[]> = {
+  act3_neighborhood: [
+    { label: "Keep the actual reply. Return to the neighbors.", when: s => s.flags.chapel_response_heard, text: "Lumen's reply stays beside the Chapel docket. At the neighborhood table, a cup waits for you. There are other people to hear before the names, if you choose." },
+    { label: "Contribute forty creds to the suspended shift.", when: s => s.flags.visited_edda && s.flags.edda_supported && (s.flags.edda_exposed || s.flags.archive_method_face || s.flags.archive_method_nerve), text: "Edda keeps the forty-creds contribution beside the suspended shift and the employer's review. You come back to the table without calling either matter settled." },
+    { label: "Record her limits and keep the source available.", legacyLabels: ["Record her limits and leave the employment review unresolved."], when: s => s.flags.visited_edda, text: s => s.flags.edda_exposed || s.flags.archive_method_face || s.flags.archive_method_nerve
+      ? "Edda's shift remains suspended; her source remains open to inspection. You kept her answer without turning the review into a dismissal. Other people are still waiting at the table."
+      : "Edda's shifts are still posted. Her message stays beside the unnamed public copy. You return to the table with her wish for ordinary work, rather than another allegation." },
+    { label: "Accept a clinic relay; Nia decides whether to answer.", when: s => s.flags.visited_nia && s.flags.nia_contact_relay && !s.flags.nia_contact_paused, text: "The clinic can carry your next question. Nia will decide whether it gets an answer. You come back to the table without a new recording or new permission to quote her." },
+    { label: "Offer no further questions. Let her pause contact.", when: s => s.flags.visited_nia && s.flags.nia_contact_paused, text: s => `You leave Nia the quiet she asked for. ${s.journal.some(e => e.id === "nia-account") ? "Her account keeps its existing terms; returning to the table does not reopen contact." : "The recorder stays off. Returning to the table does not reopen contact or supply an approved account."} The memorial names are still waiting beyond it.` },
+  ],
   act2_middle: [
     { label: "Pause recovery. Keep Kerr's request open.", when: s => s.flags.kerr_route_failed && !s.flags.kerr_route_done && !s.flags.kerr_route_collected, text: "The case stays on the depot shelf. You come back with the failed attempt still yours, but without calling Kerr's request closed. There is time left in the week to decide what you can afford." },
     { label: "Record the observed handover and its actual terms.", when: s => s.flags.kerr_route_delivered, text: s => s.flags.kerr_route_trace
@@ -63,6 +73,7 @@ export const RETURN_BEATS: Record<string, ReturnBeat[]> = {
 
 export function campaignReturnBeat(state: GameState): string | null {
   const label = state.log.at(-1);
-  const beat = RETURN_BEATS[state.sceneId]?.find(entry => entry.label === label && entry.when(state));
+  if (label === undefined) return null;
+  const beat = RETURN_BEATS[state.sceneId]?.find(entry => (entry.label === label || entry.legacyLabels?.includes(label)) && entry.when(state));
   return beat ? typeof beat.text === "function" ? beat.text(state) : beat.text : null;
 }

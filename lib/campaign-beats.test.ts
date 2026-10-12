@@ -80,4 +80,35 @@ describe("campaign return beats", () => {
     assert.ok(matchingVisits >= 350, `Only ${matchingVisits} authored visits select a return beat`);
     assert.ok(covered.size >= 20, `Only ${covered.size} selectors exercised`);
   });
+  it("keeps Edda's posted shifts separate from an observed suspension and its remedies", () => {
+    const unexposed = { ...base("act3_edda_visit"), flags: { archive_custody: true, edda_name_withheld: true } };
+    const before = JSON.stringify(unexposed);
+    const text = sceneText(getScene(unexposed.sceneId), unexposed);
+    assert.match(text, /shifts are still posted/);
+    assert.doesNotMatch(text, /lost shift|suspended|dismissal|bridge/);
+    assert.ok(!presentChoices(unexposed, getScene(unexposed.sceneId)).some(c => ["bridge-edda-shift", "review-edda-shift"].includes(c.id) && c.enabled));
+    assert.equal(JSON.stringify(unexposed), before);
+    for (const exposure of ["edda_exposed", "archive_method_face", "archive_method_nerve"]) {
+      const state = { ...unexposed, flags: { ...unexposed.flags, [exposure]: true } };
+      assert.match(sceneText(getScene(state.sceneId), state), /suspended pending a records review/);
+      assert.doesNotMatch(sceneText(getScene(state.sceneId), state), /shifts are still posted/);
+      assert.ok(presentChoices(state, getScene(state.sceneId)).some(c => c.id === "review-edda-shift" && c.enabled));
+      assert.equal(state.flags.edda_name_withheld, true);
+    }
+  });
+  it("requires the actual neighborhood reply and preserves unavailable recordings and paused contact", () => {
+    const relay = { ...base("act3_neighborhood"), flags: { visited_nia: true, nia_contact_relay: true }, log: ["Accept a clinic relay; Nia decides whether to answer."] };
+    const before = JSON.stringify(relay);
+    assert.match(campaignReturnBeat(relay)!, /without a new recording or new permission/);
+    assert.equal(campaignReturnBeat({ ...relay, flags: { ...relay.flags, nia_contact_paused: true } }), null);
+    const pause = { ...relay, flags: { visited_nia: true, nia_contact_paused: true }, log: ["Offer no further questions. Let her pause contact."] };
+    assert.match(campaignReturnBeat(pause)!, /recorder stays off/);
+    assert.doesNotMatch(campaignReturnBeat(pause)!, /Her account keeps/);
+    assert.match(campaignReturnBeat({ ...pause, journal: [{ id: "nia-account", text: "Approved private account" }] })!, /existing terms/);
+    assert.equal(JSON.stringify(relay), before);
+    assert.match(campaignReturnBeat({ ...base("act3_neighborhood"), flags: { visited_edda: true }, log: ["Record her limits and leave the employment review unresolved."] })!, /shifts are still posted/);
+    assert.match(campaignReturnBeat({ ...base("act3_neighborhood"), flags: { visited_edda: true, archive_method_nerve: true }, log: ["Record her limits and keep the source available."] })!, /remains suspended/);
+    assert.equal(campaignReturnBeat({ ...base("act3_neighborhood"), log: ["Record her limits and leave the employment review unresolved."] }), null);
+    assert.equal(campaignReturnBeat({ ...base("act3_neighborhood"), flags: { visited_edda: true, edda_supported: true }, log: ["Contribute forty creds to the suspended shift."] }), null);
+  });
 });

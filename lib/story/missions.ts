@@ -80,7 +80,9 @@ export const MISSION_SCENES: Record<string, Scene> = {
   },
   act2_archive_door: {
     id: "act2_archive_door", location: "Helion service archive", speaker: "Ives",
-    text: "Your intact export has a receipt number. The tower keeps its counterpart in a service archive, beside revisions to the maintenance schedule.\n\nIves meets you outside the reader. \"If you allege an instruction, identify its issuer. We will challenge anything less.\"\n\nYou can authenticate the command chain. A rejected query will reveal which record you brought.",
+    text: (state) => state.flags.archive_briefed
+      ? "Ives waits at the reader. The record number you compared is already on its screen.\n\n\"If you allege an instruction, identify its issuer. We will challenge anything less.\"\n\nA rejected query will reveal which record you brought. Edda keeps the staffed ledger desk open."
+      : "Your intact export has a receipt number. The tower keeps its counterpart in a service archive, beside revisions to the maintenance schedule.\n\nIves meets you outside the reader. \"If you allege an instruction, identify its issuer. We will challenge anything less.\"\n\nYou can authenticate the command chain. A rejected query will reveal which record you brought.",
     choices: [
       { id: "trace-receipt", label: "Match the receipt to its issuing key.", check: { stat: "chrome", dc: 9, label: "Authenticate the counter-order", flagBonuses: [{ flag: "archive_indexed", amount: 2, label: "Index compared" }, { flag: "archive_reader_alert", amount: -1, label: "Reader alerted" }], itemBonuses: [...kitBonuses("chrome"), { item: "signal-baffle", amount: 1 }, { item: "spoof-chip", amount: 1 }] }, successEffects: { flags: ["archive_done", "order_verified", "archive_key_authenticated"], factions: { wards: 1, helion: -1 }, journal: [{ id: "verified-order", text: "The service archive authenticates the key that canceled Ward Nine's evacuation.", kind: "fact" }] }, failEffects: { strain: 1, flags: ["archive_flagged"], factions: { helion: 1 } }, resultSuccess: "The issuing key matches. Mara's account has a command chain attached.", resultFail: "The reader quarantines the key and logs your query. A technician offers another way to corroborate it.", nextSuccess: archiveArrival, nextFail: "act2_archive_gap" },
       { id: "isolate-key", label: "Isolate the issuing key on a local reader.", detail: "Signal discipline. Strain +1; the reader authenticates the key without a network query.", requireFlag: "perk_chrome", effects: { strain: 1, flags: ["archive_done", "order_verified", "archive_method_chrome", "archive_key_authenticated"], factions: { wards: 1 }, journal: [{ id: "verified-order", text: "A local service reader authenticated the exported cancellation against the issuing key.", kind: "fact" }] }, next: archiveArrival },
@@ -102,7 +104,9 @@ export const MISSION_SCENES: Record<string, Scene> = {
   },
   act2_archive_verified: {
     id: "act2_archive_verified", location: "The dry canal",
-    text: "The signature is still Mara's. An independent source corroborates the later evacuation counter-order. Neither fact cancels the other.\n\nYou can give Sera a chain someone outside the chapel can examine. The dead are no longer evidence only a corporation can authenticate.",
+    text: (state) => state.flags.archive_briefed
+      ? "At the canal, the ledger reference belongs beside the export now. Mara's signature and the later cancellation remain separate decisions.\n\nEdda has a shift to return to. You have an account to carry to Ward Nine."
+      : "The signature is still Mara's. An independent source corroborates the later evacuation counter-order. Neither fact cancels the other.\n\nYou can give Sera a chain someone outside the chapel can examine. The dead are no longer evidence only a corporation can authenticate.",
     choices: [{ id: "keep-chain", label: "Keep both decisions attached.", effects: { flags: ["archive_done", "order_verified"], journal: [{ id: "verified-order", text: "An independent source corroborates Helion's canceled evacuation.", kind: "fact" }] }, next: "act2_middle" }],
   },
 };
