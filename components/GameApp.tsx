@@ -9,7 +9,7 @@ import { SaveDialog } from "./SaveDialog";
 import { SettingsDialog } from "./SettingsDialog";
 import { clearSave, emptyCodex, loadCodex, loadSave, usedBackup, writeSave } from "@/lib/storage";
 import { applyPreferences, DEFAULT_PREFERENCES, loadPreferences, writePreferences, type Preferences } from "@/lib/preferences";
-import { setAudioMix, setBed, unlockAudio, type BedStatus } from "@/lib/sound";
+import { setAudioMix, setBed, unlockAudio, whenAudioRunning, type BedStatus } from "@/lib/sound";
 import { checkpointLabel } from "@/lib/checkpoints";
 import { recordIncident } from "@/lib/diagnostics";
 import type { Codex, GameState } from "@/lib/types";
@@ -27,7 +27,8 @@ export function GameApp() {
   const [preferences, setPreferences] = useState<Preferences>(DEFAULT_PREFERENCES);
   const [dialog, setDialog] = useState<"saves" | "settings" | null>(null);
   const [audioPaused, setAudioPaused] = useState(false);
-  const [menuMusicRequested, setMenuMusicRequested] = useState(false);
+  const [menuMusicRequested, setMenuMusicRequested] = useState(true);
+  const [menuMusicActivated, setMenuMusicActivated] = useState(false);
   const [menuMusicStatus, setMenuMusicStatus] = useState<BedStatus>("idle");
 
   useController(preferences.controller);
@@ -41,9 +42,24 @@ export function GameApp() {
   useEffect(() => { setAudioMix(preferences); }, [preferences]);
   useEffect(() => {
     if (screen === "play") { setMenuMusicStatus("idle"); return; }
-    const on = screen === "title" && menuMusicRequested && preferences.sound && preferences.music > 0 && !audioPaused;
+    const on = ready && screen === "title" && menuMusicRequested && menuMusicActivated && preferences.sound && preferences.music > 0 && !audioPaused;
     setBed(on, "title", "street", setMenuMusicStatus);
-  }, [screen, menuMusicRequested, preferences.sound, preferences.music, audioPaused]);
+  }, [ready, screen, menuMusicRequested, menuMusicActivated, preferences.sound, preferences.music, audioPaused]);
+  useEffect(() => {
+    if (!ready || screen !== "title" || !menuMusicRequested || menuMusicActivated || !preferences.sound || preferences.music === 0 || audioPaused) return;
+    const cancel = whenAudioRunning(() => setMenuMusicActivated(true));
+    function activate(event: Event) {
+      // Navigation should hand off directly, without downloading a menu-only track.
+      if (event.target instanceof Element && event.target.closest('[data-testid="new-run"], [data-testid="continue-run"], [data-testid="title-music"] button')) return;
+      if (event instanceof KeyboardEvent && (event.repeat || !["Enter", " "].includes(event.key))) return;
+      unlockAudio();
+    }
+    document.addEventListener("pointerdown", activate);
+    document.addEventListener("keydown", activate);
+    return () => {
+      cancel(); document.removeEventListener("pointerdown", activate); document.removeEventListener("keydown", activate);
+    };
+  }, [ready, screen, menuMusicRequested, menuMusicActivated, preferences.sound, preferences.music, audioPaused]);
   useEffect(() => {
     function pause() {
       if (!preferences.sound) return;
@@ -70,8 +86,8 @@ export function GameApp() {
   function updatePreferences(next: Preferences) {
     if (next.sound && !preferences.sound) {
       unlockAudio(); setAudioPaused(false);
-      if (screen === "title") setMenuMusicRequested(true);
-    } else if (next.sound && next.music > 0 && preferences.music === 0) unlockAudio();
+      if (screen === "title") { setMenuMusicRequested(true); setMenuMusicActivated(true); }
+    } else if (next.sound && next.music > 0 && preferences.music === 0) { unlockAudio(); setMenuMusicActivated(true); }
     if (!next.sound) setAudioPaused(false);
     setPreferences(next); applyPreferences(next); writePreferences(next);
   }
@@ -82,7 +98,7 @@ export function GameApp() {
     } else {
       unlockAudio();
       if (!preferences.sound) updatePreferences({ ...preferences, sound: true });
-      setAudioPaused(false); setMenuMusicRequested(true);
+      setAudioPaused(false); setMenuMusicRequested(true); setMenuMusicActivated(true);
       setBed(true, "title", "street", setMenuMusicStatus);
     }
   }
@@ -104,6 +120,7 @@ export function GameApp() {
       : <TitleScreen save={saved} codex={codex} saveFailed={saveFailed} recovered={recovered}
           artwork={preferences.artwork !== "none"}
           musicStatus={menuMusicStatus} musicMuted={preferences.music === 0} musicPaused={audioPaused && menuMusicRequested}
+          musicWaiting={menuMusicRequested && !menuMusicActivated && preferences.sound && preferences.music > 0 && !audioPaused}
           onMusic={toggleMenuMusic}
           onSettings={() => setDialog("settings")} onSaves={() => setDialog("saves")}
           onContinue={() => { if (saved) load(saved); }} onNew={() => setScreen("create")} />}

@@ -26,14 +26,15 @@ async function clean(page: Page) {
   const current = await audio(page); expect(current.sourcesCreated).toBe(current.sourcesDisposed); expect(current.buffersCleared).toBe(current.sourcesCreated);
 }
 
-test("title music is opt-in and crosses its prepared loop before stopping", async ({ page }) => {
+test("fresh title music starts by default and crosses its prepared loop before stopping", async ({ page }) => {
   test.setTimeout(90_000);
   await observe(page);
-  await page.addInitScript(() => localStorage.setItem("saint-shard-preferences", JSON.stringify({ sound: true, autoVoices: false, motion: "reduce" })));
   const requests: string[] = []; page.on("request", r => { if (r.url().includes("/audio/")) requests.push(r.url()); });
   await page.goto("/"); await expect(page.getByTestId("title-screen")).toBeVisible();
-  expect(requests).toEqual([]); const before = await saved(page);
-  await keyboardActivate(page, page.getByRole("button", { name: "Play menu music", exact: true }));
+  const before = await saved(page);
+  // A browser may suspend autoplay. An ordinary title interaction unlocks it;
+  // the player never has to opt into the soundtrack with its Play button.
+  await page.getByRole("heading", { name: "Saint Shard", exact: true }).click();
   await expect.poll(async () => (await audio(page)).started).toContain("theme-title.flac");
   expect(requests).toHaveLength(1); expect(requests[0]).toContain("theme-title.flac");
   const loop = await page.evaluate(() => {
@@ -49,7 +50,29 @@ test("title music is opt-in and crosses its prepared loop before stopping", asyn
   expect((await audio(page)).started.filter(name => name === "theme-title.flac")).toHaveLength(1);
   expect((await audio(page)).liveSources).toBe(1); expect(await saved(page)).toBe(before);
   await keyboardActivate(page, page.getByRole("button", { name: "Stop menu music", exact: true })); await clean(page);
+  await keyboardActivate(page, page.getByRole("button", { name: "Show replay hints", exact: true })); await clean(page);
   await keyboardActivate(page, page.getByTestId("new-run")); await expect(page.getByTestId("handle-input")).toBeVisible(); await clean(page);
+});
+
+for (const muted of [{ sound: false }, { music: 0 }]) {
+  test(`default title music respects saved ${"sound" in muted ? "Sound off" : "zero Music volume"}`, async ({ page }) => {
+    await observe(page);
+    await page.addInitScript(preferences => localStorage.setItem("saint-shard-preferences", JSON.stringify(preferences)), muted);
+    const requests: string[] = []; page.on("request", r => { if (r.url().includes("/audio/")) requests.push(r.url()); });
+    await page.goto("/");
+    await keyboardActivate(page, page.getByRole("button", { name: "Show replay hints", exact: true }));
+    await keyboardActivate(page, page.getByRole("button", { name: "Settings", exact: true }));
+    await expect(page.getByLabel("Sound enabled", { exact: true })).toBeChecked({ checked: !("sound" in muted) });
+    await keyboardActivate(page, page.getByRole("button", { name: "Done", exact: true }));
+    expect(requests).toEqual([]); await clean(page);
+  });
+}
+
+test("a keyboard menu interaction starts the default theme without using Play", async ({ page }) => {
+  await observe(page); await page.goto("/");
+  await keyboardActivate(page, page.getByRole("button", { name: "Show replay hints", exact: true }));
+  await expect.poll(async () => (await audio(page)).started).toContain("theme-title.flac");
+  await keyboardActivate(page, page.getByRole("button", { name: "Stop menu music", exact: true })); await clean(page);
 });
 
 test("title music respects mixer, hidden-page pause and voiced gameplay handoff", async ({ page }) => {
@@ -60,7 +83,7 @@ test("title music respects mixer, hidden-page pause and voiced gameplay handoff"
     localStorage.setItem("saint-shard-preferences", JSON.stringify({ autoVoices: false, reading: "all", motion: "reduce", artwork: "none", effects: 0, textStep: 2, contrast: "high" }));
   }, run);
   await page.goto("/"); const before = await saved(page);
-  await keyboardActivate(page, page.getByRole("button", { name: "Play menu music", exact: true }));
+  await keyboardActivate(page, page.getByRole("button", { name: "Show replay hints", exact: true }));
   await expect.poll(async () => (await audio(page)).liveSources).toBe(1);
   await keyboardActivate(page, page.getByRole("button", { name: "Settings", exact: true }));
   await page.getByLabel("music volume", { exact: true }).focus(); await page.keyboard.press("Home"); await clean(page);
@@ -90,7 +113,7 @@ test("title music respects mixer, hidden-page pause and voiced gameplay handoff"
 test("unavailable title music preserves menu actions and can retry", async ({ page }) => {
   await observe(page); let attempts = 0;
   await page.route("**/audio/theme-title.flac", route => ++attempts === 1 ? route.abort() : route.continue());
-  await page.goto("/"); await keyboardActivate(page, page.getByRole("button", { name: "Play menu music", exact: true }));
+  await page.goto("/"); await keyboardActivate(page, page.getByRole("button", { name: "Show replay hints", exact: true }));
   await expect(page.getByTestId("title-music")).toContainText("Music unavailable");
   await expect(page.getByTestId("new-run")).toBeEnabled(); await expect(page.getByRole("button", { name: "Settings", exact: true })).toBeEnabled();
   await keyboardActivate(page, page.getByRole("button", { name: "Play menu music", exact: true }));
@@ -101,7 +124,7 @@ test("unavailable title music preserves menu actions and can retry", async ({ pa
 test("leaving title with pending music prevents a late menu start", async ({ page }) => {
   await observe(page); let release!: () => void; const gate = new Promise<void>(resolve => { release = resolve; });
   await page.route("**/audio/theme-title.flac", async route => { const response = await route.fetch(); await gate; await route.fulfill({ response }); });
-  await page.goto("/"); await keyboardActivate(page, page.getByRole("button", { name: "Play menu music", exact: true }));
+  await page.goto("/"); await keyboardActivate(page, page.getByRole("button", { name: "Show replay hints", exact: true }));
   await expect(page.getByTestId("title-music")).toContainText("Loading Under the Awning");
   await keyboardActivate(page, page.getByTestId("new-run")); release();
   await expect.poll(async () => (await audio(page)).decoded).toContain("theme-title.flac");

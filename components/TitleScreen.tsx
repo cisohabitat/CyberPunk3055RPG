@@ -25,6 +25,7 @@ export function TitleScreen({
   musicStatus = "idle",
   musicMuted = false,
   musicPaused = false,
+  musicWaiting = false,
   onMusic,
 }: {
   save: GameState | null;
@@ -39,6 +40,7 @@ export function TitleScreen({
   musicStatus?: BedStatus;
   musicMuted?: boolean;
   musicPaused?: boolean;
+  musicWaiting?: boolean;
   onMusic?: () => void;
 }) {
   const [confirm, setConfirm] = useState(false);
@@ -78,7 +80,7 @@ export function TitleScreen({
               <button className="ghost" type="button" disabled={musicMuted} onClick={onMusic}>
                 {musicStatus === "playing" || musicStatus === "loading" ? "Stop menu music" : musicPaused ? "Resume menu music" : "Play menu music"}
               </button>
-              <p className="hint" role={musicMuted || musicStatus === "loading" || musicStatus === "unavailable" || musicPaused ? "status" : undefined}>{musicMuted ? "Music volume is off. Adjust it in Settings to listen." : musicStatus === "loading" ? "Loading Under the Awning…" : musicStatus === "unavailable" ? "Music unavailable. You can still start the game." : musicPaused ? "Music paused while you were away." : "Under the Awning · menu theme"}</p>
+              <p className="hint" role={musicMuted || musicStatus === "loading" || musicStatus === "unavailable" || musicPaused ? "status" : undefined}>{musicMuted ? "Music volume is off. Adjust it in Settings to listen." : musicStatus === "loading" ? "Loading Under the Awning…" : musicStatus === "unavailable" ? "Music unavailable. You can still start the game." : musicPaused ? "Music paused while you were away." : musicWaiting ? "Under the Awning · starts automatically when your browser allows sound." : "Under the Awning · menu theme"}</p>
             </div>}
             {recovered && <p role="status">Your last autosave could not be read. The automatic backup is ready to continue.</p>}
             {save && scene && (

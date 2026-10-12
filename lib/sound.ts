@@ -35,6 +35,23 @@ export function unlockAudio() {
     if (audio.state !== "running" && audio.state !== "closed") void audio.resume().catch(() => {});
   } catch { /* Unsupported audio must never block play. */ }
 }
+/** Autoplay may be suspended until a gesture; do not fetch the menu track yet. */
+export function whenAudioRunning(onRunning: () => void): () => void {
+  try {
+    const audio = context();
+    let active = true;
+    const check = () => {
+      if (active && audio.state === "running") {
+        active = false;
+        audio.removeEventListener("statechange", check);
+        onRunning();
+      }
+    };
+    audio.addEventListener("statechange", check);
+    unlockAudio(); check();
+    return () => { active = false; audio.removeEventListener("statechange", check); };
+  } catch { return () => {}; }
+}
 function bus(channel: keyof typeof mix) {
   const audio = context();
   let gain = buses.get(channel);
