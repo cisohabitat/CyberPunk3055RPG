@@ -7,7 +7,7 @@
     "unitAndReplayChecks": 484,
     "typescript": "passed",
     "build": "passed",
-    "focusedBrowserChecks": 48,
+    "focusedBrowserChecks": 57,
     "profiles": [
       "Chromium",
       "phone Chromium",
@@ -118,5 +118,15 @@
   },
   "releaseRequirement": "Exact-commit Test/Build success and public title/voice/campaign verification before publication claim.",
   "artDecision": "Existing suitable title art retained; no story scene or illustration introduced.",
-  "limitations": "Source-informed simulated keyboard play, synthetic viewports and signal/runtime observations. No subjective listening, independent rights or physical-device acceptance. Grade remains 8.2."
+  "limitations": "Source-informed simulated keyboard play, synthetic viewports and signal/runtime observations. No subjective listening, independent rights or physical-device acceptance. Grade remains 8.2.",
+  "initialCI": {
+    "revision": "b23ec4a9976d7afdd7c02a504734e68aa830f6f3",
+    "run": 38261841182,
+    "passed": 959,
+    "flaky": 1,
+    "failed": 4,
+    "reason": "Static menu-track caption incorrectly used role=status, making the existing backup-recovery assertion ambiguous in all four profiles. One existing long WebKit campaign passed on retry.",
+    "correction": "Use live status only for actual music feedback. Recovery assertion and music/voice behavior remain unchanged; rerun full CI.",
+    "additionalLocalCorrectionChecks": 9
+  }
 }
