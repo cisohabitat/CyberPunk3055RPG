@@ -1,0 +1,122 @@
+{
+  "baselineRevision": "09dc8894d5922b7e7e8447b49d532a894fa1946c",
+  "date": "2026-10-12",
+  "purpose": "Supplied music on the title page with explicit opt-in and unchanged scene/voice playback",
+  "provenance": "qa/media/title-music.json",
+  "localValidation": {
+    "unitAndReplayChecks": 484,
+    "typescript": "passed",
+    "build": "passed",
+    "focusedBrowserChecks": 48,
+    "profiles": [
+      "Chromium",
+      "phone Chromium",
+      "WebKit"
+    ],
+    "fullLoopObserved": true,
+    "initialCandidate": {
+      "format": "MP3",
+      "passed": 47,
+      "failed": 1,
+      "reason": "WebKit decoded a discontinuity at the prepared loop seam. Replaced the delivery with stereo FLAC; original MP3 remains unchanged."
+    },
+    "completeCampaigns": [
+      {
+        "route": "qa/routes/response-public-revised.json",
+        "width": 390,
+        "artwork": "full",
+        "reading": "paragraph",
+        "sound": true,
+        "visits": 74,
+        "reloads": 23,
+        "voices": 10,
+        "completedVoices": [
+          "voice-quill-offer.wav",
+          "voice-mara-revelation.wav",
+          "voice-lumen-publication.wav",
+          "voice-mara-response.wav",
+          "voice-mara-public-refusal.wav",
+          "voice-mara-tomorrow.wav",
+          "voice-nia-arrival.wav",
+          "voice-nia-arrival.wav",
+          "voice-lumen-boundary.wav",
+          "voice-sera-names.wav"
+        ],
+        "final": {
+          "sceneId": "ending_names",
+          "creds": 375,
+          "strain": 2,
+          "rolls": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ]
+        }
+      },
+      {
+        "route": "qa/routes/performance-scarce.json",
+        "width": 320,
+        "artwork": "none",
+        "reading": "paragraph",
+        "sound": true,
+        "visits": 68,
+        "reloads": 49,
+        "voices": 7,
+        "completedVoices": [
+          "voice-quill-offer.wav",
+          "voice-mara-revelation.wav",
+          "voice-lumen-publication.wav",
+          "voice-mara-response.wav",
+          "voice-lumen-staying.wav",
+          "voice-kerr-personal.wav",
+          "voice-sera-quiet.wav"
+        ],
+        "final": {
+          "sceneId": "ending_quiet",
+          "creds": 0,
+          "strain": 5,
+          "rolls": [
+            1,
+            1,
+            8,
+            8,
+            8,
+            1
+          ]
+        }
+      },
+      {
+        "route": "qa/routes/opening-skip-minimal.json",
+        "width": 1440,
+        "artwork": "none",
+        "reading": "paragraph",
+        "sound": false,
+        "visits": 28,
+        "reloads": 6,
+        "voices": 0,
+        "completedVoices": [],
+        "final": {
+          "sceneId": "ending_quiet",
+          "creds": 390,
+          "strain": 0,
+          "rolls": [
+            8,
+            8,
+            8,
+            8
+          ]
+        }
+      }
+    ],
+    "visits": 170,
+    "reloads": 78,
+    "pageErrors": 0,
+    "mediaErrors": 0
+  },
+  "releaseRequirement": "Exact-commit Test/Build success and public title/voice/campaign verification before publication claim.",
+  "artDecision": "Existing suitable title art retained; no story scene or illustration introduced.",
+  "limitations": "Source-informed simulated keyboard play, synthetic viewports and signal/runtime observations. No subjective listening, independent rights or physical-device acceptance. Grade remains 8.2."
+}

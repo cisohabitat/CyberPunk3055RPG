@@ -1,0 +1,39 @@
+{
+  "title": "Under the Awning",
+  "purpose": "Optional starting-page music; separate from the existing street score.",
+  "source": {
+    "path": "qa/media/title-music-source/under_the_awning.mp3",
+    "originalFilename": "under_the_awning.mp3",
+    "providedBy": "Project owner attachment, 12 October 2026",
+    "creatorOrGenerator": "Not specified in the attachment",
+    "licenseDetails": "Not supplied; no additional rights claim",
+    "sha256": "2bf8e6ff143269dcbd33256c86a9710a3d9c9cf2936eb02737770857566d4b78",
+    "bytes": 1540242
+  },
+  "delivery": {
+    "path": "public/audio/theme-title.flac",
+    "format": "FLAC",
+    "bits": 16,
+    "sampleRate": 22050,
+    "channels": 2,
+    "sha256": "d7e9be683af76dc74f1dd94611ddf9981f89a9e66904e2c40983388ad4fa8d9e",
+    "bytes": 2628326,
+    "decodedDurationSeconds": 63.92163265306122,
+    "loopStartSeconds": 4,
+    "loopDurationSeconds": 59.92163265306122,
+    "peak": 0.250701904296875,
+    "rms": 0.04875630512833595,
+    "loopSeamJump": [
+      0.002838134765625,
+      0.002899169921875
+    ]
+  },
+  "processing": {
+    "script": "scripts/prepare-title-music.py",
+    "gainDb": -12,
+    "tailOverlapSeconds": 4,
+    "method": "Linear overlap of the final four seconds with the opening four seconds. Original intro plays once; looping resumes at four seconds. Source MP3 is retained unchanged.",
+    "ffmpegVersion": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers"
+  },
+  "acceptance": "Signal and browser loop checks are technical evidence, not independent listening acceptance."
+}

@@ -10,6 +10,8 @@ import { SCENES } from "./story";
 import { visibleDialogue } from "./memory-media";
 import directed from "../qa/media/audio-provenance.json";
 import { sceneSoundPlan } from "./sound";
+import titleMusic from "../qa/media/title-music.json";
+import { TITLE_MUSIC } from "./title-music";
 
 function readWav(name: string) {
   const buf = readFileSync(fileURLToPath(new URL(`../public/audio/${name}.wav`, import.meta.url)));
@@ -43,6 +45,22 @@ function medianAbs(samples: number[]) {
 }
 
 describe("beds", () => {
+  it("retains the supplied title master and ships its separate bounded loop delivery", () => {
+    for (const record of [titleMusic.source, titleMusic.delivery]) {
+      const bytes = readFileSync(new URL(`../${record.path}`, import.meta.url));
+      assert.equal(bytes.length, record.bytes);
+      assert.equal(createHash("sha256").update(bytes).digest("hex"), record.sha256);
+    }
+    assert.equal(titleMusic.delivery.path, `public/audio/${TITLE_MUSIC.name}.${TITLE_MUSIC.extension}`);
+    assert.equal(titleMusic.delivery.loopStartSeconds, TITLE_MUSIC.loopStartSeconds);
+    assert.ok(titleMusic.delivery.bytes < 3_145_728);
+    assert.ok(titleMusic.delivery.decodedDurationSeconds > 60 && titleMusic.delivery.decodedDurationSeconds < 65);
+    assert.equal(titleMusic.delivery.channels, 2);
+    assert.ok(titleMusic.delivery.peak > .1 && titleMusic.delivery.peak < .3);
+    assert.ok(titleMusic.delivery.rms > .02 && titleMusic.delivery.rms < .08);
+    assert.ok(titleMusic.delivery.loopSeamJump.every(jump => jump < .004));
+    assert.notEqual(titleMusic.source.sha256, titleMusic.delivery.sha256);
+  });
   it("ships longer district and directed beds with measured seams, headroom and delivery hashes", () => {
     const hashes = new Set<string>();
     for (const record of [...directed.scores.filter(score => score.durationSeconds === 64), ...directed.soundscapes]) {

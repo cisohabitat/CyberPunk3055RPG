@@ -918,6 +918,8 @@ html[data-artwork="none"] .scene { background-color: #09080d; }
 .title-intro .logline { font-size: 1.1rem; line-height: 1.6; }
 .title-intro .actions { margin: 1.5rem 0; }
 .title-intro .continue-note { margin: 0; }
+.title-music { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1rem; margin: .75rem 0; }
+.title-music .hint { flex: 1 1 12rem; min-width: 0; margin: 0; }
 .title-details { padding: clamp(1.25rem, 3vw, 2.5rem); border-top: 1px solid var(--line); }
 .title-hero--text { min-height: 0; }
 .title-hero--text .title-intro { width: 100%; min-height: 0; max-width: 48rem; background: #09080d; }

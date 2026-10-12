@@ -8,6 +8,7 @@ import { endingCoda } from "@/lib/story";
 import { endingGroups } from "@/lib/ending-discovery";
 import { currentGoal } from "@/lib/story/goal";
 import type { Codex, GameState } from "@/lib/types";
+import type { BedStatus } from "@/lib/sound";
 
 const BARS = [42, 78, 55, 96, 34, 88, 63, 110, 48, 74, 38, 92, 58, 84, 46, 70, 100, 52];
 
@@ -21,6 +22,10 @@ export function TitleScreen({
   onSettings,
   onSaves,
   artwork = true,
+  musicStatus = "idle",
+  musicMuted = false,
+  musicPaused = false,
+  onMusic,
 }: {
   save: GameState | null;
   codex: Codex;
@@ -31,6 +36,10 @@ export function TitleScreen({
   onSettings: () => void;
   onSaves: () => void;
   artwork?: boolean;
+  musicStatus?: BedStatus;
+  musicMuted?: boolean;
+  musicPaused?: boolean;
+  onMusic?: () => void;
 }) {
   const [confirm, setConfirm] = useState(false);
   const [showReplayHints, setShowReplayHints] = useState(false);
@@ -65,6 +74,12 @@ export function TitleScreen({
               <button className="ghost" type="button" onClick={onSaves}>Saves</button>
               <button className="ghost" type="button" onClick={onSettings}>Settings</button>
             </div>
+            {onMusic && <div className="title-music" data-testid="title-music">
+              <button className="ghost" type="button" disabled={musicMuted} onClick={onMusic}>
+                {musicStatus === "playing" || musicStatus === "loading" ? "Stop menu music" : musicPaused ? "Resume menu music" : "Play menu music"}
+              </button>
+              <p className="hint" role="status">{musicMuted ? "Music volume is off. Adjust it in Settings to listen." : musicStatus === "loading" ? "Loading Under the Awning…" : musicStatus === "unavailable" ? "Music unavailable. You can still start the game." : musicPaused ? "Music paused while you were away." : "Under the Awning · menu theme"}</p>
+            </div>}
             {recovered && <p role="status">Your last autosave could not be read. The automatic backup is ready to continue.</p>}
             {save && scene && (
               <p className="continue-note">

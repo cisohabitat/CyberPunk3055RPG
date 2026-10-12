@@ -2,8 +2,10 @@ import type { Preferences } from "./preferences";
 import type { GameState } from "./types";
 import { windowRemaining } from "./chapel-window";
 import voiceMix from "../qa/media/voice-mix.json";
+import { TITLE_MUSIC } from "./title-music";
 
-export type SoundMood = "street" | "chapel" | "ward" | "week" | "reading" | "quiet" | "pressure";
+export type SoundMood = "street" | "chapel" | "ward" | "week" | "reading" | "quiet" | "pressure" | "title";
+export type BedStatus = "idle" | "loading" | "playing" | "unavailable";
 export type SoundDistrict = "street" | "chapel" | "spire" | "canal" | "ward" | "clinic" | "witness" | "stall";
 let ctx: AudioContext | null = null;
 type AudioSource = { node: AudioBufferSourceNode; gain: GainNode; channel: keyof typeof mix; dispose: () => void };
@@ -55,7 +57,8 @@ async function load(name: string) {
   const cached = cache.get(name); if (cached) { cache.delete(name); cache.set(name, cached); return cached; }
   const request = loading.get(name); if (request) return request;
   const pending = (async () => {
-    const response = await fetch(`/audio/${name}.wav`);
+    const extension = name === TITLE_MUSIC.name ? TITLE_MUSIC.extension : "wav";
+    const response = await fetch(`/audio/${name}.${extension}`);
     if (!response.ok) throw new Error("Audio unavailable");
     const buffer = await context().decodeAudioData(await response.arrayBuffer());
     cache.set(name, buffer);
@@ -91,38 +94,43 @@ function stopBed() {
   theme = null; ambience = null;
   playingMood = undefined; playingDistrict = undefined;
 }
-function crossfade(buffer: AudioBuffer, channel: "music" | "ambience", level: number, previous: typeof theme) {
+function crossfade(buffer: AudioBuffer, channel: "music" | "ambience", level: number, previous: typeof theme, loopStart = 0) {
   const audio = context();
   const next = source(buffer, channel, 0, true);
+  next.node.loopStart = loopStart;
+  next.node.loopEnd = buffer.duration;
   next.gain.gain.linearRampToValueAtTime(level, audio.currentTime + 0.65);
   next.node.start();
   if (previous) { previous.gain.gain.setTargetAtTime(0, audio.currentTime, 0.15); previous.node.stop(audio.currentTime + 0.8); }
   return next;
 }
-export function setBed(on: boolean, nextMood: SoundMood = "street", nextDistrict: SoundDistrict = "street") {
+export function setBed(on: boolean, nextMood: SoundMood = "street", nextDistrict: SoundDistrict = "street", report?: (status: BedStatus) => void) {
   if (typeof window === "undefined") return;
   if (mix.music === 0 && theme) { stopSource(theme); theme = null; playingMood = undefined; }
   if (mix.ambience === 0 && ambience) { stopSource(ambience); ambience = null; playingDistrict = undefined; }
+  if (nextMood === "title" && ambience) { stopSource(ambience); ambience = null; playingDistrict = undefined; }
   const musicChanged = mix.music > 0 && (playingMood !== nextMood || !theme);
-  const ambienceChanged = mix.ambience > 0 && (playingDistrict !== nextDistrict || !ambience);
+  const ambienceChanged = nextMood !== "title" && mix.ambience > 0 && (playingDistrict !== nextDistrict || !ambience);
   const unchanged = want === on && !musicChanged && !ambienceChanged;
   const planChanged = requestedMood !== nextMood || requestedDistrict !== nextDistrict;
   requestedMood = nextMood; requestedDistrict = nextDistrict;
   want = on;
-  if (unchanged) { if (planChanged) ++ticket; return; }
+  if (unchanged) { if (planChanged) ++ticket; report?.(on && theme ? "playing" : "idle"); return; }
   const id = ++ticket;
-  if (!on) { stopVoice(); stopBed(); if (ctx?.state === "running") void ctx.suspend().catch(() => {}); return; }
+  if (!on) { stopVoice(); stopBed(); report?.("idle"); if (ctx?.state === "running") void ctx.suspend().catch(() => {}); return; }
+  report?.("loading");
   void (async () => {
     try {
       if (id !== ticket || !want) return;
       if (!musicChanged && !ambienceChanged) return;
       unlockAudio();
-      const name = nextMood === "street" ? "theme" : `theme-${nextMood}`;
+      const name = nextMood === "title" ? TITLE_MUSIC.name : nextMood === "street" ? "theme" : `theme-${nextMood}`;
       const [musicResult, ambienceResult] = await Promise.allSettled([musicChanged ? load(name) : null, ambienceChanged ? load(`ambience-${nextDistrict}`) : null]);
       if (id !== ticket || !want) return;
-      if (mix.music > 0 && musicResult.status === "fulfilled" && musicResult.value) { theme = crossfade(musicResult.value, "music", 0.5, theme); playingMood = nextMood; }
+      if (mix.music > 0 && musicResult.status === "fulfilled" && musicResult.value) { theme = crossfade(musicResult.value, "music", 0.5, theme, nextMood === "title" ? TITLE_MUSIC.loopStartSeconds : 0); playingMood = nextMood; }
       if (mix.ambience > 0 && ambienceResult.status === "fulfilled" && ambienceResult.value) { ambience = crossfade(ambienceResult.value, "ambience", 0.35, ambience); playingDistrict = nextDistrict; }
-    } catch { /* Audio stays optional. */ }
+      report?.(theme && playingMood === nextMood ? "playing" : "unavailable");
+    } catch { if (id === ticket && want) report?.("unavailable"); /* Audio stays optional. */ }
   })();
 }
 

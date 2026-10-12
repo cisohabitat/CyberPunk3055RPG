@@ -9,7 +9,7 @@ import { SaveDialog } from "./SaveDialog";
 import { SettingsDialog } from "./SettingsDialog";
 import { clearSave, emptyCodex, loadCodex, loadSave, usedBackup, writeSave } from "@/lib/storage";
 import { applyPreferences, DEFAULT_PREFERENCES, loadPreferences, writePreferences, type Preferences } from "@/lib/preferences";
-import { setAudioMix, setBed, unlockAudio } from "@/lib/sound";
+import { setAudioMix, setBed, unlockAudio, type BedStatus } from "@/lib/sound";
 import { checkpointLabel } from "@/lib/checkpoints";
 import { recordIncident } from "@/lib/diagnostics";
 import type { Codex, GameState } from "@/lib/types";
@@ -27,6 +27,8 @@ export function GameApp() {
   const [preferences, setPreferences] = useState<Preferences>(DEFAULT_PREFERENCES);
   const [dialog, setDialog] = useState<"saves" | "settings" | null>(null);
   const [audioPaused, setAudioPaused] = useState(false);
+  const [menuMusicRequested, setMenuMusicRequested] = useState(false);
+  const [menuMusicStatus, setMenuMusicStatus] = useState<BedStatus>("idle");
 
   useController(preferences.controller);
 
@@ -37,11 +39,16 @@ export function GameApp() {
   }, []);
   useLayoutEffect(() => { window.scrollTo(0, 0); }, [screen]);
   useEffect(() => { setAudioMix(preferences); }, [preferences]);
-  useEffect(() => { if (screen !== "play") setBed(false); }, [screen]);
+  useEffect(() => {
+    if (screen === "play") { setMenuMusicStatus("idle"); return; }
+    const on = screen === "title" && menuMusicRequested && preferences.sound && preferences.music > 0 && !audioPaused;
+    setBed(on, "title", "street", setMenuMusicStatus);
+  }, [screen, menuMusicRequested, preferences.sound, preferences.music, audioPaused]);
   useEffect(() => {
     function pause() {
       if (!preferences.sound) return;
       setBed(false);
+      setMenuMusicStatus("idle");
       setAudioPaused(true);
     }
     function visibility() { if (document.visibilityState !== "visible") pause(); }
@@ -61,11 +68,24 @@ export function GameApp() {
     setRun(next); setSaved(next);
   }
   function updatePreferences(next: Preferences) {
-    if (next.sound && !preferences.sound) { unlockAudio(); setAudioPaused(false); }
+    if (next.sound && !preferences.sound) {
+      unlockAudio(); setAudioPaused(false);
+      if (screen === "title") setMenuMusicRequested(true);
+    } else if (next.sound && next.music > 0 && preferences.music === 0) unlockAudio();
     if (!next.sound) setAudioPaused(false);
     setPreferences(next); applyPreferences(next); writePreferences(next);
   }
   function title() { setDialog(null); setRun(null); setCodex(loadCodex()); setScreen("title"); }
+  function toggleMenuMusic() {
+    if (menuMusicStatus === "playing" || menuMusicStatus === "loading") {
+      setMenuMusicRequested(false); setBed(false, "title", "street", setMenuMusicStatus);
+    } else {
+      unlockAudio();
+      if (!preferences.sound) updatePreferences({ ...preferences, sound: true });
+      setAudioPaused(false); setMenuMusicRequested(true);
+      setBed(true, "title", "street", setMenuMusicStatus);
+    }
+  }
   function load(next: GameState, source = "Autosave") {
     if (preferences.sound) unlockAudio();
     setAudioPaused(false);
@@ -83,6 +103,8 @@ export function GameApp() {
       : screen === "create" ? <CreateScreen keepsakes={codex.keepsakes} onBack={title} onStart={(next) => load(next, "New run")} />
       : <TitleScreen save={saved} codex={codex} saveFailed={saveFailed} recovered={recovered}
           artwork={preferences.artwork !== "none"}
+          musicStatus={menuMusicStatus} musicMuted={preferences.music === 0} musicPaused={audioPaused && menuMusicRequested}
+          onMusic={toggleMenuMusic}
           onSettings={() => setDialog("settings")} onSaves={() => setDialog("saves")}
           onContinue={() => { if (saved) load(saved); }} onNew={() => setScreen("create")} />}
     {dialog === "settings" && <SettingsDialog preferences={preferences} onChange={updatePreferences} onClose={() => setDialog(null)} />}
