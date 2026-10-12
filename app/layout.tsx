@@ -1,19 +1,7 @@
 import type { Metadata, Viewport } from "next";
-import { Literata, Rajdhani } from "next/font/google";
+import fonts from "../qa/media/font-provenance.json";
+import "./fonts.css";
 import "./globals.css";
-
-const display = Rajdhani({
-  subsets: ["latin"],
-  weight: ["500", "600", "700"],
-  variable: "--font-display",
-});
-
-const body = Literata({
-  subsets: ["latin"],
-  weight: ["400", "600", "700"],
-  style: ["normal", "italic"],
-  variable: "--font-body",
-});
 
 export const metadata: Metadata = {
   title: "Saint Shard — Kite City 3055",
@@ -30,7 +18,8 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${display.variable} ${body.variable}`}>
+    <html lang="en">
+      <head>{fonts.fonts.filter(font => font.preload).map(font => <link key={font.file} rel="preload" href={font.file.replace(/^public/, "")} as="font" type="font/woff2" crossOrigin="anonymous" />)}</head>
       <body>{children}</body>
     </html>
   );
