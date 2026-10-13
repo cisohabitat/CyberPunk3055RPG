@@ -54,10 +54,10 @@ export function GameApp() {
       if (event instanceof KeyboardEvent && (event.repeat || !["Enter", " "].includes(event.key))) return;
       unlockAudio();
     }
-    document.addEventListener("pointerdown", activate);
+    document.addEventListener("pointerup", activate);
     document.addEventListener("keydown", activate);
     return () => {
-      cancel(); document.removeEventListener("pointerdown", activate); document.removeEventListener("keydown", activate);
+      cancel(); document.removeEventListener("pointerup", activate); document.removeEventListener("keydown", activate);
     };
   }, [ready, screen, menuMusicRequested, menuMusicActivated, preferences.sound, preferences.music, audioPaused]);
   useEffect(() => {

@@ -75,6 +75,28 @@ test("a keyboard menu interaction starts the default theme without using Play", 
   await keyboardActivate(page, page.getByRole("button", { name: "Stop menu music", exact: true })); await clean(page);
 });
 
+for (const ambience of [0, 50]) test(`returning from gameplay resumes the default title theme with an advancing audio clock (ambience ${ambience})`, async ({ page }) => {
+  await observe(page);
+  const run = { ...createCharacter({ handle: "ReturnQA", givenName: "Ada", origin: "spire", bonus: { chrome: 2, nerve: 0, face: 0, ghost: 0 } }), sceneId: "memo" };
+  await page.addInitScript(({ run, ambience }) => {
+    localStorage.setItem("saint-shard-3055-v1", JSON.stringify(run));
+    localStorage.setItem("saint-shard-preferences", JSON.stringify({ autoVoices: false, reading: "all", effects: 0, artwork: "none", ambience }));
+  }, { run, ambience });
+  await page.goto("/"); const before = await saved(page);
+  await page.getByRole("heading", { name: "Saint Shard", exact: true }).click();
+  await expect.poll(async () => (await audio(page)).started.filter(name => name === "theme-title.flac").length).toBe(1);
+  await keyboardActivate(page, page.getByTestId("continue-run"));
+  await expect.poll(async () => (await audio(page)).liveSources).toBe(ambience > 0 ? 2 : 1);
+  await keyboardActivate(page, page.getByRole("button", { name: "Saves", exact: true }));
+  await keyboardActivate(page, page.getByRole("button", { name: "Return to title", exact: true }));
+  await expect.poll(async () => (await audio(page)).started.filter(name => name === "theme-title.flac").length).toBe(2);
+  const clock = () => page.evaluate(() => (window as unknown as { titlePlayback: { node: AudioBufferSourceNode } }).titlePlayback.node.context.currentTime);
+  const resumedAt = await clock();
+  await expect.poll(async () => (await clock()) - resumedAt).toBeGreaterThan(.25);
+  expect(await saved(page)).toBe(before);
+  await keyboardActivate(page, page.getByRole("button", { name: "Stop menu music", exact: true })); await clean(page);
+});
+
 test("title music respects mixer, hidden-page pause and voiced gameplay handoff", async ({ page }) => {
   await observe(page, true); await page.setViewportSize({ width: 320, height: 844 });
   const run = { ...createCharacter({ handle: "MenuQA", givenName: "Ada", origin: "spire", bonus: { chrome: 2, nerve: 0, face: 0, ghost: 0 } }), sceneId: "memo" };

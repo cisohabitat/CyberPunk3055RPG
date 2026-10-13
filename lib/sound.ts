@@ -139,7 +139,12 @@ export function setBed(on: boolean, nextMood: SoundMood = "street", nextDistrict
   want = on;
   if (unchanged) { if (planChanged) ++ticket; report?.(on && theme ? "playing" : "idle"); return; }
   const id = ++ticket;
-  if (!on) { stopVoice(); stopBed(); report?.("idle"); if (ctx?.state === "running") void ctx.suspend().catch(() => {}); return; }
+  if (!on) {
+    stopVoice(); stopBed(); report?.("idle");
+    // A new bed may have requested resume before this suspension completed.
+    if (ctx?.state === "running") void ctx.suspend().then(() => { if (want) unlockAudio(); }).catch(() => {});
+    return;
+  }
   report?.("loading");
   void (async () => {
     try {
