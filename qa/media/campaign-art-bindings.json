@@ -1,0 +1,328 @@
+{
+  "plates": [
+    {
+      "src": "/art/market-counter.jpg",
+      "small": "/art/market-counter-small.jpg",
+      "caption": "Kite City · the sheltered counter",
+      "description": "Steam rises from an unattended copper noodle pot beneath a patched market awning, beside a damp menu and two empty counter seats.",
+      "scenes": [
+        "opening_self",
+        "opening_approach",
+        "opening_neighbor",
+        "pay_yes",
+        "pay_no",
+        "why",
+        "chapel",
+        "route",
+        "ending_walk",
+        "act2_kerr_door",
+        "act2_kerr",
+        "act2_kerr_collection_terms",
+        "act2_quill_introduction",
+        "act3_kerr_collection",
+        "act3_kerr_collection_response",
+        "act3_kerr_personal_question",
+        "act3_quill_introduction"
+      ],
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits."
+    },
+    {
+      "src": "/art/chapel-entry.jpg",
+      "small": "/art/chapel-entry-small.jpg",
+      "caption": "Glass Chapel · the service threshold",
+      "description": "A shallow basin and worn visitor desk stand beside a dim service stair, copper rails and a closed clinic door.",
+      "scenes": [
+        "front",
+        "lumen",
+        "lumen_deal",
+        "lumen_cold",
+        "after_kerr",
+        "ending_burned",
+        "ending_taken",
+        "ending_sainted",
+        "act2_lumen_door",
+        "act2_lumen"
+      ],
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits."
+    },
+    {
+      "src": "/art/chapel-service.jpg",
+      "small": "/art/chapel-service-small.jpg",
+      "caption": "Glass Chapel · behind the clinic walls",
+      "description": "Copper pipes and a dark reader flank a closed service hatch in a narrow maintenance passage.",
+      "scenes": [
+        "hatch",
+        "hatch_caught",
+        "side",
+        "undercroft",
+        "chapel_methods",
+        "chapel_window_plan",
+        "chapel_window_expired"
+      ],
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits."
+    },
+    {
+      "src": "/art/memory-apparatus.jpg",
+      "small": "/art/memory-apparatus-small.jpg",
+      "caption": "Glass Chapel · the chair room",
+      "description": "A glass sliver holder and copper memory-reader controls sit beside the edge of a screened medical apparatus.",
+      "scenes": [
+        "vault_quiet",
+        "kerr",
+        "kerr_fight"
+      ],
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits."
+    },
+    {
+      "src": "/art/opening.jpg",
+      "small": "/art/opening-small.jpg",
+      "caption": "Kite City · before midnight",
+      "description": "An amber noodle stall shelters a rainy walkway beneath the city's immense dome.",
+      "scenes": [
+        "ending_sold",
+        "ending_both",
+        "ending_smashed",
+        "ending_ash",
+        "ending_exposed"
+      ],
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits."
+    },
+    {
+      "src": "/art/district-board.jpg",
+      "small": "/art/district-board-small.jpg",
+      "caption": "Ward Four · the district board",
+      "description": "Indistinct notices and blank-backed cards hang under a sheltered district board beside a wet walkway.",
+      "scenes": [
+        "districts",
+        "street_after",
+        "act2_origin_return",
+        "act2_public_response",
+        "act2_training",
+        "ending_week_wards"
+      ],
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits."
+    },
+    {
+      "src": "/art/spire-counter.jpg",
+      "small": "/art/spire-counter-small.jpg",
+      "caption": "Helion · the service counter",
+      "description": "Shift papers, a closed folio and a sleeved receiver rest on a worn service counter beneath an amber lamp; workers wait beyond the queue rails.",
+      "scenes": [
+        "act2_helion_door",
+        "act2_helion",
+        "act2_folio",
+        "ending_week_deal"
+      ],
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits."
+    },
+    {
+      "src": "/art/spire-terminal.jpg",
+      "small": "/art/spire-terminal-small.jpg",
+      "caption": "Spire · the maintenance alcove",
+      "description": "Two dim maintenance panels overlook a paper request beneath glass, beside a mechanical latch and an old badge reader.",
+      "scenes": [
+        "act2_origin_spire",
+        "act2_spire_result"
+      ],
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits."
+    },
+    {
+      "src": "/art/shelter-landing.jpg",
+      "small": "/art/shelter-landing-small.jpg",
+      "caption": "Ward Four · the shelter stair",
+      "description": "A broad worn ramp and handrail run beside the shelter stair, under a dim lamp and rain-streaked window.",
+      "scenes": [
+        "act2_shelter_prep",
+        "act2_shelter_evacuation",
+        "act2_shelter_rooms",
+        "act2_shelter_result",
+        "act2_origin_gutterwire"
+      ],
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits."
+    },
+    {
+      "src": "/art/shelter-hall.jpg",
+      "small": "/art/shelter-hall-small.jpg",
+      "caption": "Ward Four · the staffed hall",
+      "description": "A plain kettle and stacked folded mattresses wait beside a broad ramp doorway in a communal hall.",
+      "scenes": [
+        "act2_shelter_hall"
+      ],
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits."
+    },
+    {
+      "src": "/art/freight.jpg",
+      "small": "/art/freight-small.jpg",
+      "caption": "Canal gate · dispatch",
+      "description": "A closed, sealed diagnostic case rests under a lamp at a sheltered canal dispatch table.",
+      "scenes": [
+        "act2_freight_sources"
+      ],
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits."
+    },
+    {
+      "src": "/art/freight-passage.jpg",
+      "small": "/art/freight-passage-small.jpg",
+      "caption": "Canal district · the service passage",
+      "description": "A closed freight hatch, empty handling trolley and shadowed corridor sit beyond wet canal railings.",
+      "scenes": [
+        "act2_freight_prep",
+        "act2_freight_crossing",
+        "act2_freight_recovery",
+        "act2_freight_intake",
+        "act2_freight_result",
+        "act2_origin_dustline"
+      ],
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits."
+    },
+    {
+      "src": "/art/canal-dispatch.jpg",
+      "small": "/art/canal-dispatch-small.jpg",
+      "caption": "Canal district · the planning alcove",
+      "description": "A neutral transit diagram rests beneath a lamp in a sheltered canal alcove; a closed canvas case waits on a shelf. No selected route or completed handover is depicted.",
+      "scenes": [
+        "act2_middle",
+        "act2_heat",
+        "act2_archive_verified",
+        "act2_recovery_after",
+        "act2_witness_plan"
+      ],
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits."
+    },
+    {
+      "src": "/art/archive-desk.jpg",
+      "small": "/art/archive-desk-small.jpg",
+      "caption": "Helion · the service archive desk",
+      "description": "A closed maintenance ledger, a catalog beneath glass and a dim record reader sit under a brass task lamp before rows of steel drawers and a service shutter.",
+      "scenes": [
+        "act2_archive_gap"
+      ],
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits."
+    },
+    {
+      "src": "/art/memory-bench.jpg",
+      "small": "/art/memory-bench-small.jpg",
+      "caption": "Glass Chapel · the inspection bench",
+      "description": "Three luminous glass slivers stand in a worn copper viewer beside an empty clinic chair.",
+      "scenes": [
+        "memory_reconstruction",
+        "memory_sequence_result",
+        "memory_model",
+        "memory_model_test",
+        "memory_model_result",
+        "memory_challenge",
+        "memory_cross_exam",
+        "memory_assurance",
+        "memory_channel",
+        "memory_publication"
+      ],
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits."
+    },
+    {
+      "src": "/art/clinic-relay.jpg",
+      "small": "/art/clinic-relay-small.jpg",
+      "caption": "Clinic · the private relay",
+      "description": "An unmarked handset and closed notebook sit beside a privacy curtain and rain-streaked clinic window.",
+      "scenes": [
+        "act3_testimony_nia",
+        "act2_witness_door",
+        "act2_witness_safe",
+        "act2_witness_lost",
+        "act2_witness_repair",
+        "act3_witness_visit",
+        "act3_nia_contact"
+      ],
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits."
+    },
+    {
+      "src": "/art/clinic-coolant.jpg",
+      "small": "/art/clinic-coolant-small.jpg",
+      "caption": "Ward Nine · the coolant service room",
+      "description": "Closed coolant cabinets, insulated pipes and a portable supply trolley wait beneath a brass service lamp.",
+      "scenes": [
+        "act2_pump_brief",
+        "act2_pump_methods",
+        "act2_pump_triage",
+        "act2_pump_report",
+        "act3_pump_visit",
+        "act3_pump_schedule"
+      ],
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits."
+    },
+    {
+      "src": "/art/notice-desk.jpg",
+      "small": "/art/notice-desk-small.jpg",
+      "caption": "Clinic · the dispatch desk",
+      "description": "Loose blank stationery, an unmarked divider, a closed dispatch satchel and a dark relay wait on a worn clinic counter beside an empty chair.",
+      "scenes": [
+        "act3_chapel_return",
+        "act2_notice_recovery",
+        "act3_notice_visit",
+        "act3_notice_repair",
+        "act3_notice_result"
+      ],
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits."
+    },
+    {
+      "src": "/art/hearing-table.jpg",
+      "small": "/art/hearing-table-small.jpg",
+      "caption": "Ward Nine · the records table",
+      "description": "An untouched pencil, blank cover sheets, a closed privacy sleeve and an unmarked recorder wait on a worn table beside three empty chairs and a rainy window.",
+      "scenes": [
+        "act3_edda_terms",
+        "act3_edda_reply",
+        "act3_edda_visit",
+        "act3_records_visit"
+      ],
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits."
+    },
+    {
+      "src": "/art/spire-payroll.jpg",
+      "small": "/art/spire-payroll-small.jpg",
+      "caption": "Ward Nine · the payroll table",
+      "description": "Two empty chairs face a lamp-lit table with folded papers, a closed folio and a small reply relay beside a rain-streaked window.",
+      "scenes": [
+        "act3_edda_methods"
+      ],
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits."
+    },
+    {
+      "src": "/art/memorial-stair.jpg",
+      "small": "/art/memorial-stair-small.jpg",
+      "caption": "Ward Nine · the weathered names",
+      "description": "Indistinct engraved rows cover a rain-worn memorial wall above a wet stair; a closed private ledger and spare capped writing tool rest on a sheltered ledge.",
+      "scenes": [
+        "act3_neighborhood"
+      ],
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits."
+    },
+    {
+      "src": "/art/mara-window.jpg",
+      "small": "/art/mara-window-small.jpg",
+      "caption": "Ward Four · a chair beside the rain",
+      "description": "Mara holds an ordinary ceramic cup beside a rain-streaked clinic window; an empty visitor chair faces her across the worn table, with no papers or recorder in view.",
+      "scenes": [
+        "act2_mara_quiet",
+        "act3_mara_followup"
+      ],
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits."
+    },
+    {
+      "src": "/art/ordinary-rest.jpg",
+      "small": "/art/ordinary-rest-small.jpg",
+      "caption": "Clinic · an ordinary conversation",
+      "description": "A plain wooden chair and folded blanket wait beside a water glass and a rain-streaked clinic window, with no memory apparatus or restraints.",
+      "scenes": [
+        "act2_lumen_quiet",
+        "act3_lumen_boundary"
+      ],
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits."
+    }
+  ],
+  "chapterCards": [
+    "card_week",
+    "card_wall"
+  ],
+  "newBindings": 111,
+  "framedScenes": 195
+}

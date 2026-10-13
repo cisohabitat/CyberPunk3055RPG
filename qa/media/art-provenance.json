@@ -1259,6 +1259,256 @@
           "sha256": "3333835e11f20dc40fd9ec15361f1ea92d18f72f0638692c0b53921d0aca7b7d"
         }
       ]
+    },
+    {
+      "id": "market-counter",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-13",
+      "sourceFile": "/workspace/generated_images/exec-197a8a6f-5a33-4577-b637-39c4a243ff62.png",
+      "sourceSha256": "28e3ccb92e6f2e0a1ea6f902cc6c5750eb572858e1db553de99dda0c0993180e",
+      "promptSummary": "Generate one original game scene illustration for Saint Shard, an intimate cyberpunk noir text RPG in the year 3055. Landscape 3:2 composition, cohesive painterly cinematic concept art with tactile worn materials, deep petroleum blue rain shadows, copper and subdued amber practical light. No neon rainbow, no typography, logos, borders or UI. Clear readable silhouettes at phone size, restrained story-focused composition. Fiction is original. An intimate NIGHT MARKET NOODLE COUNTER beneath patched fabric awnings. Steam rising from a weathered copper noodle pot and nested bowls, two empty counter stools, a damp unreadable menu. Beyond, wet narrow pedestrian walkways and small amber stall lamps beneath an immense dark blue city dome. NO people, no broker, no completed transaction.",
+      "deliveryProcessing": "Resize and JPEG encode only; no crop, repaint or compositing. Original generated PNG retained at sourceFile.",
+      "files": [
+        {
+          "path": "public/art/market-counter.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 265620,
+          "sha256": "709cb53138b1b9f4ec6d3a4a168008f124cc0598903c20d04cccb63f7e0ef9b8"
+        },
+        {
+          "path": "public/art/market-counter-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 76244,
+          "sha256": "2ee3420b4057b96c9625efb7deb55d0e1ecbec56d7122d1ff6a6e4bb4a57f172"
+        }
+      ]
+    },
+    {
+      "id": "chapel-entry",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-13",
+      "sourceFile": "/workspace/generated_images/exec-41dfb5dd-08b5-47a6-9a4e-68fb3ac61e43.png",
+      "sourceSha256": "ff3cdcbb73fd817083ce4d89673ae6cd82cbd7c10d0bc7feda418cbce680a904",
+      "promptSummary": "Generate one original game scene illustration for Saint Shard, an intimate cyberpunk noir text RPG in the year 3055. Landscape 3:2 composition, cohesive painterly cinematic concept art with tactile worn materials, deep petroleum blue rain shadows, copper and subdued amber practical light. No neon rainbow, no typography, logos, borders or UI. Clear readable silhouettes at phone size, restrained story-focused composition. Fiction is original. The ENTRY OF A MEMORY CLINIC CALLED GLASS CHAPEL. Shallow ceramic hand basin in foreground, worn visitor desk without names, closed clinic door and copper stair railing receding under dim glass lights. Humble medical architecture, incense haze, scuffed tile, amber work light, teal rainy window. No person, readable document, green clearance, open route or religious franchise symbols.",
+      "deliveryProcessing": "Resize and JPEG encode only; no crop, repaint or compositing. Original generated PNG retained at sourceFile.",
+      "files": [
+        {
+          "path": "public/art/chapel-entry.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 187269,
+          "sha256": "ab4ed5db3ed44a1f1f5f3eaf106723cdfd2e8dd7063fcf2c3a74ce2b566e1836"
+        },
+        {
+          "path": "public/art/chapel-entry-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 53211,
+          "sha256": "950120ae23be6b0be9f08ab5f2c2d83bf55fbb09cc6afec66d605b97a2206739"
+        }
+      ]
+    },
+    {
+      "id": "chapel-service",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-13",
+      "sourceFile": "/workspace/generated_images/exec-8cb7a8c8-530b-4819-b8c0-edb7d24b3eb8.png",
+      "sourceSha256": "1d8c62047f7c82c7473a5f05ca81c08afde6fca3c3c45df55d786697510c9145",
+      "promptSummary": "Generate one original game scene illustration for Saint Shard, an intimate cyberpunk noir text RPG in the year 3055. Landscape 3:2 composition, cohesive painterly cinematic concept art with tactile worn materials, deep petroleum blue rain shadows, copper and subdued amber practical light. No neon rainbow, no typography, logos, borders or UI. Clear readable silhouettes at phone size, restrained story-focused composition. Fiction is original. A NARROW MEMORY CLINIC MAINTENANCE PASSAGE with copper utility pipes, an old incinerator duct, closed service hatch, dark badge reader, small repair tool shelf. Distant bend of passage under amber maintenance lamps. Wet concrete and blue reflected rain, no person, no alarms, no cleared route, no completed repair.",
+      "deliveryProcessing": "Resize and JPEG encode only; no crop, repaint or compositing. Original generated PNG retained at sourceFile.",
+      "files": [
+        {
+          "path": "public/art/chapel-service.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 238068,
+          "sha256": "b8e1d3ac5a628807d03bf02367e0ab1a1f90b9e3dde8bbc5e9d7c139b80e6c35"
+        },
+        {
+          "path": "public/art/chapel-service-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 66974,
+          "sha256": "08b7fc8efb535511943efd9c88c2e5ac5228d84a4546926aaa60f66df6efabd4"
+        }
+      ]
+    },
+    {
+      "id": "memory-apparatus",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-13",
+      "sourceFile": "/workspace/generated_images/exec-3bcc66ca-fa33-4598-af2e-690ef3a047a4.png",
+      "sourceSha256": "4111530a5dd85eb86ccd1953b71b9c4be036c23b4633512a9d57ce04ff415713",
+      "promptSummary": "Generate one original game scene illustration for Saint Shard, an intimate cyberpunk noir text RPG in the year 3055. Landscape 3:2 composition, cohesive painterly cinematic concept art with tactile worn materials, deep petroleum blue rain shadows, copper and subdued amber practical light. No neon rainbow, no typography, logos, borders or UI. Clear readable silhouettes at phone size, restrained story-focused composition. Fiction is original. Close view of a MEMORY EDITING APPARATUS in a modest old clinic: a dark glass sliver holder on copper plinth, analog dials, coiled cable and translucent privacy screen hiding the medical chair beyond. The image never shows an occupied or empty chair. No extracted shard glowing, no performed edit, no recorded confession, no people, no names or readable medical data. Quiet amber lamp and deep blue shadows.",
+      "deliveryProcessing": "Resize and JPEG encode only; no crop, repaint or compositing. Original generated PNG retained at sourceFile.",
+      "files": [
+        {
+          "path": "public/art/memory-apparatus.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 174359,
+          "sha256": "76fb91d7eb3ea1b23fbd545482d075301265ef113633ea763ee63cd7062aaeb4"
+        },
+        {
+          "path": "public/art/memory-apparatus-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 56269,
+          "sha256": "edd702cf9b926fcc5b7c1cb364579bb18e61983fdf1297991fffbd361fc1edad"
+        }
+      ]
+    },
+    {
+      "id": "clinic-coolant",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-13",
+      "sourceFile": "/workspace/generated_images/exec-e581f3f5-cecf-4f39-a9ff-bf38e6bc7226.png",
+      "sourceSha256": "80902b7cbbb80e6b8aadd5f227ad3b1fa080df3475704dfc9701f5caceed9164",
+      "promptSummary": "Generate one original game scene illustration for Saint Shard, an intimate cyberpunk noir text RPG in the year 3055. Landscape 3:2 composition, cohesive painterly cinematic concept art with tactile worn materials, deep petroleum blue rain shadows, copper and subdued amber practical light. No neon rainbow, no typography, logos, borders or UI. Clear readable silhouettes at phone size, restrained story-focused composition. Fiction is original. An old neighborhood CLINIC COOLANT SERVICE ROOM: closed metal coolant cabinets, insulated pipe elbows, plain supply trolley, coiled maintenance cable, brass service lamp. Gauge face oblique and unreadable. No medicines exposed, leaking valve, fixed success state, repair receipt, patient or worker. Atmospheric amber pool of light, petroleum blue tiled walls and wet service door.",
+      "deliveryProcessing": "Resize and JPEG encode only; no crop, repaint or compositing. Original generated PNG retained at sourceFile.",
+      "files": [
+        {
+          "path": "public/art/clinic-coolant.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 211442,
+          "sha256": "5bee57b0d2f030493f7143904102d8d1b75c5ceb464b05eeea66861014e1659b"
+        },
+        {
+          "path": "public/art/clinic-coolant-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 58406,
+          "sha256": "5239fdfe9f13c02554b9f67495760a6f62b9ed2840ed5375f451ff03712cf789"
+        }
+      ]
+    },
+    {
+      "id": "clinic-relay",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-13",
+      "sourceFile": "/workspace/generated_images/exec-1d985e60-d75f-460d-97ea-5835c7070fb0.png",
+      "sourceSha256": "33283786a9e54eb929ee7cfd63fe0840ef9e9a9fd05276d5a973d5d7b58f00e4",
+      "promptSummary": "Generate one original game scene illustration for Saint Shard, an intimate cyberpunk noir text RPG in the year 3055. Landscape 3:2 composition, cohesive painterly cinematic concept art with tactile worn materials, deep petroleum blue rain shadows, copper and subdued amber practical light. No neon rainbow, no typography, logos, borders or UI. Clear readable silhouettes at phone size, restrained story-focused composition. Fiction is original. A PRIVATE CLINIC RELAY CORNER: ordinary unmarked telephone handset, dark little relay terminal, closed notebook, capped pen, privacy curtain, quiet rain-streaked glass window. Small humble wooden table. No person, address, message, photograph, active recording light, consent signature or outcome. Warm amber light and muted petroleum blue.",
+      "deliveryProcessing": "Resize and JPEG encode only; no crop, repaint or compositing. Original generated PNG retained at sourceFile.",
+      "files": [
+        {
+          "path": "public/art/clinic-relay.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 172389,
+          "sha256": "927cf9d538b2583ac2882456f65ee55784609ada9cfc913f4060e42f0aa41da8"
+        },
+        {
+          "path": "public/art/clinic-relay-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 49267,
+          "sha256": "88b8df08eb402c0db73ea6af1527daef2524c3671eed4b656e2020c35d5eb33b"
+        }
+      ]
+    },
+    {
+      "id": "district-board",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-13",
+      "sourceFile": "/workspace/generated_images/exec-66829497-3a83-41fb-a9bb-511a8bb8f211.png",
+      "sourceSha256": "99705dd14896d2d258d1831b8e6d5b97f162e8c245639e17e421add7bb16f9c5",
+      "promptSummary": "Generate one original game scene illustration for Saint Shard, an intimate cyberpunk noir text RPG in the year 3055. Landscape 3:2 composition, cohesive painterly cinematic concept art with tactile worn materials, deep petroleum blue rain shadows, copper and subdued amber practical light. No neon rainbow, no typography, logos, borders or UI. Clear readable silhouettes at phone size, restrained story-focused composition. Fiction is original. An UNRESOLVED DISTRICT NOTICE BOARD at the sheltered edge of a wet urban walkway. Indistinct paper notices, blank-backed cards, exposed old pinholes, simple metal bench and closed street information panel. No legible text, addresses, announced verdict, exposed home list, delivered payment or recognizable people. Rain beyond the awning, a brass lamp makes amber reflected shapes against blue concrete.",
+      "deliveryProcessing": "Resize and JPEG encode only; no crop, repaint or compositing. Original generated PNG retained at sourceFile.",
+      "files": [
+        {
+          "path": "public/art/district-board.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 248644,
+          "sha256": "09ce88af81f4ee7b02a20021a0b5013ddd1af1cc0f272380200ada947cd49340"
+        },
+        {
+          "path": "public/art/district-board-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 69265,
+          "sha256": "91595253434e7c703f2331bb06de226b69d14702137a28fadfd4f198880e223d"
+        }
+      ]
+    },
+    {
+      "id": "freight-passage",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-13",
+      "sourceFile": "/workspace/generated_images/exec-4caa5e2b-c93e-487b-ad84-11088105920c.png",
+      "sourceSha256": "5ecb9801fe342e686c086b10bbc8e0cc9e900d4abeca9b94cc3a3c52f3db0379",
+      "promptSummary": "Generate one original game scene illustration for Saint Shard, an intimate cyberpunk noir text RPG in the year 3055. Landscape 3:2 composition, cohesive painterly cinematic concept art with tactile worn materials, deep petroleum blue rain shadows, copper and subdued amber practical light. No neon rainbow, no typography, logos, borders or UI. Clear readable silhouettes at phone size, restrained story-focused composition. Fiction is original. A CANAL FREIGHT SERVICE PASSAGE: wet railings, closed freight intake hatch, empty manual handling trolley, small unlit scanner, shadowed corridor bending out of view. Do not show a parcel, green checkpoint clearance, arrived delivery, intake receipt, registered recipient or person. Industrial copper details, petroleum blue night, restrained amber task lights, human-scale worn architecture.",
+      "deliveryProcessing": "Resize and JPEG encode only; no crop, repaint or compositing. Original generated PNG retained at sourceFile.",
+      "files": [
+        {
+          "path": "public/art/freight-passage.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 284511,
+          "sha256": "a371ba2736bef11fc8512eddbaf404d6e147a380cff4fbf6742cb75ac52a906a"
+        },
+        {
+          "path": "public/art/freight-passage-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 74692,
+          "sha256": "8bca806cb9a1c5fc4e1dbf61860b1fdc9a38f7f33e96d4ada32f5d7d40396c2d"
+        }
+      ]
+    },
+    {
+      "id": "shelter-landing",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-13",
+      "sourceFile": "/workspace/generated_images/exec-a000dd08-88e5-4a1a-b0f5-6b86aabdfc65.png",
+      "sourceSha256": "c53caf366c1d278311b3965f9ae61e9096416c3ded4cf67c7957097ef97d9cfe",
+      "promptSummary": "Original Saint Shard cyberpunk noir, landscape 3:2, petroleum blue/amber painted realism. No readable text, UI or outcomes. Neutral sheltered STAIR AND ACCESSIBLE RAMP inside a worn working-class apartment building. Broad ramp with copper handrails alongside stairs, empty tiled landing, closed room doors, dim amber wall lamp, blue rainy window. Keep all significant architecture dry. No leak, bucket, pump, repair report, moved baggage, resident, treatment room, mattress reservation or completed outcome.",
+      "deliveryProcessing": "Resize and JPEG encode only; original PNG retained.",
+      "files": [
+        {
+          "path": "public/art/shelter-landing.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 213488,
+          "sha256": "c04e29ccf5f538c6a25590f82ffbaa9fd5e65b668938d996b16b56dfd8bdb8f2"
+        },
+        {
+          "path": "public/art/shelter-landing-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 54078,
+          "sha256": "4c54334442884d13a66e4ac4976d83d721114bc461528f76261f77d43b918670"
+        }
+      ]
+    },
+    {
+      "id": "shelter-hall",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-13",
+      "sourceFile": "/workspace/generated_images/exec-a1fe453e-b3a2-42f3-a766-17696785c88d.png",
+      "sourceSha256": "66c7c53cbd6309974c5c28906911117ce03573446d3a488f7a0fb6f62107ce9e",
+      "promptSummary": "Original Saint Shard cyberpunk noir, landscape 3:2, petroleum blue/amber painted realism. No readable text, UI or outcomes. A modest STAFFED COMMUNITY HALL inside the rainy dome city, seen with no people. Broad accessible ramp doorway, kettle on a counter, folded mattresses stacked beside a closed cupboard, chairs and modest overhead amber lighting, blue rainy window. Communal shelter architecture, not a private clinic room. No arrival count, named family, completed evacuation, consent token or readable list.",
+      "deliveryProcessing": "Resize and JPEG encode only; original PNG retained.",
+      "files": [
+        {
+          "path": "public/art/shelter-hall.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 246160,
+          "sha256": "419be4b687b7ef2415c4609901da51f0e0e7f8fc954c99f4adc6b39381f809a2"
+        },
+        {
+          "path": "public/art/shelter-hall-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 67809,
+          "sha256": "be9fcb76d9d995de31b3f4d050978de2741dcbccffd458a542ba1b4a913dc563"
+        }
+      ]
     }
   ]
 }

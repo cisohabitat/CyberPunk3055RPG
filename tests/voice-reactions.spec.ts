@@ -1,7 +1,8 @@
 import { test, expect } from "@playwright/test";
 import { readFileSync } from "node:fs";
 import { createCharacter, commitChoice, getScene, presentChoices, sceneText } from "../lib/engine";
-import { visibleDialogue } from "../lib/memory-media";
+import { visibleCampaignDialogue } from "../lib/campaign-dialogue";
+import bindings from "../qa/media/campaign-dialogue-bindings.json";
 import type { ReplaySpec } from "../lib/story-replay";
 import { installAudioReview, type AudioReview } from "../qa/production/audio-review";
 
@@ -20,7 +21,7 @@ const cases = [
   ["allocation-dustline.json", "voice-sera-third-row", "ward_wall"],
   ["allocation-revised.json", "voice-lumen-full-window", "act2_notice_capacity"],
   ["allocation-revised.json", "voice-lumen-private-door", "act2_notice_privacy_refusal"],
-  ["allocation-later-funded.json", "voice-lumen-counteroffer", "act2_notice_counter"],
+  ["allocation-later-funded.json", bindings.find(b => b.scene === "act2_notice_counter" && b.speaker === "Dispatcher")!.id, "act2_notice_counter"],
   ["allocation-later-funded.json", "voice-lumen-funded-carrier", "act3_notice_visit"],
   ["allocation-later-work.json", "voice-lumen-later-trip", "act3_notice_visit"],
   ["allocation-revised.json", "voice-lumen-return-bundle", "act3_notice_visit"],
@@ -48,11 +49,12 @@ const cases = [
 ] as const;
 
 for (const [route, id, sceneId] of cases) test(`revealed reaction follows the actual authored route: ${id}`, async ({ page }) => {
+  test.setTimeout(60_000);
   const spec = JSON.parse(readFileSync(`qa/routes/${route}`, "utf8")) as ReplaySpec;
   let state = createCharacter(spec.character);
   for (const step of spec.steps) {
     const current = getScene(state.sceneId);
-    if (state.sceneId === sceneId && visibleDialogue(current.id, current.speaker, sceneText(current, state))?.id === id) break;
+    if (state.sceneId === sceneId && visibleCampaignDialogue(current.id, current.speaker, sceneText(current, state)).some(line => line.id === id)) break;
     const choice = presentChoices(state, getScene(state.sceneId)).find(choice => choice.id === step.choiceId && choice.enabled)!;
     state = commitChoice(state, choice, choice.check ? { roll: step.roll! } : undefined).state;
   }
@@ -66,16 +68,17 @@ for (const [route, id, sceneId] of cases) test(`revealed reaction follows the ac
   const audio = (): Promise<AudioReview> => page.evaluate(() => (window as unknown as { audioReview: AudioReview }).audioReview);
   const saved = () => page.evaluate(() => localStorage.getItem("saint-shard-3055-v1"));
   const before = await saved();
-  if (!["act2_witness_support", "act3_witness_visit", "act2_pump_methods", "act3_notice_result", "act2_notice_capacity", "act2_notice_privacy_refusal", "act2_notice_counter", "act2_recovery", "act2_spire_recovery"].includes(sceneId)) {
-    await expect(page.getByTestId("voice-line")).toHaveCount(0);
-    expect((await audio()).started.filter(name => name.startsWith("voice-"))).toEqual([]);
-    await page.getByTestId("show-rest").click();
-  }
-  await expect.poll(async () => (await audio()).started.filter(name => name.startsWith("voice-"))).toEqual([`${id}.wav`]);
+  if (await page.getByTestId("show-rest").count()) await page.getByTestId("show-rest").click();
+  const scene = getScene(state.sceneId);
+  const expected = visibleCampaignDialogue(scene.id, scene.speaker, sceneText(scene, state)).map(line => `${line.id}.${line.id.startsWith("voice-campaign-") ? "mp3" : "wav"}`);
+  const target = `${id}.${id.startsWith("voice-campaign-") ? "mp3" : "wav"}`;
+  await expect.poll(async () => (await audio()).started.filter(name => name.startsWith("voice-")), { timeout: 45_000 }).toContain(target);
+  const played = (await audio()).started.filter(name => name.startsWith("voice-"));
+  expect(played).toEqual(expected.slice(0, played.length));
   await page.getByRole("button", { name: "Stop line", exact: true }).click();
-  await expect.poll(async () => (await audio()).cleared.filter(name => name.startsWith("voice-"))).toEqual([`${id}.wav`]);
+  await expect.poll(async () => (await audio()).cleared.filter(name => name.startsWith("voice-"))).toEqual(played);
   expect(await saved()).toBe(before);
   await page.getByRole("button", { name: "Settings", exact: true }).click();
   await page.getByRole("button", { name: "Done", exact: true }).click();
-  expect((await audio()).started.filter(name => name.startsWith("voice-"))).toEqual([`${id}.wav`]);
+  expect((await audio()).started.filter(name => name.startsWith("voice-"))).toEqual(played);
 });

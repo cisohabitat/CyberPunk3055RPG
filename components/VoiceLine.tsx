@@ -1,32 +1,41 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
-import { playVoice, type VoiceStatus } from "@/lib/sound";
+import { useEffect, useId, useRef, useState } from "react";
+import type { VoiceStatus } from "@/lib/sound";
 import type { DialogueLine } from "@/lib/memory-media";
+import type { CampaignDialogue } from "@/lib/campaign-dialogue";
+import { DialoguePlayback } from "@/lib/dialogue-playback";
 
-export function VoiceLine({ line, enabled, automatic, paused = false }: { line: DialogueLine; enabled: boolean; automatic: boolean; paused?: boolean }) {
-  const [status, setStatus] = useState<VoiceStatus>("idle");
-  const cancel = useRef<(() => void) | null>(null);
-  const attempted = useRef(false);
+export function VoiceLine({ line, lines, enabled, automatic, paused = false }: {
+  line?: DialogueLine; lines: CampaignDialogue[]; enabled: boolean; automatic: boolean; paused?: boolean;
+}) {
+  const [view, setView] = useState<{ status: VoiceStatus; key?: string }>({ status: "idle" });
+  const selectId = useId();
+  const playback = useRef<DialoguePlayback | null>(null);
+  if (!playback.current) playback.current = new DialoguePlayback(setView);
+  const preferred = lines.find(candidate => candidate.id === line?.id)?.key ?? lines[0]?.key;
+  const queueKey = lines.map(candidate => candidate.key).join("|");
   useEffect(() => {
-    if (!enabled) { cancel.current?.(); cancel.current = null; setStatus("idle"); }
-    // Defer until the parent has enabled the scene mixer. Cleanup also makes
-    // Strict Mode's rehearsal and departure before activation harmless.
-    const timer = enabled && automatic && !attempted.current ? window.setTimeout(() => {
-      if (attempted.current) return;
-      attempted.current = true;
-      cancel.current = playVoice(line.id, setStatus);
-    }, 0) : undefined;
-    return () => { window.clearTimeout(timer); cancel.current?.(); cancel.current = null; setStatus("idle"); };
-  }, [enabled, automatic, line.id]);
-  const active = status === "loading" || status === "playing";
-  const name = line.speaker === "Sister Lumen" ? "Lumen" : line.speaker;
-  return <aside className="voice-line" aria-label={`${name} selected dialogue`} data-testid="voice-line">
+    playback.current!.update(lines, enabled, automatic, preferred);
+    // Immutable authored lines are identified by queueKey, not each render's array.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [queueKey, enabled, automatic, preferred]);
+  useEffect(() => () => playback.current?.dispose(), []);
+  const selected = lines.find(candidate => candidate.key === view.key) ?? lines.find(candidate => candidate.key === preferred) ?? lines[0];
+  if (!selected) return null;
+  const active = view.status === "loading" || view.status === "playing";
+  const name = selected.speaker === "Sister Lumen" ? "Lumen" : selected.speaker;
+  return <aside className="voice-line" aria-label={`${name} selected dialogue`} data-testid="voice-line" data-voice-id={selected.id}>
     <button type="button" className="ghost" disabled={!enabled} onClick={() => {
-      attempted.current = true;
-      if (active) { cancel.current?.(); cancel.current = null; setStatus("idle"); }
-      else cancel.current = playVoice(line.id, setStatus);
+      if (active) playback.current!.stop();
+      else playback.current!.listen(selected.key);
     }}>{active ? "Stop line" : `Listen to ${name}`}</button>
-    <p className="hint" role="status">{paused ? "Resume sound to listen. Dialogue stays in the text." : !enabled ? "Enable Sound and voice volume in Settings to listen." : status === "loading" ? "Loading selected dialogue…" : status === "unavailable" ? "Voice unavailable. The complete dialogue remains in the text." : status === "playing" ? "Playing selected dialogue · synthetic voice" : "Selected dialogue · synthetic voice"}</p>
-    <details><summary>Voice transcript</summary><p>{line.text}</p></details>
+    {lines.length > 1 && <button type="button" className="ghost" disabled={!enabled || active} onClick={() => playback.current!.playAll()}>Play all dialogue</button>}
+    <p className="hint" role="status">{paused ? "Resume sound to listen. Dialogue stays in the text." : !enabled ? "Enable Sound and voice volume in Settings to listen." : view.status === "loading" ? "Loading selected dialogue…" : view.status === "unavailable" ? "Voice unavailable. The complete dialogue remains in the text." : view.status === "playing" ? `Playing selected dialogue · ${name} · synthetic voice` : "Selected dialogue · synthetic voice"}</p>
+    <details><summary>Voice transcript</summary>
+      <ol>{lines.map(candidate => <li key={candidate.key}><strong>{candidate.speaker}:</strong> {candidate.text}</li>)}</ol>
+      {lines.length > 1 && <div><label htmlFor={selectId}>Dialogue line</label><select id={selectId} value={selected.key} disabled={active} onChange={event => setView({ status: "idle", key: event.target.value })}>
+        {lines.map((candidate, index) => <option key={candidate.key} value={candidate.key}>{index + 1}. {candidate.speaker} · {candidate.text.slice(0, 64)}</option>)}
+      </select></div>}
+    </details>
   </aside>;
 }

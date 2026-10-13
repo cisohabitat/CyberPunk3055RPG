@@ -64,220 +64,11 @@
       ]
     },
     {
-      "treatment": "portrait",
-      "asset": "/art/edda.jpg",
-      "reason": "Keep Edda identifiable during archive terms, payroll conversations and the service-exit reflection. Her portrait conveys no employment or key outcome; prose records the actual position. The pacing pass retains this neutral portrait for both posted shifts and an observed suspension, and for signed-source custody; it depicts no job loss, restored wage, key match or public permission.",
-      "scenes": [
-        "act2_spire_result",
-        "act3_edda_terms",
-        "act3_edda_methods",
-        "act3_edda_reply",
-        "act3_edda_visit"
-      ]
-    },
-    {
-      "treatment": "portrait",
-      "asset": "/art/sera.jpg",
-      "reason": "Keep Sera identifiable through shelter choices, witness review and memorial first arrivals or shorter returns. Reuse fits the same speaker and place; the portrait depicts no household move, protected witness or successful statement. The neutral portrait also fits a paused-contact hearing; it depicts neither a renewed request nor quotation permission. Wall returns distinguish actual receipt, contact limits and filing from the separate final decision; the neutral Sera portrait depicts neither forgiveness nor a spoken name. Distinct neighborhood returns and shorter hearing/records prose remain at the same tables. The retained neutral portrait supplies no new recording, reopened contact, filed statement or resolved employment review.",
-      "scenes": [
-        "act2_shelter_prep",
-        "act2_shelter_evacuation",
-        "act2_shelter_hall",
-        "act2_shelter_rooms",
-        "act2_shelter_result",
-        "act2_origin_gutterwire",
-        "act2_witness_safe",
-        "act2_public_response",
-        "act3_neighborhood",
-        "act3_records_visit"
-      ]
-    },
-    {
-      "treatment": "portrait",
-      "asset": "/art/asa.jpg",
-      "reason": "Keep Asa identifiable during source inspection, transit choices and the later courier conversation. The portrait supplies no delivery or private-clearance confirmation.",
-      "scenes": [
-        "act2_freight_sources",
-        "act2_freight_prep",
-        "act2_freight_crossing",
-        "act2_freight_recovery",
-        "act2_freight_intake",
-        "act2_freight_result"
-      ]
-    },
-    {
-      "treatment": "background",
-      "asset": "/art/stall.jpg",
-      "reason": "Reuse the existing street backdrop for arrival roleplay, route transitions and district navigation. Keep these connective steps focused on choices rather than introducing another framed illustration.",
-      "scenes": [
-        "opening_self",
-        "opening_approach",
-        "opening_neighbor",
-        "hatch",
-        "hatch_caught",
-        "side",
-        "districts",
-        "act2_training",
-        "act2_origin_return"
-      ]
-    },
-    {
-      "treatment": "portrait",
-      "asset": "/art/quill.jpg",
-      "reason": "Reuse Quill\u2019s existing portrait for briefing, memory ownership questions and recurring street work. The counter remains the same place; no new setting plate is needed. His portrait does not reveal the buyer, memo contents or an accepted contract.",
-      "scenes": [
-        "pay_yes",
-        "pay_no",
-        "why",
-        "chapel",
-        "route",
-        "street_after",
-        "act2_origin_dustline"
-      ]
-    },
-    {
-      "treatment": "portrait",
-      "asset": "/art/orderly.jpg",
-      "reason": "Reuse the chapel attendant portrait for the existing entrance encounter; no new character or setting plate is needed for this exchange.",
-      "scenes": [
-        "front"
-      ]
-    },
-    {
-      "treatment": "background",
-      "asset": "/art/chapel.jpg",
-      "reason": "Reuse the established chapel backdrop for adjacent underground and alley transitions; these connective steps need no separate illustration.",
-      "scenes": [
-        "undercroft",
-        "after_kerr"
-      ]
-    },
-    {
-      "treatment": "portrait",
-      "asset": "/art/lumen.jpg",
-      "reason": "Use Lumen\u2019s established portrait for clinic, care, source and dispatch conversations. Her presence identifies the recurring speaker; no art claims treatment, witness safety or completed repair.",
-      "scenes": [
-        "lumen",
-        "lumen_deal",
-        "lumen_cold",
-        "ending_burned",
-        "act2_lumen_door",
-        "act2_lumen",
-        "act2_witness_door",
-        "act2_witness_lost",
-        "act2_recovery_after",
-        "act2_pump_brief",
-        "act2_pump_triage",
-        "act2_pump_report",
-        "act3_pump_schedule",
-        "act2_notice_recovery",
-        "act3_notice_visit",
-        "act3_notice_repair",
-        "act3_notice_result",
-        "act2_witness_plan",
-        "act2_witness_repair"
-      ]
-    },
-    {
-      "treatment": "portrait",
-      "asset": "/art/mara.jpg",
-      "reason": "Reuse Mara\u2019s established portrait at the chair and during replay/interpretation of her recorded hour. Prose identifies recorded testimony; the portrait supplies no new live response, source proof or verdict.",
-      "scenes": [
-        "vault_quiet",
-        "memory_reconstruction",
-        "memory_challenge",
-        "memory_model"
-      ]
-    },
-    {
-      "treatment": "portrait",
-      "asset": "/art/kerr.jpg",
-      "reason": "Reuse Kerr\u2019s established portrait for confrontation, checkpoint and repair guidance. It depicts no rolled outcome, injury or successful repair.",
-      "scenes": [
-        "kerr",
-        "kerr_fight",
-        "act2_kerr_door",
-        "act2_kerr",
-        "act2_heat",
-        "act2_pump_methods",
-        "act3_pump_visit"
-      ]
-    },
-    {
       "treatment": "text",
       "reason": "Keep chapter cards and these outcome reflections in text; a shared outcome illustration would risk claiming evidence or consequences absent from a particular run. The Week card and finale retell state the actual silence offer, street speech or failed attempt without implying source authentication, witness safety or quotation consent.",
       "scenes": [
-        "ending_sold",
-        "ending_both",
-        "ending_smashed",
-        "ending_ash",
-        "ending_walk",
-        "ending_taken",
-        "ending_sainted",
         "card_week",
-        "ending_exposed",
-        "ending_week_wards",
-        "ending_week_deal",
         "card_wall"
-      ]
-    },
-    {
-      "treatment": "portrait",
-      "asset": "/art/ives.jpg",
-      "reason": "Reuse the existing Helion official portrait for offers, origin work and source challenges. It conveys no authorized evidence extraction or authenticated historical command. A briefed reader visit omits the repeated archive introduction; the legacy first encounter retains it. The hearing remains a source challenge at the same table, with no new visual event. At the Spire service desk Ives remains the primary portrait watching the queue; Edda\u2019s explicitly attributed service-key quotation is voiced and labeled as Edda separately.",
-      "scenes": [
-        "act2_helion_door",
-        "act2_helion",
-        "act2_folio",
-        "act2_origin_spire"
-      ]
-    },
-    {
-      "treatment": "background",
-      "asset": "/art/canal.jpg",
-      "reason": "Reuse the established dry-canal backdrop for recovery and archive transitions. Evidence status remains in prose rather than an outcome image. Short canal returns retain Ren\u2019s family context and an unresolved choice between street speech and paid silence; the setting depicts neither completed work nor publication. Consequence-specific returns reflect only earned work in prose; the neutral canal gives Ren no witness address, private statement or unearned outcome. The staged archive exit remembers Edda\u2019s working shift beside the source; the neutral canal depicts no later employment response or completed inquiry.",
-      "scenes": [
-        "act2_middle",
-        "act2_archive_verified"
-      ]
-    },
-    {
-      "treatment": "portrait",
-      "asset": "/art/nia.jpg",
-      "reason": "Reuse Nia\u2019s distinct portrait for private terms, review and contact. Never depict or expose a current address, moved witness or permission not present in the state. For an older save already at her reply, reuse remains suitable for her explicit one-answer terms without depicting renewed ongoing contact.",
-      "scenes": [
-        "act3_testimony_nia",
-        "act3_witness_visit",
-        "act3_nia_contact"
-      ]
-    },
-    {
-      "treatment": "background",
-      "asset": "/art/spire.jpg",
-      "reason": "Reuse the established Spire backdrop for the failed-search ledger desk, including a paused request and its return. No record is obtained by waiting; the neutral setting must not depict a recovered ledger, erased exposure or authenticated issuing key.",
-      "scenes": [
-        "act2_archive_gap"
-      ]
-    },
-    {
-      "treatment": "portrait",
-      "asset": "/art/mara-questioning.jpg",
-      "reason": "Reuse the restrained Mara expression for recorded interview passages and source limits. The portrait illustrates the recorded speaker; it does not imply she hears the runner, answers a new question, endorses a verdict or supplies authentication.",
-      "scenes": [
-        "memory_cross_exam",
-        "memory_assurance",
-        "memory_channel",
-        "memory_model_test",
-        "memory_sequence_result"
-      ]
-    },
-    {
-      "treatment": "portrait",
-      "asset": "/art/lumen-challenging.jpg",
-      "reason": "Restrained questioning expression accompanies source limits and testimony; it conveys attention without implying approval, authentication or a known outcome.",
-      "scenes": [
-        "memory_model_result",
-        "memory_publication"
       ]
     },
     {
@@ -293,26 +84,6 @@
       "reason": "Neutral planning alcove before collection; unselected map and closed case communicate the setting across drafts, success and held-case recovery without depicting an earned outcome. Failed recovery can pause with the case still held and the promise open; this neutral alcove depicts no courier, payment or handover."
     },
     {
-      "treatment": "portrait",
-      "asset": "/art/kerr.jpg",
-      "scenes": [
-        "act2_kerr_collection_terms",
-        "act3_kerr_collection",
-        "act3_kerr_collection_response",
-        "act3_kerr_personal_question"
-      ],
-      "reason": "Existing Kerr portrait accompanies personal terms, observed receipt and later replies; no fitting, treatment, forgiveness or new favor is illustrated. The personal voice and closer stall ambience retain this neutral portrait for both a delivered case and a replacement still held at the depot; no successful walk is depicted."
-    },
-    {
-      "treatment": "portrait",
-      "asset": "/art/quill.jpg",
-      "scenes": [
-        "act2_quill_introduction",
-        "act3_quill_introduction"
-      ],
-      "reason": "Existing Quill portrait accompanies the depot recommendation and late repayment conversation; the original refusal remains recorded."
-    },
-    {
       "treatment": "illustration",
       "asset": "/art/mara-present.jpg",
       "reason": "Mara is physically present for the voluntary clinic conversation and later visit. Ordinary light, an unmarked envelope and cup distinguish her from the recorded hour; neither dispatch, endorsement, public permission nor an inquiry finding is pictured. Refusal remains visible in the separate conduct portrait.",
@@ -320,32 +91,6 @@
         "act2_response_invitation",
         "act2_response_agenda",
         "act3_response_visit"
-      ]
-    },
-    {
-      "treatment": "portrait",
-      "asset": "/art/mara.jpg",
-      "reason": "Existing Mara portrait supports the present-day hope, optional invitation, refusal and later personal response. A shared hour keeps its own record and grants no acquittal, source, treatment result or quotation permission; the actual new window moment has a dedicated neutral illustration.",
-      "scenes": [
-        "act2_mara_quiet",
-        "act3_mara_followup"
-      ]
-    },
-    {
-      "treatment": "portrait",
-      "asset": "/art/lumen.jpg",
-      "reason": "Existing Lumen portrait accompanies ordinary care and her independently chosen contact limits, without implying clinic endorsement or public permission. Directed phrasing changes no scene staging; retain the portrait and any earned guarded variant.",
-      "scenes": [
-        "act2_lumen_quiet",
-        "act3_lumen_boundary"
-      ]
-    },
-    {
-      "treatment": "portrait",
-      "asset": "/art/quill.jpg",
-      "reason": "Reuse Quill at the existing Chapel service consultation. Machinery preparation remains described in text; no disabled reader or accepted bargain is depicted.",
-      "scenes": [
-        "chapel_methods"
       ]
     },
     {
@@ -365,23 +110,6 @@
         "act2_depot_liability",
         "act2_depot_contract"
       ]
-    },
-    {
-      "treatment": "portrait",
-      "asset": "/art/quill.jpg",
-      "reason": "Reuse the existing Quill consultation at the same Chapel service bench. The saved action allowance is written information, not a real-time animation or an access outcome.",
-      "scenes": [
-        "chapel_window_plan",
-        "chapel_window_expired"
-      ]
-    },
-    {
-      "treatment": "portrait",
-      "asset": "/art/lumen.jpg",
-      "scenes": [
-        "act3_chapel_return"
-      ],
-      "reason": "Reuse Lumen\u2019s neutral conversation portrait for her short Ward Nine desk reply about the Chapel record. No new place, forgiveness, completed work or cleared patrol attention is illustrated."
     },
     {
       "treatment": "illustration",
@@ -524,7 +252,7 @@
     {
       "treatment": "illustration",
       "asset": "/art/courier-table.jpg",
-      "reason": "Asa\u2019s neutral neighborhood courier table gives later receipt and personal conversations a distinct setting. A satchel and routing papers depict no arrived parcel, stock entry, restored route, passenger clearance or patient treatment; written outcomes retain authority across declined, unconfirmed, exposed, late and private deliveries.",
+      "reason": "Asa’s neutral neighborhood courier table gives later receipt and personal conversations a distinct setting. A satchel and routing papers depict no arrived parcel, stock entry, restored route, passenger clearance or patient treatment; written outcomes retain authority across declined, unconfirmed, exposed, late and private deliveries.",
       "scenes": [
         "act3_freight_visit",
         "act3_freight_query",
@@ -534,7 +262,7 @@
     {
       "treatment": "illustration",
       "asset": "/art/laundry-cart.jpg",
-      "reason": "A cart of clothes awaiting washing establishes Sera\u2019s ordinary shared work before funding, carrying or declining the task. Spare towels do not depict the pending wash as complete; no moved household, repaired valve, witness room or treatment is shown.",
+      "reason": "A cart of clothes awaiting washing establishes Sera’s ordinary shared work before funding, carrying or declining the task. Spare towels do not depict the pending wash as complete; no moved household, repaired valve, witness room or treatment is shown.",
       "scenes": [
         "act3_shelter_visit"
       ]
@@ -575,7 +303,7 @@
     {
       "treatment": "illustration",
       "asset": "/art/witness-checkpoint.jpg",
-      "reason": "The checkpoint setting depicts no witness identity, approved crossing, protected destination or completed transfer; Kerr\u2019s actual portrait remains.",
+      "reason": "The checkpoint setting depicts no witness identity, approved crossing, protected destination or completed transfer; Kerr’s actual portrait remains.",
       "scenes": [
         "act2_witness_checkpoint"
       ]
@@ -583,7 +311,7 @@
     {
       "treatment": "illustration",
       "asset": "/art/nia-transfer.jpg",
-      "reason": "Nia\u2019s pre-transfer agency and established appearance accompany her briefing and work question. No tightened harness, completed move, protected room, recording or new permission is depicted.",
+      "reason": "Nia’s pre-transfer agency and established appearance accompany her briefing and work question. No tightened harness, completed move, protected room, recording or new permission is depicted.",
       "scenes": [
         "act2_witness_brief",
         "act2_witness_support"
@@ -615,6 +343,278 @@
       "scenes": [
         "ward_wall",
         "act3_arrival"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/market-counter.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits.",
+      "scenes": [
+        "opening_self",
+        "opening_approach",
+        "opening_neighbor",
+        "pay_yes",
+        "pay_no",
+        "why",
+        "chapel",
+        "route",
+        "ending_walk",
+        "act2_kerr_door",
+        "act2_kerr",
+        "act2_kerr_collection_terms",
+        "act2_quill_introduction",
+        "act3_kerr_collection",
+        "act3_kerr_collection_response",
+        "act3_kerr_personal_question",
+        "act3_quill_introduction"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/chapel-entry.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits.",
+      "scenes": [
+        "front",
+        "lumen",
+        "lumen_deal",
+        "lumen_cold",
+        "after_kerr",
+        "ending_burned",
+        "ending_taken",
+        "ending_sainted",
+        "act2_lumen_door",
+        "act2_lumen"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/chapel-service.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits.",
+      "scenes": [
+        "hatch",
+        "hatch_caught",
+        "side",
+        "undercroft",
+        "chapel_methods",
+        "chapel_window_plan",
+        "chapel_window_expired"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/memory-apparatus.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits.",
+      "scenes": [
+        "vault_quiet",
+        "kerr",
+        "kerr_fight"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/opening.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits.",
+      "scenes": [
+        "ending_sold",
+        "ending_both",
+        "ending_smashed",
+        "ending_ash",
+        "ending_exposed"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/district-board.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits.",
+      "scenes": [
+        "districts",
+        "street_after",
+        "act2_origin_return",
+        "act2_public_response",
+        "act2_training",
+        "ending_week_wards"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/spire-counter.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits.",
+      "scenes": [
+        "act2_helion_door",
+        "act2_helion",
+        "act2_folio",
+        "ending_week_deal"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/spire-terminal.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits.",
+      "scenes": [
+        "act2_origin_spire",
+        "act2_spire_result"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/shelter-landing.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits.",
+      "scenes": [
+        "act2_shelter_prep",
+        "act2_shelter_evacuation",
+        "act2_shelter_rooms",
+        "act2_shelter_result",
+        "act2_origin_gutterwire"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/shelter-hall.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits.",
+      "scenes": [
+        "act2_shelter_hall"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/freight.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits.",
+      "scenes": [
+        "act2_freight_sources"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/freight-passage.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits.",
+      "scenes": [
+        "act2_freight_prep",
+        "act2_freight_crossing",
+        "act2_freight_recovery",
+        "act2_freight_intake",
+        "act2_freight_result",
+        "act2_origin_dustline"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/canal-dispatch.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits.",
+      "scenes": [
+        "act2_middle",
+        "act2_heat",
+        "act2_archive_verified",
+        "act2_recovery_after",
+        "act2_witness_plan"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/archive-desk.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits.",
+      "scenes": [
+        "act2_archive_gap"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/memory-bench.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits.",
+      "scenes": [
+        "memory_reconstruction",
+        "memory_sequence_result",
+        "memory_model",
+        "memory_model_test",
+        "memory_model_result",
+        "memory_challenge",
+        "memory_cross_exam",
+        "memory_assurance",
+        "memory_channel",
+        "memory_publication"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/clinic-relay.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits.",
+      "scenes": [
+        "act3_testimony_nia",
+        "act2_witness_door",
+        "act2_witness_safe",
+        "act2_witness_lost",
+        "act2_witness_repair",
+        "act3_witness_visit",
+        "act3_nia_contact"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/clinic-coolant.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits.",
+      "scenes": [
+        "act2_pump_brief",
+        "act2_pump_methods",
+        "act2_pump_triage",
+        "act2_pump_report",
+        "act3_pump_visit",
+        "act3_pump_schedule"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/notice-desk.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits.",
+      "scenes": [
+        "act3_chapel_return",
+        "act2_notice_recovery",
+        "act3_notice_visit",
+        "act3_notice_repair",
+        "act3_notice_result"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/hearing-table.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits.",
+      "scenes": [
+        "act3_edda_terms",
+        "act3_edda_reply",
+        "act3_edda_visit",
+        "act3_records_visit"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/spire-payroll.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits.",
+      "scenes": [
+        "act3_edda_methods"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/memorial-stair.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits.",
+      "scenes": [
+        "act3_neighborhood"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/mara-window.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits.",
+      "scenes": [
+        "act2_mara_quiet",
+        "act3_mara_followup"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/ordinary-rest.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits.",
+      "scenes": [
+        "act2_lumen_quiet",
+        "act3_lumen_boundary"
       ]
     }
   ],

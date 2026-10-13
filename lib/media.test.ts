@@ -71,6 +71,6 @@ it("art decisions require a rationale and the art actually used by the scene", (
   assert.throws(() => auditSceneArt(SCENES, wrongAsset), /disagrees with rendered art: opening_city/);
   const omittedPlate = structuredClone(decisions); omittedPlate.decisions[0].treatment = "text"; delete omittedPlate.decisions[0].asset;
   assert.throws(() => auditSceneArt(SCENES, omittedPlate), /disagrees with rendered art: opening_city/);
-  const portraitMismatch = { ...SCENES, act2_spire_result: { ...SCENES.act2_spire_result, speaker: "Asa" } };
-  assert.throws(() => auditSceneArt(portraitMismatch), /disagrees with rendered art: act2_spire_result/);
+  const portraitMismatch = { ...SCENES, act2_response_agenda: { ...SCENES.act2_response_agenda, speaker: "Asa" } };
+  assert.throws(() => auditSceneArt(portraitMismatch), /Conditional portrait speaker mismatch: act2_response_agenda/);
 });

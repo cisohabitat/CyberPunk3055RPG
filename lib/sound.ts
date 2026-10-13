@@ -74,7 +74,7 @@ async function load(name: string) {
   const cached = cache.get(name); if (cached) { cache.delete(name); cache.set(name, cached); return cached; }
   const request = loading.get(name); if (request) return request;
   const pending = (async () => {
-    const extension = name === TITLE_MUSIC.name ? TITLE_MUSIC.extension : name === "theme" || name.startsWith("theme-") || name.startsWith("ambience-") ? "flac" : "wav";
+    const extension = name.startsWith("voice-campaign-") ? "mp3" : name === TITLE_MUSIC.name ? TITLE_MUSIC.extension : name === "theme" || name.startsWith("theme-") || name.startsWith("ambience-") ? "flac" : "wav";
     const response = await fetch(`/audio/${name}.${extension}`);
     if (!response.ok) throw new Error("Audio unavailable");
     const buffer = await context().decodeAudioData(await response.arrayBuffer());
@@ -173,7 +173,7 @@ export function stopVoice() {
   duckBed(false);
 }
 /** Revealed authored dialogue only. Cancellation prevents a late fetch start. */
-export function playVoice(name: string, report: (status: VoiceStatus) => void): () => void {
+export function playVoice(name: string, report: (status: VoiceStatus) => void, finished?: (outcome: "ended" | "unavailable") => void): () => void {
   stopVoice();
   const id = voiceTicket;
   if (!want || mix.voices === 0) { report("idle"); return () => {}; }
@@ -187,11 +187,11 @@ export function playVoice(name: string, report: (status: VoiceStatus) => void): 
       const cleanup = node.onended;
       node.onended = (event) => {
         cleanup?.call(node, event);
-        if (id === voiceTicket) { voiceNode = null; duckBed(false); report("idle"); }
+        if (id === voiceTicket) { voiceNode = null; duckBed(false); report("idle"); finished?.("ended"); }
       };
       voiceNode = node; duckBed(true); node.start(); report("playing");
     } catch {
-      if (id === voiceTicket) { voiceNode = null; duckBed(false); report("unavailable"); }
+      if (id === voiceTicket) { voiceNode = null; duckBed(false); report("unavailable"); finished?.("unavailable"); }
     }
   })();
   return () => { if (id === voiceTicket) stopVoice(); };

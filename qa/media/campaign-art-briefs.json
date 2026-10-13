@@ -1,0 +1,72 @@
+[
+  {
+    "id": "market-counter",
+    "caption": "Ward Four · under the awnings",
+    "description": "Steam rises from an unattended copper noodle pot beneath a patched market awning, beside a damp menu and two empty counter seats.",
+    "scene": "An intimate NIGHT MARKET NOODLE COUNTER beneath patched fabric awnings. Steam rising from a weathered copper noodle pot and nested bowls, two empty counter stools, a damp unreadable menu. Beyond, wet narrow pedestrian walkways and small amber stall lamps beneath an immense dark blue city dome. NO people, no broker, no completed transaction.",
+    "source": "/workspace/generated_images/exec-197a8a6f-5a33-4577-b637-39c4a243ff62.png"
+  },
+  {
+    "id": "chapel-entry",
+    "caption": "Glass Chapel · the service threshold",
+    "description": "A shallow basin and worn visitor desk stand beside a dim service stair, copper rails and a closed clinic door.",
+    "scene": "The ENTRY OF A MEMORY CLINIC CALLED GLASS CHAPEL. Shallow ceramic hand basin in foreground, worn visitor desk without names, closed clinic door and copper stair railing receding under dim glass lights. Humble medical architecture, incense haze, scuffed tile, amber work light, teal rainy window. No person, readable document, green clearance, open route or religious franchise symbols.",
+    "source": "/workspace/generated_images/exec-41dfb5dd-08b5-47a6-9a4e-68fb3ac61e43.png"
+  },
+  {
+    "id": "chapel-service",
+    "caption": "Glass Chapel · behind the clinic walls",
+    "description": "Copper pipes and a dark reader flank a closed service hatch in a narrow maintenance passage.",
+    "scene": "A NARROW MEMORY CLINIC MAINTENANCE PASSAGE with copper utility pipes, an old incinerator duct, closed service hatch, dark badge reader, small repair tool shelf. Distant bend of passage under amber maintenance lamps. Wet concrete and blue reflected rain, no person, no alarms, no cleared route, no completed repair.",
+    "source": "/workspace/generated_images/exec-8cb7a8c8-530b-4819-b8c0-edb7d24b3eb8.png"
+  },
+  {
+    "id": "memory-apparatus",
+    "caption": "Glass Chapel · the chair room",
+    "description": "A glass sliver holder and copper memory-reader controls sit beside the edge of a screened medical apparatus.",
+    "scene": "Close view of a MEMORY EDITING APPARATUS in a modest old clinic: a dark glass sliver holder on copper plinth, analog dials, coiled cable and translucent privacy screen hiding the medical chair beyond. The image never shows an occupied or empty chair. No extracted shard glowing, no performed edit, no recorded confession, no people, no names or readable medical data. Quiet amber lamp and deep blue shadows.",
+    "source": "/workspace/generated_images/exec-3bcc66ca-fa33-4598-af2e-690ef3a047a4.png"
+  },
+  {
+    "id": "clinic-coolant",
+    "caption": "Ward Nine · the coolant service room",
+    "description": "Closed coolant cabinets, insulated pipes and a portable supply trolley wait beneath a brass service lamp.",
+    "scene": "An old neighborhood CLINIC COOLANT SERVICE ROOM: closed metal coolant cabinets, insulated pipe elbows, plain supply trolley, coiled maintenance cable, brass service lamp. Gauge face oblique and unreadable. No medicines exposed, leaking valve, fixed success state, repair receipt, patient or worker. Atmospheric amber pool of light, petroleum blue tiled walls and wet service door.",
+    "source": "/workspace/generated_images/exec-e581f3f5-cecf-4f39-a9ff-bf38e6bc7226.png"
+  },
+  {
+    "id": "clinic-relay",
+    "caption": "Ward Nine · the private clinic relay",
+    "description": "An unmarked handset and closed notebook sit beside a privacy curtain and rain-streaked clinic window.",
+    "scene": "A PRIVATE CLINIC RELAY CORNER: ordinary unmarked telephone handset, dark little relay terminal, closed notebook, capped pen, privacy curtain, quiet rain-streaked glass window. Small humble wooden table. No person, address, message, photograph, active recording light, consent signature or outcome. Warm amber light and muted petroleum blue.",
+    "source": "/workspace/generated_images/exec-1d985e60-d75f-460d-97ea-5835c7070fb0.png"
+  },
+  {
+    "id": "district-board",
+    "caption": "Ward Four · the district board",
+    "description": "Indistinct notices and blank-backed cards hang under a sheltered district board beside a wet walkway.",
+    "scene": "An UNRESOLVED DISTRICT NOTICE BOARD at the sheltered edge of a wet urban walkway. Indistinct paper notices, blank-backed cards, exposed old pinholes, simple metal bench and closed street information panel. No legible text, addresses, announced verdict, exposed home list, delivered payment or recognizable people. Rain beyond the awning, a brass lamp makes amber reflected shapes against blue concrete.",
+    "source": "/workspace/generated_images/exec-66829497-3a83-41fb-a9bb-511a8bb8f211.png"
+  },
+  {
+    "id": "freight-passage",
+    "caption": "Canal district · the service passage",
+    "description": "A closed freight hatch, empty handling trolley and shadowed corridor sit beyond wet canal railings.",
+    "scene": "A CANAL FREIGHT SERVICE PASSAGE: wet railings, closed freight intake hatch, empty manual handling trolley, small unlit scanner, shadowed corridor bending out of view. Do not show a parcel, green checkpoint clearance, arrived delivery, intake receipt, registered recipient or person. Industrial copper details, petroleum blue night, restrained amber task lights, human-scale worn architecture.",
+    "source": "/workspace/generated_images/exec-4caa5e2b-c93e-487b-ad84-11088105920c.png"
+  },
+  {
+    "id": "shelter-landing",
+    "caption": "Ward Four · the shelter stair",
+    "description": "A broad worn ramp and handrail run beside the shelter stair, under a dim lamp and rain-streaked window.",
+    "scene": "Neutral sheltered STAIR AND ACCESSIBLE RAMP inside a worn working-class apartment building. Broad ramp with copper handrails alongside stairs, empty tiled landing, closed room doors, dim amber wall lamp, blue rainy window. Keep all significant architecture dry. No leak, bucket, pump, repair report, moved baggage, resident, treatment room, mattress reservation or completed outcome.",
+    "source": "/workspace/generated_images/exec-a000dd08-88e5-4a1a-b0f5-6b86aabdfc65.png"
+  },
+  {
+    "id": "shelter-hall",
+    "caption": "Ward Four · the staffed hall",
+    "description": "A plain kettle and stacked folded mattresses wait beside a broad ramp doorway in a communal hall.",
+    "scene": "A modest STAFFED COMMUNITY HALL inside the rainy dome city, seen with no people. Broad accessible ramp doorway, kettle on a counter, folded mattresses stacked beside a closed cupboard, chairs and modest overhead amber lighting, blue rainy window. Communal shelter architecture, not a private clinic room. No arrival count, named family, completed evacuation, consent token or readable list.",
+    "source": "/workspace/generated_images/exec-a1fe453e-b3a2-42f3-a766-17696785c88d.png"
+  }
+]

@@ -1,0 +1,2095 @@
+{
+  "disclosure": "Exact authored stock synthetic character dialogue files. Individual delivery index for technical review; no commissioned actors or independent listening acceptance.",
+  "lines": [
+    {
+      "id": "voice-campaign-stallholder-186ef0bc3f48",
+      "speaker": "Stallholder",
+      "text": "Funny thing to sell,",
+      "path": "public/audio/voice-campaign-stallholder-186ef0bc3f48.mp3",
+      "durationSeconds": 1.8453333333333333,
+      "sha256": "21d47d7dd657549f54e0b1a8175c061c04d74df7514c6fec71991a7904444e71",
+      "scenes": [
+        "opening_approach"
+      ]
+    },
+    {
+      "id": "voice-campaign-stallholder-4fdd6b715c84",
+      "speaker": "Stallholder",
+      "text": "Yesterday.",
+      "path": "public/audio/voice-campaign-stallholder-4fdd6b715c84.mp3",
+      "durationSeconds": 1.4573333333333334,
+      "sha256": "7fada82bb56c7b1e2e6a05cf493d40961ea9a575989042fb88fab4d729d539c1",
+      "scenes": [
+        "opening_approach"
+      ]
+    },
+    {
+      "id": "voice-campaign-stallholder-6cf1cf693aa4",
+      "speaker": "Stallholder",
+      "text": "A regular came in last winter,",
+      "path": "public/audio/voice-campaign-stallholder-6cf1cf693aa4.mp3",
+      "durationSeconds": 2.6773333333333333,
+      "sha256": "05a345a03da7e0fd051e49fb16c1e006c9b7b0e7008cabc8fc0dcd54c08595a4",
+      "scenes": [
+        "opening_neighbor"
+      ]
+    },
+    {
+      "id": "voice-campaign-stallholder-47b091d0fd85",
+      "speaker": "Stallholder",
+      "text": "He'd sold an argument with his wife to make the rent. Remembered getting paid. Didn't remember what he needed to apologize for. Asked me to write it down.",
+      "path": "public/audio/voice-campaign-stallholder-47b091d0fd85.mp3",
+      "durationSeconds": 11.373333333333333,
+      "sha256": "94e980cc7187e9d772f16b3ba51f073460481ad539e3b6cf639dc906b7f9de12",
+      "scenes": [
+        "opening_neighbor"
+      ]
+    },
+    {
+      "id": "voice-campaign-stallholder-86bfd85012a8",
+      "speaker": "Stallholder",
+      "text": "I sell dinner. But if someone hires you to carry an hour, ask whose it was before you ask what it pays.",
+      "path": "public/audio/voice-campaign-stallholder-86bfd85012a8.mp3",
+      "durationSeconds": 7.174666666666667,
+      "sha256": "7d2fbca56504961c733cf228ff114d0f9ed6e2153600430586c44a76904a952f",
+      "scenes": [
+        "opening_neighbor"
+      ]
+    },
+    {
+      "id": "voice-campaign-quill-3b5fe2def65d",
+      "speaker": "Quill",
+      "text": "Fifty now, two hundred on delivery. Her bodyguard is Kerr. He is paid to stop you.",
+      "path": "public/audio/voice-campaign-quill-3b5fe2def65d.mp3",
+      "durationSeconds": 7.018666666666666,
+      "sha256": "8219b83b69a0f1315032bffb9b71a9028e8be005746d31137fde46aa16641148",
+      "scenes": [
+        "stall"
+      ]
+    },
+    {
+      "id": "voice-campaign-quill-e467cd6ce1d3",
+      "speaker": "Quill",
+      "text": "Ninety now. Two hundred for the intact shard. Before dawn. Those are the terms.",
+      "path": "public/audio/voice-campaign-quill-e467cd6ce1d3.mp3",
+      "durationSeconds": 7.365333333333333,
+      "sha256": "b56801d76e1e17e351b0b732f40f6c986a3ef41d42399283d075922cfdd28f4f",
+      "scenes": [
+        "stall"
+      ]
+    },
+    {
+      "id": "voice-campaign-quill-4f2d77910bb8",
+      "speaker": "Quill",
+      "text": "The front desk will ask for one,",
+      "path": "public/audio/voice-campaign-quill-4f2d77910bb8.mp3",
+      "durationSeconds": 2.336,
+      "sha256": "b2a8e1e28fe68db9ac917ab0f7523dfa2ec2d2033816dce249be7b024b40ef4b",
+      "scenes": [
+        "route"
+      ]
+    },
+    {
+      "id": "voice-campaign-quill-83fa5b1deb5a",
+      "speaker": "Quill",
+      "text": "The other doors ask different questions.",
+      "path": "public/audio/voice-campaign-quill-83fa5b1deb5a.mp3",
+      "durationSeconds": 2.8266666666666667,
+      "sha256": "d3e9b34331b6c560544aec6d5eb17751d3c92ff36c6ef4f5044d9955509dba13",
+      "scenes": [
+        "route"
+      ]
+    },
+    {
+      "id": "voice-campaign-sister-lumen-42a4c77e877a",
+      "speaker": "Sister Lumen",
+      "text": "Copy it. Then we both leave holding a fire. Do not get clever and die.",
+      "path": "public/audio/voice-campaign-sister-lumen-42a4c77e877a.mp3",
+      "durationSeconds": 5.477916666666666,
+      "sha256": "b286d9f0849c4d9f1c3e9e523114c4ee196ba3e017595181d89eef4d84ae49e5",
+      "scenes": [
+        "vault_quiet"
+      ]
+    },
+    {
+      "id": "voice-campaign-kerr-3914d401fb83",
+      "speaker": "Kerr",
+      "text": "Put it down.",
+      "path": "public/audio/voice-campaign-kerr-3914d401fb83.mp3",
+      "durationSeconds": 1.268625,
+      "sha256": "dedf3c7e841870c6d32a4ea7c0aee46f9a49888892ae43db621b2c8fb93208d6",
+      "scenes": [
+        "kerr"
+      ]
+    },
+    {
+      "id": "voice-campaign-quill-63d3271f8495",
+      "speaker": "Quill",
+      "text": "It goes to a clinic,",
+      "path": "public/audio/voice-campaign-quill-63d3271f8495.mp3",
+      "durationSeconds": 1.8026666666666666,
+      "sha256": "369952d0afae1c944aba4729313c3f6569be7fbeb332978ea53a3fcd8041999b",
+      "scenes": [
+        "act2_origin_dustline"
+      ]
+    },
+    {
+      "id": "voice-campaign-asa-8b96bfc8114a",
+      "speaker": "Asa",
+      "text": "Diagnostic cartridge. Clinic stock. My manifest can't cross this gate.",
+      "path": "public/audio/voice-campaign-asa-8b96bfc8114a.mp3",
+      "durationSeconds": 7.537958333333333,
+      "sha256": "6395d2bcb63839e36f5565c0f48fc234ed29b513a83ab69ad456f5d2f545cb9c",
+      "scenes": [
+        "act2_freight_brief"
+      ]
+    },
+    {
+      "id": "voice-campaign-ren-849965fb2829",
+      "speaker": "Ren",
+      "text": "Junie Calder worked beside Ivo Pell,",
+      "path": "public/audio/voice-campaign-ren-849965fb2829.mp3",
+      "durationSeconds": 2.912,
+      "sha256": "45a501378850d8717f661a07df060c7533dfbb851325105956750f76b87408c6",
+      "scenes": [
+        "act2_middle"
+      ]
+    },
+    {
+      "id": "voice-campaign-ren-8fe81a46651c",
+      "speaker": "Ren",
+      "text": "Say her if you get to the wall. She was my family before she was your evidence.",
+      "path": "public/audio/voice-campaign-ren-8fe81a46651c.mp3",
+      "durationSeconds": 5.669333333333333,
+      "sha256": "e4a83ef503ed1653881614645c0027af2a2c5da58b911eebafafee660b7fd93e",
+      "scenes": [
+        "act2_middle"
+      ]
+    },
+    {
+      "id": "voice-campaign-sister-lumen-43ce57d8cdbe",
+      "speaker": "Sister Lumen",
+      "text": "They need to know where the clinic is,",
+      "path": "public/audio/voice-campaign-sister-lumen-43ce57d8cdbe.mp3",
+      "durationSeconds": 1.952,
+      "sha256": "861874c2292d7b5324c3e27bc7ea12f25e528d9874a19821fa25f52002e0597c",
+      "scenes": [
+        "act2_notice_brief"
+      ]
+    },
+    {
+      "id": "voice-campaign-dispatcher-0736bc19689f",
+      "speaker": "Dispatcher",
+      "text": "I can take that split if you carry the clinic's return bundle to this desk.",
+      "path": "public/audio/voice-campaign-dispatcher-0736bc19689f.mp3",
+      "durationSeconds": 4.085333333333334,
+      "sha256": "14f28e747025e5a56ffbbdaf100522c2ac127029c72b4c27a971f7841c5fc250",
+      "scenes": [
+        "act2_notice_offer"
+      ]
+    },
+    {
+      "id": "voice-campaign-sera-3acd9a434593",
+      "speaker": "Sera",
+      "text": "What do we put beside it?",
+      "path": "public/audio/voice-campaign-sera-3acd9a434593.mp3",
+      "durationSeconds": 1.608,
+      "sha256": "78e0801f40aff82173eda711cd8bc6410af0d1c4b0a10f8fc921ad22a8987382",
+      "scenes": [
+        "act2_public_response"
+      ]
+    },
+    {
+      "id": "voice-campaign-mechanic-2d8a9efa667f",
+      "speaker": "Mechanic",
+      "text": "The file says evacuation was canceled. I still need to know who sent it. Don't rub out the question mark because the wall is waiting.",
+      "path": "public/audio/voice-campaign-mechanic-2d8a9efa667f.mp3",
+      "durationSeconds": 8.289333333333333,
+      "sha256": "64ded1d9253c4ac34d9bbed17098db6b8b8fb306395f9bca660047b44a2f29cb",
+      "scenes": [
+        "act3_records_visit"
+      ]
+    },
+    {
+      "id": "voice-campaign-sera-ae46d6d71e83",
+      "speaker": "Sera",
+      "text": "Ivo stays legible,",
+      "path": "public/audio/voice-campaign-sera-ae46d6d71e83.mp3",
+      "durationSeconds": 1.6106666666666667,
+      "sha256": "a63d038e863c3dc8ab5a607f8537e8f5437a50a933067d5a93fb882366b79e6f",
+      "scenes": [
+        "ward_wall"
+      ]
+    },
+    {
+      "id": "voice-campaign-asa-f4168ab58dd9",
+      "speaker": "Asa",
+      "text": "A parcel is somebody's morning,",
+      "path": "public/audio/voice-campaign-asa-f4168ab58dd9.mp3",
+      "durationSeconds": 2.784,
+      "sha256": "33e483d921dad4561fbaeb4ddbd8470a24e7e33e6fdacb463827161eb6f8ac49",
+      "scenes": [
+        "act3_freight_visit"
+      ]
+    },
+    {
+      "id": "voice-campaign-asa-0e81be1b767b",
+      "speaker": "Asa",
+      "text": "What were you trying to carry for yourself?",
+      "path": "public/audio/voice-campaign-asa-0e81be1b767b.mp3",
+      "durationSeconds": 2.748625,
+      "sha256": "052bf6de862390c3e173630f1645aee4a5e8f8f4f0630f8a46e19ce1189fb118",
+      "scenes": [
+        "act3_freight_visit"
+      ]
+    },
+    {
+      "id": "voice-campaign-asa-4886abf2e519",
+      "speaker": "Asa",
+      "text": "Keep your name,",
+      "path": "public/audio/voice-campaign-asa-4886abf2e519.mp3",
+      "durationSeconds": 1.7486666666666666,
+      "sha256": "f534ad8b13ee79332a567eb9b79e0e97d6a7d0637a6efed2e11bef275eb96c0c",
+      "scenes": [
+        "act3_freight_reflection"
+      ]
+    },
+    {
+      "id": "voice-campaign-sera-1031969a7935",
+      "speaker": "Sera",
+      "text": "If you know any of them,",
+      "path": "public/audio/voice-campaign-sera-1031969a7935.mp3",
+      "durationSeconds": 1.44,
+      "sha256": "885228941d905cf23bb9c4a85b53438ad267dd69303b97cf9d7e9812827d40b3",
+      "scenes": [
+        "act3_arrival"
+      ]
+    },
+    {
+      "id": "voice-campaign-sera-c70735dc83fd",
+      "speaker": "Sera",
+      "text": "We still have the names.",
+      "path": "public/audio/voice-campaign-sera-c70735dc83fd.mp3",
+      "durationSeconds": 1.5526666666666666,
+      "sha256": "5131cbb8a55d65325828926de4fa27382fd7f907f9b89afe58f8ab66a1089f60",
+      "scenes": [
+        "act3_arrival"
+      ]
+    },
+    {
+      "id": "voice-campaign-sera-5e173a8c53cb",
+      "speaker": "Sera",
+      "text": "I won't call you back,",
+      "path": "public/audio/voice-campaign-sera-5e173a8c53cb.mp3",
+      "durationSeconds": 1.3973333333333333,
+      "sha256": "d6a3b3ae0cf4b43c3fa5924df8fb1b20aeb0e62db5ac2357456249ace4624c98",
+      "scenes": [
+        "ending_quiet"
+      ]
+    },
+    {
+      "id": "voice-campaign-sera-865cdf54da9e",
+      "speaker": "Sera",
+      "text": "Six households upstairs. One valve downstairs. We stop the leak or move everyone to the hall.",
+      "path": "public/audio/voice-campaign-sera-865cdf54da9e.mp3",
+      "durationSeconds": 6.826625,
+      "sha256": "6ec5bad16c2dfdac947360756a71c5a265c92347cabb28d3b9ff20687fce7f3a",
+      "scenes": [
+        "act2_shelter_brief"
+      ]
+    },
+    {
+      "id": "voice-campaign-ren-7acf21262f21",
+      "speaker": "Ren",
+      "text": "We can walk. My father needs the ramp, not the stairs.",
+      "path": "public/audio/voice-campaign-ren-7acf21262f21.mp3",
+      "durationSeconds": 4.814,
+      "sha256": "be6ce67cada01d9f9908fff6a862a9e2ce0d7c5f180288d2f0b180a9384bd5d1",
+      "scenes": [
+        "act2_shelter_brief"
+      ]
+    },
+    {
+      "id": "voice-campaign-ren-88411fc0eaa0",
+      "speaker": "Ren",
+      "text": "We’re here,",
+      "path": "public/audio/voice-campaign-ren-88411fc0eaa0.mp3",
+      "durationSeconds": 1.184,
+      "sha256": "ffaf627e041221daf13e59765c1ea1995c88c2edac34b45611cd0b733c4e4f69",
+      "scenes": [
+        "act2_shelter_hall"
+      ]
+    },
+    {
+      "id": "voice-campaign-ren-db09fe4a26b0",
+      "speaker": "Ren",
+      "text": "It’s loud. It’s still somewhere.",
+      "path": "public/audio/voice-campaign-ren-db09fe4a26b0.mp3",
+      "durationSeconds": 3.286,
+      "sha256": "95762f6c03c6a30de2553c5374ef9c90d175c3bb4754abd2abd3bdb7ae91676c",
+      "scenes": [
+        "act2_shelter_hall"
+      ]
+    },
+    {
+      "id": "voice-campaign-ren-40e4d9a95be2",
+      "speaker": "Ren",
+      "text": "Dad reached the ramp. We slept, but the hall lights stayed on.",
+      "path": "public/audio/voice-campaign-ren-40e4d9a95be2.mp3",
+      "durationSeconds": 4.897958333333333,
+      "sha256": "d428c9e0361c64ace505bcff4f237646cc149977f85f9b5969f6b3cb0028527d",
+      "scenes": [
+        "act3_shelter_visit"
+      ]
+    },
+    {
+      "id": "voice-campaign-quill-3be212ca911c",
+      "speaker": "Quill",
+      "text": "Then do not spend your whole advance on my pass,",
+      "path": "public/audio/voice-campaign-quill-3be212ca911c.mp3",
+      "durationSeconds": 3.296,
+      "sha256": "1170f255663d5b29e2790cda54825c4e7a7074437cb0a903118d5c1e9cc35be2",
+      "scenes": [
+        "route"
+      ]
+    },
+    {
+      "id": "voice-campaign-quill-c8cfa180c8e3",
+      "speaker": "Quill",
+      "text": "There are other doors.",
+      "path": "public/audio/voice-campaign-quill-c8cfa180c8e3.mp3",
+      "durationSeconds": 1.7813333333333334,
+      "sha256": "a3708106786f1ee9d02ab51f9833fa30807d1a64352c0e074e3a1c93ac97e759",
+      "scenes": [
+        "route"
+      ]
+    },
+    {
+      "id": "voice-campaign-mara-1b139c158594",
+      "speaker": "Mara",
+      "text": "I could have waited for the exit count. Waiting would have put my name on the delay. I told myself a crew assignment was enough.",
+      "path": "public/audio/voice-campaign-mara-1b139c158594.mp3",
+      "durationSeconds": 7.828625,
+      "sha256": "34ee03e23b743c1e797e58ea48ccbb00715ea18af89fdebe0deeea3fd2d9c051",
+      "scenes": [
+        "memory_assurance"
+      ]
+    },
+    {
+      "id": "voice-campaign-mara-ed6c9a89a527",
+      "speaker": "Mara",
+      "text": "Don't put a person in that blank because I was too willing to leave it blank myself.",
+      "path": "public/audio/voice-campaign-mara-ed6c9a89a527.mp3",
+      "durationSeconds": 4.745958333333333,
+      "sha256": "50864c8b9246576cfedc4ae422a137ce3d42a0a498af9d0bf39779929899c100",
+      "scenes": [
+        "memory_channel"
+      ]
+    },
+    {
+      "id": "voice-campaign-edda-33e6d2a6a428",
+      "speaker": "Edda",
+      "text": "I need the old maintenance key out of this terminal,",
+      "path": "public/audio/voice-campaign-edda-33e6d2a6a428.mp3",
+      "durationSeconds": 3.168,
+      "sha256": "f0817a065655ff943ae645dc8bef2cfc7c4b37f7ec6c1d85e8fbb9afdb3ba7dc",
+      "scenes": [
+        "act2_origin_spire"
+      ]
+    },
+    {
+      "id": "voice-campaign-kerr-d8fb4323e19b",
+      "speaker": "Kerr",
+      "text": "You can tell me what the hour was worth,",
+      "path": "public/audio/voice-campaign-kerr-d8fb4323e19b.mp3",
+      "durationSeconds": 2.2266666666666666,
+      "sha256": "a86bc8121303cf33d39f0b709830eb7f49bb41abb93da204e3811586253d1f5c",
+      "scenes": [
+        "act2_kerr_door"
+      ]
+    },
+    {
+      "id": "voice-campaign-kerr-009cf5acd8f3",
+      "speaker": "Kerr",
+      "text": "Week's up,",
+      "path": "public/audio/voice-campaign-kerr-009cf5acd8f3.mp3",
+      "durationSeconds": 0.9379583333333333,
+      "sha256": "39d5e184cdff5907aed90598e41619937f6c385134de8f9368b7488b644c91a0",
+      "scenes": [
+        "act2_kerr"
+      ]
+    },
+    {
+      "id": "voice-campaign-sister-lumen-bf2d45489211",
+      "speaker": "Sister Lumen",
+      "text": "Help the room before you make it a sentence,",
+      "path": "public/audio/voice-campaign-sister-lumen-bf2d45489211.mp3",
+      "durationSeconds": 2.5493333333333332,
+      "sha256": "0b5ecee400fd05d95fae901f5f9b0206c720a059f191e272e35d5bac797c5d38",
+      "scenes": [
+        "act2_pump_brief"
+      ]
+    },
+    {
+      "id": "voice-campaign-sister-lumen-3e167d1ff04b",
+      "speaker": "Sister Lumen",
+      "text": "If the spare won't start, we move the medicines.",
+      "path": "public/audio/voice-campaign-sister-lumen-3e167d1ff04b.mp3",
+      "durationSeconds": 2.986666666666667,
+      "sha256": "e7627d8bab9c85d79eb648e619409a266ed183057757acf3275ef2bc79168207",
+      "scenes": [
+        "act2_pump_brief"
+      ]
+    },
+    {
+      "id": "voice-campaign-dispatcher-0ab16b5254b9",
+      "speaker": "Dispatcher",
+      "text": "I won't promise the third. Carry it to the later desk yourself, fund another carrier, or change the split.",
+      "path": "public/audio/voice-campaign-dispatcher-0ab16b5254b9.mp3",
+      "durationSeconds": 6.288,
+      "sha256": "b679a8a8b6a796b8d509e533008bdd209d1da9ae2adcedb52cc57e2e2aa4e328",
+      "scenes": [
+        "act2_notice_counter"
+      ]
+    },
+    {
+      "id": "voice-campaign-edda-de8cf8a1dc03",
+      "speaker": "Edda",
+      "text": "This tells us where to look. It isn't the record. My countersignature isn't the command's issuing key either.",
+      "path": "public/audio/voice-campaign-edda-de8cf8a1dc03.mp3",
+      "durationSeconds": 7.109333333333334,
+      "sha256": "8097614d9df891278c79af70870f982a2f3de4f14d7d298d191ba7dcf2e8515d",
+      "scenes": [
+        "act2_archive_challenge"
+      ]
+    },
+    {
+      "id": "voice-campaign-edda-d4b034abcf9f",
+      "speaker": "Edda",
+      "text": "Keep the original with Sera,",
+      "path": "public/audio/voice-campaign-edda-d4b034abcf9f.mp3",
+      "durationSeconds": 1.8666666666666667,
+      "sha256": "e809a737def220b80ee6e0a03b0f06366d6a4af73ee2cb02637c7d532d0b803a",
+      "scenes": [
+        "act2_archive_custody"
+      ]
+    },
+    {
+      "id": "voice-campaign-sister-lumen-c81c87c79a05",
+      "speaker": "Sister Lumen",
+      "text": "Two reached somebody. The rest have no reply yet. An acknowledgement does not tell me they came to clinic.",
+      "path": "public/audio/voice-campaign-sister-lumen-c81c87c79a05.mp3",
+      "durationSeconds": 7.272,
+      "sha256": "b0d0ca2ace0d82dd0b709327d47d4e84717bdb42d1501f5941c6462bdd8aedda",
+      "scenes": [
+        "act3_notice_visit"
+      ]
+    },
+    {
+      "id": "voice-campaign-sister-lumen-096438ce634b",
+      "speaker": "Sister Lumen",
+      "text": "You asked me to keep the records separate,",
+      "path": "public/audio/voice-campaign-sister-lumen-096438ce634b.mp3",
+      "durationSeconds": 2.272,
+      "sha256": "303841953c7c012c60eb3c563b585a85004225badd9c38e3e5ffb56ff0bcf5ee",
+      "scenes": [
+        "act3_notice_visit"
+      ]
+    },
+    {
+      "id": "voice-campaign-sister-lumen-c42d4ffc2e40",
+      "speaker": "Sister Lumen",
+      "text": "Keep the reply separate too.",
+      "path": "public/audio/voice-campaign-sister-lumen-c42d4ffc2e40.mp3",
+      "durationSeconds": 2.0419583333333335,
+      "sha256": "ade6f70145cfc394a9c477b7370b3cef35bd6b9cc879e2eb2dada38355b94747",
+      "scenes": [
+        "act3_notice_visit"
+      ]
+    },
+    {
+      "id": "voice-campaign-edda-cf0b92febd12",
+      "speaker": "Edda",
+      "text": "Keep the original available,",
+      "path": "public/audio/voice-campaign-edda-cf0b92febd12.mp3",
+      "durationSeconds": 1.888,
+      "sha256": "36591b90433abe562710609b2e164b894ec1529a4dd02e3d878277f146b9dc10",
+      "scenes": [
+        "act3_edda_visit"
+      ]
+    },
+    {
+      "id": "voice-campaign-edda-acdfea67c0a0",
+      "speaker": "Edda",
+      "text": "Let them question the record without making my shifts the story.",
+      "path": "public/audio/voice-campaign-edda-acdfea67c0a0.mp3",
+      "durationSeconds": 3.978666666666667,
+      "sha256": "87c088a6887c7367e5f9698aeb799180b3c7d56305bf8420f56d55ffff275c08",
+      "scenes": [
+        "act3_edda_visit"
+      ]
+    },
+    {
+      "id": "voice-campaign-mechanic-9395de375f4f",
+      "speaker": "Mechanic",
+      "text": "Now I can ask two questions instead of repeating one accusation.",
+      "path": "public/audio/voice-campaign-mechanic-9395de375f4f.mp3",
+      "durationSeconds": 4.308,
+      "sha256": "fe77e8b9f8caa05061cb7e003e69a06d33c30fc16409cf2be4b8ad428d681b38",
+      "scenes": [
+        "act3_records_visit"
+      ]
+    },
+    {
+      "id": "voice-campaign-quill-3b6151a19c29",
+      "speaker": "Quill",
+      "text": "Start by choosing how you get in,",
+      "path": "public/audio/voice-campaign-quill-3b6151a19c29.mp3",
+      "durationSeconds": 2.4426666666666668,
+      "sha256": "c2b7360328990aed84deaab9fa2a3d59805dd859e1c5029d57f9d13e74f47ba6",
+      "scenes": [
+        "route"
+      ]
+    },
+    {
+      "id": "voice-campaign-asa-d6b69d9d670c",
+      "speaker": "Asa",
+      "text": "A way out still has somebody at the other end,",
+      "path": "public/audio/voice-campaign-asa-d6b69d9d670c.mp3",
+      "durationSeconds": 3.36,
+      "sha256": "e2c217804a5c787120edc60f46b8642132e74457dd568ba4d202fecb75ca644b",
+      "scenes": [
+        "act3_freight_reflection"
+      ]
+    },
+    {
+      "id": "voice-campaign-asa-1cb14e9d8928",
+      "speaker": "Asa",
+      "text": "I know what a paid tomorrow means,",
+      "path": "public/audio/voice-campaign-asa-1cb14e9d8928.mp3",
+      "durationSeconds": 2.7626666666666666,
+      "sha256": "3a7f127ad439ceec18d5b596db52c487eba82a4a03df4e3fb06fa979d8e05b50",
+      "scenes": [
+        "act3_freight_reflection"
+      ]
+    },
+    {
+      "id": "voice-campaign-sister-lumen-ac1616d6fe27",
+      "speaker": "Sister Lumen",
+      "text": "You isolated it. The maintenance fault is on their log, even if your name isn't.",
+      "path": "public/audio/voice-campaign-sister-lumen-ac1616d6fe27.mp3",
+      "durationSeconds": 5.620666666666667,
+      "sha256": "8e7b65169084de9addfa5991f137dde3344feb100f9f899ab95f299110b38677",
+      "scenes": [
+        "act3_chapel_return",
+        "lumen"
+      ]
+    },
+    {
+      "id": "voice-campaign-sister-lumen-a1abd898aca3",
+      "speaker": "Sister Lumen",
+      "text": "I already decided you were a person.",
+      "path": "public/audio/voice-campaign-sister-lumen-a1abd898aca3.mp3",
+      "durationSeconds": 2.436,
+      "sha256": "44fc486a6a95ec0fb02d8ef040e9c377f9e6adccd5fecf257890a42d8b142f8a",
+      "scenes": [
+        "act2_lumen_door"
+      ]
+    },
+    {
+      "id": "voice-campaign-sister-lumen-eb5709fe89c8",
+      "speaker": "Sister Lumen",
+      "text": "Ward Nine is still down there,",
+      "path": "public/audio/voice-campaign-sister-lumen-eb5709fe89c8.mp3",
+      "durationSeconds": 1.9306666666666668,
+      "sha256": "a0ba1f89456e491990dda9a99d2121bf0dbf5c71a54084c4b98d2ac826cc23d0",
+      "scenes": [
+        "act2_lumen"
+      ]
+    },
+    {
+      "id": "voice-campaign-nia-pell-28180cc2b39c",
+      "speaker": "Nia Pell",
+      "text": "Don't publish my address and call that courage,",
+      "path": "public/audio/voice-campaign-nia-pell-28180cc2b39c.mp3",
+      "durationSeconds": 3.3173333333333335,
+      "sha256": "b6b3f443a3092bfceac429cd8e3ced1719f3bdb1ff36843ed64c0fb96064b9b7",
+      "scenes": [
+        "act2_witness_door"
+      ]
+    },
+    {
+      "id": "voice-campaign-nia-pell-ec820e69b73c",
+      "speaker": "Nia Pell",
+      "text": "Give me somewhere they don't rent to me. Then I'll tell Sera what I saw.",
+      "path": "public/audio/voice-campaign-nia-pell-ec820e69b73c.mp3",
+      "durationSeconds": 5.392,
+      "sha256": "068c040c5b91cc85153fb6cbb8fc316fff47d14011ecb738d25a6c36dc5d767b",
+      "scenes": [
+        "act2_witness_door"
+      ]
+    },
+    {
+      "id": "voice-campaign-nia-pell-c987f8a09159",
+      "speaker": "Nia Pell",
+      "text": "You got me here,",
+      "path": "public/audio/voice-campaign-nia-pell-c987f8a09159.mp3",
+      "durationSeconds": 1.888,
+      "sha256": "de1327f14fbdb4d5511b9fb329c6141a8c72c80de007b4c3d04cfc83db7b4c72",
+      "scenes": [
+        "act2_witness_arrival"
+      ]
+    },
+    {
+      "id": "voice-campaign-nia-pell-d8b7b7d16f6e",
+      "speaker": "Nia Pell",
+      "text": "That part stays,",
+      "path": "public/audio/voice-campaign-nia-pell-d8b7b7d16f6e.mp3",
+      "durationSeconds": 1.8666666666666667,
+      "sha256": "08d06fc009f2dd57046adfa0a644669111e86ac51eefa1c8d5c841949da4cd7a",
+      "scenes": [
+        "act2_witness_safe"
+      ]
+    },
+    {
+      "id": "voice-campaign-nia-pell-d5e530c55a4c",
+      "speaker": "Nia Pell",
+      "text": "The address doesn't. If they ask where I am, tell them I am available through you.",
+      "path": "public/audio/voice-campaign-nia-pell-d5e530c55a4c.mp3",
+      "durationSeconds": 6.316625,
+      "sha256": "7c227cefd66b5fccac85eded953e462275ef0ace72ce7cb3f484928784e560d4",
+      "scenes": [
+        "act2_witness_safe"
+      ]
+    },
+    {
+      "id": "voice-campaign-kerr-636ce1c1a709",
+      "speaker": "Kerr",
+      "text": "They have my replacement at the canal depot. Unpowered, no miracle in it.",
+      "path": "public/audio/voice-campaign-kerr-636ce1c1a709.mp3",
+      "durationSeconds": 4.780666666666667,
+      "sha256": "eb9c3b2bbb89b831a41034d6e8a4b36725772f27f4387f1f614722e842cd1925",
+      "scenes": [
+        "act2_kerr_collection_terms"
+      ]
+    },
+    {
+      "id": "voice-campaign-nia-pell-5b29f7d4a657",
+      "speaker": "Nia Pell",
+      "text": "An empty address field. Keep it that way when you tell the story.",
+      "path": "public/audio/voice-campaign-nia-pell-5b29f7d4a657.mp3",
+      "durationSeconds": 5.420625,
+      "sha256": "9aafe7da79f8ba705728424eb2fa7940944c0ed96926d0978bbe85ea29b71bae",
+      "scenes": [
+        "act3_witness_visit"
+      ]
+    },
+    {
+      "id": "voice-campaign-kerr-fd97386dd24d",
+      "speaker": "Kerr",
+      "text": "The terms arrive with the case.",
+      "path": "public/audio/voice-campaign-kerr-fd97386dd24d.mp3",
+      "durationSeconds": 2.014,
+      "sha256": "f5fd15d23508830c0e9675723e08e5c831f35757488aabc73d3991c6aacaf967",
+      "scenes": [
+        "act3_kerr_collection"
+      ]
+    },
+    {
+      "id": "voice-campaign-sera-ab673ed27369",
+      "speaker": "Sera",
+      "text": "She agreed to record it. That wasn't permission for every public use.",
+      "path": "public/audio/voice-campaign-sera-ab673ed27369.mp3",
+      "durationSeconds": 4.520666666666667,
+      "sha256": "f1ff2a25414df69cc34b972fc3d7aa9bee99938129580c061d0834fba34f3fa2",
+      "scenes": [
+        "act3_testimony_consent"
+      ]
+    },
+    {
+      "id": "voice-campaign-sera-4265e1807135",
+      "speaker": "Sera",
+      "text": "One at a time,",
+      "path": "public/audio/voice-campaign-sera-4265e1807135.mp3",
+      "durationSeconds": 1.248,
+      "sha256": "b0953083abcae62bdd26a8b4eb948260a676ce7245159b97effbc12cffe1799d",
+      "scenes": [
+        "ending_names"
+      ]
+    },
+    {
+      "id": "voice-campaign-kerr-f91cd82e5369",
+      "speaker": "Kerr",
+      "text": "You left them somewhere to send it back. Good. A private name shouldn't make a lost case somebody else's problem.",
+      "path": "public/audio/voice-campaign-kerr-f91cd82e5369.mp3",
+      "durationSeconds": 7.387958333333334,
+      "sha256": "2883f6a9b73a82d51fba21c804204ddca0097616e3f81fd95afb2758aec33827",
+      "scenes": [
+        "act2_route_receipt",
+        "act3_kerr_collection"
+      ]
+    },
+    {
+      "id": "voice-campaign-kerr-a71768b4e3a3",
+      "speaker": "Kerr",
+      "text": "No recipient entry,",
+      "path": "public/audio/voice-campaign-kerr-a71768b4e3a3.mp3",
+      "durationSeconds": 1.5653333333333332,
+      "sha256": "62a53610d11be58d897784f73d8ca2154b21166edde4a066806b2528bf73688a",
+      "scenes": [
+        "act3_kerr_collection"
+      ]
+    },
+    {
+      "id": "voice-campaign-sister-lumen-902d05ea34c1",
+      "speaker": "Sister Lumen",
+      "text": "The orderly accepted a shift, not a confession. You still owe the work you offered.",
+      "path": "public/audio/voice-campaign-sister-lumen-902d05ea34c1.mp3",
+      "durationSeconds": 5.313291666666666,
+      "sha256": "ffd12c63d48a766d10a8525138b03cc27d247b24dac5acdbe4bfcb03a26c9ef0",
+      "scenes": [
+        "act3_chapel_return",
+        "lumen"
+      ]
+    },
+    {
+      "id": "voice-campaign-kerr-f10a83941fef",
+      "speaker": "Kerr",
+      "text": "Shard on the plinth. You on the floor.",
+      "path": "public/audio/voice-campaign-kerr-f10a83941fef.mp3",
+      "durationSeconds": 3.032625,
+      "sha256": "e26bec8cd2890373e3d12e956dd0dc6cb606c03ce62df7d354ca24463b0b97b5",
+      "scenes": [
+        "kerr"
+      ]
+    },
+    {
+      "id": "voice-campaign-kerr-e4660f52938f",
+      "speaker": "Kerr",
+      "text": "That glass is an hour Helion paid to keep. We can skip to the end.",
+      "path": "public/audio/voice-campaign-kerr-e4660f52938f.mp3",
+      "durationSeconds": 4.513958333333333,
+      "sha256": "27e418208b0ab1d4c7dbf9d3e25e051cdf37e1e4cd64663df7c5922bea3ffdbb",
+      "scenes": [
+        "kerr"
+      ]
+    },
+    {
+      "id": "voice-campaign-kerr-f62283c66903",
+      "speaker": "Kerr",
+      "text": "My case. Your terms with the depot. Keep both names on the right paper.",
+      "path": "public/audio/voice-campaign-kerr-f62283c66903.mp3",
+      "durationSeconds": 5.659958333333333,
+      "sha256": "2e09320f0cdc185cec7e2afece5172cab1f32a01156f34bda9c2e8a1d23513e0",
+      "scenes": [
+        "act2_route_receipt",
+        "act3_kerr_collection"
+      ]
+    },
+    {
+      "id": "voice-campaign-sister-lumen-605b0079cbb3",
+      "speaker": "Sister Lumen",
+      "text": "You waited for their return pass. That left no new visitor entry.",
+      "path": "public/audio/voice-campaign-sister-lumen-605b0079cbb3.mp3",
+      "durationSeconds": 4.639333333333333,
+      "sha256": "d03cb73322e70a72d2257631e02d6db928cacd2350d6eeec0a7eb7962bc1ae43",
+      "scenes": [
+        "act3_chapel_return",
+        "lumen"
+      ]
+    },
+    {
+      "id": "voice-campaign-nia-pell-11dcdea73215",
+      "speaker": "Nia Pell",
+      "text": "I chose to wait with you. Quiet doesn't mean I agreed to a recording.",
+      "path": "public/audio/voice-campaign-nia-pell-11dcdea73215.mp3",
+      "durationSeconds": 5.752,
+      "sha256": "74167e0c4b9a5d8393000e2d3be8ea62fead6d8245fa4002f8333d0847623f4a",
+      "scenes": [
+        "act3_witness_visit"
+      ]
+    },
+    {
+      "id": "voice-campaign-kerr-2ca147e47255",
+      "speaker": "Kerr",
+      "text": "You let it go without you. Most runners hear an empty corridor and stop listening.",
+      "path": "public/audio/voice-campaign-kerr-2ca147e47255.mp3",
+      "durationSeconds": 5.228666666666666,
+      "sha256": "b2986af3f937bf2a9e87cbdb40a5814c6a990a78be7436378c55c2d10646979c",
+      "scenes": [
+        "act2_route_receipt",
+        "act3_kerr_collection"
+      ]
+    },
+    {
+      "id": "voice-campaign-sister-lumen-bd31a2e3e8be",
+      "speaker": "Sister Lumen",
+      "text": "You held it open with your hands. Maintenance will notice that.",
+      "path": "public/audio/voice-campaign-sister-lumen-bd31a2e3e8be.mp3",
+      "durationSeconds": 4.2026666666666666,
+      "sha256": "9448e010b33596f66f1a770cfa7d5bb912449f86edea1bc3275fe9689f6ab00c",
+      "scenes": [
+        "act3_chapel_return",
+        "lumen"
+      ]
+    },
+    {
+      "id": "voice-campaign-nia-pell-9691a2f29041",
+      "speaker": "Nia Pell",
+      "text": "You stopped when I asked. Remember that, not just the weight you carried.",
+      "path": "public/audio/voice-campaign-nia-pell-9691a2f29041.mp3",
+      "durationSeconds": 5.513333333333334,
+      "sha256": "a74086aa33083d9aec2b3d78360d4be00cb52849d1a471652dbce9bd2321bcd6",
+      "scenes": [
+        "act3_witness_visit"
+      ]
+    },
+    {
+      "id": "voice-campaign-kerr-a2e9087805ff",
+      "speaker": "Kerr",
+      "text": "You carried the weight where it was. Not where the handle told you it ought to be.",
+      "path": "public/audio/voice-campaign-kerr-a2e9087805ff.mp3",
+      "durationSeconds": 4.493291666666667,
+      "sha256": "c668497bc2724c18c43f4ddee2f9b1a123c3d5cb4024773c5dfe6898228df420",
+      "scenes": [
+        "act2_route_receipt",
+        "act3_kerr_collection"
+      ]
+    },
+    {
+      "id": "voice-campaign-ives-27bd077273a1",
+      "speaker": "Ives",
+      "text": "The folio is closed,",
+      "path": "public/audio/voice-campaign-ives-27bd077273a1.mp3",
+      "durationSeconds": 1.8666666666666667,
+      "sha256": "f9b3a63927360133948f05b7d86f91e1ff9436b5254f530608501702e4437914",
+      "scenes": [
+        "ending_listed"
+      ]
+    },
+    {
+      "id": "voice-campaign-quill-45259fa18cc2",
+      "speaker": "Quill",
+      "text": "Fifty now. Two hundred for the intact shard. Before dawn. Those are the terms.",
+      "path": "public/audio/voice-campaign-quill-45259fa18cc2.mp3",
+      "durationSeconds": 7.311333333333334,
+      "sha256": "24b269b294ce26d4ab900862ca00be5be9e2478d16edb3067570e1d6019ee58d",
+      "scenes": [
+        "stall"
+      ]
+    },
+    {
+      "id": "voice-campaign-kerr-8b5f1b44656f",
+      "speaker": "Kerr",
+      "text": "This isn't another collection from you.",
+      "path": "public/audio/voice-campaign-kerr-8b5f1b44656f.mp3",
+      "durationSeconds": 2.3453333333333335,
+      "sha256": "8ea9c0b456a09502151f1d3352d105356d3e81b42c93c96f6a49253117502ab6",
+      "scenes": [
+        "act2_kerr_collection_terms"
+      ]
+    },
+    {
+      "id": "voice-campaign-sister-lumen-2f09629a089e",
+      "speaker": "Sister Lumen",
+      "text": "We can still keep her account,",
+      "path": "public/audio/voice-campaign-sister-lumen-2f09629a089e.mp3",
+      "durationSeconds": 1.9093333333333333,
+      "sha256": "2363b1870a8389a2ecfaddd03d3b20924b7746262b8e63fdc2fe67bca7e66b88",
+      "scenes": [
+        "act2_witness_lost"
+      ]
+    },
+    {
+      "id": "voice-campaign-kerr-29ee7c589eed",
+      "speaker": "Kerr",
+      "text": "Tell the wall you left it open. I don't need a finished job invented on the way down.",
+      "path": "public/audio/voice-campaign-kerr-29ee7c589eed.mp3",
+      "durationSeconds": 5.4093333333333335,
+      "sha256": "ea2ca037b7cfa7c2076a44216838c7c2b9dfcf852d83c0a583da1092ae8365d7",
+      "scenes": [
+        "act3_kerr_collection"
+      ]
+    },
+    {
+      "id": "voice-campaign-sera-d9a5680cf8c7",
+      "speaker": "Sera",
+      "text": "You tested this sentence: The exported command receipt independently authenticates Helion as its issuer. What should we do with the verdict you kept?",
+      "path": "public/audio/voice-campaign-sera-d9a5680cf8c7.mp3",
+      "durationSeconds": 9.214666666666666,
+      "sha256": "d30e16598d76eabd414a4a33492c3d296e28fa75015704b0b2f6ae9a8c7370dd",
+      "scenes": [
+        "act2_public_response"
+      ]
+    },
+    {
+      "id": "voice-campaign-sera-aa1069e7abb6",
+      "speaker": "Sera",
+      "text": "You came late,",
+      "path": "public/audio/voice-campaign-sera-aa1069e7abb6.mp3",
+      "durationSeconds": 1.2053333333333334,
+      "sha256": "35ea1b124618cddfd696020ee5c2839df78f90f4a2a2630a74bf4fd50128cc7b",
+      "scenes": [
+        "ending_witness"
+      ]
+    },
+    {
+      "id": "voice-campaign-asa-de5224a38bd1",
+      "speaker": "Asa",
+      "text": "I haven't seen a stock receipt for your case. That part is still open.",
+      "path": "public/audio/voice-campaign-asa-de5224a38bd1.mp3",
+      "durationSeconds": 5.785958333333333,
+      "sha256": "041a94f924f2130eeb8b0ffc54869916b5fb3f037251e7168dfcadbf7f1252ee",
+      "scenes": [
+        "act3_freight_visit"
+      ]
+    },
+    {
+      "id": "voice-campaign-asa-85f28e598eb3",
+      "speaker": "Asa",
+      "text": "No matching entry at this desk. Someone else may have carried it. I can't give you a receipt for that.",
+      "path": "public/audio/voice-campaign-asa-85f28e598eb3.mp3",
+      "durationSeconds": 8.258,
+      "sha256": "2a7c3dddf780d03bd72e9f5c4af0c1a17f18519228122786a9ad72330a6bf621",
+      "scenes": [
+        "act3_freight_visit"
+      ]
+    },
+    {
+      "id": "voice-campaign-asa-2badc1c2c563",
+      "speaker": "Asa",
+      "text": "You left it at intake. I brought the batch reference; we can ask before calling it delivered.",
+      "path": "public/audio/voice-campaign-asa-2badc1c2c563.mp3",
+      "durationSeconds": 7.034666666666666,
+      "sha256": "1f0295289fe48e668ebd44c90804c9320895db74d7f35093e9c9d14ee8650d5d",
+      "scenes": [
+        "act3_freight_visit"
+      ]
+    },
+    {
+      "id": "voice-campaign-quill-d754198511c6",
+      "speaker": "Quill",
+      "text": "One case in this shipment for you,",
+      "path": "public/audio/voice-campaign-quill-d754198511c6.mp3",
+      "durationSeconds": 2.3573333333333335,
+      "sha256": "c48c2a6355eb6978d8f39d875e9fccf3262a8eff451207fbca2b0c7e4385bda5",
+      "scenes": [
+        "act2_workshop"
+      ]
+    },
+    {
+      "id": "voice-campaign-nia-pell-292f0e2b6351",
+      "speaker": "Nia Pell",
+      "text": "You kept your shift. Don't turn that into something I owe you.",
+      "path": "public/audio/voice-campaign-nia-pell-292f0e2b6351.mp3",
+      "durationSeconds": 5.166,
+      "sha256": "eb3a42392ab92b53d7f7d652eb27680fcf712fefceaf6fcd0464a81362d3158b",
+      "scenes": [
+        "act3_witness_visit"
+      ]
+    },
+    {
+      "id": "voice-campaign-kerr-0f0f6ae149a0",
+      "speaker": "Kerr",
+      "text": "You paid with your back. Keep the receipt for that, too.",
+      "path": "public/audio/voice-campaign-kerr-0f0f6ae149a0.mp3",
+      "durationSeconds": 3.6159583333333334,
+      "sha256": "7a631d2bd15ddd531e792bf4d5afa1dd8fe428fb8e702bbd5c488caeceafe570",
+      "scenes": [
+        "act2_route_receipt",
+        "act3_kerr_collection"
+      ]
+    },
+    {
+      "id": "voice-campaign-sister-lumen-b87596f8bebe",
+      "speaker": "Sister Lumen",
+      "text": "A door is a small thing until someone has to answer for it.",
+      "path": "public/audio/voice-campaign-sister-lumen-b87596f8bebe.mp3",
+      "durationSeconds": 3.9053333333333335,
+      "sha256": "7459648591b35ca642deec3f4c1b081e56dc5458b80e83146ad6ef916182ae01",
+      "scenes": [
+        "act3_chapel_return"
+      ]
+    },
+    {
+      "id": "voice-campaign-sister-lumen-62cf0bfa124b",
+      "speaker": "Sister Lumen",
+      "text": "Sit a minute. The next person through that door will need their own answer.",
+      "path": "public/audio/voice-campaign-sister-lumen-62cf0bfa124b.mp3",
+      "durationSeconds": 4.911958333333334,
+      "sha256": "e60a50eb4f410e93e8b4924c75768e85d06c7ae0e854a8a358209262f16a4fae",
+      "scenes": [
+        "act3_chapel_return"
+      ]
+    },
+    {
+      "id": "voice-campaign-kerr-b952a4b4f4eb",
+      "speaker": "Kerr",
+      "text": "You said no before I counted on it. I can work with a no.",
+      "path": "public/audio/voice-campaign-kerr-b952a4b4f4eb.mp3",
+      "durationSeconds": 4.140666666666666,
+      "sha256": "4753571ed0cd9bc28e8075d218938bf8afb39cc70904635aa5a1409b429359f9",
+      "scenes": [
+        "act3_kerr_collection"
+      ]
+    },
+    {
+      "id": "voice-campaign-quill-8888435582e7",
+      "speaker": "Quill",
+      "text": "I know who works the depot counter.",
+      "path": "public/audio/voice-campaign-quill-8888435582e7.mp3",
+      "durationSeconds": 2.5493333333333332,
+      "sha256": "2dc81e7c505f08efb718629edba9e51c3bfc693d68437c77061f61529f029e09",
+      "scenes": [
+        "act2_quill_introduction"
+      ]
+    },
+    {
+      "id": "voice-campaign-quill-d65247015b3d",
+      "speaker": "Quill",
+      "text": "You used the introduction to get a counter answer. That's what I lent you.",
+      "path": "public/audio/voice-campaign-quill-d65247015b3d.mp3",
+      "durationSeconds": 5.456,
+      "sha256": "1cad2f17a0dd535cff5f6fee2a9a7b314c661eaca9110c0b5cedbfda827afb0e",
+      "scenes": [
+        "act3_quill_introduction"
+      ]
+    },
+    {
+      "id": "voice-campaign-quill-6a63b21d89c5",
+      "speaker": "Quill",
+      "text": "An introduction asks somebody else to believe my word about yours. Clear the forty first, or use the map without me.",
+      "path": "public/audio/voice-campaign-quill-6a63b21d89c5.mp3",
+      "durationSeconds": 8.762666666666666,
+      "sha256": "2901427629b44b692d8f2279512a10d05337e710273323ba421a6f47030135ef",
+      "scenes": [
+        "act2_quill_introduction"
+      ]
+    },
+    {
+      "id": "voice-campaign-quill-8187b9c40d70",
+      "speaker": "Quill",
+      "text": "Paid now. Late then. Both fit on the page.",
+      "path": "public/audio/voice-campaign-quill-8187b9c40d70.mp3",
+      "durationSeconds": 4.558666666666666,
+      "sha256": "d92d27e73e9f79b3f10495faa701890e295669070e41a2e588bfe34746914428",
+      "scenes": [
+        "act2_quill_introduction"
+      ]
+    },
+    {
+      "id": "voice-campaign-quill-39284d611815",
+      "speaker": "Quill",
+      "text": "I took the money. I haven't lost the calendar.",
+      "path": "public/audio/voice-campaign-quill-39284d611815.mp3",
+      "durationSeconds": 3.8346666666666667,
+      "sha256": "b6b94e2251b55003db5668976e5833f9a951d11c05236317f72bdaa9c117c73b",
+      "scenes": [
+        "act3_quill_introduction"
+      ]
+    },
+    {
+      "id": "voice-campaign-kerr-12d595f0fd1a",
+      "speaker": "Kerr",
+      "text": "The register was part of our agreement,",
+      "path": "public/audio/voice-campaign-kerr-12d595f0fd1a.mp3",
+      "durationSeconds": 2.2266666666666666,
+      "sha256": "adb203cf8acc1189d2e4db73e801f81d6b715049ff2135a68de972ecd4ba328b",
+      "scenes": [
+        "act3_kerr_collection"
+      ]
+    },
+    {
+      "id": "voice-campaign-kerr-d547c33558df",
+      "speaker": "Kerr",
+      "text": "Leave it on the receipt.",
+      "path": "public/audio/voice-campaign-kerr-d547c33558df.mp3",
+      "durationSeconds": 1.7153333333333334,
+      "sha256": "4441b1b6c27dab341245aa4f74723947232855ca9532df7be658ad5a0f4deafc",
+      "scenes": [
+        "act3_kerr_collection"
+      ]
+    },
+    {
+      "id": "voice-campaign-sister-lumen-1b822a5834e0",
+      "speaker": "Sister Lumen",
+      "text": "And I won't sign as your sponsor. We can still sit at the same table.",
+      "path": "public/audio/voice-campaign-sister-lumen-1b822a5834e0.mp3",
+      "durationSeconds": 4.611958333333333,
+      "sha256": "a93cfca7c0f625a93a05adf4eef897bafc90b9ab38544e1ff1b50d2b5e3787f3",
+      "scenes": [
+        "act2_response_invitation"
+      ]
+    },
+    {
+      "id": "voice-campaign-mara-5ba01af16fc4",
+      "speaker": "Mara",
+      "text": "There is a chip in this cup. They always turn it away from me. I want to decide which way it faces.",
+      "path": "public/audio/voice-campaign-mara-5ba01af16fc4.mp3",
+      "durationSeconds": 6.483291666666666,
+      "sha256": "a2054632389902a8605f31c1a562bd2f392b428f5f29c963c33ecf25661b37ce",
+      "scenes": [
+        "act2_mara_company"
+      ]
+    },
+    {
+      "id": "voice-campaign-mara-167e67a571d6",
+      "speaker": "Mara",
+      "text": "That way,",
+      "path": "public/audio/voice-campaign-mara-167e67a571d6.mp3",
+      "durationSeconds": 0.9706666666666667,
+      "sha256": "371529ec3774a0b8e44d852db3066d612f41bd9738ac8891bd17d0d83ddab3fb",
+      "scenes": [
+        "act2_mara_company_kept"
+      ]
+    },
+    {
+      "id": "voice-campaign-mara-18de895b94ce",
+      "speaker": "Mara",
+      "text": "Tomorrow I might turn it back.",
+      "path": "public/audio/voice-campaign-mara-18de895b94ce.mp3",
+      "durationSeconds": 1.972625,
+      "sha256": "5649cd6c402a4154e10b27fe8c5d85990fa1c04843bf390e1729bf324357da0a",
+      "scenes": [
+        "act2_mara_company_kept"
+      ]
+    },
+    {
+      "id": "voice-campaign-mara-dfe90cca5bfe",
+      "speaker": "Mara",
+      "text": "They can ask me now,",
+      "path": "public/audio/voice-campaign-mara-dfe90cca5bfe.mp3",
+      "durationSeconds": 1.44,
+      "sha256": "71037f96e225373f1c54a9f6cd54317f91c15818a2d115c7434e2803a1fa80b1",
+      "scenes": [
+        "act3_response_visit"
+      ]
+    },
+    {
+      "id": "voice-campaign-mara-f8abaa9e676e",
+      "speaker": "Mara",
+      "text": "I signed the old order. This page doesn't take my hand off it.",
+      "path": "public/audio/voice-campaign-mara-f8abaa9e676e.mp3",
+      "durationSeconds": 4.399291666666667,
+      "sha256": "e2d82113661efaea3aee0e7c6dc1f7954df141c78f3d884649f90565b25e1915",
+      "scenes": [
+        "act3_mara_followup"
+      ]
+    },
+    {
+      "id": "voice-campaign-sister-lumen-3f761277c259",
+      "speaker": "Sister Lumen",
+      "text": "We gave the conversation a room. We didn't give it our name.",
+      "path": "public/audio/voice-campaign-sister-lumen-3f761277c259.mp3",
+      "durationSeconds": 4.012,
+      "sha256": "1f21747d2239f657b6b98667e64d326bd98cf58c37f0a27cfb2e4d94653a1e02",
+      "scenes": [
+        "act3_lumen_boundary"
+      ]
+    },
+    {
+      "id": "voice-campaign-mara-7d7228387866",
+      "speaker": "Mara",
+      "text": "It hasn't reached the desk,",
+      "path": "public/audio/voice-campaign-mara-7d7228387866.mp3",
+      "durationSeconds": 1.5666666666666667,
+      "sha256": "8c90e406a098144320cd840aa79d24ab406cd22c7963ef634cb7958c1d9e364f",
+      "scenes": [
+        "act3_response_visit"
+      ]
+    },
+    {
+      "id": "voice-campaign-quill-9f2423d67881",
+      "speaker": "Quill",
+      "text": "Mara's,",
+      "path": "public/audio/voice-campaign-quill-9f2423d67881.mp3",
+      "durationSeconds": 1.2693333333333334,
+      "sha256": "1ea6387d5ced53cc3b00791647fd724618f150b991c48590162b00927c516e97",
+      "scenes": [
+        "job_owner"
+      ]
+    },
+    {
+      "id": "voice-campaign-quill-d62c4bfc7196",
+      "speaker": "Quill",
+      "text": "Someone who pays for an original. You want Mara's reasons, ask Mara. I sell the route to the room, not an honest answer.",
+      "path": "public/audio/voice-campaign-quill-d62c4bfc7196.mp3",
+      "durationSeconds": 9.197958333333334,
+      "sha256": "c23bb1a9f612c934897292ed5e6b13dce286483c2bd18d8889cd94c0dfb79cf9",
+      "scenes": [
+        "job_owner"
+      ]
+    },
+    {
+      "id": "voice-campaign-edda-517f9439fca0",
+      "speaker": "Edda",
+      "text": "The obsolete key bills me after I clock out. Close that number, not my current account.",
+      "path": "public/audio/voice-campaign-edda-517f9439fca0.mp3",
+      "durationSeconds": 5.636666666666667,
+      "sha256": "4ec02304a758e02ad997fcf34506e8deea13d722b80888255d27bd5bd6c3791a",
+      "scenes": [
+        "act2_spire_brief"
+      ]
+    },
+    {
+      "id": "voice-campaign-edda-6b0cccd1941b",
+      "speaker": "Edda",
+      "text": "A clean receipt and this is yours. Wake their badge reader and it stays here.",
+      "path": "public/audio/voice-campaign-edda-6b0cccd1941b.mp3",
+      "durationSeconds": 4.737958333333333,
+      "sha256": "0efb97fe3333bd09d1721ffd3d844257002b971b857df4a09b5c1ab44ea5d614",
+      "scenes": [
+        "act2_spire_brief"
+      ]
+    },
+    {
+      "id": "voice-campaign-edda-ea88bd84a4c4",
+      "speaker": "Edda",
+      "text": "Read all three. The terminal is happy to close the wrong thing.",
+      "path": "public/audio/voice-campaign-edda-ea88bd84a4c4.mp3",
+      "durationSeconds": 4.115291666666667,
+      "sha256": "ef2ab5013d4482568bfc7db540b4e20fbdd7ffaed0f075c3c02bd2fac61495c9",
+      "scenes": [
+        "act2_spire_sources"
+      ]
+    },
+    {
+      "id": "voice-campaign-edda-402c00c4c4d2",
+      "speaker": "Edda",
+      "text": "One attempt. If it rejects you, we go to the desk. Your old badge will be in its log.",
+      "path": "public/audio/voice-campaign-edda-402c00c4c4d2.mp3",
+      "durationSeconds": 5.891916666666667,
+      "sha256": "fc645ba5bf263ead8a544997d7cf5a47cd56ea427db4cfa81b1b2bd4f3f570ce",
+      "scenes": [
+        "act2_spire_methods"
+      ]
+    },
+    {
+      "id": "voice-campaign-edda-a4ad65c73326",
+      "speaker": "Edda",
+      "text": "Come back when payroll answers. They don’t always send the same answer to the person who asked.",
+      "path": "public/audio/voice-campaign-edda-a4ad65c73326.mp3",
+      "durationSeconds": 5.770625,
+      "sha256": "a13d21855c1a92ba3df8cc7b60f15066fa161c767a3a6771a01761c6c3c338f5",
+      "scenes": [
+        "act2_spire_result"
+      ]
+    },
+    {
+      "id": "voice-campaign-edda-f9bf7fe7c969",
+      "speaker": "Edda",
+      "text": "The key and the inquiry are different jobs. We can ask about temporary work separately.",
+      "path": "public/audio/voice-campaign-edda-f9bf7fe7c969.mp3",
+      "durationSeconds": 5.316666666666666,
+      "sha256": "1ad0959498913c38cb67ad75af258579b06090d0a041d5df337004c99eadc27b",
+      "scenes": [
+        "act3_spire_visit"
+      ]
+    },
+    {
+      "id": "voice-campaign-edda-fcdc71e74fea",
+      "speaker": "Edda",
+      "text": "A review isn't a dismissal. If you can bridge the suspended shift, do. Keep the original available either way.",
+      "path": "public/audio/voice-campaign-edda-fcdc71e74fea.mp3",
+      "durationSeconds": 7.268,
+      "sha256": "40180169f98e102090d3b55ee3f84f6dcad5edcfac459ebc7da1fa3529548f5c",
+      "scenes": [
+        "act3_edda_visit"
+      ]
+    },
+    {
+      "id": "voice-campaign-edda-07130fdc6f54",
+      "speaker": "Edda",
+      "text": "One shift. Keep both papers. Don't make the first one an acquittal.",
+      "path": "public/audio/voice-campaign-edda-07130fdc6f54.mp3",
+      "durationSeconds": 5.1425833333333335,
+      "sha256": "1dfcc2d4c7c87edc51207d47f90117948301d79890fe7d2b456bfd4ebfc6fd9e",
+      "scenes": [
+        "act3_edda_reply"
+      ]
+    },
+    {
+      "id": "voice-campaign-kerr-05464a5d2167",
+      "speaker": "Kerr",
+      "text": "You sorted somebody else's shelves for this. That's your time, not a favor I signed for.",
+      "path": "public/audio/voice-campaign-kerr-05464a5d2167.mp3",
+      "durationSeconds": 5.378,
+      "sha256": "2503be640f9757fccebfd81acdd3abc8688b1694612e621c89d60837385101ed",
+      "scenes": [
+        "act2_route_receipt",
+        "act3_kerr_collection"
+      ]
+    },
+    {
+      "id": "voice-campaign-sera-bd40f64ddfb9",
+      "speaker": "Sera",
+      "text": "You agreed to pause questions. A hearing isn't an exception.",
+      "path": "public/audio/voice-campaign-sera-bd40f64ddfb9.mp3",
+      "durationSeconds": 4.051333333333333,
+      "sha256": "7a9cd6cad32ca1663d11d8a18d460ffd624df64e53b288d2caf584ba0915d68d",
+      "scenes": [
+        "act3_testimony_consent"
+      ]
+    },
+    {
+      "id": "voice-campaign-sister-lumen-88d18fce270c",
+      "speaker": "Sister Lumen",
+      "text": "Try another channel, not the same answer louder,",
+      "path": "public/audio/voice-campaign-sister-lumen-88d18fce270c.mp3",
+      "durationSeconds": 3.0613333333333332,
+      "sha256": "359abd9156d6cbeff3c3b4263ddad2e8d4f45d3d12a0bad8780fdbe96cf7a8ad",
+      "scenes": [
+        "act2_notice_recovery"
+      ]
+    },
+    {
+      "id": "voice-campaign-sister-lumen-4544c3e30291",
+      "speaker": "Sister Lumen",
+      "text": "A tower observer stood at the stop during the window. Three people asked for a different time. I know those calls happened; I do not know who stayed home.",
+      "path": "public/audio/voice-campaign-sister-lumen-4544c3e30291.mp3",
+      "durationSeconds": 9.29,
+      "sha256": "16409e894447fa516007fa5214980fd8d35b4edbe4ba7070450bcbcabee010e0",
+      "scenes": [
+        "act3_notice_visit"
+      ]
+    },
+    {
+      "id": "voice-campaign-edda-4c4a033f7b14",
+      "speaker": "Edda",
+      "text": "They can find my shift from this. Taking my name off the public copy won't hide it from my employer.",
+      "path": "public/audio/voice-campaign-edda-4c4a033f7b14.mp3",
+      "durationSeconds": 6.710666666666667,
+      "sha256": "7903a722c961fc216b1f9ea166ef73f2ddb3998f49639708333dafdb868a909e",
+      "scenes": [
+        "act2_archive_custody"
+      ]
+    },
+    {
+      "id": "voice-campaign-sister-lumen-c0bbc5b77e59",
+      "speaker": "Sister Lumen",
+      "text": "A chair and a lamp are what I offered. You don't get to turn them into a signature.",
+      "path": "public/audio/voice-campaign-sister-lumen-c0bbc5b77e59.mp3",
+      "durationSeconds": 4.9859583333333335,
+      "sha256": "9d75f952e6bc726c82dee4588abfdece12a3085b8db8c9e5d43cb86feaa3aa93",
+      "scenes": [
+        "act2_response_refusal"
+      ]
+    },
+    {
+      "id": "voice-campaign-sister-lumen-450395d62692",
+      "speaker": "Sister Lumen",
+      "text": "The clinic stayed out of the endorsement. Keep the refusal with the rest.",
+      "path": "public/audio/voice-campaign-sister-lumen-450395d62692.mp3",
+      "durationSeconds": 4.555291666666666,
+      "sha256": "85ee44c4a2b7770df72b0b8ba9f93b9d72e3fdab8c69252cc1b9f9d8ab170951",
+      "scenes": [
+        "act3_lumen_boundary"
+      ]
+    },
+    {
+      "id": "voice-campaign-mara-a34d49ceb13d",
+      "speaker": "Mara",
+      "text": "You didn't promise me a receipt,",
+      "path": "public/audio/voice-campaign-mara-a34d49ceb13d.mp3",
+      "durationSeconds": 1.76,
+      "sha256": "068b981fdc0fb4b02c12480f66471244fe7d628ed79c0a02f2bf4feea11d6823",
+      "scenes": [
+        "act3_response_visit"
+      ]
+    },
+    {
+      "id": "voice-campaign-mara-9cbc15df9e14",
+      "speaker": "Mara",
+      "text": "No board, and no dispatch yet. Leave both lines there.",
+      "path": "public/audio/voice-campaign-mara-9cbc15df9e14.mp3",
+      "durationSeconds": 4.205958333333333,
+      "sha256": "355ca9e8f318ea58e9bc3285cfc2223e53ab998e7295b89ce3196250ad391613",
+      "scenes": [
+        "act3_mara_followup"
+      ]
+    },
+    {
+      "id": "voice-campaign-mara-6fa5c12c1612",
+      "speaker": "Mara",
+      "text": "Private meant private. I'm glad that sentence survived the journey.",
+      "path": "public/audio/voice-campaign-mara-6fa5c12c1612.mp3",
+      "durationSeconds": 4.516,
+      "sha256": "1853bda76cff515af73aba31fc8a2d22bb67be79168b2fbede2a8d7bd1dfb1a2",
+      "scenes": [
+        "act3_mara_followup"
+      ]
+    },
+    {
+      "id": "voice-campaign-ren-4f73bedda5ff",
+      "speaker": "Ren",
+      "text": "We can use the hall annex if it has mattresses and Dad can use the ramp,",
+      "path": "public/audio/voice-campaign-ren-4f73bedda5ff.mp3",
+      "durationSeconds": 4.725333333333333,
+      "sha256": "51f04c41c87de2dca1e438de5d3c09593fcea37f9c7f0a01f745814e56e95f52",
+      "scenes": [
+        "act2_shelter_rooms"
+      ]
+    },
+    {
+      "id": "voice-campaign-sera-dc4258b3a9d7",
+      "speaker": "Sera",
+      "text": "You didn't see where they slept. Don't make that a story of abandonment.",
+      "path": "public/audio/voice-campaign-sera-dc4258b3a9d7.mp3",
+      "durationSeconds": 4.316,
+      "sha256": "4b1be8b8d1607957e8707a9e1cc4c19babca77dc762938584007147b6f6073dc",
+      "scenes": [
+        "act3_shelter_visit"
+      ]
+    },
+    {
+      "id": "voice-campaign-ren-83ccbd90da95",
+      "speaker": "Ren",
+      "text": "We slept upstairs. The floor was dry. Everything we packed still smells of coolant.",
+      "path": "public/audio/voice-campaign-ren-83ccbd90da95.mp3",
+      "durationSeconds": 7.338666666666667,
+      "sha256": "af730f4ab592e0d74f36d6db8e69c59934f612de3f677ce5b97a3877b8e7f734",
+      "scenes": [
+        "act3_shelter_visit"
+      ]
+    },
+    {
+      "id": "voice-campaign-edda-5d03c165abf4",
+      "speaker": "Edda",
+      "text": "Tell Sera what arrived. Leave room for what hasn't.",
+      "path": "public/audio/voice-campaign-edda-5d03c165abf4.mp3",
+      "durationSeconds": 3.5893333333333333,
+      "sha256": "f020ad7dd035c2a39e1369a9f7cfab7da46b5a9c5eccd56722437360c1a58a44",
+      "scenes": [
+        "act3_edda_reply"
+      ]
+    },
+    {
+      "id": "voice-campaign-edda-bb85ccac0d99",
+      "speaker": "Edda",
+      "text": "You didn't take this on. I haven't brought you a closure receipt.",
+      "path": "public/audio/voice-campaign-edda-bb85ccac0d99.mp3",
+      "durationSeconds": 3.933291666666667,
+      "sha256": "5616b53bf091aae03ebdc926c7c4cbd037606b769f3469fd6996fcf615ef01a9",
+      "scenes": [
+        "act3_spire_visit"
+      ]
+    },
+    {
+      "id": "voice-campaign-edda-bcee1bb4ec5b",
+      "speaker": "Edda",
+      "text": "They accepted the request. They haven't closed the key. Will you sit while I ask payroll?",
+      "path": "public/audio/voice-campaign-edda-bcee1bb4ec5b.mp3",
+      "durationSeconds": 5.775291666666667,
+      "sha256": "ec438e1a4ac045a4b768946e704ee38c61b55e5630b655c82057e23c50246b93",
+      "scenes": [
+        "act3_spire_visit"
+      ]
+    },
+    {
+      "id": "voice-campaign-edda-a8fa6fb017b5",
+      "speaker": "Edda",
+      "text": "That part didn't go away.",
+      "path": "public/audio/voice-campaign-edda-a8fa6fb017b5.mp3",
+      "durationSeconds": 1.8059583333333333,
+      "sha256": "06df32373b4d143897186813f8f4bc03afd86df9548c5292ec2358beb9f521b6",
+      "scenes": [
+        "act3_spire_visit"
+      ]
+    },
+    {
+      "id": "voice-campaign-edda-b7469ce19b81",
+      "speaker": "Edda",
+      "text": "Late is still useful,",
+      "path": "public/audio/voice-campaign-edda-b7469ce19b81.mp3",
+      "durationSeconds": 1.6106666666666667,
+      "sha256": "63c32e4b0d3c86a75e81104926fa027280ac74928c794db2a1affcc858ce73a6",
+      "scenes": [
+        "act3_spire_reply"
+      ]
+    },
+    {
+      "id": "voice-campaign-edda-db9226a2fcd3",
+      "speaker": "Edda",
+      "text": "Don’t date it last week.",
+      "path": "public/audio/voice-campaign-edda-db9226a2fcd3.mp3",
+      "durationSeconds": 1.7193333333333334,
+      "sha256": "128520f8fea92024dff271cdb81b77c4d645eb497a0109423723d306b11dde09",
+      "scenes": [
+        "act3_spire_reply"
+      ]
+    },
+    {
+      "id": "voice-campaign-edda-a80db8f505be",
+      "speaker": "Edda",
+      "text": "They have your badge. I’m not adding this serial number to the same trail.",
+      "path": "public/audio/voice-campaign-edda-a80db8f505be.mp3",
+      "durationSeconds": 4.691291666666666,
+      "sha256": "cb6593fc291adbc2e8cbe7c7f2db97fcfdeda59a70e6297fde4fff5ac845a7e0",
+      "scenes": [
+        "act2_spire_receipt"
+      ]
+    },
+    {
+      "id": "voice-campaign-sister-lumen-c41d638134ed",
+      "speaker": "Sister Lumen",
+      "text": "The service window closed. Their eyes didn't.",
+      "path": "public/audio/voice-campaign-sister-lumen-c41d638134ed.mp3",
+      "durationSeconds": 3.482666666666667,
+      "sha256": "d5835f066a4e5f33874e8fe846d89f30a597d69b8f34694db7c14c8a471b81ad",
+      "scenes": [
+        "act3_chapel_return",
+        "lumen"
+      ]
+    },
+    {
+      "id": "voice-campaign-quill-c98855695ec0",
+      "speaker": "Quill",
+      "text": "Because Kerr knows my face from a year I would rather sell than tell. Mara's bodyguard. Helion pays him to keep her hour in the chair room. He does not know your face yet.",
+      "path": "public/audio/voice-campaign-quill-c98855695ec0.mp3",
+      "durationSeconds": 12.464,
+      "sha256": "7447074b05822f5aaa201309c4c95434ba45706115ae09f666fa8e38cc40e5cc",
+      "scenes": [
+        "why"
+      ]
+    },
+    {
+      "id": "voice-campaign-quill-41a608e4e7c2",
+      "speaker": "Quill",
+      "text": "A quiet door gives you time. A loud one brings him. If he finds you, getting out matters more than getting paid.",
+      "path": "public/audio/voice-campaign-quill-41a608e4e7c2.mp3",
+      "durationSeconds": 8.698625,
+      "sha256": "7f88150386c3930b46fad28c314489419b0a25b19d54a3837c142c9401445d8e",
+      "scenes": [
+        "why"
+      ]
+    },
+    {
+      "id": "voice-campaign-quill-2b6a39f58b92",
+      "speaker": "Quill",
+      "text": "Ninety now. Two hundred when I can hold the shard up to a light and see a whole hour in it. We are done negotiating.",
+      "path": "public/audio/voice-campaign-quill-2b6a39f58b92.mp3",
+      "durationSeconds": 9.160666666666666,
+      "sha256": "0780d244337ebbacbd6f2d2e91b25475e2c9baba88a030e426f268ef93b3481c",
+      "scenes": [
+        "pay"
+      ]
+    },
+    {
+      "id": "voice-campaign-orderly-cc082ea4de2f",
+      "speaker": "Orderly",
+      "text": "Penitent? Appointment chip. Hands where the basin can see them. If you are here to sell us organs, we already have a guy.",
+      "path": "public/audio/voice-campaign-orderly-cc082ea4de2f.mp3",
+      "durationSeconds": 8.222625,
+      "sha256": "2b1e52ce01154786ecec5c1164d5956a3757a97f06a160327747f68ac67fa932",
+      "scenes": [
+        "front"
+      ]
+    },
+    {
+      "id": "voice-campaign-orderly-196a881f1c95",
+      "speaker": "Orderly",
+      "text": "Pass still scans,",
+      "path": "public/audio/voice-campaign-orderly-196a881f1c95.mp3",
+      "durationSeconds": 1.3546666666666667,
+      "sha256": "967e7d0204b00878905b25a315fedd71754bc5ed1f2f38539df3dd38ae5566d6",
+      "scenes": [
+        "districts"
+      ]
+    },
+    {
+      "id": "voice-campaign-sister-lumen-ef706d358585",
+      "speaker": "Sister Lumen",
+      "text": "Then work.",
+      "path": "public/audio/voice-campaign-sister-lumen-ef706d358585.mp3",
+      "durationSeconds": 1.2053333333333334,
+      "sha256": "7e1c1d222c9f64c7be00e79a153a8cfa62d99bec635383cee29bebacea5f0b81",
+      "scenes": [
+        "lumen_cold"
+      ]
+    },
+    {
+      "id": "voice-campaign-sister-lumen-39c6cb6305d6",
+      "speaker": "Sister Lumen",
+      "text": "Try not to bleed on the penitent tile. We just had it blessed.",
+      "path": "public/audio/voice-campaign-sister-lumen-39c6cb6305d6.mp3",
+      "durationSeconds": 4.332,
+      "sha256": "df7696422fdbdeb15d08117fc7ef4c57d1531eee36622fdb17d82b3e65f7b562",
+      "scenes": [
+        "lumen_cold"
+      ]
+    },
+    {
+      "id": "voice-campaign-quill-0d361f81e1bf",
+      "speaker": "Quill",
+      "text": "Keep the advance,",
+      "path": "public/audio/voice-campaign-quill-0d361f81e1bf.mp3",
+      "durationSeconds": 1.6533333333333333,
+      "sha256": "8c1ec638fd420b003fe37282a24add1a63a120474d60841af9fed1c7641e6908",
+      "scenes": [
+        "ending_walk"
+      ]
+    },
+    {
+      "id": "voice-campaign-quill-f1850a3ef768",
+      "speaker": "Quill",
+      "text": "Lose my name for a while.",
+      "path": "public/audio/voice-campaign-quill-f1850a3ef768.mp3",
+      "durationSeconds": 2.272,
+      "sha256": "e056d51e1438effa475705bc60df7f79517e8e182ad2454f861b4acb35288fbb",
+      "scenes": [
+        "ending_walk"
+      ]
+    },
+    {
+      "id": "voice-campaign-edda-3ba7652c8a59",
+      "speaker": "Edda",
+      "text": "No wage receipt today,",
+      "path": "public/audio/voice-campaign-edda-3ba7652c8a59.mp3",
+      "durationSeconds": 1.7386666666666666,
+      "sha256": "daab9e4f509de9d0d6d7b17b53465bae1af2e9e5526e6e93bf586cf2a52dd795",
+      "scenes": [
+        "act3_spire_visit"
+      ]
+    },
+    {
+      "id": "voice-campaign-edda-0b7889bba8b9",
+      "speaker": "Edda",
+      "text": "Just what payroll did with the number.",
+      "path": "public/audio/voice-campaign-edda-0b7889bba8b9.mp3",
+      "durationSeconds": 2.3033333333333332,
+      "sha256": "57d0fe96dac847bd266528b9bd7c830b88f13e3fe829628b0e02046dfbb07021",
+      "scenes": [
+        "act3_spire_visit"
+      ]
+    },
+    {
+      "id": "voice-campaign-quill-cbce468b33c1",
+      "speaker": "Quill",
+      "text": "Fifty. You already asked. I already didn't. The rain is free if you want a longer conversation.",
+      "path": "public/audio/voice-campaign-quill-cbce468b33c1.mp3",
+      "durationSeconds": 8.532,
+      "sha256": "3cd178e1c28aa5b1c69d1768e5f9e1075bbf7ac484a652823a1c0d80a8b956d0",
+      "scenes": [
+        "pay"
+      ]
+    },
+    {
+      "id": "voice-campaign-sister-lumen-845ed726cd2f",
+      "speaker": "Sister Lumen",
+      "text": "Kerr likes liars. The chair room is up the stair. So is he, in a moment.",
+      "path": "public/audio/voice-campaign-sister-lumen-845ed726cd2f.mp3",
+      "durationSeconds": 5.728666666666666,
+      "sha256": "e274525c38ee6b1c835859e1d932715f86b35268607ba112f6d670893da0643d",
+      "scenes": [
+        "lumen_cold"
+      ]
+    },
+    {
+      "id": "voice-campaign-mara-8bce931b08e0",
+      "speaker": "Mara",
+      "text": "That is mine. I signed it. Don't make the tower's next decision erase the one I made.",
+      "path": "public/audio/voice-campaign-mara-8bce931b08e0.mp3",
+      "durationSeconds": 6.269958333333333,
+      "sha256": "a348a24a73b1311bdf91fc5cf96669a4936a68ae3a5d138d38ad3d565f02181b",
+      "scenes": [
+        "memory_challenge"
+      ]
+    },
+    {
+      "id": "voice-campaign-ives-709c45808ce6",
+      "speaker": "Ives",
+      "text": "Helion can pay forty for a week of quiet,",
+      "path": "public/audio/voice-campaign-ives-709c45808ce6.mp3",
+      "durationSeconds": 2.72,
+      "sha256": "c03cb1947bbaa06c360ff476d3e55081f5aafb78a2205144cdec51d2eb6ded25",
+      "scenes": [
+        "act2_folio"
+      ]
+    },
+    {
+      "id": "voice-campaign-ives-071bb773ee1d",
+      "speaker": "Ives",
+      "text": "Or you can try to close this in the street, where we are already writing.",
+      "path": "public/audio/voice-campaign-ives-071bb773ee1d.mp3",
+      "durationSeconds": 3.6346666666666665,
+      "sha256": "86a00fadf9cdd2bddcd1bfdf816bfde34d3d34496154c06ee1e51f9c4842400e",
+      "scenes": [
+        "act2_folio"
+      ]
+    },
+    {
+      "id": "voice-campaign-kerr-438346af4765",
+      "speaker": "Kerr",
+      "text": "I did my job,",
+      "path": "public/audio/voice-campaign-kerr-438346af4765.mp3",
+      "durationSeconds": 1.4473333333333334,
+      "sha256": "c8991bb55f649ddfde31e970bcd41fb11a1a9a32cfe30a15f9f69a12a18fa4fd",
+      "scenes": [
+        "act2_kerr"
+      ]
+    },
+    {
+      "id": "voice-campaign-kerr-c53b950b1cbc",
+      "speaker": "Kerr",
+      "text": "You did not do yours. The knee still wants a conversation, and I am the only one who will have it without a memo.",
+      "path": "public/audio/voice-campaign-kerr-c53b950b1cbc.mp3",
+      "durationSeconds": 6.882625,
+      "sha256": "409b1a2d89d426cd14088abb4c58d5306263933a38bcf5ebd38ef01e520b5a9d",
+      "scenes": [
+        "act2_kerr"
+      ]
+    },
+    {
+      "id": "voice-campaign-sister-lumen-351fd141b54c",
+      "speaker": "Sister Lumen",
+      "text": "Break it after. I want to see the light go out.",
+      "path": "public/audio/voice-campaign-sister-lumen-351fd141b54c.mp3",
+      "durationSeconds": 3.4939583333333335,
+      "sha256": "0e798989be0efffc4470017ae7366dfeccafcb124fe7fc3c04d9ffaa7ff0eefc",
+      "scenes": [
+        "vault_quiet"
+      ]
+    },
+    {
+      "id": "voice-campaign-kerr-871f7e54aee7",
+      "speaker": "Kerr",
+      "text": "You can still stand in the street,",
+      "path": "public/audio/voice-campaign-kerr-871f7e54aee7.mp3",
+      "durationSeconds": 1.854,
+      "sha256": "47a7121034d6dce8c6801b012c77be605501744508e816cf7c071986fd93b8ac",
+      "scenes": [
+        "act2_heat"
+      ]
+    },
+    {
+      "id": "voice-campaign-kerr-25c53b99936f",
+      "speaker": "Kerr",
+      "text": "They will already be listening. Or you take what is left of the quiet money. It is not eighty. It is what they pay for a confession they already own.",
+      "path": "public/audio/voice-campaign-kerr-25c53b99936f.mp3",
+      "durationSeconds": 9.429291666666666,
+      "sha256": "5af3c78dd2a90a6c91139e5686b3846d209516a670e5440e190bc8e86e05a5ef",
+      "scenes": [
+        "act2_heat"
+      ]
+    },
+    {
+      "id": "voice-campaign-masked-attendant-8418f249bf02",
+      "speaker": "Masked attendant",
+      "text": "This vein is hot,",
+      "path": "public/audio/voice-campaign-masked-attendant-8418f249bf02.mp3",
+      "durationSeconds": 1.672,
+      "sha256": "bece808eb3cb1b0da8dfd4a95b92fa0de76633700768a2351d0dd54b2194651e",
+      "scenes": [
+        "hatch_caught"
+      ]
+    },
+    {
+      "id": "voice-campaign-masked-attendant-9186666a84ba",
+      "speaker": "Masked attendant",
+      "text": "You are not on the hot list.",
+      "path": "public/audio/voice-campaign-masked-attendant-9186666a84ba.mp3",
+      "durationSeconds": 2.3453333333333335,
+      "sha256": "52dde4e756a9ec4db4069482f4e501d1917a7be8847ac0f453457329df6d2d8c",
+      "scenes": [
+        "hatch_caught"
+      ]
+    },
+    {
+      "id": "voice-campaign-sister-lumen-16d2427d039f",
+      "speaker": "Sister Lumen",
+      "text": "There is no departure on that plan. Don't give it an ending it hasn't earned.",
+      "path": "public/audio/voice-campaign-sister-lumen-16d2427d039f.mp3",
+      "durationSeconds": 4.8112916666666665,
+      "sha256": "1c6f3f3b80a58043342cb95e67f30c9ac2de80c84f10614a73ae8e99ada48fa8",
+      "scenes": [
+        "act3_chapel_return"
+      ]
+    },
+    {
+      "id": "voice-campaign-sister-lumen-705922337466",
+      "speaker": "Sister Lumen",
+      "text": "You sold my week. Coming back to this desk doesn't unsell it.",
+      "path": "public/audio/voice-campaign-sister-lumen-705922337466.mp3",
+      "durationSeconds": 4.1825833333333335,
+      "sha256": "792858870ac719be22d2c5a3a33f79f20fa08c15b72a73984c716280d4ea4ee5",
+      "scenes": [
+        "act3_chapel_return"
+      ]
+    },
+    {
+      "id": "voice-campaign-ives-c0151cd75fa1",
+      "speaker": "Ives",
+      "text": "There are two fires,",
+      "path": "public/audio/voice-campaign-ives-c0151cd75fa1.mp3",
+      "durationSeconds": 1.504,
+      "sha256": "8438687200190a759a540894eef08183dc7d885ba217d2a12f6cc29966eb7db0",
+      "scenes": [
+        "act2_helion"
+      ]
+    },
+    {
+      "id": "voice-campaign-ives-61d366ec9772",
+      "speaker": "Ives",
+      "text": "We bought one. We would like the other to stop being a rumor.",
+      "path": "public/audio/voice-campaign-ives-61d366ec9772.mp3",
+      "durationSeconds": 4.127958333333333,
+      "sha256": "fc2acdfbbd6c74bc751d7c5d3c5bd06ce3df9373e526f31a5b66686f6922a381",
+      "scenes": [
+        "act2_helion"
+      ]
+    },
+    {
+      "id": "voice-campaign-ives-9317a0ee9650",
+      "speaker": "Ives",
+      "text": "You sold us a damaged hour,",
+      "path": "public/audio/voice-campaign-ives-9317a0ee9650.mp3",
+      "durationSeconds": 2.208,
+      "sha256": "af6c91eacf648334df86283c512a58e08da5e969e2547deec4aa3d6b106a57c9",
+      "scenes": [
+        "act2_helion"
+      ]
+    },
+    {
+      "id": "voice-campaign-ives-a94db9de69a3",
+      "speaker": "Ives",
+      "text": "We would like the name of whoever fried the rest.",
+      "path": "public/audio/voice-campaign-ives-a94db9de69a3.mp3",
+      "durationSeconds": 2.8053333333333335,
+      "sha256": "93a356d4f501486db4966bcd226d8046aec76e0249fcdd20747f510aec3f53e5",
+      "scenes": [
+        "act2_helion"
+      ]
+    },
+    {
+      "id": "voice-campaign-sister-lumen-390123751d0a",
+      "speaker": "Sister Lumen",
+      "text": "Walk in blind, then. The chair does not care about your reasons, and I am done spending mine on you.",
+      "path": "public/audio/voice-campaign-sister-lumen-390123751d0a.mp3",
+      "durationSeconds": 6.584,
+      "sha256": "ce937b0667a77b2e90a15e76f11a07bc88c3361f2804b7fdb32d048471d1d3c6",
+      "scenes": [
+        "lumen_cold"
+      ]
+    },
+    {
+      "id": "voice-campaign-kerr-c885cfd984a7",
+      "speaker": "Kerr",
+      "text": "They kept the reason you walked in,",
+      "path": "public/audio/voice-campaign-kerr-c885cfd984a7.mp3",
+      "durationSeconds": 1.9166666666666667,
+      "sha256": "9b22b76769c3ad11de5e2904ab1fe638b15ee08fdd31820a737df3f6fafcf38c",
+      "scenes": [
+        "act2_kerr"
+      ]
+    },
+    {
+      "id": "voice-campaign-kerr-dd35539e0644",
+      "speaker": "Kerr",
+      "text": "I kept you. That was not the contract. The contract is the part where you tell me what the shard was worth, and then you pay me for the week I spent not letting the chair finish.",
+      "path": "public/audio/voice-campaign-kerr-dd35539e0644.mp3",
+      "durationSeconds": 10.417958333333333,
+      "sha256": "19ddf5cddcc0196175d19a58134d2ee87f2a7b5f006d94c96761848442ea8676",
+      "scenes": [
+        "act2_kerr"
+      ]
+    },
+    {
+      "id": "voice-campaign-sister-lumen-d22f53686c15",
+      "speaker": "Sister Lumen",
+      "text": "You sold the week after walking with me. Helping with this reply doesn't make that disappear. Leave future messages at the desk; don't speak as my partner.",
+      "path": "public/audio/voice-campaign-sister-lumen-d22f53686c15.mp3",
+      "durationSeconds": 10.456666666666667,
+      "sha256": "279041887c41058efb104221764ee83faa2d678a3d23a8b08f9c1060548ecdf6",
+      "scenes": [
+        "act3_lumen_boundary"
+      ]
+    },
+    {
+      "id": "voice-campaign-ives-7117058514fc",
+      "speaker": "Ives",
+      "text": "The hour reached us,",
+      "path": "public/audio/voice-campaign-ives-7117058514fc.mp3",
+      "durationSeconds": 1.5466666666666666,
+      "sha256": "324a84cefd2264e9064279e1ddead9299517bfcc71838f68374f698a9ab0f457",
+      "scenes": [
+        "act2_helion"
+      ]
+    },
+    {
+      "id": "voice-campaign-ives-c0f98673baa3",
+      "speaker": "Ives",
+      "text": "Helion likes a complete file. You are the incomplete part.",
+      "path": "public/audio/voice-campaign-ives-c0f98673baa3.mp3",
+      "durationSeconds": 4.304,
+      "sha256": "71122a8f5512322135789e68431b9f4dad6e339a9aab22d2773785477f69efff",
+      "scenes": [
+        "act2_helion"
+      ]
+    },
+    {
+      "id": "voice-campaign-quill-52ddae919538",
+      "speaker": "Quill",
+      "text": "This is an introduction, not another invoice.",
+      "path": "public/audio/voice-campaign-quill-52ddae919538.mp3",
+      "durationSeconds": 3.509333333333333,
+      "sha256": "85fd1155d7bb26ddc2a2674a1ac95d876434ebf848cb4592a3b713226436383d",
+      "scenes": [
+        "act2_quill_introduction"
+      ]
+    },
+    {
+      "id": "voice-campaign-sister-lumen-fb180ed923e4",
+      "speaker": "Sister Lumen",
+      "text": "They kept the tool fee, not your promise. You owe no shift for a bargain they refused.",
+      "path": "public/audio/voice-campaign-sister-lumen-fb180ed923e4.mp3",
+      "durationSeconds": 5.482666666666667,
+      "sha256": "c978ca6db824276af1cac393294ebd636be0e0626bf2efa6dd8af72cabe09aee",
+      "scenes": [
+        "act3_chapel_return"
+      ]
+    },
+    {
+      "id": "voice-campaign-sister-lumen-a4523a4ec15c",
+      "speaker": "Sister Lumen",
+      "text": "You came back for the shift. The docket stays; the work is done.",
+      "path": "public/audio/voice-campaign-sister-lumen-a4523a4ec15c.mp3",
+      "durationSeconds": 4.458666666666667,
+      "sha256": "bc328716a3f4abe140b4448d1e89fd8bb3a65929cdb10870e0dc9e7fc883878c",
+      "scenes": [
+        "act3_chapel_return"
+      ]
+    },
+    {
+      "id": "voice-campaign-quill-9d1501e686c7",
+      "speaker": "Quill",
+      "text": "You took my introduction and used another way through. A recommendation can go unused. It doesn't become a delivery receipt.",
+      "path": "public/audio/voice-campaign-quill-9d1501e686c7.mp3",
+      "durationSeconds": 9.313958333333334,
+      "sha256": "8322883e6bef2474479872f241a10f26f366d355b95d3328d5cfc41074575839",
+      "scenes": [
+        "act3_quill_introduction"
+      ]
+    },
+    {
+      "id": "voice-campaign-sister-lumen-39285de09ad7",
+      "speaker": "Sister Lumen",
+      "text": "The service window ended outside. You found another door; the patrol still noticed.",
+      "path": "public/audio/voice-campaign-sister-lumen-39285de09ad7.mp3",
+      "durationSeconds": 5.597958333333334,
+      "sha256": "1176dab1d23ab2d5c639da0ce50fa19f4eb16046c65ed154945ee67f5510edbc",
+      "scenes": [
+        "act3_chapel_return"
+      ]
+    },
+    {
+      "id": "voice-campaign-sister-lumen-1d31b215d4c0",
+      "speaker": "Sister Lumen",
+      "text": "You promised to break the hour and sold it instead. This envelope is a different act. Future messages stay at the desk; don't call me your partner.",
+      "path": "public/audio/voice-campaign-sister-lumen-1d31b215d4c0.mp3",
+      "durationSeconds": 9.509333333333334,
+      "sha256": "82a485c81d5893ef9b10d59b83e89e3ca67fd12165a4f001567f4ca3795fbbb2",
+      "scenes": [
+        "act3_lumen_boundary"
+      ]
+    },
+    {
+      "id": "voice-campaign-quill-bca344313982",
+      "speaker": "Quill",
+      "text": "Ninety now, two hundred on delivery. Her bodyguard is Kerr. He is paid to stop you.",
+      "path": "public/audio/voice-campaign-quill-bca344313982.mp3",
+      "durationSeconds": 7.1466666666666665,
+      "sha256": "cc953609fee3fb573655f362d121b069ef9e3c3e8f13d8f9f30480c3587f4ee5",
+      "scenes": [
+        "stall"
+      ]
+    },
+    {
+      "id": "voice-campaign-nia-pell-97c62dc0bb78",
+      "speaker": "Nia Pell",
+      "text": "This one answer doesn't reopen contact. Leave the pause in place.",
+      "path": "public/audio/voice-campaign-nia-pell-97c62dc0bb78.mp3",
+      "durationSeconds": 5.7973333333333334,
+      "sha256": "d5b87d2d2646513a823396ccf3679cb83eb75a4a60ab31ca2c3d40dd0184550a",
+      "scenes": [
+        "act3_testimony_nia"
+      ]
+    },
+    {
+      "id": "voice-campaign-kerr-35739b2889fc",
+      "speaker": "Kerr",
+      "text": "You have no reason to want me behind you.",
+      "path": "public/audio/voice-campaign-kerr-35739b2889fc.mp3",
+      "durationSeconds": 2.5046666666666666,
+      "sha256": "cfbdeff9ff0b5125864db665898bbd7996c8a63c4b7bfaf413e30985ac4be648",
+      "scenes": [
+        "act2_pump_methods"
+      ]
+    },
+    {
+      "id": "voice-campaign-sera-b4f7128c2a13",
+      "speaker": "Sera",
+      "text": "You tested this sentence: The later cancellation erases Mara's authorization. What should we do with the verdict you kept?",
+      "path": "public/audio/voice-campaign-sera-b4f7128c2a13.mp3",
+      "durationSeconds": 7.882,
+      "sha256": "866f6620e03fd2ded0a288bff2c5347cc6b19e2554a4ad92129dc5d236b701a3",
+      "scenes": [
+        "act2_public_response"
+      ]
+    },
+    {
+      "id": "voice-campaign-sera-44d1f1b59758",
+      "speaker": "Sera",
+      "text": "You tested this sentence: Mara's authorization and the later evacuation cancellation are separate recorded decisions. What should we do with the verdict you kept?",
+      "path": "public/audio/voice-campaign-sera-44d1f1b59758.mp3",
+      "durationSeconds": 10.868666666666666,
+      "sha256": "ae56743201557378ad4e582f40d4650fe3ee42d3e4d07197b11bf4679a81d613",
+      "scenes": [
+        "act2_public_response"
+      ]
+    },
+    {
+      "id": "voice-campaign-nia-pell-bea4f8df04a1",
+      "speaker": "Nia Pell",
+      "text": "You offered your own shift. Don't turn that into something I owe you.",
+      "path": "public/audio/voice-campaign-nia-pell-bea4f8df04a1.mp3",
+      "durationSeconds": 5.52,
+      "sha256": "d50dcd71f3879e15d3a7c9330a7fad8da39d4324f327f05e2098b843260d609d",
+      "scenes": [
+        "act3_witness_visit"
+      ]
+    },
+    {
+      "id": "voice-campaign-kerr-684866ad9287",
+      "speaker": "Kerr",
+      "text": "That stays on my side of the page.",
+      "path": "public/audio/voice-campaign-kerr-684866ad9287.mp3",
+      "durationSeconds": 2.248666666666667,
+      "sha256": "c17398b68fa6859b3adf96a4af7fa7c92e96f53cf99489463b8178f0a5119cf0",
+      "scenes": [
+        "act3_kerr_collection"
+      ]
+    },
+    {
+      "id": "voice-campaign-quill-2ab424110b96",
+      "speaker": "Quill",
+      "text": "You paid what you had postponed. That settles the forty, not the rest of your night.",
+      "path": "public/audio/voice-campaign-quill-2ab424110b96.mp3",
+      "durationSeconds": 6.010666666666666,
+      "sha256": "07574db04600a215870a37b772163436a7ff0bd9ef72f7aefcaa1c9bf1ba2dad",
+      "scenes": [
+        "act3_quill_introduction"
+      ]
+    },
+    {
+      "id": "voice-campaign-quill-facb468bbd8c",
+      "speaker": "Quill",
+      "text": "My letter wasn't a promise that the gate would forget. That part was yours to keep.",
+      "path": "public/audio/voice-campaign-quill-facb468bbd8c.mp3",
+      "durationSeconds": 6.032,
+      "sha256": "d1e3275d2af048bfc544db6aa98ac96390796e7c742ecdd4e0e001577d262b40",
+      "scenes": [
+        "act3_quill_introduction"
+      ]
+    }
+  ]
+}

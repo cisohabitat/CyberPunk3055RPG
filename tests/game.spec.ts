@@ -1471,7 +1471,8 @@ test("present-day room quotes follow refusal and handover terms without autoplay
   }
   await page.evaluate(run => localStorage.setItem("saint-shard-3055-v1", JSON.stringify(run)), fixture("act2_response_refusal", { flags: { response_clinic_refused: true } }));
   await page.reload(); await page.getByTestId("continue-run").click();
-  await expect(page.getByTestId("voice-line")).toHaveCount(0);
+  await expect(page.getByRole("button", { name: "Listen to Lumen", exact: true })).toBeVisible();
+  await expect(page.getByTestId("voice-line")).toContainText("A chair and a lamp are what I offered.");
 });
 
 test("leaving the clinic cancels its late ambience while the new district keeps playing", async ({ page }) => {

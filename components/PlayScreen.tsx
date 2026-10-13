@@ -25,6 +25,7 @@ import { MemoryPlate } from "./MemoryPlate";
 import { RouteBoard } from "./RouteBoard";
 import { VoiceLine } from "./VoiceLine";
 import { memoryInteractionCue, visibleDialogue } from "@/lib/memory-media";
+import { visibleCampaignDialogue } from "@/lib/campaign-dialogue";
 import { FieldKitBrief } from "./FieldKitBrief";
 import { TestimonyBrief } from "./TestimonyBrief";
 import { ArchiveBrief } from "./ArchiveBrief";
@@ -90,6 +91,7 @@ export function PlayScreen({
   const paragraphs = prose.split(/\n\n+/).filter((paragraph) => paragraph.length > 0);
   const visibleCount = preferences.reading === "all" ? paragraphs.length : Math.min(shown?.sceneId === scene.id && shown.prose === prose ? shown.count : 1, paragraphs.length);
   const dialogue = visibleDialogue(scene.id, scene.speaker, paragraphs.slice(0, visibleCount).join("\n\n"));
+  const dialogueQueue = visibleCampaignDialogue(scene.id, scene.speaker, paragraphs.slice(0, visibleCount).join("\n\n"));
   const recordedChoice = state.pendingCheck ? choices.find((choice) => choice.id === state.pendingCheck?.choiceId) : null;
   const activeChoice = recordedChoice ?? pending;
   const unavailableChoices = choices.filter((choice) => !choice.enabled);
@@ -336,7 +338,7 @@ export function PlayScreen({
               </div>
             )}
             {preferences.reading === "paragraph" && paragraphs.length > 1 && <p className="reading-progress hint" role="status" aria-atomic="true">{visibleCount} of {paragraphs.length} paragraphs shown</p>}
-            {dialogue && <VoiceLine key={`${scene.id}-${dialogue.id}`} line={dialogue} automatic={preferences.autoVoices} paused={audioPaused && preferences.sound} enabled={sound && preferences.voices > 0 && !modalOpen && !sheetOpen && !notebookOpen && !confirmAbandon && !activeChoice} />}
+            {dialogueQueue.length > 0 && <VoiceLine key={scene.id} line={dialogue} lines={dialogueQueue} automatic={preferences.autoVoices} paused={audioPaused && preferences.sound} enabled={sound && preferences.voices > 0 && !modalOpen && !sheetOpen && !notebookOpen && !confirmAbandon && !activeChoice} />}
             {scene.id === "memory_sequence" && <MemoryTimeline state={state} choices={choices} onPlace={pick} artwork={preferences.artwork !== "none"} reducedMotion={reduceMotion} numberShortcuts={preferences.numberShortcuts} />}
             {["act2_route_map", "act2_route_exit", "act2_route_review", "act2_route_crossing"].includes(scene.id) && <RouteBoard state={state} />}
             {scene.finale && campaignCoda(state) && <p data-testid="campaign-coda">{campaignCoda(state)}</p>}

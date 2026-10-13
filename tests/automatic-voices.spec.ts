@@ -1,5 +1,6 @@
 import { test, expect, type Page } from "@playwright/test";
-import { createCharacter } from "../lib/engine";
+import { visibleCampaignDialogue } from "../lib/campaign-dialogue";
+import { getScene, sceneText, createCharacter } from "../lib/engine";
 import { installAudioReview, type AudioReview } from "../qa/production/audio-review";
 
 const run = (sceneId = "memo") => ({ ...createCharacter({ handle: "VoiceDefault", givenName: "Ada", origin: "spire", bonus: { chrome: 2, nerve: 0, face: 0, ghost: 0 } }), sceneId });
@@ -44,23 +45,27 @@ test("fresh preferences enable voices; reveal plays once and Stop survives dialo
 test("automatic voice completes naturally, releases its buffer and permits explicit replay", async ({ page }) => {
   test.setTimeout(40_000);
   await open(page, { reading: "all", effects: 0 }, "job_owner", true); const before = await saved(page);
-  await expect.poll(() => speech(page)).toEqual(["voice-quill-job-owner.wav"]);
+  const scene = getScene("job_owner"), queue = visibleCampaignDialogue(scene.id, scene.speaker, sceneText(scene, run("job_owner")));
+  const expected = queue.map(line => `${line.id}.${line.id.startsWith("voice-campaign-") ? "mp3" : "wav"}`);
+  await expect.poll(() => speech(page), { timeout: 30_000 }).toEqual(expected);
   await expect(page.getByRole("button", { name: "Listen to Quill", exact: true })).toBeVisible({ timeout: 25_000 });
   await expect.poll(async () => (await audio(page)).liveSources).toBe(2);
-  expect((await audio(page)).cleared.filter(name => name.startsWith("voice-"))).toEqual(["voice-quill-job-owner.wav"]); expect(await saved(page)).toBe(before);
-  expect((await audio(page)).disposed.filter(name => name.startsWith("voice-"))).toEqual(["voice-quill-job-owner.wav"]);
+  expect((await audio(page)).cleared.filter(name => name.startsWith("voice-"))).toEqual(expected); expect(await saved(page)).toBe(before);
+  expect((await audio(page)).disposed.filter(name => name.startsWith("voice-"))).toEqual(expected);
   await page.getByRole("button", { name: "Listen to Quill", exact: true }).click();
-  await expect.poll(() => speech(page)).toHaveLength(2);
+  await expect.poll(() => speech(page)).toHaveLength(expected.length + 1);
   await page.getByRole("button", { name: "Stop line", exact: true }).click();
   await expect.poll(async () => (await audio(page)).liveSources).toBe(2);
-  expect((await audio(page)).cleared.filter(name => name.startsWith("voice-"))).toEqual(["voice-quill-job-owner.wav", "voice-quill-job-owner.wav"]);
+  expect((await audio(page)).cleared.filter(name => name.startsWith("voice-"))).toEqual([...expected, "voice-quill-job-owner.wav"]);
 });
 
 test("Edda speaks her explicitly attributed service line while Ives remains the primary portrait", async ({ page }) => {
   await open(page, undefined, "act2_origin_spire"); const before = await saved(page);
   await expect(page.getByTestId("voice-line")).toHaveCount(0);
   await page.getByTestId("show-rest").click();
-  await expect.poll(() => speech(page)).toEqual(["voice-edda-service-key.wav"]);
+  const scene = getScene("act2_origin_spire");
+  const expected = visibleCampaignDialogue(scene.id, scene.speaker, sceneText(scene, run(scene.id))).map(line => `${line.id}.${line.id.startsWith("voice-campaign-") ? "mp3" : "wav"}`);
+  await expect.poll(() => speech(page), { timeout: 20_000 }).toEqual(expected);
   await expect(page.getByTestId("voice-line")).toHaveAttribute("aria-label", "Edda selected dialogue");
   await expect(page.getByTestId("voice-line")).toContainText("They still bill my shifts");
   await page.getByRole("button", { name: "Stop line", exact: true }).click();

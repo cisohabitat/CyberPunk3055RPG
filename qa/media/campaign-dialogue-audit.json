@@ -1,0 +1,4003 @@
+{
+  "scope": "Character dialogue only. Written messages, advertising, labels, player questions and custom player-name addresses stay text-only. All authored fixed spoken wording is voiced.",
+  "scenes": 197,
+  "reachableVariants": 859,
+  "branchSamples": 1056,
+  "decisions": [
+    {
+      "scene": "opening_city",
+      "primary": null,
+      "text": "Ward Four noodle stall. Tonight. I have work.",
+      "context": "Rain runs down the inside of Kite City’s dome. Above it, Helion’s towers stay dry. Below it, your chip lights up: “Ward Four noodle stall. Tonight. I have work.” Quill, a broker. You need the work. You have not said yes.",
+      "index": 0,
+      "decision": "text",
+      "reason": "Written invitation on a chip; not spoken."
+    },
+    {
+      "scene": "opening_approach",
+      "primary": null,
+      "text": "Sleep without yesterday.",
+      "context": "You want work without another claim on your name. Steam rises through the awnings. A woman behind the noodle counter wipes rain off a menu while the tower advert plays above her: “Sleep without yesterday.” She sees you looking.",
+      "index": 1,
+      "decision": "text",
+      "reason": "Advertising copy; not character dialogue."
+    },
+    {
+      "scene": "opening_approach",
+      "primary": null,
+      "text": "Funny thing to sell,",
+      "context": "“Funny thing to sell,” she says. “Yesterday.”",
+      "index": 2,
+      "decision": "voice",
+      "speaker": "Stallholder",
+      "reason": "Explicit attribution reviewed against scene prose.",
+      "bindingKeys": [
+        "3814da100396bf2b"
+      ]
+    },
+    {
+      "scene": "opening_approach",
+      "primary": null,
+      "text": "Yesterday.",
+      "context": "“Funny thing to sell,” she says. “Yesterday.”",
+      "index": 3,
+      "decision": "voice",
+      "speaker": "Stallholder",
+      "reason": "Explicit attribution reviewed against scene prose.",
+      "bindingKeys": [
+        "b035c52a05f4507a"
+      ]
+    },
+    {
+      "scene": "opening_neighbor",
+      "primary": null,
+      "text": "A regular came in last winter,",
+      "context": "“A regular came in last winter,” she says. “He'd sold an argument with his wife to make the rent. Remembered getting paid. Didn't remember what he needed to apologize for. Asked me to write it down.”",
+      "index": 4,
+      "decision": "voice",
+      "speaker": "Stallholder",
+      "reason": "Explicit attribution reviewed against scene prose.",
+      "bindingKeys": [
+        "a2228034fa5895f1"
+      ]
+    },
+    {
+      "scene": "opening_neighbor",
+      "primary": null,
+      "text": "He'd sold an argument with his wife to make the rent. Remembered getting paid. Didn't remember what he needed to apologize for. Asked me to write it down.",
+      "context": "“A regular came in last winter,” she says. “He'd sold an argument with his wife to make the rent. Remembered getting paid. Didn't remember what he needed to apologize for. Asked me to write it down.”",
+      "index": 5,
+      "decision": "voice",
+      "speaker": "Stallholder",
+      "reason": "Explicit attribution reviewed against scene prose.",
+      "bindingKeys": [
+        "6466039665134f85"
+      ]
+    },
+    {
+      "scene": "opening_neighbor",
+      "primary": null,
+      "text": "I sell dinner. But if someone hires you to carry an hour, ask whose it was before you ask what it pays.",
+      "context": "She flattens the damp menu. “I sell dinner. But if someone hires you to carry an hour, ask whose it was before you ask what it pays.”",
+      "index": 6,
+      "decision": "voice",
+      "speaker": "Stallholder",
+      "reason": "Explicit attribution reviewed against scene prose.",
+      "bindingKeys": [
+        "bf5d23ecc95bf76d"
+      ]
+    },
+    {
+      "scene": "stall",
+      "primary": "Quill",
+      "text": "Replay. Mara Voss, Helion logistics. Glass Chapel edits her memory at dawn. Bring me the original hour, intact. Fifty now, two hundred on delivery. Her bodyguard is Kerr. He is paid to stop you.",
+      "context": "Quill moves his bowl aside. \"Replay. Mara Voss, Helion logistics. Glass Chapel edits her memory at dawn. Bring me the original hour, intact. Fifty now, two hundred on delivery. Her bodyguard is Kerr. He is paid to stop you.\"",
+      "index": 7,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "9dcfc8554bfcc3ef",
+        "f179af9169c4b07f"
+      ]
+    },
+    {
+      "scene": "pay",
+      "primary": "Quill",
+      "text": "Fifty now. Two hundred when the shard is in my hand and not wandering around in your bloodstream. Kerr is her shadow. Kerr is why the number is not prettier.",
+      "context": "\"Fifty now. Two hundred when the shard is in my hand and not wandering around in your bloodstream. Kerr is her shadow. Kerr is why the number is not prettier.\"",
+      "index": 8,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "a8027305bab28bc5"
+      ]
+    },
+    {
+      "scene": "pay_yes",
+      "primary": "Quill",
+      "text": "Ninety. I will not go higher unless you are secretly three people. Two hundred on delivery, and if you die I am billing the corpse for my time.",
+      "context": "\"Ninety. I will not go higher unless you are secretly three people. Two hundred on delivery, and if you die I am billing the corpse for my time.\"",
+      "index": 9,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "66be4c352b62b6f6"
+      ]
+    },
+    {
+      "scene": "stall",
+      "primary": "Quill",
+      "text": "Ninety now. Two hundred for the intact shard. Before dawn. Those are the terms.",
+      "context": "Quill turns the untouched bowl between his hands. \"Ninety now. Two hundred for the intact shard. Before dawn. Those are the terms.\"",
+      "index": 10,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "c0cb6cd8349b77cd"
+      ]
+    },
+    {
+      "scene": "route",
+      "primary": "Quill",
+      "text": "The front desk will ask for one,",
+      "context": "Ninety is already on your chip. Try not to donate it to a door. You tell Quill your name stays yours. \"The front desk will ask for one,\" he says. \"The other doors ask different questions.\"",
+      "index": 11,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "c8a5aeca78cef2ef"
+      ]
+    },
+    {
+      "scene": "route",
+      "primary": "Quill",
+      "text": "The other doors ask different questions.",
+      "context": "Ninety is already on your chip. Try not to donate it to a door. You tell Quill your name stays yours. \"The front desk will ask for one,\" he says. \"The other doors ask different questions.\"",
+      "index": 12,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "485c79b10ca31bdf"
+      ]
+    },
+    {
+      "scene": "route",
+      "primary": "Quill",
+      "text": "Three ways in. The front sells forgiveness to anyone with an appointment. The hatch behind the incinerator is for people who still sweat. The choir door runs on an old Helion pad. I would not kiss it.",
+      "context": "\"Three ways in. The front sells forgiveness to anyone with an appointment. The hatch behind the incinerator is for people who still sweat. The choir door runs on an old Helion pad. I would not kiss it.\"",
+      "index": 13,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "e4c354d551ed74da"
+      ]
+    },
+    {
+      "scene": "lumen",
+      "primary": "Sister Lumen",
+      "text": "You are not on the penitent list. Dawn puts Mara Voss in that chair so Helion can edit a crime out of her. The next sentence should be one you can survive.",
+      "context": "\"You are not on the penitent list. Dawn puts Mara Voss in that chair so Helion can edit a crime out of her. The next sentence should be one you can survive.\"",
+      "index": 14,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "9f4f59e0b88dd398"
+      ]
+    },
+    {
+      "scene": "vault_quiet",
+      "primary": "Mara",
+      "text": "Copy it. Then we both leave holding a fire. Do not get clever and die.",
+      "context": "Lumen nods at the plinth. \"Copy it. Then we both leave holding a fire. Do not get clever and die.\"",
+      "index": 15,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Explicit attribution reviewed against scene prose.",
+      "bindingKeys": [
+        "8f83d68af616b546"
+      ]
+    },
+    {
+      "scene": "memo",
+      "primary": "Mara",
+      "text": "I signed the coolant dump. Ward Nine. Three hundred on the night shift. I want that sentence to stay in my mouth.",
+      "context": "Mara's voice, unedited: \"I signed the coolant dump. Ward Nine. Three hundred on the night shift. I want that sentence to stay in my mouth.\"",
+      "index": 16,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "e76d9ed2d05532e7"
+      ]
+    },
+    {
+      "scene": "mara_why",
+      "primary": "Mara",
+      "text": "Helion told me the dump was a flush, not a kill. I signed because the night shift was already in the building and I thought the tower would move them. They did not move them.",
+      "context": "Mara’s recorded voice, still unedited: \"Helion told me the dump was a flush, not a kill. I signed because the night shift was already in the building and I thought the tower would move them. They did not move them.\"",
+      "index": 17,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "92c703f59f056e92"
+      ]
+    },
+    {
+      "scene": "memory_publication",
+      "primary": "Sister Lumen",
+      "text": "People will repeat the sentence before they inspect the source. You can say what the receipt contains and what still needs checking. Or you can name the tower now and accept what happens when it challenges your proof.",
+      "context": "\"People will repeat the sentence before they inspect the source. You can say what the receipt contains and what still needs checking. Or you can name the tower now and accept what happens when it challenges your proof.\"",
+      "index": 18,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "7a81dda101a00225"
+      ]
+    },
+    {
+      "scene": "kerr",
+      "primary": "Kerr",
+      "text": "Put it down.",
+      "context": "\"Put it down.\" Kerr fills the door. The knee is the only apology on him. \"That glass is Mara's hour. Helion pays me so the Ward Nine memo stays in her head, not in your pocket.\"",
+      "index": 19,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "38e1ec30766a7db1"
+      ]
+    },
+    {
+      "scene": "kerr",
+      "primary": "Kerr",
+      "text": "That glass is Mara's hour. Helion pays me so the Ward Nine memo stays in her head, not in your pocket.",
+      "context": "\"Put it down.\" Kerr fills the door. The knee is the only apology on him. \"That glass is Mara's hour. Helion pays me so the Ward Nine memo stays in her head, not in your pocket.\"",
+      "index": 20,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "5502b1af70e341a2"
+      ]
+    },
+    {
+      "scene": "act2_origin_dustline",
+      "primary": "Quill",
+      "text": "It goes to a clinic,",
+      "context": "\"It goes to a clinic,\" Quill says, without making that a pitch. \"Get it there. Asa will leave you a clearance for one passenger.\"",
+      "index": 21,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "7b696dd634f25c00"
+      ]
+    },
+    {
+      "scene": "act2_origin_dustline",
+      "primary": "Quill",
+      "text": "Get it there. Asa will leave you a clearance for one passenger.",
+      "context": "\"It goes to a clinic,\" Quill says, without making that a pitch. \"Get it there. Asa will leave you a clearance for one passenger.\"",
+      "index": 22,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "f94e1e46947cfaf9"
+      ]
+    },
+    {
+      "scene": "act2_freight_brief",
+      "primary": "Asa",
+      "text": "Diagnostic cartridge. Clinic stock. My manifest can't cross this gate.",
+      "context": "‘Diagnostic cartridge. Clinic stock. My manifest can't cross this gate.’ They touch the seal. ‘Keep it cold. Get a receipt. No patient names. If the service route stays private, I can spare one passenger clearance. Register the handover and that route retires.’",
+      "index": 23,
+      "decision": "voice",
+      "speaker": "Asa",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "5beaf449f3d9d3c7"
+      ]
+    },
+    {
+      "scene": "act2_freight_brief",
+      "primary": "Asa",
+      "text": "Keep it cold. Get a receipt. No patient names. If the service route stays private, I can spare one passenger clearance. Register the handover and that route retires.",
+      "context": "‘Diagnostic cartridge. Clinic stock. My manifest can't cross this gate.’ They touch the seal. ‘Keep it cold. Get a receipt. No patient names. If the service route stays private, I can spare one passenger clearance. Register the handover and that route retires.’",
+      "index": 24,
+      "decision": "voice",
+      "speaker": "Asa",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "b41b8d234772c319"
+      ]
+    },
+    {
+      "scene": "act2_freight_result",
+      "primary": "Asa",
+      "text": "One crossing. Tell me when the week is over what it was for.",
+      "context": "Asa slides the passenger clearance under the gate rail. ‘One crossing. Tell me when the week is over what it was for.’",
+      "index": 25,
+      "decision": "voice",
+      "speaker": "Asa",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "b5184800ccbed7dd"
+      ]
+    },
+    {
+      "scene": "act2_helion",
+      "primary": "Ives",
+      "text": "We kept the name. Burning the badge was a hobby.",
+      "context": "Ives says your old badge number before your handle. \"We kept the name. Burning the badge was a hobby.\"",
+      "index": 26,
+      "decision": "voice",
+      "speaker": "Ives",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "96cca21e279ebc44"
+      ]
+    },
+    {
+      "scene": "act2_middle",
+      "primary": null,
+      "text": "Junie Calder worked beside Ivo Pell,",
+      "context": "\"Junie Calder worked beside Ivo Pell,\" Ren says. \"Say her if you get to the wall. She was my family before she was your evidence.\"",
+      "index": 27,
+      "decision": "voice",
+      "speaker": "Ren",
+      "reason": "Explicit attribution reviewed against scene prose.",
+      "bindingKeys": [
+        "2ccfa9484030d05c"
+      ]
+    },
+    {
+      "scene": "act2_middle",
+      "primary": null,
+      "text": "Say her if you get to the wall. She was my family before she was your evidence.",
+      "context": "\"Junie Calder worked beside Ivo Pell,\" Ren says. \"Say her if you get to the wall. She was my family before she was your evidence.\"",
+      "index": 28,
+      "decision": "voice",
+      "speaker": "Ren",
+      "reason": "Explicit attribution reviewed against scene prose.",
+      "bindingKeys": [
+        "4f62dd670ca29a15"
+      ]
+    },
+    {
+      "scene": "act2_archive_brief",
+      "primary": "Edda",
+      "text": "Your export records a cancellation. My ledger can show whether it reached the shift. Compare them. I have to work here tomorrow.",
+      "context": "‘Your export records a cancellation. My ledger can show whether it reached the shift. Compare them. I have to work here tomorrow.’",
+      "index": 29,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "58a3ca889befca0d"
+      ]
+    },
+    {
+      "scene": "act2_archive_door",
+      "primary": "Ives",
+      "text": "If you allege an instruction, identify its issuer. We will challenge anything less.",
+      "context": "\"If you allege an instruction, identify its issuer. We will challenge anything less.\"",
+      "index": 30,
+      "decision": "voice",
+      "speaker": "Ives",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "bfd7053b04cf9d54"
+      ]
+    },
+    {
+      "scene": "act2_notice_brief",
+      "primary": "Sister Lumen",
+      "text": "They need to know where the clinic is,",
+      "context": "\"They need to know where the clinic is,\" she says. \"They do not need to tell every landlord where they sleep. Dispatch wants a route it can verify. I need a notice people can actually use.\"",
+      "index": 31,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "753507a5364ab778"
+      ]
+    },
+    {
+      "scene": "act2_notice_brief",
+      "primary": "Sister Lumen",
+      "text": "They do not need to tell every landlord where they sleep. Dispatch wants a route it can verify. I need a notice people can actually use.",
+      "context": "\"They need to know where the clinic is,\" she says. \"They do not need to tell every landlord where they sleep. Dispatch wants a route it can verify. I need a notice people can actually use.\"",
+      "index": 32,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "e0d091d6dbc2c74f"
+      ]
+    },
+    {
+      "scene": "act2_notice_offer",
+      "primary": "Sister Lumen",
+      "text": "I can take that split if you carry the clinic's return bundle to this desk.",
+      "context": "Four early, two later. The dispatcher fits both bundles against the route slots. 'I can take that split if you carry the clinic's return bundle to this desk.' Lumen agrees to receive unclaimed cards through the clinic.",
+      "index": 33,
+      "decision": "voice",
+      "speaker": "Dispatcher",
+      "reason": "Explicit attribution reviewed against scene prose.",
+      "bindingKeys": [
+        "5793c5bb7e542a3a"
+      ]
+    },
+    {
+      "scene": "act2_notice_receipt",
+      "primary": "Sister Lumen",
+      "text": "Come back when the window has passed. A plan deserves an answer, even if it was a good plan.",
+      "context": "Lumen keeps the receipt. \"Come back when the window has passed. A plan deserves an answer, even if it was a good plan.\"",
+      "index": 34,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "0ab270108363ca6f"
+      ]
+    },
+    {
+      "scene": "act2_public_response",
+      "primary": "Sera",
+      "text": "What do we put beside it?",
+      "context": "Sera hands you a pencil. \"What do we put beside it?\"",
+      "index": 35,
+      "decision": "voice",
+      "speaker": "Sera",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "702816e347dc975b"
+      ]
+    },
+    {
+      "scene": "act3_records_visit",
+      "primary": "Sera",
+      "text": "The file says evacuation was canceled. I still need to know who sent it. Don't rub out the question mark because the wall is waiting.",
+      "context": "A mechanic has put a question mark beside the issuing key. 'The file says evacuation was canceled. I still need to know who sent it. Don't rub out the question mark because the wall is waiting.'",
+      "index": 36,
+      "decision": "voice",
+      "speaker": "Mechanic",
+      "reason": "Explicit attribution reviewed against scene prose.",
+      "bindingKeys": [
+        "18d294de5a027ee5"
+      ]
+    },
+    {
+      "scene": "ward_wall",
+      "primary": "Sera",
+      "text": "Ada.",
+      "context": "Sera stands you in front of the wall before she asks anything. ‘Ada.’ Sera uses your own name, then turns you toward the concrete. The rain has eaten the lower rows. One name needs no optic: Ivo Pell, night shift, level two.",
+      "index": 37,
+      "decision": "text",
+      "reason": "Player-custom name remains readable; no player-text synthesis."
+    },
+    {
+      "scene": "ward_wall",
+      "primary": "Sera",
+      "text": "Ivo stays legible,",
+      "context": "\"Ivo stays legible,\" Sera says. \"The third row needs your eye, or help from the wards. You can try. You can also tell me why you came.\"",
+      "index": 38,
+      "decision": "voice",
+      "speaker": "Sera",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "70a51bf0b859efd3"
+      ]
+    },
+    {
+      "scene": "ward_wall",
+      "primary": "Sera",
+      "text": "The third row needs your eye, or help from the wards. You can try. You can also tell me why you came.",
+      "context": "\"Ivo stays legible,\" Sera says. \"The third row needs your eye, or help from the wards. You can try. You can also tell me why you came.\"",
+      "index": 39,
+      "decision": "voice",
+      "speaker": "Sera",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "35e9d1864980f0df"
+      ]
+    },
+    {
+      "scene": "act3_freight_visit",
+      "primary": "Asa",
+      "text": "The parcel got there, privately. One crossing was what I owed you.",
+      "context": "They tap the stock receipt. ‘The parcel got there, privately. One crossing was what I owed you.’",
+      "index": 40,
+      "decision": "voice",
+      "speaker": "Asa",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "236ea5840c8694f8"
+      ]
+    },
+    {
+      "scene": "act3_freight_visit",
+      "primary": "Asa",
+      "text": "A parcel is somebody's morning,",
+      "context": "‘A parcel is somebody's morning,’ they say. ‘What were you trying to carry for yourself?’",
+      "index": 41,
+      "decision": "voice",
+      "speaker": "Asa",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "188eadd47e0974c0"
+      ]
+    },
+    {
+      "scene": "act3_freight_visit",
+      "primary": "Asa",
+      "text": "What were you trying to carry for yourself?",
+      "context": "‘A parcel is somebody's morning,’ they say. ‘What were you trying to carry for yourself?’",
+      "index": 42,
+      "decision": "voice",
+      "speaker": "Asa",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "edce7a5f8769b5d7"
+      ]
+    },
+    {
+      "scene": "act3_freight_reflection",
+      "primary": "Asa",
+      "text": "Keep your name,",
+      "context": "‘Keep your name,’ Asa says. ‘And remember that the people receiving your work have names too.’",
+      "index": 43,
+      "decision": "voice",
+      "speaker": "Asa",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "e3090641bc9bc067"
+      ]
+    },
+    {
+      "scene": "act3_freight_reflection",
+      "primary": "Asa",
+      "text": "And remember that the people receiving your work have names too.",
+      "context": "‘Keep your name,’ Asa says. ‘And remember that the people receiving your work have names too.’",
+      "index": 44,
+      "decision": "voice",
+      "speaker": "Asa",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "e5563074aedc1996"
+      ]
+    },
+    {
+      "scene": "act3_arrival",
+      "primary": "Sera",
+      "text": "If you know any of them,",
+      "context": "\"If you know any of them,\" she says, \"say them. If you sold them, you can still say them. The wall does not check your receipt.\"",
+      "index": 45,
+      "decision": "voice",
+      "speaker": "Sera",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "7ed495485845cac1"
+      ]
+    },
+    {
+      "scene": "act3_arrival",
+      "primary": "Sera",
+      "text": "say them. If you sold them, you can still say them. The wall does not check your receipt.",
+      "context": "\"If you know any of them,\" she says, \"say them. If you sold them, you can still say them. The wall does not check your receipt.\"",
+      "index": 46,
+      "decision": "voice",
+      "speaker": "Sera",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "9c926f3af680c8fe"
+      ]
+    },
+    {
+      "scene": "act3_testimony_review",
+      "primary": "Sera",
+      "text": "The names can be spoken either way. This is a different promise: an account someone can question after you leave.",
+      "context": "Sera puts a blank public cover sheet beside the recorder and your sources. 'The names can be spoken either way. This is a different promise: an account someone can question after you leave.'",
+      "index": 47,
+      "decision": "voice",
+      "speaker": "Sera",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "c9cfdae9c7f6db05"
+      ]
+    },
+    {
+      "scene": "act3_testimony_hearing",
+      "primary": "Ives",
+      "text": "A maintenance signature isn't an issuing key. A witness isn't a server. What exactly are you asking people to believe?",
+      "context": "Ives places his folio beside the recorder. 'A maintenance signature isn't an issuing key. A witness isn't a server. What exactly are you asking people to believe?'",
+      "index": 48,
+      "decision": "voice",
+      "speaker": "Ives",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "12cdbd3602fe040e"
+      ]
+    },
+    {
+      "scene": "act3_testimony_correction",
+      "primary": "Sera",
+      "text": "Correct it here. A correction belongs beside what people already heard.",
+      "context": "Sera keeps the first sentence on the recording. 'Correct it here. A correction belongs beside what people already heard.' Neither the inquiry nor the names have to be abandoned.",
+      "index": 49,
+      "decision": "voice",
+      "speaker": "Sera",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "a676442dd648d8e3"
+      ]
+    },
+    {
+      "scene": "act3_arrival",
+      "primary": "Sera",
+      "text": "We still have the names.",
+      "context": "She keeps her pencil in her hand. ‘We still have the names.’",
+      "index": 50,
+      "decision": "voice",
+      "speaker": "Sera",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "5ebfdaad9b40b864"
+      ]
+    },
+    {
+      "scene": "ending_quiet",
+      "primary": "Sera",
+      "text": "I won't call you back,",
+      "context": "\"I won't call you back,\" Sera says. \"I have the pencil. The rain can wait with me.\"",
+      "index": 51,
+      "decision": "voice",
+      "speaker": "Sera",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "6b564c2cb7df302e"
+      ]
+    },
+    {
+      "scene": "ending_quiet",
+      "primary": "Sera",
+      "text": "I have the pencil. The rain can wait with me.",
+      "context": "\"I won't call you back,\" Sera says. \"I have the pencil. The rain can wait with me.\"",
+      "index": 52,
+      "decision": "voice",
+      "speaker": "Sera",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "cfebf895335e62ec"
+      ]
+    },
+    {
+      "scene": "act2_origin_gutterwire",
+      "primary": "Sera",
+      "text": "No speeches. Put your shoulder here. Someone has to sleep upstairs tonight.",
+      "context": "\"No speeches. Put your shoulder here. Someone has to sleep upstairs tonight.\"",
+      "index": 53,
+      "decision": "voice",
+      "speaker": "Sera",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "3885f6e651f62814"
+      ]
+    },
+    {
+      "scene": "act2_shelter_brief",
+      "primary": "Sera",
+      "text": "Six households upstairs. One valve downstairs. We stop the leak or move everyone to the hall.",
+      "context": "‘Six households upstairs. One valve downstairs. We stop the leak or move everyone to the hall.’ A resident, Ren, sets a kettle on a dry step. ‘We can walk. My father needs the ramp, not the stairs.’",
+      "index": 54,
+      "decision": "voice",
+      "speaker": "Sera",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "5eee20f82ff88767"
+      ]
+    },
+    {
+      "scene": "act2_shelter_brief",
+      "primary": "Sera",
+      "text": "We can walk. My father needs the ramp, not the stairs.",
+      "context": "‘Six households upstairs. One valve downstairs. We stop the leak or move everyone to the hall.’ A resident, Ren, sets a kettle on a dry step. ‘We can walk. My father needs the ramp, not the stairs.’",
+      "index": 55,
+      "decision": "voice",
+      "speaker": "Ren",
+      "reason": "Explicit attribution reviewed against scene prose.",
+      "bindingKeys": [
+        "5f417c8ca6e04944"
+      ]
+    },
+    {
+      "scene": "act2_shelter_hall",
+      "primary": "Sera",
+      "text": "We’re here,",
+      "context": "‘We’re here,’ Ren says. ‘It’s loud. It’s still somewhere.’ The pump remains broken and there is no private referral room. This is an observed evacuation, not a repair report or a witness transfer.",
+      "index": 56,
+      "decision": "voice",
+      "speaker": "Ren",
+      "reason": "Explicit attribution reviewed against scene prose.",
+      "bindingKeys": [
+        "bc0fa1050f00acd0"
+      ]
+    },
+    {
+      "scene": "act2_shelter_hall",
+      "primary": "Sera",
+      "text": "It’s loud. It’s still somewhere.",
+      "context": "‘We’re here,’ Ren says. ‘It’s loud. It’s still somewhere.’ The pump remains broken and there is no private referral room. This is an observed evacuation, not a repair report or a witness transfer.",
+      "index": 57,
+      "decision": "voice",
+      "speaker": "Ren",
+      "reason": "Explicit attribution reviewed against scene prose.",
+      "bindingKeys": [
+        "60fce679725b4ff9"
+      ]
+    },
+    {
+      "scene": "act2_shelter_result",
+      "primary": "Sera",
+      "text": "Come back when it’s daylight. A place to sleep is the start of a night, not the whole of it.",
+      "context": "Sera wrings coolant from a cloth. ‘Come back when it’s daylight. A place to sleep is the start of a night, not the whole of it.’",
+      "index": 58,
+      "decision": "voice",
+      "speaker": "Sera",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "1b8a2721b6de0776"
+      ]
+    },
+    {
+      "scene": "act3_shelter_visit",
+      "primary": "Sera",
+      "text": "Dad reached the ramp. We slept, but the hall lights stayed on.",
+      "context": "Ren returns the kettle. ‘Dad reached the ramp. We slept, but the hall lights stayed on.’ The bags still smell of coolant.",
+      "index": 59,
+      "decision": "voice",
+      "speaker": "Ren",
+      "reason": "Explicit attribution reviewed against scene prose.",
+      "bindingKeys": [
+        "b791341de76a8fd9"
+      ]
+    },
+    {
+      "scene": "act3_shelter_visit",
+      "primary": "Sera",
+      "text": "The clothes are what they have left. Help me get them clean?",
+      "context": "Sera wheels out the laundry cart. ‘The clothes are what they have left. Help me get them clean?’ You can fund a wash, carry the cart or leave today's work with her.",
+      "index": 60,
+      "decision": "voice",
+      "speaker": "Sera",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "8aa8cf262fc7d153"
+      ]
+    },
+    {
+      "scene": "route",
+      "primary": "Quill",
+      "text": "Then do not spend your whole advance on my pass,",
+      "context": "Ninety is already on your chip. Try not to donate it to a door. You tell Quill you need tomorrow paid for. \"Then do not spend your whole advance on my pass,\" he says. \"There are other doors.\"",
+      "index": 61,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "4c5c7681e81bef57"
+      ]
+    },
+    {
+      "scene": "route",
+      "primary": "Quill",
+      "text": "There are other doors.",
+      "context": "Ninety is already on your chip. Try not to donate it to a door. You tell Quill you need tomorrow paid for. \"Then do not spend your whole advance on my pass,\" he says. \"There are other doors.\"",
+      "index": 62,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "7c5d58f501cceeb7"
+      ]
+    },
+    {
+      "scene": "memory_cross_exam",
+      "primary": "Mara",
+      "text": "Ask me while I'm still here. They bought the hour so I wouldn't have to answer twice.",
+      "context": "You open the interview embedded in the hour. Recorded Mara says, \"Ask me while I'm still here. They bought the hour so I wouldn't have to answer twice.\" She is speaking to the recorder then; she cannot hear you now.",
+      "index": 63,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "85605e2d387ab44a"
+      ]
+    },
+    {
+      "scene": "memory_assurance",
+      "primary": "Mara",
+      "text": "A green light on the dispatch channel. It meant the evacuation crew had been assigned. I let it mean they'd finished.",
+      "context": "'A green light on the dispatch channel. It meant the evacuation crew had been assigned. I let it mean they'd finished.'",
+      "index": 64,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "4bcc0c94938258bd"
+      ]
+    },
+    {
+      "scene": "memory_assurance",
+      "primary": "Mara",
+      "text": "I could have waited for the exit count. Waiting would have put my name on the delay. I told myself a crew assignment was enough.",
+      "context": "In the recording, Mara watches the signature complete again. 'I could have waited for the exit count. Waiting would have put my name on the delay. I told myself a crew assignment was enough.'",
+      "index": 65,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "2bc6e13830c63e2e"
+      ]
+    },
+    {
+      "scene": "memory_channel",
+      "primary": "Mara",
+      "text": "Dispatch spoke through a shift relay. No face. I knew the channel had authority to assign crews; I didn't know who was on it.",
+      "context": "'Dispatch spoke through a shift relay. No face. I knew the channel had authority to assign crews; I didn't know who was on it.'",
+      "index": 66,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "a1c734f3f2cb82fe"
+      ]
+    },
+    {
+      "scene": "memory_channel",
+      "primary": "Mara",
+      "text": "Don't put a person in that blank because I was too willing to leave it blank myself.",
+      "context": "Her recorded hand turns the receipt toward the interviewer. 'Don't put a person in that blank because I was too willing to leave it blank myself.'",
+      "index": 67,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "76fb37464c66836a"
+      ]
+    },
+    {
+      "scene": "act2_origin_spire",
+      "primary": "Ives",
+      "text": "I need the old maintenance key out of this terminal,",
+      "context": "\"I need the old maintenance key out of this terminal,\" Edda says. \"They still bill my shifts against it. Get it out clean and take the receiver.\"",
+      "index": 68,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Explicit attribution reviewed against scene prose.",
+      "bindingKeys": [
+        "3e600ab2aa1dab07"
+      ]
+    },
+    {
+      "scene": "act2_origin_spire",
+      "primary": "Ives",
+      "text": "They still bill my shifts against it. Get it out clean and take the receiver.",
+      "context": "\"I need the old maintenance key out of this terminal,\" Edda says. \"They still bill my shifts against it. Get it out clean and take the receiver.\"",
+      "index": 69,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Explicit attribution reviewed against scene prose.",
+      "bindingKeys": [
+        "877d71de5323b3b3"
+      ]
+    },
+    {
+      "scene": "act2_kerr_door",
+      "primary": "Kerr",
+      "text": "You can tell me what the hour was worth,",
+      "context": "\"You can tell me what the hour was worth,\" he says, \"or you can walk past and let the canal be the argument.\"",
+      "index": 70,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "be1042c7576efc15"
+      ]
+    },
+    {
+      "scene": "act2_kerr_door",
+      "primary": "Kerr",
+      "text": "or you can walk past and let the canal be the argument.",
+      "context": "\"You can tell me what the hour was worth,\" he says, \"or you can walk past and let the canal be the argument.\"",
+      "index": 71,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "fff3b87ccc0f64c3"
+      ]
+    },
+    {
+      "scene": "act2_kerr",
+      "primary": "Kerr",
+      "text": "Week's up,",
+      "context": "\"Week's up,\" he says. \"Helion paid me to know the weight of that glass. You are the part of the weight I can still invoice.\"",
+      "index": 72,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "f6485552d55ef61a"
+      ]
+    },
+    {
+      "scene": "act2_kerr",
+      "primary": "Kerr",
+      "text": "Helion paid me to know the weight of that glass. You are the part of the weight I can still invoice.",
+      "context": "\"Week's up,\" he says. \"Helion paid me to know the weight of that glass. You are the part of the weight I can still invoice.\"",
+      "index": 73,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "aad36e3eb51d854c"
+      ]
+    },
+    {
+      "scene": "act2_pump_brief",
+      "primary": "Sister Lumen",
+      "text": "Help the room before you make it a sentence,",
+      "context": "'Help the room before you make it a sentence,' she says. 'If the spare won't start, we move the medicines.'",
+      "index": 74,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "d1aabe5acb441c96"
+      ]
+    },
+    {
+      "scene": "act2_pump_brief",
+      "primary": "Sister Lumen",
+      "text": "If the spare won't start, we move the medicines.",
+      "context": "'Help the room before you make it a sentence,' she says. 'If the spare won't start, we move the medicines.'",
+      "index": 75,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "648b5d221d2f18df"
+      ]
+    },
+    {
+      "scene": "act2_pump_methods",
+      "primary": "Kerr",
+      "text": "The knee won't hold a wheel. The door I can do.",
+      "context": "Kerr props the door with his service key. 'The knee won't hold a wheel. The door I can do.' He stays where you can see him.",
+      "index": 76,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "f3eacee7596612bb"
+      ]
+    },
+    {
+      "scene": "act2_notice_counter",
+      "primary": "Sister Lumen",
+      "text": "I won't promise the third. Carry it to the later desk yourself, fund another carrier, or change the split.",
+      "context": "Three early, three later fits the clinic. The dispatcher has only two later route slots. 'I won't promise the third. Carry it to the later desk yourself, fund another carrier, or change the split.'",
+      "index": 77,
+      "decision": "voice",
+      "speaker": "Dispatcher",
+      "reason": "Explicit attribution reviewed against scene prose.",
+      "bindingKeys": [
+        "d119504dd514df5b"
+      ]
+    },
+    {
+      "scene": "act2_archive_challenge",
+      "primary": "Edda",
+      "text": "This tells us where to look. It isn't the record. My countersignature isn't the command's issuing key either.",
+      "context": "Edda taps the catalog. ‘This tells us where to look. It isn't the record. My countersignature isn't the command's issuing key either.’",
+      "index": 78,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "4da47f2f8a24a099"
+      ]
+    },
+    {
+      "scene": "act2_archive_custody",
+      "primary": "Edda",
+      "text": "Keep the original with Sera,",
+      "context": "‘Keep the original with Sera,’ Edda says. ‘Ask before you put my name on a public copy.’",
+      "index": 79,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "9b7df92b1cc2b555"
+      ]
+    },
+    {
+      "scene": "act2_archive_custody",
+      "primary": "Edda",
+      "text": "Ask before you put my name on a public copy.",
+      "context": "‘Keep the original with Sera,’ Edda says. ‘Ask before you put my name on a public copy.’",
+      "index": 80,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "0a82dcd63a373be1"
+      ]
+    },
+    {
+      "scene": "act2_public_response",
+      "primary": "Sera",
+      "text": "issuing key unverified",
+      "context": "A neighbor pins your bounded account beside the district board. She has circled the words 'issuing key unverified' and asks what has changed since the chapel.",
+      "index": 81,
+      "decision": "text",
+      "reason": "Written source label; not spoken."
+    },
+    {
+      "scene": "act3_notice_visit",
+      "primary": "Sister Lumen",
+      "text": "Two reached somebody. The rest have no reply yet. An acknowledgement does not tell me they came to clinic.",
+      "context": "Two sealed cards came back with receipt acknowledgements. Lumen covers the names before turning the slips toward you. \"Two reached somebody. The rest have no reply yet. An acknowledgement does not tell me they came to clinic.\"",
+      "index": 82,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "b16f5a80e7bc03c2"
+      ]
+    },
+    {
+      "scene": "act3_notice_visit",
+      "primary": "Sister Lumen",
+      "text": "You asked me to keep the records separate,",
+      "context": "\"You asked me to keep the records separate,\" she says. \"Keep the reply separate too.\"",
+      "index": 83,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "9942cd273687e3e4"
+      ]
+    },
+    {
+      "scene": "act3_notice_visit",
+      "primary": "Sister Lumen",
+      "text": "Keep the reply separate too.",
+      "context": "\"You asked me to keep the records separate,\" she says. \"Keep the reply separate too.\"",
+      "index": 84,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "9642664c306a1daa"
+      ]
+    },
+    {
+      "scene": "act3_notice_visit",
+      "primary": "Sister Lumen",
+      "text": "That split needed the extra carrier you funded. Keep the work beside the plan.",
+      "context": "Lumen checks three early and three later against the dispatch slip. 'That split needed the extra carrier you funded. Keep the work beside the plan.'",
+      "index": 85,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "c7d6a78e9809aaae"
+      ]
+    },
+    {
+      "scene": "act3_pump_visit",
+      "primary": "Kerr",
+      "text": "You told me the names. This time I kept a door open. That doesn't settle the rest of my week.",
+      "context": "Kerr turns the service key over in his palm. 'You told me the names. This time I kept a door open. That doesn't settle the rest of my week.'",
+      "index": 86,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "e7c13c3e340d5402"
+      ]
+    },
+    {
+      "scene": "act3_edda_visit",
+      "primary": "Edda",
+      "text": "Keep the original available,",
+      "context": "'Keep the original available,' she says. 'Let them question the record without making my shifts the story.'",
+      "index": 87,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "807cfb3b244ef909"
+      ]
+    },
+    {
+      "scene": "act3_edda_visit",
+      "primary": "Edda",
+      "text": "Let them question the record without making my shifts the story.",
+      "context": "'Keep the original available,' she says. 'Let them question the record without making my shifts the story.'",
+      "index": 88,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "d9be767929686634"
+      ]
+    },
+    {
+      "scene": "act3_records_visit",
+      "primary": "Sera",
+      "text": "Now I can ask two questions instead of repeating one accusation.",
+      "context": "A mechanic has checked the independent source against the export. He points to two decisions: Mara's signature, then the cancellation. 'Now I can ask two questions instead of repeating one accusation.'",
+      "index": 89,
+      "decision": "voice",
+      "speaker": "Mechanic",
+      "reason": "Explicit attribution reviewed against scene prose.",
+      "bindingKeys": [
+        "70198349805267a6"
+      ]
+    },
+    {
+      "scene": "act3_notice_visit",
+      "primary": "Sister Lumen",
+      "text": "That split needed your extra later trip. Keep the work beside the plan.",
+      "context": "Lumen checks three early and three later against the dispatch slip. 'That split needed your extra later trip. Keep the work beside the plan.'",
+      "index": 90,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "90d5296b109f166b"
+      ]
+    },
+    {
+      "scene": "act2_notice_capacity",
+      "primary": "Sister Lumen",
+      "text": "Carrying six papers isn't six places in the room. The last two would arrive to a full window.",
+      "context": "Lumen draws a line after the fourth early slot. 'Carrying six papers isn't six places in the room. The last two would arrive to a full window.'",
+      "index": 91,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "c7bd469731ae1cc4"
+      ]
+    },
+    {
+      "scene": "act2_notice_privacy_refusal",
+      "primary": "Sister Lumen",
+      "text": "No. Give them my desk, not somebody else's front door.",
+      "context": "Lumen places the housing sheet back in her drawer. 'No. Give them my desk, not somebody else's front door.'",
+      "index": 92,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "2e4fc9d116be963d"
+      ]
+    },
+    {
+      "scene": "act3_notice_visit",
+      "primary": "Sister Lumen",
+      "text": "That split needed your clinic return bundle. Keep the work beside the plan.",
+      "context": "Lumen checks four early and two later against the dispatch slip. 'That split needed your clinic return bundle. Keep the work beside the plan.' The refused home-list offer remains on her notes; the accepted plan used the clinic instead.",
+      "index": 93,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "8c680a4d765f9937"
+      ]
+    },
+    {
+      "scene": "route",
+      "primary": "Quill",
+      "text": "Start by choosing how you get in,",
+      "context": "Ninety is already on your chip. Try not to donate it to a door. You tell Quill this job is a step toward getting out. \"Start by choosing how you get in,\" he says.",
+      "index": 94,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "a05047a6b8c285e9"
+      ]
+    },
+    {
+      "scene": "act2_freight_result",
+      "primary": "Asa",
+      "text": "I can answer for what we saw. I can’t sign for the part we didn’t.",
+      "context": "Asa shuts the manifest. ‘I can answer for what we saw. I can’t sign for the part we didn’t.’",
+      "index": 95,
+      "decision": "voice",
+      "speaker": "Asa",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "550b981087593842"
+      ]
+    },
+    {
+      "scene": "act3_freight_visit",
+      "primary": "Asa",
+      "text": "The parcel got there. The route is still exposed and retired.",
+      "context": "They hold up the receipt. ‘The parcel got there. The route is still exposed and retired.’",
+      "index": 96,
+      "decision": "voice",
+      "speaker": "Asa",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "bb41cd521efd5d13"
+      ]
+    },
+    {
+      "scene": "act3_freight_reflection",
+      "primary": "Asa",
+      "text": "A way out still has somebody at the other end,",
+      "context": "‘A way out still has somebody at the other end,’ Asa says. ‘Choose who you ask to hold the door.’",
+      "index": 97,
+      "decision": "voice",
+      "speaker": "Asa",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "4c835b9a4b41f11b"
+      ]
+    },
+    {
+      "scene": "act3_freight_reflection",
+      "primary": "Asa",
+      "text": "Choose who you ask to hold the door.",
+      "context": "‘A way out still has somebody at the other end,’ Asa says. ‘Choose who you ask to hold the door.’",
+      "index": 98,
+      "decision": "voice",
+      "speaker": "Asa",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "a389c57dfcc9432d"
+      ]
+    },
+    {
+      "scene": "act3_freight_reflection",
+      "primary": "Asa",
+      "text": "I know what a paid tomorrow means,",
+      "context": "‘I know what a paid tomorrow means,’ Asa says. ‘Just keep the receipt honest about whose morning it bought.’",
+      "index": 99,
+      "decision": "voice",
+      "speaker": "Asa",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "317f505c20844098"
+      ]
+    },
+    {
+      "scene": "act3_freight_reflection",
+      "primary": "Asa",
+      "text": "Just keep the receipt honest about whose morning it bought.",
+      "context": "‘I know what a paid tomorrow means,’ Asa says. ‘Just keep the receipt honest about whose morning it bought.’",
+      "index": 100,
+      "decision": "voice",
+      "speaker": "Asa",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "60d3d2dd8689d2f2"
+      ]
+    },
+    {
+      "scene": "lumen",
+      "primary": "Sister Lumen",
+      "text": "You isolated it. The maintenance fault is on their log, even if your name isn't.",
+      "context": "Lumen glances at the dead service reader. 'You isolated it. The maintenance fault is on their log, even if your name isn't.'",
+      "index": 101,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "fc1aac1f2812fd7f"
+      ]
+    },
+    {
+      "scene": "act2_lumen_door",
+      "primary": "Sister Lumen",
+      "text": "Replay,",
+      "context": "\"Replay,\" she says, before the coat, before the habit. \"I already decided you were a person.\"",
+      "index": 102,
+      "decision": "text",
+      "reason": "Player-custom address remains readable; fixed subsequent dialogue is voiced."
+    },
+    {
+      "scene": "act2_lumen_door",
+      "primary": "Sister Lumen",
+      "text": "I already decided you were a person.",
+      "context": "\"Replay,\" she says, before the coat, before the habit. \"I already decided you were a person.\"",
+      "index": 103,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "ea450b265b7c1eb1"
+      ]
+    },
+    {
+      "scene": "act2_lumen",
+      "primary": "Sister Lumen",
+      "text": "Ward Nine is still down there,",
+      "context": "\"Ward Nine is still down there,\" she says. \"The shard is a week old, wherever it went. I called you back because memory gets thin if nobody walks it back to the wall. Come with me, or tell me you are done and mean it.\"",
+      "index": 104,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "f767a8c3fe4ced16"
+      ]
+    },
+    {
+      "scene": "act2_lumen",
+      "primary": "Sister Lumen",
+      "text": "The shard is a week old, wherever it went. I called you back because memory gets thin if nobody walks it back to the wall. Come with me, or tell me you are done and mean it.",
+      "context": "\"Ward Nine is still down there,\" she says. \"The shard is a week old, wherever it went. I called you back because memory gets thin if nobody walks it back to the wall. Come with me, or tell me you are done and mean it.\"",
+      "index": 105,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "7e6f296e3a4dfea6"
+      ]
+    },
+    {
+      "scene": "act2_witness_brief",
+      "primary": "Nia Pell",
+      "text": "You promised a witness. I promised nothing to a transmitter. I need care, a room they don't own, and a say in which words leave it. Can you do those separately?",
+      "context": "\"You promised a witness. I promised nothing to a transmitter. I need care, a room they don't own, and a say in which words leave it. Can you do those separately?\"",
+      "index": 106,
+      "decision": "voice",
+      "speaker": "Nia Pell",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "0ad5db4e7191b2d9"
+      ]
+    },
+    {
+      "scene": "act2_witness_door",
+      "primary": "Sister Lumen",
+      "text": "Don't publish my address and call that courage,",
+      "context": "\"Don't publish my address and call that courage,\" she says. \"Give me somewhere they don't rent to me. Then I'll tell Sera what I saw.\"",
+      "index": 107,
+      "decision": "voice",
+      "speaker": "Nia Pell",
+      "reason": "Explicit attribution reviewed against scene prose.",
+      "bindingKeys": [
+        "b0c2bf1987dc719a"
+      ]
+    },
+    {
+      "scene": "act2_witness_door",
+      "primary": "Sister Lumen",
+      "text": "Give me somewhere they don't rent to me. Then I'll tell Sera what I saw.",
+      "context": "\"Don't publish my address and call that courage,\" she says. \"Give me somewhere they don't rent to me. Then I'll tell Sera what I saw.\"",
+      "index": 108,
+      "decision": "voice",
+      "speaker": "Nia Pell",
+      "reason": "Explicit attribution reviewed against scene prose.",
+      "bindingKeys": [
+        "2d5c67dec0acd797"
+      ]
+    },
+    {
+      "scene": "act2_witness_arrival",
+      "primary": "Nia Pell",
+      "text": "You got me here,",
+      "context": "\"You got me here,\" Nia says. \"Now I want to hear the words before anyone uses them. No address. No photograph. If I stop, you stop.\"",
+      "index": 109,
+      "decision": "voice",
+      "speaker": "Nia Pell",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "db1f5347aad39364"
+      ]
+    },
+    {
+      "scene": "act2_witness_arrival",
+      "primary": "Nia Pell",
+      "text": "Now I want to hear the words before anyone uses them. No address. No photograph. If I stop, you stop.",
+      "context": "\"You got me here,\" Nia says. \"Now I want to hear the words before anyone uses them. No address. No photograph. If I stop, you stop.\"",
+      "index": 110,
+      "decision": "voice",
+      "speaker": "Nia Pell",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "eef8c70502900699"
+      ]
+    },
+    {
+      "scene": "act2_witness_safe",
+      "primary": "Sera",
+      "text": "That part stays,",
+      "context": "\"That part stays,\" Nia says. \"The address doesn't. If they ask where I am, tell them I am available through you.\"",
+      "index": 111,
+      "decision": "voice",
+      "speaker": "Nia Pell",
+      "reason": "Explicit attribution reviewed against scene prose.",
+      "bindingKeys": [
+        "339559ea2d91362c"
+      ]
+    },
+    {
+      "scene": "act2_witness_safe",
+      "primary": "Sera",
+      "text": "The address doesn't. If they ask where I am, tell them I am available through you.",
+      "context": "\"That part stays,\" Nia says. \"The address doesn't. If they ask where I am, tell them I am available through you.\"",
+      "index": 112,
+      "decision": "voice",
+      "speaker": "Nia Pell",
+      "reason": "Explicit attribution reviewed against scene prose.",
+      "bindingKeys": [
+        "514f7ea0c2676a9e"
+      ]
+    },
+    {
+      "scene": "act2_kerr_collection_terms",
+      "primary": "Kerr",
+      "text": "They have my replacement at the canal depot. Unpowered, no miracle in it. I want the case, not a treatment report. Their free courier gate writes the recipient into the shift register. If you promise to keep my name out, don't save your fare by putting it in.",
+      "context": "\"They have my replacement at the canal depot. Unpowered, no miracle in it. I want the case, not a treatment report. Their free courier gate writes the recipient into the shift register. If you promise to keep my name out, don't save your fare by putting it in.\"",
+      "index": 113,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "6fa37034f7d23c16",
+        "c81a6fd347c1c127"
+      ]
+    },
+    {
+      "scene": "act2_route_receipt",
+      "primary": "Kerr",
+      "text": "You brought the case. You also put my name in their register after promising not to. Those aren't the same line.",
+      "context": "'You brought the case. You also put my name in their register after promising not to. Those aren't the same line.'",
+      "index": 114,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "1c02053840058be0"
+      ]
+    },
+    {
+      "scene": "act3_witness_visit",
+      "primary": "Nia Pell",
+      "text": "The room is mine to name. That matters more than what you called the job.",
+      "context": "Nia agrees to a visit through Sera. She has put the photograph where she can see it from bed. 'The room is mine to name. That matters more than what you called the job.'",
+      "index": 115,
+      "decision": "voice",
+      "speaker": "Nia Pell",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "0c97c32feef9f74d"
+      ]
+    },
+    {
+      "scene": "act3_witness_visit",
+      "primary": "Nia Pell",
+      "text": "An empty address field. Keep it that way when you tell the story.",
+      "context": "Nia folds the clinic-only form. 'An empty address field. Keep it that way when you tell the story.'",
+      "index": 116,
+      "decision": "voice",
+      "speaker": "Nia Pell",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "be4bf05544ae6bfb"
+      ]
+    },
+    {
+      "scene": "act3_kerr_collection",
+      "primary": "Kerr",
+      "text": "You wrote my name after promising not to. Don't call this private.",
+      "context": "He puts the recipient docket beside your promise. ‘You wrote my name after promising not to. Don't call this private.’",
+      "index": 117,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "2fb11d9f5386a526"
+      ]
+    },
+    {
+      "scene": "act3_kerr_collection",
+      "primary": "Kerr",
+      "text": "The terms arrive with the case.",
+      "context": "He shifts the cup away from the papers. ‘The terms arrive with the case.’",
+      "index": 118,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "eb2a0f6b572a8d70"
+      ]
+    },
+    {
+      "scene": "act3_kerr_collection_response",
+      "primary": "Kerr",
+      "text": "You can't unwrite the depot. You can stop asking me to pretend you kept the private part. Tell me what you'll put beside that promise.",
+      "context": "'You can't unwrite the depot. You can stop asking me to pretend you kept the private part. Tell me what you'll put beside that promise.'",
+      "index": 119,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "b20f6847e147bf2c"
+      ]
+    },
+    {
+      "scene": "act3_testimony_consent",
+      "primary": "Sera",
+      "text": "She agreed to record it. That wasn't permission for every public use.",
+      "context": "Sera holds Nia's approved recording. 'She agreed to record it. That wasn't permission for every public use.' You can ask through the clinic relay, or keep her words out of the hearing. A safe room bought no quotation rights.",
+      "index": 120,
+      "decision": "voice",
+      "speaker": "Sera",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "e9db74e0fb93b6d1"
+      ]
+    },
+    {
+      "scene": "act3_testimony_nia",
+      "primary": "Nia Pell",
+      "text": "Use the words I approved. You can name me as the source through Sera. No address, no new story about how brave I was, and no sentence saying the room made me owe you this.",
+      "context": "Nia listens to the proposed cover sheet through Sera's relay. 'Use the words I approved. You can name me as the source through Sera. No address, no new story about how brave I was, and no sentence saying the room made me owe you this.'",
+      "index": 121,
+      "decision": "voice",
+      "speaker": "Nia Pell",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "7e44e6048adce128"
+      ]
+    },
+    {
+      "scene": "ending_names",
+      "primary": "Sera",
+      "text": "One at a time,",
+      "context": "\"One at a time,\" Sera says. \"The wall has room for a voice. It has never had room for an excuse.\"",
+      "index": 122,
+      "decision": "voice",
+      "speaker": "Sera",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "8610f260417555f9"
+      ]
+    },
+    {
+      "scene": "ending_names",
+      "primary": "Sera",
+      "text": "The wall has room for a voice. It has never had room for an excuse.",
+      "context": "\"One at a time,\" Sera says. \"The wall has room for a voice. It has never had room for an excuse.\"",
+      "index": 123,
+      "decision": "voice",
+      "speaker": "Sera",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "9c70837140d53b37"
+      ]
+    },
+    {
+      "scene": "act2_route_receipt",
+      "primary": "Kerr",
+      "text": "No recipient entry. That was the part I asked you to keep.",
+      "context": "'No recipient entry. That was the part I asked you to keep.'",
+      "index": 124,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "4f77af5744b43bdb"
+      ]
+    },
+    {
+      "scene": "act2_route_receipt",
+      "primary": "Kerr",
+      "text": "You left them somewhere to send it back. Good. A private name shouldn't make a lost case somebody else's problem.",
+      "context": "Kerr puts a finger against the depot return mark. 'You left them somewhere to send it back. Good. A private name shouldn't make a lost case somebody else's problem.'",
+      "index": 125,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "167f30b21439191c"
+      ]
+    },
+    {
+      "scene": "act3_kerr_collection",
+      "primary": "Kerr",
+      "text": "No recipient entry,",
+      "context": "‘No recipient entry,’ he says. ‘That was the part I asked you to keep.’",
+      "index": 126,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "2e1736fb8f4ed63d"
+      ]
+    },
+    {
+      "scene": "act3_kerr_collection",
+      "primary": "Kerr",
+      "text": "That was the part I asked you to keep.",
+      "context": "‘No recipient entry,’ he says. ‘That was the part I asked you to keep.’",
+      "index": 127,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "ab4b512578c0ff3c"
+      ]
+    },
+    {
+      "scene": "act3_kerr_collection",
+      "primary": "Kerr",
+      "text": "You left them somewhere to send it back. Good. A private name shouldn't make a lost case somebody else's problem.",
+      "context": "Kerr puts a finger against the depot return mark. 'You left them somewhere to send it back. Good. A private name shouldn't make a lost case somebody else's problem.'",
+      "index": 128,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "28da8c035ca4813f"
+      ]
+    },
+    {
+      "scene": "lumen",
+      "primary": "Sister Lumen",
+      "text": "The orderly accepted a shift, not a confession. You still owe the work you offered.",
+      "context": "Lumen reads the service docket. 'The orderly accepted a shift, not a confession. You still owe the work you offered.'",
+      "index": 129,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "1528097a53a659b7"
+      ]
+    },
+    {
+      "scene": "kerr",
+      "primary": "Kerr",
+      "text": "Shard on the plinth. You on the floor.",
+      "context": "\"Shard on the plinth. You on the floor.\" Kerr's coat is wet. His knee is set like it owes him money. \"That glass is an hour Helion paid to keep. We can skip to the end.\"",
+      "index": 130,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "044af2da2dbed239"
+      ]
+    },
+    {
+      "scene": "kerr",
+      "primary": "Kerr",
+      "text": "That glass is an hour Helion paid to keep. We can skip to the end.",
+      "context": "\"Shard on the plinth. You on the floor.\" Kerr's coat is wet. His knee is set like it owes him money. \"That glass is an hour Helion paid to keep. We can skip to the end.\"",
+      "index": 131,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "caac066a756500f1"
+      ]
+    },
+    {
+      "scene": "act2_route_receipt",
+      "primary": "Kerr",
+      "text": "My case. Your terms with the depot. Keep both names on the right paper.",
+      "context": "Kerr leaves your work docket on your side of the counter. 'My case. Your terms with the depot. Keep both names on the right paper.'",
+      "index": 132,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "c03ce2fe7b669498"
+      ]
+    },
+    {
+      "scene": "act3_kerr_collection",
+      "primary": "Kerr",
+      "text": "My case. Your terms with the depot. Keep both names on the right paper.",
+      "context": "Kerr leaves your work docket on your side of the counter. 'My case. Your terms with the depot. Keep both names on the right paper.'",
+      "index": 133,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "9fe2b5e794501800"
+      ]
+    },
+    {
+      "scene": "lumen",
+      "primary": "Sister Lumen",
+      "text": "You waited for their return pass. That left no new visitor entry.",
+      "context": "Lumen looks toward the quiet landing. 'You waited for their return pass. That left no new visitor entry.'",
+      "index": 134,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "e86cfd75d8dae272"
+      ]
+    },
+    {
+      "scene": "act3_witness_visit",
+      "primary": "Nia Pell",
+      "text": "I chose to wait with you. Quiet doesn't mean I agreed to a recording.",
+      "context": "Nia remembers waiting for the quiet crossing. 'I chose to wait with you. Quiet doesn't mean I agreed to a recording.'",
+      "index": 135,
+      "decision": "voice",
+      "speaker": "Nia Pell",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "abc094d21197ed87"
+      ]
+    },
+    {
+      "scene": "act2_route_receipt",
+      "primary": "Kerr",
+      "text": "You let it go without you. Most runners hear an empty corridor and stop listening.",
+      "context": "Kerr watches a loaded cart go past the stall. 'You let it go without you. Most runners hear an empty corridor and stop listening.'",
+      "index": 136,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "75ebf5b290f6a180"
+      ]
+    },
+    {
+      "scene": "act3_kerr_collection",
+      "primary": "Kerr",
+      "text": "You let it go without you. Most runners hear an empty corridor and stop listening.",
+      "context": "Kerr watches a loaded cart go past the stall. 'You let it go without you. Most runners hear an empty corridor and stop listening.'",
+      "index": 137,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "bb03795c3ae2566e"
+      ]
+    },
+    {
+      "scene": "lumen",
+      "primary": "Sister Lumen",
+      "text": "You held it open with your hands. Maintenance will notice that.",
+      "context": "Lumen tests the strained latch. 'You held it open with your hands. Maintenance will notice that.'",
+      "index": 138,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "229664591b8926e3"
+      ]
+    },
+    {
+      "scene": "act3_witness_visit",
+      "primary": "Nia Pell",
+      "text": "You stopped when I asked. Remember that, not just the weight you carried.",
+      "context": "Nia taps the chair's strap. 'You stopped when I asked. Remember that, not just the weight you carried.'",
+      "index": 139,
+      "decision": "voice",
+      "speaker": "Nia Pell",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "d6ea0c8d63daecce"
+      ]
+    },
+    {
+      "scene": "act2_route_receipt",
+      "primary": "Kerr",
+      "text": "You carried the weight where it was. Not where the handle told you it ought to be.",
+      "context": "Kerr touches the lower strap without opening the case. 'You carried the weight where it was. Not where the handle told you it ought to be.'",
+      "index": 140,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "1c08139786abba7d"
+      ]
+    },
+    {
+      "scene": "act3_kerr_collection",
+      "primary": "Kerr",
+      "text": "You carried the weight where it was. Not where the handle told you it ought to be.",
+      "context": "Kerr touches the lower strap without opening the case. 'You carried the weight where it was. Not where the handle told you it ought to be.'",
+      "index": 141,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "36f6b6a9d6119f55"
+      ]
+    },
+    {
+      "scene": "ending_week_deal",
+      "primary": null,
+      "text": "resolved.",
+      "context": "Ives pays without counting out loud. Eighty creds for a week of quiet, which is a polite way to buy your mouth. The folio closes. Your handle is a line item under \"resolved.\"",
+      "index": 142,
+      "decision": "text",
+      "reason": "Written folio status; not spoken."
+    },
+    {
+      "scene": "ending_listed",
+      "primary": "Ives",
+      "text": "The folio is closed,",
+      "context": "\"The folio is closed,\" Ives says. \"Your name is still on file. That is what the tower will keep.\"",
+      "index": 143,
+      "decision": "voice",
+      "speaker": "Ives",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "48ea01a37258d32d"
+      ]
+    },
+    {
+      "scene": "ending_listed",
+      "primary": "Ives",
+      "text": "Your name is still on file. That is what the tower will keep.",
+      "context": "\"The folio is closed,\" Ives says. \"Your name is still on file. That is what the tower will keep.\"",
+      "index": 144,
+      "decision": "voice",
+      "speaker": "Ives",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "b15dafb7ca76e28c"
+      ]
+    },
+    {
+      "scene": "stall",
+      "primary": "Quill",
+      "text": "Low Reserve. Mara Voss, Helion logistics. Glass Chapel edits her memory at dawn. Bring me the original hour, intact. Fifty now, two hundred on delivery. Her bodyguard is Kerr. He is paid to stop you.",
+      "context": "Quill moves his bowl aside. \"Low Reserve. Mara Voss, Helion logistics. Glass Chapel edits her memory at dawn. Bring me the original hour, intact. Fifty now, two hundred on delivery. Her bodyguard is Kerr. He is paid to stop you.\"",
+      "index": 145,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "9dcfc8554bfcc3ef",
+        "f179af9169c4b07f"
+      ]
+    },
+    {
+      "scene": "pay_no",
+      "primary": "Quill",
+      "text": "Cute. Fifty. Count it if you want. The count will not change, and neither will my face.",
+      "context": "\"Cute. Fifty. Count it if you want. The count will not change, and neither will my face.\"",
+      "index": 146,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "a78e2b3ff833d9cf"
+      ]
+    },
+    {
+      "scene": "stall",
+      "primary": "Quill",
+      "text": "Fifty now. Two hundred for the intact shard. Before dawn. Those are the terms.",
+      "context": "Quill turns the untouched bowl between his hands. \"Fifty now. Two hundred for the intact shard. Before dawn. Those are the terms.\"",
+      "index": 147,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "6c69777a5189b31b"
+      ]
+    },
+    {
+      "scene": "ending_burned",
+      "primary": "Sister Lumen",
+      "text": "Next time you are dying, come here first. We owe you a cheaper kind of edit.",
+      "context": "She presses a clinic marker into your palm. \"Next time you are dying, come here first. We owe you a cheaper kind of edit.\"",
+      "index": 148,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "a58eaa59d5d2de26"
+      ]
+    },
+    {
+      "scene": "act2_kerr_collection_terms",
+      "primary": "Kerr",
+      "text": "This isn't another collection from you.",
+      "context": "Kerr separates the depot slip from the receipt for the forty creds you paid him. 'This isn't another collection from you.'",
+      "index": 149,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "882a2df89097fa1e"
+      ]
+    },
+    {
+      "scene": "act2_witness_checkpoint",
+      "primary": "Kerr",
+      "text": "I can keep this off the register if you give me a clinic transfer I can sign. Get the desk to accept it. Then move.",
+      "context": "\"I can keep this off the register if you give me a clinic transfer I can sign. Get the desk to accept it. Then move.\"",
+      "index": 150,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "affd54d85f9b68f1"
+      ]
+    },
+    {
+      "scene": "act2_witness_lost",
+      "primary": "Sister Lumen",
+      "text": "We can still keep her account,",
+      "context": "\"We can still keep her account,\" she says. \"We cannot tell her the room is private. Say exactly what happened.\"",
+      "index": 151,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "e3496697a91aba9e"
+      ]
+    },
+    {
+      "scene": "act2_witness_lost",
+      "primary": "Sister Lumen",
+      "text": "We cannot tell her the room is private. Say exactly what happened.",
+      "context": "\"We can still keep her account,\" she says. \"We cannot tell her the room is private. Say exactly what happened.\"",
+      "index": 152,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "4032f13df299bebd"
+      ]
+    },
+    {
+      "scene": "act2_witness_repair",
+      "primary": "Sister Lumen",
+      "text": "We can move her again. It won't erase the first register entry. Say that to her before you call this repaired.",
+      "context": "\"We can move her again. It won't erase the first register entry. Say that to her before you call this repaired.\"",
+      "index": 153,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "f7c654dfb2f429bb"
+      ]
+    },
+    {
+      "scene": "act3_witness_visit",
+      "primary": "Nia Pell",
+      "text": "The second room is quiet. The first one still gets calls. Both belong in your account.",
+      "context": "Nia answers through the clinic relay. 'The second room is quiet. The first one still gets calls. Both belong in your account.'",
+      "index": 154,
+      "decision": "voice",
+      "speaker": "Nia Pell",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "e7a5c1fd7190a27e"
+      ]
+    },
+    {
+      "scene": "act3_kerr_collection",
+      "primary": "Kerr",
+      "text": "Tell the wall you left it open. I don't need a finished job invented on the way down.",
+      "context": "‘Tell the wall you left it open. I don't need a finished job invented on the way down.’",
+      "index": 155,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "3fca349ebbfcd99d"
+      ]
+    },
+    {
+      "scene": "act2_recovery",
+      "primary": "Sister Lumen",
+      "text": "This one doesn't keep your hour.",
+      "context": "Lumen takes the chair away from the table and puts an ordinary seat beside the window. 'This one doesn't keep your hour.'",
+      "index": 156,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "f2f1d5639478e5eb"
+      ]
+    },
+    {
+      "scene": "act2_recovery_after",
+      "primary": "Sister Lumen",
+      "text": "Now decide who needs what you have left,",
+      "context": "'Now decide who needs what you have left,' she says.",
+      "index": 157,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "ef1e40b2acd5b93f"
+      ]
+    },
+    {
+      "scene": "act2_public_response",
+      "primary": "Sera",
+      "text": "You tested this sentence: The exported command receipt independently authenticates Helion as its issuer. What should we do with the verdict you kept?",
+      "context": "Sera lays your bench verdict beside Lumen's challenge. \"You tested this sentence: The exported command receipt independently authenticates Helion as its issuer. What should we do with the verdict you kept?\"",
+      "index": 158,
+      "decision": "voice",
+      "speaker": "Sera",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "240feba4124f563f"
+      ]
+    },
+    {
+      "scene": "ending_witness",
+      "primary": "Sera",
+      "text": "You came late,",
+      "context": "\"You came late,\" Sera says. \"Leave that beside what you know. Don't make it a clean story for me.\"",
+      "index": 159,
+      "decision": "voice",
+      "speaker": "Sera",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "c1a028f2116900ed"
+      ]
+    },
+    {
+      "scene": "ending_witness",
+      "primary": "Sera",
+      "text": "Leave that beside what you know. Don't make it a clean story for me.",
+      "context": "\"You came late,\" Sera says. \"Leave that beside what you know. Don't make it a clean story for me.\"",
+      "index": 160,
+      "decision": "voice",
+      "speaker": "Sera",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "b813a8dff94f2cac"
+      ]
+    },
+    {
+      "scene": "act2_freight_recovery",
+      "primary": "Asa",
+      "text": "We can finish the delivery. We can’t pretend they didn’t see us.",
+      "context": "The cabinet keeps the parcel cold. Asa looks at the clerk’s mark beside the service turn. ‘We can finish the delivery. We can’t pretend they didn’t see us.’",
+      "index": 161,
+      "decision": "voice",
+      "speaker": "Asa",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "15ac54e5d3bac3b4"
+      ]
+    },
+    {
+      "scene": "act3_freight_visit",
+      "primary": "Asa",
+      "text": "I haven't seen a stock receipt for your case. That part is still open.",
+      "context": "‘I haven't seen a stock receipt for your case. That part is still open.’",
+      "index": 162,
+      "decision": "voice",
+      "speaker": "Asa",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "b63b575af329834c"
+      ]
+    },
+    {
+      "scene": "act3_freight_visit",
+      "primary": "Asa",
+      "text": "No matching entry at this desk. Someone else may have carried it. I can't give you a receipt for that.",
+      "context": "‘No matching entry at this desk. Someone else may have carried it. I can't give you a receipt for that.’",
+      "index": 163,
+      "decision": "voice",
+      "speaker": "Asa",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "d676f5306e8b89a7"
+      ]
+    },
+    {
+      "scene": "act3_freight_visit",
+      "primary": "Asa",
+      "text": "You left it at intake. I brought the batch reference; we can ask before calling it delivered.",
+      "context": "‘You left it at intake. I brought the batch reference; we can ask before calling it delivered.’",
+      "index": 164,
+      "decision": "voice",
+      "speaker": "Asa",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "5f034220bdc98bd5"
+      ]
+    },
+    {
+      "scene": "act3_freight_visit",
+      "primary": "Asa",
+      "text": "The batch book finally answered. Received after you left. That doesn't buy back our passenger route.",
+      "context": "‘The batch book finally answered. Received after you left. That doesn't buy back our passenger route.’",
+      "index": 165,
+      "decision": "voice",
+      "speaker": "Asa",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "e8c41423d97eca7e"
+      ]
+    },
+    {
+      "scene": "act2_workshop",
+      "primary": "Quill",
+      "text": "One case in this shipment for you,",
+      "context": "'One case in this shipment for you,' he says. 'Keep enough for the person on the other end of the job.'",
+      "index": 166,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "dbbd70022e6f2227"
+      ]
+    },
+    {
+      "scene": "act2_workshop",
+      "primary": "Quill",
+      "text": "Keep enough for the person on the other end of the job.",
+      "context": "'One case in this shipment for you,' he says. 'Keep enough for the person on the other end of the job.'",
+      "index": 167,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "61f2f7af7189d85d"
+      ]
+    },
+    {
+      "scene": "act2_witness_support",
+      "primary": "Nia Pell",
+      "text": "Tell me whose work you're offering.",
+      "context": "Nia holds the chair brake herself. 'Tell me whose work you're offering.'",
+      "index": 168,
+      "decision": "voice",
+      "speaker": "Nia Pell",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "ae1fa349cb32cd52"
+      ]
+    },
+    {
+      "scene": "act3_witness_visit",
+      "primary": "Nia Pell",
+      "text": "You kept your shift. Don't turn that into something I owe you.",
+      "context": "Nia remembers the volunteer walking beside her chair. 'You kept your shift. Don't turn that into something I owe you.'",
+      "index": 169,
+      "decision": "voice",
+      "speaker": "Nia Pell",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "d83e162f430285c7"
+      ]
+    },
+    {
+      "scene": "act2_route_receipt",
+      "primary": "Kerr",
+      "text": "You paid with your back. Keep the receipt for that, too.",
+      "context": "Kerr taps the receipt for the returned rig and its refunded twenty-creds deposit. 'You paid with your back. Keep the receipt for that, too.'",
+      "index": 170,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "7f522a2693e70030"
+      ]
+    },
+    {
+      "scene": "act3_chapel_return",
+      "primary": "Sister Lumen",
+      "text": "A door is a small thing until someone has to answer for it.",
+      "context": "Lumen puts the Chapel docket beside her cup. 'A door is a small thing until someone has to answer for it.'",
+      "index": 171,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "7b0df4d2e8c1f742"
+      ]
+    },
+    {
+      "scene": "act3_chapel_return",
+      "primary": "Sister Lumen",
+      "text": "The orderly accepted a shift, not a confession. You still owe the work you offered.",
+      "context": "Lumen reads the service docket. 'The orderly accepted a shift, not a confession. You still owe the work you offered.'",
+      "index": 172,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "c616b63f5fe5b542"
+      ]
+    },
+    {
+      "scene": "act3_chapel_return",
+      "primary": "Sister Lumen",
+      "text": "Sit a minute. The next person through that door will need their own answer.",
+      "context": "She slides the cup toward you. 'Sit a minute. The next person through that door will need their own answer.'",
+      "index": 173,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "0795938c6293eb32"
+      ]
+    },
+    {
+      "scene": "act3_kerr_collection",
+      "primary": "Kerr",
+      "text": "You paid with your back. Keep the receipt for that, too.",
+      "context": "Kerr taps the receipt for the returned rig and its refunded twenty-creds deposit. 'You paid with your back. Keep the receipt for that, too.'",
+      "index": 174,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "a3c386acf818f763"
+      ]
+    },
+    {
+      "scene": "act3_kerr_personal_question",
+      "primary": "Kerr",
+      "text": "One walk without counting the steps first. Not another door to stand in. Just the table where the rain doesn't land in the soup.",
+      "context": "'One walk without counting the steps first. Not another door to stand in. Just the table where the rain doesn't land in the soup.'",
+      "index": 175,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "75f7522d425df77b"
+      ]
+    },
+    {
+      "scene": "act3_chapel_return",
+      "primary": "Sister Lumen",
+      "text": "You waited for their return pass. That left no new visitor entry.",
+      "context": "Lumen looks toward the quiet landing. 'You waited for their return pass. That left no new visitor entry.'",
+      "index": 176,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "bd75cbbf79d6a06e"
+      ]
+    },
+    {
+      "scene": "act3_kerr_collection",
+      "primary": "Kerr",
+      "text": "You said no before I counted on it. I can work with a no.",
+      "context": "‘You said no before I counted on it. I can work with a no.’",
+      "index": 177,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "c9db25cc95599b11"
+      ]
+    },
+    {
+      "scene": "act2_quill_introduction",
+      "primary": "Quill",
+      "text": "I know who works the depot counter.",
+      "context": "Quill tears a strip from an unused order pad. 'I know who works the depot counter.'",
+      "index": 178,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "0aa3b16e82df1225"
+      ]
+    },
+    {
+      "scene": "act3_quill_introduction",
+      "primary": "Quill",
+      "text": "You used the introduction to get a counter answer. That's what I lent you.",
+      "context": "'You used the introduction to get a counter answer. That's what I lent you.'",
+      "index": 179,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "75d169d8d8513b9f"
+      ]
+    },
+    {
+      "scene": "act2_quill_introduction",
+      "primary": "Quill",
+      "text": "An introduction asks somebody else to believe my word about yours. Clear the forty first, or use the map without me.",
+      "context": "Quill taps the tab you postponed. 'An introduction asks somebody else to believe my word about yours. Clear the forty first, or use the map without me.'",
+      "index": 180,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "179ba3489dde5bd0"
+      ]
+    },
+    {
+      "scene": "act2_quill_introduction",
+      "primary": "Quill",
+      "text": "Paid now. Late then. Both fit on the page.",
+      "context": "Quill leaves both receipts on the counter: the postponed tab and its later forty-creds payment. 'Paid now. Late then. Both fit on the page.'",
+      "index": 181,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "6f6e40dbda8e9cd4"
+      ]
+    },
+    {
+      "scene": "act3_quill_introduction",
+      "primary": "Quill",
+      "text": "I took the money. I haven't lost the calendar.",
+      "context": "Quill keeps the late forty-creds payment beside the old postponement. 'I took the money. I haven't lost the calendar.'",
+      "index": 182,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "d1b075ed67a01f8e"
+      ]
+    },
+    {
+      "scene": "act2_route_receipt",
+      "primary": "Kerr",
+      "text": "We agreed they could register it. Leave that on the receipt.",
+      "context": "'We agreed they could register it. Leave that on the receipt.'",
+      "index": 183,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "efa6e2f4c39b710c"
+      ]
+    },
+    {
+      "scene": "act3_kerr_collection",
+      "primary": "Kerr",
+      "text": "The register was part of our agreement,",
+      "context": "‘The register was part of our agreement,’ he says. ‘Leave it on the receipt.’",
+      "index": 184,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "55f0986933a9d71d"
+      ]
+    },
+    {
+      "scene": "act3_kerr_collection",
+      "primary": "Kerr",
+      "text": "Leave it on the receipt.",
+      "context": "‘The register was part of our agreement,’ he says. ‘Leave it on the receipt.’",
+      "index": 185,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "15e490489a4eda83"
+      ]
+    },
+    {
+      "scene": "act2_response_invitation",
+      "primary": "Mara",
+      "text": "I want to answer in my own name. A private statement to the Ward Nine records desk. I won't make the clinic my alibi.",
+      "context": "'I want to answer in my own name. A private statement to the Ward Nine records desk. I won't make the clinic my alibi.'",
+      "index": 186,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "1b2a020540344b14"
+      ]
+    },
+    {
+      "scene": "act2_response_invitation",
+      "primary": "Mara",
+      "text": "And I won't sign as your sponsor. We can still sit at the same table.",
+      "context": "Lumen brings a second chair. 'And I won't sign as your sponsor. We can still sit at the same table.'",
+      "index": 187,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Explicit attribution reviewed against scene prose.",
+      "bindingKeys": [
+        "425a3b412d07c4e3"
+      ]
+    },
+    {
+      "scene": "act2_response_terms",
+      "primary": "Mara",
+      "text": "An answer is not an acquittal,",
+      "context": "'An answer is not an acquittal,' she says. Lumen leaves the clinic pad in its drawer.",
+      "index": 188,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "9588e458b3eda482"
+      ]
+    },
+    {
+      "scene": "act2_mara_quiet",
+      "primary": "Mara",
+      "text": "I want a morning that doesn't begin with someone else choosing what I remember. That won't give the night shift their morning back.",
+      "context": "'I want a morning that doesn't begin with someone else choosing what I remember. That won't give the night shift their morning back.'",
+      "index": 189,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "673be25e53d53d72"
+      ]
+    },
+    {
+      "scene": "act2_mara_company",
+      "primary": "Mara",
+      "text": "There is a chip in this cup. They always turn it away from me. I want to decide which way it faces.",
+      "context": "‘There is a chip in this cup. They always turn it away from me. I want to decide which way it faces.’ She leaves the chair empty. ‘Will you sit for a while? There's nothing to take down.’",
+      "index": 190,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "11f67afa86c9fcd4"
+      ]
+    },
+    {
+      "scene": "act2_mara_company",
+      "primary": "Mara",
+      "text": "Will you sit for a while? There's nothing to take down.",
+      "context": "‘There is a chip in this cup. They always turn it away from me. I want to decide which way it faces.’ She leaves the chair empty. ‘Will you sit for a while? There's nothing to take down.’",
+      "index": 191,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "21682e4dcb7d8b42"
+      ]
+    },
+    {
+      "scene": "act2_mara_company_kept",
+      "primary": "Mara",
+      "text": "That way,",
+      "context": "‘That way,’ she says at last. ‘Tomorrow I might turn it back.’ The cup is an ordinary thing she chose. The courier's dispatch stub waits on the table; the desk has not answered.",
+      "index": 192,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "df97c1b222931951"
+      ]
+    },
+    {
+      "scene": "act2_mara_company_kept",
+      "primary": "Mara",
+      "text": "Tomorrow I might turn it back.",
+      "context": "‘That way,’ she says at last. ‘Tomorrow I might turn it back.’ The cup is an ordinary thing she chose. The courier's dispatch stub waits on the table; the desk has not answered.",
+      "index": 193,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "c90f72009543301a"
+      ]
+    },
+    {
+      "scene": "act2_response_receipt",
+      "primary": "Mara",
+      "text": "Now I wait for an answer I can't write for them.",
+      "context": "'Now I wait for an answer I can't write for them.'",
+      "index": 194,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "ba94e31f64d87a50"
+      ]
+    },
+    {
+      "scene": "act3_response_visit",
+      "primary": "Mara",
+      "text": "They can ask me now,",
+      "context": "'They can ask me now,' she says. 'That was what I wanted my name there for.'",
+      "index": 195,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "2c9001efd498e5cf"
+      ]
+    },
+    {
+      "scene": "act3_response_visit",
+      "primary": "Mara",
+      "text": "That was what I wanted my name there for.",
+      "context": "'They can ask me now,' she says. 'That was what I wanted my name there for.'",
+      "index": 196,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "b9ff874efe00a5f8"
+      ]
+    },
+    {
+      "scene": "act3_mara_followup",
+      "primary": "Mara",
+      "text": "I signed the old order. This page doesn't take my hand off it.",
+      "context": "Mara puts her name where you can both see it. 'I signed the old order. This page doesn't take my hand off it.'",
+      "index": 197,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "2c9ddc5377fae67c"
+      ]
+    },
+    {
+      "scene": "act3_mara_followup",
+      "primary": "Mara",
+      "text": "You paid someone to carry the paper so you could sit here. I remember the chair, too.",
+      "context": "Mara turns the cup's chip toward the window, the way she did while you stayed. ‘You paid someone to carry the paper so you could sit here. I remember the chair, too.’ She does not ask you to make either act a defense of the old order.",
+      "index": 198,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "b99cf018e4205822"
+      ]
+    },
+    {
+      "scene": "act3_lumen_boundary",
+      "primary": "Sister Lumen",
+      "text": "We gave the conversation a room. We didn't give it our name.",
+      "context": "Lumen sets two clean cups on the shelf. 'We gave the conversation a room. We didn't give it our name.'",
+      "index": 199,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "ea3a49a3b4fe1662"
+      ]
+    },
+    {
+      "scene": "act3_lumen_boundary",
+      "primary": "Sister Lumen",
+      "text": "You may leave a private message at the desk. I decide whether to answer. That's all the permission I'm giving.",
+      "context": "'You may leave a private message at the desk. I decide whether to answer. That's all the permission I'm giving.'",
+      "index": 200,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "3f27d4ba1440db2f"
+      ]
+    },
+    {
+      "scene": "act3_mara_followup",
+      "primary": "Mara",
+      "text": "I kept the hour for myself. You don't owe me company because you heard what I did.",
+      "context": "Mara turns the cup's chip toward the window. ‘I kept the hour for myself. You don't owe me company because you heard what I did.’ She leaves room for your answer without asking again.",
+      "index": 201,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "21e09b7ba901e70c"
+      ]
+    },
+    {
+      "scene": "act3_mara_followup",
+      "primary": "Mara",
+      "text": "I did this after you left. You took the envelope; I kept the hour. I wanted you here, too. Both things can be true.",
+      "context": "Mara turns the cup's chip toward the window. ‘I did this after you left. You took the envelope; I kept the hour. I wanted you here, too. Both things can be true.’ She leaves the spare chair where it was.",
+      "index": 202,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "9e4776bce4a0ec25"
+      ]
+    },
+    {
+      "scene": "act3_mara_followup",
+      "primary": "Mara",
+      "text": "The envelope went in the next batch. That hour didn't need a receipt to have happened.",
+      "context": "Mara turns the cup's chip toward the window, the way she did while you stayed. ‘The envelope went in the next batch. That hour didn't need a receipt to have happened.’ She gives you no clean ending to write over either part.",
+      "index": 203,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "e70424c02e5df885"
+      ]
+    },
+    {
+      "scene": "act3_response_visit",
+      "primary": "Mara",
+      "text": "It hasn't reached the desk,",
+      "context": "'It hasn't reached the desk,' she says. 'Don't put an answer where the waiting is.'",
+      "index": 204,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "4673d6928395a8c5"
+      ]
+    },
+    {
+      "scene": "act3_response_visit",
+      "primary": "Mara",
+      "text": "Don't put an answer where the waiting is.",
+      "context": "'It hasn't reached the desk,' she says. 'Don't put an answer where the waiting is.'",
+      "index": 205,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "1fad86690222c39f"
+      ]
+    },
+    {
+      "scene": "act3_mara_followup",
+      "primary": "Mara",
+      "text": "The envelope is still here. I'm glad you sat with me. I still need to send it.",
+      "context": "Mara turns the cup's chip toward the window, the way she did while you stayed. ‘The envelope is still here. I'm glad you sat with me. I still need to send it.’ She gives you no clean ending to write over either part.",
+      "index": 206,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "a59fc64bca5a63ca"
+      ]
+    },
+    {
+      "scene": "job_owner",
+      "primary": "Quill",
+      "text": "Mara's,",
+      "context": "\"Mara's,\" Quill says. \"Her life. Her appointment. Helion booked the chair; I booked you.\"",
+      "index": 207,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "3897e599854d2026"
+      ]
+    },
+    {
+      "scene": "job_owner",
+      "primary": "Quill",
+      "text": "Her life. Her appointment. Helion booked the chair; I booked you.",
+      "context": "\"Mara's,\" Quill says. \"Her life. Her appointment. Helion booked the chair; I booked you.\"",
+      "index": 208,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "dc3a8ee8738267eb"
+      ]
+    },
+    {
+      "scene": "job_owner",
+      "primary": "Quill",
+      "text": "Who gets it after you?",
+      "context": "\"Who gets it after you?\"",
+      "index": 209,
+      "decision": "text",
+      "reason": "Player question; player voice not requested."
+    },
+    {
+      "scene": "job_owner",
+      "primary": "Quill",
+      "text": "Someone who pays for an original. You want Mara's reasons, ask Mara. I sell the route to the room, not an honest answer.",
+      "context": "He lets the steam pass between you. \"Someone who pays for an original. You want Mara's reasons, ask Mara. I sell the route to the room, not an honest answer.\"",
+      "index": 210,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "eec70cdf947ee612"
+      ]
+    },
+    {
+      "scene": "memory_sequence_result",
+      "primary": "Mara",
+      "text": "Now ask what your sentence claims. The hour can't answer every question you put to it.",
+      "context": "From the recorded interview, Mara says: 'Now ask what your sentence claims. The hour can't answer every question you put to it.'",
+      "index": 211,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "9bc1469455daef74"
+      ]
+    },
+    {
+      "scene": "act2_spire_brief",
+      "primary": "Edda",
+      "text": "The obsolete key bills me after I clock out. Close that number, not my current account.",
+      "context": "‘The obsolete key bills me after I clock out. Close that number, not my current account.’ She sets a receiver beside it. ‘A clean receipt and this is yours. Wake their badge reader and it stays here.’",
+      "index": 212,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "b74ea639fabab54f"
+      ]
+    },
+    {
+      "scene": "act2_spire_brief",
+      "primary": "Edda",
+      "text": "A clean receipt and this is yours. Wake their badge reader and it stays here.",
+      "context": "‘The obsolete key bills me after I clock out. Close that number, not my current account.’ She sets a receiver beside it. ‘A clean receipt and this is yours. Wake their badge reader and it stays here.’",
+      "index": 213,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "44f07a14f8cc696d"
+      ]
+    },
+    {
+      "scene": "act2_spire_sources",
+      "primary": "Edda",
+      "text": "Read all three. The terminal is happy to close the wrong thing.",
+      "context": "‘Read all three. The terminal is happy to close the wrong thing.’ You can turn the papers without sending a query.",
+      "index": 214,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "b2ee880b0dd2551c"
+      ]
+    },
+    {
+      "scene": "act2_spire_methods",
+      "primary": "Edda",
+      "text": "One attempt. If it rejects you, we go to the desk. Your old badge will be in its log.",
+      "context": "‘One attempt. If it rejects you, we go to the desk. Your old badge will be in its log.’ She keeps the receiver covered until service and payroll agree. This is today's maintenance key, not the evacuation order.",
+      "index": 215,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "e6e5431921007e35"
+      ]
+    },
+    {
+      "scene": "act2_spire_receipt",
+      "primary": "Edda",
+      "text": "One clean number. One receiver. The old charges are still a fight.",
+      "context": "She pushes the receiver across the counter. ‘One clean number. One receiver. The old charges are still a fight.’",
+      "index": 216,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "757a344328701dd0"
+      ]
+    },
+    {
+      "scene": "act2_spire_result",
+      "primary": "Edda",
+      "text": "Come back when payroll answers. They don’t always send the same answer to the person who asked.",
+      "context": "Edda folds the papers into her coat. ‘Come back when payroll answers. They don’t always send the same answer to the person who asked.’",
+      "index": 217,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "08c1d6afbcd2b804"
+      ]
+    },
+    {
+      "scene": "act3_spire_visit",
+      "primary": "Edda",
+      "text": "The key and the inquiry are different jobs. We can ask about temporary work separately.",
+      "context": "Her archive access is still suspended. ‘The key and the inquiry are different jobs. We can ask about temporary work separately.’",
+      "index": 218,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "6f90f08b03e3689c"
+      ]
+    },
+    {
+      "scene": "act3_edda_visit",
+      "primary": "Edda",
+      "text": "A review isn't a dismissal. If you can bridge the suspended shift, do. Keep the original available either way.",
+      "context": "'A review isn't a dismissal. If you can bridge the suspended shift, do. Keep the original available either way.'",
+      "index": 219,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "0e9540be940ead25"
+      ]
+    },
+    {
+      "scene": "act3_edda_terms",
+      "primary": "Edda",
+      "text": "I'll sign for payroll to use my name here. Not on your public packet. Leave the witness recording and patient list out. I need a shift, not another version of the accusation.",
+      "context": "‘I'll sign for payroll to use my name here. Not on your public packet. Leave the witness recording and patient list out. I need a shift, not another version of the accusation.’",
+      "index": 220,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "a48113f93e0709c1"
+      ]
+    },
+    {
+      "scene": "act3_edda_reply",
+      "primary": "Edda",
+      "text": "One shift. Keep both papers. Don't make the first one an acquittal.",
+      "context": "Edda folds the assignment notice around the inquiry reference. 'One shift. Keep both papers. Don't make the first one an acquittal.'",
+      "index": 221,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "65d8823cc8ee3a1d"
+      ]
+    },
+    {
+      "scene": "act2_route_receipt",
+      "primary": "Kerr",
+      "text": "You sorted somebody else's shelves for this. That's your time, not a favor I signed for.",
+      "context": "Kerr points at the steward's work slip. 'You sorted somebody else's shelves for this. That's your time, not a favor I signed for.'",
+      "index": 222,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "33da679fe8d49eef"
+      ]
+    },
+    {
+      "scene": "act3_kerr_collection",
+      "primary": "Kerr",
+      "text": "You sorted somebody else's shelves for this. That's your time, not a favor I signed for.",
+      "context": "Kerr points at the steward's work slip. 'You sorted somebody else's shelves for this. That's your time, not a favor I signed for.'",
+      "index": 223,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "0bcc25f094af08c4"
+      ]
+    },
+    {
+      "scene": "act3_nia_contact",
+      "primary": "Nia Pell",
+      "text": "If you have another question, leave it with the clinic. I decide whether to answer. Or let this be the last question for a while. I can choose that even if you helped me.",
+      "context": "\"If you have another question, leave it with the clinic. I decide whether to answer. Or let this be the last question for a while. I can choose that even if you helped me.\"",
+      "index": 224,
+      "decision": "voice",
+      "speaker": "Nia Pell",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "1c21d81222c1e78e"
+      ]
+    },
+    {
+      "scene": "act3_testimony_consent",
+      "primary": "Sera",
+      "text": "You agreed to pause questions. A hearing isn't an exception.",
+      "context": "Sera keeps Nia's approved recording closed. 'You agreed to pause questions. A hearing isn't an exception.' No new quotation request goes through the relay. Her existing account retains its previous terms; the other sources can carry this inquiry.",
+      "index": 225,
+      "decision": "voice",
+      "speaker": "Sera",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "cdaf037c8517f5b3"
+      ]
+    },
+    {
+      "scene": "act2_notice_recovery",
+      "primary": "Sister Lumen",
+      "text": "Try another channel, not the same answer louder,",
+      "context": "\"Try another channel, not the same answer louder,\" she says. You can fund a courier, publish only the public stop and clinic window, or leave the task unresolved.",
+      "index": 226,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "5b15cfd1486132c9"
+      ]
+    },
+    {
+      "scene": "act3_notice_visit",
+      "primary": "Sister Lumen",
+      "text": "A tower observer stood at the stop during the window. Three people asked for a different time. I know those calls happened; I do not know who stayed home.",
+      "context": "Lumen lays three callback slips beside the board copy. \"A tower observer stood at the stop during the window. Three people asked for a different time. I know those calls happened; I do not know who stayed home.\" The posted notice contained no home list.",
+      "index": 227,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "d557d1305b897bb4"
+      ]
+    },
+    {
+      "scene": "act3_notice_result",
+      "primary": "Sister Lumen",
+      "text": "This buys a way to answer them. I will not mark it as three new appointments.",
+      "context": "Lumen writes the relay booking under the callbacks. \"This buys a way to answer them. I will not mark it as three new appointments.\"",
+      "index": 228,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "bff928d210520bbf"
+      ]
+    },
+    {
+      "scene": "act3_notice_result",
+      "primary": "Sister Lumen",
+      "text": "The observer saw the old time. Taking down the paper cannot take that back.",
+      "context": "Lumen lifts the public window from the board. Its pinholes remain. \"The observer saw the old time. Taking down the paper cannot take that back.\"",
+      "index": 229,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "74a8395cc3fade9d"
+      ]
+    },
+    {
+      "scene": "act2_archive_custody",
+      "primary": "Edda",
+      "text": "They can find my shift from this. Taking my name off the public copy won't hide it from my employer.",
+      "context": "Edda keeps her signed extraction beside the ledger reference. ‘They can find my shift from this. Taking my name off the public copy won't hide it from my employer.’",
+      "index": 230,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "c101cb44e9dcbc8c"
+      ]
+    },
+    {
+      "scene": "act2_lumen_quiet",
+      "primary": "Sister Lumen",
+      "text": "Because somebody should know which cup they take their tea in. Even when the city has made a case file out of them.",
+      "context": "'Because somebody should know which cup they take their tea in. Even when the city has made a case file out of them.'",
+      "index": 231,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "d65f9cf43c1ad9fb"
+      ]
+    },
+    {
+      "scene": "act2_response_refusal",
+      "primary": "Mara",
+      "text": "A chair and a lamp are what I offered. You don't get to turn them into a signature.",
+      "context": "Lumen moves the clinic pad out of reach. 'A chair and a lamp are what I offered. You don't get to turn them into a signature.' Mara waits for you to answer her, too.",
+      "index": 232,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Explicit attribution reviewed against scene prose.",
+      "bindingKeys": [
+        "52e16a38664fab96"
+      ]
+    },
+    {
+      "scene": "act3_lumen_boundary",
+      "primary": "Sister Lumen",
+      "text": "The clinic stayed out of the endorsement. Keep the refusal with the rest.",
+      "context": "Lumen points to the pad she refused to sign. 'The clinic stayed out of the endorsement. Keep the refusal with the rest.'",
+      "index": 233,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "dbbb5a7de9f65c60"
+      ]
+    },
+    {
+      "scene": "act3_response_visit",
+      "primary": "Mara",
+      "text": "You didn't promise me a receipt,",
+      "context": "'You didn't promise me a receipt,' she says. 'I'll find another way to send it.'",
+      "index": 234,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "ec21ca7ee228b501"
+      ]
+    },
+    {
+      "scene": "act3_response_visit",
+      "primary": "Mara",
+      "text": "I'll find another way to send it.",
+      "context": "'You didn't promise me a receipt,' she says. 'I'll find another way to send it.'",
+      "index": 235,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "ed292abd495db00a"
+      ]
+    },
+    {
+      "scene": "act2_response_refusal",
+      "primary": "Mara",
+      "text": "Not the board. Not this week. I will answer the desk in my own name. I won't give you a crowd because you asked for one.",
+      "context": "Mara turns the envelope over. 'Not the board. Not this week. I will answer the desk in my own name. I won't give you a crowd because you asked for one.'",
+      "index": 236,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "76615c8963f7ceb2"
+      ]
+    },
+    {
+      "scene": "act3_mara_followup",
+      "primary": "Mara",
+      "text": "No board, and no dispatch yet. Leave both lines there.",
+      "context": "Mara keeps her refusal beside the unfinished proposal. 'No board, and no dispatch yet. Leave both lines there.'",
+      "index": 237,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "fabfe1b60af99b90"
+      ]
+    },
+    {
+      "scene": "act3_mara_followup",
+      "primary": "Mara",
+      "text": "Private meant private. I'm glad that sentence survived the journey.",
+      "context": "Mara keeps her refusal of the public board beside the new proposal. 'Private meant private. I'm glad that sentence survived the journey.'",
+      "index": 238,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "a6a020aa973d0a73"
+      ]
+    },
+    {
+      "scene": "act2_shelter_rooms",
+      "primary": "Sera",
+      "text": "We can use the hall annex if it has mattresses and Dad can use the ramp,",
+      "context": "‘We can use the hall annex if it has mattresses and Dad can use the ramp,’ Ren says. Sera asks again before reserving anything.",
+      "index": 239,
+      "decision": "voice",
+      "speaker": "Ren",
+      "reason": "Explicit attribution reviewed against scene prose.",
+      "bindingKeys": [
+        "84b90fcbc5bd25ff"
+      ]
+    },
+    {
+      "scene": "act3_shelter_visit",
+      "primary": "Sera",
+      "text": "You didn't see where they slept. Don't make that a story of abandonment.",
+      "context": "Sera has no arrival count to show you. ‘You didn't see where they slept. Don't make that a story of abandonment.’",
+      "index": 240,
+      "decision": "voice",
+      "speaker": "Sera",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "b8e987204642f837"
+      ]
+    },
+    {
+      "scene": "act3_shelter_visit",
+      "primary": "Sera",
+      "text": "We slept upstairs. The floor was dry. Everything we packed still smells of coolant.",
+      "context": "Ren returns the kettle. ‘We slept upstairs. The floor was dry. Everything we packed still smells of coolant.’",
+      "index": 241,
+      "decision": "voice",
+      "speaker": "Ren",
+      "reason": "Explicit attribution reviewed against scene prose.",
+      "bindingKeys": [
+        "034d1880f3d2e2ee"
+      ]
+    },
+    {
+      "scene": "act3_edda_reply",
+      "primary": "Edda",
+      "text": "Tell Sera what arrived. Leave room for what hasn't.",
+      "context": "Edda keeps the application reference beside the suspension notice. 'Tell Sera what arrived. Leave room for what hasn't.'",
+      "index": 242,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "ea7f1a10e8da790f"
+      ]
+    },
+    {
+      "scene": "act3_spire_visit",
+      "primary": "Edda",
+      "text": "You didn't take this on. I haven't brought you a closure receipt.",
+      "context": "Edda has the folded slip you left with her. ‘You didn't take this on. I haven't brought you a closure receipt.’",
+      "index": 243,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "9ec1133b9cee26e4"
+      ]
+    },
+    {
+      "scene": "act2_spire_recovery",
+      "primary": "Edda",
+      "text": "We can close the key. We can’t make that query disappear.",
+      "context": "The terminal has your badge number. Edda puts its rejection beside the signed request. ‘We can close the key. We can’t make that query disappear.’",
+      "index": 244,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "4065015bd21bdad5"
+      ]
+    },
+    {
+      "scene": "act3_spire_visit",
+      "primary": "Edda",
+      "text": "They accepted the request. They haven't closed the key. Will you sit while I ask payroll?",
+      "context": "Edda lays down her queue ticket. ‘They accepted the request. They haven't closed the key. Will you sit while I ask payroll?’",
+      "index": 245,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "8adaab25e6080f48"
+      ]
+    },
+    {
+      "scene": "act3_spire_visit",
+      "primary": "Edda",
+      "text": "That part didn't go away.",
+      "context": "She keeps the old-badge query beside the slip. ‘That part didn't go away.’",
+      "index": 246,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "c92b1b7278b98f5a"
+      ]
+    },
+    {
+      "scene": "act3_spire_reply",
+      "primary": "Edda",
+      "text": "Late is still useful,",
+      "context": "‘Late is still useful,’ Edda says. ‘Don’t date it last week.’ She keeps the receiver: tonight’s confirmation cannot create an earlier clean handover. Her signed receipt can support a separate private work application if she authorizes one.",
+      "index": 247,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "bfa26accb3441038"
+      ]
+    },
+    {
+      "scene": "act3_spire_reply",
+      "primary": "Edda",
+      "text": "Don’t date it last week.",
+      "context": "‘Late is still useful,’ Edda says. ‘Don’t date it last week.’ She keeps the receiver: tonight’s confirmation cannot create an earlier clean handover. Her signed receipt can support a separate private work application if she authorizes one.",
+      "index": 248,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "823cc5617c1bb56c"
+      ]
+    },
+    {
+      "scene": "act2_spire_recovery",
+      "primary": "Edda",
+      "text": "The staffed desk is slower. You don’t need to wake that thing to ask.",
+      "context": "Edda covers the badge reader and takes a queue ticket. ‘The staffed desk is slower. You don’t need to wake that thing to ask.’",
+      "index": 249,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "29b9d26adce3be07"
+      ]
+    },
+    {
+      "scene": "act2_spire_receipt",
+      "primary": "Edda",
+      "text": "They have your badge. I’m not adding this serial number to the same trail.",
+      "context": "She leaves the receiver in its sleeve. ‘They have your badge. I’m not adding this serial number to the same trail.’ The logged query survives the closure.",
+      "index": 250,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "e2665772cf8f0bfb"
+      ]
+    },
+    {
+      "scene": "lumen",
+      "primary": "Sister Lumen",
+      "text": "The service window closed. Their eyes didn't.",
+      "context": "Lumen recognizes the visitor watch from the staffed stair. 'The service window closed. Their eyes didn't.'",
+      "index": 251,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "1078252f3890a040"
+      ]
+    },
+    {
+      "scene": "act3_witness_visit",
+      "primary": "Nia Pell",
+      "text": "They know the room. Don't tell the wall I was protected because you still have my words.",
+      "context": "Nia agrees to a call through Lumen. 'They know the room. Don't tell the wall I was protected because you still have my words.'",
+      "index": 252,
+      "decision": "voice",
+      "speaker": "Nia Pell",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "98b197974b611a6c"
+      ]
+    },
+    {
+      "scene": "stall",
+      "primary": "Quill",
+      "text": "Runner. Mara Voss, Helion logistics. Glass Chapel edits her memory at dawn. Bring me the original hour, intact. Fifty now, two hundred on delivery. Her bodyguard is Kerr. He is paid to stop you.",
+      "context": "Quill moves his bowl aside. \"Runner. Mara Voss, Helion logistics. Glass Chapel edits her memory at dawn. Bring me the original hour, intact. Fifty now, two hundred on delivery. Her bodyguard is Kerr. He is paid to stop you.\"",
+      "index": 253,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "9dcfc8554bfcc3ef",
+        "f179af9169c4b07f"
+      ]
+    },
+    {
+      "scene": "why",
+      "primary": "Quill",
+      "text": "Because Kerr knows my face from a year I would rather sell than tell. Mara's bodyguard. Helion pays him to keep her hour in the chair room. He does not know your face yet.",
+      "context": "\"Because Kerr knows my face from a year I would rather sell than tell. Mara's bodyguard. Helion pays him to keep her hour in the chair room. He does not know your face yet.\"",
+      "index": 254,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "b87a739318e6d361"
+      ]
+    },
+    {
+      "scene": "why",
+      "primary": "Quill",
+      "text": "A quiet door gives you time. A loud one brings him. If he finds you, getting out matters more than getting paid.",
+      "context": "Quill pushes the bowl away. \"A quiet door gives you time. A loud one brings him. If he finds you, getting out matters more than getting paid.\"",
+      "index": 255,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "6b63e4c704cadc5e"
+      ]
+    },
+    {
+      "scene": "pay",
+      "primary": "Quill",
+      "text": "Ninety now. Two hundred when I can hold the shard up to a light and see a whole hour in it. We are done negotiating.",
+      "context": "\"Ninety now. Two hundred when I can hold the shard up to a light and see a whole hour in it. We are done negotiating.\"",
+      "index": 256,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "38a2fe8b758dd969"
+      ]
+    },
+    {
+      "scene": "front",
+      "primary": "Orderly",
+      "text": "Penitent? Appointment chip. Hands where the basin can see them. If you are here to sell us organs, we already have a guy.",
+      "context": "\"Penitent? Appointment chip. Hands where the basin can see them. If you are here to sell us organs, we already have a guy.\"",
+      "index": 257,
+      "decision": "voice",
+      "speaker": "Orderly",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "5d93592945aeea54"
+      ]
+    },
+    {
+      "scene": "districts",
+      "primary": null,
+      "text": "Pass still scans,",
+      "context": "\nThe orderly from the basin is under the board, gold tooth, no coat. \"Pass still scans,\" he says, and does not ask what you did with the hour.",
+      "index": 258,
+      "decision": "voice",
+      "speaker": "Orderly",
+      "reason": "Explicit attribution reviewed against scene prose.",
+      "bindingKeys": [
+        "60bf8fed499741d7"
+      ]
+    },
+    {
+      "scene": "lumen_cold",
+      "primary": "Sister Lumen",
+      "text": "Then work.",
+      "context": "\"Then work.\" She steps aside. The optic stays on you until the stair bends.",
+      "index": 259,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "68071071d2cfc760"
+      ]
+    },
+    {
+      "scene": "lumen_cold",
+      "primary": "Sister Lumen",
+      "text": "Try not to bleed on the penitent tile. We just had it blessed.",
+      "context": "\"Try not to bleed on the penitent tile. We just had it blessed.\"",
+      "index": 260,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "93f88afd09d1c76e"
+      ]
+    },
+    {
+      "scene": "ending_walk",
+      "primary": null,
+      "text": "Keep the advance,",
+      "context": "You come back with rain and no glass worth selling. \"Keep the advance,\" Quill says. \"Lose my name for a while.\"",
+      "index": 261,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Explicit attribution reviewed against scene prose.",
+      "bindingKeys": [
+        "2acf93c83f0fedc5"
+      ]
+    },
+    {
+      "scene": "ending_walk",
+      "primary": null,
+      "text": "Lose my name for a while.",
+      "context": "You come back with rain and no glass worth selling. \"Keep the advance,\" Quill says. \"Lose my name for a while.\"",
+      "index": 262,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Explicit attribution reviewed against scene prose.",
+      "bindingKeys": [
+        "3f601bce524623e1"
+      ]
+    },
+    {
+      "scene": "act3_spire_visit",
+      "primary": "Edda",
+      "text": "No wage receipt today,",
+      "context": "‘No wage receipt today,’ she says. ‘Just what payroll did with the number.’",
+      "index": 263,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "5d8d1001ab5eb1e2"
+      ]
+    },
+    {
+      "scene": "act3_spire_visit",
+      "primary": "Edda",
+      "text": "Just what payroll did with the number.",
+      "context": "‘No wage receipt today,’ she says. ‘Just what payroll did with the number.’",
+      "index": 264,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "e6efa40f3018dbdd"
+      ]
+    },
+    {
+      "scene": "pay",
+      "primary": "Quill",
+      "text": "Fifty. You already asked. I already didn't. The rain is free if you want a longer conversation.",
+      "context": "\"Fifty. You already asked. I already didn't. The rain is free if you want a longer conversation.\"",
+      "index": 265,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "77029f2e04203499"
+      ]
+    },
+    {
+      "scene": "lumen_cold",
+      "primary": "Sister Lumen",
+      "text": "Kerr likes liars. The chair room is up the stair. So is he, in a moment.",
+      "context": "\"Kerr likes liars. The chair room is up the stair. So is he, in a moment.\"",
+      "index": 266,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "60fde64dd5e5e359"
+      ]
+    },
+    {
+      "scene": "memory_challenge",
+      "primary": "Mara",
+      "text": "That is mine. I signed it. Don't make the tower's next decision erase the one I made.",
+      "context": "In the recording, Mara puts a finger under her signature. \"That is mine. I signed it. Don't make the tower's next decision erase the one I made.\"",
+      "index": 267,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "d8dd71470f924811"
+      ]
+    },
+    {
+      "scene": "act2_folio",
+      "primary": "Ives",
+      "text": "Helion can pay forty for a week of quiet,",
+      "context": "\"Helion can pay forty for a week of quiet,\" they say. \"Or you can try to close this in the street, where we are already writing.\"",
+      "index": 268,
+      "decision": "voice",
+      "speaker": "Ives",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "3b3e9f7ab0164c6f"
+      ]
+    },
+    {
+      "scene": "act2_folio",
+      "primary": "Ives",
+      "text": "Or you can try to close this in the street, where we are already writing.",
+      "context": "\"Helion can pay forty for a week of quiet,\" they say. \"Or you can try to close this in the street, where we are already writing.\"",
+      "index": 269,
+      "decision": "voice",
+      "speaker": "Ives",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "81ac9d4b28507db9"
+      ]
+    },
+    {
+      "scene": "act2_lumen_door",
+      "primary": "Sister Lumen",
+      "text": "Runner,",
+      "context": "\"Runner,\" she says, before the coat, before the habit. \"I already decided you were a person.\"",
+      "index": 270,
+      "decision": "text",
+      "reason": "Player-custom address remains readable; fixed subsequent dialogue is voiced."
+    },
+    {
+      "scene": "act2_kerr",
+      "primary": "Kerr",
+      "text": "I did my job,",
+      "context": "\"I did my job,\" he says. \"You did not do yours. The knee still wants a conversation, and I am the only one who will have it without a memo.\"",
+      "index": 271,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "2fcf3c2d57a485fe"
+      ]
+    },
+    {
+      "scene": "act2_kerr",
+      "primary": "Kerr",
+      "text": "You did not do yours. The knee still wants a conversation, and I am the only one who will have it without a memo.",
+      "context": "\"I did my job,\" he says. \"You did not do yours. The knee still wants a conversation, and I am the only one who will have it without a memo.\"",
+      "index": 272,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "019350dd660d7fa4"
+      ]
+    },
+    {
+      "scene": "ending_sainted",
+      "primary": null,
+      "text": "Ada",
+      "context": "The orderly says \"Ada\" the way a person reads a chart. You answer to it. Answering is easy. It is the one part they left fully installed.",
+      "index": 273,
+      "decision": "text",
+      "reason": "Player-custom name remains readable; no player-text synthesis."
+    },
+    {
+      "scene": "act3_chapel_return",
+      "primary": "Sister Lumen",
+      "text": "You held it open with your hands. Maintenance will notice that.",
+      "context": "Lumen tests the strained latch. 'You held it open with your hands. Maintenance will notice that.'",
+      "index": 274,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "a126e5b476dfa9de"
+      ]
+    },
+    {
+      "scene": "vault_quiet",
+      "primary": "Mara",
+      "text": "Break it after. I want to see the light go out.",
+      "context": "Lumen puts two fingers on the plinth. \"Break it after. I want to see the light go out.\"",
+      "index": 275,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Explicit attribution reviewed against scene prose.",
+      "bindingKeys": [
+        "f1ddeebf6cd8ab4f"
+      ]
+    },
+    {
+      "scene": "act2_heat",
+      "primary": "Kerr",
+      "text": "You can still stand in the street,",
+      "context": "\"You can still stand in the street,\" he says. \"They will already be listening. Or you take what is left of the quiet money. It is not eighty. It is what they pay for a confession they already own.\"",
+      "index": 276,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "febc9187671499a2"
+      ]
+    },
+    {
+      "scene": "act2_heat",
+      "primary": "Kerr",
+      "text": "They will already be listening. Or you take what is left of the quiet money. It is not eighty. It is what they pay for a confession they already own.",
+      "context": "\"You can still stand in the street,\" he says. \"They will already be listening. Or you take what is left of the quiet money. It is not eighty. It is what they pay for a confession they already own.\"",
+      "index": 277,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "50c79c1c05421fb5"
+      ]
+    },
+    {
+      "scene": "hatch_caught",
+      "primary": null,
+      "text": "This vein is hot,",
+      "context": "\"This vein is hot,\" the mask says. \"You are not on the hot list.\"",
+      "index": 278,
+      "decision": "voice",
+      "speaker": "Masked attendant",
+      "reason": "Explicit attribution reviewed against scene prose.",
+      "bindingKeys": [
+        "5455607f64bf3352"
+      ]
+    },
+    {
+      "scene": "hatch_caught",
+      "primary": null,
+      "text": "You are not on the hot list.",
+      "context": "\"This vein is hot,\" the mask says. \"You are not on the hot list.\"",
+      "index": 279,
+      "decision": "voice",
+      "speaker": "Masked attendant",
+      "reason": "Explicit attribution reviewed against scene prose.",
+      "bindingKeys": [
+        "864e53a2ace04d53"
+      ]
+    },
+    {
+      "scene": "act3_chapel_return",
+      "primary": "Sister Lumen",
+      "text": "There is no departure on that plan. Don't give it an ending it hasn't earned.",
+      "context": "'There is no departure on that plan. Don't give it an ending it hasn't earned.'",
+      "index": 280,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "df6aa3f25fd79958"
+      ]
+    },
+    {
+      "scene": "act3_chapel_return",
+      "primary": "Sister Lumen",
+      "text": "You sold my week. Coming back to this desk doesn't unsell it.",
+      "context": "She leaves your marker under the docket. 'You sold my week. Coming back to this desk doesn't unsell it.'",
+      "index": 281,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "61877e4169421f63"
+      ]
+    },
+    {
+      "scene": "act2_helion",
+      "primary": "Ives",
+      "text": "There are two fires,",
+      "context": "\"There are two fires,\" Ives says, pleased with the phrase. \"We bought one. We would like the other to stop being a rumor.\"",
+      "index": 282,
+      "decision": "voice",
+      "speaker": "Ives",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "c4ed798164abf90c"
+      ]
+    },
+    {
+      "scene": "act2_helion",
+      "primary": "Ives",
+      "text": "We bought one. We would like the other to stop being a rumor.",
+      "context": "\"There are two fires,\" Ives says, pleased with the phrase. \"We bought one. We would like the other to stop being a rumor.\"",
+      "index": 283,
+      "decision": "voice",
+      "speaker": "Ives",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "96f4a45388e80211"
+      ]
+    },
+    {
+      "scene": "act2_helion",
+      "primary": "Ives",
+      "text": "You sold us a damaged hour,",
+      "context": "\"You sold us a damaged hour,\" Ives says. \"We would like the name of whoever fried the rest.\"",
+      "index": 284,
+      "decision": "voice",
+      "speaker": "Ives",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "d06bf20b8c46fcf7"
+      ]
+    },
+    {
+      "scene": "act2_helion",
+      "primary": "Ives",
+      "text": "We would like the name of whoever fried the rest.",
+      "context": "\"You sold us a damaged hour,\" Ives says. \"We would like the name of whoever fried the rest.\"",
+      "index": 285,
+      "decision": "voice",
+      "speaker": "Ives",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "011db10806de3a54"
+      ]
+    },
+    {
+      "scene": "lumen_cold",
+      "primary": "Sister Lumen",
+      "text": "Walk in blind, then. The chair does not care about your reasons, and I am done spending mine on you.",
+      "context": "\"Walk in blind, then. The chair does not care about your reasons, and I am done spending mine on you.\"",
+      "index": 286,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "755a1fb29382650f"
+      ]
+    },
+    {
+      "scene": "act2_kerr",
+      "primary": "Kerr",
+      "text": "They kept the reason you walked in,",
+      "context": "\"They kept the reason you walked in,\" he says. The knee is worse. \"I kept you. That was not the contract. The contract is the part where you tell me what the shard was worth, and then you pay me for the week I spent not letting the chair finish.\"",
+      "index": 287,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "3b67c2293172f632"
+      ]
+    },
+    {
+      "scene": "act2_kerr",
+      "primary": "Kerr",
+      "text": "I kept you. That was not the contract. The contract is the part where you tell me what the shard was worth, and then you pay me for the week I spent not letting the chair finish.",
+      "context": "\"They kept the reason you walked in,\" he says. The knee is worse. \"I kept you. That was not the contract. The contract is the part where you tell me what the shard was worth, and then you pay me for the week I spent not letting the chair finish.\"",
+      "index": 288,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "04aad5ed14b43386"
+      ]
+    },
+    {
+      "scene": "act3_lumen_boundary",
+      "primary": "Sister Lumen",
+      "text": "You sold the week after walking with me. Helping with this reply doesn't make that disappear. Leave future messages at the desk; don't speak as my partner.",
+      "context": "'You sold the week after walking with me. Helping with this reply doesn't make that disappear. Leave future messages at the desk; don't speak as my partner.'",
+      "index": 289,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "72081d92023d1f93"
+      ]
+    },
+    {
+      "scene": "act2_helion",
+      "primary": "Ives",
+      "text": "The hour reached us,",
+      "context": "\"The hour reached us,\" Ives says. \"Helion likes a complete file. You are the incomplete part.\"",
+      "index": 290,
+      "decision": "voice",
+      "speaker": "Ives",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "aa2048b133ab659b"
+      ]
+    },
+    {
+      "scene": "act2_helion",
+      "primary": "Ives",
+      "text": "Helion likes a complete file. You are the incomplete part.",
+      "context": "\"The hour reached us,\" Ives says. \"Helion likes a complete file. You are the incomplete part.\"",
+      "index": 291,
+      "decision": "voice",
+      "speaker": "Ives",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "c50113187789f60e"
+      ]
+    },
+    {
+      "scene": "act2_quill_introduction",
+      "primary": "Quill",
+      "text": "This is an introduction, not another invoice.",
+      "context": "Quill moves your paid tab away from the depot paper. 'This is an introduction, not another invoice.'",
+      "index": 292,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "07186442b2ba4fd3"
+      ]
+    },
+    {
+      "scene": "act3_chapel_return",
+      "primary": "Sister Lumen",
+      "text": "You isolated it. The maintenance fault is on their log, even if your name isn't.",
+      "context": "Lumen glances at the dead service reader. 'You isolated it. The maintenance fault is on their log, even if your name isn't.'",
+      "index": 293,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "1b31410bc6a31bc7"
+      ]
+    },
+    {
+      "scene": "act3_chapel_return",
+      "primary": "Sister Lumen",
+      "text": "They kept the tool fee, not your promise. You owe no shift for a bargain they refused.",
+      "context": "The rejected work slip stays on the desk. 'They kept the tool fee, not your promise. You owe no shift for a bargain they refused.'",
+      "index": 294,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "d8f3af625aa8f9fd"
+      ]
+    },
+    {
+      "scene": "act3_chapel_return",
+      "primary": "Sister Lumen",
+      "text": "You came back for the shift. The docket stays; the work is done.",
+      "context": "Lumen closes the work slip. 'You came back for the shift. The docket stays; the work is done.'",
+      "index": 295,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "d116c892d2352cf3"
+      ]
+    },
+    {
+      "scene": "act3_quill_introduction",
+      "primary": "Quill",
+      "text": "You took my introduction and used another way through. A recommendation can go unused. It doesn't become a delivery receipt.",
+      "context": "'You took my introduction and used another way through. A recommendation can go unused. It doesn't become a delivery receipt.'",
+      "index": 296,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "3c6ee619eb595de3"
+      ]
+    },
+    {
+      "scene": "ending_sold",
+      "primary": null,
+      "text": "I will remember for both of us.",
+      "context": "Lumen's message finds you before dawn. No threat. Just your name, and the words \"I will remember for both of us.\"",
+      "index": 297,
+      "decision": "text",
+      "reason": "Written message; not spoken."
+    },
+    {
+      "scene": "act3_chapel_return",
+      "primary": "Sister Lumen",
+      "text": "The service window closed. Their eyes didn't.",
+      "context": "Lumen recognizes the visitor watch from the staffed stair. 'The service window closed. Their eyes didn't.'",
+      "index": 298,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "4e6be3c2504bcc70"
+      ]
+    },
+    {
+      "scene": "act3_chapel_return",
+      "primary": "Sister Lumen",
+      "text": "The service window ended outside. You found another door; the patrol still noticed.",
+      "context": "'The service window ended outside. You found another door; the patrol still noticed.'",
+      "index": 299,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "6793746719910996"
+      ]
+    },
+    {
+      "scene": "act3_lumen_boundary",
+      "primary": "Sister Lumen",
+      "text": "You promised to break the hour and sold it instead. This envelope is a different act. Future messages stay at the desk; don't call me your partner.",
+      "context": "'You promised to break the hour and sold it instead. This envelope is a different act. Future messages stay at the desk; don't call me your partner.'",
+      "index": 300,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "73f460be20525140"
+      ]
+    },
+    {
+      "scene": "stall",
+      "primary": "Quill",
+      "text": "Runner. Mara Voss, Helion logistics. Glass Chapel edits her memory at dawn. Bring me the original hour, intact. Ninety now, two hundred on delivery. Her bodyguard is Kerr. He is paid to stop you.",
+      "context": "Quill moves his bowl aside. \"Runner. Mara Voss, Helion logistics. Glass Chapel edits her memory at dawn. Bring me the original hour, intact. Ninety now, two hundred on delivery. Her bodyguard is Kerr. He is paid to stop you.\"",
+      "index": 301,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "f6884742cd35b170",
+        "f03a9cdc18e54645"
+      ]
+    },
+    {
+      "scene": "act3_testimony_nia",
+      "primary": "Nia Pell",
+      "text": "This one answer doesn't reopen contact. Leave the pause in place.",
+      "context": "Nia has chosen to answer this request through Sera despite the earlier pause. 'This one answer doesn't reopen contact. Leave the pause in place.'",
+      "index": 302,
+      "decision": "voice",
+      "speaker": "Nia Pell",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "76f40e8e38759df6"
+      ]
+    },
+    {
+      "scene": "act2_pump_methods",
+      "primary": "Kerr",
+      "text": "You have no reason to want me behind you.",
+      "context": "Kerr leaves the gate key on a hook. 'You have no reason to want me behind you.' He steps out of the room.",
+      "index": 303,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "5f01c1c1fcb2529b"
+      ]
+    },
+    {
+      "scene": "act2_public_response",
+      "primary": "Sera",
+      "text": "You tested this sentence: The later cancellation erases Mara's authorization. What should we do with the verdict you kept?",
+      "context": "Sera lays your bench verdict beside Lumen's challenge. \"You tested this sentence: The later cancellation erases Mara's authorization. What should we do with the verdict you kept?\"",
+      "index": 304,
+      "decision": "voice",
+      "speaker": "Sera",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "cd5f00b45269454b"
+      ]
+    },
+    {
+      "scene": "act2_public_response",
+      "primary": "Sera",
+      "text": "You tested this sentence: Mara's authorization and the later evacuation cancellation are separate recorded decisions. What should we do with the verdict you kept?",
+      "context": "Sera lays your bench verdict beside Lumen's challenge. \"You tested this sentence: Mara's authorization and the later evacuation cancellation are separate recorded decisions. What should we do with the verdict you kept?\"",
+      "index": 305,
+      "decision": "voice",
+      "speaker": "Sera",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "0fc105c8b63f0d14"
+      ]
+    },
+    {
+      "scene": "act3_witness_visit",
+      "primary": "Nia Pell",
+      "text": "You offered your own shift. Don't turn that into something I owe you.",
+      "context": "Nia remembers the volunteer walking beside her chair. 'You offered your own shift. Don't turn that into something I owe you.'",
+      "index": 306,
+      "decision": "voice",
+      "speaker": "Nia Pell",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "82eee01109b3032b"
+      ]
+    },
+    {
+      "scene": "act3_kerr_collection",
+      "primary": "Kerr",
+      "text": "That stays on my side of the page.",
+      "context": "You remind him that he sold your account. ‘That stays on my side of the page.’ His request does not cancel the betrayal.",
+      "index": 307,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "e8821a54db2193e5"
+      ]
+    },
+    {
+      "scene": "act3_quill_introduction",
+      "primary": "Quill",
+      "text": "You paid what you had postponed. That settles the forty, not the rest of your night.",
+      "context": "'You paid what you had postponed. That settles the forty, not the rest of your night.'",
+      "index": 308,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "a51d922459908727"
+      ]
+    },
+    {
+      "scene": "act3_quill_introduction",
+      "primary": "Quill",
+      "text": "My letter wasn't a promise that the gate would forget. That part was yours to keep.",
+      "context": "He reads the recipient docket. 'My letter wasn't a promise that the gate would forget. That part was yours to keep.'",
+      "index": 309,
+      "decision": "voice",
+      "speaker": "Quill",
+      "reason": "Spoken character dialogue.",
+      "bindingKeys": [
+        "5f2a332008700ac5"
+      ]
+    }
+  ]
+}

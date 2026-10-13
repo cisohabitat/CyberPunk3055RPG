@@ -1,0 +1,62 @@
+{
+  "Mara": {
+    "voice": "af_sarah",
+    "speed": 0.96
+  },
+  "Sister Lumen": {
+    "voice": "af_heart",
+    "speed": 0.93
+  },
+  "Kerr": {
+    "voice": "am_adam",
+    "speed": 0.97
+  },
+  "Quill": {
+    "voice": "am_michael",
+    "speed": 0.96
+  },
+  "Sera": {
+    "voice": "af_bella",
+    "speed": 0.95
+  },
+  "Ives": {
+    "voice": "am_eric",
+    "speed": 0.98
+  },
+  "Nia Pell": {
+    "voice": "af_nova",
+    "speed": 0.96
+  },
+  "Edda": {
+    "voice": "af_kore",
+    "speed": 0.95
+  },
+  "Asa": {
+    "voice": "af_alloy",
+    "speed": 0.98
+  },
+  "Stallholder": {
+    "voice": "af_sky",
+    "speed": 0.96
+  },
+  "Ren": {
+    "voice": "am_echo",
+    "speed": 0.97
+  },
+  "Orderly": {
+    "voice": "am_puck",
+    "speed": 0.98
+  },
+  "Dispatcher": {
+    "voice": "af_river",
+    "speed": 0.98
+  },
+  "Mechanic": {
+    "voice": "am_fenrir",
+    "speed": 0.98
+  },
+  "Masked attendant": {
+    "voice": "am_onyx",
+    "speed": 0.97
+  }
+}

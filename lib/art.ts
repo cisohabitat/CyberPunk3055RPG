@@ -1,3 +1,5 @@
+import campaignArt from "../qa/media/campaign-art-bindings.json";
+
 const PLACES: { test: (location: string) => boolean; src: string }[] = [
   { test: (location) => /shelter/.test(location), src: "/art/shelter.jpg" },
   { test: (location) => /memory|fragment/.test(location), src: "/art/memory-bench.jpg" },
@@ -134,3 +136,8 @@ for (const id of ["act2_witness_brief", "act2_witness_support"]) ENCOUNTERS[id] 
 for (const id of ["act2_recovery"]) ENCOUNTERS[id] = {"src": "/art/ordinary-rest.jpg", "small": "/art/ordinary-rest-small.jpg", "caption": "Glass Chapel · an ordinary seat", "description": "A plain wooden chair and folded blanket wait beside a water glass and a rain-streaked clinic window, with no memory apparatus or restraints."};
 for (const id of ["act2_response_refusal", "act2_response_terms", "act2_response_dispatch", "act2_response_receipt"]) ENCOUNTERS[id] = {"src": "/art/private-reply.jpg", "small": "/art/private-reply-small.jpg", "caption": "Ward Four · the private reply table", "description": "A plain envelope, closed pen, unmarked cover papers and chipped cup sit on a small clinic writing table beside an empty chair."};
 for (const id of ["ward_wall", "act3_arrival"]) ENCOUNTERS[id] = {"src": "/art/memorial-stair.jpg", "small": "/art/memorial-stair-small.jpg", "caption": "Ward Nine · the weathered names", "description": "Indistinct engraved rows cover a rain-worn memorial wall above a wet stair; a closed private ledger and spare capped writing tool rest on a sheltered ledge."};
+
+// The reviewed campaign catalog enumerates ids; future scenes need a new decision.
+for (const plate of campaignArt.plates) for (const id of plate.scenes) {
+  ENCOUNTERS[id] = { src: plate.src, small: plate.small, caption: plate.caption, description: plate.description };
+}
