@@ -5,8 +5,9 @@ import type { DialogueLine } from "@/lib/memory-media";
 import type { CampaignDialogue } from "@/lib/campaign-dialogue";
 import { DialoguePlayback } from "@/lib/dialogue-playback";
 
-export function VoiceLine({ line, lines, enabled, automatic, paused = false }: {
+export function VoiceLine({ line, lines, enabled, automatic, paused = false, onSpeaking }: {
   line?: DialogueLine; lines: CampaignDialogue[]; enabled: boolean; automatic: boolean; paused?: boolean;
+  onSpeaking?: (line: CampaignDialogue | null) => void;
 }) {
   const [view, setView] = useState<{ status: VoiceStatus; key?: string }>({ status: "idle" });
   const selectId = useId();
@@ -21,6 +22,9 @@ export function VoiceLine({ line, lines, enabled, automatic, paused = false }: {
   }, [queueKey, enabled, automatic, preferred]);
   useEffect(() => () => playback.current?.dispose(), []);
   const selected = lines.find(candidate => candidate.key === view.key) ?? lines.find(candidate => candidate.key === preferred) ?? lines[0];
+  const speaking = enabled && view.status === "playing" ? selected : undefined;
+  useEffect(() => { onSpeaking?.(speaking ?? null); }, [onSpeaking, speaking]);
+  useEffect(() => () => onSpeaking?.(null), [onSpeaking]);
   if (!selected) return null;
   const active = view.status === "loading" || view.status === "playing";
   const name = selected.speaker === "Sister Lumen" ? "Lumen" : selected.speaker;

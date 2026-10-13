@@ -87,6 +87,9 @@ export const PORTRAIT_ART: Record<string, string> = {
   Quill: "/art/quill.jpg", Orderly: "/art/orderly.jpg", "Sister Lumen": "/art/lumen.jpg",
   Kerr: "/art/kerr.jpg", Mara: "/art/mara.jpg", Ives: "/art/ives.jpg", Sera: "/art/sera.jpg",
   "Nia Pell": "/art/nia.jpg", Edda: "/art/edda.jpg", Asa: "/art/asa.jpg",
+  Ren: "/art/ren-portrait.jpg", Stallholder: "/art/stallholder-portrait.jpg",
+  Dispatcher: "/art/dispatcher-portrait.jpg", Mechanic: "/art/mechanic-portrait.jpg",
+  "Masked attendant": "/art/masked-attendant-portrait.jpg",
 };
 
 export const SOURCE_ART: Record<string, Illustration> = {

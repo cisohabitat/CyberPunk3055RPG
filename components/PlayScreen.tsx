@@ -25,7 +25,8 @@ import { MemoryPlate } from "./MemoryPlate";
 import { RouteBoard } from "./RouteBoard";
 import { VoiceLine } from "./VoiceLine";
 import { memoryInteractionCue, visibleDialogue } from "@/lib/memory-media";
-import { visibleCampaignDialogue } from "@/lib/campaign-dialogue";
+import { visibleCampaignDialogue, spokenDialogueRange, type CampaignDialogue } from "@/lib/campaign-dialogue";
+import { SpokenText } from "./SpokenText";
 import { FieldKitBrief } from "./FieldKitBrief";
 import { TestimonyBrief } from "./TestimonyBrief";
 import { ArchiveBrief } from "./ArchiveBrief";
@@ -83,6 +84,7 @@ export function PlayScreen({
   const [delta, setDelta] = useState<string[]>([]);
   const [flash, setFlash] = useState(false);
   const [shown, setShown] = useState<{ sceneId: string; prose: string; count: number } | null>(null);
+  const [speaking, setSpeaking] = useState<CampaignDialogue | null>(null);
   const [reduceMotion, setReduceMotion] = useState(false);
   const prior = useRef(state);
   const readingFocus = useRef<{ sceneId: string; index: number } | null>(null);
@@ -90,10 +92,16 @@ export function PlayScreen({
   const prose = sceneText(scene, state);
   const paragraphs = prose.split(/\n\n+/).filter((paragraph) => paragraph.length > 0);
   const visibleCount = preferences.reading === "all" ? paragraphs.length : Math.min(shown?.sceneId === scene.id && shown.prose === prose ? shown.count : 1, paragraphs.length);
-  const dialogue = visibleDialogue(scene.id, scene.speaker, paragraphs.slice(0, visibleCount).join("\n\n"));
-  const dialogueQueue = visibleCampaignDialogue(scene.id, scene.speaker, paragraphs.slice(0, visibleCount).join("\n\n"));
+  const visibleText = paragraphs.slice(0, visibleCount).join("\n\n");
+  const dialogue = visibleDialogue(scene.id, scene.speaker, visibleText);
+  const dialogueQueue = visibleCampaignDialogue(scene.id, scene.speaker, visibleText);
   const recordedChoice = state.pendingCheck ? choices.find((choice) => choice.id === state.pendingCheck?.choiceId) : null;
   const activeChoice = recordedChoice ?? pending;
+  const voicesEnabled = sound && preferences.voices > 0 && !modalOpen && !sheetOpen && !notebookOpen && !confirmAbandon && !activeChoice;
+  const playing = voicesEnabled && speaking?.scene === scene.id && dialogueQueue.some(line => line.key === speaking.key) ? speaking : null;
+  const spokenRange = playing ? spokenDialogueRange(visibleText, playing) : undefined;
+  let paragraphOffset = 0;
+  const visibleParagraphs = paragraphs.slice(0, visibleCount).map(text => { const offset = paragraphOffset; paragraphOffset += text.length + 2; return { text, offset }; });
   const unavailableChoices = choices.filter((choice) => !choice.enabled);
 
   useEffect(() => {
@@ -258,7 +266,7 @@ export function PlayScreen({
             style={{ backgroundImage: preferences.artwork === "none" || illustration ? undefined : `linear-gradient(180deg, rgba(9,8,13,0.72), rgba(9,8,13,0.94)), url(${placeArt(scene.location)})` }}
           >
             <div className="scene-row">
-              <Portrait speaker={scene.speaker} sceneId={scene.id} flags={state.flags} origin={state.origin} handle={state.handle} artwork={preferences.artwork !== "none"} />
+              <Portrait speaker={playing?.speaker ?? scene.speaker} speaking={Boolean(playing)} sceneId={scene.id} flags={state.flags} origin={state.origin} handle={state.handle} artwork={preferences.artwork !== "none"} />
               <div>
                 <p className="kicker">
                   {scene.location}
@@ -285,6 +293,7 @@ export function PlayScreen({
                 )}
                 {scene.speaker && (
                   <p className="speaker">
+                    {dialogueQueue.some(line => line.speaker !== scene.speaker) ? "With " : ""}
                     {scene.speaker}
                     {speakerRole(scene.speaker) ? ` · ${speakerRole(scene.speaker)}` : ""}
                   </p>
@@ -323,8 +332,8 @@ export function PlayScreen({
             <FieldKitBrief state={state} />
             {scene.id === "memory_table" && <MemoryPlate key={scene.id} state={state} choices={choices} onInspect={pick} artwork={preferences.artwork !== "none"} numberShortcuts={preferences.numberShortcuts} />}
             <div className="prose" data-testid="scene-text">
-              {paragraphs.slice(0, visibleCount).map((paragraph, index) => (
-                <p key={`${scene.id}-${index}`} id={`reading-paragraph-${index}`} tabIndex={-1}>{paragraph}</p>
+              {visibleParagraphs.map(({ text, offset }, index) => (
+                <p key={`${scene.id}-${index}`} id={`reading-paragraph-${index}`} tabIndex={-1}><SpokenText text={text} offset={offset} range={spokenRange} /></p>
               ))}
             </div>
             {visibleCount < paragraphs.length && (
@@ -338,7 +347,7 @@ export function PlayScreen({
               </div>
             )}
             {preferences.reading === "paragraph" && paragraphs.length > 1 && <p className="reading-progress hint" role="status" aria-atomic="true">{visibleCount} of {paragraphs.length} paragraphs shown</p>}
-            {dialogueQueue.length > 0 && <VoiceLine key={scene.id} line={dialogue} lines={dialogueQueue} automatic={preferences.autoVoices} paused={audioPaused && preferences.sound} enabled={sound && preferences.voices > 0 && !modalOpen && !sheetOpen && !notebookOpen && !confirmAbandon && !activeChoice} />}
+            {dialogueQueue.length > 0 && <VoiceLine key={scene.id} line={dialogue} lines={dialogueQueue} automatic={preferences.autoVoices} paused={audioPaused && preferences.sound} enabled={voicesEnabled} onSpeaking={setSpeaking} />}
             {scene.id === "memory_sequence" && <MemoryTimeline state={state} choices={choices} onPlace={pick} artwork={preferences.artwork !== "none"} reducedMotion={reduceMotion} numberShortcuts={preferences.numberShortcuts} />}
             {["act2_route_map", "act2_route_exit", "act2_route_review", "act2_route_crossing"].includes(scene.id) && <RouteBoard state={state} />}
             {scene.finale && campaignCoda(state) && <p data-testid="campaign-coda">{campaignCoda(state)}</p>}

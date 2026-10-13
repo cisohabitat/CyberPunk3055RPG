@@ -6,8 +6,9 @@ import { Portrait, reactionLine } from "@/components/Portrait";
 import { commitChoice, checkResourceCosts, previewCheck, runDelta, stageCheck } from "@/lib/engine";
 import { playCue } from "@/lib/sound";
 import { statVoice } from "@/lib/story/voices";
-import { visibleCheckDialogue } from "@/lib/campaign-dialogue";
+import { visibleCheckDialogue, spokenDialogueRange, type CampaignDialogue } from "@/lib/campaign-dialogue";
 import { VoiceLine } from "./VoiceLine";
+import { SpokenText } from "./SpokenText";
 import type { CheckResult, Choice, GameState } from "@/lib/types";
 
 export function CheckDialog({
@@ -42,10 +43,13 @@ export function CheckDialog({
   const [next, setNext] = useState<GameState | null>(restored?.state ?? null);
   const locked = useRef(Boolean(restored));
   const [rolling, setRolling] = useState(false);
+  const [speaking, setSpeaking] = useState<CampaignDialogue | null>(null);
   const chance = preview.hits === 10 ? "Certain" : preview.hits === 0 ? "No chance" : `${preview.hits} in 10`;
   const costs = checkResourceCosts(state, choice);
   const delta = next ? runDelta(state, next) : [];
   const dialogue = result && !rolling ? visibleCheckDialogue(state.sceneId, choice.id, speaker, result.success, result.flavor) : [];
+  const playing = sound && voicesEnabled && speaking && dialogue.some(line => line.key === speaking.key) ? speaking : null;
+  const spokenRange = playing && result ? spokenDialogueRange(result.flavor, playing) : undefined;
 
   useEffect(() => {
     if (result && !rolling) document.querySelector<HTMLButtonElement>("[data-testid=continue-check]")?.focus();
@@ -115,10 +119,10 @@ export function CheckDialog({
             </span>
             <span>{result.success ? "Success" : "Miss"}</span>
           </p>
-          <p>{result.flavor}</p>
-          {dialogue.length > 0 && <VoiceLine lines={dialogue} enabled={sound && voicesEnabled} automatic={automaticVoices} />}
+          <p data-testid="check-flavor"><SpokenText text={result.flavor} range={spokenRange} /></p>
+          {dialogue.length > 0 && <VoiceLine lines={dialogue} enabled={sound && voicesEnabled} automatic={automaticVoices} onSpeaking={setSpeaking} />}
           <div className="reaction">
-            <Portrait speaker={speaker} origin={state.origin} handle={state.handle} artwork={artwork} />
+            <Portrait speaker={playing?.speaker ?? speaker} speaking={Boolean(playing)} origin={state.origin} handle={state.handle} artwork={artwork} />
             <p>{reactionLine(speaker, result.success)}</p>
           </div>
           {result.crit === "success" && <p>A ten. Strain eases.</p>}

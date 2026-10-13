@@ -1011,3 +1011,5 @@ html[data-motion="reduce"] .fragment-placed { animation: none; }
 .voice-line select { display: block; width: 100%; max-width: 100%; min-width: 0; }
 .voice-line li { overflow-wrap: anywhere; }
 .voice-line li[aria-current="true"] { border-inline-start: 3px solid var(--amber); padding-inline-start: 8px; background: var(--bg-raise); }
+.spoken-quote { color: inherit; background: rgba(255, 176, 32, 0.12); text-decoration: underline; text-decoration-color: var(--amber); text-decoration-thickness: 2px; text-underline-offset: 0.2em; }
+.speaker-cue { display: block; color: var(--amber); font-size: 0.8em; letter-spacing: 0.08em; }

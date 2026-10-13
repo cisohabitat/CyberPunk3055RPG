@@ -22,8 +22,12 @@ test("revealing a two-character conversation plays Sera then Ren and releases ea
   await page.getByTestId("show-rest").click(); const queue = expected("act2_shelter_brief");
   await expect.poll(() => speech(page), { timeout: 25_000 }).toEqual(queue);
   await expect(page.getByTestId("voice-line")).toHaveAttribute("aria-label", "Ren selected dialogue");
+  await expect(page.locator(".scene-row .portrait-frame")).toHaveAttribute("data-speaker", "Ren");
+  await expect(page.getByTestId("spoken-quote")).toHaveAttribute("data-speaker", "Ren");
   expect((await audio(page)).disposed.filter(n => n.startsWith("voice-"))).toEqual(queue.slice(0, 1));
   await expect(page.getByRole("button", { name: "Play all dialogue", exact: true })).toBeEnabled({ timeout: 15_000 });
+  await expect(page.getByTestId("spoken-quote")).toHaveCount(0);
+  await expect(page.locator(".scene-row .portrait-frame")).toHaveAttribute("data-speaker", "Sera");
   expect((await audio(page)).disposed.filter(n => n.startsWith("voice-"))).toEqual(queue);
   await page.getByTestId("voice-line").locator("summary").click();
   await expect(page.getByTestId("voice-line").locator("details")).toContainText("Sera:");
@@ -70,13 +74,16 @@ test("unavailable first actor advances to the next voice while keeping dialogue 
   await expect(page.locator('[data-testid^="choice-"]:enabled').first()).toBeEnabled();
 });
 
-test("Nia's voice uses her words while Lumen remains the scene portrait", async ({ page }) => {
+test("Nia's audible words show Nia's portrait and Stop restores Lumen's scene context", async ({ page }) => {
   await open(page, "act2_witness_door", { reading: "all", artwork: "full" });
   const queue = expected("act2_witness_door");
   await expect.poll(() => speech(page)).toEqual(queue.slice(0, 1));
   await expect(page.getByTestId("voice-line")).toHaveAttribute("aria-label", "Nia Pell selected dialogue");
-  await expect(page.locator(".scene-row img.portrait")).toHaveAttribute("src", "/art/lumen.jpg");
+  await expect(page.locator(".scene-row img.portrait")).toHaveAttribute("src", "/art/nia.jpg");
+  await expect(page.getByTestId("spoken-quote")).toHaveAttribute("data-speaker", "Nia Pell");
   await page.getByRole("button", { name: "Stop line", exact: true }).click();
+  await expect(page.getByTestId("spoken-quote")).toHaveCount(0);
+  await expect(page.locator(".scene-row img.portrait")).toHaveAttribute("src", "/art/lumen.jpg");
 });
 
 test("pagehide during a new voice load cancels every queued actor without a late resume", async ({ page }) => {

@@ -67,8 +67,18 @@ async function main() {
           }
           const playStarted = Date.now();
           await expect.poll(async () => (await audio()).started.filter(name => name.startsWith("voice-")), { timeout: 90_000 }).toEqual(expected);
+          if (!automatic) {
+            const mark = page.getByTestId("spoken-quote");
+            await expect(mark).toHaveAttribute("data-speaker", selected.speaker);
+            const words = (text: string) => text.toLowerCase().match(/[\p{L}\p{N}]+/gu) ?? [];
+            expect(words((await mark.textContent())!)).toEqual(words(selected.text));
+            const portrait = page.locator(checkCommit ? ".reaction .portrait-frame" : ".scene-row .portrait-frame");
+            await expect(portrait).toHaveAttribute("data-speaker", selected.speaker);
+            await expect(portrait).toHaveAttribute("data-speaking", "true");
+          }
           const listen = page.getByTestId("voice-line").getByRole("button", { name: /^Listen to / });
           await expect(listen).toBeVisible({ timeout: 45_000 });
+          await expect(page.getByTestId("spoken-quote")).toHaveCount(0);
           const ended = await audio(), durationSeconds = (Date.now() - playStarted) / 1000;
           expect(ended.liveSources).toBe(2);
           expect(ended.disposed.filter(name => name.startsWith("voice-"))).toEqual(expected);
@@ -76,6 +86,7 @@ async function main() {
           if (queue.length > 1) await page.getByLabel("Dialogue line", { exact: true }).selectOption(selected.key);
           await keyboardActivate(page, listen); await expect(page.getByTestId("voice-line")).toContainText("Playing selected dialogue");
           await keyboardActivate(page, page.getByRole("button", { name: "Stop line", exact: true }));
+          await expect(page.getByTestId("spoken-quote")).toHaveCount(0);
           await expect.poll(async () => (await audio()).liveSources).toBe(2);
           expect(voiceRequests).toBe(1); expect(await saved()).toBe(before);
           if (checkCommit) {

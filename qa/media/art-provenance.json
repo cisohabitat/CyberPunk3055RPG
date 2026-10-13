@@ -1565,6 +1565,111 @@
           "sha256": "3f0ba8d6ff610bfccfaeac2adb712f5f05e9e0babdc4727da04a239d897c8a26"
         }
       ]
+    },
+    {
+      "id": "ren-portrait",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-13",
+      "sourceFile": "/workspace/generated_images/exec-b19c9eba-3b94-4c9a-bc0a-c44825176ceb.png",
+      "sourceSha256": "248b33cf473f570a04ccf5f91dbdbe99bf9c9cde0e6cb5fd99b6aa8b8e693823",
+      "referenceFiles": [
+        "public/art/ren-canal.jpg"
+      ],
+      "promptSummary": "Ren Calder, an adult woman with short dark hair and a worn ochre jacket, retains the neutral family conversation identity from her canal illustration. Original painterly noir, chest-up, charcoal/petroleum blue/copper/amber; no readable identifiers or franchise references.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/ren-portrait.jpg",
+          "width": 600,
+          "height": 800,
+          "bytes": 141226,
+          "sha256": "1ad4f23925cc6159462c2ad51fe01bcda6517251b78c211536dc623c892b9a33"
+        }
+      ]
+    },
+    {
+      "id": "stallholder-portrait",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-13",
+      "sourceFile": "/workspace/generated_images/exec-44110da5-1535-4a18-8ee7-a40ef7fbaa1b.png",
+      "sourceSha256": "04f4d5df9a51d5b8f84a7479de3426ad4c3ce7c875d6297a866195748804e9bc",
+      "referenceFiles": [
+        "public/art/stallholder-story.jpg"
+      ],
+      "promptSummary": "The middle-aged woman stallholder retains her tied dark hair, weathered attentive face and plain indigo apron from the opening counter illustration. Original painterly noir, chest-up, charcoal/petroleum blue/copper/amber; no readable identifiers or franchise references.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/stallholder-portrait.jpg",
+          "width": 600,
+          "height": 800,
+          "bytes": 153007,
+          "sha256": "80d95d12bcfd922efba728f05b9779032a7256739726fdc63a540ab428a4871a"
+        }
+      ]
+    },
+    {
+      "id": "dispatcher-portrait",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-13",
+      "sourceFile": "/workspace/generated_images/exec-8dd08b1b-fe55-4cdb-a2af-f1bfdcf96064.png",
+      "sourceSha256": "1ff64874f14d7610d78f9829e5f61e33d94d24159ecd6aadc9f20b8fdf7f1953",
+      "referenceFiles": [
+        "public/art/orderly.jpg"
+      ],
+      "promptSummary": "An adult woman dispatcher in a dark blue utility cardigan with a copper wired earpiece; her neutral attention supplies no delivery, attendance or approval. Original painterly noir, chest-up, charcoal/petroleum blue/copper/amber; no readable identifiers or franchise references.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/dispatcher-portrait.jpg",
+          "width": 600,
+          "height": 800,
+          "bytes": 96954,
+          "sha256": "a6f0ab256de0c7506592ab47d7bef73c4bfcba9d820d43f4dc78923aed6d8453"
+        }
+      ]
+    },
+    {
+      "id": "mechanic-portrait",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-13",
+      "sourceFile": "/workspace/generated_images/exec-3cb21878-0d23-4b81-8b71-43ce007ecca3.png",
+      "sourceSha256": "330a6820b6052d3124a7a1490e3975e7f950643ab67af9a7aa988511c825b39d",
+      "referenceFiles": [
+        "public/art/orderly.jpg"
+      ],
+      "promptSummary": "An adult male mechanic with graying hair, short beard and a worn work shirt; the portrait supplies no source verification or verdict. Original painterly noir, chest-up, charcoal/petroleum blue/copper/amber; no readable identifiers or franchise references.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/mechanic-portrait.jpg",
+          "width": 600,
+          "height": 800,
+          "bytes": 121997,
+          "sha256": "8afb01ff0465467be38a78714a1768cf23933ad6e79bdab286a61bc2ebfc3d0c"
+        }
+      ]
+    },
+    {
+      "id": "masked-attendant-portrait",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-13",
+      "sourceFile": "/workspace/generated_images/exec-8924835b-ab75-46dd-847c-31002ec1df71.png",
+      "sourceSha256": "7721b408ada6dd044bb1f2f793246a2de3d41ece25c5b2d9b3142173cdd8a1c3",
+      "referenceFiles": [
+        "public/art/orderly.jpg"
+      ],
+      "promptSummary": "An alert adult maintenance technician in charcoal coveralls, an industrial filter mask and an ordinary collar microphone; no raised weapon, clearance or encounter outcome. Original painterly noir, chest-up, charcoal/petroleum blue/copper/amber; no readable identifiers or franchise references.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/masked-attendant-portrait.jpg",
+          "width": 600,
+          "height": 800,
+          "bytes": 109076,
+          "sha256": "122511a1d0f393c1d838d6768407b3784c89cde1602ebc07d0d50f14210d2599"
+        }
+      ]
     }
   ]
 }

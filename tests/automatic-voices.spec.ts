@@ -59,7 +59,7 @@ test("automatic voice completes naturally, releases its buffer and permits expli
   expect((await audio(page)).cleared.filter(name => name.startsWith("voice-"))).toEqual([...expected, "voice-quill-job-owner.wav"]);
 });
 
-test("Edda speaks her explicitly attributed service line while Ives remains the primary portrait", async ({ page }) => {
+test("Edda speaks her explicitly attributed service line in Ives’s scene context", async ({ page }) => {
   await open(page, { reading: "paragraph" }, "act2_origin_spire"); const before = await saved(page);
   await expect(page.getByTestId("voice-line")).toHaveCount(0);
   await page.getByTestId("show-rest").click();

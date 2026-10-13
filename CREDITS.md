@@ -57,3 +57,7 @@ Ten additional original setting illustrations were generated with `image_gen.ima
 ### Whole-scene review (13 October 2026)
 
 Two additional generated character illustrations show the stallholder at her counter and Ren Calder at the canal. Generated PNGs remain outside Git; responsive JPEG deliveries use resize/encode only. Ren’s eight fixed lines now use the stock `af_jessica` style, matching her authored identity; all earlier WAVs remain unchanged. Source/delivery hashes and prior recast hashes are in `qa/media/art-provenance.json`, `qa/media/campaign-dialogue-provenance.json` and `qa/media/whole-scene-review.json`. These are generated candidates, with no commissioned actor or independent listening acceptance.
+
+### Actual speaker portraits (13 October 2026)
+
+Five original generated portraits accompany Ren Calder, the stallholder, the clinic dispatcher, the Ward Nine mechanic and the masked maintenance attendant. Ren and the stallholder use their existing generated scene art as continuity references; the other three use the existing orderly portrait for painted style only and depict distinct fictional people. PNG masters are retained outside Git; 600×800 JPEG deliveries resize/encode only. `qa/media/art-provenance.json` records sources, references and hashes. `qa/media/speaker-presentation.json` explicitly maps all fifteen actors to reviewed art and locks every existing voice delivery; no new audio or individual voice clone is introduced. Generated candidates remain subject to independent visual/rights acceptance.
