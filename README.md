@@ -4,7 +4,7 @@ A solo story RPG in **Kite City, 3055**. You play it in the browser. The run sta
 
 Quill hires you to lift Mara Voss's unedited hour from Glass Chapel before dawn. Helion is about to edit a crime out of her: she signed the Ward Nine coolant dump, and three hundred people died. Kerr is paid to stop you. Sister Lumen may help you leak the hour or break it. A week later the city asks for a buyer or a witness. At Ward Nine, Sera keeps the dead on a wall, and that is the last choice.
 
-The current goal stays under the location while you play, and on the title screen when you continue. The place name sits beside the act: The Hour, The Week, or The Wall. Scene prose arrives one paragraph at a time, and you can show the rest. A choice that moves creds, strain, an item, or a faction says so before you take it. The sheet keeps a short list of what you already did.
+The current goal stays under the location while you play, and on the title screen when you continue. The place name sits beside the act: The Hour, The Week, or The Wall. Scene prose shows the whole scene by default. Settings also offers one paragraph at a time, and saved reading choices are respected. A choice that moves creds, strain, an item, or a faction says so before you take it. The sheet keeps a short list of what you already did.
 
 - Lift Mara Voss's hour from Glass Chapel before dawn. Kerr is paid to stop you.
 - You know what the hour is. Decide who gets it.
@@ -507,3 +507,11 @@ Automatic dialogue and Sound remain on by default. Reveal adds lines without res
 See [campaign media coverage and verification](docs/CAMPAIGN_MEDIA.md), [the locked inventory](qa/media/campaign-media.json), [dialogue audit](qa/media/campaign-dialogue-audit.json), [voice provenance](qa/media/campaign-dialogue-provenance.json) and [media audition](qa/media/review.html). `npm run production:voices -- URL --workers 4` verifies every active clip with displayed source examples, natural completion, explicit cached replay, Stop, transcripts and cleanup. Authored/seeded routes and synthetic branch samples are labeled separately. Optional offline generation never runs in CI or in the browser. The provisional internal grade remains 8.2; these checks do not establish commissioned acting or independent listening acceptance.
 
 A final cross-check includes Lumen’s fixed “Kerr” call in the failed bluff result. It appears only with the revealed miss, honors saved automatic/mute/voice settings, cancels on departure and does not commit or reroll the held die.
+
+## Whole-scene reading and dialogue review
+
+New or incomplete reading preferences show the whole scene immediately; an explicit saved paragraph preference remains. Sound and automatic dialogue stay enabled by default with saved mute/manual choices honored. The full quoted conversation queues in display order, and the transcript marks the line currently playing. No narration or player-name synthesis is added.
+
+The campaign’s 299 bound quotations match the concatenated words and actor of all 302 bindings and 290 active deliveries. Ren Calder’s eight lines use the reviewed stock `af_jessica` casting, matching her authored identity; six deliveries receive a slower consonant/word-boundary clarity pass, including two of Ren’s recast lines. All 101 earlier WAVs remain unchanged. Two new responsive character paintings accompany the stallholder’s opening dialogue and Ren’s canal introduction/returns. The 195 illustrated scenes, two text chapter cards, 197 scenes / 587 choices and 140 full replay fixtures remain.
+
+See [the whole-scene review](docs/WHOLE_SCENE_REVIEW.md) and [locked media changes](qa/media/whole-scene-review.json). Keep voice wording, actual actor, ordered parts and provenance aligned; the offline generator now checks voice, speed and segments before retaining a delivery. Preserve version 2, `saint-shard-3055-v1`, recorded dice, 1d10/caps, evidence/consent and all four finales. Independent transcription and internal play provide development evidence, not human listening acceptance or a higher grade.

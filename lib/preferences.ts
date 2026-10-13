@@ -15,7 +15,7 @@ export type Preferences = {
   numberShortcuts: boolean;
   artwork: "full" | "none";
 };
-export const DEFAULT_PREFERENCES: Preferences = { textStep: 0, contrast: "standard", reading: "paragraph", motion: "system", sound: true, music: 60, ambience: 50, effects: 70, voices: 70, autoVoices: true, controller: false, numberShortcuts: true, artwork: "full" };
+export const DEFAULT_PREFERENCES: Preferences = { textStep: 0, contrast: "standard", reading: "all", motion: "system", sound: true, music: 60, ambience: 50, effects: 70, voices: 70, autoVoices: true, controller: false, numberShortcuts: true, artwork: "full" };
 export function parsePreferences(raw: string | null): Preferences {
   let data;
   try { data = raw ? JSON.parse(raw) : {}; } catch { data = {}; }
@@ -24,7 +24,7 @@ export function parsePreferences(raw: string | null): Preferences {
   return {
     textStep: data?.textStep === 1 || data?.textStep === 2 ? data.textStep : 0,
     contrast: data?.contrast === "high" ? "high" : "standard",
-    reading: data?.reading === "all" ? "all" : "paragraph",
+    reading: data?.reading === "paragraph" ? "paragraph" : defaults.reading,
     motion: data?.motion === "reduce" ? "reduce" : "system",
     sound: typeof data?.sound === "boolean" ? data.sound : defaults.sound,
     music: volume(data?.music, defaults.music), ambience: volume(data?.ambience, defaults.ambience), effects: volume(data?.effects, defaults.effects),

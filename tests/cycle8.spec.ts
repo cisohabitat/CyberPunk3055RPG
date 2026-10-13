@@ -36,6 +36,7 @@ test("cycle 8 number-key opt-out persists and leaves Enter choices usable", asyn
 });
 
 test("cycle 8 paragraph reveal focuses new text through the final paragraph", async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem("saint-shard-preferences", JSON.stringify({ reading: "paragraph" })));
   await openRun(page, fixture("memo", { items: ["shard"] }));
   const before = await saved(page);
   const next = page.getByTestId("next-paragraph");
@@ -55,6 +56,7 @@ test("cycle 8 paragraph reveal focuses new text through the final paragraph", as
 });
 
 test("cycle 8 showing the rest focuses the first newly revealed paragraph", async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem("saint-shard-preferences", JSON.stringify({ reading: "paragraph" })));
   await openRun(page, fixture("memo", { items: ["shard"] }));
   const before = await saved(page);
   await page.getByTestId("show-rest").focus(); await page.keyboard.press("Enter");

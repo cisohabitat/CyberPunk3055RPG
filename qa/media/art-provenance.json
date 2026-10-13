@@ -1509,6 +1509,62 @@
           "sha256": "be9fcb76d9d995de31b3f4d050978de2741dcbccffd458a542ba1b4a913dc563"
         }
       ]
+    },
+    {
+      "id": "stallholder-story",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-13",
+      "sourceFile": "/workspace/generated_images/exec-48d535db-eb01-4703-9565-c074334fff53.png",
+      "sourceSha256": "2ffe809059d5d9326938838231de7b76d0d51bd4e0669e0bc98cc75992e14248",
+      "promptSummary": "The stallholder tells her authored cautionary story at the counter before the job is accepted. The frame supplies no memory evidence or completed transaction. Original painterly noir with petroleum blue, aged verdigris, copper and amber.",
+      "referenceFiles": [
+        "/workspace/generated_images/exec-73e0b934-2a5a-48cb-bcce-8119bebf3dfa.png"
+      ],
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG and reference retained.",
+      "files": [
+        {
+          "path": "public/art/stallholder-story.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 303386,
+          "sha256": "b82be5ae49d8276b7544633854e504fe012528e8847a83bb2f0e4dfe2652e73f"
+        },
+        {
+          "path": "public/art/stallholder-story-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 91219,
+          "sha256": "f6e0f74bb8a1140c75618246e35d08efd85b0a8e39801b8d63c87be63554c95a"
+        }
+      ]
+    },
+    {
+      "id": "ren-canal",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-13",
+      "sourceFile": "/workspace/generated_images/exec-1c8ffc91-8229-4294-b644-cd8c060dc151.png",
+      "sourceSha256": "acfdf561ab9b06b45f8f1e102ce82a31533fb21b5307e1d85cdcbd800e07be9a",
+      "promptSummary": "Ren’s introduction and later canal returns retain the neutral resident setting. No shelter repair, family arrival, street declaration, relocation or source verdict is depicted. Original painterly noir with petroleum blue, aged verdigris, copper and amber.",
+      "referenceFiles": [
+        "/workspace/generated_images/exec-73e0b934-2a5a-48cb-bcce-8119bebf3dfa.png"
+      ],
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG and reference retained.",
+      "files": [
+        {
+          "path": "public/art/ren-canal.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 318806,
+          "sha256": "6a1f41231020be9e6119d69406ca9ca3c3e2ba221178f8262e02cb3fe7abbe31"
+        },
+        {
+          "path": "public/art/ren-canal-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 94571,
+          "sha256": "3f0ba8d6ff610bfccfaeac2adb712f5f05e9e0babdc4727da04a239d897c8a26"
+        }
+      ]
     }
   ]
 }

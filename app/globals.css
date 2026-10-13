@@ -1010,3 +1010,4 @@ html[data-motion="reduce"] .fragment-placed { animation: none; }
 
 .voice-line select { display: block; width: 100%; max-width: 100%; min-width: 0; }
 .voice-line li { overflow-wrap: anywhere; }
+.voice-line li[aria-current="true"] { border-inline-start: 3px solid var(--amber); padding-inline-start: 8px; background: var(--bg-raise); }

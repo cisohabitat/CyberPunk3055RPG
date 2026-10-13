@@ -21,24 +21,24 @@ async function open(page: Page, preferences?: object, scene = "memo", startMenu 
   await page.getByTestId("continue-run").click();
 }
 
-test("fresh preferences enable voices; reveal plays once and Stop survives dialogs and page resume", async ({ page }) => {
+test("fresh preferences show the whole scene and speak once; Stop survives dialogs and page resume", async ({ page }) => {
   const requests: string[] = []; page.on("request", request => { if (request.url().includes("/audio/voice-")) requests.push(request.url()); });
   await open(page); const before = await saved(page);
-  await expect(page.getByTestId("voice-line")).toHaveCount(0); expect(requests).toEqual([]);
-  await page.getByTestId("show-rest").click();
+  await expect(page.getByTestId("show-rest")).toHaveCount(0);
+  await expect(page.getByTestId("scene-text")).toContainText("I signed the coolant dump");
   await expect.poll(() => speech(page)).toEqual(["voice-mara-revelation.wav"]);
   await page.getByRole("button", { name: "Stop line", exact: true }).click();
   await page.getByRole("button", { name: "Settings", exact: true }).click();
   await expect(page.getByLabel("Sound enabled", { exact: true })).toBeChecked();
   await expect(page.getByLabel("Play dialogue automatically", { exact: true })).toBeChecked();
+  await expect(page.getByLabel("Reading pace", { exact: true })).toHaveValue("all");
   await page.getByRole("button", { name: "Done", exact: true }).click();
   await page.evaluate(() => window.dispatchEvent(new PageTransitionEvent("pagehide", { persisted: true })));
   await page.getByRole("button", { name: "Resume sound", exact: true }).click();
   await expect(page.getByRole("button", { name: "Listen to Mara", exact: true })).toBeVisible();
   expect(await speech(page)).toEqual(["voice-mara-revelation.wav"]); expect(await saved(page)).toBe(before);
   await page.getByTestId("choice-heard").click();
-  await expect(page.getByTestId("voice-line")).toHaveCount(0);
-  await page.getByTestId("show-rest").click();
+  await expect(page.getByTestId("show-rest")).toHaveCount(0);
   await expect.poll(() => speech(page)).toEqual(["voice-mara-revelation.wav", "voice-mara-mara-why.wav"]);
 });
 
@@ -60,7 +60,7 @@ test("automatic voice completes naturally, releases its buffer and permits expli
 });
 
 test("Edda speaks her explicitly attributed service line while Ives remains the primary portrait", async ({ page }) => {
-  await open(page, undefined, "act2_origin_spire"); const before = await saved(page);
+  await open(page, { reading: "paragraph" }, "act2_origin_spire"); const before = await saved(page);
   await expect(page.getByTestId("voice-line")).toHaveCount(0);
   await page.getByTestId("show-rest").click();
   const scene = getScene("act2_origin_spire");

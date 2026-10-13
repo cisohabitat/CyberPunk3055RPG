@@ -149,8 +149,8 @@
       "speaker": "Ren",
       "text": "Junie Calder worked beside Ivo Pell,",
       "path": "public/audio/voice-campaign-ren-849965fb2829.mp3",
-      "durationSeconds": 2.912,
-      "sha256": "45a501378850d8717f661a07df060c7533dfbb851325105956750f76b87408c6",
+      "durationSeconds": 2.5493333333333332,
+      "sha256": "aed3538a98dbf0e102de46472a8226168b3255211102ce4e8c3106b2b6163385",
       "scenes": [
         "act2_middle"
       ]
@@ -160,8 +160,8 @@
       "speaker": "Ren",
       "text": "Say her if you get to the wall. She was my family before she was your evidence.",
       "path": "public/audio/voice-campaign-ren-8fe81a46651c.mp3",
-      "durationSeconds": 5.669333333333333,
-      "sha256": "e4a83ef503ed1653881614645c0027af2a2c5da58b911eebafafee660b7fd93e",
+      "durationSeconds": 5.254625,
+      "sha256": "e0ab441bf134e6f23a9ac139f3f9cf7bdddcc04f6cddb934d8193bcbba42d468",
       "scenes": [
         "act2_middle"
       ]
@@ -303,8 +303,8 @@
       "speaker": "Ren",
       "text": "We can walk. My father needs the ramp, not the stairs.",
       "path": "public/audio/voice-campaign-ren-7acf21262f21.mp3",
-      "durationSeconds": 4.814,
-      "sha256": "be6ce67cada01d9f9908fff6a862a9e2ce0d7c5f180288d2f0b180a9384bd5d1",
+      "durationSeconds": 4.292666666666666,
+      "sha256": "b3131099ce86253eb04e2f5162898b875ce0dfc75a852a2d83f5d9377696cfb8",
       "scenes": [
         "act2_shelter_brief"
       ]
@@ -314,8 +314,8 @@
       "speaker": "Ren",
       "text": "We’re here,",
       "path": "public/audio/voice-campaign-ren-88411fc0eaa0.mp3",
-      "durationSeconds": 1.184,
-      "sha256": "ffaf627e041221daf13e59765c1ea1995c88c2edac34b45611cd0b733c4e4f69",
+      "durationSeconds": 1.0846666666666667,
+      "sha256": "e5f1e03aad2d66ca638fe642e7c82ddb7d045344c7a5cbd053deb53312eb4e62",
       "scenes": [
         "act2_shelter_hall"
       ]
@@ -325,8 +325,8 @@
       "speaker": "Ren",
       "text": "It’s loud. It’s still somewhere.",
       "path": "public/audio/voice-campaign-ren-db09fe4a26b0.mp3",
-      "durationSeconds": 3.286,
-      "sha256": "95762f6c03c6a30de2553c5374ef9c90d175c3bb4754abd2abd3bdb7ae91676c",
+      "durationSeconds": 2.9386666666666668,
+      "sha256": "1cf6de6ea6a435d11b4593cd5f58e3797d8c24ee724ae7516ed9c3d176b2a123",
       "scenes": [
         "act2_shelter_hall"
       ]
@@ -336,8 +336,8 @@
       "speaker": "Ren",
       "text": "Dad reached the ramp. We slept, but the hall lights stayed on.",
       "path": "public/audio/voice-campaign-ren-40e4d9a95be2.mp3",
-      "durationSeconds": 4.897958333333333,
-      "sha256": "d428c9e0361c64ace505bcff4f237646cc149977f85f9b5969f6b3cb0028527d",
+      "durationSeconds": 4.684666666666667,
+      "sha256": "ecef7b78da2e37c4740f4366efdf66b85bad55f86be610e5c2f0f97f87841df7",
       "scenes": [
         "act3_shelter_visit"
       ]
@@ -1016,8 +1016,8 @@
       "speaker": "Sister Lumen",
       "text": "Sit a minute. The next person through that door will need their own answer.",
       "path": "public/audio/voice-campaign-sister-lumen-62cf0bfa124b.mp3",
-      "durationSeconds": 4.911958333333334,
-      "sha256": "e60a50eb4f410e93e8b4924c75768e85d06c7ae0e854a8a358209262f16a4fae",
+      "durationSeconds": 5.008666666666667,
+      "sha256": "9d8919a542b76468a6d0d936f3d454926154d7e890d10e3bed4856c8ed5414b7",
       "scenes": [
         "act3_chapel_return"
       ]
@@ -1049,8 +1049,8 @@
       "speaker": "Quill",
       "text": "You used the introduction to get a counter answer. That's what I lent you.",
       "path": "public/audio/voice-campaign-quill-d65247015b3d.mp3",
-      "durationSeconds": 5.456,
-      "sha256": "1cad2f17a0dd535cff5f6fee2a9a7b314c661eaca9110c0b5cedbfda827afb0e",
+      "durationSeconds": 5.7973333333333334,
+      "sha256": "3ea046363cbde767c9af3b9bc3cf9310189b08a0999fbc11e99a4fc34ef793ac",
       "scenes": [
         "act3_quill_introduction"
       ]
@@ -1325,8 +1325,8 @@
       "speaker": "Sera",
       "text": "You agreed to pause questions. A hearing isn't an exception.",
       "path": "public/audio/voice-campaign-sera-bd40f64ddfb9.mp3",
-      "durationSeconds": 4.051333333333333,
-      "sha256": "7a9cd6cad32ca1663d11d8a18d460ffd624df64e53b288d2caf584ba0915d68d",
+      "durationSeconds": 4.254666666666667,
+      "sha256": "ed82eef64f97b36169a35f348b227e54c47bf4d5ae184f66934e0dbbd1c7231c",
       "scenes": [
         "act3_testimony_consent"
       ]
@@ -1424,8 +1424,8 @@
       "speaker": "Ren",
       "text": "We can use the hall annex if it has mattresses and Dad can use the ramp,",
       "path": "public/audio/voice-campaign-ren-4f73bedda5ff.mp3",
-      "durationSeconds": 4.725333333333333,
-      "sha256": "51f04c41c87de2dca1e438de5d3c09593fcea37f9c7f0a01f745814e56e95f52",
+      "durationSeconds": 4.362666666666667,
+      "sha256": "ab8790819751def2e9985b6fdd70a0593ffec78afac95df257c6017b95716494",
       "scenes": [
         "act2_shelter_rooms"
       ]
@@ -1446,8 +1446,8 @@
       "speaker": "Ren",
       "text": "We slept upstairs. The floor was dry. Everything we packed still smells of coolant.",
       "path": "public/audio/voice-campaign-ren-83ccbd90da95.mp3",
-      "durationSeconds": 7.338666666666667,
-      "sha256": "af730f4ab592e0d74f36d6db8e69c59934f612de3f677ce5b97a3877b8e7f734",
+      "durationSeconds": 6.376,
+      "sha256": "37ec61dae3c64aae1cd7725f921033eb4304a682104078a8e532eba9c5fd895c",
       "scenes": [
         "act3_shelter_visit"
       ]
@@ -1590,8 +1590,8 @@
       "speaker": "Orderly",
       "text": "Pass still scans,",
       "path": "public/audio/voice-campaign-orderly-196a881f1c95.mp3",
-      "durationSeconds": 1.3546666666666667,
-      "sha256": "967e7d0204b00878905b25a315fedd71754bc5ed1f2f38539df3dd38ae5566d6",
+      "durationSeconds": 1.4613333333333334,
+      "sha256": "02fc799ee9c840a1d4788279dd23308d9758b69d595692c8d6a9cf66806e8908",
       "scenes": [
         "districts"
       ]

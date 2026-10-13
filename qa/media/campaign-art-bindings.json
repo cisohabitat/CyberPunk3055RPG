@@ -7,8 +7,6 @@
       "description": "Steam rises from an unattended copper noodle pot beneath a patched market awning, beside a damp menu and two empty counter seats.",
       "scenes": [
         "opening_self",
-        "opening_approach",
-        "opening_neighbor",
         "pay_yes",
         "pay_no",
         "why",
@@ -181,7 +179,6 @@
       "caption": "Canal district · the planning alcove",
       "description": "A neutral transit diagram rests beneath a lamp in a sheltered canal alcove; a closed canvas case waits on a shelf. No selected route or completed handover is depicted.",
       "scenes": [
-        "act2_middle",
         "act2_heat",
         "act2_archive_verified",
         "act2_recovery_after",
@@ -317,6 +314,27 @@
         "act3_lumen_boundary"
       ],
       "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits."
+    },
+    {
+      "src": "/art/stallholder-story.jpg",
+      "small": "/art/stallholder-story-small.jpg",
+      "caption": "Ward Four · the stallholder’s story",
+      "description": "A woman in an indigo apron rests her hand on a damp menu beneath an amber lamp; steam rises from a copper noodle pot beside the empty counter stool.",
+      "scenes": [
+        "opening_approach",
+        "opening_neighbor"
+      ],
+      "reason": "The stallholder tells her authored cautionary story at the counter before the job is accepted. The frame supplies no memory evidence or completed transaction."
+    },
+    {
+      "src": "/art/ren-canal.jpg",
+      "small": "/art/ren-canal-small.jpg",
+      "caption": "Ward Four · Ren at the canal",
+      "description": "Ren Calder, a woman in a worn ochre jacket, sits beside a rain-filled grate with her boots lifted clear and a folded bag beside her.",
+      "scenes": [
+        "act2_middle"
+      ],
+      "reason": "Ren’s introduction and later canal returns retain the neutral resident setting. No shelter repair, family arrival, street declaration, relocation or source verdict is depicted."
     }
   ],
   "chapterCards": [

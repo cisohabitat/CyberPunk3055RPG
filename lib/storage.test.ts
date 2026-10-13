@@ -36,6 +36,14 @@ function assertDefaultsAndFailedWrites() {
 }
 
 describe("browser storage failures", () => {
+  it("shows whole scenes by default and preserves an explicit saved paragraph preference", () => {
+    const values = new Map<string, string>();
+    installWindow({ localStorage: { getItem(key: string) { return values.get(key) ?? null; } } });
+    assert.equal(loadPreferences().reading, "all");
+    for (const raw of [null, "{", "null", "{}", '{"reading":"invalid"}', '{"sound":false}']) assert.equal(parsePreferences(raw).reading, "all");
+    values.set("saint-shard-preferences", '{"reading":"paragraph","motion":"reduce"}');
+    assert.equal(loadPreferences().reading, "paragraph");
+  });
   it("defaults new players to automatic voices while preserving legacy and current mute choices", () => {
     const values = new Map<string, string>();
     installWindow({ localStorage: { getItem(key: string) { return values.get(key) ?? null; } } });

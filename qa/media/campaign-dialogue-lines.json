@@ -213,18 +213,18 @@
   {
     "id": "voice-campaign-ren-849965fb2829",
     "speaker": "Ren",
-    "voice": "am_echo",
+    "voice": "af_jessica",
     "speed": 0.97,
     "text": "Junie Calder worked beside Ivo Pell,",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions."
+    "direction": "Ren Calder, an adult woman resident: conversational, firm and grounded; family grief without melodrama. Preserve every authored word and explicit uncertainty."
   },
   {
     "id": "voice-campaign-ren-8fe81a46651c",
     "speaker": "Ren",
-    "voice": "am_echo",
+    "voice": "af_jessica",
     "speed": 0.97,
     "text": "Say her if you get to the wall. She was my family before she was your evidence.",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+    "direction": "Ren Calder, an adult woman resident: conversational, firm and grounded; family grief without melodrama. Preserve every authored word and explicit uncertainty.",
     "segments": [
       {
         "text": "Say her if you get to the wall.",
@@ -371,10 +371,10 @@
   {
     "id": "voice-campaign-ren-7acf21262f21",
     "speaker": "Ren",
-    "voice": "am_echo",
+    "voice": "af_jessica",
     "speed": 0.97,
     "text": "We can walk. My father needs the ramp, not the stairs.",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+    "direction": "Ren Calder, an adult woman resident: conversational, firm and grounded; family grief without melodrama. Preserve every authored word and explicit uncertainty.",
     "segments": [
       {
         "text": "We can walk.",
@@ -391,18 +391,18 @@
   {
     "id": "voice-campaign-ren-88411fc0eaa0",
     "speaker": "Ren",
-    "voice": "am_echo",
+    "voice": "af_jessica",
     "speed": 0.97,
     "text": "We’re here,",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions."
+    "direction": "Ren Calder, an adult woman resident: conversational, firm and grounded; family grief without melodrama. Preserve every authored word and explicit uncertainty."
   },
   {
     "id": "voice-campaign-ren-db09fe4a26b0",
     "speaker": "Ren",
-    "voice": "am_echo",
+    "voice": "af_jessica",
     "speed": 0.97,
     "text": "It’s loud. It’s still somewhere.",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+    "direction": "Ren Calder, an adult woman resident: conversational, firm and grounded; family grief without melodrama. Preserve every authored word and explicit uncertainty.",
     "segments": [
       {
         "text": "It’s loud.",
@@ -419,19 +419,19 @@
   {
     "id": "voice-campaign-ren-40e4d9a95be2",
     "speaker": "Ren",
-    "voice": "am_echo",
+    "voice": "af_jessica",
     "speed": 0.97,
     "text": "Dad reached the ramp. We slept, but the hall lights stayed on.",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+    "direction": "Ren Calder, an adult woman resident: conversational, firm and grounded; family grief without melodrama. Preserve every authored word and explicit uncertainty. Word-clarity pass: articulate consonants and limits at a measured pace; preserve exact wording.",
     "segments": [
       {
         "text": "Dad reached the ramp.",
-        "speed": 0.97,
+        "speed": 0.87,
         "pauseAfter": 0.24
       },
       {
         "text": "We slept, but the hall lights stayed on.",
-        "speed": 0.97,
+        "speed": 0.87,
         "pauseAfter": 0
       }
     ]
@@ -1310,16 +1310,16 @@
     "voice": "af_heart",
     "speed": 0.93,
     "text": "Sit a minute. The next person through that door will need their own answer.",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions. Word-clarity pass: articulate consonants and limits at a measured pace; preserve exact wording.",
     "segments": [
       {
         "text": "Sit a minute.",
-        "speed": 0.93,
+        "speed": 0.87,
         "pauseAfter": 0.24
       },
       {
         "text": "The next person through that door will need their own answer.",
-        "speed": 0.93,
+        "speed": 0.87,
         "pauseAfter": 0
       }
     ]
@@ -1358,16 +1358,16 @@
     "voice": "am_michael",
     "speed": 0.96,
     "text": "You used the introduction to get a counter answer. That's what I lent you.",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions. Word-clarity pass: articulate consonants and limits at a measured pace; preserve exact wording.",
     "segments": [
       {
         "text": "You used the introduction to get a counter answer.",
-        "speed": 0.96,
+        "speed": 0.87,
         "pauseAfter": 0.24
       },
       {
         "text": "That's what I lent you.",
-        "speed": 0.96,
+        "speed": 0.87,
         "pauseAfter": 0
       }
     ]
@@ -1804,16 +1804,16 @@
     "voice": "af_bella",
     "speed": 0.95,
     "text": "You agreed to pause questions. A hearing isn't an exception.",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions. Word-clarity pass: articulate consonants and limits at a measured pace; preserve exact wording.",
     "segments": [
       {
         "text": "You agreed to pause questions.",
-        "speed": 0.95,
+        "speed": 0.87,
         "pauseAfter": 0.24
       },
       {
         "text": "A hearing isn't an exception.",
-        "speed": 0.95,
+        "speed": 0.87,
         "pauseAfter": 0
       }
     ]
@@ -1962,10 +1962,10 @@
   {
     "id": "voice-campaign-ren-4f73bedda5ff",
     "speaker": "Ren",
-    "voice": "am_echo",
-    "speed": 0.97,
+    "voice": "af_jessica",
+    "speed": 0.87,
     "text": "We can use the hall annex if it has mattresses and Dad can use the ramp,",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions."
+    "direction": "Ren Calder, an adult woman resident: conversational, firm and grounded; family grief without melodrama. Preserve every authored word and explicit uncertainty. Word-clarity pass: articulate consonants and limits at a measured pace; preserve exact wording."
   },
   {
     "id": "voice-campaign-sera-dc4258b3a9d7",
@@ -1990,10 +1990,10 @@
   {
     "id": "voice-campaign-ren-83ccbd90da95",
     "speaker": "Ren",
-    "voice": "am_echo",
+    "voice": "af_jessica",
     "speed": 0.97,
     "text": "We slept upstairs. The floor was dry. Everything we packed still smells of coolant.",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+    "direction": "Ren Calder, an adult woman resident: conversational, firm and grounded; family grief without melodrama. Preserve every authored word and explicit uncertainty.",
     "segments": [
       {
         "text": "We slept upstairs.",
@@ -2255,9 +2255,9 @@
     "id": "voice-campaign-orderly-196a881f1c95",
     "speaker": "Orderly",
     "voice": "am_puck",
-    "speed": 0.98,
+    "speed": 0.87,
     "text": "Pass still scans,",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions."
+    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions. Word-clarity pass: articulate consonants and limits at a measured pace; preserve exact wording."
   },
   {
     "id": "voice-campaign-sister-lumen-ef706d358585",

@@ -351,8 +351,6 @@
       "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits.",
       "scenes": [
         "opening_self",
-        "opening_approach",
-        "opening_neighbor",
         "pay_yes",
         "pay_no",
         "why",
@@ -501,7 +499,6 @@
       "asset": "/art/canal-dispatch.jpg",
       "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits.",
       "scenes": [
-        "act2_middle",
         "act2_heat",
         "act2_archive_verified",
         "act2_recovery_after",
@@ -615,6 +612,23 @@
       "scenes": [
         "act2_lumen_quiet",
         "act3_lumen_boundary"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/stallholder-story.jpg",
+      "reason": "The stallholder tells her authored cautionary story at the counter before the job is accepted. The frame supplies no memory evidence or completed transaction.",
+      "scenes": [
+        "opening_approach",
+        "opening_neighbor"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/ren-canal.jpg",
+      "reason": "Ren’s introduction and later canal returns retain the neutral resident setting. No shelter repair, family arrival, street declaration, relocation or source verdict is depicted.",
+      "scenes": [
+        "act2_middle"
       ]
     }
   ],

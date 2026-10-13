@@ -1,0 +1,142 @@
+{
+  "generated": "2026-10-13",
+  "scope": "Whole-scene default, full campaign word/actor review, eight Ren recast deliveries and two character-focused illustrations. No new story scene or narration.",
+  "recastReason": "Ren Calder is explicitly a woman in act2_middle. Reviewed stock af_jessica casting replaces the earlier am_echo casting for all eight Ren lines; authored text, clip ids and conditional bindings remain unchanged.",
+  "recast": [
+    {
+      "id": "voice-campaign-ren-849965fb2829",
+      "previousVoice": "am_echo",
+      "previousSha256": "45a501378850d8717f661a07df060c7533dfbb851325105956750f76b87408c6",
+      "voice": "af_jessica",
+      "sha256": "aed3538a98dbf0e102de46472a8226168b3255211102ce4e8c3106b2b6163385"
+    },
+    {
+      "id": "voice-campaign-ren-8fe81a46651c",
+      "previousVoice": "am_echo",
+      "previousSha256": "e4a83ef503ed1653881614645c0027af2a2c5da58b911eebafafee660b7fd93e",
+      "voice": "af_jessica",
+      "sha256": "e0ab441bf134e6f23a9ac139f3f9cf7bdddcc04f6cddb934d8193bcbba42d468"
+    },
+    {
+      "id": "voice-campaign-ren-7acf21262f21",
+      "previousVoice": "am_echo",
+      "previousSha256": "be6ce67cada01d9f9908fff6a862a9e2ce0d7c5f180288d2f0b180a9384bd5d1",
+      "voice": "af_jessica",
+      "sha256": "b3131099ce86253eb04e2f5162898b875ce0dfc75a852a2d83f5d9377696cfb8"
+    },
+    {
+      "id": "voice-campaign-ren-88411fc0eaa0",
+      "previousVoice": "am_echo",
+      "previousSha256": "ffaf627e041221daf13e59765c1ea1995c88c2edac34b45611cd0b733c4e4f69",
+      "voice": "af_jessica",
+      "sha256": "e5f1e03aad2d66ca638fe642e7c82ddb7d045344c7a5cbd053deb53312eb4e62"
+    },
+    {
+      "id": "voice-campaign-ren-db09fe4a26b0",
+      "previousVoice": "am_echo",
+      "previousSha256": "95762f6c03c6a30de2553c5374ef9c90d175c3bb4754abd2abd3bdb7ae91676c",
+      "voice": "af_jessica",
+      "sha256": "1cf6de6ea6a435d11b4593cd5f58e3797d8c24ee724ae7516ed9c3d176b2a123"
+    },
+    {
+      "id": "voice-campaign-ren-40e4d9a95be2",
+      "previousVoice": "am_echo",
+      "previousSha256": "d428c9e0361c64ace505bcff4f237646cc149977f85f9b5969f6b3cb0028527d",
+      "voice": "af_jessica",
+      "sha256": "ecef7b78da2e37c4740f4366efdf66b85bad55f86be610e5c2f0f97f87841df7"
+    },
+    {
+      "id": "voice-campaign-ren-4f73bedda5ff",
+      "previousVoice": "am_echo",
+      "previousSha256": "51f04c41c87de2dca1e438de5d3c09593fcea37f9c7f0a01f745814e56e95f52",
+      "voice": "af_jessica",
+      "sha256": "ab8790819751def2e9985b6fdd70a0593ffec78afac95df257c6017b95716494"
+    },
+    {
+      "id": "voice-campaign-ren-83ccbd90da95",
+      "previousVoice": "am_echo",
+      "previousSha256": "af730f4ab592e0d74f36d6db8e69c59934f612de3f677ce5b97a3877b8e7f734",
+      "voice": "af_jessica",
+      "sha256": "37ec61dae3c64aae1cd7725f921033eb4304a682104078a8e532eba9c5fd895c"
+    }
+  ],
+  "art": [
+    {
+      "id": "stallholder-story",
+      "caption": "Ward Four · the stallholder’s story",
+      "description": "A woman in an indigo apron rests her hand on a damp menu beneath an amber lamp; steam rises from a copper noodle pot beside the empty counter stool.",
+      "scenes": [
+        "opening_approach",
+        "opening_neighbor"
+      ],
+      "reason": "The stallholder tells her authored cautionary story at the counter before the job is accepted. The frame supplies no memory evidence or completed transaction."
+    },
+    {
+      "id": "ren-canal",
+      "caption": "Ward Four · Ren at the canal",
+      "description": "Ren Calder, a woman in a worn ochre jacket, sits beside a rain-filled grate with her boots lifted clear and a folded bag beside her.",
+      "scenes": [
+        "act2_middle"
+      ],
+      "reason": "Ren’s introduction and later canal returns retain the neutral resident setting. No shelter repair, family arrival, street declaration, relocation or source verdict is depicted."
+    }
+  ],
+  "clarityReview": [
+    {
+      "id": "voice-campaign-ren-40e4d9a95be2",
+      "previousSha256": "5966b006765af181e4ee8321f2d9a026711ca3002abd353593f7ba531d46bc18",
+      "reason": "Two independent recognizers flagged a past-tense consonant, word boundary or plural. Slower exact-text delivery is a clarity candidate; recognition is not human listening acceptance.",
+      "sha256": "ecef7b78da2e37c4740f4366efdf66b85bad55f86be610e5c2f0f97f87841df7"
+    },
+    {
+      "id": "voice-campaign-sister-lumen-62cf0bfa124b",
+      "previousSha256": "e60a50eb4f410e93e8b4924c75768e85d06c7ae0e854a8a358209262f16a4fae",
+      "reason": "Two independent recognizers flagged a past-tense consonant, word boundary or plural. Slower exact-text delivery is a clarity candidate; recognition is not human listening acceptance.",
+      "sha256": "9d8919a542b76468a6d0d936f3d454926154d7e890d10e3bed4856c8ed5414b7"
+    },
+    {
+      "id": "voice-campaign-quill-d65247015b3d",
+      "previousSha256": "1cad2f17a0dd535cff5f6fee2a9a7b314c661eaca9110c0b5cedbfda827afb0e",
+      "reason": "Two independent recognizers flagged a past-tense consonant, word boundary or plural. Slower exact-text delivery is a clarity candidate; recognition is not human listening acceptance.",
+      "sha256": "3ea046363cbde767c9af3b9bc3cf9310189b08a0999fbc11e99a4fc34ef793ac"
+    },
+    {
+      "id": "voice-campaign-sera-bd40f64ddfb9",
+      "previousSha256": "7a9cd6cad32ca1663d11d8a18d460ffd624df64e53b288d2caf584ba0915d68d",
+      "reason": "Two independent recognizers flagged a past-tense consonant, word boundary or plural. Slower exact-text delivery is a clarity candidate; recognition is not human listening acceptance.",
+      "sha256": "ed82eef64f97b36169a35f348b227e54c47bf4d5ae184f66934e0dbbd1c7231c"
+    },
+    {
+      "id": "voice-campaign-ren-4f73bedda5ff",
+      "previousSha256": "e314b57158a8a11f83cc0673efa1b2373c64c9c04782410e31bb03c0954c76b7",
+      "reason": "Two independent recognizers flagged a past-tense consonant, word boundary or plural. Slower exact-text delivery is a clarity candidate; recognition is not human listening acceptance.",
+      "sha256": "ab8790819751def2e9985b6fdd70a0593ffec78afac95df257c6017b95716494"
+    },
+    {
+      "id": "voice-campaign-orderly-196a881f1c95",
+      "previousSha256": "967e7d0204b00878905b25a315fedd71754bc5ed1f2f38539df3dd38ae5566d6",
+      "reason": "Two independent recognizers flagged a past-tense consonant, word boundary or plural. Slower exact-text delivery is a clarity candidate; recognition is not human listening acceptance.",
+      "sha256": "02fc799ee9c840a1d4788279dd23308d9758b69d595692c8d6a9cf66806e8908"
+    }
+  ],
+  "scriptReview": {
+    "scenes": 197,
+    "choices": 587,
+    "authoredCompleteReplayFixtures": 140,
+    "reviewedProseVariants": 1056,
+    "boundQuotations": 299,
+    "bindings": 302,
+    "activeVoiceFiles": 290,
+    "scope": "Quoted NPC dialogue in scene prose and revealed check results; narration, written/player quotes and custom addresses remain text-only. All authored story sources unchanged."
+  },
+  "audioReview": {
+    "method": "Independent offline transcription of decoded delivery; English, int8 CPU, beam 5; no expected-text prompt. ASR differences are candidates for review, not proof of an audio defect.",
+    "primaryModel": "Systran/faster-whisper-base.en",
+    "primaryDeliveredClips": 290,
+    "secondaryModel": "Systran/faster-whisper-small.en",
+    "limitations": "Offline recognition differences include names, numbers, homophones and short-utterance errors. Exact authoring words/actors, delivery hashes and native playback are separate checks; no human listening acceptance claim.",
+    "secondaryHistoricalCandidates": 68,
+    "secondaryCurrentDeliveries": 67,
+    "secondaryStatus": "Completed candidate recheck. One earlier Quill candidate is superseded by a new exact-word primary transcription; current and historical delivery hashes remain distinct in private evidence."
+  }
+}

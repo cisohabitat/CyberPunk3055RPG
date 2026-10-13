@@ -31,7 +31,7 @@ def write(path,samples,rate):
   out.setnchannels(1);out.setsampwidth(2);out.setframerate(rate);out.writeframes((np.clip(samples,-1,1)*32767).astype('<i2').tobytes())
 for line in lines:
  id=line['id'];target=root/'public/audio'/f'{id}.mp3'
- if id in records and target.exists() and records[id]['text']==line['text'] and sha(target)==records[id]['sha256']:
+ if id in records and target.exists() and all(records[id].get(k)==line.get(k) for k in ['text','speaker','voice','speed','segments']) and sha(target)==records[id]['sha256']:
   print(json.dumps({'id':id,'retained':True}),flush=True);continue
  pieces=[];parts=line.get('segments',[{'text':line['text'],'pauseAfter':0}])
  assert ' '.join(p['text'] for p in parts)==line['text']

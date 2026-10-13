@@ -101,6 +101,23 @@ describe("campaign character dialogue", () => {
       assert.ok(data.length < 3_145_728);
     }
   });
+  it("matches complete spoken wording, clip order and actual actor to every bound quotation", () => {
+    const words = (text: string) => text.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ").trim();
+    const quotes = new Map<string, typeof bindings>();
+    const sources = new Map([...old.lines, ...deliveries.lines].map(line => [line.id, line]));
+    for (const binding of bindings) {
+      const source = sources.get(binding.id)!;
+      assert.equal(words(source.text), words(binding.text), binding.id);
+      assert.equal(source.speaker, binding.speaker, binding.id);
+      const key = JSON.stringify([binding.scene, binding.choiceId, binding.outcome, binding.quote]);
+      quotes.set(key, [...(quotes.get(key) ?? []), binding]);
+    }
+    for (const parts of quotes.values()) {
+      parts.sort((a, b) => a.part - b.part);
+      assert.deepEqual(parts.map(part => part.part), parts.map((_, index) => index));
+      assert.equal(words(parts.map(part => part.text).join(" ")), words(parts[0].quote), parts[0].scene);
+    }
+  });
   it("voices only Lumen's revealed failed-bluff result, never a successful or unrelated result", () => {
     const flavor = SCENES.lumen_deal.choices.find(c => c.id === "fake-pact")!.resultFail!;
     const queue = visibleCheckDialogue("lumen_deal", "fake-pact", "Sister Lumen", false, flavor);

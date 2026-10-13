@@ -603,6 +603,7 @@ test("commitments stay visible and week-closing choices warn about unfinished pr
 });
 
 test("reduced motion preserves the selected paragraph reading pace", async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem("saint-shard-preferences", JSON.stringify({ reading: "paragraph" })));
   await openRun(page, fixture("memo", { items: ["shard"] }));
   await expect(page.getByTestId("scene-text").locator("p")).toHaveCount(1);
   await page.getByTestId("show-rest").click();
@@ -647,6 +648,7 @@ test("invalid slot dates do not appear as usable recovery points", async ({ page
 });
 
 test("a misleading interpretation can be revised without granting independent proof", async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem("saint-shard-preferences", JSON.stringify({ reading: "paragraph" })));
   await openRun(page, fixture("memory_table", { flags: { heard_memo: true } }));
   for (const id of ["inspect-signature", "inspect-order", "inspect-roster"]) await page.getByTestId(`choice-${id}`).click();
   await expect(page.getByTestId("evidence-case")).toContainText("Still unknown");
@@ -1033,6 +1035,7 @@ test("ending discovery shows chapter counts and opt-in spoiler-light replay hint
 
 
 test("Lumen offers a marker without a handover through hearing and reload", async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem("saint-shard-preferences", JSON.stringify({ reading: "paragraph" })));
   await openRun(page, fixture("act2_lumen_door", { items: [], flags: { act1_sold: true } }));
   await page.getByTestId("next-paragraph").click();
   await expect(page.getByTestId("scene-text")).toContainText("offers a clinic marker");
@@ -1073,12 +1076,12 @@ for (const [origin, complication, motive, root, reason] of [
   await expect(page.getByTestId("goal")).toBeInViewport();
   await expect(page.getByTestId("goal")).toContainText("Find Quill");
   await expect(page.getByTestId("choice-ask-pay")).toHaveCount(0);
-  await page.getByTestId("show-rest").click();
+  await expect(page.getByTestId("show-rest")).toHaveCount(0);
   await expect(page.getByTestId("scene-text")).toContainText("People call you a runner");
   await expect(page.getByTestId("scene-text")).toContainText("sliver of glass called a shard");
   await expect(page.getByTestId("scene-text")).not.toContainText("Mara Voss");
   const before = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
-  await page.getByTestId("choice-begin-opening").click(); await page.getByTestId("show-rest").click();
+  await page.getByTestId("choice-begin-opening").click(); await expect(page.getByTestId("show-rest")).toHaveCount(0);
   await expect(page.getByTestId("scene-text")).toContainText(root);
   await page.getByTestId(`choice-${motive}`).click();
   await page.reload(); await page.getByTestId("continue-run").click();
@@ -1111,14 +1114,14 @@ for (const [width, textOnly] of [[390, false], [1440, true], [320, true]] as con
   await page.getByTestId("plus-chrome").click(); await page.getByTestId("plus-nerve").click();
   await page.getByTestId("start-run").click();
   for (const id of ["begin-opening", "opening-survival", "hear-stallholder", "take-the-stool"]) await page.getByTestId(`choice-${id}`).click();
-  // Default paragraph reading must expose the complete offer before any reveal click.
+  // Whole-scene defaults expose the complete offer before any reveal click.
   for (const term of ["Mara Voss", "Glass Chapel", "dawn", "Fifty now", "two hundred", "Kerr"]) await expect(page.getByTestId("scene-text")).toContainText(term);
   await expect(page.getByTestId("goal")).toContainText("Hear Quill's terms");
   await expect(page.getByTestId("goal")).toBeInViewport();
   await page.getByTestId("choice-ask-owner").click();
   await page.reload(); await page.getByTestId("continue-run").click();
   await expect(page.getByTestId("goal")).toContainText("Hear Quill's terms");
-  await page.getByTestId("show-rest").click();
+  await expect(page.getByTestId("show-rest")).toHaveCount(0);
   await expect(page.getByTestId("scene-text")).toContainText("buyer is still a blank");
   let run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
   expect(run.creds).toBe(20); expect(run.flags.hired).toBeUndefined(); expect(run.journal).toEqual([]);
@@ -1271,7 +1274,7 @@ for (const sceneId of ["opening_city", "act2_spire_brief", "act2_spire_methods",
 test("the authored stereo score decodes after an explicit sound-enabled continuation", async ({ page }) => {
   type DecodedScore = { name: string; channels: number; duration: number; sampleRate: number };
   await page.addInitScript(() => {
-    localStorage.setItem("saint-shard-preferences", JSON.stringify({ sound: true, autoVoices: false }));
+    localStorage.setItem("saint-shard-preferences", JSON.stringify({ sound: true, autoVoices: false, reading: "paragraph" }));
     const recorded = window as unknown as { decodedScores: DecodedScore[] };
     recorded.decodedScores = [];
     const names = new WeakMap<ArrayBuffer, string>();
@@ -1411,7 +1414,7 @@ test("memory timeline recovers a mismatch and retains a disputed verdict after r
 
 async function observeVoices(page: Page) {
   await page.addInitScript(() => {
-    localStorage.setItem("saint-shard-preferences", JSON.stringify({ sound: true, autoVoices: false }));
+    localStorage.setItem("saint-shard-preferences", JSON.stringify({ sound: true, autoVoices: false, reading: "paragraph" }));
     const review = window as unknown as { voiceReview: { decoded: number; started: number; stopped: number; gains: number[]; scheduled: { value: number; settling: number }[] } };
     review.voiceReview = { decoded: 0, started: 0, stopped: 0, gains: [], scheduled: [] };
     const voices = new WeakSet<AudioBuffer>();
