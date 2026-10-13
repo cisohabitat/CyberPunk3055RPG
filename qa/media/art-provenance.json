@@ -947,6 +947,106 @@
           "sha256": "0b1738ccbe2a137b9fba8b94c1b9af37767175daf57ff8cb356e17f8fffd151a"
         }
       ]
+    },
+    {
+      "id": "hearing-table",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-13",
+      "sourceFile": "/workspace/generated_images/exec-e1eb32f8-f880-4b44-b1e8-f98b21fb13af.png",
+      "sourceSha256": "14dd11a78848b38c4da999f365efd2356539a50b2a73b99bab56ccf3f5d2432f",
+      "promptSummary": "Create one standalone landscape 3:2 illustration for Saint Shard, an original cyberpunk narrative RPG set in 3055. Rich painterly cinematic realism with visible fine oil-brush texture, worn copper and iron, deep petroleum-blue shadows, restrained cyan reflections, tungsten amber practical light, intimate human-scale environment. Match a cohesive noir game illustration collection, never a glossy futuristic render. Clear layered foreground/midground, sophisticated controlled contrast, atmospheric detail, no text, logos, UI, borders, captions, readable writing, or contact information. No people or faces. The scene remains unresolved, with no celebration, stamped approval, authenticated evidence, treatment result or completed task shown. Ward Nine public hearing: a battered neighborhood records table under a warm articulated task lamp, an old compact recorder without status lights, a closed privacy sleeve, an unmarked folio, loose blank cover sheets and a graphite pencil lying untouched. Three mismatched empty chairs face the table, weathered concrete and tall rain-streaked windows beyond, a blue evening street and warm window lamps. Visually convey the tension of deciding what can be put on record; documents are neutral, no page has been filed. Recorder status must be unreadable.",
+      "deliveryProcessing": "Resize and JPEG encode only; no crop, repaint or compositing. Original generated PNG retained at sourceFile.",
+      "files": [
+        {
+          "path": "public/art/hearing-table.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 223985,
+          "sha256": "f2601ddf9af5e08a094ea34fc6e20a2739b91ddefd1e23a658952c5c4371f9c3"
+        },
+        {
+          "path": "public/art/hearing-table-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 63947,
+          "sha256": "5e75b3a4a90cafa2b1a7ccd6cd1c67000e66fb7a8b84ac1818ed52b8e17b4a7f"
+        }
+      ]
+    },
+    {
+      "id": "archive-desk",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-13",
+      "sourceFile": "/workspace/generated_images/exec-87bc9b9f-f751-4840-90fa-aca1a5970d57.png",
+      "sourceSha256": "c9c65e7346e88acac9a7d481a316bfcc1ce7eae2ed4858d2c12719f4876c45c5",
+      "promptSummary": "Create one standalone landscape 3:2 illustration for Saint Shard, an original cyberpunk narrative RPG set in 3055. Rich painterly cinematic realism with visible fine oil-brush texture, worn copper and iron, deep petroleum-blue shadows, restrained cyan reflections, tungsten amber practical light, intimate human-scale environment. Match a cohesive noir game illustration collection, never a glossy futuristic render. Clear layered foreground/midground, sophisticated controlled contrast, atmospheric detail, no text, logos, UI, borders, captions, readable writing, or contact information. No people or faces. The scene remains unresolved, with no celebration, stamped approval, authenticated evidence, treatment result or completed task shown. Helion service archive at shift change: a narrow worn metal work desk with a closed dark maintenance ledger and a paper catalog folder beneath glass, a dim inactive record reader and a brass task lamp, rows of steel card drawers behind a service shutter, rain reflected in an overhead blue window. A modest technician's empty chair, practical cables and a worn pen. Tangible institutional labor and the personal cost of being a source. No record text, issuing-key display, green approval lamp, retrieved proof or signed extraction.",
+      "deliveryProcessing": "Resize and JPEG encode only; no crop, repaint or compositing. Original generated PNG retained at sourceFile.",
+      "files": [
+        {
+          "path": "public/art/archive-desk.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 237437,
+          "sha256": "3380a27c045a88e14ed668eac830ff10184f802149f877fd5d5348b64f51c2b2"
+        },
+        {
+          "path": "public/art/archive-desk-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 66877,
+          "sha256": "2f5ac1bc069bc135913ff3abb573ce67ba5332dc6893db2f3216fbfff85f9fdc"
+        }
+      ]
+    },
+    {
+      "id": "courier-table",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-13",
+      "sourceFile": "/workspace/generated_images/exec-44135639-59d3-40a1-8ea2-da1bb6bc1ae5.png",
+      "sourceSha256": "2b275c4583abcb0f2d315cbd1c094f013fdcadfceeb7ee11c5762caf268a9477",
+      "promptSummary": "Create one standalone landscape 3:2 illustration for Saint Shard, an original cyberpunk narrative RPG set in 3055. Rich painterly cinematic realism with visible fine oil-brush texture, worn copper and iron, deep petroleum-blue shadows, restrained cyan reflections, tungsten amber practical light, intimate human-scale environment. Match a cohesive noir game illustration collection, never a glossy futuristic render. Clear layered foreground/midground, sophisticated controlled contrast, atmospheric detail, no text, logos, UI, borders, captions, readable writing, or contact information. No people or faces. The scene remains unresolved, with no celebration, stamped approval, authenticated evidence, treatment result or completed task shown. Ward Nine courier table in a sheltered street workshop: a weathered timber tabletop with a closed rust-brown courier satchel, several indistinct folded routing slips face down, a metal cup, a stub pencil, a scuffed mechanical desk relay, an empty chair with a dark canvas coat and faded burnt-orange scarf over its back. Beyond the open workshop shutter, rainy blue walkways and an amber-lit neighborhood window. No parcel, stock receipt stamp, cargo arrival or passenger clearance is visible; the setting must fit both an unresolved delivery and a later conversation. Quiet, practical, attentive.",
+      "deliveryProcessing": "Resize and JPEG encode only; no crop, repaint or compositing. Original generated PNG retained at sourceFile.",
+      "files": [
+        {
+          "path": "public/art/courier-table.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 246964,
+          "sha256": "6220068ae893776190816cb2d8bd7c9ef6c8047c5d76a83b301995e2613c61c4"
+        },
+        {
+          "path": "public/art/courier-table-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 70751,
+          "sha256": "bd125f6d6fa70be83255aeeee96f470a7ce9830d59fd6795411b9aa6025f4bc9"
+        }
+      ]
+    },
+    {
+      "id": "laundry-cart",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-13",
+      "sourceFile": "/workspace/generated_images/exec-9f795948-542a-4de4-98ea-31be5335bfde.png",
+      "sourceSha256": "e659f741a0dde328285c169f1225dd7c713c9f2f1e6b8c3707bea3b6636297f5",
+      "promptSummary": "Create one standalone landscape 3:2 illustration for Saint Shard, an original cyberpunk narrative RPG set in 3055. Rich painterly cinematic realism with visible fine oil-brush texture, worn copper and iron, deep petroleum-blue shadows, restrained cyan reflections, tungsten amber practical light, intimate human-scale environment. Match a cohesive noir game illustration collection, never a glossy futuristic render. Clear layered foreground/midground, sophisticated controlled contrast, atmospheric detail, no text, logos, UI, borders, captions, readable writing, or contact information. No people or faces. The scene remains unresolved, with no celebration, stamped approval, authenticated evidence, treatment result or completed task shown. Ward Nine shelter laundry visit: a worn small wheeled laundry cart with a basket of damp faded clothing and folded rough towels beside a utilitarian wash basin, an empty teal raincoat on a wall hook, a chipped enamel kettle on a shelf and a battered stool. Amber light falls on frayed cloth, cool rainlight enters through a narrow window over cracked concrete. Ordinary shared neighborhood work, compassionate without sentimentality. No people, displaced family, repaired valve, completed wash, safe-room allocation or rescue is depicted. Clothing remains visibly awaiting washing.",
+      "deliveryProcessing": "Resize and JPEG encode only; no crop, repaint or compositing. Original generated PNG retained at sourceFile.",
+      "files": [
+        {
+          "path": "public/art/laundry-cart.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 280170,
+          "sha256": "6096adbf567c6e46a7ac3e3c82b7f96aed7c0b283d3d911ceaaacd14afd8001d"
+        },
+        {
+          "path": "public/art/laundry-cart-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 75495,
+          "sha256": "5abd3be75cde378daed3bbe85bacee6132ed306e2fbceb8a7c5e7a9451021f33"
+        }
+      ]
     }
   ]
 }

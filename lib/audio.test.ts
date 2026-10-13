@@ -8,6 +8,7 @@ import beds from "../qa/media/bed-delivery.json";
 import voices from "../qa/media/voice-provenance.json";
 import lines from "../qa/media/voice-lines.json";
 import reactionCycle from "../qa/media/voice-reactions.json";
+import courierCycle from "../qa/media/courier-art-voice.json";
 import { commitChoice, createCharacter, getScene, presentChoices, sceneText } from "./engine";
 import type { GameState } from "./types";
 import type { ReplaySpec } from "./story-replay";
@@ -171,6 +172,15 @@ describe("beds", () => {
     for (const [id, expected] of Object.entries(reactionCycle.preservedDeliverySha256)) {
       const bytes = readFileSync(new URL(`../public/audio/${id}.wav`, import.meta.url));
       assert.equal(createHash("sha256").update(bytes).digest("hex"), expected, id);
+    }
+  });
+  it("preserves all preceding voice deliveries while adding Asa's stock cast voice", () => {
+    for (const [id, expected] of Object.entries(courierCycle.preservedDeliverySha256)) {
+      assert.equal(createHash("sha256").update(readFileSync(new URL(`../public/audio/${id}.wav`, import.meta.url))).digest("hex"), expected, id);
+    }
+    for (const line of courierCycle.voiceAdditions.filter(line => line.speaker === "Asa")) {
+      assert.equal(line.voice, "af_alloy");
+      assert.ok(!lines.some(existing => existing.speaker !== "Asa" && existing.voice === line.voice));
     }
   });
   it("keeps refusal and handover voices behind their exact visible quotations", () => {

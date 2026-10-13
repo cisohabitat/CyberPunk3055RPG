@@ -30,7 +30,7 @@
     ]
   },
   "processing": "PCM16 mono master retained; optional exact-quotation phrase segments with bounded speed/pause and 8ms phrase edges; delivery peak normalized to 0.72, 8ms clip edges and 80ms head/tail silence.",
-  "reviewStatus": "Sixty-three fixed stock synthetic quotations. Eighteen directed reactions added; all preceding forty-five deliveries unchanged. Authored route, exact speaker/text, signal and native playback checks; no commissioned actor or independent listening acceptance.",
+  "reviewStatus": "Seventy-five fixed stock synthetic quotations. Twelve additions: ten for Asa, one for Nia, one for Ives. All preceding sixty-three deliveries unchanged; nine distinct stock cast styles. Authored route, exact speaker/text, signal and native playback checks; no commissioned actor or independent listening acceptance.",
   "lines": [
     {
       "id": "voice-mara-assurance",
@@ -1764,6 +1764,419 @@
       "durationSeconds": 3.585958333333333,
       "peak": 0.7199926755577257,
       "rms": 0.0906795106627191
+    },
+    {
+      "id": "voice-asa-freight-terms",
+      "scene": "act2_freight_brief",
+      "speaker": "Asa",
+      "voice": "af_alloy",
+      "speed": 0.98,
+      "text": "Keep it cold. Get a receipt. No patient names. If the service route stays private, I can spare one passenger clearance. Register the handover and that route retires.",
+      "segments": [
+        {
+          "text": "Keep it cold.",
+          "speed": 0.98,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "Get a receipt.",
+          "speed": 0.98,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "No patient names.",
+          "speed": 0.98,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "If the service route stays private, I can spare one passenger clearance.",
+          "speed": 0.98,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "Register the handover and that route retires.",
+          "speed": 0.98,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Practical instructions, then a firm route limit.",
+      "language": "en-us",
+      "path": "public/audio/voice-asa-freight-terms.wav",
+      "sourceFile": "/workspace/generated_audio/courier-art-voice/voice-asa-freight-terms.wav",
+      "sourceSha256": "aa7ea8e2a421191142a5e5e62ab477ae49eb740c97962d06b93f0a4c22d153f6",
+      "sha256": "bc43564753f0987497475a0b2c82a555a66a42de2ff0a20eb352e6b53bb9ca68",
+      "bytes": 718764,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 14.973333333333333,
+      "peak": 0.7199926755577257,
+      "rms": 0.07172594568293879
+    },
+    {
+      "id": "voice-asa-exposed-crossing",
+      "scene": "act2_freight_recovery",
+      "speaker": "Asa",
+      "voice": "af_alloy",
+      "speed": 0.98,
+      "text": "We can finish the delivery. We can\u2019t pretend they didn\u2019t see us.",
+      "segments": [
+        {
+          "text": "We can finish the delivery.",
+          "speed": 0.98,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "We can\u2019t pretend they didn\u2019t see us.",
+          "speed": 0.98,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Steady after a setback; finish the work without denying exposure.",
+      "language": "en-us",
+      "path": "public/audio/voice-asa-exposed-crossing.wav",
+      "sourceFile": "/workspace/generated_audio/courier-art-voice/voice-asa-exposed-crossing.wav",
+      "sourceSha256": "40fd92902f6be7628dec0457f1c3c98fd5a24154a23fdaa50af3dd02d74b31f3",
+      "sha256": "44caac38be4a22a40adc4503195d7632c763df39ec7c586a28c61ff5aca6fd46",
+      "bytes": 247468,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 5.1546666666666665,
+      "peak": 0.7199926755577257,
+      "rms": 0.07626706815105849
+    },
+    {
+      "id": "voice-asa-earned-clearance",
+      "scene": "act2_freight_result",
+      "speaker": "Asa",
+      "voice": "af_alloy",
+      "speed": 0.98,
+      "text": "One crossing. Tell me when the week is over what it was for.",
+      "segments": [
+        {
+          "text": "One crossing.",
+          "speed": 0.98,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "Tell me when the week is over what it was for.",
+          "speed": 0.98,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Modest earned promise, with curiosity rather than ceremony.",
+      "language": "en-us",
+      "path": "public/audio/voice-asa-earned-clearance.wav",
+      "sourceFile": "/workspace/generated_audio/courier-art-voice/voice-asa-earned-clearance.wav",
+      "sourceSha256": "011f6e2d5c816cc70daf3f91d74c1b7ab0cbb46425a1635c404e33814ab4ed22",
+      "sha256": "dceb2927f200d6734829ba34d424d8bc0e06497a038aac7a5c5d9264cc017f7a",
+      "bytes": 250572,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 5.219333333333333,
+      "peak": 0.7199926755577257,
+      "rms": 0.07938995436500726
+    },
+    {
+      "id": "voice-asa-unconfirmed-result",
+      "scene": "act2_freight_result",
+      "speaker": "Asa",
+      "voice": "af_alloy",
+      "speed": 0.98,
+      "text": "I can answer for what we saw. I can\u2019t sign for the part we didn\u2019t.",
+      "segments": [
+        {
+          "text": "I can answer for what we saw.",
+          "speed": 0.98,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "I can\u2019t sign for the part we didn\u2019t.",
+          "speed": 0.98,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Honest limits, no blame or invented receipt.",
+      "language": "en-us",
+      "path": "public/audio/voice-asa-unconfirmed-result.wav",
+      "sourceFile": "/workspace/generated_audio/courier-art-voice/voice-asa-unconfirmed-result.wav",
+      "sourceSha256": "98f08e511a9010c8b774f96900c43aedc0b90543a547e95dd547faa1417f77ff",
+      "sha256": "fcf1909238144a856e037c17d855a56f07e6dbfdc825107283705a7617b62023",
+      "bytes": 268396,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 5.5906666666666665,
+      "peak": 0.7199926755577257,
+      "rms": 0.08933676024775383
+    },
+    {
+      "id": "voice-asa-private-receipt",
+      "scene": "act3_freight_visit",
+      "speaker": "Asa",
+      "voice": "af_alloy",
+      "speed": 0.98,
+      "text": "The parcel got there, privately. One crossing was what I owed you.",
+      "segments": [
+        {
+          "text": "The parcel got there, privately.",
+          "speed": 0.98,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "One crossing was what I owed you.",
+          "speed": 0.98,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Quiet acknowledgement of the actual private delivery.",
+      "language": "en-us",
+      "path": "public/audio/voice-asa-private-receipt.wav",
+      "sourceFile": "/workspace/generated_audio/courier-art-voice/voice-asa-private-receipt.wav",
+      "sourceSha256": "a32d4da791c52c6ec46e49bea070ce7c49e59199b4ea07f054a2f34511f4d435",
+      "sha256": "4aa45014e3fffe8ba098b1f3b87d905cb3f74a906d4fec0e472a2496ae115616",
+      "bytes": 269868,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 5.621333333333333,
+      "peak": 0.7199926755577257,
+      "rms": 0.08021230524700482
+    },
+    {
+      "id": "voice-asa-exposed-receipt",
+      "scene": "act3_freight_visit",
+      "speaker": "Asa",
+      "voice": "af_alloy",
+      "speed": 0.98,
+      "text": "The parcel got there. The route is still exposed and retired.",
+      "segments": [
+        {
+          "text": "The parcel got there.",
+          "speed": 0.98,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "The route is still exposed and retired.",
+          "speed": 0.98,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Separate completed delivery from a permanently exposed route.",
+      "language": "en-us",
+      "path": "public/audio/voice-asa-exposed-receipt.wav",
+      "sourceFile": "/workspace/generated_audio/courier-art-voice/voice-asa-exposed-receipt.wav",
+      "sourceSha256": "511f87d7d21ba0b52fbdeb8776489ee8a44f625691a4981cbd0aee5a3c9e28d9",
+      "sha256": "1d5c9f372fc82a72225ec2dd7f210e8dea05dc66a18b61c99dde46e8d2e935f5",
+      "bytes": 265034,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 5.520625,
+      "peak": 0.7199926755577257,
+      "rms": 0.08111211087189053
+    },
+    {
+      "id": "voice-asa-late-receipt",
+      "scene": "act3_freight_visit",
+      "speaker": "Asa",
+      "voice": "af_alloy",
+      "speed": 0.98,
+      "text": "The batch book finally answered. Received after you left. That doesn't buy back our passenger route.",
+      "segments": [
+        {
+          "text": "The batch book finally answered.",
+          "speed": 0.98,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "Received after you left.",
+          "speed": 0.98,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "That doesn't buy back our passenger route.",
+          "speed": 0.98,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Relief at the answer without rewriting its timing.",
+      "language": "en-us",
+      "path": "public/audio/voice-asa-late-receipt.wav",
+      "sourceFile": "/workspace/generated_audio/courier-art-voice/voice-asa-late-receipt.wav",
+      "sourceSha256": "38bf12667d8c11f1203b118c2ea01ad11a1806c99a7eca0bfaa7d1e233627649",
+      "sha256": "f81400575eb7ba9a2f290b36747622b3a2285a4520ed8710b7d0448044576c04",
+      "bytes": 402924,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 8.393333333333333,
+      "peak": 0.7199926755577257,
+      "rms": 0.08183946456069674
+    },
+    {
+      "id": "voice-asa-motive-identity",
+      "scene": "act3_freight_reflection",
+      "speaker": "Asa",
+      "voice": "af_alloy",
+      "speed": 0.98,
+      "text": "And remember that the people receiving your work have names too.",
+      "segments": [
+        {
+          "text": "And remember that the people receiving your work have names too.",
+          "speed": 0.98,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Ordinary attention to the people at the other end of the job.",
+      "language": "en-us",
+      "path": "public/audio/voice-asa-motive-identity.wav",
+      "sourceFile": "/workspace/generated_audio/courier-art-voice/voice-asa-motive-identity.wav",
+      "sourceSha256": "7b546bca7b749e22cc93d7390acadf3fc1bcec0e0dcac076942e7a14e0b849c9",
+      "sha256": "1441550312f795a54960722c33b12a778e5d99c6889929d2979762d282e5d54b",
+      "bytes": 198188,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 4.128,
+      "peak": 0.7199926755577257,
+      "rms": 0.07523659650139124
+    },
+    {
+      "id": "voice-asa-motive-exit",
+      "scene": "act3_freight_reflection",
+      "speaker": "Asa",
+      "voice": "af_alloy",
+      "speed": 0.98,
+      "text": "Choose who you ask to hold the door.",
+      "segments": [
+        {
+          "text": "Choose who you ask to hold the door.",
+          "speed": 0.98,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Offer a small personal question without promising escape.",
+      "language": "en-us",
+      "path": "public/audio/voice-asa-motive-exit.wav",
+      "sourceFile": "/workspace/generated_audio/courier-art-voice/voice-asa-motive-exit.wav",
+      "sourceSha256": "f5a91eee2f8e89af3f0e5fe49cd64a2c7248c4d4c9f2c3132f65428af86b97f3",
+      "sha256": "995daa08be8e38922b2dd0526956f508375f0a0aae76445aea95d5fc5a09e21f",
+      "bytes": 131628,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 2.7413333333333334,
+      "peak": 0.7199926755577257,
+      "rms": 0.09554479929847416
+    },
+    {
+      "id": "voice-asa-motive-survival",
+      "scene": "act3_freight_reflection",
+      "speaker": "Asa",
+      "voice": "af_alloy",
+      "speed": 0.98,
+      "text": "Just keep the receipt honest about whose morning it bought.",
+      "segments": [
+        {
+          "text": "Just keep the receipt honest about whose morning it bought.",
+          "speed": 0.98,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Understand paid work while keeping its human cost visible.",
+      "language": "en-us",
+      "path": "public/audio/voice-asa-motive-survival.wav",
+      "sourceFile": "/workspace/generated_audio/courier-art-voice/voice-asa-motive-survival.wav",
+      "sourceSha256": "03290dd1701eb77a0ce32c0cd3fa05668dc3bff6a663e6d5012e566524a14f94",
+      "sha256": "28286c98f86f73027b9829582852637078e800588f5875a69894a26789748057",
+      "bytes": 184876,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 3.8506666666666667,
+      "peak": 0.7199926755577257,
+      "rms": 0.07807367378527184
+    },
+    {
+      "id": "voice-nia-room-ownership",
+      "scene": "act3_witness_visit",
+      "speaker": "Nia Pell",
+      "voice": "af_nova",
+      "speed": 0.96,
+      "text": "The room is mine to name. That matters more than what you called the job.",
+      "segments": [
+        {
+          "text": "The room is mine to name.",
+          "speed": 0.96,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "That matters more than what you called the job.",
+          "speed": 0.96,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Clear personal agency; gratitude supplies no new permission.",
+      "language": "en-us",
+      "path": "public/audio/voice-nia-room-ownership.wav",
+      "sourceFile": "/workspace/generated_audio/courier-art-voice/voice-nia-room-ownership.wav",
+      "sourceSha256": "5480df0b6df2e674b971e6571efc2e29e2e39fae7d12e77756d5dde0e88ab4f1",
+      "sha256": "a08b82102343620a5c72d685c79968fa2c11fbe844934e0bf926882f3efd601c",
+      "bytes": 274092,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 5.709333333333333,
+      "peak": 0.7199926755577257,
+      "rms": 0.12295408047900512
+    },
+    {
+      "id": "voice-ives-kept-name",
+      "scene": "act2_helion",
+      "speaker": "Ives",
+      "voice": "am_eric",
+      "speed": 0.98,
+      "text": "We kept the name. Burning the badge was a hobby.",
+      "segments": [
+        {
+          "text": "We kept the name.",
+          "speed": 0.98,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "Burning the badge was a hobby.",
+          "speed": 0.98,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Dry institutional confidence; the file outlasts the badge.",
+      "language": "en-us",
+      "path": "public/audio/voice-ives-kept-name.wav",
+      "sourceFile": "/workspace/generated_audio/courier-art-voice/voice-ives-kept-name.wav",
+      "sourceSha256": "60763d70ddcf1b51911bf27f4cd6f11195c6a0c1cc7b62eff1bd406ddccd0d2b",
+      "sha256": "e9952155cbcef4dff1bf95b6673cb316b0d58a2f735060dfeb121ff4e37d7e83",
+      "bytes": 178732,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 3.7226666666666666,
+      "peak": 0.7199926755577257,
+      "rms": 0.11906559670348468
     }
   ],
   "generationEnvironment": {

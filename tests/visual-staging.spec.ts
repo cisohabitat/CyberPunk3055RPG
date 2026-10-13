@@ -11,6 +11,10 @@ const scenarios = [
   { sceneId: "act2_witness_arrival", art: "nia-arrival", flags: { witness_briefed: true, witness_safe: true, witness_done: true } },
   { sceneId: "act2_route_receipt", art: "kerr-handover", flags: { kerr_route_collected: true, kerr_route_private: true } },
   { sceneId: "act2_route_receipt", art: "kerr-handover", flags: { kerr_route_collected: true, kerr_route_private: true, kerr_route_trace: true, kerr_route_acknowledged: true }, portrait: "kerr-closed" },
+  { sceneId: "act3_testimony_review", art: "hearing-table", flags: { memory_sequence_checked: true } },
+  { sceneId: "act2_archive_brief", art: "archive-desk", flags: { archive_exported: true } },
+  { sceneId: "act3_freight_visit", art: "courier-table", flags: { freight_unconfirmed: true } },
+  { sceneId: "act3_shelter_visit", art: "laundry-cart", flags: { shelter_declined: true } },
 ] as const;
 const base = createCharacter({ handle: "Visual QA", givenName: "Ada", origin: "spire", bonus: { chrome: 0, nerve: 0, face: 2, ghost: 0 } });
 async function open(page: Page, run: GameState, artwork: string) {
@@ -49,7 +53,8 @@ for (const [width, artwork] of [[390, "full"], [1440, "full"], [320, "none"]] as
 });
 
 test("missing new scene plates retain their descriptions and actionable choices", async ({ browser, baseURL }) => {
-  for (const scenario of scenarios.filter(s => ["act2_response_invitation", "act2_witness_arrival", "act2_route_receipt"].includes(s.sceneId)).slice(0, 3)) {
+  test.setTimeout(90_000);
+  for (const scenario of scenarios.filter(s => ["act2_response_invitation", "act2_witness_arrival", "act2_route_receipt", "act3_testimony_review", "act2_archive_brief", "act3_freight_visit", "act3_shelter_visit"].includes(s.sceneId))) {
     const context = await browser.newContext({ baseURL }); const page = await context.newPage();
     await page.route("**/art/**", r => r.abort());
     await open(page, { ...base, sceneId: scenario.sceneId, flags: { ...scenario.flags } }, "full");

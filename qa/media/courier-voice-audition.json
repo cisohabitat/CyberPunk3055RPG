@@ -1,0 +1,127 @@
+{
+  "disclosure": "Fixed stock synthetic voices, exact delivered clips with one-second gaps. Technical audition, not perceptual acceptance.",
+  "delivery": "qa/media/courier-voice-preview.mp3",
+  "sha256": "8d1fe9b1eff983ad8be18d658630013bcac552db3f4dcb18ab9820a6ff7ae276",
+  "intervals": [
+    {
+      "id": "voice-asa-freight-terms",
+      "scene": "act2_freight_brief",
+      "speaker": "Asa",
+      "direction": "Practical instructions, then a firm route limit.",
+      "text": "Keep it cold. Get a receipt. No patient names. If the service route stays private, I can spare one passenger clearance. Register the handover and that route retires.",
+      "startSeconds": 0.0,
+      "endSeconds": 14.973333333333333,
+      "sha256": "bc43564753f0987497475a0b2c82a555a66a42de2ff0a20eb352e6b53bb9ca68"
+    },
+    {
+      "id": "voice-asa-exposed-crossing",
+      "scene": "act2_freight_recovery",
+      "speaker": "Asa",
+      "direction": "Steady after a setback; finish the work without denying exposure.",
+      "text": "We can finish the delivery. We can\u2019t pretend they didn\u2019t see us.",
+      "startSeconds": 15.973333333333333,
+      "endSeconds": 21.128,
+      "sha256": "44caac38be4a22a40adc4503195d7632c763df39ec7c586a28c61ff5aca6fd46"
+    },
+    {
+      "id": "voice-asa-earned-clearance",
+      "scene": "act2_freight_result",
+      "speaker": "Asa",
+      "direction": "Modest earned promise, with curiosity rather than ceremony.",
+      "text": "One crossing. Tell me when the week is over what it was for.",
+      "startSeconds": 22.128,
+      "endSeconds": 27.34733333333333,
+      "sha256": "dceb2927f200d6734829ba34d424d8bc0e06497a038aac7a5c5d9264cc017f7a"
+    },
+    {
+      "id": "voice-asa-unconfirmed-result",
+      "scene": "act2_freight_result",
+      "speaker": "Asa",
+      "direction": "Honest limits, no blame or invented receipt.",
+      "text": "I can answer for what we saw. I can\u2019t sign for the part we didn\u2019t.",
+      "startSeconds": 28.347333333333335,
+      "endSeconds": 33.938,
+      "sha256": "fcf1909238144a856e037c17d855a56f07e6dbfdc825107283705a7617b62023"
+    },
+    {
+      "id": "voice-asa-private-receipt",
+      "scene": "act3_freight_visit",
+      "speaker": "Asa",
+      "direction": "Quiet acknowledgement of the actual private delivery.",
+      "text": "The parcel got there, privately. One crossing was what I owed you.",
+      "startSeconds": 34.938,
+      "endSeconds": 40.559333333333335,
+      "sha256": "4aa45014e3fffe8ba098b1f3b87d905cb3f74a906d4fec0e472a2496ae115616"
+    },
+    {
+      "id": "voice-asa-exposed-receipt",
+      "scene": "act3_freight_visit",
+      "speaker": "Asa",
+      "direction": "Separate completed delivery from a permanently exposed route.",
+      "text": "The parcel got there. The route is still exposed and retired.",
+      "startSeconds": 41.559333333333335,
+      "endSeconds": 47.07995833333334,
+      "sha256": "1d5c9f372fc82a72225ec2dd7f210e8dea05dc66a18b61c99dde46e8d2e935f5"
+    },
+    {
+      "id": "voice-asa-late-receipt",
+      "scene": "act3_freight_visit",
+      "speaker": "Asa",
+      "direction": "Relief at the answer without rewriting its timing.",
+      "text": "The batch book finally answered. Received after you left. That doesn't buy back our passenger route.",
+      "startSeconds": 48.07995833333333,
+      "endSeconds": 56.47329166666666,
+      "sha256": "f81400575eb7ba9a2f290b36747622b3a2285a4520ed8710b7d0448044576c04"
+    },
+    {
+      "id": "voice-asa-motive-identity",
+      "scene": "act3_freight_reflection",
+      "speaker": "Asa",
+      "direction": "Ordinary attention to the people at the other end of the job.",
+      "text": "And remember that the people receiving your work have names too.",
+      "startSeconds": 57.47329166666667,
+      "endSeconds": 61.60129166666667,
+      "sha256": "1441550312f795a54960722c33b12a778e5d99c6889929d2979762d282e5d54b"
+    },
+    {
+      "id": "voice-asa-motive-exit",
+      "scene": "act3_freight_reflection",
+      "speaker": "Asa",
+      "direction": "Offer a small personal question without promising escape.",
+      "text": "Choose who you ask to hold the door.",
+      "startSeconds": 62.60129166666667,
+      "endSeconds": 65.342625,
+      "sha256": "995daa08be8e38922b2dd0526956f508375f0a0aae76445aea95d5fc5a09e21f"
+    },
+    {
+      "id": "voice-asa-motive-survival",
+      "scene": "act3_freight_reflection",
+      "speaker": "Asa",
+      "direction": "Understand paid work while keeping its human cost visible.",
+      "text": "Just keep the receipt honest about whose morning it bought.",
+      "startSeconds": 66.342625,
+      "endSeconds": 70.19329166666667,
+      "sha256": "28286c98f86f73027b9829582852637078e800588f5875a69894a26789748057"
+    },
+    {
+      "id": "voice-nia-room-ownership",
+      "scene": "act3_witness_visit",
+      "speaker": "Nia Pell",
+      "direction": "Clear personal agency; gratitude supplies no new permission.",
+      "text": "The room is mine to name. That matters more than what you called the job.",
+      "startSeconds": 71.19329166666667,
+      "endSeconds": 76.902625,
+      "sha256": "a08b82102343620a5c72d685c79968fa2c11fbe844934e0bf926882f3efd601c"
+    },
+    {
+      "id": "voice-ives-kept-name",
+      "scene": "act2_helion",
+      "speaker": "Ives",
+      "direction": "Dry institutional confidence; the file outlasts the badge.",
+      "text": "We kept the name. Burning the badge was a hobby.",
+      "startSeconds": 77.902625,
+      "endSeconds": 81.62529166666667,
+      "sha256": "e9952155cbcef4dff1bf95b6673cb316b0d58a2f735060dfeb121ff4e37d7e83"
+    }
+  ]
+}

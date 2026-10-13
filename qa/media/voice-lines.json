@@ -908,5 +908,250 @@
         "pauseAfter": 0
       }
     ]
+  },
+  {
+    "id": "voice-asa-freight-terms",
+    "scene": "act2_freight_brief",
+    "speaker": "Asa",
+    "voice": "af_alloy",
+    "speed": 0.98,
+    "text": "Keep it cold. Get a receipt. No patient names. If the service route stays private, I can spare one passenger clearance. Register the handover and that route retires.",
+    "segments": [
+      {
+        "text": "Keep it cold.",
+        "speed": 0.98,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "Get a receipt.",
+        "speed": 0.98,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "No patient names.",
+        "speed": 0.98,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "If the service route stays private, I can spare one passenger clearance.",
+        "speed": 0.98,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "Register the handover and that route retires.",
+        "speed": 0.98,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-asa-exposed-crossing",
+    "scene": "act2_freight_recovery",
+    "speaker": "Asa",
+    "voice": "af_alloy",
+    "speed": 0.98,
+    "text": "We can finish the delivery. We can\u2019t pretend they didn\u2019t see us.",
+    "segments": [
+      {
+        "text": "We can finish the delivery.",
+        "speed": 0.98,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "We can\u2019t pretend they didn\u2019t see us.",
+        "speed": 0.98,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-asa-earned-clearance",
+    "scene": "act2_freight_result",
+    "speaker": "Asa",
+    "voice": "af_alloy",
+    "speed": 0.98,
+    "text": "One crossing. Tell me when the week is over what it was for.",
+    "segments": [
+      {
+        "text": "One crossing.",
+        "speed": 0.98,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "Tell me when the week is over what it was for.",
+        "speed": 0.98,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-asa-unconfirmed-result",
+    "scene": "act2_freight_result",
+    "speaker": "Asa",
+    "voice": "af_alloy",
+    "speed": 0.98,
+    "text": "I can answer for what we saw. I can\u2019t sign for the part we didn\u2019t.",
+    "segments": [
+      {
+        "text": "I can answer for what we saw.",
+        "speed": 0.98,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "I can\u2019t sign for the part we didn\u2019t.",
+        "speed": 0.98,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-asa-private-receipt",
+    "scene": "act3_freight_visit",
+    "speaker": "Asa",
+    "voice": "af_alloy",
+    "speed": 0.98,
+    "text": "The parcel got there, privately. One crossing was what I owed you.",
+    "segments": [
+      {
+        "text": "The parcel got there, privately.",
+        "speed": 0.98,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "One crossing was what I owed you.",
+        "speed": 0.98,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-asa-exposed-receipt",
+    "scene": "act3_freight_visit",
+    "speaker": "Asa",
+    "voice": "af_alloy",
+    "speed": 0.98,
+    "text": "The parcel got there. The route is still exposed and retired.",
+    "segments": [
+      {
+        "text": "The parcel got there.",
+        "speed": 0.98,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "The route is still exposed and retired.",
+        "speed": 0.98,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-asa-late-receipt",
+    "scene": "act3_freight_visit",
+    "speaker": "Asa",
+    "voice": "af_alloy",
+    "speed": 0.98,
+    "text": "The batch book finally answered. Received after you left. That doesn't buy back our passenger route.",
+    "segments": [
+      {
+        "text": "The batch book finally answered.",
+        "speed": 0.98,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "Received after you left.",
+        "speed": 0.98,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "That doesn't buy back our passenger route.",
+        "speed": 0.98,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-asa-motive-identity",
+    "scene": "act3_freight_reflection",
+    "speaker": "Asa",
+    "voice": "af_alloy",
+    "speed": 0.98,
+    "text": "And remember that the people receiving your work have names too.",
+    "segments": [
+      {
+        "text": "And remember that the people receiving your work have names too.",
+        "speed": 0.98,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-asa-motive-exit",
+    "scene": "act3_freight_reflection",
+    "speaker": "Asa",
+    "voice": "af_alloy",
+    "speed": 0.98,
+    "text": "Choose who you ask to hold the door.",
+    "segments": [
+      {
+        "text": "Choose who you ask to hold the door.",
+        "speed": 0.98,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-asa-motive-survival",
+    "scene": "act3_freight_reflection",
+    "speaker": "Asa",
+    "voice": "af_alloy",
+    "speed": 0.98,
+    "text": "Just keep the receipt honest about whose morning it bought.",
+    "segments": [
+      {
+        "text": "Just keep the receipt honest about whose morning it bought.",
+        "speed": 0.98,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-nia-room-ownership",
+    "scene": "act3_witness_visit",
+    "speaker": "Nia Pell",
+    "voice": "af_nova",
+    "speed": 0.96,
+    "text": "The room is mine to name. That matters more than what you called the job.",
+    "segments": [
+      {
+        "text": "The room is mine to name.",
+        "speed": 0.96,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "That matters more than what you called the job.",
+        "speed": 0.96,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-ives-kept-name",
+    "scene": "act2_helion",
+    "speaker": "Ives",
+    "voice": "am_eric",
+    "speed": 0.98,
+    "text": "We kept the name. Burning the badge was a hobby.",
+    "segments": [
+      {
+        "text": "We kept the name.",
+        "speed": 0.98,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "Burning the badge was a hobby.",
+        "speed": 0.98,
+        "pauseAfter": 0
+      }
+    ]
   }
 ]

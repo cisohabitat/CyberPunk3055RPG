@@ -72,11 +72,6 @@
         "act3_edda_terms",
         "act3_edda_methods",
         "act3_edda_reply",
-        "act2_archive_brief",
-        "act2_archive_prep",
-        "act2_archive_compare",
-        "act2_archive_challenge",
-        "act2_archive_custody",
         "act3_edda_visit"
       ]
     },
@@ -91,13 +86,8 @@
         "act2_shelter_hall",
         "act2_shelter_rooms",
         "act2_shelter_result",
-        "act3_shelter_visit",
         "ward_wall",
         "act3_arrival",
-        "act3_testimony_review",
-        "act3_testimony_consent",
-        "act3_testimony_correction",
-        "act3_testimony_record",
         "act2_origin_gutterwire",
         "act2_witness_safe",
         "act2_public_response",
@@ -115,10 +105,7 @@
         "act2_freight_crossing",
         "act2_freight_recovery",
         "act2_freight_intake",
-        "act2_freight_result",
-        "act3_freight_visit",
-        "act3_freight_query",
-        "act3_freight_reflection"
+        "act2_freight_result"
       ]
     },
     {
@@ -140,7 +127,7 @@
     {
       "treatment": "portrait",
       "asset": "/art/quill.jpg",
-      "reason": "Reuse Quill’s existing portrait for briefing, memory ownership questions and recurring street work. The counter remains the same place; no new setting plate is needed. His portrait does not reveal the buyer, memo contents or an accepted contract.",
+      "reason": "Reuse Quill\u2019s existing portrait for briefing, memory ownership questions and recurring street work. The counter remains the same place; no new setting plate is needed. His portrait does not reveal the buyer, memo contents or an accepted contract.",
       "scenes": [
         "pay_yes",
         "pay_no",
@@ -172,7 +159,7 @@
     {
       "treatment": "portrait",
       "asset": "/art/lumen.jpg",
-      "reason": "Use Lumen’s established portrait for clinic, care, source and dispatch conversations. Her presence identifies the recurring speaker; no art claims treatment, witness safety or completed repair.",
+      "reason": "Use Lumen\u2019s established portrait for clinic, care, source and dispatch conversations. Her presence identifies the recurring speaker; no art claims treatment, witness safety or completed repair.",
       "scenes": [
         "lumen",
         "lumen_deal",
@@ -203,7 +190,7 @@
     {
       "treatment": "portrait",
       "asset": "/art/mara.jpg",
-      "reason": "Reuse Mara’s established portrait at the chair and during replay/interpretation of her recorded hour. Prose identifies recorded testimony; the portrait supplies no new live response, source proof or verdict.",
+      "reason": "Reuse Mara\u2019s established portrait at the chair and during replay/interpretation of her recorded hour. Prose identifies recorded testimony; the portrait supplies no new live response, source proof or verdict.",
       "scenes": [
         "vault_quiet",
         "memory_reconstruction",
@@ -214,7 +201,7 @@
     {
       "treatment": "portrait",
       "asset": "/art/kerr.jpg",
-      "reason": "Reuse Kerr’s established portrait for confrontation, checkpoint and repair guidance. It depicts no rolled outcome, injury or successful repair.",
+      "reason": "Reuse Kerr\u2019s established portrait for confrontation, checkpoint and repair guidance. It depicts no rolled outcome, injury or successful repair.",
       "scenes": [
         "kerr",
         "kerr_fight",
@@ -247,20 +234,18 @@
     {
       "treatment": "portrait",
       "asset": "/art/ives.jpg",
-      "reason": "Reuse the existing Helion official portrait for offers, origin work and source challenges. It conveys no authorized evidence extraction or authenticated historical command. A briefed reader visit omits the repeated archive introduction; the legacy first encounter retains it. The hearing remains a source challenge at the same table, with no new visual event. At the Spire service desk Ives remains the primary portrait watching the queue; Edda’s explicitly attributed service-key quotation is voiced and labeled as Edda separately.",
+      "reason": "Reuse the existing Helion official portrait for offers, origin work and source challenges. It conveys no authorized evidence extraction or authenticated historical command. A briefed reader visit omits the repeated archive introduction; the legacy first encounter retains it. The hearing remains a source challenge at the same table, with no new visual event. At the Spire service desk Ives remains the primary portrait watching the queue; Edda\u2019s explicitly attributed service-key quotation is voiced and labeled as Edda separately.",
       "scenes": [
         "act2_helion_door",
         "act2_helion",
         "act2_folio",
-        "act3_testimony_hearing",
-        "act2_origin_spire",
-        "act2_archive_door"
+        "act2_origin_spire"
       ]
     },
     {
       "treatment": "background",
       "asset": "/art/canal.jpg",
-      "reason": "Reuse the established dry-canal backdrop for recovery and archive transitions. Evidence status remains in prose rather than an outcome image. Short canal returns retain Ren’s family context and an unresolved choice between street speech and paid silence; the setting depicts neither completed work nor publication. Consequence-specific returns reflect only earned work in prose; the neutral canal gives Ren no witness address, private statement or unearned outcome. The staged archive exit remembers Edda’s working shift beside the source; the neutral canal depicts no later employment response or completed inquiry.",
+      "reason": "Reuse the established dry-canal backdrop for recovery and archive transitions. Evidence status remains in prose rather than an outcome image. Short canal returns retain Ren\u2019s family context and an unresolved choice between street speech and paid silence; the setting depicts neither completed work nor publication. Consequence-specific returns reflect only earned work in prose; the neutral canal gives Ren no witness address, private statement or unearned outcome. The staged archive exit remembers Edda\u2019s working shift beside the source; the neutral canal depicts no later employment response or completed inquiry.",
       "scenes": [
         "act2_middle",
         "act2_archive_verified"
@@ -269,7 +254,7 @@
     {
       "treatment": "portrait",
       "asset": "/art/nia.jpg",
-      "reason": "Reuse Nia’s distinct portrait for private terms, review and contact. Never depict or expose a current address, moved witness or permission not present in the state. For an older save already at her reply, reuse remains suitable for her explicit one-answer terms without depicting renewed ongoing contact.",
+      "reason": "Reuse Nia\u2019s distinct portrait for private terms, review and contact. Never depict or expose a current address, moved witness or permission not present in the state. For an older save already at her reply, reuse remains suitable for her explicit one-answer terms without depicting renewed ongoing contact.",
       "scenes": [
         "act3_testimony_nia",
         "act2_witness_brief",
@@ -432,7 +417,7 @@
       "scenes": [
         "act3_chapel_return"
       ],
-      "reason": "Reuse Lumen’s neutral conversation portrait for her short Ward Nine desk reply about the Chapel record. No new place, forgiveness, completed work or cleared patrol attention is illustrated."
+      "reason": "Reuse Lumen\u2019s neutral conversation portrait for her short Ward Nine desk reply about the Chapel record. No new place, forgiveness, completed work or cleared patrol attention is illustrated."
     },
     {
       "treatment": "illustration",
@@ -545,6 +530,49 @@
       "scenes": [
         "act2_mara_company",
         "act2_mara_company_kept"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/hearing-table.jpg",
+      "reason": "The same unfiled records table supports scope, private quotation limits, challenge, correction and filing decisions. Blank cover sheets and a closed sleeve identify the place without depicting consent, authenticated proof or a completed public account. The Nia relay reply stays in her separate room with its established portrait.",
+      "scenes": [
+        "act3_testimony_review",
+        "act3_testimony_consent",
+        "act3_testimony_hearing",
+        "act3_testimony_correction",
+        "act3_testimony_record"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/archive-desk.jpg",
+      "reason": "A neutral service desk, closed maintenance ledger, catalog and dark reader establish the archive work across access, preparation, comparison, retrieval and custody. Nothing visible authenticates a key, retrieves a source, authorizes a name or erases a worker trace. Existing actual speaker portraits remain beside the plate.",
+      "scenes": [
+        "act2_archive_brief",
+        "act2_archive_prep",
+        "act2_archive_compare",
+        "act2_archive_challenge",
+        "act2_archive_door",
+        "act2_archive_custody"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/courier-table.jpg",
+      "reason": "Asa\u2019s neutral neighborhood courier table gives later receipt and personal conversations a distinct setting. A satchel and routing papers depict no arrived parcel, stock entry, restored route, passenger clearance or patient treatment; written outcomes retain authority across declined, unconfirmed, exposed, late and private deliveries.",
+      "scenes": [
+        "act3_freight_visit",
+        "act3_freight_query",
+        "act3_freight_reflection"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/laundry-cart.jpg",
+      "reason": "A cart of clothes awaiting washing establishes Sera\u2019s ordinary shared work before funding, carrying or declining the task. Spare towels do not depict the pending wash as complete; no moved household, repaired valve, witness room or treatment is shown.",
+      "scenes": [
+        "act3_shelter_visit"
       ]
     }
   ],

@@ -41,6 +41,25 @@ const SPIRE_PAYROLL: Illustration = {
 for (const id of ["act2_spire_brief", "act2_spire_sources", "act2_spire_recovery", "act2_spire_receipt"]) ENCOUNTERS[id] = SPIRE_COUNTER;
 for (const id of ["act2_spire_prep", "act2_spire_methods"]) ENCOUNTERS[id] = SPIRE_TERMINAL;
 for (const id of ["act3_spire_visit", "act3_spire_reply"]) ENCOUNTERS[id] = SPIRE_PAYROLL;
+const HEARING_TABLE: Illustration = {
+  src: "/art/hearing-table.jpg", small: "/art/hearing-table-small.jpg", caption: "Ward Nine · a public account, not yet filed",
+  description: "An untouched pencil, blank cover sheets, a closed privacy sleeve and an unmarked recorder wait on a worn table beside three empty chairs and a rainy window.",
+};
+for (const id of ["act3_testimony_review", "act3_testimony_consent", "act3_testimony_hearing", "act3_testimony_correction", "act3_testimony_record"]) ENCOUNTERS[id] = HEARING_TABLE;
+const ARCHIVE_DESK: Illustration = {
+  src: "/art/archive-desk.jpg", small: "/art/archive-desk-small.jpg", caption: "Helion · the service archive desk",
+  description: "A closed maintenance ledger, a catalog beneath glass and a dim record reader sit under a brass task lamp before rows of steel drawers and a service shutter.",
+};
+for (const id of ["act2_archive_brief", "act2_archive_prep", "act2_archive_compare", "act2_archive_challenge", "act2_archive_door", "act2_archive_custody"]) ENCOUNTERS[id] = ARCHIVE_DESK;
+const COURIER_TABLE: Illustration = {
+  src: "/art/courier-table.jpg", small: "/art/courier-table-small.jpg", caption: "Ward Nine · Asa's courier table",
+  description: "A closed courier satchel, indistinct routing slips, a metal cup and a desk relay rest beside an empty chair with a dark coat and rust-colored scarf, overlooking rainy neighborhood walkways.",
+};
+for (const id of ["act3_freight_visit", "act3_freight_query", "act3_freight_reflection"]) ENCOUNTERS[id] = COURIER_TABLE;
+ENCOUNTERS.act3_shelter_visit = {
+  src: "/art/laundry-cart.jpg", small: "/art/laundry-cart-small.jpg", caption: "Ward Nine · the next ordinary job",
+  description: "Damp clothes await washing in a wheeled cart beside a worn basin, spare towels, a battered stool and a teal raincoat beneath amber light and a rain-streaked window.",
+};
 const CANAL_DISPATCH: Illustration = { src: "/art/canal-dispatch.jpg", small: "/art/canal-dispatch-small.jpg", caption: "Canal depot · the planning alcove", description: "A neutral transit diagram rests beneath a lamp in a sheltered canal alcove; a closed canvas case waits on a shelf. No selected route or completed handover is depicted." };
 for (const id of ["act2_route_map", "act2_route_exit", "act2_route_review", "act2_route_crossing", "act2_route_recovery", "act2_route_handling", "act2_depot_methods", "act2_depot_relay", "act2_depot_return", "act2_depot_outer_pass", "act2_depot_cart_pass", "act2_depot_return_pass", "act2_depot_carry", "act2_depot_load", "act2_depot_liability", "act2_depot_contract"]) ENCOUNTERS[id] = CANAL_DISPATCH;
 const CLINIC_CONVERSATION: Illustration = { src: "/art/mara-present.jpg", small: "/art/mara-present-small.jpg", caption: "Ward Four · Mara, in the present", description: "Mara sits beside a rainy clinic window, her hands by an unmarked envelope and tea cup; an empty chair faces her across the table." };
