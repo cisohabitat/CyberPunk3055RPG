@@ -1,0 +1,127 @@
+{
+  "disclosure": "Fixed stock synthetic voices, exact delivered clips with one-second gaps. Technical audition, not perceptual acceptance.",
+  "delivery": "qa/media/threshold-voice-preview.mp3",
+  "sha256": "1a965873208984720c9bc2a41c33523ea93249f622e13b1219c76df4c38ccc48",
+  "intervals": [
+    {
+      "id": "voice-nia-own-work",
+      "scene": "act2_witness_support",
+      "speaker": "Nia Pell",
+      "direction": "A direct question about whose labor the player is promising.",
+      "text": "Tell me whose work you're offering.",
+      "startSeconds": 0.0,
+      "endSeconds": 2.592,
+      "sha256": "9ed244c27a9a76099ae1211d02d9541367aa942d9da806c5f1315041e913d0f9"
+    },
+    {
+      "id": "voice-nia-known-room",
+      "scene": "act3_witness_visit",
+      "speaker": "Nia Pell",
+      "direction": "Keep the known-room breach separate from retaining her recording.",
+      "text": "They know the room. Don't tell the wall I was protected because you still have my words.",
+      "startSeconds": 3.592,
+      "endSeconds": 10.112,
+      "sha256": "e7767291f9090f843a6f2ed7abb319c90b7c8fd188e55d45f13d19f201fe00a8"
+    },
+    {
+      "id": "voice-nia-second-room",
+      "scene": "act3_witness_visit",
+      "speaker": "Nia Pell",
+      "direction": "Acknowledge the later quiet room without erasing the first exposure.",
+      "text": "The second room is quiet. The first one still gets calls. Both belong in your account.",
+      "startSeconds": 11.112,
+      "endSeconds": 18.899333333333335,
+      "sha256": "f978af21eb12b03d5ca682a943657b74d68f20c85c28481e0d248f2b75842600"
+    },
+    {
+      "id": "voice-kerr-canal-question",
+      "scene": "act2_kerr_door",
+      "speaker": "Kerr",
+      "direction": "An understated challenge under the same awning.",
+      "text": "or you can walk past and let the canal be the argument.",
+      "startSeconds": 19.899333333333335,
+      "endSeconds": 23.342666666666666,
+      "sha256": "ed06279afef007a5ed3f2b4d24377c43a5e910d4dae1b2d3d16729adf9f8d878"
+    },
+    {
+      "id": "voice-kerr-case-terms",
+      "scene": "act2_kerr_collection_terms",
+      "speaker": "Kerr",
+      "direction": "Firm practical collection terms; no invented medical miracle.",
+      "text": "I want the case, not a treatment report. Their free courier gate writes the recipient into the shift register. If you promise to keep my name out, don't save your fare by putting it in.",
+      "startSeconds": 24.342666666666666,
+      "endSeconds": 35.504666666666665,
+      "sha256": "75b807cd94c5f261f5bd0731f2fb107b11f207e7c65651c769db7722c0e200f6"
+    },
+    {
+      "id": "voice-kerr-open-door",
+      "scene": "act2_pump_methods",
+      "speaker": "Kerr",
+      "direction": "Dry humor about the help he can actually offer.",
+      "text": "The knee won't hold a wheel. The door I can do.",
+      "startSeconds": 36.504666666666665,
+      "endSeconds": 40.056625,
+      "sha256": "7c7faa7700d1ea42618eb8966aa234184a81018a41eea25942a7ac159ecc695f"
+    },
+    {
+      "id": "voice-kerr-unsettled-week",
+      "scene": "act3_pump_visit",
+      "speaker": "Kerr",
+      "direction": "A modest contribution that does not settle past conduct.",
+      "text": "You told me the names. This time I kept a door open. That doesn't settle the rest of my week.",
+      "startSeconds": 41.056625,
+      "endSeconds": 47.510625,
+      "sha256": "c34b203ef618e0c5093763dde6794a91a7d651ca7fd2a6347c7c0c596618182c"
+    },
+    {
+      "id": "voice-mara-not-acquittal",
+      "scene": "act2_response_terms",
+      "speaker": "Mara",
+      "direction": "Calmly distinguish entering a response from being absolved.",
+      "text": "An answer is not an acquittal,",
+      "startSeconds": 48.510625,
+      "endSeconds": 50.600624999999994,
+      "sha256": "5acfdd7b5b61d253f284b3f8ed54a202a549d95058c1034c4887e123a92a2ea8"
+    },
+    {
+      "id": "voice-mara-name-at-desk",
+      "scene": "act3_response_visit",
+      "speaker": "Mara",
+      "direction": "The desk received the response; its inquiry remains unanswered.",
+      "text": "That was what I wanted my name there for.",
+      "startSeconds": 51.600625,
+      "endSeconds": 54.04258333333333,
+      "sha256": "b42ca0a409cc68c8ad73221817710cd84ab04060d2f9eb1560d94d22c739682d"
+    },
+    {
+      "id": "voice-mara-own-dispatch",
+      "scene": "act3_response_visit",
+      "speaker": "Mara",
+      "direction": "Ordinary agency after the player declined before promising.",
+      "text": "I'll find another way to send it.",
+      "startSeconds": 55.04258333333333,
+      "endSeconds": 57.249875,
+      "sha256": "4941895cc02d292fb59e5676affdd0d39ec5faedc52f73724e9d943c1994deeb"
+    },
+    {
+      "id": "voice-mara-waiting-open",
+      "scene": "act3_response_visit",
+      "speaker": "Mara",
+      "direction": "Leave unfinished dispatch honestly unfinished.",
+      "text": "Don't put an answer where the waiting is.",
+      "startSeconds": 58.249875,
+      "endSeconds": 60.60520833333334,
+      "sha256": "c94f4fb87839be99717b0b72da868c8d0dae9252222fe9546ede9c49735a6b84"
+    },
+    {
+      "id": "voice-sera-third-row",
+      "scene": "ward_wall",
+      "speaker": "Sera",
+      "direction": "A patient invitation to inspect or explain, without demanding a finale.",
+      "text": "The third row needs your eye, or help from the wards. You can try. You can also tell me why you came.",
+      "startSeconds": 61.60520833333333,
+      "endSeconds": 68.55583333333333,
+      "sha256": "7579041d76a270e29a308bb0e94f4c3de75487d5552a001ae57d0afec4b11d07"
+    }
+  ]
+}

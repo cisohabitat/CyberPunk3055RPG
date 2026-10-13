@@ -3,6 +3,10 @@ import { createCharacter } from "../lib/engine";
 import type { GameState } from "../lib/types";
 
 const scenarios = [
+  { sceneId: "act2_witness_support", art: "nia-transfer", flags: { witness_briefed: true } },
+  { sceneId: "act2_recovery", art: "ordinary-rest", flags: {} },
+  { sceneId: "act2_response_dispatch", art: "private-reply", flags: { response_private_consent: true } },
+  { sceneId: "ward_wall", art: "memorial-stair", flags: {} },
   { sceneId: "act2_notice_privacy_refusal", art: "notice-desk", flags: { notice_home_refused: true } },
   { sceneId: "act2_workshop", art: "repair-bench", flags: {} },
   { sceneId: "act2_shelter_methods", art: "shelter-pump", flags: { shelter_started: true } },
@@ -28,9 +32,12 @@ async function open(page: Page, run: GameState, artwork: string) {
   }, { run, artwork });
   await page.goto("/"); await page.getByTestId("continue-run").click();
 }
-for (const [width, artwork] of [[390, "full"], [1440, "full"], [320, "none"]] as const) test(`complete compositions preserve boundaries and saves at ${width}px`, async ({ browser, baseURL }) => {
+// Keep each test bounded as the art catalog grows; every scenario still receives
+// all three layouts and every save, responsive-source and missing-art assertion.
+const batches = Array.from({ length: Math.ceil(scenarios.length / 5) }, (_, index) => scenarios.slice(index * 5, index * 5 + 5));
+for (const [width, artwork] of [[390, "full"], [1440, "full"], [320, "none"]] as const) for (const [batchIndex, batch] of batches.entries()) test(`complete compositions preserve boundaries and saves at ${width}px, batch ${batchIndex + 1}`, async ({ browser, baseURL }) => {
   test.setTimeout(90_000);
-  for (const scenario of scenarios) {
+  for (const scenario of batch) {
     const context = await browser.newContext({ baseURL, viewport: { width, height: width > 700 ? 900 : 844 }, reducedMotion: "reduce" });
     const page = await context.newPage(); const media: string[] = [];
     page.on("request", r => { if (/\/(art|audio)\//.test(r.url())) media.push(r.url()); });
@@ -58,7 +65,7 @@ for (const [width, artwork] of [[390, "full"], [1440, "full"], [320, "none"]] as
 
 test("missing new scene plates retain their descriptions and actionable choices", async ({ browser, baseURL }) => {
   test.setTimeout(90_000);
-  for (const scenario of scenarios.filter(s => ["act2_notice_privacy_refusal", "act2_workshop", "act2_shelter_methods", "act2_witness_checkpoint", "act2_response_invitation", "act2_witness_arrival", "act2_route_receipt", "act3_testimony_review", "act2_archive_brief", "act3_freight_visit", "act3_shelter_visit"].includes(s.sceneId))) {
+  for (const scenario of scenarios.filter(s => ["act2_witness_support", "act2_recovery", "act2_response_dispatch", "ward_wall", "act2_notice_privacy_refusal", "act2_workshop", "act2_shelter_methods", "act2_witness_checkpoint", "act2_response_invitation", "act2_witness_arrival", "act2_route_receipt", "act3_testimony_review", "act2_archive_brief", "act3_freight_visit", "act3_shelter_visit"].includes(s.sceneId))) {
     const context = await browser.newContext({ baseURL }); const page = await context.newPage();
     await page.route("**/art/**", r => r.abort());
     await open(page, { ...base, sceneId: scenario.sceneId, flags: { ...scenario.flags } }, "full");

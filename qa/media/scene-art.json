@@ -85,8 +85,6 @@
         "act2_shelter_hall",
         "act2_shelter_rooms",
         "act2_shelter_result",
-        "ward_wall",
-        "act3_arrival",
         "act2_origin_gutterwire",
         "act2_witness_safe",
         "act2_public_response",
@@ -167,7 +165,6 @@
         "act2_lumen",
         "act2_witness_door",
         "act2_witness_lost",
-        "act2_recovery",
         "act2_recovery_after",
         "act2_pump_brief",
         "act2_pump_triage",
@@ -250,7 +247,6 @@
       "reason": "Reuse Nia\u2019s distinct portrait for private terms, review and contact. Never depict or expose a current address, moved witness or permission not present in the state. For an older save already at her reply, reuse remains suitable for her explicit one-answer terms without depicting renewed ongoing contact.",
       "scenes": [
         "act3_testimony_nia",
-        "act2_witness_brief",
         "act3_witness_visit",
         "act3_nia_contact"
       ]
@@ -331,11 +327,7 @@
       "asset": "/art/mara.jpg",
       "reason": "Existing Mara portrait supports the present-day hope, optional invitation, refusal and later personal response. A shared hour keeps its own record and grants no acquittal, source, treatment result or quotation permission; the actual new window moment has a dedicated neutral illustration.",
       "scenes": [
-        "act2_response_refusal",
-        "act2_response_terms",
         "act2_mara_quiet",
-        "act2_response_dispatch",
-        "act2_response_receipt",
         "act3_mara_followup"
       ]
     },
@@ -354,14 +346,6 @@
       "reason": "Reuse Quill at the existing Chapel service consultation. Machinery preparation remains described in text; no disabled reader or accepted bargain is depicted.",
       "scenes": [
         "chapel_methods"
-      ]
-    },
-    {
-      "treatment": "portrait",
-      "asset": "/art/nia.jpg",
-      "reason": "Reuse Nia for her chair handling and volunteer terms in the same witness room; no completed move, care outcome or recording permission is shown.",
-      "scenes": [
-        "act2_witness_support"
       ]
     },
     {
@@ -594,6 +578,43 @@
       "reason": "The checkpoint setting depicts no witness identity, approved crossing, protected destination or completed transfer; Kerr\u2019s actual portrait remains.",
       "scenes": [
         "act2_witness_checkpoint"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/nia-transfer.jpg",
+      "reason": "Nia\u2019s pre-transfer agency and established appearance accompany her briefing and work question. No tightened harness, completed move, protected room, recording or new permission is depicted.",
+      "scenes": [
+        "act2_witness_brief",
+        "act2_witness_support"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/ordinary-rest.jpg",
+      "reason": "The available ordinary seat distinguishes optional rest from memory extraction before the player accepts, pays for or declines recovery. No completed care or strain outcome is shown.",
+      "scenes": [
+        "act2_recovery"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/private-reply.jpg",
+      "reason": "Neutral correspondence materials accompany refusal, private terms and dispatch without depicting a public release, queue intake, inquiry finding or acquittal. The envelope flap and written source details stay out of view.",
+      "scenes": [
+        "act2_response_refusal",
+        "act2_response_terms",
+        "act2_response_dispatch",
+        "act2_response_receipt"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/memorial-stair.jpg",
+      "reason": "The populated memorial establishes the wall before an independent finale choice. No readable identity, open witness ledger, address, fresh inscription, completed declaration or absolution is depicted.",
+      "scenes": [
+        "ward_wall",
+        "act3_arrival"
       ]
     }
   ],

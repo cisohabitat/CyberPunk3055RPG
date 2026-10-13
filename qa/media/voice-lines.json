@@ -1418,5 +1418,235 @@
         "pauseAfter": 0
       }
     ]
+  },
+  {
+    "id": "voice-nia-own-work",
+    "scene": "act2_witness_support",
+    "speaker": "Nia Pell",
+    "voice": "af_nova",
+    "speed": 0.92,
+    "text": "Tell me whose work you're offering.",
+    "segments": [
+      {
+        "text": "Tell me whose work you're offering.",
+        "speed": 0.92,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-nia-known-room",
+    "scene": "act3_witness_visit",
+    "speaker": "Nia Pell",
+    "voice": "af_nova",
+    "speed": 0.96,
+    "text": "They know the room. Don't tell the wall I was protected because you still have my words.",
+    "segments": [
+      {
+        "text": "They know the room.",
+        "speed": 0.96,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "Don't tell the wall I was protected because you still have my words.",
+        "speed": 0.96,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-nia-second-room",
+    "scene": "act3_witness_visit",
+    "speaker": "Nia Pell",
+    "voice": "af_nova",
+    "speed": 0.96,
+    "text": "The second room is quiet. The first one still gets calls. Both belong in your account.",
+    "segments": [
+      {
+        "text": "The second room is quiet.",
+        "speed": 0.96,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "The first one still gets calls.",
+        "speed": 0.96,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "Both belong in your account.",
+        "speed": 0.96,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-kerr-canal-question",
+    "scene": "act2_kerr_door",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.97,
+    "text": "or you can walk past and let the canal be the argument.",
+    "segments": [
+      {
+        "text": "or you can walk past and let the canal be the argument.",
+        "speed": 0.97,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-kerr-case-terms",
+    "scene": "act2_kerr_collection_terms",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.97,
+    "text": "I want the case, not a treatment report. Their free courier gate writes the recipient into the shift register. If you promise to keep my name out, don't save your fare by putting it in.",
+    "segments": [
+      {
+        "text": "I want the case, not a treatment report.",
+        "speed": 0.97,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "Their free courier gate writes the recipient into the shift register.",
+        "speed": 0.97,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "If you promise to keep my name out, don't save your fare by putting it in.",
+        "speed": 0.97,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-kerr-open-door",
+    "scene": "act2_pump_methods",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.97,
+    "text": "The knee won't hold a wheel. The door I can do.",
+    "segments": [
+      {
+        "text": "The knee won't hold a wheel.",
+        "speed": 0.97,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "The door I can do.",
+        "speed": 0.97,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-kerr-unsettled-week",
+    "scene": "act3_pump_visit",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.97,
+    "text": "You told me the names. This time I kept a door open. That doesn't settle the rest of my week.",
+    "segments": [
+      {
+        "text": "You told me the names.",
+        "speed": 0.97,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "This time I kept a door open.",
+        "speed": 0.97,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "That doesn't settle the rest of my week.",
+        "speed": 0.97,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-mara-not-acquittal",
+    "scene": "act2_response_terms",
+    "speaker": "Mara",
+    "voice": "af_sarah",
+    "speed": 0.9,
+    "text": "An answer is not an acquittal,",
+    "segments": [
+      {
+        "text": "An answer is not an acquittal,",
+        "speed": 0.9,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-mara-name-at-desk",
+    "scene": "act3_response_visit",
+    "speaker": "Mara",
+    "voice": "af_sarah",
+    "speed": 0.96,
+    "text": "That was what I wanted my name there for.",
+    "segments": [
+      {
+        "text": "That was what I wanted my name there for.",
+        "speed": 0.96,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-mara-own-dispatch",
+    "scene": "act3_response_visit",
+    "speaker": "Mara",
+    "voice": "af_sarah",
+    "speed": 0.9,
+    "text": "I'll find another way to send it.",
+    "segments": [
+      {
+        "text": "I'll find another way to send it.",
+        "speed": 0.9,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-mara-waiting-open",
+    "scene": "act3_response_visit",
+    "speaker": "Mara",
+    "voice": "af_sarah",
+    "speed": 0.96,
+    "text": "Don't put an answer where the waiting is.",
+    "segments": [
+      {
+        "text": "Don't put an answer where the waiting is.",
+        "speed": 0.96,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-sera-third-row",
+    "scene": "ward_wall",
+    "speaker": "Sera",
+    "voice": "af_bella",
+    "speed": 0.95,
+    "text": "The third row needs your eye, or help from the wards. You can try. You can also tell me why you came.",
+    "segments": [
+      {
+        "text": "The third row needs your eye, or help from the wards.",
+        "speed": 0.95,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "You can try.",
+        "speed": 0.95,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "You can also tell me why you came.",
+        "speed": 0.95,
+        "pauseAfter": 0
+      }
+    ]
   }
 ]

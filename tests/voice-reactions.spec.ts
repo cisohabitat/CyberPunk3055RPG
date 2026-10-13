@@ -6,6 +6,18 @@ import type { ReplaySpec } from "../lib/story-replay";
 import { installAudioReview, type AudioReview } from "../qa/production/audio-review";
 
 const cases = [
+  ["integration-names.json", "voice-nia-own-work", "act2_witness_support"],
+  ["witness-known-room.json", "voice-nia-known-room", "act3_witness_visit"],
+  ["finale-listed-interrupted.json", "voice-nia-second-room", "act3_witness_visit"],
+  ["allocation-later-funded.json", "voice-kerr-canal-question", "act2_kerr_door"],
+  ["depot-build-chrome-failed.json", "voice-kerr-case-terms", "act2_kerr_collection_terms"],
+  ["allocation-later-funded.json", "voice-kerr-open-door", "act2_pump_methods"],
+  ["allocation-later-funded.json", "voice-kerr-unsettled-week", "act3_pump_visit"],
+  ["mara-company-courier-stay.json", "voice-mara-not-acquittal", "act2_response_terms"],
+  ["mara-company-courier-stay.json", "voice-mara-name-at-desk", "act3_response_visit"],
+  ["response-declined.json", "voice-mara-own-dispatch", "act3_response_visit"],
+  ["mara-company-scarce-stay.json", "voice-mara-waiting-open", "act3_response_visit"],
+  ["allocation-dustline.json", "voice-sera-third-row", "ward_wall"],
   ["allocation-revised.json", "voice-lumen-full-window", "act2_notice_capacity"],
   ["allocation-revised.json", "voice-lumen-private-door", "act2_notice_privacy_refusal"],
   ["allocation-later-funded.json", "voice-lumen-counteroffer", "act2_notice_counter"],
@@ -54,7 +66,7 @@ for (const [route, id, sceneId] of cases) test(`revealed reaction follows the ac
   const audio = (): Promise<AudioReview> => page.evaluate(() => (window as unknown as { audioReview: AudioReview }).audioReview);
   const saved = () => page.evaluate(() => localStorage.getItem("saint-shard-3055-v1"));
   const before = await saved();
-  if (!["act3_notice_result", "act2_notice_capacity", "act2_notice_privacy_refusal", "act2_notice_counter", "act2_recovery", "act2_spire_recovery"].includes(sceneId)) {
+  if (!["act2_witness_support", "act3_witness_visit", "act2_pump_methods", "act3_notice_result", "act2_notice_capacity", "act2_notice_privacy_refusal", "act2_notice_counter", "act2_recovery", "act2_spire_recovery"].includes(sceneId)) {
     await expect(page.getByTestId("voice-line")).toHaveCount(0);
     expect((await audio()).started.filter(name => name.startsWith("voice-"))).toEqual([]);
     await page.getByTestId("show-rest").click();

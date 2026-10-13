@@ -30,7 +30,7 @@
     ]
   },
   "processing": "PCM16 mono master retained; optional exact-quotation phrase segments with bounded speed/pause and 8ms phrase edges; delivery peak normalized to 0.72, 8ms clip edges and 80ms head/tail silence.",
-  "reviewStatus": "Eighty-nine fixed stock synthetic quotations. Fourteen additions for Lumen, Quill, Sera, Edda and Mara. All preceding seventy-five deliveries unchanged; nine established stock cast styles. Authored route, exact speaker/text, signal and native playback checks; no commissioned actor or independent listening acceptance.",
+  "reviewStatus": "One hundred and one fixed stock synthetic quotations. Twelve additions for Nia, Kerr, Mara and Sera. All preceding eighty-nine deliveries unchanged; nine established stock cast styles. Authored route, exact speaker/text, signal and native playback checks; no commissioned actor or independent listening acceptance.",
   "lines": [
     {
       "id": "voice-mara-assurance",
@@ -2638,6 +2638,404 @@
       "durationSeconds": 3.0166666666666666,
       "peak": 0.7199926755577257,
       "rms": 0.09563906689903559
+    },
+    {
+      "id": "voice-nia-own-work",
+      "scene": "act2_witness_support",
+      "speaker": "Nia Pell",
+      "voice": "af_nova",
+      "speed": 0.92,
+      "text": "Tell me whose work you're offering.",
+      "segments": [
+        {
+          "text": "Tell me whose work you're offering.",
+          "speed": 0.92,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "A direct question about whose labor the player is promising.",
+      "language": "en-us",
+      "path": "public/audio/voice-nia-own-work.wav",
+      "sourceFile": "/workspace/generated_audio/threshold-art-voice/voice-nia-own-work.wav",
+      "sourceSha256": "fd9a9d701f8185ab5b6fc60a1920180214f9f28daca07cef82480dc59659292d",
+      "sha256": "9ed244c27a9a76099ae1211d02d9541367aa942d9da806c5f1315041e913d0f9",
+      "bytes": 124460,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 2.592,
+      "peak": 0.7199926755577257,
+      "rms": 0.13576092912741808
+    },
+    {
+      "id": "voice-nia-known-room",
+      "scene": "act3_witness_visit",
+      "speaker": "Nia Pell",
+      "voice": "af_nova",
+      "speed": 0.96,
+      "text": "They know the room. Don't tell the wall I was protected because you still have my words.",
+      "segments": [
+        {
+          "text": "They know the room.",
+          "speed": 0.96,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "Don't tell the wall I was protected because you still have my words.",
+          "speed": 0.96,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Keep the known-room breach separate from retaining her recording.",
+      "language": "en-us",
+      "path": "public/audio/voice-nia-known-room.wav",
+      "sourceFile": "/workspace/generated_audio/threshold-art-voice/voice-nia-known-room.wav",
+      "sourceSha256": "048b8446f4be9e1b0ad70adde7bef9c8d4900b8adfadfe8df56ca9f02b50c229",
+      "sha256": "e7767291f9090f843a6f2ed7abb319c90b7c8fd188e55d45f13d19f201fe00a8",
+      "bytes": 313004,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 6.52,
+      "peak": 0.7199926755577257,
+      "rms": 0.10648760681821207
+    },
+    {
+      "id": "voice-nia-second-room",
+      "scene": "act3_witness_visit",
+      "speaker": "Nia Pell",
+      "voice": "af_nova",
+      "speed": 0.96,
+      "text": "The second room is quiet. The first one still gets calls. Both belong in your account.",
+      "segments": [
+        {
+          "text": "The second room is quiet.",
+          "speed": 0.96,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "The first one still gets calls.",
+          "speed": 0.96,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "Both belong in your account.",
+          "speed": 0.96,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Acknowledge the later quiet room without erasing the first exposure.",
+      "language": "en-us",
+      "path": "public/audio/voice-nia-second-room.wav",
+      "sourceFile": "/workspace/generated_audio/threshold-art-voice/voice-nia-second-room.wav",
+      "sourceSha256": "09b4a76c524183b3bc720edd667dee6ea9b2539b9baafdca96ca5a9e9fa2de73",
+      "sha256": "f978af21eb12b03d5ca682a943657b74d68f20c85c28481e0d248f2b75842600",
+      "bytes": 373836,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 7.787333333333334,
+      "peak": 0.7199926755577257,
+      "rms": 0.1125369529603376
+    },
+    {
+      "id": "voice-kerr-canal-question",
+      "scene": "act2_kerr_door",
+      "speaker": "Kerr",
+      "voice": "am_adam",
+      "speed": 0.97,
+      "text": "or you can walk past and let the canal be the argument.",
+      "segments": [
+        {
+          "text": "or you can walk past and let the canal be the argument.",
+          "speed": 0.97,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "An understated challenge under the same awning.",
+      "language": "en-us",
+      "path": "public/audio/voice-kerr-canal-question.wav",
+      "sourceFile": "/workspace/generated_audio/threshold-art-voice/voice-kerr-canal-question.wav",
+      "sourceSha256": "e5b351aaad75a60b81fdc42bc11142b1c0e7aa30e7c23ee7d4e292a5c82eed53",
+      "sha256": "ed06279afef007a5ed3f2b4d24377c43a5e910d4dae1b2d3d16729adf9f8d878",
+      "bytes": 165324,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 3.4433333333333334,
+      "peak": 0.7199926755577257,
+      "rms": 0.09562279502916193
+    },
+    {
+      "id": "voice-kerr-case-terms",
+      "scene": "act2_kerr_collection_terms",
+      "speaker": "Kerr",
+      "voice": "am_adam",
+      "speed": 0.97,
+      "text": "I want the case, not a treatment report. Their free courier gate writes the recipient into the shift register. If you promise to keep my name out, don't save your fare by putting it in.",
+      "segments": [
+        {
+          "text": "I want the case, not a treatment report.",
+          "speed": 0.97,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "Their free courier gate writes the recipient into the shift register.",
+          "speed": 0.97,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "If you promise to keep my name out, don't save your fare by putting it in.",
+          "speed": 0.97,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Firm practical collection terms; no invented medical miracle.",
+      "language": "en-us",
+      "path": "public/audio/voice-kerr-case-terms.wav",
+      "sourceFile": "/workspace/generated_audio/threshold-art-voice/voice-kerr-case-terms.wav",
+      "sourceSha256": "010968d7fe52dd330079c0c07b53f705d5ba60dcc15dcbd0fbce90deac285f66",
+      "sha256": "75b807cd94c5f261f5bd0731f2fb107b11f207e7c65651c769db7722c0e200f6",
+      "bytes": 535820,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 11.162,
+      "peak": 0.7199926755577257,
+      "rms": 0.07882437663714088
+    },
+    {
+      "id": "voice-kerr-open-door",
+      "scene": "act2_pump_methods",
+      "speaker": "Kerr",
+      "voice": "am_adam",
+      "speed": 0.97,
+      "text": "The knee won't hold a wheel. The door I can do.",
+      "segments": [
+        {
+          "text": "The knee won't hold a wheel.",
+          "speed": 0.97,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "The door I can do.",
+          "speed": 0.97,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Dry humor about the help he can actually offer.",
+      "language": "en-us",
+      "path": "public/audio/voice-kerr-open-door.wav",
+      "sourceFile": "/workspace/generated_audio/threshold-art-voice/voice-kerr-open-door.wav",
+      "sourceSha256": "455cac3ce000db862979358e96536c0a7a651b23e1a360d7c1364b3b899f4ec2",
+      "sha256": "7c7faa7700d1ea42618eb8966aa234184a81018a41eea25942a7ac159ecc695f",
+      "bytes": 170538,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 3.5519583333333333,
+      "peak": 0.7199926755577257,
+      "rms": 0.09394120623794663
+    },
+    {
+      "id": "voice-kerr-unsettled-week",
+      "scene": "act3_pump_visit",
+      "speaker": "Kerr",
+      "voice": "am_adam",
+      "speed": 0.97,
+      "text": "You told me the names. This time I kept a door open. That doesn't settle the rest of my week.",
+      "segments": [
+        {
+          "text": "You told me the names.",
+          "speed": 0.97,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "This time I kept a door open.",
+          "speed": 0.97,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "That doesn't settle the rest of my week.",
+          "speed": 0.97,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "A modest contribution that does not settle past conduct.",
+      "language": "en-us",
+      "path": "public/audio/voice-kerr-unsettled-week.wav",
+      "sourceFile": "/workspace/generated_audio/threshold-art-voice/voice-kerr-unsettled-week.wav",
+      "sourceSha256": "e6975c30fb56e358a5c5885c5b3d91db5598a98e43024bfe1edc94645e70eed3",
+      "sha256": "c34b203ef618e0c5093763dde6794a91a7d651ca7fd2a6347c7c0c596618182c",
+      "bytes": 309836,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 6.454,
+      "peak": 0.7199926755577257,
+      "rms": 0.08308977054652349
+    },
+    {
+      "id": "voice-mara-not-acquittal",
+      "scene": "act2_response_terms",
+      "speaker": "Mara",
+      "voice": "af_sarah",
+      "speed": 0.9,
+      "text": "An answer is not an acquittal,",
+      "segments": [
+        {
+          "text": "An answer is not an acquittal,",
+          "speed": 0.9,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Calmly distinguish entering a response from being absolved.",
+      "language": "en-us",
+      "path": "public/audio/voice-mara-not-acquittal.wav",
+      "sourceFile": "/workspace/generated_audio/threshold-art-voice/voice-mara-not-acquittal.wav",
+      "sourceSha256": "6b7dd599ac9ad387296bc082d76800bff25284619d0162cf76103b6e63160a3e",
+      "sha256": "5acfdd7b5b61d253f284b3f8ed54a202a549d95058c1034c4887e123a92a2ea8",
+      "bytes": 100364,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 2.09,
+      "peak": 0.7199926755577257,
+      "rms": 0.08137588509587222
+    },
+    {
+      "id": "voice-mara-name-at-desk",
+      "scene": "act3_response_visit",
+      "speaker": "Mara",
+      "voice": "af_sarah",
+      "speed": 0.96,
+      "text": "That was what I wanted my name there for.",
+      "segments": [
+        {
+          "text": "That was what I wanted my name there for.",
+          "speed": 0.96,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "The desk received the response; its inquiry remains unanswered.",
+      "language": "en-us",
+      "path": "public/audio/voice-mara-name-at-desk.wav",
+      "sourceFile": "/workspace/generated_audio/threshold-art-voice/voice-mara-name-at-desk.wav",
+      "sourceSha256": "ffa7b119b7588ae3be2e3166af1c9024ddec0b785cae8a0af36bf06a2adf9bc2",
+      "sha256": "b42ca0a409cc68c8ad73221817710cd84ab04060d2f9eb1560d94d22c739682d",
+      "bytes": 117258,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 2.4419583333333335,
+      "peak": 0.7199926755577257,
+      "rms": 0.08194728870802387
+    },
+    {
+      "id": "voice-mara-own-dispatch",
+      "scene": "act3_response_visit",
+      "speaker": "Mara",
+      "voice": "af_sarah",
+      "speed": 0.9,
+      "text": "I'll find another way to send it.",
+      "segments": [
+        {
+          "text": "I'll find another way to send it.",
+          "speed": 0.9,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Ordinary agency after the player declined before promising.",
+      "language": "en-us",
+      "path": "public/audio/voice-mara-own-dispatch.wav",
+      "sourceFile": "/workspace/generated_audio/threshold-art-voice/voice-mara-own-dispatch.wav",
+      "sourceSha256": "37d075996026f2441f1b9f90e3156690637d2405edfebabb1e82711ca03b0a05",
+      "sha256": "4941895cc02d292fb59e5676affdd0d39ec5faedc52f73724e9d943c1994deeb",
+      "bytes": 105994,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 2.207291666666667,
+      "peak": 0.7199926755577257,
+      "rms": 0.08969708789087043
+    },
+    {
+      "id": "voice-mara-waiting-open",
+      "scene": "act3_response_visit",
+      "speaker": "Mara",
+      "voice": "af_sarah",
+      "speed": 0.96,
+      "text": "Don't put an answer where the waiting is.",
+      "segments": [
+        {
+          "text": "Don't put an answer where the waiting is.",
+          "speed": 0.96,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Leave unfinished dispatch honestly unfinished.",
+      "language": "en-us",
+      "path": "public/audio/voice-mara-waiting-open.wav",
+      "sourceFile": "/workspace/generated_audio/threshold-art-voice/voice-mara-waiting-open.wav",
+      "sourceSha256": "d77ebdc2e6966934a1455df00ebae3bf443454fe59a0b016de640f5f5de3c908",
+      "sha256": "c94f4fb87839be99717b0b72da868c8d0dae9252222fe9546ede9c49735a6b84",
+      "bytes": 113100,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 2.3553333333333333,
+      "peak": 0.7199926755577257,
+      "rms": 0.08620662659218631
+    },
+    {
+      "id": "voice-sera-third-row",
+      "scene": "ward_wall",
+      "speaker": "Sera",
+      "voice": "af_bella",
+      "speed": 0.95,
+      "text": "The third row needs your eye, or help from the wards. You can try. You can also tell me why you came.",
+      "segments": [
+        {
+          "text": "The third row needs your eye, or help from the wards.",
+          "speed": 0.95,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "You can try.",
+          "speed": 0.95,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "You can also tell me why you came.",
+          "speed": 0.95,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "A patient invitation to inspect or explain, without demanding a finale.",
+      "language": "en-us",
+      "path": "public/audio/voice-sera-third-row.wav",
+      "sourceFile": "/workspace/generated_audio/threshold-art-voice/voice-sera-third-row.wav",
+      "sourceSha256": "9e3799815187af035bd095e735055c98a569053a0b8af3368a2cf0e4714501f3",
+      "sha256": "7579041d76a270e29a308bb0e94f4c3de75487d5552a001ae57d0afec4b11d07",
+      "bytes": 333674,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 6.950625,
+      "peak": 0.7199926755577257,
+      "rms": 0.08042132677041845
     }
   ],
   "generationEnvironment": {

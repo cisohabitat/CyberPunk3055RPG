@@ -1147,6 +1147,118 @@
           "sha256": "1adbeeb36f7e012edd5295284f8751917a679805cfbbb5d42e04432752835075"
         }
       ]
+    },
+    {
+      "id": "nia-transfer",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-13",
+      "sourceFile": "/workspace/generated_images/exec-b5b3c57f-710c-4c1a-8791-0363f88a923b.png",
+      "sourceSha256": "0909264d67c5288f37050a24ef44d3c839bc4270dcaff0b583542ac25f9672ae",
+      "promptSummary": "Create one standalone landscape 3:2 illustration for Saint Shard, an original cyberpunk narrative RPG set in 3055. Cohesive rich painted noir cinematic realism, fine visible oil-brush texture, petroleum blue and charcoal shadows, worn copper and concrete, restrained amber practical lighting and rain reflections. Sophisticated foreground/midground composition at human scale, atmospheric but readable. No text, captions, UI, logos, borders or readable writing. Use the two supplied images only as visual continuity references for the same fictional woman Nia Pell: same brown complexion, salt-and-pepper short curly hair, grey shirt, burgundy knitted cardigan, ordinary wheelchair. Make a NEW wider composition in her modest Glass Chapel bedside room before any transfer. Nia sits upright in her wheelchair with shoes on, one hand resting naturally on its brake lever, the other on her lap. Her expression is attentive, composed and self-possessed as she sets her own terms. A simple bedside shelf holds an untouched photograph frame seen edge-on with no visible portrait, a rain-streaked window and a warm bedside lamp establish the room. No other people, recorder, completed transport, smiling celebration, approving gesture or new consent. No straps shown tightened or promised room safety. Respectful ordinary agency, not spectacle. Keep her whole face clear and match the existing character, without merely reproducing the prior table pose.",
+      "deliveryProcessing": "Resize and JPEG encode only; no crop, repaint or compositing. Original generated PNG retained at sourceFile.",
+      "files": [
+        {
+          "path": "public/art/nia-transfer.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 246783,
+          "sha256": "d850e4a5d57088ae9ff7568c76d5a5f140fe46e50679e0c3d28fa6333983263f"
+        },
+        {
+          "path": "public/art/nia-transfer-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 70976,
+          "sha256": "e45d52caf442005cbb3ed40b1df5afe5eccc524d8a9ee77747112eb095aef519"
+        }
+      ],
+      "references": [
+        {
+          "path": "/workspace/saint-shard-fix/public/art/nia.jpg",
+          "sha256": "d7303d8d8359b2ea99ac67c1ae8ebf676618f65268d0c006681e90315b35e41e",
+          "role": "Existing generated fictional Nia character continuity"
+        },
+        {
+          "path": "/workspace/saint-shard-fix/public/art/nia-arrival.jpg",
+          "sha256": "22829b36897ec6e10018754951c9ec8cf1ae6bdcacfd036e6508795961528fe7",
+          "role": "Existing generated fictional Nia character continuity"
+        }
+      ]
+    },
+    {
+      "id": "ordinary-rest",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-13",
+      "sourceFile": "/workspace/generated_images/exec-b9d60177-490e-4204-b3fd-8089c073be56.png",
+      "sourceSha256": "153da2409c8cdf3bb3de7b002994d992848b81a79d6bb8fdbe488c25dd342de0",
+      "promptSummary": "Create one standalone landscape 3:2 illustration for Saint Shard, an original cyberpunk narrative RPG set in 3055. Cohesive rich painted noir cinematic realism, fine visible oil-brush texture, petroleum blue and charcoal shadows, worn copper and concrete, restrained amber practical lighting and rain reflections. Sophisticated foreground/midground composition at human scale, atmospheric but readable. No text, captions, UI, logos, borders or readable writing. Glass Chapel's ordinary rest corner, empty of people. A plain worn wooden chair beside a rain-streaked window, an untouched water glass on a narrow table, a faded folded blanket and a practical amber wall lamp. Rich cool blue window light balances the warm pool around the seat. This is an ordinary seat for voluntary rest, not the clinic's memory-extraction chair: no halo, plinth, restraints, medical machinery, sleep result or treatment outcome. The chair remains available before choosing whether to rest.",
+      "deliveryProcessing": "Resize and JPEG encode only; no crop, repaint or compositing. Original generated PNG retained at sourceFile.",
+      "files": [
+        {
+          "path": "public/art/ordinary-rest.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 264151,
+          "sha256": "d0d7d0b5b5ddf9015f2ef0ca1d0d1c2555f4bb9a575c9a846104cc9a1ca9ec8d"
+        },
+        {
+          "path": "public/art/ordinary-rest-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 71133,
+          "sha256": "c60755f46b7cc82c28b3ae69998d8647c98cfe67206511170e68a7351c4ed24e"
+        }
+      ]
+    },
+    {
+      "id": "private-reply",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-13",
+      "sourceFile": "/workspace/generated_images/exec-70935fe7-69f4-4584-916d-d6984463d9d3.png",
+      "sourceSha256": "08369a671381418674b75760e13357cf174402ffb48bb4a0a1c2170fb7f79f0b",
+      "promptSummary": "Create one standalone landscape 3:2 illustration for Saint Shard, an original cyberpunk narrative RPG set in 3055. Cohesive rich painted noir cinematic realism, fine visible oil-brush texture, petroleum blue and charcoal shadows, worn copper and concrete, restrained amber practical lighting and rain reflections. Sophisticated foreground/midground composition at human scale, atmospheric but readable. No text, captions, UI, logos, borders or readable writing. A small rainy clinic side-room writing table, empty of people. A plain cream envelope lies with its flap out of view beside a closed dark pen, a chipped cup, several unmarked cover papers and an empty visitor chair. Tungsten amber table lamp and cool petroleum-blue window rainlight, worn wooden grain and cloth texture. Neutral voluntary correspondence materials, no recorder or address, no delivery stamp, queue receipt, signed approval, public broadcast or acquittal. The image must suit an undecided proposal, agreed private terms, pending dispatch and a later returned stub without depicting any of those outcomes.",
+      "deliveryProcessing": "Resize and JPEG encode only; no crop, repaint or compositing. Original generated PNG retained at sourceFile.",
+      "files": [
+        {
+          "path": "public/art/private-reply.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 188240,
+          "sha256": "291e51f60239b8f08b5f23433c017c9395075a99fd8e4d7e6b7823ecfdb0c2f2"
+        },
+        {
+          "path": "public/art/private-reply-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 56658,
+          "sha256": "81ca487f250048e874abdf23d1b055226b8bfe87c2b1181d0f066f3137025743"
+        }
+      ]
+    },
+    {
+      "id": "memorial-stair",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-13",
+      "sourceFile": "/workspace/generated_images/exec-c8b5a2be-8f36-44d8-96a6-db5b84262bf5.png",
+      "sourceSha256": "23ccf7cec0eead915bd45d716cb6a5ba3c4d35eb47a8073b90512f34a37d5645",
+      "promptSummary": "Create one standalone landscape 3:2 illustration for Saint Shard, an original cyberpunk narrative RPG set in 3055. Cohesive rich painted noir cinematic realism, fine visible oil-brush texture, petroleum blue and charcoal shadows, worn copper and concrete, restrained amber practical lighting and rain reflections. Sophisticated foreground/midground composition at human scale, atmospheric but readable. No text, captions, UI, logos, borders or readable writing. Ward Nine's memorial stair before a player chooses what to say. A broad rain-worn concrete wall with many indistinct rows of fine worn engraved marks, a wet low stair and narrow sheltered ledge with a capped pencil and CLOSED private ledger. A restrained green-blue neighborhood lamp and distant amber apartment windows reflect in puddles; heavy rain and dark scaffolded city height. No people or readable names, no revealed address, fresh writing, open witness records, bouquet, completed public statement or victory. Preserve a populated weathered memorial rather than a blank clean wall. Dignified and intimate despite the surrounding city.",
+      "deliveryProcessing": "Resize and JPEG encode only; no crop, repaint or compositing. Original generated PNG retained at sourceFile.",
+      "files": [
+        {
+          "path": "public/art/memorial-stair.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 287032,
+          "sha256": "2078a38c3c911729dfe5a80eb232d1c78bec7c0609c97cfa5f5450e77432acd7"
+        },
+        {
+          "path": "public/art/memorial-stair-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 76869,
+          "sha256": "3333835e11f20dc40fd9ec15361f1ea92d18f72f0638692c0b53921d0aca7b7d"
+        }
+      ]
     }
   ]
 }
