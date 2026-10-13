@@ -1,0 +1,415 @@
+{
+  "generated": "2026-10-13",
+  "baselineRevision": "802354d478825f2b9cd074fa6c91ae60e6a6a66c",
+  "preservedDeliverySha256": {
+    "voice-mara-assurance": "240a33d9bcd20973fc898dd30479448dadbcb577526fc6bdf327549bd15b0c05",
+    "voice-mara-channel": "30eb8166317b285d7fb8d080e954f62365c589fe4330b7e76ff0d0903658d9eb",
+    "voice-mara-sequence": "e506298640a60ab4223dde471996bc68df62bd8bbc303356c15e06e26e9f0cf8",
+    "voice-lumen-publication": "2745134ebbbad3b7668d919de84d21582356e460772d8fc67419f903a6970d14",
+    "voice-mara-tomorrow": "a29cc30b16be21c6cdde8d141921d1e2e0471152d2458e53878a124340422ff2",
+    "voice-lumen-staying": "70ac47bfa9130e75cbc65c557b5268339f5b5c766c266cb5948854b9937c035e",
+    "voice-mara-company": "2a856f430b4214530d5c558b0ffd10dc96d3892340cb7d0f1a6f1de514a4eb1d",
+    "voice-kerr-personal": "80cbd916e61aec0805355e60d70a792872db632ab6b8fe09c31d19a760c5303a",
+    "voice-quill-offer": "d2709b67a0efdffdeba15544aec34bccec9eab44e830ae5438f864acce0b721f",
+    "voice-mara-revelation": "092f7f97e85e39adcf0b680d50ae93531f7e7dffd171cbf087e6be0a75bc314a",
+    "voice-kerr-boundary": "07d190d01c2b4109e83c945d98763b651a590aa0eead16d385d7687765a421eb",
+    "voice-lumen-boundary": "f608706f2decdc30fd0968bb4d3a8c6bba08c163043e3f72d344bec0f17746ad",
+    "voice-sera-names": "9a540454403b45463d53c3a2c459a2ddd0567bccad5a1181df3dafb94af891e7",
+    "voice-sera-quiet": "b77eb7bc80e0f1f51bc8275a25cd7fc0f2ac439890267fa3d63bceb08b6704d9",
+    "voice-sera-witness": "ebb6870000792f2a71e756b46bb85514e80fc3cee823e47c19afd028a7ce2fdb",
+    "voice-ives-listed": "615e1f28e700a0d875a126a358c358c28be6edbfe467102b30b21f2f5af83b94",
+    "voice-nia-arrival": "d491be8168f0903643430831328c9846014804e509e743b8905703a705ecd772",
+    "voice-mara-response": "5c4e0892fb0bf12b93b25fba541e832742a503c0447b40a34f3d6f9e70ad1ca4",
+    "voice-mara-public-refusal": "4198455189cc74d64ed6a56187563d7a9ecdb46da43c70b2280ec040baada4f5",
+    "voice-kerr-handover-private": "8af1a0d0a9dae118ff22b6db5a39479eb34ec3ca7806450cb5b1fb4390be3d30",
+    "voice-kerr-handover-breached": "e95bc5e15888311bbcd2010024af1574fe3dcce342e76fdc7a2557b67f92a24e",
+    "voice-kerr-handover-registered": "515d3679665c0ca48220b017ee73cb140506c880661c1ea2ca3f74758bfc7421",
+    "voice-quill-pay": "e9620a09386bd0fd122d408c6d6c978624c1cfb95af945d40f9a9f4d9d41767d",
+    "voice-quill-pay-yes": "b46973c05c6e0f1dd18aed7ba354c3af071dfff54d715c976187f8dc5b355e46",
+    "voice-quill-pay-no": "842831432e3331fe2004439b2558c1a33c819a58c05562d0c7435a47dd98953d",
+    "voice-quill-route": "1fae551c12bc1d2de0b5e7a95c3f6eee65ddc0171f2389f411bca243b794a434",
+    "voice-lumen-lumen": "dc4c6ce71657075ac35bfe6cd4c68836076d654f950e15e2de6c8e58692a3d66",
+    "voice-mara-mara-why": "3c4da30b4300c1faf876eb19d6fd6200c231493ac3ae7d5598e7cd177cf94c7a",
+    "voice-kerr-kerr": "1f5a0e7cd2154c89a79b4fed3a5622ab04db107e6ae90a14394cb02b802d5e4a",
+    "voice-mara-memory-cross-exam": "7881da50c38a481d9907c03b029073bafbd6da36cf486e01e048228ee31b481e",
+    "voice-quill-job-owner": "392f4a39fdb2becad89e86a5852c4d379b7e25b4d0f8d412a85a9ba0f10fdce3",
+    "voice-quill-act2-origin-dustline": "5c7ee6677cc92e0fd8984c2c103ce4863477ab985803167d55cdf54d8632bce3",
+    "voice-sera-act2-origin-gutterwire": "66c23cce6b392d14999ca62064f928e4b38a2f3bd980427b132c0713e06d388d",
+    "voice-edda-service-key": "3dc89b7b44452079da65d4a3c1f01847340c32922f3fd0e275554bf828075ab0",
+    "voice-ives-act2-archive-door": "20257e7e0069871c40b660e45f45055c0937e187efaaa859d38ac472efd2437f",
+    "voice-lumen-act2-notice-brief": "c17a03fd4ca11700641221b19d395add0d70cd5c8d408b033a744695d2dad5da",
+    "voice-lumen-act2-notice-receipt": "4ceb90ad5c81b71209afdb3613eed6b68e126884acfa76225b7d77203765ef31",
+    "voice-kerr-act2-kerr": "901979b6e659c8997042e8f817b8dbf91ad9dd61965c8169455d8890ffb7cf52",
+    "voice-lumen-act2-lumen": "ebb64fe7b8ed4d039738bf635d9c2e9cc127e0b6ab8cb6b53cde52f74dd9d41d",
+    "voice-nia-act2-witness-brief": "e159bb442045245e5a93d58c0338349f29d652f5cd9e18308bbaae8108dd7b75",
+    "voice-kerr-act2-witness-checkpoint": "74518b0c9690215af6c2864b88d883d4465fdb68b20f46346a4edb421e7466b5",
+    "voice-lumen-act2-witness-lost": "7452591700d979b57f270e5d919611b75d3ff808de54c7320aeadd9fb372b1e4",
+    "voice-lumen-act2-witness-repair": "62660a0678a2f922dea655f49734333989be0534bf1b1c1da3a6783f953b4b32",
+    "voice-nia-act3-nia-contact": "7e8c987306af6e9fae329d9ad519014e1283dd9eebd5751505c4273cf877ac29",
+    "voice-lumen-ending-burned": "0a617a2c9c7904287ecdfd48b23d701b0fce1be1190263807be804bf74bfc3c1",
+    "voice-mara-chair-remembered": "c9e9e7aca2d53c67426e45617c4a6c4bd296bec21cb034a8279cf715778e35ef",
+    "voice-mara-company-declined": "7350ab9254c471360313a093bd2a6485f8832fd9c328f0d6933d86a74c3c1c84",
+    "voice-mara-walked-reply": "eada25c55d98a1daed74b29c0bf72af0670ebb04df0bbbe174c53ad3e898bf96",
+    "voice-mara-next-batch": "b19536c637c5dbe675eb1f462122d9f17a067227b8946f8819171b494bce3dce",
+    "voice-mara-envelope-pending": "bee19816a3368bc88a1ec14503573e43fb61bbf8b149cc19c3691ae647cd239d",
+    "voice-kerr-trust-kept": "14b3c2866811e99af26ad73e4980753849d279e4a5e6f77c767b281b2d0b9f9f",
+    "voice-kerr-trust-broken": "6b8cb6d1d27dac4bc12ccbb36fb14b502fa3a1afbcdc6776ebd03fbff7a0ea74",
+    "voice-edda-archive-access": "b9731587e066d3f1d3b05993ad746dd12376d27e6f97a95653b183b5035ff4b3",
+    "voice-edda-source-custody": "95191e9b7d03b2cc6c3a46ae33170f68fb528065e8f67abd8b0f773b834b967f",
+    "voice-edda-private-work": "a1929b36c12df55f9537e3abd57ad60e60be2cf9b70012c4fdd635adceb9d175",
+    "voice-sera-hearing-purpose": "0da826f7f4f705f3d4633137138386e1cef7a2b38cdf81e4991a5cf4de57c668",
+    "voice-sera-hearing-correction": "a5a5393044aaa3a10da9158920bf379cc1e5fa9be4906201636e64b7e0dafa43",
+    "voice-sera-wall-invitation": "8acb35ad90d96230b250aab59088dd322e0f0741cbade1059b723c2ff9d35abf",
+    "voice-ives-hearing-challenge": "f06106a982bd7e45c610f4a6f94a01b295fa7e6d68068c66e3f2ba66645fd89f",
+    "voice-nia-public-terms": "831dc6693059bc1bcb308cc159dbf8f1bb0fb50dd49fc11b72112ecbd723ac72",
+    "voice-lumen-relay-limits": "7b23954cb414c912cb31533e4a34841b5efe0350321e3b403414e326f16e3c2f",
+    "voice-lumen-withdrawn-window": "495affaa36ca91f3f7f92e3f371ec565ccdb790dc089c3ec4105e7482b51a5b9",
+    "voice-sera-laundry-invitation": "4f65ba67c8ad8b7121cae359976d10063d80ba5ff58d83dcf53c508656972aa7",
+    "voice-asa-freight-terms": "bc43564753f0987497475a0b2c82a555a66a42de2ff0a20eb352e6b53bb9ca68",
+    "voice-asa-exposed-crossing": "44caac38be4a22a40adc4503195d7632c763df39ec7c586a28c61ff5aca6fd46",
+    "voice-asa-earned-clearance": "dceb2927f200d6734829ba34d424d8bc0e06497a038aac7a5c5d9264cc017f7a",
+    "voice-asa-unconfirmed-result": "fcf1909238144a856e037c17d855a56f07e6dbfdc825107283705a7617b62023",
+    "voice-asa-private-receipt": "4aa45014e3fffe8ba098b1f3b87d905cb3f74a906d4fec0e472a2496ae115616",
+    "voice-asa-exposed-receipt": "1d5c9f372fc82a72225ec2dd7f210e8dea05dc66a18b61c99dde46e8d2e935f5",
+    "voice-asa-late-receipt": "f81400575eb7ba9a2f290b36747622b3a2285a4520ed8710b7d0448044576c04",
+    "voice-asa-motive-identity": "1441550312f795a54960722c33b12a778e5d99c6889929d2979762d282e5d54b",
+    "voice-asa-motive-exit": "995daa08be8e38922b2dd0526956f508375f0a0aae76445aea95d5fc5a09e21f",
+    "voice-asa-motive-survival": "28286c98f86f73027b9829582852637078e800588f5875a69894a26789748057",
+    "voice-nia-room-ownership": "a08b82102343620a5c72d685c79968fa2c11fbe844934e0bf926882f3efd601c",
+    "voice-ives-kept-name": "e9952155cbcef4dff1bf95b6673cb316b0d58a2f735060dfeb121ff4e37d7e83"
+  },
+  "voiceAdditions": [
+    {
+      "id": "voice-lumen-full-window",
+      "scene": "act2_notice_capacity",
+      "speaker": "Sister Lumen",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "text": "Carrying six papers isn't six places in the room. The last two would arrive to a full window.",
+      "segments": [
+        {
+          "text": "Carrying six papers isn't six places in the room.",
+          "speed": 0.93,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "The last two would arrive to a full window.",
+          "speed": 0.93,
+          "pauseAfter": 0
+        }
+      ],
+      "direction": "Firm capacity limit, practical rather than scolding.",
+      "exampleRoute": "allocation-revised.json"
+    },
+    {
+      "id": "voice-lumen-private-door",
+      "scene": "act2_notice_privacy_refusal",
+      "speaker": "Sister Lumen",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "text": "No. Give them my desk, not somebody else's front door.",
+      "segments": [
+        {
+          "text": "No.",
+          "speed": 0.93,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "Give them my desk, not somebody else's front door.",
+          "speed": 0.93,
+          "pauseAfter": 0
+        }
+      ],
+      "direction": "Clear privacy refusal; measured emphasis on the desk.",
+      "exampleRoute": "allocation-revised.json"
+    },
+    {
+      "id": "voice-lumen-counteroffer",
+      "scene": "act2_notice_counter",
+      "speaker": "Sister Lumen",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "text": "I won't promise the third. Carry it to the later desk yourself, fund another carrier, or change the split.",
+      "segments": [
+        {
+          "text": "I won't promise the third.",
+          "speed": 0.93,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "Carry it to the later desk yourself, fund another carrier, or change the split.",
+          "speed": 0.93,
+          "pauseAfter": 0
+        }
+      ],
+      "direction": "Honest limit followed by three workable alternatives.",
+      "exampleRoute": "allocation-later-funded.json"
+    },
+    {
+      "id": "voice-lumen-funded-carrier",
+      "scene": "act3_notice_visit",
+      "speaker": "Sister Lumen",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "text": "That split needed the extra carrier you funded. Keep the work beside the plan.",
+      "segments": [
+        {
+          "text": "That split needed the extra carrier you funded.",
+          "speed": 0.93,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "Keep the work beside the plan.",
+          "speed": 0.93,
+          "pauseAfter": 0
+        }
+      ],
+      "direction": "Remember actual funded work without promising clinic attendance.",
+      "exampleRoute": "allocation-later-funded.json"
+    },
+    {
+      "id": "voice-lumen-later-trip",
+      "scene": "act3_notice_visit",
+      "speaker": "Sister Lumen",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "text": "That split needed your extra later trip. Keep the work beside the plan.",
+      "segments": [
+        {
+          "text": "That split needed your extra later trip.",
+          "speed": 0.93,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "Keep the work beside the plan.",
+          "speed": 0.93,
+          "pauseAfter": 0
+        }
+      ],
+      "direction": "Acknowledge the runner\u2019s actual additional trip.",
+      "exampleRoute": "allocation-later-work.json"
+    },
+    {
+      "id": "voice-lumen-return-bundle",
+      "scene": "act3_notice_visit",
+      "speaker": "Sister Lumen",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "text": "That split needed your clinic return bundle. Keep the work beside the plan.",
+      "segments": [
+        {
+          "text": "That split needed your clinic return bundle.",
+          "speed": 0.93,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "Keep the work beside the plan.",
+          "speed": 0.93,
+          "pauseAfter": 0
+        }
+      ],
+      "direction": "Remember the accepted return contact, without erasing a refusal.",
+      "exampleRoute": "allocation-revised.json"
+    },
+    {
+      "id": "voice-quill-care-budget",
+      "scene": "act2_workshop",
+      "speaker": "Quill",
+      "voice": "am_michael",
+      "speed": 0.96,
+      "text": "Keep enough for the person on the other end of the job.",
+      "segments": [
+        {
+          "text": "Keep enough for the person on the other end of the job.",
+          "speed": 0.96,
+          "pauseAfter": 0
+        }
+      ],
+      "direction": "Dry equipment advice with ordinary concern for the recipient.",
+      "exampleRoute": "gutterwire-harness.json"
+    },
+    {
+      "id": "voice-lumen-ordinary-seat",
+      "scene": "act2_recovery",
+      "speaker": "Sister Lumen",
+      "voice": "af_heart",
+      "speed": 0.9,
+      "text": "This one doesn't keep your hour.",
+      "segments": [
+        {
+          "text": "This one doesn't keep your hour.",
+          "speed": 0.9,
+          "pauseAfter": 0
+        }
+      ],
+      "direction": "Quiet reassurance about an ordinary rest seat.",
+      "exampleRoute": "finale-names-paused.json"
+    },
+    {
+      "id": "voice-lumen-after-rest",
+      "scene": "act2_recovery_after",
+      "speaker": "Sister Lumen",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "text": "Now decide who needs what you have left,",
+      "segments": [
+        {
+          "text": "Now decide who needs what you have left,",
+          "speed": 0.93,
+          "pauseAfter": 0
+        }
+      ],
+      "direction": "Give the silence room before returning to unfinished work.",
+      "exampleRoute": "finale-names-paused.json"
+    },
+    {
+      "id": "voice-sera-daylight",
+      "scene": "act2_shelter_result",
+      "speaker": "Sera",
+      "voice": "af_bella",
+      "speed": 0.95,
+      "text": "Come back when it\u2019s daylight. A place to sleep is the start of a night, not the whole of it.",
+      "segments": [
+        {
+          "text": "Come back when it\u2019s daylight.",
+          "speed": 0.95,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "A place to sleep is the start of a night, not the whole of it.",
+          "speed": 0.95,
+          "pauseAfter": 0
+        }
+      ],
+      "direction": "Warm practical invitation after any shelter outcome.",
+      "exampleRoute": "allocation-gutterwire.json"
+    },
+    {
+      "id": "voice-edda-clean-number",
+      "scene": "act2_spire_receipt",
+      "speaker": "Edda",
+      "voice": "af_kore",
+      "speed": 0.95,
+      "text": "One clean number. One receiver. The old charges are still a fight.",
+      "segments": [
+        {
+          "text": "One clean number.",
+          "speed": 0.95,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "One receiver.",
+          "speed": 0.95,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "The old charges are still a fight.",
+          "speed": 0.95,
+          "pauseAfter": 0
+        }
+      ],
+      "direction": "Measured earned handover; the previous invoices remain disputed.",
+      "exampleRoute": "memory-timeline-bounded.json"
+    },
+    {
+      "id": "voice-edda-query-remains",
+      "scene": "act2_spire_recovery",
+      "speaker": "Edda",
+      "voice": "af_kore",
+      "speed": 0.95,
+      "text": "We can close the key. We can\u2019t make that query disappear.",
+      "segments": [
+        {
+          "text": "We can close the key.",
+          "speed": 0.95,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "We can\u2019t make that query disappear.",
+          "speed": 0.95,
+          "pauseAfter": 0
+        }
+      ],
+      "direction": "Steady recovery, no denial of the logged badge query.",
+      "exampleRoute": "spire-late.json"
+    },
+    {
+      "id": "voice-edda-staffed-desk",
+      "scene": "act2_spire_recovery",
+      "speaker": "Edda",
+      "voice": "af_kore",
+      "speed": 0.95,
+      "text": "The staffed desk is slower. You don\u2019t need to wake that thing to ask.",
+      "segments": [
+        {
+          "text": "The staffed desk is slower.",
+          "speed": 0.95,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "You don\u2019t need to wake that thing to ask.",
+          "speed": 0.95,
+          "pauseAfter": 0
+        }
+      ],
+      "direction": "Practical alternative to activating the badge reader.",
+      "exampleRoute": "spire-pending.json"
+    },
+    {
+      "id": "voice-mara-waits-answer",
+      "scene": "act2_response_receipt",
+      "speaker": "Mara",
+      "voice": "af_sarah",
+      "speed": 0.96,
+      "text": "Now I wait for an answer I can't write for them.",
+      "segments": [
+        {
+          "text": "Now I wait for an answer I can't write for them.",
+          "speed": 0.96,
+          "pauseAfter": 0
+        }
+      ],
+      "direction": "Present-day uncertainty, distinct from her recorded testimony.",
+      "exampleRoute": "mara-company-courier-stay.json"
+    }
+  ],
+  "artBindings": [
+    {
+      "art": "notice-desk",
+      "scenes": [
+        "act2_notice_brief",
+        "act2_notice_sources",
+        "act2_notice_methods",
+        "act2_notice_allocation",
+        "act2_notice_allocation_review",
+        "act2_notice_offer",
+        "act2_notice_counter",
+        "act2_notice_capacity",
+        "act2_notice_privacy_refusal",
+        "act2_notice_receipt"
+      ],
+      "reason": "Neutral dispatch materials establish the room without representing a selected schedule, receipt, attendance or private household information. The loose stationery is illustrative, not a count of committed cards."
+    },
+    {
+      "art": "repair-bench",
+      "scenes": [
+        "act2_workshop"
+      ],
+      "reason": "The four unclaimed tool types communicate the shop choices without depicting purchase, ownership, care or permission."
+    },
+    {
+      "art": "shelter-pump",
+      "scenes": [
+        "act2_shelter_methods"
+      ],
+      "reason": "This plate belongs only to the unresolved pump-method decision; it never accompanies repaired, evacuated or allocated-room outcomes."
+    },
+    {
+      "art": "witness-checkpoint",
+      "scenes": [
+        "act2_witness_checkpoint"
+      ],
+      "reason": "The checkpoint setting depicts no witness identity, approved crossing, protected destination or completed transfer; Kerr\u2019s actual portrait remains."
+    }
+  ]
+}

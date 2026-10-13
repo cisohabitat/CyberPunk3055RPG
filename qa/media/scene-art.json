@@ -81,7 +81,6 @@
       "reason": "Keep Sera identifiable through shelter choices, witness review and memorial first arrivals or shorter returns. Reuse fits the same speaker and place; the portrait depicts no household move, protected witness or successful statement. The neutral portrait also fits a paused-contact hearing; it depicts neither a renewed request nor quotation permission. Wall returns distinguish actual receipt, contact limits and filing from the separate final decision; the neutral Sera portrait depicts neither forgiveness nor a spoken name. Distinct neighborhood returns and shorter hearing/records prose remain at the same tables. The retained neutral portrait supplies no new recording, reopened contact, filed statement or resolved employment review.",
       "scenes": [
         "act2_shelter_prep",
-        "act2_shelter_methods",
         "act2_shelter_evacuation",
         "act2_shelter_hall",
         "act2_shelter_rooms",
@@ -135,8 +134,7 @@
         "chapel",
         "route",
         "street_after",
-        "act2_origin_dustline",
-        "act2_workshop"
+        "act2_origin_dustline"
       ]
     },
     {
@@ -175,11 +173,7 @@
         "act2_pump_triage",
         "act2_pump_report",
         "act3_pump_schedule",
-        "act2_notice_brief",
-        "act2_notice_sources",
-        "act2_notice_methods",
         "act2_notice_recovery",
-        "act2_notice_receipt",
         "act3_notice_visit",
         "act3_notice_repair",
         "act3_notice_result",
@@ -208,7 +202,6 @@
         "act2_kerr_door",
         "act2_kerr",
         "act2_heat",
-        "act2_witness_checkpoint",
         "act2_pump_methods",
         "act3_pump_visit"
       ]
@@ -401,19 +394,6 @@
     {
       "treatment": "portrait",
       "asset": "/art/lumen.jpg",
-      "reason": "Reuse Lumen at the existing clinic dispatch desk for the six-card draft, capacity feedback and terms. Her portrait depicts neither accepted delivery nor medical results; all allocation information stays in readable text.",
-      "scenes": [
-        "act2_notice_allocation",
-        "act2_notice_allocation_review",
-        "act2_notice_capacity",
-        "act2_notice_privacy_refusal",
-        "act2_notice_offer",
-        "act2_notice_counter"
-      ]
-    },
-    {
-      "treatment": "portrait",
-      "asset": "/art/lumen.jpg",
       "scenes": [
         "act3_chapel_return"
       ],
@@ -573,6 +553,47 @@
       "reason": "A cart of clothes awaiting washing establishes Sera\u2019s ordinary shared work before funding, carrying or declining the task. Spare towels do not depict the pending wash as complete; no moved household, repaired valve, witness room or treatment is shown.",
       "scenes": [
         "act3_shelter_visit"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/notice-desk.jpg",
+      "reason": "Neutral dispatch materials establish the room without representing a selected schedule, receipt, attendance or private household information. The loose stationery is illustrative, not a count of committed cards.",
+      "scenes": [
+        "act2_notice_brief",
+        "act2_notice_sources",
+        "act2_notice_methods",
+        "act2_notice_allocation",
+        "act2_notice_allocation_review",
+        "act2_notice_offer",
+        "act2_notice_counter",
+        "act2_notice_capacity",
+        "act2_notice_privacy_refusal",
+        "act2_notice_receipt"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/repair-bench.jpg",
+      "reason": "The four unclaimed tool types communicate the shop choices without depicting purchase, ownership, care or permission.",
+      "scenes": [
+        "act2_workshop"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/shelter-pump.jpg",
+      "reason": "This plate belongs only to the unresolved pump-method decision; it never accompanies repaired, evacuated or allocated-room outcomes.",
+      "scenes": [
+        "act2_shelter_methods"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/witness-checkpoint.jpg",
+      "reason": "The checkpoint setting depicts no witness identity, approved crossing, protected destination or completed transfer; Kerr\u2019s actual portrait remains.",
+      "scenes": [
+        "act2_witness_checkpoint"
       ]
     }
   ],

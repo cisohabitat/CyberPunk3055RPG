@@ -30,7 +30,7 @@
     ]
   },
   "processing": "PCM16 mono master retained; optional exact-quotation phrase segments with bounded speed/pause and 8ms phrase edges; delivery peak normalized to 0.72, 8ms clip edges and 80ms head/tail silence.",
-  "reviewStatus": "Seventy-five fixed stock synthetic quotations. Twelve additions: ten for Asa, one for Nia, one for Ives. All preceding sixty-three deliveries unchanged; nine distinct stock cast styles. Authored route, exact speaker/text, signal and native playback checks; no commissioned actor or independent listening acceptance.",
+  "reviewStatus": "Eighty-nine fixed stock synthetic quotations. Fourteen additions for Lumen, Quill, Sera, Edda and Mara. All preceding seventy-five deliveries unchanged; nine established stock cast styles. Authored route, exact speaker/text, signal and native playback checks; no commissioned actor or independent listening acceptance.",
   "lines": [
     {
       "id": "voice-mara-assurance",
@@ -2177,6 +2177,467 @@
       "durationSeconds": 3.7226666666666666,
       "peak": 0.7199926755577257,
       "rms": 0.11906559670348468
+    },
+    {
+      "id": "voice-lumen-full-window",
+      "scene": "act2_notice_capacity",
+      "speaker": "Sister Lumen",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "text": "Carrying six papers isn't six places in the room. The last two would arrive to a full window.",
+      "segments": [
+        {
+          "text": "Carrying six papers isn't six places in the room.",
+          "speed": 0.93,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "The last two would arrive to a full window.",
+          "speed": 0.93,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Firm capacity limit, practical rather than scolding.",
+      "language": "en-us",
+      "path": "public/audio/voice-lumen-full-window.wav",
+      "sourceFile": "/workspace/generated_audio/neighborhood-art-voice/voice-lumen-full-window.wav",
+      "sourceSha256": "c9b254bc9c9cdd28024e36112ea90e9828191eef411d3822ac4f34960dc3bbe8",
+      "sha256": "250c8890091c5b99b136279195ed2aab784057ebd3c1e119f8ed03e6fdedaa97",
+      "bytes": 294890,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 6.142625,
+      "peak": 0.7199926755577257,
+      "rms": 0.10645933673326896
+    },
+    {
+      "id": "voice-lumen-private-door",
+      "scene": "act2_notice_privacy_refusal",
+      "speaker": "Sister Lumen",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "text": "No. Give them my desk, not somebody else's front door.",
+      "segments": [
+        {
+          "text": "No.",
+          "speed": 0.93,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "Give them my desk, not somebody else's front door.",
+          "speed": 0.93,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Clear privacy refusal; measured emphasis on the desk.",
+      "language": "en-us",
+      "path": "public/audio/voice-lumen-private-door.wav",
+      "sourceFile": "/workspace/generated_audio/neighborhood-art-voice/voice-lumen-private-door.wav",
+      "sourceSha256": "352ec77454749985e60e463b40b069ae3debfb8d41497e4431732f6da01582f1",
+      "sha256": "802e32041933cb0d9ff6d13de362ef2575d22eaf97b051c968b2c3a67c26d504",
+      "bytes": 205100,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 4.272,
+      "peak": 0.7199926755577257,
+      "rms": 0.10796612723471066
+    },
+    {
+      "id": "voice-lumen-counteroffer",
+      "scene": "act2_notice_counter",
+      "speaker": "Sister Lumen",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "text": "I won't promise the third. Carry it to the later desk yourself, fund another carrier, or change the split.",
+      "segments": [
+        {
+          "text": "I won't promise the third.",
+          "speed": 0.93,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "Carry it to the later desk yourself, fund another carrier, or change the split.",
+          "speed": 0.93,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Honest limit followed by three workable alternatives.",
+      "language": "en-us",
+      "path": "public/audio/voice-lumen-counteroffer.wav",
+      "sourceFile": "/workspace/generated_audio/neighborhood-art-voice/voice-lumen-counteroffer.wav",
+      "sourceSha256": "95024cad1897d3b0d1d1962fbd4ce7a0b67392588639ec61c773c6761b4f4bc3",
+      "sha256": "dbf3306e2cbd5fc464030fe22840e0ea8cb62aa903980742b38cedbd7fbde4b5",
+      "bytes": 323018,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 6.728625,
+      "peak": 0.7199926755577257,
+      "rms": 0.08964530060812842
+    },
+    {
+      "id": "voice-lumen-funded-carrier",
+      "scene": "act3_notice_visit",
+      "speaker": "Sister Lumen",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "text": "That split needed the extra carrier you funded. Keep the work beside the plan.",
+      "segments": [
+        {
+          "text": "That split needed the extra carrier you funded.",
+          "speed": 0.93,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "Keep the work beside the plan.",
+          "speed": 0.93,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Remember actual funded work without promising clinic attendance.",
+      "language": "en-us",
+      "path": "public/audio/voice-lumen-funded-carrier.wav",
+      "sourceFile": "/workspace/generated_audio/neighborhood-art-voice/voice-lumen-funded-carrier.wav",
+      "sourceSha256": "bf3471e9fc9b6a8ee0525bb5a8ffcd17b135d4a7b04b32cd9746ac45890daf5e",
+      "sha256": "0935ad4ffda521f14d42c2d6b267cd57f3abfe159459d8d3dadcb9899886dde0",
+      "bytes": 245194,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 5.107291666666667,
+      "peak": 0.7199926755577257,
+      "rms": 0.08322881010991671
+    },
+    {
+      "id": "voice-lumen-later-trip",
+      "scene": "act3_notice_visit",
+      "speaker": "Sister Lumen",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "text": "That split needed your extra later trip. Keep the work beside the plan.",
+      "segments": [
+        {
+          "text": "That split needed your extra later trip.",
+          "speed": 0.93,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "Keep the work beside the plan.",
+          "speed": 0.93,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Acknowledge the runner\u2019s actual additional trip.",
+      "language": "en-us",
+      "path": "public/audio/voice-lumen-later-trip.wav",
+      "sourceFile": "/workspace/generated_audio/neighborhood-art-voice/voice-lumen-later-trip.wav",
+      "sourceSha256": "fe3ca8d0209e201ab59c5498c330b40c4ea7b1955b211c45d3aea8899322ae98",
+      "sha256": "fabbd3b0bb315ef7c62c7eca90504c57448e1ca3ccfc8b641da61a3c09321700",
+      "bytes": 231276,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 4.817333333333333,
+      "peak": 0.7199926755577257,
+      "rms": 0.10883186282137013
+    },
+    {
+      "id": "voice-lumen-return-bundle",
+      "scene": "act3_notice_visit",
+      "speaker": "Sister Lumen",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "text": "That split needed your clinic return bundle. Keep the work beside the plan.",
+      "segments": [
+        {
+          "text": "That split needed your clinic return bundle.",
+          "speed": 0.93,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "Keep the work beside the plan.",
+          "speed": 0.93,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Remember the accepted return contact, without erasing a refusal.",
+      "language": "en-us",
+      "path": "public/audio/voice-lumen-return-bundle.wav",
+      "sourceFile": "/workspace/generated_audio/neighborhood-art-voice/voice-lumen-return-bundle.wav",
+      "sourceSha256": "79e0caa131cf04261ba98e2629d08f8967d73b6d9b49c9c3c39f4c384b37ebb1",
+      "sha256": "83b9fbc12c441567ba680dd98661a589968ca1fa0600d5f6a5acda9456a5d5de",
+      "bytes": 235978,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 4.915291666666667,
+      "peak": 0.7199926755577257,
+      "rms": 0.11162146702583828
+    },
+    {
+      "id": "voice-quill-care-budget",
+      "scene": "act2_workshop",
+      "speaker": "Quill",
+      "voice": "am_michael",
+      "speed": 0.96,
+      "text": "Keep enough for the person on the other end of the job.",
+      "segments": [
+        {
+          "text": "Keep enough for the person on the other end of the job.",
+          "speed": 0.96,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Dry equipment advice with ordinary concern for the recipient.",
+      "language": "en-us",
+      "path": "public/audio/voice-quill-care-budget.wav",
+      "sourceFile": "/workspace/generated_audio/neighborhood-art-voice/voice-quill-care-budget.wav",
+      "sourceSha256": "a28eb5dab1fab59eaa5ce0cd5331c4e17fbfdbb93362d7ff00f721bed985d64d",
+      "sha256": "65b035eff64585c306dd57e2ac9e7c9efcb7900d3fcd17a490060396afdd3462",
+      "bytes": 182828,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 3.808,
+      "peak": 0.7199926755577257,
+      "rms": 0.09853928433405966
+    },
+    {
+      "id": "voice-lumen-ordinary-seat",
+      "scene": "act2_recovery",
+      "speaker": "Sister Lumen",
+      "voice": "af_heart",
+      "speed": 0.9,
+      "text": "This one doesn't keep your hour.",
+      "segments": [
+        {
+          "text": "This one doesn't keep your hour.",
+          "speed": 0.9,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Quiet reassurance about an ordinary rest seat.",
+      "language": "en-us",
+      "path": "public/audio/voice-lumen-ordinary-seat.wav",
+      "sourceFile": "/workspace/generated_audio/neighborhood-art-voice/voice-lumen-ordinary-seat.wav",
+      "sourceSha256": "d4682cdb14f945c61cafb946c619e35929b3ef4e1581e8fdd70fa4d3f55da8bd",
+      "sha256": "a9074f1036e653dfcb114068a2136995678f28951ae7e9fa7c224b76c8c57ee9",
+      "bytes": 101132,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 2.106,
+      "peak": 0.7199926755577257,
+      "rms": 0.09013527596053038
+    },
+    {
+      "id": "voice-lumen-after-rest",
+      "scene": "act2_recovery_after",
+      "speaker": "Sister Lumen",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "text": "Now decide who needs what you have left,",
+      "segments": [
+        {
+          "text": "Now decide who needs what you have left,",
+          "speed": 0.93,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Give the silence room before returning to unfinished work.",
+      "language": "en-us",
+      "path": "public/audio/voice-lumen-after-rest.wav",
+      "sourceFile": "/workspace/generated_audio/neighborhood-art-voice/voice-lumen-after-rest.wav",
+      "sourceSha256": "ea95f75d69ea29cd6be05973ca9171706f9214be831ff34effd0c464c9e3fe4f",
+      "sha256": "d9d4dc186d16438ff602958b3fbff3d68fae7042968f860b5900655738546bef",
+      "bytes": 120364,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 2.506666666666667,
+      "peak": 0.7199926755577257,
+      "rms": 0.1137098530623723
+    },
+    {
+      "id": "voice-sera-daylight",
+      "scene": "act2_shelter_result",
+      "speaker": "Sera",
+      "voice": "af_bella",
+      "speed": 0.95,
+      "text": "Come back when it\u2019s daylight. A place to sleep is the start of a night, not the whole of it.",
+      "segments": [
+        {
+          "text": "Come back when it\u2019s daylight.",
+          "speed": 0.95,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "A place to sleep is the start of a night, not the whole of it.",
+          "speed": 0.95,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Warm practical invitation after any shelter outcome.",
+      "language": "en-us",
+      "path": "public/audio/voice-sera-daylight.wav",
+      "sourceFile": "/workspace/generated_audio/neighborhood-art-voice/voice-sera-daylight.wav",
+      "sourceSha256": "1f7762f167cca89782942ed581316332c695dd4b07d89ea29c73eb27aa6e2b4a",
+      "sha256": "b5538120e91167609130804ab11c11661337a0aa988d22e792d6f8b77a28a72a",
+      "bytes": 269708,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 5.618,
+      "peak": 0.7199926755577257,
+      "rms": 0.07739249515002308
+    },
+    {
+      "id": "voice-edda-clean-number",
+      "scene": "act2_spire_receipt",
+      "speaker": "Edda",
+      "voice": "af_kore",
+      "speed": 0.95,
+      "text": "One clean number. One receiver. The old charges are still a fight.",
+      "segments": [
+        {
+          "text": "One clean number.",
+          "speed": 0.95,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "One receiver.",
+          "speed": 0.95,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "The old charges are still a fight.",
+          "speed": 0.95,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Measured earned handover; the previous invoices remain disputed.",
+      "language": "en-us",
+      "path": "public/audio/voice-edda-clean-number.wav",
+      "sourceFile": "/workspace/generated_audio/neighborhood-art-voice/voice-edda-clean-number.wav",
+      "sourceSha256": "fc8a3d7e2ad6fcad13c9a83bc4308a37aea681f3cd77c07da75c19c8af08cea1",
+      "sha256": "e21b52fcb50f8dc9c5b99d0555375970f3e770873c96a06883504309f78ac51b",
+      "bytes": 253932,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 5.289333333333333,
+      "peak": 0.7199926755577257,
+      "rms": 0.12420291257619631
+    },
+    {
+      "id": "voice-edda-query-remains",
+      "scene": "act2_spire_recovery",
+      "speaker": "Edda",
+      "voice": "af_kore",
+      "speed": 0.95,
+      "text": "We can close the key. We can\u2019t make that query disappear.",
+      "segments": [
+        {
+          "text": "We can close the key.",
+          "speed": 0.95,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "We can\u2019t make that query disappear.",
+          "speed": 0.95,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Steady recovery, no denial of the logged badge query.",
+      "language": "en-us",
+      "path": "public/audio/voice-edda-query-remains.wav",
+      "sourceFile": "/workspace/generated_audio/neighborhood-art-voice/voice-edda-query-remains.wav",
+      "sourceSha256": "1dcd607db08f2566aa4bf5cf48d01391cff3f352ac9324e0fe1376998b4ab5fa",
+      "sha256": "bb4f98ca970f75a103c7fc0151e2511ea66e37c43f4f2a463e4c083b266be045",
+      "bytes": 190220,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 3.962,
+      "peak": 0.7199926755577257,
+      "rms": 0.11113627901149084
+    },
+    {
+      "id": "voice-edda-staffed-desk",
+      "scene": "act2_spire_recovery",
+      "speaker": "Edda",
+      "voice": "af_kore",
+      "speed": 0.95,
+      "text": "The staffed desk is slower. You don\u2019t need to wake that thing to ask.",
+      "segments": [
+        {
+          "text": "The staffed desk is slower.",
+          "speed": 0.95,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "You don\u2019t need to wake that thing to ask.",
+          "speed": 0.95,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Practical alternative to activating the badge reader.",
+      "language": "en-us",
+      "path": "public/audio/voice-edda-staffed-desk.wav",
+      "sourceFile": "/workspace/generated_audio/neighborhood-art-voice/voice-edda-staffed-desk.wav",
+      "sourceSha256": "4abb8f6c6fae4eb122c7efdb368a5d9f3472eeb4ec44cdadc36afa5ab7960b90",
+      "sha256": "6d105210bc98586749ac327477e6e164bda37b9a63cb623e77576519336ff38b",
+      "bytes": 205036,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 4.270666666666667,
+      "peak": 0.7199926755577257,
+      "rms": 0.11448391033857468
+    },
+    {
+      "id": "voice-mara-waits-answer",
+      "scene": "act2_response_receipt",
+      "speaker": "Mara",
+      "voice": "af_sarah",
+      "speed": 0.96,
+      "text": "Now I wait for an answer I can't write for them.",
+      "segments": [
+        {
+          "text": "Now I wait for an answer I can't write for them.",
+          "speed": 0.96,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Present-day uncertainty, distinct from her recorded testimony.",
+      "language": "en-us",
+      "path": "public/audio/voice-mara-waits-answer.wav",
+      "sourceFile": "/workspace/generated_audio/neighborhood-art-voice/voice-mara-waits-answer.wav",
+      "sourceSha256": "278b9c14c446f083d43abec8e3f7ff41da0b182b84a45ef8c88bee9896e51afa",
+      "sha256": "eba8fcda2493aefb0298bdc8e1d26b9a474360c099b91f1ac2e658d9a0e54d07",
+      "bytes": 144844,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 3.0166666666666666,
+      "peak": 0.7199926755577257,
+      "rms": 0.09563906689903559
     }
   ],
   "generationEnvironment": {

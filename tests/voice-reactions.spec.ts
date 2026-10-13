@@ -6,6 +6,20 @@ import type { ReplaySpec } from "../lib/story-replay";
 import { installAudioReview, type AudioReview } from "../qa/production/audio-review";
 
 const cases = [
+  ["allocation-revised.json", "voice-lumen-full-window", "act2_notice_capacity"],
+  ["allocation-revised.json", "voice-lumen-private-door", "act2_notice_privacy_refusal"],
+  ["allocation-later-funded.json", "voice-lumen-counteroffer", "act2_notice_counter"],
+  ["allocation-later-funded.json", "voice-lumen-funded-carrier", "act3_notice_visit"],
+  ["allocation-later-work.json", "voice-lumen-later-trip", "act3_notice_visit"],
+  ["allocation-revised.json", "voice-lumen-return-bundle", "act3_notice_visit"],
+  ["gutterwire-harness.json", "voice-quill-care-budget", "act2_workshop"],
+  ["finale-names-paused.json", "voice-lumen-ordinary-seat", "act2_recovery"],
+  ["finale-names-paused.json", "voice-lumen-after-rest", "act2_recovery_after"],
+  ["allocation-gutterwire.json", "voice-sera-daylight", "act2_shelter_result"],
+  ["memory-timeline-bounded.json", "voice-edda-clean-number", "act2_spire_receipt"],
+  ["spire-late.json", "voice-edda-query-remains", "act2_spire_recovery"],
+  ["spire-pending.json", "voice-edda-staffed-desk", "act2_spire_recovery"],
+  ["mara-company-courier-stay.json", "voice-mara-waits-answer", "act2_response_receipt"],
   ["mara-company-courier-stay.json", "voice-mara-chair-remembered", "act3_mara_followup"],
   ["mara-company-decline-company.json", "voice-mara-company-declined", "act3_mara_followup"],
   ["mara-company-scarce-leave.json", "voice-mara-walked-reply", "act3_mara_followup"],
@@ -40,7 +54,7 @@ for (const [route, id, sceneId] of cases) test(`revealed reaction follows the ac
   const audio = (): Promise<AudioReview> => page.evaluate(() => (window as unknown as { audioReview: AudioReview }).audioReview);
   const saved = () => page.evaluate(() => localStorage.getItem("saint-shard-3055-v1"));
   const before = await saved();
-  if (sceneId !== "act3_notice_result") {
+  if (!["act3_notice_result", "act2_notice_capacity", "act2_notice_privacy_refusal", "act2_notice_counter", "act2_recovery", "act2_spire_recovery"].includes(sceneId)) {
     await expect(page.getByTestId("voice-line")).toHaveCount(0);
     expect((await audio()).started.filter(name => name.startsWith("voice-"))).toEqual([]);
     await page.getByTestId("show-rest").click();

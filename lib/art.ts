@@ -122,3 +122,9 @@ export const DISTRICT_ART: Record<string, string> = {
   "to-helion": "/art/spire.jpg",
   "to-ward-nine": "/art/wardnine.jpg",
 };
+
+// Neutral neighborhood settings; the leaking pump is restricted to its unresolved method scene.
+for (const id of ["act2_notice_brief", "act2_notice_sources", "act2_notice_methods", "act2_notice_allocation", "act2_notice_allocation_review", "act2_notice_offer", "act2_notice_counter", "act2_notice_capacity", "act2_notice_privacy_refusal", "act2_notice_receipt"]) ENCOUNTERS[id] = {"src": "/art/notice-desk.jpg", "small": "/art/notice-desk-small.jpg", "caption": "Glass Chapel \u00b7 the dispatch desk", "description": "Loose blank stationery, an unmarked divider, a closed dispatch satchel and a dark relay wait on a worn clinic counter beside an empty chair."};
+for (const id of ["act2_workshop"]) ENCOUNTERS[id] = {"src": "/art/repair-bench.jpg", "small": "/art/repair-bench-small.jpg", "caption": "District workshop \u00b7 one field kit", "description": "A copper probe, folded carrying harness, closed desk guide and bundled route shroud lie separately on a worn repair bench beneath a brass lamp."};
+for (const id of ["act2_shelter_methods"]) ENCOUNTERS[id] = {"src": "/art/shelter-pump.jpg", "small": "/art/shelter-pump-small.jpg", "caption": "Ward Four \u00b7 the leaking pump", "description": "Moisture drips from an aging copper valve into an enamel bucket beside a dark controller and a loose brace in a cramped concrete pump room."};
+for (const id of ["act2_witness_checkpoint"]) ENCOUNTERS[id] = {"src": "/art/witness-checkpoint.jpg", "small": "/art/witness-checkpoint-small.jpg", "caption": "City crossing \u00b7 the inspection point", "description": "An empty inspection booth and a dark scanner face a wet tiled passage beneath amber lamps, with the corridor bending out of view."};

@@ -1153,5 +1153,270 @@
         "pauseAfter": 0
       }
     ]
+  },
+  {
+    "id": "voice-lumen-full-window",
+    "scene": "act2_notice_capacity",
+    "speaker": "Sister Lumen",
+    "voice": "af_heart",
+    "speed": 0.93,
+    "text": "Carrying six papers isn't six places in the room. The last two would arrive to a full window.",
+    "segments": [
+      {
+        "text": "Carrying six papers isn't six places in the room.",
+        "speed": 0.93,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "The last two would arrive to a full window.",
+        "speed": 0.93,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-lumen-private-door",
+    "scene": "act2_notice_privacy_refusal",
+    "speaker": "Sister Lumen",
+    "voice": "af_heart",
+    "speed": 0.93,
+    "text": "No. Give them my desk, not somebody else's front door.",
+    "segments": [
+      {
+        "text": "No.",
+        "speed": 0.93,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "Give them my desk, not somebody else's front door.",
+        "speed": 0.93,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-lumen-counteroffer",
+    "scene": "act2_notice_counter",
+    "speaker": "Sister Lumen",
+    "voice": "af_heart",
+    "speed": 0.93,
+    "text": "I won't promise the third. Carry it to the later desk yourself, fund another carrier, or change the split.",
+    "segments": [
+      {
+        "text": "I won't promise the third.",
+        "speed": 0.93,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "Carry it to the later desk yourself, fund another carrier, or change the split.",
+        "speed": 0.93,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-lumen-funded-carrier",
+    "scene": "act3_notice_visit",
+    "speaker": "Sister Lumen",
+    "voice": "af_heart",
+    "speed": 0.93,
+    "text": "That split needed the extra carrier you funded. Keep the work beside the plan.",
+    "segments": [
+      {
+        "text": "That split needed the extra carrier you funded.",
+        "speed": 0.93,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "Keep the work beside the plan.",
+        "speed": 0.93,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-lumen-later-trip",
+    "scene": "act3_notice_visit",
+    "speaker": "Sister Lumen",
+    "voice": "af_heart",
+    "speed": 0.93,
+    "text": "That split needed your extra later trip. Keep the work beside the plan.",
+    "segments": [
+      {
+        "text": "That split needed your extra later trip.",
+        "speed": 0.93,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "Keep the work beside the plan.",
+        "speed": 0.93,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-lumen-return-bundle",
+    "scene": "act3_notice_visit",
+    "speaker": "Sister Lumen",
+    "voice": "af_heart",
+    "speed": 0.93,
+    "text": "That split needed your clinic return bundle. Keep the work beside the plan.",
+    "segments": [
+      {
+        "text": "That split needed your clinic return bundle.",
+        "speed": 0.93,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "Keep the work beside the plan.",
+        "speed": 0.93,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-quill-care-budget",
+    "scene": "act2_workshop",
+    "speaker": "Quill",
+    "voice": "am_michael",
+    "speed": 0.96,
+    "text": "Keep enough for the person on the other end of the job.",
+    "segments": [
+      {
+        "text": "Keep enough for the person on the other end of the job.",
+        "speed": 0.96,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-lumen-ordinary-seat",
+    "scene": "act2_recovery",
+    "speaker": "Sister Lumen",
+    "voice": "af_heart",
+    "speed": 0.9,
+    "text": "This one doesn't keep your hour.",
+    "segments": [
+      {
+        "text": "This one doesn't keep your hour.",
+        "speed": 0.9,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-lumen-after-rest",
+    "scene": "act2_recovery_after",
+    "speaker": "Sister Lumen",
+    "voice": "af_heart",
+    "speed": 0.93,
+    "text": "Now decide who needs what you have left,",
+    "segments": [
+      {
+        "text": "Now decide who needs what you have left,",
+        "speed": 0.93,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-sera-daylight",
+    "scene": "act2_shelter_result",
+    "speaker": "Sera",
+    "voice": "af_bella",
+    "speed": 0.95,
+    "text": "Come back when it\u2019s daylight. A place to sleep is the start of a night, not the whole of it.",
+    "segments": [
+      {
+        "text": "Come back when it\u2019s daylight.",
+        "speed": 0.95,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "A place to sleep is the start of a night, not the whole of it.",
+        "speed": 0.95,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-edda-clean-number",
+    "scene": "act2_spire_receipt",
+    "speaker": "Edda",
+    "voice": "af_kore",
+    "speed": 0.95,
+    "text": "One clean number. One receiver. The old charges are still a fight.",
+    "segments": [
+      {
+        "text": "One clean number.",
+        "speed": 0.95,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "One receiver.",
+        "speed": 0.95,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "The old charges are still a fight.",
+        "speed": 0.95,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-edda-query-remains",
+    "scene": "act2_spire_recovery",
+    "speaker": "Edda",
+    "voice": "af_kore",
+    "speed": 0.95,
+    "text": "We can close the key. We can\u2019t make that query disappear.",
+    "segments": [
+      {
+        "text": "We can close the key.",
+        "speed": 0.95,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "We can\u2019t make that query disappear.",
+        "speed": 0.95,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-edda-staffed-desk",
+    "scene": "act2_spire_recovery",
+    "speaker": "Edda",
+    "voice": "af_kore",
+    "speed": 0.95,
+    "text": "The staffed desk is slower. You don\u2019t need to wake that thing to ask.",
+    "segments": [
+      {
+        "text": "The staffed desk is slower.",
+        "speed": 0.95,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "You don\u2019t need to wake that thing to ask.",
+        "speed": 0.95,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-mara-waits-answer",
+    "scene": "act2_response_receipt",
+    "speaker": "Mara",
+    "voice": "af_sarah",
+    "speed": 0.96,
+    "text": "Now I wait for an answer I can't write for them.",
+    "segments": [
+      {
+        "text": "Now I wait for an answer I can't write for them.",
+        "speed": 0.96,
+        "pauseAfter": 0
+      }
+    ]
   }
 ]

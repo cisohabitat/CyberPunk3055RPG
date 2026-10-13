@@ -1047,6 +1047,106 @@
           "sha256": "5abd3be75cde378daed3bbe85bacee6132ed306e2fbceb8a7c5e7a9451021f33"
         }
       ]
+    },
+    {
+      "id": "notice-desk",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-13",
+      "sourceFile": "/workspace/generated_images/exec-3b65ba81-3cb2-4b27-a3a7-a2a6f2f9b9a5.png",
+      "sourceSha256": "accaee0c841ab2ce7b684002bb0783515e3c01cd257c6dcaeec4ea160d653256",
+      "promptSummary": "Create one standalone landscape 3:2 illustration for Saint Shard, an original cyberpunk narrative RPG set in 3055. Rich painterly cinematic realism with fine oil-brush texture, worn copper and iron, deep petroleum-blue shadows, restrained cyan reflections, tungsten amber practical light, intimate human-scale environment. Cohesive painted noir game art, clear layered foreground and midground, controlled contrast and atmospheric detail. No text, readable writing, logos, UI, borders, captions, faces or people. No celebration, approval stamps, authenticated evidence, completed task, rescue or consent is depicted. Glass Chapel clinic dispatch desk: six small cream-colored folded notice cards in two loose groups beside an unmarked brass divider and a closed weathered dispatch satchel. An empty chair, scratched wooden counter, dim mechanical message relay, rain-streaked high window, copper kettle. Cards have no readable markings. Untouched materials before scheduling; no accepted schedule, dispatched notices, patient names, home addresses or care outcome.",
+      "deliveryProcessing": "Resize and JPEG encode only; no crop, repaint or compositing. Original generated PNG retained at sourceFile.",
+      "files": [
+        {
+          "path": "public/art/notice-desk.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 237185,
+          "sha256": "a00696c9017ad0bb86c0b912fbd494be8382fbbece378d978431975057ad11f5"
+        },
+        {
+          "path": "public/art/notice-desk-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 67505,
+          "sha256": "ad6dbcaa7a54dda929f8fa1d6653baf8a79bd987982c67d8337616d952e46aeb"
+        }
+      ]
+    },
+    {
+      "id": "repair-bench",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-13",
+      "sourceFile": "/workspace/generated_images/exec-e8b9122c-56d6-41bd-8def-3a77071608db.png",
+      "sourceSha256": "dcd916ae077877ded8ecbcb2f9c2d7b99c8173c788039ee96f2ad4dd36fa68d9",
+      "promptSummary": "Create one standalone landscape 3:2 illustration for Saint Shard, an original cyberpunk narrative RPG set in 3055. Rich painterly cinematic realism with fine oil-brush texture, worn copper and iron, deep petroleum-blue shadows, restrained cyan reflections, tungsten amber practical light, intimate human-scale environment. Cohesive painted noir game art, clear layered foreground and midground, controlled contrast and atmospheric detail. No text, readable writing, logos, UI, borders, captions, faces or people. No celebration, approval stamps, authenticated evidence, completed task, rescue or consent is depicted. Neighborhood repair workshop bench: four distinct unclaimed field tools lie separately on worn charcoal felt. A short copper diagnostic probe, folded padded carrying harness, small closed paper desk guide, and bundled dark route shroud. Brass task lamp, battered drawers, rusted tools at the edges, cool rainlight through a wire-glass window. Human-scale practical craftsmanship. No purchase, tool ownership, price, usable personal data or repair completion.",
+      "deliveryProcessing": "Resize and JPEG encode only; no crop, repaint or compositing. Original generated PNG retained at sourceFile.",
+      "files": [
+        {
+          "path": "public/art/repair-bench.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 259375,
+          "sha256": "46714d0ca0fc54bbf38e7207a13ea620313fca2c35b7c0fa8fdff307ecd9ffe9"
+        },
+        {
+          "path": "public/art/repair-bench-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 77169,
+          "sha256": "5cd14b34949b03d873c870a841a0419ee5fe45e88f50b93705724cd6e8105634"
+        }
+      ]
+    },
+    {
+      "id": "shelter-pump",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-13",
+      "sourceFile": "/workspace/generated_images/exec-d1115f71-235a-43ef-bc72-4e151e8480a5.png",
+      "sourceSha256": "941abaddca2b9bc9d8e9c6f637d989be2ad4c2e6c5acff9c8dfa4115a386dffb",
+      "promptSummary": "Create one standalone landscape 3:2 illustration for Saint Shard, an original cyberpunk narrative RPG set in 3055. Rich painterly cinematic realism with fine oil-brush texture, worn copper and iron, deep petroleum-blue shadows, restrained cyan reflections, tungsten amber practical light, intimate human-scale environment. Cohesive painted noir game art, clear layered foreground and midground, controlled contrast and atmospheric detail. No text, readable writing, logos, UI, borders, captions, faces or people. No celebration, approval stamps, authenticated evidence, completed task, rescue or consent is depicted. Ward Four shelter pump room during an unresolved leak: heavy aging copper valve housing with visible moisture and thin drip into an enamel bucket, a dark local controller, a loose wooden brace leaning nearby. Cracked concrete, dim amber work lamp, deep blue shadows and a narrow exit visible beyond the machinery. No people. Valve remains unresolved and wet; no repaired condition, occupied dry shelter, mattress allocation or evacuation outcome.",
+      "deliveryProcessing": "Resize and JPEG encode only; no crop, repaint or compositing. Original generated PNG retained at sourceFile.",
+      "files": [
+        {
+          "path": "public/art/shelter-pump.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 260979,
+          "sha256": "8575223111ea63184d5d201458341b84ccadd35664fa71d5470620eeaf168097"
+        },
+        {
+          "path": "public/art/shelter-pump-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 73087,
+          "sha256": "431d130d445345790cbd278e66b209f0dd53ab241a9068378a9f060238e69bb2"
+        }
+      ]
+    },
+    {
+      "id": "witness-checkpoint",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-13",
+      "sourceFile": "/workspace/generated_images/exec-4eb3e87f-8c23-4a21-8491-64036f6167c8.png",
+      "sourceSha256": "dfbf99c487327988fc8baae210a2a21d9cb26794fce956b0d5e1463ea2afe18b",
+      "promptSummary": "Create one standalone landscape 3:2 illustration for Saint Shard, an original cyberpunk narrative RPG set in 3055. Rich painterly cinematic realism with fine oil-brush texture, worn copper and iron, deep petroleum-blue shadows, restrained cyan reflections, tungsten amber practical light, intimate human-scale environment. Cohesive painted noir game art, clear layered foreground and midground, controlled contrast and atmospheric detail. No text, readable writing, logos, UI, borders, captions, faces or people. No celebration, approval stamps, authenticated evidence, completed task, rescue or consent is depicted. A rainy city transfer checkpoint corridor: a closed unmarked inspection booth, old scanner pedestal with dark display, wet tiled floor and a passage bending out of sight beyond a low rail. A modest amber wall lamp, fogged glazing, copper pipework and petroleum-blue rain reflections. Passage is empty. No wheelchairs, witness identities, private addresses, green approval indicators, successful crossing or protected destination.",
+      "deliveryProcessing": "Resize and JPEG encode only; no crop, repaint or compositing. Original generated PNG retained at sourceFile.",
+      "files": [
+        {
+          "path": "public/art/witness-checkpoint.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 282426,
+          "sha256": "9b570b041a4d542fc6431459831a1fcdd17acc6876213f4caa8d5ee52fee6dc8"
+        },
+        {
+          "path": "public/art/witness-checkpoint-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 77319,
+          "sha256": "1adbeeb36f7e012edd5295284f8751917a679805cfbbb5d42e04432752835075"
+        }
+      ]
     }
   ]
 }

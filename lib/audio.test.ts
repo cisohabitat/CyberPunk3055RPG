@@ -8,6 +8,7 @@ import beds from "../qa/media/bed-delivery.json";
 import voices from "../qa/media/voice-provenance.json";
 import lines from "../qa/media/voice-lines.json";
 import reactionCycle from "../qa/media/voice-reactions.json";
+import neighborhoodCycle from "../qa/media/neighborhood-art-voice.json";
 import courierCycle from "../qa/media/courier-art-voice.json";
 import { commitChoice, createCharacter, getScene, presentChoices, sceneText } from "./engine";
 import type { GameState } from "./types";
@@ -181,6 +182,16 @@ describe("beds", () => {
     for (const line of courierCycle.voiceAdditions.filter(line => line.speaker === "Asa")) {
       assert.equal(line.voice, "af_alloy");
       assert.ok(!lines.some(existing => existing.speaker !== "Asa" && existing.voice === line.voice));
+    }
+  });
+  it("preserves previous deliveries and established styles in neighborhood voices", () => {
+    for (const [id, expected] of Object.entries(neighborhoodCycle.preservedDeliverySha256)) {
+      assert.equal(createHash("sha256").update(readFileSync(new URL(`../public/audio/${id}.wav`, import.meta.url))).digest("hex"), expected, id);
+    }
+    for (const added of neighborhoodCycle.voiceAdditions) {
+      const prior = lines.filter(line => line.speaker === added.speaker && line.id in neighborhoodCycle.preservedDeliverySha256);
+      assert.ok(prior.length > 0);
+      assert.ok(prior.every(line => line.voice === added.voice));
     }
   });
   it("keeps refusal and handover voices behind their exact visible quotations", () => {

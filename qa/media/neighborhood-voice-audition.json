@@ -1,0 +1,147 @@
+{
+  "disclosure": "Fixed stock synthetic voices, exact delivered clips with one-second gaps. Technical audition, not perceptual acceptance.",
+  "delivery": "qa/media/neighborhood-voice-preview.mp3",
+  "sha256": "a97e043752906e313f005e640c28b95ab08ec569a8e486e272c2ca9f20172514",
+  "intervals": [
+    {
+      "id": "voice-lumen-full-window",
+      "scene": "act2_notice_capacity",
+      "speaker": "Sister Lumen",
+      "direction": "Firm capacity limit, practical rather than scolding.",
+      "text": "Carrying six papers isn't six places in the room. The last two would arrive to a full window.",
+      "startSeconds": 0.0,
+      "endSeconds": 6.142625,
+      "sha256": "250c8890091c5b99b136279195ed2aab784057ebd3c1e119f8ed03e6fdedaa97"
+    },
+    {
+      "id": "voice-lumen-private-door",
+      "scene": "act2_notice_privacy_refusal",
+      "speaker": "Sister Lumen",
+      "direction": "Clear privacy refusal; measured emphasis on the desk.",
+      "text": "No. Give them my desk, not somebody else's front door.",
+      "startSeconds": 7.142625,
+      "endSeconds": 11.414625000000001,
+      "sha256": "802e32041933cb0d9ff6d13de362ef2575d22eaf97b051c968b2c3a67c26d504"
+    },
+    {
+      "id": "voice-lumen-counteroffer",
+      "scene": "act2_notice_counter",
+      "speaker": "Sister Lumen",
+      "direction": "Honest limit followed by three workable alternatives.",
+      "text": "I won't promise the third. Carry it to the later desk yourself, fund another carrier, or change the split.",
+      "startSeconds": 12.414625,
+      "endSeconds": 19.14325,
+      "sha256": "dbf3306e2cbd5fc464030fe22840e0ea8cb62aa903980742b38cedbd7fbde4b5"
+    },
+    {
+      "id": "voice-lumen-funded-carrier",
+      "scene": "act3_notice_visit",
+      "speaker": "Sister Lumen",
+      "direction": "Remember actual funded work without promising clinic attendance.",
+      "text": "That split needed the extra carrier you funded. Keep the work beside the plan.",
+      "startSeconds": 20.14325,
+      "endSeconds": 25.250541666666663,
+      "sha256": "0935ad4ffda521f14d42c2d6b267cd57f3abfe159459d8d3dadcb9899886dde0"
+    },
+    {
+      "id": "voice-lumen-later-trip",
+      "scene": "act3_notice_visit",
+      "speaker": "Sister Lumen",
+      "direction": "Acknowledge the runner\u2019s actual additional trip.",
+      "text": "That split needed your extra later trip. Keep the work beside the plan.",
+      "startSeconds": 26.250541666666667,
+      "endSeconds": 31.067875,
+      "sha256": "fabbd3b0bb315ef7c62c7eca90504c57448e1ca3ccfc8b641da61a3c09321700"
+    },
+    {
+      "id": "voice-lumen-return-bundle",
+      "scene": "act3_notice_visit",
+      "speaker": "Sister Lumen",
+      "direction": "Remember the accepted return contact, without erasing a refusal.",
+      "text": "That split needed your clinic return bundle. Keep the work beside the plan.",
+      "startSeconds": 32.067875,
+      "endSeconds": 36.98316666666667,
+      "sha256": "83b9fbc12c441567ba680dd98661a589968ca1fa0600d5f6a5acda9456a5d5de"
+    },
+    {
+      "id": "voice-quill-care-budget",
+      "scene": "act2_workshop",
+      "speaker": "Quill",
+      "direction": "Dry equipment advice with ordinary concern for the recipient.",
+      "text": "Keep enough for the person on the other end of the job.",
+      "startSeconds": 37.98316666666667,
+      "endSeconds": 41.79116666666667,
+      "sha256": "65b035eff64585c306dd57e2ac9e7c9efcb7900d3fcd17a490060396afdd3462"
+    },
+    {
+      "id": "voice-lumen-ordinary-seat",
+      "scene": "act2_recovery",
+      "speaker": "Sister Lumen",
+      "direction": "Quiet reassurance about an ordinary rest seat.",
+      "text": "This one doesn't keep your hour.",
+      "startSeconds": 42.79116666666667,
+      "endSeconds": 44.89716666666667,
+      "sha256": "a9074f1036e653dfcb114068a2136995678f28951ae7e9fa7c224b76c8c57ee9"
+    },
+    {
+      "id": "voice-lumen-after-rest",
+      "scene": "act2_recovery_after",
+      "speaker": "Sister Lumen",
+      "direction": "Give the silence room before returning to unfinished work.",
+      "text": "Now decide who needs what you have left,",
+      "startSeconds": 45.897166666666664,
+      "endSeconds": 48.40383333333333,
+      "sha256": "d9d4dc186d16438ff602958b3fbff3d68fae7042968f860b5900655738546bef"
+    },
+    {
+      "id": "voice-sera-daylight",
+      "scene": "act2_shelter_result",
+      "speaker": "Sera",
+      "direction": "Warm practical invitation after any shelter outcome.",
+      "text": "Come back when it\u2019s daylight. A place to sleep is the start of a night, not the whole of it.",
+      "startSeconds": 49.40383333333333,
+      "endSeconds": 55.02183333333333,
+      "sha256": "b5538120e91167609130804ab11c11661337a0aa988d22e792d6f8b77a28a72a"
+    },
+    {
+      "id": "voice-edda-clean-number",
+      "scene": "act2_spire_receipt",
+      "speaker": "Edda",
+      "direction": "Measured earned handover; the previous invoices remain disputed.",
+      "text": "One clean number. One receiver. The old charges are still a fight.",
+      "startSeconds": 56.02183333333333,
+      "endSeconds": 61.311166666666665,
+      "sha256": "e21b52fcb50f8dc9c5b99d0555375970f3e770873c96a06883504309f78ac51b"
+    },
+    {
+      "id": "voice-edda-query-remains",
+      "scene": "act2_spire_recovery",
+      "speaker": "Edda",
+      "direction": "Steady recovery, no denial of the logged badge query.",
+      "text": "We can close the key. We can\u2019t make that query disappear.",
+      "startSeconds": 62.311166666666665,
+      "endSeconds": 66.27316666666667,
+      "sha256": "bb4f98ca970f75a103c7fc0151e2511ea66e37c43f4f2a463e4c083b266be045"
+    },
+    {
+      "id": "voice-edda-staffed-desk",
+      "scene": "act2_spire_recovery",
+      "speaker": "Edda",
+      "direction": "Practical alternative to activating the badge reader.",
+      "text": "The staffed desk is slower. You don\u2019t need to wake that thing to ask.",
+      "startSeconds": 67.27316666666667,
+      "endSeconds": 71.54383333333334,
+      "sha256": "6d105210bc98586749ac327477e6e164bda37b9a63cb623e77576519336ff38b"
+    },
+    {
+      "id": "voice-mara-waits-answer",
+      "scene": "act2_response_receipt",
+      "speaker": "Mara",
+      "direction": "Present-day uncertainty, distinct from her recorded testimony.",
+      "text": "Now I wait for an answer I can't write for them.",
+      "startSeconds": 72.54383333333334,
+      "endSeconds": 75.5605,
+      "sha256": "eba8fcda2493aefb0298bdc8e1d26b9a474360c099b91f1ac2e658d9a0e54d07"
+    }
+  ]
+}

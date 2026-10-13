@@ -3,6 +3,10 @@ import { createCharacter } from "../lib/engine";
 import type { GameState } from "../lib/types";
 
 const scenarios = [
+  { sceneId: "act2_notice_privacy_refusal", art: "notice-desk", flags: { notice_home_refused: true } },
+  { sceneId: "act2_workshop", art: "repair-bench", flags: {} },
+  { sceneId: "act2_shelter_methods", art: "shelter-pump", flags: { shelter_started: true } },
+  { sceneId: "act2_witness_checkpoint", art: "witness-checkpoint", flags: { witness_briefed: true } },
   { sceneId: "stall", art: "quill-offer", flags: {} },
   { sceneId: "act2_response_invitation", art: "mara-present", flags: { heard_memo: true } },
   { sceneId: "act2_response_agenda", art: "mara-present", flags: { response_started: true, response_public_refused: true, response_private_consent: true }, portrait: "mara-boundary" },
@@ -54,7 +58,7 @@ for (const [width, artwork] of [[390, "full"], [1440, "full"], [320, "none"]] as
 
 test("missing new scene plates retain their descriptions and actionable choices", async ({ browser, baseURL }) => {
   test.setTimeout(90_000);
-  for (const scenario of scenarios.filter(s => ["act2_response_invitation", "act2_witness_arrival", "act2_route_receipt", "act3_testimony_review", "act2_archive_brief", "act3_freight_visit", "act3_shelter_visit"].includes(s.sceneId))) {
+  for (const scenario of scenarios.filter(s => ["act2_notice_privacy_refusal", "act2_workshop", "act2_shelter_methods", "act2_witness_checkpoint", "act2_response_invitation", "act2_witness_arrival", "act2_route_receipt", "act3_testimony_review", "act2_archive_brief", "act3_freight_visit", "act3_shelter_visit"].includes(s.sceneId))) {
     const context = await browser.newContext({ baseURL }); const page = await context.newPage();
     await page.route("**/art/**", r => r.abort());
     await open(page, { ...base, sceneId: scenario.sceneId, flags: { ...scenario.flags } }, "full");
