@@ -6,7 +6,7 @@ Returning players retain their saved Sound off and zero voice volume choices, in
 
 ## Coverage
 
-There are 45 fixed stock synthetic quotations, up from 22. All 22 earlier delivery files remain byte-identical. The 23 additions cover Quill's advance, negotiation, routes and ownership answer; Lumen's introduction; Mara's reason and recorded interview; Kerr's confrontation; the three origin contracts; archive access; clinic notice work; the Week's Kerr/Lumen conversations; Nia's transfer terms; checkpoint and breach recovery; Nia's later contact boundary; and Lumen's burned-hour response.
+The automatic-dialogue release introduced 45 fixed stock synthetic quotations, up from 22. The subsequent [reaction voice cycle](VOICE_REACTIONS_CYCLE.md) adds eighteen, for 63 current deliveries. All 22 earlier delivery files remain byte-identical. The 23 additions cover Quill's advance, negotiation, routes and ownership answer; Lumen's introduction; Mara's reason and recorded interview; Kerr's confrontation; the three origin contracts; archive access; clinic notice work; the Week's Kerr/Lumen conversations; Nia's transfer terms; checkpoint and breach recovery; Nia's later contact boundary; and Lumen's burned-hour response.
 
 These are existing authored quotations, spoken with the seven established character voice identities plus Edda’s distinct stock voice. They do not introduce new story choices, outcomes or scenes. Existing suitable portraits and illustrations accompany the scenes. A conditional line is selected only when the visible quotation and scene speaker match; a scene's declared speaker is not permission to voice another character's quotation.
 
@@ -31,7 +31,7 @@ The complete audition is [voice-expansion-preview.mp3](../qa/media/voice-expansi
 
 The initial local candidate passed 485 unit/replay tests, TypeScript, a production build and media budgets (186 public media assets before the lossless bed deliveries). The seven new automatic-dialogue scenarios passed on desktop Chromium, phone Chromium and WebKit (21 checks). Twenty-eight Chromium audio/sound regression checks passed, retaining explicit manual-mode coverage.
 
-`npm run production:voices -- URL --automatic --out PATH` verifies all 45 reachable quotations through automatic start, natural completion, transcript parity, cached replay, Stop and mixer cleanup. Without `--automatic`, it exercises manual playback. `npm run production:experience` retains deliberate manual playback for its keyboard campaign checks. The deployment remains gated by the full four-browser CI suite.
+`npm run production:voices -- URL --automatic --out PATH` verifies every current reachable quotation through automatic start, natural completion, transcript parity, cached replay, Stop and mixer cleanup. Without `--automatic`, it exercises manual playback. `npm run production:experience` retains deliberate manual playback for its keyboard campaign checks. The deployment remains gated by the full four-browser CI suite.
 
 State-bearing browser results stay in private local QA outputs. Source-familiar simulated play remains the available development proxy. Technical playback and signal measurements do not establish pronunciation quality, emotional performance, human listening comfort or physical-device acceptance. The provisional internal grade remains 8.2; clip count alone does not raise it.
 

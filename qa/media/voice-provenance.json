@@ -1,6 +1,6 @@
 {
   "disclosure": "Stock synthetic voices generated offline with Kokoro v1.0; no actor session or individual voice clone was commissioned. Only the fixed authored quotations below are rendered. No model or speech service ships in the game.",
-  "generated": "2026-10-12",
+  "generated": "2026-10-13",
   "source": "scripts/generate-voices.py",
   "driver": {
     "name": "kokoro-onnx",
@@ -30,7 +30,7 @@
     ]
   },
   "processing": "PCM16 mono master retained; optional exact-quotation phrase segments with bounded speed/pause and 8ms phrase edges; delivery peak normalized to 0.72, 8ms clip edges and 80ms head/tail silence.",
-  "reviewStatus": "Forty-five fixed stock synthetic quotations. Twenty-three new deliveries; all earlier twenty-two hashes unchanged. Edda’s service-desk line uses af_kore with exact visible attribution despite Ives being the primary scene portrait. Source, signal and native playback review; no actor commission or independent perceptual acceptance.",
+  "reviewStatus": "Sixty-three fixed stock synthetic quotations. Eighteen directed reactions added; all preceding forty-five deliveries unchanged. Authored route, exact speaker/text, signal and native playback checks; no commissioned actor or independent listening acceptance.",
   "lines": [
     {
       "id": "voice-mara-assurance",
@@ -1112,6 +1112,658 @@
       "durationSeconds": 5.223291666666666,
       "peak": 0.7199926755577257,
       "rms": 0.12888865430635754
+    },
+    {
+      "id": "voice-mara-chair-remembered",
+      "scene": "act3_mara_followup",
+      "speaker": "Mara",
+      "voice": "af_sarah",
+      "speed": 0.96,
+      "text": "You paid someone to carry the paper so you could sit here. I remember the chair, too.",
+      "segments": [
+        {
+          "text": "You paid someone to carry the paper so you could sit here.",
+          "speed": 0.96,
+          "pauseAfter": 0.26
+        },
+        {
+          "text": "I remember the chair, too.",
+          "speed": 0.96,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Quiet recognition; distinguish company from the delivered envelope.",
+      "language": "en-us",
+      "path": "public/audio/voice-mara-chair-remembered.wav",
+      "sourceFile": "/workspace/generated_audio/voice-reactions/voice-mara-chair-remembered.wav",
+      "sourceSha256": "c9f4642f834277b0325b9cffe3ac4f49cda9c3edaf6266a3e73e012924c4a54b",
+      "sha256": "c9e9e7aca2d53c67426e45617c4a6c4bd296bec21cb034a8279cf715778e35ef",
+      "bytes": 253480,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 5.279916666666667,
+      "peak": 0.7199926755577257,
+      "rms": 0.07556956199594221
+    },
+    {
+      "id": "voice-mara-company-declined",
+      "scene": "act3_mara_followup",
+      "speaker": "Mara",
+      "voice": "af_sarah",
+      "speed": 0.96,
+      "text": "I kept the hour for myself. You don't owe me company because you heard what I did.",
+      "segments": [
+        {
+          "text": "I kept the hour for myself.",
+          "speed": 0.96,
+          "pauseAfter": 0.26
+        },
+        {
+          "text": "You don't owe me company because you heard what I did.",
+          "speed": 0.96,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "An unpressured boundary; no accusation for declining.",
+      "language": "en-us",
+      "path": "public/audio/voice-mara-company-declined.wav",
+      "sourceFile": "/workspace/generated_audio/voice-reactions/voice-mara-company-declined.wav",
+      "sourceSha256": "71adb47642bb75b072cca204177c3ad2f171dd9f1e75bc09b9d105c5b6266c9e",
+      "sha256": "7350ab9254c471360313a093bd2a6485f8832fd9c328f0d6933d86a74c3c1c84",
+      "bytes": 251564,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 5.24,
+      "peak": 0.7199926755577257,
+      "rms": 0.08105666525553483
+    },
+    {
+      "id": "voice-mara-walked-reply",
+      "scene": "act3_mara_followup",
+      "speaker": "Mara",
+      "voice": "af_sarah",
+      "speed": 0.96,
+      "text": "I did this after you left. You took the envelope; I kept the hour. I wanted you here, too. Both things can be true.",
+      "segments": [
+        {
+          "text": "I did this after you left.",
+          "speed": 0.96,
+          "pauseAfter": 0.26
+        },
+        {
+          "text": "You took the envelope; I kept the hour.",
+          "speed": 0.96,
+          "pauseAfter": 0.26
+        },
+        {
+          "text": "I wanted you here, too.",
+          "speed": 0.96,
+          "pauseAfter": 0.26
+        },
+        {
+          "text": "Both things can be true.",
+          "speed": 0.96,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Admit disappointment without withdrawing ownership of her time.",
+      "language": "en-us",
+      "path": "public/audio/voice-mara-walked-reply.wav",
+      "sourceFile": "/workspace/generated_audio/voice-reactions/voice-mara-walked-reply.wav",
+      "sourceSha256": "b872806746433347d63695101654cfa7f428f7f3e9dad233e58d85f4a685bce1",
+      "sha256": "eada25c55d98a1daed74b29c0bf72af0670ebb04df0bbbe174c53ad3e898bf96",
+      "bytes": 399690,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 8.325958333333332,
+      "peak": 0.7199926755577257,
+      "rms": 0.07980774935769543
+    },
+    {
+      "id": "voice-mara-next-batch",
+      "scene": "act3_mara_followup",
+      "speaker": "Mara",
+      "voice": "af_sarah",
+      "speed": 0.96,
+      "text": "The envelope went in the next batch. That hour didn't need a receipt to have happened.",
+      "segments": [
+        {
+          "text": "The envelope went in the next batch.",
+          "speed": 0.96,
+          "pauseAfter": 0.26
+        },
+        {
+          "text": "That hour didn't need a receipt to have happened.",
+          "speed": 0.96,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Matter-of-fact delay followed by remembered company.",
+      "language": "en-us",
+      "path": "public/audio/voice-mara-next-batch.wav",
+      "sourceFile": "/workspace/generated_audio/voice-reactions/voice-mara-next-batch.wav",
+      "sourceSha256": "4033590e27b627c5fc53697b52974b6e2c2f6b7e3006c812fa152949e4ce1fb3",
+      "sha256": "b19536c637c5dbe675eb1f462122d9f17a067227b8946f8819171b494bce3dce",
+      "bytes": 248556,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 5.177333333333333,
+      "peak": 0.7199926755577257,
+      "rms": 0.08227830438924959
+    },
+    {
+      "id": "voice-mara-envelope-pending",
+      "scene": "act3_mara_followup",
+      "speaker": "Mara",
+      "voice": "af_sarah",
+      "speed": 0.96,
+      "text": "The envelope is still here. I'm glad you sat with me. I still need to send it.",
+      "segments": [
+        {
+          "text": "The envelope is still here.",
+          "speed": 0.96,
+          "pauseAfter": 0.26
+        },
+        {
+          "text": "I'm glad you sat with me.",
+          "speed": 0.96,
+          "pauseAfter": 0.26
+        },
+        {
+          "text": "I still need to send it.",
+          "speed": 0.96,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Warmth and unfinished work coexist; do not imply dispatch.",
+      "language": "en-us",
+      "path": "public/audio/voice-mara-envelope-pending.wav",
+      "sourceFile": "/workspace/generated_audio/voice-reactions/voice-mara-envelope-pending.wav",
+      "sourceSha256": "440adea2aac25e9f063df22a8047e74cb65712b616653ebd5902e4ed3510cfac",
+      "sha256": "bee19816a3368bc88a1ec14503573e43fb61bbf8b149cc19c3691ae647cd239d",
+      "bytes": 265642,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 5.533291666666667,
+      "peak": 0.7199926755577257,
+      "rms": 0.07517004442634431
+    },
+    {
+      "id": "voice-kerr-trust-kept",
+      "scene": "act3_kerr_collection",
+      "speaker": "Kerr",
+      "voice": "am_adam",
+      "speed": 0.97,
+      "text": "That was the part I asked you to keep.",
+      "segments": [
+        {
+          "text": "That was the part I asked you to keep.",
+          "speed": 0.97,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Understated acknowledgement, not a reward or treatment claim.",
+      "language": "en-us",
+      "path": "public/audio/voice-kerr-trust-kept.wav",
+      "sourceFile": "/workspace/generated_audio/voice-reactions/voice-kerr-trust-kept.wav",
+      "sourceSha256": "ab3cfcb8d824c5ca876bc95c4e2f5f5bc723637ac95c94549eab6468e91ba2ec",
+      "sha256": "14b3c2866811e99af26ad73e4980753849d279e4a5e6f77c767b281b2d0b9f9f",
+      "bytes": 105452,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 2.196,
+      "peak": 0.7199926755577257,
+      "rms": 0.09574620041286452
+    },
+    {
+      "id": "voice-kerr-trust-broken",
+      "scene": "act3_kerr_collection",
+      "speaker": "Kerr",
+      "voice": "am_adam",
+      "speed": 0.97,
+      "text": "You wrote my name after promising not to. Don't call this private.",
+      "segments": [
+        {
+          "text": "You wrote my name after promising not to.",
+          "speed": 0.97,
+          "pauseAfter": 0.26
+        },
+        {
+          "text": "Don't call this private.",
+          "speed": 0.97,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Firm, restrained disappointment; retain the recorded breach.",
+      "language": "en-us",
+      "path": "public/audio/voice-kerr-trust-broken.wav",
+      "sourceFile": "/workspace/generated_audio/voice-reactions/voice-kerr-trust-broken.wav",
+      "sourceSha256": "a3e69b279c9fca4439b459fed19403557a94d5c6f8c20ba5927b7cbd0c3e496f",
+      "sha256": "6b8cb6d1d27dac4bc12ccbb36fb14b502fa3a1afbcdc6776ebd03fbff7a0ea74",
+      "bytes": 216266,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 4.504625,
+      "peak": 0.7199926755577257,
+      "rms": 0.08025146574304885
+    },
+    {
+      "id": "voice-edda-archive-access",
+      "scene": "act2_archive_brief",
+      "speaker": "Edda",
+      "voice": "af_kore",
+      "speed": 0.95,
+      "text": "Your export records a cancellation. My ledger can show whether it reached the shift. Compare them. I have to work here tomorrow.",
+      "segments": [
+        {
+          "text": "Your export records a cancellation.",
+          "speed": 0.95,
+          "pauseAfter": 0.26
+        },
+        {
+          "text": "My ledger can show whether it reached the shift.",
+          "speed": 0.95,
+          "pauseAfter": 0.26
+        },
+        {
+          "text": "Compare them.",
+          "speed": 0.95,
+          "pauseAfter": 0.26
+        },
+        {
+          "text": "I have to work here tomorrow.",
+          "speed": 0.95,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Practical instruction, then the personal employment cost.",
+      "language": "en-us",
+      "path": "public/audio/voice-edda-archive-access.wav",
+      "sourceFile": "/workspace/generated_audio/voice-reactions/voice-edda-archive-access.wav",
+      "sourceSha256": "2d47cf6be5b9776ad3386b186decaffdc38d1e6728a9d2a5d9f7f6c901fc846e",
+      "sha256": "b9731587e066d3f1d3b05993ad746dd12376d27e6f97a95653b183b5035ff4b3",
+      "bytes": 408874,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 8.517291666666667,
+      "peak": 0.7199926755577257,
+      "rms": 0.10575162621056353
+    },
+    {
+      "id": "voice-edda-source-custody",
+      "scene": "act2_archive_custody",
+      "speaker": "Edda",
+      "voice": "af_kore",
+      "speed": 0.95,
+      "text": "Ask before you put my name on a public copy.",
+      "segments": [
+        {
+          "text": "Ask before you put my name on a public copy.",
+          "speed": 0.95,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Clear permission boundary; no implied authorization.",
+      "language": "en-us",
+      "path": "public/audio/voice-edda-source-custody.wav",
+      "sourceFile": "/workspace/generated_audio/voice-reactions/voice-edda-source-custody.wav",
+      "sourceSha256": "4fb357f7d586ad164d8b4cfc93d6477ebfd9beff3ee666ff7eab881b29481410",
+      "sha256": "95191e9b7d03b2cc6c3a46ae33170f68fb528065e8f67abd8b0f773b834b967f",
+      "bytes": 143916,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 2.997333333333333,
+      "peak": 0.7199926755577257,
+      "rms": 0.13799229085254577
+    },
+    {
+      "id": "voice-edda-private-work",
+      "scene": "act3_edda_terms",
+      "speaker": "Edda",
+      "voice": "af_kore",
+      "speed": 0.95,
+      "text": "I'll sign for payroll to use my name here. Not on your public packet. Leave the witness recording and patient list out. I need a shift, not another version of the accusation.",
+      "segments": [
+        {
+          "text": "I'll sign for payroll to use my name here.",
+          "speed": 0.95,
+          "pauseAfter": 0.26
+        },
+        {
+          "text": "Not on your public packet.",
+          "speed": 0.95,
+          "pauseAfter": 0.26
+        },
+        {
+          "text": "Leave the witness recording and patient list out.",
+          "speed": 0.95,
+          "pauseAfter": 0.26
+        },
+        {
+          "text": "I need a shift, not another version of the accusation.",
+          "speed": 0.95,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Businesslike private permission; distinguish work from publication.",
+      "language": "en-us",
+      "path": "public/audio/voice-edda-private-work.wav",
+      "sourceFile": "/workspace/generated_audio/voice-reactions/voice-edda-private-work.wav",
+      "sourceSha256": "2d91eb5ce019188d5a0528eb227604a38b600b7c5eebdffa27cb30b531dc2a22",
+      "sha256": "a1929b36c12df55f9537e3abd57ad60e60be2cf9b70012c4fdd635adceb9d175",
+      "bytes": 553452,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 11.529333333333334,
+      "peak": 0.7199926755577257,
+      "rms": 0.09637686343721243
+    },
+    {
+      "id": "voice-sera-hearing-purpose",
+      "scene": "act3_testimony_review",
+      "speaker": "Sera",
+      "voice": "af_bella",
+      "speed": 0.95,
+      "text": "The names can be spoken either way. This is a different promise: an account someone can question after you leave.",
+      "segments": [
+        {
+          "text": "The names can be spoken either way.",
+          "speed": 0.95,
+          "pauseAfter": 0.26
+        },
+        {
+          "text": "This is a different promise: an account someone can question after you leave.",
+          "speed": 0.95,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Patient distinction between memorial and public evidence.",
+      "language": "en-us",
+      "path": "public/audio/voice-sera-hearing-purpose.wav",
+      "sourceFile": "/workspace/generated_audio/voice-reactions/voice-sera-hearing-purpose.wav",
+      "sourceSha256": "12d9f2aed6f250c6203bfccd7158bf9290d3507d3a56241643e3c0085c4b46c4",
+      "sha256": "0da826f7f4f705f3d4633137138386e1cef7a2b38cdf81e4991a5cf4de57c668",
+      "bytes": 351308,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 7.318,
+      "peak": 0.7199926755577257,
+      "rms": 0.09833022178746359
+    },
+    {
+      "id": "voice-sera-hearing-correction",
+      "scene": "act3_testimony_correction",
+      "speaker": "Sera",
+      "voice": "af_bella",
+      "speed": 0.95,
+      "text": "Correct it here. A correction belongs beside what people already heard.",
+      "segments": [
+        {
+          "text": "Correct it here.",
+          "speed": 0.95,
+          "pauseAfter": 0.26
+        },
+        {
+          "text": "A correction belongs beside what people already heard.",
+          "speed": 0.95,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Direct correction without humiliation or erased consequences.",
+      "language": "en-us",
+      "path": "public/audio/voice-sera-hearing-correction.wav",
+      "sourceFile": "/workspace/generated_audio/voice-reactions/voice-sera-hearing-correction.wav",
+      "sourceSha256": "c5f06197fd976573436c1de7ae9c974ecc8722a3efa1eeba0ec603d03b9730c8",
+      "sha256": "a5a5393044aaa3a10da9158920bf379cc1e5fa9be4906201636e64b7e0dafa43",
+      "bytes": 219498,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 4.571958333333333,
+      "peak": 0.7199926755577257,
+      "rms": 0.08801992424573458
+    },
+    {
+      "id": "voice-sera-wall-invitation",
+      "scene": "act3_arrival",
+      "speaker": "Sera",
+      "voice": "af_bella",
+      "speed": 0.95,
+      "text": "say them. If you sold them, you can still say them. The wall does not check your receipt.",
+      "segments": [
+        {
+          "text": "say them.",
+          "speed": 0.95,
+          "pauseAfter": 0.26
+        },
+        {
+          "text": "If you sold them, you can still say them.",
+          "speed": 0.95,
+          "pauseAfter": 0.26
+        },
+        {
+          "text": "The wall does not check your receipt.",
+          "speed": 0.95,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Open invitation with the old transaction still acknowledged.",
+      "language": "en-us",
+      "path": "public/audio/voice-sera-wall-invitation.wav",
+      "sourceFile": "/workspace/generated_audio/voice-reactions/voice-sera-wall-invitation.wav",
+      "sourceSha256": "8eca33a5b8b0fec5b33a42acbc580ceca5a9f2c4366024a489b4a23071a624cd",
+      "sha256": "8acb35ad90d96230b250aab59088dd322e0f0741cbade1059b723c2ff9d35abf",
+      "bytes": 285192,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 5.9405833333333335,
+      "peak": 0.7199926755577257,
+      "rms": 0.08813105080227282
+    },
+    {
+      "id": "voice-ives-hearing-challenge",
+      "scene": "act3_testimony_hearing",
+      "speaker": "Ives",
+      "voice": "am_eric",
+      "speed": 0.98,
+      "text": "A maintenance signature isn't an issuing key. A witness isn't a server. What exactly are you asking people to believe?",
+      "segments": [
+        {
+          "text": "A maintenance signature isn't an issuing key.",
+          "speed": 0.98,
+          "pauseAfter": 0.26
+        },
+        {
+          "text": "A witness isn't a server.",
+          "speed": 0.98,
+          "pauseAfter": 0.26
+        },
+        {
+          "text": "What exactly are you asking people to believe?",
+          "speed": 0.98,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Controlled institutional challenge; sharpen the final question.",
+      "language": "en-us",
+      "path": "public/audio/voice-ives-hearing-challenge.wav",
+      "sourceFile": "/workspace/generated_audio/voice-reactions/voice-ives-hearing-challenge.wav",
+      "sourceSha256": "b00e6fc34fed5525cee36198006a2abc83ca320b335d75dfd353ab436c129d8e",
+      "sha256": "f06106a982bd7e45c610f4a6f94a01b295fa7e6d68068c66e3f2ba66645fd89f",
+      "bytes": 388492,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 8.092666666666666,
+      "peak": 0.7199926755577257,
+      "rms": 0.12757244712764604
+    },
+    {
+      "id": "voice-nia-public-terms",
+      "scene": "act3_testimony_nia",
+      "speaker": "Nia Pell",
+      "voice": "af_nova",
+      "speed": 0.96,
+      "text": "Use the words I approved. You can name me as the source through Sera. No address, no new story about how brave I was, and no sentence saying the room made me owe you this.",
+      "segments": [
+        {
+          "text": "Use the words I approved.",
+          "speed": 0.96,
+          "pauseAfter": 0.26
+        },
+        {
+          "text": "You can name me as the source through Sera.",
+          "speed": 0.96,
+          "pauseAfter": 0.26
+        },
+        {
+          "text": "No address, no new story about how brave I was, and no sentence saying the room made me owe you this.",
+          "speed": 0.96,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Deliberate ownership of each limit, not frightened gratitude.",
+      "language": "en-us",
+      "path": "public/audio/voice-nia-public-terms.wav",
+      "sourceFile": "/workspace/generated_audio/voice-reactions/voice-nia-public-terms.wav",
+      "sourceSha256": "338a18a2f539501797cdab9c0caf4ef7b68f485372c97a187004466ad8b64220",
+      "sha256": "831dc6693059bc1bcb308cc159dbf8f1bb0fb50dd49fc11b72112ecbd723ac72",
+      "bytes": 586412,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 12.216,
+      "peak": 0.7199926755577257,
+      "rms": 0.08957424514178608
+    },
+    {
+      "id": "voice-lumen-relay-limits",
+      "scene": "act3_notice_result",
+      "speaker": "Sister Lumen",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "text": "This buys a way to answer them. I will not mark it as three new appointments.",
+      "segments": [
+        {
+          "text": "This buys a way to answer them.",
+          "speed": 0.93,
+          "pauseAfter": 0.26
+        },
+        {
+          "text": "I will not mark it as three new appointments.",
+          "speed": 0.93,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Measured practical care, no invented clinic outcome.",
+      "language": "en-us",
+      "path": "public/audio/voice-lumen-relay-limits.wav",
+      "sourceFile": "/workspace/generated_audio/voice-reactions/voice-lumen-relay-limits.wav",
+      "sourceSha256": "9a4b6793b845ed662953c66e3b4bdfddc6587b3425cf31df49232338f65d09fd",
+      "sha256": "7b23954cb414c912cb31533e4a34841b5efe0350321e3b403414e326f16e3c2f",
+      "bytes": 234474,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 4.883958333333333,
+      "peak": 0.7199926755577257,
+      "rms": 0.10255917058301982
+    },
+    {
+      "id": "voice-lumen-withdrawn-window",
+      "scene": "act3_notice_result",
+      "speaker": "Sister Lumen",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "text": "The observer saw the old time. Taking down the paper cannot take that back.",
+      "segments": [
+        {
+          "text": "The observer saw the old time.",
+          "speed": 0.93,
+          "pauseAfter": 0.26
+        },
+        {
+          "text": "Taking down the paper cannot take that back.",
+          "speed": 0.93,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Calm acknowledgement of consequences that persist.",
+      "language": "en-us",
+      "path": "public/audio/voice-lumen-withdrawn-window.wav",
+      "sourceFile": "/workspace/generated_audio/voice-reactions/voice-lumen-withdrawn-window.wav",
+      "sourceSha256": "0652e829a1ee01539c3ccf01773abb69a0a260a5ab55c06649482ec7fb850b46",
+      "sha256": "495affaa36ca91f3f7f92e3f371ec565ccdb790dc089c3ec4105e7482b51a5b9",
+      "bytes": 245612,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 5.116,
+      "peak": 0.7199926755577257,
+      "rms": 0.10788958706352113
+    },
+    {
+      "id": "voice-sera-laundry-invitation",
+      "scene": "act3_shelter_visit",
+      "speaker": "Sera",
+      "voice": "af_bella",
+      "speed": 0.95,
+      "text": "The clothes are what they have left. Help me get them clean?",
+      "segments": [
+        {
+          "text": "The clothes are what they have left.",
+          "speed": 0.95,
+          "pauseAfter": 0.26
+        },
+        {
+          "text": "Help me get them clean?",
+          "speed": 0.95,
+          "pauseAfter": 0
+        }
+      ],
+      "generated": "2026-10-13",
+      "direction": "Ordinary shared work; light invitation after the loss.",
+      "language": "en-us",
+      "path": "public/audio/voice-sera-laundry-invitation.wav",
+      "sourceFile": "/workspace/generated_audio/voice-reactions/voice-sera-laundry-invitation.wav",
+      "sourceSha256": "ebd7c1841f9cba318f1e9b2b1fe21357e99181e4e919dea7edce6b9c740e2c53",
+      "sha256": "4f65ba67c8ad8b7121cae359976d10063d80ba5ff58d83dcf53c508656972aa7",
+      "bytes": 172170,
+      "sampleRate": 24000,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 3.585958333333333,
+      "peak": 0.7199926755577257,
+      "rms": 0.0906795106627191
     }
   ],
   "generationEnvironment": {

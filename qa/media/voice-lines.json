@@ -508,5 +508,405 @@
     "voice": "af_heart",
     "speed": 0.93,
     "text": "Next time you are dying, come here first. We owe you a cheaper kind of edit."
+  },
+  {
+    "id": "voice-mara-chair-remembered",
+    "scene": "act3_mara_followup",
+    "speaker": "Mara",
+    "voice": "af_sarah",
+    "speed": 0.96,
+    "text": "You paid someone to carry the paper so you could sit here. I remember the chair, too.",
+    "segments": [
+      {
+        "text": "You paid someone to carry the paper so you could sit here.",
+        "speed": 0.96,
+        "pauseAfter": 0.26
+      },
+      {
+        "text": "I remember the chair, too.",
+        "speed": 0.96,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-mara-company-declined",
+    "scene": "act3_mara_followup",
+    "speaker": "Mara",
+    "voice": "af_sarah",
+    "speed": 0.96,
+    "text": "I kept the hour for myself. You don't owe me company because you heard what I did.",
+    "segments": [
+      {
+        "text": "I kept the hour for myself.",
+        "speed": 0.96,
+        "pauseAfter": 0.26
+      },
+      {
+        "text": "You don't owe me company because you heard what I did.",
+        "speed": 0.96,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-mara-walked-reply",
+    "scene": "act3_mara_followup",
+    "speaker": "Mara",
+    "voice": "af_sarah",
+    "speed": 0.96,
+    "text": "I did this after you left. You took the envelope; I kept the hour. I wanted you here, too. Both things can be true.",
+    "segments": [
+      {
+        "text": "I did this after you left.",
+        "speed": 0.96,
+        "pauseAfter": 0.26
+      },
+      {
+        "text": "You took the envelope; I kept the hour.",
+        "speed": 0.96,
+        "pauseAfter": 0.26
+      },
+      {
+        "text": "I wanted you here, too.",
+        "speed": 0.96,
+        "pauseAfter": 0.26
+      },
+      {
+        "text": "Both things can be true.",
+        "speed": 0.96,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-mara-next-batch",
+    "scene": "act3_mara_followup",
+    "speaker": "Mara",
+    "voice": "af_sarah",
+    "speed": 0.96,
+    "text": "The envelope went in the next batch. That hour didn't need a receipt to have happened.",
+    "segments": [
+      {
+        "text": "The envelope went in the next batch.",
+        "speed": 0.96,
+        "pauseAfter": 0.26
+      },
+      {
+        "text": "That hour didn't need a receipt to have happened.",
+        "speed": 0.96,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-mara-envelope-pending",
+    "scene": "act3_mara_followup",
+    "speaker": "Mara",
+    "voice": "af_sarah",
+    "speed": 0.96,
+    "text": "The envelope is still here. I'm glad you sat with me. I still need to send it.",
+    "segments": [
+      {
+        "text": "The envelope is still here.",
+        "speed": 0.96,
+        "pauseAfter": 0.26
+      },
+      {
+        "text": "I'm glad you sat with me.",
+        "speed": 0.96,
+        "pauseAfter": 0.26
+      },
+      {
+        "text": "I still need to send it.",
+        "speed": 0.96,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-kerr-trust-kept",
+    "scene": "act3_kerr_collection",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.97,
+    "text": "That was the part I asked you to keep.",
+    "segments": [
+      {
+        "text": "That was the part I asked you to keep.",
+        "speed": 0.97,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-kerr-trust-broken",
+    "scene": "act3_kerr_collection",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.97,
+    "text": "You wrote my name after promising not to. Don't call this private.",
+    "segments": [
+      {
+        "text": "You wrote my name after promising not to.",
+        "speed": 0.97,
+        "pauseAfter": 0.26
+      },
+      {
+        "text": "Don't call this private.",
+        "speed": 0.97,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-edda-archive-access",
+    "scene": "act2_archive_brief",
+    "speaker": "Edda",
+    "voice": "af_kore",
+    "speed": 0.95,
+    "text": "Your export records a cancellation. My ledger can show whether it reached the shift. Compare them. I have to work here tomorrow.",
+    "segments": [
+      {
+        "text": "Your export records a cancellation.",
+        "speed": 0.95,
+        "pauseAfter": 0.26
+      },
+      {
+        "text": "My ledger can show whether it reached the shift.",
+        "speed": 0.95,
+        "pauseAfter": 0.26
+      },
+      {
+        "text": "Compare them.",
+        "speed": 0.95,
+        "pauseAfter": 0.26
+      },
+      {
+        "text": "I have to work here tomorrow.",
+        "speed": 0.95,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-edda-source-custody",
+    "scene": "act2_archive_custody",
+    "speaker": "Edda",
+    "voice": "af_kore",
+    "speed": 0.95,
+    "text": "Ask before you put my name on a public copy.",
+    "segments": [
+      {
+        "text": "Ask before you put my name on a public copy.",
+        "speed": 0.95,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-edda-private-work",
+    "scene": "act3_edda_terms",
+    "speaker": "Edda",
+    "voice": "af_kore",
+    "speed": 0.95,
+    "text": "I'll sign for payroll to use my name here. Not on your public packet. Leave the witness recording and patient list out. I need a shift, not another version of the accusation.",
+    "segments": [
+      {
+        "text": "I'll sign for payroll to use my name here.",
+        "speed": 0.95,
+        "pauseAfter": 0.26
+      },
+      {
+        "text": "Not on your public packet.",
+        "speed": 0.95,
+        "pauseAfter": 0.26
+      },
+      {
+        "text": "Leave the witness recording and patient list out.",
+        "speed": 0.95,
+        "pauseAfter": 0.26
+      },
+      {
+        "text": "I need a shift, not another version of the accusation.",
+        "speed": 0.95,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-sera-hearing-purpose",
+    "scene": "act3_testimony_review",
+    "speaker": "Sera",
+    "voice": "af_bella",
+    "speed": 0.95,
+    "text": "The names can be spoken either way. This is a different promise: an account someone can question after you leave.",
+    "segments": [
+      {
+        "text": "The names can be spoken either way.",
+        "speed": 0.95,
+        "pauseAfter": 0.26
+      },
+      {
+        "text": "This is a different promise: an account someone can question after you leave.",
+        "speed": 0.95,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-sera-hearing-correction",
+    "scene": "act3_testimony_correction",
+    "speaker": "Sera",
+    "voice": "af_bella",
+    "speed": 0.95,
+    "text": "Correct it here. A correction belongs beside what people already heard.",
+    "segments": [
+      {
+        "text": "Correct it here.",
+        "speed": 0.95,
+        "pauseAfter": 0.26
+      },
+      {
+        "text": "A correction belongs beside what people already heard.",
+        "speed": 0.95,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-sera-wall-invitation",
+    "scene": "act3_arrival",
+    "speaker": "Sera",
+    "voice": "af_bella",
+    "speed": 0.95,
+    "text": "say them. If you sold them, you can still say them. The wall does not check your receipt.",
+    "segments": [
+      {
+        "text": "say them.",
+        "speed": 0.95,
+        "pauseAfter": 0.26
+      },
+      {
+        "text": "If you sold them, you can still say them.",
+        "speed": 0.95,
+        "pauseAfter": 0.26
+      },
+      {
+        "text": "The wall does not check your receipt.",
+        "speed": 0.95,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-ives-hearing-challenge",
+    "scene": "act3_testimony_hearing",
+    "speaker": "Ives",
+    "voice": "am_eric",
+    "speed": 0.98,
+    "text": "A maintenance signature isn't an issuing key. A witness isn't a server. What exactly are you asking people to believe?",
+    "segments": [
+      {
+        "text": "A maintenance signature isn't an issuing key.",
+        "speed": 0.98,
+        "pauseAfter": 0.26
+      },
+      {
+        "text": "A witness isn't a server.",
+        "speed": 0.98,
+        "pauseAfter": 0.26
+      },
+      {
+        "text": "What exactly are you asking people to believe?",
+        "speed": 0.98,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-nia-public-terms",
+    "scene": "act3_testimony_nia",
+    "speaker": "Nia Pell",
+    "voice": "af_nova",
+    "speed": 0.96,
+    "text": "Use the words I approved. You can name me as the source through Sera. No address, no new story about how brave I was, and no sentence saying the room made me owe you this.",
+    "segments": [
+      {
+        "text": "Use the words I approved.",
+        "speed": 0.96,
+        "pauseAfter": 0.26
+      },
+      {
+        "text": "You can name me as the source through Sera.",
+        "speed": 0.96,
+        "pauseAfter": 0.26
+      },
+      {
+        "text": "No address, no new story about how brave I was, and no sentence saying the room made me owe you this.",
+        "speed": 0.96,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-lumen-relay-limits",
+    "scene": "act3_notice_result",
+    "speaker": "Sister Lumen",
+    "voice": "af_heart",
+    "speed": 0.93,
+    "text": "This buys a way to answer them. I will not mark it as three new appointments.",
+    "segments": [
+      {
+        "text": "This buys a way to answer them.",
+        "speed": 0.93,
+        "pauseAfter": 0.26
+      },
+      {
+        "text": "I will not mark it as three new appointments.",
+        "speed": 0.93,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-lumen-withdrawn-window",
+    "scene": "act3_notice_result",
+    "speaker": "Sister Lumen",
+    "voice": "af_heart",
+    "speed": 0.93,
+    "text": "The observer saw the old time. Taking down the paper cannot take that back.",
+    "segments": [
+      {
+        "text": "The observer saw the old time.",
+        "speed": 0.93,
+        "pauseAfter": 0.26
+      },
+      {
+        "text": "Taking down the paper cannot take that back.",
+        "speed": 0.93,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-sera-laundry-invitation",
+    "scene": "act3_shelter_visit",
+    "speaker": "Sera",
+    "voice": "af_bella",
+    "speed": 0.95,
+    "text": "The clothes are what they have left. Help me get them clean?",
+    "segments": [
+      {
+        "text": "The clothes are what they have left.",
+        "speed": 0.95,
+        "pauseAfter": 0.26
+      },
+      {
+        "text": "Help me get them clean?",
+        "speed": 0.95,
+        "pauseAfter": 0
+      }
+    ]
   }
 ]

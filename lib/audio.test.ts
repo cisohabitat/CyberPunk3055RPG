@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
+import { readFileSync, readdirSync } from "node:fs";
 import { describe, it } from "node:test";
 import { fileURLToPath } from "node:url";
 import { createHash } from "node:crypto";
@@ -7,7 +7,10 @@ import { gunzipSync } from "node:zlib";
 import beds from "../qa/media/bed-delivery.json";
 import voices from "../qa/media/voice-provenance.json";
 import lines from "../qa/media/voice-lines.json";
-import { createCharacter, sceneText } from "./engine";
+import reactionCycle from "../qa/media/voice-reactions.json";
+import { commitChoice, createCharacter, getScene, presentChoices, sceneText } from "./engine";
+import type { GameState } from "./types";
+import type { ReplaySpec } from "./story-replay";
 import { SCENES } from "./story";
 import { visibleDialogue } from "./memory-media";
 import directed from "../qa/media/audio-provenance.json";
@@ -119,20 +122,37 @@ describe("beds", () => {
   });
   it("ships fixed synthetic quotes with matching text, bounded headroom and disclosure", () => {
     const base = createCharacter({ handle: "VoiceReview", givenName: "Ada", origin: "spire", bonus: { chrome: 2, nerve: 0, face: 0, ghost: 0 } });
+    // Use actual authored routes for conditional dialogue, rather than inventing flags.
+    const reachable = new Map<string, GameState>();
+    for (const file of readdirSync(new URL("../qa/routes/", import.meta.url)).filter(file => file.endsWith(".json"))) {
+      const spec = JSON.parse(readFileSync(new URL(`../qa/routes/${file}`, import.meta.url), "utf8")) as ReplaySpec;
+      let state = createCharacter(spec.character);
+      const record = () => {
+        const scene = getScene(state.sceneId), line = visibleDialogue(scene.id, scene.speaker, sceneText(scene, state));
+        if (line && !reachable.has(line.id)) reachable.set(line.id, state);
+      };
+      record();
+      for (const step of spec.steps) {
+        const choice = presentChoices(state, getScene(state.sceneId)).find(choice => choice.id === step.choiceId && choice.enabled);
+        assert.ok(choice, `${file}/${step.choiceId}`);
+        state = commitChoice(state, choice, choice.check ? { roll: step.roll! } : undefined).state;
+        record();
+      }
+    }
     for (const line of lines) {
-      const state = { ...base, sceneId: line.scene, items: line.id === "voice-kerr-kerr" ? [...base.items, "shard"] : base.items, flags: { memory_slot_1_signature: true, memory_slot_2_order: true, memory_slot_3_roster: true,
-        ...(line.id === "voice-mara-public-refusal" ? { response_public_refused: true } : {}),
-        ...(line.id === "voice-kerr-handover-breached" ? { kerr_route_private: true, kerr_route_trace: true } : {}),
-        ...(line.id === "voice-kerr-handover-registered" ? { kerr_route_registered: true, kerr_route_trace: true } : {}),
-      } };
+      const state = reachable.get(line.id);
+      assert.ok(state, `No authored reachable example: ${line.id}`);
       const scene = SCENES[line.scene]; const text = sceneText(scene, state);
       assert.equal(scene.speaker, line.sceneSpeaker ?? line.speaker); assert.ok(text.includes(line.text), line.id);
       if (line.attribution) { assert.ok(text.includes(line.attribution), line.id); assert.ok(line.attribution.includes(line.speaker), line.id); }
       if (scene.speaker !== line.speaker) assert.ok(line.attribution, line.id);
       assert.equal(visibleDialogue(scene.id, scene.speaker, text)?.id, line.id);
+      assert.equal(visibleDialogue(scene.id, scene.speaker, text.slice(0, text.indexOf(line.text))), undefined, line.id);
       assert.equal(visibleDialogue(scene.id, line.speaker === "Quill" ? "Mara" : "Quill", text), undefined);
       const record = voices.lines.find((entry) => entry.id === line.id)!;
       assert.equal(record.text, line.text);
+      assert.equal(record.voice, line.voice); assert.equal(record.speaker, line.speaker);
+      assert.equal(record.scene, line.scene); assert.equal(record.speed, line.speed);
       const bytes = readFileSync(new URL(`../${record.path}`, import.meta.url));
       assert.equal(bytes.length, record.bytes); assert.equal(createHash("sha256").update(bytes).digest("hex"), record.sha256);
       const wav = readWav(line.id); let peak = 0;
@@ -146,6 +166,12 @@ describe("beds", () => {
     assert.equal(visibleDialogue("memory_sequence_result", "Mara", sceneText(SCENES.memory_sequence_result, wrong)), undefined);
     const publication = sceneText(SCENES.memory_publication, base);
     assert.equal(visibleDialogue("memory_publication", "Sister Lumen", publication.split("\n\n")[0]), undefined);
+  });
+  it("preserves the previous voice deliveries during the reaction expansion", () => {
+    for (const [id, expected] of Object.entries(reactionCycle.preservedDeliverySha256)) {
+      const bytes = readFileSync(new URL(`../public/audio/${id}.wav`, import.meta.url));
+      assert.equal(createHash("sha256").update(bytes).digest("hex"), expected, id);
+    }
   });
   it("keeps refusal and handover voices behind their exact visible quotations", () => {
     const base = createCharacter({ handle: "Branches", givenName: "Ada", origin: "spire", bonus: { chrome: 2, nerve: 0, face: 0, ghost: 0 } });

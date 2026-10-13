@@ -1,0 +1,187 @@
+{
+  "disclosure": "Fixed stock synthetic voices, exact delivered clips with one-second gaps. Technical audition, not perceptual acceptance.",
+  "delivery": "qa/media/voice-reactions-preview.mp3",
+  "sha256": "3b3bbcd8c3595f5ca4f13a65c69541baa87f6b44dbb25012adc37c331690a9f3",
+  "intervals": [
+    {
+      "id": "voice-mara-chair-remembered",
+      "scene": "act3_mara_followup",
+      "speaker": "Mara",
+      "direction": "Quiet recognition; distinguish company from the delivered envelope.",
+      "text": "You paid someone to carry the paper so you could sit here. I remember the chair, too.",
+      "startSeconds": 0.0,
+      "endSeconds": 5.279916666666667,
+      "sha256": "c9e9e7aca2d53c67426e45617c4a6c4bd296bec21cb034a8279cf715778e35ef"
+    },
+    {
+      "id": "voice-mara-company-declined",
+      "scene": "act3_mara_followup",
+      "speaker": "Mara",
+      "direction": "An unpressured boundary; no accusation for declining.",
+      "text": "I kept the hour for myself. You don't owe me company because you heard what I did.",
+      "startSeconds": 6.279916666666667,
+      "endSeconds": 11.519916666666667,
+      "sha256": "7350ab9254c471360313a093bd2a6485f8832fd9c328f0d6933d86a74c3c1c84"
+    },
+    {
+      "id": "voice-mara-walked-reply",
+      "scene": "act3_mara_followup",
+      "speaker": "Mara",
+      "direction": "Admit disappointment without withdrawing ownership of her time.",
+      "text": "I did this after you left. You took the envelope; I kept the hour. I wanted you here, too. Both things can be true.",
+      "startSeconds": 12.519916666666667,
+      "endSeconds": 20.845875,
+      "sha256": "eada25c55d98a1daed74b29c0bf72af0670ebb04df0bbbe174c53ad3e898bf96"
+    },
+    {
+      "id": "voice-mara-next-batch",
+      "scene": "act3_mara_followup",
+      "speaker": "Mara",
+      "direction": "Matter-of-fact delay followed by remembered company.",
+      "text": "The envelope went in the next batch. That hour didn't need a receipt to have happened.",
+      "startSeconds": 21.845875,
+      "endSeconds": 27.023208333333333,
+      "sha256": "b19536c637c5dbe675eb1f462122d9f17a067227b8946f8819171b494bce3dce"
+    },
+    {
+      "id": "voice-mara-envelope-pending",
+      "scene": "act3_mara_followup",
+      "speaker": "Mara",
+      "direction": "Warmth and unfinished work coexist; do not imply dispatch.",
+      "text": "The envelope is still here. I'm glad you sat with me. I still need to send it.",
+      "startSeconds": 28.023208333333333,
+      "endSeconds": 33.5565,
+      "sha256": "bee19816a3368bc88a1ec14503573e43fb61bbf8b149cc19c3691ae647cd239d"
+    },
+    {
+      "id": "voice-kerr-trust-kept",
+      "scene": "act3_kerr_collection",
+      "speaker": "Kerr",
+      "direction": "Understated acknowledgement, not a reward or treatment claim.",
+      "text": "That was the part I asked you to keep.",
+      "startSeconds": 34.5565,
+      "endSeconds": 36.7525,
+      "sha256": "14b3c2866811e99af26ad73e4980753849d279e4a5e6f77c767b281b2d0b9f9f"
+    },
+    {
+      "id": "voice-kerr-trust-broken",
+      "scene": "act3_kerr_collection",
+      "speaker": "Kerr",
+      "direction": "Firm, restrained disappointment; retain the recorded breach.",
+      "text": "You wrote my name after promising not to. Don't call this private.",
+      "startSeconds": 37.7525,
+      "endSeconds": 42.257124999999995,
+      "sha256": "6b8cb6d1d27dac4bc12ccbb36fb14b502fa3a1afbcdc6776ebd03fbff7a0ea74"
+    },
+    {
+      "id": "voice-edda-archive-access",
+      "scene": "act2_archive_brief",
+      "speaker": "Edda",
+      "direction": "Practical instruction, then the personal employment cost.",
+      "text": "Your export records a cancellation. My ledger can show whether it reached the shift. Compare them. I have to work here tomorrow.",
+      "startSeconds": 43.257125,
+      "endSeconds": 51.77441666666667,
+      "sha256": "b9731587e066d3f1d3b05993ad746dd12376d27e6f97a95653b183b5035ff4b3"
+    },
+    {
+      "id": "voice-edda-source-custody",
+      "scene": "act2_archive_custody",
+      "speaker": "Edda",
+      "direction": "Clear permission boundary; no implied authorization.",
+      "text": "Ask before you put my name on a public copy.",
+      "startSeconds": 52.77441666666667,
+      "endSeconds": 55.77175,
+      "sha256": "95191e9b7d03b2cc6c3a46ae33170f68fb528065e8f67abd8b0f773b834b967f"
+    },
+    {
+      "id": "voice-edda-private-work",
+      "scene": "act3_edda_terms",
+      "speaker": "Edda",
+      "direction": "Businesslike private permission; distinguish work from publication.",
+      "text": "I'll sign for payroll to use my name here. Not on your public packet. Leave the witness recording and patient list out. I need a shift, not another version of the accusation.",
+      "startSeconds": 56.77175,
+      "endSeconds": 68.30108333333334,
+      "sha256": "a1929b36c12df55f9537e3abd57ad60e60be2cf9b70012c4fdd635adceb9d175"
+    },
+    {
+      "id": "voice-sera-hearing-purpose",
+      "scene": "act3_testimony_review",
+      "speaker": "Sera",
+      "direction": "Patient distinction between memorial and public evidence.",
+      "text": "The names can be spoken either way. This is a different promise: an account someone can question after you leave.",
+      "startSeconds": 69.30108333333334,
+      "endSeconds": 76.61908333333334,
+      "sha256": "0da826f7f4f705f3d4633137138386e1cef7a2b38cdf81e4991a5cf4de57c668"
+    },
+    {
+      "id": "voice-sera-hearing-correction",
+      "scene": "act3_testimony_correction",
+      "speaker": "Sera",
+      "direction": "Direct correction without humiliation or erased consequences.",
+      "text": "Correct it here. A correction belongs beside what people already heard.",
+      "startSeconds": 77.61908333333334,
+      "endSeconds": 82.19104166666666,
+      "sha256": "a5a5393044aaa3a10da9158920bf379cc1e5fa9be4906201636e64b7e0dafa43"
+    },
+    {
+      "id": "voice-sera-wall-invitation",
+      "scene": "act3_arrival",
+      "speaker": "Sera",
+      "direction": "Open invitation with the old transaction still acknowledged.",
+      "text": "say them. If you sold them, you can still say them. The wall does not check your receipt.",
+      "startSeconds": 83.19104166666666,
+      "endSeconds": 89.131625,
+      "sha256": "8acb35ad90d96230b250aab59088dd322e0f0741cbade1059b723c2ff9d35abf"
+    },
+    {
+      "id": "voice-ives-hearing-challenge",
+      "scene": "act3_testimony_hearing",
+      "speaker": "Ives",
+      "direction": "Controlled institutional challenge; sharpen the final question.",
+      "text": "A maintenance signature isn't an issuing key. A witness isn't a server. What exactly are you asking people to believe?",
+      "startSeconds": 90.131625,
+      "endSeconds": 98.22429166666666,
+      "sha256": "f06106a982bd7e45c610f4a6f94a01b295fa7e6d68068c66e3f2ba66645fd89f"
+    },
+    {
+      "id": "voice-nia-public-terms",
+      "scene": "act3_testimony_nia",
+      "speaker": "Nia Pell",
+      "direction": "Deliberate ownership of each limit, not frightened gratitude.",
+      "text": "Use the words I approved. You can name me as the source through Sera. No address, no new story about how brave I was, and no sentence saying the room made me owe you this.",
+      "startSeconds": 99.22429166666667,
+      "endSeconds": 111.44029166666667,
+      "sha256": "831dc6693059bc1bcb308cc159dbf8f1bb0fb50dd49fc11b72112ecbd723ac72"
+    },
+    {
+      "id": "voice-lumen-relay-limits",
+      "scene": "act3_notice_result",
+      "speaker": "Sister Lumen",
+      "direction": "Measured practical care, no invented clinic outcome.",
+      "text": "This buys a way to answer them. I will not mark it as three new appointments.",
+      "startSeconds": 112.44029166666667,
+      "endSeconds": 117.32425,
+      "sha256": "7b23954cb414c912cb31533e4a34841b5efe0350321e3b403414e326f16e3c2f"
+    },
+    {
+      "id": "voice-lumen-withdrawn-window",
+      "scene": "act3_notice_result",
+      "speaker": "Sister Lumen",
+      "direction": "Calm acknowledgement of consequences that persist.",
+      "text": "The observer saw the old time. Taking down the paper cannot take that back.",
+      "startSeconds": 118.32425,
+      "endSeconds": 123.44025,
+      "sha256": "495affaa36ca91f3f7f92e3f371ec565ccdb790dc089c3ec4105e7482b51a5b9"
+    },
+    {
+      "id": "voice-sera-laundry-invitation",
+      "scene": "act3_shelter_visit",
+      "speaker": "Sera",
+      "direction": "Ordinary shared work; light invitation after the loss.",
+      "text": "The clothes are what they have left. Help me get them clean?",
+      "startSeconds": 124.44025,
+      "endSeconds": 128.02620833333333,
+      "sha256": "4f65ba67c8ad8b7121cae359976d10063d80ba5ff58d83dcf53c508656972aa7"
+    }
+  ]
+}
