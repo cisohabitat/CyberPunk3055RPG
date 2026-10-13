@@ -1659,6 +1659,8 @@ test("unavailable voices and source images preserve the playable evidence", asyn
 });
 
 for (const [width, textOnly] of [[390, false], [1440, false], [320, true]] as const) test(`Kerr route draft, recorded roll and delayed receipt at ${width}px`, async ({ page }) => {
+  // Allow the full route, accessibility scan and reloads; keep actions bounded.
+  test.setTimeout(90_000); page.setDefaultTimeout(10_000); page.setDefaultNavigationTimeout(10_000);
   await page.setViewportSize({ width, height: width < 700 ? 844 : 900 });
   await page.addInitScript((none) => { Math.random = () => .75; localStorage.setItem("saint-shard-preferences", JSON.stringify({ reading: "all", motion: "reduce", ...(none ? { artwork: "none", textStep: 2, contrast: "high" } : {}) })); }, textOnly);
   const artwork: string[] = []; page.on("request", r => { if(r.url().includes("/art/")) artwork.push(r.url()); });
@@ -1668,7 +1670,7 @@ for (const [width, textOnly] of [[390, false], [1440, false], [320, true]] as co
   if(textOnly) await expect(page.getByTestId("scene-illustration")).toHaveCount(0);
   else expect(await page.getByTestId("scene-illustration").locator("img").evaluate((img:HTMLImageElement) => img.decode().then(() => img.naturalWidth))).toBeGreaterThan(0);
   await page.getByTestId("choice-route-entry-lift").focus(); await page.keyboard.press("Enter");
-  await page.reload(); await page.getByTestId("continue-run").click();
+  await page.reload({ waitUntil: "domcontentloaded" }); await page.getByTestId("continue-run").click();
   await expect(page.getByTestId("route-board")).toContainText("Coin lift · selected");
   await expect(page.getByTestId("creds")).toContainText("100");
   await page.getByTestId("choice-route-exit-gap").click();
@@ -1676,7 +1678,7 @@ for (const [width, textOnly] of [[390, false], [1440, false], [320, true]] as co
   expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations).toEqual([]);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   for(const id of ["depart-kerr-lift", "route-use-gap"]) await page.getByTestId(`choice-${id}`).click();
-  await page.getByTestId("roll-button").click(); await page.reload(); await page.getByTestId("continue-run").click();
+  await page.getByTestId("roll-button").click(); await page.reload({ waitUntil: "domcontentloaded" }); await page.getByTestId("continue-run").click();
   await expect(page.getByTestId("roll-button")).toHaveCount(0);
   await page.getByTestId("continue-check").click(); await page.getByTestId("choice-record-kerr-receipt").click();
   await expect(page.getByTestId("choice-answer-kerr-collection")).toHaveCount(0);
@@ -1706,17 +1708,18 @@ test("Kerr failed collection preserves registration and refusal of further conta
 });
 
 for (const [width,textOnly] of [[390,false],[1440,false],[320,true]] as const) test(`present-day response refusals, private dispatch and finale at ${width}px`,async({page})=>{
+ test.setTimeout(90_000);page.setDefaultTimeout(10_000);page.setDefaultNavigationTimeout(10_000);
  await page.setViewportSize({width,height:width<700?844:900});
  await page.addInitScript(none=>localStorage.setItem("saint-shard-preferences",JSON.stringify({reading:"all",motion:"reduce",...(none?{artwork:"none",textStep:2,contrast:"high"}:{})})),textOnly);
  const art:string[]=[];page.on("request",r=>{if(r.url().includes("/art/"))art.push(r.url())});
  await openRun(page,fixture("act2_middle",{creds:15,strain:0,flags:{heard_memo:true,met_mara:true}}));
  await page.getByTestId("choice-hear-mara-response").click();await expect(page.getByTestId("goal")).toBeInViewport();await expect(page.getByTestId("scene-text")).toContainText("her voice now");
  if(textOnly)await expect(page.getByTestId("scene-illustration")).toHaveCount(0);else expect(await page.getByTestId("scene-illustration").locator("img").evaluate((x:HTMLImageElement)=>x.decode().then(()=>x.naturalWidth))).toBeGreaterThan(0);
- for(const id of ["listen-response-terms","propose-public-response"])await page.getByTestId(`choice-${id}`).click();await page.reload();await page.getByTestId("continue-run").click();
+ for(const id of ["listen-response-terms","propose-public-response"])await page.getByTestId(`choice-${id}`).click();await page.reload({ waitUntil: "domcontentloaded" });await page.getByTestId("continue-run").click();
  await expect(page.getByTestId("scene-text")).toContainText("Not the board");await page.getByTestId("choice-revise-private-response").focus();await page.keyboard.press("Enter");
  expect((await new AxeBuilder({page}).withTags(["wcag2a","wcag2aa","wcag21aa"]).analyze()).violations).toEqual([]);
  for(const id of ["ask-mara-tomorrow","keep-mara-quiet-answer","defer-private-response","hear-mara-response","courier-private-response"])await page.getByTestId(`choice-${id}`).click();
- await page.reload();await page.getByTestId("continue-run").click();await expect(page.getByTestId("creds")).toContainText("0");await expect(page.getByTestId("choice-courier-private-response")).toHaveCount(0);
+ await page.reload({ waitUntil: "domcontentloaded" });await page.getByTestId("continue-run").click();await expect(page.getByTestId("creds")).toContainText("0");await expect(page.getByTestId("choice-courier-private-response")).toHaveCount(0);
  const dispatched=await page.evaluate(()=>JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));expect(dispatched.flags.response_received).toBeUndefined();expect(dispatched.flags.response_public_refused).toBe(true);
  for(const id of ["record-response-dispatch","stand","back-to-board","to-the-wall","to-ward-nine","face-sera","visit-mara-response","read-response-intake","finish-mara-response","visit-lumen-boundary","respect-lumen-boundary","leave-wall"])await page.getByTestId(`choice-${id}`).click();
  await expect(page.getByTestId("relationship-coda")).toContainText("Mara’s cup");await expect(page.locator(".aftermath")).toContainText("unanswered queue");expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
