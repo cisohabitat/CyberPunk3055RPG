@@ -3998,6 +3998,21 @@
       "bindingKeys": [
         "5f2a332008700ac5"
       ]
+    },
+    {
+      "scene": "lumen_deal",
+      "primary": "Sister Lumen",
+      "text": "Kerr,",
+      "context": "\"Kerr,\" she says to the room, gently.",
+      "index": 310,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Spoken fixed character name in the failed fake-pact check result. Narrator attribution stays text-only.",
+      "bindingKeys": [
+        "lumen-fake-pact-miss"
+      ],
+      "choiceId": "fake-pact",
+      "outcome": "miss"
     }
   ]
 }

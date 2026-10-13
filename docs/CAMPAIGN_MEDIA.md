@@ -9,9 +9,9 @@ The user selected character dialogue only. This release covers the authored camp
 | Story | 197 scenes, 587 choices; unchanged |
 | Campaign fixtures | 140 complete authored replays; unchanged |
 | Source audit | All 197 scenes; 859 reachable text variants plus conditional samples, 1,056 distinct variants total |
-| Quotation review | 310 candidates, each with an explicit spoken/text decision and actual actor |
-| Dialogue | 301 bindings in 119 scenes with spoken lines |
-| Active voice files | 289: 100 preceding WAVs and 189 new MP3s |
+| Quotation review | 311 candidates, each with an explicit spoken/text decision and actual actor |
+| Dialogue | 302 bindings in 120 scenes with spoken lines |
+| Active voice files | 290: 100 preceding WAVs and 190 new MP3s |
 | Retained files | All 101 preceding WAV hashes unchanged; the earlier Lumen capacity counteroffer is archived |
 | Cast | Nine established styles plus six explicitly cast minor roles |
 | Framed art | 195 scenes; 111 additional explicit bindings and ten new setting paintings |
@@ -41,13 +41,13 @@ npm run test:browser
 npm run production:voices -- http://127.0.0.1:3101 --workers 4
 ```
 
-The voice verifier selects displayed source examples, plays each active file to its native natural end, checks transcript parity, replays from the bounded cache, stops it, confirms unchanged saves and checks disposal after mute. Source examples are explicitly separated: 239 files have authored-route examples, 41 use seeded legal-route examples and nine use synthetic conditional branch samples. Branch samples are rendering checks, not completed legal player routes.
+The voice verifier selects displayed source examples, plays each active file to its native natural end, checks transcript parity, replays from the bounded cache, stops it, confirms unchanged saves and checks disposal after mute. Source examples are explicitly separated: 239 files have authored-route examples, 42 use seeded legal-route examples and nine use synthetic conditional branch samples. Branch samples are rendering checks, not completed legal player routes.
 
 New regression coverage verifies actor attribution, quotation delimiters, conditional alternatives, arbitrary handles, source hashes, ordered playback, reveal while speaking, unavailable files, Stop/overlay/pagehide cancellation, manual playback and responsive/text-only art. Raw states, captures and local reports stay outside Git at `/workspace/saint-shard-validation/full-campaign-media/`.
 
 ## Verification record
 
-The candidate passed 508 unit checks, TypeScript and the production build. All 140 authored routes remain valid. The production inventory has no static media/script/style budget violations. Focused desktop/phone Chromium and WebKit checks passed 78 campaign/automatic-voice/art cases and 75 existing audio/voice regression cases. The preceding attributed-reaction run passed 138 cases; its three outdated single-excerpt natural-end assertions were updated and passed in the 78-case rebuilt run. The newly added line selector's native label was corrected after its accessibility test exposed option text being included in the label.
+The candidate passed 510 unit checks, TypeScript and the production build. All 140 authored routes remain valid. The production inventory has no static media/script/style budget violations. Focused desktop/phone Chromium and WebKit checks passed 78 campaign/automatic-voice/art cases and 75 existing audio/voice regression cases. The preceding attributed-reaction run passed 138 cases; its three outdated single-excerpt natural-end assertions were updated and passed in the 78-case rebuilt run. The newly added line selector's native label was corrected after its accessibility test exposed option text being included in the label.
 
 Whole-file native voice playback, complete keyboard campaigns, opening transfer measurements and exact-commit Test/Build/production publication are checked as separate release evidence. Their machine reports are private; completion is recorded only after each check actually finishes. These technical/source-familiar checks supply the available development proxy, not independent human participation, physical devices, commissioned acting or listening acceptance. The provisional overall grade remains 8.2.
 
@@ -56,3 +56,7 @@ The local native Chromium clip verifier completed all 289 active files in 586.78
 Four complete native WebKit keyboard campaigns finished at Names, Listed, Witness and Quiet. Together they visited 307 scene steps. The three illustrated/sound campaigns completed 165 dialogue entries naturally; the 320px text-only/silent campaign made no post-preference artwork or audio requests. Every fixture reload checkpoint, canonical outcome and final source cleanup passed, with no page errors or failed media. This is internal directed play rather than human participation.
 
 The opening probe kept goals visible without overflow at 390px and 1440px. Its largest measured encoded-resource-plus-HTML transfer was 1,982,410 bytes, below the unchanged 2,097,152-byte limit. These four synthetic loads establish the transfer bound only, not field performance percentiles.
+
+The final non-prose audit found one direct spoken check-result quotation: Lumen’s fixed “Kerr” call after `lumen_deal/fake-pact` misses. It is included separately from narration, only after the actual result is revealed. The check-result player respects saved mute/zero/manual settings, pending-die reloads and cancellation without committing or rerolling the result. All other authored check-result fields and closing codas contain no additional direct spoken quotations. This adds the 190th new clip, making 290 active files and 302 bindings across 120 spoken scenes. The 289-file verifier and four full campaigns above identify the base candidate; the check-result change has its own tests and a fresh new-clip verification.
+
+The rebuilt follow-up passed all 510 unit checks, TypeScript, the production build and 39 desktop/phone Chromium/WebKit automatic/check-dialogue cases. All 190 new clips then passed a fresh native Chromium natural-end, cached-replay, Stop, transcript, save and cleanup check in 356.854 seconds with four workers; every target fetched once and errors/failures were empty. The result-call example came from a legal seeded failed check, and playback did not commit the held die.

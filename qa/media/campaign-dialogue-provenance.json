@@ -5475,6 +5475,27 @@
       "durationSeconds": 6.032,
       "peak": 0.6845671534538269,
       "rms": 0.09775789082050323
+    },
+    {
+      "id": "voice-campaign-sister-lumen-557bd2f9d851",
+      "speaker": "Sister Lumen",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "text": "Kerr,",
+      "direction": "A gentle, restrained call to the room after the bluff fails. Speak only the fixed character name.",
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-sister-lumen-557bd2f9d851.mp3",
+      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-sister-lumen-557bd2f9d851.wav",
+      "sourceSha256": "eee005da6ab36e17e589be665ed3fc6f9dd66830a214a64c9c72b606327049a0",
+      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-sister-lumen-557bd2f9d851-delivery.wav",
+      "pcmDeliverySha256": "5662aaca223fe2ba6508b384c1b6a15a0c8083761a3c8b0764fba88083dd801d",
+      "sha256": "2efb11037f4218ba7dedcc6e6ee9b9519f0247b91ae68450c5655e201f3a7222",
+      "bytes": 13004,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 0.992,
+      "peak": 0.6799808740615845,
+      "rms": 0.11137788742780685
     }
   ]
 }

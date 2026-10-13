@@ -4,6 +4,7 @@ export type CampaignDialogue = {
   key: string; id: string; scene: string; sceneSpeaker: string | null;
   speaker: string; quote: string; text: string; part: number;
   suffix?: boolean; attribution?: string;
+  choiceId?: string; outcome?: string;
 };
 const byScene = new Map<string, CampaignDialogue[]>();
 for (const line of source as CampaignDialogue[]) {
@@ -27,8 +28,16 @@ export function visibleCampaignDialogue(scene: string, speaker: string | undefin
   if (!candidates) return [];
   const quotes = quotedSpeech(visibleText);
   return candidates.flatMap(line => {
-    if (line.sceneSpeaker !== (speaker ?? null) || line.attribution && !visibleText.includes(line.attribution)) return [];
+    if (line.choiceId || line.sceneSpeaker !== (speaker ?? null) || line.attribution && !visibleText.includes(line.attribution)) return [];
     const quote = quotes.find(quote => line.suffix ? quote.text.endsWith(line.quote) : quote.text === line.quote);
     return quote ? [{ line, position: quote.position }] : [];
   }).sort((a, b) => a.position - b.position || a.line.part - b.line.part).map(({ line }) => line);
+}
+
+/** A check's quotation is available only after the actual outcome is revealed. */
+export function visibleCheckDialogue(scene: string, choiceId: string, speaker: string | undefined, success: boolean, flavor: string): CampaignDialogue[] {
+  const quotes = quotedSpeech(flavor);
+  return (byScene.get(scene) ?? []).filter(line => line.choiceId === choiceId
+    && line.sceneSpeaker === (speaker ?? null) && line.outcome === (success ? "success" : "miss")
+    && (!line.attribution || flavor.includes(line.attribution)) && quotes.some(quote => quote.text === line.quote));
 }

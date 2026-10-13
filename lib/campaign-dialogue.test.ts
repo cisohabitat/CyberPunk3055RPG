@@ -3,7 +3,7 @@ import { describe, it } from "node:test";
 import { createHash } from "node:crypto";
 import { readFileSync, readdirSync } from "node:fs";
 import { createCharacter, getScene, sceneText, presentChoices, commitChoice } from "./engine";
-import { quotedSpeech, visibleCampaignDialogue } from "./campaign-dialogue";
+import { quotedSpeech, visibleCampaignDialogue, visibleCheckDialogue } from "./campaign-dialogue";
 import { DialoguePlayback } from "./dialogue-playback";
 import type { ReplaySpec } from "./story-replay";
 import type { VoiceStatus } from "./sound";
@@ -88,7 +88,7 @@ describe("campaign character dialogue", () => {
     for (const ending of ["ending_names", "ending_quiet", "ending_witness", "ending_listed"]) assert.ok(scenes.has(ending));
   });
   it("ships every new dialogue file with measured signal and unchanged prior WAVs", () => {
-    assert.equal(deliveries.lines.length, 189);
+    assert.equal(deliveries.lines.length, 190);
     const known = new Set([...deliveries.lines, ...old.lines].map(l => l.id));
     for (const binding of bindings) assert.ok(known.has(binding.id), binding.id);
     for (const delivery of [...deliveries.lines, ...old.lines]) {
@@ -99,6 +99,22 @@ describe("campaign character dialogue", () => {
       assert.ok(delivery.peak > .1 && delivery.peak < .95);
       assert.ok(delivery.rms > .005 && delivery.rms < .3);
       assert.ok(data.length < 3_145_728);
+    }
+  });
+  it("voices only Lumen's revealed failed-bluff result, never a successful or unrelated result", () => {
+    const flavor = SCENES.lumen_deal.choices.find(c => c.id === "fake-pact")!.resultFail!;
+    const queue = visibleCheckDialogue("lumen_deal", "fake-pact", "Sister Lumen", false, flavor);
+    assert.equal(queue.length, 1); assert.equal(queue[0].speaker, "Sister Lumen"); assert.equal(queue[0].text, "Kerr,");
+    assert.deepEqual(visibleCheckDialogue("lumen_deal", "fake-pact", "Sister Lumen", true, flavor), []);
+    assert.deepEqual(visibleCheckDialogue("lumen_deal", "other-choice", "Sister Lumen", false, flavor), []);
+    assert.deepEqual(visibleCheckDialogue("lumen_deal", "fake-pact", "Kerr", false, flavor), []);
+    assert.deepEqual(visibleCampaignDialogue("lumen_deal", "Sister Lumen", flavor), []);
+  });
+  it("audits every quoted check-result line in the authored campaign", () => {
+    for (const scene of Object.values(SCENES)) for (const choice of scene.choices) for (const success of [true, false]) {
+      const flavor = success ? choice.resultSuccess : choice.resultFail;
+      if (!flavor) continue;
+      for (const quote of quotedSpeech(flavor)) assert.ok(visibleCheckDialogue(scene.id, choice.id, scene.speaker, success, flavor).some(l => l.quote === quote.text), `${scene.id}/${choice.id}: ${quote.text}`);
     }
   });
   it("has fitting explicit art decisions for the entire campaign and preserves chapter cards", () => {

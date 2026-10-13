@@ -3,8 +3,8 @@ import { readFileSync, mkdirSync, writeFileSync } from "node:fs";
 import { dirname } from "node:path";
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
-import { getScene, sceneText } from "../lib/engine";
-import { visibleCampaignDialogue } from "../lib/campaign-dialogue";
+import { commitChoice, getScene, sceneText } from "../lib/engine";
+import { visibleCampaignDialogue, visibleCheckDialogue } from "../lib/campaign-dialogue";
 import old from "../qa/media/voice-lines.json";
 import additions from "../qa/media/campaign-dialogue-lines.json";
 import bindings from "../qa/media/campaign-dialogue-bindings.json";
@@ -50,7 +50,11 @@ async function main() {
           await expect.poll(async () => (await audio()).started).toContain("theme-title.flac");
           await keyboardActivate(page, page.getByTestId("continue-run"));
           const scene = getScene(example.state.sceneId), text = sceneText(scene, example.state);
-          const queue = visibleCampaignDialogue(scene.id, scene.speaker, text), selected = queue.find(candidate => candidate.id === line.id)!;
+          const pending = example.checkResult ? example.state.pendingCheck! : undefined;
+          const checkChoice = pending ? scene.choices.find(choice => choice.id === pending.choiceId)! : undefined;
+          const checkCommit = checkChoice && pending ? commitChoice(example.state, checkChoice, { roll: pending.roll }) : undefined;
+          const queue = checkCommit?.check ? visibleCheckDialogue(scene.id, checkChoice!.id, scene.speaker, checkCommit.check.success, checkCommit.check.flavor) : visibleCampaignDialogue(scene.id, scene.speaker, text);
+          const selected = queue.find(candidate => candidate.id === line.id)!;
           const expected = automatic ? queue.map(candidate => filename(candidate.id)) : [filename(line.id)];
           await expect.poll(async () => (await audio()).liveSources).toBe(automatic ? 3 : 2);
           const before = await saved();
@@ -74,6 +78,10 @@ async function main() {
           await keyboardActivate(page, page.getByRole("button", { name: "Stop line", exact: true }));
           await expect.poll(async () => (await audio()).liveSources).toBe(2);
           expect(voiceRequests).toBe(1); expect(await saved()).toBe(before);
+          if (checkCommit) {
+            await keyboardActivate(page, page.getByTestId("continue-check"));
+            expect(JSON.parse((await saved())!)).toEqual(checkCommit.state);
+          }
           await keyboardActivate(page, page.getByRole("button", { name: "Settings", exact: true }));
           await keyboardActivate(page, page.getByLabel("Sound enabled", { exact: true }));
           await expect.poll(async () => (await audio()).liveSources).toBe(0);

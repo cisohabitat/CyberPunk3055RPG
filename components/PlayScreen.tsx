@@ -422,6 +422,8 @@ export function PlayScreen({
           state={state}
           choice={activeChoice}
           sound={sound}
+          voicesEnabled={preferences.voices > 0}
+          automaticVoices={preferences.autoVoices}
           reducedMotion={reduceMotion}
           artwork={preferences.artwork !== "none"}
           onStage={onChange}

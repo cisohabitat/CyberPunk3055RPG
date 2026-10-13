@@ -2985,5 +2985,13 @@
         "pauseAfter": 0
       }
     ]
+  },
+  {
+    "id": "voice-campaign-sister-lumen-557bd2f9d851",
+    "speaker": "Sister Lumen",
+    "voice": "af_heart",
+    "speed": 0.93,
+    "text": "Kerr,",
+    "direction": "A gentle, restrained call to the room after the bluff fails. Speak only the fixed character name."
   }
 ]

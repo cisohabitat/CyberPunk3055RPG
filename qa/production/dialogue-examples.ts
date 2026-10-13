@@ -1,13 +1,13 @@
 /** Offline QA only. Raw character states never ship in the application. */
 import { readFileSync, readdirSync } from "node:fs";
-import { createCharacter, commitChoice, getScene, presentChoices, sceneText } from "../../lib/engine";
-import { visibleCampaignDialogue } from "../../lib/campaign-dialogue";
+import { createCharacter, commitChoice, getScene, presentChoices, sceneText, stageCheck } from "../../lib/engine";
+import { visibleCampaignDialogue, visibleCheckDialogue } from "../../lib/campaign-dialogue";
 import { SCENES } from "../../lib/story";
-import type { GameState } from "../../lib/types";
+import type { Choice, GameState, CheckResult } from "../../lib/types";
 import type { ReplaySpec } from "../../lib/story-replay";
 import bindings from "../media/campaign-dialogue-bindings.json";
 
-type Example = { state: GameState; route: string; source: "authored-route" | "seeded-route" | "branch-sample" };
+type Example = { state: GameState; route: string; source: "authored-route" | "seeded-route" | "branch-sample"; checkResult?: boolean };
 export function dialogueExamples(): Map<string, Example> {
   const examples = new Map<string, Example>(), representative = new Map<string, GameState>(), flags = new Set<string>();
   const target = new Set(bindings.map(line => line.id));
@@ -16,13 +16,21 @@ export function dialogueExamples(): Map<string, Example> {
     if (source !== "branch-sample") { if (!representative.has(scene.id)) representative.set(scene.id, state); Object.keys(state.flags).forEach(flag => flags.add(flag)); }
     for (const line of visibleCampaignDialogue(scene.id, scene.speaker, sceneText(scene, state))) if (!examples.has(line.id)) examples.set(line.id, { state, route, source });
   };
+  const recordCheck = (state: GameState, choice: Choice, check: CheckResult | null, route: string, source: Example["source"]) => {
+    if (!check) return;
+    const scene = getScene(state.sceneId);
+    for (const line of visibleCheckDialogue(scene.id, choice.id, scene.speaker, check.success, check.flavor)) if (!examples.has(line.id)) {
+      examples.set(line.id, { state: stageCheck(state, choice.id, check.roll), route, source, checkResult: true });
+    }
+  };
   for (const file of readdirSync("qa/routes").filter(f => f.endsWith(".json")).sort()) {
     const spec = JSON.parse(readFileSync(`qa/routes/${file}`, "utf8")) as ReplaySpec;
     let state = createCharacter(spec.character); record(state, file, "authored-route");
     for (const step of spec.steps) {
       const choice = presentChoices(state, getScene(state.sceneId)).find(c => c.id === step.choiceId && c.enabled);
       if (!choice) throw new Error(`Unavailable authored choice ${file}/${step.choiceId}`);
-      state = commitChoice(state, choice, choice.check ? { roll: step.roll! } : undefined).state; record(state, file, "authored-route");
+      const committed = commitChoice(state, choice, choice.check ? { roll: step.roll! } : undefined);
+      recordCheck(state, choice, committed.check, file, "authored-route"); state = committed.state; record(state, file, "authored-route");
     }
   }
   for (let seed = 1; seed <= 900 && examples.size < target.size; seed++) {
@@ -32,7 +40,8 @@ export function dialogueExamples(): Map<string, Example> {
     for (let n = 0; n < 180; n++) {
       record(state, `seed:${seed}`, "seeded-route"); const scene = getScene(state.sceneId); if (scene.finale) break;
       const choices = presentChoices(state, scene).filter(c => c.enabled); if (!choices.length) break;
-      const choice = choices[Math.floor(random() * choices.length)]; state = commitChoice(state, choice, choice.check ? { roll: 1 + Math.floor(random() * 10) } : undefined).state;
+      const choice = choices[Math.floor(random() * choices.length)], committed = commitChoice(state, choice, choice.check ? { roll: 1 + Math.floor(random() * 10) } : undefined);
+      recordCheck(state, choice, committed.check, `seed:${seed}`, "seeded-route"); state = committed.state;
     }
   }
   // Imported checkpoints and authored conditional branches receive separate labels;

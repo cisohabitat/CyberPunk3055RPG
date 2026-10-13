@@ -2090,6 +2090,17 @@
       "scenes": [
         "act3_quill_introduction"
       ]
+    },
+    {
+      "id": "voice-campaign-sister-lumen-557bd2f9d851",
+      "speaker": "Sister Lumen",
+      "text": "Kerr,",
+      "path": "public/audio/voice-campaign-sister-lumen-557bd2f9d851.mp3",
+      "durationSeconds": 0.992,
+      "sha256": "2efb11037f4218ba7dedcc6e6ee9b9519f0247b91ae68450c5655e201f3a7222",
+      "scenes": [
+        "lumen_deal (failed fake-pact result)"
+      ]
     }
   ]
 }

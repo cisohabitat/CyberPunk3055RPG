@@ -8,10 +8,10 @@
     "card_week",
     "card_wall"
   ],
-  "spokenScenes": 119,
-  "dialogueBindings": 301,
-  "newClips": 189,
-  "playableClips": 289,
+  "spokenScenes": 120,
+  "dialogueBindings": 302,
+  "newClips": 190,
+  "playableClips": 290,
   "newIllustrations": [
     "market-counter",
     "chapel-entry",
@@ -130,5 +130,6 @@
   "retiredClip": {
     "id": "voice-lumen-counteroffer",
     "reason": "The authored capacity counteroffer belongs to the dispatcher. The prior WAV is retained byte-identical but replaced in the active sequence by the correctly cast Dispatcher recording."
-  }
+  },
+  "checkResultDialogue": "lumen_deal/fake-pact miss only; fixed Lumen call."
 }

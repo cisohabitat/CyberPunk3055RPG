@@ -3044,5 +3044,18 @@
     "quote": "My letter wasn't a promise that the gate would forget. That part was yours to keep.",
     "text": "My letter wasn't a promise that the gate would forget. That part was yours to keep.",
     "part": 0
+  },
+  {
+    "key": "lumen-fake-pact-miss",
+    "id": "voice-campaign-sister-lumen-557bd2f9d851",
+    "scene": "lumen_deal",
+    "sceneSpeaker": "Sister Lumen",
+    "speaker": "Sister Lumen",
+    "quote": "Kerr,",
+    "text": "Kerr,",
+    "part": 0,
+    "choiceId": "fake-pact",
+    "outcome": "miss",
+    "attribution": "she says to the room"
   }
 ]
