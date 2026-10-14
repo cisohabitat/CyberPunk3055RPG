@@ -102,8 +102,8 @@
       "speaker": "Asa",
       "text": "Diagnostic cartridge. Clinic stock. My manifest can't cross this gate.",
       "path": "public/audio/voice-campaign-asa-8b96bfc8114a.mp3",
-      "durationSeconds": 7.537958333333333,
-      "sha256": "6395d2bcb63839e36f5565c0f48fc234ed29b513a83ab69ad456f5d2f545cb9c"
+      "durationSeconds": 7.687333333333333,
+      "sha256": "7229156cbab82ae01ad090aad563b65bc00b7e78de7df8e606f725cb71757513"
     },
     {
       "id": "voice-campaign-ren-849965fb2829",
@@ -174,8 +174,8 @@
       "speaker": "Asa",
       "text": "What were you trying to carry for yourself?",
       "path": "public/audio/voice-campaign-asa-0e81be1b767b.mp3",
-      "durationSeconds": 2.748625,
-      "sha256": "052bf6de862390c3e173630f1645aee4a5e8f8f4f0630f8a46e19ce1189fb118"
+      "durationSeconds": 2.784,
+      "sha256": "e4c0af6457e56c6a4e515a52ee2ce308f883ad9d9cde22cd23bdd93101c309d5"
     },
     {
       "id": "voice-campaign-asa-4886abf2e519",
@@ -334,8 +334,8 @@
       "speaker": "Edda",
       "text": "This tells us where to look. It isn't the record. My countersignature isn't the command's issuing key either.",
       "path": "public/audio/voice-campaign-edda-de8cf8a1dc03.mp3",
-      "durationSeconds": 7.109333333333334,
-      "sha256": "8097614d9df891278c79af70870f982a2f3de4f14d7d298d191ba7dcf2e8515d"
+      "durationSeconds": 7.244666666666666,
+      "sha256": "5c7ae67fff5463e282e3d3333d83e97160109bc1600ec58b629ce07122537830"
     },
     {
       "id": "voice-campaign-edda-d4b034abcf9f",
@@ -486,8 +486,8 @@
       "speaker": "Kerr",
       "text": "They have my replacement at the canal depot. Unpowered, no miracle in it.",
       "path": "public/audio/voice-campaign-kerr-636ce1c1a709.mp3",
-      "durationSeconds": 4.780666666666667,
-      "sha256": "eb9c3b2bbb89b831a41034d6e8a4b36725772f27f4387f1f614722e842cd1925"
+      "durationSeconds": 4.972666666666667,
+      "sha256": "8e4d0c36146eb39d0b89d691a127158ea752fa53e5dbf1056fbbd895a3888e3f"
     },
     {
       "id": "voice-campaign-nia-pell-5b29f7d4a657",
@@ -566,8 +566,8 @@
       "speaker": "Kerr",
       "text": "My case. Your terms with the depot. Keep both names on the right paper.",
       "path": "public/audio/voice-campaign-kerr-f62283c66903.mp3",
-      "durationSeconds": 5.659958333333333,
-      "sha256": "2e09320f0cdc185cec7e2afece5172cab1f32a01156f34bda9c2e8a1d23513e0"
+      "durationSeconds": 5.722666666666667,
+      "sha256": "61b5f473776a35f009c55a9dc643e200ffdee4c77688a0d82d5374f165216de7"
     },
     {
       "id": "voice-campaign-sister-lumen-605b0079cbb3",
@@ -654,8 +654,8 @@
       "speaker": "Kerr",
       "text": "Tell the wall you left it open. I don't need a finished job invented on the way down.",
       "path": "public/audio/voice-campaign-kerr-29ee7c589eed.mp3",
-      "durationSeconds": 5.4093333333333335,
-      "sha256": "ea2ca037b7cfa7c2076a44216838c7c2b9dfcf852d83c0a583da1092ae8365d7"
+      "durationSeconds": 5.533291666666667,
+      "sha256": "1c92c0bb5f48a88263f89ccf9f34247058661c2c30b493d7e7b635800c9ad1c9"
     },
     {
       "id": "voice-campaign-sera-d9a5680cf8c7",
@@ -678,8 +678,8 @@
       "speaker": "Asa",
       "text": "I haven't seen a stock receipt for your case. That part is still open.",
       "path": "public/audio/voice-campaign-asa-de5224a38bd1.mp3",
-      "durationSeconds": 5.785958333333333,
-      "sha256": "041a94f924f2130eeb8b0ffc54869916b5fb3f037251e7168dfcadbf7f1252ee"
+      "durationSeconds": 5.9539583333333335,
+      "sha256": "fc6f15c1786bd1198b1f4f14a36bd6236b0eafbf54c3d508ffe5bfc5dcb90e2c"
     },
     {
       "id": "voice-campaign-asa-85f28e598eb3",
@@ -694,8 +694,8 @@
       "speaker": "Asa",
       "text": "You left it at intake. I brought the batch reference; we can ask before calling it delivered.",
       "path": "public/audio/voice-campaign-asa-2badc1c2c563.mp3",
-      "durationSeconds": 7.034666666666666,
-      "sha256": "1f0295289fe48e668ebd44c90804c9320895db74d7f35093e9c9d14ee8650d5d"
+      "durationSeconds": 8.182,
+      "sha256": "fb21d911bce9fb28f61e9a5e573edb2783ba438d1ece1c65429f59e8c4f5c8b7"
     },
     {
       "id": "voice-campaign-quill-d754198511c6",
@@ -766,16 +766,16 @@
       "speaker": "Quill",
       "text": "An introduction asks somebody else to believe my word about yours. Clear the forty first, or use the map without me.",
       "path": "public/audio/voice-campaign-quill-6a63b21d89c5.mp3",
-      "durationSeconds": 8.762666666666666,
-      "sha256": "2901427629b44b692d8f2279512a10d05337e710273323ba421a6f47030135ef"
+      "durationSeconds": 9.289958333333333,
+      "sha256": "3cdba1eddc2985ceb3c5bcdabf034cf0b0c21be88f2b254e296b15d9b4bac985"
     },
     {
       "id": "voice-campaign-quill-8187b9c40d70",
       "speaker": "Quill",
       "text": "Paid now. Late then. Both fit on the page.",
       "path": "public/audio/voice-campaign-quill-8187b9c40d70.mp3",
-      "durationSeconds": 4.558666666666666,
-      "sha256": "d92d27e73e9f79b3f10495faa701890e295669070e41a2e588bfe34746914428"
+      "durationSeconds": 4.675333333333334,
+      "sha256": "c8416b776db366f9c03149a7b881c83d59ecfb483bfd5f6ec54a9bda676aecd9"
     },
     {
       "id": "voice-campaign-quill-39284d611815",
@@ -878,8 +878,8 @@
       "speaker": "Quill",
       "text": "Someone who pays for an original. You want Mara's reasons, ask Mara. I sell the route to the room, not an honest answer.",
       "path": "public/audio/voice-campaign-quill-d62c4bfc7196.mp3",
-      "durationSeconds": 9.197958333333334,
-      "sha256": "c23bb1a9f612c934897292ed5e6b13dce286483c2bd18d8889cd94c0dfb79cf9"
+      "durationSeconds": 9.237958333333333,
+      "sha256": "c53019e796d9d1d5c91e97f3d780d13ae747cff558741c2fad87d67aa03dfa5d"
     },
     {
       "id": "voice-campaign-edda-517f9439fca0",
@@ -942,16 +942,16 @@
       "speaker": "Edda",
       "text": "One shift. Keep both papers. Don't make the first one an acquittal.",
       "path": "public/audio/voice-campaign-edda-07130fdc6f54.mp3",
-      "durationSeconds": 5.1425833333333335,
-      "sha256": "1dfcc2d4c7c87edc51207d47f90117948301d79890fe7d2b456bfd4ebfc6fd9e"
+      "durationSeconds": 5.351958333333333,
+      "sha256": "e86b5cf3b3bbe92385263566bff559bf468dd527be60ba312a553ba80e0a7830"
     },
     {
       "id": "voice-campaign-kerr-05464a5d2167",
       "speaker": "Kerr",
       "text": "You sorted somebody else's shelves for this. That's your time, not a favor I signed for.",
       "path": "public/audio/voice-campaign-kerr-05464a5d2167.mp3",
-      "durationSeconds": 5.378,
-      "sha256": "2503be640f9757fccebfd81acdd3abc8688b1694612e621c89d60837385101ed"
+      "durationSeconds": 5.576,
+      "sha256": "7c13e447c693a74c68eb6214a4710717bad45f78825111239e6686a9549b63c5"
     },
     {
       "id": "voice-campaign-sera-bd40f64ddfb9",
@@ -982,8 +982,8 @@
       "speaker": "Edda",
       "text": "They can find my shift from this. Taking my name off the public copy won't hide it from my employer.",
       "path": "public/audio/voice-campaign-edda-4c4a033f7b14.mp3",
-      "durationSeconds": 6.710666666666667,
-      "sha256": "7903a722c961fc216b1f9ea166ef73f2ddb3998f49639708333dafdb868a909e"
+      "durationSeconds": 6.792,
+      "sha256": "d1980b9322367c179c124e59300c20a869dfce10b3297dfbc1ded999c8add201"
     },
     {
       "id": "voice-campaign-sister-lumen-c0bbc5b77e59",
@@ -1070,8 +1070,8 @@
       "speaker": "Edda",
       "text": "They accepted the request. They haven't closed the key. Will you sit while I ask payroll?",
       "path": "public/audio/voice-campaign-edda-bcee1bb4ec5b.mp3",
-      "durationSeconds": 5.775291666666667,
-      "sha256": "ec438e1a4ac045a4b768946e704ee38c61b55e5630b655c82057e23c50246b93"
+      "durationSeconds": 5.846666666666667,
+      "sha256": "a2bf5517cf90456264f499a598ecf689ec22433e97c0c1e3929b6f73c7a67cf2"
     },
     {
       "id": "voice-campaign-edda-a8fa6fb017b5",
@@ -1502,8 +1502,8 @@
       "speaker": "Quill",
       "text": "You paid what you had postponed. That settles the forty, not the rest of your night.",
       "path": "public/audio/voice-campaign-quill-2ab424110b96.mp3",
-      "durationSeconds": 6.010666666666666,
-      "sha256": "07574db04600a215870a37b772163436a7ff0bd9ef72f7aefcaa1c9bf1ba2dad"
+      "durationSeconds": 6.113333333333333,
+      "sha256": "a18017ec152a4c7a3b8b117ea10a4fc2a3bdfaf3d2e8873636e2650b20857359"
     },
     {
       "id": "voice-campaign-quill-facb468bbd8c",

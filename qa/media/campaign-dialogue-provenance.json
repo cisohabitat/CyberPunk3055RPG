@@ -29,7 +29,7 @@
     ]
   },
   "source": "scripts/generate-campaign-voices.py",
-  "processing": "Exact authored character words; existing cast identities; optional sentence pauses, 8ms phrase fades, normalized PCM peak 0.72 with 80ms edges; 96kbps mono MP3 delivery. Original PCM and normalized PCM retained outside Git.",
+  "processing": "Exact authored character words; existing cast identities; optional sentence pauses, 8ms phrase fades, normalized PCM peak 0.72 with 80ms edges; optional per-line two-pass EBU loudness matching with -2dBTP ceiling; 96kbps mono MP3 delivery. Original PCM and normalized PCM retained outside Git.",
   "reviewStatus": "Technical signal and source review; stock synthetic dialogue. No commissioned actors or independent listening acceptance.",
   "lines": [
     {
@@ -380,37 +380,40 @@
       "voice": "af_alloy",
       "speed": 0.98,
       "text": "Diagnostic cartridge. Clinic stock. My manifest can't cross this gate.",
-      "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "direction": "Practical dispatch identification; the manifest limit remains real.",
       "segments": [
         {
           "text": "Diagnostic cartridge.",
-          "speed": 0.98,
-          "pauseAfter": 0.24
+          "speed": 0.96,
+          "pauseAfter": 0.2
         },
         {
           "text": "Clinic stock.",
-          "speed": 0.98,
-          "pauseAfter": 0.24
+          "speed": 0.96,
+          "pauseAfter": 0.25
         },
         {
           "text": "My manifest can't cross this gate.",
-          "speed": 0.98,
+          "speed": 0.94,
           "pauseAfter": 0
         }
       ],
+      "loudnessLufs": -20,
+      "integratedLufs": -20.02,
+      "truePeakDbtp": -1.61,
       "language": "en-us",
       "path": "public/audio/voice-campaign-asa-8b96bfc8114a.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-asa-8b96bfc8114a.wav",
-      "sourceSha256": "fd983a8fe56b432bdc961f63f5735f6fbb8db07a97a59768d2516d0da41fa281",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-asa-8b96bfc8114a-delivery.wav",
-      "pcmDeliverySha256": "86ccc4f1fbc524e6d89d38a85c3b8c3d69e965e66f428c209e34805768a58b55",
-      "sha256": "6395d2bcb63839e36f5565c0f48fc234ed29b513a83ab69ad456f5d2f545cb9c",
-      "bytes": 91628,
+      "sourceFile": "/workspace/generated_audio/character-media/voice-campaign-asa-8b96bfc8114a.wav",
+      "sourceSha256": "8405231c68e76fa0ff3ea9ef1393c0fb12a86bca6a37ed181265d49564f5a26d",
+      "pcmDeliveryFile": "/workspace/generated_audio/character-media/voice-campaign-asa-8b96bfc8114a-delivery.wav",
+      "pcmDeliverySha256": "bb3a1b50bbae8bff491d2176f15c4ae3be5bcd75d678a282a5643f3e44a65349",
+      "sha256": "7229156cbab82ae01ad090aad563b65bc00b7e78de7df8e606f725cb71757513",
+      "bytes": 93356,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 7.537958333333333,
-      "peak": 0.6853887438774109,
-      "rms": 0.07509230822324753
+      "durationSeconds": 7.687333333333333,
+      "peak": 0.8276352882385254,
+      "rms": 0.10250218957662582
     },
     {
       "id": "voice-campaign-ren-849965fb2829",
@@ -615,20 +618,30 @@
       "voice": "af_alloy",
       "speed": 0.98,
       "text": "What were you trying to carry for yourself?",
-      "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "direction": "A personal question with room to answer; keep the runner’s identity private.",
+      "segments": [
+        {
+          "text": "What were you trying to carry for yourself?",
+          "speed": 0.94,
+          "pauseAfter": 0
+        }
+      ],
+      "loudnessLufs": -20,
+      "integratedLufs": -20.51,
+      "truePeakDbtp": -1.62,
       "language": "en-us",
       "path": "public/audio/voice-campaign-asa-0e81be1b767b.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-asa-0e81be1b767b.wav",
-      "sourceSha256": "28b907cbff041c8fa34d4ff39237bcba997f8c442fbf46ed1961bc45b8963067",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-asa-0e81be1b767b-delivery.wav",
-      "pcmDeliverySha256": "4b8ff6466342e6a899aa4f00531993e3c11fe2b7935eec4ebdf9d717d581338e",
-      "sha256": "052bf6de862390c3e173630f1645aee4a5e8f8f4f0630f8a46e19ce1189fb118",
-      "bytes": 34028,
+      "sourceFile": "/workspace/generated_audio/character-media/voice-campaign-asa-0e81be1b767b.wav",
+      "sourceSha256": "7c0605545a2b4ce34d755fbc9fdaeb388abecfd0389718618bf0f5d03c918ee6",
+      "pcmDeliveryFile": "/workspace/generated_audio/character-media/voice-campaign-asa-0e81be1b767b-delivery.wav",
+      "pcmDeliverySha256": "2a93cec9ebf06452ee7d6d921868bc6ce1aef70d581cdfb79af3f07cdecd33e5",
+      "sha256": "e4c0af6457e56c6a4e515a52ee2ce308f883ad9d9cde22cd23bdd93101c309d5",
+      "bytes": 34316,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 2.748625,
-      "peak": 0.683841347694397,
-      "rms": 0.09433428943157196
+      "durationSeconds": 2.784,
+      "peak": 0.8275845646858215,
+      "rms": 0.09686075896024704
     },
     {
       "id": "voice-campaign-asa-4886abf2e519",
@@ -1117,7 +1130,7 @@
       "voice": "af_kore",
       "speed": 0.95,
       "text": "This tells us where to look. It isn't the record. My countersignature isn't the command's issuing key either.",
-      "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "direction": "Source precision; distinguish a lead, a record and the issuing key.",
       "segments": [
         {
           "text": "This tells us where to look.",
@@ -1126,28 +1139,31 @@
         },
         {
           "text": "It isn't the record.",
-          "speed": 0.95,
-          "pauseAfter": 0.24
+          "speed": 0.92,
+          "pauseAfter": 0.28
         },
         {
           "text": "My countersignature isn't the command's issuing key either.",
-          "speed": 0.95,
+          "speed": 0.93,
           "pauseAfter": 0
         }
       ],
+      "loudnessLufs": -20,
+      "integratedLufs": -20.01,
+      "truePeakDbtp": -3.8,
       "language": "en-us",
       "path": "public/audio/voice-campaign-edda-de8cf8a1dc03.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-edda-de8cf8a1dc03.wav",
-      "sourceSha256": "af19a5f2cfc48009e5999aa21264801f0b111e774c19e4d5a2b97b9ed5ca12b7",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-edda-de8cf8a1dc03-delivery.wav",
-      "pcmDeliverySha256": "740c1c168a8f5d2f78d7b28c5cb39da0bacfcf6f16ddd32551ddbe64e4311b27",
-      "sha256": "8097614d9df891278c79af70870f982a2f3de4f14d7d298d191ba7dcf2e8515d",
-      "bytes": 86444,
+      "sourceFile": "/workspace/generated_audio/character-media/voice-campaign-edda-de8cf8a1dc03.wav",
+      "sourceSha256": "5452b7fcb19e4a7d1960e74c1c23833ed72f1fe53e83cc09e9220f45c4b07206",
+      "pcmDeliveryFile": "/workspace/generated_audio/character-media/voice-campaign-edda-de8cf8a1dc03-delivery.wav",
+      "pcmDeliverySha256": "33f7d3faf58e056c85df8cd76ab00e4af38079a5dbb23fe7f1e28d1acf302b74",
+      "sha256": "5c7ae67fff5463e282e3d3333d83e97160109bc1600ec58b629ce07122537830",
+      "bytes": 87884,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 7.109333333333334,
-      "peak": 0.6824594736099243,
-      "rms": 0.11913937330245972
+      "durationSeconds": 7.244666666666666,
+      "peak": 0.6437324285507202,
+      "rms": 0.11159984767436981
     },
     {
       "id": "voice-campaign-edda-d4b034abcf9f",
@@ -1586,32 +1602,35 @@
       "voice": "am_adam",
       "speed": 0.97,
       "text": "They have my replacement at the canal depot. Unpowered, no miracle in it.",
-      "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "direction": "A practical request; separate replacement equipment from any miracle.",
       "segments": [
         {
           "text": "They have my replacement at the canal depot.",
-          "speed": 0.97,
+          "speed": 0.94,
           "pauseAfter": 0.24
         },
         {
           "text": "Unpowered, no miracle in it.",
-          "speed": 0.97,
+          "speed": 0.91,
           "pauseAfter": 0
         }
       ],
+      "loudnessLufs": -20,
+      "integratedLufs": -20.0,
+      "truePeakDbtp": -1.68,
       "language": "en-us",
       "path": "public/audio/voice-campaign-kerr-636ce1c1a709.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-kerr-636ce1c1a709.wav",
-      "sourceSha256": "51ab35c2f284a41acb53b8864dde314e8fab0ceea95655090c4524c3f3c282a4",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-kerr-636ce1c1a709-delivery.wav",
-      "pcmDeliverySha256": "5f5fc766811b0f1503a8576d16c6f02554e8ef3d6e485e834ad22cd7472b692c",
-      "sha256": "eb9c3b2bbb89b831a41034d6e8a4b36725772f27f4387f1f614722e842cd1925",
-      "bytes": 58508,
+      "sourceFile": "/workspace/generated_audio/character-media/voice-campaign-kerr-636ce1c1a709.wav",
+      "sourceSha256": "7e4405f95298ca60fb38b9128d2d12c42376f795832724087c6f45f61e846b9a",
+      "pcmDeliveryFile": "/workspace/generated_audio/character-media/voice-campaign-kerr-636ce1c1a709-delivery.wav",
+      "pcmDeliverySha256": "5cfe7ca30a7e43f5eafeaeb0b91229c12733553420631fb0f31e48d71704933e",
+      "sha256": "8e4d0c36146eb39d0b89d691a127158ea752fa53e5dbf1056fbbd895a3888e3f",
+      "bytes": 60812,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 4.780666666666667,
-      "peak": 0.6853799819946289,
-      "rms": 0.08930608630180359
+      "durationSeconds": 4.972666666666667,
+      "peak": 0.8213937282562256,
+      "rms": 0.11151949316263199
     },
     {
       "id": "voice-campaign-nia-pell-5b29f7d4a657",
@@ -1892,37 +1911,40 @@
       "voice": "am_adam",
       "speed": 0.97,
       "text": "My case. Your terms with the depot. Keep both names on the right paper.",
-      "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "direction": "Check custody and terms separately; plain, reserved acknowledgement.",
       "segments": [
         {
           "text": "My case.",
-          "speed": 0.97,
-          "pauseAfter": 0.24
+          "speed": 0.94,
+          "pauseAfter": 0.2
         },
         {
           "text": "Your terms with the depot.",
-          "speed": 0.97,
-          "pauseAfter": 0.24
+          "speed": 0.94,
+          "pauseAfter": 0.3
         },
         {
           "text": "Keep both names on the right paper.",
-          "speed": 0.97,
+          "speed": 0.92,
           "pauseAfter": 0
         }
       ],
+      "loudnessLufs": -20,
+      "integratedLufs": -20.01,
+      "truePeakDbtp": -1.87,
       "language": "en-us",
       "path": "public/audio/voice-campaign-kerr-f62283c66903.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-kerr-f62283c66903.wav",
-      "sourceSha256": "e28effdeca343b8bca7862841b9a5438d7f670ff23046056557c6c8fc2866992",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-kerr-f62283c66903-delivery.wav",
-      "pcmDeliverySha256": "638e3e6f017a35876e45c9f8021c4907d394ac5260d40a80f4ef27c691df1fa5",
-      "sha256": "2e09320f0cdc185cec7e2afece5172cab1f32a01156f34bda9c2e8a1d23513e0",
-      "bytes": 68876,
+      "sourceFile": "/workspace/generated_audio/character-media/voice-campaign-kerr-f62283c66903.wav",
+      "sourceSha256": "619dc32a37983705ada993d380899ebb4ff57b09eb46bf6a57ea8f14307a7279",
+      "pcmDeliveryFile": "/workspace/generated_audio/character-media/voice-campaign-kerr-f62283c66903-delivery.wav",
+      "pcmDeliverySha256": "e384c61888fa81a8ba92d71894e6deae4269930e0139b8d8c623835cbca641f0",
+      "sha256": "61b5f473776a35f009c55a9dc643e200ffdee4c77688a0d82d5374f165216de7",
+      "bytes": 69740,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 5.659958333333333,
-      "peak": 0.6851495504379272,
-      "rms": 0.06521692126989365
+      "durationSeconds": 5.722666666666667,
+      "peak": 0.8060111999511719,
+      "rms": 0.10411903262138367
     },
     {
       "id": "voice-campaign-sister-lumen-605b0079cbb3",
@@ -2234,32 +2256,35 @@
       "voice": "am_adam",
       "speed": 0.97,
       "text": "Tell the wall you left it open. I don't need a finished job invented on the way down.",
-      "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "direction": "An unfinished errand stays unfinished; deliberate honesty, without accusation.",
       "segments": [
         {
           "text": "Tell the wall you left it open.",
-          "speed": 0.97,
-          "pauseAfter": 0.24
+          "speed": 0.93,
+          "pauseAfter": 0.32
         },
         {
           "text": "I don't need a finished job invented on the way down.",
-          "speed": 0.97,
+          "speed": 0.95,
           "pauseAfter": 0
         }
       ],
+      "loudnessLufs": -20,
+      "integratedLufs": -19.99,
+      "truePeakDbtp": -1.56,
       "language": "en-us",
       "path": "public/audio/voice-campaign-kerr-29ee7c589eed.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-kerr-29ee7c589eed.wav",
-      "sourceSha256": "0b95206c51410e53ab244a32b5b83f56d22cb5077d901fec94ea48a9670f2cda",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-kerr-29ee7c589eed-delivery.wav",
-      "pcmDeliverySha256": "56e18380fd82105710793d156c80597b55719ec3dfb26da2bb91c150119f5ae2",
-      "sha256": "ea2ca037b7cfa7c2076a44216838c7c2b9dfcf852d83c0a583da1092ae8365d7",
-      "bytes": 65996,
+      "sourceFile": "/workspace/generated_audio/character-media/voice-campaign-kerr-29ee7c589eed.wav",
+      "sourceSha256": "7a7172a6bef718e5ae57b74cd634efbe61f5b627fee419203bac1fb19c7d7bbd",
+      "pcmDeliveryFile": "/workspace/generated_audio/character-media/voice-campaign-kerr-29ee7c589eed-delivery.wav",
+      "pcmDeliverySha256": "01f379cd4dcbc2086065ea5b2fb539391f4b26832033beb931a0aaeb3fe02a3c",
+      "sha256": "1c92c0bb5f48a88263f89ccf9f34247058661c2c30b493d7e7b635800c9ad1c9",
+      "bytes": 67436,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 5.4093333333333335,
-      "peak": 0.6844887137413025,
-      "rms": 0.08552150428295135
+      "durationSeconds": 5.533291666666667,
+      "peak": 0.8358176350593567,
+      "rms": 0.11137760430574417
     },
     {
       "id": "voice-campaign-sera-d9a5680cf8c7",
@@ -2321,32 +2346,35 @@
       "voice": "af_alloy",
       "speed": 0.98,
       "text": "I haven't seen a stock receipt for your case. That part is still open.",
-      "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "direction": "Keep an unseen receipt honestly open; patient rather than consoling.",
       "segments": [
         {
           "text": "I haven't seen a stock receipt for your case.",
-          "speed": 0.98,
-          "pauseAfter": 0.24
+          "speed": 0.95,
+          "pauseAfter": 0.3
         },
         {
           "text": "That part is still open.",
-          "speed": 0.98,
+          "speed": 0.93,
           "pauseAfter": 0
         }
       ],
+      "loudnessLufs": -20,
+      "integratedLufs": -20.0,
+      "truePeakDbtp": -1.74,
       "language": "en-us",
       "path": "public/audio/voice-campaign-asa-de5224a38bd1.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-asa-de5224a38bd1.wav",
-      "sourceSha256": "a311c93ecc5a152a89a019f91e755b30c86bc82117453279dfc843bd60775abc",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-asa-de5224a38bd1-delivery.wav",
-      "pcmDeliverySha256": "79667bed74b1f3f39e0cd8b01a20c30e5ef1a367889eb1661085d3a2523ad347",
-      "sha256": "041a94f924f2130eeb8b0ffc54869916b5fb3f037251e7168dfcadbf7f1252ee",
-      "bytes": 70604,
+      "sourceFile": "/workspace/generated_audio/character-media/voice-campaign-asa-de5224a38bd1.wav",
+      "sourceSha256": "ba31eb57baea9dc7fb1689491c8588788527a4c88e7bdd73c035034292b03c5d",
+      "pcmDeliveryFile": "/workspace/generated_audio/character-media/voice-campaign-asa-de5224a38bd1-delivery.wav",
+      "pcmDeliverySha256": "1abb7d24a2ac57c5c66e263571d82b6fa2c3fd33416657d7b250235250e071cf",
+      "sha256": "fc6f15c1786bd1198b1f4f14a36bd6236b0eafbf54c3d508ffe5bfc5dcb90e2c",
+      "bytes": 72620,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 5.785958333333333,
-      "peak": 0.6836249828338623,
-      "rms": 0.06475859135389328
+      "durationSeconds": 5.9539583333333335,
+      "peak": 0.8151434063911438,
+      "rms": 0.10367098450660706
     },
     {
       "id": "voice-campaign-asa-85f28e598eb3",
@@ -2392,32 +2420,40 @@
       "voice": "af_alloy",
       "speed": 0.98,
       "text": "You left it at intake. I brought the batch reference; we can ask before calling it delivered.",
-      "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "direction": "Separate intake, a reference and actual delivery; invite verification.",
       "segments": [
         {
           "text": "You left it at intake.",
-          "speed": 0.98,
+          "speed": 0.96,
+          "pauseAfter": 0.23
+        },
+        {
+          "text": "I brought the batch reference;",
+          "speed": 0.95,
           "pauseAfter": 0.24
         },
         {
-          "text": "I brought the batch reference; we can ask before calling it delivered.",
-          "speed": 0.98,
+          "text": "we can ask before calling it delivered.",
+          "speed": 0.94,
           "pauseAfter": 0
         }
       ],
+      "loudnessLufs": -20,
+      "integratedLufs": -20.06,
+      "truePeakDbtp": -1.64,
       "language": "en-us",
       "path": "public/audio/voice-campaign-asa-2badc1c2c563.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-asa-2badc1c2c563.wav",
-      "sourceSha256": "d5f75fc961e3495c245524d8ebbaf43368b517769f3f53673ea6a3da6d152b73",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-asa-2badc1c2c563-delivery.wav",
-      "pcmDeliverySha256": "0780a01118fd08f468163510694a9cc68b8bbdac95faf6b0cc20774af63759c3",
-      "sha256": "1f0295289fe48e668ebd44c90804c9320895db74d7f35093e9c9d14ee8650d5d",
-      "bytes": 85580,
+      "sourceFile": "/workspace/generated_audio/character-media/voice-campaign-asa-2badc1c2c563.wav",
+      "sourceSha256": "80ada9e301bae13adcd904bbdfdcc2dcb6d8a68018db440e9425a9e89898cea0",
+      "pcmDeliveryFile": "/workspace/generated_audio/character-media/voice-campaign-asa-2badc1c2c563-delivery.wav",
+      "pcmDeliverySha256": "c13e8ded95f756dc94d54d0c6d04d94c0e5291ef7e5f4e317491c46de1b1e978",
+      "sha256": "fb21d911bce9fb28f61e9a5e573edb2783ba438d1ece1c65429f59e8c4f5c8b7",
+      "bytes": 99116,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 7.034666666666666,
-      "peak": 0.6859689950942993,
-      "rms": 0.06937473267316818
+      "durationSeconds": 8.182,
+      "peak": 0.8266528844833374,
+      "rms": 0.10530737787485123
     },
     {
       "id": "voice-campaign-quill-d754198511c6",
@@ -2653,32 +2689,40 @@
       "voice": "am_michael",
       "speed": 0.96,
       "text": "An introduction asks somebody else to believe my word about yours. Clear the forty first, or use the map without me.",
-      "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "direction": "Explain the social cost of an introduction; keep the refusal direct.",
       "segments": [
         {
           "text": "An introduction asks somebody else to believe my word about yours.",
           "speed": 0.96,
-          "pauseAfter": 0.24
+          "pauseAfter": 0.32
         },
         {
-          "text": "Clear the forty first, or use the map without me.",
-          "speed": 0.96,
+          "text": "Clear the forty",
+          "speed": 0.95,
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "first, or use the map without me.",
+          "speed": 0.94,
           "pauseAfter": 0
         }
       ],
+      "loudnessLufs": -20,
+      "integratedLufs": -20.02,
+      "truePeakDbtp": -2.07,
       "language": "en-us",
       "path": "public/audio/voice-campaign-quill-6a63b21d89c5.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-quill-6a63b21d89c5.wav",
-      "sourceSha256": "96e0a829168c03302fa4c1ef94ca5b3aa7000b63d044f9eb643b520fbd5eca33",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-quill-6a63b21d89c5-delivery.wav",
-      "pcmDeliverySha256": "7549fa94aa4dd17cec493824c26378df1b9c926516a1330c517080e8f9a0358a",
-      "sha256": "2901427629b44b692d8f2279512a10d05337e710273323ba421a6f47030135ef",
-      "bytes": 106316,
+      "sourceFile": "/workspace/generated_audio/character-media/voice-campaign-quill-6a63b21d89c5.wav",
+      "sourceSha256": "5bb582f7a07fa51681d23a961388695e3fcd01600f1f8dbffa87e5ec9c664bb4",
+      "pcmDeliveryFile": "/workspace/generated_audio/character-media/voice-campaign-quill-6a63b21d89c5-delivery.wav",
+      "pcmDeliverySha256": "87fd4bf60b5e42c5886399832e59572381a4be4b56a17a4566a9d99760437483",
+      "sha256": "3cdba1eddc2985ceb3c5bcdabf034cf0b0c21be88f2b254e296b15d9b4bac985",
+      "bytes": 112652,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 8.762666666666666,
-      "peak": 0.681145191192627,
-      "rms": 0.08468631654977798
+      "durationSeconds": 9.289958333333333,
+      "peak": 0.7857612371444702,
+      "rms": 0.11067292094230652
     },
     {
       "id": "voice-campaign-quill-8187b9c40d70",
@@ -2686,37 +2730,40 @@
       "voice": "am_michael",
       "speed": 0.96,
       "text": "Paid now. Late then. Both fit on the page.",
-      "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "direction": "Bookkeeping with a long memory; payment and lateness occupy separate beats.",
       "segments": [
         {
           "text": "Paid now.",
-          "speed": 0.96,
-          "pauseAfter": 0.24
+          "speed": 0.95,
+          "pauseAfter": 0.23
         },
         {
           "text": "Late then.",
-          "speed": 0.96,
-          "pauseAfter": 0.24
+          "speed": 0.93,
+          "pauseAfter": 0.28
         },
         {
           "text": "Both fit on the page.",
-          "speed": 0.96,
+          "speed": 0.95,
           "pauseAfter": 0
         }
       ],
+      "loudnessLufs": -20,
+      "integratedLufs": -19.98,
+      "truePeakDbtp": -2.47,
       "language": "en-us",
       "path": "public/audio/voice-campaign-quill-8187b9c40d70.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-quill-8187b9c40d70.wav",
-      "sourceSha256": "689e94319d26eca8973517fad261dab5cc781c6aeb4fb9c5321bf2d12eb3ab2c",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-quill-8187b9c40d70-delivery.wav",
-      "pcmDeliverySha256": "89144bd064b34b5685ef3ba4a113152c40554ffe7667368f5e39f004e281683a",
-      "sha256": "d92d27e73e9f79b3f10495faa701890e295669070e41a2e588bfe34746914428",
-      "bytes": 55628,
+      "sourceFile": "/workspace/generated_audio/character-media/voice-campaign-quill-8187b9c40d70.wav",
+      "sourceSha256": "4946e84d5d690d7145602f24cb263e79417152a42fd196e5c4fc8c13e4733dd3",
+      "pcmDeliveryFile": "/workspace/generated_audio/character-media/voice-campaign-quill-8187b9c40d70-delivery.wav",
+      "pcmDeliverySha256": "e21d091868ac90cde3483cf3d95b434d6d0877d0e919b5c62ec85d0b6b094572",
+      "sha256": "c8416b776db366f9c03149a7b881c83d59ecfb483bfd5f6ec54a9bda676aecd9",
+      "bytes": 57068,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 4.558666666666666,
-      "peak": 0.6860722303390503,
-      "rms": 0.09659257531166077
+      "durationSeconds": 4.675333333333334,
+      "peak": 0.7347975373268127,
+      "rms": 0.10466517508029938
     },
     {
       "id": "voice-campaign-quill-39284d611815",
@@ -3041,37 +3088,40 @@
       "voice": "am_michael",
       "speed": 0.96,
       "text": "Someone who pays for an original. You want Mara's reasons, ask Mara. I sell the route to the room, not an honest answer.",
-      "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "direction": "A practiced seller’s evasive answer; separate ownership from answers.",
       "segments": [
         {
           "text": "Someone who pays for an original.",
           "speed": 0.96,
-          "pauseAfter": 0.24
+          "pauseAfter": 0.22
         },
         {
           "text": "You want Mara's reasons, ask Mara.",
-          "speed": 0.96,
-          "pauseAfter": 0.24
+          "speed": 0.94,
+          "pauseAfter": 0.3
         },
         {
           "text": "I sell the route to the room, not an honest answer.",
-          "speed": 0.96,
+          "speed": 0.95,
           "pauseAfter": 0
         }
       ],
+      "loudnessLufs": -20,
+      "integratedLufs": -20.01,
+      "truePeakDbtp": -1.55,
       "language": "en-us",
       "path": "public/audio/voice-campaign-quill-d62c4bfc7196.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-quill-d62c4bfc7196.wav",
-      "sourceSha256": "7221a579fbe2866bdb3adc50a9cea14c4986ad57fe990bd380856309ca1fe895",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-quill-d62c4bfc7196-delivery.wav",
-      "pcmDeliverySha256": "3e41dbf2c02c9b1972e06cc7681861fc75fb0b04d2398b2a718442e13eecd623",
-      "sha256": "c23bb1a9f612c934897292ed5e6b13dce286483c2bd18d8889cd94c0dfb79cf9",
-      "bytes": 111500,
+      "sourceFile": "/workspace/generated_audio/character-media/voice-campaign-quill-d62c4bfc7196.wav",
+      "sourceSha256": "29f20a7b28b641d9fa18abfc043b943ab5cf657b1b4c7de94f2379d5d8545300",
+      "pcmDeliveryFile": "/workspace/generated_audio/character-media/voice-campaign-quill-d62c4bfc7196-delivery.wav",
+      "pcmDeliverySha256": "e6b5809a77d78f4002b3cd9791510048b492512a34972c1b6dbe2abea25b008b",
+      "sha256": "c53019e796d9d1d5c91e97f3d780d13ae747cff558741c2fad87d67aa03dfa5d",
+      "bytes": 111788,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 9.197958333333334,
-      "peak": 0.6832741498947144,
-      "rms": 0.06819868087768555
+      "durationSeconds": 9.237958333333333,
+      "peak": 0.8362908959388733,
+      "rms": 0.11519533395767212
     },
     {
       "id": "voice-campaign-edda-517f9439fca0",
@@ -3320,37 +3370,40 @@
       "voice": "af_kore",
       "speed": 0.95,
       "text": "One shift. Keep both papers. Don't make the first one an acquittal.",
-      "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "direction": "Limited earned work, ongoing inquiry; restrained relief and a firm boundary.",
       "segments": [
         {
           "text": "One shift.",
-          "speed": 0.95,
-          "pauseAfter": 0.24
+          "speed": 0.94,
+          "pauseAfter": 0.25
         },
         {
           "text": "Keep both papers.",
-          "speed": 0.95,
-          "pauseAfter": 0.24
+          "speed": 0.94,
+          "pauseAfter": 0.3
         },
         {
           "text": "Don't make the first one an acquittal.",
-          "speed": 0.95,
+          "speed": 0.92,
           "pauseAfter": 0
         }
       ],
+      "loudnessLufs": -20,
+      "integratedLufs": -19.99,
+      "truePeakDbtp": -2.75,
       "language": "en-us",
       "path": "public/audio/voice-campaign-edda-07130fdc6f54.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-edda-07130fdc6f54.wav",
-      "sourceSha256": "8a27c170cad619eed68c06ff1056514b17b07d81f667d15dd86b1931a6c4d270",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-edda-07130fdc6f54-delivery.wav",
-      "pcmDeliverySha256": "92dc26a9e669674f559bf76b728126c3d813a21875efadf56f4ff6914520a48c",
-      "sha256": "1dfcc2d4c7c87edc51207d47f90117948301d79890fe7d2b456bfd4ebfc6fd9e",
-      "bytes": 62828,
+      "sourceFile": "/workspace/generated_audio/character-media/voice-campaign-edda-07130fdc6f54.wav",
+      "sourceSha256": "b885fdfbfe113005cdf2565c77b9b34f381e64b9ece986f6d285d146e29b713d",
+      "pcmDeliveryFile": "/workspace/generated_audio/character-media/voice-campaign-edda-07130fdc6f54-delivery.wav",
+      "pcmDeliverySha256": "99e1abc05e4ccb151125256a81b1efff1015182293e9f0e59b34396abed2a4db",
+      "sha256": "e86b5cf3b3bbe92385263566bff559bf468dd527be60ba312a553ba80e0a7830",
+      "bytes": 65132,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 5.1425833333333335,
-      "peak": 0.6836502552032471,
-      "rms": 0.09815721958875656
+      "durationSeconds": 5.351958333333333,
+      "peak": 0.721702516078949,
+      "rms": 0.10350960493087769
     },
     {
       "id": "voice-campaign-kerr-05464a5d2167",
@@ -3358,32 +3411,35 @@
       "voice": "am_adam",
       "speed": 0.97,
       "text": "You sorted somebody else's shelves for this. That's your time, not a favor I signed for.",
-      "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "direction": "Recognize the runner’s spent time while refusing an invented debt.",
       "segments": [
         {
           "text": "You sorted somebody else's shelves for this.",
-          "speed": 0.97,
-          "pauseAfter": 0.24
+          "speed": 0.94,
+          "pauseAfter": 0.3
         },
         {
           "text": "That's your time, not a favor I signed for.",
-          "speed": 0.97,
+          "speed": 0.92,
           "pauseAfter": 0
         }
       ],
+      "loudnessLufs": -20,
+      "integratedLufs": -20.0,
+      "truePeakDbtp": -1.76,
       "language": "en-us",
       "path": "public/audio/voice-campaign-kerr-05464a5d2167.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-kerr-05464a5d2167.wav",
-      "sourceSha256": "e20ee60773adecd6945c30f75853e0aae7757449caf75b2df9c481c3a8b67342",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-kerr-05464a5d2167-delivery.wav",
-      "pcmDeliverySha256": "14a7b8a4a5654ba17563c3108fe680bc754d789c07d159df3862c75802ab3a31",
-      "sha256": "2503be640f9757fccebfd81acdd3abc8688b1694612e621c89d60837385101ed",
-      "bytes": 65708,
+      "sourceFile": "/workspace/generated_audio/character-media/voice-campaign-kerr-05464a5d2167.wav",
+      "sourceSha256": "ca03cb4aa6154b4210ff85f0e2b53fe1fc17b7c6a86021618a02e466ca241406",
+      "pcmDeliveryFile": "/workspace/generated_audio/character-media/voice-campaign-kerr-05464a5d2167-delivery.wav",
+      "pcmDeliverySha256": "26566f806532a8f53124c4c2911367a9f1783ba2a1b0a20a51c8d84fbaf570c1",
+      "sha256": "7c13e447c693a74c68eb6214a4710717bad45f78825111239e6686a9549b63c5",
+      "bytes": 68012,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 5.378,
-      "peak": 0.6735315322875977,
-      "rms": 0.08389926701784134
+      "durationSeconds": 5.576,
+      "peak": 0.8158855438232422,
+      "rms": 0.1097104474902153
     },
     {
       "id": "voice-campaign-sera-bd40f64ddfb9",
@@ -3488,12 +3544,12 @@
       "voice": "af_kore",
       "speed": 0.95,
       "text": "They can find my shift from this. Taking my name off the public copy won't hide it from my employer.",
-      "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "direction": "A measured warning about her employer’s trace; no public anonymity claim.",
       "segments": [
         {
           "text": "They can find my shift from this.",
-          "speed": 0.95,
-          "pauseAfter": 0.24
+          "speed": 0.93,
+          "pauseAfter": 0.3
         },
         {
           "text": "Taking my name off the public copy won't hide it from my employer.",
@@ -3501,19 +3557,22 @@
           "pauseAfter": 0
         }
       ],
+      "loudnessLufs": -20,
+      "integratedLufs": -20.0,
+      "truePeakDbtp": -3.2,
       "language": "en-us",
       "path": "public/audio/voice-campaign-edda-4c4a033f7b14.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-edda-4c4a033f7b14.wav",
-      "sourceSha256": "cd5c458ef246e42f7c9e44a3ee55688f4ae4dbb7ef81807a634b2818dbf253ab",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-edda-4c4a033f7b14-delivery.wav",
-      "pcmDeliverySha256": "6dccf72547a7d066ab44cf51df6413f50ef22876a7412a4a11cabe74ce7c7a16",
-      "sha256": "7903a722c961fc216b1f9ea166ef73f2ddb3998f49639708333dafdb868a909e",
-      "bytes": 81548,
+      "sourceFile": "/workspace/generated_audio/character-media/voice-campaign-edda-4c4a033f7b14.wav",
+      "sourceSha256": "38878c751a03f615ecef3d3d2f1708163120fa5d9d8dd3a9e6cd7bf623b2858e",
+      "pcmDeliveryFile": "/workspace/generated_audio/character-media/voice-campaign-edda-4c4a033f7b14-delivery.wav",
+      "pcmDeliverySha256": "32f415facd056fda1cd8224b49b70a1dd409d6b0e9f0e98e8f15ec5bfa48f531",
+      "sha256": "d1980b9322367c179c124e59300c20a869dfce10b3297dfbc1ded999c8add201",
+      "bytes": 82412,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 6.710666666666667,
-      "peak": 0.683928906917572,
-      "rms": 0.11960986256599426
+      "durationSeconds": 6.792,
+      "peak": 0.6918904185295105,
+      "rms": 0.12014377862215042
     },
     {
       "id": "voice-campaign-sister-lumen-c0bbc5b77e59",
@@ -3832,17 +3891,17 @@
       "voice": "af_kore",
       "speed": 0.95,
       "text": "They accepted the request. They haven't closed the key. Will you sit while I ask payroll?",
-      "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "direction": "Acknowledge a submitted request, then the missing closure; end with a personal invitation.",
       "segments": [
         {
           "text": "They accepted the request.",
           "speed": 0.95,
-          "pauseAfter": 0.24
+          "pauseAfter": 0.22
         },
         {
           "text": "They haven't closed the key.",
-          "speed": 0.95,
-          "pauseAfter": 0.24
+          "speed": 0.93,
+          "pauseAfter": 0.32
         },
         {
           "text": "Will you sit while I ask payroll?",
@@ -3850,19 +3909,22 @@
           "pauseAfter": 0
         }
       ],
+      "loudnessLufs": -20,
+      "integratedLufs": -20.0,
+      "truePeakDbtp": -3.91,
       "language": "en-us",
       "path": "public/audio/voice-campaign-edda-bcee1bb4ec5b.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-edda-bcee1bb4ec5b.wav",
-      "sourceSha256": "0c68e6a4ad255bc9b9a8112dad46841ea3841569bc91d8963216f4323022b7e7",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-edda-bcee1bb4ec5b-delivery.wav",
-      "pcmDeliverySha256": "32353ec55b2d90e120e035e3f4801370a1859f13f07601c54f12225057c5ca83",
-      "sha256": "ec438e1a4ac045a4b768946e704ee38c61b55e5630b655c82057e23c50246b93",
-      "bytes": 70316,
+      "sourceFile": "/workspace/generated_audio/character-media/voice-campaign-edda-bcee1bb4ec5b.wav",
+      "sourceSha256": "fdf10e94d990244df7cd955b14a6b1dcab3ccf8de623eeef441dc5e685fae8fe",
+      "pcmDeliveryFile": "/workspace/generated_audio/character-media/voice-campaign-edda-bcee1bb4ec5b-delivery.wav",
+      "pcmDeliverySha256": "6ac88cab0efde143f7710b08117e5556bad8868d11925eb2210a88e8fef21058",
+      "sha256": "a2bf5517cf90456264f499a598ecf689ec22433e97c0c1e3929b6f73c7a67cf2",
+      "bytes": 71180,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 5.775291666666667,
-      "peak": 0.6842472553253174,
-      "rms": 0.11922823637723923
+      "durationSeconds": 5.846666666666667,
+      "peak": 0.6356648802757263,
+      "rms": 0.10927408188581467
     },
     {
       "id": "voice-campaign-edda-a8fa6fb017b5",
@@ -5428,32 +5490,35 @@
       "voice": "am_michael",
       "speed": 0.96,
       "text": "You paid what you had postponed. That settles the forty, not the rest of your night.",
-      "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "direction": "Acknowledge late payment precisely, without selling absolution.",
       "segments": [
         {
           "text": "You paid what you had postponed.",
-          "speed": 0.96,
-          "pauseAfter": 0.24
+          "speed": 0.95,
+          "pauseAfter": 0.3
         },
         {
           "text": "That settles the forty, not the rest of your night.",
-          "speed": 0.96,
+          "speed": 0.93,
           "pauseAfter": 0
         }
       ],
+      "loudnessLufs": -20,
+      "integratedLufs": -20.0,
+      "truePeakDbtp": -3.27,
       "language": "en-us",
       "path": "public/audio/voice-campaign-quill-2ab424110b96.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-quill-2ab424110b96.wav",
-      "sourceSha256": "205f01aa9bd55ca25fae01a771fb7b1801d9a3151965d754a297ad6c1dc9b1ee",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-quill-2ab424110b96-delivery.wav",
-      "pcmDeliverySha256": "c33b6e89bed86c547a0f9b14eec0bf484bdc5be6c5c3246b639ff51bc2c9bf37",
-      "sha256": "07574db04600a215870a37b772163436a7ff0bd9ef72f7aefcaa1c9bf1ba2dad",
-      "bytes": 73196,
+      "sourceFile": "/workspace/generated_audio/character-media/voice-campaign-quill-2ab424110b96.wav",
+      "sourceSha256": "caed310e3a1650c62ca66d5619e20ee39711d31eb918ac0f0fbfb5d89e025e99",
+      "pcmDeliveryFile": "/workspace/generated_audio/character-media/voice-campaign-quill-2ab424110b96-delivery.wav",
+      "pcmDeliverySha256": "2f72cc7a623565534de15203a666fed293db6d07cd5fd915a3be2ec83c9d56f3",
+      "sha256": "a18017ec152a4c7a3b8b117ea10a4fc2a3bdfaf3d2e8873636e2650b20857359",
+      "bytes": 74348,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 6.010666666666666,
-      "peak": 0.6923356056213379,
-      "rms": 0.10579407960176468
+      "durationSeconds": 6.113333333333333,
+      "peak": 0.6729695200920105,
+      "rms": 0.11118026822805405
     },
     {
       "id": "voice-campaign-quill-facb468bbd8c",

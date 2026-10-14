@@ -1754,6 +1754,119 @@
           "sha256": "a5a6399fa6e6e924b7f97eda2b75d83895ef2500783c52ba5ddfd97b0119ed4a"
         }
       ]
+    },
+    {
+      "id": "kerr-considering",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/generated_images/exec-d66670a9-e28b-4df9-91a1-f4425c6d13e1.png",
+      "sourceSha256": "206740f87d9121ed333eb7eae273ec433c3e31ad74fce3227d1790030dafd3cd",
+      "sourceWidth": 1086,
+      "sourceHeight": 1448,
+      "referenceFiles": [
+        "public/art/kerr.jpg"
+      ],
+      "referenceSha256": {
+        "public/art/kerr.jpg": "ec67f4b4299b3ff3302f9e6ae399dc2988d3f086b4f75bd8db2f481884b500ea"
+      },
+      "promptSummary": "Identity-preserving Kerr expression: same weathered adult man, short dark hair, dark raincoat and mechanical forearm. Practical private collection request, slightly lowered gaze, reserved and unsmiling, no gratitude, forgiveness or treatment. Vertical3:4 painted noir with amber edge light and petroleum-blue darkness.",
+      "deliveryProcessing": "Resize and JPEG encode only; complete generated composition and original PNG retained.",
+      "files": [
+        {
+          "path": "public/art/kerr-considering.jpg",
+          "width": 600,
+          "height": 800,
+          "bytes": 100468,
+          "sha256": "efc6bbde9d636460e08aa67b5e494fc3a4700093d45e7fe13918da96b54dadc8"
+        }
+      ]
+    },
+    {
+      "id": "edda-assignment",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/generated_images/exec-e570936d-5266-4893-b72b-4faa052fde79.png",
+      "sourceSha256": "e08455e487490088e02fc750cae77e411fcf2661fd845b6b8018bb2ca1fdc80e",
+      "sourceWidth": 1086,
+      "sourceHeight": 1448,
+      "referenceFiles": [
+        "public/art/edda.jpg"
+      ],
+      "referenceSha256": {
+        "public/art/edda.jpg": "6af115f70e05fbf24b71e7dedf74885e774dba1ac75f5d1689f1b66ee4931223"
+      },
+      "promptSummary": "Identity-preserving Edda paid-assignment expression: mature woman, short salt-and-pepper hair, rectangular spectacles, tan work coat and dark scarf. Fold the plain assignment notice around a separate unmarked inquiry reference, two distinct paper edges, serious restrained attention. No cleared archive account, acquittal, money or triumph. Vertical3:4 painted industrial noir.",
+      "deliveryProcessing": "Resize and JPEG encode only; complete generated composition and original PNG retained.",
+      "files": [
+        {
+          "path": "public/art/edda-assignment.jpg",
+          "width": 600,
+          "height": 800,
+          "bytes": 106987,
+          "sha256": "3df8cbd71e3e94c1264950caedf6bae79cff7147f5b471375cf1e8c13787c674"
+        }
+      ]
+    },
+    {
+      "id": "quill-terms",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/generated_images/exec-1a92b0d4-35d7-40a8-9ae0-4039fb9e4438.png",
+      "sourceSha256": "479efcec5b57077b2d0086cc449caff9f29939ea55667f686b49ff63e60fc64f",
+      "sourceWidth": 1086,
+      "sourceHeight": 1448,
+      "referenceFiles": [
+        "public/art/quill.jpg"
+      ],
+      "referenceSha256": {
+        "public/art/quill.jpg": "4971bcdc37e0853eb4bf0199b883d421ce7a71a77dd2b487c1974e616755311b"
+      },
+      "promptSummary": "Identity-preserving Quill terms expression: older gaunt man, silver messy hair, amber artificial-looking eyes, weathered cheek lines, dark high raincoat collar and cigarette. Slightly lowered chin and direct skeptical unsmiling gaze; no forgiven debt or accepted contract. Vertical3:4 textured charcoal painted noir, amber steam and faint cyan rim.",
+      "deliveryProcessing": "Resize and JPEG encode only; complete generated composition and original PNG retained.",
+      "files": [
+        {
+          "path": "public/art/quill-terms.jpg",
+          "width": 600,
+          "height": 800,
+          "bytes": 118711,
+          "sha256": "01ebe6e2f28963db00606d3254688e3fe831f5b55ae7d2cb565a35533fda4f7b"
+        }
+      ]
+    },
+    {
+      "id": "asa-dispatch",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/generated_images/exec-3f38d645-8c87-48b7-a1e1-4840a19f3a2f.png",
+      "sourceSha256": "3d35980af53964f90b681d12a67835fa4208bde69437d0258d44ef37a2a73d4e",
+      "sourceWidth": 1536,
+      "sourceHeight": 1024,
+      "referenceFiles": [
+        "public/art/asa.jpg",
+        "public/art/freight.jpg"
+      ],
+      "referenceSha256": {
+        "public/art/asa.jpg": "cfe27e12f9b683a5178ce74bb4ca6634a1a7eca79df84c539d1504fc396d4fdf",
+        "public/art/freight.jpg": "50f7060ce80a77fe92fe11258527dd7e25d8a08d13db6604067306eaa2d2580f"
+      },
+      "promptSummary": "Closer character-led Asa freight briefing: same androgynous adult courier, short dark curls, freckles, rust scarf and worn coat, touching the red seal of the closed cooling case at the established sheltered canal dispatch table. Waist-up eye-level3:2composition, full hands/case, amber lamp and petroleum-blue rain. No accepted contract, handover, receipt, delivery, treatment, clearance or patient identities; no legible text or UI.",
+      "deliveryProcessing": "Resize and JPEG encode only; complete generated composition and original PNG retained.",
+      "files": [
+        {
+          "path": "public/art/asa-dispatch.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 255931,
+          "sha256": "c2629fb0e03e49efe511e7573253cd51df18caeb39c053c638186b1d7fe06b86"
+        },
+        {
+          "path": "public/art/asa-dispatch-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 76822,
+          "sha256": "a3f0966108d39152ac1b2829528df8996aaa93fdcd35a110d8d905cc2a65a6f0"
+        }
+      ]
     }
   ]
 }

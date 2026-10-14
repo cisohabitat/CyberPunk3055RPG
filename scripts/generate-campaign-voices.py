@@ -4,7 +4,7 @@ Usage: python scripts/generate-campaign-voices.py --model PATH --voices PATH.
 Existing 101 WAV files are never rewritten. New clips use MP3 delivery, with PCM
 masters and normalized PCM intermediates retained outside the repository.
 """
-import argparse, hashlib, json, pathlib, subprocess, wave
+import argparse, datetime, hashlib, json, pathlib, subprocess, wave
 import numpy as np
 import onnxruntime as ort
 ort.disable_telemetry_events()
@@ -31,7 +31,7 @@ def write(path,samples,rate):
   out.setnchannels(1);out.setsampwidth(2);out.setframerate(rate);out.writeframes((np.clip(samples,-1,1)*32767).astype('<i2').tobytes())
 for line in lines:
  id=line['id'];target=root/'public/audio'/f'{id}.mp3'
- if id in records and target.exists() and all(records[id].get(k)==line.get(k) for k in ['text','speaker','voice','speed','segments']) and sha(target)==records[id]['sha256']:
+ if id in records and target.exists() and all(records[id].get(k)==line.get(k) for k in ['text','speaker','voice','speed','segments','loudnessLufs']) and sha(target)==records[id]['sha256']:
   print(json.dumps({'id':id,'retained':True}),flush=True);continue
  pieces=[];parts=line.get('segments',[{'text':line['text'],'pauseAfter':0}])
  assert ' '.join(p['text'] for p in parts)==line['text']
@@ -45,9 +45,35 @@ for line in lines:
  master=masters/f'{id}.wav';write(master,samples,rate)
  delivery=samples*(.72/np.max(np.abs(samples)));delivery=np.pad(delivery,int(rate*.08))
  pcm=masters/f'{id}-delivery.wav';write(pcm,delivery,rate)
+ if 'loudnessLufs' in line:
+  target_lufs=line['loudnessLufs'];assert -24<=target_lufs<=-18
+  measurement=subprocess.run(['ffmpeg','-hide_banner','-i',str(pcm),'-af',f'loudnorm=I={target_lufs}:TP=-2:LRA=11:print_format=json','-f','null','-'],capture_output=True,text=True,check=True).stderr
+  stats=json.JSONDecoder().raw_decode(measurement[measurement.rfind('{'):])[0]
+  settings=f"loudnorm=I={target_lufs}:TP=-2:LRA=11:measured_I={stats['input_i']}:measured_TP={stats['input_tp']}:measured_LRA={stats['input_lra']}:measured_thresh={stats['input_thresh']}:offset={stats['target_offset']}:linear=true"
+  normalized=masters/f'{id}-loudness.wav'
+  subprocess.run(['ffmpeg','-loglevel','error','-y','-i',str(pcm),'-af',settings,'-ar',str(rate),'-ac','1','-map_metadata','-1',str(normalized)],check=True)
+  normalized.replace(pcm)
  subprocess.run(['ffmpeg','-loglevel','error','-y','-i',str(pcm),'-codec:a','libmp3lame','-b:a','96k','-map_metadata','-1',str(target)],check=True)
  decoded=subprocess.run(['ffmpeg','-loglevel','error','-i',str(target),'-f','f32le','-ac','1','-ar','24000','pipe:1'],check=True,capture_output=True).stdout
  audible=np.frombuffer(decoded,dtype='<f4');assert np.isfinite(audible).all() and np.max(np.abs(audible))<.95
- records[id]={**line,'language':'en-us','path':str(target.relative_to(root)),'sourceFile':str(master),'sourceSha256':sha(master),'pcmDeliveryFile':str(pcm),'pcmDeliverySha256':sha(pcm),'sha256':sha(target),'bytes':target.stat().st_size,'sampleRate':rate,'channels':1,'durationSeconds':len(audible)/rate,'peak':float(np.max(np.abs(audible))),'rms':float(np.sqrt(np.mean(audible**2)))}
- provenance.write_text(json.dumps({'generated':'2026-10-13','disclosure':legacy['disclosure'],'driver':legacy['driver'],'model':legacy['model'],'source':'scripts/generate-campaign-voices.py','processing':'Exact authored character words; existing cast identities; optional sentence pauses, 8ms phrase fades, normalized PCM peak 0.72 with 80ms edges; 96kbps mono MP3 delivery. Original PCM and normalized PCM retained outside Git.','reviewStatus':'Technical signal and source review; stock synthetic dialogue. No commissioned actors or independent listening acceptance.','lines':list(records.values())},ensure_ascii=False,indent=2)+'\n')
+ loudness={}
+ if 'loudnessLufs' in line:
+  measurement=subprocess.run(['ffmpeg','-hide_banner','-i',str(target),'-af','loudnorm=I=-20:TP=-2:LRA=11:print_format=json','-f','null','-'],capture_output=True,text=True,check=True).stderr
+  stats=json.JSONDecoder().raw_decode(measurement[measurement.rfind('{'):])[0]
+  loudness={'integratedLufs':float(stats['input_i']),'truePeakDbtp':float(stats['input_tp'])}
+  # Match the delivered codec's measured level; retain a true-peak margin.
+  correction=min(line['loudnessLufs']-loudness['integratedLufs'],-1.6-loudness['truePeakDbtp'])
+  if abs(correction)>.15:
+   corrected=masters/f'{id}-codec-matched.wav'
+   subprocess.run(['ffmpeg','-loglevel','error','-y','-i',str(pcm),'-af',f'volume={correction}dB','-map_metadata','-1',str(corrected)],check=True)
+   corrected.replace(pcm)
+   subprocess.run(['ffmpeg','-loglevel','error','-y','-i',str(pcm),'-codec:a','libmp3lame','-b:a','96k','-map_metadata','-1',str(target)],check=True)
+   decoded=subprocess.run(['ffmpeg','-loglevel','error','-i',str(target),'-f','f32le','-ac','1','-ar','24000','pipe:1'],check=True,capture_output=True).stdout
+   audible=np.frombuffer(decoded,dtype='<f4');assert np.isfinite(audible).all() and np.max(np.abs(audible))<.95
+   measurement=subprocess.run(['ffmpeg','-hide_banner','-i',str(target),'-af','loudnorm=I=-20:TP=-2:LRA=11:print_format=json','-f','null','-'],capture_output=True,text=True,check=True).stderr
+   stats=json.JSONDecoder().raw_decode(measurement[measurement.rfind('{'):])[0]
+   loudness={'integratedLufs':float(stats['input_i']),'truePeakDbtp':float(stats['input_tp'])}
+  assert abs(loudness['integratedLufs']-line['loudnessLufs'])<=.6 and loudness['truePeakDbtp']<=-1.5
+ records[id]={**line,**loudness,'language':'en-us','path':str(target.relative_to(root)),'sourceFile':str(master),'sourceSha256':sha(master),'pcmDeliveryFile':str(pcm),'pcmDeliverySha256':sha(pcm),'sha256':sha(target),'bytes':target.stat().st_size,'sampleRate':rate,'channels':1,'durationSeconds':len(audible)/rate,'peak':float(np.max(np.abs(audible))),'rms':float(np.sqrt(np.mean(audible**2)))}
+ provenance.write_text(json.dumps({'generated':datetime.datetime.now(datetime.timezone.utc).date().isoformat(),'disclosure':legacy['disclosure'],'driver':legacy['driver'],'model':legacy['model'],'source':'scripts/generate-campaign-voices.py','processing':'Exact authored character words; existing cast identities; optional sentence pauses, 8ms phrase fades, normalized PCM peak 0.72 with 80ms edges; optional per-line two-pass EBU loudness matching with -2dBTP ceiling; 96kbps mono MP3 delivery. Original PCM and normalized PCM retained outside Git.','reviewStatus':'Technical signal and source review; stock synthetic dialogue. No commissioned actors or independent listening acceptance.','lines':list(records.values())},ensure_ascii=False,indent=2)+'\n')
  print(json.dumps({'id':id,'speaker':line['speaker'],'seconds':len(audible)/rate,'bytes':target.stat().st_size}),flush=True)

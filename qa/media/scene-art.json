@@ -28,14 +28,6 @@
     },
     {
       "treatment": "illustration",
-      "asset": "/art/freight.jpg",
-      "reason": "Establish the sealed parcel and dispatch table before any delivery or intake is observed. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
-      "scenes": [
-        "act2_freight_brief"
-      ]
-    },
-    {
-      "treatment": "illustration",
       "asset": "/art/spire-counter.jpg",
       "reason": "Establish and reuse the same service counter. Neutral papers and a sleeved receiver depict neither closure nor handover, including traced recovery. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
       "scenes": [
@@ -630,6 +622,14 @@
       "scenes": [
         "act2_middle"
       ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/asa-dispatch.jpg",
+      "reason": "Closer character-led dispatch briefing before acceptance or crossing. The intact sealed case supplies no delivery, clearance or treatment outcome.",
+      "scenes": [
+        "act2_freight_brief"
+      ]
     }
   ],
   "variants": [
@@ -700,6 +700,17 @@
         "confirmed_leak"
       ],
       "reason": "An admitted leak calls for attentive listening; it is not absolution or permission to quote another witness."
+    },
+    {
+      "speaker": "Edda",
+      "asset": "/art/edda-assignment.jpg",
+      "scenes": [
+        "act3_edda_reply"
+      ],
+      "allFlags": [
+        "edda_shift_paid"
+      ],
+      "reason": "Only an earned paid bench assignment permits Edda holding its notice beside the inquiry reference. Archive suspension and inquiry remain; no acquittal."
     }
   ],
   "speakingPortraits": [
@@ -971,6 +982,27 @@
         "ending_witness"
       ],
       "reason": "Patient attention before or after the final response; no forgiveness, completed inquiry or claimed writing action."
+    },
+    {
+      "speaker": "Kerr",
+      "asset": "/art/kerr-considering.jpg",
+      "scenes": [
+        "act2_kerr_collection_terms",
+        "act2_route_receipt",
+        "act3_kerr_collection"
+      ],
+      "reason": "Practical, reserved attention to case and private terms; earned breach expression still takes precedence. No recovery or forgiveness."
+    },
+    {
+      "speaker": "Quill",
+      "asset": "/art/quill-terms.jpg",
+      "scenes": [
+        "job_owner",
+        "why",
+        "act2_quill_introduction",
+        "act3_quill_introduction"
+      ],
+      "reason": "Direct commercial terms and bookkeeping; the earlier refusal retains its waiting expression. No cleared relationship or waived debt."
     }
   ]
 }

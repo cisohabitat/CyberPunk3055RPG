@@ -102,6 +102,8 @@ for (const id of ["memo", "mara_why"]) PORTRAIT_VARIANTS[id] = { speaker: "Mara"
 for (const id of ["act2_witness_door", "act2_witness_brief", "act3_testimony_nia"]) PORTRAIT_VARIANTS[id] = { speaker: "Nia Pell", src: "/art/nia-terms.jpg" };
 PORTRAIT_VARIANTS.act2_shelter_brief = { speaker: "Ren", src: "/art/ren-concerned.jpg" };
 for (const id of ["act3_arrival", "ending_names", "ending_quiet", "ending_witness"]) PORTRAIT_VARIANTS[id] = { speaker: "Sera", src: "/art/sera-attentive.jpg" };
+for (const id of ["act2_kerr_collection_terms", "act2_route_receipt", "act3_kerr_collection"]) PORTRAIT_VARIANTS[id] = { speaker: "Kerr", src: "/art/kerr-considering.jpg" };
+for (const id of ["job_owner", "why", "act2_quill_introduction", "act3_quill_introduction"]) PORTRAIT_VARIANTS[id] = { speaker: "Quill", src: "/art/quill-terms.jpg" };
 for (const id of ["memory_cross_exam", "memory_assurance", "memory_channel", "memory_model_test", "memory_sequence_result"]) PORTRAIT_VARIANTS[id] = { speaker: "Mara", src: "/art/mara-questioning.jpg" };
 for (const id of ["memory_model_result", "memory_publication"]) PORTRAIT_VARIANTS[id] = { speaker: "Sister Lumen", src: "/art/lumen-challenging.jpg" };
 export const PORTRAIT_STAGING = [
@@ -110,6 +112,7 @@ export const PORTRAIT_STAGING = [
   { speaker: "Kerr", asset: "/art/kerr-closed.jpg", scenes: ["act2_route_receipt", "act3_kerr_collection", "act3_kerr_collection_response", "act3_kerr_personal_question"], allFlags: ["kerr_route_private", "kerr_route_trace"], reason: "Broken private collection terms keep a closed expression even after an observed handover or acknowledgement." },
   { speaker: "Quill", asset: "/art/quill-waiting.jpg", scenes: ["act2_quill_introduction", "act3_quill_introduction"], allFlags: ["quill_refused"], reason: "The recorded postponed tab keeps Quill unsmiling; late repayment does not erase the earlier refusal." },
   { speaker: "Sera", asset: "/art/sera-listening.jpg", scenes: ["act3_arrival", "ending_witness"], allFlags: ["confirmed_leak"], reason: "An admitted leak calls for attentive listening; it is not absolution or permission to quote another witness." },
+  { speaker: "Edda", asset: "/art/edda-assignment.jpg", scenes: ["act3_edda_reply"], allFlags: ["edda_shift_paid"], reason: "Only an earned paid bench assignment permits Edda holding its notice beside the inquiry reference. Archive suspension and inquiry remain; no acquittal." },
 ] as const;
 export function portraitArt(speaker?: string, sceneId?: string, flags: Readonly<Record<string, boolean>> = {}): string | undefined {
   const conduct = PORTRAIT_STAGING.find(rule => rule.speaker === speaker && (rule.scenes as readonly string[]).includes(sceneId ?? "")
@@ -148,3 +151,4 @@ for (const id of ["ward_wall", "act3_arrival"]) ENCOUNTERS[id] = {"src": "/art/m
 for (const plate of campaignArt.plates) for (const id of plate.scenes) {
   ENCOUNTERS[id] = { src: plate.src, small: plate.small, caption: plate.caption, description: plate.description };
 }
+ENCOUNTERS.act2_freight_brief = { src: "/art/asa-dispatch.jpg", small: "/art/asa-dispatch-small.jpg", caption: "Canal freight gate · Asa sets the terms", description: "Asa, wearing a rust scarf and worn courier coat, touches the closed cooling case seal beneath the gate lamp; the case remains at dispatch." };

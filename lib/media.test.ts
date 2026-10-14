@@ -32,8 +32,8 @@ it("ships documented generated images without corrupting or enlarging their enco
 
 it("stages actual boundaries and breaches without treating help as forgiveness", () => {
   assert.equal(portraitArt("Kerr", "act3_kerr_collection", { kerr_route_private: true, kerr_route_trace: true, kerr_route_delivered: true, kerr_route_acknowledged: true }), "/art/kerr-closed.jpg");
-  assert.equal(portraitArt("Kerr", "act3_kerr_collection", { kerr_route_registered: true, kerr_route_trace: true, kerr_route_delivered: true }), "/art/kerr.jpg");
-  assert.equal(portraitArt("Kerr", "act3_kerr_collection", { kerr_route_private: true }), "/art/kerr.jpg");
+  assert.equal(portraitArt("Kerr", "act3_kerr_collection", { kerr_route_registered: true, kerr_route_trace: true, kerr_route_delivered: true }), "/art/kerr-considering.jpg");
+  assert.equal(portraitArt("Kerr", "act3_kerr_collection", { kerr_route_private: true }), "/art/kerr-considering.jpg");
   assert.equal(portraitArt("Mara", "act3_response_visit", { response_received: true }), "/art/mara.jpg");
   assert.equal(portraitArt("Mara", "act3_response_visit", { response_received: true, response_public_refused: true }), "/art/mara-boundary.jpg");
   assert.equal(portraitArt("Sister Lumen", "act3_chapel_return", { betrayed_lumen: true, chapel_shift_kept: true }), "/art/lumen-guarded.jpg");

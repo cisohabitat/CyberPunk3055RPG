@@ -191,24 +191,25 @@
     "voice": "af_alloy",
     "speed": 0.98,
     "text": "Diagnostic cartridge. Clinic stock. My manifest can't cross this gate.",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+    "direction": "Practical dispatch identification; the manifest limit remains real.",
     "segments": [
       {
         "text": "Diagnostic cartridge.",
-        "speed": 0.98,
-        "pauseAfter": 0.24
+        "speed": 0.96,
+        "pauseAfter": 0.2
       },
       {
         "text": "Clinic stock.",
-        "speed": 0.98,
-        "pauseAfter": 0.24
+        "speed": 0.96,
+        "pauseAfter": 0.25
       },
       {
         "text": "My manifest can't cross this gate.",
-        "speed": 0.98,
+        "speed": 0.94,
         "pauseAfter": 0
       }
-    ]
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-ren-849965fb2829",
@@ -309,7 +310,15 @@
     "voice": "af_alloy",
     "speed": 0.98,
     "text": "What were you trying to carry for yourself?",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions."
+    "direction": "A personal question with room to answer; keep the runner’s identity private.",
+    "segments": [
+      {
+        "text": "What were you trying to carry for yourself?",
+        "speed": 0.94,
+        "pauseAfter": 0
+      }
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-asa-4886abf2e519",
@@ -551,7 +560,7 @@
     "voice": "af_kore",
     "speed": 0.95,
     "text": "This tells us where to look. It isn't the record. My countersignature isn't the command's issuing key either.",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+    "direction": "Source precision; distinguish a lead, a record and the issuing key.",
     "segments": [
       {
         "text": "This tells us where to look.",
@@ -560,15 +569,16 @@
       },
       {
         "text": "It isn't the record.",
-        "speed": 0.95,
-        "pauseAfter": 0.24
+        "speed": 0.92,
+        "pauseAfter": 0.28
       },
       {
         "text": "My countersignature isn't the command's issuing key either.",
-        "speed": 0.95,
+        "speed": 0.93,
         "pauseAfter": 0
       }
-    ]
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-edda-d4b034abcf9f",
@@ -773,19 +783,20 @@
     "voice": "am_adam",
     "speed": 0.97,
     "text": "They have my replacement at the canal depot. Unpowered, no miracle in it.",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+    "direction": "A practical request; separate replacement equipment from any miracle.",
     "segments": [
       {
         "text": "They have my replacement at the canal depot.",
-        "speed": 0.97,
+        "speed": 0.94,
         "pauseAfter": 0.24
       },
       {
         "text": "Unpowered, no miracle in it.",
-        "speed": 0.97,
+        "speed": 0.91,
         "pauseAfter": 0
       }
-    ]
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-nia-pell-5b29f7d4a657",
@@ -949,24 +960,25 @@
     "voice": "am_adam",
     "speed": 0.97,
     "text": "My case. Your terms with the depot. Keep both names on the right paper.",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+    "direction": "Check custody and terms separately; plain, reserved acknowledgement.",
     "segments": [
       {
         "text": "My case.",
-        "speed": 0.97,
-        "pauseAfter": 0.24
+        "speed": 0.94,
+        "pauseAfter": 0.2
       },
       {
         "text": "Your terms with the depot.",
-        "speed": 0.97,
-        "pauseAfter": 0.24
+        "speed": 0.94,
+        "pauseAfter": 0.3
       },
       {
         "text": "Keep both names on the right paper.",
-        "speed": 0.97,
+        "speed": 0.92,
         "pauseAfter": 0
       }
-    ]
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-sister-lumen-605b0079cbb3",
@@ -1148,19 +1160,20 @@
     "voice": "am_adam",
     "speed": 0.97,
     "text": "Tell the wall you left it open. I don't need a finished job invented on the way down.",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+    "direction": "An unfinished errand stays unfinished; deliberate honesty, without accusation.",
     "segments": [
       {
         "text": "Tell the wall you left it open.",
-        "speed": 0.97,
-        "pauseAfter": 0.24
+        "speed": 0.93,
+        "pauseAfter": 0.32
       },
       {
         "text": "I don't need a finished job invented on the way down.",
-        "speed": 0.97,
+        "speed": 0.95,
         "pauseAfter": 0
       }
-    ]
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-sera-d9a5680cf8c7",
@@ -1196,19 +1209,20 @@
     "voice": "af_alloy",
     "speed": 0.98,
     "text": "I haven't seen a stock receipt for your case. That part is still open.",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+    "direction": "Keep an unseen receipt honestly open; patient rather than consoling.",
     "segments": [
       {
         "text": "I haven't seen a stock receipt for your case.",
-        "speed": 0.98,
-        "pauseAfter": 0.24
+        "speed": 0.95,
+        "pauseAfter": 0.3
       },
       {
         "text": "That part is still open.",
-        "speed": 0.98,
+        "speed": 0.93,
         "pauseAfter": 0
       }
-    ]
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-asa-85f28e598eb3",
@@ -1241,19 +1255,25 @@
     "voice": "af_alloy",
     "speed": 0.98,
     "text": "You left it at intake. I brought the batch reference; we can ask before calling it delivered.",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+    "direction": "Separate intake, a reference and actual delivery; invite verification.",
     "segments": [
       {
         "text": "You left it at intake.",
-        "speed": 0.98,
+        "speed": 0.96,
+        "pauseAfter": 0.23
+      },
+      {
+        "text": "I brought the batch reference;",
+        "speed": 0.95,
         "pauseAfter": 0.24
       },
       {
-        "text": "I brought the batch reference; we can ask before calling it delivered.",
-        "speed": 0.98,
+        "text": "we can ask before calling it delivered.",
+        "speed": 0.94,
         "pauseAfter": 0
       }
-    ]
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-quill-d754198511c6",
@@ -1385,19 +1405,25 @@
     "voice": "am_michael",
     "speed": 0.96,
     "text": "An introduction asks somebody else to believe my word about yours. Clear the forty first, or use the map without me.",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+    "direction": "Explain the social cost of an introduction; keep the refusal direct.",
     "segments": [
       {
         "text": "An introduction asks somebody else to believe my word about yours.",
         "speed": 0.96,
-        "pauseAfter": 0.24
+        "pauseAfter": 0.32
       },
       {
-        "text": "Clear the forty first, or use the map without me.",
-        "speed": 0.96,
+        "text": "Clear the forty",
+        "speed": 0.95,
+        "pauseAfter": 0.18
+      },
+      {
+        "text": "first, or use the map without me.",
+        "speed": 0.94,
         "pauseAfter": 0
       }
-    ]
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-quill-8187b9c40d70",
@@ -1405,24 +1431,25 @@
     "voice": "am_michael",
     "speed": 0.96,
     "text": "Paid now. Late then. Both fit on the page.",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+    "direction": "Bookkeeping with a long memory; payment and lateness occupy separate beats.",
     "segments": [
       {
         "text": "Paid now.",
-        "speed": 0.96,
-        "pauseAfter": 0.24
+        "speed": 0.95,
+        "pauseAfter": 0.23
       },
       {
         "text": "Late then.",
-        "speed": 0.96,
-        "pauseAfter": 0.24
+        "speed": 0.93,
+        "pauseAfter": 0.28
       },
       {
         "text": "Both fit on the page.",
-        "speed": 0.96,
+        "speed": 0.95,
         "pauseAfter": 0
       }
-    ]
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-quill-39284d611815",
@@ -1591,24 +1618,25 @@
     "voice": "am_michael",
     "speed": 0.96,
     "text": "Someone who pays for an original. You want Mara's reasons, ask Mara. I sell the route to the room, not an honest answer.",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+    "direction": "A practiced seller’s evasive answer; separate ownership from answers.",
     "segments": [
       {
         "text": "Someone who pays for an original.",
         "speed": 0.96,
-        "pauseAfter": 0.24
+        "pauseAfter": 0.22
       },
       {
         "text": "You want Mara's reasons, ask Mara.",
-        "speed": 0.96,
-        "pauseAfter": 0.24
+        "speed": 0.94,
+        "pauseAfter": 0.3
       },
       {
         "text": "I sell the route to the room, not an honest answer.",
-        "speed": 0.96,
+        "speed": 0.95,
         "pauseAfter": 0
       }
-    ]
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-edda-517f9439fca0",
@@ -1766,24 +1794,25 @@
     "voice": "af_kore",
     "speed": 0.95,
     "text": "One shift. Keep both papers. Don't make the first one an acquittal.",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+    "direction": "Limited earned work, ongoing inquiry; restrained relief and a firm boundary.",
     "segments": [
       {
         "text": "One shift.",
-        "speed": 0.95,
-        "pauseAfter": 0.24
+        "speed": 0.94,
+        "pauseAfter": 0.25
       },
       {
         "text": "Keep both papers.",
-        "speed": 0.95,
-        "pauseAfter": 0.24
+        "speed": 0.94,
+        "pauseAfter": 0.3
       },
       {
         "text": "Don't make the first one an acquittal.",
-        "speed": 0.95,
+        "speed": 0.92,
         "pauseAfter": 0
       }
-    ]
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-kerr-05464a5d2167",
@@ -1791,19 +1820,20 @@
     "voice": "am_adam",
     "speed": 0.97,
     "text": "You sorted somebody else's shelves for this. That's your time, not a favor I signed for.",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+    "direction": "Recognize the runner’s spent time while refusing an invented debt.",
     "segments": [
       {
         "text": "You sorted somebody else's shelves for this.",
-        "speed": 0.97,
-        "pauseAfter": 0.24
+        "speed": 0.94,
+        "pauseAfter": 0.3
       },
       {
         "text": "That's your time, not a favor I signed for.",
-        "speed": 0.97,
+        "speed": 0.92,
         "pauseAfter": 0
       }
-    ]
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-sera-bd40f64ddfb9",
@@ -1869,19 +1899,20 @@
     "voice": "af_kore",
     "speed": 0.95,
     "text": "They can find my shift from this. Taking my name off the public copy won't hide it from my employer.",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+    "direction": "A measured warning about her employer’s trace; no public anonymity claim.",
     "segments": [
       {
         "text": "They can find my shift from this.",
-        "speed": 0.95,
-        "pauseAfter": 0.24
+        "speed": 0.93,
+        "pauseAfter": 0.3
       },
       {
         "text": "Taking my name off the public copy won't hide it from my employer.",
         "speed": 0.95,
         "pauseAfter": 0
       }
-    ]
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-sister-lumen-c0bbc5b77e59",
@@ -2070,24 +2101,25 @@
     "voice": "af_kore",
     "speed": 0.95,
     "text": "They accepted the request. They haven't closed the key. Will you sit while I ask payroll?",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+    "direction": "Acknowledge a submitted request, then the missing closure; end with a personal invitation.",
     "segments": [
       {
         "text": "They accepted the request.",
         "speed": 0.95,
-        "pauseAfter": 0.24
+        "pauseAfter": 0.22
       },
       {
         "text": "They haven't closed the key.",
-        "speed": 0.95,
-        "pauseAfter": 0.24
+        "speed": 0.93,
+        "pauseAfter": 0.32
       },
       {
         "text": "Will you sit while I ask payroll?",
         "speed": 0.95,
         "pauseAfter": 0
       }
-    ]
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-edda-a8fa6fb017b5",
@@ -2964,19 +2996,20 @@
     "voice": "am_michael",
     "speed": 0.96,
     "text": "You paid what you had postponed. That settles the forty, not the rest of your night.",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+    "direction": "Acknowledge late payment precisely, without selling absolution.",
     "segments": [
       {
         "text": "You paid what you had postponed.",
-        "speed": 0.96,
-        "pauseAfter": 0.24
+        "speed": 0.95,
+        "pauseAfter": 0.3
       },
       {
         "text": "That settles the forty, not the rest of your night.",
-        "speed": 0.96,
+        "speed": 0.93,
         "pauseAfter": 0
       }
-    ]
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-quill-facb468bbd8c",

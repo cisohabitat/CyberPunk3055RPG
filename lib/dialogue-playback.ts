@@ -1,6 +1,6 @@
 import { playVoice, type VoiceStatus } from "./sound";
 
-type Line = { key: string; id: string };
+type Line = { key: string; id: string; speaker?: string };
 type View = { status: VoiceStatus; key?: string };
 type Player = typeof playVoice;
 
@@ -18,6 +18,7 @@ export class DialoguePlayback {
   private generation = 0;
   private busy = false;
   private replay: string[] | null = null;
+  private previousSpeaker?: string;
 
   constructor(private report: (view: View) => void, private player: Player = playVoice) {}
 
@@ -31,16 +32,23 @@ export class DialoguePlayback {
     if (!this.busy && automatic) this.schedule();
   }
 
-  private schedule() {
+  private schedule(afterNaturalEnd = false) {
     if (!this.enabled || this.busy) return;
     const next = this.replay ? this.replay.shift() : this.automatic ? this.lines.find(line => !this.consumed.has(line.key))?.key : undefined;
     if (!next) { this.replay = null; return; }
     this.busy = true;
+    this.current = next;
     const generation = this.generation;
+    const speaker = this.lines.find(line => line.key === next)?.speaker;
+    const pause = afterNaturalEnd && speaker && this.previousSpeaker
+      ? speaker === this.previousSpeaker ? 120 : 220 : 0;
+    // Keep Stop available during the breath between lines, without claiming an
+    // actor is audible. Cancellation consumes this pending start like a load.
+    if (pause) this.report({ status: "loading", key: next });
     this.timer = setTimeout(() => {
       this.timer = undefined;
       if (generation === this.generation && this.enabled) this.start(next, true);
-    }, 0);
+    }, pause);
   }
 
   private start(key: string, sequence: boolean) {
@@ -53,8 +61,9 @@ export class DialoguePlayback {
     }, outcome => {
       if (generation !== this.generation) return;
       this.cancel = undefined; this.busy = false; this.current = undefined;
+      this.previousSpeaker = line.speaker;
       this.report({ status: outcome === "unavailable" ? "unavailable" : "idle", key: sequence ? this.preferred : key });
-      if (sequence) this.schedule();
+      if (sequence) this.schedule(outcome === "ended");
     });
   }
 
@@ -63,6 +72,7 @@ export class DialoguePlayback {
     ++this.generation; clearTimeout(this.timer); this.timer = undefined;
     this.cancel?.(); this.cancel = undefined; this.current = undefined;
     this.busy = false; this.replay = null;
+    this.previousSpeaker = undefined;
     for (const line of this.lines) this.consumed.add(line.key);
     this.report({ status: "idle", key: this.preferred });
   }
@@ -79,5 +89,6 @@ export class DialoguePlayback {
   dispose() {
     ++this.generation; clearTimeout(this.timer); this.cancel?.();
     this.cancel = undefined; this.busy = false; this.replay = null;
+    this.previousSpeaker = undefined;
   }
 }

@@ -27,7 +27,7 @@ it("revises exactly the reviewed performances without changing quotation, actor 
 });
 
 it("stages reviewed expressions only for the actual actor and keeps earned conduct expressions", () => {
-  assert.deepEqual(decisions.expressionPortraits, staging.portraits);
+  assert.deepEqual(decisions.expressionPortraits.filter(entry => staging.portraits.some(previous => previous.asset === entry.asset)), staging.portraits);
   assert.equal(staging.portraits.length, 4);
   for (const entry of staging.portraits) for (const scene of entry.scenes) {
     assert.equal(portraitArt(entry.speaker, scene), entry.asset);
