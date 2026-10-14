@@ -159,7 +159,7 @@
   },
   {
     "key": "e76d9ed2d05532e7",
-    "id": "voice-mara-revelation",
+    "id": "voice-campaign-mara-revelation-performance",
     "scene": "memo",
     "sceneSpeaker": "Mara",
     "speaker": "Mara",
@@ -169,7 +169,7 @@
   },
   {
     "key": "92c703f59f056e92",
-    "id": "voice-mara-mara-why",
+    "id": "voice-campaign-mara-why-performance",
     "scene": "mara_why",
     "sceneSpeaker": "Mara",
     "speaker": "Mara",
@@ -1041,7 +1041,7 @@
   },
   {
     "key": "0ad5db4e7191b2d9",
-    "id": "voice-nia-act2-witness-brief",
+    "id": "voice-campaign-nia-terms-performance",
     "scene": "act2_witness_brief",
     "sceneSpeaker": "Nia Pell",
     "speaker": "Nia Pell",
@@ -1225,7 +1225,7 @@
   },
   {
     "key": "9c70837140d53b37",
-    "id": "voice-sera-names",
+    "id": "voice-campaign-sera-names-performance",
     "scene": "ending_names",
     "sceneSpeaker": "Sera",
     "speaker": "Sera",
@@ -1976,7 +1976,7 @@
   },
   {
     "key": "3f27d4ba1440db2f",
-    "id": "voice-lumen-boundary",
+    "id": "voice-campaign-lumen-boundary-performance",
     "scene": "act3_lumen_boundary",
     "sceneSpeaker": "Sister Lumen",
     "speaker": "Sister Lumen",

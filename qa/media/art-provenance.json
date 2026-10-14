@@ -1670,6 +1670,90 @@
           "sha256": "122511a1d0f393c1d838d6768407b3784c89cde1602ebc07d0d50f14210d2599"
         }
       ]
+    },
+    {
+      "id": "mara-remorse",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/generated_images/exec-af83027e-b8e2-4e34-babb-b96ca8889369.png",
+      "sourceSha256": "8aac6cb56754a6631a43466443a52b354c1e2986ee2fb69e959911b090f8b577",
+      "referenceFiles": [
+        "public/art/mara.jpg"
+      ],
+      "promptSummary": "Identity-preserving expression edit. Recorded admission and remorse; no present-day forgiveness or new permission.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/mara-remorse.jpg",
+          "width": 600,
+          "height": 800,
+          "bytes": 105232,
+          "sha256": "d2761bc9d1b617b1e4d04adf4683f4fbb4ea92a455eff1b4c277da6ffdc0f936"
+        }
+      ]
+    },
+    {
+      "id": "nia-terms",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/generated_images/exec-0167db5a-528d-4e1d-9169-af6aed4a22d0.png",
+      "sourceSha256": "e0a2424b51a9319cce8a29da15469e0cbe31386555810da272f49e14143ee65b",
+      "referenceFiles": [
+        "public/art/nia.jpg"
+      ],
+      "promptSummary": "Identity-preserving expression edit. Calm testimony and contact terms; no rescue, gratitude or recording permission supplied by the picture.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/nia-terms.jpg",
+          "width": 600,
+          "height": 800,
+          "bytes": 92653,
+          "sha256": "071948e154bbd6e521c4125611127b0c8b3fe11da11324bf056792ef9700f96e"
+        }
+      ]
+    },
+    {
+      "id": "ren-concerned",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/generated_images/exec-1fca5299-4636-475f-9c69-ff8e5786297b.png",
+      "sourceSha256": "56224329c84f2891df0f5859601748e0b5e747e23755787b87e7a98600d28bf2",
+      "referenceFiles": [
+        "public/art/ren-portrait.jpg"
+      ],
+      "promptSummary": "Identity-preserving expression edit. Practical concern about her father and the ramp; no completed repair or relocation.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/ren-concerned.jpg",
+          "width": 600,
+          "height": 800,
+          "bytes": 144557,
+          "sha256": "ed2abb2f1406b47b66a782655e01df5b4a8caaaa027141c7c2b02e4d5b94f814"
+        }
+      ]
+    },
+    {
+      "id": "sera-attentive",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/generated_images/exec-61a74682-8ec1-4b59-8e1b-0bf54c082125.png",
+      "sourceSha256": "16b9e421794f075d250a748aa7612a4212f65389e83501eeeee7a8e417b1b2e2",
+      "referenceFiles": [
+        "public/art/sera.jpg"
+      ],
+      "promptSummary": "Identity-preserving expression edit. Patient attention before or after the final response; no forgiveness, completed inquiry or claimed writing action.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/sera-attentive.jpg",
+          "width": 600,
+          "height": 800,
+          "bytes": 159234,
+          "sha256": "a5a6399fa6e6e924b7f97eda2b75d83895ef2500783c52ba5ddfd97b0119ed4a"
+        }
+      ]
     }
   ]
 }

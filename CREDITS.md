@@ -61,3 +61,9 @@ Two additional generated character illustrations show the stallholder at her cou
 ### Actual speaker portraits (13 October 2026)
 
 Five original generated portraits accompany Ren Calder, the stallholder, the clinic dispatcher, the Ward Nine mechanic and the masked maintenance attendant. Ren and the stallholder use their existing generated scene art as continuity references; the other three use the existing orderly portrait for painted style only and depict distinct fictional people. PNG masters are retained outside Git; 600×800 JPEG deliveries resize/encode only. `qa/media/art-provenance.json` records sources, references and hashes. `qa/media/speaker-presentation.json` explicitly maps all fifteen actors to reviewed art and locks every existing voice delivery; no new audio or individual voice clone is introduced. Generated candidates remain subject to independent visual/rights acceptance.
+
+## Pivotal performance and expression cycle
+
+Four generated expression portraits preserve the established identities of Mara, Nia, Ren and Sera. Original PNGs, reference JPEGs, delivery hashes and scene rationales are recorded in `qa/media/art-provenance.json` and `qa/media/dialogue-staging.json`. Resizing and JPEG encoding are the only delivery transformations. Existing Lumen staging remains.
+
+Fourteen revised fixed character deliveries retain the established licensed Kokoro stock styles and authored wording. Five new MP3s replace active legacy WAV performances while retaining all 101 preceding WAV files. Nine MP3 performances receive revised phrase timing; preceding copies and hashes are retained for comparison. No actor commission, runtime synthesis, player-text speech or voice cloning is introduced. Models, driver and licensing remain recorded in the voice provenance files.

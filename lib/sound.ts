@@ -24,6 +24,7 @@ let speaking = false;
 const buses = new Map<string, GainNode>();
 const cache = new Map<string, AudioBuffer>();
 const loading = new Map<string, Promise<AudioBuffer>>();
+let titleRequest: AbortController | null = null;
 const CACHE_BYTES = 24 * 1024 * 1024;
 const live = new Map<AudioBufferSourceNode, AudioSource>();
 
@@ -34,23 +35,6 @@ export function unlockAudio() {
     const audio = context();
     if (audio.state !== "running" && audio.state !== "closed") void audio.resume().catch(() => {});
   } catch { /* Unsupported audio must never block play. */ }
-}
-/** Autoplay may be suspended until a gesture; do not fetch the menu track yet. */
-export function whenAudioRunning(onRunning: () => void): () => void {
-  try {
-    const audio = context();
-    let active = true;
-    const check = () => {
-      if (active && audio.state === "running") {
-        active = false;
-        audio.removeEventListener("statechange", check);
-        onRunning();
-      }
-    };
-    audio.addEventListener("statechange", check);
-    unlockAudio(); check();
-    return () => { active = false; audio.removeEventListener("statechange", check); };
-  } catch { return () => {}; }
 }
 function bus(channel: keyof typeof mix) {
   const audio = context();
@@ -73,18 +57,30 @@ export function setAudioMix(value: Pick<Preferences, "music" | "ambience" | "eff
 async function load(name: string) {
   const cached = cache.get(name); if (cached) { cache.delete(name); cache.set(name, cached); return cached; }
   const request = loading.get(name); if (request) return request;
+  const controller = name === TITLE_MUSIC.name ? new AbortController() : undefined;
+  if (controller) titleRequest = controller;
   const pending = (async () => {
     const extension = name.startsWith("voice-campaign-") ? "mp3" : name === TITLE_MUSIC.name ? TITLE_MUSIC.extension : name === "theme" || name.startsWith("theme-") || name.startsWith("ambience-") ? "flac" : "wav";
-    const response = await fetch(`/audio/${name}.${extension}`);
+    const response = await fetch(`/audio/${name}.${extension}`, { signal: controller?.signal });
     if (!response.ok) throw new Error("Audio unavailable");
     const buffer = await context().decodeAudioData(await response.arrayBuffer());
+    if (controller?.signal.aborted) throw new Error("Menu audio cancelled");
     cache.set(name, buffer);
     let bytes = 0; for (const value of cache.values()) bytes += value.length * value.numberOfChannels * 4;
     for (const [key, value] of cache) { if (bytes <= CACHE_BYTES) break; cache.delete(key); bytes -= value.length * value.numberOfChannels * 4; }
     return buffer;
   })();
   loading.set(name, pending);
-  try { return await pending; } finally { loading.delete(name); }
+  try { return await pending; } finally {
+    if (loading.get(name) === pending) loading.delete(name);
+    if (controller && titleRequest === controller) titleRequest = null;
+  }
+}
+/** Release obsolete menu network work before the document is hidden/unloaded.
+ * Normal gameplay handoff can still finish and cache a menu download. */
+export function cancelPendingMenuAudio() {
+  titleRequest?.abort(); titleRequest = null;
+  loading.delete(TITLE_MUSIC.name);
 }
 function source(buffer: AudioBuffer, channel: keyof typeof mix, level: number, loop: boolean) {
   const audio = context(); const node = audio.createBufferSource(); const gain = audio.createGain();

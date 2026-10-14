@@ -26,7 +26,7 @@ test("fresh preferences show the whole scene and speak once; Stop survives dialo
   await open(page); const before = await saved(page);
   await expect(page.getByTestId("show-rest")).toHaveCount(0);
   await expect(page.getByTestId("scene-text")).toContainText("I signed the coolant dump");
-  await expect.poll(() => speech(page)).toEqual(["voice-mara-revelation.wav"]);
+  await expect.poll(() => speech(page)).toEqual(["voice-campaign-mara-revelation-performance.mp3"]);
   await page.getByRole("button", { name: "Stop line", exact: true }).click();
   await page.getByRole("button", { name: "Settings", exact: true }).click();
   await expect(page.getByLabel("Sound enabled", { exact: true })).toBeChecked();
@@ -36,10 +36,10 @@ test("fresh preferences show the whole scene and speak once; Stop survives dialo
   await page.evaluate(() => window.dispatchEvent(new PageTransitionEvent("pagehide", { persisted: true })));
   await page.getByRole("button", { name: "Resume sound", exact: true }).click();
   await expect(page.getByRole("button", { name: "Listen to Mara", exact: true })).toBeVisible();
-  expect(await speech(page)).toEqual(["voice-mara-revelation.wav"]); expect(await saved(page)).toBe(before);
+  expect(await speech(page)).toEqual(["voice-campaign-mara-revelation-performance.mp3"]); expect(await saved(page)).toBe(before);
   await page.getByTestId("choice-heard").click();
   await expect(page.getByTestId("show-rest")).toHaveCount(0);
-  await expect.poll(() => speech(page)).toEqual(["voice-mara-revelation.wav", "voice-mara-mara-why.wav"]);
+  await expect.poll(() => speech(page)).toEqual(["voice-campaign-mara-revelation-performance.mp3", "voice-campaign-mara-why-performance.mp3"]);
 });
 
 test("automatic voice completes naturally, releases its buffer and permits explicit replay", async ({ page }) => {
@@ -83,24 +83,24 @@ for (const preferences of [{ sound: false }, { voices: 0 }, { autoVoices: false 
 
 test("leaving during automatic loading cancels the late voice and preserves the next scene", async ({ page }) => {
   let release!: () => void; const gate = new Promise<void>(resolve => { release = resolve; });
-  await page.route("**/audio/voice-mara-revelation.wav", async route => { const response = await route.fetch(); await gate; await route.fulfill({ response }); });
+  await page.route("**/audio/voice-campaign-mara-revelation-performance.mp3", async route => { const response = await route.fetch(); await gate; await route.fulfill({ response }); });
   await open(page, { reading: "all" });
   await expect(page.getByTestId("voice-line")).toContainText("Loading selected dialogue");
   await page.getByTestId("choice-heard").click(); release();
-  await expect.poll(async () => (await audio(page)).decoded).toContain("voice-mara-revelation.wav");
-  await expect.poll(() => speech(page)).toEqual(["voice-mara-mara-why.wav"]);
+  await expect.poll(async () => (await audio(page)).decoded).toContain("voice-campaign-mara-revelation-performance.mp3");
+  await expect.poll(() => speech(page)).toEqual(["voice-campaign-mara-why-performance.mp3"]);
   expect(JSON.parse((await saved(page))!).sceneId).toBe("mara_why");
 });
 
 test("missing automatic voice leaves readable text, a retry and working story choices", async ({ page }) => {
-  await page.route("**/audio/voice-mara-revelation.wav", route => route.abort());
+  await page.route("**/audio/voice-campaign-mara-revelation-performance.mp3", route => route.abort());
   await open(page, { reading: "all" }); const before = await saved(page);
   await expect(page.getByTestId("voice-line")).toContainText("Voice unavailable");
   await expect(page.getByTestId("scene-text")).toContainText("I signed the coolant dump");
   expect(await saved(page)).toBe(before);
-  await page.unroute("**/audio/voice-mara-revelation.wav");
+  await page.unroute("**/audio/voice-campaign-mara-revelation-performance.mp3");
   await page.getByRole("button", { name: "Listen to Mara", exact: true }).click();
-  await expect.poll(() => speech(page)).toEqual(["voice-mara-revelation.wav"]);
+  await expect.poll(() => speech(page)).toEqual(["voice-campaign-mara-revelation-performance.mp3"]);
   await page.getByTestId("choice-heard").click();
   expect(JSON.parse((await saved(page))!).flags.heard_memo).toBe(true);
 });

@@ -39,7 +39,7 @@ it("stages actual boundaries and breaches without treating help as forgiveness",
   assert.equal(portraitArt("Sister Lumen", "act3_chapel_return", { betrayed_lumen: true, chapel_shift_kept: true }), "/art/lumen-guarded.jpg");
   assert.equal(portraitArt("Quill", "act3_quill_introduction", { quill_refused: true, quill_repaid_late: true }), "/art/quill-waiting.jpg");
   assert.equal(portraitArt("Sera", "ending_witness", { confirmed_leak: true }), "/art/sera-listening.jpg");
-  assert.equal(portraitArt("Sera", "ending_names", { confirmed_leak: true }), "/art/sera.jpg");
+  assert.equal(portraitArt("Sera", "ending_names", { confirmed_leak: true }), "/art/sera-attentive.jpg");
   for (const speaker of ["Mara", "Kerr", "Quill", "Sera", "Sister Lumen"]) assert.equal(portraitArt(speaker, "unknown_scene", { response_public_refused: true, betrayed_lumen: true, kerr_route_private: true, kerr_route_trace: true }), portraitArt(speaker));
 });
 

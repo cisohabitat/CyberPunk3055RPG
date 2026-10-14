@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13",
+  "generated": "2026-10-14",
   "disclosure": "Stock synthetic voices generated offline with Kokoro v1.0; no actor session or individual voice clone was commissioned. Only the fixed authored quotations below are rendered. No model or speech service ships in the game.",
   "driver": {
     "name": "kokoro-onnx",
@@ -758,32 +758,32 @@
       "voice": "af_jessica",
       "speed": 0.97,
       "text": "We can walk. My father needs the ramp, not the stairs.",
-      "direction": "Ren Calder, an adult woman resident: conversational, firm and grounded; family grief without melodrama. Preserve every authored word and explicit uncertainty.",
+      "direction": "Practical concern for her father; steady, clear emphasis on the ramp. Preserve exact words and established stock voice; no narration or new permission.",
       "segments": [
         {
           "text": "We can walk.",
-          "speed": 0.97,
-          "pauseAfter": 0.24
+          "speed": 0.98,
+          "pauseAfter": 0.34
         },
         {
           "text": "My father needs the ramp, not the stairs.",
-          "speed": 0.97,
+          "speed": 0.93,
           "pauseAfter": 0
         }
       ],
       "language": "en-us",
       "path": "public/audio/voice-campaign-ren-7acf21262f21.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-ren-7acf21262f21.wav",
-      "sourceSha256": "a6509d8f48797574980e2345cd91f69f43eea433e587682b35b634ca7bd1c1ae",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-ren-7acf21262f21-delivery.wav",
-      "pcmDeliverySha256": "9d9f0f5c3262bc6ebb1917cfd06e57122a1a2140356ac2e4bd4288128f9bb678",
-      "sha256": "b3131099ce86253eb04e2f5162898b875ce0dfc75a852a2d83f5d9377696cfb8",
-      "bytes": 52460,
+      "sourceFile": "/workspace/generated_audio/dialogue-staging/voice-campaign-ren-7acf21262f21.wav",
+      "sourceSha256": "8476a52def601f8656ebdad703a9e155b6f2c1eea3077004499bef01d165cbfe",
+      "pcmDeliveryFile": "/workspace/generated_audio/dialogue-staging/voice-campaign-ren-7acf21262f21-delivery.wav",
+      "pcmDeliverySha256": "14d09f04c0af62e74745a7766dcb08b5bf3c5f6ae2f098f268e42100a4da9d9f",
+      "sha256": "adad8163f05240ecb3d1b60615e80a171de679c177e079a60158c3752dfe9693",
+      "bytes": 54476,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 4.292666666666666,
-      "peak": 0.6831581592559814,
-      "rms": 0.06696800887584686
+      "durationSeconds": 4.448,
+      "peak": 0.6840230822563171,
+      "rms": 0.06596742570400238
     },
     {
       "id": "voice-campaign-ren-88411fc0eaa0",
@@ -920,37 +920,37 @@
       "voice": "af_sarah",
       "speed": 0.96,
       "text": "I could have waited for the exit count. Waiting would have put my name on the delay. I told myself a crew assignment was enough.",
-      "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "direction": "Own the unchosen delay, then expose the rationalization without defensiveness. Preserve exact words and established stock voice; no narration or new permission.",
       "segments": [
         {
           "text": "I could have waited for the exit count.",
-          "speed": 0.96,
-          "pauseAfter": 0.24
+          "speed": 0.91,
+          "pauseAfter": 0.35
         },
         {
           "text": "Waiting would have put my name on the delay.",
-          "speed": 0.96,
-          "pauseAfter": 0.24
+          "speed": 0.94,
+          "pauseAfter": 0.4
         },
         {
           "text": "I told myself a crew assignment was enough.",
-          "speed": 0.96,
+          "speed": 0.89,
           "pauseAfter": 0
         }
       ],
       "language": "en-us",
       "path": "public/audio/voice-campaign-mara-1b139c158594.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-mara-1b139c158594.wav",
-      "sourceSha256": "a16e9d0ce76e4c6404153db482edcd0406a6b980b0da69d7e8dc086a5f1b1f54",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-mara-1b139c158594-delivery.wav",
-      "pcmDeliverySha256": "726ddd793bba52c34b19fbec0e9e5af942e6c9e5d9e5aacb1644f4eb1e9faac4",
-      "sha256": "34ee03e23b743c1e797e58ea48ccbb00715ea18af89fdebe0deeea3fd2d9c051",
-      "bytes": 95084,
+      "sourceFile": "/workspace/generated_audio/dialogue-staging/voice-campaign-mara-1b139c158594.wav",
+      "sourceSha256": "151569688998048020a41db029d63791b47e46f4accfbd25b031eeac8c394e35",
+      "pcmDeliveryFile": "/workspace/generated_audio/dialogue-staging/voice-campaign-mara-1b139c158594-delivery.wav",
+      "pcmDeliverySha256": "26e6d55513a7aa70ee8b865839f16ef00082e7fd385ac61fa7458f743be16995",
+      "sha256": "37f7f0e9b59ed466fc86911578884d96e72472a7d46410db955723d8c78b74e1",
+      "bytes": 102572,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 7.828625,
-      "peak": 0.6790382862091064,
-      "rms": 0.060542479157447815
+      "durationSeconds": 8.459958333333333,
+      "peak": 0.686979353427887,
+      "rms": 0.07015174627304077
     },
     {
       "id": "voice-campaign-mara-ed6c9a89a527",
@@ -1673,32 +1673,32 @@
       "voice": "af_bella",
       "speed": 0.95,
       "text": "She agreed to record it. That wasn't permission for every public use.",
-      "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "direction": "Separate recording from public permission, attentive rather than accusatory. Preserve exact words and established stock voice; no narration or new permission.",
       "segments": [
         {
           "text": "She agreed to record it.",
-          "speed": 0.95,
-          "pauseAfter": 0.24
+          "speed": 0.97,
+          "pauseAfter": 0.36
         },
         {
           "text": "That wasn't permission for every public use.",
-          "speed": 0.95,
+          "speed": 0.92,
           "pauseAfter": 0
         }
       ],
       "language": "en-us",
       "path": "public/audio/voice-campaign-sera-ab673ed27369.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-sera-ab673ed27369.wav",
-      "sourceSha256": "45fc92486d30c266e7196d2fc57f7e0be5d91da984f7bb2e607b6b1d008df576",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-sera-ab673ed27369-delivery.wav",
-      "pcmDeliverySha256": "f36c276e2e6601d4d7933117e0ae736f915202612bfb65aabfb6a2784a7a252d",
-      "sha256": "f1ff2a25414df69cc34b972fc3d7aa9bee99938129580c061d0834fba34f3fa2",
-      "bytes": 55340,
+      "sourceFile": "/workspace/generated_audio/dialogue-staging/voice-campaign-sera-ab673ed27369.wav",
+      "sourceSha256": "93cbfc69dcfaa52e05d1295d5663885c844fab6785f7901863caec64f6d0e92e",
+      "pcmDeliveryFile": "/workspace/generated_audio/dialogue-staging/voice-campaign-sera-ab673ed27369-delivery.wav",
+      "pcmDeliverySha256": "ae3cfb89d7389dac92719a46da6319c69ab45cdd5cabf361152ddd67ad837cdc",
+      "sha256": "dcf495058b3624bfc578c6d66dbb0b313e96249b88a9deafecc295c360aa78e7",
+      "bytes": 57068,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 4.520666666666667,
-      "peak": 0.6820055246353149,
-      "rms": 0.09788020700216293
+      "durationSeconds": 4.660666666666667,
+      "peak": 0.6876375079154968,
+      "rms": 0.09108173847198486
     },
     {
       "id": "voice-campaign-sera-4265e1807135",
@@ -1706,20 +1706,27 @@
       "voice": "af_bella",
       "speed": 0.95,
       "text": "One at a time,",
-      "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "direction": "A quiet patient invitation; no theatrical closure. Preserve exact words and established stock voice; no narration or new permission.",
+      "segments": [
+        {
+          "text": "One at a time,",
+          "speed": 0.92,
+          "pauseAfter": 0
+        }
+      ],
       "language": "en-us",
       "path": "public/audio/voice-campaign-sera-4265e1807135.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-sera-4265e1807135.wav",
-      "sourceSha256": "7632545d93bd709dab0b600feec62a408f107aebcf68e2d39691ac396d035aee",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-sera-4265e1807135-delivery.wav",
-      "pcmDeliverySha256": "429f1fa52573cddf8003b26683f7a7781098f959ff23843176a0e66e092277bc",
-      "sha256": "b0953083abcae62bdd26a8b4eb948260a676ce7245159b97effbc12cffe1799d",
-      "bytes": 15884,
+      "sourceFile": "/workspace/generated_audio/dialogue-staging/voice-campaign-sera-4265e1807135.wav",
+      "sourceSha256": "751bd5f741e89ee3fda367932b2c70e0f48e78718e2aa0aa498988110f270488",
+      "pcmDeliveryFile": "/workspace/generated_audio/dialogue-staging/voice-campaign-sera-4265e1807135-delivery.wav",
+      "pcmDeliverySha256": "4fec36fbc4f23b852cc649c95840581b92a4568de337d6b18036066d9da34fd3",
+      "sha256": "10e6e8f583334022940cb64f7d8fbff6c8a601d52ebc61c176ab2ce9d5b6c857",
+      "bytes": 16172,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 1.248,
-      "peak": 0.6841698884963989,
-      "rms": 0.0955461859703064
+      "durationSeconds": 1.2693333333333334,
+      "peak": 0.6841624975204468,
+      "rms": 0.09268825501203537
     },
     {
       "id": "voice-campaign-kerr-f91cd82e5369",
@@ -3384,32 +3391,37 @@
       "voice": "af_bella",
       "speed": 0.95,
       "text": "You agreed to pause questions. A hearing isn't an exception.",
-      "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions. Word-clarity pass: articulate consonants and limits at a measured pace; preserve exact wording.",
+      "direction": "Keep the agreed pause intact; retain the previously slower word-clarity pass. Preserve exact words and established stock voice; no narration or new permission.",
       "segments": [
         {
-          "text": "You agreed to pause questions.",
-          "speed": 0.87,
-          "pauseAfter": 0.24
+          "text": "You agreed",
+          "speed": 0.95,
+          "pauseAfter": 0.12
+        },
+        {
+          "text": "to pause questions.",
+          "speed": 0.89,
+          "pauseAfter": 0.38
         },
         {
           "text": "A hearing isn't an exception.",
-          "speed": 0.87,
+          "speed": 0.88,
           "pauseAfter": 0
         }
       ],
       "language": "en-us",
       "path": "public/audio/voice-campaign-sera-bd40f64ddfb9.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-sera-bd40f64ddfb9.wav",
-      "sourceSha256": "110bbd0cfe4984ea0145ea5c40375e228d73866c0c4596589b8a9377fc49c477",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-sera-bd40f64ddfb9-delivery.wav",
-      "pcmDeliverySha256": "faccd2e97b57cedd72d709064b9c0299d7a59fd728b9d28e87f14b72d5400d47",
-      "sha256": "ed82eef64f97b36169a35f348b227e54c47bf4d5ae184f66934e0dbbd1c7231c",
-      "bytes": 52172,
+      "sourceFile": "/workspace/generated_audio/dialogue-staging/voice-campaign-sera-bd40f64ddfb9.wav",
+      "sourceSha256": "0dff6caa699851c1af96bfd36ec14a7c4bd3f646a2da652e114267d4aa3100ad",
+      "pcmDeliveryFile": "/workspace/generated_audio/dialogue-staging/voice-campaign-sera-bd40f64ddfb9-delivery.wav",
+      "pcmDeliverySha256": "6fd895db867e9354758ff32bf8f0fc57fef9c98eb08a730ddd58a2cc884ccdc3",
+      "sha256": "4d41ae2edb855cfd0b84d05589949a7e5a6afaadd9a89f6e51db3e3643fb08b1",
+      "bytes": 60524,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 4.254666666666667,
-      "peak": 0.6805120706558228,
-      "rms": 0.08156701922416687
+      "durationSeconds": 4.964,
+      "peak": 0.6865113377571106,
+      "rms": 0.07041244953870773
     },
     {
       "id": "voice-campaign-sister-lumen-88d18fce270c",
@@ -4389,37 +4401,37 @@
       "voice": "af_sarah",
       "speed": 0.96,
       "text": "That is mine. I signed it. Don't make the tower's next decision erase the one I made.",
-      "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "direction": "A plain admission, then a firmer refusal to erase it. Preserve exact words and established stock voice; no narration or new permission.",
       "segments": [
         {
           "text": "That is mine.",
           "speed": 0.96,
-          "pauseAfter": 0.24
+          "pauseAfter": 0.28
         },
         {
           "text": "I signed it.",
-          "speed": 0.96,
-          "pauseAfter": 0.24
+          "speed": 0.89,
+          "pauseAfter": 0.4
         },
         {
           "text": "Don't make the tower's next decision erase the one I made.",
-          "speed": 0.96,
+          "speed": 0.93,
           "pauseAfter": 0
         }
       ],
       "language": "en-us",
       "path": "public/audio/voice-campaign-mara-8bce931b08e0.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-mara-8bce931b08e0.wav",
-      "sourceSha256": "348e7bf7a02888509b0aa6cb7bfb0f2326946534d67aceb44858488af0060f5f",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-mara-8bce931b08e0-delivery.wav",
-      "pcmDeliverySha256": "d60155def6d04b644456e1af8f9e0c6e41632af81c6f65cce9e21e7d4450f038",
-      "sha256": "a348a24a73b1311bdf91fc5cf96669a4936a68ae3a5d138d38ad3d565f02181b",
-      "bytes": 76364,
+      "sourceFile": "/workspace/generated_audio/dialogue-staging/voice-campaign-mara-8bce931b08e0.wav",
+      "sourceSha256": "c07746f619040fddc14d89aa6b28377235526d2b42b80fd30ad1880f00134334",
+      "pcmDeliveryFile": "/workspace/generated_audio/dialogue-staging/voice-campaign-mara-8bce931b08e0-delivery.wav",
+      "pcmDeliverySha256": "88100196eff579a9e773c5ddbdad66a2790c5f9be2124ed415d12accfec3cb77",
+      "sha256": "3bd359413b0d652d2274d2422b1705b6de10111220e4c4bad775e178aad09e14",
+      "bytes": 80972,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 6.269958333333333,
-      "peak": 0.6818934679031372,
-      "rms": 0.07048552483320236
+      "durationSeconds": 6.671916666666666,
+      "peak": 0.674956202507019,
+      "rms": 0.0691540390253067
     },
     {
       "id": "voice-campaign-ives-709c45808ce6",
@@ -4916,37 +4928,37 @@
       "voice": "af_heart",
       "speed": 0.93,
       "text": "You sold the week after walking with me. Helping with this reply doesn't make that disappear. Leave future messages at the desk; don't speak as my partner.",
-      "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "direction": "Betrayal stays explicit; measured limits rather than anger or forgiveness. Preserve exact words and established stock voice; no narration or new permission.",
       "segments": [
         {
           "text": "You sold the week after walking with me.",
           "speed": 0.93,
-          "pauseAfter": 0.24
+          "pauseAfter": 0.36
         },
         {
           "text": "Helping with this reply doesn't make that disappear.",
-          "speed": 0.93,
-          "pauseAfter": 0.24
+          "speed": 0.92,
+          "pauseAfter": 0.43
         },
         {
           "text": "Leave future messages at the desk; don't speak as my partner.",
-          "speed": 0.93,
+          "speed": 0.9,
           "pauseAfter": 0
         }
       ],
       "language": "en-us",
       "path": "public/audio/voice-campaign-sister-lumen-d22f53686c15.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-sister-lumen-d22f53686c15.wav",
-      "sourceSha256": "e18b76be4912953f64f66df493e43015b39e88389b9bcdee333823fd26654f98",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-sister-lumen-d22f53686c15-delivery.wav",
-      "pcmDeliverySha256": "ee9d5d89879f4f9488dc1c105e857bf48342742c5e959f48d0831b951dd7c7d2",
-      "sha256": "279041887c41058efb104221764ee83faa2d678a3d23a8b08f9c1060548ecdf6",
-      "bytes": 126476,
+      "sourceFile": "/workspace/generated_audio/dialogue-staging/voice-campaign-sister-lumen-d22f53686c15.wav",
+      "sourceSha256": "faf2f9065c8188c97027999b6cbed7fd92c64155870a0ceadb59b54d4d169e57",
+      "pcmDeliveryFile": "/workspace/generated_audio/dialogue-staging/voice-campaign-sister-lumen-d22f53686c15-delivery.wav",
+      "pcmDeliverySha256": "adcb39824f29d09c2e24ee917c2e0f6d20d16af271a7ea3321ff438e243c4171",
+      "sha256": "6220e6fc025da1e05db0c1676b76a4b4a7324bc4fa93b1c6efd8237895ce1746",
+      "bytes": 131660,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 10.456666666666667,
-      "peak": 0.6863331198692322,
-      "rms": 0.08193061500787735
+      "durationSeconds": 10.893333333333333,
+      "peak": 0.6817564964294434,
+      "rms": 0.07752168923616409
     },
     {
       "id": "voice-campaign-ives-7117058514fc",
@@ -5166,37 +5178,37 @@
       "voice": "af_heart",
       "speed": 0.93,
       "text": "You promised to break the hour and sold it instead. This envelope is a different act. Future messages stay at the desk; don't call me your partner.",
-      "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "direction": "Keep the broken promise beside this separate act; deliberate contact boundary. Preserve exact words and established stock voice; no narration or new permission.",
       "segments": [
         {
           "text": "You promised to break the hour and sold it instead.",
-          "speed": 0.93,
-          "pauseAfter": 0.24
+          "speed": 0.92,
+          "pauseAfter": 0.36
         },
         {
           "text": "This envelope is a different act.",
-          "speed": 0.93,
-          "pauseAfter": 0.24
+          "speed": 0.96,
+          "pauseAfter": 0.41
         },
         {
           "text": "Future messages stay at the desk; don't call me your partner.",
-          "speed": 0.93,
+          "speed": 0.9,
           "pauseAfter": 0
         }
       ],
       "language": "en-us",
       "path": "public/audio/voice-campaign-sister-lumen-1d31b215d4c0.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-sister-lumen-1d31b215d4c0.wav",
-      "sourceSha256": "82b07c184b507b569d4944311916dbb9401ea7e7beed3164e1263874ce2cfb91",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-sister-lumen-1d31b215d4c0-delivery.wav",
-      "pcmDeliverySha256": "f8204845d4a157fa7cd0306acf8683df4792d69ef2a2ec6bab5a637845f8a55a",
-      "sha256": "82a485c81d5893ef9b10d59b83e89e3ca67fd12165a4f001567f4ca3795fbbb2",
-      "bytes": 115244,
+      "sourceFile": "/workspace/generated_audio/dialogue-staging/voice-campaign-sister-lumen-1d31b215d4c0.wav",
+      "sourceSha256": "8665e8852a1053cc0d2fdb01c716f85bd08662c1a841f62ee47b01866bcac020",
+      "pcmDeliveryFile": "/workspace/generated_audio/dialogue-staging/voice-campaign-sister-lumen-1d31b215d4c0-delivery.wav",
+      "pcmDeliverySha256": "ac687f96a0fe8b73b749c52031a70ba821ba04b9f33d26edb9a3e6838f49a555",
+      "sha256": "10273d54f3b3d0d761806c4ea22523754e8a159d5268a40404ec8c99660695c6",
+      "bytes": 120140,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 9.509333333333334,
-      "peak": 0.6846981048583984,
-      "rms": 0.09658563137054443
+      "durationSeconds": 9.93125,
+      "peak": 0.6817996501922607,
+      "rms": 0.09382990747690201
     },
     {
       "id": "voice-campaign-quill-bca344313982",
@@ -5242,32 +5254,32 @@
       "voice": "af_nova",
       "speed": 0.96,
       "text": "This one answer doesn't reopen contact. Leave the pause in place.",
-      "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "direction": "One bounded answer; clear contact limit with no implied gratitude. Preserve exact words and established stock voice; no narration or new permission.",
       "segments": [
         {
           "text": "This one answer doesn't reopen contact.",
-          "speed": 0.96,
-          "pauseAfter": 0.24
+          "speed": 0.95,
+          "pauseAfter": 0.36
         },
         {
           "text": "Leave the pause in place.",
-          "speed": 0.96,
+          "speed": 0.9,
           "pauseAfter": 0
         }
       ],
       "language": "en-us",
       "path": "public/audio/voice-campaign-nia-pell-97c62dc0bb78.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-nia-pell-97c62dc0bb78.wav",
-      "sourceSha256": "085e29252e1c8ee3f09444879768aca4ae6d3c42065ac63d8a81a7f324ccc6fa",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-nia-pell-97c62dc0bb78-delivery.wav",
-      "pcmDeliverySha256": "0c1eb12f81a7ff2240cc260188008ee71490d36b375e35e3f5c2a8afdc4adfca",
-      "sha256": "d5b87d2d2646513a823396ccf3679cb83eb75a4a60ab31ca2c3d40dd0184550a",
-      "bytes": 70604,
+      "sourceFile": "/workspace/generated_audio/dialogue-staging/voice-campaign-nia-pell-97c62dc0bb78.wav",
+      "sourceSha256": "267c93cc31557277261ab26cff46c782ae1f94d2beea29c34f9dc96d95e196f9",
+      "pcmDeliveryFile": "/workspace/generated_audio/dialogue-staging/voice-campaign-nia-pell-97c62dc0bb78-delivery.wav",
+      "pcmDeliverySha256": "5621e66a8b1994e5602fabdfb6addf03862ce640ce56eadbd50759f579c18fa9",
+      "sha256": "a9908c2b27e63aa294de6485517f07cccadd476d26a32e356a9e54f957184edb",
+      "bytes": 74348,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 5.7973333333333334,
-      "peak": 0.6836071014404297,
-      "rms": 0.10814392566680908
+      "durationSeconds": 6.109333333333334,
+      "peak": 0.684414267539978,
+      "rms": 0.1084776371717453
     },
     {
       "id": "voice-campaign-kerr-35739b2889fc",
@@ -5496,6 +5508,206 @@
       "durationSeconds": 0.992,
       "peak": 0.6799808740615845,
       "rms": 0.11137788742780685
+    },
+    {
+      "id": "voice-campaign-mara-revelation-performance",
+      "speaker": "Mara",
+      "voice": "af_sarah",
+      "speed": 0.98,
+      "text": "I signed the coolant dump. Ward Nine. Three hundred on the night shift. I want that sentence to stay in my mouth.",
+      "segments": [
+        {
+          "text": "I signed",
+          "speed": 0.98,
+          "pauseAfter": 0.12
+        },
+        {
+          "text": "the coolant dump.",
+          "speed": 0.94,
+          "pauseAfter": 0.4
+        },
+        {
+          "text": "Ward Nine.",
+          "speed": 0.86,
+          "pauseAfter": 0.42
+        },
+        {
+          "text": "Three hundred on the night shift.",
+          "speed": 0.9,
+          "pauseAfter": 0.45
+        },
+        {
+          "text": "I want that sentence to stay in my mouth.",
+          "speed": 0.91,
+          "pauseAfter": 0
+        }
+      ],
+      "direction": "Accountability, not absolution; a measured admission and a held beat before the scale of loss. Preserve exact words and established stock voice; no narration or new permission.",
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-mara-revelation-performance.mp3",
+      "sourceFile": "/workspace/generated_audio/dialogue-staging/voice-campaign-mara-revelation-performance.wav",
+      "sourceSha256": "53aa9c7772eb1564d5540a6ec8fea4961fb625aa518a278d00a20a8406b51bc2",
+      "pcmDeliveryFile": "/workspace/generated_audio/dialogue-staging/voice-campaign-mara-revelation-performance-delivery.wav",
+      "pcmDeliverySha256": "153adaae7af119fa7198eeb0ef35776d1eef98cd8c3c14dbcc8a56e0d6e2232a",
+      "sha256": "c862782aa863dea10d16fa4740542283d252475332366cba2be1efc931c3af58",
+      "bytes": 114668,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 9.475916666666667,
+      "peak": 0.6899650692939758,
+      "rms": 0.07022188603878021
+    },
+    {
+      "id": "voice-campaign-mara-why-performance",
+      "speaker": "Mara",
+      "voice": "af_sarah",
+      "speed": 0.96,
+      "text": "Helion told me the dump was a flush, not a kill. I signed because the night shift was already in the building and I thought the tower would move them. They did not move them.",
+      "direction": "Careful recollection; let the final plain sentence contradict her rationalization. Preserve exact words and established stock voice; no narration or new permission.",
+      "segments": [
+        {
+          "text": "Helion told me the dump was a flush, not a kill.",
+          "speed": 0.94,
+          "pauseAfter": 0.34
+        },
+        {
+          "text": "I signed because the night shift was already in the building and I thought the tower would move them.",
+          "speed": 0.96,
+          "pauseAfter": 0.48
+        },
+        {
+          "text": "They did not move them.",
+          "speed": 0.87,
+          "pauseAfter": 0
+        }
+      ],
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-mara-why-performance.mp3",
+      "sourceFile": "/workspace/generated_audio/dialogue-staging/voice-campaign-mara-why-performance.wav",
+      "sourceSha256": "c524daf989b5781b5239e35a2d817de2bdf3470fbf266fa7d7a9b018acd652be",
+      "pcmDeliveryFile": "/workspace/generated_audio/dialogue-staging/voice-campaign-mara-why-performance-delivery.wav",
+      "pcmDeliverySha256": "3079c93b744ac075949b580ce6c57f6f3422e5fc6a5c49630a225f441031d4a6",
+      "sha256": "d329fdf65e5d6efbeeedc12082e96b84191f32cece91150a8a561aa09eade44f",
+      "bytes": 130796,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 10.801958333333333,
+      "peak": 0.6826683878898621,
+      "rms": 0.07498500496149063
+    },
+    {
+      "id": "voice-campaign-nia-terms-performance",
+      "speaker": "Nia Pell",
+      "voice": "af_nova",
+      "speed": 0.96,
+      "text": "You promised a witness. I promised nothing to a transmitter. I need care, a room they don't own, and a say in which words leave it. Can you do those separately?",
+      "direction": "Firm personal agency; distinguish her terms and let the last question remain a question. Preserve exact words and established stock voice; no narration or new permission.",
+      "segments": [
+        {
+          "text": "You promised a witness.",
+          "speed": 0.96,
+          "pauseAfter": 0.24
+        },
+        {
+          "text": "I promised nothing to a transmitter.",
+          "speed": 0.92,
+          "pauseAfter": 0.38
+        },
+        {
+          "text": "I need care, a room they don't own, and a say in which words leave it.",
+          "speed": 0.94,
+          "pauseAfter": 0.32
+        },
+        {
+          "text": "Can you do those separately?",
+          "speed": 0.96,
+          "pauseAfter": 0
+        }
+      ],
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-nia-terms-performance.mp3",
+      "sourceFile": "/workspace/generated_audio/dialogue-staging/voice-campaign-nia-terms-performance.wav",
+      "sourceSha256": "79d763965bfdc8acef82bdf5b8c3218595cc5b3beb47cd7bc03a3ef0d88ca1be",
+      "pcmDeliveryFile": "/workspace/generated_audio/dialogue-staging/voice-campaign-nia-terms-performance-delivery.wav",
+      "pcmDeliverySha256": "9fe7724bd4ccb421fdb1dfe79155551ab588e0b609025ba2760b1201ab732def",
+      "sha256": "b54abf62307a52b6ee0b2582bc0a86ba3dce476ea75f33f11aa6889104d75c0a",
+      "bytes": 152972,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 12.661333333333333,
+      "peak": 0.6852794885635376,
+      "rms": 0.09120503813028336
+    },
+    {
+      "id": "voice-campaign-lumen-boundary-performance",
+      "speaker": "Sister Lumen",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "text": "You may leave a private message at the desk. I decide whether to answer. That's all the permission I'm giving.",
+      "direction": "Calm, definite boundary; the final permission limit is deliberate, never conciliatory. Preserve exact words and established stock voice; no narration or new permission.",
+      "segments": [
+        {
+          "text": "You may leave a private message at the desk.",
+          "speed": 0.94,
+          "pauseAfter": 0.32
+        },
+        {
+          "text": "I decide whether to answer.",
+          "speed": 0.91,
+          "pauseAfter": 0.4
+        },
+        {
+          "text": "That's all the permission I'm giving.",
+          "speed": 0.9,
+          "pauseAfter": 0
+        }
+      ],
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-lumen-boundary-performance.mp3",
+      "sourceFile": "/workspace/generated_audio/dialogue-staging/voice-campaign-lumen-boundary-performance.wav",
+      "sourceSha256": "9b42fae725fe01a32b7a2f470ac0150ddbc483f4604d4fc83299d994e035a8e2",
+      "pcmDeliveryFile": "/workspace/generated_audio/dialogue-staging/voice-campaign-lumen-boundary-performance-delivery.wav",
+      "pcmDeliverySha256": "47fe1ef36a503086746fbbaddad07bc23cda49e7b85746f24d7defa945282756",
+      "sha256": "9d0d62aaee31670581742ed70b8668d5f656be77cf1a04d479b052f1b1bb9c36",
+      "bytes": 88172,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 7.258666666666667,
+      "peak": 0.6856105327606201,
+      "rms": 0.10098398476839066
+    },
+    {
+      "id": "voice-campaign-sera-names-performance",
+      "speaker": "Sera",
+      "voice": "af_bella",
+      "speed": 0.95,
+      "text": "The wall has room for a voice. It has never had room for an excuse.",
+      "direction": "Patient gravity at the wall; separate invitation from the refusal of excuses. Preserve exact words and established stock voice; no narration or new permission.",
+      "segments": [
+        {
+          "text": "The wall has room for a voice.",
+          "speed": 0.94,
+          "pauseAfter": 0.42
+        },
+        {
+          "text": "It has never had room for an excuse.",
+          "speed": 0.9,
+          "pauseAfter": 0
+        }
+      ],
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-sera-names-performance.mp3",
+      "sourceFile": "/workspace/generated_audio/dialogue-staging/voice-campaign-sera-names-performance.wav",
+      "sourceSha256": "a75d49598a05629e1b029ce3309ef3c239aaaf5d2c98d4490758eeda5faeb075",
+      "pcmDeliveryFile": "/workspace/generated_audio/dialogue-staging/voice-campaign-sera-names-performance-delivery.wav",
+      "pcmDeliverySha256": "a7b0775992adb76ab458dbd84249c4e9d9957ae4935f36f33aaaa8e70a19d761",
+      "sha256": "c10e28ce32299f61ac375bfd91417481629bb8e75b4e6fe3b223ad21142652ae",
+      "bytes": 55052,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 4.495958333333333,
+      "peak": 0.6832064390182495,
+      "rms": 0.08988907188177109
     }
   ]
 }

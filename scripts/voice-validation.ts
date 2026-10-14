@@ -46,7 +46,8 @@ async function main() {
           const saved = () => page.evaluate(() => localStorage.getItem("saint-shard-3055-v1"));
           await page.goto(url);
           // Stabilize the title decode before testing the bounded cache's replay.
-          await page.keyboard.press("Enter");
+          await expect(page.getByTestId("new-run")).toBeEnabled();
+          await keyboardActivate(page, page.getByRole("button", { name: "Show replay hints", exact: true }));
           await expect.poll(async () => (await audio()).started).toContain("theme-title.flac");
           await keyboardActivate(page, page.getByTestId("continue-run"));
           const scene = getScene(example.state.sceneId), text = sceneText(scene, example.state);

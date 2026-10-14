@@ -12,7 +12,7 @@ The initial MP3 delivery passed signal checks and Chromium playback, but WebKit 
 
 ## Player behavior
 
-- Menu music is enabled by default. A fresh title page attempts browser-authorized playback automatically and offers **Play menu music** as a fallback. When autoplay is suspended, a normal pointer or Enter/Space interaction on the title unlocks sound; the track is not fetched before the audio context can run. Saved Sound off and zero Music volume remain respected. Enabling Sound in title Settings also activates the theme. Direct New run/Continue navigation hands off without requesting a menu-only track in a browser that requires activation.
+- Menu music is enabled by default. A fresh title page starts the enabled track on a normal pointer or Enter/Space menu interaction without requiring **Play menu music**. It avoids an eager menu download before direct New run/Continue navigation. Saved Sound off and zero Music volume remain respected. Enabling Sound in title Settings also activates the theme. Direct New run/Continue navigation hands off without requesting a menu-only track in a browser that requires activation.
 - **Stop menu music** cancels playback or loading immediately. Retry remains available when the file is unavailable; New run, Continue, Saves and Settings still work.
 - The Music slider and Sound toggle use the existing mixer. Zero Music volume omits playback and directs the player to Settings. Raising that slider resumes the requested theme without activating another channel.
 - A hidden page or pagehide stops sources and requires **Resume menu music** on return. It does not replay a voice or alter a saved roll.
@@ -40,3 +40,7 @@ The corrected handoff passes 487 unit/replay checks, the production build, all f
 An additional native return-to-title check found a real suspension race: a previous scene’s pending suspend could complete after the menu requested resume, leaving a started source with a frozen audio clock. Suspension completion now resumes only when the current bed request remains enabled; a later Stop, mute or pagehide leaves that request false. The new regression requires a second title start, an advancing native AudioContext clock, unchanged saves and complete Stop cleanup after gameplay.
 
 The resume correction passes 116 focused audio/UI checks, 24 repeated cached/reloaded title-return checks and six additional native clock checks. Pointer-release activation then passes first-tap playback in Chromium/WebKit mobile emulation and 40 final title/voice checks, including full loops. The production build, TypeScript and 487 unit checks pass; saved mutes, Stop and hidden-page pause remain respected. These are browser/emulation results, not physical-device or listening acceptance.
+
+## Rapid-reload reliability update
+
+Fresh menu activation now comes from an ordinary player interaction rather than an eager context-resume callback. Pagehide/hidden-page handling aborts a pending menu fetch and prevents an aborted decode from filling the cache; identity checks keep an older cancelled request from clearing a new Resume request. Gameplay and dialogue cache behavior remain. See `docs/DIALOGUE_STAGING.md` for current verification. Earlier validation inventories above describe their historical revisions.

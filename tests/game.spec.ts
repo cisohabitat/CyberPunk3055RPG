@@ -1533,7 +1533,7 @@ test("directed audio returning to an active bed cancels a late pressure start", 
 });
 
 test("directed audio keeps available ambience and readable dialogue when music and voice fail", async ({ page }) => {
-  await observeBeds(page); await page.route("**/audio/theme-reading.flac", route => route.abort()); await page.route("**/audio/voice-mara-revelation.wav", route => route.abort());
+  await observeBeds(page); await page.route("**/audio/theme-reading.flac", route => route.abort()); await page.route("**/audio/voice-campaign-mara-revelation-performance.mp3", route => route.abort());
   await openRun(page, fixture("memo"));
   await expect.poll(async () => (await bedReview(page)).started).toContain("ambience-chapel.flac");
   await page.getByRole("button", { name: "Listen to Mara" }).click(); await expect(page.getByTestId("voice-line")).toContainText("Voice unavailable");

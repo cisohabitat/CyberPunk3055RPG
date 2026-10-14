@@ -13,7 +13,9 @@ export function VoiceLine({ line, lines, enabled, automatic, paused = false, onS
   const selectId = useId();
   const playback = useRef<DialoguePlayback | null>(null);
   if (!playback.current) playback.current = new DialoguePlayback(setView);
-  const preferred = lines.find(candidate => candidate.id === line?.id)?.key ?? lines[0]?.key;
+  const preferred = lines.find(candidate => candidate.id === line?.id)?.key
+    ?? lines.find(candidate => candidate.speaker === line?.speaker && candidate.text === line?.text)?.key
+    ?? lines[0]?.key;
   const queueKey = lines.map(candidate => candidate.key).join("|");
   useEffect(() => {
     playback.current!.update(lines, enabled, automatic, preferred);

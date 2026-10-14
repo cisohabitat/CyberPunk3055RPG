@@ -374,16 +374,16 @@
     "voice": "af_jessica",
     "speed": 0.97,
     "text": "We can walk. My father needs the ramp, not the stairs.",
-    "direction": "Ren Calder, an adult woman resident: conversational, firm and grounded; family grief without melodrama. Preserve every authored word and explicit uncertainty.",
+    "direction": "Practical concern for her father; steady, clear emphasis on the ramp. Preserve exact words and established stock voice; no narration or new permission.",
     "segments": [
       {
         "text": "We can walk.",
-        "speed": 0.97,
-        "pauseAfter": 0.24
+        "speed": 0.98,
+        "pauseAfter": 0.34
       },
       {
         "text": "My father needs the ramp, not the stairs.",
-        "speed": 0.97,
+        "speed": 0.93,
         "pauseAfter": 0
       }
     ]
@@ -458,21 +458,21 @@
     "voice": "af_sarah",
     "speed": 0.96,
     "text": "I could have waited for the exit count. Waiting would have put my name on the delay. I told myself a crew assignment was enough.",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+    "direction": "Own the unchosen delay, then expose the rationalization without defensiveness. Preserve exact words and established stock voice; no narration or new permission.",
     "segments": [
       {
         "text": "I could have waited for the exit count.",
-        "speed": 0.96,
-        "pauseAfter": 0.24
+        "speed": 0.91,
+        "pauseAfter": 0.35
       },
       {
         "text": "Waiting would have put my name on the delay.",
-        "speed": 0.96,
-        "pauseAfter": 0.24
+        "speed": 0.94,
+        "pauseAfter": 0.4
       },
       {
         "text": "I told myself a crew assignment was enough.",
-        "speed": 0.96,
+        "speed": 0.89,
         "pauseAfter": 0
       }
     ]
@@ -821,16 +821,16 @@
     "voice": "af_bella",
     "speed": 0.95,
     "text": "She agreed to record it. That wasn't permission for every public use.",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+    "direction": "Separate recording from public permission, attentive rather than accusatory. Preserve exact words and established stock voice; no narration or new permission.",
     "segments": [
       {
         "text": "She agreed to record it.",
-        "speed": 0.95,
-        "pauseAfter": 0.24
+        "speed": 0.97,
+        "pauseAfter": 0.36
       },
       {
         "text": "That wasn't permission for every public use.",
-        "speed": 0.95,
+        "speed": 0.92,
         "pauseAfter": 0
       }
     ]
@@ -841,7 +841,14 @@
     "voice": "af_bella",
     "speed": 0.95,
     "text": "One at a time,",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions."
+    "direction": "A quiet patient invitation; no theatrical closure. Preserve exact words and established stock voice; no narration or new permission.",
+    "segments": [
+      {
+        "text": "One at a time,",
+        "speed": 0.92,
+        "pauseAfter": 0
+      }
+    ]
   },
   {
     "id": "voice-campaign-kerr-f91cd82e5369",
@@ -1804,16 +1811,21 @@
     "voice": "af_bella",
     "speed": 0.95,
     "text": "You agreed to pause questions. A hearing isn't an exception.",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions. Word-clarity pass: articulate consonants and limits at a measured pace; preserve exact wording.",
+    "direction": "Keep the agreed pause intact; retain the previously slower word-clarity pass. Preserve exact words and established stock voice; no narration or new permission.",
     "segments": [
       {
-        "text": "You agreed to pause questions.",
-        "speed": 0.87,
-        "pauseAfter": 0.24
+        "text": "You agreed",
+        "speed": 0.95,
+        "pauseAfter": 0.12
+      },
+      {
+        "text": "to pause questions.",
+        "speed": 0.89,
+        "pauseAfter": 0.38
       },
       {
         "text": "A hearing isn't an exception.",
-        "speed": 0.87,
+        "speed": 0.88,
         "pauseAfter": 0
       }
     ]
@@ -2380,21 +2392,21 @@
     "voice": "af_sarah",
     "speed": 0.96,
     "text": "That is mine. I signed it. Don't make the tower's next decision erase the one I made.",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+    "direction": "A plain admission, then a firmer refusal to erase it. Preserve exact words and established stock voice; no narration or new permission.",
     "segments": [
       {
         "text": "That is mine.",
         "speed": 0.96,
-        "pauseAfter": 0.24
+        "pauseAfter": 0.28
       },
       {
         "text": "I signed it.",
-        "speed": 0.96,
-        "pauseAfter": 0.24
+        "speed": 0.89,
+        "pauseAfter": 0.4
       },
       {
         "text": "Don't make the tower's next decision erase the one I made.",
-        "speed": 0.96,
+        "speed": 0.93,
         "pauseAfter": 0
       }
     ]
@@ -2660,21 +2672,21 @@
     "voice": "af_heart",
     "speed": 0.93,
     "text": "You sold the week after walking with me. Helping with this reply doesn't make that disappear. Leave future messages at the desk; don't speak as my partner.",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+    "direction": "Betrayal stays explicit; measured limits rather than anger or forgiveness. Preserve exact words and established stock voice; no narration or new permission.",
     "segments": [
       {
         "text": "You sold the week after walking with me.",
         "speed": 0.93,
-        "pauseAfter": 0.24
+        "pauseAfter": 0.36
       },
       {
         "text": "Helping with this reply doesn't make that disappear.",
-        "speed": 0.93,
-        "pauseAfter": 0.24
+        "speed": 0.92,
+        "pauseAfter": 0.43
       },
       {
         "text": "Leave future messages at the desk; don't speak as my partner.",
-        "speed": 0.93,
+        "speed": 0.9,
         "pauseAfter": 0
       }
     ]
@@ -2806,21 +2818,21 @@
     "voice": "af_heart",
     "speed": 0.93,
     "text": "You promised to break the hour and sold it instead. This envelope is a different act. Future messages stay at the desk; don't call me your partner.",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+    "direction": "Keep the broken promise beside this separate act; deliberate contact boundary. Preserve exact words and established stock voice; no narration or new permission.",
     "segments": [
       {
         "text": "You promised to break the hour and sold it instead.",
-        "speed": 0.93,
-        "pauseAfter": 0.24
+        "speed": 0.92,
+        "pauseAfter": 0.36
       },
       {
         "text": "This envelope is a different act.",
-        "speed": 0.93,
-        "pauseAfter": 0.24
+        "speed": 0.96,
+        "pauseAfter": 0.41
       },
       {
         "text": "Future messages stay at the desk; don't call me your partner.",
-        "speed": 0.93,
+        "speed": 0.9,
         "pauseAfter": 0
       }
     ]
@@ -2856,16 +2868,16 @@
     "voice": "af_nova",
     "speed": 0.96,
     "text": "This one answer doesn't reopen contact. Leave the pause in place.",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+    "direction": "One bounded answer; clear contact limit with no implied gratitude. Preserve exact words and established stock voice; no narration or new permission.",
     "segments": [
       {
         "text": "This one answer doesn't reopen contact.",
-        "speed": 0.96,
-        "pauseAfter": 0.24
+        "speed": 0.95,
+        "pauseAfter": 0.36
       },
       {
         "text": "Leave the pause in place.",
-        "speed": 0.96,
+        "speed": 0.9,
         "pauseAfter": 0
       }
     ]
@@ -2993,5 +3005,140 @@
     "speed": 0.93,
     "text": "Kerr,",
     "direction": "A gentle, restrained call to the room after the bluff fails. Speak only the fixed character name."
+  },
+  {
+    "id": "voice-campaign-mara-revelation-performance",
+    "speaker": "Mara",
+    "voice": "af_sarah",
+    "speed": 0.98,
+    "text": "I signed the coolant dump. Ward Nine. Three hundred on the night shift. I want that sentence to stay in my mouth.",
+    "segments": [
+      {
+        "text": "I signed",
+        "speed": 0.98,
+        "pauseAfter": 0.12
+      },
+      {
+        "text": "the coolant dump.",
+        "speed": 0.94,
+        "pauseAfter": 0.4
+      },
+      {
+        "text": "Ward Nine.",
+        "speed": 0.86,
+        "pauseAfter": 0.42
+      },
+      {
+        "text": "Three hundred on the night shift.",
+        "speed": 0.9,
+        "pauseAfter": 0.45
+      },
+      {
+        "text": "I want that sentence to stay in my mouth.",
+        "speed": 0.91,
+        "pauseAfter": 0
+      }
+    ],
+    "direction": "Accountability, not absolution; a measured admission and a held beat before the scale of loss. Preserve exact words and established stock voice; no narration or new permission."
+  },
+  {
+    "id": "voice-campaign-mara-why-performance",
+    "speaker": "Mara",
+    "voice": "af_sarah",
+    "speed": 0.96,
+    "text": "Helion told me the dump was a flush, not a kill. I signed because the night shift was already in the building and I thought the tower would move them. They did not move them.",
+    "direction": "Careful recollection; let the final plain sentence contradict her rationalization. Preserve exact words and established stock voice; no narration or new permission.",
+    "segments": [
+      {
+        "text": "Helion told me the dump was a flush, not a kill.",
+        "speed": 0.94,
+        "pauseAfter": 0.34
+      },
+      {
+        "text": "I signed because the night shift was already in the building and I thought the tower would move them.",
+        "speed": 0.96,
+        "pauseAfter": 0.48
+      },
+      {
+        "text": "They did not move them.",
+        "speed": 0.87,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-nia-terms-performance",
+    "speaker": "Nia Pell",
+    "voice": "af_nova",
+    "speed": 0.96,
+    "text": "You promised a witness. I promised nothing to a transmitter. I need care, a room they don't own, and a say in which words leave it. Can you do those separately?",
+    "direction": "Firm personal agency; distinguish her terms and let the last question remain a question. Preserve exact words and established stock voice; no narration or new permission.",
+    "segments": [
+      {
+        "text": "You promised a witness.",
+        "speed": 0.96,
+        "pauseAfter": 0.24
+      },
+      {
+        "text": "I promised nothing to a transmitter.",
+        "speed": 0.92,
+        "pauseAfter": 0.38
+      },
+      {
+        "text": "I need care, a room they don't own, and a say in which words leave it.",
+        "speed": 0.94,
+        "pauseAfter": 0.32
+      },
+      {
+        "text": "Can you do those separately?",
+        "speed": 0.96,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-lumen-boundary-performance",
+    "speaker": "Sister Lumen",
+    "voice": "af_heart",
+    "speed": 0.93,
+    "text": "You may leave a private message at the desk. I decide whether to answer. That's all the permission I'm giving.",
+    "direction": "Calm, definite boundary; the final permission limit is deliberate, never conciliatory. Preserve exact words and established stock voice; no narration or new permission.",
+    "segments": [
+      {
+        "text": "You may leave a private message at the desk.",
+        "speed": 0.94,
+        "pauseAfter": 0.32
+      },
+      {
+        "text": "I decide whether to answer.",
+        "speed": 0.91,
+        "pauseAfter": 0.4
+      },
+      {
+        "text": "That's all the permission I'm giving.",
+        "speed": 0.9,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-sera-names-performance",
+    "speaker": "Sera",
+    "voice": "af_bella",
+    "speed": 0.95,
+    "text": "The wall has room for a voice. It has never had room for an excuse.",
+    "direction": "Patient gravity at the wall; separate invitation from the refusal of excuses. Preserve exact words and established stock voice; no narration or new permission.",
+    "segments": [
+      {
+        "text": "The wall has room for a voice.",
+        "speed": 0.94,
+        "pauseAfter": 0.42
+      },
+      {
+        "text": "It has never had room for an excuse.",
+        "speed": 0.9,
+        "pauseAfter": 0
+      }
+    ]
   }
 ]

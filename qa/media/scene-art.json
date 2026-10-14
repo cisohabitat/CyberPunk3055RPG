@@ -21,7 +21,7 @@
     {
       "treatment": "illustration",
       "asset": "/art/shelter.jpg",
-      "reason": "Establish the leaking landing and passable ramp before repair, evacuation or allocation is known. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
+      "reason": "Establish the leaking landing and passable ramp before repair, evacuation or allocation is known. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Expression staging accompanies the actual actor and adds no outcome or permission.",
       "scenes": [
         "act2_shelter_brief"
       ]
@@ -138,7 +138,7 @@
     {
       "treatment": "illustration",
       "asset": "/art/mara-revelation.jpg",
-      "reason": "Deliberate turning-point staging: Mara's recorded likeness sits beside the cyan memory apparatus; her steady gaze carries no present-day permission. Prose remains authoritative about costs, evidence and permissions. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
+      "reason": "Deliberate turning-point staging: Mara's recorded likeness sits beside the cyan memory apparatus; her steady gaze carries no present-day permission. Prose remains authoritative about costs, evidence and permissions. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Expression staging accompanies the actual actor and adds no outcome or permission.",
       "scenes": [
         "memo"
       ]
@@ -146,7 +146,7 @@
     {
       "treatment": "illustration",
       "asset": "/art/mara-revelation.jpg",
-      "reason": "Deliberate turning-point staging: Mara's recorded likeness sits beside the cyan memory apparatus; her steady gaze carries no present-day permission. Prose remains authoritative about costs, evidence and permissions. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
+      "reason": "Deliberate turning-point staging: Mara's recorded likeness sits beside the cyan memory apparatus; her steady gaze carries no present-day permission. Prose remains authoritative about costs, evidence and permissions. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Expression staging accompanies the actual actor and adds no outcome or permission.",
       "scenes": [
         "mara_why"
       ]
@@ -170,7 +170,7 @@
     {
       "treatment": "illustration",
       "asset": "/art/finale-names.jpg",
-      "reason": "The existing plate shows memorial marks and Sera writing, with no hearing document or private identity displayed. Speaking names does not file a hearing draft or change source permission. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
+      "reason": "The existing plate shows memorial marks and Sera writing, with no hearing document or private identity displayed. Speaking names does not file a hearing draft or change source permission. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Expression staging accompanies the actual actor and adds no outcome or permission.",
       "scenes": [
         "ending_names"
       ]
@@ -178,7 +178,7 @@
     {
       "treatment": "illustration",
       "asset": "/art/finale-quiet.jpg",
-      "reason": "The existing rain and empty stair preserve the departure. They depict no erased testimony; filed and withdrawn accounts retain their separate status. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
+      "reason": "The existing rain and empty stair preserve the departure. They depict no erased testimony; filed and withdrawn accounts retain their separate status. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Expression staging accompanies the actual actor and adds no outcome or permission.",
       "scenes": [
         "ending_quiet"
       ]
@@ -186,7 +186,7 @@
     {
       "treatment": "illustration",
       "asset": "/art/finale-witness.jpg",
-      "reason": "The existing listening portrait and unmarked notebook fit acknowledgement of the earlier leak. No new corroboration, absolution or witness publication permission is depicted. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
+      "reason": "The existing listening portrait and unmarked notebook fit acknowledgement of the earlier leak. No new corroboration, absolution or witness publication permission is depicted. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Expression staging accompanies the actual actor and adds no outcome or permission.",
       "scenes": [
         "ending_witness"
       ]
@@ -311,7 +311,7 @@
     {
       "treatment": "illustration",
       "asset": "/art/nia-transfer.jpg",
-      "reason": "Nia’s pre-transfer agency and established appearance accompany her briefing and work question. No tightened harness, completed move, protected room, recording or new permission is depicted. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
+      "reason": "Nia’s pre-transfer agency and established appearance accompany her briefing and work question. No tightened harness, completed move, protected room, recording or new permission is depicted. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Expression staging accompanies the actual actor and adds no outcome or permission.",
       "scenes": [
         "act2_witness_brief",
         "act2_witness_support"
@@ -339,7 +339,7 @@
     {
       "treatment": "illustration",
       "asset": "/art/memorial-stair.jpg",
-      "reason": "The populated memorial establishes the wall before an independent finale choice. No readable identity, open witness ledger, address, fresh inscription, completed declaration or absolution is depicted. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
+      "reason": "The populated memorial establishes the wall before an independent finale choice. No readable identity, open witness ledger, address, fresh inscription, completed declaration or absolution is depicted. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Expression staging accompanies the actual actor and adds no outcome or permission.",
       "scenes": [
         "ward_wall",
         "act3_arrival"
@@ -533,7 +533,7 @@
     {
       "treatment": "illustration",
       "asset": "/art/clinic-relay.jpg",
-      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Expression staging accompanies the actual actor and adds no outcome or permission.",
       "scenes": [
         "act3_testimony_nia",
         "act2_witness_door",
@@ -931,6 +931,46 @@
         "opening_neighbor"
       ],
       "reason": "Reviewed portrait for this actual actor during explicitly bound, revealed audible dialogue. Existing scene/flag expressions apply to this actor only; the scene’s setting and canonical story speaker remain unchanged."
+    }
+  ],
+  "expressionPortraits": [
+    {
+      "speaker": "Mara",
+      "asset": "/art/mara-remorse.jpg",
+      "scenes": [
+        "memo",
+        "mara_why"
+      ],
+      "reason": "Recorded admission and remorse; no present-day forgiveness or new permission."
+    },
+    {
+      "speaker": "Nia Pell",
+      "asset": "/art/nia-terms.jpg",
+      "scenes": [
+        "act2_witness_door",
+        "act2_witness_brief",
+        "act3_testimony_nia"
+      ],
+      "reason": "Calm testimony and contact terms; no rescue, gratitude or recording permission supplied by the picture."
+    },
+    {
+      "speaker": "Ren",
+      "asset": "/art/ren-concerned.jpg",
+      "scenes": [
+        "act2_shelter_brief"
+      ],
+      "reason": "Practical concern about her father and the ramp; no completed repair or relocation."
+    },
+    {
+      "speaker": "Sera",
+      "asset": "/art/sera-attentive.jpg",
+      "scenes": [
+        "act3_arrival",
+        "ending_names",
+        "ending_quiet",
+        "ending_witness"
+      ],
+      "reason": "Patient attention before or after the final response; no forgiveness, completed inquiry or claimed writing action."
     }
   ]
 }

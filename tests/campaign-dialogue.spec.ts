@@ -79,7 +79,7 @@ test("Nia's audible words show Nia's portrait and Stop restores Lumen's scene co
   const queue = expected("act2_witness_door");
   await expect.poll(() => speech(page)).toEqual(queue.slice(0, 1));
   await expect(page.getByTestId("voice-line")).toHaveAttribute("aria-label", "Nia Pell selected dialogue");
-  await expect(page.locator(".scene-row img.portrait")).toHaveAttribute("src", "/art/nia.jpg");
+  await expect(page.locator(".scene-row img.portrait")).toHaveAttribute("src", "/art/nia-terms.jpg");
   await expect(page.getByTestId("spoken-quote")).toHaveAttribute("data-speaker", "Nia Pell");
   await page.getByRole("button", { name: "Stop line", exact: true }).click();
   await expect(page.getByTestId("spoken-quote")).toHaveCount(0);

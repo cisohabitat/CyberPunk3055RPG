@@ -9,7 +9,7 @@ import { SaveDialog } from "./SaveDialog";
 import { SettingsDialog } from "./SettingsDialog";
 import { clearSave, emptyCodex, loadCodex, loadSave, usedBackup, writeSave } from "@/lib/storage";
 import { applyPreferences, DEFAULT_PREFERENCES, loadPreferences, writePreferences, type Preferences } from "@/lib/preferences";
-import { leaveMenuMusic, setAudioMix, setBed, unlockAudio, whenAudioRunning, type BedStatus } from "@/lib/sound";
+import { cancelPendingMenuAudio, leaveMenuMusic, setAudioMix, setBed, unlockAudio, type BedStatus } from "@/lib/sound";
 import { checkpointLabel } from "@/lib/checkpoints";
 import { recordIncident } from "@/lib/diagnostics";
 import type { Codex, GameState } from "@/lib/types";
@@ -47,21 +47,22 @@ export function GameApp() {
   }, [ready, screen, menuMusicRequested, menuMusicActivated, preferences.sound, preferences.music, audioPaused]);
   useEffect(() => {
     if (!ready || screen !== "title" || !menuMusicRequested || menuMusicActivated || !preferences.sound || preferences.music === 0 || audioPaused) return;
-    const cancel = whenAudioRunning(() => setMenuMusicActivated(true));
     function activate(event: Event) {
       // Navigation should hand off directly, without downloading a menu-only track.
       if (event.target instanceof Element && event.target.closest('[data-testid="new-run"], [data-testid="continue-run"], [data-testid="title-music"] button')) return;
       if (event instanceof KeyboardEvent && (event.repeat || !["Enter", " "].includes(event.key))) return;
       unlockAudio();
+      setMenuMusicActivated(true);
     }
     document.addEventListener("pointerup", activate);
     document.addEventListener("keydown", activate);
     return () => {
-      cancel(); document.removeEventListener("pointerup", activate); document.removeEventListener("keydown", activate);
+      document.removeEventListener("pointerup", activate); document.removeEventListener("keydown", activate);
     };
   }, [ready, screen, menuMusicRequested, menuMusicActivated, preferences.sound, preferences.music, audioPaused]);
   useEffect(() => {
     function pause() {
+      cancelPendingMenuAudio();
       if (!preferences.sound) return;
       setBed(false);
       setMenuMusicStatus("idle");
@@ -106,6 +107,9 @@ export function GameApp() {
     // Dispose menu sources before gameplay, including when ended is delayed.
     if (screen === "title") { leaveMenuMusic(); setMenuMusicStatus("idle"); }
     if (preferences.sound) unlockAudio();
+    // This navigation is a player gesture. Returning to title can resume the
+    // enabled menu theme without activating it during a fresh save restore.
+    setMenuMusicActivated(true);
     setAudioPaused(false);
     updateRun(next); setRestoreNotice(source === "New run" ? null : `Loaded ${source} — ${checkpointLabel(next)}`);
     setPlaySession((session) => session + 1); setRecovered(false); setDialog(null); setScreen("play");

@@ -125,7 +125,7 @@ test("title music respects mixer, hidden-page pause and voiced gameplay handoff"
   await expect.poll(async () => (await audio(page)).liveSources).toBe(2);
   await expect.poll(() => page.evaluate(() => (window as unknown as { titlePlayback: { node: AudioBufferSourceNode } }).titlePlayback.node.buffer === null)).toBe(true);
   await keyboardActivate(page, page.getByRole("button", { name: "Listen to Mara", exact: true }));
-  await expect.poll(async () => (await audio(page)).started).toContain("voice-mara-revelation.wav");
+  await expect.poll(async () => (await audio(page)).started).toContain("voice-campaign-mara-revelation-performance.mp3");
   await keyboardActivate(page, page.getByRole("button", { name: "Stop line", exact: true }));
   await keyboardActivate(page, page.getByRole("button", { name: "Settings", exact: true }));
   await keyboardActivate(page, page.getByLabel("Sound enabled", { exact: true })); await clean(page);

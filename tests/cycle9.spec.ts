@@ -64,7 +64,7 @@ test("cycle 9 hidden sound releases sources without ended callbacks and resumes 
   await setup(page, fixture(), { artwork: "none", contrast: "high", textStep: 2, numberShortcuts: false }, true);
   await expect.poll(async () => (await review(page)).liveSources).toBeGreaterThanOrEqual(2);
   await page.getByRole("button", { name: "Listen to Mara", exact: true }).click();
-  await expect.poll(async () => (await review(page)).started).toContain("voice-mara-revelation.wav");
+  await expect.poll(async () => (await review(page)).started).toContain("voice-campaign-mara-revelation-performance.mp3");
   const before = await saved(page); await visibility(page, "hidden");
   await expect.poll(async () => (await review(page)).liveSources).toBe(0);
   let current = await review(page); expect(current.buffersCleared).toBe(current.sourcesCreated);
@@ -74,23 +74,23 @@ test("cycle 9 hidden sound releases sources without ended callbacks and resumes 
   await page.getByRole("button", { name: "Resume sound", exact: true }).focus(); await page.keyboard.press("Enter");
   await expect(page.getByTestId("scene")).toBeFocused();
   await expect.poll(async () => (await review(page)).liveSources).toBe(2);
-  current = await review(page); expect(current.started.filter(n => n === "voice-mara-revelation.wav")).toHaveLength(1);
+  current = await review(page); expect(current.started.filter(n => n === "voice-campaign-mara-revelation-performance.mp3")).toHaveLength(1);
   expect(await saved(page)).toEqual(before); await expect(page.getByTestId("goal")).toBeInViewport();
   expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations).toEqual([]);
 });
 
 test("cycle 9 a voice loading before pagehide cannot start on return", async ({ page }) => {
   let release!: () => void; const gate = new Promise<void>(resolve => { release = resolve; });
-  await page.route("**/audio/voice-mara-revelation.wav", async route => { const response = await route.fetch(); await gate; await route.fulfill({ response }); });
+  await page.route("**/audio/voice-campaign-mara-revelation-performance.mp3", async route => { const response = await route.fetch(); await gate; await route.fulfill({ response }); });
   await setup(page); await page.getByRole("button", { name: "Listen to Mara", exact: true }).click();
   await expect(page.getByTestId("voice-line")).toContainText("Loading selected dialogue");
   const before = await saved(page); await page.evaluate(() => window.dispatchEvent(new PageTransitionEvent("pagehide", { persisted: true })));
   await expect(page.getByTestId("audio-paused")).toBeVisible(); release();
-  await expect.poll(async () => (await review(page)).decoded).toContain("voice-mara-revelation.wav");
-  expect((await review(page)).started).not.toContain("voice-mara-revelation.wav");
+  await expect.poll(async () => (await review(page)).decoded).toContain("voice-campaign-mara-revelation-performance.mp3");
+  expect((await review(page)).started).not.toContain("voice-campaign-mara-revelation-performance.mp3");
   await page.getByRole("button", { name: "Resume sound", exact: true }).click();
   await expect.poll(async () => (await review(page)).liveSources).toBeGreaterThanOrEqual(2);
-  expect((await review(page)).started).not.toContain("voice-mara-revelation.wav"); expect(await saved(page)).toEqual(before);
+  expect((await review(page)).started).not.toContain("voice-campaign-mara-revelation-performance.mp3"); expect(await saved(page)).toEqual(before);
 });
 
 test("cycle 9 repeated Sound off releases every source while preserving a recorded roll", async ({ page }) => {

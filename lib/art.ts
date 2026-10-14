@@ -98,6 +98,10 @@ export const SOURCE_ART: Record<string, Illustration> = {
   roster: { src: "/art/fragment-roster.jpg", small: "/art/fragment-roster-small.jpg", caption: "Roster · illustrative close-up", description: "Illustration of anonymous tally rows and an exit diagram beside a closed privacy sleeve; no names, addresses or rescue outcome are depicted." },
 };
 const PORTRAIT_VARIANTS: Record<string, { speaker: string; src: string }> = {};
+for (const id of ["memo", "mara_why"]) PORTRAIT_VARIANTS[id] = { speaker: "Mara", src: "/art/mara-remorse.jpg" };
+for (const id of ["act2_witness_door", "act2_witness_brief", "act3_testimony_nia"]) PORTRAIT_VARIANTS[id] = { speaker: "Nia Pell", src: "/art/nia-terms.jpg" };
+PORTRAIT_VARIANTS.act2_shelter_brief = { speaker: "Ren", src: "/art/ren-concerned.jpg" };
+for (const id of ["act3_arrival", "ending_names", "ending_quiet", "ending_witness"]) PORTRAIT_VARIANTS[id] = { speaker: "Sera", src: "/art/sera-attentive.jpg" };
 for (const id of ["memory_cross_exam", "memory_assurance", "memory_channel", "memory_model_test", "memory_sequence_result"]) PORTRAIT_VARIANTS[id] = { speaker: "Mara", src: "/art/mara-questioning.jpg" };
 for (const id of ["memory_model_result", "memory_publication"]) PORTRAIT_VARIANTS[id] = { speaker: "Sister Lumen", src: "/art/lumen-challenging.jpg" };
 export const PORTRAIT_STAGING = [
