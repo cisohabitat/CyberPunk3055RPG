@@ -1,0 +1,37 @@
+# Runner’s field guide and main-page autoplay
+
+The main page now has a Field guide link to `/guide`. The guide gives a newcomer a grounded introduction before asking them to build a runner or accept work. The existing Under the Awning track requests playback on an eligible fresh title instead of waiting unconditionally for a menu gesture.
+
+## Player flow
+
+Main page → Field guide → city/contacts → first-run instructions → practice check → sources/commitments → controls/saves → main page → New run or Continue. Direct loading and reloading `/guide` also work. Shared game layout retains menu music, saved preferences and progress across ordinary guide navigation; guide choices never touch the campaign. Route changes scroll to the new page and focus its heading for keyboard/screen-reader orientation.
+
+The five chapters teach:
+
+1. **Enter Kite City:** 3055, the dome, lower walkways, memory editing/shards, runners, Quill, Lumen, Helion and the wards. The hour’s contents, casualties, command chain and undiscovered endings remain in the campaign.
+2. **Your first run:** handles, optional given name, three origins, complication tradeoffs, two stat points, money, the prologue, visible goals and reading pace.
+3. **Choices and dice:** immediate choices versus check previews, modifiers/odds/costs, Back before rolling, Continue after a saved die, 1d10 against difficulty, successful 10/missed 1, Strain and limited attempts.
+4. **Keep your word:** journal sources, claims, completed handovers, independent permissions, unfinished commitments and chapter changes.
+5. **Travel light:** touch/mouse, keyboard, opt-in standard controller, reading/accessibility, dialogue controls, mixer, local saves, three slots, export/import and storage failure.
+
+The practice has Nerve 3, no modifiers, difficulty 8 and starting Strain 2. Four explicit faces demonstrate 4→miss, 5→success, successful 10→Strain 1 and missed 1→Strain 3. It calls the real `resolveCheck` with a valid fictional runner; no random value or campaign choice is committed and no storage method is called.
+
+## Art, lore and voice alignment
+
+The city introduction reuses the responsive original opening painting, showing an inhabited rainy walkway before midnight. It introduces no distinct new setting or major campaign outcome that needs another illustration. `qa/media/guide.json` documents this decision and hashes the reused image/title deliveries and all 300 voice files including archives. No gameplay scene or actor quotation changes; there is no spoken guide narrator. Existing art and character voices still match the actual campaign. Text-only mode fetches no guide image, and a missing image leaves its descriptive fallback and all instruction usable.
+
+## Autoplay and cancellation
+
+The requested menu theme is on by default. `prepareMenuAutoplay` creates/observes the native audio context and attempts a nonblocking resume. It only permits a title-track fetch when that context is running. A pending or rejected browser resume does not delay the guide, New run, Continue or settings. In browsers requiring user activation, pointer/Enter/Space menu interactions unlock the already-requested soundtrack. A clear hint and explicit Play remain available.
+
+The menu/guide share one loop and one state. Guide navigation does not layer another track, and explicit Stop remains respected across the two pages. Saved Sound off and zero Music are honored; pagehide/hidden-page cancels loading and pauses sources. The player can explicitly Resume afterward. New-run/gameplay navigation invalidates a pending title start, and cancelled dialogue is never replayed by this observer. The existing title waveform, prepared four-second loop entry, mixer, voice trims and 24 MiB cache remain unchanged.
+
+## Verification and release
+
+Source checks exercise the real worked example, spoiler exclusions, all preserved media hashes and the autoplay observer’s allowed, blocked, rejected, closed and cancelled states. Browser checks cover direct/linked guide navigation, keyboard focus, reloads, saved progress/preferences, examples, anchor navigation, mobile/desktop largest text, high contrast, text-only and missing art, WCAG automated checks, menu-loop continuity, Stop/mute/pagehide and native Chromium allowed/blocked policies. The existing title-loop, dialogue and complete campaign regressions remain required.
+
+Evidence is retained under `/workspace/saint-shard-validation/field-guide/`. Production requires exact-commit Test and Build success. If CI takes longer than Vercel’s waiting build limit, redeploy the same tested commit after success; do not weaken the gate. Live checks verify the public route and audio behavior.
+
+Local verification passed 540 source tests, TypeScript and the production build. Guide/title checks passed in native Chromium, phone Chromium and WebKit, including separately forced permitted and blocked autoplay policies. The blocked-policy probe uses Chromium’s `document-user-activation-required` flag; its older `user-gesture-required` flag does not reliably block Web Audio. Twelve guide captures cover phone/desktop and standard/largest text. Two keyboard-driven WebKit campaigns completed 167 scene visits, 116 spoken lines and 67 save/reload checkpoints without script or missing-media errors. The maximum measured opening transfer was 2,000,206 bytes against the unchanged 2,097,152-byte budget; visible goals and no horizontal overflow were confirmed. These are source-familiar development checks.
+
+The graph stays 197 scenes / 587 choices, with all 140 authored replay fixtures, 302 voice bindings and 290 active files unchanged. Save version 2, `saint-shard-3055-v1`, recorded dice, 1d10/stat/strain caps, the four goals, sources/consent and four finales remain. This is internal development evidence, not a new artistic grade; the grade remains 8.2.

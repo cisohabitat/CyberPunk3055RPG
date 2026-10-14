@@ -1013,3 +1013,42 @@ html[data-motion="reduce"] .fragment-placed { animation: none; }
 .voice-line li[aria-current="true"] { border-inline-start: 3px solid var(--amber); padding-inline-start: 8px; background: var(--bg-raise); }
 .spoken-quote { color: inherit; background: rgba(255, 176, 32, 0.12); text-decoration: underline; text-decoration-color: var(--amber); text-decoration-thickness: 2px; text-underline-offset: 0.2em; }
 .speaker-cue { display: block; color: var(--amber); font-size: 0.8em; letter-spacing: 0.08em; }
+
+/* The field guide shares the game's reading palette and responsive artwork. */
+.actions a.ghost, .actions a.primary { display: inline-flex; align-items: center; justify-content: center; text-decoration: none; }
+.guide-screen { min-height: 100dvh; padding: 0 max(1rem, env(safe-area-inset-left)) max(3rem, env(safe-area-inset-bottom)); }
+.guide-topbar { max-width: 1000px; margin: auto; display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; justify-content: space-between; padding: 1rem 0; }
+.guide-topbar .brand { flex-wrap: wrap; text-decoration: none; color: var(--ink); }
+.guide-topbar .actions { margin: 0; }
+.guide-book { max-width: 1000px; margin: auto; border: 1px solid var(--line); background: var(--bg-raise); }
+.guide-intro, .guide-chapter { padding: clamp(1.25rem, 4vw, 3rem); }
+.guide-intro h1 { margin: .5rem 0 1.25rem; max-width: 15ch; font: 700 clamp(2.3rem, 7vw, 4.5rem)/1.03 var(--font-display), sans-serif; text-transform: uppercase; letter-spacing: .04em; }
+.guide-deck { font-size: 1.35rem; color: var(--cyan); max-width: 40rem; }
+.guide-book p, .guide-book li, .guide-book dd { line-height: 1.7; max-width: 68ch; }
+.guide-book .scene-illustration { margin: 0; border-left: 0; border-right: 0; }
+.guide-index { display: flex; flex-wrap: wrap; gap: .75rem 1.5rem; padding: 1.25rem clamp(1.25rem, 4vw, 3rem); border-bottom: 1px solid var(--line); font-family: var(--font-display), sans-serif; }
+.guide-index a { min-height: 2.75rem; display: inline-flex; align-items: center; color: var(--cyan); text-underline-offset: .2em; }
+.guide-chapter { border-bottom: 1px solid var(--line); scroll-margin-top: 1rem; }
+.guide-chapter:last-child { border-bottom: 0; }
+.guide-chapter h2 { font: 600 clamp(1.7rem, 4vw, 2.5rem)/1.2 var(--font-display), sans-serif; margin: .5rem 0 1.5rem; }
+.guide-chapter h3 { margin: 1.75rem 0 .75rem; font-size: 1.25rem; }
+.guide-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.guide-card { min-width: 0; padding: 1.25rem; border: 1px solid var(--line); background: rgba(0,0,0,.15); }
+.guide-card h3, .guide-card h4 { font: 600 1rem/1.5 var(--font-display), sans-serif; margin: 0; color: var(--cyan); }
+.guide-card p:last-child { margin-bottom: 0; }
+.guide-small { font-size: .9em; }
+.guide-steps { padding-left: 1.3rem; }
+.guide-steps li { padding: .5rem 0 .5rem .3rem; }
+.guide-note { border-left: 3px solid var(--cyan); padding: 1rem 1.25rem; background: rgba(5,180,190,.06); }
+.guide-practice { border: 1px solid var(--line); padding: 1.25rem; margin: 2rem 0; }
+.guide-practice h3 { margin-top: 0; }
+.guide-example-result { padding: .75rem 1rem; border-left: 2px solid var(--cyan); min-height: 7rem; }
+.guide-example-result p:first-child { margin-top: 0; }
+.guide-example-result p:last-child { margin-bottom: 0; }
+.guide-controls dt { font-family: var(--font-display), sans-serif; color: var(--cyan); margin-top: 1.5rem; }
+.guide-controls dd { margin: .5rem 0 0; }
+@media (max-width: 700px) {
+  .guide-cards { grid-template-columns: minmax(0,1fr); }
+  .guide-topbar .brand { width: 100%; }
+  .guide-index { gap: .35rem 1rem; }
+}

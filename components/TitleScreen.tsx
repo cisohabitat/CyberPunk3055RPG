@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
+import { MenuMusic } from "./MenuMusic";
 import { TITLE_ART } from "@/lib/art";
 import { DialogFrame } from "@/components/DialogFrame";
 import { getScene } from "@/lib/engine";
@@ -57,7 +59,7 @@ export function TitleScreen({
           </figure>}
           <div className="title-intro">
             <p className="eyebrow">Kite City · 3055</p>
-            <h1 id="game-title">
+            <h1 id="game-title" tabIndex={-1}>
               Saint <span className="hot">Shard</span>
             </h1>
             <p className="title-tagline">A solo story RPG</p>
@@ -73,15 +75,11 @@ export function TitleScreen({
               <button className={save ? "ghost" : "primary"} type="button" data-testid="new-run" onClick={() => (save ? setConfirm(true) : onNew())}>
                 New run
               </button>
+              <Link className="ghost" href="/guide" prefetch={false} data-testid="guide-link">Field guide</Link>
               <button className="ghost" type="button" onClick={onSaves}>Saves</button>
               <button className="ghost" type="button" onClick={onSettings}>Settings</button>
             </div>
-            {onMusic && <div className="title-music" data-testid="title-music">
-              <button className="ghost" type="button" disabled={musicMuted} onClick={onMusic}>
-                {musicStatus === "playing" || musicStatus === "loading" ? "Stop menu music" : musicPaused ? "Resume menu music" : "Play menu music"}
-              </button>
-              <p className="hint" role={musicMuted || musicStatus === "loading" || musicStatus === "unavailable" || musicPaused ? "status" : undefined}>{musicMuted ? "Music volume is off. Adjust it in Settings to listen." : musicStatus === "loading" ? "Loading Under the Awning…" : musicStatus === "unavailable" ? "Music unavailable. You can still start the game." : musicPaused ? "Music paused while you were away." : musicWaiting ? "Under the Awning · starts with your first menu interaction." : "Under the Awning · menu theme"}</p>
-            </div>}
+            <MenuMusic status={musicStatus} muted={musicMuted} paused={musicPaused} waiting={musicWaiting} onToggle={onMusic} />
             {recovered && <p role="status">Your last autosave could not be read. The automatic backup is ready to continue.</p>}
             {save && scene && (
               <p className="continue-note">
@@ -94,7 +92,7 @@ export function TitleScreen({
           <div className="rules">
             <section>
               <h2>Dice</h2>
-              <p>Roll 1d10, add your stat, and meet the difficulty. A 10 eases Strain. A 1 on a miss makes it worse.</p>
+              <p>Roll 1d10, add your stat, and meet the difficulty. A successful 10 eases Strain. A 1 on a miss makes it worse.</p>
             </section>
             <section>
               <h2>Stats</h2>

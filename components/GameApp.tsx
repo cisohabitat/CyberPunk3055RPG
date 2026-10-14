@@ -1,6 +1,8 @@
 "use client";
 
-import { useEffect, useLayoutEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
+import { GuideScreen } from "./GuideScreen";
 import { useController } from "./useController";
 import { CreateScreen } from "./CreateScreen";
 import { PlayScreen } from "./PlayScreen";
@@ -9,12 +11,15 @@ import { SaveDialog } from "./SaveDialog";
 import { SettingsDialog } from "./SettingsDialog";
 import { clearSave, emptyCodex, loadCodex, loadSave, usedBackup, writeSave } from "@/lib/storage";
 import { applyPreferences, DEFAULT_PREFERENCES, loadPreferences, writePreferences, type Preferences } from "@/lib/preferences";
-import { cancelPendingMenuAudio, leaveMenuMusic, setAudioMix, setBed, unlockAudio, type BedStatus } from "@/lib/sound";
+import { cancelPendingMenuAudio, leaveMenuMusic, prepareMenuAutoplay, setAudioMix, setBed, unlockAudio, type BedStatus } from "@/lib/sound";
 import { checkpointLabel } from "@/lib/checkpoints";
 import { recordIncident } from "@/lib/diagnostics";
 import type { Codex, GameState } from "@/lib/types";
 
 export function GameApp() {
+  const pathname = usePathname();
+  const guide = pathname === "/guide";
+  const priorPath = useRef(pathname);
   const [ready, setReady] = useState(false);
   const [screen, setScreen] = useState<"title" | "create" | "play">("title");
   const [playSession, setPlaySession] = useState(0);
@@ -30,6 +35,7 @@ export function GameApp() {
   const [menuMusicRequested, setMenuMusicRequested] = useState(true);
   const [menuMusicActivated, setMenuMusicActivated] = useState(false);
   const [menuMusicStatus, setMenuMusicStatus] = useState<BedStatus>("idle");
+  const menu = guide || screen === "title";
 
   useController(preferences.controller);
 
@@ -38,15 +44,23 @@ export function GameApp() {
     const loaded = loadPreferences(); setPreferences(loaded); applyPreferences(loaded);
     setReady(true);
   }, []);
-  useLayoutEffect(() => { window.scrollTo(0, 0); }, [screen]);
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+    if (ready && priorPath.current !== pathname) document.getElementById(guide ? "guide-title" : "game-title")?.focus({ preventScroll: true });
+    priorPath.current = pathname;
+  }, [screen, pathname, guide, ready]);
   useEffect(() => { setAudioMix(preferences); }, [preferences]);
   useEffect(() => {
-    if (screen === "play") { setMenuMusicStatus("idle"); return; }
-    const on = ready && screen === "title" && menuMusicRequested && menuMusicActivated && preferences.sound && preferences.music > 0 && !audioPaused;
+    if (screen === "play" && !guide) { setMenuMusicStatus("idle"); return; }
+    const on = ready && menu && menuMusicRequested && menuMusicActivated && preferences.sound && preferences.music > 0 && !audioPaused;
     setBed(on, "title", "street", setMenuMusicStatus);
-  }, [ready, screen, menuMusicRequested, menuMusicActivated, preferences.sound, preferences.music, audioPaused]);
+  }, [ready, screen, guide, menu, menuMusicRequested, menuMusicActivated, preferences.sound, preferences.music, audioPaused]);
   useEffect(() => {
-    if (!ready || screen !== "title" || !menuMusicRequested || menuMusicActivated || !preferences.sound || preferences.music === 0 || audioPaused) return;
+    if (!ready || !menu || !menuMusicRequested || menuMusicActivated || !preferences.sound || preferences.music === 0 || audioPaused) return;
+    return prepareMenuAutoplay(() => setMenuMusicActivated(true));
+  }, [ready, menu, menuMusicRequested, menuMusicActivated, preferences.sound, preferences.music, audioPaused]);
+  useEffect(() => {
+    if (!ready || !menu || !menuMusicRequested || menuMusicActivated || !preferences.sound || preferences.music === 0 || audioPaused) return;
     function activate(event: Event) {
       // Navigation should hand off directly, without downloading a menu-only track.
       if (event.target instanceof Element && event.target.closest('[data-testid="new-run"], [data-testid="continue-run"], [data-testid="title-music"] button')) return;
@@ -59,7 +73,8 @@ export function GameApp() {
     return () => {
       document.removeEventListener("pointerup", activate); document.removeEventListener("keydown", activate);
     };
-  }, [ready, screen, menuMusicRequested, menuMusicActivated, preferences.sound, preferences.music, audioPaused]);
+  }, [ready, menu, menuMusicRequested, menuMusicActivated, preferences.sound, preferences.music, audioPaused]);
+  useEffect(() => () => { cancelPendingMenuAudio(); leaveMenuMusic(); }, []);
   useEffect(() => {
     function pause() {
       cancelPendingMenuAudio();
@@ -87,7 +102,7 @@ export function GameApp() {
   function updatePreferences(next: Preferences) {
     if (next.sound && !preferences.sound) {
       unlockAudio(); setAudioPaused(false);
-      if (screen === "title") { setMenuMusicRequested(true); setMenuMusicActivated(true); }
+      if (menu) { setMenuMusicRequested(true); setMenuMusicActivated(true); }
     } else if (next.sound && next.music > 0 && preferences.music === 0) { unlockAudio(); setMenuMusicActivated(true); }
     if (!next.sound) setAudioPaused(false);
     setPreferences(next); applyPreferences(next); writePreferences(next);
@@ -117,7 +132,10 @@ export function GameApp() {
 
   if (!ready) return <div className="boot">Jacking in</div>;
   return <>
-    {screen === "play" && run ? <PlayScreen key={playSession} restoreNotice={restoreNotice} state={run} saveFailed={saveFailed} preferences={preferences}
+    {guide ? <GuideScreen artwork={preferences.artwork !== "none"} onSettings={() => setDialog("settings")}
+      music={{ status: menuMusicStatus, muted: preferences.music === 0, paused: audioPaused && menuMusicRequested,
+        waiting: menuMusicRequested && !menuMusicActivated && preferences.sound && preferences.music > 0 && !audioPaused, onToggle: toggleMenuMusic }} />
+      : screen === "play" && run ? <PlayScreen key={playSession} restoreNotice={restoreNotice} state={run} saveFailed={saveFailed} preferences={preferences}
       audioPaused={audioPaused} onResumeAudio={() => { unlockAudio(); setAudioPaused(false); }}
       modalOpen={dialog !== null} onSettings={() => setDialog("settings")} onSaves={() => setDialog("saves")}
       onChange={(next) => { setRestoreNotice(null); updateRun(next); }} onTitle={title} onNewRun={() => { setCodex(loadCodex()); setRun(null); setScreen("create"); }}

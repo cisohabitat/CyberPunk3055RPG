@@ -87,3 +87,8 @@ Four original authored procedural effects depict viewer contacts, an archive rea
 Five additional AI-generated paintings use established Saint Shard settings/identities: repaired shelter valve, anonymous courier stock receipt, filed bounded public account, Lumen considering and Nia speaking. Image generation used the preceding local paintings as references; original PNGs remain retained, with resize/JPEG delivery only. Provenance and source/delivery hashes are in `qa/media/art-provenance.json`. No readable witness address or signature is depicted.
 
 Nine exact-word synthetic performance revisions retain the established Kokoro stock `af_heart` (Sister Lumen), `af_sarah` (Mara) and `af_nova` (Nia Pell) casting and existing model/style licenses. Optional offline phrase direction/mastering serves checked-in MP3s only. All earlier WAVs remain untouched; previous MP3 copies and source PCM are retained locally. See `qa/media/consequence-media.json`, campaign dialogue provenance, current voice-mastering map and media audition. These are generated development candidates, not commissioned actor performances.
+
+
+### Runner’s field guide
+
+The `/guide` page reuses the existing AI-generated `opening.jpg` / `opening-small.jpg` city painting, with its original provenance and delivery hashes. The shared menu soundtrack remains the project owner’s Under the Awning delivery. All artwork, music and character voice files remain unchanged. Written guide prose is original game guidance; it introduces no synthetic narrator, character quotation or additional media license. See `qa/media/guide.json` for the explicit art/audio decision and preservation inventory.

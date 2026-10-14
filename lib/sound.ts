@@ -5,6 +5,7 @@ import voiceMix from "../qa/media/voice-mix.json";
 import { TITLE_MUSIC } from "./title-music";
 import { voiceLevel } from "./voice-level";
 import { SCENE_CUE_MIX, type SceneCueName } from "./scene-cues";
+import { waitForRunningAudio } from "./menu-autoplay";
 
 export type SoundMood = "street" | "chapel" | "ward" | "week" | "reading" | "quiet" | "pressure" | "title";
 export type BedStatus = "idle" | "loading" | "playing" | "unavailable";
@@ -39,6 +40,16 @@ export function unlockAudio() {
     const audio = context();
     if (audio.state !== "running" && audio.state !== "closed") void audio.resume().catch(() => {});
   } catch { /* Unsupported audio must never block play. */ }
+}
+/** Attempt policy-permitted autoplay without fetching into a blocked context.
+ * The ordinary menu gesture can resume it later; cancellation removes the
+ * listener before navigation, Stop, saved mute or pagehide can permit a start.
+ */
+export function prepareMenuAutoplay(ready: () => void): () => void {
+  if (typeof window === "undefined") return () => {};
+  try {
+    return waitForRunningAudio(context(), ready);
+  } catch { return () => {}; }
 }
 function bus(channel: keyof typeof mix) {
   const audio = context();
