@@ -1418,9 +1418,15 @@ async function observeVoices(page: Page) {
     const review = window as unknown as { voiceReview: { decoded: number; started: number; stopped: number; gains: number[]; scheduled: { value: number; settling: number }[] } };
     review.voiceReview = { decoded: 0, started: 0, stopped: 0, gains: [], scheduled: [] };
     const voices = new WeakSet<AudioBuffer>();
+    const names = new WeakMap<ArrayBuffer, string>();
+    const arrayBuffer = Response.prototype.arrayBuffer;
+    Response.prototype.arrayBuffer = function() {
+      const name = this.url.split("/").at(-1) ?? "";
+      return arrayBuffer.call(this).then(data => { names.set(data, name); return data; });
+    };
     const decode = AudioContext.prototype.decodeAudioData;
     AudioContext.prototype.decodeAudioData = function(data: ArrayBuffer) {
-      const voice = data.byteLength > 44 && new DataView(data).getUint32(24, true) === 24000;
+      const voice = names.get(data)?.startsWith("voice-") ?? false;
       return decode.call(this, data).then((buffer) => { if (voice) { voices.add(buffer); review.voiceReview.decoded++; } return buffer; });
     };
     const start = AudioBufferSourceNode.prototype.start;
