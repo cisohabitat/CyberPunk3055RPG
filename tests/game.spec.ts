@@ -1243,10 +1243,10 @@ test("shelter later help preserves uncertainty and returns to its entry hub", as
   expect(run.sceneId).toBe("ward_wall"); expect(run.creds).toBe(80); expect(run.flags.shelter_hall).toBeUndefined(); expect(run.items).not.toContain("witness-token");
 });
 
-for (const [sceneId, path] of [["act3_witness_visit", "/art/nia.jpg"], ["act3_edda_visit", "/art/edda.jpg"], ["act2_freight_brief", "/art/asa.jpg"]]) test(`generated character portrait loads for ${sceneId}`, async ({ page }) => {
+for (const [sceneId, path, pixels] of [["act3_witness_visit", "/art/nia-speaking.jpg", 600], ["act3_edda_visit", "/art/edda.jpg", 440], ["act2_freight_brief", "/art/asa.jpg", 440]] as const) test(`generated character portrait loads for ${sceneId}`, async ({ page }) => {
   await openRun(page, fixture(sceneId));
   const portrait = page.locator("img.portrait").first(); await expect(portrait).toHaveAttribute("src", path);
-  expect(await portrait.evaluate((image: HTMLImageElement) => image.decode().then(() => image.naturalWidth))).toBe(440);
+  expect(await portrait.evaluate((image: HTMLImageElement) => image.decode().then(() => image.naturalWidth))).toBe(pixels);
   await expect(page.getByTestId("goal")).toBeInViewport();
 });
 for (const [sceneId, name] of [["opening_city", "opening"], ["memory_table", "memory-bench"], ["act2_shelter_brief", "shelter"], ["act2_freight_brief", "asa-dispatch"], ["act2_spire_brief", "spire-counter"], ["act2_spire_methods", "spire-terminal"], ["act3_spire_visit", "spire-payroll"]]) test(`encounter illustration ${sceneId} preserves largest-text phone goals`, async ({ page }) => {
