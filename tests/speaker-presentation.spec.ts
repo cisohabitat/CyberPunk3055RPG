@@ -109,7 +109,7 @@ test("loading leaves context intact; playback never moves focus or scroll", asyn
 
 test("missing actor art retains the right speaker and words; a dialog and pagehide clear the cue", async ({ page }) => {
   const sample = samples.find(sample => sample.line.speaker === "Ren")!;
-  await page.route("**/art/ren-portrait.jpg", route => route.abort());
+  await page.route(`**${portraitArt("Ren", sample.state.sceneId, sample.state.flags)}`, route => route.abort());
   await open(page, sample.state); const before = await saved(page); await select(page, sample.line);
   await expect(page.getByTestId("spoken-quote")).toHaveAttribute("data-speaker", "Ren");
   await expect(page.locator(".scene-row .portrait-frame .portrait-placeholder")).toBeVisible();

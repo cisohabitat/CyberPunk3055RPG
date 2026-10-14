@@ -10,6 +10,7 @@ import staging from "../qa/media/dialogue-staging.json";
 import decisions from "../qa/media/scene-art.json";
 import authoring from "../qa/media/campaign-dialogue-lines.json";
 import provenance from "../qa/media/campaign-dialogue-provenance.json";
+import castPortraits from "../qa/media/cast-portraits.json";
 import { DialoguePlayback } from "./dialogue-playback";
 import { portraitArt, sceneIllustration } from "./art";
 const hash = (file: string) => createHash("sha256").update(readFileSync(new URL(`../${file}`, import.meta.url))).digest("hex");
@@ -46,7 +47,7 @@ it("locks exact actors, words, loudness and unchanged campaign bindings for the 
 });
 
 it("selects expressions for the actual actor and earns Edda's assignment without erasing the inquiry", () => {
-  assert.deepEqual(decisions.expressionPortraits, [...staging.portraits, ...phase.portraits, ...ives.portraits, ...consequence.portraits]);
+  assert.deepEqual(decisions.expressionPortraits, [...staging.portraits, ...phase.portraits, ...ives.portraits, ...consequence.portraits, ...castPortraits.portraits]);
   for (const entry of phase.portraits) for (const scene of entry.scenes) {
     assert.equal(portraitArt(entry.speaker, scene), entry.asset);
     assert.notEqual(portraitArt("Dispatcher", scene), entry.asset);

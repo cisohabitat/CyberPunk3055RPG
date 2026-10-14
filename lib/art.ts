@@ -123,6 +123,17 @@ export const SOURCE_ART: Record<string, Illustration> = {
   roster: { src: "/art/fragment-roster.jpg", small: "/art/fragment-roster-small.jpg", caption: "Roster · illustrative close-up", description: "Illustration of anonymous tally rows and an exit diagram beside a closed privacy sleeve; no names, addresses or rescue outcome are depicted." },
 };
 const PORTRAIT_VARIANTS: Record<string, { speaker: string; src: string }> = {};
+export const CAST_PORTRAIT_VARIANTS = [
+  { speaker: "Asa", asset: "/art/asa-terms.jpg", scenes: ["act2_freight_sources", "act2_freight_prep", "act2_freight_recovery"], reason: "Practical attention to terms and cold storage; no observed delivery or patient outcome." },
+  { speaker: "Edda", asset: "/art/edda-scrutiny.jpg", scenes: ["act2_archive_brief", "act2_archive_prep", "act2_archive_compare", "act2_archive_challenge", "act2_archive_custody"], reason: "Archive scrutiny before a resolved issuing key; no payroll assignment or cleared inquiry." },
+  { speaker: "Ren", asset: "/art/ren-listening.jpg", scenes: ["act2_middle", "act2_shelter_hall", "act2_shelter_rooms", "act3_shelter_visit"], reason: "Ren's attributed present conversation; attentive listening supplies no shelter repair or safety claim." },
+  { speaker: "Orderly", asset: "/art/orderly-assessing.jpg", scenes: ["front", "districts"], reason: "Practiced courtesy during actual attendant dialogue; no accepted appointment or unobserved cuff mark." },
+  { speaker: "Stallholder", asset: "/art/stallholder-speaking.jpg", scenes: ["opening_approach", "opening_neighbor"], reason: "Sober conversation about memory work; no acceptance of Quill's job or second person depicted." },
+  { speaker: "Dispatcher", asset: "/art/dispatcher-considering.jpg", scenes: ["act2_notice_offer", "act2_notice_counter"], reason: "Considering the actual proposal without depicting agreement, money, receipt or dispatch." },
+  { speaker: "Mechanic", asset: "/art/mechanic-explaining.jpg", scenes: ["act3_records_visit"], reason: "Explaining the limits of the record; no repaired evidence or authenticated issuer." },
+  { speaker: "Masked attendant", asset: "/art/attendant-alert.jpg", scenes: ["hatch_caught"], reason: "Alert eyes keep the established respirator and identity, without adding a weapon or outcome." },
+] as const;
+for (const rule of CAST_PORTRAIT_VARIANTS) for (const id of rule.scenes) PORTRAIT_VARIANTS[id] = { speaker: rule.speaker, src: rule.asset };
 for (const id of ["memo", "mara_why"]) PORTRAIT_VARIANTS[id] = { speaker: "Mara", src: "/art/mara-remorse.jpg" };
 for (const id of ["act2_witness_door", "act2_witness_brief", "act3_testimony_nia"]) PORTRAIT_VARIANTS[id] = { speaker: "Nia Pell", src: "/art/nia-terms.jpg" };
 PORTRAIT_VARIANTS.act2_shelter_brief = { speaker: "Ren", src: "/art/ren-concerned.jpg" };

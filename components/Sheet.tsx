@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { DialogFrame } from "./DialogFrame";
+import { CastCard } from "./CastCard";
 import { Mark, originAccent } from "@/components/Mark";
 import { COMPLICATIONS, FACTIONS, FACTION_CHECK, FACTION_INFO, ORIGINS, STATS, STAT_INFO } from "@/lib/character";
 import { ITEMS } from "@/lib/items";
@@ -15,11 +16,13 @@ import type { GameState } from "@/lib/types";
 
 const TABS = ["stats", "gear", "journal"] as const;
 
-export function Sheet({ state, open, onClose, speaker }: { state: GameState; open: boolean; onClose: () => void; speaker?: string }) {
+export function Sheet({ state, open, onClose, speaker, visibleText, artwork = true }: { state: GameState; open: boolean; onClose: () => void; speaker?: string; visibleText?: string; artwork?: boolean }) {
   const [tab, setTab] = useState<"stats" | "gear" | "journal">("stats");
   const origin = ORIGINS[state.origin];
   const ref = useRef<HTMLElement>(null);
   const [narrow, setNarrow] = useState(false);
+  const [peopleOpen, setPeopleOpen] = useState(false);
+  const people = metCast(state, speaker, visibleText);
   const recent = (state.log ?? []).slice(-6).reverse();
   useEffect(() => {
     const media = window.matchMedia("(max-width: 1100px)");
@@ -55,16 +58,14 @@ export function Sheet({ state, open, onClose, speaker }: { state: GameState; ope
           {COMPLICATIONS[state.complication].name}. {COMPLICATIONS[state.complication].perk} {COMPLICATIONS[state.complication].cost}
         </p>
       )}
-      <h3 className="sheet-label">People</h3>
-      <ul className="cast" data-testid="cast">
-        {metCast(state, speaker).map((person) => (
-          <li key={person.name}>
-            <strong>{person.name}</strong>
-            <span>{person.role}</span>
-            {characterConduct(state, person.name) && <small className="cast-conduct">Shared history · {characterConduct(state, person.name)}</small>}
-          </li>
-        ))}
-      </ul>
+      <details className="cast-roster" open={peopleOpen} onToggle={event => setPeopleOpen(event.currentTarget.open)}>
+        <summary>People · {people.length} met</summary>
+        <p className="hint">People you have encountered. Shared history records what happened between you.</p>
+        <ul className="cast" data-testid="cast">
+          {people.map(person => <CastCard key={person.speaker} person={person}
+            history={characterConduct(state, person.name)} artwork={artwork && peopleOpen} />)}
+        </ul>
+      </details>
       <div className="tabs" role="tablist" aria-label="Character details">
         {TABS.map((id, index) => (
           <button

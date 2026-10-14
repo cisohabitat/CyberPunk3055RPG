@@ -438,7 +438,7 @@ export function PlayScreen({
             )}
           </article>
         </main>
-        <Sheet state={state} speaker={scene.speaker} open={sheetOpen} onClose={() => setSheetOpen(false)} />
+        <Sheet state={state} speaker={scene.speaker} visibleText={visibleText} artwork={preferences.artwork !== "none"} open={sheetOpen} onClose={() => setSheetOpen(false)} />
       </div>
       {notebookOpen && <InvestigationNotebook state={state} onClose={() => setNotebookOpen(false)} />}
       {activeChoice?.check && (

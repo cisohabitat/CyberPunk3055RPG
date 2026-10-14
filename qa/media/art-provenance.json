@@ -1544,7 +1544,7 @@
       "generated": "2026-10-13",
       "sourceFile": "/workspace/generated_images/exec-1c8ffc91-8229-4294-b644-cd8c060dc151.png",
       "sourceSha256": "acfdf561ab9b06b45f8f1e102ce82a31533fb21b5307e1d85cdcbd800e07be9a",
-      "promptSummary": "Ren’s introduction and later canal returns retain the neutral resident setting. No shelter repair, family arrival, street declaration, relocation or source verdict is depicted. Original painterly noir with petroleum blue, aged verdigris, copper and amber.",
+      "promptSummary": "Ren\u2019s introduction and later canal returns retain the neutral resident setting. No shelter repair, family arrival, street declaration, relocation or source verdict is depicted. Original painterly noir with petroleum blue, aged verdigris, copper and amber.",
       "referenceFiles": [
         "/workspace/generated_images/exec-73e0b934-2a5a-48cb-bcce-8119bebf3dfa.png"
       ],
@@ -2070,6 +2070,436 @@
         }
       ],
       "review": "Source-familiar visual inspection: established identities/settings and earned-outcome boundaries; no readable names or addresses. Native mobile/desktop review follows integration."
+    },
+    {
+      "id": "asa-terms",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/generated_images/exec-08171cdc-1d1d-4421-b03f-414b69979322.png",
+      "sourceSha256": "bd485ffc50bc889cb31d4a0c5cbc67515a53e162894462102fede9d1e341067a",
+      "referenceFile": "public/art/asa.jpg",
+      "referenceSha256": "cfe27e12f9b683a5178ce74bb4ca6634a1a7eca79df84c539d1504fc396d4fdf",
+      "promptSummary": "Create ONE portrait expression variant of the supplied original character art for the original browser narrative RPG Saint Shard, year 3055. The input is the character's identity reference: preserve the exact person, age, face structure, skin tone, distinctive hair, clothing and identifying accessories. Asa, the same androgynous adult courier with short curly dark hair, freckles, rust scarf, charcoal weathered courier coat and strap. A focused, practical expression while explaining a sealed parcel's terms. No smile suggesting successful delivery. Preserve the existing canal backdrop and warm lamp, no parcel, no receipt. Match the established hand-painted noir realism and visible brush texture, petroleum blue, charcoal, worn verdigris and restrained copper/amber lighting. Premium subtle acting, natural anatomy, same head-and-upper-torso framing, full unobstructed head, 3:4 vertical composition. Do not change identity or imply new story facts. No writing, logos, typography, collage, panels, borders or captions. Output only this single finished portrait.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/asa-terms.jpg",
+          "width": 600,
+          "height": 800,
+          "bytes": 100720,
+          "sha256": "35f51669b65d373a021acb0734a8e733f9e75fdf2f950c4bbbadc39a9fd36a64"
+        }
+      ]
+    },
+    {
+      "id": "edda-scrutiny",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/generated_images/exec-8dea57f2-2c0c-42d9-8a92-564b39d15311.png",
+      "sourceSha256": "758302669dca96b00ebd49ad48f677356715bf5ba21e2916a7651c20f29f6617",
+      "referenceFile": "public/art/edda.jpg",
+      "referenceSha256": "6af115f70e05fbf24b71e7dedf74885e774dba1ac75f5d1689f1b66ee4931223",
+      "promptSummary": "Create ONE portrait expression variant of the supplied original character art for the original browser narrative RPG Saint Shard, year 3055. The input is the character's identity reference: preserve the exact person, age, face structure, skin tone, distinctive hair, clothing and identifying accessories. Edda, exactly the same older archive technician with greying short hair, rectangular glasses, worn olive work coat and closed dark folio. Attentive, gently skeptical expression while explaining why an archive record needs scrutiny. Keep the closed folio, no new papers, no authenticated key, no paid shift or cleared inquiry. Same dark archive backdrop. Match the established hand-painted noir realism and visible brush texture, petroleum blue, charcoal, worn verdigris and restrained copper/amber lighting. Premium subtle acting, natural anatomy, same head-and-upper-torso framing, full unobstructed head, 3:4 vertical composition. Do not change identity or imply new story facts. No writing, logos, typography, collage, panels, borders or captions. Output only this single finished portrait.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/edda-scrutiny.jpg",
+          "width": 600,
+          "height": 800,
+          "bytes": 94232,
+          "sha256": "e1c17eb4572e81a9d35bdade79017c67d095931dc79a69c70ef1610059c0d7b1"
+        }
+      ]
+    },
+    {
+      "id": "ren-listening",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/generated_images/exec-cd8aa752-4d55-4beb-9079-9dd427e212f6.png",
+      "sourceSha256": "7d90782ee7670282716619ce794813cc6f797b974ce075fdc37c48501e4955a8",
+      "referenceFile": "public/art/ren-portrait.jpg",
+      "referenceSha256": "1ad4f23925cc6159462c2ad51fe01bcda6517251b78c211536dc623c892b9a33",
+      "promptSummary": "Create ONE portrait expression variant of the supplied original character art for the original browser narrative RPG Saint Shard, year 3055. The input is the character's identity reference: preserve the exact person, age, face structure, skin tone, distinctive hair, clothing and identifying accessories. Ren, the same adult with damp short dark hair and worn ochre coat. A quieter attentive expression while discussing shelter concerns with the visitor, lips closed, no grin, no relief implying a repaired pump or safe residents. Preserve original rainy sheltered backdrop. Match the established hand-painted noir realism and visible brush texture, petroleum blue, charcoal, worn verdigris and restrained copper/amber lighting. Premium subtle acting, natural anatomy, same head-and-upper-torso framing, full unobstructed head, 3:4 vertical composition. Do not change identity or imply new story facts. No writing, logos, typography, collage, panels, borders or captions. Output only this single finished portrait.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/ren-listening.jpg",
+          "width": 600,
+          "height": 800,
+          "bytes": 118847,
+          "sha256": "d06442eadc08e0b5e34e06b61e0126179e67f472821f9f8ba94b51fe3f28627b"
+        }
+      ]
+    },
+    {
+      "id": "orderly-assessing",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/generated_images/exec-6a418c89-251e-41d5-b051-96961d46ad49.png",
+      "sourceSha256": "5200a33d1825115a2337bec79052d68762c82c84e9a6578aaff171466e28a5f8",
+      "referenceFile": "public/art/orderly.jpg",
+      "referenceSha256": "a93bf8bf1ccd3928101017819b5f7cbe2964815cf9daef9793a13fb1d92693e1",
+      "promptSummary": "Create ONE portrait expression variant of the supplied original character art for the original browser narrative RPG Saint Shard, year 3055. The input is the character's identity reference: preserve the exact person, age, face structure, skin tone, distinctive hair, clothing and identifying accessories. The Orderly, exactly the same pale adult with short silver hair, white high-collar coat and simple teal cross. A small practiced courteous half-smile and assessing eyes, not threatening caricature. Preserve portrait crop and clinic background. No new equipment, text, mark, pass or accepted appointment. Match the established hand-painted noir realism and visible brush texture, petroleum blue, charcoal, worn verdigris and restrained copper/amber lighting. Premium subtle acting, natural anatomy, same head-and-upper-torso framing, full unobstructed head, 3:4 vertical composition. Do not change identity or imply new story facts. No writing, logos, typography, collage, panels, borders or captions. Output only this single finished portrait.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/orderly-assessing.jpg",
+          "width": 600,
+          "height": 800,
+          "bytes": 77713,
+          "sha256": "61dd8b46d6388fbc70ef01461b17617f9c05ad4a2d62e78e8bea37167a65cb0e"
+        }
+      ]
+    },
+    {
+      "id": "stallholder-speaking",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/generated_images/exec-d525e79c-7ffb-41a7-8a4f-33ef2d57e142.png",
+      "sourceSha256": "0568d95186a48dcedab19883adc44866650045f837ff19fdd8fc86f136767c54",
+      "referenceFile": "public/art/stallholder-portrait.jpg",
+      "referenceSha256": "80d95d12bcfd922efba728f05b9779032a7256739726fdc63a540ab428a4871a",
+      "promptSummary": "Create ONE portrait expression variant of the supplied original character art for the original browser narrative RPG Saint Shard, year 3055. The input is the character's identity reference: preserve the exact person, age, face structure, skin tone, distinctive hair, clothing and identifying accessories. The Stallholder, exactly the same middle-aged adult woman with dark greying hair tied up, blue apron and weathered dark shirt. Thoughtful sober conversational expression as she tells the visitor about the memory trade, slight brow tension, lips gently parted. Same warm noodle-stall light and steam; no customer or second face. Match the established hand-painted noir realism and visible brush texture, petroleum blue, charcoal, worn verdigris and restrained copper/amber lighting. Premium subtle acting, natural anatomy, same head-and-upper-torso framing, full unobstructed head, 3:4 vertical composition. Do not change identity or imply new story facts. No writing, logos, typography, collage, panels, borders or captions. Output only this single finished portrait.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/stallholder-speaking.jpg",
+          "width": 600,
+          "height": 800,
+          "bytes": 121526,
+          "sha256": "79330f199d6538c6a51b256102d35ff16ab623bc306fbc96037e37129dce0c72"
+        }
+      ]
+    },
+    {
+      "id": "dispatcher-considering",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/generated_images/exec-93a2eaa5-3b5b-4c9d-820d-3b3e24b32fc1.png",
+      "sourceSha256": "2141f451335193dd4d03bc6d94cf4aecd7298c1daf37cb3ddf980e0ef10a9d1f",
+      "referenceFile": "public/art/dispatcher-portrait.jpg",
+      "referenceSha256": "a6f0ab256de0c7506592ab47d7bef73c4bfcba9d820d43f4dc78923aed6d8453",
+      "promptSummary": "Create ONE portrait expression variant of the supplied original character art for the original browser narrative RPG Saint Shard, year 3055. The input is the character's identity reference: preserve the exact person, age, face structure, skin tone, distinctive hair, clothing and identifying accessories. The Dispatcher, exactly the same adult woman with short salt-and-pepper curls, dark utility jacket, shoulder strap, copper earpiece. An attentive considering expression while weighing a counteroffer. No smile suggesting agreement, payment or receipt. Same dim office backdrop, no new props or papers. Match the established hand-painted noir realism and visible brush texture, petroleum blue, charcoal, worn verdigris and restrained copper/amber lighting. Premium subtle acting, natural anatomy, same head-and-upper-torso framing, full unobstructed head, 3:4 vertical composition. Do not change identity or imply new story facts. No writing, logos, typography, collage, panels, borders or captions. Output only this single finished portrait.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/dispatcher-considering.jpg",
+          "width": 600,
+          "height": 800,
+          "bytes": 80928,
+          "sha256": "24995f27dd9105cdf5386324cb1952a8b03a1a7a83afe0dbe469eb39e7b03cba"
+        }
+      ]
+    },
+    {
+      "id": "mechanic-explaining",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/generated_images/exec-c41b7c85-5f56-4429-941b-d7bd2e67fe68.png",
+      "sourceSha256": "91038d49aa765aedf14f9976ec7ac389a35e187ee94305d536808b142d702e38",
+      "referenceFile": "public/art/mechanic-portrait.jpg",
+      "referenceSha256": "8afb01ff0465467be38a78714a1768cf23933ad6e79bdab286a61bc2ebfc3d0c",
+      "promptSummary": "Create ONE portrait expression variant of the supplied original character art for the original browser narrative RPG Saint Shard, year 3055. The input is the character's identity reference: preserve the exact person, age, face structure, skin tone, distinctive hair, clothing and identifying accessories. The Mechanic, exactly the same older adult man with cropped salt-and-pepper curls, close beard, worn navy work jacket and ochre collar. A focused thoughtful expression explaining the limits of a record, subtly raised brow and slightly parted lips. Same workshop backdrop, no repair result, receipt or new machinery. Match the established hand-painted noir realism and visible brush texture, petroleum blue, charcoal, worn verdigris and restrained copper/amber lighting. Premium subtle acting, natural anatomy, same head-and-upper-torso framing, full unobstructed head, 3:4 vertical composition. Do not change identity or imply new story facts. No writing, logos, typography, collage, panels, borders or captions. Output only this single finished portrait.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/mechanic-explaining.jpg",
+          "width": 600,
+          "height": 800,
+          "bytes": 94730,
+          "sha256": "f3399f7aa7ac3f6dfc6b93340d62424d013426c03c8139f991213325b933fe8a"
+        }
+      ]
+    },
+    {
+      "id": "attendant-alert",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/generated_images/exec-2138abc7-b5a3-44f5-a10f-a898653cfc38.png",
+      "sourceSha256": "ef911d166a00ffaf14fee5db0be9befcfa629b0f83d3c81e81ce3a0716f60c9a",
+      "referenceFile": "public/art/masked-attendant-portrait.jpg",
+      "referenceSha256": "122511a1d0f393c1d838d6768407b3784c89cde1602ebc07d0d50f14210d2599",
+      "promptSummary": "Create ONE portrait expression variant of the supplied original character art for the original browser narrative RPG Saint Shard, year 3055. The input is the character's identity reference: preserve the exact person, age, face structure, skin tone, distinctive hair, clothing and identifying accessories. The Masked attendant, exactly the same dark-haired pale adult wearing the same opaque dark respirator, weathered dark utility jacket, straps and radio. Attentive alert eyes and slightly knitted brows on noticing the visitor at the hatch, preserve the respirator fully covering mouth and nose. Same dark maintenance backdrop. No weapon, chase, outcome or second person. Match the established hand-painted noir realism and visible brush texture, petroleum blue, charcoal, worn verdigris and restrained copper/amber lighting. Premium subtle acting, natural anatomy, same head-and-upper-torso framing, full unobstructed head, 3:4 vertical composition. Do not change identity or imply new story facts. No writing, logos, typography, collage, panels, borders or captions. Output only this single finished portrait.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/attendant-alert.jpg",
+          "width": 600,
+          "height": 800,
+          "bytes": 82667,
+          "sha256": "153f9f5f50410456b8ce6edf8971ebd2342083c6d3e4ea0bf4ee10df791b7a51"
+        }
+      ]
+    },
+    {
+      "id": "cast-asa",
+      "sourceTool": "existing-art-delivery",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/saint-shard-fix/public/art/asa.jpg",
+      "sourceSha256": "cfe27e12f9b683a5178ce74bb4ca6634a1a7eca79df84c539d1504fc396d4fdf",
+      "promptSummary": "Preserve Asa's established face, age, hair, clothing and accessories. A neutral roster portrait identifies the person; scene expressions remain scoped to actual dialogue and known conduct.",
+      "deliveryProcessing": "Resize and JPEG encode only from the unchanged existing base portrait; no generative edit.",
+      "files": [
+        {
+          "path": "public/art/cast-asa.jpg",
+          "width": 160,
+          "height": 213,
+          "bytes": 8859,
+          "sha256": "5d915eea172c6d9306ae17ce5ec19a758bfe234bcb04796bfe09423a7f42f041"
+        }
+      ]
+    },
+    {
+      "id": "cast-quill",
+      "sourceTool": "existing-art-delivery",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/saint-shard-fix/public/art/quill.jpg",
+      "sourceSha256": "4971bcdc37e0853eb4bf0199b883d421ce7a71a77dd2b487c1974e616755311b",
+      "promptSummary": "Preserve Quill's established face, age, hair, clothing and accessories. A neutral roster portrait identifies the person; scene expressions remain scoped to actual dialogue and known conduct.",
+      "deliveryProcessing": "Resize and JPEG encode only from the unchanged existing base portrait; no generative edit.",
+      "files": [
+        {
+          "path": "public/art/cast-quill.jpg",
+          "width": 160,
+          "height": 213,
+          "bytes": 7817,
+          "sha256": "6958725afa56e14c37c38630be2953a2dd0a422bc76c7d3db858356edef88281"
+        }
+      ]
+    },
+    {
+      "id": "cast-mara",
+      "sourceTool": "existing-art-delivery",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/saint-shard-fix/public/art/mara.jpg",
+      "sourceSha256": "2b1c67aa8a9519999a98e8559edc831406e2014fd42d91bf4ab1ae7b1e0d3214",
+      "promptSummary": "Preserve Mara Voss's established face, age, hair, clothing and accessories. A neutral roster portrait identifies the person; scene expressions remain scoped to actual dialogue and known conduct.",
+      "deliveryProcessing": "Resize and JPEG encode only from the unchanged existing base portrait; no generative edit.",
+      "files": [
+        {
+          "path": "public/art/cast-mara.jpg",
+          "width": 160,
+          "height": 213,
+          "bytes": 6853,
+          "sha256": "4e4225028b84061e6164425f8fec1f48896cdaadf009b1197edc591956821707"
+        }
+      ]
+    },
+    {
+      "id": "cast-kerr",
+      "sourceTool": "existing-art-delivery",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/saint-shard-fix/public/art/kerr.jpg",
+      "sourceSha256": "ec67f4b4299b3ff3302f9e6ae399dc2988d3f086b4f75bd8db2f481884b500ea",
+      "promptSummary": "Preserve Kerr's established face, age, hair, clothing and accessories. A neutral roster portrait identifies the person; scene expressions remain scoped to actual dialogue and known conduct.",
+      "deliveryProcessing": "Resize and JPEG encode only from the unchanged existing base portrait; no generative edit.",
+      "files": [
+        {
+          "path": "public/art/cast-kerr.jpg",
+          "width": 160,
+          "height": 213,
+          "bytes": 6940,
+          "sha256": "629da1895eb1359e9447c02c794c6d560b602e325224c89556536d9cbd1ddff8"
+        }
+      ]
+    },
+    {
+      "id": "cast-lumen",
+      "sourceTool": "existing-art-delivery",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/saint-shard-fix/public/art/lumen.jpg",
+      "sourceSha256": "88cc611cc0cafbbd9cac910b4fdf454cb24fd1d4a8dc6ea6ba9f2822f890668e",
+      "promptSummary": "Preserve Sister Lumen's established face, age, hair, clothing and accessories. A neutral roster portrait identifies the person; scene expressions remain scoped to actual dialogue and known conduct.",
+      "deliveryProcessing": "Resize and JPEG encode only from the unchanged existing base portrait; no generative edit.",
+      "files": [
+        {
+          "path": "public/art/cast-lumen.jpg",
+          "width": 160,
+          "height": 213,
+          "bytes": 7121,
+          "sha256": "8f73a0b83699688044a8e427607e4409fd0c469cea84d93f76b2f92e90279829"
+        }
+      ]
+    },
+    {
+      "id": "cast-ives",
+      "sourceTool": "existing-art-delivery",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/saint-shard-fix/public/art/ives.jpg",
+      "sourceSha256": "0fbff0f64074ee10c85fb6e4f475f2c6df11b559b6a1ab11e78af4b4ed5e1fd8",
+      "promptSummary": "Preserve Ives's established face, age, hair, clothing and accessories. A neutral roster portrait identifies the person; scene expressions remain scoped to actual dialogue and known conduct.",
+      "deliveryProcessing": "Resize and JPEG encode only from the unchanged existing base portrait; no generative edit.",
+      "files": [
+        {
+          "path": "public/art/cast-ives.jpg",
+          "width": 160,
+          "height": 213,
+          "bytes": 5403,
+          "sha256": "6e2c6e5714091021181c6c2224ff1787ea623e8fc1efa63cd18f314aa18c998a"
+        }
+      ]
+    },
+    {
+      "id": "cast-sera",
+      "sourceTool": "existing-art-delivery",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/saint-shard-fix/public/art/sera.jpg",
+      "sourceSha256": "357cfe3e403cfc57140977271a62264157640a0c640da9bbd5272e39516b39cf",
+      "promptSummary": "Preserve Sera's established face, age, hair, clothing and accessories. A neutral roster portrait identifies the person; scene expressions remain scoped to actual dialogue and known conduct.",
+      "deliveryProcessing": "Resize and JPEG encode only from the unchanged existing base portrait; no generative edit.",
+      "files": [
+        {
+          "path": "public/art/cast-sera.jpg",
+          "width": 160,
+          "height": 213,
+          "bytes": 7935,
+          "sha256": "baf9d5566a7c4522c0523b11464c9a1ad14668f2d9718505e254bd83e0099714"
+        }
+      ]
+    },
+    {
+      "id": "cast-edda",
+      "sourceTool": "existing-art-delivery",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/saint-shard-fix/public/art/edda.jpg",
+      "sourceSha256": "6af115f70e05fbf24b71e7dedf74885e774dba1ac75f5d1689f1b66ee4931223",
+      "promptSummary": "Preserve Edda's established face, age, hair, clothing and accessories. A neutral roster portrait identifies the person; scene expressions remain scoped to actual dialogue and known conduct.",
+      "deliveryProcessing": "Resize and JPEG encode only from the unchanged existing base portrait; no generative edit.",
+      "files": [
+        {
+          "path": "public/art/cast-edda.jpg",
+          "width": 160,
+          "height": 213,
+          "bytes": 9150,
+          "sha256": "ce952912e2b1d50f55ab1d8c1aded38fc0b75cad06d19f3c63290319be6340e9"
+        }
+      ]
+    },
+    {
+      "id": "cast-nia",
+      "sourceTool": "existing-art-delivery",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/saint-shard-fix/public/art/nia.jpg",
+      "sourceSha256": "d7303d8d8359b2ea99ac67c1ae8ebf676618f65268d0c006681e90315b35e41e",
+      "promptSummary": "Preserve Nia Pell's established face, age, hair, clothing and accessories. A neutral roster portrait identifies the person; scene expressions remain scoped to actual dialogue and known conduct.",
+      "deliveryProcessing": "Resize and JPEG encode only from the unchanged existing base portrait; no generative edit.",
+      "files": [
+        {
+          "path": "public/art/cast-nia.jpg",
+          "width": 160,
+          "height": 213,
+          "bytes": 7714,
+          "sha256": "6b85c5ff274488d518b81b84439402e9dbc23292345b3688b26b602baf2d205a"
+        }
+      ]
+    },
+    {
+      "id": "cast-ren",
+      "sourceTool": "existing-art-delivery",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/saint-shard-fix/public/art/ren-portrait.jpg",
+      "sourceSha256": "1ad4f23925cc6159462c2ad51fe01bcda6517251b78c211536dc623c892b9a33",
+      "promptSummary": "Preserve Ren's established face, age, hair, clothing and accessories. A neutral roster portrait identifies the person; scene expressions remain scoped to actual dialogue and known conduct.",
+      "deliveryProcessing": "Resize and JPEG encode only from the unchanged existing base portrait; no generative edit.",
+      "files": [
+        {
+          "path": "public/art/cast-ren.jpg",
+          "width": 160,
+          "height": 213,
+          "bytes": 10944,
+          "sha256": "3aa64112127a14c855b22217b6c560f521493136b2d8a2690c17844745c146ac"
+        }
+      ]
+    },
+    {
+      "id": "cast-orderly",
+      "sourceTool": "existing-art-delivery",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/saint-shard-fix/public/art/orderly.jpg",
+      "sourceSha256": "a93bf8bf1ccd3928101017819b5f7cbe2964815cf9daef9793a13fb1d92693e1",
+      "promptSummary": "Preserve Orderly's established face, age, hair, clothing and accessories. A neutral roster portrait identifies the person; scene expressions remain scoped to actual dialogue and known conduct.",
+      "deliveryProcessing": "Resize and JPEG encode only from the unchanged existing base portrait; no generative edit.",
+      "files": [
+        {
+          "path": "public/art/cast-orderly.jpg",
+          "width": 160,
+          "height": 213,
+          "bytes": 7865,
+          "sha256": "1136948945e3c2c1047a0aa19a704a158f6e554b36bbb31fa08d1841ff33d72d"
+        }
+      ]
+    },
+    {
+      "id": "cast-stallholder",
+      "sourceTool": "existing-art-delivery",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/saint-shard-fix/public/art/stallholder-portrait.jpg",
+      "sourceSha256": "80d95d12bcfd922efba728f05b9779032a7256739726fdc63a540ab428a4871a",
+      "promptSummary": "Preserve Stallholder's established face, age, hair, clothing and accessories. A neutral roster portrait identifies the person; scene expressions remain scoped to actual dialogue and known conduct.",
+      "deliveryProcessing": "Resize and JPEG encode only from the unchanged existing base portrait; no generative edit.",
+      "files": [
+        {
+          "path": "public/art/cast-stallholder.jpg",
+          "width": 160,
+          "height": 213,
+          "bytes": 11189,
+          "sha256": "e9e6efaffb15becfccd90fce92cd0c33c40aed0adff5465eac593fc893f20908"
+        }
+      ]
+    },
+    {
+      "id": "cast-dispatcher",
+      "sourceTool": "existing-art-delivery",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/saint-shard-fix/public/art/dispatcher-portrait.jpg",
+      "sourceSha256": "a6f0ab256de0c7506592ab47d7bef73c4bfcba9d820d43f4dc78923aed6d8453",
+      "promptSummary": "Preserve Dispatcher's established face, age, hair, clothing and accessories. A neutral roster portrait identifies the person; scene expressions remain scoped to actual dialogue and known conduct.",
+      "deliveryProcessing": "Resize and JPEG encode only from the unchanged existing base portrait; no generative edit.",
+      "files": [
+        {
+          "path": "public/art/cast-dispatcher.jpg",
+          "width": 160,
+          "height": 213,
+          "bytes": 7065,
+          "sha256": "d265206af228c255c74dffbbb01c7756d31ca7bccac47f00c27a06eaf7a135b9"
+        }
+      ]
+    },
+    {
+      "id": "cast-mechanic",
+      "sourceTool": "existing-art-delivery",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/saint-shard-fix/public/art/mechanic-portrait.jpg",
+      "sourceSha256": "8afb01ff0465467be38a78714a1768cf23933ad6e79bdab286a61bc2ebfc3d0c",
+      "promptSummary": "Preserve Mechanic's established face, age, hair, clothing and accessories. A neutral roster portrait identifies the person; scene expressions remain scoped to actual dialogue and known conduct.",
+      "deliveryProcessing": "Resize and JPEG encode only from the unchanged existing base portrait; no generative edit.",
+      "files": [
+        {
+          "path": "public/art/cast-mechanic.jpg",
+          "width": 160,
+          "height": 213,
+          "bytes": 8362,
+          "sha256": "c37ac0916a2ed934cf23409b59c61ca31a4a466efe4973336f85a436cd31828f"
+        }
+      ]
+    },
+    {
+      "id": "cast-attendant",
+      "sourceTool": "existing-art-delivery",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/saint-shard-fix/public/art/masked-attendant-portrait.jpg",
+      "sourceSha256": "122511a1d0f393c1d838d6768407b3784c89cde1602ebc07d0d50f14210d2599",
+      "promptSummary": "Preserve Masked attendant's established face, age, hair, clothing and accessories. A neutral roster portrait identifies the person; scene expressions remain scoped to actual dialogue and known conduct.",
+      "deliveryProcessing": "Resize and JPEG encode only from the unchanged existing base portrait; no generative edit.",
+      "files": [
+        {
+          "path": "public/art/cast-attendant.jpg",
+          "width": 160,
+          "height": 213,
+          "bytes": 7636,
+          "sha256": "8363c7806b69bc6ce60ee21a3bef856c20839e7848f8b17c99b1b1626d41886e"
+        }
+      ]
     }
   ]
 }

@@ -92,3 +92,8 @@ Nine exact-word synthetic performance revisions retain the established Kokoro st
 ### Runner’s field guide
 
 The `/guide` page reuses the existing AI-generated `opening.jpg` / `opening-small.jpg` city painting, with its original provenance and delivery hashes. The shared menu soundtrack remains the project owner’s Under the Awning delivery. All artwork, music and character voice files remain unchanged. Written guide prose is original game guidance; it introduces no synthetic narrator, character quotation or additional media license. See `qa/media/guide.json` for the explicit art/audio decision and preservation inventory.
+
+
+### Full-cast portrait delivery
+
+Eight AI-generated expression paintings reference unchanged local character portraits: Asa, Edda, Ren, Orderly, Stallholder, Dispatcher, Mechanic and Masked attendant. Exact prompts, source/reference hashes and resize/JPEG delivery records are in `qa/media/cast-portraits.json` and `qa/media/art-provenance.json`. Original generated PNGs are retained locally. Fifteen small roster portraits are resize/JPEG deliveries of the existing base art, without new generative edits. Existing lead identities, scene paintings and all audio remain unchanged. These are internally reviewed generated game assets; no new actor performance or commissioned-art claim is made.

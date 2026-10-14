@@ -2,6 +2,7 @@ import { COMPLICATIONS, FACTIONS, FACTION_INFO, ORIGINS, POINTS, STAT_CAP, STATS
 import { ITEMS } from "./items";
 import { mergeJournal } from "./journal";
 import { SCENES } from "./story";
+import { encounteredCast } from "./story/cast";
 import type {
   CheckPreview,
   CheckResult,
@@ -313,19 +314,11 @@ export function commitChoice(
     if (next.items.includes(itemId)) next = applyEffect(next, { itemsRemove: [itemId] });
   }
 
-  const metFlag: Record<string, string> = {
-    Quill: "met_quill",
-    Mara: "met_mara",
-    Kerr: "met_kerr",
-    "Sister Lumen": "met_lumen",
-    Ives: "met_ives",
-    Sera: "met_sera",
-    "Nia Pell": "met_nia",
-    Edda: "met_edda",
-    Asa: "met_asa",
-  };
-  const met = scene.speaker ? metFlag[scene.speaker] : undefined;
-  if (met && !next.flags[met]) next = { ...next, flags: { ...next.flags, [met]: true } };
+  const introductions = encounteredCast(scene.id, scene.speaker, sceneText(scene, state))
+    .filter(person => !next.flags[person.metFlag]);
+  if (introductions.length) next = { ...next, flags: { ...next.flags,
+    ...Object.fromEntries(introductions.map(person => [person.metFlag, true])),
+  } };
 
   const sceneId = resolveNext(choice, next, check ? check.success : null);
   const chapters =

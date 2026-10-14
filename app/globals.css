@@ -973,6 +973,16 @@ html[data-motion="reduce"] .fragment-placed { animation: none; }
 .voice-line .hint { margin: 8px 0; }
 .cast li { flex-wrap: wrap; }
 .cast-conduct { display: block; flex-basis: 100%; grid-column: 1 / -1; color: var(--muted); font-size: .85rem; line-height: 1.5; padding-top: 5px; }
+
+.cast-roster { margin: .8rem 0; border-block: 1px solid var(--line); }
+.cast-roster > summary { cursor: pointer; padding: .75rem 0; font-weight: 600; }
+.cast-roster > .hint { margin-top: 0; }
+.cast .cast-card { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: .75rem; align-items: start; padding: .65rem 0; border-top: 1px solid var(--line); }
+.cast-portrait, .cast .cast-placeholder { display: block; width: 64px; height: 85px; object-fit: cover; background: #0d2630; border-radius: 3px; }
+.cast .cast-placeholder { display: grid; place-items: center; color: var(--muted); font-size: 1.4rem; }
+.cast-card-copy { min-width: 0; overflow-wrap: anywhere; }
+.cast-card-copy > strong, .cast-card-copy > span { display: block; }
+.cast-card-copy > span { font-size: .85rem; line-height: 1.5; }
 .route-board { margin: 20px 0; padding: 16px; border: 1px solid var(--cyan); background: rgba(94,242,255,.035); }
 .route-heading { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: baseline; justify-content: space-between; }
 .route-heading h2 { margin: 0; font-size: 1.1rem; }
