@@ -1,3 +1,4 @@
+import consequence from "../qa/media/consequence-media.json";
 import assert from "node:assert/strict";
 import { it } from "node:test";
 import { readFileSync } from "node:fs";
@@ -48,7 +49,11 @@ it("replaces exactly thirteen Ives performances while preserving all quotation k
     assert.deepEqual(words(entry.transcription.text), words(entry.text));
   }
   const revised = new Set(phase.performances.map(entry => entry.previousId));
-  for (const [id, hash] of Object.entries(phase.precedingVoiceSha256)) if (!revised.has(id)) assert.equal(sha(`public/audio/${id}.${id.startsWith("voice-campaign-") ? "mp3" : "wav"}`), hash);
+  for (const [id, hash] of Object.entries(phase.precedingVoiceSha256)) if (!revised.has(id)) {
+    const later = consequence.performances.find(entry => entry.id === id);
+    if (later) assert.equal(later.previousSha256, hash);
+    else assert.equal(sha(`public/audio/${id}.${id.startsWith("voice-campaign-") ? "mp3" : "wav"}`), hash);
+  }
   for (const clip of legacy.lines) assert.equal(sha(clip.path), clip.sha256);
 });
 

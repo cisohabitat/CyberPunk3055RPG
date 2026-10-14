@@ -70,7 +70,7 @@ export function PlayScreen({
   onResumeAudio: () => void;
 }) {
   const scene = getScene(state.sceneId);
-  const illustration = sceneIllustration(scene.id);
+  const illustration = sceneIllustration(scene.id, state.flags);
   const choices = presentChoices(state, scene);
   const decisionTitle = scene.id === "act2_middle" ? "Street or silence" : scene.id === "act3_arrival" ? "At the wall" : null;
   const decisionIds = scene.id === "act2_middle" ? ["stand", "deal"] : ["read-names", "confirm-leak", "read-wall", "let-ives", "say-anyway", "leave-wall"];

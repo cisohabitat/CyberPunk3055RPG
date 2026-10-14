@@ -1954,6 +1954,122 @@
           "sha256": "b2b528675c67efdc7d7b96e3fa153eebe9ba138565dac8b2556367115dfca6a8"
         }
       ]
+    },
+    {
+      "id": "shelter-restored",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/generated_images/exec-6a5cc4ba-b8d8-4e7b-800a-0764398d1397.png",
+      "sourceSha256": "35f84eb2c0d6b48bf3304264d56c5bf2bbfb587424c6d2b1df9bc8c5906d750f",
+      "promptSummary": "Same shelter valve after actual repair; dry seam and fresh collar; no beds, room allocation or witness relocation.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/shelter-restored.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 257013,
+          "sha256": "67804a7efe6478446fb60e4ba04c8e9b4e5f3a37430d7f64173c2eed072c94bf"
+        },
+        {
+          "path": "public/art/shelter-restored-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 73354,
+          "sha256": "9c293326969f13791ae832d2a636f092592476a3a8b68f3e124b611794650301"
+        }
+      ],
+      "review": "Source-familiar visual inspection: established identities/settings and earned-outcome boundaries; no readable names or addresses. Native mobile/desktop review follows integration."
+    },
+    {
+      "id": "courier-receipt",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/generated_images/exec-285997fe-7b7b-4721-877a-815667284f7e.png",
+      "sourceSha256": "92570d156bb15e936856f290fc4282f9076ae28c6f807d6637083091ed84316e",
+      "promptSummary": "Anonymous returned stock receipt on courier table; no patient outcome, passenger clearance or address.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/courier-receipt.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 243216,
+          "sha256": "73a07066c0d5d0f7d630f4f60bff6e4d1d9ea231520329c1d1a3df14a10a668b"
+        },
+        {
+          "path": "public/art/courier-receipt-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 76875,
+          "sha256": "f521b8f7af80da48a6222d249e364419e4ebc3633a0e72cb6d1d373047d52c00"
+        }
+      ],
+      "review": "Source-familiar visual inspection: established identities/settings and earned-outcome boundaries; no readable names or addresses. Native mobile/desktop review follows integration."
+    },
+    {
+      "id": "hearing-filed",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/generated_images/exec-86565f9b-375d-48e9-994c-34f6045b2500.png",
+      "sourceSha256": "5025bd4bbfb3fcd7dbfdedefe5279ecae4c3eccd6a86d6076926dd36cb68a98d",
+      "promptSummary": "Filed bounded public account in records tray; separate private sleeve remains closed; no verdict, authenticated seal or identifying witness words.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/hearing-filed.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 220220,
+          "sha256": "6870a57e0b4ebdba00e2f2ef4e527cd6a28fc4fa2c3928c6b7fda597f9bbf2dc"
+        },
+        {
+          "path": "public/art/hearing-filed-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 63215,
+          "sha256": "171156b5dab2b10a2a863e766b891131ab292ad44dfcf426dd2870c842caaea0"
+        }
+      ],
+      "review": "Source-familiar visual inspection: established identities/settings and earned-outcome boundaries; no readable names or addresses. Native mobile/desktop review follows integration."
+    },
+    {
+      "id": "lumen-considering",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/generated_images/exec-a62854f7-acb3-4a16-a701-e29b1d7a7b28.png",
+      "sourceSha256": "efc51e71b16d2082bdf484b73972d2e5d3d0b7ab00d50a7175e744a97b807566",
+      "promptSummary": "Established Lumen identity in attentive consideration; no forgiveness or endorsement.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/lumen-considering.jpg",
+          "width": 600,
+          "height": 800,
+          "bytes": 85367,
+          "sha256": "79bffefe5110382fa87241d746fa3aa38b898341a33f80c4e61ca10517c75746"
+        }
+      ],
+      "review": "Source-familiar visual inspection: established identities/settings and earned-outcome boundaries; no readable names or addresses. Native mobile/desktop review follows integration."
+    },
+    {
+      "id": "nia-speaking",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/generated_images/exec-b3bbc995-b829-498a-82b5-e1da4391e5cf.png",
+      "sourceSha256": "642f5031c9547dad3fb53183bd691c53d2b8dde277abc49cc6e18ab7a068a3f0",
+      "promptSummary": "Established Nia identity delivering her own contact boundaries; no recording permission or disclosed location.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/nia-speaking.jpg",
+          "width": 600,
+          "height": 800,
+          "bytes": 109963,
+          "sha256": "f3b42abaefb793d62305fee03dff26cb080a3e65ef40106ede14072b5192a8c5"
+        }
+      ],
+      "review": "Source-familiar visual inspection: established identities/settings and earned-outcome boundaries; no readable names or addresses. Native mobile/desktop review follows integration."
     }
   ]
 }

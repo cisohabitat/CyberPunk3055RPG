@@ -4,7 +4,7 @@
   "truePeakCeilingDbtp": -1.5,
   "method": "ffmpeg EBU-R128 measurement of exact decoded deliveries; per-clip constant gain; independently measured post-trim signal. No compression, limiting, silence removal or audio file rewrite. Applies before the separate user voice-volume bus.",
   "source": "scripts/measure-voice-levels.py",
-  "runtimeMapSha256": "565678fa98948b0092ec6ac2b2c2b7b090a1b242833b9e8f934801a414284a96",
+  "runtimeMapSha256": "f51491e3721ca73dcef1adf891ad5c7735b8106f3a2a000a241e1307c3820140",
   "bindingSha256": "ecfff2a6154e7933eb173a4f0c51c79aa3e1f88b0fc7d95e3041ce5cceea4b3f",
   "clips": [
     {
@@ -1330,31 +1330,31 @@
     {
       "id": "voice-campaign-mara-5ba01af16fc4",
       "path": "public/audio/voice-campaign-mara-5ba01af16fc4.mp3",
-      "sha256": "a2054632389902a8605f31c1a562bd2f392b428f5f29c963c33ecf25661b37ce",
+      "sha256": "c90811871b567d3a4750e5bcb50d07e4df7bccf2c727ea306581a68281fac9a6",
       "source": {
-        "integratedLufs": -23.23,
-        "truePeakDbtp": -3.22
+        "integratedLufs": -20.0,
+        "truePeakDbtp": -1.74
       },
-      "trimDb": -0.27,
-      "gain": 0.96939327,
+      "trimDb": -3.5,
+      "gain": 0.66834392,
       "playback": {
-        "integratedLufs": -23.51,
-        "truePeakDbtp": -3.49
+        "integratedLufs": -23.5,
+        "truePeakDbtp": -5.24
       }
     },
     {
       "id": "voice-campaign-mara-6fa5c12c1612",
       "path": "public/audio/voice-campaign-mara-6fa5c12c1612.mp3",
-      "sha256": "1853bda76cff515af73aba31fc8a2d22bb67be79168b2fbede2a8d7bd1dfb1a2",
+      "sha256": "d1a98a32690f329372d05739c534ccecf9ca4098bbd3e6c24d91510277bb00c9",
       "source": {
-        "integratedLufs": -22.08,
-        "truePeakDbtp": -3.2
+        "integratedLufs": -19.99,
+        "truePeakDbtp": -1.72
       },
-      "trimDb": -1.42,
-      "gain": 0.84918048,
+      "trimDb": -3.51,
+      "gain": 0.6675749,
       "playback": {
         "integratedLufs": -23.5,
-        "truePeakDbtp": -4.62
+        "truePeakDbtp": -5.23
       }
     },
     {
@@ -1435,16 +1435,16 @@
     {
       "id": "voice-campaign-mara-ed6c9a89a527",
       "path": "public/audio/voice-campaign-mara-ed6c9a89a527.mp3",
-      "sha256": "50864c8b9246576cfedc4ae422a137ce3d42a0a498af9d0bf39779929899c100",
+      "sha256": "8a9e93ccf22f9dadce8d4d6897f617fe54015be9828bad2577dc1e532de01d08",
       "source": {
-        "integratedLufs": -21.75,
-        "truePeakDbtp": -3.29
+        "integratedLufs": -20.02,
+        "truePeakDbtp": -1.83
       },
-      "trimDb": -1.75,
-      "gain": 0.81752304,
+      "trimDb": -3.48,
+      "gain": 0.66988461,
       "playback": {
-        "integratedLufs": -23.5,
-        "truePeakDbtp": -5.04
+        "integratedLufs": -23.48,
+        "truePeakDbtp": -5.31
       }
     },
     {
@@ -1555,16 +1555,16 @@
     {
       "id": "voice-campaign-nia-pell-11dcdea73215",
       "path": "public/audio/voice-campaign-nia-pell-11dcdea73215.mp3",
-      "sha256": "74167e0c4b9a5d8393000e2d3be8ea62fead6d8245fa4002f8333d0847623f4a",
+      "sha256": "929d0285657a1a093690a088acde02d6c97fa44ec8479de1a684501c80d68d97",
       "source": {
-        "integratedLufs": -24.12,
-        "truePeakDbtp": -3.21
+        "integratedLufs": -20.33,
+        "truePeakDbtp": -1.63
       },
-      "trimDb": 0.62,
-      "gain": 1.07398941,
+      "trimDb": -3.17,
+      "gain": 0.6942246,
       "playback": {
-        "integratedLufs": -23.51,
-        "truePeakDbtp": -2.59
+        "integratedLufs": -23.5,
+        "truePeakDbtp": -4.8
       }
     },
     {
@@ -1600,31 +1600,31 @@
     {
       "id": "voice-campaign-nia-pell-5b29f7d4a657",
       "path": "public/audio/voice-campaign-nia-pell-5b29f7d4a657.mp3",
-      "sha256": "9aafe7da79f8ba705728424eb2fa7940944c0ed96926d0978bbe85ea29b71bae",
+      "sha256": "b3f1ae6a7a8b23cdbfbcd8d680f8781a0e96e6191ea709c76b919ea85dec6faa",
       "source": {
-        "integratedLufs": -22.57,
-        "truePeakDbtp": -3.3
+        "integratedLufs": -20.01,
+        "truePeakDbtp": -1.7
       },
-      "trimDb": -0.93,
-      "gain": 0.89846259,
+      "trimDb": -3.49,
+      "gain": 0.66911382,
       "playback": {
-        "integratedLufs": -23.51,
-        "truePeakDbtp": -4.23
+        "integratedLufs": -23.5,
+        "truePeakDbtp": -5.19
       }
     },
     {
       "id": "voice-campaign-nia-pell-9691a2f29041",
       "path": "public/audio/voice-campaign-nia-pell-9691a2f29041.mp3",
-      "sha256": "a74086aa33083d9aec2b3d78360d4be00cb52849d1a471652dbce9bd2321bcd6",
+      "sha256": "7340bb37e8b4aec20373ec9055ad6452ab79aa6f6872276d9143e56ecfc10360",
       "source": {
-        "integratedLufs": -20.6,
-        "truePeakDbtp": -3.29
+        "integratedLufs": -20.0,
+        "truePeakDbtp": -3.36
       },
-      "trimDb": -2.9,
-      "gain": 0.71614341,
+      "trimDb": -3.5,
+      "gain": 0.66834392,
       "playback": {
         "integratedLufs": -23.5,
-        "truePeakDbtp": -6.19
+        "truePeakDbtp": -6.86
       }
     },
     {
@@ -2695,16 +2695,16 @@
     {
       "id": "voice-campaign-sister-lumen-42a4c77e877a",
       "path": "public/audio/voice-campaign-sister-lumen-42a4c77e877a.mp3",
-      "sha256": "b286d9f0849c4d9f1c3e9e523114c4ee196ba3e017595181d89eef4d84ae49e5",
+      "sha256": "06212e51800e1a00b2c6d595473d77d50d4d7bb7af5609474b3af65fd1071510",
       "source": {
-        "integratedLufs": -20.02,
-        "truePeakDbtp": -3.26
+        "integratedLufs": -20.0,
+        "truePeakDbtp": -3.32
       },
-      "trimDb": -3.48,
-      "gain": 0.66988461,
+      "trimDb": -3.5,
+      "gain": 0.66834392,
       "playback": {
         "integratedLufs": -23.5,
-        "truePeakDbtp": -6.74
+        "truePeakDbtp": -6.82
       }
     },
     {
@@ -2860,16 +2860,16 @@
     {
       "id": "voice-campaign-sister-lumen-a1abd898aca3",
       "path": "public/audio/voice-campaign-sister-lumen-a1abd898aca3.mp3",
-      "sha256": "44fc486a6a95ec0fb02d8ef040e9c377f9e6adccd5fecf257890a42d8b142f8a",
+      "sha256": "0f71587e14f6b84912891e36dd3edea364288a5eee38f30e3e924b1f93704df9",
       "source": {
-        "integratedLufs": -19.57,
-        "truePeakDbtp": -3.17
+        "integratedLufs": -20.0,
+        "truePeakDbtp": -2.82
       },
-      "trimDb": -3.93,
-      "gain": 0.6360628,
+      "trimDb": -3.5,
+      "gain": 0.66834392,
       "playback": {
         "integratedLufs": -23.5,
-        "truePeakDbtp": -7.1
+        "truePeakDbtp": -6.32
       }
     },
     {
@@ -2905,16 +2905,16 @@
     {
       "id": "voice-campaign-sister-lumen-b87596f8bebe",
       "path": "public/audio/voice-campaign-sister-lumen-b87596f8bebe.mp3",
-      "sha256": "7459648591b35ca642deec3f4c1b081e56dc5458b80e83146ad6ef916182ae01",
+      "sha256": "8f3e0ea1451c87ecb399dd194b54ffac70cb6a8b4352e3ea07c0c53adc7a2ceb",
       "source": {
-        "integratedLufs": -20.23,
-        "truePeakDbtp": -3.3
+        "integratedLufs": -20.01,
+        "truePeakDbtp": -2.2
       },
-      "trimDb": -3.27,
-      "gain": 0.68627788,
+      "trimDb": -3.49,
+      "gain": 0.66911382,
       "playback": {
-        "integratedLufs": -23.51,
-        "truePeakDbtp": -6.57
+        "integratedLufs": -23.5,
+        "truePeakDbtp": -5.69
       }
     },
     {

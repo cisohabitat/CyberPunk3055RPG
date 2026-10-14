@@ -70,7 +70,32 @@ const MARA_WINDOW: Illustration = { src: "/art/mara-window.jpg", small: "/art/ma
 for (const id of ["act2_mara_company", "act2_mara_company_kept"]) ENCOUNTERS[id] = MARA_WINDOW;
 ENCOUNTERS.act2_witness_arrival = { src: "/art/nia-arrival.jpg", small: "/art/nia-arrival-small.jpg", caption: "Ward Nine · before the account", description: "Nia sits in her chair at a modest lamp-lit room table, one hand beside a closed notebook and the other on her chair arm." };
 ENCOUNTERS.act2_route_receipt = { src: "/art/kerr-handover.jpg", small: "/art/kerr-handover-small.jpg", caption: "Ward Four · the closed case", description: "Kerr checks an unmarked tag beside the strap of a closed brace case on the sheltered stall counter." };
-export function sceneIllustration(sceneId: string): Illustration | undefined { return ENCOUNTERS[sceneId]; }
+/** Only earned outcome flags select consequence art; ordinary saves keep neutral plates. */
+export const ILLUSTRATION_STAGING = [
+  {
+    scenes: ["act2_shelter_rooms", "act2_shelter_result"], allFlags: ["shelter_restored"], anyFlags: [],
+    noneFlags: ["shelter_declined", "shelter_unobserved", "shelter_hall", "shelter_failed"],
+    illustration: { src: "/art/shelter-restored.jpg", small: "/art/shelter-restored-small.jpg", caption: "Ward Four · the valve holds", description: "A fresh collar holds the shelter valve's dry seam; the emptied bucket stands aside and a clean cloth rests beside tools. Old stains remain. No beds or referral room are shown." },
+    reason: "A confirmed repair permits the dry valve detail; evacuation, failed work and unobserved moves retain neutral setting art. Repair establishes no room allocation, witness transfer or consent.",
+  },
+  {
+    scenes: ["act2_freight_result", "act3_freight_visit"], allFlags: [], anyFlags: ["freight_delivered", "freight_late_received"], noneFlags: [],
+    illustration: { src: "/art/courier-receipt.jpg", small: "/art/courier-receipt-small.jpg", caption: "Courier table · stock receipt confirmed", description: "An anonymous stock receipt with an indistinct stamp lies beside a closed reference ledger, pencil, metal cup and folded rust scarf. No parcel, passenger clearance or patient treatment is shown." },
+    reason: "Observed or subsequently recorded stock receipt permits the returned receipt illustration. Intake, promises and queries alone do not. Exposed or late routes retain their actual limits; this image grants no clearance or treatment.",
+  },
+  {
+    scenes: ["act3_arrival"], allFlags: ["testimony_done", "testimony_published"], anyFlags: [], noneFlags: ["testimony_withdrawn"],
+    illustration: { src: "/art/hearing-filed.jpg", small: "/art/hearing-filed-small.jpg", caption: "Ward Nine · the bounded account is filed", description: "A slim public-account folder rests in an ordinary records tray beside a set-down pencil and stopped recorder; a separate dark privacy sleeve stays closed away from the tray. No names, addresses or authenticated seal are legible." },
+    reason: "Only completed publication at the return to the wall shows the public filing tray. Drafts, discussion and withdrawal retain neutral art. Private sources remain separate, and publication supplies no new evidence, verdict or witness permission.",
+  },
+] as const;
+export function sceneIllustration(sceneId: string, flags: Readonly<Record<string, boolean>> = {}): Illustration | undefined {
+  const outcome = ILLUSTRATION_STAGING.find(rule => (rule.scenes as readonly string[]).includes(sceneId)
+    && rule.allFlags.every(flag => flags[flag])
+    && (!rule.anyFlags.length || rule.anyFlags.some(flag => flags[flag]))
+    && rule.noneFlags.every(flag => !flags[flag]));
+  return outcome?.illustration ?? ENCOUNTERS[sceneId];
+}
 
 for (const id of ["stall", "pay", "job_owner"]) ENCOUNTERS[id] = { src: "/art/quill-offer.jpg", small: "/art/quill-offer-small.jpg", caption: "Ward Four · an offer, unanswered", description: "Quill waits beside an untouched bowl at an amber-lit stall counter while rain falls beyond the awning." };
 for (const id of ["memo", "mara_why"]) ENCOUNTERS[id] = { src: "/art/mara-revelation.jpg", small: "/art/mara-revelation-small.jpg", caption: "The recorded hour · Mara", description: "Mara's recorded likeness sits beside the cyan memory apparatus; her steady gaze carries no present-day permission." };
@@ -108,6 +133,8 @@ for (const id of ["act2_helion", "act2_folio"]) PORTRAIT_VARIANTS[id] = { speake
 for (const id of ["act2_archive_door", "act3_testimony_hearing"]) PORTRAIT_VARIANTS[id] = { speaker: "Ives", src: "/art/ives-questioning.jpg" };
 for (const id of ["memory_cross_exam", "memory_assurance", "memory_channel", "memory_model_test", "memory_sequence_result"]) PORTRAIT_VARIANTS[id] = { speaker: "Mara", src: "/art/mara-questioning.jpg" };
 for (const id of ["memory_model_result", "memory_publication"]) PORTRAIT_VARIANTS[id] = { speaker: "Sister Lumen", src: "/art/lumen-challenging.jpg" };
+for (const id of ["vault_quiet", "act2_lumen_door", "act3_chapel_return"]) PORTRAIT_VARIANTS[id] = { speaker: "Sister Lumen", src: "/art/lumen-considering.jpg" };
+PORTRAIT_VARIANTS.act3_witness_visit = { speaker: "Nia Pell", src: "/art/nia-speaking.jpg" };
 export const PORTRAIT_STAGING = [
   { speaker: "Mara", asset: "/art/mara-boundary.jpg", scenes: ["act2_response_agenda", "act2_response_refusal", "act2_response_terms", "act2_response_dispatch", "act3_response_visit"], allFlags: ["response_public_refused"], reason: "Mara's actual refusal remains a boundary after a private reply; this expression grants no new permission." },
   { speaker: "Sister Lumen", asset: "/art/lumen-guarded.jpg", scenes: ["act2_lumen_quiet", "act3_lumen_boundary", "act3_chapel_return"], anyFlags: ["betrayed_lumen", "response_clinic_refused"], reason: "Recorded betrayal or refused clinic sponsorship informs guarded attention, without depicting forgiveness." },

@@ -80,3 +80,10 @@ Ives’s assessing/questioning portraits and closer hearing illustration were ge
 ### Action-specific mechanical sounds
 
 Four original authored procedural effects depict viewer contacts, an archive reader motor, the closed courier case and running hearing recorder. Seeded filtered noise, soft contact transients and short low motors use no recordings, third-party samples, music service or trained model. `scripts/scene-foley.mjs` and its optional authoring script retain the recipe; `qa/media/scene-foley.json` records source/delivery hashes, PCM16 signal metrics, neutral meanings and art review. No voice or painting is replaced by this cycle. Source-familiar simulated play remains the available development proxy.
+
+
+### Consequence media cycle
+
+Five additional AI-generated paintings use established Saint Shard settings/identities: repaired shelter valve, anonymous courier stock receipt, filed bounded public account, Lumen considering and Nia speaking. Image generation used the preceding local paintings as references; original PNGs remain retained, with resize/JPEG delivery only. Provenance and source/delivery hashes are in `qa/media/art-provenance.json`. No readable witness address or signature is depicted.
+
+Nine exact-word synthetic performance revisions retain the established Kokoro stock `af_heart` (Sister Lumen), `af_sarah` (Mara) and `af_nova` (Nia Pell) casting and existing model/style licenses. Optional offline phrase direction/mastering serves checked-in MP3s only. All earlier WAVs remain untouched; previous MP3 copies and source PCM are retained locally. See `qa/media/consequence-media.json`, campaign dialogue provenance, current voice-mastering map and media audition. These are generated development candidates, not commissioned actor performances.

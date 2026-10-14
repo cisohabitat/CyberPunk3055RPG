@@ -15,12 +15,15 @@ import { voiceLevel } from "../lib/voice-level";
 
 async function main() {
   const args = process.argv.slice(2), url = args[0];
-  if (!url || !/^https?:\/\//.test(url)) throw new Error("Provide URL, optionally --out PATH --workers 1..4 --automatic --only-new");
+  if (!url || !/^https?:\/\//.test(url)) throw new Error("Provide URL, optionally --out PATH --workers 1..4 --automatic --only-new --ids ID,ID");
   const argument = (name: string, fallback: string) => { const index = args.indexOf(name); return index < 0 ? fallback : args[index + 1]; };
   const out = argument("--out", "qa/production/reports/voices.json"), workers = Number(argument("--workers", "1"));
   if (!Number.isInteger(workers) || workers < 1 || workers > 4) throw new Error("Use 1..4 QA browser workers");
   const automatic = args.includes("--automatic"), used = new Set(bindings.map(line => line.id));
-  const lines = [...(args.includes("--only-new") ? [] : old), ...additions].filter(line => used.has(line.id));
+  const requested = args.includes("--ids") ? argument("--ids", "").split(",") : undefined;
+  const candidates = [...(args.includes("--only-new") ? [] : old), ...additions].filter(line => used.has(line.id));
+  if (requested && (!requested.length || requested.some(id => !candidates.some(line => line.id === id)))) throw new Error("Every --ids entry must identify an active delivery in this audit scope");
+  const lines = candidates.filter(line => !requested || requested.includes(line.id));
   const examples = dialogueExamples();
   const revision = execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8" }).trim();
   const dirty = Boolean(execFileSync("git", ["status", "--porcelain"], { encoding: "utf8" }).trim());

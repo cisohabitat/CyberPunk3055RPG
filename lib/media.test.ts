@@ -5,7 +5,7 @@ import { it } from "node:test";
 import provenance from "../qa/media/art-provenance.json";
 import decisions from "../qa/media/scene-art.json";
 import { SCENES } from "./story";
-import { portraitArt, sceneIllustration, SOURCE_ART, TITLE_ART, PORTRAIT_STAGING } from "./art";
+import { portraitArt, sceneIllustration, SOURCE_ART, TITLE_ART, PORTRAIT_STAGING, ILLUSTRATION_STAGING } from "./art";
 import { auditSceneArt } from "./scene-art";
 
 it("ships documented generated images without corrupting or enlarging their encoded files", () => {
@@ -28,6 +28,7 @@ it("ships documented generated images without corrupting or enlarging their enco
   for (const art of Object.values(SOURCE_ART)) for (const path of [art.src, art.small]) assert.ok(paths.has(`public${path}`), `Missing source art provenance: ${path}`);
   for (const id of ["memory_assurance", "memory_publication"]) assert.ok(paths.has(`public${portraitArt(SCENES[id].speaker, id)}`));
   for (const rule of PORTRAIT_STAGING) assert.ok(paths.has(`public${rule.asset}`), rule.asset);
+  for (const rule of ILLUSTRATION_STAGING) for (const asset of [rule.illustration.src, rule.illustration.small]) assert.ok(paths.has(`public${asset}`), asset);
 });
 
 it("stages actual boundaries and breaches without treating help as forgiveness", () => {

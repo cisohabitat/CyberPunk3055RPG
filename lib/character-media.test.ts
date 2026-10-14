@@ -1,3 +1,4 @@
+import consequence from "../qa/media/consequence-media.json";
 import assert from "node:assert/strict";
 import { it } from "node:test";
 import { readFileSync } from "node:fs";
@@ -36,12 +37,16 @@ it("locks exact actors, words, loudness and unchanged campaign bindings for the 
   for (const [id, sha] of Object.entries(phase.precedingVoiceSha256)) if (!changed.has(id)) {
     const revision = ives.performances.find(entry => entry.previousId === id);
     if (revision) assert.equal(revision.previousSha256, sha);
-    else assert.equal(hash(`public/audio/${id}.${id.startsWith("voice-campaign-") ? "mp3" : "wav"}`), sha);
+    else {
+      const later = consequence.performances.find(entry => entry.id === id);
+      if (later) assert.equal(later.previousSha256, sha);
+      else assert.equal(hash(`public/audio/${id}.${id.startsWith("voice-campaign-") ? "mp3" : "wav"}`), sha);
+    }
   }
 });
 
 it("selects expressions for the actual actor and earns Edda's assignment without erasing the inquiry", () => {
-  assert.deepEqual(decisions.expressionPortraits, [...staging.portraits, ...phase.portraits, ...ives.portraits]);
+  assert.deepEqual(decisions.expressionPortraits, [...staging.portraits, ...phase.portraits, ...ives.portraits, ...consequence.portraits]);
   for (const entry of phase.portraits) for (const scene of entry.scenes) {
     assert.equal(portraitArt(entry.speaker, scene), entry.asset);
     assert.notEqual(portraitArt("Dispatcher", scene), entry.asset);

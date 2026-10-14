@@ -304,33 +304,36 @@
       "segments": [
         {
           "text": "Copy it.",
-          "speed": 0.93,
-          "pauseAfter": 0.24
+          "speed": 0.98,
+          "pauseAfter": 0.18
         },
         {
           "text": "Then we both leave holding a fire.",
-          "speed": 0.93,
-          "pauseAfter": 0.24
+          "speed": 0.96,
+          "pauseAfter": 0.3
         },
         {
           "text": "Do not get clever and die.",
-          "speed": 0.93,
+          "speed": 0.9,
           "pauseAfter": 0
         }
       ],
+      "loudnessLufs": -20,
+      "integratedLufs": -20.0,
+      "truePeakDbtp": -3.32,
       "language": "en-us",
       "path": "public/audio/voice-campaign-sister-lumen-42a4c77e877a.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-sister-lumen-42a4c77e877a.wav",
-      "sourceSha256": "7325518e422b6c0999061ce15171e90fe04a64c9b9ca318b1f62e117d5b3ed93",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-sister-lumen-42a4c77e877a-delivery.wav",
-      "pcmDeliverySha256": "1075b82e1e763d4a14ddf7f84910154d14b60f8a7dc0adb09e0ec52829826767",
-      "sha256": "b286d9f0849c4d9f1c3e9e523114c4ee196ba3e017595181d89eef4d84ae49e5",
-      "bytes": 66860,
+      "sourceFile": "/workspace/generated_audio/consequence-media/voice-campaign-sister-lumen-42a4c77e877a.wav",
+      "sourceSha256": "da4d12b9a46e2c07ca5bdb9267537e339706f9960ce063f7d0746ba60a096c26",
+      "pcmDeliveryFile": "/workspace/generated_audio/consequence-media/voice-campaign-sister-lumen-42a4c77e877a-delivery.wav",
+      "pcmDeliverySha256": "5eb1a755f43a3405da29b24de8379802d094c8d13cfd26d3f1ee5db72da0d5e0",
+      "sha256": "06212e51800e1a00b2c6d595473d77d50d4d7bb7af5609474b3af65fd1071510",
+      "bytes": 65996,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 5.477916666666666,
-      "peak": 0.6838685274124146,
-      "rms": 0.10864898562431335
+      "durationSeconds": 5.422583333333334,
+      "peak": 0.6742726564407349,
+      "rms": 0.10647027939558029
     },
     {
       "id": "voice-campaign-kerr-3914d401fb83",
@@ -972,19 +975,34 @@
       "speed": 0.96,
       "text": "Don't put a person in that blank because I was too willing to leave it blank myself.",
       "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "segments": [
+        {
+          "text": "Don't put a person in that blank",
+          "speed": 0.94,
+          "pauseAfter": 0.23
+        },
+        {
+          "text": "because I was too willing to leave it blank myself.",
+          "speed": 0.91,
+          "pauseAfter": 0
+        }
+      ],
+      "loudnessLufs": -20,
+      "integratedLufs": -20.02,
+      "truePeakDbtp": -1.83,
       "language": "en-us",
       "path": "public/audio/voice-campaign-mara-ed6c9a89a527.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-mara-ed6c9a89a527.wav",
-      "sourceSha256": "99747b8e7dea7c37f69ad21a61ed4029ac49399a15df1707d85a41feea8bd585",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-mara-ed6c9a89a527-delivery.wav",
-      "pcmDeliverySha256": "9ffdc52d27d85b96d64375c5b3e166e3e4d2e42f22e5d0313279e597a8671ad9",
-      "sha256": "50864c8b9246576cfedc4ae422a137ce3d42a0a498af9d0bf39779929899c100",
-      "bytes": 57932,
+      "sourceFile": "/workspace/generated_audio/consequence-media/voice-campaign-mara-ed6c9a89a527.wav",
+      "sourceSha256": "472d7e0147ec65d2d39330a7378875a7dc2a159f1695f557ada1087bee349f72",
+      "pcmDeliveryFile": "/workspace/generated_audio/consequence-media/voice-campaign-mara-ed6c9a89a527-delivery.wav",
+      "pcmDeliverySha256": "2e3fe4fda88957017031f056dceaeb318486e015c2f7f88474b5eba237d94cd5",
+      "sha256": "8a9e93ccf22f9dadce8d4d6897f617fe54015be9828bad2577dc1e532de01d08",
+      "bytes": 58796,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 4.745958333333333,
-      "peak": 0.6786034107208252,
-      "rms": 0.09025697410106659
+      "durationSeconds": 4.806666666666667,
+      "peak": 0.8034340143203735,
+      "rms": 0.11141224950551987
     },
     {
       "id": "voice-campaign-edda-33e6d2a6a428",
@@ -1432,19 +1450,34 @@
       "speed": 0.93,
       "text": "I already decided you were a person.",
       "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "segments": [
+        {
+          "text": "I already decided",
+          "speed": 0.94,
+          "pauseAfter": 0.12
+        },
+        {
+          "text": "you were a person.",
+          "speed": 0.89,
+          "pauseAfter": 0
+        }
+      ],
+      "loudnessLufs": -20,
+      "integratedLufs": -20.0,
+      "truePeakDbtp": -2.82,
       "language": "en-us",
       "path": "public/audio/voice-campaign-sister-lumen-a1abd898aca3.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-sister-lumen-a1abd898aca3.wav",
-      "sourceSha256": "6c40c5c19e6c973b4640513d95ffa870e06d158efc5d44780c00ec90ca3d2866",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-sister-lumen-a1abd898aca3-delivery.wav",
-      "pcmDeliverySha256": "2c099733bbc0d903c2e66056f2609cd77fc77511ca85beed9ec617947e8f871d",
-      "sha256": "44fc486a6a95ec0fb02d8ef040e9c377f9e6adccd5fecf257890a42d8b142f8a",
-      "bytes": 30284,
+      "sourceFile": "/workspace/generated_audio/consequence-media/voice-campaign-sister-lumen-a1abd898aca3.wav",
+      "sourceSha256": "6fe237917bf7ec335c19360b95e6827861e3f4f7edf499c0e2f821533243b270",
+      "pcmDeliveryFile": "/workspace/generated_audio/consequence-media/voice-campaign-sister-lumen-a1abd898aca3-delivery.wav",
+      "pcmDeliverySha256": "126f8eea1dd843de1df6cc8de71f82150204ea22d44bb5e9944357421d00e0f8",
+      "sha256": "0f71587e14f6b84912891e36dd3edea364288a5eee38f30e3e924b1f93704df9",
+      "bytes": 37196,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 2.436,
-      "peak": 0.6824027299880981,
-      "rms": 0.11179465055465698
+      "durationSeconds": 3.0052916666666665,
+      "peak": 0.7118780612945557,
+      "rms": 0.10207919776439667
     },
     {
       "id": "voice-campaign-sister-lumen-eb5709fe89c8",
@@ -1642,28 +1675,36 @@
       "segments": [
         {
           "text": "An empty address field.",
-          "speed": 0.96,
-          "pauseAfter": 0.24
+          "speed": 0.95,
+          "pauseAfter": 0.29
         },
         {
-          "text": "Keep it that way when you tell the story.",
-          "speed": 0.96,
+          "text": "Keep it that way",
+          "speed": 0.91,
+          "pauseAfter": 0.15
+        },
+        {
+          "text": "when you tell the story.",
+          "speed": 0.97,
           "pauseAfter": 0
         }
       ],
+      "loudnessLufs": -20,
+      "integratedLufs": -20.01,
+      "truePeakDbtp": -1.7,
       "language": "en-us",
       "path": "public/audio/voice-campaign-nia-pell-5b29f7d4a657.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-nia-pell-5b29f7d4a657.wav",
-      "sourceSha256": "8bb2bd4b0635c501273be827aa477eaeb2b20fff8cd28abbbb17e7e1bcf453fc",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-nia-pell-5b29f7d4a657-delivery.wav",
-      "pcmDeliverySha256": "15e95dc923aefbe18fbb14c7d10e89602b9ea89b4d0fbd568ab4136408eed561",
-      "sha256": "9aafe7da79f8ba705728424eb2fa7940944c0ed96926d0978bbe85ea29b71bae",
-      "bytes": 65996,
+      "sourceFile": "/workspace/generated_audio/consequence-media/voice-campaign-nia-pell-5b29f7d4a657.wav",
+      "sourceSha256": "ae7844be621e9606703db26103f8c99d1c4913b49462b7f8ca9eaf4357b12695",
+      "pcmDeliveryFile": "/workspace/generated_audio/consequence-media/voice-campaign-nia-pell-5b29f7d4a657-delivery.wav",
+      "pcmDeliverySha256": "e3c6be449f77df60eb3976fc6e0d306d08b2bfbf2a0cf8cc54325579db37722c",
+      "sha256": "b3f1ae6a7a8b23cdbfbcd8d680f8781a0e96e6191ea709c76b919ea85dec6faa",
+      "bytes": 79244,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 5.420625,
-      "peak": 0.6801987290382385,
-      "rms": 0.08250919729471207
+      "durationSeconds": 6.52125,
+      "peak": 0.8089571595191956,
+      "rms": 0.10991892963647842
     },
     {
       "id": "voice-campaign-kerr-fd97386dd24d",
@@ -1990,27 +2031,30 @@
         {
           "text": "I chose to wait with you.",
           "speed": 0.96,
-          "pauseAfter": 0.24
+          "pauseAfter": 0.31
         },
         {
           "text": "Quiet doesn't mean I agreed to a recording.",
-          "speed": 0.96,
+          "speed": 0.91,
           "pauseAfter": 0
         }
       ],
+      "loudnessLufs": -20,
+      "integratedLufs": -20.33,
+      "truePeakDbtp": -1.63,
       "language": "en-us",
       "path": "public/audio/voice-campaign-nia-pell-11dcdea73215.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-nia-pell-11dcdea73215.wav",
-      "sourceSha256": "c125b80a1c460ce848ed25f86303150249aa17343547f30909c889217c64fe91",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-nia-pell-11dcdea73215-delivery.wav",
-      "pcmDeliverySha256": "b05967bc720e8337a13471a077e033f17d16a3eceacf4f16c38b693a661ab80e",
-      "sha256": "74167e0c4b9a5d8393000e2d3be8ea62fead6d8245fa4002f8333d0847623f4a",
-      "bytes": 70028,
+      "sourceFile": "/workspace/generated_audio/consequence-media/voice-campaign-nia-pell-11dcdea73215.wav",
+      "sourceSha256": "15e50af971c1e8f339592e8eb4b6651184dab0b2898cf08e762141ed70e2dbd3",
+      "pcmDeliveryFile": "/workspace/generated_audio/consequence-media/voice-campaign-nia-pell-11dcdea73215-delivery.wav",
+      "pcmDeliverySha256": "bf1bdc5bac02b1fd738b49e42fda651c0ccf60e48a2f0c7119a75567391a3f41",
+      "sha256": "929d0285657a1a093690a088acde02d6c97fa44ec8479de1a684501c80d68d97",
+      "bytes": 72332,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 5.752,
-      "peak": 0.686498761177063,
-      "rms": 0.07268591970205307
+      "durationSeconds": 5.929958333333333,
+      "peak": 0.8265491724014282,
+      "rms": 0.11186720430850983
     },
     {
       "id": "voice-campaign-kerr-2ca147e47255",
@@ -2088,28 +2132,36 @@
       "segments": [
         {
           "text": "You stopped when I asked.",
-          "speed": 0.96,
-          "pauseAfter": 0.24
+          "speed": 0.97,
+          "pauseAfter": 0.3
         },
         {
-          "text": "Remember that, not just the weight you carried.",
+          "text": "Remember that,",
+          "speed": 0.91,
+          "pauseAfter": 0.14
+        },
+        {
+          "text": "not just the weight you carried.",
           "speed": 0.96,
           "pauseAfter": 0
         }
       ],
+      "loudnessLufs": -20,
+      "integratedLufs": -20.0,
+      "truePeakDbtp": -3.36,
       "language": "en-us",
       "path": "public/audio/voice-campaign-nia-pell-9691a2f29041.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-nia-pell-9691a2f29041.wav",
-      "sourceSha256": "c5c7b542d482672958aa2bb5e18df7b315f8d5586c8d0fcb394343cd213200c8",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-nia-pell-9691a2f29041-delivery.wav",
-      "pcmDeliverySha256": "2e8fac6580e861376dbb8c1895d087f58e11478b613053cc2a0c49dc4f90b2cb",
-      "sha256": "a74086aa33083d9aec2b3d78360d4be00cb52849d1a471652dbce9bd2321bcd6",
-      "bytes": 67148,
+      "sourceFile": "/workspace/generated_audio/consequence-media/voice-campaign-nia-pell-9691a2f29041.wav",
+      "sourceSha256": "4adb7ce640b866155da02025f7e2c0aca7ce05e8e006541d2ee9994e22c04426",
+      "pcmDeliveryFile": "/workspace/generated_audio/consequence-media/voice-campaign-nia-pell-9691a2f29041-delivery.wav",
+      "pcmDeliverySha256": "39520f68fef7cdeebdeb4af458a891e8a8e05cd5a8b655b3283195d756a97cc4",
+      "sha256": "7340bb37e8b4aec20373ec9055ad6452ab79aa6f6872276d9143e56ecfc10360",
+      "bytes": 79820,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 5.513333333333334,
-      "peak": 0.6848263740539551,
-      "rms": 0.10272348672151566
+      "durationSeconds": 6.5553333333333335,
+      "peak": 0.6760342717170715,
+      "rms": 0.10429919511079788
     },
     {
       "id": "voice-campaign-kerr-a2e9087805ff",
@@ -2559,19 +2611,34 @@
       "speed": 0.93,
       "text": "A door is a small thing until someone has to answer for it.",
       "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "segments": [
+        {
+          "text": "A door is a small thing",
+          "speed": 0.97,
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "until someone has to answer for it.",
+          "speed": 0.9,
+          "pauseAfter": 0
+        }
+      ],
+      "loudnessLufs": -20,
+      "integratedLufs": -20.01,
+      "truePeakDbtp": -2.2,
       "language": "en-us",
       "path": "public/audio/voice-campaign-sister-lumen-b87596f8bebe.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-sister-lumen-b87596f8bebe.wav",
-      "sourceSha256": "382ecabd4f3bc74eec8e2f8cb61d6d613a2c1630d1adca0172d8cac544c731e4",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-sister-lumen-b87596f8bebe-delivery.wav",
-      "pcmDeliverySha256": "44358faa3db4115b55cb233b4977e89d5bb5edc7fa784ae7f98d40c8792fde20",
-      "sha256": "7459648591b35ca642deec3f4c1b081e56dc5458b80e83146ad6ef916182ae01",
-      "bytes": 47852,
+      "sourceFile": "/workspace/generated_audio/consequence-media/voice-campaign-sister-lumen-b87596f8bebe.wav",
+      "sourceSha256": "4cdc3d3f14eddab10a541088cff6849288e1586d68fe40730a32399246caca27",
+      "pcmDeliveryFile": "/workspace/generated_audio/consequence-media/voice-campaign-sister-lumen-b87596f8bebe-delivery.wav",
+      "pcmDeliverySha256": "9c8209e9e0d3012147e23ee1ad5a643a381e0d11cbd316158de847ba5be8b28e",
+      "sha256": "8f3e0ea1451c87ecb399dd194b54ffac70cb6a8b4352e3ea07c0c53adc7a2ceb",
+      "bytes": 50156,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 3.9053333333333335,
-      "peak": 0.6840911507606506,
-      "rms": 0.1108088344335556
+      "durationSeconds": 4.089333333333333,
+      "peak": 0.7667202949523926,
+      "rms": 0.10627397149801254
     },
     {
       "id": "voice-campaign-sister-lumen-62cf0bfa124b",
@@ -2893,33 +2960,36 @@
       "segments": [
         {
           "text": "There is a chip in this cup.",
-          "speed": 0.96,
-          "pauseAfter": 0.24
+          "speed": 0.97,
+          "pauseAfter": 0.21
         },
         {
           "text": "They always turn it away from me.",
-          "speed": 0.96,
-          "pauseAfter": 0.24
+          "speed": 0.99,
+          "pauseAfter": 0.31
         },
         {
           "text": "I want to decide which way it faces.",
-          "speed": 0.96,
+          "speed": 0.91,
           "pauseAfter": 0
         }
       ],
+      "loudnessLufs": -20,
+      "integratedLufs": -20.0,
+      "truePeakDbtp": -1.74,
       "language": "en-us",
       "path": "public/audio/voice-campaign-mara-5ba01af16fc4.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-mara-5ba01af16fc4.wav",
-      "sourceSha256": "93f4db3f5c1693f94c36be774022b402e15a5bcf3f4fef91702124aca56a0419",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-mara-5ba01af16fc4-delivery.wav",
-      "pcmDeliverySha256": "bc46d28f5d73f6287d69f44469620872b4466343db4abf2a8b4589bcbc1c383e",
-      "sha256": "a2054632389902a8605f31c1a562bd2f392b428f5f29c963c33ecf25661b37ce",
-      "bytes": 78956,
+      "sourceFile": "/workspace/generated_audio/consequence-media/voice-campaign-mara-5ba01af16fc4.wav",
+      "sourceSha256": "50c0e638ef1e61e3df7e320536e7d02d8e269752da5bbd2c9c64f0850105d7bb",
+      "pcmDeliveryFile": "/workspace/generated_audio/consequence-media/voice-campaign-mara-5ba01af16fc4-delivery.wav",
+      "pcmDeliverySha256": "a4aee8245bffa2cd585b8b091a8ee2e811b5130a4e1bda138357f87adcaa4641",
+      "sha256": "c90811871b567d3a4750e5bcb50d07e4df7bccf2c727ea306581a68281fac9a6",
+      "bytes": 78668,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 6.483291666666666,
-      "peak": 0.6844931840896606,
-      "rms": 0.07509817183017731
+      "durationSeconds": 6.460625,
+      "peak": 0.8034014105796814,
+      "rms": 0.1097107008099556
     },
     {
       "id": "voice-campaign-mara-167e67a571d6",
@@ -3714,28 +3784,31 @@
       "segments": [
         {
           "text": "Private meant private.",
-          "speed": 0.96,
-          "pauseAfter": 0.24
+          "speed": 0.94,
+          "pauseAfter": 0.35
         },
         {
           "text": "I'm glad that sentence survived the journey.",
-          "speed": 0.96,
+          "speed": 0.98,
           "pauseAfter": 0
         }
       ],
+      "loudnessLufs": -20,
+      "integratedLufs": -19.99,
+      "truePeakDbtp": -1.72,
       "language": "en-us",
       "path": "public/audio/voice-campaign-mara-6fa5c12c1612.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-mara-6fa5c12c1612.wav",
-      "sourceSha256": "f6bfab7302aced0b42d0be04be6b9cbe8962894370f72319c97484202a4b23fd",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-mara-6fa5c12c1612-delivery.wav",
-      "pcmDeliverySha256": "bc70a509cd220f9c47c7a677f39e08b1ee3bae99150276ce1d650dfeab786fb2",
-      "sha256": "1853bda76cff515af73aba31fc8a2d22bb67be79168b2fbede2a8d7bd1dfb1a2",
-      "bytes": 55340,
+      "sourceFile": "/workspace/generated_audio/consequence-media/voice-campaign-mara-6fa5c12c1612.wav",
+      "sourceSha256": "8c6c6a7e2a630a79d17bd705ae269fffa8c5660f7d9a9282a7bef7ce206e1343",
+      "pcmDeliveryFile": "/workspace/generated_audio/consequence-media/voice-campaign-mara-6fa5c12c1612-delivery.wav",
+      "pcmDeliverySha256": "76959695bb11432419e37016556218e9ff29e1fed5aff45ef965c9a06c1828d6",
+      "sha256": "d1a98a32690f329372d05739c534ccecf9ca4098bbd3e6c24d91510277bb00c9",
+      "bytes": 55916,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 4.516,
-      "peak": 0.6886332035064697,
-      "rms": 0.08688295632600784
+      "durationSeconds": 4.581958333333334,
+      "peak": 0.808545708656311,
+      "rms": 0.11062303930521011
     },
     {
       "id": "voice-campaign-ren-4f73bedda5ff",

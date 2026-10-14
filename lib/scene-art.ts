@@ -1,5 +1,5 @@
 import decisions from "../qa/media/scene-art.json";
-import { placeArt, portraitArt, sceneIllustration, PORTRAIT_STAGING } from "./art";
+import { placeArt, portraitArt, sceneIllustration, PORTRAIT_STAGING, ILLUSTRATION_STAGING } from "./art";
 import type { Scene } from "./types";
 
 export type SceneArtDecision = {
@@ -10,7 +10,7 @@ export type SceneArtDecision = {
 
 /** Authoring/QA only: never silently assign art to a newly added scene. */
 export function auditSceneArt(scenes: Record<string, Scene>, source: unknown = decisions): Record<string, SceneArtDecision> {
-  const manifest = source as { version?: unknown; decisions?: unknown; variants?: unknown } | null;
+  const manifest = source as { version?: unknown; decisions?: unknown; variants?: unknown; illustrationVariants?: unknown } | null;
   if (!manifest || manifest.version !== 1 || !Array.isArray(manifest.decisions)) throw new Error("Invalid scene art manifest");
   const result: Record<string, SceneArtDecision> = {};
   for (const entry of manifest.decisions) {
@@ -38,6 +38,12 @@ export function auditSceneArt(scenes: Record<string, Scene>, source: unknown = d
     if (!scenes[id] || scenes[id].speaker !== rule.speaker) throw new Error(`Conditional portrait speaker mismatch: ${id}`);
     const flags = Object.fromEntries(("allFlags" in rule ? rule.allFlags : rule.anyFlags).map(flag => [flag, true]));
     if (portraitArt(rule.speaker, id, flags) !== rule.asset) throw new Error(`Conditional portrait selection mismatch: ${id}`);
+  }
+  if (JSON.stringify(manifest.illustrationVariants) !== JSON.stringify(ILLUSTRATION_STAGING)) throw new Error("Conditional illustration catalog disagrees with earned outcome staging");
+  for (const rule of ILLUSTRATION_STAGING) for (const id of rule.scenes) {
+    if (!scenes[id] || result[id]?.treatment !== "illustration") throw new Error(`Conditional illustration scene mismatch: ${id}`);
+    const flags = Object.fromEntries([...rule.allFlags, ...rule.anyFlags].map(flag => [flag, true]));
+    if (sceneIllustration(id, flags)?.src !== rule.illustration.src) throw new Error(`Conditional illustration selection mismatch: ${id}`);
   }
   return result;
 }

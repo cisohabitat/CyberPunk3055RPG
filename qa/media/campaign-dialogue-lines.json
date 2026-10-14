@@ -154,20 +154,21 @@
     "segments": [
       {
         "text": "Copy it.",
-        "speed": 0.93,
-        "pauseAfter": 0.24
+        "speed": 0.98,
+        "pauseAfter": 0.18
       },
       {
         "text": "Then we both leave holding a fire.",
-        "speed": 0.93,
-        "pauseAfter": 0.24
+        "speed": 0.96,
+        "pauseAfter": 0.3
       },
       {
         "text": "Do not get clever and die.",
-        "speed": 0.93,
+        "speed": 0.9,
         "pauseAfter": 0
       }
-    ]
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-kerr-3914d401fb83",
@@ -492,7 +493,20 @@
     "voice": "af_sarah",
     "speed": 0.96,
     "text": "Don't put a person in that blank because I was too willing to leave it blank myself.",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions."
+    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+    "segments": [
+      {
+        "text": "Don't put a person in that blank",
+        "speed": 0.94,
+        "pauseAfter": 0.23
+      },
+      {
+        "text": "because I was too willing to leave it blank myself.",
+        "speed": 0.91,
+        "pauseAfter": 0
+      }
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-edda-33e6d2a6a428",
@@ -703,7 +717,20 @@
     "voice": "af_heart",
     "speed": 0.93,
     "text": "I already decided you were a person.",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions."
+    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+    "segments": [
+      {
+        "text": "I already decided",
+        "speed": 0.94,
+        "pauseAfter": 0.12
+      },
+      {
+        "text": "you were a person.",
+        "speed": 0.89,
+        "pauseAfter": 0
+      }
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-sister-lumen-eb5709fe89c8",
@@ -808,15 +835,21 @@
     "segments": [
       {
         "text": "An empty address field.",
-        "speed": 0.96,
-        "pauseAfter": 0.24
+        "speed": 0.95,
+        "pauseAfter": 0.29
       },
       {
-        "text": "Keep it that way when you tell the story.",
-        "speed": 0.96,
+        "text": "Keep it that way",
+        "speed": 0.91,
+        "pauseAfter": 0.15
+      },
+      {
+        "text": "when you tell the story.",
+        "speed": 0.97,
         "pauseAfter": 0
       }
-    ]
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-kerr-fd97386dd24d",
@@ -1011,14 +1044,15 @@
       {
         "text": "I chose to wait with you.",
         "speed": 0.96,
-        "pauseAfter": 0.24
+        "pauseAfter": 0.31
       },
       {
         "text": "Quiet doesn't mean I agreed to a recording.",
-        "speed": 0.96,
+        "speed": 0.91,
         "pauseAfter": 0
       }
-    ]
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-kerr-2ca147e47255",
@@ -1070,15 +1104,21 @@
     "segments": [
       {
         "text": "You stopped when I asked.",
-        "speed": 0.96,
-        "pauseAfter": 0.24
+        "speed": 0.97,
+        "pauseAfter": 0.3
       },
       {
-        "text": "Remember that, not just the weight you carried.",
+        "text": "Remember that,",
+        "speed": 0.91,
+        "pauseAfter": 0.14
+      },
+      {
+        "text": "not just the weight you carried.",
         "speed": 0.96,
         "pauseAfter": 0
       }
-    ]
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-kerr-a2e9087805ff",
@@ -1337,7 +1377,20 @@
     "voice": "af_heart",
     "speed": 0.93,
     "text": "A door is a small thing until someone has to answer for it.",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions."
+    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+    "segments": [
+      {
+        "text": "A door is a small thing",
+        "speed": 0.97,
+        "pauseAfter": 0.16
+      },
+      {
+        "text": "until someone has to answer for it.",
+        "speed": 0.9,
+        "pauseAfter": 0
+      }
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-sister-lumen-62cf0bfa124b",
@@ -1525,20 +1578,21 @@
     "segments": [
       {
         "text": "There is a chip in this cup.",
-        "speed": 0.96,
-        "pauseAfter": 0.24
+        "speed": 0.97,
+        "pauseAfter": 0.21
       },
       {
         "text": "They always turn it away from me.",
-        "speed": 0.96,
-        "pauseAfter": 0.24
+        "speed": 0.99,
+        "pauseAfter": 0.31
       },
       {
         "text": "I want to decide which way it faces.",
-        "speed": 0.96,
+        "speed": 0.91,
         "pauseAfter": 0
       }
-    ]
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-mara-167e67a571d6",
@@ -2000,15 +2054,16 @@
     "segments": [
       {
         "text": "Private meant private.",
-        "speed": 0.96,
-        "pauseAfter": 0.24
+        "speed": 0.94,
+        "pauseAfter": 0.35
       },
       {
         "text": "I'm glad that sentence survived the journey.",
-        "speed": 0.96,
+        "speed": 0.98,
         "pauseAfter": 0
       }
-    ]
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-ren-4f73bedda5ff",
