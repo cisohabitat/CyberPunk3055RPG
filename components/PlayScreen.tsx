@@ -15,7 +15,8 @@ import { DISTRICT_ART, placeArt, sceneIllustration } from "@/lib/art";
 import { SceneIllustration } from "./SceneIllustration";
 import { ORIGINS, STRAIN_MAX, STAT_INFO } from "@/lib/character";
 import { commitChoice, effectPreview, checkResourceCosts, getScene, presentChoices, previewCheck, runDelta, sceneText, type VisibleChoice } from "@/lib/engine";
-import { locationCue, playCue, sceneSoundPlan, setBed } from "@/lib/sound";
+import { locationCue, playCue, playSceneCue, sceneSoundPlan, setBed } from "@/lib/sound";
+import { sceneInteractionCue, type SceneCueName } from "@/lib/scene-cues";
 import { rememberEnding } from "@/lib/storage";
 import type { Preferences } from "@/lib/preferences";
 import { ObjectiveBrief } from "./ObjectiveBrief";
@@ -89,6 +90,7 @@ export function PlayScreen({
   const prior = useRef(state);
   const readingFocus = useRef<{ sceneId: string; index: number } | null>(null);
   const priorSound = useRef<{ location: string; on: boolean; ending: boolean } | null>(null);
+  const queuedSceneCue = useRef<{ state: GameState; name: SceneCueName } | null>(null);
   const prose = sceneText(scene, state);
   const paragraphs = prose.split(/\n\n+/).filter((paragraph) => paragraph.length > 0);
   const visibleCount = preferences.reading === "all" ? paragraphs.length : Math.min(shown?.sceneId === scene.id && shown.prose === prose ? shown.count : 1, paragraphs.length);
@@ -98,6 +100,7 @@ export function PlayScreen({
   const recordedChoice = state.pendingCheck ? choices.find((choice) => choice.id === state.pendingCheck?.choiceId) : null;
   const activeChoice = recordedChoice ?? pending;
   const voicesEnabled = sound && preferences.voices > 0 && !modalOpen && !sheetOpen && !notebookOpen && !confirmAbandon && !activeChoice;
+  const sceneCuesEnabled = sound && preferences.effects > 0 && !modalOpen && !sheetOpen && !notebookOpen && !confirmAbandon && !activeChoice;
   const playing = voicesEnabled && speaking?.scene === scene.id && dialogueQueue.some(line => line.key === speaking.key) ? speaking : null;
   const spokenRange = playing ? spokenDialogueRange(visibleText, playing) : undefined;
   let paragraphOffset = 0;
@@ -131,6 +134,12 @@ export function PlayScreen({
   }, [sound, preferences.sound, mood, district, scene.id, scene.location, scene.ending]);
 
   useEffect(() => () => { setBed(false); }, []);
+
+  useEffect(() => {
+    const queued = queuedSceneCue.current;
+    queuedSceneCue.current = null;
+    if (sceneCuesEnabled && queued?.state === state) return playSceneCue(queued.name);
+  }, [state, sceneCuesEnabled]);
 
   useEffect(() => {
     if (prior.current !== state) {
@@ -193,6 +202,12 @@ export function PlayScreen({
 
   const openPromises = unresolvedPromises(state);
 
+  function commit(next: GameState, choiceId: string) {
+    const cue = sound && preferences.effects > 0 ? sceneInteractionCue(state, choiceId, next) : undefined;
+    queuedSceneCue.current = cue ? { state: next, name: cue } : null;
+    onChange(next);
+  }
+
   function pick(choice: VisibleChoice) {
     if (!choice.enabled) return;
     setFault("");
@@ -202,7 +217,7 @@ export function PlayScreen({
     }
     try {
       const next = commitChoice(state, choice).state;
-      onChange(next);
+      commit(next, choice.id);
       const cue = memoryInteractionCue(state, choice.id, next);
       if (cue) playCue(cue);
     } catch {
@@ -440,7 +455,7 @@ export function PlayScreen({
           onClose={() => setPending(null)}
           onCommit={(next) => {
             setPending(null);
-            onChange(next);
+            commit(next, activeChoice.id);
           }}
         />
       )}

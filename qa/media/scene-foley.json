@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "method": "Original seeded procedural synthesis; filtered noise, subdued contact transients and short mechanical motors. No samples, recordings, trained model or music service. 8ms onset / 25ms tail fades; checked-in mono PCM16 WAV deliveries.",
+  "sourceSha256": {
+    "scripts/scene-foley.mjs": "3c30f032b5c92e45936d867259a32de742ed772a6f7c81ced8dda182a51d4303",
+    "scripts/author-scene-foley.mjs": "32feabe2f110b5c068f413ae8d3344495c1d1d2e30fd44b725698c22cbee610b"
+  },
+  "mix": {
+    "level": 0.5,
+    "speechDuck": 0.35
+  },
+  "clips": [
+    {
+      "id": "foley-viewer",
+      "path": "public/audio/foley-viewer.wav",
+      "description": "Viewer contact, muted glass resonance and short lens-motor texture on a newly inspected fragment. No authentication or memory verdict.",
+      "sha256": "f929897084c369d5d076a590dc5df7b223e7533d9d0a0c7a0949d20f4feaa328",
+      "bytes": 40616,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 0.92,
+      "peak": 0.124542236328125,
+      "rms": 0.011521209682132187,
+      "maxSampleJump": 0.134552001953125
+    },
+    {
+      "id": "foley-reader",
+      "path": "public/audio/foley-reader.wav",
+      "description": "Dry reader contacts and a brief low transport motor on a committed index/key query, identical across success and failure. No success melody or authentication claim.",
+      "sha256": "45a33015a14052f96be39a2638499a5598dce83df2cf643fb84ec5943a28f702",
+      "bytes": 56492,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 1.28,
+      "peak": 0.129669189453125,
+      "rms": 0.01128347588036711,
+      "maxSampleJump": 0.159912109375
+    },
+    {
+      "id": "foley-case",
+      "path": "public/audio/foley-case.wav",
+      "description": "Soft closed-case shell and strap contact during inspection of the intact seal. No opening latch, broken seal, handover or receipt.",
+      "sha256": "0dfb6a671fee9c659f5caacd2e7ed65ada98e8cab05cb2b9ba55600a80a6ac59",
+      "bytes": 33560,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 0.76,
+      "peak": 0.10797119140625,
+      "rms": 0.011147062791974374,
+      "maxSampleJump": 0.119598388671875
+    },
+    {
+      "id": "foley-recorder",
+      "path": "public/audio/foley-recorder.wav",
+      "description": "A restrained running-recorder transport and light table contact on entering the hearing. No new public quotation permission, filed account or verdict.",
+      "sha256": "e256378750c091af5272b1461edd1aa1516b8b8db05e67e75ccb5fea0fdebd61",
+      "bytes": 63548,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 1.44,
+      "peak": 0.124603271484375,
+      "rms": 0.00984943878386635,
+      "maxSampleJump": 0.158355712890625
+    }
+  ],
+  "review": "Technical signal and source-familiar native-browser review; not physical-device or human listening acceptance.",
+  "sceneReview": {
+    "storyChanges": false,
+    "speakerOrQuotationChanges": false,
+    "newArtworkNeeded": false,
+    "reason": "These cues describe existing neutral devices during their authored actions. Existing viewer/archive/canal and hearing illustrations remain appropriate; no image supplies a new outcome or source permission. All 195 framed scenes and two text cards retain their explicit decisions.",
+    "references": [
+      "qa/media/scene-art.json",
+      "lib/art.ts",
+      "qa/media/voice-mastering.json",
+      "qa/media/campaign-dialogue-bindings.json"
+    ]
+  }
+}

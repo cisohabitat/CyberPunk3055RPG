@@ -4,9 +4,11 @@ export type AudioReview = {
   liveSources: number; peakLiveSources: number; starts: number; stops: number;
   started: string[]; decoded: string[]; disposed: string[]; cleared: string[];
   voiceLevels: { file: string; gain: number }[];
+  sceneCueLevels: { file: string; gain: number }[];
+  stoppedSources: string[];
 };
 export function installAudioReview({ suppressEnded = false }: { suppressEnded?: boolean } = {}) {
-  const review: AudioReview = { sourcesCreated: 0, sourcesDisposed: 0, buffersCleared: 0, liveSources: 0, peakLiveSources: 0, starts: 0, stops: 0, started: [], decoded: [], disposed: [], cleared: [], voiceLevels: [] };
+  const review: AudioReview = { sourcesCreated: 0, sourcesDisposed: 0, buffersCleared: 0, liveSources: 0, peakLiveSources: 0, starts: 0, stops: 0, started: [], decoded: [], disposed: [], cleared: [], voiceLevels: [], sceneCueLevels: [], stoppedSources: [] };
   (window as unknown as { audioReview: AudioReview }).audioReview = review;
   const ids = new WeakMap<AudioBufferSourceNode, number>(), live = new Set<number>();
   const dataNames = new WeakMap<ArrayBuffer, string>(), bufferNames = new WeakMap<AudioBuffer, string>();
@@ -38,6 +40,10 @@ export function installAudioReview({ suppressEnded = false }: { suppressEnded?: 
   AudioBufferSourceNode.prototype.start = function(...args: Parameters<typeof start>) {
     review.starts++; remember(review.started, this.buffer ? bufferNames.get(this.buffer) ?? "unnamed" : "empty");
     const file = this.buffer ? bufferNames.get(this.buffer) : undefined;
+    if (file?.startsWith("foley-")) {
+      review.sceneCueLevels.push({ file, gain: gains.get(this)?.gain.value ?? NaN });
+      if (review.sceneCueLevels.length > 128) review.sceneCueLevels.shift();
+    }
     if (file?.startsWith("voice-")) {
       review.voiceLevels.push({ file, gain: gains.get(this)?.gain.value ?? NaN });
       if (review.voiceLevels.length > 128) review.voiceLevels.shift();
@@ -45,7 +51,7 @@ export function installAudioReview({ suppressEnded = false }: { suppressEnded?: 
     return start.apply(this, args);
   };
   const stop = AudioBufferSourceNode.prototype.stop;
-  AudioBufferSourceNode.prototype.stop = function(...args: Parameters<typeof stop>) { review.stops++; return stop.apply(this, args); };
+  AudioBufferSourceNode.prototype.stop = function(...args: Parameters<typeof stop>) { review.stops++; remember(review.stoppedSources, this.buffer ? bufferNames.get(this.buffer) ?? "unnamed" : "empty"); return stop.apply(this, args); };
   const disconnect = AudioBufferSourceNode.prototype.disconnect;
   AudioBufferSourceNode.prototype.disconnect = function() {
     const id = ids.get(this); if (id !== undefined && live.delete(id)) {
