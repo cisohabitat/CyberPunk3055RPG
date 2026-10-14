@@ -2,19 +2,21 @@ import { test, expect } from "@playwright/test";
 import { installAudioReview, type AudioReview } from "../qa/production/audio-review";
 import { dialogueExamples } from "../qa/production/dialogue-examples";
 
-test("enabled menu music waits for a menu interaction and starts without opting in", async ({ page }) => {
+test("enabled menu music autoplays when permitted or starts on interaction without opting in", async ({ page }) => {
   await page.addInitScript(installAudioReview, {});
   const requests: string[] = [], errors: string[] = [];
   page.on("request", request => { if (request.url().includes("/audio/theme-title.flac")) requests.push(request.url()); });
   page.on("pageerror", error => errors.push(error.message));
   await page.goto("/");
   await expect(page.getByTestId("title-screen")).toBeVisible();
-  await expect(page.getByTestId("title-music")).toContainText("first menu interaction");
-  expect(requests).toEqual([]);
+  await expect(page.getByTestId("title-music")).toContainText(/autoplay is waiting|Loading Under the Awning|now playing/);
+  if ((await page.getByTestId("title-music").innerText()).includes("autoplay is waiting")) expect(requests).toEqual([]);
   await page.getByRole("heading", { name: "Saint Shard", exact: true }).click();
   await expect.poll(() => page.evaluate(() => (window as unknown as { audioReview: AudioReview }).audioReview.started)).toContain("theme-title.flac");
   expect(requests).toHaveLength(1);
+  expect(await page.evaluate(() => (window as unknown as { audioReview: AudioReview }).audioReview.started.filter(file => file === "theme-title.flac"))).toHaveLength(1);
   await page.getByRole("button", { name: "Stop menu music", exact: true }).click();
+  await expect.poll(() => page.evaluate(() => (window as unknown as { audioReview: AudioReview }).audioReview.liveSources)).toBe(0);
   expect(errors).toEqual([]);
 });
 

@@ -73,7 +73,9 @@ test('direct guide respects saved mute and pagehide cancels a later theme start'
 });
 for(const policy of ['no-user-gesture-required','document-user-activation-required'])test(`native title autoplay policy ${policy}`,async({playwright,baseURL},testInfo)=>{
   test.skip(testInfo.project.name!=='chromium','Native Chromium policy coverage runs once; ordinary fallback runs in every browser.');
-  const browser=await playwright.chromium.launch({executablePath:process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH,args:[`--autoplay-policy=${policy}`]});
+  // Playwright's headless shell permits Web Audio regardless of this flag.
+  // Full Chromium is required to exercise real document-activation policy.
+  const browser=await playwright.chromium.launch({channel:'chromium',executablePath:process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH,args:[`--autoplay-policy=${policy}`]});
   try{
     const context=await browser.newContext({baseURL});const page=await context.newPage();await page.addInitScript(installAudioReview,{});
     const requests:string[]=[];page.on('request',r=>{if(r.url().includes('/audio/'))requests.push(r.url());});

@@ -2,7 +2,9 @@ import { chromium } from "playwright";
 import { mkdirSync,readFileSync,writeFileSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 const base=process.argv[2]; if(!base||!/^https?:\/\//.test(base)) throw new Error("Supply a running production URL: npm run production:probe -- http://127.0.0.1:3116");
-const browser=await chromium.launch({...(process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH?{executablePath:process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH}:{}),args:["--no-sandbox"]});
+// Model a first visit with no prior permission. Headless shell unconditionally
+// permits Web Audio, so use full Chromium and its native activation policy.
+const browser=await chromium.launch({channel:"chromium",...(process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH?{executablePath:process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH}:{}),args:["--no-sandbox","--autoplay-policy=document-user-activation-required"]});
 const samples=[];const initialTransferBudget=JSON.parse(readFileSync("qa/production/budgets.json","utf8")).initialTransferBytes;if(!Number.isSafeInteger(initialTransferBudget)||initialTransferBudget<=0)throw new Error("Invalid initial transfer budget");
 try {
   for(const width of [390,1440]) for(const artwork of ["full","none"]) {
@@ -24,6 +26,6 @@ try {
     await page.screenshot({path:`/tmp/production-probe-${width}-${artwork}.png`,fullPage:true});await context.close();
   }
 }finally{await browser.close();}
-mkdirSync("qa/production/reports",{recursive:true});const report={revision:execFileSync("git",["rev-parse","HEAD"],{encoding:"utf8"}).trim(),dirty:Boolean(execFileSync("git",["status","--porcelain"],{encoding:"utf8"}).trim()),initialTransferBudget,samples,limitations:["Four synthetic samples on the automation host, not p75/p95 field data or named physical devices.","Elapsed-to-ready includes automated form entry and network-idle waits; it is not LCP or INP.","titleLcpMs measures this navigation's title screen. Encoded resource bytes are Resource Timing measurements, not all wire overhead."]};
+mkdirSync("qa/production/reports",{recursive:true});const report={revision:execFileSync("git",["rev-parse","HEAD"],{encoding:"utf8"}).trim(),dirty:Boolean(execFileSync("git",["status","--porcelain"],{encoding:"utf8"}).trim()),initialTransferBudget,autoplayPolicy:"Full Chromium; first visit requires document activation, with no prior origin permission.",samples,limitations:["Four synthetic samples on the automation host, not p75/p95 field data or named physical devices.","Elapsed-to-ready includes automated form entry and network-idle waits; it is not LCP or INP.","titleLcpMs measures this navigation's title screen. Encoded resource bytes are Resource Timing measurements, not all wire overhead.","A previously permitted visit can autoplay the separate 2.6 MB menu theme before gameplay; these samples measure the first-visit activation policy."]};
 writeFileSync("qa/production/reports/performance-probe.json",JSON.stringify(report,null,2)+"\n");console.log(JSON.stringify(report));
 if(samples.some(sample=>sample.encodedResourceBytes+sample.htmlBytes>initialTransferBudget||sample.overflow||!sample.goalVisible||(sample.artwork==="none"&&sample.artworkRequests!==0)))process.exitCode=1;
