@@ -73,16 +73,38 @@ test('direct guide respects saved mute and pagehide cancels a later theme start'
 });
 for(const policy of ['no-user-gesture-required','document-user-activation-required'])test(`native title autoplay policy ${policy}`,async({playwright,baseURL},testInfo)=>{
   test.skip(testInfo.project.name!=='chromium','Native Chromium policy coverage runs once; ordinary fallback runs in every browser.');
-  // Playwright's headless shell permits Web Audio regardless of this flag.
-  // Full Chromium is required to exercise real document-activation policy.
-  const browser=await playwright.chromium.launch({channel:'chromium',executablePath:process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH,args:[`--autoplay-policy=${policy}`]});
+  const args=[`--autoplay-policy=${policy}`];
+  if(policy==='document-user-activation-required')args.push('--disable-features=PreloadMediaEngagementData,MediaEngagementBypassAutoplayPolicies');
+  const browser=await playwright.chromium.launch({channel:'chromium',executablePath:process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH,args});
   try{
     const context=await browser.newContext({baseURL});const page=await context.newPage();await page.addInitScript(installAudioReview,{});
+    await page.addInitScript(()=>{
+      const resume=AudioContext.prototype.resume;
+      AudioContext.prototype.resume=function(){
+        (window as unknown as {menuPolicyContext:AudioContext}).menuPolicyContext=this;
+        return resume.call(this);
+      };
+    });
+    const session=await context.newCDPSession(page);
+    // Ordinary Playwright evaluation/locator checks can supply user activation.
+    // Observe native permission before using those checks or sending any input.
+    const inspect=async()=>{
+      const result=await session.send('Runtime.evaluate',{userGesture:false,returnByValue:true,expression:`({
+        active:navigator.userActivation.hasBeenActive,
+        title:!!document.querySelector('[data-testid="title-screen"]'),
+        attempted:!!window.menuPolicyContext,state:window.menuPolicyContext?.state,
+        waiting:document.querySelector('[data-testid="title-music"]')?.textContent.includes('autoplay is waiting'),
+        started:window.audioReview?.started ?? []
+      })`});
+      if(result.exceptionDetails)throw new Error('Native autoplay inspection failed');
+      return result.result.value;
+    };
     const requests:string[]=[];page.on('request',r=>{if(r.url().includes('/audio/'))requests.push(r.url());});
-    await page.goto('/');await expect(page.getByTestId('title-screen')).toBeVisible();
-    if(policy==='no-user-gesture-required')await expect.poll(async()=>(await audio(page)).started).toContain('theme-title.flac');
+    await page.goto('/');
+    if(policy==='no-user-gesture-required')await expect.poll(inspect).toMatchObject({title:true,active:false,started:['theme-title.flac']});
     else{
-      expect(requests).toEqual([]);await expect(page.getByTestId('title-music')).toContainText('autoplay is waiting');
+      await expect.poll(inspect).toMatchObject({title:true,active:false,attempted:true,state:'suspended',waiting:true,started:[]});
+      expect(requests).toEqual([]);
       await keyboardActivate(page,page.getByTestId('guide-link'));await expect.poll(async()=>(await audio(page)).started).toContain('theme-title.flac');
     }
     await keyboardActivate(page,page.getByRole('button',{name:'Stop menu music',exact:true}));await expect.poll(async()=>(await audio(page)).liveSources).toBe(0);

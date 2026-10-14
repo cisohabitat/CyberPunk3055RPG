@@ -46,8 +46,10 @@ jobs:
           pactl set-default-sink saint_shard_ci
       - run: npm run build
       - run: npm run production:report
-      - run: npm run test:browser -- --workers=4
       - run: npm run production:verify
+      - name: Check native menu permission before campaign regressions
+        run: npm run test:browser -- tests/guide.spec.ts --grep "native title autoplay policy" --project chromium --workers=1
+      - run: npm run test:browser -- --workers=4
       - name: Upload browser evidence
         if: always()
         uses: actions/upload-artifact@v4
