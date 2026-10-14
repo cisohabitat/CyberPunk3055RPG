@@ -1247,7 +1247,7 @@ for (const [sceneId, path] of [["act3_witness_visit", "/art/nia.jpg"], ["act3_ed
   expect(await portrait.evaluate((image: HTMLImageElement) => image.decode().then(() => image.naturalWidth))).toBe(440);
   await expect(page.getByTestId("goal")).toBeInViewport();
 });
-for (const [sceneId, name] of [["opening_city", "opening"], ["memory_table", "memory-bench"], ["act2_shelter_brief", "shelter"], ["act2_freight_brief", "freight"], ["act2_spire_brief", "spire-counter"], ["act2_spire_methods", "spire-terminal"], ["act3_spire_visit", "spire-payroll"]]) test(`encounter illustration ${sceneId} preserves largest-text phone goals`, async ({ page }) => {
+for (const [sceneId, name] of [["opening_city", "opening"], ["memory_table", "memory-bench"], ["act2_shelter_brief", "shelter"], ["act2_freight_brief", "asa-dispatch"], ["act2_spire_brief", "spire-counter"], ["act2_spire_methods", "spire-terminal"], ["act3_spire_visit", "spire-payroll"]]) test(`encounter illustration ${sceneId} preserves largest-text phone goals`, async ({ page }) => {
   await page.addInitScript(() => localStorage.setItem("saint-shard-preferences", JSON.stringify({ textStep: 2, contrast: "high", motion: "reduce" })));
   await page.setViewportSize({ width: 390, height: 844 });
   await openRun(page, fixture(sceneId));
