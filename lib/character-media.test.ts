@@ -2,6 +2,8 @@ import assert from "node:assert/strict";
 import { it } from "node:test";
 import { readFileSync } from "node:fs";
 import { createHash } from "node:crypto";
+import ives from "../qa/media/ives-mastering.json";
+import bindings from "../qa/media/campaign-dialogue-bindings.json";
 import phase from "../qa/media/character-media.json";
 import staging from "../qa/media/dialogue-staging.json";
 import decisions from "../qa/media/scene-art.json";
@@ -15,7 +17,8 @@ const transcriptWords = (text: string) => text.toLowerCase().replace(/['’]/g, 
 
 it("locks exact actors, words, loudness and unchanged campaign bindings for the sixteen reviewed deliveries", () => {
   assert.equal(phase.performances.length, 16);
-  assert.equal(hash("qa/media/campaign-dialogue-bindings.json"), phase.bindingSha256);
+  assert.equal(ives.precedingBindingSha256, phase.bindingSha256);
+  assert.deepEqual(bindings, ives.precedingBindings.map(line => ({ ...line, id: ives.legacyReplacements[line.id as keyof typeof ives.legacyReplacements] ?? line.id })));
   const changed = new Set(phase.performances.map(entry => entry.id));
   for (const entry of phase.performances) {
     const line = authoring.find(line => line.id === entry.id)!;
@@ -31,12 +34,14 @@ it("locks exact actors, words, loudness and unchanged campaign bindings for the 
     assert.deepEqual(transcriptWords(entry.transcription.text), transcriptWords(entry.text));
   }
   for (const [id, sha] of Object.entries(phase.precedingVoiceSha256)) if (!changed.has(id)) {
-    assert.equal(hash(`public/audio/${id}.${id.startsWith("voice-campaign-") ? "mp3" : "wav"}`), sha);
+    const revision = ives.performances.find(entry => entry.previousId === id);
+    if (revision) assert.equal(revision.previousSha256, sha);
+    else assert.equal(hash(`public/audio/${id}.${id.startsWith("voice-campaign-") ? "mp3" : "wav"}`), sha);
   }
 });
 
 it("selects expressions for the actual actor and earns Edda's assignment without erasing the inquiry", () => {
-  assert.deepEqual(decisions.expressionPortraits, [...staging.portraits, ...phase.portraits]);
+  assert.deepEqual(decisions.expressionPortraits, [...staging.portraits, ...phase.portraits, ...ives.portraits]);
   for (const entry of phase.portraits) for (const scene of entry.scenes) {
     assert.equal(portraitArt(entry.speaker, scene), entry.asset);
     assert.notEqual(portraitArt("Dispatcher", scene), entry.asset);

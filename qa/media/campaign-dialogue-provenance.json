@@ -2150,20 +2150,30 @@
       "voice": "am_eric",
       "speed": 0.98,
       "text": "The folio is closed,",
-      "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "direction": "A clipped statement of institutional closure, not personal resolution.",
+      "segments": [
+        {
+          "text": "The folio is closed,",
+          "speed": 0.94,
+          "pauseAfter": 0
+        }
+      ],
+      "loudnessLufs": -20,
+      "integratedLufs": -20.0,
+      "truePeakDbtp": -3.96,
       "language": "en-us",
       "path": "public/audio/voice-campaign-ives-27bd077273a1.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-ives-27bd077273a1.wav",
-      "sourceSha256": "2e9c7c92f5f6596f023797022fd7131f718271da7d9f4c4b901b31ea3d282dcb",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-ives-27bd077273a1-delivery.wav",
-      "pcmDeliverySha256": "4973b643b5c250bf09e54fafdd90a705f2b995ed767c15d42f5200c58d02e2dd",
-      "sha256": "f9b3a63927360133948f05b7d86f91e1ff9436b5254f530608501702e4437914",
-      "bytes": 23372,
+      "sourceFile": "/workspace/saint-shard-validation/ives-mastering/masters/voice-campaign-ives-27bd077273a1.wav",
+      "sourceSha256": "380b0818f29fa86302e9f82a33fe25adb0a45cdb014647c7e9779b19c55e2025",
+      "pcmDeliveryFile": "/workspace/saint-shard-validation/ives-mastering/masters/voice-campaign-ives-27bd077273a1-delivery.wav",
+      "pcmDeliverySha256": "ecaedb1c40a621b41f48caa743a53f1ffd5d6bd06fd13d5d6edbfd8f75326e67",
+      "sha256": "d18973aa5738ace46e1e4ca78fd655e72c7c17d435221b4b3249a661f514b51a",
+      "bytes": 23948,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 1.8666666666666667,
-      "peak": 0.6831754446029663,
-      "rms": 0.12034685164690018
+      "durationSeconds": 1.9093333333333333,
+      "peak": 0.632849395275116,
+      "rms": 0.11084858328104019
     },
     {
       "id": "voice-campaign-quill-45259fa18cc2",
@@ -4501,20 +4511,35 @@
       "voice": "am_eric",
       "speed": 0.98,
       "text": "Helion can pay forty for a week of quiet,",
-      "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "direction": "An offer still unanswered; forty buys quiet rather than a cleared name.",
+      "segments": [
+        {
+          "text": "Helion can pay forty",
+          "speed": 0.96,
+          "pauseAfter": 0.12
+        },
+        {
+          "text": "for a week of quiet,",
+          "speed": 0.93,
+          "pauseAfter": 0
+        }
+      ],
+      "loudnessLufs": -20,
+      "integratedLufs": -19.99,
+      "truePeakDbtp": -2.83,
       "language": "en-us",
       "path": "public/audio/voice-campaign-ives-709c45808ce6.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-ives-709c45808ce6.wav",
-      "sourceSha256": "6cb5080a67961ca4fe3f3db49f75ebd18c7f48d132c60de378ad3e09adeb0839",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-ives-709c45808ce6-delivery.wav",
-      "pcmDeliverySha256": "3006a1091cdf2a99caee733d94c0d8b31a149a379b4d714ba4f9a736c7cae5b0",
-      "sha256": "c03cb1947bbaa06c360ff476d3e55081f5aafb78a2205144cdec51d2eb6ded25",
-      "bytes": 33740,
+      "sourceFile": "/workspace/saint-shard-validation/ives-mastering/masters/voice-campaign-ives-709c45808ce6.wav",
+      "sourceSha256": "d0a086265026acb13a3d79f9e100234272ac30e485cec5bd79e6f09c2007446e",
+      "pcmDeliveryFile": "/workspace/saint-shard-validation/ives-mastering/masters/voice-campaign-ives-709c45808ce6-delivery.wav",
+      "pcmDeliverySha256": "46e0887e349d53c49d81c115a4372ac18779f1a906fc13f1bbe6e4dbf323d62c",
+      "sha256": "6d49b9caa00f024360a90e082d6167d2f83d43396f8068cf0d08863b43f179a4",
+      "bytes": 40364,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 2.72,
-      "peak": 0.6830732226371765,
-      "rms": 0.10073006898164749
+      "durationSeconds": 3.2666666666666666,
+      "peak": 0.7215455770492554,
+      "rms": 0.11628033220767975
     },
     {
       "id": "voice-campaign-ives-071bb773ee1d",
@@ -4522,20 +4547,41 @@
       "voice": "am_eric",
       "speed": 0.98,
       "text": "Or you can try to close this in the street, where we are already writing.",
-      "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "direction": "Quietly state the alternative and ongoing surveillance; no shouting or theatrical threat.",
+      "segments": [
+        {
+          "text": "Or you can try to close this in the street,",
+          "speed": 0.95,
+          "pauseAfter": 0.23
+        },
+        {
+          "text": "where we are already",
+          "speed": 0.94,
+          "pauseAfter": 0.03
+        },
+        {
+          "text": "writing.",
+          "speed": 0.94,
+          "pauseAfter": 0,
+          "pronunciation": "clear-writing-t"
+        }
+      ],
+      "loudnessLufs": -20,
+      "integratedLufs": -20.0,
+      "truePeakDbtp": -3.42,
       "language": "en-us",
       "path": "public/audio/voice-campaign-ives-071bb773ee1d.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-ives-071bb773ee1d.wav",
-      "sourceSha256": "b8ea4b026fa73080f233c265acd8c537be749854060d16fa512b08b277f29e70",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-ives-071bb773ee1d-delivery.wav",
-      "pcmDeliverySha256": "0a4cfd51acd58b7dd700cc530c0e4f8f493becf8071e005735c29456f7bccfb7",
-      "sha256": "86a00fadf9cdd2bddcd1bfdf816bfde34d3d34496154c06ee1e51f9c4842400e",
-      "bytes": 44684,
+      "sourceFile": "/workspace/saint-shard-validation/ives-mastering/masters/voice-campaign-ives-071bb773ee1d.wav",
+      "sourceSha256": "e2dd8d8da3c712e1126a4a91eb86d1e4af67f604cc27ebc69164dc94fe588bc6",
+      "pcmDeliveryFile": "/workspace/saint-shard-validation/ives-mastering/masters/voice-campaign-ives-071bb773ee1d-delivery.wav",
+      "pcmDeliverySha256": "adf7bea7826349c949f6a88e9f239a51f10531a22327f6599e15770782eaee38",
+      "sha256": "9abc126f69eae16f396661c64ad20c4831fbb83fba8679f590f90fcba7a301a5",
+      "bytes": 61388,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 3.6346666666666665,
-      "peak": 0.6839866638183594,
-      "rms": 0.12832385301589966
+      "durationSeconds": 5.03,
+      "peak": 0.6740822792053223,
+      "rms": 0.11288370937108994
     },
     {
       "id": "voice-campaign-kerr-438346af4765",
@@ -4802,20 +4848,30 @@
       "voice": "am_eric",
       "speed": 0.98,
       "text": "There are two fires,",
-      "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "direction": "Introduce the two copies with deliberate matter-of-fact attention.",
+      "segments": [
+        {
+          "text": "There are two fires,",
+          "speed": 0.94,
+          "pauseAfter": 0
+        }
+      ],
+      "loudnessLufs": -20,
+      "integratedLufs": -20.0,
+      "truePeakDbtp": -5.27,
       "language": "en-us",
       "path": "public/audio/voice-campaign-ives-c0151cd75fa1.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-ives-c0151cd75fa1.wav",
-      "sourceSha256": "4e6fabd8a74038bf34a3275c0600c8f7f2a812c3d6862876998f3fccac391f22",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-ives-c0151cd75fa1-delivery.wav",
-      "pcmDeliverySha256": "de038398f6246ea0fe9905f2bbd50d325c6945a1fedee13ca3d34e0773fbca8f",
-      "sha256": "8438687200190a759a540894eef08183dc7d885ba217d2a12f6cc29966eb7db0",
-      "bytes": 19052,
+      "sourceFile": "/workspace/saint-shard-validation/ives-mastering/masters/voice-campaign-ives-c0151cd75fa1.wav",
+      "sourceSha256": "fadaddb58eb2f708be5de89b807c7c4b6371e5e3ad6df531f1d912cb9431a71f",
+      "pcmDeliveryFile": "/workspace/saint-shard-validation/ives-mastering/masters/voice-campaign-ives-c0151cd75fa1-delivery.wav",
+      "pcmDeliverySha256": "0374507dfc1d46b95fddb3f1d0117af326e6b85b3bb59f9e331dbde0cdba078b",
+      "sha256": "55df719d23a57ad8e09cd53045985b494b1ae09adce6c5052391c1207b984b16",
+      "bytes": 20204,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 1.504,
-      "peak": 0.6831510066986084,
-      "rms": 0.1414414644241333
+      "durationSeconds": 1.5893333333333333,
+      "peak": 0.5416336059570312,
+      "rms": 0.10741457343101501
     },
     {
       "id": "voice-campaign-ives-61d366ec9772",
@@ -4823,32 +4879,35 @@
       "voice": "am_eric",
       "speed": 0.98,
       "text": "We bought one. We would like the other to stop being a rumor.",
-      "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "direction": "Distinguish the bought copy from the uncontained rumor; no implied surrender.",
       "segments": [
         {
           "text": "We bought one.",
-          "speed": 0.98,
-          "pauseAfter": 0.24
+          "speed": 0.95,
+          "pauseAfter": 0.29
         },
         {
           "text": "We would like the other to stop being a rumor.",
-          "speed": 0.98,
+          "speed": 0.94,
           "pauseAfter": 0
         }
       ],
+      "loudnessLufs": -20,
+      "integratedLufs": -19.99,
+      "truePeakDbtp": -4.03,
       "language": "en-us",
       "path": "public/audio/voice-campaign-ives-61d366ec9772.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-ives-61d366ec9772.wav",
-      "sourceSha256": "1858c1dd15ba18f89e74cad505ba6b0b4ee71b46d91345d8c9c48c98e9305fc2",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-ives-61d366ec9772-delivery.wav",
-      "pcmDeliverySha256": "c5f65c8cc3326a2d2b00abf6840e2bc9a8c55d8665281b69d1f33e2bfeecf675",
-      "sha256": "fc2acdfbbd6c74bc751d7c5d3c5bd06ce3df9373e526f31a5b66686f6922a381",
-      "bytes": 50444,
+      "sourceFile": "/workspace/saint-shard-validation/ives-mastering/masters/voice-campaign-ives-61d366ec9772.wav",
+      "sourceSha256": "0d5fcb484748a61fd6c42b8c158651b3db2c6371f00c10869b88f0e3929356f6",
+      "pcmDeliveryFile": "/workspace/saint-shard-validation/ives-mastering/masters/voice-campaign-ives-61d366ec9772-delivery.wav",
+      "pcmDeliverySha256": "cd24eeb296367b8e706fd572b616c9fbb0eff4e222e93e372a16225684fa5152",
+      "sha256": "c993df0f434c90bdf3dc34b166fe75f1ef218a74c8ee749348127efa2470c35e",
+      "bytes": 52172,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 4.127958333333333,
-      "peak": 0.6815606951713562,
-      "rms": 0.12241710722446442
+      "durationSeconds": 4.26325,
+      "peak": 0.6285160183906555,
+      "rms": 0.11216847598552704
     },
     {
       "id": "voice-campaign-ives-9317a0ee9650",
@@ -4856,20 +4915,30 @@
       "voice": "am_eric",
       "speed": 0.98,
       "text": "You sold us a damaged hour,",
-      "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "direction": "State the damaged purchase plainly, without blaming the player for missing evidence.",
+      "segments": [
+        {
+          "text": "You sold us a damaged hour,",
+          "speed": 0.94,
+          "pauseAfter": 0
+        }
+      ],
+      "loudnessLufs": -20,
+      "integratedLufs": -20.0,
+      "truePeakDbtp": -5.94,
       "language": "en-us",
       "path": "public/audio/voice-campaign-ives-9317a0ee9650.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-ives-9317a0ee9650.wav",
-      "sourceSha256": "5772cdc4d79893caba7a8d740c587f957c2fe01456b1537f1abb300bee7fe56b",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-ives-9317a0ee9650-delivery.wav",
-      "pcmDeliverySha256": "c5c1621b347fef9805482b5ee1b974d1a6a2e9832bb3715ef1e6172a9cbe2380",
-      "sha256": "af6c91eacf648334df86283c512a58e08da5e969e2547deec4aa3d6b106a57c9",
-      "bytes": 27404,
+      "sourceFile": "/workspace/saint-shard-validation/ives-mastering/masters/voice-campaign-ives-9317a0ee9650.wav",
+      "sourceSha256": "0c35940bfb9a470138afed7c69f0a089beb7b23f429c7e1f5b7d414b706c952f",
+      "pcmDeliveryFile": "/workspace/saint-shard-validation/ives-mastering/masters/voice-campaign-ives-9317a0ee9650-delivery.wav",
+      "pcmDeliverySha256": "6fc6893752b41a6d7851f25e66651b337b5a4dae42dddb74e2fe8a60ea5fb489",
+      "sha256": "b1302959552fb5f1db126cbbe739892e2355afbb8e85cb17322a53dd6366771d",
+      "bytes": 28556,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 2.208,
-      "peak": 0.683067798614502,
-      "rms": 0.1500273197889328
+      "durationSeconds": 2.2933333333333334,
+      "peak": 0.5025579929351807,
+      "rms": 0.11395435780286789
     },
     {
       "id": "voice-campaign-ives-a94db9de69a3",
@@ -4877,20 +4946,35 @@
       "voice": "am_eric",
       "speed": 0.98,
       "text": "We would like the name of whoever fried the rest.",
-      "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "direction": "A measured request for a name; no suggested answer or confirmed culprit.",
+      "segments": [
+        {
+          "text": "We would like the name",
+          "speed": 0.95,
+          "pauseAfter": 0.1
+        },
+        {
+          "text": "of whoever fried the rest.",
+          "speed": 0.93,
+          "pauseAfter": 0
+        }
+      ],
+      "loudnessLufs": -20,
+      "integratedLufs": -19.99,
+      "truePeakDbtp": -4.66,
       "language": "en-us",
       "path": "public/audio/voice-campaign-ives-a94db9de69a3.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-ives-a94db9de69a3.wav",
-      "sourceSha256": "be47fc9a1a68f0a8d0b0632b84080e249556fe22baa46968bebcfaa2b89fed94",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-ives-a94db9de69a3-delivery.wav",
-      "pcmDeliverySha256": "7341d4f55261a768d45dc0fcc553f92b90656f47b5221dc9a996d31cf41540c3",
-      "sha256": "93a356d4f501486db4966bcd226d8046aec76e0249fcdd20747f510aec3f53e5",
-      "bytes": 34604,
+      "sourceFile": "/workspace/saint-shard-validation/ives-mastering/masters/voice-campaign-ives-a94db9de69a3.wav",
+      "sourceSha256": "e918b8f7877cd412411721cb16948c04757bbf85b5936a8d4d7129c6ebf783a6",
+      "pcmDeliveryFile": "/workspace/saint-shard-validation/ives-mastering/masters/voice-campaign-ives-a94db9de69a3-delivery.wav",
+      "pcmDeliverySha256": "3e503f08332f152caa395d76d951a657895ae653e08c6488601a5020e0d76b23",
+      "sha256": "a119a9a99a1e8838df0b5ce71c1fe79fc9a5e61496bca69722e61a5fcc9c6ea2",
+      "bytes": 43532,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 2.8053333333333335,
-      "peak": 0.6834003925323486,
-      "rms": 0.15722858905792236
+      "durationSeconds": 3.5453333333333332,
+      "peak": 0.5847301483154297,
+      "rms": 0.11660806089639664
     },
     {
       "id": "voice-campaign-sister-lumen-390123751d0a",
@@ -5028,20 +5112,30 @@
       "voice": "am_eric",
       "speed": 0.98,
       "text": "The hour reached us,",
-      "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "direction": "Acknowledge the delivered hour only; avoid implying custody of any additional source.",
+      "segments": [
+        {
+          "text": "The hour reached us,",
+          "speed": 0.94,
+          "pauseAfter": 0
+        }
+      ],
+      "loudnessLufs": -20,
+      "integratedLufs": -19.99,
+      "truePeakDbtp": -5.8,
       "language": "en-us",
       "path": "public/audio/voice-campaign-ives-7117058514fc.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-ives-7117058514fc.wav",
-      "sourceSha256": "a35eb1ed742aff7a2ddeb0fbffce2b13cecf3d6df2803fd0377a4a128dbf1b30",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-ives-7117058514fc-delivery.wav",
-      "pcmDeliverySha256": "fb4c773ce939d61c869589032c64b4f4cc9430ac1b98f64e91710f642b70aa84",
-      "sha256": "324a84cefd2264e9064279e1ddead9299517bfcc71838f68374f698a9ab0f457",
-      "bytes": 19628,
+      "sourceFile": "/workspace/saint-shard-validation/ives-mastering/masters/voice-campaign-ives-7117058514fc.wav",
+      "sourceSha256": "9fd2210dfaa6e2bdc9709aad9cb32235e826e91754f6e7e9dac483a714ca206d",
+      "pcmDeliveryFile": "/workspace/saint-shard-validation/ives-mastering/masters/voice-campaign-ives-7117058514fc-delivery.wav",
+      "pcmDeliverySha256": "6d57309a8f805cc439280d5dba8555202f8853947dabae1ab108d2aa05a48652",
+      "sha256": "5fc51d5e6b72a37bc4f5ef67afdba231cb9a0fc7d59a317e6de71878193022cc",
+      "bytes": 20492,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 1.5466666666666666,
-      "peak": 0.6857489943504333,
-      "rms": 0.13171149790287018
+      "durationSeconds": 1.6106666666666667,
+      "peak": 0.5123803615570068,
+      "rms": 0.10668744146823883
     },
     {
       "id": "voice-campaign-ives-c0f98673baa3",
@@ -5049,32 +5143,35 @@
       "voice": "am_eric",
       "speed": 0.98,
       "text": "Helion likes a complete file. You are the incomplete part.",
-      "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "direction": "The incomplete file remains pressure on the runner; restrained, exact final sentence.",
       "segments": [
         {
           "text": "Helion likes a complete file.",
-          "speed": 0.98,
-          "pauseAfter": 0.24
+          "speed": 0.96,
+          "pauseAfter": 0.32
         },
         {
           "text": "You are the incomplete part.",
-          "speed": 0.98,
+          "speed": 0.93,
           "pauseAfter": 0
         }
       ],
+      "loudnessLufs": -20,
+      "integratedLufs": -20.0,
+      "truePeakDbtp": -2.15,
       "language": "en-us",
       "path": "public/audio/voice-campaign-ives-c0f98673baa3.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-ives-c0f98673baa3.wav",
-      "sourceSha256": "176ad0520e6b3b5229cefcb318fc3e17550ec07b175bd9984dc34fc2847c51d5",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-ives-c0f98673baa3-delivery.wav",
-      "pcmDeliverySha256": "e6ba250f336e916ab92adc2a61367a9f04543a4f478cc0fa6b83bf2bdea3ee5a",
-      "sha256": "71122a8f5512322135789e68431b9f4dad6e339a9aab22d2773785477f69efff",
-      "bytes": 52748,
+      "sourceFile": "/workspace/saint-shard-validation/ives-mastering/masters/voice-campaign-ives-c0f98673baa3.wav",
+      "sourceSha256": "13accc119e2fcf5ed6dd39b757a15b34b510ea5dfdb91df20908e6eeb623b0ef",
+      "pcmDeliveryFile": "/workspace/saint-shard-validation/ives-mastering/masters/voice-campaign-ives-c0f98673baa3-delivery.wav",
+      "pcmDeliverySha256": "f06af9b3e4419ef6a71d1780d951a24ab4ad819ebd9f9d0202f0eaaa89520356",
+      "sha256": "41fac1b875a07e9ba3d72a315a600d0463d51b3f0cc0577530a9371da383465b",
+      "bytes": 54188,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 4.304,
-      "peak": 0.6849647760391235,
-      "rms": 0.10165095329284668
+      "durationSeconds": 4.426666666666667,
+      "peak": 0.7769039273262024,
+      "rms": 0.11370909959077835
     },
     {
       "id": "voice-campaign-quill-52ddae919538",
@@ -5773,6 +5870,160 @@
       "durationSeconds": 4.495958333333333,
       "peak": 0.6832064390182495,
       "rms": 0.08988907188177109
+    },
+    {
+      "id": "voice-campaign-ives-kept-name-performance",
+      "speaker": "Ives",
+      "text": "We kept the name. Burning the badge was a hobby.",
+      "voice": "am_eric",
+      "speed": 0.98,
+      "direction": "A cool reminder that the tower retains a name, with dry precision rather than relish.",
+      "segments": [
+        {
+          "text": "We kept the name.",
+          "speed": 0.94,
+          "pauseAfter": 0.3
+        },
+        {
+          "text": "Burning the badge was a hobby.",
+          "speed": 0.96,
+          "pauseAfter": 0
+        }
+      ],
+      "loudnessLufs": -20,
+      "integratedLufs": -20.0,
+      "truePeakDbtp": -3.12,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-ives-kept-name-performance.mp3",
+      "sourceFile": "/workspace/saint-shard-validation/ives-mastering/masters/voice-campaign-ives-kept-name-performance.wav",
+      "sourceSha256": "c18f5ff670c147e983fb3113de2a63bb4fd9358b17771a5d9129334a0c6fd550",
+      "pcmDeliveryFile": "/workspace/saint-shard-validation/ives-mastering/masters/voice-campaign-ives-kept-name-performance-delivery.wav",
+      "pcmDeliverySha256": "ddb3203a8213ace68c1d61f73c912484941bf3c75970f80afd96670c393f5b76",
+      "sha256": "0a4d4c93e6605fa8937dbb0f320c8edf2991c0811fe161deaa5ae63b58bf7fa4",
+      "bytes": 46412,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 3.775333333333333,
+      "peak": 0.696047306060791,
+      "rms": 0.11480160802602768
+    },
+    {
+      "id": "voice-campaign-ives-act2-archive-door-performance",
+      "speaker": "Ives",
+      "text": "If you allege an instruction, identify its issuer. We will challenge anything less.",
+      "voice": "am_eric",
+      "speed": 0.98,
+      "direction": "Challenge an allegation without implying the record has been authenticated.",
+      "segments": [
+        {
+          "text": "If you allege an instruction,",
+          "speed": 0.96,
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "identify its issuer.",
+          "speed": 0.93,
+          "pauseAfter": 0.3
+        },
+        {
+          "text": "We will challenge anything less.",
+          "speed": 0.95,
+          "pauseAfter": 0
+        }
+      ],
+      "loudnessLufs": -20,
+      "integratedLufs": -20.01,
+      "truePeakDbtp": -2.97,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-ives-act2-archive-door-performance.mp3",
+      "sourceFile": "/workspace/saint-shard-validation/ives-mastering/masters/voice-campaign-ives-act2-archive-door-performance.wav",
+      "sourceSha256": "f2e6e03046d993bf87559d97668a4cd12f08c7a21ed88e23d5fea1d168842dd7",
+      "pcmDeliveryFile": "/workspace/saint-shard-validation/ives-mastering/masters/voice-campaign-ives-act2-archive-door-performance-delivery.wav",
+      "pcmDeliverySha256": "959f7f3df1c23b04489f9e0194aa84e7d93682a6f8c8abaedb04be5da11af2ed",
+      "sha256": "a3b7382d63e31d3c6663dfa703de50dd583ce58a02c8bed72f6b4bf4df8d7d37",
+      "bytes": 78092,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 6.421291666666667,
+      "peak": 0.7099207043647766,
+      "rms": 0.11501246690750122
+    },
+    {
+      "id": "voice-campaign-ives-hearing-challenge-performance",
+      "speaker": "Ives",
+      "text": "A maintenance signature isn't an issuing key. A witness isn't a server. What exactly are you asking people to believe?",
+      "voice": "am_eric",
+      "speed": 0.98,
+      "direction": "Three distinct source questions; precise scrutiny, with space for the player to answer.",
+      "segments": [
+        {
+          "text": "A maintenance signature isn't an issuing key.",
+          "speed": 0.94,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "A witness isn't a server.",
+          "speed": 0.95,
+          "pauseAfter": 0.33
+        },
+        {
+          "text": "What exactly are you asking people to believe?",
+          "speed": 0.92,
+          "pauseAfter": 0
+        }
+      ],
+      "loudnessLufs": -20,
+      "integratedLufs": -20.0,
+      "truePeakDbtp": -4.07,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-ives-hearing-challenge-performance.mp3",
+      "sourceFile": "/workspace/saint-shard-validation/ives-mastering/masters/voice-campaign-ives-hearing-challenge-performance.wav",
+      "sourceSha256": "9083a92b57e218b3034a1f31d7c221d110205ee38e6082c4e00bfa5cb577eaa2",
+      "pcmDeliveryFile": "/workspace/saint-shard-validation/ives-mastering/masters/voice-campaign-ives-hearing-challenge-performance-delivery.wav",
+      "pcmDeliverySha256": "ddeb8eee8adf6e7278a9930a44f38356da351f3a4f35312906a4b61ab309a7f1",
+      "sha256": "098b4820461ecb996f2da469d7ce513916f773506ebb74e4ce8dab2f9363ad8b",
+      "bytes": 100844,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 8.310666666666666,
+      "peak": 0.6205487251281738,
+      "rms": 0.11504693329334259
+    },
+    {
+      "id": "voice-campaign-ives-listed-performance",
+      "speaker": "Ives",
+      "text": "Your name is still on file. That is what the tower will keep.",
+      "voice": "am_eric",
+      "speed": 0.98,
+      "direction": "The tower retains the name; restrained institutional closure, not an acquittal or private-source transfer.",
+      "segments": [
+        {
+          "text": "Your name is still on file.",
+          "speed": 0.94,
+          "pauseAfter": 0.32
+        },
+        {
+          "text": "That is what the tower will keep.",
+          "speed": 0.93,
+          "pauseAfter": 0
+        }
+      ],
+      "loudnessLufs": -20,
+      "integratedLufs": -19.98,
+      "truePeakDbtp": -4.88,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-ives-listed-performance.mp3",
+      "sourceFile": "/workspace/saint-shard-validation/ives-mastering/masters/voice-campaign-ives-listed-performance.wav",
+      "sourceSha256": "3702962879305371b9f04284dde27a33a324cbc58c19abac0a3477e8fbe00516",
+      "pcmDeliveryFile": "/workspace/saint-shard-validation/ives-mastering/masters/voice-campaign-ives-listed-performance-delivery.wav",
+      "pcmDeliverySha256": "d2992f17d53606cc096ea3873ea48ded5f83089c6f45b6b018fee7d1a371393b",
+      "sha256": "190a3c035e6fb392d55c1845dfa740975449d31de052a5084bf5ae30242efdfe",
+      "bytes": 55052,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 4.500666666666667,
+      "peak": 0.570219099521637,
+      "rms": 0.10860389471054077
     }
   ]
 }

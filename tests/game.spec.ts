@@ -4,6 +4,8 @@ import { keyboardActivate } from "../qa/production/keyboard";
 import { commitChoice, createCharacter, getScene, presentChoices } from "../lib/engine";
 import type { GameState } from "../lib/types";
 import { exportRun } from "../lib/vault";
+import { voiceLevel } from "../lib/voice-level";
+import { installAudioReview, type AudioReview } from "../qa/production/audio-review";
 
 for (const [origin, context] of [["gutterwire", "dry place to sleep"], ["spire", "build a life without it"], ["dustline", "next crossing"]] as const) test(`skipped ${origin} opening retains practical context without accepting the job`, async ({ page }) => {
   await page.addInitScript(() => localStorage.setItem("saint-shard-preferences", JSON.stringify({ reading: "all", motion: "reduce", textStep: 2, contrast: "high" })));
@@ -1574,8 +1576,8 @@ test("selective voices follow visible text, duck the bed and retain separate vol
   expect(await page.locator("img.portrait").evaluate((img: HTMLImageElement) => img.decode().then(() => img.currentSrc))).toContain("lumen-challenging.jpg");
   await page.getByRole("button", { name: "Listen to Lumen" }).click();
   await expect.poll(async () => (await voiceReview(page)).started).toBe(1);
-  expect((await voiceReview(page)).gains).toContain(0.6 * 0.28);
-  expect((await voiceReview(page)).gains).toContain(0.5 * 0.55);
+  expect((await voiceReview(page)).gains).toContain(0.6 * 0.22);
+  expect((await voiceReview(page)).gains).toContain(0.5 * 0.44);
   const gainsBeforeStop = (await voiceReview(page)).gains.length;
   await page.getByRole("button", { name: "Stop line" }).click();
   await expect.poll(async () => (await voiceReview(page)).stopped).toBeGreaterThan(0);
@@ -1605,8 +1607,8 @@ for (const [sceneId, speaker, voice, choiceId] of [
   await listen.click(); await expect(page.getByTestId("voice-line")).toContainText("Playing selected dialogue");
   expect(requests.at(-1)).toContain(`${voice}.wav`);
   const ducked = (await voiceReview(page)).scheduled;
-  expect(ducked).toContainEqual({ value: 0.6 * 0.28, settling: 0.04 });
-  expect(ducked).toContainEqual({ value: 0.5 * 0.55, settling: 0.04 });
+  expect(ducked).toContainEqual({ value: 0.6 * 0.22, settling: 0.04 });
+  expect(ducked).toContainEqual({ value: 0.5 * 0.44, settling: 0.04 });
   const atStop = ducked.length;
   await page.getByRole("button", { name: "Stop line", exact: true }).click();
   expect((await voiceReview(page)).scheduled.slice(atStop)).toContainEqual({ value: 0.6, settling: 0.18 });
@@ -1824,4 +1826,45 @@ test("Mara company keeps quiet music and clinic ambience continuous without voic
  await keyboardActivate(page,page.getByTestId("choice-stay-with-mara-courier"));await keyboardActivate(page,page.getByTestId("choice-keep-mara-shared-hour"));
  const played=(await bedReview(page)).started;expect(played.filter(n=>n==="theme-quiet.flac")).toHaveLength(1);expect(played.filter(n=>n==="ambience-clinic.flac")).toHaveLength(1);expect(voices).toEqual([]);
  const state=await page.evaluate(()=>JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));expect(state.creds).toBe(0);expect(state.flags.mara_company_kept).toBe(true);expect(state.flags.response_received).toBeUndefined();
+});
+
+test("campaign mastering applies native per-clip gain without changing the saved voice slider or source state", async ({ page }) => {
+  await page.addInitScript({ content: `var __name = (fn, name) => Object.defineProperty(fn, "name", { value: name, configurable: true }); (${installAudioReview.toString()})();` });
+  await page.addInitScript(() => localStorage.setItem("saint-shard-preferences", JSON.stringify({ sound: true, autoVoices: false, voices: 37, music: 60, ambience: 50, reading: "all", motion: "reduce" })));
+  await openRun(page, fixture("act3_testimony_hearing", { flags: { testimony_bounded: true } }));
+  const before = await page.evaluate(() => localStorage.getItem("saint-shard-3055-v1"));
+  await page.getByRole("button", { name: "Listen to Ives", exact: true }).click();
+  const audio = () => page.evaluate(() => (window as unknown as { audioReview: AudioReview }).audioReview);
+  await expect.poll(async () => (await audio()).voiceLevels.length).toBe(1);
+  const entry = (await audio()).voiceLevels[0];
+  expect(entry.file).toBe("voice-campaign-ives-hearing-challenge-performance.mp3");
+  expect(entry.gain).toBeCloseTo(voiceLevel("voice-campaign-ives-hearing-challenge-performance"), 6);
+  await expect(page.locator("img.portrait")).toHaveAttribute("src", "/art/ives-questioning.jpg");
+  await expect(page.getByTestId("spoken-quote")).toContainText("A maintenance signature isn't an issuing key.");
+  await page.getByRole("button", { name: "Stop line", exact: true }).click();
+  await expect(page.getByTestId("spoken-quote")).toHaveCount(0);
+  const prefs = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-preferences")!));
+  expect(prefs.voices).toBe(37); expect(prefs.music).toBe(60); expect(prefs.ambience).toBe(50);
+  expect(await page.evaluate(() => localStorage.getItem("saint-shard-3055-v1"))).toBe(before);
+});
+
+for (const textOnly of [false, true]) test(`Ives source challenge keeps precise scene art and readable goals with ${textOnly ? "text-only" : "full art"}`, async ({ page }) => {
+  await page.addInitScript(none => localStorage.setItem("saint-shard-preferences", JSON.stringify({ sound: false, reading: "all", motion: "reduce", artwork: none ? "none" : "full" })), textOnly);
+  const requests: string[] = []; page.on("request", request => { if (new URL(request.url()).pathname.startsWith("/art/")) requests.push(request.url()); });
+  await openRun(page, fixture("act3_testimony_hearing", { flags: { testimony_bounded: true } }));
+  await expect(page.getByTestId("scene-text")).toContainText("A witness isn't a server.");
+  await expect(page.getByTestId("goal")).toBeInViewport();
+  if (textOnly) { await expect(page.locator("img.portrait")).toHaveCount(0); expect(requests).toEqual([]); }
+  else {
+    await expect(page.locator("img.portrait")).toHaveAttribute("src", "/art/ives-questioning.jpg");
+    const scene = page.locator('img[src="/art/ives-hearing.jpg"]');
+    await expect(scene).toHaveCount(1);
+    expect(await scene.evaluate((image: HTMLImageElement) => image.decode().then(() => image.naturalWidth))).toBeGreaterThan(0);
+  }
+  await page.getByTestId("choice-answer-open-question").click();
+  await expect(page.getByTestId("scene-text")).toContainText("Sera");
+  if (!textOnly) await expect(page.locator('img[src="/art/hearing-table.jpg"]')).toHaveCount(1);
+  const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(run.flags.testimony_answered).toBe(true); expect(run.flags.archive_key_authenticated).toBeUndefined(); expect(run.flags.testimony_published).toBeUndefined();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
 });

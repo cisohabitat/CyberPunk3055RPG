@@ -3,9 +3,10 @@ export type AudioReview = {
   sourcesCreated: number; sourcesDisposed: number; buffersCleared: number;
   liveSources: number; peakLiveSources: number; starts: number; stops: number;
   started: string[]; decoded: string[]; disposed: string[]; cleared: string[];
+  voiceLevels: { file: string; gain: number }[];
 };
 export function installAudioReview({ suppressEnded = false }: { suppressEnded?: boolean } = {}) {
-  const review: AudioReview = { sourcesCreated: 0, sourcesDisposed: 0, buffersCleared: 0, liveSources: 0, peakLiveSources: 0, starts: 0, stops: 0, started: [], decoded: [], disposed: [], cleared: [] };
+  const review: AudioReview = { sourcesCreated: 0, sourcesDisposed: 0, buffersCleared: 0, liveSources: 0, peakLiveSources: 0, starts: 0, stops: 0, started: [], decoded: [], disposed: [], cleared: [], voiceLevels: [] };
   (window as unknown as { audioReview: AudioReview }).audioReview = review;
   const ids = new WeakMap<AudioBufferSourceNode, number>(), live = new Set<number>();
   const dataNames = new WeakMap<ArrayBuffer, string>(), bufferNames = new WeakMap<AudioBuffer, string>();
@@ -27,8 +28,20 @@ export function installAudioReview({ suppressEnded = false }: { suppressEnded?: 
     return node;
   };
   const start = AudioBufferSourceNode.prototype.start;
+  const gains = new WeakMap<AudioBufferSourceNode, GainNode>();
+  const connect = AudioBufferSourceNode.prototype.connect;
+  AudioBufferSourceNode.prototype.connect = function(this: AudioBufferSourceNode, destination: AudioNode | AudioParam, output?: number, input?: number) {
+    if (destination instanceof GainNode) gains.set(this, destination);
+    return destination instanceof AudioParam ? connect.call(this, destination, output)
+      : (connect as (destination: AudioNode, output?: number, input?: number) => AudioNode).call(this, destination, output, input);
+  } as typeof connect;
   AudioBufferSourceNode.prototype.start = function(...args: Parameters<typeof start>) {
     review.starts++; remember(review.started, this.buffer ? bufferNames.get(this.buffer) ?? "unnamed" : "empty");
+    const file = this.buffer ? bufferNames.get(this.buffer) : undefined;
+    if (file?.startsWith("voice-")) {
+      review.voiceLevels.push({ file, gain: gains.get(this)?.gain.value ?? NaN });
+      if (review.voiceLevels.length > 128) review.voiceLevels.shift();
+    }
     return start.apply(this, args);
   };
   const stop = AudioBufferSourceNode.prototype.stop;

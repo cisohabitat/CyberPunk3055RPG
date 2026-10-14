@@ -11,6 +11,7 @@ import bindings from "../qa/media/campaign-dialogue-bindings.json";
 import decisions from "../qa/media/campaign-dialogue-audit.json";
 import deliveries from "../qa/media/campaign-dialogue-provenance.json";
 import old from "../qa/media/voice-provenance.json";
+import ives from "../qa/media/ives-mastering.json";
 import staging from "../qa/media/dialogue-staging.json";
 import { SCENES } from "./story";
 import { auditSceneArt } from "./scene-art";
@@ -85,11 +86,11 @@ describe("campaign character dialogue", () => {
         assert.ok(choice); state = commitChoice(state, choice, choice.check ? { roll: step.roll! } : undefined).state; review();
       }
     }
-    for (const line of old.lines) if (line.id !== "voice-lumen-counteroffer") assert.ok(bindings.some(b => b.id === (staging.legacyReplacements[line.id as keyof typeof staging.legacyReplacements] ?? line.id) && covered.has(b.key)), line.id);
+    for (const line of old.lines) if (line.id !== "voice-lumen-counteroffer") assert.ok(bindings.some(b => b.id === (ives.legacyReplacements[line.id as keyof typeof ives.legacyReplacements] ?? staging.legacyReplacements[line.id as keyof typeof staging.legacyReplacements] ?? line.id) && covered.has(b.key)), line.id);
     for (const ending of ["ending_names", "ending_quiet", "ending_witness", "ending_listed"]) assert.ok(scenes.has(ending));
   });
   it("ships every new dialogue file with measured signal and unchanged prior WAVs", () => {
-    assert.equal(deliveries.lines.length, 195);
+    assert.equal(deliveries.lines.length, 199);
     const known = new Set([...deliveries.lines, ...old.lines].map(l => l.id));
     for (const binding of bindings) assert.ok(known.has(binding.id), binding.id);
     for (const delivery of [...deliveries.lines, ...old.lines]) {

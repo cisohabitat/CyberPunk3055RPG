@@ -223,7 +223,6 @@
       "scenes": [
         "act3_testimony_review",
         "act3_testimony_consent",
-        "act3_testimony_hearing",
         "act3_testimony_correction",
         "act3_testimony_record"
       ]
@@ -630,6 +629,14 @@
       "scenes": [
         "act2_freight_brief"
       ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/ives-hearing.jpg",
+      "scenes": [
+        "act3_testimony_hearing"
+      ],
+      "reason": "Closer conversation before the player answers. The folio remains closed; no authenticated issuing key, filed account, private address or transferred witness ledger."
     }
   ],
   "variants": [
@@ -1003,6 +1010,24 @@
         "act3_quill_introduction"
       ],
       "reason": "Direct commercial terms and bookkeeping; the earlier refusal retains its waiting expression. No cleared relationship or waived debt."
+    },
+    {
+      "speaker": "Ives",
+      "asset": "/art/ives-assessing.jpg",
+      "scenes": [
+        "act2_helion",
+        "act2_folio"
+      ],
+      "reason": "An unresolved institutional offer, with no accepted payment, received source or earned closure."
+    },
+    {
+      "speaker": "Ives",
+      "asset": "/art/ives-questioning.jpg",
+      "scenes": [
+        "act2_archive_door",
+        "act3_testimony_hearing"
+      ],
+      "reason": "Professional scrutiny of an allegation or public source, before the player answers. No authentication, filed account or witness-source handover."
     }
   ]
 }

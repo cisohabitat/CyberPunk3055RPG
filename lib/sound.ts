@@ -3,6 +3,7 @@ import type { GameState } from "./types";
 import { windowRemaining } from "./chapel-window";
 import voiceMix from "../qa/media/voice-mix.json";
 import { TITLE_MUSIC } from "./title-music";
+import { voiceLevel } from "./voice-level";
 
 export type SoundMood = "street" | "chapel" | "ward" | "week" | "reading" | "quiet" | "pressure" | "title";
 export type BedStatus = "idle" | "loading" | "playing" | "unavailable";
@@ -179,7 +180,7 @@ export function playVoice(name: string, report: (status: VoiceStatus) => void, f
     try {
       const buffer = await load(name);
       if (id !== voiceTicket || !want || mix.voices === 0) return;
-      const { node } = source(buffer, "voices", 1, false);
+      const { node } = source(buffer, "voices", voiceLevel(name), false);
       const cleanup = node.onended;
       node.onended = (event) => {
         cleanup?.call(node, event);

@@ -1106,7 +1106,15 @@
     "voice": "am_eric",
     "speed": 0.98,
     "text": "The folio is closed,",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions."
+    "direction": "A clipped statement of institutional closure, not personal resolution.",
+    "segments": [
+      {
+        "text": "The folio is closed,",
+        "speed": 0.94,
+        "pauseAfter": 0
+      }
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-quill-45259fa18cc2",
@@ -2449,7 +2457,20 @@
     "voice": "am_eric",
     "speed": 0.98,
     "text": "Helion can pay forty for a week of quiet,",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions."
+    "direction": "An offer still unanswered; forty buys quiet rather than a cleared name.",
+    "segments": [
+      {
+        "text": "Helion can pay forty",
+        "speed": 0.96,
+        "pauseAfter": 0.12
+      },
+      {
+        "text": "for a week of quiet,",
+        "speed": 0.93,
+        "pauseAfter": 0
+      }
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-ives-071bb773ee1d",
@@ -2457,7 +2478,26 @@
     "voice": "am_eric",
     "speed": 0.98,
     "text": "Or you can try to close this in the street, where we are already writing.",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions."
+    "direction": "Quietly state the alternative and ongoing surveillance; no shouting or theatrical threat.",
+    "segments": [
+      {
+        "text": "Or you can try to close this in the street,",
+        "speed": 0.95,
+        "pauseAfter": 0.23
+      },
+      {
+        "text": "where we are already",
+        "speed": 0.94,
+        "pauseAfter": 0.03
+      },
+      {
+        "text": "writing.",
+        "speed": 0.94,
+        "pauseAfter": 0,
+        "pronunciation": "clear-writing-t"
+      }
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-kerr-438346af4765",
@@ -2607,7 +2647,15 @@
     "voice": "am_eric",
     "speed": 0.98,
     "text": "There are two fires,",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions."
+    "direction": "Introduce the two copies with deliberate matter-of-fact attention.",
+    "segments": [
+      {
+        "text": "There are two fires,",
+        "speed": 0.94,
+        "pauseAfter": 0
+      }
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-ives-61d366ec9772",
@@ -2615,19 +2663,20 @@
     "voice": "am_eric",
     "speed": 0.98,
     "text": "We bought one. We would like the other to stop being a rumor.",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+    "direction": "Distinguish the bought copy from the uncontained rumor; no implied surrender.",
     "segments": [
       {
         "text": "We bought one.",
-        "speed": 0.98,
-        "pauseAfter": 0.24
+        "speed": 0.95,
+        "pauseAfter": 0.29
       },
       {
         "text": "We would like the other to stop being a rumor.",
-        "speed": 0.98,
+        "speed": 0.94,
         "pauseAfter": 0
       }
-    ]
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-ives-9317a0ee9650",
@@ -2635,7 +2684,15 @@
     "voice": "am_eric",
     "speed": 0.98,
     "text": "You sold us a damaged hour,",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions."
+    "direction": "State the damaged purchase plainly, without blaming the player for missing evidence.",
+    "segments": [
+      {
+        "text": "You sold us a damaged hour,",
+        "speed": 0.94,
+        "pauseAfter": 0
+      }
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-ives-a94db9de69a3",
@@ -2643,7 +2700,20 @@
     "voice": "am_eric",
     "speed": 0.98,
     "text": "We would like the name of whoever fried the rest.",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions."
+    "direction": "A measured request for a name; no suggested answer or confirmed culprit.",
+    "segments": [
+      {
+        "text": "We would like the name",
+        "speed": 0.95,
+        "pauseAfter": 0.1
+      },
+      {
+        "text": "of whoever fried the rest.",
+        "speed": 0.93,
+        "pauseAfter": 0
+      }
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-sister-lumen-390123751d0a",
@@ -2729,7 +2799,15 @@
     "voice": "am_eric",
     "speed": 0.98,
     "text": "The hour reached us,",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions."
+    "direction": "Acknowledge the delivered hour only; avoid implying custody of any additional source.",
+    "segments": [
+      {
+        "text": "The hour reached us,",
+        "speed": 0.94,
+        "pauseAfter": 0
+      }
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-ives-c0f98673baa3",
@@ -2737,19 +2815,20 @@
     "voice": "am_eric",
     "speed": 0.98,
     "text": "Helion likes a complete file. You are the incomplete part.",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+    "direction": "The incomplete file remains pressure on the runner; restrained, exact final sentence.",
     "segments": [
       {
         "text": "Helion likes a complete file.",
-        "speed": 0.98,
-        "pauseAfter": 0.24
+        "speed": 0.96,
+        "pauseAfter": 0.32
       },
       {
         "text": "You are the incomplete part.",
-        "speed": 0.98,
+        "speed": 0.93,
         "pauseAfter": 0
       }
-    ]
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-quill-52ddae919538",
@@ -3173,5 +3252,99 @@
         "pauseAfter": 0
       }
     ]
+  },
+  {
+    "id": "voice-campaign-ives-kept-name-performance",
+    "speaker": "Ives",
+    "text": "We kept the name. Burning the badge was a hobby.",
+    "voice": "am_eric",
+    "speed": 0.98,
+    "direction": "A cool reminder that the tower retains a name, with dry precision rather than relish.",
+    "segments": [
+      {
+        "text": "We kept the name.",
+        "speed": 0.94,
+        "pauseAfter": 0.3
+      },
+      {
+        "text": "Burning the badge was a hobby.",
+        "speed": 0.96,
+        "pauseAfter": 0
+      }
+    ],
+    "loudnessLufs": -20
+  },
+  {
+    "id": "voice-campaign-ives-act2-archive-door-performance",
+    "speaker": "Ives",
+    "text": "If you allege an instruction, identify its issuer. We will challenge anything less.",
+    "voice": "am_eric",
+    "speed": 0.98,
+    "direction": "Challenge an allegation without implying the record has been authenticated.",
+    "segments": [
+      {
+        "text": "If you allege an instruction,",
+        "speed": 0.96,
+        "pauseAfter": 0.16
+      },
+      {
+        "text": "identify its issuer.",
+        "speed": 0.93,
+        "pauseAfter": 0.3
+      },
+      {
+        "text": "We will challenge anything less.",
+        "speed": 0.95,
+        "pauseAfter": 0
+      }
+    ],
+    "loudnessLufs": -20
+  },
+  {
+    "id": "voice-campaign-ives-hearing-challenge-performance",
+    "speaker": "Ives",
+    "text": "A maintenance signature isn't an issuing key. A witness isn't a server. What exactly are you asking people to believe?",
+    "voice": "am_eric",
+    "speed": 0.98,
+    "direction": "Three distinct source questions; precise scrutiny, with space for the player to answer.",
+    "segments": [
+      {
+        "text": "A maintenance signature isn't an issuing key.",
+        "speed": 0.94,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "A witness isn't a server.",
+        "speed": 0.95,
+        "pauseAfter": 0.33
+      },
+      {
+        "text": "What exactly are you asking people to believe?",
+        "speed": 0.92,
+        "pauseAfter": 0
+      }
+    ],
+    "loudnessLufs": -20
+  },
+  {
+    "id": "voice-campaign-ives-listed-performance",
+    "speaker": "Ives",
+    "text": "Your name is still on file. That is what the tower will keep.",
+    "voice": "am_eric",
+    "speed": 0.98,
+    "direction": "The tower retains the name; restrained institutional closure, not an acquittal or private-source transfer.",
+    "segments": [
+      {
+        "text": "Your name is still on file.",
+        "speed": 0.94,
+        "pauseAfter": 0.32
+      },
+      {
+        "text": "That is what the tower will keep.",
+        "speed": 0.93,
+        "pauseAfter": 0
+      }
+    ],
+    "loudnessLufs": -20
   }
 ]

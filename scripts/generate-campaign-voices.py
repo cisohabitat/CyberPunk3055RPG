@@ -37,7 +37,15 @@ for line in lines:
  assert ' '.join(p['text'] for p in parts)==line['text']
  for p in parts:
   speed=p.get('speed',line['speed']);assert .75<=speed<=1.15 and 0<=p.get('pauseAfter',0)<=.8
-  clip,rate=model.create(p['text'],voice=line['voice'],speed=speed,lang='en-us');clip=clip.copy()
+  # Reviewed consonant articulation for this exact word, never arbitrary
+  # phonetic text in place of authored dialogue. Avoid the US flapped /t/
+  # that can make "writing" indistinguishable from "riding".
+  if p.get('pronunciation'):
+   assert p['pronunciation']=='clear-writing-t' and p['text']=='writing.'
+   clip,rate=model.create('ɹˈaɪtɪŋ.',voice=line['voice'],speed=speed,lang='en-us',is_phonemes=True)
+  else:
+   clip,rate=model.create(p['text'],voice=line['voice'],speed=speed,lang='en-us')
+  clip=clip.copy()
   assert np.isfinite(clip).all() and len(clip)>rate*.1
   fade=min(int(rate*.008),len(clip)//2);clip[:fade]*=np.linspace(0,1,fade);clip[-fade:]*=np.linspace(1,0,fade)
   pieces.extend([clip,np.zeros(int(rate*p.get('pauseAfter',0)),dtype=clip.dtype)])

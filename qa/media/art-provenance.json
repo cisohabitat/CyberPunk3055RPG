@@ -1867,6 +1867,93 @@
           "sha256": "a3f0966108d39152ac1b2829528df8996aaa93fdcd35a110d8d905cc2a65a6f0"
         }
       ]
+    },
+    {
+      "id": "ives-assessing",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/generated_images/exec-21ff3b21-f402-491a-8641-d0ed99f5cafd.png",
+      "sourceSha256": "18e37b560285226fa0026c2d89b7202a659598846d594e489bbf5e3d7f3490e7",
+      "sourceWidth": 1086,
+      "sourceHeight": 1448,
+      "referenceFiles": [
+        "public/art/ives.jpg"
+      ],
+      "referenceSha256": {
+        "public/art/ives.jpg": "0fbff0f64074ee10c85fb6e4f475f2c6df11b559b6a1ab11e78af4b4ed5e1fd8"
+      },
+      "promptSummary": "Identity-preserving painted noir Ives: short dark hair, pale olive skin, grey-blue eyes, high-collar black coat, cyan angular emblem and closed folio. An unresolved institutional offer, with no accepted payment, received source or earned closure.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/ives-assessing.jpg",
+          "width": 600,
+          "height": 800,
+          "bytes": 101308,
+          "sha256": "f1f371eb6b117ac6b974d0862941f9146529dd242ff41f79b0dd456c65836738"
+        }
+      ]
+    },
+    {
+      "id": "ives-questioning",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/generated_images/exec-bc79d3aa-e6bc-4116-ab8c-8e30d76bb0d6.png",
+      "sourceSha256": "a82efab98196464a41c9215e555895680f87dc4bfa807464acc66d66d83fb020",
+      "sourceWidth": 1086,
+      "sourceHeight": 1448,
+      "referenceFiles": [
+        "public/art/ives.jpg"
+      ],
+      "referenceSha256": {
+        "public/art/ives.jpg": "0fbff0f64074ee10c85fb6e4f475f2c6df11b559b6a1ab11e78af4b4ed5e1fd8"
+      },
+      "promptSummary": "Identity-preserving painted noir Ives: short dark hair, pale olive skin, grey-blue eyes, high-collar black coat, cyan angular emblem and closed folio. Professional scrutiny of an allegation or public source, before the player answers. No authentication, filed account or witness-source handover.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/ives-questioning.jpg",
+          "width": 600,
+          "height": 800,
+          "bytes": 110688,
+          "sha256": "080c504776a2cdf96a6890f61ceb0acdb30e7c212e280e44fba8b13ae9aa502a"
+        }
+      ]
+    },
+    {
+      "id": "ives-hearing",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-14",
+      "sourceFile": "/workspace/generated_images/exec-563cb1dc-203f-419f-aede-76ded8431da2.png",
+      "sourceSha256": "7e0737ebd59bf84ea0222149ea34365f0368c489768796c6e72b4875e937d7c8",
+      "sourceWidth": 1536,
+      "sourceHeight": 1024,
+      "referenceFiles": [
+        "public/art/ives.jpg",
+        "public/art/hearing-table.jpg"
+      ],
+      "referenceSha256": {
+        "public/art/ives.jpg": "0fbff0f64074ee10c85fb6e4f475f2c6df11b559b6a1ab11e78af4b4ed5e1fd8",
+        "public/art/hearing-table.jpg": "f2601ddf9af5e08a094ea34fc6e20a2739b91ddefd1e23a658952c5c4371f9c3"
+      },
+      "promptSummary": "Identity-preserving painted noir Ives: short dark hair, pale olive skin, grey-blue eyes, high-collar black coat, cyan angular emblem and closed folio. Closer conversation before the player answers. The folio remains closed; no authenticated issuing key, filed account, private address or transferred witness ledger.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/ives-hearing.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 228258,
+          "sha256": "54584f9e4ddba81b0901c7e76e89ce310ba23b8cd4cdbdaa0858ac75cea38aea"
+        },
+        {
+          "path": "public/art/ives-hearing-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 68064,
+          "sha256": "b2b528675c67efdc7d7b96e3fa153eebe9ba138565dac8b2556367115dfca6a8"
+        }
+      ]
     }
   ]
 }

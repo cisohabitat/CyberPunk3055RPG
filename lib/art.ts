@@ -104,6 +104,8 @@ PORTRAIT_VARIANTS.act2_shelter_brief = { speaker: "Ren", src: "/art/ren-concerne
 for (const id of ["act3_arrival", "ending_names", "ending_quiet", "ending_witness"]) PORTRAIT_VARIANTS[id] = { speaker: "Sera", src: "/art/sera-attentive.jpg" };
 for (const id of ["act2_kerr_collection_terms", "act2_route_receipt", "act3_kerr_collection"]) PORTRAIT_VARIANTS[id] = { speaker: "Kerr", src: "/art/kerr-considering.jpg" };
 for (const id of ["job_owner", "why", "act2_quill_introduction", "act3_quill_introduction"]) PORTRAIT_VARIANTS[id] = { speaker: "Quill", src: "/art/quill-terms.jpg" };
+for (const id of ["act2_helion", "act2_folio"]) PORTRAIT_VARIANTS[id] = { speaker: "Ives", src: "/art/ives-assessing.jpg" };
+for (const id of ["act2_archive_door", "act3_testimony_hearing"]) PORTRAIT_VARIANTS[id] = { speaker: "Ives", src: "/art/ives-questioning.jpg" };
 for (const id of ["memory_cross_exam", "memory_assurance", "memory_channel", "memory_model_test", "memory_sequence_result"]) PORTRAIT_VARIANTS[id] = { speaker: "Mara", src: "/art/mara-questioning.jpg" };
 for (const id of ["memory_model_result", "memory_publication"]) PORTRAIT_VARIANTS[id] = { speaker: "Sister Lumen", src: "/art/lumen-challenging.jpg" };
 export const PORTRAIT_STAGING = [
@@ -152,3 +154,4 @@ for (const plate of campaignArt.plates) for (const id of plate.scenes) {
   ENCOUNTERS[id] = { src: plate.src, small: plate.small, caption: plate.caption, description: plate.description };
 }
 ENCOUNTERS.act2_freight_brief = { src: "/art/asa-dispatch.jpg", small: "/art/asa-dispatch-small.jpg", caption: "Canal freight gate · Asa sets the terms", description: "Asa, wearing a rust scarf and worn courier coat, touches the closed cooling case seal beneath the gate lamp; the case remains at dispatch." };
+ENCOUNTERS.act3_testimony_hearing = { src: "/art/ives-hearing.jpg", small: "/art/ives-hearing-small.jpg", caption: "Ward Nine · Ives asks for the source", description: "Ives faces the visitor at the rain-lit records table, a closed black folio beside the unmarked running recorder; blank cover papers and a pencil wait beside an empty chair." };

@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { it } from "node:test";
 import { readFileSync } from "node:fs";
 import { createHash } from "node:crypto";
+import ives from "../qa/media/ives-mastering.json";
 import staging from "../qa/media/dialogue-staging.json";
 import bindings from "../qa/media/campaign-dialogue-bindings.json";
 import authoring from "../qa/media/campaign-dialogue-lines.json";
@@ -13,7 +14,7 @@ const hash = (file: string) => createHash("sha256").update(readFileSync(new URL(
 
 it("revises exactly the reviewed performances without changing quotation, actor or preceding WAVs", () => {
   assert.equal(staging.performances.length, 14);
-  assert.deepEqual(bindings, staging.precedingBindings.map(line => ({ ...line, id: staging.legacyReplacements[line.id as keyof typeof staging.legacyReplacements] ?? line.id })));
+  assert.deepEqual(bindings, staging.precedingBindings.map(line => ({ ...line, id: ives.legacyReplacements[line.id as keyof typeof ives.legacyReplacements] ?? staging.legacyReplacements[line.id as keyof typeof staging.legacyReplacements] ?? line.id })));
   for (const entry of staging.performances) {
     const line = authoring.find(line => line.id === entry.id)!;
     const delivery = provenance.lines.find(line => line.id === entry.id)!;

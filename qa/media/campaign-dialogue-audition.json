@@ -622,8 +622,8 @@
       "speaker": "Ives",
       "text": "The folio is closed,",
       "path": "public/audio/voice-campaign-ives-27bd077273a1.mp3",
-      "durationSeconds": 1.8666666666666667,
-      "sha256": "f9b3a63927360133948f05b7d86f91e1ff9436b5254f530608501702e4437914"
+      "durationSeconds": 1.9093333333333333,
+      "sha256": "d18973aa5738ace46e1e4ca78fd655e72c7c17d435221b4b3249a661f514b51a"
     },
     {
       "id": "voice-campaign-quill-45259fa18cc2",
@@ -1230,16 +1230,16 @@
       "speaker": "Ives",
       "text": "Helion can pay forty for a week of quiet,",
       "path": "public/audio/voice-campaign-ives-709c45808ce6.mp3",
-      "durationSeconds": 2.72,
-      "sha256": "c03cb1947bbaa06c360ff476d3e55081f5aafb78a2205144cdec51d2eb6ded25"
+      "durationSeconds": 3.2666666666666666,
+      "sha256": "6d49b9caa00f024360a90e082d6167d2f83d43396f8068cf0d08863b43f179a4"
     },
     {
       "id": "voice-campaign-ives-071bb773ee1d",
       "speaker": "Ives",
       "text": "Or you can try to close this in the street, where we are already writing.",
       "path": "public/audio/voice-campaign-ives-071bb773ee1d.mp3",
-      "durationSeconds": 3.6346666666666665,
-      "sha256": "86a00fadf9cdd2bddcd1bfdf816bfde34d3d34496154c06ee1e51f9c4842400e"
+      "durationSeconds": 5.03,
+      "sha256": "9abc126f69eae16f396661c64ad20c4831fbb83fba8679f590f90fcba7a301a5"
     },
     {
       "id": "voice-campaign-kerr-438346af4765",
@@ -1318,32 +1318,32 @@
       "speaker": "Ives",
       "text": "There are two fires,",
       "path": "public/audio/voice-campaign-ives-c0151cd75fa1.mp3",
-      "durationSeconds": 1.504,
-      "sha256": "8438687200190a759a540894eef08183dc7d885ba217d2a12f6cc29966eb7db0"
+      "durationSeconds": 1.5893333333333333,
+      "sha256": "55df719d23a57ad8e09cd53045985b494b1ae09adce6c5052391c1207b984b16"
     },
     {
       "id": "voice-campaign-ives-61d366ec9772",
       "speaker": "Ives",
       "text": "We bought one. We would like the other to stop being a rumor.",
       "path": "public/audio/voice-campaign-ives-61d366ec9772.mp3",
-      "durationSeconds": 4.127958333333333,
-      "sha256": "fc2acdfbbd6c74bc751d7c5d3c5bd06ce3df9373e526f31a5b66686f6922a381"
+      "durationSeconds": 4.26325,
+      "sha256": "c993df0f434c90bdf3dc34b166fe75f1ef218a74c8ee749348127efa2470c35e"
     },
     {
       "id": "voice-campaign-ives-9317a0ee9650",
       "speaker": "Ives",
       "text": "You sold us a damaged hour,",
       "path": "public/audio/voice-campaign-ives-9317a0ee9650.mp3",
-      "durationSeconds": 2.208,
-      "sha256": "af6c91eacf648334df86283c512a58e08da5e969e2547deec4aa3d6b106a57c9"
+      "durationSeconds": 2.2933333333333334,
+      "sha256": "b1302959552fb5f1db126cbbe739892e2355afbb8e85cb17322a53dd6366771d"
     },
     {
       "id": "voice-campaign-ives-a94db9de69a3",
       "speaker": "Ives",
       "text": "We would like the name of whoever fried the rest.",
       "path": "public/audio/voice-campaign-ives-a94db9de69a3.mp3",
-      "durationSeconds": 2.8053333333333335,
-      "sha256": "93a356d4f501486db4966bcd226d8046aec76e0249fcdd20747f510aec3f53e5"
+      "durationSeconds": 3.5453333333333332,
+      "sha256": "a119a9a99a1e8838df0b5ce71c1fe79fc9a5e61496bca69722e61a5fcc9c6ea2"
     },
     {
       "id": "voice-campaign-sister-lumen-390123751d0a",
@@ -1382,16 +1382,16 @@
       "speaker": "Ives",
       "text": "The hour reached us,",
       "path": "public/audio/voice-campaign-ives-7117058514fc.mp3",
-      "durationSeconds": 1.5466666666666666,
-      "sha256": "324a84cefd2264e9064279e1ddead9299517bfcc71838f68374f698a9ab0f457"
+      "durationSeconds": 1.6106666666666667,
+      "sha256": "5fc51d5e6b72a37bc4f5ef67afdba231cb9a0fc7d59a317e6de71878193022cc"
     },
     {
       "id": "voice-campaign-ives-c0f98673baa3",
       "speaker": "Ives",
       "text": "Helion likes a complete file. You are the incomplete part.",
       "path": "public/audio/voice-campaign-ives-c0f98673baa3.mp3",
-      "durationSeconds": 4.304,
-      "sha256": "71122a8f5512322135789e68431b9f4dad6e339a9aab22d2773785477f69efff"
+      "durationSeconds": 4.426666666666667,
+      "sha256": "41fac1b875a07e9ba3d72a315a600d0463d51b3f0cc0577530a9371da383465b"
     },
     {
       "id": "voice-campaign-quill-52ddae919538",
@@ -1560,6 +1560,38 @@
       "path": "public/audio/voice-campaign-sera-names-performance.mp3",
       "durationSeconds": 4.495958333333333,
       "sha256": "c10e28ce32299f61ac375bfd91417481629bb8e75b4e6fe3b223ad21142652ae"
+    },
+    {
+      "id": "voice-campaign-ives-kept-name-performance",
+      "speaker": "Ives",
+      "text": "We kept the name. Burning the badge was a hobby.",
+      "path": "public/audio/voice-campaign-ives-kept-name-performance.mp3",
+      "durationSeconds": 3.775333333333333,
+      "sha256": "0a4d4c93e6605fa8937dbb0f320c8edf2991c0811fe161deaa5ae63b58bf7fa4"
+    },
+    {
+      "id": "voice-campaign-ives-act2-archive-door-performance",
+      "speaker": "Ives",
+      "text": "If you allege an instruction, identify its issuer. We will challenge anything less.",
+      "path": "public/audio/voice-campaign-ives-act2-archive-door-performance.mp3",
+      "durationSeconds": 6.421291666666667,
+      "sha256": "a3b7382d63e31d3c6663dfa703de50dd583ce58a02c8bed72f6b4bf4df8d7d37"
+    },
+    {
+      "id": "voice-campaign-ives-hearing-challenge-performance",
+      "speaker": "Ives",
+      "text": "A maintenance signature isn't an issuing key. A witness isn't a server. What exactly are you asking people to believe?",
+      "path": "public/audio/voice-campaign-ives-hearing-challenge-performance.mp3",
+      "durationSeconds": 8.310666666666666,
+      "sha256": "098b4820461ecb996f2da469d7ce513916f773506ebb74e4ce8dab2f9363ad8b"
+    },
+    {
+      "id": "voice-campaign-ives-listed-performance",
+      "speaker": "Ives",
+      "text": "Your name is still on file. That is what the tower will keep.",
+      "path": "public/audio/voice-campaign-ives-listed-performance.mp3",
+      "durationSeconds": 4.500666666666667,
+      "sha256": "190a3c035e6fb392d55c1845dfa740975449d31de052a5084bf5ae30242efdfe"
     }
   ]
 }

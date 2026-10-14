@@ -11,6 +11,7 @@ import bindings from "../qa/media/campaign-dialogue-bindings.json";
 import { dialogueExamples } from "../qa/production/dialogue-examples";
 import { installAudioReview, type AudioReview } from "../qa/production/audio-review";
 import { keyboardActivate } from "../qa/production/keyboard";
+import { voiceLevel } from "../lib/voice-level";
 
 async function main() {
   const args = process.argv.slice(2), url = args[0];
@@ -23,7 +24,7 @@ async function main() {
   const examples = dialogueExamples();
   const revision = execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8" }).trim();
   const dirty = Boolean(execFileSync("git", ["status", "--porcelain"], { encoding: "utf8" }).trim());
-  const testedSources = Object.fromEntries(["lib/preferences.ts", "next.config.ts", "qa/media/bed-delivery.json", "lib/sound.ts", "lib/engine.ts", "lib/campaign-dialogue.ts", "lib/dialogue-playback.ts", "components/VoiceLine.tsx", "components/GameApp.tsx", "components/PlayScreen.tsx", "qa/production/keyboard.ts", "qa/production/audio-review.ts", "qa/production/dialogue-examples.ts", "qa/media/campaign-dialogue-bindings.json", "qa/media/campaign-dialogue-lines.json", "qa/media/voice-lines.json", "scripts/voice-validation.ts"].map(file => [file, createHash("sha256").update(readFileSync(file)).digest("hex")]));
+  const testedSources = Object.fromEntries(["lib/preferences.ts", "next.config.ts", "qa/media/bed-delivery.json", "lib/sound.ts", "lib/voice-level.ts", "qa/media/voice-levels.json", "qa/media/voice-mix.json", "lib/engine.ts", "lib/campaign-dialogue.ts", "lib/dialogue-playback.ts", "components/VoiceLine.tsx", "components/GameApp.tsx", "components/PlayScreen.tsx", "qa/production/keyboard.ts", "qa/production/audio-review.ts", "qa/production/dialogue-examples.ts", "qa/media/campaign-dialogue-bindings.json", "qa/media/campaign-dialogue-lines.json", "qa/media/voice-lines.json", "scripts/voice-validation.ts"].map(file => [file, createHash("sha256").update(readFileSync(file)).digest("hex")]));
   const browser = await chromium.launch({ executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH, args: ["--no-sandbox"] });
   const rows: object[] = [], errors: string[] = [], failures: string[] = []; let next = 0; const started = Date.now();
   const filename = (id: string) => `${id}.${id.startsWith("voice-campaign-") ? "mp3" : "wav"}`;
@@ -84,6 +85,8 @@ async function main() {
           expect(ended.liveSources).toBe(2);
           expect(ended.disposed.filter(name => name.startsWith("voice-"))).toEqual(expected);
           expect(ended.cleared.filter(name => name.startsWith("voice-"))).toEqual(expected); expect(await saved()).toBe(before);
+          expect(ended.voiceLevels.map(entry => entry.file)).toEqual(expected);
+          for (const entry of ended.voiceLevels) expect(entry.gain).toBeCloseTo(voiceLevel(entry.file.replace(/\.(wav|mp3)$/, "")), 6);
           if (queue.length > 1) await page.getByLabel("Dialogue line", { exact: true }).selectOption(selected.key);
           await keyboardActivate(page, listen); await expect(page.getByTestId("voice-line")).toContainText("Playing selected dialogue");
           await keyboardActivate(page, page.getByRole("button", { name: "Stop line", exact: true }));
@@ -98,7 +101,7 @@ async function main() {
           await keyboardActivate(page, page.getByLabel("Sound enabled", { exact: true }));
           await expect.poll(async () => (await audio()).liveSources).toBe(0);
           const off = await audio(); expect(off.sourcesDisposed).toBe(off.sourcesCreated); expect(off.buffersCleared).toBe(off.sourcesCreated);
-          const row = { id: line.id, route: example.route, source: example.source, expectedVoices: expected, durationSeconds, voiceRequests, liveSourcesAfterEnd: ended.liveSources, created: off.sourcesCreated, disposed: off.sourcesDisposed };
+          const row = { id: line.id, route: example.route, source: example.source, expectedVoices: expected, playbackLevels: ended.voiceLevels, durationSeconds, voiceRequests, liveSourcesAfterEnd: ended.liveSources, created: off.sourcesCreated, disposed: off.sourcesDisposed };
           rows.push(row); console.log(JSON.stringify(row));
         } finally { await context.close(); }
       }

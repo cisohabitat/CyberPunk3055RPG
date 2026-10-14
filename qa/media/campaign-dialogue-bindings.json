@@ -259,7 +259,7 @@
   },
   {
     "key": "96cca21e279ebc44",
-    "id": "voice-ives-kept-name",
+    "id": "voice-campaign-ives-kept-name-performance",
     "scene": "act2_helion",
     "sceneSpeaker": "Ives",
     "speaker": "Ives",
@@ -301,7 +301,7 @@
   },
   {
     "key": "bfd7053b04cf9d54",
-    "id": "voice-ives-act2-archive-door",
+    "id": "voice-campaign-ives-act2-archive-door-performance",
     "scene": "act2_archive_door",
     "sceneSpeaker": "Ives",
     "speaker": "Ives",
@@ -473,7 +473,7 @@
   },
   {
     "key": "12cdbd3602fe040e",
-    "id": "voice-ives-hearing-challenge",
+    "id": "voice-campaign-ives-hearing-challenge-performance",
     "scene": "act3_testimony_hearing",
     "sceneSpeaker": "Ives",
     "speaker": "Ives",
@@ -1425,7 +1425,7 @@
   },
   {
     "key": "b15dafb7ca76e28c",
-    "id": "voice-ives-listed",
+    "id": "voice-campaign-ives-listed-performance",
     "scene": "ending_listed",
     "sceneSpeaker": "Ives",
     "speaker": "Ives",
