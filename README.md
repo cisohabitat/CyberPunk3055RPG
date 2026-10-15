@@ -596,3 +596,12 @@ Thirty-six complete directed proxy campaigns compare three origins, four special
 The four unchanged browser projects now run on separate CI jobs to avoid serial suite duration exceeding Vercel's 45-minute waiting window. All checks, native permission/performance probes, evidence and fail-closed exact-commit Test/Build gates remain required; the final Build aggregate rejects unsuccessful or missing matrix results.
 
 The production decision also checks the latest four named Browser results directly and rejects older browser/build check IDs after a fresh Test rerun. An earlier successful aggregate cannot publish while a newer required project is missing or pending. All required checks must belong to the current source-check cohort on the exact commit.
+
+
+## Expanded character profiles
+
+In the character sheet’s **People** list, **About [name]** opens a larger neutral portrait and a short biography for each of the fifteen encountered characters. Optional **Encounter notes** grow from selected entries already earned in your journal, retaining their exact text, fact/claim/promise labels and current promise status. Shared history remains beside the compact card. Unknown people and unrevealed paragraph dialogue stay hidden; legacy outcome flags never invent missing conversations or notes.
+
+The existing neutral identity paintings are reused with explicit decisions in `qa/media/character-profiles.json`; scene expressions still follow the actual speaker and earned conduct. Larger images mount only for an expanded profile with artwork enabled. People starts collapsed, text-only remains image-free, and a missing portrait leaves the biography and controls usable. Native disclosures preserve keyboard access within the existing sheet; consulting them spends nothing, changes no save or held die, and starts no voice playback. No scene quotation, actor, audio delivery or art file changes.
+
+See [the profile phase](docs/CHARACTER_PROFILES.md). Preserve 197 scenes / 587 choices, 143 complete campaign fixtures, 302 dialogue bindings / 290 active voice deliveries, all four finales, 1d10/caps, save version 2 and `saint-shard-3055-v1`. The provisional internal grade remains 8.2.

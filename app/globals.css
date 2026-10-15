@@ -983,6 +983,12 @@ html[data-motion="reduce"] .fragment-placed { animation: none; }
 .cast-card-copy { min-width: 0; overflow-wrap: anywhere; }
 .cast-card-copy > strong, .cast-card-copy > span { display: block; }
 .cast-card-copy > span { font-size: .85rem; line-height: 1.5; }
+.cast-profile { grid-column: 1 / -1; min-width: 0; }
+.cast-profile > summary, .cast-profile-notes > summary { min-height: 44px; padding: .65rem .2rem; cursor: pointer; color: var(--cyan); overflow-wrap: anywhere; }
+.cast-profile-content { min-width: 0; line-height: 1.65; overflow-wrap: anywhere; }
+.cast-profile-content > p { margin: .75rem 0; }
+.cast-profile-portrait { display: block; width: 100%; max-width: 300px; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border: 1px solid var(--line); border-radius: 3px; }
+.cast-profile-notes .journal li { display: block; padding-inline: 0; }
 .route-board { margin: 20px 0; padding: 16px; border: 1px solid var(--cyan); background: rgba(94,242,255,.035); }
 .route-heading { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: baseline; justify-content: space-between; }
 .route-heading h2 { margin: 0; font-size: 1.1rem; }

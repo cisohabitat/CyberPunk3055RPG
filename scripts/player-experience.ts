@@ -3,7 +3,8 @@ import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { dirname } from "node:path";
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
-import { commitChoice, getScene, presentChoices } from "../lib/engine";
+import { commitChoice, getScene, presentChoices, sceneText } from "../lib/engine";
+import { metCast } from "../lib/story/cast";
 import type { ReplaySpec } from "../lib/story-replay";
 import type { GameState } from "../lib/types";
 import { installAudioReview, type AudioReview } from "../qa/production/audio-review";
@@ -16,11 +17,11 @@ async function main() {
   const route = option("--route", "qa/routes/integration-names.json");
   const width = Number(option("--width", "390")), artwork = option("--artwork", "none"), reading = option("--reading", "paragraph");
   if (![320, 390, 1440].includes(width) || !["none", "full"].includes(artwork) || !["paragraph", "all"].includes(reading)) throw new Error("Unsupported QA profile");
-  const sound = args.includes("--sound"), out = option("--out", "qa/production/reports/player-experience.json");
+  const sound = args.includes("--sound"), profiles = args.includes("--profiles"), out = option("--out", "qa/production/reports/player-experience.json");
   const spec = JSON.parse(readFileSync(route, "utf8")) as ReplaySpec;
   const revision = execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8" }).trim();
   const dirty = Boolean(execFileSync("git", ["status", "--porcelain"], { encoding: "utf8" }).trim());
-  const testedSources = Object.fromEntries(["lib/sound.ts", "components/GameApp.tsx", "components/PlayScreen.tsx", "components/VoiceLine.tsx", "qa/production/keyboard.ts", "scripts/player-experience.ts", route].map(file => [file, createHash("sha256").update(readFileSync(file)).digest("hex")]));
+  const testedSources = Object.fromEntries(["lib/sound.ts", "components/GameApp.tsx", "components/PlayScreen.tsx", "components/VoiceLine.tsx", "components/Sheet.tsx", "components/CastCard.tsx", "lib/character-profiles.ts", "qa/production/keyboard.ts", "scripts/player-experience.ts", route].map(file => [file, createHash("sha256").update(readFileSync(file)).digest("hex")]));
   const browser = await chromium.launch({ executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH, args: ["--no-sandbox"] });
   const page = await browser.newPage({ viewport: { width, height: width === 1440 ? 900 : 844 }, reducedMotion: "reduce" });
   const errors: string[] = [], failedMedia: string[] = [], mediaRequests = new Set<string>();
@@ -33,6 +34,7 @@ async function main() {
   const audio = (): Promise<AudioReview> => page.evaluate(() => (window as unknown as { audioReview: AudioReview }).audioReview);
   let tabs = 0, reloads = 0, reveals = 0, voices = 0, interruptions = 0;
   const scenes: string[] = [], choiceResponseMs: number[] = [], completedVoices: string[] = [];
+  const consultedProfiles = new Set<string>();
   const activate = async (target: Parameters<typeof keyboardActivate>[1]) => { tabs += await keyboardActivate(page, target); };
   const start = Date.now();
   try {
@@ -69,6 +71,28 @@ async function main() {
       if (await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)) throw new Error(`Overflow at ${before.sceneId}`);
       const showRest = page.getByTestId("show-rest");
       if (await showRest.count()) { await activate(showRest); reveals++; }
+      if (profiles) {
+        const scene = getScene(before.sceneId);
+        const newPeople = metCast(before, scene.speaker, sceneText(scene, before)).filter(person => !consultedProfiles.has(person.speaker));
+        if (newPeople.length) {
+          if (width <= 1100) await activate(page.getByRole("button", { name: "Sheet", exact: true }));
+          const sheet = page.getByTestId("sheet"), people = sheet.locator(".cast-roster");
+          if (!await people.evaluate(details => details.hasAttribute("open"))) await activate(people.locator(":scope > summary"));
+          for (const person of newPeople) {
+            const card = sheet.locator(`.cast-card[data-speaker="${person.speaker}"]`), about = card.locator(".cast-profile > summary");
+            await activate(about);
+            await expect(card.getByTestId("character-profile")).toBeVisible();
+            const notes = card.locator(".cast-profile-notes > summary");
+            if (await notes.count()) await activate(notes);
+            expect(await saved()).toEqual(before);
+            consultedProfiles.add(person.speaker);
+            await activate(about);
+          }
+          await activate(people.locator(":scope > summary"));
+          if (width <= 1100) await activate(sheet.getByRole("button", { name: "Close sheet", exact: true }));
+          expect(await saved()).toEqual(before);
+        }
+      }
       const choice = presentChoices(before, getScene(before.sceneId)).find(choice => choice.id === step.choiceId && choice.enabled);
       if (!choice) throw new Error(`Unavailable authored choice ${before.sceneId}/${step.choiceId}`);
       if (sound) {
@@ -135,7 +159,7 @@ async function main() {
     if (!sound) expect([...mediaRequests].filter(path => path.startsWith("/audio/"))).toEqual([]);
     mkdirSync(dirname(out), { recursive: true });
     const environment = { browser: "Chromium", browserVersion: browser.version(), platform: process.platform, nodeVersion: process.version, device: "cloud automation host; synthetic viewport" };
-    const result = { revision, dirty, testedSources, environment, url, route, width, artwork, reading, sound, input: "Tab, Shift+Tab, Enter, Space, arrows and typing; no pointer actions or programmatic focus", dice: "authored/directed", elapsedSeconds: (Date.now() - start) / 1000, visits: scenes.length, scenes, tabs, reloads, reveals, voices, completedVoices, interruptions, choiceResponseMs, final: { sceneId: final.sceneId, creds: final.creds, strain: final.strain, rolls: final.rolls.map(roll => roll.roll) }, finalAudio: stopped, initialMediaRequests, mediaRequests: [...mediaRequests], errors, failedMedia, limitations: "Internal authored campaign, not blind or fresh-player observation. Synthetic viewport and pagehide, not physical hardware or app switch. Voice completion and cleanup do not establish listening quality. Transition times include UI review/reloads; they are not INP or field percentiles." };
+    const result = { revision, dirty, testedSources, environment, url, route, width, artwork, reading, sound, profiles, consultedProfiles: [...consultedProfiles], input: "Tab, Shift+Tab, Enter, Space, arrows and typing; no pointer actions or programmatic focus", dice: "authored/directed", elapsedSeconds: (Date.now() - start) / 1000, visits: scenes.length, scenes, tabs, reloads, reveals, voices, completedVoices, interruptions, choiceResponseMs, final: { sceneId: final.sceneId, creds: final.creds, strain: final.strain, rolls: final.rolls.map(roll => roll.roll) }, finalAudio: stopped, initialMediaRequests, mediaRequests: [...mediaRequests], errors, failedMedia, limitations: "Internal authored campaign, not blind or fresh-player observation. Synthetic viewport and pagehide, not physical hardware or app switch. Voice completion and cleanup do not establish listening quality. Transition times include UI review/reloads; they are not INP or field percentiles." };
     writeFileSync(out, JSON.stringify(result, null, 2));
     console.log(JSON.stringify({ route, visits: scenes.length, tabs, reloads, reveals, voices, interruptions, finale: final.sceneId, errors, failedMedia }));
   } finally { await browser.close(); }

@@ -12,6 +12,7 @@ import { objectives } from "@/lib/objectives";
 import { memoryDisposition } from "@/lib/evidence";
 import { metCast } from "@/lib/story/cast";
 import { characterConduct } from "@/lib/relationships";
+import { characterProfile } from "@/lib/character-profiles";
 import type { GameState } from "@/lib/types";
 
 const TABS = ["stats", "gear", "journal"] as const;
@@ -60,10 +61,11 @@ export function Sheet({ state, open, onClose, speaker, visibleText, artwork = tr
       )}
       <details className="cast-roster" open={peopleOpen} onToggle={event => setPeopleOpen(event.currentTarget.open)}>
         <summary>People · {people.length} met</summary>
-        <p className="hint">People you have encountered. Shared history records what happened between you.</p>
+        <p className="hint">People you have encountered. Open About for a portrait and biography; encounter notes grow from your journal. Shared history records what happened between you.</p>
         <ul className="cast" data-testid="cast">
           {people.map(person => <CastCard key={person.speaker} person={person}
-            history={characterConduct(state, person.name)} artwork={artwork && peopleOpen} />)}
+            history={characterConduct(state, person.name)} artwork={artwork && peopleOpen}
+            profile={characterProfile(state, person.speaker, speaker, visibleText)} state={state} />)}
         </ul>
       </details>
       <div className="tabs" role="tablist" aria-label="Character details">
