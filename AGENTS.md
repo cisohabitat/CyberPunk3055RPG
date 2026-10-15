@@ -657,3 +657,8 @@ New paper/chair/folio cues follow committed custody, chair preparation or actual
 See [the phase report](docs/ARCHIVE_HEARING_DIRECTION.md) and `qa/media/archive-hearing.json`. Preserve 197 scenes / 597 choices, 147 authored complete routes, 302 bindings / 290 voices, four finales, canonical prose, evidence/consent, pending dice, 1d10/caps, version 2 and `saint-shard-3055-v1`. The provisional overall grade stays 8.2 pending broader reassessment.
 
 Compact scene portraits show the actual speaker’s name and Speaking cue without wrapping the repeated role over the face; the complete label remains accessible.
+
+
+## Random runner names
+
+Each new character-creation screen starts with a randomly suggested street handle and given name. Each field has its own keyboard-accessible Randomise button, which chooses a different suggestion without changing the other field or the build. Both names remain editable, and the given name may still be cleared. Suggestions are generated locally when creation opens; continuing a saved run keeps its recorded identity. Story dialogue, voices and art remain unchanged.

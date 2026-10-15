@@ -21,7 +21,7 @@ async function main() {
   const spec = JSON.parse(readFileSync(route, "utf8")) as ReplaySpec;
   const revision = execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8" }).trim();
   const dirty = Boolean(execFileSync("git", ["status", "--porcelain"], { encoding: "utf8" }).trim());
-  const testedSources = Object.fromEntries(["lib/sound.ts", "components/GameApp.tsx", "components/PlayScreen.tsx", "components/Portrait.tsx", "app/globals.css", "components/ArchiveCatalog.tsx", "components/FinaleReflection.tsx", "components/PivotalScene.tsx", "lib/pivotal-scenes.ts", "lib/finale-direction.ts", "lib/investigation-scenes.ts", "lib/scene-cues.ts", "lib/art.ts", "lib/archive-catalog.ts", "components/VoiceLine.tsx", "components/Sheet.tsx", "components/CastCard.tsx", "lib/character-profiles.ts", "qa/production/keyboard.ts", "scripts/player-experience.ts", route].map(file => [file, createHash("sha256").update(readFileSync(file)).digest("hex")]));
+  const testedSources = Object.fromEntries(["lib/sound.ts", "components/GameApp.tsx", "components/CreateScreen.tsx", "lib/runner-names.ts", "components/PlayScreen.tsx", "components/Portrait.tsx", "app/globals.css", "components/ArchiveCatalog.tsx", "components/FinaleReflection.tsx", "components/PivotalScene.tsx", "lib/pivotal-scenes.ts", "lib/finale-direction.ts", "lib/investigation-scenes.ts", "lib/scene-cues.ts", "lib/art.ts", "lib/archive-catalog.ts", "components/VoiceLine.tsx", "components/Sheet.tsx", "components/CastCard.tsx", "lib/character-profiles.ts", "qa/production/keyboard.ts", "scripts/player-experience.ts", route].map(file => [file, createHash("sha256").update(readFileSync(file)).digest("hex")]));
   const browser = await chromium.launch({ executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH, args: ["--no-sandbox"] });
   const page = await browser.newPage({ viewport: { width, height: width === 1440 ? 900 : 844 }, reducedMotion: "reduce" });
   const errors: string[] = [], failedMedia: string[] = [], mediaRequests = new Set<string>();
@@ -53,8 +53,9 @@ async function main() {
     // separately from requests after the player chooses text-only delivery.
     const initialMediaRequests = [...mediaRequests]; mediaRequests.clear();
     await activate(page.getByTestId("new-run"));
-    tabs += await tabTo(page, page.getByTestId("handle-input")); await page.keyboard.type(spec.character.handle);
-    if (spec.character.givenName) { tabs += await tabTo(page, page.getByTestId("given-input")); await page.keyboard.type(spec.character.givenName); }
+    tabs += await tabTo(page, page.getByTestId("handle-input")); await page.keyboard.press("ControlOrMeta+A"); await page.keyboard.type(spec.character.handle);
+    tabs += await tabTo(page, page.getByTestId("given-input")); await page.keyboard.press("ControlOrMeta+A"); await page.keyboard.press("Backspace");
+    if (spec.character.givenName) await page.keyboard.type(spec.character.givenName);
     await activate(page.getByTestId(`origin-${spec.character.origin}`));
     if (!spec.character.complication) throw new Error("UI campaign requires an explicit complication");
     await activate(page.getByTestId(`complication-${spec.character.complication}`));

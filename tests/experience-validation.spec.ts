@@ -65,7 +65,8 @@ test("experience narrow largest-text entry works through real Tab order and typi
   await keyboardSelect(page, page.getByLabel("Reading pace", { exact: true }), "paragraph");
   await keyboardActivate(page, page.getByRole("button", { name: "Done", exact: true }));
   await keyboardActivate(page, page.getByTestId("new-run"));
-  await tabTo(page, page.getByTestId("handle-input")); await page.keyboard.type("KeyboardQA");
+  await tabTo(page, page.getByTestId("handle-input")); await page.keyboard.press("ControlOrMeta+A"); await page.keyboard.type("KeyboardQA");
+  await expect(page.getByTestId("handle-input")).toHaveValue("KeyboardQA");
   await keyboardActivate(page, page.getByTestId("origin-dustline"));
   await keyboardActivate(page, page.getByTestId("complication-on-file"));
   await keyboardActivate(page, page.getByTestId("plus-ghost"));

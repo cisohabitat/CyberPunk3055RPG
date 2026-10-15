@@ -633,3 +633,8 @@ Ten archive, Nia account and public-hearing conversations now lead with their fu
 Four exact-word Edda/Nia performances have clearer phrasing, with established voices and manual/automatic playback preferences preserved. The existing quiet score and actual room ambience sit below dialogue. Soft paper handling, chair-brake contact and a closing folio accompany the actual committed actions; they add no evidence, consent or outcome. See [the phase report](docs/ARCHIVE_HEARING_DIRECTION.md).
 
 Compact scene portraits show the actual speaker’s name and Speaking cue without wrapping the repeated role over the face; the complete label remains accessible.
+
+
+## Random runner names
+
+Each new character-creation screen starts with a randomly suggested street handle and given name. Each field has its own keyboard-accessible Randomise button, which chooses a different suggestion without changing the other field or the build. Both names remain editable, and the given name may still be cleared. Suggestions are generated locally when creation opens; continuing a saved run keeps its recorded identity. Story dialogue, voices and art remain unchanged.

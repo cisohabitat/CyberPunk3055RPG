@@ -519,6 +519,10 @@ fieldset { border: 0; margin: 1.25rem 0; padding: 0; }
 .names, .points { display: grid; gap: 0.8rem; }
 
 .names { grid-template-columns: 1fr 1fr; }
+.name-field { display: grid; gap: .35rem; min-width: 0; }
+.name-controls { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .5rem; }
+.name-controls input { min-width: 0; width: 100%; box-sizing: border-box; }
+.name-controls button { padding: .65rem .75rem; letter-spacing: .04em; min-height: 44px; }
 
 label { display: grid; gap: 0.35rem; }
 

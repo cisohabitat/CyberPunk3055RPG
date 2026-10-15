@@ -5,6 +5,7 @@ import { Mark, originAccent } from "@/components/Mark";
 import { COMPLICATIONS, ORIGINS, POINTS, STATS, STAT_INFO, isValidName } from "@/lib/character";
 import { createCharacter } from "@/lib/engine";
 import { ITEMS } from "@/lib/items";
+import { randomGivenName, randomStreetHandle } from "@/lib/runner-names";
 import type { ComplicationId, GameState, OriginId, StatId } from "@/lib/types";
 
 const EMPTY: Record<StatId, number> = { chrome: 0, nerve: 0, face: 0, ghost: 0 };
@@ -18,8 +19,8 @@ export function CreateScreen({
   onBack: () => void;
   onStart: (state: GameState) => void;
 }) {
-  const [handle, setHandle] = useState("");
-  const [givenName, setGivenName] = useState("");
+  const [handle, setHandle] = useState(() => randomStreetHandle());
+  const [givenName, setGivenName] = useState(() => randomGivenName());
   const [origin, setOrigin] = useState<OriginId>("gutterwire");
   const [complication, setComplication] = useState<ComplicationId | null>(null);
   const [keepsake, setKeepsake] = useState("");
@@ -56,27 +57,35 @@ export function CreateScreen({
         <h1>Who walks in?</h1>
         <p>You are a runner, taking work the towers leave off the record. Choose the life you bring with you. Your story begins on the way to a meeting.</p>
         <div className="names">
-          <label>
-            <span>Street handle</span>
-            <input
-              data-testid="handle-input"
-              value={handle}
-              onChange={(event) => setHandle(event.target.value)}
-              maxLength={18}
-              autoComplete="off"
-              required
-            />
-          </label>
-          <label>
-            <span>Given name, optional</span>
-            <input
-              data-testid="given-input"
-              value={givenName}
-              onChange={(event) => setGivenName(event.target.value)}
-              maxLength={24}
-              autoComplete="off"
-            />
-          </label>
+          <div className="name-field">
+            <label htmlFor="runner-handle"><span>Street handle</span></label>
+            <div className="name-controls">
+              <input
+                id="runner-handle"
+                data-testid="handle-input"
+                value={handle}
+                onChange={(event) => setHandle(event.target.value)}
+                maxLength={18}
+                autoComplete="off"
+                required
+              />
+              <button type="button" className="ghost" aria-label="Randomise street handle" onClick={() => setHandle(randomStreetHandle(handle))}>Randomise</button>
+            </div>
+          </div>
+          <div className="name-field">
+            <label htmlFor="runner-given-name"><span>Given name, optional</span></label>
+            <div className="name-controls">
+              <input
+                id="runner-given-name"
+                data-testid="given-input"
+                value={givenName}
+                onChange={(event) => setGivenName(event.target.value)}
+                maxLength={24}
+                autoComplete="off"
+              />
+              <button type="button" className="ghost" aria-label="Randomise given name" onClick={() => setGivenName(randomGivenName(givenName))}>Randomise</button>
+            </div>
+          </div>
         </div>
         <fieldset>
           <legend>Origin</legend>
