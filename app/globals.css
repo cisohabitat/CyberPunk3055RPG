@@ -1090,3 +1090,24 @@ html[data-motion="reduce"] .fragment-placed { animation: none; }
   .guide-topbar .brand { width: 100%; }
   .guide-index { gap: .35rem 1rem; }
 }
+
+/* The physical catalog is a deliberate consultation; the scene's words stay intact. */
+.archive-catalog { border: 1px solid var(--line); margin: 1.5rem 0; padding: clamp(.75rem, 2vw, 1.5rem); }
+.archive-catalog h2 { margin-top: 0; }
+.archive-catalog h3 { overflow-wrap: anywhere; }
+.catalog-receipt, .catalog-records dl { margin: 1rem 0; }
+.catalog-receipt > div, .catalog-records dl > div { margin-block: .75rem; }
+.archive-catalog dt { color: var(--cyan); font-weight: 600; }
+.archive-catalog dd { margin: .25rem 0 0; }
+.catalog-records { display: grid; gap: 1rem; }
+.catalog-records > article { min-width: 0; padding: 1rem; border: 1px solid var(--line); }
+.catalog-records h3 { margin: 0; }
+.catalog-action { margin-top: 1rem; }
+.catalog-action button { text-align: left; max-width: 100%; white-space: normal; }
+.catalog-feedback { border-left: 2px solid var(--amber); padding-left: .75rem; }
+.catalog-retrieval { padding-block: 1rem; border-bottom: 1px solid var(--line); }
+@media (min-width: 1300px) {
+  .catalog-receipt { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+}
+
+.archive-catalog h2, .archive-catalog h3, .catalog-feedback, #archive-catalog-toggle { scroll-margin-top: calc(var(--header-h, 0px) + 1rem); scroll-margin-bottom: 1rem; }

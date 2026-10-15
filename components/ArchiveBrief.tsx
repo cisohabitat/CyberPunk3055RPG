@@ -10,6 +10,7 @@ export function ArchiveBrief({ state }: { state: GameState }) {
   return <aside className="transfer-brief" aria-label="Archive source and preparation" data-testid="archive-brief">
     <p><strong>Archive preparation</strong> {preparation.length ? preparation.join(" · ") : "No preparation bonus. Staffed ledger recovery remains available."}</p>
     {state.flags.archive_reader_alert && <p className="transfer-warning">Reader alerted · authentication and carbon retrieval −1.</p>}
+    {state.flags.archive_catalog_located && <p>{state.flags.archive_catalog_retrieved ? `Staffed extraction received · WN/SHIFT/REV. ${state.flags.archive_catalog_badge ? "Billed to your old badge; its trace remains." : "Search fee paid; the logged catalog query remains."} No digital-key authentication.` : "Catalog locator WN/SHIFT/REV selected. The locator itself supplies no evidence."}</p>}
     <p className="hint">A ledger can corroborate the cancellation. Only a successful key match authenticates its digital issuer. Custody follows retrieval.</p>
   </aside>;
 }

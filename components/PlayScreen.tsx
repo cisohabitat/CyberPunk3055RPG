@@ -1,5 +1,8 @@
 "use client";
 
+import { ArchiveCatalog } from "./ArchiveCatalog";
+import { CATALOG_ACTIONS } from "@/lib/archive-catalog";
+
 import { campaignCoda } from "@/lib/campaign-consequences";
 
 import { InvestigationNotebook } from "./InvestigationNotebook";
@@ -117,7 +120,7 @@ export function PlayScreen({
       </p>
     ))}
   </div>;
-  const unavailableChoices = choices.filter((choice) => !choice.enabled);
+  const unavailableChoices = choices.filter((choice) => !choice.enabled && !(scene.id === "act2_archive_compare" && CATALOG_ACTIONS.has(choice.id)));
 
   useEffect(() => {
     const target = readingFocus.current;
@@ -372,6 +375,7 @@ export function PlayScreen({
             )}
             {preferences.reading === "paragraph" && paragraphs.length > 1 && <p className="reading-progress hint" role="status" aria-atomic="true">{visibleCount} of {paragraphs.length} paragraphs shown</p>}
             {dialogueQueue.length > 0 && <VoiceLine key={scene.id} line={dialogue} lines={dialogueQueue} automatic={preferences.autoVoices} paused={audioPaused && preferences.sound} enabled={voicesEnabled} onSpeaking={setSpeaking} />}
+            {scene.id === "act2_archive_compare" && <ArchiveCatalog state={state} choices={choices} onChoose={pick} numberShortcuts={preferences.numberShortcuts} />}
             {scene.id === "memory_sequence" && <MemoryTimeline state={state} choices={choices} onPlace={pick} artwork={preferences.artwork !== "none"} reducedMotion={reduceMotion} numberShortcuts={preferences.numberShortcuts} />}
             {["act2_route_map", "act2_route_exit", "act2_route_review", "act2_route_crossing"].includes(scene.id) && <RouteBoard state={state} />}
             {scene.finale && campaignCoda(state) && <p data-testid="campaign-coda">{campaignCoda(state)}</p>}
@@ -395,6 +399,7 @@ export function PlayScreen({
                 {decisionIndex > 0 && <h3 className="choice-group-title">People and unfinished work</h3>}
                 {choices.map((choice, index) => {
                   if (scene.memory && choice.id.startsWith("inspect-")) return null;
+                  if (scene.id === "act2_archive_compare" && CATALOG_ACTIONS.has(choice.id)) return null;
                   if (scene.id === "memory_sequence" && choice.id.startsWith("place-")) return null;
                   const odds = choice.check ? previewCheck(state, choice.check) : null;
                   const chance = !odds ? null : odds.hits === 10 ? "certain" : odds.hits === 0 ? "no chance" : `${odds.hits} in 10`;
@@ -404,6 +409,7 @@ export function PlayScreen({
                       <button
                         className="choice"
                         type="button"
+                        id={choice.id === "open-archive-catalog" ? "archive-catalog-toggle" : undefined}
                         data-testid={`choice-${choice.id}`}
                         aria-labelledby={`choice-label-${choice.id}`}
                         aria-describedby={`choice-detail-${choice.id}`}

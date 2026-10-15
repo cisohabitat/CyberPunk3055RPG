@@ -8,6 +8,11 @@ export function sceneInteractionCue(before: GameState, choiceId: string, after: 
   const fragmentFlags: Record<string, string> = { "inspect-signature": "memory_signature", "inspect-order": "memory_order", "inspect-roster": "memory_roster" };
   const fragment = fragmentFlags[choiceId];
   if (before.sceneId === "memory_table" && after.sceneId === "memory_table" && fragment && !before.flags[fragment] && after.flags[fragment]) return "foley-viewer";
+  if (before.sceneId === "act2_archive_compare" && after.sceneId === before.sceneId) {
+    const records: Record<string, string> = { "catalog-request-authorization": "archive_catalog_queried_authorization", "catalog-request-revision": "archive_catalog_queried_revision", "catalog-request-service": "archive_catalog_queried_service" };
+    const flag = records[choiceId];
+    if (flag && !before.flags[flag] && after.flags[flag]) return "foley-reader";
+  }
   if (before.sceneId === "act2_archive_prep" && choiceId === "index-archive" && after.sceneId === "act2_archive_compare") return "foley-reader";
   if (before.sceneId === "act2_archive_door" && ["trace-receipt", "isolate-key"].includes(choiceId)
     && ["act2_archive_custody", "act2_archive_verified", "act2_archive_gap"].includes(after.sceneId)) return "foley-reader";

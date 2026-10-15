@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "precedingCommit": "89d74903230378b5235b938729b189c07b6ddbb5",
+  "scene": "act2_archive_compare",
+  "artDecision": "Reuse the complete neutral archive-desk illustration and established Edda portrait. The optional catalog drawer is a text interaction in the same room, without a new place or visual outcome. Text-only and failed-image play remain complete. Custody retains its actual conditional art and speaker.",
+  "illustration": "/art/archive-desk.jpg",
+  "voiceDecision": "All canonical scene prose, quotations, actors, binding keys and audio deliveries remain byte-identical. New catalog descriptions, receipts and feedback are unquoted written interface records, with no voiced narration, player text, new attributed performance or runtime speech synthesis.",
+  "soundDecision": "The existing neutral reader cue accompanies each newly submitted catalog query, matching and mismatching alike. Free inspection, close/reopen, reload and preferences do not play it. Original cancellation, mute, effects volume and missing-audio behavior apply.",
+  "preservedBindingsSha256": "ecfff2a6154e7933eb173a4f0c51c79aa3e1f88b0fc7d95e3041ce5cceea4b3f",
+  "preservedMediaInventory": "qa/media/character-profiles.json#/preservedMedia",
+  "stateDecision": "Saved version-2 boolean flags track inspections, individual logged requests and a located reference. Only staffed extraction spends money or bills a badge and grants corroboration. No catalog action authenticates a key or grants witness/source-name permission. Original methods, pending checks and finales remain."
+}

@@ -1,3 +1,4 @@
+import { CATALOG_CHOICES } from "../archive-catalog";
 import { kitBonuses } from "../loadout";
 import type { GameState, Scene } from "../types";
 
@@ -29,6 +30,7 @@ export const ARCHIVE_SCENES: Record<string, Scene> = {
     choices: [
       { id: "separate-source-tests", label: "Corroborate the cancellation; authenticate the issuer only with a key match.", effects: { flags: ["archive_compared"], journal: [{ id: "archive-method", text: "The catalog identifies an independent ledger. Retrieving it can corroborate the cancellation; a countersignature alone cannot authenticate a digital issuing key.", kind: "claim" }] }, next: "act2_archive_door" },
       { id: "catalog-is-proof", label: "The catalog alone proves who issued the command.", next: "act2_archive_challenge" },
+      ...CATALOG_CHOICES,
     ],
   },
   act2_archive_challenge: {

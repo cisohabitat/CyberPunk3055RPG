@@ -10,7 +10,7 @@ export const SOURCE_GROUPS = [
 ] as const;
 export type SourceGroup = typeof SOURCE_GROUPS[number]["id"];
 const MEMORY = new Set(["memory-signature", "memory-order", "memory-roster", "mara-assurance", "mara-channel"]);
-const ARCHIVE = new Set(["archive-method", "verified-order", "archive-gap", "archive-custody"]);
+const ARCHIVE = new Set(["archive-method", "archive-catalog", "archive-catalog-extraction", "archive-catalog-authorization", "archive-catalog-service", "verified-order", "archive-gap", "archive-custody"]);
 
 // Read-only views of acquired records. Preserve their original order, wording
 // and kind; fragment metadata was already available on the inspected card.

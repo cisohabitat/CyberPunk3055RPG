@@ -1,0 +1,242 @@
+{
+  "version": 1,
+  "precedingCommit": "89d74903230378b5235b938729b189c07b6ddbb5",
+  "assessment": "Bounded encounter-variety phase. The optional catalog adds saved inspection, query consequences and staffed retrieval without changing old methods, source authority or the provisional 8.2 grade.",
+  "evidence": "Source-familiar directed complete routes, including honest hearing answers and scarce recovery. Cost comparisons use the unchanged preceding route specifications; they are not participant scores.",
+  "comparisons": [
+    {
+      "candidateRoute": "catalog-paid",
+      "precedingRoute": "kit-archive",
+      "precedingRouteSha256": "5f61fd69c82e9dca32784bcb35d22b43a49c8ca3a768d67eb698a64cd3079c54",
+      "origin": "dustline",
+      "precedingFinal": {
+        "sceneId": "ending_quiet",
+        "flags": {
+          "testimony_published": true,
+          "archive_key_authenticated": true,
+          "order_verified": true,
+          "week_recovered": true,
+          "kit_bought": true
+        },
+        "journal": [
+          "wall-account",
+          "field-kit",
+          "week-recovery"
+        ],
+        "creds": 190,
+        "strain": 0,
+        "items": [
+          "archive-probe"
+        ]
+      },
+      "candidateFinal": {
+        "sceneId": "ending_quiet",
+        "flags": {
+          "testimony_published": true,
+          "archive_key_authenticated": false,
+          "order_verified": true,
+          "week_recovered": true,
+          "kit_bought": true,
+          "archive_catalog_retrieved": true,
+          "old_badge_traced": false,
+          "archive_catalog_located": true
+        },
+        "journal": [
+          "wall-account",
+          "field-kit",
+          "week-recovery",
+          "archive-catalog",
+          "archive-catalog-extraction"
+        ],
+        "creds": 165,
+        "strain": 0,
+        "items": [
+          "archive-probe"
+        ]
+      },
+      "decision": "Pay 25 for predictable staffed corroboration; retain an unauthenticated digital key."
+    },
+    {
+      "candidateRoute": "catalog-badge",
+      "precedingRoute": "shift-key",
+      "precedingRouteSha256": "02e33797aaec0ecfa892ebf56b0737c65667ec39e52839867e0c009b2e2e8678",
+      "origin": "spire",
+      "precedingFinal": {
+        "sceneId": "ending_quiet",
+        "flags": {
+          "testimony_published": true,
+          "archive_key_authenticated": true,
+          "nia_public_consent": false,
+          "order_verified": true,
+          "edda_shift_done": true,
+          "edda_shift_consent": true,
+          "edda_shift_paid": true,
+          "edda_representation": false,
+          "edda_exposed": true,
+          "edda_public_consent": true,
+          "edda_supported": false
+        },
+        "journal": [
+          "wall-account",
+          "edda-shift-request",
+          "edda-shift-response"
+        ],
+        "creds": 390,
+        "strain": 1
+      },
+      "candidateFinal": {
+        "sceneId": "ending_quiet",
+        "flags": {
+          "testimony_published": true,
+          "archive_key_authenticated": false,
+          "nia_public_consent": false,
+          "order_verified": true,
+          "edda_shift_done": true,
+          "edda_shift_consent": true,
+          "edda_shift_paid": true,
+          "edda_representation": false,
+          "edda_exposed": true,
+          "edda_public_consent": true,
+          "edda_supported": false,
+          "archive_catalog_retrieved": true,
+          "old_badge_traced": true,
+          "archive_catalog_located": true
+        },
+        "journal": [
+          "wall-account",
+          "edda-shift-request",
+          "edda-shift-response",
+          "archive-catalog",
+          "archive-catalog-extraction"
+        ],
+        "creds": 390,
+        "strain": 1
+      },
+      "decision": "Trade another employee-badge trace for the extraction fee; retain corroboration only."
+    },
+    {
+      "candidateRoute": "catalog-reader",
+      "precedingRoute": "shift-key",
+      "precedingRouteSha256": "02e33797aaec0ecfa892ebf56b0737c65667ec39e52839867e0c009b2e2e8678",
+      "origin": "spire",
+      "precedingFinal": {
+        "sceneId": "ending_quiet",
+        "flags": {
+          "testimony_published": true,
+          "archive_key_authenticated": true,
+          "nia_public_consent": false,
+          "order_verified": true,
+          "edda_shift_done": true,
+          "edda_shift_consent": true,
+          "edda_shift_paid": true,
+          "edda_representation": false,
+          "edda_exposed": true,
+          "edda_public_consent": true,
+          "edda_supported": false
+        },
+        "journal": [
+          "wall-account",
+          "edda-shift-request",
+          "edda-shift-response"
+        ],
+        "creds": 390,
+        "strain": 1
+      },
+      "candidateFinal": {
+        "sceneId": "ending_quiet",
+        "flags": {
+          "testimony_published": true,
+          "archive_key_authenticated": true,
+          "nia_public_consent": false,
+          "order_verified": true,
+          "edda_shift_done": true,
+          "edda_shift_consent": true,
+          "edda_shift_paid": true,
+          "edda_representation": false,
+          "edda_exposed": true,
+          "edda_public_consent": true,
+          "edda_supported": false,
+          "archive_catalog_retrieved": false,
+          "archive_catalog_located": true
+        },
+        "journal": [
+          "wall-account",
+          "edda-shift-request",
+          "edda-shift-response",
+          "archive-catalog"
+        ],
+        "creds": 390,
+        "strain": 1
+      },
+      "decision": "Keep the original held-die reader method and actual key authentication after optional catalog work."
+    },
+    {
+      "candidateRoute": "catalog-scarce-mismatch",
+      "precedingRoute": "scarce-archive-gutterwire",
+      "precedingRouteSha256": "9f672278093912bf2a91c9b98828c3a45bcf198196329a963300b6be668f4240",
+      "origin": "gutterwire",
+      "precedingFinal": {
+        "sceneId": "ending_quiet",
+        "creds": 35,
+        "strain": 3,
+        "flags": {
+          "archive_done": true,
+          "archive_paused": false,
+          "archive_flagged": true,
+          "archive_key_authenticated": false,
+          "order_verified": true,
+          "archive_custody": true,
+          "edda_public_consent": false,
+          "witness_safe": false,
+          "nia_public_consent": false,
+          "week_recovered": true,
+          "pump_rebate": true
+        },
+        "journal": [
+          "archive-gap",
+          "verified-order",
+          "archive-custody"
+        ]
+      },
+      "candidateFinal": {
+        "sceneId": "ending_quiet",
+        "creds": 35,
+        "strain": 3,
+        "flags": {
+          "archive_done": true,
+          "archive_paused": false,
+          "archive_flagged": true,
+          "archive_key_authenticated": false,
+          "order_verified": true,
+          "archive_custody": true,
+          "edda_public_consent": false,
+          "witness_safe": false,
+          "nia_public_consent": false,
+          "week_recovered": true,
+          "pump_rebate": true,
+          "archive_catalog_retrieved": false,
+          "archive_catalog_queried_authorization": true,
+          "archive_reader_alert": true,
+          "archive_catalog_located": true,
+          "archive_catalog_queried_service": true
+        },
+        "journal": [
+          "archive-gap",
+          "verified-order",
+          "archive-custody",
+          "archive-catalog",
+          "archive-catalog-service"
+        ]
+      },
+      "decision": "Keep both mismatches and the locator, then use original failed-query recovery and earned funding."
+    }
+  ],
+  "mediaDecision": "qa/media/archive-catalog.json",
+  "releaseRequirements": [
+    "source and replay checks",
+    "TypeScript and production build",
+    "production audit and native performance budget",
+    "four required browser projects on the exact commit",
+    "public feature and media-hash verification"
+  ]
+}
