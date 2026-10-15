@@ -6,7 +6,7 @@ import { SCENES } from "./story";
 
 it("stages present-day rooms without altering saved consent, costs or pressure", () => {
   const base = createCharacter({ handle: "RoomReview", givenName: "Ada", origin: "spire", bonus: { chrome: 2, nerve: 0, face: 0, ghost: 0 } });
-  for (const [id, mood, district] of [["act2_response_invitation", "quiet", "clinic"], ["act2_response_refusal", "quiet", "clinic"], ["act3_lumen_boundary", "quiet", "clinic"], ["act2_witness_arrival", "quiet", "witness"], ["act2_route_receipt", "quiet", "stall"], ["stall", "street", "stall"]]) {
+  for (const [id, mood, district] of [["act2_witness_brief", "quiet", "clinic"], ["act2_witness_support", "quiet", "clinic"], ["act2_response_invitation", "quiet", "clinic"], ["act2_response_refusal", "quiet", "clinic"], ["act3_lumen_boundary", "quiet", "clinic"], ["act2_witness_arrival", "quiet", "witness"], ["act2_route_receipt", "quiet", "stall"], ["stall", "street", "stall"]]) {
     const state = { ...base, sceneId: id, flags: { response_public_refused: true, kerr_route_private: true, kerr_route_trace: true } }, before = JSON.stringify(state);
     assert.deepEqual(sceneSoundPlan(state, SCENES[id].location), { mood, district });
     assert.equal(JSON.stringify(state), before);

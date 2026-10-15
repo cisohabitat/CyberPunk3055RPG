@@ -1030,6 +1030,28 @@ html[data-motion="reduce"] .fragment-placed { animation: none; }
 .spoken-quote { color: inherit; background: rgba(255, 176, 32, 0.12); text-decoration: underline; text-decoration-color: var(--amber); text-decoration-thickness: 2px; text-underline-offset: 0.2em; }
 .speaker-cue { display: block; color: var(--amber); font-size: 0.8em; letter-spacing: 0.08em; }
 
+/* The words lead on small screens; larger screens hold the full plate beside them. */
+.pivotal-scene .scene-row { grid-template-columns: 96px minmax(0, 1fr); gap: 1rem; }
+.pivotal-scene .scene-row .portrait-frame { width: 96px; }
+.pivotal-stage { margin: 1.5rem 0; padding-block: 1rem; border-block: 1px solid var(--line); }
+.pivotal-copy, .pivotal-art { min-width: 0; }
+.pivotal-label { color: var(--cyan); margin: 0 0 .85rem; font: 600 .85rem/1.5 var(--font-display), sans-serif; letter-spacing: .08em; text-transform: uppercase; }
+.pivotal-stage[data-kind="recording"] .pivotal-label { color: var(--amber); }
+.pivotal-stage .prose { margin-top: 0; }
+.pivotal-stage .prose .pivotal-dialogue { padding-left: 1rem; border-left: 2px solid var(--cyan); }
+.pivotal-stage[data-kind="recording"] .prose .pivotal-dialogue { border-color: var(--amber); }
+.pivotal-stage .scene-illustration { margin: 1rem 0 0; }
+@media (min-width: 900px) {
+  .pivotal-stage.with-art { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 1.5rem; }
+  .pivotal-stage.with-art .pivotal-copy { grid-column: 2; grid-row: 1; }
+  .pivotal-stage.with-art .pivotal-art { grid-column: 1; grid-row: 1; }
+  .pivotal-stage .scene-illustration { margin: 0; }
+}
+@media (max-width: 700px) {
+  .pivotal-scene .scene-row { grid-template-columns: 72px minmax(0, 1fr); }
+  .pivotal-scene .scene-row .portrait-frame { width: 72px; }
+}
+
 /* The field guide shares the game's reading palette and responsive artwork. */
 .actions a.ghost, .actions a.primary { display: inline-flex; align-items: center; justify-content: center; text-decoration: none; }
 .guide-screen { min-height: 100dvh; padding: 0 max(1rem, env(safe-area-inset-left)) max(3rem, env(safe-area-inset-bottom)); }

@@ -13,6 +13,8 @@ import { Portrait } from "@/components/Portrait";
 import { Sheet } from "@/components/Sheet";
 import { DISTRICT_ART, placeArt, sceneIllustration } from "@/lib/art";
 import { SceneIllustration } from "./SceneIllustration";
+import { PivotalScene } from "./PivotalScene";
+import { pivotalScene } from "@/lib/pivotal-scenes";
 import { ORIGINS, STRAIN_MAX, STAT_INFO } from "@/lib/character";
 import { commitChoice, effectPreview, checkResourceCosts, getScene, presentChoices, previewCheck, runDelta, sceneText, type VisibleChoice } from "@/lib/engine";
 import { locationCue, playCue, playSceneCue, sceneSoundPlan, setBed } from "@/lib/sound";
@@ -71,6 +73,7 @@ export function PlayScreen({
 }) {
   const scene = getScene(state.sceneId);
   const illustration = sceneIllustration(scene.id, state.flags);
+  const direction = pivotalScene(scene.id);
   const choices = presentChoices(state, scene);
   const decisionTitle = scene.id === "act2_middle" ? "Street or silence" : scene.id === "act3_arrival" ? "At the wall" : null;
   const decisionIds = scene.id === "act2_middle" ? ["stand", "deal"] : ["read-names", "confirm-leak", "read-wall", "let-ives", "say-anyway", "leave-wall"];
@@ -105,6 +108,15 @@ export function PlayScreen({
   const spokenRange = playing ? spokenDialogueRange(visibleText, playing) : undefined;
   let paragraphOffset = 0;
   const visibleParagraphs = paragraphs.slice(0, visibleCount).map(text => { const offset = paragraphOffset; paragraphOffset += text.length + 2; return { text, offset }; });
+  const quotedRanges = direction ? dialogueQueue.map(line => spokenDialogueRange(visibleText, line)).filter(range => range !== undefined) : [];
+  const narrative = <div className="prose" data-testid="scene-text">
+    {visibleParagraphs.map(({ text, offset }, index) => (
+      <p key={`${scene.id}-${index}`} id={`reading-paragraph-${index}`} tabIndex={-1}
+        className={quotedRanges.some(range => range.end > offset && range.start < offset + text.length) ? "pivotal-dialogue" : undefined}>
+        <SpokenText text={text} offset={offset} range={spokenRange} />
+      </p>
+    ))}
+  </div>;
   const unavailableChoices = choices.filter((choice) => !choice.enabled);
 
   useEffect(() => {
@@ -127,11 +139,11 @@ export function PlayScreen({
   }, [preferences.motion]);
 
   useEffect(() => {
-    setBed(sound, mood, district);
+    setBed(sound, mood, district, undefined, direction ? "intimate" : "normal");
     const previous = priorSound.current;
     if (sound && (!previous?.on || previous.location !== scene.location || Boolean(scene.ending) !== previous.ending)) playCue(locationCue(scene.location, Boolean(scene.ending)));
     priorSound.current = { location: scene.location, on: preferences.sound, ending: Boolean(scene.ending) };
-  }, [sound, preferences.sound, mood, district, scene.id, scene.location, scene.ending]);
+  }, [sound, preferences.sound, mood, district, scene.id, scene.location, scene.ending, direction]);
 
   useEffect(() => () => { setBed(false); }, []);
 
@@ -274,7 +286,7 @@ export function PlayScreen({
       <div className="layout">
         <main>
           <article
-            className={`${flash ? "scene flash" : "scene"}${scene.memory || scene.id === "memo" ? " memory-scene" : ""}`}
+            className={`${flash ? "scene flash" : "scene"}${scene.memory || scene.id === "memo" ? " memory-scene" : ""}${direction ? " pivotal-scene" : ""}`}
             id="scene-top"
             tabIndex={-1}
             data-testid="scene"
@@ -338,7 +350,8 @@ export function PlayScreen({
               </div>
             </div>
             {restoreNotice && <p className="restore-notice" role="status" data-testid="restore-notice">{restoreNotice}</p>}
-            {preferences.artwork !== "none" && illustration && <SceneIllustration art={illustration} />}
+            {direction ? <PivotalScene direction={direction} art={preferences.artwork !== "none" ? illustration : undefined}>{narrative}</PivotalScene>
+              : preferences.artwork !== "none" && illustration && <SceneIllustration art={illustration} />}
             <ObjectiveBrief state={state} />
             {canConsultSources(state) && <div className="investigation-tools"><button className="ghost" type="button" data-testid="consult-sources" aria-haspopup="dialog" disabled={Boolean(activeChoice) || modalOpen} onClick={() => setNotebookOpen(true)}>Consult acquired sources</button></div>}
             <TransferBrief state={state} />
@@ -346,11 +359,7 @@ export function PlayScreen({
             {!scene.memory && <TestimonyBrief state={state} />}
             <FieldKitBrief state={state} />
             {scene.id === "memory_table" && <MemoryPlate key={scene.id} state={state} choices={choices} onInspect={pick} artwork={preferences.artwork !== "none"} numberShortcuts={preferences.numberShortcuts} />}
-            <div className="prose" data-testid="scene-text">
-              {visibleParagraphs.map(({ text, offset }, index) => (
-                <p key={`${scene.id}-${index}`} id={`reading-paragraph-${index}`} tabIndex={-1}><SpokenText text={text} offset={offset} range={spokenRange} /></p>
-              ))}
-            </div>
+            {!direction && narrative}
             {visibleCount < paragraphs.length && (
               <div className="prose-controls">
                 <button className="ghost" type="button" data-testid="next-paragraph" onClick={() => revealParagraphs(visibleCount + 1)}>

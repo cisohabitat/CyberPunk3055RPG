@@ -6,6 +6,7 @@ import { TITLE_MUSIC } from "./title-music";
 import { voiceLevel } from "./voice-level";
 import { SCENE_CUE_MIX, type SceneCueName } from "./scene-cues";
 import { waitForRunningAudio } from "./menu-autoplay";
+import { BED_FOCUS, type BedFocus } from "./pivotal-scenes";
 
 export type SoundMood = "street" | "chapel" | "ward" | "week" | "reading" | "quiet" | "pressure" | "title";
 export type BedStatus = "idle" | "loading" | "playing" | "unavailable";
@@ -20,6 +21,7 @@ let playingMood: SoundMood | undefined;
 let playingDistrict: SoundDistrict | undefined;
 let requestedMood: SoundMood = "street";
 let requestedDistrict: SoundDistrict = "street";
+let requestedFocus: BedFocus = "normal";
 let mix = { music: 60, ambience: 50, effects: 70, voices: 70 };
 let voiceTicket = 0;
 let voiceNode: AudioBufferSourceNode | null = null;
@@ -58,7 +60,8 @@ function bus(channel: keyof typeof mix) {
   const bed = channel === "music" || channel === "ambience";
   const duck = speaking && bed ? voiceMix.speechDuck[channel] : 1;
   const settling = bed && !speaking ? voiceMix.releaseSeconds : voiceMix.attackSeconds;
-  gain.gain.setTargetAtTime(mix[channel] / 100 * duck, audio.currentTime, settling);
+  const focus = bed ? BED_FOCUS[requestedFocus][channel as "music" | "ambience"] : 1;
+  gain.gain.setTargetAtTime(mix[channel] / 100 * duck * focus, audio.currentTime, settling);
   return gain;
 }
 export function setAudioMix(value: Pick<Preferences, "music" | "ambience" | "effects" | "voices">) {
@@ -68,7 +71,7 @@ export function setAudioMix(value: Pick<Preferences, "music" | "ambience" | "eff
   if (mix.effects === 0) stopSceneCue();
   for (const current of live.values()) if (mix[current.channel] === 0) stopSource(current);
   if (ctx) for (const channel of ["music", "ambience", "effects", "voices"] as const) bus(channel);
-  if (bedsChanged && want) { ++ticket; setBed(true, requestedMood, requestedDistrict); }
+  if (bedsChanged && want) { ++ticket; setBed(true, requestedMood, requestedDistrict, undefined, requestedFocus); }
 }
 async function load(name: string) {
   const cached = cache.get(name); if (cached) { cache.delete(name); cache.set(name, cached); return cached; }
@@ -139,8 +142,11 @@ export function leaveMenuMusic() {
   if (requestedMood !== "title") return;
   ++ticket; want = false; stopVoice(); stopBed();
 }
-export function setBed(on: boolean, nextMood: SoundMood = "street", nextDistrict: SoundDistrict = "street", report?: (status: BedStatus) => void) {
+export function setBed(on: boolean, nextMood: SoundMood = "street", nextDistrict: SoundDistrict = "street", report?: (status: BedStatus) => void, focus: BedFocus = "normal") {
   if (typeof window === "undefined") return;
+  const focusChanged = requestedFocus !== focus;
+  requestedFocus = focus;
+  if (focusChanged && ctx) { bus("music"); bus("ambience"); }
   if (mix.music === 0 && theme) { stopSource(theme); theme = null; playingMood = undefined; }
   if (mix.ambience === 0 && ambience) { stopSource(ambience); ambience = null; playingDistrict = undefined; }
   if (nextMood === "title" && ambience) { stopSource(ambience); ambience = null; playingDistrict = undefined; }
@@ -253,7 +259,7 @@ export function sceneMood(location: string, act = ""): SoundMood {
 }
 const QUIET_SCENES = new Set(["act2_mara_quiet", "act2_mara_company", "act2_mara_company_kept", "act2_lumen_quiet", "act3_lumen_boundary", "act3_mara_followup", "act3_kerr_personal_question", "act3_chapel_return", "ending_quiet"]);
 const CLINIC_SCENES = new Set(["act2_response_invitation", "act2_response_agenda", "act2_response_refusal", "act2_response_terms", "act2_response_dispatch", "act2_response_receipt", "act2_mara_quiet", "act2_mara_company", "act2_mara_company_kept", "act2_lumen_quiet", "act3_response_visit", "act3_mara_followup", "act3_lumen_boundary"]);
-const ROOM_SCENES: Readonly<Record<string, SoundDistrict>> = { stall: "stall", pay: "stall", pay_yes: "stall", pay_no: "stall", why: "stall", job_owner: "stall", act2_route_receipt: "stall", act3_kerr_personal_question: "stall", act2_witness_arrival: "witness" };
+const ROOM_SCENES: Readonly<Record<string, SoundDistrict>> = { stall: "stall", pay: "stall", pay_yes: "stall", pay_no: "stall", why: "stall", job_owner: "stall", act2_route_receipt: "stall", act3_kerr_personal_question: "stall", act2_witness_brief: "clinic", act2_witness_support: "clinic", act2_witness_arrival: "witness" };
 /** Read-only staging. A saved allowance is pressure; no real-time clock is added. */
 export function sceneSoundPlan(state: GameState, location: string, act = ""): { mood: SoundMood; district: SoundDistrict } {
   const value = location.toLowerCase();
@@ -261,7 +267,7 @@ export function sceneSoundPlan(state: GameState, location: string, act = ""): { 
     : /ward nine|wall|witness/.test(value) ? "ward" : /chapel|chair|memory|clinic|conversation room/.test(value) ? "chapel"
     : /spire|helion/.test(value) ? "spire" : /canal|depot/.test(value) ? "canal" : "street");
   const pressure = state.sceneId.startsWith("chapel_window_") && state.flags.chapel_window_started && !state.flags.chapel_window_done && windowRemaining(state) > 0;
-  const mood = pressure ? "pressure" : QUIET_SCENES.has(state.sceneId) || CLINIC_SCENES.has(state.sceneId) || state.sceneId === "act2_witness_arrival" || state.sceneId === "act2_route_receipt" ? "quiet"
+  const mood = pressure ? "pressure" : QUIET_SCENES.has(state.sceneId) || CLINIC_SCENES.has(state.sceneId) || ["act2_witness_brief", "act2_witness_support", "act2_witness_arrival", "act2_route_receipt"].includes(state.sceneId) ? "quiet"
     : state.sceneId === "memo" || state.sceneId === "mara_why" || state.sceneId.startsWith("memory_") && state.sceneId !== "memory_table" ? "reading"
     : state.sceneId.startsWith("ending_") && district === "ward" ? "ward" : sceneMood(location, act);
   return { mood, district };

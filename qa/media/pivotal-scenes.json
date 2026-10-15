@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "precedingCommit": "4c107780c7d7cd9b855ffb94fbc15f1b3d4f1c94",
+  "scope": "Five pivotal Mara/Nia scenes: narrative-first responsive frames and an intimate scene mix, using every existing exact-word performance and painting.",
+  "scenes": [
+    {
+      "sceneId": "memo",
+      "label": "Mara · from the shard",
+      "kind": "recording",
+      "illustration": "/art/mara-revelation.jpg",
+      "textSha256": "1de78b95852ba37e70b0db01347345345a31df111557140662e0dc8802189c53",
+      "dialogue": [
+        {
+          "key": "e76d9ed2d05532e7",
+          "id": "voice-campaign-mara-revelation-performance",
+          "speaker": "Mara",
+          "text": "I signed the coolant dump. Ward Nine. Three hundred on the night shift. I want that sentence to stay in my mouth."
+        }
+      ],
+      "artDecision": "Reuse Mara’s established recorded likeness and viewer. The complete 3:2 plate sits beside the canonical words on wide screens and follows them on phones. Neither framing nor her recorded explanation grants present-day permission or removes responsibility."
+    },
+    {
+      "sceneId": "mara_why",
+      "label": "The recorded explanation · Mara",
+      "kind": "recording",
+      "illustration": "/art/mara-revelation.jpg",
+      "textSha256": "74885a7086d6ba5cbaa01137be435bae6155109fa4eab98ba2df9c214419fdc9",
+      "dialogue": [
+        {
+          "key": "92c703f59f056e92",
+          "id": "voice-campaign-mara-why-performance",
+          "speaker": "Mara",
+          "text": "Helion told me the dump was a flush, not a kill. I signed because the night shift was already in the building and I thought the tower would move them. They did not move them."
+        }
+      ],
+      "artDecision": "Reuse Mara’s established recorded likeness and viewer. The complete 3:2 plate sits beside the canonical words on wide screens and follows them on phones. Neither framing nor her recorded explanation grants present-day permission or removes responsibility."
+    },
+    {
+      "sceneId": "act2_witness_brief",
+      "label": "Before the crossing · Nia",
+      "kind": "conversation",
+      "illustration": "/art/nia-transfer.jpg",
+      "textSha256": "8aae030a386336753e8045d991048faa5001c588301d6451634b370394045b6e",
+      "dialogue": [
+        {
+          "key": "0ad5db4e7191b2d9",
+          "id": "voice-campaign-nia-terms-performance",
+          "speaker": "Nia Pell",
+          "text": "You promised a witness. I promised nothing to a transmitter. I need care, a room they don't own, and a say in which words leave it. Can you do those separately?"
+        }
+      ],
+      "artDecision": "Reuse Nia’s established pre-transfer or arrival composition at its actual chronological scene. The complete plate accompanies her canonical words, without depicting recording, a private address, treatment, gratitude or permission not earned by the choices."
+    },
+    {
+      "sceneId": "act2_witness_support",
+      "label": "The work of moving · Nia",
+      "kind": "conversation",
+      "illustration": "/art/nia-transfer.jpg",
+      "textSha256": "33b812f8f6bb1db6ba47fc866acc206ad47559251aa423648d87afdea1ac401a",
+      "dialogue": [
+        {
+          "key": "ae1fa349cb32cd52",
+          "id": "voice-nia-own-work",
+          "speaker": "Nia Pell",
+          "text": "Tell me whose work you're offering."
+        }
+      ],
+      "artDecision": "Reuse Nia’s established pre-transfer or arrival composition at its actual chronological scene. The complete plate accompanies her canonical words, without depicting recording, a private address, treatment, gratitude or permission not earned by the choices."
+    },
+    {
+      "sceneId": "act2_witness_arrival",
+      "label": "Before the account · Nia",
+      "kind": "conversation",
+      "illustration": "/art/nia-arrival.jpg",
+      "textSha256": "4518ffb919b2cdc6efb8c1d4d3b641ecc8ccc5037b67624b5958289a0e89e18d",
+      "dialogue": [
+        {
+          "key": "db1f5347aad39364",
+          "id": "voice-campaign-nia-pell-c987f8a09159",
+          "speaker": "Nia Pell",
+          "text": "You got me here,"
+        },
+        {
+          "key": "eef8c70502900699",
+          "id": "voice-nia-arrival",
+          "speaker": "Nia Pell",
+          "text": "Now I want to hear the words before anyone uses them. No address. No photograph. If I stop, you stop."
+        }
+      ],
+      "artDecision": "Reuse Nia’s established pre-transfer or arrival composition at its actual chronological scene. The complete plate accompanies her canonical words, without depicting recording, a private address, treatment, gratitude or permission not earned by the choices."
+    }
+  ],
+  "voiceDecision": "Every exact spoken part, actor, order and delivery remains unchanged. Canonical prose renders once; emphasis derives only from actually revealed, bound quotation ranges. No narration, player text, duplicate quotation panel or runtime speech synthesis is added.",
+  "audioDecision": "Use the existing reading score for Mara and quiet score for Nia. Pre-transfer Nia remains in Glass Chapel clinic ambience; arrival retains the private witness-room bed. An intimate bus multiplier reduces music to 55% and ambience to 75% of their selected levels, in addition to existing speech ducking. Voices and effects retain their own controls. Leaving the frame restores normal scene levels; slider restarts retain focus.",
+  "unchangedMediaInventory": "qa/media/character-profiles.json#/preservedMedia",
+  "accessibilityDecision": "Whole-scene and saved paragraph pacing remain. The header and goal lead; phone prose precedes the complete artwork, desktop frames it beside the prose. No forced delay, camera motion, scrolling, focus jump or automatic choice. Text-only and missing-art play remain complete."
+}
