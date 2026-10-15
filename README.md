@@ -625,3 +625,11 @@ At the archive comparison, an optional catalog drawer lets you inspect three wri
 All four final scenes now lead with their canonical words and complete existing paintings: side by side on desktop, prose first on phones. A compact speaker header keeps the goal visible. **What you carry** brings the earned opening motive, work and remembered personal answer forward; no answer is invented for an unvisited conversation. **What remains** keeps factual consequences available, with chapter history and final resources in a separate keyboard-accessible disclosure. Chapter endings keep their existing summaries.
 
 The closing mix uses 65% of the saved Music level and 55% of Ambience alongside existing speech ducking. Voices, Effects and manual/mute/paragraph/text-only preferences retain their own controls. Dialogue, actor, art and audio deliveries remain unchanged. See [the finale phase](docs/FINALE_DIRECTION.md). The provisional internal grade stays 8.2 pending a broader review.
+
+## Archive and hearing direction
+
+Ten archive, Nia account and public-hearing conversations now lead with their full text and matching complete scene art: beside the words on desktop, after the words on phones. New closer Edda/Sera paintings keep sources and draft papers anonymous. Briefings and source tools remain available after the conversation; whole-scene defaults and saved paragraph/text-only preferences remain.
+
+Four exact-word Edda/Nia performances have clearer phrasing, with established voices and manual/automatic playback preferences preserved. The existing quiet score and actual room ambience sit below dialogue. Soft paper handling, chair-brake contact and a closing folio accompany the actual committed actions; they add no evidence, consent or outcome. See [the phase report](docs/ARCHIVE_HEARING_DIRECTION.md).
+
+Compact scene portraits show the actual speaker’s name and Speaking cue without wrapping the repeated role over the face; the complete label remains accessible.

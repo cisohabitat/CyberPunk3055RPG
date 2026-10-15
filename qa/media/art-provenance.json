@@ -1544,7 +1544,7 @@
       "generated": "2026-10-13",
       "sourceFile": "/workspace/generated_images/exec-1c8ffc91-8229-4294-b644-cd8c060dc151.png",
       "sourceSha256": "acfdf561ab9b06b45f8f1e102ce82a31533fb21b5307e1d85cdcbd800e07be9a",
-      "promptSummary": "Ren\u2019s introduction and later canal returns retain the neutral resident setting. No shelter repair, family arrival, street declaration, relocation or source verdict is depicted. Original painterly noir with petroleum blue, aged verdigris, copper and amber.",
+      "promptSummary": "Ren’s introduction and later canal returns retain the neutral resident setting. No shelter repair, family arrival, street declaration, relocation or source verdict is depicted. Original painterly noir with petroleum blue, aged verdigris, copper and amber.",
       "referenceFiles": [
         "/workspace/generated_images/exec-73e0b934-2a5a-48cb-bcce-8119bebf3dfa.png"
       ],
@@ -2500,6 +2500,58 @@
           "sha256": "8363c7806b69bc6ce60ee21a3bef856c20839e7848f8b17c99b1b1626d41886e"
         }
       ]
+    },
+    {
+      "id": "edda-archive",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-15",
+      "sourceFile": "/workspace/generated_images/exec-29a2f602-a7b6-4816-b1b0-8e02e04212af.png",
+      "sourceSha256": "706b75122da479f4fc98b7e45c2ef567ef8e0346b4fcef754c73d37a1cd53811",
+      "promptSummary": "Established Edda at the service archive, closed ledger and blank folded paper; neutral source conversation, no retrieved or authenticated outcome.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/edda-archive.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 246442,
+          "sha256": "090a907f59e2587d9ccc536652621ff0868c6ac46aa0e4a3067401a671cc9810"
+        },
+        {
+          "path": "public/art/edda-archive-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 74651,
+          "sha256": "359e29bb4b084b1fc957a87d772a683bd77ec7a96eea4dd28e513962eae5c9c5"
+        }
+      ],
+      "review": "Source-familiar inspection: identity, hands, anonymous papers, chronology and unearned-outcome limits. Native phone/desktop review follows integration."
+    },
+    {
+      "id": "sera-hearing",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-15",
+      "sourceFile": "/workspace/generated_images/exec-22c6fa3a-e3d3-4d5d-9fe1-4439d0906191.png",
+      "sourceSha256": "463c3f8004f3969ae4f7241beec4b5bfab869cff247f96b549ac4e2d5e8f63d9",
+      "promptSummary": "Established Sera at the records table, blank cover sheet and separate closed folder; neutral review/correction before filing, no recorder status, private identity or approval.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/sera-hearing.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 242724,
+          "sha256": "c281c605d54e1e2caf0d592be2d24217396e73536b92007b0d7525c4277617d6"
+        },
+        {
+          "path": "public/art/sera-hearing-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 71160,
+          "sha256": "5f1c994f23f466fe7de1b1ae0a33f0511af0ae533221259a8fbedccb693b55dd"
+        }
+      ],
+      "review": "Source-familiar inspection: identity, hands, anonymous papers, chronology and unearned-outcome limits. Native phone/desktop review follows integration."
     }
   ]
 }

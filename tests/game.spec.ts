@@ -1864,7 +1864,7 @@ for (const textOnly of [false, true]) test(`Ives source challenge keeps precise 
   }
   await page.getByTestId("choice-answer-open-question").click();
   await expect(page.getByTestId("scene-text")).toContainText("Sera");
-  if (!textOnly) await expect(page.locator('img[src="/art/hearing-table.jpg"]')).toHaveCount(1);
+  if (!textOnly) await expect(page.locator('img[src="/art/sera-hearing.jpg"]')).toHaveCount(1);
   const run = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
   expect(run.flags.testimony_answered).toBe(true); expect(run.flags.archive_key_authenticated).toBeUndefined(); expect(run.flags.testimony_published).toBeUndefined();
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);

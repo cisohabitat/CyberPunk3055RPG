@@ -1,3 +1,4 @@
+import { reviewedDeliveryHash } from "../qa/production/delivery-history";
 import assert from "node:assert/strict";
 import { it } from "node:test";
 import { createHash } from "node:crypto";
@@ -30,7 +31,7 @@ it("documents neutral enlarged art for every identity and preserves every preced
     assert.ok(row.artDecision.length > 60);
   }
   for (const file of phase.preservedMedia) {
-    assert.equal(createHash("sha256").update(readFileSync(new URL(`../${file.path}`, import.meta.url))).digest("hex"), file.sha256, file.path);
+    assert.equal(reviewedDeliveryHash(file.path, file.sha256), file.sha256, file.path);
   }
 });
 

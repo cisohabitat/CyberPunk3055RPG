@@ -1,10 +1,16 @@
 import type { GameState } from "./types";
 
-export type SceneCueName = "foley-viewer" | "foley-reader" | "foley-case" | "foley-recorder";
+export type SceneCueName = "foley-viewer" | "foley-reader" | "foley-case" | "foley-recorder" | "foley-paper" | "foley-chair" | "foley-folio";
 export const SCENE_CUE_MIX = { level: .5, speechDuck: .35 } as const;
 
 /** Mechanical actions only: a cue supplies no new evidence or outcome. */
 export function sceneInteractionCue(before: GameState, choiceId: string, after: GameState): SceneCueName | undefined {
+  if (before.sceneId === "act2_witness_plan" && choiceId === "steady-chair" && after.sceneId === "act2_witness_door") return "foley-chair";
+  if (before.sceneId === "act2_archive_custody" && ["withhold-technician", "ask-named-source"].includes(choiceId)
+    && after.sceneId === "act2_archive_verified" && !before.flags.archive_custody && after.flags.archive_custody) return "foley-paper";
+  if (before.sceneId === "act3_testimony_record" && ["file-public-account", "withdraw-public-account"].includes(choiceId)
+    && after.sceneId === "act3_arrival" && !before.flags.testimony_done && after.flags.testimony_done) return "foley-paper";
+  if (before.sceneId === "act3_arrival" && ["let-ives", "say-anyway"].includes(choiceId) && after.sceneId === "ending_listed") return "foley-folio";
   const fragmentFlags: Record<string, string> = { "inspect-signature": "memory_signature", "inspect-order": "memory_order", "inspect-roster": "memory_roster" };
   const fragment = fragmentFlags[choiceId];
   if (before.sceneId === "memory_table" && after.sceneId === "memory_table" && fragment && !before.flags[fragment] && after.flags[fragment]) return "foley-viewer";

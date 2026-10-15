@@ -258,3 +258,9 @@ Next compare the played catalog alternatives for recognition, cost and pacing be
 The [finale direction phase](FINALE_DIRECTION.md) brings all four canonical closing scenes and matching paintings ahead of their history. Earned personal/campaign afterwords follow the scene; separate native disclosures retain factual aftermath and the three-chapter/resource recap. A closing music/ambience focus supports the existing exact-word performances without changing their deliveries or user settings. Gameplay and all 147 authored route finals remain unchanged.
 
 Next compare these four finales through prepared and scarce campaigns, then reassess the complete game before choosing another encounter or environmental sound phase. Keep the provisional 8.2 grade until that broader craft review; the 9.35 weighted target and 9.0 category floor remain long-term goals.
+
+### Archive and hearing art/voice direction — October 2026
+
+The [archive/hearing phase](ARCHIVE_HEARING_DIRECTION.md) stages ten source, consent and public-hearing conversations before their briefings. Two closer character paintings, four exact-word stock performance revisions and three neutral physical action textures retain canonical text, actual actors, source limits and all gameplay. Complete existing paintings, quiet room direction and text-only/paragraph/manual/mute preferences remain.
+
+Next assess the played campaign as a whole before selecting further encounter or environmental work. The provisional 8.2 score is retained; technical delivery alone is not a regrade or completion of the long-term 9+ production target.

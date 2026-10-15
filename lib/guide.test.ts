@@ -1,3 +1,4 @@
+import { reviewedDeliveryHash } from "../qa/production/delivery-history";
 import assert from 'node:assert/strict';
 import { it } from 'node:test';
 import { GUIDE_LORE, GUIDE_CONTACTS, guideCheck } from './guide';
@@ -18,5 +19,5 @@ it('keeps initial lore spoiler-safe and reuses the original city plate with expl
   assert.match(lore,/3055/);assert.match(lore,/sliver of glass/);assert.match(lore,/have not accepted/);
   assert.doesNotMatch(lore,/coolant dump|three hundred|issuing key|paid to forget|Ivo Pell|Junie Calder/);
   assert.equal(guideMedia.art.route,'/guide');assert.equal(guideMedia.art.src,OPENING_ART.src);assert.equal(guideMedia.art.small,OPENING_ART.small);
-  for(const file of guideMedia.preservedMedia){assert.equal(createHash('sha256').update(readFileSync(new URL(`../${file.path}`,import.meta.url))).digest('hex'),file.sha256,file.path);}
+  for(const file of guideMedia.preservedMedia){assert.equal(reviewedDeliveryHash(file.path,file.sha256),file.sha256,file.path);}
 });

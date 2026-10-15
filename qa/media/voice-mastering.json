@@ -4,7 +4,7 @@
   "truePeakCeilingDbtp": -1.5,
   "method": "ffmpeg EBU-R128 measurement of exact decoded deliveries; per-clip constant gain; independently measured post-trim signal. No compression, limiting, silence removal or audio file rewrite. Applies before the separate user voice-volume bus.",
   "source": "scripts/measure-voice-levels.py",
-  "runtimeMapSha256": "f51491e3721ca73dcef1adf891ad5c7735b8106f3a2a000a241e1307c3820140",
+  "runtimeMapSha256": "19d8d7b40f0d6e9f97188c0399699df25f5bf74dfe8d857b1cbbbac32c46b519",
   "bindingSha256": "ecfff2a6154e7933eb173a4f0c51c79aa3e1f88b0fc7d95e3041ce5cceea4b3f",
   "clips": [
     {
@@ -400,16 +400,16 @@
     {
       "id": "voice-campaign-edda-4c4a033f7b14",
       "path": "public/audio/voice-campaign-edda-4c4a033f7b14.mp3",
-      "sha256": "d1980b9322367c179c124e59300c20a869dfce10b3297dfbc1ded999c8add201",
+      "sha256": "95f302b8fae710481fe3cc461bb089d6468d4038316f775541416e954d08e3f2",
       "source": {
-        "integratedLufs": -20.0,
-        "truePeakDbtp": -3.2
+        "integratedLufs": -20.01,
+        "truePeakDbtp": -3.14
       },
-      "trimDb": -3.5,
-      "gain": 0.66834392,
+      "trimDb": -3.49,
+      "gain": 0.66911382,
       "playback": {
-        "integratedLufs": -23.5,
-        "truePeakDbtp": -6.7
+        "integratedLufs": -23.39,
+        "truePeakDbtp": -6.63
       }
     },
     {
@@ -580,16 +580,16 @@
     {
       "id": "voice-campaign-edda-d4b034abcf9f",
       "path": "public/audio/voice-campaign-edda-d4b034abcf9f.mp3",
-      "sha256": "e809a737def220b80ee6e0a03b0f06366d6a4af73ee2cb02637c7d532d0b803a",
+      "sha256": "94d6f506916aab224748e7213dd4a874f376d1f9053a609fa52ae27c68e90e78",
       "source": {
-        "integratedLufs": -18.38,
-        "truePeakDbtp": -3.23
+        "integratedLufs": -20.0,
+        "truePeakDbtp": -4.67
       },
-      "trimDb": -5.12,
-      "gain": 0.55462571,
+      "trimDb": -3.5,
+      "gain": 0.66834392,
       "playback": {
-        "integratedLufs": -23.48,
-        "truePeakDbtp": -8.35
+        "integratedLufs": -23.5,
+        "truePeakDbtp": -8.17
       }
     },
     {
@@ -1675,31 +1675,31 @@
     {
       "id": "voice-campaign-nia-pell-d5e530c55a4c",
       "path": "public/audio/voice-campaign-nia-pell-d5e530c55a4c.mp3",
-      "sha256": "7c227cefd66b5fccac85eded953e462275ef0ace72ce7cb3f484928784e560d4",
+      "sha256": "1d5e2a9f8fc56d0162da93bd4138dda9011a977530de80d9d2ace31cbd345796",
       "source": {
-        "integratedLufs": -23.34,
-        "truePeakDbtp": -3.26
+        "integratedLufs": -19.99,
+        "truePeakDbtp": -1.73
       },
-      "trimDb": -0.16,
-      "gain": 0.98174794,
+      "trimDb": -3.57,
+      "gain": 0.66297935,
       "playback": {
-        "integratedLufs": -23.49,
-        "truePeakDbtp": -3.42
+        "integratedLufs": -23.52,
+        "truePeakDbtp": -5.3
       }
     },
     {
       "id": "voice-campaign-nia-pell-d8b7b7d16f6e",
       "path": "public/audio/voice-campaign-nia-pell-d8b7b7d16f6e.mp3",
-      "sha256": "08d06fc009f2dd57046adfa0a644669111e86ac51eefa1c8d5c841949da4cd7a",
+      "sha256": "3d362218058bd5288b2b69ddeee4cf97fdaf43b00e194acbb9bcaba5d3873dd1",
       "source": {
-        "integratedLufs": -18.5,
-        "truePeakDbtp": -3.26
+        "integratedLufs": -19.98,
+        "truePeakDbtp": -4.82
       },
-      "trimDb": -5.0,
-      "gain": 0.56234133,
+      "trimDb": -3.52,
+      "gain": 0.66680677,
       "playback": {
-        "integratedLufs": -23.5,
-        "truePeakDbtp": -8.26
+        "integratedLufs": -23.51,
+        "truePeakDbtp": -8.34
       }
     },
     {

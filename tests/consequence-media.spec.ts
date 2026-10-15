@@ -54,7 +54,7 @@ test('a recorded late stock reply changes the return plate without earning a cle
 });
 for(const file of [false,true])test(`hearing ${file?'filing':'withdrawal'} selects art without creating evidence or quotation permission`,async({page})=>{
   await open(page,{...base,sceneId:'act3_testimony_record',flags:{testimony_answered:true,testimony_bounded:true}});
-  await expect(illustration(page)).toHaveAttribute('src','/art/hearing-table.jpg');
+  await expect(illustration(page)).toHaveAttribute('src','/art/sera-hearing.jpg');
   await page.getByTestId(`choice-${file?'file-public-account':'withdraw-public-account'}`).click();
   if(file)await expect(illustration(page)).toHaveAttribute('src','/art/hearing-filed.jpg');
   else await expect(illustration(page)).not.toHaveAttribute('src','/art/hearing-filed.jpg');

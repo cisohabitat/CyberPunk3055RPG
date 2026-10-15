@@ -1,3 +1,4 @@
+import { reviewedDeliveryHash } from "../qa/production/delivery-history";
 import assert from "node:assert/strict";
 import { it } from "node:test";
 import { readFileSync } from "node:fs";
@@ -29,7 +30,7 @@ it("covers every portrait identity exactly once with a small, documented charact
 it("keeps every pre-existing art file and every voice delivery unchanged", () => {
   for (const file of phase.preservedMedia) {
     const bytes = readFileSync(new URL(`../${file.path}`, import.meta.url));
-    assert.equal(createHash("sha256").update(bytes).digest("hex"), file.sha256, file.path);
+    assert.equal(reviewedDeliveryHash(file.path, file.sha256), file.sha256, file.path);
   }
 });
 

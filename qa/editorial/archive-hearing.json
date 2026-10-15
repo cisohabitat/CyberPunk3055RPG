@@ -1,0 +1,82 @@
+{
+  "method": "Paired source-familiar authored archive/account/hearing checkpoints on synthetic Chromium viewports, identical saves and preferences. Not human/blind evidence; complete UI campaigns are separate. Raw saves/screenshots stay outside Git.",
+  "baselineCommit": "668818930e80ec0c07a215a3a5407c336b26db3d",
+  "presentation": [
+    {
+      "scene": "act2_archive_brief",
+      "width": 390,
+      "beforeProseTop": 969.5,
+      "afterProseTop": 448.69,
+      "overflow": false,
+      "goalBottom": 255.81
+    },
+    {
+      "scene": "act2_archive_brief",
+      "width": 1440,
+      "beforeProseTop": 1217.47,
+      "afterProseTop": 347.47,
+      "overflow": false,
+      "goalBottom": 153.14
+    },
+    {
+      "scene": "act2_witness_safe",
+      "width": 390,
+      "beforeProseTop": 887.75,
+      "afterProseTop": 468.66,
+      "overflow": false,
+      "goalBottom": 275.78
+    },
+    {
+      "scene": "act2_witness_safe",
+      "width": 1440,
+      "beforeProseTop": 1157.47,
+      "afterProseTop": 347.47,
+      "overflow": false,
+      "goalBottom": 153.14
+    },
+    {
+      "scene": "act3_testimony_hearing",
+      "width": 390,
+      "beforeProseTop": 1517.27,
+      "afterProseTop": 468.66,
+      "overflow": false,
+      "goalBottom": 275.78
+    },
+    {
+      "scene": "act3_testimony_hearing",
+      "width": 1440,
+      "beforeProseTop": 1602.86,
+      "afterProseTop": 347.47,
+      "overflow": false,
+      "goalBottom": 153.14
+    },
+    {
+      "scene": "act3_testimony_correction",
+      "width": 390,
+      "beforeProseTop": 1517.27,
+      "afterProseTop": 468.66,
+      "overflow": false,
+      "goalBottom": 275.78
+    },
+    {
+      "scene": "act3_testimony_correction",
+      "width": 1440,
+      "beforeProseTop": 1602.86,
+      "afterProseTop": 347.47,
+      "overflow": false,
+      "goalBottom": 153.14
+    }
+  ],
+  "routes": {
+    "count": 147,
+    "exactFinalStateCanonicalProseAndDialogueUnchanged": true
+  },
+  "sceneSamples": {
+    "count": 10,
+    "exactCanonicalProseAndAttributedDialogueUnchanged": true
+  },
+  "grade": {
+    "internal": 8.2,
+    "reason": "A bounded presentation/performance phase does not establish a whole-game regrade or close independent production acceptance gates."
+  }
+}

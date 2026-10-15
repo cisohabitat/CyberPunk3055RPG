@@ -5,6 +5,7 @@ import { CATALOG_ACTIONS } from "@/lib/archive-catalog";
 
 import { FinaleReflection } from "./FinaleReflection";
 import { finaleScene } from "@/lib/finale-direction";
+import { investigationScene } from "@/lib/investigation-scenes";
 
 import { InvestigationNotebook } from "./InvestigationNotebook";
 import { canConsultSources } from "@/lib/investigation-notebook";
@@ -76,7 +77,8 @@ export function PlayScreen({
   const scene = getScene(state.sceneId);
   const illustration = sceneIllustration(scene.id, state.flags);
   const finale = finaleScene(scene.id);
-  const direction = pivotalScene(scene.id) ?? finale;
+  const investigation = investigationScene(scene.id);
+  const direction = pivotalScene(scene.id) ?? finale ?? investigation;
   const choices = presentChoices(state, scene);
   const decisionTitle = scene.id === "act2_middle" ? "Street or silence" : scene.id === "act3_arrival" ? "At the wall" : null;
   const decisionIds = scene.id === "act2_middle" ? ["stand", "deal"] : ["read-names", "confirm-leak", "read-wall", "let-ives", "say-anyway", "leave-wall"];
@@ -348,7 +350,7 @@ export function PlayScreen({
             </div>
             {scene.finale && <h1 className="finale-title" data-testid="ending-title">{scene.endingTitle}</h1>}
             {restoreNotice && <p className="restore-notice" role="status" data-testid="restore-notice">{restoreNotice}</p>}
-            {direction ? <PivotalScene direction={direction} finale={Boolean(finale)} art={preferences.artwork !== "none" ? illustration : undefined}>{narrative}</PivotalScene>
+            {direction ? <PivotalScene direction={direction} finale={Boolean(finale)} investigation={Boolean(investigation)} art={preferences.artwork !== "none" ? illustration : undefined}>{narrative}</PivotalScene>
               : preferences.artwork !== "none" && illustration && <SceneIllustration art={illustration} />}
             {!scene.finale && <ObjectiveBrief state={state} />}
             {canConsultSources(state) && <div className="investigation-tools"><button className="ghost" type="button" data-testid="consult-sources" aria-haspopup="dialog" disabled={Boolean(activeChoice) || modalOpen} onClick={() => setNotebookOpen(true)}>Consult acquired sources</button></div>}

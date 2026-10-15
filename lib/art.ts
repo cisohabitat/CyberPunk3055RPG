@@ -193,3 +193,13 @@ for (const plate of campaignArt.plates) for (const id of plate.scenes) {
 }
 ENCOUNTERS.act2_freight_brief = { src: "/art/asa-dispatch.jpg", small: "/art/asa-dispatch-small.jpg", caption: "Canal freight gate · Asa sets the terms", description: "Asa, wearing a rust scarf and worn courier coat, touches the closed cooling case seal beneath the gate lamp; the case remains at dispatch." };
 ENCOUNTERS.act3_testimony_hearing = { src: "/art/ives-hearing.jpg", small: "/art/ives-hearing-small.jpg", caption: "Ward Nine · Ives asks for the source", description: "Ives faces the visitor at the rain-lit records table, a closed black folio beside the unmarked running recorder; blank cover papers and a pencil wait beside an empty chair." };
+
+for (const id of ["act2_archive_brief", "act2_archive_challenge", "act2_archive_custody"]) ENCOUNTERS[id] = {
+  src: "/art/edda-archive.jpg", small: "/art/edda-archive-small.jpg", caption: "Helion · Edda keeps her own terms",
+  description: "Edda sits at the service archive desk, one hand on a closed worn ledger and the other holding blank folded paper. No identifying record, signature or authenticated outcome is displayed.",
+};
+for (const id of ["act3_testimony_review", "act3_testimony_correction", "act3_testimony_record"]) ENCOUNTERS[id] = {
+  src: "/art/sera-hearing.jpg", small: "/art/sera-hearing-small.jpg", caption: "Ward Nine · the account can still change",
+  description: "Sera holds a pencil over a blank cover sheet at the rain-lit records table. A closed folder stays separate beside her hand; the recorder shows no operating status, private identity or filed outcome.",
+};
+ENCOUNTERS.act2_witness_safe = { ...ENCOUNTERS.act2_witness_arrival, caption: "Ward Nine · Nia reviews her own words" };

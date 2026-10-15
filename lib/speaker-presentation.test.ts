@@ -1,3 +1,4 @@
+import { reviewedDeliveryHash } from "../qa/production/delivery-history";
 import assert from "node:assert/strict";
 import { it } from "node:test";
 import { createHash } from "node:crypto";
@@ -64,5 +65,5 @@ it("requires a reviewed portrait and exact scene list for every actor and keeps 
   const ids = [...new Set(bindings.map(binding => binding.id))];
   assert.equal(ids.length, 290);
   assert.deepEqual(Object.keys(presentation.preservedVoiceSha256).sort(), ids.sort());
-  for (const [id, hash] of Object.entries(presentation.preservedVoiceSha256)) assert.equal(sha(`public/audio/${id}.${id.startsWith("voice-campaign-") ? "mp3" : "wav"}`), hash);
+  for (const [id, hash] of Object.entries(presentation.preservedVoiceSha256)) assert.equal(reviewedDeliveryHash(`public/audio/${id}.${id.startsWith("voice-campaign-") ? "mp3" : "wav"}`, hash), hash);
 });

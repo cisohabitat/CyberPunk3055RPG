@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "method": "Original seeded procedural physical textures: filtered noise, brushed surfaces, subdued lever/cover transients; no recordings, samples or trained models. 10ms onset/35ms tail fades. Checked-in mono PCM16 WAVs.",
+  "sourceSha256": {
+    "scripts/investigation-foley.mjs": "6b861f8e8a51724c991fd6d7a04a58fc4b702c93a70c5487bd91f424b2560ecd",
+    "scripts/author-investigation-foley.mjs": "53697323eb22280de358f42c3c93215641ac0b5d4eb033438727c1e4dbad0485"
+  },
+  "mix": {
+    "level": 0.5,
+    "speechDuck": 0.35
+  },
+  "clips": [
+    {
+      "id": "foley-paper",
+      "path": "public/audio/foley-paper.wav",
+      "description": "Paper handling on committed archive custody or either filing/withdrawal decision. Same neutral sound for both; no authentication, permission or outcome melody.",
+      "sha256": "8c54aa3e9571c7a354930e38bde84c24c46d525b1d33a24a767911c4c7f7d470",
+      "bytes": 51200,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 1.16,
+      "peak": 0.150970458984375,
+      "rms": 0.03534808723344995,
+      "maxSampleJump": 0.240020751953125
+    },
+    {
+      "id": "foley-chair",
+      "path": "public/audio/foley-chair.wav",
+      "description": "Brake/lever handling after the actual chair preparation check is committed. Identical contact on hit/miss, never an assurance of a safe crossing.",
+      "sha256": "da15cf0880068b46d424e1bf6b1eeef1543a2acc1916f93319ccdc585ca18736",
+      "bytes": 37970,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 0.86,
+      "peak": 0.124267578125,
+      "rms": 0.013461798534272077,
+      "maxSampleJump": 0.083221435546875
+    },
+    {
+      "id": "foley-folio",
+      "path": "public/audio/foley-folio.wav",
+      "description": "Soft folio cover contact only when Ives actually takes the memorial page. No private-source transfer or inquiry verdict.",
+      "sha256": "78430c50eea66337186f815950e129a7ef8ba55ddbd9fad4f8e87aba6f5a44a3",
+      "bytes": 41498,
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 0.94,
+      "peak": 0.147247314453125,
+      "rms": 0.01566888449467323,
+      "maxSampleJump": 0.04534912109375
+    }
+  ],
+  "review": "Source/signal and source-familiar native-browser review; no physical-device or human listening claim."
+}

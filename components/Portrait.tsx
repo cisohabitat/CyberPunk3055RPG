@@ -20,7 +20,7 @@ export function Portrait({ speaker, sceneId, origin, handle, flags, artwork = tr
   return (
     <figure className="portrait-frame" data-speaker={speaker} data-speaking={speaking ? "true" : "false"}>
       {artwork && failedSource !== src ? <img key={src} className="portrait" src={src} alt="" width={220} height={294} decoding="async" onError={() => setFailedSource(src)} /> : <div className="portrait-placeholder" aria-hidden="true" />}
-      <figcaption>{label}{speaking && <span className="speaker-cue">Speaking</span>}</figcaption>
+      <figcaption aria-label={label}><span>{name ?? handle ?? plate.label}</span><span className="portrait-role">{name ? role ? ` · ${role}` : "" : ` · ${plate.label}`}</span>{speaking && <span className="speaker-cue">Speaking</span>}</figcaption>
     </figure>
   );
 }

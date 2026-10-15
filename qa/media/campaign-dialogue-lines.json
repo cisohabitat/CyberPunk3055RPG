@@ -600,7 +600,15 @@
     "voice": "af_kore",
     "speed": 0.95,
     "text": "Keep the original with Sera,",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions."
+    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+    "segments": [
+      {
+        "text": "Keep the original with Sera,",
+        "speed": 0.91,
+        "pauseAfter": 0
+      }
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-sister-lumen-c81c87c79a05",
@@ -782,7 +790,15 @@
     "voice": "af_nova",
     "speed": 0.96,
     "text": "That part stays,",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions."
+    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+    "segments": [
+      {
+        "text": "That part stays,",
+        "speed": 0.9,
+        "pauseAfter": 0
+      }
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-nia-pell-d5e530c55a4c",
@@ -794,15 +810,21 @@
     "segments": [
       {
         "text": "The address doesn't.",
-        "speed": 0.96,
-        "pauseAfter": 0.24
+        "speed": 0.91,
+        "pauseAfter": 0.34
       },
       {
-        "text": "If they ask where I am, tell them I am available through you.",
-        "speed": 0.96,
+        "text": "If they ask where I am,",
+        "speed": 0.95,
+        "pauseAfter": 0.15
+      },
+      {
+        "text": "tell them I am available through you.",
+        "speed": 0.93,
         "pauseAfter": 0
       }
-    ]
+    ],
+    "loudnessLufs": -20
   },
   {
     "id": "voice-campaign-kerr-636ce1c1a709",
@@ -1965,12 +1987,12 @@
     "segments": [
       {
         "text": "They can find my shift from this.",
-        "speed": 0.93,
-        "pauseAfter": 0.3
+        "speed": 0.94,
+        "pauseAfter": 0.34
       },
       {
         "text": "Taking my name off the public copy won't hide it from my employer.",
-        "speed": 0.95,
+        "speed": 0.92,
         "pauseAfter": 0
       }
     ],

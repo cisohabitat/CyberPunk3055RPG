@@ -1033,6 +1033,8 @@ html[data-motion="reduce"] .fragment-placed { animation: none; }
 /* The words lead on small screens; larger screens hold the full plate beside them. */
 .pivotal-scene .scene-row { grid-template-columns: 96px minmax(0, 1fr); gap: 1rem; }
 .pivotal-scene .scene-row .portrait-frame { width: 96px; }
+.pivotal-scene .scene-row .portrait-frame figcaption { padding: .2rem; font-size: .58rem; line-height: 1.2; letter-spacing: .03em; }
+.pivotal-scene .scene-row .portrait-role { display: none; }
 .pivotal-stage { margin: 1.5rem 0; padding-block: 1rem; border-block: 1px solid var(--line); }
 .pivotal-copy, .pivotal-art { min-width: 0; }
 .pivotal-label { color: var(--cyan); margin: 0 0 .85rem; font: 600 .85rem/1.5 var(--font-display), sans-serif; letter-spacing: .08em; text-transform: uppercase; }

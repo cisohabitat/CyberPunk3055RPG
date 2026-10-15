@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-14",
+  "generated": "2026-10-15",
   "disclosure": "Stock synthetic voices generated offline with Kokoro v1.0; no actor session or individual voice clone was commissioned. Only the fixed authored quotations below are rendered. No model or speech service ships in the game.",
   "driver": {
     "name": "kokoro-onnx",
@@ -1190,19 +1190,29 @@
       "speed": 0.95,
       "text": "Keep the original with Sera,",
       "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "segments": [
+        {
+          "text": "Keep the original with Sera,",
+          "speed": 0.91,
+          "pauseAfter": 0
+        }
+      ],
+      "loudnessLufs": -20,
+      "integratedLufs": -20.0,
+      "truePeakDbtp": -4.67,
       "language": "en-us",
       "path": "public/audio/voice-campaign-edda-d4b034abcf9f.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-edda-d4b034abcf9f.wav",
-      "sourceSha256": "cabfc72778c278a584b1a6eef91198483646f6c126020fc10ef8c4dfbfff5809",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-edda-d4b034abcf9f-delivery.wav",
-      "pcmDeliverySha256": "6fdb98134cce9fe5c5facea461eb245ec69f10907f89fdd8af4ed83b752d2d53",
-      "sha256": "e809a737def220b80ee6e0a03b0f06366d6a4af73ee2cb02637c7d532d0b803a",
-      "bytes": 23372,
+      "sourceFile": "/workspace/generated_audio/archive-hearing/voice-campaign-edda-d4b034abcf9f.wav",
+      "sourceSha256": "8f5ace0f011adce9b553b0c99c73a1825835ec26ec5b4fcc85655eef4b348345",
+      "pcmDeliveryFile": "/workspace/generated_audio/archive-hearing/voice-campaign-edda-d4b034abcf9f-delivery.wav",
+      "pcmDeliverySha256": "f085ff74bf4f71858d3b9875df0d0d8cf2f8179b6f1819efc16f8bdb7e255a8c",
+      "sha256": "94d6f506916aab224748e7213dd4a874f376d1f9053a609fa52ae27c68e90e78",
+      "bytes": 24236,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 1.8666666666666667,
-      "peak": 0.6839531660079956,
-      "rms": 0.12267027050256729
+      "durationSeconds": 1.9306666666666668,
+      "peak": 0.5837897062301636,
+      "rms": 0.10405576974153519
     },
     {
       "id": "voice-campaign-sister-lumen-c81c87c79a05",
@@ -1582,19 +1592,29 @@
       "speed": 0.96,
       "text": "That part stays,",
       "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions.",
+      "segments": [
+        {
+          "text": "That part stays,",
+          "speed": 0.9,
+          "pauseAfter": 0
+        }
+      ],
+      "loudnessLufs": -20,
+      "integratedLufs": -19.98,
+      "truePeakDbtp": -4.82,
       "language": "en-us",
       "path": "public/audio/voice-campaign-nia-pell-d8b7b7d16f6e.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-nia-pell-d8b7b7d16f6e.wav",
-      "sourceSha256": "e0019f8cd53f54a84bccd9a30eb7a0b4f1a8de287f264c92964c789d14dfc288",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-nia-pell-d8b7b7d16f6e-delivery.wav",
-      "pcmDeliverySha256": "293c2c36fa77d6a5add17cf995f339ed89409c7be0edd66e288c37c4a2ba76bb",
-      "sha256": "08d06fc009f2dd57046adfa0a644669111e86ac51eefa1c8d5c841949da4cd7a",
-      "bytes": 23372,
+      "sourceFile": "/workspace/generated_audio/archive-hearing/voice-campaign-nia-pell-d8b7b7d16f6e.wav",
+      "sourceSha256": "d95240a6c3063175d3162204067bd77f5992ae7e1659a8a21be75d5d5927259b",
+      "pcmDeliveryFile": "/workspace/generated_audio/archive-hearing/voice-campaign-nia-pell-d8b7b7d16f6e-delivery.wav",
+      "pcmDeliverySha256": "767ccde427cf2e5df94d90e0fd1f49bb3014daf90b300d03c5f8889dee5acd67",
+      "sha256": "3d362218058bd5288b2b69ddeee4cf97fdaf43b00e194acbb9bcaba5d3873dd1",
+      "bytes": 24812,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 1.8666666666666667,
-      "peak": 0.6835260391235352,
-      "rms": 0.12366677820682526
+      "durationSeconds": 1.9733333333333334,
+      "peak": 0.5735872983932495,
+      "rms": 0.10023979097604752
     },
     {
       "id": "voice-campaign-nia-pell-d5e530c55a4c",
@@ -1606,28 +1626,36 @@
       "segments": [
         {
           "text": "The address doesn't.",
-          "speed": 0.96,
-          "pauseAfter": 0.24
+          "speed": 0.91,
+          "pauseAfter": 0.34
         },
         {
-          "text": "If they ask where I am, tell them I am available through you.",
-          "speed": 0.96,
+          "text": "If they ask where I am,",
+          "speed": 0.95,
+          "pauseAfter": 0.15
+        },
+        {
+          "text": "tell them I am available through you.",
+          "speed": 0.93,
           "pauseAfter": 0
         }
       ],
+      "loudnessLufs": -20,
+      "integratedLufs": -19.99,
+      "truePeakDbtp": -1.73,
       "language": "en-us",
       "path": "public/audio/voice-campaign-nia-pell-d5e530c55a4c.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-nia-pell-d5e530c55a4c.wav",
-      "sourceSha256": "640239e6aefa5c6d4921b1a1b0ce283aabbaf0fe875fb36ede23d7fa56294133",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-nia-pell-d5e530c55a4c-delivery.wav",
-      "pcmDeliverySha256": "855d267c5fe4aa20521c25824beed050a7f384d39e83cec0d8947d0bc2d9b004",
-      "sha256": "7c227cefd66b5fccac85eded953e462275ef0ace72ce7cb3f484928784e560d4",
-      "bytes": 76940,
+      "sourceFile": "/workspace/generated_audio/archive-hearing/voice-campaign-nia-pell-d5e530c55a4c.wav",
+      "sourceSha256": "eb03a153453fe44f2e5d2bbf5cd49b20f986fe4e412cd2803a3c95beb1117745",
+      "pcmDeliveryFile": "/workspace/generated_audio/archive-hearing/voice-campaign-nia-pell-d5e530c55a4c-delivery.wav",
+      "pcmDeliverySha256": "dd327f35e2e86ac9ef2206b314d6398658a5a0f5b4ec3d2c863afafa9ffe5b7e",
+      "sha256": "1d5e2a9f8fc56d0162da93bd4138dda9011a977530de80d9d2ace31cbd345796",
+      "bytes": 93644,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 6.316625,
-      "peak": 0.6843433976173401,
-      "rms": 0.08298919349908829
+      "durationSeconds": 7.711333333333333,
+      "peak": 0.8158661127090454,
+      "rms": 0.11028645932674408
     },
     {
       "id": "voice-campaign-kerr-636ce1c1a709",
@@ -3628,31 +3656,31 @@
       "segments": [
         {
           "text": "They can find my shift from this.",
-          "speed": 0.93,
-          "pauseAfter": 0.3
+          "speed": 0.94,
+          "pauseAfter": 0.34
         },
         {
           "text": "Taking my name off the public copy won't hide it from my employer.",
-          "speed": 0.95,
+          "speed": 0.92,
           "pauseAfter": 0
         }
       ],
       "loudnessLufs": -20,
-      "integratedLufs": -20.0,
-      "truePeakDbtp": -3.2,
+      "integratedLufs": -20.01,
+      "truePeakDbtp": -3.14,
       "language": "en-us",
       "path": "public/audio/voice-campaign-edda-4c4a033f7b14.mp3",
-      "sourceFile": "/workspace/generated_audio/character-media/voice-campaign-edda-4c4a033f7b14.wav",
-      "sourceSha256": "38878c751a03f615ecef3d3d2f1708163120fa5d9d8dd3a9e6cd7bf623b2858e",
-      "pcmDeliveryFile": "/workspace/generated_audio/character-media/voice-campaign-edda-4c4a033f7b14-delivery.wav",
-      "pcmDeliverySha256": "32f415facd056fda1cd8224b49b70a1dd409d6b0e9f0e98e8f15ec5bfa48f531",
-      "sha256": "d1980b9322367c179c124e59300c20a869dfce10b3297dfbc1ded999c8add201",
-      "bytes": 82412,
+      "sourceFile": "/workspace/generated_audio/archive-hearing/voice-campaign-edda-4c4a033f7b14.wav",
+      "sourceSha256": "105e92418d8cc32139e209143f2f549e9ea1fc1dc733b78156184bff19d016d1",
+      "pcmDeliveryFile": "/workspace/generated_audio/archive-hearing/voice-campaign-edda-4c4a033f7b14-delivery.wav",
+      "pcmDeliverySha256": "919dab58d06d17ed438d3c6fbad27b9aee680b08c7a70c779134a30f03d2fc9d",
+      "sha256": "95f302b8fae710481fe3cc461bb089d6468d4038316f775541416e954d08e3f2",
+      "bytes": 83564,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 6.792,
-      "peak": 0.6918904185295105,
-      "rms": 0.12014377862215042
+      "durationSeconds": 6.874666666666666,
+      "peak": 0.6967470645904541,
+      "rms": 0.12006758898496628
     },
     {
       "id": "voice-campaign-sister-lumen-c0bbc5b77e59",

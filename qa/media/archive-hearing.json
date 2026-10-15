@@ -1,0 +1,316 @@
+{
+  "version": 1,
+  "sourceRevision": "668818930e80ec0c07a215a3a5407c336b26db3d",
+  "scope": "Ten archive, Nia account and public-hearing scenes; two closer character paintings, four exact-word MP3 revisions, three physical action sounds. No gameplay or canonical prose change.",
+  "bindingSha256": "ecfff2a6154e7933eb173a4f0c51c79aa3e1f88b0fc7d95e3041ce5cceea4b3f",
+  "scenes": [
+    {
+      "sceneId": "act2_archive_brief",
+      "route": "allocation-dustline",
+      "label": "Access has terms · Edda",
+      "kind": "conversation",
+      "sceneSpeaker": "Edda",
+      "illustration": "/art/edda-archive.jpg",
+      "textSha256": "1bff40d18819e96bf7eaffbb487e79123c8c243c296a49e83f2418da08a5fafa",
+      "dialogue": [
+        {
+          "key": "58a3ca889befca0d",
+          "id": "voice-edda-archive-access",
+          "speaker": "Edda",
+          "text": "Your export records a cancellation. My ledger can show whether it reached the shift. Compare them. I have to work here tomorrow."
+        }
+      ]
+    },
+    {
+      "sceneId": "act3_testimony_review",
+      "route": "allocation-dustline",
+      "label": "Before the public account · Sera",
+      "kind": "conversation",
+      "sceneSpeaker": "Sera",
+      "illustration": "/art/sera-hearing.jpg",
+      "textSha256": "0bc7d5e6aa8dc7b956177864281ad14aec4def5deb9a622683d53dea869bee7b",
+      "dialogue": [
+        {
+          "key": "c9cfdae9c7f6db05",
+          "id": "voice-sera-hearing-purpose",
+          "speaker": "Sera",
+          "text": "The names can be spoken either way. This is a different promise: an account someone can question after you leave."
+        }
+      ]
+    },
+    {
+      "sceneId": "act3_testimony_consent",
+      "route": "allocation-dustline",
+      "label": "Whose words may leave · Sera",
+      "kind": "conversation",
+      "sceneSpeaker": "Sera",
+      "illustration": "/art/hearing-table.jpg",
+      "textSha256": "782a2459d1839b76390c84e2250a02cbcff1649b35fe1412a398a016933edfeb",
+      "dialogue": []
+    },
+    {
+      "sceneId": "act3_testimony_hearing",
+      "route": "allocation-dustline",
+      "label": "The source is questioned · Ives",
+      "kind": "conversation",
+      "sceneSpeaker": "Ives",
+      "illustration": "/art/ives-hearing.jpg",
+      "textSha256": "2217f3621acb997d246f411df0699ea7e61eaf4456d1d10d965425b93d293cbf",
+      "dialogue": [
+        {
+          "key": "12cdbd3602fe040e",
+          "id": "voice-campaign-ives-hearing-challenge-performance",
+          "speaker": "Ives",
+          "text": "A maintenance signature isn't an issuing key. A witness isn't a server. What exactly are you asking people to believe?"
+        }
+      ]
+    },
+    {
+      "sceneId": "act3_testimony_correction",
+      "route": "allocation-dustline",
+      "label": "Keep the correction beside it · Sera",
+      "kind": "conversation",
+      "sceneSpeaker": "Sera",
+      "illustration": "/art/sera-hearing.jpg",
+      "textSha256": "f42afdd45f6014ad440abb48c5bb13249de182f7a0acea4767b0ee1ce930d9b5",
+      "dialogue": [
+        {
+          "key": "a676442dd648d8e3",
+          "id": "voice-sera-hearing-correction",
+          "speaker": "Sera",
+          "text": "Correct it here. A correction belongs beside what people already heard."
+        }
+      ]
+    },
+    {
+      "sceneId": "act3_testimony_record",
+      "route": "allocation-dustline",
+      "label": "A draft, still yours to withdraw · Sera",
+      "kind": "conversation",
+      "sceneSpeaker": "Sera",
+      "illustration": "/art/sera-hearing.jpg",
+      "textSha256": "3ce041e8293abdfa7f7b3060439bec3a11e1cd46b37221ccbbc784f5f20446ac",
+      "dialogue": []
+    },
+    {
+      "sceneId": "act2_archive_challenge",
+      "route": "allocation-later-funded",
+      "label": "A catalog is a lead · Edda",
+      "kind": "conversation",
+      "sceneSpeaker": "Edda",
+      "illustration": "/art/edda-archive.jpg",
+      "textSha256": "cca64070a2e0ec028a759e7b124ff3ddb173883f168995e67c087e27e5284f44",
+      "dialogue": [
+        {
+          "key": "4da47f2f8a24a099",
+          "id": "voice-campaign-edda-de8cf8a1dc03",
+          "speaker": "Edda",
+          "text": "This tells us where to look. It isn't the record. My countersignature isn't the command's issuing key either."
+        }
+      ]
+    },
+    {
+      "sceneId": "act2_archive_custody",
+      "route": "allocation-later-funded",
+      "label": "The source stays a person · Edda",
+      "kind": "conversation",
+      "sceneSpeaker": "Edda",
+      "illustration": "/art/edda-archive.jpg",
+      "textSha256": "2333c794c56b4637b19397b3c97b855e72693495094267b61ad1a4c1c082289c",
+      "dialogue": [
+        {
+          "key": "9b7df92b1cc2b555",
+          "id": "voice-campaign-edda-d4b034abcf9f",
+          "speaker": "Edda",
+          "text": "Keep the original with Sera,"
+        },
+        {
+          "key": "0a82dcd63a373be1",
+          "id": "voice-edda-source-custody",
+          "speaker": "Edda",
+          "text": "Ask before you put my name on a public copy."
+        }
+      ]
+    },
+    {
+      "sceneId": "act2_witness_safe",
+      "route": "balance-dustline-nerve-equipped",
+      "label": "Her words · Nia",
+      "kind": "conversation",
+      "sceneSpeaker": "Sera",
+      "illustration": "/art/nia-arrival.jpg",
+      "textSha256": "5c04ce17bdbc02a55b8328e2334d0211211ff0686ade33be0236419a4970f97b",
+      "dialogue": [
+        {
+          "key": "339559ea2d91362c",
+          "id": "voice-campaign-nia-pell-d8b7b7d16f6e",
+          "speaker": "Nia Pell",
+          "text": "That part stays,"
+        },
+        {
+          "key": "514f7ea0c2676a9e",
+          "id": "voice-campaign-nia-pell-d5e530c55a4c",
+          "speaker": "Nia Pell",
+          "text": "The address doesn't. If they ask where I am, tell them I am available through you."
+        }
+      ]
+    },
+    {
+      "sceneId": "act3_testimony_nia",
+      "route": "balance-dustline-nerve-equipped",
+      "label": "Permission for this account · Nia",
+      "kind": "conversation",
+      "sceneSpeaker": "Nia Pell",
+      "illustration": "/art/clinic-relay.jpg",
+      "textSha256": "96aa76e9082ab5e21492706cb2235a1585f542c85616cbbd68afeb9b071f88d7",
+      "dialogue": [
+        {
+          "key": "7e44e6048adce128",
+          "id": "voice-nia-public-terms",
+          "speaker": "Nia Pell",
+          "text": "Use the words I approved. You can name me as the source through Sera. No address, no new story about how brave I was, and no sentence saying the room made me owe you this."
+        }
+      ]
+    }
+  ],
+  "performances": [
+    {
+      "id": "voice-campaign-edda-d4b034abcf9f",
+      "speaker": "Edda",
+      "voice": "af_kore",
+      "text": "Keep the original with Sera,",
+      "path": "public/audio/voice-campaign-edda-d4b034abcf9f.mp3",
+      "previousSha256": "e809a737def220b80ee6e0a03b0f06366d6a4af73ee2cb02637c7d532d0b803a",
+      "previousDeliveryCopy": "qa/media/archive-hearing-baseline/voice-campaign-edda-d4b034abcf9f.mp3",
+      "sha256": "94d6f506916aab224748e7213dd4a874f376d1f9053a609fa52ae27c68e90e78",
+      "seconds": 1.9306666666666668,
+      "integratedLufs": -20.0,
+      "truePeakDbtp": -4.67,
+      "direction": "Measured, practical custody/privacy terms; exact-word clause pauses and a firmer final boundary. No new dialogue, narration or casting.",
+      "transcription": {
+        "model": "Systran/faster-whisper-small.en",
+        "sha256": "94d6f506916aab224748e7213dd4a874f376d1f9053a609fa52ae27c68e90e78",
+        "text": "Keep the original with CIRA.",
+        "review": "Independent transcription without expected-text prompt. Punctuation/apostrophe normalization; CIRA is the recognizer’s proper-name spelling of Sera in the short custody instruction."
+      }
+    },
+    {
+      "id": "voice-campaign-nia-pell-d8b7b7d16f6e",
+      "speaker": "Nia Pell",
+      "voice": "af_nova",
+      "text": "That part stays,",
+      "path": "public/audio/voice-campaign-nia-pell-d8b7b7d16f6e.mp3",
+      "previousSha256": "08d06fc009f2dd57046adfa0a644669111e86ac51eefa1c8d5c841949da4cd7a",
+      "previousDeliveryCopy": "qa/media/archive-hearing-baseline/voice-campaign-nia-pell-d8b7b7d16f6e.mp3",
+      "sha256": "3d362218058bd5288b2b69ddeee4cf97fdaf43b00e194acbb9bcaba5d3873dd1",
+      "seconds": 1.9733333333333334,
+      "integratedLufs": -19.98,
+      "truePeakDbtp": -4.82,
+      "direction": "Measured, practical custody/privacy terms; exact-word clause pauses and a firmer final boundary. No new dialogue, narration or casting.",
+      "transcription": {
+        "model": "Systran/faster-whisper-small.en",
+        "sha256": "3d362218058bd5288b2b69ddeee4cf97fdaf43b00e194acbb9bcaba5d3873dd1",
+        "text": "That part stays.",
+        "review": "Exact words after punctuation/apostrophe normalization; no expected-text prompt."
+      }
+    },
+    {
+      "id": "voice-campaign-nia-pell-d5e530c55a4c",
+      "speaker": "Nia Pell",
+      "voice": "af_nova",
+      "text": "The address doesn't. If they ask where I am, tell them I am available through you.",
+      "path": "public/audio/voice-campaign-nia-pell-d5e530c55a4c.mp3",
+      "previousSha256": "7c227cefd66b5fccac85eded953e462275ef0ace72ce7cb3f484928784e560d4",
+      "previousDeliveryCopy": "qa/media/archive-hearing-baseline/voice-campaign-nia-pell-d5e530c55a4c.mp3",
+      "sha256": "1d5e2a9f8fc56d0162da93bd4138dda9011a977530de80d9d2ace31cbd345796",
+      "seconds": 7.711333333333333,
+      "integratedLufs": -19.99,
+      "truePeakDbtp": -1.73,
+      "direction": "Measured, practical custody/privacy terms; exact-word clause pauses and a firmer final boundary. No new dialogue, narration or casting.",
+      "transcription": {
+        "model": "Systran/faster-whisper-small.en",
+        "sha256": "1d5e2a9f8fc56d0162da93bd4138dda9011a977530de80d9d2ace31cbd345796",
+        "text": "The address doesn't. If they ask where I am, tell them I am available through you.",
+        "review": "Exact words after punctuation/apostrophe normalization; no expected-text prompt."
+      }
+    },
+    {
+      "id": "voice-campaign-edda-4c4a033f7b14",
+      "speaker": "Edda",
+      "voice": "af_kore",
+      "text": "They can find my shift from this. Taking my name off the public copy won't hide it from my employer.",
+      "path": "public/audio/voice-campaign-edda-4c4a033f7b14.mp3",
+      "previousSha256": "d1980b9322367c179c124e59300c20a869dfce10b3297dfbc1ded999c8add201",
+      "previousDeliveryCopy": "qa/media/archive-hearing-baseline/voice-campaign-edda-4c4a033f7b14.mp3",
+      "sha256": "95f302b8fae710481fe3cc461bb089d6468d4038316f775541416e954d08e3f2",
+      "seconds": 6.874666666666666,
+      "integratedLufs": -20.01,
+      "truePeakDbtp": -3.14,
+      "direction": "Measured, practical custody/privacy terms; exact-word clause pauses and a firmer final boundary. No new dialogue, narration or casting.",
+      "transcription": {
+        "model": "Systran/faster-whisper-small.en",
+        "sha256": "95f302b8fae710481fe3cc461bb089d6468d4038316f775541416e954d08e3f2",
+        "text": "They can find my shift from this. Taking my name off the public copy won't hide it from my employer.",
+        "review": "Exact words after punctuation/apostrophe normalization; no expected-text prompt."
+      }
+    }
+  ],
+  "art": [
+    {
+      "id": "edda-archive",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-15",
+      "sourceFile": "/workspace/generated_images/exec-29a2f602-a7b6-4816-b1b0-8e02e04212af.png",
+      "sourceSha256": "706b75122da479f4fc98b7e45c2ef567ef8e0346b4fcef754c73d37a1cd53811",
+      "promptSummary": "Established Edda at the service archive, closed ledger and blank folded paper; neutral source conversation, no retrieved or authenticated outcome.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/edda-archive.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 246442,
+          "sha256": "090a907f59e2587d9ccc536652621ff0868c6ac46aa0e4a3067401a671cc9810"
+        },
+        {
+          "path": "public/art/edda-archive-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 74651,
+          "sha256": "359e29bb4b084b1fc957a87d772a683bd77ec7a96eea4dd28e513962eae5c9c5"
+        }
+      ],
+      "review": "Source-familiar inspection: identity, hands, anonymous papers, chronology and unearned-outcome limits. Native phone/desktop review follows integration."
+    },
+    {
+      "id": "sera-hearing",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-15",
+      "sourceFile": "/workspace/generated_images/exec-22c6fa3a-e3d3-4d5d-9fe1-4439d0906191.png",
+      "sourceSha256": "463c3f8004f3969ae4f7241beec4b5bfab869cff247f96b549ac4e2d5e8f63d9",
+      "promptSummary": "Established Sera at the records table, blank cover sheet and separate closed folder; neutral review/correction before filing, no recorder status, private identity or approval.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/sera-hearing.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 242724,
+          "sha256": "c281c605d54e1e2caf0d592be2d24217396e73536b92007b0d7525c4277617d6"
+        },
+        {
+          "path": "public/art/sera-hearing-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 71160,
+          "sha256": "5f1c994f23f466fe7de1b1ae0a33f0511af0ae533221259a8fbedccb693b55dd"
+        }
+      ],
+      "review": "Source-familiar inspection: identity, hands, anonymous papers, chronology and unearned-outcome limits. Native phone/desktop review follows integration."
+    }
+  ],
+  "review": "Source-familiar authored development review and independent offline transcription; no human/blind or listening-acceptance claim.",
+  "audioDecision": "Existing quiet score at 55% saved music and 75% ambience, alongside speech ducking; actual archive/records locations remain. Nia account/permission scenes use the private witness room. Voice/Effects stay independent.",
+  "retainedPerformanceDecision": "Existing exact-word Edda clarification, Sera hearing/permission/correction and Ives challenge performances retain their established phrase direction and actors. Their deliveries are reviewed alongside the four changed passages.",
+  "artDecision": "Reuse Nia’s actual private-room/relay imagery and Ives’s hearing frame. New neutral Edda/Sera plates show blank papers and closed sources without a retrieved record, approved account, filed outcome or verdict. Canonical text and actual saved state retain authority."
+}

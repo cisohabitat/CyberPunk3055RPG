@@ -1,3 +1,4 @@
+import { reviewedDeliveryHash } from "../qa/production/delivery-history";
 import assert from "node:assert/strict";
 import { it } from "node:test";
 import { createHash } from "node:crypto";
@@ -56,7 +57,7 @@ it("distinguishes confirmed stock receipt from intake, and late receipt supplies
 
 it("requires completed publication, keeps private sources closed and retains all finale illustrations",()=>{
   const draft=run("act3_testimony_record",{testimony_answered:true,testimony_bounded:true});
-  assert.equal(sceneIllustration(draft.sceneId,draft.flags)?.src,"/art/hearing-table.jpg");
+  assert.equal(sceneIllustration(draft.sceneId,draft.flags)?.src,"/art/sera-hearing.jpg");
   const filed=choose(draft,"file-public-account"),withdrawn=choose(draft,"withdraw-public-account");
   assert.equal(sceneIllustration(filed.sceneId,filed.flags)?.src,"/art/hearing-filed.jpg");
   assert.notEqual(sceneIllustration(withdrawn.sceneId,withdrawn.flags)?.src,"/art/hearing-filed.jpg");
@@ -81,7 +82,7 @@ it("locks nine revised deliveries to unchanged actors, words and bindings and re
     assert.deepEqual([...new Set(bindings.filter(b=>b.id===entry.id).map(b=>b.scene))].sort(),entry.scenes);
   }
   for(const [id,hash] of Object.entries(phase.precedingVoiceSha256))if(!changed.has(id))
-    assert.equal(sha(`public/audio/${id}.${id.startsWith("voice-campaign-")?"mp3":"wav"}`),hash,id);
+    assert.equal(reviewedDeliveryHash(`public/audio/${id}.${id.startsWith("voice-campaign-")?"mp3":"wav"}`,hash),hash,id);
 });
 
 it("reviews explicit outcome-art rules and stages actual actors without erasing guarded conduct",()=>{

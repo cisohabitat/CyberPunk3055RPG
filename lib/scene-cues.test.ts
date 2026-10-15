@@ -6,6 +6,7 @@ import { commitChoice, createCharacter, getScene, presentChoices } from './engin
 import { sceneInteractionCue, SCENE_CUE_MIX } from './scene-cues';
 import type { ReplaySpec } from './story-replay';
 import media from '../qa/media/scene-foley.json';
+import physical from '../qa/media/investigation-foley.json';
 import mastering from '../qa/media/voice-mastering.json';
 import { sceneIllustration } from './art';
 const base = createCharacter({handle:'Foley review',givenName:'Jo',origin:'spire',bonus:{chrome:2,nerve:0,face:0,ghost:0}});
@@ -24,7 +25,7 @@ it('keeps every authored action and source outcome unchanged while choosing neut
       state=after;
     }
   }
-  assert.deepEqual([...heard].sort(),media.clips.map(c=>c.id).sort());
+  assert.deepEqual([...heard].sort(),[...media.clips,...physical.clips].map(c=>c.id).sort());
 });
 
 it('uses the same reader sound for a successful and rejected key query, without supplying authentication', () => {

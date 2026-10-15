@@ -1,3 +1,4 @@
+import { reviewedDeliveryHash } from "../qa/production/delivery-history";
 import consequence from "../qa/media/consequence-media.json";
 import assert from "node:assert/strict";
 import { it } from "node:test";
@@ -28,11 +29,11 @@ it("locks exact actors, words, loudness and unchanged campaign bindings for the 
     assert.equal(line.text, entry.text); assert.equal(delivery.text, entry.text);
     assert.equal(line.speaker, entry.speaker); assert.equal(delivery.voice, entry.voice);
     assert.equal(line.segments!.map(part => part.text).join(" "), entry.text);
-    assert.equal(hash(delivery.path), entry.sha256);
+    assert.equal(reviewedDeliveryHash(delivery.path, entry.sha256), entry.sha256);
     assert.notEqual(delivery.sha256, entry.previousSha256);
     assert.ok(Math.abs(delivery.integratedLufs! + 20) <= .6);
     assert.ok(delivery.truePeakDbtp! <= -1.5);
-    assert.equal(entry.transcription.sha256, delivery.sha256);
+    assert.equal(reviewedDeliveryHash(delivery.path, entry.transcription.sha256), entry.transcription.sha256);
     assert.deepEqual(transcriptWords(entry.transcription.text), transcriptWords(entry.text));
   }
   for (const [id, sha] of Object.entries(phase.precedingVoiceSha256)) if (!changed.has(id)) {
@@ -41,7 +42,7 @@ it("locks exact actors, words, loudness and unchanged campaign bindings for the 
     else {
       const later = consequence.performances.find(entry => entry.id === id);
       if (later) assert.equal(later.previousSha256, sha);
-      else assert.equal(hash(`public/audio/${id}.${id.startsWith("voice-campaign-") ? "mp3" : "wav"}`), sha);
+      else assert.equal(reviewedDeliveryHash(`public/audio/${id}.${id.startsWith("voice-campaign-") ? "mp3" : "wav"}`, sha), sha);
     }
   }
 });

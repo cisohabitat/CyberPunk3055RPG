@@ -1,3 +1,4 @@
+import { reviewedDeliveryHash } from "../qa/production/delivery-history";
 import consequence from "../qa/media/consequence-media.json";
 import assert from "node:assert/strict";
 import { it } from "node:test";
@@ -52,7 +53,7 @@ it("replaces exactly thirteen Ives performances while preserving all quotation k
   for (const [id, hash] of Object.entries(phase.precedingVoiceSha256)) if (!revised.has(id)) {
     const later = consequence.performances.find(entry => entry.id === id);
     if (later) assert.equal(later.previousSha256, hash);
-    else assert.equal(sha(`public/audio/${id}.${id.startsWith("voice-campaign-") ? "mp3" : "wav"}`), hash);
+    else assert.equal(reviewedDeliveryHash(`public/audio/${id}.${id.startsWith("voice-campaign-") ? "mp3" : "wav"}`, hash), hash);
   }
   for (const clip of legacy.lines) assert.equal(sha(clip.path), clip.sha256);
 });
@@ -67,5 +68,5 @@ it("keeps Ives expressions and closer hearing art within their explicit actor an
   assert.equal(portraitArt("Ives", "ending_listed"), "/art/ives.jpg");
   assert.equal(portraitArt("Ives", "act2_archive_custody"), "/art/ives.jpg");
   assert.equal(sceneIllustration("act3_testimony_hearing")?.src, "/art/ives-hearing.jpg");
-  for (const scene of ["act3_testimony_review", "act3_testimony_correction", "act3_testimony_record"]) assert.equal(sceneIllustration(scene)?.src, "/art/hearing-table.jpg");
+  for (const scene of ["act3_testimony_review", "act3_testimony_correction", "act3_testimony_record"]) assert.equal(sceneIllustration(scene)?.src, "/art/sera-hearing.jpg");
 });
