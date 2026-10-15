@@ -2,7 +2,7 @@
 
 ## Automated release evidence
 
-The GitHub jobs remain `Test` and `Build`. Test runs rules, story, save, audio, and document tests. Build compiles the production game, then checks player flows on desktop and phone Chromium, Firefox, and WebKit. Browser failures retain screenshots and traces. Production's existing CI gate waits for both jobs; failure or unavailable status skips publication.
+The required checks remain `Test` and `Build`. Test runs rules, story, save, audio and document tests. Four independent Browser jobs need Test, compile the same candidate and run every check in their respective desktop Chromium, phone Chromium, Firefox and WebKit projects. Chromium additionally runs the unchanged native permission smoke and loading probe. Each project retains its browser and production evidence artifact. The final Build job directly depends on Test and the complete matrix; `scripts/require-browser-checks.mjs` fails unless both dependency results are success. Failures, skipped/canceled jobs and unknown results cannot pass. Vercel still waits for exact-commit Test and Build; failure or unavailable status blocks publication. No test is removed or made optional by parallel execution.
 
 Run locally:
 
@@ -53,3 +53,7 @@ Commercial candidate review uses `npm run production:report -- --release`, which
 ## Cycle 10 endurance and rollback rehearsal
 
 [RELEASE_READINESS.md](RELEASE_READINESS.md) records the corrected diagnostic, immutable previous-public-release exports and same-origin isolated rollback/recovery command. Production waits at most thirty minutes for the exact revision, with bounded ten-second status requests and thirty-second polling (at most sixty requests); uncertain or unsuccessful checks still skip. Keep raw heap snapshots local because they can contain run data. Internal rehearsal does not switch the live alias or close any human production gate.
+
+### Parallel matrix reruns
+
+Production also requires the latest four named Browser check results directly. When Test is rerun, older Browser/Build check IDs cannot combine with the new source success. A missing or pending current result waits; an unsuccessful result blocks publication. This protects the interval before the dependency-based Build aggregate is created. The 45-minute deadline and request bounds remain.

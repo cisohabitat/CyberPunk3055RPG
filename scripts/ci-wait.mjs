@@ -35,9 +35,9 @@ export async function waitForProductionChecks({
     try { decision = productionDecision(await read(url, AbortSignal.timeout(Math.min(requestMs, remaining)))); }
     catch { return { exitCode: 0, message: "Could not read CI status within its request limit. Skipping the production deploy." }; }
     if (now() >= deadline) return timeout;
-    if (decision === "build") return { exitCode: 1, message: `${TEST_CHECK} and ${BUILD_CHECK} passed. Building production.` };
-    if (decision === "skip") return { exitCode: 0, message: `${TEST_CHECK} or ${BUILD_CHECK} did not pass. Skipping the production deploy.` };
-    onWait(`Waiting for ${TEST_CHECK} and ${BUILD_CHECK}.`);
+    if (decision === "build") return { exitCode: 1, message: `${TEST_CHECK}, ${BUILD_CHECK} and all required Browser checks passed. Building production.` };
+    if (decision === "skip") return { exitCode: 0, message: `Required ${TEST_CHECK}, ${BUILD_CHECK} or Browser checks did not pass. Skipping the production deploy.` };
+    onWait(`Waiting for ${TEST_CHECK}, ${BUILD_CHECK} and all required Browser checks.`);
     await sleep(Math.min(intervalMs, deadline - now()));
   }
 }

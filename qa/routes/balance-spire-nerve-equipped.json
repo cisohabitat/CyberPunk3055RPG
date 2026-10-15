@@ -1,0 +1,288 @@
+{
+  "name": "balance-spire-nerve-equipped",
+  "character": {
+    "handle": "Replay",
+    "givenName": "Ada",
+    "origin": "spire",
+    "complication": "optic",
+    "bonus": {
+      "chrome": 0,
+      "nerve": 2,
+      "face": 0,
+      "ghost": 0
+    },
+    "startWithPrologue": true
+  },
+  "steps": [
+    {
+      "choiceId": "begin-opening",
+      "reload": true
+    },
+    {
+      "choiceId": "opening-identity",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-stallholder",
+      "reload": true
+    },
+    {
+      "choiceId": "take-the-stool",
+      "reload": true
+    },
+    {
+      "choiceId": "ask-pay"
+    },
+    {
+      "choiceId": "haggle",
+      "roll": 10,
+      "reload": true
+    },
+    {
+      "choiceId": "pocket"
+    },
+    {
+      "choiceId": "accept"
+    },
+    {
+      "choiceId": "begin-chapel-window",
+      "reload": true
+    },
+    {
+      "choiceId": "window-force-hatch",
+      "roll": 10,
+      "reload": true
+    },
+    {
+      "choiceId": "window-quiet-exit",
+      "reload": true
+    },
+    {
+      "choiceId": "go"
+    },
+    {
+      "choiceId": "honest"
+    },
+    {
+      "choiceId": "pact-copy"
+    },
+    {
+      "choiceId": "copy",
+      "roll": 10,
+      "reload": true
+    },
+    {
+      "choiceId": "heard"
+    },
+    {
+      "choiceId": "inspect-hour"
+    },
+    {
+      "choiceId": "inspect-signature"
+    },
+    {
+      "choiceId": "inspect-order"
+    },
+    {
+      "choiceId": "inspect-roster"
+    },
+    {
+      "choiceId": "reconstruct"
+    },
+    {
+      "choiceId": "separate-decisions"
+    },
+    {
+      "choiceId": "label-unverified"
+    },
+    {
+      "choiceId": "seal-witness"
+    },
+    {
+      "choiceId": "talk-leave",
+      "roll": 10,
+      "reload": true
+    },
+    {
+      "choiceId": "both"
+    },
+    {
+      "choiceId": "week-after"
+    },
+    {
+      "choiceId": "into-week"
+    },
+    {
+      "choiceId": "practice"
+    },
+    {
+      "choiceId": "learn-nerve"
+    },
+    {
+      "choiceId": "read-board"
+    },
+    {
+      "choiceId": "visit-workshop"
+    },
+    {
+      "choiceId": "buy-chair-harness"
+    },
+    {
+      "choiceId": "to-lumen"
+    },
+    {
+      "choiceId": "hear-lumen"
+    },
+    {
+      "choiceId": "walk-with-her"
+    },
+    {
+      "choiceId": "protect-witness"
+    },
+    {
+      "choiceId": "agree-terms"
+    },
+    {
+      "choiceId": "steady-chair",
+      "roll": 10,
+      "reload": true
+    },
+    {
+      "choiceId": "compare-witness-support"
+    },
+    {
+      "choiceId": "harness-chair-transfer",
+      "reload": true
+    },
+    {
+      "choiceId": "defer-account"
+    },
+    {
+      "choiceId": "return-witness"
+    },
+    {
+      "choiceId": "review-account"
+    },
+    {
+      "choiceId": "file-account"
+    },
+    {
+      "choiceId": "answer-kerr-collection",
+      "reload": true
+    },
+    {
+      "choiceId": "promise-private-collection",
+      "reload": true
+    },
+    {
+      "choiceId": "route-entry-lift",
+      "reload": true
+    },
+    {
+      "choiceId": "route-exit-walk",
+      "reload": true
+    },
+    {
+      "choiceId": "depart-kerr-lift",
+      "reload": true
+    },
+    {
+      "choiceId": "compare-trained-depot-methods",
+      "reload": true
+    },
+    {
+      "choiceId": "begin-depot-nerve",
+      "reload": true
+    },
+    {
+      "choiceId": "depot-rent-cradle",
+      "reload": true
+    },
+    {
+      "choiceId": "pause-depot-task",
+      "reload": true
+    },
+    {
+      "choiceId": "answer-kerr-collection",
+      "reload": true
+    },
+    {
+      "choiceId": "depot-carry-low",
+      "reload": true
+    },
+    {
+      "choiceId": "record-kerr-receipt",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-response"
+    },
+    {
+      "choiceId": "answer-with-source"
+    },
+    {
+      "choiceId": "stand"
+    },
+    {
+      "choiceId": "back-to-board"
+    },
+    {
+      "choiceId": "to-the-wall"
+    },
+    {
+      "choiceId": "to-ward-nine"
+    },
+    {
+      "choiceId": "visit-nia"
+    },
+    {
+      "choiceId": "acknowledge-nia"
+    },
+    {
+      "choiceId": "face-sera"
+    },
+    {
+      "choiceId": "visit-kerr-collection",
+      "reload": true
+    },
+    {
+      "choiceId": "acknowledge-private-collection",
+      "reload": true
+    },
+    {
+      "choiceId": "prepare-public-account"
+    },
+    {
+      "choiceId": "scope-corroborated"
+    },
+    {
+      "choiceId": "ask-public-permission"
+    },
+    {
+      "choiceId": "accept-public-permission",
+      "reload": true
+    },
+    {
+      "choiceId": "answer-corroboration"
+    },
+    {
+      "choiceId": "file-public-account",
+      "reload": true
+    },
+    {
+      "choiceId": "read-names"
+    }
+  ],
+  "expected": {
+    "sceneId": "ending_names",
+    "creds": 255,
+    "strain": 2,
+    "flags": {
+      "witness_safe": true,
+      "witness_method_nerve": true
+    },
+    "items": [
+      "chair-harness"
+    ]
+  }
+}

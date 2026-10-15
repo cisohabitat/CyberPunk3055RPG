@@ -1,4 +1,4 @@
-import { FIELD_KITS, equippedKits } from "@/lib/loadout";
+import { FIELD_KITS, equippedKits, fieldKitBudget } from "@/lib/loadout";
 import type { GameState } from "@/lib/types";
 
 export function FieldKitBrief({ state }: { state: GameState }) {
@@ -9,8 +9,19 @@ export function FieldKitBrief({ state }: { state: GameState }) {
   return <aside className="transfer-brief" aria-label={shopping ? "Compare field equipment" : "Equipped field kit"} data-testid="field-kit-brief">
     {shopping && <p>One field kit this week · <strong>{state.creds} creds available</strong>. Private witness care costs 90; staffed recovery costs 45.</p>}
     <dl className="testimony-sources">
-      {kits.map((kit) => <div key={kit.id}><dt>{kit.name}{shopping ? ` · ${kit.price} creds` : " · equipped"}</dt><dd>{kit.uses}{state.flags[`perk_${kit.stat}`] ? " Complements your practiced skill." : " Works without training this skill."}</dd></div>)}
+      {kits.map((kit) => {
+        const budget = fieldKitBudget(state.creds, kit.price);
+        return <div key={kit.id}><dt>{kit.name}{shopping ? ` · ${kit.price} creds` : " · equipped"}</dt><dd>
+          {kit.uses}{state.flags[`perk_${kit.stat}`] ? " Complements your practiced skill." : " Works without training this skill."}
+          {shopping && <p className="kit-budget" data-testid={`budget-${kit.id}`}>
+            {budget.affordable ? <><strong>After purchase: {budget.remaining} creds.</strong>{" "}
+              {budget.careGap ? `Room + staffed rest: ${budget.careGap} more needed.` : "Enough cash remains for a room and staffed rest."}{" "}
+              {!budget.careGap && (budget.careAndCourierGap ? `Adding a private courier would need ${budget.careAndCourierGap} more.` : "A private courier also fits that combined budget.")}
+            </> : `Need ${-budget.remaining} more creds to buy this kit.`}
+          </p>}
+        </dd></div>;
+      })}
     </dl>
-    <p className="hint">Only the listed checks receive the bonus. Equipment supplies no evidence, safe room, or consent.</p>
+    <p className="hint">Only the listed checks receive the bonus. Equipment supplies no evidence, safe room, or consent.{shopping && " Cash benchmarks: room 90 + staffed rest 45 = 135; adding private courier dispatch 15 brings the combined cost to 150. These comparisons reserve nothing; earned rooms and other legal methods remain available."}</p>
   </aside>;
 }

@@ -1,5 +1,10 @@
 export const TEST_CHECK = "Test";
 export const BUILD_CHECK = "Build";
+export const BROWSER_CHECKS = ["Browser (chromium)", "Browser (phone)", "Browser (firefox)", "Browser (webkit)"];
+
+export function requiredMatrixPassed(testResult, browserResult) {
+  return testResult === "success" && browserResult === "success";
+}
 
 export function latestRun(runs, name) {
   const matches = runs.filter((run) => run.name === name);
@@ -18,9 +23,12 @@ function finished(run) {
 
 export function productionDecision(runs) {
   const test = latestRun(runs, TEST_CHECK);
-  const build = latestRun(runs, BUILD_CHECK);
-  if (finished(test) && test.conclusion !== "success") return "skip";
-  if (finished(build) && build.conclusion !== "success") return "skip";
-  if (finished(test) && test.conclusion === "success" && finished(build) && build.conclusion === "success") return "build";
+  // A workflow rerun can expose a fresh Test before its aggregate Build exists.
+  // Earlier successors, successful or failed, are absent from the new cohort.
+  const successors = [latestRun(runs, BUILD_CHECK), ...BROWSER_CHECKS.map(name => latestRun(runs, name))]
+    .map(check => test && Number.isSafeInteger(test.id) && (!Number.isSafeInteger(check?.id) || check.id <= test.id) ? undefined : check);
+  const required = [test, ...successors];
+  if (required.some(check => finished(check) && check.conclusion !== "success")) return "skip";
+  if (required.every(check => finished(check) && check.conclusion === "success")) return "build";
   return "wait";
 }

@@ -1,4 +1,4 @@
-import { kitBonuses } from "../loadout";
+import { harnessTransferStrain, kitBonuses } from "../loadout";
 import type { Scene } from "../types";
 
 export const METHOD_SCENES: Record<string, Scene> = {
@@ -22,10 +22,10 @@ export const METHOD_SCENES: Record<string, Scene> = {
   },
   act2_witness_support: {
     id: "act2_witness_support", location: "Witness room, Glass Chapel", speaker: "Nia Pell",
-    text: "Nia holds the chair brake herself. 'Tell me whose work you're offering.'\n\nAn arranged volunteer will accept your return shift instead of spending clinic standing. A successfully braced chair plus a carrying harness permits a slow, strenuous stair transfer; Nia chooses the stops. A scanner protocol plus Edda's earned signal baffle permits a clinic-only form without the usual strain. These methods need their stated preparation or equipment. The existing funded room, earned clearances and checkpoint route remain available without them.",
+    text: "Nia holds the chair brake herself. 'Tell me whose work you're offering.'\n\nAn arranged volunteer will accept your return shift instead of spending clinic standing. A successfully braced chair plus a carrying harness permits a slow stair transfer; Nia chooses the stops. Practiced Steady hands balances the load without adding strain; an untrained carrier takes two strain. A scanner protocol plus Edda's earned signal baffle permits a clinic-only form without the usual strain. These methods need their stated preparation or equipment. The existing funded room, earned clearances and checkpoint route remain available without them.",
     choices: [
       { id: "promise-volunteer-shift", label: "Offer your own return shift to the arranged volunteer.", detail: "One clinic shift owed, payable later for 1 strain. Nia accepts transport only. No standing spent and no recording consent.", requireFlag: "witness_escort", effects: { flags: ["witness_done", "witness_safe", "witness_shift_owed", "witness_method_face"], journal: [{ id: "witness-shift-promise", kind: "promise", text: "The volunteer accepted your clinic return work for Nia’s transfer. The work is owed by you, not by Nia. Recording and public quotation require separate approval." }] }, next: "act2_witness_arrival" },
-      { id: "harness-chair-transfer", label: "Use the harness and braced chair; let Nia call the stops.", detail: "Add 2 strain. Keep the reusable harness. No roll; preparation and equipment are required.", requireFlag: "witness_braced", requireItem: "chair-harness", effects: { strain: 2, flags: ["witness_done", "witness_safe", "witness_method_nerve"] }, next: "act2_witness_arrival" },
+      { id: "harness-chair-transfer", label: "Use the harness and braced chair; let Nia call the stops.", detail: "Steady hands: no added strain. Otherwise add 2 strain. Keep the reusable harness. No roll; chair preparation and equipment are required.", requireFlag: "witness_braced", requireItem: "chair-harness", effects: (state) => ({ strain: harnessTransferStrain(state), flags: ["witness_done", "witness_safe", "witness_method_nerve"] }), next: "act2_witness_arrival" },
       { id: "baffle-clinic-transfer", label: "Spend Edda's signal baffle on the clinic-only form.", detail: "Scanner preparation required. Consume the earned baffle; no strain and no patient address.", requireFlag: "witness_scanner", requireItem: "signal-baffle", consumeItems: ["signal-baffle"], effects: { flags: ["witness_done", "witness_safe", "witness_method_chrome"] }, next: "act2_witness_arrival" },
       { id: "leave-witness-support", label: "Choose an existing transfer or leave the move open.", next: "act2_witness_door" },
     ],

@@ -278,7 +278,7 @@
     {
       "treatment": "illustration",
       "asset": "/art/repair-bench.jpg",
-      "reason": "The four unclaimed tool types communicate the shop choices without depicting purchase, ownership, care or permission. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
+      "reason": "The existing neutral repair bench displays the four closed kits before purchase. Cash comparisons and a trained handling benefit change no ownership, care reservation or observed outcome in this illustration.",
       "scenes": [
         "act2_workshop"
       ]
@@ -304,7 +304,14 @@
       "asset": "/art/nia-transfer.jpg",
       "reason": "Nia\u2019s pre-transfer agency and established appearance accompany her briefing and work question. No tightened harness, completed move, protected room, recording or new permission is depicted. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Expression staging accompanies the actual actor and adds no outcome or permission.",
       "scenes": [
-        "act2_witness_brief",
+        "act2_witness_brief"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/nia-transfer.jpg",
+      "reason": "The existing neutral Nia transfer painting precedes transport. Trained harness handling changes added strain only; the portrait shows her agency and depicts no completed transfer, recording consent or recovery.",
+      "scenes": [
         "act2_witness_support"
       ]
     },

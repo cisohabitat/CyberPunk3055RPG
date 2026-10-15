@@ -26,10 +26,14 @@ jobs:
       - run: npm ci
       - run: npm test
 
-  build:
-    name: Build
+  browser:
+    name: Browser (${{ matrix.project }})
     needs: test
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        project: [chromium, phone, firefox, webkit]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -47,14 +51,16 @@ jobs:
       - run: npm run build
       - run: npm run production:report
       - run: npm run production:verify
+        if: matrix.project == 'chromium'
       - name: Check native menu permission before campaign regressions
+        if: matrix.project == 'chromium'
         run: npm run test:browser -- tests/menu-autoplay-policy.spec.ts --project chromium --workers=1
-      - run: npm run test:browser -- --workers=4
+      - run: npm run test:browser -- --project=${{ matrix.project }} --workers=4
       - name: Upload browser evidence
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: browser-evidence
+          name: browser-evidence-${{ matrix.project }}
           path: |
             playwright-report/
             test-results/
@@ -64,6 +70,22 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: production-evidence
+          name: production-evidence-${{ matrix.project }}
           path: qa/production/reports/
           retention-days: 30
+
+  build:
+    name: Build
+    if: ${{ always() }}
+    needs: [test, browser]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Require source tests and every browser project
+        env:
+          TEST_RESULT: ${{ needs.test.result }}
+          BROWSER_RESULT: ${{ needs.browser.result }}
+        run: node scripts/require-browser-checks.mjs

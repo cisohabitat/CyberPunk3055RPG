@@ -1,8 +1,9 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 import { CHECK_REQUEST_MS, CI_DEADLINE_MS, CI_POLL_MS, waitForProductionChecks } from "../scripts/ci-wait.mjs";
+import { BROWSER_CHECKS } from "../scripts/ci-gate.mjs";
 
-const passing = ["Test", "Build"].map(name => ({ name, status: "completed", conclusion: "success" }));
+const passing = ["Test", "Build", ...BROWSER_CHECKS].map(name => ({ name, status: "completed", conclusion: "success" }));
 const url = "https://api.github.com/repos/owner/repo/commits/exact-sha/check-runs?per_page=100";
 const onWait = () => {};
 
