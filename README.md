@@ -47,7 +47,7 @@ Settings control text size, contrast, reading pace, motion, sound, separate musi
 
 Import this repository. The framework preset is Next.js. There are no environment variables and no database. `npm run build` is the production build.
 
-Pushes and pull requests run `.github/workflows/ci.yml`. Test runs `npm test`. Four Browser jobs independently compile the game and run the complete existing desktop Chromium, phone Chromium, Firefox and WebKit projects in parallel, including accessibility checks. Chromium also runs the native autoplay smoke and loading probe. Build requires Test and every Browser job to succeed. The exact-commit production gate still waits for Test and Build; a failed, skipped, canceled or unreadable check blocks publication. Pull request previews retain their existing behavior.
+Pushes and pull requests run `.github/workflows/ci.yml`. Test first checks that both this README and `AGENTS.md` received content updates across the change, then runs `npm test`. A missing documentation update fails Test and blocks production. Four Browser jobs independently compile the game and run the complete existing desktop Chromium, phone Chromium, Firefox and WebKit projects in parallel, including accessibility checks. Chromium also runs the native autoplay smoke and loading probe. Build requires Test and every Browser job to succeed. The exact-commit production gate still waits for Test and Build; a failed, skipped, canceled or unreadable check blocks publication. Pull request previews retain their existing behavior.
 
 The active run lives in `localStorage` under `saint-shard-3055-v1`. Its previous valid state is an automatic backup. Three manual slots and JSON export/import keep separate copies. Imported files are validated and exported files carry an integrity checksum. The checksum detects accidental changes; it is not a signature or anti-cheat system. A rolled outcome is saved before its animation and restored after a reload; Continue applies it once. Abandon clears the active run and backup, while manual slots remain.
 
@@ -86,11 +86,13 @@ See [production direction](docs/PRODUCTION.md), [release gates](docs/RELEASE.md)
 
 ## Changing the game
 
-Read [AGENTS.md](AGENTS.md) before you change the story, the rules, the screens, the sound, the save, or the deploy. Update this README and `AGENTS.md` in the same change when any of those facts move. `npm test` checks that both files still quote the four goals and the save key.
+Read [AGENTS.md](AGENTS.md) before making a change. For every repository change, review and update this README and `AGENTS.md` together with an accurate explanation, including changes to tests, tooling and documentation. Avoid timestamp-only or whitespace-only edits. `npm test` also checks that both files still quote the four goals and the save key.
+
+`scripts/docs-freshness.mjs` requires changed committed content in both documents across the complete push range or pull request changes since the merge base. Permission changes and deletions do not count; missing comparison history fails the check. Identical repository trees need no artificial edit, and the first branch snapshot must contain both files. To check a committed change locally, run `node scripts/docs-freshness.mjs BASE HEAD` with its actual base and head commit references. CI fetches full history and supplies the event's revisions automatically. The check enforces document updates; authors still review whether the prose accurately covers the implementation.
 
 The deterministic score generator runs automatically before development, tests, and production builds. The chapel and ward beds and memory cue are generated assets; keep their source in `scripts/generate-audio.mjs`.
 
-The six-phase status and remaining production milestones are tracked in [docs/ROADMAP.md](docs/ROADMAP.md). The current candidate contains 197 scenes and 587 choices; retain all four original finales.
+The six-phase status and remaining production milestones are tracked in [docs/ROADMAP.md](docs/ROADMAP.md). The current candidate contains 197 scenes and 597 choices; retain all four original finales.
 
 This review adds a compact commitments panel, contextual next steps, and warnings on week-closing choices when a memory promise remains open. The memory bench places inspection controls in each fragment row and expands inspected source details on request. Archive preservation alone is not independent verification; exposed-location testimony can corroborate an order without protecting its witness. Motion and reading pace are independent settings. Story shortcuts ignore key repeats and focus inside the character sheet. Manual slots reject invalid date metadata. See [the current review and grade](docs/REVIEW.md).
 

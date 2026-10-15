@@ -18,4 +18,15 @@ describe("docs", () => {
     assert.ok(agents.includes("README.md"));
     assert.match(agents, /update `README\.md` and `AGENTS\.md` in the same change/);
   });
+  it("requires documentation updates in CI and keeps the always-update instructions aligned", () => {
+    const workflow = readFileSync(new URL("../.github/workflows/ci.yml", import.meta.url), "utf8");
+    const cursor = readFileSync(new URL("../.cursor/rules/keep-docs.mdc", import.meta.url), "utf8");
+    const source = workflow.split("\n  test:")[1].split("\n  browser:")[0];
+    assert.match(source, /fetch-depth: 0/);
+    assert.match(source, /name: Require README and agent guide updates\s+run: node scripts\/docs-freshness\.mjs/);
+    assert.ok(source.indexOf("node scripts/docs-freshness.mjs") < source.indexOf("run: npm ci"));
+    assert.doesNotMatch(source, /continue-on-error|if:/);
+    for (const text of [readme, agents, cursor]) assert.match(text, /For every repository change/);
+    assert.doesNotMatch(agents + cursor, /A change that does not move those facts can leave both files/);
+  });
 });

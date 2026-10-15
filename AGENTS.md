@@ -4,9 +4,9 @@ This file is for anyone changing the code. [README.md](README.md) is for players
 
 ## Keep both docs current
 
-When a change alters how the game plays, looks, sounds, saves, or deploys, update `README.md` and `AGENTS.md` in the same change. Quote the four goal sentences from `lib/story/goal.ts` in both files, and keep the save key `saint-shard-3055-v1` in both. `lib/docs.test.ts` fails if either file drops them.
+For every repository change, update `README.md` and `AGENTS.md` in the same change. Always review both for accuracy before committing or deploying, including changes to gameplay, art, audio, saves, configuration, tests, tooling and documentation. Explain the actual change; do not use timestamp-only or whitespace-only edits to satisfy the rule. Quote the four goal sentences from `lib/story/goal.ts` in both files, and keep the save key `saint-shard-3055-v1` in both. `lib/docs.test.ts` fails if either file drops them.
 
-A change that does not move those facts can leave both files as they are. Do not update one and leave the other describing an older game. Cursor loads `.cursor/rules/keep-docs.mdc` on every turn so this rule stays in front of an agent.
+CI's Test job runs `scripts/docs-freshness.mjs` before installing dependencies or running source tests. It compares the full before/after push range, or the pull request head against its merge base, and requires changed committed content in both documents. Missing documents, mode-only changes and unavailable history cannot bypass the check. An identical repository tree needs no artificial edit. The first branch snapshot must contain both files. There is no skip flag. This enforces content updates; the author must still verify their completeness and factual accuracy. Production remains gated on successful exact-commit Test and every existing Browser/Build check. Cursor loads `.cursor/rules/keep-docs.mdc` on every turn so this rule stays in front of an agent.
 
 Do not add accounts, a database, a 3D city, multiplayer, or a new dice system unless the task asks for it. The fiction is original.
 
@@ -104,7 +104,7 @@ Use `npm run story:report -- story-report.json` to inspect the graph and 900 see
 
 The deterministic score generator runs automatically before development, tests, and production builds. The chapel and ward beds and memory cue are generated assets; keep their source in `scripts/generate-audio.mjs`.
 
-The six-phase status and remaining production milestones are tracked in [docs/ROADMAP.md](docs/ROADMAP.md). The current candidate contains 197 scenes and 587 choices; retain all four original finales.
+The six-phase status and remaining production milestones are tracked in [docs/ROADMAP.md](docs/ROADMAP.md). The current candidate contains 197 scenes and 597 choices; retain all four original finales.
 
 This review adds a compact commitments panel, contextual next steps, and warnings on week-closing choices when a memory promise remains open. The memory bench places inspection controls in each fragment row and expands inspected source details on request. Archive preservation alone is not independent verification; exposed-location testimony can corroborate an order without protecting its witness. Motion and reading pace are independent settings. Story shortcuts ignore key repeats and focus inside the character sheet. Manual slots reject invalid date metadata. See [the current review and grade](docs/REVIEW.md).
 
