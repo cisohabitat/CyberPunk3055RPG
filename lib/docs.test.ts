@@ -25,7 +25,10 @@ describe("docs", () => {
     assert.match(source, /fetch-depth: 0/);
     assert.match(source, /name: Require README and agent guide updates\s+run: node scripts\/docs-freshness\.mjs/);
     assert.ok(source.indexOf("node scripts/docs-freshness.mjs") < source.indexOf("run: npm ci"));
-    assert.doesNotMatch(source, /continue-on-error|if:/);
+    const requiredSteps = source.split("      - name: Upload gameplay balance evidence")[0];
+    assert.doesNotMatch(requiredSteps, /continue-on-error|if:/);
+    assert.match(requiredSteps, /name: Audit gameplay balance\s+run: npm run balance:audit/);
+    assert.match(source, /name: Upload gameplay balance evidence\s+if: always\(\)/);
     for (const text of [readme, agents, cursor]) assert.match(text, /For every repository change/);
     assert.doesNotMatch(agents + cursor, /A change that does not move those facts can leave both files/);
   });

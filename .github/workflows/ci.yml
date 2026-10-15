@@ -29,6 +29,16 @@ jobs:
         run: node scripts/docs-freshness.mjs
       - run: npm ci
       - run: npm test
+      - name: Audit gameplay balance
+        run: npm run balance:audit
+      - name: Upload gameplay balance evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gameplay-balance
+          path: qa/production/reports/balance/
+          if-no-files-found: error
+          retention-days: 30
 
   browser:
     name: Browser (${{ matrix.project }})

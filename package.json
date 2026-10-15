@@ -8,6 +8,7 @@
     "test": "tsx --test lib/*.test.ts",
     "test:browser": "playwright test",
     "story:report": "tsx scripts/story-report.ts",
+    "balance:audit": "node --import tsx scripts/balance-audit.ts",
     "predev": "node scripts/generate-audio.mjs",
     "prebuild": "node scripts/generate-audio.mjs",
     "pretest": "node scripts/generate-audio.mjs",
