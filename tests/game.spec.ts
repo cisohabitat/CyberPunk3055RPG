@@ -38,6 +38,7 @@ for (const [sceneId, choice, price] of [["act2_middle", "deal", "eighty"], ["act
   await page.reload(); await page.getByTestId("continue-run").click();
   await expect(page.getByTestId("scene-text")).toContainText(`${price}-creds offer for a week of silence`);
   for (const id of ["to-the-wall", "to-ward-nine", "face-sera", "leave-wall"]) await page.getByTestId(`choice-${id}`).click();
+  await page.getByTestId("finale-history").locator("summary").click();
   await expect(page.getByTestId("night-retell").nth(1)).toContainText(`${price}-creds offer for a week of silence`);
   const final = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
   expect(final.sceneId).toBe("ending_quiet"); expect(final.creds).toBe(run.creds + (price === "forty" ? 40 : 80));

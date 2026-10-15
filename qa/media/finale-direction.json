@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "precedingCommit": "af76c1b2459a9a25b4f0dd1b4ba698b92c940b19",
+  "scope": "Four original finales, narrative-first direction and earned afterword; exact canonical scene text, voice bindings, actors, media and gameplay remain unchanged.",
+  "scenes": [
+    {
+      "sceneId": "ending_names",
+      "route": "finale-names-paused",
+      "label": "At the wall · Sera",
+      "kind": "conversation",
+      "illustration": "/art/finale-names.jpg",
+      "textSha256": "84ff7cba7eded1b8ad3f1312ba594ad8a69272fbfe07d2120760941f11c37791",
+      "dialogue": [
+        {
+          "key": "8610f260417555f9",
+          "id": "voice-campaign-sera-4265e1807135",
+          "speaker": "Sera",
+          "text": "One at a time,"
+        },
+        {
+          "key": "9c70837140d53b37",
+          "id": "voice-campaign-sera-names-performance",
+          "speaker": "Sera",
+          "text": "The wall has room for a voice. It has never had room for an excuse."
+        }
+      ]
+    },
+    {
+      "sceneId": "ending_quiet",
+      "route": "finale-quiet-withdrawn",
+      "label": "On the stair · Sera",
+      "kind": "conversation",
+      "illustration": "/art/finale-quiet.jpg",
+      "textSha256": "2f1e8eda0dd745263f4c3b2f681425e6ff22bacbf9b7f27bf06f8de5a919333e",
+      "dialogue": [
+        {
+          "key": "6b564c2cb7df302e",
+          "id": "voice-campaign-sera-5e173a8c53cb",
+          "speaker": "Sera",
+          "text": "I won't call you back,"
+        },
+        {
+          "key": "cfebf895335e62ec",
+          "id": "voice-sera-quiet",
+          "speaker": "Sera",
+          "text": "I have the pencil. The rain can wait with me."
+        }
+      ]
+    },
+    {
+      "sceneId": "ending_witness",
+      "route": "finale-witness-corrected",
+      "label": "A late account · Sera",
+      "kind": "conversation",
+      "illustration": "/art/finale-witness.jpg",
+      "textSha256": "7d6f2e26027663b2db93b91ae04f3978e241490ce79d89a8306b481d0d5bd7e5",
+      "dialogue": [
+        {
+          "key": "c1a028f2116900ed",
+          "id": "voice-campaign-sera-aa1069e7abb6",
+          "speaker": "Sera",
+          "text": "You came late,"
+        },
+        {
+          "key": "b813a8dff94f2cac",
+          "id": "voice-sera-witness",
+          "speaker": "Sera",
+          "text": "Leave that beside what you know. Don't make it a clean story for me."
+        }
+      ]
+    },
+    {
+      "sceneId": "ending_listed",
+      "route": "finale-listed-archive",
+      "label": "The memorial page · Ives",
+      "kind": "conversation",
+      "illustration": "/art/finale-listed.jpg",
+      "textSha256": "9973f7b1d2b4d0582a1800eb0ae54d4ab74056c74de718216c3ceb1e2e561a64",
+      "dialogue": [
+        {
+          "key": "48ea01a37258d32d",
+          "id": "voice-campaign-ives-27bd077273a1",
+          "speaker": "Ives",
+          "text": "The folio is closed,"
+        },
+        {
+          "key": "b15dafb7ca76e28c",
+          "id": "voice-campaign-ives-listed-performance",
+          "speaker": "Ives",
+          "text": "Your name is still on file. That is what the tower will keep."
+        }
+      ]
+    }
+  ],
+  "routeContract": {
+    "count": 147,
+    "sha256": "695b48de46a529079e785408fa205e792ed73fd7cd3b9558dcf43058f511e98d",
+    "method": "All authored full campaigns, sorted by filename; exact final state, canonical final prose and visible dialogue rows. Raw state-bearing baseline stays outside Git."
+  },
+  "artDecision": "Reuse all four complete existing 3:2 paintings. Desktop pairs art and prose; phones lead with prose. No additional closure, permission, source transfer or care is depicted. Each scene has an explicit updated decision in scene-art.json.",
+  "voiceDecision": "All exact displayed quotations, actual actors, binding order and deliveries remain byte-identical. Afterword and history are unvoiced. Saved manual, mute, zero voice volume and paragraph preferences remain authoritative.",
+  "audioDecision": "Retain Ward score for names/witness/listed, quiet score for quiet and Ward ambience. Closing focus multiplies saved music by 65% and ambience by 55%, alongside existing speech ducking. Voice/effects levels stay independent; departure restores normal scene direction. No new media.",
+  "accessibilityDecision": "Compact speaker and visible goal precede the complete scene. Personal afterword follows, then separate native disclosures for factual aftermath and chapter/resource history. Canonical prose appears once. No forced wait, automatic choice or speech-driven focus/scroll. Text-only and missing-art play stay complete.",
+  "unchangedMediaInventory": "qa/media/character-profiles.json#/preservedMedia"
+}

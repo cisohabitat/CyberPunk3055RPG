@@ -3,7 +3,8 @@
 import { ArchiveCatalog } from "./ArchiveCatalog";
 import { CATALOG_ACTIONS } from "@/lib/archive-catalog";
 
-import { campaignCoda } from "@/lib/campaign-consequences";
+import { FinaleReflection } from "./FinaleReflection";
+import { finaleScene } from "@/lib/finale-direction";
 
 import { InvestigationNotebook } from "./InvestigationNotebook";
 import { canConsultSources } from "@/lib/investigation-notebook";
@@ -37,12 +38,10 @@ import { FieldKitBrief } from "./FieldKitBrief";
 import { TestimonyBrief } from "./TestimonyBrief";
 import { ArchiveBrief } from "./ArchiveBrief";
 import { TransferBrief } from "./TransferBrief";
-import { relationshipCoda } from "@/lib/relationships";
-import { aftermath, memoryDisposition } from "@/lib/evidence";
+import { memoryDisposition } from "@/lib/evidence";
 import { endingCoda } from "@/lib/story";
 import { speakerRole } from "@/lib/story/cast";
 import { actName, currentGoal } from "@/lib/story/goal";
-import { nightRetell } from "@/lib/story/retell";
 import type { GameState } from "@/lib/types";
 
 export function PlayScreen({
@@ -76,7 +75,8 @@ export function PlayScreen({
 }) {
   const scene = getScene(state.sceneId);
   const illustration = sceneIllustration(scene.id, state.flags);
-  const direction = pivotalScene(scene.id);
+  const finale = finaleScene(scene.id);
+  const direction = pivotalScene(scene.id) ?? finale;
   const choices = presentChoices(state, scene);
   const decisionTitle = scene.id === "act2_middle" ? "Street or silence" : scene.id === "act3_arrival" ? "At the wall" : null;
   const decisionIds = scene.id === "act2_middle" ? ["stand", "deal"] : ["read-names", "confirm-leak", "read-wall", "let-ives", "say-anyway", "leave-wall"];
@@ -142,11 +142,11 @@ export function PlayScreen({
   }, [preferences.motion]);
 
   useEffect(() => {
-    setBed(sound, mood, district, undefined, direction ? "intimate" : "normal");
+    setBed(sound, mood, district, undefined, finale ? "closing" : direction ? "intimate" : "normal");
     const previous = priorSound.current;
     if (sound && (!previous?.on || previous.location !== scene.location || Boolean(scene.ending) !== previous.ending)) playCue(locationCue(scene.location, Boolean(scene.ending)));
     priorSound.current = { location: scene.location, on: preferences.sound, ending: Boolean(scene.ending) };
-  }, [sound, preferences.sound, mood, district, scene.id, scene.location, scene.ending, direction]);
+  }, [sound, preferences.sound, mood, district, scene.id, scene.location, scene.ending, direction, finale]);
 
   useEffect(() => () => { setBed(false); }, []);
 
@@ -289,7 +289,7 @@ export function PlayScreen({
       <div className="layout">
         <main>
           <article
-            className={`${flash ? "scene flash" : "scene"}${scene.memory || scene.id === "memo" ? " memory-scene" : ""}${direction ? " pivotal-scene" : ""}`}
+            className={`${flash ? "scene flash" : "scene"}${scene.memory || scene.id === "memo" ? " memory-scene" : ""}${direction ? " pivotal-scene" : ""}${finale ? " finale" : ""}`}
             id="scene-top"
             tabIndex={-1}
             data-testid="scene"
@@ -308,20 +308,20 @@ export function PlayScreen({
                 <p className="sr-only" aria-live="polite">
                   {scene.location}. {actName(state)}. {currentGoal(state)}
                 </p>
-                {scene.ending && state.chapters.length > 0 && (
+                {scene.ending && !scene.finale && state.chapters.length > 0 && (
                   <ol className="chapter-stack" data-testid="chapter-stack">
                     {state.chapters.map((title) => (
                       <li key={title}>{title}</li>
                     ))}
                   </ol>
                 )}
-                {scene.ending && (
+                {scene.ending && !scene.finale && (
                   <>
                     <p className="ending-kicker">{scene.finale ? "Ending" : "Chapter"}</p>
                     <h1 data-testid="ending-title">{scene.endingTitle}</h1>
                   </>
                 )}
-                {scene.speaker && (
+                {scene.speaker && !scene.finale && (
                   <p className="speaker">
                     {dialogueQueue.some(line => line.speaker !== scene.speaker) ? "With " : ""}
                     {scene.speaker}
@@ -333,7 +333,7 @@ export function PlayScreen({
                     {delta.join(" · ")}
                   </p>
                 )}
-                {scene.ending && (
+                {scene.ending && !scene.finale && (
                   <ul className="recap" data-testid="ending-recap">
                     <li>{ORIGINS[state.origin].name}</li>
                     <li>{state.creds} cr</li>
@@ -341,26 +341,23 @@ export function PlayScreen({
                       Strain {state.strain}/{STRAIN_MAX}
                     </li>
                     <li>{endingCoda(scene.id)}</li>
-                    {scene.finale &&
-                      nightRetell(state).map((line) => (
-                        <li key={line} data-testid="night-retell">
-                          {line}
-                        </li>
-                      ))}
                   </ul>
                 )}
 
               </div>
             </div>
+            {scene.finale && <h1 className="finale-title" data-testid="ending-title">{scene.endingTitle}</h1>}
             {restoreNotice && <p className="restore-notice" role="status" data-testid="restore-notice">{restoreNotice}</p>}
-            {direction ? <PivotalScene direction={direction} art={preferences.artwork !== "none" ? illustration : undefined}>{narrative}</PivotalScene>
+            {direction ? <PivotalScene direction={direction} finale={Boolean(finale)} art={preferences.artwork !== "none" ? illustration : undefined}>{narrative}</PivotalScene>
               : preferences.artwork !== "none" && illustration && <SceneIllustration art={illustration} />}
-            <ObjectiveBrief state={state} />
+            {!scene.finale && <ObjectiveBrief state={state} />}
             {canConsultSources(state) && <div className="investigation-tools"><button className="ghost" type="button" data-testid="consult-sources" aria-haspopup="dialog" disabled={Boolean(activeChoice) || modalOpen} onClick={() => setNotebookOpen(true)}>Consult acquired sources</button></div>}
-            <TransferBrief state={state} />
-            <ArchiveBrief state={state} />
-            {!scene.memory && <TestimonyBrief state={state} />}
-            <FieldKitBrief state={state} />
+            {!scene.finale && <>
+              <TransferBrief state={state} />
+              <ArchiveBrief state={state} />
+              {!scene.memory && <TestimonyBrief state={state} />}
+              <FieldKitBrief state={state} />
+            </>}
             {scene.id === "memory_table" && <MemoryPlate key={scene.id} state={state} choices={choices} onInspect={pick} artwork={preferences.artwork !== "none"} numberShortcuts={preferences.numberShortcuts} />}
             {!direction && narrative}
             {visibleCount < paragraphs.length && (
@@ -378,9 +375,7 @@ export function PlayScreen({
             {scene.id === "act2_archive_compare" && <ArchiveCatalog state={state} choices={choices} onChoose={pick} numberShortcuts={preferences.numberShortcuts} />}
             {scene.id === "memory_sequence" && <MemoryTimeline state={state} choices={choices} onPlace={pick} artwork={preferences.artwork !== "none"} reducedMotion={reduceMotion} numberShortcuts={preferences.numberShortcuts} />}
             {["act2_route_map", "act2_route_exit", "act2_route_review", "act2_route_crossing"].includes(scene.id) && <RouteBoard state={state} />}
-            {scene.finale && campaignCoda(state) && <p data-testid="campaign-coda">{campaignCoda(state)}</p>}
-            {scene.finale && relationshipCoda(state) && <p className="relationship-coda" data-testid="relationship-coda">{relationshipCoda(state)}</p>}
-            {scene.finale && <section className="aftermath" aria-label="What your choices changed"><h2>What remains</h2><details data-testid="aftermath-details"><summary>Review the factual aftermath</summary>{aftermath(state).map((row) => <section key={row.title}><h3>{row.title}</h3><p>{row.text}</p></section>)}</details></section>}
+            {scene.finale && <FinaleReflection state={state} />}
             {fault && <p className="form-error">{fault}</p>}
             {choices.length > 0 && (
               <div className={scene.id === "districts" ? "choices cards" : "choices"} id="choices" tabIndex={-1} role="region" aria-labelledby="choices-title">

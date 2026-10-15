@@ -1,0 +1,78 @@
+{
+  "method": "Paired source-familiar authored finale checkpoints on synthetic Chromium viewports, same saves and preferences. Not human/blind evidence; full campaign checks are separate. Raw saves/screenshots stay outside Git.",
+  "baselineCommit": "af76c1b2459a9a25b4f0dd1b4ba698b92c940b19",
+  "presentation": [
+    {
+      "scene": "ending_listed",
+      "width": 390,
+      "beforeProseTop": 1278.72,
+      "afterProseTop": 421.67,
+      "overflow": false,
+      "goalBottom": 255.81
+    },
+    {
+      "scene": "ending_listed",
+      "width": 1440,
+      "beforeProseTop": 1249.45,
+      "afterProseTop": 401.38,
+      "overflow": false,
+      "goalBottom": 153.14
+    },
+    {
+      "scene": "ending_names",
+      "width": 390,
+      "beforeProseTop": 1240.16,
+      "afterProseTop": 387.61,
+      "overflow": false,
+      "goalBottom": 221.75
+    },
+    {
+      "scene": "ending_names",
+      "width": 1440,
+      "beforeProseTop": 1271.2,
+      "afterProseTop": 401.38,
+      "overflow": false,
+      "goalBottom": 153.14
+    },
+    {
+      "scene": "ending_quiet",
+      "width": 390,
+      "beforeProseTop": 1308.64,
+      "afterProseTop": 387.61,
+      "overflow": false,
+      "goalBottom": 221.75
+    },
+    {
+      "scene": "ending_quiet",
+      "width": 1440,
+      "beforeProseTop": 1271.2,
+      "afterProseTop": 401.38,
+      "overflow": false,
+      "goalBottom": 153.14
+    },
+    {
+      "scene": "ending_witness",
+      "width": 390,
+      "beforeProseTop": 1294.08,
+      "afterProseTop": 421.67,
+      "overflow": false,
+      "goalBottom": 255.81
+    },
+    {
+      "scene": "ending_witness",
+      "width": 1440,
+      "beforeProseTop": 1271.2,
+      "afterProseTop": 401.38,
+      "overflow": false,
+      "goalBottom": 153.14
+    }
+  ],
+  "routes": {
+    "count": 147,
+    "exactFinalStateCanonicalProseAndDialogueUnchanged": true
+  },
+  "grade": {
+    "internal": 8.2,
+    "reason": "A bounded finale presentation phase does not establish a whole-game regrade or close production acceptance gates."
+  }
+}

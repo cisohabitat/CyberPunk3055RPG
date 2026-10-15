@@ -1111,3 +1111,17 @@ html[data-motion="reduce"] .fragment-placed { animation: none; }
 }
 
 .archive-catalog h2, .archive-catalog h3, .catalog-feedback, #archive-catalog-toggle { scroll-margin-top: calc(var(--header-h, 0px) + 1rem); scroll-margin-bottom: 1rem; }
+
+/* Final scenes lead with their words; the campaign ledger follows the farewell. */
+.finale-stage { margin-top: .75rem; }
+.finale-reflection { margin-top: 1.5rem; }
+.finale-carry { border-left: 2px solid var(--amber); padding-left: 1rem; }
+.finale-carry h2 { font: 600 1.2rem/1.5 var(--font-display), sans-serif; color: var(--amber); margin: 0 0 .75rem; }
+.finale-carry p { max-width: 65ch; }
+.finale-history { margin-top: 1rem; }
+.finale-history .chapter-stack { margin-top: 1rem; }
+.finale-retell { padding-left: 1.5rem; }
+.finale-retell li { margin: .75rem 0; }
+.finale-reflection summary { scroll-margin-top: calc(var(--header-h, 0px) + 1rem); }
+.scene .finale-title { margin: 1rem 0 .5rem; }
+.finale .restore-notice { margin: .5rem 0; font-size: .85rem; }

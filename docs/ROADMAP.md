@@ -252,3 +252,9 @@ Build-balance delivery (completed; see [the build-balance cycle](BUILD_BALANCE.m
 Following build balance, full-cast profiles and pivotal Mara/Nia scene direction, the [archive catalog cycle](ARCHIVE_CATALOG_CYCLE.md) makes the comparison desk an optional investigation with saved inspections, logged locator requests and staffed extraction. Correct lookup is separate from received evidence, digital authentication and source permission. Existing methods and their held dice remain. Four new complete alternatives cover cash, employee billing, the original key reader and scarce-resource recovery; scope is 197 scenes / 597 choices / 147 complete fixtures. Matching neutral art and all exact voice deliveries are retained.
 
 Next compare the played catalog alternatives for recognition, cost and pacing before choosing another bounded encounter. Finale direction, meaningful later responses and more environmental sound remain subsequent phases. Keep the internal 8.2 assessment until a broader craft regrade; the 9.35 weighted target and 9.0 category floor remain long-term goals.
+
+### Finale direction — October 2026
+
+The [finale direction phase](FINALE_DIRECTION.md) brings all four canonical closing scenes and matching paintings ahead of their history. Earned personal/campaign afterwords follow the scene; separate native disclosures retain factual aftermath and the three-chapter/resource recap. A closing music/ambience focus supports the existing exact-word performances without changing their deliveries or user settings. Gameplay and all 147 authored route finals remain unchanged.
+
+Next compare these four finales through prepared and scarce campaigns, then reassess the complete game before choosing another encounter or environmental sound phase. Keep the provisional 8.2 grade until that broader craft review; the 9.35 weighted target and 9.0 category floor remain long-term goals.
