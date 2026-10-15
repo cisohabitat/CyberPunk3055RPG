@@ -1,0 +1,50 @@
+# Matching mission objectives and checkpoint recovery
+
+The whole-campaign audit flagged an 11.2–13.0pp Spire specialist check-success spread with Chrome ahead. This follow-up compares the same witness-safety and archive-corroboration objectives, keeps key authentication separate, and improves one paid recovery gap. The provisional overall grade remains 8.2.
+
+## Controlled comparison
+
+Run `npm run balance:missions`. The [readable results](../qa/balance/matched-missions.md) and [aggregate baseline](../qa/balance/matched-missions.json) cover **384 scenarios**: three origins × four two-point specializations × four complication settings × sale/no-sale × requested-kit/no-kit × two missions. The no-complication setting is an engine-supported control; the current creation screen requires an explicit complication. Each scenario ends with a completed or explicitly unresolved mission at the canal, rather than claiming a complete campaign.
+
+Setup legally plays the same prologue, ninety-creds negotiated advance, choir door, copied hour, source inspection/reconstruction and Kerr departure, using explicitly directed tens for setup checks. The source packet is sealed for the selected mission. Sale scenarios deliver the original and release the copy; no-sale scenarios destroy it and receive the actually earned clinic marker. Training is earned and a requested kit is purchased only when affordable. All twenty-six unaffordable requests remain labeled as such; no gear or money is injected. These are controlled mission comparisons conditional on this setup, not natural-dice campaign eligibility or opening-difficulty estimates.
+
+After setup, every face of every actual mission check is enumerated with probability 1/10. Later branches are expanded only when their check is reached; deterministic choices receive no invented roll. The current report contains **13,821 terminal branches** with varying probabilities. Every scenario has total probability one. Rates and costs use probability weights, never unweighted branch counts. This supplies exact engine odds for these policies without simulation sampling noise.
+
+The witness policy prepares the trained method and attempts it when available. Equipped Nerve uses the braced harness. On unavailable preparation it funds an ordinary private room if affordable, otherwise tries the existing service hatch. At the checkpoint it uses an owned clinic marker, then funded private care if affordable, then the existing emergency desk argument. Safe arrival defers recording. Any exposed transfer records the existing breach without pretending that relocation erased it.
+
+The archive policy selects the trained method. Chrome isolates the key locally and Face requests the invoice without irrelevant preparation; Ghost watches the interval and Nerve braces the hatch. Failed retrieval buys the twenty-five-creds ledger if affordable, then uses Spire's employee-number recovery if available, otherwise closes the search unresolved. Original custody with Sera withholds Edda's name from circulation while retaining the actual extraction trace. No source supplies witness permission.
+
+`primaryObjective` excludes every fallback, including an ordinary paid room after failed preparation. `objective` includes recovery. Money includes the actual kit price; mission-only expenditure is also retained. Strain is the actual bounded delta, with normal critical relief; the JSON separately records cap incidence, clinic standing, exposure, employer/reader traces, signed extractions and authenticated keys. No scenario in this controlled sample reached the Strain cap. These policies are source-aware and omit origin favors, different practice choices and other lawful strategies; they do not establish universal dominance.
+
+## Finding and change
+
+Before this change, an unequipped trained Spire Nerve runner following the witness policy protected the room **96.4%** of the time; Dustline Nerve achieved **95.5%**, across their four complication settings. Chair preparation and carrying each succeed 90%, making primary-method safety **81%**. Preparation failure could buy the earlier private room, but a failed carry reached a checkpoint whose choices offered a marker, another roll, or registration. Even runners with ample money could not fund the same private care there.
+
+The checkpoint now offers **Fund an unregistered clinic room and transfer** for **90 creds**, matching the earlier room/transport price. It is available to every build before a tenancy entry or completed transfer. It requires actual money, spends it once, retains the failed roll and its Strain, and moves Nia to the existing arrival/review scene. It gives no recording approval, public quotation permission or historical evidence. Completed, already funded or exposed states cannot use it; an earlier breach still requires the existing separate relocation route. Clinic-marker and zero-cash argument/registration choices remain.
+
+The eight affected controlled scenarios now reach **100%** safety under their funded-recovery policy. Their **81%** primary-method success is unchanged. Expected expenditure rises from **9 to 17.10 creds**, since 19% of attempts use a ninety-creds fallback. This certainty has a real cost; it is not an odds buff or a refund. [The eight before-change rows](../qa/balance/checkpoint-recovery-before.json) preserve the preceding probabilities and costs.
+
+## Spire comparison after recovery change
+
+These rows use Spire, no complication, sale income and no kit. Percentages describe the specified objective, not a campaign win.
+
+| Specialization | Witness via primary method | Witness after recovery | Expected witness cash | Witness Strain delta | Archive via primary method | Archive after recovery |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Chrome | 100% | 100% | 0 | 1.00 | 100% | 100% |
+| Nerve | 81% | 100% | 17.10 | 1.10 | 88% | 100% |
+| Face | 90% | 100% | 9 | 0.10 | 100% | 100% |
+| Ghost | 80% | 100% | 18 | 1.10 | 74% | 100% |
+
+Chrome retains reliable local key authentication at one Strain. Face supplies guaranteed archive corroboration at zero Strain, but its signed request is logged and identifies Edda's shift; it does not authenticate the key. Equipped Ghost supplies guaranteed corroboration with no mission Strain or signed extraction in this setup, at a real 140-creds kit price. Equipped Nerve supplies a guaranteed witness transfer at zero mission Strain for 120 creds, while Chrome still adds one Strain. Face's witness route spends clinic standing; zero Strain is not a free social outcome.
+
+These tradeoffs do not support simply weakening Chrome based on its mixed whole-campaign success rate. Archive Probe purchases are unnecessary for this comparison's deterministic local-isolation method; matching gear is not automatically a useful purchase. Chrome still has a strong archive role, and Nerve's signed physical extraction remains a higher-risk source route. Further decisions should examine whole-campaign skill allocation and budgets rather than force identical rolls or interchangeable story outcomes.
+
+## Checks and compatibility
+
+The matched report is required in CI's Test job beside the unchanged whole-campaign audit. It writes `matched-current.json` / `.md` under the same thirty-day `gameplay-balance` artifact. Its exact deterministic report is compared with the committed baseline; an unexplained change fails CI. `--record-baseline --out=/tmp/matched-candidate.json` creates a separate review candidate, never an automatic replacement. The seven existing whole-campaign audit tests remain, and new tests verify weighted branch mathematics, affordability, source distinctions, all 384 rows, actual held failures, exact 89/90-creds boundaries, every origin/specialization, stale exposed/completed states and once-only spending.
+
+One new complete authored campaign, `funded-checkpoint-room`, preserves the failed carry through a saved checkpoint, pays for privacy, obtains separate recording/quotation approval later and reaches the original names finale. It ends at 285 creds / Strain 4; the earlier failed approach remains. Browser checks cover keyboard purchase, held-roll continuation, reload without a second charge, independent consent, visible goals, 320/390/1440px layouts and accessibility. The larger campaign audit still completes all 19,200 runs and passes against its original baseline without resetting it; the current sample resolves 116,117 checks and covers 190 scenes / 551 choices.
+
+The existing neutral checkpoint painting and Kerr portrait remain suitable before funding, and the existing Nia arrival painting still follows an actually safe transfer. The explicit checkpoint art decision records this review. Canonical prose, every quoted word, actor, voice binding and art/audio file are unchanged; no new spoken dialogue or scene needs new media. Scope is now **197 scenes / 598 choices / 148 complete authored replay fixtures**, with **302 voice bindings / 290 active deliveries**. Preserve save version 2, `saint-shard-3055-v1`, 1d10/caps, saved dice, consent/evidence boundaries and all four finales.
+
+Local validation passed **600 source tests**, TypeScript, the production build, the broad and matched balance commands, and the production inventory with no budget violations. **27 focused browser checks** passed across Chromium, phone Chromium and WebKit, covering both the new recovery and existing equipment behavior. Two full keyboard-only illustrated campaigns at 390px and 1440px reached the names finale through **154 scene visits and 60 reload checkpoints**; the phone run completed **37 selected voice playbacks naturally** and checked two pagehide/resume interruptions. Both had zero page errors or failed media, preserved the failed roll and ended at the expected 285 creds / Strain 4. An isolated before-change comparison omitting only the new choice reproduced all eight retained earlier rows exactly. These are internal source-aware checks; exact-commit remote CI and production publication follow the push.

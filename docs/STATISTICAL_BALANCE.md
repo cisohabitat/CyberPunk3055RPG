@@ -1,6 +1,6 @@
 # Repeatable gameplay balance audit
 
-The game now has a required natural-dice balance regression audit in addition to the 900 seeded completion checks, 147 authored full-campaign fixtures and [36 directed build comparisons](BUILD_BALANCE.md). It establishes an initial measured baseline; passing it means the sampled behavior has not regressed beyond the stated limits. It does not certify that the baseline is ideally balanced or raise the provisional 8.2 grade.
+The game now has a required natural-dice balance regression audit in addition to the 900 seeded completion checks, 148 authored full-campaign fixtures and [36 directed build comparisons](BUILD_BALANCE.md). It establishes an initial measured baseline; passing it means the sampled behavior has not regressed beyond the stated limits. It does not certify that the baseline is ideally balanced or raise the provisional 8.2 grade.
 
 ## Run and inspect
 
@@ -15,6 +15,7 @@ CI runs the command unconditionally in **Test**, after source tests and before t
 ## Sampling method
 
 - Three origins × four two-point specializations × four complication settings (none, debt, optic, on-file) × two policies × 200 seeds = **19,200 campaigns / 96 cells**.
+- No complication is an engine-supported control; the current creation screen requires an explicit complication. Those control rows do not represent that screen's new-player build selection.
 - Each campaign starts through real character creation at the prologue with its actual initial money and Strain. Every action is an enabled canonical engine choice. No money, gear, training, permission or evidence is injected; no state is loaded from a directed successful fixture.
 - **Uniform** selects among enabled choices with equal probability. **Specialist** gives a matching-stat check or matching training choice weight four, and every other enabled choice weight one. It sees the currently available check stat, not future outcome/effect information. It does not optimize purchases, preparation, source interpretation or recovery, and may leave optional work unfinished.
 - Selection and dice use separate seeded Mulberry32 streams. Origins, complications and policies have different stream salts. Within a stratum, all four specializations share streams to aid comparison. Branches can diverge, so the nth roll need not occur at the same encounter. Related campaigns and repeated checks are not independent participant samples.
@@ -67,4 +68,4 @@ This mode checks campaign/evidence integrity but makes no historical regression 
 
 The automated tests exercise deterministic/legal sampling, every build/policy cell, random-stream distribution, malformed evidence, seeded progression failures, localized success loss, per-encounter odds loss, cash/Strain pressure, pacing and lost coverage. They deliberately corrupt aggregate samples to show that the gate fails.
 
-No campaign rule, story line, actor, quotation, art binding, audio delivery or save format changes in this cycle. Existing artwork and voices continue to match their scenes. Preserve the four finales, 1d10, stat/Strain caps, save version 2 and `saint-shard-3055-v1`.
+No campaign rule, story line, actor, quotation, art binding, audio delivery or save format changed in the initial audit cycle. The subsequent [matched-objective comparison](MATCHED_MISSION_BALANCE.md) adds exact weighted mission checks and a ninety-creds checkpoint recovery choice. The original broad baseline remains; the new 19,200-run sample still passes its limits with 190 scenes / 551 choices sampled. Existing artwork and voices continue to match their scenes. Preserve the four finales, 1d10, stat/Strain caps, save version 2 and `saint-shard-3055-v1`.

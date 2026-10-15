@@ -1,0 +1,41 @@
+import { expect, test } from "@playwright/test";
+import AxeBuilder from "@axe-core/playwright";
+import { commitChoice, getScene, stageCheck } from "../lib/engine";
+import { missionSetup } from "../lib/matched-balance";
+import type { GameState } from "../lib/types";
+
+const advance = (state: GameState, id: string, roll?: number) => commitChoice(state, getScene(state.sceneId).choices.find(c => c.id === id)!, roll === undefined ? undefined : { roll }).state;
+for (const [width, artwork] of [[390, "full"], [1440, "full"], [320, "none"]] as const) test(`funded checkpoint recovery preserves held failure and separate consent at ${width}px`, async ({ page }) => {
+  await page.setViewportSize({ width, height: 900 });
+  let state = missionSetup({ origin: "spire", stat: "nerve", complication: null, income: "sale", equipment: false, mission: "witness" }).state;
+  state = advance(state, "agree-terms"); state = advance(state, "steady-chair", 8);
+  state = stageCheck(state, "nerve-transfer", 1);
+  const before = state, errors: string[] = [];
+  page.on("pageerror", error => errors.push(error.message));
+  await page.addInitScript(({ state, artwork }) => {
+    if (sessionStorage.getItem("checkpoint-funded-test")) return;
+    localStorage.setItem("saint-shard-3055-v1", JSON.stringify(state));
+    localStorage.setItem("saint-shard-preferences", JSON.stringify({ artwork, reading: "all", sound: false, textStep: 2, contrast: "high", motion: "reduce" }));
+    sessionStorage.setItem("checkpoint-funded-test", "true");
+  }, { state, artwork });
+  const saved = () => page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!) as GameState);
+  await page.goto("/"); await page.getByTestId("continue-run").click();
+  await expect(page.getByTestId("continue-check")).toBeVisible();
+  expect((await saved()).pendingCheck?.roll).toBe(1);
+  await page.getByTestId("continue-check").click();
+  const failed = await saved(); expect(failed.sceneId).toBe("act2_witness_checkpoint");
+  expect(failed.creds).toBe(before.creds); expect(failed.rolls[0].success).toBe(false);
+  await expect(page.getByTestId("goal")).toBeInViewport();
+  const funding = page.getByTestId("choice-fund-checkpoint-room");
+  await expect(funding).toContainText("90");
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations).toEqual([]);
+  await funding.focus(); await page.keyboard.press("Enter");
+  const funded = await saved(); expect(funded.creds).toBe(failed.creds - 90); expect(funded.flags.witness_safe).toBe(true);
+  expect(funded.flags.witness_consent).toBeUndefined(); expect(funded.flags.nia_public_consent).toBeUndefined();
+  expect(funded.flags.witness_checkpoint).toBe(true); expect(funded.rolls).toEqual(failed.rolls);
+  await page.reload(); await page.getByTestId("continue-run").click(); expect(await saved()).toEqual(funded);
+  await page.getByTestId("choice-defer-account").click();
+  expect((await saved()).creds).toBe(funded.creds); expect((await saved()).flags.order_verified).toBeUndefined();
+  expect(errors).toEqual([]);
+});

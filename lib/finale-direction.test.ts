@@ -30,8 +30,14 @@ it("preserves every authored route's exact final state, canonical prose and visi
     const state = replayCampaign(JSON.parse(readFileSync(`qa/routes/${file}`, "utf8"))).state, scene = getScene(state.sceneId);
     return { file, state, text: sceneText(scene, state), voice: visibleCampaignDialogue(scene.id, scene.speaker, sceneText(scene, state)) };
   });
-  assert.equal(rows.length, phase.routeContract.count);
-  assert.equal(hash(JSON.stringify(rows)), phase.routeContract.sha256);
+  // Keep the original 147-route contract byte-for-byte. The later funded
+  // checkpoint campaign has its own replay expectations and balance checks.
+  const additions = ["funded-checkpoint-room.json"];
+  assert.equal(rows.length, phase.routeContract.count + additions.length);
+  for (const file of additions) assert.ok(rows.some(row => row.file === file));
+  const preserved = rows.filter(row => !additions.includes(row.file));
+  assert.equal(preserved.length, phase.routeContract.count);
+  assert.equal(hash(JSON.stringify(preserved)), phase.routeContract.sha256);
 });
 it("only recalls earned personal answers and retains a contact pause over a stale relay", () => {
   const base = { ...createCharacter({ handle: "Echo", givenName: "Ada", origin: "spire", bonus: { chrome: 2, nerve: 0, face: 0, ghost: 0 } }), sceneId: "ending_quiet" };

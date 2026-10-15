@@ -28,6 +28,7 @@ describe("docs", () => {
     const requiredSteps = source.split("      - name: Upload gameplay balance evidence")[0];
     assert.doesNotMatch(requiredSteps, /continue-on-error|if:/);
     assert.match(requiredSteps, /name: Audit gameplay balance\s+run: npm run balance:audit/);
+    assert.match(requiredSteps, /name: Compare matched mission objectives\s+run: npm run balance:missions/);
     assert.match(source, /name: Upload gameplay balance evidence\s+if: always\(\)/);
     for (const text of [readme, agents, cursor]) assert.match(text, /For every repository change/);
     assert.doesNotMatch(agents + cursor, /A change that does not move those facts can leave both files/);

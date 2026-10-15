@@ -31,6 +31,8 @@ jobs:
       - run: npm test
       - name: Audit gameplay balance
         run: npm run balance:audit
+      - name: Compare matched mission objectives
+        run: npm run balance:missions
       - name: Upload gameplay balance evidence
         if: always()
         uses: actions/upload-artifact@v4
