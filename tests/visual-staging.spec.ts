@@ -19,8 +19,8 @@ const scenarios = [
   { sceneId: "act2_witness_arrival", art: "nia-arrival", flags: { witness_briefed: true, witness_safe: true, witness_done: true } },
   { sceneId: "act2_route_receipt", art: "kerr-handover", flags: { kerr_route_collected: true, kerr_route_private: true } },
   { sceneId: "act2_route_receipt", art: "kerr-handover", flags: { kerr_route_collected: true, kerr_route_private: true, kerr_route_trace: true, kerr_route_acknowledged: true }, portrait: "kerr-closed" },
-  { sceneId: "act3_testimony_review", art: "hearing-table", flags: { memory_sequence_checked: true } },
-  { sceneId: "act2_archive_brief", art: "archive-desk", flags: { archive_exported: true } },
+  { sceneId: "act3_testimony_review", art: "sera-hearing", flags: { memory_sequence_checked: true } },
+  { sceneId: "act2_archive_brief", art: "edda-archive", flags: { archive_exported: true } },
   { sceneId: "act3_freight_visit", art: "courier-table", flags: { freight_unconfirmed: true } },
   { sceneId: "act3_shelter_visit", art: "laundry-cart", flags: { shelter_declined: true } },
 ] as const;
