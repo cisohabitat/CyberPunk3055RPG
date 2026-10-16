@@ -686,3 +686,12 @@ After Lumen shows two acknowledged cards, the current commitment and journal sta
 `npm run balance:overlap` now runs the preceding 14,400 coolant/witness campaigns plus 25,920 distribution/witness campaigns: dispatch first, witness first and a saved draft interleaved with Nia’s transfer. All new campaigns completed; 24,228 started both jobs and met their defined goals, while 1,692 lacked the prepared source packet. Eighty-eight requested carriers were unaffordable and used the existing carrying option. These are paired source-aware simulations, not independent participants or universal outcomes. Both comparisons remain required in CI with reviewed per-cell JSON evidence.
 
 The preceding CI failure came from the Available here heading skipping a level. It now uses the correct heading level; focused checks apply the full accessibility rule set, including the existing archive-pause flow. All previous browser and production checks remain required. See [the phase method, findings and verification](docs/DISTRIBUTION_OVERLAP.md). Scope remains 197 scenes / 598 choices / 148 authored complete fixtures, 302 bindings / 290 voices, four finales, 1d10/caps, held dice, save version 2 and `saint-shard-3055-v1`. The provisional grade stays 8.2.
+
+
+## Security review and maintenance
+
+The security review patches Next.js to 15.5.28 and overrides its vulnerable PostCSS dependency with 8.5.30. `npm run security:audit` checks production and development dependencies; CI blocks moderate, high and critical advisories. The current locked tree reports zero known vulnerabilities, which is a point-in-time result.
+
+Imported journal ids now use own-property lookups, preventing a crafted save from crashing the journal. Nested save metadata is copied through a schema allowlist, reserved flag keys are discarded, and codex, preferences and manual slots have size limits before JSON parsing. Existing saves, corruption checksums and held dice remain compatible. Save text stays ordinary escaped text; saves remain local, editable and unencrypted.
+
+Production adds browser security headers, disables the unused image optimizer and restricts resource loading to local assets. Static Next.js hydration still requires inline scripts, so the CSP does not provide strict inline-script protection. CI actions use immutable revisions without persisted checkout credentials, and only GitHub Actions checks can satisfy the deployment gate. See [the detailed findings, verification and remaining limits](docs/SECURITY_REVIEW.md).

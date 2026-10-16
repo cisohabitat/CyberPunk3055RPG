@@ -22,10 +22,11 @@
     "production:experience": "tsx scripts/player-experience.ts",
     "production:voices": "tsx scripts/voice-validation.ts",
     "production:rehearse": "tsx scripts/release-rehearsal.ts",
-    "balance:overlap": "node --import tsx scripts/clinic-overlap.ts && node --import tsx scripts/distribution-overlap.ts"
+    "balance:overlap": "node --import tsx scripts/clinic-overlap.ts && node --import tsx scripts/distribution-overlap.ts",
+    "security:audit": "npm audit --include=dev --audit-level=moderate"
   },
   "dependencies": {
-    "next": "^15.5.4",
+    "next": "^15.5.28",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
@@ -37,5 +38,8 @@
     "@types/react-dom": "^19.1.0",
     "tsx": "^4.20.5",
     "typescript": "^5.9.2"
+  },
+  "overrides": {
+    "postcss": "8.5.30"
   }
 }

@@ -2,6 +2,11 @@ node_modules
 .next
 out
 .vercel
+.env*
+!.env.example
+*.pem
+*.key
+*.p12
 *.log
 tsconfig.tsbuildinfo
 

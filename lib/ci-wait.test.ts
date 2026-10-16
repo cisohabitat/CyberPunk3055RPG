@@ -8,6 +8,23 @@ const url = "https://api.github.com/repos/owner/repo/commits/exact-sha/check-run
 const onWait = () => {};
 
 describe("bounded production CI wait", () => {
+  it("accepts checks only from GitHub Actions, ignoring same-name third-party checks", async t => {
+    let checks: object[] = [];
+    t.mock.method(globalThis, "fetch", async (requested: string) => {
+      assert.equal(requested, url);
+      return Response.json({ check_runs: checks });
+    });
+    for (const slug of [undefined, "third-party-ci", "github-actions"]) {
+      let time = 0;
+      checks = passing.map(check => ({ ...check, ...(slug ? { app: { slug } } : {}) }));
+      const result = await waitForProductionChecks({ url, deadlineMs: 2, intervalMs: 1, now: () => time, sleep: async ms => { time += ms; }, onWait });
+      assert.equal(result.exitCode, slug === "github-actions" ? 1 : 0);
+    }
+    checks = [...passing.map(check => ({ ...check, app: { slug: "github-actions" } })),
+      { name: "Test", status: "completed", conclusion: "failure", id: 999, app: { slug: "third-party-ci" } }];
+    assert.equal((await waitForProductionChecks({ url, onWait })).exitCode, 1);
+  });
+
   it("allows the full suite to complete after thirty minutes on the exact commit URL", async () => {
     let time = 0;
     const result = await waitForProductionChecks({ url, now: () => time,

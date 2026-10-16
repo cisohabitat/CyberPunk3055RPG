@@ -9,6 +9,17 @@ const SAVE_KEY = "saint-shard-3055-v1";
 const SOUND_KEY = "saint-shard-sound";
 const TEXT_KEY = "saint-shard-text";
 const CODEX_KEY = "saint-shard-codex";
+export const MAX_SAVE_LENGTH = 1_048_576;
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return value !== null && typeof value === "object" && !Array.isArray(value);
+}
+
+// Copy validated schema fields while retaining their serialized order. Old
+// native exports and campaign integrity fixtures depend on that order.
+function pickFields<T extends object>(value: T, fields: readonly string[]): T {
+  return Object.fromEntries(Object.entries(value).filter(([key]) => fields.includes(key))) as T;
+}
 
 export function readStored(key: string): string | null {
   if (typeof window === "undefined") return null;
@@ -46,12 +57,12 @@ function isOrigin(value: unknown): value is OriginId {
 function isJournal(value: unknown): value is JournalEntry[] {
   return (
     Array.isArray(value) &&
-    value.every((entry) => entry && typeof entry.id === "string" && typeof entry.text === "string" && (entry.kind === undefined || ["fact", "claim", "promise"].includes(entry.kind)))
+    value.every((entry) => isRecord(entry) && typeof entry.id === "string" && typeof entry.text === "string" && (entry.kind === undefined || ["fact", "claim", "promise"].includes(entry.kind as string)))
   );
 }
 
 function isFactions(value: unknown): value is Record<FactionId, number> {
-  if (!value || typeof value !== "object") return false;
+  if (!isRecord(value)) return false;
   return FACTIONS.every((faction) => {
     const score = (value as Record<string, unknown>)[faction];
     return typeof score === "number" && Number.isInteger(score) && score >= -3 && score <= 5;
@@ -61,33 +72,34 @@ function isFactions(value: unknown): value is Record<FactionId, number> {
 function migrate(data: Record<string, unknown>): GameState | null {
   if (typeof data.handle !== "string" || typeof data.sceneId !== "string") return null;
   if (!Object.hasOwn(SCENES, data.sceneId) || !isOrigin(data.origin)) return null;
-  if (!data.stats || typeof data.creds !== "number" || typeof data.strain !== "number") return null;
+  if (!isRecord(data.stats) || typeof data.creds !== "number" || typeof data.strain !== "number") return null;
   if (!Array.isArray(data.items) || !Array.isArray(data.journal) || !Array.isArray(data.rolls)) return null;
-  if (!data.flags || typeof data.flags !== "object") return null;
+  if (!isRecord(data.flags)) return null;
   const stats = data.stats as Record<string, unknown>;
   if (!STATS.every((id) => typeof stats[id] === "number" && Number.isInteger(stats[id]) && (stats[id] as number) >= 0 && (stats[id] as number) <= 5)) return null;
   if (!Number.isFinite(data.creds) || (data.creds as number) < 0 || !Number.isInteger(data.strain) || (data.strain as number) < 0 || (data.strain as number) > 5) return null;
   if (Array.isArray(data.flags) || !Object.values(data.flags).every((value) => typeof value === "boolean")) return null;
   if (!data.items.every((id) => typeof id === "string" && Object.hasOwn(ITEMS, id))) return null;
-  if (!data.rolls.every((roll) => roll && typeof roll.label === "string" && Number.isInteger(roll.roll) && roll.roll >= 1 && roll.roll <= 10 && Number.isFinite(roll.total) && Number.isFinite(roll.dc) && typeof roll.success === "boolean")) return null;
+  if (!data.rolls.every((roll) => isRecord(roll) && typeof roll.label === "string" && typeof roll.roll === "number" && Number.isInteger(roll.roll) && roll.roll >= 1 && roll.roll <= 10 && Number.isFinite(roll.total) && Number.isFinite(roll.dc) && typeof roll.success === "boolean")) return null;
   const journal = data.journal.map((line) => (typeof line === "string" ? journalEntry(line) : line));
   if (!isJournal(journal)) return null;
   const complication = COMPLICATIONS.has(data.complication as ComplicationId) ? (data.complication as ComplicationId) : null;
+  const factions = isFactions(data.factions) ? data.factions : startingFactions(data.origin, complication);
   const state: GameState = {
     version: 2,
     handle: data.handle,
     givenName: typeof data.givenName === "string" && data.givenName ? data.givenName : data.handle,
     origin: data.origin,
     complication,
-    stats: data.stats as GameState["stats"],
-    factions: isFactions(data.factions) ? data.factions : startingFactions(data.origin, complication),
+    stats: pickFields(stats, STATS) as GameState["stats"],
+    factions: pickFields(factions, FACTIONS),
     creds: data.creds,
     strain: data.strain,
     items: data.items.filter((id): id is string => typeof id === "string"),
-    flags: data.flags as GameState["flags"],
-    journal,
+    flags: Object.fromEntries(Object.entries(data.flags).filter(([key]) => !["__proto__", "constructor", "prototype"].includes(key))) as GameState["flags"],
+    journal: journal.map(entry => pickFields(entry, ["id", "text", "kind"])),
     chapters: Array.isArray(data.chapters) ? data.chapters.filter((title): title is string => typeof title === "string") : [],
-    rolls: data.rolls as GameState["rolls"],
+    rolls: (data.rolls as GameState["rolls"]).map(roll => pickFields(roll, ["label", "roll", "total", "dc", "success"])),
     log: Array.isArray(data.log) ? data.log.filter((line): line is string => typeof line === "string").slice(0, 24) : [],
     sceneId: data.sceneId,
   };
@@ -101,7 +113,7 @@ function migrate(data: Record<string, unknown>): GameState | null {
 }
 
 export function parseSave(raw: string | null): GameState | null {
-  if (!raw || raw.length > 1_048_576) return null;
+  if (!raw || raw.length > MAX_SAVE_LENGTH) return null;
   try {
     const data = JSON.parse(raw) as Record<string, unknown>;
     if (data?.version !== 1 && data?.version !== 2) return null;
@@ -153,14 +165,14 @@ export function emptyCodex(): Codex {
 }
 
 export function parseCodex(raw: string | null): Codex {
-  if (!raw) return emptyCodex();
+  if (!raw || raw.length > MAX_SAVE_LENGTH) return emptyCodex();
   try {
     const data = JSON.parse(raw) as Codex;
     const seen = Array.isArray(data.seen)
-      ? data.seen.filter((entry) => entry && typeof entry.id === "string" && typeof entry.title === "string")
+      ? data.seen.filter((entry) => isRecord(entry) && typeof entry.id === "string" && typeof entry.title === "string").map(({ id, title }) => ({ id, title }))
       : [];
     const keepsakes = Array.isArray(data.keepsakes)
-      ? data.keepsakes.filter((id): id is string => typeof id === "string" && Boolean(ITEMS[id]))
+      ? data.keepsakes.filter((id): id is string => typeof id === "string" && Object.hasOwn(ITEMS, id))
       : [];
     return { seen, keepsakes };
   } catch {
@@ -179,6 +191,6 @@ export function writeCodex(codex: Codex) {
 export function rememberEnding(id: string, title: string, keepsakes?: string[]) {
   const current = loadCodex();
   const seen = current.seen.some((entry) => entry.id === id) ? current.seen : [...current.seen, { id, title }];
-  const nextKeepsakes = keepsakes?.filter((item) => ITEMS[item]) ?? current.keepsakes;
+  const nextKeepsakes = keepsakes?.filter((item) => Object.hasOwn(ITEMS, item)) ?? current.keepsakes;
   return writeCodex({ seen, keepsakes: nextKeepsakes });
 }

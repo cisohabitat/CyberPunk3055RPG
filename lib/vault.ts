@@ -1,4 +1,4 @@
-import { parseSave, readStored, removeStored, writeStored } from "./storage";
+import { MAX_SAVE_LENGTH, parseSave, readStored, removeStored, writeStored } from "./storage";
 import type { GameState } from "./types";
 
 export const SLOT_IDS = [1, 2, 3] as const;
@@ -17,12 +17,12 @@ export function exportRun(state: GameState): string {
 }
 
 export function importRun(raw: string): GameState {
-  if (raw.length > 1_048_576) throw new Error("This save is too large. Choose a Saint Shard save under 1 MB.");
+  if (raw.length > MAX_SAVE_LENGTH) throw new Error("This save is too large. Choose a Saint Shard save under 1 MB.");
   let data;
   try { data = JSON.parse(raw); } catch { throw new Error("That file is not valid JSON. Your current run is unchanged."); }
   if (data?.format === "saint-shard-save") {
     if (data.schema !== 1) throw new Error("This save needs a different version of Saint Shard.");
-    if (checksum(JSON.stringify(data.state)) !== data.checksum) throw new Error("The save failed its integrity check. Try a backup.");
+    if (!data.state || typeof data.state !== "object" || Array.isArray(data.state) || typeof data.checksum !== "string" || checksum(JSON.stringify(data.state)) !== data.checksum) throw new Error("The save failed its integrity check. Try a backup.");
     data = data.state;
   }
   const state = parseSave(JSON.stringify(data));
@@ -33,11 +33,11 @@ export function importRun(raw: string): GameState {
 function key(id: SlotId) { return `saint-shard-slot-${id}`; }
 export function loadSlot(id: SlotId): Snapshot | null {
   const raw = readStored(key(id));
-  if (!raw) return null;
+  if (!raw || raw.length > MAX_SAVE_LENGTH) return null;
   try {
     const data = JSON.parse(raw) as Snapshot;
     if (data.format !== "saint-shard-save" || data.schema !== 1 || typeof data.savedAt !== "string" || !Number.isFinite(Date.parse(data.savedAt))) return null;
-    return { ...data, state: importRun(raw) };
+    return { format: "saint-shard-save", schema: 1, savedAt: data.savedAt, checksum: data.checksum, state: importRun(raw) };
   } catch { return null; }
 }
 export function saveSlot(id: SlotId, state: GameState): boolean { return writeStored(key(id), exportRun(state)); }

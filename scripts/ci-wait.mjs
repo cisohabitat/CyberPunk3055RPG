@@ -16,7 +16,9 @@ async function readChecks(url, signal) {
   if (!response.ok) throw new Error(`GitHub checks returned ${response.status}`);
   const body = await response.json();
   if (!Array.isArray(body.check_runs)) throw new Error("GitHub checks response is invalid");
-  return body.check_runs;
+  // A third-party integration can publish a check with the same display name.
+  // Only GitHub Actions is allowed to satisfy this repository's deploy gate.
+  return body.check_runs.filter(run => run && run.app?.slug === "github-actions");
 }
 
 // Exit 1 permits Vercel's build; all uncertain or unsuccessful states exit 0.

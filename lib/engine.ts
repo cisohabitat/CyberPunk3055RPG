@@ -27,7 +27,7 @@ function clampFaction(value: number): number {
 export type VisibleChoice = Choice & { enabled: boolean; disabledReason?: string };
 
 export function getScene(id: string): Scene {
-  const scene = SCENES[id];
+  const scene = Object.hasOwn(SCENES, id) ? SCENES[id] : undefined;
   if (!scene) throw new Error(`Missing scene ${id}`);
   return scene;
 }
@@ -62,7 +62,7 @@ export function createCharacter(input: {
   if (!isValidName(handle)) throw new Error("Invalid handle");
   const given = input.givenName.trim();
   if (given && !isValidName(given, 24)) throw new Error("Invalid given name");
-  const keepsake = input.keepsake && ITEMS[input.keepsake] ? input.keepsake : null;
+  const keepsake = input.keepsake && Object.hasOwn(ITEMS, input.keepsake) ? input.keepsake : null;
   const flags: Record<string, boolean> = {};
   if (complication === "on-file") flags.on_file = true;
   if (complication === "debt") flags.debt = true;

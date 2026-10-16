@@ -20,7 +20,7 @@ function slug(text: string): string {
 
 export function journalEntry(item: string | JournalEntry): JournalEntry {
   if (typeof item !== "string") return item;
-  return { id: KNOWN[item] ?? slug(item), text: item };
+  return { id: Object.hasOwn(KNOWN, item) ? KNOWN[item] : slug(item), text: item };
 }
 
 export const JOURNAL_TITLES: Record<string, string> = {
@@ -111,7 +111,7 @@ export const JOURNAL_TITLES: Record<string, string> = {
 };
 
 export function journalTitle(entry: JournalEntry): string {
-  if (JOURNAL_TITLES[entry.id]) return JOURNAL_TITLES[entry.id];
+  if (Object.hasOwn(JOURNAL_TITLES, entry.id)) return JOURNAL_TITLES[entry.id];
   return entry.text.split(/\s+/).slice(0, 5).join(" ").replace(/[.,;:]$/, "");
 }
 

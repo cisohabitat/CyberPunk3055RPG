@@ -18,7 +18,7 @@ export type Preferences = {
 export const DEFAULT_PREFERENCES: Preferences = { textStep: 0, contrast: "standard", reading: "all", motion: "system", sound: true, music: 60, ambience: 50, effects: 70, voices: 70, autoVoices: true, controller: false, numberShortcuts: true, artwork: "full" };
 export function parsePreferences(raw: string | null): Preferences {
   let data;
-  try { data = raw ? JSON.parse(raw) : {}; } catch { data = {}; }
+  try { data = raw && raw.length <= 16_384 ? JSON.parse(raw) : {}; } catch { data = {}; }
   const defaults = DEFAULT_PREFERENCES;
   const volume = (value: unknown, fallback: number) => typeof value === "number" && Number.isFinite(value) ? Math.round(Math.max(0, Math.min(100, value))) : fallback;
   return {
