@@ -30,6 +30,7 @@ describe("docs", () => {
     assert.match(requiredSteps, /name: Audit gameplay balance\s+run: npm run balance:audit/);
     assert.match(requiredSteps, /name: Compare matched mission objectives\s+run: npm run balance:missions/);
     assert.match(requiredSteps, /name: Check goal-driven campaign economy\s+run: npm run balance:campaigns/);
+    assert.match(requiredSteps, /name: Check overlapping clinic and witness work\s+run: npm run balance:overlap/);
     assert.match(source, /name: Upload gameplay balance evidence\s+if: always\(\)/);
     for (const text of [readme, agents, cursor]) assert.match(text, /For every repository change/);
     assert.doesNotMatch(agents + cursor, /A change that does not move those facts can leave both files/);

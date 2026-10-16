@@ -17,7 +17,14 @@ const complications: ComplicationId[] = ["debt", "optic", "on-file"];
 const caseId = (s: EconomyCase) => `${s.origin}/${s.stat}/${s.complication}/${s.goal}/${s.income}/${s.spending}`;
 const reserveForGoal = (s: EconomyCase, state: GameState) => s.goal === "witness" ? state.items.includes("clinic-marker") ? 0 : 90 : s.goal === "archive" ? 25 : 10;
 
-export function playEconomyCampaign(spec: EconomyCase, seed: number, maxSteps = ECONOMY_CONFIG.maxSteps) {
+// Explicit additional QA policy. Omission retains the reviewed single-goal audit.
+export type ClinicSchedule = {
+  order: "clinic-first" | "witness-first";
+  recovery: "early" | "late";
+  transport: "trained" | "volunteer";
+};
+export function playEconomyCampaign(spec: EconomyCase, seed: number, maxSteps = ECONOMY_CONFIG.maxSteps, schedule?: ClinicSchedule) {
+  if (schedule && spec.goal !== "witness") throw new Error("Clinic schedule requires the witness goal");
   if (!Number.isInteger(seed) || seed < 1) throw new Error("Invalid campaign seed");
   // Same origin/complication/seed stream across stats, goals and spending policies.
   // Branches can diverge; matching seed does not mean matching later encounters.
@@ -31,6 +38,7 @@ export function playEconomyCampaign(spec: EconomyCase, seed: number, maxSteps = 
   let cashEarned = 0, cashSpent = 0, checks = 0, successes = 0, expectedSuccesses = 0, maxStrain = state.strain, everBroke = state.creds === 0;
   const steps: ReplayStep[] = [], scenes = new Set<string>(), blocked = new Set<string>();
   const opening: { choice: string; roll: number; success: boolean }[] = [];
+  let clinicEntry: { creds: number; strain: number } | undefined;
   const kit = FIELD_KITS.find(k => k.stat === spec.stat)!;
   function choose(): string {
     const scene = getScene(state.sceneId), enabled = presentChoices(state, scene).filter(c => c.enabled);
@@ -40,6 +48,30 @@ export function playEconomyCampaign(spec: EconomyCase, seed: number, maxSteps = 
       if (!id) throw new Error(`No supported choice at ${scene.id}: ${[...ids].join(",")}`);
       return id;
     };
+    if (schedule) {
+      if (scene.id === "act2_middle") {
+        enteredMiddle = true;
+        if (schedule.recovery === "early" && state.strain >= 3 && ids.has("take-recovery")) return "take-recovery";
+        const clinic = () => { clinicEntry ??= { creds: state.creds, strain: state.strain }; return "help-clinic-pump"; };
+        if (schedule.order === "clinic-first" && ids.has("help-clinic-pump")) return clinic();
+        if (!mission && ids.has("protect-witness")) { mission = { creds: state.creds, strain: state.strain }; return "protect-witness"; }
+        if (ids.has("help-clinic-pump")) return clinic();
+        for (const work of ["work-witness-shift", "work-chapel-shift"]) if (ids.has(work)) return work;
+        if (ids.has("return-witness")) return "return-witness";
+        if (schedule.recovery === "late" && state.strain > 0 && ids.has("take-recovery")) return "take-recovery";
+        // Do not let the single-goal early-rest policy override late/no-strain play.
+        return "stand";
+      }
+      if (scene.id === "act2_pump_brief") return "work-pump";
+      if (scene.id === "act2_pump_methods") return ({ chrome: "isolate-pump", nerve: "brace-pump", face: "dispatch-pump", ghost: "route-pump" })[spec.stat];
+      if (scene.id === "act2_pump_triage") return state.creds >= 35 + (state.flags.witness_done ? 0 : reserveForGoal(spec, state)) ? "fund-cold-transfer" : "carry-cold-transfer";
+      if (scene.id === "act2_pump_report") return "keep-pump-local";
+      if (scene.id === "act2_witness_plan" && schedule.transport === "volunteer") return "arrange-escort";
+      if (scene.id === "act2_witness_door" && schedule.transport === "volunteer" && state.flags.witness_escort) return "compare-witness-support";
+      if (scene.id === "act2_witness_support" && schedule.transport === "volunteer" && state.flags.witness_escort) return "promise-volunteer-shift";
+      if (scene.id === "act2_witness_arrival" && schedule.order === "witness-first" && !state.flags.pump_done) return "defer-account";
+      if (scene.id === "act2_recovery") return pick("favor-recovery", ...(state.creds >= 45 + (state.flags.witness_done ? 0 : reserveForGoal(spec, state)) ? ["pay-recovery"] : []), "short-recovery");
+    }
     switch (scene.id) {
       case "opening_city": return "begin-opening";
       case "opening_self": return "opening-survival";
@@ -152,7 +184,7 @@ export function playEconomyCampaign(spec: EconomyCase, seed: number, maxSteps = 
       const goalMet = spec.goal === "witness" ? Boolean(state.flags.witness_safe && !state.flags.witness_lost && state.journal.some(e => e.id === "nia-account"))
         : spec.goal === "archive" ? Boolean(state.flags.archive_done && state.flags.order_verified && !state.flags.archive_unresolved)
         : Boolean(state.flags.kerr_route_delivered && !state.flags.kerr_route_trace);
-      return { state, steps, scenes: [...scenes], week, mission, enteredMiddle, goalMet, kitRequested, kitBought, kitUnaffordable, kitDeferred,
+      return { state, steps, scenes: [...scenes], week, mission, clinicEntry, enteredMiddle, goalMet, kitRequested, kitBought, kitUnaffordable, kitDeferred,
         cashEarned, cashSpent, checks, successes, expectedSuccesses, maxStrain, everBroke, blocked: [...blocked], opening,
         replay: { name: `economy-${caseId(spec).replaceAll("/", "-")}-${seed}`, character, steps, expected: { sceneId: state.sceneId, creds: state.creds, strain: state.strain } } satisfies ReplaySpec };
     }

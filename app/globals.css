@@ -878,6 +878,9 @@ html[data-motion="reduce"] *, html[data-motion="reduce"] *::before, html[data-mo
 .objective-brief ul { list-style: none; padding: 0; }
 .objective-brief li + li { margin-top: .8rem; }
 .objective-brief li p { margin: .4rem 0; font-size: .88rem; }
+.commitment-actions { border-bottom: 1px solid var(--line); padding-bottom: .8rem; }
+.commitment-actions h3 { font-size: 1rem; }
+.commitment-actions button { min-height: 2.75rem; max-width: 100%; white-space: normal; overflow-wrap: anywhere; text-align: left; }
 .objective-status { display: block; color: var(--muted); font-family: var(--font-display), sans-serif; }
 .objective-status.complete { color: var(--cyan); }
 .objective-status.compromised { color: var(--magenta); }

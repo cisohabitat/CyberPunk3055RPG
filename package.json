@@ -21,7 +21,8 @@
     "production:audio-probe": "tsx scripts/audio-endurance.ts",
     "production:experience": "tsx scripts/player-experience.ts",
     "production:voices": "tsx scripts/voice-validation.ts",
-    "production:rehearse": "tsx scripts/release-rehearsal.ts"
+    "production:rehearse": "tsx scripts/release-rehearsal.ts",
+    "balance:overlap": "node --import tsx scripts/clinic-overlap.ts"
   },
   "dependencies": {
     "next": "^15.5.4",

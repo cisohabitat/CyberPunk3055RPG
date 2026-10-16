@@ -131,7 +131,8 @@ export function nextStep(state: GameState): string {
   if (state.sceneId === "act2_middle") {
     if (state.flags.kerr_route_failed && !state.flags.kerr_route_done && !state.flags.kerr_route_collected) return `Kerr's case is still held. Resume recovery through his collection request; departure is already paid and there is no second attempt.${state.creds < 20 ? " You cannot yet afford the twenty-creds courier." : " The twenty-creds courier is affordable, but registers Kerr as recipient."} Closing the week leaves the handover unresolved.`;
     const work = encounterRecords(state).filter(row => row.open);
-    if (work.length) return `${work.map(row => row.title).join("; ")} remains open. Keep the work or handover before closing the week, or leave it unresolved.`;
+    if (work.length) return `${work.map(row => row.title).join("; ")} remains open. Keep the work or handover before closing the week, or leave it unresolved.${state.flags.witness_deferred ? " Nia has a safe room; return for her review before attaching an account. Keeping a shift does not give recording permission." : ""}`;
+    if (state.flags.witness_deferred) return "Nia has a safe room, but her account is unfinished. Return for her review before closing the week; clinic work does not grant recording permission.";
     if (state.flags.notice_started && !state.flags.notice_done) return "Clinic distribution is unfinished. Resume the saved draft or leave it unaccepted when closing the week.";
     if (state.flags.kerr_route_promised && !state.flags.kerr_route_done) return "Kerr’s collection is unfinished. Resume the saved plan or leave the promise open when closing the week.";
     if (objectives(state).some((row) => row.status === "Open")) return "Your memory promise is still open. Finish it here before closing the week, or choose to leave it unresolved.";

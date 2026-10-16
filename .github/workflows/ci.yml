@@ -35,6 +35,8 @@ jobs:
         run: npm run balance:missions
       - name: Check goal-driven campaign economy
         run: npm run balance:campaigns
+      - name: Check overlapping clinic and witness work
+        run: npm run balance:overlap
       - name: Upload gameplay balance evidence
         if: always()
         uses: actions/upload-artifact@v4
