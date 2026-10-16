@@ -2,6 +2,8 @@
 
 This file is for anyone changing the code. [README.md](README.md) is for players and for the deploy. Keep the two on the same game.
 
+`docs/PROJECT_DESCRIPTION.md` provides the short GitHub About description, a game overview and links to the latest feature report. Keep its player-facing claims consistent with the implemented game and media credits. The README links to it near the introduction; detailed test evidence remains in the corresponding phase report.
+
 ## Keep both docs current
 
 For every repository change, update `README.md` and `AGENTS.md` in the same change. Always review both for accuracy before committing or deploying, including changes to gameplay, art, audio, saves, configuration, tests, tooling and documentation. Explain the actual change; do not use timestamp-only or whitespace-only edits to satisfy the rule. Quote the four goal sentences from `lib/story/goal.ts` in both files, and keep the save key `saint-shard-3055-v1` in both. `lib/docs.test.ts` fails if either file drops them.

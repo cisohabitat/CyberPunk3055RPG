@@ -15,6 +15,8 @@ The first time the shard is in your hand, Mara says the memo, then why she signe
 
 This is original fiction. It is not affiliated with any studio or with any existing cyberpunk game.
 
+Read the [project description](docs/PROJECT_DESCRIPTION.md) for a short repository summary, game overview and description of the latest distribution and witness improvements.
+
 ## Play locally
 
 ```bash
