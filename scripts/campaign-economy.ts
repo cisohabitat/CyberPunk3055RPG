@@ -1,0 +1,16 @@
+import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { dirname, resolve } from "node:path";
+import { campaignEconomyIssues, campaignEconomyReport, campaignEconomySummary } from "../lib/campaign-economy";
+const args = process.argv.slice(2);
+const out = args.find(a => a.startsWith("--out="))?.slice(6) ?? "qa/production/reports/balance/economy-current.json";
+const seeds = Number(args.find(a => a.startsWith("--seeds="))?.slice(8) ?? 100);
+if (args.some(a => !/^(--out=.+|--seeds=\d+|--record-baseline)$/.test(a))) throw new Error("Usage: campaign-economy.ts [--out=PATH] [--seeds=N] [--record-baseline]");
+if (resolve(out) === resolve("qa/balance/campaign-economy.json")) throw new Error("Do not overwrite the reviewed baseline");
+const report = campaignEconomyReport(seeds);
+mkdirSync(dirname(out), { recursive: true }); writeFileSync(out, JSON.stringify(report, null, 2) + "\n");
+const md = out.replace(/\.json$/, "") + ".md";
+writeFileSync(md, campaignEconomySummary(report));
+const issues = campaignEconomyIssues(report, args.includes("--record-baseline") ? report : JSON.parse(readFileSync("qa/balance/campaign-economy.json", "utf8")));
+writeFileSync(md, campaignEconomySummary(report) + (issues.length ? `\n## Regressions\n\n${issues.map(i => `- ${i}`).join("\n")}\n` : args.includes("--record-baseline") ? "\nCandidate baseline; no historical comparison performed.\n" : "\nRegression gate passed.\n"));
+console.log(JSON.stringify({ scenarios: report.rows.length, campaigns: report.rows.length * seeds, covered: report.coveredScenes.length, failures: report.failures.length, issues, out }, null, 2));
+if (issues.length) process.exitCode = 1;

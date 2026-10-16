@@ -44,8 +44,8 @@ export function missionSetup(spec: MissionCase) {
   return { state, beforeShopping, purchased, kitPrice: purchased ? kit.price : 0 };
 }
 
-function missionMove(branch: Branch, spec: MissionCase): { id: string; fallback?: boolean; primary?: boolean } {
-  const state = branch.state, ids = new Set(legal(state).map(c => c.id));
+export function missionDecision(state: GameState, spec: Pick<MissionCase, "stat">): { id: string; fallback?: boolean; primary?: boolean } {
+  const ids = new Set(legal(state).map(c => c.id));
   const pick = (...options: string[]) => {
     const id = options.find(id => ids.has(id));
     if (!id) throw new Error(`No supported mission continuation: ${state.sceneId} (${[...ids].join(",")})`);
@@ -103,7 +103,7 @@ export function compareMission(spec: MissionCase): MissionResult {
       add("capReached", branch.capped); add("expectedChecks", branch.checks);
       return;
     }
-    const move = missionMove(branch, spec), choice = legal(state).find(c => c.id === move.id);
+    const move = missionDecision(state, spec), choice = legal(state).find(c => c.id === move.id);
     if (!choice) throw new Error(`Unavailable mission choice: ${result.id}/${state.sceneId}/${move.id}`);
     // Enumerate every face at every actual check, retaining branch probability.
     // Unchecked methods get one branch, never a fictitious die or automatic miss.

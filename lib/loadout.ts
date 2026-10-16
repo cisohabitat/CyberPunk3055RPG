@@ -9,6 +9,18 @@ export const FIELD_KITS: { id: string; stat: StatId; name: string; price: number
 export const kitBonuses = (stat: StatId) => FIELD_KITS.filter((kit) => kit.stat === stat).map((kit) => ({ item: kit.id, amount: 2 }));
 export const equippedKits = (state: GameState) => FIELD_KITS.filter((kit) => state.items.includes(kit.id));
 
+/** Only describe the runner's actually earned training; never grant a method. */
+export function trainedKitAdvice(state: GameState, stat: StatId): string | undefined {
+  if (!state.flags[`perk_${stat}`]) return undefined;
+  const advice: Record<StatId, string> = {
+    chrome: "For an intact archive, Signal discipline offers local key isolation without a roll at Strain +1. The probe does not change that method; it still helps the listed scanner, preparation and authentication checks.",
+    nerve: "The trained depot carrying task uses decisions rather than a roll; a harness does not reduce its cradle fee or carrying effort. A harness and successful chair bracing can also open a no-roll witness transfer; Steady hands avoids added Strain on that transfer.",
+    face: "Read the room offers a countersigned archive invoice without a roll; Helion logs the request. The guide does not change that method; escort and checkpoint checks can still benefit. A countersignature corroborates the order without authenticating its issuing key.",
+    ghost: "With the planned patrol exit, the trained depot sequence uses decisions rather than a roll; the shroud does not change that task. Scouting, carbon retrieval and the listed rolled crossings can still benefit.",
+  };
+  return advice[stat];
+}
+
 /** Handling still requires the actual harness and successful chair preparation. */
 export const harnessTransferStrain = (state: GameState) => state.flags.perk_nerve ? 0 : 2;
 

@@ -1,4 +1,4 @@
-import { FIELD_KITS, equippedKits, fieldKitBudget } from "@/lib/loadout";
+import { FIELD_KITS, equippedKits, fieldKitBudget, trainedKitAdvice } from "@/lib/loadout";
 import type { GameState } from "@/lib/types";
 
 export function FieldKitBrief({ state }: { state: GameState }) {
@@ -12,7 +12,11 @@ export function FieldKitBrief({ state }: { state: GameState }) {
       {kits.map((kit) => {
         const budget = fieldKitBudget(state.creds, kit.price);
         return <div key={kit.id}><dt>{kit.name}{shopping ? ` · ${kit.price} creds` : " · equipped"}</dt><dd>
-          {kit.uses}{state.flags[`perk_${kit.stat}`] ? " Complements your practiced skill." : " Works without training this skill."}
+          {kit.uses}{state.flags[`perk_${kit.stat}`] ? " Your practiced skill has its own methods." : " Works without training this skill."}
+          {shopping && trainedKitAdvice(state, kit.stat) && <details className="kit-training" data-testid={`training-advice-${kit.id}`}>
+            <summary>How the {kit.name} fits your training</summary>
+            <p>{trainedKitAdvice(state, kit.stat)}</p>
+          </details>}
           {shopping && <p className="kit-budget" data-testid={`budget-${kit.id}`}>
             {budget.affordable ? <><strong>After purchase: {budget.remaining} creds.</strong>{" "}
               {budget.careGap ? `Room + staffed rest: ${budget.careGap} more needed.` : "Enough cash remains for a room and staffed rest."}{" "}
