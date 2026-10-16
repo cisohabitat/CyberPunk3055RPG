@@ -1,0 +1,42 @@
+import { test, expect } from "@playwright/test";
+import { dialogueExamples } from "../qa/production/dialogue-examples";
+import { installAudioReview, type AudioReview } from "../qa/production/audio-review";
+import { keyboardActivate } from "../qa/production/keyboard";
+import phase from "../qa/media/multiline-dialogue.json";
+
+for (const scene of ["chapel", "lumen_deal"]) for (const width of [390, 1440]) test(`${scene} reveals and plays both paragraphs with the actual speaker at ${width}px`, async ({ page }) => {
+  test.setTimeout(65_000);
+  await page.setViewportSize({ width, height: 900 });
+  const lines = phase.additions.filter(line => line.scene === scene);
+  const state = dialogueExamples().get(lines[0].id)!.state;
+  await page.addInitScript(installAudioReview, {});
+  await page.addInitScript(state => {
+    localStorage.setItem("saint-shard-3055-v1", JSON.stringify(state));
+    localStorage.setItem("saint-shard-preferences", JSON.stringify({ reading: "paragraph", sound: true, autoVoices: true, motion: "reduce", effects: 0 }));
+  }, state);
+  const errors: string[] = [];
+  page.on("pageerror", error => errors.push(error.message));
+  const audio = (): Promise<AudioReview> => page.evaluate(() => (window as unknown as { audioReview: AudioReview }).audioReview);
+  const speech = async () => (await audio()).started.filter(file => file.startsWith("voice-"));
+  await page.goto("/");
+  await keyboardActivate(page, page.getByTestId("continue-run"));
+  const before = await page.evaluate(() => localStorage.getItem("saint-shard-3055-v1"));
+  await expect(page.getByTestId("scene-text")).toContainText(lines[0].text);
+  await expect(page.getByTestId("scene-text")).not.toContainText(lines[1].text);
+  expect(await speech()).toEqual([]);
+  await expect(page.getByTestId("voice-line")).toHaveCount(0);
+  await keyboardActivate(page, page.getByTestId("show-rest"));
+  const files = lines.map(line => `${line.id}.mp3`);
+  await expect.poll(speech).toEqual([files[0]]);
+  await expect(page.getByTestId("spoken-quote")).toHaveText(lines[0].text);
+  await expect(page.getByTestId("spoken-quote")).toHaveAttribute("data-speaker", lines[0].speaker);
+  await expect(page.getByTestId("voice-line").locator("details")).toContainText(lines[1].text);
+  await expect.poll(speech, { timeout: 35_000 }).toEqual(files);
+  await expect(page.getByTestId("spoken-quote")).toHaveText(lines[1].text);
+  await expect(page.getByTestId("voice-line").getByRole("button", { name: /^Listen to / })).toBeVisible({ timeout: 30_000 });
+  await expect(page.getByTestId("spoken-quote")).toHaveCount(0);
+  expect((await audio()).cleared.filter(file => file.startsWith("voice-"))).toEqual(files);
+  expect(await page.evaluate(() => localStorage.getItem("saint-shard-3055-v1"))).toBe(before);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  expect(errors).toEqual([]);
+});

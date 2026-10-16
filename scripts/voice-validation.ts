@@ -61,7 +61,8 @@ async function main() {
           const queue = checkCommit?.check ? visibleCheckDialogue(scene.id, checkChoice!.id, scene.speaker, checkCommit.check.success, checkCommit.check.flavor) : visibleCampaignDialogue(scene.id, scene.speaker, text);
           const selected = queue.find(candidate => candidate.id === line.id)!;
           const expected = automatic ? queue.map(candidate => filename(candidate.id)) : [filename(line.id)];
-          await expect.poll(async () => (await audio()).liveSources).toBe(automatic ? 3 : 2);
+          if (automatic) await expect.poll(async () => (await audio()).started.filter(name => name.startsWith("voice-"))).toContain(expected[0]);
+          else await expect.poll(async () => (await audio()).liveSources).toBe(2);
           const before = await saved();
           await keyboardActivate(page, page.getByTestId("voice-line").locator("summary"));
           await expect(page.getByTestId("voice-line").locator("details")).toContainText(line.text);
@@ -90,12 +91,18 @@ async function main() {
           expect(ended.cleared.filter(name => name.startsWith("voice-"))).toEqual(expected); expect(await saved()).toBe(before);
           expect(ended.voiceLevels.map(entry => entry.file)).toEqual(expected);
           for (const entry of ended.voiceLevels) expect(entry.gain).toBeCloseTo(voiceLevel(entry.file.replace(/\.(wav|mp3)$/, "")), 6);
+          const requestsBeforeReplay = voiceRequests;
+          expect(requestsBeforeReplay).toBe(1);
           if (queue.length > 1) await page.getByLabel("Dialogue line", { exact: true }).selectOption(selected.key);
           await keyboardActivate(page, listen); await expect(page.getByTestId("voice-line")).toContainText("Playing selected dialogue");
           await keyboardActivate(page, page.getByRole("button", { name: "Stop line", exact: true }));
           await expect(page.getByTestId("spoken-quote")).toHaveCount(0);
           await expect.poll(async () => (await audio()).liveSources).toBe(2);
-          expect(voiceRequests).toBe(1); expect(await saved()).toBe(before);
+          // The bounded decoded cache may evict an early clip in a long queue.
+          // Explicit replay can fetch it once again; automatic playback cannot.
+          expect(voiceRequests - requestsBeforeReplay).toBeGreaterThanOrEqual(0);
+          expect(voiceRequests - requestsBeforeReplay).toBeLessThanOrEqual(1);
+          expect(await saved()).toBe(before);
           if (checkCommit) {
             await keyboardActivate(page, page.getByTestId("continue-check"));
             expect(JSON.parse((await saved())!)).toEqual(checkCommit.state);
@@ -104,14 +111,14 @@ async function main() {
           await keyboardActivate(page, page.getByLabel("Sound enabled", { exact: true }));
           await expect.poll(async () => (await audio()).liveSources).toBe(0);
           const off = await audio(); expect(off.sourcesDisposed).toBe(off.sourcesCreated); expect(off.buffersCleared).toBe(off.sourcesCreated);
-          const row = { id: line.id, route: example.route, source: example.source, expectedVoices: expected, playbackLevels: ended.voiceLevels, durationSeconds, voiceRequests, liveSourcesAfterEnd: ended.liveSources, created: off.sourcesCreated, disposed: off.sourcesDisposed };
+          const row = { id: line.id, route: example.route, source: example.source, expectedVoices: expected, playbackLevels: ended.voiceLevels, durationSeconds, voiceRequests, requestsBeforeReplay, replayRefetched: voiceRequests > requestsBeforeReplay, liveSourcesAfterEnd: ended.liveSources, created: off.sourcesCreated, disposed: off.sourcesDisposed };
           rows.push(row); console.log(JSON.stringify(row));
         } finally { await context.close(); }
       }
     }));
     expect(errors).toEqual([]); expect(failures).toEqual([]);
     mkdirSync(dirname(out), { recursive: true });
-    writeFileSync(out, JSON.stringify({ revision, dirty, testedSources, environment: { browser: "Chromium", browserVersion: browser.version(), platform: process.platform, nodeVersion: process.version, device: "cloud automation host; synthetic viewport" }, url, automatic, workers, elapsedSeconds: (Date.now() - started) / 1000, rows, errors, failures, limitations: "Internal source examples: authored/seeded route states and separately labeled conditional branch samples. This is clip playback verification, not completed UI campaigns. Natural completion, cached replay, Stop, transcripts and cleanup are observed. No commissioned actors, human participation, physical-device or independent listening acceptance." }, null, 2));
+    writeFileSync(out, JSON.stringify({ revision, dirty, testedSources, environment: { browser: "Chromium", browserVersion: browser.version(), platform: process.platform, nodeVersion: process.version, device: "cloud automation host; synthetic viewport" }, url, automatic, workers, elapsedSeconds: (Date.now() - started) / 1000, rows, errors, failures, limitations: "Internal source examples: authored/seeded route states and separately labeled conditional branch samples. This is clip playback verification, not completed UI campaigns. Natural completion, explicit replay (cached or refetched after eviction), Stop, transcripts and cleanup are observed. No commissioned actors, human participation, physical-device or independent listening acceptance." }, null, 2));
   } finally { await browser.close(); }
 }
 main().catch(error => { console.error(error); process.exitCode = 1; });

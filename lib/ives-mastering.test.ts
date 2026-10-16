@@ -1,3 +1,4 @@
+import { bindingsBeforeMultiline, bindingHashBeforeMultiline } from "../qa/production/binding-history";
 import { reviewedDeliveryHash } from "../qa/production/delivery-history";
 import consequence from "../qa/media/consequence-media.json";
 import assert from "node:assert/strict";
@@ -18,7 +19,7 @@ const words = (text: string) => text.toLowerCase().replace(/['’]/g, "").replac
 
 it("masters every active delivery with measured headroom and retains separate user volume", () => {
   const ids = [...new Set(bindings.map(line => line.id))].sort();
-  assert.equal(ids.length, 290);
+  assert.equal(ids.length, 294);
   assert.deepEqual(Object.keys(levels).sort(), ids);
   assert.deepEqual(mastering.clips.map(clip => clip.id), ids);
   assert.equal(sha("qa/media/voice-levels.json"), mastering.runtimeMapSha256);
@@ -36,8 +37,8 @@ it("masters every active delivery with measured headroom and retains separate us
 
 it("replaces exactly thirteen Ives performances while preserving all quotation keys, actors and words", () => {
   assert.equal(phase.performances.length, 13);
-  assert.equal(sha("qa/media/campaign-dialogue-bindings.json"), phase.bindingSha256);
-  assert.deepEqual(bindings, phase.precedingBindings.map(line => ({ ...line, id: phase.legacyReplacements[line.id as keyof typeof phase.legacyReplacements] ?? line.id })));
+  assert.equal(bindingHashBeforeMultiline(), phase.bindingSha256);
+  assert.deepEqual(bindingsBeforeMultiline(), phase.precedingBindings.map(line => ({ ...line, id: phase.legacyReplacements[line.id as keyof typeof phase.legacyReplacements] ?? line.id })));
   for (const entry of phase.performances) {
     const line = authoring.find(line => line.id === entry.id)!;
     const delivery = provenance.lines.find(line => line.id === entry.id)!;

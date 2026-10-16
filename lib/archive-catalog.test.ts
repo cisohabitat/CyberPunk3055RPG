@@ -1,3 +1,4 @@
+import { bindingHashBeforeMultiline } from "../qa/production/binding-history";
 import assert from "node:assert/strict";
 import { it } from "node:test";
 import { createHash } from "node:crypto";
@@ -121,6 +122,6 @@ it("complete authored alternatives retain their actual cost and honest hearing a
 
 it("keeps the existing complete painting and every dialogue binding aligned with the catalog's written records", () => {
   assert.equal(sceneIllustration(media.scene)!.src, media.illustration);
-  assert.equal(createHash("sha256").update(readFileSync("qa/media/campaign-dialogue-bindings.json")).digest("hex"), media.preservedBindingsSha256);
+  assert.equal(bindingHashBeforeMultiline(), media.preservedBindingsSha256);
   assert.ok(media.artDecision.length > 100 && media.voiceDecision.includes("unquoted"));
 });

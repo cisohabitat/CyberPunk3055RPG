@@ -1,3 +1,4 @@
+import { bindingHashBeforeMultiline } from "../qa/production/binding-history";
 import { reviewedDeliveryHash } from "../qa/production/delivery-history";
 import assert from "node:assert/strict";
 import { it } from "node:test";
@@ -70,7 +71,7 @@ it("requires completed publication, keeps private sources closed and retains all
 });
 
 it("locks nine revised deliveries to unchanged actors, words and bindings and retains every other voice",()=>{
-  assert.equal(phase.performances.length,9);assert.equal(sha("qa/media/campaign-dialogue-bindings.json"),phase.bindingSha256);
+  assert.equal(phase.performances.length,9);assert.equal(bindingHashBeforeMultiline(),phase.bindingSha256);
   const changed=new Set(phase.performances.map(e=>e.id));
   for(const entry of phase.performances){
     const line=authoring.find(l=>l.id===entry.id)!,delivery=provenance.lines.find(l=>l.id===entry.id)!;

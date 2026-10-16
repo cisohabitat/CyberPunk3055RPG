@@ -63,7 +63,7 @@ it("requires a reviewed portrait and exact scene list for every actor and keeps 
   }
   for (const binding of bindings) assert.ok(presentation.speakers.some(entry => entry.speaker === binding.speaker && entry.scenes.includes(binding.scene)));
   const ids = [...new Set(bindings.map(binding => binding.id))];
-  assert.equal(ids.length, 290);
+  assert.equal(ids.length, 294);
   assert.deepEqual(Object.keys(presentation.preservedVoiceSha256).sort(), ids.sort());
   for (const [id, hash] of Object.entries(presentation.preservedVoiceSha256)) assert.equal(reviewedDeliveryHash(`public/audio/${id}.${id.startsWith("voice-campaign-") ? "mp3" : "wav"}`, hash), hash);
 });

@@ -15,7 +15,7 @@ for (const line of source as CampaignDialogue[]) {
 /** Quote delimiters exclude apostrophes within words. Written quotes need no
  * voice unless explicitly cast in the reviewed authoring catalog. */
 export function quotedSpeech(text: string): { text: string; position: number }[] {
-  const pattern = /“([^“”]+)”|(?<!\w)‘(.+?)’(?!\w)|"([^"\n]+)"|(?<!\w)'(.+?)'(?!\w)/g;
+  const pattern = /“([^“”]+)”|(?<!\w)‘([\s\S]+?)’(?!\w)|"([^"]+)"|(?<!\w)'([\s\S]+?)'(?!\w)/g;
   return [...text.matchAll(pattern)].map(match => ({
     text: match.slice(1).find(value => value !== undefined)!, position: match.index!,
   }));

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "scope": "Current actual-speaker presentation and delivery locks, including the consequence-media performance pass.",
+  "scope": "Current actual-speaker presentation and delivery locks, including the restored multiline Quill and Lumen dialogue.",
   "newPortraits": [
     "/art/ren-portrait.jpg",
     "/art/stallholder-portrait.jpg",
@@ -154,6 +154,7 @@
         "act2_quill_introduction",
         "act2_workshop",
         "act3_quill_introduction",
+        "chapel",
         "ending_walk",
         "job_owner",
         "pay",
@@ -529,8 +530,12 @@
     "voice-campaign-ives-9317a0ee9650": "b1302959552fb5f1db126cbbe739892e2355afbb8e85cb17322a53dd6366771d",
     "voice-campaign-ives-a94db9de69a3": "a119a9a99a1e8838df0b5ce71c1fe79fc9a5e61496bca69722e61a5fcc9c6ea2",
     "voice-campaign-ives-7117058514fc": "5fc51d5e6b72a37bc4f5ef67afdba231cb9a0fc7d59a317e6de71878193022cc",
-    "voice-campaign-ives-c0f98673baa3": "41fac1b875a07e9ba3d72a315a600d0463d51b3f0cc0577530a9371da383465b"
+    "voice-campaign-ives-c0f98673baa3": "41fac1b875a07e9ba3d72a315a600d0463d51b3f0cc0577530a9371da383465b",
+    "voice-campaign-multiline-lumen-deal-1": "77dcc4c8516eb4f92d10d15d00a371ccd9643bbee874f51d359ea9fd03c1f14d",
+    "voice-campaign-multiline-lumen-deal-2": "d0dbc3c43a10629e34629863bf182209824cc2b9a62122d9d31391eb0e7adc85",
+    "voice-campaign-multiline-chapel-1": "e4c40f81e7762b4347b607a864f91fe1b5dc9f2a5db1cae8632fb6d51df21df5",
+    "voice-campaign-multiline-chapel-2": "6ec77551732e01d5f0e8a3a0b0deb46a4d06aaf327e56e183d16eeacd5b565be"
   },
-  "bindingSha256": "ecfff2a6154e7933eb173a4f0c51c79aa3e1f88b0fc7d95e3041ce5cceea4b3f",
+  "bindingSha256": "15ae8b35c16b330b545f001e23dc75b5f4bd131225347f616ab76c1b7088f0bd",
   "reviewStatus": "Generated portraits and internal source/playback validation; no commissioned actor or independent listening/visual acceptance."
 }

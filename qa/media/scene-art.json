@@ -332,7 +332,7 @@
     {
       "treatment": "illustration",
       "asset": "/art/market-counter.jpg",
-      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Multiline dialogue review: the existing setting and actual speaker portrait accompany restored two-paragraph speech; no changed words or outcome.",
       "scenes": [
         "opening_self",
         "pay_yes",
@@ -354,7 +354,7 @@
     {
       "treatment": "illustration",
       "asset": "/art/chapel-entry.jpg",
-      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Multiline dialogue review: the existing setting and actual speaker portrait accompany restored two-paragraph speech; no changed words or outcome.",
       "scenes": [
         "front",
         "lumen",
@@ -929,6 +929,7 @@
         "act2_quill_introduction",
         "act2_workshop",
         "act3_quill_introduction",
+        "chapel",
         "ending_walk",
         "job_owner",
         "pay",

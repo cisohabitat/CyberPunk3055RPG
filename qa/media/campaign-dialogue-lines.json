@@ -3423,5 +3423,134 @@
       }
     ],
     "loudnessLufs": -20
+  },
+  {
+    "id": "voice-campaign-multiline-lumen-deal-1",
+    "speaker": "Sister Lumen",
+    "voice": "af_heart",
+    "speed": 0.93,
+    "text": "Mara Voss signed the coolant dump into Ward Nine. Three hundred people. One memo. No funeral that used their names. The shard is the only unedited hour.",
+    "direction": "Established cast identity; calm, plain explanation. Preserve exact words and sentence boundaries; no narration.",
+    "segments": [
+      {
+        "text": "Mara Voss signed the coolant dump into Ward Nine.",
+        "speed": 0.93,
+        "pauseAfter": 0.22
+      },
+      {
+        "text": "Three hundred people.",
+        "speed": 0.93,
+        "pauseAfter": 0.22
+      },
+      {
+        "text": "One memo.",
+        "speed": 0.93,
+        "pauseAfter": 0.22
+      },
+      {
+        "text": "No funeral that used their names.",
+        "speed": 0.93,
+        "pauseAfter": 0.22
+      },
+      {
+        "text": "The shard is the only unedited hour.",
+        "speed": 0.93,
+        "pauseAfter": 0
+      }
+    ],
+    "loudnessLufs": -20
+  },
+  {
+    "id": "voice-campaign-multiline-lumen-deal-2",
+    "speaker": "Sister Lumen",
+    "voice": "af_heart",
+    "speed": 0.93,
+    "text": "Sell it to Quill and he sells it to Helion, and Helion buys the last copy of its own crime. Break it, and I leak what I remember. Memory is weaker than a shard. It is still a fire.",
+    "direction": "Established cast identity; calm, plain explanation. Preserve exact words and sentence boundaries; no narration.",
+    "segments": [
+      {
+        "text": "Sell it to Quill and he sells it to Helion, and Helion buys the last copy of its own crime.",
+        "speed": 0.93,
+        "pauseAfter": 0.22
+      },
+      {
+        "text": "Break it, and I leak what I remember.",
+        "speed": 0.93,
+        "pauseAfter": 0.22
+      },
+      {
+        "text": "Memory is weaker than a shard.",
+        "speed": 0.93,
+        "pauseAfter": 0.22
+      },
+      {
+        "text": "It is still a fire.",
+        "speed": 0.93,
+        "pauseAfter": 0
+      }
+    ],
+    "loudnessLufs": -20
+  },
+  {
+    "id": "voice-campaign-multiline-chapel-1",
+    "speaker": "Quill",
+    "voice": "am_michael",
+    "speed": 0.94,
+    "text": "Clients call it absolution. The machine reads the hour, files the raw memory, then burns the feeling out and leaves the facts standing there like furniture. The raw file sits in the plinth under the chair.",
+    "direction": "Established cast identity; calm, plain explanation. Preserve exact words and sentence boundaries; no narration.",
+    "segments": [
+      {
+        "text": "Clients call it absolution.",
+        "speed": 0.94,
+        "pauseAfter": 0.22
+      },
+      {
+        "text": "The machine reads the hour, files the raw memory,",
+        "speed": 0.94,
+        "pauseAfter": 0.14
+      },
+      {
+        "text": "then burns the feeling out and leaves the facts standing there like furniture.",
+        "speed": 0.86,
+        "pauseAfter": 0.24
+      },
+      {
+        "text": "The raw file sits in the plinth under the chair.",
+        "speed": 0.94,
+        "pauseAfter": 0
+      }
+    ],
+    "loudnessLufs": -20
+  },
+  {
+    "id": "voice-campaign-multiline-chapel-2",
+    "speaker": "Quill",
+    "voice": "am_michael",
+    "speed": 0.94,
+    "text": "That file is the product. Saints keep it. Then they sell it back to the same towers that sent them the clients. Mara's hour is worth more to Helion than Mara is.",
+    "direction": "Established cast identity; calm, plain explanation. Preserve exact words and sentence boundaries; no narration.",
+    "segments": [
+      {
+        "text": "That file is the product.",
+        "speed": 0.94,
+        "pauseAfter": 0.22
+      },
+      {
+        "text": "Saints keep it.",
+        "speed": 0.94,
+        "pauseAfter": 0.22
+      },
+      {
+        "text": "Then they sell it back to the same towers that sent them the clients.",
+        "speed": 0.94,
+        "pauseAfter": 0.22
+      },
+      {
+        "text": "Mara's hour is worth more to Helion than Mara is.",
+        "speed": 0.94,
+        "pauseAfter": 0
+      }
+    ],
+    "loudnessLufs": -20
   }
 ]

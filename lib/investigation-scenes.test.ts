@@ -1,3 +1,4 @@
+import { bindingHashBeforeMultiline } from "../qa/production/binding-history";
 import assert from "node:assert/strict";
 import { it } from "node:test";
 import { readFileSync } from "node:fs";
@@ -37,7 +38,7 @@ it("directs ten explicit scenes using unchanged canonical words, actual actors a
 
 it("pins four exact-word performances, independent transcripts, retained prior bytes and every other original media file", () => {
   assert.equal(phase.performances.length,4);
-  assert.equal(hash("qa/media/campaign-dialogue-bindings.json"),phase.bindingSha256);
+  assert.equal(bindingHashBeforeMultiline(),phase.bindingSha256);
   const changed=new Set(phase.performances.map(row=>row.path));
   for(const row of phase.performances){
     const line=authoring.find(line=>line.id===row.id)!,delivery=provenance.lines.find(line=>line.id===row.id)!;

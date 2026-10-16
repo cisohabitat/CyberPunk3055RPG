@@ -695,3 +695,12 @@ The security review patches Next.js to 15.5.28 and overrides its vulnerable Post
 Imported journal ids now use own-property lookups, preventing a crafted save from crashing the journal. Nested save metadata is copied through a schema allowlist, reserved flag keys are discarded, and codex, preferences and manual slots have size limits before JSON parsing. Existing saves, corruption checksums and held dice remain compatible. Save text stays ordinary escaped text; saves remain local, editable and unencrypted.
 
 Production adds browser security headers, disables the unused image optimizer and restricts resource loading to local assets. Static Next.js hydration still requires inline scripts, so the CSP does not provide strict inline-script protection. CI actions use immutable revisions without persisted checkout credentials, and only GitHub Actions checks can satisfy the deployment gate. See [the detailed findings, verification and remaining limits](docs/SECURITY_REVIEW.md).
+
+
+## Restored multiline speeches
+
+The missing-voice review found two silent speeches: Quill explaining the Chapel’s memory business (`chapel`) and Lumen explaining the shard’s fate (`lumen_deal`). Their quotations span paragraphs, which the previous parser skipped. The parser now recognizes complete multiline quotations, and four new exact-word recordings use the established Quill/Lumen voices with matching transcripts, portraits and existing scene art.
+
+Coverage is now 306 bindings, 301 quoted speeches and 294 active files across 121 voiced scenes. The preceding 290 active voice files and all earlier bindings remain unchanged. An independent character-scanning regression checks multiline speech without reusing the playback parser. Custom player-name addresses, the player’s question to Quill, narration and quoted written material/advertising remain deliberately silent.
+
+The playback audit also correctly handles explicit replay after bounded-cache eviction. See [the findings, silent exceptions and validation](docs/VOICE_COVERAGE_REVIEW.md).

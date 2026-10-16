@@ -3057,5 +3057,45 @@
     "choiceId": "fake-pact",
     "outcome": "miss",
     "attribution": "she says to the room"
+  },
+  {
+    "key": "multiline-lumen_deal-0",
+    "id": "voice-campaign-multiline-lumen-deal-1",
+    "scene": "lumen_deal",
+    "sceneSpeaker": "Sister Lumen",
+    "speaker": "Sister Lumen",
+    "quote": "Mara Voss signed the coolant dump into Ward Nine. Three hundred people. One memo. No funeral that used their names. The shard is the only unedited hour.\n\nSell it to Quill and he sells it to Helion, and Helion buys the last copy of its own crime. Break it, and I leak what I remember. Memory is weaker than a shard. It is still a fire.",
+    "text": "Mara Voss signed the coolant dump into Ward Nine. Three hundred people. One memo. No funeral that used their names. The shard is the only unedited hour.",
+    "part": 0
+  },
+  {
+    "key": "multiline-lumen_deal-1",
+    "id": "voice-campaign-multiline-lumen-deal-2",
+    "scene": "lumen_deal",
+    "sceneSpeaker": "Sister Lumen",
+    "speaker": "Sister Lumen",
+    "quote": "Mara Voss signed the coolant dump into Ward Nine. Three hundred people. One memo. No funeral that used their names. The shard is the only unedited hour.\n\nSell it to Quill and he sells it to Helion, and Helion buys the last copy of its own crime. Break it, and I leak what I remember. Memory is weaker than a shard. It is still a fire.",
+    "text": "Sell it to Quill and he sells it to Helion, and Helion buys the last copy of its own crime. Break it, and I leak what I remember. Memory is weaker than a shard. It is still a fire.",
+    "part": 1
+  },
+  {
+    "key": "multiline-chapel-0",
+    "id": "voice-campaign-multiline-chapel-1",
+    "scene": "chapel",
+    "sceneSpeaker": "Quill",
+    "speaker": "Quill",
+    "quote": "Clients call it absolution. The machine reads the hour, files the raw memory, then burns the feeling out and leaves the facts standing there like furniture. The raw file sits in the plinth under the chair.\n\nThat file is the product. Saints keep it. Then they sell it back to the same towers that sent them the clients. Mara's hour is worth more to Helion than Mara is.",
+    "text": "Clients call it absolution. The machine reads the hour, files the raw memory, then burns the feeling out and leaves the facts standing there like furniture. The raw file sits in the plinth under the chair.",
+    "part": 0
+  },
+  {
+    "key": "multiline-chapel-1",
+    "id": "voice-campaign-multiline-chapel-2",
+    "scene": "chapel",
+    "sceneSpeaker": "Quill",
+    "speaker": "Quill",
+    "quote": "Clients call it absolution. The machine reads the hour, files the raw memory, then burns the feeling out and leaves the facts standing there like furniture. The raw file sits in the plinth under the chair.\n\nThat file is the product. Saints keep it. Then they sell it back to the same towers that sent them the clients. Mara's hour is worth more to Helion than Mara is.",
+    "text": "That file is the product. Saints keep it. Then they sell it back to the same towers that sent them the clients. Mara's hour is worth more to Helion than Mara is.",
+    "part": 1
   }
 ]

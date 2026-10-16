@@ -90,7 +90,7 @@ describe("campaign character dialogue", () => {
     for (const ending of ["ending_names", "ending_quiet", "ending_witness", "ending_listed"]) assert.ok(scenes.has(ending));
   });
   it("ships every new dialogue file with measured signal and unchanged prior WAVs", () => {
-    assert.equal(deliveries.lines.length, 199);
+    assert.equal(deliveries.lines.length, 203);
     const known = new Set([...deliveries.lines, ...old.lines].map(l => l.id));
     for (const binding of bindings) assert.ok(known.has(binding.id), binding.id);
     for (const delivery of [...deliveries.lines, ...old.lines]) {

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-15",
+  "generated": "2026-10-16",
   "disclosure": "Stock synthetic voices generated offline with Kokoro v1.0; no actor session or individual voice clone was commissioned. Only the fixed authored quotations below are rendered. No model or speech service ships in the game.",
   "driver": {
     "name": "kokoro-onnx",
@@ -6125,6 +6125,195 @@
       "durationSeconds": 4.500666666666667,
       "peak": 0.570219099521637,
       "rms": 0.10860389471054077
+    },
+    {
+      "id": "voice-campaign-multiline-lumen-deal-1",
+      "speaker": "Sister Lumen",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "text": "Mara Voss signed the coolant dump into Ward Nine. Three hundred people. One memo. No funeral that used their names. The shard is the only unedited hour.",
+      "direction": "Established cast identity; calm, plain explanation. Preserve exact words and sentence boundaries; no narration.",
+      "segments": [
+        {
+          "text": "Mara Voss signed the coolant dump into Ward Nine.",
+          "speed": 0.93,
+          "pauseAfter": 0.22
+        },
+        {
+          "text": "Three hundred people.",
+          "speed": 0.93,
+          "pauseAfter": 0.22
+        },
+        {
+          "text": "One memo.",
+          "speed": 0.93,
+          "pauseAfter": 0.22
+        },
+        {
+          "text": "No funeral that used their names.",
+          "speed": 0.93,
+          "pauseAfter": 0.22
+        },
+        {
+          "text": "The shard is the only unedited hour.",
+          "speed": 0.93,
+          "pauseAfter": 0
+        }
+      ],
+      "loudnessLufs": -20,
+      "integratedLufs": -19.99,
+      "truePeakDbtp": -2.62,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-multiline-lumen-deal-1.mp3",
+      "sourceFile": "/workspace/saint-shard-validation/multiline-dialogue/masters/voice-campaign-multiline-lumen-deal-1.wav",
+      "sourceSha256": "bf0ce8345dbcdbb58a74ad02c6b506b64b4c8976a465ddf5ba6a2dddf916db7f",
+      "pcmDeliveryFile": "/workspace/saint-shard-validation/multiline-dialogue/masters/voice-campaign-multiline-lumen-deal-1-delivery.wav",
+      "pcmDeliverySha256": "3c04a4128b34b31f12ac736daa172aae52ee9318b823296e605365ce5273d605",
+      "sha256": "77dcc4c8516eb4f92d10d15d00a371ccd9643bbee874f51d359ea9fd03c1f14d",
+      "bytes": 143180,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 11.844,
+      "peak": 0.7371183633804321,
+      "rms": 0.10833075642585754
+    },
+    {
+      "id": "voice-campaign-multiline-lumen-deal-2",
+      "speaker": "Sister Lumen",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "text": "Sell it to Quill and he sells it to Helion, and Helion buys the last copy of its own crime. Break it, and I leak what I remember. Memory is weaker than a shard. It is still a fire.",
+      "direction": "Established cast identity; calm, plain explanation. Preserve exact words and sentence boundaries; no narration.",
+      "segments": [
+        {
+          "text": "Sell it to Quill and he sells it to Helion, and Helion buys the last copy of its own crime.",
+          "speed": 0.93,
+          "pauseAfter": 0.22
+        },
+        {
+          "text": "Break it, and I leak what I remember.",
+          "speed": 0.93,
+          "pauseAfter": 0.22
+        },
+        {
+          "text": "Memory is weaker than a shard.",
+          "speed": 0.93,
+          "pauseAfter": 0.22
+        },
+        {
+          "text": "It is still a fire.",
+          "speed": 0.93,
+          "pauseAfter": 0
+        }
+      ],
+      "loudnessLufs": -20,
+      "integratedLufs": -20.0,
+      "truePeakDbtp": -2.35,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-multiline-lumen-deal-2.mp3",
+      "sourceFile": "/workspace/saint-shard-validation/multiline-dialogue/masters/voice-campaign-multiline-lumen-deal-2.wav",
+      "sourceSha256": "e1a82e5316fbfa0fbdfb5ba8e54e07135962890df571f45174277d9ccfbc4c59",
+      "pcmDeliveryFile": "/workspace/saint-shard-validation/multiline-dialogue/masters/voice-campaign-multiline-lumen-deal-2-delivery.wav",
+      "pcmDeliverySha256": "9dccc9006e08bc48211a77ebd82bb023931493c31711c4b0d85c7b591b81466d",
+      "sha256": "d0dbc3c43a10629e34629863bf182209824cc2b9a62122d9d31391eb0e7adc85",
+      "bytes": 151244,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 12.522541666666667,
+      "peak": 0.7627496123313904,
+      "rms": 0.10966361314058304
+    },
+    {
+      "id": "voice-campaign-multiline-chapel-1",
+      "speaker": "Quill",
+      "voice": "am_michael",
+      "speed": 0.94,
+      "text": "Clients call it absolution. The machine reads the hour, files the raw memory, then burns the feeling out and leaves the facts standing there like furniture. The raw file sits in the plinth under the chair.",
+      "direction": "Established cast identity; calm, plain explanation. Preserve exact words and sentence boundaries; no narration.",
+      "segments": [
+        {
+          "text": "Clients call it absolution.",
+          "speed": 0.94,
+          "pauseAfter": 0.22
+        },
+        {
+          "text": "The machine reads the hour, files the raw memory,",
+          "speed": 0.94,
+          "pauseAfter": 0.14
+        },
+        {
+          "text": "then burns the feeling out and leaves the facts standing there like furniture.",
+          "speed": 0.86,
+          "pauseAfter": 0.24
+        },
+        {
+          "text": "The raw file sits in the plinth under the chair.",
+          "speed": 0.94,
+          "pauseAfter": 0
+        }
+      ],
+      "loudnessLufs": -20,
+      "integratedLufs": -20.0,
+      "truePeakDbtp": -1.96,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-multiline-chapel-1.mp3",
+      "sourceFile": "/workspace/saint-shard-validation/multiline-dialogue/masters/voice-campaign-multiline-chapel-1.wav",
+      "sourceSha256": "42af945f7f2ec414b1131594b7c262f297fde1d5fd6d78fe6c1466b10ff6726c",
+      "pcmDeliveryFile": "/workspace/saint-shard-validation/multiline-dialogue/masters/voice-campaign-multiline-chapel-1-delivery.wav",
+      "pcmDeliverySha256": "2fb52401306a3fc67c79ab5199004dfe673213e3653b3efca62cb822fb628e74",
+      "sha256": "e4c40f81e7762b4347b607a864f91fe1b5dc9f2a5db1cae8632fb6d51df21df5",
+      "bytes": 179756,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 14.892666666666667,
+      "peak": 0.7979487776756287,
+      "rms": 0.11269160360097885
+    },
+    {
+      "id": "voice-campaign-multiline-chapel-2",
+      "speaker": "Quill",
+      "voice": "am_michael",
+      "speed": 0.94,
+      "text": "That file is the product. Saints keep it. Then they sell it back to the same towers that sent them the clients. Mara's hour is worth more to Helion than Mara is.",
+      "direction": "Established cast identity; calm, plain explanation. Preserve exact words and sentence boundaries; no narration.",
+      "segments": [
+        {
+          "text": "That file is the product.",
+          "speed": 0.94,
+          "pauseAfter": 0.22
+        },
+        {
+          "text": "Saints keep it.",
+          "speed": 0.94,
+          "pauseAfter": 0.22
+        },
+        {
+          "text": "Then they sell it back to the same towers that sent them the clients.",
+          "speed": 0.94,
+          "pauseAfter": 0.22
+        },
+        {
+          "text": "Mara's hour is worth more to Helion than Mara is.",
+          "speed": 0.94,
+          "pauseAfter": 0
+        }
+      ],
+      "loudnessLufs": -20,
+      "integratedLufs": -20.1,
+      "truePeakDbtp": -1.71,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-multiline-chapel-2.mp3",
+      "sourceFile": "/workspace/saint-shard-validation/multiline-dialogue/masters/voice-campaign-multiline-chapel-2.wav",
+      "sourceSha256": "5abe9fcd0dc611a476978c711f399e167eed7a99d3479454518db07da4d47fa3",
+      "pcmDeliveryFile": "/workspace/saint-shard-validation/multiline-dialogue/masters/voice-campaign-multiline-chapel-2-delivery.wav",
+      "pcmDeliverySha256": "12b7a7f42b1f9da004633c6c72cfd92a6f9b6a42d9205061045781f9f2e045fb",
+      "sha256": "6ec77551732e01d5f0e8a3a0b0deb46a4d06aaf327e56e183d16eeacd5b565be",
+      "bytes": 145484,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 12.039958333333333,
+      "peak": 0.817135214805603,
+      "rms": 0.11540430784225464
     }
   ]
 }

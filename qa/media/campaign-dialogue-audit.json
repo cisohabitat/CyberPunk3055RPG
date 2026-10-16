@@ -4013,6 +4013,24 @@
       ],
       "choiceId": "fake-pact",
       "outcome": "miss"
+    },
+    {
+      "scene": "lumen_deal",
+      "primary": "Sister Lumen",
+      "text": "Mara Voss signed the coolant dump into Ward Nine. Three hundred people. One memo. No funeral that used their names. The shard is the only unedited hour.\n\nSell it to Quill and he sells it to Helion, and Helion buys the last copy of its own crime. Break it, and I leak what I remember. Memory is weaker than a shard. It is still a fire.",
+      "context": "Mara Voss signed the coolant dump into Ward Nine. Three hundred people. One memo. No funeral that used their names. The shard is the only unedited hour.\n\nSell it to Quill and he sells it to Helion, and Helion buys the last copy of its own crime. Break it, and I leak what I remember. Memory is weaker than a shard. It is still a fire.",
+      "index": 311,
+      "decision": "voice",
+      "reason": "Fixed spoken quotation spans two paragraphs; retain complete quote and exact actor."
+    },
+    {
+      "scene": "chapel",
+      "primary": "Quill",
+      "text": "Clients call it absolution. The machine reads the hour, files the raw memory, then burns the feeling out and leaves the facts standing there like furniture. The raw file sits in the plinth under the chair.\n\nThat file is the product. Saints keep it. Then they sell it back to the same towers that sent them the clients. Mara's hour is worth more to Helion than Mara is.",
+      "context": "Clients call it absolution. The machine reads the hour, files the raw memory, then burns the feeling out and leaves the facts standing there like furniture. The raw file sits in the plinth under the chair.\n\nThat file is the product. Saints keep it. Then they sell it back to the same towers that sent them the clients. Mara's hour is worth more to Helion than Mara is.",
+      "index": 312,
+      "decision": "voice",
+      "reason": "Fixed spoken quotation spans two paragraphs; retain complete quote and exact actor."
     }
   ]
 }

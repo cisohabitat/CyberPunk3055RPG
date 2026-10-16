@@ -1,3 +1,4 @@
+import { bindingsBeforeMultiline } from "../qa/production/binding-history";
 import { reviewedDeliveryHash } from "../qa/production/delivery-history";
 import consequence from "../qa/media/consequence-media.json";
 import assert from "node:assert/strict";
@@ -21,7 +22,7 @@ const transcriptWords = (text: string) => text.toLowerCase().replace(/['’]/g, 
 it("locks exact actors, words, loudness and unchanged campaign bindings for the sixteen reviewed deliveries", () => {
   assert.equal(phase.performances.length, 16);
   assert.equal(ives.precedingBindingSha256, phase.bindingSha256);
-  assert.deepEqual(bindings, ives.precedingBindings.map(line => ({ ...line, id: ives.legacyReplacements[line.id as keyof typeof ives.legacyReplacements] ?? line.id })));
+  assert.deepEqual(bindingsBeforeMultiline(), ives.precedingBindings.map(line => ({ ...line, id: ives.legacyReplacements[line.id as keyof typeof ives.legacyReplacements] ?? line.id })));
   const changed = new Set(phase.performances.map(entry => entry.id));
   for (const entry of phase.performances) {
     const line = authoring.find(line => line.id === entry.id)!;
