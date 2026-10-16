@@ -22,6 +22,8 @@ export type ClinicSchedule = {
   order: "clinic-first" | "witness-first";
   recovery: "early" | "late";
   transport: "trained" | "volunteer";
+  distribution?: "standard" | "carry" | "carrier";
+  interleave?: boolean;
 };
 export function playEconomyCampaign(spec: EconomyCase, seed: number, maxSteps = ECONOMY_CONFIG.maxSteps, schedule?: ClinicSchedule) {
   if (schedule && spec.goal !== "witness") throw new Error("Clinic schedule requires the witness goal");
@@ -49,18 +51,34 @@ export function playEconomyCampaign(spec: EconomyCase, seed: number, maxSteps = 
       return id;
     };
     if (schedule) {
+      const distribution = schedule.distribution;
+      const sideDone = distribution ? state.flags.notice_done : state.flags.pump_done;
       if (scene.id === "act2_middle") {
         enteredMiddle = true;
         if (schedule.recovery === "early" && state.strain >= 3 && ids.has("take-recovery")) return "take-recovery";
-        const clinic = () => { clinicEntry ??= { creds: state.creds, strain: state.strain }; return "help-clinic-pump"; };
-        if (schedule.order === "clinic-first" && ids.has("help-clinic-pump")) return clinic();
+        const entry = distribution ? "help-clinic-notice" : "help-clinic-pump";
+        const clinic = () => { clinicEntry ??= { creds: state.creds, strain: state.strain }; return entry; };
+        const paused = distribution && steps.some(step => step.choiceId === "pause-notice-allocation");
+        if (schedule.order === "clinic-first" && (!paused || !schedule.interleave) && ids.has(entry)) return clinic();
         if (!mission && ids.has("protect-witness")) { mission = { creds: state.creds, strain: state.strain }; return "protect-witness"; }
-        if (ids.has("help-clinic-pump")) return clinic();
+        if (ids.has(entry)) return clinic();
         for (const work of ["work-witness-shift", "work-chapel-shift"]) if (ids.has(work)) return work;
         if (ids.has("return-witness")) return "return-witness";
         if (schedule.recovery === "late" && state.strain > 0 && ids.has("take-recovery")) return "take-recovery";
         // Do not let the single-goal early-rest policy override late/no-strain play.
         return "stand";
+      }
+      if (distribution) {
+        if (scene.id === "act2_notice_brief") return "accept-notice";
+        if (scene.id === "act2_notice_sources") return pick("read-notice-slip", "read-notice-map", "read-notice-card", "plan-notice");
+        if (scene.id === "act2_notice_methods") return "compare-notice-allocation";
+        if (scene.id === "act2_notice_allocation") return !steps.some(step => step.choiceId === "pause-notice-allocation") && (state.flags.notice_schedule_33 || state.flags.notice_schedule_42) ? "pause-notice-allocation" : `allocate-notice-${distribution === "standard" ? "42" : "33"}`;
+        if (scene.id === "act2_notice_allocation_review") return steps.some(step => step.choiceId === "pause-notice-allocation") ? "offer-notice-clinic-contact" : "revise-notice-allocation";
+        if (scene.id === "act2_notice_offer") return "accept-notice-standard";
+        if (scene.id === "act2_notice_counter") return distribution === "carrier" && ids.has("fund-notice-extra-carrier") ? "fund-notice-extra-carrier" : "accept-notice-extra-trip";
+        if (scene.id === "act2_notice_receipt") return "record-private-notice";
+        if (scene.id === "act3_neighborhood" && ids.has("visit-notice")) return "visit-notice";
+        if (scene.id === "act3_notice_visit") return "record-private-reply";
       }
       if (scene.id === "act2_pump_brief") return "work-pump";
       if (scene.id === "act2_pump_methods") return ({ chrome: "isolate-pump", nerve: "brace-pump", face: "dispatch-pump", ghost: "route-pump" })[spec.stat];
@@ -69,7 +87,7 @@ export function playEconomyCampaign(spec: EconomyCase, seed: number, maxSteps = 
       if (scene.id === "act2_witness_plan" && schedule.transport === "volunteer") return "arrange-escort";
       if (scene.id === "act2_witness_door" && schedule.transport === "volunteer" && state.flags.witness_escort) return "compare-witness-support";
       if (scene.id === "act2_witness_support" && schedule.transport === "volunteer" && state.flags.witness_escort) return "promise-volunteer-shift";
-      if (scene.id === "act2_witness_arrival" && schedule.order === "witness-first" && !state.flags.pump_done) return "defer-account";
+      if (scene.id === "act2_witness_arrival" && !sideDone && (distribution || schedule.order === "witness-first")) return "defer-account";
       if (scene.id === "act2_recovery") return pick("favor-recovery", ...(state.creds >= 45 + (state.flags.witness_done ? 0 : reserveForGoal(spec, state)) ? ["pay-recovery"] : []), "short-recovery");
     }
     switch (scene.id) {

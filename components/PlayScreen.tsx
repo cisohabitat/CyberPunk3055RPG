@@ -27,7 +27,7 @@ import { sceneInteractionCue, type SceneCueName } from "@/lib/scene-cues";
 import { rememberEnding } from "@/lib/storage";
 import type { Preferences } from "@/lib/preferences";
 import { ObjectiveBrief } from "./ObjectiveBrief";
-import { unresolvedPromises } from "@/lib/objectives";
+import { weekClosingPromises } from "@/lib/objectives";
 import { MemoryTimeline } from "./MemoryTimeline";
 import { MemoryPlate } from "./MemoryPlate";
 import { RouteBoard } from "./RouteBoard";
@@ -217,7 +217,7 @@ export function PlayScreen({
     return () => window.removeEventListener("keydown", onKey);
   });
 
-  const openPromises = unresolvedPromises(state);
+  const openPromises = weekClosingPromises(state);
 
   function commit(next: GameState, choiceId: string) {
     const cue = sound && preferences.effects > 0 ? sceneInteractionCue(state, choiceId, next) : undefined;
@@ -424,7 +424,7 @@ export function PlayScreen({
                             [
                               odds ? `${STAT_INFO[odds.stat].name} · DC ${odds.dc} · ${chance}` : null,
                               choice.detail,
-                              openPromises.length && [choice.next, choice.nextSuccess, choice.nextFail].some((next) => typeof next === "string" && ["ending_week_wards", "ending_week_deal", "ending_exposed"].includes(next)) ? `${openPromises.length} campaign ${openPromises.length === 1 ? "promise remains" : "promises remain"} unresolved if the week closes` : null,
+                              openPromises.length && [choice.next, choice.nextSuccess, choice.nextFail].some((next) => typeof next === "string" && ["ending_week_wards", "ending_week_deal", "ending_exposed"].includes(next)) ? `${openPromises.length} campaign ${openPromises.length === 1 ? "promise remains" : "promises remain"} unresolved if the week closes: ${openPromises.map(row => row.title).join("; ")}` : null,
                               effectPreview(state, choice).join(" · ") || null,
                               checkResourceCosts(state, choice).join("; ") || null,
                             ]

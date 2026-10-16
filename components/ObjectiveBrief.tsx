@@ -14,7 +14,7 @@ export function ObjectiveBrief({ state }: { state: GameState }) {
     {step && <p className="next-step"><strong>Next step</strong> {step}</p>}
     {rows.length > 0 && <details><summary>{(state.flags.chapel_shift_owed || state.flags.witness_shift_owed || state.flags.response_private_consent || state.flags.kerr_route_promised || state.flags.edda_shift_consent || state.flags.pump_attempted || state.flags.notice_started || state.flags.freight_started || state.flags.shelter_started) ? "Campaign commitments" : "Memory commitments"} · {rows.filter((row) => row.status === "Complete").length}/{rows.length} complete{open > 0 && ` · ${open} open`}{compromised > 0 && ` · ${compromised} compromised`}{unresolved > 0 && ` · ${unresolved} unresolved`}</summary>
       {budget && <p data-testid="care-budget">{budget}</p>}
-      {actions.length > 0 && <div className="commitment-actions" data-testid="commitment-actions"><h3>Available here</h3><p className="hint">Find a choice to review it. Finding spends nothing; selecting the choice commits it.</p><ul>{actions.map(action => <li key={action.id}>
+      {actions.length > 0 && <div className="commitment-actions" data-testid="commitment-actions"><h2>Available here</h2><p className="hint">Find a choice to review it. Finding spends nothing; selecting the choice commits it.</p><ul>{actions.map(action => <li key={action.id}>
         {action.enabled ? <button type="button" className="ghost" data-testid={`find-commitment-${action.id}`} onClick={() => {
           const target = document.getElementById(`choice-label-${action.id}`)?.closest("button");
           target?.focus();

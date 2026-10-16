@@ -1,4 +1,5 @@
 import { encounterRecords, noticePlanRecord } from "./campaign-consequences";
+import { noticeSchedule } from "./notice-allocation";
 import { windowRemaining } from "./chapel-window";
 import { spireOutcome } from "./story/spire";
 import { shelterOutcome } from "./story/shelter";
@@ -18,7 +19,19 @@ export function objectives(state: GameState): Objective[] {
     detail: (state.flags.response_received ? "The desk received her reply into an unanswered queue. The inquiry is still open." : state.flags.response_sent ? "Dispatched privately. Return later to record the desk’s receipt; no inquiry decision is promised." : "Dispatch is open under her own name, with no clinic sponsor or public permission.") + (state.flags.mara_company_waited ? " The sealed reply missed the window hour’s intake batch; later dispatch uses the next one." : ""),
   });
   if (state.flags.kerr_route_promised) rows.push({ id: "kerr-collection", title: "Kerr’s collection terms", status: state.flags.kerr_route_private && state.flags.kerr_route_trace ? "Compromised" : state.flags.kerr_route_delivered ? "Complete" : state.flags.kerr_route_done || atWall ? "Unresolved" : "Open", detail: routeOutcome(state) });
-  if (state.flags.notice_started) rows.push({ id: "notice", title: "Clinic appointment information", status: state.flags.notice_unresolved ? "Unresolved" : state.flags.notice_done ? "Complete" : atWall ? "Unresolved" : "Open", detail: state.flags.notice_unresolved ? "Distribution was left with staff; no patient receipt was observed." : state.flags.notice_done ? "Distribution was arranged without a public home list. Patient receipt and attendance are still unobserved." : "Choose a usable route or private channel without publishing home addresses." });
+  if (state.flags.notice_started) {
+    const draft = noticeSchedule(state);
+    rows.push({ id: "notice", title: "Clinic appointment information", status: state.flags.notice_unresolved ? "Unresolved" : state.flags.notice_done ? "Complete" : atWall ? "Unresolved" : "Open",
+      detail: state.flags.notice_unresolved ? "Distribution was left with staff; no patient receipt was observed."
+        : state.flags.notice_receipt_observed ? "Private dispatch was accepted. Two card receipts were acknowledged; other receipts and all attendance remain unknown."
+        : state.flags.notice_done ? "Distribution was arranged without a public home list. Patient receipt and attendance are still unobserved."
+        : state.flags.notice_allocation_committed ? atWall ? "Dispatch accepted the six-card schedule, but its acceptance was not recorded before the week ended. Patient receipt and attendance remain unknown." : "Dispatch accepted the six-card schedule. Record its acceptance receipt; patient receipt and attendance remain unknown."
+        : state.flags.notice_private_confirmed ? `Private dispatch was accepted. ${draft ? "The saved allocation remains a separate draft; patient" : "Patient"} receipt and attendance remain unknown.`
+        : state.flags.notice_public_route ? `The public stop and window were posted. ${draft ? "The saved allocation remains a separate draft; patient" : "Patient"} receipt and attendance remain unknown.`
+        : atWall ? "The week ended before dispatch was accepted. The saved papers create no patient receipt or attendance."
+        : draft ? `Saved draft: ${draft.early} early / ${draft.late} later. Dispatch has not accepted it. Resume clinic distribution from the canal; compare capacity and choose the actual work or fare.`
+        : "Choose a usable route or private channel without publishing home addresses." });
+  }
   if (state.flags.notice_done && !state.flags.notice_unresolved) rows.push({ id: "notice-followup", title: "Check clinic distribution", status: state.flags.notice_monitored ? "Compromised" : state.flags.notice_followed_up ? "Complete" : "Open", detail: state.flags.notice_monitored ? `The advertised window was observed. ${state.flags.notice_private_reply_booked ? "A private reply channel is booked, with new appointments unconfirmed." : state.flags.notice_window_withdrawn ? "The window was withdrawn, with no replacement confirmed." : "Callers requested another time; no response is arranged."} No home list was published; attendance remains unknown.` : state.flags.notice_receipt_observed ? "Two private receipts were acknowledged. Other receipts and all attendance remain unknown." : "Return to Lumen at Ward Nine for a dispatch reply. No patient receipt is observed yet." });
   const account = state.journal.some((entry) => entry.id === "nia-account");
   if (state.flags.memory_witness || state.flags.memory_redacted) {
@@ -56,6 +69,12 @@ export function objectives(state: GameState): Objective[] {
 
 export function unresolvedPromises(state: GameState): Objective[] {
   return objectives(state).filter((row) => row.status === "Open" || row.status === "Unresolved" || (row.id === "kerr-collection" && row.status === "Compromised" && !state.flags.kerr_route_delivered && !state.flags.kerr_route_done));
+}
+
+// A dispatch reply becomes available at Ward Nine, after closing the Week.
+// Keep it in the campaign ledger without calling it missed work this week.
+export function weekClosingPromises(state: GameState): Objective[] {
+  return unresolvedPromises(state).filter(row => row.id !== "notice-followup");
 }
 
 export function nextStep(state: GameState): string {
@@ -129,14 +148,16 @@ export function nextStep(state: GameState): string {
   if (state.sceneId === "act3_edda_visit") return "Hear the source’s employment consequences; support does not settle the review.";
   if (state.sceneId === "act2_archive_gap") return "Obtain ledger corroboration, pause for free and return before the week closes, or close the search with its gap recorded. The failed archive attempt remains recorded.";
   if (state.sceneId === "act2_middle") {
+    if (state.flags.notice_started && !state.flags.notice_done && state.flags.witness_deferred) return "Clinic distribution and Nia’s account are unfinished. Resume the saved clinic plan and return for her separate review before closing the week; neither job completes the other.";
     if (state.flags.kerr_route_failed && !state.flags.kerr_route_done && !state.flags.kerr_route_collected) return `Kerr's case is still held. Resume recovery through his collection request; departure is already paid and there is no second attempt.${state.creds < 20 ? " You cannot yet afford the twenty-creds courier." : " The twenty-creds courier is affordable, but registers Kerr as recipient."} Closing the week leaves the handover unresolved.`;
     const work = encounterRecords(state).filter(row => row.open);
     if (work.length) return `${work.map(row => row.title).join("; ")} remains open. Keep the work or handover before closing the week, or leave it unresolved.${state.flags.witness_deferred ? " Nia has a safe room; return for her review before attaching an account. Keeping a shift does not give recording permission." : ""}`;
     if (state.flags.witness_deferred) return "Nia has a safe room, but her account is unfinished. Return for her review before closing the week; clinic work does not grant recording permission.";
-    if (state.flags.notice_started && !state.flags.notice_done) return "Clinic distribution is unfinished. Resume the saved draft or leave it unaccepted when closing the week.";
+    if (state.flags.notice_started && !state.flags.notice_done) return state.flags.notice_allocation_committed ? "Dispatch has accepted the plan. Return to clinic distribution and record the existing acceptance receipt without paying again; patient receipt remains unobserved." : "Clinic distribution is unfinished. Resume the saved draft or leave it unaccepted when closing the week.";
     if (state.flags.kerr_route_promised && !state.flags.kerr_route_done) return "Kerr’s collection is unfinished. Resume the saved plan or leave the promise open when closing the week.";
-    if (objectives(state).some((row) => row.status === "Open")) return "Your memory promise is still open. Finish it here before closing the week, or choose to leave it unresolved.";
-    if (unresolvedPromises(state).length) return "The archive gap is recorded. Closing the week leaves that issuing key unverified.";
+    if (weekClosingPromises(state).some((row) => row.status === "Open")) return "Your memory promise is still open. Finish it here before closing the week, or choose to leave it unresolved.";
+    if (weekClosingPromises(state).length) return "The archive gap is recorded. Closing the week leaves that issuing key unverified.";
+    if (state.flags.notice_done && !state.flags.notice_unresolved && !state.flags.notice_followed_up) return "Clinic dispatch is recorded. Its reply becomes available at Ward Nine after the Week; patient receipt and attendance remain unobserved for now.";
   }
   if (state.sceneId === "districts") return state.flags.act2_done ? "Ward Nine is the remaining call. Take your account to the wall." : "Answer a district call. Your old contact also offers an optional origin favor.";
   return "";

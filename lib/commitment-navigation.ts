@@ -4,10 +4,16 @@ import type { GameState } from "./types";
 
 // Advice follows visible canonical choices; it grants no new action authority.
 export function commitmentActions(state: GameState) {
-  if (state.pendingCheck || state.flags.act2_done || getScene(state.sceneId).finale) return [];
+  if (state.pendingCheck || getScene(state.sceneId).finale) return [];
   const rows = objectives(state);
   const ids = new Set<string>();
   for (const row of rows) {
+    if (row.id === "notice" && row.status === "Open") {
+      for (const id of ["help-clinic-notice", "accept-notice", "plan-notice", "compare-notice-allocation", "offer-notice-clinic-contact", "accept-notice-standard", "accept-notice-extra-trip", "fund-notice-extra-carrier", "revise-notice-allocation", "resume-notice-allocation-receipt", "record-private-notice", "record-public-notice"]) ids.add(id);
+    }
+    if (row.id === "notice-followup" && row.status === "Open") {
+      for (const id of ["visit-notice", "record-private-reply", "record-public-reply", "record-unresolved-reply", "repair-public-window"]) ids.add(id);
+    }
     if (row.id === "witness" && row.status !== "Complete" && row.status !== "Unresolved") {
       for (const id of ["protect-witness", "return-witness", "repair-location", "review-account", "file-account"]) ids.add(id);
     }
@@ -17,7 +23,7 @@ export function commitmentActions(state: GameState) {
     if (row.id === "witness-shift" && row.status === "Open") ids.add("work-witness-shift");
     if (row.id === "chapel-shift" && row.status === "Open") ids.add("work-chapel-shift");
   }
-  if (rows.some(r => r.status === "Open") && state.strain > 0) ids.add("take-recovery");
+  if (!state.flags.act2_done && rows.some(r => r.status === "Open") && state.strain > 0) ids.add("take-recovery");
   return presentChoices(state, getScene(state.sceneId)).filter(c => ids.has(c.id)).map(c => ({
     id: c.id, label: c.label, enabled: c.enabled,
     detail: [c.disabledReason, c.detail, ...effectPreview(state, c)].filter(Boolean).join(" · "),

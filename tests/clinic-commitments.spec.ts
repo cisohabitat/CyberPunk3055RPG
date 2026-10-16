@@ -52,7 +52,7 @@ for (const [width, artwork] of [[390, "full"], [1440, "full"], [320, "none"]] as
       await page.reload(); await page.getByTestId("continue-run").click(); expect(await saved()).toEqual(returned);
     }
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
-    expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations).toEqual([]);
+    expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
     expect(errors).toEqual([]); if (artwork === "none") expect(artRequests).toEqual([]);
   });
 }
