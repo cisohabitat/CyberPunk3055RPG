@@ -1,0 +1,173 @@
+{
+  "version": 1,
+  "baseline": "934c461c7195956fb97aa977066072e1935e9f1b",
+  "testedParent": "c1fe2700282111e8f25c51383f0264a625fc050e",
+  "sourceSha256": {
+    "components/Sheet.tsx": "e8f542b9a2e28bdfece9d91ae6c8306063954f80156cfd0379ba7c8e40036c2d",
+    "components/PlayScreen.tsx": "4bf073da2275864e1524d33e56bc344c144ef5301b1fe708814073b5a6533307",
+    "components/SceneIllustration.tsx": "133bc9b9a88fc4d1548866eb88e234e3a9468bf645df39add4df1b9da5019c90",
+    "app/globals.css": "da315fb853e2db9e4396ec15b1cf7449387bbec52b44d9858fdff89e779a1e99",
+    "lib/choice-sections.ts": "66fd3fbd0a1839e9bc8500454eec9e994d7b4c4d0c0c3f2671bd7ce1d2d17329",
+    "lib/art-atmosphere.ts": "f185a13c1fc3267d93acddbf522bccbf763047d25c180ac6c931e3306172d83a",
+    "lib/art.ts": "19043960f905f29f273ede5ab78228afc99d57ae6311f70a26a0fd638780f11e",
+    "lib/checkpoints.ts": "2afb5dd51b48216276d05b01cc289d91055579667f3023a89154491ed19eecfd"
+  },
+  "stages": [
+    {
+      "stage": 1,
+      "commit": "591b6fa"
+    },
+    {
+      "stage": 2,
+      "commit": "6dc3fcf"
+    },
+    {
+      "stage": 3,
+      "commit": "0a57a6d"
+    },
+    {
+      "stage": 4,
+      "commit": "c1fe270"
+    },
+    {
+      "stage": 5,
+      "commit": "this change"
+    }
+  ],
+  "validation": {
+    "sourceTests": 633,
+    "browserChecks": 184,
+    "postLabelBrowserChecks": 6,
+    "postLabelScope": "Overlapping chapter cases after the final display-label change; not 190 distinct cases.",
+    "projects": [
+      "chromium",
+      "phone"
+    ],
+    "widths": [
+      320,
+      390,
+      1440
+    ],
+    "productionAssets": 575,
+    "violations": [],
+    "initialTransferMaximumBytes": 2015369,
+    "initialTransferBudgetBytes": 2097152,
+    "performance": {
+      "revision": "c1fe2700282111e8f25c51383f0264a625fc050e",
+      "dirty": true,
+      "initialTransferBudget": 2097152,
+      "autoplayPolicy": "Full Chromium; first visit requires document activation, with no prior origin permission.",
+      "samples": [
+        {
+          "sceneId": "opening_city",
+          "width": 390,
+          "height": 844,
+          "artwork": "full",
+          "firstVisitActivation": false,
+          "firstVisitAudioState": "suspended",
+          "goalReadyMs": 2119,
+          "network": "Emulated 5 Mbps / 150 ms",
+          "elapsedToReadyMs": 4213,
+          "encodedResourceBytes": 1674817,
+          "htmlBytes": 2336,
+          "titleLcpMs": 1376,
+          "layoutShift": 0,
+          "overflow": false,
+          "artworkRequests": 3,
+          "goalVisible": true
+        },
+        {
+          "sceneId": "opening_city",
+          "width": 390,
+          "height": 844,
+          "artwork": "none",
+          "firstVisitActivation": false,
+          "firstVisitAudioState": "suspended",
+          "goalReadyMs": 2024,
+          "network": "Emulated 5 Mbps / 150 ms",
+          "elapsedToReadyMs": 2067,
+          "encodedResourceBytes": 429640,
+          "htmlBytes": 2336,
+          "titleLcpMs": 1120,
+          "layoutShift": 0,
+          "overflow": false,
+          "artworkRequests": 0,
+          "goalVisible": true
+        },
+        {
+          "sceneId": "opening_city",
+          "width": 1440,
+          "height": 900,
+          "artwork": "full",
+          "firstVisitActivation": false,
+          "firstVisitAudioState": "suspended",
+          "goalReadyMs": 947,
+          "network": "Unthrottled automation host",
+          "elapsedToReadyMs": 1036,
+          "encodedResourceBytes": 2013033,
+          "htmlBytes": 2336,
+          "titleLcpMs": 192,
+          "layoutShift": 0,
+          "overflow": false,
+          "artworkRequests": 3,
+          "goalVisible": true
+        },
+        {
+          "sceneId": "opening_city",
+          "width": 1440,
+          "height": 900,
+          "artwork": "none",
+          "firstVisitActivation": false,
+          "firstVisitAudioState": "suspended",
+          "goalReadyMs": 911,
+          "network": "Unthrottled automation host",
+          "elapsedToReadyMs": 950,
+          "encodedResourceBytes": 1094357,
+          "htmlBytes": 2336,
+          "titleLcpMs": 180,
+          "layoutShift": 0,
+          "overflow": false,
+          "artworkRequests": 0,
+          "goalVisible": true
+        }
+      ],
+      "limitations": [
+        "Four synthetic samples on the automation host, not p75/p95 field data or named physical devices.",
+        "Elapsed-to-ready includes automated form entry and network-idle waits; it is not LCP or INP.",
+        "titleLcpMs measures this navigation's title screen. Encoded resource bytes are Resource Timing measurements, not all wire overhead.",
+        "A previously permitted visit can autoplay the separate 2.6 MB menu theme before gameplay; these samples measure the first-visit activation policy."
+      ]
+    },
+    "unchangedComparedToBaseline": [
+      "public/audio",
+      "lib/story",
+      "lib/engine.ts",
+      "lib/storage.ts",
+      "qa/media/campaign-dialogue-bindings.json"
+    ],
+    "screenReview": [
+      "stall at 1440",
+      "chapter-wall at 390",
+      "chapter-week at 1440",
+      "hatch-caught at 390",
+      "held-case at 1440"
+    ]
+  },
+  "art": {
+    "paintings": 4,
+    "deliveryBytes": 1404534,
+    "source": "qa/media/story-first-art.json"
+  },
+  "inventory": {
+    "scenes": 197,
+    "choices": 598,
+    "authoredRoutes": 148,
+    "voiceBindings": 306,
+    "activeVoices": 294
+  },
+  "limits": [
+    "Source-aware internal play and generated-art review; no independent artistic acceptance or grade increase.",
+    "Four local first-visit performance samples; not field percentiles or named physical devices.",
+    "Exact-commit CI and Vercel release remain required."
+  ]
+}

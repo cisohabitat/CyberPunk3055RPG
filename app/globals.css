@@ -1207,3 +1207,14 @@ html[data-text="0"] .finale .scene-row .portrait-frame figcaption { height: 3rem
 .chapter-scene { background-position: center top; background-repeat: no-repeat; }
 .chapter-scene .prose { background: rgba(9,8,13,.88); padding: 1rem; border-left: 1px solid var(--line); }
 .chapter-scene .chapter-transition { background-color: rgba(9,8,13,.78); }
+
+/* A short settling gesture, then still artwork. Never pan/crop the painting. */
+.art-window { position: relative; overflow: hidden; isolation: isolate; }
+.art-atmosphere { position: absolute; inset: 0; pointer-events: none; opacity: 0; }
+.art-atmosphere[data-effect="rain"] { background: repeating-linear-gradient(104deg,transparent 0 23px,rgba(183,218,229,.7) 24px,transparent 25px 49px); mask-image: linear-gradient(90deg,transparent 45%,black); animation: art-rain 3.8s ease-out 1; }
+.art-atmosphere[data-effect="reflection"] { inset: 68% 0 0 48%; background: linear-gradient(170deg,transparent 10%,rgba(210,165,88,.7) 48%,transparent 55%); animation: art-reflection 3.8s ease-in-out 1; }
+.art-atmosphere[data-effect="lamp"] { background: radial-gradient(ellipse at 30% 12%,rgba(255,193,101,.65),transparent 48%); animation: art-lamp 3.8s ease-in-out 1; }
+@keyframes art-rain { 0% { opacity: 0; transform: translateY(-8px); } 25% { opacity: .075; } 100% { opacity: 0; transform: translateY(8px); } }
+@keyframes art-reflection { 0%,100% { opacity: 0; } 50% { opacity: .09; } }
+@keyframes art-lamp { 0%,100% { opacity: 0; } 50% { opacity: .075; } }
+@media (prefers-reduced-motion: reduce) { .art-atmosphere { animation: none !important; } }

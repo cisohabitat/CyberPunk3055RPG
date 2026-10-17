@@ -13,4 +13,6 @@ it("checkpoint labels distinguish the chapter and precise place or ending", () =
   const state = createCharacter({ handle: "Rex", givenName: "Ada", origin: "spire", bonus: { chrome: 0, nerve: 0, face: 2, ghost: 0 } });
   assert.match(checkpointLabel(state), /^The Hour · /);
   assert.match(checkpointLabel({ ...state, sceneId: "ending_quiet" }), /^The Wall · /);
+  assert.equal(checkpointLabel({ ...state, sceneId: "card_week" }), "The Week");
+  assert.equal(checkpointLabel({ ...state, sceneId: "card_wall" }), "The Wall");
 });

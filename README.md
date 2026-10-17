@@ -734,3 +734,9 @@ Selected conversations and mission doors now separate questions, preparations, a
 The Week and The Wall now have distinct dawn-street and rain-worn memorial backdrops. Both remain neutral across every entry route, with opaque reading panels and unchanged chapter text.
 
 The hatch confrontation and failed canal collection now have their own paintings: the masked attendant with wrench and mic, and the closed case held on its shelf. Existing dialogue, voice recordings and outcome-specific prose remain aligned.
+
+Four selected setting paintings now have a restrained rain, reflection or lamp settling effect lasting 3.8 seconds, then become still. Faces, prose and controls stay still; saved and system reduced motion disable the effects.
+
+Chapter restore notices now show the chapter name once when it is also the location; precise place and finale labels remain.
+
+All five story-first visual stages are implemented. Validation includes 633 source tests, 184 combined Chromium/phone checks, six overlapping chapter rechecks and four first-visit transfer samples under 2 MiB. Full exact-commit CI remains required; the staged report records scope and limits.

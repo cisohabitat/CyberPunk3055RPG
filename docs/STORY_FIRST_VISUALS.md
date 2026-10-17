@@ -27,3 +27,25 @@ Validation: focused media/chapter/docs source checks and generated-asset hash ch
 Only hatch_caught and act2_route_recovery gain new framed art. The masked attendant retains established identity, respirator and work clothing; a low wrench and visible collar mic match the actual speech. The closed case stays held before any courier or handover. Both registration/trace states keep their own prose with the same neutral painting. The prior hatch preparation and completed delivery imagery remain separate. All dialogue, casting, voice bytes and bindings stay unchanged.
 
 Validation: focused art/media/docs checks, TypeScript and production build pass. Thirty-six Chromium/phone checks cover the entire new presentation suite plus conditional voice/text/actual-actor cases. New paintings are decoded at phone/desktop, have complete 3:2 framing, preserve canonical prose and both trace variants, and remain absent in art-none.
+
+## 5. Restrained environmental motion
+
+Only the opening street, canal dispatch, incinerator preparation and held case receive decorative rain/reflection/lamp layers. Each lasts 3.8 seconds once and fades back to zero; no continuous motion or flashing, camera pan, zoom, crop, text movement or delay. Captions remain outside the image layer. Missing images remove the layer. Both saved and operating-system reduced motion disable animation. No new media request or playback sound is introduced.
+
+Final validation: 633 source tests, TypeScript, production build and production media audit pass. A combined 184 Chromium/phone checks pass across the new suite, prior reading/artwork tests, all-actor presentation, automatic/check dialogue, pivotal scenes, historical paintings and all four finales. Six overlapping chapter cases pass again after the final restore-label change. Four final first-visit performance samples remain below the 2 MiB limit (maximum 2,015,369 bytes including HTML), with zero measured layout shift/overflow and zero art requests in text-only mode. These are synthetic host samples, not field percentiles. Source hashes and raw sample metrics are retained in [the validation record](../qa/media/story-first-validation.json). These are internal checks and generated art review, not independent artistic acceptance or a new grade.
+
+Screen review also found duplicated chapter names in restore notices. Display labels now show the name once when chapter and location match; precise location/finale labels and save bytes are retained.
+
+## Delivery record
+
+| Stage | Commit |
+| --- | --- |
+| Compact sidebar and preceding CI corrections | `591b6fa` |
+| Authored choice sections | `6dc3fcf` |
+| Neutral chapter backdrops | `0a57a6d` |
+| Confrontation and setback paintings | `c1fe270` |
+| Settling atmosphere and final review | This change |
+
+Each stage updates README and AGENTS and is pushed to main. The final exact-commit CI remains mandatory for production; intermediate runs can be cancelled by the existing latest-push concurrency rule. No release gate is skipped.
+
+Four new paintings deliver eight JPEGs, with no old media rewritten. Inventory stays 197 scenes / 598 choices / 148 complete authored routes / 306 voice bindings / 294 active voice files. Campaign prose, all voice bytes and bindings, rules and save schema match the preceding baseline. The internal grade remains provisional 8.2.

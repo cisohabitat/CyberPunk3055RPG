@@ -4,7 +4,7 @@
     {
       "treatment": "illustration",
       "asset": "/art/opening.jpg",
-      "reason": "Establish the inhabited city and arrival before the job; no memo evidence or ending is shown. The Hour chapter heading reuses this existing opening painting and adds only an abstract clock motif, without altering the invitation or introducing spoken narration.",
+      "reason": "Establish the inhabited city and arrival before the job; no memo evidence or ending is shown. The Hour chapter heading reuses this existing opening painting and adds only an abstract clock motif, without altering the invitation or introducing spoken narration. A brief decorative environmental layer settles to stillness after 3.8 seconds, with reduced motion disabling it; no face, evidence or outcome is animated.",
       "scenes": [
         "opening_city"
       ]
@@ -64,7 +64,7 @@
         "act2_route_review",
         "act2_route_crossing"
       ],
-      "reason": "Neutral planning alcove before collection; unselected map and closed case communicate the setting across drafts, success and held-case recovery without depicting an earned outcome. Failed recovery can pause with the case still held and the promise open; this neutral alcove depicts no courier, payment or handover."
+      "reason": "Neutral planning alcove before collection; unselected map and closed case communicate the setting across drafts, success and held-case recovery without depicting an earned outcome. Failed recovery can pause with the case still held and the promise open; this neutral alcove depicts no courier, payment or handover. A brief decorative environmental layer settles to stillness after 3.8 seconds, with reduced motion disabling it; no face, evidence or outcome is animated."
     },
     {
       "treatment": "illustration",
@@ -79,7 +79,7 @@
     {
       "treatment": "illustration",
       "asset": "/art/canal-dispatch.jpg",
-      "reason": "Reuse the neutral depot alcove and closed case for circuit repair, saved patrol observations, load planning and liability terms in the same location. No tactic, patrol beat, release, shift, receipt, recipient privacy or refund is depicted; text carries those states.",
+      "reason": "Reuse the neutral depot alcove and closed case for circuit repair, saved patrol observations, load planning and liability terms in the same location. No tactic, patrol beat, release, shift, receipt, recipient privacy or refund is depicted; text carries those states. A brief decorative environmental layer settles to stillness after 3.8 seconds, with reduced motion disabling it; no face, evidence or outcome is animated.",
       "scenes": [
         "act2_route_handling",
         "act2_depot_methods",
@@ -383,7 +383,7 @@
     {
       "treatment": "illustration",
       "asset": "/art/opening.jpg",
-      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits.",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits. A brief decorative environmental layer settles to stillness after 3.8 seconds, with reduced motion disabling it; no face, evidence or outcome is animated.",
       "scenes": [
         "ending_sold",
         "ending_both",
@@ -469,7 +469,7 @@
     {
       "treatment": "illustration",
       "asset": "/art/canal-dispatch.jpg",
-      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. A brief decorative environmental layer settles to stillness after 3.8 seconds, with reduced motion disabling it; no face, evidence or outcome is animated.",
       "scenes": [
         "act2_heat",
         "act2_archive_verified",
@@ -692,7 +692,7 @@
     {
       "treatment": "illustration",
       "asset": "/art/incinerator-flue.jpg",
-      "reason": "Wide establishing composition emphasizes the square hatch above the incinerator flue before entry. No open hatch, crossing, tech encounter, weapon or safe exit is depicted. Existing actual-speaker portraits and exact dialogue remain unchanged.",
+      "reason": "Wide establishing composition emphasizes the square hatch above the incinerator flue before entry. No open hatch, crossing, tech encounter, weapon or safe exit is depicted. Existing actual-speaker portraits and exact dialogue remain unchanged. A brief decorative environmental layer settles to stillness after 3.8 seconds, with reduced motion disabling it; no face, evidence or outcome is animated.",
       "scenes": [
         "hatch"
       ]
@@ -732,7 +732,7 @@
     {
       "treatment": "illustration",
       "asset": "/art/held-case.jpg",
-      "reason": "Failed collection aftermath: the closed case remains on its shelf, before any registered courier or handover. No recipient, register, delivery receipt, privacy guarantee, medical treatment or completed promise is depicted; both trace states retain their own prose.",
+      "reason": "Failed collection aftermath: the closed case remains on its shelf, before any registered courier or handover. No recipient, register, delivery receipt, privacy guarantee, medical treatment or completed promise is depicted; both trace states retain their own prose. A brief decorative environmental layer settles to stillness after 3.8 seconds, with reduced motion disabling it; no face, evidence or outcome is animated.",
       "scenes": [
         "act2_route_recovery"
       ]
