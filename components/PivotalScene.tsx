@@ -12,6 +12,6 @@ export function PivotalScene({ direction, art, children, finale = false, investi
       <p className="pivotal-label">{direction.label}</p>
       {children}
     </div>
-    {art && <div className="pivotal-art"><SceneIllustration art={art} /></div>}
+    {art && <div className="pivotal-art"><SceneIllustration art={art} paired /></div>}
   </section>;
 }

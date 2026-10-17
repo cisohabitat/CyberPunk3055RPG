@@ -912,8 +912,9 @@ html[data-motion="reduce"] *, html[data-motion="reduce"] *::before, html[data-mo
 .portrait-placeholder { aspect-ratio: 3 / 4; background: linear-gradient(145deg, #0d2630, #100f16); }
 .scene-illustration { margin: 1.1rem 0; border: 1px solid var(--line); background: #09080d; }
 .scene-illustration img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: contain; }
-.scene-illustration figcaption { padding: .5rem .75rem; color: var(--muted); font: .8rem var(--font-display), sans-serif; letter-spacing: .08em; text-transform: uppercase; }
-.scene-illustration .art-unavailable { padding: 1rem; color: var(--muted); }
+.scene-illustration figcaption { padding: .6rem .75rem; color: var(--muted); font: .8rem/1.6 var(--font-display), sans-serif; letter-spacing: .025em; }
+.scene-illustration .art-unavailable { display: grid; align-content: center; aspect-ratio: 3 / 2; margin: 0; padding: 1rem; color: var(--muted); }
+.portrait-frame[data-speaker] .portrait { object-fit: contain; }
 html[data-artwork="none"] .scene { background-color: #09080d; }
 
 .title-card { width: min(1100px, 100%); padding: 0; }
