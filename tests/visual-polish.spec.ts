@@ -50,3 +50,27 @@ for (const width of [390, 1440]) test(`paired art keeps its complete frame and s
   await expect(page.getByTestId("choice-heard")).toBeEnabled();
   expect(await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!))).toEqual(state);
 });
+
+for (const width of [390, 1440, 320]) for (const sceneId of ["hatch", "act2_archive_prep"]) {
+  test(`the ${sceneId} composition remains readable at ${width}px`, async ({ page }) => {
+    await page.setViewportSize({ width, height: 900 });
+    const state = { ...base, sceneId };
+    const media: string[] = []; page.on("request", request => { if (request.url().includes("/art/")) media.push(request.url()); });
+    await page.addInitScript(({ state, width }) => {
+      localStorage.setItem("saint-shard-3055-v1", JSON.stringify(state));
+      localStorage.setItem("saint-shard-preferences", JSON.stringify({ sound: false, reading: "all", motion: "reduce", artwork: width === 320 ? "none" : "full" }));
+    }, { state, width });
+    await page.goto("/"); await page.getByTestId("continue-run").click();
+    if (width === 320) { await expect(page.getByTestId("scene-illustration")).toHaveCount(0); expect(media).toEqual([]); }
+    else {
+      const image = page.getByTestId("scene-illustration").locator("img");
+      await expect(image).toHaveAttribute("src", sceneIllustration(sceneId)!.src);
+      await image.scrollIntoViewIfNeeded();
+      await image.evaluate(image => (image as HTMLImageElement).decode());
+      const bounds = await image.boundingBox(); expect(bounds!.width / bounds!.height).toBeCloseTo(1.5, 2);
+      expect(await image.evaluate(image => getComputedStyle(image).objectFit)).toBe("contain");
+    }
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    expect(await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!))).toEqual(state);
+  });
+}

@@ -4,6 +4,8 @@ The [five-stage visual polish program](docs/VISUAL_POLISH_CYCLE.md) begins with 
 
 Artwork now requests a size appropriate to its full-width or paired composition. Scene plates and character portraits retain their full frame, captions are easier to read, and an unavailable scene image keeps its space while showing the description.
 
+Two new paintings vary the campaign’s compositions: the incinerator approach uses a wide view looking up toward the closed hatch; archive preparation uses a close view of the unused reader and closed folio. Both retain the established setting and show the situation before any result is earned. Matching dialogue and actors are unchanged.
+
 A solo story RPG in **Kite City, 3055**. You play it in the browser. The run stays on that browser. There is no account and no server save.
 
 Quill hires you to lift Mara Voss's unedited hour from Glass Chapel before dawn. Helion is about to edit a crime out of her: she signed the Ward Nine coolant dump, and three hundred people died. Kerr is paid to stop you. Sister Lumen may help you leak the hour or break it. A week later the city asks for a buyer or a witness. At Ward Nine, Sera keeps the dead on a wall, and that is the last choice.

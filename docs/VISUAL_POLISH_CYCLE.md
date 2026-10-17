@@ -18,9 +18,14 @@ All scene paintings retain the complete 3:2 composition; character portraits exp
 
 Stage-two validation: the production build, seven focused documentation/media source checks and 52 Chromium/phone browser cases pass, including full-composition, missing-image, pivotal-scene and reading-layout checks.
 
+## 3. Varied scene compositions
+
+Two referenced generated paintings provide a wide, upward establishing view of the incinerator flue and a close archive-preparation desk detail. They are restricted to `hatch` and `act2_archive_prep`; later outcomes keep their appropriate preceding plates. The hatch and folio remain closed, with no claimed entry, retrieval, authenticated issuer or permission. Four responsive JPEG deliveries add 574,724 bytes to the repository; neither is part of the opening first-visit asset set. Original PNGs remain outside Git. Explicit decisions, source/reference/delivery hashes, credits and the audition are updated together. No voice or canonical prose changes.
+
+Stage-three validation: all 625 preceding source tests passed, the additional composition regression passes, and the production build/report have no budget violations. The final media/documentation checks and 28 focused Chromium/phone cases pass.
+
 ## Remaining stages
 
-3. Add selected establishing and detail compositions where the existing repeated setting plate misses the scene’s visual emphasis. Keep outcome/evidence/consent boundaries explicit and provide matching provenance, responsive delivery, credits and audition entries.
 4. Compare all fifteen cast identities and their expressions for silhouette, wardrobe, lighting and palette; correct demonstrated inconsistencies while preserving actual-speaker and earned-conduct selection.
 5. Give The Hour, The Week and The Wall distinctive, restrained chapter presentation. Keep all text immediately available, reduced motion respected and existing chapter choices/saves unchanged.
 

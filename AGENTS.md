@@ -4,6 +4,8 @@ The [five-stage visual polish program](docs/VISUAL_POLISH_CYCLE.md) follows read
 
 Stage two uses explicit `paired` sizing in `SceneIllustration`, passed by `PivotalScene`, so a half-width painting does not advertise a full-width slot. Keep 3:2 scene plates and complete actor portraits uncropped; runner origin plates retain their established decorative crop. Missing scene images reserve the same ratio and show their description. Captions use readable mixed case. Preserve responsive sources, asset bytes, text-only behavior and stable goals/saves.
 
+Stage three adds only `incinerator-flue` for `hatch` and `archive-preparation` for `act2_archive_prep`. Keep explicit decisions, references, responsive JPEG hashes and neutral meanings in `qa/media/visual-compositions.json`, scene art, provenance, credits and audition. The hatch stays closed and the ledger is not retrieved; later failure/custody scenes keep their preceding plates. No source words, actor, voice file or binding changes. The scene-art audit and focused source/browser checks enforce this scope.
+
 This file is for anyone changing the code. [README.md](README.md) is for players and for the deploy. Keep the two on the same game.
 
 `docs/PROJECT_DESCRIPTION.md` provides the short GitHub About description, a game overview and links to the latest feature report. Keep its player-facing claims consistent with the implemented game and media credits. The README links to it near the introduction; detailed test evidence remains in the corresponding phase report.

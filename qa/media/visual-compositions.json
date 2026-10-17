@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "sourceRevision": "ce0388fe2fd29fb0bfa4b107e2cd3f7234e6d58b",
+  "bindingSha256": "15ae8b35c16b330b545f001e23dc75b5f4bd131225347f616ab76c1b7088f0bd",
+  "scenes": [
+    {
+      "scene": "hatch",
+      "id": "incinerator-flue",
+      "source": "/workspace/generated_images/exec-5af5f5ce-7ee1-4562-b7bb-598246dc7da1.png",
+      "reference": "public/art/chapel-service.jpg",
+      "caption": "Glass Chapel · the incinerator vein",
+      "description": "A square closed hatch hangs above a curved incinerator flue, framed by copper ducts, maintenance rails and cold light from a high grille.",
+      "reason": "Wide establishing composition emphasizes the square hatch above the incinerator flue before entry. No open hatch, crossing, tech encounter, weapon or safe exit is depicted.",
+      "files": [
+        {
+          "path": "public/art/incinerator-flue.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 231727,
+          "sha256": "d943a04c7cb25f7822a7ef628ea4780b788c52227c774cbc5ee70fdf5186da8f"
+        },
+        {
+          "path": "public/art/incinerator-flue-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 59912,
+          "sha256": "d3bcbec65817621adf9f08de4a15111997ac1e24f36293b25698ef7623f5df1d"
+        }
+      ],
+      "sourceSha256": "8face355b4a301d3af2a5a256932bb9894c68b3e010e9470d4d58787571ee029",
+      "referenceSha256": "b8e1d3ac5a628807d03bf02367e0ab1a1f90b9e3dde8bbc5e9d7c139b80e6c35"
+    },
+    {
+      "scene": "act2_archive_prep",
+      "id": "archive-preparation",
+      "source": "/workspace/generated_images/exec-6fc6ca9d-506b-4afb-aa31-e5595ad169fe.png",
+      "reference": "public/art/archive-desk.jpg",
+      "caption": "Helion · before the search",
+      "description": "A closed service folio and unused inspection light rest beside a dark reader on the scratched archive preparation desk; the drawers remain shut.",
+      "reason": "Close detail composition emphasizes preparing the reader and route before retrieval. The folio and drawers stay closed; nothing authenticates an issuing key, exposes a source, grants publication consent or claims a completed search.",
+      "files": [
+        {
+          "path": "public/art/archive-preparation.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 221021,
+          "sha256": "567474a9f42a03bb8af719654aa32a21ff6e78a446ffe44c2489208485cd86cd"
+        },
+        {
+          "path": "public/art/archive-preparation-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 62064,
+          "sha256": "8fc13ac0455d669d54b9e910681e92fbe68e7c3fb717937beca4ab329fd5c728"
+        }
+      ],
+      "sourceSha256": "fac791ba459c42ef92810d11b6214fe8bef12ed2c52e2905bd50360d11d81c4c",
+      "referenceSha256": "3380a27c045a88e14ed668eac830ff10184f802149f877fd5d5348b64f51c2b2"
+    }
+  ],
+  "limits": "Internal source-aware visual review; generated paintings, no independent artistic acceptance. No scene text, actor, voice, evidence, consent or save behavior changes."
+}

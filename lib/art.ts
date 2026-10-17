@@ -203,3 +203,13 @@ for (const id of ["act3_testimony_review", "act3_testimony_correction", "act3_te
   description: "Sera holds a pencil over a blank cover sheet at the rain-lit records table. A closed folder stays separate beside her hand; the recorder shows no operating status, private identity or filed outcome.",
 };
 ENCOUNTERS.act2_witness_safe = { ...ENCOUNTERS.act2_witness_arrival, caption: "Ward Nine · Nia reviews her own words" };
+
+// Deliberate new viewpoints override only these two reviewed catalog scenes.
+ENCOUNTERS.act2_archive_prep = {
+  src: "/art/archive-preparation.jpg", small: "/art/archive-preparation-small.jpg", caption: "Helion · before the search",
+  description: "A closed service folio and unused inspection light rest beside a dark reader on the scratched archive preparation desk; the drawers remain shut.",
+};
+ENCOUNTERS.hatch = {
+  src: "/art/incinerator-flue.jpg", small: "/art/incinerator-flue-small.jpg", caption: "Glass Chapel · the incinerator vein",
+  description: "A square closed hatch hangs above a curved incinerator flue, framed by copper ducts, maintenance rails and cold light from a high grille.",
+};

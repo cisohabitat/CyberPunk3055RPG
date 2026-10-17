@@ -109,3 +109,8 @@ Four fixed exact-word MP3 performances restore the two-paragraph Quill and Siste
 ### Speech progress and orderly clarity (17 October 2026)
 
 One exact-word orderly performance uses the existing licensed offline Kokoro `am_puck` voice, with a short phrase pause separating “Pass” from “still scans.” Source PCM, preceding/current delivery hashes, retained preceding MP3, independent unprompted transcript and existing portrait/art decision are recorded in [speech-clarity.json](qa/media/speech-clarity.json). All other 293 active performances remain unchanged. There is no runtime synthesis, voice clone or commissioned actor session.
+
+
+### Visual compositions (17 October 2026)
+
+Two generated paintings provide a wide incinerator-flue view and a close archive-preparation detail. `image_gen.imagegen` used the existing service passage and archive desk as setting references. Original PNGs are retained; JPEG delivery only resizes and encodes. Provenance records source, reference and delivery hashes. These neutral preparations depict no completed crossing, retrieved source or permission. All voice recordings and actors remain unchanged.
