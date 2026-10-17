@@ -28,12 +28,15 @@ for (const scene of ["chapel", "lumen_deal"]) for (const width of [390, 1440]) t
   await keyboardActivate(page, page.getByTestId("show-rest"));
   const files = lines.map(line => `${line.id}.mp3`);
   await expect.poll(speech).toEqual([files[0]]);
+  await expect(page.getByTestId("voice-line").getByRole("status")).toContainText("Line 1 of 2");
   await expect(page.getByTestId("spoken-quote")).toHaveText(lines[0].text);
   await expect(page.getByTestId("spoken-quote")).toHaveAttribute("data-speaker", lines[0].speaker);
   await expect(page.getByTestId("voice-line").locator("details")).toContainText(lines[1].text);
   await expect.poll(speech, { timeout: 35_000 }).toEqual(files);
+  await expect(page.getByTestId("voice-line").getByRole("status")).toContainText("Line 2 of 2");
   await expect(page.getByTestId("spoken-quote")).toHaveText(lines[1].text);
   await expect(page.getByTestId("voice-line").getByRole("button", { name: /^Listen to / })).toBeVisible({ timeout: 30_000 });
+  await expect(page.getByTestId("voice-line").getByRole("status")).toContainText("Selected dialogue · Line 1 of 2");
   await expect(page.getByTestId("spoken-quote")).toHaveCount(0);
   expect((await audio()).cleared.filter(file => file.startsWith("voice-"))).toEqual(files);
   expect(await page.evaluate(() => localStorage.getItem("saint-shard-3055-v1"))).toBe(before);

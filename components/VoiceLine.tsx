@@ -29,6 +29,7 @@ export function VoiceLine({ line, lines, enabled, automatic, paused = false, onS
   useEffect(() => () => onSpeaking?.(null), [onSpeaking]);
   if (!selected) return null;
   const active = view.status === "loading" || view.status === "playing";
+  const progress = `Line ${lines.findIndex(candidate => candidate.key === selected.key) + 1} of ${lines.length}`;
   const name = selected.speaker === "Sister Lumen" ? "Lumen" : selected.speaker;
   return <aside className="voice-line" aria-label={`${name} selected dialogue`} data-testid="voice-line" data-voice-id={selected.id}>
     <button type="button" className="ghost" disabled={!enabled} onClick={() => {
@@ -36,7 +37,7 @@ export function VoiceLine({ line, lines, enabled, automatic, paused = false, onS
       else playback.current!.listen(selected.key);
     }}>{active ? "Stop line" : `Listen to ${name}`}</button>
     {lines.length > 1 && <button type="button" className="ghost" disabled={!enabled || active} onClick={() => playback.current!.playAll()}>Play all dialogue</button>}
-    <p className="hint" role="status">{paused ? "Resume sound to listen. Dialogue stays in the text." : !enabled ? "Enable Sound and voice volume in Settings to listen." : view.status === "loading" ? "Loading selected dialogue…" : view.status === "unavailable" ? "Voice unavailable. The complete dialogue remains in the text." : view.status === "playing" ? `Playing selected dialogue · ${name} · synthetic voice` : "Selected dialogue · synthetic voice"}</p>
+    <p className="hint" role="status">{paused ? "Resume sound to listen. Dialogue stays in the text." : !enabled ? "Enable Sound and voice volume in Settings to listen." : view.status === "loading" ? `Loading selected dialogue… · ${progress}` : view.status === "unavailable" ? `Voice unavailable. The complete dialogue remains in the text. · ${progress}` : view.status === "playing" ? `Playing selected dialogue · ${name} · ${progress} · synthetic voice` : `Selected dialogue · ${progress} · synthetic voice`}</p>
     <details><summary>Voice transcript</summary>
       <ol>{lines.map(candidate => <li key={candidate.key} aria-current={view.status === "playing" && candidate.key === selected.key ? "true" : undefined}><strong>{candidate.speaker}:</strong> {candidate.text}</li>)}</ol>
       {lines.length > 1 && <div><label htmlFor={selectId}>Dialogue line</label><select id={selectId} value={selected.key} disabled={active} onChange={event => setView({ status: "idle", key: event.target.value })}>

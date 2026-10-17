@@ -20,8 +20,10 @@ test("revealing a two-character conversation plays Sera then Ren and releases ea
   test.setTimeout(40_000); await open(page, "act2_shelter_brief", { reading: "paragraph" });
   expect(await speech(page)).toEqual([]); await expect(page.getByTestId("voice-line")).toHaveCount(0);
   await page.getByTestId("show-rest").click(); const queue = expected("act2_shelter_brief");
+  await expect(page.getByTestId("voice-line").getByRole("status")).toContainText("Line 1 of 2");
   await expect.poll(() => speech(page), { timeout: 25_000 }).toEqual(queue);
   await expect(page.getByTestId("voice-line")).toHaveAttribute("aria-label", "Ren selected dialogue");
+  await expect(page.getByTestId("voice-line").getByRole("status")).toContainText("Line 2 of 2");
   await expect(page.locator(".scene-row .portrait-frame")).toHaveAttribute("data-speaker", "Ren");
   await expect(page.getByTestId("spoken-quote")).toHaveAttribute("data-speaker", "Ren");
   expect((await audio(page)).disposed.filter(n => n.startsWith("voice-"))).toEqual(queue.slice(0, 1));
@@ -39,9 +41,12 @@ test("adding Lumen's revealed reply leaves Mara's current voice playing once", a
   test.setTimeout(40_000); await open(page, "act2_response_invitation", { reading: "paragraph" });
   await page.getByTestId("next-paragraph").click();
   await expect.poll(() => speech(page)).toEqual(expected("act2_response_invitation").slice(0, 1));
+  await expect(page.getByTestId("voice-line").getByRole("status")).toContainText("Line 1 of 1");
   await page.getByTestId("show-rest").click();
+  await expect(page.getByTestId("voice-line").getByRole("status")).toContainText("Line 1 of 2");
   await expect.poll(() => speech(page), { timeout: 25_000 }).toEqual(expected("act2_response_invitation"));
   await expect(page.getByTestId("voice-line")).toHaveAttribute("aria-label", "Lumen selected dialogue");
+  await expect(page.getByTestId("voice-line").getByRole("status")).toContainText("Line 2 of 2");
   await page.getByRole("button", { name: "Stop line", exact: true }).click();
   await page.getByRole("button", { name: "Settings", exact: true }).click(); await page.getByRole("button", { name: "Done", exact: true }).click();
   expect(await speech(page)).toEqual(expected("act2_response_invitation"));
@@ -56,11 +61,13 @@ test("manual mode permits the whole conversation or a selected actor without aut
   await page.getByRole("button", { name: "Stop line", exact: true }).click();
   await page.getByTestId("voice-line").locator("summary").click();
   await page.getByLabel("Dialogue line", { exact: true }).selectOption({ index: 1 });
+  await expect(page.getByTestId("voice-line").getByRole("status")).toContainText("Selected dialogue · Line 2 of 2");
   await page.getByRole("button", { name: "Listen to Ren", exact: true }).click();
   await expect.poll(() => speech(page)).toEqual([...expected("act2_shelter_brief"), expected("act2_shelter_brief")[1]]);
   await expect(page.getByTestId("voice-line").locator('li[aria-current="true"]')).toContainText("Ren:");
   await expect(page.getByTestId("voice-line").locator('li[aria-current="true"]')).toContainText("My father needs the ramp");
   await page.getByRole("button", { name: "Stop line", exact: true }).click();
+  await expect(page.getByTestId("voice-line").getByRole("status")).toContainText("Selected dialogue · Line 1 of 2");
   expect(requests).toHaveLength(2);
 });
 

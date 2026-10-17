@@ -104,3 +104,8 @@ Archive/hearing direction (October 2026): two additional generated scene paintin
 ### Restored multiline dialogue (16 October 2026)
 
 Four fixed exact-word MP3 performances restore the two-paragraph Quill and Sister Lumen speeches skipped by the former quotation parser. Offline Kokoro v1.0 generation retains the established licensed stock `am_michael` and `af_heart` identities; no voice clone, actor commission, narrator, runtime model or player-text synthesis is introduced. Original PCM masters remain outside Git. Source/delivery hashes, phrase direction, signal metrics and transcripts are recorded with `qa/media/multiline-dialogue.json` and campaign voice provenance. Existing setting art and portraits remain appropriate; no new painting is claimed.
+
+
+### Speech progress and orderly clarity (17 October 2026)
+
+One exact-word orderly performance uses the existing licensed offline Kokoro `am_puck` voice, with a short phrase pause separating “Pass” from “still scans.” Source PCM, preceding/current delivery hashes, retained preceding MP3, independent unprompted transcript and existing portrait/art decision are recorded in [speech-clarity.json](qa/media/speech-clarity.json). All other 293 active performances remain unchanged. There is no runtime synthesis, voice clone or commissioned actor session.

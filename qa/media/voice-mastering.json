@@ -4,7 +4,7 @@
   "truePeakCeilingDbtp": -1.5,
   "method": "ffmpeg EBU-R128 measurement of exact decoded deliveries; per-clip constant gain; independently measured post-trim signal. No compression, limiting, silence removal or audio file rewrite. Applies before the separate user voice-volume bus.",
   "source": "scripts/measure-voice-levels.py",
-  "runtimeMapSha256": "c66c9acfecf317eec43127f130c59fba9cc858dbcccc01dc4615cdfb04740bd7",
+  "runtimeMapSha256": "f249e8aadec56f250c59cfba1d939bf0f7fe058d0d75c043ce714aa0a0442dc9",
   "bindingSha256": "15ae8b35c16b330b545f001e23dc75b5f4bd131225347f616ab76c1b7088f0bd",
   "clips": [
     {
@@ -1795,16 +1795,16 @@
     {
       "id": "voice-campaign-orderly-196a881f1c95",
       "path": "public/audio/voice-campaign-orderly-196a881f1c95.mp3",
-      "sha256": "02fc799ee9c840a1d4788279dd23308d9758b69d595692c8d6a9cf66806e8908",
+      "sha256": "16c6f87e33ea4c5e3168d095b9523459e53172f9080c7b3282941588b6968909",
       "source": {
-        "integratedLufs": -19.95,
-        "truePeakDbtp": -3.29
+        "integratedLufs": -19.83,
+        "truePeakDbtp": -3.31
       },
-      "trimDb": -3.55,
-      "gain": 0.66450767,
+      "trimDb": -3.64,
+      "gain": 0.65765784,
       "playback": {
-        "integratedLufs": -23.5,
-        "truePeakDbtp": -6.84
+        "integratedLufs": -23.48,
+        "truePeakDbtp": -6.95
       }
     },
     {

@@ -2384,9 +2384,19 @@
     "id": "voice-campaign-orderly-196a881f1c95",
     "speaker": "Orderly",
     "voice": "am_puck",
-    "speed": 0.87,
+    "speed": 0.88,
     "text": "Pass still scans,",
-    "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions. Word-clarity pass: articulate consonants and limits at a measured pace; preserve exact wording."
+    "direction": "Short clinical reply, clearly articulate adjacent sibilants and the final consonant; exact authored words, unchanged stock actor. No added speech.",
+    "segments": [
+      {
+        "text": "Pass",
+        "pauseAfter": 0.12
+      },
+      {
+        "text": "still scans,",
+        "pauseAfter": 0
+      }
+    ]
   },
   {
     "id": "voice-campaign-sister-lumen-ef706d358585",

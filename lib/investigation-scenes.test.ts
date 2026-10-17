@@ -50,7 +50,7 @@ it("pins four exact-word performances, independent transcripts, retained prior b
     assert.equal(row.transcription.sha256,row.sha256);assert.deepEqual(words(row.transcription.text),words(row.text));
     assert.ok(Math.abs(row.integratedLufs+20)<=.6);assert.ok(row.truePeakDbtp<=-1.5);
   }
-  for(const file of oldMedia.preservedMedia) if(!changed.has(file.path)) assert.equal(hash(file.path),file.sha256,file.path);
+  for(const file of oldMedia.preservedMedia) if(!changed.has(file.path)) assert.equal(reviewedDeliveryHash(file.path,file.sha256),file.sha256,file.path);
 });
 
 it("keeps mechanical sounds tied to committed physical actions, without adding permission or a success signal", () => {

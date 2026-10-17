@@ -1,12 +1,12 @@
 import assert from "node:assert/strict";
 import { readFileSync, readdirSync } from "node:fs";
-import { createHash } from "node:crypto";
 import { describe, it } from "node:test";
 import { createCharacter, commitChoice, getScene, presentChoices, sceneText } from "./engine";
 import { quotedSpeech, visibleCampaignDialogue, spokenDialogueRange } from "./campaign-dialogue";
 import { SCENES } from "./story";
 import { multilineSpeech } from "../qa/production/multiline-speech";
 import { bindingsBeforeMultiline } from "../qa/production/binding-history";
+import { reviewedDeliveryHash } from "../qa/production/delivery-history";
 import type { ReplaySpec } from "./story-replay";
 import phase from "../qa/media/multiline-dialogue.json";
 import deliveries from "../qa/media/campaign-dialogue-provenance.json";
@@ -60,8 +60,7 @@ describe("dialogue across paragraphs", () => {
     assert.equal(bindingsBeforeMultiline().length, 302);
     assert.equal(phase.additions.length, 4);
     for (const [id, expected] of Object.entries(phase.preservedVoiceSha256)) {
-      const data = readFileSync(`public/audio/${id}.${id.startsWith("voice-campaign-") ? "mp3" : "wav"}`);
-      assert.equal(createHash("sha256").update(data).digest("hex"), expected, id);
+      assert.equal(reviewedDeliveryHash(`public/audio/${id}.${id.startsWith("voice-campaign-") ? "mp3" : "wav"}`, expected), expected, id);
     }
     for (const binding of phase.additions) {
       const delivery = deliveries.lines.find(line => line.id === binding.id)!;

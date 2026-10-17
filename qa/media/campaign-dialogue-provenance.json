@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-16",
+  "generated": "2026-10-17",
   "disclosure": "Stock synthetic voices generated offline with Kokoro v1.0; no actor session or individual voice clone was commissioned. Only the fixed authored quotations below are rendered. No model or speech service ships in the game.",
   "driver": {
     "name": "kokoro-onnx",
@@ -4332,22 +4332,32 @@
       "id": "voice-campaign-orderly-196a881f1c95",
       "speaker": "Orderly",
       "voice": "am_puck",
-      "speed": 0.87,
+      "speed": 0.88,
       "text": "Pass still scans,",
-      "direction": "Intimate, conversational and restrained; preserve the stated boundary or uncertainty. No narration or stage directions. Word-clarity pass: articulate consonants and limits at a measured pace; preserve exact wording.",
+      "direction": "Short clinical reply, clearly articulate adjacent sibilants and the final consonant; exact authored words, unchanged stock actor. No added speech.",
+      "segments": [
+        {
+          "text": "Pass",
+          "pauseAfter": 0.12
+        },
+        {
+          "text": "still scans,",
+          "pauseAfter": 0
+        }
+      ],
       "language": "en-us",
       "path": "public/audio/voice-campaign-orderly-196a881f1c95.mp3",
-      "sourceFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-orderly-196a881f1c95.wav",
-      "sourceSha256": "27428eeca3a9c03c588e4e44343acf39be62559711452d2594ce029995912f60",
-      "pcmDeliveryFile": "/workspace/generated_audio/campaign-dialogue/voice-campaign-orderly-196a881f1c95-delivery.wav",
-      "pcmDeliverySha256": "0326100175ab76e3f2267871c70f54b89a4f6b23043c1a295563cbe94ca72172",
-      "sha256": "02fc799ee9c840a1d4788279dd23308d9758b69d595692c8d6a9cf66806e8908",
-      "bytes": 18476,
+      "sourceFile": "/workspace/saint-shard-validation/speech-progress/masters/voice-campaign-orderly-196a881f1c95.wav",
+      "sourceSha256": "01f1d722456092fc7587eecd36c0ed5732e5d82a0d74e150e01aedce7db20c65",
+      "pcmDeliveryFile": "/workspace/saint-shard-validation/speech-progress/masters/voice-campaign-orderly-196a881f1c95-delivery.wav",
+      "pcmDeliverySha256": "81e22183c1c12991083a48aa1387861a66cf2893c51111cc40197c0582e84b69",
+      "sha256": "16c6f87e33ea4c5e3168d095b9523459e53172f9080c7b3282941588b6968909",
+      "bytes": 24812,
       "sampleRate": 24000,
       "channels": 1,
-      "durationSeconds": 1.4613333333333334,
-      "peak": 0.6839960813522339,
-      "rms": 0.10010264068841934
+      "durationSeconds": 1.9853333333333334,
+      "peak": 0.6826040148735046,
+      "rms": 0.10394763946533203
     },
     {
       "id": "voice-campaign-sister-lumen-ef706d358585",
