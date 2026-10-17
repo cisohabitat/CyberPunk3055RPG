@@ -704,3 +704,5 @@ The missing-voice review found two silent speeches: Quill explaining the Chapelâ
 Coverage is now 306 bindings, 301 quoted speeches and 294 active files across 121 voiced scenes. The preceding 290 active voice files and all earlier bindings remain unchanged. An independent character-scanning regression checks multiline speech without reusing the playback parser. Custom player-name addresses, the playerâ€™s question to Quill, narration and quoted written material/advertising remain deliberately silent.
 
 The playback audit also correctly handles explicit replay after bounded-cache eviction. See [the findings, silent exceptions and validation](docs/VOICE_COVERAGE_REVIEW.md).
+
+The restored Lumen scene speech also required correcting the check-dialogue browser tests: opening a dice check must stop the scene queue, and the separate check-result line must remain hidden and silent until the roll. The tests now distinguish those two voice controls while retaining mute, manual replay, saved-die and late-loading cancellation checks. Production still requires every browser project to pass.

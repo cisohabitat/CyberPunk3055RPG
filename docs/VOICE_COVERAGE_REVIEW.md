@@ -64,6 +64,12 @@ Final artifacts include `/tmp/saint-shard-multiline-playback.json`, `/tmp/saint-
 
 ## Evidence and limits
 
+### Check-dialogue CI correction
+
+The first remote CI run for the restoration, [38912232920](https://github.com/cisohabitat/CyberPunk3055RPG/actions/runs/38912232920), passed Test but failed five check-dialogue tests in each of the four Browser projects. Those tests assumed `lumen_deal` had no scene speech or voice control before a die result. The restored multiline speech invalidated that assumption; production correctly stayed on the preceding security release.
+
+The correction scopes the pre-roll quotation assertion to the check dialog, verifies the separate result recording has not started, and requires the background scene control to be disabled with any started scene voices disposed. Existing preference, explicit replay, held-roll and late-loading departure assertions remain. Desktop Chromium and phone Chromium pass all ten focused cases locally. Local Firefox and WebKit launch were blocked by workspace browser setup; full remote browser checks remain mandatory. This correction changes tests and documentation only, with no new story, art, voice or runtime behavior.
+
 The four new performances, source/delivery hashes, retained original media hashes, phrase direction and matching art decisions are recorded in `qa/media/multiline-dialogue.json`, campaign dialogue provenance, the audition index and credits. Original PCM masters remain outside Git under `/workspace/saint-shard-validation/multiline-dialogue/masters`.
 
 Raw local audit and browser artifacts remain outside Git under `/tmp/saint-shard-*`. There are no live player saves or automatic uploads. Conditional sampling is not exhaustive proof of every reachable state. Audio transcription is an automated cross-check, not human listening acceptance. The synthetic browser examples verify playback from source checkpoints, not independent participants or complete UI playthroughs. A specific reported line should still be investigated if observed behavior differs.

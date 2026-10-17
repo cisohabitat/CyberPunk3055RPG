@@ -1,12 +1,13 @@
 import { test, expect, type Page } from "@playwright/test";
 import { createCharacter, commitChoice, getScene, presentChoices } from "../lib/engine";
 import { installAudioReview, type AudioReview } from "../qa/production/audio-review";
+import type { Preferences } from "../lib/preferences";
 import bindings from "../qa/media/campaign-dialogue-bindings.json";
 const clip = bindings.find(line => "choiceId" in line && line.choiceId === "fake-pact")!;
 const name = `${clip.id}.mp3`;
 const run = { ...createCharacter({ handle: "Check voice", givenName: "Jo", origin: "gutterwire", bonus: { chrome: 2, nerve: 0, face: 0, ghost: 0 } }), sceneId: "lumen_deal" };
 const audio = (page: Page): Promise<AudioReview> => page.evaluate(() => (window as unknown as { audioReview: AudioReview }).audioReview);
-async function open(page: Page, preferences = {}) {
+async function open(page: Page, preferences: Partial<Preferences> = {}) {
   await page.addInitScript(installAudioReview, {});
   await page.addInitScript(({ run, preferences }) => {
     if (!localStorage.getItem("saint-shard-3055-v1")) localStorage.setItem("saint-shard-3055-v1", JSON.stringify(run));
@@ -14,8 +15,17 @@ async function open(page: Page, preferences = {}) {
   }, { run, preferences });
   await page.goto("/"); await page.getByTestId("continue-run").click();
   await page.getByTestId("choice-fake-pact").click();
-  expect((await audio(page)).started.filter(n => n.startsWith("voice-"))).toEqual([]);
-  await expect(page.getByTestId("voice-line")).toHaveCount(0);
+  // The scene now has its own multiline speech. Opening the check must cancel
+  // that queue, while the result's separate quotation stays hidden until rolled.
+  const dialog = page.getByRole("dialog");
+  await expect(dialog.getByTestId("voice-line")).toHaveCount(0);
+  expect((await audio(page)).started).not.toContain(name);
+  const sceneVoice = page.getByTestId("scene").getByTestId("voice-line");
+  await expect(sceneVoice).toHaveCount(1);
+  await expect(sceneVoice.getByRole("button", { name: /Listen to Lumen|Stop line/ })).toBeDisabled();
+  await expect.poll(async () => (await audio(page)).liveSources).toBe(preferences.sound === false ? 0 : 2);
+  const interrupted = (await audio(page)).started.filter(n => n.startsWith("voice-") && n !== name);
+  expect((await audio(page)).disposed.filter(n => n.startsWith("voice-") && n !== name)).toEqual(interrupted);
   await page.evaluate(() => { Math.random = () => .01; }); await page.getByTestId("roll-button").click();
   await expect(page.getByTestId("continue-check")).toBeVisible();
 }
