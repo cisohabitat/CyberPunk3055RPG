@@ -1201,3 +1201,5 @@ html[data-motion="reduce"] .fragment-placed { animation: none; }
 .finale .pivotal-label { margin-bottom: .35rem; }
 html[data-text="0"] .finale .scene-row .portrait-frame figcaption { height: 3rem; }
 .finale .restore-notice { margin-block: .25rem; }
+
+.choices .choice-group-title { padding-block: .6rem .25rem; color: var(--cyan); border-top: 1px solid var(--line); font: 500 .85rem/1.5 var(--font-display), sans-serif; letter-spacing: .04em; }

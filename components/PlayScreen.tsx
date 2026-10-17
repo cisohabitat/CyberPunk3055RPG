@@ -1,6 +1,7 @@
 "use client";
 
 import { ArchiveCatalog } from "./ArchiveCatalog";
+import { choiceSection } from "@/lib/choice-sections";
 import { ChapterTransition } from "./ChapterTransition";
 import { CATALOG_ACTIONS } from "@/lib/archive-catalog";
 
@@ -402,10 +403,13 @@ export function PlayScreen({
                   if (scene.memory && choice.id.startsWith("inspect-")) return null;
                   if (scene.id === "act2_archive_compare" && CATALOG_ACTIONS.has(choice.id)) return null;
                   if (scene.id === "memory_sequence" && choice.id.startsWith("place-")) return null;
+                  const section = choiceSection(scene.id, choice.id);
+                  const startsSection = section && section !== choiceSection(scene.id, choices[index - 1]?.id ?? "");
                   const odds = choice.check ? previewCheck(state, choice.check) : null;
                   const chance = !odds ? null : odds.hits === 10 ? "certain" : odds.hits === 0 ? "no chance" : `${odds.hits} in 10`;
                   return (
                     <Fragment key={choice.id}>
+                      {startsSection && <h3 className="choice-group-title" data-testid="choice-section">{section}</h3>}
                       {index === decisionIndex && <h3 id="chapter-decision" className="choice-group-title" tabIndex={-1}>{decisionTitle}</h3>}
                       <button
                         className="choice"

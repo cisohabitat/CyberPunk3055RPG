@@ -1,6 +1,7 @@
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
-import { createCharacter } from "../lib/engine";
+import { CHOICE_SECTIONS, choiceSection } from "../lib/choice-sections";
+import { createCharacter, getScene, presentChoices, commitChoice } from "../lib/engine";
 import { FACTIONS, STATS, FACTION_CHECK, STAT_INFO } from "../lib/character";
 const base = createCharacter({ handle: "Visual review", givenName: "Jo", origin: "gutterwire", bonus: { chrome: 2, nerve: 0, face: 0, ghost: 0 } });
 for (const width of [390, 1440, 320]) test(`compact sheet preserves rules and state at ${width}px`, async ({ page }) => {
@@ -28,4 +29,39 @@ for (const width of [390, 1440, 320]) test(`compact sheet preserves rules and st
   expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   expect(await page.evaluate(() => localStorage.getItem("saint-shard-3055-v1"))).toBe(before);
+});
+
+for (const width of [390, 1440, 320]) test(`choice sections preserve actions and shortcuts at ${width}px`, async ({ browser, baseURL }) => {
+  test.setTimeout(90_000);
+  for (const sceneId of Object.keys(CHOICE_SECTIONS)) {
+    const context = await browser.newContext({ baseURL, viewport: { width, height: 900 } });
+    try {
+      const page = await context.newPage(), state = { ...base, sceneId }, choices = presentChoices(state, getScene(sceneId));
+      await page.addInitScript(({ state, width }) => {
+        localStorage.setItem("saint-shard-3055-v1", JSON.stringify(state));
+        localStorage.setItem("saint-shard-preferences", JSON.stringify({ sound: false, artwork: "none", numberShortcuts: true, textStep: width === 320 ? 2 : 0 }));
+      }, { state, width });
+      await page.goto("/"); await page.getByTestId("continue-run").click();
+      const before = await page.evaluate(() => localStorage.getItem("saint-shard-3055-v1"));
+      const region = page.getByRole("region", { name: "Your next move" });
+      expect(await region.locator("button.choice").evaluateAll(buttons => buttons.map(button => button.getAttribute("data-testid")))).toEqual(choices.map(choice => `choice-${choice.id}`));
+      const expected = choices.map(choice => choiceSection(sceneId, choice.id)).filter((title, index, list) => title && title !== list[index - 1]);
+      expect(await region.getByTestId("choice-section").allTextContents()).toEqual(expected);
+      for (const [index, choice] of choices.entries()) {
+        const button = region.getByTestId(`choice-${choice.id}`);
+        await expect(button).toBeEnabled({ enabled: choice.enabled });
+        await expect(button.locator(".index")).toHaveText(String(index + 1));
+        if (choice.enabled && index < 9) await expect(button).toHaveAttribute("aria-keyshortcuts", String(index + 1));
+        if (choice.enabled && choice.detail) await expect(button).toContainText(choice.detail);
+        if (!choice.enabled) await expect(button).toContainText(choice.disabledReason!);
+      }
+      expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+      expect(await page.evaluate(() => localStorage.getItem("saint-shard-3055-v1"))).toBe(before);
+      if (sceneId === "stall") {
+        expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
+        await page.keyboard.press("1");
+        expect(await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!))).toEqual(commitChoice(state, choices[0]).state);
+      }
+    } finally { await context.close(); }
+  }
 });
