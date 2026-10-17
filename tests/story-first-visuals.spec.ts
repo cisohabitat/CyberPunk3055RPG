@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { CHOICE_SECTIONS, choiceSection } from "../lib/choice-sections";
-import { createCharacter, getScene, presentChoices, commitChoice } from "../lib/engine";
+import { createCharacter, getScene, presentChoices, commitChoice, sceneText } from "../lib/engine";
 import { FACTIONS, STATS, FACTION_CHECK, STAT_INFO } from "../lib/character";
 const base = createCharacter({ handle: "Visual review", givenName: "Jo", origin: "gutterwire", bonus: { chrome: 2, nerve: 0, face: 0, ghost: 0 } });
 for (const width of [390, 1440, 320]) test(`compact sheet preserves rules and state at ${width}px`, async ({ page }) => {
@@ -62,6 +62,31 @@ for (const width of [390, 1440, 320]) test(`choice sections preserve actions and
         await page.keyboard.press("1");
         expect(await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!))).toEqual(commitChoice(state, choices[0]).state);
       }
+    } finally { await context.close(); }
+  }
+});
+
+for (const width of [390, 1440, 320]) test(`chapter textures stay distinct and optional at ${width}px`, async ({ browser, baseURL }) => {
+  for (const sceneId of ["card_week", "card_wall"]) {
+    const context = await browser.newContext({ baseURL, viewport: { width, height: 900 } });
+    try {
+      const page = await context.newPage(), state = { ...base, sceneId }, requests: string[] = [];
+      page.on("request", request => { if (request.url().includes("/art/")) requests.push(request.url()); });
+      await page.addInitScript(({ state, width }) => {
+        localStorage.setItem("saint-shard-3055-v1", JSON.stringify(state));
+        localStorage.setItem("saint-shard-preferences", JSON.stringify({ sound: false, artwork: width === 320 ? "none" : "full", textStep: width === 320 ? 2 : 0 }));
+      }, { state, width });
+      await page.goto("/"); await page.getByTestId("continue-run").click();
+      const scene = page.getByTestId("scene"), backdrop = await scene.evaluate(el => getComputedStyle(el).backgroundImage);
+      if (width === 320) { expect(backdrop).toBe("none"); expect(requests).toEqual([]); }
+      else {
+        expect(backdrop).toContain(`/art/chapter-${sceneId === "card_week" ? "week" : "wall"}.jpg`);
+        await expect.poll(() => requests.some(url => url.includes(`/art/chapter-${sceneId === "card_week" ? "week" : "wall"}.jpg`))).toBe(true);
+      }
+      await expect(page.getByTestId("scene-illustration")).toHaveCount(0);
+      expect(await page.getByTestId("scene-text").locator("p").allTextContents()).toEqual(sceneText(getScene(sceneId), state).split(/\n\n+/).filter(Boolean));
+      expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+      expect(await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!))).toEqual(state);
     } finally { await context.close(); }
   }
 });

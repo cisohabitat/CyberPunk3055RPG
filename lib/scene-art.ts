@@ -1,5 +1,5 @@
 import decisions from "../qa/media/scene-art.json";
-import { placeArt, portraitArt, sceneIllustration, PORTRAIT_STAGING, ILLUSTRATION_STAGING } from "./art";
+import { sceneBackdrop, portraitArt, sceneIllustration, PORTRAIT_STAGING, ILLUSTRATION_STAGING } from "./art";
 import type { Scene } from "./types";
 
 export type SceneArtDecision = {
@@ -25,7 +25,7 @@ export function auditSceneArt(scenes: Record<string, Scene>, source: unknown = d
       const illustration = sceneIllustration(id);
       const rendered = entry.treatment === "illustration" ? illustration?.src
         : entry.treatment === "portrait" ? portraitArt(scene.speaker, id)
-        : entry.treatment === "background" ? placeArt(scene.location) : undefined;
+        : entry.treatment === "background" ? sceneBackdrop(id, scene.location) : undefined;
       if (rendered !== entry.asset || entry.treatment !== "illustration" && illustration) throw new Error(`Scene art decision disagrees with rendered art: ${id}`);
       if (illustration && (!illustration.description.trim() || !illustration.caption.trim() || !/^\/art\/[a-z0-9_-]+\.jpg$/.test(illustration.small))) throw new Error(`Scene illustration needs a description, caption and responsive asset: ${id}`);
       result[id] = { treatment: entry.treatment, reason: entry.reason, ...(entry.asset ? { asset: entry.asset } : {}) };

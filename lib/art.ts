@@ -213,3 +213,22 @@ ENCOUNTERS.hatch = {
   src: "/art/incinerator-flue.jpg", small: "/art/incinerator-flue-small.jpg", caption: "Glass Chapel · the incinerator vein",
   description: "A square closed hatch hangs above a curved incinerator flue, framed by copper ducts, maintenance rails and cold light from a high grille.",
 };
+
+// Chapter texture stays separate from framed scene illustrations.
+export const CHAPTER_BACKDROPS: Record<string, Illustration> = {
+  "card_week": {
+    "src": "/art/chapter-week.jpg",
+    "small": "/art/chapter-week-small.jpg",
+    "caption": "The Week \u00b7 the street waits",
+    "description": "Closed shop shutters and inhabited balconies line a rain-dark lower-ward street beneath the distant dome at blue dawn."
+  },
+  "card_wall": {
+    "src": "/art/chapter-wall.jpg",
+    "small": "/art/chapter-wall-small.jpg",
+    "caption": "The Wall \u00b7 weather and memory",
+    "description": "Rain traces indistinct engraved rows on a weathered memorial wall beneath a muted green lamp beside an empty walkway."
+  }
+};
+export function sceneBackdrop(sceneId: string, location: string): string {
+  return Object.hasOwn(CHAPTER_BACKDROPS, sceneId) ? CHAPTER_BACKDROPS[sceneId].src : placeArt(location);
+}

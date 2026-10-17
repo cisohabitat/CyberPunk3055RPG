@@ -1203,3 +1203,7 @@ html[data-text="0"] .finale .scene-row .portrait-frame figcaption { height: 3rem
 .finale .restore-notice { margin-block: .25rem; }
 
 .choices .choice-group-title { padding-block: .6rem .25rem; color: var(--cyan); border-top: 1px solid var(--line); font: 500 .85rem/1.5 var(--font-display), sans-serif; letter-spacing: .04em; }
+
+.chapter-scene { background-position: center top; background-repeat: no-repeat; }
+.chapter-scene .prose { background: rgba(9,8,13,.88); padding: 1rem; border-left: 1px solid var(--line); }
+.chapter-scene .chapter-transition { background-color: rgba(9,8,13,.78); }

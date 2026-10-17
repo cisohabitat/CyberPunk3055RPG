@@ -18,7 +18,7 @@ import { DialogFrame } from "@/components/DialogFrame";
 import { Mark, originAccent } from "@/components/Mark";
 import { Portrait } from "@/components/Portrait";
 import { Sheet } from "@/components/Sheet";
-import { DISTRICT_ART, placeArt, sceneIllustration } from "@/lib/art";
+import { DISTRICT_ART, sceneBackdrop, sceneIllustration, CHAPTER_BACKDROPS } from "@/lib/art";
 import { SceneIllustration } from "./SceneIllustration";
 import { PivotalScene } from "./PivotalScene";
 import { pivotalScene } from "@/lib/pivotal-scenes";
@@ -295,11 +295,11 @@ export function PlayScreen({
       <div className="layout">
         <main>
           <article
-            className={`${flash ? "scene flash" : "scene"}${scene.memory || scene.id === "memo" ? " memory-scene" : ""}${direction ? " pivotal-scene" : ""}${finale ? " finale" : ""}`}
+            className={`${flash ? "scene flash" : "scene"}${scene.memory || scene.id === "memo" ? " memory-scene" : ""}${direction ? " pivotal-scene" : ""}${finale ? " finale" : ""}${Object.hasOwn(CHAPTER_BACKDROPS, scene.id) ? " chapter-scene" : ""}`}
             id="scene-top"
             tabIndex={-1}
             data-testid="scene"
-            style={{ backgroundImage: preferences.artwork === "none" || illustration ? undefined : `linear-gradient(180deg, rgba(9,8,13,0.72), rgba(9,8,13,0.94)), url(${placeArt(scene.location)})` }}
+            style={{ backgroundImage: preferences.artwork === "none" || illustration ? undefined : `linear-gradient(180deg, rgba(9,8,13,0.72), rgba(9,8,13,0.94)), url(${sceneBackdrop(scene.id, scene.location)})` }}
           >
             <div className="scene-row">
               <Portrait speaker={playing?.speaker ?? scene.speaker} speaking={Boolean(playing)} sceneId={scene.id} flags={state.flags} origin={state.origin} handle={state.handle} artwork={preferences.artwork !== "none"} />

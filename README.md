@@ -730,3 +730,5 @@ The Hour, The Week and The Wall now have distinct chapter entrances: an amber cl
 The sidebar now keeps stat values and faction standings visible while origin details, rules explanations and recent actions expand on request. The finale layout also restores early story visibility with readable portrait captions. See [the staged record](docs/STORY_FIRST_VISUALS.md).
 
 Selected conversations and mission doors now separate questions, preparations, approaches and departure with quiet headings. Choice order, keyboard numbers and visible consequences stay canonical; existing chapter-closing groups remain.
+
+The Week and The Wall now have distinct dawn-street and rain-worn memorial backdrops. Both remain neutral across every entry route, with opaque reading panels and unchanged chapter text.

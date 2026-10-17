@@ -1544,7 +1544,7 @@
       "generated": "2026-10-13",
       "sourceFile": "/workspace/generated_images/exec-1c8ffc91-8229-4294-b644-cd8c060dc151.png",
       "sourceSha256": "acfdf561ab9b06b45f8f1e102ce82a31533fb21b5307e1d85cdcbd800e07be9a",
-      "promptSummary": "Ren’s introduction and later canal returns retain the neutral resident setting. No shelter repair, family arrival, street declaration, relocation or source verdict is depicted. Original painterly noir with petroleum blue, aged verdigris, copper and amber.",
+      "promptSummary": "Ren\u2019s introduction and later canal returns retain the neutral resident setting. No shelter repair, family arrival, street declaration, relocation or source verdict is depicted. Original painterly noir with petroleum blue, aged verdigris, copper and amber.",
       "referenceFiles": [
         "/workspace/generated_images/exec-73e0b934-2a5a-48cb-bcce-8119bebf3dfa.png"
       ],
@@ -2612,6 +2612,68 @@
           "height": 400,
           "bytes": 62064,
           "sha256": "8fc13ac0455d669d54b9e910681e92fbe68e7c3fb717937beca4ab329fd5c728"
+        }
+      ]
+    },
+    {
+      "id": "chapter-week",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-17",
+      "sourceFile": "/workspace/generated_images/exec-95fe1904-92fa-4bee-8094-f7adb7fd0058.png",
+      "sourceSha256": "afc4cf53a8b4af8bdf55e3b66640215835388b1ccfd18798f6cd6ea78fe1d49d",
+      "references": [
+        {
+          "path": "public/art/opening.jpg",
+          "sha256": "9ef96fa0bcea5beef099cacc0f9d568efe37da4487835c4fc50a9ba8380c7b95"
+        }
+      ],
+      "promptSummary": "Neutral chapter setting at the start of a week: no sale, witness, resolved work, authenticated record or successful outcome is depicted. Run-specific chapter prose remains authoritative.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/chapter-week.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 311873,
+          "sha256": "1d258a21b77686a66bb9f10812eee5a0fd3a2a6e6f21c4fdf17a375b9f17d4bd"
+        },
+        {
+          "path": "public/art/chapter-week-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 78143,
+          "sha256": "ff6222474cf0fbf2df8a7f19dff8315db47830500ffaf582ab3e03a374e4cff4"
+        }
+      ]
+    },
+    {
+      "id": "chapter-wall",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-17",
+      "sourceFile": "/workspace/generated_images/exec-ff2c3420-9945-4f46-82b4-68791c287fd1.png",
+      "sourceSha256": "88c342999df7e7f72f0d198de68ce68dc23cfb3ebd43e7b84a4c547fe7d62aa0",
+      "references": [
+        {
+          "path": "public/art/memorial-stair.jpg",
+          "sha256": "2078a38c3c911729dfe5a80eb232d1c78bec7c0609c97cfa5f5450e77432acd7"
+        }
+      ],
+      "promptSummary": "Neutral memorial texture before the runner approaches: no readable names, public testimony, permission, witness location or completed inscription. It fits every chapter entry route.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/chapter-wall.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 286935,
+          "sha256": "52a34463137b9045e7a6894e359bfba1e26442a7726622ecc8a5e0e2e6898e18"
+        },
+        {
+          "path": "public/art/chapter-wall-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 70198,
+          "sha256": "549edd3e85f10fcee217f68cf7130e1a4dcbc9c1879ed049263292ceed8124e8"
         }
       ]
     }

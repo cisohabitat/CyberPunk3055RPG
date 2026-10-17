@@ -114,3 +114,7 @@ One exact-word orderly performance uses the existing licensed offline Kokoro `am
 ### Visual compositions (17 October 2026)
 
 Two generated paintings provide a wide incinerator-flue view and a close archive-preparation detail. `image_gen.imagegen` used the existing service passage and archive desk as setting references. Original PNGs are retained; JPEG delivery only resizes and encodes. Provenance records source, reference and delivery hashes. These neutral preparations depict no completed crossing, retrieved source or permission. All voice recordings and actors remain unchanged.
+
+### Chapter backdrops (17 October 2026)
+
+Two original generated paintings by `image_gen.imagegen`, using the existing opening and memorial paintings as references. A dawn street and rain-worn wall remain neutral across every entry route. Original PNG masters retained; responsive delivery uses resize/JPEG encoding only. Source, reference and delivery hashes are recorded in `qa/media/story-first-art.json`.
