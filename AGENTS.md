@@ -1,5 +1,7 @@
 # Saint Shard — agent guide
 
+The [five-stage visual polish program](docs/VISUAL_POLISH_CYCLE.md) follows reading layout, artwork framing, scene compositions, cast consistency and chapter transitions in order. Stage one gives scene prose a 66ch measure, 1.85 line height and more paragraph space; dialogue controls wrap quietly while retaining 44px targets, visible actions, status and transcript disclosure. Preserve all authored words, goal visibility, voice lifecycle, manual/mute preferences and saved dice. `tests/visual-polish.spec.ts` checks both normal and pivotal reading, narrow enlarged text, saves and full accessibility. Update this record and README in each stage, and keep every existing release gate mandatory.
+
 This file is for anyone changing the code. [README.md](README.md) is for players and for the deploy. Keep the two on the same game.
 
 `docs/PROJECT_DESCRIPTION.md` provides the short GitHub About description, a game overview and links to the latest feature report. Keep its player-facing claims consistent with the implemented game and media credits. The README links to it near the introduction; detailed test evidence remains in the corresponding phase report.

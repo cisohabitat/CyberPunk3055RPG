@@ -977,8 +977,18 @@ html[data-contrast="high"] .title-intro { background: #09080d; }
 @keyframes fragment-seat { from { opacity: .6; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
 html[data-motion="reduce"] .fragment-placed { animation: none; }
 @media (prefers-reduced-motion: reduce) { .fragment-placed { animation: none; } }
-.voice-line { padding: 12px 0; border-block: 1px solid var(--line); margin: 16px 0; }
-.voice-line .hint { margin: 8px 0; }
+.voice-line { display: flex; flex-wrap: wrap; align-items: center; gap: .35rem .6rem; padding: .8rem 0 0; border-top: 1px solid var(--line); margin: 1.5rem 0; }
+.voice-line > .ghost { min-height: 44px; font-size: .8rem; letter-spacing: .025em; text-transform: none; border-color: transparent; padding-inline: .65rem; }
+.voice-line > .ghost:hover, .voice-line > .ghost:focus-visible { border-color: var(--cyan); }
+.voice-line .hint { flex-basis: 100%; margin: .2rem 0; font-size: .85rem; line-height: 1.6; }
+.voice-line > details { flex-basis: 100%; min-width: 0; }
+.voice-line > details > summary { min-height: 44px; padding-block: .6rem; font-size: .9rem; color: var(--muted); cursor: pointer; }
+.voice-line > details[open] { padding-bottom: .5rem; }
+.scene .prose { max-width: 66ch; line-height: 1.85; }
+.scene > .prose { margin-inline: auto; }
+.scene .prose p { max-width: 66ch; margin-bottom: 1.25em; text-wrap: pretty; }
+.scene .choices { padding-top: 1.1rem; border-top: 1px solid var(--line); }
+.scene .decision-help > .hint { max-width: 64ch; font-size: .9rem; line-height: 1.65; }
 .cast li { flex-wrap: wrap; }
 .cast-conduct { display: block; flex-basis: 100%; grid-column: 1 / -1; color: var(--muted); font-size: .85rem; line-height: 1.5; padding-top: 5px; }
 
