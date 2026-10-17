@@ -73,6 +73,82 @@
       "description": "Rain traces indistinct engraved rows on a weathered memorial wall beneath a muted green lamp beside an empty walkway.",
       "caption": "The Wall \u00b7 weather and memory",
       "reason": "Neutral memorial texture before the runner approaches: no readable names, public testimony, permission, witness location or completed inscription. It fits every chapter entry route."
+    },
+    {
+      "id": "attendant-confrontation",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-17",
+      "sourceFile": "/workspace/generated_images/exec-0f7a929e-4aba-48dc-bfae-8d932540a399.png",
+      "sourceSha256": "01a8a99350de83781c86dcd1e5aa48714a2714665e01ecd2915fed56219aab6e",
+      "references": [
+        {
+          "path": "public/art/attendant-alert.jpg",
+          "sha256": "153f9f5f50410456b8ce6edf8971ebd2342083c6d3e4ea0bf4ee10df791b7a51"
+        },
+        {
+          "path": "public/art/chapel-service.jpg",
+          "sha256": "b8e1d3ac5a628807d03bf02367e0ab1a1f90b9e3dde8bbc5e9d7c139b80e6c35"
+        }
+      ],
+      "promptSummary": "Literal confrontation after the hatch approach is noticed. The established masked attendant has an ordinary wrench and collar mic, with no transmitted alert indicator, injury, victory or escape. Same actor and exact existing speech; no new dialogue.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/attendant-confrontation.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 247316,
+          "sha256": "bd8151decb4cdeeca1ab805c221127fd128630466b33eb4aac6a011883b49053"
+        },
+        {
+          "path": "public/art/attendant-confrontation-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 63806,
+          "sha256": "b099b32973ed940b5112a817816ef83eb57e432934152174610acb036341349a"
+        }
+      ],
+      "scene": "hatch_caught",
+      "treatment": "illustration",
+      "description": "The masked attendant stands among copper service pipes with an ordinary wrench held low and a collar microphone visible; the corridor beyond remains empty.",
+      "caption": "Glass Chapel \u00b7 caught at the hatch",
+      "reason": "Literal confrontation after the hatch approach is noticed. The established masked attendant has an ordinary wrench and collar mic, with no transmitted alert indicator, injury, victory or escape. Same actor and exact existing speech; no new dialogue."
+    },
+    {
+      "id": "held-case",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-17",
+      "sourceFile": "/workspace/generated_images/exec-777228d8-aec5-421f-881a-d0e1e7d0505f.png",
+      "sourceSha256": "ae455166068c3e5e89644261796eb45c8b57cc2e9ac30d271c8b1856595c12a8",
+      "references": [
+        {
+          "path": "public/art/canal-dispatch.jpg",
+          "sha256": "5c7ff9924557e8e8d5808838676f3ba96ce452555e8899e4930199c9a61e476c"
+        }
+      ],
+      "promptSummary": "Failed collection aftermath: the closed case remains on its shelf, before any registered courier or handover. No recipient, register, delivery receipt, privacy guarantee, medical treatment or completed promise is depicted; both trace states retain their own prose.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/held-case.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 276644,
+          "sha256": "3a088d0be99ed8d618db031935b8d669c70c2ae533bf8ce9c52d5b71ea14e2d4"
+        },
+        {
+          "path": "public/art/held-case-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 69619,
+          "sha256": "2e19357b32406b7921882f28eb63517963d5ac4783074e3b882c487e4def6093"
+        }
+      ],
+      "scene": "act2_route_recovery",
+      "treatment": "illustration",
+      "description": "A closed canvas-covered case rests on a worn shelf beneath an amber lamp beside the shut depot service shutter; a second shelf is empty.",
+      "caption": "Canal depot \u00b7 the case stays held",
+      "reason": "Failed collection aftermath: the closed case remains on its shelf, before any registered courier or handover. No recipient, register, delivery receipt, privacy guarantee, medical treatment or completed promise is depicted; both trace states retain their own prose."
     }
   ]
 }

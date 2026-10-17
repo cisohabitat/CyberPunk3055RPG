@@ -90,3 +90,28 @@ for (const width of [390, 1440, 320]) test(`chapter textures stay distinct and o
     } finally { await context.close(); }
   }
 });
+
+for (const width of [390, 1440, 320]) test(`consequential paintings match the scene at ${width}px`, async ({ browser, baseURL }) => {
+  for (const [sceneId, flags, id] of [["hatch_caught", {}, "attendant-confrontation"], ["act2_route_recovery", { kerr_route_trace: false }, "held-case"], ["act2_route_recovery", { kerr_route_trace: true }, "held-case"]] as const) {
+    const context = await browser.newContext({ baseURL, viewport: { width, height: 900 } });
+    try {
+      const page = await context.newPage(), state = { ...base, sceneId, flags: { ...base.flags, ...flags } as Record<string, boolean> }, artRequests: string[] = [];
+      page.on("request", request => { if (request.url().includes("/art/")) artRequests.push(request.url()); });
+      await page.addInitScript(({ state, width }) => {
+        localStorage.setItem("saint-shard-3055-v1", JSON.stringify(state));
+        localStorage.setItem("saint-shard-preferences", JSON.stringify({ sound: false, artwork: width === 320 ? "none" : "full", textStep: width === 320 ? 2 : 0 }));
+      }, { state, width });
+      await page.goto("/"); await page.getByTestId("continue-run").click();
+      if (width === 320) { await expect(page.getByTestId("scene-illustration")).toHaveCount(0); expect(artRequests).toEqual([]); }
+      else {
+        const img = page.getByTestId("scene-illustration").locator("img");
+        await expect(img).toHaveAttribute("src", `/art/${id}.jpg`); await img.scrollIntoViewIfNeeded(); await img.evaluate(img => (img as HTMLImageElement).decode());
+        const box = (await img.boundingBox())!; expect(box.width / box.height).toBeCloseTo(1.5, 2);
+        expect(await img.evaluate(img => getComputedStyle(img).objectFit)).toBe("contain");
+      }
+      expect(await page.getByTestId("scene-text").locator("p").allTextContents()).toEqual(sceneText(getScene(sceneId), state).split(/\n\n+/).filter(Boolean));
+      expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+      expect(await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!))).toEqual(state);
+    } finally { await context.close(); }
+  }
+});

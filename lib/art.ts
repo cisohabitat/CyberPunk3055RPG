@@ -232,3 +232,17 @@ export const CHAPTER_BACKDROPS: Record<string, Illustration> = {
 export function sceneBackdrop(sceneId: string, location: string): string {
   return Object.hasOwn(CHAPTER_BACKDROPS, sceneId) ? CHAPTER_BACKDROPS[sceneId].src : placeArt(location);
 }
+
+// Consequential moments: actual confrontation and held-case aftermath only.
+ENCOUNTERS.hatch_caught = {
+  "src": "/art/attendant-confrontation.jpg",
+  "small": "/art/attendant-confrontation-small.jpg",
+  "caption": "Glass Chapel \u00b7 caught at the hatch",
+  "description": "The masked attendant stands among copper service pipes with an ordinary wrench held low and a collar microphone visible; the corridor beyond remains empty."
+};
+ENCOUNTERS.act2_route_recovery = {
+  "src": "/art/held-case.jpg",
+  "small": "/art/held-case-small.jpg",
+  "caption": "Canal depot \u00b7 the case stays held",
+  "description": "A closed canvas-covered case rests on a worn shelf beneath an amber lamp beside the shut depot service shutter; a second shelf is empty."
+};

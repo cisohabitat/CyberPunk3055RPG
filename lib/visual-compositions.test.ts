@@ -19,7 +19,8 @@ it("restricts the new establishing and detail compositions to their reviewed pre
     assert.equal(sha(row.reference), row.referenceSha256);
     for (const file of row.files) assert.equal(sha(file.path), file.sha256);
   }
-  assert.equal(sceneIllustration("hatch_caught")?.src, "/art/chapel-service.jpg");
+  // The later story-first art phase replaces this adjacent confrontation explicitly.
+  assert.equal(sceneIllustration("hatch_caught")?.src, "/art/attendant-confrontation.jpg");
   assert.equal(sceneIllustration("act2_archive_door")?.src, "/art/archive-desk.jpg");
   assert.equal(sceneIllustration("act2_archive_custody")?.src, "/art/edda-archive.jpg");
 });

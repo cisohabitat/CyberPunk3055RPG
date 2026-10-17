@@ -118,3 +118,7 @@ Two generated paintings provide a wide incinerator-flue view and a close archive
 ### Chapter backdrops (17 October 2026)
 
 Two original generated paintings by `image_gen.imagegen`, using the existing opening and memorial paintings as references. A dawn street and rain-worn wall remain neutral across every entry route. Original PNG masters retained; responsive delivery uses resize/JPEG encoding only. Source, reference and delivery hashes are recorded in `qa/media/story-first-art.json`.
+
+### Confrontation and held case (17 October 2026)
+
+Two `image_gen.imagegen` paintings use the existing attendant portrait/service corridor and canal dispatch painting as references. The attendant retains the established identity; the closed case depicts only an unresolved collection. Original PNGs retained, delivery resized/encoded only, source/reference/delivery hashes in `qa/media/story-first-art.json`. Exact actor dialogue and every audio file remain unchanged.

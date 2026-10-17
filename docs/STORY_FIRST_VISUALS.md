@@ -21,3 +21,9 @@ Validation: two focused source tests, TypeScript and production build pass. Twel
 The Week uses a dawn street; The Wall uses close memorial texture. Explicit background decisions replace the former text-only art decisions while framed-illustration counts remain unchanged. Reading panels remain opaque, chapter prose and choices immediate, and artwork-none makes no image requests. No outcome, identity or permission is illustrated. Generated originals and references are retained with hashes, responsive deliveries, credits and offline audition.
 
 Validation: focused media/chapter/docs source checks and generated-asset hash checks pass, as do TypeScript and production build. Twenty-four Chromium/phone chapter checks cover distinct backgrounds, art-none, enlarged text, reduced motion, canonical prose, untouched saves and exact engine departure.
+
+## 4. Consequential compositions
+
+Only hatch_caught and act2_route_recovery gain new framed art. The masked attendant retains established identity, respirator and work clothing; a low wrench and visible collar mic match the actual speech. The closed case stays held before any courier or handover. Both registration/trace states keep their own prose with the same neutral painting. The prior hatch preparation and completed delivery imagery remain separate. All dialogue, casting, voice bytes and bindings stay unchanged.
+
+Validation: focused art/media/docs checks, TypeScript and production build pass. Thirty-six Chromium/phone checks cover the entire new presentation suite plus conditional voice/text/actual-actor cases. New paintings are decoded at phone/desktop, have complete 3:2 framing, preserve canonical prose and both trace variants, and remain absent in art-none.

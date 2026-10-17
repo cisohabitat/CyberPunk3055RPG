@@ -62,8 +62,7 @@
         "act2_route_map",
         "act2_route_exit",
         "act2_route_review",
-        "act2_route_crossing",
-        "act2_route_recovery"
+        "act2_route_crossing"
       ],
       "reason": "Neutral planning alcove before collection; unselected map and closed case communicate the setting across drafts, success and held-case recovery without depicting an earned outcome. Failed recovery can pause with the case still held and the promise open; this neutral alcove depicts no courier, payment or handover."
     },
@@ -364,7 +363,6 @@
       "asset": "/art/chapel-service.jpg",
       "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
       "scenes": [
-        "hatch_caught",
         "side",
         "undercroft",
         "chapel_methods",
@@ -721,6 +719,22 @@
       "reason": "Neutral memorial texture before the runner approaches: no readable names, public testimony, permission, witness location or completed inscription. It fits every chapter entry route.",
       "scenes": [
         "card_wall"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/attendant-confrontation.jpg",
+      "reason": "Literal confrontation after the hatch approach is noticed. The established masked attendant has an ordinary wrench and collar mic, with no transmitted alert indicator, injury, victory or escape. Same actor and exact existing speech; no new dialogue.",
+      "scenes": [
+        "hatch_caught"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/held-case.jpg",
+      "reason": "Failed collection aftermath: the closed case remains on its shelf, before any registered courier or handover. No recipient, register, delivery receipt, privacy guarantee, medical treatment or completed promise is depicted; both trace states retain their own prose.",
+      "scenes": [
+        "act2_route_recovery"
       ]
     }
   ],
