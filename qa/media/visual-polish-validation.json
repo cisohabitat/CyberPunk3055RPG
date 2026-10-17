@@ -1,0 +1,126 @@
+{
+  "version": 1,
+  "baselineRevision": "eb77921b6823fcb55981f06dce286cb80fb00b67",
+  "parentRevision": "4a4e2a140a21ac03a91ca93145f9ad8e26b7157e",
+  "testedSources": {
+    "app/globals.css": "43f07b904b1f530d7da64166e71912845013075164f1944f50d52440babc0675",
+    "components/VoiceLine.tsx": "dca7b9d5210b8014d1f05670d150042662b967424c69d2042e7063fe78347e9e",
+    "components/SceneIllustration.tsx": "24b0e4fba9069010255b0636ca779e67a645b1febd229617c7d01696fef74bbd",
+    "components/PivotalScene.tsx": "e65cd6759e4fe069e93f88f2d445e91dfa13b71dc27da7ed0930343b378b1697",
+    "components/Portrait.tsx": "3168aa6f9c6817c49885828a491e5e1db2f2796316f3226f7eef06e6f4acb1fe",
+    "components/ChapterTransition.tsx": "ddbcc548975245be169eb98ffd23a7f1b6199685c27d59bef26f15a2ec874aea",
+    "components/PlayScreen.tsx": "e995e127da244cc6cac23f85615efeac22807b3c49c9a41b252b82f9a2644b57",
+    "lib/art.ts": "e8f87378e2672a33ab904bd46477bda1a82667241146fdf0f26b39e0b7efd992",
+    "lib/chapter-presentation.ts": "2e8c5b1bde4d31ba5adf0002a1a22035187530cfd270ace8c97a66c133433977",
+    "qa/media/scene-art.json": "4dc1d6312dee02f79c6e8bb8dedf9b3c2d06f96e2b317add2eae76c42275748e",
+    "qa/media/visual-compositions.json": "52a6da0f43b87c609bc2994171cb869da648a41220f736f9e030345172b6f5cc",
+    "qa/media/cast-visual-review.json": "a7491418c0bb872a519cd86490e242bcfd337787e16541206a9eeb5c018b78dc",
+    "qa/media/campaign-dialogue-bindings.json": "15ae8b35c16b330b545f001e23dc75b5f4bd131225347f616ab76c1b7088f0bd"
+  },
+  "sourceTests": 629,
+  "browserChecks": [
+    {
+      "count": 96,
+      "scope": "Combined Chromium/phone visual, chapter, all-actor, automatic voice and held-die checks before the final duplicate-location label refinement."
+    },
+    {
+      "count": 46,
+      "scope": "Final Chromium/phone visual/chapter checks after the label refinement; overlaps the preceding set rather than adding distinct coverage."
+    }
+  ],
+  "performance": {
+    "revision": "4a4e2a140a21ac03a91ca93145f9ad8e26b7157e",
+    "dirty": true,
+    "initialTransferBudget": 2097152,
+    "autoplayPolicy": "Full Chromium; first visit requires document activation, with no prior origin permission.",
+    "samples": [
+      {
+        "sceneId": "opening_city",
+        "width": 390,
+        "height": 844,
+        "artwork": "full",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 2135,
+        "network": "Emulated 5 Mbps / 150 ms",
+        "elapsedToReadyMs": 4229,
+        "encodedResourceBytes": 1673038,
+        "htmlBytes": 2336,
+        "titleLcpMs": 1372,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 3,
+        "goalVisible": true
+      },
+      {
+        "sceneId": "opening_city",
+        "width": 390,
+        "height": 844,
+        "artwork": "none",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 2004,
+        "network": "Emulated 5 Mbps / 150 ms",
+        "elapsedToReadyMs": 2040,
+        "encodedResourceBytes": 427861,
+        "htmlBytes": 2336,
+        "titleLcpMs": 1128,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 0,
+        "goalVisible": true
+      },
+      {
+        "sceneId": "opening_city",
+        "width": 1440,
+        "height": 900,
+        "artwork": "full",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 954,
+        "network": "Unthrottled automation host",
+        "elapsedToReadyMs": 1042,
+        "encodedResourceBytes": 2011254,
+        "htmlBytes": 2336,
+        "titleLcpMs": 184,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 3,
+        "goalVisible": true
+      },
+      {
+        "sceneId": "opening_city",
+        "width": 1440,
+        "height": 900,
+        "artwork": "none",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 978,
+        "network": "Unthrottled automation host",
+        "elapsedToReadyMs": 1037,
+        "encodedResourceBytes": 1092578,
+        "htmlBytes": 2336,
+        "titleLcpMs": 184,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 0,
+        "goalVisible": true
+      }
+    ],
+    "limitations": [
+      "Four synthetic samples on the automation host, not p75/p95 field data or named physical devices.",
+      "Elapsed-to-ready includes automated form entry and network-idle waits; it is not LCP or INP.",
+      "titleLcpMs measures this navigation's title screen. Encoded resource bytes are Resource Timing measurements, not all wire overhead.",
+      "A previously permitted visit can autoplay the separate 2.6 MB menu theme before gameplay; these samples measure the first-visit activation policy."
+    ]
+  },
+  "maximumEncodedInitialBytes": 2013590,
+  "inventory": {
+    "scenes": 197,
+    "choices": 598,
+    "authoredRoutes": 148,
+    "voiceBindings": 306,
+    "activeVoices": 294
+  },
+  "limits": "Internal source-aware development checks and synthetic viewports, not independent participants or physical-device acceptance. Full remote Firefox/WebKit/browser/balance/release gates remain mandatory. No voice, rules, engine or save-format changes."
+}

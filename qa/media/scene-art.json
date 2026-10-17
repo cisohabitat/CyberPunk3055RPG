@@ -4,7 +4,7 @@
     {
       "treatment": "illustration",
       "asset": "/art/opening.jpg",
-      "reason": "Establish the inhabited city and arrival before the job; no memo evidence or ending is shown.",
+      "reason": "Establish the inhabited city and arrival before the job; no memo evidence or ending is shown. The Hour chapter heading reuses this existing opening painting and adds only an abstract clock motif, without altering the invitation or introducing spoken narration.",
       "scenes": [
         "opening_city"
       ]
@@ -57,7 +57,7 @@
     },
     {
       "treatment": "text",
-      "reason": "Keep chapter cards and these outcome reflections in text; a shared outcome illustration would risk claiming evidence or consequences absent from a particular run. The Week card and finale retell state the actual silence offer, street speech or failed attempt without implying source authentication, witness safety or quotation consent.",
+      "reason": "Keep chapter cards and these outcome reflections in text; a shared outcome illustration would risk claiming evidence or consequences absent from a particular run. The Week card and finale retell state the actual silence offer, street speech or failed attempt without implying source authentication, witness safety or quotation consent. Numbered chapter headings and abstract CSS ink motifs distinguish the chapter without an outcome illustration or delayed text; no source evidence, witness condition or narration is added.",
       "scenes": [
         "card_week",
         "card_wall"

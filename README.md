@@ -1,13 +1,5 @@
 # Saint Shard
 
-The [five-stage visual polish program](docs/VISUAL_POLISH_CYCLE.md) begins with a calmer reading layout: more paragraph space, bounded line length and quieter dialogue controls with the same visible playback actions and transcript. Goals, choices, saved settings and recorded speech remain intact.
-
-Artwork now requests a size appropriate to its full-width or paired composition. Scene plates and character portraits retain their full frame, captions are easier to read, and an unavailable scene image keeps its space while showing the description.
-
-Two new paintings vary the campaign’s compositions: the incinerator approach uses a wide view looking up toward the closed hatch; archive preparation uses a close view of the unused reader and closed folio. Both retain the established setting and show the situation before any result is earned. Matching dialogue and actors are unchanged.
-
-All fifteen cast identities and their expressions have a documented consistency pass. Portraits, character cards and profiles share neutral frames; readable nameplates sit below the picture instead of covering it. The speaking cue uses a restrained amber border and stable caption space. Existing identities, expression choices and voice recordings are retained.
-
 A solo story RPG in **Kite City, 3055**. You play it in the browser. The run stays on that browser. There is no account and no server save.
 
 Quill hires you to lift Mara Voss's unedited hour from Glass Chapel before dawn. Helion is about to edit a crime out of her: she signed the Ward Nine coolant dump, and three hundred people died. Kerr is paid to stop you. Sister Lumen may help you leak the hour or break it. A week later the city asks for a buyer or a witness. At Ward Nine, Sera keeps the dead on a wall, and that is the last choice.
@@ -718,3 +710,16 @@ The restored Lumen scene speech also required correcting the check-dialogue brow
 Dialogue controls now show the selected or playing line and total, such as “Line 2 of 4,” in their accessible status. Paragraph mode counts only revealed dialogue; revealing another reply expands the total without restarting the current voice. Listen, Play all dialogue and Stop retain their existing behavior. Nine rare conditional replies have additional desktop/phone checks for exact text, actual-speaker portraits, playback, progress and unchanged saves. See [the progress and delivery review](docs/SPEECH_PROGRESS_REVIEW.md).
 
 The delivery review remeasured all 294 active recordings and sampled every voice role. A clearer orderly take separates “Pass” from “still scans” using the same stock voice and exact words; its preceding recording is retained for comparison. The attendant’s original “This vein is hot” remains after the complete conversation resolved an isolated transcription ambiguity. Existing scene art and actual-speaker portraits remain matched.
+
+
+## Visual polish
+
+The [five-stage visual polish program](docs/VISUAL_POLISH_CYCLE.md) begins with a calmer reading layout: more paragraph space, bounded line length and quieter dialogue controls with the same visible playback actions and transcript. Goals, choices, saved settings and recorded speech remain intact.
+
+Artwork now requests a size appropriate to its full-width or paired composition. Scene plates and character portraits retain their full frame, captions are easier to read, and an unavailable scene image keeps its space while showing the description.
+
+Two new paintings vary the campaign’s compositions: the incinerator approach uses a wide view looking up toward the closed hatch; archive preparation uses a close view of the unused reader and closed folio. Both retain the established setting and show the situation before any result is earned. Matching dialogue and actors are unchanged.
+
+All fifteen cast identities and their expressions have a documented consistency pass. Portraits, character cards and profiles share neutral frames; readable nameplates sit below the picture instead of covering it. The speaking cue uses a restrained amber border and stable caption space. Existing identities, expression choices and voice recordings are retained.
+
+The Hour, The Week and The Wall now have distinct chapter entrances: an amber clock, cyan cards and quiet green memorial lines. Text and choices appear immediately; the brief decorative motion respects both system and saved reduced-motion settings. Chapter cards keep their actual run-specific retelling and require no new artwork or narration. A chapter name appears once when it is also the location name.

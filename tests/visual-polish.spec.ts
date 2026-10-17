@@ -1,7 +1,8 @@
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
-import { createCharacter, getScene, sceneText } from "../lib/engine";
+import { createCharacter, getScene, sceneText, presentChoices, commitChoice } from "../lib/engine";
 import { sceneIllustration } from "../lib/art";
+import { CHAPTER_PRESENTATIONS } from "../lib/chapter-presentation";
 
 const base = createCharacter({ handle: "Visual review", givenName: "Jo", origin: "gutterwire", bonus: { chrome: 2, nerve: 0, face: 0, ghost: 0 } });
 for (const width of [390, 1440, 320]) for (const sceneId of ["stall", "memo"]) {
@@ -31,6 +32,37 @@ for (const width of [390, 1440, 320]) for (const sceneId of ["stall", "memo"]) {
     expect(errors).toEqual([]);
   });
 }
+
+for (const [sceneId, chapter] of Object.entries(CHAPTER_PRESENTATIONS)) for (const width of [390, 1440, 320]) {
+  test(`${chapter.title} presents its chapter without delaying play at ${width}px`, async ({ page }) => {
+    await page.setViewportSize({ width, height: 900 });
+    await page.emulateMedia({ reducedMotion: width === 1440 ? "reduce" : "no-preference" });
+    const state = { ...base, sceneId };
+    await page.addInitScript(({ state, width }) => {
+      localStorage.setItem("saint-shard-3055-v1", JSON.stringify(state));
+      localStorage.setItem("saint-shard-preferences", JSON.stringify({ sound: false, reading: "all", motion: width === 1440 ? "system" : "reduce", artwork: "none", textStep: width === 320 ? 2 : 0 }));
+    }, { state, width });
+    const images: string[] = []; page.on("request", request => { if (request.url().includes("/art/")) images.push(request.url()); });
+    await page.goto("/"); await page.getByTestId("continue-run").click();
+    const frame = page.getByTestId("chapter-transition");
+    await expect(frame.getByRole("heading", { name: chapter.title, exact: true })).toBeVisible();
+    await expect(frame).toHaveAttribute("data-chapter", chapter.tone);
+    expect(await frame.locator(".chapter-motif").evaluate(motif => getComputedStyle(motif).animationName)).toBe("none");
+    expect(await page.getByTestId("scene-text").locator("p").allTextContents()).toEqual(sceneText(getScene(sceneId), state).split(/\n\n+/).filter(Boolean));
+    const goal = await page.getByTestId("goal").boundingBox(); expect(goal!.y + goal!.height).toBeLessThanOrEqual(900);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    expect(await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!))).toEqual(state);
+    expect(images).toEqual([]);
+    expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
+    const choice = presentChoices(state, getScene(sceneId)).find(choice => choice.enabled)!;
+    expect(choice.check).toBeUndefined();
+    await page.getByTestId(`choice-${choice.id}`).click();
+    const expected = commitChoice(state, choice).state;
+    expect(await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!))).toEqual(expected);
+    await expect(page.getByTestId("chapter-transition")).toHaveCount(0);
+  });
+}
+
 
 for (const width of [390, 1440]) test(`paired art keeps its complete frame and stable fallback at ${width}px`, async ({ page }) => {
   await page.setViewportSize({ width, height: 900 });

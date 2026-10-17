@@ -1,6 +1,7 @@
 "use client";
 
 import { ArchiveCatalog } from "./ArchiveCatalog";
+import { ChapterTransition } from "./ChapterTransition";
 import { CATALOG_ACTIONS } from "@/lib/archive-catalog";
 
 import { FinaleReflection } from "./FinaleReflection";
@@ -75,6 +76,8 @@ export function PlayScreen({
   onResumeAudio: () => void;
 }) {
   const scene = getScene(state.sceneId);
+  const act = actName(state);
+  const locationLabel = scene.location === act ? act : `${scene.location} · ${act}`;
   const illustration = sceneIllustration(scene.id, state.flags);
   const finale = finaleScene(scene.id);
   const investigation = investigationScene(scene.id);
@@ -302,13 +305,13 @@ export function PlayScreen({
               <div>
                 <p className="kicker">
                   {scene.location}
-                  <span className="act-chip"> · {actName(state)}</span>
+                  {scene.location !== act && <span className="act-chip"> · {act}</span>}
                 </p>
-                {!scene.endingTitle && <h1 className="sr-only">{scene.location} · {actName(state)}</h1>}
+                {!scene.endingTitle && <h1 className="sr-only">{locationLabel}</h1>}
                 <p className="goal" data-testid="goal">{currentGoal(state)}</p>
                 {audioPaused && preferences.sound && <div className="audio-paused" data-testid="audio-paused"><p role="status">Sound paused while you were away.</p><button className="ghost" type="button" onClick={() => { onResumeAudio(); document.getElementById("scene-top")?.focus({ preventScroll: true }); }}>Resume sound</button></div>}
                 <p className="sr-only" aria-live="polite">
-                  {scene.location}. {actName(state)}. {currentGoal(state)}
+                  {locationLabel}. {currentGoal(state)}
                 </p>
                 {scene.ending && !scene.finale && state.chapters.length > 0 && (
                   <ol className="chapter-stack" data-testid="chapter-stack">
@@ -350,6 +353,7 @@ export function PlayScreen({
             </div>
             {scene.finale && <h1 className="finale-title" data-testid="ending-title">{scene.endingTitle}</h1>}
             {restoreNotice && <p className="restore-notice" role="status" data-testid="restore-notice">{restoreNotice}</p>}
+            <ChapterTransition sceneId={scene.id} />
             {direction ? <PivotalScene direction={direction} finale={Boolean(finale)} investigation={Boolean(investigation)} art={preferences.artwork !== "none" ? illustration : undefined}>{narrative}</PivotalScene>
               : preferences.artwork !== "none" && illustration && <SceneIllustration art={illustration} />}
             {!scene.finale && <ObjectiveBrief state={state} />}
