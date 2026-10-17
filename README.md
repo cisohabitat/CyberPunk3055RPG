@@ -6,6 +6,8 @@ Artwork now requests a size appropriate to its full-width or paired composition.
 
 Two new paintings vary the campaign’s compositions: the incinerator approach uses a wide view looking up toward the closed hatch; archive preparation uses a close view of the unused reader and closed folio. Both retain the established setting and show the situation before any result is earned. Matching dialogue and actors are unchanged.
 
+All fifteen cast identities and their expressions have a documented consistency pass. Portraits, character cards and profiles share neutral frames; readable nameplates sit below the picture instead of covering it. The speaking cue uses a restrained amber border and stable caption space. Existing identities, expression choices and voice recordings are retained.
+
 A solo story RPG in **Kite City, 3055**. You play it in the browser. The run stays on that browser. There is no account and no server save.
 
 Quill hires you to lift Mara Voss's unedited hour from Glass Chapel before dawn. Helion is about to edit a crime out of her: she signed the Ward Nine coolant dump, and three hundred people died. Kerr is paid to stop you. Sister Lumen may help you leak the hour or break it. A week later the city asks for a buyer or a witness. At Ward Nine, Sera keeps the dead on a wall, and that is the last choice.

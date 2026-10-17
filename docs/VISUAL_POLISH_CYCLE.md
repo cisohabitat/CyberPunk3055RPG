@@ -24,9 +24,16 @@ Two referenced generated paintings provide a wide, upward establishing view of t
 
 Stage-three validation: all 625 preceding source tests passed, the additional composition regression passes, and the production build/report have no budget violations. The final media/documentation checks and 28 focused Chromium/phone cases pass.
 
+## 4. Cast consistency
+
+A contact-sheet comparison covers all fifteen base/scene portrait pairs, with an explicit hash catalog for every thumbnail, neutral portrait and expression. Identities, silhouettes, clothing and characteristic colors are retained; variations in room lighting and Lumen’s magenta optic remain deliberate. No source painting or voice recording is replaced in this stage.
+
+Portraits, character cards and profiles share a neutral matte treatment. Names move below the picture, use readable mixed case and retain stable caption space as the audible actor changes. Amber border/text indicates speaking without an animated glow. Normal header portraits are more compact on desktop, while pivotal scenes keep their closer framing hierarchy. Small frames retain the full accessible name/role while the visual role stays in the main scene header when applicable. Source and browser checks cover all actors, including text-only and missing-art behavior.
+
+Stage-four validation: the production build and six focused source checks pass. Sixty-two desktop/phone reading, actor and held-die checks pass; after the final caption sizing refinement, all 24 all-actor browser cases pass again, including no clipped labels, stable caption heights, focus, missing art and text-only play. The catalog locks 56 image paths across fifteen roles.
+
 ## Remaining stages
 
-4. Compare all fifteen cast identities and their expressions for silhouette, wardrobe, lighting and palette; correct demonstrated inconsistencies while preserving actual-speaker and earned-conduct selection.
 5. Give The Hour, The Week and The Wall distinctive, restrained chapter presentation. Keep all text immediately available, reduced motion respected and existing chapter choices/saves unchanged.
 
 No provisional grade increase, independent player participation or artistic acceptance is inferred from these internal checks.

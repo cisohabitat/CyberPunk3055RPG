@@ -57,6 +57,11 @@ for (const [width, artwork] of [[390, "full"], [1440, "full"], [320, "none"]] as
         const portrait = page.locator(".scene-row .portrait-frame");
         await expect(portrait).toHaveAttribute("data-speaker", line.speaker); await expect(portrait).toHaveAttribute("data-speaking", "true");
         await expect(portrait.locator("figcaption")).toContainText("Speaking");
+        const caption = await portrait.locator("figcaption").boundingBox();
+        const face = await portrait.locator("img, .portrait-placeholder").boundingBox();
+        expect(caption!.y).toBeGreaterThanOrEqual(face!.y + face!.height - 1);
+        expect(await portrait.locator(".portrait-name").evaluate(name => parseFloat(getComputedStyle(name).fontSize))).toBeGreaterThanOrEqual(11);
+        expect(await portrait.locator("figcaption").evaluate(caption => caption.scrollHeight <= caption.clientHeight + 1)).toBe(true);
         if (artwork === "full") await expect(portrait.locator("img")).toHaveAttribute("src", portraitArt(line.speaker, state.sceneId, state.flags)!);
         else { await expect(portrait.locator("img")).toHaveCount(0); expect(requests).toEqual([]); }
         expect((await audio(page)).started).toContain(file(line));
@@ -66,6 +71,7 @@ for (const [width, artwork] of [[390, "full"], [1440, "full"], [320, "none"]] as
         await page.getByRole("button", { name: "Stop line", exact: true }).click();
         await expect(page.getByTestId("spoken-quote")).toHaveCount(0);
         await expect(portrait).toHaveAttribute("data-speaking", "false");
+        expect((await portrait.locator("figcaption").boundingBox())!.height).toBeCloseTo(caption!.height, 0);
         if (getScene(state.sceneId).speaker) await expect(portrait).toHaveAttribute("data-speaker", getScene(state.sceneId).speaker!);
         expect(await saved(page)).toBe(before); expect((await audio(page)).liveSources).toBe(0); expect(errors).toEqual([]);
       } finally { await context.close(); }
