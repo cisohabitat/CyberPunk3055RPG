@@ -740,3 +740,7 @@ Four selected setting paintings now have a restrained rain, reflection or lamp s
 Chapter restore notices now show the chapter name once when it is also the location; precise place and finale labels remain.
 
 All five story-first visual stages are implemented. Validation includes 633 source tests, 184 combined Chromium/phone checks, six overlapping chapter rechecks and four first-visit transfer samples under 2 MiB. Full exact-commit CI remains required; the staged report records scope and limits.
+
+A Firefox follow-up gives desktop portrait captions more space at the largest text size, so a wrapped name, role and speaking cue fit without shrinking the text or moving during playback.
+
+CI now checks all speaker captions on every browser before the full campaign suite, providing earlier feedback on clipped text. All existing full browser and release checks remain required.

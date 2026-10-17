@@ -80,6 +80,8 @@ jobs:
       - name: Check native menu permission before campaign regressions
         if: matrix.project == 'chromium'
         run: npm run test:browser -- tests/menu-autoplay-policy.spec.ts --project chromium --workers=1
+      - name: Check all speaker captions before campaign regressions
+        run: npm run test:browser -- tests/speaker-presentation.spec.ts --grep "all actors identify" --project=${{ matrix.project }} --workers=4
       - run: npm run test:browser -- --project=${{ matrix.project }} --workers=4
       - name: Upload browser evidence
         if: always()

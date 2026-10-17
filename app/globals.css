@@ -1218,3 +1218,8 @@ html[data-text="0"] .finale .scene-row .portrait-frame figcaption { height: 3rem
 @keyframes art-reflection { 0%,100% { opacity: 0; } 50% { opacity: .09; } }
 @keyframes art-lamp { 0%,100% { opacity: 0; } 50% { opacity: .075; } }
 @media (prefers-reduced-motion: reduce) { .art-atmosphere { animation: none !important; } }
+
+/* Enlarged type needs room for a two-line name, role and speaking cue. */
+@media (min-width: 701px) {
+  html[data-text="2"] .scene:not(.pivotal-scene) .scene-row .portrait-frame figcaption { height: 6.5rem; }
+}

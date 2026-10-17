@@ -49,3 +49,11 @@ Screen review also found duplicated chapter names in restore notices. Display la
 Each stage updates README and AGENTS and is pushed to main. The final exact-commit CI remains mandatory for production; intermediate runs can be cancelled by the existing latest-push concurrency rule. No release gate is skipped.
 
 Four new paintings deliver eight JPEGs, with no old media rewritten. Inventory stays 197 scenes / 598 choices / 148 complete authored routes / 306 voice bindings / 294 active voice files. Campaign prose, all voice bytes and bindings, rules and save schema match the preceding baseline. The internal grade remains provisional 8.2.
+
+## Firefox caption follow-up
+
+The first full exact-commit run (`39075239897`, `c4259ab`) passed source/balance, Chromium and phone but found one Firefox desktop clipping case among 525 other passing cases. At textStep 2, Masked attendant needs room for a wrapped name, role and Speaking cue. Non-pivotal desktop captions now reserve 6.5rem only at that enlarged size. Default, phone, pivotal and finale sizing stays as tested. The no-clipping and stable-after-Stop assertions remain; failure messages now identify the actor and frame/content heights. All four browser projects remain mandatory on the corrected commit.
+
+WebKit also passed the original full suite. The corrected build passes 78 overlapping Chromium/phone rechecks across all actors, finales and the new presentation suite, plus focused source/docs checks. CI adds a mandatory all-actor caption preflight before each unchanged full browser project, retaining the exact-commit release gate and aggregate requirements. The preceding source/media validation record remains a historical record for c4259ab; this correction is verified separately.
+
+The follow-up reran all 633 source tests, TypeScript, production build/media audit and 78 overlapping browser checks successfully. [The correction record](../qa/media/portrait-caption-followup.json) preserves the preceding failure and current source hashes; it does not overwrite the earlier validation record.

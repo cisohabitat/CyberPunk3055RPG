@@ -776,3 +776,7 @@ ART_ATMOSPHERES is an explicit four-asset allowlist. SceneIllustration confines 
 Checkpoint display labels deduplicate identical act/location names on chapter cards. This is display-only; keep precise place/finale labels, save format and restore state intact.
 
 Final story-first evidence is in qa/media/story-first-validation.json: 633 source tests, 184 combined Chromium/phone checks, six overlapping post-label chapter checks and four first-visit samples under 2 MiB. Preserve the exact source-hash record, unchanged canonical media/story boundaries, and mandatory full four-engine CI. These internal checks do not raise the provisional 8.2 grade or establish independent acceptance.
+
+Firefox full CI found Masked attendant caption overflow at 1440px/textStep 2. Give non-pivotal desktop nameplates 6.5rem at the largest text size; retain default/phone/pivotal/finale sizing and stable height through Stop. The all-actor regression keeps its no-clipping assertion and now reports the actor and measured frame/content heights for diagnosis.
+
+Each Browser job now runs the all-actor caption cases in speaker-presentation.spec.ts before the unchanged full project. Keep that preflight mandatory, all four engines, the full unfiltered regressions and fail-closed aggregate Build. A passing caption preflight does not replace or bypass any full browser check.

@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "precedingCommit": "c4259abe14e723cb6a132f2c1916226fa5fa23cb",
+  "precedingRun": 39075239897,
+  "precedingResults": {
+    "Test": "success",
+    "Browser (chromium)": "success",
+    "Browser (phone)": "success",
+    "Browser (webkit)": "success",
+    "Browser (firefox)": "failure: one enlarged desktop caption clipping case; 525 passed",
+    "Build": "blocked by Firefox failure"
+  },
+  "issue": "Masked attendant name/role/speaking cue can wrap beyond the fixed desktop caption at textStep 2 in Firefox.",
+  "correction": "Reserve 6.5rem only for enlarged non-pivotal desktop captions; keep the existing no-clipping and stable-after-Stop assertions.",
+  "sourceSha256": {
+    "app/globals.css": "c7f32c9a23f5ab5427c4f1c91142c933cfefa11cd770e8442dd1aee65428446f",
+    "tests/speaker-presentation.spec.ts": "b161232f0d29fcc2137251d6ca43a8d58a2e0513e82c80deb7b2f1d6432c738a",
+    ".github/workflows/ci.yml": "e6ff131a0ad059b68909d2449b79035dd229104578350e6ba122c64be7815ea6"
+  },
+  "validation": {
+    "sourceTests": 633,
+    "focusedChromiumPhoneChecks": 78,
+    "scope": "Overlapping all-actor, finale and story-first checks on the corrected build.",
+    "typescript": "pass",
+    "productionBuild": "pass",
+    "mediaBudgetViolations": []
+  },
+  "release": "Every Browser job adds an early all-actor preflight and retains its full unfiltered project; exact-commit Test, four Browser jobs and aggregate Build remain mandatory.",
+  "limits": "Local Firefox cannot launch in this managed environment; corrected Firefox/WebKit behavior remains subject to full hosted CI. No source/binding/audio/art bytes or saves change."
+}

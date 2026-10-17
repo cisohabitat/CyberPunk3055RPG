@@ -61,7 +61,8 @@ for (const [width, artwork] of [[390, "full"], [1440, "full"], [320, "none"]] as
         const face = await portrait.locator("img, .portrait-placeholder").boundingBox();
         expect(caption!.y).toBeGreaterThanOrEqual(face!.y + face!.height - 1);
         expect(await portrait.locator(".portrait-name").evaluate(name => parseFloat(getComputedStyle(name).fontSize))).toBeGreaterThanOrEqual(11);
-        expect(await portrait.locator("figcaption").evaluate(caption => caption.scrollHeight <= caption.clientHeight + 1)).toBe(true);
+        const captionSize = await portrait.locator("figcaption").evaluate(caption => ({ content: caption.scrollHeight, frame: caption.clientHeight }));
+        expect(captionSize.content, `${line.speaker}: caption must contain name, role and speaking cue`).toBeLessThanOrEqual(captionSize.frame + 1);
         if (artwork === "full") await expect(portrait.locator("img")).toHaveAttribute("src", portraitArt(line.speaker, state.sceneId, state.flags)!);
         else { await expect(portrait.locator("img")).toHaveCount(0); expect(requests).toEqual([]); }
         expect((await audio(page)).started).toContain(file(line));
