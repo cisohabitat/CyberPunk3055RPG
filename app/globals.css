@@ -1188,3 +1188,16 @@ html[data-motion="reduce"] .fragment-placed { animation: none; }
 @keyframes chapter-ink { from { opacity: .4; transform: translateY(3px); } to { opacity: 1; transform: none; } }
 @media (max-width: 420px) { .chapter-motif { width: 48px; height: 48px; } [data-chapter="week"] .chapter-motif span { height: 30px; } }
 @media (prefers-reduced-motion: reduce) { .chapter-motif { animation: none; } }
+
+/* Keep figures readable while finale words remain in the first viewport. */
+.finale .scene-row { margin-bottom: 0; }
+.finale .finale-title { margin-top: .5rem; }
+.finale-stage { padding-top: .5rem; margin-top: .5rem; }
+.sheet-reference { margin: .4rem 0; }
+.sheet-reference summary { min-height: 44px; padding: .65rem 0; color: var(--muted); font-size: .85rem; cursor: pointer; }
+.sheet-reference[open] summary { color: var(--cyan); }
+.sheet-reference .hint { margin: .5rem 0 .8rem; }
+.sheet .stat { margin-bottom: .55rem; }
+.finale .pivotal-label { margin-bottom: .35rem; }
+html[data-text="0"] .finale .scene-row .portrait-frame figcaption { height: 3rem; }
+.finale .restore-notice { margin-block: .25rem; }

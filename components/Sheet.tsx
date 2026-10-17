@@ -51,6 +51,7 @@ export function Sheet({ state, open, onClose, speaker, visibleText, artwork = tr
           </p>
         </div>
       </div>
+      <details className="sheet-reference"><summary>Origin & complication</summary>
       <p className="perk">
         {origin.perk}. {origin.perkText}
       </p>
@@ -59,6 +60,7 @@ export function Sheet({ state, open, onClose, speaker, visibleText, artwork = tr
           {COMPLICATIONS[state.complication].name}. {COMPLICATIONS[state.complication].perk} {COMPLICATIONS[state.complication].cost}
         </p>
       )}
+      </details>
       <details className="cast-roster" open={peopleOpen} onToggle={event => setPeopleOpen(event.currentTarget.open)}>
         <summary>People · {people.length} met</summary>
         <p className="hint">People you have encountered. Open About for a portrait and biography; encounter notes grow from your journal. Shared history records what happened between you.</p>
@@ -106,9 +108,12 @@ export function Sheet({ state, open, onClose, speaker, visibleText, artwork = tr
               <div className="track" aria-hidden="true">
                 <span style={{ width: `${(state.stats[stat] / 5) * 100}%` }} />
               </div>
-              <p className="hint">{STAT_INFO[stat].blurb}</p>
+
             </div>
           ))}
+          <details className="sheet-reference" data-testid="stat-reference"><summary>How stats work</summary>
+            {STATS.map(stat => <p className="hint" key={stat}><strong>{STAT_INFO[stat].name}</strong> · {STAT_INFO[stat].blurb}</p>)}
+          </details>
           <h3 className="sheet-label">Factions</h3>
           {FACTIONS.map((faction) => (
             <div className="stat" key={faction} data-testid={`faction-${faction}`}>
@@ -117,11 +122,13 @@ export function Sheet({ state, open, onClose, speaker, visibleText, artwork = tr
               <div className="track" aria-hidden="true">
                 <span style={{ width: `${((state.factions[faction] + 3) / 8) * 100}%` }} />
               </div>
-              <p className="hint">{FACTION_INFO[faction].blurb}</p>
-              <p className="hint">{FACTION_CHECK[faction]}</p>
+
             </div>
           ))}
-          <h3 className="sheet-label">What you did</h3>
+          <details className="sheet-reference" data-testid="faction-reference"><summary>How factions affect checks</summary>
+            {FACTIONS.map(faction => <p className="hint" key={faction}><strong>{FACTION_INFO[faction].name}</strong> · {FACTION_INFO[faction].blurb} {FACTION_CHECK[faction]}</p>)}
+          </details>
+          <details className="sheet-reference"><summary>What you did · {recent.length} recent</summary>
           <ul className="journal" data-testid="choice-log">
             {recent.length === 0 && <li className="empty">Nothing committed yet.</li>}
             {recent.map((line, index) => (
@@ -137,6 +144,7 @@ export function Sheet({ state, open, onClose, speaker, visibleText, artwork = tr
               ))}
             </ul>
           )}
+          </details>
         </div>
         <div hidden={tab !== "gear"} role="tabpanel" id="panel-gear" aria-labelledby="tab-gear" tabIndex={0}>
         <ul className="gear">

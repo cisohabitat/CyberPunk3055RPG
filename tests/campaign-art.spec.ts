@@ -1,9 +1,10 @@
 import { test, expect } from "@playwright/test";
 import { createCharacter } from "../lib/engine";
 import briefs from "../qa/media/campaign-art-briefs.json";
+import { sceneIllustration } from "../lib/art";
 import bindings from "../qa/media/campaign-art-bindings.json";
 const base = createCharacter({ handle: "Art review", givenName: "Jo", origin: "spire", bonus: { chrome: 2, nerve: 0, face: 0, ghost: 0 } });
-const scenes = briefs.map(brief => ({ id: brief.id, scene: bindings.plates.find(plate => plate.src === `/art/${brief.id}.jpg`)!.scenes[0] }));
+const scenes = briefs.map(brief => ({ id: brief.id, scene: bindings.plates.find(plate => plate.src === `/art/${brief.id}.jpg`)!.scenes.find(scene => sceneIllustration(scene)?.src === `/art/${brief.id}.jpg`)! }));
 for (const [width, artwork] of [[390, "full"], [1440, "full"], [320, "none"]] as const) {
   for (let start = 0; start < scenes.length; start += 3) test(`campaign setting art at ${width}px, batch ${1 + start / 3}`, async ({ browser, baseURL }) => {
     test.setTimeout(90_000);

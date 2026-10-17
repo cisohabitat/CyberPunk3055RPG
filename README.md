@@ -723,3 +723,8 @@ Two new paintings vary the campaign’s compositions: the incinerator approach u
 All fifteen cast identities and their expressions have a documented consistency pass. Portraits, character cards and profiles share neutral frames; readable nameplates sit below the picture instead of covering it. The speaking cue uses a restrained amber border and stable caption space. Existing identities, expression choices and voice recordings are retained.
 
 The Hour, The Week and The Wall now have distinct chapter entrances: an amber clock, cyan cards and quiet green memorial lines. Text and choices appear immediately; the brief decorative motion respects both system and saved reduced-motion settings. Chapter cards keep their actual run-specific retelling and require no new artwork or narration. A chapter name appears once when it is also the location name.
+
+
+## Story-first visual improvements
+
+The sidebar now keeps stat values and faction standings visible while origin details, rules explanations and recent actions expand on request. The finale layout also restores early story visibility with readable portrait captions. See [the staged record](docs/STORY_FIRST_VISUALS.md).
