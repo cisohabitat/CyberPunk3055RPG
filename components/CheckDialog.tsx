@@ -9,6 +9,7 @@ import { statVoice } from "@/lib/story/voices";
 import { visibleCheckDialogue, spokenDialogueRange, type CampaignDialogue } from "@/lib/campaign-dialogue";
 import { VoiceLine } from "./VoiceLine";
 import { SpokenText } from "./SpokenText";
+import { Symbol } from "./Symbol";
 import type { CheckResult, Choice, GameState } from "@/lib/types";
 
 export function CheckDialog({
@@ -99,7 +100,7 @@ export function CheckDialog({
         {chance}. 1d10 + {preview.bonus} against DC {preview.dc}.
       </p>
       {!result && costs.length > 0 && <p className="hint" data-testid="check-costs">{costs.join("; ")}. Before critical adjustments: a successful 10 eases Strain by one; a missed 1 adds one. Strain stays between zero and five.</p>}
-      <p data-testid="stat-voice">{statVoice(preview.stat)}</p>
+      <p data-testid="stat-voice"><Symbol name={preview.stat} /> {statVoice(preview.stat)}</p>
       <ul className="math">
         {preview.parts.map((part) => (
           <li key={part.label}>

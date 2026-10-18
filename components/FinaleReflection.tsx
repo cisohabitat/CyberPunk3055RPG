@@ -5,8 +5,9 @@ import { finalePersonalEcho } from "@/lib/finale-direction";
 import { aftermath } from "@/lib/evidence";
 import { endingCoda } from "@/lib/story/codas";
 import { nightRetell } from "@/lib/story/retell";
+import { CampaignRecap } from "./CampaignRecap";
 
-export function FinaleReflection({ state }: { state: GameState }) {
+export function FinaleReflection({ state, artwork = true }: { state: GameState; artwork?: boolean }) {
   const campaign = campaignCoda(state), personal = finalePersonalEcho(state);
   return <section className="finale-reflection" aria-label="After the wall" data-testid="finale-reflection">
     {(campaign || personal) && <section className="finale-carry" aria-labelledby="finale-carry-title">
@@ -26,5 +27,6 @@ export function FinaleReflection({ state }: { state: GameState }) {
         <p>{endingCoda(state.sceneId)}</p>
       </details>
     </section>
+    <CampaignRecap state={state} artwork={artwork} />
   </section>;
 }

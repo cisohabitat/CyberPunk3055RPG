@@ -20,6 +20,8 @@ import { Portrait } from "@/components/Portrait";
 import { Sheet } from "@/components/Sheet";
 import { DISTRICT_ART, sceneBackdrop, sceneIllustration, CHAPTER_BACKDROPS, paintedActor } from "@/lib/art";
 import { ArtworkContext, ArtworkViewer, type ViewableArt } from "./ArtworkViewer";
+import { CityMap } from "./CityMap";
+import { Symbol } from "./Symbol";
 import { SceneIllustration } from "./SceneIllustration";
 import { PivotalScene } from "./PivotalScene";
 import { pivotalScene } from "@/lib/pivotal-scenes";
@@ -91,6 +93,7 @@ export function PlayScreen({
   const [pending, setPending] = useState<VisibleChoice | null>(null);
   const [sheetOpen, setSheetOpen] = useState(false);
   const [notebookOpen, setNotebookOpen] = useState(false);
+  const [mapOpen, setMapOpen] = useState(false);
   const [viewedArt, setViewedArt] = useState<{ art: ViewableArt; scene: string } | null>(null);
   const artworkOpen = preferences.artwork !== "none" && viewedArt?.scene === scene.id;
   const compactHeader = preferences.artwork !== "none" && paintedActor(illustration, scene.speaker) && !scene.finale;
@@ -115,8 +118,8 @@ export function PlayScreen({
   const dialogueQueue = visibleCampaignDialogue(scene.id, scene.speaker, visibleText);
   const recordedChoice = state.pendingCheck ? choices.find((choice) => choice.id === state.pendingCheck?.choiceId) : null;
   const activeChoice = recordedChoice ?? pending;
-  const voicesEnabled = sound && preferences.voices > 0 && !modalOpen && !sheetOpen && !notebookOpen && !artworkOpen && !confirmAbandon && !activeChoice;
-  const sceneCuesEnabled = sound && preferences.effects > 0 && !modalOpen && !sheetOpen && !notebookOpen && !artworkOpen && !confirmAbandon && !activeChoice;
+  const voicesEnabled = sound && preferences.voices > 0 && !modalOpen && !sheetOpen && !notebookOpen && !mapOpen && !artworkOpen && !confirmAbandon && !activeChoice;
+  const sceneCuesEnabled = sound && preferences.effects > 0 && !modalOpen && !sheetOpen && !notebookOpen && !mapOpen && !artworkOpen && !confirmAbandon && !activeChoice;
   const playing = voicesEnabled && speaking?.scene === scene.id && dialogueQueue.some(line => line.key === speaking.key) ? speaking : null;
   const spokenRange = playing ? spokenDialogueRange(visibleText, playing) : undefined;
   let paragraphOffset = 0;
@@ -176,6 +179,7 @@ export function PlayScreen({
   useEffect(() => {
     setSheetOpen(false);
     setNotebookOpen(false);
+    setMapOpen(false);
     setViewedArt(null);
     setPending(null);
     const reduce = preferences.motion === "reduce" || window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -206,13 +210,13 @@ export function PlayScreen({
   useEffect(() => {
     function onKey(event: KeyboardEvent) {
       if (event.key === "Escape") {
-        if (artworkOpen) return;
+        if (artworkOpen || mapOpen) return;
         if (confirmAbandon) setConfirmAbandon(false);
         if (sheetOpen) setSheetOpen(false);
         if (notebookOpen) setNotebookOpen(false);
         return;
       }
-      if (!preferences.numberShortcuts || activeChoice || confirmAbandon || sheetOpen || notebookOpen || artworkOpen || modalOpen || choices.length === 0) return;
+      if (!preferences.numberShortcuts || activeChoice || confirmAbandon || sheetOpen || notebookOpen || mapOpen || artworkOpen || modalOpen || choices.length === 0) return;
       if (event.target instanceof HTMLElement && event.target.closest("input, textarea, select, [contenteditable=true], #runner-sheet")) return;
       if (event.metaKey || event.ctrlKey || event.altKey || event.repeat) return;
       const number = Number(event.key);
@@ -254,8 +258,8 @@ export function PlayScreen({
 
   return (
     <ArtworkContext.Provider value={preferences.artwork !== "none" ? art => setViewedArt({ art, scene: scene.id }) : undefined}><div className="screen">
-      <a className="skip" href="#choices">
-        Skip to choices
+      <a className="skip" href={choices.length > 0 ? "#choices" : "#scene-top"}>
+        {choices.length > 0 ? "Skip to choices" : scene.finale ? "Skip to ending" : "Skip to scene"}
       </a>
       <header className="topbar">
         <div className="brand">
@@ -267,7 +271,7 @@ export function PlayScreen({
         </div>
         <div className="meters">
           <div className="strain-readout">
-            <span className="stat-name">Strain</span>
+            <span className="stat-name"><Symbol name="strain" /> Strain</span>
             <div className={state.strain >= 4 ? "pips hot" : "pips"} data-testid="strain" role="meter" aria-valuemin={0} aria-valuemax={STRAIN_MAX} aria-valuenow={state.strain} aria-label={`Strain ${state.strain} of ${STRAIN_MAX}`}>
               {Array.from({ length: STRAIN_MAX }, (_, index) => (
                 <span key={index} className={index < state.strain ? "on" : ""} />
@@ -275,7 +279,7 @@ export function PlayScreen({
             </div>
           </div>
           <div className="creds" data-testid="creds">
-            {state.creds} cr
+            <Symbol name="money" /> {state.creds} cr
           </div>
         </div>
         <div className="top-actions">
@@ -388,7 +392,7 @@ export function PlayScreen({
             {scene.id === "act2_archive_compare" && <ArchiveCatalog state={state} choices={choices} onChoose={pick} numberShortcuts={preferences.numberShortcuts} />}
             {scene.id === "memory_sequence" && <MemoryTimeline state={state} choices={choices} onPlace={pick} artwork={preferences.artwork !== "none"} reducedMotion={reduceMotion} numberShortcuts={preferences.numberShortcuts} />}
             {["act2_route_map", "act2_route_exit", "act2_route_review", "act2_route_crossing"].includes(scene.id) && <RouteBoard state={state} />}
-            {scene.finale && <FinaleReflection state={state} />}
+            {scene.finale && <FinaleReflection state={state} artwork={preferences.artwork !== "none"} />}
             {fault && <p className="form-error">{fault}</p>}
             {choices.length > 0 && (
               <div className={scene.id === "districts" ? "choices cards" : "choices"} id="choices" tabIndex={-1} role="region" aria-labelledby="choices-title">
@@ -464,10 +468,14 @@ export function PlayScreen({
             )}
           </article>
         </main>
-        <Sheet state={state} speaker={scene.speaker} visibleText={visibleText} artwork={preferences.artwork !== "none"} open={sheetOpen} onClose={() => setSheetOpen(false)} />
+        <Sheet state={state} speaker={scene.speaker} visibleText={visibleText} artwork={preferences.artwork !== "none"} open={sheetOpen} onClose={() => setSheetOpen(false)} onMap={() => setMapOpen(true)} />
       </div>
       {notebookOpen && <InvestigationNotebook state={state} onClose={() => setNotebookOpen(false)} />}
       {artworkOpen && viewedArt && <ArtworkViewer key={`${viewedArt.art.src}-${viewedArt.art.tile ?? "scene"}`} art={viewedArt.art} onClose={() => setViewedArt(null)} />}
+      {mapOpen && <CityMap state={state} artwork={preferences.artwork !== "none"} onClose={() => setMapOpen(false)} onFind={id => {
+        setMapOpen(false); setSheetOpen(false);
+        requestAnimationFrame(() => { const target = document.getElementById(`choice-label-${id}`)?.closest("button"); target?.focus(); target?.scrollIntoView({ block: "center", behavior: "instant" }); });
+      }} />}
       {activeChoice?.check && (
         <CheckDialog
           state={state}

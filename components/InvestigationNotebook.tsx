@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { DialogFrame } from "./DialogFrame";
+import { RecordCard } from "./RecordCard";
+import { Symbol } from "./Symbol";
 import { filterNotebookSources, notebookSources, SOURCE_GROUPS, type SourceGroup } from "@/lib/investigation-notebook";
 import { sourceReadiness } from "@/lib/source-ledger";
 import type { GameState } from "@/lib/types";
@@ -28,14 +30,13 @@ export function InvestigationNotebook({ state, onClose }: { state: GameState; on
     </div>
     <section aria-label="Current source limits" className="notebook-limits">
       <h3>Current source limits</h3>
-      <dl><dt>Cancellation</dt><dd>{readiness.cancellation}</dd><dt>Public quotation</dt><dd>{readiness.quotation}</dd></dl>
+      <dl className="permission-cards"><div><dt><Symbol name="archive" /> Cancellation</dt><dd>{readiness.cancellation}</dd></div><div><dt><Symbol name="permission" /> Public quotation</dt><dd>{readiness.quotation}</dd></div></dl>
     </section>
     <p className="hint">Records keep their original wording and recorded status. A later source or correction stays separate. Filtering changes this view, not the account.</p>
-    {visible.length ? <ol className="notebook-records" aria-label="Matching acquired records">{visible.map(record => <li key={record.id} data-testid={`notebook-${record.id}`}>
-      <h3>{record.title}</h3>
-      <p className="hint">{SOURCE_GROUPS.find(group => group.id === record.group)!.label} · Recorded as {record.kind}</p>
+    {visible.length ? <ol className="notebook-records" aria-label="Matching acquired records">{visible.map(record => <RecordCard key={record.id} title={record.title} kind={record.kind} testId={`notebook-${record.id}`}>
+      <p className="record-kind"><Symbol name={record.group === "interpretation" ? "claim" : record.group} /> {SOURCE_GROUPS.find(group => group.id === record.group)!.label} · Recorded as {record.kind}</p>
       {record.time && <p className="notebook-provenance"><strong>{record.time}</strong> · {record.provenance}</p>}
       <p>{record.text}</p>
-    </li>)}</ol> : <p data-testid="notebook-empty">No acquired records match. Try another phrase or show all records.</p>}
+    </RecordCard>)}</ol> : <p data-testid="notebook-empty">No acquired records match. Try another phrase or show all records.</p>}
   </DialogFrame>;
 }

@@ -1,0 +1,201 @@
+{
+  "date": "2026-10-18",
+  "precedingRevision": "f3a46c4865aef46a92d92e5546bb5dcf58d04174",
+  "scope": "Pre-push local validation; exact-commit hosted CI and Vercel remain the release authority.",
+  "sourceSha256": {
+    "app/globals.css": "7d9a7d0f0d45886cf2250213eeea4380011b875b3754736015005bbebff84295",
+    "components/Symbol.tsx": "8591c2a77523294de3d2e658cbe92bdffec6a3813cab823becedc5d85c987222",
+    "components/RecordCard.tsx": "8e494fa4a3cd2a926a5ef5ff22b1b301448770181a59978f1984194d1c23fffd",
+    "components/CityMap.tsx": "c4acc51ae2f4c9caf3ef6098a1eb93dbeacf6371f3ca92cb748ae572e5b3f6a4",
+    "components/CampaignRecap.tsx": "02a257c791fadcc0cdfc8813ff1629ca5f9f2d16d69d471b97b8566273aa1aef",
+    "components/CheckpointArtwork.tsx": "fc8775781761f379f302266a502aab2c9bd63db81447e1c4a61294f03e32596a",
+    "components/SaveDialog.tsx": "bd83edc9c23f12dde81d66fd194e140c3c628ae9362f5023d05d072fe7c64b15",
+    "components/PlayScreen.tsx": "82bb8043ac3890e707f712e77100c4c31757c8be727f5c6f454d4d688da726f2",
+    "components/Sheet.tsx": "035b42093342cada82a5e30e73857a66a53d796e37f54e7f1a8cc13085bda5f0",
+    "components/InvestigationNotebook.tsx": "4a3175e2d219ea8f244d30816304c9c2450b4653265eba7fe8b7cf5bced7a44e",
+    "components/GameApp.tsx": "033685b2e672cd1ebf76a6f1e3b128f6f7c199a37cdce18f52196a3cc18335c1",
+    "components/FinaleReflection.tsx": "3c4c7e6c98000ea327d203eea9cd5a1964158bb4ac61df4df8662ca3f69c4cd8",
+    "components/CheckDialog.tsx": "8a18eee5fe9e7b10da3df8074ac127951996b4b7a1561d3e4424fe5889160a8b",
+    "components/ObjectiveBrief.tsx": "fe1ce956d1419d9b2dbdb3027b5f35f0f864c7e0fa5d46a4cfac34dff09a9948",
+    "components/GuideScreen.tsx": "74446ec1f707b113a3cf4729f83549cab95c77200ae335debaa75dc3ad8a8ce8",
+    "lib/city-map.ts": "4e31a6fc684a13cb5ef48ed755f7faa37723a2d2997e842bee4154bd06adc7ff",
+    "lib/presentation-art.ts": "13359d7622bfd1c422200ae37544b1e4a706db2517e8a290227dcb17fc426e64",
+    "lib/player-screens.test.ts": "ebbcd6a06b7438053a55b49ecaaed987178da118d12ecfc371caf5384387e62d",
+    "tests/player-screens.spec.ts": "54909f02fa3a546f5ec24de883d79676e2481f5ad97aca33cf1923789fddc477"
+  },
+  "sourceTests": {
+    "passed": 642,
+    "failed": 0
+  },
+  "build": "passed",
+  "productionReport": {
+    "scenes": 197,
+    "choices": 598,
+    "routes": 148,
+    "assets": 583,
+    "budgetViolations": []
+  },
+  "browserValidation": {
+    "projects": [
+      "chromium",
+      "phone"
+    ],
+    "initialBatch": {
+      "passed": 96,
+      "failed": 6,
+      "cause": "Full-rule accessibility of recaps exposed a pre-existing dangling finale skip link."
+    },
+    "afterFunctionalFix": {
+      "passed": 46,
+      "failed": 0
+    },
+    "finalPolishedBatch": {
+      "passed": 46,
+      "failed": 0
+    },
+    "overlap": true,
+    "verified": [
+      "map hides future places and exposes only legal choices",
+      "map Find only focuses the canonical choice",
+      "nested mobile Escape preserves sheet",
+      "exact journal/source text, kinds and permission limits",
+      "per-snapshot earned artwork",
+      "save/load confirmation and unchanged manual slots",
+      "held roll 1 survives restoration with RNG forced to 10",
+      "all four finales at 320/390/1440px",
+      "focusable finale skip link",
+      "three recorded moments and artwork viewer focus return",
+      "map interrupts loading/playing speech without resumption",
+      "missing artwork fallbacks",
+      "text-only zero art requests",
+      "full-rule accessibility"
+    ],
+    "localEngineLimit": "Local Firefox profile startup and WebKit host libraries unavailable; the full four-project hosted matrix remains mandatory."
+  },
+  "screenshots": [
+    {
+      "path": "/tmp/player-screens-map-1440.png",
+      "sha256": "2b19d244328cfb7ed7cf1b81b349cab8218c51a2019993045128050112c3c506"
+    },
+    {
+      "path": "/tmp/player-screens-map-390.png",
+      "sha256": "9ebde92f0929965cf5b3ca2611057a92bbbb913fa6557aae7c0e13bd8285aab1"
+    },
+    {
+      "path": "/tmp/player-screens-records-1440.png",
+      "sha256": "2c845e7551fe1e243fcd0876f2a9e8ad54345c8a51a10be5d445ea8a5e9b1015"
+    },
+    {
+      "path": "/tmp/player-screens-records-390.png",
+      "sha256": "b1b71f857a96561d1bca8aae3572eacd01ea242bb4864e8663ae19ec1a5cf0ea"
+    },
+    {
+      "path": "/tmp/player-screens-saves-1440.png",
+      "sha256": "a686bb288186f6ae3ea0ffb6365bf2af1da018394a765adaa569540abbd45f83"
+    },
+    {
+      "path": "/tmp/player-screens-saves-390.png",
+      "sha256": "65ee0143895f939df734f504b7e063d1cef098677726ca7273d5bf226041200d"
+    },
+    {
+      "path": "/tmp/player-screens-recap-1440.png",
+      "sha256": "ffca051c80865a9aa2e69be4ce19d700084535beba7c3df13be5a6260c9f06a5"
+    }
+  ],
+  "nativeFirstVisitProbe": {
+    "initialTransferBudget": 2097152,
+    "samples": [
+      {
+        "sceneId": "opening_city",
+        "width": 390,
+        "height": 844,
+        "artwork": "full",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 2328,
+        "network": "Emulated 5 Mbps / 150 ms",
+        "elapsedToReadyMs": 4491,
+        "encodedResourceBytes": 1681791,
+        "htmlBytes": 2336,
+        "titleLcpMs": 1380,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 3,
+        "goalVisible": true
+      },
+      {
+        "sceneId": "opening_city",
+        "width": 390,
+        "height": 844,
+        "artwork": "none",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 2314,
+        "network": "Emulated 5 Mbps / 150 ms",
+        "elapsedToReadyMs": 2389,
+        "encodedResourceBytes": 436614,
+        "htmlBytes": 2336,
+        "titleLcpMs": 1192,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 0,
+        "goalVisible": true
+      },
+      {
+        "sceneId": "opening_city",
+        "width": 1440,
+        "height": 900,
+        "artwork": "full",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 1198,
+        "network": "Unthrottled automation host",
+        "elapsedToReadyMs": 1332,
+        "encodedResourceBytes": 2020007,
+        "htmlBytes": 2336,
+        "titleLcpMs": 276,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 3,
+        "goalVisible": true
+      },
+      {
+        "sceneId": "opening_city",
+        "width": 1440,
+        "height": 900,
+        "artwork": "none",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 1215,
+        "network": "Unthrottled automation host",
+        "elapsedToReadyMs": 1320,
+        "encodedResourceBytes": 1101331,
+        "htmlBytes": 2336,
+        "titleLcpMs": 344,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 0,
+        "goalVisible": true
+      }
+    ],
+    "limitations": [
+      "Four synthetic samples on the automation host, not p75/p95 field data or named physical devices.",
+      "Elapsed-to-ready includes automated form entry and network-idle waits; it is not LCP or INP.",
+      "titleLcpMs measures this navigation's title screen. Encoded resource bytes are Resource Timing measurements, not all wire overhead.",
+      "A previously permitted visit can autoplay the separate 2.6 MB menu theme before gameplay; these samples measure the first-visit activation policy."
+    ]
+  },
+  "unchangedPaths": [
+    "lib/story",
+    "lib/engine.ts",
+    "lib/storage.ts",
+    "lib/vault.ts",
+    "public/audio",
+    "qa/media/campaign-dialogue-bindings.json",
+    "qa/media/campaign-dialogue-provenance.json",
+    "qa/media/scene-art.json"
+  ],
+  "newMediaBytes": 373065,
+  "provisionalGrade": 8.2,
+  "independentPlayerAcceptance": false
+}

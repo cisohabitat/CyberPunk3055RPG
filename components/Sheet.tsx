@@ -4,6 +4,8 @@ import { useEffect, useRef, useState } from "react";
 import { DialogFrame } from "./DialogFrame";
 import { CastCard } from "./CastCard";
 import { InventoryIllustration } from "./InventoryIllustration";
+import { RecordCard } from "./RecordCard";
+import { Symbol } from "./Symbol";
 import { Mark, originAccent } from "@/components/Mark";
 import { COMPLICATIONS, FACTIONS, FACTION_CHECK, FACTION_INFO, ORIGINS, STATS, STAT_INFO } from "@/lib/character";
 import { ITEMS } from "@/lib/items";
@@ -18,7 +20,7 @@ import type { GameState } from "@/lib/types";
 
 const TABS = ["stats", "gear", "journal"] as const;
 
-export function Sheet({ state, open, onClose, speaker, visibleText, artwork = true }: { state: GameState; open: boolean; onClose: () => void; speaker?: string; visibleText?: string; artwork?: boolean }) {
+export function Sheet({ state, open, onClose, onMap, speaker, visibleText, artwork = true }: { state: GameState; open: boolean; onClose: () => void; onMap: () => void; speaker?: string; visibleText?: string; artwork?: boolean }) {
   const [tab, setTab] = useState<"stats" | "gear" | "journal">("stats");
   const origin = ORIGINS[state.origin];
   const ref = useRef<HTMLElement>(null);
@@ -52,6 +54,7 @@ export function Sheet({ state, open, onClose, speaker, visibleText, artwork = tr
           </p>
         </div>
       </div>
+      <button className="ghost sheet-map" type="button" aria-haspopup="dialog" onClick={onMap}><Symbol name="location" /> City map</button>
       <details className="sheet-reference"><summary>Origin & complication</summary>
       <p className="perk">
         {origin.perk}. {origin.perkText}
@@ -104,7 +107,7 @@ export function Sheet({ state, open, onClose, speaker, visibleText, artwork = tr
           {learnedPerks(state).map((perk) => <p className="perk" key={perk.stat}><strong>{perk.name}</strong> · {perk.description}</p>)}
           {STATS.map((stat) => (
             <div className="stat" key={stat}>
-              <span className="stat-name">{STAT_INFO[stat].name}</span>
+              <span className="stat-name"><Symbol name={stat} /> {STAT_INFO[stat].name}</span>
               <span>{state.stats[stat]}</span>
               <div className="track" aria-hidden="true">
                 <span style={{ width: `${(state.stats[stat] / 5) * 100}%` }} />
@@ -118,7 +121,7 @@ export function Sheet({ state, open, onClose, speaker, visibleText, artwork = tr
           <h3 className="sheet-label">Factions</h3>
           {FACTIONS.map((faction) => (
             <div className="stat" key={faction} data-testid={`faction-${faction}`}>
-              <span className="stat-name">{FACTION_INFO[faction].name}</span>
+              <span className="stat-name"><Symbol name={faction} /> {FACTION_INFO[faction].name}</span>
               <span>{state.factions[faction]}</span>
               <div className="track" aria-hidden="true">
                 <span style={{ width: `${((state.factions[faction] + 3) / 8) * 100}%` }} />
@@ -165,11 +168,10 @@ export function Sheet({ state, open, onClose, speaker, visibleText, artwork = tr
           {objectives(state).map((row) => <li key={`objective-${row.id}`}><strong>{row.title} · {row.status}</strong><span>{row.detail}</span></li>)}
           {state.journal.length === 0 && <li className="empty">The city has not told you anything you trust.</li>}
           {state.journal.map((entry) => (
-            <li key={entry.id}>
-              <strong>{journalTitle(entry)}</strong>
+            <RecordCard key={entry.id} title={journalTitle(entry)} kind={journalKind(entry)} compact>
               <small className="journal-kind">{journalKind(entry)}{journalKind(entry) === "promise" ? ` · ${promiseStatus(entry.id, state.flags, state.journal)}` : ""}</small>
               <span>{entry.text}</span>
-            </li>
+            </RecordCard>
           ))}
         </ul>
         </div>

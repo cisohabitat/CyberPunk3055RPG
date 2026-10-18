@@ -2835,6 +2835,37 @@
           "sha256": "52394407135df82fe040b3e7b1a63fdf52715de9c58414262242514ee953f1bf"
         }
       ]
+    },
+    {
+      "id": "city-schematic",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-ad2e550a-395a-42ef-800a-21d47f82cfdc.png",
+      "sourceSha256": "6e5e785c8a75e96d4115e55ffdd435748380ec0c2d0a4d31d199fb474f63240e",
+      "references": [
+        {
+          "path": "public/art/opening.jpg",
+          "sha256": "9ef96fa0bcea5beef099cacc0f9d568efe37da4487835c4fc50a9ba8380c7b95"
+        }
+      ],
+      "promptSummary": "Neutral schematic texture with anonymous blocks and channels, no labeled future landmarks, selected route or geographic claim. Live labels reveal only places introduced by the current scene, recorded progress or existing legal choices.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained. The atmospheric map texture may crop behind readable HTML place cards.",
+      "files": [
+        {
+          "path": "public/art/city-schematic.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 310028,
+          "sha256": "7506a6c7b0c7e75203f1eef7eba2c3b6dd6d4871d00c39b85eb6f1a308de2953"
+        },
+        {
+          "path": "public/art/city-schematic-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 63037,
+          "sha256": "ec5ed0da3b54127e0e230f9f02bc4aaa4ab62a6daee54c820db4e41d4c1ed1ac"
+        }
+      ]
     }
   ]
 }

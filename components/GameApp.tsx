@@ -149,6 +149,6 @@ export function GameApp() {
           onSettings={() => setDialog("settings")} onSaves={() => setDialog("saves")}
           onContinue={() => { if (saved) load(saved); }} onNew={() => setScreen("create")} />}
     {dialog === "settings" && <SettingsDialog preferences={preferences} onChange={updatePreferences} onClose={() => setDialog(null)} />}
-    {dialog === "saves" && <SaveDialog state={run ?? saved} onLoad={load} onClose={() => setDialog(null)} onTitle={screen === "play" ? title : undefined} />}
+    {dialog === "saves" && <SaveDialog artwork={preferences.artwork !== "none"} state={run ?? saved} onLoad={load} onClose={() => setDialog(null)} onTitle={screen === "play" ? title : undefined} />}
   </>;
 }
