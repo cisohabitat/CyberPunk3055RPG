@@ -1,0 +1,174 @@
+{
+  "version": 1,
+  "date": "2026-10-18",
+  "baseRevision": "7c86f6fb3de9b74e2aa112deac50e464bcd89677",
+  "worktreeIncludesRetake": true,
+  "source": {
+    "command": "npm test",
+    "passed": 655,
+    "failed": 0
+  },
+  "finalFocusedSource": {
+    "command": "node --import tsx --test lib/anatomy-art.test.ts lib/complete-art.test.ts lib/docs.test.ts lib/media.test.ts",
+    "passed": 14,
+    "failed": 0,
+    "note": "Subset after final generation-reference metadata clarification; not additional unique tests."
+  },
+  "build": "npm run build passed",
+  "typescript": "npx tsc --noEmit passed",
+  "security": {
+    "command": "npm run security:audit",
+    "vulnerabilities": 0
+  },
+  "production": {
+    "scenes": 197,
+    "choices": 598,
+    "routes": 148,
+    "assets": 703,
+    "budgetViolations": []
+  },
+  "browser": {
+    "command": "playwright test tests/complete-art.spec.ts tests/composition-finish.spec.ts --project chromium --project phone --workers 4",
+    "passed": 80,
+    "failed": 0,
+    "coverage": [
+      "Slow preview/detail, independent failure handling, late scene decoding and reduced motion",
+      "Three conversation paintings and exact canonical speakers/quotations, viewer interruption of voices",
+      "Art-none zero requests, inventory inspection, keyboard/focus/save preservation and accessibility",
+      "Tablet/desktop prose and uncropped art, enlarged check-result names, spoken reaction controls/transcripts"
+    ],
+    "hostedMatrix": "Existing full unfiltered Chromium/phone/Firefox/WebKit remains mandatory on the pushed commit; this local subset does not replace it."
+  },
+  "visualChecks": [
+    {
+      "width": 390,
+      "detail": {
+        "src": "/art/edda-service-review.jpg",
+        "width": 1200,
+        "height": 800
+      },
+      "errors": [],
+      "saveUnchanged": true
+    },
+    {
+      "width": 1440,
+      "detail": {
+        "src": "/art/edda-service-review.jpg",
+        "width": 1200,
+        "height": 800
+      },
+      "errors": [],
+      "saveUnchanged": true
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "/tmp/anatomy-scene-390.png",
+      "sha256": "9d49e46b41cae05ef9101fc568b2f77854bb2c591b65a5980da7b5913a885093",
+      "reviewed": "Corrected painting is shown uncropped; two connected arms, two hands on counter; scene/voice controls and viewer remain usable."
+    },
+    {
+      "path": "/tmp/anatomy-viewer-390.png",
+      "sha256": "7bce4fd24126d8498062cd7b213a767665712a7123a2bbf7a4baf57f9815acec",
+      "reviewed": "Corrected painting is shown uncropped; two connected arms, two hands on counter; scene/voice controls and viewer remain usable."
+    },
+    {
+      "path": "/tmp/anatomy-scene-1440.png",
+      "sha256": "ad3c9aab856be3d04503e92fcf0c1885efe86eef9c28f77ed68bd94bf5ef6079",
+      "reviewed": "Corrected painting is shown uncropped; two connected arms, two hands on counter; scene/voice controls and viewer remain usable."
+    },
+    {
+      "path": "/tmp/anatomy-viewer-1440.png",
+      "sha256": "7a8b73140a028aee639c7bc5d2054ae554fb0c5350b058f471c5ed3a3f81ceea",
+      "reviewed": "Corrected painting is shown uncropped; two connected arms, two hands on counter; scene/voice controls and viewer remain usable."
+    }
+  ],
+  "firstVisitProbe": {
+    "revision": "7c86f6fb3de9b74e2aa112deac50e464bcd89677",
+    "dirty": true,
+    "initialTransferBudget": 2097152,
+    "autoplayPolicy": "Full Chromium; first visit requires document activation, with no prior origin permission.",
+    "samples": [
+      {
+        "sceneId": "opening_city",
+        "width": 390,
+        "height": 844,
+        "artwork": "full",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 2444,
+        "network": "Emulated 5 Mbps / 150 ms",
+        "elapsedToReadyMs": 4563,
+        "encodedResourceBytes": 1687661,
+        "htmlBytes": 2337,
+        "titleLcpMs": 1448,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 4,
+        "goalVisible": true
+      },
+      {
+        "sceneId": "opening_city",
+        "width": 390,
+        "height": 844,
+        "artwork": "none",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 2373,
+        "network": "Emulated 5 Mbps / 150 ms",
+        "elapsedToReadyMs": 2442,
+        "encodedResourceBytes": 440881,
+        "htmlBytes": 2337,
+        "titleLcpMs": 1204,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 0,
+        "goalVisible": true
+      },
+      {
+        "sceneId": "opening_city",
+        "width": 1440,
+        "height": 900,
+        "artwork": "full",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 1310,
+        "network": "Unthrottled automation host",
+        "elapsedToReadyMs": 1478,
+        "encodedResourceBytes": 2025877,
+        "htmlBytes": 2337,
+        "titleLcpMs": 256,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 4,
+        "goalVisible": true
+      },
+      {
+        "sceneId": "opening_city",
+        "width": 1440,
+        "height": 900,
+        "artwork": "none",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 1272,
+        "network": "Unthrottled automation host",
+        "elapsedToReadyMs": 1360,
+        "encodedResourceBytes": 1105598,
+        "htmlBytes": 2337,
+        "titleLcpMs": 264,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 0,
+        "goalVisible": true
+      }
+    ],
+    "limitations": [
+      "Four synthetic samples on the automation host, not p75/p95 field data or named physical devices.",
+      "Elapsed-to-ready includes automated form entry and network-idle waits; it is not LCP or INP.",
+      "titleLcpMs measures this navigation's title screen. Encoded resource bytes are Resource Timing measurements, not all wire overhead.",
+      "A previously permitted visit can autoplay the separate 2.6 MB menu theme before gameplay; these samples measure the first-visit activation policy."
+    ]
+  },
+  "maximumEncodedResourcePlusHtmlBytes": 2028214,
+  "release": "Precommit local evidence. Publication is not claimed by this record; exact-commit CI and Vercel release gate remain mandatory."
+}

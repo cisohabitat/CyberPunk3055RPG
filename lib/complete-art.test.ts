@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { reviewedDeliveryHash } from "../qa/production/delivery-history";
 import { it } from "node:test";
 import { readFileSync } from "node:fs";
 import { createHash } from "node:crypto";
@@ -51,7 +52,7 @@ it("hashes all new paintings, references and tiny derivatives while preserving e
   const sha = (p: string) => createHash("sha256").update(readFileSync(p)).digest("hex");
   assert.equal(phase.assets.length, 14); assert.equal(sha("qa/media/campaign-dialogue-bindings.json"), phase.bindingSha256);
   for (const asset of phase.assets) {
-    for (const f of asset.files) { assert.equal(sha(f.path), f.sha256); assert.ok(f.bytes < 1048576); }
+    for (const f of asset.files) { assert.equal(reviewedDeliveryHash(f.path, f.sha256), f.sha256); assert.ok(f.bytes < 1048576); }
     for (const r of asset.references) assert.equal(sha(r.path), r.sha256);
   }
   assert.deepEqual(ART_PREVIEWS, previews.images);

@@ -1,0 +1,2684 @@
+{
+  "version": 1,
+  "date": "2026-10-18",
+  "baseRevision": "7c86f6fb3de9b74e2aa112deac50e464bcd89677",
+  "supersedesFinding": "The no-confirmed-defect conclusion in composition-art-review.json missed Edda’s service-counter arm anatomy. This report supersedes that acceptance without rewriting the historical snapshot.",
+  "reviewer": "AI development visual inspection; user-approved participation proxy",
+  "method": [
+    "Reopened all 33 existing native-pixel primary inspection sheets; did not rely on earlier acceptance notes.",
+    "Traced visible shoulder–arm–elbow–wrist–hand paths rather than counting hand shapes alone. Reopened Edda individually.",
+    "Additional native-pixel torso/hand crops for 22 character paintings across six inspection sheets. Crops are inspection-only, not delivery edits.",
+    "Viewed corrected master and all three delivery sizes individually.",
+    "Viewed all 165 responsive/preview derivatives across six contact sheets; compared them to resized current primary pixels and checked global delivery hashes. Pixel differences are lossy JPEG diagnostics, not an anatomy score."
+  ],
+  "limits": "AI review can miss visual defects, as the preceding review did. Tiny background figures and obscured fingers cannot establish fine anatomy. Hash tests enforce reviewed delivery identity, not artistic correctness or independent acceptance.",
+  "counts": {
+    "primaryPortraitCastDeliveries": 146,
+    "derivativeDeliveries": 165,
+    "totalArtDeliveries": 311,
+    "globalProvenanceDeliveriesVerified": 299,
+    "confirmedFaultyCompositions": 1,
+    "correctedCompositions": 1,
+    "replacedDeliveryFiles": 3,
+    "additionalConfirmedDefects": 0
+  },
+  "primary": [
+    {
+      "path": "public/art/asa.jpg",
+      "sha256": "cfe27e12f9b683a5178ce74bb4ca6634a1a7eca79df84c539d1504fc396d4fdf",
+      "width": 440,
+      "height": 587,
+      "result": "retained",
+      "observation": "One gloved hand grips shoulder strap; wrist follows the bent sleeve. Other arm out of frame."
+    },
+    {
+      "path": "public/art/cast-asa.jpg",
+      "sha256": "5d915eea172c6d9306ae17ce5ec19a758bfe234bcb04796bfe09423a7f42f041",
+      "width": 160,
+      "height": 213,
+      "result": "retained",
+      "observation": "Small cast portrait retains established face, eye placement, neck and shoulders; any visible hand matches its larger portrait. No additional hand anatomy is resolved at this size."
+    },
+    {
+      "path": "public/art/asa-terms.jpg",
+      "sha256": "35f51669b65d373a021acb0734a8e733f9e75fdf2f950c4bbbadc39a9fd36a64",
+      "width": 600,
+      "height": 800,
+      "result": "retained",
+      "observation": "Two fingerless-gloved gesturing hands join two separate forearms; fingers overlap naturally without a third hand."
+    },
+    {
+      "path": "public/art/cast-attendant.jpg",
+      "sha256": "8363c7806b69bc6ce60ee21a3bef856c20839e7848f8b17c99b1b1626d41886e",
+      "width": 160,
+      "height": 213,
+      "result": "retained",
+      "observation": "Small cast portrait retains established face, eye placement, neck and shoulders; any visible hand matches its larger portrait. No additional hand anatomy is resolved at this size."
+    },
+    {
+      "path": "public/art/attendant-alert.jpg",
+      "sha256": "153f9f5f50410456b8ce6edf8971ebd2342083c6d3e4ea0bf4ee10df791b7a51",
+      "width": 600,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed face, eyes, ears, neck and shoulders against the established character; hands are out of frame. No additional confirmed anatomical defect."
+    },
+    {
+      "path": "public/art/cast-dispatcher.jpg",
+      "sha256": "d265206af228c255c74dffbbb01c7756d31ca7bccac47f00c27a06eaf7a135b9",
+      "width": 160,
+      "height": 213,
+      "result": "retained",
+      "observation": "Small cast portrait retains established face, eye placement, neck and shoulders; any visible hand matches its larger portrait. No additional hand anatomy is resolved at this size."
+    },
+    {
+      "path": "public/art/dispatcher-considering.jpg",
+      "sha256": "24995f27dd9105cdf5386324cb1952a8b03a1a7a83afe0dbe469eb39e7b03cba",
+      "width": 600,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed face, eyes, ears, neck and shoulders against the established character; hands are out of frame. No additional confirmed anatomical defect."
+    },
+    {
+      "path": "public/art/dispatcher-portrait.jpg",
+      "sha256": "a6f0ab256de0c7506592ab47d7bef73c4bfcba9d820d43f4dc78923aed6d8453",
+      "width": 600,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed face, eyes, ears, neck and shoulders against the established character; hands are out of frame. No additional confirmed anatomical defect."
+    },
+    {
+      "path": "public/art/cast-edda.jpg",
+      "sha256": "ce952912e2b1d50f55ab1d8c1aded38fc0b75cad06d19f3c63290319be6340e9",
+      "width": 160,
+      "height": 213,
+      "result": "retained",
+      "observation": "Small cast portrait retains established face, eye placement, neck and shoulders; any visible hand matches its larger portrait. No additional hand anatomy is resolved at this size."
+    },
+    {
+      "path": "public/art/edda.jpg",
+      "sha256": "6af115f70e05fbf24b71e7dedf74885e774dba1ac75f5d1689f1b66ee4931223",
+      "width": 440,
+      "height": 587,
+      "result": "retained",
+      "observation": "One visible book-holding hand connects to bent sleeve; opposite arm stays folded/occluded without a second action hand."
+    },
+    {
+      "path": "public/art/edda-assignment.jpg",
+      "sha256": "3df8cbd71e3e94c1264950caedf6bae79cff7147f5b471375cf1e8c13787c674",
+      "width": 600,
+      "height": 800,
+      "result": "retained",
+      "observation": "Two hands hold separate paper edges with distinct sleeves; no chest grip or extra counter hand."
+    },
+    {
+      "path": "public/art/edda-scrutiny.jpg",
+      "sha256": "e1c17eb4572e81a9d35bdade79017c67d095931dc79a69c70ef1610059c0d7b1",
+      "width": 600,
+      "height": 800,
+      "result": "retained",
+      "observation": "One open hand gestures above the held book; other arm supports book and is occluded. No separate extra hand on counter."
+    },
+    {
+      "path": "public/art/cast-ives.jpg",
+      "sha256": "6e2c6e5714091021181c6c2224ff1787ea623e8fc1efa63cd18f314aa18c998a",
+      "width": 160,
+      "height": 213,
+      "result": "retained",
+      "observation": "Small cast portrait retains established face, eye placement, neck and shoulders; any visible hand matches its larger portrait. No additional hand anatomy is resolved at this size."
+    },
+    {
+      "path": "public/art/ives.jpg",
+      "sha256": "0fbff0f64074ee10c85fb6e4f475f2c6df11b559b6a1ab11e78af4b4ed5e1fd8",
+      "width": 864,
+      "height": 1152,
+      "result": "retained",
+      "observation": "One visible folio hand at bottom of portrait, joined to sleeve; other arm out of frame."
+    },
+    {
+      "path": "public/art/ives-assessing.jpg",
+      "sha256": "f1f371eb6b117ac6b974d0862941f9146529dd242ff41f79b0dd456c65836738",
+      "width": 600,
+      "height": 800,
+      "result": "retained",
+      "observation": "One visible hand grips folio edge with connected wrist; other arm out of frame."
+    },
+    {
+      "path": "public/art/ives-questioning.jpg",
+      "sha256": "080c504776a2cdf96a6890f61ceb0acdb30e7c212e280e44fba8b13ae9aa502a",
+      "width": 600,
+      "height": 800,
+      "result": "retained",
+      "observation": "One visible hand rests on closed folio, forearm joins sleeve; other arm out of frame."
+    },
+    {
+      "path": "public/art/cast-kerr.jpg",
+      "sha256": "629da1895eb1359e9447c02c794c6d560b602e325224c89556536d9cbd1ddff8",
+      "width": 160,
+      "height": 213,
+      "result": "retained",
+      "observation": "Small cast portrait retains established face, eye placement, neck and shoulders; any visible hand matches its larger portrait. No additional hand anatomy is resolved at this size."
+    },
+    {
+      "path": "public/art/kerr.jpg",
+      "sha256": "ec67f4b4299b3ff3302f9e6ae399dc2988d3f086b4f75bd8db2f481884b500ea",
+      "width": 864,
+      "height": 1152,
+      "result": "retained",
+      "observation": "Reviewed face, eyes, ears, neck and shoulders against the established character; hands are out of frame. No additional confirmed anatomical defect."
+    },
+    {
+      "path": "public/art/kerr-closed.jpg",
+      "sha256": "fe8743eab5af388a5ae7b6022c58d516653ded0de5407946b929135ccdf9b60d",
+      "width": 440,
+      "height": 587,
+      "result": "retained",
+      "observation": "Reviewed face, eyes, ears, neck and shoulders against the established character; hands are out of frame. No additional confirmed anatomical defect."
+    },
+    {
+      "path": "public/art/kerr-considering.jpg",
+      "sha256": "efc6bbde9d636460e08aa67b5e494fc3a4700093d45e7fe13918da96b54dadc8",
+      "width": 600,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed face, eyes, ears, neck and shoulders against the established character; hands are out of frame. No additional confirmed anatomical defect."
+    },
+    {
+      "path": "public/art/cast-lumen.jpg",
+      "sha256": "8f73a0b83699688044a8e427607e4409fd0c469cea84d93f76b2f92e90279829",
+      "width": 160,
+      "height": 213,
+      "result": "retained",
+      "observation": "Small cast portrait retains established face, eye placement, neck and shoulders; any visible hand matches its larger portrait. No additional hand anatomy is resolved at this size."
+    },
+    {
+      "path": "public/art/lumen.jpg",
+      "sha256": "88cc611cc0cafbbd9cac910b4fdf454cb24fd1d4a8dc6ea6ba9f2822f890668e",
+      "width": 864,
+      "height": 1152,
+      "result": "retained",
+      "observation": "Reviewed face, eyes, ears, neck and shoulders against the established character; hands are out of frame. No additional confirmed anatomical defect."
+    },
+    {
+      "path": "public/art/lumen-challenging.jpg",
+      "sha256": "2b59d7f1b3834aa7d15cc651adb7afaca902f575176a964b47ba5fc17b127757",
+      "width": 440,
+      "height": 587,
+      "result": "retained",
+      "observation": "Reviewed face, eyes, ears, neck and shoulders against the established character; hands are out of frame. No additional confirmed anatomical defect."
+    },
+    {
+      "path": "public/art/lumen-considering.jpg",
+      "sha256": "79bffefe5110382fa87241d746fa3aa38b898341a33f80c4e61ca10517c75746",
+      "width": 600,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed face, eyes, ears, neck and shoulders against the established character; hands are out of frame. No additional confirmed anatomical defect."
+    },
+    {
+      "path": "public/art/lumen-guarded.jpg",
+      "sha256": "bd971d777b9b60800cc3f5e73821b4bf7768c82f63eccacb91bc896a85d1390d",
+      "width": 440,
+      "height": 587,
+      "result": "retained",
+      "observation": "Reviewed face, eyes, ears, neck and shoulders against the established character; hands are out of frame. No additional confirmed anatomical defect."
+    },
+    {
+      "path": "public/art/cast-mara.jpg",
+      "sha256": "4e4225028b84061e6164425f8fec1f48896cdaadf009b1197edc591956821707",
+      "width": 160,
+      "height": 213,
+      "result": "retained",
+      "observation": "Small cast portrait retains established face, eye placement, neck and shoulders; any visible hand matches its larger portrait. No additional hand anatomy is resolved at this size."
+    },
+    {
+      "path": "public/art/mara.jpg",
+      "sha256": "2b1c67aa8a9519999a98e8559edc831406e2014fd42d91bf4ab1ae7b1e0d3214",
+      "width": 864,
+      "height": 1152,
+      "result": "retained",
+      "observation": "Reviewed face, eyes, ears, neck and shoulders against the established character; hands are out of frame. No additional confirmed anatomical defect."
+    },
+    {
+      "path": "public/art/mara-boundary.jpg",
+      "sha256": "6374ec7a897a1719c908f4d1eece65e6181ecb8e9e1b662326b9020e03bce6f5",
+      "width": 440,
+      "height": 587,
+      "result": "retained",
+      "observation": "Reviewed face, eyes, ears, neck and shoulders against the established character; hands are out of frame. No additional confirmed anatomical defect."
+    },
+    {
+      "path": "public/art/mara-questioning.jpg",
+      "sha256": "afd31fb7aaf5217e823c9c9a218b55c6694f4e23b4080205d2de43af8307a60d",
+      "width": 440,
+      "height": 587,
+      "result": "retained",
+      "observation": "Reviewed face, eyes, ears, neck and shoulders against the established character; hands are out of frame. No additional confirmed anatomical defect."
+    },
+    {
+      "path": "public/art/mara-remorse.jpg",
+      "sha256": "d2761bc9d1b617b1e4d04adf4683f4fbb4ea92a455eff1b4c277da6ffdc0f936",
+      "width": 600,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed face, eyes, ears, neck and shoulders against the established character; hands are out of frame. No additional confirmed anatomical defect."
+    },
+    {
+      "path": "public/art/masked-attendant-portrait.jpg",
+      "sha256": "122511a1d0f393c1d838d6768407b3784c89cde1602ebc07d0d50f14210d2599",
+      "width": 600,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed face, eyes, ears, neck and shoulders against the established character; hands are out of frame. No additional confirmed anatomical defect."
+    },
+    {
+      "path": "public/art/cast-mechanic.jpg",
+      "sha256": "c37ac0916a2ed934cf23409b59c61ca31a4a466efe4973336f85a436cd31828f",
+      "width": 160,
+      "height": 213,
+      "result": "retained",
+      "observation": "Small cast portrait retains established face, eye placement, neck and shoulders; any visible hand matches its larger portrait. No additional hand anatomy is resolved at this size."
+    },
+    {
+      "path": "public/art/mechanic-explaining.jpg",
+      "sha256": "f3399f7aa7ac3f6dfc6b93340d62424d013426c03c8139f991213325b933fe8a",
+      "width": 600,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed face, eyes, ears, neck and shoulders against the established character; hands are out of frame. No additional confirmed anatomical defect."
+    },
+    {
+      "path": "public/art/mechanic-portrait.jpg",
+      "sha256": "8afb01ff0465467be38a78714a1768cf23933ad6e79bdab286a61bc2ebfc3d0c",
+      "width": 600,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed face, eyes, ears, neck and shoulders against the established character; hands are out of frame. No additional confirmed anatomical defect."
+    },
+    {
+      "path": "public/art/cast-nia.jpg",
+      "sha256": "6b85c5ff274488d518b81b84439402e9dbc23292345b3688b26b602baf2d205a",
+      "width": 160,
+      "height": 213,
+      "result": "retained",
+      "observation": "Small cast portrait retains established face, eye placement, neck and shoulders; any visible hand matches its larger portrait. No additional hand anatomy is resolved at this size."
+    },
+    {
+      "path": "public/art/nia.jpg",
+      "sha256": "d7303d8d8359b2ea99ac67c1ae8ebf676618f65268d0c006681e90315b35e41e",
+      "width": 440,
+      "height": 587,
+      "result": "retained",
+      "observation": "One hand rests on notebook and joins horizontal forearm; other arm obscured at table edge."
+    },
+    {
+      "path": "public/art/nia-speaking.jpg",
+      "sha256": "f3b42abaefb793d62305fee03dff26cb080a3e65ef40106ede14072b5192a8c5",
+      "width": 600,
+      "height": 800,
+      "result": "retained",
+      "observation": "Two hands rest on table from separate cardigan sleeves; natural curled fingers and no third wrist."
+    },
+    {
+      "path": "public/art/nia-terms.jpg",
+      "sha256": "071948e154bbd6e521c4125611127b0c8b3fe11da11324bf056792ef9700f96e",
+      "width": 600,
+      "height": 800,
+      "result": "retained",
+      "observation": "One visible hand rests on notebook; other arm is obscured by table/cardigan, not a duplicated forearm."
+    },
+    {
+      "path": "public/art/cast-orderly.jpg",
+      "sha256": "1136948945e3c2c1047a0aa19a704a158f6e554b36bbb31fa08d1841ff33d72d",
+      "width": 160,
+      "height": 213,
+      "result": "retained",
+      "observation": "Small cast portrait retains established face, eye placement, neck and shoulders; any visible hand matches its larger portrait. No additional hand anatomy is resolved at this size."
+    },
+    {
+      "path": "public/art/orderly.jpg",
+      "sha256": "a93bf8bf1ccd3928101017819b5f7cbe2964815cf9daef9793a13fb1d92693e1",
+      "width": 864,
+      "height": 1152,
+      "result": "retained",
+      "observation": "Reviewed face, eyes, ears, neck and shoulders against the established character; hands are out of frame. No additional confirmed anatomical defect."
+    },
+    {
+      "path": "public/art/orderly-assessing.jpg",
+      "sha256": "61dd8b46d6388fbc70ef01461b17617f9c05ad4a2d62e78e8bea37167a65cb0e",
+      "width": 600,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed face, eyes, ears, neck and shoulders against the established character; hands are out of frame. No additional confirmed anatomical defect."
+    },
+    {
+      "path": "public/art/cast-quill.jpg",
+      "sha256": "6958725afa56e14c37c38630be2953a2dd0a422bc76c7d3db858356edef88281",
+      "width": 160,
+      "height": 213,
+      "result": "retained",
+      "observation": "Small cast portrait retains established face, eye placement, neck and shoulders; any visible hand matches its larger portrait. No additional hand anatomy is resolved at this size."
+    },
+    {
+      "path": "public/art/quill.jpg",
+      "sha256": "4971bcdc37e0853eb4bf0199b883d421ce7a71a77dd2b487c1974e616755311b",
+      "width": 864,
+      "height": 1152,
+      "result": "retained",
+      "observation": "Reviewed face, eyes, ears, neck and shoulders against the established character; hands are out of frame. No additional confirmed anatomical defect."
+    },
+    {
+      "path": "public/art/quill-terms.jpg",
+      "sha256": "01ebe6e2f28963db00606d3254688e3fe831f5b55ae7d2cb565a35533fda4f7b",
+      "width": 600,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed face, eyes, ears, neck and shoulders against the established character; hands are out of frame. No additional confirmed anatomical defect."
+    },
+    {
+      "path": "public/art/quill-waiting.jpg",
+      "sha256": "8ed1f97159ed5acf9a09802df570e74a87a50ac377c7be63d940e3d0f3f0ad1b",
+      "width": 440,
+      "height": 587,
+      "result": "retained",
+      "observation": "Reviewed face, eyes, ears, neck and shoulders against the established character; hands are out of frame. No additional confirmed anatomical defect."
+    },
+    {
+      "path": "public/art/cast-ren.jpg",
+      "sha256": "3aa64112127a14c855b22217b6c560f521493136b2d8a2690c17844745c146ac",
+      "width": 160,
+      "height": 213,
+      "result": "retained",
+      "observation": "Small cast portrait retains established face, eye placement, neck and shoulders; any visible hand matches its larger portrait. No additional hand anatomy is resolved at this size."
+    },
+    {
+      "path": "public/art/ren-concerned.jpg",
+      "sha256": "ed2abb2f1406b47b66a782655e01df5b4a8caaaa027141c7c2b02e4d5b94f814",
+      "width": 600,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed face, eyes, ears, neck and shoulders against the established character; hands are out of frame. No additional confirmed anatomical defect."
+    },
+    {
+      "path": "public/art/ren-listening.jpg",
+      "sha256": "d06442eadc08e0b5e34e06b61e0126179e67f472821f9f8ba94b51fe3f28627b",
+      "width": 600,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed face, eyes, ears, neck and shoulders against the established character; hands are out of frame. No additional confirmed anatomical defect."
+    },
+    {
+      "path": "public/art/ren-portrait.jpg",
+      "sha256": "1ad4f23925cc6159462c2ad51fe01bcda6517251b78c211536dc623c892b9a33",
+      "width": 600,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed face, eyes, ears, neck and shoulders against the established character; hands are out of frame. No additional confirmed anatomical defect."
+    },
+    {
+      "path": "public/art/cast-sera.jpg",
+      "sha256": "baf9d5566a7c4522c0523b11464c9a1ad14668f2d9718505e254bd83e0099714",
+      "width": 160,
+      "height": 213,
+      "result": "retained",
+      "observation": "Small cast portrait retains established face, eye placement, neck and shoulders; any visible hand matches its larger portrait. No additional hand anatomy is resolved at this size."
+    },
+    {
+      "path": "public/art/sera.jpg",
+      "sha256": "357cfe3e403cfc57140977271a62264157640a0c640da9bbd5272e39516b39cf",
+      "width": 864,
+      "height": 1152,
+      "result": "retained",
+      "observation": "One visible pencil hand, fingers curled around pencil and wrist under cloak; other arm hidden."
+    },
+    {
+      "path": "public/art/sera-attentive.jpg",
+      "sha256": "a5a6399fa6e6e924b7f97eda2b75d83895ef2500783c52ba5ddfd97b0119ed4a",
+      "width": 600,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed face, eyes, ears, neck and shoulders against the established character; hands are out of frame. No additional confirmed anatomical defect."
+    },
+    {
+      "path": "public/art/sera-listening.jpg",
+      "sha256": "2f6f082f184eb1f8bd6e44e64b8a92facde781d1a7f8d572a794a335a87e4369",
+      "width": 440,
+      "height": 587,
+      "result": "retained",
+      "observation": "One visible pencil hand joins cloak sleeve; second arm hidden. Pencil extends through grip, not an extra digit."
+    },
+    {
+      "path": "public/art/cast-stallholder.jpg",
+      "sha256": "e9e6efaffb15becfccd90fce92cd0c33c40aed0adff5465eac593fc893f20908",
+      "width": 160,
+      "height": 213,
+      "result": "retained",
+      "observation": "Small cast portrait retains established face, eye placement, neck and shoulders; any visible hand matches its larger portrait. No additional hand anatomy is resolved at this size."
+    },
+    {
+      "path": "public/art/stallholder-portrait.jpg",
+      "sha256": "80d95d12bcfd922efba728f05b9779032a7256739726fdc63a540ab428a4871a",
+      "width": 600,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed face, eyes, ears, neck and shoulders against the established character; hands are out of frame. No additional confirmed anatomical defect."
+    },
+    {
+      "path": "public/art/stallholder-speaking.jpg",
+      "sha256": "79330f199d6538c6a51b256102d35ff16ab623bc306fbc96037e37129dce0c72",
+      "width": 600,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed face, eyes, ears, neck and shoulders against the established character; hands are out of frame. No additional confirmed anatomical defect."
+    },
+    {
+      "path": "public/art/archive-desk.jpg",
+      "sha256": "3380a27c045a88e14ed668eac830ff10184f802149f877fd5d5348b64f51c2b2",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/archive-held-original.jpg",
+      "sha256": "4e1dfb9241e74fe5dd8aa82f874af2a51347824ca71f93663aafb6fed737ce71",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/archive-preparation.jpg",
+      "sha256": "567474a9f42a03bb8af719654aa32a21ff6e78a446ffe44c2489208485cd86cd",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/asa-dispatch.jpg",
+      "sha256": "c2629fb0e03e49efe511e7573253cd51df18caeb39c053c638186b1d7fe06b86",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Two gloved hands: one above the closed case, the other on the counter; separate coat sleeves join the two shoulders."
+    },
+    {
+      "path": "public/art/attendant-confrontation.jpg",
+      "sha256": "bd8151decb4cdeeca1ab805c221127fd128630466b33eb4aac6a011883b49053",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Two bare forearms descend from separate rolled sleeves; one hand grips a wrench, the other hangs open. No extra limb."
+    },
+    {
+      "path": "public/art/canal-dispatch.jpg",
+      "sha256": "5c7ff9924557e8e8d5808838676f3ba96ce452555e8899e4930199c9a61e476c",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/canal.jpg",
+      "sha256": "d62d6b39fb8c2f81c0a9ab7b77f93248a43a78f9b2a939c8517cb0a964913a77",
+      "width": 1280,
+      "height": 720,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/chapel-entry.jpg",
+      "sha256": "ab4ed5db3ed44a1f1f5f3eaf106723cdfd2e8dd7063fcf2c3a74ce2b566e1836",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/chapel-reader.jpg",
+      "sha256": "1686a883834fff73bdb935fad6bc52083d20cfcb04669c067a073ae03abe9738",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/chapel-service.jpg",
+      "sha256": "b8e1d3ac5a628807d03bf02367e0ab1a1f90b9e3dde8bbc5e9d7c139b80e6c35",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/chapel-shared.jpg",
+      "sha256": "d36d5180b132fdde67b7abf6735d2bd5139139b39f3463d21be120c09ce8f51f",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Mara has one hand on each chair arm; Lumen has two overlapping hands at the waist with distinct sleeves. Chair fittings are not limbs."
+    },
+    {
+      "path": "public/art/chapel.jpg",
+      "sha256": "b38ed7d28a6ad107c209a32441299a6ffb1dbcd6e8a314de77de92d4b50a1a9b",
+      "width": 1280,
+      "height": 720,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/chapter-wall.jpg",
+      "sha256": "52a34463137b9045e7a6894e359bfba1e26442a7726622ecc8a5e0e2e6898e18",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/chapter-week.jpg",
+      "sha256": "1d258a21b77686a66bb9f10812eee5a0fd3a2a6e6f21c4fdf17a375b9f17d4bd",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/city-schematic.jpg",
+      "sha256": "7506a6c7b0c7e75203f1eef7eba2c3b6dd6d4871d00c39b85eb6f1a308de2953",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/clinic-conversation.jpg",
+      "sha256": "afe2cc73b2ff497b3f5d1416136b2fce339afef131ba9b0396dc5c4da68190bf",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/clinic-coolant.jpg",
+      "sha256": "5bee57b0d2f030493f7143904102d8d1b75c5ceb464b05eeea66861014e1659b",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/clinic-relay.jpg",
+      "sha256": "927cf9d538b2583ac2882456f65ee55784609ada9cfc913f4060e42f0aa41da8",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/courier-receipt.jpg",
+      "sha256": "73a07066c0d5d0f7d630f4f60bff6e4d1d9ea231520329c1d1a3df14a10a668b",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/courier-table.jpg",
+      "sha256": "6220068ae893776190816cb2d8bd7c9ef6c8047c5d76a83b301995e2613c61c4",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/district-board.jpg",
+      "sha256": "09ce88af81f4ee7b02a20021a0b5013ddd1af1cc0f272380200ada947cd49340",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/edda-archive.jpg",
+      "sha256": "090a907f59e2587d9ccc536652621ff0868c6ac46aa0e4a3067401a671cc9810",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "One hand on the closed ledger and one holding the separate paper; two distinct sleeves lead to the shoulders."
+    },
+    {
+      "path": "public/art/edda-service-review.jpg",
+      "sha256": "cdeb87235434e44bb8bce9d51e2104cb000cd6c2b7cb0d08363eb0edd3bfe95a",
+      "width": 1200,
+      "height": 800,
+      "result": "corrected",
+      "observation": "Confirmed faulty source: chest grip and counter hand share an implausible sleeve path beside another folded forearm. Retake removes chest grip/book and has two separately connected arms and two hands on counter."
+    },
+    {
+      "path": "public/art/equipment-atlas.jpg",
+      "sha256": "167a20e1efbcc80763cc9ae5473c38a238eb1ea24b2cbf19e7bb4b3753de448f",
+      "width": 1600,
+      "height": 1600,
+      "result": "retained",
+      "observation": "Equipment silhouette, contacts/handles and intentional condition reviewed against atlas. No human hands or limbs in this object plate; no additional confirmed creative defect."
+    },
+    {
+      "path": "public/art/finale-listed.jpg",
+      "sha256": "097e29b0e4558bcbfccfd9f2431b0cdc80c810d01b313b1a29407df4ebec1954",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Ives holds the folio with two hands from separate sleeves. Sera has one visible pencil hand, other arm occluded by cloak/railing."
+    },
+    {
+      "path": "public/art/finale-names.jpg",
+      "sha256": "7a22dc054a9e6700b8a688dedc17f02dc672efe4cccaa979082e07ff2153e72c",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "One visible raised pencil hand connected to bent forearm and shoulder; other arm hidden. No detached hand on the wall."
+    },
+    {
+      "path": "public/art/finale-quiet.jpg",
+      "sha256": "ac9eaf092f9d3e79f6ddc9efdf5b306e0f0838cad1414f21f7159cc7c5061074",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Distant Sera has cloak-covered arms and one small visible hand at chest; wet wall marks are not extra fingers."
+    },
+    {
+      "path": "public/art/finale-witness.jpg",
+      "sha256": "08b5ebc44ac43c137ac792901092963f3f21ab35a5ae12f7390a3125f3e66c37",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Sera writes with one hand while the other supports the notebook; wrists join separate cloak sleeves."
+    },
+    {
+      "path": "public/art/fragment-order.jpg",
+      "sha256": "af887e9203e651dd95138cded06fd10110afb7f85bc601a75cd2152962cc1c8b",
+      "width": 900,
+      "height": 600,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/fragment-roster.jpg",
+      "sha256": "403456eecebfed8ef287ae627f893dc9953854fc6040828ff8ef49c2217f96d1",
+      "width": 900,
+      "height": 600,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/fragment-signature.jpg",
+      "sha256": "d587dea6f54a2ac5bfe45961d1d499248133a7bb397a15e1ca7bca9735502764",
+      "width": 900,
+      "height": 600,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/freight-passage.jpg",
+      "sha256": "a371ba2736bef11fc8512eddbaf404d6e147a380cff4fbf6742cb75ac52a906a",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/freight.jpg",
+      "sha256": "50f7060ce80a77fe92fe11258527dd7e25d8a08d13db6604067306eaa2d2580f",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/hearing-filed.jpg",
+      "sha256": "6870a57e0b4ebdba00e2f2ef4e527cd6a28fc4fa2c3928c6b7fda597f9bbf2dc",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/hearing-table.jpg",
+      "sha256": "f2601ddf9af5e08a094ea34fc6e20a2739b91ddefd1e23a658952c5c4371f9c3",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/held-case.jpg",
+      "sha256": "3a088d0be99ed8d618db031935b8d669c70c2ae533bf8ce9c52d5b71ea14e2d4",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/incinerator-flue.jpg",
+      "sha256": "d943a04c7cb25f7822a7ef628ea4780b788c52227c774cbc5ee70fdf5186da8f",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/item-archive-probe.jpg",
+      "sha256": "3ad776f515241a61a39496acba83ed8be540589ae74445f03e7651139a70160c",
+      "width": 1536,
+      "height": 1024,
+      "result": "retained",
+      "observation": "Equipment silhouette, contacts/handles and intentional condition reviewed against atlas. No human hands or limbs in this object plate; no additional confirmed creative defect."
+    },
+    {
+      "path": "public/art/item-burner-route.jpg",
+      "sha256": "70018c2df2ed0c3ade227040ec36456ea4329d38331e05675adb29e8c09fcc2c",
+      "width": 1536,
+      "height": 1024,
+      "result": "retained",
+      "observation": "Equipment silhouette, contacts/handles and intentional condition reviewed against atlas. No human hands or limbs in this object plate; no additional confirmed creative defect."
+    },
+    {
+      "path": "public/art/item-chair-harness.jpg",
+      "sha256": "1f808fa1bd1600fb187df9bc76d4903e71343bf84b21e88ff36d320a92adec1f",
+      "width": 1536,
+      "height": 1024,
+      "result": "retained",
+      "observation": "Equipment silhouette, contacts/handles and intentional condition reviewed against atlas. No human hands or limbs in this object plate; no additional confirmed creative defect."
+    },
+    {
+      "path": "public/art/item-clinic-marker.jpg",
+      "sha256": "9a2eff2a0f495a00986a978b299686b5deb71fa34f3df9fc2e437f95c668545a",
+      "width": 1536,
+      "height": 1024,
+      "result": "retained",
+      "observation": "Equipment silhouette, contacts/handles and intentional condition reviewed against atlas. No human hands or limbs in this object plate; no additional confirmed creative defect."
+    },
+    {
+      "path": "public/art/item-counterfeit-pass.jpg",
+      "sha256": "91326205c80ce7ba41725dc613322b2e115531f4a5ced7409cf3b65af0a3f734",
+      "width": 1536,
+      "height": 1024,
+      "result": "retained",
+      "observation": "Equipment silhouette, contacts/handles and intentional condition reviewed against atlas. No human hands or limbs in this object plate; no additional confirmed creative defect."
+    },
+    {
+      "path": "public/art/item-desk-guide.jpg",
+      "sha256": "967005c156b4dd4a88e3f9eaccb3488298f219f0dc4eaec27a367043e8c1847a",
+      "width": 1536,
+      "height": 1024,
+      "result": "retained",
+      "observation": "Equipment silhouette, contacts/handles and intentional condition reviewed against atlas. No human hands or limbs in this object plate; no additional confirmed creative defect."
+    },
+    {
+      "path": "public/art/item-layout-scrap.jpg",
+      "sha256": "535af706376d1c12140e38d4aeff5f715623ff5437bcc55810993069a338fea9",
+      "width": 1536,
+      "height": 1024,
+      "result": "retained",
+      "observation": "Equipment silhouette, contacts/handles and intentional condition reviewed against atlas. No human hands or limbs in this object plate; no additional confirmed creative defect."
+    },
+    {
+      "path": "public/art/item-mono-knife.jpg",
+      "sha256": "828b2d35c73e7f6b804f725c75fd19f3f0241f9f4968f6dbf7185b2147c4e88c",
+      "width": 1536,
+      "height": 1024,
+      "result": "retained",
+      "observation": "Equipment silhouette, contacts/handles and intentional condition reviewed against atlas. No human hands or limbs in this object plate; no additional confirmed creative defect."
+    },
+    {
+      "path": "public/art/item-route-shroud.jpg",
+      "sha256": "1d50a6325e7483a840424747ed04d690ba90659f8244a2dbedab5fea0ae8d4fe",
+      "width": 1536,
+      "height": 1024,
+      "result": "retained",
+      "observation": "Equipment silhouette, contacts/handles and intentional condition reviewed against atlas. No human hands or limbs in this object plate; no additional confirmed creative defect."
+    },
+    {
+      "path": "public/art/item-sedative.jpg",
+      "sha256": "4b00fbed1a7dc2c6d55df9b8c8db99aba48e15acba51f7d585175f13ee96845d",
+      "width": 1536,
+      "height": 1024,
+      "result": "retained",
+      "observation": "Equipment silhouette, contacts/handles and intentional condition reviewed against atlas. No human hands or limbs in this object plate; no additional confirmed creative defect."
+    },
+    {
+      "path": "public/art/item-shard-damaged.jpg",
+      "sha256": "23c2bc5280c6bae0393a0549d557113576ccd2863212bc3a560e554bbb73a57a",
+      "width": 1536,
+      "height": 1024,
+      "result": "retained",
+      "observation": "Equipment silhouette, contacts/handles and intentional condition reviewed against atlas. No human hands or limbs in this object plate; no additional confirmed creative defect."
+    },
+    {
+      "path": "public/art/item-shard.jpg",
+      "sha256": "62cf6b849a9098a160a942df92e7c950d44951ee72bdd26fd17350b8dfe23162",
+      "width": 1536,
+      "height": 1024,
+      "result": "retained",
+      "observation": "Equipment silhouette, contacts/handles and intentional condition reviewed against atlas. No human hands or limbs in this object plate; no additional confirmed creative defect."
+    },
+    {
+      "path": "public/art/item-signal-baffle.jpg",
+      "sha256": "263a3db3960215892fd7a096e5ddf7c1ddaf78e8cee554c2e20aabbfd9b514c1",
+      "width": 1536,
+      "height": 1024,
+      "result": "retained",
+      "observation": "Equipment silhouette, contacts/handles and intentional condition reviewed against atlas. No human hands or limbs in this object plate; no additional confirmed creative defect."
+    },
+    {
+      "path": "public/art/item-spoof-chip.jpg",
+      "sha256": "278aa7703105a2c7e10242ac16a58cbe51255508b6c44782a64112eefc2f351d",
+      "width": 1536,
+      "height": 1024,
+      "result": "retained",
+      "observation": "Equipment silhouette, contacts/handles and intentional condition reviewed against atlas. No human hands or limbs in this object plate; no additional confirmed creative defect."
+    },
+    {
+      "path": "public/art/item-witness-token.jpg",
+      "sha256": "8fd0ecf1119fceab557f06ac169b21296f1b995ca6a3b14800124a546fc7df91",
+      "width": 1536,
+      "height": 1024,
+      "result": "retained",
+      "observation": "Equipment silhouette, contacts/handles and intentional condition reviewed against atlas. No human hands or limbs in this object plate; no additional confirmed creative defect."
+    },
+    {
+      "path": "public/art/ives-hearing.jpg",
+      "sha256": "54584f9e4ddba81b0901c7e76e89ce310ba23b8cd4cdbdaa0858ac75cea38aea",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Two separate forearms rest on the table, hands beside the closed folio; five-digit hand silhouettes with curled/occluded fingers."
+    },
+    {
+      "path": "public/art/kerr-handover.jpg",
+      "sha256": "30692b026b97a1bb5688d9f07588665ff944440dd4ad9e90be4a4f9df8adfa01",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "One hand holds the small card above a closed case; opposite hardware forearm ends behind case. No duplicate free hand or actual transfer."
+    },
+    {
+      "path": "public/art/laundry-cart.jpg",
+      "sha256": "6096adbf567c6e46a7ac3e3c82b7f96aed7c0b283d3d911ceaaacd14afd8001d",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/lumen-cup.jpg",
+      "sha256": "13781d929ac7df95c5f2f053e98d569b5c50943678f8f1e4d9d2b3a20461bcd0",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "One hand grips cup handle, the other rests on wiping cloth; each joins its own wrist, sleeve and shoulder. Magenta optic retained."
+    },
+    {
+      "path": "public/art/mara-present.jpg",
+      "sha256": "c981bd1f21bfe996d6493e78987b4cffd63c06954d8d7be945a5799216866337",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Two hands meet separate forearms on table beside a sealed envelope and cup; empty chair remains unoccupied."
+    },
+    {
+      "path": "public/art/mara-revelation.jpg",
+      "sha256": "577a72c15542c6d7fa49a27d971f39877ac0006105024131b4084ca765681738",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "One bent forearm supports cheek, second arm rests behind table edge. Apparatus contains a memory likeness, not a spare corporeal person or limb."
+    },
+    {
+      "path": "public/art/mara-shared-hour.jpg",
+      "sha256": "ccbbc0d127c25864c2602e720d0fc8327b139fe70ad51ef805c5753f23009089",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Both hands surround one cup with distinct wrists and forearms; no fingers emerge from the cup or tabletop."
+    },
+    {
+      "path": "public/art/mara-window.jpg",
+      "sha256": "493ae2aa5f2c324140ed8639d3acf04b27e2c7fa5661a7a3ea0c0c2c4beb38bc",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Both hands surround the cup, separate forearms on table. Similarity to shared-hour is deliberate continuity, not added anatomy."
+    },
+    {
+      "path": "public/art/market-counter.jpg",
+      "sha256": "709cb53138b1b9f4ec6d3a4a168008f124cc0598903c20d04cccb63f7e0ef9b8",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/memorial-stair.jpg",
+      "sha256": "2078a38c3c911729dfe5a80eb232d1c78bec7c0609c97cfa5f5450e77432acd7",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/memory-apparatus.jpg",
+      "sha256": "76fb91d7eb3ea1b23fbd545482d075301265ef113633ea763ee63cd7062aaeb4",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/memory-bench.jpg",
+      "sha256": "0d53e523b3adfbf538585d14f6d930f8361c1155e0d7d443d35317292f0a16ad",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/nia-arrival.jpg",
+      "sha256": "22829b36897ec6e10018754951c9ec8cf1ae6bdcacfd036e6508795961528fe7",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "One hand rests on notebook, other on wheelchair armrest; separate cardigan sleeves. Visible chair bars are mechanical supports."
+    },
+    {
+      "path": "public/art/nia-transfer.jpg",
+      "sha256": "d850e4a5d57088ae9ff7568c76d5a5f140fe46e50679e0c3d28fa6333983263f",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Two hands on separate wheelchair armrests; two trousered legs end at two boots on footrests. Chair hardware is separate from anatomy."
+    },
+    {
+      "path": "public/art/notice-desk.jpg",
+      "sha256": "a00696c9017ad0bb86c0b912fbd494be8382fbbece378d978431975057ad11f5",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/opening.jpg",
+      "sha256": "9ef96fa0bcea5beef099cacc0f9d568efe37da4487835c4fc50a9ba8380c7b95",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/ordinary-rest.jpg",
+      "sha256": "d0d7d0b5b5ddf9015f2ef0ca1d0d1c2555f4bb9a575c9a846104cc9a1ca9ec8d",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/private-reply.jpg",
+      "sha256": "291e51f60239b8f08b5f23433c017c9395075a99fd8e4d7e6b7823ecfdb0c2f2",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/quill-offer.jpg",
+      "sha256": "c1dfbc8b368cd0d02542c14407a0b2733847425ce89d96e9ba2df49feae12c1c",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "One visible hand rests beside bowl; opposite arm is occluded behind bowl/torso. No floating hand or third sleeve."
+    },
+    {
+      "path": "public/art/ren-canal.jpg",
+      "sha256": "6a1f41231020be9e6119d69406ca9ca3c3e2ba221178f8262e02cb3fe7abbe31",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Two hands meet at raised knees with separately traceable forearms; two trousered legs and boots remain coherent."
+    },
+    {
+      "path": "public/art/repair-bench.jpg",
+      "sha256": "46714d0ca0fc54bbf38e7207a13ea620313fca2c35b7c0fa8fdff307ecd9ffe9",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/sera-hearing.jpg",
+      "sha256": "c281c605d54e1e2caf0d592be2d24217396e73536b92007b0d7525c4277617d6",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "One pencil grip over paper, one open hand on folio; separate wrists and sleeves. Curled pencil-grip fingers are not duplicated."
+    },
+    {
+      "path": "public/art/shelter-conversation.jpg",
+      "sha256": "8c2240b2bd432d6df7960916b14180181da54deb89f330254f2e267fbecb377d",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Ren has one kettle hand and one knee hand; Sera has two bucket-supporting hands, each with a separate sleeve. Four hands for two people."
+    },
+    {
+      "path": "public/art/shelter-hall.jpg",
+      "sha256": "419be4b687b7ef2415c4609901da51f0e0e7f8fc954c99f4adc6b39381f809a2",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/shelter-landing.jpg",
+      "sha256": "c04e29ccf5f538c6a25590f82ffbaa9fd5e65b668938d996b16b56dfd8bdb8f2",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/shelter-pump.jpg",
+      "sha256": "8575223111ea63184d5d201458341b84ccadd35664fa71d5470620eeaf168097",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/shelter-restored.jpg",
+      "sha256": "67804a7efe6478446fb60e4ba04c8e9b4e5f3a37430d7f64173c2eed072c94bf",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/shelter.jpg",
+      "sha256": "682b53e06fcd9edd9f4092059fb109dd4750244447338b0530605057d6672916",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/spire-counter.jpg",
+      "sha256": "57242dd57d1e0f8185c9bef6e59ba6cb710229ea5075efc79fa3bfd578b4993a",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/spire-payroll.jpg",
+      "sha256": "c36beebe3c5dfac0461ecb398eea50156c6f08110790e497bd481c16d82c898a",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/spire-terminal.jpg",
+      "sha256": "d26a856a8e3d512eaaf862eed795dd2122ca6071060f9bb418695f70e4101afc",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/spire.jpg",
+      "sha256": "59315758907739d260c66480b6dd372902b154a981c218ff71e522a134805413",
+      "width": 1280,
+      "height": 720,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/stall.jpg",
+      "sha256": "c77892d16439f0430abcbd058c36530c0d17be366c95a89f486dd3c59dc60969",
+      "width": 1280,
+      "height": 720,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/stallholder-story.jpg",
+      "sha256": "b82be5ae49d8276b7544633854e504fe012528e8847a83bb2f0e4dfe2652e73f",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "One open hand on paper, other hand resting near torso on counter; separate downward sleeves. Paper marks are decorative, not readable evidence."
+    },
+    {
+      "path": "public/art/title.jpg",
+      "sha256": "bc429bafbac720f8fe10d505761b92f226c7085fde95950899227cdba77c4543",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Symbolic runner has one raised shard hand with connected forearm; opposite arm hidden by cloak. Distant stall figures have distinct silhouettes; key art is not literal item proof."
+    },
+    {
+      "path": "public/art/wall-shared.jpg",
+      "sha256": "664ff4e12ff9665bb872a84cf99daa7d7d9282813e297b31ec172020c03a722e",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Sera has one visible pencil hand; Ives has one visible folio-supporting hand. Remaining arms are occluded by cloak/book, with no extra free hands."
+    },
+    {
+      "path": "public/art/wardnine.jpg",
+      "sha256": "c53adb16eb278e6d2904cda51265cbfd79a964ad0cda43dce94edb432d5cbff0",
+      "width": 1280,
+      "height": 720,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    },
+    {
+      "path": "public/art/witness-checkpoint.jpg",
+      "sha256": "9b570b041a4d542fc6431459831a1fcdd17acc6876213f4caa8d5ee52fee6dc8",
+      "width": 1200,
+      "height": 800,
+      "result": "retained",
+      "observation": "Reviewed setting/object geometry, framing and any distant human silhouettes. No foreground hand action or additional confirmed anatomy defect; decorative document/map marks remain nonliteral."
+    }
+  ],
+  "derivatives": [
+    {
+      "path": "public/art/archive-desk-small.jpg",
+      "source": "public/art/archive-desk.jpg",
+      "meanPixelDifference": 3.587,
+      "sha256": "2f5ac1bc069bc135913ff3abb573ce67ba5332dc6893db2f3216fbfff85f9fdc",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/archive-held-original-small.jpg",
+      "source": "public/art/archive-held-original.jpg",
+      "meanPixelDifference": 4.927,
+      "sha256": "52394407135df82fe040b3e7b1a63fdf52715de9c58414262242514ee953f1bf",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/archive-preparation-small.jpg",
+      "source": "public/art/archive-preparation.jpg",
+      "meanPixelDifference": 4.424,
+      "sha256": "8fc13ac0455d669d54b9e910681e92fbe68e7c3fb717937beca4ab329fd5c728",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/asa-dispatch-small.jpg",
+      "source": "public/art/asa-dispatch.jpg",
+      "meanPixelDifference": 4.183,
+      "sha256": "a3f0966108d39152ac1b2829528df8996aaa93fdcd35a110d8d905cc2a65a6f0",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/attendant-confrontation-small.jpg",
+      "source": "public/art/attendant-confrontation.jpg",
+      "meanPixelDifference": 4.838,
+      "sha256": "b099b32973ed940b5112a817816ef83eb57e432934152174610acb036341349a",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/canal-dispatch-small.jpg",
+      "source": "public/art/canal-dispatch.jpg",
+      "meanPixelDifference": 4.366,
+      "sha256": "f840fc94854a7440b9a94aa09ebf3d51e8614c2b1566595c117f465f2e8d9914",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/chapel-entry-small.jpg",
+      "source": "public/art/chapel-entry.jpg",
+      "meanPixelDifference": 3.03,
+      "sha256": "950120ae23be6b0be9f08ab5f2c2d83bf55fbb09cc6afec66d605b97a2206739",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/chapel-reader-small.jpg",
+      "source": "public/art/chapel-reader.jpg",
+      "meanPixelDifference": 4.212,
+      "sha256": "01a16c2155052da6aa0a123fbb8e6030bd37ec5b55efd2b46a001e4081b59401",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/chapel-service-small.jpg",
+      "source": "public/art/chapel-service.jpg",
+      "meanPixelDifference": 3.747,
+      "sha256": "08b7fc8efb535511943efd9c88c2e5ac5228d84a4546926aaa60f66df6efabd4",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/chapel-shared-small.jpg",
+      "source": "public/art/chapel-shared.jpg",
+      "meanPixelDifference": 4.081,
+      "sha256": "e8c0f851ca8f247c0d3a7e9eb4e6e0849ae6d7d3d4ab8f7c38c7c0c4af53c2ec",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/chapter-wall-small.jpg",
+      "source": "public/art/chapter-wall.jpg",
+      "meanPixelDifference": 4.788,
+      "sha256": "549edd3e85f10fcee217f68cf7130e1a4dcbc9c1879ed049263292ceed8124e8",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/chapter-week-small.jpg",
+      "source": "public/art/chapter-week.jpg",
+      "meanPixelDifference": 5.93,
+      "sha256": "ff6222474cf0fbf2df8a7f19dff8315db47830500ffaf582ab3e03a374e4cff4",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/city-schematic-small.jpg",
+      "source": "public/art/city-schematic.jpg",
+      "meanPixelDifference": 5.032,
+      "sha256": "ec5ed0da3b54127e0e230f9f02bc4aaa4ab62a6daee54c820db4e41d4c1ed1ac",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/clinic-conversation-small.jpg",
+      "source": "public/art/clinic-conversation.jpg",
+      "meanPixelDifference": 3.623,
+      "sha256": "68d9ce04a6e557b460ba4d10c1d084f9b9a321f97b9f489343b947c6cd81c765",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/clinic-coolant-small.jpg",
+      "source": "public/art/clinic-coolant.jpg",
+      "meanPixelDifference": 3.306,
+      "sha256": "5239fdfe9f13c02554b9f67495760a6f62b9ed2840ed5375f451ff03712cf789",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/clinic-relay-small.jpg",
+      "source": "public/art/clinic-relay.jpg",
+      "meanPixelDifference": 2.764,
+      "sha256": "88b8df08eb402c0db73ea6af1527daef2524c3671eed4b656e2020c35d5eb33b",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/courier-receipt-small.jpg",
+      "source": "public/art/courier-receipt.jpg",
+      "meanPixelDifference": 4.304,
+      "sha256": "f521b8f7af80da48a6222d249e364419e4ebc3633a0e72cb6d1d373047d52c00",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/courier-table-small.jpg",
+      "source": "public/art/courier-table.jpg",
+      "meanPixelDifference": 3.871,
+      "sha256": "bd125f6d6fa70be83255aeeee96f470a7ce9830d59fd6795411b9aa6025f4bc9",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/district-board-small.jpg",
+      "source": "public/art/district-board.jpg",
+      "meanPixelDifference": 3.926,
+      "sha256": "91595253434e7c703f2331bb06de226b69d14702137a28fadfd4f198880e223d",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/edda-archive-small.jpg",
+      "source": "public/art/edda-archive.jpg",
+      "meanPixelDifference": 4.357,
+      "sha256": "359e29bb4b084b1fc957a87d772a683bd77ec7a96eea4dd28e513962eae5c9c5",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/edda-service-review-small.jpg",
+      "source": "public/art/edda-service-review.jpg",
+      "meanPixelDifference": 4.297,
+      "sha256": "0e6fe98a1c570e1e9ec3e48923632799689b8583734b2ab113c46f35f9f52cef",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/equipment-atlas-small.jpg",
+      "source": "public/art/equipment-atlas.jpg",
+      "meanPixelDifference": 2.259,
+      "sha256": "b0fa045ed950b3de78919dd22f347c766d674e53afcd5d90ee0dc38128ab7c95",
+      "width": 800,
+      "height": 800,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/finale-listed-small.jpg",
+      "source": "public/art/finale-listed.jpg",
+      "meanPixelDifference": 3.593,
+      "sha256": "adc674abba2e4e39af79a919cce5bfc5c9d9a4ff74deff6285eed220e7856f37",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/finale-names-small.jpg",
+      "source": "public/art/finale-names.jpg",
+      "meanPixelDifference": 3.667,
+      "sha256": "8cd0509d1862947e9fc82878b37f7d48ce76b38bcfaf888eb6a5db314bf6c269",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/finale-quiet-small.jpg",
+      "source": "public/art/finale-quiet.jpg",
+      "meanPixelDifference": 3.745,
+      "sha256": "4341796646fc70459af7481f8df71720e2f37c304605ec687d09d75bb6b7560c",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/finale-witness-small.jpg",
+      "source": "public/art/finale-witness.jpg",
+      "meanPixelDifference": 3.371,
+      "sha256": "5c00c4fd455cc0e3f819c5ca1919a907eeba363838303dba0f7d3679fdb8f719",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/fragment-order-small.jpg",
+      "source": "public/art/fragment-order.jpg",
+      "meanPixelDifference": 3.818,
+      "sha256": "ad8884a43f4ca99946636ffa7baf08dea51822d4a1801ed2c3dd8db448b64f44",
+      "width": 450,
+      "height": 300,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/fragment-roster-small.jpg",
+      "source": "public/art/fragment-roster.jpg",
+      "meanPixelDifference": 3.849,
+      "sha256": "a5e385adce7e2e8fb80709128ef520400db6128187778d0536b1f591499553b3",
+      "width": 450,
+      "height": 300,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/fragment-signature-small.jpg",
+      "source": "public/art/fragment-signature.jpg",
+      "meanPixelDifference": 3.202,
+      "sha256": "3e879a23fc2944902c20e2e86b8e470b606f4a4e357dad8c4aa4e6f3fc56ab20",
+      "width": 450,
+      "height": 300,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/freight-passage-small.jpg",
+      "source": "public/art/freight-passage.jpg",
+      "meanPixelDifference": 4.243,
+      "sha256": "8bca806cb9a1c5fc4e1dbf61860b1fdc9a38f7f33e96d4ada32f5d7d40396c2d",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/freight-small.jpg",
+      "source": "public/art/freight.jpg",
+      "meanPixelDifference": 4.028,
+      "sha256": "cff842342b2d4f6d49dbe5c0633f564b18f66a3d28d7fd12eda0aaed1fbf0673",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/hearing-filed-small.jpg",
+      "source": "public/art/hearing-filed.jpg",
+      "meanPixelDifference": 3.502,
+      "sha256": "171156b5dab2b10a2a863e766b891131ab292ad44dfcf426dd2870c842caaea0",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/hearing-table-small.jpg",
+      "source": "public/art/hearing-table.jpg",
+      "meanPixelDifference": 3.428,
+      "sha256": "5e75b3a4a90cafa2b1a7ccd6cd1c67000e66fb7a8b84ac1818ed52b8e17b4a7f",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/held-case-small.jpg",
+      "source": "public/art/held-case.jpg",
+      "meanPixelDifference": 5.207,
+      "sha256": "2e19357b32406b7921882f28eb63517963d5ac4783074e3b882c487e4def6093",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/incinerator-flue-small.jpg",
+      "source": "public/art/incinerator-flue.jpg",
+      "meanPixelDifference": 4.28,
+      "sha256": "d3bcbec65817621adf9f08de4a15111997ac1e24f36293b25698ef7623f5df1d",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/item-archive-probe-small.jpg",
+      "source": "public/art/item-archive-probe.jpg",
+      "meanPixelDifference": 3.186,
+      "sha256": "6901c1de74eb79c840f61a2eb99d06fb00c6d67cca6b819670ddf3683c1873cf",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/item-burner-route-small.jpg",
+      "source": "public/art/item-burner-route.jpg",
+      "meanPixelDifference": 3.435,
+      "sha256": "a0f9af9c464a8e159c663268e8ebe2cb1ae645735a42f80ea9a1f069681b3f5f",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/item-chair-harness-small.jpg",
+      "source": "public/art/item-chair-harness.jpg",
+      "meanPixelDifference": 3.252,
+      "sha256": "5ae352881dac8b9683e4b79d9718ccac25c92702811fdb0c9b229f71aab38170",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/item-clinic-marker-small.jpg",
+      "source": "public/art/item-clinic-marker.jpg",
+      "meanPixelDifference": 2.793,
+      "sha256": "825fb4a1b67421f297a4360e1ca4f48bb53fda89dbcdd519be34e2820b084483",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/item-counterfeit-pass-small.jpg",
+      "source": "public/art/item-counterfeit-pass.jpg",
+      "meanPixelDifference": 3.515,
+      "sha256": "da5723093060e2e8aa4514752c2b24ae4a7516a7cad2680225540b5a28a46a72",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/item-desk-guide-small.jpg",
+      "source": "public/art/item-desk-guide.jpg",
+      "meanPixelDifference": 3.262,
+      "sha256": "a36878c468443c53d8c77a36aab2a4cf873e10550b8af0a8d18f830405a1a6e8",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/item-layout-scrap-small.jpg",
+      "source": "public/art/item-layout-scrap.jpg",
+      "meanPixelDifference": 3.385,
+      "sha256": "d588afbb4dc989731a597553a917495a3172b28c4d389b497c9bf2de336e4cfa",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/item-mono-knife-small.jpg",
+      "source": "public/art/item-mono-knife.jpg",
+      "meanPixelDifference": 2.675,
+      "sha256": "64754766aa0dc5c925b389fc4d3353a78387fcb4e2e942689c328f93747a48f1",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/item-route-shroud-small.jpg",
+      "source": "public/art/item-route-shroud.jpg",
+      "meanPixelDifference": 2.674,
+      "sha256": "6140e45c993fa9dcb7408a4397ddad2486eeca1f07276cc3a83745276785d22e",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/item-sedative-small.jpg",
+      "source": "public/art/item-sedative.jpg",
+      "meanPixelDifference": 2.897,
+      "sha256": "f95e21ff50322e61c0326e56d55e89821350a02cc24a8d592cbe5769dbf40ef9",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/item-shard-damaged-small.jpg",
+      "source": "public/art/item-shard-damaged.jpg",
+      "meanPixelDifference": 3.278,
+      "sha256": "416ec1cdb59b45910874920591ee8446d7d2a44a2dcc5addcb0ffb679123d45a",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/item-shard-small.jpg",
+      "source": "public/art/item-shard.jpg",
+      "meanPixelDifference": 3.286,
+      "sha256": "5eb3f3eb7da9d7657a9b579f5176648878a39c2f8e44a3a2188c62d48e51ccf2",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/item-signal-baffle-small.jpg",
+      "source": "public/art/item-signal-baffle.jpg",
+      "meanPixelDifference": 3.203,
+      "sha256": "6538d00008678067ac65d4970c0dce3c8dd74e8d922f6f8fbb7b43be19e00e2f",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/item-spoof-chip-small.jpg",
+      "source": "public/art/item-spoof-chip.jpg",
+      "meanPixelDifference": 3.511,
+      "sha256": "68537070f5b3e7791b55e0a7b76260b560f2a2718e52485b8de5f4919aa27bc0",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/item-witness-token-small.jpg",
+      "source": "public/art/item-witness-token.jpg",
+      "meanPixelDifference": 3.307,
+      "sha256": "090df1cd2a32c2d4fe538f41029610b3a086bf4d362ac2f2aa492b9c47ecb6ed",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/ives-hearing-small.jpg",
+      "source": "public/art/ives-hearing.jpg",
+      "meanPixelDifference": 3.692,
+      "sha256": "b2b528675c67efdc7d7b96e3fa153eebe9ba138565dac8b2556367115dfca6a8",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/kerr-handover-small.jpg",
+      "source": "public/art/kerr-handover.jpg",
+      "meanPixelDifference": 3.691,
+      "sha256": "210edf111c1b105e30bee4b3c17977dbd3ba4171d8cfad52387a374d431902c2",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/laundry-cart-small.jpg",
+      "source": "public/art/laundry-cart.jpg",
+      "meanPixelDifference": 4.171,
+      "sha256": "5abd3be75cde378daed3bbe85bacee6132ed306e2fbceb8a7c5e7a9451021f33",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/lumen-cup-small.jpg",
+      "source": "public/art/lumen-cup.jpg",
+      "meanPixelDifference": 4.249,
+      "sha256": "c819c3e650d1a3b9237827daba5d0ac43151b9e533059dcc5c1fd62d5ca29b20",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/mara-present-small.jpg",
+      "source": "public/art/mara-present.jpg",
+      "meanPixelDifference": 2.699,
+      "sha256": "1eecf76d579895fd05a0fdeaff80cfa7766c1a29524b813fabe6c3e1cca98097",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/mara-revelation-small.jpg",
+      "source": "public/art/mara-revelation.jpg",
+      "meanPixelDifference": 3.006,
+      "sha256": "72562848863d46c04e909f913630e719028e71856c4b836c20ade145a5ad4b4c",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/mara-shared-hour-small.jpg",
+      "source": "public/art/mara-shared-hour.jpg",
+      "meanPixelDifference": 4.058,
+      "sha256": "52c14ea9cb16da44696823d432e334327f6019a721c603e438af7fc074daf6ee",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/mara-window-small.jpg",
+      "source": "public/art/mara-window.jpg",
+      "meanPixelDifference": 3.154,
+      "sha256": "0b1738ccbe2a137b9fba8b94c1b9af37767175daf57ff8cb356e17f8fffd151a",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/market-counter-small.jpg",
+      "source": "public/art/market-counter.jpg",
+      "meanPixelDifference": 4.25,
+      "sha256": "2ee3420b4057b96c9625efb7deb55d0e1ecbec56d7122d1ff6a6e4bb4a57f172",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/memorial-stair-small.jpg",
+      "source": "public/art/memorial-stair.jpg",
+      "meanPixelDifference": 4.131,
+      "sha256": "3333835e11f20dc40fd9ec15361f1ea92d18f72f0638692c0b53921d0aca7b7d",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/memory-apparatus-small.jpg",
+      "source": "public/art/memory-apparatus.jpg",
+      "meanPixelDifference": 2.932,
+      "sha256": "edd702cf9b926fcc5b7c1cb364579bb18e61983fdf1297991fffbd361fc1edad",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/memory-bench-small.jpg",
+      "source": "public/art/memory-bench.jpg",
+      "meanPixelDifference": 3.363,
+      "sha256": "14662ba2b1b1260601313db846187335eccf1c716ece49795395f7a31e8573fc",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/nia-arrival-small.jpg",
+      "source": "public/art/nia-arrival.jpg",
+      "meanPixelDifference": 2.972,
+      "sha256": "d9d01e6200c84b1891cf54b43c889f07850572615023ac73e67f45f60d5e5aae",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/nia-transfer-small.jpg",
+      "source": "public/art/nia-transfer.jpg",
+      "meanPixelDifference": 4.167,
+      "sha256": "e45d52caf442005cbb3ed40b1df5afe5eccc524d8a9ee77747112eb095aef519",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/notice-desk-small.jpg",
+      "source": "public/art/notice-desk.jpg",
+      "meanPixelDifference": 3.803,
+      "sha256": "ad6dbcaa7a54dda929f8fa1d6653baf8a79bd987982c67d8337616d952e46aeb",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/opening-small.jpg",
+      "source": "public/art/opening.jpg",
+      "meanPixelDifference": 4.404,
+      "sha256": "dd99312376552ab706fe066cae02294ded40672030f32c4d462ceb623242f3da",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/ordinary-rest-small.jpg",
+      "source": "public/art/ordinary-rest.jpg",
+      "meanPixelDifference": 3.939,
+      "sha256": "c60755f46b7cc82c28b3ae69998d8647c98cfe67206511170e68a7351c4ed24e",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/archive-desk.jpg",
+      "source": "public/art/archive-desk.jpg",
+      "meanPixelDifference": 7.103,
+      "sha256": "f2b5da2cf8b521d2fee157df1494b5b925f1b6a25905f35fa3bc6ad4908246bc",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/archive-held-original.jpg",
+      "source": "public/art/archive-held-original.jpg",
+      "meanPixelDifference": 8.25,
+      "sha256": "3df733d6aa8cc92f7330796e6a9c7b0eea9b377d49644315dccdcd104a4823e5",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/archive-preparation.jpg",
+      "source": "public/art/archive-preparation.jpg",
+      "meanPixelDifference": 8.688,
+      "sha256": "6d07e79953248400789672f953ad1ee575bc92cb5bfa4790723ef9b340f9aa01",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/asa-dispatch.jpg",
+      "source": "public/art/asa-dispatch.jpg",
+      "meanPixelDifference": 8.946,
+      "sha256": "820f5fedc8095fec6aafd2036c560abb3f3d96ed00086315e6643d783fe0a315",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/attendant-confrontation.jpg",
+      "source": "public/art/attendant-confrontation.jpg",
+      "meanPixelDifference": 8.37,
+      "sha256": "7e2ae1faf909feed141a98ad000bcc9c2b66224831256f6f887bd52161eb0cf2",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/canal-dispatch.jpg",
+      "source": "public/art/canal-dispatch.jpg",
+      "meanPixelDifference": 8.591,
+      "sha256": "022bf9078b9bb34428454c1748bd7f1e879b63ba4ceabbffc3117cd05abb7c74",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/chapel-entry.jpg",
+      "source": "public/art/chapel-entry.jpg",
+      "meanPixelDifference": 6.584,
+      "sha256": "50b2bf162d0902d7c8c90786890b41375a57a5bd6f27695f26a0d04cf13e27f6",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/chapel-reader.jpg",
+      "source": "public/art/chapel-reader.jpg",
+      "meanPixelDifference": 7.825,
+      "sha256": "2fcb26c0ec95d0dff540b882ef18e2cb5e0305cfcfe0a5be3b656750e979ddf6",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/chapel-service.jpg",
+      "source": "public/art/chapel-service.jpg",
+      "meanPixelDifference": 7.251,
+      "sha256": "5690b4dac4ef95b9c43599c778b62a2f6251c97f921512d17beaf9395ffd0d4c",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/chapel-shared.jpg",
+      "source": "public/art/chapel-shared.jpg",
+      "meanPixelDifference": 7.667,
+      "sha256": "9e28c9966edc66600223d6ad1d85c32026a4760d8dfb5c922cefa338ab174157",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/chapter-wall.jpg",
+      "source": "public/art/chapter-wall.jpg",
+      "meanPixelDifference": 5.839,
+      "sha256": "092b2a5d94eb049907ef6b428245e04b31396876fb763e8893957d21fc815d99",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/chapter-week.jpg",
+      "source": "public/art/chapter-week.jpg",
+      "meanPixelDifference": 9.057,
+      "sha256": "95ce30376dcf930303aa4373de8bd98d0d91e0451c69cbef6a5adbcbd987aa97",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/clinic-coolant.jpg",
+      "source": "public/art/clinic-coolant.jpg",
+      "meanPixelDifference": 6.683,
+      "sha256": "bd626deb54bd3fd1b0a4ea2d67c18beb4bee740419ba91b59aa2f9a678caf017",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/clinic-relay.jpg",
+      "source": "public/art/clinic-relay.jpg",
+      "meanPixelDifference": 6.365,
+      "sha256": "f751bafa35595fbb264246af51a269c32e283fd39abab01b76bdde636c3859e4",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/courier-receipt.jpg",
+      "source": "public/art/courier-receipt.jpg",
+      "meanPixelDifference": 8.858,
+      "sha256": "3262300a40ebc6d56890e406a87719b190ae1dda3b7f921aa841d6aa62a9c420",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/courier-table.jpg",
+      "source": "public/art/courier-table.jpg",
+      "meanPixelDifference": 7.898,
+      "sha256": "b4b2256391d2cabebc109fc36de002da02a147129537f9580ac9316b55407851",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/district-board.jpg",
+      "source": "public/art/district-board.jpg",
+      "meanPixelDifference": 7.834,
+      "sha256": "f29db9dd0306004e2b7a0104b5cbbc727b56f89f10d76c6af6707833787d0353",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/edda-archive.jpg",
+      "source": "public/art/edda-archive.jpg",
+      "meanPixelDifference": 9.413,
+      "sha256": "ec56485026c1e1ec2f89b9eeb2c2b63bdc36d74b1ef8c452ceb14bb5a2d49312",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/edda-service-review.jpg",
+      "source": "public/art/edda-service-review.jpg",
+      "meanPixelDifference": 9.189,
+      "sha256": "00d6393755e56e6f4bc8e202a128fec64f7313b1a73e40b544d64b1cf9700e7e",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/finale-listed.jpg",
+      "source": "public/art/finale-listed.jpg",
+      "meanPixelDifference": 6.822,
+      "sha256": "55efeaf092b2b63fc1994a03d2ef3094e5a08529b9e409b4d452160ee4550b4c",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/finale-names.jpg",
+      "source": "public/art/finale-names.jpg",
+      "meanPixelDifference": 6.511,
+      "sha256": "77647a660c22e4bfae4334a4b02fa165fff0560f59d339569ec532df9e51d13d",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/finale-quiet.jpg",
+      "source": "public/art/finale-quiet.jpg",
+      "meanPixelDifference": 5.972,
+      "sha256": "16985f585f31072b331b138bd98dd3720dfbdfd47f1a62839ff520ef0106c1eb",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/finale-witness.jpg",
+      "source": "public/art/finale-witness.jpg",
+      "meanPixelDifference": 6.413,
+      "sha256": "701337d983ada377c4c4ec33b79d1660bb40cd2bd42b490f3085b520240491fd",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/fragment-order.jpg",
+      "source": "public/art/fragment-order.jpg",
+      "meanPixelDifference": 9.164,
+      "sha256": "3de2c42fe3a46f8057229eb37bad6ecb928bcf8ec406670c571f372df113a9c5",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/fragment-roster.jpg",
+      "source": "public/art/fragment-roster.jpg",
+      "meanPixelDifference": 8.379,
+      "sha256": "dcd291497eb20f58afc7765f4307d0c2d1405cb763470eccfbb068e71644e547",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/fragment-signature.jpg",
+      "source": "public/art/fragment-signature.jpg",
+      "meanPixelDifference": 8.23,
+      "sha256": "85da209fd585a28008bca28f9f5c532a83b7a257b0029c580ab3eb1d4bf79a3f",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/freight-passage.jpg",
+      "source": "public/art/freight-passage.jpg",
+      "meanPixelDifference": 7.355,
+      "sha256": "ee00fb2f14812e4083c355a9193ce77bf655dde796d3ef1b814f2d11e4917c68",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/freight.jpg",
+      "source": "public/art/freight.jpg",
+      "meanPixelDifference": 8.08,
+      "sha256": "1e71f377f70465df3b5f4d57017d3b9d083a18f71cd5fdbeb94ad756bf3d80b1",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/hearing-filed.jpg",
+      "source": "public/art/hearing-filed.jpg",
+      "meanPixelDifference": 7.236,
+      "sha256": "08ecad0ea914fc2e7f290a75fc2b3a16b254145c9737cb822a4771c153ce2fdf",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/hearing-table.jpg",
+      "source": "public/art/hearing-table.jpg",
+      "meanPixelDifference": 7.358,
+      "sha256": "02341695c80b25631679c97387738f9399ecb86dbbd2cc350bf54ebe8eb2c14b",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/held-case.jpg",
+      "source": "public/art/held-case.jpg",
+      "meanPixelDifference": 8.308,
+      "sha256": "59fdadcd9f33adf1c25fbe584bf6d3453919df172d8d709404172e90ad44ce85",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/incinerator-flue.jpg",
+      "source": "public/art/incinerator-flue.jpg",
+      "meanPixelDifference": 7.511,
+      "sha256": "590f46e18145abce8319c4d5daaa5ed25ef760d0a84f54346848e25fba04293d",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/item-archive-probe.jpg",
+      "source": "public/art/item-archive-probe.jpg",
+      "meanPixelDifference": 5.298,
+      "sha256": "6cbe125650ef906b47e152c02f700f641930a5f98c66f493e01c3a3f03208e10",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/item-burner-route.jpg",
+      "source": "public/art/item-burner-route.jpg",
+      "meanPixelDifference": 5.935,
+      "sha256": "acfa795e5fb995dd824dca9d8890f404ddd813997609714319c8d5af0637a009",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/item-chair-harness.jpg",
+      "source": "public/art/item-chair-harness.jpg",
+      "meanPixelDifference": 4.948,
+      "sha256": "aa138b17292df495331f8c87059bb6748f481a2bae1e84409c1c65c8b999d5ac",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/item-clinic-marker.jpg",
+      "source": "public/art/item-clinic-marker.jpg",
+      "meanPixelDifference": 4.116,
+      "sha256": "3ae1a3f3760e8212350600689f0c1bf0f8531615a38fb3f6c953c8f4e064a979",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/item-counterfeit-pass.jpg",
+      "source": "public/art/item-counterfeit-pass.jpg",
+      "meanPixelDifference": 4.773,
+      "sha256": "2a157197b8d90b82e122fb8b8b73c00095ff8217b010840135f0e91b878b2e14",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/item-desk-guide.jpg",
+      "source": "public/art/item-desk-guide.jpg",
+      "meanPixelDifference": 4.261,
+      "sha256": "23aa8c23ee80ee2824f8bf114bc244b01815ec7e00cf2530760be7fc65539ff1",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/item-layout-scrap.jpg",
+      "source": "public/art/item-layout-scrap.jpg",
+      "meanPixelDifference": 6.098,
+      "sha256": "ac68a525cd886876291cdce79994d75af6410cf1396cfeaa8fe7fc7dd42ff509",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/item-mono-knife.jpg",
+      "source": "public/art/item-mono-knife.jpg",
+      "meanPixelDifference": 3.729,
+      "sha256": "feaf6ee895e537d47001978cdbdb391f75196390439c3f94ef0e109431b1f4ba",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/item-route-shroud.jpg",
+      "source": "public/art/item-route-shroud.jpg",
+      "meanPixelDifference": 3.806,
+      "sha256": "88a36391d90e1579e9c286a36d97edc26d480e15086835259145c62b247697f2",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/item-sedative.jpg",
+      "source": "public/art/item-sedative.jpg",
+      "meanPixelDifference": 3.896,
+      "sha256": "ab6aa3c2c62bf0b5c00c219ec61309d99995437bef030c5913a0f0a8aba90d71",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/item-shard-damaged.jpg",
+      "source": "public/art/item-shard-damaged.jpg",
+      "meanPixelDifference": 4.285,
+      "sha256": "b2ea2d2a29ee97631f1e9c746ae2fdff46fd1026c849b81db939dfa568921ce8",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/item-shard.jpg",
+      "source": "public/art/item-shard.jpg",
+      "meanPixelDifference": 5.454,
+      "sha256": "42993fb06c1ff1bd20ddf8bb31351cb4dcff6394f7d6f711dbae2d675350e371",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/item-signal-baffle.jpg",
+      "source": "public/art/item-signal-baffle.jpg",
+      "meanPixelDifference": 4.834,
+      "sha256": "99bd6442c0ba28443947068f4d4f6381caad11df07c1459e3e97c694813643d3",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/item-spoof-chip.jpg",
+      "source": "public/art/item-spoof-chip.jpg",
+      "meanPixelDifference": 4.082,
+      "sha256": "5d2d05c21924aafcae841f5e0f0b5e52304de95db836d0f39dd81ec662c767f8",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/item-witness-token.jpg",
+      "source": "public/art/item-witness-token.jpg",
+      "meanPixelDifference": 5.194,
+      "sha256": "f27edc80260eaa13b103e143fb0504084608d746d9663c57ed5d29e760379152",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/ives-hearing.jpg",
+      "source": "public/art/ives-hearing.jpg",
+      "meanPixelDifference": 7.804,
+      "sha256": "07be8b151b6b52df360aa443daa6538ef25df41799ebd45dd69a348b6de82b8e",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/kerr-handover.jpg",
+      "source": "public/art/kerr-handover.jpg",
+      "meanPixelDifference": 8.491,
+      "sha256": "7fcf4cad42804a372198e1392a15387ac21841ec9a154f5512cc8ca6f04168ef",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/laundry-cart.jpg",
+      "source": "public/art/laundry-cart.jpg",
+      "meanPixelDifference": 7.024,
+      "sha256": "2e38d07b8ba8c37b81a3ec9e4dced4bb214d9e5168004a26c70de90763204808",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/lumen-cup.jpg",
+      "source": "public/art/lumen-cup.jpg",
+      "meanPixelDifference": 7.661,
+      "sha256": "b354033ae0f0596f329aced510e58be708351226c0e377398f91438d1008fca2",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/mara-present.jpg",
+      "source": "public/art/mara-present.jpg",
+      "meanPixelDifference": 5.496,
+      "sha256": "dc4d636b146815f53783b5acfaf4e6a314f7d155bccac2a062111c87a3ade0fa",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/mara-revelation.jpg",
+      "source": "public/art/mara-revelation.jpg",
+      "meanPixelDifference": 6.467,
+      "sha256": "62325a9247db8676585722645c23d524b2f081d8628358423bc8b0d81c55ebca",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/mara-shared-hour.jpg",
+      "source": "public/art/mara-shared-hour.jpg",
+      "meanPixelDifference": 7.717,
+      "sha256": "8d6cc4a206f816ae05ac0dec87150f3315b347c90566ad95b4d45bc9662789a7",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/mara-window.jpg",
+      "source": "public/art/mara-window.jpg",
+      "meanPixelDifference": 6.419,
+      "sha256": "2bca14bc6c7eae4021d25cc7a2f788fb692bc7c444f860fc9206930fcd48637f",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/market-counter.jpg",
+      "source": "public/art/market-counter.jpg",
+      "meanPixelDifference": 8.198,
+      "sha256": "0ca8bf6165863f68c006d3b99d9a937ad8a4e8d76dfd43ff25079873892ae414",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/memorial-stair.jpg",
+      "source": "public/art/memorial-stair.jpg",
+      "meanPixelDifference": 7.196,
+      "sha256": "6e89ff06366cce42dbed20166a3c1f72d8b4b36dba733e493760b63558750757",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/memory-apparatus.jpg",
+      "source": "public/art/memory-apparatus.jpg",
+      "meanPixelDifference": 7.158,
+      "sha256": "06dbeaac58ae225939d1aa6ed78a5f31dd19979cf79efe8f6eabbccddfab30c9",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/memory-bench.jpg",
+      "source": "public/art/memory-bench.jpg",
+      "meanPixelDifference": 6.764,
+      "sha256": "8f6ab9524398e702c6010c717066c9e8b8917aad295c6121329ebaf07f63ec78",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/nia-arrival.jpg",
+      "source": "public/art/nia-arrival.jpg",
+      "meanPixelDifference": 7.087,
+      "sha256": "ee78c4640056c2b117d9d0277dcd7c152a1946547729ef03dfaccb5d28028491",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/nia-transfer.jpg",
+      "source": "public/art/nia-transfer.jpg",
+      "meanPixelDifference": 8.795,
+      "sha256": "378ae6f33febe78c54f874ad8e56f409dc3c2d2a24a597c51af0426359b9470c",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/notice-desk.jpg",
+      "source": "public/art/notice-desk.jpg",
+      "meanPixelDifference": 7.067,
+      "sha256": "bb2b93eedb08986360f6e235b71e759f2d75c6076e7821a6b20de04189ec0be3",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/opening.jpg",
+      "source": "public/art/opening.jpg",
+      "meanPixelDifference": 8.574,
+      "sha256": "50c23b892a8297e23379056ef89d8dbdf6b7e6504aeeaaae1fa3eec1aff4c54e",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/ordinary-rest.jpg",
+      "source": "public/art/ordinary-rest.jpg",
+      "meanPixelDifference": 6.969,
+      "sha256": "01a0d508b3ab214bfb2f5582304119e2f3ece6ab38d916e73f80b79cee879bb1",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/private-reply.jpg",
+      "source": "public/art/private-reply.jpg",
+      "meanPixelDifference": 6.605,
+      "sha256": "3acb32509056fe6bda158c88ca49af9a21c32ea4f5c4890bd90e9314c712b6ec",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/quill-offer.jpg",
+      "source": "public/art/quill-offer.jpg",
+      "meanPixelDifference": 11.027,
+      "sha256": "da71ed67e069276c835a73eba8652308770b3eb1588f050708f5f8069d000bc4",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/ren-canal.jpg",
+      "source": "public/art/ren-canal.jpg",
+      "meanPixelDifference": 9.358,
+      "sha256": "05121ed87b3e2161b277fa8795c7fcdf6f3092e54c482d241983d3bbf1278bfe",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/repair-bench.jpg",
+      "source": "public/art/repair-bench.jpg",
+      "meanPixelDifference": 8.144,
+      "sha256": "c64c38662313c2c966ac2a65740e1206b8061103560d9ccb4573e34e27da85d4",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/sera-hearing.jpg",
+      "source": "public/art/sera-hearing.jpg",
+      "meanPixelDifference": 8.177,
+      "sha256": "84812f84a8e4c4da557b285bd51a0558c10b3feefa5260c7bdd3333bed933cb3",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/shelter-conversation.jpg",
+      "source": "public/art/shelter-conversation.jpg",
+      "meanPixelDifference": 9.941,
+      "sha256": "c8aa4ceb120d41ddc72138294c76e27266f31d3426819b90c09b261b619df149",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/shelter-hall.jpg",
+      "source": "public/art/shelter-hall.jpg",
+      "meanPixelDifference": 8.366,
+      "sha256": "1a7ccb801d9732d0ca4302c936780d724385536d9d94427e36817ded30aba67d",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/shelter-landing.jpg",
+      "source": "public/art/shelter-landing.jpg",
+      "meanPixelDifference": 6.308,
+      "sha256": "66b9b74effa285b8c7625c7947c68b69323ccb9f05415e9ed6a85ea0afd9b297",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/shelter-pump.jpg",
+      "source": "public/art/shelter-pump.jpg",
+      "meanPixelDifference": 7.336,
+      "sha256": "83841a6f6a9074f083863a66fa5b8a2954537d17c41b3ad35b3466dfca60c711",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/shelter-restored.jpg",
+      "source": "public/art/shelter-restored.jpg",
+      "meanPixelDifference": 8.081,
+      "sha256": "a0b59953193dfa52dc0d974565a5207c57769af41e2bd89b430a19659763748e",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/spire-counter.jpg",
+      "source": "public/art/spire-counter.jpg",
+      "meanPixelDifference": 7.139,
+      "sha256": "fdfbafa01b26326178c61d0fc338060c1fcbd6f7d454e23fb67f45c2daf543d6",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/spire-payroll.jpg",
+      "source": "public/art/spire-payroll.jpg",
+      "meanPixelDifference": 6.563,
+      "sha256": "024f34a3b96a36d362e24d4e52ebe6479e7c5ccd3b863db9e01fd2b092ba8dd8",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/spire-terminal.jpg",
+      "source": "public/art/spire-terminal.jpg",
+      "meanPixelDifference": 6.668,
+      "sha256": "429e559c073618c85b99732c29c0a85be90ce0489db368f9454fe0a8ec499e46",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/stallholder-story.jpg",
+      "source": "public/art/stallholder-story.jpg",
+      "meanPixelDifference": 9.973,
+      "sha256": "3b54be2b62d4dd9b063796e2f2839d19c2575cc9773ec390b3c47f6c8aad089c",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/wall-shared.jpg",
+      "source": "public/art/wall-shared.jpg",
+      "meanPixelDifference": 6.533,
+      "sha256": "e896ad722e503994d3b3468f6262487f1ac63e38316b5744b20cb2d5fd1be549",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/previews/witness-checkpoint.jpg",
+      "source": "public/art/witness-checkpoint.jpg",
+      "meanPixelDifference": 8.308,
+      "sha256": "80580b6ede16f12794e672a7e5603d36e3d7a8010dbd8ef0977ae88d844ff902",
+      "width": 96,
+      "height": 64,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/private-reply-small.jpg",
+      "source": "public/art/private-reply.jpg",
+      "meanPixelDifference": 3.127,
+      "sha256": "81ca487f250048e874abdf23d1b055226b8bfe87c2b1181d0f066f3137025743",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/quill-offer-small.jpg",
+      "source": "public/art/quill-offer.jpg",
+      "meanPixelDifference": 4.587,
+      "sha256": "f8c07ba77633bc6f9727c57a6d063ad7bd81d762f3900c74ed70bea2f876c88d",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/ren-canal-small.jpg",
+      "source": "public/art/ren-canal.jpg",
+      "meanPixelDifference": 4.85,
+      "sha256": "3f0ba8d6ff610bfccfaeac2adb712f5f05e9e0babdc4727da04a239d897c8a26",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/repair-bench-small.jpg",
+      "source": "public/art/repair-bench.jpg",
+      "meanPixelDifference": 4.179,
+      "sha256": "5cd14b34949b03d873c870a841a0419ee5fe45e88f50b93705724cd6e8105634",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/sera-hearing-small.jpg",
+      "source": "public/art/sera-hearing.jpg",
+      "meanPixelDifference": 4.124,
+      "sha256": "5f1c994f23f466fe7de1b1ae0a33f0511af0ae533221259a8fbedccb693b55dd",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/shelter-conversation-small.jpg",
+      "source": "public/art/shelter-conversation.jpg",
+      "meanPixelDifference": 5.151,
+      "sha256": "66d6955d79bdf7522e7af5c5114747d85ae998029e714bea36a506fad1002c94",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/shelter-hall-small.jpg",
+      "source": "public/art/shelter-hall.jpg",
+      "meanPixelDifference": 3.8,
+      "sha256": "be9fcb76d9d995de31b3f4d050978de2741dcbccffd458a542ba1b4a913dc563",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/shelter-landing-small.jpg",
+      "source": "public/art/shelter-landing.jpg",
+      "meanPixelDifference": 3.201,
+      "sha256": "4c54334442884d13a66e4ac4976d83d721114bc461528f76261f77d43b918670",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/shelter-pump-small.jpg",
+      "source": "public/art/shelter-pump.jpg",
+      "meanPixelDifference": 4.049,
+      "sha256": "431d130d445345790cbd278e66b209f0dd53ab241a9068378a9f060238e69bb2",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/shelter-restored-small.jpg",
+      "source": "public/art/shelter-restored.jpg",
+      "meanPixelDifference": 4.092,
+      "sha256": "9c293326969f13791ae832d2a636f092592476a3a8b68f3e124b611794650301",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/shelter-small.jpg",
+      "source": "public/art/shelter.jpg",
+      "meanPixelDifference": 4.506,
+      "sha256": "f2550b1f696923b749dfa91de978bdfd61398ca445cdf832226a5b84b205f98d",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/spire-counter-small.jpg",
+      "source": "public/art/spire-counter.jpg",
+      "meanPixelDifference": 3.529,
+      "sha256": "656b363459614eed7c7e50c7575fb82651942f36bb04ba22f39130f58d033b1a",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/spire-payroll-small.jpg",
+      "source": "public/art/spire-payroll.jpg",
+      "meanPixelDifference": 3.441,
+      "sha256": "cbfe247eb71bd3f76a2e2d4034757817e5a2021924f44dcb2fc627c0f9944679",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/spire-terminal-small.jpg",
+      "source": "public/art/spire-terminal.jpg",
+      "meanPixelDifference": 3.526,
+      "sha256": "28a010dbddf08d1adeb52c532becec8efa231efbd1b75898e1637f3c3e548f18",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/stallholder-story-small.jpg",
+      "source": "public/art/stallholder-story.jpg",
+      "meanPixelDifference": 4.755,
+      "sha256": "f6e0f74bb8a1140c75618246e35d08efd85b0a8e39801b8d63c87be63554c95a",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/title-small.jpg",
+      "source": "public/art/title.jpg",
+      "meanPixelDifference": 3.103,
+      "sha256": "a474c6927a753e8d4db6dc1938f6edc4b7619492b0210cbb01203b685576110d",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/wall-shared-small.jpg",
+      "source": "public/art/wall-shared.jpg",
+      "meanPixelDifference": 3.89,
+      "sha256": "637189fc84dad8b6e9bded4e8bc6d00ce3cc1a88e73b41a295d4e43a62897c15",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    },
+    {
+      "path": "public/art/witness-checkpoint-small.jpg",
+      "source": "public/art/witness-checkpoint.jpg",
+      "meanPixelDifference": 4.364,
+      "sha256": "1adbeeb36f7e012edd5295284f8751917a679805cfbbb5d42e04432752835075",
+      "width": 600,
+      "height": 400,
+      "result": "matched-current-primary"
+    }
+  ],
+  "retakeRecord": "qa/media/anatomy-retakes.json",
+  "unchangedBindingSha256": "15ae8b35c16b330b545f001e23dc75b5f4bd131225347f616ab76c1b7088f0bd"
+}

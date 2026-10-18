@@ -1852,7 +1852,7 @@
       "generated": "2026-10-13",
       "sourceFile": "/workspace/generated_images/exec-1c8ffc91-8229-4294-b644-cd8c060dc151.png",
       "sourceSha256": "acfdf561ab9b06b45f8f1e102ce82a31533fb21b5307e1d85cdcbd800e07be9a",
-      "promptSummary": "Ren\u2019s introduction and later canal returns retain the neutral resident setting. No shelter repair, family arrival, street declaration, relocation or source verdict is depicted. Original painterly noir with petroleum blue, aged verdigris, copper and amber.",
+      "promptSummary": "Ren’s introduction and later canal returns retain the neutral resident setting. No shelter repair, family arrival, street declaration, relocation or source verdict is depicted. Original painterly noir with petroleum blue, aged verdigris, copper and amber.",
       "referenceFiles": [
         "/workspace/generated_images/exec-73e0b934-2a5a-48cb-bcce-8119bebf3dfa.png"
       ],
@@ -4004,41 +4004,44 @@
       "id": "edda-service-review",
       "sourceTool": "image_gen.imagegen",
       "generated": "2026-10-18",
-      "sourceFile": "/workspace/generated_images/exec-4f784851-1ba3-480e-9b61-db0a0c8eac22.png",
-      "sourceSha256": "cba525d6a5a79a2d08c2f1acc041b515539aad330955f3263d4493f96a7be335",
+      "sourceFile": "/workspace/generated_images/exec-ae31a1a5-171d-4f8b-8499-0c555e68705a.png",
+      "sourceSha256": "7fac3a4336a089a322e9dd94ea2b8f07849b1dc7235026cc96ef5ee5b163da7a",
       "references": [
         {
-          "path": "public/art/edda.jpg",
-          "sha256": "6af115f70e05fbf24b71e7dedf74885e774dba1ac75f5d1689f1b66ee4931223"
-        },
-        {
-          "path": "public/art/spire-counter.jpg",
-          "sha256": "57242dd57d1e0f8185c9bef6e59ba6cb710229ea5075efc79fa3bfd578b4993a"
+          "path": "qa/media/anatomy-baseline/edda-service-review.jpg",
+          "sha256": "41a09af9feb8bcedb7449dd2567a189004d727f6c46c58a79c525ace19591462"
         }
       ],
-      "promptSummary": "Edda from first reference, same middle-aged face, short salt-and-pepper hair, rectangular glasses, worn brown technical coat, stands at the Helion service counter from second reference. She keeps her thumb over the corner of a billing slip, hiding the current account number. A second ordinary service card and a small closed brown paper receiver sleeve lie SEPARATELY on the counter. These are the three objects for review, not new discovered evidence. No receiver removed from sleeve, no handover, terminal query, seal, approved receipt, readable marks, authenticated key or completed closure. Her hands stay natural. Serious attentive expression. Landscape detail composition, face and three separate paper objects all readable in silhouette, no legible writing.",
-      "deliveryProcessing": "Resize and JPEG encode only; native 1536 by 1024 generated master retained outside Git.",
+      "promptSummary": "Focused anatomy correction of the service-counter illustration: exactly two connected arms with both hands resting separately on the counter; remove the book and chest hand. Preserve Edda’s face, glasses, graying hair, repaired brown coat, Helion venue, billing slip with account number concealed, separate service card and closed receiver sleeve. No readable number, query, handover, approval or completed closure.",
+      "deliveryProcessing": "image_gen.imagegen referenced-image edit; resize and JPEG encoding only afterward. Native 1536 × 1024 PNG retained outside Git. Full, small and tiny preview all replaced together.",
       "files": [
         {
           "path": "public/art/edda-service-review.jpg",
           "width": 1200,
           "height": 800,
-          "bytes": 282719,
-          "sha256": "41a09af9feb8bcedb7449dd2567a189004d727f6c46c58a79c525ace19591462"
+          "bytes": 271670,
+          "sha256": "cdeb87235434e44bb8bce9d51e2104cb000cd6c2b7cb0d08363eb0edd3bfe95a"
         },
         {
           "path": "public/art/edda-service-review-small.jpg",
           "width": 600,
           "height": 400,
-          "bytes": 81366,
-          "sha256": "f423fddf674de28bef3277f25ad55383209d588b9050a114fab7ea30225020e7"
+          "bytes": 75870,
+          "sha256": "0e6fe98a1c570e1e9ec3e48923632799689b8583734b2ab113c46f35f9f52cef"
         },
         {
           "path": "public/art/previews/edda-service-review.jpg",
           "width": 96,
           "height": 64,
-          "bytes": 1641,
-          "sha256": "1ae3ac66e3f298a849c592179c3230487654e619d8e8dd8274f305f57a987a01"
+          "bytes": 2122,
+          "sha256": "00d6393755e56e6f4bc8e202a128fec64f7313b1a73e40b544d64b1cf9700e7e"
+        }
+      ],
+      "revision": "anatomy-retake-2026-10-18",
+      "identityReviewReferences": [
+        {
+          "path": "public/art/edda.jpg",
+          "sha256": "6af115f70e05fbf24b71e7dedf74885e774dba1ac75f5d1689f1b66ee4931223"
         }
       ]
     },

@@ -785,4 +785,10 @@ Choice cards separate the action, stat/DC and odds, authored detail, open-promis
 
 Regular tablet and desktop paintings now sit beside their captions in a smaller, uncropped frame, bringing the opening prose higher while retaining the full artwork viewer. Chapter, pivotal, investigation and finale compositions keep their existing treatment. Check results give the speaker a wide identity strip so enlarged names stay readable.
 
-Playback and closed transcript controls sit closer together, with complete live status and muted-state guidance underneath. Opening the transcript places its full text and line selector below the controls. Listen, Stop, replay, automatic voices and reading preferences retain their existing behavior. A native-resolution review covers all 146 full-size, portrait and cast deliveries; no confirmed creative defect required replacement. See [the composition finish report](docs/COMPOSITION_FINISH_CYCLE.md) for the source-based audit and validation.
+Playback and closed transcript controls sit closer together, with complete live status and muted-state guidance underneath. Opening the transcript places its full text and line selector below the controls. Listen, Stop, replay, automatic voices and reading preferences retain their existing behavior. See [the composition finish report](docs/COMPOSITION_FINISH_CYCLE.md) for layout validation. Its initial art acceptance missed Edda’s faulty arm anatomy; the correction below supersedes that finding.
+
+## Artwork anatomy correction
+
+Edda’s service-counter painting now has two separate arms and two hands resting on the counter. The confusing chest-hand/book pose is removed; her identity, three review documents and unresolved scene meaning are preserved. The full image, phone image and loading preview use the corrected painting together.
+
+A second visual pass covered all 146 primary/portrait/cast images and 165 smaller versions, including an additional arm-and-hand detail pass over 22 character paintings. One faulty composition was corrected; no further defect was confirmed by this AI review. The [art anatomy report](docs/ART_ANATOMY_REVIEW.md) records findings and limits. Previous image bytes and audit records remain available offline for comparison; story and voice recordings are unchanged.
