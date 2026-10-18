@@ -1,0 +1,2154 @@
+{
+  "version": 1,
+  "date": "2026-10-18",
+  "baseRevision": "a0adbaf15409f975618327f2b5ebd2c45a3a0696",
+  "scope": "All 146 full-size/portrait/cast JPEG deliveries; responsive small/preview derivatives checked against existing global provenance. No creative assets changed.",
+  "method": "Read-only inspection sheets retain each full-size shipped image at native pixel dimensions; labels and padding only. No source or delivered image is modified.",
+  "reviewer": "AI development visual inspection; user-approved participation proxy",
+  "criteria": [
+    "Identity and expression continuity",
+    "Visible hands and plausible object grips",
+    "Equipment silhouettes and condition continuity",
+    "Scene lighting/material language",
+    "Complete framing at native shipped dimensions",
+    "No invented receipt, permission, evidence, clearance or resolved outcome"
+  ],
+  "counts": {
+    "primaryPortraitCastDeliveries": 146,
+    "nativeInspectionSheets": 33,
+    "globalProvenanceAssets": 134,
+    "provenanceDeliveriesVerified": 299,
+    "legacyPrimaryDeliveries": 12,
+    "totalArtJpegs": 311,
+    "smallPreviewDerivatives": 165,
+    "confirmedCreativeDefects": 0,
+    "replacements": 0
+  },
+  "summary": "No confirmed structural or continuity defect warranted a repaint in this review. Existing deliveries, meaning, provenance and historical records are retained. Interface caption and layout defects are fixed separately.",
+  "assets": [
+    {
+      "path": "public/art/asa.jpg",
+      "width": 440,
+      "height": 587,
+      "sha256": "cfe27e12f9b683a5178ce74bb4ca6634a1a7eca79df84c539d1504fc396d4fdf",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-01.jpg",
+      "cell": 1,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/cast-asa.jpg",
+      "width": 160,
+      "height": 213,
+      "sha256": "5d915eea172c6d9306ae17ce5ec19a758bfe234bcb04796bfe09423a7f42f041",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-01.jpg",
+      "cell": 2,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/asa-terms.jpg",
+      "width": 600,
+      "height": 800,
+      "sha256": "35f51669b65d373a021acb0734a8e733f9e75fdf2f950c4bbbadc39a9fd36a64",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-01.jpg",
+      "cell": 3,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/cast-attendant.jpg",
+      "width": 160,
+      "height": 213,
+      "sha256": "8363c7806b69bc6ce60ee21a3bef856c20839e7848f8b17c99b1b1626d41886e",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-01.jpg",
+      "cell": 4,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/attendant-alert.jpg",
+      "width": 600,
+      "height": 800,
+      "sha256": "153f9f5f50410456b8ce6edf8971ebd2342083c6d3e4ea0bf4ee10df791b7a51",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-01.jpg",
+      "cell": 5,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/cast-dispatcher.jpg",
+      "width": 160,
+      "height": 213,
+      "sha256": "d265206af228c255c74dffbbb01c7756d31ca7bccac47f00c27a06eaf7a135b9",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-01.jpg",
+      "cell": 6,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/dispatcher-considering.jpg",
+      "width": 600,
+      "height": 800,
+      "sha256": "24995f27dd9105cdf5386324cb1952a8b03a1a7a83afe0dbe469eb39e7b03cba",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-02.jpg",
+      "cell": 1,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/dispatcher-portrait.jpg",
+      "width": 600,
+      "height": 800,
+      "sha256": "a6f0ab256de0c7506592ab47d7bef73c4bfcba9d820d43f4dc78923aed6d8453",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-02.jpg",
+      "cell": 2,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/cast-edda.jpg",
+      "width": 160,
+      "height": 213,
+      "sha256": "ce952912e2b1d50f55ab1d8c1aded38fc0b75cad06d19f3c63290319be6340e9",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-02.jpg",
+      "cell": 3,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/edda.jpg",
+      "width": 440,
+      "height": 587,
+      "sha256": "6af115f70e05fbf24b71e7dedf74885e774dba1ac75f5d1689f1b66ee4931223",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-02.jpg",
+      "cell": 4,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/edda-assignment.jpg",
+      "width": 600,
+      "height": 800,
+      "sha256": "3df8cbd71e3e94c1264950caedf6bae79cff7147f5b471375cf1e8c13787c674",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-02.jpg",
+      "cell": 5,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/edda-scrutiny.jpg",
+      "width": 600,
+      "height": 800,
+      "sha256": "e1c17eb4572e81a9d35bdade79017c67d095931dc79a69c70ef1610059c0d7b1",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-02.jpg",
+      "cell": 6,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/cast-ives.jpg",
+      "width": 160,
+      "height": 213,
+      "sha256": "6e2c6e5714091021181c6c2224ff1787ea623e8fc1efa63cd18f314aa18c998a",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-03.jpg",
+      "cell": 1,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/ives.jpg",
+      "width": 864,
+      "height": 1152,
+      "sha256": "0fbff0f64074ee10c85fb6e4f475f2c6df11b559b6a1ab11e78af4b4ed5e1fd8",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-03.jpg",
+      "cell": 2,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "legacy delivery; existing CREDITS.md applies"
+    },
+    {
+      "path": "public/art/ives-assessing.jpg",
+      "width": 600,
+      "height": 800,
+      "sha256": "f1f371eb6b117ac6b974d0862941f9146529dd242ff41f79b0dd456c65836738",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-03.jpg",
+      "cell": 3,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/ives-questioning.jpg",
+      "width": 600,
+      "height": 800,
+      "sha256": "080c504776a2cdf96a6890f61ceb0acdb30e7c212e280e44fba8b13ae9aa502a",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-03.jpg",
+      "cell": 4,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/cast-kerr.jpg",
+      "width": 160,
+      "height": 213,
+      "sha256": "629da1895eb1359e9447c02c794c6d560b602e325224c89556536d9cbd1ddff8",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-03.jpg",
+      "cell": 5,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/kerr.jpg",
+      "width": 864,
+      "height": 1152,
+      "sha256": "ec67f4b4299b3ff3302f9e6ae399dc2988d3f086b4f75bd8db2f481884b500ea",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-03.jpg",
+      "cell": 6,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "legacy delivery; existing CREDITS.md applies"
+    },
+    {
+      "path": "public/art/kerr-closed.jpg",
+      "width": 440,
+      "height": 587,
+      "sha256": "fe8743eab5af388a5ae7b6022c58d516653ded0de5407946b929135ccdf9b60d",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-04.jpg",
+      "cell": 1,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/kerr-considering.jpg",
+      "width": 600,
+      "height": 800,
+      "sha256": "efc6bbde9d636460e08aa67b5e494fc3a4700093d45e7fe13918da96b54dadc8",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-04.jpg",
+      "cell": 2,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/cast-lumen.jpg",
+      "width": 160,
+      "height": 213,
+      "sha256": "8f73a0b83699688044a8e427607e4409fd0c469cea84d93f76b2f92e90279829",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-04.jpg",
+      "cell": 3,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/lumen.jpg",
+      "width": 864,
+      "height": 1152,
+      "sha256": "88cc611cc0cafbbd9cac910b4fdf454cb24fd1d4a8dc6ea6ba9f2822f890668e",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-04.jpg",
+      "cell": 4,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "legacy delivery; existing CREDITS.md applies"
+    },
+    {
+      "path": "public/art/lumen-challenging.jpg",
+      "width": 440,
+      "height": 587,
+      "sha256": "2b59d7f1b3834aa7d15cc651adb7afaca902f575176a964b47ba5fc17b127757",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-04.jpg",
+      "cell": 5,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/lumen-considering.jpg",
+      "width": 600,
+      "height": 800,
+      "sha256": "79bffefe5110382fa87241d746fa3aa38b898341a33f80c4e61ca10517c75746",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-04.jpg",
+      "cell": 6,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/lumen-guarded.jpg",
+      "width": 440,
+      "height": 587,
+      "sha256": "bd971d777b9b60800cc3f5e73821b4bf7768c82f63eccacb91bc896a85d1390d",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-05.jpg",
+      "cell": 1,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/cast-mara.jpg",
+      "width": 160,
+      "height": 213,
+      "sha256": "4e4225028b84061e6164425f8fec1f48896cdaadf009b1197edc591956821707",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-05.jpg",
+      "cell": 2,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/mara.jpg",
+      "width": 864,
+      "height": 1152,
+      "sha256": "2b1c67aa8a9519999a98e8559edc831406e2014fd42d91bf4ab1ae7b1e0d3214",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-05.jpg",
+      "cell": 3,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "legacy delivery; existing CREDITS.md applies"
+    },
+    {
+      "path": "public/art/mara-boundary.jpg",
+      "width": 440,
+      "height": 587,
+      "sha256": "6374ec7a897a1719c908f4d1eece65e6181ecb8e9e1b662326b9020e03bce6f5",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-05.jpg",
+      "cell": 4,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/mara-questioning.jpg",
+      "width": 440,
+      "height": 587,
+      "sha256": "afd31fb7aaf5217e823c9c9a218b55c6694f4e23b4080205d2de43af8307a60d",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-05.jpg",
+      "cell": 5,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/mara-remorse.jpg",
+      "width": 600,
+      "height": 800,
+      "sha256": "d2761bc9d1b617b1e4d04adf4683f4fbb4ea92a455eff1b4c277da6ffdc0f936",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-05.jpg",
+      "cell": 6,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/masked-attendant-portrait.jpg",
+      "width": 600,
+      "height": 800,
+      "sha256": "122511a1d0f393c1d838d6768407b3784c89cde1602ebc07d0d50f14210d2599",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-06.jpg",
+      "cell": 1,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/cast-mechanic.jpg",
+      "width": 160,
+      "height": 213,
+      "sha256": "c37ac0916a2ed934cf23409b59c61ca31a4a466efe4973336f85a436cd31828f",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-06.jpg",
+      "cell": 2,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/mechanic-explaining.jpg",
+      "width": 600,
+      "height": 800,
+      "sha256": "f3399f7aa7ac3f6dfc6b93340d62424d013426c03c8139f991213325b933fe8a",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-06.jpg",
+      "cell": 3,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/mechanic-portrait.jpg",
+      "width": 600,
+      "height": 800,
+      "sha256": "8afb01ff0465467be38a78714a1768cf23933ad6e79bdab286a61bc2ebfc3d0c",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-06.jpg",
+      "cell": 4,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/cast-nia.jpg",
+      "width": 160,
+      "height": 213,
+      "sha256": "6b85c5ff274488d518b81b84439402e9dbc23292345b3688b26b602baf2d205a",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-06.jpg",
+      "cell": 5,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/nia.jpg",
+      "width": 440,
+      "height": 587,
+      "sha256": "d7303d8d8359b2ea99ac67c1ae8ebf676618f65268d0c006681e90315b35e41e",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-06.jpg",
+      "cell": 6,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/nia-speaking.jpg",
+      "width": 600,
+      "height": 800,
+      "sha256": "f3b42abaefb793d62305fee03dff26cb080a3e65ef40106ede14072b5192a8c5",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-07.jpg",
+      "cell": 1,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/nia-terms.jpg",
+      "width": 600,
+      "height": 800,
+      "sha256": "071948e154bbd6e521c4125611127b0c8b3fe11da11324bf056792ef9700f96e",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-07.jpg",
+      "cell": 2,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/cast-orderly.jpg",
+      "width": 160,
+      "height": 213,
+      "sha256": "1136948945e3c2c1047a0aa19a704a158f6e554b36bbb31fa08d1841ff33d72d",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-07.jpg",
+      "cell": 3,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/orderly.jpg",
+      "width": 864,
+      "height": 1152,
+      "sha256": "a93bf8bf1ccd3928101017819b5f7cbe2964815cf9daef9793a13fb1d92693e1",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-07.jpg",
+      "cell": 4,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "legacy delivery; existing CREDITS.md applies"
+    },
+    {
+      "path": "public/art/orderly-assessing.jpg",
+      "width": 600,
+      "height": 800,
+      "sha256": "61dd8b46d6388fbc70ef01461b17617f9c05ad4a2d62e78e8bea37167a65cb0e",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-07.jpg",
+      "cell": 5,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/cast-quill.jpg",
+      "width": 160,
+      "height": 213,
+      "sha256": "6958725afa56e14c37c38630be2953a2dd0a422bc76c7d3db858356edef88281",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-07.jpg",
+      "cell": 6,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/quill.jpg",
+      "width": 864,
+      "height": 1152,
+      "sha256": "4971bcdc37e0853eb4bf0199b883d421ce7a71a77dd2b487c1974e616755311b",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-08.jpg",
+      "cell": 1,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "legacy delivery; existing CREDITS.md applies"
+    },
+    {
+      "path": "public/art/quill-terms.jpg",
+      "width": 600,
+      "height": 800,
+      "sha256": "01ebe6e2f28963db00606d3254688e3fe831f5b55ae7d2cb565a35533fda4f7b",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-08.jpg",
+      "cell": 2,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/quill-waiting.jpg",
+      "width": 440,
+      "height": 587,
+      "sha256": "8ed1f97159ed5acf9a09802df570e74a87a50ac377c7be63d940e3d0f3f0ad1b",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-08.jpg",
+      "cell": 3,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/cast-ren.jpg",
+      "width": 160,
+      "height": 213,
+      "sha256": "3aa64112127a14c855b22217b6c560f521493136b2d8a2690c17844745c146ac",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-08.jpg",
+      "cell": 4,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/ren-concerned.jpg",
+      "width": 600,
+      "height": 800,
+      "sha256": "ed2abb2f1406b47b66a782655e01df5b4a8caaaa027141c7c2b02e4d5b94f814",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-08.jpg",
+      "cell": 5,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/ren-listening.jpg",
+      "width": 600,
+      "height": 800,
+      "sha256": "d06442eadc08e0b5e34e06b61e0126179e67f472821f9f8ba94b51fe3f28627b",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-08.jpg",
+      "cell": 6,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/ren-portrait.jpg",
+      "width": 600,
+      "height": 800,
+      "sha256": "1ad4f23925cc6159462c2ad51fe01bcda6517251b78c211536dc623c892b9a33",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-09.jpg",
+      "cell": 1,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/cast-sera.jpg",
+      "width": 160,
+      "height": 213,
+      "sha256": "baf9d5566a7c4522c0523b11464c9a1ad14668f2d9718505e254bd83e0099714",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-09.jpg",
+      "cell": 2,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/sera.jpg",
+      "width": 864,
+      "height": 1152,
+      "sha256": "357cfe3e403cfc57140977271a62264157640a0c640da9bbd5272e39516b39cf",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-09.jpg",
+      "cell": 3,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "legacy delivery; existing CREDITS.md applies"
+    },
+    {
+      "path": "public/art/sera-attentive.jpg",
+      "width": 600,
+      "height": 800,
+      "sha256": "a5a6399fa6e6e924b7f97eda2b75d83895ef2500783c52ba5ddfd97b0119ed4a",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-09.jpg",
+      "cell": 4,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/sera-listening.jpg",
+      "width": 440,
+      "height": 587,
+      "sha256": "2f6f082f184eb1f8bd6e44e64b8a92facde781d1a7f8d572a794a335a87e4369",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-09.jpg",
+      "cell": 5,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/cast-stallholder.jpg",
+      "width": 160,
+      "height": 213,
+      "sha256": "e9e6efaffb15becfccd90fce92cd0c33c40aed0adff5465eac593fc893f20908",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-09.jpg",
+      "cell": 6,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/stallholder-portrait.jpg",
+      "width": 600,
+      "height": 800,
+      "sha256": "80d95d12bcfd922efba728f05b9779032a7256739726fdc63a540ab428a4871a",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-10.jpg",
+      "cell": 1,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/stallholder-speaking.jpg",
+      "width": 600,
+      "height": 800,
+      "sha256": "79330f199d6538c6a51b256102d35ff16ab623bc306fbc96037e37129dce0c72",
+      "inspectionSheet": "/tmp/composition-art-review/portraits-10.jpg",
+      "cell": 2,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/archive-desk.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "3380a27c045a88e14ed668eac830ff10184f802149f877fd5d5348b64f51c2b2",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-01.jpg",
+      "cell": 1,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/archive-held-original.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "4e1dfb9241e74fe5dd8aa82f874af2a51347824ca71f93663aafb6fed737ce71",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-01.jpg",
+      "cell": 2,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/archive-preparation.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "567474a9f42a03bb8af719654aa32a21ff6e78a446ffe44c2489208485cd86cd",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-01.jpg",
+      "cell": 3,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/asa-dispatch.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "c2629fb0e03e49efe511e7573253cd51df18caeb39c053c638186b1d7fe06b86",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-01.jpg",
+      "cell": 4,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/attendant-confrontation.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "bd8151decb4cdeeca1ab805c221127fd128630466b33eb4aac6a011883b49053",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-02.jpg",
+      "cell": 1,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/canal-dispatch.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "5c7ff9924557e8e8d5808838676f3ba96ce452555e8899e4930199c9a61e476c",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-02.jpg",
+      "cell": 2,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/canal.jpg",
+      "width": 1280,
+      "height": 720,
+      "sha256": "d62d6b39fb8c2f81c0a9ab7b77f93248a43a78f9b2a939c8517cb0a964913a77",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-02.jpg",
+      "cell": 3,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "legacy delivery; existing CREDITS.md applies"
+    },
+    {
+      "path": "public/art/chapel-entry.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "ab4ed5db3ed44a1f1f5f3eaf106723cdfd2e8dd7063fcf2c3a74ce2b566e1836",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-02.jpg",
+      "cell": 4,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/chapel-reader.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "1686a883834fff73bdb935fad6bc52083d20cfcb04669c067a073ae03abe9738",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-03.jpg",
+      "cell": 1,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/chapel-service.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "b8e1d3ac5a628807d03bf02367e0ab1a1f90b9e3dde8bbc5e9d7c139b80e6c35",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-03.jpg",
+      "cell": 2,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/chapel-shared.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "d36d5180b132fdde67b7abf6735d2bd5139139b39f3463d21be120c09ce8f51f",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-03.jpg",
+      "cell": 3,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/chapel.jpg",
+      "width": 1280,
+      "height": 720,
+      "sha256": "b38ed7d28a6ad107c209a32441299a6ffb1dbcd6e8a314de77de92d4b50a1a9b",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-03.jpg",
+      "cell": 4,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "legacy delivery; existing CREDITS.md applies"
+    },
+    {
+      "path": "public/art/chapter-wall.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "52a34463137b9045e7a6894e359bfba1e26442a7726622ecc8a5e0e2e6898e18",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-04.jpg",
+      "cell": 1,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/chapter-week.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "1d258a21b77686a66bb9f10812eee5a0fd3a2a6e6f21c4fdf17a375b9f17d4bd",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-04.jpg",
+      "cell": 2,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/city-schematic.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "7506a6c7b0c7e75203f1eef7eba2c3b6dd6d4871d00c39b85eb6f1a308de2953",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-04.jpg",
+      "cell": 3,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/clinic-conversation.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "afe2cc73b2ff497b3f5d1416136b2fce339afef131ba9b0396dc5c4da68190bf",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-04.jpg",
+      "cell": 4,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/clinic-coolant.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "5bee57b0d2f030493f7143904102d8d1b75c5ceb464b05eeea66861014e1659b",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-05.jpg",
+      "cell": 1,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/clinic-relay.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "927cf9d538b2583ac2882456f65ee55784609ada9cfc913f4060e42f0aa41da8",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-05.jpg",
+      "cell": 2,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/courier-receipt.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "73a07066c0d5d0f7d630f4f60bff6e4d1d9ea231520329c1d1a3df14a10a668b",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-05.jpg",
+      "cell": 3,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/courier-table.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "6220068ae893776190816cb2d8bd7c9ef6c8047c5d76a83b301995e2613c61c4",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-05.jpg",
+      "cell": 4,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/district-board.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "09ce88af81f4ee7b02a20021a0b5013ddd1af1cc0f272380200ada947cd49340",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-06.jpg",
+      "cell": 1,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/edda-archive.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "090a907f59e2587d9ccc536652621ff0868c6ac46aa0e4a3067401a671cc9810",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-06.jpg",
+      "cell": 2,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/edda-service-review.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "41a09af9feb8bcedb7449dd2567a189004d727f6c46c58a79c525ace19591462",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-06.jpg",
+      "cell": 3,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/equipment-atlas.jpg",
+      "width": 1600,
+      "height": 1600,
+      "sha256": "167a20e1efbcc80763cc9ae5473c38a238eb1ea24b2cbf19e7bb4b3753de448f",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-06.jpg",
+      "cell": 4,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/finale-listed.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "097e29b0e4558bcbfccfd9f2431b0cdc80c810d01b313b1a29407df4ebec1954",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-07.jpg",
+      "cell": 1,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/finale-names.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "7a22dc054a9e6700b8a688dedc17f02dc672efe4cccaa979082e07ff2153e72c",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-07.jpg",
+      "cell": 2,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/finale-quiet.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "ac9eaf092f9d3e79f6ddc9efdf5b306e0f0838cad1414f21f7159cc7c5061074",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-07.jpg",
+      "cell": 3,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/finale-witness.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "08b5ebc44ac43c137ac792901092963f3f21ab35a5ae12f7390a3125f3e66c37",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-07.jpg",
+      "cell": 4,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/fragment-order.jpg",
+      "width": 900,
+      "height": 600,
+      "sha256": "af887e9203e651dd95138cded06fd10110afb7f85bc601a75cd2152962cc1c8b",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-08.jpg",
+      "cell": 1,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/fragment-roster.jpg",
+      "width": 900,
+      "height": 600,
+      "sha256": "403456eecebfed8ef287ae627f893dc9953854fc6040828ff8ef49c2217f96d1",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-08.jpg",
+      "cell": 2,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/fragment-signature.jpg",
+      "width": 900,
+      "height": 600,
+      "sha256": "d587dea6f54a2ac5bfe45961d1d499248133a7bb397a15e1ca7bca9735502764",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-08.jpg",
+      "cell": 3,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/freight-passage.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "a371ba2736bef11fc8512eddbaf404d6e147a380cff4fbf6742cb75ac52a906a",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-08.jpg",
+      "cell": 4,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/freight.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "50f7060ce80a77fe92fe11258527dd7e25d8a08d13db6604067306eaa2d2580f",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-09.jpg",
+      "cell": 1,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/hearing-filed.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "6870a57e0b4ebdba00e2f2ef4e527cd6a28fc4fa2c3928c6b7fda597f9bbf2dc",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-09.jpg",
+      "cell": 2,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/hearing-table.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "f2601ddf9af5e08a094ea34fc6e20a2739b91ddefd1e23a658952c5c4371f9c3",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-09.jpg",
+      "cell": 3,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/held-case.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "3a088d0be99ed8d618db031935b8d669c70c2ae533bf8ce9c52d5b71ea14e2d4",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-09.jpg",
+      "cell": 4,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/incinerator-flue.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "d943a04c7cb25f7822a7ef628ea4780b788c52227c774cbc5ee70fdf5186da8f",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-10.jpg",
+      "cell": 1,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/item-archive-probe.jpg",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "3ad776f515241a61a39496acba83ed8be540589ae74445f03e7651139a70160c",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-10.jpg",
+      "cell": 2,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/item-burner-route.jpg",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "70018c2df2ed0c3ade227040ec36456ea4329d38331e05675adb29e8c09fcc2c",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-10.jpg",
+      "cell": 3,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/item-chair-harness.jpg",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "1f808fa1bd1600fb187df9bc76d4903e71343bf84b21e88ff36d320a92adec1f",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-10.jpg",
+      "cell": 4,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/item-clinic-marker.jpg",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "9a2eff2a0f495a00986a978b299686b5deb71fa34f3df9fc2e437f95c668545a",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-11.jpg",
+      "cell": 1,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/item-counterfeit-pass.jpg",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "91326205c80ce7ba41725dc613322b2e115531f4a5ced7409cf3b65af0a3f734",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-11.jpg",
+      "cell": 2,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/item-desk-guide.jpg",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "967005c156b4dd4a88e3f9eaccb3488298f219f0dc4eaec27a367043e8c1847a",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-11.jpg",
+      "cell": 3,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/item-layout-scrap.jpg",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "535af706376d1c12140e38d4aeff5f715623ff5437bcc55810993069a338fea9",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-11.jpg",
+      "cell": 4,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/item-mono-knife.jpg",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "828b2d35c73e7f6b804f725c75fd19f3f0241f9f4968f6dbf7185b2147c4e88c",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-12.jpg",
+      "cell": 1,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/item-route-shroud.jpg",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "1d50a6325e7483a840424747ed04d690ba90659f8244a2dbedab5fea0ae8d4fe",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-12.jpg",
+      "cell": 2,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/item-sedative.jpg",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "4b00fbed1a7dc2c6d55df9b8c8db99aba48e15acba51f7d585175f13ee96845d",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-12.jpg",
+      "cell": 3,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/item-shard-damaged.jpg",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "23c2bc5280c6bae0393a0549d557113576ccd2863212bc3a560e554bbb73a57a",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-12.jpg",
+      "cell": 4,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/item-shard.jpg",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "62cf6b849a9098a160a942df92e7c950d44951ee72bdd26fd17350b8dfe23162",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-13.jpg",
+      "cell": 1,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/item-signal-baffle.jpg",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "263a3db3960215892fd7a096e5ddf7c1ddaf78e8cee554c2e20aabbfd9b514c1",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-13.jpg",
+      "cell": 2,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/item-spoof-chip.jpg",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "278aa7703105a2c7e10242ac16a58cbe51255508b6c44782a64112eefc2f351d",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-13.jpg",
+      "cell": 3,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/item-witness-token.jpg",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "8fd0ecf1119fceab557f06ac169b21296f1b995ca6a3b14800124a546fc7df91",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-13.jpg",
+      "cell": 4,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/ives-hearing.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "54584f9e4ddba81b0901c7e76e89ce310ba23b8cd4cdbdaa0858ac75cea38aea",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-14.jpg",
+      "cell": 1,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/kerr-handover.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "30692b026b97a1bb5688d9f07588665ff944440dd4ad9e90be4a4f9df8adfa01",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-14.jpg",
+      "cell": 2,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/laundry-cart.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "6096adbf567c6e46a7ac3e3c82b7f96aed7c0b283d3d911ceaaacd14afd8001d",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-14.jpg",
+      "cell": 3,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/lumen-cup.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "13781d929ac7df95c5f2f053e98d569b5c50943678f8f1e4d9d2b3a20461bcd0",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-14.jpg",
+      "cell": 4,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/mara-present.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "c981bd1f21bfe996d6493e78987b4cffd63c06954d8d7be945a5799216866337",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-15.jpg",
+      "cell": 1,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/mara-revelation.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "577a72c15542c6d7fa49a27d971f39877ac0006105024131b4084ca765681738",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-15.jpg",
+      "cell": 2,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/mara-shared-hour.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "ccbbc0d127c25864c2602e720d0fc8327b139fe70ad51ef805c5753f23009089",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-15.jpg",
+      "cell": 3,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/mara-window.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "493ae2aa5f2c324140ed8639d3acf04b27e2c7fa5661a7a3ea0c0c2c4beb38bc",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-15.jpg",
+      "cell": 4,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/market-counter.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "709cb53138b1b9f4ec6d3a4a168008f124cc0598903c20d04cccb63f7e0ef9b8",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-16.jpg",
+      "cell": 1,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/memorial-stair.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "2078a38c3c911729dfe5a80eb232d1c78bec7c0609c97cfa5f5450e77432acd7",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-16.jpg",
+      "cell": 2,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/memory-apparatus.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "76fb91d7eb3ea1b23fbd545482d075301265ef113633ea763ee63cd7062aaeb4",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-16.jpg",
+      "cell": 3,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/memory-bench.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "0d53e523b3adfbf538585d14f6d930f8361c1155e0d7d443d35317292f0a16ad",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-16.jpg",
+      "cell": 4,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/nia-arrival.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "22829b36897ec6e10018754951c9ec8cf1ae6bdcacfd036e6508795961528fe7",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-17.jpg",
+      "cell": 1,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/nia-transfer.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "d850e4a5d57088ae9ff7568c76d5a5f140fe46e50679e0c3d28fa6333983263f",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-17.jpg",
+      "cell": 2,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/notice-desk.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "a00696c9017ad0bb86c0b912fbd494be8382fbbece378d978431975057ad11f5",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-17.jpg",
+      "cell": 3,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/opening.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "9ef96fa0bcea5beef099cacc0f9d568efe37da4487835c4fc50a9ba8380c7b95",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-17.jpg",
+      "cell": 4,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/ordinary-rest.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "d0d7d0b5b5ddf9015f2ef0ca1d0d1c2555f4bb9a575c9a846104cc9a1ca9ec8d",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-18.jpg",
+      "cell": 1,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/private-reply.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "291e51f60239b8f08b5f23433c017c9395075a99fd8e4d7e6b7823ecfdb0c2f2",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-18.jpg",
+      "cell": 2,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/quill-offer.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "c1dfbc8b368cd0d02542c14407a0b2733847425ce89d96e9ba2df49feae12c1c",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-18.jpg",
+      "cell": 3,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/ren-canal.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "6a1f41231020be9e6119d69406ca9ca3c3e2ba221178f8262e02cb3fe7abbe31",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-18.jpg",
+      "cell": 4,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/repair-bench.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "46714d0ca0fc54bbf38e7207a13ea620313fca2c35b7c0fa8fdff307ecd9ffe9",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-19.jpg",
+      "cell": 1,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/sera-hearing.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "c281c605d54e1e2caf0d592be2d24217396e73536b92007b0d7525c4277617d6",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-19.jpg",
+      "cell": 2,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/shelter-conversation.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "8c2240b2bd432d6df7960916b14180181da54deb89f330254f2e267fbecb377d",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-19.jpg",
+      "cell": 3,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/shelter-hall.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "419be4b687b7ef2415c4609901da51f0e0e7f8fc954c99f4adc6b39381f809a2",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-19.jpg",
+      "cell": 4,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/shelter-landing.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "c04e29ccf5f538c6a25590f82ffbaa9fd5e65b668938d996b16b56dfd8bdb8f2",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-20.jpg",
+      "cell": 1,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/shelter-pump.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "8575223111ea63184d5d201458341b84ccadd35664fa71d5470620eeaf168097",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-20.jpg",
+      "cell": 2,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/shelter-restored.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "67804a7efe6478446fb60e4ba04c8e9b4e5f3a37430d7f64173c2eed072c94bf",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-20.jpg",
+      "cell": 3,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/shelter.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "682b53e06fcd9edd9f4092059fb109dd4750244447338b0530605057d6672916",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-20.jpg",
+      "cell": 4,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/spire-counter.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "57242dd57d1e0f8185c9bef6e59ba6cb710229ea5075efc79fa3bfd578b4993a",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-21.jpg",
+      "cell": 1,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/spire-payroll.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "c36beebe3c5dfac0461ecb398eea50156c6f08110790e497bd481c16d82c898a",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-21.jpg",
+      "cell": 2,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/spire-terminal.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "d26a856a8e3d512eaaf862eed795dd2122ca6071060f9bb418695f70e4101afc",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-21.jpg",
+      "cell": 3,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/spire.jpg",
+      "width": 1280,
+      "height": 720,
+      "sha256": "59315758907739d260c66480b6dd372902b154a981c218ff71e522a134805413",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-21.jpg",
+      "cell": 4,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "legacy delivery; existing CREDITS.md applies"
+    },
+    {
+      "path": "public/art/stall.jpg",
+      "width": 1280,
+      "height": 720,
+      "sha256": "c77892d16439f0430abcbd058c36530c0d17be366c95a89f486dd3c59dc60969",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-22.jpg",
+      "cell": 1,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "legacy delivery; existing CREDITS.md applies"
+    },
+    {
+      "path": "public/art/stallholder-story.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "b82be5ae49d8276b7544633854e504fe012528e8847a83bb2f0e4dfe2652e73f",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-22.jpg",
+      "cell": 2,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/title.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "bc429bafbac720f8fe10d505761b92f226c7085fde95950899227cdba77c4543",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-22.jpg",
+      "cell": 3,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/wall-shared.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "664ff4e12ff9665bb872a84cf99daa7d7d9282813e297b31ec172020c03a722e",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-22.jpg",
+      "cell": 4,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    },
+    {
+      "path": "public/art/wardnine.jpg",
+      "width": 1280,
+      "height": 720,
+      "sha256": "c53adb16eb278e6d2904cda51265cbfd79a964ad0cda43dce94edb432d5cbff0",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-23.jpg",
+      "cell": 1,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "legacy delivery; existing CREDITS.md applies"
+    },
+    {
+      "path": "public/art/witness-checkpoint.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "9b570b041a4d542fc6431459831a1fcdd17acc6876213f4caa8d5ee52fee6dc8",
+      "inspectionSheet": "/tmp/composition-art-review/paintings-23.jpg",
+      "cell": 2,
+      "result": "retain",
+      "reviewedAt": "native delivery dimensions",
+      "provenance": "art-provenance.json"
+    }
+  ],
+  "sheetReviews": [
+    {
+      "path": "/tmp/composition-art-review/portraits-01.jpg",
+      "kind": "portraits",
+      "assets": [
+        "asa",
+        "cast-asa",
+        "asa-terms",
+        "cast-attendant",
+        "attendant-alert",
+        "cast-dispatcher"
+      ],
+      "width": 1236,
+      "height": 2532,
+      "review": "completed",
+      "findings": "Asa's rust scarf, face and glove silhouettes agree across her base/terms/cast views; the attendant mask and dispatcher thumbnail remain distinct identities. No confirmed anatomy defect.",
+      "sha256": "b83dbde2c4a12f22745b7d1511a3e21230ed2132fc12859e7c6e0e1aea8eeeab"
+    },
+    {
+      "path": "/tmp/composition-art-review/portraits-02.jpg",
+      "kind": "portraits",
+      "assets": [
+        "dispatcher-considering",
+        "dispatcher-portrait",
+        "cast-edda",
+        "edda",
+        "edda-assignment",
+        "edda-scrutiny"
+      ],
+      "width": 1236,
+      "height": 2532,
+      "review": "completed",
+      "findings": "Dispatcher's ear hardware, blue workwear and face remain stable. Edda retains glasses, repaired jacket and ledger; her assignment papers remain unmarked rather than a new clearance claim.",
+      "sha256": "2c0123b182ff7943304f196d97096a0fb2fad76679ad8c93020ec460f358d373"
+    },
+    {
+      "path": "/tmp/composition-art-review/portraits-03.jpg",
+      "kind": "portraits",
+      "assets": [
+        "cast-ives",
+        "ives",
+        "ives-assessing",
+        "ives-questioning",
+        "cast-kerr",
+        "kerr"
+      ],
+      "width": 1764,
+      "height": 3588,
+      "review": "completed",
+      "findings": "Ives retains dark hair, Helion emblem and closed folio through assessing/questioning views. Visible hands have plausible grips. Kerr's base and cast view agree.",
+      "sha256": "c2f5c4646d8cb5dd7f114d1adacf3e5d5a2bc7d48552007c7d88c9609adb7959"
+    },
+    {
+      "path": "/tmp/composition-art-review/portraits-04.jpg",
+      "kind": "portraits",
+      "assets": [
+        "kerr-closed",
+        "kerr-considering",
+        "cast-lumen",
+        "lumen",
+        "lumen-challenging",
+        "lumen-considering"
+      ],
+      "width": 1764,
+      "height": 3588,
+      "review": "completed",
+      "findings": "Kerr's coat and arm hardware persist across guarded/considering views. Lumen's magenta optic remains on the same side; warm room lighting does not change identity.",
+      "sha256": "dd7852eb020915ab6f8e3602c72d696e8af055861dfb06af86e19073d2476119"
+    },
+    {
+      "path": "/tmp/composition-art-review/portraits-05.jpg",
+      "kind": "portraits",
+      "assets": [
+        "lumen-guarded",
+        "cast-mara",
+        "mara",
+        "mara-boundary",
+        "mara-questioning",
+        "mara-remorse"
+      ],
+      "width": 1764,
+      "height": 3588,
+      "review": "completed",
+      "findings": "Guarded Lumen retains her optic and collar. Mara's dark hair, face and cyan halo remain consistent across neutral, boundary, questioning and remorse views; expression changes do not grant consent.",
+      "sha256": "8ea97189867d386d187700394e0cf2321dbd5e6b06bf8f6b1acde6ff9b55f92e"
+    },
+    {
+      "path": "/tmp/composition-art-review/portraits-06.jpg",
+      "kind": "portraits",
+      "assets": [
+        "masked-attendant-portrait",
+        "cast-mechanic",
+        "mechanic-explaining",
+        "mechanic-portrait",
+        "cast-nia",
+        "nia"
+      ],
+      "width": 1236,
+      "height": 2532,
+      "review": "completed",
+      "findings": "Attendant mask, mechanic's salt-and-pepper hair/work shirt/tool pocket and Nia's plum cardigan remain distinct and consistent. Nia's visible hand rests naturally on the closed notebook.",
+      "sha256": "20837fa8e0a6590e42a55c668d15f4e74e2640828c02f4ae2d52f9e11c7b3f8c"
+    },
+    {
+      "path": "/tmp/composition-art-review/portraits-07.jpg",
+      "kind": "portraits",
+      "assets": [
+        "nia-speaking",
+        "nia-terms",
+        "cast-orderly",
+        "orderly",
+        "orderly-assessing",
+        "cast-quill"
+      ],
+      "width": 1764,
+      "height": 3588,
+      "review": "completed",
+      "findings": "Nia's speaking/terms hands, cardigan and notebook remain coherent. The orderly's pale cropped hair, clinical collar and cyan cross match the cast view; no extra anatomy is visible.",
+      "sha256": "2ffd66b6aa073c1602d725ea17cef1e365d405f29fbd7ccfed8558ed8bb298d8"
+    },
+    {
+      "path": "/tmp/composition-art-review/portraits-08.jpg",
+      "kind": "portraits",
+      "assets": [
+        "quill",
+        "quill-terms",
+        "quill-waiting",
+        "cast-ren",
+        "ren-concerned",
+        "ren-listening"
+      ],
+      "width": 1764,
+      "height": 3588,
+      "review": "completed",
+      "findings": "Quill retains age lines, amber optics, dark coat and mouth-held pick. Ren's wet short hair and ochre rainwear match concerned/listening/cast views.",
+      "sha256": "3a80798187ba84c5cd6a75cf1ca25a8b009731451dfedd0d8d394ca8a22046ec"
+    },
+    {
+      "path": "/tmp/composition-art-review/portraits-09.jpg",
+      "kind": "portraits",
+      "assets": [
+        "ren-portrait",
+        "cast-sera",
+        "sera",
+        "sera-attentive",
+        "sera-listening",
+        "cast-stallholder"
+      ],
+      "width": 1764,
+      "height": 3588,
+      "review": "completed",
+      "findings": "Ren and Sera remain separate identities. Sera's green hood, eye shape and writing tool agree across base/attentive/listening/cast views; the stallholder thumbnail remains separate.",
+      "sha256": "b4e903a2b3c8ff689d060041804b3fe97d88d0af038b16b035670495e880144c"
+    },
+    {
+      "path": "/tmp/composition-art-review/portraits-10.jpg",
+      "kind": "portraits",
+      "assets": [
+        "stallholder-portrait",
+        "stallholder-speaking"
+      ],
+      "width": 1236,
+      "height": 852,
+      "review": "completed",
+      "findings": "Stallholder base and speaking views retain the same face, tied hair, apron, lamp and steam. Mouth movement changes expression without replacing identity.",
+      "sha256": "2adba177078ab2a64e93498c5b29f569ac4d94504c81d3a39882cd00c230e32e"
+    },
+    {
+      "path": "/tmp/composition-art-review/paintings-01.jpg",
+      "kind": "paintings",
+      "assets": [
+        "archive-desk",
+        "archive-held-original",
+        "archive-preparation",
+        "asa-dispatch"
+      ],
+      "width": 2436,
+      "height": 1692,
+      "review": "completed",
+      "findings": "Archive desk, retained original and preparation views keep closed books, restrained instruments and blank cover papers distinct. Asa's closed sealed case remains at dispatch; hands and face agree with her portraits.",
+      "sha256": "51a0b60cb5d5e825e629abe24a5bf657df86d14fd4e36e7b6694a9272d0e3e46"
+    },
+    {
+      "path": "/tmp/composition-art-review/paintings-02.jpg",
+      "kind": "paintings",
+      "assets": [
+        "attendant-confrontation",
+        "canal-dispatch",
+        "canal",
+        "chapel-entry"
+      ],
+      "width": 2596,
+      "height": 1692,
+      "review": "completed",
+      "findings": "Attendant confrontation preserves the mask, low wrench and empty corridor. Canal dispatch is a schematic route table, not proof of completed travel; the canal and chapel entrance retain coherent architecture and lighting.",
+      "sha256": "b9df759d4d7e116bd70c3d0e9810bf1861df15c37ad5bea8e363b444eed062ae"
+    },
+    {
+      "path": "/tmp/composition-art-review/paintings-03.jpg",
+      "kind": "paintings",
+      "assets": [
+        "chapel-reader",
+        "chapel-service",
+        "chapel-shared",
+        "chapel"
+      ],
+      "width": 2596,
+      "height": 1692,
+      "review": "completed",
+      "findings": "Chapel reader and service passage stay unresolved settings. Mara and Lumen match their portraits in the shared plinth composition, with plausible hands and no handover; the legacy chapel remains a wide atmosphere background.",
+      "sha256": "97187fab9a9bb52738943760f853e9edf16ffbd6e143f029ba0e243d3d02a3ff"
+    },
+    {
+      "path": "/tmp/composition-art-review/paintings-04.jpg",
+      "kind": "paintings",
+      "assets": [
+        "chapter-wall",
+        "chapter-week",
+        "city-schematic",
+        "clinic-conversation"
+      ],
+      "width": 2436,
+      "height": 1692,
+      "review": "completed",
+      "findings": "Chapter wall marks remain indistinct; the week street and neutral city sketch reveal no named private address or earned destination. The empty clinic conversation table depicts no granted permission.",
+      "sha256": "5c6f3aeb4c24961f36594ad5102d96604608949242124beb9573ebee50246c68"
+    },
+    {
+      "path": "/tmp/composition-art-review/paintings-05.jpg",
+      "kind": "paintings",
+      "assets": [
+        "clinic-coolant",
+        "clinic-relay",
+        "courier-receipt",
+        "courier-table"
+      ],
+      "width": 2436,
+      "height": 1692,
+      "review": "completed",
+      "findings": "Coolant/relay hardware has coherent silhouettes; the receipt painting's seal is an earned-state prop, not a universal authorization. Courier table remains a neutral bag-and-papers setup. Keep source text authoritative for every prop.",
+      "sha256": "911b50a7d2d32e5b351fd613d3a590a15d8c44b383add937995606c540aefdeb"
+    },
+    {
+      "path": "/tmp/composition-art-review/paintings-06.jpg",
+      "kind": "paintings",
+      "assets": [
+        "district-board",
+        "edda-archive",
+        "edda-service-review",
+        "equipment-atlas"
+      ],
+      "width": 3236,
+      "height": 3292,
+      "review": "completed",
+      "findings": "Edda's archive and three-document review preserve her glasses, jacket and closed ledger. The account remains covered rather than visibly authenticated. Equipment atlas silhouettes remain distinguishable and consistent with the individual inspections.",
+      "sha256": "4449424c64f1108117e5860d6614c2e8149486278ce6d88000f0accb684d6f12"
+    },
+    {
+      "path": "/tmp/composition-art-review/paintings-07.jpg",
+      "kind": "paintings",
+      "assets": [
+        "finale-listed",
+        "finale-names",
+        "finale-quiet",
+        "finale-witness"
+      ],
+      "width": 2436,
+      "height": 1692,
+      "review": "completed",
+      "findings": "All four finale plates preserve Sera/Ives identity, hood/folio/tool continuity and plausible hands. Their distinct witness, names, listed and quiet framing remains earned through the existing finale selection; wall marks do not expose private names.",
+      "sha256": "1f024e1541c824b54701f2cb28828342755ba6102ce95e137b61e4df4ed3ed87"
+    },
+    {
+      "path": "/tmp/composition-art-review/paintings-08.jpg",
+      "kind": "paintings",
+      "assets": [
+        "fragment-order",
+        "fragment-roster",
+        "fragment-signature",
+        "freight-passage"
+      ],
+      "width": 2436,
+      "height": 1692,
+      "review": "completed",
+      "findings": "Three fragment studies retain consistent glass/copper materials and separate blank/order/roster motifs. Their decorative marks do not replace actual evidence wording. Freight passage shows a closed barrier with no clearance outcome.",
+      "sha256": "9911c860e3e2c429d9457ed72e66cd18e4f69a4b579138766850fe7c77b49426"
+    },
+    {
+      "path": "/tmp/composition-art-review/paintings-09.jpg",
+      "kind": "paintings",
+      "assets": [
+        "freight",
+        "hearing-filed",
+        "hearing-table",
+        "held-case"
+      ],
+      "width": 2436,
+      "height": 1692,
+      "review": "completed",
+      "findings": "Freight case remains closed with its seal. Filed hearing sheet is separate from the neutral hearing table and selected only under existing earned rules. Held case remains covered behind the shutter; no completed delivery is implied.",
+      "sha256": "87116efa150f5f3c5047edfe3feba55aa8aa974f66c4e79803e8a826395799b2"
+    },
+    {
+      "path": "/tmp/composition-art-review/paintings-10.jpg",
+      "kind": "paintings",
+      "assets": [
+        "incinerator-flue",
+        "item-archive-probe",
+        "item-burner-route",
+        "item-chair-harness"
+      ],
+      "width": 3108,
+      "height": 2140,
+      "review": "completed",
+      "findings": "Incinerator hatch remains closed. Probe, burner card and harness are clear standalone object studies with complete silhouettes, consistent copper/dark cloth and no added mechanical capability claim.",
+      "sha256": "593f96a8c67995806c889704740adb0c7e62aef01a6cb47beee1ae9cd2b53c31"
+    },
+    {
+      "path": "/tmp/composition-art-review/paintings-11.jpg",
+      "kind": "paintings",
+      "assets": [
+        "item-clinic-marker",
+        "item-counterfeit-pass",
+        "item-desk-guide",
+        "item-layout-scrap"
+      ],
+      "width": 3108,
+      "height": 2140,
+      "review": "completed",
+      "findings": "Clinic marker, counterfeit pass, desk guide and layout scrap remain intact standalone objects. Graphic bars, blank covers and schematic lines are not readable credentials or actual geographic instructions.",
+      "sha256": "f436fa9c76ce339871765f645ec82aef7909ce6a6d3e6b5848cd3b91ce353898"
+    },
+    {
+      "path": "/tmp/composition-art-review/paintings-12.jpg",
+      "kind": "paintings",
+      "assets": [
+        "item-mono-knife",
+        "item-route-shroud",
+        "item-sedative",
+        "item-shard-damaged"
+      ],
+      "width": 3108,
+      "height": 2140,
+      "review": "completed",
+      "findings": "Knife, route shroud and sedative remain clear distinct object silhouettes. Chipped/cracked shard deliberately represents the ash condition; damage is a recorded state rather than accidental rendering corruption.",
+      "sha256": "4fc45196653d4e827f9f51e66377e8e4d126e6513ada8fbf63a88fda5b003add"
+    },
+    {
+      "path": "/tmp/composition-art-review/paintings-13.jpg",
+      "kind": "paintings",
+      "assets": [
+        "item-shard",
+        "item-signal-baffle",
+        "item-spoof-chip",
+        "item-witness-token"
+      ],
+      "width": 3108,
+      "height": 2140,
+      "review": "completed",
+      "findings": "Intact shard differs deliberately from the damaged inspection. Signal baffle, spoof chip and shelter token retain the atlas material language and distinct shapes. Decorative connectors/marks do not establish new rules or permissions.",
+      "sha256": "1fa872bc95cc81d44aea739be88b3130f34c626324d3f8f7860d435c19004774"
+    },
+    {
+      "path": "/tmp/composition-art-review/paintings-14.jpg",
+      "kind": "paintings",
+      "assets": [
+        "ives-hearing",
+        "kerr-handover",
+        "laundry-cart",
+        "lumen-cup"
+      ],
+      "width": 2436,
+      "height": 1692,
+      "review": "completed",
+      "findings": "Ives retains folio/emblem and natural hands. Kerr retains coat/arm hardware beside the recorded handover case. Laundry remains an ordinary service setting. Lumen retains magenta optic while lifting the cup and wiping; no endorsement is shown.",
+      "sha256": "0901626611580462e0733990f17c8e408fa9fd1656d1b58554c917d0d1d140b1"
+    },
+    {
+      "path": "/tmp/composition-art-review/paintings-15.jpg",
+      "kind": "paintings",
+      "assets": [
+        "mara-present",
+        "mara-revelation",
+        "mara-shared-hour",
+        "mara-window"
+      ],
+      "width": 2436,
+      "height": 1692,
+      "review": "completed",
+      "findings": "Mara's face, dark clothing and hair remain coherent across present/revelation/window/shared-hour views. Hands and cup grips are plausible. The memory image remains symbolic and the spare chair does not imply dispatch completion.",
+      "sha256": "f317962a34dea23aded2257de13c2245acea6f424c1cc4ffe64a120cc015ac6a"
+    },
+    {
+      "path": "/tmp/composition-art-review/paintings-16.jpg",
+      "kind": "paintings",
+      "assets": [
+        "market-counter",
+        "memorial-stair",
+        "memory-apparatus",
+        "memory-bench"
+      ],
+      "width": 2436,
+      "height": 1692,
+      "review": "completed",
+      "findings": "Market and memorial settings retain the blue/amber palette. Memorial rows remain indistinct. Apparatus and three-sliver inspection bench have coherent glass/copper silhouettes; an ordinary chair is not shown as the memory apparatus.",
+      "sha256": "d4207f5709188ca84b87c0db4683c7f99416f37b46432e59435e0a4c57d2b86d"
+    },
+    {
+      "path": "/tmp/composition-art-review/paintings-17.jpg",
+      "kind": "paintings",
+      "assets": [
+        "nia-arrival",
+        "nia-transfer",
+        "notice-desk",
+        "opening"
+      ],
+      "width": 2436,
+      "height": 1692,
+      "review": "completed",
+      "findings": "Nia's face, cardigan and notebook agree with portraits; wheelchair, brake hand and shoes have plausible geometry. Dispatch desk stays unmarked. Opening city is atmospheric, not a named runner or completed job.",
+      "sha256": "bf1dbe520f59ad80f92076aea1396cf983d611a66706cc31c0bf7addfc9fd0e6"
+    },
+    {
+      "path": "/tmp/composition-art-review/paintings-18.jpg",
+      "kind": "paintings",
+      "assets": [
+        "ordinary-rest",
+        "private-reply",
+        "quill-offer",
+        "ren-canal"
+      ],
+      "width": 2436,
+      "height": 1692,
+      "review": "completed",
+      "findings": "Ordinary rest has no restraints or memory apparatus. Private reply keeps closed papers. Quill retains amber eyes and bowl context. Ren's ochre coat, face, hands and bag agree with the canal portraits.",
+      "sha256": "3a01039120a2bb432e00c68a2e576acfc9e04bd6832354331a98043bf145a1ed"
+    },
+    {
+      "path": "/tmp/composition-art-review/paintings-19.jpg",
+      "kind": "paintings",
+      "assets": [
+        "repair-bench",
+        "sera-hearing",
+        "shelter-conversation",
+        "shelter-hall"
+      ],
+      "width": 2436,
+      "height": 1692,
+      "review": "completed",
+      "findings": "Repair bench's four distinct kits remain consistent. Sera's pencil/closed folder and neutral recorder preserve an account still under review. Shelter conversation keeps Sera/Ren identities, leaking valve, bucket and kettle without depicting completed repair or beds. Shelter hall remains a neutral setting.",
+      "sha256": "632149f9aa719548b8e3c861715e4c881147fbaa96f3fc7e24e0f232433a350f"
+    },
+    {
+      "path": "/tmp/composition-art-review/paintings-20.jpg",
+      "kind": "paintings",
+      "assets": [
+        "shelter-landing",
+        "shelter-pump",
+        "shelter-restored",
+        "shelter"
+      ],
+      "width": 2436,
+      "height": 1692,
+      "review": "completed",
+      "findings": "Landing ramp and rails are coherent. Leaking and repaired pump views are intentionally distinct; only the earned repaired state is dry/braced. Original shelter remains unresolved with its bucket and ordinary chair.",
+      "sha256": "0657bd6e4ee28e7a937d95474468f1fdefaefd238d56d5e89facc87b4a1a5768"
+    },
+    {
+      "path": "/tmp/composition-art-review/paintings-21.jpg",
+      "kind": "paintings",
+      "assets": [
+        "spire-counter",
+        "spire-payroll",
+        "spire-terminal",
+        "spire"
+      ],
+      "width": 2596,
+      "height": 1692,
+      "review": "completed",
+      "findings": "Service counter keeps distinct paper, folio and sleeved receiver props. Payroll table and maintenance alcove retain dark devices and no readable personal record. The legacy Spire is an atmosphere backdrop, not the same literal desk viewpoint.",
+      "sha256": "e6c57b6c047015e2827c7672ef1aeefb1350d896c696e075a0800b06436cd4a2"
+    },
+    {
+      "path": "/tmp/composition-art-review/paintings-22.jpg",
+      "kind": "paintings",
+      "assets": [
+        "stall",
+        "stallholder-story",
+        "title",
+        "wall-shared"
+      ],
+      "width": 2596,
+      "height": 1692,
+      "review": "completed",
+      "findings": "Stallholder's face, apron and pointing hand agree with her portraits; wall pair preserves Sera's hood/tool and Ives's folio/emblem with no handover. Title runner/shard is explicitly symbolic, so it is not a literal item-inspection design or fixed player identity.",
+      "sha256": "6422ecd2f36bfb7df8a70c718cd60d095047bbe23136875eac1f4cb90f900ac1"
+    },
+    {
+      "path": "/tmp/composition-art-review/paintings-23.jpg",
+      "kind": "paintings",
+      "assets": [
+        "wardnine",
+        "witness-checkpoint"
+      ],
+      "width": 2596,
+      "height": 852,
+      "review": "completed",
+      "findings": "Legacy Ward Nine wall remains atmospheric with indistinct marks. Checkpoint keeps an empty booth, dark scanner and unresolved passage, without clearance or exposed private identity.",
+      "sha256": "9c63c766d6d4fd7be182fd5e67baa992ebf3f668d534adb2fc1a30e0c80218f7"
+    }
+  ],
+  "limitations": [
+    "This records AI visual inspection, not independent human/artistic acceptance or proof that every possible defect is absent.",
+    "Full-resolution means full-size shipped JPEG deliveries, not the larger generation masters retained outside Git.",
+    "Inspection sheets preserve delivery dimensions and add labels/padding; JPEG encoding is inspection-only and changes no shipped file.",
+    "Decorative glyphs, barcodes, documents and maps never override canonical text, consent, evidence or item mechanics.",
+    "Per-scene art decisions, conditional selectors and all voice bindings remain unchanged; no new scene is introduced."
+  ]
+}

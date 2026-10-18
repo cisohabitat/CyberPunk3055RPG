@@ -780,3 +780,9 @@ All fourteen inventory items now have individual close-up paintings, with a sepa
 Regular scene paintings use a compact, uncropped art-and-caption layout on phones, with full detail still available in the existing viewer. Desktop, pivotal conversations, chapter cards and finales retain their established compositions. Restore messages keep their complete checkpoint text in a quieter status row.
 
 Choice cards separate the action, stat/DC and odds, authored detail, open-promise warning, effects and possible check costs into readable rows. Wording, order, shortcuts and disabled reasons stay intact. Resolved checks place the recorded die beside the total, DC and Success/Miss label, with actual resource changes listed under **On Continue**. Rolls, critical adjustments, voice/text alignment and saves retain their existing behavior. See [the reading flow cycle](docs/READING_FLOW_CYCLE.md).
+
+## Desktop composition and dialogue finish
+
+Regular tablet and desktop paintings now sit beside their captions in a smaller, uncropped frame, bringing the opening prose higher while retaining the full artwork viewer. Chapter, pivotal, investigation and finale compositions keep their existing treatment. Check results give the speaker a wide identity strip so enlarged names stay readable.
+
+Playback and closed transcript controls sit closer together, with complete live status and muted-state guidance underneath. Opening the transcript places its full text and line selector below the controls. Listen, Stop, replay, automatic voices and reading preferences retain their existing behavior. A native-resolution review covers all 146 full-size, portrait and cast deliveries; no confirmed creative defect required replacement. See [the composition finish report](docs/COMPOSITION_FINISH_CYCLE.md) for the source-based audit and validation.

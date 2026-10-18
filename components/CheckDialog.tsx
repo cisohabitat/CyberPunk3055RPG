@@ -126,7 +126,7 @@ export function CheckDialog({
           <p data-testid="check-flavor"><SpokenText text={result.flavor} range={spokenRange} /></p>
           {dialogue.length > 0 && <VoiceLine lines={dialogue} enabled={sound && voicesEnabled} automatic={automaticVoices} onSpeaking={setSpeaking} />}
           <div className="reaction">
-            <Portrait speaker={playing?.speaker ?? speaker} speaking={Boolean(playing)} origin={state.origin} handle={state.handle} artwork={artwork} />
+            <Portrait compact speaker={playing?.speaker ?? speaker} speaking={Boolean(playing)} origin={state.origin} handle={state.handle} artwork={artwork} />
             <p>{reactionLine(speaker, result.success)}</p>
           </div>
           {result.crit === "success" && <p>A ten. Strain eases.</p>}

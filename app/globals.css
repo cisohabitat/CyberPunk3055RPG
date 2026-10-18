@@ -1389,3 +1389,23 @@ html[data-text="2"] .scene-row[data-compact="true"] .portrait-frame figcaption {
   .check-score { gap: .7rem; padding: .6rem; }
   .check-score .die.plate { width: 4.4rem; height: 4.4rem; font-size: 1.7rem; }
 }
+
+/* A regular scene's painting supports reading at desktop and tablet widths too. */
+@media (min-width: 701px) {
+  .reading-art:not([data-unavailable="true"]) { display: grid; grid-template-columns: minmax(0,40%) minmax(0,1fr); align-items: center; }
+  .reading-art:not([data-unavailable="true"]) .art-window { min-width: 0; }
+  .reading-art figcaption { min-width: 0; padding: .75rem 1rem; }
+}
+
+/* Give result speakers a complete nameplate instead of a narrow caption stack. */
+.check-dialog .reaction { display: grid; grid-template-columns: minmax(0,1fr); align-items: start; gap: .65rem; }
+.check-dialog .reaction .portrait-frame[data-layout="compact"] { display: grid; grid-template-columns: 44px minmax(0,1fr); align-items: center; width: 100%; margin: 0; }
+.check-dialog .reaction .portrait-frame .portrait, .check-dialog .reaction .portrait-placeholder { width: 44px; height: 58.6667px; object-fit: contain; }
+.check-dialog .reaction .portrait-frame figcaption { height: 4.25rem; padding: .35rem .7rem; font-size: .85rem; line-height: 1.25; }
+
+/* Keep playback, transcript access and the complete live status close together. */
+.voice-line { margin: .85rem 0; padding-top: .35rem; gap: .15rem .4rem; }
+.voice-line > .hint { order: 3; margin: .05rem 0; font-size: .78rem; line-height: 1.45; }
+.voice-line > details { order: 2; flex-basis: auto; margin-inline-start: auto; max-width: 100%; }
+.voice-line > details > summary { font-size: .8rem; padding-block: .45rem; }
+.voice-line > details[open] { order: 4; flex-basis: 100%; margin-inline-start: 0; }

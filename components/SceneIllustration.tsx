@@ -20,7 +20,7 @@ export function SceneIllustration({ art, paired = false, reading = false }: { ar
     return () => observer.disconnect();
   }, [art.src, atmosphere]);
   const failed = failedSource === art.src;
-  const sizes = reading ? "(max-width: 700px) calc(42vw - 1.68rem), (max-width: 1100px) calc(100vw - 4rem), 760px" : paired ? "(min-width: 1101px) 330px, (min-width: 900px) calc(45vw - 2.5rem), calc(100vw - 4rem)"
+  const sizes = reading ? "(max-width: 700px) calc(42vw - 1.68rem), (max-width: 1100px) calc(40vw - 1.6rem), 320px" : paired ? "(min-width: 1101px) 330px, (min-width: 900px) calc(45vw - 2.5rem), calc(100vw - 4rem)"
     : "(max-width: 700px) calc(100vw - 4rem), (max-width: 1100px) calc(100vw - 4rem), 760px";
   return <figure className={`scene-illustration${reading ? " reading-art" : ""}`} data-testid="scene-illustration" data-layout={paired ? "paired" : "full"} data-reading={reading ? "true" : "false"} data-unavailable={failed ? "true" : "false"}>
     <div className="art-window" key={art.src} ref={windowRef}>
