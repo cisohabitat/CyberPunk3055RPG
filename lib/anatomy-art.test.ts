@@ -7,6 +7,7 @@ import retake from "../qa/media/anatomy-retakes.json";
 import review from "../qa/media/anatomy-art-review.json";
 import provenance from "../qa/media/art-provenance.json";
 import previews from "../qa/media/art-previews.json";
+import branding from "../qa/media/title-branding.json";
 import { paintedActor, sceneIllustration } from "./art";
 
 const sha = (path: string) => createHash("sha256").update(readFileSync(path)).digest("hex");
@@ -39,13 +40,16 @@ it("uses the reviewed counter painting and its same-master phone/preview deliver
 
 it("records every current art delivery and explicitly corrects the missed visual defect", () => {
   const files = readdirSync("public/art", { recursive: true }).filter((p): p is string => typeof p === "string" && p.endsWith(".jpg")).map(p => `public/art/${p}`).sort();
-  const rows = [...review.primary, ...review.derivatives];
+  // Preserve the preceding review verbatim; additions carry a separate cohort.
+  assert.equal(sha("qa/media/anatomy-art-review.json"), branding.anatomySnapshotSha256);
+  const additions = branding.assets.flatMap(a => a.files).filter(f => f.path.endsWith(".jpg"));
+  const rows = [...review.primary, ...review.derivatives, ...additions];
   assert.deepEqual(rows.map(r => r.path).sort(), files);
   assert.equal(new Set(rows.map(r => r.path)).size, rows.length);
   for (const row of rows) assert.equal(sha(row.path), row.sha256, row.path);
   assert.match(review.supersedesFinding, /missed Edda/);
   assert.equal(review.primary.filter(r => r.result === "corrected").length, 1);
-  assert.equal(review.counts.totalArtDeliveries, rows.length);
+  assert.equal(review.counts.totalArtDeliveries, rows.length - additions.length);
   assert.equal(review.counts.primaryPortraitCastDeliveries, review.primary.length);
   assert.equal(review.counts.derivativeDeliveries, review.derivatives.length);
 });

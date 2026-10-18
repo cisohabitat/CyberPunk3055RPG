@@ -14,8 +14,13 @@ it("ships documented generated images without corrupting or enlarging their enco
   for (const asset of provenance.assets) for (const file of asset.files) {
     assert.equal(paths.has(file.path), false); paths.add(file.path);
     const bytes = readFileSync(new URL(`../${file.path}`, import.meta.url));
-    assert.equal(bytes.readUInt16BE(0), 0xffd8, file.path);
-    assert.equal(bytes.readUInt16BE(bytes.length - 2), 0xffd9, file.path);
+    if (file.path.endsWith(".webp")) {
+      assert.equal(bytes.toString("ascii", 0, 4), "RIFF", file.path);
+      assert.equal(bytes.toString("ascii", 8, 12), "WEBP", file.path);
+    } else {
+      assert.equal(bytes.readUInt16BE(0), 0xffd8, file.path);
+      assert.equal(bytes.readUInt16BE(bytes.length - 2), 0xffd9, file.path);
+    }
     assert.equal(bytes.length, file.bytes, file.path);
     assert.equal(createHash("sha256").update(bytes).digest("hex"), file.sha256, file.path);
     assert.ok(file.bytes < 1_048_576, file.path);

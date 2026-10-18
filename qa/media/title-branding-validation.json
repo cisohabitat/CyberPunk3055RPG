@@ -1,0 +1,187 @@
+{
+  "version": 1,
+  "date": "2026-10-18",
+  "baseRevision": "644ba1139e5783943afe3a75aa86c60fcb06b508",
+  "candidateDirty": true,
+  "sourceHashes": {
+    "components/TitleScreen.tsx": "9d1d5cc363f921fb2d2b6770e94f571863ab91e462085ee8a72685f1ce5edaa9",
+    "app/globals.css": "f71b9fa73475ac812d45fe16c30c77bdcad937441eeb26951c2ec4624ba794b8",
+    "lib/title-branding.ts": "192c29c46e88a951d69b5556e1fe657fbe63ec6590e8b3c056b9f101b4492990",
+    "tests/title-branding.spec.ts": "a83da98b78833ce8ff49c4dc831c391b26b751469da38fe9a5af233b7b8e842a",
+    "qa/media/title-branding.json": "9463c3eefeb436ad0b4b5632b25169b7848f9dbbf3088cb18e7f8a027ebee426"
+  },
+  "sourceTests": {
+    "passed": 660,
+    "failed": 0,
+    "log": "/tmp/title-branding-source-final.log"
+  },
+  "typescript": {
+    "passed": true,
+    "log": "/tmp/title-branding-tsc-final.log"
+  },
+  "build": {
+    "passed": true,
+    "log": "/tmp/title-branding-build-final.log"
+  },
+  "security": {
+    "knownVulnerabilities": 0,
+    "log": "/tmp/title-branding-security.log"
+  },
+  "browserRuns": [
+    {
+      "files": [
+        "title-branding",
+        "guide",
+        "title-music",
+        "menu-autoplay-policy",
+        "security"
+      ],
+      "projects": [
+        "chromium",
+        "phone"
+      ],
+      "passed": 58,
+      "failed": 0,
+      "skipped": 2,
+      "skipReason": "Existing native autoplay policy cases intentionally run only in chromium; both native cases passed there.",
+      "log": "/tmp/title-branding-browser-final.log"
+    },
+    {
+      "file": "game",
+      "filter": "title key art|unavailable title artwork",
+      "projects": [
+        "chromium",
+        "phone"
+      ],
+      "passed": 8,
+      "failed": 0,
+      "log": "/tmp/title-branding-existing-title.log"
+    }
+  ],
+  "initialFindings": [
+    "New test fixture omitted required givenName; corrected before browser execution.",
+    "Unfiltered accessibility inspection exposed missing title-page main landmark; changed title wrapper to semantic main and reran every selected case.",
+    "Initial phone composition obscured runner; adjusted background height, gradient and menu spacing, rebuilt and inspected final renders."
+  ],
+  "production": {
+    "output": "qa/production/reports",
+    "scenes": 197,
+    "choices": 598,
+    "routes": 148,
+    "coveredScenes": 182,
+    "coveredChoices": 432,
+    "assets": 707,
+    "budgetViolations": [],
+    "commercialAcceptanceReady": false,
+    "pendingGates": 6
+  },
+  "firstVisit": {
+    "revision": "644ba1139e5783943afe3a75aa86c60fcb06b508",
+    "dirty": true,
+    "initialTransferBudget": 2097152,
+    "autoplayPolicy": "Full Chromium; first visit requires document activation, with no prior origin permission.",
+    "samples": [
+      {
+        "sceneId": "opening_city",
+        "width": 390,
+        "height": 844,
+        "artwork": "full",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 2778,
+        "network": "Emulated 5 Mbps / 150 ms",
+        "elapsedToReadyMs": 4931,
+        "encodedResourceBytes": 1739526,
+        "htmlBytes": 2335,
+        "titleLcpMs": 1580,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 5,
+        "goalVisible": true
+      },
+      {
+        "sceneId": "opening_city",
+        "width": 390,
+        "height": 844,
+        "artwork": "none",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 2559,
+        "network": "Emulated 5 Mbps / 150 ms",
+        "elapsedToReadyMs": 2601,
+        "encodedResourceBytes": 444065,
+        "htmlBytes": 2335,
+        "titleLcpMs": 1280,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 0,
+        "goalVisible": true
+      },
+      {
+        "sceneId": "opening_city",
+        "width": 1440,
+        "height": 900,
+        "artwork": "full",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 2013,
+        "network": "Unthrottled automation host",
+        "elapsedToReadyMs": 2284,
+        "encodedResourceBytes": 2060039,
+        "htmlBytes": 2335,
+        "titleLcpMs": 484,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 5,
+        "goalVisible": true
+      },
+      {
+        "sceneId": "opening_city",
+        "width": 1440,
+        "height": 900,
+        "artwork": "none",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 1816,
+        "network": "Unthrottled automation host",
+        "elapsedToReadyMs": 2012,
+        "encodedResourceBytes": 1108782,
+        "htmlBytes": 2335,
+        "titleLcpMs": 792,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 0,
+        "goalVisible": true
+      }
+    ],
+    "limitations": [
+      "Four synthetic samples on the automation host, not p75/p95 field data or named physical devices.",
+      "Elapsed-to-ready includes automated form entry and network-idle waits; it is not LCP or INP.",
+      "titleLcpMs measures this navigation's title screen. Encoded resource bytes are Resource Timing measurements, not all wire overhead.",
+      "A previously permitted visit can autoplay the separate 2.6 MB menu theme before gameplay; these samples measure the first-visit activation policy."
+    ]
+  },
+  "screenshots": [
+    "/tmp/title-branding-chromium-1440.png",
+    "/tmp/title-branding-chromium-1024.png",
+    "/tmp/title-branding-chromium-768.png",
+    "/tmp/title-branding-chromium-390.png",
+    "/tmp/title-branding-chromium-320.png",
+    "/tmp/title-branding-chromium-844.png",
+    "/tmp/title-branding-phone-1440.png",
+    "/tmp/title-branding-phone-1024.png",
+    "/tmp/title-branding-phone-768.png",
+    "/tmp/title-branding-phone-390.png",
+    "/tmp/title-branding-phone-320.png",
+    "/tmp/title-branding-phone-844.png"
+  ],
+  "visualInspection": [
+    "Actual desktop, tablet portrait, phone and enlarged narrow phone renders inspected; wordmark readable and menu remains live.",
+    "Standalone brand alpha and new portrait painting reviewed; no additional limb confirmed."
+  ],
+  "limitations": [
+    "AI visual and synthetic browser inspection, not independent player or physical-device acceptance.",
+    "Local Chromium and phone-sized Chromium are verified; full Firefox/WebKit and all mandatory hosted CI remain required.",
+    "No live deployment is established by local tests or by pushing."
+  ]
+}

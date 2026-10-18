@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { MenuMusic } from "./MenuMusic";
 import { TITLE_ART } from "@/lib/art";
+import { TITLE_BRAND, TITLE_PORTRAIT } from "@/lib/title-branding";
 import { DialogFrame } from "@/components/DialogFrame";
 import { getScene } from "@/lib/engine";
 import { endingCoda } from "@/lib/story";
@@ -13,6 +14,18 @@ import type { Codex, GameState } from "@/lib/types";
 import type { BedStatus } from "@/lib/sound";
 
 const BARS = [42, 78, 55, 96, 34, 88, 63, 110, 48, 74, 38, 92, 58, 84, 46, 70, 100, 52];
+
+function TitleBrand({ artwork }: { artwork: boolean }) {
+  const [ready, setReady] = useState(false);
+  const [failed, setFailed] = useState(false);
+  return <h1 id="game-title" tabIndex={-1} className="title-brand" data-ready={artwork && ready && !failed}>
+    <span className="title-brand-fallback">Saint <span>Shard</span></span>
+    {artwork && !failed && <img data-testid="title-brand" src={TITLE_BRAND.src}
+      srcSet={`${TITLE_BRAND.small} 500w, ${TITLE_BRAND.src} 800w`}
+      sizes="(max-width: 700px) 280px, 480px" width={TITLE_BRAND.width} height={TITLE_BRAND.height}
+      alt="" aria-hidden="true" decoding="async" onLoad={() => setReady(true)} onError={() => setFailed(true)} />}
+  </h1>;
+}
 
 export function TitleScreen({
   save,
@@ -50,29 +63,27 @@ export function TitleScreen({
   const scene = save ? getScene(save.sceneId) : null;
 
   return (
-    <div className="title-screen" data-testid="title-screen">
+    <main className="title-screen" data-testid="title-screen">
       <div className="title-card">
         <section className={`title-hero${artwork ? "" : " title-hero--text"}`} aria-labelledby="game-title">
           {artwork && <figure className="title-key-art" data-testid="title-art">
-            <img src={TITLE_ART.src} srcSet={`${TITLE_ART.small} 600w, ${TITLE_ART.src} 1200w`} sizes="(max-width: 700px) calc(100vw - 2rem), (max-width: 1132px) calc(100vw - 2rem), 1100px" width={1200} height={800} alt={TITLE_ART.description} loading="eager" fetchPriority="high" decoding="async" />
+            <picture>
+              <source media="(max-width: 900px)" srcSet={`${TITLE_PORTRAIT.small} 480w, ${TITLE_PORTRAIT.src} 960w`} sizes="calc(100vw - 2rem)" width={TITLE_PORTRAIT.width} height={TITLE_PORTRAIT.height} />
+              <img src={TITLE_ART.src} srcSet={`${TITLE_ART.small} 600w, ${TITLE_ART.src} 1200w`} sizes="(max-width: 1392px) calc(100vw - 2rem), 1360px" width={1200} height={800} alt={TITLE_ART.description} loading="eager" fetchPriority="high" decoding="async" />
+            </picture>
             <figcaption className="sr-only">{TITLE_ART.caption}</figcaption>
           </figure>}
           <div className="title-intro">
             <p className="eyebrow">Kite City · 3055</p>
-            <h1 id="game-title" tabIndex={-1}>
-              Saint <span className="hot">Shard</span>
-            </h1>
-            <p className="title-tagline">A solo story RPG</p>
-            <p className="logline">
-              In Kite City, an hour of memory can be bought. Tonight, a broker has a job for you.
-            </p>
+            <TitleBrand artwork={artwork} />
+            <p className="title-tagline">Every memory has a price.</p>
             <div className="actions">
               {save && scene && (
-                <button className="primary" type="button" data-testid="continue-run" onClick={onContinue}>
+                <button className="primary title-run-action" type="button" data-testid="continue-run" onClick={onContinue}>
                   {scene.finale ? `Read “${scene.endingTitle}”` : scene.ending ? "Continue the week" : "Continue"}
                 </button>
               )}
-              <button className={save ? "ghost" : "primary"} type="button" data-testid="new-run" onClick={() => (save ? setConfirm(true) : onNew())}>
+              <button className={`title-run-action ${save ? "ghost" : "primary"}`} type="button" data-testid="new-run" onClick={() => (save ? setConfirm(true) : onNew())}>
                 New run
               </button>
               <Link className="ghost" href="/guide" prefetch={false} data-testid="guide-link">Field guide</Link>
@@ -89,6 +100,7 @@ export function TitleScreen({
           </div>
         </section>
         <div className="title-details">
+          <p className="title-premise"><strong>A solo story RPG.</strong> In Kite City, an hour of memory can be bought. Tonight, a broker has a job for you.</p>
           <div className="rules">
             <section>
               <h2>Dice</h2>
@@ -147,6 +159,6 @@ export function TitleScreen({
           </div>
         </DialogFrame>
       )}
-    </div>
+    </main>
   );
 }

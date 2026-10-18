@@ -4086,6 +4086,56 @@
           "sha256": "b354033ae0f0596f329aced510e58be708351226c0e377398f91438d1008fca2"
         }
       ]
+    },
+    {
+      "id": "title-brand",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-f195a925-7d32-4819-accf-a3ab871ab9a1.png",
+      "sourceSha256": "46f63891c5043aa6442c6b3939fd51db48b1307f1a84aa661fc89b6d30852826",
+      "promptSummary": "Approved bold two-line silver SAINT SHARD wordmark and simplified broken halo with cyan memory shard; transparent alpha.",
+      "deliveryProcessing": "Resize and WebP/JPEG encoding only; alpha retained for branding. Original generated PNG retained outside Git.",
+      "files": [
+        {
+          "path": "public/art/saint-shard-brand.webp",
+          "width": 800,
+          "height": 450,
+          "bytes": 58688,
+          "sha256": "6ccba442e4e78f5d67949262cc24af2a925a8eb61197e2b3c74bf8a5e1f74e48"
+        },
+        {
+          "path": "public/art/saint-shard-brand-small.webp",
+          "width": 500,
+          "height": 281,
+          "bytes": 30978,
+          "sha256": "76c8e6842f00f89b8d09644ca77a0e395ef087db6ee81bba3974dca09f42c34c"
+        }
+      ]
+    },
+    {
+      "id": "title-portrait",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-7efcddfa-5075-46a5-beb8-bfb9cae2bfd6.png",
+      "sourceSha256": "1bc5f4bea14c9542489808f09f7140d2eff075639c6e86697edd1038c6564225",
+      "promptSummary": "Portrait recomposition of existing symbolic title art, keeping one back-facing runner at right with one visible connected arm/hand and a single shard; city and amber lanterns.",
+      "deliveryProcessing": "Resize and WebP/JPEG encoding only; alpha retained for branding. Original generated PNG retained outside Git.",
+      "files": [
+        {
+          "path": "public/art/title-portrait.jpg",
+          "width": 960,
+          "height": 1440,
+          "bytes": 256054,
+          "sha256": "2b5bc5e937534cf9b09093ac00007de2f2531b3207089528ccbfd4230dbc75ee"
+        },
+        {
+          "path": "public/art/title-portrait-small.jpg",
+          "width": 480,
+          "height": 720,
+          "bytes": 74142,
+          "sha256": "cf1c673c9f406bb633bdb848fb92af60223557fae48ee293cb471ea2a6f4a0ea"
+        }
+      ]
     }
   ]
 }

@@ -39,3 +39,5 @@ The latest [composition finish cycle](COMPOSITION_FINISH_CYCLE.md) brings deskto
 The [art anatomy correction](ART_ANATOMY_REVIEW.md) supersedes that audit’s missed Edda defect: her counter scene now has two clearly connected arms and hands. A second pass covers all 311 delivered art files, with source/phone/preview consistency and retained historical evidence.
 
 The [five-stage visual direction cycle](VISUAL_DIRECTION_CYCLE.md) tightens regular-scene composition, gives established districts distinct emblems, clarifies choice feedback, presents acquired evidence as readable documents and harmonizes artwork frames/exposure without changing source images or dialogue.
+
+The approved [start-page branding](TITLE_BRANDING.md) adds a silver wordmark and broken-halo emblem, responsive portrait city art and accessible live menu controls.
