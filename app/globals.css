@@ -1612,3 +1612,8 @@ html[data-contrast="high"] .record-document::before { display: none; }
 html[data-motion="reduce"] .location-entry, html[data-motion="reduce"] .portrait[data-loaded="true"] { animation: none; }
 @media (prefers-reduced-motion: reduce) { .location-entry, .portrait[data-loaded="true"] { animation: none; } }
 @media (forced-colors: active) { .decision-receipt, .run-recap { border-color: CanvasText; } .voice-line[data-playback="playing"] .dialogue-progress [data-current="true"] { background: Highlight; forced-color-adjust: none; } }
+
+/* Touch readers keep native scrolling without a live blurred layer over it. */
+@media (hover: none) and (pointer: coarse) {
+  .topbar { background: #09080d; -webkit-backdrop-filter: none; backdrop-filter: none; }
+}

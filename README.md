@@ -828,3 +828,7 @@ Main-menu buttons and links have silver/cyan hover, keyboard-focus and pressed f
 Committed choices now leave a collapsible receipt near the next choices, including actual bounded resource/faction changes, newly acquired journal entries and changed objectives—even when an action stays in the same scene. Loading a save or holding a die never creates a new receipt. The title page and occupied manual slots offer “Where you left off,” with the saved chapter/location, the last three chosen actions and any uncommitted held roll. Existing objective text stays visible.
 
 Dialogue controls show which recorded line is playing; portraits reveal only the current loaded image with a short fade, and location headings receive a brief arrival accent. Saved and system reduced motion disable those effects. Existing canonical dialogue, actor art and recordings remain aligned. See [the five-stage feedback and campaign review](docs/PLAY_FEEDBACK_CYCLE.md) for validation scope and limits.
+
+### Touch scrolling
+
+Story navigation now settles immediately on touch devices so it does not compete with a swipe. Changing Motion in Settings keeps your reading position; closing a dialog returns keyboard focus without scrolling the page. Touch headers use a solid background instead of live blur. See [the scrolling correction](docs/TOUCH_SCROLLING.md) for reproduction and verification limits.

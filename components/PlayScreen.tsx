@@ -118,6 +118,7 @@ export function PlayScreen({
   const [speaking, setSpeaking] = useState<CampaignDialogue | null>(null);
   const [reduceMotion, setReduceMotion] = useState(false);
   const [decisionReceipt, setDecisionReceipt] = useState<{ state: GameState; lines: string[] } | null>(null);
+  const enteredScene = useRef<string | null>(null);
   const readingFocus = useRef<{ sceneId: string; index: number } | null>(null);
   const priorSound = useRef<{ location: string; on: boolean; ending: boolean } | null>(null);
   const queuedSceneCue = useRef<{ state: GameState; name: SceneCueName } | null>(null);
@@ -182,6 +183,9 @@ export function PlayScreen({
 
 
   useEffect(() => {
+    // Preferences can change while reading; only a new scene owns navigation.
+    if (enteredScene.current === scene.id) return;
+    enteredScene.current = scene.id;
     setSheetOpen(false);
     setNotebookOpen(false);
     setMapOpen(false);
@@ -195,7 +199,7 @@ export function PlayScreen({
     document.documentElement.style.setProperty("--header-h", `${headerHeight + 12}px`);
     if (sceneTop) {
       const top = sceneTop.getBoundingClientRect().top + window.scrollY - (headerHeight + 12);
-      window.scrollTo({ top: Math.max(0, top), behavior: reduce ? "auto" : "smooth" });
+      window.scrollTo({ top: Math.max(0, top), behavior: reduce || window.matchMedia("(pointer: coarse)").matches ? "instant" : "smooth" });
     }
     if (scene.ending && scene.endingTitle) document.title = `${scene.endingTitle} — Saint Shard`;
     else document.title = "Saint Shard — Kite City 3055";

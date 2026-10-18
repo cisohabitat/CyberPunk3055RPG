@@ -26,7 +26,7 @@ export function DialogFrame({
     if (!root.querySelector("button, input, select, textarea")) root.focus();
     return () => {
       root.close();
-      if (opener?.isConnected) opener.focus();
+      if (opener?.isConnected) opener.focus({ preventScroll: true });
       else document.getElementById("scene-top")?.focus({ preventScroll: true });
     };
   }, []);

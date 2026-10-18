@@ -49,3 +49,5 @@ The [finale CI correction](FINALE_CI_CORRECTION.md) restores compact phone endin
 The [shared-brand and menu cycle](BRAND_MENU_FEEDBACK.md) aligns small emblems, adds quiet cancellable dice audio and refines keyboard/pointer menu feedback.
 
 The [choice feedback and campaign review cycle](PLAY_FEEDBACK_CYCLE.md) adds committed-choice receipts, clearer dialogue progress and portrait arrivals, restrained location feedback, and spoiler-safe return recaps shared by the title and manual saves.
+
+The [touch-scrolling correction](TOUCH_SCROLLING.md) prevents preference changes from resetting story position, removes animated scene scrolling on touch devices, and simplifies the mobile sticky header.
