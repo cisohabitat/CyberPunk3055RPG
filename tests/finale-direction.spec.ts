@@ -29,7 +29,7 @@ for (const [width, artwork, textStep] of [[390, "full", 0], [1440, "full", 0], [
         await expect(stage).toHaveAttribute("aria-label", row.label); await expect(prose).toHaveCount(1);
         expect(await prose.locator("p").allTextContents()).toEqual(sceneText(getScene(row.sceneId), state).split(/\n\n+/).filter(Boolean));
         expect((await page.getByTestId("goal").boundingBox())!.y + (await page.getByTestId("goal").boundingBox())!.height).toBeLessThan(900);
-        if (!textStep) expect((await prose.boundingBox())!.y).toBeLessThan(450);
+        if (!textStep) expect((await prose.boundingBox())!.y, `${row.sceneId}: first prose at ${width}px`).toBeLessThan(450);
         const history = page.getByTestId("finale-history"), aftermath = page.getByTestId("aftermath-details");
         await expect(history).not.toHaveAttribute("open", ""); await expect(aftermath).not.toHaveAttribute("open", "");
         await expect(page.getByTestId("night-retell").first()).not.toBeVisible();

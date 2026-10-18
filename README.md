@@ -810,3 +810,7 @@ The start page now uses the approved silver Saint Shard wordmark, a broken halo 
 ## Faceted dice presentation
 
 Checks now show a shaded geometric die with a brief tumble during the existing roll, a clearly readable final face and restrained success/miss accents. Saved and system reduced-motion settings reveal the result immediately. A restored die stays still and keeps its recorded face; Continue still commits the outcome. The die is drawn locally without additional artwork/audio downloads. See [the dice presentation record](docs/DICE_PRESENTATION.md).
+
+## Ending layout CI correction
+
+The district emblem and top spacing are more compact in finale headers, keeping the opening prose within the existing phone reading budget. All district labels, full portraits, goals, ending text and history remain available. This fixes the shared browser-check failure that blocked publication of the logo and dice updates; those updates remain on main. See [the CI correction record](docs/FINALE_CI_CORRECTION.md).

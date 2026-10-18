@@ -43,3 +43,5 @@ The [five-stage visual direction cycle](VISUAL_DIRECTION_CYCLE.md) tightens regu
 The approved [start-page branding](TITLE_BRANDING.md) adds a silver wordmark and broken-halo emblem, responsive portrait city art and accessible live menu controls.
 
 The [faceted check die](DICE_PRESENTATION.md) improves roll presentation while preserving held results, reduced motion and Continue-only commitment.
+
+The [finale CI correction](FINALE_CI_CORRECTION.md) restores compact phone ending headers while retaining the approved logo and die presentation.

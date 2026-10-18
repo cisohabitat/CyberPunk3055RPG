@@ -1504,6 +1504,9 @@ html[data-text="2"] .scene-row[data-compact="true"] .portrait-frame figcaption {
 [data-district="clinic-service"] { --district-tone: #a6cddd; --district-wash: rgba(166,205,221,.07); }
 [data-district="ward-nine"] { --district-tone: #e1cfa0; --district-wash: rgba(225,207,160,.07); }
 .scene .scene-row { border-top: 2px solid var(--district-tone); padding-top: .8rem; }
+/* Finale headers stay compact so their prose clears the existing phone budget. */
+.scene.finale .scene-row { padding-top: 0; }
+.finale .district-emblem { width: 1.4rem; height: 1.4rem; }
 .scene .kicker { color: var(--district-tone); }
 .district-emblem { display: inline-flex; align-items: center; justify-content: center; width: 1.8rem; height: 1.8rem; border: 1px solid currentColor; margin-right: .5rem; vertical-align: middle; background: var(--district-wash); }
 .scene[data-district="chapel"] .district-emblem { border-radius: 50% 50% 0 0; }

@@ -1,0 +1,187 @@
+{
+  "version": 1,
+  "date": "2026-10-18",
+  "baseRevision": "50c63589aa46c74a94fb53b5f57a13bb5a873111",
+  "failedRun": {
+    "id": 39111123228,
+    "commit": "421dfc5252955f6754ff96890d6abe5bbc49c6d7",
+    "url": "https://github.com/cisohabitat/CyberPunk3055RPG/actions/runs/39111123228",
+    "profiles": [
+      "chromium",
+      "phone",
+      "firefox",
+      "webkit"
+    ],
+    "failure": "Finale first prose at 390px exceeded unchanged <450px requirement",
+    "observedY": {
+      "chromium": 456.46875,
+      "phone": 456.46875,
+      "firefox": 456.54998779296875,
+      "webkit": 456.453125
+    }
+  },
+  "laterRun": {
+    "id": 39118494482,
+    "commit": "50c63589aa46c74a94fb53b5f57a13bb5a873111",
+    "observedBlockingFailure": "Same sole finale layout failure in completed Chromium/phone/Firefox jobs; WebKit still running at inspection",
+    "firefoxRecoveredRetry": "A responsive-image decode failure recovered on the existing retry; no test or release gate was disabled."
+  },
+  "localBefore": {
+    "failed": 1,
+    "proseY": 456.46875,
+    "log": "/tmp/ci-finale-before.log"
+  },
+  "correction": "Keep district border/location/goal/portrait, remove added finale-only header top padding, use a smaller 1.4rem finale emblem. Regular headers unchanged.",
+  "sourceHashes": {
+    "app/globals.css": "047164d87f4d5835d51e0a64d6969821e7d466dc3e42c721c90341a8083b8c29",
+    "tests/finale-direction.spec.ts": "0c6f82a91f73cbb61f46a7667f70bb5f21146360a8572ebbda3fe7160f1e0dc4"
+  },
+  "sourceTests": {
+    "passed": 660,
+    "failed": 0,
+    "log": "/tmp/ci-finale-source.log"
+  },
+  "browserTests": {
+    "passed": 76,
+    "failed": 0,
+    "projects": [
+      "chromium",
+      "phone"
+    ],
+    "files": [
+      "finale-direction.spec.ts",
+      "visual-direction.spec.ts",
+      "dice-presentation.spec.ts",
+      "title-branding.spec.ts"
+    ],
+    "log": "/tmp/ci-finale-after.log"
+  },
+  "build": {
+    "passed": true,
+    "log": "/tmp/ci-finale-build.log"
+  },
+  "typescript": {
+    "passed": true,
+    "log": "/tmp/ci-finale-tsc.log"
+  },
+  "security": {
+    "knownVulnerabilities": 0,
+    "log": "/tmp/ci-finale-security.log"
+  },
+  "production": {
+    "assetCount": 707,
+    "budgetViolations": [],
+    "log": "/tmp/ci-finale-production.log"
+  },
+  "afterMeasurements": [
+    {
+      "sceneId": "ending_names",
+      "width": 390,
+      "proseY": 443.671875,
+      "goalBottom": 260.234375,
+      "overflow": false,
+      "screenshot": "/tmp/ci-finale-after-390-ending_names.png"
+    },
+    {
+      "sceneId": "ending_quiet",
+      "width": 390,
+      "proseY": 443.671875,
+      "goalBottom": 260.234375,
+      "overflow": false,
+      "screenshot": "/tmp/ci-finale-after-390-ending_quiet.png"
+    },
+    {
+      "sceneId": "ending_witness",
+      "width": 390,
+      "proseY": 443.671875,
+      "goalBottom": 260.234375,
+      "overflow": false,
+      "screenshot": "/tmp/ci-finale-after-390-ending_witness.png"
+    },
+    {
+      "sceneId": "ending_listed",
+      "width": 390,
+      "proseY": 443.671875,
+      "goalBottom": 260.234375,
+      "overflow": false,
+      "screenshot": "/tmp/ci-finale-after-390-ending_listed.png"
+    },
+    {
+      "sceneId": "ending_names",
+      "width": 1440,
+      "proseY": 423.375,
+      "goalBottom": 157.5625,
+      "overflow": false,
+      "screenshot": "/tmp/ci-finale-after-1440-ending_names.png"
+    },
+    {
+      "sceneId": "ending_quiet",
+      "width": 1440,
+      "proseY": 423.375,
+      "goalBottom": 157.5625,
+      "overflow": false,
+      "screenshot": "/tmp/ci-finale-after-1440-ending_quiet.png"
+    },
+    {
+      "sceneId": "ending_witness",
+      "width": 1440,
+      "proseY": 423.375,
+      "goalBottom": 157.5625,
+      "overflow": false,
+      "screenshot": "/tmp/ci-finale-after-1440-ending_witness.png"
+    },
+    {
+      "sceneId": "ending_listed",
+      "width": 1440,
+      "proseY": 423.375,
+      "goalBottom": 157.5625,
+      "overflow": false,
+      "screenshot": "/tmp/ci-finale-after-1440-ending_listed.png"
+    },
+    {
+      "sceneId": "ending_names",
+      "width": 320,
+      "proseY": 643.109375,
+      "goalBottom": 408.046875,
+      "overflow": false,
+      "screenshot": "/tmp/ci-finale-after-320-ending_names.png"
+    },
+    {
+      "sceneId": "ending_quiet",
+      "width": 320,
+      "proseY": 643.109375,
+      "goalBottom": 408.046875,
+      "overflow": false,
+      "screenshot": "/tmp/ci-finale-after-320-ending_quiet.png"
+    },
+    {
+      "sceneId": "ending_witness",
+      "width": 320,
+      "proseY": 681.15625,
+      "goalBottom": 446.09375,
+      "overflow": false,
+      "screenshot": "/tmp/ci-finale-after-320-ending_witness.png"
+    },
+    {
+      "sceneId": "ending_listed",
+      "width": 320,
+      "proseY": 681.15625,
+      "goalBottom": 446.09375,
+      "overflow": false,
+      "screenshot": "/tmp/ci-finale-after-320-ending_listed.png"
+    }
+  ],
+  "testBoundPreserved": 450,
+  "unchanged": [
+    "source story",
+    "all art/audio bytes",
+    "306 dialogue bindings/294 voices",
+    "save key/version",
+    "dice staging/commit",
+    "CI workflow and every exact-commit release gate"
+  ],
+  "limits": [
+    "Local post-fix Chromium/phone evidence only; new hosted Firefox/WebKit/full-suite checks remain pending until the next commit completes CI.",
+    "Pushed commits are not proof of publication."
+  ]
+}
