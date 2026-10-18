@@ -27,3 +27,5 @@ The [distribution and witness phase](DISTRIBUTION_OVERLAP.md) makes overlapping 
 The phase also corrects the heading-order error behind the preceding CI failure. Existing scene art, actual speakers and voice deliveries remain aligned. Its detailed report records the simulated campaigns, source/browser checks, full UI playthroughs and verification limits.
 
 See the [README](../README.md) for play and setup instructions, [credits](../CREDITS.md) for media provenance, and the [production roadmap](AAA_PRODUCTION_PLAN.md) for future work.
+
+The latest [visual refinement cycle](VISUAL_REFINEMENT_CYCLE.md) compacts the phone notebook, illustrates known map places, adds four individual item inspections and two shared scene paintings, and shows actual resource/faction changes beside their values.

@@ -21,6 +21,8 @@ import { Sheet } from "@/components/Sheet";
 import { DISTRICT_ART, sceneBackdrop, sceneIllustration, CHAPTER_BACKDROPS, paintedActor } from "@/lib/art";
 import { ArtworkContext, ArtworkViewer, type ViewableArt } from "./ArtworkViewer";
 import { CityMap } from "./CityMap";
+import { ResourceChange } from "./ResourceChange";
+import { resourceChanges, type ResourceChanges } from "@/lib/resource-changes";
 import { Symbol } from "./Symbol";
 import { SceneIllustration } from "./SceneIllustration";
 import { PivotalScene } from "./PivotalScene";
@@ -101,6 +103,8 @@ export function PlayScreen({
   const sound = preferences.sound && !audioPaused;
   const { mood, district } = sceneSoundPlan(state, scene.location, actName(state));
   const [fault, setFault] = useState("");
+  const [receipt, setReceipt] = useState<{ state: GameState; values: ResourceChanges } | null>(null);
+  const changes = receipt?.state === state ? receipt.values : {};
   const [delta, setDelta] = useState<string[]>([]);
   const [flash, setFlash] = useState(false);
   const [shown, setShown] = useState<{ sceneId: string; prose: string; count: number } | null>(null);
@@ -234,6 +238,7 @@ export function PlayScreen({
   const openPromises = weekClosingPromises(state);
 
   function commit(next: GameState, choiceId: string) {
+    setReceipt({ state: next, values: resourceChanges(state, next) });
     const cue = sound && preferences.effects > 0 ? sceneInteractionCue(state, choiceId, next) : undefined;
     queuedSceneCue.current = cue ? { state: next, name: cue } : null;
     onChange(next);
@@ -271,7 +276,7 @@ export function PlayScreen({
         </div>
         <div className="meters">
           <div className="strain-readout">
-            <span className="stat-name"><Symbol name="strain" /> Strain</span>
+            <span className="stat-name"><Symbol name="strain" /> Strain <ResourceChange amount={changes.strain} label="Strain" /></span>
             <div className={state.strain >= 4 ? "pips hot" : "pips"} data-testid="strain" role="meter" aria-valuemin={0} aria-valuemax={STRAIN_MAX} aria-valuenow={state.strain} aria-label={`Strain ${state.strain} of ${STRAIN_MAX}`}>
               {Array.from({ length: STRAIN_MAX }, (_, index) => (
                 <span key={index} className={index < state.strain ? "on" : ""} />
@@ -279,7 +284,7 @@ export function PlayScreen({
             </div>
           </div>
           <div className="creds" data-testid="creds">
-            <Symbol name="money" /> {state.creds} cr
+            <Symbol name="money" /> {state.creds} cr <ResourceChange amount={changes.creds} label="Creds" />
           </div>
         </div>
         <div className="top-actions">
@@ -468,7 +473,7 @@ export function PlayScreen({
             )}
           </article>
         </main>
-        <Sheet state={state} speaker={scene.speaker} visibleText={visibleText} artwork={preferences.artwork !== "none"} open={sheetOpen} onClose={() => setSheetOpen(false)} onMap={() => setMapOpen(true)} />
+        <Sheet state={state} changes={changes} speaker={scene.speaker} visibleText={visibleText} artwork={preferences.artwork !== "none"} open={sheetOpen} onClose={() => setSheetOpen(false)} onMap={() => setMapOpen(true)} />
       </div>
       {notebookOpen && <InvestigationNotebook state={state} onClose={() => setNotebookOpen(false)} />}
       {artworkOpen && viewedArt && <ArtworkViewer key={`${viewedArt.art.src}-${viewedArt.art.tile ?? "scene"}`} art={viewedArt.art} onClose={() => setViewedArt(null)} />}

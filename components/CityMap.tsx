@@ -1,11 +1,15 @@
 "use client";
 import { useState } from "react";
-import { cityMap } from "@/lib/city-map";
+import { cityMap, MAP_LANDMARKS } from "@/lib/city-map";
 import { CITY_SCHEMATIC } from "@/lib/presentation-art";
 import { checkpointLabel } from "@/lib/checkpoints";
 import type { GameState } from "@/lib/types";
 import { DialogFrame } from "./DialogFrame";
 import { Symbol } from "./Symbol";
+function Landmark({ id }: { id: keyof typeof MAP_LANDMARKS }) {
+  const [failed, setFailed] = useState(false), art = MAP_LANDMARKS[id];
+  return failed ? null : <img className="map-landmark" src={art.src} alt={art.description} width={600} height={400} loading="lazy" decoding="async" onError={() => setFailed(true)} />;
+}
 export function CityMap({ state, artwork, onClose, onFind }: { state: GameState; artwork: boolean; onClose: () => void; onFind: (id: string) => void }) {
   const rows = cityMap(state), [failed, setFailed] = useState(false);
   return <DialogFrame titleId="city-map-title" className="city-map-dialog" onEscape={onClose}>
@@ -16,9 +20,9 @@ export function CityMap({ state, artwork, onClose, onFind }: { state: GameState;
     <div className="city-map-board" data-artwork={artwork && !failed ? "true" : "false"}>
       {artwork && !failed && <img className="city-map-texture" src={CITY_SCHEMATIC.small} srcSet={`${CITY_SCHEMATIC.small} 600w, ${CITY_SCHEMATIC.src} 1200w`} sizes="(max-width: 700px) calc(100vw - 4rem), 760px" width={1200} height={800} alt="" decoding="async" onError={() => setFailed(true)} />}
       <ol className="district-nodes" aria-label="Known locations">{rows.map(row => <li key={row.id} data-district={row.id} aria-current={row.current ? "location" : undefined}>
-        <Symbol name="location" /><h3>{row.name}</h3><span className="district-status">{row.current ? "You are here" : "Known place"}</span>
-        {row.choices.length > 0 && <ul aria-label={`Choices available for ${row.name}`}>{row.choices.map(choice => <li key={choice.id}>
-          <button type="button" className="ghost" onClick={() => onFind(choice.id)}>Find: {choice.label}</button>
+        {artwork && <Landmark id={row.id} />}<Symbol name="location" /><h3>{row.name}</h3><span className="district-status">{row.current ? "You are here" : "Known place"}</span>
+        {row.choices.length > 0 && <ul className="map-connections" aria-label={`Choices available for ${row.name}`}>{row.choices.map(choice => <li key={choice.id}>
+          <button type="button" className="ghost" onClick={() => onFind(choice.id)}><span className="map-connection" aria-hidden="true">↳</span> Find: {choice.label}</button>
         </li>)}</ul>}
       </li>)}</ol>
     </div>

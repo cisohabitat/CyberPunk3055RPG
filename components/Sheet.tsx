@@ -5,6 +5,8 @@ import { DialogFrame } from "./DialogFrame";
 import { CastCard } from "./CastCard";
 import { InventoryIllustration } from "./InventoryIllustration";
 import { RecordCard } from "./RecordCard";
+import { ResourceChange } from "./ResourceChange";
+import type { ResourceChanges } from "@/lib/resource-changes";
 import { Symbol } from "./Symbol";
 import { Mark, originAccent } from "@/components/Mark";
 import { COMPLICATIONS, FACTIONS, FACTION_CHECK, FACTION_INFO, ORIGINS, STATS, STAT_INFO } from "@/lib/character";
@@ -20,7 +22,7 @@ import type { GameState } from "@/lib/types";
 
 const TABS = ["stats", "gear", "journal"] as const;
 
-export function Sheet({ state, open, onClose, onMap, speaker, visibleText, artwork = true }: { state: GameState; open: boolean; onClose: () => void; onMap: () => void; speaker?: string; visibleText?: string; artwork?: boolean }) {
+export function Sheet({ state, open, onClose, onMap, speaker, visibleText, artwork = true, changes = {} }: { state: GameState; open: boolean; onClose: () => void; onMap: () => void; speaker?: string; visibleText?: string; artwork?: boolean; changes?: ResourceChanges }) {
   const [tab, setTab] = useState<"stats" | "gear" | "journal">("stats");
   const origin = ORIGINS[state.origin];
   const ref = useRef<HTMLElement>(null);
@@ -122,7 +124,7 @@ export function Sheet({ state, open, onClose, onMap, speaker, visibleText, artwo
           {FACTIONS.map((faction) => (
             <div className="stat" key={faction} data-testid={`faction-${faction}`}>
               <span className="stat-name"><Symbol name={faction} /> {FACTION_INFO[faction].name}</span>
-              <span>{state.factions[faction]}</span>
+              <span className="faction-value">{state.factions[faction]} <ResourceChange amount={changes[faction]} label={FACTION_INFO[faction].name} /></span>
               <div className="track" aria-hidden="true">
                 <span style={{ width: `${((state.factions[faction] + 3) / 8) * 100}%` }} />
               </div>

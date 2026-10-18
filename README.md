@@ -758,3 +758,11 @@ Journal and investigation entries now use distinct fact, claim and promise cards
 Open **City map** from the character sheet to see known places and the current checkpoint on an illustrated schematic. **Find** locates an existing legal choice for review without committing it. Future places stay hidden. Save slots show their own checkpoint artwork and runner identity; opening **Three moments from your run** at a finale reveals an illustrated recap of recorded events. Artwork-none and missing-image fallbacks preserve every text flow. Map and artwork dialogs stop consumed speech from restarting. See [the player screens cycle](docs/PLAYER_SCREENS_CYCLE.md).
 
 Ending skip links now target the focusable scene when there is no choice list, preserving a usable keyboard shortcut through the finale.
+
+## Landmark and close-up refinements
+
+The investigation notebook places its first record higher on phone screens, with compact filters and both source-permission summaries still visible. Known map places now have neutral landmark paintings; connection marks accompany only currently available Find actions.
+
+Inspecting the Saint Shard (intact or damaged), Archive Probe or Shelter Token opens an individual 1536×1024 object painting. Gear keeps its lightweight atlas thumbnails until inspection. Two shared scene paintings pair Mara with Lumen at the chapel and Sera with Ives at the wall only when the authored scene places both there. Existing voices still follow the actual speaker and exact text.
+
+Signed indicators beside creds, strain and faction values show the last committed choice’s actual change, including capped values. They remain until the next choice; loading a run or staging a die creates no receipt. See [the refinement report](docs/VISUAL_REFINEMENT_CYCLE.md) for scope, provenance and verification.

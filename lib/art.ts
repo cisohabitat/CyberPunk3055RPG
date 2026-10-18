@@ -20,6 +20,7 @@ const PAINTED_ACTORS: Record<string, readonly string[]> = {
   "/art/edda-archive.jpg": ["Edda"], "/art/sera-hearing.jpg": ["Sera"],
   "/art/nia-transfer.jpg": ["Nia Pell"], "/art/asa-dispatch.jpg": ["Asa"], "/art/ives-hearing.jpg": ["Ives"],
   "/art/attendant-confrontation.jpg": ["Masked attendant"],
+  "/art/chapel-shared.jpg": ["Mara", "Sister Lumen"], "/art/wall-shared.jpg": ["Sera", "Ives"],
 };
 export function paintedActor(art: Illustration | undefined, speaker: string | undefined): boolean {
   return Boolean(art && speaker && Object.hasOwn(PAINTED_ACTORS, art.src) && PAINTED_ACTORS[art.src].includes(speaker));
@@ -111,6 +112,16 @@ export const ILLUSTRATION_STAGING = [
     scenes: ["act3_edda_visit"], allFlags: ["archive_custody"], anyFlags: [], noneFlags: [],
     illustration: { src: "/art/archive-held-original.jpg", small: "/art/archive-held-original-small.jpg", caption: "Ward Nine · the original stays separate", description: "A closed source ledger rests in a dark protective sleeve on the records table, apart from a folded paper copy; a pencil lies between them. No legible identity, authenticated seal or review verdict is displayed." },
     reason: "Only agreed custody permits the separately held original at the Ward Nine return. Both named and withheld copies retain their actual employer risk in prose; the painting adds no digital authentication, permission or resolved records review.",
+  },
+  {
+    scenes: ["vault_quiet"], allFlags: ["lumen_here"], anyFlags: ["pact_copy", "pact_break", "pact_fake"], noneFlags: ["pact_sell"],
+    illustration: { src: "/art/chapel-shared.jpg", small: "/art/chapel-shared-small.jpg", caption: "Glass Chapel · a minute before the choice", description: "Mara sits beneath the memory halo while Lumen waits beside the controls, her magenta optic lit. Both keep their hands away from the shard; no extraction or outcome is shown." },
+    reason: "Only the authored pact placing Lumen at the plinth permits this shared chair-room composition. Selling refuses her presence; Mara remains in the chair and the original hour is unresolved.",
+  },
+  {
+    scenes: ["act3_arrival"], allFlags: ["on_file", "act2_deal"], anyFlags: [], noneFlags: ["testimony_published"],
+    illustration: { src: "/art/wall-shared.jpg", small: "/art/wall-shared-small.jpg", caption: "Ward Nine · the pencil and the open folio", description: "Sera holds her pencil beside the rain-worn memorial while Ives waits a step apart with an open black folio. No page changes hands and no private identity is legible." },
+    reason: "Both arrival prose branches explicitly place Ives beside Sera when on_file and act2_deal hold. Completed public filing retains its preceding earned plate; no handover, consent, verdict or ending is implied.",
   },
 ] as const;
 export function sceneIllustration(sceneId: string, flags: Readonly<Record<string, boolean>> = {}): Illustration | undefined {

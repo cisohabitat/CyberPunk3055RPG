@@ -1,0 +1,223 @@
+{
+  "version": 1,
+  "date": "2026-10-18",
+  "baseRevision": "428cbfb1ed759a194620cfb36ad1785aad78d0ef",
+  "sourceSha256": {
+    "components/CityMap.tsx": "8b68ced5f1e394c61926d45ce4e0923245e3a2cff2208163f61e93d1d06d93fd",
+    "components/InventoryIllustration.tsx": "2a6b6139f1965fc7efe81b959a84ee5cb2f29dcc15fb110774acac2e9670bfc2",
+    "components/InvestigationNotebook.tsx": "2fb0eac0fb18e402ece28404d9c5263539a61b118f98de0978302a3aef934d8e",
+    "components/PlayScreen.tsx": "537abd955dba86c14b2719695371995f84aa611e697445fe6c7d92898c09a6b8",
+    "components/Sheet.tsx": "17671bbf6af7470d1324158c7f03818494bff853a32ddc1329c050c137b944fb",
+    "components/ResourceChange.tsx": "e339770535db77c6abee27e77903ae79fa3ef340816bfca4c30b0dd468ca2cf7",
+    "lib/art.ts": "0a5015aeadd07e0e99491b786e02c6368e5a15af74fb858263d3039b0b707a90",
+    "lib/city-map.ts": "dca8813356b8d3c97c1f0a36498ce9777422236ce50fd55f1471b7eaaec91d0b",
+    "lib/inventory-art.ts": "1bdcedbe14e2e0d80ce621d89067ae2b423dddce6ba469160601af2b227f0606",
+    "lib/resource-changes.ts": "57a2ecef12a0fba67b5aaeeac523cf1b4ad265a90642d904d61359a0171e00a7",
+    "lib/visual-refinement.test.ts": "1a7043158bc961a56de6c7315d7d73c0f5a25e233db7b4c4b4f380923a2a151f",
+    "tests/visual-refinement.spec.ts": "08498831bb526dcd7f2ec575141dfcfe41c43400de6cd2ffdb63df314491eff7",
+    "tests/visual-library.spec.ts": "06edfc2826dfcfb0a73b7ae6f52c7193c15a300da6caad5a7fce9a4f0a150f84",
+    "app/globals.css": "667b47d1f31c24964e75f9798bed045ca841a9c6246b9e14101214f631c92d0a",
+    "qa/media/visual-refinement.json": "e217ec26ec1ccbe3b96295bd4a05cc1d2b5a3a368aea9b79d5a949cd92b1f015",
+    "qa/media/scene-art.json": "12a36ca2651b407384745adc41804234ff1a320e4a6d4335739044c94e3afc96",
+    "qa/media/campaign-dialogue-bindings.json": "15ae8b35c16b330b545f001e23dc75b5f4bd131225347f616ab76c1b7088f0bd"
+  },
+  "sourceTests": {
+    "passed": 648,
+    "failed": 0,
+    "log": "/tmp/refinement-source-final.log"
+  },
+  "typescript": "Production build type checking passed",
+  "build": "passed",
+  "security": {
+    "vulnerabilities": 0,
+    "command": "npm run security:audit"
+  },
+  "production": {
+    "scenes": 197,
+    "choices": 598,
+    "routes": 148,
+    "assets": 595,
+    "budgetViolations": []
+  },
+  "browserBatches": [
+    {
+      "passed": 106,
+      "failed": 8,
+      "log": "/tmp/refinement-browser.log",
+      "note": "New exact transcript locator omitted actor prefix; production dialogue was correct."
+    },
+    {
+      "passed": 118,
+      "failed": 0,
+      "log": "/tmp/refinement-browser-final.log",
+      "note": "Full five-file Chromium/phone batch after transcript assertion correction, before final state-bound receipt fix."
+    },
+    {
+      "passed": 48,
+      "failed": 0,
+      "log": "/tmp/refinement-browser-verified.log",
+      "note": "Fresh final build; visual-refinement and finale-direction in Chromium/phone, including added save-loading receipt regression. Batches overlap; do not sum as unique cases."
+    }
+  ],
+  "notebookFirstRecordY": [
+    {
+      "width": 390,
+      "y": 416.28125
+    },
+    {
+      "width": 1440,
+      "y": 421.875
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "/tmp/refinement-chapel-1440.png",
+      "sha256": "fdfbcd0c8b47e0b797f6e32b54319c1995d2ed9fc92a21ec7f95f554d1cfc110"
+    },
+    {
+      "path": "/tmp/refinement-chapel-390.png",
+      "sha256": "eb09f147ba9ac2d05485ad7ef97d949d415124004e4fcf9315bf7f78cfd4d6e4"
+    },
+    {
+      "path": "/tmp/refinement-item-1440.png",
+      "sha256": "82efb60978da68e6d873790f740c0d032b2eae4d57ca99c23dc1ad05c3ec49ba"
+    },
+    {
+      "path": "/tmp/refinement-item-390.png",
+      "sha256": "9d460394762e453c85ed7beaaea3b5fedf7d231d3f88f8ac0a90793028175c57"
+    },
+    {
+      "path": "/tmp/refinement-map-1440.png",
+      "sha256": "d730d7a21ee2c6df713bed1ed80a1003151f283bffc0e4a766dbffdb760002ca"
+    },
+    {
+      "path": "/tmp/refinement-map-390.png",
+      "sha256": "460e93ee1b72ad316d5ff87404afdcbefac33cb87db724f0a373f123d856a30e"
+    },
+    {
+      "path": "/tmp/refinement-notebook-1440.png",
+      "sha256": "1de97a2918c0216880b3133dab2383b5bd615f3dd16a9ee540d7a66ff3ca4b1e"
+    },
+    {
+      "path": "/tmp/refinement-notebook-390.png",
+      "sha256": "85e4bb51a834ef3c7f9353847c06f69c06c9bc02e4c415c366065d15e50d50a4"
+    },
+    {
+      "path": "/tmp/refinement-receipt-1440.png",
+      "sha256": "20d2a5d5a5de5a60d3dfba0fe604dab6fc42d5d61c95ef09a5963be830c11f90"
+    },
+    {
+      "path": "/tmp/refinement-receipt-390.png",
+      "sha256": "90dde2324b0d4888c5192b0a80bd43d1d7d63a580f770f7c0c874e675be9bf83"
+    },
+    {
+      "path": "/tmp/refinement-wall-1440.png",
+      "sha256": "56653d57abc991922a0385e0acb09f605f025d731428c3971b11c2c939210a01"
+    },
+    {
+      "path": "/tmp/refinement-wall-390.png",
+      "sha256": "676d0f73b4f65272939649747df206d12ad832eb3d5718c589923bec352fced7"
+    }
+  ],
+  "nativeFirstVisit": {
+    "revision": "428cbfb1ed759a194620cfb36ad1785aad78d0ef",
+    "dirty": true,
+    "initialTransferBudget": 2097152,
+    "autoplayPolicy": "Full Chromium; first visit requires document activation, with no prior origin permission.",
+    "samples": [
+      {
+        "sceneId": "opening_city",
+        "width": 390,
+        "height": 844,
+        "artwork": "full",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 2193,
+        "network": "Emulated 5 Mbps / 150 ms",
+        "elapsedToReadyMs": 4302,
+        "encodedResourceBytes": 1683236,
+        "htmlBytes": 2336,
+        "titleLcpMs": 1400,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 3,
+        "goalVisible": true
+      },
+      {
+        "sceneId": "opening_city",
+        "width": 390,
+        "height": 844,
+        "artwork": "none",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 2403,
+        "network": "Emulated 5 Mbps / 150 ms",
+        "elapsedToReadyMs": 2484,
+        "encodedResourceBytes": 438059,
+        "htmlBytes": 2336,
+        "titleLcpMs": 1188,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 0,
+        "goalVisible": true
+      },
+      {
+        "sceneId": "opening_city",
+        "width": 1440,
+        "height": 900,
+        "artwork": "full",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 1573,
+        "network": "Unthrottled automation host",
+        "elapsedToReadyMs": 1763,
+        "encodedResourceBytes": 2021452,
+        "htmlBytes": 2336,
+        "titleLcpMs": 516,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 3,
+        "goalVisible": true
+      },
+      {
+        "sceneId": "opening_city",
+        "width": 1440,
+        "height": 900,
+        "artwork": "none",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 1264,
+        "network": "Unthrottled automation host",
+        "elapsedToReadyMs": 1337,
+        "encodedResourceBytes": 1102776,
+        "htmlBytes": 2336,
+        "titleLcpMs": 336,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 0,
+        "goalVisible": true
+      }
+    ],
+    "limitations": [
+      "Four synthetic samples on the automation host, not p75/p95 field data or named physical devices.",
+      "Elapsed-to-ready includes automated form entry and network-idle waits; it is not LCP or INP.",
+      "titleLcpMs measures this navigation's title screen. Encoded resource bytes are Resource Timing measurements, not all wire overhead.",
+      "A previously permitted visit can autoplay the separate 2.6 MB menu theme before gameplay; these samples measure the first-visit activation policy."
+    ]
+  },
+  "media": {
+    "newGeneratedPaintings": 6,
+    "deliveryFiles": 12,
+    "deliveryBytes": 2446414,
+    "voiceBindings": 306,
+    "activeVoiceFiles": 294,
+    "storyAndVoiceChanged": false
+  },
+  "limitations": [
+    "AI development proxy; no independent human or artistic acceptance. Provisional grade remains 8.2.",
+    "Local Chromium and phone automation only; Firefox profile startup and missing WebKit host libraries require hosted full four-engine CI.",
+    "Native first-visit measurements are four synthetic samples, not field percentiles or a previously permitted menu-music visit.",
+    "Current-source snapshots explicitly exercise conditional scenes; they do not claim new full human campaigns.",
+    "Release remains subject to exact-commit CI and verified production alias."
+  ]
+}

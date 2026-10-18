@@ -2866,6 +2866,213 @@
           "sha256": "ec5ed0da3b54127e0e230f9f02bc4aaa4ab62a6daee54c820db4e41d4c1ed1ac"
         }
       ]
+    },
+    {
+      "id": "item-shard",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-8676ab0b-23bc-442e-a983-98e527a1ddee.png",
+      "sourceSha256": "77b85d4b51dcb6f09be8694ed2f06dfe95676727d2e5b01d94f0a980b23f992a",
+      "references": [
+        {
+          "path": "public/art/equipment-atlas.jpg",
+          "sha256": "167a20e1efbcc80763cc9ae5473c38a238eb1ea24b2cbf19e7bb4b3753de448f"
+        }
+      ],
+      "promptSummary": "Individual undamaged memory sliver on dark felt; a second generated edit removed scratch-like branching lines so the intact and ash states read distinctly.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained outside Git. Individual equipment inspections retain full native 1536 by 1024 delivery.",
+      "files": [
+        {
+          "path": "public/art/item-shard.jpg",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 347156,
+          "sha256": "62cf6b849a9098a160a942df92e7c950d44951ee72bdd26fd17350b8dfe23162"
+        },
+        {
+          "path": "public/art/item-shard-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 61250,
+          "sha256": "5eb3f3eb7da9d7657a9b579f5176648878a39c2f8e44a3a2188c62d48e51ccf2"
+        }
+      ],
+      "generatedEditReference": {
+        "sourceFile": "/workspace/generated_images/exec-f56cf324-4182-4c82-aa81-af7510916d9a.png",
+        "sha256": "bee58c4637248ad50ab8881e46c9198bfc8c309376010a2a03c8c414240ed408",
+        "note": "Direct input to the final generated edit, retained outside Git. The equipment atlas is the upstream design reference for the first study."
+      }
+    },
+    {
+      "id": "item-shard-damaged",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-19c8054f-340a-4e4a-88b6-26a1b98da0fc.png",
+      "sourceSha256": "a5e130af6d2248d8fede434c612b99d00e81cf15d3d3d0ff6c29127cc73e60fe",
+      "references": [
+        {
+          "path": "public/art/equipment-atlas.jpg",
+          "sha256": "167a20e1efbcc80763cc9ae5473c38a238eb1ea24b2cbf19e7bb4b3753de448f"
+        }
+      ],
+      "promptSummary": "Individual chipped and cracked shard, for owned shard inspection only when ash is true.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained outside Git. Individual equipment inspections retain full native 1536 by 1024 delivery.",
+      "files": [
+        {
+          "path": "public/art/item-shard-damaged.jpg",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 408644,
+          "sha256": "23c2bc5280c6bae0393a0549d557113576ccd2863212bc3a560e554bbb73a57a"
+        },
+        {
+          "path": "public/art/item-shard-damaged-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 56597,
+          "sha256": "416ec1cdb59b45910874920591ee8446d7d2a44a2dcc5addcb0ffb679123d45a"
+        }
+      ]
+    },
+    {
+      "id": "item-archive-probe",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-0b4ae544-b891-4b0a-b9e1-816758d73359.png",
+      "sourceSha256": "dc223d552f1054de092c31c40585233f70032ff87c98c48afdf76fb1e092c337",
+      "references": [
+        {
+          "path": "public/art/equipment-atlas.jpg",
+          "sha256": "167a20e1efbcc80763cc9ae5473c38a238eb1ea24b2cbf19e7bb4b3753de448f"
+        }
+      ],
+      "promptSummary": "Individual worn copper contact scanner with coiled cable on charcoal felt; no result or authentication claim.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained outside Git. Individual equipment inspections retain full native 1536 by 1024 delivery.",
+      "files": [
+        {
+          "path": "public/art/item-archive-probe.jpg",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 351625,
+          "sha256": "3ad776f515241a61a39496acba83ed8be540589ae74445f03e7651139a70160c"
+        },
+        {
+          "path": "public/art/item-archive-probe-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 60851,
+          "sha256": "6901c1de74eb79c840f61a2eb99d06fb00c6d67cca6b819670ddf3683c1873cf"
+        }
+      ]
+    },
+    {
+      "id": "item-witness-token",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-41561e2b-1897-4fd8-b881-5eecf85bdc9d.png",
+      "sourceSha256": "84dcc9350dbfe579035b3b33d92cfef7398bc623a4743027df6060d8ee37bb11",
+      "references": [
+        {
+          "path": "public/art/equipment-atlas.jpg",
+          "sha256": "167a20e1efbcc80763cc9ae5473c38a238eb1ea24b2cbf19e7bb4b3753de448f"
+        }
+      ],
+      "promptSummary": "Individual verdigris brass room token with square opening, no identities, room address or transfer outcome.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained outside Git. Individual equipment inspections retain full native 1536 by 1024 delivery.",
+      "files": [
+        {
+          "path": "public/art/item-witness-token.jpg",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 354347,
+          "sha256": "8fd0ecf1119fceab557f06ac169b21296f1b995ca6a3b14800124a546fc7df91"
+        },
+        {
+          "path": "public/art/item-witness-token-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 64308,
+          "sha256": "090df1cd2a32c2d4fe538f41029610b3a086bf4d362ac2f2aa492b9c47ecb6ed"
+        }
+      ]
+    },
+    {
+      "id": "chapel-shared",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-959ffa71-9b42-4824-bf47-c70876370784.png",
+      "sourceSha256": "9b84576952c6609a27506205317dea09a7ec32c082945cce6c58948893173bba",
+      "references": [
+        {
+          "path": "public/art/mara.jpg",
+          "sha256": "2b1c67aa8a9519999a98e8559edc831406e2014fd42d91bf4ab1ae7b1e0d3214"
+        },
+        {
+          "path": "public/art/lumen.jpg",
+          "sha256": "88cc611cc0cafbbd9cac910b4fdf454cb24fd1d4a8dc6ea6ba9f2822f890668e"
+        },
+        {
+          "path": "public/art/chapel.jpg",
+          "sha256": "b38ed7d28a6ad107c209a32441299a6ffb1dbcd6e8a314de77de92d4b50a1a9b"
+        }
+      ],
+      "promptSummary": "Mara beneath the halo and Lumen beside the controls; magenta optic and original identities retained. Only an authored pact placing Lumen there permits this unresolved pre-choice painting.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained outside Git. Individual equipment inspections retain full native 1536 by 1024 delivery.",
+      "files": [
+        {
+          "path": "public/art/chapel-shared.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 270449,
+          "sha256": "d36d5180b132fdde67b7abf6735d2bd5139139b39f3463d21be120c09ce8f51f"
+        },
+        {
+          "path": "public/art/chapel-shared-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 75723,
+          "sha256": "e8c0f851ca8f247c0d3a7e9eb4e6e0849ae6d7d3d4ab8f7c38c7c0c4af53c2ec"
+        }
+      ]
+    },
+    {
+      "id": "wall-shared",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-73dbad9f-f372-4f2c-9506-32a9be986dfa.png",
+      "sourceSha256": "ca4ba377302c3556789e6e941fc9549c3d0b5baec83fdeeb4cb9340d0126a33d",
+      "references": [
+        {
+          "path": "public/art/sera.jpg",
+          "sha256": "357cfe3e403cfc57140977271a62264157640a0c640da9bbd5272e39516b39cf"
+        },
+        {
+          "path": "public/art/ives.jpg",
+          "sha256": "0fbff0f64074ee10c85fb6e4f475f2c6df11b559b6a1ab11e78af4b4ed5e1fd8"
+        },
+        {
+          "path": "public/art/wardnine.jpg",
+          "sha256": "c53adb16eb278e6d2904cda51265cbfd79a964ad0cda43dce94edb432d5cbff0"
+        }
+      ],
+      "promptSummary": "Sera with pencil and Ives with an open folio at the memorial stair, only when on_file and act2_deal put both in arrival prose. No page handover, ending, verdict or private identities.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained outside Git. Individual equipment inspections retain full native 1536 by 1024 delivery.",
+      "files": [
+        {
+          "path": "public/art/wall-shared.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 313824,
+          "sha256": "664ff4e12ff9665bb872a84cf99daa7d7d9282813e297b31ec172020c03a722e"
+        },
+        {
+          "path": "public/art/wall-shared-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 81640,
+          "sha256": "637189fc84dad8b6e9bded4e8bc6d00ce3cc1a88e73b41a295d4e43a62897c15"
+        }
+      ]
     }
   ]
 }

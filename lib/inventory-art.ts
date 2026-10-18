@@ -18,9 +18,18 @@ const EQUIPMENT: Record<string, { tile: number; description: string }> = {
 };
 
 /** Lookup accepts only owned, known item ids; artwork never grants the depicted item. */
-export function inventoryArt(id: string, damaged = false): ViewableArt | undefined {
+export function inventoryThumbnailArt(id: string, damaged = false): ViewableArt | undefined {
   if (!Object.hasOwn(EQUIPMENT, id)) return undefined;
   const item = EQUIPMENT[id], ash = id === "shard" && damaged;
   return { src: "/art/equipment-atlas.jpg", small: "/art/equipment-atlas-small.jpg", caption: "Equipment · illustrative detail",
     tile: ash ? 14 : item.tile, description: ash ? "A chipped and cracked glass memory sliver with a dim uneven cyan edge." : item.description };
+}
+
+const DETAILS: Record<string, string> = { shard: "item-shard", "archive-probe": "item-archive-probe", "witness-token": "item-witness-token" };
+/** Keep the compact atlas for Gear; load individual paintings only on inspection. */
+export function inventoryArt(id: string, damaged = false): ViewableArt | undefined {
+  const thumbnail = inventoryThumbnailArt(id, damaged);
+  if (!thumbnail || !Object.hasOwn(DETAILS, id)) return thumbnail;
+  const name = id === "shard" && damaged ? "item-shard-damaged" : DETAILS[id];
+  return { src: `/art/${name}.jpg`, small: `/art/${name}-small.jpg`, caption: thumbnail.caption, description: thumbnail.description };
 }

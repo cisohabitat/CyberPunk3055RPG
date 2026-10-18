@@ -2,7 +2,7 @@ import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { createCharacter, getScene, sceneText } from "../lib/engine";
 import { ITEMS } from "../lib/items";
-import { inventoryArt } from "../lib/inventory-art";
+import { inventoryThumbnailArt as inventoryArt } from "../lib/inventory-art";
 import { installAudioReview, type AudioReview } from "../qa/production/audio-review";
 import type { GameState } from "../lib/types";
 const base = createCharacter({ handle: "ArtReview", givenName: "Jo", origin: "gutterwire", bonus: { chrome: 2, nerve: 0, face: 0, ghost: 0 } });
@@ -38,7 +38,7 @@ for (const width of [390, 1440, 320]) test(`painted conversation and inventory r
     const trigger = sheet.getByRole("button", { name: "View artwork: Saint Shard", exact: true }); await trigger.click();
     const viewer = page.getByRole("dialog", { name: "Saint Shard", exact: true });
     await expect(viewer.getByRole("button", { name: "Close artwork" })).toBeFocused();
-    await expect(viewer.locator(".equipment-tile")).toHaveAttribute("data-tile", "14");
+    await expect(viewer.locator(".artwork-canvas img")).toHaveAttribute("src", "/art/item-shard-damaged.jpg");
     await expect(viewer).toContainText("chipped and cracked");
     const fitted = await viewer.locator(".artwork-canvas").boundingBox(), frame = await viewer.getByRole("region", { name: "Artwork detail" }).boundingBox();
     expect(fitted!.width).toBeLessThanOrEqual(frame!.width); expect(fitted!.height).toBeLessThanOrEqual(frame!.height);
@@ -109,7 +109,7 @@ for (const loading of [false, true]) test(`art viewer consumes ${loading ? "load
 
 test("missing full-size equipment keeps the description and returns to the mobile sheet", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 900 });
-  await page.route("**/art/equipment-atlas.jpg", route => route.abort());
+  await page.route("**/art/item-shard.jpg", route => route.abort());
   await open(page, { ...base, sceneId: "stall", items: ["shard"] }); const before = await saved(page);
   await page.getByRole("button", { name: "Sheet", exact: true }).click();
   await page.getByRole("tab", { name: "gear", exact: true }).click();

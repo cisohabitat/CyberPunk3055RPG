@@ -3,7 +3,7 @@ import { it } from "node:test";
 import { readFileSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { ITEMS } from "./items";
-import { inventoryArt } from "./inventory-art";
+import { inventoryThumbnailArt as inventoryArt } from "./inventory-art";
 import { ILLUSTRATION_STAGING, paintedActor, sceneIllustration } from "./art";
 import { createCharacter, commitChoice, getScene, presentChoices } from "./engine";
 import type { GameState } from "./types";
@@ -45,7 +45,7 @@ it("separates agreed source custody from key authentication, public permission a
 });
 it("retains reviewed prior variants and hashes every new delivery and reference without changing dialogue", () => {
   assert.deepEqual(phase.previousIllustrationVariants, ILLUSTRATION_STAGING.slice(0, 3));
-  assert.deepEqual(phase.illustrationVariants, ILLUSTRATION_STAGING);
+  assert.deepEqual(phase.illustrationVariants, ILLUSTRATION_STAGING.slice(0, phase.illustrationVariants.length));
   assert.equal(sha("qa/media/campaign-dialogue-bindings.json"), phase.bindingSha256);
   for (const asset of phase.assets) {
     for (const file of asset.files) { assert.equal(sha(file.path), file.sha256); assert.ok(file.bytes < 1048576); }

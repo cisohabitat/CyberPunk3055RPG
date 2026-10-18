@@ -32,3 +32,15 @@ export function cityMap(state: GameState) {
     || d.id === "ward-nine" && state.journal.some(entry => entry.id === "ward-nine"))
     .map(d => ({ id: d.id, name: d.name, current: d.id === current, choices: available.filter(choice => choice.district === d.id) }));
 }
+
+/** Reviewed neutral landmarks; revealed only inside an already-known place card. */
+export const MAP_LANDMARKS = {
+  market: { src: "/art/opening-small.jpg", description: "An amber noodle stall under rainy Ward Four awnings." },
+  chapel: { src: "/art/chapel.jpg", description: "The empty halo chair beneath Glass Chapel’s cyan and magenta windows." },
+  canal: { src: "/art/canal.jpg", description: "Rain-dark canal infrastructure beneath the city lights." },
+  spire: { src: "/art/spire.jpg", description: "Helion’s tall illuminated tower above the lower walkways." },
+  shelter: { src: "/art/shelter-small.jpg", description: "The shelter landing and its passable ramp, before any repair outcome." },
+  clinic: { src: "/art/clinic-conversation-small.jpg", description: "A modest clinic conversation room with an empty visitor chair." },
+  "clinic-service": { src: "/art/clinic-relay-small.jpg", description: "A clinic service relay and closed routing papers." },
+  "ward-nine": { src: "/art/memorial-stair-small.jpg", description: "The rain-worn memorial stair, without readable identities." },
+} as const;
