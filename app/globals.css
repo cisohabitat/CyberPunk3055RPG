@@ -58,8 +58,11 @@ button { cursor: pointer; }
 
 .boot {
   min-height: 100dvh;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .9rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   font-family: var(--font-display), sans-serif;
@@ -108,6 +111,8 @@ button { cursor: pointer; }
 }
 
 .brand svg, .mark { width: 1.6rem; height: 1.6rem; display: block; }
+.boot .mark { width: 4rem; height: 4rem; }
+@media (forced-colors: active) { .mark path { stroke: CanvasText; } }
 
 .brand small {
   display: block;
@@ -969,6 +974,25 @@ html[data-artwork="none"] .scene { background-color: #09080d; }
 .title-intro .actions .primary:hover { background: #1b303a; border-color: var(--cyan); }
 .title-intro .actions .ghost { background: rgba(9,13,19,.86); color: #e5e0d7; }
 .title-intro .actions .ghost:hover { background: #1b303a; }
+.title-intro .actions > *, .title-intro .title-music button { position: relative; transition: border-color 140ms ease, background-color 140ms ease, color 140ms ease, box-shadow 140ms ease; }
+.title-intro .actions > *::before, .title-intro .title-music button::before { content: ""; position: absolute; inset: .35rem auto .35rem 0; width: 2px; background: var(--cyan); opacity: 0; transform: scaleY(.4); transition: opacity 140ms ease, transform 140ms ease; pointer-events: none; }
+.title-intro .actions > *:focus-visible, .title-intro .title-music button:focus-visible { outline: 3px solid var(--cyan); outline-offset: 3px; border-color: #e5e0d7; background: #18303b; box-shadow: inset 0 0 0 1px #d8d5cc; }
+.title-intro .actions > *:focus-visible::before, .title-intro .title-music button:focus-visible::before { opacity: 1; transform: none; }
+.title-intro .actions > *:not(:disabled):active, .title-intro .title-music button:not(:disabled):active { background: #284553; transform: translateY(1px); }
+@media (hover: hover) {
+  .title-intro .actions > *:not(:disabled):hover, .title-intro .title-music button:not(:disabled):hover { border-color: #d8d5cc; box-shadow: inset 0 0 0 1px #5ef2ff55; }
+  .title-intro .actions > *:not(:disabled):hover::before, .title-intro .title-music button:not(:disabled):hover::before { opacity: 1; transform: none; }
+}
+html[data-motion="reduce"] .title-intro :is(.actions > *, .title-music button), html[data-motion="reduce"] .title-intro :is(.actions > *, .title-music button)::before { transition: none !important; transform: none !important; }
+.title-intro .title-music button:disabled { color: var(--muted); background: transparent; border-color: var(--line); box-shadow: none; transform: none; cursor: default; }
+.title-intro .title-music button:disabled::before { opacity: 0; }
+@media (prefers-reduced-motion: reduce) {
+  .title-intro :is(.actions > *, .title-music button), .title-intro :is(.actions > *, .title-music button)::before { transition: none !important; transform: none !important; }
+}
+@media (forced-colors: active) {
+  .title-intro .actions > *:focus-visible, .title-intro .title-music button:focus-visible { outline-color: Highlight; box-shadow: none; }
+  .title-intro :is(.actions > *, .title-music button)::before { background: Highlight; }
+}
 .title-intro .continue-note { margin: 0; }
 .title-music { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1rem; margin: .75rem 0; }
 .title-music .hint { flex: 1 1 12rem; min-width: 0; margin: 0; }

@@ -9,6 +9,7 @@ import { PlayScreen } from "./PlayScreen";
 import { TitleScreen } from "./TitleScreen";
 import { SaveDialog } from "./SaveDialog";
 import { SettingsDialog } from "./SettingsDialog";
+import { Mark } from "./Mark";
 import { clearSave, emptyCodex, loadCodex, loadSave, usedBackup, writeSave } from "@/lib/storage";
 import { applyPreferences, DEFAULT_PREFERENCES, loadPreferences, writePreferences, type Preferences } from "@/lib/preferences";
 import { cancelPendingMenuAudio, leaveMenuMusic, prepareMenuAutoplay, setAudioMix, setBed, unlockAudio, type BedStatus } from "@/lib/sound";
@@ -130,7 +131,7 @@ export function GameApp() {
     setPlaySession((session) => session + 1); setRecovered(false); setDialog(null); setScreen("play");
   }
 
-  if (!ready) return <div className="boot">Jacking in</div>;
+  if (!ready) return <main className="boot" aria-label="Saint Shard"><Mark /><span role="status">Jacking in</span></main>;
   return <>
     {guide ? <GuideScreen artwork={preferences.artwork !== "none"} onSettings={() => setDialog("settings")}
       music={{ status: menuMusicStatus, muted: preferences.music === 0, paused: audioPaused && menuMusicRequested,

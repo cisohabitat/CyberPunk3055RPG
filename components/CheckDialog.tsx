@@ -4,7 +4,8 @@ import { useEffect, useRef, useState } from "react";
 import { DialogFrame } from "@/components/DialogFrame";
 import { Portrait, reactionLine } from "@/components/Portrait";
 import { commitChoice, checkResourceCosts, previewCheck, runDelta, stageCheck } from "@/lib/engine";
-import { playCue } from "@/lib/sound";
+import { playDiceCue } from "@/lib/sound";
+import { diceLandingCue } from "@/lib/dice-cues";
 import { statVoice } from "@/lib/story/voices";
 import { visibleCheckDialogue, spokenDialogueRange, type CampaignDialogue } from "@/lib/campaign-dialogue";
 import { VoiceLine } from "./VoiceLine";
@@ -46,12 +47,29 @@ export function CheckDialog({
   const locked = useRef(Boolean(restored));
   const [rolling, setRolling] = useState(false);
   const [speaking, setSpeaking] = useState<CampaignDialogue | null>(null);
+  const freshRoll = useRef(false);
+  const rollSound = useRef(false);
+  const soundPhase = useRef<"ready" | "tumble" | "landed">("ready");
   const chance = preview.hits === 10 ? "Certain" : preview.hits === 0 ? "No chance" : `${preview.hits} in 10`;
   const costs = checkResourceCosts(state, choice);
   const delta = next ? runDelta(state, next) : [];
   const dialogue = result && !rolling ? visibleCheckDialogue(state.sceneId, choice.id, speaker, result.success, result.flavor) : [];
   const playing = sound && voicesEnabled && speaking && dialogue.some(line => line.key === speaking.key) ? speaking : null;
   const spokenRange = playing && result ? spokenDialogueRange(result.flavor, playing) : undefined;
+
+  useEffect(() => {
+    if (!freshRoll.current || !result) return;
+    if (!sound) { rollSound.current = false; return; }
+    if (!rollSound.current) return;
+    if (rolling) {
+      if (reducedMotion || soundPhase.current !== "ready") return;
+      soundPhase.current = "tumble";
+      return playDiceCue("dice-tumble");
+    }
+    if (soundPhase.current === "landed") return;
+    soundPhase.current = "landed";
+    return playDiceCue(diceLandingCue(result));
+  }, [rolling, result, sound, reducedMotion]);
 
   useEffect(() => {
     if (result && !rolling) document.querySelector<HTMLButtonElement>("[data-testid=continue-check]")?.focus();
@@ -63,24 +81,21 @@ export function CheckDialog({
     if (reduce) {
       setDisplay(result.roll);
       setRolling(false);
-      if (sound) playCue(result.success ? "sting-success" : "sting-fail");
       return;
     }
     let ticks = 0;
     const id = window.setInterval(() => {
       ticks += 1;
-      if (sound) playCue("dice-tick");
       if (ticks > 9) {
         window.clearInterval(id);
         setDisplay(result.roll);
         setRolling(false);
-        if (sound) playCue(result.success ? "sting-success" : "sting-fail");
         return;
       }
       setDisplay(1 + Math.floor(Math.random() * 10));
     }, 70);
     return () => window.clearInterval(id);
-  }, [rolling, result, sound, reducedMotion]);
+  }, [rolling, result, reducedMotion]);
 
   function roll() {
     if (locked.current) return;
@@ -89,6 +104,8 @@ export function CheckDialog({
     const staged = stageCheck(state, choice.id, face);
     onStage(staged);
     const committed = commitChoice(staged, choice, { roll: face });
+    freshRoll.current = true;
+    rollSound.current = sound;
     setResult(committed.check);
     setNext(committed.state);
     setRolling(true);

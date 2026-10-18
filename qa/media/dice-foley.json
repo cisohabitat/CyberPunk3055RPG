@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "method": "Original deterministic procedural synthesis: filtered-noise contacts, decelerating surface rattle and quiet resonances; no recordings, samples, trained model or voice generation. Offline only.",
+  "sourceSha256": {
+    "scripts/dice-foley.mjs": "d4e6ae399985d80a07496c04407547934d0264df3f03953859fc0a82304ff267",
+    "scripts/author-dice-foley.mjs": "07579f3d3a739a9a1f3c028ec14517c6f2c83b82429b020906410c269f35c1fc"
+  },
+  "mix": {
+    "level": 0.38,
+    "speechDuck": 0.35
+  },
+  "clips": [
+    {
+      "id": "dice-tumble",
+      "path": "public/audio/dice-tumble.wav",
+      "bytes": 28268,
+      "sha256": "809f8fff451755823943321c049ed0fee5fea2bea2aa6cba5f805ef0a813f2d8",
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 0.64,
+      "peak": 0.19000244140625,
+      "rms": 0.017065066356933167,
+      "maxSampleJump": 0.1278076171875
+    },
+    {
+      "id": "dice-land-success",
+      "path": "public/audio/dice-land-success.wav",
+      "bytes": 11510,
+      "sha256": "e4573511a14a654c7ece29a765fa961a62ede0ea9c9e11888ef7b3ae6fa3a3e5",
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 0.26,
+      "peak": 0.18695068359375,
+      "rms": 0.016840889414415715,
+      "maxSampleJump": 0.08929443359375
+    },
+    {
+      "id": "dice-land-miss",
+      "path": "public/audio/dice-land-miss.wav",
+      "bytes": 11510,
+      "sha256": "9308c010be868bf3a6e74599a0e405846a3c96f9c2e1eff83a92e499a37df639",
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 0.26,
+      "peak": 0.18695068359375,
+      "rms": 0.016998289672893217,
+      "maxSampleJump": 0.08929443359375
+    },
+    {
+      "id": "dice-land-ten",
+      "path": "public/audio/dice-land-ten.wav",
+      "bytes": 18566,
+      "sha256": "e5396a9c8d36571982da5d37a3820cd855ac54c99313e440551eead90f78d894",
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 0.42,
+      "peak": 0.18695068359375,
+      "rms": 0.01480731422907771,
+      "maxSampleJump": 0.08929443359375
+    },
+    {
+      "id": "dice-land-one",
+      "path": "public/audio/dice-land-one.wav",
+      "bytes": 16802,
+      "sha256": "90d79012ec25557bb87a9911658c314f7a642c99f1bb0cca317fb0fda9260a2e",
+      "sampleRate": 22050,
+      "channels": 1,
+      "bits": 16,
+      "durationSeconds": 0.38,
+      "peak": 0.18695068359375,
+      "rms": 0.015509654054931427,
+      "maxSampleJump": 0.08929443359375
+    }
+  ],
+  "limits": "Signal/source and synthetic-browser verification, not independent perceptual or physical-device listening acceptance."
+}

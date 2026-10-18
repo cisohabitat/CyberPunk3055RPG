@@ -809,8 +809,16 @@ The start page now uses the approved silver Saint Shard wordmark, a broken halo 
 
 ## Faceted dice presentation
 
-Checks now show a shaded geometric die with a brief tumble during the existing roll, a clearly readable final face and restrained success/miss accents. Saved and system reduced-motion settings reveal the result immediately. A restored die stays still and keeps its recorded face; Continue still commits the outcome. The die is drawn locally without additional artwork/audio downloads. See [the dice presentation record](docs/DICE_PRESENTATION.md).
+Checks now show a shaded geometric die with a brief tumble during the existing roll, a clearly readable final face and restrained success/miss accents. Saved and system reduced-motion settings reveal the result immediately. A restored die stays still and keeps its recorded face; Continue still commits the outcome. The die geometry is drawn locally without an artwork download; the later shared-brand cycle adds short optional dice audio. See [the dice presentation record](docs/DICE_PRESENTATION.md).
 
 ## Ending layout CI correction
 
 The district emblem and top spacing are more compact in finale headers, keeping the opening prose within the existing phone reading budget. All district labels, full portraits, goals, ending text and history remain available. This fixes the shared browser-check failure that blocked publication of the logo and dice updates; those updates remain on main. See [the CI correction record](docs/FINALE_CI_CORRECTION.md).
+
+## Shared branding, dice sound and menu feedback
+
+The game header, character-creation cards and loading screen now use the silver broken-halo/cyan-shard emblem, with a matching browser icon. The character origin still supplies a small outline accent. Loading stays static and readable.
+
+Fresh rolls have one short decelerating rattle and a quiet landing; a successful ten and missed one have restrained distinct accents. Effects volume and Sound off remain respected. Reduced motion skips the rattle, restored dice stay silent, and leaving/muting cancels active or delayed check audio. The existing 700ms roll and Continue-only commitment remain.
+
+Main-menu buttons and links have silver/cyan hover, keyboard-focus and pressed feedback with 44px targets. Both reduced-motion settings remove transitions and movement, and disabled music controls remain disabled. See [the shared branding and feedback record](docs/BRAND_MENU_FEEDBACK.md).

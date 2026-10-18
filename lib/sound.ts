@@ -8,6 +8,7 @@ import { SCENE_CUE_MIX, type SceneCueName } from "./scene-cues";
 import { waitForRunningAudio } from "./menu-autoplay";
 import { BED_FOCUS, type BedFocus } from "./pivotal-scenes";
 import { investigationScene } from "./investigation-scenes";
+import { DICE_CUE_MIX, type DiceCueName } from "./dice-cues";
 
 export type SoundMood = "street" | "chapel" | "ward" | "week" | "reading" | "quiet" | "pressure" | "title";
 export type BedStatus = "idle" | "loading" | "playing" | "unavailable";
@@ -29,6 +30,8 @@ let voiceNode: AudioBufferSourceNode | null = null;
 let speaking = false;
 let sceneCueTicket = 0;
 let sceneCueSource: AudioSource | null = null;
+let diceCueTicket = 0;
+let diceCueSource: AudioSource | null = null;
 const buses = new Map<string, GainNode>();
 const cache = new Map<string, AudioBuffer>();
 const loading = new Map<string, Promise<AudioBuffer>>();
@@ -69,7 +72,7 @@ export function setAudioMix(value: Pick<Preferences, "music" | "ambience" | "eff
   const bedsChanged = (mix.music > 0) !== (value.music > 0) || (mix.ambience > 0) !== (value.ambience > 0);
   mix = { music: value.music, ambience: value.ambience, effects: value.effects, voices: value.voices };
   if (mix.voices === 0) stopVoice();
-  if (mix.effects === 0) stopSceneCue();
+  if (mix.effects === 0) { stopSceneCue(); stopDiceCue(); }
   for (const current of live.values()) if (mix[current.channel] === 0) stopSource(current);
   if (ctx) for (const channel of ["music", "ambience", "effects", "voices"] as const) bus(channel);
   if (bedsChanged && want) { ++ticket; setBed(true, requestedMood, requestedDistrict, undefined, requestedFocus); }
@@ -124,6 +127,7 @@ function stopSource(current: AudioSource) {
 }
 function stopBed() {
   stopSceneCue();
+  stopDiceCue();
   for (const current of live.values()) stopSource(current);
   theme = null; ambience = null;
   playingMood = undefined; playingDistrict = undefined;
@@ -185,6 +189,7 @@ export type VoiceStatus = "loading" | "playing" | "idle" | "unavailable";
 function duckBed(on: boolean) {
   speaking = on;
   if (ctx && sceneCueSource) sceneCueSource.gain.gain.setTargetAtTime(SCENE_CUE_MIX.level * (on ? SCENE_CUE_MIX.speechDuck : 1), ctx.currentTime, voiceMix.attackSeconds);
+  if (ctx && diceCueSource) diceCueSource.gain.gain.setTargetAtTime(DICE_CUE_MIX.level * (on ? DICE_CUE_MIX.speechDuck : 1), ctx.currentTime, voiceMix.attackSeconds);
   if (ctx) { bus("music"); bus("ambience"); }
 }
 export function stopVoice() {
@@ -227,6 +232,30 @@ export function playCue(name: string) {
       source(buffer, "effects", name === "dice-tick" ? 0.22 : 0.5, false).node.start();
     } catch { /* Audio stays optional. */ }
   })();
+}
+/** Check-owned, cancellable effects; never replay a held die or late download. */
+export function stopDiceCue() {
+  ++diceCueTicket;
+  if (diceCueSource) stopSource(diceCueSource);
+  diceCueSource = null;
+}
+export function playDiceCue(name: DiceCueName): () => void {
+  stopDiceCue();
+  const id = diceCueTicket;
+  if (typeof window === "undefined" || !want || mix.effects === 0) return () => {};
+  unlockAudio();
+  void (async () => {
+    try {
+      const buffer = await load(name);
+      if (id !== diceCueTicket || !want || mix.effects === 0) return;
+      const next = source(buffer, "effects", DICE_CUE_MIX.level * (speaking ? DICE_CUE_MIX.speechDuck : 1), false);
+      diceCueSource = next;
+      const dispose = next.node.onended;
+      next.node.onended = event => { dispose?.call(next.node, event); if (diceCueSource === next) diceCueSource = null; };
+      next.node.start();
+    } catch { /* Optional effects never block a roll, result or save. */ }
+  })();
+  return () => { if (id === diceCueTicket) stopDiceCue(); };
 }
 /** One bounded action cue. Cancellation never starts a late download. */
 export function stopSceneCue() {

@@ -45,3 +45,5 @@ The approved [start-page branding](TITLE_BRANDING.md) adds a silver wordmark and
 The [faceted check die](DICE_PRESENTATION.md) improves roll presentation while preserving held results, reduced motion and Continue-only commitment.
 
 The [finale CI correction](FINALE_CI_CORRECTION.md) restores compact phone ending headers while retaining the approved logo and die presentation.
+
+The [shared-brand and menu cycle](BRAND_MENU_FEEDBACK.md) aligns small emblems, adds quiet cancellable dice audio and refines keyboard/pointer menu feedback.

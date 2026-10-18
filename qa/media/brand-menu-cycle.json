@@ -1,0 +1,219 @@
+{
+  "version": 1,
+  "date": "2026-10-18",
+  "baseRevision": "68e94301a5acbd1f5872e9400b77cf2cacf72c47",
+  "releaseBaseline": {
+    "commit": "68e94301a5acbd1f5872e9400b77cf2cacf72c47",
+    "ciRun": "https://github.com/cisohabitat/CyberPunk3055RPG/actions/runs/39120254242",
+    "ci": "success",
+    "alias": "cyberpunk3055rpg.vercel.app",
+    "deploymentState": "READY",
+    "deploymentId": "dpl_7hkYpmETA6ZkWRnPQMNKqHzThM93"
+  },
+  "scope": [
+    "Shared SVG emblem in existing Mark consumers (game header/creation cards), static loading state and favicon",
+    "Five original offline procedural dice sounds with check-scoped effects cancellation and voice ducking",
+    "Scoped menu pointer/focus/pressed feedback, disabled-state handling and saved/OS reduced motion"
+  ],
+  "sourceHashes": {
+    "components/Mark.tsx": "415d6ccc346117e30a749edb693c89352f70bdb969e34f932dea9f22f3228fcd",
+    "components/GameApp.tsx": "b0f0d87b9ec3c0573e0ee74113fa9f205f1ad9b34a2df00ffde62e37c7daeb41",
+    "components/CheckDialog.tsx": "47aa7437c7c02bb9eda459a6bb48e81a4d225658d2b5843a8c96882f96c27d37",
+    "lib/brand-mark.ts": "b8d31b39495cd00ac182ba56076718e06748e8b7c6d0f4a4b6d6a6b54eaf31e1",
+    "lib/dice-cues.ts": "1da68a6f2480ebf4ba8a4f98a7771d0d357cfd6072176a32c9498a6a6d3f2c39",
+    "lib/sound.ts": "9d4394c4ff8c708652af7da5f83888f00fa7b031ee2736500297e4586d4ec75d",
+    "app/icon.svg": "cb09a616cfb87f1d84b049c733f6c3a45c951041705f26c5461cf5d97997460b",
+    "app/globals.css": "98daf0174e8f7b6c09982190e67561521eb3081df9c9f7da2bf8a5a3136715d6",
+    "tests/brand-menu-audio.spec.ts": "34a7f868fd17a85cff690c5a0f3903b551fb3e824b4225e03861d4cd18ec5e97",
+    "qa/media/dice-foley.json": "dfc88f072813366a6dd82d0f500410a08192f57df8fdf00417667f0a3c439fc7"
+  },
+  "preservedHashes": {
+    "lib/engine.ts": "a150e5b9393c65398f8e326b9ee3e768f11699788fa5290a0f308361a4420458",
+    "lib/storage.ts": "bd36dbfb55f910e17c67206de416c7756e7e07e38ef56dd7c3c698c2cd603713",
+    "qa/media/art-provenance.json": "6ae74bd1780dea1799066a98cf69ffcbe6f9c84ef16811dc104334e98ba61623",
+    "qa/media/campaign-dialogue-bindings.json": "15ae8b35c16b330b545f001e23dc75b5f4bd131225347f616ab76c1b7088f0bd"
+  },
+  "sourceTests": {
+    "passed": 663,
+    "failed": 0,
+    "log": "/tmp/brand-menu-source.log"
+  },
+  "build": {
+    "passed": true,
+    "log": "/tmp/brand-menu-build-final.log"
+  },
+  "typescript": {
+    "passed": true,
+    "log": "/tmp/brand-menu-tsc-final.log"
+  },
+  "security": {
+    "knownVulnerabilities": 0,
+    "log": "/tmp/brand-menu-security.log"
+  },
+  "browserRuns": [
+    {
+      "scope": "Initial eight-file focused run, Chromium/phone",
+      "passed": 140,
+      "failed": 4,
+      "log": "/tmp/brand-menu-browser.log",
+      "diagnosis": "Two new fixture expectations were wrong in each project: Sound off deliberately leaves manual Play available, while zero Music disables it; Dustline Face needs an eight for this success, not seven. Corrected the fixtures without changing game code."
+    },
+    {
+      "scope": "Corrected brand-menu-audio file, Chromium/phone",
+      "passed": 28,
+      "failed": 0,
+      "log": "/tmp/brand-menu-focused.log"
+    },
+    {
+      "scope": "Full unfiltered Chromium suite",
+      "passed": 667,
+      "failed": 0,
+      "log": "/tmp/brand-menu-full-chromium.log",
+      "duration": "10.1 minutes"
+    }
+  ],
+  "uniqueVerifiedCases": {
+    "chromium": 667,
+    "phoneFocused": 72,
+    "total": 739,
+    "method": "Full Chromium includes all 72 selected desktop cases. Phone scope is the 72 unique cases from the eight-file run, with its two new fixture failures corrected by the complete 14-case phone rerun. Overlapping reruns are not added twice."
+  },
+  "firstVisit": {
+    "revision": "68e94301a5acbd1f5872e9400b77cf2cacf72c47",
+    "dirty": true,
+    "initialTransferBudget": 2097152,
+    "autoplayPolicy": "Full Chromium; first visit requires document activation, with no prior origin permission.",
+    "samples": [
+      {
+        "sceneId": "opening_city",
+        "width": 390,
+        "height": 844,
+        "artwork": "full",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 2791,
+        "network": "Emulated 5 Mbps / 150 ms",
+        "elapsedToReadyMs": 4915,
+        "encodedResourceBytes": 1741896,
+        "htmlBytes": 2596,
+        "titleLcpMs": 1608,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 5,
+        "goalVisible": true
+      },
+      {
+        "sceneId": "opening_city",
+        "width": 390,
+        "height": 844,
+        "artwork": "none",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 2569,
+        "network": "Emulated 5 Mbps / 150 ms",
+        "elapsedToReadyMs": 2639,
+        "encodedResourceBytes": 446156,
+        "htmlBytes": 2596,
+        "titleLcpMs": 1240,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 0,
+        "goalVisible": true
+      },
+      {
+        "sceneId": "opening_city",
+        "width": 1440,
+        "height": 900,
+        "artwork": "full",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 1729,
+        "network": "Unthrottled automation host",
+        "elapsedToReadyMs": 1953,
+        "encodedResourceBytes": 2062409,
+        "htmlBytes": 2596,
+        "titleLcpMs": 576,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 5,
+        "goalVisible": true
+      },
+      {
+        "sceneId": "opening_city",
+        "width": 1440,
+        "height": 900,
+        "artwork": "none",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 2062,
+        "network": "Unthrottled automation host",
+        "elapsedToReadyMs": 2175,
+        "encodedResourceBytes": 1111152,
+        "htmlBytes": 2596,
+        "titleLcpMs": 680,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 0,
+        "goalVisible": true
+      }
+    ],
+    "limitations": [
+      "Four synthetic samples on the automation host, not p75/p95 field data or named physical devices.",
+      "Elapsed-to-ready includes automated form entry and network-idle waits; it is not LCP or INP.",
+      "titleLcpMs measures this navigation's title screen. Encoded resource bytes are Resource Timing measurements, not all wire overhead.",
+      "A previously permitted visit can autoplay the separate 2.6 MB menu theme before gameplay; these samples measure the first-visit activation policy."
+    ]
+  },
+  "production": {
+    "output": "qa/production/reports",
+    "scenes": 197,
+    "choices": 598,
+    "routes": 148,
+    "coveredScenes": 182,
+    "coveredChoices": 432,
+    "assets": 712,
+    "budgetViolations": [],
+    "commercialAcceptanceReady": false,
+    "pendingGates": 6
+  },
+  "screenshots": [
+    {
+      "kind": "title keyboard focus",
+      "width": 390,
+      "path": "/tmp/brand-menu-title-390.png"
+    },
+    {
+      "kind": "game header",
+      "width": 390,
+      "path": "/tmp/brand-menu-header-390.png"
+    },
+    {
+      "kind": "title keyboard focus",
+      "width": 1440,
+      "path": "/tmp/brand-menu-title-1440.png"
+    },
+    {
+      "kind": "game header",
+      "width": 1440,
+      "path": "/tmp/brand-menu-header-1440.png"
+    },
+    {
+      "kind": "SSR loading preview with hydration disabled",
+      "path": "/tmp/brand-menu-loading.png"
+    },
+    {
+      "kind": "favicon size inspection",
+      "path": "/tmp/brand-menu-icon-sizes.png"
+    }
+  ],
+  "review": {
+    "visual": "Inspected actual phone title focus, game header, static SSR loading preview and favicon at 16/32/64/128px. No new raster art. The loading screenshot intentionally disables hydration to display the SSR state.",
+    "audio": "Exact byte/signal checks plus native browser playback, natural end, mute/zero Effects, pagehide, missing-file and late-landing cancellation. No independent listening acceptance claimed.",
+    "react": "Stateless shared mark, direct imports, fixed SVG geometry, independent check animation/audio effects, cleanup/ticket guards and no new game-state fields."
+  },
+  "limits": [
+    "Full hosted Firefox/WebKit and remaining full phone CI remain mandatory for the new commit.",
+    "Baseline production readiness is not evidence that this new candidate is already published.",
+    "Synthetic/AI inspection does not establish independent perceptual or physical-device acceptance."
+  ]
+}
