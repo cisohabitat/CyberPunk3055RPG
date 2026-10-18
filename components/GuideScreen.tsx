@@ -7,11 +7,13 @@ import { ORIGINS, STATS, STAT_INFO } from "@/lib/character";
 import { GUIDE_CONTACTS, GUIDE_LORE, guideCheck } from "@/lib/guide";
 import { SceneIllustration } from "./SceneIllustration";
 import { MenuMusic, type MenuMusicProps } from "./MenuMusic";
+import { ArtworkContext, ArtworkViewer, type ViewableArt } from "./ArtworkViewer";
 
 export function GuideScreen({ artwork, music, onSettings }: { artwork: boolean; music: MenuMusicProps; onSettings: () => void }) {
   const [roll, setRoll] = useState<number | null>(null);
+  const [viewedArt, setViewedArt] = useState<ViewableArt | null>(null);
   const result = roll === null ? null : guideCheck(roll);
-  return <div className="guide-screen" data-testid="guide-screen">
+  return <ArtworkContext.Provider value={artwork ? setViewedArt : undefined}><div className="guide-screen" data-testid="guide-screen">
     <a className="skip" href="#guide-reading">Skip to the field guide</a>
     <header className="guide-topbar">
       <Link className="brand" href="/" prefetch={false}>Saint Shard <small>Kite City · 3055</small></Link>
@@ -90,5 +92,6 @@ export function GuideScreen({ artwork, music, onSettings }: { artwork: boolean; 
         <p className="fine">Corporate violence and memory editing. Original fiction. The city’s discoveries stay in the story.</p>
       </section>
     </main>
-  </div>;
+    {artwork && viewedArt && <ArtworkViewer art={viewedArt} onClose={() => setViewedArt(null)} />}
+  </div></ArtworkContext.Provider>;
 }

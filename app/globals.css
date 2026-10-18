@@ -1223,3 +1223,28 @@ html[data-text="0"] .finale .scene-row .portrait-frame figcaption { height: 3rem
 @media (min-width: 701px) {
   html[data-text="2"] .scene:not(.pivotal-scene) .scene-row .portrait-frame figcaption { height: 6.5rem; }
 }
+
+/* Paintings with the context actor need a compact identity strip, not a second tall portrait. */
+.scene-row[data-compact="true"] { grid-template-columns: minmax(0, 1fr); gap: .65rem; }
+.scene-row[data-compact="true"] .portrait-frame { display: grid; grid-template-columns: 44px minmax(0, 1fr); align-items: center; width: 100%; max-width: 32rem; }
+.scene-row[data-compact="true"] .portrait, .scene-row[data-compact="true"] .portrait-placeholder { width: 44px; aspect-ratio: 3 / 4; object-fit: contain; }
+.scene-row[data-compact="true"] .portrait-frame figcaption { height: 4.25rem; padding: .35rem .7rem; font-size: .85rem; line-height: 1.25; }
+.scene-row[data-compact="true"] .portrait-role { display: block; }
+html[data-text="2"] .scene-row[data-compact="true"] .portrait-frame figcaption { height: 5rem; }
+.scene-illustration figcaption { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .3rem .7rem; }
+.scene-illustration .art-view { min-height: 44px; padding: .35rem .6rem; font-size: .8rem; }
+.gear li { display: flex; align-items: flex-start; gap: .75rem; }
+.gear-copy { min-width: 0; flex: 1; }
+.gear-copy strong { display: block; }
+.inventory-art { flex: none; width: 64px; padding: 0; border: 1px solid var(--line); background: #17191a; border-radius: .25rem; overflow: hidden; }
+.equipment-tile { position: relative; display: block; width: 100%; aspect-ratio: 1; overflow: hidden; background: #17191a; }
+.equipment-tile img { position: absolute; width: 400%; height: 400%; max-width: none; display: block; }
+.dialog.artwork-dialog { width: min(1100px, 100%); }
+.artwork-heading { display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: .75rem; }
+.artwork-heading h2 { flex: 1; min-width: min(100%, 12rem); margin: 0; font-size: 1.15rem; }
+.artwork-controls .actions { align-items: center; margin: .7rem 0; }
+.artwork-controls output { min-width: 3rem; text-align: center; font-variant-numeric: tabular-nums; }
+.artwork-viewport { max-height: 60dvh; overflow: auto; overscroll-behavior: contain; background: #101216; border: 1px solid var(--line); }
+.artwork-canvas { margin-inline: auto; }
+.artwork-canvas > img { display: block; width: 100%; height: auto; max-width: none; }
+.equipment-canvas { max-width: none; }

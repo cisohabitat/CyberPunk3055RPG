@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { DialogFrame } from "./DialogFrame";
 import { CastCard } from "./CastCard";
+import { InventoryIllustration } from "./InventoryIllustration";
 import { Mark, originAccent } from "@/components/Mark";
 import { COMPLICATIONS, FACTIONS, FACTION_CHECK, FACTION_INFO, ORIGINS, STATS, STAT_INFO } from "@/lib/character";
 import { ITEMS } from "@/lib/items";
@@ -151,8 +152,9 @@ export function Sheet({ state, open, onClose, speaker, visibleText, artwork = tr
           {state.items.length === 0 && <li className="empty">Pockets empty, which is a kind of honesty.</li>}
           {state.items.map((id) => (
             <li key={id}>
-              <strong>{ITEMS[id]?.name ?? id}</strong>
-              <span>{id === "shard" && state.flags.ash ? "Damaged. Half a voice, flickering." : ITEMS[id]?.blurb}</span>
+              {tab === "gear" && artwork && Object.hasOwn(ITEMS, id) && <InventoryIllustration key={`${id}-${Boolean(state.flags.ash)}`} id={id} name={ITEMS[id].name} damaged={Boolean(state.flags.ash)} />}
+              <div className="gear-copy"><strong>{Object.hasOwn(ITEMS, id) ? ITEMS[id].name : id}</strong>
+              <span>{id === "shard" && state.flags.ash ? "Damaged. Half a voice, flickering." : Object.hasOwn(ITEMS, id) ? ITEMS[id].blurb : ""}</span></div>
             </li>
           ))}
         </ul>

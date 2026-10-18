@@ -122,3 +122,7 @@ Two original generated paintings by `image_gen.imagegen`, using the existing ope
 ### Confrontation and held case (17 October 2026)
 
 Two `image_gen.imagegen` paintings use the existing attendant portrait/service corridor and canal dispatch painting as references. The attendant retains the established identity; the closed case depicts only an unresolved collection. Original PNGs retained, delivery resized/encoded only, source/reference/delivery hashes in `qa/media/story-first-art.json`. Exact actor dialogue and every audio file remain unchanged.
+
+### Equipment and earned moments (18 October 2026)
+
+Three original paintings by `image_gen.imagegen`: a consistent equipment atlas for fourteen items plus a damaged-shard variant; Mara's chipped cup after a shared hour; and a separately held archive original after custody is agreed. Existing signature-material, Mara-window and archive-desk paintings supplied references. Original generated PNG masters are retained outside Git. Six delivery JPEGs only resize and encode; CSS clips equipment cells without editing the generated atlas. Provenance and source/reference/delivery hashes are in `qa/media/visual-library.json` and `art-provenance.json`. No new actor, voice performance, permission or evidence is implied.

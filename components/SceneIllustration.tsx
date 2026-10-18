@@ -1,8 +1,10 @@
 import type { Illustration } from "@/lib/art";
 import { artAtmosphere } from "@/lib/art-atmosphere";
 import { useEffect, useRef, useState } from "react";
+import { useArtworkViewer } from "./ArtworkViewer";
 
 export function SceneIllustration({ art, paired = false }: { art: Illustration; paired?: boolean }) {
+  const view = useArtworkViewer();
   const [failedSource, setFailedSource] = useState<string>();
   const atmosphere = artAtmosphere(art.src);
   const windowRef = useRef<HTMLDivElement>(null);
@@ -24,6 +26,6 @@ export function SceneIllustration({ art, paired = false }: { art: Illustration; 
     {failed ? <p className="art-unavailable">{art.description}</p> : <img src={art.src} srcSet={`${art.small} 600w, ${art.src} 1200w`} sizes={sizes} width={1200} height={800} alt={art.description} loading="lazy" decoding="async" onLoad={() => setLoadedSource(art.src)} onError={() => setFailedSource(art.src)} />}
     {!failed && loadedSource === art.src && visibleSource === art.src && atmosphere && <span className="art-atmosphere" data-testid="art-atmosphere" data-effect={atmosphere} aria-hidden="true" />}
     </div>
-    <figcaption>{art.caption}</figcaption>
+    <figcaption><span>{art.caption}</span>{view && !failed && <button className="ghost art-view" type="button" aria-label={`View artwork: ${art.caption}`} aria-haspopup="dialog" onClick={() => view(art)}>View artwork</button>}</figcaption>
   </figure>;
 }

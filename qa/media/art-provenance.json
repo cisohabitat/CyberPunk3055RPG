@@ -2742,6 +2742,99 @@
           "sha256": "2e19357b32406b7921882f28eb63517963d5ac4783074e3b882c487e4def6093"
         }
       ]
+    },
+    {
+      "id": "equipment-atlas",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-45ccc801-1498-4a3e-bdc0-3aaee1f99784.png",
+      "sourceSha256": "ed3d88f494044f6763bdc77e23eab863fb7e689365e416806dad16c3384ffadf",
+      "references": [
+        {
+          "path": "public/art/fragment-signature.jpg",
+          "sha256": "d587dea6f54a2ac5bfe45961d1d499248133a7bb397a15e1ca7bca9735502764"
+        }
+      ],
+      "promptSummary": "Fourteen known inventory objects and a damaged-shard variant, illustrated without readable identities or new mechanical claims; a 4 by 4 CSS viewport displays only the owned item.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained. Equipment tiles are CSS viewports of the unchanged atlas.",
+      "files": [
+        {
+          "path": "public/art/equipment-atlas.jpg",
+          "width": 1600,
+          "height": 1600,
+          "bytes": 266885,
+          "sha256": "167a20e1efbcc80763cc9ae5473c38a238eb1ea24b2cbf19e7bb4b3753de448f"
+        },
+        {
+          "path": "public/art/equipment-atlas-small.jpg",
+          "width": 800,
+          "height": 800,
+          "bytes": 84173,
+          "sha256": "b0fa045ed950b3de78919dd22f347c766d674e53afcd5d90ee0dc38128ab7c95"
+        }
+      ]
+    },
+    {
+      "id": "mara-shared-hour",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-480e6cd8-7697-48d9-979d-554d2805ab83.png",
+      "sourceSha256": "86b1e58f4d08b99b9a3bfe38be0cc4eb68e7fa54f21e5dae8dad4b6be0421c86",
+      "references": [
+        {
+          "path": "public/art/mara-window.jpg",
+          "sha256": "493ae2aa5f2c324140ed8639d3acf04b27e2c7fa5661a7a3ea0c0c2c4beb38bc"
+        }
+      ],
+      "promptSummary": "Only after choosing to stay: Mara turns her chipped cup. No dispatch receipt, treatment, public permission or absolution is depicted.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained. Equipment tiles are CSS viewports of the unchanged atlas.",
+      "files": [
+        {
+          "path": "public/art/mara-shared-hour.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 202525,
+          "sha256": "ccbbc0d127c25864c2602e720d0fc8327b139fe70ad51ef805c5753f23009089"
+        },
+        {
+          "path": "public/art/mara-shared-hour-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 55490,
+          "sha256": "52c14ea9cb16da44696823d432e334327f6019a721c603e438af7fc074daf6ee"
+        }
+      ]
+    },
+    {
+      "id": "archive-held-original",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-f2dac5c1-a8c5-4a36-9dd2-80ae49c52252.png",
+      "sourceSha256": "5a58b7b0a8f647c5b61a012b9a96dc8599630007ab9c6528c847179309e798e9",
+      "references": [
+        {
+          "path": "public/art/archive-desk.jpg",
+          "sha256": "3380a27c045a88e14ed668eac830ff10184f802149f877fd5d5348b64f51c2b2"
+        }
+      ],
+      "promptSummary": "Only agreed custody at the Ward Nine return: the closed original and circulating copy remain separate. No authentication, readable identity or resolved employer risk is depicted.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained. Equipment tiles are CSS viewports of the unchanged atlas.",
+      "files": [
+        {
+          "path": "public/art/archive-held-original.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 246122,
+          "sha256": "4e1dfb9241e74fe5dd8aa82f874af2a51347824ca71f93663aafb6fed737ce71"
+        },
+        {
+          "path": "public/art/archive-held-original-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 67153,
+          "sha256": "52394407135df82fe040b3e7b1a63fdf52715de9c58414262242514ee953f1bf"
+        }
+      ]
     }
   ]
 }

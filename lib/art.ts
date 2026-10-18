@@ -11,6 +11,19 @@ const PLACES: { test: (location: string) => boolean; src: string }[] = [
 ];
 
 export type Illustration = { src: string; small: string; caption: string; description: string };
+export type ViewableArt = Illustration & { tile?: number };
+/** Only paintings that already carry the context actor receive a shorter identity strip. */
+const PAINTED_ACTORS: Record<string, readonly string[]> = {
+  "/art/quill-offer.jpg": ["Quill"], "/art/mara-revelation.jpg": ["Mara"],
+  "/art/mara-present.jpg": ["Mara"], "/art/mara-window.jpg": ["Mara"], "/art/mara-shared-hour.jpg": ["Mara"],
+  "/art/nia-arrival.jpg": ["Nia Pell"], "/art/kerr-handover.jpg": ["Kerr"],
+  "/art/edda-archive.jpg": ["Edda"], "/art/sera-hearing.jpg": ["Sera"],
+  "/art/nia-transfer.jpg": ["Nia Pell"], "/art/asa-dispatch.jpg": ["Asa"], "/art/ives-hearing.jpg": ["Ives"],
+  "/art/attendant-confrontation.jpg": ["Masked attendant"],
+};
+export function paintedActor(art: Illustration | undefined, speaker: string | undefined): boolean {
+  return Boolean(art && speaker && Object.hasOwn(PAINTED_ACTORS, art.src) && PAINTED_ACTORS[art.src].includes(speaker));
+}
 export const TITLE_ART: Illustration = {
   src: "/art/title.jpg", small: "/art/title-small.jpg", caption: "Kite City · an hour of memory",
   description: "Symbolic title art: a lone runner studies a luminous glass memory shard above Kite City's rainy walkways, beneath an immense blue dome.",
@@ -87,6 +100,17 @@ export const ILLUSTRATION_STAGING = [
     scenes: ["act3_arrival"], allFlags: ["testimony_done", "testimony_published"], anyFlags: [], noneFlags: ["testimony_withdrawn"],
     illustration: { src: "/art/hearing-filed.jpg", small: "/art/hearing-filed-small.jpg", caption: "Ward Nine · the bounded account is filed", description: "A slim public-account folder rests in an ordinary records tray beside a set-down pencil and stopped recorder; a separate dark privacy sleeve stays closed away from the tray. No names, addresses or authenticated seal are legible." },
     reason: "Only completed publication at the return to the wall shows the public filing tray. Drafts, discussion and withdrawal retain neutral art. Private sources remain separate, and publication supplies no new evidence, verdict or witness permission.",
+  },
+  {
+    scenes: ["act2_mara_company_kept"], allFlags: ["mara_company_chosen"], anyFlags: ["mara_company_courier", "mara_company_waited"],
+    noneFlags: ["mara_company_left", "mara_company_declined"],
+    illustration: { src: "/art/mara-shared-hour.jpg", small: "/art/mara-shared-hour-small.jpg", caption: "Ward Four · the cup turns", description: "Mara holds her ordinary chipped cup beside the rainy clinic window, its notch toward the glass; the edge of the visitor chair remains in the foreground. No reply or recorder is displayed." },
+    reason: "Only the committed choice to stay permits the shared-hour cup detail. Courier and deferred dispatch retain separate prose and no receipt, treatment, public permission or absolution is depicted.",
+  },
+  {
+    scenes: ["act3_edda_visit"], allFlags: ["archive_custody"], anyFlags: [], noneFlags: [],
+    illustration: { src: "/art/archive-held-original.jpg", small: "/art/archive-held-original-small.jpg", caption: "Ward Nine · the original stays separate", description: "A closed source ledger rests in a dark protective sleeve on the records table, apart from a folded paper copy; a pencil lies between them. No legible identity, authenticated seal or review verdict is displayed." },
+    reason: "Only agreed custody permits the separately held original at the Ward Nine return. Both named and withheld copies retain their actual employer risk in prose; the painting adds no digital authentication, permission or resolved records review.",
   },
 ] as const;
 export function sceneIllustration(sceneId: string, flags: Readonly<Record<string, boolean>> = {}): Illustration | undefined {

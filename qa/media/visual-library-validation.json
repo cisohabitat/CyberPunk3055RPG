@@ -1,0 +1,154 @@
+{
+  "date": "2026-10-18",
+  "precedingRevision": "427fa2a863668bfc4ebb594051d59b516377ceb7",
+  "scope": "Final working tree before push; GitHub exact-commit checks and Vercel remain the release authority.",
+  "sourceSha256": {
+    "app/globals.css": "6861da4189e3761bd2eca0d00766516eb146e23e09520d049d9076e684deebb7",
+    "components/ArtworkViewer.tsx": "d811872159dba5caa2ca27538c174684f413d5b5495c776abda9779410095c23",
+    "components/InventoryIllustration.tsx": "67e9a2cc28f05a0edcf4da860c41233090bd7f17ee818efd641303dcf7ab9e2f",
+    "components/SceneIllustration.tsx": "351f41c768da4707a097072e3c8930820180e8f8a945cc9c8333d1fd762a0916",
+    "components/Portrait.tsx": "6213d06c385509eea2c955cddd009dc6834991465ecbef8921a4164464a1ba92",
+    "components/PlayScreen.tsx": "a1fb2d59e29206e09fe0a9c15488a77739f88d0e70c73b64d703a8759ea6935b",
+    "components/Sheet.tsx": "b64e6428a6ab04a387145a63efea9a912fbe6c9d5ab0b413408879fdf78f5cc0",
+    "components/GuideScreen.tsx": "fab2bc4c3de24ed2204440dc869c4f4d3c19434dd49fde4a531f2791c20baf0a",
+    "lib/art.ts": "3f0cc2106ba44eff13e54b7f1a36c9628807728676e79c1c02c2441a493ee72d",
+    "lib/inventory-art.ts": "43e813082a82d8bf06a3a9e02070615ad4e6bdc9a292a24f731c064d08e5636b",
+    "lib/visual-library.test.ts": "b122c79d4d7cf58280e9e64009dbcc57d40367eea642be7dbee618f9b3342674",
+    "tests/visual-library.spec.ts": "c48395f200b57b3adbcbc61d576a27883e2eec4280ef364b157a358cc384e642",
+    "tests/speaker-presentation.spec.ts": "0ddc4f98c77df9ba7ca731e93eeac71adb0f7080dbe5eb4bc6d5ad85ca91e555"
+  },
+  "sourceTests": {
+    "passed": 637,
+    "failed": 0
+  },
+  "build": "passed",
+  "productionReport": {
+    "scenes": 197,
+    "choices": 598,
+    "routes": 148,
+    "assets": 581,
+    "budgetViolations": []
+  },
+  "browserValidation": {
+    "projects": [
+      "chromium",
+      "phone"
+    ],
+    "initialRegressionChecks": 106,
+    "finalChecks": 58,
+    "overlappingSuites": true,
+    "fitAndTabRegression": {
+      "initialFailures": 4,
+      "initialPasses": 14,
+      "resolution": "Fit now respects both viewport dimensions; Tab and Shift+Tab explicitly wrap viewer controls. All final checks pass."
+    },
+    "verified": [
+      "all 15 audible actors",
+      "all four finales",
+      "14 owned inventory items and damaged shard",
+      "earned and neutral story art",
+      "nested mobile focus return",
+      "loading and playing voice consumption",
+      "keyboard zoom, Fit and focus wrapping",
+      "missing full-size art",
+      "guide viewer",
+      "text-only zero art requests",
+      "unchanged saved state"
+    ],
+    "localHostLimit": "Firefox profile launch and WebKit host libraries unavailable locally; all four engines remain mandatory in hosted CI."
+  },
+  "nativeFirstVisitProbe": {
+    "initialTransferBudget": 2097152,
+    "samples": [
+      {
+        "sceneId": "opening_city",
+        "width": 390,
+        "height": 844,
+        "artwork": "full",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 2150,
+        "network": "Emulated 5 Mbps / 150 ms",
+        "elapsedToReadyMs": 4326,
+        "encodedResourceBytes": 1677720,
+        "htmlBytes": 2334,
+        "titleLcpMs": 1376,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 3,
+        "goalVisible": true
+      },
+      {
+        "sceneId": "opening_city",
+        "width": 390,
+        "height": 844,
+        "artwork": "none",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 2550,
+        "network": "Emulated 5 Mbps / 150 ms",
+        "elapsedToReadyMs": 2606,
+        "encodedResourceBytes": 432543,
+        "htmlBytes": 2334,
+        "titleLcpMs": 1308,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 0,
+        "goalVisible": true
+      },
+      {
+        "sceneId": "opening_city",
+        "width": 1440,
+        "height": 900,
+        "artwork": "full",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 1374,
+        "network": "Unthrottled automation host",
+        "elapsedToReadyMs": 1613,
+        "encodedResourceBytes": 2015936,
+        "htmlBytes": 2334,
+        "titleLcpMs": 372,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 3,
+        "goalVisible": true
+      },
+      {
+        "sceneId": "opening_city",
+        "width": 1440,
+        "height": 900,
+        "artwork": "none",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 1483,
+        "network": "Unthrottled automation host",
+        "elapsedToReadyMs": 1603,
+        "encodedResourceBytes": 1097260,
+        "htmlBytes": 2334,
+        "titleLcpMs": 452,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 0,
+        "goalVisible": true
+      }
+    ],
+    "limitations": [
+      "Four synthetic samples on the automation host, not p75/p95 field data or named physical devices.",
+      "Elapsed-to-ready includes automated form entry and network-idle waits; it is not LCP or INP.",
+      "titleLcpMs measures this navigation's title screen. Encoded resource bytes are Resource Timing measurements, not all wire overhead.",
+      "A previously permitted visit can autoplay the separate 2.6 MB menu theme before gameplay; these samples measure the first-visit activation policy."
+    ]
+  },
+  "newMediaBytes": 922348,
+  "unchangedPaths": [
+    "lib/story",
+    "lib/engine.ts",
+    "lib/storage.ts",
+    "public/audio",
+    "qa/media/campaign-dialogue-bindings.json",
+    "qa/media/campaign-dialogue-provenance.json"
+  ],
+  "independentPlayerAcceptance": false,
+  "provisionalGrade": 8.2
+}

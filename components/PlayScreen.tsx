@@ -18,7 +18,8 @@ import { DialogFrame } from "@/components/DialogFrame";
 import { Mark, originAccent } from "@/components/Mark";
 import { Portrait } from "@/components/Portrait";
 import { Sheet } from "@/components/Sheet";
-import { DISTRICT_ART, sceneBackdrop, sceneIllustration, CHAPTER_BACKDROPS } from "@/lib/art";
+import { DISTRICT_ART, sceneBackdrop, sceneIllustration, CHAPTER_BACKDROPS, paintedActor } from "@/lib/art";
+import { ArtworkContext, ArtworkViewer, type ViewableArt } from "./ArtworkViewer";
 import { SceneIllustration } from "./SceneIllustration";
 import { PivotalScene } from "./PivotalScene";
 import { pivotalScene } from "@/lib/pivotal-scenes";
@@ -90,6 +91,9 @@ export function PlayScreen({
   const [pending, setPending] = useState<VisibleChoice | null>(null);
   const [sheetOpen, setSheetOpen] = useState(false);
   const [notebookOpen, setNotebookOpen] = useState(false);
+  const [viewedArt, setViewedArt] = useState<{ art: ViewableArt; scene: string } | null>(null);
+  const artworkOpen = preferences.artwork !== "none" && viewedArt?.scene === scene.id;
+  const compactHeader = preferences.artwork !== "none" && paintedActor(illustration, scene.speaker) && !scene.finale;
   const [confirmAbandon, setConfirmAbandon] = useState(false);
   const sound = preferences.sound && !audioPaused;
   const { mood, district } = sceneSoundPlan(state, scene.location, actName(state));
@@ -111,8 +115,8 @@ export function PlayScreen({
   const dialogueQueue = visibleCampaignDialogue(scene.id, scene.speaker, visibleText);
   const recordedChoice = state.pendingCheck ? choices.find((choice) => choice.id === state.pendingCheck?.choiceId) : null;
   const activeChoice = recordedChoice ?? pending;
-  const voicesEnabled = sound && preferences.voices > 0 && !modalOpen && !sheetOpen && !notebookOpen && !confirmAbandon && !activeChoice;
-  const sceneCuesEnabled = sound && preferences.effects > 0 && !modalOpen && !sheetOpen && !notebookOpen && !confirmAbandon && !activeChoice;
+  const voicesEnabled = sound && preferences.voices > 0 && !modalOpen && !sheetOpen && !notebookOpen && !artworkOpen && !confirmAbandon && !activeChoice;
+  const sceneCuesEnabled = sound && preferences.effects > 0 && !modalOpen && !sheetOpen && !notebookOpen && !artworkOpen && !confirmAbandon && !activeChoice;
   const playing = voicesEnabled && speaking?.scene === scene.id && dialogueQueue.some(line => line.key === speaking.key) ? speaking : null;
   const spokenRange = playing ? spokenDialogueRange(visibleText, playing) : undefined;
   let paragraphOffset = 0;
@@ -172,6 +176,7 @@ export function PlayScreen({
   useEffect(() => {
     setSheetOpen(false);
     setNotebookOpen(false);
+    setViewedArt(null);
     setPending(null);
     const reduce = preferences.motion === "reduce" || window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     setFlash(!reduce);
@@ -201,12 +206,13 @@ export function PlayScreen({
   useEffect(() => {
     function onKey(event: KeyboardEvent) {
       if (event.key === "Escape") {
+        if (artworkOpen) return;
         if (confirmAbandon) setConfirmAbandon(false);
         if (sheetOpen) setSheetOpen(false);
         if (notebookOpen) setNotebookOpen(false);
         return;
       }
-      if (!preferences.numberShortcuts || activeChoice || confirmAbandon || sheetOpen || notebookOpen || modalOpen || choices.length === 0) return;
+      if (!preferences.numberShortcuts || activeChoice || confirmAbandon || sheetOpen || notebookOpen || artworkOpen || modalOpen || choices.length === 0) return;
       if (event.target instanceof HTMLElement && event.target.closest("input, textarea, select, [contenteditable=true], #runner-sheet")) return;
       if (event.metaKey || event.ctrlKey || event.altKey || event.repeat) return;
       const number = Number(event.key);
@@ -247,7 +253,7 @@ export function PlayScreen({
   }
 
   return (
-    <div className="screen">
+    <ArtworkContext.Provider value={preferences.artwork !== "none" ? art => setViewedArt({ art, scene: scene.id }) : undefined}><div className="screen">
       <a className="skip" href="#choices">
         Skip to choices
       </a>
@@ -301,8 +307,8 @@ export function PlayScreen({
             data-testid="scene"
             style={{ backgroundImage: preferences.artwork === "none" || illustration ? undefined : `linear-gradient(180deg, rgba(9,8,13,0.72), rgba(9,8,13,0.94)), url(${sceneBackdrop(scene.id, scene.location)})` }}
           >
-            <div className="scene-row">
-              <Portrait speaker={playing?.speaker ?? scene.speaker} speaking={Boolean(playing)} sceneId={scene.id} flags={state.flags} origin={state.origin} handle={state.handle} artwork={preferences.artwork !== "none"} />
+            <div className="scene-row" data-compact={compactHeader ? "true" : "false"}>
+              <Portrait compact={compactHeader} speaker={playing?.speaker ?? scene.speaker} speaking={Boolean(playing)} sceneId={scene.id} flags={state.flags} origin={state.origin} handle={state.handle} artwork={preferences.artwork !== "none"} />
               <div>
                 <p className="kicker">
                   {scene.location}
@@ -327,7 +333,7 @@ export function PlayScreen({
                     <h1 data-testid="ending-title">{scene.endingTitle}</h1>
                   </>
                 )}
-                {scene.speaker && !scene.finale && (
+                {scene.speaker && !scene.finale && (!compactHeader || dialogueQueue.some(line => line.speaker !== scene.speaker)) && (
                   <p className="speaker">
                     {dialogueQueue.some(line => line.speaker !== scene.speaker) ? "With " : ""}
                     {scene.speaker}
@@ -461,6 +467,7 @@ export function PlayScreen({
         <Sheet state={state} speaker={scene.speaker} visibleText={visibleText} artwork={preferences.artwork !== "none"} open={sheetOpen} onClose={() => setSheetOpen(false)} />
       </div>
       {notebookOpen && <InvestigationNotebook state={state} onClose={() => setNotebookOpen(false)} />}
+      {artworkOpen && viewedArt && <ArtworkViewer key={`${viewedArt.art.src}-${viewedArt.art.tile ?? "scene"}`} art={viewedArt.art} onClose={() => setViewedArt(null)} />}
       {activeChoice?.check && (
         <CheckDialog
           state={state}
@@ -493,6 +500,6 @@ export function PlayScreen({
           </div>
         </DialogFrame>
       )}
-    </div>
+    </div></ArtworkContext.Provider>
   );
 }

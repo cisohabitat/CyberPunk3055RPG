@@ -87,7 +87,9 @@ it("locks nine revised deliveries to unchanged actors, words and bindings and re
 });
 
 it("reviews explicit outcome-art rules and stages actual actors without erasing guarded conduct",()=>{
-  assert.deepEqual(decisions.illustrationVariants,ILLUSTRATION_STAGING);assert.deepEqual(phase.illustrationVariants,ILLUSTRATION_STAGING);
+  assert.deepEqual(decisions.illustrationVariants,ILLUSTRATION_STAGING);
+  // Keep the preceding three-rule review intact; visual-library.test.ts covers the additive cohort.
+  assert.deepEqual(phase.illustrationVariants,ILLUSTRATION_STAGING.slice(0,phase.illustrationVariants.length));
   auditSceneArt(SCENES);
   const wrong=structuredClone(decisions);wrong.illustrationVariants[0].allFlags=["witness_safe"];
   assert.throws(()=>auditSceneArt(SCENES,wrong),/Conditional illustration catalog/);

@@ -10,6 +10,8 @@ Take a memory-retrieval job that draws you into Ward Nine’s history and the li
 
 Illustrated locations and character portraits accompany fixed voiced dialogue. A field guide introduces the setting and rules; reading, sound, artwork and accessibility settings let players adjust the presentation. Progress stays in the browser, with manual save slots and export/import. Play requires no account.
 
+The latest [visual library cycle](VISUAL_LIBRARY_CYCLE.md) adds compact actor strips beside character paintings, illustrated owned equipment, two more earned scene variants, and an accessible zoomable artwork viewer. Opening a painting interrupts dialogue safely and returns focus when closed. Artwork remains optional.
+
 ## Latest gameplay improvements
 
 The [distribution and witness phase](DISTRIBUTION_OVERLAP.md) makes overlapping commitments easier to follow:

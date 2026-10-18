@@ -59,7 +59,10 @@ for (const [width, artwork] of [[390, "full"], [1440, "full"], [320, "none"]] as
         await expect(portrait.locator("figcaption")).toContainText("Speaking");
         const caption = await portrait.locator("figcaption").boundingBox();
         const face = await portrait.locator("img, .portrait-placeholder").boundingBox();
-        expect(caption!.y).toBeGreaterThanOrEqual(face!.y + face!.height - 1);
+        if (await portrait.getAttribute("data-layout") === "compact") {
+          expect(caption!.x).toBeGreaterThanOrEqual(face!.x + face!.width - 1);
+          expect(face!.width).toBeLessThanOrEqual(64);
+        } else expect(caption!.y).toBeGreaterThanOrEqual(face!.y + face!.height - 1);
         expect(await portrait.locator(".portrait-name").evaluate(name => parseFloat(getComputedStyle(name).fontSize))).toBeGreaterThanOrEqual(11);
         const captionSize = await portrait.locator("figcaption").evaluate(caption => ({ content: caption.scrollHeight, frame: caption.clientHeight }));
         expect(captionSize.content, `${line.speaker}: caption must contain name, role and speaking cue`).toBeLessThanOrEqual(captionSize.frame + 1);

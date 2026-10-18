@@ -744,3 +744,9 @@ All five story-first visual stages are implemented. Validation includes 633 sour
 A Firefox follow-up gives desktop portrait captions more space at the largest text size, so a wrapped name, role and speaking cue fit without shrinking the text or moving during playback.
 
 CI now checks all speaker captions on every browser before the full campaign suite, providing earlier feedback on clipped text. All existing full browser and release checks remain required.
+
+## Equipment and artwork viewer
+
+Painted conversations now use a compact actor strip when the painting already shows the scene's character. Gear illustrates all fourteen inventory items, including a separate damaged-shard appearance; equipment art loads only when Gear is opened. Scene paintings, guide art and owned equipment have a keyboard-accessible viewer with 100–300% zoom, scrolling, Escape and focus return. Opening it stops the current dialogue queue; closing it does not repeat speech.
+
+Two earned paintings show Mara turning her chipped cup after you stay, and the separately held archive original on Edda's return after custody is agreed. Artwork remains optional and descriptive text remains available if images fail. The story, voices, rules and saves retain their existing meaning. See [the visual library cycle](docs/VISUAL_LIBRARY_CYCLE.md) for asset provenance and verification.
