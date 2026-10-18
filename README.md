@@ -792,3 +792,13 @@ Playback and closed transcript controls sit closer together, with complete live 
 Edda’s service-counter painting now has two separate arms and two hands resting on the counter. The confusing chest-hand/book pose is removed; her identity, three review documents and unresolved scene meaning are preserved. The full image, phone image and loading preview use the corrected painting together.
 
 A second visual pass covered all 146 primary/portrait/cast images and 165 smaller versions, including an additional arm-and-hand detail pass over 22 character paintings. One faulty composition was corrected; no further defect was confirmed by this AI review. The [art anatomy report](docs/ART_ANATOMY_REVIEW.md) records findings and limits. Previous image bytes and audit records remain available offline for comparison; story and voice recordings are unchanged.
+
+## Districts, decisions and source documents
+
+Regular scene headers group the speaker, place and goal more tightly on tablet and desktop. Artwork captions and viewer buttons sit together beside the framed painting. Eight known districts have restrained accent colors and distinct emblems, including Chapel arches, Helion’s tower and the canal’s waterways; the exact location remains written out.
+
+Choices distinguish actions, checks and static departures with symbols and border shapes. A small legend explains mixed choices, while hover, keyboard focus, pressing and unavailable approaches have distinct treatments. Labels, numbering, requirements and committed outcomes stay the same.
+
+Acquired evidence uses readable document layouts for memory, archive, witness and interpretation records. Each retains its original words and any existing timestamp/provenance; stamps state only whether it was recorded as a fact, claim or promise. Source authentication and quotation permission remain separate.
+
+Portraits and paintings share a quieter matte/frame finish. Fourteen older portrait exports receive mild display exposure compensation, including their cast views; high contrast and the full artwork viewer retain original exposure. All 311 art deliveries and voice recordings remain unchanged, including Edda’s corrected pose. See the [five-stage visual direction report](docs/VISUAL_DIRECTION_CYCLE.md).

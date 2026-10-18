@@ -1409,3 +1409,88 @@ html[data-text="2"] .scene-row[data-compact="true"] .portrait-frame figcaption {
 .voice-line > details { order: 2; flex-basis: auto; margin-inline-start: auto; max-width: 100%; }
 .voice-line > details > summary { font-size: .8rem; padding-block: .45rem; }
 .voice-line > details[open] { order: 4; flex-basis: 100%; margin-inline-start: 0; }
+
+/* Regular scenes: one compact introduction, with a caption beside the framed painting. */
+.scene-row[data-composition="reading"] { padding-bottom: .8rem; border-bottom: 1px solid var(--line); }
+.reading-art:not([data-unavailable="true"]) { border: 0; background: transparent; column-gap: .75rem; }
+.reading-art:not([data-unavailable="true"]) .art-window { border: 1px solid var(--line); }
+.reading-art:not([data-unavailable="true"]) figcaption { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: .5rem; padding: .25rem .25rem .25rem .35rem; }
+.reading-art:not([data-unavailable="true"]) figcaption > span { margin: 0; }
+.reading-art:not([data-unavailable="true"]) .art-view { width: auto; max-width: 100%; }
+@media (min-width: 701px) {
+  .scene-row[data-composition="reading"][data-compact="true"] { grid-template-columns: minmax(10.5rem,13rem) minmax(0,1fr); align-items: center; gap: 1rem; }
+  .scene-row[data-composition="reading"][data-compact="true"] .portrait-frame { max-width: none; }
+  .reading-art:not([data-unavailable="true"]) { grid-template-columns: minmax(0,40%) minmax(0,1fr); column-gap: 1rem; }
+}
+
+/* Place identity decorates the frame, never allegiance, source status or prose color. */
+:where(.scene, .district-nodes > li) { --district-tone: #d1c5ac; --district-wash: rgba(209,197,172,.07); }
+[data-district="market"] { --district-tone: #efbe86; --district-wash: rgba(239,190,134,.07); }
+[data-district="chapel"] { --district-tone: #d1bfff; --district-wash: rgba(209,191,255,.07); }
+[data-district="canal"] { --district-tone: #8fd2db; --district-wash: rgba(143,210,219,.07); }
+[data-district="spire"] { --district-tone: #bbd8f6; --district-wash: rgba(187,216,246,.07); }
+[data-district="shelter"] { --district-tone: #b6d7b0; --district-wash: rgba(182,215,176,.07); }
+[data-district="clinic"] { --district-tone: #ecd6c4; --district-wash: rgba(236,214,196,.07); }
+[data-district="clinic-service"] { --district-tone: #a6cddd; --district-wash: rgba(166,205,221,.07); }
+[data-district="ward-nine"] { --district-tone: #e1cfa0; --district-wash: rgba(225,207,160,.07); }
+.scene .scene-row { border-top: 2px solid var(--district-tone); padding-top: .8rem; }
+.scene .kicker { color: var(--district-tone); }
+.district-emblem { display: inline-flex; align-items: center; justify-content: center; width: 1.8rem; height: 1.8rem; border: 1px solid currentColor; margin-right: .5rem; vertical-align: middle; background: var(--district-wash); }
+.scene[data-district="chapel"] .district-emblem { border-radius: 50% 50% 0 0; }
+.scene[data-district="spire"] .district-emblem { border-style: double; border-width: 3px; }
+.scene[data-district="ward-nine"] .district-emblem { border-inline-width: 3px; }
+.district-nodes > li { border-top: 2px solid var(--district-tone); }
+.district-nodes .district-label > .ui-symbol { color: var(--district-tone); }
+.district-nodes > li[aria-current="location"] { box-shadow: inset 3px 0 var(--district-tone); background: var(--district-wash); }
+
+/* Choice shape and interaction distinguish an attempt, a move and an ordinary action. */
+.choices .choice, .choices.cards .choice { grid-template-columns: auto minmax(0,1fr) auto; border: 1px solid var(--line); border-left: 3px solid var(--district-tone, var(--cyan)); transition: background-color 120ms ease, border-color 120ms ease, box-shadow 120ms ease; }
+.choice[data-choice-kind="check"] { border-left-style: double; border-left-width: 5px; }
+.choice[data-choice-kind="travel"] { border-left-style: dashed; }
+.choice > .index { grid-column: 1; grid-row: span 2; }
+.choice > .label { grid-column: 2; }
+.choice-action-mark { grid-column: 3; grid-row: span 2; align-self: center; display: inline-flex; color: var(--muted); font-size: 1rem; }
+.choice-legend { display: flex; flex-wrap: wrap; gap: .4rem 1rem; color: var(--muted); font: .75rem/1.5 var(--font-display), sans-serif; margin: .6rem 0; }
+.choice-legend > span { display: inline-flex; align-items: center; gap: .3rem; }
+.choice:disabled .choice-action-mark { color: var(--dim); }
+.choices .choice:disabled { border-style: dashed; border-width: 1px; background: transparent; opacity: 1; }
+.choices .choice:hover:not(:disabled) { border-color: var(--district-tone, var(--cyan)); background: #191d26; box-shadow: inset 0 0 0 1px var(--line); }
+.choices .choice:focus-visible { outline: 3px solid var(--cyan); outline-offset: 4px; background: #191d26; box-shadow: none; }
+.choices .choice:active:not(:disabled) { background: #242a35; border-color: var(--ink); box-shadow: inset 0 2px 6px rgba(0,0,0,.5); }
+.choices .choice[data-available="false"] .choice-meta[data-kind="unavailable"] { border-left: 2px dashed var(--dim); padding-left: .55rem; }
+html[data-motion="reduce"] .choices .choice { transition: none; }
+@media (prefers-reduced-motion: reduce) { .choices .choice { transition: none; } }
+@media (forced-colors: active) {
+  .choices .choice { border-color: ButtonText; }
+  .choices .choice:disabled { border-color: GrayText; }
+  .choices .choice:focus-visible { outline-color: Highlight; }
+}
+
+/* Acquired source documents: real text and recorded kinds, never invented official seals. */
+.notebook-records .record-document { position: relative; isolation: isolate; background: #171a21; border-top: 3px solid var(--record-tone); border-left-width: 1px; box-shadow: 0 3px 0 #090b10; padding: 1rem 1.1rem; }
+.record-document::before { content: ""; display: block; position: absolute; inset: 0; pointer-events: none; z-index: -1; background: linear-gradient(110deg,rgba(243,236,223,.035),transparent 48%); }
+.record-document[data-source-group="memory"] { border-top-style: double; border-top-width: 5px; }
+.record-document[data-source-group="archive"] { border-bottom: 3px double var(--line); }
+.record-document[data-source-group="witness"] { border-left: 3px solid var(--record-tone); }
+.record-document[data-source-group="interpretation"] { border-top-style: dashed; }
+.record-document .record-heading { padding-bottom: .65rem; border-bottom: 1px solid var(--line); }
+.record-document .record-kind { display: flex; align-items: center; flex-wrap: wrap; gap: .45rem .8rem; margin: .75rem 0; }
+.document-group { flex: 1 1 10rem; }
+.record-stamp { display: inline-block; padding: .2rem .45rem; border: 1px solid currentColor; font-size: .75rem; line-height: 1.5; }
+.record-document[data-kind="claim"] .record-stamp { border-style: dashed; }
+.record-document[data-kind="promise"] .record-stamp { border-style: double; border-width: 3px; }
+.record-document .notebook-provenance { padding: .5rem .7rem; border-left: 2px solid var(--line); background: #11141b; font-size: .85rem; }
+.record-document .document-text { color: var(--ink); max-width: 65ch; font-size: 1rem; line-height: 1.8; }
+@media (max-width: 700px) {
+  .notebook-records .record-document { padding: .85rem; }
+  .record-document .record-heading { padding-bottom: .45rem; }
+  .record-document .record-kind { margin: .55rem 0; }
+}
+
+/* Shared matte and restrained exposure compensation for older portrait exports. */
+.portrait-frame, .portrait-frame figcaption, .scene-illustration .art-window, .cast-portrait, .cast-profile-portrait { background-color: #10141b; }
+.portrait-frame, .scene-illustration .art-window { box-shadow: 0 1px 0 rgba(243,236,223,.08), 0 6px 18px rgba(0,0,0,.18); }
+.portrait-frame[data-finish="legacy-paint"] .portrait, .cast-portrait[data-finish="legacy-paint"], .cast-profile-portrait[data-finish="legacy-paint"] { filter: brightness(1.07) contrast(.95); }
+html[data-contrast="high"] .portrait-frame .portrait, html[data-contrast="high"] .cast-portrait, html[data-contrast="high"] .cast-profile-portrait { filter: none; }
+html[data-contrast="high"] .district-emblem, html[data-contrast="high"] .record-document { background: #09080d; box-shadow: none; }
+html[data-contrast="high"] .record-document::before { display: none; }

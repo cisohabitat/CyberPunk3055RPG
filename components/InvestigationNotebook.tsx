@@ -33,10 +33,10 @@ export function InvestigationNotebook({ state, onClose }: { state: GameState; on
       <dl className="permission-cards"><div><dt><Symbol name="archive" /> Cancellation</dt><dd>{readiness.cancellation}</dd></div><div><dt><Symbol name="permission" /> Public quotation</dt><dd>{readiness.quotation}</dd></div></dl>
     </section>
     <details className="notebook-explainer"><summary>About these records</summary><p className="hint">Records keep their original wording and recorded status. A later source or correction stays separate. Filtering changes this view, not the account.</p></details>
-    {visible.length ? <ol className="notebook-records" aria-label="Matching acquired records">{visible.map(record => <RecordCard key={record.id} title={record.title} kind={record.kind} testId={`notebook-${record.id}`}>
-      <p className="record-kind"><Symbol name={record.group === "interpretation" ? "claim" : record.group} /> {SOURCE_GROUPS.find(group => group.id === record.group)!.label} · Recorded as {record.kind}</p>
+    {visible.length ? <ol className="notebook-records" aria-label="Matching acquired records">{visible.map(record => <RecordCard key={record.id} title={record.title} kind={record.kind} document={record.group} testId={`notebook-${record.id}`}>
+      <p className="record-kind"><span className="document-group"><Symbol name={record.group === "interpretation" ? "claim" : record.group} /> {SOURCE_GROUPS.find(group => group.id === record.group)!.label}</span><span className="record-stamp">Recorded as {record.kind}</span></p>
       {record.time && <p className="notebook-provenance"><strong>{record.time}</strong> · {record.provenance}</p>}
-      <p>{record.text}</p>
+      <p className="document-text">{record.text}</p>
     </RecordCard>)}</ol> : <p data-testid="notebook-empty">No acquired records match. Try another phrase or show all records.</p>}
   </DialogFrame>;
 }

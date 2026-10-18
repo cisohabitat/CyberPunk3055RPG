@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "date": "2026-10-18",
+  "baseRevision": "dbf24d6270323d5904e7890be77ba0671d56e4b4",
+  "stages": [
+    {
+      "id": "scene-composition",
+      "scope": "Regular scene actor/location/goal header at tablet/desktop, close caption/viewer grouping, framed uncropped art; feature compositions retain their arrangements."
+    },
+    {
+      "id": "district-identity",
+      "scope": "Eight known-place emblems and restrained frame accents from the existing district registry; city fallback. No allegiance, discovery or outcome inferred."
+    },
+    {
+      "id": "choice-feedback",
+      "scope": "Action, check and static departure glyphs and borders, mixed-type legend, distinct hover/focus/pressed/unavailable states. Never evaluate a dynamic next function for decoration; labels, order, numbers, costs and legal choices unchanged."
+    },
+    {
+      "id": "source-documents",
+      "scope": "Source-group layouts with exact acquired text, original timestamp/provenance where available, and explicit recorded fact/claim/promise stamps. No fake official seal, new authentication or discovered source."
+    },
+    {
+      "id": "artwork-finish",
+      "scope": "Shared matte/frame and mild display-only exposure compensation on fourteen explicit older portrait exports, including matching cast thumbnails/profiles. High contrast bypasses compensation; the full artwork viewer shows raw deliveries."
+    }
+  ],
+  "deliveryChanges": 0,
+  "artDeliveriesPreserved": 311,
+  "artReviewSnapshot": "qa/media/anatomy-art-review.json",
+  "artReviewSnapshotSha256": "50a811c1281f308340c56da3b04fd088bc61633e6cd114c7e6be4f91d858c0c6",
+  "bindingSha256": "15ae8b35c16b330b545f001e23dc75b5f4bd131225347f616ab76c1b7088f0bd",
+  "legacyPortraits": [
+    "/art/quill.jpg",
+    "/art/quill-waiting.jpg",
+    "/art/lumen.jpg",
+    "/art/lumen-challenging.jpg",
+    "/art/lumen-guarded.jpg",
+    "/art/mara.jpg",
+    "/art/mara-boundary.jpg",
+    "/art/mara-questioning.jpg",
+    "/art/kerr.jpg",
+    "/art/kerr-closed.jpg",
+    "/art/ives.jpg",
+    "/art/sera.jpg",
+    "/art/sera-listening.jpg",
+    "/art/orderly.jpg"
+  ],
+  "displayFilter": "brightness(1.07) contrast(.95)",
+  "newCreativePainting": false,
+  "reviewLimits": "CSS display harmonization is not a redraw and cannot repair anatomy or guarantee stylistic equivalence. Earlier Edda anatomy correction remains intact. All source image/voice bytes and historical media records are unchanged."
+}

@@ -1,0 +1,470 @@
+{
+  "version": 1,
+  "date": "2026-10-18",
+  "baseRevision": "dbf24d6270323d5904e7890be77ba0671d56e4b4",
+  "scope": "Five-stage visual direction; precommit worktree local verification",
+  "source": {
+    "command": "npm test",
+    "passed": 658,
+    "failed": 0
+  },
+  "build": "npm run build passed",
+  "typescript": "npx tsc --noEmit passed after final test fixture changes",
+  "security": {
+    "command": "npm run security:audit",
+    "vulnerabilities": 0
+  },
+  "production": {
+    "scenes": 197,
+    "choices": 598,
+    "routes": 148,
+    "assets": 703,
+    "budgetViolations": []
+  },
+  "browser": {
+    "projects": [
+      "chromium",
+      "phone"
+    ],
+    "initialRun": {
+      "files": [
+        "visual-direction",
+        "reading-flow",
+        "player-screens",
+        "speaker-presentation",
+        "complete-art",
+        "composition-finish",
+        "story-first-visuals",
+        "visual-refinement"
+      ],
+      "passed": 258,
+      "failed": 4,
+      "failureReason": "New test incorrectly expected older Mara portrait in memo; canonical scene intentionally uses mara-remorse. No app change was made to satisfy this mistaken fixture."
+    },
+    "finalFeatureRun": {
+      "file": "visual-direction",
+      "passed": 32,
+      "failed": 0,
+      "note": "Uses the actual canonical older Mara portrait; includes new hover/press/unavailable checks."
+    },
+    "castRun": {
+      "files": [
+        "character-profiles",
+        "cast-portraits"
+      ],
+      "passed": 38,
+      "failed": 0
+    },
+    "existingRegressionCases": 234,
+    "finalFeatureCases": 32,
+    "castCases": 38,
+    "totalUniqueCurrentCasesVerified": 304,
+    "limits": "The three runs cover the same unchanged final application build; overlapping feature cases are counted once. Existing hosted full four-engine suites remain mandatory, not replaced by these local cases."
+  },
+  "visualCaptures": [
+    {
+      "sceneId": "act2_spire_sources",
+      "width": 390,
+      "screenshot": "/tmp/visual-direction-act2_spire_sources-390.png",
+      "errors": [],
+      "firstParagraphY": 650.875
+    },
+    {
+      "sceneId": "stall",
+      "width": 390,
+      "screenshot": "/tmp/visual-direction-stall-390.png",
+      "errors": [],
+      "firstParagraphY": 541.25
+    },
+    {
+      "sceneId": "front",
+      "width": 390,
+      "screenshot": "/tmp/visual-direction-front-390.png",
+      "errors": [],
+      "firstParagraphY": 555.875
+    },
+    {
+      "sceneId": "ward_wall",
+      "width": 390,
+      "screenshot": "/tmp/visual-direction-ward_wall-390.png",
+      "errors": [],
+      "firstParagraphY": 555.875
+    },
+    {
+      "sceneId": "act3_testimony_hearing",
+      "width": 390,
+      "screenshot": "/tmp/visual-direction-act3_testimony_hearing-390.png",
+      "errors": [],
+      "firstParagraphY": 473.078125
+    },
+    {
+      "sceneId": "lumen_deal",
+      "width": 390,
+      "screenshot": "/tmp/visual-direction-lumen_deal-390.png",
+      "errors": [],
+      "firstParagraphY": 555.875
+    },
+    {
+      "sceneId": "act2_spire_sources",
+      "width": 1440,
+      "screenshot": "/tmp/visual-direction-act2_spire_sources-1440.png",
+      "errors": [],
+      "firstParagraphY": 559.234375
+    },
+    {
+      "sceneId": "stall",
+      "width": 1440,
+      "screenshot": "/tmp/visual-direction-stall-1440.png",
+      "errors": [],
+      "firstParagraphY": 496.640625
+    },
+    {
+      "sceneId": "front",
+      "width": 1440,
+      "screenshot": "/tmp/visual-direction-front-1440.png",
+      "errors": [],
+      "firstParagraphY": 672.59375
+    },
+    {
+      "sceneId": "ward_wall",
+      "width": 1440,
+      "screenshot": "/tmp/visual-direction-ward_wall-1440.png",
+      "errors": [],
+      "firstParagraphY": 672.59375
+    },
+    {
+      "sceneId": "act3_testimony_hearing",
+      "width": 1440,
+      "screenshot": "/tmp/visual-direction-act3_testimony_hearing-1440.png",
+      "errors": [],
+      "firstParagraphY": 370.40625
+    },
+    {
+      "sceneId": "lumen_deal",
+      "width": 1440,
+      "screenshot": "/tmp/visual-direction-lumen_deal-1440.png",
+      "errors": [],
+      "firstParagraphY": 672.59375
+    },
+    {
+      "sceneId": "act2_spire_sources",
+      "width": 320,
+      "screenshot": "/tmp/visual-direction-act2_spire_sources-320.png",
+      "errors": [],
+      "firstParagraphY": 998.65625
+    },
+    {
+      "sceneId": "stall",
+      "width": 320,
+      "screenshot": "/tmp/visual-direction-stall-320.png",
+      "errors": [],
+      "firstParagraphY": 854.171875
+    },
+    {
+      "sceneId": "front",
+      "width": 320,
+      "screenshot": "/tmp/visual-direction-front-320.png",
+      "errors": [],
+      "firstParagraphY": 953.828125
+    },
+    {
+      "sceneId": "ward_wall",
+      "width": 320,
+      "screenshot": "/tmp/visual-direction-ward_wall-320.png",
+      "errors": [],
+      "firstParagraphY": 840.265625
+    },
+    {
+      "sceneId": "act3_testimony_hearing",
+      "width": 320,
+      "screenshot": "/tmp/visual-direction-act3_testimony_hearing-320.png",
+      "errors": [],
+      "firstParagraphY": 743.03125
+    },
+    {
+      "sceneId": "lumen_deal",
+      "width": 320,
+      "screenshot": "/tmp/visual-direction-lumen_deal-320.png",
+      "errors": [],
+      "firstParagraphY": 926.640625
+    }
+  ],
+  "finishAndCastCaptures": [
+    {
+      "width": 390,
+      "contrast": "standard",
+      "path": "/tmp/visual-direction-finish-390-standard.png",
+      "filter": "brightness(1.07) contrast(0.95)"
+    },
+    {
+      "width": 390,
+      "contrast": "high",
+      "path": "/tmp/visual-direction-finish-390-high.png",
+      "filter": "none"
+    },
+    {
+      "width": 1440,
+      "contrast": "standard",
+      "path": "/tmp/visual-direction-finish-1440-standard.png",
+      "filter": "brightness(1.07) contrast(0.95)"
+    },
+    {
+      "width": 1440,
+      "contrast": "high",
+      "path": "/tmp/visual-direction-finish-1440-high.png",
+      "filter": "none"
+    },
+    {
+      "width": 390,
+      "cast": "Sister Lumen",
+      "src": "/art/lumen.jpg",
+      "filter": "brightness(1.07) contrast(0.95)"
+    },
+    {
+      "width": 1440,
+      "cast": "Sister Lumen",
+      "src": "/art/lumen.jpg",
+      "filter": "brightness(1.07) contrast(0.95)"
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "/tmp/visual-direction-act2_spire_sources-1440.png",
+      "sha256": "c77e362b15e01bf2119a4383293c01e891843e88daa68a0bf97badc3b6cdd78c"
+    },
+    {
+      "path": "/tmp/visual-direction-act2_spire_sources-320.png",
+      "sha256": "073a255960aba06aeaf3cc8bd7e75de0dbe34011cf0c0953089126e9a1a54ecb"
+    },
+    {
+      "path": "/tmp/visual-direction-act2_spire_sources-390.png",
+      "sha256": "0a96350bf7de240a028488ffa6b2310e086abf93ff232d1f3f211d76eef22842"
+    },
+    {
+      "path": "/tmp/visual-direction-act3_testimony_hearing-1440.png",
+      "sha256": "b2d4bb8fefad9e868ed79eace4a53d4480a9393c02f07b52c19f1c1b4b661ee2"
+    },
+    {
+      "path": "/tmp/visual-direction-act3_testimony_hearing-320.png",
+      "sha256": "b978022c2af4602607e041893c29206c1b4ffc4f3119fb3606fcae7662015d4e"
+    },
+    {
+      "path": "/tmp/visual-direction-act3_testimony_hearing-390.png",
+      "sha256": "5535cf7698ac25d19ba6fd7a0bccb4f6a6eb8e8e7409cbf11a9ad24647709d16"
+    },
+    {
+      "path": "/tmp/visual-direction-cast-1440.png",
+      "sha256": "6384d07f44a78c5372f9be069469e5fd73e8746102c0ef6feca9bc5fa5a8a04f"
+    },
+    {
+      "path": "/tmp/visual-direction-cast-390.png",
+      "sha256": "bac4f63a46cb42a748fdf955e540e5610fb75f93830771575324c7161e7e80f4"
+    },
+    {
+      "path": "/tmp/visual-direction-documents-1440.png",
+      "sha256": "f5427ef069b1ded96e684497349d4293c1cdfa38235bf6f60b548218a78a69a9"
+    },
+    {
+      "path": "/tmp/visual-direction-documents-320.png",
+      "sha256": "86430ec263e794fd27b86e3f0493bedbc52244397bccdb356db5d1a70789e2ca"
+    },
+    {
+      "path": "/tmp/visual-direction-documents-390.png",
+      "sha256": "d34137889342ba22fdfeb32ee5928e3c0060ed8171e79fe6eab9c45bbb49be9f"
+    },
+    {
+      "path": "/tmp/visual-direction-documents-viewport-1440.png",
+      "sha256": "b58b0178772d5e89daddafe10bc906c2ec30ea3205b11fa9a53ba3e1af12558e"
+    },
+    {
+      "path": "/tmp/visual-direction-documents-viewport-390.png",
+      "sha256": "b46b85687d763a827ab1f8973d86b30f18e1e04f0ba5253a8f9bdb87d5b6a2f4"
+    },
+    {
+      "path": "/tmp/visual-direction-finish-1440-high.png",
+      "sha256": "4ffbee346d5feb38b3cdc1cf4bfaeafcb7dac85d4c8ce335da9684ae30ccaf3c"
+    },
+    {
+      "path": "/tmp/visual-direction-finish-1440-standard.png",
+      "sha256": "80649ccf2d60a5aee08e6678a5ea3542567a79146983d4c6afb2f240df16abec"
+    },
+    {
+      "path": "/tmp/visual-direction-finish-390-high.png",
+      "sha256": "305a7fb8c8cd16a13ce5500857d61052b4158fa2e7eb4d51ee14a2cfe516625c"
+    },
+    {
+      "path": "/tmp/visual-direction-finish-390-standard.png",
+      "sha256": "b037915206dc1996d36526da8d1ba80f2fab9187876f0b2cc8cec253c5776d34"
+    },
+    {
+      "path": "/tmp/visual-direction-forced-colors.png",
+      "sha256": "d28420016dd022c449fc55c0e17f5310833d8eaa3934515f398e090c95ac782a"
+    },
+    {
+      "path": "/tmp/visual-direction-front-1440.png",
+      "sha256": "0bcd6313c0f214a37e44dcbeb2ba999422155ab3633b0d39decbf648fe9c03b0"
+    },
+    {
+      "path": "/tmp/visual-direction-front-320.png",
+      "sha256": "2dfa12a47e63c9edc0b433a361dce55e1e1dd4b67c9295c2f040f3a3b6fc7f0a"
+    },
+    {
+      "path": "/tmp/visual-direction-front-390.png",
+      "sha256": "13a485ace06fbf6151d09ef265f7af4a47196e41447c3330bb94cd2e3622b13f"
+    },
+    {
+      "path": "/tmp/visual-direction-lumen_deal-1440.png",
+      "sha256": "c32afeaa1782ff04bebd44619806d9470a3ab194ac8d6c69c5aae719395467c7"
+    },
+    {
+      "path": "/tmp/visual-direction-lumen_deal-320.png",
+      "sha256": "3a69bbee93b1e5d43f0b1cbd140d16bd2277da0267cc2f1bdcb8500c68fe5646"
+    },
+    {
+      "path": "/tmp/visual-direction-lumen_deal-390.png",
+      "sha256": "d1c49ff8105cb6b2c1608866c23b9ad19f429eefdb85e46cebc6e1e04f7d13ea"
+    },
+    {
+      "path": "/tmp/visual-direction-map-1440.png",
+      "sha256": "b7d9742f84d0c999acbb30280a501dd819c297ef386151fa8d42038dafe1a969"
+    },
+    {
+      "path": "/tmp/visual-direction-map-320.png",
+      "sha256": "ed5e83964f6284e459e40827dcd9cb6617610ceb05b47b27e62666793e260907"
+    },
+    {
+      "path": "/tmp/visual-direction-map-390.png",
+      "sha256": "9556e05bc5c715585c1a16b3e5c3c7d246c084474c9d171f627cbe0fe8f760e8"
+    },
+    {
+      "path": "/tmp/visual-direction-stall-1440.png",
+      "sha256": "c7b3ea762873bb6343a9b17349d3cd0cb981d08d85ee4042d9d589327b944c4c"
+    },
+    {
+      "path": "/tmp/visual-direction-stall-320.png",
+      "sha256": "80ee828e2f8a2a6d9788aeadd2e5e33be81f4fa9f2c0374d6fcb845fc47152f6"
+    },
+    {
+      "path": "/tmp/visual-direction-stall-390.png",
+      "sha256": "c344799b24bce522e28219da342db56a140c4fbaf6bf71ff7d9d8a0c881c0e8e"
+    },
+    {
+      "path": "/tmp/visual-direction-ward_wall-1440.png",
+      "sha256": "66765948be2ddcb51f2bbdefd9c2716b70b2889cb639dc152ec7e7d93b60d439"
+    },
+    {
+      "path": "/tmp/visual-direction-ward_wall-320.png",
+      "sha256": "ad0e1b901163ff68a542f9e89e99be688df2acad946de7242e85aa288585952b"
+    },
+    {
+      "path": "/tmp/visual-direction-ward_wall-390.png",
+      "sha256": "da472556254be073d1f89dbed3022ab1d5f4a87eaf4ae63430a8916fab66783b"
+    }
+  ],
+  "screenshotReview": "Representative phone/desktop/enlarged-text, scene, document, map, portrait and cast images were reopened. Captures are outside Git; browser cases and media audition are reproducible review entry points. AI review, not independent artist acceptance.",
+  "forcedColors": {
+    "focus": {
+      "outline": "3px",
+      "style": "solid"
+    },
+    "unavailable": {
+      "border": "dashed",
+      "disabled": true
+    },
+    "unchanged": true
+  },
+  "firstVisitProbe": {
+    "revision": "dbf24d6270323d5904e7890be77ba0671d56e4b4",
+    "dirty": true,
+    "initialTransferBudget": 2097152,
+    "autoplayPolicy": "Full Chromium; first visit requires document activation, with no prior origin permission.",
+    "samples": [
+      {
+        "sceneId": "opening_city",
+        "width": 390,
+        "height": 844,
+        "artwork": "full",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 2586,
+        "network": "Emulated 5 Mbps / 150 ms",
+        "elapsedToReadyMs": 4715,
+        "encodedResourceBytes": 1689997,
+        "htmlBytes": 2333,
+        "titleLcpMs": 1468,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 4,
+        "goalVisible": true
+      },
+      {
+        "sceneId": "opening_city",
+        "width": 390,
+        "height": 844,
+        "artwork": "none",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 2403,
+        "network": "Emulated 5 Mbps / 150 ms",
+        "elapsedToReadyMs": 2532,
+        "encodedResourceBytes": 443217,
+        "htmlBytes": 2333,
+        "titleLcpMs": 1188,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 0,
+        "goalVisible": true
+      },
+      {
+        "sceneId": "opening_city",
+        "width": 1440,
+        "height": 900,
+        "artwork": "full",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 1403,
+        "network": "Unthrottled automation host",
+        "elapsedToReadyMs": 1623,
+        "encodedResourceBytes": 2028213,
+        "htmlBytes": 2333,
+        "titleLcpMs": 420,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 4,
+        "goalVisible": true
+      },
+      {
+        "sceneId": "opening_city",
+        "width": 1440,
+        "height": 900,
+        "artwork": "none",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 1420,
+        "network": "Unthrottled automation host",
+        "elapsedToReadyMs": 1477,
+        "encodedResourceBytes": 1107681,
+        "htmlBytes": 2333,
+        "titleLcpMs": 412,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 0,
+        "goalVisible": true
+      }
+    ],
+    "limitations": [
+      "Four synthetic samples on the automation host, not p75/p95 field data or named physical devices.",
+      "Elapsed-to-ready includes automated form entry and network-idle waits; it is not LCP or INP.",
+      "titleLcpMs measures this navigation's title screen. Encoded resource bytes are Resource Timing measurements, not all wire overhead.",
+      "A previously permitted visit can autoplay the separate 2.6 MB menu theme before gameplay; these samples measure the first-visit activation policy."
+    ]
+  },
+  "maximumEncodedResourcePlusHtmlBytes": 2030546,
+  "mediaPreserved": {
+    "artDeliveries": 311,
+    "bindingSha256": "15ae8b35c16b330b545f001e23dc75b5f4bd131225347f616ab76c1b7088f0bd",
+    "newCreativeImages": 0,
+    "audioChanges": 0
+  },
+  "release": "Local precommit evidence only. Publication requires the unchanged exact-commit CI/Vercel gate."
+}

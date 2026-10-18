@@ -2,6 +2,7 @@
 
 import { ArchiveCatalog } from "./ArchiveCatalog";
 import { choiceSection } from "@/lib/choice-sections";
+import { choicePresentation, DISTRICT_PRESENTATIONS, sceneDistrict } from "@/lib/visual-presentation";
 import { chapterPresentation } from "@/lib/chapter-presentation";
 import { ChapterTransition } from "./ChapterTransition";
 import { CATALOG_ACTIONS } from "@/lib/archive-catalog";
@@ -83,6 +84,8 @@ export function PlayScreen({
   onResumeAudio: () => void;
 }) {
   const scene = getScene(state.sceneId);
+  const visualDistrict = sceneDistrict(scene.id);
+  const districtIdentity = visualDistrict === "city" ? undefined : DISTRICT_PRESENTATIONS[visualDistrict];
   const act = actName(state);
   const locationLabel = scene.location === act ? act : `${scene.location} · ${act}`;
   const illustration = sceneIllustration(scene.id, state.flags);
@@ -90,6 +93,8 @@ export function PlayScreen({
   const investigation = investigationScene(scene.id);
   const direction = pivotalScene(scene.id) ?? finale ?? investigation;
   const choices = presentChoices(state, scene);
+  const choiceMarks = choices.map(choice => choicePresentation(scene.id, choice));
+  const choiceLegend = choiceMarks.filter((mark, index) => choiceMarks.findIndex(other => other.kind === mark.kind) === index);
   const decisionTitle = scene.id === "act2_middle" ? "Street or silence" : scene.id === "act3_arrival" ? "At the wall" : null;
   const decisionIds = scene.id === "act2_middle" ? ["stand", "deal"] : ["read-names", "confirm-leak", "read-wall", "let-ives", "say-anyway", "leave-wall"];
   const decisionIndex = decisionTitle ? choices.findIndex(choice => decisionIds.includes(choice.id)) : -1;
@@ -315,12 +320,14 @@ export function PlayScreen({
             id="scene-top"
             tabIndex={-1}
             data-testid="scene"
+            data-district={visualDistrict}
             style={{ backgroundImage: preferences.artwork === "none" || illustration ? undefined : `linear-gradient(180deg, rgba(9,8,13,0.72), rgba(9,8,13,0.94)), url(${sceneBackdrop(scene.id, scene.location)})` }}
           >
-            <div className="scene-row" data-compact={compactHeader ? "true" : "false"}>
+            <div className="scene-row" data-compact={compactHeader ? "true" : "false"} data-composition={!direction && !chapterPresentation(scene.id) ? "reading" : "feature"}>
               <Portrait compact={compactHeader} speaker={playing?.speaker ?? scene.speaker} speaking={Boolean(playing)} sceneId={scene.id} flags={state.flags} origin={state.origin} handle={state.handle} artwork={preferences.artwork !== "none"} />
               <div>
                 <p className="kicker">
+                  {districtIdentity && <span className="district-emblem"><Symbol name={districtIdentity.symbol} /></span>}
                   {scene.location}
                   {scene.location !== act && <span className="act-chip"> · {act}</span>}
                 </p>
@@ -405,6 +412,7 @@ export function PlayScreen({
                 <div className="decision-help">
                   <h2 id="choices-title">Your next move</h2>
                   <p className="hint">Selecting an option commits it. For a check, review the odds and costs first; Back leaves it unrolled.</p>
+                  {choiceLegend.length > 1 && <p className="choice-legend" aria-label="Choice markers">{choiceLegend.map(mark => <span key={mark.kind}><Symbol name={mark.symbol} /> {mark.label}</span>)}</p>}
                   {unavailableChoices.length > 0 && <details data-testid="unavailable-choices"><summary>Review unavailable approaches ({unavailableChoices.length})</summary><ul>{unavailableChoices.map((choice) => <li key={choice.id}><strong>{choice.label}</strong><p>{choice.disabledReason}</p></li>)}</ul></details>}
                   {decisionIndex > 0 && <a href="#chapter-decision" data-testid="decision-jump" onClick={event => {
                     const target = document.getElementById("chapter-decision");
@@ -422,6 +430,7 @@ export function PlayScreen({
                   const section = choiceSection(scene.id, choice.id);
                   const startsSection = section && section !== choiceSection(scene.id, choices[index - 1]?.id ?? "");
                   const odds = choice.check ? previewCheck(state, choice.check) : null;
+                  const presentation = choiceMarks[index];
                   const effects = choice.disabledReason !== undefined ? [] : effectPreview(state, choice);
                   const costs = choice.disabledReason !== undefined ? [] : checkResourceCosts(state, choice);
                   const chance = !odds ? null : odds.hits === 10 ? "certain" : odds.hits === 0 ? "no chance" : `${odds.hits} in 10`;
@@ -431,6 +440,8 @@ export function PlayScreen({
                       {index === decisionIndex && <h3 id="chapter-decision" className="choice-group-title" tabIndex={-1}>{decisionTitle}</h3>}
                       <button
                         className="choice"
+                        data-choice-kind={presentation.kind}
+                        data-available={choice.enabled ? "true" : "false"}
                         type="button"
                         id={choice.id === "open-archive-catalog" ? "archive-catalog-toggle" : undefined}
                         data-testid={`choice-${choice.id}`}
@@ -445,6 +456,7 @@ export function PlayScreen({
                         )}
                         <span className="index">{index + 1}</span>
                         <span className="label" id={`choice-label-${choice.id}`}>{choice.label}</span>
+                        <span className="choice-action-mark" aria-hidden="true" title={presentation.label}><Symbol name={presentation.symbol} /></span>
                         <span className="odds" id={`choice-detail-${choice.id}`}>
                           {choice.disabledReason !== undefined ? <span className="choice-meta" data-kind="unavailable">{choice.disabledReason}</span> : <>
                             {odds && <span className="choice-meta" data-kind="check">{STAT_INFO[odds.stat].name} · DC {odds.dc} · {chance}</span>}{" "}

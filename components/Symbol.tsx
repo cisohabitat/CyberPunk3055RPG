@@ -1,5 +1,11 @@
 /** Interface symbols are decorative; the neighbouring text supplies their meaning. */
 const PATHS = {
+  market: "M3 9l3-6h12l3 6 M4 9v12h16V9 M3 9c0 4 6 4 6 0 0 4 6 4 6 0 0 4 6 4 6 0 M9 21v-6h6v6",
+  chapel: "M4 21V9l8-6 8 6v12 M8 21v-7a4 4 0 018 0v7 M10 8h4",
+  canal: "M3 8h18 M5 3v5 M19 3v5 M4 13c3-3 5 3 8 0s5 3 8 0 M4 19c3-3 5 3 8 0s5 3 8 0",
+  die: "M12 2l9 6-3 11-6 3-6-3L3 8z M3 8l9 5 9-5 M12 2v11l6 6 M12 13l-6 6 M12 13v9",
+  departure: "M3 12h17 M14 6l6 6-6 6 M5 4v3 M5 17v3",
+  action: "M5 12h14 M14 7l5 5-5 5",
   chrome: "M8 3h8v4h4v10h-4v4H8v-4H4V7h4z M9 9h6v6H9z",
   nerve: "M12 3l7 4v6c0 4-7 8-7 8s-7-4-7-8V7z M9 12l2 2 4-5",
   face: "M4 5h16v11h-6l-5 4v-4H4z M8 9h8 M8 12h5",

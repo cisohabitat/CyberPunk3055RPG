@@ -1,5 +1,6 @@
 import { speakerRole } from "@/lib/story/cast";
 import { portraitArt } from "@/lib/art";
+import { portraitFinish } from "@/lib/art-finish";
 import type { OriginId } from "@/lib/types";
 import { useState } from "react";
 
@@ -18,7 +19,7 @@ export function Portrait({ speaker, sceneId, origin, handle, flags, artwork = tr
   const name = speaker === "Sister Lumen" ? "Lumen" : speaker;
   const label = name ? `${name}${role ? ` · ${role}` : ""}` : `${handle ?? plate.label} · ${plate.label}`;
   return (
-    <figure className="portrait-frame" data-layout={compact ? "compact" : "full"} data-speaker={speaker} data-speaking={speaking ? "true" : "false"}>
+    <figure className="portrait-frame" data-layout={compact ? "compact" : "full"} data-finish={portraitFinish(src)} data-speaker={speaker} data-speaking={speaking ? "true" : "false"}>
       {artwork && failedSource !== src ? <img key={src} className="portrait" src={src} alt="" width={220} height={294} decoding="async" onError={() => setFailedSource(src)} /> : <div className="portrait-placeholder" aria-hidden="true" />}
       <figcaption aria-label={label}><span className="portrait-name">{name ?? handle ?? plate.label}</span><span className="portrait-role">{name ? role ?? "" : plate.label}</span>{speaking && <span className="speaker-cue">Speaking</span>}</figcaption>
     </figure>
