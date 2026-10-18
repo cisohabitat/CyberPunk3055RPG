@@ -774,3 +774,9 @@ The phone City map uses compact landmark thumbnails and lists the current place 
 Scene paintings and artwork inspections show a tiny version of the same painting while the responsive detail decodes, within a fixed 3:2 frame. The brief fade respects saved and system reduced motion; missing images retain their descriptions and controls. Artwork-none requests neither paintings nor previews.
 
 All fourteen inventory items now have individual close-up paintings, with a separate damaged-shard version. Gear keeps atlas thumbnails and loads the detailed painting only on inspection. Three new literal scene paintings show Sera and Ren before the shelter repair, Edda reviewing service documents, and Lumen wiping beneath Mara’s cup. Exact dialogue, voice casting and recorded outcomes remain unchanged. See [the complete art cycle](docs/COMPLETE_ART_CYCLE.md).
+
+## Reading flow and clearer decisions
+
+Regular scene paintings use a compact, uncropped art-and-caption layout on phones, with full detail still available in the existing viewer. Desktop, pivotal conversations, chapter cards and finales retain their established compositions. Restore messages keep their complete checkpoint text in a quieter status row.
+
+Choice cards separate the action, stat/DC and odds, authored detail, open-promise warning, effects and possible check costs into readable rows. Wording, order, shortcuts and disabled reasons stay intact. Resolved checks place the recorded die beside the total, DC and Success/Miss label, with actual resource changes listed under **On Continue**. Rolls, critical adjustments, voice/text alignment and saves retain their existing behavior. See [the reading flow cycle](docs/READING_FLOW_CYCLE.md).

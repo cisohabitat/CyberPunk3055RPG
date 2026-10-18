@@ -2,6 +2,7 @@
 
 import { ArchiveCatalog } from "./ArchiveCatalog";
 import { choiceSection } from "@/lib/choice-sections";
+import { chapterPresentation } from "@/lib/chapter-presentation";
 import { ChapterTransition } from "./ChapterTransition";
 import { CATALOG_ACTIONS } from "@/lib/archive-catalog";
 
@@ -371,7 +372,7 @@ export function PlayScreen({
             {restoreNotice && <p className="restore-notice" role="status" data-testid="restore-notice">{restoreNotice}</p>}
             <ChapterTransition sceneId={scene.id} />
             {direction ? <PivotalScene direction={direction} finale={Boolean(finale)} investigation={Boolean(investigation)} art={preferences.artwork !== "none" ? illustration : undefined}>{narrative}</PivotalScene>
-              : preferences.artwork !== "none" && illustration && <SceneIllustration art={illustration} />}
+              : preferences.artwork !== "none" && illustration && <SceneIllustration art={illustration} reading={!chapterPresentation(scene.id)} />}
             {!scene.finale && <ObjectiveBrief state={state} />}
             {canConsultSources(state) && <div className="investigation-tools"><button className="ghost" type="button" data-testid="consult-sources" aria-haspopup="dialog" disabled={Boolean(activeChoice) || modalOpen} onClick={() => setNotebookOpen(true)}>Consult acquired sources</button></div>}
             {!scene.finale && <>
@@ -421,6 +422,8 @@ export function PlayScreen({
                   const section = choiceSection(scene.id, choice.id);
                   const startsSection = section && section !== choiceSection(scene.id, choices[index - 1]?.id ?? "");
                   const odds = choice.check ? previewCheck(state, choice.check) : null;
+                  const effects = choice.disabledReason !== undefined ? [] : effectPreview(state, choice);
+                  const costs = choice.disabledReason !== undefined ? [] : checkResourceCosts(state, choice);
                   const chance = !odds ? null : odds.hits === 10 ? "certain" : odds.hits === 0 ? "no chance" : `${odds.hits} in 10`;
                   return (
                     <Fragment key={choice.id}>
@@ -443,16 +446,13 @@ export function PlayScreen({
                         <span className="index">{index + 1}</span>
                         <span className="label" id={`choice-label-${choice.id}`}>{choice.label}</span>
                         <span className="odds" id={`choice-detail-${choice.id}`}>
-                          {choice.disabledReason ??
-                            [
-                              odds ? `${STAT_INFO[odds.stat].name} · DC ${odds.dc} · ${chance}` : null,
-                              choice.detail,
-                              openPromises.length && [choice.next, choice.nextSuccess, choice.nextFail].some((next) => typeof next === "string" && ["ending_week_wards", "ending_week_deal", "ending_exposed"].includes(next)) ? `${openPromises.length} campaign ${openPromises.length === 1 ? "promise remains" : "promises remain"} unresolved if the week closes: ${openPromises.map(row => row.title).join("; ")}` : null,
-                              effectPreview(state, choice).join(" · ") || null,
-                              checkResourceCosts(state, choice).join("; ") || null,
-                            ]
-                              .filter(Boolean)
-                              .join(" · ")}
+                          {choice.disabledReason !== undefined ? <span className="choice-meta" data-kind="unavailable">{choice.disabledReason}</span> : <>
+                            {odds && <span className="choice-meta" data-kind="check">{STAT_INFO[odds.stat].name} · DC {odds.dc} · {chance}</span>}{" "}
+                            {choice.detail && <span className="choice-meta" data-kind="detail">{choice.detail}</span>}{" "}
+                            {openPromises.length > 0 && [choice.next, choice.nextSuccess, choice.nextFail].some(next => typeof next === "string" && ["ending_week_wards", "ending_week_deal", "ending_exposed"].includes(next)) && <span className="choice-meta" data-kind="promise">{`${openPromises.length} campaign ${openPromises.length === 1 ? "promise remains" : "promises remain"} unresolved if the week closes: ${openPromises.map(row => row.title).join("; ")}`}</span>}{" "}
+                            {effects.length > 0 && <span className="choice-meta" data-kind="effects">{effects.join(" · ")}</span>}{" "}
+                            {costs.length > 0 && <span className="choice-meta" data-kind="costs">{costs.join("; ")}</span>}
+                          </>}
                         </span>
                       </button>
                     </Fragment>

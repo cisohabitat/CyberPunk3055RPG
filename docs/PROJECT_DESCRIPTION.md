@@ -31,3 +31,5 @@ See the [README](../README.md) for play and setup instructions, [credits](../CRE
 The latest [visual refinement cycle](VISUAL_REFINEMENT_CYCLE.md) compacts the phone notebook, illustrates known map places, adds four individual item inspections and two shared scene paintings, and shows actual resource/faction changes beside their values.
 
 The latest [complete art cycle](COMPLETE_ART_CYCLE.md) improves phone map access, introduces progressive scene/inspection images, completes individual art for every inventory item, and adds three literal conversation paintings.
+
+The latest [reading flow cycle](READING_FLOW_CYCLE.md) brings regular phone-scene prose forward, quiets restore notices, separates choice details into readable rows and clarifies recorded check results.

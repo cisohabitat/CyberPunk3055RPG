@@ -1,0 +1,440 @@
+{
+  "version": 1,
+  "date": "2026-10-18",
+  "baseRevision": "13929638938346914c0807c2cb6ae6a5ad8c8367",
+  "scope": "Four presentation improvements: regular phone paintings, restore notices, choice metadata and resolved check hierarchy. Local UI only; no API/account boundary added.",
+  "sourceSha256": {
+    "components/SceneIllustration.tsx": "39b50af2c8b1adfb3ba5c16cfd8f02bd8e688877b498597684eb5fa21068f762",
+    "components/PlayScreen.tsx": "6eff5c5ccedcf7ea8646f4c36761b9645bb93f023f2a846d3b9e5a5c569ed95a",
+    "components/CheckDialog.tsx": "bbcf5c06bf07b5699b6f90bc61b2cc1549e90156dde330994955e54dfc4d8bb0",
+    "app/globals.css": "d1cd84d9f6aa62196739cac4b71a1ef88430bb7ab304259552a594224a87fb5f",
+    "tests/reading-flow.spec.ts": "bbbb054d914d78cb51ee08d751b1876847c3a92866c7973e57f84692aefe8060",
+    "tests/story-first-visuals.spec.ts": "0e35d5b596c91cbc0c22715babe568f041dcdb778081c9adf65f5846806da9a4",
+    "qa/media/campaign-dialogue-bindings.json": "15ae8b35c16b330b545f001e23dc75b5f4bd131225347f616ab76c1b7088f0bd",
+    "qa/media/scene-art.json": "59b603a780479f52fec9ce074f9963768135c125ebc4f8a8c2b41a3becb89529",
+    "README.md": "396d018d435a7a0f7444ae34343681c6cd3716cf8eec36ce6956e42107c6befb",
+    "AGENTS.md": "0906879b76582c3fd70def776a6cfd8e837021bb7200a82dfb75cfb121238a00",
+    "docs/PROJECT_DESCRIPTION.md": "92f7f205f990ef9af1a55c1609aee917a6cc8fecf55ebe1d6171cbc9a57b3006",
+    "docs/READING_FLOW_CYCLE.md": "75311538d6bd0b4b9f76af87f091abf62e1b8ade52115a5918512ab8ca455f2d"
+  },
+  "sourceTests": {
+    "passed": 652,
+    "failed": 0,
+    "log": "/tmp/reading-flow-source.log"
+  },
+  "typescript": {
+    "status": "passed",
+    "log": "/tmp/reading-flow-tsc-final.log"
+  },
+  "build": {
+    "status": "passed",
+    "log": "/tmp/reading-flow-build-final.log"
+  },
+  "security": {
+    "vulnerabilities": 0,
+    "log": "/tmp/reading-flow-security.log"
+  },
+  "production": {
+    "scenes": 197,
+    "choices": 598,
+    "routes": 148,
+    "assets": 703,
+    "budgetViolations": [],
+    "log": "/tmp/reading-flow-production.log"
+  },
+  "browserBatches": [
+    {
+      "kind": "final new reading-flow suite",
+      "files": [
+        "reading-flow"
+      ],
+      "projects": [
+        "chromium",
+        "phone"
+      ],
+      "passed": 30,
+      "failed": 0,
+      "log": "/tmp/reading-flow-final-isolated.log"
+    },
+    {
+      "kind": "broad regression attempt, retained with its failures",
+      "files": [
+        "check-dialogue",
+        "visual-polish",
+        "complete-art",
+        "speaker-presentation",
+        "finale-direction",
+        "voice-reactions",
+        "story-first-visuals",
+        "game"
+      ],
+      "projects": [
+        "chromium",
+        "phone"
+      ],
+      "passed": 600,
+      "failed": 10,
+      "log": "/tmp/reading-flow-regressions.log",
+      "failureCauses": {
+        "traceOutputDirectoryCollision": 7,
+        "precedingBelowOnlyCaptionExpectation": 3
+      }
+    },
+    {
+      "kind": "isolated rerun of all seven trace-affected game cases",
+      "files": [
+        "game"
+      ],
+      "projects": [
+        "chromium"
+      ],
+      "passed": 7,
+      "failed": 0,
+      "log": "/tmp/reading-flow-affected.log"
+    },
+    {
+      "kind": "updated nonoverlap and clipping assertion, all atmosphere cases",
+      "files": [
+        "story-first-visuals"
+      ],
+      "projects": [
+        "chromium",
+        "phone"
+      ],
+      "passed": 12,
+      "failed": 0,
+      "log": "/tmp/reading-flow-atmosphere.log"
+    }
+  ],
+  "uniqueBrowserChecks": {
+    "validated": 640,
+    "calculation": "610 distinct broad cases reconciled by passing affected reruns + 30 distinct new layout cases. Do not sum overlapping passes."
+  },
+  "performance": {
+    "revision": "13929638938346914c0807c2cb6ae6a5ad8c8367",
+    "dirty": true,
+    "initialTransferBudget": 2097152,
+    "autoplayPolicy": "Full Chromium; first visit requires document activation, with no prior origin permission.",
+    "samples": [
+      {
+        "sceneId": "opening_city",
+        "width": 390,
+        "height": 844,
+        "artwork": "full",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 2966,
+        "network": "Emulated 5 Mbps / 150 ms",
+        "elapsedToReadyMs": 5086,
+        "encodedResourceBytes": 1687460,
+        "htmlBytes": 2333,
+        "titleLcpMs": 1536,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 4,
+        "goalVisible": true
+      },
+      {
+        "sceneId": "opening_city",
+        "width": 390,
+        "height": 844,
+        "artwork": "none",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 2881,
+        "network": "Emulated 5 Mbps / 150 ms",
+        "elapsedToReadyMs": 2997,
+        "encodedResourceBytes": 440680,
+        "htmlBytes": 2333,
+        "titleLcpMs": 1400,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 0,
+        "goalVisible": true
+      },
+      {
+        "sceneId": "opening_city",
+        "width": 1440,
+        "height": 900,
+        "artwork": "full",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 1594,
+        "network": "Unthrottled automation host",
+        "elapsedToReadyMs": 1858,
+        "encodedResourceBytes": 2025676,
+        "htmlBytes": 2333,
+        "titleLcpMs": 432,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 4,
+        "goalVisible": true
+      },
+      {
+        "sceneId": "opening_city",
+        "width": 1440,
+        "height": 900,
+        "artwork": "none",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 1610,
+        "network": "Unthrottled automation host",
+        "elapsedToReadyMs": 1777,
+        "encodedResourceBytes": 1105397,
+        "htmlBytes": 2333,
+        "titleLcpMs": 340,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 0,
+        "goalVisible": true
+      }
+    ],
+    "limitations": [
+      "Four synthetic samples on the automation host, not p75/p95 field data or named physical devices.",
+      "Elapsed-to-ready includes automated form entry and network-idle waits; it is not LCP or INP.",
+      "titleLcpMs measures this navigation's title screen. Encoded resource bytes are Resource Timing measurements, not all wire overhead.",
+      "A previously permitted visit can autoplay the separate 2.6 MB menu theme before gameplay; these samples measure the first-visit activation policy."
+    ]
+  },
+  "layoutSamples": [
+    {
+      "sceneId": "act2_shelter_brief",
+      "width": 390,
+      "firstParagraphY": 656.78125,
+      "restoreHeight": 17.46875,
+      "imageWidth": 139.4375,
+      "imageHeight": 92.953125,
+      "screenshot": "/tmp/reading-flow-act2_shelter_brief-390.png"
+    },
+    {
+      "sceneId": "act2_spire_sources",
+      "width": 390,
+      "firstParagraphY": 622.234375,
+      "restoreHeight": 17.46875,
+      "imageWidth": 139.4375,
+      "imageHeight": 92.953125,
+      "screenshot": "/tmp/reading-flow-act2_spire_sources-390.png"
+    },
+    {
+      "sceneId": "act2_lumen_quiet",
+      "width": 390,
+      "firstParagraphY": 664.234375,
+      "restoreHeight": 34.9375,
+      "imageWidth": 139.4375,
+      "imageHeight": 92.953125,
+      "screenshot": "/tmp/reading-flow-act2_lumen_quiet-390.png"
+    },
+    {
+      "sceneId": "lumen_deal",
+      "width": 390,
+      "screenshot": "/tmp/reading-flow-choices-390.png"
+    },
+    {
+      "sceneId": "lumen_deal",
+      "width": 390,
+      "roll": 1,
+      "screenshot": "/tmp/reading-flow-result-1-390.png"
+    },
+    {
+      "sceneId": "lumen_deal",
+      "width": 390,
+      "roll": 10,
+      "screenshot": "/tmp/reading-flow-result-10-390.png"
+    },
+    {
+      "sceneId": "act2_shelter_brief",
+      "width": 1440,
+      "firstParagraphY": 1030.6875,
+      "restoreHeight": 17.46875,
+      "imageWidth": 746,
+      "imageHeight": 497.328125,
+      "screenshot": "/tmp/reading-flow-act2_shelter_brief-1440.png"
+    },
+    {
+      "sceneId": "act2_spire_sources",
+      "width": 1440,
+      "firstParagraphY": 972.59375,
+      "restoreHeight": 17.46875,
+      "imageWidth": 746,
+      "imageHeight": 497.328125,
+      "screenshot": "/tmp/reading-flow-act2_spire_sources-1440.png"
+    },
+    {
+      "sceneId": "act2_lumen_quiet",
+      "width": 1440,
+      "firstParagraphY": 996.140625,
+      "restoreHeight": 17.46875,
+      "imageWidth": 746,
+      "imageHeight": 497.328125,
+      "screenshot": "/tmp/reading-flow-act2_lumen_quiet-1440.png"
+    },
+    {
+      "sceneId": "lumen_deal",
+      "width": 1440,
+      "roll": 10,
+      "screenshot": "/tmp/reading-flow-result-10-1440.png"
+    },
+    {
+      "sceneId": "act2_spire_sources",
+      "width": 320,
+      "firstParagraphY": 968.59375,
+      "restoreHeight": 43.65625,
+      "imageWidth": 104.15625,
+      "imageHeight": 69.4375,
+      "screenshot": "/tmp/reading-flow-act2_spire_sources-320.png"
+    },
+    {
+      "sceneId": "lumen_deal",
+      "width": 320,
+      "screenshot": "/tmp/reading-flow-choices-320.png"
+    },
+    {
+      "sceneId": "lumen_deal",
+      "width": 320,
+      "roll": 1,
+      "screenshot": "/tmp/reading-flow-result-1-320.png"
+    },
+    {
+      "sceneId": "lumen_deal",
+      "width": 320,
+      "roll": 10,
+      "screenshot": "/tmp/reading-flow-result-10-320.png"
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "/tmp/reading-flow-act2_shelter_brief-390.png",
+      "sha256": "e2306b00ad6d485b521ddf0bef56b80f92a0048b03b925bdfee963b5c82031da"
+    },
+    {
+      "path": "/tmp/reading-flow-act2_spire_sources-390.png",
+      "sha256": "6b2372f98dac780ca1fac6b157f22fcc2ff064c495c247a25ae1d19d39ec2e75"
+    },
+    {
+      "path": "/tmp/reading-flow-act2_lumen_quiet-390.png",
+      "sha256": "547478279e38bede733eb280dd7945f316fd2f37bf07586ee51f32c24d9afe5f"
+    },
+    {
+      "path": "/tmp/reading-flow-choices-390.png",
+      "sha256": "9426672fc60e580156a84d114c8021fbf68c2ede43e6e26874d3428c4cc67f59"
+    },
+    {
+      "path": "/tmp/reading-flow-result-1-390.png",
+      "sha256": "35c8039d95b49ec5ba23cbfb9784207043303c3b9d0cb5e6dc27e8498f174aa6"
+    },
+    {
+      "path": "/tmp/reading-flow-result-10-390.png",
+      "sha256": "04a9faed44ea7767f1d74ad175550968a0327a033a6a73e6782fc41c5d435453"
+    },
+    {
+      "path": "/tmp/reading-flow-act2_shelter_brief-1440.png",
+      "sha256": "80cd73dc804f4c9db55adc7bc54e59493c2dce5d456f59f37b38aec220c4af1e"
+    },
+    {
+      "path": "/tmp/reading-flow-act2_spire_sources-1440.png",
+      "sha256": "856d4b5cdc073b9fb8b7b3ea612fefc9ceaa607859ba8d0e6a59fb41a8e93402"
+    },
+    {
+      "path": "/tmp/reading-flow-act2_lumen_quiet-1440.png",
+      "sha256": "6ee558fbb60c9b0d1540d9224b5314e84e1f010bbab301b27059ee97c4dfe0aa"
+    },
+    {
+      "path": "/tmp/reading-flow-result-10-1440.png",
+      "sha256": "cb7ff5958f6f551d85fd6cdfe8648134a68e17f193c3969bf606840cf5d402b5"
+    },
+    {
+      "path": "/tmp/reading-flow-act2_spire_sources-320.png",
+      "sha256": "4c2454d63649e01a3fe9256f4e4b52574294bdbbe467bb3de506d04c2d3072df"
+    },
+    {
+      "path": "/tmp/reading-flow-choices-320.png",
+      "sha256": "065caaf22cd628175e640f22ccb005094d611e336aab3fdafc7acfae466734a8"
+    },
+    {
+      "path": "/tmp/reading-flow-result-1-320.png",
+      "sha256": "49ba29891a8b11a1a9f9efa40ed0ac082d85a90ce0abc35d98095dffce143784"
+    },
+    {
+      "path": "/tmp/reading-flow-result-10-320.png",
+      "sha256": "e2b09e45100f69aa65c287ea95dd7896b81e223632109265cb2c85044094107d"
+    },
+    {
+      "path": "/tmp/reading-flow-result-bottom-1-390.png",
+      "sha256": "44c1130377c97a0162b07f29f03ad6325fe4e483371a99ba87a872b64ba76c57"
+    },
+    {
+      "path": "/tmp/reading-flow-result-bottom-10-390.png",
+      "sha256": "04a9faed44ea7767f1d74ad175550968a0327a033a6a73e6782fc41c5d435453"
+    },
+    {
+      "path": "/tmp/reading-flow-result-bottom-1-320.png",
+      "sha256": "227ce19caaeba905ffe9ba51058aa95f7bdd5892e25e368d05a605cf2b1c80ca"
+    },
+    {
+      "path": "/tmp/reading-flow-result-bottom-10-320.png",
+      "sha256": "97d4f97dce65ea3778891ae26cc336d4c206f7f328cdb2ee965748d1eaecc58c"
+    }
+  ],
+  "unchangedFromBase": [
+    "lib/story",
+    "lib/engine.ts",
+    "lib/storage.ts",
+    "lib/vault.ts",
+    "public/art",
+    "public/audio",
+    "qa/media/campaign-dialogue-bindings.json",
+    "qa/media/scene-art.json"
+  ],
+  "preserved": {
+    "bindings": 306,
+    "quotedSpeeches": 301,
+    "activeVoiceFiles": 294,
+    "voicedScenes": 121,
+    "castRoles": 15,
+    "finales": 4,
+    "saveVersion": 2,
+    "saveKey": "saint-shard-3055-v1",
+    "provisionalGrade": 8.2
+  },
+  "release": {
+    "atReview": "Preceding 1392963 passed full CI and production alias is READY at that commit; current cycle requires its own exact-commit CI after push.",
+    "precedingRun": "https://github.com/cisohabitat/CyberPunk3055RPG/actions/runs/39096647998",
+    "precedingProductionDeployment": "dpl_HQvp4XpgyGGaRcGSDoJp5ErCky5y"
+  },
+  "limitations": [
+    "Internal automated checks and AI visual review are the agreed proxy, not independent human/artistic acceptance or an AAA/9+ grade.",
+    "Only Chromium/phone are executed locally; hosted CI retains the complete unfiltered four-engine matrix, security/balance checks and fail-closed exact-commit release gate.",
+    "First-visit transfer and layout are four synthetic samples, not field percentiles or a previously permitted menu-music visit.",
+    "At enlarged 320px text, complete content remains scrollable; first-paragraph visibility in the initial viewport is not claimed.",
+    "Development screenshots/logs reside in /tmp and are not shipped media assets."
+  ],
+  "discardedLocalAttempt": {
+    "log": "/tmp/reading-flow-browser-final.log",
+    "status": "interrupted",
+    "counted": false,
+    "notes": [
+      "Overlapped a runner using the same trace output directory; two new-suite trace errors and seven broad-run trace-close errors resulted.",
+      "One extra new-suite geometry assertion used scrollIntoViewIfNeeded, which does not account for sticky-footer occlusion. Final test scrolls to the dialog end and retains strict consequence-above-button geometry assertions.",
+      "Final new suite and every affected broader case pass with isolated output directories."
+    ]
+  },
+  "docsTests": {
+    "passed": 2,
+    "failed": 0,
+    "log": "/tmp/reading-flow-doc-tests.log",
+    "note": "Overlapping repeat after the final AGENTS content update; not added to the 652 source test count."
+  },
+  "evidenceLogSha256": {
+    "/tmp/reading-flow-source.log": "3250fc3369663de4fecbc4dd5a784813a64b87708a85981a10adce60f4d57e7d",
+    "/tmp/reading-flow-build-final.log": "c617ab44f25d044b7d7f16deb3d9205c60414fee45699bf9c6b40ab1b6c1a92f",
+    "/tmp/reading-flow-tsc-final.log": "76162e465989f3f070a9de8db711fbf358e53b74d09ce1bbdb57c727e4c4a16d",
+    "/tmp/reading-flow-security.log": "0b009b10beffea641929ddf8fd0bb0c947b1e9f5b5d1a79c37d0b0b538823fb5",
+    "/tmp/reading-flow-production.log": "516a12ca6cd2248bc647ee856e82ff37106d94538e1cc4ec43163a55c8e8e5ec",
+    "/tmp/reading-flow-performance.log": "23d94d2e4cf9ba4d5a96ab573672f2082838b6af648b93d4324589faf8b3d275",
+    "/tmp/reading-flow-final-isolated.log": "e44cd79145a09cb140ed0a4eb1bbe9a1e56e5cbd08369a2b8b873f04086a2dda",
+    "/tmp/reading-flow-regressions.log": "4ddc5cde4a5797a2c6cdaf96947772967606f7612d4509f96b43988a12653960",
+    "/tmp/reading-flow-affected.log": "43949046af8d40fa483e67bcb0d72c9ab21ba5abe9b8a0d24dd1495bb3bb1f36",
+    "/tmp/reading-flow-atmosphere.log": "8733b31782b99d09e9ed1af15ef935af0b009d75078519eb7a12c989626fc8c7",
+    "/tmp/reading-flow-doc-tests.log": "8923949ab8cea7eb4ed71fafbe16fcb8c2b01a2e885fb2fe42e9a592ee63f724"
+  }
+}

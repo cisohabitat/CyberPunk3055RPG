@@ -140,7 +140,10 @@ for (const width of [390, 1440]) for (const mode of ["normal", "saved-reduce", "
         expect(await overlay.evaluate(el => getComputedStyle(el).opacity)).toBe("0");
       } else expect(style.animation).toBe("none");
       const art = (await image.boundingBox())!, caption = (await page.getByTestId("scene-illustration").locator("figcaption").boundingBox())!;
-      expect(caption.y).toBeGreaterThanOrEqual(art.y + art.height - 1);
+      // Regular phone captions now sit beside the image; chapter/desktop captions stay below.
+      // Both layouts must keep text outside the clipped atmosphere window.
+      expect(caption.x >= art.x + art.width - 1 || caption.y >= art.y + art.height - 1).toBe(true);
+      await expect(page.getByTestId("scene-illustration").locator(".art-window")).toHaveCSS("overflow", "hidden");
       expect(art.width / art.height).toBeCloseTo(1.5, 2);
       expect(await image.evaluate(el => getComputedStyle(el).transform)).toBe("none");
       expect(await page.evaluate(() => localStorage.getItem("saint-shard-3055-v1"))).toBe(before);

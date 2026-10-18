@@ -94,7 +94,7 @@ export function CheckDialog({
   }
 
   return (
-    <DialogFrame titleId="check-title" className="wide" onEscape={result ? undefined : onClose}>
+    <DialogFrame titleId="check-title" className="wide check-dialog" onEscape={result ? undefined : onClose}>
       <h2 id="check-title">{preview.label}</h2>
       <p>
         {chance}. 1d10 + {preview.bonus} against DC {preview.dc}.
@@ -109,17 +109,20 @@ export function CheckDialog({
           </li>
         ))}
       </ul>
-      {display !== null && (
-        <div className={result && !rolling ? (result.success ? "die plate good" : "die plate bad") : "die plate"}>{display}</div>
+      {display !== null && rolling && (
+        <div className="die plate">{display}</div>
       )}
       {result && !rolling && (
-        <div aria-live="polite">
-          <p className="total">
+        <div className="check-result" data-outcome={result.success ? "success" : "miss"} aria-live="polite">
+          <div className="check-score">
+            <div className={result.success ? "die plate good" : "die plate bad"}>{result.roll}</div>
+            <div><p className="total">
             <span>
               {result.roll} + {result.bonus} = {result.total}
             </span>
-            <span>{result.success ? "Success" : "Miss"}</span>
-          </p>
+            <span className="check-outcome">{result.success ? "Success" : "Miss"}</span>
+          </p><p className="check-target">Against DC {result.dc}</p></div>
+          </div>
           <p data-testid="check-flavor"><SpokenText text={result.flavor} range={spokenRange} /></p>
           {dialogue.length > 0 && <VoiceLine lines={dialogue} enabled={sound && voicesEnabled} automatic={automaticVoices} onSpeaking={setSpeaking} />}
           <div className="reaction">
@@ -128,7 +131,7 @@ export function CheckDialog({
           </div>
           {result.crit === "success" && <p>A ten. Strain eases.</p>}
           {result.crit === "fail" && <p>A one. Strain bites harder.</p>}
-          {delta.length > 0 && <p className="delta">{delta.join(" · ")}</p>}
+          {delta.length > 0 && <section className="check-consequences" aria-labelledby="check-changes-title"><h3 id="check-changes-title">On Continue</h3><ul className="delta">{delta.map(line => <li key={line}>{line}</li>)}</ul></section>}
         </div>
       )}
       {state.strain >= 4 && !result && <p data-testid="chair-close">The chair is close.</p>}
