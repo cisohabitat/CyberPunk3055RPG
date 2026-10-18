@@ -1591,3 +1591,24 @@ html[data-motion="reduce"] .choices .choice { transition: none; }
 html[data-contrast="high"] .portrait-frame .portrait, html[data-contrast="high"] .cast-portrait, html[data-contrast="high"] .cast-profile-portrait { filter: none; }
 html[data-contrast="high"] .district-emblem, html[data-contrast="high"] .record-document { background: #09080d; box-shadow: none; }
 html[data-contrast="high"] .record-document::before { display: none; }
+
+/* Committed feedback and return context stay out of the first-prose header. */
+.decision-receipt, .run-recap { margin-block: 1rem; padding: .6rem .8rem; border: 1px solid var(--line); border-left: 3px solid var(--cyan); background: #10141b; overflow-wrap: anywhere; }
+.decision-receipt summary, .run-recap summary { cursor: pointer; min-height: 44px; align-content: center; color: var(--ink); }
+.decision-receipt summary:focus-visible, .run-recap summary:focus-visible { outline: 3px solid var(--cyan); outline-offset: 3px; }
+.decision-receipt li, .run-recap li { margin-block: .4rem; }
+.decision-receipt .hint, .run-recap .hint { margin-bottom: 0; }
+.dialogue-progress { order: 3; display: flex; gap: 4px; width: 100%; flex-basis: 100%; height: 3px; }
+.dialogue-progress span { flex: 1; background: var(--line); }
+.voice-line[data-playback="playing"] .dialogue-progress [data-current="true"] { background: var(--amber); }
+.voice-line li[aria-current="true"] { border-left: 3px solid var(--amber); padding-left: .6rem; }
+.portrait[data-loaded="false"] { visibility: hidden; }
+.portrait[data-loaded="true"] { animation: portrait-arrive 160ms ease-out; }
+@keyframes portrait-arrive { from { opacity: .65; } to { opacity: 1; } }
+/* Replays per location, independent of choices, audio and scene focus. */
+.kicker { position: relative; }
+.location-entry { position: absolute; left: 0; right: 0; bottom: -3px; height: 1px; background: currentColor; opacity: 0; pointer-events: none; animation: location-arrive 240ms ease-out; }
+@keyframes location-arrive { from { opacity: .6; } to { opacity: 0; } }
+html[data-motion="reduce"] .location-entry, html[data-motion="reduce"] .portrait[data-loaded="true"] { animation: none; }
+@media (prefers-reduced-motion: reduce) { .location-entry, .portrait[data-loaded="true"] { animation: none; } }
+@media (forced-colors: active) { .decision-receipt, .run-recap { border-color: CanvasText; } .voice-line[data-playback="playing"] .dialogue-progress [data-current="true"] { background: Highlight; forced-color-adjust: none; } }

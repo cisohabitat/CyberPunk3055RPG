@@ -31,13 +31,14 @@ export function VoiceLine({ line, lines, enabled, automatic, paused = false, onS
   const active = view.status === "loading" || view.status === "playing";
   const progress = `Line ${lines.findIndex(candidate => candidate.key === selected.key) + 1} of ${lines.length}`;
   const name = selected.speaker === "Sister Lumen" ? "Lumen" : selected.speaker;
-  return <aside className="voice-line" aria-label={`${name} selected dialogue`} data-testid="voice-line" data-voice-id={selected.id}>
+  return <aside className="voice-line" aria-label={`${name} selected dialogue`} data-testid="voice-line" data-voice-id={selected.id} data-playback={enabled ? view.status : "idle"}>
     <button type="button" className="ghost" disabled={!enabled} onClick={() => {
       if (active) playback.current!.stop();
       else playback.current!.listen(selected.key);
     }}>{active ? "Stop line" : `Listen to ${name}`}</button>
     {lines.length > 1 && <button type="button" className="ghost" disabled={!enabled || active} onClick={() => playback.current!.playAll()}>Play all dialogue</button>}
     <p className="hint" role="status">{paused ? "Resume sound to listen. Dialogue stays in the text." : !enabled ? "Enable Sound and voice volume in Settings to listen." : view.status === "loading" ? `Loading selected dialogue… · ${progress}` : view.status === "unavailable" ? `Voice unavailable. The complete dialogue remains in the text. · ${progress}` : view.status === "playing" ? `Playing selected dialogue · ${name} · ${progress} · synthetic voice` : `Selected dialogue · ${progress} · synthetic voice`}</p>
+    <div className="dialogue-progress" aria-hidden="true">{lines.map(candidate => <span key={candidate.key} data-current={candidate.key === selected.key} />)}</div>
     <details><summary>Voice transcript</summary>
       <ol>{lines.map(candidate => <li key={candidate.key} aria-current={view.status === "playing" && candidate.key === selected.key ? "true" : undefined}><strong>{candidate.speaker}:</strong> {candidate.text}</li>)}</ol>
       {lines.length > 1 && <div><label htmlFor={selectId}>Dialogue line</label><select id={selectId} value={selected.key} disabled={active} onChange={event => setView({ status: "idle", key: event.target.value })}>

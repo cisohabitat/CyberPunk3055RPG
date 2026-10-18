@@ -1,5 +1,6 @@
 "use client";
 
+import { choiceReceipt } from "@/lib/play-feedback";
 import { ArchiveCatalog } from "./ArchiveCatalog";
 import { choiceSection } from "@/lib/choice-sections";
 import { choicePresentation, DISTRICT_PRESENTATIONS, sceneDistrict } from "@/lib/visual-presentation";
@@ -116,7 +117,7 @@ export function PlayScreen({
   const [shown, setShown] = useState<{ sceneId: string; prose: string; count: number } | null>(null);
   const [speaking, setSpeaking] = useState<CampaignDialogue | null>(null);
   const [reduceMotion, setReduceMotion] = useState(false);
-  const prior = useRef(state);
+  const [decisionReceipt, setDecisionReceipt] = useState<{ state: GameState; lines: string[] } | null>(null);
   const readingFocus = useRef<{ sceneId: string; index: number } | null>(null);
   const priorSound = useRef<{ location: string; on: boolean; ending: boolean } | null>(null);
   const queuedSceneCue = useRef<{ state: GameState; name: SceneCueName } | null>(null);
@@ -179,12 +180,6 @@ export function PlayScreen({
     if (sceneCuesEnabled && queued?.state === state) return playSceneCue(queued.name);
   }, [state, sceneCuesEnabled]);
 
-  useEffect(() => {
-    if (prior.current !== state) {
-      setDelta(prior.current.sceneId === state.sceneId ? [] : runDelta(prior.current, state));
-      prior.current = state;
-    }
-  }, [state]);
 
   useEffect(() => {
     setSheetOpen(false);
@@ -245,6 +240,8 @@ export function PlayScreen({
 
   function commit(next: GameState, choiceId: string) {
     setReceipt({ state: next, values: resourceChanges(state, next) });
+    setDelta(runDelta(state, next));
+    setDecisionReceipt({ state: next, lines: choiceReceipt(state, next) });
     const cue = sound && preferences.effects > 0 ? sceneInteractionCue(state, choiceId, next) : undefined;
     queuedSceneCue.current = cue ? { state: next, name: cue } : null;
     onChange(next);
@@ -326,7 +323,7 @@ export function PlayScreen({
             <div className="scene-row" data-compact={compactHeader ? "true" : "false"} data-composition={!direction && !chapterPresentation(scene.id) ? "reading" : "feature"}>
               <Portrait compact={compactHeader} speaker={playing?.speaker ?? scene.speaker} speaking={Boolean(playing)} sceneId={scene.id} flags={state.flags} origin={state.origin} handle={state.handle} artwork={preferences.artwork !== "none"} />
               <div>
-                <p className="kicker">
+                <p className="kicker"><span key={locationLabel} className="location-entry" aria-hidden="true" />
                   {districtIdentity && <span className="district-emblem"><Symbol name={districtIdentity.symbol} /></span>}
                   {scene.location}
                   {scene.location !== act && <span className="act-chip"> · {act}</span>}
@@ -406,6 +403,11 @@ export function PlayScreen({
             {scene.id === "memory_sequence" && <MemoryTimeline state={state} choices={choices} onPlace={pick} artwork={preferences.artwork !== "none"} reducedMotion={reduceMotion} numberShortcuts={preferences.numberShortcuts} />}
             {["act2_route_map", "act2_route_exit", "act2_route_review", "act2_route_crossing"].includes(scene.id) && <RouteBoard state={state} />}
             {scene.finale && <FinaleReflection state={state} artwork={preferences.artwork !== "none"} />}
+            {decisionReceipt?.state === state && decisionReceipt.lines.length > 0 && <details className="decision-receipt" data-testid="decision-receipt">
+              <summary><span role="status">Last choice · {decisionReceipt.lines.length} {decisionReceipt.lines.length === 1 ? "update" : "updates"}</span></summary>
+              <ul>{decisionReceipt.lines.map((line, index) => <li key={index}>{line}</li>)}</ul>
+              <p className="hint">Changes already applied. Faction numbers are standing, not a guarantee of trust or consent.</p>
+            </details>}
             {fault && <p className="form-error">{fault}</p>}
             {choices.length > 0 && (
               <div className={scene.id === "districts" ? "choices cards" : "choices"} id="choices" tabIndex={-1} role="region" aria-labelledby="choices-title">

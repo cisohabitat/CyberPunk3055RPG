@@ -1,5 +1,6 @@
 "use client";
 
+import { RunRecap } from "./RunRecap";
 import { useState } from "react";
 import Link from "next/link";
 import { MenuMusic } from "./MenuMusic";
@@ -100,6 +101,7 @@ export function TitleScreen({
           </div>
         </section>
         <div className="title-details">
+          {save && <RunRecap state={save} />}
           <p className="title-premise"><strong>A solo story RPG.</strong> In Kite City, an hour of memory can be bought. Tonight, a broker has a job for you.</p>
           <div className="rules">
             <section>

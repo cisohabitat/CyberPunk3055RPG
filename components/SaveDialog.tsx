@@ -1,4 +1,5 @@
 "use client";
+import { RunRecap } from "./RunRecap";
 import { useState } from "react";
 import { DialogFrame } from "./DialogFrame";
 import { CheckpointArtwork } from "./CheckpointArtwork";
@@ -34,6 +35,7 @@ export function SaveDialog({ state, onLoad, onClose, onTitle, artwork = true }: 
         <div><h3>Slot {id}</h3><p>{snapshot ? `${snapshot.state.handle} · ${new Date(snapshot.savedAt).toLocaleString()}` : "Empty"}</p>
         {snapshot && <><p className="save-identity">{ORIGINS[snapshot.state.origin].name}{snapshot.state.givenName !== snapshot.state.handle ? ` · ${snapshot.state.givenName}` : ""}</p><p className="checkpoint-label">{checkpointLabel(snapshot.state)}</p><p className="hint">{currentGoal(snapshot.state)}</p></>}</div>
       </div>
+      {snapshot && <RunRecap state={snapshot.state} />}
       <div className="actions"><button className="ghost" type="button" disabled={!state} onClick={() => snapshot ? setConfirm({ kind: "save", id }) : save(id)}>Save to slot {id}</button><button className="ghost" type="button" disabled={!snapshot} onClick={() => snapshot && load(snapshot.state, `Slot ${id}`)}>Load slot {id}</button></div>
     </section>)}</div>
     <div className="actions"><button type="button" className="ghost" disabled={!state} onClick={() => state && downloadJson("saint-shard-run.json", exportRun(state))}>Export run</button><button type="button" className="ghost" disabled={!backup} onClick={() => backup && load(backup, "Automatic backup")}>Restore automatic backup</button></div>

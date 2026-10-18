@@ -822,3 +822,9 @@ The game header, character-creation cards and loading screen now use the silver 
 Fresh rolls have one short decelerating rattle and a quiet landing; a successful ten and missed one have restrained distinct accents. Effects volume and Sound off remain respected. Reduced motion skips the rattle, restored dice stay silent, and leaving/muting cancels active or delayed check audio. The existing 700ms roll and Continue-only commitment remain.
 
 Main-menu buttons and links have silver/cyan hover, keyboard-focus and pressed feedback with 44px targets. Both reduced-motion settings remove transitions and movement, and disabled music controls remain disabled. See [the shared branding and feedback record](docs/BRAND_MENU_FEEDBACK.md).
+
+### Choice feedback and returning to your run
+
+Committed choices now leave a collapsible receipt near the next choices, including actual bounded resource/faction changes, newly acquired journal entries and changed objectives—even when an action stays in the same scene. Loading a save or holding a die never creates a new receipt. The title page and occupied manual slots offer “Where you left off,” with the saved chapter/location, the last three chosen actions and any uncommitted held roll. Existing objective text stays visible.
+
+Dialogue controls show which recorded line is playing; portraits reveal only the current loaded image with a short fade, and location headings receive a brief arrival accent. Saved and system reduced motion disable those effects. Existing canonical dialogue, actor art and recordings remain aligned. See [the five-stage feedback and campaign review](docs/PLAY_FEEDBACK_CYCLE.md) for validation scope and limits.

@@ -23,6 +23,9 @@ test("revealing a two-character conversation plays Sera then Ren and releases ea
   await expect(page.getByTestId("voice-line").getByRole("status")).toContainText("Line 1 of 2");
   await expect.poll(() => speech(page), { timeout: 25_000 }).toEqual(queue);
   await expect(page.getByTestId("voice-line")).toHaveAttribute("aria-label", "Ren selected dialogue");
+  await expect(page.getByTestId("voice-line")).toHaveAttribute("data-playback", "playing");
+  await expect(page.locator('.dialogue-progress span')).toHaveCount(2);
+  await expect(page.locator('.dialogue-progress span').nth(1)).toHaveAttribute("data-current", "true");
   await expect(page.getByTestId("voice-line").getByRole("status")).toContainText("Line 2 of 2");
   await expect(page.locator(".scene-row .portrait-frame")).toHaveAttribute("data-speaker", "Ren");
   await expect(page.getByTestId("spoken-quote")).toHaveAttribute("data-speaker", "Ren");
@@ -31,6 +34,7 @@ test("revealing a two-character conversation plays Sera then Ren and releases ea
   await expect(page.getByTestId("spoken-quote")).toHaveCount(0);
   await expect(page.locator(".scene-row .portrait-frame")).toHaveAttribute("data-speaker", "Sera");
   expect((await audio(page)).disposed.filter(n => n.startsWith("voice-"))).toEqual(queue);
+  await expect(page.getByTestId("voice-line")).not.toHaveAttribute("data-playback", "playing");
   await page.getByTestId("voice-line").locator("summary").click();
   await expect(page.getByTestId("voice-line").locator("details")).toContainText("Sera:");
   await expect(page.getByTestId("voice-line").locator("details")).toContainText("Ren:");
