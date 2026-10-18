@@ -29,3 +29,5 @@ The phase also corrects the heading-order error behind the preceding CI failure.
 See the [README](../README.md) for play and setup instructions, [credits](../CREDITS.md) for media provenance, and the [production roadmap](AAA_PRODUCTION_PLAN.md) for future work.
 
 The latest [visual refinement cycle](VISUAL_REFINEMENT_CYCLE.md) compacts the phone notebook, illustrates known map places, adds four individual item inspections and two shared scene paintings, and shows actual resource/faction changes beside their values.
+
+The latest [complete art cycle](COMPLETE_ART_CYCLE.md) improves phone map access, introduces progressive scene/inspection images, completes individual art for every inventory item, and adds three literal conversation paintings.

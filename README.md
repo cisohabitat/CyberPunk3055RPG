@@ -766,3 +766,11 @@ The investigation notebook places its first record higher on phone screens, with
 Inspecting the Saint Shard (intact or damaged), Archive Probe or Shelter Token opens an individual 1536×1024 object painting. Gear keeps its lightweight atlas thumbnails until inspection. Two shared scene paintings pair Mara with Lumen at the chapel and Sera with Ives at the wall only when the authored scene places both there. Existing voices still follow the actual speaker and exact text.
 
 Signed indicators beside creds, strain and faction values show the last committed choice’s actual change, including capped values. They remain until the next choice; loading a run or staging a die creates no receipt. See [the refinement report](docs/VISUAL_REFINEMENT_CYCLE.md) for scope, provenance and verification.
+
+## Complete equipment art and quicker visual access
+
+The phone City map uses compact landmark thumbnails and lists the current place first, followed by known destinations with available choices. Find still takes you to the existing decision without committing it. Desktop retains the larger landmark cards.
+
+Scene paintings and artwork inspections show a tiny version of the same painting while the responsive detail decodes, within a fixed 3:2 frame. The brief fade respects saved and system reduced motion; missing images retain their descriptions and controls. Artwork-none requests neither paintings nor previews.
+
+All fourteen inventory items now have individual close-up paintings, with a separate damaged-shard version. Gear keeps atlas thumbnails and loads the detailed painting only on inspection. Three new literal scene paintings show Sera and Ren before the shelter repair, Edda reviewing service documents, and Lumen wiping beneath Mara’s cup. Exact dialogue, voice casting and recorded outcomes remain unchanged. See [the complete art cycle](docs/COMPLETE_ART_CYCLE.md).

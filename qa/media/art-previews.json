@@ -1,0 +1,808 @@
+{
+  "version": 1,
+  "processing": "96 by 64 JPEG encoding only, derived from existing delivery files; no creative editing or new outcome meaning.",
+  "images": {
+    "/art/archive-desk.jpg": "/art/previews/archive-desk.jpg",
+    "/art/archive-held-original.jpg": "/art/previews/archive-held-original.jpg",
+    "/art/archive-preparation.jpg": "/art/previews/archive-preparation.jpg",
+    "/art/asa-dispatch.jpg": "/art/previews/asa-dispatch.jpg",
+    "/art/attendant-confrontation.jpg": "/art/previews/attendant-confrontation.jpg",
+    "/art/canal-dispatch.jpg": "/art/previews/canal-dispatch.jpg",
+    "/art/chapel-entry.jpg": "/art/previews/chapel-entry.jpg",
+    "/art/chapel-reader.jpg": "/art/previews/chapel-reader.jpg",
+    "/art/chapel-service.jpg": "/art/previews/chapel-service.jpg",
+    "/art/chapel-shared.jpg": "/art/previews/chapel-shared.jpg",
+    "/art/chapter-wall.jpg": "/art/previews/chapter-wall.jpg",
+    "/art/chapter-week.jpg": "/art/previews/chapter-week.jpg",
+    "/art/clinic-coolant.jpg": "/art/previews/clinic-coolant.jpg",
+    "/art/clinic-relay.jpg": "/art/previews/clinic-relay.jpg",
+    "/art/courier-receipt.jpg": "/art/previews/courier-receipt.jpg",
+    "/art/courier-table.jpg": "/art/previews/courier-table.jpg",
+    "/art/district-board.jpg": "/art/previews/district-board.jpg",
+    "/art/edda-archive.jpg": "/art/previews/edda-archive.jpg",
+    "/art/edda-service-review.jpg": "/art/previews/edda-service-review.jpg",
+    "/art/finale-listed.jpg": "/art/previews/finale-listed.jpg",
+    "/art/finale-names.jpg": "/art/previews/finale-names.jpg",
+    "/art/finale-quiet.jpg": "/art/previews/finale-quiet.jpg",
+    "/art/finale-witness.jpg": "/art/previews/finale-witness.jpg",
+    "/art/fragment-order.jpg": "/art/previews/fragment-order.jpg",
+    "/art/fragment-roster.jpg": "/art/previews/fragment-roster.jpg",
+    "/art/fragment-signature.jpg": "/art/previews/fragment-signature.jpg",
+    "/art/freight-passage.jpg": "/art/previews/freight-passage.jpg",
+    "/art/freight.jpg": "/art/previews/freight.jpg",
+    "/art/hearing-filed.jpg": "/art/previews/hearing-filed.jpg",
+    "/art/hearing-table.jpg": "/art/previews/hearing-table.jpg",
+    "/art/held-case.jpg": "/art/previews/held-case.jpg",
+    "/art/incinerator-flue.jpg": "/art/previews/incinerator-flue.jpg",
+    "/art/item-archive-probe.jpg": "/art/previews/item-archive-probe.jpg",
+    "/art/item-burner-route.jpg": "/art/previews/item-burner-route.jpg",
+    "/art/item-chair-harness.jpg": "/art/previews/item-chair-harness.jpg",
+    "/art/item-clinic-marker.jpg": "/art/previews/item-clinic-marker.jpg",
+    "/art/item-counterfeit-pass.jpg": "/art/previews/item-counterfeit-pass.jpg",
+    "/art/item-desk-guide.jpg": "/art/previews/item-desk-guide.jpg",
+    "/art/item-layout-scrap.jpg": "/art/previews/item-layout-scrap.jpg",
+    "/art/item-mono-knife.jpg": "/art/previews/item-mono-knife.jpg",
+    "/art/item-route-shroud.jpg": "/art/previews/item-route-shroud.jpg",
+    "/art/item-sedative.jpg": "/art/previews/item-sedative.jpg",
+    "/art/item-shard-damaged.jpg": "/art/previews/item-shard-damaged.jpg",
+    "/art/item-shard.jpg": "/art/previews/item-shard.jpg",
+    "/art/item-signal-baffle.jpg": "/art/previews/item-signal-baffle.jpg",
+    "/art/item-spoof-chip.jpg": "/art/previews/item-spoof-chip.jpg",
+    "/art/item-witness-token.jpg": "/art/previews/item-witness-token.jpg",
+    "/art/ives-hearing.jpg": "/art/previews/ives-hearing.jpg",
+    "/art/kerr-handover.jpg": "/art/previews/kerr-handover.jpg",
+    "/art/laundry-cart.jpg": "/art/previews/laundry-cart.jpg",
+    "/art/lumen-cup.jpg": "/art/previews/lumen-cup.jpg",
+    "/art/mara-present.jpg": "/art/previews/mara-present.jpg",
+    "/art/mara-revelation.jpg": "/art/previews/mara-revelation.jpg",
+    "/art/mara-shared-hour.jpg": "/art/previews/mara-shared-hour.jpg",
+    "/art/mara-window.jpg": "/art/previews/mara-window.jpg",
+    "/art/market-counter.jpg": "/art/previews/market-counter.jpg",
+    "/art/memorial-stair.jpg": "/art/previews/memorial-stair.jpg",
+    "/art/memory-apparatus.jpg": "/art/previews/memory-apparatus.jpg",
+    "/art/memory-bench.jpg": "/art/previews/memory-bench.jpg",
+    "/art/nia-arrival.jpg": "/art/previews/nia-arrival.jpg",
+    "/art/nia-transfer.jpg": "/art/previews/nia-transfer.jpg",
+    "/art/notice-desk.jpg": "/art/previews/notice-desk.jpg",
+    "/art/opening.jpg": "/art/previews/opening.jpg",
+    "/art/ordinary-rest.jpg": "/art/previews/ordinary-rest.jpg",
+    "/art/private-reply.jpg": "/art/previews/private-reply.jpg",
+    "/art/quill-offer.jpg": "/art/previews/quill-offer.jpg",
+    "/art/ren-canal.jpg": "/art/previews/ren-canal.jpg",
+    "/art/repair-bench.jpg": "/art/previews/repair-bench.jpg",
+    "/art/sera-hearing.jpg": "/art/previews/sera-hearing.jpg",
+    "/art/shelter-conversation.jpg": "/art/previews/shelter-conversation.jpg",
+    "/art/shelter-hall.jpg": "/art/previews/shelter-hall.jpg",
+    "/art/shelter-landing.jpg": "/art/previews/shelter-landing.jpg",
+    "/art/shelter-pump.jpg": "/art/previews/shelter-pump.jpg",
+    "/art/shelter-restored.jpg": "/art/previews/shelter-restored.jpg",
+    "/art/spire-counter.jpg": "/art/previews/spire-counter.jpg",
+    "/art/spire-payroll.jpg": "/art/previews/spire-payroll.jpg",
+    "/art/spire-terminal.jpg": "/art/previews/spire-terminal.jpg",
+    "/art/stallholder-story.jpg": "/art/previews/stallholder-story.jpg",
+    "/art/wall-shared.jpg": "/art/previews/wall-shared.jpg",
+    "/art/witness-checkpoint.jpg": "/art/previews/witness-checkpoint.jpg"
+  },
+  "files": [
+    {
+      "path": "public/art/previews/archive-desk.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1415,
+      "sha256": "f2b5da2cf8b521d2fee157df1494b5b925f1b6a25905f35fa3bc6ad4908246bc",
+      "source": "public/art/archive-desk.jpg",
+      "sourceSha256": "3380a27c045a88e14ed668eac830ff10184f802149f877fd5d5348b64f51c2b2"
+    },
+    {
+      "path": "public/art/previews/archive-held-original.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1564,
+      "sha256": "3df733d6aa8cc92f7330796e6a9c7b0eea9b377d49644315dccdcd104a4823e5",
+      "source": "public/art/archive-held-original.jpg",
+      "sourceSha256": "4e1dfb9241e74fe5dd8aa82f874af2a51347824ca71f93663aafb6fed737ce71"
+    },
+    {
+      "path": "public/art/previews/archive-preparation.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1612,
+      "sha256": "6d07e79953248400789672f953ad1ee575bc92cb5bfa4790723ef9b340f9aa01",
+      "source": "public/art/archive-preparation.jpg",
+      "sourceSha256": "567474a9f42a03bb8af719654aa32a21ff6e78a446ffe44c2489208485cd86cd"
+    },
+    {
+      "path": "public/art/previews/asa-dispatch.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1566,
+      "sha256": "820f5fedc8095fec6aafd2036c560abb3f3d96ed00086315e6643d783fe0a315",
+      "source": "public/art/asa-dispatch.jpg",
+      "sourceSha256": "c2629fb0e03e49efe511e7573253cd51df18caeb39c053c638186b1d7fe06b86"
+    },
+    {
+      "path": "public/art/previews/attendant-confrontation.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1457,
+      "sha256": "7e2ae1faf909feed141a98ad000bcc9c2b66224831256f6f887bd52161eb0cf2",
+      "source": "public/art/attendant-confrontation.jpg",
+      "sourceSha256": "bd8151decb4cdeeca1ab805c221127fd128630466b33eb4aac6a011883b49053"
+    },
+    {
+      "path": "public/art/previews/canal-dispatch.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1626,
+      "sha256": "022bf9078b9bb34428454c1748bd7f1e879b63ba4ceabbffc3117cd05abb7c74",
+      "source": "public/art/canal-dispatch.jpg",
+      "sourceSha256": "5c7ff9924557e8e8d5808838676f3ba96ce452555e8899e4930199c9a61e476c"
+    },
+    {
+      "path": "public/art/previews/chapel-entry.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1266,
+      "sha256": "50b2bf162d0902d7c8c90786890b41375a57a5bd6f27695f26a0d04cf13e27f6",
+      "source": "public/art/chapel-entry.jpg",
+      "sourceSha256": "ab4ed5db3ed44a1f1f5f3eaf106723cdfd2e8dd7063fcf2c3a74ce2b566e1836"
+    },
+    {
+      "path": "public/art/previews/chapel-reader.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1531,
+      "sha256": "2fcb26c0ec95d0dff540b882ef18e2cb5e0305cfcfe0a5be3b656750e979ddf6",
+      "source": "public/art/chapel-reader.jpg",
+      "sourceSha256": "1686a883834fff73bdb935fad6bc52083d20cfcb04669c067a073ae03abe9738"
+    },
+    {
+      "path": "public/art/previews/chapel-service.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1328,
+      "sha256": "5690b4dac4ef95b9c43599c778b62a2f6251c97f921512d17beaf9395ffd0d4c",
+      "source": "public/art/chapel-service.jpg",
+      "sourceSha256": "b8e1d3ac5a628807d03bf02367e0ab1a1f90b9e3dde8bbc5e9d7c139b80e6c35"
+    },
+    {
+      "path": "public/art/previews/chapel-shared.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1359,
+      "sha256": "9e28c9966edc66600223d6ad1d85c32026a4760d8dfb5c922cefa338ab174157",
+      "source": "public/art/chapel-shared.jpg",
+      "sourceSha256": "d36d5180b132fdde67b7abf6735d2bd5139139b39f3463d21be120c09ce8f51f"
+    },
+    {
+      "path": "public/art/previews/chapter-wall.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1190,
+      "sha256": "092b2a5d94eb049907ef6b428245e04b31396876fb763e8893957d21fc815d99",
+      "source": "public/art/chapter-wall.jpg",
+      "sourceSha256": "52a34463137b9045e7a6894e359bfba1e26442a7726622ecc8a5e0e2e6898e18"
+    },
+    {
+      "path": "public/art/previews/chapter-week.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1611,
+      "sha256": "95ce30376dcf930303aa4373de8bd98d0d91e0451c69cbef6a5adbcbd987aa97",
+      "source": "public/art/chapter-week.jpg",
+      "sourceSha256": "1d258a21b77686a66bb9f10812eee5a0fd3a2a6e6f21c4fdf17a375b9f17d4bd"
+    },
+    {
+      "path": "public/art/previews/clinic-coolant.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1310,
+      "sha256": "bd626deb54bd3fd1b0a4ea2d67c18beb4bee740419ba91b59aa2f9a678caf017",
+      "source": "public/art/clinic-coolant.jpg",
+      "sourceSha256": "5bee57b0d2f030493f7143904102d8d1b75c5ceb464b05eeea66861014e1659b"
+    },
+    {
+      "path": "public/art/previews/clinic-relay.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1352,
+      "sha256": "f751bafa35595fbb264246af51a269c32e283fd39abab01b76bdde636c3859e4",
+      "source": "public/art/clinic-relay.jpg",
+      "sourceSha256": "927cf9d538b2583ac2882456f65ee55784609ada9cfc913f4060e42f0aa41da8"
+    },
+    {
+      "path": "public/art/previews/courier-receipt.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1573,
+      "sha256": "3262300a40ebc6d56890e406a87719b190ae1dda3b7f921aa841d6aa62a9c420",
+      "source": "public/art/courier-receipt.jpg",
+      "sourceSha256": "73a07066c0d5d0f7d630f4f60bff6e4d1d9ea231520329c1d1a3df14a10a668b"
+    },
+    {
+      "path": "public/art/previews/courier-table.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1455,
+      "sha256": "b4b2256391d2cabebc109fc36de002da02a147129537f9580ac9316b55407851",
+      "source": "public/art/courier-table.jpg",
+      "sourceSha256": "6220068ae893776190816cb2d8bd7c9ef6c8047c5d76a83b301995e2613c61c4"
+    },
+    {
+      "path": "public/art/previews/district-board.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1485,
+      "sha256": "f29db9dd0306004e2b7a0104b5cbbc727b56f89f10d76c6af6707833787d0353",
+      "source": "public/art/district-board.jpg",
+      "sourceSha256": "09ce88af81f4ee7b02a20021a0b5013ddd1af1cc0f272380200ada947cd49340"
+    },
+    {
+      "path": "public/art/previews/edda-archive.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1666,
+      "sha256": "ec56485026c1e1ec2f89b9eeb2c2b63bdc36d74b1ef8c452ceb14bb5a2d49312",
+      "source": "public/art/edda-archive.jpg",
+      "sourceSha256": "090a907f59e2587d9ccc536652621ff0868c6ac46aa0e4a3067401a671cc9810"
+    },
+    {
+      "path": "public/art/previews/edda-service-review.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1641,
+      "sha256": "1ae3ac66e3f298a849c592179c3230487654e619d8e8dd8274f305f57a987a01",
+      "source": "public/art/edda-service-review.jpg",
+      "sourceSha256": "41a09af9feb8bcedb7449dd2567a189004d727f6c46c58a79c525ace19591462"
+    },
+    {
+      "path": "public/art/previews/finale-listed.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1364,
+      "sha256": "55efeaf092b2b63fc1994a03d2ef3094e5a08529b9e409b4d452160ee4550b4c",
+      "source": "public/art/finale-listed.jpg",
+      "sourceSha256": "097e29b0e4558bcbfccfd9f2431b0cdc80c810d01b313b1a29407df4ebec1954"
+    },
+    {
+      "path": "public/art/previews/finale-names.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1302,
+      "sha256": "77647a660c22e4bfae4334a4b02fa165fff0560f59d339569ec532df9e51d13d",
+      "source": "public/art/finale-names.jpg",
+      "sourceSha256": "7a22dc054a9e6700b8a688dedc17f02dc672efe4cccaa979082e07ff2153e72c"
+    },
+    {
+      "path": "public/art/previews/finale-quiet.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1214,
+      "sha256": "16985f585f31072b331b138bd98dd3720dfbdfd47f1a62839ff520ef0106c1eb",
+      "source": "public/art/finale-quiet.jpg",
+      "sourceSha256": "ac9eaf092f9d3e79f6ddc9efdf5b306e0f0838cad1414f21f7159cc7c5061074"
+    },
+    {
+      "path": "public/art/previews/finale-witness.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1330,
+      "sha256": "701337d983ada377c4c4ec33b79d1660bb40cd2bd42b490f3085b520240491fd",
+      "source": "public/art/finale-witness.jpg",
+      "sourceSha256": "08b5ebc44ac43c137ac792901092963f3f21ab35a5ae12f7390a3125f3e66c37"
+    },
+    {
+      "path": "public/art/previews/fragment-order.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1666,
+      "sha256": "3de2c42fe3a46f8057229eb37bad6ecb928bcf8ec406670c571f372df113a9c5",
+      "source": "public/art/fragment-order.jpg",
+      "sourceSha256": "af887e9203e651dd95138cded06fd10110afb7f85bc601a75cd2152962cc1c8b"
+    },
+    {
+      "path": "public/art/previews/fragment-roster.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1575,
+      "sha256": "dcd291497eb20f58afc7765f4307d0c2d1405cb763470eccfbb068e71644e547",
+      "source": "public/art/fragment-roster.jpg",
+      "sourceSha256": "403456eecebfed8ef287ae627f893dc9953854fc6040828ff8ef49c2217f96d1"
+    },
+    {
+      "path": "public/art/previews/fragment-signature.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1623,
+      "sha256": "85da209fd585a28008bca28f9f5c532a83b7a257b0029c580ab3eb1d4bf79a3f",
+      "source": "public/art/fragment-signature.jpg",
+      "sourceSha256": "d587dea6f54a2ac5bfe45961d1d499248133a7bb397a15e1ca7bca9735502764"
+    },
+    {
+      "path": "public/art/previews/freight-passage.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1382,
+      "sha256": "ee00fb2f14812e4083c355a9193ce77bf655dde796d3ef1b814f2d11e4917c68",
+      "source": "public/art/freight-passage.jpg",
+      "sourceSha256": "a371ba2736bef11fc8512eddbaf404d6e147a380cff4fbf6742cb75ac52a906a"
+    },
+    {
+      "path": "public/art/previews/freight.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1530,
+      "sha256": "1e71f377f70465df3b5f4d57017d3b9d083a18f71cd5fdbeb94ad756bf3d80b1",
+      "source": "public/art/freight.jpg",
+      "sourceSha256": "50f7060ce80a77fe92fe11258527dd7e25d8a08d13db6604067306eaa2d2580f"
+    },
+    {
+      "path": "public/art/previews/hearing-filed.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1412,
+      "sha256": "08ecad0ea914fc2e7f290a75fc2b3a16b254145c9737cb822a4771c153ce2fdf",
+      "source": "public/art/hearing-filed.jpg",
+      "sourceSha256": "6870a57e0b4ebdba00e2f2ef4e527cd6a28fc4fa2c3928c6b7fda597f9bbf2dc"
+    },
+    {
+      "path": "public/art/previews/hearing-table.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1443,
+      "sha256": "02341695c80b25631679c97387738f9399ecb86dbbd2cc350bf54ebe8eb2c14b",
+      "source": "public/art/hearing-table.jpg",
+      "sourceSha256": "f2601ddf9af5e08a094ea34fc6e20a2739b91ddefd1e23a658952c5c4371f9c3"
+    },
+    {
+      "path": "public/art/previews/held-case.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1520,
+      "sha256": "59fdadcd9f33adf1c25fbe584bf6d3453919df172d8d709404172e90ad44ce85",
+      "source": "public/art/held-case.jpg",
+      "sourceSha256": "3a088d0be99ed8d618db031935b8d669c70c2ae533bf8ce9c52d5b71ea14e2d4"
+    },
+    {
+      "path": "public/art/previews/incinerator-flue.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1428,
+      "sha256": "590f46e18145abce8319c4d5daaa5ed25ef760d0a84f54346848e25fba04293d",
+      "source": "public/art/incinerator-flue.jpg",
+      "sourceSha256": "d943a04c7cb25f7822a7ef628ea4780b788c52227c774cbc5ee70fdf5186da8f"
+    },
+    {
+      "path": "public/art/previews/item-archive-probe.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1178,
+      "sha256": "6cbe125650ef906b47e152c02f700f641930a5f98c66f493e01c3a3f03208e10",
+      "source": "public/art/item-archive-probe.jpg",
+      "sourceSha256": "3ad776f515241a61a39496acba83ed8be540589ae74445f03e7651139a70160c"
+    },
+    {
+      "path": "public/art/previews/item-burner-route.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1106,
+      "sha256": "acfa795e5fb995dd824dca9d8890f404ddd813997609714319c8d5af0637a009",
+      "source": "public/art/item-burner-route.jpg",
+      "sourceSha256": "70018c2df2ed0c3ade227040ec36456ea4329d38331e05675adb29e8c09fcc2c"
+    },
+    {
+      "path": "public/art/previews/item-chair-harness.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1075,
+      "sha256": "aa138b17292df495331f8c87059bb6748f481a2bae1e84409c1c65c8b999d5ac",
+      "source": "public/art/item-chair-harness.jpg",
+      "sourceSha256": "1f808fa1bd1600fb187df9bc76d4903e71343bf84b21e88ff36d320a92adec1f"
+    },
+    {
+      "path": "public/art/previews/item-clinic-marker.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 936,
+      "sha256": "3ae1a3f3760e8212350600689f0c1bf0f8531615a38fb3f6c953c8f4e064a979",
+      "source": "public/art/item-clinic-marker.jpg",
+      "sourceSha256": "9a2eff2a0f495a00986a978b299686b5deb71fa34f3df9fc2e437f95c668545a"
+    },
+    {
+      "path": "public/art/previews/item-counterfeit-pass.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1168,
+      "sha256": "2a157197b8d90b82e122fb8b8b73c00095ff8217b010840135f0e91b878b2e14",
+      "source": "public/art/item-counterfeit-pass.jpg",
+      "sourceSha256": "91326205c80ce7ba41725dc613322b2e115531f4a5ced7409cf3b65af0a3f734"
+    },
+    {
+      "path": "public/art/previews/item-desk-guide.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1053,
+      "sha256": "23aa8c23ee80ee2824f8bf114bc244b01815ec7e00cf2530760be7fc65539ff1",
+      "source": "public/art/item-desk-guide.jpg",
+      "sourceSha256": "967005c156b4dd4a88e3f9eaccb3488298f219f0dc4eaec27a367043e8c1847a"
+    },
+    {
+      "path": "public/art/previews/item-layout-scrap.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1357,
+      "sha256": "ac68a525cd886876291cdce79994d75af6410cf1396cfeaa8fe7fc7dd42ff509",
+      "source": "public/art/item-layout-scrap.jpg",
+      "sourceSha256": "535af706376d1c12140e38d4aeff5f715623ff5437bcc55810993069a338fea9"
+    },
+    {
+      "path": "public/art/previews/item-mono-knife.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 873,
+      "sha256": "feaf6ee895e537d47001978cdbdb391f75196390439c3f94ef0e109431b1f4ba",
+      "source": "public/art/item-mono-knife.jpg",
+      "sourceSha256": "828b2d35c73e7f6b804f725c75fd19f3f0241f9f4968f6dbf7185b2147c4e88c"
+    },
+    {
+      "path": "public/art/previews/item-route-shroud.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 885,
+      "sha256": "88a36391d90e1579e9c286a36d97edc26d480e15086835259145c62b247697f2",
+      "source": "public/art/item-route-shroud.jpg",
+      "sourceSha256": "1d50a6325e7483a840424747ed04d690ba90659f8244a2dbedab5fea0ae8d4fe"
+    },
+    {
+      "path": "public/art/previews/item-sedative.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 891,
+      "sha256": "ab6aa3c2c62bf0b5c00c219ec61309d99995437bef030c5913a0f0a8aba90d71",
+      "source": "public/art/item-sedative.jpg",
+      "sourceSha256": "4b00fbed1a7dc2c6d55df9b8c8db99aba48e15acba51f7d585175f13ee96845d"
+    },
+    {
+      "path": "public/art/previews/item-shard-damaged.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 977,
+      "sha256": "b2ea2d2a29ee97631f1e9c746ae2fdff46fd1026c849b81db939dfa568921ce8",
+      "source": "public/art/item-shard-damaged.jpg",
+      "sourceSha256": "23c2bc5280c6bae0393a0549d557113576ccd2863212bc3a560e554bbb73a57a"
+    },
+    {
+      "path": "public/art/previews/item-shard.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1157,
+      "sha256": "42993fb06c1ff1bd20ddf8bb31351cb4dcff6394f7d6f711dbae2d675350e371",
+      "source": "public/art/item-shard.jpg",
+      "sourceSha256": "62cf6b849a9098a160a942df92e7c950d44951ee72bdd26fd17350b8dfe23162"
+    },
+    {
+      "path": "public/art/previews/item-signal-baffle.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1007,
+      "sha256": "99bd6442c0ba28443947068f4d4f6381caad11df07c1459e3e97c694813643d3",
+      "source": "public/art/item-signal-baffle.jpg",
+      "sourceSha256": "263a3db3960215892fd7a096e5ddf7c1ddaf78e8cee554c2e20aabbfd9b514c1"
+    },
+    {
+      "path": "public/art/previews/item-spoof-chip.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 901,
+      "sha256": "5d2d05c21924aafcae841f5e0f0b5e52304de95db836d0f39dd81ec662c767f8",
+      "source": "public/art/item-spoof-chip.jpg",
+      "sourceSha256": "278aa7703105a2c7e10242ac16a58cbe51255508b6c44782a64112eefc2f351d"
+    },
+    {
+      "path": "public/art/previews/item-witness-token.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1024,
+      "sha256": "f27edc80260eaa13b103e143fb0504084608d746d9663c57ed5d29e760379152",
+      "source": "public/art/item-witness-token.jpg",
+      "sourceSha256": "8fd0ecf1119fceab557f06ac169b21296f1b995ca6a3b14800124a546fc7df91"
+    },
+    {
+      "path": "public/art/previews/ives-hearing.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1550,
+      "sha256": "07be8b151b6b52df360aa443daa6538ef25df41799ebd45dd69a348b6de82b8e",
+      "source": "public/art/ives-hearing.jpg",
+      "sourceSha256": "54584f9e4ddba81b0901c7e76e89ce310ba23b8cd4cdbdaa0858ac75cea38aea"
+    },
+    {
+      "path": "public/art/previews/kerr-handover.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1526,
+      "sha256": "7fcf4cad42804a372198e1392a15387ac21841ec9a154f5512cc8ca6f04168ef",
+      "source": "public/art/kerr-handover.jpg",
+      "sourceSha256": "30692b026b97a1bb5688d9f07588665ff944440dd4ad9e90be4a4f9df8adfa01"
+    },
+    {
+      "path": "public/art/previews/laundry-cart.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1351,
+      "sha256": "2e38d07b8ba8c37b81a3ec9e4dced4bb214d9e5168004a26c70de90763204808",
+      "source": "public/art/laundry-cart.jpg",
+      "sourceSha256": "6096adbf567c6e46a7ac3e3c82b7f96aed7c0b283d3d911ceaaacd14afd8001d"
+    },
+    {
+      "path": "public/art/previews/lumen-cup.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1414,
+      "sha256": "b354033ae0f0596f329aced510e58be708351226c0e377398f91438d1008fca2",
+      "source": "public/art/lumen-cup.jpg",
+      "sourceSha256": "13781d929ac7df95c5f2f053e98d569b5c50943678f8f1e4d9d2b3a20461bcd0"
+    },
+    {
+      "path": "public/art/previews/mara-present.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1231,
+      "sha256": "dc4d636b146815f53783b5acfaf4e6a314f7d155bccac2a062111c87a3ade0fa",
+      "source": "public/art/mara-present.jpg",
+      "sourceSha256": "c981bd1f21bfe996d6493e78987b4cffd63c06954d8d7be945a5799216866337"
+    },
+    {
+      "path": "public/art/previews/mara-revelation.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1336,
+      "sha256": "62325a9247db8676585722645c23d524b2f081d8628358423bc8b0d81c55ebca",
+      "source": "public/art/mara-revelation.jpg",
+      "sourceSha256": "577a72c15542c6d7fa49a27d971f39877ac0006105024131b4084ca765681738"
+    },
+    {
+      "path": "public/art/previews/mara-shared-hour.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1446,
+      "sha256": "8d6cc4a206f816ae05ac0dec87150f3315b347c90566ad95b4d45bc9662789a7",
+      "source": "public/art/mara-shared-hour.jpg",
+      "sourceSha256": "ccbbc0d127c25864c2602e720d0fc8327b139fe70ad51ef805c5753f23009089"
+    },
+    {
+      "path": "public/art/previews/mara-window.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1315,
+      "sha256": "2bca14bc6c7eae4021d25cc7a2f788fb692bc7c444f860fc9206930fcd48637f",
+      "source": "public/art/mara-window.jpg",
+      "sourceSha256": "493ae2aa5f2c324140ed8639d3acf04b27e2c7fa5661a7a3ea0c0c2c4beb38bc"
+    },
+    {
+      "path": "public/art/previews/market-counter.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1478,
+      "sha256": "0ca8bf6165863f68c006d3b99d9a937ad8a4e8d76dfd43ff25079873892ae414",
+      "source": "public/art/market-counter.jpg",
+      "sourceSha256": "709cb53138b1b9f4ec6d3a4a168008f124cc0598903c20d04cccb63f7e0ef9b8"
+    },
+    {
+      "path": "public/art/previews/memorial-stair.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1333,
+      "sha256": "6e89ff06366cce42dbed20166a3c1f72d8b4b36dba733e493760b63558750757",
+      "source": "public/art/memorial-stair.jpg",
+      "sourceSha256": "2078a38c3c911729dfe5a80eb232d1c78bec7c0609c97cfa5f5450e77432acd7"
+    },
+    {
+      "path": "public/art/previews/memory-apparatus.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1446,
+      "sha256": "06dbeaac58ae225939d1aa6ed78a5f31dd19979cf79efe8f6eabbccddfab30c9",
+      "source": "public/art/memory-apparatus.jpg",
+      "sourceSha256": "76fb91d7eb3ea1b23fbd545482d075301265ef113633ea763ee63cd7062aaeb4"
+    },
+    {
+      "path": "public/art/previews/memory-bench.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1367,
+      "sha256": "8f6ab9524398e702c6010c717066c9e8b8917aad295c6121329ebaf07f63ec78",
+      "source": "public/art/memory-bench.jpg",
+      "sourceSha256": "0d53e523b3adfbf538585d14f6d930f8361c1155e0d7d443d35317292f0a16ad"
+    },
+    {
+      "path": "public/art/previews/nia-arrival.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1338,
+      "sha256": "ee78c4640056c2b117d9d0277dcd7c152a1946547729ef03dfaccb5d28028491",
+      "source": "public/art/nia-arrival.jpg",
+      "sourceSha256": "22829b36897ec6e10018754951c9ec8cf1ae6bdcacfd036e6508795961528fe7"
+    },
+    {
+      "path": "public/art/previews/nia-transfer.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1501,
+      "sha256": "378ae6f33febe78c54f874ad8e56f409dc3c2d2a24a597c51af0426359b9470c",
+      "source": "public/art/nia-transfer.jpg",
+      "sourceSha256": "d850e4a5d57088ae9ff7568c76d5a5f140fe46e50679e0c3d28fa6333983263f"
+    },
+    {
+      "path": "public/art/previews/notice-desk.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1427,
+      "sha256": "bb2b93eedb08986360f6e235b71e759f2d75c6076e7821a6b20de04189ec0be3",
+      "source": "public/art/notice-desk.jpg",
+      "sourceSha256": "a00696c9017ad0bb86c0b912fbd494be8382fbbece378d978431975057ad11f5"
+    },
+    {
+      "path": "public/art/previews/opening.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1603,
+      "sha256": "50c23b892a8297e23379056ef89d8dbdf6b7e6504aeeaaae1fa3eec1aff4c54e",
+      "source": "public/art/opening.jpg",
+      "sourceSha256": "9ef96fa0bcea5beef099cacc0f9d568efe37da4487835c4fc50a9ba8380c7b95"
+    },
+    {
+      "path": "public/art/previews/ordinary-rest.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1393,
+      "sha256": "01a0d508b3ab214bfb2f5582304119e2f3ece6ab38d916e73f80b79cee879bb1",
+      "source": "public/art/ordinary-rest.jpg",
+      "sourceSha256": "d0d7d0b5b5ddf9015f2ef0ca1d0d1c2555f4bb9a575c9a846104cc9a1ca9ec8d"
+    },
+    {
+      "path": "public/art/previews/private-reply.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1362,
+      "sha256": "3acb32509056fe6bda158c88ca49af9a21c32ea4f5c4890bd90e9314c712b6ec",
+      "source": "public/art/private-reply.jpg",
+      "sourceSha256": "291e51f60239b8f08b5f23433c017c9395075a99fd8e4d7e6b7823ecfdb0c2f2"
+    },
+    {
+      "path": "public/art/previews/quill-offer.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1771,
+      "sha256": "da71ed67e069276c835a73eba8652308770b3eb1588f050708f5f8069d000bc4",
+      "source": "public/art/quill-offer.jpg",
+      "sourceSha256": "c1dfbc8b368cd0d02542c14407a0b2733847425ce89d96e9ba2df49feae12c1c"
+    },
+    {
+      "path": "public/art/previews/ren-canal.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1566,
+      "sha256": "05121ed87b3e2161b277fa8795c7fcdf6f3092e54c482d241983d3bbf1278bfe",
+      "source": "public/art/ren-canal.jpg",
+      "sourceSha256": "6a1f41231020be9e6119d69406ca9ca3c3e2ba221178f8262e02cb3fe7abbe31"
+    },
+    {
+      "path": "public/art/previews/repair-bench.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1482,
+      "sha256": "c64c38662313c2c966ac2a65740e1206b8061103560d9ccb4573e34e27da85d4",
+      "source": "public/art/repair-bench.jpg",
+      "sourceSha256": "46714d0ca0fc54bbf38e7207a13ea620313fca2c35b7c0fa8fdff307ecd9ffe9"
+    },
+    {
+      "path": "public/art/previews/sera-hearing.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1551,
+      "sha256": "84812f84a8e4c4da557b285bd51a0558c10b3feefa5260c7bdd3333bed933cb3",
+      "source": "public/art/sera-hearing.jpg",
+      "sourceSha256": "c281c605d54e1e2caf0d592be2d24217396e73536b92007b0d7525c4277617d6"
+    },
+    {
+      "path": "public/art/previews/shelter-conversation.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1634,
+      "sha256": "c8aa4ceb120d41ddc72138294c76e27266f31d3426819b90c09b261b619df149",
+      "source": "public/art/shelter-conversation.jpg",
+      "sourceSha256": "8c2240b2bd432d6df7960916b14180181da54deb89f330254f2e267fbecb377d"
+    },
+    {
+      "path": "public/art/previews/shelter-hall.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1519,
+      "sha256": "1a7ccb801d9732d0ca4302c936780d724385536d9d94427e36817ded30aba67d",
+      "source": "public/art/shelter-hall.jpg",
+      "sourceSha256": "419be4b687b7ef2415c4609901da51f0e0e7f8fc954c99f4adc6b39381f809a2"
+    },
+    {
+      "path": "public/art/previews/shelter-landing.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1235,
+      "sha256": "66b9b74effa285b8c7625c7947c68b69323ccb9f05415e9ed6a85ea0afd9b297",
+      "source": "public/art/shelter-landing.jpg",
+      "sourceSha256": "c04e29ccf5f538c6a25590f82ffbaa9fd5e65b668938d996b16b56dfd8bdb8f2"
+    },
+    {
+      "path": "public/art/previews/shelter-pump.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1402,
+      "sha256": "83841a6f6a9074f083863a66fa5b8a2954537d17c41b3ad35b3466dfca60c711",
+      "source": "public/art/shelter-pump.jpg",
+      "sourceSha256": "8575223111ea63184d5d201458341b84ccadd35664fa71d5470620eeaf168097"
+    },
+    {
+      "path": "public/art/previews/shelter-restored.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1478,
+      "sha256": "a0b59953193dfa52dc0d974565a5207c57769af41e2bd89b430a19659763748e",
+      "source": "public/art/shelter-restored.jpg",
+      "sourceSha256": "67804a7efe6478446fb60e4ba04c8e9b4e5f3a37430d7f64173c2eed072c94bf"
+    },
+    {
+      "path": "public/art/previews/spire-counter.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1406,
+      "sha256": "fdfbafa01b26326178c61d0fc338060c1fcbd6f7d454e23fb67f45c2daf543d6",
+      "source": "public/art/spire-counter.jpg",
+      "sourceSha256": "57242dd57d1e0f8185c9bef6e59ba6cb710229ea5075efc79fa3bfd578b4993a"
+    },
+    {
+      "path": "public/art/previews/spire-payroll.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1373,
+      "sha256": "024f34a3b96a36d362e24d4e52ebe6479e7c5ccd3b863db9e01fd2b092ba8dd8",
+      "source": "public/art/spire-payroll.jpg",
+      "sourceSha256": "c36beebe3c5dfac0461ecb398eea50156c6f08110790e497bd481c16d82c898a"
+    },
+    {
+      "path": "public/art/previews/spire-terminal.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1315,
+      "sha256": "429e559c073618c85b99732c29c0a85be90ce0489db368f9454fe0a8ec499e46",
+      "source": "public/art/spire-terminal.jpg",
+      "sourceSha256": "d26a856a8e3d512eaaf862eed795dd2122ca6071060f9bb418695f70e4101afc"
+    },
+    {
+      "path": "public/art/previews/stallholder-story.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1673,
+      "sha256": "3b54be2b62d4dd9b063796e2f2839d19c2575cc9773ec390b3c47f6c8aad089c",
+      "source": "public/art/stallholder-story.jpg",
+      "sourceSha256": "b82be5ae49d8276b7544633854e504fe012528e8847a83bb2f0e4dfe2652e73f"
+    },
+    {
+      "path": "public/art/previews/wall-shared.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1326,
+      "sha256": "e896ad722e503994d3b3468f6262487f1ac63e38316b5744b20cb2d5fd1be549",
+      "source": "public/art/wall-shared.jpg",
+      "sourceSha256": "664ff4e12ff9665bb872a84cf99daa7d7d9282813e297b31ec172020c03a722e"
+    },
+    {
+      "path": "public/art/previews/witness-checkpoint.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1570,
+      "sha256": "80580b6ede16f12794e672a7e5603d36e3d7a8010dbd8ef0977ae88d844ff902",
+      "source": "public/art/witness-checkpoint.jpg",
+      "sourceSha256": "9b570b041a4d542fc6431459831a1fcdd17acc6876213f4caa8d5ee52fee6dc8"
+    }
+  ]
+}

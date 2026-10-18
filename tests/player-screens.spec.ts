@@ -1,7 +1,7 @@
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { createCharacter, stageCheck } from "../lib/engine";
-import { cityMap } from "../lib/city-map";
+import { mapDisplayRows as cityMap } from "../lib/city-map";
 import { campaignRecap } from "../lib/presentation-art";
 import { notebookSources } from "../lib/investigation-notebook";
 import { journalKind } from "../lib/journal";

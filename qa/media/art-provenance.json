@@ -24,6 +24,13 @@
           "height": 400,
           "bytes": 75546,
           "sha256": "dd99312376552ab706fe066cae02294ded40672030f32c4d462ceb623242f3da"
+        },
+        {
+          "path": "public/art/previews/opening.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1603,
+          "sha256": "50c23b892a8297e23379056ef89d8dbdf6b7e6504aeeaaae1fa3eec1aff4c54e"
         }
       ]
     },
@@ -103,6 +110,13 @@
           "height": 400,
           "bytes": 59214,
           "sha256": "14662ba2b1b1260601313db846187335eccf1c716ece49795395f7a31e8573fc"
+        },
+        {
+          "path": "public/art/previews/memory-bench.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1367,
+          "sha256": "8f6ab9524398e702c6010c717066c9e8b8917aad295c6121329ebaf07f63ec78"
         }
       ]
     },
@@ -153,6 +167,13 @@
           "height": 400,
           "bytes": 69282,
           "sha256": "cff842342b2d4f6d49dbe5c0633f564b18f66a3d28d7fd12eda0aaed1fbf0673"
+        },
+        {
+          "path": "public/art/previews/freight.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1530,
+          "sha256": "1e71f377f70465df3b5f4d57017d3b9d083a18f71cd5fdbeb94ad756bf3d80b1"
         }
       ]
     },
@@ -178,6 +199,13 @@
           "height": 400,
           "bytes": 63335,
           "sha256": "656b363459614eed7c7e50c7575fb82651942f36bb04ba22f39130f58d033b1a"
+        },
+        {
+          "path": "public/art/previews/spire-counter.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1406,
+          "sha256": "fdfbafa01b26326178c61d0fc338060c1fcbd6f7d454e23fb67f45c2daf543d6"
         }
       ]
     },
@@ -203,6 +231,13 @@
           "height": 400,
           "bytes": 62411,
           "sha256": "28a010dbddf08d1adeb52c532becec8efa231efbd1b75898e1637f3c3e548f18"
+        },
+        {
+          "path": "public/art/previews/spire-terminal.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1315,
+          "sha256": "429e559c073618c85b99732c29c0a85be90ce0489db368f9454fe0a8ec499e46"
         }
       ]
     },
@@ -228,6 +263,13 @@
           "height": 400,
           "bytes": 62355,
           "sha256": "cbfe247eb71bd3f76a2e2d4034757817e5a2021924f44dcb2fc627c0f9944679"
+        },
+        {
+          "path": "public/art/previews/spire-payroll.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1373,
+          "sha256": "024f34a3b96a36d362e24d4e52ebe6479e7c5ccd3b863db9e01fd2b092ba8dd8"
         }
       ]
     },
@@ -280,6 +322,13 @@
           "height": 300,
           "bytes": 36485,
           "sha256": "3e879a23fc2944902c20e2e86b8e470b606f4a4e357dad8c4aa4e6f3fc56ab20"
+        },
+        {
+          "path": "public/art/previews/fragment-signature.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1623,
+          "sha256": "85da209fd585a28008bca28f9f5c532a83b7a257b0029c580ab3eb1d4bf79a3f"
         }
       ]
     },
@@ -307,6 +356,13 @@
           "height": 300,
           "bytes": 43568,
           "sha256": "ad8884a43f4ca99946636ffa7baf08dea51822d4a1801ed2c3dd8db448b64f44"
+        },
+        {
+          "path": "public/art/previews/fragment-order.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1666,
+          "sha256": "3de2c42fe3a46f8057229eb37bad6ecb928bcf8ec406670c571f372df113a9c5"
         }
       ]
     },
@@ -334,6 +390,13 @@
           "height": 300,
           "bytes": 42522,
           "sha256": "a5e385adce7e2e8fb80709128ef520400db6128187778d0536b1f591499553b3"
+        },
+        {
+          "path": "public/art/previews/fragment-roster.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1575,
+          "sha256": "dcd291497eb20f58afc7765f4307d0c2d1405cb763470eccfbb068e71644e547"
         }
       ]
     },
@@ -401,6 +464,13 @@
           "height": 400,
           "bytes": 83670,
           "sha256": "f840fc94854a7440b9a94aa09ebf3d51e8614c2b1566595c117f465f2e8d9914"
+        },
+        {
+          "path": "public/art/previews/canal-dispatch.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1626,
+          "sha256": "022bf9078b9bb34428454c1748bd7f1e879b63ba4ceabbffc3117cd05abb7c74"
         }
       ]
     },
@@ -579,6 +649,13 @@
           "height": 400,
           "bytes": 70212,
           "sha256": "f8c07ba77633bc6f9727c57a6d063ad7bd81d762f3900c74ed70bea2f876c88d"
+        },
+        {
+          "path": "public/art/previews/quill-offer.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1771,
+          "sha256": "da71ed67e069276c835a73eba8652308770b3eb1588f050708f5f8069d000bc4"
         }
       ],
       "references": [
@@ -632,6 +709,13 @@
           "height": 400,
           "bytes": 81447,
           "sha256": "01a16c2155052da6aa0a123fbb8e6030bd37ec5b55efd2b46a001e4081b59401"
+        },
+        {
+          "path": "public/art/previews/chapel-reader.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1531,
+          "sha256": "2fcb26c0ec95d0dff540b882ef18e2cb5e0305cfcfe0a5be3b656750e979ddf6"
         }
       ],
       "references": [],
@@ -659,6 +743,13 @@
           "height": 400,
           "bytes": 62121,
           "sha256": "72562848863d46c04e909f913630e719028e71856c4b836c20ade145a5ad4b4c"
+        },
+        {
+          "path": "public/art/previews/mara-revelation.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1336,
+          "sha256": "62325a9247db8676585722645c23d524b2f081d8628358423bc8b0d81c55ebca"
         }
       ],
       "references": [
@@ -691,6 +782,13 @@
           "height": 400,
           "bytes": 81924,
           "sha256": "8cd0509d1862947e9fc82878b37f7d48ce76b38bcfaf888eb6a5db314bf6c269"
+        },
+        {
+          "path": "public/art/previews/finale-names.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1302,
+          "sha256": "77647a660c22e4bfae4334a4b02fa165fff0560f59d339569ec532df9e51d13d"
         }
       ],
       "references": [
@@ -727,6 +825,13 @@
           "height": 400,
           "bytes": 78706,
           "sha256": "4341796646fc70459af7481f8df71720e2f37c304605ec687d09d75bb6b7560c"
+        },
+        {
+          "path": "public/art/previews/finale-quiet.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1214,
+          "sha256": "16985f585f31072b331b138bd98dd3720dfbdfd47f1a62839ff520ef0106c1eb"
         }
       ],
       "references": [
@@ -763,6 +868,13 @@
           "height": 400,
           "bytes": 69937,
           "sha256": "5c00c4fd455cc0e3f819c5ca1919a907eeba363838303dba0f7d3679fdb8f719"
+        },
+        {
+          "path": "public/art/previews/finale-witness.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1330,
+          "sha256": "701337d983ada377c4c4ec33b79d1660bb40cd2bd42b490f3085b520240491fd"
         }
       ],
       "references": [
@@ -799,6 +911,13 @@
           "height": 400,
           "bytes": 74999,
           "sha256": "adc674abba2e4e39af79a919cce5bfc5c9d9a4ff74deff6285eed220e7856f37"
+        },
+        {
+          "path": "public/art/previews/finale-listed.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1364,
+          "sha256": "55efeaf092b2b63fc1994a03d2ef3094e5a08529b9e409b4d452160ee4550b4c"
         }
       ],
       "references": [
@@ -840,6 +959,13 @@
           "height": 400,
           "bytes": 38095,
           "sha256": "1eecf76d579895fd05a0fdeaff80cfa7766c1a29524b813fabe6c3e1cca98097"
+        },
+        {
+          "path": "public/art/previews/mara-present.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1231,
+          "sha256": "dc4d636b146815f53783b5acfaf4e6a314f7d155bccac2a062111c87a3ade0fa"
         }
       ],
       "references": [
@@ -874,6 +1000,13 @@
           "height": 400,
           "bytes": 43412,
           "sha256": "d9d01e6200c84b1891cf54b43c889f07850572615023ac73e67f45f60d5e5aae"
+        },
+        {
+          "path": "public/art/previews/nia-arrival.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1338,
+          "sha256": "ee78c4640056c2b117d9d0277dcd7c152a1946547729ef03dfaccb5d28028491"
         }
       ],
       "references": [
@@ -908,6 +1041,13 @@
           "height": 400,
           "bytes": 55993,
           "sha256": "210edf111c1b105e30bee4b3c17977dbd3ba4171d8cfad52387a374d431902c2"
+        },
+        {
+          "path": "public/art/previews/kerr-handover.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1526,
+          "sha256": "7fcf4cad42804a372198e1392a15387ac21841ec9a154f5512cc8ca6f04168ef"
         }
       ],
       "references": [
@@ -945,6 +1085,13 @@
           "height": 400,
           "bytes": 56039,
           "sha256": "0b1738ccbe2a137b9fba8b94c1b9af37767175daf57ff8cb356e17f8fffd151a"
+        },
+        {
+          "path": "public/art/previews/mara-window.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1315,
+          "sha256": "2bca14bc6c7eae4021d25cc7a2f788fb692bc7c444f860fc9206930fcd48637f"
         }
       ]
     },
@@ -970,6 +1117,13 @@
           "height": 400,
           "bytes": 63947,
           "sha256": "5e75b3a4a90cafa2b1a7ccd6cd1c67000e66fb7a8b84ac1818ed52b8e17b4a7f"
+        },
+        {
+          "path": "public/art/previews/hearing-table.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1443,
+          "sha256": "02341695c80b25631679c97387738f9399ecb86dbbd2cc350bf54ebe8eb2c14b"
         }
       ]
     },
@@ -995,6 +1149,13 @@
           "height": 400,
           "bytes": 66877,
           "sha256": "2f5ac1bc069bc135913ff3abb573ce67ba5332dc6893db2f3216fbfff85f9fdc"
+        },
+        {
+          "path": "public/art/previews/archive-desk.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1415,
+          "sha256": "f2b5da2cf8b521d2fee157df1494b5b925f1b6a25905f35fa3bc6ad4908246bc"
         }
       ]
     },
@@ -1020,6 +1181,13 @@
           "height": 400,
           "bytes": 70751,
           "sha256": "bd125f6d6fa70be83255aeeee96f470a7ce9830d59fd6795411b9aa6025f4bc9"
+        },
+        {
+          "path": "public/art/previews/courier-table.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1455,
+          "sha256": "b4b2256391d2cabebc109fc36de002da02a147129537f9580ac9316b55407851"
         }
       ]
     },
@@ -1045,6 +1213,13 @@
           "height": 400,
           "bytes": 75495,
           "sha256": "5abd3be75cde378daed3bbe85bacee6132ed306e2fbceb8a7c5e7a9451021f33"
+        },
+        {
+          "path": "public/art/previews/laundry-cart.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1351,
+          "sha256": "2e38d07b8ba8c37b81a3ec9e4dced4bb214d9e5168004a26c70de90763204808"
         }
       ]
     },
@@ -1070,6 +1245,13 @@
           "height": 400,
           "bytes": 67505,
           "sha256": "ad6dbcaa7a54dda929f8fa1d6653baf8a79bd987982c67d8337616d952e46aeb"
+        },
+        {
+          "path": "public/art/previews/notice-desk.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1427,
+          "sha256": "bb2b93eedb08986360f6e235b71e759f2d75c6076e7821a6b20de04189ec0be3"
         }
       ]
     },
@@ -1095,6 +1277,13 @@
           "height": 400,
           "bytes": 77169,
           "sha256": "5cd14b34949b03d873c870a841a0419ee5fe45e88f50b93705724cd6e8105634"
+        },
+        {
+          "path": "public/art/previews/repair-bench.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1482,
+          "sha256": "c64c38662313c2c966ac2a65740e1206b8061103560d9ccb4573e34e27da85d4"
         }
       ]
     },
@@ -1120,6 +1309,13 @@
           "height": 400,
           "bytes": 73087,
           "sha256": "431d130d445345790cbd278e66b209f0dd53ab241a9068378a9f060238e69bb2"
+        },
+        {
+          "path": "public/art/previews/shelter-pump.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1402,
+          "sha256": "83841a6f6a9074f083863a66fa5b8a2954537d17c41b3ad35b3466dfca60c711"
         }
       ]
     },
@@ -1145,6 +1341,13 @@
           "height": 400,
           "bytes": 77319,
           "sha256": "1adbeeb36f7e012edd5295284f8751917a679805cfbbb5d42e04432752835075"
+        },
+        {
+          "path": "public/art/previews/witness-checkpoint.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1570,
+          "sha256": "80580b6ede16f12794e672a7e5603d36e3d7a8010dbd8ef0977ae88d844ff902"
         }
       ]
     },
@@ -1170,6 +1373,13 @@
           "height": 400,
           "bytes": 70976,
           "sha256": "e45d52caf442005cbb3ed40b1df5afe5eccc524d8a9ee77747112eb095aef519"
+        },
+        {
+          "path": "public/art/previews/nia-transfer.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1501,
+          "sha256": "378ae6f33febe78c54f874ad8e56f409dc3c2d2a24a597c51af0426359b9470c"
         }
       ],
       "references": [
@@ -1207,6 +1417,13 @@
           "height": 400,
           "bytes": 71133,
           "sha256": "c60755f46b7cc82c28b3ae69998d8647c98cfe67206511170e68a7351c4ed24e"
+        },
+        {
+          "path": "public/art/previews/ordinary-rest.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1393,
+          "sha256": "01a0d508b3ab214bfb2f5582304119e2f3ece6ab38d916e73f80b79cee879bb1"
         }
       ]
     },
@@ -1232,6 +1449,13 @@
           "height": 400,
           "bytes": 56658,
           "sha256": "81ca487f250048e874abdf23d1b055226b8bfe87c2b1181d0f066f3137025743"
+        },
+        {
+          "path": "public/art/previews/private-reply.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1362,
+          "sha256": "3acb32509056fe6bda158c88ca49af9a21c32ea4f5c4890bd90e9314c712b6ec"
         }
       ]
     },
@@ -1257,6 +1481,13 @@
           "height": 400,
           "bytes": 76869,
           "sha256": "3333835e11f20dc40fd9ec15361f1ea92d18f72f0638692c0b53921d0aca7b7d"
+        },
+        {
+          "path": "public/art/previews/memorial-stair.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1333,
+          "sha256": "6e89ff06366cce42dbed20166a3c1f72d8b4b36dba733e493760b63558750757"
         }
       ]
     },
@@ -1282,6 +1513,13 @@
           "height": 400,
           "bytes": 76244,
           "sha256": "2ee3420b4057b96c9625efb7deb55d0e1ecbec56d7122d1ff6a6e4bb4a57f172"
+        },
+        {
+          "path": "public/art/previews/market-counter.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1478,
+          "sha256": "0ca8bf6165863f68c006d3b99d9a937ad8a4e8d76dfd43ff25079873892ae414"
         }
       ]
     },
@@ -1307,6 +1545,13 @@
           "height": 400,
           "bytes": 53211,
           "sha256": "950120ae23be6b0be9f08ab5f2c2d83bf55fbb09cc6afec66d605b97a2206739"
+        },
+        {
+          "path": "public/art/previews/chapel-entry.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1266,
+          "sha256": "50b2bf162d0902d7c8c90786890b41375a57a5bd6f27695f26a0d04cf13e27f6"
         }
       ]
     },
@@ -1332,6 +1577,13 @@
           "height": 400,
           "bytes": 66974,
           "sha256": "08b7fc8efb535511943efd9c88c2e5ac5228d84a4546926aaa60f66df6efabd4"
+        },
+        {
+          "path": "public/art/previews/chapel-service.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1328,
+          "sha256": "5690b4dac4ef95b9c43599c778b62a2f6251c97f921512d17beaf9395ffd0d4c"
         }
       ]
     },
@@ -1357,6 +1609,13 @@
           "height": 400,
           "bytes": 56269,
           "sha256": "edd702cf9b926fcc5b7c1cb364579bb18e61983fdf1297991fffbd361fc1edad"
+        },
+        {
+          "path": "public/art/previews/memory-apparatus.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1446,
+          "sha256": "06dbeaac58ae225939d1aa6ed78a5f31dd19979cf79efe8f6eabbccddfab30c9"
         }
       ]
     },
@@ -1382,6 +1641,13 @@
           "height": 400,
           "bytes": 58406,
           "sha256": "5239fdfe9f13c02554b9f67495760a6f62b9ed2840ed5375f451ff03712cf789"
+        },
+        {
+          "path": "public/art/previews/clinic-coolant.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1310,
+          "sha256": "bd626deb54bd3fd1b0a4ea2d67c18beb4bee740419ba91b59aa2f9a678caf017"
         }
       ]
     },
@@ -1407,6 +1673,13 @@
           "height": 400,
           "bytes": 49267,
           "sha256": "88b8df08eb402c0db73ea6af1527daef2524c3671eed4b656e2020c35d5eb33b"
+        },
+        {
+          "path": "public/art/previews/clinic-relay.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1352,
+          "sha256": "f751bafa35595fbb264246af51a269c32e283fd39abab01b76bdde636c3859e4"
         }
       ]
     },
@@ -1432,6 +1705,13 @@
           "height": 400,
           "bytes": 69265,
           "sha256": "91595253434e7c703f2331bb06de226b69d14702137a28fadfd4f198880e223d"
+        },
+        {
+          "path": "public/art/previews/district-board.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1485,
+          "sha256": "f29db9dd0306004e2b7a0104b5cbbc727b56f89f10d76c6af6707833787d0353"
         }
       ]
     },
@@ -1457,6 +1737,13 @@
           "height": 400,
           "bytes": 74692,
           "sha256": "8bca806cb9a1c5fc4e1dbf61860b1fdc9a38f7f33e96d4ada32f5d7d40396c2d"
+        },
+        {
+          "path": "public/art/previews/freight-passage.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1382,
+          "sha256": "ee00fb2f14812e4083c355a9193ce77bf655dde796d3ef1b814f2d11e4917c68"
         }
       ]
     },
@@ -1482,6 +1769,13 @@
           "height": 400,
           "bytes": 54078,
           "sha256": "4c54334442884d13a66e4ac4976d83d721114bc461528f76261f77d43b918670"
+        },
+        {
+          "path": "public/art/previews/shelter-landing.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1235,
+          "sha256": "66b9b74effa285b8c7625c7947c68b69323ccb9f05415e9ed6a85ea0afd9b297"
         }
       ]
     },
@@ -1507,6 +1801,13 @@
           "height": 400,
           "bytes": 67809,
           "sha256": "be9fcb76d9d995de31b3f4d050978de2741dcbccffd458a542ba1b4a913dc563"
+        },
+        {
+          "path": "public/art/previews/shelter-hall.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1519,
+          "sha256": "1a7ccb801d9732d0ca4302c936780d724385536d9d94427e36817ded30aba67d"
         }
       ]
     },
@@ -1535,6 +1836,13 @@
           "height": 400,
           "bytes": 91219,
           "sha256": "f6e0f74bb8a1140c75618246e35d08efd85b0a8e39801b8d63c87be63554c95a"
+        },
+        {
+          "path": "public/art/previews/stallholder-story.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1673,
+          "sha256": "3b54be2b62d4dd9b063796e2f2839d19c2575cc9773ec390b3c47f6c8aad089c"
         }
       ]
     },
@@ -1563,6 +1871,13 @@
           "height": 400,
           "bytes": 94571,
           "sha256": "3f0ba8d6ff610bfccfaeac2adb712f5f05e9e0babdc4727da04a239d897c8a26"
+        },
+        {
+          "path": "public/art/previews/ren-canal.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1566,
+          "sha256": "05121ed87b3e2161b277fa8795c7fcdf6f3092e54c482d241983d3bbf1278bfe"
         }
       ]
     },
@@ -1865,6 +2180,13 @@
           "height": 400,
           "bytes": 76822,
           "sha256": "a3f0966108d39152ac1b2829528df8996aaa93fdcd35a110d8d905cc2a65a6f0"
+        },
+        {
+          "path": "public/art/previews/asa-dispatch.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1566,
+          "sha256": "820f5fedc8095fec6aafd2036c560abb3f3d96ed00086315e6643d783fe0a315"
         }
       ]
     },
@@ -1952,6 +2274,13 @@
           "height": 400,
           "bytes": 68064,
           "sha256": "b2b528675c67efdc7d7b96e3fa153eebe9ba138565dac8b2556367115dfca6a8"
+        },
+        {
+          "path": "public/art/previews/ives-hearing.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1550,
+          "sha256": "07be8b151b6b52df360aa443daa6538ef25df41799ebd45dd69a348b6de82b8e"
         }
       ]
     },
@@ -1977,6 +2306,13 @@
           "height": 400,
           "bytes": 73354,
           "sha256": "9c293326969f13791ae832d2a636f092592476a3a8b68f3e124b611794650301"
+        },
+        {
+          "path": "public/art/previews/shelter-restored.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1478,
+          "sha256": "a0b59953193dfa52dc0d974565a5207c57769af41e2bd89b430a19659763748e"
         }
       ],
       "review": "Source-familiar visual inspection: established identities/settings and earned-outcome boundaries; no readable names or addresses. Native mobile/desktop review follows integration."
@@ -2003,6 +2339,13 @@
           "height": 400,
           "bytes": 76875,
           "sha256": "f521b8f7af80da48a6222d249e364419e4ebc3633a0e72cb6d1d373047d52c00"
+        },
+        {
+          "path": "public/art/previews/courier-receipt.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1573,
+          "sha256": "3262300a40ebc6d56890e406a87719b190ae1dda3b7f921aa841d6aa62a9c420"
         }
       ],
       "review": "Source-familiar visual inspection: established identities/settings and earned-outcome boundaries; no readable names or addresses. Native mobile/desktop review follows integration."
@@ -2029,6 +2372,13 @@
           "height": 400,
           "bytes": 63215,
           "sha256": "171156b5dab2b10a2a863e766b891131ab292ad44dfcf426dd2870c842caaea0"
+        },
+        {
+          "path": "public/art/previews/hearing-filed.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1412,
+          "sha256": "08ecad0ea914fc2e7f290a75fc2b3a16b254145c9737cb822a4771c153ce2fdf"
         }
       ],
       "review": "Source-familiar visual inspection: established identities/settings and earned-outcome boundaries; no readable names or addresses. Native mobile/desktop review follows integration."
@@ -2523,6 +2873,13 @@
           "height": 400,
           "bytes": 74651,
           "sha256": "359e29bb4b084b1fc957a87d772a683bd77ec7a96eea4dd28e513962eae5c9c5"
+        },
+        {
+          "path": "public/art/previews/edda-archive.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1666,
+          "sha256": "ec56485026c1e1ec2f89b9eeb2c2b63bdc36d74b1ef8c452ceb14bb5a2d49312"
         }
       ],
       "review": "Source-familiar inspection: identity, hands, anonymous papers, chronology and unearned-outcome limits. Native phone/desktop review follows integration."
@@ -2549,6 +2906,13 @@
           "height": 400,
           "bytes": 71160,
           "sha256": "5f1c994f23f466fe7de1b1ae0a33f0511af0ae533221259a8fbedccb693b55dd"
+        },
+        {
+          "path": "public/art/previews/sera-hearing.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1551,
+          "sha256": "84812f84a8e4c4da557b285bd51a0558c10b3feefa5260c7bdd3333bed933cb3"
         }
       ],
       "review": "Source-familiar inspection: identity, hands, anonymous papers, chronology and unearned-outcome limits. Native phone/desktop review follows integration."
@@ -2581,6 +2945,13 @@
           "height": 400,
           "bytes": 59912,
           "sha256": "d3bcbec65817621adf9f08de4a15111997ac1e24f36293b25698ef7623f5df1d"
+        },
+        {
+          "path": "public/art/previews/incinerator-flue.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1428,
+          "sha256": "590f46e18145abce8319c4d5daaa5ed25ef760d0a84f54346848e25fba04293d"
         }
       ]
     },
@@ -2612,6 +2983,13 @@
           "height": 400,
           "bytes": 62064,
           "sha256": "8fc13ac0455d669d54b9e910681e92fbe68e7c3fb717937beca4ab329fd5c728"
+        },
+        {
+          "path": "public/art/previews/archive-preparation.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1612,
+          "sha256": "6d07e79953248400789672f953ad1ee575bc92cb5bfa4790723ef9b340f9aa01"
         }
       ]
     },
@@ -2643,6 +3021,13 @@
           "height": 400,
           "bytes": 78143,
           "sha256": "ff6222474cf0fbf2df8a7f19dff8315db47830500ffaf582ab3e03a374e4cff4"
+        },
+        {
+          "path": "public/art/previews/chapter-week.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1611,
+          "sha256": "95ce30376dcf930303aa4373de8bd98d0d91e0451c69cbef6a5adbcbd987aa97"
         }
       ]
     },
@@ -2674,6 +3059,13 @@
           "height": 400,
           "bytes": 70198,
           "sha256": "549edd3e85f10fcee217f68cf7130e1a4dcbc9c1879ed049263292ceed8124e8"
+        },
+        {
+          "path": "public/art/previews/chapter-wall.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1190,
+          "sha256": "092b2a5d94eb049907ef6b428245e04b31396876fb763e8893957d21fc815d99"
         }
       ]
     },
@@ -2709,6 +3101,13 @@
           "height": 400,
           "bytes": 63806,
           "sha256": "b099b32973ed940b5112a817816ef83eb57e432934152174610acb036341349a"
+        },
+        {
+          "path": "public/art/previews/attendant-confrontation.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1457,
+          "sha256": "7e2ae1faf909feed141a98ad000bcc9c2b66224831256f6f887bd52161eb0cf2"
         }
       ]
     },
@@ -2740,6 +3139,13 @@
           "height": 400,
           "bytes": 69619,
           "sha256": "2e19357b32406b7921882f28eb63517963d5ac4783074e3b882c487e4def6093"
+        },
+        {
+          "path": "public/art/previews/held-case.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1520,
+          "sha256": "59fdadcd9f33adf1c25fbe584bf6d3453919df172d8d709404172e90ad44ce85"
         }
       ]
     },
@@ -2802,6 +3208,13 @@
           "height": 400,
           "bytes": 55490,
           "sha256": "52c14ea9cb16da44696823d432e334327f6019a721c603e438af7fc074daf6ee"
+        },
+        {
+          "path": "public/art/previews/mara-shared-hour.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1446,
+          "sha256": "8d6cc4a206f816ae05ac0dec87150f3315b347c90566ad95b4d45bc9662789a7"
         }
       ]
     },
@@ -2833,6 +3246,13 @@
           "height": 400,
           "bytes": 67153,
           "sha256": "52394407135df82fe040b3e7b1a63fdf52715de9c58414262242514ee953f1bf"
+        },
+        {
+          "path": "public/art/previews/archive-held-original.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1564,
+          "sha256": "3df733d6aa8cc92f7330796e6a9c7b0eea9b377d49644315dccdcd104a4823e5"
         }
       ]
     },
@@ -2895,6 +3315,13 @@
           "height": 400,
           "bytes": 61250,
           "sha256": "5eb3f3eb7da9d7657a9b579f5176648878a39c2f8e44a3a2188c62d48e51ccf2"
+        },
+        {
+          "path": "public/art/previews/item-shard.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1157,
+          "sha256": "42993fb06c1ff1bd20ddf8bb31351cb4dcff6394f7d6f711dbae2d675350e371"
         }
       ],
       "generatedEditReference": {
@@ -2931,6 +3358,13 @@
           "height": 400,
           "bytes": 56597,
           "sha256": "416ec1cdb59b45910874920591ee8446d7d2a44a2dcc5addcb0ffb679123d45a"
+        },
+        {
+          "path": "public/art/previews/item-shard-damaged.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 977,
+          "sha256": "b2ea2d2a29ee97631f1e9c746ae2fdff46fd1026c849b81db939dfa568921ce8"
         }
       ]
     },
@@ -2962,6 +3396,13 @@
           "height": 400,
           "bytes": 60851,
           "sha256": "6901c1de74eb79c840f61a2eb99d06fb00c6d67cca6b819670ddf3683c1873cf"
+        },
+        {
+          "path": "public/art/previews/item-archive-probe.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1178,
+          "sha256": "6cbe125650ef906b47e152c02f700f641930a5f98c66f493e01c3a3f03208e10"
         }
       ]
     },
@@ -2993,6 +3434,13 @@
           "height": 400,
           "bytes": 64308,
           "sha256": "090df1cd2a32c2d4fe538f41029610b3a086bf4d362ac2f2aa492b9c47ecb6ed"
+        },
+        {
+          "path": "public/art/previews/item-witness-token.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1024,
+          "sha256": "f27edc80260eaa13b103e143fb0504084608d746d9663c57ed5d29e760379152"
         }
       ]
     },
@@ -3032,6 +3480,13 @@
           "height": 400,
           "bytes": 75723,
           "sha256": "e8c0f851ca8f247c0d3a7e9eb4e6e0849ae6d7d3d4ab8f7c38c7c0c4af53c2ec"
+        },
+        {
+          "path": "public/art/previews/chapel-shared.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1359,
+          "sha256": "9e28c9966edc66600223d6ad1d85c32026a4760d8dfb5c922cefa338ab174157"
         }
       ]
     },
@@ -3071,6 +3526,561 @@
           "height": 400,
           "bytes": 81640,
           "sha256": "637189fc84dad8b6e9bded4e8bc6d00ce3cc1a88e73b41a295d4e43a62897c15"
+        },
+        {
+          "path": "public/art/previews/wall-shared.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1326,
+          "sha256": "e896ad722e503994d3b3468f6262487f1ac63e38316b5744b20cb2d5fd1be549"
+        }
+      ]
+    },
+    {
+      "id": "item-chair-harness",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-8640973c-5bb0-47ca-89f6-41e630ecfdef.png",
+      "sourceSha256": "0dd2483a0d3f913ccfc516e73fc164b48c642355d5708f27ad5ee5ed5c25be12",
+      "references": [
+        {
+          "path": "public/art/equipment-atlas.jpg",
+          "sha256": "167a20e1efbcc80763cc9ae5473c38a238eb1ea24b2cbf19e7bb4b3753de448f"
+        }
+      ],
+      "promptSummary": "One single object study, large and crisply detailed, centered on charcoal felt. Entire object visible with margin, no cropping, no hands or additional items. Preserve the supplied atlas object's materials, proportions and distinctive silhouette. Folded padded black support straps with worn brass buckles; match top row second object.",
+      "deliveryProcessing": "Resize and JPEG encode only; native 1536 by 1024 generated master retained outside Git.",
+      "files": [
+        {
+          "path": "public/art/item-chair-harness.jpg",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 417370,
+          "sha256": "1f808fa1bd1600fb187df9bc76d4903e71343bf84b21e88ff36d320a92adec1f"
+        },
+        {
+          "path": "public/art/item-chair-harness-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 59843,
+          "sha256": "5ae352881dac8b9683e4b79d9718ccac25c92702811fdb0c9b229f71aab38170"
+        },
+        {
+          "path": "public/art/previews/item-chair-harness.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1075,
+          "sha256": "aa138b17292df495331f8c87059bb6748f481a2bae1e84409c1c65c8b999d5ac"
+        }
+      ]
+    },
+    {
+      "id": "item-desk-guide",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-57a07ca7-bd82-4bf3-a2b2-100ab62f2378.png",
+      "sourceSha256": "9438cd720b06857616bd2e47026a19322a4daff1b32b11e0822c255909253f49",
+      "references": [
+        {
+          "path": "public/art/equipment-atlas.jpg",
+          "sha256": "167a20e1efbcc80763cc9ae5473c38a238eb1ea24b2cbf19e7bb4b3753de448f"
+        }
+      ],
+      "promptSummary": "One single object study, large and crisply detailed, centered on charcoal felt. Entire object visible with margin, no cropping, no hands or additional items. Preserve the supplied atlas object's materials, proportions and distinctive silhouette. A small closed cream procedural booklet with clipped ordinary pencil; match top row third object. No readable writing.",
+      "deliveryProcessing": "Resize and JPEG encode only; native 1536 by 1024 generated master retained outside Git.",
+      "files": [
+        {
+          "path": "public/art/item-desk-guide.jpg",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 443934,
+          "sha256": "967005c156b4dd4a88e3f9eaccb3488298f219f0dc4eaec27a367043e8c1847a"
+        },
+        {
+          "path": "public/art/item-desk-guide-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 56451,
+          "sha256": "a36878c468443c53d8c77a36aab2a4cf873e10550b8af0a8d18f830405a1a6e8"
+        },
+        {
+          "path": "public/art/previews/item-desk-guide.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1053,
+          "sha256": "23aa8c23ee80ee2824f8bf114bc244b01815ec7e00cf2530760be7fc65539ff1"
+        }
+      ]
+    },
+    {
+      "id": "item-route-shroud",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-f5b38e4b-5017-4cef-8d84-0352df1eb1c7.png",
+      "sourceSha256": "52d2bf53bbebd05a81876b0cf9b17bb91a17ade996390e1be9d0dc1030468f50",
+      "references": [
+        {
+          "path": "public/art/equipment-atlas.jpg",
+          "sha256": "167a20e1efbcc80763cc9ae5473c38a238eb1ea24b2cbf19e7bb4b3753de448f"
+        }
+      ],
+      "promptSummary": "One single object study, large and crisply detailed, centered on charcoal felt. Entire object visible with margin, no cropping, no hands or additional items. Preserve the supplied atlas object's materials, proportions and distinctive silhouette. Folded charcoal shielding fabric with worn stitched edges; match top row fourth object.",
+      "deliveryProcessing": "Resize and JPEG encode only; native 1536 by 1024 generated master retained outside Git.",
+      "files": [
+        {
+          "path": "public/art/item-route-shroud.jpg",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 347937,
+          "sha256": "1d50a6325e7483a840424747ed04d690ba90659f8244a2dbedab5fea0ae8d4fe"
+        },
+        {
+          "path": "public/art/item-route-shroud-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 49567,
+          "sha256": "6140e45c993fa9dcb7408a4397ddad2486eeca1f07276cc3a83745276785d22e"
+        },
+        {
+          "path": "public/art/previews/item-route-shroud.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 885,
+          "sha256": "88a36391d90e1579e9c286a36d97edc26d480e15086835259145c62b247697f2"
+        }
+      ]
+    },
+    {
+      "id": "item-signal-baffle",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-89590abc-64f0-4742-93ac-48fa7bc2b8fb.png",
+      "sourceSha256": "34345db88d75c217ab8c914e413127eef3dead4163d7073753d0c5209c462b3c",
+      "references": [
+        {
+          "path": "public/art/equipment-atlas.jpg",
+          "sha256": "167a20e1efbcc80763cc9ae5473c38a238eb1ea24b2cbf19e7bb4b3753de448f"
+        }
+      ],
+      "promptSummary": "One single object study, large and crisply detailed, centered on charcoal felt. Entire object visible with margin, no cropping, no hands or additional items. Preserve the supplied atlas object's materials, proportions and distinctive silhouette. A shielded worn copper receiver with a short antenna; match second row first object. No screen result or readable labels.",
+      "deliveryProcessing": "Resize and JPEG encode only; native 1536 by 1024 generated master retained outside Git.",
+      "files": [
+        {
+          "path": "public/art/item-signal-baffle.jpg",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 380306,
+          "sha256": "263a3db3960215892fd7a096e5ddf7c1ddaf78e8cee554c2e20aabbfd9b514c1"
+        },
+        {
+          "path": "public/art/item-signal-baffle-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 55173,
+          "sha256": "6538d00008678067ac65d4970c0dce3c8dd74e8d922f6f8fbb7b43be19e00e2f"
+        },
+        {
+          "path": "public/art/previews/item-signal-baffle.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1007,
+          "sha256": "99bd6442c0ba28443947068f4d4f6381caad11df07c1459e3e97c694813643d3"
+        }
+      ]
+    },
+    {
+      "id": "item-burner-route",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-939c1c1c-927b-4e50-a877-d91ca84ddfb1.png",
+      "sourceSha256": "751d7b2d6e96a092fa05929cd2a9850e3cb6c9ee14ec66d1e0e5507fcd5e0f8d",
+      "references": [
+        {
+          "path": "public/art/equipment-atlas.jpg",
+          "sha256": "167a20e1efbcc80763cc9ae5473c38a238eb1ea24b2cbf19e7bb4b3753de448f"
+        }
+      ],
+      "promptSummary": "One single object study, large and crisply detailed, centered on charcoal felt. Entire object visible with margin, no cropping, no hands or additional items. Preserve the supplied atlas object's materials, proportions and distinctive silhouette. A single orange disposable freight-clearance card with abstract black bars; match second row second object. No legible numbers, letters, readable routing or names.",
+      "deliveryProcessing": "Resize and JPEG encode only; native 1536 by 1024 generated master retained outside Git.",
+      "files": [
+        {
+          "path": "public/art/item-burner-route.jpg",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 389531,
+          "sha256": "70018c2df2ed0c3ade227040ec36456ea4329d38331e05675adb29e8c09fcc2c"
+        },
+        {
+          "path": "public/art/item-burner-route-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 52606,
+          "sha256": "a0f9af9c464a8e159c663268e8ebe2cb1ae645735a42f80ea9a1f069681b3f5f"
+        },
+        {
+          "path": "public/art/previews/item-burner-route.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1106,
+          "sha256": "acfa795e5fb995dd824dca9d8890f404ddd813997609714319c8d5af0637a009"
+        }
+      ]
+    },
+    {
+      "id": "item-counterfeit-pass",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-f6079894-536c-492a-b576-38b08c24086b.png",
+      "sourceSha256": "bfe6fd6bd32ce350e867b9ece01d729a39df6304091ee7f490b7e8d756e852d4",
+      "references": [
+        {
+          "path": "public/art/equipment-atlas.jpg",
+          "sha256": "167a20e1efbcc80763cc9ae5473c38a238eb1ea24b2cbf19e7bb4b3753de448f"
+        }
+      ],
+      "promptSummary": "One single object study, large and crisply detailed, centered on charcoal felt. Entire object visible with margin, no cropping, no hands or additional items. Preserve the supplied atlas object's materials, proportions and distinctive silhouette. A pale blue appointment card with anonymous printed silhouette and indistinct fields; match second row fourth object. No legible identity, numbers, letters, photographs of identifiable people or official insignia.",
+      "deliveryProcessing": "Resize and JPEG encode only; native 1536 by 1024 generated master retained outside Git.",
+      "files": [
+        {
+          "path": "public/art/item-counterfeit-pass.jpg",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 454553,
+          "sha256": "91326205c80ce7ba41725dc613322b2e115531f4a5ced7409cf3b65af0a3f734"
+        },
+        {
+          "path": "public/art/item-counterfeit-pass-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 63022,
+          "sha256": "da5723093060e2e8aa4514752c2b24ae4a7516a7cad2680225540b5a28a46a72"
+        },
+        {
+          "path": "public/art/previews/item-counterfeit-pass.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1168,
+          "sha256": "2a157197b8d90b82e122fb8b8b73c00095ff8217b010840135f0e91b878b2e14"
+        }
+      ]
+    },
+    {
+      "id": "item-layout-scrap",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-65a54d79-8bd0-49ce-bde3-55a04b8e9465.png",
+      "sourceSha256": "fed7dca4e45fe68640c465d1ac0f0fb6f9ae99003341a2d6fb7992f944d85ec6",
+      "references": [
+        {
+          "path": "public/art/equipment-atlas.jpg",
+          "sha256": "167a20e1efbcc80763cc9ae5473c38a238eb1ea24b2cbf19e7bb4b3753de448f"
+        }
+      ],
+      "promptSummary": "One single object study, large and crisply detailed, centered on charcoal felt. Entire object visible with margin, no cropping, no hands or additional items. Preserve the supplied atlas object's materials, proportions and distinctive silhouette. One folded aged thermal-paper service diagram with abstract fine lines, no readable labels or precise private address; match third row first object.",
+      "deliveryProcessing": "Resize and JPEG encode only; native 1536 by 1024 generated master retained outside Git.",
+      "files": [
+        {
+          "path": "public/art/item-layout-scrap.jpg",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 427217,
+          "sha256": "535af706376d1c12140e38d4aeff5f715623ff5437bcc55810993069a338fea9"
+        },
+        {
+          "path": "public/art/item-layout-scrap-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 63583,
+          "sha256": "d588afbb4dc989731a597553a917495a3172b28c4d389b497c9bf2de336e4cfa"
+        },
+        {
+          "path": "public/art/previews/item-layout-scrap.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1357,
+          "sha256": "ac68a525cd886876291cdce79994d75af6410cf1396cfeaa8fe7fc7dd42ff509"
+        }
+      ]
+    },
+    {
+      "id": "item-spoof-chip",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-c4d32018-3385-424b-8ad7-d256a849e10c.png",
+      "sourceSha256": "5c597a83d57ad0adc597aaa769442ea14ef849991831ae615b4c82ae6d49d187",
+      "references": [
+        {
+          "path": "public/art/equipment-atlas.jpg",
+          "sha256": "167a20e1efbcc80763cc9ae5473c38a238eb1ea24b2cbf19e7bb4b3753de448f"
+        }
+      ],
+      "promptSummary": "One single object study, large and crisply detailed, centered on charcoal felt. Entire object visible with margin, no cropping, no hands or additional items. Preserve the supplied atlas object's materials, proportions and distinctive silhouette. A small dark ceramic chip with four exposed aged copper contacts; match third row second object. No new lights or readable text.",
+      "deliveryProcessing": "Resize and JPEG encode only; native 1536 by 1024 generated master retained outside Git.",
+      "files": [
+        {
+          "path": "public/art/item-spoof-chip.jpg",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 455164,
+          "sha256": "278aa7703105a2c7e10242ac16a58cbe51255508b6c44782a64112eefc2f351d"
+        },
+        {
+          "path": "public/art/item-spoof-chip-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 58475,
+          "sha256": "68537070f5b3e7791b55e0a7b76260b560f2a2718e52485b8de5f4919aa27bc0"
+        },
+        {
+          "path": "public/art/previews/item-spoof-chip.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 901,
+          "sha256": "5d2d05c21924aafcae841f5e0f0b5e52304de95db836d0f39dd81ec662c767f8"
+        }
+      ]
+    },
+    {
+      "id": "item-mono-knife",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-b3ff7945-10b7-4ede-9d84-ff093012476d.png",
+      "sourceSha256": "8f7b2c1a12d18426e0827d954ba9e7b7b73117c406b5a3c30ef39d932c7013ef",
+      "references": [
+        {
+          "path": "public/art/equipment-atlas.jpg",
+          "sha256": "167a20e1efbcc80763cc9ae5473c38a238eb1ea24b2cbf19e7bb4b3753de448f"
+        }
+      ],
+      "promptSummary": "One single object study, large and crisply detailed, centered on charcoal felt. Entire object visible with margin, no cropping, no hands or additional items. Preserve the supplied atlas object's materials, proportions and distinctive silhouette. A small worn utility knife with a narrow exposed metal blade and dark aged copper handle; match third row third object. No blood, violence, hands or readable stamp.",
+      "deliveryProcessing": "Resize and JPEG encode only; native 1536 by 1024 generated master retained outside Git.",
+      "files": [
+        {
+          "path": "public/art/item-mono-knife.jpg",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 374700,
+          "sha256": "828b2d35c73e7f6b804f725c75fd19f3f0241f9f4968f6dbf7185b2147c4e88c"
+        },
+        {
+          "path": "public/art/item-mono-knife-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 44708,
+          "sha256": "64754766aa0dc5c925b389fc4d3353a78387fcb4e2e942689c328f93747a48f1"
+        },
+        {
+          "path": "public/art/previews/item-mono-knife.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 873,
+          "sha256": "feaf6ee895e537d47001978cdbdb391f75196390439c3f94ef0e109431b1f4ba"
+        }
+      ]
+    },
+    {
+      "id": "item-sedative",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-e28b504d-c96a-4725-ab7b-c2ddb0d61fb7.png",
+      "sourceSha256": "1f5c835d8b901f241bdeffa373932a57cff737085d19c590be4988572b48c3d3",
+      "references": [
+        {
+          "path": "public/art/equipment-atlas.jpg",
+          "sha256": "167a20e1efbcc80763cc9ae5473c38a238eb1ea24b2cbf19e7bb4b3753de448f"
+        }
+      ],
+      "promptSummary": "One single object study, large and crisply detailed, centered on charcoal felt. Entire object visible with margin, no cropping, no hands or additional items. Preserve the supplied atlas object's materials, proportions and distinctive silhouette. A single sealed amber medicine vial with worn brass cap and no readable label; match third row fourth object. No syringe, dosage, hands or treatment.",
+      "deliveryProcessing": "Resize and JPEG encode only; native 1536 by 1024 generated master retained outside Git.",
+      "files": [
+        {
+          "path": "public/art/item-sedative.jpg",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 371143,
+          "sha256": "4b00fbed1a7dc2c6d55df9b8c8db99aba48e15acba51f7d585175f13ee96845d"
+        },
+        {
+          "path": "public/art/item-sedative-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 47612,
+          "sha256": "f95e21ff50322e61c0326e56d55e89821350a02cc24a8d592cbe5769dbf40ef9"
+        },
+        {
+          "path": "public/art/previews/item-sedative.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 891,
+          "sha256": "ab6aa3c2c62bf0b5c00c219ec61309d99995437bef030c5913a0f0a8aba90d71"
+        }
+      ]
+    },
+    {
+      "id": "item-clinic-marker",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-b1ff6dcd-2c0d-4db5-ab5b-3f160afb1209.png",
+      "sourceSha256": "670b5fb2639c3b99c84d903ae2dfd66ec49c2003ce8859e8f9b1670e4927cfaf",
+      "references": [
+        {
+          "path": "public/art/equipment-atlas.jpg",
+          "sha256": "167a20e1efbcc80763cc9ae5473c38a238eb1ea24b2cbf19e7bb4b3753de448f"
+        }
+      ],
+      "promptSummary": "One single object study, large and crisply detailed, centered on charcoal felt. Entire object visible with margin, no cropping, no hands or additional items. Preserve the supplied atlas object's materials, proportions and distinctive silhouette. A pale frosted-glass debt token in a copper rim; match bottom row second object. No legible engraving, identity, redemption indicator or outcome.",
+      "deliveryProcessing": "Resize and JPEG encode only; native 1536 by 1024 generated master retained outside Git.",
+      "files": [
+        {
+          "path": "public/art/item-clinic-marker.jpg",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 354992,
+          "sha256": "9a2eff2a0f495a00986a978b299686b5deb71fa34f3df9fc2e437f95c668545a"
+        },
+        {
+          "path": "public/art/item-clinic-marker-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 46189,
+          "sha256": "825fb4a1b67421f297a4360e1ca4f48bb53fda89dbcdd519be34e2820b084483"
+        },
+        {
+          "path": "public/art/previews/item-clinic-marker.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 936,
+          "sha256": "3ae1a3f3760e8212350600689f0c1bf0f8531615a38fb3f6c953c8f4e064a979"
+        }
+      ]
+    },
+    {
+      "id": "shelter-conversation",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-98921606-ed51-43b3-9ca3-016842a37ded.png",
+      "sourceSha256": "4a4a9e84f4b3c5edcb147fa416f41526e17acbc181ac0c77fcf3bf8d6adcf817",
+      "references": [
+        {
+          "path": "public/art/sera.jpg",
+          "sha256": "357cfe3e403cfc57140977271a62264157640a0c640da9bbd5272e39516b39cf"
+        },
+        {
+          "path": "public/art/ren-portrait.jpg",
+          "sha256": "1ad4f23925cc6159462c2ad51fe01bcda6517251b78c211536dc623c892b9a33"
+        },
+        {
+          "path": "public/art/shelter.jpg",
+          "sha256": "682b53e06fcd9edd9f4092059fb109dd4750244447338b0530605057d6672916"
+        }
+      ],
+      "promptSummary": "Exactly two established characters on Ward Four shelter stair: Sera from first portrait in worn teal hood, crouching to catch a bucket beneath a visibly leaking coolant valve; Ren from second portrait in worn ochre raincoat, setting an ordinary kettle on a DRY step beside a passable ramp. Preserve their faces, ages and identities. Match third reference venue. No repair collar, tools used successfully, allocated room, new bed, witness, eviction, agreement gesture or completed evacuation. Two concerned neighbors talking BEFORE the player agrees to help. Clear readable faces and silhouettes, full heads and hands in frame. Rain-blue and copper lamps, human-scale architecture.",
+      "deliveryProcessing": "Resize and JPEG encode only; native 1536 by 1024 generated master retained outside Git.",
+      "files": [
+        {
+          "path": "public/art/shelter-conversation.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 342206,
+          "sha256": "8c2240b2bd432d6df7960916b14180181da54deb89f330254f2e267fbecb377d"
+        },
+        {
+          "path": "public/art/shelter-conversation-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 97339,
+          "sha256": "66d6955d79bdf7522e7af5c5114747d85ae998029e714bea36a506fad1002c94"
+        },
+        {
+          "path": "public/art/previews/shelter-conversation.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1634,
+          "sha256": "c8aa4ceb120d41ddc72138294c76e27266f31d3426819b90c09b261b619df149"
+        }
+      ]
+    },
+    {
+      "id": "edda-service-review",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-4f784851-1ba3-480e-9b61-db0a0c8eac22.png",
+      "sourceSha256": "cba525d6a5a79a2d08c2f1acc041b515539aad330955f3263d4493f96a7be335",
+      "references": [
+        {
+          "path": "public/art/edda.jpg",
+          "sha256": "6af115f70e05fbf24b71e7dedf74885e774dba1ac75f5d1689f1b66ee4931223"
+        },
+        {
+          "path": "public/art/spire-counter.jpg",
+          "sha256": "57242dd57d1e0f8185c9bef6e59ba6cb710229ea5075efc79fa3bfd578b4993a"
+        }
+      ],
+      "promptSummary": "Edda from first reference, same middle-aged face, short salt-and-pepper hair, rectangular glasses, worn brown technical coat, stands at the Helion service counter from second reference. She keeps her thumb over the corner of a billing slip, hiding the current account number. A second ordinary service card and a small closed brown paper receiver sleeve lie SEPARATELY on the counter. These are the three objects for review, not new discovered evidence. No receiver removed from sleeve, no handover, terminal query, seal, approved receipt, readable marks, authenticated key or completed closure. Her hands stay natural. Serious attentive expression. Landscape detail composition, face and three separate paper objects all readable in silhouette, no legible writing.",
+      "deliveryProcessing": "Resize and JPEG encode only; native 1536 by 1024 generated master retained outside Git.",
+      "files": [
+        {
+          "path": "public/art/edda-service-review.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 282719,
+          "sha256": "41a09af9feb8bcedb7449dd2567a189004d727f6c46c58a79c525ace19591462"
+        },
+        {
+          "path": "public/art/edda-service-review-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 81366,
+          "sha256": "f423fddf674de28bef3277f25ad55383209d588b9050a114fab7ea30225020e7"
+        },
+        {
+          "path": "public/art/previews/edda-service-review.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1641,
+          "sha256": "1ae3ac66e3f298a849c592179c3230487654e619d8e8dd8274f305f57a987a01"
+        }
+      ]
+    },
+    {
+      "id": "lumen-cup",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-9881412f-7a50-4596-98a0-a633608cf891.png",
+      "sourceSha256": "eb84e7a009e3dab8e27652852006865c610800178fc92fe61a838965b0f01991",
+      "references": [
+        {
+          "path": "public/art/lumen.jpg",
+          "sha256": "88cc611cc0cafbbd9cac910b4fdf454cb24fd1d4a8dc6ea6ba9f2822f890668e"
+        },
+        {
+          "path": "public/art/clinic-conversation.jpg",
+          "sha256": "afe2cc73b2ff497b3f5d1416136b2fce339afef131ba9b0396dc5c4da68190bf"
+        }
+      ],
+      "promptSummary": "Sister Lumen from first portrait, same bald face, black coat and clerical collar, established MAGENTA cybernetic optic preserved. She is alone in the clinic side room from second reference, standing beside the ordinary table and spare chair turned toward the rain-streaked window. She lifts a small worn ceramic cup just above the table with one hand while wiping the ring underneath with a plain cloth in the other, a quiet routine gesture. Not smiling, not signing anything, no statement, envelope, recorder, machine, medical treatment or permission. Cup belongs to Mara but Mara is not pictured. Care without endorsement; intimate landscape composition, complete head and hands visible, copper lamp and muted rainy blue.",
+      "deliveryProcessing": "Resize and JPEG encode only; native 1536 by 1024 generated master retained outside Git.",
+      "files": [
+        {
+          "path": "public/art/lumen-cup.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 295431,
+          "sha256": "13781d929ac7df95c5f2f053e98d569b5c50943678f8f1e4d9d2b3a20461bcd0"
+        },
+        {
+          "path": "public/art/lumen-cup-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 77634,
+          "sha256": "c819c3e650d1a3b9237827daba5d0ac43151b9e533059dcc5c1fd62d5ca29b20"
+        },
+        {
+          "path": "public/art/previews/lumen-cup.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 1414,
+          "sha256": "b354033ae0f0596f329aced510e58be708351226c0e377398f91438d1008fca2"
         }
       ]
     }

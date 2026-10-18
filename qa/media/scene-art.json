@@ -20,19 +20,10 @@
     },
     {
       "treatment": "illustration",
-      "asset": "/art/shelter.jpg",
-      "reason": "Establish the leaking landing and passable ramp before repair, evacuation or allocation is known. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Expression staging accompanies the actual actor and adds no outcome or permission.",
-      "scenes": [
-        "act2_shelter_brief"
-      ]
-    },
-    {
-      "treatment": "illustration",
       "asset": "/art/spire-counter.jpg",
       "reason": "Establish and reuse the same service counter. Neutral papers and a sleeved receiver depict neither closure nor handover, including traced recovery. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
       "scenes": [
         "act2_spire_brief",
-        "act2_spire_sources",
         "act2_spire_recovery",
         "act2_spire_receipt"
       ]
@@ -580,7 +571,6 @@
       "asset": "/art/ordinary-rest.jpg",
       "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
       "scenes": [
-        "act2_lumen_quiet",
         "act3_lumen_boundary"
       ]
     },
@@ -735,6 +725,30 @@
       "reason": "Failed collection aftermath: the closed case remains on its shelf, before any registered courier or handover. No recipient, register, delivery receipt, privacy guarantee, medical treatment or completed promise is depicted; both trace states retain their own prose. A brief decorative environmental layer settles to stillness after 3.8 seconds, with reduced motion disabling it; no face, evidence or outcome is animated.",
       "scenes": [
         "act2_route_recovery"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/shelter-conversation.jpg",
+      "reason": "Sera and Ren are both named and quoted here, before repair or room allocation. Keep the leaking valve, bucket, kettle and accessible ramp; do not reuse after a completed repair or for a refused/moved household.",
+      "scenes": [
+        "act2_shelter_brief"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/edda-service-review.jpg",
+      "reason": "Edda covers her current account number while three source objects await inspection. No submitted query, completed closure, handover or historical authentication is depicted; all inspection counts retain their own text.",
+      "scenes": [
+        "act2_spire_sources"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/lumen-cup.jpg",
+      "reason": "Lumen lifts Mara\u2019s cup to wipe beneath it in this exact room. Ordinary care establishes no endorsement, quotation permission or forgiveness; guarded portrait staging remains authoritative when trust was broken.",
+      "scenes": [
+        "act2_lumen_quiet"
       ]
     }
   ],

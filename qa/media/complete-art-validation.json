@@ -1,0 +1,257 @@
+{
+  "version": 1,
+  "date": "2026-10-18",
+  "baseRevision": "503d2e16cda1d4b275ba445ecd690bb2766fee99",
+  "story": "Static client actions -> canonical local state and reviewed media registry -> local artwork requests -> decoded rendering and accessible controls. No API/account boundary is added.",
+  "sourceSha256": {
+    "components/ProgressiveArtwork.tsx": "9d7e165452da582f851c0077b4a79f7895e4d4632d0701934c9c51d7dcaed2ed",
+    "components/SceneIllustration.tsx": "2fa9579cd9858e1c6476e5de46bdd1dcc67c399befb4ed542a21f9f0564cc00d",
+    "components/ArtworkViewer.tsx": "2307764465401f3e3c7451d2e1635404bf1df76974b51641f199ba26a8082480",
+    "components/CityMap.tsx": "524d6cd00a4a3163e4e16fc5f37bcc40587e6b189abe6e7a60b5c192e66658a4",
+    "lib/art.ts": "df8000ce062b5a0134e4cacf1945ed0f8e9322773eb885352cbe10b833f05382",
+    "lib/city-map.ts": "29f865666657975ca14c577e2516a9ed52f7b0b7e1739ac77834deb75b054ac3",
+    "lib/inventory-art.ts": "7011d778ddce2b80fe91ce4ff3373d3ceaa3c90317e47dd5b374fbae152f9670",
+    "lib/art-previews.ts": "a242505be0f3c2b3654ac4cf334b5aa3426c1ba10bfeb6b6a78193ec2c801749",
+    "lib/complete-art.test.ts": "e006d7e8ad5c6fa5fc63cbb4af1721f116c12fc1286bef69d3a4c10990b20969",
+    "tests/complete-art.spec.ts": "275702d1c44dfb05032569d485f95f8aa89d4dff9301bab17fe942b5030a9a46",
+    "tests/player-screens.spec.ts": "088b53795f20de6676e740ca8889bcf607782710b3e78d8f1a4db080166548f0",
+    "tests/game.spec.ts": "cb88ee8e57c7115d35005d051fb25131dbd700a1cd3121a02a0d858083595383",
+    "lib/visual-refinement.test.ts": "9a8f8ad6675cdfd8219412849e8e52fbca7fea6c31f8f5f331eb7426a67ae82c",
+    "app/globals.css": "02427ce75db4d94879f07fea2686e781a826fe335bbd482bcfe13cba1dfa7f17",
+    "qa/media/complete-art.json": "dda574551a22ce77f5c29aeb73522aca334e8ba500e6fdd62fdcfe88dc4a2be8",
+    "qa/media/art-previews.json": "43f632960f174f384b2db65540ab7da189075c6e2f786c9ec18d3f1fa09605bc",
+    "qa/media/art-provenance.json": "e936eec931b535fdc6d3bd9710567a0b8bd16b0b5661cda6e677b190b3471992",
+    "qa/media/scene-art.json": "59b603a780479f52fec9ce074f9963768135c125ebc4f8a8c2b41a3becb89529",
+    "qa/media/campaign-dialogue-bindings.json": "15ae8b35c16b330b545f001e23dc75b5f4bd131225347f616ab76c1b7088f0bd",
+    "README.md": "26650ea56ce9c6e3e35cfea6613295f40c9318a2ec62cfce54697d338a5a77a3",
+    "AGENTS.md": "8125bf341fe20f4cd678381f2b87e28ceca8c8ea2b1e2d183d76c1f20b4e7757"
+  },
+  "sourceTests": {
+    "passed": 652,
+    "failed": 0,
+    "log": "/tmp/complete-art-source.log"
+  },
+  "typescript": "Production build and preceding no-emit checks passed",
+  "build": "passed",
+  "security": {
+    "vulnerabilities": 0,
+    "command": "npm run security:audit",
+    "log": "/tmp/complete-art-security.log"
+  },
+  "production": {
+    "scenes": 197,
+    "choices": 598,
+    "routes": 148,
+    "assets": 703,
+    "budgetViolations": []
+  },
+  "browserBatches": [
+    {
+      "passed": 222,
+      "failed": 0,
+      "log": "/tmp/complete-art-browser.log",
+      "files": [
+        "complete-art",
+        "player-screens",
+        "visual-library",
+        "visual-polish",
+        "visual-refinement",
+        "speaker-presentation",
+        "finale-direction",
+        "campaign-dialogue"
+      ],
+      "projects": [
+        "chromium",
+        "phone"
+      ]
+    },
+    {
+      "passed": 42,
+      "failed": 0,
+      "log": "/tmp/complete-art-legacy-browser.log",
+      "files": [
+        "campaign-art",
+        "game"
+      ],
+      "filter": "campaign setting art|encounter illustration|current quiet dialogue is explicit",
+      "projects": [
+        "chromium",
+        "phone"
+      ]
+    }
+  ],
+  "browserCountNote": "264 checks across two disjoint file selections in Chromium/phone. Hosted CI still requires every unfiltered project in all four engines.",
+  "mapMeasurements": [
+    {
+      "width": 390,
+      "firstFindY": 372.625,
+      "firstFindBottom": 416.625
+    },
+    {
+      "width": 1440,
+      "firstFindY": 551.96875,
+      "firstFindBottom": 595.96875
+    },
+    {
+      "width": 320,
+      "firstFindY": 596.96875,
+      "firstFindBottom": 693.75
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "/tmp/complete-art-edda-1440.png",
+      "sha256": "bda5d4724da7e8c79e95b7e5e752327e1f8cb94a383708d88e013cd7fccdc4e7"
+    },
+    {
+      "path": "/tmp/complete-art-edda-390.png",
+      "sha256": "f77a7feb4b893e0d19ad803b5a0b1e142b8ceff042ffa060e879e825ffb660cb"
+    },
+    {
+      "path": "/tmp/complete-art-item-1440.png",
+      "sha256": "91c58203b7395e477809ce5f5b1e37141956e7db40ca04676db646dc796b6bc4"
+    },
+    {
+      "path": "/tmp/complete-art-item-390.png",
+      "sha256": "68374e750acc8547801f9a75e949a2040e2f83a7bd76abb479c0926f2856d113"
+    },
+    {
+      "path": "/tmp/complete-art-lumen-1440.png",
+      "sha256": "7ffebf42677d7483428bd0b3ec4df64cd89c99de74b446801fa5cc466d6a219a"
+    },
+    {
+      "path": "/tmp/complete-art-lumen-390.png",
+      "sha256": "75680c9c285029464954ba2f21e3bd12fd3b4cc1c389fd3fd3d1dc19719abb8c"
+    },
+    {
+      "path": "/tmp/complete-art-map-1440.png",
+      "sha256": "0cf648c9893bf4a0963828d89bbd95810e8a761252dd0134ee72eedc4e963965"
+    },
+    {
+      "path": "/tmp/complete-art-map-320.png",
+      "sha256": "3576c96bbed69b95d0658ccb698d559acb6d3db5a90b5694c6b4c7cd31f34107"
+    },
+    {
+      "path": "/tmp/complete-art-map-390.png",
+      "sha256": "9518590d39951702acb696e323884ed8386cff011c0164afd1a9c979e4f01f2e"
+    },
+    {
+      "path": "/tmp/complete-art-preview-390.png",
+      "sha256": "9b9505b1734ca1a4aabbfb5fdbae1dd673685639bd902d400b40373970c607e1"
+    },
+    {
+      "path": "/tmp/complete-art-shelter-1440.png",
+      "sha256": "6050333e84e915fecea2bb400bb071a781df5c16a913625d67f54742aa1a2224"
+    },
+    {
+      "path": "/tmp/complete-art-shelter-390.png",
+      "sha256": "7f1419aa61c85b434b386363e95be1f89edddc9b454e7c57dda8829c86546f91"
+    }
+  ],
+  "nativeFirstVisit": {
+    "revision": "503d2e16cda1d4b275ba445ecd690bb2766fee99",
+    "dirty": true,
+    "initialTransferBudget": 2097152,
+    "autoplayPolicy": "Full Chromium; first visit requires document activation, with no prior origin permission.",
+    "samples": [
+      {
+        "sceneId": "opening_city",
+        "width": 390,
+        "height": 844,
+        "artwork": "full",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 2505,
+        "network": "Emulated 5 Mbps / 150 ms",
+        "elapsedToReadyMs": 4625,
+        "encodedResourceBytes": 1686715,
+        "htmlBytes": 2337,
+        "titleLcpMs": 1448,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 4,
+        "goalVisible": true
+      },
+      {
+        "sceneId": "opening_city",
+        "width": 390,
+        "height": 844,
+        "artwork": "none",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 2538,
+        "network": "Emulated 5 Mbps / 150 ms",
+        "elapsedToReadyMs": 2629,
+        "encodedResourceBytes": 439935,
+        "htmlBytes": 2337,
+        "titleLcpMs": 1324,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 0,
+        "goalVisible": true
+      },
+      {
+        "sceneId": "opening_city",
+        "width": 1440,
+        "height": 900,
+        "artwork": "full",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 1520,
+        "network": "Unthrottled automation host",
+        "elapsedToReadyMs": 1764,
+        "encodedResourceBytes": 2024931,
+        "htmlBytes": 2337,
+        "titleLcpMs": 500,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 4,
+        "goalVisible": true
+      },
+      {
+        "sceneId": "opening_city",
+        "width": 1440,
+        "height": 900,
+        "artwork": "none",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 1401,
+        "network": "Unthrottled automation host",
+        "elapsedToReadyMs": 1461,
+        "encodedResourceBytes": 1104652,
+        "htmlBytes": 2337,
+        "titleLcpMs": 392,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 0,
+        "goalVisible": true
+      }
+    ],
+    "limitations": [
+      "Four synthetic samples on the automation host, not p75/p95 field data or named physical devices.",
+      "Elapsed-to-ready includes automated form entry and network-idle waits; it is not LCP or INP.",
+      "titleLcpMs measures this navigation's title screen. Encoded resource bytes are Resource Timing measurements, not all wire overhead.",
+      "A previously permitted visit can autoplay the separate 2.6 MB menu theme before gameplay; these samples measure the first-visit activation policy."
+    ]
+  },
+  "media": {
+    "newGeneratedPaintings": 14,
+    "newIndividualItemPaintings": 11,
+    "newConversationPaintings": 3,
+    "paintingDeliveryFiles": 28,
+    "paintingDeliveryBytes": 6190771,
+    "tinyPreviews": 80,
+    "tinyPreviewBytes": 110102,
+    "maxTinyPreviewBytes": 1771,
+    "voiceBindings": 306,
+    "activeVoiceFiles": 294,
+    "storyAndVoiceChanged": false
+  },
+  "limitations": [
+    "AI development proxy with no independent human or artistic acceptance. Provisional grade remains 8.2.",
+    "Local Chromium/phone automation; Firefox profile startup and missing WebKit host libraries require hosted full four-engine CI.",
+    "Four native first-visit samples are synthetic, not field percentiles or a previously permitted menu-music visit.",
+    "Conditional dialogue cases use source snapshots; no new human/full campaign participation is claimed.",
+    "Exact-commit CI and the production alias remain authoritative for publication."
+  ]
+}

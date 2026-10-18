@@ -1,0 +1,475 @@
+{
+  "version": 1,
+  "bindingSha256": "15ae8b35c16b330b545f001e23dc75b5f4bd131225347f616ab76c1b7088f0bd",
+  "assets": [
+    {
+      "id": "item-chair-harness",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-8640973c-5bb0-47ca-89f6-41e630ecfdef.png",
+      "sourceSha256": "0dd2483a0d3f913ccfc516e73fc164b48c642355d5708f27ad5ee5ed5c25be12",
+      "references": [
+        {
+          "path": "public/art/equipment-atlas.jpg",
+          "sha256": "167a20e1efbcc80763cc9ae5473c38a238eb1ea24b2cbf19e7bb4b3753de448f"
+        }
+      ],
+      "promptSummary": "One single object study, large and crisply detailed, centered on charcoal felt. Entire object visible with margin, no cropping, no hands or additional items. Preserve the supplied atlas object's materials, proportions and distinctive silhouette. Folded padded black support straps with worn brass buckles; match top row second object.",
+      "deliveryProcessing": "Resize and JPEG encode only; native 1536 by 1024 generated master retained outside Git.",
+      "files": [
+        {
+          "path": "public/art/item-chair-harness.jpg",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 417370,
+          "sha256": "1f808fa1bd1600fb187df9bc76d4903e71343bf84b21e88ff36d320a92adec1f"
+        },
+        {
+          "path": "public/art/item-chair-harness-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 59843,
+          "sha256": "5ae352881dac8b9683e4b79d9718ccac25c92702811fdb0c9b229f71aab38170"
+        }
+      ]
+    },
+    {
+      "id": "item-desk-guide",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-57a07ca7-bd82-4bf3-a2b2-100ab62f2378.png",
+      "sourceSha256": "9438cd720b06857616bd2e47026a19322a4daff1b32b11e0822c255909253f49",
+      "references": [
+        {
+          "path": "public/art/equipment-atlas.jpg",
+          "sha256": "167a20e1efbcc80763cc9ae5473c38a238eb1ea24b2cbf19e7bb4b3753de448f"
+        }
+      ],
+      "promptSummary": "One single object study, large and crisply detailed, centered on charcoal felt. Entire object visible with margin, no cropping, no hands or additional items. Preserve the supplied atlas object's materials, proportions and distinctive silhouette. A small closed cream procedural booklet with clipped ordinary pencil; match top row third object. No readable writing.",
+      "deliveryProcessing": "Resize and JPEG encode only; native 1536 by 1024 generated master retained outside Git.",
+      "files": [
+        {
+          "path": "public/art/item-desk-guide.jpg",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 443934,
+          "sha256": "967005c156b4dd4a88e3f9eaccb3488298f219f0dc4eaec27a367043e8c1847a"
+        },
+        {
+          "path": "public/art/item-desk-guide-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 56451,
+          "sha256": "a36878c468443c53d8c77a36aab2a4cf873e10550b8af0a8d18f830405a1a6e8"
+        }
+      ]
+    },
+    {
+      "id": "item-route-shroud",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-f5b38e4b-5017-4cef-8d84-0352df1eb1c7.png",
+      "sourceSha256": "52d2bf53bbebd05a81876b0cf9b17bb91a17ade996390e1be9d0dc1030468f50",
+      "references": [
+        {
+          "path": "public/art/equipment-atlas.jpg",
+          "sha256": "167a20e1efbcc80763cc9ae5473c38a238eb1ea24b2cbf19e7bb4b3753de448f"
+        }
+      ],
+      "promptSummary": "One single object study, large and crisply detailed, centered on charcoal felt. Entire object visible with margin, no cropping, no hands or additional items. Preserve the supplied atlas object's materials, proportions and distinctive silhouette. Folded charcoal shielding fabric with worn stitched edges; match top row fourth object.",
+      "deliveryProcessing": "Resize and JPEG encode only; native 1536 by 1024 generated master retained outside Git.",
+      "files": [
+        {
+          "path": "public/art/item-route-shroud.jpg",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 347937,
+          "sha256": "1d50a6325e7483a840424747ed04d690ba90659f8244a2dbedab5fea0ae8d4fe"
+        },
+        {
+          "path": "public/art/item-route-shroud-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 49567,
+          "sha256": "6140e45c993fa9dcb7408a4397ddad2486eeca1f07276cc3a83745276785d22e"
+        }
+      ]
+    },
+    {
+      "id": "item-signal-baffle",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-89590abc-64f0-4742-93ac-48fa7bc2b8fb.png",
+      "sourceSha256": "34345db88d75c217ab8c914e413127eef3dead4163d7073753d0c5209c462b3c",
+      "references": [
+        {
+          "path": "public/art/equipment-atlas.jpg",
+          "sha256": "167a20e1efbcc80763cc9ae5473c38a238eb1ea24b2cbf19e7bb4b3753de448f"
+        }
+      ],
+      "promptSummary": "One single object study, large and crisply detailed, centered on charcoal felt. Entire object visible with margin, no cropping, no hands or additional items. Preserve the supplied atlas object's materials, proportions and distinctive silhouette. A shielded worn copper receiver with a short antenna; match second row first object. No screen result or readable labels.",
+      "deliveryProcessing": "Resize and JPEG encode only; native 1536 by 1024 generated master retained outside Git.",
+      "files": [
+        {
+          "path": "public/art/item-signal-baffle.jpg",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 380306,
+          "sha256": "263a3db3960215892fd7a096e5ddf7c1ddaf78e8cee554c2e20aabbfd9b514c1"
+        },
+        {
+          "path": "public/art/item-signal-baffle-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 55173,
+          "sha256": "6538d00008678067ac65d4970c0dce3c8dd74e8d922f6f8fbb7b43be19e00e2f"
+        }
+      ]
+    },
+    {
+      "id": "item-burner-route",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-939c1c1c-927b-4e50-a877-d91ca84ddfb1.png",
+      "sourceSha256": "751d7b2d6e96a092fa05929cd2a9850e3cb6c9ee14ec66d1e0e5507fcd5e0f8d",
+      "references": [
+        {
+          "path": "public/art/equipment-atlas.jpg",
+          "sha256": "167a20e1efbcc80763cc9ae5473c38a238eb1ea24b2cbf19e7bb4b3753de448f"
+        }
+      ],
+      "promptSummary": "One single object study, large and crisply detailed, centered on charcoal felt. Entire object visible with margin, no cropping, no hands or additional items. Preserve the supplied atlas object's materials, proportions and distinctive silhouette. A single orange disposable freight-clearance card with abstract black bars; match second row second object. No legible numbers, letters, readable routing or names.",
+      "deliveryProcessing": "Resize and JPEG encode only; native 1536 by 1024 generated master retained outside Git.",
+      "files": [
+        {
+          "path": "public/art/item-burner-route.jpg",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 389531,
+          "sha256": "70018c2df2ed0c3ade227040ec36456ea4329d38331e05675adb29e8c09fcc2c"
+        },
+        {
+          "path": "public/art/item-burner-route-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 52606,
+          "sha256": "a0f9af9c464a8e159c663268e8ebe2cb1ae645735a42f80ea9a1f069681b3f5f"
+        }
+      ]
+    },
+    {
+      "id": "item-counterfeit-pass",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-f6079894-536c-492a-b576-38b08c24086b.png",
+      "sourceSha256": "bfe6fd6bd32ce350e867b9ece01d729a39df6304091ee7f490b7e8d756e852d4",
+      "references": [
+        {
+          "path": "public/art/equipment-atlas.jpg",
+          "sha256": "167a20e1efbcc80763cc9ae5473c38a238eb1ea24b2cbf19e7bb4b3753de448f"
+        }
+      ],
+      "promptSummary": "One single object study, large and crisply detailed, centered on charcoal felt. Entire object visible with margin, no cropping, no hands or additional items. Preserve the supplied atlas object's materials, proportions and distinctive silhouette. A pale blue appointment card with anonymous printed silhouette and indistinct fields; match second row fourth object. No legible identity, numbers, letters, photographs of identifiable people or official insignia.",
+      "deliveryProcessing": "Resize and JPEG encode only; native 1536 by 1024 generated master retained outside Git.",
+      "files": [
+        {
+          "path": "public/art/item-counterfeit-pass.jpg",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 454553,
+          "sha256": "91326205c80ce7ba41725dc613322b2e115531f4a5ced7409cf3b65af0a3f734"
+        },
+        {
+          "path": "public/art/item-counterfeit-pass-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 63022,
+          "sha256": "da5723093060e2e8aa4514752c2b24ae4a7516a7cad2680225540b5a28a46a72"
+        }
+      ]
+    },
+    {
+      "id": "item-layout-scrap",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-65a54d79-8bd0-49ce-bde3-55a04b8e9465.png",
+      "sourceSha256": "fed7dca4e45fe68640c465d1ac0f0fb6f9ae99003341a2d6fb7992f944d85ec6",
+      "references": [
+        {
+          "path": "public/art/equipment-atlas.jpg",
+          "sha256": "167a20e1efbcc80763cc9ae5473c38a238eb1ea24b2cbf19e7bb4b3753de448f"
+        }
+      ],
+      "promptSummary": "One single object study, large and crisply detailed, centered on charcoal felt. Entire object visible with margin, no cropping, no hands or additional items. Preserve the supplied atlas object's materials, proportions and distinctive silhouette. One folded aged thermal-paper service diagram with abstract fine lines, no readable labels or precise private address; match third row first object.",
+      "deliveryProcessing": "Resize and JPEG encode only; native 1536 by 1024 generated master retained outside Git.",
+      "files": [
+        {
+          "path": "public/art/item-layout-scrap.jpg",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 427217,
+          "sha256": "535af706376d1c12140e38d4aeff5f715623ff5437bcc55810993069a338fea9"
+        },
+        {
+          "path": "public/art/item-layout-scrap-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 63583,
+          "sha256": "d588afbb4dc989731a597553a917495a3172b28c4d389b497c9bf2de336e4cfa"
+        }
+      ]
+    },
+    {
+      "id": "item-spoof-chip",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-c4d32018-3385-424b-8ad7-d256a849e10c.png",
+      "sourceSha256": "5c597a83d57ad0adc597aaa769442ea14ef849991831ae615b4c82ae6d49d187",
+      "references": [
+        {
+          "path": "public/art/equipment-atlas.jpg",
+          "sha256": "167a20e1efbcc80763cc9ae5473c38a238eb1ea24b2cbf19e7bb4b3753de448f"
+        }
+      ],
+      "promptSummary": "One single object study, large and crisply detailed, centered on charcoal felt. Entire object visible with margin, no cropping, no hands or additional items. Preserve the supplied atlas object's materials, proportions and distinctive silhouette. A small dark ceramic chip with four exposed aged copper contacts; match third row second object. No new lights or readable text.",
+      "deliveryProcessing": "Resize and JPEG encode only; native 1536 by 1024 generated master retained outside Git.",
+      "files": [
+        {
+          "path": "public/art/item-spoof-chip.jpg",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 455164,
+          "sha256": "278aa7703105a2c7e10242ac16a58cbe51255508b6c44782a64112eefc2f351d"
+        },
+        {
+          "path": "public/art/item-spoof-chip-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 58475,
+          "sha256": "68537070f5b3e7791b55e0a7b76260b560f2a2718e52485b8de5f4919aa27bc0"
+        }
+      ]
+    },
+    {
+      "id": "item-mono-knife",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-b3ff7945-10b7-4ede-9d84-ff093012476d.png",
+      "sourceSha256": "8f7b2c1a12d18426e0827d954ba9e7b7b73117c406b5a3c30ef39d932c7013ef",
+      "references": [
+        {
+          "path": "public/art/equipment-atlas.jpg",
+          "sha256": "167a20e1efbcc80763cc9ae5473c38a238eb1ea24b2cbf19e7bb4b3753de448f"
+        }
+      ],
+      "promptSummary": "One single object study, large and crisply detailed, centered on charcoal felt. Entire object visible with margin, no cropping, no hands or additional items. Preserve the supplied atlas object's materials, proportions and distinctive silhouette. A small worn utility knife with a narrow exposed metal blade and dark aged copper handle; match third row third object. No blood, violence, hands or readable stamp.",
+      "deliveryProcessing": "Resize and JPEG encode only; native 1536 by 1024 generated master retained outside Git.",
+      "files": [
+        {
+          "path": "public/art/item-mono-knife.jpg",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 374700,
+          "sha256": "828b2d35c73e7f6b804f725c75fd19f3f0241f9f4968f6dbf7185b2147c4e88c"
+        },
+        {
+          "path": "public/art/item-mono-knife-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 44708,
+          "sha256": "64754766aa0dc5c925b389fc4d3353a78387fcb4e2e942689c328f93747a48f1"
+        }
+      ]
+    },
+    {
+      "id": "item-sedative",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-e28b504d-c96a-4725-ab7b-c2ddb0d61fb7.png",
+      "sourceSha256": "1f5c835d8b901f241bdeffa373932a57cff737085d19c590be4988572b48c3d3",
+      "references": [
+        {
+          "path": "public/art/equipment-atlas.jpg",
+          "sha256": "167a20e1efbcc80763cc9ae5473c38a238eb1ea24b2cbf19e7bb4b3753de448f"
+        }
+      ],
+      "promptSummary": "One single object study, large and crisply detailed, centered on charcoal felt. Entire object visible with margin, no cropping, no hands or additional items. Preserve the supplied atlas object's materials, proportions and distinctive silhouette. A single sealed amber medicine vial with worn brass cap and no readable label; match third row fourth object. No syringe, dosage, hands or treatment.",
+      "deliveryProcessing": "Resize and JPEG encode only; native 1536 by 1024 generated master retained outside Git.",
+      "files": [
+        {
+          "path": "public/art/item-sedative.jpg",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 371143,
+          "sha256": "4b00fbed1a7dc2c6d55df9b8c8db99aba48e15acba51f7d585175f13ee96845d"
+        },
+        {
+          "path": "public/art/item-sedative-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 47612,
+          "sha256": "f95e21ff50322e61c0326e56d55e89821350a02cc24a8d592cbe5769dbf40ef9"
+        }
+      ]
+    },
+    {
+      "id": "item-clinic-marker",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-b1ff6dcd-2c0d-4db5-ab5b-3f160afb1209.png",
+      "sourceSha256": "670b5fb2639c3b99c84d903ae2dfd66ec49c2003ce8859e8f9b1670e4927cfaf",
+      "references": [
+        {
+          "path": "public/art/equipment-atlas.jpg",
+          "sha256": "167a20e1efbcc80763cc9ae5473c38a238eb1ea24b2cbf19e7bb4b3753de448f"
+        }
+      ],
+      "promptSummary": "One single object study, large and crisply detailed, centered on charcoal felt. Entire object visible with margin, no cropping, no hands or additional items. Preserve the supplied atlas object's materials, proportions and distinctive silhouette. A pale frosted-glass debt token in a copper rim; match bottom row second object. No legible engraving, identity, redemption indicator or outcome.",
+      "deliveryProcessing": "Resize and JPEG encode only; native 1536 by 1024 generated master retained outside Git.",
+      "files": [
+        {
+          "path": "public/art/item-clinic-marker.jpg",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 354992,
+          "sha256": "9a2eff2a0f495a00986a978b299686b5deb71fa34f3df9fc2e437f95c668545a"
+        },
+        {
+          "path": "public/art/item-clinic-marker-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 46189,
+          "sha256": "825fb4a1b67421f297a4360e1ca4f48bb53fda89dbcdd519be34e2820b084483"
+        }
+      ]
+    },
+    {
+      "id": "shelter-conversation",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-98921606-ed51-43b3-9ca3-016842a37ded.png",
+      "sourceSha256": "4a4a9e84f4b3c5edcb147fa416f41526e17acbc181ac0c77fcf3bf8d6adcf817",
+      "references": [
+        {
+          "path": "public/art/sera.jpg",
+          "sha256": "357cfe3e403cfc57140977271a62264157640a0c640da9bbd5272e39516b39cf"
+        },
+        {
+          "path": "public/art/ren-portrait.jpg",
+          "sha256": "1ad4f23925cc6159462c2ad51fe01bcda6517251b78c211536dc623c892b9a33"
+        },
+        {
+          "path": "public/art/shelter.jpg",
+          "sha256": "682b53e06fcd9edd9f4092059fb109dd4750244447338b0530605057d6672916"
+        }
+      ],
+      "promptSummary": "Exactly two established characters on Ward Four shelter stair: Sera from first portrait in worn teal hood, crouching to catch a bucket beneath a visibly leaking coolant valve; Ren from second portrait in worn ochre raincoat, setting an ordinary kettle on a DRY step beside a passable ramp. Preserve their faces, ages and identities. Match third reference venue. No repair collar, tools used successfully, allocated room, new bed, witness, eviction, agreement gesture or completed evacuation. Two concerned neighbors talking BEFORE the player agrees to help. Clear readable faces and silhouettes, full heads and hands in frame. Rain-blue and copper lamps, human-scale architecture.",
+      "deliveryProcessing": "Resize and JPEG encode only; native 1536 by 1024 generated master retained outside Git.",
+      "files": [
+        {
+          "path": "public/art/shelter-conversation.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 342206,
+          "sha256": "8c2240b2bd432d6df7960916b14180181da54deb89f330254f2e267fbecb377d"
+        },
+        {
+          "path": "public/art/shelter-conversation-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 97339,
+          "sha256": "66d6955d79bdf7522e7af5c5114747d85ae998029e714bea36a506fad1002c94"
+        }
+      ]
+    },
+    {
+      "id": "edda-service-review",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-4f784851-1ba3-480e-9b61-db0a0c8eac22.png",
+      "sourceSha256": "cba525d6a5a79a2d08c2f1acc041b515539aad330955f3263d4493f96a7be335",
+      "references": [
+        {
+          "path": "public/art/edda.jpg",
+          "sha256": "6af115f70e05fbf24b71e7dedf74885e774dba1ac75f5d1689f1b66ee4931223"
+        },
+        {
+          "path": "public/art/spire-counter.jpg",
+          "sha256": "57242dd57d1e0f8185c9bef6e59ba6cb710229ea5075efc79fa3bfd578b4993a"
+        }
+      ],
+      "promptSummary": "Edda from first reference, same middle-aged face, short salt-and-pepper hair, rectangular glasses, worn brown technical coat, stands at the Helion service counter from second reference. She keeps her thumb over the corner of a billing slip, hiding the current account number. A second ordinary service card and a small closed brown paper receiver sleeve lie SEPARATELY on the counter. These are the three objects for review, not new discovered evidence. No receiver removed from sleeve, no handover, terminal query, seal, approved receipt, readable marks, authenticated key or completed closure. Her hands stay natural. Serious attentive expression. Landscape detail composition, face and three separate paper objects all readable in silhouette, no legible writing.",
+      "deliveryProcessing": "Resize and JPEG encode only; native 1536 by 1024 generated master retained outside Git.",
+      "files": [
+        {
+          "path": "public/art/edda-service-review.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 282719,
+          "sha256": "41a09af9feb8bcedb7449dd2567a189004d727f6c46c58a79c525ace19591462"
+        },
+        {
+          "path": "public/art/edda-service-review-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 81366,
+          "sha256": "f423fddf674de28bef3277f25ad55383209d588b9050a114fab7ea30225020e7"
+        }
+      ]
+    },
+    {
+      "id": "lumen-cup",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-18",
+      "sourceFile": "/workspace/generated_images/exec-9881412f-7a50-4596-98a0-a633608cf891.png",
+      "sourceSha256": "eb84e7a009e3dab8e27652852006865c610800178fc92fe61a838965b0f01991",
+      "references": [
+        {
+          "path": "public/art/lumen.jpg",
+          "sha256": "88cc611cc0cafbbd9cac910b4fdf454cb24fd1d4a8dc6ea6ba9f2822f890668e"
+        },
+        {
+          "path": "public/art/clinic-conversation.jpg",
+          "sha256": "afe2cc73b2ff497b3f5d1416136b2fce339afef131ba9b0396dc5c4da68190bf"
+        }
+      ],
+      "promptSummary": "Sister Lumen from first portrait, same bald face, black coat and clerical collar, established MAGENTA cybernetic optic preserved. She is alone in the clinic side room from second reference, standing beside the ordinary table and spare chair turned toward the rain-streaked window. She lifts a small worn ceramic cup just above the table with one hand while wiping the ring underneath with a plain cloth in the other, a quiet routine gesture. Not smiling, not signing anything, no statement, envelope, recorder, machine, medical treatment or permission. Cup belongs to Mara but Mara is not pictured. Care without endorsement; intimate landscape composition, complete head and hands visible, copper lamp and muted rainy blue.",
+      "deliveryProcessing": "Resize and JPEG encode only; native 1536 by 1024 generated master retained outside Git.",
+      "files": [
+        {
+          "path": "public/art/lumen-cup.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 295431,
+          "sha256": "13781d929ac7df95c5f2f053e98d569b5c50943678f8f1e4d9d2b3a20461bcd0"
+        },
+        {
+          "path": "public/art/lumen-cup-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 77634,
+          "sha256": "c819c3e650d1a3b9237827daba5d0ac43151b9e533059dcc5c1fd62d5ca29b20"
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "sceneId": "act2_shelter_brief",
+      "id": "shelter-conversation",
+      "reason": "Sera and Ren are both named and quoted here, before repair or room allocation. Keep the leaking valve, bucket, kettle and accessible ramp; do not reuse after a completed repair or for a refused/moved household."
+    },
+    {
+      "sceneId": "act2_spire_sources",
+      "id": "edda-service-review",
+      "reason": "Edda covers her current account number while three source objects await inspection. No submitted query, completed closure, handover or historical authentication is depicted; all inspection counts retain their own text."
+    },
+    {
+      "sceneId": "act2_lumen_quiet",
+      "id": "lumen-cup",
+      "reason": "Lumen lifts Mara\u2019s cup to wipe beneath it in this exact room. Ordinary care establishes no endorsement, quotation permission or forgiveness; guarded portrait staging remains authoritative when trust was broken."
+    }
+  ],
+  "voiceDecision": "No new scene, spoken words, actor, quotation binding or audio performance. Existing automatic/manual playback, whole-scene reading and actual-speaker portrait staging remain authoritative.",
+  "equipmentDecision": "All fourteen owned item ids and the ash-only shard variant now have individual inspections. Atlas thumbnails and mechanics remain unchanged; inspection assets mount only after the viewer opens."
+}

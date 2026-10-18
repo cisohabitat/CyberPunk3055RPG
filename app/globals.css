@@ -1334,3 +1334,29 @@ html[data-text="2"] .scene-row[data-compact="true"] .portrait-frame figcaption {
 .resource-change { display: inline-block; font: 600 .72rem/1.3 var(--font-body), sans-serif; letter-spacing: 0; padding: .06rem .25rem; border: 1px solid currentColor; vertical-align: middle; white-space: nowrap; color: var(--cyan); }
 .resource-change[data-change="decrease"] { color: var(--amber); }
 .faction-value { white-space: nowrap; }
+
+/* The decoded detail replaces a tiny version of the same painting without moving text. */
+.progressive-art { display: block; width: 100%; aspect-ratio: 3 / 2; background: #09080d center / contain no-repeat; }
+.progressive-art > img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: contain; opacity: 0; transition: opacity 180ms ease-out; }
+.progressive-art[data-ready="true"] > img { opacity: 1; }
+.district-label { min-width: 0; }
+.district-label > .ui-symbol { color: var(--cyan); }
+@media (max-width: 700px) {
+  .map-heading { align-items: center; flex-wrap: nowrap; gap: .5rem; }
+  .map-heading .eyebrow { display: none; }
+  .map-heading h2 { font-size: 1rem; }
+  .map-heading button { flex: none; padding-inline: .5rem; font-size: .72rem; }
+  .map-position { font-size: .9rem; margin-block: .65rem; }
+  .map-help { font-size: .85rem; line-height: 1.4; margin-block: .5rem; }
+  .district-nodes { padding: .55rem; gap: .55rem; }
+  .district-nodes > li { display: grid; grid-template-columns: minmax(0,1fr); padding: .65rem; align-items: center; gap: .4rem .6rem; }
+  .district-nodes > li:has(.map-landmark) { grid-template-columns: 72px minmax(0,1fr); }
+  .district-nodes .map-landmark { width: 72px; height: 48px; margin: 0; }
+  .district-nodes h3 { display: inline; margin-left: .25rem; font-size: .9rem; }
+  .district-status { margin-top: .2rem; font-size: .75rem; }
+  .district-nodes .map-connections { grid-column: 1 / -1; margin-top: .15rem; }
+  .district-nodes button { font-size: .8rem; }
+  html[data-text="2"] .district-nodes > li:has(.map-landmark) { grid-template-columns: 48px minmax(0,1fr); }
+  html[data-text="2"] .district-nodes .map-landmark { width: 48px; height: 32px; }
+}
+@media (prefers-reduced-motion: reduce) { .progressive-art > img { transition: none; } }

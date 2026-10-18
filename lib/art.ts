@@ -20,6 +20,7 @@ const PAINTED_ACTORS: Record<string, readonly string[]> = {
   "/art/edda-archive.jpg": ["Edda"], "/art/sera-hearing.jpg": ["Sera"],
   "/art/nia-transfer.jpg": ["Nia Pell"], "/art/asa-dispatch.jpg": ["Asa"], "/art/ives-hearing.jpg": ["Ives"],
   "/art/attendant-confrontation.jpg": ["Masked attendant"],
+  "/art/shelter-conversation.jpg": ["Sera", "Ren"], "/art/edda-service-review.jpg": ["Edda"], "/art/lumen-cup.jpg": ["Sister Lumen"],
   "/art/chapel-shared.jpg": ["Mara", "Sister Lumen"], "/art/wall-shared.jpg": ["Sera", "Ives"],
 };
 export function paintedActor(art: Illustration | undefined, speaker: string | undefined): boolean {
@@ -281,3 +282,8 @@ ENCOUNTERS.act2_route_recovery = {
   "caption": "Canal depot \u00b7 the case stays held",
   "description": "A closed canvas-covered case rests on a worn shelf beneath an amber lamp beside the shut depot service shutter; a second shelf is empty."
 };
+
+// Literal pre-decision conversations, each reviewed against its complete authored prose.
+ENCOUNTERS.act2_shelter_brief = { src: "/art/shelter-conversation.jpg", small: "/art/shelter-conversation-small.jpg", caption: "Ward Four · before the repair", description: "Sera catches a bucket under the leaking shelter valve while Ren sets a kettle on a dry step beside the ramp. The repair and resident beds remain undecided." };
+ENCOUNTERS.act2_spire_sources = { src: "/art/edda-service-review.jpg", small: "/art/edda-service-review-small.jpg", caption: "Helion · three things to read", description: "Edda covers the current account number on a slip beside a separate service card and closed receiver sleeve. No query, handover or completed closure is shown." };
+ENCOUNTERS.act2_lumen_quiet = { src: "/art/lumen-cup.jpg", small: "/art/lumen-cup-small.jpg", caption: "Ward Four · the ring beneath the cup", description: "Lumen lifts Mara’s cup to wipe its ring from the clinic table beside the spare chair and rainy window, her magenta optic lit. No signature or endorsement is shown." };

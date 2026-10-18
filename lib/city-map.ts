@@ -44,3 +44,9 @@ export const MAP_LANDMARKS = {
   "clinic-service": { src: "/art/clinic-relay-small.jpg", description: "A clinic service relay and closed routing papers." },
   "ward-nine": { src: "/art/memorial-stair-small.jpg", description: "The rain-worn memorial stair, without readable identities." },
 } as const;
+
+/** Presentation priority only; canonical discovery and choice order stay untouched. */
+export function mapDisplayRows(state: GameState) {
+  const priority = (row: ReturnType<typeof cityMap>[number]) => row.current ? 0 : row.choices.length ? 1 : 2;
+  return cityMap(state).toSorted((a, b) => priority(a) - priority(b));
+}

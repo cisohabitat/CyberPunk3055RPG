@@ -3,6 +3,7 @@
 import { createContext, useContext, useId, useRef, useState } from "react";
 import type { ViewableArt } from "@/lib/art";
 export type { ViewableArt } from "@/lib/art";
+import { ProgressiveArtwork } from "./ProgressiveArtwork";
 import { DialogFrame } from "./DialogFrame";
 
 export const ArtworkContext = createContext<((art: ViewableArt) => void) | undefined>(undefined);
@@ -15,7 +16,7 @@ export function ArtworkImage({ art, onError, thumbnail = false }: { art: Viewabl
       loading={thumbnail ? "lazy" : "eager"} decoding="async" onError={onError}
       style={{ left: `${-(art.tile % 4) * 100}%`, top: `${-Math.floor(art.tile / 4) * 100}%` }} />
   </span>;
-  return <img src={art.src} alt={art.description} width={1200} height={800} decoding="async" onError={onError} />;
+  return <ProgressiveArtwork key={art.src} art={art} onError={onError} />;
 }
 
 export function ArtworkViewer({ art, onClose }: { art: ViewableArt; onClose: () => void }) {

@@ -25,7 +25,11 @@ export function inventoryThumbnailArt(id: string, damaged = false): ViewableArt 
     tile: ash ? 14 : item.tile, description: ash ? "A chipped and cracked glass memory sliver with a dim uneven cyan edge." : item.description };
 }
 
-const DETAILS: Record<string, string> = { shard: "item-shard", "archive-probe": "item-archive-probe", "witness-token": "item-witness-token" };
+const DETAILS: Record<string, string> = { shard: "item-shard", "archive-probe": "item-archive-probe", "witness-token": "item-witness-token",
+  "chair-harness": "item-chair-harness", "desk-guide": "item-desk-guide", "route-shroud": "item-route-shroud",
+  "signal-baffle": "item-signal-baffle", "burner-route": "item-burner-route", "counterfeit-pass": "item-counterfeit-pass",
+  "layout-scrap": "item-layout-scrap", "spoof-chip": "item-spoof-chip", "mono-knife": "item-mono-knife",
+  sedative: "item-sedative", "clinic-marker": "item-clinic-marker" };
 /** Keep the compact atlas for Gear; load individual paintings only on inspection. */
 export function inventoryArt(id: string, damaged = false): ViewableArt | undefined {
   const thumbnail = inventoryThumbnailArt(id, damaged);

@@ -26,7 +26,7 @@ it("loads dedicated inspection paintings for key equipment while retaining every
   }
   assert.notEqual(inventoryArt("shard")?.src, inventoryArt("shard", true)?.src);
   for (const id of ["__proto__", "constructor", "missing"]) assert.equal(inventoryArt(id), undefined);
-  assert.equal(inventoryArt("mono-knife")?.tile, 10);
+  assert.equal(inventoryThumbnailArt("mono-knife")?.tile, 10);
 });
 it("adds landmarks only to the already-known place registry without adding positions or future destinations", () => {
   for (const row of cityMap(base)) assert.ok(Object.hasOwn(MAP_LANDMARKS, row.id));
