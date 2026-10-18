@@ -146,3 +146,5 @@ The subsequent visual direction cycle adds original interface SVG paths and CSS 
 ### Approved title branding (18 October 2026)
 
 Two `image_gen.imagegen` masters implement the approved broken-halo/cyan-shard concept: a transparent silver SAINT SHARD wordmark and a portrait recomposition of the existing symbolic title painting. The original title and approved desktop concept are explicit references. Four local WebP/JPEG deliveries use resizing/encoding only; native PNG masters remain outside Git. `qa/media/title-branding.json` records generation, reference/delivery hashes, anatomical review and limits; global art provenance and the offline audition include both assets. Branding implies no starting inventory or gameplay outcome. Existing dialogue, voices and music remain unchanged.
+
+The check die uses original local SVG facet geometry and CSS shading/tumble, authored as interface code. It introduces no external texture, generated painting or new audio; existing dice ticks and outcome cues retain their credited sources.

@@ -10,6 +10,7 @@ import { visibleCheckDialogue, spokenDialogueRange, type CampaignDialogue } from
 import { VoiceLine } from "./VoiceLine";
 import { SpokenText } from "./SpokenText";
 import { Symbol } from "./Symbol";
+import { CheckDie } from "./CheckDie";
 import type { CheckResult, Choice, GameState } from "@/lib/types";
 
 export function CheckDialog({
@@ -109,13 +110,16 @@ export function CheckDialog({
           </li>
         ))}
       </ul>
-      {display !== null && rolling && (
-        <div className="die plate">{display}</div>
+      {rolling && (
+        <div className="dice-roll-stage" data-testid="dice-roll-stage">
+          <CheckDie value={display} rolling reducedMotion={reducedMotion} />
+          <div><p className="dice-roll-label" role="status">Rolling 1d10</p><p className="check-target">Against DC {preview.dc}</p></div>
+        </div>
       )}
       {result && !rolling && (
         <div className="check-result" data-outcome={result.success ? "success" : "miss"} aria-live="polite">
           <div className="check-score">
-            <div className={result.success ? "die plate good" : "die plate bad"}>{result.roll}</div>
+            <CheckDie value={result.roll} success={result.success} critical={result.crit} reducedMotion={reducedMotion} />
             <div><p className="total">
             <span>
               {result.roll} + {result.bonus} = {result.total}

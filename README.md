@@ -806,3 +806,7 @@ Portraits and paintings share a quieter matte/frame finish. Fourteen older portr
 ## Start-page identity
 
 The start page now uses the approved silver Saint Shard wordmark, a broken halo and cyan memory shard. Desktop keeps the original city painting; tablet and phone receive a portrait composition with the same symbolic runner and city. Real menu controls retain Continue, New run, Field guide, Saves and Settings, plus the existing theme playback controls. Artwork-off mode fetches no logo or background; missing branding and high-contrast/forced-color modes retain a readable text title. See [the title branding record](docs/TITLE_BRANDING.md).
+
+## Faceted dice presentation
+
+Checks now show a shaded geometric die with a brief tumble during the existing roll, a clearly readable final face and restrained success/miss accents. Saved and system reduced-motion settings reveal the result immediately. A restored die stays still and keeps its recorded face; Continue still commits the outcome. The die is drawn locally without additional artwork/audio downloads. See [the dice presentation record](docs/DICE_PRESENTATION.md).

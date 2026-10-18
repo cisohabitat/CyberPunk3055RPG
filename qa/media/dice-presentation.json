@@ -1,0 +1,227 @@
+{
+  "version": 1,
+  "date": "2026-10-18",
+  "baseRevision": "421dfc5252955f6754ff96890d6abe5bbc49c6d7",
+  "candidateDirty": true,
+  "scope": "Local SVG faceted check die, one existing-duration roll-only tumble and written rolling status; no new scene or media delivery.",
+  "sourceHashes": {
+    "components/CheckDie.tsx": "dd49590851f9f5b7382c1bb6713eb6a473a7c28e12b9e0ddcec21be7284a03e0",
+    "components/CheckDialog.tsx": "98b0b922e56ed3844ec81a638a9ff991a85917bef7fe2834c78a7fe41582d483",
+    "app/globals.css": "26d85404b2670e086bca6286421ac502564d37209bf8b223e4234f3e8a8e14d4",
+    "tests/dice-presentation.spec.ts": "136c8bd50841bac0827aed6a73e9be544912d71e98f01cb42cbd9bfc9a0c3c07"
+  },
+  "canonicalHashes": {
+    "lib/engine.ts": "a150e5b9393c65398f8e326b9ee3e768f11699788fa5290a0f308361a4420458",
+    "lib/storage.ts": "bd36dbfb55f910e17c67206de416c7756e7e07e38ef56dd7c3c698c2cd603713",
+    "qa/media/campaign-dialogue-bindings.json": "15ae8b35c16b330b545f001e23dc75b5f4bd131225347f616ab76c1b7088f0bd",
+    "qa/media/art-provenance.json": "6ae74bd1780dea1799066a98cf69ffcbe6f9c84ef16811dc104334e98ba61623"
+  },
+  "sourceTests": {
+    "passed": 660,
+    "failed": 0,
+    "log": "/tmp/dice-presentation-source.log"
+  },
+  "build": {
+    "passed": true,
+    "log": "/tmp/dice-presentation-build.log"
+  },
+  "typescript": {
+    "passed": true,
+    "log": "/tmp/dice-presentation-tsc.log"
+  },
+  "security": {
+    "knownVulnerabilities": 0,
+    "log": "/tmp/dice-presentation-security.log"
+  },
+  "browsers": {
+    "passed": 50,
+    "failed": 0,
+    "projects": [
+      "chromium",
+      "phone"
+    ],
+    "files": [
+      "dice-presentation.spec.ts",
+      "reading-flow.spec.ts",
+      "check-dialogue.spec.ts"
+    ],
+    "log": "/tmp/dice-presentation-browser.log"
+  },
+  "production": {
+    "output": "qa/production/reports",
+    "scenes": 197,
+    "choices": 598,
+    "routes": 148,
+    "coveredScenes": 182,
+    "coveredChoices": 432,
+    "assets": 707,
+    "budgetViolations": [],
+    "commercialAcceptanceReady": false,
+    "pendingGates": 6
+  },
+  "firstVisit": {
+    "revision": "421dfc5252955f6754ff96890d6abe5bbc49c6d7",
+    "dirty": true,
+    "initialTransferBudget": 2097152,
+    "autoplayPolicy": "Full Chromium; first visit requires document activation, with no prior origin permission.",
+    "samples": [
+      {
+        "sceneId": "opening_city",
+        "width": 390,
+        "height": 844,
+        "artwork": "full",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 2293,
+        "network": "Emulated 5 Mbps / 150 ms",
+        "elapsedToReadyMs": 4400,
+        "encodedResourceBytes": 1740433,
+        "htmlBytes": 2334,
+        "titleLcpMs": 1500,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 5,
+        "goalVisible": true
+      },
+      {
+        "sceneId": "opening_city",
+        "width": 390,
+        "height": 844,
+        "artwork": "none",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 2756,
+        "network": "Emulated 5 Mbps / 150 ms",
+        "elapsedToReadyMs": 2824,
+        "encodedResourceBytes": 444972,
+        "htmlBytes": 2334,
+        "titleLcpMs": 1276,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 0,
+        "goalVisible": true
+      },
+      {
+        "sceneId": "opening_city",
+        "width": 1440,
+        "height": 900,
+        "artwork": "full",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 1736,
+        "network": "Unthrottled automation host",
+        "elapsedToReadyMs": 1970,
+        "encodedResourceBytes": 2060946,
+        "htmlBytes": 2334,
+        "titleLcpMs": 564,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 5,
+        "goalVisible": true
+      },
+      {
+        "sceneId": "opening_city",
+        "width": 1440,
+        "height": 900,
+        "artwork": "none",
+        "firstVisitActivation": false,
+        "firstVisitAudioState": "suspended",
+        "goalReadyMs": 1536,
+        "network": "Unthrottled automation host",
+        "elapsedToReadyMs": 1657,
+        "encodedResourceBytes": 1109689,
+        "htmlBytes": 2334,
+        "titleLcpMs": 352,
+        "layoutShift": 0,
+        "overflow": false,
+        "artworkRequests": 0,
+        "goalVisible": true
+      }
+    ],
+    "limitations": [
+      "Four synthetic samples on the automation host, not p75/p95 field data or named physical devices.",
+      "Elapsed-to-ready includes automated form entry and network-idle waits; it is not LCP or INP.",
+      "titleLcpMs measures this navigation's title screen. Encoded resource bytes are Resource Timing measurements, not all wire overhead.",
+      "A previously permitted visit can autoplay the separate 2.6 MB menu theme before gameplay; these samples measure the first-visit activation policy."
+    ]
+  },
+  "visualSamples": [
+    {
+      "width": 1440,
+      "roll": 1,
+      "path": "/tmp/dice-presentation-1440-1.png",
+      "detail": "/tmp/dice-presentation-score-1440-1.png",
+      "errors": [],
+      "face": "1",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "roll": 10,
+      "path": "/tmp/dice-presentation-1440-10.png",
+      "detail": "/tmp/dice-presentation-score-1440-10.png",
+      "errors": [],
+      "face": "10",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "roll": 1,
+      "path": "/tmp/dice-presentation-768-1.png",
+      "detail": "/tmp/dice-presentation-score-768-1.png",
+      "errors": [],
+      "face": "1",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "roll": 10,
+      "path": "/tmp/dice-presentation-768-10.png",
+      "detail": "/tmp/dice-presentation-score-768-10.png",
+      "errors": [],
+      "face": "10",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "roll": 1,
+      "path": "/tmp/dice-presentation-390-1.png",
+      "detail": "/tmp/dice-presentation-score-390-1.png",
+      "errors": [],
+      "face": "1",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "roll": 10,
+      "path": "/tmp/dice-presentation-390-10.png",
+      "detail": "/tmp/dice-presentation-score-390-10.png",
+      "errors": [],
+      "face": "10",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "roll": 1,
+      "path": "/tmp/dice-presentation-320-1.png",
+      "detail": "/tmp/dice-presentation-score-320-1.png",
+      "errors": [],
+      "face": "1",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "roll": 10,
+      "path": "/tmp/dice-presentation-320-10.png",
+      "detail": "/tmp/dice-presentation-score-320-10.png",
+      "errors": [],
+      "face": "10",
+      "overflow": false
+    }
+  ],
+  "review": "Inspected actual desktop result, phone score and enlarged narrow result; numeral/total/outcome remain readable, no overflow. SVG facets are stylized interface geometry, not a simulated physical die.",
+  "limits": [
+    "AI/synthetic checks, not physical-device or independent acceptance.",
+    "Full existing four-profile hosted CI remains required; pushing alone does not establish production deployment."
+  ]
+}
