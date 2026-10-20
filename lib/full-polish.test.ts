@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
-import { createCharacter } from "./engine";
+import { commitChoice, createCharacter, getScene } from "./engine";
 import { kitComparison } from "./kit-comparison";
 import { characterConduct, relationshipAftermath } from "./relationships";
 import { finaleCommitments } from "./finale-commitments";
@@ -31,6 +31,15 @@ describe("build and consequence polish", () => {
     assert.match(characterConduct({ ...base, flags: { freight_late_received: true, freight_started: true, freight_done: true } }, "Asa")!, /no passenger clearance.*treatment remains unobserved/);
     const history = characterConduct({ ...base, flags: { nia_contact_paused: true, nia_contact_relay: true } }, "Nia Pell")!;
     assert.match(history, /pause further questions/); assert.doesNotMatch(history, /may relay a question/);
+  });
+  it("keeps an actual declined payroll request separate from a pending application", () => {
+    const state = { ...base, sceneId: "act3_edda_terms", flags: { archive_custody: true, edda_exposed: true } };
+    const declined = commitChoice(state, getScene(state.sceneId).choices.find(choice => choice.id === "decline-shift-request")!).state;
+    assert.equal(declined.flags.edda_shift_done, true);
+    for (const text of [characterConduct(declined, "Edda")!, relationshipAftermath(declined).find(row => row.title === "Edda’s source and working life")!.text]) {
+      assert.match(text, /declined a payroll application/);
+      assert.doesNotMatch(text, /signed work application remains pending|paid bench assignment/);
+    }
   });
   it("shows every earned commitment at each finale without completing an open promise", () => {
     for (const sceneId of ["ending_names", "ending_quiet", "ending_witness", "ending_listed"]) {

@@ -53,7 +53,8 @@ function eddaConduct(state: GameState): string | undefined {
   const exposed = state.flags.edda_exposed || state.flags.archive_method_face || state.flags.archive_method_nerve;
   return [state.flags.spire_started || state.flags.spire_declined ? spireOutcome(state) : "",
     state.flags.archive_custody ? exposed ? "The archive source remains inspectable; the named or signed extraction still identifies her work to her employer." : state.flags.edda_name_withheld ? "The source original remains in agreed custody; the circulating copy withholds her name." : "The source original remains in agreed custody; no new source-name permission is established here." : "",
-    state.flags.edda_shift_paid ? "She accepted one paid bench assignment. Archive access remains suspended and the records inquiry continues."
+    state.flags.edda_shift_declined ? "She declined a payroll application. The suspended shift and records inquiry remain unresolved."
+      : state.flags.edda_shift_paid ? "She accepted one paid bench assignment. Archive access remains suspended and the records inquiry continues."
       : state.flags.edda_representation ? "A representative booked a review appointment. It supplied no restored shift or inquiry decision."
       : state.flags.edda_shift_done ? "The signed work application remains pending; no paid assignment was recorded."
       : state.flags.edda_supported ? "You contributed forty creds to the suspended shift; the employment review remains unresolved." : "",

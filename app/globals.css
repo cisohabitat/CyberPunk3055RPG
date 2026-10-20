@@ -935,7 +935,7 @@ html[data-contrast="high"] .die-edges { opacity: 1; stroke-width: 2; }
 .packet-label strong { display: block; color: var(--cyan); }
 .transfer-brief { margin: 1rem 0; padding: .8rem 1rem; border: 1px solid var(--line); background: rgba(7, 26, 31, .7); }
 .transfer-brief p { margin: .25rem 0; font-size: .92rem; }
-.kit-training > summary { min-height: 2.75rem; padding: .65rem 0; cursor: pointer; overflow-wrap: anywhere; }
+.kit-training > summary, .kit-comparison > summary { min-height: 2.75rem; padding: .65rem 0; cursor: pointer; overflow-wrap: anywhere; }
 .transfer-brief strong { display: block; color: var(--cyan); font-family: var(--font-display), sans-serif; }
 .transfer-warning { color: var(--amber); }
 @media (max-width: 700px) {

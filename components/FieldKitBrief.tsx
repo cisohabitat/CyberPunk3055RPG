@@ -18,7 +18,7 @@ export function FieldKitBrief({ state }: { state: GameState }) {
             <summary>How the {kit.name} fits your training</summary>
             <p>{trainedKitAdvice(state, kit.stat)}</p>
           </details>}
-          {shopping && !state.items.includes(kit.id) && <details className="kit-training" data-testid={`kit-odds-${kit.id}`}>
+          {shopping && !state.items.includes(kit.id) && <details className="kit-comparison" data-testid={`kit-odds-${kit.id}`}>
             <summary>Compare current check odds</summary>
             <ul>{kitComparison(state, kit.id).map(row => <li key={row.label}>{row.label}: {row.before}% → {row.after}% with this kit.{row.before === row.after ? " No increase at current modifiers." : ""}</li>)}</ul>
             <p className="hint">Examples use your current stats and modifiers. Later preparation or attention can change these odds. Buying equipment grants no access or successful outcome.</p>

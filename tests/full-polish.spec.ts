@@ -16,6 +16,8 @@ test("workshop shows zero-benefit purchase odds without changing the runner", as
   const state = { ...createCharacter({ handle: "Review", givenName: "Jo", origin: "spire", bonus: { chrome: 2, nerve: 0, face: 0, ghost: 0 } }), sceneId: "act2_workshop", flags: { perk_chrome: true } };
   await open(page, state);
   const before = await page.evaluate(() => localStorage.getItem("saint-shard-3055-v1"));
+  await expect(page.locator(".kit-training")).toHaveCount(1);
+  await expect(page.locator(".kit-comparison")).toHaveCount(4);
   await page.getByTestId("kit-odds-archive-probe").locator("summary").click();
   await expect(page.getByTestId("kit-odds-archive-probe")).toContainText("100% → 100%");
   await expect(page.getByTestId("kit-odds-archive-probe")).toContainText("No increase at current modifiers");
