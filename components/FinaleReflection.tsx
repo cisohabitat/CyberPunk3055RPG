@@ -6,9 +6,11 @@ import { aftermath } from "@/lib/evidence";
 import { endingCoda } from "@/lib/story/codas";
 import { nightRetell } from "@/lib/story/retell";
 import { CampaignRecap } from "./CampaignRecap";
+import { finaleCommitments } from "@/lib/finale-commitments";
 
 export function FinaleReflection({ state, artwork = true }: { state: GameState; artwork?: boolean }) {
   const campaign = campaignCoda(state), personal = finalePersonalEcho(state);
+  const commitments = finaleCommitments(state);
   return <section className="finale-reflection" aria-label="After the wall" data-testid="finale-reflection">
     {(campaign || personal) && <section className="finale-carry" aria-labelledby="finale-carry-title">
       <h2 id="finale-carry-title">What you carry</h2>
@@ -17,6 +19,10 @@ export function FinaleReflection({ state, artwork = true }: { state: GameState; 
     </section>}
     <section className="aftermath" aria-label="What your choices changed">
       <h2>What remains</h2>
+      {commitments && <section className="finale-commitments" data-testid="finale-commitments" aria-label="Commitments at the ending">
+        <p>{commitments.complete} complete · {commitments.open} open · {commitments.unresolved} unresolved · {commitments.compromised} compromised</p>
+        <details><summary>Review every commitment and its limits</summary><ul>{commitments.rows.map(row => <li key={row.id}><strong>{row.title} · {row.status}</strong><p>{row.detail}</p></li>)}</ul></details>
+      </section>}
       <details data-testid="aftermath-details"><summary>Review the factual aftermath</summary>
         {aftermath(state).map(row => <section key={row.title}><h3>{row.title}</h3><p>{row.text}</p></section>)}
       </details>

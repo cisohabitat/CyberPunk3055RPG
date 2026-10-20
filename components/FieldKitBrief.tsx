@@ -1,5 +1,6 @@
 import { FIELD_KITS, equippedKits, fieldKitBudget, trainedKitAdvice } from "@/lib/loadout";
 import type { GameState } from "@/lib/types";
+import { kitComparison } from "@/lib/kit-comparison";
 
 export function FieldKitBrief({ state }: { state: GameState }) {
   const shopping = state.sceneId === "act2_workshop";
@@ -16,6 +17,11 @@ export function FieldKitBrief({ state }: { state: GameState }) {
           {shopping && trainedKitAdvice(state, kit.stat) && <details className="kit-training" data-testid={`training-advice-${kit.id}`}>
             <summary>How the {kit.name} fits your training</summary>
             <p>{trainedKitAdvice(state, kit.stat)}</p>
+          </details>}
+          {shopping && !state.items.includes(kit.id) && <details className="kit-training" data-testid={`kit-odds-${kit.id}`}>
+            <summary>Compare current check odds</summary>
+            <ul>{kitComparison(state, kit.id).map(row => <li key={row.label}>{row.label}: {row.before}% → {row.after}% with this kit.{row.before === row.after ? " No increase at current modifiers." : ""}</li>)}</ul>
+            <p className="hint">Examples use your current stats and modifiers. Later preparation or attention can change these odds. Buying equipment grants no access or successful outcome.</p>
           </details>}
           {shopping && <p className="kit-budget" data-testid={`budget-${kit.id}`}>
             {budget.affordable ? <><strong>After purchase: {budget.remaining} creds.</strong>{" "}

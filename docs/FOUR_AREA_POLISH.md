@@ -1,0 +1,25 @@
+# Four-area polish
+
+Baseline: 54822db9fc392acb3f69bb9978f43415ed3485b6. Requested scope: build balance, character consequences, ending payoff and mobile usability.
+
+The broad, matched-mission, campaign-economy and both overlap audits are rerun before making any balance change. Passing regression gates alone do not prove universal strategic balance. Purchase decisions receive canonical current-modifier odds comparisons, including no improvement at 100%, alongside existing training and care-cost guidance. Prices, dice, rewards and recovery remain intact unless an evidenced numerical defect warrants a separate change.
+
+Shared history previously omitted Edda, Asa, Ren, Sera and Ives, while Nia's contact pause was absent from her conduct summary. Add earned written records, and offer a collapsed reminder at explicit later visits. No line is put in an actor's mouth. Edda's observed temporary paid work or pending application now remains in the factual aftermath without claiming restored archive access, restored wages or a resolved inquiry.
+
+The archive commitment also previously displayed an Authenticate title with Complete status when any independent corroboration was obtained. Its title is now a source check, with separate authenticated-key versus corroboration-only detail. Endings keep their original prose, voices, paintings and personal echoes. The existing factual aftermath is supplemented by complete objective counts and an expandable list of every earned commitment and its limits. Compromised promises remain compromised; an ending cannot complete unfinished work.
+
+Mobile dialogs now fit the native visual viewport at scale 1, including reduced keyboard height and viewport offset. Pinch zoom removes the fit; native zoom, focus and story scrolling remain. Modal scroll containment and a plain touch backdrop reduce interference. Testing uses synthetic viewport events and browser input; physical iPhone behavior remains unconfirmed until the player retests.
+
+All additions are written interface information or styling. Existing scene/voice/art decisions remain suitable; no new scene, quotation or asset is required. Save version 2, saint-shard-3055-v1, 1d10/caps, held dice, four finales and all release gates remain.
+
+Verification:
+
+- All five balance checks pass: 19,200 broad campaigns; 384 matched mission scenarios with 13,821 weighted terminal branches; 43,200 campaign-economy, 14,400 clinic/witness and 25,920 distribution/witness campaigns. Total simulated campaigns: 102,720, with zero failures. Historical baselines were not regenerated. These checks retain numerical gameplay rather than inventing a nerf without evidence.
+- 680 source tests pass, including the original final-state/prose/voice contracts, the probability ceiling, no-mutation comparisons, privacy precedence, Edda's temporary work and source/authentication distinction. TypeScript and production build pass.
+- 90 unique Chromium/phone browser cases pass. The first 80 cover all four finales, new purchase/history/ending UI, reduced viewport, reading and story swipes, held dice, focus and malicious-save protections. A 16-case final mobile/audio run overlaps six of those cases and adds ten, including portrait/landscape, late-load cancellation, missing audio, natural completion and explicit replay. The twelve purchase/history/finale cases were rerun after the final source-label correction; these reruns are not added to the unique count.
+- The reduced-height reproduction fails on the baseline: its 320px simulated visual viewport leaves an 844px overlay. After correction the overlay fits 320px, its inner panel stays within the visible offset, its controls can be reached, and a scale-2 pinch removes the inline fit. This is native-browser geometry/input verification with synthetic viewport properties, not an actual iPhone keyboard test.
+- Two complete keyboard UI campaigns pass without page/media failures: Listed, 390px/full art/whole scene, 96 visits and 43 reloads; Quiet, 320px/text-only/paragraph pacing, 81 visits and 32 reloads. The four final actions also receive direct browser regression coverage.
+- Production reports retain 197 scenes, 598 choices, 148 routes and zero asset-budget violations. All existing voice/art bytes, scene prose, engine and save files remain unchanged. Thirteen active art rationales document the new written UI; no additional image or recording is needed.
+- Four fresh production load samples pass the existing 2,097,152-byte limit, with visible goals, no overflow and no observed layout shift. They are synthetic first-visit measurements, not field percentiles. Six independent commercial acceptance gates remain pending.
+
+[The committed aggregate](../qa/editorial/four-area-polish.json) records exact counts, tested source hashes and limitations. Raw synthetic logs, states and screenshots remain outside Git under /tmp/all-*. README and AGENTS are updated in the same change. Full hosted four-profile Test/Browser/Build checks and the exact-commit production gate remain mandatory.

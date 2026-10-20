@@ -1,6 +1,9 @@
 import { maraCompanyCoda, maraCompanyRecord } from "./mara-company";
 import { encounterRecords, noticePlanRecord } from "./campaign-consequences";
 import { routeOutcome } from "./route-planning";
+import { freightOutcome } from "./story/freight";
+import { shelterOutcome } from "./story/shelter";
+import { spireOutcome } from "./story/spire";
 import type { GameState } from "./types";
 
 export function characterConduct(state: GameState, name: string): string | undefined {
@@ -13,7 +16,12 @@ export function characterConduct(state: GameState, name: string): string | undef
     const past = state.flags.memory_model_corrected ? "You corrected the disputed interpretation; her signature remains." : state.flags.memory_model_contested || state.flags.memory_model_repeated ? "Your interpretation remains disputed." : state.flags.memory_assurance_heard || state.flags.memory_channel_heard ? "Her recorded answers are kept as attributed testimony." : state.flags.heard_memo ? "You heard her recorded authorization and explanation." : "";
     return [current, maraCompanyRecord(state), state.flags.response_public_refused ? "She refused public release of her new statement." : "", past].filter(Boolean).join(" ") || undefined;
   }
-  if (name === "Nia Pell") return [state.flags.visited_nia ? "You returned to hear her limits." : "", ...encounterRecords(state).filter(row => ["witness-shift", "witness-method"].includes(row.id)).map(row => row.detail), state.flags.witness_lost ? "Her earlier location exposure remains." : "", state.flags.nia_public_consent ? "She approved her words for the public account, separately." : "No public quotation permission is recorded."].filter(Boolean).join(" ");
+  if (name === "Nia Pell") return [state.flags.visited_nia ? "You returned to hear her limits." : "", state.flags.nia_contact_paused ? "You agreed to pause further questions; a relay does not reopen contact." : state.flags.nia_contact_relay ? "The clinic may relay a question; she chooses whether to answer." : "", ...encounterRecords(state).filter(row => ["witness-shift", "witness-method"].includes(row.id)).map(row => row.detail), state.flags.witness_lost ? "Her earlier location exposure remains." : "", state.flags.nia_public_consent ? "She approved her words for the public account, separately." : "No public quotation permission is recorded."].filter(Boolean).join(" ");
+  if (name === "Asa") return state.flags.freight_started || state.flags.freight_declined ? freightOutcome(state) : undefined;
+  if (name === "Edda") return eddaConduct(state);
+  if (name === "Ren") return state.flags.shelter_started || state.flags.shelter_declined ? shelterOutcome(state) : undefined;
+  if (name === "Sera") return [state.flags.shelter_started || state.flags.shelter_declined ? shelterOutcome(state) : "", state.flags.testimony_published ? "You filed the public account with its stated sources and limits; filing supplies no new evidence." : state.flags.testimony_withdrawn ? "You withdrew the draft; the hearing's listeners still heard it." : ""].filter(Boolean).join(" ") || undefined;
+  if (name === "Ives") return [state.flags.act2_deal ? "You accepted Helion's money for a week of silence." : state.flags.act2_exposed ? "Helion filed its version of your failed street declaration." : "", state.flags.archive_key_authenticated ? "The reader matched the issuing key; public source permissions remain separate." : "", state.flags.ives_took_list ? "You handed him the memorial page." : ""].filter(Boolean).join(" ") || undefined;
   if (name === "Sister Lumen") {
     const history = [...encounterRecords(state).filter(row => ["chapel-shift", "chapel-access"].includes(row.id)).map(row => row.detail), noticePlanRecord(state), state.flags.chapel_response_heard ? "You returned to hear her Chapel response." : "", state.flags.betrayed_lumen && !state.flags.response_started ? "Your earlier betrayal remains." : ""].filter(Boolean);
     if (!state.flags.response_started) return history.join(" ") || undefined;
@@ -28,6 +36,10 @@ export function characterConduct(state: GameState, name: string): string | undef
 }
 export function relationshipAftermath(state: GameState): { title: string; text: string }[] {
   const rows: { title: string; text: string }[] = [];
+  if (state.flags.archive_custody || state.flags.edda_shift_consent) {
+    const edda = eddaConduct(state);
+    if (edda) rows.push({ title: "Edda’s source and working life", text: edda });
+  }
   if (state.flags.response_started) rows.push({ title: "Mara’s present-day reply", text: `${state.flags.response_received ? "Her named private response was received into the records desk’s unanswered queue. There is no inquiry decision." : state.flags.response_sent ? "Her named private response was dispatched, but you did not return to record the desk’s receipt." : state.flags.response_declined ? "You declined before undertaking dispatch. The envelope remained with Mara." : "Her response was left pending; no dispatch or receipt was recorded."}${state.flags.response_public_refused ? " Her refusal of public release remains attached to the revised or unfinished proposal." : ""}${state.flags.response_clinic_refused ? " Lumen’s refusal of clinic endorsement remains attached." : ""} The reply does not clear Mara’s historical signature or authenticate an issuer.` });
   const company = maraCompanyRecord(state);
   if (company) rows.push({ title: "Mara’s chosen hour", text: company });
@@ -35,6 +47,17 @@ export function relationshipAftermath(state: GameState): { title: string; text: 
   if (state.flags.kerr_route_promised || state.flags.kerr_route_declined) rows.push({ title: "Kerr’s collection", text: `${routeOutcome(state)}${state.flags.kerr_route_acknowledged ? " You acknowledged the broken terms. He permits one future question through the stall, not a new job or automatic forgiveness." : state.flags.kerr_route_denied ? " You denied the disclosure despite the recipient register; he closed future contact through you." : state.flags.kerr_route_visit ? " He acknowledged your visit. He made no promise of another contract." : " You did not return to hear his response."}${state.flags.kerr_question_done ? " He told you about the walk he hopes for; it is not an observed treatment result." : ""}${state.flags.kerr_sold_you ? " His earlier sale of your account to Helion remains recorded." : ""}` });
   if (state.flags.kerr_route_intro || state.flags.quill_repaid_late) rows.push({ title: "Quill’s introduction", text: `${state.flags.quill_repaid_late ? "You repaid forty creds after postponing the tab. Both actions remain recorded. " : ""}${state.flags.kerr_route_intro ? "His introduction was available only for the depot negotiation, not every skill check. " : ""}${state.flags.quill_route_visit ? "You returned to discuss what his recommendation actually bought." : "You did not return to discuss his recommendation."}` });
   return rows;
+}
+
+function eddaConduct(state: GameState): string | undefined {
+  const exposed = state.flags.edda_exposed || state.flags.archive_method_face || state.flags.archive_method_nerve;
+  return [state.flags.spire_started || state.flags.spire_declined ? spireOutcome(state) : "",
+    state.flags.archive_custody ? exposed ? "The archive source remains inspectable; the named or signed extraction still identifies her work to her employer." : state.flags.edda_name_withheld ? "The source original remains in agreed custody; the circulating copy withholds her name." : "The source original remains in agreed custody; no new source-name permission is established here." : "",
+    state.flags.edda_shift_paid ? "She accepted one paid bench assignment. Archive access remains suspended and the records inquiry continues."
+      : state.flags.edda_representation ? "A representative booked a review appointment. It supplied no restored shift or inquiry decision."
+      : state.flags.edda_shift_done ? "The signed work application remains pending; no paid assignment was recorded."
+      : state.flags.edda_supported ? "You contributed forty creds to the suspended shift; the employment review remains unresolved." : "",
+  ].filter(Boolean).join(" ") || undefined;
 }
 
 export function relationshipCoda(state: GameState): string | undefined {

@@ -22,9 +22,24 @@ export function DialogFrame({
     if (!root) return;
     const opener = document.activeElement instanceof HTMLElement ? document.activeElement : null;
     root.showModal();
+    const viewport = window.visualViewport;
+    function fitViewport() {
+      if (!viewport || viewport.scale !== 1) {
+        root!.style.removeProperty("--dialog-viewport-height");
+        root!.style.removeProperty("top");
+        return;
+      }
+      root!.style.setProperty("--dialog-viewport-height", `${viewport.height}px`);
+      root!.style.top = `${viewport.offsetTop}px`;
+    }
+    fitViewport();
+    viewport?.addEventListener("resize", fitViewport);
+    viewport?.addEventListener("scroll", fitViewport, { passive: true });
     root.querySelector<HTMLElement>("[data-dialog-initial-focus]")?.focus({ preventScroll: true });
     if (!root.querySelector("button, input, select, textarea")) root.focus();
     return () => {
+      viewport?.removeEventListener("resize", fitViewport);
+      viewport?.removeEventListener("scroll", fitViewport);
       root.close();
       if (opener?.isConnected) opener.focus({ preventScroll: true });
       else document.getElementById("scene-top")?.focus({ preventScroll: true });

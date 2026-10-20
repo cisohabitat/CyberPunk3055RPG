@@ -55,3 +55,5 @@ The [touch-scrolling correction](TOUCH_SCROLLING.md) prevents preference changes
 The [20 October security follow-up](SECURITY_FOLLOWUP_2026_10_20.md) records import-selection protections, stricter CI check cohorts and current audit evidence.
 
 The [20 October campaign/media review](CAMPAIGN_MEDIA_REVIEW_2026_10_20.md) improves paused-plan returns, catalog pacing and written task direction while checking campaign art and voice continuity.
+
+The [four-area polish review](FOUR_AREA_POLISH.md) records build-choice comparisons, earned character history, ending commitments and mobile dialog behavior.

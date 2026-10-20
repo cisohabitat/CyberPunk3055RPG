@@ -840,3 +840,7 @@ Save imports now clear earlier confirmations and ignore file reads superseded by
 ### Campaign pacing and media continuity (20 October 2026)
 
 Paused depot plans now return to the saved crossing instead of repeating Ren's introduction. The archive keeps its full first briefing, then uses shorter narration while catalog descriptions and query history remain available. Written task directions now follow archive work, Nia's transfer and the public hearing; permission requests appear only when her terms allow them. Existing artwork and exact spoken wording remain matched. See [the campaign and media review](docs/CAMPAIGN_MEDIA_REVIEW_2026_10_20.md).
+
+### Build choices, character history, endings and mobile dialogs
+
+The workshop compares example check odds before and after each kit, including cases where current modifiers already reach 100%; existing care-budget and training trade-offs remain visible. Later character visits offer an optional shared-history reminder, and endings show all recorded commitment statuses with their actual limits, including Edda's temporary work and continuing inquiry. The counter-order source status now distinguishes corroboration from an authenticated issuing key. Dialogs fit the available visual viewport when the keyboard reduces it, contain scroll at their edges, and leave pinch zoom available. These additions are written interface information; existing spoken lines and art stay matched. See [the four-area polish review](docs/FOUR_AREA_POLISH.md).

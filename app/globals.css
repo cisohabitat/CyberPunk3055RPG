@@ -599,7 +599,7 @@ input {
     max(1rem, env(safe-area-inset-left));
   width: 100%;
   max-width: none;
-  height: 100%;
+  height: var(--dialog-viewport-height, 100%);
   max-height: none;
   margin: 0;
   border: 0;
@@ -650,8 +650,9 @@ html[data-motion="reduce"] *, html[data-motion="reduce"] *::before, html[data-mo
 
 .dialog {
   width: min(440px, 100%);
-  max-height: calc(100dvh - 2rem - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+  max-height: calc(var(--dialog-viewport-height, 100dvh) - 2rem - env(safe-area-inset-top) - env(safe-area-inset-bottom));
   overflow: auto;
+  overscroll-behavior: contain;
   background: #12111a;
   padding: 1.2rem;
 }
@@ -1616,4 +1617,8 @@ html[data-motion="reduce"] .location-entry, html[data-motion="reduce"] .portrait
 /* Touch readers keep native scrolling without a live blurred layer over it. */
 @media (hover: none) and (pointer: coarse) {
   .topbar { background: #09080d; -webkit-backdrop-filter: none; backdrop-filter: none; }
+  .overlay::backdrop { -webkit-backdrop-filter: none; backdrop-filter: none; }
 }
+.overlay { overscroll-behavior: contain; }
+.conversation-context { margin-block: 1rem; padding: .65rem .8rem; border-left: 2px solid var(--line); }
+.conversation-context summary, .finale-commitments summary { min-height: 44px; padding-block: .6rem; cursor: pointer; }

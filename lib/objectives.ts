@@ -46,9 +46,11 @@ export function objectives(state: GameState): Objective[] {
     });
   }
   if (state.flags.memory_intact) {
-    rows.push({ id: "archive", title: "Authenticate the counter-order",
+    rows.push({ id: "archive", title: "Check the counter-order’s source",
       status: state.flags.order_verified ? "Complete" : state.flags.archive_unresolved || atWall ? "Unresolved" : "Open",
-      detail: state.flags.order_verified ? "An independent source corroborates the canceled evacuation."
+      detail: state.flags.order_verified ? state.flags.archive_key_authenticated
+        ? "The service reader authenticated the issuing key; the canceled evacuation has independent corroboration."
+        : "An independent source corroborates the canceled evacuation. No issuing-key authentication is recorded."
         : state.flags.archive_unresolved ? "The issuing key remains unverified. The gap is recorded, not repaired."
         : state.flags.archive_paused ? atWall ? "The week ended with the ledger request paused. No ledger was retrieved; the failed attempt and its exposure remain." : "The ledger request is paused. Resume it from the canal before closing the week; twenty-five creds or a Spire employee number can obtain corroboration, not digital-key authentication."
         : actName(state) === "The Hour" ? "During The Week, compare the exported receipt with an independent tower record."
