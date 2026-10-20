@@ -56,3 +56,24 @@ test("reading can scroll down and back up without changing the saved scene", asy
   await expect.poll(() => page.evaluate(() => scrollY)).toBeLessThan(down - 100);
   expect(await page.evaluate(() => localStorage.getItem("saint-shard-3055-v1"))).toBe(before);
 });
+
+test("story remains scrollable after rotation and reopening Settings", async ({ page }) => {
+  await open(page);
+  const before = await page.evaluate(() => localStorage.getItem("saint-shard-3055-v1"));
+  for (const viewport of [{ width: 844, height: 390 }, { width: 390, height: 844 }]) {
+    await page.getByRole("button", { name: "Settings", exact: true }).click();
+    await page.setViewportSize(viewport);
+    const dialog = page.getByRole("dialog");
+    await dialog.locator(".dialog").evaluate(el => el.scrollTo(0, el.scrollHeight));
+    await page.getByRole("button", { name: "Done", exact: true }).click();
+    await expect(dialog).toHaveCount(0);
+    await page.mouse.move(200, viewport.height - 80);
+    await page.mouse.wheel(0, 600);
+    await expect.poll(() => page.evaluate(() => scrollY)).toBeGreaterThan(250);
+    const down = await page.evaluate(() => scrollY);
+    await page.mouse.wheel(0, -400);
+    await expect.poll(() => page.evaluate(() => scrollY)).toBeLessThan(down - 100);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  }
+  expect(await page.evaluate(() => localStorage.getItem("saint-shard-3055-v1"))).toBe(before);
+});

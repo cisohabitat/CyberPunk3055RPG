@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-20",
+  "processing": "Same dimensions, composition and colors; WebP encoding only using sharp quality 85, effort 6. Original JPEGs remain byte-identical.",
+  "files": [
+    {
+      "source": "public/art/stall.jpg",
+      "sourceSha256": "c77892d16439f0430abcbd058c36530c0d17be366c95a89f486dd3c59dc60969",
+      "sourceBytes": 448475,
+      "path": "public/art/stall-origin.webp",
+      "width": 1280,
+      "height": 720,
+      "bytes": 190132,
+      "sha256": "4e2926204ab58af8f9981d4c5105a8ee7e1c92d269465b16d99c68110032daad"
+    },
+    {
+      "source": "public/art/spire.jpg",
+      "sourceSha256": "59315758907739d260c66480b6dd372902b154a981c218ff71e522a134805413",
+      "sourceBytes": 312365,
+      "path": "public/art/spire-origin.webp",
+      "width": 1280,
+      "height": 720,
+      "bytes": 99902,
+      "sha256": "5942b462c655b9933b31f80b2bfd849fd6b5d1488d6bc5c5d7a8a2c872b1695b"
+    },
+    {
+      "source": "public/art/canal.jpg",
+      "sourceSha256": "d62d6b39fb8c2f81c0a9ab7b77f93248a43a78f9b2a939c8517cb0a964913a77",
+      "sourceBytes": 446597,
+      "path": "public/art/canal-origin.webp",
+      "width": 1280,
+      "height": 720,
+      "bytes": 189816,
+      "sha256": "613713292e7b2e8c41b4403b3230184591557e47248ddd947bbc5ab7364e7e42"
+    }
+  ]
+}

@@ -5,9 +5,9 @@ import type { OriginId } from "@/lib/types";
 import { useState } from "react";
 
 const ORIGIN_ART: Record<OriginId, { src: string; label: string }> = {
-  gutterwire: { src: "/art/stall.jpg", label: "Gutterwire" },
-  spire: { src: "/art/spire.jpg", label: "Spire" },
-  dustline: { src: "/art/canal.jpg", label: "Dustline" },
+  gutterwire: { src: "/art/stall-origin.webp", label: "Gutterwire" },
+  spire: { src: "/art/spire-origin.webp", label: "Spire" },
+  dustline: { src: "/art/canal-origin.webp", label: "Dustline" },
 };
 
 export function Portrait({ speaker, sceneId, origin, handle, flags, artwork = true, speaking = false, compact = false }: { speaker?: string; sceneId?: string; origin: OriginId; handle?: string; flags?: Readonly<Record<string, boolean>>; artwork?: boolean; speaking?: boolean; compact?: boolean }) {

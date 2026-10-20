@@ -1376,7 +1376,9 @@ for (const hub of ["ward_wall", "act3_neighborhood"]) test(`Spire late payroll r
 
 for (const [width, textOnly] of [[1440, false], [390, false], [320, true]] as const) test(`playable memory timeline saves source tests at ${width}px`, async ({ page }) => {
   await page.setViewportSize({ width, height: width < 700 ? 844 : 900 });
-  await page.addInitScript((none) => localStorage.setItem("saint-shard-preferences", JSON.stringify(none ? { artwork: "none", textStep: 2, contrast: "high" } : {})), textOnly);
+  // This flow audits source art, keyboard input and saves. Dedicated voice
+  // suites cover sound; don't queue unrelated audio work for every placement.
+  await page.addInitScript((none) => localStorage.setItem("saint-shard-preferences", JSON.stringify({ sound: false, ...(none ? { artwork: "none", textStep: 2, contrast: "high" } : {}) })), textOnly);
   const artwork: string[] = []; page.on("request", (request) => { if (request.url().includes("/art/")) artwork.push(request.url()); });
   await openRun(page, fixture("memory_reconstruction", { flags: { heard_memo: true, memory_signature: true, memory_order: true, memory_roster: true } }));
   await page.getByTestId("choice-assemble-timeline").click();
@@ -1385,7 +1387,12 @@ for (const [width, textOnly] of [[1440, false], [390, false], [320, true]] as co
   else expect(await page.getByTestId("scene-illustration").locator("img").evaluate((img: HTMLImageElement) => img.decode().then(() => img.naturalWidth))).toBeGreaterThan(0);
   await page.getByTestId("memory-workspace").getByText("The signature · available", { exact: true }).focus(); await page.keyboard.press("Enter");
   await expect(page.getByTestId("memory-workspace")).toContainText("02:13");
-  if (!textOnly) expect(await page.getByTestId("memory-workspace").locator(".source-art img").evaluate((img: HTMLImageElement) => img.decode().then(() => img.naturalWidth))).toBeGreaterThan(0);
+  if (!textOnly) {
+    const sourceImage = page.getByTestId("memory-workspace").locator(".source-art img");
+    // Native lazy loading needs viewport entry; decode() alone need not fetch.
+    await sourceImage.scrollIntoViewIfNeeded();
+    expect(await sourceImage.evaluate((img: HTMLImageElement) => img.decode().then(() => img.naturalWidth))).toBeGreaterThan(0);
+  }
   expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations).toEqual([]);
   await page.getByTestId("choice-place-signature").focus(); await page.keyboard.press("Enter");
   await expect(page.locator("#timeline-source-signature")).toBeFocused();

@@ -1,5 +1,7 @@
 # Credits and asset provenance
 
+The three origin-setting portrait deliveries added on 20 October 2026 encode the existing stall, Spire and canal paintings as WebP, with unchanged 1280 × 720 dimensions and composition. Original JPEGs remain byte-identical. `qa/media/origin-deliveries.json` records source/delivery hashes and encoding settings; global provenance and the offline audition include this delivery cohort. No new generated painting or voice is introduced.
+
 Saint Shard is original fiction supplied in `cisohabitat/CyberPunk3055RPG`, with the evidence and campaign expansion in this revision. The game is not affiliated with an existing cyberpunk franchise.
 
 - **Original supplied art:** the twelve pre-existing environment and portrait files in `public/art/` retain their supplied provenance status. Artist names, source records, and commercial licensing terms remain undocumented for those files.
