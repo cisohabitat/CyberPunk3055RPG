@@ -3,16 +3,37 @@ import { describe, it } from "node:test";
 import { CHECK_REQUEST_MS, CI_DEADLINE_MS, CI_POLL_MS, waitForProductionChecks } from "../scripts/ci-wait.mjs";
 import { BROWSER_CHECKS } from "../scripts/ci-gate.mjs";
 
-const passing = ["Test", "Build", ...BROWSER_CHECKS].map(name => ({ name, status: "completed", conclusion: "success" }));
+const passing = ["Test", "Build", ...BROWSER_CHECKS].map((name, index) => ({ id: 100 + index, check_suite: { id: 10 }, name, status: "completed", conclusion: "success" }));
 const url = "https://api.github.com/repos/owner/repo/commits/exact-sha/check-runs?per_page=100";
 const onWait = () => {};
 
 describe("bounded production CI wait", () => {
+  it("fails closed when a successful-looking response is incomplete", async t => {
+    t.mock.method(globalThis, "fetch", async () => Response.json({
+      total_count: 101,
+      check_runs: passing.map(check => ({ ...check, app: { slug: "github-actions" } })),
+    }));
+    const result = await waitForProductionChecks({ url, onWait });
+    assert.equal(result.exitCode, 0);
+    assert.match(result.message, /Could not read/);
+  });
+
+  it("rejects missing, nonnumeric and mismatched response counts", async t => {
+    let count: unknown;
+    t.mock.method(globalThis, "fetch", async () => Response.json({
+      total_count: count, check_runs: passing.map(check => ({ ...check, app: { slug: "github-actions" } })),
+    }));
+    for (count of [undefined, null, -1, 5, "6", 7]) {
+      const result = await waitForProductionChecks({ url, onWait });
+      assert.equal(result.exitCode, 0);
+      assert.match(result.message, /Could not read/);
+    }
+  });
   it("accepts checks only from GitHub Actions, ignoring same-name third-party checks", async t => {
     let checks: object[] = [];
     t.mock.method(globalThis, "fetch", async (requested: string) => {
       assert.equal(requested, url);
-      return Response.json({ check_runs: checks });
+      return Response.json({ total_count: checks.length, check_runs: checks });
     });
     for (const slug of [undefined, "third-party-ci", "github-actions"]) {
       let time = 0;
@@ -23,6 +44,15 @@ describe("bounded production CI wait", () => {
     checks = [...passing.map(check => ({ ...check, app: { slug: "github-actions" } })),
       { name: "Test", status: "completed", conclusion: "failure", id: 999, app: { slug: "third-party-ci" } }];
     assert.equal((await waitForProductionChecks({ url, onWait })).exitCode, 1);
+  });
+
+  it("fails closed when trusted checks lack numeric job or suite identity", async t => {
+    let checks: object[] = [];
+    t.mock.method(globalThis, "fetch", async () => Response.json({ total_count: checks.length, check_runs: checks }));
+    for (const patch of [{ id: undefined }, { id: 0 }, { check_suite: undefined }, { check_suite: { id: "10" } }]) {
+      checks = passing.map((check, index) => ({ ...check, ...(index === 0 ? patch : {}), app: { slug: "github-actions" } }));
+      assert.equal((await waitForProductionChecks({ url, onWait })).exitCode, 0);
+    }
   });
 
   it("allows the full suite to complete after thirty minutes on the exact commit URL", async () => {

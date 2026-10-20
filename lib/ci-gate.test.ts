@@ -14,6 +14,15 @@ function run(name: string, status: string, conclusion: string | null, started_at
 const passedBrowsers = () => BROWSER_CHECKS.map(name => run(name, "completed", "success"));
 
 describe("production gate", () => {
+  it("never combines required checks from different workflow suites", () => {
+    const checks = [run("Test", "completed", "success"), ...passedBrowsers(), run("Build", "completed", "success")]
+      .map((check, index) => ({ ...check, id: 100 + index, check_suite: { id: 10 } }));
+    assert.equal(productionDecision(checks), "build");
+    for (let index = 1; index < checks.length; index++) {
+      assert.equal(productionDecision(checks.map((check, position) => position === index ? { ...check, check_suite: { id: 20 } } : check)), "wait");
+      assert.equal(productionDecision(checks.map((check, position) => position === index ? { ...check, check_suite: undefined } : check)), "wait");
+    }
+  });
   it("requires the successful source job and complete browser matrix, including failure/skip/cancel/unknown states", () => {
     const statuses = [undefined, "", "success", "failure", "cancelled", "skipped", "pending", "in_progress"];
     for (const source of statuses) for (const browsers of statuses) assert.equal(requiredMatrixPassed(source, browsers), source === "success" && browsers === "success");

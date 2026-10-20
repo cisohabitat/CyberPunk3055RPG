@@ -51,3 +51,5 @@ The [shared-brand and menu cycle](BRAND_MENU_FEEDBACK.md) aligns small emblems, 
 The [choice feedback and campaign review cycle](PLAY_FEEDBACK_CYCLE.md) adds committed-choice receipts, clearer dialogue progress and portrait arrivals, restrained location feedback, and spoiler-safe return recaps shared by the title and manual saves.
 
 The [touch-scrolling correction](TOUCH_SCROLLING.md) prevents preference changes from resetting story position, removes animated scene scrolling on touch devices, and simplifies the mobile sticky header.
+
+The [20 October security follow-up](SECURITY_FOLLOWUP_2026_10_20.md) records import-selection protections, stricter CI check cohorts and current audit evidence.

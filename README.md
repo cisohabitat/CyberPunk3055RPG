@@ -832,3 +832,7 @@ Dialogue controls show which recorded line is playing; portraits reveal only the
 ### Touch scrolling
 
 Story navigation now settles immediately on touch devices so it does not compete with a swipe. Changing Motion in Settings keeps your reading position; closing a dialog returns keyboard focus without scrolling the page. Touch headers use a solid background instead of live blur. See [the scrolling correction](docs/TOUCH_SCROLLING.md) for reproduction and verification limits.
+
+### Security follow-up (20 October 2026)
+
+Save imports now clear earlier confirmations and ignore file reads superseded by another import, a slot operation or closing Saves. This prevents loading an older file or starting a run after the dialog has closed. Production CI checks must come from the same GitHub Actions workflow suite, and incomplete check responses block publication. The fresh dependency audit reports zero known vulnerabilities; production security headers remain present. See [the follow-up review and verification](docs/SECURITY_FOLLOWUP_2026_10_20.md).

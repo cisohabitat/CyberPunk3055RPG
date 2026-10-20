@@ -15,10 +15,16 @@ async function readChecks(url, signal) {
   });
   if (!response.ok) throw new Error(`GitHub checks returned ${response.status}`);
   const body = await response.json();
-  if (!Array.isArray(body.check_runs)) throw new Error("GitHub checks response is invalid");
+  if (!Array.isArray(body.check_runs) || !Number.isSafeInteger(body.total_count) || body.total_count !== body.check_runs.length) {
+    throw new Error("GitHub checks response is incomplete or invalid");
+  }
   // A third-party integration can publish a check with the same display name.
   // Only GitHub Actions is allowed to satisfy this repository's deploy gate.
-  return body.check_runs.filter(run => run && run.app?.slug === "github-actions");
+  const checks = body.check_runs.filter(run => run && run.app?.slug === "github-actions");
+  if (checks.some(run => !Number.isSafeInteger(run.id) || run.id <= 0 || !Number.isSafeInteger(run.check_suite?.id) || run.check_suite.id <= 0)) {
+    throw new Error("GitHub check identity is invalid");
+  }
+  return checks;
 }
 
 // Exit 1 permits Vercel's build; all uncertain or unsuccessful states exit 0.

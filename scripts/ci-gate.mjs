@@ -26,7 +26,13 @@ export function productionDecision(runs) {
   // A workflow rerun can expose a fresh Test before its aggregate Build exists.
   // Earlier successors, successful or failed, are absent from the new cohort.
   const successors = [latestRun(runs, BUILD_CHECK), ...BROWSER_CHECKS.map(name => latestRun(runs, name))]
-    .map(check => test && Number.isSafeInteger(test.id) && (!Number.isSafeInteger(check?.id) || check.id <= test.id) ? undefined : check);
+    .map(check => {
+      if (test && Number.isSafeInteger(test.id) && (!Number.isSafeInteger(check?.id) || check.id <= test.id)) return undefined;
+      // Display names can recur in another Actions workflow on the same SHA.
+      // Its jobs must never complete this workflow's required cohort.
+      if (test?.check_suite && check?.check_suite?.id !== test.check_suite.id) return undefined;
+      return check;
+    });
   const required = [test, ...successors];
   if (required.some(check => finished(check) && check.conclusion !== "success")) return "skip";
   if (required.every(check => finished(check) && check.conclusion === "success")) return "build";

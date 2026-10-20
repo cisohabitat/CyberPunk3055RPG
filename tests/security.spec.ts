@@ -1,6 +1,6 @@
-import { test, expect } from "@playwright/test";
+import { test, expect, type Page } from "@playwright/test";
 import { createCharacter } from "../lib/engine";
-import { importRun } from "../lib/vault";
+import { exportRun, importRun } from "../lib/vault";
 
 const state = () => createCharacter({ handle: "Security", givenName: "Ada", origin: "gutterwire", bonus: { chrome: 2, nerve: 0, face: 0, ghost: 0 } });
 
@@ -99,4 +99,90 @@ test("invalid and oversized imports preserve the active run and manual slot", as
     expect(await page.evaluate(() => [localStorage.getItem("saint-shard-3055-v1"), localStorage.getItem("saint-shard-slot-1")])).toEqual(before);
     await expect(page.getByRole("button", { name: "Confirm load", exact: true })).toHaveCount(0);
   }
+});
+
+test("rejecting a new import clears the previous file's load confirmation", async ({ page }) => {
+  await page.addInitScript(value => {
+    localStorage.setItem("saint-shard-3055-v1", value);
+    localStorage.setItem("saint-shard-preferences", JSON.stringify({ sound: false }));
+  }, JSON.stringify(state()));
+  await page.goto("/");
+  await page.getByTestId("continue-run").click();
+  await page.getByRole("button", { name: "Saves", exact: true }).click();
+  const input = page.getByLabel("Import a saved run");
+  const before = await page.evaluate(() => localStorage.getItem("saint-shard-3055-v1"));
+  for (const buffer of [Buffer.from("invalid JSON"), Buffer.alloc(1_048_577, " ")]) {
+    await input.setInputFiles({ name: "valid.json", mimeType: "application/json", buffer: Buffer.from(JSON.stringify({ ...state(), sceneId: "pay" })) });
+    await expect(page.getByRole("button", { name: "Confirm load", exact: true })).toBeVisible();
+    await input.setInputFiles({ name: "rejected.json", mimeType: "application/json", buffer });
+    await expect(page.getByRole("dialog").getByRole("status")).toContainText(/not valid JSON|under 1 MB/);
+    await expect(page.getByRole("button", { name: "Confirm load", exact: true })).toHaveCount(0);
+  }
+  expect(await page.evaluate(() => localStorage.getItem("saint-shard-3055-v1"))).toBe(before);
+});
+
+async function delayImport(page: Page) {
+  await page.addInitScript(() => {
+    localStorage.setItem("saint-shard-preferences", JSON.stringify({ sound: false }));
+    const original = File.prototype.text;
+    File.prototype.text = async function () {
+      const text = await original.call(this);
+      if (this.name === "slow.json") await new Promise<void>(resolve => {
+        (window as unknown as { releaseImport: () => void }).releaseImport = resolve;
+      });
+      return text;
+    };
+  });
+}
+
+async function releaseImport(page: Page) {
+  await page.evaluate(async () => {
+    (window as unknown as { releaseImport: () => void }).releaseImport();
+    await new Promise(resolve => setTimeout(resolve, 0));
+  });
+}
+
+test("an older slow file cannot replace the latest selected import", async ({ page }) => {
+  await delayImport(page);
+  await page.addInitScript(value => localStorage.setItem("saint-shard-3055-v1", value), JSON.stringify(state()));
+  await page.goto("/");
+  await page.getByTestId("continue-run").click();
+  await page.getByRole("button", { name: "Saves", exact: true }).click();
+  const input = page.getByLabel("Import a saved run");
+  await input.setInputFiles({ name: "slow.json", mimeType: "application/json", buffer: Buffer.from(JSON.stringify({ ...state(), handle: "Older file" })) });
+  await page.waitForFunction(() => typeof (window as unknown as { releaseImport?: () => void }).releaseImport === "function");
+  await input.setInputFiles({ name: "latest.json", mimeType: "application/json", buffer: Buffer.from(JSON.stringify({ ...state(), handle: "Latest file" })) });
+  await expect(page.getByRole("button", { name: "Confirm load", exact: true })).toBeVisible();
+  await releaseImport(page);
+  await page.getByRole("button", { name: "Confirm load", exact: true }).click();
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!).handle)).toBe("Latest file");
+});
+
+test("closing saves cancels a pending import instead of starting a run later", async ({ page }) => {
+  await delayImport(page);
+  await page.goto("/");
+  await page.getByRole("button", { name: "Saves", exact: true }).click();
+  await page.getByLabel("Import a saved run").setInputFiles({ name: "slow.json", mimeType: "application/json", buffer: Buffer.from(JSON.stringify(state())) });
+  await page.waitForFunction(() => typeof (window as unknown as { releaseImport?: () => void }).releaseImport === "function");
+  await page.getByRole("button", { name: "Close saves", exact: true }).click();
+  await releaseImport(page);
+  await expect(page.getByTestId("new-run")).toBeVisible();
+  expect(await page.evaluate(() => localStorage.getItem("saint-shard-3055-v1"))).toBeNull();
+});
+
+test("choosing a manual slot cancels an older pending file import", async ({ page }) => {
+  await delayImport(page);
+  await page.addInitScript(({ run, slot }) => {
+    localStorage.setItem("saint-shard-3055-v1", run);
+    localStorage.setItem("saint-shard-slot-1", slot);
+  }, { run: JSON.stringify(state()), slot: exportRun({ ...state(), handle: "Manual slot" }) });
+  await page.goto("/");
+  await page.getByTestId("continue-run").click();
+  await page.getByRole("button", { name: "Saves", exact: true }).click();
+  await page.getByLabel("Import a saved run").setInputFiles({ name: "slow.json", mimeType: "application/json", buffer: Buffer.from(JSON.stringify({ ...state(), handle: "Older file" })) });
+  await page.waitForFunction(() => typeof (window as unknown as { releaseImport?: () => void }).releaseImport === "function");
+  await page.getByRole("button", { name: "Load slot 1", exact: true }).click();
+  await releaseImport(page);
+  await page.getByRole("button", { name: "Confirm load", exact: true }).click();
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!).handle)).toBe("Manual slot");
 });
