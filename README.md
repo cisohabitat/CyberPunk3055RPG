@@ -836,3 +836,7 @@ Story navigation now settles immediately on touch devices so it does not compete
 ### Security follow-up (20 October 2026)
 
 Save imports now clear earlier confirmations and ignore file reads superseded by another import, a slot operation or closing Saves. This prevents loading an older file or starting a run after the dialog has closed. Production CI checks must come from the same GitHub Actions workflow suite, and incomplete check responses block publication. The fresh dependency audit reports zero known vulnerabilities; production security headers remain present. See [the follow-up review and verification](docs/SECURITY_FOLLOWUP_2026_10_20.md).
+
+### Campaign pacing and media continuity (20 October 2026)
+
+Paused depot plans now return to the saved crossing instead of repeating Ren's introduction. The archive keeps its full first briefing, then uses shorter narration while catalog descriptions and query history remain available. Written task directions now follow archive work, Nia's transfer and the public hearing; permission requests appear only when her terms allow them. Existing artwork and exact spoken wording remain matched. See [the campaign and media review](docs/CAMPAIGN_MEDIA_REVIEW_2026_10_20.md).

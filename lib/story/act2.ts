@@ -194,7 +194,7 @@ Under the overpass the traffic is a long electric animal. Ives holds the folio l
 }
 
 function middleText(state: GameState): string {
-  const returned = ["response_started", "kerr_route_started", "kerr_route_declined", "notice_started", "pump_attempted", "week_recovered", "witness_done", "memory_response_done", "archive_done"].some(flag => state.flags[flag]);
+  const returned = ["response_started", "kerr_route_promised", "kerr_route_started", "kerr_route_declined", "notice_started", "pump_attempted", "week_recovered", "witness_briefed", "witness_done", "memory_response_done", "archive_briefed", "archive_paused", "archive_done", "chapel_shift_kept", "quill_settled"].some(flag => state.flags[flag]);
   if (returned) {
     const tab = state.flags.debt && !state.flags.quill_settled ? " Quill's tab is still open." : state.flags.quill_repaid_late ? " Quill kept the late payment beside the postponement." : "";
     return `${campaignReturnBeat(state) ?? "Ren waits by the grate. You have heard why Junie matters to her."}${tab}

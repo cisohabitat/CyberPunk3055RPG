@@ -1,4 +1,4 @@
-import { CATALOG_CHOICES } from "../archive-catalog";
+import { ARCHIVE_CATALOG, CATALOG_CHOICES } from "../archive-catalog";
 import { kitBonuses } from "../loadout";
 import type { GameState, Scene } from "../types";
 
@@ -26,7 +26,11 @@ export const ARCHIVE_SCENES: Record<string, Scene> = {
   },
   act2_archive_compare: {
     id: "act2_archive_compare", location: "Helion service archive", speaker: "Edda",
-    text: "The search desk displays the export beside the catalog description of the shift ledger. You have not retrieved the ledger yet.\n\nExport: Mara's authorization precedes a receipt recording cancellation of evacuation.\n\nLedger catalog: a maintenance shift processed an evacuation revision. The catalog has a record number, not an authenticated command signature.\n\nWhat would retrieving this second source establish?",
+    text: (state) => state.flags.archive_catalog_open
+      ? "The catalog drawer stays beside your export. Read its descriptions and query results below; none is a retrieved ledger or an authenticated issuing key."
+      : ARCHIVE_CATALOG.some(record => state.flags[`archive_catalog_read_${record.id}`])
+        ? "You close the drawer with its descriptions and query history kept. Choose a retrieval method, or reopen the catalog. No ledger has been retrieved yet."
+        : "The search desk displays the export beside the catalog description of the shift ledger. You have not retrieved the ledger yet.\n\nExport: Mara's authorization precedes a receipt recording cancellation of evacuation.\n\nLedger catalog: a maintenance shift processed an evacuation revision. The catalog has a record number, not an authenticated command signature.\n\nWhat would retrieving this second source establish?",
     choices: [
       { id: "separate-source-tests", label: "Corroborate the cancellation; authenticate the issuer only with a key match.", effects: { flags: ["archive_compared"], journal: [{ id: "archive-method", text: "The catalog identifies an independent ledger. Retrieving it can corroborate the cancellation; a countersignature alone cannot authenticate a digital issuing key.", kind: "claim" }] }, next: "act2_archive_door" },
       { id: "catalog-is-proof", label: "The catalog alone proves who issued the command.", next: "act2_archive_challenge" },

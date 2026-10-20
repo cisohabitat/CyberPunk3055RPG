@@ -27,6 +27,31 @@ const WALL = new Set(["card_wall", "ward_wall", "ending_names", "ending_quiet", 
 
 const BRIEFING = new Set(["stall", "pay", "pay_yes", "pay_no", "why", "chapel", "job_owner"]);
 
+// Written directions for the current task, never a new spoken quotation or
+// evidence that its outcome has already happened.
+const TASK_GOALS: Readonly<Record<string, string>> = {
+  act2_archive_brief: "Hear Edda's access terms, or leave the archive search open.",
+  act2_archive_prep: "Prepare one archive route, or proceed without a preparation bonus.",
+  act2_archive_challenge: "Keep the catalog's limits clear, then retrieve the actual source.",
+  act2_archive_door: "Choose a retrieval method. A ledger can corroborate; an issuing-key match can authenticate.",
+  act2_archive_gap: "Request ledger corroboration, pause the search for free, or record the unresolved gap.",
+  act2_archive_custody: "Decide how to attribute the source. Withholding a public name cannot erase an existing employer trace.",
+  act2_archive_verified: "Keep the earlier authorization and later cancellation attached as separate decisions.",
+  act2_witness_brief: "Hear Nia's terms. A safe move and permission to use her words are separate promises.",
+  act2_witness_plan: "Prepare one crossing, or use resources you already earned. Choose the transfer method next.",
+  act2_witness_door: "Choose Nia's transfer route, or leave the move unresolved.",
+  act2_witness_checkpoint: "Resolve the transfer at the desk. A registered room gives Helion her location.",
+  act2_witness_arrival: "Let Nia review her account, or leave the recorder off and return before the week closes.",
+  act2_witness_safe: "Attach the approved account with its source and privacy limits.",
+  act2_witness_lost: "Keep the account and record the location breach. Treatment did not make the room private.",
+  act2_witness_repair: "Arrange a second private move, or leave the known location unresolved. The first breach remains recorded.",
+  act3_testimony_review: "Choose what the sources support, or return to the names without drafting an account.",
+  act3_testimony_nia: "Accept Nia's terms for this account, or keep her recording private.",
+  act3_testimony_hearing: "Answer Ives with the source you have. Corroboration and key authentication are different claims.",
+  act3_testimony_correction: "Correct the unsupported certainty and keep the earlier claim attached.",
+  act3_testimony_record: "File the public account with its limits, or withdraw the draft. The memorial choice follows separately.",
+};
+
 export function actName(state: GameState): string {
   const id = state.sceneId;
   if (WALL.has(id) || id.startsWith("act3_")) return "The Wall";
@@ -36,6 +61,16 @@ export function actName(state: GameState): string {
 
 export function currentGoal(state: GameState): string {
   const id = state.sceneId;
+  if (id === "act2_archive_compare") return state.flags.archive_catalog_open
+    ? state.flags.archive_catalog_located
+      ? "The locator is found. Retrieve the ledger, or choose another method; the lookup supplied no record."
+      : "Compare catalog descriptions and locate the evacuation revision. Submitting a locator leaves a trace."
+    : "Compare the two decisions, then choose a retrieval method or investigate the catalog.";
+  if (id === "act3_testimony_consent") return state.journal.some(entry => entry.id === "nia-account")
+    && state.flags.witness_safe && state.flags.witness_consent && !state.flags.witness_lost && !state.flags.nia_contact_paused
+    ? "Ask Nia through the relay about public quotation, or keep her recording private."
+    : "Keep Nia's words out of this public account. Continue with the sources and limits you have.";
+  if (Object.hasOwn(TASK_GOALS, id)) return TASK_GOALS[id];
   if (id === "chapel_window_plan" || id === "chapel_window_exit") {
     const count = windowRemaining(state);
     if (count === 0) return id === "chapel_window_exit"

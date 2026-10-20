@@ -1,4 +1,5 @@
 import type { GameState } from "../types";
+import { routePlan } from "../route-planning";
 
 type ReturnBeat = {
   label: string;
@@ -30,8 +31,8 @@ export const RETURN_BEATS: Record<string, ReturnBeat[]> = {
           : "Kerr has the closed case. The recipient entry remains in the depot register. You reach the canal with a handover to remember, not a report about what the brace will do."
       : "The closed case is with Kerr, and the depot made no recipient entry. You observed the handover. The delivery is done; what the brace will do is still his to discover." },
     { label: "Leave the case held. Record collection as unresolved.", when: s => s.flags.kerr_route_unresolved, text: "You come back without the case. Kerr's slip stays in your pocket, folded along a promise you have not completed." },
-    { label: "Pause with this entry saved.", when: s => s.flags.kerr_route_started && !s.flags.kerr_route_done, text: "The entry route is saved. You have a way into the depot, not a handover. The canal gives you room to decide what the other crossing will cost." },
-    { label: "Pause with both crossings saved.", when: s => s.flags.kerr_route_started && !s.flags.kerr_route_done, text: "Both crossings are on the plan. The case is still at the depot. You put the slip away without writing collected on it." },
+    { label: "Pause with this entry saved.", when: s => Boolean(s.flags.kerr_route_promised && routePlan(s).entry && !s.flags.kerr_route_started && !s.flags.kerr_route_done), text: "The entry route is saved. You have a way into the depot, not a handover. The canal gives you room to decide what the other crossing will cost." },
+    { label: "Pause with both crossings saved.", when: s => Boolean(s.flags.kerr_route_promised && routePlan(s).ready && !s.flags.kerr_route_started && !s.flags.kerr_route_done), text: "Both crossings are on the plan. The case is still at the depot. You put the slip away without writing collected on it." },
     { label: "Pause. Keep this task and its costs saved.", when: s => s.flags.depot_started && !s.flags.kerr_route_done, text: "The depot task will wait where you left it. Its costs do not disappear during the walk back. Neither does Kerr's request." },
     { label: "Give her time. Leave the recorder off.", when: s => s.flags.witness_deferred && !s.journal.some(e => e.id === "nia-account"), text: "You keep the quiet Nia asked for. There is no recording to carry back, and no sentence of hers to lend your speech. Ren waits without asking what happened in the room." },
     { label: "Attach Nia's account to the evidence.", when: s => s.flags.witness_done && s.journal.some(e => e.id === "nia-account"), text: "Nia's approved account stays with the evidence. Her room stays out of your conversation with Ren. Junie's name is still here by the grate; knowing more has not made it easier to say." },

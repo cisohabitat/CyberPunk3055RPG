@@ -53,3 +53,5 @@ The [choice feedback and campaign review cycle](PLAY_FEEDBACK_CYCLE.md) adds com
 The [touch-scrolling correction](TOUCH_SCROLLING.md) prevents preference changes from resetting story position, removes animated scene scrolling on touch devices, and simplifies the mobile sticky header.
 
 The [20 October security follow-up](SECURITY_FOLLOWUP_2026_10_20.md) records import-selection protections, stricter CI check cohorts and current audit evidence.
+
+The [20 October campaign/media review](CAMPAIGN_MEDIA_REVIEW_2026_10_20.md) improves paused-plan returns, catalog pacing and written task direction while checking campaign art and voice continuity.

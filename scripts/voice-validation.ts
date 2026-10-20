@@ -60,16 +60,19 @@ async function main() {
           const checkCommit = checkChoice && pending ? commitChoice(example.state, checkChoice, { roll: pending.roll }) : undefined;
           const queue = checkCommit?.check ? visibleCheckDialogue(scene.id, checkChoice!.id, scene.speaker, checkCommit.check.success, checkCommit.check.flavor) : visibleCampaignDialogue(scene.id, scene.speaker, text);
           const selected = queue.find(candidate => candidate.id === line.id)!;
+          // A restored check keeps the scene's voice widget mounted behind the
+          // modal. Audition the revealed result, not that inactive scene widget.
+          const voice = checkCommit ? page.getByRole("dialog").getByTestId("voice-line") : page.getByTestId("scene").getByTestId("voice-line");
           const expected = automatic ? queue.map(candidate => filename(candidate.id)) : [filename(line.id)];
           if (automatic) await expect.poll(async () => (await audio()).started.filter(name => name.startsWith("voice-"))).toContain(expected[0]);
           else await expect.poll(async () => (await audio()).liveSources).toBe(2);
           const before = await saved();
-          await keyboardActivate(page, page.getByTestId("voice-line").locator("summary"));
-          await expect(page.getByTestId("voice-line").locator("details")).toContainText(line.text);
+          await keyboardActivate(page, voice.locator("summary"));
+          await expect(voice.locator("details")).toContainText(line.text);
           if (!automatic) {
             expect(voiceRequests).toBe(0);
-            if (queue.length > 1) await page.getByLabel("Dialogue line", { exact: true }).selectOption(selected.key);
-            await keyboardActivate(page, page.getByTestId("voice-line").getByRole("button", { name: /^Listen to / }));
+            if (queue.length > 1) await voice.getByLabel("Dialogue line", { exact: true }).selectOption(selected.key);
+            await keyboardActivate(page, voice.getByRole("button", { name: /^Listen to / }));
           }
           const playStarted = Date.now();
           await expect.poll(async () => (await audio()).started.filter(name => name.startsWith("voice-")), { timeout: 90_000 }).toEqual(expected);
@@ -82,7 +85,7 @@ async function main() {
             await expect(portrait).toHaveAttribute("data-speaker", selected.speaker);
             await expect(portrait).toHaveAttribute("data-speaking", "true");
           }
-          const listen = page.getByTestId("voice-line").getByRole("button", { name: /^Listen to / });
+          const listen = voice.getByRole("button", { name: /^Listen to / });
           await expect(listen).toBeVisible({ timeout: 45_000 });
           await expect(page.getByTestId("spoken-quote")).toHaveCount(0);
           const ended = await audio(), durationSeconds = (Date.now() - playStarted) / 1000;
@@ -93,8 +96,8 @@ async function main() {
           for (const entry of ended.voiceLevels) expect(entry.gain).toBeCloseTo(voiceLevel(entry.file.replace(/\.(wav|mp3)$/, "")), 6);
           const requestsBeforeReplay = voiceRequests;
           expect(requestsBeforeReplay).toBe(1);
-          if (queue.length > 1) await page.getByLabel("Dialogue line", { exact: true }).selectOption(selected.key);
-          await keyboardActivate(page, listen); await expect(page.getByTestId("voice-line")).toContainText("Playing selected dialogue");
+          if (queue.length > 1) await voice.getByLabel("Dialogue line", { exact: true }).selectOption(selected.key);
+          await keyboardActivate(page, listen); await expect(voice).toContainText("Playing selected dialogue");
           await keyboardActivate(page, page.getByRole("button", { name: "Stop line", exact: true }));
           await expect(page.getByTestId("spoken-quote")).toHaveCount(0);
           await expect.poll(async () => (await audio()).liveSources).toBe(2);

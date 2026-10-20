@@ -54,7 +54,10 @@ for (const [width, artwork] of [[320, "none"], [390, "full"], [1440, "full"]] as
   const reopened = await saved(page); expect(reopened.factions).toEqual(located.factions); expect(reopened.rolls).toEqual(initial.rolls);
   await expect(page.getByTestId("choice-catalog-request-authorization")).toHaveCount(0);
   await expect(page.getByTestId("choice-catalog-request-revision")).toHaveCount(0);
-  expect(await page.getByTestId("scene-text").textContent()).toBe(prose);
+  const returnedProse = await page.getByTestId("scene-text").textContent();
+  expect(returnedProse).toContain("none is a retrieved ledger or an authenticated issuing key");
+  expect(returnedProse!.length).toBeLessThan(prose!.length);
+  await expect(page.getByTestId("archive-catalog")).toContainText("Mara authorized the coolant flush");
   expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze()).violations).toEqual([]);
   expect(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)).toBe(false);
   await page.evaluate(() => scrollTo(0, 0)); const goal = await page.getByTestId("goal").boundingBox(); expect(goal!.y + goal!.height).toBeLessThan(900);

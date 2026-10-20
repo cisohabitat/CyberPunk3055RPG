@@ -1,0 +1,228 @@
+{
+  "reviewed": "2026-10-20",
+  "baseline": "42edd0b8a5a701aec781ed53856d55cf41a2ee4e",
+  "scope": "Campaign pacing, written objectives and art/voice continuity; internal simulated review",
+  "paired": {
+    "baseline": "42edd0b8a5a701aec781ed53856d55cf41a2ee4e",
+    "routes": 148,
+    "pairedVisits": 10477,
+    "changedProseScenes": [
+      "act2_archive_compare",
+      "act2_middle"
+    ],
+    "repeatedVisitWordsRemoved": 2262,
+    "taskGoalVisits": 1502,
+    "duplicateRenQueuesRemoved": 39,
+    "canonicalStatesAndChoicesIdentical": true,
+    "renderedArtIdentical": true
+  },
+  "baselineUi": {
+    "route": "qa/routes/catalog-reader.json",
+    "visits": 72,
+    "reloads": 23,
+    "errors": [],
+    "failedMedia": []
+  },
+  "candidateUi": [
+    {
+      "route": "qa/routes/integration-names.json",
+      "width": 390,
+      "artwork": "full",
+      "reading": "all",
+      "visits": 63,
+      "reloads": 16,
+      "reveals": 0,
+      "errors": [],
+      "failedMedia": [],
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 390,
+        "strain": 2,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      }
+    },
+    {
+      "route": "qa/routes/integration-quiet.json",
+      "width": 320,
+      "artwork": "none",
+      "reading": "all",
+      "visits": 81,
+      "reloads": 32,
+      "reveals": 0,
+      "errors": [],
+      "failedMedia": [],
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 375,
+        "strain": 4,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      }
+    },
+    {
+      "route": "qa/routes/finale-witness.json",
+      "width": 390,
+      "artwork": "full",
+      "reading": "all",
+      "visits": 63,
+      "reloads": 12,
+      "reveals": 0,
+      "errors": [],
+      "failedMedia": [],
+      "final": {
+        "sceneId": "ending_witness",
+        "creds": 390,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      }
+    },
+    {
+      "route": "qa/routes/integration-listed.json",
+      "width": 1440,
+      "artwork": "full",
+      "reading": "paragraph",
+      "visits": 96,
+      "reloads": 43,
+      "reveals": 84,
+      "errors": [],
+      "failedMedia": [],
+      "final": {
+        "sceneId": "ending_listed",
+        "creds": 450,
+        "strain": 2,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      }
+    }
+  ],
+  "candidateUiTotals": {
+    "visits": 303,
+    "reloads": 103
+  },
+  "sourceCoverage": {
+    "authoredScenes": 182,
+    "totalScenes": 197,
+    "authoredChoices": 432,
+    "totalChoices": 598,
+    "additionalSourceSampleScenes": 15,
+    "additionalSourceSamples": 90,
+    "scope": "Conditional source samples are not legally completed UI routes."
+  },
+  "media": {
+    "bindings": 306,
+    "activeVoicesDecoded": 294,
+    "artDeliveriesDecoded": 315,
+    "failedDecodes": 0,
+    "canonicalWordActorAndHashChecks": "passed in source suite",
+    "nativeNaturalPlayback": {
+      "clips": 18,
+      "actors": 15,
+      "authoredRouteExamples": 15,
+      "seededRouteExamples": 3,
+      "automatic": false,
+      "errors": [],
+      "failures": [],
+      "clipsReviewed": [
+        "voice-quill-offer",
+        "voice-edda-archive-access",
+        "voice-lumen-lumen",
+        "voice-campaign-stallholder-186ef0bc3f48",
+        "voice-campaign-kerr-3914d401fb83",
+        "voice-nia-known-room",
+        "voice-nia-second-room",
+        "voice-campaign-ren-849965fb2829",
+        "voice-campaign-dispatcher-0736bc19689f",
+        "voice-campaign-sera-3acd9a434593",
+        "voice-campaign-asa-8b96bfc8114a",
+        "voice-campaign-masked-attendant-8418f249bf02",
+        "voice-campaign-sister-lumen-557bd2f9d851",
+        "voice-campaign-mechanic-2d8a9efa667f",
+        "voice-campaign-orderly-cc082ea4de2f",
+        "voice-campaign-ives-kept-name-performance",
+        "voice-campaign-mara-revelation-performance",
+        "voice-campaign-nia-terms-performance"
+      ]
+    },
+    "visualReview": {
+      "scenePaintings": 15,
+      "scope": "14 scene/conditional/finale plates on a contact sheet plus Edda archive painting at full resolution; composition and narrative-state continuity; no new asset or independent anatomy acceptance"
+    },
+    "deliveriesChanged": 0
+  },
+  "validation": {
+    "sourceTestsPassed": 675,
+    "targetedBrowserCasesPassedUnique": 96,
+    "typescript": "passed",
+    "productionBuild": "passed",
+    "productionBudgetViolations": [],
+    "commercialAcceptanceGatesStillPending": 6,
+    "hostedCi": "required after push; no completion claimed by this local record"
+  },
+  "qaCorrections": [
+    "New test selectors now distinguish setting illustrations from actor portraits and use the existing Edda custody plate.",
+    "An old identical-prose assertion now checks intentionally shorter catalog narration plus unchanged source distinctions and retained descriptions.",
+    "Voice audition scopes transcript and playback controls to the active scene or restored-check dialog. Initial check-result audition failed because both widgets were selected; all 18 selected clips subsequently passed.",
+    "The first audition launch lacked the local Chromium path; it was rerun with the configured installed browser."
+  ],
+  "testedSources": {
+    "lib/story/act2.ts": "7d4363a99cc5cd457535b5468d5e8d5a26445a95124364c7557a17bb36742888",
+    "lib/story/archive.ts": "07126e54ced42bddf54348f043cc5dfb519c7bfae35c6e7e7936129d2fe2c101",
+    "lib/story/campaign-beats.ts": "ec798a46d9526e04d19305e53016c4c8d422ec1fe2e413c60b229f7785282457",
+    "lib/story/goal.ts": "31012bd1f992e31497d8eafa0aa996e2fb160b7e4dabd6528b034af1f4f15c76",
+    "lib/campaign-reading.test.ts": "e6fb4ea28f09b0f6c5d72f8ea87987d8258ea8215d334e56fc16a5ef0cb637d3",
+    "tests/campaign-reading.spec.ts": "ae373a503a7ad973eb5f3c348f509735bd61b21cbf095d527f3c739c8ce6e064",
+    "tests/archive-catalog.spec.ts": "c46f09f962d86f873ec75fcd3e4fee043a9df40addf34565cacf7fbd63e03228",
+    "scripts/voice-validation.ts": "9b81d5c08038dfbbb58d1da5c344190044b365308b7705f22d24c2cba436e4df",
+    "qa/media/scene-art.json": "6d8cb63fc7deeb5d111c35530a1f5659bda58f119a79bd4ce14ce29c0ad39393",
+    "lib/campaign-dialogue.ts": "d18e9f8e011662cabe6f3e8ea4bc918c893c5ba9ef37aab23522ff96acd893c0",
+    "qa/media/campaign-dialogue-bindings.json": "15ae8b35c16b330b545f001e23dc75b5f4bd131225347f616ab76c1b7088f0bd"
+  },
+  "evidencePaths": [
+    "/tmp/campaign-review-baseline.json",
+    "/tmp/campaign-review-candidate.json",
+    "/tmp/campaign-paired-review.json",
+    "/tmp/campaign-final-source.log",
+    "/tmp/campaign-final-browser.log",
+    "/tmp/campaign-reading-browser-verified.log",
+    "/tmp/campaign-catalog-final.log",
+    "/tmp/campaign-final-build.log",
+    "/tmp/campaign-final-tsc.log",
+    "/tmp/campaign-media-decode.json",
+    "/tmp/campaign-voice-validation-final.json",
+    "/tmp/campaign-legacy-samples.json"
+  ],
+  "limitations": [
+    "Source-familiar, directed simulations; no fresh-player timing or comprehension measurement.",
+    "Browser decode/signal checks do not establish independent perceptual listening quality.",
+    "No new art/audio, physical-device acceptance, commissioned performances or grade increase claimed."
+  ]
+}
