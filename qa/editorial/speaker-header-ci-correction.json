@@ -1,0 +1,134 @@
+{
+  "date": "2026-10-21",
+  "failedCommit": "97bbe8ebb7289fb027e8cc0433d394afb52b77b2",
+  "failedRun": "https://github.com/cisohabitat/CyberPunk3055RPG/actions/runs/39694868616",
+  "failure": "The responsive portrait geometry contradicted data-layout in every hosted profile; the aggregate blocked publication.",
+  "correction": "All non-finale header portraits explicitly compact; horizontal caption beside a face no wider than 64px at every width. Phone goal precedes the full-width nameplate.",
+  "testedSources": {
+    "components/PlayScreen.tsx": "82fd7d0973108570b96b6ecfd6327525b449922c23e18cd6714ab93109b205f3",
+    "app/globals.css": "d54750cf94a874818b358ab9a93d6c23f10f7246e41ea31c3f82dd84814851a7",
+    "tests/speaker-presentation.spec.ts": "0ddc4f98c77df9ba7ca731e93eeac71adb0f7080dbe5eb4bc6d5ad85ca91e555",
+    "tests/story-hierarchy.spec.ts": "8304063160bd23eaa5205c6e2d773c7eed237d4331c91e1c98e1136a9140d98b"
+  },
+  "validation": {
+    "sourceTests": 682,
+    "targetedBrowserCases": 66,
+    "localProfiles": [
+      "Chromium",
+      "phone (Chromium)",
+      "Linux WebKit"
+    ],
+    "typeScript": "passed",
+    "productionBuild": "passed",
+    "productionProbe": "passed",
+    "originalTestsAndCIGates": "unchanged",
+    "hostedFullSuite": "required after push"
+  },
+  "views": [
+    {
+      "name": "title",
+      "width": 390,
+      "proseTop": null,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "opening",
+      "width": 390,
+      "proseTop": 675.59375,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "edda",
+      "width": 390,
+      "proseTop": 562.859375,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "workshop",
+      "width": 390,
+      "proseTop": 538.296875,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "memory",
+      "width": 390,
+      "proseTop": 619.65625,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "finale",
+      "width": 390,
+      "proseTop": 443.671875,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "guide",
+      "width": 390,
+      "proseTop": null,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "title",
+      "width": 1440,
+      "proseTop": null,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "opening",
+      "width": 1440,
+      "proseTop": 572.15625,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "edda",
+      "width": 1440,
+      "proseTop": 499.265625,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "workshop",
+      "width": 1440,
+      "proseTop": 499.265625,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "memory",
+      "width": 1440,
+      "proseTop": 560.859375,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "finale",
+      "width": 1440,
+      "proseTop": 423.375,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "guide",
+      "width": 1440,
+      "proseTop": null,
+      "overflow": false,
+      "errors": []
+    }
+  ],
+  "maximumInitialTransferIncludingHtml": 1616008,
+  "initialTransferBudget": 2097152,
+  "limitations": [
+    "Local Firefox could not launch its temporary profile; no local Firefox pass is claimed. The mandatory hosted Firefox profile remains unchanged.",
+    "Synthetic Linux browser testing, not physical iPhone acceptance.",
+    "Original visual-hierarchy QA snapshot is retained, including its limited targeted coverage before hosted failure."
+  ]
+}

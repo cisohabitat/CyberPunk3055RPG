@@ -326,7 +326,7 @@ export function PlayScreen({
             style={{ backgroundImage: preferences.artwork === "none" || illustration ? undefined : `linear-gradient(180deg, rgba(9,8,13,0.72), rgba(9,8,13,0.94)), url(${sceneBackdrop(scene.id, scene.location)})` }}
           >
             <div className="scene-row" data-compact={compactHeader ? "true" : "false"} data-composition={!direction && !chapterPresentation(scene.id) ? "reading" : "feature"}>
-              <Portrait compact={compactHeader} speaker={playing?.speaker ?? scene.speaker} speaking={Boolean(playing)} sceneId={scene.id} flags={state.flags} origin={state.origin} handle={state.handle} artwork={preferences.artwork !== "none"} />
+              <Portrait compact={!scene.finale} speaker={playing?.speaker ?? scene.speaker} speaking={Boolean(playing)} sceneId={scene.id} flags={state.flags} origin={state.origin} handle={state.handle} artwork={preferences.artwork !== "none"} />
               <div>
                 <p className="kicker"><span key={locationLabel} className="location-entry" aria-hidden="true" />
                   {districtIdentity && <span className="district-emblem"><Symbol name={districtIdentity.symbol} /></span>}

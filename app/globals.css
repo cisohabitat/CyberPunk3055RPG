@@ -1651,12 +1651,10 @@ html[data-motion="reduce"] .location-entry, html[data-motion="reduce"] .portrait
 .guide-quick-start li { padding-left: .2rem; }
 .guide-intro .guide-index { padding: .65rem 0; gap: .25rem 1rem; margin: .75rem 0; }
 @media (max-width: 700px) {
-  .scene:not(.finale) .scene-row { grid-template-columns: 72px minmax(0,1fr); gap: .75rem; }
-  .scene:not(.finale) .scene-row .portrait-frame { display: block; width: 72px; }
-  .scene:not(.finale) .scene-row .portrait, .scene:not(.finale) .scene-row .portrait-placeholder { width: 72px; height: 96px; }
-  .scene:not(.finale) .scene-row .portrait-frame figcaption { height: 3.75rem; padding: .3rem; font-size: .75rem; }
-  .scene:not(.finale) .scene-row .portrait-role { display: none; }
-  .scene:not(.finale) .scene-row .speaker[data-role-only="true"] { display: block; }
+  .scene:not(.finale) .scene-row { grid-template-columns: minmax(0,1fr); gap: .75rem; }
+  .scene:not(.finale) .scene-row > div { order: -1; }
+  .scene:not(.finale) .scene-row .portrait-frame { width: 100%; }
+  .scene:not(.finale) .scene-row .portrait-frame figcaption { height: 5.5rem; }
   .kit-shop > .testimony-sources, .guide-quick-start ol { grid-template-columns: minmax(0,1fr); }
   .guide-quick-start li { font-size: .95rem; line-height: 1.5; }
   .guide-intro { padding: 1.25rem; }
