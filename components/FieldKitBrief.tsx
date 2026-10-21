@@ -7,7 +7,8 @@ export function FieldKitBrief({ state }: { state: GameState }) {
   const missions = ["act2_witness_plan", "act2_witness_door", "act2_witness_checkpoint", "act2_archive_prep", "act2_archive_door"];
   const kits = shopping ? FIELD_KITS : equippedKits(state);
   if (!shopping && (!missions.includes(state.sceneId) || kits.length === 0)) return null;
-  return <aside className="transfer-brief" aria-label={shopping ? "Compare field equipment" : "Equipped field kit"} data-testid="field-kit-brief">
+  return <aside className={`transfer-brief field-kit-brief${shopping ? " kit-shop" : ""}`} aria-label={shopping ? "Compare field equipment" : "Equipped field kit"} data-testid="field-kit-brief">
+    {shopping && <h2>Compare field equipment</h2>}
     {shopping && <p>One field kit this week · <strong>{state.creds} creds available</strong>. Private witness care costs 90; staffed recovery costs 45.</p>}
     <dl className="testimony-sources">
       {kits.map((kit) => {

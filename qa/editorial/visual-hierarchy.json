@@ -1,0 +1,194 @@
+{
+  "date": "2026-10-21",
+  "baselineProductionRevision": "37ae7b811b9c47d1591b81f6004dc1de93af667e",
+  "workingBaseRevision": "113dabe91db52c1406a79a8248bfe71a43a87dc2",
+  "testedSources": {
+    "components/PlayScreen.tsx": "28c654c9a9eb20bd55e2a4a8e68dc80b0fcfdf380f08a11bdbe5a4330e9abb30",
+    "components/FieldKitBrief.tsx": "e65125a1aa7c11b9168d38030e4cfcf4f2cbb9172d3fe2a12f8d6c3b7e3413f6",
+    "components/GuideScreen.tsx": "137521f9107a056136f93a9b1959edcdab7609faf1ce70e6496abb09a5fecbcf",
+    "app/globals.css": "fc689514dbcb6bf1e40ddbe26b1a96477208a18eeb96b7eb676eabd0af43c6bd",
+    "tests/story-hierarchy.spec.ts": "8304063160bd23eaa5205c6e2d773c7eed237d4331c91e1c98e1136a9140d98b"
+  },
+  "media": {
+    "newScenes": 0,
+    "newArt": 0,
+    "newVoices": 0,
+    "bindingSha256": "15ae8b35c16b330b545f001e23dc75b5f4bd131225347f616ab76c1b7088f0bd"
+  },
+  "views": [
+    {
+      "name": "title",
+      "width": 390,
+      "proseTop": null,
+      "previousProseTop": null,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "opening",
+      "width": 390,
+      "proseTop": 615.3125,
+      "previousProseTop": 879.5625,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "edda",
+      "width": 390,
+      "proseTop": 522.546875,
+      "previousProseTop": 780.796875,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "workshop",
+      "width": 390,
+      "proseTop": 522.546875,
+      "previousProseTop": 2611.203125,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "memory",
+      "width": 390,
+      "proseTop": 579.34375,
+      "previousProseTop": 773.609375,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "finale",
+      "width": 390,
+      "proseTop": 443.671875,
+      "previousProseTop": 443.671875,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "guide",
+      "width": 390,
+      "proseTop": null,
+      "previousProseTop": null,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "title",
+      "width": 1440,
+      "proseTop": null,
+      "previousProseTop": null,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "opening",
+      "width": 1440,
+      "proseTop": 572.15625,
+      "previousProseTop": 1182.765625,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "edda",
+      "width": 1440,
+      "proseTop": 499.265625,
+      "previousProseTop": 819.328125,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "workshop",
+      "width": 1440,
+      "proseTop": 499.265625,
+      "previousProseTop": 1946.3125,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "memory",
+      "width": 1440,
+      "proseTop": 560.859375,
+      "previousProseTop": 844.828125,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "finale",
+      "width": 1440,
+      "proseTop": 423.375,
+      "previousProseTop": 423.375,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "guide",
+      "width": 1440,
+      "proseTop": null,
+      "previousProseTop": null,
+      "overflow": false,
+      "errors": []
+    }
+  ],
+  "performance": {
+    "budget": 2097152,
+    "samples": [
+      {
+        "width": 390,
+        "artwork": "full",
+        "totalBytes": 1127605,
+        "overflow": false,
+        "goalVisible": true
+      },
+      {
+        "width": 390,
+        "artwork": "none",
+        "totalBytes": 452531,
+        "overflow": false,
+        "goalVisible": true
+      },
+      {
+        "width": 1440,
+        "artwork": "full",
+        "totalBytes": 1616033,
+        "overflow": false,
+        "goalVisible": true
+      },
+      {
+        "width": 1440,
+        "artwork": "none",
+        "totalBytes": 1117527,
+        "overflow": false,
+        "goalVisible": true
+      }
+    ]
+  },
+  "campaign": {
+    "route": "qa/routes/integration-names.json",
+    "visits": 63,
+    "reloads": 16,
+    "final": "ending_names",
+    "input": "Tab, Shift+Tab, Enter, Space, arrows and typing; no pointer actions or programmatic focus",
+    "sound": false,
+    "errors": [],
+    "failedMedia": []
+  },
+  "limitations": [
+    "Internal AI visual review and authored campaign, not independent player or artistic acceptance.",
+    "Linux Chromium/WebKit at synthetic viewports; no physical iPhone confirmation.",
+    "The first prose budgets apply to sampled default-text scenes. Enlarged text prioritizes complete readable content.",
+    "Hosted full browser and exact-commit production checks remain required."
+  ],
+  "validation": {
+    "sourceTests": 682,
+    "uniqueTargetedBrowserCases": 180,
+    "finalRefinementRepeatedCases": 33,
+    "localBrowserProfiles": [
+      "Chromium",
+      "phone (Chromium)",
+      "Linux WebKit"
+    ],
+    "typeScript": "passed",
+    "productionBuild": "passed",
+    "fullHostedCI": "required after push"
+  }
+}

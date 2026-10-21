@@ -26,14 +26,23 @@ export function GuideScreen({ artwork, music, onSettings }: { artwork: boolean; 
       <div className="guide-intro">
         <p className="eyebrow">Before you take the stool</p>
         <h1 id="guide-title" tabIndex={-1}>A runner’s field guide</h1>
+        <section className="guide-quick-start" aria-labelledby="guide-quick-title" data-testid="guide-quick-start">
+          <h2 id="guide-quick-title">Play in four steps</h2>
+          <ol>
+            <li><strong>Read.</strong> Follow the visible goal and read the scene.</li>
+            <li><strong>Choose.</strong> Selecting an option commits it.</li>
+            <li><strong>Check.</strong> Review odds and costs before rolling 1d10.</li>
+            <li><strong>Return.</strong> Progress saves in this browser; export a backup in Saves.</li>
+          </ol>
+        </section>
+        <nav className="guide-index" aria-label="Field guide chapters">
+          <a href="#guide-city">Enter the city</a><a href="#guide-first-run">Your first run</a><a href="#guide-checks">Choices & dice</a><a href="#guide-memory">Keep your word</a><a href="#guide-controls">Controls & saves</a>
+        </nav>
         <p className="guide-deck">The rain is already here. The offer can wait until you know how to listen.</p>
         <p>Welcome to Saint Shard, a solo story RPG. Read, choose and carry the consequences into the next conversation. This guide introduces the city and the rules while leaving the job’s discoveries for your run.</p>
         <MenuMusic {...music} />
       </div>
       {artwork && <SceneIllustration art={OPENING_ART} />}
-      <nav className="guide-index" aria-label="Field guide chapters">
-        <a href="#guide-city">Enter the city</a><a href="#guide-first-run">Your first run</a><a href="#guide-checks">Choices & dice</a><a href="#guide-memory">Keep your word</a><a href="#guide-controls">Controls & saves</a>
-      </nav>
       <section className="guide-chapter" id="guide-city" aria-labelledby="guide-city-title">
         <p className="eyebrow">01 · Beneath the dome</p><h2 id="guide-city-title">Enter Kite City</h2>
         {GUIDE_LORE.map(entry => <section key={entry.title}><h3>{entry.title}</h3><p>{entry.text}</p></section>)}

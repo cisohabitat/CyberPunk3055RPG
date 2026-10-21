@@ -1622,3 +1622,46 @@ html[data-motion="reduce"] .location-entry, html[data-motion="reduce"] .portrait
 .overlay { overscroll-behavior: contain; }
 .conversation-context { margin-block: 1rem; padding: .65rem .8rem; border-left: 2px solid var(--line); }
 .conversation-context summary, .finale-commitments summary { min-height: 44px; padding-block: .6rem; cursor: pointer; }
+
+/* Story introductions lead; detailed commitments and budgets sit by decisions. */
+.scene:not(.finale) .scene-row { grid-template-columns: 180px minmax(0,1fr); align-items: start; gap: 1rem; }
+.scene:not(.finale) .scene-row .portrait-frame { display: grid; grid-template-columns: 64px minmax(0,1fr); align-items: center; width: 180px; max-width: 100%; }
+.scene:not(.finale) .scene-row .portrait, .scene:not(.finale) .scene-row .portrait-placeholder { width: 64px; height: 85.3333px; }
+.scene:not(.finale) .scene-row .portrait-frame figcaption { height: 6.25rem; padding: .4rem .5rem; font-size: .82rem; }
+.scene:not(.finale) .scene-row .portrait-role { display: block; font-size: .72rem; }
+.scene:not(.finale) .scene-row .speaker { color: var(--muted); margin-top: .5rem; font-size: .75rem; }
+.scene:not(.finale) .scene-row .speaker[data-role-only="true"] { display: none; }
+.scene .chapter-transition { padding: .65rem 1rem; margin: .85rem 0; }
+.scene .chapter-transition h2 { font-size: 1.7rem; }
+.scene .chapter-number { margin-bottom: .15rem; }
+.scene .chapter-motif { width: 40px; height: 40px; }
+.decision-context { margin-block: 1.25rem; }
+.decision-context .objective-brief { background: transparent; border-left: 0; border-top: 1px solid var(--line); padding: .8rem 0; }
+.decision-context .objective-brief .next-step strong { color: var(--ink); }
+.decision-context .objective-brief > details > summary { color: var(--muted); font-size: .88rem; }
+.field-kit-brief { background: transparent; border: 0; border-top: 1px solid var(--line); padding: 1rem 0; }
+.field-kit-brief h2 { margin-top: 0; font: 600 1.2rem/1.4 var(--font-display),sans-serif; }
+.field-kit-brief > p > strong { display: inline; }
+.kit-shop > .testimony-sources { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; }
+.kit-shop > .testimony-sources > div { padding: .8rem; border: 1px solid var(--line); margin: 0; }
+.kit-shop > .testimony-sources dd { margin-inline-start: 0; }
+.kit-shop > .testimony-sources dt { font-weight: 600; margin-bottom: .5rem; }
+.guide-quick-start h2 { font: 600 1.2rem/1.4 var(--font-display),sans-serif; margin: .5rem 0; }
+.guide-quick-start ol { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: .65rem 2rem; padding-left: 1.3rem; margin: .75rem 0; }
+.guide-quick-start li { padding-left: .2rem; }
+.guide-intro .guide-index { padding: .65rem 0; gap: .25rem 1rem; margin: .75rem 0; }
+@media (max-width: 700px) {
+  .scene:not(.finale) .scene-row { grid-template-columns: 72px minmax(0,1fr); gap: .75rem; }
+  .scene:not(.finale) .scene-row .portrait-frame { display: block; width: 72px; }
+  .scene:not(.finale) .scene-row .portrait, .scene:not(.finale) .scene-row .portrait-placeholder { width: 72px; height: 96px; }
+  .scene:not(.finale) .scene-row .portrait-frame figcaption { height: 3.75rem; padding: .3rem; font-size: .75rem; }
+  .scene:not(.finale) .scene-row .portrait-role { display: none; }
+  .scene:not(.finale) .scene-row .speaker[data-role-only="true"] { display: block; }
+  .kit-shop > .testimony-sources, .guide-quick-start ol { grid-template-columns: minmax(0,1fr); }
+  .guide-quick-start li { font-size: .95rem; line-height: 1.5; }
+  .guide-intro { padding: 1.25rem; }
+  .guide-intro .guide-deck { font-size: 1.1rem; }
+}
+@media (forced-colors: active) {
+  .decision-context .objective-brief, .field-kit-brief, .kit-shop > .testimony-sources > div { border-color: CanvasText; }
+}

@@ -353,10 +353,10 @@ export function PlayScreen({
                   </>
                 )}
                 {scene.speaker && !scene.finale && (!compactHeader || dialogueQueue.some(line => line.speaker !== scene.speaker)) && (
-                  <p className="speaker">
-                    {dialogueQueue.some(line => line.speaker !== scene.speaker) ? "With " : ""}
-                    {scene.speaker}
-                    {speakerRole(scene.speaker) ? ` · ${speakerRole(scene.speaker)}` : ""}
+                  <p className="speaker" data-role-only={!dialogueQueue.some(line => line.speaker !== scene.speaker)}>
+                    {dialogueQueue.some(line => line.speaker !== scene.speaker)
+                      ? `With ${scene.speaker}${speakerRole(scene.speaker) ? ` · ${speakerRole(scene.speaker)}` : ""}`
+                      : speakerRole(scene.speaker)}
                   </p>
                 )}
                 {delta.length > 0 && (
@@ -381,15 +381,8 @@ export function PlayScreen({
             {restoreNotice && <p className="restore-notice" role="status" data-testid="restore-notice">{restoreNotice}</p>}
             <ChapterTransition sceneId={scene.id} />
             {direction ? <PivotalScene direction={direction} finale={Boolean(finale)} investigation={Boolean(investigation)} art={preferences.artwork !== "none" ? illustration : undefined}>{narrative}</PivotalScene>
-              : preferences.artwork !== "none" && illustration && <SceneIllustration art={illustration} reading={!chapterPresentation(scene.id)} />}
-            {!scene.finale && <ObjectiveBrief state={state} />}
+              : preferences.artwork !== "none" && illustration && <SceneIllustration art={illustration} reading />}
             {canConsultSources(state) && <div className="investigation-tools"><button className="ghost" type="button" data-testid="consult-sources" aria-haspopup="dialog" disabled={Boolean(activeChoice) || modalOpen} onClick={() => setNotebookOpen(true)}>Consult acquired sources</button></div>}
-            {!scene.finale && <>
-              <TransferBrief state={state} />
-              <ArchiveBrief state={state} />
-              {!scene.memory && <TestimonyBrief state={state} />}
-              <FieldKitBrief state={state} />
-            </>}
             {scene.id === "memory_table" && <MemoryPlate key={scene.id} state={state} choices={choices} onInspect={pick} artwork={preferences.artwork !== "none"} numberShortcuts={preferences.numberShortcuts} />}
             {!direction && narrative}
             {visibleCount < paragraphs.length && (
@@ -405,6 +398,13 @@ export function PlayScreen({
             {preferences.reading === "paragraph" && paragraphs.length > 1 && <p className="reading-progress hint" role="status" aria-atomic="true">{visibleCount} of {paragraphs.length} paragraphs shown</p>}
             {dialogueQueue.length > 0 && <VoiceLine key={scene.id} line={dialogue} lines={dialogueQueue} automatic={preferences.autoVoices} paused={audioPaused && preferences.sound} enabled={voicesEnabled} onSpeaking={setSpeaking} />}
             {visibleCount === paragraphs.length && <ConversationContext state={state} speaker={scene.speaker} />}
+            {!scene.finale && <div className="decision-context" data-testid="decision-context">
+              <ObjectiveBrief state={state} />
+              <TransferBrief state={state} />
+              <ArchiveBrief state={state} />
+              {!scene.memory && <TestimonyBrief state={state} />}
+              <FieldKitBrief state={state} />
+            </div>}
             {scene.id === "act2_archive_compare" && <ArchiveCatalog state={state} choices={choices} onChoose={pick} numberShortcuts={preferences.numberShortcuts} />}
             {scene.id === "memory_sequence" && <MemoryTimeline state={state} choices={choices} onPlace={pick} artwork={preferences.artwork !== "none"} reducedMotion={reduceMotion} numberShortcuts={preferences.numberShortcuts} />}
             {["act2_route_map", "act2_route_exit", "act2_route_review", "act2_route_crossing"].includes(scene.id) && <RouteBoard state={state} />}
