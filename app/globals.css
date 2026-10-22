@@ -1073,7 +1073,7 @@ html[data-motion="reduce"] .fragment-placed { animation: none; }
 .voice-line > .ghost:hover, .voice-line > .ghost:focus-visible { border-color: var(--cyan); }
 .voice-line .hint { flex-basis: 100%; margin: .2rem 0; font-size: .85rem; line-height: 1.6; }
 .voice-line > details { flex-basis: 100%; min-width: 0; }
-.voice-line > details > summary { min-height: 44px; padding-block: .6rem; font-size: .9rem; color: var(--muted); cursor: pointer; }
+.voice-line > details > summary { min-height: 45px; padding-block: .6rem; font-size: .9rem; color: var(--muted); cursor: pointer; }
 .voice-line > details[open] { padding-bottom: .5rem; }
 .scene .prose { max-width: 66ch; line-height: 1.85; }
 .scene > .prose { margin-inline: auto; }
