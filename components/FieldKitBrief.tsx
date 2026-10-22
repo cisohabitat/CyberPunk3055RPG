@@ -1,11 +1,13 @@
 import { FIELD_KITS, equippedKits, fieldKitBudget, trainedKitAdvice } from "@/lib/loadout";
 import type { GameState } from "@/lib/types";
 import { kitComparison } from "@/lib/kit-comparison";
+import { getScene, presentChoices } from "@/lib/engine";
 
 export function FieldKitBrief({ state }: { state: GameState }) {
   const shopping = state.sceneId === "act2_workshop";
   const missions = ["act2_witness_plan", "act2_witness_door", "act2_witness_checkpoint", "act2_archive_prep", "act2_archive_door"];
   const kits = shopping ? FIELD_KITS : equippedKits(state);
+  const purchases = shopping ? presentChoices(state, getScene(state.sceneId)) : [];
   if (!shopping && (!missions.includes(state.sceneId) || kits.length === 0)) return null;
   return <aside className={`transfer-brief field-kit-brief${shopping ? " kit-shop" : ""}`} aria-label={shopping ? "Compare field equipment" : "Equipped field kit"} data-testid="field-kit-brief">
     {shopping && <h2>Compare field equipment</h2>}
@@ -13,6 +15,7 @@ export function FieldKitBrief({ state }: { state: GameState }) {
     <dl className="testimony-sources">
       {kits.map((kit) => {
         const budget = fieldKitBudget(state.creds, kit.price);
+        const purchase = purchases.find(choice => choice.id === `buy-${kit.id}`);
         return <div key={kit.id}><dt>{kit.name}{shopping ? ` · ${kit.price} creds` : " · equipped"}</dt><dd>
           {kit.uses}{state.flags[`perk_${kit.stat}`] ? " Your practiced skill has its own methods." : " Works without training this skill."}
           {shopping && trainedKitAdvice(state, kit.stat) && <details className="kit-training" data-testid={`training-advice-${kit.id}`}>
@@ -30,6 +33,16 @@ export function FieldKitBrief({ state }: { state: GameState }) {
               {!budget.careGap && (budget.careAndCourierGap ? `Adding a private courier would need ${budget.careAndCourierGap} more.` : "A private courier also fits that combined budget.")}
             </> : `Need ${-budget.remaining} more creds to buy this kit.`}
           </p>}
+          {shopping && <div className="kit-purchase-review">
+            {purchase ? <>
+              <button className="ghost" type="button" data-testid={`review-purchase-${kit.id}`} disabled={!purchase.enabled} onClick={() => {
+                const target = document.getElementById(`choice-label-${purchase.id}`)?.closest("button");
+                target?.focus({ preventScroll: true });
+                target?.scrollIntoView({ block: "center", behavior: "instant" });
+              }}>Review {kit.name} purchase</button>
+              <p className="hint">{purchase.enabled ? "Find the purchase choice and review it. No money is spent until you select that choice." : purchase.disabledReason}</p>
+            </> : <p className="hint">{state.items.includes(kit.id) ? "This kit is equipped." : "No purchase choice is available for this kit in this visit."}</p>}
+          </div>}
         </dd></div>;
       })}
     </dl>

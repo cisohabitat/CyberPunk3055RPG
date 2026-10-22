@@ -1,0 +1,243 @@
+{
+  "date": "2026-10-22",
+  "baseRevision": "529f57e40b872b3e72900fcf3860d7c62a867d9d",
+  "previousFailure": {
+    "run": 39696354307,
+    "profile": "firefox",
+    "reason": "43.99993896484375px dialogue button versus unchanged 44px minimum; reserved 45px."
+  },
+  "testedSources": {
+    "components/FieldKitBrief.tsx": "e7580382f3853e0bae6001f2e113e39f5a0b9ff4e3865c559c629f441b9d46ec",
+    "components/PlayScreen.tsx": "7801c1becbc602e5e05fda53d996c0bd4a51c156e4cbc4af3f82fafb4a3e2273",
+    "app/globals.css": "c3b882e13d33d0c1e8b7b6933c9dc91c5bfca4dd0b140d7f317b5814dcb4bf7b",
+    "tests/decision-clarity.spec.ts": "1670fbff2368f373a1a0875f06a507011ac894162f15410d06ab9e589092cacb"
+  },
+  "validation": {
+    "sourceTests": 682,
+    "browserCases": 165,
+    "localProfiles": [
+      "Chromium",
+      "phone (Chromium)",
+      "Linux WebKit"
+    ],
+    "typeScript": "passed",
+    "build": "passed",
+    "loadProbe": "passed",
+    "hostedFullCI": "required after push",
+    "productionAlias": "previous commit 37ae7b8 before push"
+  },
+  "views": [
+    {
+      "name": "title",
+      "width": 390,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "opening",
+      "width": 390,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "edda",
+      "width": 390,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "workshop",
+      "width": 390,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "memory",
+      "width": 390,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "finale",
+      "width": 390,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "memo",
+      "width": 390,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "mara-why",
+      "width": 390,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "mission",
+      "width": 390,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "guide",
+      "width": 390,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "title",
+      "width": 768,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "opening",
+      "width": 768,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "edda",
+      "width": 768,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "workshop",
+      "width": 768,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "memory",
+      "width": 768,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "finale",
+      "width": 768,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "memo",
+      "width": 768,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "mara-why",
+      "width": 768,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "mission",
+      "width": 768,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "guide",
+      "width": 768,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "title",
+      "width": 1440,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "opening",
+      "width": 1440,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "edda",
+      "width": 1440,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "workshop",
+      "width": 1440,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "memory",
+      "width": 1440,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "finale",
+      "width": 1440,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "memo",
+      "width": 1440,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "mara-why",
+      "width": 1440,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "mission",
+      "width": 1440,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "name": "guide",
+      "width": 1440,
+      "overflow": false,
+      "errors": []
+    }
+  ],
+  "campaigns": [
+    {
+      "route": "qa/routes/integration-names.json",
+      "visits": 63,
+      "reloads": 16,
+      "reading": "all",
+      "artwork": "full",
+      "width": 390,
+      "final": "ending_names",
+      "errors": [],
+      "failedMedia": [],
+      "sound": false
+    },
+    {
+      "route": "qa/routes/integration-quiet.json",
+      "visits": 81,
+      "reloads": 32,
+      "reading": "paragraph",
+      "artwork": "none",
+      "width": 320,
+      "final": "ending_quiet",
+      "errors": [],
+      "failedMedia": [],
+      "sound": false
+    }
+  ],
+  "maximumInitialTransferIncludingHtml": 1616512,
+  "limits": [
+    "Internal AI review and directed authored campaigns, not independent player acceptance.",
+    "Synthetic Linux viewports, not physical iPhone confirmation.",
+    "No art/voice/story/engine/save replacements; no CI or touch-target assertion is relaxed."
+  ]
+}

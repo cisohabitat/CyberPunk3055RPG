@@ -467,11 +467,11 @@ export function PlayScreen({
                         <span className="choice-action-mark" aria-hidden="true" title={presentation.label}><Symbol name={presentation.symbol} /></span>
                         <span className="odds" id={`choice-detail-${choice.id}`}>
                           {choice.disabledReason !== undefined ? <span className="choice-meta" data-kind="unavailable">{choice.disabledReason}</span> : <>
-                            {odds && <span className="choice-meta" data-kind="check">{STAT_INFO[odds.stat].name} · DC {odds.dc} · {chance}</span>}{" "}
-                            {choice.detail && <span className="choice-meta" data-kind="detail">{choice.detail}</span>}{" "}
+                            {odds && <span className="choice-fact"><span className="choice-fact-label">Check</span><span className="choice-meta" data-kind="check">{STAT_INFO[odds.stat].name} · DC {odds.dc} · {chance}</span></span>}{" "}
+                            {choice.detail && <span className="choice-fact"><span className="choice-fact-label">Details</span><span className="choice-meta" data-kind="detail">{choice.detail}</span></span>}{" "}
                             {openPromises.length > 0 && [choice.next, choice.nextSuccess, choice.nextFail].some(next => typeof next === "string" && ["ending_week_wards", "ending_week_deal", "ending_exposed"].includes(next)) && <span className="choice-meta" data-kind="promise">{`${openPromises.length} campaign ${openPromises.length === 1 ? "promise remains" : "promises remain"} unresolved if the week closes: ${openPromises.map(row => row.title).join("; ")}`}</span>}{" "}
-                            {effects.length > 0 && <span className="choice-meta" data-kind="effects">{effects.join(" · ")}</span>}{" "}
-                            {costs.length > 0 && <span className="choice-meta" data-kind="costs">{costs.join("; ")}</span>}
+                            {effects.length > 0 && <span className="choice-fact"><span className="choice-fact-label">Changes</span><span className="choice-meta" data-kind="effects">{effects.join(" · ")}</span></span>}{" "}
+                            {costs.length > 0 && <span className="choice-fact"><span className="choice-fact-label">Roll outcomes</span><span className="choice-meta" data-kind="costs">{costs.join("; ")}</span></span>}
                           </>}
                         </span>
                       </button>

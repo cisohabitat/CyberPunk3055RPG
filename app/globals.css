@@ -1069,7 +1069,7 @@ html[data-contrast="high"] .title-brand { aspect-ratio: auto; }
 html[data-motion="reduce"] .fragment-placed { animation: none; }
 @media (prefers-reduced-motion: reduce) { .fragment-placed { animation: none; } }
 .voice-line { display: flex; flex-wrap: wrap; align-items: center; gap: .35rem .6rem; padding: .8rem 0 0; border-top: 1px solid var(--line); margin: 1.5rem 0; }
-.voice-line > .ghost { min-height: 44px; font-size: .8rem; letter-spacing: .025em; text-transform: none; border-color: transparent; padding-inline: .65rem; }
+.voice-line > .ghost { min-height: 45px; font-size: .8rem; letter-spacing: .025em; text-transform: none; border-color: transparent; padding-inline: .65rem; }
 .voice-line > .ghost:hover, .voice-line > .ghost:focus-visible { border-color: var(--cyan); }
 .voice-line .hint { flex-basis: 100%; margin: .2rem 0; font-size: .85rem; line-height: 1.6; }
 .voice-line > details { flex-basis: 100%; min-width: 0; }
@@ -1662,4 +1662,31 @@ html[data-motion="reduce"] .location-entry, html[data-motion="reduce"] .portrait
 }
 @media (forced-colors: active) {
   .decision-context .objective-brief, .field-kit-brief, .kit-shop > .testimony-sources > div { border-color: CanvasText; }
+}
+
+/* Read-only decision facts retain the engine's exact costs and outcome limits. */
+.choice-fact { display: grid; grid-template-columns: 6rem minmax(0,1fr); gap: .5rem; margin-top: .4rem; text-transform: none; }
+.choice-fact-label { color: var(--muted); font: .75rem/1.6 var(--font-display),sans-serif; letter-spacing: .04em; }
+.choice-fact [data-kind="check"] { color: var(--cyan); }
+.choice-fact [data-kind="costs"] { color: var(--amber); }
+.kit-purchase-review { border-top: 1px solid var(--line); margin-top: .8rem; padding-top: .75rem; }
+.kit-purchase-review button { width: 100%; min-height: 45px; white-space: normal; text-align: left; }
+.kit-purchase-review .hint { margin-bottom: 0; }
+/* Recorded testimony and closing dialogue keep their existing words and pacing. */
+.pivotal-stage[data-kind="recording"] { border-top-color: var(--amber); }
+.pivotal-stage .pivotal-label { font-size: .9rem; letter-spacing: .06em; }
+.pivotal-stage .pivotal-dialogue { padding-block: .35rem; background: linear-gradient(90deg,rgba(94,242,255,.035),transparent); }
+.pivotal-stage[data-kind="recording"] .pivotal-dialogue { background: linear-gradient(90deg,rgba(255,176,32,.045),transparent); }
+.finale-reflection .finale-carry { padding-block: 1rem; }
+.finale-reflection .finale-carry h2 { color: var(--ink); }
+.finale-reflection .aftermath { margin-top: 1.75rem; }
+@media (min-width: 1101px) {
+  .pivotal-stage.with-art .pivotal-art { position: sticky; top: calc(var(--header-h, 85px) + .5rem); align-self: start; }
+}
+@media (max-width: 700px) {
+  .choice-fact { grid-template-columns: minmax(0,1fr); gap: .1rem; }
+}
+@media (forced-colors: active) {
+  .choice-fact [data-kind="check"], .choice-fact [data-kind="costs"], .choice-fact-label { color: CanvasText; }
+  .pivotal-stage .pivotal-dialogue { background: none; }
 }
