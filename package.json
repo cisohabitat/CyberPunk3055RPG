@@ -2,6 +2,7 @@
   "name": "saint-shard",
   "private": true,
   "scripts": {
+    "clean": "node scripts/clean.mjs",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
