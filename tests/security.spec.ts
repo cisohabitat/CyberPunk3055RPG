@@ -92,6 +92,8 @@ test("invalid and oversized imports preserve the active run and manual slot", as
   for (const [content, message] of [
     ['{"format":"saint-shard-save","schema":1}', "integrity check"],
     [JSON.stringify({ ...initial, sceneId: "__proto__" }), "supported"],
+    [JSON.stringify({ ...initial, journal: Array(50_000).fill("legacy") }), "too complex"],
+    [JSON.stringify(initial).slice(0, -1) + ',"extra":' + "[".repeat(12_000) + "0" + "]".repeat(12_000) + "}", "too complex"],
     [" ".repeat(1_048_577), "under 1 MB"],
   ]) {
     await page.getByLabel("Import a saved run").setInputFiles({ name: "invalid.json", mimeType: "application/json", buffer: Buffer.from(content) });

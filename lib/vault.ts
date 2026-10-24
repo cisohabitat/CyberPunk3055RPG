@@ -1,4 +1,4 @@
-import { MAX_SAVE_LENGTH, parseSave, readStored, removeStored, writeStored } from "./storage";
+import { MAX_SAVE_LENGTH, parseSave, readStored, removeStored, withinJsonLimits, writeStored } from "./storage";
 import type { GameState } from "./types";
 
 export const SLOT_IDS = [1, 2, 3] as const;
@@ -18,6 +18,7 @@ export function exportRun(state: GameState): string {
 
 export function importRun(raw: string): GameState {
   if (raw.length > MAX_SAVE_LENGTH) throw new Error("This save is too large. Choose a Saint Shard save under 1 MB.");
+  if (!withinJsonLimits(raw)) throw new Error("This save is too complex. Choose another Saint Shard save.");
   let data;
   try { data = JSON.parse(raw); } catch { throw new Error("That file is not valid JSON. Your current run is unchanged."); }
   if (data?.format === "saint-shard-save") {
@@ -33,7 +34,7 @@ export function importRun(raw: string): GameState {
 function key(id: SlotId) { return `saint-shard-slot-${id}`; }
 export function loadSlot(id: SlotId): Snapshot | null {
   const raw = readStored(key(id));
-  if (!raw || raw.length > MAX_SAVE_LENGTH) return null;
+  if (!raw || !withinJsonLimits(raw)) return null;
   try {
     const data = JSON.parse(raw) as Snapshot;
     if (data.format !== "saint-shard-save" || data.schema !== 1 || typeof data.savedAt !== "string" || !Number.isFinite(Date.parse(data.savedAt))) return null;

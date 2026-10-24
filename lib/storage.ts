@@ -11,6 +11,27 @@ const TEXT_KEY = "saint-shard-text";
 const CODEX_KEY = "saint-shard-codex";
 export const MAX_SAVE_LENGTH = 1_048_576;
 
+// Bound structure as well as bytes before parsing or serializing untrusted JSON.
+// Punctuation inside quoted text is content, including escaped quotes/slashes.
+export function withinJsonLimits(raw: string, maxLength = MAX_SAVE_LENGTH): boolean {
+  if (raw.length > maxLength) return false;
+  let quoted = false, depth = 0, structure = 0;
+  for (let index = 0; index < raw.length; index++) {
+    const char = raw[index];
+    if (quoted) {
+      if (char === "\\") index++;
+      else if (char === '"') quoted = false;
+      continue;
+    }
+    if (char === '"') quoted = true;
+    else if (char === "{" || char === "[") { depth++; structure++; }
+    else if (char === "}" || char === "]") depth--;
+    else if (char === "," || char === ":") structure++;
+    if (depth > 64 || structure > 8_192) return false;
+  }
+  return true;
+}
+
 function isRecord(value: unknown): value is Record<string, unknown> {
   return value !== null && typeof value === "object" && !Array.isArray(value);
 }
@@ -113,7 +134,7 @@ function migrate(data: Record<string, unknown>): GameState | null {
 }
 
 export function parseSave(raw: string | null): GameState | null {
-  if (!raw || raw.length > MAX_SAVE_LENGTH) return null;
+  if (!raw || !withinJsonLimits(raw)) return null;
   try {
     const data = JSON.parse(raw) as Record<string, unknown>;
     if (data?.version !== 1 && data?.version !== 2) return null;
@@ -165,7 +186,7 @@ export function emptyCodex(): Codex {
 }
 
 export function parseCodex(raw: string | null): Codex {
-  if (!raw || raw.length > MAX_SAVE_LENGTH) return emptyCodex();
+  if (!raw || !withinJsonLimits(raw)) return emptyCodex();
   try {
     const data = JSON.parse(raw) as Codex;
     const seen = Array.isArray(data.seen)

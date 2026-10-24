@@ -17,6 +17,36 @@ afterEach(() => {
 });
 
 describe("untrusted local JSON", () => {
+  it("rejects collection amplification below the existing file-size limit", () => {
+    const raw = JSON.stringify({ ...state, journal: Array(50_000).fill("legacy") });
+    assert.ok(raw.length < MAX_SAVE_LENGTH);
+    assert.equal(parseSave(raw), null);
+    assert.throws(() => importRun(raw), /too complex/);
+    const codex = JSON.stringify({ seen: Array.from({ length: 10_000 }, () => ({ id: "ending_names", title: "Names" })) });
+    assert.ok(codex.length < MAX_SAVE_LENGTH);
+    assert.deepEqual(parseCodex(codex), emptyCodex());
+  });
+
+  it("rejects deeply nested metadata before snapshot serialization can overflow", () => {
+    const deep = "[".repeat(12_000) + "0" + "]".repeat(12_000);
+    const raw = JSON.stringify(state).slice(0, -1) + ',"extra":' + deep + "}";
+    assert.equal(parseSave(raw), null);
+    assert.throws(() => importRun(raw), /too complex/);
+    const envelope = '{"format":"saint-shard-save","schema":1,"checksum":"00000000","state":' + raw + "}";
+    assert.throws(() => importRun(envelope), /too complex/);
+    Object.defineProperty(globalThis, "window", { configurable: true, value: { localStorage: { getItem: () => envelope } } });
+    assert.equal(loadSlot(1), null);
+    const preferences = '{"music":1,"extra":' + "[".repeat(100) + "0" + "]".repeat(100) + "}";
+    assert.deepEqual(parsePreferences(preferences), DEFAULT_PREFERENCES);
+  });
+
+  it("does not count braces, commas, escaped quotes or backslashes inside saved text as structure", () => {
+    const text = '[{"note":"a \\ path and quoted words"}],'.repeat(1_000);
+    const saved = { ...state, journal: [{ id: "legacy-note", text }] };
+    assert.deepEqual(importRun(JSON.stringify(saved)), saved);
+    assert.deepEqual(importRun(exportRun(saved)), saved);
+  });
+
   it("renders reserved journal ids and markup as text instead of inherited objects", () => {
     for (const id of ["__proto__", "constructor", "toString", "hasOwnProperty"]) {
       const restored = importRun(JSON.stringify({ ...state, journal: [{ id, text: "<img src=x onerror=alert(1)>" }] }));

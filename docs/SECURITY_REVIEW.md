@@ -1,5 +1,15 @@
 # Security review
 
+## Follow-up: structural JSON limits (24 October 2026)
+
+Reviewing `bcab5fb` reproduced two local-input issues below the existing 1 MiB limit: a 450,305-byte save restored 50,000 journal entries, and a 24,316-character save with deeply nested extra metadata raised `Maximum call stack size exceeded` during import serialization. No cross-user exploit or remote code execution was demonstrated. The collection result confirms excessive UI work can reach rendering; a browser crash was not induced or measured.
+
+All persisted JSON readers now check nesting and a structural-punctuation budget before parsing. Imports check before snapshot checksum serialization too. The limits are 64 nested containers and 8,192 opening-container/separator tokens outside strings, alongside the existing save/codex/slot and preference size limits. Escaped quotes, backslashes and punctuation inside text do not consume this structural budget. Existing schema validation still applies. Excessive imports receive a controlled error; stored invalid data uses existing backup/default behavior. Native snapshots, legacy saves and held dice retain their format and ordering.
+
+The fresh production-and-development dependency audit reported zero known vulnerabilities across 93 locked packages. Source review also covered rendering sinks, local asset/network paths, save-import races, bounded diagnostics, headers and the exact-commit CI gate. No new executable-HTML sink, dynamic-code execution or external runtime data destination was found. CSP still permits inline framework hydration as documented below; this is not a claim of strict inline-script protection or security certification. The earlier dated results below remain historical.
+
+Validation: all 685 source tests and the production build passed. Fourteen focused Chromium/phone browser cases passed, including actual excessive/deep file imports without replacing the active run or manual slot, escaping, reload/export, import races, headers, local artwork/fonts, gzip FLAC and the disabled optimizer endpoint. No local Firefox/WebKit or live deployment pass is claimed for this follow-up; full hosted four-profile CI still gates publication. A tracked-file scan of 1,479 files found no matches for common private-key/GitHub/AWS/provider-token patterns. It did not inspect Git history, untracked secrets or hosting/account permissions. Story, gameplay, artwork, audio and media bindings remain byte-identical. Logs are under `/tmp/security-oct24-*` outside Git.
+
 Reviewed 16 October 2026 against `a6a958ac8b5182bbdc10761c7bb4ed897303b65c`, with the fixes in this change. This is a source, dependency and local production-browser review, not a security certification or a guarantee against unknown vulnerabilities.
 
 ## Application and trust boundaries

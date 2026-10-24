@@ -862,3 +862,5 @@ Playback buttons and the adjacent voice-transcript control share that 45px minim
 ### Local generated-file cleanup
 
 Stop local development/test servers, then run `npm run clean` to remove the ignored Next.js build/cache, static export, Playwright output and TypeScript incremental cache. Run `npm run build` before the next `npm start`. The command uses fixed repository-relative paths and accepts no path arguments; it preserves dependencies, saves, configuration, source media, licenses and QA evidence. The file review found no unreferenced component/library modules or public assets without a documented use. Superseded local heap captures were removed separately; tracked historical review records remain.
+
+Save imports and stored JSON now have structural limits alongside their existing size limits. Excessive nesting and very large collections are rejected before parsing or snapshot serialization, with a clear import error that preserves the active run and manual slots. Quoted text, ordinary saves, legacy migration and held dice retain their existing behavior. See [the security review](docs/SECURITY_REVIEW.md).
