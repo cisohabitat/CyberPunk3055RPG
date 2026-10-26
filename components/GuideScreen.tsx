@@ -83,6 +83,8 @@ export function GuideScreen({ artwork, music, onSettings }: { artwork: boolean; 
       <section className="guide-chapter" id="guide-memory" aria-labelledby="guide-memory-title">
         <p className="eyebrow">04 · Carry what you know</p><h2 id="guide-memory-title">Keep your word</h2>
         <p>The journal keeps clues, claims and promises with their sources. The commitments panel shows what still needs your attention. Use the character sheet and, when available, Consult acquired sources to revisit what you actually learned.</p>
+        <p>In the notebook, Build a Ward Nine case connects acquired sources to a claim. Test the links, correct unsupported support and carry the tested account into archive work or a hearing. A case draft grants no evidence or permission.</p>
+        <p>After the archive briefing, the optional Archive mission plan lets you choose a reader or carbon approach and a failure contingency. Saving a plan is free; setup choices spend the shown money, effort or exposure. Staffed recovery keeps a paid ledger and free pause available. Withdrawal closes a failed search as unresolved. A carbon copy never authenticates an issuing key.</p>
         <ul className="guide-steps"><li><strong>Read a source before making a claim.</strong> A recorded recollection, an official record and independent corroboration can support different things.</li>
           <li><strong>Check what was completed.</strong> Accepting a job, arriving at a door and observing its handover are separate events.</li>
           <li><strong>Ask for the right permission.</strong> Safe transport, a private recording, future contact and public quotation each have their own terms.</li>

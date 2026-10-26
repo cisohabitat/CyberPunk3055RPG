@@ -22,6 +22,7 @@ export type Effect = {
 
 export type GameState = {
   caseFile?: import("./case-file").CaseFile;
+  archivePlan?: import("./archive-plan").ArchivePlan;
   version: 2;
   handle: string;
   givenName: string;
@@ -77,6 +78,7 @@ export type Choice = {
   hideIfJournal?: string;
   requireCreds?: number;
   requireStrain?: number;
+  maxStrain?: number;
   requireFaction?: { faction: FactionId; min: number };
   check?: CheckSpec;
   effects?: EffectSpec;

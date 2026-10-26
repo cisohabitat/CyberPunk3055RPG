@@ -21,7 +21,7 @@ export const CASE_ROUTE_CATALOG = [
 ] as const;
 
 export function caseSources(state: GameState) {
-  return notebookSources(state).filter(record => (CASE_SOURCES as readonly string[]).includes(record.id));
+  return notebookSources(state).filter(record => (CASE_SOURCES as readonly string[]).includes(record.id)).map(record => record.id === "verified-order" ? { ...record, title: state.flags.archive_key_authenticated ? "Authenticated issuing-key record" : "Cancellation corroboration" } : record);
 }
 export function canBuildCase(state: GameState) {
   return caseSources(state).some(source => source.id === "memory-order" || source.id === "verified-order");
@@ -40,8 +40,13 @@ export function reviewCase(state: GameState, draft = state.caseFile) {
   const recorded = links.some(link => link.source === "memory-order" && link.relation === "supports");
   const verdict: CaseVerdict = !links.length || errors.length ? "challenged" : supported && (claim !== "cancellation" || independent && recorded) ? "supported" : "bounded";
   const feedback = !links.length ? "Connect at least one acquired source before testing the case."
-    : errors.length ? "A source cannot support this claim. The signature supports authorization; the exported receipt records cancellation; only an authenticated key establishes the issuer. An approved witness account supplies no digital-key match. Change the link or narrow the claim."
-      : verdict === "bounded" ? "Keep this as a bounded account or open question. These links do not establish the complete proposed claim. Connect the recorded receipt and an independent source for the cancellation sequence; an issuer claim needs an authenticated key."
+    : errors.length ? claim === "issuer" ? "A receipt or witness account does not authenticate an issuing key. Change the link to a limit, or investigate and link a successful key match."
+      : claim === "authorization" ? "The later cancellation does not establish Mara's authorization. Connect her signature, or mark this source as a limit."
+        : "This source does not support the cancellation. Connect the recorded receipt and independent corroboration, or narrow the account."
+      : verdict === "bounded" ? claim === "issuer" ? "This account leaves the issuer open. Link a successfully matched key before asserting authentication."
+        : claim === "authorization" ? "Locate and connect the signature before asserting authorization."
+          : recorded ? "The receipt records cancellation. Connect an independent ledger or approved witness account to corroborate the sequence."
+            : "Connect the recorded receipt to establish the sequence alongside the independent source."
         : claim === "authorization" ? "The acquired signature supports authorization, not prior knowledge or the later issuer."
           : claim === "cancellation" ? "The linked independent source corroborates cancellation. Key authentication and public quotation remain separate tests."
             : "The linked archive record includes a successfully authenticated key. Witness quotation still requires separate permission.";

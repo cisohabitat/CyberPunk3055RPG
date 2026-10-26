@@ -4,6 +4,7 @@ import { mergeJournal } from "./journal";
 import { SCENES } from "./story";
 import { encounteredCast } from "./story/cast";
 import { caseFileChoices } from "./case-file";
+import { archivePlanBonus, archivePlanChoices, finishArchivePlan } from "./archive-plan";
 import type {
   CheckPreview,
   CheckResult,
@@ -132,7 +133,10 @@ function choiceHidden(state: GameState, choice: Choice): boolean {
 }
 
 export function presentChoices(state: GameState, scene: Scene): VisibleChoice[] {
-  return [...scene.choices, ...caseFileChoices(state, scene)].filter((choice) => !choiceHidden(state, choice)).map((choice) => {
+  return [...archivePlanChoices(state, scene), ...caseFileChoices(state, scene)].filter((choice) => !choiceHidden(state, choice)).map((choice) => {
+    if (choice.maxStrain !== undefined && state.strain > choice.maxStrain) {
+      return { ...choice, enabled: false, disabledReason: `Need Strain at most ${choice.maxStrain}; recover before this preparation` };
+    }
     if (choice.requireFaction && state.factions[choice.requireFaction.faction] < choice.requireFaction.min) {
       return { ...choice, enabled: false, disabledReason: `Need ${FACTION_INFO[choice.requireFaction.faction].name} standing ${choice.requireFaction.min}` };
     }
@@ -186,6 +190,8 @@ export function previewCheck(state: GameState, check: CheckSpec): CheckPreview {
       parts.push({ label: journalBonus.label, value: journalBonus.amount });
     }
   }
+  const plannedBonus = archivePlanBonus(state, check);
+  if (plannedBonus) { bonus += plannedBonus; parts.push({ label: "Planned archive preparation", value: plannedBonus }); }
   let hits = 0;
   for (let roll = 1; roll <= 10; roll += 1) {
     if (roll + bonus >= check.dc) hits += 1;
@@ -328,7 +334,12 @@ export function commitChoice(
       : next.chapters;
   const log = [...(next.log ?? []), choice.label].slice(-24);
   const { pendingCheck: _pending, ...completed } = next;
-  return { state: { ...completed, sceneId, chapters, log }, check };
+  let completedState: GameState = { ...completed, sceneId, chapters, log };
+  if (state.archivePlan) {
+    completedState = finishArchivePlan(state, completedState, choice, check, SCENES.act2_archive_gap, applyEffect);
+    getScene(completedState.sceneId);
+  }
+  return { state: completedState, check };
 }
 
 export function stageCheck(state: GameState, choiceId: string, roll: number): GameState {

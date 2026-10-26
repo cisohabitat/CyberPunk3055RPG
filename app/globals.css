@@ -1073,7 +1073,13 @@ html[data-motion="reduce"] .fragment-placed { animation: none; }
 .case-board select { display: block; width: 100%; max-width: 100%; min-height: 45px; }
 .case-sources { list-style: none; padding: 0; }
 .case-sources li { border-top: 1px solid var(--line); padding-block: .8rem; }
+.case-sources summary { min-height: 45px; padding-block: .6rem; cursor: pointer; }
 .case-board p, .case-board li { overflow-wrap: anywhere; }
+.archive-planner { margin: 1rem 0; padding: .8rem; border: 1px solid var(--line); min-width: 0; overflow-wrap: anywhere; }
+.archive-planner > summary { min-height: 45px; padding-block: .6rem; cursor: pointer; }
+.archive-planner select { display: block; width: 100%; max-width: 100%; min-height: 45px; }
+.archive-planner label { display: block; margin-block: .8rem; }
+.archive-planner li { margin-block: .7rem; }
 .voice-line { display: flex; flex-wrap: wrap; align-items: center; gap: .35rem .6rem; padding: .8rem 0 0; border-top: 1px solid var(--line); margin: 1.5rem 0; }
 .voice-line > .ghost { min-height: 45px; font-size: .8rem; letter-spacing: .025em; text-transform: none; border-color: transparent; padding-inline: .65rem; }
 .voice-line > .ghost:hover, .voice-line > .ghost:focus-visible { border-color: var(--cyan); }

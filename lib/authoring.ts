@@ -43,8 +43,9 @@ function effect(value: unknown, path: string) {
   }
 }
 function choice(value: unknown, path: string): asserts value is Choice {
-  keys(value, ["id", "label", "detail", "hideIfFlag", "hideIfAnyFlag", "hideIfItem", "requireFlag", "requireAnyFlag", "requireAllFlags", "requireOrigin", "requireItem", "requireJournal", "hideIfJournal", "requireCreds", "requireStrain", "requireFaction", "check", "effects", "successEffects", "failEffects", "consumeItems", "next", "nextSuccess", "nextFail", "resultSuccess", "resultFail"], path);
+  keys(value, ["id", "label", "detail", "hideIfFlag", "hideIfAnyFlag", "hideIfItem", "requireFlag", "requireAnyFlag", "requireAllFlags", "requireOrigin", "requireItem", "requireJournal", "hideIfJournal", "requireCreds", "requireStrain", "maxStrain", "requireFaction", "check", "effects", "successEffects", "failEffects", "consumeItems", "next", "nextSuccess", "nextFail", "resultSuccess", "resultFail"], path);
   string(value.id, `${path}.id`, true); string(value.label, `${path}.label`);
+  if (value.maxStrain !== undefined) number(value.maxStrain, `${path}.maxStrain`, 0, 5);
   for (const field of ["detail", "resultSuccess", "resultFail"]) if (value[field] !== undefined) string(value[field], `${path}.${field}`);
   for (const field of ["hideIfFlag", "hideIfItem", "requireFlag", "requireItem", "requireJournal", "hideIfJournal", "next", "nextSuccess", "nextFail"]) if (value[field] !== undefined) string(value[field], `${path}.${field}`, true);
   for (const field of ["hideIfAnyFlag", "requireAnyFlag", "requireAllFlags", "consumeItems"]) if (value[field] !== undefined) list(value[field], `${path}.${field}`);

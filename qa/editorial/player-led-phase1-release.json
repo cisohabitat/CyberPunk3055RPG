@@ -1,0 +1,35 @@
+{
+  "phase": 1,
+  "commit": "f76924a8f75675c5916b65cca40b1d3e8497750e",
+  "ci": {
+    "run": 40356856572,
+    "attempt": 3,
+    "url": "https://github.com/cisohabitat/CyberPunk3055RPG/actions/runs/40356856572",
+    "requiredChecks": [
+      "Test",
+      "Browser (chromium)",
+      "Browser (phone)",
+      "Browser (firefox)",
+      "Browser (webkit)",
+      "Build"
+    ],
+    "conclusion": "success",
+    "productionDecision": "build"
+  },
+  "deployment": {
+    "id": "dpl_BXVN5RXr7PZDYYmWa2vk2XK6WhTN",
+    "publicUrl": "https://cyberpunk3055rpg.vercel.app",
+    "state": "READY",
+    "exactCommitVerified": true
+  },
+  "liveVerification": {
+    "featureChecksPassed": 6,
+    "viewWidths": [
+      390,
+      1440,
+      320
+    ],
+    "challengeAndCorrectionScreensReviewed": true,
+    "scope": "Automated Chromium/synthetic widths, not independent human or physical-device acceptance."
+  }
+}

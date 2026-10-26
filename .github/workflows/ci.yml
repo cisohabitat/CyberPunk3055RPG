@@ -57,6 +57,15 @@ jobs:
       fail-fast: false
       matrix:
         project: [chromium, phone, firefox, webkit]
+        include:
+          - project: chromium
+            browsers: chromium
+          - project: phone
+            browsers: chromium
+          - project: firefox
+            browsers: chromium firefox
+          - project: webkit
+            browsers: chromium webkit
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
@@ -66,7 +75,8 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npx playwright install --with-deps chromium firefox webkit
+      # Every job runs Chromium production probes as well as its own full suite.
+      - run: npx playwright install --with-deps ${{ matrix.browsers }}
       - name: Start virtual audio device
         run: |
           sudo apt-get install -y pulseaudio pulseaudio-utils

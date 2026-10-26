@@ -48,6 +48,6 @@ The user authorized at least Phases 1 and 2 now, sequentially, publishing after 
 
 ## Implementation record
 
-- Phase 1: implemented and locally verified; exact-commit CI/publication verification follows the phase commit. Evidence: `qa/editorial/player-led-phase1.json`.
-- Phase 2: not started; follows Phase 1 publication.
+- Phase 1: published and verified at https://cyberpunk3055rpg.vercel.app on `f76924a8f75675c5916b65cca40b1d3e8497750e`. Full hosted CI passed; six public feature checks passed and live challenged/corrected views were reviewed at three widths. Evidence: `qa/editorial/player-led-phase1.json` and `qa/editorial/player-led-phase1-release.json`.
+- Phase 2: implemented and locally verified (702 source tests, 102 focused browser cases, 26 follow-up planner checks, two complete campaigns); Phase 1 live verification completed before integration. Publication requires this phase's own full hosted CI and exact-commit live verification. Evidence: `qa/editorial/player-led-phase2.json`.
 - Phases 3–6: planned.

@@ -1,0 +1,103 @@
+{
+  "phase": 2,
+  "baselinePhase1": "f76924a8f75675c5916b65cca40b1d3e8497750e",
+  "scope": "Bounded archive mission plans with explicit setup, original method ids, non-stacking accuracy, held rolls and staffed/withdrawal contingencies",
+  "local": {
+    "sourcePassed": 702,
+    "finalFocusedBrowserPassed": 102,
+    "earlierSecurityBrowserPassed": 14,
+    "build": true,
+    "typescript": true,
+    "dependencyAudit": "zero known vulnerabilities",
+    "productionBudgetViolations": 0,
+    "maxInitialTransferIncludingHtml": 1622954,
+    "labelRefinementBrowserPassed": 26,
+    "visualReview": {
+      "widths": [
+        390,
+        1440,
+        320
+      ],
+      "enlargedTextAt320": true,
+      "pageErrors": 0,
+      "horizontalOverflow": false,
+      "refinement": "Shorter native-select labels retain full cost/consequence explanations."
+    }
+  },
+  "campaigns": [
+    {
+      "route": "qa/routes/memory-timeline-corrected.json",
+      "width": 390,
+      "visits": 68,
+      "reloads": 22,
+      "archivePlan": {
+        "objective": "authenticate",
+        "approach": "reader",
+        "contingency": "withdraw",
+        "stage": "withdrawn",
+        "position": "priority"
+      },
+      "errors": [],
+      "failedMedia": [],
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 330,
+        "strain": 3,
+        "rolls": [
+          1,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      }
+    },
+    {
+      "route": "qa/routes/scarce-archive-gutterwire.json",
+      "width": 1440,
+      "visits": 68,
+      "reloads": 48,
+      "archivePlan": {
+        "objective": "corroborate",
+        "approach": "carbon",
+        "contingency": "staffed",
+        "stage": "retrieved",
+        "position": "window"
+      },
+      "errors": [],
+      "failedMedia": [],
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 35,
+        "strain": 3,
+        "rolls": [
+          10,
+          1,
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      }
+    }
+  ],
+  "publication": "Not yet published; requires Phase1 exact-commit publication, full Phase2 hosted CI and public-alias verification",
+  "limits": "Directed source-informed Chromium campaigns and synthetic viewports; no independent player, physical-device or auditory craft acceptance claim.",
+  "sources": {
+    "lib/archive-plan.ts": "1b42ba7d36b320605d8860ecad3810bb52802497d064e60775913b299e473a59",
+    "lib/archive-plan.test.ts": "628981bce459cae8712c9a243d5d2711a8f1f11acc8f881bba7f4e859d5af665",
+    "lib/engine.ts": "1a8490e296fe34a620f62c318e05e0100b1b62772048a3099adcc6a6fa6b6b0f",
+    "lib/storage.ts": "2d9fe214720d54ca3d6d6f63a06d81b1efc1720064364846503d42706a3ff71e",
+    "lib/types.ts": "0dad7fb93d997197ba0cc5ff4d457784bbee291e8da27421387fb83d8d987e07",
+    "lib/authoring.ts": "0044c42ab184a0e78343c3763b97741f86fc89a9a0c45d2253e5df4fd917d48d",
+    "lib/case-file.ts": "34a47dbe1cd3d17b93900a2da69bd19321f659181055fca522c986f0476d2a30",
+    "components/ArchivePlanner.tsx": "632ed4f80d9418fa4a17177d4a24c2148adf0080979012936eb7d0bf12a7c4b3",
+    "components/CaseBoard.tsx": "24f54a0dfb3ea05edec271f7d0aee669f5988730dc177b188c4dfb635d595ead",
+    "components/PlayScreen.tsx": "fe856db87c5430c7cff2333c6f84bdcd38accab95cca60963ca6943725165452",
+    "components/GuideScreen.tsx": "8891ade4d42a385de2d5a2e6c8032946e5937bbf56ee852ec93b87dc40ae7a10",
+    "tests/archive-plan.spec.ts": "011ac9ad04284b52b9079e59d78cb22f2b08cb21b987643d917b57645e648d6e",
+    ".github/workflows/ci.yml": "72ea346b888e73b8c2cdd8040360189e370db57f83780a17afbec93f1bfb4f10"
+  }
+}

@@ -868,3 +868,15 @@ Save imports and stored JSON now have structural limits alongside their existing
 ### Player-led investigation: Phase 1
 
 The [approved six-phase roadmap](docs/REVOLUTION_ROADMAP.md) develops connected cases, mission plans, reactive characters/districts, distinct builds, audiovisual direction and campaign payoff. In the investigation notebook, open **Build a Ward Nine case**, choose a claim, connect acquired sources as support or limits, and test the account. Drafts and the last four reviews travel with saves and exports. Unsupported support is challenged; correcting a case keeps its previous review. A tested archive lead can bypass the comparison quiz, and a bounded or corroborated case can enter the hearing with its actual limits. Testing grants no money, evidence, authentication or witness permission. Existing campaign paths, spoken lines and source artwork remain suitable and unchanged.
+
+### Archive mission plans: Phase 2
+
+After Edda's archive briefing, open **Archive mission plan** to choose corroboration/authentication, reader/carbon access and staffed recovery/withdrawal. Saving a plan spends nothing. At the reader, commit one setup: logged priority, receipt preflight, a service window, registered sleeve access, or matching preparation/training already earned. The original rolled methods and trained local reader retain their spoken results. Prepared carbon access applies only to this attempt and grants no skill; preparation accuracy does not stack with the same earned index/interval benefit.
+
+Failure follows the chosen contingency. Staffed recovery retains the paid ledger, free pause and unresolved exit. Withdrawal closes the archive search as unresolved and returns to the canal, retaining failure costs and other acquired evidence. Abandoning restores ordinary methods without refunds. Setup, outcome and held rolls survive saves/exports; alternate catalog retrieval sets an unused plan aside safely. The guide teaches cases/plans, and case-source labels distinguish corroboration from key authentication. Existing neutral archive art, actors, transcripts and audio remain matched; no new speech or scene is introduced.
+
+CI retains the four full browser suites, virtual audio, all Chromium production probes and exact-commit release gates. Each job installs Chromium plus its own required engine, avoiding unnecessary WebKit OS downloads in the Firefox job. The [roadmap](docs/REVOLUTION_ROADMAP.md) records implementation and publication status.
+
+Planner option labels stay short enough to identify the selected objective, approach and contingency at narrow enlarged text; the full costs and consequences remain below.
+
+Phase 1 was published on commit `f76924a` after full hosted CI and six live feature checks; see `qa/editorial/player-led-phase1-release.json`. Phase 2 follows that verified publication and must pass its own complete release gates.

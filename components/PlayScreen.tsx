@@ -50,6 +50,8 @@ import { SpokenText } from "./SpokenText";
 import { FieldKitBrief } from "./FieldKitBrief";
 import { TestimonyBrief } from "./TestimonyBrief";
 import { ArchiveBrief } from "./ArchiveBrief";
+import { ArchivePlanner } from "./ArchivePlanner";
+import { commitArchivePlan } from "@/lib/archive-plan";
 import { TransferBrief } from "./TransferBrief";
 import { memoryDisposition } from "@/lib/evidence";
 import { endingCoda } from "@/lib/story";
@@ -124,6 +126,7 @@ export function PlayScreen({
   const readingFocus = useRef<{ sceneId: string; index: number } | null>(null);
   const priorSound = useRef<{ location: string; on: boolean; ending: boolean } | null>(null);
   const queuedSceneCue = useRef<{ state: GameState; name: SceneCueName } | null>(null);
+  const archiveFocus = useRef<{ state: GameState; id: string } | null>(null);
   const prose = sceneText(scene, state);
   const paragraphs = prose.split(/\n\n+/).filter((paragraph) => paragraph.length > 0);
   const visibleCount = preferences.reading === "all" ? paragraphs.length : Math.min(shown?.sceneId === scene.id && shown.prose === prose ? shown.count : 1, paragraphs.length);
@@ -242,6 +245,15 @@ export function PlayScreen({
     return () => window.removeEventListener("keydown", onKey);
   });
 
+  useEffect(() => {
+    const target = archiveFocus.current;
+    if (!target) return;
+    if (target.state !== state) { archiveFocus.current = null; return; }
+    if (activeChoice || modalOpen) return;
+    const button = document.querySelector<HTMLButtonElement>(`[data-testid="choice-${target.id}"]`);
+    if (button) { button.focus({ preventScroll: true }); button.scrollIntoView({ block: "center", behavior: "instant" }); }
+    archiveFocus.current = null;
+  }, [state, activeChoice, modalOpen]);
   const openPromises = weekClosingPromises(state);
 
   function commit(next: GameState, choiceId: string) {
@@ -250,6 +262,10 @@ export function PlayScreen({
     setDecisionReceipt({ state: next, lines: choiceReceipt(state, next) });
     const cue = sound && preferences.effects > 0 ? sceneInteractionCue(state, choiceId, next) : undefined;
     queuedSceneCue.current = cue ? { state: next, name: cue } : null;
+    if (choiceId.startsWith("archive-plan-")) {
+      const target = presentChoices(next, getScene(next.sceneId)).find(c => c.enabled && !c.id.startsWith("archive-plan-") && c.id !== "leave-archive");
+      archiveFocus.current = target ? { state: next, id: target.id } : null;
+    }
     onChange(next);
   }
 
@@ -407,6 +423,7 @@ export function PlayScreen({
               <FieldKitBrief state={state} />
             </div>}
             {scene.id === "act2_archive_compare" && <ArchiveCatalog state={state} choices={choices} onChoose={pick} numberShortcuts={preferences.numberShortcuts} />}
+            <ArchivePlanner key={`archive-plan-${scene.id}`} state={state} onSave={draft => onChange(commitArchivePlan(state, draft))} />
             {scene.id === "memory_sequence" && <MemoryTimeline state={state} choices={choices} onPlace={pick} artwork={preferences.artwork !== "none"} reducedMotion={reduceMotion} numberShortcuts={preferences.numberShortcuts} />}
             {["act2_route_map", "act2_route_exit", "act2_route_review", "act2_route_crossing"].includes(scene.id) && <RouteBoard state={state} />}
             {scene.finale && <FinaleReflection state={state} artwork={preferences.artwork !== "none"} />}
