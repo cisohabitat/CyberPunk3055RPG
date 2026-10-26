@@ -1068,6 +1068,12 @@ html[data-contrast="high"] .title-brand { aspect-ratio: auto; }
 @keyframes fragment-seat { from { opacity: .6; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
 html[data-motion="reduce"] .fragment-placed { animation: none; }
 @media (prefers-reduced-motion: reduce) { .fragment-placed { animation: none; } }
+.case-board { margin: 1rem 0; padding: .8rem; border: 1px solid var(--cyan); min-width: 0; }
+.case-board > summary { cursor: pointer; min-height: 45px; padding-block: .6rem; }
+.case-board select { display: block; width: 100%; max-width: 100%; min-height: 45px; }
+.case-sources { list-style: none; padding: 0; }
+.case-sources li { border-top: 1px solid var(--line); padding-block: .8rem; }
+.case-board p, .case-board li { overflow-wrap: anywhere; }
 .voice-line { display: flex; flex-wrap: wrap; align-items: center; gap: .35rem .6rem; padding: .8rem 0 0; border-top: 1px solid var(--line); margin: 1.5rem 0; }
 .voice-line > .ghost { min-height: 45px; font-size: .8rem; letter-spacing: .025em; text-transform: none; border-color: transparent; padding-inline: .65rem; }
 .voice-line > .ghost:hover, .voice-line > .ghost:focus-visible { border-color: var(--cyan); }

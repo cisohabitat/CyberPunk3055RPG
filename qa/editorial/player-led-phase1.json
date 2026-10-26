@@ -1,0 +1,31 @@
+{
+  "phase": 1,
+  "baseline": "5bfcb5924e9f19ebdc5a1cc120c66801abf6b2ab",
+  "scope": "Persistent acquired-source case board with engine-validated archive/hearing routes; no new scene, painting or speech",
+  "local": {
+    "sourcePassed": 691,
+    "focusedBrowserCasesPassedBeforeFinalContextGuard": 58,
+    "completeKeyboardCampaign": {
+      "visits": 68,
+      "reloads": 22,
+      "ending": "ending_quiet",
+      "scriptErrors": [],
+      "failedMedia": []
+    },
+    "productionBudgetViolations": 0,
+    "publication": "pending exact-commit hosted checks and public-alias verification",
+    "focusedBrowserCasesPassedAcrossLocalRuns": 60,
+    "finalCaseBoardBrowserCasesPassed": 12
+  },
+  "limitations": "Source-informed automated play; no new independent human, physical-device or auditory craft acceptance. Canonical scene graph remains unchanged; conditional routes are listed separately in production reports.",
+  "sources": {
+    "lib/case-file.ts": "84de653bef1d53713562a86787dd4caedab93823cf498bd6b29f277ff42ba210",
+    "lib/storage.ts": "9cea03a04b37c272b23772d31164bd209ea36c5684d786bcc37b74810ec2dd4d",
+    "lib/engine.ts": "e5b362a0ace84761181a45b59ae089aea7ddc9a4df5ff448ff8bae4aba7e8c14",
+    "lib/types.ts": "243162bd9ca751f15297dc555d7ad126e11d467f9f906d1637abedbc3ea7b9b4",
+    "components/CaseBoard.tsx": "0d1883bf49aaa4bf103fa6f6504fb2f091c8d837af817e1cf4395e27ddbcbb51",
+    "components/InvestigationNotebook.tsx": "157fc887bbf8c694d901181fedcfee2d7fb50ebc89463955cedc126561cfc96c",
+    "components/PlayScreen.tsx": "bc010c2f1a59877ffeab44b2844c9a60cd2ffeb797caff8b5df633542c709e17",
+    "tests/case-board.spec.ts": "61421986420ecb4d7db729ec9d1b821ce22c7c4b258ca3b997c051ac7933e2f8"
+  }
+}

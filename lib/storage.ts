@@ -3,6 +3,7 @@ import { journalEntry } from "./journal";
 import { SCENES } from "./story";
 import { ITEMS } from "./items";
 import { presentChoices } from "./engine";
+import { parseCaseFile } from "./case-file";
 import type { Codex, ComplicationId, FactionId, GameState, JournalEntry, OriginId } from "./types";
 
 const SAVE_KEY = "saint-shard-3055-v1";
@@ -124,6 +125,11 @@ function migrate(data: Record<string, unknown>): GameState | null {
     log: Array.isArray(data.log) ? data.log.filter((line): line is string => typeof line === "string").slice(0, 24) : [],
     sceneId: data.sceneId,
   };
+  if (data.caseFile !== undefined) {
+    const caseFile = parseCaseFile(data.caseFile, state);
+    if (!caseFile) return null;
+    state.caseFile = caseFile;
+  }
   if (data.pendingCheck !== undefined) {
     const pending = data.pendingCheck as GameState["pendingCheck"];
     const choice = pending && presentChoices(state, SCENES[state.sceneId]).find((entry) => entry.id === pending.choiceId && entry.check && entry.enabled);

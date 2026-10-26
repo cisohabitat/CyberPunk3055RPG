@@ -14,6 +14,7 @@ import { finaleScene } from "@/lib/finale-direction";
 import { investigationScene } from "@/lib/investigation-scenes";
 
 import { InvestigationNotebook } from "./InvestigationNotebook";
+import { commitCaseAction } from "@/lib/case-file";
 import { canConsultSources } from "@/lib/investigation-notebook";
 
 import { Fragment, useEffect, useRef, useState } from "react";
@@ -495,7 +496,7 @@ export function PlayScreen({
         </main>
         <Sheet state={state} changes={changes} speaker={scene.speaker} visibleText={visibleText} artwork={preferences.artwork !== "none"} open={sheetOpen} onClose={() => setSheetOpen(false)} onMap={() => setMapOpen(true)} />
       </div>
-      {notebookOpen && <InvestigationNotebook state={state} onClose={() => setNotebookOpen(false)} />}
+      {notebookOpen && <InvestigationNotebook state={state} onClose={() => setNotebookOpen(false)} onCaseAction={action => onChange(commitCaseAction(state, action))} />}
       {artworkOpen && viewedArt && <ArtworkViewer key={`${viewedArt.art.src}-${viewedArt.art.tile ?? "scene"}`} art={viewedArt.art} onClose={() => setViewedArt(null)} />}
       {mapOpen && <CityMap state={state} artwork={preferences.artwork !== "none"} onClose={() => setMapOpen(false)} onFind={id => {
         setMapOpen(false); setSheetOpen(false);

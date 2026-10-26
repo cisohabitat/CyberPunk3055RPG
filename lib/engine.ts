@@ -3,6 +3,7 @@ import { ITEMS } from "./items";
 import { mergeJournal } from "./journal";
 import { SCENES } from "./story";
 import { encounteredCast } from "./story/cast";
+import { caseFileChoices } from "./case-file";
 import type {
   CheckPreview,
   CheckResult,
@@ -131,7 +132,7 @@ function choiceHidden(state: GameState, choice: Choice): boolean {
 }
 
 export function presentChoices(state: GameState, scene: Scene): VisibleChoice[] {
-  return scene.choices.filter((choice) => !choiceHidden(state, choice)).map((choice) => {
+  return [...scene.choices, ...caseFileChoices(state, scene)].filter((choice) => !choiceHidden(state, choice)).map((choice) => {
     if (choice.requireFaction && state.factions[choice.requireFaction.faction] < choice.requireFaction.min) {
       return { ...choice, enabled: false, disabledReason: `Need ${FACTION_INFO[choice.requireFaction.faction].name} standing ${choice.requireFaction.min}` };
     }

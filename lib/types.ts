@@ -21,6 +21,7 @@ export type Effect = {
 };
 
 export type GameState = {
+  caseFile?: import("./case-file").CaseFile;
   version: 2;
   handle: string;
   givenName: string;

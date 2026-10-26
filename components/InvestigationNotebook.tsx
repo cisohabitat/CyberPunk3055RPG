@@ -4,11 +4,13 @@ import { useState } from "react";
 import { DialogFrame } from "./DialogFrame";
 import { RecordCard } from "./RecordCard";
 import { Symbol } from "./Symbol";
+import { CaseBoard } from "./CaseBoard";
+import type { CaseAction } from "@/lib/case-file";
 import { filterNotebookSources, notebookSources, SOURCE_GROUPS, type SourceGroup } from "@/lib/investigation-notebook";
 import { sourceReadiness } from "@/lib/source-ledger";
 import type { GameState } from "@/lib/types";
 
-export function InvestigationNotebook({ state, onClose }: { state: GameState; onClose: () => void }) {
+export function InvestigationNotebook({ state, onClose, onCaseAction }: { state: GameState; onClose: () => void; onCaseAction: (action: CaseAction) => void }) {
   const [query, setQuery] = useState("");
   const [group, setGroup] = useState<SourceGroup | "all">("all");
   const sources = notebookSources(state);
@@ -33,6 +35,7 @@ export function InvestigationNotebook({ state, onClose }: { state: GameState; on
       <dl className="permission-cards"><div><dt><Symbol name="archive" /> Cancellation</dt><dd>{readiness.cancellation}</dd></div><div><dt><Symbol name="permission" /> Public quotation</dt><dd>{readiness.quotation}</dd></div></dl>
     </section>
     <details className="notebook-explainer"><summary>About these records</summary><p className="hint">Records keep their original wording and recorded status. A later source or correction stays separate. Filtering changes this view, not the account.</p></details>
+    <CaseBoard state={state} onAction={onCaseAction} />
     {visible.length ? <ol className="notebook-records" aria-label="Matching acquired records">{visible.map(record => <RecordCard key={record.id} title={record.title} kind={record.kind} document={record.group} testId={`notebook-${record.id}`}>
       <p className="record-kind"><span className="document-group"><Symbol name={record.group === "interpretation" ? "claim" : record.group} /> {SOURCE_GROUPS.find(group => group.id === record.group)!.label}</span><span className="record-stamp">Recorded as {record.kind}</span></p>
       {record.time && <p className="notebook-provenance"><strong>{record.time}</strong> · {record.provenance}</p>}
