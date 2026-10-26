@@ -1,0 +1,164 @@
+{
+  "scope": "Character dialogue only. Written messages, advertising, labels, player questions and custom player-name addresses stay text-only. All authored fixed spoken wording is voiced.",
+  "scenes": 10,
+  "reachableVariants": 859,
+  "branchSamples": 1056,
+  "decisions": [
+    {
+      "scene": "act2_district_brief",
+      "primary": "Edda",
+      "text": "Show me the part you want me to act on. Your private notes are not a public instruction.",
+      "context": "Fixed authored dialogue in the depot-response scene; conditional wording is bound to its exact visible quotation.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Actual actor and exact spoken words; no source or permission inferred.",
+      "bindingKeys": [
+        "23dc6f7fb03092c2"
+      ]
+    },
+    {
+      "scene": "act2_district_edda",
+      "primary": "Edda",
+      "text": "This packet has the cancellation receipt. Keep its limits on the cover. My request cannot turn it into independent proof.",
+      "context": "Fixed authored dialogue in the depot-response scene; conditional wording is bound to its exact visible quotation.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Actual actor and exact spoken words; no source or permission inferred.",
+      "bindingKeys": [
+        "0f5e9899521ff428"
+      ]
+    },
+    {
+      "scene": "act2_district_edda",
+      "primary": "Edda",
+      "text": "You put the ledger beside the receipt. That supports the cancellation. A worker's name is still not an issuing key.",
+      "context": "Fixed authored dialogue in the depot-response scene; conditional wording is bound to its exact visible quotation.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Actual actor and exact spoken words; no source or permission inferred.",
+      "bindingKeys": [
+        "b103e2c055b9b201"
+      ]
+    },
+    {
+      "scene": "act2_district_edda",
+      "primary": "Edda",
+      "text": "A public review can change the depot's doors. A private query asks for an appointment. Neither puts my archive shift back.",
+      "context": "Fixed authored dialogue in the depot-response scene; conditional wording is bound to its exact visible quotation.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Actual actor and exact spoken words; no source or permission inferred.",
+      "bindingKeys": [
+        "aca132aff95fcbab"
+      ]
+    },
+    {
+      "scene": "act2_district_kerr",
+      "primary": "Kerr",
+      "text": "A depot reference points to a desk. It doesn't tell me what you kept in your coat. What are you asking me to carry?",
+      "context": "Fixed authored dialogue in the depot-response scene; conditional wording is bound to its exact visible quotation.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Actual actor and exact spoken words; no source or permission inferred.",
+      "bindingKeys": [
+        "c54470bce64594ac"
+      ]
+    },
+    {
+      "scene": "act2_district_kerr_reply",
+      "primary": "Kerr",
+      "text": "You showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.",
+      "context": "Fixed authored dialogue in the depot-response scene; conditional wording is bound to its exact visible quotation.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Actual actor and exact spoken words; no source or permission inferred.",
+      "bindingKeys": [
+        "62ccc516ea3c3ac8"
+      ]
+    },
+    {
+      "scene": "act2_district_kerr_reply",
+      "primary": "Kerr",
+      "text": "Then I know which depot desk you asked for, not what's in your case. Keep those two things separate.",
+      "context": "Fixed authored dialogue in the depot-response scene; conditional wording is bound to its exact visible quotation.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Actual actor and exact spoken words; no source or permission inferred.",
+      "bindingKeys": [
+        "0f17214aeb1ee755"
+      ]
+    },
+    {
+      "scene": "act2_district_kerr_reply",
+      "primary": "Kerr",
+      "text": "My name went into their register after you promised it wouldn't. Say that before you ask me for another introduction.",
+      "context": "Fixed authored dialogue in the depot-response scene; conditional wording is bound to its exact visible quotation.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Actual actor and exact spoken words; no source or permission inferred.",
+      "bindingKeys": [
+        "6cfa6b13ceed2726"
+      ]
+    },
+    {
+      "scene": "act2_district_kerr_reply",
+      "primary": "Kerr",
+      "text": "Keep the docket beside the promise. Use your own name for anything you sign. Mine stays out of it.",
+      "context": "Fixed authored dialogue in the depot-response scene; conditional wording is bound to its exact visible quotation.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Actual actor and exact spoken words; no source or permission inferred.",
+      "bindingKeys": [
+        "c7006007dcabb24c"
+      ]
+    },
+    {
+      "scene": "act2_district_kerr_reply",
+      "primary": "Kerr",
+      "text": "Then I won't introduce you. The counter can answer for itself. I won't answer for a promise you won't name.",
+      "context": "Fixed authored dialogue in the depot-response scene; conditional wording is bound to its exact visible quotation.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Actual actor and exact spoken words; no source or permission inferred.",
+      "bindingKeys": [
+        "e69d33bf20bfa093"
+      ]
+    },
+    {
+      "scene": "act2_district_work",
+      "primary": "Dispatcher",
+      "text": "Sign only as the worker. No recipient name goes on the shift sheet. Finish the sorting and I pay twenty.",
+      "context": "Fixed authored dialogue in the depot-response scene; conditional wording is bound to its exact visible quotation.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Dispatcher",
+      "reason": "Actual actor and exact spoken words; no source or permission inferred.",
+      "bindingKeys": [
+        "22bfd28cf1ea0ed5"
+      ]
+    },
+    {
+      "scene": "act3_district_return",
+      "primary": "Edda",
+      "text": "The depot answered a request. That is not an answer to the records inquiry. Keep both outcomes on the page.",
+      "context": "Fixed authored dialogue in the depot-response scene; conditional wording is bound to its exact visible quotation.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Actual actor and exact spoken words; no source or permission inferred.",
+      "bindingKeys": [
+        "87bd8c9078cb2363"
+      ]
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 import source from "../qa/media/campaign-dialogue-bindings.json";
+import districtSource from "../qa/media/district-dialogue-bindings.json";
 
 export type CampaignDialogue = {
   key: string; id: string; scene: string; sceneSpeaker: string | null;
@@ -7,7 +8,8 @@ export type CampaignDialogue = {
   choiceId?: string; outcome?: string;
 };
 const byScene = new Map<string, CampaignDialogue[]>();
-for (const line of source as CampaignDialogue[]) {
+export const allCampaignDialogue = [...source, ...districtSource] as CampaignDialogue[];
+for (const line of allCampaignDialogue) {
   const group = byScene.get(line.scene) ?? [];
   group.push(line); byScene.set(line.scene, group);
 }

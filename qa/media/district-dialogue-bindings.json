@@ -1,0 +1,122 @@
+[
+  {
+    "key": "23dc6f7fb03092c2",
+    "id": "voice-campaign-edda-ee8d63542999",
+    "scene": "act2_district_brief",
+    "sceneSpeaker": "Edda",
+    "speaker": "Edda",
+    "quote": "Show me the part you want me to act on. Your private notes are not a public instruction.",
+    "text": "Show me the part you want me to act on. Your private notes are not a public instruction.",
+    "part": 0
+  },
+  {
+    "key": "0f5e9899521ff428",
+    "id": "voice-campaign-edda-99446ae38d6d",
+    "scene": "act2_district_edda",
+    "sceneSpeaker": "Edda",
+    "speaker": "Edda",
+    "quote": "This packet has the cancellation receipt. Keep its limits on the cover. My request cannot turn it into independent proof.",
+    "text": "This packet has the cancellation receipt. Keep its limits on the cover. My request cannot turn it into independent proof.",
+    "part": 0
+  },
+  {
+    "key": "b103e2c055b9b201",
+    "id": "voice-campaign-edda-7b79a3e4c6d0",
+    "scene": "act2_district_edda",
+    "sceneSpeaker": "Edda",
+    "speaker": "Edda",
+    "quote": "You put the ledger beside the receipt. That supports the cancellation. A worker's name is still not an issuing key.",
+    "text": "You put the ledger beside the receipt. That supports the cancellation. A worker's name is still not an issuing key.",
+    "part": 0
+  },
+  {
+    "key": "aca132aff95fcbab",
+    "id": "voice-campaign-edda-6e522a26c358",
+    "scene": "act2_district_edda",
+    "sceneSpeaker": "Edda",
+    "speaker": "Edda",
+    "quote": "A public review can change the depot's doors. A private query asks for an appointment. Neither puts my archive shift back.",
+    "text": "A public review can change the depot's doors. A private query asks for an appointment. Neither puts my archive shift back.",
+    "part": 0
+  },
+  {
+    "key": "c54470bce64594ac",
+    "id": "voice-campaign-kerr-10b6e71a11eb",
+    "scene": "act2_district_kerr",
+    "sceneSpeaker": "Kerr",
+    "speaker": "Kerr",
+    "quote": "A depot reference points to a desk. It doesn't tell me what you kept in your coat. What are you asking me to carry?",
+    "text": "A depot reference points to a desk. It doesn't tell me what you kept in your coat. What are you asking me to carry?",
+    "part": 0
+  },
+  {
+    "key": "62ccc516ea3c3ac8",
+    "id": "voice-campaign-kerr-899d4ba5ecfb",
+    "scene": "act2_district_kerr_reply",
+    "sceneSpeaker": "Kerr",
+    "speaker": "Kerr",
+    "quote": "You showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.",
+    "text": "You showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.",
+    "part": 0
+  },
+  {
+    "key": "0f17214aeb1ee755",
+    "id": "voice-campaign-kerr-f829eb68f234",
+    "scene": "act2_district_kerr_reply",
+    "sceneSpeaker": "Kerr",
+    "speaker": "Kerr",
+    "quote": "Then I know which depot desk you asked for, not what's in your case. Keep those two things separate.",
+    "text": "Then I know which depot desk you asked for, not what's in your case. Keep those two things separate.",
+    "part": 0
+  },
+  {
+    "key": "6cfa6b13ceed2726",
+    "id": "voice-campaign-kerr-e8022742ad26",
+    "scene": "act2_district_kerr_reply",
+    "sceneSpeaker": "Kerr",
+    "speaker": "Kerr",
+    "quote": "My name went into their register after you promised it wouldn't. Say that before you ask me for another introduction.",
+    "text": "My name went into their register after you promised it wouldn't. Say that before you ask me for another introduction.",
+    "part": 0
+  },
+  {
+    "key": "c7006007dcabb24c",
+    "id": "voice-campaign-kerr-f001a675c451",
+    "scene": "act2_district_kerr_reply",
+    "sceneSpeaker": "Kerr",
+    "speaker": "Kerr",
+    "quote": "Keep the docket beside the promise. Use your own name for anything you sign. Mine stays out of it.",
+    "text": "Keep the docket beside the promise. Use your own name for anything you sign. Mine stays out of it.",
+    "part": 0
+  },
+  {
+    "key": "e69d33bf20bfa093",
+    "id": "voice-campaign-kerr-1903a3d3a421",
+    "scene": "act2_district_kerr_reply",
+    "sceneSpeaker": "Kerr",
+    "speaker": "Kerr",
+    "quote": "Then I won't introduce you. The counter can answer for itself. I won't answer for a promise you won't name.",
+    "text": "Then I won't introduce you. The counter can answer for itself. I won't answer for a promise you won't name.",
+    "part": 0
+  },
+  {
+    "key": "22bfd28cf1ea0ed5",
+    "id": "voice-campaign-dispatcher-094917ba4d45",
+    "scene": "act2_district_work",
+    "sceneSpeaker": "Dispatcher",
+    "speaker": "Dispatcher",
+    "quote": "Sign only as the worker. No recipient name goes on the shift sheet. Finish the sorting and I pay twenty.",
+    "text": "Sign only as the worker. No recipient name goes on the shift sheet. Finish the sorting and I pay twenty.",
+    "part": 0
+  },
+  {
+    "key": "87bd8c9078cb2363",
+    "id": "voice-campaign-edda-f9a9ab61ae78",
+    "scene": "act3_district_return",
+    "sceneSpeaker": "Edda",
+    "speaker": "Edda",
+    "quote": "The depot answered a request. That is not an answer to the records inquiry. Keep both outcomes on the page.",
+    "text": "The depot answered a request. That is not an answer to the records inquiry. Keep both outcomes on the page.",
+    "part": 0
+  }
+]

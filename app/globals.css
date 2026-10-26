@@ -1702,3 +1702,8 @@ html[data-motion="reduce"] .location-entry, html[data-motion="reduce"] .portrait
   .choice-fact [data-kind="check"], .choice-fact [data-kind="costs"], .choice-fact-label { color: CanvasText; }
   .pivotal-stage .pivotal-dialogue { background: none; }
 }
+.district-ledger { border: 1px solid var(--line); padding: 1rem; margin-block: 1.25rem; }
+.district-ledger summary { cursor: pointer; min-height: 44px; display: list-item; }
+.district-ledger details { margin-block: .75rem; }
+.district-ledger dt { color: var(--muted); margin-top: .75rem; }
+.district-ledger dd { margin: .25rem 0 0; overflow-wrap: anywhere; }

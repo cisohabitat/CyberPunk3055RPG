@@ -16,6 +16,8 @@ The latest [player screens cycle](PLAYER_SCREENS_CYCLE.md) presents evidence car
 
 ## Latest gameplay improvements
 
+The current [player-led investigation roadmap](REVOLUTION_ROADMAP.md) connects player-built cases, archive mission plans and [reactive depot characters](REACTIVE_DISTRICT_PHASE3.md). Players choose which source summary to disclose, receive a bounded response from Edda and Kerr, and allocate saved depot actions between work, rest or a correction delivery. A new state-specific painting and twelve matching stock voice quotations accompany the local response. Source authentication, witness permission and the employment inquiry retain separate outcomes.
+
 The [distribution and witness phase](DISTRIBUTION_OVERLAP.md) makes overlapping commitments easier to follow:
 
 - Saved clinic schedules show their allocation and whether dispatch has accepted them.

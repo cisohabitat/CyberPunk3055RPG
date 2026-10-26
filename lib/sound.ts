@@ -1,6 +1,7 @@
 import type { Preferences } from "./preferences";
 import type { GameState } from "./types";
 import { windowRemaining } from "./chapel-window";
+import { districtRemaining } from "./district-response";
 import voiceMix from "../qa/media/voice-mix.json";
 import { TITLE_MUSIC } from "./title-music";
 import { voiceLevel } from "./voice-level";
@@ -296,8 +297,9 @@ export function sceneSoundPlan(state: GameState, location: string, act = ""): { 
   const district: SoundDistrict = CLINIC_SCENES.has(state.sceneId) ? "clinic" : ROOM_SCENES[state.sceneId] ?? (state.sceneId.startsWith("ending_") && ["ending_names", "ending_quiet", "ending_witness", "ending_listed"].includes(state.sceneId) ? "ward"
     : /ward nine|wall|witness/.test(value) ? "ward" : /chapel|chair|memory|clinic|conversation room/.test(value) ? "chapel"
     : /spire|helion/.test(value) ? "spire" : /canal|depot/.test(value) ? "canal" : "street");
-  const pressure = state.sceneId.startsWith("chapel_window_") && state.flags.chapel_window_started && !state.flags.chapel_window_done && windowRemaining(state) > 0;
-  const mood = pressure ? "pressure" : investigationScene(state.sceneId) || QUIET_SCENES.has(state.sceneId) || CLINIC_SCENES.has(state.sceneId) || ["act2_witness_brief", "act2_witness_support", "act2_witness_arrival", "act2_route_receipt"].includes(state.sceneId) ? "quiet"
+  const pressure = state.sceneId.startsWith("chapel_window_") && state.flags.chapel_window_started && !state.flags.chapel_window_done && windowRemaining(state) > 0
+    || ["act2_district_canal", "act2_district_work", "act2_district_rest"].includes(state.sceneId) && state.flags.district_query_sent && !state.flags.district_window_closed && districtRemaining(state) > 0;
+  const mood = pressure ? "pressure" : state.sceneId.includes("_district_") || investigationScene(state.sceneId) || QUIET_SCENES.has(state.sceneId) || CLINIC_SCENES.has(state.sceneId) || ["act2_witness_brief", "act2_witness_support", "act2_witness_arrival", "act2_route_receipt"].includes(state.sceneId) ? "quiet"
     : state.sceneId === "memo" || state.sceneId === "mara_why" || state.sceneId.startsWith("memory_") && state.sceneId !== "memory_table" ? "reading"
     : state.sceneId.startsWith("ending_") && district === "ward" ? "ward" : sceneMood(location, act);
   return { mood, district };

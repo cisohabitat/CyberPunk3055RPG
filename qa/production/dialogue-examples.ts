@@ -5,7 +5,7 @@ import { visibleCampaignDialogue, visibleCheckDialogue } from "../../lib/campaig
 import { SCENES } from "../../lib/story";
 import type { Choice, GameState, CheckResult } from "../../lib/types";
 import type { ReplaySpec } from "../../lib/story-replay";
-import bindings from "../media/campaign-dialogue-bindings.json";
+import { allCampaignDialogue as bindings } from "../../lib/campaign-dialogue";
 
 type Example = { state: GameState; route: string; source: "authored-route" | "seeded-route" | "branch-sample"; checkResult?: boolean };
 export function dialogueExamples(): Map<string, Example> {

@@ -880,3 +880,11 @@ CI retains the four full browser suites, virtual audio, all Chromium production 
 Planner option labels stay short enough to identify the selected objective, approach and contingency at narrow enlarged text; the full costs and consequences remain below.
 
 Phase 1 was published on commit `f76924a` after full hosted CI and six live feature checks; see `qa/editorial/player-led-phase1-release.json`. Phase 2 follows that verified publication and must pass its own complete release gates.
+
+### Reactive depot: Phase 3
+
+After source custody and an acquired cancellation receipt, the canal offers a conversation with Edda about the depot. Share a receipt-only summary or its corroborating ledger, then choose a signed public register review or a private service query. Edda retains what she has seen when you revise a packet. Kerr learns only the summary/docket you disclose or an earlier observed handover; acknowledging a known broken promise can permit this introduction, while denial closes it. Existing recipient registration and contact limits remain recorded.
+
+The public response closes the side service hatch and offers a registered sorting shift; the private response offers a short service-room rest. Two saved task actions create a choice between registration/completion, booking/rest, or delivering a separate correction. Reading, conversation, sound, settings and pausing consume none. A wage or recovery requires actual completion, and closing the week leaves unfinished work unfinished. The collapsible depot record shows what each character knows and the actual local response.
+
+Ten new scenes have explicit art decisions, a new public-review depot painting, matching existing portraits/neutral settings, and twelve exact-word stock synthetic voice clips in a separate catalog. Earlier recordings, bindings and historical QA records are retained. The guide teaches the new flow. See [the Phase 3 implementation and validation record](docs/REACTIVE_DISTRICT_PHASE3.md).

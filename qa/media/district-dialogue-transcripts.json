@@ -1,0 +1,129 @@
+{
+  "method": "Independent ASR of delivered MP3s, no authored-text prompt; punctuation/case/apostrophe and 20-to-twenty normalization only. Automated proxy, not human listening acceptance.",
+  "model": "Systran/faster-whisper-base.en",
+  "runtime": "faster-whisper 1.2.1, CPU int8",
+  "modelFiles": [
+    {
+      "name": "models--Systran--faster-whisper-base.en/snapshots/3d3d5dee26484f91867d81cb899cfcf72b96be6c/config.json",
+      "sha256": "f3bc3821e9fc76a27bae538e11ae5b677dcdd352b4600429ce7951d398569aeb"
+    },
+    {
+      "name": "models--Systran--faster-whisper-base.en/snapshots/3d3d5dee26484f91867d81cb899cfcf72b96be6c/model.bin",
+      "sha256": "2a166925539a16005f14ff328359f9b9adb9dc4fb631bb3b227526862e93e2ef"
+    },
+    {
+      "name": "models--Systran--faster-whisper-base.en/snapshots/3d3d5dee26484f91867d81cb899cfcf72b96be6c/tokenizer.json",
+      "sha256": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df"
+    }
+  ],
+  "lines": [
+    {
+      "id": "voice-campaign-edda-ee8d63542999",
+      "speaker": "Edda",
+      "path": "public/audio/voice-campaign-edda-ee8d63542999.mp3",
+      "sha256": "648815b3540ed03c3223d411bfb0870f3340944bee2852969e6145435ed63a0b",
+      "authoredText": "Show me the part you want me to act on. Your private notes are not a public instruction.",
+      "transcription": "Show me the part you want me to act on. Your private notes are not a public instruction.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-edda-99446ae38d6d",
+      "speaker": "Edda",
+      "path": "public/audio/voice-campaign-edda-99446ae38d6d.mp3",
+      "sha256": "ce433f6fd09134ac238bc0891a0acf78ea8cc700eef17d85e17482955277d83b",
+      "authoredText": "This packet has the cancellation receipt. Keep its limits on the cover. My request cannot turn it into independent proof.",
+      "transcription": "This packet has the cancellation receipt, keep its limits on the cover, my request cannot turn it into independent proof.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-edda-7b79a3e4c6d0",
+      "speaker": "Edda",
+      "path": "public/audio/voice-campaign-edda-7b79a3e4c6d0.mp3",
+      "sha256": "da6bd7399cddca2bce5414237459d9ae14593668bcafacb995925f1b055c77b7",
+      "authoredText": "You put the ledger beside the receipt. That supports the cancellation. A worker's name is still not an issuing key.",
+      "transcription": "You put the ledger beside the receipt, that supports the cancellation. A worker's name is still not an issuing key.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-edda-6e522a26c358",
+      "speaker": "Edda",
+      "path": "public/audio/voice-campaign-edda-6e522a26c358.mp3",
+      "sha256": "d3582f2b4c7d49c5d8ba96f981ddc2257c977e80d50a751728fd05c025af7423",
+      "authoredText": "A public review can change the depot's doors. A private query asks for an appointment. Neither puts my archive shift back.",
+      "transcription": "A public review can change the depot's doors. A private query asks for an appointment. Neither puts my archive shift back.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-kerr-899d4ba5ecfb",
+      "speaker": "Kerr",
+      "path": "public/audio/voice-campaign-kerr-899d4ba5ecfb.mp3",
+      "sha256": "efc7a1dfac22ba92865fc4a7725233f4d4312576b99cb82a7e02ddcaf33b617e",
+      "authoredText": "You showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.",
+      "transcription": "You showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-kerr-e8022742ad26",
+      "speaker": "Kerr",
+      "path": "public/audio/voice-campaign-kerr-e8022742ad26.mp3",
+      "sha256": "1dc1eb6e6e2f1203c290800caedda3a1ea0a5cffa3b59b628f449492f8d5f090",
+      "authoredText": "My name went into their register after you promised it wouldn't. Say that before you ask me for another introduction.",
+      "transcription": "My name went into their register after you promised it wouldn't. Say that before you ask me for another introduction.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-kerr-f001a675c451",
+      "speaker": "Kerr",
+      "path": "public/audio/voice-campaign-kerr-f001a675c451.mp3",
+      "sha256": "c9cdfb49162cff0a08bb2ab7cddca6a5a1936059832c3e7dbbdb3076daff39c9",
+      "authoredText": "Keep the docket beside the promise. Use your own name for anything you sign. Mine stays out of it.",
+      "transcription": "Keep the docket beside the promise. Use your own name for anything you sign. Mine stays out of it.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-kerr-1903a3d3a421",
+      "speaker": "Kerr",
+      "path": "public/audio/voice-campaign-kerr-1903a3d3a421.mp3",
+      "sha256": "3ef85b7ef5a09e0a6cb7cbbed23127ba032942a0dd1dc019aaa8b68a49567dc5",
+      "authoredText": "Then I won't introduce you. The counter can answer for itself. I won't answer for a promise you won't name.",
+      "transcription": "Then I won't introduce you. The counter can answer for itself. I won't answer for a promise you won't name.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-dispatcher-094917ba4d45",
+      "speaker": "Dispatcher",
+      "path": "public/audio/voice-campaign-dispatcher-094917ba4d45.mp3",
+      "sha256": "9cc30a133c5c2e2da26c4da3ddd4d7e7edbd186d3b97044a5d6e1b3f04ff3882",
+      "authoredText": "Sign only as the worker. No recipient name goes on the shift sheet. Finish the sorting and I pay twenty.",
+      "transcription": "Sign only as the worker. No recipient name goes on the shift sheet. Finish the sorting and I pay 20.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-edda-f9a9ab61ae78",
+      "speaker": "Edda",
+      "path": "public/audio/voice-campaign-edda-f9a9ab61ae78.mp3",
+      "sha256": "9879a4517243c93a3abaea6f15c30df384bda69457f8a873979e17fe33131853",
+      "authoredText": "The depot answered a request. That is not an answer to the records inquiry. Keep both outcomes on the page.",
+      "transcription": "The depot answered a request that is not an answer to the record's inquiry. Keep both outcomes on the page.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-kerr-10b6e71a11eb",
+      "speaker": "Kerr",
+      "path": "public/audio/voice-campaign-kerr-10b6e71a11eb.mp3",
+      "sha256": "512593cc157650d5a50be2f01fde4159063ab9c88b10237848f34f9987a41176",
+      "authoredText": "A depot reference points to a desk. It doesn't tell me what you kept in your coat. What are you asking me to carry?",
+      "transcription": "A depot reference points to a desk. It doesn't tell me what you kept in your coat. What are you asking me to carry?",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-kerr-f829eb68f234",
+      "speaker": "Kerr",
+      "path": "public/audio/voice-campaign-kerr-f829eb68f234.mp3",
+      "sha256": "181bdff21515e3dd7244fc8d2346fdb3125ef84361a6abc88079012fc96d20dd",
+      "authoredText": "Then I know which depot desk you asked for, not what's in your case. Keep those two things separate.",
+      "transcription": "Then I know which depot desk you asked for, not what's in your case. Keep those two things separate.",
+      "exactNormalizedWords": true
+    }
+  ]
+}

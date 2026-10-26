@@ -1,0 +1,37 @@
+{
+  "phase": 2,
+  "commit": "3fc50638edb4b46a48b7104ef079948a18f25f73",
+  "ci": {
+    "run": 40375245937,
+    "url": "https://github.com/cisohabitat/CyberPunk3055RPG/actions/runs/40375245937",
+    "conclusion": "success",
+    "requiredChecks": [
+      "Test",
+      "Browser (chromium)",
+      "Browser (phone)",
+      "Browser (firefox)",
+      "Browser (webkit)",
+      "Build"
+    ],
+    "productionDecision": "build"
+  },
+  "deployment": {
+    "id": "dpl_dJfXHFRHBSug2qQJv4ryjBv3nMmG",
+    "publicUrl": "https://cyberpunk3055rpg.vercel.app",
+    "state": "READY",
+    "exactCommitVerified": true
+  },
+  "liveVerification": {
+    "featureChecksPassed": 19,
+    "viewWidths": [
+      390,
+      1440,
+      320
+    ],
+    "pageErrors": 0,
+    "horizontalOverflow": false,
+    "screensReviewed": true,
+    "scope": "Automated Chromium and synthetic viewports; no independent player, physical-device or auditory craft acceptance claim."
+  },
+  "previousPhaseRelease": "qa/editorial/player-led-phase1-release.json"
+}

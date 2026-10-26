@@ -1,0 +1,109 @@
+{
+  "phase": 3,
+  "baselinePhase2": "3fc50638edb4b46a48b7104ef079948a18f25f73",
+  "scope": "Explicit Edda/Kerr disclosures, public/private depot responses, two saved task actions, guarded portraits, ten scenes and twelve matching stock voice quotations",
+  "local": {
+    "sourcePassed": 718,
+    "typescript": true,
+    "build": true,
+    "securityAudit": "zero known vulnerabilities",
+    "balanceAudits": "all existing audits passed; zero reported failures",
+    "productionBudgetViolations": 0,
+    "focusedBrowserPassed": 62,
+    "portraitFollowupBrowserPassed": 24,
+    "voicePlaybackClipsPassed": 12,
+    "voicePlaybackErrors": [],
+    "voicePlaybackFailures": [],
+    "transcribedClips": 12,
+    "normalizedTranscriptMatches": 12,
+    "initialTransferBudgetBytes": 2097152,
+    "maximumMeasuredInitialTransferBytes": 1631209
+  },
+  "campaigns": [
+    {
+      "route": "qa/routes/district-public-work.json",
+      "width": 390,
+      "visits": 94,
+      "reloads": 42,
+      "tabs": 600,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 185,
+        "strain": 1,
+        "rolls": [
+          10,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "errors": [],
+      "failedMedia": []
+    },
+    {
+      "route": "qa/routes/district-private-rest.json",
+      "width": 1440,
+      "visits": 80,
+      "reloads": 28,
+      "tabs": 512,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 165,
+        "strain": 0,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "errors": [],
+      "failedMedia": []
+    }
+  ],
+  "visualReview": {
+    "widths": [
+      390,
+      1440,
+      320
+    ],
+    "modes": [
+      "public",
+      "private"
+    ],
+    "enlargedTextAt320": true,
+    "horizontalOverflow": false,
+    "pageErrors": [],
+    "inspectionPreservedState": true
+  },
+  "publication": "Pending exact-commit full hosted CI, production readiness and public feature verification",
+  "limits": "AI-directed source-informed Chromium campaigns, ASR and synthetic viewports; no independent player, physical-device, acting-quality or human-listening acceptance.",
+  "sources": {
+    "lib/district-response.ts": "73329829cbafe0ef8343fef606c48e2f3ccb9fd7a12778f512429ec0633fd632",
+    "lib/district-dialogue.ts": "dfcb32b38b9c2888a1c2d09a61c6a0ed1f9727cae3747fb718f80b6c3858caf2",
+    "lib/story/district-response.ts": "c8ee3f48ac3ef94be702a0c8ee330b58a2ea4ce063e913dbbc4fcb0e324f5667",
+    "lib/district-response.test.ts": "6bd89790cfdeceb11d9b3105a028f97ced1b4b461bf144723c7464863fe421ea",
+    "lib/campaign-dialogue.ts": "a88ae06890c21d871eff77483dc9bcaf21fcf7fdaf4aa2b05a4bc6f572b85998",
+    "lib/engine.ts": "890c20f21ba81967d3b6f1d0d222cea46a9543d11976568956412bc8eba05715",
+    "lib/sound.ts": "f5aa0ccfc993e5e6c7aa714c09c53d001f678937581ba31e77e51efe4322ebf7",
+    "lib/art.ts": "632dcfac7eff536ec79fbbe740fc8898ec0fa1dbbe310715ef02ece7a986e5eb",
+    "lib/scene-art.ts": "7aef17916b4f8ce5b4cce62a5b14129b1cda166a7d2b58a981711d696cc19cc9",
+    "lib/city-map.ts": "de17c046a64cacc979ea985a97b71d3107ed77e9408cc4a1801f6ab6ff458c79",
+    "components/DistrictLedger.tsx": "e70773dea80dcfb64729c69a3d573f86c0c2e8e9f0b35d0328b285a4f185e700",
+    "components/PlayScreen.tsx": "180c8223574a161383ae82ff10c29f666a6c05af095f16afd68d3d168f6377b3",
+    "components/GuideScreen.tsx": "9a318b55df5939fb9d5380772d8b42cc0e5d4d65163172ccf2751da3839c5498",
+    "app/globals.css": "20745925c8bc27319a734919608cc125e65bbc1ee7a5996971f58d7d3368a49b",
+    "tests/district-response.spec.ts": "f7fa0587e39cf408cc2592b5c41568e253f29a2c4f87fafa7332e24c1358df6d",
+    "scripts/production-report.ts": "ab436946c231a907354c629d1b9d13ffa05770c7c385f39d21ff0fafb5e91e87",
+    "scripts/voice-validation.ts": "85674b3bdd261ec8ef1e493255c26883e2fea6c9d0ff718bb0560e57ac473781",
+    "scripts/player-experience.ts": "bf06a216a7a8a505dbf3b185c4e1a52c490c92bb19b500df7f018901d19d77f4",
+    "qa/production/dialogue-examples.ts": "7d75a6fa58f5d822fb5eaa226dc3b76f49cd3f8eda58ea9fcea5ca0de9c28fe4",
+    "qa/media/district-dialogue-bindings.json": "ba071555c4fb38294f2f98bb05de94fbd8529396b9ba6a15f67f4ee13be2428c",
+    "qa/media/district-dialogue-lines.json": "0e8ab7ed24f403740892bde34cefeb8cf3989d96071ce7edbedda01e3d314b8d",
+    "qa/media/district-dialogue-provenance.json": "7dcca10aa08e92984d47dec4cd49acedd09951829a4cf651198d8885a67f2b61",
+    "qa/media/district-dialogue-transcripts.json": "40c3345fff1bf2e0c51d770cae5fa4d318dcf412f95c00d674ba42e2dd1664ff"
+  }
+}

@@ -36,7 +36,7 @@ export function auditSceneArt(scenes: Record<string, Scene>, source: unknown = d
   if (JSON.stringify(manifest.variants) !== JSON.stringify(PORTRAIT_STAGING)) throw new Error("Conditional portrait catalog disagrees with conduct staging");
   for (const rule of PORTRAIT_STAGING) for (const id of rule.scenes) {
     if (!scenes[id] || scenes[id].speaker !== rule.speaker) throw new Error(`Conditional portrait speaker mismatch: ${id}`);
-    const flags = Object.fromEntries(("allFlags" in rule ? rule.allFlags : rule.anyFlags).map(flag => [flag, true]));
+    const flags = Object.fromEntries([...( "allFlags" in rule ? rule.allFlags : []), ...( "anyFlags" in rule ? rule.anyFlags : [])].map(flag => [flag, true]));
     if (portraitArt(rule.speaker, id, flags) !== rule.asset) throw new Error(`Conditional portrait selection mismatch: ${id}`);
   }
   if (JSON.stringify(manifest.illustrationVariants) !== JSON.stringify(ILLUSTRATION_STAGING)) throw new Error("Conditional illustration catalog disagrees with earned outcome staging");

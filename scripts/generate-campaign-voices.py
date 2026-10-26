@@ -12,18 +12,20 @@ from kokoro_onnx import Kokoro
 parser=argparse.ArgumentParser()
 parser.add_argument('--model',required=True);parser.add_argument('--voices',required=True)
 parser.add_argument('--masters',default='/workspace/generated_audio/campaign-dialogue')
+parser.add_argument('--catalog',default='qa/media/campaign-dialogue-lines.json')
+parser.add_argument('--provenance',default='qa/media/campaign-dialogue-provenance.json')
 parser.add_argument('--only',nargs='+');args=parser.parse_args()
 root=pathlib.Path(__file__).resolve().parent.parent
 legacy=json.loads((root/'qa/media/voice-provenance.json').read_text())
 expected={f['name']:f['sha256'] for f in legacy['model']['files']}
 sha=lambda path:hashlib.sha256(path.read_bytes()).hexdigest()
 for path in [pathlib.Path(args.model),pathlib.Path(args.voices)]:assert sha(path)==expected[path.name]
-lines=json.loads((root/'qa/media/campaign-dialogue-lines.json').read_text())
+lines=json.loads((root/args.catalog).read_text())
 if args.only:
  assert set(args.only)<={l['id'] for l in lines}
  lines=[l for l in lines if l['id'] in args.only]
 masters=pathlib.Path(args.masters);masters.mkdir(parents=True,exist_ok=True)
-provenance=root/'qa/media/campaign-dialogue-provenance.json'
+provenance=root/args.provenance
 records=json.loads(provenance.read_text())['lines'] if provenance.exists() else []
 records={r['id']:r for r in records};model=Kokoro(args.model,args.voices)
 def write(path,samples,rate):

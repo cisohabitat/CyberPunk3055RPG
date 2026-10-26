@@ -4190,6 +4190,38 @@
           "sha256": "613713292e7b2e8c41b4403b3230184591557e47248ddd947bbc5ab7364e7e42"
         }
       ]
+    },
+    {
+      "id": "depot-review",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-26",
+      "sourceFile": "/workspace/generated_images/exec-5ac8e53b-7276-411f-8671-a57c8a681ee7.png",
+      "sourceSha256": "f5733bd9f22ac2b8f1b438bb1e7afaf8b20f49d73659ecebc52ab6d55d285ef4",
+      "promptSummary": "Reference-guided canal depot under a public records review: anonymous side shutter blocked, empty lit main counter available, no people, names or review verdict.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/depot-review.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 511468,
+          "sha256": "32c298366a5b83155832ca5a6d3e35c71845256f45ccba910e0217fbd6e04b4e"
+        },
+        {
+          "path": "public/art/depot-review-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 122469,
+          "sha256": "e87710688ef41b91ec7ce8a216d21e2bf6859cc1348b59413130f6471c848ca6"
+        },
+        {
+          "path": "public/art/previews/depot-review.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 2752,
+          "sha256": "a940030a93330c50cbfde0779fb2eddcf92ba0127c49387fc9aff1faf7e47a25"
+        }
+      ]
     }
   ]
 }

@@ -154,3 +154,9 @@ The check die uses original local SVG facet geometry and CSS shading/tumble, aut
 ### Shared branding and dice foley (18 October 2026)
 
 The small header/loading/browser emblem uses original local SVG paths simplifying the approved silver halo and cyan memory shard; it retains the existing title wordmark painting and all scene images. Five original short dice cues are procedurally synthesized offline from seeded filtered noise, soft contacts and quiet sine resonances. They use no recording, sample library, trained model or synthetic voice. `scripts/dice-foley.mjs` and `scripts/author-dice-foley.mjs` provide reproducible source; `qa/media/dice-foley.json` records PCM16 delivery hashes and measured signals. Earlier ticks/stings and all dialogue deliveries remain unchanged. The media audition includes all five cues.
+
+## Reactive depot additions (26 October 2026)
+
+`depot-review` is an AI-generated reference-guided canal-depot painting, delivered as responsive JPEGs with its source and hashes in `qa/media/art-provenance.json`. It depicts only the public service hatch under review and an available empty main counter. Existing Edda, Kerr and Dispatcher portraits and neutral settings are reused under explicit scene decisions.
+
+Twelve fixed Edda/Kerr/Dispatcher quotations use the same licensed Kokoro v1.0 stock cast styles, generated offline with kokoro-onnx 0.6.1 and mastered to approximately −20 LUFS with a true-peak ceiling below −1.5 dBTP. Catalog, exact bindings, source hashes and measurements are in `qa/media/district-dialogue-*.json`; the prior campaign cohort is unchanged. PCM masters remain outside Git. No human actor session, individual voice clone or independent listening acceptance is claimed.

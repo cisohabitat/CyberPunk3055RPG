@@ -9,6 +9,7 @@ import type { ReplaySpec } from "./story-replay";
 import type { VoiceStatus } from "./sound";
 import bindings from "../qa/media/campaign-dialogue-bindings.json";
 import decisions from "../qa/media/campaign-dialogue-audit.json";
+import districtDecisions from "../qa/media/district-dialogue-audit.json";
 import deliveries from "../qa/media/campaign-dialogue-provenance.json";
 import old from "../qa/media/voice-provenance.json";
 import ives from "../qa/media/ives-mastering.json";
@@ -75,7 +76,7 @@ describe("campaign character dialogue", () => {
           if (scene.id === "stall" && quote.text.startsWith(`${state.handle}. Mara Voss`)) {
             assert.ok(queue.some(l => l.id === "voice-quill-offer")); continue;
           }
-          const decision = decisions.decisions.find(d => d.scene === scene.id && d.text === quote.text);
+          const decision = [...decisions.decisions, ...districtDecisions.decisions].find(d => d.scene === scene.id && d.text === quote.text);
           assert.ok(decision, `Unaudited quotation ${file}/${scene.id}: ${quote.text}`);
           if (decision.decision === "voice") assert.ok(queue.some(l => l.quote === quote.text), `Unvoiced quotation ${file}/${scene.id}: ${quote.text}`);
         }
@@ -137,8 +138,8 @@ describe("campaign character dialogue", () => {
     }
   });
   it("has fitting explicit art decisions for the entire campaign and preserves chapter cards", () => {
-    assert.equal(Object.keys(auditSceneArt(SCENES)).length, 197);
-    assert.equal(Object.values(SCENES).filter(s => sceneIllustration(s.id)).length, 195);
+    assert.equal(Object.keys(auditSceneArt(SCENES)).length, 207);
+    assert.equal(Object.values(SCENES).filter(s => sceneIllustration(s.id)).length, 203);
     assert.equal(sceneIllustration("card_week"), undefined); assert.equal(sceneIllustration("card_wall"), undefined);
     for (const id of ["ending_names", "ending_quiet", "ending_witness", "ending_listed"]) assert.ok(sceneIllustration(id)?.src.startsWith("/art/finale-"));
   });

@@ -1,0 +1,65 @@
+{
+  "phase": 3,
+  "baseline": "3fc50638edb4b46a48b7104ef079948a18f25f73",
+  "precedingFiles": {
+    "qa/media/campaign-dialogue-bindings.json": "15ae8b35c16b330b545f001e23dc75b5f4bd131225347f616ab76c1b7088f0bd",
+    "qa/media/campaign-dialogue-lines.json": "39a2015b2414de22fabf618c75e948fdde7dd67ae66739196eae0d209338e875",
+    "qa/media/campaign-dialogue-provenance.json": "56f58e37a529e748e682b23fd63ee20e31b4d969b3b61690437e24b4ae4c82e3",
+    "qa/media/campaign-dialogue-audit.json": "4d8fdb1a9c21a1208dc4f36a220b0ec63a4e405eb9ab13bd934dd0b62bb3b1d7"
+  },
+  "voiceIds": [
+    "voice-campaign-dispatcher-094917ba4d45",
+    "voice-campaign-edda-6e522a26c358",
+    "voice-campaign-edda-7b79a3e4c6d0",
+    "voice-campaign-edda-99446ae38d6d",
+    "voice-campaign-edda-ee8d63542999",
+    "voice-campaign-edda-f9a9ab61ae78",
+    "voice-campaign-kerr-10b6e71a11eb",
+    "voice-campaign-kerr-1903a3d3a421",
+    "voice-campaign-kerr-899d4ba5ecfb",
+    "voice-campaign-kerr-e8022742ad26",
+    "voice-campaign-kerr-f001a675c451",
+    "voice-campaign-kerr-f829eb68f234"
+  ],
+  "artAssets": [
+    {
+      "id": "depot-review",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-26",
+      "sourceFile": "/workspace/generated_images/exec-5ac8e53b-7276-411f-8671-a57c8a681ee7.png",
+      "sourceSha256": "f5733bd9f22ac2b8f1b438bb1e7afaf8b20f49d73659ecebc52ab6d55d285ef4",
+      "promptSummary": "Reference-guided canal depot under a public records review: anonymous side shutter blocked, empty lit main counter available, no people, names or review verdict.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/depot-review.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 511468,
+          "sha256": "32c298366a5b83155832ca5a6d3e35c71845256f45ccba910e0217fbd6e04b4e"
+        },
+        {
+          "path": "public/art/depot-review-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 122469,
+          "sha256": "e87710688ef41b91ec7ce8a216d21e2bf6859cc1348b59413130f6471c848ca6"
+        },
+        {
+          "path": "public/art/previews/depot-review.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 2752,
+          "sha256": "a940030a93330c50cbfde0779fb2eddcf92ba0127c49387fc9aff1faf7e47a25"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    "district-public-work.json",
+    "district-private-rest.json",
+    "district-correction-limits.json",
+    "district-breach-denied.json"
+  ],
+  "limits": "AI-directed technical validation and synthetic browser viewports; no independent player, physical-device or listening acceptance."
+}

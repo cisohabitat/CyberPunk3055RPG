@@ -68,6 +68,11 @@ const ARCHIVE_DESK: Illustration = {
   description: "A closed maintenance ledger, a catalog beneath glass and a dim record reader sit under a brass task lamp before rows of steel drawers and a service shutter.",
 };
 for (const id of ["act2_archive_brief", "act2_archive_prep", "act2_archive_compare", "act2_archive_challenge", "act2_archive_door", "act2_archive_custody"]) ENCOUNTERS[id] = ARCHIVE_DESK;
+for (const id of ["act2_district_brief", "act2_district_edda"]) ENCOUNTERS[id] = { src: "/art/edda-archive.jpg", small: "/art/edda-archive-small.jpg", caption: "Helion · a request has its own terms", description: "Edda waits at the archive counter with a closed ledger and folded blank paper; no request, public signature or outcome is shown." };
+for (const id of ["act2_district_canal", "act2_district_docket", "act2_district_result"]) ENCOUNTERS[id] = { src: "/art/canal-dispatch.jpg", small: "/art/canal-dispatch-small.jpg", caption: "Canal depot · the ordinary service route", description: "A worn transit map and lamp sit before the canal-side dispatch shutter, stairs and waiting lift. No completed task or audit result is depicted." };
+ENCOUNTERS.act2_district_work = { src: "/art/depot-review.jpg", small: "/art/depot-review-small.jpg", caption: "Canal depot · the main counter stays open", description: "A queue rail closes the anonymous side hatch beneath an unlettered review cover; the lit main counter has an open unmarked worker ledger. No payment, recipient name or completed review is shown." };
+ENCOUNTERS.act2_district_rest = { ...SPIRE_PAYROLL, caption: "Canal service room · a place to sit", description: "Two empty chairs face a lamp-lit table and closed folio beside a rainy window. No treatment, appointment completion or restored archive access is depicted." };
+ENCOUNTERS.act3_district_return = { src: "/art/archive-held-original.jpg", small: "/art/archive-held-original-small.jpg", caption: "Ward Nine · the source keeps its own terms", description: "A closed source ledger in a protective sleeve stays apart from a folded copy and pencil. No inquiry decision or restored shift is depicted." };
 const COURIER_TABLE: Illustration = {
   src: "/art/courier-table.jpg", small: "/art/courier-table-small.jpg", caption: "Ward Nine · Asa's courier table",
   description: "A closed courier satchel, indistinct routing slips, a metal cup and a desk relay rest beside an empty chair with a dark coat and rust-colored scarf, overlooking rainy neighborhood walkways.",
@@ -87,6 +92,7 @@ ENCOUNTERS.act2_witness_arrival = { src: "/art/nia-arrival.jpg", small: "/art/ni
 ENCOUNTERS.act2_route_receipt = { src: "/art/kerr-handover.jpg", small: "/art/kerr-handover-small.jpg", caption: "Ward Four · the closed case", description: "Kerr checks an unmarked tag beside the strap of a closed brace case on the sheltered stall counter." };
 /** Only earned outcome flags select consequence art; ordinary saves keep neutral plates. */
 export const ILLUSTRATION_STAGING = [
+
   {
     scenes: ["act2_shelter_rooms", "act2_shelter_result"], allFlags: ["shelter_restored"], anyFlags: [],
     noneFlags: ["shelter_declined", "shelter_unobserved", "shelter_hall", "shelter_failed"],
@@ -123,6 +129,11 @@ export const ILLUSTRATION_STAGING = [
     scenes: ["act3_arrival"], allFlags: ["on_file", "act2_deal"], anyFlags: [], noneFlags: ["testimony_published"],
     illustration: { src: "/art/wall-shared.jpg", small: "/art/wall-shared-small.jpg", caption: "Ward Nine · the pencil and the open folio", description: "Sera holds her pencil beside the rain-worn memorial while Ives waits a step apart with an open black folio. No page changes hands and no private identity is legible." },
     reason: "Both arrival prose branches explicitly place Ives beside Sera when on_file and act2_deal hold. Completed public filing retains its preceding earned plate; no handover, consent, verdict or ending is implied.",
+  },
+  {
+    scenes: ["act2_district_canal", "act2_district_docket", "act2_district_result"], allFlags: ["district_query_sent", "district_public_review"], anyFlags: [], noneFlags: [],
+    illustration: { src: "/art/depot-review.jpg", small: "/art/depot-review-small.jpg", caption: "Canal depot · a public request changes the doors", description: "A queue rail blocks the lowered anonymous hatch beneath a blank audit cover; an open unmarked ledger waits at the accessible lit main counter. No completed review, payment or private identity is shown." },
+    reason: "Only an actually submitted public register-review request changes this depot's anonymous hatch to a blocked route. Private service appointments retain the ordinary dispatch painting; no review finding or source authentication is implied.",
   },
 ] as const;
 export function sceneIllustration(sceneId: string, flags: Readonly<Record<string, boolean>> = {}): Illustration | undefined {
@@ -189,6 +200,7 @@ export const PORTRAIT_STAGING = [
   { speaker: "Quill", asset: "/art/quill-waiting.jpg", scenes: ["act2_quill_introduction", "act3_quill_introduction"], allFlags: ["quill_refused"], reason: "The recorded postponed tab keeps Quill unsmiling; late repayment does not erase the earlier refusal." },
   { speaker: "Sera", asset: "/art/sera-listening.jpg", scenes: ["act3_arrival", "ending_witness"], allFlags: ["confirmed_leak"], reason: "An admitted leak calls for attentive listening; it is not absolution or permission to quote another witness." },
   { speaker: "Edda", asset: "/art/edda-assignment.jpg", scenes: ["act3_edda_reply"], allFlags: ["edda_shift_paid"], reason: "Only an earned paid bench assignment permits Edda holding its notice beside the inquiry reference. Archive suspension and inquiry remain; no acquittal." },
+  { speaker: "Kerr", asset: "/art/kerr-closed.jpg", scenes: ["act2_district_kerr_reply"], allFlags: ["kerr_route_private", "kerr_route_trace"], anyFlags: ["district_told_kerr_trace", "kerr_route_delivered", "kerr_route_visit"], reason: "Only a known broken private promise closes Kerr's expression here. An undisclosed docket cannot give him knowledge through the portrait; acknowledgement does not erase the trace." },
 ] as const;
 export function portraitArt(speaker?: string, sceneId?: string, flags: Readonly<Record<string, boolean>> = {}): string | undefined {
   const conduct = PORTRAIT_STAGING.find(rule => rule.speaker === speaker && (rule.scenes as readonly string[]).includes(sceneId ?? "")

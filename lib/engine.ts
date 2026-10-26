@@ -5,6 +5,7 @@ import { SCENES } from "./story";
 import { encounteredCast } from "./story/cast";
 import { caseFileChoices } from "./case-file";
 import { archivePlanBonus, archivePlanChoices, finishArchivePlan } from "./archive-plan";
+import { districtChoices } from "./district-response";
 import type {
   CheckPreview,
   CheckResult,
@@ -133,7 +134,7 @@ function choiceHidden(state: GameState, choice: Choice): boolean {
 }
 
 export function presentChoices(state: GameState, scene: Scene): VisibleChoice[] {
-  return [...archivePlanChoices(state, scene), ...caseFileChoices(state, scene)].filter((choice) => !choiceHidden(state, choice)).map((choice) => {
+  return [...districtChoices(state, scene, archivePlanChoices(state, scene)), ...caseFileChoices(state, scene)].filter((choice) => !choiceHidden(state, choice)).map((choice) => {
     if (choice.maxStrain !== undefined && state.strain > choice.maxStrain) {
       return { ...choice, enabled: false, disabledReason: `Need Strain at most ${choice.maxStrain}; recover before this preparation` };
     }

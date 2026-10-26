@@ -1,0 +1,144 @@
+[
+  {
+    "id": "voice-campaign-edda-ee8d63542999",
+    "speaker": "Edda",
+    "voice": "af_kore",
+    "speed": 0.95,
+    "text": "Show me the part you want me to act on. Your private notes are not a public instruction.",
+    "direction": "Restrained, personal and clear. Preserve the difference between a request, a task outcome and an inquiry result. No narration.",
+    "loudnessLufs": -20
+  },
+  {
+    "id": "voice-campaign-edda-99446ae38d6d",
+    "speaker": "Edda",
+    "voice": "af_kore",
+    "speed": 0.95,
+    "text": "This packet has the cancellation receipt. Keep its limits on the cover. My request cannot turn it into independent proof.",
+    "direction": "Restrained, personal and clear. Preserve the difference between a request, a task outcome and an inquiry result. No narration.",
+    "loudnessLufs": -20
+  },
+  {
+    "id": "voice-campaign-edda-7b79a3e4c6d0",
+    "speaker": "Edda",
+    "voice": "af_kore",
+    "speed": 0.95,
+    "text": "You put the ledger beside the receipt. That supports the cancellation. A worker's name is still not an issuing key.",
+    "direction": "Restrained, personal and clear. Preserve the difference between a request, a task outcome and an inquiry result. No narration.",
+    "loudnessLufs": -20
+  },
+  {
+    "id": "voice-campaign-edda-6e522a26c358",
+    "speaker": "Edda",
+    "voice": "af_kore",
+    "speed": 0.95,
+    "text": "A public review can change the depot's doors. A private query asks for an appointment. Neither puts my archive shift back.",
+    "direction": "Restrained, personal and clear. Preserve the difference between a request, a task outcome and an inquiry result. No narration.",
+    "loudnessLufs": -20
+  },
+  {
+    "id": "voice-campaign-kerr-10b6e71a11eb",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.97,
+    "text": "A depot reference points to a desk. It doesn't tell me what you kept in your coat. What are you asking me to carry?",
+    "direction": "Restrained, personal and clear. Preserve the difference between a request, a task outcome and an inquiry result. No narration.",
+    "loudnessLufs": -20
+  },
+  {
+    "id": "voice-campaign-kerr-899d4ba5ecfb",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.97,
+    "text": "You showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.",
+    "direction": "Restrained, personal and clear. Preserve the difference between a request, a task outcome and an inquiry result. No narration.",
+    "loudnessLufs": -20
+  },
+  {
+    "id": "voice-campaign-kerr-f829eb68f234",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.97,
+    "text": "Then I know which depot desk you asked for, not what's in your case. Keep those two things separate.",
+    "direction": "Restrained, personal and clear. Preserve the difference between a request, a task outcome and an inquiry result. No narration.",
+    "loudnessLufs": -20
+  },
+  {
+    "id": "voice-campaign-kerr-e8022742ad26",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.97,
+    "text": "My name went into their register after you promised it wouldn't. Say that before you ask me for another introduction.",
+    "direction": "Restrained, personal and clear. Preserve the difference between a request, a task outcome and an inquiry result. No narration.",
+    "loudnessLufs": -20
+  },
+  {
+    "id": "voice-campaign-kerr-f001a675c451",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.97,
+    "text": "Keep the docket beside the promise. Use your own name for anything you sign. Mine stays out of it.",
+    "direction": "Restrained, personal and clear. Preserve the difference between a request, a task outcome and an inquiry result. No narration.",
+    "loudnessLufs": -20
+  },
+  {
+    "id": "voice-campaign-kerr-1903a3d3a421",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.97,
+    "text": "Then I won't introduce you. The counter can answer for itself. I won't answer for a promise you won't name.",
+    "direction": "Restrained, personal and clear. Preserve the difference between a request, a task outcome and an inquiry result. No narration.",
+    "loudnessLufs": -20,
+    "segments": [
+      {
+        "text": "Then I won't introduce you.",
+        "speed": 0.94,
+        "pauseAfter": 0.25
+      },
+      {
+        "text": "The counter can answer for itself.",
+        "speed": 0.94,
+        "pauseAfter": 0.25
+      },
+      {
+        "text": "I won't answer for a promise you won't name.",
+        "speed": 0.88,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-dispatcher-094917ba4d45",
+    "speaker": "Dispatcher",
+    "voice": "af_river",
+    "speed": 0.98,
+    "text": "Sign only as the worker. No recipient name goes on the shift sheet. Finish the sorting and I pay twenty.",
+    "direction": "Restrained, personal and clear. Preserve the difference between a request, a task outcome and an inquiry result. No narration.",
+    "loudnessLufs": -20,
+    "segments": [
+      {
+        "text": "Sign only as the worker.",
+        "speed": 0.96,
+        "pauseAfter": 0.22
+      },
+      {
+        "text": "No recipient name goes on the shift sheet.",
+        "speed": 0.88,
+        "pauseAfter": 0.22
+      },
+      {
+        "text": "Finish the sorting and I pay twenty.",
+        "speed": 0.96,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-edda-f9a9ab61ae78",
+    "speaker": "Edda",
+    "voice": "af_kore",
+    "speed": 0.95,
+    "text": "The depot answered a request. That is not an answer to the records inquiry. Keep both outcomes on the page.",
+    "direction": "Restrained, personal and clear. Preserve the difference between a request, a task outcome and an inquiry result. No narration.",
+    "loudnessLufs": -20
+  }
+]
