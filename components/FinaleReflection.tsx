@@ -6,6 +6,7 @@ import { aftermath } from "@/lib/evidence";
 import { endingCoda } from "@/lib/story/codas";
 import { nightRetell } from "@/lib/story/retell";
 import { CampaignRecap } from "./CampaignRecap";
+import { CampaignThread } from "./CampaignThread";
 import { finaleCommitments } from "@/lib/finale-commitments";
 
 export function FinaleReflection({ state, artwork = true }: { state: GameState; artwork?: boolean }) {
@@ -33,6 +34,7 @@ export function FinaleReflection({ state, artwork = true }: { state: GameState; 
         <p>{endingCoda(state.sceneId)}</p>
       </details>
     </section>
+    <CampaignThread state={state} />
     <CampaignRecap state={state} artwork={artwork} />
   </section>;
 }

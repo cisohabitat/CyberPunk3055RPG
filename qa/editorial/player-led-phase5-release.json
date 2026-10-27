@@ -1,0 +1,352 @@
+{
+  "phase": 5,
+  "commit": "dcf728a3ea113c2e488fb06f9bdebe9c0ed096e3",
+  "implementationCommit": "a3f20bffe9ad2d20e7663b1ccbfd1a127f91acc7",
+  "verifiedAtUtc": "2026-10-27T06:29:58.166Z",
+  "ci": {
+    "run": 40456159693,
+    "url": "https://github.com/cisohabitat/CyberPunk3055RPG/actions/runs/40456159693",
+    "conclusion": "success",
+    "productionDecision": "build",
+    "requiredChecks": [
+      "Test",
+      "Browser (chromium)",
+      "Browser (phone)",
+      "Browser (firefox)",
+      "Browser (webkit)",
+      "Build"
+    ],
+    "localSourceTestsPassed": 753,
+    "fullSuiteResults": {
+      "chromium": {
+        "passed": 811,
+        "flaky": 0
+      },
+      "phone": {
+        "passed": 809,
+        "skipped": 2,
+        "flaky": 0
+      },
+      "firefox": {
+        "passed": 809,
+        "skipped": 2,
+        "flaky": 0
+      },
+      "webkit": {
+        "passed": 808,
+        "flaky": 1,
+        "skipped": 2
+      }
+    },
+    "retry": "One existing tests/game.spec.ts held-roll reload check reported a theme-title.flac access-control message and passed its original configured retry. All 48 isolated Phase 5 viewport cases passed normal per-case limits.",
+    "browserReports": {
+      "chromium": {
+        "jobId": 122030689118,
+        "results": [
+          "2026-10-27T05:39:39.1799201Z   2 passed (3.9s)",
+          "2026-10-27T05:39:39.1825832Z ##[notice]  2 passed (3.9s)",
+          "2026-10-27T05:40:13.1149500Z   9 passed (33.4s)",
+          "2026-10-27T05:40:13.1157167Z ##[notice]  9 passed (33.4s)",
+          "2026-10-27T05:53:11.0665181Z   811 passed (13.0m)",
+          "2026-10-27T05:53:11.0672283Z ##[notice]  811 passed (13.0m)"
+        ]
+      },
+      "phone": {
+        "jobId": 122030689067,
+        "results": [
+          "2026-10-27T05:40:13.5469531Z   9 passed (43.2s)",
+          "2026-10-27T05:40:13.5499570Z ##[notice]  9 passed (43.2s)",
+          "2026-10-27T05:55:45.3107297Z   2 skipped",
+          "2026-10-27T05:55:45.3110059Z   809 passed (15.5m)",
+          "2026-10-27T05:55:45.3115301Z ##[notice]  2 skipped",
+          "  809 passed (15.5m)"
+        ]
+      },
+      "firefox": {
+        "jobId": 122030689080,
+        "results": [
+          "2026-10-27T05:40:27.2171215Z   9 passed (1.0m)",
+          "2026-10-27T05:40:27.2205618Z ##[notice]  9 passed (1.0m)",
+          "2026-10-27T06:04:51.0228414Z   2 skipped",
+          "2026-10-27T06:04:51.0228938Z   809 passed (24.4m)",
+          "2026-10-27T06:04:51.0240590Z ##[notice]  2 skipped",
+          "  809 passed (24.4m)"
+        ]
+      },
+      "webkit": {
+        "jobId": 122030689043,
+        "results": [
+          "2026-10-27T05:41:23.2244019Z   9 passed (1.3m)",
+          "2026-10-27T05:41:23.2278966Z ##[notice]  9 passed (1.3m)",
+          "2026-10-27T06:18:34.1972881Z   1 flaky",
+          "2026-10-27T06:18:34.1974034Z   2 skipped",
+          "2026-10-27T06:18:34.1974241Z   808 passed (37.2m)",
+          "2026-10-27T06:18:34.1979313Z ##[notice]  1 flaky",
+          "  2 skipped",
+          "  808 passed (37.2m)"
+        ],
+        "retry": {
+          "test": "tests/game.spec.ts:463 \u2014 a recorded roll survives reload and cannot be rerolled",
+          "observed": "One theme-title.flac request reported access-control checks; original configured retry passed. Game/test unchanged by this phase.",
+          "phase5ViewportCases": "All 48 passed with normal per-case limits."
+        }
+      }
+    },
+    "actualCheckRuns": [
+      {
+        "id": 122043162747,
+        "name": "Build",
+        "status": "completed",
+        "conclusion": "success",
+        "suiteId": 109649382807
+      },
+      {
+        "id": 122030689118,
+        "name": "Browser (chromium)",
+        "status": "completed",
+        "conclusion": "success",
+        "suiteId": 109649382807
+      },
+      {
+        "id": 122030689080,
+        "name": "Browser (firefox)",
+        "status": "completed",
+        "conclusion": "success",
+        "suiteId": 109649382807
+      },
+      {
+        "id": 122030689067,
+        "name": "Browser (phone)",
+        "status": "completed",
+        "conclusion": "success",
+        "suiteId": 109649382807
+      },
+      {
+        "id": 122030689043,
+        "name": "Browser (webkit)",
+        "status": "completed",
+        "conclusion": "success",
+        "suiteId": 109649382807
+      },
+      {
+        "id": 122029848974,
+        "name": "Test",
+        "status": "completed",
+        "conclusion": "success",
+        "suiteId": 109649382807
+      }
+    ]
+  },
+  "deployment": {
+    "id": "dpl_5sqx1eMk9DTk4kJbzmw8MWxDFVcn",
+    "state": "READY",
+    "target": "production",
+    "branch": "main",
+    "publicUrl": "https://cyberpunk3055rpg.vercel.app",
+    "exactPublicCommitVerified": true,
+    "publicAndMainAliasesVerified": true,
+    "aliases": [
+      "cyberpunk3055rpg.vercel.app",
+      "cyberpunk3055rpg-cfusion2k-7277s-projects.vercel.app",
+      "cyberpunk3055rpg-git-main-cfusion2k-7277s-projects.vercel.app"
+    ],
+    "recovery": [
+      {
+        "id": "dpl_93veybEt8fXYuND2r9168aQdMkqh",
+        "commit": "a3f20bffe9ad2d20e7663b1ccbfd1a127f91acc7",
+        "state": "ERROR",
+        "errorCode": "BUILD_EXCEEDED_MAXIMUM_TIME",
+        "ci": "Original WebKit batch harness also failed; publication blocked."
+      },
+      {
+        "id": "dpl_E3bTQst8eK9jwRB5uZT7NHHrkD8n",
+        "commit": "dcf728a3ea113c2e488fb06f9bdebe9c0ed096e3",
+        "state": "ERROR",
+        "errorCode": "BUILD_EXCEEDED_MAXIMUM_TIME",
+        "ci": "Corrected full CI passed, but original deployment exhausted its build window while waiting."
+      }
+    ],
+    "recoveryAction": "Redeployed same verified main through Vercel API after actual productionDecision build. No source push, partial workflow rerun, timeout increase or release-gate bypass."
+  },
+  "liveVerification": {
+    "featureChecksPassed": 54,
+    "voiceDeliveryHashesMatched": 7,
+    "artDeliveryHashesMatched": 12,
+    "viewportStateCaptures": 6,
+    "scriptErrors": 0,
+    "overflow": false,
+    "inspectionPreservedState": true
+  },
+  "evidence": {
+    "initialSnapshot": "qa/editorial/player-led-phase5.json",
+    "harnessCorrection": "qa/editorial/player-led-phase5-webkit-followup.json",
+    "guide": "docs/CINEMATIC_DIRECTION_PHASE5.md",
+    "publicTestLog": "/tmp/cinematic-phase5-live-tests.log",
+    "publicDeliveries": "/tmp/cinematic-phase5-public-deliveries.json",
+    "publicViews": "/tmp/cinematic-phase5-live-views.json",
+    "rawChecks": "/tmp/cinematic-phase5-check-runs.json",
+    "implementationCommitCampaign": "/tmp/cinematic-phase5-final-commit-campaign.json"
+  },
+  "limitations": "Internal authored/directed AI and synthetic browser/viewport proxy. No human, physical-device, independent acting/listening or AAA-grade acceptance claimed. Existing WebKit reload-audio retry recorded above. Vercel build-event logs have connection scope limits; exact status/aliases, public gameplay and delivery hashes verified through available tools.",
+  "recording": "Separate post-publication evidence. Preserve committed initial and harness-followup snapshots. Copy this release record into editorial with the next phase; do not trigger another CI run for a status-only commit.",
+  "liveDeliveries": {
+    "commit": "dcf728a3ea113c2e488fb06f9bdebe9c0ed096e3",
+    "publicUrl": "https://cyberpunk3055rpg.vercel.app",
+    "voiceClips": 7,
+    "artDeliveries": 12,
+    "rows": [
+      {
+        "path": "/audio/voice-campaign-mara-revelation-performance.mp3",
+        "bytes": 114668,
+        "sha256": "c862782aa863dea10d16fa4740542283d252475332366cba2be1efc931c3af58"
+      },
+      {
+        "path": "/audio/voice-campaign-kerr-3914d401fb83.mp3",
+        "bytes": 16172,
+        "sha256": "dedf3c7e841870c6d32a4ea7c0aee46f9a49888892ae43db621b2c8fb93208d6"
+      },
+      {
+        "path": "/audio/voice-kerr-kerr.wav",
+        "bytes": 312780,
+        "sha256": "1f5a0e7cd2154c89a79b4fed3a5622ab04db107e6ae90a14394cb02b802d5e4a"
+      },
+      {
+        "path": "/audio/voice-campaign-nia-pell-c987f8a09159.mp3",
+        "bytes": 23660,
+        "sha256": "de1327f14fbdb4d5511b9fb329c6141a8c72c80de007b4c3d04cfc83db7b4c72"
+      },
+      {
+        "path": "/audio/voice-nia-arrival.wav",
+        "bytes": 448268,
+        "sha256": "d491be8168f0903643430831328c9846014804e509e743b8905703a705ecd772"
+      },
+      {
+        "path": "/audio/voice-campaign-sera-1031969a7935.mp3",
+        "bytes": 18188,
+        "sha256": "885228941d905cf23bb9c4a85b53438ad267dd69303b97cf9d7e9812827d40b3"
+      },
+      {
+        "path": "/audio/voice-sera-wall-invitation.wav",
+        "bytes": 285192,
+        "sha256": "8acb35ad90d96230b250aab59088dd322e0f0741cbade1059b723c2ff9d35abf"
+      },
+      {
+        "path": "/art/recorded-hour-detail.jpg",
+        "bytes": 287087,
+        "sha256": "729571c4e5cced781bb43e30e56bfc8fe0164d75c656cd3987c4359bc76da191"
+      },
+      {
+        "path": "/art/recorded-hour-detail-small.jpg",
+        "bytes": 82440,
+        "sha256": "68546cc2422af261af2189d066497768ca0d50c8be39bcf5f573d8e3197d1a64"
+      },
+      {
+        "path": "/art/previews/recorded-hour-detail.jpg",
+        "bytes": 2557,
+        "sha256": "0bcde867b584ea7b61e7696fdbf7b102a5a28ca29f4ee078339e0bb5cbf0f75d"
+      },
+      {
+        "path": "/art/chapel-threshold-detail.jpg",
+        "bytes": 323057,
+        "sha256": "0398f6800cbc0992f8f275f8c17e0da47b02dffe24fde4e2083ac934b7ec82ca"
+      },
+      {
+        "path": "/art/chapel-threshold-detail-small.jpg",
+        "bytes": 81368,
+        "sha256": "2803b0e0b5f417776e86c01ff57d1a1400b8c4c9b9ea036f5403aa5ef1a680b2"
+      },
+      {
+        "path": "/art/previews/chapel-threshold-detail.jpg",
+        "bytes": 2007,
+        "sha256": "4107217af4a2ecf3a17d03384bcf54869d466dfba8bf1228661cff1fe09704e3"
+      },
+      {
+        "path": "/art/witness-choice-detail.jpg",
+        "bytes": 335658,
+        "sha256": "058519b1c95690e2aae9631a469c2b8e79d805475b2b091001c875d4c0f8bb1d"
+      },
+      {
+        "path": "/art/witness-choice-detail-small.jpg",
+        "bytes": 89420,
+        "sha256": "7a604a8742607b2c6e2e7ce4e84e67d05d2d953d5be73c8e177503db766877fe"
+      },
+      {
+        "path": "/art/previews/witness-choice-detail.jpg",
+        "bytes": 2405,
+        "sha256": "33f755a86b4cfc723c5426941a7212864db8f95b1fe4a17c0992525e8fcdb690"
+      },
+      {
+        "path": "/art/memorial-pause-detail.jpg",
+        "bytes": 382233,
+        "sha256": "ded3e1c18e8d1aadf803088780a7cc138c55ff250a75f20469f5571946d1e1a5"
+      },
+      {
+        "path": "/art/memorial-pause-detail-small.jpg",
+        "bytes": 93786,
+        "sha256": "c4043a47c466c2a3b7eb29e6870dc5711c3950d24fda152c1f68372e72df407e"
+      },
+      {
+        "path": "/art/previews/memorial-pause-detail.jpg",
+        "bytes": 2006,
+        "sha256": "5bf72b2afa10c3c339c7b5358f2a9265f8b06133366d64c448e8300449601558"
+      }
+    ]
+  },
+  "liveViews": [
+    {
+      "sceneId": "memo",
+      "width": 390,
+      "screenshot": "/tmp/cinematic-phase5-live-memo-390.png",
+      "unchangedState": true,
+      "goalInFirstViewport": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "sceneId": "kerr",
+      "width": 390,
+      "screenshot": "/tmp/cinematic-phase5-live-kerr-390.png",
+      "unchangedState": true,
+      "goalInFirstViewport": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "sceneId": "act2_witness_arrival",
+      "width": 390,
+      "screenshot": "/tmp/cinematic-phase5-live-act2_witness_arrival-390.png",
+      "unchangedState": true,
+      "goalInFirstViewport": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "sceneId": "act3_arrival",
+      "width": 390,
+      "screenshot": "/tmp/cinematic-phase5-live-act3_arrival-390.png",
+      "unchangedState": true,
+      "goalInFirstViewport": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "sceneId": "memo",
+      "width": 1440,
+      "screenshot": "/tmp/cinematic-phase5-live-memo-1440.png",
+      "unchangedState": true,
+      "goalInFirstViewport": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "sceneId": "memo",
+      "width": 320,
+      "screenshot": "/tmp/cinematic-phase5-live-memo-320.png",
+      "unchangedState": true,
+      "goalInFirstViewport": true,
+      "overflow": false,
+      "errors": []
+    }
+  ],
+  "applicationMediaDifferencesFromImplementationCommit": []
+}

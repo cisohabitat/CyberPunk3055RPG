@@ -11,6 +11,7 @@ import { ChapterTransition } from "./ChapterTransition";
 import { CATALOG_ACTIONS } from "@/lib/archive-catalog";
 
 import { FinaleReflection } from "./FinaleReflection";
+import { CampaignThread } from "./CampaignThread";
 import { finaleScene } from "@/lib/finale-direction";
 import { investigationScene } from "@/lib/investigation-scenes";
 
@@ -433,6 +434,7 @@ export function PlayScreen({
             {scene.id === "memory_sequence" && <MemoryTimeline state={state} choices={choices} onPlace={pick} artwork={preferences.artwork !== "none"} reducedMotion={reduceMotion} numberShortcuts={preferences.numberShortcuts} />}
             {["act2_route_map", "act2_route_exit", "act2_route_review", "act2_route_crossing"].includes(scene.id) && <RouteBoard state={state} />}
             {scene.finale && <FinaleReflection state={state} artwork={preferences.artwork !== "none"} />}
+            {!scene.finale && <CampaignThread state={state} choices={choices} />}
             {decisionReceipt?.state === state && decisionReceipt.lines.length > 0 && <details className="decision-receipt" data-testid="decision-receipt">
               <summary><span role="status">Last choice · {decisionReceipt.lines.length} {decisionReceipt.lines.length === 1 ? "update" : "updates"}</span></summary>
               <ul>{decisionReceipt.lines.map((line, index) => <li key={index}>{line}</li>)}</ul>
@@ -475,7 +477,7 @@ export function PlayScreen({
                         data-choice-kind={presentation.kind}
                         data-available={choice.enabled ? "true" : "false"}
                         type="button"
-                        id={choice.id === "open-archive-catalog" ? "archive-catalog-toggle" : undefined}
+                        id={choice.id === "open-archive-catalog" ? "archive-catalog-toggle" : `campaign-choice-${choice.id}`}
                         data-testid={`choice-${choice.id}`}
                         aria-labelledby={`choice-label-${choice.id}`}
                         aria-describedby={`choice-detail-${choice.id}`}

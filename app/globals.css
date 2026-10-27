@@ -1707,6 +1707,16 @@ html[data-motion="reduce"] .location-entry, html[data-motion="reduce"] .portrait
 .district-ledger details { margin-block: .75rem; }
 .district-ledger dt { color: var(--muted); margin-top: .75rem; }
 .district-ledger dd { margin: .25rem 0 0; overflow-wrap: anywhere; }
+
+.campaign-thread { border: 1px solid var(--line); border-inline-start: 3px solid var(--cyan); padding: 1rem; margin-block: 1.25rem; overflow-wrap: anywhere; }
+.campaign-thread > summary { min-height: 45px; cursor: pointer; }
+.campaign-thread > ol { padding-inline-start: 1.25rem; }
+.campaign-thread > ol > li { padding-block: .75rem; border-top: 1px solid var(--line); }
+.campaign-thread h3 { margin-block: .25rem .6rem; font-size: 1rem; }
+.campaign-thread p { margin-block: .5rem; }
+.campaign-thread .thread-consequence { border-inline-start: 2px solid var(--line); padding-inline-start: .75rem; }
+.campaign-thread nav ul { list-style: none; padding: 0; }
+.campaign-thread nav a { display: inline-flex; align-items: center; min-height: 45px; padding-block: .4rem; }
 .technique-board { border: 1px solid var(--line); padding: 1rem; margin-block: 1.25rem; }
 .technique-board summary { min-height: 45px; cursor: pointer; }
 .technique-board ul { list-style: none; padding: 0; }

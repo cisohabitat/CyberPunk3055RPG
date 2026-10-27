@@ -1,0 +1,281 @@
+{
+  "phase": 6,
+  "baseline": "dcf728a3ea113c2e488fb06f9bdebe9c0ed096e3",
+  "recordedAtUtc": "2026-10-27T07:07:52.963300+00:00",
+  "scope": "Read-only campaign connections at five chapter checkpoints and four original finales; focus-only legal follow-ups; no new scenes or recordings",
+  "cycles": [
+    "Causal record over acquired case/plan/disclosure/build/witness/hearing state",
+    "Checkpoint/finale presentation, keyboard follow-ups, full integration and release validation"
+  ],
+  "testedSources": {
+    "lib/campaign-thread.ts": "d830741bec493b82e51a00ca8589e2c2e12dfc918b291a2bf3017ca142281688",
+    "components/CampaignThread.tsx": "9d5f30f3ad014782ac5d7a08801a82fdcf23505247c4d91bdf6b763f3c56f48a",
+    "components/PlayScreen.tsx": "358eda772f6b1a7617121ceeda0ceeaa2a88b584d2a9f92cc99832a1e8d2d88f",
+    "components/FinaleReflection.tsx": "f06c9face2aa2cf250a50665fb1416e70a39a9cfdd959c0a8b73a403e1d7cf31",
+    "app/globals.css": "fab14a602bb5a07eea06727f0cd9db1bdd0e4d47488beb6576d223229d539f73",
+    "qa/production/campaign-contract.ts": "dd7113120ab177a15e49b607e4f3f004647fbda86833d948d4d6d63ca80d7f57",
+    "qa/production/integrated-campaign.ts": "f57eeec4e310e0eae015e77358e2a4fbbf062546ee05d546459a673827de765c",
+    "lib/campaign-thread.test.ts": "5e15e287e91e4efd7f8b2ca9ef4ce151876c04c34bf1fc56111a3d51dd18b611",
+    "tests/campaign-thread.spec.ts": "879e402b902aa0fc89b86b7d9b19340b8b5668b359981fcea096b05d3c989461",
+    "scripts/player-experience.ts": "0838e2b6edc823e2df855a2e2f3960b08da668c793886d03080c73f52911b4c9"
+  },
+  "baselineContract": {
+    "routes": 164,
+    "visits": 11924,
+    "sha256": "9e00acca95f3234b5721a55f05ab68af1937ff26be95d653e6068e6de173d7cc"
+  },
+  "local": {
+    "sourceTestsPassed": 765,
+    "finalFocusedSourceTestsPassed": 12,
+    "typescriptAndProductionBuild": true,
+    "newBrowserChecksPassed": 39,
+    "existingIntegrationBrowserChecksPassed": 50,
+    "failedBrowserChecks": 0,
+    "securityAudit": "zero known vulnerabilities",
+    "balance": "All required balance audits passed, zero reported failures",
+    "performance": {
+      "budget": 2097152,
+      "maximumFirstVisitBytes": 1642446,
+      "samples": [
+        {
+          "sceneId": "opening_city",
+          "width": 390,
+          "height": 844,
+          "artwork": "full",
+          "firstVisitActivation": false,
+          "firstVisitAudioState": "suspended",
+          "goalReadyMs": 3349,
+          "network": "Emulated 5 Mbps / 150 ms",
+          "elapsedToReadyMs": 4751,
+          "encodedResourceBytes": 1151390,
+          "htmlBytes": 2628,
+          "titleLcpMs": 1812,
+          "layoutShift": 0,
+          "overflow": false,
+          "artworkRequests": 5,
+          "goalVisible": true
+        },
+        {
+          "sceneId": "opening_city",
+          "width": 390,
+          "height": 844,
+          "artwork": "none",
+          "firstVisitActivation": false,
+          "firstVisitAudioState": "suspended",
+          "goalReadyMs": 2712,
+          "network": "Emulated 5 Mbps / 150 ms",
+          "elapsedToReadyMs": 2779,
+          "encodedResourceBytes": 476316,
+          "htmlBytes": 2628,
+          "titleLcpMs": 1364,
+          "layoutShift": 0,
+          "overflow": false,
+          "artworkRequests": 0,
+          "goalVisible": true
+        },
+        {
+          "sceneId": "opening_city",
+          "width": 1440,
+          "height": 900,
+          "artwork": "full",
+          "firstVisitActivation": false,
+          "firstVisitAudioState": "suspended",
+          "goalReadyMs": 1620,
+          "network": "Unthrottled automation host",
+          "elapsedToReadyMs": 1744,
+          "encodedResourceBytes": 1639818,
+          "htmlBytes": 2628,
+          "titleLcpMs": 732,
+          "layoutShift": 0,
+          "overflow": false,
+          "artworkRequests": 5,
+          "goalVisible": true
+        },
+        {
+          "sceneId": "opening_city",
+          "width": 1440,
+          "height": 900,
+          "artwork": "none",
+          "firstVisitActivation": false,
+          "firstVisitAudioState": "suspended",
+          "goalReadyMs": 1323,
+          "network": "Unthrottled automation host",
+          "elapsedToReadyMs": 1394,
+          "encodedResourceBytes": 1141312,
+          "htmlBytes": 2628,
+          "titleLcpMs": 344,
+          "layoutShift": 0,
+          "overflow": false,
+          "artworkRequests": 0,
+          "goalVisible": true
+        }
+      ]
+    },
+    "viewportReviews": [
+      {
+        "name": "neighborhood",
+        "width": 390,
+        "sceneId": "act3_neighborhood",
+        "screenshot": "/tmp/campaign-phase6-final-neighborhood-390-thread.png",
+        "unchangedSave": true,
+        "goalInFirstViewport": true,
+        "overflow": false,
+        "errors": []
+      },
+      {
+        "name": "paused",
+        "width": 390,
+        "sceneId": "ending_quiet",
+        "screenshot": "/tmp/campaign-phase6-final-paused-390-thread.png",
+        "unchangedSave": true,
+        "goalInFirstViewport": true,
+        "overflow": false,
+        "errors": []
+      },
+      {
+        "name": "neighborhood",
+        "width": 1440,
+        "sceneId": "act3_neighborhood",
+        "screenshot": "/tmp/campaign-phase6-final-neighborhood-1440-thread.png",
+        "unchangedSave": true,
+        "goalInFirstViewport": true,
+        "overflow": false,
+        "errors": []
+      },
+      {
+        "name": "paused",
+        "width": 1440,
+        "sceneId": "ending_quiet",
+        "screenshot": "/tmp/campaign-phase6-final-paused-1440-thread.png",
+        "unchangedSave": true,
+        "goalInFirstViewport": true,
+        "overflow": false,
+        "errors": []
+      },
+      {
+        "name": "neighborhood",
+        "width": 320,
+        "sceneId": "act3_neighborhood",
+        "screenshot": "/tmp/campaign-phase6-final-neighborhood-320-thread.png",
+        "unchangedSave": true,
+        "goalInFirstViewport": true,
+        "overflow": false,
+        "errors": []
+      },
+      {
+        "name": "paused",
+        "width": 320,
+        "sceneId": "ending_quiet",
+        "screenshot": "/tmp/campaign-phase6-final-paused-320-thread.png",
+        "unchangedSave": true,
+        "goalInFirstViewport": true,
+        "overflow": false,
+        "errors": []
+      }
+    ],
+    "keyboardCampaigns": [
+      {
+        "route": "qa/routes/technique-face-cosign-process.json",
+        "width": 390,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "visits": 83,
+        "tabs": 577,
+        "reloads": 32,
+        "voices": 0,
+        "interruptions": 0,
+        "final": {
+          "sceneId": "ending_quiet",
+          "creds": 205,
+          "strain": 0,
+          "rolls": [
+            8,
+            8,
+            8,
+            8,
+            8
+          ]
+        },
+        "errors": [],
+        "failedMedia": [],
+        "limitations": "Internal authored campaign, not blind or fresh-player observation. Synthetic viewport and pagehide, not physical hardware or app switch. Voice completion and cleanup do not establish listening quality. Transition times include UI review/reloads; they are not INP or field percentiles."
+      },
+      {
+        "route": "qa/routes/witness-permission.json",
+        "width": 320,
+        "artwork": "none",
+        "reading": "all",
+        "sound": true,
+        "visits": 61,
+        "tabs": 410,
+        "reloads": 12,
+        "voices": 33,
+        "interruptions": 2,
+        "final": {
+          "sceneId": "ending_names",
+          "creds": 390,
+          "strain": 2,
+          "rolls": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ]
+        },
+        "errors": [],
+        "failedMedia": [],
+        "limitations": "Internal authored campaign, not blind or fresh-player observation. Synthetic viewport and pagehide, not physical hardware or app switch. Voice completion and cleanup do not establish listening quality. Transition times include UI review/reloads; they are not INP or field percentiles."
+      }
+    ],
+    "integratedZeroCredsCampaigns": [
+      "reader authentication",
+      "carbon corroboration without key match",
+      "failed withdrawal retaining strain",
+      "failed paused request closed at week boundary"
+    ],
+    "otherCoverage": [
+      "deferred witness recording remains absent after week closure",
+      "unfinished specialist abandonment with no receipt/refund",
+      "Face wage waiver retained",
+      "Kerr denial retained",
+      "draft edits invalidate current test",
+      "held die and native import/export unchanged"
+    ],
+    "initialBrowserFindings": [
+      "Expanded thread lacked an h2 before h3; added real section heading, Axe checks retained",
+      "Test expected Nia public consent before it had been requested; corrected the assertion to require the private-account state"
+    ],
+    "logs": [
+      "/tmp/campaign-phase6-all-tests.log",
+      "/tmp/campaign-phase6-source-final.log",
+      "/tmp/campaign-phase6-browser.log",
+      "/tmp/campaign-phase6-browser-final.log",
+      "/tmp/campaign-phase6-regression.log",
+      "/tmp/campaign-phase6-balance.log",
+      "/tmp/campaign-phase6-security.log",
+      "/tmp/campaign-phase6-build-final.log"
+    ]
+  },
+  "preserved": [
+    "All four original finales",
+    "All 217 scenes and 670 choices",
+    "All 164 existing authored route fixtures",
+    "All previous source/media/voice snapshots and deliveries",
+    "Save version 2 and saint-shard-3055-v1",
+    "1d10, base stat/strain caps and pending dice",
+    "All six required hosted checks and exact-commit production gate"
+  ],
+  "release": {
+    "status": "Awaiting exact-commit full hosted CI and public verification",
+    "postPublicationEvidence": "qa/production/reports/player-led-phase6-release.json"
+  },
+  "limitations": [
+    "Internal AI/automation proxies, not blind-player, physical-device or independent listening acceptance",
+    "Keyboard campaign records precede final review-label/cost wording; media, rules, interaction and prose unchanged",
+    "Current viewport screenshots and final focused checks use the final built source",
+    "No production success is claimed by this pre-publication snapshot"
+  ]
+}
