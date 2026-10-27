@@ -2,6 +2,21 @@ import { test, expect, type Page } from "@playwright/test";
 import { createCharacter } from "../lib/engine";
 const state = { ...createCharacter({ handle: "Scroll review", givenName: "Jo", origin: "gutterwire", bonus: { chrome: 2, nerve: 0, face: 0, ghost: 0 } }), sceneId: "act2_shelter_brief" };
 test.use({ viewport: { width: 390, height: 844 }, hasTouch: true, reducedMotion: "no-preference" });
+// Wheel dispatch returns before native scrolling ends. Sample the endpoint
+// after movement, rather than reversing against an in-flight intermediate y.
+async function settledScroll(page: Page) {
+  return page.evaluate(() => new Promise<number>((resolve, reject) => {
+    let last = scrollY, changedAt = performance.now();
+    const startedAt = changedAt;
+    function sample(now: number) {
+      if (scrollY !== last) { last = scrollY; changedAt = now; }
+      if (now - changedAt >= 200) resolve(last);
+      else if (now - startedAt >= 4_000) reject(new Error("Native story scroll did not settle"));
+      else requestAnimationFrame(sample);
+    }
+    requestAnimationFrame(sample);
+  }));
+}
 async function open(page: Page) {
   await page.addInitScript(state => {
     localStorage.setItem("saint-shard-3055-v1", JSON.stringify(state));
@@ -51,9 +66,10 @@ test("reading can scroll down and back up without changing the saved scene", asy
   }
   await swipe(500);
   await expect.poll(() => page.evaluate(() => scrollY)).toBeGreaterThan(300);
-  const down = await page.evaluate(() => scrollY);
+  const down = await settledScroll(page);
   await swipe(-250);
   await expect.poll(() => page.evaluate(() => scrollY)).toBeLessThan(down - 100);
+  await settledScroll(page);
   expect(await page.evaluate(() => localStorage.getItem("saint-shard-3055-v1"))).toBe(before);
 });
 
@@ -70,9 +86,10 @@ test("story remains scrollable after rotation and reopening Settings", async ({ 
     await page.mouse.move(200, viewport.height - 80);
     await page.mouse.wheel(0, 600);
     await expect.poll(() => page.evaluate(() => scrollY)).toBeGreaterThan(250);
-    const down = await page.evaluate(() => scrollY);
+    const down = await settledScroll(page);
     await page.mouse.wheel(0, -400);
     await expect.poll(() => page.evaluate(() => scrollY)).toBeLessThan(down - 100);
+    await settledScroll(page);
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   }
   expect(await page.evaluate(() => localStorage.getItem("saint-shard-3055-v1"))).toBe(before);

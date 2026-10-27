@@ -1,0 +1,106 @@
+{
+  "review": "WebKit observation follow-up",
+  "parentCandidate": "8888785ec94c3aee868e8f842c2e83d882a94e8c",
+  "recordedAtUtc": "2026-10-27T10:49:38.564576+00:00",
+  "preservesSnapshots": [
+    "qa/editorial/campaign-reassessment.json",
+    "qa/editorial/campaign-reassessment-followup.json"
+  ],
+  "failedFullCi": {
+    "run": 40483407202,
+    "url": "https://github.com/cisohabitat/CyberPunk3055RPG/actions/runs/40483407202",
+    "sourcePassed": 771,
+    "chromium": {
+      "passed": 873,
+      "flaky": 0
+    },
+    "phone": {
+      "passed": 871,
+      "skipped": 2,
+      "flaky": 0
+    },
+    "firefox": {
+      "passed": 871,
+      "skipped": 2,
+      "flaky": 0
+    },
+    "webkit": {
+      "passed": 868,
+      "skipped": 2,
+      "flaky": 2,
+      "failed": 1,
+      "failure": "story remains scrollable after rotation and reopening Settings",
+      "retried": [
+        "directed performance memo",
+        "directed performance act2_witness_arrival"
+      ]
+    },
+    "build": "Correctly failed the required matrix aggregate; no publication"
+  },
+  "reproductions": {
+    "nativeAudioParamWrapper": {
+      "browser": "WebKit 27.2 / Playwright 1.64",
+      "beforeCollection": 0.6,
+      "afterCollection": "undefined",
+      "condition": "GainNode retained, gain.gain wrapper held only as WeakMap key, page.requestGC requested",
+      "fix": "Retain actual native AudioParam keys strongly in this page-scoped QA observer; existing real-bus numeric assertions remain"
+    },
+    "scroll": {
+      "originalLocalBatch": {
+        "passed": 14,
+        "failed": 4,
+        "cases": 18,
+        "failures": "Two original rotation cases and two mix cases"
+      },
+      "hostedRetryTrace": {
+        "intermediateDown": 253,
+        "afterReverseSamples": [
+          694,
+          465,
+          415
+        ]
+      },
+      "fix": "Wait for 200ms without native motion, bounded by 4s, before sampling endpoint and reversing. Original movement thresholds, 5s polls and 30s case deadline remain"
+    }
+  },
+  "localCandidate": {
+    "sourcePassed": 771,
+    "typeScriptPassed": true,
+    "repeatedWebkit": {
+      "passed": 21,
+      "failed": 0,
+      "workers": 4,
+      "retries": 0
+    },
+    "affectedFilesThreeRunnableProfiles": {
+      "passed": 174,
+      "failedAssertions": 0,
+      "profiles": [
+        "chromium",
+        "phone",
+        "webkit"
+      ],
+      "casesEach": 58,
+      "workers": 4,
+      "retries": 0
+    },
+    "firefoxLocalAttempt": {
+      "couldNotLaunch": 58,
+      "testBodiesRun": 0,
+      "error": "Could not find profile folder.",
+      "hostedFirefoxStillRequired": true
+    },
+    "environment": "Browser binaries and missing WebKit libraries downloaded into /tmp only. Local host package-path preflight disabled for the extracted WebKit dependency bundle; browser execution/assertions retained. No workflow, hosted environment or release gate changed."
+  },
+  "testedSources": {
+    "qa/production/sequence-audio-review.ts": "cee2500a69d3c036ce9030e9ae0c7b8dd30e92390baabd0f384a1677d170f8c2",
+    "tests/cinematic-sequences.spec.ts": "2355a358db82acb6c3abd3497b7a8405ecf55de521b6537058ac043bacb4285d",
+    "tests/story-scroll.spec.ts": "bb5224660645cb0feb8881874fb3b440839aceed300ba26f999b71fb4527c64e"
+  },
+  "productionChanges": false,
+  "artVoiceStorySaveChanges": false,
+  "release": {
+    "status": "Requires fresh complete hosted CI and exact-commit public readiness/feature verification",
+    "postPublicationEvidence": "qa/production/reports/campaign-reassessment-release.json"
+  }
+}

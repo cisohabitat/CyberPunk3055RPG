@@ -3,7 +3,10 @@ export type SequenceAudioReview = { rows: { file: string; atMs: number; seconds:
 export function installSequenceAudioReview() {
   const ownGains = new WeakMap<AudioBufferSourceNode, GainNode>();
   const edges = new WeakMap<GainNode, GainNode>();
-  const targets = new WeakMap<AudioParam, number>();
+  // Keep native AudioParam wrappers alive for this QA page. WebKit can collect
+  // an otherwise unreferenced wrapper and return a fresh one for bus.gain;
+  // a WeakMap then loses the observation although the real bus keeps playing.
+  const targets = new Map<AudioParam, number>();
   const named = new Map<string, GainNode>();
   const rows: { file: string; atMs: number; seconds: number; endedAtMs?: number }[] = [];
   const target = AudioParam.prototype.setTargetAtTime;
