@@ -10,6 +10,8 @@ Take a memory-retrieval job that draws you into Ward Nine’s history and the li
 
 Illustrated locations and character portraits accompany fixed voiced dialogue. A field guide introduces the setting and rules; reading, sound, artwork and accessibility settings let players adjust the presentation. Progress stays in the browser, with manual save slots and export/import. Play requires no account.
 
+The main-page **Artwork gallery** opens a searchable, filtered collection at `/artwork`. A spoiler notice precedes the full collection, including later scenes and ending art. Its 159 entries include character portraits and cast-card crops; responsive copies and previews are grouped with their main image. Browsing and zooming preserve the campaign, and text-only artwork remains supported.
+
 The [visual library cycle](VISUAL_LIBRARY_CYCLE.md) adds compact actor strips beside character paintings, illustrated owned equipment, two more earned scene variants, and an accessible zoomable artwork viewer. Opening a painting interrupts dialogue safely and returns focus when closed. Artwork remains optional.
 
 The latest [player screens cycle](PLAYER_SCREENS_CYCLE.md) presents evidence cards, a schematic of known places, snapshot-specific save thumbnails, an illustrated three-moment finale recap and shared interface symbols. These screens preserve original records and legal choices; viewing and finding spend no resources.

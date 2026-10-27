@@ -11,7 +11,7 @@ const PLACES: { test: (location: string) => boolean; src: string }[] = [
 ];
 
 export type Illustration = { src: string; small: string; caption: string; description: string };
-export type ViewableArt = Illustration & { tile?: number };
+export type ViewableArt = Illustration & { tile?: number; width?: number; height?: number };
 /** Only paintings that already carry the context actor receive a shorter identity strip. */
 const PAINTED_ACTORS: Record<string, readonly string[]> = {
   "/art/quill-offer.jpg": ["Quill"], "/art/mara-revelation.jpg": ["Mara"],

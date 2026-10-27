@@ -1,0 +1,357 @@
+{
+  "phase": "Mara personal account",
+  "revision": "b1bb82286666562048d25291c4cebd91c70c88f8",
+  "dirty": false,
+  "recordedAt": "2026-10-27T17:59:12.175684+00:00",
+  "candidate": "qa/editorial/mara-relationship.json",
+  "documentation": "docs/MARA_RELATIONSHIP_PHASE.md",
+  "ci": {
+    "runId": 40541750877,
+    "url": "https://github.com/cisohabitat/CyberPunk3055RPG/actions/runs/40541750877",
+    "releaseAttempt": 2,
+    "cohortSuiteId": 109886128704,
+    "checks": [
+      {
+        "id": 122366934707,
+        "name": "Build",
+        "status": "completed",
+        "conclusion": "success",
+        "check_suite": {
+          "id": 109886128704
+        },
+        "app": {
+          "slug": "github-actions"
+        }
+      },
+      {
+        "id": 122336830963,
+        "name": "Browser (chromium)",
+        "status": "completed",
+        "conclusion": "success",
+        "check_suite": {
+          "id": 109886128704
+        },
+        "app": {
+          "slug": "github-actions"
+        }
+      },
+      {
+        "id": 122336830544,
+        "name": "Browser (firefox)",
+        "status": "completed",
+        "conclusion": "success",
+        "check_suite": {
+          "id": 109886128704
+        },
+        "app": {
+          "slug": "github-actions"
+        }
+      },
+      {
+        "id": 122336830540,
+        "name": "Browser (phone)",
+        "status": "completed",
+        "conclusion": "success",
+        "check_suite": {
+          "id": 109886128704
+        },
+        "app": {
+          "slug": "github-actions"
+        }
+      },
+      {
+        "id": 122336830535,
+        "name": "Browser (webkit)",
+        "status": "completed",
+        "conclusion": "success",
+        "check_suite": {
+          "id": 109886128704
+        },
+        "app": {
+          "slug": "github-actions"
+        }
+      },
+      {
+        "id": 122334371509,
+        "name": "Test",
+        "status": "completed",
+        "conclusion": "success",
+        "check_suite": {
+          "id": 109886128704
+        },
+        "app": {
+          "slug": "github-actions"
+        }
+      }
+    ],
+    "productionDecision": "build",
+    "source": {
+      "passed": 803,
+      "failed": 0
+    },
+    "browsers": {
+      "chromium": {
+        "passed": 993,
+        "skipped": 0,
+        "retries": 0,
+        "flaky": 0
+      },
+      "phone": {
+        "passed": 991,
+        "skipped": 2,
+        "retries": 0,
+        "flaky": 0
+      },
+      "firefox": {
+        "passed": 991,
+        "skipped": 2,
+        "retries": 0,
+        "flaky": 0
+      },
+      "webkit": {
+        "passed": 991,
+        "skipped": 2,
+        "retries": 0,
+        "flaky": 0
+      }
+    },
+    "skips": "Existing profile-specific skips; no new skips or weakened gates.",
+    "firstAttempt": {
+      "conclusion": "cancelled",
+      "diagnosis": {
+        "runId": 40541750877,
+        "attempt": 1,
+        "jobId": 122324352786,
+        "observation": "Post-cancellation logs show ongoing slow downloads from azure.archive.ubuntu.com, not a proven deadlock or gameplay failure.",
+        "installStartedAt": "2026-10-27T16:36:33Z",
+        "examples": [
+          "16:43:28 Get:24 libcodec2-1.2 8998kB; next package 16:45:25",
+          "16:49:42 Get:47 libavcodec60 5851kB; next package 16:51:46",
+          "16:52:38 Get:61 libavformat60 1153kB"
+        ],
+        "cancellationLoggedAt": "2026-10-27T16:52:43.9963849Z",
+        "interpretation": "Fresh-run retry cleared WebKit setup quickly. Allow the current Chrome/Firefox installs to progress; do not claim they are deadlocked based solely on step duration.",
+        "releaseRequirement": "All six exact-commit checks from the full latest attempt must still pass. No code, test, deadline or gate was changed."
+      },
+      "retry": "Entire unchanged exact-commit workflow rerun; no partial rerun."
+    }
+  },
+  "deployment": {
+    "id": "dpl_84APzQ7KNg43QkoknmgbgKkARy3R",
+    "projectId": "prj_JYHAxYL8onO9SFrvFN0i5q3IepIp",
+    "target": "production",
+    "state": "READY",
+    "revision": "b1bb82286666562048d25291c4cebd91c70c88f8",
+    "aliasesVerified": [
+      "cyberpunk3055rpg.vercel.app",
+      "cyberpunk3055rpg-git-main-cfusion2k-7277s-projects.vercel.app"
+    ],
+    "cancelledAutomaticDeployment": "dpl_7UTxHKLaDrbXsKYGxCAEggrp38ky",
+    "releaseMethod": "New Git-connected default-scope production deployment of tested main after all six successful checks; no status-only commit."
+  },
+  "publicValidation": {
+    "url": "https://cyberpunk3055rpg.vercel.app",
+    "features": {
+      "passed": 61,
+      "failed": 0,
+      "retries": 0,
+      "performedMaraClips": 15,
+      "logSha256": "d489e6baafd1b910333d6b4011d540f586025fbb7f80afefc006b6c228a7845d"
+    },
+    "media": {
+      "commit": "b1bb82286666562048d25291c4cebd91c70c88f8",
+      "voiceDeliveries": 15,
+      "artDeliveries": 3,
+      "rows": [
+        {
+          "path": "/art/mara-account.jpg",
+          "status": 200,
+          "bytes": 250513,
+          "sha256": "dcf2c16bc2c77e1822c9bba7fee9d89878837ede6b9b15e4f4691a61811b2cbb"
+        },
+        {
+          "path": "/art/mara-account-small.jpg",
+          "status": 200,
+          "bytes": 73135,
+          "sha256": "4f0e7e43ca8dfe79a1dfb7c77ab6a9ab19f60b984ef2fc8a430597c763df3721"
+        },
+        {
+          "path": "/art/previews/mara-account.jpg",
+          "status": 200,
+          "bytes": 1918,
+          "sha256": "9a1a41ecd5acafb395154921315e67c29a823579e90604a2e15922e97119cb87"
+        },
+        {
+          "path": "/audio/voice-campaign-mara-account-17ad848ae272.mp3",
+          "status": 200,
+          "bytes": 60812,
+          "sha256": "aeed73c1cca816caf1957a27434be269af9b5de30b4b3ad5ccc4eaabbde30ad0"
+        },
+        {
+          "path": "/audio/voice-campaign-mara-account-9538a155dfe3.mp3",
+          "status": 200,
+          "bytes": 50156,
+          "sha256": "20e41742ce360ee00d389bce29e04c0e77faf0e0c241c77b3e000a1c9d66aac6"
+        },
+        {
+          "path": "/audio/voice-campaign-mara-account-abad0fc34525.mp3",
+          "status": 200,
+          "bytes": 65996,
+          "sha256": "02239a7924749eb9c92b95bdb74fd14bdbb6093ec7879b45daaa9b5787c701f3"
+        },
+        {
+          "path": "/audio/voice-campaign-mara-account-297102e9173d.mp3",
+          "status": 200,
+          "bytes": 56780,
+          "sha256": "8cb24d362aceb7a59176b0121bf98e0d5621436e1e41f7da503e06b07aba794d"
+        },
+        {
+          "path": "/audio/voice-campaign-mara-account-9cfab5a46336.mp3",
+          "status": 200,
+          "bytes": 66284,
+          "sha256": "c316675de3c27cc0d2e7006e43f05597c2e6dbe501a3261407f910332499f4d6"
+        },
+        {
+          "path": "/audio/voice-campaign-mara-account-9a97bdb6e1f9.mp3",
+          "status": 200,
+          "bytes": 54764,
+          "sha256": "7875231358eeb5907c31a0fbe4084351d6c406a99b974921756e5392b3dfcb8f"
+        },
+        {
+          "path": "/audio/voice-campaign-mara-account-3aed03ac8227.mp3",
+          "status": 200,
+          "bytes": 91340,
+          "sha256": "0b427c02e750b566d4a2e7c9df15d584f4fd54b82a2d3cb09f7b93edcc23c9d0"
+        },
+        {
+          "path": "/audio/voice-campaign-mara-account-ee3ba0f2e682.mp3",
+          "status": 200,
+          "bytes": 79244,
+          "sha256": "c971c370f420f490736a4bc65b2e136c5af1b1362c318eabdc2ff1ec6c51f50d"
+        },
+        {
+          "path": "/audio/voice-campaign-mara-account-6665608553f7.mp3",
+          "status": 200,
+          "bytes": 76364,
+          "sha256": "0a8b58cba0a9bbb23aa9c5716351e0da1356d1d23a5ca5c143d3ddeaa9308570"
+        },
+        {
+          "path": "/audio/voice-campaign-mara-account-4fb30a767f10.mp3",
+          "status": 200,
+          "bytes": 65132,
+          "sha256": "a20168c37c1e0e908f790754fef530ffa47edf9a9cba0da7516a386d90727e51"
+        },
+        {
+          "path": "/audio/voice-campaign-mara-account-c6da691e4ed7.mp3",
+          "status": 200,
+          "bytes": 59660,
+          "sha256": "397ca73eb1615da752172c2c7f153364212ba863b714f9e26558c265a45d13ff"
+        },
+        {
+          "path": "/audio/voice-campaign-mara-account-34789ac8f687.mp3",
+          "status": 200,
+          "bytes": 63116,
+          "sha256": "46c833744e0bceaf4aa285ce2c1b4986b754666a707391a8168ee92f3b1678f7"
+        },
+        {
+          "path": "/audio/voice-campaign-mara-account-19e71532ae30.mp3",
+          "status": 200,
+          "bytes": 67148,
+          "sha256": "08dc1fa15574d695b5a3dc96a18b90327b6eef8c38945b7e2874a56559de0471"
+        },
+        {
+          "path": "/audio/voice-campaign-mara-account-91141bd45474.mp3",
+          "status": 200,
+          "bytes": 103724,
+          "sha256": "5e7dfb000d89e81255e9cc6c426ff233e3529c00a8594b4b6c9da90468e55619"
+        },
+        {
+          "path": "/audio/voice-campaign-mara-account-766693e6f9ac.mp3",
+          "status": 200,
+          "bytes": 77516,
+          "sha256": "dd46bfddbb1d54b8c50fbedf7036b6eee84c1b6446be6aed39f0548516c370cc"
+        }
+      ],
+      "tls": "Curl verified inherited CA chain; browser pins that verified proxy certificate public key. ignoreHTTPSErrors false."
+    },
+    "responsiveViews": [
+      {
+        "width": 390,
+        "path": "/tmp/saint-mara-account/public-mara-390.png",
+        "goalVisible": true,
+        "saveUnchanged": true,
+        "overflow": false,
+        "artwork": "full",
+        "visuallyInspected": true,
+        "captureSha256": "a0102ff9f0c0ba41f8051c6fb556e197865bb0f2067d6211e3bbbd9a377ca629"
+      },
+      {
+        "width": 1440,
+        "path": "/tmp/saint-mara-account/public-mara-1440.png",
+        "goalVisible": true,
+        "saveUnchanged": true,
+        "overflow": false,
+        "artwork": "full",
+        "visuallyInspected": true,
+        "captureSha256": "844aaaeccf6996205b0d3fdc944db6474887a8c7ca836fffa679a8fb14245933"
+      },
+      {
+        "width": 320,
+        "path": "/tmp/saint-mara-account/public-mara-320.png",
+        "goalVisible": true,
+        "saveUnchanged": true,
+        "overflow": false,
+        "artwork": "none",
+        "visuallyInspected": true,
+        "captureSha256": "b44126abeeac12ba9490b0ced56c8ed8d17fa1bdd2e5a00a2ea762799919ed91"
+      }
+    ],
+    "keyboardCampaign": {
+      "revision": "b1bb82286666562048d25291c4cebd91c70c88f8",
+      "dirty": false,
+      "route": "qa/routes/mara-account/scarce-company-distance.json",
+      "width": 320,
+      "artwork": "none",
+      "reading": "all",
+      "sound": false,
+      "input": "Tab, Shift+Tab, Enter, Space, arrows and typing; no pointer actions or programmatic focus",
+      "visits": 71,
+      "tabs": 424,
+      "reloads": 70,
+      "voices": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 0,
+        "strain": 5,
+        "rolls": [
+          1,
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "errors": [],
+      "failedMedia": [],
+      "limitations": "Internal authored campaign, not blind or fresh-player observation. Synthetic viewport and pagehide, not physical hardware or app switch. Voice completion and cleanup do not establish listening quality. Transition times include UI review/reloads; they are not INP or field percentiles.",
+      "observerSha256": "891abcf98286985153c5287bf5bb33929d653e4ddedbc905a11d51af17048284"
+    },
+    "rawCampaignSha256": "9dcd81c80b7506f621b06cd20428be53e00f8af2c1b5826dbee42b9fe1be753d",
+    "tls": "Inherited HTTPS chain verified with curl; browser pins the verified proxy certificate public key. ignoreHTTPSErrors false. No blanket bypass or production TLS change."
+  },
+  "voiceAlignment": {
+    "normalizedAsrMatches": 15,
+    "deliveries": 15,
+    "review": "qa/media/mara-account-performance-review.json",
+    "retainedFirstPassMismatch": true
+  },
+  "limits": [
+    "Source-familiar AI/automation proxy, not blind or human acceptance.",
+    "Synthetic viewports, not physical devices.",
+    "ASR and playback completion do not establish acting quality.",
+    "Provisional internal grade remains 8.5; no AAA or 9.0 acceptance claim."
+  ],
+  "compatibility": "Start a new run for expanded Mara conversations; older saves retain their original paths."
+}

@@ -17,6 +17,8 @@ This is original fiction. It is not affiliated with any studio or with any exist
 
 Read the [project description](docs/PROJECT_DESCRIPTION.md) for a short repository summary, game overview and the latest campaign and character improvements.
 
+Choose **Artwork gallery** on the main page, or open `/artwork`, to browse all 159 primary art entries, including character portraits and cast-card crops. Confirm the spoiler notice before opening the collection; later scenes and all four endings are included. Search, category filters, 24-entry pages and the zoom viewer let you inspect the art without changing your run. Smaller responsive deliveries and previews are grouped with the main image. Text-only artwork and saved sound settings remain respected. See the [gallery details and validation](docs/ARTWORK_GALLERY.md).
+
 ## Play locally
 
 ```bash

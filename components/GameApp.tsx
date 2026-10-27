@@ -2,6 +2,7 @@
 
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
+import dynamic from "next/dynamic";
 import { GuideScreen } from "./GuideScreen";
 import { useController } from "./useController";
 import { CreateScreen } from "./CreateScreen";
@@ -17,9 +18,13 @@ import { checkpointLabel } from "@/lib/checkpoints";
 import { recordIncident } from "@/lib/diagnostics";
 import type { Codex, GameState } from "@/lib/types";
 
+const ArtworkGallery = dynamic(() => import("./ArtworkGallery").then(module => module.ArtworkGallery));
+
 export function GameApp() {
   const pathname = usePathname();
   const guide = pathname === "/guide";
+  const gallery = pathname === "/artwork";
+  const reference = guide || gallery;
   const priorPath = useRef(pathname);
   const [ready, setReady] = useState(false);
   const [screen, setScreen] = useState<"title" | "create" | "play">("title");
@@ -36,7 +41,7 @@ export function GameApp() {
   const [menuMusicRequested, setMenuMusicRequested] = useState(true);
   const [menuMusicActivated, setMenuMusicActivated] = useState(false);
   const [menuMusicStatus, setMenuMusicStatus] = useState<BedStatus>("idle");
-  const menu = guide || screen === "title";
+  const menu = reference || screen === "title";
 
   useController(preferences.controller);
 
@@ -47,15 +52,15 @@ export function GameApp() {
   }, []);
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
-    if (ready && priorPath.current !== pathname) document.getElementById(guide ? "guide-title" : "game-title")?.focus({ preventScroll: true });
+    if (ready && priorPath.current !== pathname) document.getElementById(gallery ? "gallery-title" : guide ? "guide-title" : "game-title")?.focus({ preventScroll: true });
     priorPath.current = pathname;
-  }, [screen, pathname, guide, ready]);
+  }, [screen, pathname, guide, gallery, ready]);
   useEffect(() => { setAudioMix(preferences); }, [preferences]);
   useEffect(() => {
-    if (screen === "play" && !guide) { setMenuMusicStatus("idle"); return; }
+    if (screen === "play" && !reference) { setMenuMusicStatus("idle"); return; }
     const on = ready && menu && menuMusicRequested && menuMusicActivated && preferences.sound && preferences.music > 0 && !audioPaused;
     setBed(on, "title", "street", setMenuMusicStatus);
-  }, [ready, screen, guide, menu, menuMusicRequested, menuMusicActivated, preferences.sound, preferences.music, audioPaused]);
+  }, [ready, screen, reference, menu, menuMusicRequested, menuMusicActivated, preferences.sound, preferences.music, audioPaused]);
   useEffect(() => {
     if (!ready || !menu || !menuMusicRequested || menuMusicActivated || !preferences.sound || preferences.music === 0 || audioPaused) return;
     return prepareMenuAutoplay(() => setMenuMusicActivated(true));
@@ -133,7 +138,10 @@ export function GameApp() {
 
   if (!ready) return <main className="boot" aria-label="Saint Shard"><Mark /><span role="status">Jacking in</span></main>;
   return <>
-    {guide ? <GuideScreen artwork={preferences.artwork !== "none"} onSettings={() => setDialog("settings")}
+    {gallery ? <ArtworkGallery artwork={preferences.artwork !== "none"} onSettings={() => setDialog("settings")}
+      music={{ status: menuMusicStatus, muted: preferences.music === 0, paused: audioPaused && menuMusicRequested,
+        waiting: menuMusicRequested && !menuMusicActivated && preferences.sound && preferences.music > 0 && !audioPaused, onToggle: toggleMenuMusic }} />
+      : guide ? <GuideScreen artwork={preferences.artwork !== "none"} onSettings={() => setDialog("settings")}
       music={{ status: menuMusicStatus, muted: preferences.music === 0, paused: audioPaused && menuMusicRequested,
         waiting: menuMusicRequested && !menuMusicActivated && preferences.sound && preferences.music > 0 && !audioPaused, onToggle: toggleMenuMusic }} />
       : screen === "play" && run ? <PlayScreen key={playSession} restoreNotice={restoreNotice} state={run} saveFailed={saveFailed} preferences={preferences}

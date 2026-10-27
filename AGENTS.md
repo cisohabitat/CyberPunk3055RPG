@@ -18,6 +18,12 @@ Every new scene must include an explicit art decision in `qa/media/scene-art.jso
 
 Add framed art through `lib/art.ts` with a description, caption and responsive sources. Art must match the scene’s actual knowledge and outcomes: do not depict unearned closure, payment, witness safety, evidence or consent. Neutral setting art can span unresolved and completed states; use state-specific art only when the corresponding outcome is known. Record new assets’ provenance and update the media audition and credits. Preserve text-only preferences, the visible goal, missing-art tolerance and media budgets; play at phone and desktop sizes. `npm test` and the production report reject missing, duplicate, stale or mismatched art decisions and missing files. These checks enforce a documented decision, not independent artistic acceptance. See [AUTHORING.md](docs/AUTHORING.md).
 
+## Artwork gallery
+
+The main-page Artwork gallery link opens `/artwork` inside the persistent game layout. Its component and `qa/media/art-gallery.json` catalog are loaded only for that route. Keep the explicit catalog complete for primary `public/art` images, including cast-card crops, while grouping `-small` and preview deliveries with the main image. New/removed primary art must update this catalog; do not modify historical art snapshots. The source inventory check rejects missing files, duplicate entries, delivery mismatches and omitted primary images. The current collection contains 159 entries. Preserve source bytes and exact scene/voice bindings.
+
+Opening the spoiler notice is deliberate and required before revealing any artwork titles, images or ending labels. It grants no discoveries and writes no save or codex. Search, category changes, 24-entry pagination, image failures and zoom must preserve save/preferences; Settings remains an explicit preference action. Text-only art makes no gallery image requests. Reuse the existing accessible artwork viewer, passing the catalog's natural dimensions so portraits and wide art fit without clipping. Preserve menu music handoff, Stop, keyboard focus, browser Back and all production gates. The gallery is written UI and existing art, with no new story scene or quotation needing a new recording. See docs/ARTWORK_GALLERY.md for candidate evidence and the local-only WebKit preflight limitation; never propagate that diagnostic setting into CI.
+
 ## Commands
 
 ```bash

@@ -88,6 +88,7 @@ export function TitleScreen({
                 New run
               </button>
               <Link className="ghost" href="/guide" prefetch={false} data-testid="guide-link">Field guide</Link>
+              <Link className="ghost" href="/artwork" prefetch={false} data-testid="gallery-link">Artwork gallery</Link>
               <button className="ghost" type="button" onClick={onSaves}>Saves</button>
               <button className="ghost" type="button" onClick={onSettings}>Settings</button>
             </div>

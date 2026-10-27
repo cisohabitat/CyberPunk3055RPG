@@ -16,7 +16,7 @@ export function ArtworkImage({ art, onError, thumbnail = false }: { art: Viewabl
       loading={thumbnail ? "lazy" : "eager"} decoding="async" onError={onError}
       style={{ left: `${-(art.tile % 4) * 100}%`, top: `${-Math.floor(art.tile / 4) * 100}%` }} />
   </span>;
-  return <ProgressiveArtwork key={art.src} art={art} onError={onError} />;
+  return <ProgressiveArtwork key={art.src} art={art} aspectRatio={art.width && art.height ? art.width / art.height : undefined} onError={onError} />;
 }
 
 export function ArtworkViewer({ art, onClose }: { art: ViewableArt; onClose: () => void }) {
@@ -50,7 +50,7 @@ export function ArtworkViewer({ art, onClose }: { art: ViewableArt; onClose: () 
         <button className="ghost" type="button" onClick={() => resize(100)}>Fit artwork</button></div>
       <div className="artwork-viewport" ref={viewport} tabIndex={0} role="region" aria-label="Artwork detail" aria-describedby={helpId}>
         {failed ? <p className="art-unavailable">Artwork unavailable. {art.description}</p>
-          : <div className={`artwork-canvas${art.tile !== undefined ? " equipment-canvas" : ""}`} style={{ width: `calc(min(100%, calc((60dvh - 2px) * ${art.tile !== undefined ? 1 : 1.5})) * ${zoom / 100})` }}>
+          : <div className={`artwork-canvas${art.tile !== undefined ? " equipment-canvas" : ""}`} style={{ width: `calc(min(100%, calc((60dvh - 2px) * ${art.tile !== undefined ? 1 : art.width && art.height ? art.width / art.height : 1.5})) * ${zoom / 100})` }}>
             <ArtworkImage art={art} onError={() => setFailed(true)} />
           </div>}
       </div>
