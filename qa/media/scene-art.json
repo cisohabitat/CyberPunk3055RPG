@@ -932,6 +932,21 @@
       "treatment": "portrait",
       "asset": "/art/kerr.jpg",
       "reason": "A voluntary admission under the existing Ward Four awning. Existing Kerr portrait and location art suit the conversation; no repair, forgiveness or new place is depicted."
+    },
+    {
+      "scenes": [
+        "act2_mara_account",
+        "act2_mara_account_told",
+        "act2_mara_account_owned",
+        "act2_mara_account_deflected",
+        "act2_mara_account_distance",
+        "act3_mara_account_return",
+        "act3_mara_account_question",
+        "act3_mara_account_repair"
+      ],
+      "treatment": "illustration",
+      "asset": "/art/mara-account.jpg",
+      "reason": "Identity-matched Mara listening in the existing clinic side room. The untouched cup and one resting visible hand depict no transaction, permission, apology or resolution and fit every personal approach. No recorder or private document appears."
     }
   ],
   "variants": [
@@ -1126,7 +1141,15 @@
         "memory_challenge",
         "memory_channel",
         "memory_cross_exam",
-        "memory_sequence_result"
+        "memory_sequence_result",
+        "act2_mara_account",
+        "act2_mara_account_told",
+        "act2_mara_account_owned",
+        "act2_mara_account_deflected",
+        "act2_mara_account_distance",
+        "act3_mara_account_return",
+        "act3_mara_account_question",
+        "act3_mara_account_repair"
       ],
       "reason": "Reviewed portrait for this actual actor during explicitly bound, revealed audible dialogue. Existing scene/flag expressions apply to this actor only; the scene’s setting and canonical story speaker remain unchanged."
     },

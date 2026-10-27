@@ -15,7 +15,7 @@ The first time the shard is in your hand, Mara says the memo, then why she signe
 
 This is original fiction. It is not affiliated with any studio or with any existing cyberpunk game.
 
-Read the [project description](docs/PROJECT_DESCRIPTION.md) for a short repository summary, game overview and description of the latest distribution and witness improvements.
+Read the [project description](docs/PROJECT_DESCRIPTION.md) for a short repository summary, game overview and the latest campaign and character improvements.
 
 ## Play locally
 
@@ -931,3 +931,10 @@ New runs offer a separate terms conversation at the chapel. Negotiate an exit fo
 Eight new scenes, a matching neutral chapel painting and thirteen same-cast synthetic Kerr quotations accompany this phase. The spoken words, actual actor and measured deliveries are recorded in the [media audition](qa/media/kerr-terms-review.html); the [phase plan and validation](docs/KERR_CONFRONTATION_PHASE.md) covers costs, source limits, seven complete replay alternatives and publication checks. The current catalog contains 225 scenes, 688 choices and 171 authored routes. The internal grade remains provisional at 8.5/10; this phase does not turn test counts into an AAA rating.
 
 The preceding polish release is independently recorded in qa/editorial/campaign-reassessment-release.json, including exact-commit full CI and public verification.
+
+
+## Mara: a conversation with a past
+
+New runs can hear Mara ask what happened to her hour beside the private-letter arrangements. Tell her the actual sale, circulation, destruction or failed removal, acknowledge your choice, keep an honest personal distance, or put it on Quill. She remembers what you actually tell her when you return. Owning the choice leaves an ordinary personal question available; deflection ends further personal questions that Week. A later acknowledgment retains both acts and does not automatically reopen the question. Past company, authorized letter dispatch, consent and evidence keep their recorded terms.
+
+Eight scenes share a new identity-matched listening painting, and fifteen exact-text stock synthetic Mara performances use her established voice. Quiet clinic sound, readable text, saved manual/mute preferences and text-only play remain. New UI runs enable the addition; older saves and original held dice retain their paths. See [the phased implementation and validation](docs/MARA_RELATIONSHIP_PHASE.md) and [media audition](qa/media/mara-account-review.html). The internal grade remains provisional 8.5; no independent AAA acceptance is claimed.

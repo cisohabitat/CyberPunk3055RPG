@@ -26,11 +26,13 @@ import { RELATIONSHIP_SCENES } from "./relationships";
 import { DISTRICT_SCENES } from "./district-response";
 import { TECHNIQUE_SCENES } from "./build-techniques";
 import { KERR_TERMS_SCENES } from "./kerr-terms";
+import { MARA_ACCOUNT_SCENES } from "./mara-account";
 
 export { vaultNext } from "./act1";
 export { CODEX, endingCoda } from "./codas";
 
 export const SCENES: Record<string, Scene> = mergeScenes(
+  MARA_ACCOUNT_SCENES,
   KERR_TERMS_SCENES,
   TECHNIQUE_SCENES,
   DISTRICT_SCENES,

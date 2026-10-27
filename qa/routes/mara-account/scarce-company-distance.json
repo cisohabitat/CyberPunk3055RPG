@@ -1,0 +1,319 @@
+{
+  "name": "Mara personal account: scarce-company-distance",
+  "character": {
+    "handle": "Before Dawn",
+    "givenName": "Jo",
+    "origin": "dustline",
+    "complication": "debt",
+    "bonus": {
+      "chrome": 0,
+      "nerve": 0,
+      "face": 0,
+      "ghost": 2
+    },
+    "startWithPrologue": true,
+    "expandedKerr": true,
+    "expandedMara": true
+  },
+  "steps": [
+    {
+      "choiceId": "begin-opening",
+      "reload": true
+    },
+    {
+      "choiceId": "opening-survival",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-stallholder",
+      "reload": true
+    },
+    {
+      "choiceId": "take-the-stool",
+      "reload": true
+    },
+    {
+      "choiceId": "ask-pay",
+      "reload": true
+    },
+    {
+      "choiceId": "haggle",
+      "roll": 1,
+      "reload": true
+    },
+    {
+      "choiceId": "sit-with-it",
+      "reload": true
+    },
+    {
+      "choiceId": "accept",
+      "reload": true
+    },
+    {
+      "choiceId": "side",
+      "reload": true
+    },
+    {
+      "choiceId": "spoof-door",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "go",
+      "reload": true
+    },
+    {
+      "choiceId": "honest",
+      "reload": true
+    },
+    {
+      "choiceId": "pact-copy",
+      "reload": true
+    },
+    {
+      "choiceId": "copy",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "heard",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-hour",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-signature",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-order",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-roster",
+      "reload": true
+    },
+    {
+      "choiceId": "reconstruct",
+      "reload": true
+    },
+    {
+      "choiceId": "separate-decisions",
+      "reload": true
+    },
+    {
+      "choiceId": "label-unverified",
+      "reload": true
+    },
+    {
+      "choiceId": "seal-witness",
+      "reload": true
+    },
+    {
+      "choiceId": "talk-leave",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "destroy",
+      "reload": true
+    },
+    {
+      "choiceId": "week-after",
+      "reload": true
+    },
+    {
+      "choiceId": "into-week",
+      "reload": true
+    },
+    {
+      "choiceId": "read-board",
+      "reload": true
+    },
+    {
+      "choiceId": "to-kerr",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-kerr",
+      "reload": true
+    },
+    {
+      "choiceId": "pay-kerr",
+      "reload": true
+    },
+    {
+      "choiceId": "answer-kerr-collection",
+      "reload": true
+    },
+    {
+      "choiceId": "promise-private-collection",
+      "reload": true
+    },
+    {
+      "choiceId": "route-entry-lift",
+      "reload": true
+    },
+    {
+      "choiceId": "route-exit-gap",
+      "reload": true
+    },
+    {
+      "choiceId": "depart-kerr-lift",
+      "reload": true
+    },
+    {
+      "choiceId": "route-use-gap",
+      "roll": 1,
+      "reload": true
+    },
+    {
+      "choiceId": "pause-kerr-recovery",
+      "reload": true
+    },
+    {
+      "choiceId": "protect-witness",
+      "reload": true
+    },
+    {
+      "choiceId": "agree-terms",
+      "reload": true
+    },
+    {
+      "choiceId": "use-existing-plan",
+      "reload": true
+    },
+    {
+      "choiceId": "slip-witness",
+      "roll": 1,
+      "reload": true
+    },
+    {
+      "choiceId": "registered-transfer",
+      "reload": true
+    },
+    {
+      "choiceId": "record-cost",
+      "reload": true
+    },
+    {
+      "choiceId": "repair-location",
+      "reload": true
+    },
+    {
+      "choiceId": "clinic-second-room",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-mara-response",
+      "reload": true
+    },
+    {
+      "choiceId": "listen-response-terms",
+      "reload": true
+    },
+    {
+      "choiceId": "propose-private-response",
+      "reload": true
+    },
+    {
+      "choiceId": "mara-account-open",
+      "reload": true
+    },
+    {
+      "choiceId": "mara-account-distance",
+      "reload": true
+    },
+    {
+      "choiceId": "mara-account-dispatch",
+      "reload": true
+    },
+    {
+      "choiceId": "ask-mara-tomorrow",
+      "reload": true
+    },
+    {
+      "choiceId": "share-mara-window",
+      "reload": true
+    },
+    {
+      "choiceId": "stay-with-mara-wait",
+      "reload": true
+    },
+    {
+      "choiceId": "keep-mara-shared-hour",
+      "reload": true
+    },
+    {
+      "choiceId": "stand",
+      "reload": true
+    },
+    {
+      "choiceId": "back-to-board",
+      "reload": true
+    },
+    {
+      "choiceId": "to-the-wall",
+      "reload": true
+    },
+    {
+      "choiceId": "to-ward-nine",
+      "reload": true
+    },
+    {
+      "choiceId": "visit-nia",
+      "reload": true
+    },
+    {
+      "choiceId": "acknowledge-nia",
+      "reload": true
+    },
+    {
+      "choiceId": "face-sera",
+      "reload": true
+    },
+    {
+      "choiceId": "visit-kerr-collection",
+      "reload": true
+    },
+    {
+      "choiceId": "acknowledge-private-collection",
+      "reload": true
+    },
+    {
+      "choiceId": "visit-mara-response",
+      "reload": true
+    },
+    {
+      "choiceId": "keep-response-unfinished",
+      "reload": true
+    },
+    {
+      "choiceId": "mara-account-return",
+      "reload": true
+    },
+    {
+      "choiceId": "mara-account-leave",
+      "reload": true
+    },
+    {
+      "choiceId": "leave-wall",
+      "reload": true
+    }
+  ],
+  "expected": {
+    "sceneId": "ending_quiet",
+    "creds": 0,
+    "strain": 5,
+    "flags": {
+      "mara_account_enabled": true,
+      "mara_account_distance": true
+    },
+    "journal": [
+      "mara-account-distance",
+      "mara-account-return"
+    ]
+  }
+}

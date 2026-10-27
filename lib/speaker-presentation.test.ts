@@ -10,6 +10,7 @@ import type { ReplaySpec } from "./story-replay";
 import bindings from "../qa/media/campaign-dialogue-bindings.json";
 import presentation from "../qa/media/speaker-presentation.json";
 import decisions from "../qa/media/scene-art.json";
+import mara from "../qa/media/mara-relationship.json";
 
 const words = (text: string) => text.toLowerCase().match(/[\p{L}\p{N}]+/gu) ?? [];
 const sha = (path: string) => createHash("sha256").update(readFileSync(new URL(`../${path}`, import.meta.url))).digest("hex");
@@ -54,7 +55,9 @@ it("matches highlighted words to actual visible quotations throughout all comple
 it("requires a reviewed portrait and exact scene list for every actor and keeps all voice files locked", () => {
   assert.equal(presentation.version, 1);
   assert.equal(new Set(presentation.speakers.map(entry => entry.speaker)).size, 15);
-  assert.deepEqual(decisions.speakingPortraits, presentation.speakers);
+  const current = presentation.speakers.map(entry => ({ ...entry, scenes: [...entry.scenes, ...mara.portraitAdditions.filter(a => a.speaker === entry.speaker).flatMap(a => a.scenes)] }));
+  assert.deepEqual(decisions.speakingPortraits, current);
+  for (const addition of mara.portraitAdditions) assert.equal(portraitArt(addition.speaker), addition.asset);
   assert.equal(presentation.bindingSha256, sha("qa/media/campaign-dialogue-bindings.json"));
   for (const entry of presentation.speakers) {
     assert.equal(portraitArt(entry.speaker), entry.asset);

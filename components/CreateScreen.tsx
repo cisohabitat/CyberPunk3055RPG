@@ -50,7 +50,7 @@ export function CreateScreen({
         onSubmit={(event) => {
           event.preventDefault();
           if (!ready) return;
-          onStart(createCharacter({ handle, givenName, origin, bonus, complication, keepsake: keepsake || null, startWithPrologue: true, expandedKerr: true }));
+          onStart(createCharacter({ handle, givenName, origin, bonus, complication, keepsake: keepsake || null, startWithPrologue: true, expandedKerr: true, expandedMara: true }));
         }}
       >
         <p className="eyebrow">New runner</p>

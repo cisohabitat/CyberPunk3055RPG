@@ -1,0 +1,372 @@
+{
+  "name": "Mara personal account: company-before-deflection",
+  "character": {
+    "handle": "Before Dawn",
+    "givenName": "Jo",
+    "origin": "spire",
+    "complication": "on-file",
+    "bonus": {
+      "chrome": 2,
+      "nerve": 0,
+      "face": 0,
+      "ghost": 0
+    },
+    "startWithPrologue": true,
+    "expandedKerr": true,
+    "expandedMara": true
+  },
+  "steps": [
+    {
+      "choiceId": "begin-opening",
+      "reload": true
+    },
+    {
+      "choiceId": "opening-survival",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-stallholder",
+      "reload": true
+    },
+    {
+      "choiceId": "take-the-stool",
+      "reload": true
+    },
+    {
+      "choiceId": "ask-pay",
+      "reload": true
+    },
+    {
+      "choiceId": "haggle",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "pocket",
+      "reload": true
+    },
+    {
+      "choiceId": "accept",
+      "reload": true
+    },
+    {
+      "choiceId": "side",
+      "reload": true
+    },
+    {
+      "choiceId": "spoof-door",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "go",
+      "reload": true
+    },
+    {
+      "choiceId": "honest",
+      "reload": true
+    },
+    {
+      "choiceId": "pact-copy",
+      "reload": true
+    },
+    {
+      "choiceId": "copy",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "heard",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-hour",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-signature",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-order",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-roster",
+      "reload": true
+    },
+    {
+      "choiceId": "reconstruct",
+      "reload": true
+    },
+    {
+      "choiceId": "separate-decisions",
+      "reload": true
+    },
+    {
+      "choiceId": "label-unverified",
+      "reload": true
+    },
+    {
+      "choiceId": "seal-full",
+      "reload": true
+    },
+    {
+      "choiceId": "talk-leave",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "both",
+      "reload": true
+    },
+    {
+      "choiceId": "week-after",
+      "reload": true
+    },
+    {
+      "choiceId": "into-week",
+      "reload": true
+    },
+    {
+      "choiceId": "practice",
+      "reload": true
+    },
+    {
+      "choiceId": "learn-chrome",
+      "reload": true
+    },
+    {
+      "choiceId": "read-board",
+      "reload": true
+    },
+    {
+      "choiceId": "origin-contract",
+      "reload": true
+    },
+    {
+      "choiceId": "clear-key",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "return-board",
+      "reload": true
+    },
+    {
+      "choiceId": "to-helion",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-ives",
+      "reload": true
+    },
+    {
+      "choiceId": "refuse-ives",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-mara-response",
+      "reload": true
+    },
+    {
+      "choiceId": "listen-response-terms",
+      "reload": true
+    },
+    {
+      "choiceId": "propose-private-response",
+      "reload": true
+    },
+    {
+      "choiceId": "ask-mara-tomorrow",
+      "reload": true
+    },
+    {
+      "choiceId": "share-mara-window",
+      "reload": true
+    },
+    {
+      "choiceId": "stay-with-mara-wait",
+      "reload": true
+    },
+    {
+      "choiceId": "keep-mara-shared-hour",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-mara-response",
+      "reload": true
+    },
+    {
+      "choiceId": "mara-account-open",
+      "reload": true
+    },
+    {
+      "choiceId": "mara-account-disclose",
+      "reload": true
+    },
+    {
+      "choiceId": "mara-account-deflect",
+      "reload": true
+    },
+    {
+      "choiceId": "mara-account-dispatch",
+      "reload": true
+    },
+    {
+      "choiceId": "arrange-response-dispatch",
+      "reload": true
+    },
+    {
+      "choiceId": "courier-private-response",
+      "reload": true
+    },
+    {
+      "choiceId": "record-response-dispatch",
+      "reload": true
+    },
+    {
+      "choiceId": "trace-order",
+      "reload": true
+    },
+    {
+      "choiceId": "agree-archive-terms",
+      "reload": true
+    },
+    {
+      "choiceId": "index-archive",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "catalog-is-proof",
+      "reload": true
+    },
+    {
+      "choiceId": "revise-source-test",
+      "reload": true
+    },
+    {
+      "choiceId": "trace-receipt",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "withhold-technician",
+      "reload": true
+    },
+    {
+      "choiceId": "keep-chain",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-response",
+      "reload": true
+    },
+    {
+      "choiceId": "answer-with-source",
+      "reload": true
+    },
+    {
+      "choiceId": "stand",
+      "reload": true
+    },
+    {
+      "choiceId": "back-to-board",
+      "reload": true
+    },
+    {
+      "choiceId": "to-the-wall",
+      "reload": true
+    },
+    {
+      "choiceId": "to-ward-nine",
+      "reload": true
+    },
+    {
+      "choiceId": "visit-edda",
+      "reload": true
+    },
+    {
+      "choiceId": "respect-edda-source",
+      "reload": true
+    },
+    {
+      "choiceId": "visit-records",
+      "reload": true
+    },
+    {
+      "choiceId": "keep-limits",
+      "reload": true
+    },
+    {
+      "choiceId": "go-wall",
+      "reload": true
+    },
+    {
+      "choiceId": "face-sera",
+      "reload": true
+    },
+    {
+      "choiceId": "visit-mara-response",
+      "reload": true
+    },
+    {
+      "choiceId": "read-response-intake",
+      "reload": true
+    },
+    {
+      "choiceId": "mara-account-return",
+      "reload": true
+    },
+    {
+      "choiceId": "mara-account-leave",
+      "reload": true
+    },
+    {
+      "choiceId": "visit-lumen-boundary",
+      "reload": true
+    },
+    {
+      "choiceId": "respect-lumen-boundary",
+      "reload": true
+    },
+    {
+      "choiceId": "prepare-public-account",
+      "reload": true
+    },
+    {
+      "choiceId": "scope-corroborated",
+      "reload": true
+    },
+    {
+      "choiceId": "keep-recording-private",
+      "reload": true
+    },
+    {
+      "choiceId": "answer-authenticated-key",
+      "reload": true
+    },
+    {
+      "choiceId": "file-public-account",
+      "reload": true
+    },
+    {
+      "choiceId": "leave-wall",
+      "reload": true
+    }
+  ],
+  "expected": {
+    "sceneId": "ending_quiet",
+    "creds": 375,
+    "strain": 1,
+    "flags": {
+      "mara_account_enabled": true,
+      "mara_account_deflected": true
+    },
+    "journal": [
+      "mara-account-deflected",
+      "mara-account-return"
+    ]
+  }
+}

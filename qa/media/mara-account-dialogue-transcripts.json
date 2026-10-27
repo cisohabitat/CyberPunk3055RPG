@@ -1,0 +1,156 @@
+{
+  "method": "Independent ASR of delivered MP3s, no authored-text prompt; punctuation/case/apostrophe and 20-to-twenty normalization only. Automated proxy, not human listening acceptance.",
+  "model": "Systran/faster-whisper-base.en",
+  "runtime": "faster-whisper 1.2.1, CPU int8",
+  "modelFiles": [
+    {
+      "name": "models--Systran--faster-whisper-base.en/snapshots/3d3d5dee26484f91867d81cb899cfcf72b96be6c/config.json",
+      "sha256": "f3bc3821e9fc76a27bae538e11ae5b677dcdd352b4600429ce7951d398569aeb"
+    },
+    {
+      "name": "models--Systran--faster-whisper-base.en/snapshots/3d3d5dee26484f91867d81cb899cfcf72b96be6c/model.bin",
+      "sha256": "2a166925539a16005f14ff328359f9b9adb9dc4fb631bb3b227526862e93e2ef"
+    },
+    {
+      "name": "models--Systran--faster-whisper-base.en/snapshots/3d3d5dee26484f91867d81cb899cfcf72b96be6c/tokenizer.json",
+      "sha256": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df"
+    }
+  ],
+  "lines": [
+    {
+      "id": "voice-campaign-mara-account-17ad848ae272",
+      "speaker": "Mara",
+      "path": "public/audio/voice-campaign-mara-account-17ad848ae272.mp3",
+      "sha256": "aeed73c1cca816caf1957a27434be269af9b5de30b4b3ad5ccc4eaabbde30ad0",
+      "authoredText": "Before you carry another part of me out of this room, tell me what happened to the first one.",
+      "transcription": "Before you carry another part of me out of this room, tell me what happened to the first one.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-mara-account-9538a155dfe3",
+      "speaker": "Mara",
+      "path": "public/audio/voice-campaign-mara-account-9538a155dfe3.mp3",
+      "sha256": "20e41742ce360ee00d389bce29e04c0e77faf0e0c241c77b3e000a1c9d66aac6",
+      "authoredText": "He paid you for it. I thought hearing you say it would feel different.",
+      "transcription": "He paid you for it. I thought hearing you say it would feel different.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-mara-account-abad0fc34525",
+      "speaker": "Mara",
+      "path": "public/audio/voice-campaign-mara-account-abad0fc34525.mp3",
+      "sha256": "02239a7924749eb9c92b95bdb74fd14bdbb6093ec7879b45daaa9b5787c701f3",
+      "authoredText": "So it went to him and to the street. When do I get to be more than the voice they pass around?",
+      "transcription": "So it went to him and to the street. When do I get to be more than the voice they pass around?",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-mara-account-297102e9173d",
+      "speaker": "Mara",
+      "path": "public/audio/voice-campaign-mara-account-297102e9173d.mp3",
+      "sha256": "8cb24d362aceb7a59176b0121bf98e0d5621436e1e41f7da503e06b07aba794d",
+      "authoredText": "I never asked you to choose what was worth keeping. I know why you might have.",
+      "transcription": "I never asked you to choose what was worth keeping. I know why you might have.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-mara-account-9cfab5a46336",
+      "speaker": "Mara",
+      "path": "public/audio/voice-campaign-mara-account-9cfab5a46336.mp3",
+      "sha256": "c316675de3c27cc0d2e7006e43f05597c2e6dbe501a3261407f910332499f4d6",
+      "authoredText": "He paid for what was left. I wonder which part of me he thought was the useful part.",
+      "transcription": "He paid for what was left. I wonder which part of me he thought was the useful part.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-mara-account-9a97bdb6e1f9",
+      "speaker": "Mara",
+      "path": "public/audio/voice-campaign-mara-account-9a97bdb6e1f9.mp3",
+      "sha256": "7875231358eeb5907c31a0fbe4084351d6c406a99b974921756e5392b3dfcb8f",
+      "authoredText": "You came back without it. That doesn't tell me what was left in the chair.",
+      "transcription": "You came back without it. That doesn't tell me what was left in the chair.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-mara-account-3aed03ac8227",
+      "speaker": "Mara",
+      "path": "public/audio/voice-campaign-mara-account-3aed03ac8227.mp3",
+      "sha256": "0b427c02e750b566d4a2e7c9df15d584f4fd54b82a2d3cb09f7b93edcc23c9d0",
+      "authoredText": "You stayed in that sentence. Thank you. It is harder to talk to someone who keeps disappearing behind the job.",
+      "transcription": "You stayed in that sentence. Thank you. It is harder to talk to someone who keeps disappearing behind the job.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-mara-account-ee3ba0f2e682",
+      "speaker": "Mara",
+      "path": "public/audio/voice-campaign-mara-account-ee3ba0f2e682.mp3",
+      "sha256": "c971c370f420f490736a4bc65b2e136c5af1b1362c318eabdc2ff1ec6c51f50d",
+      "authoredText": "Quill is not sitting here. You are. We can finish the letter. Leave the rest for today.",
+      "transcription": "Quill is not sitting here. You are. We can finish the letter. Leave the rest for today.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-mara-account-6665608553f7",
+      "speaker": "Mara",
+      "path": "public/audio/voice-campaign-mara-account-6665608553f7.mp3",
+      "sha256": "0a8b58cba0a9bbb23aa9c5716351e0da1356d1d23a5ca5c143d3ddeaa9308570",
+      "authoredText": "Then carry only what we agreed. You don't owe me your reasons, and I don't owe you a softer version of mine.",
+      "transcription": "Then carry only what we agreed. You don't owe me your reasons, and I don't owe you a softer version of mine.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-mara-account-4fb30a767f10",
+      "speaker": "Mara",
+      "path": "public/audio/voice-campaign-mara-account-4fb30a767f10.mp3",
+      "sha256": "a20168c37c1e0e908f790754fef530ffa47edf9a9cba0da7516a386d90727e51",
+      "authoredText": "I remember where you put yourself in the story. You can sit without explaining it again.",
+      "transcription": "I remember where you put yourself in the story. You can sit without explaining it again.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-mara-account-c6da691e4ed7",
+      "speaker": "Mara",
+      "path": "public/audio/voice-campaign-mara-account-c6da691e4ed7.mp3",
+      "sha256": "397ca73eb1615da752172c2c7f153364212ba863b714f9e26558c265a45d13ff",
+      "authoredText": "Last time, you told me whose job it was. You never told me where you stood.",
+      "transcription": "Last time, you told me whose job it was. You never told me where you stood.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-mara-account-34789ac8f687",
+      "speaker": "Mara",
+      "path": "public/audio/voice-campaign-mara-account-34789ac8f687.mp3",
+      "sha256": "46c833744e0bceaf4aa285ce2c1b4986b754666a707391a8168ee92f3b1678f7",
+      "authoredText": "We left that conversation where we meant to. I haven't filled the silence in for you.",
+      "transcription": "We left that conversation where we meant to. I haven't filled the silence in for you.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-mara-account-19e71532ae30",
+      "speaker": "Mara",
+      "path": "public/audio/voice-campaign-mara-account-19e71532ae30.mp3",
+      "sha256": "08dc1fa15574d695b5a3dc96a18b90327b6eef8c38945b7e2874a56559de0471",
+      "authoredText": "You told me where the hour went. We stopped before the rest. We can leave it there.",
+      "transcription": "You told me where the hour went. We stopped before the rest. We can leave it there.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-mara-account-91141bd45474",
+      "speaker": "Mara",
+      "path": "public/audio/voice-campaign-mara-account-91141bd45474.mp3",
+      "sha256": "5e7dfb000d89e81255e9cc6c426ff233e3529c00a8594b4b6c9da90468e55619",
+      "authoredText": "A morning market. I used to go before the stalls opened, when nobody wanted anything from me yet. I would like to choose that again.",
+      "transcription": "A morning market. I used to go before the stalls opened, when nobody wanted anything from me yet. I would like to choose that again.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-mara-account-766693e6f9ac",
+      "speaker": "Mara",
+      "path": "public/audio/voice-campaign-mara-account-766693e6f9ac.mp3",
+      "sha256": "dd46bfddbb1d54b8c50fbedf7036b6eee84c1b6446be6aed39f0548516c370cc",
+      "authoredText": "I hear the difference. Let it stay different. I don't want to do the rest of this conversation today.",
+      "transcription": "I hear the difference. Let it stay different. I don't want to do the rest of this conversation today.",
+      "exactNormalizedWords": true
+    }
+  ]
+}

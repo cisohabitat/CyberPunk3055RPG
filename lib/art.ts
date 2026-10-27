@@ -47,6 +47,11 @@ for (const id of ["kerr_terms", "kerr_terms_negotiate", "kerr_terms_named", "ker
   description: "Kerr, in a dark raincoat, listens against a worn metal chapel doorway; amber light catches his face and the one hand resting on the jamb.",
 };
 PAINTED_ACTORS["/art/kerr-terms.jpg"] = ["Kerr"];
+for (const id of ["act2_mara_account", "act2_mara_account_told", "act2_mara_account_owned", "act2_mara_account_deflected", "act2_mara_account_distance", "act3_mara_account_return", "act3_mara_account_question", "act3_mara_account_repair"]) ENCOUNTERS[id] = {
+  src: "/art/mara-account.jpg", small: "/art/mara-account-small.jpg", caption: "Ward Four · a conversation with a past",
+  description: "Mara listens beside a rainy clinic window, one hand resting on her knee and the other out of view; an untouched ceramic cup stands between her and an empty visitor chair.",
+};
+PAINTED_ACTORS["/art/mara-account.jpg"] = ["Mara"];
 for (const id of ["act2_technique_bench", "act2_technique_chrome", "act2_technique_chrome_submit", "act2_technique_ghost", "act2_technique_ghost_route", "act2_technique_face", "act2_technique_face_scope", "act2_technique_nerve", "act2_technique_nerve_handover", "act2_technique_result"]) ENCOUNTERS[id] = {
   src: "/art/correction-bench.jpg", small: "/art/correction-bench-small.jpg", caption: "Canal depot · two records stay separate", description: "A blank comparison sheet and closed opaque sleeve rest in separate trays beside an unpowered reference display on a lamp-lit filing bench. No signature, review receipt, authentication, personal identity or successful outcome is displayed.",
 };

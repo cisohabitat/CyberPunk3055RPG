@@ -1,0 +1,601 @@
+{
+  "generated": "2026-10-27",
+  "disclosure": "Stock synthetic voices generated offline with Kokoro v1.0; no actor session or individual voice clone was commissioned. Only the fixed authored quotations below are rendered. No model or speech service ships in the game.",
+  "driver": {
+    "name": "kokoro-onnx",
+    "version": "0.6.1",
+    "license": "MIT",
+    "url": "https://github.com/thewh1teagle/kokoro-onnx",
+    "licenseFile": "qa/media/voice-sources/kokoro-onnx-LICENSE.txt"
+  },
+  "model": {
+    "name": "Kokoro-82M v1.0",
+    "license": "Apache-2.0",
+    "card": "https://huggingface.co/hexgrad/Kokoro-82M",
+    "licenseFile": "qa/media/voice-sources/Kokoro-LICENSE.txt",
+    "files": [
+      {
+        "name": "kokoro-v1.0.onnx",
+        "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.onnx",
+        "sha256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+        "bytes": 325505369
+      },
+      {
+        "name": "voices-v1.0.bin",
+        "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin",
+        "sha256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+        "bytes": 28214398
+      }
+    ]
+  },
+  "source": "scripts/generate-campaign-voices.py",
+  "processing": "Exact authored character words; existing cast identities; optional sentence pauses, 8ms phrase fades, normalized PCM peak 0.72 with 80ms edges; optional per-line two-pass EBU loudness matching with -2dBTP ceiling; 96kbps mono MP3 delivery. Original PCM and normalized PCM retained outside Git.",
+  "reviewStatus": "Technical signal and source review; stock synthetic dialogue. No commissioned actors or independent listening acceptance.",
+  "lines": [
+    {
+      "id": "voice-campaign-mara-account-17ad848ae272",
+      "speaker": "Mara",
+      "voice": "af_sarah",
+      "speed": 0.92,
+      "text": "Before you carry another part of me out of this room, tell me what happened to the first one.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock Mara identity. Close, restrained, tired; a present-day personal conversation, not the recorded confession. Exact spoken words only; no performed narration.",
+      "segments": [
+        {
+          "text": "Before you carry another part of me out of this room, tell me what happened to the first one.",
+          "speed": 0.92,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.51,
+      "truePeakDbtp": -3.96,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-mara-account-17ad848ae272.mp3",
+      "sourceFile": "/workspace/generated_audio/mara-account/voice-campaign-mara-account-17ad848ae272.wav",
+      "sourceSha256": "43fdd82b6339a2a4f4067e4228abb30921b0702279c3a02662eac35efbed16ac",
+      "pcmDeliveryFile": "/workspace/generated_audio/mara-account/voice-campaign-mara-account-17ad848ae272-delivery.wav",
+      "pcmDeliverySha256": "65a05c3aa517449da0033b014c32954f149809ea53c6b504823dd36f87274331",
+      "sha256": "aeed73c1cca816caf1957a27434be269af9b5de30b4b3ad5ccc4eaabbde30ad0",
+      "bytes": 60812,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 4.992,
+      "peak": 0.6331027746200562,
+      "rms": 0.0771423727273941
+    },
+    {
+      "id": "voice-campaign-mara-account-9538a155dfe3",
+      "speaker": "Mara",
+      "voice": "af_sarah",
+      "speed": 0.92,
+      "text": "He paid you for it. I thought hearing you say it would feel different.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock Mara identity. Close, restrained, tired; a present-day personal conversation, not the recorded confession. Exact spoken words only; no performed narration.",
+      "segments": [
+        {
+          "text": "He paid you for it.",
+          "speed": 0.92,
+          "pauseAfter": 0.2
+        },
+        {
+          "text": "I thought hearing you say it would feel different.",
+          "speed": 0.92,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.49,
+      "truePeakDbtp": -3.11,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-mara-account-9538a155dfe3.mp3",
+      "sourceFile": "/workspace/generated_audio/mara-account/voice-campaign-mara-account-9538a155dfe3.wav",
+      "sourceSha256": "e20cec843eadc64027e336dd3adbc8e414123225a19123fe3c4e12f8709ea3bc",
+      "pcmDeliveryFile": "/workspace/generated_audio/mara-account/voice-campaign-mara-account-9538a155dfe3-delivery.wav",
+      "pcmDeliverySha256": "3f76cbc3132a49b5f81e8f08d1037ae46f4c52caa194df6a8ae5347d82dcc13e",
+      "sha256": "20e41742ce360ee00d389bce29e04c0e77faf0e0c241c77b3e000a1c9d66aac6",
+      "bytes": 50156,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 4.1033333333333335,
+      "peak": 0.6862820386886597,
+      "rms": 0.0706743597984314
+    },
+    {
+      "id": "voice-campaign-mara-account-abad0fc34525",
+      "speaker": "Mara",
+      "voice": "af_sarah",
+      "speed": 0.92,
+      "text": "So it went to him and to the street. When do I get to be more than the voice they pass around?",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock Mara identity. Close, restrained, tired; a present-day personal conversation, not the recorded confession. Exact spoken words only; no performed narration.",
+      "segments": [
+        {
+          "text": "So it went to him and to the street.",
+          "speed": 0.92,
+          "pauseAfter": 0.2
+        },
+        {
+          "text": "When do I get to be more than the voice they pass around?",
+          "speed": 0.92,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.51,
+      "truePeakDbtp": -4.15,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-mara-account-abad0fc34525.mp3",
+      "sourceFile": "/workspace/generated_audio/mara-account/voice-campaign-mara-account-abad0fc34525.wav",
+      "sourceSha256": "b581d2dc0e02f59b115a75c9b74e7ed1b7d8921a4282327a8a14697c525f590b",
+      "pcmDeliveryFile": "/workspace/generated_audio/mara-account/voice-campaign-mara-account-abad0fc34525-delivery.wav",
+      "pcmDeliverySha256": "5e1cf37d3d761b9a687c36e081531745bc2dc178f5ae9e92fd691ef5a6573053",
+      "sha256": "02239a7924749eb9c92b95bdb74fd14bdbb6093ec7879b45daaa9b5787c701f3",
+      "bytes": 65996,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 5.416,
+      "peak": 0.6159840822219849,
+      "rms": 0.07514520734548569
+    },
+    {
+      "id": "voice-campaign-mara-account-297102e9173d",
+      "speaker": "Mara",
+      "voice": "af_sarah",
+      "speed": 0.92,
+      "text": "I never asked you to choose what was worth keeping. I know why you might have.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock Mara identity. Close, restrained, tired; a present-day personal conversation, not the recorded confession. Exact spoken words only; no performed narration.",
+      "segments": [
+        {
+          "text": "I never asked you to choose what was worth keeping.",
+          "speed": 0.92,
+          "pauseAfter": 0.2
+        },
+        {
+          "text": "I know why you might have.",
+          "speed": 0.92,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -3.81,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-mara-account-297102e9173d.mp3",
+      "sourceFile": "/workspace/generated_audio/mara-account/voice-campaign-mara-account-297102e9173d.wav",
+      "sourceSha256": "4c6dc7ecf0f8bf8abed8e4ce914642d0622d245775429337b6b563a618ebcb83",
+      "pcmDeliveryFile": "/workspace/generated_audio/mara-account/voice-campaign-mara-account-297102e9173d-delivery.wav",
+      "pcmDeliverySha256": "fae5d451153e56090767ccd8a28eba7e2759cf0a7217bb154e3238c26aa026b6",
+      "sha256": "8cb24d362aceb7a59176b0121bf98e0d5621436e1e41f7da503e06b07aba794d",
+      "bytes": 56780,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 4.636666666666667,
+      "peak": 0.6356797218322754,
+      "rms": 0.07375295460224152
+    },
+    {
+      "id": "voice-campaign-mara-account-9cfab5a46336",
+      "speaker": "Mara",
+      "voice": "af_sarah",
+      "speed": 0.92,
+      "text": "He paid for what was left. I wonder which part of me he thought was the useful part.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock Mara identity. Close, restrained, tired; a present-day personal conversation, not the recorded confession. Exact spoken words only; no performed narration.",
+      "segments": [
+        {
+          "text": "He paid for what was left.",
+          "speed": 0.92,
+          "pauseAfter": 0.2
+        },
+        {
+          "text": "I wonder which part of me he thought was the useful part.",
+          "speed": 0.92,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.51,
+      "truePeakDbtp": -3.4,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-mara-account-9cfab5a46336.mp3",
+      "sourceFile": "/workspace/generated_audio/mara-account/voice-campaign-mara-account-9cfab5a46336.wav",
+      "sourceSha256": "bb3514ffd6dee2b9752cc2d305cfd4f842ff97390b914f10088a6a2a269158a0",
+      "pcmDeliveryFile": "/workspace/generated_audio/mara-account/voice-campaign-mara-account-9cfab5a46336-delivery.wav",
+      "pcmDeliverySha256": "1cd499f15c87f1fcc8283ea6bf27223c0d218cf9d34f0e946b57e474de9a475c",
+      "sha256": "c316675de3c27cc0d2e7006e43f05597c2e6dbe501a3261407f910332499f4d6",
+      "bytes": 66284,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 5.447291666666667,
+      "peak": 0.6521263718605042,
+      "rms": 0.07618967443704605
+    },
+    {
+      "id": "voice-campaign-mara-account-9a97bdb6e1f9",
+      "speaker": "Mara",
+      "voice": "af_sarah",
+      "speed": 0.92,
+      "text": "You came back without it. That doesn't tell me what was left in the chair.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock Mara identity. Close, restrained, tired; a present-day personal conversation, not the recorded confession. Exact spoken words only; no performed narration.",
+      "segments": [
+        {
+          "text": "You came back without it.",
+          "speed": 0.92,
+          "pauseAfter": 0.2
+        },
+        {
+          "text": "That doesn't tell me what was left in the chair.",
+          "speed": 0.92,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -4.01,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-mara-account-9a97bdb6e1f9.mp3",
+      "sourceFile": "/workspace/generated_audio/mara-account/voice-campaign-mara-account-9a97bdb6e1f9.wav",
+      "sourceSha256": "da867fb5a4efa3802af930d0411dc1d8c3a8f999c6311d30e181c8dc6e35b22d",
+      "pcmDeliveryFile": "/workspace/generated_audio/mara-account/voice-campaign-mara-account-9a97bdb6e1f9-delivery.wav",
+      "pcmDeliverySha256": "86a947bfda81f3fa358e5fbf883432468a1c208099e15139db6f98abde87b0e4",
+      "sha256": "7875231358eeb5907c31a0fbe4084351d6c406a99b974921756e5392b3dfcb8f",
+      "bytes": 54764,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 4.477291666666667,
+      "peak": 0.6261647939682007,
+      "rms": 0.0735725611448288
+    },
+    {
+      "id": "voice-campaign-mara-account-3aed03ac8227",
+      "speaker": "Mara",
+      "voice": "af_sarah",
+      "speed": 0.92,
+      "text": "You stayed in that sentence. Thank you. It is harder to talk to someone who keeps disappearing behind the job.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock Mara identity. Close, restrained, tired; a present-day personal conversation, not the recorded confession. Exact spoken words only; no performed narration.",
+      "segments": [
+        {
+          "text": "You stayed in that sentence.",
+          "speed": 0.92,
+          "pauseAfter": 0.2
+        },
+        {
+          "text": "Thank you.",
+          "speed": 0.92,
+          "pauseAfter": 0.2
+        },
+        {
+          "text": "It is harder to talk to someone who keeps disappearing behind the job.",
+          "speed": 0.92,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -3.39,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-mara-account-3aed03ac8227.mp3",
+      "sourceFile": "/workspace/generated_audio/mara-account/voice-campaign-mara-account-3aed03ac8227.wav",
+      "sourceSha256": "3133ce99c8825e52044c9e51aa14fcf0a1a22c16532b80f10e649135d1644162",
+      "pcmDeliveryFile": "/workspace/generated_audio/mara-account/voice-campaign-mara-account-3aed03ac8227-delivery.wav",
+      "pcmDeliverySha256": "54350e5080a73b570df09e2ca166adbb82eacab298c02338c636e09b42ad16d5",
+      "sha256": "0b427c02e750b566d4a2e7c9df15d584f4fd54b82a2d3cb09f7b93edcc23c9d0",
+      "bytes": 91340,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 7.535291666666667,
+      "peak": 0.6667976379394531,
+      "rms": 0.07663565874099731
+    },
+    {
+      "id": "voice-campaign-mara-account-ee3ba0f2e682",
+      "speaker": "Mara",
+      "voice": "af_sarah",
+      "speed": 0.92,
+      "text": "Quill is not sitting here. You are. We can finish the letter. Leave the rest for today.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock Mara identity. Close, restrained, tired; a present-day personal conversation, not the recorded confession. Exact spoken words only; no performed narration.",
+      "segments": [
+        {
+          "text": "Quill is not sitting here.",
+          "speed": 0.92,
+          "pauseAfter": 0.2
+        },
+        {
+          "text": "You are.",
+          "speed": 0.92,
+          "pauseAfter": 0.2
+        },
+        {
+          "text": "We can finish the letter.",
+          "speed": 0.92,
+          "pauseAfter": 0.2
+        },
+        {
+          "text": "Leave the rest for today.",
+          "speed": 0.92,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.51,
+      "truePeakDbtp": -6.09,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-mara-account-ee3ba0f2e682.mp3",
+      "sourceFile": "/workspace/generated_audio/mara-account/voice-campaign-mara-account-ee3ba0f2e682.wav",
+      "sourceSha256": "b2cb7782bb2fefdc645ccc46eb9b720f4fbc3cc65c77d0fa3108a57643510d22",
+      "pcmDeliveryFile": "/workspace/generated_audio/mara-account/voice-campaign-mara-account-ee3ba0f2e682-delivery.wav",
+      "pcmDeliverySha256": "d218eac57ff3e260856e672baf8c9ba7ee6d96dc2a148fc8fd72dc58a99933c6",
+      "sha256": "c971c370f420f490736a4bc65b2e136c5af1b1362c318eabdc2ff1ec6c51f50d",
+      "bytes": 79244,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 6.512666666666667,
+      "peak": 0.4951484203338623,
+      "rms": 0.07232403010129929
+    },
+    {
+      "id": "voice-campaign-mara-account-6665608553f7",
+      "speaker": "Mara",
+      "voice": "af_sarah",
+      "speed": 0.92,
+      "text": "Then carry only what we agreed. You don't owe me your reasons, and I don't owe you a softer version of mine.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock Mara identity. Close, restrained, tired; a present-day personal conversation, not the recorded confession. Exact spoken words only; no performed narration.",
+      "segments": [
+        {
+          "text": "Then carry only what we agreed.",
+          "speed": 0.92,
+          "pauseAfter": 0.2
+        },
+        {
+          "text": "You don't owe me your reasons, and I don't owe you a softer version of mine.",
+          "speed": 0.92,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -2.72,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-mara-account-6665608553f7.mp3",
+      "sourceFile": "/workspace/generated_audio/mara-account/voice-campaign-mara-account-6665608553f7.wav",
+      "sourceSha256": "783c58da063a2856e09588fb233946c4bfa72f8f80f68e679ebaad48cd8765c9",
+      "pcmDeliveryFile": "/workspace/generated_audio/mara-account/voice-campaign-mara-account-6665608553f7-delivery.wav",
+      "pcmDeliverySha256": "87230fff996316506afe4085d4161621b3d3d10c0a01682745cde81667ea891f",
+      "sha256": "0a8b58cba0a9bbb23aa9c5716351e0da1356d1d23a5ca5c143d3ddeaa9308570",
+      "bytes": 76364,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 6.268,
+      "peak": 0.7313226461410522,
+      "rms": 0.07778509706258774
+    },
+    {
+      "id": "voice-campaign-mara-account-4fb30a767f10",
+      "speaker": "Mara",
+      "voice": "af_sarah",
+      "speed": 0.92,
+      "text": "I remember where you put yourself in the story. You can sit without explaining it again.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock Mara identity. Close, restrained, tired; a present-day personal conversation, not the recorded confession. Exact spoken words only; no performed narration.",
+      "segments": [
+        {
+          "text": "I remember where you put yourself in the story.",
+          "speed": 0.92,
+          "pauseAfter": 0.2
+        },
+        {
+          "text": "You can sit without explaining it again.",
+          "speed": 0.92,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.49,
+      "truePeakDbtp": -2.9,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-mara-account-4fb30a767f10.mp3",
+      "sourceFile": "/workspace/generated_audio/mara-account/voice-campaign-mara-account-4fb30a767f10.wav",
+      "sourceSha256": "756fd160847a2d266889c5a690a6cb226af204b6d2bd2aef974341328e3e173e",
+      "pcmDeliveryFile": "/workspace/generated_audio/mara-account/voice-campaign-mara-account-4fb30a767f10-delivery.wav",
+      "pcmDeliverySha256": "772ede8cc11daf389cb11792840ea8ade95576f1fa8afabdac96fe8c40a5802b",
+      "sha256": "a20168c37c1e0e908f790754fef530ffa47edf9a9cba0da7516a386d90727e51",
+      "bytes": 65132,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 5.340625,
+      "peak": 0.6852483153343201,
+      "rms": 0.07324664294719696
+    },
+    {
+      "id": "voice-campaign-mara-account-c6da691e4ed7",
+      "speaker": "Mara",
+      "voice": "af_sarah",
+      "speed": 0.92,
+      "text": "Last time, you told me whose job it was. You never told me where you stood.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock Mara identity. Close, restrained, tired; a present-day personal conversation, not the recorded confession. Exact spoken words only; no performed narration.",
+      "segments": [
+        {
+          "text": "Last time, you told me whose job it was.",
+          "speed": 0.92,
+          "pauseAfter": 0.2
+        },
+        {
+          "text": "You never told me where you stood.",
+          "speed": 0.92,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.49,
+      "truePeakDbtp": -5.18,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-mara-account-c6da691e4ed7.mp3",
+      "sourceFile": "/workspace/generated_audio/mara-account/voice-campaign-mara-account-c6da691e4ed7.wav",
+      "sourceSha256": "7b4978d2881aa56532b9bb59c0f3d22174ed91c0894f667d0f760e36ebbd763d",
+      "pcmDeliveryFile": "/workspace/generated_audio/mara-account/voice-campaign-mara-account-c6da691e4ed7-delivery.wav",
+      "pcmDeliverySha256": "d6e012d4c908f6b900422128a9dfbd1aa1a772c65a709b5ab596ce33eb4b9518",
+      "sha256": "397ca73eb1615da752172c2c7f153364212ba863b714f9e26558c265a45d13ff",
+      "bytes": 59660,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 4.881333333333333,
+      "peak": 0.5484180450439453,
+      "rms": 0.07494673877954483
+    },
+    {
+      "id": "voice-campaign-mara-account-34789ac8f687",
+      "speaker": "Mara",
+      "voice": "af_sarah",
+      "speed": 0.92,
+      "text": "We left that conversation where we meant to. I haven't filled the silence in for you.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock Mara identity. Close, restrained, tired; a present-day personal conversation, not the recorded confession. Exact spoken words only; no performed narration.",
+      "segments": [
+        {
+          "text": "We left that conversation where we meant to.",
+          "speed": 0.92,
+          "pauseAfter": 0.25
+        },
+        {
+          "text": "I haven't filled the silence in for you.",
+          "speed": 0.88,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -3.23,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-mara-account-34789ac8f687.mp3",
+      "sourceFile": "/workspace/generated_audio/mara-account/voice-campaign-mara-account-34789ac8f687.wav",
+      "sourceSha256": "33a80674830c0f00a3e686abb5ecbe5f91e4b913fa1dcc959423fc20e28ccb18",
+      "pcmDeliveryFile": "/workspace/generated_audio/mara-account/voice-campaign-mara-account-34789ac8f687-delivery.wav",
+      "pcmDeliverySha256": "a8c554d4912b6a23c523d02bc716aeb0d4622193baa3ae6339d9a0df4a54fcbc",
+      "sha256": "46c833744e0bceaf4aa285ce2c1b4986b754666a707391a8168ee92f3b1678f7",
+      "bytes": 63116,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 5.175958333333333,
+      "peak": 0.6892347931861877,
+      "rms": 0.07375439256429672
+    },
+    {
+      "id": "voice-campaign-mara-account-19e71532ae30",
+      "speaker": "Mara",
+      "voice": "af_sarah",
+      "speed": 0.92,
+      "text": "You told me where the hour went. We stopped before the rest. We can leave it there.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock Mara identity. Close, restrained, tired; a present-day personal conversation, not the recorded confession. Exact spoken words only; no performed narration.",
+      "segments": [
+        {
+          "text": "You told me where the hour went.",
+          "speed": 0.92,
+          "pauseAfter": 0.2
+        },
+        {
+          "text": "We stopped before the rest.",
+          "speed": 0.92,
+          "pauseAfter": 0.2
+        },
+        {
+          "text": "We can leave it there.",
+          "speed": 0.92,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -5.84,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-mara-account-19e71532ae30.mp3",
+      "sourceFile": "/workspace/generated_audio/mara-account/voice-campaign-mara-account-19e71532ae30.wav",
+      "sourceSha256": "1f69700c39c9130169c6093b58fc7103ae704e1f3ab65b8975d3b450afecb233",
+      "pcmDeliveryFile": "/workspace/generated_audio/mara-account/voice-campaign-mara-account-19e71532ae30-delivery.wav",
+      "pcmDeliverySha256": "60448e093361feb4d434c4856a7c004ead6e8eafd9b7730828690cfc52e31b4e",
+      "sha256": "08dc1fa15574d695b5a3dc96a18b90327b6eef8c38945b7e2874a56559de0471",
+      "bytes": 67148,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 5.5,
+      "peak": 0.5025467872619629,
+      "rms": 0.07316981256008148
+    },
+    {
+      "id": "voice-campaign-mara-account-91141bd45474",
+      "speaker": "Mara",
+      "voice": "af_sarah",
+      "speed": 0.92,
+      "text": "A morning market. I used to go before the stalls opened, when nobody wanted anything from me yet. I would like to choose that again.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock Mara identity. Close, restrained, tired; a present-day personal conversation, not the recorded confession. Exact spoken words only; no performed narration.",
+      "segments": [
+        {
+          "text": "A morning market.",
+          "speed": 0.92,
+          "pauseAfter": 0.2
+        },
+        {
+          "text": "I used to go before the stalls opened, when nobody wanted anything from me yet.",
+          "speed": 0.92,
+          "pauseAfter": 0.2
+        },
+        {
+          "text": "I would like to choose that again.",
+          "speed": 0.92,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -3.6,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-mara-account-91141bd45474.mp3",
+      "sourceFile": "/workspace/generated_audio/mara-account/voice-campaign-mara-account-91141bd45474.wav",
+      "sourceSha256": "f43078de6c9b5959ec290842ded73516ec3dab5598c051f7e84c9813412aa285",
+      "pcmDeliveryFile": "/workspace/generated_audio/mara-account/voice-campaign-mara-account-91141bd45474-delivery.wav",
+      "pcmDeliverySha256": "b6d27a702ff263efae31da840e67885af23030be61404be5c0a38219278b0bd6",
+      "sha256": "5e7dfb000d89e81255e9cc6c426ff233e3529c00a8594b4b6c9da90468e55619",
+      "bytes": 103724,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 8.557875,
+      "peak": 0.6595727205276489,
+      "rms": 0.07414896041154861
+    },
+    {
+      "id": "voice-campaign-mara-account-766693e6f9ac",
+      "speaker": "Mara",
+      "voice": "af_sarah",
+      "speed": 0.92,
+      "text": "I hear the difference. Let it stay different. I don't want to do the rest of this conversation today.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock Mara identity. Close, restrained, tired; a present-day personal conversation, not the recorded confession. Exact spoken words only; no performed narration.",
+      "segments": [
+        {
+          "text": "I hear the difference.",
+          "speed": 0.92,
+          "pauseAfter": 0.2
+        },
+        {
+          "text": "Let it stay different.",
+          "speed": 0.92,
+          "pauseAfter": 0.2
+        },
+        {
+          "text": "I don't want to do the rest of this conversation today.",
+          "speed": 0.92,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -3.58,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-mara-account-766693e6f9ac.mp3",
+      "sourceFile": "/workspace/generated_audio/mara-account/voice-campaign-mara-account-766693e6f9ac.wav",
+      "sourceSha256": "5022abbcff74e41ae4c84cea8d9a8292e8ffd32a22e166a5a984cc1d60e34ed7",
+      "pcmDeliveryFile": "/workspace/generated_audio/mara-account/voice-campaign-mara-account-766693e6f9ac-delivery.wav",
+      "pcmDeliverySha256": "5c4f881aa7840b625076ad8f72386b4916a9a9d0f66e67648f85c6259ed120d3",
+      "sha256": "dd46bfddbb1d54b8c50fbedf7036b6eee84c1b6446be6aed39f0548516c370cc",
+      "bytes": 77516,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 6.370583333333333,
+      "peak": 0.6576488018035889,
+      "rms": 0.07408586889505386
+    }
+  ]
+}

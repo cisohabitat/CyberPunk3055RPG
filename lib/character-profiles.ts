@@ -17,7 +17,7 @@ export const CHARACTER_PROFILES: Readonly<Record<string, { introduction: string;
   },
   Mara: {
     introduction: "The patient whose hour Quill wants taken from Glass Chapel. A recorded hour and the person living beyond it need to be heard on their own terms.",
-    journalIds: ["ward-nine", "mara-assurance", "mara-channel", "mara-tomorrow", "mara-window-choice", "response-public-refusal", "mara-response-terms", "mara-response-dispatch", "mara-response-intake"],
+    journalIds: ["ward-nine", "mara-assurance", "mara-channel", "mara-tomorrow", "mara-window-choice", "mara-account-night-sold", "mara-account-night-both", "mara-account-night-destroyed", "mara-account-night-partial", "mara-account-night-left", "mara-account-owned", "mara-account-deflected", "mara-account-distance", "mara-account-repaired", "mara-account-question", "response-public-refusal", "mara-response-terms", "mara-response-dispatch", "mara-response-intake"],
   },
   Kerr: {
     introduction: "Mara’s shadow at Glass Chapel. He stands between the runner and the shard, doing a job for Helion.",

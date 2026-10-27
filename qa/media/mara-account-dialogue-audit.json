@@ -1,0 +1,210 @@
+{
+  "scope": "Mara personal-account additions only; all historical catalogs and deliveries preserved.",
+  "scenes": [
+    "act2_mara_account",
+    "act2_mara_account_told",
+    "act2_mara_account_owned",
+    "act2_mara_account_deflected",
+    "act2_mara_account_distance",
+    "act3_mara_account_return",
+    "act3_mara_account_question",
+    "act3_mara_account_repair"
+  ],
+  "decisions": [
+    {
+      "scene": "act2_mara_account",
+      "primary": "Mara",
+      "text": "Before you carry another part of me out of this room, tell me what happened to the first one.",
+      "context": "Actual personal disclosure and coherent saved approach; no new permission or evidence.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Exact visible quotation and actual Mara actor; no narrator or custom player name.",
+      "bindingKeys": [
+        "eaaff0b381745684"
+      ]
+    },
+    {
+      "scene": "act2_mara_account_told",
+      "primary": "Mara",
+      "text": "He paid you for it. I thought hearing you say it would feel different.",
+      "context": "Actual personal disclosure and coherent saved approach; no new permission or evidence.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Exact visible quotation and actual Mara actor; no narrator or custom player name.",
+      "bindingKeys": [
+        "73c59a8500ef759b"
+      ]
+    },
+    {
+      "scene": "act2_mara_account_told",
+      "primary": "Mara",
+      "text": "So it went to him and to the street. When do I get to be more than the voice they pass around?",
+      "context": "Actual personal disclosure and coherent saved approach; no new permission or evidence.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Exact visible quotation and actual Mara actor; no narrator or custom player name.",
+      "bindingKeys": [
+        "a306f9c2026211ce"
+      ]
+    },
+    {
+      "scene": "act2_mara_account_told",
+      "primary": "Mara",
+      "text": "I never asked you to choose what was worth keeping. I know why you might have.",
+      "context": "Actual personal disclosure and coherent saved approach; no new permission or evidence.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Exact visible quotation and actual Mara actor; no narrator or custom player name.",
+      "bindingKeys": [
+        "964e287ec11784dc"
+      ]
+    },
+    {
+      "scene": "act2_mara_account_told",
+      "primary": "Mara",
+      "text": "He paid for what was left. I wonder which part of me he thought was the useful part.",
+      "context": "Actual personal disclosure and coherent saved approach; no new permission or evidence.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Exact visible quotation and actual Mara actor; no narrator or custom player name.",
+      "bindingKeys": [
+        "b9df8163dca9e897"
+      ]
+    },
+    {
+      "scene": "act2_mara_account_told",
+      "primary": "Mara",
+      "text": "You came back without it. That doesn't tell me what was left in the chair.",
+      "context": "Actual personal disclosure and coherent saved approach; no new permission or evidence.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Exact visible quotation and actual Mara actor; no narrator or custom player name.",
+      "bindingKeys": [
+        "1e5f37c077fd1b1e"
+      ]
+    },
+    {
+      "scene": "act2_mara_account_owned",
+      "primary": "Mara",
+      "text": "You stayed in that sentence. Thank you. It is harder to talk to someone who keeps disappearing behind the job.",
+      "context": "Actual personal disclosure and coherent saved approach; no new permission or evidence.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Exact visible quotation and actual Mara actor; no narrator or custom player name.",
+      "bindingKeys": [
+        "17dcdd7524cf62ed"
+      ]
+    },
+    {
+      "scene": "act2_mara_account_deflected",
+      "primary": "Mara",
+      "text": "Quill is not sitting here. You are. We can finish the letter. Leave the rest for today.",
+      "context": "Actual personal disclosure and coherent saved approach; no new permission or evidence.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Exact visible quotation and actual Mara actor; no narrator or custom player name.",
+      "bindingKeys": [
+        "e3670d77ec847b80"
+      ]
+    },
+    {
+      "scene": "act2_mara_account_distance",
+      "primary": "Mara",
+      "text": "Then carry only what we agreed. You don't owe me your reasons, and I don't owe you a softer version of mine.",
+      "context": "Actual personal disclosure and coherent saved approach; no new permission or evidence.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Exact visible quotation and actual Mara actor; no narrator or custom player name.",
+      "bindingKeys": [
+        "c3213b3f6b60953f"
+      ]
+    },
+    {
+      "scene": "act3_mara_account_return",
+      "primary": "Mara",
+      "text": "I remember where you put yourself in the story. You can sit without explaining it again.",
+      "context": "Actual personal disclosure and coherent saved approach; no new permission or evidence.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Exact visible quotation and actual Mara actor; no narrator or custom player name.",
+      "bindingKeys": [
+        "b619b637999ccfc8"
+      ]
+    },
+    {
+      "scene": "act3_mara_account_return",
+      "primary": "Mara",
+      "text": "Last time, you told me whose job it was. You never told me where you stood.",
+      "context": "Actual personal disclosure and coherent saved approach; no new permission or evidence.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Exact visible quotation and actual Mara actor; no narrator or custom player name.",
+      "bindingKeys": [
+        "9f98eb53aedcda11"
+      ]
+    },
+    {
+      "scene": "act3_mara_account_return",
+      "primary": "Mara",
+      "text": "We left that conversation where we meant to. I haven't filled the silence in for you.",
+      "context": "Actual personal disclosure and coherent saved approach; no new permission or evidence.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Exact visible quotation and actual Mara actor; no narrator or custom player name.",
+      "bindingKeys": [
+        "cd4fba153197c98e"
+      ]
+    },
+    {
+      "scene": "act3_mara_account_return",
+      "primary": "Mara",
+      "text": "You told me where the hour went. We stopped before the rest. We can leave it there.",
+      "context": "Actual personal disclosure and coherent saved approach; no new permission or evidence.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Exact visible quotation and actual Mara actor; no narrator or custom player name.",
+      "bindingKeys": [
+        "0a9674795b18f480"
+      ]
+    },
+    {
+      "scene": "act3_mara_account_question",
+      "primary": "Mara",
+      "text": "A morning market. I used to go before the stalls opened, when nobody wanted anything from me yet. I would like to choose that again.",
+      "context": "Actual personal disclosure and coherent saved approach; no new permission or evidence.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Exact visible quotation and actual Mara actor; no narrator or custom player name.",
+      "bindingKeys": [
+        "57d2d4f3b77759bf"
+      ]
+    },
+    {
+      "scene": "act3_mara_account_repair",
+      "primary": "Mara",
+      "text": "I hear the difference. Let it stay different. I don't want to do the rest of this conversation today.",
+      "context": "Actual personal disclosure and coherent saved approach; no new permission or evidence.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Mara",
+      "reason": "Exact visible quotation and actual Mara actor; no narrator or custom player name.",
+      "bindingKeys": [
+        "548c04fb0fac5455"
+      ]
+    }
+  ]
+}

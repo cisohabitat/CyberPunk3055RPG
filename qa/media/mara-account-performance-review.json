@@ -1,0 +1,100 @@
+{
+  "firstPass": {
+    "clips": 15,
+    "exactNormalizedMatches": 14,
+    "mismatch": {
+      "id": "voice-campaign-mara-account-34789ac8f687",
+      "speaker": "Mara",
+      "path": "public/audio/voice-campaign-mara-account-34789ac8f687.mp3",
+      "sha256": "8d19efb95c5484af6f1571e6f63891ee49a484d55b681e6a03ae376fa1ad5c57",
+      "authoredText": "We left that conversation where we meant to. I haven't filled the silence in for you.",
+      "transcription": "We left that conversation where we meant to. I haven't filled the silence in for you. You",
+      "exactNormalizedWords": false
+    },
+    "delivery": {
+      "id": "voice-campaign-mara-account-34789ac8f687",
+      "speaker": "Mara",
+      "voice": "af_sarah",
+      "speed": 0.92,
+      "text": "We left that conversation where we meant to. I haven't filled the silence in for you.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock Mara identity. Close, restrained, tired; a present-day personal conversation, not the recorded confession. Exact spoken words only; no performed narration.",
+      "segments": [
+        {
+          "text": "We left that conversation where we meant to.",
+          "speed": 0.92,
+          "pauseAfter": 0.2
+        },
+        {
+          "text": "I haven't filled the silence in for you.",
+          "speed": 0.92,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.51,
+      "truePeakDbtp": -2.8,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-mara-account-34789ac8f687.mp3",
+      "sourceFile": "/workspace/generated_audio/mara-account/voice-campaign-mara-account-34789ac8f687.wav",
+      "sourceSha256": "6630839f295a9a024404fc4417a13dbf1992c329d9af1b408afa3c27612b2e2d",
+      "pcmDeliveryFile": "/workspace/generated_audio/mara-account/voice-campaign-mara-account-34789ac8f687-delivery.wav",
+      "pcmDeliverySha256": "9156d90b959c6b6d7d2efcb9898a188a1153fb74e97de86204508ae9762351f2",
+      "sha256": "8d19efb95c5484af6f1571e6f63891ee49a484d55b681e6a03ae376fa1ad5c57",
+      "bytes": 61676,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 5.0419583333333335,
+      "peak": 0.7076029777526855,
+      "rms": 0.07729028910398483
+    },
+    "retainedFiles": [
+      "/workspace/generated_audio/mara-account/first-pass/voice-campaign-mara-account-34789ac8f687.wav",
+      "/workspace/generated_audio/mara-account/first-pass/voice-campaign-mara-account-34789ac8f687-delivery.wav",
+      "/workspace/generated_audio/mara-account/first-pass/voice-campaign-mara-account-34789ac8f687.mp3"
+    ],
+    "retainedDelivery": {
+      "id": "voice-campaign-mara-account-34789ac8f687",
+      "speaker": "Mara",
+      "voice": "af_sarah",
+      "speed": 0.92,
+      "text": "We left that conversation where we meant to. I haven't filled the silence in for you.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock Mara identity. Close, restrained, tired; a present-day personal conversation, not the recorded confession. Exact spoken words only; no performed narration.",
+      "segments": [
+        {
+          "text": "We left that conversation where we meant to.",
+          "speed": 0.92,
+          "pauseAfter": 0.2
+        },
+        {
+          "text": "I haven't filled the silence in for you.",
+          "speed": 0.92,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.51,
+      "truePeakDbtp": -2.8,
+      "language": "en-us",
+      "path": "/workspace/generated_audio/mara-account/first-pass/voice-campaign-mara-account-34789ac8f687.mp3",
+      "sourceFile": "/workspace/generated_audio/mara-account/first-pass/voice-campaign-mara-account-34789ac8f687.wav",
+      "sourceSha256": "6630839f295a9a024404fc4417a13dbf1992c329d9af1b408afa3c27612b2e2d",
+      "pcmDeliveryFile": "/workspace/generated_audio/mara-account/first-pass/voice-campaign-mara-account-34789ac8f687-delivery.wav",
+      "pcmDeliverySha256": "9156d90b959c6b6d7d2efcb9898a188a1153fb74e97de86204508ae9762351f2",
+      "sha256": "8d19efb95c5484af6f1571e6f63891ee49a484d55b681e6a03ae376fa1ad5c57",
+      "bytes": 61676,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 5.0419583333333335,
+      "peak": 0.7076029777526855,
+      "rms": 0.07729028910398483
+    }
+  },
+  "action": "Retake the same exact words with a slower final sentence after ASR appended an extra You. Preserve the first-pass PCM, delivery and raw transcription.",
+  "limits": "Independent unprompted ASR word check, not human listening or acting acceptance.",
+  "finalPass": {
+    "clips": 15,
+    "exactNormalizedMatches": 15,
+    "retakeSameWords": true,
+    "record": "qa/media/mara-account-dialogue-transcripts.json"
+  }
+}

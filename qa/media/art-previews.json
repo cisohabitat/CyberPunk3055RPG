@@ -81,7 +81,8 @@
     "/art/spire-terminal.jpg": "/art/previews/spire-terminal.jpg",
     "/art/stallholder-story.jpg": "/art/previews/stallholder-story.jpg",
     "/art/wall-shared.jpg": "/art/previews/wall-shared.jpg",
-    "/art/witness-checkpoint.jpg": "/art/previews/witness-checkpoint.jpg"
+    "/art/witness-checkpoint.jpg": "/art/previews/witness-checkpoint.jpg",
+    "/art/mara-account.jpg": "/art/previews/mara-account.jpg"
   },
   "files": [
     {
@@ -812,6 +813,15 @@
       "width": 96,
       "height": 64,
       "bytes": 2626
+    },
+    {
+      "path": "public/art/previews/mara-account.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 1918,
+      "sha256": "9a1a41ecd5acafb395154921315e67c29a823579e90604a2e15922e97119cb87",
+      "source": "public/art/mara-account.jpg",
+      "sourceSha256": "dcf2c16bc2c77e1822c9bba7fee9d89878837ede6b9b15e4f4691a61811b2cbb"
     }
   ]
 }

@@ -1,0 +1,387 @@
+{
+  "phase": "Kerr: the price of a doorway",
+  "revision": "4808605923746532a328e99adb213af9d68aa8e5",
+  "recordedAt": "2026-10-27T14:57:20.460728+00:00",
+  "dirty": false,
+  "candidate": "qa/editorial/kerr-confrontation.json",
+  "documentation": "docs/KERR_CONFRONTATION_PHASE.md",
+  "ci": {
+    "runId": 40512212813,
+    "url": "https://github.com/cisohabitat/CyberPunk3055RPG/actions/runs/40512212813",
+    "releaseAttempt": 2,
+    "cohortSuiteId": 109802445898,
+    "checks": [
+      {
+        "id": 122262951708,
+        "name": "Build",
+        "status": "completed",
+        "conclusion": "success",
+        "check_suite": {
+          "id": 109802445898
+        },
+        "app": {
+          "slug": "github-actions"
+        }
+      },
+      {
+        "id": 122238710909,
+        "name": "Browser (webkit)",
+        "status": "completed",
+        "conclusion": "success",
+        "check_suite": {
+          "id": 109802445898
+        },
+        "app": {
+          "slug": "github-actions"
+        }
+      },
+      {
+        "id": 122238710492,
+        "name": "Browser (chromium)",
+        "status": "completed",
+        "conclusion": "success",
+        "check_suite": {
+          "id": 109802445898
+        },
+        "app": {
+          "slug": "github-actions"
+        }
+      },
+      {
+        "id": 122238710455,
+        "name": "Browser (phone)",
+        "status": "completed",
+        "conclusion": "success",
+        "check_suite": {
+          "id": 109802445898
+        },
+        "app": {
+          "slug": "github-actions"
+        }
+      },
+      {
+        "id": 122238710351,
+        "name": "Browser (firefox)",
+        "status": "completed",
+        "conclusion": "success",
+        "check_suite": {
+          "id": 109802445898
+        },
+        "app": {
+          "slug": "github-actions"
+        }
+      },
+      {
+        "id": 122237030369,
+        "name": "Test",
+        "status": "completed",
+        "conclusion": "success",
+        "check_suite": {
+          "id": 109802445898
+        },
+        "app": {
+          "slug": "github-actions"
+        }
+      }
+    ],
+    "productionDecision": "build",
+    "source": {
+      "passed": 785,
+      "failed": 0
+    },
+    "browsers": {
+      "chromium": {
+        "passed": 932,
+        "skipped": 0,
+        "flaky": 0
+      },
+      "phone": {
+        "passed": 930,
+        "skipped": 2,
+        "flaky": 0
+      },
+      "firefox": {
+        "passed": 930,
+        "skipped": 2,
+        "flaky": 0
+      },
+      "webkit": {
+        "passed": 930,
+        "skipped": 2,
+        "flaky": 0
+      }
+    },
+    "skips": "Existing profile-specific skips; no new skip or weakened gate.",
+    "firstAttempt": {
+      "conclusion": "cancelled",
+      "reason": "WebKit browser dependency installation remained active for over 30 minutes without reaching any gameplay tests. Cancelled and reran the ENTIRE unchanged workflow on the same commit. Aggregate Build correctly rejected the incomplete first attempt.",
+      "jobsObserved": [
+        {
+          "completed_at": "2026-10-27T13:29:54Z",
+          "conclusion": "success",
+          "id": 122216756472,
+          "name": "Test",
+          "started_at": "2026-10-27T13:27:41Z",
+          "status": "completed",
+          "steps": []
+        },
+        {
+          "completed_at": "2026-10-27T13:46:02Z",
+          "conclusion": "success",
+          "id": 122217846676,
+          "name": "Browser (phone)",
+          "started_at": "2026-10-27T13:29:58Z",
+          "status": "completed",
+          "steps": []
+        },
+        {
+          "completed_at": "2026-10-27T13:50:27Z",
+          "conclusion": "success",
+          "id": 122217846719,
+          "name": "Browser (chromium)",
+          "started_at": "2026-10-27T13:29:59Z",
+          "status": "completed",
+          "steps": []
+        },
+        {
+          "completed_at": "2026-10-27T13:51:48Z",
+          "conclusion": "success",
+          "id": 122217846831,
+          "name": "Browser (firefox)",
+          "started_at": "2026-10-27T13:29:58Z",
+          "status": "completed",
+          "steps": []
+        },
+        {
+          "completed_at": null,
+          "conclusion": null,
+          "id": 122217846832,
+          "name": "Browser (webkit)",
+          "started_at": "2026-10-27T13:29:59Z",
+          "status": "in_progress",
+          "steps": [
+            {
+              "completed_at": "2026-10-27T14:04:00Z",
+              "conclusion": "cancelled",
+              "name": "Run npx playwright install --with-deps chromium webkit",
+              "started_at": "2026-10-27T13:30:18Z"
+            }
+          ]
+        },
+        {
+          "completed_at": "2026-10-27T14:04:17Z",
+          "conclusion": "failure",
+          "id": 122235197665,
+          "name": "Build",
+          "started_at": "2026-10-27T14:04:06Z",
+          "status": "completed",
+          "steps": [
+            {
+              "completed_at": "2026-10-27T14:04:14Z",
+              "conclusion": "failure",
+              "name": "Require source tests and every browser project",
+              "started_at": "2026-10-27T14:04:14Z"
+            }
+          ]
+        }
+      ],
+      "snapshotLimitation": "GitHub still exposed the cancelled WebKit job as in_progress in this snapshot; its dependency-install step records cancellation. Run concluded cancelled before full attempt 2."
+    }
+  },
+  "deployment": {
+    "id": "dpl_46rJGQMHNLx2jXF115ziezdfsbAT",
+    "projectId": "prj_JYHAxYL8onO9SFrvFN0i5q3IepIp",
+    "target": "production",
+    "state": "READY",
+    "revision": "4808605923746532a328e99adb213af9d68aa8e5",
+    "aliasesVerified": [
+      "cyberpunk3055rpg.vercel.app",
+      "cyberpunk3055rpg-git-main-cfusion2k-7277s-projects.vercel.app"
+    ],
+    "expiredAutomaticDeployment": "dpl_3K8C9ricef9cnsfbrdknu9HY9MCj",
+    "releaseMethod": "Default-scope Git-connected production redeployment of tested main after all six checks passed; no code, gate or status-only commit."
+  },
+  "publicValidation": {
+    "url": "https://cyberpunk3055rpg.vercel.app",
+    "features": {
+      "passed": 59,
+      "failed": 0,
+      "retries": 0,
+      "performedKerrClips": 13,
+      "logSha256": "d29a27ae28d70dcceb9b68f56027224bfa8835c0cb7047f002ac2d19f23b8de7"
+    },
+    "media": {
+      "commit": "4808605923746532a328e99adb213af9d68aa8e5",
+      "voiceDeliveries": 13,
+      "artDeliveries": 3,
+      "rows": [
+        {
+          "path": "/art/kerr-terms.jpg",
+          "status": 200,
+          "bytes": 200043,
+          "sha256": "3a36aebd59aee508b590317d0fb544ecbab7183e901ea78ed04ca44a4ee0d551"
+        },
+        {
+          "path": "/art/kerr-terms-small.jpg",
+          "status": 200,
+          "bytes": 56856,
+          "sha256": "d9ff6b47adabce778d7ed409b300e604fb38176314c4075b4c7a8d059fa485e6"
+        },
+        {
+          "path": "/art/previews/kerr-terms.jpg",
+          "status": 200,
+          "bytes": 2626,
+          "sha256": "ccc43e397f45cabc2ef69aec9c7e7b1f539f98cdb1df8f67e54762b7f53172bb"
+        },
+        {
+          "path": "/audio/voice-campaign-kerr-terms-b055761e9afc.mp3",
+          "status": 200,
+          "bytes": 63980,
+          "sha256": "a46240a699544e3f25351fc972e7ec4eabf73765f62ddb191bb2a067536aedac"
+        },
+        {
+          "path": "/audio/voice-campaign-kerr-terms-cae166cd5d8e.mp3",
+          "status": 200,
+          "bytes": 49004,
+          "sha256": "1ea8d782787706df4e90981a60ba9174ed0bc585b62bba9935cca8e52d2434bd"
+        },
+        {
+          "path": "/audio/voice-campaign-kerr-terms-21d133ddba35.mp3",
+          "status": 200,
+          "bytes": 49004,
+          "sha256": "549312d0e2b5b47e03aebe8ab05a341a359b39c3a682ca68583173315889d590"
+        },
+        {
+          "path": "/audio/voice-campaign-kerr-terms-9eb4b102fa0b.mp3",
+          "status": 200,
+          "bytes": 47564,
+          "sha256": "dc2b5f08e108928001a48bd7d88bc96289dd62ad5bea48bf865a8797b346ee90"
+        },
+        {
+          "path": "/audio/voice-campaign-kerr-terms-84e2cc909f99.mp3",
+          "status": 200,
+          "bytes": 61100,
+          "sha256": "417ad4ca0c452e1b009e4251e29583b66c6d1b1bad4906e66ac78fbbe2550fcd"
+        },
+        {
+          "path": "/audio/voice-campaign-kerr-terms-89370c1ffbd4.mp3",
+          "status": 200,
+          "bytes": 39788,
+          "sha256": "e471540d77846472f0a19c4e84462c631c5881c3f6e5b5044052eb4c629d2904"
+        },
+        {
+          "path": "/audio/voice-campaign-kerr-terms-c2ea702b5503.mp3",
+          "status": 200,
+          "bytes": 59372,
+          "sha256": "fdaf1d8a23a25007656b7a4455d78d7bdf4a7834f476879939318307c0e08698"
+        },
+        {
+          "path": "/audio/voice-campaign-kerr-terms-b12348e1925b.mp3",
+          "status": 200,
+          "bytes": 80108,
+          "sha256": "b0ad4387d58a1266d98f9036d6946c77c0302814a98d6046f6483158c3644d8c"
+        },
+        {
+          "path": "/audio/voice-campaign-kerr-terms-4d6f6c624ea7.mp3",
+          "status": 200,
+          "bytes": 57644,
+          "sha256": "23199d464878ec590012510e09b3debe15a2c36683af0758f7677491fb57aa40"
+        },
+        {
+          "path": "/audio/voice-campaign-kerr-terms-c36a52eb86fe.mp3",
+          "status": 200,
+          "bytes": 72620,
+          "sha256": "2bb7e82a776ec3702a9660eb07f5832374bc8e487cbb23e4ffb12f2d5641d291"
+        },
+        {
+          "path": "/audio/voice-campaign-kerr-terms-e69c29cfbc36.mp3",
+          "status": 200,
+          "bytes": 67148,
+          "sha256": "afaf7ed5ebe2a228f9dd26639941c3d95081a20c1b903245d10413bbf3c5bde2"
+        },
+        {
+          "path": "/audio/voice-campaign-kerr-terms-acd344b4f340.mp3",
+          "status": 200,
+          "bytes": 67724,
+          "sha256": "1e90ea2de492160f2d733b839c26db8ae2156023374e1f4cce66af682f7622ce"
+        },
+        {
+          "path": "/audio/voice-campaign-kerr-terms-3d29183560fe.mp3",
+          "status": 200,
+          "bytes": 94220,
+          "sha256": "4557a7747acbf489a2268fc4f4d2d0905cd35a7ed9a44c80d1210d5431f50cf6"
+        }
+      ],
+      "tls": "Curl verified inherited CA chain; browser pins that verified proxy certificate public key. ignoreHTTPSErrors false."
+    },
+    "responsiveViews": [
+      {
+        "width": 390,
+        "path": "/tmp/saint-kerr-terms/public-kerr-390.png",
+        "goalVisible": true,
+        "saveUnchanged": true,
+        "overflow": false,
+        "artwork": "full",
+        "captureSha256": "d7285c56f5fa2fa91ce09fb25fd3f9350975cbeea91ee68a3098a1671b909809",
+        "visuallyInspected": true
+      },
+      {
+        "width": 1440,
+        "path": "/tmp/saint-kerr-terms/public-kerr-1440.png",
+        "goalVisible": true,
+        "saveUnchanged": true,
+        "overflow": false,
+        "artwork": "full",
+        "captureSha256": "1a07fe63e1e94ec793f843bb8dd14d5172cba10ec84fd45e9db4bfedca8627fb",
+        "visuallyInspected": true
+      },
+      {
+        "width": 320,
+        "path": "/tmp/saint-kerr-terms/public-kerr-320.png",
+        "goalVisible": true,
+        "saveUnchanged": true,
+        "overflow": false,
+        "artwork": "none",
+        "captureSha256": "825bf76ffe5072b39f6a1f7a8f80aa745eb3f62b0f1a68ade0abacfe0e7b9505",
+        "visuallyInspected": true
+      }
+    ],
+    "keyboardCampaign": {
+      "revision": "4808605923746532a328e99adb213af9d68aa8e5",
+      "dirty": false,
+      "route": "qa/routes/kerr/scarce-withdrew.json",
+      "width": 320,
+      "artwork": "none",
+      "reading": "all",
+      "sound": false,
+      "input": "Tab, Shift+Tab, Enter, Space, arrows and typing; no pointer actions or programmatic focus",
+      "visits": 37,
+      "tabs": 237,
+      "reloads": 36,
+      "voices": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 10,
+        "strain": 0,
+        "rolls": [
+          8,
+          8
+        ]
+      },
+      "errors": [],
+      "failedMedia": [],
+      "limitations": "Internal authored campaign, not blind or fresh-player observation. Synthetic viewport and pagehide, not physical hardware or app switch. Voice completion and cleanup do not establish listening quality. Transition times include UI review/reloads; they are not INP or field percentiles.",
+      "observerSha256": "891abcf98286985153c5287bf5bb33929d653e4ddedbc905a11d51af17048284"
+    },
+    "rawCampaignSha256": "a5efa492487d8c44e12074f2dbf4d2617aa6eb858ee733a35193c37a66f2e74b",
+    "tls": "HTTPS verified with inherited CA via curl; Chromium pins that verified proxy certificate public key. ignoreHTTPSErrors false. No blanket TLS bypass or production TLS change."
+  },
+  "limits": [
+    "Source-familiar authored/automated AI proxy, not blind or human acceptance.",
+    "Synthetic viewports, not physical-device validation.",
+    "ASR, word alignment, signal measurements and playback completion do not establish acting quality.",
+    "Internal provisional grade remains 8.5; no new AAA or 9.0 acceptance claim."
+  ],
+  "compatibility": "New runs enable the expansion; old saves keep their original encounter and pending rolls."
+}

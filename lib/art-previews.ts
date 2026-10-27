@@ -79,5 +79,6 @@ export const ART_PREVIEWS: Readonly<Record<string, string>> = {
   "/art/spire-terminal.jpg": "/art/previews/spire-terminal.jpg",
   "/art/stallholder-story.jpg": "/art/previews/stallholder-story.jpg",
   "/art/wall-shared.jpg": "/art/previews/wall-shared.jpg",
-  "/art/witness-checkpoint.jpg": "/art/previews/witness-checkpoint.jpg"
+  "/art/witness-checkpoint.jpg": "/art/previews/witness-checkpoint.jpg",
+  "/art/mara-account.jpg": "/art/previews/mara-account.jpg",
 };

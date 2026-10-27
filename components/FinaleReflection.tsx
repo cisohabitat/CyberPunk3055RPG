@@ -10,19 +10,22 @@ import { CampaignThread } from "./CampaignThread";
 import { finaleCommitments } from "@/lib/finale-commitments";
 import { finaleConsequenceEcho } from "@/lib/campaign-presentation";
 import { kerrTermsCoda } from "@/lib/kerr-terms";
+import { maraAccountCoda } from "@/lib/mara-account";
 
 export function FinaleReflection({ state, artwork = true }: { state: GameState; artwork?: boolean }) {
   const campaign = campaignCoda(state), personal = finalePersonalEcho(state);
   const commitments = finaleCommitments(state);
   const consequence = finaleConsequenceEcho(state);
   const threshold = kerrTermsCoda(state);
+  const mara = maraAccountCoda(state);
   return <section className="finale-reflection" aria-label="After the wall" data-testid="finale-reflection">
-    {(campaign || personal || consequence || threshold) && <section className="finale-carry" aria-labelledby="finale-carry-title">
+    {(campaign || personal || consequence || threshold || mara) && <section className="finale-carry" aria-labelledby="finale-carry-title">
       <h2 id="finale-carry-title">What you carry</h2>
       {campaign && <p data-testid="campaign-coda">{campaign}</p>}
       {personal && <p className="relationship-coda" data-testid="relationship-coda">{personal}</p>}
       {consequence && <aside className="consequence-echo" data-testid="consequence-echo"><h3>{consequence.title}</h3><p>{consequence.text}</p></aside>}
       {threshold && <aside className="consequence-echo" data-testid="kerr-terms-coda"><h3>What the doorway kept</h3><p>{threshold}</p></aside>}
+      {mara && <aside className="consequence-echo" data-testid="mara-account-coda"><h3>What you told Mara</h3><p>{mara}</p></aside>}
     </section>}
     <section className="aftermath" aria-label="What your choices changed">
       <h2>What remains</h2>
