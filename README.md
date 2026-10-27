@@ -892,3 +892,7 @@ Ten new scenes have explicit art decisions, a new public-review depot painting, 
 ### Distinct builds at the filing bench
 
 Earned Chrome, Ghost, Face or Nerve training opens a different correction-review procedure after Edda's depot query. Matching equipment changes diagnostic exposure, courier signature, a voluntary work bargain or handling/recovery effort. Compare freely before committing saved depot actions; a review reference confirms intake, not source truth or witness permission. New bench art and nine matching Dispatcher recordings accompany the ten scenes. See [Phase 4 methods and validation](docs/DISTINCT_BUILDS_PHASE4.md). Prior Phase 3 publication and main-branch redeployment are recorded in [release evidence](qa/editorial/player-led-phase3-release.json).
+
+### Cinematic conversations
+
+Mara's confession, Kerr's threshold confrontation, Nia's witness decisions and the Ward Nine return now have sequence-specific dialogue spacing and quieter background beds. Optional **Scene / Detail** views inspect four new object paintings without advancing the story or interrupting speech. Existing cast, recordings, quotations, earned district art and all campaign outcomes remain aligned. [Phase 5 direction and evidence](docs/CINEMATIC_DIRECTION_PHASE5.md) explains the sixteen stages, technical A/B comparison and accessibility checks. [Phase 4 release evidence](qa/editorial/player-led-phase4-release.json) records its completed CI and public verification.

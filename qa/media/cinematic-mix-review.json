@@ -1,0 +1,217 @@
+{
+  "method": "Offline mono 24 kHz static speech-duck A/B proxy using actual delivered voices/music/ambience. Current default sliders, source gains and speech-duck multipliers; excludes attack/release ramps, browser crossfades, network and room playback. Voice samples and gain identical; only gaps and bed focus vary.",
+  "sourcePolicy": "qa/media/cinematic-mix-spec.json; production timing/mix separately observed in browser checks.",
+  "limitations": "Technical comparison, not independent human intelligibility, performance or acting acceptance. Original and comparison PCM retained outside Git.",
+  "samples": [
+    {
+      "sceneId": "memo",
+      "route": "allocation-dustline",
+      "lines": [
+        {
+          "id": "voice-campaign-mara-revelation-performance",
+          "speaker": "Mara",
+          "text": "I signed the coolant dump. Ward Nine. Three hundred on the night shift. I want that sentence to stay in my mouth.",
+          "path": "public/audio/voice-campaign-mara-revelation-performance.mp3",
+          "sha256": "c862782aa863dea10d16fa4740542283d252475332366cba2be1efc931c3af58",
+          "level": 0.96827786
+        }
+      ],
+      "musicPath": "public/audio/theme-reading.flac",
+      "musicSha256": "10c9e40f7b3f3db1710d5c6eb35286765b5b5019ac34374a578a3e0cf39f613f",
+      "ambiencePath": "public/audio/ambience-chapel.flac",
+      "ambienceSha256": "20e21da9b23a6eedefb67eb602148a4a917320cf6c8f1cad581eabca7997f664",
+      "versions": [
+        {
+          "version": "before",
+          "sourceFile": "/workspace/generated_audio/cinematic-phase5/memo-before.wav",
+          "sha256": "73ae9f3b87e062bee3d38e431bf9e00333e5253e4772234de8ce12388f53ceb6",
+          "durationSeconds": 9.475916666666667,
+          "lineStartSeconds": [
+            0.0
+          ],
+          "voiceRmsWithoutGaps": 0.04759600758552551,
+          "bedRms": 0.0013884459622204304,
+          "peak": 0.4704633355140686
+        },
+        {
+          "version": "directed",
+          "sourceFile": "/workspace/generated_audio/cinematic-phase5/memo-directed.wav",
+          "sha256": "1415dffd1c35756acad72dd10f57897a50f882040dd4df2926519a35c6b5680e",
+          "durationSeconds": 9.475916666666667,
+          "lineStartSeconds": [
+            0.0
+          ],
+          "voiceRmsWithoutGaps": 0.04759600758552551,
+          "bedRms": 0.0009679280919954181,
+          "peak": 0.4695940613746643
+        }
+      ],
+      "bedChangeDb": -3.133717747068736
+    },
+    {
+      "sceneId": "kerr",
+      "route": "allocation-dustline",
+      "lines": [
+        {
+          "id": "voice-campaign-kerr-3914d401fb83",
+          "speaker": "Kerr",
+          "text": "Put it down.",
+          "path": "public/audio/voice-campaign-kerr-3914d401fb83.mp3",
+          "sha256": "dedf3c7e841870c6d32a4ea7c0aee46f9a49888892ae43db621b2c8fb93208d6",
+          "level": 0.73113908
+        },
+        {
+          "id": "voice-kerr-kerr",
+          "speaker": "Kerr",
+          "text": "That glass is Mara's hour. Helion pays me so the Ward Nine memo stays in her head, not in your pocket.",
+          "path": "public/audio/voice-kerr-kerr.wav",
+          "sha256": "1f5a0e7cd2154c89a79b4fed3a5622ab04db107e6ae90a14394cb02b802d5e4a",
+          "level": 0.84430624
+        }
+      ],
+      "musicPath": "public/audio/theme-chapel.flac",
+      "musicSha256": "24446589e011bb283beef94366fc6c76231370ce0448afb05fa3e086698ac303",
+      "ambiencePath": "public/audio/ambience-chapel.flac",
+      "ambienceSha256": "20e21da9b23a6eedefb67eb602148a4a917320cf6c8f1cad581eabca7997f664",
+      "versions": [
+        {
+          "version": "before",
+          "sourceFile": "/workspace/generated_audio/cinematic-phase5/kerr-before.wav",
+          "sha256": "bad843ca0a1e118cca7bb87c75e7b7b9b67cca1fab65b20e10ddaabfef7398d6",
+          "durationSeconds": 7.903958333333334,
+          "lineStartSeconds": [
+            0.0,
+            1.388625
+          ],
+          "voiceRmsWithoutGaps": 0.05177800729870796,
+          "bedRms": 0.003034271067008376,
+          "peak": 0.4312931001186371
+        },
+        {
+          "version": "directed",
+          "sourceFile": "/workspace/generated_audio/cinematic-phase5/kerr-directed.wav",
+          "sha256": "8e485f29433361acce93fbe35c23d661bcd619f1669dc760f84091bcbf54cf3e",
+          "durationSeconds": 7.963958333333333,
+          "lineStartSeconds": [
+            0.0,
+            1.448625
+          ],
+          "voiceRmsWithoutGaps": 0.05177800729870796,
+          "bedRms": 0.001540911034680903,
+          "peak": 0.4262375831604004
+        }
+      ],
+      "bedChangeDb": -5.885536214398418
+    },
+    {
+      "sceneId": "act2_witness_arrival",
+      "route": "balance-dustline-nerve-equipped",
+      "lines": [
+        {
+          "id": "voice-campaign-nia-pell-c987f8a09159",
+          "speaker": "Nia Pell",
+          "text": "You got me here,",
+          "path": "public/audio/voice-campaign-nia-pell-c987f8a09159.mp3",
+          "sha256": "de1327f14fbdb4d5511b9fb329c6141a8c72c80de007b4c3d04cfc83db7b4c72",
+          "level": 0.68312472
+        },
+        {
+          "id": "voice-nia-arrival",
+          "speaker": "Nia Pell",
+          "text": "Now I want to hear the words before anyone uses them. No address. No photograph. If I stop, you stop.",
+          "path": "public/audio/voice-nia-arrival.wav",
+          "sha256": "d491be8168f0903643430831328c9846014804e509e743b8905703a705ecd772",
+          "level": 0.61517687
+        }
+      ],
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-witness.flac",
+      "ambienceSha256": "e3fe2b2e0e09a2c36ec5566c63e469de416cdae7c8fbf9d25411bf7d46d9e1a3",
+      "versions": [
+        {
+          "version": "before",
+          "sourceFile": "/workspace/generated_audio/cinematic-phase5/act2_witness_arrival-before.wav",
+          "sha256": "5604e939a04c72ef4543c38a220b51c8266448e8b6491497b01d259a93a34e73",
+          "durationSeconds": 11.346,
+          "lineStartSeconds": [
+            0.0,
+            2.008
+          ],
+          "voiceRmsWithoutGaps": 0.05066526681184769,
+          "bedRms": 0.001525096595287323,
+          "peak": 0.32591012120246887
+        },
+        {
+          "version": "directed",
+          "sourceFile": "/workspace/generated_audio/cinematic-phase5/act2_witness_arrival-directed.wav",
+          "sha256": "70384a1434323c3b5aaec9c73c077b7c283e9b53f628124592959418c00822e5",
+          "durationSeconds": 11.606,
+          "lineStartSeconds": [
+            0.0,
+            2.268
+          ],
+          "voiceRmsWithoutGaps": 0.05066526681184769,
+          "bedRms": 0.0009271249873563647,
+          "peak": 0.3265755772590637
+        }
+      ],
+      "bedChangeDb": -4.323181308718656
+    },
+    {
+      "sceneId": "act3_arrival",
+      "route": "allocation-dustline",
+      "lines": [
+        {
+          "id": "voice-campaign-sera-1031969a7935",
+          "speaker": "Sera",
+          "text": "If you know any of them,",
+          "path": "public/audio/voice-campaign-sera-1031969a7935.mp3",
+          "sha256": "885228941d905cf23bb9c4a85b53438ad267dd69303b97cf9d7e9812827d40b3",
+          "level": 0.58884366
+        },
+        {
+          "id": "voice-sera-wall-invitation",
+          "speaker": "Sera",
+          "text": "say them. If you sold them, you can still say them. The wall does not check your receipt.",
+          "path": "public/audio/voice-sera-wall-invitation.wav",
+          "sha256": "8acb35ad90d96230b250aab59088dd322e0f0741cbade1059b723c2ff9d35abf",
+          "level": 0.81283052
+        }
+      ],
+      "musicPath": "public/audio/theme-ward.flac",
+      "musicSha256": "46e9fd33430a61b4a36645c45fcd88bbc616e57e4643cb2e61aaacc0b62cfc39",
+      "ambiencePath": "public/audio/ambience-ward.flac",
+      "ambienceSha256": "a3cb998a109b169e7da44fd4f6f1f9299b01a8fe477d04ec681a0bad425c75e6",
+      "versions": [
+        {
+          "version": "before",
+          "sourceFile": "/workspace/generated_audio/cinematic-phase5/act3_arrival-before.wav",
+          "sha256": "8bc81d2979ebfe42f9a694de6de21a280648377a3595d62e592058d276c0d4fa",
+          "durationSeconds": 7.500583333333333,
+          "lineStartSeconds": [
+            0.0,
+            1.56
+          ],
+          "voiceRmsWithoutGaps": 0.049205876886844635,
+          "bedRms": 0.004255098290741444,
+          "peak": 0.4074995219707489
+        },
+        {
+          "version": "directed",
+          "sourceFile": "/workspace/generated_audio/cinematic-phase5/act3_arrival-directed.wav",
+          "sha256": "a15662535bb04d140c4f159e509f14366909d85ad0ac2333292d32941e8ebe22",
+          "durationSeconds": 7.800583333333333,
+          "lineStartSeconds": [
+            0.0,
+            1.86
+          ],
+          "voiceRmsWithoutGaps": 0.049205876886844635,
+          "bedRms": 0.0016850263345986605,
+          "peak": 0.410147100687027
+        }
+      ],
+      "bedChangeDb": -8.046058077155658
+    }
+  ]
+}

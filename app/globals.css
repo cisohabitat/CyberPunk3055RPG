@@ -1716,3 +1716,7 @@ html[data-motion="reduce"] .location-entry, html[data-motion="reduce"] .portrait
 .technique-board th, .technique-board td { text-align: left; padding: .5rem; border: 1px solid var(--line); overflow-wrap: anywhere; }
 .technique-board dt { margin-top: .5rem; color: var(--muted); }
 .technique-board dd { margin-left: 0; overflow-wrap: anywhere; }
+
+.sequence-shots { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .65rem; }
+.sequence-shots button { min-height: 45px; min-width: 75px; }
+.sequence-shots button[aria-pressed="true"] { color: var(--cyan); border-color: var(--cyan); }

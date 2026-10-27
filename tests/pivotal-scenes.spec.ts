@@ -87,20 +87,21 @@ test("native pivotal playback preserves actor, words and voice level while focus
   const before = await saved(page);
   const targets = () => page.evaluate(() => (window as unknown as { bedTargets: number[] }).bedTargets);
   const review = (): Promise<AudioReview> => page.evaluate(() => (window as unknown as { audioReview: AudioReview }).audioReview);
-  await expect.poll(targets).toContain(0.6 * 0.55); await expect.poll(targets).toContain(0.5 * 0.75);
+  // Phase 5 confession focus: explicit new targets; departure must still restore normal.
+  await expect.poll(targets).toContain(0.6 * 0.38); await expect.poll(targets).toContain(0.5 * 0.55);
   await page.getByRole("button", { name: "Listen to Mara", exact: true }).click();
   const mark = page.getByTestId("spoken-quote"); await expect(mark).toHaveAttribute("data-speaker", "Mara");
   expect(words((await mark.textContent())!)).toEqual(words(line.text));
   expect((await review()).started).toContain(`${line.id}.mp3`);
   expect((await review()).voiceLevels.find(row => row.file === `${line.id}.mp3`)!.gain).toBeCloseTo(voiceLevel(line.id), 5);
-  expect(await targets()).toContain(0.6 * 0.22 * 0.55); expect(await targets()).toContain(0.5 * 0.44 * 0.75);
+  expect(await targets()).toContain(0.6 * 0.22 * 0.38); expect(await targets()).toContain(0.5 * 0.44 * 0.55);
   await page.getByRole("button", { name: "Stop line", exact: true }).click(); await expect(mark).toHaveCount(0);
   expect(await saved(page)).toBe(before);
   // Restarting a zeroed bus retains the pivotal mix and does not restart speech.
   await page.getByRole("button", { name: "Settings", exact: true }).click();
   await page.getByLabel("music volume", { exact: true }).focus(); await page.keyboard.press("Home"); await page.keyboard.press("End");
   await page.getByRole("button", { name: "Done", exact: true }).click();
-  await expect.poll(targets).toContain(0.55);
+  await expect.poll(targets).toContain(0.38);
   expect((await review()).started.filter(file => file.startsWith("voice-"))).toHaveLength(1);
   await page.evaluate(() => { (window as unknown as { bedTargets: number[] }).bedTargets = []; });
   await page.getByTestId("choice-inspect-hour").click(); await expect(page.getByTestId("pivotal-scene")).toHaveCount(0);

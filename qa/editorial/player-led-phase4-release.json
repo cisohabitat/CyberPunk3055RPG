@@ -1,0 +1,93 @@
+{
+  "phase": 4,
+  "commit": "655a5046dd588f0b124ce50d4bf6731e6785f237",
+  "verifiedAtUtc": "2026-10-27T02:40:18.013Z",
+  "ci": {
+    "run": 40435266192,
+    "url": "https://github.com/cisohabitat/CyberPunk3055RPG/actions/runs/40435266192",
+    "conclusion": "success",
+    "productionDecision": "build",
+    "requiredChecks": [
+      "Test",
+      "Browser (chromium)",
+      "Browser (phone)",
+      "Browser (firefox)",
+      "Browser (webkit)",
+      "Build"
+    ],
+    "sourceTestsPassed": 743,
+    "browserReports": {
+      "chromium": {
+        "jobId": 121963268123,
+        "fullSuitePassed": 758,
+        "captionPassed": 9,
+        "nativeMenuPermissionPassed": 2,
+        "retriesReported": false
+      },
+      "phone": {
+        "jobId": 121963268052,
+        "results": [
+          "2026-10-27T02:06:09.6459091Z   9 passed (34.1s)",
+          "2026-10-27T02:06:09.6480766Z ##[notice]  9 passed (34.1s)",
+          "2026-10-27T02:18:30.6619064Z   756 passed (12.3m)",
+          "  756 passed (12.3m)"
+        ]
+      },
+      "firefox": {
+        "jobId": 121963268065,
+        "results": [
+          "2026-10-27T01:59:43.1663239Z   9 passed (1.0m)",
+          "2026-10-27T01:59:43.1695684Z ##[notice]  9 passed (1.0m)",
+          "2026-10-27T02:23:33.0281581Z   2 skipped",
+          "2026-10-27T02:23:33.0282112Z   756 passed (23.8m)",
+          "2026-10-27T02:23:33.0293732Z ##[notice]  2 skipped",
+          "  756 passed (23.8m)"
+        ]
+      },
+      "webkit": {
+        "jobId": 121963268100,
+        "results": [
+          "2026-10-27T02:00:05.4673761Z   9 passed (1.2m)",
+          "2026-10-27T02:00:05.4697211Z ##[notice]  9 passed (1.2m)",
+          "2026-10-27T02:35:08.9174690Z   2 skipped",
+          "2026-10-27T02:35:08.9175349Z   756 passed (35.0m)",
+          "2026-10-27T02:35:08.9187652Z ##[notice]  2 skipped",
+          "  756 passed (35.0m)"
+        ]
+      }
+    }
+  },
+  "deployment": {
+    "id": "dpl_5dpYKuaEoCbpA2M1HHkUM46vEsuW",
+    "publicUrl": "https://cyberpunk3055rpg.vercel.app",
+    "state": "READY",
+    "branch": "main",
+    "exactPublicCommitVerified": true,
+    "publicAndMainAliasesVerified": true,
+    "aliases": [
+      "cyberpunk3055rpg.vercel.app",
+      "cyberpunk3055rpg-cfusion2k-7277s-projects.vercel.app",
+      "cyberpunk3055rpg-git-main-cfusion2k-7277s-projects.vercel.app"
+    ],
+    "retryRequired": false
+  },
+  "liveVerification": {
+    "featureChecksPassed": 17,
+    "voiceDeliveryHashesMatched": 9,
+    "artDeliveryHashesMatched": 3,
+    "viewportStateCaptures": 6,
+    "scriptErrors": 0,
+    "overflow": false,
+    "inspectionPreservedState": true
+  },
+  "evidence": {
+    "prepublication": "qa/editorial/player-led-phase4.json",
+    "guide": "docs/DISTINCT_BUILDS_PHASE4.md",
+    "publicTestLog": "/tmp/build-phase4-live-tests.log",
+    "publicDeliveries": "/tmp/build-phase4-public-deliveries.json",
+    "liveViews": "/tmp/build-phase4-live-views.json",
+    "rawChecks": "/tmp/build-phase4-check-runs.json"
+  },
+  "limitations": "Internal automated authored/directed routes and synthetic viewports; no human, physical-device, independent acting/listening acceptance or AAA grade claimed. Vercel build-event logs denied by connection scope (403); exact deployment readiness, public alias, live gameplay and delivered media were verified through available tools.",
+  "recording": "Separate post-publication evidence. Copy into a new editorial release record with the next phase; preserve the committed pre-publication snapshot and do not trigger CI with a status-only commit."
+}

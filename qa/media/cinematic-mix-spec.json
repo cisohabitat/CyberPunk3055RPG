@@ -1,0 +1,154 @@
+[
+  {
+    "sceneId": "memo",
+    "route": "allocation-dustline",
+    "musicPath": "public/audio/theme-reading.flac",
+    "ambiencePath": "public/audio/ambience-chapel.flac",
+    "beforeFocus": {
+      "music": 0.55,
+      "ambience": 0.75
+    },
+    "afterFocus": {
+      "music": 0.38,
+      "ambience": 0.55
+    },
+    "pauseBefore": {
+      "sameSpeakerMs": 120,
+      "changedSpeakerMs": 220
+    },
+    "pauseAfter": {
+      "sameSpeakerMs": 420,
+      "changedSpeakerMs": 620
+    },
+    "lines": [
+      {
+        "id": "voice-campaign-mara-revelation-performance",
+        "speaker": "Mara",
+        "text": "I signed the coolant dump. Ward Nine. Three hundred on the night shift. I want that sentence to stay in my mouth.",
+        "path": "public/audio/voice-campaign-mara-revelation-performance.mp3",
+        "sha256": "c862782aa863dea10d16fa4740542283d252475332366cba2be1efc931c3af58",
+        "level": 0.96827786
+      }
+    ]
+  },
+  {
+    "sceneId": "kerr",
+    "route": "allocation-dustline",
+    "musicPath": "public/audio/theme-chapel.flac",
+    "ambiencePath": "public/audio/ambience-chapel.flac",
+    "beforeFocus": {
+      "music": 1,
+      "ambience": 1
+    },
+    "afterFocus": {
+      "music": 0.5,
+      "ambience": 0.7
+    },
+    "pauseBefore": {
+      "sameSpeakerMs": 120,
+      "changedSpeakerMs": 220
+    },
+    "pauseAfter": {
+      "sameSpeakerMs": 180,
+      "changedSpeakerMs": 360
+    },
+    "lines": [
+      {
+        "id": "voice-campaign-kerr-3914d401fb83",
+        "speaker": "Kerr",
+        "text": "Put it down.",
+        "path": "public/audio/voice-campaign-kerr-3914d401fb83.mp3",
+        "sha256": "dedf3c7e841870c6d32a4ea7c0aee46f9a49888892ae43db621b2c8fb93208d6",
+        "level": 0.73113908
+      },
+      {
+        "id": "voice-kerr-kerr",
+        "speaker": "Kerr",
+        "text": "That glass is Mara's hour. Helion pays me so the Ward Nine memo stays in her head, not in your pocket.",
+        "path": "public/audio/voice-kerr-kerr.wav",
+        "sha256": "1f5a0e7cd2154c89a79b4fed3a5622ab04db107e6ae90a14394cb02b802d5e4a",
+        "level": 0.84430624
+      }
+    ]
+  },
+  {
+    "sceneId": "act2_witness_arrival",
+    "route": "balance-dustline-nerve-equipped",
+    "musicPath": "public/audio/theme-quiet.flac",
+    "ambiencePath": "public/audio/ambience-witness.flac",
+    "beforeFocus": {
+      "music": 0.55,
+      "ambience": 0.75
+    },
+    "afterFocus": {
+      "music": 0.32,
+      "ambience": 0.5
+    },
+    "pauseBefore": {
+      "sameSpeakerMs": 120,
+      "changedSpeakerMs": 220
+    },
+    "pauseAfter": {
+      "sameSpeakerMs": 380,
+      "changedSpeakerMs": 640
+    },
+    "lines": [
+      {
+        "id": "voice-campaign-nia-pell-c987f8a09159",
+        "speaker": "Nia Pell",
+        "text": "You got me here,",
+        "path": "public/audio/voice-campaign-nia-pell-c987f8a09159.mp3",
+        "sha256": "de1327f14fbdb4d5511b9fb329c6141a8c72c80de007b4c3d04cfc83db7b4c72",
+        "level": 0.68312472
+      },
+      {
+        "id": "voice-nia-arrival",
+        "speaker": "Nia Pell",
+        "text": "Now I want to hear the words before anyone uses them. No address. No photograph. If I stop, you stop.",
+        "path": "public/audio/voice-nia-arrival.wav",
+        "sha256": "d491be8168f0903643430831328c9846014804e509e743b8905703a705ecd772",
+        "level": 0.61517687
+      }
+    ]
+  },
+  {
+    "sceneId": "act3_arrival",
+    "route": "allocation-dustline",
+    "musicPath": "public/audio/theme-ward.flac",
+    "ambiencePath": "public/audio/ambience-ward.flac",
+    "beforeFocus": {
+      "music": 1,
+      "ambience": 1
+    },
+    "afterFocus": {
+      "music": 0.4,
+      "ambience": 0.4
+    },
+    "pauseBefore": {
+      "sameSpeakerMs": 120,
+      "changedSpeakerMs": 220
+    },
+    "pauseAfter": {
+      "sameSpeakerMs": 420,
+      "changedSpeakerMs": 680
+    },
+    "lines": [
+      {
+        "id": "voice-campaign-sera-1031969a7935",
+        "speaker": "Sera",
+        "text": "If you know any of them,",
+        "path": "public/audio/voice-campaign-sera-1031969a7935.mp3",
+        "sha256": "885228941d905cf23bb9c4a85b53438ad267dd69303b97cf9d7e9812827d40b3",
+        "level": 0.58884366
+      },
+      {
+        "id": "voice-sera-wall-invitation",
+        "speaker": "Sera",
+        "text": "say them. If you sold them, you can still say them. The wall does not check your receipt.",
+        "path": "public/audio/voice-sera-wall-invitation.wav",
+        "sha256": "8acb35ad90d96230b250aab59088dd322e0f0741cbade1059b723c2ff9d35abf",
+        "level": 0.81283052
+      }
+    ]
+  }
+]

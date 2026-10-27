@@ -1,0 +1,280 @@
+{
+  "phase": 5,
+  "baseline": {
+    "commit": "655a5046dd588f0b124ce50d4bf6731e6785f237",
+    "routes": {
+      "count": 164,
+      "sha256": "818151b63bbfcc7dde2a44b6cdf6ef85ce406fdd7d257c8cff1262ce8a93fa82"
+    },
+    "sequenceScript": {
+      "visits": 1871,
+      "sha256": "f99212c0159d623936c4cdf8d8e14ffd76b75f60c5f2afeaee0de6f5943587b5"
+    },
+    "precedingAudio": {
+      "count": 395,
+      "sha256": "0f77d8209599acd70434680ebad670f86c9ce5720cecb26ed0cecfad2a6bc149"
+    },
+    "precedingArt": {
+      "count": 324,
+      "sha256": "fc4803175f211f4954f87cffb18553fab5cc0f2eba7ce7eca6e86af13403f50a"
+    },
+    "examples": [
+      {
+        "sceneId": "memo",
+        "route": "allocation-dustline",
+        "choiceId": "heard",
+        "defaultArt": "/art/mara-revelation.jpg"
+      },
+      {
+        "sceneId": "mara_why",
+        "route": "allocation-dustline",
+        "choiceId": "inspect-hour",
+        "defaultArt": "/art/mara-revelation.jpg"
+      },
+      {
+        "sceneId": "kerr",
+        "route": "allocation-dustline",
+        "choiceId": "talk-leave",
+        "defaultArt": "/art/memory-apparatus.jpg"
+      },
+      {
+        "sceneId": "after_kerr",
+        "route": "allocation-dustline",
+        "choiceId": "both",
+        "defaultArt": "/art/chapel-entry.jpg"
+      },
+      {
+        "sceneId": "act3_neighborhood",
+        "route": "allocation-dustline",
+        "choiceId": "visit-records",
+        "defaultArt": "/art/memorial-stair.jpg"
+      },
+      {
+        "sceneId": "ward_wall",
+        "route": "allocation-dustline",
+        "choiceId": "visit-asa",
+        "defaultArt": "/art/memorial-stair.jpg"
+      },
+      {
+        "sceneId": "act3_arrival",
+        "route": "allocation-dustline",
+        "choiceId": "prepare-public-account",
+        "defaultArt": "/art/memorial-stair.jpg"
+      },
+      {
+        "sceneId": "act2_witness_brief",
+        "route": "balance-dustline-nerve-equipped",
+        "choiceId": "agree-terms",
+        "defaultArt": "/art/nia-transfer.jpg"
+      },
+      {
+        "sceneId": "act2_witness_plan",
+        "route": "balance-dustline-nerve-equipped",
+        "choiceId": "steady-chair",
+        "defaultArt": "/art/canal-dispatch.jpg"
+      },
+      {
+        "sceneId": "act2_witness_door",
+        "route": "balance-dustline-nerve-equipped",
+        "choiceId": "compare-witness-support",
+        "defaultArt": "/art/clinic-relay.jpg"
+      },
+      {
+        "sceneId": "act2_witness_support",
+        "route": "balance-dustline-nerve-equipped",
+        "choiceId": "harness-chair-transfer",
+        "defaultArt": "/art/nia-transfer.jpg"
+      },
+      {
+        "sceneId": "act2_witness_arrival",
+        "route": "balance-dustline-nerve-equipped",
+        "choiceId": "defer-account",
+        "defaultArt": "/art/nia-arrival.jpg"
+      },
+      {
+        "sceneId": "act2_witness_safe",
+        "route": "balance-dustline-nerve-equipped",
+        "choiceId": "file-account",
+        "defaultArt": "/art/nia-arrival.jpg"
+      },
+      {
+        "sceneId": "act3_district_return",
+        "route": "district-breach-denied",
+        "choiceId": "district-record-return",
+        "defaultArt": "/art/archive-held-original.jpg"
+      },
+      {
+        "sceneId": "act2_witness_repair",
+        "route": "finale-listed-interrupted",
+        "choiceId": "clinic-second-room",
+        "defaultArt": "/art/clinic-relay.jpg"
+      },
+      {
+        "sceneId": "kerr_fight",
+        "route": "allocation-dustline",
+        "checkpointSceneId": "kerr",
+        "choiceId": "talk-leave",
+        "forceChoiceId": "talk-leave",
+        "forceRoll": 1,
+        "defaultArt": "/art/memory-apparatus.jpg",
+        "textSha256": "f1b22a3670151be60ff29d9caf0ecb7511ce07ed60f36659437f81b16f91ed0b",
+        "dialogue": []
+      }
+    ],
+    "reproducibleAudio": [
+      {
+        "path": "public/audio/theme-chapel.wav",
+        "sha256": "e61bbe51c7e299bff5c1e36acf181e2bc105c36057e9ca412c999742dd303624"
+      },
+      {
+        "path": "public/audio/theme-week.wav",
+        "sha256": "43b3a672d030bb77262f1d353dd97c445800c17e7bf0baee32001fc23b9920c2"
+      },
+      {
+        "path": "public/audio/theme-ward.wav",
+        "sha256": "501d4394d2aa640450487c9ec135b53d0ea37461323f264fda3dc5d47da21f87"
+      },
+      {
+        "path": "public/audio/sting-memory.wav",
+        "sha256": "ff72bbac0ffda29200b19b6667b194bce98df354231174f4a2cdb0d520c0ded9"
+      }
+    ]
+  },
+  "artAssets": [
+    {
+      "id": "recorded-hour-detail",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-27",
+      "sourceFile": "/workspace/generated_images/exec-df654f18-2760-4e8e-a2cc-021740740712.png",
+      "sourceSha256": "ea0b432b84c942cbfd3ea7a5ca9e093fb57d127765e250a44f36be2d167ff7dc",
+      "promptSummary": "Optional cinematic detail, original amber/blue noir. No people, readable private identity, authentication, agreement or successful outcome. Subject: recorded-hour-detail",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/recorded-hour-detail.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 287087,
+          "sha256": "729571c4e5cced781bb43e30e56bfc8fe0164d75c656cd3987c4359bc76da191"
+        },
+        {
+          "path": "public/art/recorded-hour-detail-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 82440,
+          "sha256": "68546cc2422af261af2189d066497768ca0d50c8be39bcf5f573d8e3197d1a64"
+        },
+        {
+          "path": "public/art/previews/recorded-hour-detail.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 2557,
+          "sha256": "0bcde867b584ea7b61e7696fdbf7b102a5a28ca29f4ee078339e0bb5cbf0f75d"
+        }
+      ]
+    },
+    {
+      "id": "chapel-threshold-detail",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-27",
+      "sourceFile": "/workspace/generated_images/exec-af4e932e-11a7-4185-86e5-6f53179ce8a2.png",
+      "sourceSha256": "574d5422a6985e8333b558277f7d9c76d62c35f6d952b7b3f17939338043a619",
+      "promptSummary": "Optional cinematic detail, original amber/blue noir. No people, readable private identity, authentication, agreement or successful outcome. Subject: chapel-threshold-detail",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/chapel-threshold-detail.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 323057,
+          "sha256": "0398f6800cbc0992f8f275f8c17e0da47b02dffe24fde4e2083ac934b7ec82ca"
+        },
+        {
+          "path": "public/art/chapel-threshold-detail-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 81368,
+          "sha256": "2803b0e0b5f417776e86c01ff57d1a1400b8c4c9b9ea036f5403aa5ef1a680b2"
+        },
+        {
+          "path": "public/art/previews/chapel-threshold-detail.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 2007,
+          "sha256": "4107217af4a2ecf3a17d03384bcf54869d466dfba8bf1228661cff1fe09704e3"
+        }
+      ]
+    },
+    {
+      "id": "witness-choice-detail",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-27",
+      "sourceFile": "/workspace/generated_images/exec-2cac428b-65aa-468a-8518-7765d6a1d221.png",
+      "sourceSha256": "b340509c32e58a231c0332cc7771e73c3b50ad28797e62a47b79669ba4de28e8",
+      "promptSummary": "Optional cinematic detail, original amber/blue noir. No people, readable private identity, authentication, agreement or successful outcome. Subject: witness-choice-detail",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/witness-choice-detail.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 335658,
+          "sha256": "058519b1c95690e2aae9631a469c2b8e79d805475b2b091001c875d4c0f8bb1d"
+        },
+        {
+          "path": "public/art/witness-choice-detail-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 89420,
+          "sha256": "7a604a8742607b2c6e2e7ce4e84e67d05d2d953d5be73c8e177503db766877fe"
+        },
+        {
+          "path": "public/art/previews/witness-choice-detail.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 2405,
+          "sha256": "33f755a86b4cfc723c5426941a7212864db8f95b1fe4a17c0992525e8fcdb690"
+        }
+      ]
+    },
+    {
+      "id": "memorial-pause-detail",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-27",
+      "sourceFile": "/workspace/generated_images/exec-1f1c1282-37d9-43a2-94f3-026af0fab1e0.png",
+      "sourceSha256": "c13527c6854bac4cb98dd582f22caafed142694ae46cc5265f969cddc311e488",
+      "promptSummary": "Optional neutral memorial detail: pencil, rain and bare stone. No folio state, legible names, people, new inscription, public decision or outcome implied.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/memorial-pause-detail.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 382233,
+          "sha256": "ded3e1c18e8d1aadf803088780a7cc138c55ff250a75f20469f5571946d1e1a5"
+        },
+        {
+          "path": "public/art/memorial-pause-detail-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 93786,
+          "sha256": "c4043a47c466c2a3b7eb29e6870dc5711c3950d24fda152c1f68372e72df407e"
+        },
+        {
+          "path": "public/art/previews/memorial-pause-detail.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 2006,
+          "sha256": "5bf72b2afa10c3c339c7b5358f2a9265f8b06133366d64c448e8300449601558"
+        }
+      ],
+      "continuityCorrection": {
+        "previousSourceFile": "/workspace/generated_images/exec-4739a4b6-bacf-4535-99b3-ea974b843adf.png",
+        "previousSourceSha256": "4923665c362e157f328945edf047c1e5a5a6e20f628e1f4b2f615daf080756dc",
+        "reason": "Pre-publication review removed a closed folio to avoid contradicting an actually open folio or implying a later outcome. Both generated originals retained."
+      }
+    }
+  ],
+  "voicePolicy": "Existing cast, words, recordings and bindings preserved. Directed inter-line pauses only after natural completion; no first-line delay, automatic reading, playback speed or gain increase. Stop and cancellation consume pending starts.",
+  "limitations": "Internal directed AI/browser and technical mix comparison, not human acting or independent listening acceptance."
+}

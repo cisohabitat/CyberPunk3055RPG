@@ -61,3 +61,5 @@ The [20 October campaign/media review](CAMPAIGN_MEDIA_REVIEW_2026_10_20.md) impr
 The [four-area polish review](FOUR_AREA_POLISH.md) records build-choice comparisons, earned character history, ending commitments and mobile dialog behavior.
 
 The [distinct-build filing bench](DISTINCT_BUILDS_PHASE4.md) connects earned training and matching equipment to different technical, routing, voluntary filing and handling/recovery decisions, with persistent costs, matching art and voiced Dispatcher replies. Review intake remains separate from source truth and permission.
+
+[Phase 5 cinematic direction](CINEMATIC_DIRECTION_PHASE5.md) gives four major story sequences optional detail paintings, deliberate dialogue spacing and quieter beds while preserving original words, actual actors and earned outcomes.

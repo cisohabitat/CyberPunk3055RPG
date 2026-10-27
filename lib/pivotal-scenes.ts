@@ -11,10 +11,14 @@ export function pivotalScene(sceneId: string): (typeof PIVOTAL_SCENES)[string] |
   return Object.hasOwn(PIVOTAL_SCENES, sceneId) ? PIVOTAL_SCENES[sceneId] : undefined;
 }
 
-export type BedFocus = "normal" | "intimate" | "closing";
+export type BedFocus = "normal" | "intimate" | "closing" | "confession" | "confrontation" | "witness" | "return";
 /** Multiplies the player's existing sliders and speech ducking, never the voice. */
 export const BED_FOCUS = {
   normal: { music: 1, ambience: 1 },
+  confession: { music: 0.38, ambience: 0.55 },
+  confrontation: { music: 0.5, ambience: 0.7 },
+  witness: { music: 0.32, ambience: 0.5 },
+  return: { music: 0.4, ambience: 0.4 },
   intimate: { music: 0.55, ambience: 0.75 },
   closing: { music: 0.65, ambience: 0.55 },
 } as const;

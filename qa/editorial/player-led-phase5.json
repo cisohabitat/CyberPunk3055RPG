@@ -1,0 +1,656 @@
+{
+  "phase": 5,
+  "baseline": "655a5046dd588f0b124ce50d4bf6731e6785f237",
+  "recordedAtUtc": "2026-10-27T04:43:44.760161+00:00",
+  "scope": "Sixteen existing sequence stages, four optional neutral detail paintings, actor-aware cancellable pauses and quieter beds; existing script, actors, recordings and outcomes unchanged.",
+  "local": {
+    "sourceTestsPassed": 753,
+    "typescript": true,
+    "productionBuild": true,
+    "securityAudit": "zero known vulnerabilities",
+    "balanceAudits": "all existing audit/mission/economy/overlap checks passed",
+    "productionBudgetViolations": 0,
+    "focusedUniqueBrowserChecksVerified": 54,
+    "initialFocusedRun": {
+      "passed": 53,
+      "failed": 1,
+      "reason": "Exact previous confession mix expectation; intentionally changed level, not weakened tolerance."
+    },
+    "finalFollowupPassed": 9,
+    "voicePlaybackRows": 7,
+    "voiceErrors": [],
+    "voiceFailures": [],
+    "offlineAbComparisons": 8,
+    "normalizedTranscriptMatches": 8,
+    "initialTransferBudgetBytes": 2097152,
+    "maximumMeasuredInitialTransferBytes": 1637757
+  },
+  "compatibility": {
+    "completeRoutesPreserved": 164,
+    "sequenceVisitsPreserved": 1871,
+    "baselineContracts": {
+      "commit": "655a5046dd588f0b124ce50d4bf6731e6785f237",
+      "routes": {
+        "count": 164,
+        "sha256": "818151b63bbfcc7dde2a44b6cdf6ef85ce406fdd7d257c8cff1262ce8a93fa82"
+      },
+      "sequenceScript": {
+        "visits": 1871,
+        "sha256": "f99212c0159d623936c4cdf8d8e14ffd76b75f60c5f2afeaee0de6f5943587b5"
+      },
+      "precedingAudio": {
+        "count": 395,
+        "sha256": "0f77d8209599acd70434680ebad670f86c9ce5720cecb26ed0cecfad2a6bc149"
+      },
+      "precedingArt": {
+        "count": 324,
+        "sha256": "fc4803175f211f4954f87cffb18553fab5cc0f2eba7ce7eca6e86af13403f50a"
+      },
+      "examples": [
+        {
+          "sceneId": "memo",
+          "route": "allocation-dustline",
+          "choiceId": "heard",
+          "defaultArt": "/art/mara-revelation.jpg"
+        },
+        {
+          "sceneId": "mara_why",
+          "route": "allocation-dustline",
+          "choiceId": "inspect-hour",
+          "defaultArt": "/art/mara-revelation.jpg"
+        },
+        {
+          "sceneId": "kerr",
+          "route": "allocation-dustline",
+          "choiceId": "talk-leave",
+          "defaultArt": "/art/memory-apparatus.jpg"
+        },
+        {
+          "sceneId": "after_kerr",
+          "route": "allocation-dustline",
+          "choiceId": "both",
+          "defaultArt": "/art/chapel-entry.jpg"
+        },
+        {
+          "sceneId": "act3_neighborhood",
+          "route": "allocation-dustline",
+          "choiceId": "visit-records",
+          "defaultArt": "/art/memorial-stair.jpg"
+        },
+        {
+          "sceneId": "ward_wall",
+          "route": "allocation-dustline",
+          "choiceId": "visit-asa",
+          "defaultArt": "/art/memorial-stair.jpg"
+        },
+        {
+          "sceneId": "act3_arrival",
+          "route": "allocation-dustline",
+          "choiceId": "prepare-public-account",
+          "defaultArt": "/art/memorial-stair.jpg"
+        },
+        {
+          "sceneId": "act2_witness_brief",
+          "route": "balance-dustline-nerve-equipped",
+          "choiceId": "agree-terms",
+          "defaultArt": "/art/nia-transfer.jpg"
+        },
+        {
+          "sceneId": "act2_witness_plan",
+          "route": "balance-dustline-nerve-equipped",
+          "choiceId": "steady-chair",
+          "defaultArt": "/art/canal-dispatch.jpg"
+        },
+        {
+          "sceneId": "act2_witness_door",
+          "route": "balance-dustline-nerve-equipped",
+          "choiceId": "compare-witness-support",
+          "defaultArt": "/art/clinic-relay.jpg"
+        },
+        {
+          "sceneId": "act2_witness_support",
+          "route": "balance-dustline-nerve-equipped",
+          "choiceId": "harness-chair-transfer",
+          "defaultArt": "/art/nia-transfer.jpg"
+        },
+        {
+          "sceneId": "act2_witness_arrival",
+          "route": "balance-dustline-nerve-equipped",
+          "choiceId": "defer-account",
+          "defaultArt": "/art/nia-arrival.jpg"
+        },
+        {
+          "sceneId": "act2_witness_safe",
+          "route": "balance-dustline-nerve-equipped",
+          "choiceId": "file-account",
+          "defaultArt": "/art/nia-arrival.jpg"
+        },
+        {
+          "sceneId": "act3_district_return",
+          "route": "district-breach-denied",
+          "choiceId": "district-record-return",
+          "defaultArt": "/art/archive-held-original.jpg"
+        },
+        {
+          "sceneId": "act2_witness_repair",
+          "route": "finale-listed-interrupted",
+          "choiceId": "clinic-second-room",
+          "defaultArt": "/art/clinic-relay.jpg"
+        },
+        {
+          "sceneId": "kerr_fight",
+          "route": "allocation-dustline",
+          "checkpointSceneId": "kerr",
+          "choiceId": "talk-leave",
+          "forceChoiceId": "talk-leave",
+          "forceRoll": 1,
+          "defaultArt": "/art/memory-apparatus.jpg",
+          "textSha256": "f1b22a3670151be60ff29d9caf0ecb7511ce07ed60f36659437f81b16f91ed0b",
+          "dialogue": []
+        }
+      ],
+      "reproducibleAudio": [
+        {
+          "path": "public/audio/theme-chapel.wav",
+          "sha256": "e61bbe51c7e299bff5c1e36acf181e2bc105c36057e9ca412c999742dd303624"
+        },
+        {
+          "path": "public/audio/theme-week.wav",
+          "sha256": "43b3a672d030bb77262f1d353dd97c445800c17e7bf0baee32001fc23b9920c2"
+        },
+        {
+          "path": "public/audio/theme-ward.wav",
+          "sha256": "501d4394d2aa640450487c9ec135b53d0ea37461323f264fda3dc5d47da21f87"
+        },
+        {
+          "path": "public/audio/sting-memory.wav",
+          "sha256": "ff72bbac0ffda29200b19b6667b194bce98df354231174f4a2cdb0d520c0ded9"
+        }
+      ]
+    }
+  },
+  "campaigns": [
+    {
+      "route": "qa/routes/witness-permission.json",
+      "width": 390,
+      "artwork": "full",
+      "reading": "all",
+      "sound": true,
+      "visits": 61,
+      "tabs": 457,
+      "reloads": 12,
+      "voices": 33,
+      "completedVoices": [
+        "voice-campaign-stallholder-186ef0bc3f48.mp3",
+        "voice-campaign-stallholder-6cf1cf693aa4.mp3",
+        "voice-quill-offer.wav",
+        "voice-quill-pay.wav",
+        "voice-quill-pay-yes.wav",
+        "voice-campaign-quill-e467cd6ce1d3.mp3",
+        "voice-quill-route.wav",
+        "voice-lumen-lumen.wav",
+        "voice-campaign-multiline-lumen-deal-1.mp3",
+        "voice-campaign-sister-lumen-42a4c77e877a.mp3",
+        "voice-campaign-mara-revelation-performance.mp3",
+        "voice-campaign-mara-why-performance.mp3",
+        "voice-lumen-publication.wav",
+        "voice-kerr-kerr.wav",
+        "voice-edda-service-key.wav",
+        "voice-campaign-sister-lumen-a1abd898aca3.mp3",
+        "voice-lumen-act2-lumen.wav",
+        "voice-campaign-ren-849965fb2829.mp3",
+        "voice-campaign-nia-terms-performance.mp3",
+        "voice-campaign-nia-pell-28180cc2b39c.mp3",
+        "voice-nia-arrival.wav",
+        "voice-nia-arrival.wav",
+        "voice-campaign-nia-pell-d8b7b7d16f6e.mp3",
+        "voice-campaign-sera-3acd9a434593.mp3",
+        "voice-nia-room-ownership.wav",
+        "voice-sera-third-row.wav",
+        "voice-sera-wall-invitation.wav",
+        "voice-sera-hearing-purpose.wav",
+        "voice-campaign-sera-ab673ed27369.mp3",
+        "voice-nia-public-terms.wav",
+        "voice-campaign-ives-hearing-challenge-performance.mp3",
+        "voice-campaign-sera-c70735dc83fd.mp3",
+        "voice-campaign-sera-names-performance.mp3"
+      ],
+      "interruptions": 2,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 390,
+        "strain": 2,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "errors": [],
+      "failedMedia": [],
+      "testedSources": {
+        "lib/cinematic-sequences.ts": "db6fd5c5e2f091d672776be88a85dd3b2328ab37ea1bf290df1699622297ea06",
+        "components/SequenceArtwork.tsx": "b3d86597102e0208402be4f35bbb59877fad8f1e22192279c1ea0f33fb872fcc",
+        "components/PivotalScene.tsx": "e56d1f73eb5538563e3447689ec762fc255841434bdd4b41f8544e9445a05e19",
+        "qa/media/cinematic-sequences.json": "32a9b06d984101d5e349c0b35cee40a2894c5942bf195b1be6b5f9594fba689d",
+        "lib/build-techniques.ts": "663a38618172c28bf7546c455de1da1ad15cbf1a4dd51973d88f971d8ab1923d",
+        "lib/story/build-techniques.ts": "96c22a876beef9be96da9dd91d67d7eb21bd2ca8584ad7bc380e9fab2b7ded71",
+        "lib/technique-dialogue.ts": "a99785fd05a7091409a1152a8af1c3b235f297da4c7c599873bdf4d1b8fa3dda",
+        "components/TechniqueBoard.tsx": "e53a754ca151ce24ec8f0f8a6c4c4967eca41be76477a188d07da39687dee8cd",
+        "qa/media/technique-dialogue-bindings.json": "ea4bb0ebadd57641019478237a33ddb5655205f2632dd3bb822e7cfc58d25504",
+        "qa/media/technique-dialogue-lines.json": "3ba5f8c12b0fe81645ac3494dc74189eb8011dbb7a95f5d9efa68051412a1301",
+        "qa/media/technique-dialogue-provenance.json": "ad7bcf50bdff909b8630a7d85f3bb33a22a370c04d5653472426020df46490da",
+        "lib/sound.ts": "718bbce2e4aec9a3c259bcc3fe8a041f039d254883467588d767f64821a9a503",
+        "components/GameApp.tsx": "b0f0d87b9ec3c0573e0ee74113fa9f205f1ad9b34a2df00ffde62e37c7daeb41",
+        "components/CreateScreen.tsx": "1af5df73d6ed31c711dd5b91489175be3b7f43f2e6f1b51003eb36635bf601ec",
+        "lib/runner-names.ts": "5885d74f8df3117dc3aef392cfb2619c7e96280afd1624a951f21a0a33c13b52",
+        "components/PlayScreen.tsx": "51e3b3d08705a2398e2c4cd2113f01c1f93635cdc921682092b7995ca4e26b15",
+        "components/Portrait.tsx": "4db7f4644609102c4205292530a4330b3a19a0d735ea55993daf1bc1fc108e1b",
+        "app/globals.css": "a7328582b9400128eb5b4928c672ff8d3f50ecd2900f6cb1ec2a3cedc26fe940",
+        "components/ArchiveCatalog.tsx": "c489bb15b4510ed3a7d6a318c441a65249926f69f69b5acfbc000c18bf0e0cbb",
+        "components/FinaleReflection.tsx": "47228900e1d1e4609a859ff7666d9955c017d61a60f7959a07b7cdf76d663ad2",
+        "lib/pivotal-scenes.ts": "9be025d6e9a22d5c0c9f2d708c1d2d7775fc7e1730e4ea4860fdae2d7338951b",
+        "lib/finale-direction.ts": "f60daea1f12d7972071e55932f19b5418c19f29d3bb1ee591427f3321e1f5572",
+        "lib/investigation-scenes.ts": "df38b381a3765c2568f10045a9257c734bd12218158857f3a5b18e9fbc82ead6",
+        "lib/scene-cues.ts": "9054e08dc32af298af5f6c324924051ade4614997a533840de9ca6d483dce724",
+        "lib/art.ts": "86998500b818cf78025201c14ef905b820363ef9f5b6b3cd6a20dada5caae6df",
+        "lib/district-response.ts": "6e0714691c46081421079e48f0b9a6bc5a2c8865ae22e4b882d8c64e724fdc83",
+        "lib/district-dialogue.ts": "dfcb32b38b9c2888a1c2d09a61c6a0ed1f9727cae3747fb718f80b6c3858caf2",
+        "lib/story/district-response.ts": "c8ee3f48ac3ef94be702a0c8ee330b58a2ea4ce063e913dbbc4fcb0e324f5667",
+        "components/DistrictLedger.tsx": "e70773dea80dcfb64729c69a3d573f86c0c2e8e9f0b35d0328b285a4f185e700",
+        "qa/media/district-dialogue-bindings.json": "ba071555c4fb38294f2f98bb05de94fbd8529396b9ba6a15f67f4ee13be2428c",
+        "lib/archive-catalog.ts": "c7d571fc525d3a2b3c44922411b178a5c67f67348700b177192245e6c820a328",
+        "components/VoiceLine.tsx": "a5b44e12bf6715e0980c54790c1f1d6ac12bf9cd31401948b6d98867342cd25c",
+        "components/Sheet.tsx": "17671bbf6af7470d1324158c7f03818494bff853a32ddc1329c050c137b944fb",
+        "components/CastCard.tsx": "c75a55c2a334923ddc2f3da78f664e778e978d565df225dea627602a25a81eec",
+        "lib/character-profiles.ts": "7c8a626407dcd95f7f61f4185cb1b01abd20d72253a24fac95c84d196ba1b0a7",
+        "qa/production/keyboard.ts": "14ed92fbfbcd5125fb49d5578131aa337b7ea14a4f64e749c7e6596b1a51954f",
+        "scripts/player-experience.ts": "a05c8df8d368b070b2374dd0fc913a8c792f91bc3f7e07b71fe0403af5563af7",
+        "qa/routes/witness-permission.json": "b2da3e01d87f4caf2d8d359dca0ef3a40b38e0709fc0dcd874230e8f22e5e5c9"
+      }
+    },
+    {
+      "route": "qa/routes/integration-quiet.json",
+      "width": 1440,
+      "artwork": "full",
+      "reading": "all",
+      "sound": false,
+      "visits": 81,
+      "tabs": 503,
+      "reloads": 32,
+      "voices": 0,
+      "completedVoices": [],
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 375,
+        "strain": 4,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "errors": [],
+      "failedMedia": [],
+      "testedSources": {
+        "lib/cinematic-sequences.ts": "db6fd5c5e2f091d672776be88a85dd3b2328ab37ea1bf290df1699622297ea06",
+        "components/SequenceArtwork.tsx": "b3d86597102e0208402be4f35bbb59877fad8f1e22192279c1ea0f33fb872fcc",
+        "components/PivotalScene.tsx": "e56d1f73eb5538563e3447689ec762fc255841434bdd4b41f8544e9445a05e19",
+        "qa/media/cinematic-sequences.json": "32a9b06d984101d5e349c0b35cee40a2894c5942bf195b1be6b5f9594fba689d",
+        "lib/build-techniques.ts": "663a38618172c28bf7546c455de1da1ad15cbf1a4dd51973d88f971d8ab1923d",
+        "lib/story/build-techniques.ts": "96c22a876beef9be96da9dd91d67d7eb21bd2ca8584ad7bc380e9fab2b7ded71",
+        "lib/technique-dialogue.ts": "a99785fd05a7091409a1152a8af1c3b235f297da4c7c599873bdf4d1b8fa3dda",
+        "components/TechniqueBoard.tsx": "e53a754ca151ce24ec8f0f8a6c4c4967eca41be76477a188d07da39687dee8cd",
+        "qa/media/technique-dialogue-bindings.json": "ea4bb0ebadd57641019478237a33ddb5655205f2632dd3bb822e7cfc58d25504",
+        "qa/media/technique-dialogue-lines.json": "3ba5f8c12b0fe81645ac3494dc74189eb8011dbb7a95f5d9efa68051412a1301",
+        "qa/media/technique-dialogue-provenance.json": "ad7bcf50bdff909b8630a7d85f3bb33a22a370c04d5653472426020df46490da",
+        "lib/sound.ts": "718bbce2e4aec9a3c259bcc3fe8a041f039d254883467588d767f64821a9a503",
+        "components/GameApp.tsx": "b0f0d87b9ec3c0573e0ee74113fa9f205f1ad9b34a2df00ffde62e37c7daeb41",
+        "components/CreateScreen.tsx": "1af5df73d6ed31c711dd5b91489175be3b7f43f2e6f1b51003eb36635bf601ec",
+        "lib/runner-names.ts": "5885d74f8df3117dc3aef392cfb2619c7e96280afd1624a951f21a0a33c13b52",
+        "components/PlayScreen.tsx": "51e3b3d08705a2398e2c4cd2113f01c1f93635cdc921682092b7995ca4e26b15",
+        "components/Portrait.tsx": "4db7f4644609102c4205292530a4330b3a19a0d735ea55993daf1bc1fc108e1b",
+        "app/globals.css": "a7328582b9400128eb5b4928c672ff8d3f50ecd2900f6cb1ec2a3cedc26fe940",
+        "components/ArchiveCatalog.tsx": "c489bb15b4510ed3a7d6a318c441a65249926f69f69b5acfbc000c18bf0e0cbb",
+        "components/FinaleReflection.tsx": "47228900e1d1e4609a859ff7666d9955c017d61a60f7959a07b7cdf76d663ad2",
+        "lib/pivotal-scenes.ts": "9be025d6e9a22d5c0c9f2d708c1d2d7775fc7e1730e4ea4860fdae2d7338951b",
+        "lib/finale-direction.ts": "f60daea1f12d7972071e55932f19b5418c19f29d3bb1ee591427f3321e1f5572",
+        "lib/investigation-scenes.ts": "df38b381a3765c2568f10045a9257c734bd12218158857f3a5b18e9fbc82ead6",
+        "lib/scene-cues.ts": "9054e08dc32af298af5f6c324924051ade4614997a533840de9ca6d483dce724",
+        "lib/art.ts": "86998500b818cf78025201c14ef905b820363ef9f5b6b3cd6a20dada5caae6df",
+        "lib/district-response.ts": "6e0714691c46081421079e48f0b9a6bc5a2c8865ae22e4b882d8c64e724fdc83",
+        "lib/district-dialogue.ts": "dfcb32b38b9c2888a1c2d09a61c6a0ed1f9727cae3747fb718f80b6c3858caf2",
+        "lib/story/district-response.ts": "c8ee3f48ac3ef94be702a0c8ee330b58a2ea4ce063e913dbbc4fcb0e324f5667",
+        "components/DistrictLedger.tsx": "e70773dea80dcfb64729c69a3d573f86c0c2e8e9f0b35d0328b285a4f185e700",
+        "qa/media/district-dialogue-bindings.json": "ba071555c4fb38294f2f98bb05de94fbd8529396b9ba6a15f67f4ee13be2428c",
+        "lib/archive-catalog.ts": "c7d571fc525d3a2b3c44922411b178a5c67f67348700b177192245e6c820a328",
+        "components/VoiceLine.tsx": "a5b44e12bf6715e0980c54790c1f1d6ac12bf9cd31401948b6d98867342cd25c",
+        "components/Sheet.tsx": "17671bbf6af7470d1324158c7f03818494bff853a32ddc1329c050c137b944fb",
+        "components/CastCard.tsx": "c75a55c2a334923ddc2f3da78f664e778e978d565df225dea627602a25a81eec",
+        "lib/character-profiles.ts": "7c8a626407dcd95f7f61f4185cb1b01abd20d72253a24fac95c84d196ba1b0a7",
+        "qa/production/keyboard.ts": "14ed92fbfbcd5125fb49d5578131aa337b7ea14a4f64e749c7e6596b1a51954f",
+        "scripts/player-experience.ts": "a05c8df8d368b070b2374dd0fc913a8c792f91bc3f7e07b71fe0403af5563af7",
+        "qa/routes/integration-quiet.json": "89d4e7a21f8b987154f4609b67c7aa3f198fe5429c619cf0d61c9f746a723ea8"
+      }
+    }
+  ],
+  "campaignScope": "Complete UI campaigns preceded final recorder/pencil caption and memorial-image continuity corrections. Those changes affect captions/optional art only; final nine browser follow-up checks and six final captures verify corrected media, timing, mix and state isolation. All canonical route/script/audio/state hashes remain unchanged.",
+  "voicePlayback": {
+    "revision": "655a5046dd588f0b124ce50d4bf6731e6785f237",
+    "dirty": true,
+    "testedSources": {
+      "lib/cinematic-sequences.ts": "db6fd5c5e2f091d672776be88a85dd3b2328ab37ea1bf290df1699622297ea06",
+      "components/SequenceArtwork.tsx": "b3d86597102e0208402be4f35bbb59877fad8f1e22192279c1ea0f33fb872fcc",
+      "components/PivotalScene.tsx": "e56d1f73eb5538563e3447689ec762fc255841434bdd4b41f8544e9445a05e19",
+      "qa/media/cinematic-sequences.json": "32a9b06d984101d5e349c0b35cee40a2894c5942bf195b1be6b5f9594fba689d",
+      "lib/preferences.ts": "0af296a4e993f276e51c434433d4cf426122ff8a32379c8aac30880e53bd870a",
+      "next.config.ts": "43db2a4f5b422255c9d897779239edd4ee9d986b817cf4fddc4b5e972705e252",
+      "qa/media/bed-delivery.json": "b7403a15d66d03712001c417433fae254b236eb5f4b7fb512eefba04a1e31a34",
+      "lib/build-techniques.ts": "663a38618172c28bf7546c455de1da1ad15cbf1a4dd51973d88f971d8ab1923d",
+      "lib/story/build-techniques.ts": "96c22a876beef9be96da9dd91d67d7eb21bd2ca8584ad7bc380e9fab2b7ded71",
+      "lib/technique-dialogue.ts": "a99785fd05a7091409a1152a8af1c3b235f297da4c7c599873bdf4d1b8fa3dda",
+      "components/TechniqueBoard.tsx": "e53a754ca151ce24ec8f0f8a6c4c4967eca41be76477a188d07da39687dee8cd",
+      "qa/media/technique-dialogue-bindings.json": "ea4bb0ebadd57641019478237a33ddb5655205f2632dd3bb822e7cfc58d25504",
+      "qa/media/technique-dialogue-lines.json": "3ba5f8c12b0fe81645ac3494dc74189eb8011dbb7a95f5d9efa68051412a1301",
+      "qa/media/technique-dialogue-provenance.json": "ad7bcf50bdff909b8630a7d85f3bb33a22a370c04d5653472426020df46490da",
+      "lib/sound.ts": "718bbce2e4aec9a3c259bcc3fe8a041f039d254883467588d767f64821a9a503",
+      "lib/voice-level.ts": "38e45d97714756d00f4f37e529305c1971cca501b31b1e82839bdde94ce577c6",
+      "qa/media/voice-levels.json": "f249e8aadec56f250c59cfba1d939bf0f7fe058d0d75c043ce714aa0a0442dc9",
+      "qa/media/voice-mix.json": "d3d63ca60f8b3456532f5fd0fd54ce4dbe1c3af22b0c28ef9f1557148fd918e2",
+      "lib/engine.ts": "e248f22b2c8a6e6c4b9c4aea8f08ad935c6bfdbe37e9ea9db12accc213f8d25a",
+      "lib/campaign-dialogue.ts": "de0c075694706fd7998e33df6faa0a2cb174b0eeeef9f0d4b56b01c5c5b48270",
+      "lib/dialogue-playback.ts": "5c20dfc8980be13f56631e8bcb4071b02d80e187d6df088c90e54e5531c98ca5",
+      "components/VoiceLine.tsx": "a5b44e12bf6715e0980c54790c1f1d6ac12bf9cd31401948b6d98867342cd25c",
+      "components/GameApp.tsx": "b0f0d87b9ec3c0573e0ee74113fa9f205f1ad9b34a2df00ffde62e37c7daeb41",
+      "components/PlayScreen.tsx": "51e3b3d08705a2398e2c4cd2113f01c1f93635cdc921682092b7995ca4e26b15",
+      "qa/production/keyboard.ts": "14ed92fbfbcd5125fb49d5578131aa337b7ea14a4f64e749c7e6596b1a51954f",
+      "qa/production/audio-review.ts": "d9c23ff7ed727e7d3d8b04680fd552d78b3aff260dfa8310a8209aa5f9758a4e",
+      "qa/production/dialogue-examples.ts": "7d75a6fa58f5d822fb5eaa226dc3b76f49cd3f8eda58ea9fcea5ca0de9c28fe4",
+      "qa/media/campaign-dialogue-bindings.json": "15ae8b35c16b330b545f001e23dc75b5f4bd131225347f616ab76c1b7088f0bd",
+      "qa/media/campaign-dialogue-lines.json": "39a2015b2414de22fabf618c75e948fdde7dd67ae66739196eae0d209338e875",
+      "qa/media/district-dialogue-bindings.json": "ba071555c4fb38294f2f98bb05de94fbd8529396b9ba6a15f67f4ee13be2428c",
+      "qa/media/district-dialogue-lines.json": "0e8ab7ed24f403740892bde34cefeb8cf3989d96071ce7edbedda01e3d314b8d",
+      "qa/media/district-dialogue-provenance.json": "7dcca10aa08e92984d47dec4cd49acedd09951829a4cf651198d8885a67f2b61",
+      "qa/media/voice-lines.json": "178d70993e1c624b1a14647fa5a60f2f25268d3c3db43cf32680ded8805b1913",
+      "scripts/voice-validation.ts": "bda69aa4e576f31c8e1fc6a6dbbb472518715b0a459a0d855af8c9bf778ab348"
+    },
+    "environment": {
+      "browser": "Chromium",
+      "browserVersion": "151.0.7922.173",
+      "platform": "linux",
+      "nodeVersion": "v24.19.0",
+      "device": "cloud automation host; synthetic viewport"
+    },
+    "url": "http://127.0.0.1:3805",
+    "automatic": true,
+    "workers": 2,
+    "elapsedSeconds": 45.269,
+    "rows": [
+      {
+        "id": "voice-kerr-kerr",
+        "route": "allocation-dustline.json",
+        "source": "authored-route",
+        "expectedVoices": [
+          "voice-campaign-kerr-3914d401fb83.mp3",
+          "voice-kerr-kerr.wav"
+        ],
+        "playbackLevels": [
+          {
+            "file": "voice-campaign-kerr-3914d401fb83.mp3",
+            "gain": 0.731139063835144
+          },
+          {
+            "file": "voice-kerr-kerr.wav",
+            "gain": 0.844306230545044
+          }
+        ],
+        "durationSeconds": 8.002,
+        "voiceRequests": 1,
+        "requestsBeforeReplay": 1,
+        "replayRefetched": false,
+        "liveSourcesAfterEnd": 2,
+        "created": 6,
+        "disposed": 6
+      },
+      {
+        "id": "voice-nia-arrival",
+        "route": "balance-dustline-nerve-equipped.json",
+        "source": "authored-route",
+        "expectedVoices": [
+          "voice-campaign-nia-pell-c987f8a09159.mp3",
+          "voice-nia-arrival.wav"
+        ],
+        "playbackLevels": [
+          {
+            "file": "voice-campaign-nia-pell-c987f8a09159.mp3",
+            "gain": 0.6831247210502625
+          },
+          {
+            "file": "voice-nia-arrival.wav",
+            "gain": 0.6151768565177917
+          }
+        ],
+        "durationSeconds": 12.002,
+        "voiceRequests": 1,
+        "requestsBeforeReplay": 1,
+        "replayRefetched": false,
+        "liveSourcesAfterEnd": 2,
+        "created": 6,
+        "disposed": 6
+      },
+      {
+        "id": "voice-sera-wall-invitation",
+        "route": "allocation-dustline.json",
+        "source": "authored-route",
+        "expectedVoices": [
+          "voice-campaign-sera-1031969a7935.mp3",
+          "voice-sera-wall-invitation.wav"
+        ],
+        "playbackLevels": [
+          {
+            "file": "voice-campaign-sera-1031969a7935.mp3",
+            "gain": 0.5888436436653137
+          },
+          {
+            "file": "voice-sera-wall-invitation.wav",
+            "gain": 0.8128305077552795
+          }
+        ],
+        "durationSeconds": 7.809,
+        "voiceRequests": 1,
+        "requestsBeforeReplay": 1,
+        "replayRefetched": false,
+        "liveSourcesAfterEnd": 2,
+        "created": 6,
+        "disposed": 6
+      },
+      {
+        "id": "voice-campaign-kerr-3914d401fb83",
+        "route": "allocation-dustline.json",
+        "source": "authored-route",
+        "expectedVoices": [
+          "voice-campaign-kerr-3914d401fb83.mp3",
+          "voice-kerr-kerr.wav"
+        ],
+        "playbackLevels": [
+          {
+            "file": "voice-campaign-kerr-3914d401fb83.mp3",
+            "gain": 0.731139063835144
+          },
+          {
+            "file": "voice-kerr-kerr.wav",
+            "gain": 0.844306230545044
+          }
+        ],
+        "durationSeconds": 8.38,
+        "voiceRequests": 1,
+        "requestsBeforeReplay": 1,
+        "replayRefetched": false,
+        "liveSourcesAfterEnd": 2,
+        "created": 6,
+        "disposed": 6
+      },
+      {
+        "id": "voice-campaign-sera-1031969a7935",
+        "route": "allocation-dustline.json",
+        "source": "authored-route",
+        "expectedVoices": [
+          "voice-campaign-sera-1031969a7935.mp3",
+          "voice-sera-wall-invitation.wav"
+        ],
+        "playbackLevels": [
+          {
+            "file": "voice-campaign-sera-1031969a7935.mp3",
+            "gain": 0.5888436436653137
+          },
+          {
+            "file": "voice-sera-wall-invitation.wav",
+            "gain": 0.8128305077552795
+          }
+        ],
+        "durationSeconds": 8.047,
+        "voiceRequests": 1,
+        "requestsBeforeReplay": 1,
+        "replayRefetched": false,
+        "liveSourcesAfterEnd": 2,
+        "created": 6,
+        "disposed": 6
+      },
+      {
+        "id": "voice-campaign-nia-pell-c987f8a09159",
+        "route": "balance-dustline-nerve-equipped.json",
+        "source": "authored-route",
+        "expectedVoices": [
+          "voice-campaign-nia-pell-c987f8a09159.mp3",
+          "voice-nia-arrival.wav"
+        ],
+        "playbackLevels": [
+          {
+            "file": "voice-campaign-nia-pell-c987f8a09159.mp3",
+            "gain": 0.6831247210502625
+          },
+          {
+            "file": "voice-nia-arrival.wav",
+            "gain": 0.6151768565177917
+          }
+        ],
+        "durationSeconds": 11.565,
+        "voiceRequests": 1,
+        "requestsBeforeReplay": 1,
+        "replayRefetched": false,
+        "liveSourcesAfterEnd": 2,
+        "created": 6,
+        "disposed": 6
+      },
+      {
+        "id": "voice-campaign-mara-revelation-performance",
+        "route": "allocation-dustline.json",
+        "source": "authored-route",
+        "expectedVoices": [
+          "voice-campaign-mara-revelation-performance.mp3"
+        ],
+        "playbackLevels": [
+          {
+            "file": "voice-campaign-mara-revelation-performance.mp3",
+            "gain": 0.9682778716087341
+          }
+        ],
+        "durationSeconds": 9.655,
+        "voiceRequests": 1,
+        "requestsBeforeReplay": 1,
+        "replayRefetched": false,
+        "liveSourcesAfterEnd": 2,
+        "created": 5,
+        "disposed": 5
+      }
+    ],
+    "errors": [],
+    "failures": [],
+    "limitations": "Internal source examples: authored/seeded route states and separately labeled conditional branch samples. This is clip playback verification, not completed UI campaigns. Natural completion, explicit replay (cached or refetched after eviction), Stop, transcripts and cleanup are observed. No commissioned actors, human participation, physical-device or independent listening acceptance."
+  },
+  "finalViews": [
+    {
+      "sceneId": "memo",
+      "width": 390,
+      "screenshot": "/tmp/cinematic-phase5-final-memo-390.png",
+      "unchangedState": true,
+      "goalInFirstViewport": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "sceneId": "kerr",
+      "width": 390,
+      "screenshot": "/tmp/cinematic-phase5-final-kerr-390.png",
+      "unchangedState": true,
+      "goalInFirstViewport": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "sceneId": "act2_witness_arrival",
+      "width": 390,
+      "screenshot": "/tmp/cinematic-phase5-final-act2_witness_arrival-390.png",
+      "unchangedState": true,
+      "goalInFirstViewport": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "sceneId": "act3_arrival",
+      "width": 390,
+      "screenshot": "/tmp/cinematic-phase5-final-act3_arrival-390.png",
+      "unchangedState": true,
+      "goalInFirstViewport": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "sceneId": "memo",
+      "width": 1440,
+      "screenshot": "/tmp/cinematic-phase5-final-memo-1440.png",
+      "unchangedState": true,
+      "goalInFirstViewport": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "sceneId": "memo",
+      "width": 320,
+      "screenshot": "/tmp/cinematic-phase5-final-memo-320.png",
+      "unchangedState": true,
+      "goalInFirstViewport": true,
+      "overflow": false,
+      "errors": []
+    }
+  ],
+  "visualReview": "Reviewed all six initial decoded layouts; final corrected witness/memorial captures reviewed. Neutral captions no longer imply recorder history; closed folio removed before publication. Final captures retain the goal, no overflow, correct actor/words and unchanged saves.",
+  "testedSources": {
+    "lib/cinematic-sequences.ts": "7b1ba14a3c3ed1e9010979bbed595047468783015723d9ed5036d08801a04e73",
+    "lib/dialogue-playback.ts": "5c20dfc8980be13f56631e8bcb4071b02d80e187d6df088c90e54e5531c98ca5",
+    "lib/pivotal-scenes.ts": "9be025d6e9a22d5c0c9f2d708c1d2d7775fc7e1730e4ea4860fdae2d7338951b",
+    "components/SequenceArtwork.tsx": "b3d86597102e0208402be4f35bbb59877fad8f1e22192279c1ea0f33fb872fcc",
+    "components/PivotalScene.tsx": "e56d1f73eb5538563e3447689ec762fc255841434bdd4b41f8544e9445a05e19",
+    "components/PlayScreen.tsx": "51e3b3d08705a2398e2c4cd2113f01c1f93635cdc921682092b7995ca4e26b15",
+    "components/VoiceLine.tsx": "a5b44e12bf6715e0980c54790c1f1d6ac12bf9cd31401948b6d98867342cd25c",
+    "components/GuideScreen.tsx": "ba40252a53c1c0450058dcd92769b69c21d0507a6bb1d82dd28b731c469d1536",
+    "app/globals.css": "a7328582b9400128eb5b4928c672ff8d3f50ecd2900f6cb1ec2a3cedc26fe940",
+    "qa/production/sequence-audio-review.ts": "01d3be778314ec8d8ddd9ba996d5ccff8ae95c81a69b3f02efc636647948d83e",
+    "tests/cinematic-sequences.spec.ts": "b31d70fb82c6782b31ed3f530e4824cd044ab9bc4e6ddf28201072da359f62ea",
+    "tests/pivotal-scenes.spec.ts": "27f7902b5d1aecf18800e59f1af2d53402909fb2c1f958628d884585be39ba14",
+    "lib/cinematic-sequences.test.ts": "775a21bb54c4486bf8949afc7a92a02cb3f748521401e58655108f52164483c7",
+    "qa/media/cinematic-sequences.json": "7624313f122307390b1813acb0ee16fb5109460be22248bc753c8067e4276fb0",
+    "qa/media/cinematic-mix-spec.json": "65f459b8110c44499aff90ea43501205d4ea8837e4181efb478909972b3ae1ea",
+    "qa/media/cinematic-mix-review.json": "6f28c5dd8f70ff43c2e3ab078b28fec73cf8a64cee3925cdf9fe39dfe1e60c22",
+    "qa/media/cinematic-mix-transcripts.json": "bd185a3df33a6a8e1fc4c869f699419fb7ca7cd9004cb625dd219ae65c49bebe"
+  },
+  "release": "Pre-publication snapshot. Full exact-commit Test, all four Browser jobs and Build, Vercel READY and live verification remain required. Post-publication evidence recorded separately.",
+  "limitations": "Internal authored/directed AI and synthetic browser/viewport proxies. Offline mono/static-duck mixes are not real room/browser crossfade measurements. ASR and native audio lifecycle checks are technical alignment, not independent acting/listening, human or physical-device acceptance; no AAA grade claim."
+}

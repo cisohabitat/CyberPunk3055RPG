@@ -20,7 +20,8 @@ export class DialoguePlayback {
   private replay: string[] | null = null;
   private previousSpeaker?: string;
 
-  constructor(private report: (view: View) => void, private player: Player = playVoice) {}
+  constructor(private report: (view: View) => void, private player: Player = playVoice,
+    private pauseBetween: (previous?: string, next?: string) => number = (previous, next) => previous && next ? previous === next ? 120 : 220 : 0) {}
 
   update(lines: Line[], enabled: boolean, automatic: boolean, preferred?: string) {
     const wasAutomatic = this.automatic;
@@ -40,8 +41,8 @@ export class DialoguePlayback {
     this.current = next;
     const generation = this.generation;
     const speaker = this.lines.find(line => line.key === next)?.speaker;
-    const pause = afterNaturalEnd && speaker && this.previousSpeaker
-      ? speaker === this.previousSpeaker ? 120 : 220 : 0;
+    const requestedPause = afterNaturalEnd ? this.pauseBetween(this.previousSpeaker, speaker) : 0;
+    const pause = Number.isFinite(requestedPause) ? Math.max(0, Math.min(1000, requestedPause)) : 0;
     // Keep Stop available during the breath between lines, without claiming an
     // actor is audible. Cancellation consumes this pending start like a load.
     if (pause) this.report({ status: "loading", key: next });

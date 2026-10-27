@@ -1,0 +1,93 @@
+{
+  "method": "Independent base.en ASR of actual retained offline A/B mix WAV files, no authored prompt. Punctuation/case/apostrophe plus explicit 9-to-nine and 300-to-three-hundred normalization only. Raw transcripts retained; no words or negations filtered. Technical proxy, not human listening acceptance.",
+  "model": "Systran/faster-whisper-base.en",
+  "runtime": "faster-whisper 1.2.1 CPU int8",
+  "samples": [
+    {
+      "sceneId": "memo",
+      "version": "before",
+      "sourceFile": "/workspace/generated_audio/cinematic-phase5/memo-before.wav",
+      "sha256": "73ae9f3b87e062bee3d38e431bf9e00333e5253e4772234de8ce12388f53ceb6",
+      "authoredText": "I signed the coolant dump. Ward Nine. Three hundred on the night shift. I want that sentence to stay in my mouth.",
+      "transcription": "I signed the coolant dump. Ward 9. 300 on the night shift. I want that sentence to stay in my mouth.",
+      "exactNormalizedWords": true
+    },
+    {
+      "sceneId": "memo",
+      "version": "directed",
+      "sourceFile": "/workspace/generated_audio/cinematic-phase5/memo-directed.wav",
+      "sha256": "1415dffd1c35756acad72dd10f57897a50f882040dd4df2926519a35c6b5680e",
+      "authoredText": "I signed the coolant dump. Ward Nine. Three hundred on the night shift. I want that sentence to stay in my mouth.",
+      "transcription": "I signed the coolant dump. Ward 9. 300 on the night shift. I want that sentence to stay in my mouth.",
+      "exactNormalizedWords": true
+    },
+    {
+      "sceneId": "kerr",
+      "version": "before",
+      "sourceFile": "/workspace/generated_audio/cinematic-phase5/kerr-before.wav",
+      "sha256": "bad843ca0a1e118cca7bb87c75e7b7b9b67cca1fab65b20e10ddaabfef7398d6",
+      "authoredText": "Put it down. That glass is Mara's hour. Helion pays me so the Ward Nine memo stays in her head, not in your pocket.",
+      "transcription": "Put it down. That glass is Mara's hour. Helion pays me so the Ward 9 memo stays in her head, not in your pocket.",
+      "exactNormalizedWords": true
+    },
+    {
+      "sceneId": "kerr",
+      "version": "directed",
+      "sourceFile": "/workspace/generated_audio/cinematic-phase5/kerr-directed.wav",
+      "sha256": "8e485f29433361acce93fbe35c23d661bcd619f1669dc760f84091bcbf54cf3e",
+      "authoredText": "Put it down. That glass is Mara's hour. Helion pays me so the Ward Nine memo stays in her head, not in your pocket.",
+      "transcription": "Put it down. That glass is Mara's hour. Helion pays me so the Ward 9 memo stays in her head, not in your pocket. //",
+      "exactNormalizedWords": true
+    },
+    {
+      "sceneId": "act2_witness_arrival",
+      "version": "before",
+      "sourceFile": "/workspace/generated_audio/cinematic-phase5/act2_witness_arrival-before.wav",
+      "sha256": "5604e939a04c72ef4543c38a220b51c8266448e8b6491497b01d259a93a34e73",
+      "authoredText": "You got me here, Now I want to hear the words before anyone uses them. No address. No photograph. If I stop, you stop.",
+      "transcription": "You got me here. Now I want to hear the words before anyone uses them. No address, no photograph. If I stop, you stop.",
+      "exactNormalizedWords": true
+    },
+    {
+      "sceneId": "act2_witness_arrival",
+      "version": "directed",
+      "sourceFile": "/workspace/generated_audio/cinematic-phase5/act2_witness_arrival-directed.wav",
+      "sha256": "70384a1434323c3b5aaec9c73c077b7c283e9b53f628124592959418c00822e5",
+      "authoredText": "You got me here, Now I want to hear the words before anyone uses them. No address. No photograph. If I stop, you stop.",
+      "transcription": "You got me here. Now I want to hear the words before anyone uses them. No address, no photograph. If I stop, you stop.",
+      "exactNormalizedWords": true
+    },
+    {
+      "sceneId": "act3_arrival",
+      "version": "before",
+      "sourceFile": "/workspace/generated_audio/cinematic-phase5/act3_arrival-before.wav",
+      "sha256": "8bc81d2979ebfe42f9a694de6de21a280648377a3595d62e592058d276c0d4fa",
+      "authoredText": "If you know any of them, say them. If you sold them, you can still say them. The wall does not check your receipt.",
+      "transcription": "If you know any of them, say them. If you sold them, you can still say them. The wall does not check your receipt.",
+      "exactNormalizedWords": true
+    },
+    {
+      "sceneId": "act3_arrival",
+      "version": "directed",
+      "sourceFile": "/workspace/generated_audio/cinematic-phase5/act3_arrival-directed.wav",
+      "sha256": "a15662535bb04d140c4f159e509f14366909d85ad0ac2333292d32941e8ebe22",
+      "authoredText": "If you know any of them, say them. If you sold them, you can still say them. The wall does not check your receipt.",
+      "transcription": "If you know any of them, say them. If you sold them, you can still say them. The wall does not check your receipt.",
+      "exactNormalizedWords": true
+    }
+  ],
+  "modelFiles": [
+    {
+      "name": "models--Systran--faster-whisper-base.en/snapshots/3d3d5dee26484f91867d81cb899cfcf72b96be6c/config.json",
+      "sha256": "f3bc3821e9fc76a27bae538e11ae5b677dcdd352b4600429ce7951d398569aeb"
+    },
+    {
+      "name": "models--Systran--faster-whisper-base.en/snapshots/3d3d5dee26484f91867d81cb899cfcf72b96be6c/model.bin",
+      "sha256": "2a166925539a16005f14ff328359f9b9adb9dc4fb631bb3b227526862e93e2ef"
+    },
+    {
+      "name": "models--Systran--faster-whisper-base.en/snapshots/3d3d5dee26484f91867d81cb899cfcf72b96be6c/tokenizer.json",
+      "sha256": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df"
+    }
+  ]
+}

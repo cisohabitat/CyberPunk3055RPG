@@ -3,16 +3,17 @@ import { useEffect, useId, useRef, useState } from "react";
 import type { VoiceStatus } from "@/lib/sound";
 import type { DialogueLine } from "@/lib/memory-media";
 import type { CampaignDialogue } from "@/lib/campaign-dialogue";
+import { dialoguePause } from "@/lib/cinematic-sequences";
 import { DialoguePlayback } from "@/lib/dialogue-playback";
 
-export function VoiceLine({ line, lines, enabled, automatic, paused = false, onSpeaking }: {
-  line?: DialogueLine; lines: CampaignDialogue[]; enabled: boolean; automatic: boolean; paused?: boolean;
+export function VoiceLine({ line, lines, enabled, automatic, paused = false, onSpeaking, sceneId }: {
+  sceneId?: string; line?: DialogueLine; lines: CampaignDialogue[]; enabled: boolean; automatic: boolean; paused?: boolean;
   onSpeaking?: (line: CampaignDialogue | null) => void;
 }) {
   const [view, setView] = useState<{ status: VoiceStatus; key?: string }>({ status: "idle" });
   const selectId = useId();
   const playback = useRef<DialoguePlayback | null>(null);
-  if (!playback.current) playback.current = new DialoguePlayback(setView);
+  if (!playback.current) playback.current = new DialoguePlayback(setView, undefined, (previous, next) => dialoguePause(sceneId, previous, next));
   const preferred = lines.find(candidate => candidate.id === line?.id)?.key
     ?? lines.find(candidate => candidate.speaker === line?.speaker && candidate.text === line?.text)?.key
     ?? lines[0]?.key;

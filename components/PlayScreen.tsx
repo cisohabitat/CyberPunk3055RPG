@@ -1,4 +1,5 @@
 "use client";
+import { cinematicSequence, cinematicDetail } from "@/lib/cinematic-sequences";
 
 import { choiceReceipt } from "@/lib/play-feedback";
 import { ConversationContext } from "./ConversationContext";
@@ -98,7 +99,8 @@ export function PlayScreen({
   const illustration = sceneIllustration(scene.id, state.flags);
   const finale = finaleScene(scene.id);
   const investigation = investigationScene(scene.id);
-  const direction = pivotalScene(scene.id) ?? finale ?? investigation;
+  const sequence = cinematicSequence(scene.id);
+  const direction = pivotalScene(scene.id) ?? finale ?? investigation ?? sequence;
   const choices = presentChoices(state, scene);
   const choiceMarks = choices.map(choice => choicePresentation(scene.id, choice));
   const choiceLegend = choiceMarks.filter((mark, index) => choiceMarks.findIndex(other => other.kind === mark.kind) === index);
@@ -174,11 +176,11 @@ export function PlayScreen({
   }, [preferences.motion]);
 
   useEffect(() => {
-    setBed(sound, mood, district, undefined, finale ? "closing" : direction ? "intimate" : "normal");
+    setBed(sound, mood, district, undefined, finale ? "closing" : sequence?.focus ?? (direction ? "intimate" : "normal"));
     const previous = priorSound.current;
     if (sound && (!previous?.on || previous.location !== scene.location || Boolean(scene.ending) !== previous.ending)) playCue(locationCue(scene.location, Boolean(scene.ending)));
     priorSound.current = { location: scene.location, on: preferences.sound, ending: Boolean(scene.ending) };
-  }, [sound, preferences.sound, mood, district, scene.id, scene.location, scene.ending, direction, finale]);
+  }, [sound, preferences.sound, mood, district, scene.id, scene.location, scene.ending, direction, finale, sequence]);
 
   useEffect(() => () => { setBed(false); }, []);
 
@@ -399,7 +401,7 @@ export function PlayScreen({
             {scene.finale && <h1 className="finale-title" data-testid="ending-title">{scene.endingTitle}</h1>}
             {restoreNotice && <p className="restore-notice" role="status" data-testid="restore-notice">{restoreNotice}</p>}
             <ChapterTransition sceneId={scene.id} />
-            {direction ? <PivotalScene direction={direction} finale={Boolean(finale)} investigation={Boolean(investigation)} art={preferences.artwork !== "none" ? illustration : undefined}>{narrative}</PivotalScene>
+            {direction ? <PivotalScene sceneId={scene.id} detail={cinematicDetail(scene.id)} direction={direction} finale={Boolean(finale)} investigation={Boolean(investigation)} art={preferences.artwork !== "none" ? illustration : undefined}>{narrative}</PivotalScene>
               : preferences.artwork !== "none" && illustration && <SceneIllustration art={illustration} reading />}
             {canConsultSources(state) && <div className="investigation-tools"><button className="ghost" type="button" data-testid="consult-sources" aria-haspopup="dialog" disabled={Boolean(activeChoice) || modalOpen} onClick={() => setNotebookOpen(true)}>Consult acquired sources</button></div>}
             {scene.id === "memory_table" && <MemoryPlate key={scene.id} state={state} choices={choices} onInspect={pick} artwork={preferences.artwork !== "none"} numberShortcuts={preferences.numberShortcuts} />}
@@ -415,7 +417,7 @@ export function PlayScreen({
               </div>
             )}
             {preferences.reading === "paragraph" && paragraphs.length > 1 && <p className="reading-progress hint" role="status" aria-atomic="true">{visibleCount} of {paragraphs.length} paragraphs shown</p>}
-            {dialogueQueue.length > 0 && <VoiceLine key={scene.id} line={dialogue} lines={dialogueQueue} automatic={preferences.autoVoices} paused={audioPaused && preferences.sound} enabled={voicesEnabled} onSpeaking={setSpeaking} />}
+            {dialogueQueue.length > 0 && <VoiceLine sceneId={scene.id} key={scene.id} line={dialogue} lines={dialogueQueue} automatic={preferences.autoVoices} paused={audioPaused && preferences.sound} enabled={voicesEnabled} onSpeaking={setSpeaking} />}
             {visibleCount === paragraphs.length && <ConversationContext state={state} speaker={scene.speaker} />}
             {!scene.finale && <div className="decision-context" data-testid="decision-context">
               <ObjectiveBrief state={state} />
