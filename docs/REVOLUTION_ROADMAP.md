@@ -50,5 +50,6 @@ The user authorized at least Phases 1 and 2 now, sequentially, publishing after 
 
 - Phase 1: published and verified at https://cyberpunk3055rpg.vercel.app on `f76924a8f75675c5916b65cca40b1d3e8497750e`. Full hosted CI passed; six public feature checks passed and live challenged/corrected views were reviewed at three widths. Evidence: `qa/editorial/player-led-phase1.json` and `qa/editorial/player-led-phase1-release.json`.
 - Phase 2: published and verified on `3fc50638edb4b46a48b7104ef079948a18f25f73`, after Phase 1 live verification. Full hosted CI passed; 19 public feature checks and six viewport/state reviews passed. Evidence: `qa/editorial/player-led-phase2.json` and `qa/editorial/player-led-phase2-release.json`.
-- Phase 3: reactive depot slice implemented and locally verified: 718 source tests, 62 focused browser checks plus 24 follow-up checks, two complete keyboard campaigns, twelve automatic playback/transcription checks and six viewport/state reviews. Full hosted CI and exact-commit publication remain required. See `docs/REACTIVE_DISTRICT_PHASE3.md`.
-- Phases 4–6: planned.
+- Phase 3: published and verified on `3c31861c7e98679f83939b4a47b3bf0abef80ffd`; full hosted CI and exact-commit main-branch Vercel readiness passed (see `qa/editorial/player-led-phase3-release.json`). Local evidence: 718 source tests, 62 focused browser checks plus 24 follow-up checks, two complete keyboard campaigns, twelve automatic playback/transcription checks and six viewport/state reviews. See `docs/REACTIVE_DISTRICT_PHASE3.md`.
+- Phase 4: distinct-build filing-bench slice implemented; validation and publication evidence are recorded in `docs/DISTINCT_BUILDS_PHASE4.md`.
+- Phases 5–6: planned.

@@ -826,9 +826,89 @@
     {
       "treatment": "illustration",
       "asset": "/art/archive-held-original.jpg",
-      "reason": "Reuse the fitting neutral source/service setting; source knowledge and tasks remain written facts. Public-review depot variants require the actual submitted request, not a case draft.",
+      "reason": "Reuse the fitting neutral source/service setting; source knowledge and tasks remain written facts. Public-review depot variants require the actual submitted request, not a case draft. Phase 4 adds the actual specialist review-intake/held status to the written return; the neutral retained-original plate and existing spoken line remain suitable and imply no accepted correction.",
       "scenes": [
         "act3_district_return"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/correction-bench.jpg",
+      "reason": "Neutral dry filing bench and separate blank/sleeved records fit this specialist procedure before and after intake. No named signature, specialized owned kit, authenticated source or accepted correction is depicted. The actual actor uses the existing portrait; source values and effects remain written.",
+      "scenes": [
+        "act2_technique_bench"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/correction-bench.jpg",
+      "reason": "Neutral dry filing bench and separate blank/sleeved records fit this specialist procedure before and after intake. No named signature, specialized owned kit, authenticated source or accepted correction is depicted. The actual actor uses the existing portrait; source values and effects remain written.",
+      "scenes": [
+        "act2_technique_chrome"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/correction-bench.jpg",
+      "reason": "Neutral dry filing bench and separate blank/sleeved records fit this specialist procedure before and after intake. No named signature, specialized owned kit, authenticated source or accepted correction is depicted. The actual actor uses the existing portrait; source values and effects remain written.",
+      "scenes": [
+        "act2_technique_chrome_submit"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/correction-bench.jpg",
+      "reason": "Neutral dry filing bench and separate blank/sleeved records fit this specialist procedure before and after intake. No named signature, specialized owned kit, authenticated source or accepted correction is depicted. The actual actor uses the existing portrait; source values and effects remain written.",
+      "scenes": [
+        "act2_technique_ghost"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/correction-bench.jpg",
+      "reason": "Neutral dry filing bench and separate blank/sleeved records fit this specialist procedure before and after intake. No named signature, specialized owned kit, authenticated source or accepted correction is depicted. The actual actor uses the existing portrait; source values and effects remain written.",
+      "scenes": [
+        "act2_technique_ghost_route"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/correction-bench.jpg",
+      "reason": "Neutral dry filing bench and separate blank/sleeved records fit this specialist procedure before and after intake. No named signature, specialized owned kit, authenticated source or accepted correction is depicted. The actual actor uses the existing portrait; source values and effects remain written.",
+      "scenes": [
+        "act2_technique_face"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/correction-bench.jpg",
+      "reason": "Neutral dry filing bench and separate blank/sleeved records fit this specialist procedure before and after intake. No named signature, specialized owned kit, authenticated source or accepted correction is depicted. The actual actor uses the existing portrait; source values and effects remain written.",
+      "scenes": [
+        "act2_technique_face_scope"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/correction-bench.jpg",
+      "reason": "Neutral dry filing bench and separate blank/sleeved records fit this specialist procedure before and after intake. No named signature, specialized owned kit, authenticated source or accepted correction is depicted. The actual actor uses the existing portrait; source values and effects remain written.",
+      "scenes": [
+        "act2_technique_nerve"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/correction-bench.jpg",
+      "reason": "Neutral dry filing bench and separate blank/sleeved records fit this specialist procedure before and after intake. No named signature, specialized owned kit, authenticated source or accepted correction is depicted. The actual actor uses the existing portrait; source values and effects remain written.",
+      "scenes": [
+        "act2_technique_nerve_handover"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/correction-bench.jpg",
+      "reason": "Neutral dry filing bench and separate blank/sleeved records fit this specialist procedure before and after intake. No named signature, specialized owned kit, authenticated source or accepted correction is depicted. The actual actor uses the existing portrait; source values and effects remain written.",
+      "scenes": [
+        "act2_technique_result"
       ]
     }
   ],

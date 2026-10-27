@@ -1,0 +1,335 @@
+{
+  "name": "technique-face-cosign-process",
+  "character": {
+    "handle": "Replay",
+    "givenName": "Ada",
+    "origin": "dustline",
+    "complication": "on-file",
+    "bonus": {
+      "chrome": 0,
+      "nerve": 0,
+      "face": 2,
+      "ghost": 0
+    },
+    "startWithPrologue": true
+  },
+  "steps": [
+    {
+      "choiceId": "begin-opening",
+      "reload": true
+    },
+    {
+      "choiceId": "opening-exit",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-stallholder",
+      "reload": true
+    },
+    {
+      "choiceId": "take-the-stool",
+      "reload": true
+    },
+    {
+      "choiceId": "ask-pay"
+    },
+    {
+      "choiceId": "haggle",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "pocket"
+    },
+    {
+      "choiceId": "accept"
+    },
+    {
+      "choiceId": "side"
+    },
+    {
+      "choiceId": "spoof-door",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "go"
+    },
+    {
+      "choiceId": "honest"
+    },
+    {
+      "choiceId": "pact-copy"
+    },
+    {
+      "choiceId": "copy",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "heard"
+    },
+    {
+      "choiceId": "inspect-hour"
+    },
+    {
+      "choiceId": "inspect-signature"
+    },
+    {
+      "choiceId": "inspect-order"
+    },
+    {
+      "choiceId": "inspect-roster"
+    },
+    {
+      "choiceId": "reconstruct"
+    },
+    {
+      "choiceId": "ignore-order"
+    },
+    {
+      "choiceId": "keep-both-decisions"
+    },
+    {
+      "choiceId": "name-tower"
+    },
+    {
+      "choiceId": "seal-full"
+    },
+    {
+      "choiceId": "talk-leave",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "both"
+    },
+    {
+      "choiceId": "week-after"
+    },
+    {
+      "choiceId": "into-week"
+    },
+    {
+      "choiceId": "practice"
+    },
+    {
+      "choiceId": "learn-face",
+      "reload": true
+    },
+    {
+      "choiceId": "read-board"
+    },
+    {
+      "choiceId": "origin-contract"
+    },
+    {
+      "choiceId": "courier-run",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "return-board"
+    },
+    {
+      "choiceId": "visit-workshop"
+    },
+    {
+      "choiceId": "buy-desk-guide",
+      "reload": true
+    },
+    {
+      "choiceId": "to-helion"
+    },
+    {
+      "choiceId": "hear-ives"
+    },
+    {
+      "choiceId": "refuse-ives"
+    },
+    {
+      "choiceId": "take-recovery"
+    },
+    {
+      "choiceId": "short-recovery",
+      "reload": true
+    },
+    {
+      "choiceId": "return-after-recovery"
+    },
+    {
+      "choiceId": "trace-order"
+    },
+    {
+      "choiceId": "agree-archive-terms"
+    },
+    {
+      "choiceId": "skip-archive-prep"
+    },
+    {
+      "choiceId": "open-archive-catalog",
+      "reload": true
+    },
+    {
+      "choiceId": "catalog-inspect-revision",
+      "reload": true
+    },
+    {
+      "choiceId": "catalog-request-revision",
+      "reload": true
+    },
+    {
+      "choiceId": "catalog-buy-extraction",
+      "reload": true
+    },
+    {
+      "choiceId": "withhold-technician"
+    },
+    {
+      "choiceId": "keep-chain"
+    },
+    {
+      "choiceId": "open-district-response",
+      "reload": true
+    },
+    {
+      "choiceId": "district-edda-corroboration",
+      "reload": true
+    },
+    {
+      "choiceId": "district-public-review",
+      "reload": true
+    },
+    {
+      "choiceId": "district-speak-kerr",
+      "reload": true
+    },
+    {
+      "choiceId": "district-withhold-kerr",
+      "reload": true
+    },
+    {
+      "choiceId": "district-kerr-introduce",
+      "reload": true
+    },
+    {
+      "choiceId": "open-build-techniques",
+      "reload": true
+    },
+    {
+      "choiceId": "plan-technique-face",
+      "reload": true
+    },
+    {
+      "choiceId": "ask-technique-cosign",
+      "reload": true
+    },
+    {
+      "choiceId": "prepare-technique-face-cosign",
+      "reload": true
+    },
+    {
+      "choiceId": "submit-technique-face-process",
+      "reload": true
+    },
+    {
+      "choiceId": "leave-technique-result",
+      "reload": true
+    },
+    {
+      "choiceId": "district-close",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-response"
+    },
+    {
+      "choiceId": "answer-with-source"
+    },
+    {
+      "choiceId": "stand"
+    },
+    {
+      "choiceId": "back-to-board"
+    },
+    {
+      "choiceId": "to-the-wall"
+    },
+    {
+      "choiceId": "to-ward-nine"
+    },
+    {
+      "choiceId": "visit-records"
+    },
+    {
+      "choiceId": "keep-limits"
+    },
+    {
+      "choiceId": "visit-district-return",
+      "reload": true
+    },
+    {
+      "choiceId": "district-record-return",
+      "reload": true
+    },
+    {
+      "choiceId": "go-wall"
+    },
+    {
+      "choiceId": "face-sera"
+    },
+    {
+      "choiceId": "prepare-public-account"
+    },
+    {
+      "choiceId": "scope-corroborated"
+    },
+    {
+      "choiceId": "keep-recording-private"
+    },
+    {
+      "choiceId": "answer-corroboration"
+    },
+    {
+      "choiceId": "file-public-account",
+      "reload": true
+    },
+    {
+      "choiceId": "leave-wall"
+    }
+  ],
+  "expected": {
+    "sceneId": "ending_quiet",
+    "flags": {
+      "testimony_published": true,
+      "archive_key_authenticated": false,
+      "order_verified": true,
+      "week_recovered": true,
+      "kit_bought": true,
+      "archive_catalog_retrieved": true,
+      "old_badge_traced": false,
+      "archive_catalog_located": true,
+      "technique_review_reference": true,
+      "technique_complete": true,
+      "technique_failed": false,
+      "district_window_closed": true,
+      "technique_mode_cosign": true
+    },
+    "journal": [
+      "wall-account",
+      "field-kit",
+      "week-recovery",
+      "archive-catalog",
+      "archive-catalog-extraction",
+      "district-request",
+      "district-outcome",
+      "technique-review",
+      "technique-work-waiver"
+    ],
+    "creds": 205,
+    "strain": 0,
+    "items": [
+      "desk-guide"
+    ]
+  }
+}

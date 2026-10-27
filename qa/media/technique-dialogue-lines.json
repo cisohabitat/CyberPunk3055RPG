@@ -1,0 +1,194 @@
+[
+  {
+    "id": "voice-campaign-dispatcher-e5e1ea7d5a4a",
+    "speaker": "Dispatcher",
+    "voice": "af_river",
+    "speed": 0.94,
+    "text": "Three workers, two recipients. Different columns. Don't invent a recipient to make the totals agree.",
+    "loudnessLufs": -20,
+    "direction": "Clear, conversational and restrained. Preserve scope and voluntary agreement; no narration or stage directions.",
+    "segments": [
+      {
+        "text": "Three workers, two recipients.",
+        "speed": 0.94,
+        "pauseAfter": 0.18
+      },
+      {
+        "text": "Different columns.",
+        "speed": 0.94,
+        "pauseAfter": 0.18
+      },
+      {
+        "text": "Don't invent a recipient to make the totals agree.",
+        "speed": 0.94,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-dispatcher-33a79deedbfe",
+    "speaker": "Dispatcher",
+    "voice": "af_river",
+    "speed": 0.94,
+    "text": "Keep the depot return reference. An empty recipient field is not a lost packet.",
+    "loudnessLufs": -20,
+    "direction": "Clear, conversational and restrained. Preserve scope and voluntary agreement; no narration or stage directions.",
+    "segments": [
+      {
+        "text": "Keep the depot return reference.",
+        "speed": 0.94,
+        "pauseAfter": 0.18
+      },
+      {
+        "text": "An empty recipient field is not a lost packet.",
+        "speed": 0.94,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-dispatcher-e8cadae1434a",
+    "speaker": "Dispatcher",
+    "voice": "af_river",
+    "speed": 0.94,
+    "text": "Tell me what you want signed. A filing procedure and the truth of a source are different requests.",
+    "loudnessLufs": -20,
+    "direction": "Clear, conversational and restrained. Preserve scope and voluntary agreement; no narration or stage directions.",
+    "segments": [
+      {
+        "text": "Tell me what you want signed.",
+        "speed": 0.94,
+        "pauseAfter": 0.18
+      },
+      {
+        "text": "A filing procedure and the truth of a source are different requests.",
+        "speed": 0.94,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-dispatcher-15916f6b7de0",
+    "speaker": "Dispatcher",
+    "voice": "af_river",
+    "speed": 0.94,
+    "text": "I can sign for the filing process. You give up the paid sorting shift; I don't sign for the source.",
+    "loudnessLufs": -20,
+    "direction": "Clear, conversational and restrained. Preserve scope and voluntary agreement; no narration or stage directions.",
+    "segments": [
+      {
+        "text": "I can sign for the filing process.",
+        "speed": 0.94,
+        "pauseAfter": 0.18
+      },
+      {
+        "text": "You give up the paid sorting shift; I don't sign for the source.",
+        "speed": 0.94,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-dispatcher-05ca9f853d11",
+    "speaker": "Dispatcher",
+    "voice": "af_river",
+    "speed": 0.94,
+    "text": "A guide explains the form. It doesn't give you my agreement. Use your own signature, or leave the filing open.",
+    "loudnessLufs": -20,
+    "direction": "Clear, conversational and restrained. Preserve scope and voluntary agreement; no narration or stage directions.",
+    "segments": [
+      {
+        "text": "A guide explains the form.",
+        "speed": 0.94,
+        "pauseAfter": 0.18
+      },
+      {
+        "text": "It doesn't give you my agreement.",
+        "speed": 0.94,
+        "pauseAfter": 0.18
+      },
+      {
+        "text": "Use your own signature, or leave the filing open.",
+        "speed": 0.94,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-dispatcher-2d3cd37c57b9",
+    "speaker": "Dispatcher",
+    "voice": "af_river",
+    "speed": 0.86,
+    "text": "Procedure, not the truth of a source. Keep that limit on the copy.",
+    "loudnessLufs": -20,
+    "direction": "Clear, conversational and restrained. Preserve scope and voluntary agreement; no narration or stage directions.",
+    "segments": [
+      {
+        "text": "Procedure, not the truth of a source. Keep that limit on the copy.",
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-dispatcher-8bf37188cd15",
+    "speaker": "Dispatcher",
+    "voice": "af_river",
+    "speed": 0.94,
+    "text": "Received for review. That's what the reference says. The correction still needs an answer.",
+    "loudnessLufs": -20,
+    "direction": "Clear, conversational and restrained. Preserve scope and voluntary agreement; no narration or stage directions.",
+    "segments": [
+      {
+        "text": "Received for review.",
+        "speed": 0.94,
+        "pauseAfter": 0.18
+      },
+      {
+        "text": "That's what the reference says.",
+        "speed": 0.94,
+        "pauseAfter": 0.18
+      },
+      {
+        "text": "The correction still needs an answer.",
+        "speed": 0.94,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-dispatcher-83c284401881",
+    "speaker": "Dispatcher",
+    "voice": "af_river",
+    "speed": 0.9,
+    "text": "I can hold the packet for repair. A review reference needs a usable submission.",
+    "loudnessLufs": -20,
+    "direction": "Clear, conversational and restrained. Preserve scope and voluntary agreement; no narration or stage directions.",
+    "segments": [
+      {
+        "text": "I can hold the packet for repair. A review reference needs a usable submission.",
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-dispatcher-fc3a0c281ee2",
+    "speaker": "Dispatcher",
+    "voice": "af_river",
+    "speed": 0.94,
+    "text": "I agreed to the procedure. I didn't agree to certify a source I haven't checked.",
+    "loudnessLufs": -20,
+    "direction": "Clear, conversational and restrained. Preserve scope and voluntary agreement; no narration or stage directions.",
+    "segments": [
+      {
+        "text": "I agreed to the procedure.",
+        "speed": 0.94,
+        "pauseAfter": 0.18
+      },
+      {
+        "text": "I didn't agree to certify a source I haven't checked.",
+        "speed": 0.94,
+        "pauseAfter": 0
+      }
+    ]
+  }
+]

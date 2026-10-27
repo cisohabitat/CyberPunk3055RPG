@@ -1,0 +1,92 @@
+[
+  {
+    "id": "voice-campaign-dispatcher-e5e1ea7d5a4a",
+    "key": "ce48af49dfd62329",
+    "scene": "act2_technique_chrome",
+    "sceneSpeaker": "Dispatcher",
+    "speaker": "Dispatcher",
+    "quote": "Three workers, two recipients. Different columns. Don't invent a recipient to make the totals agree.",
+    "text": "Three workers, two recipients. Different columns. Don't invent a recipient to make the totals agree.",
+    "part": 0
+  },
+  {
+    "id": "voice-campaign-dispatcher-33a79deedbfe",
+    "key": "da4e5345b6f038f4",
+    "scene": "act2_technique_ghost",
+    "sceneSpeaker": "Dispatcher",
+    "speaker": "Dispatcher",
+    "quote": "Keep the depot return reference. An empty recipient field is not a lost packet.",
+    "text": "Keep the depot return reference. An empty recipient field is not a lost packet.",
+    "part": 0
+  },
+  {
+    "id": "voice-campaign-dispatcher-e8cadae1434a",
+    "key": "322caab2ac013f7f",
+    "scene": "act2_technique_face",
+    "sceneSpeaker": "Dispatcher",
+    "speaker": "Dispatcher",
+    "quote": "Tell me what you want signed. A filing procedure and the truth of a source are different requests.",
+    "text": "Tell me what you want signed. A filing procedure and the truth of a source are different requests.",
+    "part": 0
+  },
+  {
+    "id": "voice-campaign-dispatcher-15916f6b7de0",
+    "key": "84636c7dc1d3c6d8",
+    "scene": "act2_technique_face",
+    "sceneSpeaker": "Dispatcher",
+    "speaker": "Dispatcher",
+    "quote": "I can sign for the filing process. You give up the paid sorting shift; I don't sign for the source.",
+    "text": "I can sign for the filing process. You give up the paid sorting shift; I don't sign for the source.",
+    "part": 0
+  },
+  {
+    "id": "voice-campaign-dispatcher-05ca9f853d11",
+    "key": "8f10ff7a50626817",
+    "scene": "act2_technique_face",
+    "sceneSpeaker": "Dispatcher",
+    "speaker": "Dispatcher",
+    "quote": "A guide explains the form. It doesn't give you my agreement. Use your own signature, or leave the filing open.",
+    "text": "A guide explains the form. It doesn't give you my agreement. Use your own signature, or leave the filing open.",
+    "part": 0
+  },
+  {
+    "id": "voice-campaign-dispatcher-2d3cd37c57b9",
+    "key": "634a823dd612df28",
+    "scene": "act2_technique_face_scope",
+    "sceneSpeaker": "Dispatcher",
+    "speaker": "Dispatcher",
+    "quote": "Procedure, not the truth of a source. Keep that limit on the copy.",
+    "text": "Procedure, not the truth of a source. Keep that limit on the copy.",
+    "part": 0
+  },
+  {
+    "id": "voice-campaign-dispatcher-8bf37188cd15",
+    "key": "eb41331eb6629fe6",
+    "scene": "act2_technique_result",
+    "sceneSpeaker": "Dispatcher",
+    "speaker": "Dispatcher",
+    "quote": "Received for review. That's what the reference says. The correction still needs an answer.",
+    "text": "Received for review. That's what the reference says. The correction still needs an answer.",
+    "part": 0
+  },
+  {
+    "id": "voice-campaign-dispatcher-83c284401881",
+    "key": "1cf1f4113aa45b0a",
+    "scene": "act2_technique_result",
+    "sceneSpeaker": "Dispatcher",
+    "speaker": "Dispatcher",
+    "quote": "I can hold the packet for repair. A review reference needs a usable submission.",
+    "text": "I can hold the packet for repair. A review reference needs a usable submission.",
+    "part": 0
+  },
+  {
+    "id": "voice-campaign-dispatcher-fc3a0c281ee2",
+    "key": "b0d7e842e1c00e0c",
+    "scene": "act2_technique_result",
+    "sceneSpeaker": "Dispatcher",
+    "speaker": "Dispatcher",
+    "quote": "I agreed to the procedure. I didn't agree to certify a source I haven't checked.",
+    "text": "I agreed to the procedure. I didn't agree to certify a source I haven't checked.",
+    "part": 0
+  }
+]

@@ -1,0 +1,363 @@
+{
+  "generated": "2026-10-27",
+  "disclosure": "Stock synthetic voices generated offline with Kokoro v1.0; no actor session or individual voice clone was commissioned. Only the fixed authored quotations below are rendered. No model or speech service ships in the game.",
+  "driver": {
+    "name": "kokoro-onnx",
+    "version": "0.6.1",
+    "license": "MIT",
+    "url": "https://github.com/thewh1teagle/kokoro-onnx",
+    "licenseFile": "qa/media/voice-sources/kokoro-onnx-LICENSE.txt"
+  },
+  "model": {
+    "name": "Kokoro-82M v1.0",
+    "license": "Apache-2.0",
+    "card": "https://huggingface.co/hexgrad/Kokoro-82M",
+    "licenseFile": "qa/media/voice-sources/Kokoro-LICENSE.txt",
+    "files": [
+      {
+        "name": "kokoro-v1.0.onnx",
+        "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.onnx",
+        "sha256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+        "bytes": 325505369
+      },
+      {
+        "name": "voices-v1.0.bin",
+        "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin",
+        "sha256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+        "bytes": 28214398
+      }
+    ]
+  },
+  "source": "scripts/generate-campaign-voices.py",
+  "processing": "Exact authored character words; existing cast identities; optional sentence pauses, 8ms phrase fades, normalized PCM peak 0.72 with 80ms edges; optional per-line two-pass EBU loudness matching with -2dBTP ceiling; 96kbps mono MP3 delivery. Original PCM and normalized PCM retained outside Git.",
+  "reviewStatus": "Technical signal and source review; stock synthetic dialogue. No commissioned actors or independent listening acceptance.",
+  "lines": [
+    {
+      "id": "voice-campaign-dispatcher-e5e1ea7d5a4a",
+      "speaker": "Dispatcher",
+      "voice": "af_river",
+      "speed": 0.94,
+      "text": "Three workers, two recipients. Different columns. Don't invent a recipient to make the totals agree.",
+      "loudnessLufs": -20,
+      "direction": "Clear, conversational and restrained. Preserve scope and voluntary agreement; no narration or stage directions.",
+      "segments": [
+        {
+          "text": "Three workers, two recipients.",
+          "speed": 0.94,
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "Different columns.",
+          "speed": 0.94,
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "Don't invent a recipient to make the totals agree.",
+          "speed": 0.94,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -20.22,
+      "truePeakDbtp": -1.62,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-dispatcher-e5e1ea7d5a4a.mp3",
+      "sourceFile": "/workspace/generated_audio/build-techniques-phase4/voice-campaign-dispatcher-e5e1ea7d5a4a.wav",
+      "sourceSha256": "6ab20cffbffd98bc528654aab942db0fed989205c4042ffe1f9ab32a2ec34f1b",
+      "pcmDeliveryFile": "/workspace/generated_audio/build-techniques-phase4/voice-campaign-dispatcher-e5e1ea7d5a4a-delivery.wav",
+      "pcmDeliverySha256": "4e8c1a91a2d13e71809a34c2d1c2c012e40fb065812d76a115e68242de13f294",
+      "sha256": "891408a196c7e75baf262d2ae4276470eb0c56195348dbb399c4de51f7372fa9",
+      "bytes": 89324,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 7.3613333333333335,
+      "peak": 0.8296314477920532,
+      "rms": 0.1084580197930336
+    },
+    {
+      "id": "voice-campaign-dispatcher-33a79deedbfe",
+      "speaker": "Dispatcher",
+      "voice": "af_river",
+      "speed": 0.94,
+      "text": "Keep the depot return reference. An empty recipient field is not a lost packet.",
+      "loudnessLufs": -20,
+      "direction": "Clear, conversational and restrained. Preserve scope and voluntary agreement; no narration or stage directions.",
+      "segments": [
+        {
+          "text": "Keep the depot return reference.",
+          "speed": 0.94,
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "An empty recipient field is not a lost packet.",
+          "speed": 0.94,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -20.11,
+      "truePeakDbtp": -1.67,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-dispatcher-33a79deedbfe.mp3",
+      "sourceFile": "/workspace/generated_audio/build-techniques-phase4/voice-campaign-dispatcher-33a79deedbfe.wav",
+      "sourceSha256": "8c394645209dcba5dcd88cdf6fdaad7b3802da00e25b5a9b54dc43e51b1aee27",
+      "pcmDeliveryFile": "/workspace/generated_audio/build-techniques-phase4/voice-campaign-dispatcher-33a79deedbfe-delivery.wav",
+      "pcmDeliverySha256": "569f96837c38bce18316afb8abb81f7a7c7f3de39d6a77917434d6d3aba3bc61",
+      "sha256": "ec7a78141dd742db17a9c51ef0f00a0aab6a44c059a3882e05e6404750a3cbc4",
+      "bytes": 69164,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 5.673333333333333,
+      "peak": 0.8240102529525757,
+      "rms": 0.1117355078458786
+    },
+    {
+      "id": "voice-campaign-dispatcher-e8cadae1434a",
+      "speaker": "Dispatcher",
+      "voice": "af_river",
+      "speed": 0.94,
+      "text": "Tell me what you want signed. A filing procedure and the truth of a source are different requests.",
+      "loudnessLufs": -20,
+      "direction": "Clear, conversational and restrained. Preserve scope and voluntary agreement; no narration or stage directions.",
+      "segments": [
+        {
+          "text": "Tell me what you want signed.",
+          "speed": 0.94,
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "A filing procedure and the truth of a source are different requests.",
+          "speed": 0.94,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -20.36,
+      "truePeakDbtp": -1.61,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-dispatcher-e8cadae1434a.mp3",
+      "sourceFile": "/workspace/generated_audio/build-techniques-phase4/voice-campaign-dispatcher-e8cadae1434a.wav",
+      "sourceSha256": "a9a72246475440fc68c2bef7660e8cb4a256bab88271da97e2face29c07300bd",
+      "pcmDeliveryFile": "/workspace/generated_audio/build-techniques-phase4/voice-campaign-dispatcher-e8cadae1434a-delivery.wav",
+      "pcmDeliverySha256": "0bb0737db8e3064c0f23ca7ff2d7b27028b4ebf2dfbcd27ab32869677b45ecbc",
+      "sha256": "dc49a847e0f1140456b8b0351cdbf596eb3b1bbeb56aa6da7d6b96495a18557a",
+      "bytes": 72332,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 5.950666666666667,
+      "peak": 0.8295485973358154,
+      "rms": 0.11243388056755066
+    },
+    {
+      "id": "voice-campaign-dispatcher-15916f6b7de0",
+      "speaker": "Dispatcher",
+      "voice": "af_river",
+      "speed": 0.94,
+      "text": "I can sign for the filing process. You give up the paid sorting shift; I don't sign for the source.",
+      "loudnessLufs": -20,
+      "direction": "Clear, conversational and restrained. Preserve scope and voluntary agreement; no narration or stage directions.",
+      "segments": [
+        {
+          "text": "I can sign for the filing process.",
+          "speed": 0.94,
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "You give up the paid sorting shift; I don't sign for the source.",
+          "speed": 0.94,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -20.11,
+      "truePeakDbtp": -1.58,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-dispatcher-15916f6b7de0.mp3",
+      "sourceFile": "/workspace/generated_audio/build-techniques-phase4/voice-campaign-dispatcher-15916f6b7de0.wav",
+      "sourceSha256": "48a2409d2836e4e58c4e42ccd21eb19d38876f96971e9fe167b765273d223833",
+      "pcmDeliveryFile": "/workspace/generated_audio/build-techniques-phase4/voice-campaign-dispatcher-15916f6b7de0-delivery.wav",
+      "pcmDeliverySha256": "b0c092b17c8829c634d4768ee41080790693d19a06eed0f4819d2572dab79b6c",
+      "sha256": "1a3c0bf2131fb1c724210ef15cb376a343f6d63d25972a12bedf689a04544d38",
+      "bytes": 77516,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 6.361958333333333,
+      "peak": 0.8334435224533081,
+      "rms": 0.11363087594509125
+    },
+    {
+      "id": "voice-campaign-dispatcher-05ca9f853d11",
+      "speaker": "Dispatcher",
+      "voice": "af_river",
+      "speed": 0.94,
+      "text": "A guide explains the form. It doesn't give you my agreement. Use your own signature, or leave the filing open.",
+      "loudnessLufs": -20,
+      "direction": "Clear, conversational and restrained. Preserve scope and voluntary agreement; no narration or stage directions.",
+      "segments": [
+        {
+          "text": "A guide explains the form.",
+          "speed": 0.94,
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "It doesn't give you my agreement.",
+          "speed": 0.94,
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "Use your own signature, or leave the filing open.",
+          "speed": 0.94,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -20.03,
+      "truePeakDbtp": -1.65,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-dispatcher-05ca9f853d11.mp3",
+      "sourceFile": "/workspace/generated_audio/build-techniques-phase4/voice-campaign-dispatcher-05ca9f853d11.wav",
+      "sourceSha256": "d3658b36fd35b99529d47b378be8eb320f866380de810f769d9b1b07d1152c1e",
+      "pcmDeliveryFile": "/workspace/generated_audio/build-techniques-phase4/voice-campaign-dispatcher-05ca9f853d11-delivery.wav",
+      "pcmDeliverySha256": "944c0f7e1bddb48d1884031096bcb913d884d41003733263cf2ebc15c11bfe5a",
+      "sha256": "5a6773738760d9dabda1a969d5dda60315de19b24e27a47a517e46468e9bcae2",
+      "bytes": 96812,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 7.991333333333333,
+      "peak": 0.824784517288208,
+      "rms": 0.11208129674196243
+    },
+    {
+      "id": "voice-campaign-dispatcher-2d3cd37c57b9",
+      "speaker": "Dispatcher",
+      "voice": "af_river",
+      "speed": 0.86,
+      "text": "Procedure, not the truth of a source. Keep that limit on the copy.",
+      "loudnessLufs": -20,
+      "direction": "Clear, conversational and restrained. Preserve scope and voluntary agreement; no narration or stage directions.",
+      "segments": [
+        {
+          "text": "Procedure, not the truth of a source. Keep that limit on the copy.",
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -20.02,
+      "truePeakDbtp": -1.65,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-dispatcher-2d3cd37c57b9.mp3",
+      "sourceFile": "/workspace/generated_audio/build-techniques-phase4/voice-campaign-dispatcher-2d3cd37c57b9.wav",
+      "sourceSha256": "a4bc4e20adfbaa12ad038d6d39a61f9def8c8d1500cf1ab09f118bdf2aeede7e",
+      "pcmDeliveryFile": "/workspace/generated_audio/build-techniques-phase4/voice-campaign-dispatcher-2d3cd37c57b9-delivery.wav",
+      "pcmDeliverySha256": "afd135b6f19f2b97fef35730f2790d4218551fc4c9eee07969d6a3142a92238a",
+      "sha256": "3263da71b327b3cf23ac0d5cfa2645ced617b83bc9bbf7fdeb336943781b1c51",
+      "bytes": 53900,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 4.405333333333333,
+      "peak": 0.8264260292053223,
+      "rms": 0.11346887052059174
+    },
+    {
+      "id": "voice-campaign-dispatcher-8bf37188cd15",
+      "speaker": "Dispatcher",
+      "voice": "af_river",
+      "speed": 0.94,
+      "text": "Received for review. That's what the reference says. The correction still needs an answer.",
+      "loudnessLufs": -20,
+      "direction": "Clear, conversational and restrained. Preserve scope and voluntary agreement; no narration or stage directions.",
+      "segments": [
+        {
+          "text": "Received for review.",
+          "speed": 0.94,
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "That's what the reference says.",
+          "speed": 0.94,
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "The correction still needs an answer.",
+          "speed": 0.94,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -20.0,
+      "truePeakDbtp": -1.68,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-dispatcher-8bf37188cd15.mp3",
+      "sourceFile": "/workspace/generated_audio/build-techniques-phase4/voice-campaign-dispatcher-8bf37188cd15.wav",
+      "sourceSha256": "a875506a34f0754d540291b7d53ec0df2bde1c2acf5603eae608de907f4a135f",
+      "pcmDeliveryFile": "/workspace/generated_audio/build-techniques-phase4/voice-campaign-dispatcher-8bf37188cd15-delivery.wav",
+      "pcmDeliverySha256": "da5667254cbdffbc89f747556cc867692b5a73cfd891d58574bb9ef959d99e3b",
+      "sha256": "0426a0650109b78140aec01cf6162f64550092c4194abeedb50da0d033ef3311",
+      "bytes": 77804,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 6.395333333333333,
+      "peak": 0.8236798048019409,
+      "rms": 0.10887981951236725
+    },
+    {
+      "id": "voice-campaign-dispatcher-83c284401881",
+      "speaker": "Dispatcher",
+      "voice": "af_river",
+      "speed": 0.9,
+      "text": "I can hold the packet for repair. A review reference needs a usable submission.",
+      "loudnessLufs": -20,
+      "direction": "Clear, conversational and restrained. Preserve scope and voluntary agreement; no narration or stage directions.",
+      "segments": [
+        {
+          "text": "I can hold the packet for repair. A review reference needs a usable submission.",
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -20.0,
+      "truePeakDbtp": -1.78,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-dispatcher-83c284401881.mp3",
+      "sourceFile": "/workspace/generated_audio/build-techniques-phase4/voice-campaign-dispatcher-83c284401881.wav",
+      "sourceSha256": "b4da898e53adf4cad0428630ea7ace2f4b168ea11623f216b168b7138911d68b",
+      "pcmDeliveryFile": "/workspace/generated_audio/build-techniques-phase4/voice-campaign-dispatcher-83c284401881-delivery.wav",
+      "pcmDeliverySha256": "ff1536cb88e203d8a313282d6206a5ab9108cce551588c7aec41d99c681b6af9",
+      "sha256": "6fee72c7f4f8bdda1af8587fdac725b0bd92f9e97ed15283197bd423025c506c",
+      "bytes": 61964,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 5.066666666666666,
+      "peak": 0.8090088367462158,
+      "rms": 0.11300741881132126
+    },
+    {
+      "id": "voice-campaign-dispatcher-fc3a0c281ee2",
+      "speaker": "Dispatcher",
+      "voice": "af_river",
+      "speed": 0.94,
+      "text": "I agreed to the procedure. I didn't agree to certify a source I haven't checked.",
+      "loudnessLufs": -20,
+      "direction": "Clear, conversational and restrained. Preserve scope and voluntary agreement; no narration or stage directions.",
+      "segments": [
+        {
+          "text": "I agreed to the procedure.",
+          "speed": 0.94,
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "I didn't agree to certify a source I haven't checked.",
+          "speed": 0.94,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -20.01,
+      "truePeakDbtp": -1.74,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-dispatcher-fc3a0c281ee2.mp3",
+      "sourceFile": "/workspace/generated_audio/build-techniques-phase4/voice-campaign-dispatcher-fc3a0c281ee2.wav",
+      "sourceSha256": "e95fa06893d8bfe1db3af0bf1ef7f8114d4a604326f5747df44f65f80f8a086f",
+      "pcmDeliveryFile": "/workspace/generated_audio/build-techniques-phase4/voice-campaign-dispatcher-fc3a0c281ee2-delivery.wav",
+      "pcmDeliverySha256": "4ca344c07a8011c92ecc63b0169594d90caf8e8c2b45ea494426b8dd3f8f7dba",
+      "sha256": "6a20aad02f5719bf89333aacdf71b6aba3fc3a23937c117e9f04e4a76f94ee5c",
+      "bytes": 64844,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 5.310666666666667,
+      "peak": 0.8186066150665283,
+      "rms": 0.11177070438861847
+    }
+  ]
+}

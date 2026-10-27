@@ -1,0 +1,102 @@
+{
+  "method": "Independent ASR of delivered MP3s, no authored-text prompt; punctuation/case/apostrophe and 20-to-twenty normalization only. Automated proxy, not human listening acceptance.",
+  "model": "Systran/faster-whisper-base.en",
+  "runtime": "faster-whisper 1.2.1, CPU int8",
+  "modelFiles": [
+    {
+      "name": "models--Systran--faster-whisper-base.en/snapshots/3d3d5dee26484f91867d81cb899cfcf72b96be6c/config.json",
+      "sha256": "f3bc3821e9fc76a27bae538e11ae5b677dcdd352b4600429ce7951d398569aeb"
+    },
+    {
+      "name": "models--Systran--faster-whisper-base.en/snapshots/3d3d5dee26484f91867d81cb899cfcf72b96be6c/model.bin",
+      "sha256": "2a166925539a16005f14ff328359f9b9adb9dc4fb631bb3b227526862e93e2ef"
+    },
+    {
+      "name": "models--Systran--faster-whisper-base.en/snapshots/3d3d5dee26484f91867d81cb899cfcf72b96be6c/tokenizer.json",
+      "sha256": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df"
+    }
+  ],
+  "lines": [
+    {
+      "id": "voice-campaign-dispatcher-e5e1ea7d5a4a",
+      "speaker": "Dispatcher",
+      "path": "public/audio/voice-campaign-dispatcher-e5e1ea7d5a4a.mp3",
+      "sha256": "891408a196c7e75baf262d2ae4276470eb0c56195348dbb399c4de51f7372fa9",
+      "authoredText": "Three workers, two recipients. Different columns. Don't invent a recipient to make the totals agree.",
+      "transcription": "Three workers, two recipients. Different columns. Don't invent a recipient to make the totals agree.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-dispatcher-33a79deedbfe",
+      "speaker": "Dispatcher",
+      "path": "public/audio/voice-campaign-dispatcher-33a79deedbfe.mp3",
+      "sha256": "ec7a78141dd742db17a9c51ef0f00a0aab6a44c059a3882e05e6404750a3cbc4",
+      "authoredText": "Keep the depot return reference. An empty recipient field is not a lost packet.",
+      "transcription": "Keep the depot return reference. An empty recipient field is not a lost packet.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-dispatcher-e8cadae1434a",
+      "speaker": "Dispatcher",
+      "path": "public/audio/voice-campaign-dispatcher-e8cadae1434a.mp3",
+      "sha256": "dc49a847e0f1140456b8b0351cdbf596eb3b1bbeb56aa6da7d6b96495a18557a",
+      "authoredText": "Tell me what you want signed. A filing procedure and the truth of a source are different requests.",
+      "transcription": "Tell me what you want signed. A filing procedure and the truth of a source are different requests.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-dispatcher-15916f6b7de0",
+      "speaker": "Dispatcher",
+      "path": "public/audio/voice-campaign-dispatcher-15916f6b7de0.mp3",
+      "sha256": "1a3c0bf2131fb1c724210ef15cb376a343f6d63d25972a12bedf689a04544d38",
+      "authoredText": "I can sign for the filing process. You give up the paid sorting shift; I don't sign for the source.",
+      "transcription": "I can sign for the filing process. You give up the paid sorting shift. I don't sign for the source.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-dispatcher-05ca9f853d11",
+      "speaker": "Dispatcher",
+      "path": "public/audio/voice-campaign-dispatcher-05ca9f853d11.mp3",
+      "sha256": "5a6773738760d9dabda1a969d5dda60315de19b24e27a47a517e46468e9bcae2",
+      "authoredText": "A guide explains the form. It doesn't give you my agreement. Use your own signature, or leave the filing open.",
+      "transcription": "A guide explains the form. It doesn't give you my agreement. Use your own signature or leave the filing open.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-dispatcher-2d3cd37c57b9",
+      "speaker": "Dispatcher",
+      "path": "public/audio/voice-campaign-dispatcher-2d3cd37c57b9.mp3",
+      "sha256": "3263da71b327b3cf23ac0d5cfa2645ced617b83bc9bbf7fdeb336943781b1c51",
+      "authoredText": "Procedure, not the truth of a source. Keep that limit on the copy.",
+      "transcription": "Procedure not the truth of a source. Keep that limit on the copy.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-dispatcher-8bf37188cd15",
+      "speaker": "Dispatcher",
+      "path": "public/audio/voice-campaign-dispatcher-8bf37188cd15.mp3",
+      "sha256": "0426a0650109b78140aec01cf6162f64550092c4194abeedb50da0d033ef3311",
+      "authoredText": "Received for review. That's what the reference says. The correction still needs an answer.",
+      "transcription": "received for review. That's what the reference says. The correction still needs an answer.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-dispatcher-83c284401881",
+      "speaker": "Dispatcher",
+      "path": "public/audio/voice-campaign-dispatcher-83c284401881.mp3",
+      "sha256": "6fee72c7f4f8bdda1af8587fdac725b0bd92f9e97ed15283197bd423025c506c",
+      "authoredText": "I can hold the packet for repair. A review reference needs a usable submission.",
+      "transcription": "I can hold the packet for repair. A review reference needs a usable submission.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-dispatcher-fc3a0c281ee2",
+      "speaker": "Dispatcher",
+      "path": "public/audio/voice-campaign-dispatcher-fc3a0c281ee2.mp3",
+      "sha256": "6a20aad02f5719bf89333aacdf71b6aba3fc3a23937c117e9f04e4a76f94ee5c",
+      "authoredText": "I agreed to the procedure. I didn't agree to certify a source I haven't checked.",
+      "transcription": "I agreed to the procedure. I didn't agree to certify a source I haven't checked.",
+      "exactNormalizedWords": true
+    }
+  ]
+}

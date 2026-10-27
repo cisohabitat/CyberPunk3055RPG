@@ -52,6 +52,7 @@ import { TestimonyBrief } from "./TestimonyBrief";
 import { ArchiveBrief } from "./ArchiveBrief";
 import { ArchivePlanner } from "./ArchivePlanner";
 import { DistrictLedger } from "./DistrictLedger";
+import { TechniqueBoard } from "./TechniqueBoard";
 import { commitArchivePlan } from "@/lib/archive-plan";
 import { TransferBrief } from "./TransferBrief";
 import { memoryDisposition } from "@/lib/evidence";
@@ -426,6 +427,7 @@ export function PlayScreen({
             {scene.id === "act2_archive_compare" && <ArchiveCatalog state={state} choices={choices} onChoose={pick} numberShortcuts={preferences.numberShortcuts} />}
             <ArchivePlanner key={`archive-plan-${scene.id}`} state={state} onSave={draft => onChange(commitArchivePlan(state, draft))} />
             <DistrictLedger key={`district-ledger-${scene.id}`} state={state} />
+            <TechniqueBoard key={`technique-board-${scene.id}`} state={state} />
             {scene.id === "memory_sequence" && <MemoryTimeline state={state} choices={choices} onPlace={pick} artwork={preferences.artwork !== "none"} reducedMotion={reduceMotion} numberShortcuts={preferences.numberShortcuts} />}
             {["act2_route_map", "act2_route_exit", "act2_route_review", "act2_route_crossing"].includes(scene.id) && <RouteBoard state={state} />}
             {scene.finale && <FinaleReflection state={state} artwork={preferences.artwork !== "none"} />}

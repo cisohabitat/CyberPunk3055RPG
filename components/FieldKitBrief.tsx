@@ -2,6 +2,7 @@ import { FIELD_KITS, equippedKits, fieldKitBudget, trainedKitAdvice } from "@/li
 import type { GameState } from "@/lib/types";
 import { kitComparison } from "@/lib/kit-comparison";
 import { getScene, presentChoices } from "@/lib/engine";
+import { TECHNIQUES } from "@/lib/build-techniques";
 
 export function FieldKitBrief({ state }: { state: GameState }) {
   const shopping = state.sceneId === "act2_workshop";
@@ -21,6 +22,7 @@ export function FieldKitBrief({ state }: { state: GameState }) {
           {shopping && trainedKitAdvice(state, kit.stat) && <details className="kit-training" data-testid={`training-advice-${kit.id}`}>
             <summary>How the {kit.name} fits your training</summary>
             <p>{trainedKitAdvice(state, kit.stat)}</p>
+            <p>{TECHNIQUES.find(t => t.kit === kit.id)?.use} Later filing procedures need an actual depot request and remaining actions; this comparison grants no access.</p>
           </details>}
           {shopping && !state.items.includes(kit.id) && <details className="kit-comparison" data-testid={`kit-odds-${kit.id}`}>
             <summary>Compare current check odds</summary>

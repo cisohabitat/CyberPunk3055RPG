@@ -4222,6 +4222,38 @@
           "sha256": "a940030a93330c50cbfde0779fb2eddcf92ba0127c49387fc9aff1faf7e47a25"
         }
       ]
+    },
+    {
+      "id": "correction-bench",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-27",
+      "sourceFile": "/workspace/generated_images/exec-620e7e4c-d781-4d86-b12f-12ca88686b3d.png",
+      "sourceSha256": "35bfaddf589e8b50ba8f0c3c8d93a23371739b11bf709e84a1d16f5acb0d34c1",
+      "promptSummary": "Reference-guided neutral depot filing bench: blank comparison sheet and opaque sleeve in separate trays, unpowered display and rain beyond. No people, names, kit ownership, signature or successful review.",
+      "deliveryProcessing": "Resize and JPEG encode only; original generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/correction-bench.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 397454,
+          "sha256": "736b7458376c81ed74a7ee6ba77b361a8cd84571512b70cc3feefeab547127c6"
+        },
+        {
+          "path": "public/art/correction-bench-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 105559,
+          "sha256": "3ddac00a6bb46f325776b6bab033c9be6f38433ecdafade78e795e9c257ad653"
+        },
+        {
+          "path": "public/art/previews/correction-bench.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 2637,
+          "sha256": "69f8297d78b80f86ab32093e26c65cdf26b251d94257355b3f6626b3ba8ce144"
+        }
+      ]
     }
   ]
 }

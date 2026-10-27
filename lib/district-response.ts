@@ -45,7 +45,8 @@ export function districtStatus(s: GameState) {
   const result = s.flags.district_work_paid ? "You completed a registered sorting shift: twenty creds earned, one strain spent."
     : s.flags.district_rest_done ? "You attended a short service-room rest: up to one strain recovered; no treatment or proof."
       : s.flags.district_window_closed || s.flags.act2_done ? "The action window is closed; unfinished tasks remain unfinished." : `${districtRemaining(s)} depot actions remain. Reading, conversation and settings spend none.`;
-  return `${place} ${result}${s.flags.district_correction_carried ? " You delivered the separate correction for filing; submission is not acceptance." : ""}`;
+  const specialist = s.flags.technique_review_reference ? " A specialist procedure obtained a review reference; the correction itself remains undecided." : s.flags.technique_failed ? " The specialist packet is held without a review reference." : s.flags.technique_started ? " A specialist procedure retains its committed costs and actual completion status." : "";
+  return `${place} ${result}${s.flags.district_correction_carried && !s.flags.technique_review_reference ? " You delivered the separate correction for filing; submission is not acceptance." : ""}${specialist}${s.flags.technique_work_waived ? " The paid sorting opportunity was waived; no wage is due for that opportunity." : ""}`;
 }
 
 export const DISTRICT_ROUTE_CATALOG = [

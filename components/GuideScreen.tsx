@@ -38,6 +38,7 @@ export function GuideScreen({ artwork, music, onSettings }: { artwork: boolean; 
         <nav className="guide-index" aria-label="Field guide chapters">
           <a href="#guide-city">Enter the city</a><a href="#guide-first-run">Your first run</a><a href="#guide-checks">Choices & dice</a><a href="#guide-memory">Keep your word</a><a href="#guide-controls">Controls & saves</a>
         </nav>
+        <p>Later in the week, earned training opens specialist procedures at the canal filing bench. Matching equipment changes exposure, effort or a voluntary bargain; it does not grant another skill. Compare before committing: reading is free, but preparation and submission use saved depot actions. A review reference confirms intake, never source truth or witness permission.</p>
         <p className="guide-deck">The rain is already here. The offer can wait until you know how to listen.</p>
         <p>Welcome to Saint Shard, a solo story RPG. Read, choose and carry the consequences into the next conversation. This guide introduces the city and the rules while leaving the job’s discoveries for your run.</p>
         <MenuMusic {...music} />

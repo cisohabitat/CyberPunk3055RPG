@@ -42,6 +42,9 @@ const ENCOUNTERS: Record<string, Illustration> = {
   act2_shelter_brief: { src: "/art/shelter.jpg", small: "/art/shelter-small.jpg", caption: "Ward Four · the shelter landing", description: "A passable ramp runs beside the shelter stair; bags, a chair and a bucket wait beside a leaking valve." },
   act2_freight_brief: { src: "/art/freight.jpg", small: "/art/freight-small.jpg", caption: "Canal gate · dispatch", description: "A closed, sealed diagnostic case rests under a lamp at a sheltered canal dispatch table." },
 };
+for (const id of ["act2_technique_bench", "act2_technique_chrome", "act2_technique_chrome_submit", "act2_technique_ghost", "act2_technique_ghost_route", "act2_technique_face", "act2_technique_face_scope", "act2_technique_nerve", "act2_technique_nerve_handover", "act2_technique_result"]) ENCOUNTERS[id] = {
+  src: "/art/correction-bench.jpg", small: "/art/correction-bench-small.jpg", caption: "Canal depot · two records stay separate", description: "A blank comparison sheet and closed opaque sleeve rest in separate trays beside an unpowered reference display on a lamp-lit filing bench. No signature, review receipt, authentication, personal identity or successful outcome is displayed.",
+};
 const SPIRE_COUNTER: Illustration = {
   src: "/art/spire-counter.jpg", small: "/art/spire-counter-small.jpg", caption: "Helion · the service counter",
   description: "Shift papers, a closed folio and a sleeved receiver rest on a worn service counter beneath an amber lamp; workers wait beyond the queue rails.",

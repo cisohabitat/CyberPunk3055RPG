@@ -8,6 +8,7 @@ import { visibleCampaignDialogue, visibleCheckDialogue } from "../lib/campaign-d
 import old from "../qa/media/voice-lines.json";
 import additions from "../qa/media/campaign-dialogue-lines.json";
 import districtAdditions from "../qa/media/district-dialogue-lines.json";
+import techniqueAdditions from "../qa/media/technique-dialogue-lines.json";
 import { allCampaignDialogue as bindings } from "../lib/campaign-dialogue";
 import { dialogueExamples } from "../qa/production/dialogue-examples";
 import { installAudioReview, type AudioReview } from "../qa/production/audio-review";
@@ -22,13 +23,13 @@ async function main() {
   if (!Number.isInteger(workers) || workers < 1 || workers > 4) throw new Error("Use 1..4 QA browser workers");
   const automatic = args.includes("--automatic"), used = new Set(bindings.map(line => line.id));
   const requested = args.includes("--ids") ? argument("--ids", "").split(",") : undefined;
-  const candidates = [...(args.includes("--only-new") ? [] : old), ...additions, ...districtAdditions].filter(line => used.has(line.id));
+  const candidates = [...(args.includes("--only-new") ? [] : old), ...additions, ...districtAdditions, ...techniqueAdditions].filter(line => used.has(line.id));
   if (requested && (!requested.length || requested.some(id => !candidates.some(line => line.id === id)))) throw new Error("Every --ids entry must identify an active delivery in this audit scope");
   const lines = candidates.filter(line => !requested || requested.includes(line.id));
   const examples = dialogueExamples();
   const revision = execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8" }).trim();
   const dirty = Boolean(execFileSync("git", ["status", "--porcelain"], { encoding: "utf8" }).trim());
-  const testedSources = Object.fromEntries(["lib/preferences.ts", "next.config.ts", "qa/media/bed-delivery.json", "lib/sound.ts", "lib/voice-level.ts", "qa/media/voice-levels.json", "qa/media/voice-mix.json", "lib/engine.ts", "lib/campaign-dialogue.ts", "lib/dialogue-playback.ts", "components/VoiceLine.tsx", "components/GameApp.tsx", "components/PlayScreen.tsx", "qa/production/keyboard.ts", "qa/production/audio-review.ts", "qa/production/dialogue-examples.ts", "qa/media/campaign-dialogue-bindings.json", "qa/media/campaign-dialogue-lines.json", "qa/media/district-dialogue-bindings.json", "qa/media/district-dialogue-lines.json", "qa/media/district-dialogue-provenance.json", "qa/media/voice-lines.json", "scripts/voice-validation.ts"].map(file => [file, createHash("sha256").update(readFileSync(file)).digest("hex")]));
+  const testedSources = Object.fromEntries(["lib/preferences.ts", "next.config.ts", "qa/media/bed-delivery.json", "lib/build-techniques.ts", "lib/story/build-techniques.ts", "lib/technique-dialogue.ts", "components/TechniqueBoard.tsx", "qa/media/technique-dialogue-bindings.json", "qa/media/technique-dialogue-lines.json", "qa/media/technique-dialogue-provenance.json", "lib/sound.ts", "lib/voice-level.ts", "qa/media/voice-levels.json", "qa/media/voice-mix.json", "lib/engine.ts", "lib/campaign-dialogue.ts", "lib/dialogue-playback.ts", "components/VoiceLine.tsx", "components/GameApp.tsx", "components/PlayScreen.tsx", "qa/production/keyboard.ts", "qa/production/audio-review.ts", "qa/production/dialogue-examples.ts", "qa/media/campaign-dialogue-bindings.json", "qa/media/campaign-dialogue-lines.json", "qa/media/district-dialogue-bindings.json", "qa/media/district-dialogue-lines.json", "qa/media/district-dialogue-provenance.json", "qa/media/voice-lines.json", "scripts/voice-validation.ts"].map(file => [file, createHash("sha256").update(readFileSync(file)).digest("hex")]));
   const browser = await chromium.launch({ executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH, args: ["--no-sandbox"] });
   const rows: object[] = [], errors: string[] = [], failures: string[] = []; let next = 0; const started = Date.now();
   const filename = (id: string) => `${id}.${id.startsWith("voice-campaign-") ? "mp3" : "wav"}`;

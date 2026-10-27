@@ -1,0 +1,123 @@
+{
+  "scope": "Fixed specialist dialogue. Field labels, procedural displays and interface comparisons remain written.",
+  "scenes": 10,
+  "decisions": [
+    {
+      "scene": "act2_technique_chrome",
+      "primary": "Dispatcher",
+      "text": "Three workers, two recipients. Different columns. Don't invent a recipient to make the totals agree.",
+      "context": "Explicit specialist filing dialogue; exact actor and scope.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Dispatcher",
+      "reason": "Fixed spoken words; a review reference does not authenticate a source.",
+      "bindingKeys": [
+        "ce48af49dfd62329"
+      ]
+    },
+    {
+      "scene": "act2_technique_ghost",
+      "primary": "Dispatcher",
+      "text": "Keep the depot return reference. An empty recipient field is not a lost packet.",
+      "context": "Explicit specialist filing dialogue; exact actor and scope.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Dispatcher",
+      "reason": "Fixed spoken words; a review reference does not authenticate a source.",
+      "bindingKeys": [
+        "da4e5345b6f038f4"
+      ]
+    },
+    {
+      "scene": "act2_technique_face",
+      "primary": "Dispatcher",
+      "text": "Tell me what you want signed. A filing procedure and the truth of a source are different requests.",
+      "context": "Explicit specialist filing dialogue; exact actor and scope.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Dispatcher",
+      "reason": "Fixed spoken words; a review reference does not authenticate a source.",
+      "bindingKeys": [
+        "322caab2ac013f7f"
+      ]
+    },
+    {
+      "scene": "act2_technique_face",
+      "primary": "Dispatcher",
+      "text": "I can sign for the filing process. You give up the paid sorting shift; I don't sign for the source.",
+      "context": "Explicit specialist filing dialogue; exact actor and scope.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Dispatcher",
+      "reason": "Fixed spoken words; a review reference does not authenticate a source.",
+      "bindingKeys": [
+        "84636c7dc1d3c6d8"
+      ]
+    },
+    {
+      "scene": "act2_technique_face",
+      "primary": "Dispatcher",
+      "text": "A guide explains the form. It doesn't give you my agreement. Use your own signature, or leave the filing open.",
+      "context": "Explicit specialist filing dialogue; exact actor and scope.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Dispatcher",
+      "reason": "Fixed spoken words; a review reference does not authenticate a source.",
+      "bindingKeys": [
+        "8f10ff7a50626817"
+      ]
+    },
+    {
+      "scene": "act2_technique_face_scope",
+      "primary": "Dispatcher",
+      "text": "Procedure, not the truth of a source. Keep that limit on the copy.",
+      "context": "Explicit specialist filing dialogue; exact actor and scope.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Dispatcher",
+      "reason": "Fixed spoken words; a review reference does not authenticate a source.",
+      "bindingKeys": [
+        "634a823dd612df28"
+      ]
+    },
+    {
+      "scene": "act2_technique_result",
+      "primary": "Dispatcher",
+      "text": "Received for review. That's what the reference says. The correction still needs an answer.",
+      "context": "Explicit specialist filing dialogue; exact actor and scope.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Dispatcher",
+      "reason": "Fixed spoken words; a review reference does not authenticate a source.",
+      "bindingKeys": [
+        "eb41331eb6629fe6"
+      ]
+    },
+    {
+      "scene": "act2_technique_result",
+      "primary": "Dispatcher",
+      "text": "I can hold the packet for repair. A review reference needs a usable submission.",
+      "context": "Explicit specialist filing dialogue; exact actor and scope.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Dispatcher",
+      "reason": "Fixed spoken words; a review reference does not authenticate a source.",
+      "bindingKeys": [
+        "1cf1f4113aa45b0a"
+      ]
+    },
+    {
+      "scene": "act2_technique_result",
+      "primary": "Dispatcher",
+      "text": "I agreed to the procedure. I didn't agree to certify a source I haven't checked.",
+      "context": "Explicit specialist filing dialogue; exact actor and scope.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Dispatcher",
+      "reason": "Fixed spoken words; a review reference does not authenticate a source.",
+      "bindingKeys": [
+        "b0d7e842e1c00e0c"
+      ]
+    }
+  ]
+}

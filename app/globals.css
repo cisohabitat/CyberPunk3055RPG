@@ -1707,3 +1707,12 @@ html[data-motion="reduce"] .location-entry, html[data-motion="reduce"] .portrait
 .district-ledger details { margin-block: .75rem; }
 .district-ledger dt { color: var(--muted); margin-top: .75rem; }
 .district-ledger dd { margin: .25rem 0 0; overflow-wrap: anywhere; }
+.technique-board { border: 1px solid var(--line); padding: 1rem; margin-block: 1.25rem; }
+.technique-board summary { min-height: 45px; cursor: pointer; }
+.technique-board ul { list-style: none; padding: 0; }
+.technique-board li { border-top: 1px solid var(--line); padding-block: .8rem; overflow-wrap: anywhere; }
+.technique-board li[data-active] { border-left: 2px solid var(--cyan); padding-left: .75rem; }
+.technique-board table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+.technique-board th, .technique-board td { text-align: left; padding: .5rem; border: 1px solid var(--line); overflow-wrap: anywhere; }
+.technique-board dt { margin-top: .5rem; color: var(--muted); }
+.technique-board dd { margin-left: 0; overflow-wrap: anywhere; }

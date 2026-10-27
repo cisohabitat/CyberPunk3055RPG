@@ -1,0 +1,143 @@
+{
+  "phase": 3,
+  "commit": "3c31861c7e98679f83939b4a47b3bf0abef80ffd",
+  "publishedAtUtc": "2026-10-27T00:32:45.047838+00:00",
+  "ci": {
+    "run": 40420795066,
+    "url": "https://github.com/cisohabitat/CyberPunk3055RPG/actions/runs/40420795066",
+    "conclusion": "success",
+    "requiredChecks": [
+      "Test",
+      "Browser (chromium)",
+      "Browser (phone)",
+      "Browser (firefox)",
+      "Browser (webkit)",
+      "Build"
+    ],
+    "productionDecision": "build"
+  },
+  "deployment": {
+    "id": "dpl_BwKU8YfFaYaiVRWfHUYJvuAb7UQq",
+    "publicUrl": "https://cyberpunk3055rpg.vercel.app",
+    "state": "READY",
+    "exactCommitVerified": true,
+    "recovery": "Original dpl_6Uix1b56ZVBc4J4Cmye3nG3Py3FU exceeded the platform maximum while awaiting CI. Same tested SHA redeployed after all checks passed; no gate bypass."
+  },
+  "liveVerification": {
+    "featureChecksPassed": 31,
+    "voiceDeliveryHashesMatched": 12,
+    "artDeliveryHashesMatched": 3,
+    "viewportReviewStates": 6,
+    "widths": [
+      390,
+      1440,
+      320
+    ],
+    "enlargedTextAt320": true,
+    "pageErrors": [],
+    "horizontalOverflow": false,
+    "inspectionPreservedState": true,
+    "originPortraitDecoded": true,
+    "scope": "Automated Chromium and synthetic viewport checks; no independent player or physical-device acceptance."
+  },
+  "prePublicationSnapshot": "qa/editorial/player-led-phase3.json",
+  "mediaDeliveryDetails": {
+    "commit": "3c31861c7e98679f83939b4a47b3bf0abef80ffd",
+    "publicUrl": "https://cyberpunk3055rpg.vercel.app",
+    "voiceClips": 12,
+    "artDeliveries": 3,
+    "rows": [
+      {
+        "path": "/audio/voice-campaign-edda-ee8d63542999.mp3",
+        "bytes": 67724,
+        "sha256": "648815b3540ed03c3223d411bfb0870f3340944bee2852969e6145435ed63a0b"
+      },
+      {
+        "path": "/audio/voice-campaign-edda-99446ae38d6d.mp3",
+        "bytes": 104588,
+        "sha256": "ce433f6fd09134ac238bc0891a0acf78ea8cc700eef17d85e17482955277d83b"
+      },
+      {
+        "path": "/audio/voice-campaign-edda-7b79a3e4c6d0.mp3",
+        "bytes": 93356,
+        "sha256": "da6bd7399cddca2bce5414237459d9ae14593668bcafacb995925f1b055c77b7"
+      },
+      {
+        "path": "/audio/voice-campaign-edda-6e522a26c358.mp3",
+        "bytes": 106028,
+        "sha256": "d3582f2b4c7d49c5d8ba96f981ddc2257c977e80d50a751728fd05c025af7423"
+      },
+      {
+        "path": "/audio/voice-campaign-kerr-899d4ba5ecfb.mp3",
+        "bytes": 84428,
+        "sha256": "efc7a1dfac22ba92865fc4a7725233f4d4312576b99cb82a7e02ddcaf33b617e"
+      },
+      {
+        "path": "/audio/voice-campaign-kerr-e8022742ad26.mp3",
+        "bytes": 79244,
+        "sha256": "1dc1eb6e6e2f1203c290800caedda3a1ea0a5cffa3b59b628f449492f8d5f090"
+      },
+      {
+        "path": "/audio/voice-campaign-kerr-f001a675c451.mp3",
+        "bytes": 73196,
+        "sha256": "c9cdfb49162cff0a08bb2ab7cddca6a5a1936059832c3e7dbbdb3076daff39c9"
+      },
+      {
+        "path": "/audio/voice-campaign-kerr-1903a3d3a421.mp3",
+        "bytes": 86732,
+        "sha256": "3ef85b7ef5a09e0a6cb7cbbed23127ba032942a0dd1dc019aaa8b68a49567dc5"
+      },
+      {
+        "path": "/audio/voice-campaign-dispatcher-094917ba4d45.mp3",
+        "bytes": 95660,
+        "sha256": "9cc30a133c5c2e2da26c4da3ddd4d7e7edbd186d3b97044a5d6e1b3f04ff3882"
+      },
+      {
+        "path": "/audio/voice-campaign-edda-f9a9ab61ae78.mp3",
+        "bytes": 90188,
+        "sha256": "9879a4517243c93a3abaea6f15c30df384bda69457f8a873979e17fe33131853"
+      },
+      {
+        "path": "/audio/voice-campaign-kerr-10b6e71a11eb.mp3",
+        "bytes": 75212,
+        "sha256": "512593cc157650d5a50be2f01fde4159063ab9c88b10237848f34f9987a41176"
+      },
+      {
+        "path": "/audio/voice-campaign-kerr-f829eb68f234.mp3",
+        "bytes": 64844,
+        "sha256": "181bdff21515e3dd7244fc8d2346fdb3125ef84361a6abc88079012fc96d20dd"
+      },
+      {
+        "path": "/art/depot-review.jpg",
+        "bytes": 511468,
+        "sha256": "32c298366a5b83155832ca5a6d3e35c71845256f45ccba910e0217fbd6e04b4e"
+      },
+      {
+        "path": "/art/depot-review-small.jpg",
+        "bytes": 122469,
+        "sha256": "e87710688ef41b91ec7ce8a216d21e2bf6859cc1348b59413130f6471c848ca6"
+      },
+      {
+        "path": "/art/previews/depot-review.jpg",
+        "bytes": 2752,
+        "sha256": "a940030a93330c50cbfde0779fb2eddcf92ba0127c49387fc9aff1faf7e47a25"
+      }
+    ]
+  },
+  "mainBranchRedeploy": {
+    "verifiedAtUtc": "2026-10-27T01:10:04.495519+00:00",
+    "commit": "3c31861c7e98679f83939b4a47b3bf0abef80ffd",
+    "branch": "main",
+    "target": "production",
+    "deploymentId": "dpl_6VFv1Afk1TP4L89yT8zHA7fgUyoS",
+    "state": "READY",
+    "publicUrl": "https://cyberpunk3055rpg.vercel.app",
+    "publicAndMainAliasesVerified": true,
+    "ciRun": 40420795066,
+    "requiredCiJobs": "all six successful; productionDecision build",
+    "liveGameplayChecksPassed": 2,
+    "voiceHashesMatched": 12,
+    "artHashesMatched": 3,
+    "repositoryChanges": false
+  }
+}

@@ -10,6 +10,7 @@ import { replayCampaign } from "./story-replay";
 import { routeCheckpoint } from "../qa/production/route-checkpoint";
 import phase from "../qa/media/finale-direction.json";
 import district from "../qa/media/district-response.json";
+import techniques from "../qa/media/build-techniques.json";
 import art from "../qa/media/scene-art.json";
 
 const hash = (text: string) => createHash("sha256").update(text).digest("hex");
@@ -33,7 +34,7 @@ it("preserves every authored route's exact final state, canonical prose and visi
   });
   // Keep the original 147-route contract byte-for-byte. The later funded
   // checkpoint campaign has its own replay expectations and balance checks.
-  const additions = ["funded-checkpoint-room.json", ...district.routes];
+  const additions = ["funded-checkpoint-room.json", ...district.routes, ...techniques.routes];
   assert.equal(rows.length, phase.routeContract.count + additions.length);
   for (const file of additions) assert.ok(rows.some(row => row.file === file));
   const preserved = rows.filter(row => !additions.includes(row.file));

@@ -24,11 +24,13 @@ import { MISSION_SCENES } from "./missions";
 import { OPERATION_SCENES } from "./operations";
 import { RELATIONSHIP_SCENES } from "./relationships";
 import { DISTRICT_SCENES } from "./district-response";
+import { TECHNIQUE_SCENES } from "./build-techniques";
 
 export { vaultNext } from "./act1";
 export { CODEX, endingCoda } from "./codas";
 
 export const SCENES: Record<string, Scene> = mergeScenes(
+  TECHNIQUE_SCENES,
   DISTRICT_SCENES,
   INTEGRATION_SCENES,
   SPIRE_SCENES,

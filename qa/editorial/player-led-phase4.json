@@ -1,0 +1,609 @@
+{
+  "phase": 4,
+  "baseline": "3c31861c7e98679f83939b4a47b3bf0abef80ffd",
+  "scope": "Four trained specialist methods with persistent exposure/effort/voluntary wage tradeoffs, same bounded review-intake anchor, ten scenes, nine Dispatcher recordings and one neutral painting",
+  "recordedAtUtc": "2026-10-27T01:53:24.447729+00:00",
+  "local": {
+    "sourceTestsPassed": 743,
+    "typescript": true,
+    "productionBuild": true,
+    "securityAudit": "zero known vulnerabilities",
+    "balanceAudits": "all existing audits passed; zero reported regressions/failures",
+    "precedingRouteContractsPreserved": 152,
+    "fullAuthoredCampaigns": 164,
+    "focusedBrowserPassed": 42,
+    "caseBoardRegressionPassed": 6,
+    "transcribedClips": 9,
+    "exactNormalizedTranscriptMatches": 9,
+    "voicePlaybackClips": 9,
+    "voiceErrors": [],
+    "voiceFailures": [],
+    "productionBudgetViolations": 0,
+    "initialTransferBudgetBytes": 2097152,
+    "maximumMeasuredInitialTransferBytes": 1636422
+  },
+  "campaigns": [
+    {
+      "route": "qa/routes/technique-chrome-portable-label.json",
+      "width": 390,
+      "artwork": "full",
+      "reading": "all",
+      "sound": false,
+      "visits": 79,
+      "tabs": 518,
+      "reloads": 28,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 165,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "errors": [],
+      "failedMedia": [],
+      "testedSources": {
+        "lib/build-techniques.ts": "663a38618172c28bf7546c455de1da1ad15cbf1a4dd51973d88f971d8ab1923d",
+        "lib/story/build-techniques.ts": "96c22a876beef9be96da9dd91d67d7eb21bd2ca8584ad7bc380e9fab2b7ded71",
+        "lib/technique-dialogue.ts": "a99785fd05a7091409a1152a8af1c3b235f297da4c7c599873bdf4d1b8fa3dda",
+        "components/TechniqueBoard.tsx": "e53a754ca151ce24ec8f0f8a6c4c4967eca41be76477a188d07da39687dee8cd",
+        "qa/media/technique-dialogue-bindings.json": "ea4bb0ebadd57641019478237a33ddb5655205f2632dd3bb822e7cfc58d25504",
+        "qa/media/technique-dialogue-lines.json": "3ba5f8c12b0fe81645ac3494dc74189eb8011dbb7a95f5d9efa68051412a1301",
+        "qa/media/technique-dialogue-provenance.json": "ad7bcf50bdff909b8630a7d85f3bb33a22a370c04d5653472426020df46490da",
+        "lib/sound.ts": "718bbce2e4aec9a3c259bcc3fe8a041f039d254883467588d767f64821a9a503",
+        "components/GameApp.tsx": "b0f0d87b9ec3c0573e0ee74113fa9f205f1ad9b34a2df00ffde62e37c7daeb41",
+        "components/CreateScreen.tsx": "1af5df73d6ed31c711dd5b91489175be3b7f43f2e6f1b51003eb36635bf601ec",
+        "lib/runner-names.ts": "5885d74f8df3117dc3aef392cfb2619c7e96280afd1624a951f21a0a33c13b52",
+        "components/PlayScreen.tsx": "0aa61d619262ddafb475e19b4f8c173d90c4383743ab7926e260a7f69bfaf2c5",
+        "components/Portrait.tsx": "4db7f4644609102c4205292530a4330b3a19a0d735ea55993daf1bc1fc108e1b",
+        "app/globals.css": "8b9b5b6bd5a813d0eb461ba7a8887f0d234729216850279f30dc9f40668cd90e",
+        "components/ArchiveCatalog.tsx": "c489bb15b4510ed3a7d6a318c441a65249926f69f69b5acfbc000c18bf0e0cbb",
+        "components/FinaleReflection.tsx": "47228900e1d1e4609a859ff7666d9955c017d61a60f7959a07b7cdf76d663ad2",
+        "components/PivotalScene.tsx": "e65cd6759e4fe069e93f88f2d445e91dfa13b71dc27da7ed0930343b378b1697",
+        "lib/pivotal-scenes.ts": "2f4f4923fc7b0c51e8c29d4a73902b1b4d259f0847083fce7e46bf8414c5f512",
+        "lib/finale-direction.ts": "f60daea1f12d7972071e55932f19b5418c19f29d3bb1ee591427f3321e1f5572",
+        "lib/investigation-scenes.ts": "df38b381a3765c2568f10045a9257c734bd12218158857f3a5b18e9fbc82ead6",
+        "lib/scene-cues.ts": "9054e08dc32af298af5f6c324924051ade4614997a533840de9ca6d483dce724",
+        "lib/art.ts": "86998500b818cf78025201c14ef905b820363ef9f5b6b3cd6a20dada5caae6df",
+        "lib/district-response.ts": "6e0714691c46081421079e48f0b9a6bc5a2c8865ae22e4b882d8c64e724fdc83",
+        "lib/district-dialogue.ts": "dfcb32b38b9c2888a1c2d09a61c6a0ed1f9727cae3747fb718f80b6c3858caf2",
+        "lib/story/district-response.ts": "c8ee3f48ac3ef94be702a0c8ee330b58a2ea4ce063e913dbbc4fcb0e324f5667",
+        "components/DistrictLedger.tsx": "e70773dea80dcfb64729c69a3d573f86c0c2e8e9f0b35d0328b285a4f185e700",
+        "qa/media/district-dialogue-bindings.json": "ba071555c4fb38294f2f98bb05de94fbd8529396b9ba6a15f67f4ee13be2428c",
+        "lib/archive-catalog.ts": "c7d571fc525d3a2b3c44922411b178a5c67f67348700b177192245e6c820a328",
+        "components/VoiceLine.tsx": "4ac6ee1b576961438c4a4408dc957ff96cc9e3ccd7c01e5cd97059bd4bd5e1e8",
+        "components/Sheet.tsx": "17671bbf6af7470d1324158c7f03818494bff853a32ddc1329c050c137b944fb",
+        "components/CastCard.tsx": "c75a55c2a334923ddc2f3da78f664e778e978d565df225dea627602a25a81eec",
+        "lib/character-profiles.ts": "7c8a626407dcd95f7f61f4185cb1b01abd20d72253a24fac95c84d196ba1b0a7",
+        "qa/production/keyboard.ts": "14ed92fbfbcd5125fb49d5578131aa337b7ea14a4f64e749c7e6596b1a51954f",
+        "scripts/player-experience.ts": "257378453b962b522aaf81f116edd3195c262b95075d0cc56502962c4e317763",
+        "qa/routes/technique-chrome-portable-label.json": "4a559f57d74502a116053c3b82e218243576a83fb2abb1224fdbffaea557c7df"
+      }
+    },
+    {
+      "route": "qa/routes/technique-ghost-screened-reference.json",
+      "width": 1440,
+      "artwork": "full",
+      "reading": "all",
+      "sound": false,
+      "visits": 79,
+      "tabs": 525,
+      "reloads": 28,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 165,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "errors": [],
+      "failedMedia": [],
+      "testedSources": {
+        "lib/build-techniques.ts": "663a38618172c28bf7546c455de1da1ad15cbf1a4dd51973d88f971d8ab1923d",
+        "lib/story/build-techniques.ts": "96c22a876beef9be96da9dd91d67d7eb21bd2ca8584ad7bc380e9fab2b7ded71",
+        "lib/technique-dialogue.ts": "a99785fd05a7091409a1152a8af1c3b235f297da4c7c599873bdf4d1b8fa3dda",
+        "components/TechniqueBoard.tsx": "e53a754ca151ce24ec8f0f8a6c4c4967eca41be76477a188d07da39687dee8cd",
+        "qa/media/technique-dialogue-bindings.json": "ea4bb0ebadd57641019478237a33ddb5655205f2632dd3bb822e7cfc58d25504",
+        "qa/media/technique-dialogue-lines.json": "3ba5f8c12b0fe81645ac3494dc74189eb8011dbb7a95f5d9efa68051412a1301",
+        "qa/media/technique-dialogue-provenance.json": "ad7bcf50bdff909b8630a7d85f3bb33a22a370c04d5653472426020df46490da",
+        "lib/sound.ts": "718bbce2e4aec9a3c259bcc3fe8a041f039d254883467588d767f64821a9a503",
+        "components/GameApp.tsx": "b0f0d87b9ec3c0573e0ee74113fa9f205f1ad9b34a2df00ffde62e37c7daeb41",
+        "components/CreateScreen.tsx": "1af5df73d6ed31c711dd5b91489175be3b7f43f2e6f1b51003eb36635bf601ec",
+        "lib/runner-names.ts": "5885d74f8df3117dc3aef392cfb2619c7e96280afd1624a951f21a0a33c13b52",
+        "components/PlayScreen.tsx": "0aa61d619262ddafb475e19b4f8c173d90c4383743ab7926e260a7f69bfaf2c5",
+        "components/Portrait.tsx": "4db7f4644609102c4205292530a4330b3a19a0d735ea55993daf1bc1fc108e1b",
+        "app/globals.css": "8b9b5b6bd5a813d0eb461ba7a8887f0d234729216850279f30dc9f40668cd90e",
+        "components/ArchiveCatalog.tsx": "c489bb15b4510ed3a7d6a318c441a65249926f69f69b5acfbc000c18bf0e0cbb",
+        "components/FinaleReflection.tsx": "47228900e1d1e4609a859ff7666d9955c017d61a60f7959a07b7cdf76d663ad2",
+        "components/PivotalScene.tsx": "e65cd6759e4fe069e93f88f2d445e91dfa13b71dc27da7ed0930343b378b1697",
+        "lib/pivotal-scenes.ts": "2f4f4923fc7b0c51e8c29d4a73902b1b4d259f0847083fce7e46bf8414c5f512",
+        "lib/finale-direction.ts": "f60daea1f12d7972071e55932f19b5418c19f29d3bb1ee591427f3321e1f5572",
+        "lib/investigation-scenes.ts": "df38b381a3765c2568f10045a9257c734bd12218158857f3a5b18e9fbc82ead6",
+        "lib/scene-cues.ts": "9054e08dc32af298af5f6c324924051ade4614997a533840de9ca6d483dce724",
+        "lib/art.ts": "86998500b818cf78025201c14ef905b820363ef9f5b6b3cd6a20dada5caae6df",
+        "lib/district-response.ts": "6e0714691c46081421079e48f0b9a6bc5a2c8865ae22e4b882d8c64e724fdc83",
+        "lib/district-dialogue.ts": "dfcb32b38b9c2888a1c2d09a61c6a0ed1f9727cae3747fb718f80b6c3858caf2",
+        "lib/story/district-response.ts": "c8ee3f48ac3ef94be702a0c8ee330b58a2ea4ce063e913dbbc4fcb0e324f5667",
+        "components/DistrictLedger.tsx": "e70773dea80dcfb64729c69a3d573f86c0c2e8e9f0b35d0328b285a4f185e700",
+        "qa/media/district-dialogue-bindings.json": "ba071555c4fb38294f2f98bb05de94fbd8529396b9ba6a15f67f4ee13be2428c",
+        "lib/archive-catalog.ts": "c7d571fc525d3a2b3c44922411b178a5c67f67348700b177192245e6c820a328",
+        "components/VoiceLine.tsx": "4ac6ee1b576961438c4a4408dc957ff96cc9e3ccd7c01e5cd97059bd4bd5e1e8",
+        "components/Sheet.tsx": "17671bbf6af7470d1324158c7f03818494bff853a32ddc1329c050c137b944fb",
+        "components/CastCard.tsx": "c75a55c2a334923ddc2f3da78f664e778e978d565df225dea627602a25a81eec",
+        "lib/character-profiles.ts": "7c8a626407dcd95f7f61f4185cb1b01abd20d72253a24fac95c84d196ba1b0a7",
+        "qa/production/keyboard.ts": "14ed92fbfbcd5125fb49d5578131aa337b7ea14a4f64e749c7e6596b1a51954f",
+        "scripts/player-experience.ts": "257378453b962b522aaf81f116edd3195c262b95075d0cc56502962c4e317763",
+        "qa/routes/technique-ghost-screened-reference.json": "3d4a3ab3578d68a71d0991f0041323068f7bdce32a858c288eac2b3cc8c07390"
+      }
+    },
+    {
+      "route": "qa/routes/technique-face-cosign-process.json",
+      "width": 390,
+      "artwork": "full",
+      "reading": "all",
+      "sound": false,
+      "visits": 83,
+      "tabs": 547,
+      "reloads": 32,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 205,
+        "strain": 0,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "errors": [],
+      "failedMedia": [],
+      "testedSources": {
+        "lib/build-techniques.ts": "663a38618172c28bf7546c455de1da1ad15cbf1a4dd51973d88f971d8ab1923d",
+        "lib/story/build-techniques.ts": "96c22a876beef9be96da9dd91d67d7eb21bd2ca8584ad7bc380e9fab2b7ded71",
+        "lib/technique-dialogue.ts": "a99785fd05a7091409a1152a8af1c3b235f297da4c7c599873bdf4d1b8fa3dda",
+        "components/TechniqueBoard.tsx": "e53a754ca151ce24ec8f0f8a6c4c4967eca41be76477a188d07da39687dee8cd",
+        "qa/media/technique-dialogue-bindings.json": "ea4bb0ebadd57641019478237a33ddb5655205f2632dd3bb822e7cfc58d25504",
+        "qa/media/technique-dialogue-lines.json": "3ba5f8c12b0fe81645ac3494dc74189eb8011dbb7a95f5d9efa68051412a1301",
+        "qa/media/technique-dialogue-provenance.json": "ad7bcf50bdff909b8630a7d85f3bb33a22a370c04d5653472426020df46490da",
+        "lib/sound.ts": "718bbce2e4aec9a3c259bcc3fe8a041f039d254883467588d767f64821a9a503",
+        "components/GameApp.tsx": "b0f0d87b9ec3c0573e0ee74113fa9f205f1ad9b34a2df00ffde62e37c7daeb41",
+        "components/CreateScreen.tsx": "1af5df73d6ed31c711dd5b91489175be3b7f43f2e6f1b51003eb36635bf601ec",
+        "lib/runner-names.ts": "5885d74f8df3117dc3aef392cfb2619c7e96280afd1624a951f21a0a33c13b52",
+        "components/PlayScreen.tsx": "0aa61d619262ddafb475e19b4f8c173d90c4383743ab7926e260a7f69bfaf2c5",
+        "components/Portrait.tsx": "4db7f4644609102c4205292530a4330b3a19a0d735ea55993daf1bc1fc108e1b",
+        "app/globals.css": "8b9b5b6bd5a813d0eb461ba7a8887f0d234729216850279f30dc9f40668cd90e",
+        "components/ArchiveCatalog.tsx": "c489bb15b4510ed3a7d6a318c441a65249926f69f69b5acfbc000c18bf0e0cbb",
+        "components/FinaleReflection.tsx": "47228900e1d1e4609a859ff7666d9955c017d61a60f7959a07b7cdf76d663ad2",
+        "components/PivotalScene.tsx": "e65cd6759e4fe069e93f88f2d445e91dfa13b71dc27da7ed0930343b378b1697",
+        "lib/pivotal-scenes.ts": "2f4f4923fc7b0c51e8c29d4a73902b1b4d259f0847083fce7e46bf8414c5f512",
+        "lib/finale-direction.ts": "f60daea1f12d7972071e55932f19b5418c19f29d3bb1ee591427f3321e1f5572",
+        "lib/investigation-scenes.ts": "df38b381a3765c2568f10045a9257c734bd12218158857f3a5b18e9fbc82ead6",
+        "lib/scene-cues.ts": "9054e08dc32af298af5f6c324924051ade4614997a533840de9ca6d483dce724",
+        "lib/art.ts": "86998500b818cf78025201c14ef905b820363ef9f5b6b3cd6a20dada5caae6df",
+        "lib/district-response.ts": "6e0714691c46081421079e48f0b9a6bc5a2c8865ae22e4b882d8c64e724fdc83",
+        "lib/district-dialogue.ts": "dfcb32b38b9c2888a1c2d09a61c6a0ed1f9727cae3747fb718f80b6c3858caf2",
+        "lib/story/district-response.ts": "c8ee3f48ac3ef94be702a0c8ee330b58a2ea4ce063e913dbbc4fcb0e324f5667",
+        "components/DistrictLedger.tsx": "e70773dea80dcfb64729c69a3d573f86c0c2e8e9f0b35d0328b285a4f185e700",
+        "qa/media/district-dialogue-bindings.json": "ba071555c4fb38294f2f98bb05de94fbd8529396b9ba6a15f67f4ee13be2428c",
+        "lib/archive-catalog.ts": "c7d571fc525d3a2b3c44922411b178a5c67f67348700b177192245e6c820a328",
+        "components/VoiceLine.tsx": "4ac6ee1b576961438c4a4408dc957ff96cc9e3ccd7c01e5cd97059bd4bd5e1e8",
+        "components/Sheet.tsx": "17671bbf6af7470d1324158c7f03818494bff853a32ddc1329c050c137b944fb",
+        "components/CastCard.tsx": "c75a55c2a334923ddc2f3da78f664e778e978d565df225dea627602a25a81eec",
+        "lib/character-profiles.ts": "7c8a626407dcd95f7f61f4185cb1b01abd20d72253a24fac95c84d196ba1b0a7",
+        "qa/production/keyboard.ts": "14ed92fbfbcd5125fb49d5578131aa337b7ea14a4f64e749c7e6596b1a51954f",
+        "scripts/player-experience.ts": "257378453b962b522aaf81f116edd3195c262b95075d0cc56502962c4e317763",
+        "qa/routes/technique-face-cosign-process.json": "6a4b410d9d40bf1474a1c1619c86fda8544741d08b1ff8d63a81547c6248f7ad"
+      }
+    },
+    {
+      "route": "qa/routes/technique-nerve-fast-rest.json",
+      "width": 320,
+      "artwork": "none",
+      "reading": "all",
+      "sound": false,
+      "visits": 79,
+      "tabs": 448,
+      "reloads": 28,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 185,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "errors": [],
+      "failedMedia": [],
+      "testedSources": {
+        "lib/build-techniques.ts": "663a38618172c28bf7546c455de1da1ad15cbf1a4dd51973d88f971d8ab1923d",
+        "lib/story/build-techniques.ts": "96c22a876beef9be96da9dd91d67d7eb21bd2ca8584ad7bc380e9fab2b7ded71",
+        "lib/technique-dialogue.ts": "a99785fd05a7091409a1152a8af1c3b235f297da4c7c599873bdf4d1b8fa3dda",
+        "components/TechniqueBoard.tsx": "e53a754ca151ce24ec8f0f8a6c4c4967eca41be76477a188d07da39687dee8cd",
+        "qa/media/technique-dialogue-bindings.json": "ea4bb0ebadd57641019478237a33ddb5655205f2632dd3bb822e7cfc58d25504",
+        "qa/media/technique-dialogue-lines.json": "3ba5f8c12b0fe81645ac3494dc74189eb8011dbb7a95f5d9efa68051412a1301",
+        "qa/media/technique-dialogue-provenance.json": "ad7bcf50bdff909b8630a7d85f3bb33a22a370c04d5653472426020df46490da",
+        "lib/sound.ts": "718bbce2e4aec9a3c259bcc3fe8a041f039d254883467588d767f64821a9a503",
+        "components/GameApp.tsx": "b0f0d87b9ec3c0573e0ee74113fa9f205f1ad9b34a2df00ffde62e37c7daeb41",
+        "components/CreateScreen.tsx": "1af5df73d6ed31c711dd5b91489175be3b7f43f2e6f1b51003eb36635bf601ec",
+        "lib/runner-names.ts": "5885d74f8df3117dc3aef392cfb2619c7e96280afd1624a951f21a0a33c13b52",
+        "components/PlayScreen.tsx": "0aa61d619262ddafb475e19b4f8c173d90c4383743ab7926e260a7f69bfaf2c5",
+        "components/Portrait.tsx": "4db7f4644609102c4205292530a4330b3a19a0d735ea55993daf1bc1fc108e1b",
+        "app/globals.css": "8b9b5b6bd5a813d0eb461ba7a8887f0d234729216850279f30dc9f40668cd90e",
+        "components/ArchiveCatalog.tsx": "c489bb15b4510ed3a7d6a318c441a65249926f69f69b5acfbc000c18bf0e0cbb",
+        "components/FinaleReflection.tsx": "47228900e1d1e4609a859ff7666d9955c017d61a60f7959a07b7cdf76d663ad2",
+        "components/PivotalScene.tsx": "e65cd6759e4fe069e93f88f2d445e91dfa13b71dc27da7ed0930343b378b1697",
+        "lib/pivotal-scenes.ts": "2f4f4923fc7b0c51e8c29d4a73902b1b4d259f0847083fce7e46bf8414c5f512",
+        "lib/finale-direction.ts": "f60daea1f12d7972071e55932f19b5418c19f29d3bb1ee591427f3321e1f5572",
+        "lib/investigation-scenes.ts": "df38b381a3765c2568f10045a9257c734bd12218158857f3a5b18e9fbc82ead6",
+        "lib/scene-cues.ts": "9054e08dc32af298af5f6c324924051ade4614997a533840de9ca6d483dce724",
+        "lib/art.ts": "86998500b818cf78025201c14ef905b820363ef9f5b6b3cd6a20dada5caae6df",
+        "lib/district-response.ts": "6e0714691c46081421079e48f0b9a6bc5a2c8865ae22e4b882d8c64e724fdc83",
+        "lib/district-dialogue.ts": "dfcb32b38b9c2888a1c2d09a61c6a0ed1f9727cae3747fb718f80b6c3858caf2",
+        "lib/story/district-response.ts": "c8ee3f48ac3ef94be702a0c8ee330b58a2ea4ce063e913dbbc4fcb0e324f5667",
+        "components/DistrictLedger.tsx": "e70773dea80dcfb64729c69a3d573f86c0c2e8e9f0b35d0328b285a4f185e700",
+        "qa/media/district-dialogue-bindings.json": "ba071555c4fb38294f2f98bb05de94fbd8529396b9ba6a15f67f4ee13be2428c",
+        "lib/archive-catalog.ts": "c7d571fc525d3a2b3c44922411b178a5c67f67348700b177192245e6c820a328",
+        "components/VoiceLine.tsx": "4ac6ee1b576961438c4a4408dc957ff96cc9e3ccd7c01e5cd97059bd4bd5e1e8",
+        "components/Sheet.tsx": "17671bbf6af7470d1324158c7f03818494bff853a32ddc1329c050c137b944fb",
+        "components/CastCard.tsx": "c75a55c2a334923ddc2f3da78f664e778e978d565df225dea627602a25a81eec",
+        "lib/character-profiles.ts": "7c8a626407dcd95f7f61f4185cb1b01abd20d72253a24fac95c84d196ba1b0a7",
+        "qa/production/keyboard.ts": "14ed92fbfbcd5125fb49d5578131aa337b7ea14a4f64e749c7e6596b1a51954f",
+        "scripts/player-experience.ts": "257378453b962b522aaf81f116edd3195c262b95075d0cc56502962c4e317763",
+        "qa/routes/technique-nerve-fast-rest.json": "6ae248b9826591b1c341e7c3e3d78a89efc2db804c1f5cd1375babee52015484"
+      }
+    }
+  ],
+  "views": [
+    {
+      "file": "technique-chrome-portable-label",
+      "scene": "act2_technique_chrome",
+      "width": 390,
+      "detail": "technique-record-fields",
+      "screenshot": "/tmp/build-phase4-act2_technique_chrome-390.png",
+      "unchangedState": true,
+      "goalInFirstViewport": true,
+      "errors": []
+    },
+    {
+      "file": "technique-chrome-portable-label",
+      "scene": "act2_technique_chrome",
+      "width": 1440,
+      "detail": "technique-record-fields",
+      "screenshot": "/tmp/build-phase4-act2_technique_chrome-1440.png",
+      "unchangedState": true,
+      "goalInFirstViewport": true,
+      "errors": []
+    },
+    {
+      "file": "technique-chrome-portable-label",
+      "scene": "act2_technique_chrome",
+      "width": 320,
+      "detail": "technique-record-fields",
+      "screenshot": "/tmp/build-phase4-act2_technique_chrome-320.png",
+      "unchangedState": true,
+      "goalInFirstViewport": true,
+      "errors": []
+    },
+    {
+      "file": "technique-ghost-screened-reference",
+      "scene": "act2_technique_ghost_route",
+      "width": 390,
+      "detail": "technique-envelope",
+      "screenshot": "/tmp/build-phase4-act2_technique_ghost_route-390.png",
+      "unchangedState": true,
+      "goalInFirstViewport": true,
+      "errors": []
+    },
+    {
+      "file": "technique-face-cosign-process",
+      "scene": "act2_technique_face_scope",
+      "width": 1440,
+      "detail": null,
+      "screenshot": "/tmp/build-phase4-act2_technique_face_scope-1440.png",
+      "unchangedState": true,
+      "goalInFirstViewport": true,
+      "errors": []
+    },
+    {
+      "file": "technique-nerve-fast-rest",
+      "scene": "act2_technique_result",
+      "width": 390,
+      "detail": null,
+      "screenshot": "/tmp/build-phase4-act2_technique_result-390.png",
+      "unchangedState": true,
+      "goalInFirstViewport": true,
+      "errors": []
+    }
+  ],
+  "visualReview": "Reviewed all six decoded screenshots, including field comparison, routing envelope, waiver and received-but-undecided result. Goal remains visible on entry; no overflow, state change from inspection or script errors. Neutral bench plate fits all outcomes.",
+  "voicePlayback": {
+    "revision": "3c31861c7e98679f83939b4a47b3bf0abef80ffd",
+    "dirty": true,
+    "testedSources": {
+      "lib/preferences.ts": "0af296a4e993f276e51c434433d4cf426122ff8a32379c8aac30880e53bd870a",
+      "next.config.ts": "43db2a4f5b422255c9d897779239edd4ee9d986b817cf4fddc4b5e972705e252",
+      "qa/media/bed-delivery.json": "b7403a15d66d03712001c417433fae254b236eb5f4b7fb512eefba04a1e31a34",
+      "lib/build-techniques.ts": "663a38618172c28bf7546c455de1da1ad15cbf1a4dd51973d88f971d8ab1923d",
+      "lib/story/build-techniques.ts": "96c22a876beef9be96da9dd91d67d7eb21bd2ca8584ad7bc380e9fab2b7ded71",
+      "lib/technique-dialogue.ts": "a99785fd05a7091409a1152a8af1c3b235f297da4c7c599873bdf4d1b8fa3dda",
+      "components/TechniqueBoard.tsx": "e53a754ca151ce24ec8f0f8a6c4c4967eca41be76477a188d07da39687dee8cd",
+      "qa/media/technique-dialogue-bindings.json": "ea4bb0ebadd57641019478237a33ddb5655205f2632dd3bb822e7cfc58d25504",
+      "qa/media/technique-dialogue-lines.json": "3ba5f8c12b0fe81645ac3494dc74189eb8011dbb7a95f5d9efa68051412a1301",
+      "qa/media/technique-dialogue-provenance.json": "ad7bcf50bdff909b8630a7d85f3bb33a22a370c04d5653472426020df46490da",
+      "lib/sound.ts": "718bbce2e4aec9a3c259bcc3fe8a041f039d254883467588d767f64821a9a503",
+      "lib/voice-level.ts": "38e45d97714756d00f4f37e529305c1971cca501b31b1e82839bdde94ce577c6",
+      "qa/media/voice-levels.json": "f249e8aadec56f250c59cfba1d939bf0f7fe058d0d75c043ce714aa0a0442dc9",
+      "qa/media/voice-mix.json": "d3d63ca60f8b3456532f5fd0fd54ce4dbe1c3af22b0c28ef9f1557148fd918e2",
+      "lib/engine.ts": "e248f22b2c8a6e6c4b9c4aea8f08ad935c6bfdbe37e9ea9db12accc213f8d25a",
+      "lib/campaign-dialogue.ts": "de0c075694706fd7998e33df6faa0a2cb174b0eeeef9f0d4b56b01c5c5b48270",
+      "lib/dialogue-playback.ts": "d1a781754b14a4fc0fabd9a6b506e99a4525303173fc2ac043db7266e6e1bb5f",
+      "components/VoiceLine.tsx": "4ac6ee1b576961438c4a4408dc957ff96cc9e3ccd7c01e5cd97059bd4bd5e1e8",
+      "components/GameApp.tsx": "b0f0d87b9ec3c0573e0ee74113fa9f205f1ad9b34a2df00ffde62e37c7daeb41",
+      "components/PlayScreen.tsx": "0aa61d619262ddafb475e19b4f8c173d90c4383743ab7926e260a7f69bfaf2c5",
+      "qa/production/keyboard.ts": "14ed92fbfbcd5125fb49d5578131aa337b7ea14a4f64e749c7e6596b1a51954f",
+      "qa/production/audio-review.ts": "d9c23ff7ed727e7d3d8b04680fd552d78b3aff260dfa8310a8209aa5f9758a4e",
+      "qa/production/dialogue-examples.ts": "7d75a6fa58f5d822fb5eaa226dc3b76f49cd3f8eda58ea9fcea5ca0de9c28fe4",
+      "qa/media/campaign-dialogue-bindings.json": "15ae8b35c16b330b545f001e23dc75b5f4bd131225347f616ab76c1b7088f0bd",
+      "qa/media/campaign-dialogue-lines.json": "39a2015b2414de22fabf618c75e948fdde7dd67ae66739196eae0d209338e875",
+      "qa/media/district-dialogue-bindings.json": "ba071555c4fb38294f2f98bb05de94fbd8529396b9ba6a15f67f4ee13be2428c",
+      "qa/media/district-dialogue-lines.json": "0e8ab7ed24f403740892bde34cefeb8cf3989d96071ce7edbedda01e3d314b8d",
+      "qa/media/district-dialogue-provenance.json": "7dcca10aa08e92984d47dec4cd49acedd09951829a4cf651198d8885a67f2b61",
+      "qa/media/voice-lines.json": "178d70993e1c624b1a14647fa5a60f2f25268d3c3db43cf32680ded8805b1913",
+      "scripts/voice-validation.ts": "f085d40d78939e3807432e7facd1de98bf97ca4597305fe9f6968c8e0b6c7c10"
+    },
+    "environment": {
+      "browser": "Chromium",
+      "browserVersion": "151.0.7922.173",
+      "platform": "linux",
+      "nodeVersion": "v24.19.0",
+      "device": "cloud automation host; synthetic viewport"
+    },
+    "url": "http://127.0.0.1:3803",
+    "automatic": true,
+    "workers": 2,
+    "elapsedSeconds": 48.219,
+    "rows": [
+      {
+        "id": "voice-campaign-dispatcher-33a79deedbfe",
+        "route": "technique-ghost-screened-reference.json",
+        "source": "authored-route",
+        "expectedVoices": [
+          "voice-campaign-dispatcher-33a79deedbfe.mp3"
+        ],
+        "playbackLevels": [
+          {
+            "file": "voice-campaign-dispatcher-33a79deedbfe.mp3",
+            "gain": 1
+          }
+        ],
+        "durationSeconds": 5.522,
+        "voiceRequests": 1,
+        "requestsBeforeReplay": 1,
+        "replayRefetched": false,
+        "liveSourcesAfterEnd": 2,
+        "created": 5,
+        "disposed": 5
+      },
+      {
+        "id": "voice-campaign-dispatcher-e5e1ea7d5a4a",
+        "route": "technique-chrome-counter-invent.json",
+        "source": "authored-route",
+        "expectedVoices": [
+          "voice-campaign-dispatcher-e5e1ea7d5a4a.mp3"
+        ],
+        "playbackLevels": [
+          {
+            "file": "voice-campaign-dispatcher-e5e1ea7d5a4a.mp3",
+            "gain": 1
+          }
+        ],
+        "durationSeconds": 7.272,
+        "voiceRequests": 1,
+        "requestsBeforeReplay": 1,
+        "replayRefetched": false,
+        "liveSourcesAfterEnd": 2,
+        "created": 5,
+        "disposed": 5
+      },
+      {
+        "id": "voice-campaign-dispatcher-e8cadae1434a",
+        "route": "technique-face-cosign-process.json",
+        "source": "authored-route",
+        "expectedVoices": [
+          "voice-campaign-dispatcher-e8cadae1434a.mp3"
+        ],
+        "playbackLevels": [
+          {
+            "file": "voice-campaign-dispatcher-e8cadae1434a.mp3",
+            "gain": 1
+          }
+        ],
+        "durationSeconds": 5.869,
+        "voiceRequests": 1,
+        "requestsBeforeReplay": 1,
+        "replayRefetched": false,
+        "liveSourcesAfterEnd": 2,
+        "created": 5,
+        "disposed": 5
+      },
+      {
+        "id": "voice-campaign-dispatcher-15916f6b7de0",
+        "route": "technique-face-cosign-process.json",
+        "source": "authored-route",
+        "expectedVoices": [
+          "voice-campaign-dispatcher-e8cadae1434a.mp3",
+          "voice-campaign-dispatcher-15916f6b7de0.mp3"
+        ],
+        "playbackLevels": [
+          {
+            "file": "voice-campaign-dispatcher-e8cadae1434a.mp3",
+            "gain": 1
+          },
+          {
+            "file": "voice-campaign-dispatcher-15916f6b7de0.mp3",
+            "gain": 1
+          }
+        ],
+        "durationSeconds": 12.402,
+        "voiceRequests": 1,
+        "requestsBeforeReplay": 1,
+        "replayRefetched": false,
+        "liveSourcesAfterEnd": 2,
+        "created": 6,
+        "disposed": 6
+      },
+      {
+        "id": "voice-campaign-dispatcher-2d3cd37c57b9",
+        "route": "technique-face-cosign-process.json",
+        "source": "authored-route",
+        "expectedVoices": [
+          "voice-campaign-dispatcher-2d3cd37c57b9.mp3"
+        ],
+        "playbackLevels": [
+          {
+            "file": "voice-campaign-dispatcher-2d3cd37c57b9.mp3",
+            "gain": 1
+          }
+        ],
+        "durationSeconds": 4.392,
+        "voiceRequests": 1,
+        "requestsBeforeReplay": 1,
+        "replayRefetched": false,
+        "liveSourcesAfterEnd": 2,
+        "created": 5,
+        "disposed": 5
+      },
+      {
+        "id": "voice-campaign-dispatcher-05ca9f853d11",
+        "route": "technique-face-self-refusal.json",
+        "source": "authored-route",
+        "expectedVoices": [
+          "voice-campaign-dispatcher-e8cadae1434a.mp3",
+          "voice-campaign-dispatcher-05ca9f853d11.mp3"
+        ],
+        "playbackLevels": [
+          {
+            "file": "voice-campaign-dispatcher-e8cadae1434a.mp3",
+            "gain": 1
+          },
+          {
+            "file": "voice-campaign-dispatcher-05ca9f853d11.mp3",
+            "gain": 1
+          }
+        ],
+        "durationSeconds": 14.342,
+        "voiceRequests": 1,
+        "requestsBeforeReplay": 1,
+        "replayRefetched": false,
+        "liveSourcesAfterEnd": 2,
+        "created": 6,
+        "disposed": 6
+      },
+      {
+        "id": "voice-campaign-dispatcher-8bf37188cd15",
+        "route": "technique-chrome-counter-label.json",
+        "source": "authored-route",
+        "expectedVoices": [
+          "voice-campaign-dispatcher-8bf37188cd15.mp3"
+        ],
+        "playbackLevels": [
+          {
+            "file": "voice-campaign-dispatcher-8bf37188cd15.mp3",
+            "gain": 1
+          }
+        ],
+        "durationSeconds": 6.445,
+        "voiceRequests": 1,
+        "requestsBeforeReplay": 1,
+        "replayRefetched": false,
+        "liveSourcesAfterEnd": 2,
+        "created": 5,
+        "disposed": 5
+      },
+      {
+        "id": "voice-campaign-dispatcher-83c284401881",
+        "route": "technique-chrome-counter-invent.json",
+        "source": "authored-route",
+        "expectedVoices": [
+          "voice-campaign-dispatcher-83c284401881.mp3"
+        ],
+        "playbackLevels": [
+          {
+            "file": "voice-campaign-dispatcher-83c284401881.mp3",
+            "gain": 1
+          }
+        ],
+        "durationSeconds": 5.397,
+        "voiceRequests": 1,
+        "requestsBeforeReplay": 1,
+        "replayRefetched": false,
+        "liveSourcesAfterEnd": 2,
+        "created": 5,
+        "disposed": 5
+      },
+      {
+        "id": "voice-campaign-dispatcher-fc3a0c281ee2",
+        "route": "technique-face-cosign-truth.json",
+        "source": "authored-route",
+        "expectedVoices": [
+          "voice-campaign-dispatcher-fc3a0c281ee2.mp3"
+        ],
+        "playbackLevels": [
+          {
+            "file": "voice-campaign-dispatcher-fc3a0c281ee2.mp3",
+            "gain": 1
+          }
+        ],
+        "durationSeconds": 5.379,
+        "voiceRequests": 1,
+        "requestsBeforeReplay": 1,
+        "replayRefetched": false,
+        "liveSourcesAfterEnd": 2,
+        "created": 5,
+        "disposed": 5
+      }
+    ],
+    "errors": [],
+    "failures": [],
+    "limitations": "Internal source examples: authored/seeded route states and separately labeled conditional branch samples. This is clip playback verification, not completed UI campaigns. Natural completion, explicit replay (cached or refetched after eviction), Stop, transcripts and cleanup are observed. No commissioned actors, human participation, physical-device or independent listening acceptance."
+  },
+  "testedSources": {
+    "lib/build-techniques.ts": "663a38618172c28bf7546c455de1da1ad15cbf1a4dd51973d88f971d8ab1923d",
+    "lib/story/build-techniques.ts": "96c22a876beef9be96da9dd91d67d7eb21bd2ca8584ad7bc380e9fab2b7ded71",
+    "lib/technique-dialogue.ts": "a99785fd05a7091409a1152a8af1c3b235f297da4c7c599873bdf4d1b8fa3dda",
+    "lib/engine.ts": "e248f22b2c8a6e6c4b9c4aea8f08ad935c6bfdbe37e9ea9db12accc213f8d25a",
+    "lib/district-response.ts": "6e0714691c46081421079e48f0b9a6bc5a2c8865ae22e4b882d8c64e724fdc83",
+    "lib/sound.ts": "718bbce2e4aec9a3c259bcc3fe8a041f039d254883467588d767f64821a9a503",
+    "lib/art.ts": "86998500b818cf78025201c14ef905b820363ef9f5b6b3cd6a20dada5caae6df",
+    "components/TechniqueBoard.tsx": "e53a754ca151ce24ec8f0f8a6c4c4967eca41be76477a188d07da39687dee8cd",
+    "components/PlayScreen.tsx": "0aa61d619262ddafb475e19b4f8c173d90c4383743ab7926e260a7f69bfaf2c5",
+    "components/GuideScreen.tsx": "9e447e5c13c2bbc7eafe982bb945b58dea37722626592028ff44b7909255ce20",
+    "components/FieldKitBrief.tsx": "5c727e2b04a3da05191505db11ecd413816d1c471359ef4bb559b5db578b816a",
+    "app/globals.css": "8b9b5b6bd5a813d0eb461ba7a8887f0d234729216850279f30dc9f40668cd90e",
+    "lib/build-techniques.test.ts": "5843f68419a0c4f9dd457e14080f91673b50041900fe511baaabc01e71fbb3b4",
+    "tests/build-techniques.spec.ts": "91bb06d2692ff136f647cc8064119760564d36a91b0e9fb6df5cd99443ba2c2c",
+    "qa/media/build-techniques.json": "1b9427d766cd4aa6c0a2fd82c683c6123838ef2253f6f9a5e95831fa9cc4a26a",
+    "qa/media/technique-dialogue-lines.json": "3ba5f8c12b0fe81645ac3494dc74189eb8011dbb7a95f5d9efa68051412a1301",
+    "qa/media/technique-dialogue-provenance.json": "ad7bcf50bdff909b8630a7d85f3bb33a22a370c04d5653472426020df46490da",
+    "qa/media/technique-dialogue-bindings.json": "ea4bb0ebadd57641019478237a33ddb5655205f2632dd3bb822e7cfc58d25504",
+    "qa/media/technique-dialogue-transcripts.json": "45bef9f0ebb9eee2b283aff27c6e0a022e813118d37e857a119b72ff42434251",
+    "qa/media/scene-art.json": "8316e5a5d768a0137f23fdfddac4055313a98ad1d24727027a60030d83243451"
+  },
+  "release": "Pre-publication snapshot. Full hosted CI, exact-commit production readiness and live gameplay/media checks must pass before calling Phase 4 published. Post-publication verification recorded separately.",
+  "limitations": "Internal authored/directed AI proxy and synthetic viewports. No independent human participation, physical-device, acting-quality acceptance or AAA score is claimed."
+}
