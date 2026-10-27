@@ -11,6 +11,7 @@ export const CHOICE_SECTIONS: Record<string, { title: string; choices: string[] 
   kerr: [
     { title: "Talk to Kerr", choices: ["tell-truth", "bluff-kerr", "talk-leave"] },
     { title: "Act under pressure", choices: ["slip", "fight", "dose", "crash", "copy-hot"] },
+    { title: "Consider different terms", choices: ["kerr-open-terms"] },
   ],
   act2_witness_door: [
     { title: "Review support", choices: ["compare-witness-support"] },

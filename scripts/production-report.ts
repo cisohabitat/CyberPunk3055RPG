@@ -28,7 +28,7 @@ if (graph.missing.length) throw new Error("Story graph has missing destinations"
 const variants = new Map<string, Set<string>>();
 const add = (id: string, text: string) => { const set = variants.get(id) ?? new Set<string>(); set.add(text); variants.set(id, set); };
 const coveredChoices = new Set<string>();
-const routes = readdirSync("qa/routes").filter((file) => file.endsWith(".json")).sort().map((file) => {
+const routes = readdirSync("qa/routes", { recursive: true }).filter((file): file is string => typeof file === "string" && file.endsWith(".json")).sort().map((file) => {
   const spec: ReplaySpec = JSON.parse(readFileSync(`qa/routes/${file}`, "utf8"));
   const result = replayCampaign(spec);
   let state = createCharacter(spec.character);

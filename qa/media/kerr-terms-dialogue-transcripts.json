@@ -1,0 +1,138 @@
+{
+  "method": "Independent ASR of delivered MP3s, no authored-text prompt; punctuation/case/apostrophe and 20-to-twenty normalization only. Automated proxy, not human listening acceptance.",
+  "model": "Systran/faster-whisper-base.en",
+  "runtime": "faster-whisper 1.2.1, CPU int8",
+  "modelFiles": [
+    {
+      "name": "models--Systran--faster-whisper-base.en/snapshots/3d3d5dee26484f91867d81cb899cfcf72b96be6c/config.json",
+      "sha256": "f3bc3821e9fc76a27bae538e11ae5b677dcdd352b4600429ce7951d398569aeb"
+    },
+    {
+      "name": "models--Systran--faster-whisper-base.en/snapshots/3d3d5dee26484f91867d81cb899cfcf72b96be6c/model.bin",
+      "sha256": "2a166925539a16005f14ff328359f9b9adb9dc4fb631bb3b227526862e93e2ef"
+    },
+    {
+      "name": "models--Systran--faster-whisper-base.en/snapshots/3d3d5dee26484f91867d81cb899cfcf72b96be6c/tokenizer.json",
+      "sha256": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df"
+    }
+  ],
+  "lines": [
+    {
+      "id": "voice-campaign-kerr-terms-b055761e9afc",
+      "speaker": "Kerr",
+      "path": "public/audio/voice-campaign-kerr-terms-b055761e9afc.mp3",
+      "sha256": "a46240a699544e3f25351fc972e7ec4eabf73765f62ddb191bb2a067536aedac",
+      "authoredText": "You want me to decide this is somebody else's trouble. Tell me what it costs you.",
+      "transcription": "You want me to decide this, is somebody else's trouble. Tell me what it costs you.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-kerr-terms-cae166cd5d8e",
+      "speaker": "Kerr",
+      "path": "public/audio/voice-campaign-kerr-terms-cae166cd5d8e.mp3",
+      "sha256": "1ea8d782787706df4e90981a60ba9174ed0bc585b62bba9935cca8e52d2434bd",
+      "authoredText": "I can give you a door. I can't give you a clean name.",
+      "transcription": "I can give you a door. I can't give you a clean name.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-kerr-terms-21d133ddba35",
+      "speaker": "Kerr",
+      "path": "public/audio/voice-campaign-kerr-terms-21d133ddba35.mp3",
+      "sha256": "549312d0e2b5b47e03aebe8ab05a341a359b39c3a682ca68583173315889d590",
+      "authoredText": "Then say which desk. Don't look at the glass while you do it.",
+      "transcription": "then say which desk. Don't look at the glass while you do it.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-kerr-terms-9eb4b102fa0b",
+      "speaker": "Kerr",
+      "path": "public/audio/voice-campaign-kerr-terms-9eb4b102fa0b.mp3",
+      "sha256": "dc2b5f08e108928001a48bd7d88bc96289dd62ad5bea48bf865a8797b346ee90",
+      "authoredText": "If that desk doesn't answer, I will remember who sent me to it.",
+      "transcription": "If that desk doesn't answer, I will remember who sent me to it.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-kerr-terms-84e2cc909f99",
+      "speaker": "Kerr",
+      "path": "public/audio/voice-campaign-kerr-terms-84e2cc909f99.mp3",
+      "sha256": "417ad4ca0c452e1b009e4251e29583b66c6d1b1bad4906e66ac78fbbe2550fcd",
+      "authoredText": "There is no clearance. There is you, using one more person as a door.",
+      "transcription": "There is no clearance. There is you, using one more person as a door.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-kerr-terms-89370c1ffbd4",
+      "speaker": "Kerr",
+      "path": "public/audio/voice-campaign-kerr-terms-89370c1ffbd4.mp3",
+      "sha256": "e471540d77846472f0a19c4e84462c631c5881c3f6e5b5044052eb4c629d2904",
+      "authoredText": "You can leave. Don't call it saving her.",
+      "transcription": "You can leave. Don't call it saving her.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-kerr-terms-c2ea702b5503",
+      "speaker": "Kerr",
+      "path": "public/audio/voice-campaign-kerr-terms-c2ea702b5503.mp3",
+      "sha256": "fdaf1d8a23a25007656b7a4455d78d7bdf4a7834f476879939318307c0e08698",
+      "authoredText": "I wrote your name. Not your reason. Those are different things.",
+      "transcription": "I wrote your name. Not your reason. Those are different things.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-kerr-terms-b12348e1925b",
+      "speaker": "Kerr",
+      "path": "public/audio/voice-campaign-kerr-terms-b12348e1925b.mp3",
+      "sha256": "b0ad4387d58a1266d98f9036d6946c77c0302814a98d6046f6483158c3644d8c",
+      "authoredText": "I called the desk you gave me. There wasn't a desk. You made my shift longer so yours could end.",
+      "transcription": "I called the desk you gave me. There wasn't a desk. You made my shift longer so yours could end.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-kerr-terms-4d6f6c624ea7",
+      "speaker": "Kerr",
+      "path": "public/audio/voice-campaign-kerr-terms-4d6f6c624ea7.mp3",
+      "sha256": "23199d464878ec590012510e09b3debe15a2c36683af0758f7677491fb57aa40",
+      "authoredText": "You tried a clearance that wasn't there. Don't ask me to remember it differently.",
+      "transcription": "You tried a clearance that wasn't there. Don't ask me to remember it differently.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-kerr-terms-c36a52eb86fe",
+      "speaker": "Kerr",
+      "path": "public/audio/voice-campaign-kerr-terms-c36a52eb86fe.mp3",
+      "sha256": "2bb7e82a776ec3702a9660eb07f5832374bc8e487cbb23e4ffb12f2d5641d291",
+      "authoredText": "You left the hour in the room. I stayed. Neither of us gets to call that a rescue.",
+      "transcription": "You left the hour in the room. I stayed. Neither of us gets to call that a rescue.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-kerr-terms-e69c29cfbc36",
+      "speaker": "Kerr",
+      "path": "public/audio/voice-campaign-kerr-terms-e69c29cfbc36.mp3",
+      "sha256": "afaf7ed5ebe2a228f9dd26639941c3d95081a20c1b903245d10413bbf3c5bde2",
+      "authoredText": "You said it was a lie. I heard you. That doesn't make the first story true.",
+      "transcription": "You said it was a lie. I heard you. That doesn't make the first story true.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-kerr-terms-acd344b4f340",
+      "speaker": "Kerr",
+      "path": "public/audio/voice-campaign-kerr-terms-acd344b4f340.mp3",
+      "sha256": "1e90ea2de492160f2d733b839c26db8ae2156023374e1f4cce66af682f7622ce",
+      "authoredText": "You want me to trust you because you've stopped lying for a minute? Start with the next minute.",
+      "transcription": "You want me to trust you, because you've stopped lying for a minute. Start with the next minute.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-kerr-terms-3d29183560fe",
+      "speaker": "Kerr",
+      "path": "public/audio/voice-campaign-kerr-terms-3d29183560fe.mp3",
+      "sha256": "4557a7747acbf489a2268fc4f4d2d0905cd35a7ed9a44c80d1210d5431f50cf6",
+      "authoredText": "Twenty for the clinic. Your name in my report. I let you walk under objection. That is not clearance.",
+      "transcription": "20 for the clinic. Your name in my report. I let you walk under objection. That is not clearance.",
+      "exactNormalizedWords": true
+    }
+  ]
+}

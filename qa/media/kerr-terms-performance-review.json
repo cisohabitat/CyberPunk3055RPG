@@ -1,0 +1,23 @@
+{
+  "method": "Same stock Kerr cast, authored sentence pauses, delivered MP3 ASR without a text prompt; not independent acting acceptance.",
+  "initialResult": {
+    "clips": 13,
+    "exactNormalizedMatches": 12
+  },
+  "retake": {
+    "previousId": "voice-campaign-kerr-terms-10e471fa1a62",
+    "previousText": "Twenty for the clinic. Your name in my report. I let you walk under objection. I don't write that Helion released the hour.",
+    "previousSha256": "e0387dedb9eca1c29c25458839c6466319a50597e773aa5e7f2e0935cbffeaad",
+    "rawTranscript": "20 for the clinic. Your name in my report. I let you walk under objection. I don't write that that Helian released the hour.",
+    "reason": "Initial independent ASR repeated that and misspelled Helion; shortened the last sentence to the clearer exact authored boundary That is not clearance.",
+    "originalPcmRetained": "/workspace/generated_audio/kerr-terms/voice-campaign-kerr-terms-10e471fa1a62.wav",
+    "newId": "voice-campaign-kerr-terms-3d29183560fe"
+  },
+  "finalResult": {
+    "clips": 13,
+    "exactNormalizedMatches": 13,
+    "record": "qa/media/kerr-terms-dialogue-transcripts.json"
+  },
+  "levelTargetLufs": -23.5,
+  "actingIntent": "A tired guard weighing his own exposure. Named exit is slower; exposed bluff is direct; withdrawal leaves room for silence, without a triumph cue."
+}

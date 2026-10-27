@@ -1,0 +1,300 @@
+[
+  {
+    "id": "voice-campaign-kerr-terms-b055761e9afc",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.9,
+    "text": "You want me to decide this is somebody else's trouble. Tell me what it costs you.",
+    "loudnessLufs": -23.5,
+    "direction": "Same stock Kerr identity. Restrained, tired, direct; quieter personal stakes, no triumph or forgiveness. Exact spoken words only.",
+    "segments": [
+      {
+        "text": "You want me to decide this is somebody else's trouble.",
+        "speed": 0.9,
+        "pauseAfter": 0.18
+      },
+      {
+        "text": "Tell me what it costs you.",
+        "speed": 0.9,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-kerr-terms-3d29183560fe",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.9,
+    "text": "Twenty for the clinic. Your name in my report. I let you walk under objection. That is not clearance.",
+    "loudnessLufs": -23.5,
+    "direction": "Same stock Kerr identity. Restrained, tired, direct; quieter personal stakes, no triumph or forgiveness. Exact spoken words only.",
+    "segments": [
+      {
+        "text": "Twenty for the clinic.",
+        "speed": 0.9,
+        "pauseAfter": 0.18
+      },
+      {
+        "text": "Your name in my report.",
+        "speed": 0.9,
+        "pauseAfter": 0.18
+      },
+      {
+        "text": "I let you walk under objection.",
+        "speed": 0.9,
+        "pauseAfter": 0.18
+      },
+      {
+        "text": "That is not clearance.",
+        "speed": 0.9,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-kerr-terms-cae166cd5d8e",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.86,
+    "text": "I can give you a door. I can't give you a clean name.",
+    "loudnessLufs": -23.5,
+    "direction": "Same stock Kerr identity. Restrained, tired, direct; quieter personal stakes, no triumph or forgiveness. Exact spoken words only.",
+    "segments": [
+      {
+        "text": "I can give you a door.",
+        "speed": 0.86,
+        "pauseAfter": 0.18
+      },
+      {
+        "text": "I can't give you a clean name.",
+        "speed": 0.86,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-kerr-terms-21d133ddba35",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.9,
+    "text": "Then say which desk. Don't look at the glass while you do it.",
+    "loudnessLufs": -23.5,
+    "direction": "Same stock Kerr identity. Restrained, tired, direct; quieter personal stakes, no triumph or forgiveness. Exact spoken words only.",
+    "segments": [
+      {
+        "text": "Then say which desk.",
+        "speed": 0.9,
+        "pauseAfter": 0.18
+      },
+      {
+        "text": "Don't look at the glass while you do it.",
+        "speed": 0.9,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-kerr-terms-9eb4b102fa0b",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.9,
+    "text": "If that desk doesn't answer, I will remember who sent me to it.",
+    "loudnessLufs": -23.5,
+    "direction": "Same stock Kerr identity. Restrained, tired, direct; quieter personal stakes, no triumph or forgiveness. Exact spoken words only.",
+    "segments": [
+      {
+        "text": "If that desk doesn't answer, I will remember who sent me to it.",
+        "speed": 0.9,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-kerr-terms-84e2cc909f99",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.9,
+    "text": "There is no clearance. There is you, using one more person as a door.",
+    "loudnessLufs": -23.5,
+    "direction": "Same stock Kerr identity. Restrained, tired, direct; quieter personal stakes, no triumph or forgiveness. Exact spoken words only.",
+    "segments": [
+      {
+        "text": "There is no clearance.",
+        "speed": 0.9,
+        "pauseAfter": 0.18
+      },
+      {
+        "text": "There is you, using one more person as a door.",
+        "speed": 0.9,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-kerr-terms-89370c1ffbd4",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.86,
+    "text": "You can leave. Don't call it saving her.",
+    "loudnessLufs": -23.5,
+    "direction": "Same stock Kerr identity. Restrained, tired, direct; quieter personal stakes, no triumph or forgiveness. Exact spoken words only.",
+    "segments": [
+      {
+        "text": "You can leave.",
+        "speed": 0.86,
+        "pauseAfter": 0.18
+      },
+      {
+        "text": "Don't call it saving her.",
+        "speed": 0.86,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-kerr-terms-c2ea702b5503",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.9,
+    "text": "I wrote your name. Not your reason. Those are different things.",
+    "loudnessLufs": -23.5,
+    "direction": "Same stock Kerr identity. Restrained, tired, direct; quieter personal stakes, no triumph or forgiveness. Exact spoken words only.",
+    "segments": [
+      {
+        "text": "I wrote your name.",
+        "speed": 0.9,
+        "pauseAfter": 0.18
+      },
+      {
+        "text": "Not your reason.",
+        "speed": 0.9,
+        "pauseAfter": 0.18
+      },
+      {
+        "text": "Those are different things.",
+        "speed": 0.9,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-kerr-terms-b12348e1925b",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.9,
+    "text": "I called the desk you gave me. There wasn't a desk. You made my shift longer so yours could end.",
+    "loudnessLufs": -23.5,
+    "direction": "Same stock Kerr identity. Restrained, tired, direct; quieter personal stakes, no triumph or forgiveness. Exact spoken words only.",
+    "segments": [
+      {
+        "text": "I called the desk you gave me.",
+        "speed": 0.9,
+        "pauseAfter": 0.18
+      },
+      {
+        "text": "There wasn't a desk.",
+        "speed": 0.9,
+        "pauseAfter": 0.18
+      },
+      {
+        "text": "You made my shift longer so yours could end.",
+        "speed": 0.9,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-kerr-terms-4d6f6c624ea7",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.9,
+    "text": "You tried a clearance that wasn't there. Don't ask me to remember it differently.",
+    "loudnessLufs": -23.5,
+    "direction": "Same stock Kerr identity. Restrained, tired, direct; quieter personal stakes, no triumph or forgiveness. Exact spoken words only.",
+    "segments": [
+      {
+        "text": "You tried a clearance that wasn't there.",
+        "speed": 0.9,
+        "pauseAfter": 0.18
+      },
+      {
+        "text": "Don't ask me to remember it differently.",
+        "speed": 0.9,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-kerr-terms-c36a52eb86fe",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.9,
+    "text": "You left the hour in the room. I stayed. Neither of us gets to call that a rescue.",
+    "loudnessLufs": -23.5,
+    "direction": "Same stock Kerr identity. Restrained, tired, direct; quieter personal stakes, no triumph or forgiveness. Exact spoken words only.",
+    "segments": [
+      {
+        "text": "You left the hour in the room.",
+        "speed": 0.9,
+        "pauseAfter": 0.18
+      },
+      {
+        "text": "I stayed.",
+        "speed": 0.9,
+        "pauseAfter": 0.18
+      },
+      {
+        "text": "Neither of us gets to call that a rescue.",
+        "speed": 0.9,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-kerr-terms-e69c29cfbc36",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.9,
+    "text": "You said it was a lie. I heard you. That doesn't make the first story true.",
+    "loudnessLufs": -23.5,
+    "direction": "Same stock Kerr identity. Restrained, tired, direct; quieter personal stakes, no triumph or forgiveness. Exact spoken words only.",
+    "segments": [
+      {
+        "text": "You said it was a lie.",
+        "speed": 0.9,
+        "pauseAfter": 0.18
+      },
+      {
+        "text": "I heard you.",
+        "speed": 0.9,
+        "pauseAfter": 0.18
+      },
+      {
+        "text": "That doesn't make the first story true.",
+        "speed": 0.9,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-kerr-terms-acd344b4f340",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.9,
+    "text": "You want me to trust you because you've stopped lying for a minute? Start with the next minute.",
+    "loudnessLufs": -23.5,
+    "direction": "Same stock Kerr identity. Restrained, tired, direct; quieter personal stakes, no triumph or forgiveness. Exact spoken words only.",
+    "segments": [
+      {
+        "text": "You want me to trust you because you've stopped lying for a minute?",
+        "speed": 0.9,
+        "pauseAfter": 0.18
+      },
+      {
+        "text": "Start with the next minute.",
+        "speed": 0.9,
+        "pauseAfter": 0
+      }
+    ]
+  }
+]

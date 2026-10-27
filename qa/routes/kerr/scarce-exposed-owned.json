@@ -1,0 +1,198 @@
+{
+  "name": "Kerr terms: scarce-exposed-owned",
+  "character": {
+    "handle": "Threshold",
+    "givenName": "Jo",
+    "origin": "spire",
+    "complication": "debt",
+    "bonus": {
+      "chrome": 0,
+      "nerve": 0,
+      "face": 2,
+      "ghost": 0
+    },
+    "startWithPrologue": true,
+    "expandedKerr": true
+  },
+  "steps": [
+    {
+      "choiceId": "begin-opening",
+      "reload": true
+    },
+    {
+      "choiceId": "opening-identity",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-stallholder",
+      "reload": true
+    },
+    {
+      "choiceId": "take-the-stool",
+      "reload": true
+    },
+    {
+      "choiceId": "accept",
+      "reload": true
+    },
+    {
+      "choiceId": "pass",
+      "reload": true
+    },
+    {
+      "choiceId": "bluff-door",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "go",
+      "reload": true
+    },
+    {
+      "choiceId": "honest",
+      "reload": true
+    },
+    {
+      "choiceId": "pact-copy",
+      "reload": true
+    },
+    {
+      "choiceId": "copy",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "heard",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-hour",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-signature",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-order",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-roster",
+      "reload": true
+    },
+    {
+      "choiceId": "reconstruct",
+      "reload": true
+    },
+    {
+      "choiceId": "separate-decisions",
+      "reload": true
+    },
+    {
+      "choiceId": "label-unverified",
+      "reload": true
+    },
+    {
+      "choiceId": "seal-witness",
+      "reload": true
+    },
+    {
+      "choiceId": "kerr-open-terms",
+      "reload": true
+    },
+    {
+      "choiceId": "kerr-terms-lie",
+      "reload": true
+    },
+    {
+      "choiceId": "kerr-terms-bluff-check",
+      "roll": 2,
+      "reload": true
+    },
+    {
+      "choiceId": "kerr-terms-exposed-retreat",
+      "reload": true
+    },
+    {
+      "choiceId": "kerr-terms-withdraw",
+      "reload": true
+    },
+    {
+      "choiceId": "week-after",
+      "reload": true
+    },
+    {
+      "choiceId": "into-week",
+      "reload": true
+    },
+    {
+      "choiceId": "read-board",
+      "reload": true
+    },
+    {
+      "choiceId": "to-kerr",
+      "reload": true
+    },
+    {
+      "choiceId": "kerr-terms-own-lie",
+      "reload": true
+    },
+    {
+      "choiceId": "kerr-terms-owned-leave",
+      "reload": true
+    },
+    {
+      "choiceId": "to-kerr",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-kerr",
+      "reload": true
+    },
+    {
+      "choiceId": "refuse-kerr",
+      "reload": true
+    },
+    {
+      "choiceId": "stand",
+      "reload": true
+    },
+    {
+      "choiceId": "back-to-board",
+      "reload": true
+    },
+    {
+      "choiceId": "to-the-wall",
+      "reload": true
+    },
+    {
+      "choiceId": "to-ward-nine",
+      "reload": true
+    },
+    {
+      "choiceId": "go-wall",
+      "reload": true
+    },
+    {
+      "choiceId": "face-sera",
+      "reload": true
+    },
+    {
+      "choiceId": "leave-wall",
+      "reload": true
+    }
+  ],
+  "expected": {
+    "sceneId": "ending_quiet",
+    "creds": 10,
+    "strain": 1,
+    "flags": {
+      "kerr_terms_exposed": true,
+      "kerr_terms_owned": true
+    },
+    "journal": [
+      "kerr-terms-exposed"
+    ]
+  }
+}

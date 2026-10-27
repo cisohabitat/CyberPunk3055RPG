@@ -1,0 +1,529 @@
+{
+  "generated": "2026-10-27",
+  "disclosure": "Stock synthetic voices generated offline with Kokoro v1.0; no actor session or individual voice clone was commissioned. Only the fixed authored quotations below are rendered. No model or speech service ships in the game.",
+  "driver": {
+    "name": "kokoro-onnx",
+    "version": "0.6.1",
+    "license": "MIT",
+    "url": "https://github.com/thewh1teagle/kokoro-onnx",
+    "licenseFile": "qa/media/voice-sources/kokoro-onnx-LICENSE.txt"
+  },
+  "model": {
+    "name": "Kokoro-82M v1.0",
+    "license": "Apache-2.0",
+    "card": "https://huggingface.co/hexgrad/Kokoro-82M",
+    "licenseFile": "qa/media/voice-sources/Kokoro-LICENSE.txt",
+    "files": [
+      {
+        "name": "kokoro-v1.0.onnx",
+        "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.onnx",
+        "sha256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+        "bytes": 325505369
+      },
+      {
+        "name": "voices-v1.0.bin",
+        "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin",
+        "sha256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+        "bytes": 28214398
+      }
+    ]
+  },
+  "source": "scripts/generate-campaign-voices.py",
+  "processing": "Exact authored character words; existing cast identities; optional sentence pauses, 8ms phrase fades, normalized PCM peak 0.72 with 80ms edges; optional per-line two-pass EBU loudness matching with -2dBTP ceiling; 96kbps mono MP3 delivery. Original PCM and normalized PCM retained outside Git.",
+  "reviewStatus": "Technical signal and source review; stock synthetic dialogue. No commissioned actors or independent listening acceptance.",
+  "lines": [
+    {
+      "id": "voice-campaign-kerr-terms-b055761e9afc",
+      "speaker": "Kerr",
+      "voice": "am_adam",
+      "speed": 0.9,
+      "text": "You want me to decide this is somebody else's trouble. Tell me what it costs you.",
+      "loudnessLufs": -23.5,
+      "direction": "Same stock Kerr identity. Restrained, tired, direct; quieter personal stakes, no triumph or forgiveness. Exact spoken words only.",
+      "segments": [
+        {
+          "text": "You want me to decide this is somebody else's trouble.",
+          "speed": 0.9,
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "Tell me what it costs you.",
+          "speed": 0.9,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.49,
+      "truePeakDbtp": -4.29,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-kerr-terms-b055761e9afc.mp3",
+      "sourceFile": "/workspace/generated_audio/kerr-terms/voice-campaign-kerr-terms-b055761e9afc.wav",
+      "sourceSha256": "37477d579d0c1dbd177745d7e6353a776390fe4528faa5c6a3c76b8df9a032b8",
+      "pcmDeliveryFile": "/workspace/generated_audio/kerr-terms/voice-campaign-kerr-terms-b055761e9afc-delivery.wav",
+      "pcmDeliverySha256": "e2a998ad19f2688189c040a13620c7df1834f06abc8dc047c5da1d5d079815ed",
+      "sha256": "a46240a699544e3f25351fc972e7ec4eabf73765f62ddb191bb2a067536aedac",
+      "bytes": 63980,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 5.244,
+      "peak": 0.6086208820343018,
+      "rms": 0.07416590303182602
+    },
+    {
+      "id": "voice-campaign-kerr-terms-cae166cd5d8e",
+      "speaker": "Kerr",
+      "voice": "am_adam",
+      "speed": 0.86,
+      "text": "I can give you a door. I can't give you a clean name.",
+      "loudnessLufs": -23.5,
+      "direction": "Same stock Kerr identity. Restrained, tired, direct; quieter personal stakes, no triumph or forgiveness. Exact spoken words only.",
+      "segments": [
+        {
+          "text": "I can give you a door.",
+          "speed": 0.86,
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "I can't give you a clean name.",
+          "speed": 0.86,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -4.95,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-kerr-terms-cae166cd5d8e.mp3",
+      "sourceFile": "/workspace/generated_audio/kerr-terms/voice-campaign-kerr-terms-cae166cd5d8e.wav",
+      "sourceSha256": "6ef88ee4c5d3427e3ba204bffd3db958344beb13b176981db531acbe985f1860",
+      "pcmDeliveryFile": "/workspace/generated_audio/kerr-terms/voice-campaign-kerr-terms-cae166cd5d8e-delivery.wav",
+      "pcmDeliverySha256": "3e50a3f8a035a9110296f64716fa14c9cb96944caca46436112b331cbb8fa0e5",
+      "sha256": "1ea8d782787706df4e90981a60ba9174ed0bc585b62bba9935cca8e52d2434bd",
+      "bytes": 49004,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 4.006625,
+      "peak": 0.563247799873352,
+      "rms": 0.07206818461418152
+    },
+    {
+      "id": "voice-campaign-kerr-terms-21d133ddba35",
+      "speaker": "Kerr",
+      "voice": "am_adam",
+      "speed": 0.9,
+      "text": "Then say which desk. Don't look at the glass while you do it.",
+      "loudnessLufs": -23.5,
+      "direction": "Same stock Kerr identity. Restrained, tired, direct; quieter personal stakes, no triumph or forgiveness. Exact spoken words only.",
+      "segments": [
+        {
+          "text": "Then say which desk.",
+          "speed": 0.9,
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "Don't look at the glass while you do it.",
+          "speed": 0.9,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -3.78,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-kerr-terms-21d133ddba35.mp3",
+      "sourceFile": "/workspace/generated_audio/kerr-terms/voice-campaign-kerr-terms-21d133ddba35.wav",
+      "sourceSha256": "b642f98c16687955cafc4c55a6edec0142d8a3d0f1111528c92f6b67bc2c98ee",
+      "pcmDeliveryFile": "/workspace/generated_audio/kerr-terms/voice-campaign-kerr-terms-21d133ddba35-delivery.wav",
+      "pcmDeliverySha256": "96aede0251156ebd5a318063e9d3f2d9ca5ccb613364d3625147bf4e9a3cf83e",
+      "sha256": "549312d0e2b5b47e03aebe8ab05a341a359b39c3a682ca68583173315889d590",
+      "bytes": 49004,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 4.006666666666667,
+      "peak": 0.6459565162658691,
+      "rms": 0.06895946711301804
+    },
+    {
+      "id": "voice-campaign-kerr-terms-9eb4b102fa0b",
+      "speaker": "Kerr",
+      "voice": "am_adam",
+      "speed": 0.9,
+      "text": "If that desk doesn't answer, I will remember who sent me to it.",
+      "loudnessLufs": -23.5,
+      "direction": "Same stock Kerr identity. Restrained, tired, direct; quieter personal stakes, no triumph or forgiveness. Exact spoken words only.",
+      "segments": [
+        {
+          "text": "If that desk doesn't answer, I will remember who sent me to it.",
+          "speed": 0.9,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -5.61,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-kerr-terms-9eb4b102fa0b.mp3",
+      "sourceFile": "/workspace/generated_audio/kerr-terms/voice-campaign-kerr-terms-9eb4b102fa0b.wav",
+      "sourceSha256": "9708a0a698ea19e0471ddb79e0ea9dff8ea4a32f7cefd88e6bdb19191fbf4cba",
+      "pcmDeliveryFile": "/workspace/generated_audio/kerr-terms/voice-campaign-kerr-terms-9eb4b102fa0b-delivery.wav",
+      "pcmDeliverySha256": "435550cb2c1a0246a73dfae39e1378f0fcdd82d7edc430612ee4bca094d240bb",
+      "sha256": "dc2b5f08e108928001a48bd7d88bc96289dd62ad5bea48bf865a8797b346ee90",
+      "bytes": 47564,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 3.8712916666666666,
+      "peak": 0.5233933329582214,
+      "rms": 0.07316743582487106
+    },
+    {
+      "id": "voice-campaign-kerr-terms-84e2cc909f99",
+      "speaker": "Kerr",
+      "voice": "am_adam",
+      "speed": 0.9,
+      "text": "There is no clearance. There is you, using one more person as a door.",
+      "loudnessLufs": -23.5,
+      "direction": "Same stock Kerr identity. Restrained, tired, direct; quieter personal stakes, no triumph or forgiveness. Exact spoken words only.",
+      "segments": [
+        {
+          "text": "There is no clearance.",
+          "speed": 0.9,
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "There is you, using one more person as a door.",
+          "speed": 0.9,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.51,
+      "truePeakDbtp": -4.08,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-kerr-terms-84e2cc909f99.mp3",
+      "sourceFile": "/workspace/generated_audio/kerr-terms/voice-campaign-kerr-terms-84e2cc909f99.wav",
+      "sourceSha256": "23e7c0eba0bc763d8076aa0035d5336360252c7472357eeb69c0c69ce9468ece",
+      "pcmDeliveryFile": "/workspace/generated_audio/kerr-terms/voice-campaign-kerr-terms-84e2cc909f99-delivery.wav",
+      "pcmDeliverySha256": "db1ec93939a8d4ad9c41b5542b171840ead58d15ee121ab6494cca272126c0a3",
+      "sha256": "417ad4ca0c452e1b009e4251e29583b66c6d1b1bad4906e66ac78fbbe2550fcd",
+      "bytes": 61100,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 5.008,
+      "peak": 0.6238504648208618,
+      "rms": 0.07485708594322205
+    },
+    {
+      "id": "voice-campaign-kerr-terms-89370c1ffbd4",
+      "speaker": "Kerr",
+      "voice": "am_adam",
+      "speed": 0.86,
+      "text": "You can leave. Don't call it saving her.",
+      "loudnessLufs": -23.5,
+      "direction": "Same stock Kerr identity. Restrained, tired, direct; quieter personal stakes, no triumph or forgiveness. Exact spoken words only.",
+      "segments": [
+        {
+          "text": "You can leave.",
+          "speed": 0.86,
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "Don't call it saving her.",
+          "speed": 0.86,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.49,
+      "truePeakDbtp": -3.92,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-kerr-terms-89370c1ffbd4.mp3",
+      "sourceFile": "/workspace/generated_audio/kerr-terms/voice-campaign-kerr-terms-89370c1ffbd4.wav",
+      "sourceSha256": "a07e619d07b0298c7fd0f2a64908412130a39213af445c595b685fdf60632fe2",
+      "pcmDeliveryFile": "/workspace/generated_audio/kerr-terms/voice-campaign-kerr-terms-89370c1ffbd4-delivery.wav",
+      "pcmDeliverySha256": "106fb69b98a8ae4c6efa2f8d4933fe1830b3b601ce7aa99545e125f4e0a9bb98",
+      "sha256": "e471540d77846472f0a19c4e84462c631c5881c3f6e5b5044052eb4c629d2904",
+      "bytes": 39788,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 3.227333333333333,
+      "peak": 0.636799156665802,
+      "rms": 0.0678689256310463
+    },
+    {
+      "id": "voice-campaign-kerr-terms-c2ea702b5503",
+      "speaker": "Kerr",
+      "voice": "am_adam",
+      "speed": 0.9,
+      "text": "I wrote your name. Not your reason. Those are different things.",
+      "loudnessLufs": -23.5,
+      "direction": "Same stock Kerr identity. Restrained, tired, direct; quieter personal stakes, no triumph or forgiveness. Exact spoken words only.",
+      "segments": [
+        {
+          "text": "I wrote your name.",
+          "speed": 0.9,
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "Not your reason.",
+          "speed": 0.9,
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "Those are different things.",
+          "speed": 0.9,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -4.97,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-kerr-terms-c2ea702b5503.mp3",
+      "sourceFile": "/workspace/generated_audio/kerr-terms/voice-campaign-kerr-terms-c2ea702b5503.wav",
+      "sourceSha256": "57aaa7e18acb382bdc57b188e8c4621fed021fd57c728eee91c6a6715443e56c",
+      "pcmDeliveryFile": "/workspace/generated_audio/kerr-terms/voice-campaign-kerr-terms-c2ea702b5503-delivery.wav",
+      "pcmDeliverySha256": "49c2456f30b35f3c4e8ed41a82c2d31e7f7a6bc779dfd064f7d1ffa6b231c9e1",
+      "sha256": "fdaf1d8a23a25007656b7a4455d78d7bdf4a7834f476879939318307c0e08698",
+      "bytes": 59372,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 4.868625,
+      "peak": 0.5641655921936035,
+      "rms": 0.07118885219097137
+    },
+    {
+      "id": "voice-campaign-kerr-terms-b12348e1925b",
+      "speaker": "Kerr",
+      "voice": "am_adam",
+      "speed": 0.9,
+      "text": "I called the desk you gave me. There wasn't a desk. You made my shift longer so yours could end.",
+      "loudnessLufs": -23.5,
+      "direction": "Same stock Kerr identity. Restrained, tired, direct; quieter personal stakes, no triumph or forgiveness. Exact spoken words only.",
+      "segments": [
+        {
+          "text": "I called the desk you gave me.",
+          "speed": 0.9,
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "There wasn't a desk.",
+          "speed": 0.9,
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "You made my shift longer so yours could end.",
+          "speed": 0.9,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -4.86,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-kerr-terms-b12348e1925b.mp3",
+      "sourceFile": "/workspace/generated_audio/kerr-terms/voice-campaign-kerr-terms-b12348e1925b.wav",
+      "sourceSha256": "5404bd691414bb6721404cacd4688bf6f4a7eaec14454e5acc4c86fae64d192b",
+      "pcmDeliveryFile": "/workspace/generated_audio/kerr-terms/voice-campaign-kerr-terms-b12348e1925b-delivery.wav",
+      "pcmDeliverySha256": "7a26c83b028797b51d14961f03da7c2cec92cb65e8e680b757b346c8be884117",
+      "sha256": "b0ad4387d58a1266d98f9036d6946c77c0302814a98d6046f6483158c3644d8c",
+      "bytes": 80108,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 6.584,
+      "peak": 0.5698248147964478,
+      "rms": 0.07054553925991058
+    },
+    {
+      "id": "voice-campaign-kerr-terms-4d6f6c624ea7",
+      "speaker": "Kerr",
+      "voice": "am_adam",
+      "speed": 0.9,
+      "text": "You tried a clearance that wasn't there. Don't ask me to remember it differently.",
+      "loudnessLufs": -23.5,
+      "direction": "Same stock Kerr identity. Restrained, tired, direct; quieter personal stakes, no triumph or forgiveness. Exact spoken words only.",
+      "segments": [
+        {
+          "text": "You tried a clearance that wasn't there.",
+          "speed": 0.9,
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "Don't ask me to remember it differently.",
+          "speed": 0.9,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.51,
+      "truePeakDbtp": -3.99,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-kerr-terms-4d6f6c624ea7.mp3",
+      "sourceFile": "/workspace/generated_audio/kerr-terms/voice-campaign-kerr-terms-4d6f6c624ea7.wav",
+      "sourceSha256": "ce48a82df9191c3403d9207d8b6545d102bc78eb70bc448e191cf15583796241",
+      "pcmDeliveryFile": "/workspace/generated_audio/kerr-terms/voice-campaign-kerr-terms-4d6f6c624ea7-delivery.wav",
+      "pcmDeliverySha256": "fe8752fca4167c5051c9670120b69cd3bb8f47e459c8b39c4b0852d118eb0061",
+      "sha256": "23199d464878ec590012510e09b3debe15a2c36683af0758f7677491fb57aa40",
+      "bytes": 57644,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 4.710666666666667,
+      "peak": 0.6319661140441895,
+      "rms": 0.07010110467672348
+    },
+    {
+      "id": "voice-campaign-kerr-terms-c36a52eb86fe",
+      "speaker": "Kerr",
+      "voice": "am_adam",
+      "speed": 0.9,
+      "text": "You left the hour in the room. I stayed. Neither of us gets to call that a rescue.",
+      "loudnessLufs": -23.5,
+      "direction": "Same stock Kerr identity. Restrained, tired, direct; quieter personal stakes, no triumph or forgiveness. Exact spoken words only.",
+      "segments": [
+        {
+          "text": "You left the hour in the room.",
+          "speed": 0.9,
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "I stayed.",
+          "speed": 0.9,
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "Neither of us gets to call that a rescue.",
+          "speed": 0.9,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -5.53,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-kerr-terms-c36a52eb86fe.mp3",
+      "sourceFile": "/workspace/generated_audio/kerr-terms/voice-campaign-kerr-terms-c36a52eb86fe.wav",
+      "sourceSha256": "426919fa53473c45a7fe280392b89e9f152be3e297992153627a258a2171ae2e",
+      "pcmDeliveryFile": "/workspace/generated_audio/kerr-terms/voice-campaign-kerr-terms-c36a52eb86fe-delivery.wav",
+      "pcmDeliverySha256": "b1d680e47c5b8900a4117ad4e1511b8f903af52e1d1758a6ba8520612e7fa554",
+      "sha256": "2bb7e82a776ec3702a9660eb07f5832374bc8e487cbb23e4ffb12f2d5641d291",
+      "bytes": 72620,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 5.956583333333334,
+      "peak": 0.5292805433273315,
+      "rms": 0.07077561318874359
+    },
+    {
+      "id": "voice-campaign-kerr-terms-e69c29cfbc36",
+      "speaker": "Kerr",
+      "voice": "am_adam",
+      "speed": 0.9,
+      "text": "You said it was a lie. I heard you. That doesn't make the first story true.",
+      "loudnessLufs": -23.5,
+      "direction": "Same stock Kerr identity. Restrained, tired, direct; quieter personal stakes, no triumph or forgiveness. Exact spoken words only.",
+      "segments": [
+        {
+          "text": "You said it was a lie.",
+          "speed": 0.9,
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "I heard you.",
+          "speed": 0.9,
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "That doesn't make the first story true.",
+          "speed": 0.9,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -4.93,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-kerr-terms-e69c29cfbc36.mp3",
+      "sourceFile": "/workspace/generated_audio/kerr-terms/voice-campaign-kerr-terms-e69c29cfbc36.wav",
+      "sourceSha256": "8c41b17712e685061dacfc28dfd628917c7283ac16bc54005bb1649247b0419a",
+      "pcmDeliveryFile": "/workspace/generated_audio/kerr-terms/voice-campaign-kerr-terms-e69c29cfbc36-delivery.wav",
+      "pcmDeliverySha256": "e0b43a19a5e12b675a727dca317bd662e80bf93da9d9114f7e703da9b15a6e5b",
+      "sha256": "afaf7ed5ebe2a228f9dd26639941c3d95081a20c1b903245d10413bbf3c5bde2",
+      "bytes": 67148,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 5.507333333333333,
+      "peak": 0.5664600133895874,
+      "rms": 0.07006017118692398
+    },
+    {
+      "id": "voice-campaign-kerr-terms-acd344b4f340",
+      "speaker": "Kerr",
+      "voice": "am_adam",
+      "speed": 0.9,
+      "text": "You want me to trust you because you've stopped lying for a minute? Start with the next minute.",
+      "loudnessLufs": -23.5,
+      "direction": "Same stock Kerr identity. Restrained, tired, direct; quieter personal stakes, no triumph or forgiveness. Exact spoken words only.",
+      "segments": [
+        {
+          "text": "You want me to trust you because you've stopped lying for a minute?",
+          "speed": 0.9,
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "Start with the next minute.",
+          "speed": 0.9,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -4.6,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-kerr-terms-acd344b4f340.mp3",
+      "sourceFile": "/workspace/generated_audio/kerr-terms/voice-campaign-kerr-terms-acd344b4f340.wav",
+      "sourceSha256": "28a6c9eaa01c6b8f8d5db140bc2b1b68c4629a269955fae35841b14e9d674eed",
+      "pcmDeliveryFile": "/workspace/generated_audio/kerr-terms/voice-campaign-kerr-terms-acd344b4f340-delivery.wav",
+      "pcmDeliverySha256": "778351719947d5c72af40a871357d2062c364e77c26f3fbc51cc7ebd1432b967",
+      "sha256": "1e90ea2de492160f2d733b839c26db8ae2156023374e1f4cce66af682f7622ce",
+      "bytes": 67724,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 5.564,
+      "peak": 0.5882114171981812,
+      "rms": 0.07317070662975311
+    },
+    {
+      "id": "voice-campaign-kerr-terms-3d29183560fe",
+      "speaker": "Kerr",
+      "voice": "am_adam",
+      "speed": 0.9,
+      "text": "Twenty for the clinic. Your name in my report. I let you walk under objection. That is not clearance.",
+      "loudnessLufs": -23.5,
+      "direction": "Same stock Kerr identity. Restrained, tired, direct; quieter personal stakes, no triumph or forgiveness. Exact spoken words only.",
+      "segments": [
+        {
+          "text": "Twenty for the clinic.",
+          "speed": 0.9,
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "Your name in my report.",
+          "speed": 0.9,
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "I let you walk under objection.",
+          "speed": 0.9,
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "That is not clearance.",
+          "speed": 0.9,
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.49,
+      "truePeakDbtp": -4.21,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-kerr-terms-3d29183560fe.mp3",
+      "sourceFile": "/workspace/generated_audio/kerr-terms/voice-campaign-kerr-terms-3d29183560fe.wav",
+      "sourceSha256": "713a6fb290da6c40dc3c3e7c4a5c8dc3b45a43086a90b32358a52badcf206cac",
+      "pcmDeliveryFile": "/workspace/generated_audio/kerr-terms/voice-campaign-kerr-terms-3d29183560fe-delivery.wav",
+      "pcmDeliverySha256": "5d493a60f216bdb50f654064aaddc864bb9dd2ca4f39d56aab59dacfbe027df6",
+      "sha256": "4557a7747acbf489a2268fc4f4d2d0905cd35a7ed9a44c80d1210d5431f50cf6",
+      "bytes": 94220,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 7.76725,
+      "peak": 0.6142435073852539,
+      "rms": 0.07243379950523376
+    }
+  ]
+}

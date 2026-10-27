@@ -11,7 +11,9 @@ export function weekRetell(state: GameState): string {
 }
 
 export function nightRetell(state: GameState): string[] {
-  const chapel = state.flags.act1_sold
+  const chapel = state.flags.kerr_terms_withdrew || state.flags.kerr_terms_withdrew_after_exposure
+    ? "You left the original hour at the chapel and walked away from the fight."
+    : state.flags.act1_sold
     ? "You left the chapel by selling Mara's hour."
     : state.flags.act1_both
       ? "You left the chapel with the hour sold and a copy loose."

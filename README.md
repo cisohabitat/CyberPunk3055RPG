@@ -922,3 +922,12 @@ The latest source-familiar internal reassessment is 8.5/10 (weighted 8.53), docu
 The reassessment's WebKit follow-up retains native audio-parameter references in the QA mix observer so garbage collection cannot erase a real bus measurement. Directed-performance checks explicitly request collection and retain the original mix assertions. Rotation checks wait for native scrolling to settle before reversing; both original directions, distances, viewport checks and save checks remain required. These changes affect test observation only, with no gameplay, audio playback or scroll behavior change. The failed full run remains recorded in the review; publication requires a fresh complete CI cohort.
 
 Deferred-depot follow-up: the consolidated district record starts when a source was actually shared, even if no request was submitted. Preserve Edda's known receipt/ledger through deferral and the week boundary, while explicitly reporting “No depot request submitted”; infer no action allowance, introduction, inquiry result or source permission. The ordinary standalone ledger remains scoped to depot work. Actual deferred-route source, save and three-width accessibility checks cover this case.
+
+
+## Kerr: the price of a doorway
+
+New runs offer a separate terms conversation at the chapel. Negotiate an exit for twenty credits and a recorded name, risk an invented clearance, or leave the original behind without another fight. Kerr remembers the actual outcome when you return a week later. Owning a lie is possible; it does not erase it or buy forgiveness. Older saved encounters and pending rolls continue under their original choices.
+
+Eight new scenes, a matching neutral chapel painting and thirteen same-cast synthetic Kerr quotations accompany this phase. The spoken words, actual actor and measured deliveries are recorded in the [media audition](qa/media/kerr-terms-review.html); the [phase plan and validation](docs/KERR_CONFRONTATION_PHASE.md) covers costs, source limits, seven complete replay alternatives and publication checks. The current catalog contains 225 scenes, 688 choices and 171 authored routes. The internal grade remains provisional at 8.5/10; this phase does not turn test counts into an AAA rating.
+
+The preceding polish release is independently recorded in qa/editorial/campaign-reassessment-release.json, including exact-commit full CI and public verification.

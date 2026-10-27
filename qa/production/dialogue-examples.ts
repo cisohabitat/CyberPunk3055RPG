@@ -23,7 +23,7 @@ export function dialogueExamples(): Map<string, Example> {
       examples.set(line.id, { state: stageCheck(state, choice.id, check.roll), route, source, checkResult: true });
     }
   };
-  for (const file of readdirSync("qa/routes").filter(f => f.endsWith(".json")).sort()) {
+  for (const file of readdirSync("qa/routes", { recursive: true }).filter((f): f is string => typeof f === "string" && f.endsWith(".json")).sort()) {
     const spec = JSON.parse(readFileSync(`qa/routes/${file}`, "utf8")) as ReplaySpec;
     let state = createCharacter(spec.character); record(state, file, "authored-route");
     for (const step of spec.steps) {

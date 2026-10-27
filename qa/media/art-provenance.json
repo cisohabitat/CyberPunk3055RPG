@@ -4387,6 +4387,38 @@
         "previousSourceSha256": "4923665c362e157f328945edf047c1e5a5a6e20f628e1f4b2f615daf080756dc",
         "reason": "Pre-publication review removed a closed folio to avoid contradicting an actually open folio or implying a later outcome. Both generated originals retained."
       }
+    },
+    {
+      "id": "kerr-terms",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-27",
+      "sourceFile": "/workspace/generated_images/exec-008888fb-e881-49a0-9703-3ae80f2c72c3.png",
+      "sourceSha256": "89577ca763c35cc427a3e7e1284fb5b9a046fcc6a60ef947e4f821c7463741f9",
+      "promptSummary": "Reference-matched Kerr listening at a neutral chapel doorway; one anatomically connected visible hand, no transaction, injury, paperwork or successful outcome.",
+      "deliveryProcessing": "Resize and JPEG encode only; generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/kerr-terms.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 200043,
+          "sha256": "3a36aebd59aee508b590317d0fb544ecbab7183e901ea78ed04ca44a4ee0d551"
+        },
+        {
+          "path": "public/art/kerr-terms-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 56856,
+          "sha256": "d9ff6b47adabce778d7ed409b300e604fb38176314c4075b4c7a8d059fa485e6"
+        },
+        {
+          "path": "public/art/previews/kerr-terms.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 2626,
+          "sha256": "ccc43e397f45cabc2ef69aec9c7e7b1f539f98cdb1df8f67e54762b7f53172bb"
+        }
+      ]
     }
   ]
 }

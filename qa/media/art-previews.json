@@ -803,6 +803,15 @@
       "sha256": "80580b6ede16f12794e672a7e5603d36e3d7a8010dbd8ef0977ae88d844ff902",
       "source": "public/art/witness-checkpoint.jpg",
       "sourceSha256": "9b570b041a4d542fc6431459831a1fcdd17acc6876213f4caa8d5ee52fee6dc8"
+    },
+    {
+      "source": "public/art/kerr-terms.jpg",
+      "sourceSha256": "3a36aebd59aee508b590317d0fb544ecbab7183e901ea78ed04ca44a4ee0d551",
+      "path": "public/art/previews/kerr-terms.jpg",
+      "sha256": "ccc43e397f45cabc2ef69aec9c7e7b1f539f98cdb1df8f67e54762b7f53172bb",
+      "width": 96,
+      "height": 64,
+      "bytes": 2626
     }
   ]
 }

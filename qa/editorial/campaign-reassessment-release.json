@@ -1,0 +1,439 @@
+{
+  "release": "Whole-campaign reassessment and polish",
+  "commit": "e05ba0d767114975e10fe52456de151005c12a44",
+  "previousPublishedCommit": "380b804d314428b3d14dd14aff25e8f4df7e7a3b",
+  "evidenceType": "Post-publication observations; preceding committed snapshots remain unchanged",
+  "grade": {
+    "internalProvisional": 8.5,
+    "weighted": 8.53,
+    "review": "docs/POST_ROADMAP_REVIEW.md",
+    "participantProxy": "Source-familiar AI/automation; not an independent AAA acceptance rating"
+  },
+  "ci": {
+    "runId": 40491500243,
+    "url": "https://github.com/cisohabitat/CyberPunk3055RPG/actions/runs/40491500243",
+    "gate": "Existing scripts/ci-gate.mjs productionDecision returned build for six successful same-suite GitHub Actions checks",
+    "suiteId": 109744705990,
+    "checks": [
+      {
+        "id": 122167585560,
+        "name": "Build",
+        "status": "completed",
+        "conclusion": "success",
+        "app": "github-actions",
+        "suiteId": 109744705990,
+        "startedAt": "2026-10-27T11:39:41Z",
+        "completedAt": "2026-10-27T11:39:52Z"
+      },
+      {
+        "id": 122147682088,
+        "name": "Browser (chromium)",
+        "status": "completed",
+        "conclusion": "success",
+        "app": "github-actions",
+        "suiteId": 109744705990,
+        "startedAt": "2026-10-27T10:53:07Z",
+        "completedAt": "2026-10-27T11:11:46Z"
+      },
+      {
+        "id": 122147681905,
+        "name": "Browser (webkit)",
+        "status": "completed",
+        "conclusion": "success",
+        "app": "github-actions",
+        "suiteId": 109744705990,
+        "startedAt": "2026-10-27T10:53:08Z",
+        "completedAt": "2026-10-27T11:39:38Z"
+      },
+      {
+        "id": 122147681876,
+        "name": "Browser (phone)",
+        "status": "completed",
+        "conclusion": "success",
+        "app": "github-actions",
+        "suiteId": 109744705990,
+        "startedAt": "2026-10-27T10:53:07Z",
+        "completedAt": "2026-10-27T11:10:32Z"
+      },
+      {
+        "id": 122147681860,
+        "name": "Browser (firefox)",
+        "status": "completed",
+        "conclusion": "success",
+        "app": "github-actions",
+        "suiteId": 109744705990,
+        "startedAt": "2026-10-27T10:53:07Z",
+        "completedAt": "2026-10-27T11:22:52Z"
+      },
+      {
+        "id": 122146293910,
+        "name": "Test",
+        "status": "completed",
+        "conclusion": "success",
+        "app": "github-actions",
+        "suiteId": 109744705990,
+        "startedAt": "2026-10-27T10:49:55Z",
+        "completedAt": "2026-10-27T10:53:05Z"
+      }
+    ],
+    "source": {
+      "passed": 771,
+      "failed": 0
+    },
+    "dependencyAudit": {
+      "knownVulnerabilities": 0
+    },
+    "browsers": [
+      {
+        "project": "chromium",
+        "passed": 873,
+        "skipped": 0,
+        "flaky": 0
+      },
+      {
+        "project": "phone",
+        "passed": 871,
+        "skipped": 2,
+        "flaky": 0
+      },
+      {
+        "project": "firefox",
+        "passed": 871,
+        "skipped": 2,
+        "flaky": 0
+      },
+      {
+        "project": "webkit",
+        "passed": 871,
+        "skipped": 2,
+        "flaky": 0
+      }
+    ],
+    "balance": "All existing required balance audits passed",
+    "priorRuns": [
+      {
+        "id": 40480168398,
+        "status": "Superseded by the deferred-disclosure correction; canceled without being used for this release"
+      },
+      {
+        "id": 40483407202,
+        "status": "Failed WebKit/Build; preserved in qa/editorial/campaign-reassessment-webkit-followup.json"
+      }
+    ]
+  },
+  "deployment": {
+    "id": "dpl_73UBZyXHMqxVGJQCLzcj89PeGaC7",
+    "url": "cyberpunk3055rpg-ajepwg9zn-cfusion2k-7277s-projects.vercel.app",
+    "state": "READY",
+    "commit": "e05ba0d767114975e10fe52456de151005c12a44",
+    "target": "production",
+    "trigger": "Same tested main redeployed through Vercel after complete exact-commit CI; no source or gate change",
+    "earlierAttempt": {
+      "id": "dpl_DRwCNK56Jc3W4PPTw21iFSuyJgeH",
+      "state": "CANCELED",
+      "observation": "Canceled while the full CI run was still pending"
+    },
+    "aliases": [
+      {
+        "alias": "cyberpunk3055rpg.vercel.app",
+        "id": "dpl_73UBZyXHMqxVGJQCLzcj89PeGaC7",
+        "state": "READY",
+        "commit": "e05ba0d767114975e10fe52456de151005c12a44"
+      },
+      {
+        "alias": "cyberpunk3055rpg-git-main-cfusion2k-7277s-projects.vercel.app",
+        "id": "dpl_73UBZyXHMqxVGJQCLzcj89PeGaC7",
+        "state": "READY",
+        "commit": "e05ba0d767114975e10fe52456de151005c12a44"
+      }
+    ]
+  },
+  "preservation": {
+    "storyVoiceArtAndSaveBytesUnchangedByFinalHarnessCorrection": true,
+    "canonicalCampaignComparisons": "qa/editorial/campaign-reassessment.json",
+    "deferredFollowup": "qa/editorial/campaign-reassessment-followup.json",
+    "webkitFollowup": "qa/editorial/campaign-reassessment-webkit-followup.json"
+  },
+  "limits": [
+    "Internal source-familiar play and browser checks are not independent artistic, acting or physical-device acceptance.",
+    "Configured hosted retries were retained; no browser case required a retry in this final cohort.",
+    "No new scene, quotation or media asset was introduced by the polish."
+  ],
+  "public": "https://cyberpunk3055rpg.vercel.app",
+  "recordedAtUtc": "2026-10-27T11:44:35.894376+00:00",
+  "live": {
+    "featureChecksPassed": 61,
+    "audioChecksPassed": 5,
+    "retries": 0,
+    "media": {
+      "commit": "e05ba0d767114975e10fe52456de151005c12a44",
+      "voiceDeliveries": 7,
+      "artDeliveries": 24,
+      "rows": [
+        {
+          "path": "/audio/voice-campaign-mara-revelation-performance.mp3",
+          "status": 200,
+          "bytes": 114668,
+          "sha256": "c862782aa863dea10d16fa4740542283d252475332366cba2be1efc931c3af58"
+        },
+        {
+          "path": "/audio/voice-campaign-kerr-3914d401fb83.mp3",
+          "status": 200,
+          "bytes": 16172,
+          "sha256": "dedf3c7e841870c6d32a4ea7c0aee46f9a49888892ae43db621b2c8fb93208d6"
+        },
+        {
+          "path": "/audio/voice-kerr-kerr.wav",
+          "status": 200,
+          "bytes": 312780,
+          "sha256": "1f5a0e7cd2154c89a79b4fed3a5622ab04db107e6ae90a14394cb02b802d5e4a"
+        },
+        {
+          "path": "/audio/voice-campaign-nia-pell-c987f8a09159.mp3",
+          "status": 200,
+          "bytes": 23660,
+          "sha256": "de1327f14fbdb4d5511b9fb329c6141a8c72c80de007b4c3d04cfc83db7b4c72"
+        },
+        {
+          "path": "/audio/voice-nia-arrival.wav",
+          "status": 200,
+          "bytes": 448268,
+          "sha256": "d491be8168f0903643430831328c9846014804e509e743b8905703a705ecd772"
+        },
+        {
+          "path": "/audio/voice-campaign-sera-1031969a7935.mp3",
+          "status": 200,
+          "bytes": 18188,
+          "sha256": "885228941d905cf23bb9c4a85b53438ad267dd69303b97cf9d7e9812827d40b3"
+        },
+        {
+          "path": "/audio/voice-sera-wall-invitation.wav",
+          "status": 200,
+          "bytes": 285192,
+          "sha256": "8acb35ad90d96230b250aab59088dd322e0f0741cbade1059b723c2ff9d35abf"
+        },
+        {
+          "path": "/art/recorded-hour-detail.jpg",
+          "status": 200,
+          "bytes": 287087,
+          "sha256": "729571c4e5cced781bb43e30e56bfc8fe0164d75c656cd3987c4359bc76da191"
+        },
+        {
+          "path": "/art/recorded-hour-detail-small.jpg",
+          "status": 200,
+          "bytes": 82440,
+          "sha256": "68546cc2422af261af2189d066497768ca0d50c8be39bcf5f573d8e3197d1a64"
+        },
+        {
+          "path": "/art/previews/recorded-hour-detail.jpg",
+          "status": 200,
+          "bytes": 2557,
+          "sha256": "0bcde867b584ea7b61e7696fdbf7b102a5a28ca29f4ee078339e0bb5cbf0f75d"
+        },
+        {
+          "path": "/art/chapel-threshold-detail.jpg",
+          "status": 200,
+          "bytes": 323057,
+          "sha256": "0398f6800cbc0992f8f275f8c17e0da47b02dffe24fde4e2083ac934b7ec82ca"
+        },
+        {
+          "path": "/art/chapel-threshold-detail-small.jpg",
+          "status": 200,
+          "bytes": 81368,
+          "sha256": "2803b0e0b5f417776e86c01ff57d1a1400b8c4c9b9ea036f5403aa5ef1a680b2"
+        },
+        {
+          "path": "/art/previews/chapel-threshold-detail.jpg",
+          "status": 200,
+          "bytes": 2007,
+          "sha256": "4107217af4a2ecf3a17d03384bcf54869d466dfba8bf1228661cff1fe09704e3"
+        },
+        {
+          "path": "/art/witness-choice-detail.jpg",
+          "status": 200,
+          "bytes": 335658,
+          "sha256": "058519b1c95690e2aae9631a469c2b8e79d805475b2b091001c875d4c0f8bb1d"
+        },
+        {
+          "path": "/art/witness-choice-detail-small.jpg",
+          "status": 200,
+          "bytes": 89420,
+          "sha256": "7a604a8742607b2c6e2e7ce4e84e67d05d2d953d5be73c8e177503db766877fe"
+        },
+        {
+          "path": "/art/previews/witness-choice-detail.jpg",
+          "status": 200,
+          "bytes": 2405,
+          "sha256": "33f755a86b4cfc723c5426941a7212864db8f95b1fe4a17c0992525e8fcdb690"
+        },
+        {
+          "path": "/art/memorial-pause-detail.jpg",
+          "status": 200,
+          "bytes": 382233,
+          "sha256": "ded3e1c18e8d1aadf803088780a7cc138c55ff250a75f20469f5571946d1e1a5"
+        },
+        {
+          "path": "/art/memorial-pause-detail-small.jpg",
+          "status": 200,
+          "bytes": 93786,
+          "sha256": "c4043a47c466c2a3b7eb29e6870dc5711c3950d24fda152c1f68372e72df407e"
+        },
+        {
+          "path": "/art/previews/memorial-pause-detail.jpg",
+          "status": 200,
+          "bytes": 2006,
+          "sha256": "5bf72b2afa10c3c339c7b5358f2a9265f8b06133366d64c448e8300449601558"
+        },
+        {
+          "path": "/art/finale-names.jpg",
+          "status": 200,
+          "bytes": 284789,
+          "sha256": "7a22dc054a9e6700b8a688dedc17f02dc672efe4cccaa979082e07ff2153e72c"
+        },
+        {
+          "path": "/art/finale-names-small.jpg",
+          "status": 200,
+          "bytes": 81924,
+          "sha256": "8cd0509d1862947e9fc82878b37f7d48ce76b38bcfaf888eb6a5db314bf6c269"
+        },
+        {
+          "path": "/art/previews/finale-names.jpg",
+          "status": 200,
+          "bytes": 1302,
+          "sha256": "77647a660c22e4bfae4334a4b02fa165fff0560f59d339569ec532df9e51d13d"
+        },
+        {
+          "path": "/art/finale-quiet.jpg",
+          "status": 200,
+          "bytes": 294800,
+          "sha256": "ac9eaf092f9d3e79f6ddc9efdf5b306e0f0838cad1414f21f7159cc7c5061074"
+        },
+        {
+          "path": "/art/finale-quiet-small.jpg",
+          "status": 200,
+          "bytes": 78706,
+          "sha256": "4341796646fc70459af7481f8df71720e2f37c304605ec687d09d75bb6b7560c"
+        },
+        {
+          "path": "/art/previews/finale-quiet.jpg",
+          "status": 200,
+          "bytes": 1214,
+          "sha256": "16985f585f31072b331b138bd98dd3720dfbdfd47f1a62839ff520ef0106c1eb"
+        },
+        {
+          "path": "/art/finale-witness.jpg",
+          "status": 200,
+          "bytes": 247623,
+          "sha256": "08b5ebc44ac43c137ac792901092963f3f21ab35a5ae12f7390a3125f3e66c37"
+        },
+        {
+          "path": "/art/finale-witness-small.jpg",
+          "status": 200,
+          "bytes": 69937,
+          "sha256": "5c00c4fd455cc0e3f819c5ca1919a907eeba363838303dba0f7d3679fdb8f719"
+        },
+        {
+          "path": "/art/previews/finale-witness.jpg",
+          "status": 200,
+          "bytes": 1330,
+          "sha256": "701337d983ada377c4c4ec33b79d1660bb40cd2bd42b490f3085b520240491fd"
+        },
+        {
+          "path": "/art/finale-listed.jpg",
+          "status": 200,
+          "bytes": 283489,
+          "sha256": "097e29b0e4558bcbfccfd9f2431b0cdc80c810d01b313b1a29407df4ebec1954"
+        },
+        {
+          "path": "/art/finale-listed-small.jpg",
+          "status": 200,
+          "bytes": 74999,
+          "sha256": "adc674abba2e4e39af79a919cce5bfc5c9d9a4ff74deff6285eed220e7856f37"
+        },
+        {
+          "path": "/art/previews/finale-listed.jpg",
+          "status": 200,
+          "bytes": 1364,
+          "sha256": "55efeaf092b2b63fc1994a03d2ef3094e5a08529b9e409b4d452160ee4550b4c"
+        }
+      ]
+    },
+    "views": [
+      {
+        "route": "technique-face-cosign-process",
+        "width": 390,
+        "path": "/tmp/saint-reassessment/public-echo-technique-face-cosign-process-390.png",
+        "goalVisible": true,
+        "saveUnchanged": true,
+        "overflow": false
+      },
+      {
+        "route": "witness-known-room",
+        "width": 390,
+        "path": "/tmp/saint-reassessment/public-echo-witness-known-room-390.png",
+        "goalVisible": true,
+        "saveUnchanged": true,
+        "overflow": false
+      },
+      {
+        "route": "scarce-archive-open",
+        "width": 390,
+        "path": "/tmp/saint-reassessment/public-echo-scarce-archive-open-390.png",
+        "goalVisible": true,
+        "saveUnchanged": true,
+        "overflow": false
+      },
+      {
+        "route": "technique-face-cosign-process",
+        "width": 1440,
+        "path": "/tmp/saint-reassessment/public-echo-technique-face-cosign-process-1440.png",
+        "goalVisible": true,
+        "saveUnchanged": true,
+        "overflow": false
+      },
+      {
+        "route": "witness-known-room",
+        "width": 1440,
+        "path": "/tmp/saint-reassessment/public-echo-witness-known-room-1440.png",
+        "goalVisible": true,
+        "saveUnchanged": true,
+        "overflow": false
+      },
+      {
+        "route": "scarce-archive-open",
+        "width": 1440,
+        "path": "/tmp/saint-reassessment/public-echo-scarce-archive-open-1440.png",
+        "goalVisible": true,
+        "saveUnchanged": true,
+        "overflow": false
+      },
+      {
+        "route": "technique-face-cosign-process",
+        "width": 320,
+        "path": "/tmp/saint-reassessment/public-echo-technique-face-cosign-process-320.png",
+        "goalVisible": true,
+        "saveUnchanged": true,
+        "overflow": false
+      },
+      {
+        "route": "witness-known-room",
+        "width": 320,
+        "path": "/tmp/saint-reassessment/public-echo-witness-known-room-320.png",
+        "goalVisible": true,
+        "saveUnchanged": true,
+        "overflow": false
+      },
+      {
+        "route": "scarce-archive-open",
+        "width": 320,
+        "path": "/tmp/saint-reassessment/public-echo-scarce-archive-open-320.png",
+        "goalVisible": true,
+        "saveUnchanged": true,
+        "overflow": false
+      }
+    ],
+    "visualInspection": "Representative public wage, room and question reflections visually reviewed at390/1440/320px; all9localcandidate captures had earlier visual review.",
+    "tlsNote": "QA browser ignores certificate errors for the managed proxy CA only; production TLS configuration unchanged."
+  },
+  "workingTreeClean": true
+}

@@ -13,7 +13,7 @@ export async function observeCampaign(page: Page, sceneId: string, step: number,
     return {text,words:text.match(/\S+/g)?.length??0,choices,panels,visibleSummaries:summaries.map(node=>node.innerText),decisionGapPx:prose&&decisions?Math.round(decisions.getBoundingClientRect().top-prose.getBoundingClientRect().bottom):null,overflow:document.documentElement.scrollWidth>innerWidth};
   });
   let screenshot: string | undefined;
-  if (['act2_middle','act2_district_canal','act3_neighborhood','act3_arrival','ending_names','ending_quiet','ending_listed','ending_witness'].includes(sceneId)) {
+  if (['kerr_terms','kerr_terms_negotiate','kerr_terms_named','kerr_terms_bluff','kerr_terms_bluffed','kerr_terms_exposed','kerr_terms_retreat','act2_kerr_terms_owned','act2_kerr_door','act2_middle','act2_district_canal','act3_neighborhood','act3_arrival','ending_names','ending_quiet','ending_listed','ending_witness'].includes(sceneId)) {
     screenshot=out.replace(/\.json$/,'')+`-${step}-${sceneId}.png`;
     mkdirSync(dirname(screenshot),{recursive:true});
     await page.screenshot({path:screenshot,fullPage:true});

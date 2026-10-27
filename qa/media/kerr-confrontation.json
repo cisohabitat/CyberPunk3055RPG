@@ -1,0 +1,88 @@
+{
+  "phase": "Kerr: the price of a doorway",
+  "baselineCommit": "e05ba0d767114975e10fe52456de151005c12a44",
+  "artAssets": [
+    {
+      "id": "kerr-terms",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-27",
+      "sourceFile": "/workspace/generated_images/exec-008888fb-e881-49a0-9703-3ae80f2c72c3.png",
+      "sourceSha256": "89577ca763c35cc427a3e7e1284fb5b9a046fcc6a60ef947e4f821c7463741f9",
+      "promptSummary": "Reference-matched Kerr listening at a neutral chapel doorway; one anatomically connected visible hand, no transaction, injury, paperwork or successful outcome.",
+      "deliveryProcessing": "Resize and JPEG encode only; generated PNG retained.",
+      "files": [
+        {
+          "path": "public/art/kerr-terms.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 200043,
+          "sha256": "3a36aebd59aee508b590317d0fb544ecbab7183e901ea78ed04ca44a4ee0d551"
+        },
+        {
+          "path": "public/art/kerr-terms-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 56856,
+          "sha256": "d9ff6b47adabce778d7ed409b300e604fb38176314c4075b4c7a8d059fa485e6"
+        },
+        {
+          "path": "public/art/previews/kerr-terms.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 2626,
+          "sha256": "ccc43e397f45cabc2ef69aec9c7e7b1f539f98cdb1df8f67e54762b7f53172bb"
+        }
+      ]
+    }
+  ],
+  "voiceIds": [
+    "voice-campaign-kerr-terms-b055761e9afc",
+    "voice-campaign-kerr-terms-3d29183560fe",
+    "voice-campaign-kerr-terms-cae166cd5d8e",
+    "voice-campaign-kerr-terms-21d133ddba35",
+    "voice-campaign-kerr-terms-9eb4b102fa0b",
+    "voice-campaign-kerr-terms-84e2cc909f99",
+    "voice-campaign-kerr-terms-89370c1ffbd4",
+    "voice-campaign-kerr-terms-c2ea702b5503",
+    "voice-campaign-kerr-terms-b12348e1925b",
+    "voice-campaign-kerr-terms-4d6f6c624ea7",
+    "voice-campaign-kerr-terms-c36a52eb86fe",
+    "voice-campaign-kerr-terms-e69c29cfbc36",
+    "voice-campaign-kerr-terms-acd344b4f340"
+  ],
+  "newScenes": [
+    "kerr_terms",
+    "kerr_terms_negotiate",
+    "kerr_terms_named",
+    "kerr_terms_bluff",
+    "kerr_terms_bluffed",
+    "kerr_terms_exposed",
+    "kerr_terms_retreat",
+    "act2_kerr_terms_owned"
+  ],
+  "newRoutes": [
+    "kerr/named.json",
+    "kerr/unheld-named.json",
+    "kerr/bluffed.json",
+    "kerr/bluffed-owned.json",
+    "kerr/scarce-exposed.json",
+    "kerr/scarce-exposed-owned.json",
+    "kerr/scarce-withdrew.json"
+  ],
+  "artInspection": {
+    "reviewer": "AI development proxy",
+    "observation": "Master inspected: one visible hand attaches to a single forearm, other hand outside crop; no extra limbs, text, money, source or outcome.",
+    "limits": "Internal visual inspection, not independent artistic acceptance."
+  },
+  "changedScenes": [
+    "kerr",
+    "act2_kerr_door",
+    "ending_walk",
+    "card_week"
+  ],
+  "reusedEndingArt": {
+    "scene": "ending_walk",
+    "asset": "/art/market-counter.jpg",
+    "reason": "The unattended counter fits a runner leaving the original behind; no shard, victory or physical injury is depicted."
+  }
+}

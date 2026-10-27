@@ -1,6 +1,7 @@
 import { depotShiftChoice, witnessShiftChoice } from "../encounter-methods";
 import { responseChoice } from "./character-arcs";
 import { kerrCollectionChoice } from "./relationships";
+import { kerrTermsReturn } from "../kerr-terms";
 import { GOAL_WEEK } from "./goal";
 import { campaignReturnBeat } from "./campaign-beats";
 import type { GameState, Scene } from "../types";
@@ -35,7 +36,9 @@ Pick the door that knows you. The others can wait for a week you do not have.`;
 }
 
 function weekCardText(state: GameState): string {
-  const did = state.flags.act1_sold
+  const did = state.flags.kerr_terms_withdrew || state.flags.kerr_terms_withdrew_after_exposure
+    ? "You left the original at the chapel."
+    : state.flags.act1_sold
     ? "You sold Mara's hour."
     : state.flags.act1_both
       ? "You sold the hour and let a copy walk."
@@ -93,7 +96,7 @@ function kerrDoorText(state: GameState): string {
 
 He offers the knee as the price of the conversation: what it cost him, what it should cost you.
 
-"You can tell me what the hour was worth," he says, "or you can walk past and let the canal be the argument."`;
+"You can tell me what the hour was worth," he says, "or you can walk past and let the canal be the argument."${kerrTermsReturn(state) ? `\n\n${kerrTermsReturn(state)}` : ""}`;
 }
 
 function lumenDoorText(state: GameState): string {
@@ -321,6 +324,7 @@ export const ACT2_SCENES: Record<string, Scene> = {
         next: "act2_kerr",
       },
       { id: "leave-kerr", label: "Not the knee. Not tonight.", next: "districts" },
+      { id: "kerr-terms-own-lie", label: "Own the false clearance before asking for anything.", detail: "An admission, not forgiveness or a repaired record.", requireAnyFlag: ["kerr_terms_bluffed", "kerr_terms_exposed"], hideIfFlag: "kerr_terms_owned", effects: { flags: ["kerr_terms_owned"], journal: [{ id: "kerr-terms-owned", kind: "fact", text: "I told Kerr the clearance was a lie. He heard the admission; he did not promise trust or erase the first story." }] }, next: "act2_kerr_terms_owned" },
     ],
   },
   act2_lumen_door: {

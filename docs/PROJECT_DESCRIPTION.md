@@ -67,3 +67,6 @@ The [distinct-build filing bench](DISTINCT_BUILDS_PHASE4.md) connects earned tra
 The campaign thread connects acquired evidence, tested cases, archive preparation, deliberate disclosures, specialist work and witness publication terms at chapter checkpoints and all four finales. Follow-up links let players review already available decisions without selecting them. See [Phase 6](CAMPAIGN_INTEGRATION_PHASE6.md).
 
 The [current internal review](POST_ROADMAP_REVIEW.md) uses three complete prepared/scarce/failure-heavy proxy campaigns. Focused polish consolidates task history, makes crowded ordinary choices easier to reach and gives earned costs a written place at the ending. The provisional internal grade is 8.5/10, without claiming independent AAA acceptance.
+
+
+The latest content phase, [Kerr: the price of a doorway](KERR_CONFRONTATION_PHASE.md), adds an optional new-run chapel negotiation, a checked false-clearance bluff and a voluntary withdrawal, with different costs and week-later reactions. A matching neutral painting and thirteen fixed synthetic Kerr performances accompany the new material. The complete catalog now has 225 scenes, 688 choices and 171 authored replay routes; the separate historical cohort and save compatibility remain protected. The latest internal grade remains the provisional 8.5/10 [whole-campaign review](POST_ROADMAP_REVIEW.md).

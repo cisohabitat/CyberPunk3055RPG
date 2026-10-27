@@ -238,6 +238,7 @@ ${state.handle} keeps the partial and the feeling of having touched a crime with
 }
 
 function walkText(state: GameState): string {
+  if (state.flags.kerr_terms_withdrew || state.flags.kerr_terms_withdrew_after_exposure) return `You leave the original in the chair room. Kerr lets the space between you stay empty. You walk into the alley awake, without paying for another injury.\n\n${state.flags.copied ? "A copy remains in the buffer. It does not change where you left the original." : "The hour is still in the chair room. Leaving did not stop the edit waiting for Mara."}\n\nQuill will not pay for an original you did not deliver. The next week is still yours to enter.`;
   const extra = state.flags.kerr_talked
     ? "Kerr's last look stays with you: a man who heard enough, and still had a shift to finish."
     : "The stall is still there. Quill nods like he priced this outcome in before you sat down.";
@@ -928,6 +929,7 @@ She does not ask you to forgive it. She asks you to keep the reason attached to 
         nextSuccess: shardNext("after_kerr"),
         nextFail: "kerr_fight",
       }),
+      { id: "kerr-open-terms", label: "Tell Kerr what you are willing to risk.", detail: "Consider an offer, a false clearance or withdrawal before committing.", requireFlag: "kerr_terms_enabled", hideIfFlag: "kerr_terms_attempted", next: "kerr_terms" },
     ],
   }),
   kerr_fight: add({

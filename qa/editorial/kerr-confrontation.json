@@ -1,0 +1,270 @@
+{
+  "phase": "Kerr: the price of a doorway",
+  "baseRevision": "e05ba0d767114975e10fe52456de151005c12a44",
+  "candidate": "Pre-publication working tree; hashes identify tested content, not a clean-commit claim.",
+  "recordedAtUtc": "2026-10-27T12:56:11.582582+00:00",
+  "sourceTestsPassed": 785,
+  "focusedPhaseSourceTestsPassed": 14,
+  "typeScriptAndProductionBuildPassed": true,
+  "catalog": {
+    "scenes": 225,
+    "choices": 688,
+    "authoredRoutes": 171,
+    "assets": 771,
+    "mediaBudgetViolations": 0
+  },
+  "preservation": {
+    "historicalRoutes": 164,
+    "historicalVisits": 11924,
+    "sha256": "9e00acca95f3234b5721a55f05ab68af1937ff26be95d653e6068e6de173d7cc",
+    "oldMediaAndBindingBytes": "Historical hashes retained; only sixteen explicitly inventoried new deliveries added.",
+    "newReplayRoutes": [
+      "kerr/named.json",
+      "kerr/unheld-named.json",
+      "kerr/bluffed.json",
+      "kerr/bluffed-owned.json",
+      "kerr/scarce-exposed.json",
+      "kerr/scarce-exposed-owned.json",
+      "kerr/scarce-withdrew.json"
+    ]
+  },
+  "localBrowsers": {
+    "newFeatureInitial": {
+      "chromiumAndWebkitCases": 118,
+      "passed": 116,
+      "failedSetup": 2,
+      "cause": "The new creation test omitted the pre-existing required complication.",
+      "status": "Historical first attempt, corrected and superseded by the full118-case passing run."
+    },
+    "creationFixtureCorrection": {
+      "passed": 2,
+      "retries": 0,
+      "change": "Test now chooses the required on-file complication; no production fix or timeout change."
+    },
+    "existingChromiumRegressions": {
+      "passed": 296,
+      "retries": 0,
+      "files": [
+        "game.spec.ts",
+        "campaign-polish.spec.ts",
+        "campaign-thread.spec.ts",
+        "cinematic-sequences.spec.ts",
+        "story-scroll.spec.ts"
+      ]
+    },
+    "environment": "Locally extracted WebKit dependencies; package-path preflight disabled only for that temporary local bundle. All hosted dependencies, projects, cases, workers and deadlines remain required.",
+    "finalNewFeatureBatch": {
+      "passed": 118,
+      "profiles": [
+        "chromium",
+        "webkit"
+      ],
+      "casesEach": 59,
+      "workers": 4,
+      "retries": 0,
+      "finalNarrationAndCreationFixture": true
+    }
+  },
+  "playtests": {
+    "method": "Source-familiar keyboard AI/automation, authored die faces and native saves; no blind-player claim.",
+    "totals": {
+      "visits": 166,
+      "tabs": 1255,
+      "reloads": 162,
+      "voices": 48,
+      "interruptions": 4
+    },
+    "profiles": [
+      {
+        "route": "qa/routes/kerr/named.json",
+        "width": 390,
+        "artwork": "full",
+        "reading": "all",
+        "sound": true,
+        "visits": 42,
+        "tabs": 366,
+        "reloads": 41,
+        "voices": 23,
+        "interruptions": 2,
+        "errors": [],
+        "failedMedia": [],
+        "finalScene": "ending_quiet",
+        "finalCreds": 370,
+        "finalStrain": 1,
+        "localReport": "/tmp/saint-kerr-terms/named-ui.json",
+        "sharedSourcesMatched": true,
+        "localReportSha256": "63c4841ed80041a706b955f355a23f156f7ec78c5d07dee3a568b7d3cc21a193",
+        "routeSha256": "eda7c9778f4823a7d2ce4c07e9380c92fb157a978a8ebe079abcf3bd119ed864"
+      },
+      {
+        "route": "qa/routes/kerr/bluffed-owned.json",
+        "width": 1440,
+        "artwork": "full",
+        "reading": "all",
+        "sound": true,
+        "visits": 45,
+        "tabs": 387,
+        "reloads": 44,
+        "voices": 25,
+        "interruptions": 2,
+        "errors": [],
+        "failedMedia": [],
+        "finalScene": "ending_quiet",
+        "finalCreds": 390,
+        "finalStrain": 1,
+        "localReport": "/tmp/saint-kerr-terms/bluffed-owned-ui.json",
+        "sharedSourcesMatched": true,
+        "localReportSha256": "4fa003cd4fbda637a4080690709bb940b5e5f0a8097b9b000c5e551e5527c336",
+        "routeSha256": "b5481efb960495619bbc1b71beba843852ba76fdde240f86dd63b38f5533a152"
+      },
+      {
+        "route": "qa/routes/kerr/scarce-withdrew.json",
+        "width": 320,
+        "artwork": "none",
+        "reading": "all",
+        "sound": false,
+        "visits": 37,
+        "tabs": 237,
+        "reloads": 36,
+        "voices": 0,
+        "interruptions": 0,
+        "errors": [],
+        "failedMedia": [],
+        "finalScene": "ending_quiet",
+        "finalCreds": 10,
+        "finalStrain": 0,
+        "localReport": "/tmp/saint-kerr-terms/scarce-withdrew-ui.json",
+        "sharedSourcesMatched": true,
+        "localReportSha256": "c65ca938d9688d9c1ef8d1f4f5b3f9e990af55071ff15b76220daced754e844c",
+        "routeSha256": "33cb67e759e35789d40d13f11e184861cc3a51a1f2d65d46d96cd7cf9a7ece1b"
+      },
+      {
+        "route": "qa/routes/kerr/scarce-exposed-owned.json",
+        "width": 320,
+        "artwork": "none",
+        "reading": "all",
+        "sound": false,
+        "visits": 42,
+        "tabs": 265,
+        "reloads": 41,
+        "voices": 0,
+        "interruptions": 0,
+        "errors": [],
+        "failedMedia": [],
+        "finalScene": "ending_quiet",
+        "finalCreds": 10,
+        "finalStrain": 1,
+        "localReport": "/tmp/saint-kerr-terms/scarce-exposed-owned-ui.json",
+        "sharedSourcesMatched": true,
+        "localReportSha256": "a15b799db88312d5a9be0939a443d5203607f131e3dec6115defd90f51b22e75",
+        "routeSha256": "9ff40c3425a5edf9ca15ada90e7ada50fbdf2c73e1760cc3d9af8739ecd43b0f"
+      }
+    ],
+    "testedSources": {
+      "lib/kerr-terms.ts": "c05769964e593acc568da5ea0683099ca7ffcbf9ab5c27102be580262f6c216b",
+      "lib/story/kerr-terms.ts": "89a5e7cf9d4013f4c292818f30a64dcd0fe694a5444cfb990f4466d014a6705a",
+      "qa/media/kerr-confrontation.json": "0a9f9f72fa96749c8e263d588bc2f46c68a493075e14d15b4d6560637f92f752",
+      "qa/media/kerr-terms-dialogue-bindings.json": "428e7afd67fadd5481c18cba94aad12706d48909e490f2a58b4d029e6ea81689",
+      "qa/media/kerr-terms-dialogue-lines.json": "14ac958a2a9990c8c411e00d477792fd1d307758a8479ee2cd22cd6bca4b3062",
+      "qa/media/kerr-terms-dialogue-provenance.json": "31714dc681b3e5e9c5532293b5f1085f7c91c4f87487719bccb1fc01768df537",
+      "lib/campaign-presentation.ts": "6f346ead4243c787254978c78d185c45f3d47f680240ba259d95f09fc6929ff1",
+      "components/ArchivePlanner.tsx": "f9a8c873626e03fe7327f15cd3730606c874bbb5b1712bd0d3ff14d57e497a79",
+      "qa/production/campaign-observation.ts": "891abcf98286985153c5287bf5bb33929d653e4ddedbc905a11d51af17048284",
+      "lib/campaign-thread.ts": "830c66a973210075355c162f88b26f8c58d15ed132d6d8bc706c672f54c21b63",
+      "components/CampaignThread.tsx": "8aae3954feaaa7fddeae0cd6ddb4009055f7bf09fe8a0fa01fbd02854293b13c",
+      "qa/production/integrated-campaign.ts": "f57eeec4e310e0eae015e77358e2a4fbbf062546ee05d546459a673827de765c",
+      "lib/cinematic-sequences.ts": "7b1ba14a3c3ed1e9010979bbed595047468783015723d9ed5036d08801a04e73",
+      "components/SequenceArtwork.tsx": "b3d86597102e0208402be4f35bbb59877fad8f1e22192279c1ea0f33fb872fcc",
+      "components/PivotalScene.tsx": "e56d1f73eb5538563e3447689ec762fc255841434bdd4b41f8544e9445a05e19",
+      "qa/media/cinematic-sequences.json": "7624313f122307390b1813acb0ee16fb5109460be22248bc753c8067e4276fb0",
+      "lib/build-techniques.ts": "663a38618172c28bf7546c455de1da1ad15cbf1a4dd51973d88f971d8ab1923d",
+      "lib/story/build-techniques.ts": "96c22a876beef9be96da9dd91d67d7eb21bd2ca8584ad7bc380e9fab2b7ded71",
+      "lib/technique-dialogue.ts": "a99785fd05a7091409a1152a8af1c3b235f297da4c7c599873bdf4d1b8fa3dda",
+      "components/TechniqueBoard.tsx": "e53a754ca151ce24ec8f0f8a6c4c4967eca41be76477a188d07da39687dee8cd",
+      "qa/media/technique-dialogue-bindings.json": "ea4bb0ebadd57641019478237a33ddb5655205f2632dd3bb822e7cfc58d25504",
+      "qa/media/technique-dialogue-lines.json": "3ba5f8c12b0fe81645ac3494dc74189eb8011dbb7a95f5d9efa68051412a1301",
+      "qa/media/technique-dialogue-provenance.json": "ad7bcf50bdff909b8630a7d85f3bb33a22a370c04d5653472426020df46490da",
+      "lib/sound.ts": "718bbce2e4aec9a3c259bcc3fe8a041f039d254883467588d767f64821a9a503",
+      "components/GameApp.tsx": "b0f0d87b9ec3c0573e0ee74113fa9f205f1ad9b34a2df00ffde62e37c7daeb41",
+      "components/CreateScreen.tsx": "d5d001395b9bdba1ef5522391b8095cf86900f1ca30b6477f4a52b388df3d130",
+      "lib/runner-names.ts": "5885d74f8df3117dc3aef392cfb2619c7e96280afd1624a951f21a0a33c13b52",
+      "components/PlayScreen.tsx": "c1778a393ccd3c74453d4f8462fbd0d636851afbf93dbdd03017912545786038",
+      "components/Portrait.tsx": "4db7f4644609102c4205292530a4330b3a19a0d735ea55993daf1bc1fc108e1b",
+      "app/globals.css": "e9d59725a47f9597364088d2ab616014a424e56a6746969b09d7457ea1093096",
+      "components/ArchiveCatalog.tsx": "c489bb15b4510ed3a7d6a318c441a65249926f69f69b5acfbc000c18bf0e0cbb",
+      "components/FinaleReflection.tsx": "015375c8e9c60dd32f6743a5196c068eec5fcf05e846848dd251a4673f22f5f5",
+      "lib/pivotal-scenes.ts": "9be025d6e9a22d5c0c9f2d708c1d2d7775fc7e1730e4ea4860fdae2d7338951b",
+      "lib/finale-direction.ts": "f60daea1f12d7972071e55932f19b5418c19f29d3bb1ee591427f3321e1f5572",
+      "lib/investigation-scenes.ts": "df38b381a3765c2568f10045a9257c734bd12218158857f3a5b18e9fbc82ead6",
+      "lib/scene-cues.ts": "9054e08dc32af298af5f6c324924051ade4614997a533840de9ca6d483dce724",
+      "lib/art.ts": "433fbc7ec5426254dd4cc357d7db79352403f1026bdb21cf2652e3eba9276777",
+      "lib/district-response.ts": "6e0714691c46081421079e48f0b9a6bc5a2c8865ae22e4b882d8c64e724fdc83",
+      "lib/district-dialogue.ts": "dfcb32b38b9c2888a1c2d09a61c6a0ed1f9727cae3747fb718f80b6c3858caf2",
+      "lib/story/district-response.ts": "c8ee3f48ac3ef94be702a0c8ee330b58a2ea4ce063e913dbbc4fcb0e324f5667",
+      "components/DistrictLedger.tsx": "8aa953888b80b552b0d0c0d37dd6b3b12607fe74c7be5ccfd9d609413641b230",
+      "qa/media/district-dialogue-bindings.json": "ba071555c4fb38294f2f98bb05de94fbd8529396b9ba6a15f67f4ee13be2428c",
+      "lib/archive-catalog.ts": "c7d571fc525d3a2b3c44922411b178a5c67f67348700b177192245e6c820a328",
+      "components/VoiceLine.tsx": "a5b44e12bf6715e0980c54790c1f1d6ac12bf9cd31401948b6d98867342cd25c",
+      "components/Sheet.tsx": "17671bbf6af7470d1324158c7f03818494bff853a32ddc1329c050c137b944fb",
+      "components/CastCard.tsx": "c75a55c2a334923ddc2f3da78f664e778e978d565df225dea627602a25a81eec",
+      "lib/character-profiles.ts": "7c8a626407dcd95f7f61f4185cb1b01abd20d72253a24fac95c84d196ba1b0a7",
+      "qa/production/keyboard.ts": "14ed92fbfbcd5125fb49d5578131aa337b7ea14a4f64e749c7e6596b1a51954f",
+      "scripts/player-experience.ts": "2bcb113266baaf46308543cb0f56ee25ee34c52e90ce367e9e5db4cdeaecfc97"
+    }
+  },
+  "media": {
+    "newArtDeliveries": 3,
+    "newVoiceDeliveries": 13,
+    "manualPlayback": "All thirteen new voices completed in both Chromium and WebKit, selecting actual visible speech.",
+    "automaticPlayback": {
+      "clips": 13,
+      "errors": [],
+      "failures": [],
+      "sources": [
+        "authored-route"
+      ],
+      "report": "/tmp/saint-kerr-terms/automatic-voices.json"
+    },
+    "asr": {
+      "clips": 13,
+      "exactNormalizedMatches": 13,
+      "retakeRecord": "qa/media/kerr-terms-performance-review.json"
+    },
+    "visualInspection": [
+      "Generated master and phone delivery inspected for connected anatomy and neutral outcomes.",
+      "Actual keyboard-play phone, desktop and enlarged text-only screenshots reviewed for new prose, choices, actor, costs and absence of overflow."
+    ]
+  },
+  "security": "Dependency audit found zero known vulnerabilities.",
+  "balance": "All existing balance:audit, balance:missions, balance:campaigns and balance:overlap commands passed with zero reported failures. New phase affordability, once-only cost, held checks and scarce outcomes have separate source/replay coverage.",
+  "testedSources": {
+    "lib/engine.ts": "82f14f2fada833108f218352bd21ec57684854d9666f99b4ca70e0f3db162e18",
+    "components/CreateScreen.tsx": "d5d001395b9bdba1ef5522391b8095cf86900f1ca30b6477f4a52b388df3d130",
+    "components/FinaleReflection.tsx": "015375c8e9c60dd32f6743a5196c068eec5fcf05e846848dd251a4673f22f5f5",
+    "lib/kerr-terms.ts": "c05769964e593acc568da5ea0683099ca7ffcbf9ab5c27102be580262f6c216b",
+    "lib/story/kerr-terms.ts": "93d5cf3cd43cb3b812d113b5b5bc73cc0c2dea053697676709f048ee3b8cf1bd",
+    "lib/story/act1.ts": "96182d099ccefcc57b3fbfe7added694c8f6c9d277aefea52b4be46cb338cc93",
+    "lib/story/act2.ts": "345c7d66727041d71339ceac5256d82fa82c40c576936d06434fabd7063d0d37",
+    "lib/story/retell.ts": "bcc7501d939612cb4253914d662d5ab3acf855445b2cfdebd003f96aeedab9b2",
+    "lib/art.ts": "433fbc7ec5426254dd4cc357d7db79352403f1026bdb21cf2652e3eba9276777",
+    "lib/campaign-dialogue.ts": "1dcd3116b9f51c565a8a4897e8aa57060fd6a5aac0ada92b9e66035c35e13d0e",
+    "qa/media/kerr-terms-dialogue-bindings.json": "428e7afd67fadd5481c18cba94aad12706d48909e490f2a58b4d029e6ea81689",
+    "qa/media/kerr-terms-dialogue-lines.json": "14ac958a2a9990c8c411e00d477792fd1d307758a8479ee2cd22cd6bca4b3062",
+    "qa/media/kerr-terms-dialogue-provenance.json": "31714dc681b3e5e9c5532293b5f1085f7c91c4f87487719bccb1fc01768df537",
+    "qa/media/kerr-terms-dialogue-transcripts.json": "23177c4663fe3ae0737d785bd16269921afa56846f97bfcebac84b319c5b037f",
+    "tests/kerr-terms.spec.ts": "caa6af19a0807a6824dec94f8ff90318571859a74ba5ad0eb8459804878b689e",
+    "lib/kerr-terms.test.ts": "e96cab86a43d0d2a7ac7ed83f4a1048052d61758a5c947469faa0853ea390b3e",
+    "qa/media/kerr-terms-dialogue-audit.json": "b45157bba4618edd481c67cecf1d6200708f326a5a2ad23eb5d7c8caea3f13b5"
+  },
+  "release": {
+    "status": "Requires fresh complete exact-commit hosted CI, Vercel READY and public verification.",
+    "postPublicationEvidence": "qa/production/reports/kerr-confrontation-release.json"
+  },
+  "limits": [
+    "Internal grade remains provisional at8.5; no automatic grade gain or independent AAA acceptance.",
+    "Stock synthetic performance and automated word alignment are not commissioned acting or independent listening acceptance.",
+    "Physical-device acceptance remains separate; available source-familiar proxy play continues."
+  ],
+  "copyFollowup": "After complete campaigns, written narration was tightened without changing costs, choices, actor words or outcomes. Withdrawal now remains true before original pickup; the bluff preview asks a hypothetical question until commitment. Legal-prefix source checks and final new-feature browser checks cover the final copy.",
+  "sourceTestRun": "Final complete npm test after narrative, audit-index and fixture corrections."
+}

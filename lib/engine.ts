@@ -48,6 +48,7 @@ export function createCharacter(input: {
   complication?: ComplicationId | null;
   keepsake?: string | null;
   startWithPrologue?: boolean;
+  expandedKerr?: boolean;
 }): GameState {
   const origin = ORIGINS[input.origin];
   const complication = input.complication ?? null;
@@ -68,6 +69,8 @@ export function createCharacter(input: {
   if (given && !isValidName(given, 24)) throw new Error("Invalid given name");
   const keepsake = input.keepsake && Object.hasOwn(ITEMS, input.keepsake) ? input.keepsake : null;
   const flags: Record<string, boolean> = {};
+  if (input.expandedKerr !== undefined && typeof input.expandedKerr !== "boolean") throw new Error("Invalid Kerr campaign option");
+  if (input.expandedKerr) flags.kerr_terms_enabled = true;
   if (complication === "on-file") flags.on_file = true;
   if (complication === "debt") flags.debt = true;
   if (complication === "optic") flags.optic = true;

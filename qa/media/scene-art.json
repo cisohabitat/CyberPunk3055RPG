@@ -910,6 +910,28 @@
       "scenes": [
         "act2_technique_result"
       ]
+    },
+    {
+      "scenes": [
+        "kerr_terms",
+        "kerr_terms_negotiate",
+        "kerr_terms_named",
+        "kerr_terms_bluff",
+        "kerr_terms_bluffed",
+        "kerr_terms_exposed",
+        "kerr_terms_retreat"
+      ],
+      "treatment": "illustration",
+      "asset": "/art/kerr-terms.jpg",
+      "reason": "Neutral reference-matched Kerr listening in the chapel. No payment, clearance, injury or departure is depicted, so the image fits every unresolved or just-spoken terms scene."
+    },
+    {
+      "scenes": [
+        "act2_kerr_terms_owned"
+      ],
+      "treatment": "portrait",
+      "asset": "/art/kerr.jpg",
+      "reason": "A voluntary admission under the existing Ward Four awning. Existing Kerr portrait and location art suit the conversation; no repair, forgiveness or new place is depicted."
     }
   ],
   "variants": [

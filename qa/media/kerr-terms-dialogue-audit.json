@@ -1,0 +1,175 @@
+{
+  "scope": "Eight new scenes and five conditional return quotations.",
+  "scenes": 9,
+  "decisions": [
+    {
+      "scene": "kerr_terms",
+      "primary": "Kerr",
+      "text": "You want me to decide this is somebody else's trouble. Tell me what it costs you.",
+      "context": "Expanded chapel terms or actual week-later reaction.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Exact visible fixed speech, same actual actor; no narration or generated player name.",
+      "bindingKeys": [
+        "94ba7dfc33151a71"
+      ]
+    },
+    {
+      "scene": "kerr_terms_negotiate",
+      "primary": "Kerr",
+      "text": "Twenty for the clinic. Your name in my report. I let you walk under objection. That is not clearance.",
+      "context": "Expanded chapel terms or actual week-later reaction.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Exact visible fixed speech, same actual actor; no narration or generated player name.",
+      "bindingKeys": [
+        "9713c3710004f220"
+      ]
+    },
+    {
+      "scene": "kerr_terms_named",
+      "primary": "Kerr",
+      "text": "I can give you a door. I can't give you a clean name.",
+      "context": "Expanded chapel terms or actual week-later reaction.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Exact visible fixed speech, same actual actor; no narration or generated player name.",
+      "bindingKeys": [
+        "edf4128187075db9"
+      ]
+    },
+    {
+      "scene": "kerr_terms_bluff",
+      "primary": "Kerr",
+      "text": "Then say which desk. Don't look at the glass while you do it.",
+      "context": "Expanded chapel terms or actual week-later reaction.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Exact visible fixed speech, same actual actor; no narration or generated player name.",
+      "bindingKeys": [
+        "089a8cb45c762523"
+      ]
+    },
+    {
+      "scene": "kerr_terms_bluffed",
+      "primary": "Kerr",
+      "text": "If that desk doesn't answer, I will remember who sent me to it.",
+      "context": "Expanded chapel terms or actual week-later reaction.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Exact visible fixed speech, same actual actor; no narration or generated player name.",
+      "bindingKeys": [
+        "405e5e4465cd1ab4"
+      ]
+    },
+    {
+      "scene": "kerr_terms_exposed",
+      "primary": "Kerr",
+      "text": "There is no clearance. There is you, using one more person as a door.",
+      "context": "Expanded chapel terms or actual week-later reaction.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Exact visible fixed speech, same actual actor; no narration or generated player name.",
+      "bindingKeys": [
+        "5d0b6f92203f5e5c"
+      ]
+    },
+    {
+      "scene": "kerr_terms_retreat",
+      "primary": "Kerr",
+      "text": "You can leave. Don't call it saving her.",
+      "context": "Expanded chapel terms or actual week-later reaction.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Exact visible fixed speech, same actual actor; no narration or generated player name.",
+      "bindingKeys": [
+        "543ea3f3b5e92c68"
+      ]
+    },
+    {
+      "scene": "act2_kerr_door",
+      "primary": "Kerr",
+      "text": "I wrote your name. Not your reason. Those are different things.",
+      "context": "Expanded chapel terms or actual week-later reaction.",
+      "index": 2,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Exact visible fixed speech, same actual actor; no narration or generated player name.",
+      "bindingKeys": [
+        "aa24214afeeb26ca"
+      ]
+    },
+    {
+      "scene": "act2_kerr_door",
+      "primary": "Kerr",
+      "text": "I called the desk you gave me. There wasn't a desk. You made my shift longer so yours could end.",
+      "context": "Expanded chapel terms or actual week-later reaction.",
+      "index": 2,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Exact visible fixed speech, same actual actor; no narration or generated player name.",
+      "bindingKeys": [
+        "aad30dcce7beb8c7"
+      ]
+    },
+    {
+      "scene": "act2_kerr_door",
+      "primary": "Kerr",
+      "text": "You tried a clearance that wasn't there. Don't ask me to remember it differently.",
+      "context": "Expanded chapel terms or actual week-later reaction.",
+      "index": 2,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Exact visible fixed speech, same actual actor; no narration or generated player name.",
+      "bindingKeys": [
+        "74afaa60afa70e12"
+      ]
+    },
+    {
+      "scene": "act2_kerr_door",
+      "primary": "Kerr",
+      "text": "You left the hour in the room. I stayed. Neither of us gets to call that a rescue.",
+      "context": "Expanded chapel terms or actual week-later reaction.",
+      "index": 2,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Exact visible fixed speech, same actual actor; no narration or generated player name.",
+      "bindingKeys": [
+        "3d3e7814077b8f4c"
+      ]
+    },
+    {
+      "scene": "act2_kerr_door",
+      "primary": "Kerr",
+      "text": "You said it was a lie. I heard you. That doesn't make the first story true.",
+      "context": "Expanded chapel terms or actual week-later reaction.",
+      "index": 2,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Exact visible fixed speech, same actual actor; no narration or generated player name.",
+      "bindingKeys": [
+        "16ee0ca3bc407d0a"
+      ]
+    },
+    {
+      "scene": "act2_kerr_terms_owned",
+      "primary": "Kerr",
+      "text": "You want me to trust you because you've stopped lying for a minute? Start with the next minute.",
+      "context": "Expanded chapel terms or actual week-later reaction.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Exact visible fixed speech, same actual actor; no narration or generated player name.",
+      "bindingKeys": [
+        "5471d1816df81d3c"
+      ]
+    }
+  ]
+}
