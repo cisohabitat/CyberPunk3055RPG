@@ -896,3 +896,5 @@ Earned Chrome, Ghost, Face or Nerve training opens a different correction-review
 ### Cinematic conversations
 
 Mara's confession, Kerr's threshold confrontation, Nia's witness decisions and the Ward Nine return now have sequence-specific dialogue spacing and quieter background beds. Optional **Scene / Detail** views inspect four new object paintings without advancing the story or interrupting speech. Existing cast, recordings, quotations, earned district art and all campaign outcomes remain aligned. [Phase 5 direction and evidence](docs/CINEMATIC_DIRECTION_PHASE5.md) explains the sixteen stages, technical A/B comparison and accessibility checks. [Phase 4 release evidence](qa/editorial/player-led-phase4-release.json) records its completed CI and public verification.
+
+Phase 5's viewport regression matrix now gives each stage and width its own browser test. This preserves all 48 screen checks and their assertions while keeping the existing 30-second per-test limit and full four-browser release gate. The initial WebKit batch-timeout report is preserved in the phase documentation.

@@ -1,0 +1,47 @@
+{
+  "phase": 5,
+  "correctsCommit": "a3f20bffe9ad2d20e7663b1ccbfd1a127f91acc7",
+  "recordedAtUtc": "2026-10-27T05:35:11.818355+00:00",
+  "originalCi": {
+    "run": 40451392218,
+    "url": "https://github.com/cisohabitat/CyberPunk3055RPG/actions/runs/40451392218",
+    "test": "success",
+    "chromiumPassed": 766,
+    "phonePassed": 764,
+    "firefoxPassed": 764,
+    "webkit": {
+      "job": 122015601405,
+      "passed": 763,
+      "failed": 1,
+      "failure": "Grouped desktop stage/viewport test exhausted its 90000 ms timeout during browserContext.newPage/browserContext.close, including retry."
+    },
+    "aggregateBuild": "failure; publication correctly blocked"
+  },
+  "originalVercel": {
+    "id": "dpl_93veybEt8fXYuND2r9168aQdMkqh",
+    "state": "ERROR",
+    "errorCode": "BUILD_EXCEEDED_MAXIMUM_TIME"
+  },
+  "correction": "Replace three sixteen-stage batched tests with 48 independent native Playwright page-fixture cases. Every stage/viewport assertion remains. Use existing default 30-second per-case timeout; no timeout increase, four-worker reduction, browser omission or gate change.",
+  "gameArtVoiceChanges": [],
+  "local": {
+    "typescript": true,
+    "focusedPassed": 54,
+    "sourceTestsPassed": 753,
+    "fullOldCampaignStatesPreserved": 164,
+    "sequenceVisitsPreserved": 1871
+  },
+  "sourceHashes": {
+    "tests/cinematic-sequences.spec.ts": "e988dfbb7772f24dcfc38fd78016671d380331b15fd2f4fa838fb83116f79089",
+    "tests/pivotal-scenes.spec.ts": "27f7902b5d1aecf18800e59f1af2d53402909fb2c1f958628d884585be39ba14",
+    "lib/cinematic-sequences.ts": "7b1ba14a3c3ed1e9010979bbed595047468783015723d9ed5036d08801a04e73",
+    "lib/dialogue-playback.ts": "5c20dfc8980be13f56631e8bcb4071b02d80e187d6df088c90e54e5531c98ca5",
+    "components/PlayScreen.tsx": "51e3b3d08705a2398e2c4cd2113f01c1f93635cdc921682092b7995ca4e26b15",
+    "qa/media/cinematic-sequences.json": "7624313f122307390b1813acb0ee16fb5109460be22248bc753c8067e4276fb0"
+  },
+  "preservedEvidence": [
+    "qa/editorial/player-led-phase5.json",
+    "qa/editorial/player-led-phase4-release.json"
+  ],
+  "release": "Correction validated locally; new exact-commit full hosted CI and live verification required. Preserve the original failed run and initial snapshot."
+}
