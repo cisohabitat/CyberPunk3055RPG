@@ -1,0 +1,59 @@
+{
+  "review": "Deferred depot disclosure follow-up",
+  "parentCandidate": "0197d433a2f2176d1a3287839135bddcdce47928",
+  "recordedAtUtc": "2026-10-27T09:46:57.349713+00:00",
+  "preservesSnapshot": "qa/editorial/campaign-reassessment.json",
+  "reproduction": {
+    "route": "technique-face-cosign-process",
+    "checkpoint": "act2_district_edda",
+    "legalChoice": "district-defer-request",
+    "resultScene": "act2_middle",
+    "before": {
+      "district_started": true,
+      "district_edda_knows_ledger": true,
+      "district_query_sent": false,
+      "threadRows": [
+        "account"
+      ]
+    },
+    "after": {
+      "threadRows": [
+        "account",
+        "district"
+      ],
+      "status": "No depot request submitted.",
+      "fullKnowledgePreserved": true,
+      "introductionGranted": false,
+      "requestSubmitted": false,
+      "stateMutation": false
+    }
+  },
+  "fix": "Render acquired district knowledge from district_started as well as an actually submitted query. Keep knowledge, action allowance and request outcome separate.",
+  "testedSources": {
+    "lib/campaign-thread.ts": "830c66a973210075355c162f88b26f8c58d15ed132d6d8bc706c672f54c21b63",
+    "lib/campaign-presentation.test.ts": "f40c41162d830f5c7c22090ec668a0df068a678f375047a64bd925e06ab55473",
+    "tests/campaign-polish.spec.ts": "9bf24858ded822292f548e334c9060368314ef348c1ae8d1137282ed458d1be1"
+  },
+  "local": {
+    "sourceTestsPassed": 771,
+    "productionBuildAndTypeScript": true,
+    "focusedBrowserChecksPassed": 61,
+    "newDeferredWidths": [
+      390,
+      1440,
+      320
+    ],
+    "accessibilityAndStateChecksPassed": true,
+    "weekBoundaryAndNativeExportChecksPassed": true,
+    "original162FocusedChecks": "Passed for the preceding candidate; retained as history. The follow-up changes only the deferred district row and adds coverage.",
+    "previousThreeCampaignComparisons": "Still apply: submitted prepared request and no-depot scarce/witness routes are unchanged by this condition."
+  },
+  "initialCi": {
+    "run": 40480168398,
+    "stateWhenSuperseded": "Test, Chromium, phone and Firefox succeeded; WebKit was still running. New push starts a fresh complete cohort; no partial rerun or copied check is used."
+  },
+  "release": {
+    "status": "Requires fresh exact-commit full hosted CI and public readiness/feature checks",
+    "postPublicationEvidence": "qa/production/reports/campaign-reassessment-release.json"
+  }
+}

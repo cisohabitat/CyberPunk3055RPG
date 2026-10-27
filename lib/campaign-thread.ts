@@ -46,7 +46,7 @@ export function campaignThread(state: GameState): CampaignThreadRow[] {
       limit: `${setup} Committed costs are not refunded. ${source.cancellation}. A chosen objective is not a result; a carbon or recovery ledger does not authenticate the key.`,
     });
   }
-  if (f.district_query_sent) {
+  if (f.district_started || f.district_query_sent) {
     const people = districtActorKnowledge(state);
     rows.push({ id: "district", title: "Disclosure → the depot response",
       decision: people[0].told,

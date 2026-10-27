@@ -19,6 +19,18 @@ async function open(page: Page, state: GameState, width: number, paragraph = fal
   await page.goto("/"); await page.getByTestId("continue-run").click();
 }
 for (const width of [390, 1440, 320]) {
+  test(`a deferred depot request retains the source already shared at ${width}px`, async ({ page }) => {
+    const shared = routeCheckpoint("technique-face-cosign-process", "act2_district_edda");
+    const state = takeIntegrated(shared, "district-defer-request");
+    await open(page, state, width); const before = await saved(page);
+    await page.getByTestId("campaign-thread").locator(":scope > summary").click();
+    const row = page.getByTestId("thread-district"); await expect(row).toContainText("No depot request submitted.");
+    await page.getByTestId("thread-people").locator(":scope > summary").click();
+    for (const person of districtActorKnowledge(shared)) for (const text of [person.firsthand, person.told, person.response]) await expect(row).toContainText(text);
+    await expect(row).toContainText("corroborating ledger"); expect(await saved(page)).toBe(before);
+    expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  });
   test(`consolidated depot history keeps every knowledge boundary at ${width}px`, async ({ page }) => {
     const state = routeCheckpoint("technique-face-cosign-process", "act2_middle", "hear-response");
     await open(page, state, width); const before = await saved(page);

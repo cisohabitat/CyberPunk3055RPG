@@ -7,6 +7,7 @@ import { finaleConsequenceEcho, showDistrictLedger } from "./campaign-presentati
 import { campaignThread } from "./campaign-thread";
 import { districtActorKnowledge } from "./district-response";
 import { importRun, exportRun } from "./vault";
+import { takeIntegrated, closeIntegratedWeek } from "../qa/production/integrated-campaign";
 const finish = (name: string) => replayCampaign(JSON.parse(readFileSync(`qa/routes/${name}.json`, "utf8")) as ReplaySpec).state;
 it("keeps the full acquired depot knowledge in the consolidated campaign record", () => {
   const s = finish("technique-face-cosign-process"), before = JSON.stringify(s);
@@ -32,4 +33,18 @@ it("does not turn intake, relocation, an uncompleted task or a paused source int
   assert.match(finaleConsequenceEcho({ ...room, flags: { ...room.flags, witness_relocated: true } })!.text, /earlier address private again/);
   const question = finish("scarce-archive-open");
   assert.equal(finaleConsequenceEcho({ ...question, flags: { ...question.flags, order_verified: true } }), undefined);
+});
+it("retains an actual disclosure when the depot request is deferred through the week boundary", () => {
+  const shared = routeCheckpoint("technique-face-cosign-process", "act2_district_edda");
+  const deferred = takeIntegrated(shared, "district-defer-request");
+  for (const state of [deferred, closeIntegratedWeek(deferred)]) {
+    const before = JSON.stringify(state), row = campaignThread(state).find(row => row.id === "district")!;
+    assert.ok(row); assert.equal(row.consequence, "No depot request submitted.");
+    assert.deepEqual(row.people, districtActorKnowledge(shared));
+    assert.match(row.decision, /corroborating ledger/);
+    assert.equal(Boolean(state.flags.district_query_sent), false);
+    assert.equal(Boolean(state.flags.district_kerr_introduced), false);
+    assert.equal(JSON.stringify(state), before);
+    assert.deepEqual(importRun(exportRun(state)), state);
+  }
 });
