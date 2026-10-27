@@ -1,0 +1,260 @@
+{
+  "review": "Whole-campaign reassessment and focused polish",
+  "baseline": "380b804d314428b3d14dd14aff25e8f4df7e7a3b",
+  "recordedAtUtc": "2026-10-27T09:19:13.024455+00:00",
+  "method": "Three source-familiar authored keyboard campaigns before application edits, then the same routes/profiles against a fresh production build. This is the accepted AI/automation player proxy, not blind recruitment.",
+  "grade": {
+    "provisional": 8.5,
+    "weighted": 8.53,
+    "rubric": "docs/POST_ROADMAP_REVIEW.md",
+    "notAnIndependentRating": true
+  },
+  "testedSources": {
+    "lib/campaign-presentation.ts": "6f346ead4243c787254978c78d185c45f3d47f680240ba259d95f09fc6929ff1",
+    "lib/campaign-thread.ts": "94f028b1d8df3f977c7315af8da24250b7d24e88ff7cf49d9be4fe0f11c25503",
+    "components/ArchivePlanner.tsx": "f9a8c873626e03fe7327f15cd3730606c874bbb5b1712bd0d3ff14d57e497a79",
+    "components/CampaignThread.tsx": "8aae3954feaaa7fddeae0cd6ddb4009055f7bf09fe8a0fa01fbd02854293b13c",
+    "components/DistrictLedger.tsx": "8aa953888b80b552b0d0c0d37dd6b3b12607fe74c7be5ccfd9d609413641b230",
+    "components/FinaleReflection.tsx": "a77afe8e6050a2c16f53ef5eb84f204d6c4b2cd389969d11af5d4596aef7545e",
+    "components/PlayScreen.tsx": "c1778a393ccd3c74453d4f8462fbd0d636851afbf93dbdd03017912545786038",
+    "app/globals.css": "e9d59725a47f9597364088d2ab616014a424e56a6746969b09d7457ea1093096",
+    "tests/cinematic-sequences.spec.ts": "21cc4a08e2a512e3032b7ff35061949d430769111da95fbeeb146848a975bd2d",
+    "tests/campaign-polish.spec.ts": "3dedc70daf32aff416f73528e809aadadff4c47f71480814a6290e1efade78c1",
+    "qa/production/campaign-observation.ts": "5cfa7ea70c1cd1ba8d653e422ac41b90804a4e7072a08f9a0c43a2285c64f095",
+    "scripts/player-experience.ts": "2c905b2b7c56452ef6555388559ce41a0bd26f0f3b1f01d0608c315f485aa133",
+    "qa/media/campaign-polish.json": "4eb5331983ea0005ae4d037088febc9370b8ac45e9d35ed874cd3189ef083b61"
+  },
+  "campaignComparisons": [
+    {
+      "route": "technique-face-cosign-process",
+      "baseline": {
+        "depotPanelVisits": 30,
+        "duplicateDepotThreadVisits": 9,
+        "tabs": 665,
+        "visits": 83,
+        "reloads": 32,
+        "voices": 39,
+        "interruptions": 2,
+        "scriptErrors": [],
+        "failedMedia": []
+      },
+      "candidate": {
+        "depotPanelVisits": 12,
+        "duplicateDepotThreadVisits": 0,
+        "tabs": 647,
+        "visits": 83,
+        "reloads": 32,
+        "voices": 39,
+        "interruptions": 2,
+        "scriptErrors": [],
+        "failedMedia": []
+      },
+      "canonicalRenderedTextAndChoicesIdentical": true,
+      "finalResourcesAndRollsIdentical": true,
+      "baselineRawSha256": "b625c1e175149a9c8e64f12a608175b5e7d144374c343d984f1a76a6e81f63d9",
+      "candidateRawSha256": "20a9ae0c61289164b466cb20eaa2fe4ab59b915d4a8541adb444f839dd8ea4d6"
+    },
+    {
+      "route": "scarce-archive-open",
+      "baseline": {
+        "depotPanelVisits": 0,
+        "duplicateDepotThreadVisits": 0,
+        "tabs": 330,
+        "visits": 57,
+        "reloads": 38,
+        "voices": 0,
+        "interruptions": 0,
+        "scriptErrors": [],
+        "failedMedia": []
+      },
+      "candidate": {
+        "depotPanelVisits": 0,
+        "duplicateDepotThreadVisits": 0,
+        "tabs": 334,
+        "visits": 57,
+        "reloads": 38,
+        "voices": 0,
+        "interruptions": 0,
+        "scriptErrors": [],
+        "failedMedia": []
+      },
+      "canonicalRenderedTextAndChoicesIdentical": true,
+      "finalResourcesAndRollsIdentical": true,
+      "baselineRawSha256": "52dfc528a998ce9247d674aeb06b82af6478bc969eafa3733189f444817aa964",
+      "candidateRawSha256": "0282c46f49ce23db5701162ceba90ef24e4265360fca0e21b0d899b730484f3d"
+    },
+    {
+      "route": "witness-known-room",
+      "baseline": {
+        "depotPanelVisits": 0,
+        "duplicateDepotThreadVisits": 0,
+        "tabs": 511,
+        "visits": 63,
+        "reloads": 44,
+        "voices": 32,
+        "interruptions": 2,
+        "scriptErrors": [],
+        "failedMedia": []
+      },
+      "candidate": {
+        "depotPanelVisits": 0,
+        "duplicateDepotThreadVisits": 0,
+        "tabs": 517,
+        "visits": 63,
+        "reloads": 44,
+        "voices": 32,
+        "interruptions": 2,
+        "scriptErrors": [],
+        "failedMedia": []
+      },
+      "canonicalRenderedTextAndChoicesIdentical": true,
+      "finalResourcesAndRollsIdentical": true,
+      "baselineRawSha256": "3eda07801b991ff2699aa6fa5f117c24fe0ae75229de2e7f283ebfa17fba6672",
+      "candidateRawSha256": "06301e5a3babc26762287bc8e84a942a542b8d0a92d4b8204412d61c91f00fe6"
+    }
+  ],
+  "baselineTotals": {
+    "visits": 203,
+    "reloads": 114,
+    "voices": 71,
+    "interruptions": 4
+  },
+  "candidateTotals": {
+    "visits": 203,
+    "reloads": 114,
+    "voices": 71,
+    "interruptions": 4
+  },
+  "preservation": {
+    "routes": 164,
+    "visits": 11924,
+    "sha256": "9e00acca95f3234b5721a55f05ab68af1937ff26be95d653e6068e6de173d7cc",
+    "canonicalTextChoicesStatesArtActorsAndVoices": "All existing strict contracts passed, no historical fixtures/snapshots rewritten"
+  },
+  "local": {
+    "sourceTestsPassed": 770,
+    "focusedBrowserChecksPassed": 162,
+    "typescriptAndProductionBuild": true,
+    "balanceAudits": "All required comparisons passed, zero reported failures",
+    "dependencyAudit": "zero known vulnerabilities",
+    "productionInventory": {
+      "scenes": 217,
+      "choices": 670,
+      "routes": 164,
+      "assets": 755,
+      "budgetViolations": []
+    },
+    "firstVisit": {
+      "samples": 4,
+      "budget": 2097152,
+      "maximumBytes": 1643182,
+      "overflow": false,
+      "allGoalsVisible": true,
+      "limits": [
+        "Four synthetic samples on the automation host, not p75/p95 field data or named physical devices.",
+        "Elapsed-to-ready includes automated form entry and network-idle waits; it is not LCP or INP.",
+        "titleLcpMs measures this navigation's title screen. Encoded resource bytes are Resource Timing measurements, not all wire overhead.",
+        "A previously permitted visit can autoplay the separate 2.6 MB menu theme before gameplay; these samples measure the first-visit activation policy."
+      ]
+    },
+    "visualReviews": [
+      {
+        "route": "technique-face-cosign-process",
+        "width": 390,
+        "path": "/tmp/saint-reassessment/echo-technique-face-cosign-process-390.png",
+        "goalVisible": true,
+        "saveUnchanged": true,
+        "overflow": false
+      },
+      {
+        "route": "witness-known-room",
+        "width": 390,
+        "path": "/tmp/saint-reassessment/echo-witness-known-room-390.png",
+        "goalVisible": true,
+        "saveUnchanged": true,
+        "overflow": false
+      },
+      {
+        "route": "scarce-archive-open",
+        "width": 390,
+        "path": "/tmp/saint-reassessment/echo-scarce-archive-open-390.png",
+        "goalVisible": true,
+        "saveUnchanged": true,
+        "overflow": false
+      },
+      {
+        "route": "technique-face-cosign-process",
+        "width": 1440,
+        "path": "/tmp/saint-reassessment/echo-technique-face-cosign-process-1440.png",
+        "goalVisible": true,
+        "saveUnchanged": true,
+        "overflow": false
+      },
+      {
+        "route": "witness-known-room",
+        "width": 1440,
+        "path": "/tmp/saint-reassessment/echo-witness-known-room-1440.png",
+        "goalVisible": true,
+        "saveUnchanged": true,
+        "overflow": false
+      },
+      {
+        "route": "scarce-archive-open",
+        "width": 1440,
+        "path": "/tmp/saint-reassessment/echo-scarce-archive-open-1440.png",
+        "goalVisible": true,
+        "saveUnchanged": true,
+        "overflow": false
+      },
+      {
+        "route": "technique-face-cosign-process",
+        "width": 320,
+        "path": "/tmp/saint-reassessment/echo-technique-face-cosign-process-320.png",
+        "goalVisible": true,
+        "saveUnchanged": true,
+        "overflow": false
+      },
+      {
+        "route": "witness-known-room",
+        "width": 320,
+        "path": "/tmp/saint-reassessment/echo-witness-known-room-320.png",
+        "goalVisible": true,
+        "saveUnchanged": true,
+        "overflow": false
+      },
+      {
+        "route": "scarce-archive-open",
+        "width": 320,
+        "path": "/tmp/saint-reassessment/echo-scarce-archive-open-320.png",
+        "goalVisible": true,
+        "saveUnchanged": true,
+        "overflow": false
+      }
+    ]
+  },
+  "findings": [
+    "30 depot ledger visits, nine duplicates with the campaign thread in the prepared run",
+    "Crowded ordinary decisions require substantial scrolling after reference context",
+    "General motive codas bury the distinct wage/room/search cost in factual records",
+    "Read-only paused archive plan can advertise recovery after week closure",
+    "Kerr overlap probe assumes music loading completes within 5s after voice startup"
+  ],
+  "changes": [
+    "Scope standalone depot ledger to twenty explicit contexts; retain all actor knowledge in nested thread review",
+    "Consolidate read-only checkpoint archive status, correct closed-week recovery copy",
+    "Focus-only visible choice review after full prose; exclude memory/catalog workspaces",
+    "Three earned written consequence echoes, no new scene/quote/asset",
+    "Establish actual started beds before releasing automatic voice in the overlap fixture; preserve 5s numeric/50s global limits; add true cold-score independence coverage"
+  ],
+  "limits": [
+    "Keyboard navigation adds four/six Tab stops in the scarce/failure-heavy runs because the new touch-visible review links are focusable; the prepared run removes eighteen. Not a universal keyboard-efficiency claim.",
+    "Full voiced runs audition a selected line per voiced visit, not every quotation or independent acting quality.",
+    "Nine final echo captures were visually reviewed; physical-device and assistive-technology acceptance remain separate.",
+    "The first candidate launch hit the still-running baseline server after rebuild and failed during Settings lookup. Those aborted launches provide no candidate evidence; the recorded candidate campaigns use a fresh restarted server.",
+    "Raw transcripts/screenshots/logs stay under /tmp/saint-reassessment; compact report hashes identify them."
+  ],
+  "release": {
+    "status": "Awaiting exact-commit full hosted Test/four Browser/Build, READY and live verification",
+    "postPublicationEvidence": "qa/production/reports/campaign-reassessment-release.json"
+  }
+}

@@ -1,8 +1,9 @@
 import { districtActorKnowledge, districtStatus } from "@/lib/district-response";
 import type { GameState } from "@/lib/types";
+import { showDistrictLedger } from "@/lib/campaign-presentation";
 
 export function DistrictLedger({ state }: { state: GameState }) {
-  if (!state.flags.district_started) return null;
+  if (!showDistrictLedger(state)) return null;
   return <details className="district-ledger" data-testid="district-ledger">
     <summary>Depot response · people and consequences</summary>
     <p data-testid="district-status">{districtStatus(state)}</p>

@@ -420,6 +420,13 @@ export function PlayScreen({
             {preferences.reading === "paragraph" && paragraphs.length > 1 && <p className="reading-progress hint" role="status" aria-atomic="true">{visibleCount} of {paragraphs.length} paragraphs shown</p>}
             {dialogueQueue.length > 0 && <VoiceLine sceneId={scene.id} key={scene.id} line={dialogue} lines={dialogueQueue} automatic={preferences.autoVoices} paused={audioPaused && preferences.sound} enabled={voicesEnabled} onSpeaking={setSpeaking} />}
             {visibleCount === paragraphs.length && <ConversationContext state={state} speaker={scene.speaker} />}
+            {visibleCount === paragraphs.length && choices.length >= 8 && !scene.memory && scene.id !== "memory_sequence" && scene.id !== "act2_archive_compare" && <a className="decision-overview" data-testid="review-choices" href="#choices" onClick={event => {
+              const target = document.getElementById("choices");
+              if (!target) return;
+              event.preventDefault();
+              target.focus({ preventScroll: true });
+              target.scrollIntoView({ block: "start", behavior: "instant" });
+            }}>Review available choices</a>}
             {!scene.finale && <div className="decision-context" data-testid="decision-context">
               <ObjectiveBrief state={state} />
               <TransferBrief state={state} />

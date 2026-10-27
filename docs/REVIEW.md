@@ -1,4 +1,12 @@
-# Current internal game review — 12 October 2026
+# Current internal game review — 27 October 2026
+
+**Provisional internal grade: 8.5/10 as a browser narrative RPG.** The fresh weighted editorial estimate is 8.53. Three source-familiar AI/automation campaigns covered a prepared specialist, a zero-credit paused archive search and an exposed-witness/failure-heavy runner: 203 scene visits, 114 reloads and 71 selected voice plays. They reported no script or media failures. This is the available player proxy, not a participant average, an independently measured gain over the earlier score, or an AAA acceptance rating.
+
+See [the full current rubric, observations, fixes and next priorities](POST_ROADMAP_REVIEW.md). The largest remaining craft gap is encounter rhythm: more distinct present-day dramatic interactions and earned returns, with matched artwork/performance, will matter more than another system or a longer campaign. Physical-device, blind-player and independent artistic/listening acceptance remain separate from internal development.
+
+---
+
+# Historical internal game review — 12 October 2026
 
 **Provisional internal grade: 8.2/10 as a browser narrative RPG.** This reviews the current game after the [whole-campaign pacing cycle](CAMPAIGN_PACING_CYCLE.md) and the preceding story, investigation and presentation phases. Source-familiar simulated play is the available player proxy. This is an editorial assessment of the playable game, supported by complete rendered campaigns and source/state review; it is not a participant average or independent AAA rating.
 

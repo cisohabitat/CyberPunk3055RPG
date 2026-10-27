@@ -18,7 +18,18 @@ for(const width of [390,1440,320])for(const example of phase.baseline.examples)t
 });
 test("a detail view preserves paragraph reveal and resets to the next scene's establishing shot",async({page})=>{await open(page,"memo",390,false,true);const before=await saved(page);const paragraphs=await page.locator(".prose p").count();await page.getByTestId("sequence-shots").getByRole("button",{name:"Detail",exact:true}).click();expect(await page.locator(".prose p").count()).toBe(paragraphs);expect(await saved(page)).toBe(before);await page.getByTestId("show-rest").click();await page.getByTestId("choice-heard").click();await expect(page.getByTestId("sequence-shots").getByRole("button",{name:"Scene",exact:true})).toHaveAttribute("aria-pressed","true");await expect(page.getByTestId("scene-illustration").locator("img")).toHaveAttribute("src","/art/mara-revelation.jpg");});
 for(const sceneId of ["memo","kerr","act2_witness_arrival","act3_arrival"])test(`directed performance retains exact voices and measured bus mix in ${sceneId}`,async({page})=>{
- test.setTimeout(50_000);await page.addInitScript(installAudioReview,{});await page.addInitScript(installSequenceAudioReview);const run=await open(page,sceneId,390,true),before=await saved(page),scene=getScene(sceneId),lines=visibleCampaignDialogue(sceneId,scene.speaker,sceneText(scene,run)),sequence=cinematicSequence(sceneId)!;
+ test.setTimeout(50_000);
+ // This test measures overlapping buses, not cold score-download latency.
+ // Hold automatic dialogue until the actual music/room sources have started.
+ // Keep the original 5s numeric assertions and 50s overall case limit below.
+ let releaseVoices!: () => void;
+ const bedsReady = new Promise<void>(resolve => { releaseVoices = resolve; });
+ await page.route(/\/audio\/voice-/, async route => { await bedsReady; await route.continue(); });
+ await page.addInitScript(installAudioReview,{});await page.addInitScript(installSequenceAudioReview);
+ const run=await open(page,sceneId,390,true),before=await saved(page),scene=getScene(sceneId),lines=visibleCampaignDialogue(sceneId,scene.speaker,sceneText(scene,run)),sequence=cinematicSequence(sceneId)!;
+ try {
+ await page.waitForFunction(() => { const mix = (window as unknown as {sequenceAudioReview:SequenceAudioReview}).sequenceAudioReview.sample(); return Number.isFinite(mix.music) && Number.isFinite(mix.ambience); });
+ releaseVoices();
  const widget=page.getByTestId("voice-line");await expect(widget).toHaveCount(1);await expect(widget).toHaveAttribute("data-playback","playing");
  await expect.poll(()=>page.evaluate(()=>(window as unknown as{sequenceAudioReview:SequenceAudioReview}).sequenceAudioReview.sample().music)).toBeCloseTo(.6*BED_FOCUS[sequence.focus].music*.22,5);
  const mix=await page.evaluate(()=>(window as unknown as{sequenceAudioReview:SequenceAudioReview}).sequenceAudioReview.sample());expect(mix.ambience).toBeCloseTo(.5*BED_FOCUS[sequence.focus].ambience*.44,5);expect(mix.voices).toBeCloseTo(.7,5);
@@ -27,4 +38,31 @@ for(const sceneId of ["memo","kerr","act2_witness_arrival","act3_arrival"])test(
  const rows=await page.evaluate(()=>(window as unknown as{sequenceAudioReview:SequenceAudioReview}).sequenceAudioReview.rows.filter(r=>r.file.startsWith("voice-")));
  for(let i=1;i<rows.length;i++){expect(rows[i-1].endedAtMs).toBeDefined();const gap=rows[i].atMs-rows[i-1].endedAtMs!;expect(gap).toBeGreaterThanOrEqual(dialoguePause(sceneId,lines[i-1].speaker,lines[i].speaker)-20);}
  await widget.locator("summary").click();for(const l of lines)await expect(widget).toContainText(l.text);expect(await saved(page)).toBe(before);await widget.getByRole("button",{name:/Stop line/}).click();await expect(widget).toHaveAttribute("data-playback","idle");
+ } finally { releaseVoices(); await page.unrouteAll({ behavior: "ignoreErrors" }); }
+});
+
+
+test("cold score loading does not hold speech, choices or saved state", async ({ page }) => {
+ let releaseScore!: () => void;
+ const scoreReady = new Promise<void>(resolve => { releaseScore = resolve; });
+ await page.route("**/audio/theme*.flac", async route => { await scoreReady; await route.continue(); });
+ await page.addInitScript(installAudioReview, {}); await page.addInitScript(installSequenceAudioReview);
+ try {
+  const state = await open(page, "kerr", 390, true), before = await saved(page);
+  const scene = getScene("kerr"), lines = visibleCampaignDialogue("kerr", scene.speaker, sceneText(scene, state));
+  const voice = page.getByTestId("voice-line");
+  await expect(voice).toHaveAttribute("data-playback", "playing");
+  await expect(page.getByTestId("goal")).toBeInViewport();
+  await expect(page.locator(".choices button").first()).toBeEnabled();
+  await expect(voice).toHaveAttribute("data-playback", "idle", { timeout: 15_000 });
+  const playback = await page.evaluate(() => (window as unknown as {audioReview:AudioReview}).audioReview);
+  expect(playback.started.filter(file => file.startsWith("voice-"))).toEqual(lines.map(line => `${line.id}${line.id.startsWith("voice-campaign-") ? ".mp3" : ".wav"}`));
+  expect(playback.started.some(file => /^theme.*\.flac$/.test(file))).toBe(false);
+  const rows = await page.evaluate(() => (window as unknown as {sequenceAudioReview:SequenceAudioReview}).sequenceAudioReview.rows.filter(row => row.file.startsWith("voice-")));
+  expect(rows.every(row => row.endedAtMs !== undefined)).toBe(true);
+  expect(await saved(page)).toBe(before);
+  releaseScore();
+  await expect.poll(() => page.evaluate(() => (window as unknown as {sequenceAudioReview:SequenceAudioReview}).sequenceAudioReview.sample().music)).toBeCloseTo(.6 * BED_FOCUS[cinematicSequence("kerr")!.focus].music, 5);
+  expect(await saved(page)).toBe(before);
+ } finally { releaseScore(); await page.unrouteAll({ behavior: "ignoreErrors" }); }
 });

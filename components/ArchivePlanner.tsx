@@ -3,6 +3,7 @@ import { useState } from "react";
 import { ARCHIVE_POSITIONS, archiveSetupBonus, canPlanArchive, type ArchivePlanDraft } from "@/lib/archive-plan";
 import { effectPreview, getScene } from "@/lib/engine";
 import type { GameState } from "@/lib/types";
+import { hasCampaignThread } from "@/lib/campaign-thread";
 
 export function ArchivePlanner({ state, onSave }: { state: GameState; onSave: (draft: ArchivePlanDraft) => void }) {
   const plan = state.archivePlan;
@@ -10,12 +11,13 @@ export function ArchivePlanner({ state, onSave }: { state: GameState; onSave: (d
   const [message, setMessage] = useState("");
   const editable = Boolean(canPlanArchive(state));
   if (!editable && !plan) return null;
+  if (!editable && hasCampaignThread(state.sceneId)) return null;
   if (!editable && !state.sceneId.startsWith("act2_archive_") && !["act2_middle", "act3_arrival", "act3_testimony_review", "act3_edda_visit"].includes(state.sceneId) && !state.sceneId.startsWith("ending_")) return null;
   const invalid = draft.objective === "authenticate" && draft.approach === "carbon";
   const fee = getScene("act2_archive_gap").choices.find(c => c.id === "buy-ledger")!.requireCreds;
   const outcome = !plan ? "No plan saved." : plan.stage === "retrieved" ? state.flags.archive_key_authenticated ? "Retrieved: the issuing key was authenticated." : "Retrieved: independent corroboration, without a key match."
     : plan.stage === "withdrawn" ? "Archive search closed as unresolved. Previously acquired sources remain; this attempt supplied no key match."
-      : plan.stage === "failed" ? `The attempt failed. The staffed ledger (${fee} creds or a Spire employee number), free pause and unresolved exit remain.`
+      : plan.stage === "failed" ? state.flags.act2_done ? "The week closed after the failed attempt. The paused request supplied no retrieved source or reopened recovery." : `The attempt failed. The staffed ledger (${fee} creds or a Spire employee number), free pause and unresolved exit remain.`
       : plan.stage === "abandoned" ? "Plan set aside. Spent setup costs and exposure stay recorded; acquired records show what was obtained."
           : plan.stage === "positioned" ? "Setup committed. Resolve the displayed method; no source has been gained from preparation."
             : "Plan saved. Continue to the reader and commit one setup. Saving spends nothing and supplies no evidence.";

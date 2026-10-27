@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "baseline": "380b804d314428b3d14dd14aff25e8f4df7e7a3b",
+  "newScenes": [],
+  "newQuotes": [],
+  "newAssets": [],
+  "decisions": [
+    {
+      "sceneId": "ending_names",
+      "treatment": "reuse",
+      "asset": "/art/finale-names.jpg",
+      "reason": "Existing neutral closing painting remains appropriate. The earned written wage/room/question reflection depicts no new place, person, consent, successful review or private address. Canonical scene text, actual actor, quotations and recordings remain unchanged."
+    },
+    {
+      "sceneId": "ending_quiet",
+      "treatment": "reuse",
+      "asset": "/art/finale-quiet.jpg",
+      "reason": "Existing neutral closing painting remains appropriate. The earned written wage/room/question reflection depicts no new place, person, consent, successful review or private address. Canonical scene text, actual actor, quotations and recordings remain unchanged."
+    },
+    {
+      "sceneId": "ending_witness",
+      "treatment": "reuse",
+      "asset": "/art/finale-witness.jpg",
+      "reason": "Existing neutral closing painting remains appropriate. The earned written wage/room/question reflection depicts no new place, person, consent, successful review or private address. Canonical scene text, actual actor, quotations and recordings remain unchanged."
+    },
+    {
+      "sceneId": "ending_listed",
+      "treatment": "reuse",
+      "asset": "/art/finale-listed.jpg",
+      "reason": "Existing neutral closing painting remains appropriate. The earned written wage/room/question reflection depicts no new place, person, consent, successful review or private address. Canonical scene text, actual actor, quotations and recordings remain unchanged."
+    }
+  ]
+}

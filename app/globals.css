@@ -1717,6 +1717,12 @@ html[data-motion="reduce"] .location-entry, html[data-motion="reduce"] .portrait
 .campaign-thread .thread-consequence { border-inline-start: 2px solid var(--line); padding-inline-start: .75rem; }
 .campaign-thread nav ul { list-style: none; padding: 0; }
 .campaign-thread nav a { display: inline-flex; align-items: center; min-height: 45px; padding-block: .4rem; }
+.thread-people summary { min-height: 45px; cursor: pointer; }
+.thread-people dt { margin-top: .5rem; color: var(--muted); }
+.thread-people dd { margin-inline-start: 0; }
+.decision-overview { display: inline-flex; align-items: center; min-height: 45px; padding-block: .5rem; margin-block: .5rem; }
+.consequence-echo { border-inline-start: 2px solid var(--amber); padding-inline-start: 1rem; margin-block: 1.25rem; }
+.consequence-echo h3 { font-size: 1rem; margin-block: .25rem .5rem; }
 .technique-board { border: 1px solid var(--line); padding: 1rem; margin-block: 1.25rem; }
 .technique-board summary { min-height: 45px; cursor: pointer; }
 .technique-board ul { list-style: none; padding: 0; }

@@ -1,0 +1,107 @@
+{
+  "phase": 6,
+  "commit": "380b804d314428b3d14dd14aff25e8f4df7e7a3b",
+  "verifiedAtUtc": "2026-10-27T08:03:43.544Z",
+  "recordSource": "Compact transcription of the observed preceding Phase 6 publication results retained in the conversation; not a new test run. The original executor was unavailable during final publication; public checks ran in a temporary nonpersistent Vercel Sandbox, then it was stopped.",
+  "ci": {
+    "run": 40465294668,
+    "url": "https://github.com/cisohabitat/CyberPunk3055RPG/actions/runs/40465294668",
+    "conclusion": "success",
+    "requiredChecks": [
+      {
+        "name": "Test",
+        "id": 122059099801,
+        "suite": 109673775078,
+        "provider": "github-actions",
+        "conclusion": "success"
+      },
+      {
+        "name": "Browser (chromium)",
+        "id": 122060158340,
+        "suite": 109673775078,
+        "provider": "github-actions",
+        "conclusion": "success"
+      },
+      {
+        "name": "Browser (phone)",
+        "id": 122060158352,
+        "suite": 109673775078,
+        "provider": "github-actions",
+        "conclusion": "success"
+      },
+      {
+        "name": "Browser (firefox)",
+        "id": 122060158623,
+        "suite": 109673775078,
+        "provider": "github-actions",
+        "conclusion": "success"
+      },
+      {
+        "name": "Browser (webkit)",
+        "id": 122060158330,
+        "suite": 109673775078,
+        "provider": "github-actions",
+        "conclusion": "success"
+      },
+      {
+        "name": "Build",
+        "id": 122073789986,
+        "suite": 109673775078,
+        "provider": "github-actions",
+        "conclusion": "success"
+      }
+    ],
+    "sourceTestsPassed": 765,
+    "browserResults": {
+      "chromium": {
+        "passed": 850
+      },
+      "phone": {
+        "passed": 848,
+        "skipped": 2
+      },
+      "firefox": {
+        "passed": 848,
+        "skipped": 2
+      },
+      "webkit": {
+        "passed": 847,
+        "flaky": 1,
+        "skipped": 2,
+        "retry": "Existing tests/cinematic-sequences.spec.ts Kerr music-mix probe observed undefined music target within 5s; passed configured retry. No Phase 6 audio-code change."
+      }
+    }
+  },
+  "deployment": {
+    "id": "dpl_8S9mqf98e3ADJfHujQ2Tm2krSYyn",
+    "state": "READY",
+    "ref": "main",
+    "commit": "380b804d314428b3d14dd14aff25e8f4df7e7a3b",
+    "aliasesVerified": [
+      "cyberpunk3055rpg.vercel.app",
+      "cyberpunk3055rpg-git-main-cfusion2k-7277s-projects.vercel.app"
+    ],
+    "earlierIgnoredAttempts": [
+      "dpl_DJMBkEU2a3uLhdgNULWsJj8yw6bT",
+      "dpl_BGnUdZcxK7VTAr4ZE52UsCDFh63x"
+    ],
+    "recovery": "Actual repository gate returned build; same-main retry succeeded without changing source, configuration or release gates."
+  },
+  "publicVerification": {
+    "featureChecksPassed": 39,
+    "failed": 0,
+    "retries": 0,
+    "seconds": 30.7,
+    "voiceDeliveryHashesMatched": 7,
+    "artDeliveryHashesMatched": 12,
+    "viewportStateChecks": 6,
+    "scriptErrors": 0,
+    "overflow": false,
+    "saveMutation": false,
+    "tlsVerification": true
+  },
+  "limits": [
+    "Source-familiar AI/automation proxy, not physical-device or independent player/listening acceptance.",
+    "Historical pre-publication snapshots remain unchanged."
+  ]
+}

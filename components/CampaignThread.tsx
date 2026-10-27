@@ -6,7 +6,7 @@ export function CampaignThread({ state, choices = [] }: { state: GameState; choi
   const rows = campaignThread(state), leads = campaignThreadLeads(choices);
   if (!rows.length) return null;
   return <details className="campaign-thread" data-testid="campaign-thread" key={state.sceneId}>
-    <summary>Follow your campaign thread · {rows.length} connections</summary>
+    <summary>Follow your campaign thread · {rows.length} {rows.length === 1 ? "connection" : "connections"}</summary>
     <h2>Your choices across the three acts</h2>
     <p className="hint">Your choices, their recorded consequences, and the questions still open. Reviewing this changes nothing.</p>
     <ol>{rows.map(row => <li key={row.id} data-testid={`thread-${row.id}`}>
@@ -14,6 +14,7 @@ export function CampaignThread({ state, choices = [] }: { state: GameState; choi
       <p>{row.decision}</p>
       <p className="thread-consequence">{row.consequence}</p>
       <p className="hint">{row.limit}</p>
+      {row.people && <details className="thread-people" data-testid="thread-people"><summary>Review Edda and Kerr's knowledge</summary>{row.people.map(person => <section key={person.name}><h4>{person.name}</h4><dl><dt>Firsthand</dt><dd>{person.firsthand}</dd><dt>You told them</dt><dd>{person.told}</dd><dt>Response</dt><dd>{person.response}</dd></dl></section>)}</details>}
     </li>)}</ol>
     {leads.length > 0 && <nav aria-label="Available campaign follow-ups">
       <p>Continue a thread: jump to an available decision, then review its terms before selecting it.</p>

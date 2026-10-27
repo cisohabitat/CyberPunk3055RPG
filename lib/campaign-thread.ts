@@ -5,7 +5,7 @@ import { sourceReadiness } from "./source-ledger";
 import { finaleScene } from "./finale-direction";
 import type { GameState } from "./types";
 
-export type CampaignThreadRow = { id: string; title: string; decision: string; consequence: string; limit: string };
+export type CampaignThreadRow = { id: string; title: string; decision: string; consequence: string; limit: string; people?: ReturnType<typeof districtActorKnowledge> };
 export const THREAD_CHECKPOINTS = ["card_week", "act2_middle", "card_wall", "act3_neighborhood", "act3_arrival"] as const;
 export function hasCampaignThread(sceneId: string) {
   return (THREAD_CHECKPOINTS as readonly string[]).includes(sceneId) || Boolean(finaleScene(sceneId));
@@ -52,6 +52,7 @@ export function campaignThread(state: GameState): CampaignThreadRow[] {
       decision: people[0].told,
       consequence: districtStatus(state),
       limit: `Kerr: ${people[1].told} ${people[1].response} No request settles Edda's inquiry or restores her shift.`,
+      people,
     });
   }
   if (f.technique_started) rows.push({ id: "build", title: "Your build → the filing procedure",

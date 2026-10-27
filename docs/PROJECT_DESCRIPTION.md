@@ -65,3 +65,5 @@ The [distinct-build filing bench](DISTINCT_BUILDS_PHASE4.md) connects earned tra
 [Phase 5 cinematic direction](CINEMATIC_DIRECTION_PHASE5.md) gives four major story sequences optional detail paintings, deliberate dialogue spacing and quieter beds while preserving original words, actual actors and earned outcomes.
 
 The campaign thread connects acquired evidence, tested cases, archive preparation, deliberate disclosures, specialist work and witness publication terms at chapter checkpoints and all four finales. Follow-up links let players review already available decisions without selecting them. See [Phase 6](CAMPAIGN_INTEGRATION_PHASE6.md).
+
+The [current internal review](POST_ROADMAP_REVIEW.md) uses three complete prepared/scarce/failure-heavy proxy campaigns. Focused polish consolidates task history, makes crowded ordinary choices easier to reach and gives earned costs a written place at the ending. The provisional internal grade is 8.5/10, without claiming independent AAA acceptance.
