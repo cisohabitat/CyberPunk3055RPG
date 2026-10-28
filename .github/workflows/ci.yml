@@ -16,7 +16,7 @@ concurrency:
 jobs:
   test:
     name: Test
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
@@ -44,28 +44,62 @@ jobs:
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
-          name: gameplay-balance
+          name: gameplay-balance-${{ github.run_attempt }}
           path: qa/production/reports/balance/
           if-no-files-found: error
           retention-days: 30
 
-  browser:
-    name: Browser (${{ matrix.project }})
+      - name: Build production application once
+        run: npm run build
+      - name: Audit production catalog and budgets once
+        run: npm run production:report
+      - name: Collect complete browser inventory and bind the shared build
+        run: node scripts/browser-ci.mjs plan
+      - name: Upload exact-commit production build
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: browser-build-${{ github.run_attempt }}
+          path: |
+            .next/
+            !.next/cache/**
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 1
+      - name: Upload complete browser plan
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: browser-plan-${{ github.run_attempt }}
+          path: .ci/browser-plan.json
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 7
+      - name: Upload shared production evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: production-evidence-${{ github.run_attempt }}
+          path: qa/production/reports/
+          if-no-files-found: error
+          retention-days: 30
+
+  browser_shard:
+    name: Browser shard (${{ matrix.project }}, ${{ matrix.shard }}/4)
     needs: test
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     strategy:
       fail-fast: false
       matrix:
         project: [chromium, phone, firefox, webkit]
+        shard: [1, 2, 3, 4]
         include:
           - project: chromium
             browsers: chromium
           - project: phone
             browsers: chromium
           - project: firefox
-            browsers: chromium firefox
+            browsers: firefox
           - project: webkit
-            browsers: chromium webkit
+            browsers: webkit
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
@@ -75,7 +109,11 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      # Every job runs Chromium production probes as well as its own full suite.
+      - name: Restore version-matched browser binaries
+        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-ubuntu-24.04-${{ runner.arch }}-${{ hashFiles('package-lock.json') }}-${{ matrix.project }}
       - run: npx playwright install --with-deps ${{ matrix.browsers }}
       - name: Start virtual audio device
         run: |
@@ -83,39 +121,100 @@ jobs:
           pulseaudio --start --exit-idle-time=-1
           pactl load-module module-null-sink sink_name=saint_shard_ci
           pactl set-default-sink saint_shard_ci
-      - run: npm run build
-      - run: npm run production:report
-      - run: npm run production:verify
-        if: matrix.project == 'chromium'
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: browser-build-${{ github.run_attempt }}
+          path: .next
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: browser-plan-${{ github.run_attempt }}
+          path: .ci
+      - name: Generate deterministic public score deliveries
+        run: node scripts/generate-audio.mjs
+      - name: Verify Chromium loading and performance
+        if: matrix.project == 'chromium' && matrix.shard == 1
+        run: npm run production:verify
       - name: Check native menu permission before campaign regressions
-        if: matrix.project == 'chromium'
-        run: npm run test:browser -- tests/menu-autoplay-policy.spec.ts --project chromium --workers=1
+        if: matrix.project == 'chromium' && matrix.shard == 1
+        env:
+          PLAYWRIGHT_HTML_OUTPUT_DIR: .ci/results/chromium-1/preflight/native-html
+        run: npm run test:browser -- tests/menu-autoplay-policy.spec.ts --project chromium --workers=1 --output=.ci/results/chromium-1/preflight/native
       - name: Check all speaker captions before campaign regressions
-        run: npm run test:browser -- tests/speaker-presentation.spec.ts --grep "all actors identify" --project=${{ matrix.project }} --workers=4
-      - run: npm run test:browser -- --project=${{ matrix.project }} --workers=4
-      - name: Upload browser evidence
+        if: matrix.shard == 1
+        env:
+          PLAYWRIGHT_HTML_OUTPUT_DIR: .ci/results/${{ matrix.project }}-1/preflight/captions-html
+        run: npm run test:browser -- tests/speaker-presentation.spec.ts --grep "all actors identify" --project=${{ matrix.project }} --workers=4 --output=.ci/results/${{ matrix.project }}-1/preflight/captions
+      - name: Run and verify the required browser shard
+        run: node scripts/browser-ci.mjs run ${{ matrix.project }} ${{ matrix.shard }}
+      - name: Upload shard results, raw blob report and failure evidence
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
-          name: browser-evidence-${{ matrix.project }}
+          name: browser-shard-${{ github.run_attempt }}-${{ matrix.project }}-${{ matrix.shard }}
+          path: .ci/results/${{ matrix.project }}-${{ matrix.shard }}/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 7
+      - name: Upload Chromium production probe evidence
+        if: always() && matrix.project == 'chromium' && matrix.shard == 1
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: production-probe-${{ github.run_attempt }}
+          path: qa/production/reports/
+          if-no-files-found: error
+          retention-days: 30
+
+  browser:
+    name: Browser (${{ matrix.project }})
+    if: ${{ always() }}
+    needs: [test, browser_shard]
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        project: [chromium, phone, firefox, webkit]
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: browser-plan-${{ github.run_attempt }}
+          path: .ci
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          pattern: browser-shard-${{ github.run_attempt }}-${{ matrix.project }}-*
+          path: .ci/shards
+      - name: Require every shard and exact complete project coverage
+        env:
+          TEST_RESULT: ${{ needs.test.result }}
+          SHARDS_RESULT: ${{ needs.browser_shard.result }}
+        run: node scripts/browser-ci.mjs verify ${{ matrix.project }}
+      - name: Merge the complete project browser report
+        env:
+          PLAYWRIGHT_HTML_OPEN: never
+        run: npx playwright merge-reports --reporter=html .ci/merge
+      - name: Upload verified complete browser evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: browser-evidence-${{ matrix.project }}-${{ github.run_attempt }}
           path: |
             playwright-report/
-            test-results/
+            qa/production/reports/browser-${{ matrix.project }}.json
+          if-no-files-found: error
           retention-days: 7
-
-      - name: Upload production evidence
-        if: always()
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
-        with:
-          name: production-evidence-${{ matrix.project }}
-          path: qa/production/reports/
-          retention-days: 30
 
   build:
     name: Build
     if: ${{ always() }}
     needs: [test, browser]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:

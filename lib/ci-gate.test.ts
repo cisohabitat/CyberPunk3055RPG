@@ -4,9 +4,12 @@ import { describe, it } from "node:test";
 import { fileURLToPath } from "node:url";
 import { BROWSER_CHECKS, productionDecision, requiredMatrixPassed } from "../scripts/ci-gate.mjs";
 import { spawnSync } from "node:child_process";
+import { parse } from "yaml";
+import { PROJECTS, SHARD_COUNT, WORKERS } from "../scripts/browser-ci-core.mjs";
 
 const workflow = readFileSync(fileURLToPath(new URL("../.github/workflows/ci.yml", import.meta.url)), "utf8");
 const vercel = readFileSync(fileURLToPath(new URL("../vercel.json", import.meta.url)), "utf8");
+const jobs = parse(workflow).jobs;
 
 function run(name: string, status: string, conclusion: string | null, started_at = "2026-10-08T00:00:00Z") {
   return { name, status, conclusion, started_at };
@@ -30,11 +33,27 @@ describe("production gate", () => {
       const processResult = spawnSync(process.execPath, ["scripts/require-browser-checks.mjs"], { env: { ...process.env, TEST_RESULT: source, BROWSER_RESULT: browsers } });
       assert.equal(processResult.status, source === "success" && browsers === "success" ? 0 : 1);
     }
-    assert.match(workflow, /project: \[chromium, phone, firefox, webkit\]/);
-    assert.match(workflow, /fail-fast: false/);
-    assert.match(workflow, /needs: \[test, browser\]/);
-    assert.match(workflow, /--project=\$\{\{ matrix\.project \}\} --workers=4/);
-    assert.match(workflow, /run: node scripts\/require-browser-checks\.mjs/);
+    assert.deepEqual(jobs.browser.strategy.matrix.project, PROJECTS);
+    assert.deepEqual(jobs.browser_shard.strategy.matrix.project, PROJECTS);
+    assert.deepEqual(jobs.browser_shard.strategy.matrix.shard, Array.from({ length: SHARD_COUNT }, (_, i) => i + 1));
+    for (const job of [jobs.browser, jobs.browser_shard]) assert.equal(job.strategy["fail-fast"], false);
+    assert.deepEqual(jobs.build.needs, ["test", "browser"]);
+    assert.deepEqual(jobs.browser.needs, ["test", "browser_shard"]);
+    assert.equal(jobs.browser.if, "${{ always() }}");
+    assert.equal(jobs.build.if, "${{ always() }}");
+    const verify = jobs.browser.steps.find((step: { name: string }) => step.name === "Require every shard and exact complete project coverage");
+    assert.equal(verify.env.TEST_RESULT, "${{ needs.test.result }}");
+    assert.equal(verify.env.SHARDS_RESULT, "${{ needs.browser_shard.result }}");
+    assert.equal(verify.run, "node scripts/browser-ci.mjs verify ${{ matrix.project }}");
+    assert.equal(jobs.browser_shard.steps.find((step: { name: string }) => step.name === "Run and verify the required browser shard").run,
+      "node scripts/browser-ci.mjs run ${{ matrix.project }} ${{ matrix.shard }}");
+    assert.equal(WORKERS, 4);
+    assert.ok(jobs.build.steps.some((step: { run: string }) => step.run === "node scripts/require-browser-checks.mjs"));
+    for (const job of Object.values(jobs) as { steps: { [key: string]: unknown }[] }[]) {
+      assert.equal((job as any)["runs-on"], "ubuntu-24.04");
+      assert.equal(Object.hasOwn(job, "continue-on-error"), false);
+      for (const step of job.steps) assert.equal(Object.hasOwn(step, "continue-on-error"), false);
+    }
   });
   it("waits until both checks have passed", () => {
     assert.equal(productionDecision([]), "wait");
@@ -73,11 +92,31 @@ describe("production gate", () => {
   });
 
   it("keeps the workflow job names wired to the production gate", () => {
-    assert.match(workflow, /name: Test/);
-    assert.match(workflow, /needs: test/);
-    assert.match(workflow, /name: Build/);
-    assert.match(workflow, /npm test/);
-    assert.match(workflow, /npm run build/);
+    assert.equal(jobs.test.name, "Test");
+    assert.equal(jobs.browser.name, "Browser (${{ matrix.project }})");
+    assert.equal(jobs.build.name, "Build");
+    assert.equal(jobs.browser_shard.needs, "test");
+    const steps = Object.values(jobs).flatMap((job: any) => job.steps);
+    assert.equal(steps.filter(step => step.run === "npm run build").length, 1);
+    assert.equal(steps.filter(step => step.run === "npm run production:report").length, 1);
+    assert.ok(jobs.test.steps.some((step: any) => step.run === "npm test"));
+    assert.ok(jobs.test.steps.some((step: any) => step.run === "node scripts/browser-ci.mjs plan"));
+    const artifact = jobs.test.steps.find((step: any) => step.with?.name === "browser-build-${{ github.run_attempt }}");
+    assert.equal(artifact.with["include-hidden-files"], true);
+    assert.equal(artifact.with["if-no-files-found"], "error");
+    assert.match(artifact.with.path, /!\.next\/cache\//);
+    const native = jobs.browser_shard.steps.find((step: any) => step.name === "Check native menu permission before campaign regressions");
+    assert.equal(native.if, "matrix.project == 'chromium' && matrix.shard == 1");
+    assert.match(native.run, /--workers=1/);
+    const captions = jobs.browser_shard.steps.find((step: any) => step.name === "Check all speaker captions before campaign regressions");
+    assert.equal(captions.if, "matrix.shard == 1");
+    assert.match(captions.run, /--grep "all actors identify" --project=\$\{\{ matrix.project \}\} --workers=4/);
+    for (const name of ["browser", "browser_shard"]) {
+      for (const step of jobs[name].steps.filter((step: any) => step.uses?.startsWith("actions/download-artifact@"))) {
+        assert.equal(step.with["run-id"], undefined);
+        assert.ok(String(step.with.name ?? step.with.pattern).includes("${{ github.run_attempt }}"));
+      }
+    }
     assert.match(vercel, /node scripts\/wait-for-ci\.mjs/);
   });
 

@@ -1,0 +1,28 @@
+{
+  "parent": "1fb956b52d8865dc8f8dcf94acfbd4731b3d1bcc",
+  "originalFileSha256": "b721374ec8d454ad1c85a051d0b42dc5cc63cd4cf10b568b2bcbb0129385dd06",
+  "originalTopLevelTestStatements": 112,
+  "byteIdenticalTestStatements": 111,
+  "intentionalSplit": {
+    "original": "archive comparison, custody and worker follow-through survive reload",
+    "replacements": [
+      "archive comparison and custody survive reload",
+      "archive worker follow-through preserves custody after reload"
+    ],
+    "originalAssertions": 10,
+    "preservedAssertions": 10,
+    "newAssertions": 1,
+    "defaultTimeoutMs": 30000
+  },
+  "oldCollectedPerProject": 1000,
+  "newCollectedPerProject": 1001,
+  "projects": [
+    "chromium",
+    "phone",
+    "firefox",
+    "webkit"
+  ],
+  "testBodyManifestSha256": "f4e55be77a982dfe8a3944d49bccc147a7c267e2d9bcefb9b7619a8d17d1722d",
+  "gameMediaChanged": false,
+  "byteIdenticalSharedHelpers": 11
+}

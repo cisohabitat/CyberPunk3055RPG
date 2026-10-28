@@ -51,7 +51,7 @@ Settings control text size, contrast, reading pace, motion, sound, separate musi
 
 Import this repository. The framework preset is Next.js. There are no environment variables and no database. `npm run build` is the production build.
 
-Pushes and pull requests run `.github/workflows/ci.yml`. Test first checks that both this README and `AGENTS.md` received content updates across the change, then runs `npm test`, `npm run balance:audit`, `npm run balance:missions`, `npm run balance:campaigns` and `npm run balance:overlap`. Missing documentation updates or balance regressions fail Test and block production. Four Browser jobs independently compile the game and run the complete existing desktop Chromium, phone Chromium, Firefox and WebKit projects in parallel, including accessibility checks. Chromium also runs the native autoplay smoke and loading probe. Build requires Test and every Browser job to succeed. The exact-commit production gate still waits for Test and Build; a failed, skipped, canceled or unreadable check blocks publication. Pull request previews retain their existing behavior.
+Pushes and pull requests run `.github/workflows/ci.yml`. Test first checks README/AGENTS freshness, audits dependencies, runs source tests and every balance check, then builds and audits the production application once. Sixteen browser shard jobs restore that exact build and execute all four complete projects in four shards each, with four workers per shard. The four familiar **Browser (chromium/phone/firefox/webkit)** checks validate that every shard succeeded and every collected case ran exactly once, then publish merged reports. Missing, failed, canceled, stale, duplicate or unexpectedly skipped evidence blocks release. Chromium retains the native autoplay smoke and loading/performance probe. Build still requires Test and the full browser matrix; Vercel still waits for successful exact-commit checks and previews keep their existing behavior. See [CI and test architecture](docs/CI_TEST_REFACTOR.md) for the graph, coverage guard and measured timings.
 
 The active run lives in `localStorage` under `saint-shard-3055-v1`. Its previous valid state is an automatic backup. Three manual slots and JSON export/import keep separate copies. Imported files are validated and exported files carry an integrity checksum. The checksum detects accidental changes; it is not a signature or anti-cheat system. A rolled outcome is saved before its animation and restored after a reload; Continue applies it once. Abandon clears the active run and backup, while manual slots remain.
 
@@ -74,6 +74,8 @@ At the beginning of The Week, choose one practiced skill for +1 on its checks. E
 Finales retain their codas and add consequences for Ward Nine, Mara, Nia, Lumen, and your origin contact when those stories apply. The chapel, street, and wards have separate musical beds with crossfades. Audio remains optional.
 
 ## Verification and authoring
+
+Browser tests are grouped by domain, with shared setup in `tests/fixtures/`. The archive custody and later worker review use two independently repeatable cases with a canonical, save-checked checkpoint; their original 30-second deadlines remain. Test moves preserve the full collected inventory, including all art, voice, accessibility, save and mobile cases.
 
 ```bash
 npm test

@@ -1,0 +1,265 @@
+{
+  "phase": "Artwork gallery",
+  "revision": "1fb956b52d8865dc8f8dcf94acfbd4731b3d1bcc",
+  "dirty": false,
+  "recordedAt": "2026-10-28T01:04:45.828833+00:00",
+  "documentation": "docs/ARTWORK_GALLERY.md",
+  "catalog": "qa/media/art-gallery.json",
+  "captureCorrection": "qa/editorial/art-gallery-capture-review.json",
+  "ci": {
+    "runId": 40606455270,
+    "url": "https://github.com/cisohabitat/CyberPunk3055RPG/actions/runs/40606455270",
+    "attempt": 1,
+    "cohortSuiteId": 110064380129,
+    "checks": [
+      {
+        "id": 122566634397,
+        "name": "Build",
+        "status": "completed",
+        "conclusion": "success",
+        "check_suite": {
+          "id": 110064380129
+        },
+        "app": {
+          "slug": "github-actions"
+        }
+      },
+      {
+        "id": 122548824565,
+        "name": "Browser (firefox)",
+        "status": "completed",
+        "conclusion": "success",
+        "check_suite": {
+          "id": 110064380129
+        },
+        "app": {
+          "slug": "github-actions"
+        }
+      },
+      {
+        "id": 122548824545,
+        "name": "Browser (chromium)",
+        "status": "completed",
+        "conclusion": "success",
+        "check_suite": {
+          "id": 110064380129
+        },
+        "app": {
+          "slug": "github-actions"
+        }
+      },
+      {
+        "id": 122548824540,
+        "name": "Browser (phone)",
+        "status": "completed",
+        "conclusion": "success",
+        "check_suite": {
+          "id": 110064380129
+        },
+        "app": {
+          "slug": "github-actions"
+        }
+      },
+      {
+        "id": 122548824508,
+        "name": "Browser (webkit)",
+        "status": "completed",
+        "conclusion": "success",
+        "check_suite": {
+          "id": 110064380129
+        },
+        "app": {
+          "slug": "github-actions"
+        }
+      },
+      {
+        "id": 122547288082,
+        "name": "Test",
+        "status": "completed",
+        "conclusion": "success",
+        "check_suite": {
+          "id": 110064380129
+        },
+        "app": {
+          "slug": "github-actions"
+        }
+      }
+    ],
+    "productionDecision": "build",
+    "source": {
+      "passed": 805,
+      "failed": 0,
+      "knownVulnerabilities": 0
+    },
+    "browsers": {
+      "chromium": {
+        "passed": 1000,
+        "flaky": 0,
+        "skipped": 0
+      },
+      "phone": {
+        "passed": 998,
+        "flaky": 0,
+        "skipped": 2
+      },
+      "firefox": {
+        "passed": 998,
+        "flaky": 0,
+        "skipped": 2
+      },
+      "webkit": {
+        "passed": 997,
+        "flaky": 1,
+        "skipped": 2
+      }
+    },
+    "skips": "Only the existing profile-specific skips; no added skip, retry, timeout or worker change.",
+    "webkitRetry": {
+      "case": "tests/game.spec.ts: archive comparison, custody and worker follow-through survive reload",
+      "failure": "Whole-case 30000ms deadline expired at the final localStorage read; the unchanged retry passed.",
+      "focusedReview": {
+        "passed": 5,
+        "failed": 0,
+        "retries": 0,
+        "workers": 4,
+        "caseDeadlineMs": 30000,
+        "logSha256": "57966da82a156da0dbf3adbd34d6e5812bfb98f05cd08fcfbc262c0d901524bb"
+      },
+      "interpretation": "Observed timing retry retained. Isolated repeats do not establish the cause or prove future absence; no game/test changes made for this unrelated archive case."
+    },
+    "initialGalleryRun": {
+      "id": 40601716311,
+      "revision": "3b482891c57e5012f4a61cf7d0558dc9ae897c40",
+      "jobs": [
+        {
+          "id": 122531202264,
+          "name": "Test",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 122532638158,
+          "name": "Browser (phone)",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 122532638218,
+          "name": "Browser (webkit)",
+          "status": "completed",
+          "conclusion": "cancelled"
+        },
+        {
+          "id": 122532638237,
+          "name": "Browser (chromium)",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 122532638298,
+          "name": "Browser (firefox)",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 122547196583,
+          "name": "Build",
+          "status": "completed",
+          "conclusion": "failure"
+        }
+      ],
+      "reason": "Superseded by the corrected capture commit; WebKit canceled by workflow concurrency and Build correctly rejected the incomplete matrix. The initial phone profile retry and native-disclosure hypothesis are preserved in the capture correction report."
+    }
+  },
+  "deployment": {
+    "id": "dpl_8UFvxJA6YvxDG6yz1Fn7RXza2Gvs",
+    "projectId": "prj_JYHAxYL8onO9SFrvFN0i5q3IepIp",
+    "target": "production",
+    "state": "READY",
+    "revision": "1fb956b52d8865dc8f8dcf94acfbd4731b3d1bcc",
+    "aliasesVerified": [
+      "cyberpunk3055rpg.vercel.app",
+      "cyberpunk3055rpg-git-main-cfusion2k-7277s-projects.vercel.app"
+    ],
+    "previousAttempts": [
+      {
+        "id": "dpl_D8tTQFHh4ry5GPECJkmzDXMCjt6Y",
+        "state": "CANCELED",
+        "reason": "Held during investigation before gallery publication."
+      },
+      {
+        "id": "dpl_GUUieQ8JM5FkWFXNeuETBsHPSqam",
+        "state": "ERROR",
+        "errorCode": "BUILD_EXCEEDED_MAXIMUM_TIME"
+      }
+    ],
+    "releaseMethod": "Default-scope Git-connected redeployment of unchanged tested main after all six checks passed. No empty push, gate bypass, status-only commit or production TLS change."
+  },
+  "publicValidation": {
+    "url": "https://cyberpunk3055rpg.vercel.app/artwork",
+    "features": {
+      "passed": 13,
+      "failed": 0,
+      "retries": 0,
+      "workers": 4,
+      "suites": [
+        "art-gallery",
+        "character-profiles"
+      ],
+      "logSha256": "f53945e5fe762429298b43fafeb28797f3bf9fd07d6b3f6be1e53cbb8c3bef0e"
+    },
+    "media": {
+      "primaryEntries": 159,
+      "distinctDeliveries": 254,
+      "allStatus200": true,
+      "allHashesMatched": true,
+      "rawManifestSha256": "05eb76044f426cdb575f0ac2385885ee64a28b712a70d8e52d84c96a4c375e8e",
+      "sortedDeliveredManifestSha256": "59f587369ee182632c16b1a084af505f8ff5f27bf31e99323b10f90ee2118113"
+    },
+    "responsiveViews": [
+      {
+        "width": 390,
+        "path": "/tmp/saint-art-gallery/public-390.png",
+        "overflow": false,
+        "saveUnchanged": true,
+        "visuallyInspected": true,
+        "captureSha256": "1e70c88a391f303c9dcfac822c71c19742ebb7c85997ac241b4c7af0b08d1b0e",
+        "topCaptureSha256": "772cd1d06783583652f0d858d993d9a98e0bbb467418c3616a1e6bf4ec82134d"
+      },
+      {
+        "width": 1440,
+        "path": "/tmp/saint-art-gallery/public-1440.png",
+        "overflow": false,
+        "saveUnchanged": true,
+        "visuallyInspected": true,
+        "captureSha256": "7e72e5d32380e34b621ad6b316159800f9e576e1be63ed309bc5626db92faa3d",
+        "topCaptureSha256": "a7dc3527e9c732113190f75efc500269e08499ffd1f4563733ab4a332eab20bb"
+      },
+      {
+        "width": 320,
+        "path": "/tmp/saint-art-gallery/public-320.png",
+        "overflow": false,
+        "saveUnchanged": true,
+        "visuallyInspected": true,
+        "captureSha256": "bf24e3bef5ddc3f43516db6ce7b6bd8095d81164215fec864c8696e029123eae",
+        "topCaptureSha256": "d1f65b185e290532583f0e9ed5d6d221e1ce10c4598088e7684adf16cdf3e980"
+      }
+    ],
+    "tls": "Fresh curl HTTPS chain verification with inherited CA. Chromium pins only that verified proxy certificate public key; ignoreHTTPSErrors false. No blanket bypass."
+  },
+  "localValidation": {
+    "sourcePassed": 805,
+    "directedChromiumWebkitPassed": 40,
+    "correctedProfileRepeatsPassed": 20,
+    "repeatRetries": 0,
+    "workers": 4,
+    "localWebkit": "Installed engine executed directed checks with a local-only host-library preflight diagnostic; normal hosted dependencies/validation stayed unchanged."
+  },
+  "behavior": "All primary public/art images are browsable after a deliberate spoiler notice. Search, category filters, bounded pages and zoom preserve save/codex/preferences. Text-only artwork and music Stop remain respected. No new run required.",
+  "limits": [
+    "Source-familiar authored AI/automation proxy, not independent human acceptance.",
+    "Synthetic viewports, not physical-device validation.",
+    "The WebKit timing retry remains recorded despite five isolated passes.",
+    "No new AAA or 9.0 grade claim; provisional internal grade remains 8.5."
+  ]
+}
