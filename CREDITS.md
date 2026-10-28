@@ -1,5 +1,7 @@
 # Credits and asset provenance
 
+The witness-return conversations add seven stock synthetic performances using the existing Kokoro Nia (`af_nova`) and Sister Lumen (`af_heart`) identities. Exact authoring, model/license provenance, delivered signal measurements and independent transcript evidence are in `qa/media/witness-return-dialogue-*.json`. Existing room, clinic-relay and ordinary-rest paintings are reused under their recorded credits; no new actor likeness or cloned voice is introduced.
+
 The three origin-setting portrait deliveries added on 20 October 2026 encode the existing stall, Spire and canal paintings as WebP, with unchanged 1280 × 720 dimensions and composition. Original JPEGs remain byte-identical. `qa/media/origin-deliveries.json` records source/delivery hashes and encoding settings; global provenance and the offline audition include this delivery cohort. No new generated painting or voice is introduced.
 
 Saint Shard is original fiction supplied in `cisohabitat/CyberPunk3055RPG`, with the evidence and campaign expansion in this revision. The game is not affiliated with an existing cyberpunk franchise.

@@ -1,0 +1,3131 @@
+{
+  "version": 1,
+  "precedingCommit": "a5804b68a6bd96b8dddf7d9503844265504a667c",
+  "scope": "Optional outcome-specific witness return conversations; legacy runs, scene words, media bytes and four finales preserved. New UI runs explicitly opt in.",
+  "newScenes": [
+    "act2_witness_return_private",
+    "act2_witness_return_registered",
+    "act2_witness_return_relocated",
+    "act3_witness_shift_return"
+  ],
+  "newRoutes": [
+    "witness-return/private-paid.json",
+    "witness-return/private-waiting-kept.json",
+    "witness-return/private-unkept.json",
+    "witness-return/registered.json",
+    "witness-return/relocated.json",
+    "witness-return/waiting-unfinished.json"
+  ],
+  "portraitAdditions": [
+    {
+      "speaker": "Nia Pell",
+      "asset": "/art/nia.jpg",
+      "scenes": [
+        "act2_witness_return_private",
+        "act2_witness_return_registered",
+        "act2_witness_return_relocated"
+      ]
+    },
+    {
+      "speaker": "Sister Lumen",
+      "asset": "/art/lumen.jpg",
+      "scenes": [
+        "act2_witness_return_private",
+        "act3_witness_shift_return"
+      ]
+    }
+  ],
+  "baseline": {
+    "routes": 182,
+    "visits": 12775,
+    "campaignSha256": "fb64d3822fb21a141507af2d1239aab69cd92fd5aca7772457a5f790f98d4b97",
+    "media": [
+      {
+        "path": "public/art/archive-desk-small.jpg",
+        "sha256": "2f5ac1bc069bc135913ff3abb573ce67ba5332dc6893db2f3216fbfff85f9fdc"
+      },
+      {
+        "path": "public/art/archive-desk.jpg",
+        "sha256": "3380a27c045a88e14ed668eac830ff10184f802149f877fd5d5348b64f51c2b2"
+      },
+      {
+        "path": "public/art/archive-held-original-small.jpg",
+        "sha256": "52394407135df82fe040b3e7b1a63fdf52715de9c58414262242514ee953f1bf"
+      },
+      {
+        "path": "public/art/archive-held-original.jpg",
+        "sha256": "4e1dfb9241e74fe5dd8aa82f874af2a51347824ca71f93663aafb6fed737ce71"
+      },
+      {
+        "path": "public/art/archive-preparation-small.jpg",
+        "sha256": "8fc13ac0455d669d54b9e910681e92fbe68e7c3fb717937beca4ab329fd5c728"
+      },
+      {
+        "path": "public/art/archive-preparation.jpg",
+        "sha256": "567474a9f42a03bb8af719654aa32a21ff6e78a446ffe44c2489208485cd86cd"
+      },
+      {
+        "path": "public/art/asa-dispatch-small.jpg",
+        "sha256": "a3f0966108d39152ac1b2829528df8996aaa93fdcd35a110d8d905cc2a65a6f0"
+      },
+      {
+        "path": "public/art/asa-dispatch.jpg",
+        "sha256": "c2629fb0e03e49efe511e7573253cd51df18caeb39c053c638186b1d7fe06b86"
+      },
+      {
+        "path": "public/art/asa-terms.jpg",
+        "sha256": "35f51669b65d373a021acb0734a8e733f9e75fdf2f950c4bbbadc39a9fd36a64"
+      },
+      {
+        "path": "public/art/asa.jpg",
+        "sha256": "cfe27e12f9b683a5178ce74bb4ca6634a1a7eca79df84c539d1504fc396d4fdf"
+      },
+      {
+        "path": "public/art/attendant-alert.jpg",
+        "sha256": "153f9f5f50410456b8ce6edf8971ebd2342083c6d3e4ea0bf4ee10df791b7a51"
+      },
+      {
+        "path": "public/art/attendant-confrontation-small.jpg",
+        "sha256": "b099b32973ed940b5112a817816ef83eb57e432934152174610acb036341349a"
+      },
+      {
+        "path": "public/art/attendant-confrontation.jpg",
+        "sha256": "bd8151decb4cdeeca1ab805c221127fd128630466b33eb4aac6a011883b49053"
+      },
+      {
+        "path": "public/art/canal-dispatch-small.jpg",
+        "sha256": "f840fc94854a7440b9a94aa09ebf3d51e8614c2b1566595c117f465f2e8d9914"
+      },
+      {
+        "path": "public/art/canal-dispatch.jpg",
+        "sha256": "5c7ff9924557e8e8d5808838676f3ba96ce452555e8899e4930199c9a61e476c"
+      },
+      {
+        "path": "public/art/canal-origin.webp",
+        "sha256": "613713292e7b2e8c41b4403b3230184591557e47248ddd947bbc5ab7364e7e42"
+      },
+      {
+        "path": "public/art/canal.jpg",
+        "sha256": "d62d6b39fb8c2f81c0a9ab7b77f93248a43a78f9b2a939c8517cb0a964913a77"
+      },
+      {
+        "path": "public/art/cast-asa.jpg",
+        "sha256": "5d915eea172c6d9306ae17ce5ec19a758bfe234bcb04796bfe09423a7f42f041"
+      },
+      {
+        "path": "public/art/cast-attendant.jpg",
+        "sha256": "8363c7806b69bc6ce60ee21a3bef856c20839e7848f8b17c99b1b1626d41886e"
+      },
+      {
+        "path": "public/art/cast-dispatcher.jpg",
+        "sha256": "d265206af228c255c74dffbbb01c7756d31ca7bccac47f00c27a06eaf7a135b9"
+      },
+      {
+        "path": "public/art/cast-edda.jpg",
+        "sha256": "ce952912e2b1d50f55ab1d8c1aded38fc0b75cad06d19f3c63290319be6340e9"
+      },
+      {
+        "path": "public/art/cast-ives.jpg",
+        "sha256": "6e2c6e5714091021181c6c2224ff1787ea623e8fc1efa63cd18f314aa18c998a"
+      },
+      {
+        "path": "public/art/cast-kerr.jpg",
+        "sha256": "629da1895eb1359e9447c02c794c6d560b602e325224c89556536d9cbd1ddff8"
+      },
+      {
+        "path": "public/art/cast-lumen.jpg",
+        "sha256": "8f73a0b83699688044a8e427607e4409fd0c469cea84d93f76b2f92e90279829"
+      },
+      {
+        "path": "public/art/cast-mara.jpg",
+        "sha256": "4e4225028b84061e6164425f8fec1f48896cdaadf009b1197edc591956821707"
+      },
+      {
+        "path": "public/art/cast-mechanic.jpg",
+        "sha256": "c37ac0916a2ed934cf23409b59c61ca31a4a466efe4973336f85a436cd31828f"
+      },
+      {
+        "path": "public/art/cast-nia.jpg",
+        "sha256": "6b85c5ff274488d518b81b84439402e9dbc23292345b3688b26b602baf2d205a"
+      },
+      {
+        "path": "public/art/cast-orderly.jpg",
+        "sha256": "1136948945e3c2c1047a0aa19a704a158f6e554b36bbb31fa08d1841ff33d72d"
+      },
+      {
+        "path": "public/art/cast-quill.jpg",
+        "sha256": "6958725afa56e14c37c38630be2953a2dd0a422bc76c7d3db858356edef88281"
+      },
+      {
+        "path": "public/art/cast-ren.jpg",
+        "sha256": "3aa64112127a14c855b22217b6c560f521493136b2d8a2690c17844745c146ac"
+      },
+      {
+        "path": "public/art/cast-sera.jpg",
+        "sha256": "baf9d5566a7c4522c0523b11464c9a1ad14668f2d9718505e254bd83e0099714"
+      },
+      {
+        "path": "public/art/cast-stallholder.jpg",
+        "sha256": "e9e6efaffb15becfccd90fce92cd0c33c40aed0adff5465eac593fc893f20908"
+      },
+      {
+        "path": "public/art/chapel-entry-small.jpg",
+        "sha256": "950120ae23be6b0be9f08ab5f2c2d83bf55fbb09cc6afec66d605b97a2206739"
+      },
+      {
+        "path": "public/art/chapel-entry.jpg",
+        "sha256": "ab4ed5db3ed44a1f1f5f3eaf106723cdfd2e8dd7063fcf2c3a74ce2b566e1836"
+      },
+      {
+        "path": "public/art/chapel-reader-small.jpg",
+        "sha256": "01a16c2155052da6aa0a123fbb8e6030bd37ec5b55efd2b46a001e4081b59401"
+      },
+      {
+        "path": "public/art/chapel-reader.jpg",
+        "sha256": "1686a883834fff73bdb935fad6bc52083d20cfcb04669c067a073ae03abe9738"
+      },
+      {
+        "path": "public/art/chapel-service-small.jpg",
+        "sha256": "08b7fc8efb535511943efd9c88c2e5ac5228d84a4546926aaa60f66df6efabd4"
+      },
+      {
+        "path": "public/art/chapel-service.jpg",
+        "sha256": "b8e1d3ac5a628807d03bf02367e0ab1a1f90b9e3dde8bbc5e9d7c139b80e6c35"
+      },
+      {
+        "path": "public/art/chapel-shared-small.jpg",
+        "sha256": "e8c0f851ca8f247c0d3a7e9eb4e6e0849ae6d7d3d4ab8f7c38c7c0c4af53c2ec"
+      },
+      {
+        "path": "public/art/chapel-shared.jpg",
+        "sha256": "d36d5180b132fdde67b7abf6735d2bd5139139b39f3463d21be120c09ce8f51f"
+      },
+      {
+        "path": "public/art/chapel-threshold-detail-small.jpg",
+        "sha256": "2803b0e0b5f417776e86c01ff57d1a1400b8c4c9b9ea036f5403aa5ef1a680b2"
+      },
+      {
+        "path": "public/art/chapel-threshold-detail.jpg",
+        "sha256": "0398f6800cbc0992f8f275f8c17e0da47b02dffe24fde4e2083ac934b7ec82ca"
+      },
+      {
+        "path": "public/art/chapel.jpg",
+        "sha256": "b38ed7d28a6ad107c209a32441299a6ffb1dbcd6e8a314de77de92d4b50a1a9b"
+      },
+      {
+        "path": "public/art/chapter-wall-small.jpg",
+        "sha256": "549edd3e85f10fcee217f68cf7130e1a4dcbc9c1879ed049263292ceed8124e8"
+      },
+      {
+        "path": "public/art/chapter-wall.jpg",
+        "sha256": "52a34463137b9045e7a6894e359bfba1e26442a7726622ecc8a5e0e2e6898e18"
+      },
+      {
+        "path": "public/art/chapter-week-small.jpg",
+        "sha256": "ff6222474cf0fbf2df8a7f19dff8315db47830500ffaf582ab3e03a374e4cff4"
+      },
+      {
+        "path": "public/art/chapter-week.jpg",
+        "sha256": "1d258a21b77686a66bb9f10812eee5a0fd3a2a6e6f21c4fdf17a375b9f17d4bd"
+      },
+      {
+        "path": "public/art/city-schematic-small.jpg",
+        "sha256": "ec5ed0da3b54127e0e230f9f02bc4aaa4ab62a6daee54c820db4e41d4c1ed1ac"
+      },
+      {
+        "path": "public/art/city-schematic.jpg",
+        "sha256": "7506a6c7b0c7e75203f1eef7eba2c3b6dd6d4871d00c39b85eb6f1a308de2953"
+      },
+      {
+        "path": "public/art/clinic-conversation-small.jpg",
+        "sha256": "68d9ce04a6e557b460ba4d10c1d084f9b9a321f97b9f489343b947c6cd81c765"
+      },
+      {
+        "path": "public/art/clinic-conversation.jpg",
+        "sha256": "afe2cc73b2ff497b3f5d1416136b2fce339afef131ba9b0396dc5c4da68190bf"
+      },
+      {
+        "path": "public/art/clinic-coolant-small.jpg",
+        "sha256": "5239fdfe9f13c02554b9f67495760a6f62b9ed2840ed5375f451ff03712cf789"
+      },
+      {
+        "path": "public/art/clinic-coolant.jpg",
+        "sha256": "5bee57b0d2f030493f7143904102d8d1b75c5ceb464b05eeea66861014e1659b"
+      },
+      {
+        "path": "public/art/clinic-relay-small.jpg",
+        "sha256": "88b8df08eb402c0db73ea6af1527daef2524c3671eed4b656e2020c35d5eb33b"
+      },
+      {
+        "path": "public/art/clinic-relay.jpg",
+        "sha256": "927cf9d538b2583ac2882456f65ee55784609ada9cfc913f4060e42f0aa41da8"
+      },
+      {
+        "path": "public/art/correction-bench-small.jpg",
+        "sha256": "3ddac00a6bb46f325776b6bab033c9be6f38433ecdafade78e795e9c257ad653"
+      },
+      {
+        "path": "public/art/correction-bench.jpg",
+        "sha256": "736b7458376c81ed74a7ee6ba77b361a8cd84571512b70cc3feefeab547127c6"
+      },
+      {
+        "path": "public/art/courier-receipt-small.jpg",
+        "sha256": "f521b8f7af80da48a6222d249e364419e4ebc3633a0e72cb6d1d373047d52c00"
+      },
+      {
+        "path": "public/art/courier-receipt.jpg",
+        "sha256": "73a07066c0d5d0f7d630f4f60bff6e4d1d9ea231520329c1d1a3df14a10a668b"
+      },
+      {
+        "path": "public/art/courier-table-small.jpg",
+        "sha256": "bd125f6d6fa70be83255aeeee96f470a7ce9830d59fd6795411b9aa6025f4bc9"
+      },
+      {
+        "path": "public/art/courier-table.jpg",
+        "sha256": "6220068ae893776190816cb2d8bd7c9ef6c8047c5d76a83b301995e2613c61c4"
+      },
+      {
+        "path": "public/art/depot-review-small.jpg",
+        "sha256": "e87710688ef41b91ec7ce8a216d21e2bf6859cc1348b59413130f6471c848ca6"
+      },
+      {
+        "path": "public/art/depot-review.jpg",
+        "sha256": "32c298366a5b83155832ca5a6d3e35c71845256f45ccba910e0217fbd6e04b4e"
+      },
+      {
+        "path": "public/art/dispatcher-considering.jpg",
+        "sha256": "24995f27dd9105cdf5386324cb1952a8b03a1a7a83afe0dbe469eb39e7b03cba"
+      },
+      {
+        "path": "public/art/dispatcher-portrait.jpg",
+        "sha256": "a6f0ab256de0c7506592ab47d7bef73c4bfcba9d820d43f4dc78923aed6d8453"
+      },
+      {
+        "path": "public/art/district-board-small.jpg",
+        "sha256": "91595253434e7c703f2331bb06de226b69d14702137a28fadfd4f198880e223d"
+      },
+      {
+        "path": "public/art/district-board.jpg",
+        "sha256": "09ce88af81f4ee7b02a20021a0b5013ddd1af1cc0f272380200ada947cd49340"
+      },
+      {
+        "path": "public/art/edda-archive-small.jpg",
+        "sha256": "359e29bb4b084b1fc957a87d772a683bd77ec7a96eea4dd28e513962eae5c9c5"
+      },
+      {
+        "path": "public/art/edda-archive.jpg",
+        "sha256": "090a907f59e2587d9ccc536652621ff0868c6ac46aa0e4a3067401a671cc9810"
+      },
+      {
+        "path": "public/art/edda-assignment.jpg",
+        "sha256": "3df8cbd71e3e94c1264950caedf6bae79cff7147f5b471375cf1e8c13787c674"
+      },
+      {
+        "path": "public/art/edda-scrutiny.jpg",
+        "sha256": "e1c17eb4572e81a9d35bdade79017c67d095931dc79a69c70ef1610059c0d7b1"
+      },
+      {
+        "path": "public/art/edda-service-review-small.jpg",
+        "sha256": "0e6fe98a1c570e1e9ec3e48923632799689b8583734b2ab113c46f35f9f52cef"
+      },
+      {
+        "path": "public/art/edda-service-review.jpg",
+        "sha256": "cdeb87235434e44bb8bce9d51e2104cb000cd6c2b7cb0d08363eb0edd3bfe95a"
+      },
+      {
+        "path": "public/art/edda.jpg",
+        "sha256": "6af115f70e05fbf24b71e7dedf74885e774dba1ac75f5d1689f1b66ee4931223"
+      },
+      {
+        "path": "public/art/equipment-atlas-small.jpg",
+        "sha256": "b0fa045ed950b3de78919dd22f347c766d674e53afcd5d90ee0dc38128ab7c95"
+      },
+      {
+        "path": "public/art/equipment-atlas.jpg",
+        "sha256": "167a20e1efbcc80763cc9ae5473c38a238eb1ea24b2cbf19e7bb4b3753de448f"
+      },
+      {
+        "path": "public/art/finale-listed-small.jpg",
+        "sha256": "adc674abba2e4e39af79a919cce5bfc5c9d9a4ff74deff6285eed220e7856f37"
+      },
+      {
+        "path": "public/art/finale-listed.jpg",
+        "sha256": "097e29b0e4558bcbfccfd9f2431b0cdc80c810d01b313b1a29407df4ebec1954"
+      },
+      {
+        "path": "public/art/finale-names-small.jpg",
+        "sha256": "8cd0509d1862947e9fc82878b37f7d48ce76b38bcfaf888eb6a5db314bf6c269"
+      },
+      {
+        "path": "public/art/finale-names.jpg",
+        "sha256": "7a22dc054a9e6700b8a688dedc17f02dc672efe4cccaa979082e07ff2153e72c"
+      },
+      {
+        "path": "public/art/finale-quiet-small.jpg",
+        "sha256": "4341796646fc70459af7481f8df71720e2f37c304605ec687d09d75bb6b7560c"
+      },
+      {
+        "path": "public/art/finale-quiet.jpg",
+        "sha256": "ac9eaf092f9d3e79f6ddc9efdf5b306e0f0838cad1414f21f7159cc7c5061074"
+      },
+      {
+        "path": "public/art/finale-witness-small.jpg",
+        "sha256": "5c00c4fd455cc0e3f819c5ca1919a907eeba363838303dba0f7d3679fdb8f719"
+      },
+      {
+        "path": "public/art/finale-witness.jpg",
+        "sha256": "08b5ebc44ac43c137ac792901092963f3f21ab35a5ae12f7390a3125f3e66c37"
+      },
+      {
+        "path": "public/art/fragment-order-small.jpg",
+        "sha256": "ad8884a43f4ca99946636ffa7baf08dea51822d4a1801ed2c3dd8db448b64f44"
+      },
+      {
+        "path": "public/art/fragment-order.jpg",
+        "sha256": "af887e9203e651dd95138cded06fd10110afb7f85bc601a75cd2152962cc1c8b"
+      },
+      {
+        "path": "public/art/fragment-roster-small.jpg",
+        "sha256": "a5e385adce7e2e8fb80709128ef520400db6128187778d0536b1f591499553b3"
+      },
+      {
+        "path": "public/art/fragment-roster.jpg",
+        "sha256": "403456eecebfed8ef287ae627f893dc9953854fc6040828ff8ef49c2217f96d1"
+      },
+      {
+        "path": "public/art/fragment-signature-small.jpg",
+        "sha256": "3e879a23fc2944902c20e2e86b8e470b606f4a4e357dad8c4aa4e6f3fc56ab20"
+      },
+      {
+        "path": "public/art/fragment-signature.jpg",
+        "sha256": "d587dea6f54a2ac5bfe45961d1d499248133a7bb397a15e1ca7bca9735502764"
+      },
+      {
+        "path": "public/art/freight-passage-small.jpg",
+        "sha256": "8bca806cb9a1c5fc4e1dbf61860b1fdc9a38f7f33e96d4ada32f5d7d40396c2d"
+      },
+      {
+        "path": "public/art/freight-passage.jpg",
+        "sha256": "a371ba2736bef11fc8512eddbaf404d6e147a380cff4fbf6742cb75ac52a906a"
+      },
+      {
+        "path": "public/art/freight-small.jpg",
+        "sha256": "cff842342b2d4f6d49dbe5c0633f564b18f66a3d28d7fd12eda0aaed1fbf0673"
+      },
+      {
+        "path": "public/art/freight.jpg",
+        "sha256": "50f7060ce80a77fe92fe11258527dd7e25d8a08d13db6604067306eaa2d2580f"
+      },
+      {
+        "path": "public/art/hearing-filed-small.jpg",
+        "sha256": "171156b5dab2b10a2a863e766b891131ab292ad44dfcf426dd2870c842caaea0"
+      },
+      {
+        "path": "public/art/hearing-filed.jpg",
+        "sha256": "6870a57e0b4ebdba00e2f2ef4e527cd6a28fc4fa2c3928c6b7fda597f9bbf2dc"
+      },
+      {
+        "path": "public/art/hearing-table-small.jpg",
+        "sha256": "5e75b3a4a90cafa2b1a7ccd6cd1c67000e66fb7a8b84ac1818ed52b8e17b4a7f"
+      },
+      {
+        "path": "public/art/hearing-table.jpg",
+        "sha256": "f2601ddf9af5e08a094ea34fc6e20a2739b91ddefd1e23a658952c5c4371f9c3"
+      },
+      {
+        "path": "public/art/held-case-small.jpg",
+        "sha256": "2e19357b32406b7921882f28eb63517963d5ac4783074e3b882c487e4def6093"
+      },
+      {
+        "path": "public/art/held-case.jpg",
+        "sha256": "3a088d0be99ed8d618db031935b8d669c70c2ae533bf8ce9c52d5b71ea14e2d4"
+      },
+      {
+        "path": "public/art/incinerator-flue-small.jpg",
+        "sha256": "d3bcbec65817621adf9f08de4a15111997ac1e24f36293b25698ef7623f5df1d"
+      },
+      {
+        "path": "public/art/incinerator-flue.jpg",
+        "sha256": "d943a04c7cb25f7822a7ef628ea4780b788c52227c774cbc5ee70fdf5186da8f"
+      },
+      {
+        "path": "public/art/item-archive-probe-small.jpg",
+        "sha256": "6901c1de74eb79c840f61a2eb99d06fb00c6d67cca6b819670ddf3683c1873cf"
+      },
+      {
+        "path": "public/art/item-archive-probe.jpg",
+        "sha256": "3ad776f515241a61a39496acba83ed8be540589ae74445f03e7651139a70160c"
+      },
+      {
+        "path": "public/art/item-burner-route-small.jpg",
+        "sha256": "a0f9af9c464a8e159c663268e8ebe2cb1ae645735a42f80ea9a1f069681b3f5f"
+      },
+      {
+        "path": "public/art/item-burner-route.jpg",
+        "sha256": "70018c2df2ed0c3ade227040ec36456ea4329d38331e05675adb29e8c09fcc2c"
+      },
+      {
+        "path": "public/art/item-chair-harness-small.jpg",
+        "sha256": "5ae352881dac8b9683e4b79d9718ccac25c92702811fdb0c9b229f71aab38170"
+      },
+      {
+        "path": "public/art/item-chair-harness.jpg",
+        "sha256": "1f808fa1bd1600fb187df9bc76d4903e71343bf84b21e88ff36d320a92adec1f"
+      },
+      {
+        "path": "public/art/item-clinic-marker-small.jpg",
+        "sha256": "825fb4a1b67421f297a4360e1ca4f48bb53fda89dbcdd519be34e2820b084483"
+      },
+      {
+        "path": "public/art/item-clinic-marker.jpg",
+        "sha256": "9a2eff2a0f495a00986a978b299686b5deb71fa34f3df9fc2e437f95c668545a"
+      },
+      {
+        "path": "public/art/item-counterfeit-pass-small.jpg",
+        "sha256": "da5723093060e2e8aa4514752c2b24ae4a7516a7cad2680225540b5a28a46a72"
+      },
+      {
+        "path": "public/art/item-counterfeit-pass.jpg",
+        "sha256": "91326205c80ce7ba41725dc613322b2e115531f4a5ced7409cf3b65af0a3f734"
+      },
+      {
+        "path": "public/art/item-desk-guide-small.jpg",
+        "sha256": "a36878c468443c53d8c77a36aab2a4cf873e10550b8af0a8d18f830405a1a6e8"
+      },
+      {
+        "path": "public/art/item-desk-guide.jpg",
+        "sha256": "967005c156b4dd4a88e3f9eaccb3488298f219f0dc4eaec27a367043e8c1847a"
+      },
+      {
+        "path": "public/art/item-layout-scrap-small.jpg",
+        "sha256": "d588afbb4dc989731a597553a917495a3172b28c4d389b497c9bf2de336e4cfa"
+      },
+      {
+        "path": "public/art/item-layout-scrap.jpg",
+        "sha256": "535af706376d1c12140e38d4aeff5f715623ff5437bcc55810993069a338fea9"
+      },
+      {
+        "path": "public/art/item-mono-knife-small.jpg",
+        "sha256": "64754766aa0dc5c925b389fc4d3353a78387fcb4e2e942689c328f93747a48f1"
+      },
+      {
+        "path": "public/art/item-mono-knife.jpg",
+        "sha256": "828b2d35c73e7f6b804f725c75fd19f3f0241f9f4968f6dbf7185b2147c4e88c"
+      },
+      {
+        "path": "public/art/item-route-shroud-small.jpg",
+        "sha256": "6140e45c993fa9dcb7408a4397ddad2486eeca1f07276cc3a83745276785d22e"
+      },
+      {
+        "path": "public/art/item-route-shroud.jpg",
+        "sha256": "1d50a6325e7483a840424747ed04d690ba90659f8244a2dbedab5fea0ae8d4fe"
+      },
+      {
+        "path": "public/art/item-sedative-small.jpg",
+        "sha256": "f95e21ff50322e61c0326e56d55e89821350a02cc24a8d592cbe5769dbf40ef9"
+      },
+      {
+        "path": "public/art/item-sedative.jpg",
+        "sha256": "4b00fbed1a7dc2c6d55df9b8c8db99aba48e15acba51f7d585175f13ee96845d"
+      },
+      {
+        "path": "public/art/item-shard-damaged-small.jpg",
+        "sha256": "416ec1cdb59b45910874920591ee8446d7d2a44a2dcc5addcb0ffb679123d45a"
+      },
+      {
+        "path": "public/art/item-shard-damaged.jpg",
+        "sha256": "23c2bc5280c6bae0393a0549d557113576ccd2863212bc3a560e554bbb73a57a"
+      },
+      {
+        "path": "public/art/item-shard-small.jpg",
+        "sha256": "5eb3f3eb7da9d7657a9b579f5176648878a39c2f8e44a3a2188c62d48e51ccf2"
+      },
+      {
+        "path": "public/art/item-shard.jpg",
+        "sha256": "62cf6b849a9098a160a942df92e7c950d44951ee72bdd26fd17350b8dfe23162"
+      },
+      {
+        "path": "public/art/item-signal-baffle-small.jpg",
+        "sha256": "6538d00008678067ac65d4970c0dce3c8dd74e8d922f6f8fbb7b43be19e00e2f"
+      },
+      {
+        "path": "public/art/item-signal-baffle.jpg",
+        "sha256": "263a3db3960215892fd7a096e5ddf7c1ddaf78e8cee554c2e20aabbfd9b514c1"
+      },
+      {
+        "path": "public/art/item-spoof-chip-small.jpg",
+        "sha256": "68537070f5b3e7791b55e0a7b76260b560f2a2718e52485b8de5f4919aa27bc0"
+      },
+      {
+        "path": "public/art/item-spoof-chip.jpg",
+        "sha256": "278aa7703105a2c7e10242ac16a58cbe51255508b6c44782a64112eefc2f351d"
+      },
+      {
+        "path": "public/art/item-witness-token-small.jpg",
+        "sha256": "090df1cd2a32c2d4fe538f41029610b3a086bf4d362ac2f2aa492b9c47ecb6ed"
+      },
+      {
+        "path": "public/art/item-witness-token.jpg",
+        "sha256": "8fd0ecf1119fceab557f06ac169b21296f1b995ca6a3b14800124a546fc7df91"
+      },
+      {
+        "path": "public/art/ives-assessing.jpg",
+        "sha256": "f1f371eb6b117ac6b974d0862941f9146529dd242ff41f79b0dd456c65836738"
+      },
+      {
+        "path": "public/art/ives-hearing-small.jpg",
+        "sha256": "b2b528675c67efdc7d7b96e3fa153eebe9ba138565dac8b2556367115dfca6a8"
+      },
+      {
+        "path": "public/art/ives-hearing.jpg",
+        "sha256": "54584f9e4ddba81b0901c7e76e89ce310ba23b8cd4cdbdaa0858ac75cea38aea"
+      },
+      {
+        "path": "public/art/ives-questioning.jpg",
+        "sha256": "080c504776a2cdf96a6890f61ceb0acdb30e7c212e280e44fba8b13ae9aa502a"
+      },
+      {
+        "path": "public/art/ives.jpg",
+        "sha256": "0fbff0f64074ee10c85fb6e4f475f2c6df11b559b6a1ab11e78af4b4ed5e1fd8"
+      },
+      {
+        "path": "public/art/kerr-closed.jpg",
+        "sha256": "fe8743eab5af388a5ae7b6022c58d516653ded0de5407946b929135ccdf9b60d"
+      },
+      {
+        "path": "public/art/kerr-considering.jpg",
+        "sha256": "efc6bbde9d636460e08aa67b5e494fc3a4700093d45e7fe13918da96b54dadc8"
+      },
+      {
+        "path": "public/art/kerr-handover-small.jpg",
+        "sha256": "210edf111c1b105e30bee4b3c17977dbd3ba4171d8cfad52387a374d431902c2"
+      },
+      {
+        "path": "public/art/kerr-handover.jpg",
+        "sha256": "30692b026b97a1bb5688d9f07588665ff944440dd4ad9e90be4a4f9df8adfa01"
+      },
+      {
+        "path": "public/art/kerr-terms-small.jpg",
+        "sha256": "d9ff6b47adabce778d7ed409b300e604fb38176314c4075b4c7a8d059fa485e6"
+      },
+      {
+        "path": "public/art/kerr-terms.jpg",
+        "sha256": "3a36aebd59aee508b590317d0fb544ecbab7183e901ea78ed04ca44a4ee0d551"
+      },
+      {
+        "path": "public/art/kerr.jpg",
+        "sha256": "ec67f4b4299b3ff3302f9e6ae399dc2988d3f086b4f75bd8db2f481884b500ea"
+      },
+      {
+        "path": "public/art/laundry-cart-small.jpg",
+        "sha256": "5abd3be75cde378daed3bbe85bacee6132ed306e2fbceb8a7c5e7a9451021f33"
+      },
+      {
+        "path": "public/art/laundry-cart.jpg",
+        "sha256": "6096adbf567c6e46a7ac3e3c82b7f96aed7c0b283d3d911ceaaacd14afd8001d"
+      },
+      {
+        "path": "public/art/lumen-challenging.jpg",
+        "sha256": "2b59d7f1b3834aa7d15cc651adb7afaca902f575176a964b47ba5fc17b127757"
+      },
+      {
+        "path": "public/art/lumen-considering.jpg",
+        "sha256": "79bffefe5110382fa87241d746fa3aa38b898341a33f80c4e61ca10517c75746"
+      },
+      {
+        "path": "public/art/lumen-cup-small.jpg",
+        "sha256": "c819c3e650d1a3b9237827daba5d0ac43151b9e533059dcc5c1fd62d5ca29b20"
+      },
+      {
+        "path": "public/art/lumen-cup.jpg",
+        "sha256": "13781d929ac7df95c5f2f053e98d569b5c50943678f8f1e4d9d2b3a20461bcd0"
+      },
+      {
+        "path": "public/art/lumen-guarded.jpg",
+        "sha256": "bd971d777b9b60800cc3f5e73821b4bf7768c82f63eccacb91bc896a85d1390d"
+      },
+      {
+        "path": "public/art/lumen.jpg",
+        "sha256": "88cc611cc0cafbbd9cac910b4fdf454cb24fd1d4a8dc6ea6ba9f2822f890668e"
+      },
+      {
+        "path": "public/art/mara-account-small.jpg",
+        "sha256": "4f0e7e43ca8dfe79a1dfb7c77ab6a9ab19f60b984ef2fc8a430597c763df3721"
+      },
+      {
+        "path": "public/art/mara-account.jpg",
+        "sha256": "dcf2c16bc2c77e1822c9bba7fee9d89878837ede6b9b15e4f4691a61811b2cbb"
+      },
+      {
+        "path": "public/art/mara-boundary.jpg",
+        "sha256": "6374ec7a897a1719c908f4d1eece65e6181ecb8e9e1b662326b9020e03bce6f5"
+      },
+      {
+        "path": "public/art/mara-present-small.jpg",
+        "sha256": "1eecf76d579895fd05a0fdeaff80cfa7766c1a29524b813fabe6c3e1cca98097"
+      },
+      {
+        "path": "public/art/mara-present.jpg",
+        "sha256": "c981bd1f21bfe996d6493e78987b4cffd63c06954d8d7be945a5799216866337"
+      },
+      {
+        "path": "public/art/mara-questioning.jpg",
+        "sha256": "afd31fb7aaf5217e823c9c9a218b55c6694f4e23b4080205d2de43af8307a60d"
+      },
+      {
+        "path": "public/art/mara-remorse.jpg",
+        "sha256": "d2761bc9d1b617b1e4d04adf4683f4fbb4ea92a455eff1b4c277da6ffdc0f936"
+      },
+      {
+        "path": "public/art/mara-revelation-small.jpg",
+        "sha256": "72562848863d46c04e909f913630e719028e71856c4b836c20ade145a5ad4b4c"
+      },
+      {
+        "path": "public/art/mara-revelation.jpg",
+        "sha256": "577a72c15542c6d7fa49a27d971f39877ac0006105024131b4084ca765681738"
+      },
+      {
+        "path": "public/art/mara-shared-hour-small.jpg",
+        "sha256": "52c14ea9cb16da44696823d432e334327f6019a721c603e438af7fc074daf6ee"
+      },
+      {
+        "path": "public/art/mara-shared-hour.jpg",
+        "sha256": "ccbbc0d127c25864c2602e720d0fc8327b139fe70ad51ef805c5753f23009089"
+      },
+      {
+        "path": "public/art/mara-window-small.jpg",
+        "sha256": "0b1738ccbe2a137b9fba8b94c1b9af37767175daf57ff8cb356e17f8fffd151a"
+      },
+      {
+        "path": "public/art/mara-window.jpg",
+        "sha256": "493ae2aa5f2c324140ed8639d3acf04b27e2c7fa5661a7a3ea0c0c2c4beb38bc"
+      },
+      {
+        "path": "public/art/mara.jpg",
+        "sha256": "2b1c67aa8a9519999a98e8559edc831406e2014fd42d91bf4ab1ae7b1e0d3214"
+      },
+      {
+        "path": "public/art/market-counter-small.jpg",
+        "sha256": "2ee3420b4057b96c9625efb7deb55d0e1ecbec56d7122d1ff6a6e4bb4a57f172"
+      },
+      {
+        "path": "public/art/market-counter.jpg",
+        "sha256": "709cb53138b1b9f4ec6d3a4a168008f124cc0598903c20d04cccb63f7e0ef9b8"
+      },
+      {
+        "path": "public/art/masked-attendant-portrait.jpg",
+        "sha256": "122511a1d0f393c1d838d6768407b3784c89cde1602ebc07d0d50f14210d2599"
+      },
+      {
+        "path": "public/art/mechanic-explaining.jpg",
+        "sha256": "f3399f7aa7ac3f6dfc6b93340d62424d013426c03c8139f991213325b933fe8a"
+      },
+      {
+        "path": "public/art/mechanic-portrait.jpg",
+        "sha256": "8afb01ff0465467be38a78714a1768cf23933ad6e79bdab286a61bc2ebfc3d0c"
+      },
+      {
+        "path": "public/art/memorial-pause-detail-small.jpg",
+        "sha256": "c4043a47c466c2a3b7eb29e6870dc5711c3950d24fda152c1f68372e72df407e"
+      },
+      {
+        "path": "public/art/memorial-pause-detail.jpg",
+        "sha256": "ded3e1c18e8d1aadf803088780a7cc138c55ff250a75f20469f5571946d1e1a5"
+      },
+      {
+        "path": "public/art/memorial-stair-small.jpg",
+        "sha256": "3333835e11f20dc40fd9ec15361f1ea92d18f72f0638692c0b53921d0aca7b7d"
+      },
+      {
+        "path": "public/art/memorial-stair.jpg",
+        "sha256": "2078a38c3c911729dfe5a80eb232d1c78bec7c0609c97cfa5f5450e77432acd7"
+      },
+      {
+        "path": "public/art/memory-apparatus-small.jpg",
+        "sha256": "edd702cf9b926fcc5b7c1cb364579bb18e61983fdf1297991fffbd361fc1edad"
+      },
+      {
+        "path": "public/art/memory-apparatus.jpg",
+        "sha256": "76fb91d7eb3ea1b23fbd545482d075301265ef113633ea763ee63cd7062aaeb4"
+      },
+      {
+        "path": "public/art/memory-bench-small.jpg",
+        "sha256": "14662ba2b1b1260601313db846187335eccf1c716ece49795395f7a31e8573fc"
+      },
+      {
+        "path": "public/art/memory-bench.jpg",
+        "sha256": "0d53e523b3adfbf538585d14f6d930f8361c1155e0d7d443d35317292f0a16ad"
+      },
+      {
+        "path": "public/art/nia-arrival-small.jpg",
+        "sha256": "d9d01e6200c84b1891cf54b43c889f07850572615023ac73e67f45f60d5e5aae"
+      },
+      {
+        "path": "public/art/nia-arrival.jpg",
+        "sha256": "22829b36897ec6e10018754951c9ec8cf1ae6bdcacfd036e6508795961528fe7"
+      },
+      {
+        "path": "public/art/nia-speaking.jpg",
+        "sha256": "f3b42abaefb793d62305fee03dff26cb080a3e65ef40106ede14072b5192a8c5"
+      },
+      {
+        "path": "public/art/nia-terms.jpg",
+        "sha256": "071948e154bbd6e521c4125611127b0c8b3fe11da11324bf056792ef9700f96e"
+      },
+      {
+        "path": "public/art/nia-transfer-small.jpg",
+        "sha256": "e45d52caf442005cbb3ed40b1df5afe5eccc524d8a9ee77747112eb095aef519"
+      },
+      {
+        "path": "public/art/nia-transfer.jpg",
+        "sha256": "d850e4a5d57088ae9ff7568c76d5a5f140fe46e50679e0c3d28fa6333983263f"
+      },
+      {
+        "path": "public/art/nia.jpg",
+        "sha256": "d7303d8d8359b2ea99ac67c1ae8ebf676618f65268d0c006681e90315b35e41e"
+      },
+      {
+        "path": "public/art/notice-desk-small.jpg",
+        "sha256": "ad6dbcaa7a54dda929f8fa1d6653baf8a79bd987982c67d8337616d952e46aeb"
+      },
+      {
+        "path": "public/art/notice-desk.jpg",
+        "sha256": "a00696c9017ad0bb86c0b912fbd494be8382fbbece378d978431975057ad11f5"
+      },
+      {
+        "path": "public/art/opening-small.jpg",
+        "sha256": "dd99312376552ab706fe066cae02294ded40672030f32c4d462ceb623242f3da"
+      },
+      {
+        "path": "public/art/opening.jpg",
+        "sha256": "9ef96fa0bcea5beef099cacc0f9d568efe37da4487835c4fc50a9ba8380c7b95"
+      },
+      {
+        "path": "public/art/orderly-assessing.jpg",
+        "sha256": "61dd8b46d6388fbc70ef01461b17617f9c05ad4a2d62e78e8bea37167a65cb0e"
+      },
+      {
+        "path": "public/art/orderly.jpg",
+        "sha256": "a93bf8bf1ccd3928101017819b5f7cbe2964815cf9daef9793a13fb1d92693e1"
+      },
+      {
+        "path": "public/art/ordinary-rest-small.jpg",
+        "sha256": "c60755f46b7cc82c28b3ae69998d8647c98cfe67206511170e68a7351c4ed24e"
+      },
+      {
+        "path": "public/art/ordinary-rest.jpg",
+        "sha256": "d0d7d0b5b5ddf9015f2ef0ca1d0d1c2555f4bb9a575c9a846104cc9a1ca9ec8d"
+      },
+      {
+        "path": "public/art/previews/archive-desk.jpg",
+        "sha256": "f2b5da2cf8b521d2fee157df1494b5b925f1b6a25905f35fa3bc6ad4908246bc"
+      },
+      {
+        "path": "public/art/previews/archive-held-original.jpg",
+        "sha256": "3df733d6aa8cc92f7330796e6a9c7b0eea9b377d49644315dccdcd104a4823e5"
+      },
+      {
+        "path": "public/art/previews/archive-preparation.jpg",
+        "sha256": "6d07e79953248400789672f953ad1ee575bc92cb5bfa4790723ef9b340f9aa01"
+      },
+      {
+        "path": "public/art/previews/asa-dispatch.jpg",
+        "sha256": "820f5fedc8095fec6aafd2036c560abb3f3d96ed00086315e6643d783fe0a315"
+      },
+      {
+        "path": "public/art/previews/attendant-confrontation.jpg",
+        "sha256": "7e2ae1faf909feed141a98ad000bcc9c2b66224831256f6f887bd52161eb0cf2"
+      },
+      {
+        "path": "public/art/previews/canal-dispatch.jpg",
+        "sha256": "022bf9078b9bb34428454c1748bd7f1e879b63ba4ceabbffc3117cd05abb7c74"
+      },
+      {
+        "path": "public/art/previews/chapel-entry.jpg",
+        "sha256": "50b2bf162d0902d7c8c90786890b41375a57a5bd6f27695f26a0d04cf13e27f6"
+      },
+      {
+        "path": "public/art/previews/chapel-reader.jpg",
+        "sha256": "2fcb26c0ec95d0dff540b882ef18e2cb5e0305cfcfe0a5be3b656750e979ddf6"
+      },
+      {
+        "path": "public/art/previews/chapel-service.jpg",
+        "sha256": "5690b4dac4ef95b9c43599c778b62a2f6251c97f921512d17beaf9395ffd0d4c"
+      },
+      {
+        "path": "public/art/previews/chapel-shared.jpg",
+        "sha256": "9e28c9966edc66600223d6ad1d85c32026a4760d8dfb5c922cefa338ab174157"
+      },
+      {
+        "path": "public/art/previews/chapel-threshold-detail.jpg",
+        "sha256": "4107217af4a2ecf3a17d03384bcf54869d466dfba8bf1228661cff1fe09704e3"
+      },
+      {
+        "path": "public/art/previews/chapter-wall.jpg",
+        "sha256": "092b2a5d94eb049907ef6b428245e04b31396876fb763e8893957d21fc815d99"
+      },
+      {
+        "path": "public/art/previews/chapter-week.jpg",
+        "sha256": "95ce30376dcf930303aa4373de8bd98d0d91e0451c69cbef6a5adbcbd987aa97"
+      },
+      {
+        "path": "public/art/previews/clinic-coolant.jpg",
+        "sha256": "bd626deb54bd3fd1b0a4ea2d67c18beb4bee740419ba91b59aa2f9a678caf017"
+      },
+      {
+        "path": "public/art/previews/clinic-relay.jpg",
+        "sha256": "f751bafa35595fbb264246af51a269c32e283fd39abab01b76bdde636c3859e4"
+      },
+      {
+        "path": "public/art/previews/correction-bench.jpg",
+        "sha256": "69f8297d78b80f86ab32093e26c65cdf26b251d94257355b3f6626b3ba8ce144"
+      },
+      {
+        "path": "public/art/previews/courier-receipt.jpg",
+        "sha256": "3262300a40ebc6d56890e406a87719b190ae1dda3b7f921aa841d6aa62a9c420"
+      },
+      {
+        "path": "public/art/previews/courier-table.jpg",
+        "sha256": "b4b2256391d2cabebc109fc36de002da02a147129537f9580ac9316b55407851"
+      },
+      {
+        "path": "public/art/previews/depot-review.jpg",
+        "sha256": "a940030a93330c50cbfde0779fb2eddcf92ba0127c49387fc9aff1faf7e47a25"
+      },
+      {
+        "path": "public/art/previews/district-board.jpg",
+        "sha256": "f29db9dd0306004e2b7a0104b5cbbc727b56f89f10d76c6af6707833787d0353"
+      },
+      {
+        "path": "public/art/previews/edda-archive.jpg",
+        "sha256": "ec56485026c1e1ec2f89b9eeb2c2b63bdc36d74b1ef8c452ceb14bb5a2d49312"
+      },
+      {
+        "path": "public/art/previews/edda-service-review.jpg",
+        "sha256": "00d6393755e56e6f4bc8e202a128fec64f7313b1a73e40b544d64b1cf9700e7e"
+      },
+      {
+        "path": "public/art/previews/finale-listed.jpg",
+        "sha256": "55efeaf092b2b63fc1994a03d2ef3094e5a08529b9e409b4d452160ee4550b4c"
+      },
+      {
+        "path": "public/art/previews/finale-names.jpg",
+        "sha256": "77647a660c22e4bfae4334a4b02fa165fff0560f59d339569ec532df9e51d13d"
+      },
+      {
+        "path": "public/art/previews/finale-quiet.jpg",
+        "sha256": "16985f585f31072b331b138bd98dd3720dfbdfd47f1a62839ff520ef0106c1eb"
+      },
+      {
+        "path": "public/art/previews/finale-witness.jpg",
+        "sha256": "701337d983ada377c4c4ec33b79d1660bb40cd2bd42b490f3085b520240491fd"
+      },
+      {
+        "path": "public/art/previews/fragment-order.jpg",
+        "sha256": "3de2c42fe3a46f8057229eb37bad6ecb928bcf8ec406670c571f372df113a9c5"
+      },
+      {
+        "path": "public/art/previews/fragment-roster.jpg",
+        "sha256": "dcd291497eb20f58afc7765f4307d0c2d1405cb763470eccfbb068e71644e547"
+      },
+      {
+        "path": "public/art/previews/fragment-signature.jpg",
+        "sha256": "85da209fd585a28008bca28f9f5c532a83b7a257b0029c580ab3eb1d4bf79a3f"
+      },
+      {
+        "path": "public/art/previews/freight-passage.jpg",
+        "sha256": "ee00fb2f14812e4083c355a9193ce77bf655dde796d3ef1b814f2d11e4917c68"
+      },
+      {
+        "path": "public/art/previews/freight.jpg",
+        "sha256": "1e71f377f70465df3b5f4d57017d3b9d083a18f71cd5fdbeb94ad756bf3d80b1"
+      },
+      {
+        "path": "public/art/previews/hearing-filed.jpg",
+        "sha256": "08ecad0ea914fc2e7f290a75fc2b3a16b254145c9737cb822a4771c153ce2fdf"
+      },
+      {
+        "path": "public/art/previews/hearing-table.jpg",
+        "sha256": "02341695c80b25631679c97387738f9399ecb86dbbd2cc350bf54ebe8eb2c14b"
+      },
+      {
+        "path": "public/art/previews/held-case.jpg",
+        "sha256": "59fdadcd9f33adf1c25fbe584bf6d3453919df172d8d709404172e90ad44ce85"
+      },
+      {
+        "path": "public/art/previews/incinerator-flue.jpg",
+        "sha256": "590f46e18145abce8319c4d5daaa5ed25ef760d0a84f54346848e25fba04293d"
+      },
+      {
+        "path": "public/art/previews/item-archive-probe.jpg",
+        "sha256": "6cbe125650ef906b47e152c02f700f641930a5f98c66f493e01c3a3f03208e10"
+      },
+      {
+        "path": "public/art/previews/item-burner-route.jpg",
+        "sha256": "acfa795e5fb995dd824dca9d8890f404ddd813997609714319c8d5af0637a009"
+      },
+      {
+        "path": "public/art/previews/item-chair-harness.jpg",
+        "sha256": "aa138b17292df495331f8c87059bb6748f481a2bae1e84409c1c65c8b999d5ac"
+      },
+      {
+        "path": "public/art/previews/item-clinic-marker.jpg",
+        "sha256": "3ae1a3f3760e8212350600689f0c1bf0f8531615a38fb3f6c953c8f4e064a979"
+      },
+      {
+        "path": "public/art/previews/item-counterfeit-pass.jpg",
+        "sha256": "2a157197b8d90b82e122fb8b8b73c00095ff8217b010840135f0e91b878b2e14"
+      },
+      {
+        "path": "public/art/previews/item-desk-guide.jpg",
+        "sha256": "23aa8c23ee80ee2824f8bf114bc244b01815ec7e00cf2530760be7fc65539ff1"
+      },
+      {
+        "path": "public/art/previews/item-layout-scrap.jpg",
+        "sha256": "ac68a525cd886876291cdce79994d75af6410cf1396cfeaa8fe7fc7dd42ff509"
+      },
+      {
+        "path": "public/art/previews/item-mono-knife.jpg",
+        "sha256": "feaf6ee895e537d47001978cdbdb391f75196390439c3f94ef0e109431b1f4ba"
+      },
+      {
+        "path": "public/art/previews/item-route-shroud.jpg",
+        "sha256": "88a36391d90e1579e9c286a36d97edc26d480e15086835259145c62b247697f2"
+      },
+      {
+        "path": "public/art/previews/item-sedative.jpg",
+        "sha256": "ab6aa3c2c62bf0b5c00c219ec61309d99995437bef030c5913a0f0a8aba90d71"
+      },
+      {
+        "path": "public/art/previews/item-shard-damaged.jpg",
+        "sha256": "b2ea2d2a29ee97631f1e9c746ae2fdff46fd1026c849b81db939dfa568921ce8"
+      },
+      {
+        "path": "public/art/previews/item-shard.jpg",
+        "sha256": "42993fb06c1ff1bd20ddf8bb31351cb4dcff6394f7d6f711dbae2d675350e371"
+      },
+      {
+        "path": "public/art/previews/item-signal-baffle.jpg",
+        "sha256": "99bd6442c0ba28443947068f4d4f6381caad11df07c1459e3e97c694813643d3"
+      },
+      {
+        "path": "public/art/previews/item-spoof-chip.jpg",
+        "sha256": "5d2d05c21924aafcae841f5e0f0b5e52304de95db836d0f39dd81ec662c767f8"
+      },
+      {
+        "path": "public/art/previews/item-witness-token.jpg",
+        "sha256": "f27edc80260eaa13b103e143fb0504084608d746d9663c57ed5d29e760379152"
+      },
+      {
+        "path": "public/art/previews/ives-hearing.jpg",
+        "sha256": "07be8b151b6b52df360aa443daa6538ef25df41799ebd45dd69a348b6de82b8e"
+      },
+      {
+        "path": "public/art/previews/kerr-handover.jpg",
+        "sha256": "7fcf4cad42804a372198e1392a15387ac21841ec9a154f5512cc8ca6f04168ef"
+      },
+      {
+        "path": "public/art/previews/kerr-terms.jpg",
+        "sha256": "ccc43e397f45cabc2ef69aec9c7e7b1f539f98cdb1df8f67e54762b7f53172bb"
+      },
+      {
+        "path": "public/art/previews/laundry-cart.jpg",
+        "sha256": "2e38d07b8ba8c37b81a3ec9e4dced4bb214d9e5168004a26c70de90763204808"
+      },
+      {
+        "path": "public/art/previews/lumen-cup.jpg",
+        "sha256": "b354033ae0f0596f329aced510e58be708351226c0e377398f91438d1008fca2"
+      },
+      {
+        "path": "public/art/previews/mara-account.jpg",
+        "sha256": "9a1a41ecd5acafb395154921315e67c29a823579e90604a2e15922e97119cb87"
+      },
+      {
+        "path": "public/art/previews/mara-present.jpg",
+        "sha256": "dc4d636b146815f53783b5acfaf4e6a314f7d155bccac2a062111c87a3ade0fa"
+      },
+      {
+        "path": "public/art/previews/mara-revelation.jpg",
+        "sha256": "62325a9247db8676585722645c23d524b2f081d8628358423bc8b0d81c55ebca"
+      },
+      {
+        "path": "public/art/previews/mara-shared-hour.jpg",
+        "sha256": "8d6cc4a206f816ae05ac0dec87150f3315b347c90566ad95b4d45bc9662789a7"
+      },
+      {
+        "path": "public/art/previews/mara-window.jpg",
+        "sha256": "2bca14bc6c7eae4021d25cc7a2f788fb692bc7c444f860fc9206930fcd48637f"
+      },
+      {
+        "path": "public/art/previews/market-counter.jpg",
+        "sha256": "0ca8bf6165863f68c006d3b99d9a937ad8a4e8d76dfd43ff25079873892ae414"
+      },
+      {
+        "path": "public/art/previews/memorial-pause-detail.jpg",
+        "sha256": "5bf72b2afa10c3c339c7b5358f2a9265f8b06133366d64c448e8300449601558"
+      },
+      {
+        "path": "public/art/previews/memorial-stair.jpg",
+        "sha256": "6e89ff06366cce42dbed20166a3c1f72d8b4b36dba733e493760b63558750757"
+      },
+      {
+        "path": "public/art/previews/memory-apparatus.jpg",
+        "sha256": "06dbeaac58ae225939d1aa6ed78a5f31dd19979cf79efe8f6eabbccddfab30c9"
+      },
+      {
+        "path": "public/art/previews/memory-bench.jpg",
+        "sha256": "8f6ab9524398e702c6010c717066c9e8b8917aad295c6121329ebaf07f63ec78"
+      },
+      {
+        "path": "public/art/previews/nia-arrival.jpg",
+        "sha256": "ee78c4640056c2b117d9d0277dcd7c152a1946547729ef03dfaccb5d28028491"
+      },
+      {
+        "path": "public/art/previews/nia-transfer.jpg",
+        "sha256": "378ae6f33febe78c54f874ad8e56f409dc3c2d2a24a597c51af0426359b9470c"
+      },
+      {
+        "path": "public/art/previews/notice-desk.jpg",
+        "sha256": "bb2b93eedb08986360f6e235b71e759f2d75c6076e7821a6b20de04189ec0be3"
+      },
+      {
+        "path": "public/art/previews/opening.jpg",
+        "sha256": "50c23b892a8297e23379056ef89d8dbdf6b7e6504aeeaaae1fa3eec1aff4c54e"
+      },
+      {
+        "path": "public/art/previews/ordinary-rest.jpg",
+        "sha256": "01a0d508b3ab214bfb2f5582304119e2f3ece6ab38d916e73f80b79cee879bb1"
+      },
+      {
+        "path": "public/art/previews/private-reply.jpg",
+        "sha256": "3acb32509056fe6bda158c88ca49af9a21c32ea4f5c4890bd90e9314c712b6ec"
+      },
+      {
+        "path": "public/art/previews/quill-offer.jpg",
+        "sha256": "da71ed67e069276c835a73eba8652308770b3eb1588f050708f5f8069d000bc4"
+      },
+      {
+        "path": "public/art/previews/recorded-hour-detail.jpg",
+        "sha256": "0bcde867b584ea7b61e7696fdbf7b102a5a28ca29f4ee078339e0bb5cbf0f75d"
+      },
+      {
+        "path": "public/art/previews/ren-canal.jpg",
+        "sha256": "05121ed87b3e2161b277fa8795c7fcdf6f3092e54c482d241983d3bbf1278bfe"
+      },
+      {
+        "path": "public/art/previews/repair-bench.jpg",
+        "sha256": "c64c38662313c2c966ac2a65740e1206b8061103560d9ccb4573e34e27da85d4"
+      },
+      {
+        "path": "public/art/previews/sera-hearing.jpg",
+        "sha256": "84812f84a8e4c4da557b285bd51a0558c10b3feefa5260c7bdd3333bed933cb3"
+      },
+      {
+        "path": "public/art/previews/shelter-conversation.jpg",
+        "sha256": "c8aa4ceb120d41ddc72138294c76e27266f31d3426819b90c09b261b619df149"
+      },
+      {
+        "path": "public/art/previews/shelter-hall.jpg",
+        "sha256": "1a7ccb801d9732d0ca4302c936780d724385536d9d94427e36817ded30aba67d"
+      },
+      {
+        "path": "public/art/previews/shelter-landing.jpg",
+        "sha256": "66b9b74effa285b8c7625c7947c68b69323ccb9f05415e9ed6a85ea0afd9b297"
+      },
+      {
+        "path": "public/art/previews/shelter-pump.jpg",
+        "sha256": "83841a6f6a9074f083863a66fa5b8a2954537d17c41b3ad35b3466dfca60c711"
+      },
+      {
+        "path": "public/art/previews/shelter-restored.jpg",
+        "sha256": "a0b59953193dfa52dc0d974565a5207c57769af41e2bd89b430a19659763748e"
+      },
+      {
+        "path": "public/art/previews/spire-counter.jpg",
+        "sha256": "fdfbafa01b26326178c61d0fc338060c1fcbd6f7d454e23fb67f45c2daf543d6"
+      },
+      {
+        "path": "public/art/previews/spire-payroll.jpg",
+        "sha256": "024f34a3b96a36d362e24d4e52ebe6479e7c5ccd3b863db9e01fd2b092ba8dd8"
+      },
+      {
+        "path": "public/art/previews/spire-terminal.jpg",
+        "sha256": "429e559c073618c85b99732c29c0a85be90ce0489db368f9454fe0a8ec499e46"
+      },
+      {
+        "path": "public/art/previews/stallholder-story.jpg",
+        "sha256": "3b54be2b62d4dd9b063796e2f2839d19c2575cc9773ec390b3c47f6c8aad089c"
+      },
+      {
+        "path": "public/art/previews/wall-shared.jpg",
+        "sha256": "e896ad722e503994d3b3468f6262487f1ac63e38316b5744b20cb2d5fd1be549"
+      },
+      {
+        "path": "public/art/previews/witness-checkpoint.jpg",
+        "sha256": "80580b6ede16f12794e672a7e5603d36e3d7a8010dbd8ef0977ae88d844ff902"
+      },
+      {
+        "path": "public/art/previews/witness-choice-detail.jpg",
+        "sha256": "33f755a86b4cfc723c5426941a7212864db8f95b1fe4a17c0992525e8fcdb690"
+      },
+      {
+        "path": "public/art/private-reply-small.jpg",
+        "sha256": "81ca487f250048e874abdf23d1b055226b8bfe87c2b1181d0f066f3137025743"
+      },
+      {
+        "path": "public/art/private-reply.jpg",
+        "sha256": "291e51f60239b8f08b5f23433c017c9395075a99fd8e4d7e6b7823ecfdb0c2f2"
+      },
+      {
+        "path": "public/art/quill-offer-small.jpg",
+        "sha256": "f8c07ba77633bc6f9727c57a6d063ad7bd81d762f3900c74ed70bea2f876c88d"
+      },
+      {
+        "path": "public/art/quill-offer.jpg",
+        "sha256": "c1dfbc8b368cd0d02542c14407a0b2733847425ce89d96e9ba2df49feae12c1c"
+      },
+      {
+        "path": "public/art/quill-terms.jpg",
+        "sha256": "01ebe6e2f28963db00606d3254688e3fe831f5b55ae7d2cb565a35533fda4f7b"
+      },
+      {
+        "path": "public/art/quill-waiting.jpg",
+        "sha256": "8ed1f97159ed5acf9a09802df570e74a87a50ac377c7be63d940e3d0f3f0ad1b"
+      },
+      {
+        "path": "public/art/quill.jpg",
+        "sha256": "4971bcdc37e0853eb4bf0199b883d421ce7a71a77dd2b487c1974e616755311b"
+      },
+      {
+        "path": "public/art/recorded-hour-detail-small.jpg",
+        "sha256": "68546cc2422af261af2189d066497768ca0d50c8be39bcf5f573d8e3197d1a64"
+      },
+      {
+        "path": "public/art/recorded-hour-detail.jpg",
+        "sha256": "729571c4e5cced781bb43e30e56bfc8fe0164d75c656cd3987c4359bc76da191"
+      },
+      {
+        "path": "public/art/ren-canal-small.jpg",
+        "sha256": "3f0ba8d6ff610bfccfaeac2adb712f5f05e9e0babdc4727da04a239d897c8a26"
+      },
+      {
+        "path": "public/art/ren-canal.jpg",
+        "sha256": "6a1f41231020be9e6119d69406ca9ca3c3e2ba221178f8262e02cb3fe7abbe31"
+      },
+      {
+        "path": "public/art/ren-concerned.jpg",
+        "sha256": "ed2abb2f1406b47b66a782655e01df5b4a8caaaa027141c7c2b02e4d5b94f814"
+      },
+      {
+        "path": "public/art/ren-listening.jpg",
+        "sha256": "d06442eadc08e0b5e34e06b61e0126179e67f472821f9f8ba94b51fe3f28627b"
+      },
+      {
+        "path": "public/art/ren-portrait.jpg",
+        "sha256": "1ad4f23925cc6159462c2ad51fe01bcda6517251b78c211536dc623c892b9a33"
+      },
+      {
+        "path": "public/art/repair-bench-small.jpg",
+        "sha256": "5cd14b34949b03d873c870a841a0419ee5fe45e88f50b93705724cd6e8105634"
+      },
+      {
+        "path": "public/art/repair-bench.jpg",
+        "sha256": "46714d0ca0fc54bbf38e7207a13ea620313fca2c35b7c0fa8fdff307ecd9ffe9"
+      },
+      {
+        "path": "public/art/saint-shard-brand-small.webp",
+        "sha256": "76c8e6842f00f89b8d09644ca77a0e395ef087db6ee81bba3974dca09f42c34c"
+      },
+      {
+        "path": "public/art/saint-shard-brand.webp",
+        "sha256": "6ccba442e4e78f5d67949262cc24af2a925a8eb61197e2b3c74bf8a5e1f74e48"
+      },
+      {
+        "path": "public/art/sera-attentive.jpg",
+        "sha256": "a5a6399fa6e6e924b7f97eda2b75d83895ef2500783c52ba5ddfd97b0119ed4a"
+      },
+      {
+        "path": "public/art/sera-hearing-small.jpg",
+        "sha256": "5f1c994f23f466fe7de1b1ae0a33f0511af0ae533221259a8fbedccb693b55dd"
+      },
+      {
+        "path": "public/art/sera-hearing.jpg",
+        "sha256": "c281c605d54e1e2caf0d592be2d24217396e73536b92007b0d7525c4277617d6"
+      },
+      {
+        "path": "public/art/sera-listening.jpg",
+        "sha256": "2f6f082f184eb1f8bd6e44e64b8a92facde781d1a7f8d572a794a335a87e4369"
+      },
+      {
+        "path": "public/art/sera.jpg",
+        "sha256": "357cfe3e403cfc57140977271a62264157640a0c640da9bbd5272e39516b39cf"
+      },
+      {
+        "path": "public/art/shelter-conversation-small.jpg",
+        "sha256": "66d6955d79bdf7522e7af5c5114747d85ae998029e714bea36a506fad1002c94"
+      },
+      {
+        "path": "public/art/shelter-conversation.jpg",
+        "sha256": "8c2240b2bd432d6df7960916b14180181da54deb89f330254f2e267fbecb377d"
+      },
+      {
+        "path": "public/art/shelter-hall-small.jpg",
+        "sha256": "be9fcb76d9d995de31b3f4d050978de2741dcbccffd458a542ba1b4a913dc563"
+      },
+      {
+        "path": "public/art/shelter-hall.jpg",
+        "sha256": "419be4b687b7ef2415c4609901da51f0e0e7f8fc954c99f4adc6b39381f809a2"
+      },
+      {
+        "path": "public/art/shelter-landing-small.jpg",
+        "sha256": "4c54334442884d13a66e4ac4976d83d721114bc461528f76261f77d43b918670"
+      },
+      {
+        "path": "public/art/shelter-landing.jpg",
+        "sha256": "c04e29ccf5f538c6a25590f82ffbaa9fd5e65b668938d996b16b56dfd8bdb8f2"
+      },
+      {
+        "path": "public/art/shelter-pump-small.jpg",
+        "sha256": "431d130d445345790cbd278e66b209f0dd53ab241a9068378a9f060238e69bb2"
+      },
+      {
+        "path": "public/art/shelter-pump.jpg",
+        "sha256": "8575223111ea63184d5d201458341b84ccadd35664fa71d5470620eeaf168097"
+      },
+      {
+        "path": "public/art/shelter-restored-small.jpg",
+        "sha256": "9c293326969f13791ae832d2a636f092592476a3a8b68f3e124b611794650301"
+      },
+      {
+        "path": "public/art/shelter-restored.jpg",
+        "sha256": "67804a7efe6478446fb60e4ba04c8e9b4e5f3a37430d7f64173c2eed072c94bf"
+      },
+      {
+        "path": "public/art/shelter-small.jpg",
+        "sha256": "f2550b1f696923b749dfa91de978bdfd61398ca445cdf832226a5b84b205f98d"
+      },
+      {
+        "path": "public/art/shelter.jpg",
+        "sha256": "682b53e06fcd9edd9f4092059fb109dd4750244447338b0530605057d6672916"
+      },
+      {
+        "path": "public/art/spire-counter-small.jpg",
+        "sha256": "656b363459614eed7c7e50c7575fb82651942f36bb04ba22f39130f58d033b1a"
+      },
+      {
+        "path": "public/art/spire-counter.jpg",
+        "sha256": "57242dd57d1e0f8185c9bef6e59ba6cb710229ea5075efc79fa3bfd578b4993a"
+      },
+      {
+        "path": "public/art/spire-origin.webp",
+        "sha256": "5942b462c655b9933b31f80b2bfd849fd6b5d1488d6bc5c5d7a8a2c872b1695b"
+      },
+      {
+        "path": "public/art/spire-payroll-small.jpg",
+        "sha256": "cbfe247eb71bd3f76a2e2d4034757817e5a2021924f44dcb2fc627c0f9944679"
+      },
+      {
+        "path": "public/art/spire-payroll.jpg",
+        "sha256": "c36beebe3c5dfac0461ecb398eea50156c6f08110790e497bd481c16d82c898a"
+      },
+      {
+        "path": "public/art/spire-terminal-small.jpg",
+        "sha256": "28a010dbddf08d1adeb52c532becec8efa231efbd1b75898e1637f3c3e548f18"
+      },
+      {
+        "path": "public/art/spire-terminal.jpg",
+        "sha256": "d26a856a8e3d512eaaf862eed795dd2122ca6071060f9bb418695f70e4101afc"
+      },
+      {
+        "path": "public/art/spire.jpg",
+        "sha256": "59315758907739d260c66480b6dd372902b154a981c218ff71e522a134805413"
+      },
+      {
+        "path": "public/art/stall-origin.webp",
+        "sha256": "4e2926204ab58af8f9981d4c5105a8ee7e1c92d269465b16d99c68110032daad"
+      },
+      {
+        "path": "public/art/stall.jpg",
+        "sha256": "c77892d16439f0430abcbd058c36530c0d17be366c95a89f486dd3c59dc60969"
+      },
+      {
+        "path": "public/art/stallholder-portrait.jpg",
+        "sha256": "80d95d12bcfd922efba728f05b9779032a7256739726fdc63a540ab428a4871a"
+      },
+      {
+        "path": "public/art/stallholder-speaking.jpg",
+        "sha256": "79330f199d6538c6a51b256102d35ff16ab623bc306fbc96037e37129dce0c72"
+      },
+      {
+        "path": "public/art/stallholder-story-small.jpg",
+        "sha256": "f6e0f74bb8a1140c75618246e35d08efd85b0a8e39801b8d63c87be63554c95a"
+      },
+      {
+        "path": "public/art/stallholder-story.jpg",
+        "sha256": "b82be5ae49d8276b7544633854e504fe012528e8847a83bb2f0e4dfe2652e73f"
+      },
+      {
+        "path": "public/art/title-portrait-small.jpg",
+        "sha256": "cf1c673c9f406bb633bdb848fb92af60223557fae48ee293cb471ea2a6f4a0ea"
+      },
+      {
+        "path": "public/art/title-portrait.jpg",
+        "sha256": "2b5bc5e937534cf9b09093ac00007de2f2531b3207089528ccbfd4230dbc75ee"
+      },
+      {
+        "path": "public/art/title-small.jpg",
+        "sha256": "a474c6927a753e8d4db6dc1938f6edc4b7619492b0210cbb01203b685576110d"
+      },
+      {
+        "path": "public/art/title.jpg",
+        "sha256": "bc429bafbac720f8fe10d505761b92f226c7085fde95950899227cdba77c4543"
+      },
+      {
+        "path": "public/art/wall-shared-small.jpg",
+        "sha256": "637189fc84dad8b6e9bded4e8bc6d00ce3cc1a88e73b41a295d4e43a62897c15"
+      },
+      {
+        "path": "public/art/wall-shared.jpg",
+        "sha256": "664ff4e12ff9665bb872a84cf99daa7d7d9282813e297b31ec172020c03a722e"
+      },
+      {
+        "path": "public/art/wardnine.jpg",
+        "sha256": "c53adb16eb278e6d2904cda51265cbfd79a964ad0cda43dce94edb432d5cbff0"
+      },
+      {
+        "path": "public/art/witness-checkpoint-small.jpg",
+        "sha256": "1adbeeb36f7e012edd5295284f8751917a679805cfbbb5d42e04432752835075"
+      },
+      {
+        "path": "public/art/witness-checkpoint.jpg",
+        "sha256": "9b570b041a4d542fc6431459831a1fcdd17acc6876213f4caa8d5ee52fee6dc8"
+      },
+      {
+        "path": "public/art/witness-choice-detail-small.jpg",
+        "sha256": "7a604a8742607b2c6e2e7ce4e84e67d05d2d953d5be73c8e177503db766877fe"
+      },
+      {
+        "path": "public/art/witness-choice-detail.jpg",
+        "sha256": "058519b1c95690e2aae9631a469c2b8e79d805475b2b091001c875d4c0f8bb1d"
+      },
+      {
+        "path": "public/audio/ambience-canal.flac",
+        "sha256": "4a79d2597aab79cd6d5218415b7935bd5fc47513178688ddf84a67eea1fc5a63"
+      },
+      {
+        "path": "public/audio/ambience-canal.flac.gz",
+        "sha256": "6cefdf92d45aea3a5771e9cf7e386ef97b5ed62500e240a8411a26d95e6fa6ba"
+      },
+      {
+        "path": "public/audio/ambience-canal.wav",
+        "sha256": "9a687190ece6189762da93a2c3e0970ce6792f32b722dd3faffa6171f113735f"
+      },
+      {
+        "path": "public/audio/ambience-chapel.flac",
+        "sha256": "20e21da9b23a6eedefb67eb602148a4a917320cf6c8f1cad581eabca7997f664"
+      },
+      {
+        "path": "public/audio/ambience-chapel.flac.gz",
+        "sha256": "9caa89f8e68f2e8c26ef7771ab3dafcd66c84841b81800cbd2fe7338c2123ea0"
+      },
+      {
+        "path": "public/audio/ambience-chapel.wav",
+        "sha256": "1f88dda25713b737a1356535246f29fde734282c56331b35eca4059743dc2f5f"
+      },
+      {
+        "path": "public/audio/ambience-clinic.flac",
+        "sha256": "aa7eb3aba1e16568f3d2e9b42d4d8608645342cffbe422f3a731940038dc146d"
+      },
+      {
+        "path": "public/audio/ambience-clinic.flac.gz",
+        "sha256": "18a44a1992f85266d168521e1afce6acd7e21b23357d8bbb5f47aa0dcdd955a6"
+      },
+      {
+        "path": "public/audio/ambience-clinic.wav",
+        "sha256": "f57119d7216c7dada0d5d0293a3cdff4c9401af505eada3bb39793392ddfe1e6"
+      },
+      {
+        "path": "public/audio/ambience-spire.flac",
+        "sha256": "c591122dbc8dd9df3af27778415959b4b325326fe1ba0caf21d1ce861a3b2eff"
+      },
+      {
+        "path": "public/audio/ambience-spire.flac.gz",
+        "sha256": "49e4d84dc80e816a01a4e2f3867b8f1eed3a1678c617bc81f363716120234991"
+      },
+      {
+        "path": "public/audio/ambience-spire.wav",
+        "sha256": "a61df4ea032a6646a67d2441b88e5ce2979e8a62d09273690557f9e4a87f774b"
+      },
+      {
+        "path": "public/audio/ambience-stall.flac",
+        "sha256": "f09d109ea3684058422c311f464a49708b17842dad4b00d44d19a5cf53a309bf"
+      },
+      {
+        "path": "public/audio/ambience-stall.flac.gz",
+        "sha256": "0f0c91fcfbbdb32af64cff43ef9fb34cd6422141fe177a06139e5e7b73092e44"
+      },
+      {
+        "path": "public/audio/ambience-stall.wav",
+        "sha256": "d81d4661de5c02df80b2320d709ddedf7e3ca7de4f9c2ba856b408fb07be5882"
+      },
+      {
+        "path": "public/audio/ambience-street.flac",
+        "sha256": "61b3bba5d867990b3cb85ef7317d49c3b0465eab2057d44d0a123b53e87cfe0d"
+      },
+      {
+        "path": "public/audio/ambience-street.flac.gz",
+        "sha256": "4e425c1112825a92f4447778a0fa13d38ddaf85faa99b3f2d04ff4490e538f6d"
+      },
+      {
+        "path": "public/audio/ambience-street.wav",
+        "sha256": "4f04e95f563d7be6909b88b75411387cd18e6ec33f78c55aa99326a6eed889b1"
+      },
+      {
+        "path": "public/audio/ambience-ward.flac",
+        "sha256": "a3cb998a109b169e7da44fd4f6f1f9299b01a8fe477d04ec681a0bad425c75e6"
+      },
+      {
+        "path": "public/audio/ambience-ward.flac.gz",
+        "sha256": "a378ce7d5f41912f31a1af7657b5a1999169e987335e778992a7162fc6395d3e"
+      },
+      {
+        "path": "public/audio/ambience-ward.wav",
+        "sha256": "98fd5bc52976a3f75b179b96f9fd30daecdd5ad3a299b1028ca33c8ee650a83e"
+      },
+      {
+        "path": "public/audio/ambience-witness.flac",
+        "sha256": "e3fe2b2e0e09a2c36ec5566c63e469de416cdae7c8fbf9d25411bf7d46d9e1a3"
+      },
+      {
+        "path": "public/audio/ambience-witness.flac.gz",
+        "sha256": "cf450e0afc25194875909efd8d854e5bf23f92e21c59d267a3b7fea8fa62e407"
+      },
+      {
+        "path": "public/audio/ambience-witness.wav",
+        "sha256": "49789a5dc8304a452ddd519ef315fa496dc59d81eb3131f0b7fc906676945876"
+      },
+      {
+        "path": "public/audio/dice-land-miss.wav",
+        "sha256": "9308c010be868bf3a6e74599a0e405846a3c96f9c2e1eff83a92e499a37df639"
+      },
+      {
+        "path": "public/audio/dice-land-one.wav",
+        "sha256": "90d79012ec25557bb87a9911658c314f7a642c99f1bb0cca317fb0fda9260a2e"
+      },
+      {
+        "path": "public/audio/dice-land-success.wav",
+        "sha256": "e4573511a14a654c7ece29a765fa961a62ede0ea9c9e11888ef7b3ae6fa3a3e5"
+      },
+      {
+        "path": "public/audio/dice-land-ten.wav",
+        "sha256": "e5396a9c8d36571982da5d37a3820cd855ac54c99313e440551eead90f78d894"
+      },
+      {
+        "path": "public/audio/dice-tick.wav",
+        "sha256": "72e8157134cb09ac527081b5a36bb8c3e830c6383d1c18b007283cf7c01a8cf7"
+      },
+      {
+        "path": "public/audio/dice-tumble.wav",
+        "sha256": "809f8fff451755823943321c049ed0fee5fea2bea2aa6cba5f805ef0a813f2d8"
+      },
+      {
+        "path": "public/audio/foley-case.wav",
+        "sha256": "0dfb6a671fee9c659f5caacd2e7ed65ada98e8cab05cb2b9ba55600a80a6ac59"
+      },
+      {
+        "path": "public/audio/foley-chair.wav",
+        "sha256": "da15cf0880068b46d424e1bf6b1eeef1543a2acc1916f93319ccdc585ca18736"
+      },
+      {
+        "path": "public/audio/foley-folio.wav",
+        "sha256": "78430c50eea66337186f815950e129a7ef8ba55ddbd9fad4f8e87aba6f5a44a3"
+      },
+      {
+        "path": "public/audio/foley-paper.wav",
+        "sha256": "8c54aa3e9571c7a354930e38bde84c24c46d525b1d33a24a767911c4c7f7d470"
+      },
+      {
+        "path": "public/audio/foley-reader.wav",
+        "sha256": "45a33015a14052f96be39a2638499a5598dce83df2cf643fb84ec5943a28f702"
+      },
+      {
+        "path": "public/audio/foley-recorder.wav",
+        "sha256": "e256378750c091af5272b1461edd1aa1516b8b8db05e67e75ccb5fea0fdebd61"
+      },
+      {
+        "path": "public/audio/foley-viewer.wav",
+        "sha256": "f929897084c369d5d076a590dc5df7b223e7533d9d0a0c7a0949d20f4feaa328"
+      },
+      {
+        "path": "public/audio/memory-align.wav",
+        "sha256": "af92ab5ff3072808208a72d7539767fbd738091c35ae9fd2420050ce3ab5339d"
+      },
+      {
+        "path": "public/audio/memory-correction.wav",
+        "sha256": "986bffa7da10b966894b4b6a0814a0ae3269da715ea9d29bbc064995a14546ef"
+      },
+      {
+        "path": "public/audio/memory-mismatch.wav",
+        "sha256": "9925c629806938f701a0d1ed056319178eeed9301ccade98dfbba07522198da2"
+      },
+      {
+        "path": "public/audio/memory-place.wav",
+        "sha256": "f83b01db7ce6b9c4b723045e1003dd128ce9610504b8b572ac7d7452521f7327"
+      },
+      {
+        "path": "public/audio/memory-reset.wav",
+        "sha256": "b974ce47877192cbb5157eadf213202053a899821a9c6d1b86f0d6749826656f"
+      },
+      {
+        "path": "public/audio/rain.wav",
+        "sha256": "8be58c1d75d8c8906f5efa9fa31051d2dd8a223d9febdc5d82f06275d24d6d24"
+      },
+      {
+        "path": "public/audio/sting-alley.wav",
+        "sha256": "449a6b92cae3df9b0141708f9b07c7981107c7037ff4bb1708faa3a6ce1e814c"
+      },
+      {
+        "path": "public/audio/sting-chapel.wav",
+        "sha256": "4949446bc8ee3386c4b517eefd0db423b131561ea438503d3b664bfcb48928ac"
+      },
+      {
+        "path": "public/audio/sting-ending.wav",
+        "sha256": "fa5f6ca52442ecaab365b417086f89b933afd791ecf21d3e8e07042eda5af4af"
+      },
+      {
+        "path": "public/audio/sting-fail.wav",
+        "sha256": "2fc640659e7fe9ddd71d557d103763b2772bd89e9c06a321b087ed82929d4e65"
+      },
+      {
+        "path": "public/audio/sting-memory.wav",
+        "sha256": "ff72bbac0ffda29200b19b6667b194bce98df354231174f4a2cdb0d520c0ded9"
+      },
+      {
+        "path": "public/audio/sting-stall.wav",
+        "sha256": "70d086db14d6f033a9fd66718365e911b945ab9f7abb46f133deb75d6b010f32"
+      },
+      {
+        "path": "public/audio/sting-success.wav",
+        "sha256": "6db24511bd71f0b314f2162c9d26a6e0507d81a7da41d707a1ccc31c4cdb13d4"
+      },
+      {
+        "path": "public/audio/sting-ward.wav",
+        "sha256": "27de5bc074be9ecfc08bba359d1698ab1547d5e88885c9dd4a0d164c63fdbe83"
+      },
+      {
+        "path": "public/audio/sting-week.wav",
+        "sha256": "72c34737c1d43c01f8947888ebfe3e8d2da4f1dfb5f263200b6024e8e1c4f302"
+      },
+      {
+        "path": "public/audio/theme-chapel.flac",
+        "sha256": "24446589e011bb283beef94366fc6c76231370ce0448afb05fa3e086698ac303"
+      },
+      {
+        "path": "public/audio/theme-chapel.flac.gz",
+        "sha256": "3078b0c89005bf1e93eb45c92731a4635fdb8c291289528858e135562c503823"
+      },
+      {
+        "path": "public/audio/theme-chapel.wav",
+        "sha256": "e61bbe51c7e299bff5c1e36acf181e2bc105c36057e9ca412c999742dd303624"
+      },
+      {
+        "path": "public/audio/theme-pressure.flac",
+        "sha256": "a3c435a3eab0ddae4d20c6b13ddceaf8a065f8e096920144581e070327744777"
+      },
+      {
+        "path": "public/audio/theme-pressure.flac.gz",
+        "sha256": "bed544c46866ee539583bc50d103f3d4e471b45b53df54c3e4ae580e9a4a9dcc"
+      },
+      {
+        "path": "public/audio/theme-pressure.wav",
+        "sha256": "e740e39fe4507a6404931454de09aee696c37e6c678f15f6e2871fe3d775d6f6"
+      },
+      {
+        "path": "public/audio/theme-quiet.flac",
+        "sha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692"
+      },
+      {
+        "path": "public/audio/theme-quiet.flac.gz",
+        "sha256": "76379a01b3be5b725f0b79bf78ad13a3c8f4ac669aec4542813145a3c2fe1353"
+      },
+      {
+        "path": "public/audio/theme-quiet.wav",
+        "sha256": "e5a9abd81a987e04156ecc9cee14dff9e28036a2d700d1f8fa9e55bfbb2012e2"
+      },
+      {
+        "path": "public/audio/theme-reading.flac",
+        "sha256": "10c9e40f7b3f3db1710d5c6eb35286765b5b5019ac34374a578a3e0cf39f613f"
+      },
+      {
+        "path": "public/audio/theme-reading.flac.gz",
+        "sha256": "ccfa613f0e5a7201a45ef1a317af1af70f7e03643d40d527df5343027556e71d"
+      },
+      {
+        "path": "public/audio/theme-reading.wav",
+        "sha256": "d2bd286b0cbe07c9e19fdc8fece829ba357b575e43d87b6f369e9d82f6806f0a"
+      },
+      {
+        "path": "public/audio/theme-title.flac",
+        "sha256": "d7e9be683af76dc74f1dd94611ddf9981f89a9e66904e2c40983388ad4fa8d9e"
+      },
+      {
+        "path": "public/audio/theme-ward.flac",
+        "sha256": "46e9fd33430a61b4a36645c45fcd88bbc616e57e4643cb2e61aaacc0b62cfc39"
+      },
+      {
+        "path": "public/audio/theme-ward.flac.gz",
+        "sha256": "6b151e1a412f147424dd49b8da058c524c4070847a80008f1b0fea1d5804c5aa"
+      },
+      {
+        "path": "public/audio/theme-ward.wav",
+        "sha256": "501d4394d2aa640450487c9ec135b53d0ea37461323f264fda3dc5d47da21f87"
+      },
+      {
+        "path": "public/audio/theme-week.flac",
+        "sha256": "7a1ce96be5bc278aa09cf5301353f74fa07ffb6b8200eac4da506c2e4c6c5d6e"
+      },
+      {
+        "path": "public/audio/theme-week.flac.gz",
+        "sha256": "2c7ba283e8e11eaa584e75b8c7b971f8575490ecb7939c9774a6e57af78c25d7"
+      },
+      {
+        "path": "public/audio/theme-week.wav",
+        "sha256": "43b3a672d030bb77262f1d353dd97c445800c17e7bf0baee32001fc23b9920c2"
+      },
+      {
+        "path": "public/audio/theme.flac",
+        "sha256": "6f0f263197943165f9c164454fdad99410b912b3cb890951768eeffed456ff62"
+      },
+      {
+        "path": "public/audio/theme.flac.gz",
+        "sha256": "f8521e2c721603109f4119be6cc92f0ae1c5aa3ef81d6c25089bc3f0cf2c5951"
+      },
+      {
+        "path": "public/audio/theme.wav",
+        "sha256": "dc5fa5e4bf7775848f44d771ac2ff261e0d3043a8aa8bbbef6dafbb3fbea5909"
+      },
+      {
+        "path": "public/audio/voice-asa-earned-clearance.wav",
+        "sha256": "dceb2927f200d6734829ba34d424d8bc0e06497a038aac7a5c5d9264cc017f7a"
+      },
+      {
+        "path": "public/audio/voice-asa-exposed-crossing.wav",
+        "sha256": "44caac38be4a22a40adc4503195d7632c763df39ec7c586a28c61ff5aca6fd46"
+      },
+      {
+        "path": "public/audio/voice-asa-exposed-receipt.wav",
+        "sha256": "1d5c9f372fc82a72225ec2dd7f210e8dea05dc66a18b61c99dde46e8d2e935f5"
+      },
+      {
+        "path": "public/audio/voice-asa-freight-terms.wav",
+        "sha256": "bc43564753f0987497475a0b2c82a555a66a42de2ff0a20eb352e6b53bb9ca68"
+      },
+      {
+        "path": "public/audio/voice-asa-late-receipt.wav",
+        "sha256": "f81400575eb7ba9a2f290b36747622b3a2285a4520ed8710b7d0448044576c04"
+      },
+      {
+        "path": "public/audio/voice-asa-motive-exit.wav",
+        "sha256": "995daa08be8e38922b2dd0526956f508375f0a0aae76445aea95d5fc5a09e21f"
+      },
+      {
+        "path": "public/audio/voice-asa-motive-identity.wav",
+        "sha256": "1441550312f795a54960722c33b12a778e5d99c6889929d2979762d282e5d54b"
+      },
+      {
+        "path": "public/audio/voice-asa-motive-survival.wav",
+        "sha256": "28286c98f86f73027b9829582852637078e800588f5875a69894a26789748057"
+      },
+      {
+        "path": "public/audio/voice-asa-private-receipt.wav",
+        "sha256": "4aa45014e3fffe8ba098b1f3b87d905cb3f74a906d4fec0e472a2496ae115616"
+      },
+      {
+        "path": "public/audio/voice-asa-unconfirmed-result.wav",
+        "sha256": "fcf1909238144a856e037c17d855a56f07e6dbfdc825107283705a7617b62023"
+      },
+      {
+        "path": "public/audio/voice-campaign-asa-0e81be1b767b.mp3",
+        "sha256": "e4c0af6457e56c6a4e515a52ee2ce308f883ad9d9cde22cd23bdd93101c309d5"
+      },
+      {
+        "path": "public/audio/voice-campaign-asa-1cb14e9d8928.mp3",
+        "sha256": "3a7f127ad439ceec18d5b596db52c487eba82a4a03df4e3fb06fa979d8e05b50"
+      },
+      {
+        "path": "public/audio/voice-campaign-asa-2badc1c2c563.mp3",
+        "sha256": "fb21d911bce9fb28f61e9a5e573edb2783ba438d1ece1c65429f59e8c4f5c8b7"
+      },
+      {
+        "path": "public/audio/voice-campaign-asa-4886abf2e519.mp3",
+        "sha256": "f534ad8b13ee79332a567eb9b79e0e97d6a7d0637a6efed2e11bef275eb96c0c"
+      },
+      {
+        "path": "public/audio/voice-campaign-asa-85f28e598eb3.mp3",
+        "sha256": "2a7c3dddf780d03bd72e9f5c4af0c1a17f18519228122786a9ad72330a6bf621"
+      },
+      {
+        "path": "public/audio/voice-campaign-asa-8b96bfc8114a.mp3",
+        "sha256": "7229156cbab82ae01ad090aad563b65bc00b7e78de7df8e606f725cb71757513"
+      },
+      {
+        "path": "public/audio/voice-campaign-asa-d6b69d9d670c.mp3",
+        "sha256": "e2c217804a5c787120edc60f46b8642132e74457dd568ba4d202fecb75ca644b"
+      },
+      {
+        "path": "public/audio/voice-campaign-asa-de5224a38bd1.mp3",
+        "sha256": "fc6f15c1786bd1198b1f4f14a36bd6236b0eafbf54c3d508ffe5bfc5dcb90e2c"
+      },
+      {
+        "path": "public/audio/voice-campaign-asa-f4168ab58dd9.mp3",
+        "sha256": "33e483d921dad4561fbaeb4ddbd8470a24e7e33e6fdacb463827161eb6f8ac49"
+      },
+      {
+        "path": "public/audio/voice-campaign-dispatcher-05ca9f853d11.mp3",
+        "sha256": "5a6773738760d9dabda1a969d5dda60315de19b24e27a47a517e46468e9bcae2"
+      },
+      {
+        "path": "public/audio/voice-campaign-dispatcher-0736bc19689f.mp3",
+        "sha256": "14f28e747025e5a56ffbbdaf100522c2ac127029c72b4c27a971f7841c5fc250"
+      },
+      {
+        "path": "public/audio/voice-campaign-dispatcher-094917ba4d45.mp3",
+        "sha256": "9cc30a133c5c2e2da26c4da3ddd4d7e7edbd186d3b97044a5d6e1b3f04ff3882"
+      },
+      {
+        "path": "public/audio/voice-campaign-dispatcher-0ab16b5254b9.mp3",
+        "sha256": "b679a8a8b6a796b8d509e533008bdd209d1da9ae2adcedb52cc57e2e2aa4e328"
+      },
+      {
+        "path": "public/audio/voice-campaign-dispatcher-15916f6b7de0.mp3",
+        "sha256": "1a3c0bf2131fb1c724210ef15cb376a343f6d63d25972a12bedf689a04544d38"
+      },
+      {
+        "path": "public/audio/voice-campaign-dispatcher-2d3cd37c57b9.mp3",
+        "sha256": "3263da71b327b3cf23ac0d5cfa2645ced617b83bc9bbf7fdeb336943781b1c51"
+      },
+      {
+        "path": "public/audio/voice-campaign-dispatcher-33a79deedbfe.mp3",
+        "sha256": "ec7a78141dd742db17a9c51ef0f00a0aab6a44c059a3882e05e6404750a3cbc4"
+      },
+      {
+        "path": "public/audio/voice-campaign-dispatcher-83c284401881.mp3",
+        "sha256": "6fee72c7f4f8bdda1af8587fdac725b0bd92f9e97ed15283197bd423025c506c"
+      },
+      {
+        "path": "public/audio/voice-campaign-dispatcher-8bf37188cd15.mp3",
+        "sha256": "0426a0650109b78140aec01cf6162f64550092c4194abeedb50da0d033ef3311"
+      },
+      {
+        "path": "public/audio/voice-campaign-dispatcher-e5e1ea7d5a4a.mp3",
+        "sha256": "891408a196c7e75baf262d2ae4276470eb0c56195348dbb399c4de51f7372fa9"
+      },
+      {
+        "path": "public/audio/voice-campaign-dispatcher-e8cadae1434a.mp3",
+        "sha256": "dc49a847e0f1140456b8b0351cdbf596eb3b1bbeb56aa6da7d6b96495a18557a"
+      },
+      {
+        "path": "public/audio/voice-campaign-dispatcher-fc3a0c281ee2.mp3",
+        "sha256": "6a20aad02f5719bf89333aacdf71b6aba3fc3a23937c117e9f04e4a76f94ee5c"
+      },
+      {
+        "path": "public/audio/voice-campaign-edda-07130fdc6f54.mp3",
+        "sha256": "e86b5cf3b3bbe92385263566bff559bf468dd527be60ba312a553ba80e0a7830"
+      },
+      {
+        "path": "public/audio/voice-campaign-edda-0b7889bba8b9.mp3",
+        "sha256": "57d0fe96dac847bd266528b9bd7c830b88f13e3fe829628b0e02046dfbb07021"
+      },
+      {
+        "path": "public/audio/voice-campaign-edda-33e6d2a6a428.mp3",
+        "sha256": "f0817a065655ff943ae645dc8bef2cfc7c4b37f7ec6c1d85e8fbb9afdb3ba7dc"
+      },
+      {
+        "path": "public/audio/voice-campaign-edda-3ba7652c8a59.mp3",
+        "sha256": "daab9e4f509de9d0d6d7b17b53465bae1af2e9e5526e6e93bf586cf2a52dd795"
+      },
+      {
+        "path": "public/audio/voice-campaign-edda-402c00c4c4d2.mp3",
+        "sha256": "fc645ba5bf263ead8a544997d7cf5a47cd56ea427db4cfa81b1b2bd4f3f570ce"
+      },
+      {
+        "path": "public/audio/voice-campaign-edda-4c4a033f7b14.mp3",
+        "sha256": "95f302b8fae710481fe3cc461bb089d6468d4038316f775541416e954d08e3f2"
+      },
+      {
+        "path": "public/audio/voice-campaign-edda-517f9439fca0.mp3",
+        "sha256": "4ec02304a758e02ad997fcf34506e8deea13d722b80888255d27bd5bd6c3791a"
+      },
+      {
+        "path": "public/audio/voice-campaign-edda-5d03c165abf4.mp3",
+        "sha256": "f020ad7dd035c2a39e1369a9f7cfab7da46b5a9c5eccd56722437360c1a58a44"
+      },
+      {
+        "path": "public/audio/voice-campaign-edda-6b0cccd1941b.mp3",
+        "sha256": "0efb97fe3333bd09d1721ffd3d844257002b971b857df4a09b5c1ab44ea5d614"
+      },
+      {
+        "path": "public/audio/voice-campaign-edda-6e522a26c358.mp3",
+        "sha256": "d3582f2b4c7d49c5d8ba96f981ddc2257c977e80d50a751728fd05c025af7423"
+      },
+      {
+        "path": "public/audio/voice-campaign-edda-7b79a3e4c6d0.mp3",
+        "sha256": "da6bd7399cddca2bce5414237459d9ae14593668bcafacb995925f1b055c77b7"
+      },
+      {
+        "path": "public/audio/voice-campaign-edda-99446ae38d6d.mp3",
+        "sha256": "ce433f6fd09134ac238bc0891a0acf78ea8cc700eef17d85e17482955277d83b"
+      },
+      {
+        "path": "public/audio/voice-campaign-edda-a4ad65c73326.mp3",
+        "sha256": "a13d21855c1a92ba3df8cc7b60f15066fa161c767a3a6771a01761c6c3c338f5"
+      },
+      {
+        "path": "public/audio/voice-campaign-edda-a80db8f505be.mp3",
+        "sha256": "cb6593fc291adbc2e8cbe7c7f2db97fcfdeda59a70e6297fde4fff5ac845a7e0"
+      },
+      {
+        "path": "public/audio/voice-campaign-edda-a8fa6fb017b5.mp3",
+        "sha256": "06df32373b4d143897186813f8f4bc03afd86df9548c5292ec2358beb9f521b6"
+      },
+      {
+        "path": "public/audio/voice-campaign-edda-acdfea67c0a0.mp3",
+        "sha256": "87c088a6887c7367e5f9698aeb799180b3c7d56305bf8420f56d55ffff275c08"
+      },
+      {
+        "path": "public/audio/voice-campaign-edda-b7469ce19b81.mp3",
+        "sha256": "63c32e4b0d3c86a75e81104926fa027280ac74928c794db2a1affcc858ce73a6"
+      },
+      {
+        "path": "public/audio/voice-campaign-edda-bb85ccac0d99.mp3",
+        "sha256": "5616b53bf091aae03ebdc926c7c4cbd037606b769f3469fd6996fcf615ef01a9"
+      },
+      {
+        "path": "public/audio/voice-campaign-edda-bcee1bb4ec5b.mp3",
+        "sha256": "a2bf5517cf90456264f499a598ecf689ec22433e97c0c1e3929b6f73c7a67cf2"
+      },
+      {
+        "path": "public/audio/voice-campaign-edda-cf0b92febd12.mp3",
+        "sha256": "36591b90433abe562710609b2e164b894ec1529a4dd02e3d878277f146b9dc10"
+      },
+      {
+        "path": "public/audio/voice-campaign-edda-d4b034abcf9f.mp3",
+        "sha256": "94d6f506916aab224748e7213dd4a874f376d1f9053a609fa52ae27c68e90e78"
+      },
+      {
+        "path": "public/audio/voice-campaign-edda-db9226a2fcd3.mp3",
+        "sha256": "128520f8fea92024dff271cdb81b77c4d645eb497a0109423723d306b11dde09"
+      },
+      {
+        "path": "public/audio/voice-campaign-edda-de8cf8a1dc03.mp3",
+        "sha256": "5c7ae67fff5463e282e3d3333d83e97160109bc1600ec58b629ce07122537830"
+      },
+      {
+        "path": "public/audio/voice-campaign-edda-ea88bd84a4c4.mp3",
+        "sha256": "ef2ab5013d4482568bfc7db540b4e20fbdd7ffaed0f075c3c02bd2fac61495c9"
+      },
+      {
+        "path": "public/audio/voice-campaign-edda-ee8d63542999.mp3",
+        "sha256": "648815b3540ed03c3223d411bfb0870f3340944bee2852969e6145435ed63a0b"
+      },
+      {
+        "path": "public/audio/voice-campaign-edda-f9a9ab61ae78.mp3",
+        "sha256": "9879a4517243c93a3abaea6f15c30df384bda69457f8a873979e17fe33131853"
+      },
+      {
+        "path": "public/audio/voice-campaign-edda-f9bf7fe7c969.mp3",
+        "sha256": "1ad0959498913c38cb67ad75af258579b06090d0a041d5df337004c99eadc27b"
+      },
+      {
+        "path": "public/audio/voice-campaign-edda-fcdc71e74fea.mp3",
+        "sha256": "40180169f98e102090d3b55ee3f84f6dcad5edcfac459ebc7da1fa3529548f5c"
+      },
+      {
+        "path": "public/audio/voice-campaign-ives-071bb773ee1d.mp3",
+        "sha256": "9abc126f69eae16f396661c64ad20c4831fbb83fba8679f590f90fcba7a301a5"
+      },
+      {
+        "path": "public/audio/voice-campaign-ives-27bd077273a1.mp3",
+        "sha256": "d18973aa5738ace46e1e4ca78fd655e72c7c17d435221b4b3249a661f514b51a"
+      },
+      {
+        "path": "public/audio/voice-campaign-ives-61d366ec9772.mp3",
+        "sha256": "c993df0f434c90bdf3dc34b166fe75f1ef218a74c8ee749348127efa2470c35e"
+      },
+      {
+        "path": "public/audio/voice-campaign-ives-709c45808ce6.mp3",
+        "sha256": "6d49b9caa00f024360a90e082d6167d2f83d43396f8068cf0d08863b43f179a4"
+      },
+      {
+        "path": "public/audio/voice-campaign-ives-7117058514fc.mp3",
+        "sha256": "5fc51d5e6b72a37bc4f5ef67afdba231cb9a0fc7d59a317e6de71878193022cc"
+      },
+      {
+        "path": "public/audio/voice-campaign-ives-9317a0ee9650.mp3",
+        "sha256": "b1302959552fb5f1db126cbbe739892e2355afbb8e85cb17322a53dd6366771d"
+      },
+      {
+        "path": "public/audio/voice-campaign-ives-a94db9de69a3.mp3",
+        "sha256": "a119a9a99a1e8838df0b5ce71c1fe79fc9a5e61496bca69722e61a5fcc9c6ea2"
+      },
+      {
+        "path": "public/audio/voice-campaign-ives-act2-archive-door-performance.mp3",
+        "sha256": "a3b7382d63e31d3c6663dfa703de50dd583ce58a02c8bed72f6b4bf4df8d7d37"
+      },
+      {
+        "path": "public/audio/voice-campaign-ives-c0151cd75fa1.mp3",
+        "sha256": "55df719d23a57ad8e09cd53045985b494b1ae09adce6c5052391c1207b984b16"
+      },
+      {
+        "path": "public/audio/voice-campaign-ives-c0f98673baa3.mp3",
+        "sha256": "41fac1b875a07e9ba3d72a315a600d0463d51b3f0cc0577530a9371da383465b"
+      },
+      {
+        "path": "public/audio/voice-campaign-ives-hearing-challenge-performance.mp3",
+        "sha256": "098b4820461ecb996f2da469d7ce513916f773506ebb74e4ce8dab2f9363ad8b"
+      },
+      {
+        "path": "public/audio/voice-campaign-ives-kept-name-performance.mp3",
+        "sha256": "0a4d4c93e6605fa8937dbb0f320c8edf2991c0811fe161deaa5ae63b58bf7fa4"
+      },
+      {
+        "path": "public/audio/voice-campaign-ives-listed-performance.mp3",
+        "sha256": "190a3c035e6fb392d55c1845dfa740975449d31de052a5084bf5ae30242efdfe"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-009cf5acd8f3.mp3",
+        "sha256": "39d5e184cdff5907aed90598e41619937f6c385134de8f9368b7488b644c91a0"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-05464a5d2167.mp3",
+        "sha256": "7c13e447c693a74c68eb6214a4710717bad45f78825111239e6686a9549b63c5"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-0f0f6ae149a0.mp3",
+        "sha256": "7a631d2bd15ddd531e792bf4d5afa1dd8fe428fb8e702bbd5c488caeceafe570"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-10b6e71a11eb.mp3",
+        "sha256": "512593cc157650d5a50be2f01fde4159063ab9c88b10237848f34f9987a41176"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-12d595f0fd1a.mp3",
+        "sha256": "adb203cf8acc1189d2e4db73e801f81d6b715049ff2135a68de972ecd4ba328b"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-1903a3d3a421.mp3",
+        "sha256": "3ef85b7ef5a09e0a6cb7cbbed23127ba032942a0dd1dc019aaa8b68a49567dc5"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-25c53b99936f.mp3",
+        "sha256": "5af3c78dd2a90a6c91139e5686b3846d209516a670e5440e190bc8e86e05a5ef"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-29ee7c589eed.mp3",
+        "sha256": "1c92c0bb5f48a88263f89ccf9f34247058661c2c30b493d7e7b635800c9ad1c9"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-2ca147e47255.mp3",
+        "sha256": "b2986af3f937bf2a9e87cbdb40a5814c6a990a78be7436378c55c2d10646979c"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-35739b2889fc.mp3",
+        "sha256": "cfbdeff9ff0b5125864db665898bbd7996c8a63c4b7bfaf413e30985ac4be648"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-3914d401fb83.mp3",
+        "sha256": "dedf3c7e841870c6d32a4ea7c0aee46f9a49888892ae43db621b2c8fb93208d6"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-438346af4765.mp3",
+        "sha256": "c8991bb55f649ddfde31e970bcd41fb11a1a9a32cfe30a15f9f69a12a18fa4fd"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-636ce1c1a709.mp3",
+        "sha256": "8e4d0c36146eb39d0b89d691a127158ea752fa53e5dbf1056fbbd895a3888e3f"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-684866ad9287.mp3",
+        "sha256": "c17398b68fa6859b3adf96a4af7fa7c92e96f53cf99489463b8178f0a5119cf0"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-871f7e54aee7.mp3",
+        "sha256": "47a7121034d6dce8c6801b012c77be605501744508e816cf7c071986fd93b8ac"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-899d4ba5ecfb.mp3",
+        "sha256": "efc7a1dfac22ba92865fc4a7725233f4d4312576b99cb82a7e02ddcaf33b617e"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-8b5f1b44656f.mp3",
+        "sha256": "8ea9c0b456a09502151f1d3352d105356d3e81b42c93c96f6a49253117502ab6"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-a2e9087805ff.mp3",
+        "sha256": "c668497bc2724c18c43f4ddee2f9b1a123c3d5cb4024773c5dfe6898228df420"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-a71768b4e3a3.mp3",
+        "sha256": "62a53610d11be58d897784f73d8ca2154b21166edde4a066806b2528bf73688a"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-b952a4b4f4eb.mp3",
+        "sha256": "4753571ed0cd9bc28e8075d218938bf8afb39cc70904635aa5a1409b429359f9"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-c53b950b1cbc.mp3",
+        "sha256": "409b1a2d89d426cd14088abb4c58d5306263933a38bcf5ebd38ef01e520b5a9d"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-c885cfd984a7.mp3",
+        "sha256": "9b22b76769c3ad11de5e2904ab1fe638b15ee08fdd31820a737df3f6fafcf38c"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-d547c33558df.mp3",
+        "sha256": "4441b1b6c27dab341245aa4f74723947232855ca9532df7be658ad5a0f4deafc"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-d8fb4323e19b.mp3",
+        "sha256": "a86bc8121303cf33d39f0b709830eb7f49bb41abb93da204e3811586253d1f5c"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-dd35539e0644.mp3",
+        "sha256": "19ddf5cddcc0196175d19a58134d2ee87f2a7b5f006d94c96761848442ea8676"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-e4660f52938f.mp3",
+        "sha256": "27e418208b0ab1d4c7dbf9d3e25e051cdf37e1e4cd64663df7c5922bea3ffdbb"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-e8022742ad26.mp3",
+        "sha256": "1dc1eb6e6e2f1203c290800caedda3a1ea0a5cffa3b59b628f449492f8d5f090"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-f001a675c451.mp3",
+        "sha256": "c9cdfb49162cff0a08bb2ab7cddca6a5a1936059832c3e7dbbdb3076daff39c9"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-f10a83941fef.mp3",
+        "sha256": "e26bec8cd2890373e3d12e956dd0dc6cb606c03ce62df7d354ca24463b0b97b5"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-f62283c66903.mp3",
+        "sha256": "61b5f473776a35f009c55a9dc643e200ffdee4c77688a0d82d5374f165216de7"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-f829eb68f234.mp3",
+        "sha256": "181bdff21515e3dd7244fc8d2346fdb3125ef84361a6abc88079012fc96d20dd"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-f91cd82e5369.mp3",
+        "sha256": "2883f6a9b73a82d51fba21c804204ddca0097616e3f81fd95afb2758aec33827"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-fd97386dd24d.mp3",
+        "sha256": "f5fd15d23508830c0e9675723e08e5c831f35757488aabc73d3991c6aacaf967"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-terms-21d133ddba35.mp3",
+        "sha256": "549312d0e2b5b47e03aebe8ab05a341a359b39c3a682ca68583173315889d590"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-terms-3d29183560fe.mp3",
+        "sha256": "4557a7747acbf489a2268fc4f4d2d0905cd35a7ed9a44c80d1210d5431f50cf6"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-terms-4d6f6c624ea7.mp3",
+        "sha256": "23199d464878ec590012510e09b3debe15a2c36683af0758f7677491fb57aa40"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-terms-84e2cc909f99.mp3",
+        "sha256": "417ad4ca0c452e1b009e4251e29583b66c6d1b1bad4906e66ac78fbbe2550fcd"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-terms-89370c1ffbd4.mp3",
+        "sha256": "e471540d77846472f0a19c4e84462c631c5881c3f6e5b5044052eb4c629d2904"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-terms-9eb4b102fa0b.mp3",
+        "sha256": "dc2b5f08e108928001a48bd7d88bc96289dd62ad5bea48bf865a8797b346ee90"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-terms-acd344b4f340.mp3",
+        "sha256": "1e90ea2de492160f2d733b839c26db8ae2156023374e1f4cce66af682f7622ce"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-terms-b055761e9afc.mp3",
+        "sha256": "a46240a699544e3f25351fc972e7ec4eabf73765f62ddb191bb2a067536aedac"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-terms-b12348e1925b.mp3",
+        "sha256": "b0ad4387d58a1266d98f9036d6946c77c0302814a98d6046f6483158c3644d8c"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-terms-c2ea702b5503.mp3",
+        "sha256": "fdaf1d8a23a25007656b7a4455d78d7bdf4a7834f476879939318307c0e08698"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-terms-c36a52eb86fe.mp3",
+        "sha256": "2bb7e82a776ec3702a9660eb07f5832374bc8e487cbb23e4ffb12f2d5641d291"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-terms-cae166cd5d8e.mp3",
+        "sha256": "1ea8d782787706df4e90981a60ba9174ed0bc585b62bba9935cca8e52d2434bd"
+      },
+      {
+        "path": "public/audio/voice-campaign-kerr-terms-e69c29cfbc36.mp3",
+        "sha256": "afaf7ed5ebe2a228f9dd26639941c3d95081a20c1b903245d10413bbf3c5bde2"
+      },
+      {
+        "path": "public/audio/voice-campaign-lumen-boundary-performance.mp3",
+        "sha256": "9d0d62aaee31670581742ed70b8668d5f656be77cf1a04d479b052f1b1bb9c36"
+      },
+      {
+        "path": "public/audio/voice-campaign-mara-167e67a571d6.mp3",
+        "sha256": "371529ec3774a0b8e44d852db3066d612f41bd9738ac8891bd17d0d83ddab3fb"
+      },
+      {
+        "path": "public/audio/voice-campaign-mara-18de895b94ce.mp3",
+        "sha256": "5649cd6c402a4154e10b27fe8c5d85990fa1c04843bf390e1729bf324357da0a"
+      },
+      {
+        "path": "public/audio/voice-campaign-mara-1b139c158594.mp3",
+        "sha256": "37f7f0e9b59ed466fc86911578884d96e72472a7d46410db955723d8c78b74e1"
+      },
+      {
+        "path": "public/audio/voice-campaign-mara-5ba01af16fc4.mp3",
+        "sha256": "c90811871b567d3a4750e5bcb50d07e4df7bccf2c727ea306581a68281fac9a6"
+      },
+      {
+        "path": "public/audio/voice-campaign-mara-6fa5c12c1612.mp3",
+        "sha256": "d1a98a32690f329372d05739c534ccecf9ca4098bbd3e6c24d91510277bb00c9"
+      },
+      {
+        "path": "public/audio/voice-campaign-mara-7d7228387866.mp3",
+        "sha256": "8c90e406a098144320cd840aa79d24ab406cd22c7963ef634cb7958c1d9e364f"
+      },
+      {
+        "path": "public/audio/voice-campaign-mara-8bce931b08e0.mp3",
+        "sha256": "3bd359413b0d652d2274d2422b1705b6de10111220e4c4bad775e178aad09e14"
+      },
+      {
+        "path": "public/audio/voice-campaign-mara-9cbc15df9e14.mp3",
+        "sha256": "355ca9e8f318ea58e9bc3285cfc2223e53ab998e7295b89ce3196250ad391613"
+      },
+      {
+        "path": "public/audio/voice-campaign-mara-a34d49ceb13d.mp3",
+        "sha256": "068b981fdc0fb4b02c12480f66471244fe7d628ed79c0a02f2bf4feea11d6823"
+      },
+      {
+        "path": "public/audio/voice-campaign-mara-account-17ad848ae272.mp3",
+        "sha256": "aeed73c1cca816caf1957a27434be269af9b5de30b4b3ad5ccc4eaabbde30ad0"
+      },
+      {
+        "path": "public/audio/voice-campaign-mara-account-19e71532ae30.mp3",
+        "sha256": "08dc1fa15574d695b5a3dc96a18b90327b6eef8c38945b7e2874a56559de0471"
+      },
+      {
+        "path": "public/audio/voice-campaign-mara-account-297102e9173d.mp3",
+        "sha256": "8cb24d362aceb7a59176b0121bf98e0d5621436e1e41f7da503e06b07aba794d"
+      },
+      {
+        "path": "public/audio/voice-campaign-mara-account-34789ac8f687.mp3",
+        "sha256": "46c833744e0bceaf4aa285ce2c1b4986b754666a707391a8168ee92f3b1678f7"
+      },
+      {
+        "path": "public/audio/voice-campaign-mara-account-3aed03ac8227.mp3",
+        "sha256": "0b427c02e750b566d4a2e7c9df15d584f4fd54b82a2d3cb09f7b93edcc23c9d0"
+      },
+      {
+        "path": "public/audio/voice-campaign-mara-account-4fb30a767f10.mp3",
+        "sha256": "a20168c37c1e0e908f790754fef530ffa47edf9a9cba0da7516a386d90727e51"
+      },
+      {
+        "path": "public/audio/voice-campaign-mara-account-6665608553f7.mp3",
+        "sha256": "0a8b58cba0a9bbb23aa9c5716351e0da1356d1d23a5ca5c143d3ddeaa9308570"
+      },
+      {
+        "path": "public/audio/voice-campaign-mara-account-766693e6f9ac.mp3",
+        "sha256": "dd46bfddbb1d54b8c50fbedf7036b6eee84c1b6446be6aed39f0548516c370cc"
+      },
+      {
+        "path": "public/audio/voice-campaign-mara-account-91141bd45474.mp3",
+        "sha256": "5e7dfb000d89e81255e9cc6c426ff233e3529c00a8594b4b6c9da90468e55619"
+      },
+      {
+        "path": "public/audio/voice-campaign-mara-account-9538a155dfe3.mp3",
+        "sha256": "20e41742ce360ee00d389bce29e04c0e77faf0e0c241c77b3e000a1c9d66aac6"
+      },
+      {
+        "path": "public/audio/voice-campaign-mara-account-9a97bdb6e1f9.mp3",
+        "sha256": "7875231358eeb5907c31a0fbe4084351d6c406a99b974921756e5392b3dfcb8f"
+      },
+      {
+        "path": "public/audio/voice-campaign-mara-account-9cfab5a46336.mp3",
+        "sha256": "c316675de3c27cc0d2e7006e43f05597c2e6dbe501a3261407f910332499f4d6"
+      },
+      {
+        "path": "public/audio/voice-campaign-mara-account-abad0fc34525.mp3",
+        "sha256": "02239a7924749eb9c92b95bdb74fd14bdbb6093ec7879b45daaa9b5787c701f3"
+      },
+      {
+        "path": "public/audio/voice-campaign-mara-account-c6da691e4ed7.mp3",
+        "sha256": "397ca73eb1615da752172c2c7f153364212ba863b714f9e26558c265a45d13ff"
+      },
+      {
+        "path": "public/audio/voice-campaign-mara-account-ee3ba0f2e682.mp3",
+        "sha256": "c971c370f420f490736a4bc65b2e136c5af1b1362c318eabdc2ff1ec6c51f50d"
+      },
+      {
+        "path": "public/audio/voice-campaign-mara-dfe90cca5bfe.mp3",
+        "sha256": "71037f96e225373f1c54a9f6cd54317f91c15818a2d115c7434e2803a1fa80b1"
+      },
+      {
+        "path": "public/audio/voice-campaign-mara-ed6c9a89a527.mp3",
+        "sha256": "8a9e93ccf22f9dadce8d4d6897f617fe54015be9828bad2577dc1e532de01d08"
+      },
+      {
+        "path": "public/audio/voice-campaign-mara-f8abaa9e676e.mp3",
+        "sha256": "e2d82113661efaea3aee0e7c6dc1f7954df141c78f3d884649f90565b25e1915"
+      },
+      {
+        "path": "public/audio/voice-campaign-mara-revelation-performance.mp3",
+        "sha256": "c862782aa863dea10d16fa4740542283d252475332366cba2be1efc931c3af58"
+      },
+      {
+        "path": "public/audio/voice-campaign-mara-why-performance.mp3",
+        "sha256": "d329fdf65e5d6efbeeedc12082e96b84191f32cece91150a8a561aa09eade44f"
+      },
+      {
+        "path": "public/audio/voice-campaign-masked-attendant-8418f249bf02.mp3",
+        "sha256": "bece808eb3cb1b0da8dfd4a95b92fa0de76633700768a2351d0dd54b2194651e"
+      },
+      {
+        "path": "public/audio/voice-campaign-masked-attendant-9186666a84ba.mp3",
+        "sha256": "52dde4e756a9ec4db4069482f4e501d1917a7be8847ac0f453457329df6d2d8c"
+      },
+      {
+        "path": "public/audio/voice-campaign-mechanic-2d8a9efa667f.mp3",
+        "sha256": "64ded1d9253c4ac34d9bbed17098db6b8b8fb306395f9bca660047b44a2f29cb"
+      },
+      {
+        "path": "public/audio/voice-campaign-mechanic-9395de375f4f.mp3",
+        "sha256": "fe77e8b9f8caa05061cb7e003e69a06d33c30fc16409cf2be4b8ad428d681b38"
+      },
+      {
+        "path": "public/audio/voice-campaign-multiline-chapel-1.mp3",
+        "sha256": "e4c40f81e7762b4347b607a864f91fe1b5dc9f2a5db1cae8632fb6d51df21df5"
+      },
+      {
+        "path": "public/audio/voice-campaign-multiline-chapel-2.mp3",
+        "sha256": "6ec77551732e01d5f0e8a3a0b0deb46a4d06aaf327e56e183d16eeacd5b565be"
+      },
+      {
+        "path": "public/audio/voice-campaign-multiline-lumen-deal-1.mp3",
+        "sha256": "77dcc4c8516eb4f92d10d15d00a371ccd9643bbee874f51d359ea9fd03c1f14d"
+      },
+      {
+        "path": "public/audio/voice-campaign-multiline-lumen-deal-2.mp3",
+        "sha256": "d0dbc3c43a10629e34629863bf182209824cc2b9a62122d9d31391eb0e7adc85"
+      },
+      {
+        "path": "public/audio/voice-campaign-nia-pell-11dcdea73215.mp3",
+        "sha256": "929d0285657a1a093690a088acde02d6c97fa44ec8479de1a684501c80d68d97"
+      },
+      {
+        "path": "public/audio/voice-campaign-nia-pell-28180cc2b39c.mp3",
+        "sha256": "b6b3f443a3092bfceac429cd8e3ced1719f3bdb1ff36843ed64c0fb96064b9b7"
+      },
+      {
+        "path": "public/audio/voice-campaign-nia-pell-292f0e2b6351.mp3",
+        "sha256": "eb3a42392ab92b53d7f7d652eb27680fcf712fefceaf6fcd0464a81362d3158b"
+      },
+      {
+        "path": "public/audio/voice-campaign-nia-pell-5b29f7d4a657.mp3",
+        "sha256": "b3f1ae6a7a8b23cdbfbcd8d680f8781a0e96e6191ea709c76b919ea85dec6faa"
+      },
+      {
+        "path": "public/audio/voice-campaign-nia-pell-9691a2f29041.mp3",
+        "sha256": "7340bb37e8b4aec20373ec9055ad6452ab79aa6f6872276d9143e56ecfc10360"
+      },
+      {
+        "path": "public/audio/voice-campaign-nia-pell-97c62dc0bb78.mp3",
+        "sha256": "a9908c2b27e63aa294de6485517f07cccadd476d26a32e356a9e54f957184edb"
+      },
+      {
+        "path": "public/audio/voice-campaign-nia-pell-bea4f8df04a1.mp3",
+        "sha256": "d50dcd71f3879e15d3a7c9330a7fad8da39d4324f327f05e2098b843260d609d"
+      },
+      {
+        "path": "public/audio/voice-campaign-nia-pell-c987f8a09159.mp3",
+        "sha256": "de1327f14fbdb4d5511b9fb329c6141a8c72c80de007b4c3d04cfc83db7b4c72"
+      },
+      {
+        "path": "public/audio/voice-campaign-nia-pell-d5e530c55a4c.mp3",
+        "sha256": "1d5e2a9f8fc56d0162da93bd4138dda9011a977530de80d9d2ace31cbd345796"
+      },
+      {
+        "path": "public/audio/voice-campaign-nia-pell-d8b7b7d16f6e.mp3",
+        "sha256": "3d362218058bd5288b2b69ddeee4cf97fdaf43b00e194acbb9bcaba5d3873dd1"
+      },
+      {
+        "path": "public/audio/voice-campaign-nia-pell-ec820e69b73c.mp3",
+        "sha256": "068c040c5b91cc85153fb6cbb8fc316fff47d14011ecb738d25a6c36dc5d767b"
+      },
+      {
+        "path": "public/audio/voice-campaign-nia-terms-performance.mp3",
+        "sha256": "b54abf62307a52b6ee0b2582bc0a86ba3dce476ea75f33f11aa6889104d75c0a"
+      },
+      {
+        "path": "public/audio/voice-campaign-orderly-196a881f1c95.mp3",
+        "sha256": "16c6f87e33ea4c5e3168d095b9523459e53172f9080c7b3282941588b6968909"
+      },
+      {
+        "path": "public/audio/voice-campaign-orderly-cc082ea4de2f.mp3",
+        "sha256": "2b1e52ce01154786ecec5c1164d5956a3757a97f06a160327747f68ac67fa932"
+      },
+      {
+        "path": "public/audio/voice-campaign-quill-0d361f81e1bf.mp3",
+        "sha256": "8c1ec638fd420b003fe37282a24add1a63a120474d60841af9fed1c7641e6908"
+      },
+      {
+        "path": "public/audio/voice-campaign-quill-2ab424110b96.mp3",
+        "sha256": "a18017ec152a4c7a3b8b117ea10a4fc2a3bdfaf3d2e8873636e2650b20857359"
+      },
+      {
+        "path": "public/audio/voice-campaign-quill-2b6a39f58b92.mp3",
+        "sha256": "0780d244337ebbacbd6f2d2e91b25475e2c9baba88a030e426f268ef93b3481c"
+      },
+      {
+        "path": "public/audio/voice-campaign-quill-39284d611815.mp3",
+        "sha256": "b6b94e2251b55003db5668976e5833f9a951d11c05236317f72bdaa9c117c73b"
+      },
+      {
+        "path": "public/audio/voice-campaign-quill-3b5fe2def65d.mp3",
+        "sha256": "8219b83b69a0f1315032bffb9b71a9028e8be005746d31137fde46aa16641148"
+      },
+      {
+        "path": "public/audio/voice-campaign-quill-3b6151a19c29.mp3",
+        "sha256": "c2b7360328990aed84deaab9fa2a3d59805dd859e1c5029d57f9d13e74f47ba6"
+      },
+      {
+        "path": "public/audio/voice-campaign-quill-3be212ca911c.mp3",
+        "sha256": "1170f255663d5b29e2790cda54825c4e7a7074437cb0a903118d5c1e9cc35be2"
+      },
+      {
+        "path": "public/audio/voice-campaign-quill-41a608e4e7c2.mp3",
+        "sha256": "7f88150386c3930b46fad28c314489419b0a25b19d54a3837c142c9401445d8e"
+      },
+      {
+        "path": "public/audio/voice-campaign-quill-45259fa18cc2.mp3",
+        "sha256": "24b269b294ce26d4ab900862ca00be5be9e2478d16edb3067570e1d6019ee58d"
+      },
+      {
+        "path": "public/audio/voice-campaign-quill-4f2d77910bb8.mp3",
+        "sha256": "b2a8e1e28fe68db9ac917ab0f7523dfa2ec2d2033816dce249be7b024b40ef4b"
+      },
+      {
+        "path": "public/audio/voice-campaign-quill-52ddae919538.mp3",
+        "sha256": "85fd1155d7bb26ddc2a2674a1ac95d876434ebf848cb4592a3b713226436383d"
+      },
+      {
+        "path": "public/audio/voice-campaign-quill-63d3271f8495.mp3",
+        "sha256": "369952d0afae1c944aba4729313c3f6569be7fbeb332978ea53a3fcd8041999b"
+      },
+      {
+        "path": "public/audio/voice-campaign-quill-6a63b21d89c5.mp3",
+        "sha256": "3cdba1eddc2985ceb3c5bcdabf034cf0b0c21be88f2b254e296b15d9b4bac985"
+      },
+      {
+        "path": "public/audio/voice-campaign-quill-8187b9c40d70.mp3",
+        "sha256": "c8416b776db366f9c03149a7b881c83d59ecfb483bfd5f6ec54a9bda676aecd9"
+      },
+      {
+        "path": "public/audio/voice-campaign-quill-83fa5b1deb5a.mp3",
+        "sha256": "d3e9b34331b6c560544aec6d5eb17751d3c92ff36c6ef4f5044d9955509dba13"
+      },
+      {
+        "path": "public/audio/voice-campaign-quill-8888435582e7.mp3",
+        "sha256": "2dc81e7c505f08efb718629edba9e51c3bfc693d68437c77061f61529f029e09"
+      },
+      {
+        "path": "public/audio/voice-campaign-quill-9d1501e686c7.mp3",
+        "sha256": "8322883e6bef2474479872f241a10f26f366d355b95d3328d5cfc41074575839"
+      },
+      {
+        "path": "public/audio/voice-campaign-quill-9f2423d67881.mp3",
+        "sha256": "1ea6387d5ced53cc3b00791647fd724618f150b991c48590162b00927c516e97"
+      },
+      {
+        "path": "public/audio/voice-campaign-quill-bca344313982.mp3",
+        "sha256": "cc953609fee3fb573655f362d121b069ef9e3c3e8f13d8f9f30480c3587f4ee5"
+      },
+      {
+        "path": "public/audio/voice-campaign-quill-c8cfa180c8e3.mp3",
+        "sha256": "a3708106786f1ee9d02ab51f9833fa30807d1a64352c0e074e3a1c93ac97e759"
+      },
+      {
+        "path": "public/audio/voice-campaign-quill-c98855695ec0.mp3",
+        "sha256": "7447074b05822f5aaa201309c4c95434ba45706115ae09f666fa8e38cc40e5cc"
+      },
+      {
+        "path": "public/audio/voice-campaign-quill-cbce468b33c1.mp3",
+        "sha256": "3cd178e1c28aa5b1c69d1768e5f9e1075bbf7ac484a652823a1c0d80a8b956d0"
+      },
+      {
+        "path": "public/audio/voice-campaign-quill-d62c4bfc7196.mp3",
+        "sha256": "c53019e796d9d1d5c91e97f3d780d13ae747cff558741c2fad87d67aa03dfa5d"
+      },
+      {
+        "path": "public/audio/voice-campaign-quill-d65247015b3d.mp3",
+        "sha256": "3ea046363cbde767c9af3b9bc3cf9310189b08a0999fbc11e99a4fc34ef793ac"
+      },
+      {
+        "path": "public/audio/voice-campaign-quill-d754198511c6.mp3",
+        "sha256": "c48c2a6355eb6978d8f39d875e9fccf3262a8eff451207fbca2b0c7e4385bda5"
+      },
+      {
+        "path": "public/audio/voice-campaign-quill-e467cd6ce1d3.mp3",
+        "sha256": "b56801d76e1e17e351b0b732f40f6c986a3ef41d42399283d075922cfdd28f4f"
+      },
+      {
+        "path": "public/audio/voice-campaign-quill-f1850a3ef768.mp3",
+        "sha256": "e056d51e1438effa475705bc60df7f79517e8e182ad2454f861b4acb35288fbb"
+      },
+      {
+        "path": "public/audio/voice-campaign-quill-facb468bbd8c.mp3",
+        "sha256": "d1e3275d2af048bfc544db6aa98ac96390796e7c742ecdd4e0e001577d262b40"
+      },
+      {
+        "path": "public/audio/voice-campaign-ren-40e4d9a95be2.mp3",
+        "sha256": "ecef7b78da2e37c4740f4366efdf66b85bad55f86be610e5c2f0f97f87841df7"
+      },
+      {
+        "path": "public/audio/voice-campaign-ren-4f73bedda5ff.mp3",
+        "sha256": "ab8790819751def2e9985b6fdd70a0593ffec78afac95df257c6017b95716494"
+      },
+      {
+        "path": "public/audio/voice-campaign-ren-7acf21262f21.mp3",
+        "sha256": "adad8163f05240ecb3d1b60615e80a171de679c177e079a60158c3752dfe9693"
+      },
+      {
+        "path": "public/audio/voice-campaign-ren-83ccbd90da95.mp3",
+        "sha256": "37ec61dae3c64aae1cd7725f921033eb4304a682104078a8e532eba9c5fd895c"
+      },
+      {
+        "path": "public/audio/voice-campaign-ren-849965fb2829.mp3",
+        "sha256": "aed3538a98dbf0e102de46472a8226168b3255211102ce4e8c3106b2b6163385"
+      },
+      {
+        "path": "public/audio/voice-campaign-ren-88411fc0eaa0.mp3",
+        "sha256": "e5f1e03aad2d66ca638fe642e7c82ddb7d045344c7a5cbd053deb53312eb4e62"
+      },
+      {
+        "path": "public/audio/voice-campaign-ren-8fe81a46651c.mp3",
+        "sha256": "e0ab441bf134e6f23a9ac139f3f9cf7bdddcc04f6cddb934d8193bcbba42d468"
+      },
+      {
+        "path": "public/audio/voice-campaign-ren-db09fe4a26b0.mp3",
+        "sha256": "1cf6de6ea6a435d11b4593cd5f58e3797d8c24ee724ae7516ed9c3d176b2a123"
+      },
+      {
+        "path": "public/audio/voice-campaign-sera-1031969a7935.mp3",
+        "sha256": "885228941d905cf23bb9c4a85b53438ad267dd69303b97cf9d7e9812827d40b3"
+      },
+      {
+        "path": "public/audio/voice-campaign-sera-3acd9a434593.mp3",
+        "sha256": "78e0801f40aff82173eda711cd8bc6410af0d1c4b0a10f8fc921ad22a8987382"
+      },
+      {
+        "path": "public/audio/voice-campaign-sera-4265e1807135.mp3",
+        "sha256": "10e6e8f583334022940cb64f7d8fbff6c8a601d52ebc61c176ab2ce9d5b6c857"
+      },
+      {
+        "path": "public/audio/voice-campaign-sera-44d1f1b59758.mp3",
+        "sha256": "ae56743201557378ad4e582f40d4650fe3ee42d3e4d07197b11bf4679a81d613"
+      },
+      {
+        "path": "public/audio/voice-campaign-sera-5e173a8c53cb.mp3",
+        "sha256": "d6a3b3ae0cf4b43c3fa5924df8fb1b20aeb0e62db5ac2357456249ace4624c98"
+      },
+      {
+        "path": "public/audio/voice-campaign-sera-865cdf54da9e.mp3",
+        "sha256": "6ec5bad16c2dfdac947360756a71c5a265c92347cabb28d3b9ff20687fce7f3a"
+      },
+      {
+        "path": "public/audio/voice-campaign-sera-aa1069e7abb6.mp3",
+        "sha256": "35ea1b124618cddfd696020ee5c2839df78f90f4a2a2630a74bf4fd50128cc7b"
+      },
+      {
+        "path": "public/audio/voice-campaign-sera-ab673ed27369.mp3",
+        "sha256": "dcf495058b3624bfc578c6d66dbb0b313e96249b88a9deafecc295c360aa78e7"
+      },
+      {
+        "path": "public/audio/voice-campaign-sera-ae46d6d71e83.mp3",
+        "sha256": "a63d038e863c3dc8ab5a607f8537e8f5437a50a933067d5a93fb882366b79e6f"
+      },
+      {
+        "path": "public/audio/voice-campaign-sera-b4f7128c2a13.mp3",
+        "sha256": "866f6620e03fd2ded0a288bff2c5347cc6b19e2554a4ad92129dc5d236b701a3"
+      },
+      {
+        "path": "public/audio/voice-campaign-sera-bd40f64ddfb9.mp3",
+        "sha256": "4d41ae2edb855cfd0b84d05589949a7e5a6afaadd9a89f6e51db3e3643fb08b1"
+      },
+      {
+        "path": "public/audio/voice-campaign-sera-c70735dc83fd.mp3",
+        "sha256": "5131cbb8a55d65325828926de4fa27382fd7f907f9b89afe58f8ab66a1089f60"
+      },
+      {
+        "path": "public/audio/voice-campaign-sera-d9a5680cf8c7.mp3",
+        "sha256": "d30e16598d76eabd414a4a33492c3d296e28fa75015704b0b2f6ae9a8c7370dd"
+      },
+      {
+        "path": "public/audio/voice-campaign-sera-dc4258b3a9d7.mp3",
+        "sha256": "4b1be8b8d1607957e8707a9e1cc4c19babca77dc762938584007147b6f6073dc"
+      },
+      {
+        "path": "public/audio/voice-campaign-sera-names-performance.mp3",
+        "sha256": "c10e28ce32299f61ac375bfd91417481629bb8e75b4e6fe3b223ad21142652ae"
+      },
+      {
+        "path": "public/audio/voice-campaign-sister-lumen-096438ce634b.mp3",
+        "sha256": "303841953c7c012c60eb3c563b585a85004225badd9c38e3e5ffb56ff0bcf5ee"
+      },
+      {
+        "path": "public/audio/voice-campaign-sister-lumen-16d2427d039f.mp3",
+        "sha256": "1c6f3f3b80a58043342cb95e67f30c9ac2de80c84f10614a73ae8e99ada48fa8"
+      },
+      {
+        "path": "public/audio/voice-campaign-sister-lumen-1b822a5834e0.mp3",
+        "sha256": "a93cfca7c0f625a93a05adf4eef897bafc90b9ab38544e1ff1b50d2b5e3787f3"
+      },
+      {
+        "path": "public/audio/voice-campaign-sister-lumen-1d31b215d4c0.mp3",
+        "sha256": "10273d54f3b3d0d761806c4ea22523754e8a159d5268a40404ec8c99660695c6"
+      },
+      {
+        "path": "public/audio/voice-campaign-sister-lumen-2f09629a089e.mp3",
+        "sha256": "2363b1870a8389a2ecfaddd03d3b20924b7746262b8e63fdc2fe67bca7e66b88"
+      },
+      {
+        "path": "public/audio/voice-campaign-sister-lumen-351fd141b54c.mp3",
+        "sha256": "0e798989be0efffc4470017ae7366dfeccafcb124fe7fc3c04d9ffaa7ff0eefc"
+      },
+      {
+        "path": "public/audio/voice-campaign-sister-lumen-390123751d0a.mp3",
+        "sha256": "ce937b0667a77b2e90a15e76f11a07bc88c3361f2804b7fdb32d048471d1d3c6"
+      },
+      {
+        "path": "public/audio/voice-campaign-sister-lumen-39285de09ad7.mp3",
+        "sha256": "1176dab1d23ab2d5c639da0ce50fa19f4eb16046c65ed154945ee67f5510edbc"
+      },
+      {
+        "path": "public/audio/voice-campaign-sister-lumen-39c6cb6305d6.mp3",
+        "sha256": "df7696422fdbdeb15d08117fc7ef4c57d1531eee36622fdb17d82b3e65f7b562"
+      },
+      {
+        "path": "public/audio/voice-campaign-sister-lumen-3e167d1ff04b.mp3",
+        "sha256": "e7627d8bab9c85d79eb648e619409a266ed183057757acf3275ef2bc79168207"
+      },
+      {
+        "path": "public/audio/voice-campaign-sister-lumen-3f761277c259.mp3",
+        "sha256": "1f21747d2239f657b6b98667e64d326bd98cf58c37f0a27cfb2e4d94653a1e02"
+      },
+      {
+        "path": "public/audio/voice-campaign-sister-lumen-42a4c77e877a.mp3",
+        "sha256": "06212e51800e1a00b2c6d595473d77d50d4d7bb7af5609474b3af65fd1071510"
+      },
+      {
+        "path": "public/audio/voice-campaign-sister-lumen-43ce57d8cdbe.mp3",
+        "sha256": "861874c2292d7b5324c3e27bc7ea12f25e528d9874a19821fa25f52002e0597c"
+      },
+      {
+        "path": "public/audio/voice-campaign-sister-lumen-450395d62692.mp3",
+        "sha256": "85ee44c4a2b7770df72b0b8ba9f93b9d72e3fdab8c69252cc1b9f9d8ab170951"
+      },
+      {
+        "path": "public/audio/voice-campaign-sister-lumen-4544c3e30291.mp3",
+        "sha256": "16409e894447fa516007fa5214980fd8d35b4edbe4ba7070450bcbcabee010e0"
+      },
+      {
+        "path": "public/audio/voice-campaign-sister-lumen-557bd2f9d851.mp3",
+        "sha256": "2efb11037f4218ba7dedcc6e6ee9b9519f0247b91ae68450c5655e201f3a7222"
+      },
+      {
+        "path": "public/audio/voice-campaign-sister-lumen-605b0079cbb3.mp3",
+        "sha256": "d03cb73322e70a72d2257631e02d6db928cacd2350d6eeec0a7eb7962bc1ae43"
+      },
+      {
+        "path": "public/audio/voice-campaign-sister-lumen-62cf0bfa124b.mp3",
+        "sha256": "9d8919a542b76468a6d0d936f3d454926154d7e890d10e3bed4856c8ed5414b7"
+      },
+      {
+        "path": "public/audio/voice-campaign-sister-lumen-705922337466.mp3",
+        "sha256": "792858870ac719be22d2c5a3a33f79f20fa08c15b72a73984c716280d4ea4ee5"
+      },
+      {
+        "path": "public/audio/voice-campaign-sister-lumen-845ed726cd2f.mp3",
+        "sha256": "e274525c38ee6b1c835859e1d932715f86b35268607ba112f6d670893da0643d"
+      },
+      {
+        "path": "public/audio/voice-campaign-sister-lumen-88d18fce270c.mp3",
+        "sha256": "359abd9156d6cbeff3c3b4263ddad2e8d4f45d3d12a0bad8780fdbe96cf7a8ad"
+      },
+      {
+        "path": "public/audio/voice-campaign-sister-lumen-902d05ea34c1.mp3",
+        "sha256": "ffd12c63d48a766d10a8525138b03cc27d247b24dac5acdbe4bfcb03a26c9ef0"
+      },
+      {
+        "path": "public/audio/voice-campaign-sister-lumen-a1abd898aca3.mp3",
+        "sha256": "0f71587e14f6b84912891e36dd3edea364288a5eee38f30e3e924b1f93704df9"
+      },
+      {
+        "path": "public/audio/voice-campaign-sister-lumen-a4523a4ec15c.mp3",
+        "sha256": "bc328716a3f4abe140b4448d1e89fd8bb3a65929cdb10870e0dc9e7fc883878c"
+      },
+      {
+        "path": "public/audio/voice-campaign-sister-lumen-ac1616d6fe27.mp3",
+        "sha256": "8e7b65169084de9addfa5991f137dde3344feb100f9f899ab95f299110b38677"
+      },
+      {
+        "path": "public/audio/voice-campaign-sister-lumen-b87596f8bebe.mp3",
+        "sha256": "8f3e0ea1451c87ecb399dd194b54ffac70cb6a8b4352e3ea07c0c53adc7a2ceb"
+      },
+      {
+        "path": "public/audio/voice-campaign-sister-lumen-bd31a2e3e8be.mp3",
+        "sha256": "9448e010b33596f66f1a770cfa7d5bb912449f86edea1bc3275fe9689f6ab00c"
+      },
+      {
+        "path": "public/audio/voice-campaign-sister-lumen-bf2d45489211.mp3",
+        "sha256": "0b5ecee400fd05d95fae901f5f9b0206c720a059f191e272e35d5bac797c5d38"
+      },
+      {
+        "path": "public/audio/voice-campaign-sister-lumen-c0bbc5b77e59.mp3",
+        "sha256": "9d75f952e6bc726c82dee4588abfdece12a3085b8db8c9e5d43cb86feaa3aa93"
+      },
+      {
+        "path": "public/audio/voice-campaign-sister-lumen-c41d638134ed.mp3",
+        "sha256": "d5835f066a4e5f33874e8fe846d89f30a597d69b8f34694db7c14c8a471b81ad"
+      },
+      {
+        "path": "public/audio/voice-campaign-sister-lumen-c42d4ffc2e40.mp3",
+        "sha256": "ade6f70145cfc394a9c477b7370b3cef35bd6b9cc879e2eb2dada38355b94747"
+      },
+      {
+        "path": "public/audio/voice-campaign-sister-lumen-c81c87c79a05.mp3",
+        "sha256": "b0d0ca2ace0d82dd0b709327d47d4e84717bdb42d1501f5941c6462bdd8aedda"
+      },
+      {
+        "path": "public/audio/voice-campaign-sister-lumen-d22f53686c15.mp3",
+        "sha256": "6220e6fc025da1e05db0c1676b76a4b4a7324bc4fa93b1c6efd8237895ce1746"
+      },
+      {
+        "path": "public/audio/voice-campaign-sister-lumen-eb5709fe89c8.mp3",
+        "sha256": "a0ba1f89456e491990dda9a99d2121bf0dbf5c71a54084c4b98d2ac826cc23d0"
+      },
+      {
+        "path": "public/audio/voice-campaign-sister-lumen-ef706d358585.mp3",
+        "sha256": "7e1c1d222c9f64c7be00e79a153a8cfa62d99bec635383cee29bebacea5f0b81"
+      },
+      {
+        "path": "public/audio/voice-campaign-sister-lumen-fb180ed923e4.mp3",
+        "sha256": "c978ca6db824276af1cac393294ebd636be0e0626bf2efa6dd8af72cabe09aee"
+      },
+      {
+        "path": "public/audio/voice-campaign-stallholder-186ef0bc3f48.mp3",
+        "sha256": "21d47d7dd657549f54e0b1a8175c061c04d74df7514c6fec71991a7904444e71"
+      },
+      {
+        "path": "public/audio/voice-campaign-stallholder-47b091d0fd85.mp3",
+        "sha256": "94e980cc7187e9d772f16b3ba51f073460481ad539e3b6cf639dc906b7f9de12"
+      },
+      {
+        "path": "public/audio/voice-campaign-stallholder-4fdd6b715c84.mp3",
+        "sha256": "7fada82bb56c7b1e2e6a05cf493d40961ea9a575989042fb88fab4d729d539c1"
+      },
+      {
+        "path": "public/audio/voice-campaign-stallholder-6cf1cf693aa4.mp3",
+        "sha256": "05a345a03da7e0fd051e49fb16c1e006c9b7b0e7008cabc8fc0dcd54c08595a4"
+      },
+      {
+        "path": "public/audio/voice-campaign-stallholder-86bfd85012a8.mp3",
+        "sha256": "7d2fbca56504961c733cf228ff114d0f9ed6e2153600430586c44a76904a952f"
+      },
+      {
+        "path": "public/audio/voice-edda-archive-access.wav",
+        "sha256": "b9731587e066d3f1d3b05993ad746dd12376d27e6f97a95653b183b5035ff4b3"
+      },
+      {
+        "path": "public/audio/voice-edda-clean-number.wav",
+        "sha256": "e21b52fcb50f8dc9c5b99d0555375970f3e770873c96a06883504309f78ac51b"
+      },
+      {
+        "path": "public/audio/voice-edda-private-work.wav",
+        "sha256": "a1929b36c12df55f9537e3abd57ad60e60be2cf9b70012c4fdd635adceb9d175"
+      },
+      {
+        "path": "public/audio/voice-edda-query-remains.wav",
+        "sha256": "bb4f98ca970f75a103c7fc0151e2511ea66e37c43f4f2a463e4c083b266be045"
+      },
+      {
+        "path": "public/audio/voice-edda-service-key.wav",
+        "sha256": "3dc89b7b44452079da65d4a3c1f01847340c32922f3fd0e275554bf828075ab0"
+      },
+      {
+        "path": "public/audio/voice-edda-source-custody.wav",
+        "sha256": "95191e9b7d03b2cc6c3a46ae33170f68fb528065e8f67abd8b0f773b834b967f"
+      },
+      {
+        "path": "public/audio/voice-edda-staffed-desk.wav",
+        "sha256": "6d105210bc98586749ac327477e6e164bda37b9a63cb623e77576519336ff38b"
+      },
+      {
+        "path": "public/audio/voice-ives-act2-archive-door.wav",
+        "sha256": "20257e7e0069871c40b660e45f45055c0937e187efaaa859d38ac472efd2437f"
+      },
+      {
+        "path": "public/audio/voice-ives-hearing-challenge.wav",
+        "sha256": "f06106a982bd7e45c610f4a6f94a01b295fa7e6d68068c66e3f2ba66645fd89f"
+      },
+      {
+        "path": "public/audio/voice-ives-kept-name.wav",
+        "sha256": "e9952155cbcef4dff1bf95b6673cb316b0d58a2f735060dfeb121ff4e37d7e83"
+      },
+      {
+        "path": "public/audio/voice-ives-listed.wav",
+        "sha256": "615e1f28e700a0d875a126a358c358c28be6edbfe467102b30b21f2f5af83b94"
+      },
+      {
+        "path": "public/audio/voice-kerr-act2-kerr.wav",
+        "sha256": "901979b6e659c8997042e8f817b8dbf91ad9dd61965c8169455d8890ffb7cf52"
+      },
+      {
+        "path": "public/audio/voice-kerr-act2-witness-checkpoint.wav",
+        "sha256": "74518b0c9690215af6c2864b88d883d4465fdb68b20f46346a4edb421e7466b5"
+      },
+      {
+        "path": "public/audio/voice-kerr-boundary.wav",
+        "sha256": "07d190d01c2b4109e83c945d98763b651a590aa0eead16d385d7687765a421eb"
+      },
+      {
+        "path": "public/audio/voice-kerr-canal-question.wav",
+        "sha256": "ed06279afef007a5ed3f2b4d24377c43a5e910d4dae1b2d3d16729adf9f8d878"
+      },
+      {
+        "path": "public/audio/voice-kerr-case-terms.wav",
+        "sha256": "75b807cd94c5f261f5bd0731f2fb107b11f207e7c65651c769db7722c0e200f6"
+      },
+      {
+        "path": "public/audio/voice-kerr-handover-breached.wav",
+        "sha256": "e95bc5e15888311bbcd2010024af1574fe3dcce342e76fdc7a2557b67f92a24e"
+      },
+      {
+        "path": "public/audio/voice-kerr-handover-private.wav",
+        "sha256": "8af1a0d0a9dae118ff22b6db5a39479eb34ec3ca7806450cb5b1fb4390be3d30"
+      },
+      {
+        "path": "public/audio/voice-kerr-handover-registered.wav",
+        "sha256": "515d3679665c0ca48220b017ee73cb140506c880661c1ea2ca3f74758bfc7421"
+      },
+      {
+        "path": "public/audio/voice-kerr-kerr.wav",
+        "sha256": "1f5a0e7cd2154c89a79b4fed3a5622ab04db107e6ae90a14394cb02b802d5e4a"
+      },
+      {
+        "path": "public/audio/voice-kerr-open-door.wav",
+        "sha256": "7c7faa7700d1ea42618eb8966aa234184a81018a41eea25942a7ac159ecc695f"
+      },
+      {
+        "path": "public/audio/voice-kerr-personal.wav",
+        "sha256": "80cbd916e61aec0805355e60d70a792872db632ab6b8fe09c31d19a760c5303a"
+      },
+      {
+        "path": "public/audio/voice-kerr-trust-broken.wav",
+        "sha256": "6b8cb6d1d27dac4bc12ccbb36fb14b502fa3a1afbcdc6776ebd03fbff7a0ea74"
+      },
+      {
+        "path": "public/audio/voice-kerr-trust-kept.wav",
+        "sha256": "14b3c2866811e99af26ad73e4980753849d279e4a5e6f77c767b281b2d0b9f9f"
+      },
+      {
+        "path": "public/audio/voice-kerr-unsettled-week.wav",
+        "sha256": "c34b203ef618e0c5093763dde6794a91a7d651ca7fd2a6347c7c0c596618182c"
+      },
+      {
+        "path": "public/audio/voice-lumen-act2-lumen.wav",
+        "sha256": "ebb64fe7b8ed4d039738bf635d9c2e9cc127e0b6ab8cb6b53cde52f74dd9d41d"
+      },
+      {
+        "path": "public/audio/voice-lumen-act2-notice-brief.wav",
+        "sha256": "c17a03fd4ca11700641221b19d395add0d70cd5c8d408b033a744695d2dad5da"
+      },
+      {
+        "path": "public/audio/voice-lumen-act2-notice-receipt.wav",
+        "sha256": "4ceb90ad5c81b71209afdb3613eed6b68e126884acfa76225b7d77203765ef31"
+      },
+      {
+        "path": "public/audio/voice-lumen-act2-witness-lost.wav",
+        "sha256": "7452591700d979b57f270e5d919611b75d3ff808de54c7320aeadd9fb372b1e4"
+      },
+      {
+        "path": "public/audio/voice-lumen-act2-witness-repair.wav",
+        "sha256": "62660a0678a2f922dea655f49734333989be0534bf1b1c1da3a6783f953b4b32"
+      },
+      {
+        "path": "public/audio/voice-lumen-after-rest.wav",
+        "sha256": "d9d4dc186d16438ff602958b3fbff3d68fae7042968f860b5900655738546bef"
+      },
+      {
+        "path": "public/audio/voice-lumen-boundary.wav",
+        "sha256": "f608706f2decdc30fd0968bb4d3a8c6bba08c163043e3f72d344bec0f17746ad"
+      },
+      {
+        "path": "public/audio/voice-lumen-counteroffer.wav",
+        "sha256": "dbf3306e2cbd5fc464030fe22840e0ea8cb62aa903980742b38cedbd7fbde4b5"
+      },
+      {
+        "path": "public/audio/voice-lumen-ending-burned.wav",
+        "sha256": "0a617a2c9c7904287ecdfd48b23d701b0fce1be1190263807be804bf74bfc3c1"
+      },
+      {
+        "path": "public/audio/voice-lumen-full-window.wav",
+        "sha256": "250c8890091c5b99b136279195ed2aab784057ebd3c1e119f8ed03e6fdedaa97"
+      },
+      {
+        "path": "public/audio/voice-lumen-funded-carrier.wav",
+        "sha256": "0935ad4ffda521f14d42c2d6b267cd57f3abfe159459d8d3dadcb9899886dde0"
+      },
+      {
+        "path": "public/audio/voice-lumen-later-trip.wav",
+        "sha256": "fabbd3b0bb315ef7c62c7eca90504c57448e1ca3ccfc8b641da61a3c09321700"
+      },
+      {
+        "path": "public/audio/voice-lumen-lumen.wav",
+        "sha256": "dc4c6ce71657075ac35bfe6cd4c68836076d654f950e15e2de6c8e58692a3d66"
+      },
+      {
+        "path": "public/audio/voice-lumen-ordinary-seat.wav",
+        "sha256": "a9074f1036e653dfcb114068a2136995678f28951ae7e9fa7c224b76c8c57ee9"
+      },
+      {
+        "path": "public/audio/voice-lumen-private-door.wav",
+        "sha256": "802e32041933cb0d9ff6d13de362ef2575d22eaf97b051c968b2c3a67c26d504"
+      },
+      {
+        "path": "public/audio/voice-lumen-publication.wav",
+        "sha256": "2745134ebbbad3b7668d919de84d21582356e460772d8fc67419f903a6970d14"
+      },
+      {
+        "path": "public/audio/voice-lumen-relay-limits.wav",
+        "sha256": "7b23954cb414c912cb31533e4a34841b5efe0350321e3b403414e326f16e3c2f"
+      },
+      {
+        "path": "public/audio/voice-lumen-return-bundle.wav",
+        "sha256": "83b9fbc12c441567ba680dd98661a589968ca1fa0600d5f6a5acda9456a5d5de"
+      },
+      {
+        "path": "public/audio/voice-lumen-staying.wav",
+        "sha256": "70ac47bfa9130e75cbc65c557b5268339f5b5c766c266cb5948854b9937c035e"
+      },
+      {
+        "path": "public/audio/voice-lumen-withdrawn-window.wav",
+        "sha256": "495affaa36ca91f3f7f92e3f371ec565ccdb790dc089c3ec4105e7482b51a5b9"
+      },
+      {
+        "path": "public/audio/voice-mara-assurance.wav",
+        "sha256": "240a33d9bcd20973fc898dd30479448dadbcb577526fc6bdf327549bd15b0c05"
+      },
+      {
+        "path": "public/audio/voice-mara-chair-remembered.wav",
+        "sha256": "c9e9e7aca2d53c67426e45617c4a6c4bd296bec21cb034a8279cf715778e35ef"
+      },
+      {
+        "path": "public/audio/voice-mara-channel.wav",
+        "sha256": "30eb8166317b285d7fb8d080e954f62365c589fe4330b7e76ff0d0903658d9eb"
+      },
+      {
+        "path": "public/audio/voice-mara-company-declined.wav",
+        "sha256": "7350ab9254c471360313a093bd2a6485f8832fd9c328f0d6933d86a74c3c1c84"
+      },
+      {
+        "path": "public/audio/voice-mara-company.wav",
+        "sha256": "2a856f430b4214530d5c558b0ffd10dc96d3892340cb7d0f1a6f1de514a4eb1d"
+      },
+      {
+        "path": "public/audio/voice-mara-envelope-pending.wav",
+        "sha256": "bee19816a3368bc88a1ec14503573e43fb61bbf8b149cc19c3691ae647cd239d"
+      },
+      {
+        "path": "public/audio/voice-mara-mara-why.wav",
+        "sha256": "3c4da30b4300c1faf876eb19d6fd6200c231493ac3ae7d5598e7cd177cf94c7a"
+      },
+      {
+        "path": "public/audio/voice-mara-memory-cross-exam.wav",
+        "sha256": "7881da50c38a481d9907c03b029073bafbd6da36cf486e01e048228ee31b481e"
+      },
+      {
+        "path": "public/audio/voice-mara-name-at-desk.wav",
+        "sha256": "b42ca0a409cc68c8ad73221817710cd84ab04060d2f9eb1560d94d22c739682d"
+      },
+      {
+        "path": "public/audio/voice-mara-next-batch.wav",
+        "sha256": "b19536c637c5dbe675eb1f462122d9f17a067227b8946f8819171b494bce3dce"
+      },
+      {
+        "path": "public/audio/voice-mara-not-acquittal.wav",
+        "sha256": "5acfdd7b5b61d253f284b3f8ed54a202a549d95058c1034c4887e123a92a2ea8"
+      },
+      {
+        "path": "public/audio/voice-mara-own-dispatch.wav",
+        "sha256": "4941895cc02d292fb59e5676affdd0d39ec5faedc52f73724e9d943c1994deeb"
+      },
+      {
+        "path": "public/audio/voice-mara-public-refusal.wav",
+        "sha256": "4198455189cc74d64ed6a56187563d7a9ecdb46da43c70b2280ec040baada4f5"
+      },
+      {
+        "path": "public/audio/voice-mara-response.wav",
+        "sha256": "5c4e0892fb0bf12b93b25fba541e832742a503c0447b40a34f3d6f9e70ad1ca4"
+      },
+      {
+        "path": "public/audio/voice-mara-revelation.wav",
+        "sha256": "092f7f97e85e39adcf0b680d50ae93531f7e7dffd171cbf087e6be0a75bc314a"
+      },
+      {
+        "path": "public/audio/voice-mara-sequence.wav",
+        "sha256": "e506298640a60ab4223dde471996bc68df62bd8bbc303356c15e06e26e9f0cf8"
+      },
+      {
+        "path": "public/audio/voice-mara-tomorrow.wav",
+        "sha256": "a29cc30b16be21c6cdde8d141921d1e2e0471152d2458e53878a124340422ff2"
+      },
+      {
+        "path": "public/audio/voice-mara-waiting-open.wav",
+        "sha256": "c94f4fb87839be99717b0b72da868c8d0dae9252222fe9546ede9c49735a6b84"
+      },
+      {
+        "path": "public/audio/voice-mara-waits-answer.wav",
+        "sha256": "eba8fcda2493aefb0298bdc8e1d26b9a474360c099b91f1ac2e658d9a0e54d07"
+      },
+      {
+        "path": "public/audio/voice-mara-walked-reply.wav",
+        "sha256": "eada25c55d98a1daed74b29c0bf72af0670ebb04df0bbbe174c53ad3e898bf96"
+      },
+      {
+        "path": "public/audio/voice-nia-act2-witness-brief.wav",
+        "sha256": "e159bb442045245e5a93d58c0338349f29d652f5cd9e18308bbaae8108dd7b75"
+      },
+      {
+        "path": "public/audio/voice-nia-act3-nia-contact.wav",
+        "sha256": "7e8c987306af6e9fae329d9ad519014e1283dd9eebd5751505c4273cf877ac29"
+      },
+      {
+        "path": "public/audio/voice-nia-arrival.wav",
+        "sha256": "d491be8168f0903643430831328c9846014804e509e743b8905703a705ecd772"
+      },
+      {
+        "path": "public/audio/voice-nia-known-room.wav",
+        "sha256": "e7767291f9090f843a6f2ed7abb319c90b7c8fd188e55d45f13d19f201fe00a8"
+      },
+      {
+        "path": "public/audio/voice-nia-own-work.wav",
+        "sha256": "9ed244c27a9a76099ae1211d02d9541367aa942d9da806c5f1315041e913d0f9"
+      },
+      {
+        "path": "public/audio/voice-nia-public-terms.wav",
+        "sha256": "831dc6693059bc1bcb308cc159dbf8f1bb0fb50dd49fc11b72112ecbd723ac72"
+      },
+      {
+        "path": "public/audio/voice-nia-room-ownership.wav",
+        "sha256": "a08b82102343620a5c72d685c79968fa2c11fbe844934e0bf926882f3efd601c"
+      },
+      {
+        "path": "public/audio/voice-nia-second-room.wav",
+        "sha256": "f978af21eb12b03d5ca682a943657b74d68f20c85c28481e0d248f2b75842600"
+      },
+      {
+        "path": "public/audio/voice-quill-act2-origin-dustline.wav",
+        "sha256": "5c7ee6677cc92e0fd8984c2c103ce4863477ab985803167d55cdf54d8632bce3"
+      },
+      {
+        "path": "public/audio/voice-quill-care-budget.wav",
+        "sha256": "65b035eff64585c306dd57e2ac9e7c9efcb7900d3fcd17a490060396afdd3462"
+      },
+      {
+        "path": "public/audio/voice-quill-job-owner.wav",
+        "sha256": "392f4a39fdb2becad89e86a5852c4d379b7e25b4d0f8d412a85a9ba0f10fdce3"
+      },
+      {
+        "path": "public/audio/voice-quill-offer.wav",
+        "sha256": "d2709b67a0efdffdeba15544aec34bccec9eab44e830ae5438f864acce0b721f"
+      },
+      {
+        "path": "public/audio/voice-quill-pay-no.wav",
+        "sha256": "842831432e3331fe2004439b2558c1a33c819a58c05562d0c7435a47dd98953d"
+      },
+      {
+        "path": "public/audio/voice-quill-pay-yes.wav",
+        "sha256": "b46973c05c6e0f1dd18aed7ba354c3af071dfff54d715c976187f8dc5b355e46"
+      },
+      {
+        "path": "public/audio/voice-quill-pay.wav",
+        "sha256": "e9620a09386bd0fd122d408c6d6c978624c1cfb95af945d40f9a9f4d9d41767d"
+      },
+      {
+        "path": "public/audio/voice-quill-route.wav",
+        "sha256": "1fae551c12bc1d2de0b5e7a95c3f6eee65ddc0171f2389f411bca243b794a434"
+      },
+      {
+        "path": "public/audio/voice-sera-act2-origin-gutterwire.wav",
+        "sha256": "66c23cce6b392d14999ca62064f928e4b38a2f3bd980427b132c0713e06d388d"
+      },
+      {
+        "path": "public/audio/voice-sera-daylight.wav",
+        "sha256": "b5538120e91167609130804ab11c11661337a0aa988d22e792d6f8b77a28a72a"
+      },
+      {
+        "path": "public/audio/voice-sera-hearing-correction.wav",
+        "sha256": "a5a5393044aaa3a10da9158920bf379cc1e5fa9be4906201636e64b7e0dafa43"
+      },
+      {
+        "path": "public/audio/voice-sera-hearing-purpose.wav",
+        "sha256": "0da826f7f4f705f3d4633137138386e1cef7a2b38cdf81e4991a5cf4de57c668"
+      },
+      {
+        "path": "public/audio/voice-sera-laundry-invitation.wav",
+        "sha256": "4f65ba67c8ad8b7121cae359976d10063d80ba5ff58d83dcf53c508656972aa7"
+      },
+      {
+        "path": "public/audio/voice-sera-names.wav",
+        "sha256": "9a540454403b45463d53c3a2c459a2ddd0567bccad5a1181df3dafb94af891e7"
+      },
+      {
+        "path": "public/audio/voice-sera-quiet.wav",
+        "sha256": "b77eb7bc80e0f1f51bc8275a25cd7fc0f2ac439890267fa3d63bceb08b6704d9"
+      },
+      {
+        "path": "public/audio/voice-sera-third-row.wav",
+        "sha256": "7579041d76a270e29a308bb0e94f4c3de75487d5552a001ae57d0afec4b11d07"
+      },
+      {
+        "path": "public/audio/voice-sera-wall-invitation.wav",
+        "sha256": "8acb35ad90d96230b250aab59088dd322e0f0741cbade1059b723c2ff9d35abf"
+      },
+      {
+        "path": "public/audio/voice-sera-witness.wav",
+        "sha256": "ebb6870000792f2a71e756b46bb85514e80fc3cee823e47c19afd028a7ce2fdb"
+      }
+    ]
+  },
+  "voiceIds": [
+    "voice-campaign-witness-return-3ed7f61b4ca1",
+    "voice-campaign-witness-return-29f12b08a1ae",
+    "voice-campaign-witness-return-b30a4eb1c780",
+    "voice-campaign-witness-return-ea25eb2c8312",
+    "voice-campaign-witness-return-0bdc858ea31a",
+    "voice-campaign-witness-return-6f3574fd5a60",
+    "voice-campaign-witness-return-39a2d055c5e5"
+  ],
+  "artAssets": []
+}

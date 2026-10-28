@@ -1,0 +1,84 @@
+{
+  "method": "Independent ASR of delivered MP3s, no authored-text prompt; punctuation/case/apostrophe and 20-to-twenty normalization only. Automated proxy, not human listening acceptance.",
+  "model": "Systran/faster-whisper-base.en",
+  "runtime": "faster-whisper 1.2.1, CPU int8",
+  "modelFiles": [
+    {
+      "name": "models--Systran--faster-whisper-base.en/snapshots/3d3d5dee26484f91867d81cb899cfcf72b96be6c/config.json",
+      "sha256": "f3bc3821e9fc76a27bae538e11ae5b677dcdd352b4600429ce7951d398569aeb"
+    },
+    {
+      "name": "models--Systran--faster-whisper-base.en/snapshots/3d3d5dee26484f91867d81cb899cfcf72b96be6c/model.bin",
+      "sha256": "2a166925539a16005f14ff328359f9b9adb9dc4fb631bb3b227526862e93e2ef"
+    },
+    {
+      "name": "models--Systran--faster-whisper-base.en/snapshots/3d3d5dee26484f91867d81cb899cfcf72b96be6c/tokenizer.json",
+      "sha256": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df"
+    }
+  ],
+  "lines": [
+    {
+      "id": "voice-campaign-witness-return-3ed7f61b4ca1",
+      "speaker": "Nia Pell",
+      "path": "public/audio/voice-campaign-witness-return-3ed7f61b4ca1.mp3",
+      "sha256": "5171c1b37e5960f18e96c9a1cb8c7991b89e25e170f1eafb9fbbb1ea4bbcd609",
+      "authoredText": "The photograph is on the shelf now. I can look at it without watching the door at the same time. Keep the words I agreed to. The rest of this room is mine.",
+      "transcription": "The photograph is on the shelf now. I can look at it without watching the door at the same time. Keep the words I agreed to. The rest of this room is mine.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-witness-return-29f12b08a1ae",
+      "speaker": "Nia Pell",
+      "path": "public/audio/voice-campaign-witness-return-29f12b08a1ae.mp3",
+      "sha256": "e8c1e050d7ca12f8e2f749ef63ea3cc2e3c78f7e8250704f1a8a83125cbf974f",
+      "authoredText": "I put the photograph on the shelf. I have not decided what I want to say about the night. Leave the recorder off. I need a room that can be quiet without becoming part of your story.",
+      "transcription": "I put the photograph on the shelf. I have not decided what I want to say about the night. Leave the recorder off. I need a room that can be quiet without becoming part of your story.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-witness-return-b30a4eb1c780",
+      "speaker": "Nia Pell",
+      "path": "public/audio/voice-campaign-witness-return-b30a4eb1c780.mp3",
+      "sha256": "b59778021708a4efea91a0d7d8b456ffba2a2ed54279a53979e266ab060c9e03",
+      "authoredText": "The nurse closed the door. Then someone outside called the room number. I stopped listening to the nurse. Whatever you can prove about the old order, do not call this room protected.",
+      "transcription": "The nurse closed the door. Then someone outside called the room number. I stopped listening to the nurse. Whatever you can prove about the old order, do not call this room protected. . . . . . .",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-witness-return-ea25eb2c8312",
+      "speaker": "Nia Pell",
+      "path": "public/audio/voice-campaign-witness-return-ea25eb2c8312.mp3",
+      "sha256": "9292c095faa5e8bdb857fae3135dfdbcf64187f04411eb2f31b657e841efa168",
+      "authoredText": "I unpacked the photograph twice. I want this to be the last shelf I have to choose because somebody found the first one. You moved me again. You did not move the first room out of their records.",
+      "transcription": "I unpacked the photograph twice. I want this to be the last shelf I have to choose because somebody found the first one. You moved me again. You did not move the first room out of their records.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-witness-return-0bdc858ea31a",
+      "speaker": "Sister Lumen",
+      "path": "public/audio/voice-campaign-witness-return-0bdc858ea31a.mp3",
+      "sha256": "776d5dc20d8959bc5c0d01f8b367a4a4b3d300b58a3f9f12d5f1b6388a0231d9",
+      "authoredText": "The volunteer is still waiting for the shift you offered. Do not leave that work beside her bed.",
+      "transcription": "The volunteer is still waiting for the shift you offered. Do not leave that work beside her bed.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-witness-return-6f3574fd5a60",
+      "speaker": "Sister Lumen",
+      "path": "public/audio/voice-campaign-witness-return-6f3574fd5a60.mp3",
+      "sha256": "3757fa56683dabff8b91b0e73cf016de16ce8626da87acc2ff7fca1d2029c51c",
+      "authoredText": "The volunteer went home when you took the shift. That was your promise to keep, never hers.",
+      "transcription": "The volunteer went home when you took the shift. That was your promise to keep, never hers. . . . . . .",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-witness-return-39a2d055c5e5",
+      "speaker": "Sister Lumen",
+      "path": "public/audio/voice-campaign-witness-return-39a2d055c5e5.mp3",
+      "sha256": "eee4f5d0a96411bbe5f9613f4548e94c180f77efd93a5c96ef72cb05a97d9567",
+      "authoredText": "I took the shift you promised. I was here when the volunteers went home. Next time, offer me the hours you mean to give.",
+      "transcription": "I took the shift you promised. I was here when the volunteers went home. Next time, offer me the hours you mean to give.",
+      "exactNormalizedWords": true
+    }
+  ]
+}

@@ -1,0 +1,317 @@
+{
+  "name": "finale-quiet-withdrawn",
+  "character": {
+    "handle": "Low Reserve",
+    "givenName": "Ada",
+    "origin": "dustline",
+    "complication": "debt",
+    "bonus": {
+      "chrome": 0,
+      "nerve": 0,
+      "face": 0,
+      "ghost": 2
+    },
+    "startWithPrologue": true,
+    "expandedKerr": true,
+    "expandedMara": true,
+    "expandedWitness": true
+  },
+  "steps": [
+    {
+      "choiceId": "begin-opening",
+      "reload": true
+    },
+    {
+      "choiceId": "opening-survival",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-stallholder",
+      "reload": true
+    },
+    {
+      "choiceId": "take-the-stool",
+      "reload": true
+    },
+    {
+      "choiceId": "ask-pay",
+      "reload": true
+    },
+    {
+      "choiceId": "haggle",
+      "roll": 1,
+      "reload": true
+    },
+    {
+      "choiceId": "sit-with-it",
+      "reload": true
+    },
+    {
+      "choiceId": "accept",
+      "reload": true
+    },
+    {
+      "choiceId": "side",
+      "reload": true
+    },
+    {
+      "choiceId": "spoof-door",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "go",
+      "reload": true
+    },
+    {
+      "choiceId": "honest",
+      "reload": true
+    },
+    {
+      "choiceId": "pact-copy",
+      "reload": true
+    },
+    {
+      "choiceId": "copy",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "heard",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-hour",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-signature",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-order",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-roster",
+      "reload": true
+    },
+    {
+      "choiceId": "reconstruct",
+      "reload": true
+    },
+    {
+      "choiceId": "separate-decisions",
+      "reload": true
+    },
+    {
+      "choiceId": "label-unverified",
+      "reload": true
+    },
+    {
+      "choiceId": "seal-witness",
+      "reload": true
+    },
+    {
+      "choiceId": "talk-leave",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "destroy",
+      "reload": true
+    },
+    {
+      "choiceId": "week-after",
+      "reload": true
+    },
+    {
+      "choiceId": "into-week",
+      "reload": true
+    },
+    {
+      "choiceId": "read-board",
+      "reload": true
+    },
+    {
+      "choiceId": "to-kerr",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-kerr",
+      "reload": true
+    },
+    {
+      "choiceId": "pay-kerr",
+      "reload": true
+    },
+    {
+      "choiceId": "answer-kerr-collection",
+      "reload": true
+    },
+    {
+      "choiceId": "promise-private-collection",
+      "reload": true
+    },
+    {
+      "choiceId": "route-entry-lift",
+      "reload": true
+    },
+    {
+      "choiceId": "route-exit-gap",
+      "reload": true
+    },
+    {
+      "choiceId": "depart-kerr-lift",
+      "reload": true
+    },
+    {
+      "choiceId": "route-use-gap",
+      "roll": 1,
+      "reload": true
+    },
+    {
+      "choiceId": "pause-kerr-recovery",
+      "reload": true
+    },
+    {
+      "choiceId": "protect-witness",
+      "reload": true
+    },
+    {
+      "choiceId": "agree-terms",
+      "reload": true
+    },
+    {
+      "choiceId": "use-existing-plan",
+      "reload": true
+    },
+    {
+      "choiceId": "slip-witness",
+      "roll": 1,
+      "reload": true
+    },
+    {
+      "choiceId": "registered-transfer",
+      "reload": true
+    },
+    {
+      "choiceId": "record-cost",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-witness-clinic",
+      "reload": true
+    },
+    {
+      "choiceId": "keep-witness-clinic-boundary",
+      "reload": true
+    },
+    {
+      "choiceId": "repair-location",
+      "reload": true
+    },
+    {
+      "choiceId": "clinic-second-room",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-witness-move",
+      "reload": true
+    },
+    {
+      "choiceId": "keep-witness-move-boundary",
+      "reload": true
+    },
+    {
+      "choiceId": "stand",
+      "reload": true
+    },
+    {
+      "choiceId": "back-to-board",
+      "reload": true
+    },
+    {
+      "choiceId": "to-the-wall",
+      "reload": true
+    },
+    {
+      "choiceId": "to-ward-nine",
+      "reload": true
+    },
+    {
+      "choiceId": "visit-nia",
+      "reload": true
+    },
+    {
+      "choiceId": "acknowledge-nia",
+      "reload": true
+    },
+    {
+      "choiceId": "face-sera",
+      "reload": true
+    },
+    {
+      "choiceId": "visit-kerr-collection",
+      "reload": true
+    },
+    {
+      "choiceId": "acknowledge-private-collection",
+      "reload": true
+    },
+    {
+      "choiceId": "prepare-public-account",
+      "reload": true
+    },
+    {
+      "choiceId": "scope-corroborated",
+      "reload": true
+    },
+    {
+      "choiceId": "keep-recording-private",
+      "reload": true
+    },
+    {
+      "choiceId": "claim-key-anyway",
+      "reload": true
+    },
+    {
+      "choiceId": "correct-hearing",
+      "reload": true
+    },
+    {
+      "choiceId": "withdraw-public-account",
+      "reload": true
+    },
+    {
+      "choiceId": "leave-wall",
+      "reload": true
+    }
+  ],
+  "expected": {
+    "sceneId": "ending_quiet",
+    "creds": 0,
+    "strain": 5,
+    "flags": {
+      "witness_safe": false,
+      "witness_lost": true,
+      "witness_relocated": true,
+      "witness_consent": false,
+      "witness_shift_kept": false,
+      "witness_return_approved": false,
+      "witness_return_waiting": false,
+      "witness_return_registered": true,
+      "witness_return_relocated": true,
+      "witness_return_shift_heard": false,
+      "nia_public_consent": false,
+      "testimony_published": false,
+      "archive_key_authenticated": false
+    },
+    "journal": [
+      "witness-promise",
+      "nia-account",
+      "witness-clinic-return",
+      "witness-relocation-return"
+    ]
+  }
+}

@@ -4,6 +4,7 @@ import { kerrCollectionChoice } from "./relationships";
 import { kerrTermsReturn } from "../kerr-terms";
 import { GOAL_WEEK } from "./goal";
 import { campaignReturnBeat } from "./campaign-beats";
+import { WITNESS_RETURN_CHOICES } from "../witness-return";
 import type { GameState, Scene } from "../types";
 
 function districtText(state: GameState): string {
@@ -507,6 +508,7 @@ export const ACT2_SCENES: Record<string, Scene> = {
         effects: { strain: 1, flags: ["quill_refused", "quill_settled"], factions: { quill: -1 } },
         next: "act2_middle",
       },
+      ...WITNESS_RETURN_CHOICES,
       {
         id: "stand",
         label: "Stand where the names are.",

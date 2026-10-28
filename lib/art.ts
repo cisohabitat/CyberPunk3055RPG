@@ -264,6 +264,9 @@ for (const id of ["act3_testimony_review", "act3_testimony_correction", "act3_te
   description: "Sera holds a pencil over a blank cover sheet at the rain-lit records table. A closed folder stays separate beside her hand; the recorder shows no operating status, private identity or filed outcome.",
 };
 ENCOUNTERS.act2_witness_safe = { ...ENCOUNTERS.act2_witness_arrival, caption: "Ward Nine · Nia reviews her own words" };
+ENCOUNTERS.act2_witness_return_private = { ...ENCOUNTERS.act2_witness_arrival, caption: "Ward Nine · the room stays hers" };
+for (const id of ["act2_witness_return_registered", "act2_witness_return_relocated"]) ENCOUNTERS[id] = { ...ENCOUNTERS.act2_witness_lost, caption: "Clinic relay · Nia answers on her terms" };
+ENCOUNTERS.act3_witness_shift_return = { ...ENCOUNTERS.act3_lumen_boundary, caption: "Glass Chapel · the work left behind" };
 
 // Deliberate new viewpoints override only these two reviewed catalog scenes.
 ENCOUNTERS.act2_archive_prep = {

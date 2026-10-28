@@ -1,0 +1,260 @@
+{
+  "name": "integration-names",
+  "character": {
+    "handle": "Replay",
+    "givenName": "Ada",
+    "origin": "spire",
+    "complication": "optic",
+    "bonus": {
+      "chrome": 0,
+      "nerve": 0,
+      "face": 2,
+      "ghost": 0
+    },
+    "startWithPrologue": true,
+    "expandedKerr": true,
+    "expandedMara": true,
+    "expandedWitness": true
+  },
+  "steps": [
+    {
+      "choiceId": "begin-opening",
+      "reload": true
+    },
+    {
+      "choiceId": "opening-identity",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-stallholder",
+      "reload": true
+    },
+    {
+      "choiceId": "take-the-stool",
+      "reload": true
+    },
+    {
+      "choiceId": "ask-pay",
+      "reload": true
+    },
+    {
+      "choiceId": "haggle",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "pocket",
+      "reload": true
+    },
+    {
+      "choiceId": "accept",
+      "reload": true
+    },
+    {
+      "choiceId": "side",
+      "reload": true
+    },
+    {
+      "choiceId": "spoof-door",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "go",
+      "reload": true
+    },
+    {
+      "choiceId": "honest",
+      "reload": true
+    },
+    {
+      "choiceId": "pact-copy",
+      "reload": true
+    },
+    {
+      "choiceId": "copy",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "heard",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-hour",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-signature",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-order",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-roster",
+      "reload": true
+    },
+    {
+      "choiceId": "reconstruct",
+      "reload": true
+    },
+    {
+      "choiceId": "separate-decisions",
+      "reload": true
+    },
+    {
+      "choiceId": "label-unverified",
+      "reload": true
+    },
+    {
+      "choiceId": "seal-witness",
+      "reload": true
+    },
+    {
+      "choiceId": "talk-leave",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "both",
+      "reload": true
+    },
+    {
+      "choiceId": "week-after",
+      "reload": true
+    },
+    {
+      "choiceId": "into-week",
+      "reload": true
+    },
+    {
+      "choiceId": "practice",
+      "reload": true
+    },
+    {
+      "choiceId": "learn-ghost",
+      "reload": true
+    },
+    {
+      "choiceId": "read-board",
+      "reload": true
+    },
+    {
+      "choiceId": "origin-contract",
+      "reload": true
+    },
+    {
+      "choiceId": "clear-key",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "return-board",
+      "reload": true
+    },
+    {
+      "choiceId": "to-lumen",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-lumen",
+      "reload": true
+    },
+    {
+      "choiceId": "walk-with-her",
+      "reload": true
+    },
+    {
+      "choiceId": "protect-witness",
+      "reload": true
+    },
+    {
+      "choiceId": "agree-terms",
+      "reload": true
+    },
+    {
+      "choiceId": "arrange-escort",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "compare-witness-support",
+      "reload": true
+    },
+    {
+      "choiceId": "promise-volunteer-shift",
+      "reload": true
+    },
+    {
+      "choiceId": "defer-account",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-witness-pause",
+      "reload": true
+    },
+    {
+      "choiceId": "keep-witness-room-boundary",
+      "reload": true
+    },
+    {
+      "choiceId": "stand",
+      "reload": true
+    },
+    {
+      "choiceId": "back-to-board",
+      "reload": true
+    },
+    {
+      "choiceId": "to-the-wall",
+      "reload": true
+    },
+    {
+      "choiceId": "to-ward-nine",
+      "reload": true
+    },
+    {
+      "choiceId": "visit-nia",
+      "reload": true
+    },
+    {
+      "choiceId": "acknowledge-nia",
+      "reload": true
+    },
+    {
+      "choiceId": "face-sera",
+      "reload": true
+    },
+    {
+      "choiceId": "leave-wall",
+      "reload": true
+    }
+  ],
+  "expected": {
+    "sceneId": "ending_quiet",
+    "creds": 390,
+    "strain": 1,
+    "flags": {
+      "witness_safe": true,
+      "witness_lost": false,
+      "witness_relocated": false,
+      "witness_consent": false,
+      "witness_shift_kept": false,
+      "witness_return_approved": false,
+      "witness_return_waiting": true,
+      "witness_return_registered": false,
+      "witness_return_relocated": false,
+      "witness_return_shift_heard": false,
+      "nia_public_consent": false,
+      "testimony_published": false,
+      "archive_key_authenticated": false
+    },
+    "journal": [
+      "witness-promise",
+      "witness-shift-promise",
+      "witness-room-return"
+    ]
+  }
+}

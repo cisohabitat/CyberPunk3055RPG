@@ -9,6 +9,7 @@ import { visibleCampaignDialogue, quotedSpeech } from "./campaign-dialogue";
 import { exportRun, importRun } from "./vault";
 import { maraAccountCoda, maraAccountOutcome, maraAccountQuestionHeard, maraAccountRecord, maraAccountRepaired, maraNight, MARA_ACCOUNT_QUOTES as Q } from "./mara-account";
 import phase from "../qa/media/mara-relationship.json";
+import witness from "../qa/media/witness-return.json";
 import bindings from "../qa/media/mara-account-dialogue-bindings.json";
 import deliveries from "../qa/media/mara-account-dialogue-provenance.json";
 import transcripts from "../qa/media/mara-account-dialogue-transcripts.json";
@@ -35,7 +36,7 @@ function files(dir: string): string[] {
 }
 
 it("preserves all 171 preceding full campaigns, 12,201 visits, actor/voice/art and every preceding delivery", () => {
-  const rows = [], old = files("qa/routes").filter(f => f.endsWith(".json") && !phase.newRoutes.includes(f.slice("qa/routes/".length))).sort();
+  const rows = [], old = files("qa/routes").filter(f => f.endsWith(".json") && ![...phase.newRoutes, ...witness.newRoutes].includes(f.slice("qa/routes/".length))).sort();
   assert.equal(old.length, phase.baseline.routes);
   for (const file of old) {
     const spec = JSON.parse(readFileSync(file, "utf8")) as ReplaySpec; let state = createCharacter(spec.character);

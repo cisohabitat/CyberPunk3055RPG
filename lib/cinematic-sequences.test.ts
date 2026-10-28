@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import witness from "../qa/media/witness-return.json";
 import { it } from "node:test";
 import { readFileSync, readdirSync, statSync } from "node:fs";
 import { createHash } from "node:crypto";
@@ -23,7 +24,7 @@ it("preserves all 164 complete campaign states, scripts, actor bindings and prim
 });
 it("keeps every preceding audio and art byte unchanged and inventories all twelve new art deliveries",()=>{
  const additions=phase.artAssets.flatMap(a=>a.files).map(f=>f.path);
- const laterAdditions=[kerr,mara].flatMap(p=>[...p.artAssets.flatMap(a=>a.files).map(f=>f.path),...p.voiceIds.map(id=>`public/audio/${id}.mp3`)]);
+ const laterAdditions=[kerr,mara,witness].flatMap(p=>[...p.artAssets.flatMap(a=>a.files).map(f=>f.path),...p.voiceIds.map(id=>`public/audio/${id}.mp3`)]);
  const generated=phase.baseline.reproducibleAudio.map(f=>f.path);for(const f of phase.baseline.reproducibleAudio)assert.equal(hash(readFileSync(f.path)),f.sha256);
  for(const[dir,contract]of [["audio",phase.baseline.precedingAudio],["art",phase.baseline.precedingArt]]as const){
   const files=readdirSync(`public/${dir}`,{recursive:true}).map(p=>`public/${dir}/${p}`).filter(p=>!additions.includes(p)&&!laterAdditions.includes(p)&&!generated.includes(p)&&statSync(p).isFile()).map(path=>{const b=readFileSync(path);return{path,blob:createHash("sha1").update(`blob ${b.length}\0`).update(b).digest("hex")};}).sort((a,b)=>a.path.localeCompare(b.path,"en"));assert.equal(files.length,contract.count);assert.equal(hash(JSON.stringify(files)),contract.sha256,dir);

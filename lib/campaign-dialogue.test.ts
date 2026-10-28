@@ -13,6 +13,7 @@ import districtDecisions from "../qa/media/district-dialogue-audit.json";
 import techniqueDecisions from "../qa/media/technique-dialogue-audit.json";
 import kerrPhase from "../qa/media/kerr-confrontation.json";
 import maraPhase from "../qa/media/mara-relationship.json";
+import witnessPhase from "../qa/media/witness-return.json";
 import deliveries from "../qa/media/campaign-dialogue-provenance.json";
 import old from "../qa/media/voice-provenance.json";
 import ives from "../qa/media/ives-mastering.json";
@@ -141,8 +142,8 @@ describe("campaign character dialogue", () => {
     }
   });
   it("has fitting explicit art decisions for the entire campaign and preserves chapter cards", () => {
-    assert.equal(Object.keys(auditSceneArt(SCENES)).length, 217 + kerrPhase.newScenes.length + maraPhase.newScenes.length);
-    assert.equal(Object.values(SCENES).filter(s => sceneIllustration(s.id)).length, 213 + 7 + maraPhase.newScenes.length);
+    assert.equal(Object.keys(auditSceneArt(SCENES)).length, 217 + kerrPhase.newScenes.length + maraPhase.newScenes.length + witnessPhase.newScenes.length);
+    assert.equal(Object.values(SCENES).filter(s => sceneIllustration(s.id)).length, 213 + 7 + maraPhase.newScenes.length + witnessPhase.newScenes.length);
     assert.equal(sceneIllustration("card_week"), undefined); assert.equal(sceneIllustration("card_wall"), undefined);
     for (const id of ["ending_names", "ending_quiet", "ending_witness", "ending_listed"]) assert.ok(sceneIllustration(id)?.src.startsWith("/art/finale-"));
   });

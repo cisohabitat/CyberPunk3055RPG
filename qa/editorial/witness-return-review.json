@@ -1,0 +1,176 @@
+{
+  "phase": "Witness return conversations",
+  "status": "candidate; hosted CI and exact-commit publication required",
+  "precedingCommit": "a5804b68a6bd96b8dddf7d9503844265504a667c",
+  "preservation": {
+    "campaigns": 182,
+    "visits": 12775,
+    "priorMediaFiles": 769,
+    "contract": "qa/media/witness-return.json"
+  },
+  "sourceTests": {
+    "passed": 824,
+    "failed": 0
+  },
+  "typecheck": "passed",
+  "productionBuild": "passed",
+  "dependencyAudit": {
+    "knownVulnerabilities": 0
+  },
+  "productionCatalog": {
+    "scenes": 237,
+    "choices": 714,
+    "routes": 188,
+    "assets": 798,
+    "budgetViolations": []
+  },
+  "browser": {
+    "newCasesPerProject": 33,
+    "chromium": "all 33 unique cases passed across directed runs, zero retries",
+    "webkitDiagnostic": "32 passed; host dependency validation disabled locally only; full hosted validation remains mandatory",
+    "prePublicationCorrection": "New Stop selector initially requested Stop; corrected to the existing Stop line accessible label. No production change, deadline increase, skip or retry."
+  },
+  "voice": {
+    "newDeliveries": 7,
+    "asrExactNormalizedWords": 7,
+    "automaticAudit": {
+      "rows": 7,
+      "errors": [],
+      "failures": []
+    },
+    "reportSha256": "d22fc1b3a49a93215f810d67b93d910b0063beadc586612c089f5870de2ae846"
+  },
+  "artReview": {
+    "reused": [
+      "nia-arrival.jpg",
+      "clinic-relay.jpg",
+      "ordinary-rest.jpg"
+    ],
+    "newPaintings": 0,
+    "allFourRenderedSceneCapturesReviewed": true,
+    "notes": "Nia has two connected hands. Neutral relay and empty chapel/rest interior expose no private address or invented outcome."
+  },
+  "playtests": [
+    {
+      "report": "play-kept",
+      "sha256": "b337fc1cfca03d9a7649783ce86b28767ea14a6b49c2811434c24af9f8a3f045",
+      "route": "qa/routes/witness-return/private-waiting-kept.json",
+      "width": 390,
+      "artwork": "full",
+      "reading": "all",
+      "sound": true,
+      "elapsedSeconds": 363.298,
+      "visits": 67,
+      "tabs": 657,
+      "reloads": 66,
+      "voices": 36,
+      "interruptions": 2,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 390,
+        "strain": 2,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "errors": [],
+      "failedMedia": []
+    },
+    {
+      "report": "play-unkept",
+      "sha256": "e98f744b787f5c755e702cfa92f4d974c0111248c10e4c3686d149ebd3de5bbf",
+      "route": "qa/routes/witness-return/private-unkept.json",
+      "width": 1440,
+      "artwork": "full",
+      "reading": "all",
+      "sound": false,
+      "elapsedSeconds": 99.788,
+      "visits": 66,
+      "tabs": 518,
+      "reloads": 65,
+      "voices": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 390,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "errors": [],
+      "failedMedia": []
+    },
+    {
+      "report": "play-relocated",
+      "sha256": "c90be848079ad597adada747a7e7883139250e9a65e5faea163a3f01e3efcfa0",
+      "route": "qa/routes/witness-return/relocated.json",
+      "width": 320,
+      "artwork": "none",
+      "reading": "paragraph",
+      "sound": false,
+      "elapsedSeconds": 70.144,
+      "visits": 67,
+      "tabs": 622,
+      "reloads": 66,
+      "voices": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 0,
+        "strain": 5,
+        "rolls": [
+          1,
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "errors": [],
+      "failedMedia": []
+    },
+    {
+      "report": "play-unfinished",
+      "sha256": "6cbb1c85cc68912839651570af686f57ada99fa55fa3f8fd18c154ced2267714",
+      "route": "qa/routes/witness-return/waiting-unfinished.json",
+      "width": 390,
+      "artwork": "full",
+      "reading": "all",
+      "sound": false,
+      "elapsedSeconds": 43.036,
+      "visits": 53,
+      "tabs": 412,
+      "reloads": 52,
+      "voices": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 390,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "errors": [],
+      "failedMedia": []
+    }
+  ],
+  "limitations": "Source-familiar AI/automation is the available proxy. ASR, browser playback and synthetic viewports do not establish human acting acceptance, blind player enjoyment, physical-device behavior or an AAA grade."
+}

@@ -6,6 +6,7 @@ import { freightVisitChoice } from "./freight";
 import { campaignReturnBeat } from "./campaign-beats";
 import { modelConsequence, modelClaim } from "../memory-model";
 import { kitBonuses } from "../loadout";
+import { WITNESS_SHIFT_RETURN } from "../witness-return";
 import type { GameState, Scene } from "../types";
 
 // Existing saves already at a transfer retain their route. New briefed missions
@@ -88,6 +89,7 @@ export const OPERATION_SCENES: Record<string, Scene> = {
     text: (state) => `${state.flags.witness_relocated ? "Nia answers through the clinic relay. 'The second room is quiet. The first one still gets calls. Both belong in your account.'" : state.flags.witness_lost ? "Nia agrees to a call through Lumen. 'They know the room. Don't tell the wall I was protected because you still have my words.'" : "Nia agrees to a visit through Sera. She has put the photograph where she can see it from bed. 'The room is mine to name. That matters more than what you called the job.'"}\n\n${state.journal.some((entry) => entry.id === "nia-account") ? "Her approved account is with Sera. She asks you to describe its source without turning her into a symbol." : "The recorder is still off. She has not given you an account to attach. A safe room bought no testimony."}\n\n${witnessMethodResponse(state)}\n\nShe asks which part you will remember when the wall asks for a sentence.`,
     choices: [
       { id: "ask-nia-contact", label: "Ask how Nia wants future contact handled.", hideIfFlag: "nia_contact_set", next: "act3_nia_contact" },
+      WITNESS_SHIFT_RETURN,
       { id: "acknowledge-nia", label: "Remember the person and the limits she set.", effects: { flags: ["visited_nia"] }, next: (state) => (state.flags.archive_custody || state.flags.pump_done) ? "act3_neighborhood" : "ward_wall" },
     ],
   },

@@ -1,0 +1,310 @@
+{
+  "generated": "2026-10-28",
+  "disclosure": "Stock synthetic voices generated offline with Kokoro v1.0; no actor session or individual voice clone was commissioned. Only the fixed authored quotations below are rendered. No model or speech service ships in the game.",
+  "driver": {
+    "name": "kokoro-onnx",
+    "version": "0.6.1",
+    "license": "MIT",
+    "url": "https://github.com/thewh1teagle/kokoro-onnx",
+    "licenseFile": "qa/media/voice-sources/kokoro-onnx-LICENSE.txt"
+  },
+  "model": {
+    "name": "Kokoro-82M v1.0",
+    "license": "Apache-2.0",
+    "card": "https://huggingface.co/hexgrad/Kokoro-82M",
+    "licenseFile": "qa/media/voice-sources/Kokoro-LICENSE.txt",
+    "files": [
+      {
+        "name": "kokoro-v1.0.onnx",
+        "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.onnx",
+        "sha256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+        "bytes": 325505369
+      },
+      {
+        "name": "voices-v1.0.bin",
+        "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin",
+        "sha256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+        "bytes": 28214398
+      }
+    ]
+  },
+  "source": "scripts/generate-campaign-voices.py",
+  "processing": "Exact authored character words; existing cast identities; optional sentence pauses, 8ms phrase fades, normalized PCM peak 0.72 with 80ms edges; optional per-line two-pass EBU loudness matching with -2dBTP ceiling; 96kbps mono MP3 delivery. Original PCM and normalized PCM retained outside Git.",
+  "reviewStatus": "Technical signal and source review; stock synthetic dialogue. No commissioned actors or independent listening acceptance.",
+  "lines": [
+    {
+      "id": "voice-campaign-witness-return-3ed7f61b4ca1",
+      "speaker": "Nia Pell",
+      "voice": "af_nova",
+      "speed": 0.96,
+      "text": "The photograph is on the shelf now. I can look at it without watching the door at the same time. Keep the words I agreed to. The rest of this room is mine.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock cast identity; close conversational restraint. Preserve every word. Nia owns the pause and the room; Lumen names her own work without granting forgiveness. No narration or custom name.",
+      "segments": [
+        {
+          "text": "The photograph is on the shelf now.",
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "I can look at it without watching the door at the same time.",
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "Keep the words I agreed to.",
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "The rest of this room is mine.",
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -4.53,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-witness-return-3ed7f61b4ca1.mp3",
+      "sourceFile": "/workspace/generated_audio/witness-return/voice-campaign-witness-return-3ed7f61b4ca1.wav",
+      "sourceSha256": "b52ebb9adc30a2c055072314075865a0a1e82f1d5ff1bfa02787296d97632203",
+      "pcmDeliveryFile": "/workspace/generated_audio/witness-return/voice-campaign-witness-return-3ed7f61b4ca1-delivery.wav",
+      "pcmDeliverySha256": "e3568b61ead6ec9d7362d87f88d6f40162bf87a4d7f4ff0ac0ca8c7dd9473cb9",
+      "sha256": "5171c1b37e5960f18e96c9a1cb8c7991b89e25e170f1eafb9fbbb1ea4bbcd609",
+      "bytes": 143468,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 11.861333333333333,
+      "peak": 0.5933300852775574,
+      "rms": 0.07384911924600601
+    },
+    {
+      "id": "voice-campaign-witness-return-29f12b08a1ae",
+      "speaker": "Nia Pell",
+      "voice": "af_nova",
+      "speed": 0.96,
+      "text": "I put the photograph on the shelf. I have not decided what I want to say about the night. Leave the recorder off. I need a room that can be quiet without becoming part of your story.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock cast identity; close conversational restraint. Preserve every word. Nia owns the pause and the room; Lumen names her own work without granting forgiveness. No narration or custom name.",
+      "segments": [
+        {
+          "text": "I put the photograph on the shelf.",
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "I have not decided what I want to say about the night.",
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "Leave the recorder off.",
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "I need a room that can be quiet without becoming part of your story.",
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -6.47,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-witness-return-29f12b08a1ae.mp3",
+      "sourceFile": "/workspace/generated_audio/witness-return/voice-campaign-witness-return-29f12b08a1ae.wav",
+      "sourceSha256": "0d41897285630c2647583984f728d4f7997f0ab7482fa3f917487f60ac45899f",
+      "pcmDeliveryFile": "/workspace/generated_audio/witness-return/voice-campaign-witness-return-29f12b08a1ae-delivery.wav",
+      "pcmDeliverySha256": "02410f7e5de33bf06bea7b7c914c4fb3a518a5d2f05df2716ad58377391a9d39",
+      "sha256": "e8c1e050d7ca12f8e2f749ef63ea3cc2e3c78f7e8250704f1a8a83125cbf974f",
+      "bytes": 152684,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 12.629333333333333,
+      "peak": 0.4745843708515167,
+      "rms": 0.080214723944664
+    },
+    {
+      "id": "voice-campaign-witness-return-b30a4eb1c780",
+      "speaker": "Nia Pell",
+      "voice": "af_nova",
+      "speed": 0.96,
+      "text": "The nurse closed the door. Then someone outside called the room number. I stopped listening to the nurse. Whatever you can prove about the old order, do not call this room protected.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock cast identity; close conversational restraint. Preserve every word. Nia owns the pause and the room; Lumen names her own work without granting forgiveness. No narration or custom name.",
+      "segments": [
+        {
+          "text": "The nurse closed the door.",
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "Then someone outside called the room number.",
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "I stopped listening to the nurse.",
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "Whatever you can prove about the old order, do not call this room protected.",
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -5.77,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-witness-return-b30a4eb1c780.mp3",
+      "sourceFile": "/workspace/generated_audio/witness-return/voice-campaign-witness-return-b30a4eb1c780.wav",
+      "sourceSha256": "08b4bbacfe727bd4d4ca802e302b6ecb431e702b618e56cbef826e1805c69f0d",
+      "pcmDeliveryFile": "/workspace/generated_audio/witness-return/voice-campaign-witness-return-b30a4eb1c780-delivery.wav",
+      "pcmDeliverySha256": "f2cf9344b0cba252e014572c14dddfb36c25474561bccaf3699a5ffb861554f8",
+      "sha256": "b59778021708a4efea91a0d7d8b456ffba2a2ed54279a53979e266ab060c9e03",
+      "bytes": 159020,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 13.171333333333333,
+      "peak": 0.5147954821586609,
+      "rms": 0.07898459583520889
+    },
+    {
+      "id": "voice-campaign-witness-return-ea25eb2c8312",
+      "speaker": "Nia Pell",
+      "voice": "af_nova",
+      "speed": 0.96,
+      "text": "I unpacked the photograph twice. I want this to be the last shelf I have to choose because somebody found the first one. You moved me again. You did not move the first room out of their records.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock cast identity; close conversational restraint. Preserve every word. Nia owns the pause and the room; Lumen names her own work without granting forgiveness. No narration or custom name.",
+      "segments": [
+        {
+          "text": "I unpacked the photograph twice.",
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "I want this to be the last shelf I have to choose because somebody found the first one.",
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "You moved me again.",
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "You did not move the first room out of their records.",
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.46,
+      "truePeakDbtp": -5.66,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-witness-return-ea25eb2c8312.mp3",
+      "sourceFile": "/workspace/generated_audio/witness-return/voice-campaign-witness-return-ea25eb2c8312.wav",
+      "sourceSha256": "c40b721540c918048508d156158c1c8b968bbd8e6b9af73980955376110e5c70",
+      "pcmDeliveryFile": "/workspace/generated_audio/witness-return/voice-campaign-witness-return-ea25eb2c8312-delivery.wav",
+      "pcmDeliverySha256": "26f53dee05fb9d72d1cca51ee438350746c1ea955fb5c9ebcebed6a4695a67f2",
+      "sha256": "9292c095faa5e8bdb857fae3135dfdbcf64187f04411eb2f31b657e841efa168",
+      "bytes": 163052,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 13.508666666666667,
+      "peak": 0.5154805779457092,
+      "rms": 0.07619921118021011
+    },
+    {
+      "id": "voice-campaign-witness-return-0bdc858ea31a",
+      "speaker": "Sister Lumen",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "text": "The volunteer is still waiting for the shift you offered. Do not leave that work beside her bed.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock cast identity; close conversational restraint. Preserve every word. Nia owns the pause and the room; Lumen names her own work without granting forgiveness. No narration or custom name.",
+      "segments": [
+        {
+          "text": "The volunteer is still waiting for the shift you offered.",
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "Do not leave that work beside her bed.",
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.51,
+      "truePeakDbtp": -4.12,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-witness-return-0bdc858ea31a.mp3",
+      "sourceFile": "/workspace/generated_audio/witness-return/voice-campaign-witness-return-0bdc858ea31a.wav",
+      "sourceSha256": "1a70fface860853181cfbd99052cd2fd480827ba77a89b4d28fda719721e4e99",
+      "pcmDeliveryFile": "/workspace/generated_audio/witness-return/voice-campaign-witness-return-0bdc858ea31a-delivery.wav",
+      "pcmDeliverySha256": "6911fc9552bc2d1a6b7f8bccef08f215ce5fce28ce3dfe3af912531c4d2e8cbf",
+      "sha256": "776d5dc20d8959bc5c0d01f8b367a4a4b3d300b58a3f9f12d5f1b6388a0231d9",
+      "bytes": 71180,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 5.839333333333333,
+      "peak": 0.6212698221206665,
+      "rms": 0.07239579409360886
+    },
+    {
+      "id": "voice-campaign-witness-return-6f3574fd5a60",
+      "speaker": "Sister Lumen",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "text": "The volunteer went home when you took the shift. That was your promise to keep, never hers.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock cast identity; close conversational restraint. Preserve every word. Nia owns the pause and the room; Lumen names her own work without granting forgiveness. No narration or custom name.",
+      "segments": [
+        {
+          "text": "The volunteer went home when you took the shift.",
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "That was your promise to keep, never hers.",
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.51,
+      "truePeakDbtp": -3.26,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-witness-return-6f3574fd5a60.mp3",
+      "sourceFile": "/workspace/generated_audio/witness-return/voice-campaign-witness-return-6f3574fd5a60.wav",
+      "sourceSha256": "daec40f58419455ceeeeef541cd1d031d464a09560006a53bd89f3e58372c8f3",
+      "pcmDeliveryFile": "/workspace/generated_audio/witness-return/voice-campaign-witness-return-6f3574fd5a60-delivery.wav",
+      "pcmDeliverySha256": "b3bfcd92744b79c45830ff01700f0704de3605f24a748b5668cf640c851076bd",
+      "sha256": "3757fa56683dabff8b91b0e73cf016de16ce8626da87acc2ff7fca1d2029c51c",
+      "bytes": 65996,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 5.411291666666667,
+      "peak": 0.68590247631073,
+      "rms": 0.07441671937704086
+    },
+    {
+      "id": "voice-campaign-witness-return-39a2d055c5e5",
+      "speaker": "Sister Lumen",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "text": "I took the shift you promised. I was here when the volunteers went home. Next time, offer me the hours you mean to give.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock cast identity; close conversational restraint. Preserve every word. Nia owns the pause and the room; Lumen names her own work without granting forgiveness. No narration or custom name.",
+      "segments": [
+        {
+          "text": "I took the shift you promised.",
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "I was here when the volunteers went home.",
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "Next time, offer me the hours you mean to give.",
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -2.94,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-witness-return-39a2d055c5e5.mp3",
+      "sourceFile": "/workspace/generated_audio/witness-return/voice-campaign-witness-return-39a2d055c5e5.wav",
+      "sourceSha256": "92868b23a69d943b08b44d3385cadba5472bd50edea37caa8537d7af9edfc28e",
+      "pcmDeliveryFile": "/workspace/generated_audio/witness-return/voice-campaign-witness-return-39a2d055c5e5-delivery.wav",
+      "pcmDeliverySha256": "8c4b30b39f4a1e1787e52846da160784ce8cba812d08e6d027515eab149a4ec1",
+      "sha256": "eee4f5d0a96411bbe5f9613f4548e94c180f77efd93a5c96ef72cb05a97d9567",
+      "bytes": 93068,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 7.663916666666666,
+      "peak": 0.7056777477264404,
+      "rms": 0.07301579415798187
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "scope": "Witness return additions only; historical lines and deliveries unchanged.",
+  "scenes": [
+    "act2_witness_return_private",
+    "act2_witness_return_registered",
+    "act2_witness_return_relocated",
+    "act3_witness_shift_return"
+  ],
+  "decisions": [
+    {
+      "scene": "act2_witness_return_private",
+      "primary": "Nia Pell",
+      "text": "The photograph is on the shelf now. I can look at it without watching the door at the same time. Keep the words I agreed to. The rest of this room is mine.",
+      "context": "Actual earned witness outcome and coherent source/shift record; no new testimony or permission.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Nia Pell",
+      "reason": "Exact visible words and actual actor. Secondary Lumen speech requires explicit attribution.",
+      "bindingKeys": [
+        "9533d4f62c9bb4f7"
+      ]
+    },
+    {
+      "scene": "act2_witness_return_private",
+      "primary": "Nia Pell",
+      "text": "I put the photograph on the shelf. I have not decided what I want to say about the night. Leave the recorder off. I need a room that can be quiet without becoming part of your story.",
+      "context": "Actual earned witness outcome and coherent source/shift record; no new testimony or permission.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Nia Pell",
+      "reason": "Exact visible words and actual actor. Secondary Lumen speech requires explicit attribution.",
+      "bindingKeys": [
+        "9d449549fad6aad2"
+      ]
+    },
+    {
+      "scene": "act2_witness_return_registered",
+      "primary": "Nia Pell",
+      "text": "The nurse closed the door. Then someone outside called the room number. I stopped listening to the nurse. Whatever you can prove about the old order, do not call this room protected.",
+      "context": "Actual earned witness outcome and coherent source/shift record; no new testimony or permission.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Nia Pell",
+      "reason": "Exact visible words and actual actor. Secondary Lumen speech requires explicit attribution.",
+      "bindingKeys": [
+        "1044dc04f9d55592"
+      ]
+    },
+    {
+      "scene": "act2_witness_return_relocated",
+      "primary": "Nia Pell",
+      "text": "I unpacked the photograph twice. I want this to be the last shelf I have to choose because somebody found the first one. You moved me again. You did not move the first room out of their records.",
+      "context": "Actual earned witness outcome and coherent source/shift record; no new testimony or permission.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Nia Pell",
+      "reason": "Exact visible words and actual actor. Secondary Lumen speech requires explicit attribution.",
+      "bindingKeys": [
+        "6e71eed9ddd78d48"
+      ]
+    },
+    {
+      "scene": "act2_witness_return_private",
+      "primary": "Nia Pell",
+      "text": "The volunteer is still waiting for the shift you offered. Do not leave that work beside her bed.",
+      "context": "Actual earned witness outcome and coherent source/shift record; no new testimony or permission.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Exact visible words and actual actor. Secondary Lumen speech requires explicit attribution.",
+      "bindingKeys": [
+        "6d56b9b9862cbeb7"
+      ]
+    },
+    {
+      "scene": "act2_witness_return_private",
+      "primary": "Nia Pell",
+      "text": "The volunteer went home when you took the shift. That was your promise to keep, never hers.",
+      "context": "Actual earned witness outcome and coherent source/shift record; no new testimony or permission.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Exact visible words and actual actor. Secondary Lumen speech requires explicit attribution.",
+      "bindingKeys": [
+        "f7decfcb14946a84"
+      ]
+    },
+    {
+      "scene": "act3_witness_shift_return",
+      "primary": "Sister Lumen",
+      "text": "I took the shift you promised. I was here when the volunteers went home. Next time, offer me the hours you mean to give.",
+      "context": "Actual earned witness outcome and coherent source/shift record; no new testimony or permission.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Sister Lumen",
+      "reason": "Exact visible words and actual actor. Secondary Lumen speech requires explicit attribution.",
+      "bindingKeys": [
+        "1136003875c9142e"
+      ]
+    }
+  ]
+}

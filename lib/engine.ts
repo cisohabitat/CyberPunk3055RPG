@@ -51,6 +51,7 @@ export function createCharacter(input: {
   startWithPrologue?: boolean;
   expandedKerr?: boolean;
   expandedMara?: boolean;
+  expandedWitness?: boolean;
 }): GameState {
   const origin = ORIGINS[input.origin];
   const complication = input.complication ?? null;
@@ -75,6 +76,8 @@ export function createCharacter(input: {
   if (input.expandedKerr) flags.kerr_terms_enabled = true;
   if (input.expandedMara !== undefined && typeof input.expandedMara !== "boolean") throw new Error("Invalid Mara campaign option");
   if (input.expandedMara) flags.mara_account_enabled = true;
+  if (input.expandedWitness !== undefined && typeof input.expandedWitness !== "boolean") throw new Error("Invalid witness return option");
+  if (input.expandedWitness) flags.witness_returns_enabled = true;
   if (complication === "on-file") flags.on_file = true;
   if (complication === "debt") flags.debt = true;
   if (complication === "optic") flags.optic = true;

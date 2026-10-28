@@ -947,6 +947,31 @@
       "treatment": "illustration",
       "asset": "/art/mara-account.jpg",
       "reason": "Identity-matched Mara listening in the existing clinic side room. The untouched cup and one resting visible hand depict no transaction, permission, apology or resolution and fit every personal approach. No recorder or private document appears."
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/nia-arrival.jpg",
+      "reason": "Reuse the existing identity-matched Nia room painting. The closed notebook, photograph withheld from view and resting hands depict conversation, not recording approval. The same neutral room supports her approved and deliberately unrecorded responses; exact words and actor changes carry the difference.",
+      "scenes": [
+        "act2_witness_return_private"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/clinic-relay.jpg",
+      "reason": "Reuse the neutral clinic relay setting for the registered-room and second-move calls. No private room or address, new treatment, completed promise or erased exposure is pictured. Nia remains the actual speaking portrait; the existing painting does not invent a new location.",
+      "scenes": [
+        "act2_witness_return_registered",
+        "act2_witness_return_relocated"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/ordinary-rest.jpg",
+      "reason": "Reuse the neutral clinic work/rest setting for Lumen answering the unkept shift. The empty chair and water depict no completed shift, forgiveness, treatment or extra privacy. Lumen is identified by the matching existing portrait and exact new dialogue.",
+      "scenes": [
+        "act3_witness_shift_return"
+      ]
     }
   ],
   "variants": [
@@ -1180,7 +1205,10 @@
         "act2_witness_support",
         "act3_nia_contact",
         "act3_testimony_nia",
-        "act3_witness_visit"
+        "act3_witness_visit",
+        "act2_witness_return_private",
+        "act2_witness_return_registered",
+        "act2_witness_return_relocated"
       ],
       "reason": "Reviewed portrait for this actual actor during explicitly bound, revealed audible dialogue. Existing scene/flag expressions apply to this actor only; the scene’s setting and canonical story speaker remain unchanged."
     },
@@ -1273,7 +1301,9 @@
         "lumen_cold",
         "lumen_deal",
         "memory_publication",
-        "vault_quiet"
+        "vault_quiet",
+        "act2_witness_return_private",
+        "act3_witness_shift_return"
       ],
       "reason": "Reviewed portrait for this actual actor during explicitly bound, revealed audible dialogue. Existing scene/flag expressions apply to this actor only; the scene’s setting and canonical story speaker remain unchanged."
     },
