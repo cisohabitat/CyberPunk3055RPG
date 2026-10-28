@@ -1,5 +1,7 @@
 # Saint Shard
 
+The [visual-direction phase](docs/VISUAL_DIRECTION_PHASE4.md) stages fourteen archive, bargain, personal-return and finale moments. Scene/Person/Detail artwork controls offer four new identity-matched listening and prop paintings, with one image mounted at a time and prose first on phones. Existing story words, voices, primary paintings, saves and sound mixing remain intact. The expanded gallery contains 163 primary artworks. These presentation controls apply to eligible scenes in existing runs too. They reset when the scene changes, preserve a playing voice and remain absent in text-only mode. Full phone imagery and extra view controls add reading/keyboard travel; the phase report retains matched campaign measurements.
+
 The [emotional-payoff phase](docs/EMOTIONAL_PAYOFF_PHASE3.md) adds new-run personal pauses with Edda and Kerr, shaped by actual archive and collection outcomes. Prepared, failed, deferred, canceled and uncollected work keep different closing moments. Each of the four original finales has a new acted closing beat before the existing factual aftermath. Ten matching stock performances retain the established actors; fitting records/stall/memorial art and all preceding media stay intact. Start a new run for this phase.
 
 The [encounter-craft phase](docs/ENCOUNTER_CRAFT_PHASE2.md) adds optional new-run archive comparison and scoped execution, plus Kerr’s negotiated fare/security bargain. Read the actual descriptions, choose corroboration or an issuing-key test, and preserve the result’s limits. Cash or a pledged tool stays at risk until an actual private handover; self-funding, refusal and early cancellation remain possible. Nine matching stock Edda/Kerr performances accompany eight explicitly illustrated scenes using fitting existing art. Legacy campaigns and saves keep their paths.
@@ -23,7 +25,7 @@ This is original fiction. It is not affiliated with any studio or with any exist
 
 Read the [project description](docs/PROJECT_DESCRIPTION.md) for a short repository summary, game overview and the latest campaign and character improvements.
 
-Choose **Artwork gallery** on the main page, or open `/artwork`, to browse all 159 primary art entries, including character portraits and cast-card crops. Confirm the spoiler notice before opening the collection; later scenes and all four endings are included. Search, category filters, 24-entry pages and the zoom viewer let you inspect the art without changing your run. Smaller responsive deliveries and previews are grouped with the main image. Text-only artwork and saved sound settings remain respected. See the [gallery details and validation](docs/ARTWORK_GALLERY.md).
+Choose **Artwork gallery** on the main page, or open `/artwork`, to browse all 163 primary art entries, including character portraits and cast-card crops. Confirm the spoiler notice before opening the collection; later scenes and all four endings are included. Search, category filters, 24-entry pages and the zoom viewer let you inspect the art without changing your run. Smaller responsive deliveries and previews are grouped with the main image. Text-only artwork and saved sound settings remain respected. See the [gallery details and validation](docs/ARTWORK_GALLERY.md).
 
 ## Play locally
 

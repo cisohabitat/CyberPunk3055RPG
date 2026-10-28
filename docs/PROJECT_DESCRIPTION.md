@@ -81,3 +81,5 @@ The [witness return conversations](WITNESS_RETURN_CONVERSATIONS.md) add four opt
 The [encounter-craft phase](ENCOUNTER_CRAFT_PHASE2.md) adds a written source-comparison desk, scoped archive execution and Kerr’s real cash/tool/fare negotiation for new runs, with earned returns, matching stock voices and fitting existing artwork. The grade remains a provisional internal 8.6.
 
 AAA craft Phase 3 adds outcome-aware personal returns with Edda and Kerr and revised closing beats at all four existing finales, with ten matching stock voices and fitting existing art. New runs opt in; older campaigns retain their paths. The provisional internal assessment remains 8.6 pending broader craft review. See [the emotional-payoff report](EMOTIONAL_PAYOFF_PHASE3.md).
+
+AAA craft Phase 4 adds explicit visual direction at fourteen archive, bargain, personal-return and finale scenes. Optional Scene/Person/Detail views include four new matching paintings; the gallery now has 163 primary entries. Presentation preserves story, source limits, voices, saves and sound mixing. See [the phase report](VISUAL_DIRECTION_PHASE4.md).

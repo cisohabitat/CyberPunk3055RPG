@@ -10,6 +10,7 @@ import previews from "../qa/media/art-previews.json";
 import branding from "../qa/media/title-branding.json";
 import kerr from "../qa/media/kerr-confrontation.json";
 import mara from "../qa/media/mara-relationship.json";
+import visual from "../qa/media/aaa-visual-direction.json";
 import { paintedActor, sceneIllustration } from "./art";
 
 const sha = (path: string) => createHash("sha256").update(readFileSync(path)).digest("hex");
@@ -44,7 +45,7 @@ it("records every current art delivery and explicitly corrects the missed visual
   const files = readdirSync("public/art", { recursive: true }).filter((p): p is string => typeof p === "string" && p.endsWith(".jpg")).map(p => `public/art/${p}`).sort();
   // Preserve the preceding review verbatim; additions carry a separate cohort.
   assert.equal(sha("qa/media/anatomy-art-review.json"), branding.anatomySnapshotSha256);
-  const additions = [...branding.assets, ...district.artAssets, ...techniques.artAssets, ...cinematic.artAssets, ...kerr.artAssets, ...mara.artAssets].flatMap(a => a.files).filter(f => f.path.endsWith(".jpg"));
+  const additions = [...branding.assets, ...district.artAssets, ...techniques.artAssets, ...cinematic.artAssets, ...kerr.artAssets, ...mara.artAssets, ...visual.artAssets].flatMap(a => a.files).filter(f => f.path.endsWith(".jpg"));
   const rows = [...review.primary, ...review.derivatives, ...additions];
   assert.deepEqual(rows.map(r => r.path).sort(), files);
   assert.equal(new Set(rows.map(r => r.path)).size, rows.length);

@@ -1,6 +1,7 @@
 import decisions from "../qa/media/scene-art.json";
 import { sceneBackdrop, portraitArt, sceneIllustration, PORTRAIT_STAGING, ILLUSTRATION_STAGING } from "./art";
 import type { Scene } from "./types";
+import { VISUAL_DIRECTIONS } from "./visual-direction";
 
 export type SceneArtDecision = {
   treatment: "illustration" | "portrait" | "background" | "text";
@@ -10,7 +11,7 @@ export type SceneArtDecision = {
 
 /** Authoring/QA only: never silently assign art to a newly added scene. */
 export function auditSceneArt(scenes: Record<string, Scene>, source: unknown = decisions): Record<string, SceneArtDecision> {
-  const manifest = source as { version?: unknown; decisions?: unknown; variants?: unknown; illustrationVariants?: unknown } | null;
+  const manifest = source as { version?: unknown; decisions?: unknown; variants?: unknown; illustrationVariants?: unknown; sequenceViews?: unknown } | null;
   if (!manifest || manifest.version !== 1 || !Array.isArray(manifest.decisions)) throw new Error("Invalid scene art manifest");
   const result: Record<string, SceneArtDecision> = {};
   for (const entry of manifest.decisions) {
@@ -33,6 +34,12 @@ export function auditSceneArt(scenes: Record<string, Scene>, source: unknown = d
   }
   const missing = Object.keys(scenes).filter((id) => !Object.hasOwn(result, id));
   if (missing.length) throw new Error(`Missing scene art decision: ${missing.join(", ")}`);
+  const views = Object.entries(VISUAL_DIRECTIONS).map(([scene, direction]) => ({ scene, ...(direction.person ? { personSpeaker: direction.personSpeaker, person: direction.person } : {}), detail: direction.detail }));
+  if (JSON.stringify(manifest.sequenceViews) !== JSON.stringify(views)) throw new Error("Sequence view catalog disagrees with explicit visual direction");
+  for (const view of views) {
+    if (!scenes[view.scene] || view.person && scenes[view.scene].speaker !== view.personSpeaker) throw new Error(`Sequence view actor mismatch: ${view.scene}`);
+    for (const image of [view.person, view.detail]) if (image && (!image.caption.trim() || !image.description.trim() || !/^\/art\/[a-z0-9_-]+\.jpg$/.test(image.src) || !/^\/art\/[a-z0-9_-]+\.jpg$/.test(image.small))) throw new Error(`Invalid sequence view delivery: ${view.scene}`);
+  }
   if (JSON.stringify(manifest.variants) !== JSON.stringify(PORTRAIT_STAGING)) throw new Error("Conditional portrait catalog disagrees with conduct staging");
   for (const rule of PORTRAIT_STAGING) for (const id of rule.scenes) {
     if (!scenes[id] || scenes[id].speaker !== rule.speaker) throw new Error(`Conditional portrait speaker mismatch: ${id}`);

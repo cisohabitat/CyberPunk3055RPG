@@ -1,5 +1,6 @@
 "use client";
 import { cinematicSequence, cinematicDetail } from "@/lib/cinematic-sequences";
+import { visualDirection } from "@/lib/visual-direction";
 
 import { choiceReceipt } from "@/lib/play-feedback";
 import { ConversationContext } from "./ConversationContext";
@@ -114,7 +115,9 @@ export function PlayScreen({
   const finale = finaleScene(scene.id);
   const investigation = investigationScene(scene.id);
   const sequence = cinematicSequence(scene.id);
-  const direction = pivotalScene(scene.id) ?? finale ?? investigation ?? sequence;
+  const existingDirection = pivotalScene(scene.id) ?? finale ?? investigation ?? sequence;
+  const visual = visualDirection(scene.id);
+  const direction = existingDirection ?? visual;
   const choices = presentChoices(state, scene);
   const canal = scene.id === "act2_middle";
   const decisionFirst = decisionFirstScene(scene.id);
@@ -193,11 +196,11 @@ export function PlayScreen({
   }, [preferences.motion]);
 
   useEffect(() => {
-    setBed(sound, mood, district, undefined, finale ? "closing" : sequence?.focus ?? (direction ? "intimate" : "normal"));
+    setBed(sound, mood, district, undefined, finale ? "closing" : sequence?.focus ?? (existingDirection ? "intimate" : "normal"));
     const previous = priorSound.current;
     if (sound && (!previous?.on || previous.location !== scene.location || Boolean(scene.ending) !== previous.ending)) playCue(locationCue(scene.location, Boolean(scene.ending)));
     priorSound.current = { location: scene.location, on: preferences.sound, ending: Boolean(scene.ending) };
-  }, [sound, preferences.sound, mood, district, scene.id, scene.location, scene.ending, direction, finale, sequence]);
+  }, [sound, preferences.sound, mood, district, scene.id, scene.location, scene.ending, existingDirection, finale, sequence]);
 
   useEffect(() => () => { setBed(false); }, []);
 
@@ -424,7 +427,7 @@ export function PlayScreen({
             {scene.finale && <h1 className="finale-title" data-testid="ending-title">{scene.endingTitle}</h1>}
             {restoreNotice && <p className="restore-notice" role="status" data-testid="restore-notice">{restoreNotice}</p>}
             <ChapterTransition sceneId={scene.id} />
-            {direction ? <PivotalScene sceneId={scene.id} detail={cinematicDetail(scene.id)} direction={direction} finale={Boolean(finale)} investigation={Boolean(investigation)} art={preferences.artwork !== "none" ? illustration : undefined}>{narrative}</PivotalScene>
+            {direction ? <PivotalScene sceneId={scene.id} detail={visual?.detail ?? cinematicDetail(scene.id)} person={visual?.person} visual={Boolean(visual)} direction={direction} finale={Boolean(finale)} investigation={Boolean(investigation)} art={preferences.artwork !== "none" ? illustration : undefined}>{narrative}</PivotalScene>
               : preferences.artwork !== "none" && illustration && <SceneIllustration art={illustration} reading />}
             {canConsultSources(state) && <div className="investigation-tools"><button className="ghost" type="button" data-testid="consult-sources" aria-haspopup="dialog" disabled={Boolean(activeChoice) || modalOpen} onClick={() => setNotebookOpen(true)}>Consult acquired sources</button></div>}
             {scene.id === "memory_table" && <MemoryPlate key={scene.id} state={state} choices={choices} onInspect={pick} artwork={preferences.artwork !== "none"} numberShortcuts={preferences.numberShortcuts} />}

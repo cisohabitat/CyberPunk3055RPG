@@ -18,11 +18,11 @@ async function main() {
   const route = option("--route", "qa/routes/integration-names.json");
   const width = Number(option("--width", "390")), artwork = option("--artwork", "none"), reading = option("--reading", "paragraph");
   if (![320, 390, 1440].includes(width) || !["none", "full"].includes(artwork) || !["paragraph", "all"].includes(reading)) throw new Error("Unsupported QA profile");
-  const sound = args.includes("--sound"), profiles = args.includes("--profiles"), review = args.includes("--review"), out = option("--out", "qa/production/reports/player-experience.json");
+  const sound = args.includes("--sound"), profiles = args.includes("--profiles"), review = args.includes("--review"), shots = args.includes("--shots"), out = option("--out", "qa/production/reports/player-experience.json");
   const spec = JSON.parse(readFileSync(route, "utf8")) as ReplaySpec;
   const revision = execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8" }).trim();
   const dirty = Boolean(execFileSync("git", ["status", "--porcelain"], { encoding: "utf8" }).trim());
-  const testedSources = Object.fromEntries(["lib/emotional-payoff.ts", "lib/story/emotional-payoff.ts", "qa/media/emotional-payoff.json", "qa/media/emotional-payoff-dialogue-bindings.json", "qa/media/emotional-payoff-dialogue-lines.json", "qa/media/emotional-payoff-dialogue-provenance.json", "components/ArchiveQuestionDesk.tsx", "lib/encounter-craft.ts", "lib/story/encounter-craft.ts", "qa/media/encounter-craft.json", "qa/media/encounter-craft-dialogue-bindings.json", "qa/media/encounter-craft-dialogue-lines.json", "qa/media/encounter-craft-dialogue-provenance.json", "lib/decision-pacing.ts", "lib/witness-return.ts", "lib/story/witness-return.ts", "qa/media/witness-return.json", "qa/media/witness-return-dialogue-bindings.json", "qa/media/witness-return-dialogue-lines.json", "qa/media/witness-return-dialogue-provenance.json", "lib/mara-account.ts", "lib/story/mara-account.ts", "qa/media/mara-relationship.json", "qa/media/mara-account-dialogue-bindings.json", "qa/media/mara-account-dialogue-lines.json", "qa/media/mara-account-dialogue-provenance.json", "lib/kerr-terms.ts", "lib/story/kerr-terms.ts", "qa/media/kerr-confrontation.json", "qa/media/kerr-terms-dialogue-bindings.json", "qa/media/kerr-terms-dialogue-lines.json", "qa/media/kerr-terms-dialogue-provenance.json", "lib/campaign-presentation.ts", "components/ArchivePlanner.tsx", "qa/production/campaign-observation.ts", "lib/campaign-thread.ts", "components/CampaignThread.tsx", "qa/production/integrated-campaign.ts", "lib/cinematic-sequences.ts", "components/SequenceArtwork.tsx", "components/PivotalScene.tsx", "qa/media/cinematic-sequences.json", "lib/build-techniques.ts", "lib/story/build-techniques.ts", "lib/technique-dialogue.ts", "components/TechniqueBoard.tsx", "qa/media/technique-dialogue-bindings.json", "qa/media/technique-dialogue-lines.json", "qa/media/technique-dialogue-provenance.json", "lib/sound.ts", "components/GameApp.tsx", "components/CreateScreen.tsx", "lib/runner-names.ts", "components/PlayScreen.tsx", "components/Portrait.tsx", "app/globals.css", "components/ArchiveCatalog.tsx", "components/FinaleReflection.tsx", "components/PivotalScene.tsx", "lib/pivotal-scenes.ts", "lib/finale-direction.ts", "lib/investigation-scenes.ts", "lib/scene-cues.ts", "lib/art.ts", "lib/district-response.ts", "lib/district-dialogue.ts", "lib/story/district-response.ts", "components/DistrictLedger.tsx", "qa/media/district-dialogue-bindings.json", "lib/archive-catalog.ts", "components/VoiceLine.tsx", "components/Sheet.tsx", "components/CastCard.tsx", "lib/character-profiles.ts", "qa/production/keyboard.ts", "scripts/player-experience.ts", route].map(file => [file, createHash("sha256").update(readFileSync(file)).digest("hex")]));
+  const testedSources = Object.fromEntries(["lib/visual-direction.ts", "qa/media/aaa-visual-direction.json", "lib/emotional-payoff.ts", "lib/story/emotional-payoff.ts", "qa/media/emotional-payoff.json", "qa/media/emotional-payoff-dialogue-bindings.json", "qa/media/emotional-payoff-dialogue-lines.json", "qa/media/emotional-payoff-dialogue-provenance.json", "components/ArchiveQuestionDesk.tsx", "lib/encounter-craft.ts", "lib/story/encounter-craft.ts", "qa/media/encounter-craft.json", "qa/media/encounter-craft-dialogue-bindings.json", "qa/media/encounter-craft-dialogue-lines.json", "qa/media/encounter-craft-dialogue-provenance.json", "lib/decision-pacing.ts", "lib/witness-return.ts", "lib/story/witness-return.ts", "qa/media/witness-return.json", "qa/media/witness-return-dialogue-bindings.json", "qa/media/witness-return-dialogue-lines.json", "qa/media/witness-return-dialogue-provenance.json", "lib/mara-account.ts", "lib/story/mara-account.ts", "qa/media/mara-relationship.json", "qa/media/mara-account-dialogue-bindings.json", "qa/media/mara-account-dialogue-lines.json", "qa/media/mara-account-dialogue-provenance.json", "lib/kerr-terms.ts", "lib/story/kerr-terms.ts", "qa/media/kerr-confrontation.json", "qa/media/kerr-terms-dialogue-bindings.json", "qa/media/kerr-terms-dialogue-lines.json", "qa/media/kerr-terms-dialogue-provenance.json", "lib/campaign-presentation.ts", "components/ArchivePlanner.tsx", "qa/production/campaign-observation.ts", "lib/campaign-thread.ts", "components/CampaignThread.tsx", "qa/production/integrated-campaign.ts", "lib/cinematic-sequences.ts", "components/SequenceArtwork.tsx", "components/PivotalScene.tsx", "qa/media/cinematic-sequences.json", "lib/build-techniques.ts", "lib/story/build-techniques.ts", "lib/technique-dialogue.ts", "components/TechniqueBoard.tsx", "qa/media/technique-dialogue-bindings.json", "qa/media/technique-dialogue-lines.json", "qa/media/technique-dialogue-provenance.json", "lib/sound.ts", "components/GameApp.tsx", "components/CreateScreen.tsx", "lib/runner-names.ts", "components/PlayScreen.tsx", "components/Portrait.tsx", "app/globals.css", "components/ArchiveCatalog.tsx", "components/FinaleReflection.tsx", "components/PivotalScene.tsx", "lib/pivotal-scenes.ts", "lib/finale-direction.ts", "lib/investigation-scenes.ts", "lib/scene-cues.ts", "lib/art.ts", "lib/district-response.ts", "lib/district-dialogue.ts", "lib/story/district-response.ts", "components/DistrictLedger.tsx", "qa/media/district-dialogue-bindings.json", "lib/archive-catalog.ts", "components/VoiceLine.tsx", "components/Sheet.tsx", "components/CastCard.tsx", "lib/character-profiles.ts", "qa/production/keyboard.ts", "scripts/player-experience.ts", route].map(file => [file, createHash("sha256").update(readFileSync(file)).digest("hex")]));
   const browser = await chromium.launch({ executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH, args: ["--no-sandbox"] });
   const page = await browser.newPage({ viewport: { width, height: width === 1440 ? 900 : 844 }, reducedMotion: "reduce" });
   const errors: string[] = [], failedMedia: string[] = [], mediaRequests = new Set<string>();
@@ -38,6 +38,24 @@ async function main() {
   const consultedProfiles = new Set<string>();
   const observations: Awaited<ReturnType<typeof observeCampaign>>[] = [];
   const activate = async (target: Parameters<typeof keyboardActivate>[1]) => { tabs += await keyboardActivate(page, target); };
+  const shotReviews: { sceneId: string; view: string; src: string }[] = [];
+  const reviewShots = async (sceneId: string) => {
+    if (!shots) return;
+    const group = page.getByTestId("sequence-shots");
+    if (!await group.count()) return;
+    const before = await saved();
+    for (const name of ["Person", "Detail", "Scene"]) {
+      const button = group.getByRole("button", { name, exact: true });
+      if (!await button.count()) continue;
+      await activate(button);
+      const image = page.getByTestId("scene-illustration").locator("img");
+      await expect(image).toHaveCount(1); await image.scrollIntoViewIfNeeded();
+      await image.evaluate((img: HTMLImageElement) => img.decode());
+      await expect(group).toHaveAttribute("data-view", name.toLowerCase());
+      shotReviews.push({ sceneId, view: name, src: (await image.getAttribute("src"))! });
+      expect(await saved()).toEqual(before);
+    }
+  };
   const start = Date.now();
   try {
     await page.goto(url);
@@ -75,6 +93,7 @@ async function main() {
       const showRest = page.getByTestId("show-rest");
       if (await showRest.count()) { await activate(showRest); reveals++; }
       if (review) observations.push(await observeCampaign(page, before.sceneId, index, out));
+      await reviewShots(before.sceneId);
       const thread = page.getByTestId("campaign-thread");
       if (await thread.count()) {
         await activate(thread.locator(":scope > summary"));
@@ -150,6 +169,7 @@ async function main() {
     const finaleRest = page.getByTestId("show-rest");
     if (await finaleRest.count()) { await activate(finaleRest); reveals++; }
     if (review) observations.push(await observeCampaign(page, final.sceneId, spec.steps.length, out));
+    await reviewShots(final.sceneId);
     const finaleLine = page.getByTestId("voice-line").getByRole("button", { name: /^Listen to / });
     if (sound && await finaleLine.count()) {
       await activate(finaleLine); await expect(page.getByTestId("voice-line")).toContainText("Playing selected dialogue"); voices++;
@@ -170,7 +190,7 @@ async function main() {
     if (!sound) expect([...mediaRequests].filter(path => path.startsWith("/audio/"))).toEqual([]);
     mkdirSync(dirname(out), { recursive: true });
     const environment = { browser: "Chromium", browserVersion: browser.version(), platform: process.platform, nodeVersion: process.version, device: "cloud automation host; synthetic viewport" };
-    const result = { revision, dirty, testedSources, environment, url, route, width, artwork, reading, sound, profiles, consultedProfiles: [...consultedProfiles], input: "Tab, Shift+Tab, Enter, Space, arrows and typing; no pointer actions or programmatic focus", dice: "authored/directed", elapsedSeconds: (Date.now() - start) / 1000, visits: scenes.length, scenes, tabs, reloads, reveals, voices, completedVoices, interruptions, choiceResponseMs, final: { sceneId: final.sceneId, creds: final.creds, strain: final.strain, rolls: final.rolls.map(roll => roll.roll) }, finalAudio: stopped, initialMediaRequests, mediaRequests: [...mediaRequests], errors, failedMedia, limitations: "Internal authored campaign, not blind or fresh-player observation. Synthetic viewport and pagehide, not physical hardware or app switch. Voice completion and cleanup do not establish listening quality. Transition times include UI review/reloads; they are not INP or field percentiles." };
+    const result = { revision, dirty, testedSources, environment, url, route, width, artwork, reading, sound, profiles, shots, shotReviews, consultedProfiles: [...consultedProfiles], input: "Tab, Shift+Tab, Enter, Space, arrows and typing; no pointer actions or programmatic focus", dice: "authored/directed", elapsedSeconds: (Date.now() - start) / 1000, visits: scenes.length, scenes, tabs, reloads, reveals, voices, completedVoices, interruptions, choiceResponseMs, final: { sceneId: final.sceneId, creds: final.creds, strain: final.strain, rolls: final.rolls.map(roll => roll.roll) }, finalAudio: stopped, initialMediaRequests, mediaRequests: [...mediaRequests], errors, failedMedia, limitations: "Internal authored campaign, not blind or fresh-player observation. Synthetic viewport and pagehide, not physical hardware or app switch. Voice completion and cleanup do not establish listening quality. Transition times include UI review/reloads; they are not INP or field percentiles." };
     writeFileSync(out, JSON.stringify({ ...result, ...(review ? { observations, observerSha256: createHash("sha256").update(readFileSync("qa/production/campaign-observation.ts")).digest("hex") } : {}) }, null, 2));
     console.log(JSON.stringify({ route, visits: scenes.length, tabs, reloads, reveals, voices, interruptions, finale: final.sceneId, errors, failedMedia }));
   } finally { await browser.close(); }

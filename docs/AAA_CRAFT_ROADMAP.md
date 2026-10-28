@@ -58,6 +58,8 @@ Stage the selected anchor sequences with deliberate establishing views, reaction
 
 **Exit:** review whole sequences at phone/desktop/enlarged sizes, including missing-art and text-only delivery. Shots support the current dramatic beat, all visible hands/props and identities are checked, and optional detail controls do not interrupt reading or voices. Existing art is reused where it still fits.
 
+Phase 4 implementation stages fourteen explicit archive/bargain/return/finale moments with optional Scene/Person/Detail selections. Four new reference-matched, hand-free listening/prop paintings add twelve responsive/preview deliveries; finales reuse the neutral memorial detail. Scene remains the original primary/earned view. Words, choices, actors, all 219 campaigns / 15,496 visits and 795 existing art/audio deliveries remain unchanged. Phone prose comes first; desktop preserves paired sticky art. Additional controls and full phone imagery have a measurable navigation cost, so compare whole campaigns rather than assuming a pacing gain. Exact historical snapshots, voice continuity, bed focus, save/preferences and full publication gates remain required. See [Phase 4 implementation and review](VISUAL_DIRECTION_PHASE4.md) and its candidate evidence. The provisional 8.6 estimate remains unchanged.
+
 ## Phase 5: performance direction
 
 Audition the complete anchor scenes rather than individual file counts. Review emotional intention, emphasis, pronunciation, response spacing and intelligibility over actual beds. Retake weak stock performances where feasible; preserve exact words and character identity. Keep ASR and signal measurements as technical checks, separate from expressive acceptance.

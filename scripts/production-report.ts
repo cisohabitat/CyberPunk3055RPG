@@ -19,6 +19,7 @@ import missions from "../qa/production/mission-audit.json";
 import { auditMissions } from "../lib/mission-audit";
 import { auditSceneArt } from "../lib/scene-art";
 import { sceneIllustration, PORTRAIT_STAGING } from "../lib/art";
+import { VISUAL_DIRECTIONS } from "../lib/visual-direction";
 
 const directory = resolve(process.argv.find((arg) => arg.startsWith("--out="))?.slice(6) ?? "qa/production/reports");
 const release = process.argv.includes("--release");
@@ -59,8 +60,13 @@ function inventory(directory: string, group: string) {
 for (const [id, decision] of Object.entries(sceneArt)) {
   for (const asset of [decision.asset, sceneIllustration(id)?.small]) if (asset && !existsSync(`public${asset}`)) throw new Error(`Missing scene artwork ${id}: ${asset}`);
 }
-for (const source of ["lib/art.ts", "components/Portrait.tsx"]) {
+for (const source of ["lib/art.ts", "lib/visual-direction.ts", "components/Portrait.tsx"]) {
   for (const match of readFileSync(source, "utf8").matchAll(/\/art\/[a-z0-9_-]+\.jpg/g)) if (!existsSync(`public${match[0]}`)) throw new Error(`Missing referenced artwork ${match[0]}`);
+}
+for (const [id, direction] of Object.entries(VISUAL_DIRECTIONS)) {
+  for (const shot of [direction.person, direction.detail]) for (const asset of [shot?.src, shot?.small]) {
+    if (asset && !existsSync(`public${asset}`)) throw new Error(`Missing sequence artwork ${id}: ${asset}`);
+  }
 }
 inventory("public/art", "artwork"); inventory("public/audio", "audio"); inventory(".next/static", "build");
 const violations = budgetViolations(assets, budgets);
