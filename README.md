@@ -86,6 +86,8 @@ npm run story:report -- story-report.json
 
 The story report maps choices, gates, destinations, and consumed tools, then runs 900 seeded campaigns. Simulations check completion, not whether players find a build satisfying or balanced. Browser traces and screenshots are retained for failures. Diagnostics can be exported from Settings; the game sends no diagnostics automatically and the report excludes names, choices, and save contents.
 
+The character-profile keyboard review captures its current viewport while a profile is open, then retains a full-page layout image after every profile has been closed and checked. Chromium can temporarily emulate a 1×1 viewport for a full-page screenshot; that must not remount the responsive sheet midway through the keyboard assertions. All fifteen profile, portrait, focus, save and accessibility checks remain in place, with their original deadlines and hosted workers.
+
 See [production direction](docs/PRODUCTION.md), [release gates](docs/RELEASE.md), and [credits and asset provenance](CREDITS.md). External playtests, manual screen-reader review, asset rights confirmation, and recorded voice performances remain production work, not completed certification.
 
 ## Changing the game

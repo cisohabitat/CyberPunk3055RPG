@@ -1,0 +1,129 @@
+{
+  "candidateParent": "3b482891c57e5012f4a61cf7d0558dc9ae897c40",
+  "initialWorkflowRun": 40601716311,
+  "initialPhoneJob": 122532638158,
+  "failedCase": "tests/character-profiles.spec.ts: all fifteen earned profiles open by keyboard without changing the run at 1440px",
+  "before": {
+    "repeats": 10,
+    "failed": 4,
+    "passed": 6,
+    "retries": 0,
+    "workers": 4,
+    "logSha256": "3d0d17451068530c32f2dcf01994a69c13a6d99a9cbf805ed669afb15c38d9d0"
+  },
+  "discardedNativeDisclosureAttempt": {
+    "repeats": 20,
+    "failed": 6,
+    "passed": 14,
+    "logSha256": "1e298f2b31b93baa09b69cc2a6a93da01c419a57f8139ce721e27e7a2e7db972",
+    "productionChangeRetained": false
+  },
+  "captureObservation": {
+    "rawObserverSha256": "b3d094f91cf188b4ad0b22c491222557bca04dad5cbf9a06e82ccb8638aaf503",
+    "events": [
+      {
+        "type": "keydown",
+        "key": "Enter",
+        "node": 1,
+        "width": 1440,
+        "height": 900,
+        "narrow": false,
+        "sheet": "sheet",
+        "people": true,
+        "open": false,
+        "content": false,
+        "time": 2372.2000000029802
+      },
+      {
+        "type": "resize",
+        "node": 1,
+        "width": 1,
+        "height": 1,
+        "narrow": true,
+        "sheet": "sheet",
+        "people": true,
+        "open": true,
+        "content": true,
+        "time": 2712.2000000029802
+      },
+      {
+        "type": "media",
+        "node": 1,
+        "width": 1,
+        "height": 1,
+        "narrow": true,
+        "sheet": "sheet",
+        "people": true,
+        "open": true,
+        "content": true,
+        "time": 2712.2999999970198
+      },
+      {
+        "type": "toggle",
+        "node": 2,
+        "width": 1440,
+        "height": 900,
+        "narrow": false,
+        "sheet": "sheet",
+        "people": true,
+        "open": false,
+        "content": false,
+        "time": 2757.3999999910593
+      },
+      {
+        "type": "keydown",
+        "key": "Enter",
+        "node": 2,
+        "width": 1440,
+        "height": 900,
+        "narrow": false,
+        "sheet": "sheet",
+        "people": true,
+        "open": false,
+        "content": false,
+        "time": 3331.7000000029802
+      },
+      {
+        "type": "toggle",
+        "node": 2,
+        "width": 1440,
+        "height": 900,
+        "narrow": false,
+        "sheet": "sheet",
+        "people": true,
+        "open": true,
+        "content": false,
+        "time": 3335.8999999910593
+      }
+    ],
+    "interpretation": "Chromium full-page screenshot temporarily reports a 1x1 viewport, crossing the responsive sheet breakpoint and replacing the profile node. The next Enter opens the new closed profile."
+  },
+  "correction": "Viewport capture during keyboard sequence; introduction remains asserted afterward. Full-page layout capture and an additional exact save assertion occur after all fifteen profile close assertions. No original assertion, deadline, worker or gate weakened. Original game/media restored unchanged.",
+  "after": {
+    "repeats": 20,
+    "passed": 20,
+    "failed": 0,
+    "retries": 0,
+    "workers": 4,
+    "logSha256": "4fc6041435d1d5ceef5b41b9c1ee51b9061c73411422369980861c49d9b5cbad"
+  },
+  "cancelledDeployment": "dpl_D8tTQFHh4ry5GPECJkmzDXMCjt6Y",
+  "releaseRequirement": "Fresh full exact-commit CI and READY alias verification before live gallery QA.",
+  "limits": "Internal synthetic browser evidence; not physical-device or independent human acceptance.",
+  "directedFollowup": {
+    "passed": 40,
+    "failed": 0,
+    "workers": 4,
+    "retries": 0,
+    "engines": [
+      "Chromium",
+      "WebKit"
+    ],
+    "suites": [
+      "art-gallery",
+      "guide",
+      "character-profiles"
+    ],
+    "logSha256": "e12abd7b9c29765fb73b58fea48baeed40bd217f17586cea66d35b889cf07a2d"
+  }
+}

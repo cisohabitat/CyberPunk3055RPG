@@ -49,7 +49,13 @@ for (const [width, artwork] of [[390, "full"], [1440, "full"], [320, "none"]] as
         expect(await image.evaluate((image: HTMLImageElement) => image.decode().then(() => image.naturalWidth))).toBeGreaterThan(300);
         expect((await image.boundingBox())!.width).toBeGreaterThan(120);
       } else await expect(card.locator("img")).toHaveCount(0);
-      if (person.speaker === "Quill") await page.screenshot({ path: test.info().outputPath(`profile-${width}.png`), fullPage: true });
+      // Chromium's beyond-viewport capture can briefly emulate a 1x1 viewport,
+      // remounting the responsive sheet. Keep this keyboard sequence on its real
+      // viewport, then retain the full-page layout artifact after every closure.
+      if (person.speaker === "Quill") {
+        await page.screenshot({ path: test.info().outputPath(`profile-${width}.png`), fullPage: false });
+        await expect(card.getByTestId("character-profile")).toContainText(CHARACTER_PROFILES[person.speaker].introduction);
+      }
       expect(await saved(page)).toBe(before);
       await about.focus(); await page.keyboard.press("Enter");
       await expect(card.getByTestId("character-profile")).toHaveCount(0);
@@ -62,6 +68,8 @@ for (const [width, artwork] of [[390, "full"], [1440, "full"], [320, "none"]] as
       await expect(page.getByRole("button", { name: "Sheet", exact: true })).toBeFocused();
     }
     await expect(page.getByTestId("goal")).toBeVisible();
+    await page.screenshot({ path: test.info().outputPath(`profiles-layout-${width}.png`), fullPage: true });
+    expect(await saved(page)).toBe(before);
   });
 }
 

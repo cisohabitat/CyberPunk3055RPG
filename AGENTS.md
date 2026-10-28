@@ -24,6 +24,8 @@ The main-page Artwork gallery link opens `/artwork` inside the persistent game l
 
 Opening the spoiler notice is deliberate and required before revealing any artwork titles, images or ending labels. It grants no discoveries and writes no save or codex. Search, category changes, 24-entry pagination, image failures and zoom must preserve save/preferences; Settings remains an explicit preference action. Text-only art makes no gallery image requests. Reuse the existing accessible artwork viewer, passing the catalog's natural dimensions so portraits and wide art fit without clipping. Preserve menu music handoff, Stop, keyboard focus, browser Back and all production gates. The gallery is written UI and existing art, with no new story scene or quotation needing a new recording. See docs/ARTWORK_GALLERY.md for candidate evidence and the local-only WebKit preflight limitation; never propagate that diagnostic setting into CI.
 
+Profile capture follow-up: Chromium's full-page screenshot can briefly report a 1×1 viewport, crossing the sheet's responsive breakpoint and replacing its profile nodes. Capture the open Quill profile in the current viewport during the keyboard sequence; retain the full-page layout capture after all fifteen close assertions and check the save again afterward. Do not add production resize/toggle workarounds for this capture artifact, remove a portrait/identity/focus/save/accessibility assertion, change the 90-second case limit, add a skip/retry, or reduce hosted workers. The original CastCard implementation and every game/media byte remain unchanged by this harness correction.
+
 ## Commands
 
 ```bash
