@@ -1,6 +1,6 @@
 # Saint Shard
 
-The [AAA craft roadmap](docs/AAA_CRAFT_ROADMAP.md) records the latest provisional 8.6 internal review and six sequential improvement phases. Phase 1 brings ordinary hub/conversation choices ahead of saved commitments and history, with focus links for review and return. Active preparation, costs, warnings, exact dialogue and matching art/voices remain intact; no new painting or performance is needed for this layout change.
+The [AAA craft roadmap](docs/AAA_CRAFT_ROADMAP.md) records the latest provisional 8.6 internal review and six sequential improvement phases. Phase 1 brings ordinary hub/conversation choices ahead of saved commitments and history, with focus links for review and return that account for the measured sticky-header height at enlarged phone sizes, including text-size changes during play. Active preparation, costs, warnings, exact dialogue and matching art/voices remain intact; no new painting or performance is needed for this layout change.
 
 A solo story RPG in **Kite City, 3055**. You play it in the browser. The run stays on that browser. There is no account and no server save.
 

@@ -65,6 +65,16 @@ import { speakerRole } from "@/lib/story/cast";
 import { actName, currentGoal } from "@/lib/story/goal";
 import type { GameState } from "@/lib/types";
 
+/** Refresh the measured offset on explicit navigation, including after text-size changes. */
+function focusDecisionSection(id: "decision-records" | "choices") {
+  const target = document.getElementById(id);
+  if (!target) return;
+  const headerHeight = document.querySelector(".topbar")?.getBoundingClientRect().height ?? 0;
+  document.documentElement.style.setProperty("--header-h", `${headerHeight + 12}px`);
+  target.focus({ preventScroll: true });
+  target.scrollIntoView({ block: "start", behavior: "instant" });
+}
+
 export function PlayScreen({
   state,
   restoreNotice,
@@ -460,11 +470,8 @@ export function PlayScreen({
                 <div className="decision-help">
                   <h2 id="choices-title">Your next move</h2>
                   {decisionFirst && <a className="decision-record-link" href="#decision-records" data-testid="review-decision-records" onClick={event => {
-                    const target = document.getElementById("decision-records");
-                    if (!target) return;
                     event.preventDefault();
-                    target.focus({ preventScroll: true });
-                    target.scrollIntoView({ block: "start", behavior: "instant" });
+                    focusDecisionSection("decision-records");
                   }}>Review your records</a>}
                   {decisionFirst ? <p className="hint">Review costs before choosing.</p> : <p className="hint">Selecting an option commits it. For a check, review the odds and costs first; Back leaves it unrolled.</p>}
                   {threads.length > 0 && <details className="canal-threads" data-testid="canal-threads" key={scene.id}>
@@ -555,11 +562,8 @@ export function PlayScreen({
                 {recentChoice}
               </section> : <><CampaignThread state={state} choices={choices} />{recentChoice}</>}
               <a className="decision-record-link" href="#choices" data-testid="return-to-choices" onClick={event => {
-                const target = document.getElementById("choices");
-                if (!target) return;
                 event.preventDefault();
-                target.focus({ preventScroll: true });
-                target.scrollIntoView({ block: "start", behavior: "instant" });
+                focusDecisionSection("choices");
               }}>Back to choices</a>
             </section>}
             {scene.memory && scene.id !== "memory_table" && <details className="memory-review" data-testid="memory-review"><summary>Review the inspected memory · {memoryDisposition(state)}</summary><TestimonyBrief state={state} /><MemoryPlate key={scene.id} state={state} choices={choices} onInspect={pick} artwork={preferences.artwork !== "none"} numberShortcuts={preferences.numberShortcuts} /></details>}

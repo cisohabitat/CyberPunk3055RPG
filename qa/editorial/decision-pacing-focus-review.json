@@ -1,0 +1,36 @@
+{
+  "phase": "AAA craft Phase 1: heading visibility correction",
+  "precedingCandidate": "568203247719fca24c7289d9e5bc6e8300767b7f",
+  "initialCandidateEvidence": "qa/editorial/decision-pacing-review.json",
+  "initialHostedRun": {
+    "id": 40678405140,
+    "all22JobsSucceeded": true,
+    "publication": "Not published; its Vercel build was deliberately canceled after visual review found a covered heading."
+  },
+  "canceledDeployment": "dpl_EGio4T3KVR32Sj1g4kvXt1v6PjF9",
+  "problem": "Fixed six-rem record offset could put its heading behind the enlarged mobile sticky header. The measured offset also needs refreshing after an in-scene text-size change.",
+  "correction": "Use the existing measured header variable for record scroll margins and refresh it on each explicit review/back navigation. No automatic preference scroll, new listener or saved state.",
+  "reproducedTextSizeFailure": {
+    "logSha256": "89f4253c3dce89a36d85931b7f92f02767b0a680dd8cd7a037bd826c7e16e3b9",
+    "example": "Heading top 226.52px, actual bar bottom 229.28px before refresh."
+  },
+  "localValidation": {
+    "sourceTestsPassed": 826,
+    "buildAndTypecheck": "passed",
+    "chromiumPassed": 27,
+    "webkitDiagnosticPassed": 27,
+    "workers": 4,
+    "retries": 0,
+    "existingDeadlinesRetained": true,
+    "webkitLimitation": "Local diagnostic host validation disabled; full hosted dependency validation remains required."
+  },
+  "testedSources": {
+    "components/PlayScreen.tsx": "f0c88a47b98c5a24b572373b20e866e4a264739db6bba729a348d9c12f48a2ad",
+    "app/globals.css": "28abf06b55040000910184d5a27d4fbb1d5ed9cfedb32d6d8841288e9f58ae2b",
+    "tests/decision-pacing.spec.ts": "63480f19e8b1fd8d67fe62b43359d40b9a9d1ddadcdaa16742b27987bf2b17b5",
+    "lib/decision-pacing.ts": "aa3905f0f88e669e30dad423ab78a5ff95e5adba1051eebf03f608e20a94b07e"
+  },
+  "preservation": "All 188 campaigns, 13,154 full visits and 776 art/audio files retain the frozen decision-pacing baseline. No story, actor, voice, painting, choice outcome, preference schema or game rule change.",
+  "grade": 8.6,
+  "status": "candidate; new full hosted CI, exact-commit readiness and live checks required"
+}

@@ -17,12 +17,12 @@ const profiles = [
   ["scarce-archive-open", "act3_arrival"],
 ];
 const saved = (page: Page) => page.evaluate(() => ({ run: localStorage.getItem("saint-shard-3055-v1"), preferences: localStorage.getItem("saint-shard-preferences"), codex: localStorage.getItem("saint-shard-codex") }));
-async function open(page: Page, state: GameState, width: number, paragraph = false, sound = false) {
+async function open(page: Page, state: GameState, width: number, paragraph = false, sound = false, textStep = 2) {
   await page.setViewportSize({ width, height: 900 });
-  await page.addInitScript(({ state, width, paragraph, sound }) => {
+  await page.addInitScript(({ state, width, paragraph, sound, textStep }) => {
     if (!localStorage.getItem("saint-shard-3055-v1")) localStorage.setItem("saint-shard-3055-v1", JSON.stringify(state));
-    localStorage.setItem("saint-shard-preferences", JSON.stringify({ sound, autoVoices: sound, reading: paragraph ? "paragraph" : "all", artwork: width === 320 ? "none" : "full", textStep: 2, contrast: "high", motion: "reduce" }));
-  }, { state, width, paragraph, sound });
+    localStorage.setItem("saint-shard-preferences", JSON.stringify({ sound, autoVoices: sound, reading: paragraph ? "paragraph" : "all", artwork: width === 320 ? "none" : "full", textStep, contrast: "high", motion: "reduce" }));
+  }, { state, width, paragraph, sound, textStep });
   await page.goto("/"); await page.getByTestId("continue-run").click();
 }
 for (const width of [390, 1440, 320]) for (const [route, sceneId] of profiles) test(`decisions before records: ${route}/${sceneId} at ${width}px`, async ({ page }) => {
@@ -41,6 +41,10 @@ for (const width of [390, 1440, 320]) for (const [route, sceneId] of profiles) t
     }
   }
   await keyboardActivate(page, page.getByTestId("review-decision-records")); await expect(records).toBeFocused();
+  await expect(records.getByRole("heading", { name: "Commitments and history", exact: true })).toBeInViewport();
+  const recordHeading = await records.getByRole("heading", { name: "Commitments and history", exact: true }).boundingBox();
+  const headerBottom = await page.locator(".topbar").evaluate(node => node.getBoundingClientRect().bottom);
+  expect(recordHeading!.y).toBeGreaterThanOrEqual(headerBottom);
   await expect(records.getByRole("region", { name: "Choice reference" })).toContainText("Selecting an option commits it");
   if (nextStep(state)) await expect(records.getByTestId("objectives")).toContainText(nextStep(state));
   const summary = records.getByTestId("objectives").locator("details > summary").first();
@@ -89,4 +93,19 @@ test("records focus leaves actual automatic dialogue, actor and save intact", as
   expect(await saved(page)).toEqual(before);
   await expect.poll(async () => (await audio()).disposed, { timeout: 20_000 }).toContain(`${line.id}.mp3`);
   expect((await audio()).started.filter(f => f.startsWith("voice-"))).toEqual([`${line.id}.mp3`]); expect(await saved(page)).toEqual(before);
+});
+
+test("record and choice headings remain clear after enlarging text during the scene", async ({ page }) => {
+  const state = routeCheckpoint("scarce-archive-open", "act2_middle"); await open(page, state, 320, false, false, 0);
+  const original = (await saved(page)).run;
+  await page.getByRole("button", { name: "Settings", exact: true }).click();
+  await page.getByLabel("Text size", { exact: true }).selectOption("2"); await page.getByRole("button", { name: "Done", exact: true }).click();
+  const before = await saved(page); expect(before.run).toBe(original);
+  expect(JSON.parse(before.preferences!).textStep).toBe(2);
+  for (const [link, heading] of [["review-decision-records", "Commitments and history"], ["return-to-choices", "Your next move"]]) {
+    await keyboardActivate(page, page.getByTestId(link));
+    const title = page.getByRole("heading", { name: heading, exact: true }); await expect(title).toBeInViewport();
+    const box = await title.boundingBox(), bar = await page.locator(".topbar").boundingBox();
+    expect(box!.y).toBeGreaterThanOrEqual(bar!.y + bar!.height); expect(await saved(page)).toEqual(before);
+  }
 });
