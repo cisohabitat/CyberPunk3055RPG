@@ -5,6 +5,7 @@ import { choiceReceipt } from "@/lib/play-feedback";
 import { ConversationContext } from "./ConversationContext";
 import { ArchiveCatalog } from "./ArchiveCatalog";
 import { choiceSection } from "@/lib/choice-sections";
+import { canalThreads } from "@/lib/canal-threads";
 import { choicePresentation, DISTRICT_PRESENTATIONS, sceneDistrict } from "@/lib/visual-presentation";
 import { chapterPresentation } from "@/lib/chapter-presentation";
 import { ChapterTransition } from "./ChapterTransition";
@@ -103,6 +104,8 @@ export function PlayScreen({
   const sequence = cinematicSequence(scene.id);
   const direction = pivotalScene(scene.id) ?? finale ?? investigation ?? sequence;
   const choices = presentChoices(state, scene);
+  const canal = scene.id === "act2_middle";
+  const threads = canalThreads(scene.id, choices);
   const choiceMarks = choices.map(choice => choicePresentation(scene.id, choice));
   const choiceLegend = choiceMarks.filter((mark, index) => choiceMarks.findIndex(other => other.kind === mark.kind) === index);
   const decisionTitle = scene.id === "act2_middle" ? "Street or silence" : scene.id === "act3_arrival" ? "At the wall" : null;
@@ -291,6 +294,12 @@ export function PlayScreen({
     }
   }
 
+  const recentChoice = decisionReceipt?.state === state && decisionReceipt.lines.length > 0 && <details className="decision-receipt" data-testid="decision-receipt">
+    <summary><span role="status">Last choice · {decisionReceipt.lines.length} {decisionReceipt.lines.length === 1 ? "update" : "updates"}</span></summary>
+    <ul>{decisionReceipt.lines.map((line, index) => <li key={index}>{line}</li>)}</ul>
+    <p className="hint">Changes already applied. Faction numbers are standing, not a guarantee of trust or consent.</p>
+  </details>;
+
   return (
     <ArtworkContext.Provider value={preferences.artwork !== "none" ? art => setViewedArt({ art, scene: scene.id }) : undefined}><div className="screen">
       <a className="skip" href={choices.length > 0 ? "#choices" : "#scene-top"}>
@@ -441,18 +450,28 @@ export function PlayScreen({
             {scene.id === "memory_sequence" && <MemoryTimeline state={state} choices={choices} onPlace={pick} artwork={preferences.artwork !== "none"} reducedMotion={reduceMotion} numberShortcuts={preferences.numberShortcuts} />}
             {["act2_route_map", "act2_route_exit", "act2_route_review", "act2_route_crossing"].includes(scene.id) && <RouteBoard state={state} />}
             {scene.finale && <FinaleReflection state={state} artwork={preferences.artwork !== "none"} />}
-            {!scene.finale && <CampaignThread state={state} choices={choices} />}
-            {decisionReceipt?.state === state && decisionReceipt.lines.length > 0 && <details className="decision-receipt" data-testid="decision-receipt">
-              <summary><span role="status">Last choice · {decisionReceipt.lines.length} {decisionReceipt.lines.length === 1 ? "update" : "updates"}</span></summary>
-              <ul>{decisionReceipt.lines.map((line, index) => <li key={index}>{line}</li>)}</ul>
-              <p className="hint">Changes already applied. Faction numbers are standing, not a guarantee of trust or consent.</p>
-            </details>}
+            {!scene.finale && !canal && <CampaignThread state={state} choices={choices} />}
+            {!canal && recentChoice}
             {fault && <p className="form-error">{fault}</p>}
             {choices.length > 0 && (
               <div className={scene.id === "districts" ? "choices cards" : "choices"} id="choices" tabIndex={-1} role="region" aria-labelledby="choices-title">
                 <div className="decision-help">
                   <h2 id="choices-title">Your next move</h2>
                   <p className="hint">Selecting an option commits it. For a check, review the odds and costs first; Back leaves it unrolled.</p>
+                  {threads.length > 0 && <details className="canal-threads" data-testid="canal-threads" key={scene.id}>
+                    <summary>Find a thread · {threads.reduce((count, thread) => count + thread.choices.length, 0)} available choices</summary>
+                    <p className="hint">Find the work you want to review. This spends nothing; select its choice below only when you are ready.</p>
+                    {threads.map(thread => <section key={thread.id} aria-labelledby={`canal-thread-${thread.id}`}>
+                      <h3 id={`canal-thread-${thread.id}`}>{thread.title}</h3>
+                      <ul>{thread.choices.map(choice => <li key={choice.id}><a href={`#campaign-choice-${choice.id}`} data-testid={`find-thread-${choice.id}`} onClick={event => {
+                        event.preventDefault();
+                        const target = document.getElementById(`campaign-choice-${choice.id}`);
+                        if (!target || target.hasAttribute("disabled")) return;
+                        target.focus({ preventScroll: true });
+                        target.scrollIntoView({ block: "center", behavior: "instant" });
+                      }}>Find: {choice.label}</a></li>)}</ul>
+                    </section>)}
+                  </details>}
                   {choiceLegend.length > 1 && <p className="choice-legend" aria-label="Choice markers">{choiceLegend.map(mark => <span key={mark.kind}><Symbol name={mark.symbol} /> {mark.label}</span>)}</p>}
                   {unavailableChoices.length > 0 && <details data-testid="unavailable-choices"><summary>Review unavailable approaches ({unavailableChoices.length})</summary><ul>{unavailableChoices.map((choice) => <li key={choice.id}><strong>{choice.label}</strong><p>{choice.disabledReason}</p></li>)}</ul></details>}
                   {decisionIndex > 0 && <a href="#chapter-decision" data-testid="decision-jump" onClick={event => {
@@ -513,6 +532,10 @@ export function PlayScreen({
                 })}
               </div>
             )}
+            {canal && <section className="canal-history" aria-label="Review your campaign so far" data-testid="canal-history">
+              <CampaignThread state={state} choices={choices} />
+              {recentChoice}
+            </section>}
             {scene.memory && scene.id !== "memory_table" && <details className="memory-review" data-testid="memory-review"><summary>Review the inspected memory · {memoryDisposition(state)}</summary><TestimonyBrief state={state} /><MemoryPlate key={scene.id} state={state} choices={choices} onInspect={pick} artwork={preferences.artwork !== "none"} numberShortcuts={preferences.numberShortcuts} /></details>}
             {scene.ending && (
               <div className="actions">

@@ -1,0 +1,341 @@
+{
+  "parent": "3276e7d831bc456c290c6209e28d73101c10d908",
+  "scope": "Canal work navigation and placement of existing history; story, choices, numbering, mechanics, art, actors and voices unchanged",
+  "method": "Three full keyboard source-familiar AI/automation campaigns before and after; authored decisions/dice, not blind human acceptance",
+  "profiles": {
+    "careful": {
+      "beforeSha256": "f47f7e2ba06316de229adc995fa00ccb4f83f079353a3a1d31b8f00484c19225",
+      "afterSha256": "c5f9f797ca531dee193f8b0e1e74dd43e7cf874477a2182038c86d2780b96f78",
+      "visits": 63,
+      "reloads": 16,
+      "voices": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 390,
+        "strain": 2,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "tabsBefore": 426,
+      "tabsAfter": 469,
+      "decisionGapBefore": [
+        834,
+        682,
+        593,
+        512,
+        413
+      ],
+      "decisionGapAfter": [
+        604,
+        547,
+        459,
+        282,
+        184
+      ],
+      "allRenderedStoryAndChoiceMetadataIdentical": true,
+      "errors": [],
+      "failedMedia": []
+    },
+    "money": {
+      "beforeSha256": "6fc416a8bfdbe5337c440a79f6f1786f13076d5d34489a1391ae3f186e1dfa39",
+      "afterSha256": "5c17543ad73952879fa655d32447c9dca6f89027708725134b8858ed72d41fbc",
+      "visits": 31,
+      "reloads": 30,
+      "voices": 18,
+      "interruptions": 1,
+      "final": {
+        "sceneId": "ending_listed",
+        "creds": 470,
+        "strain": 0,
+        "rolls": [
+          8,
+          10,
+          8,
+          8
+        ]
+      },
+      "tabsBefore": 264,
+      "tabsAfter": 278,
+      "decisionGapBefore": [
+        255
+      ],
+      "decisionGapAfter": [
+        143
+      ],
+      "allRenderedStoryAndChoiceMetadataIdentical": true,
+      "errors": [],
+      "failedMedia": []
+    },
+    "failure": {
+      "beforeSha256": "5a355155a4ac1c0906030fdba0606f46dafa34b2bd82aa8b134912f0cd60ee07",
+      "afterSha256": "860739a9ff1abf085a67e93f0ac41c63cca106595a702850faf82b927129e1f2",
+      "visits": 63,
+      "reloads": 44,
+      "voices": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_listed",
+        "creds": 180,
+        "strain": 5,
+        "rolls": [
+          1,
+          1,
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "tabsBefore": 371,
+      "tabsAfter": 405,
+      "decisionGapBefore": [
+        850,
+        774,
+        802,
+        802
+      ],
+      "decisionGapAfter": [
+        682,
+        606,
+        634,
+        634
+      ],
+      "allRenderedStoryAndChoiceMetadataIdentical": true,
+      "errors": [],
+      "failedMedia": []
+    }
+  },
+  "moneyFirstAuthoredSpec": {
+    "name": "Mara personal account: sold-owned",
+    "character": {
+      "handle": "Before Dawn",
+      "givenName": "Jo",
+      "origin": "spire",
+      "complication": "on-file",
+      "bonus": {
+        "chrome": 0,
+        "nerve": 0,
+        "face": 2,
+        "ghost": 0
+      },
+      "startWithPrologue": true,
+      "expandedKerr": true,
+      "expandedMara": true
+    },
+    "steps": [
+      {
+        "choiceId": "begin-opening",
+        "reload": true
+      },
+      {
+        "choiceId": "opening-identity",
+        "reload": true
+      },
+      {
+        "choiceId": "hear-stallholder",
+        "reload": true
+      },
+      {
+        "choiceId": "take-the-stool",
+        "reload": true
+      },
+      {
+        "choiceId": "ask-pay",
+        "reload": true
+      },
+      {
+        "choiceId": "haggle",
+        "roll": 8,
+        "reload": true
+      },
+      {
+        "choiceId": "pocket",
+        "reload": true
+      },
+      {
+        "choiceId": "accept",
+        "reload": true
+      },
+      {
+        "choiceId": "side",
+        "reload": true
+      },
+      {
+        "choiceId": "spoof-door",
+        "roll": 8,
+        "reload": true
+      },
+      {
+        "choiceId": "go",
+        "reload": true
+      },
+      {
+        "choiceId": "honest",
+        "reload": true
+      },
+      {
+        "choiceId": "pact-copy",
+        "reload": true
+      },
+      {
+        "choiceId": "copy",
+        "roll": 10,
+        "reload": true
+      },
+      {
+        "choiceId": "heard",
+        "reload": true
+      },
+      {
+        "choiceId": "why-signed",
+        "reload": true
+      },
+      {
+        "choiceId": "talk-leave",
+        "roll": 8,
+        "reload": true
+      },
+      {
+        "choiceId": "sell",
+        "reload": true
+      },
+      {
+        "choiceId": "week-after",
+        "reload": true
+      },
+      {
+        "choiceId": "into-week",
+        "reload": true
+      },
+      {
+        "choiceId": "read-board",
+        "reload": true
+      },
+      {
+        "choiceId": "to-helion",
+        "reload": true
+      },
+      {
+        "choiceId": "hear-ives",
+        "reload": true
+      },
+      {
+        "choiceId": "give-copy",
+        "reload": true
+      },
+      {
+        "choiceId": "deal",
+        "reload": true
+      },
+      {
+        "choiceId": "back-to-board",
+        "reload": true
+      },
+      {
+        "choiceId": "to-the-wall",
+        "reload": true
+      },
+      {
+        "choiceId": "to-ward-nine",
+        "reload": true
+      },
+      {
+        "choiceId": "face-sera",
+        "reload": true
+      },
+      {
+        "choiceId": "let-ives",
+        "reload": true
+      }
+    ],
+    "expected": {
+      "sceneId": "ending_listed",
+      "creds": 470,
+      "strain": 0,
+      "flags": {
+        "act1_sold": true,
+        "act2_deal": true,
+        "ives_took_list": true
+      }
+    }
+  },
+  "candidateSourceSha256": {
+    "lib/canal-threads.ts": "dd4ff1986ffbf654852edc08550f9f5d8975d733e6e531079b73e2b22fcf7920",
+    "lib/canal-threads.test.ts": "42e291c4b95305a169e61639e6954c7a3f9b2e1c99d43b1d2410765b879fba9c",
+    "components/PlayScreen.tsx": "47890e8555b1bd38a40339a911b4646e1a5cd3b5dd1f1c6c41debf09055e9cb3",
+    "app/globals.css": "cdec64863099adc1b199a7fb56419965f7cd9b44c15a765bab22464b9bfbce4f",
+    "tests/canal-threads.spec.ts": "f29895953b3285a4172029cc4492375bdb0f351529ed4daee1795b9cfa69da8a"
+  },
+  "checks": {
+    "sourcePassed": 814,
+    "typescript": "passed",
+    "productionBuild": "passed",
+    "securityKnownVulnerabilities": 0,
+    "productionBudgetViolations": [],
+    "initialDirected": {
+      "passed": 18,
+      "retries": 0,
+      "note": "One multi-topic case duration 30.5s including fixture lifecycle; split before publication rather than extending timeout"
+    },
+    "splitDirected": {
+      "passed": 60,
+      "retries": 0,
+      "workers": 4,
+      "timeoutMs": 30000
+    },
+    "paragraphAndNumberKeys": {
+      "passed": 2,
+      "retries": 0
+    },
+    "localWebkitHostDiagnosticOnly": true,
+    "collection": {
+      "chromium": 1051,
+      "phone": 1051,
+      "firefox": 1051,
+      "webkit": 1051
+    },
+    "totalCollected": 4204
+  },
+  "visualReview": {
+    "widths": [
+      390,
+      1440,
+      320
+    ],
+    "guideOpenAt390": true,
+    "captures": {
+      "final-browser-results/canal-threads-canal-thread-f887d-account-sold-owned-at-320px-webkit/canal-threads-320.png": "9d80ff958057ecfff01b84d3058e75a57f15dfb46a23ef36836cad6cc07a8416",
+      "final-browser-results/canal-threads-canal-thread-6f734-ccount-sold-owned-at-1440px-webkit/canal-threads-1440.png": "8763415c55c2fac8c88cac209958b72644900a1098f83157a448cc51598bda8a",
+      "final-browser-results/canal-threads-canal-thread-cddc4-account-sold-owned-at-390px-webkit/canal-threads-390.png": "d59f72476a459d7111d22995601e20b1a40f663343aeb6f6ce46dbb28f98997c",
+      "final-browser-results/canal-threads-canal-thread-1b4c1-witness-known-room-at-320px-webkit/canal-threads-320.png": "daf7ea01cf5c97fca0dfd4a7bca3748461e66c21d66a6a0c5126defda79c2036",
+      "final-browser-results/canal-threads-canal-thread-14009-itness-known-room-at-1440px-webkit/canal-threads-1440.png": "af0d9b8bdad2bb1cee0c03ce04d90214aa748d93a3f0c476cd650a03e749227b",
+      "final-browser-results/canal-threads-canal-thread-06b6c-witness-known-room-at-390px-webkit/canal-threads-390.png": "2d09001d99513118cda3fc9a37db002bf4b5f131d72473af241ee05cf1afc372",
+      "final-browser-results/canal-threads-canal-thread-8a60a--integration-names-at-320px-webkit/canal-threads-320.png": "144b4862bb1a818f26281e0f0548d624e21ce9dcef7fc086d6d33a7f9439b676",
+      "final-browser-results/canal-threads-canal-thread-4a2da-integration-names-at-1440px-webkit/canal-threads-1440.png": "8af550e1acabb206939f2a21b1be864f50e2d3ca14e9755118ca7e24dece8620",
+      "final-browser-results/canal-threads-canal-thread-20974--integration-names-at-390px-webkit/canal-threads-390.png": "88cdcdac8a7eeb419b486c01e650f81dd25a20a2d26ebebedcdfcd78744945fe",
+      "final-browser-results/canal-threads-canal-thread-f887d-account-sold-owned-at-320px-chromium/canal-threads-320.png": "88d7401178e41847d30a7077926394d445eaf386de6494bc489e31de458ab4b3",
+      "final-browser-results/canal-threads-canal-thread-6f734-ccount-sold-owned-at-1440px-chromium/canal-threads-1440.png": "9ed8036cbc9972d56fed5a35906a0d7ae0634beaac7dc4b310d85ab9658ffd97",
+      "final-browser-results/canal-threads-canal-thread-cddc4-account-sold-owned-at-390px-chromium/canal-threads-390.png": "647a6a19354000877315fd8465f325900048ee93b2e764b0bc617548c88257e7",
+      "final-browser-results/canal-threads-canal-thread-1b4c1-witness-known-room-at-320px-chromium/canal-threads-320.png": "d5452772e3e8c66ee6e00d1f1f2d2d793cc5c6ff7cd0038a1f2eccaf6e24736f",
+      "final-browser-results/canal-threads-canal-thread-14009-itness-known-room-at-1440px-chromium/canal-threads-1440.png": "371322fd0d4415b335e4f80428afd4148c77e24b14209d2cde714e5736f2d550",
+      "final-browser-results/canal-threads-canal-thread-06b6c-witness-known-room-at-390px-chromium/canal-threads-390.png": "b568d8de6d2546a879f7fb751b5936de30890beca17599f635a1bd6b4c181422",
+      "final-browser-results/canal-threads-canal-thread-8a60a--integration-names-at-320px-chromium/canal-threads-320.png": "8835c8d570541debcb5b52ee58c4afc77254a0336ea6d2d026b9f239b6e494e6",
+      "final-browser-results/canal-threads-canal-thread-4a2da-integration-names-at-1440px-chromium/canal-threads-1440.png": "c23f8d156e42f39bf02e2327ac4b687edebb4739bdaabbfacc5ff061247cd453",
+      "final-browser-results/canal-threads-canal-thread-20974--integration-names-at-390px-chromium/canal-threads-390.png": "9a9915268287649d281c0889adebd9306c620eb61860b6e7aff458e2bf2b8197"
+    }
+  },
+  "tradeoffs": [
+    "Decision-container gap is 112\u2013230px smaller in sampled visits; this is not a reading-time or first-button-position measure.",
+    "Harness consults history before every decision, so relocation adds backtracking: 43/34/14 extra Tabs.",
+    "Repeated canal prose and broader narrative pacing remain future authored work requiring matching media."
+  ],
+  "release": "Candidate only; new full hosted cohort and exact-commit live verification required separately."
+}

@@ -289,6 +289,12 @@ button { cursor: pointer; }
 .decision-help details { margin-top: 0.6rem; }
 .decision-help li { margin: 0.75rem 0; }
 .decision-help summary { cursor: pointer; }
+.canal-threads { border-block: 1px solid var(--line); padding-block: .5rem; }
+.canal-threads summary { min-height: 45px; align-content: center; }
+.canal-threads h3 { font-size: 1rem; margin-block: 1rem .25rem; }
+.canal-threads a { display: inline-flex; align-items: center; min-height: 45px; color: var(--cyan); text-underline-offset: .2em; }
+.canal-threads ul { padding-inline-start: 1.25rem; }
+.canal-history { margin-block-start: 1.5rem; }
 .audio-paused { margin: 0.6rem 0; }
 .audio-paused p { margin: 0 0 0.4rem; color: var(--muted); }
 .card-art {

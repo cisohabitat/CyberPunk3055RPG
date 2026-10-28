@@ -63,6 +63,8 @@ If the browser blocks storage or cannot save, the game still opens and plays. A 
 
 ## The memory bench and the week
 
+At the dry canal, the optional **Find a thread** guide groups available work into sources, witness/clinic care, and people or promises. Its links only find the existing choices for review; costs, closing-week warnings, numbering and outcomes stay on those choices. Campaign history and the last-choice receipt now sit below the hub decisions, while the current next step remains above them. This reduces repeated context between the story and the decision. See [mid-campaign pacing review](docs/MID_CAMPAIGN_PACING.md).
+
 The four final endings now connect the wall choice to your earlier record: a paid silence bargain, a filed or withdrawn hearing, a retained correction, or Sera’s custody of an archive original. These short written reflections follow the scene and its matching art/dialogue. The ending also names one compromised, unresolved or open commitment, with the full record still available below. Nothing in the afterword grants evidence, permission, money or a new outcome. See [ending payoff review](docs/ENDING_PAYOFF.md).
 
 After Mara explains her signature, open the memory bench to inspect three fragments: her account, an exported counter-order awaiting independent verification, and the roster identifying Nia Pell as a living witness. The journal distinguishes claims, facts, and promises. Inspect all three, compare the decisions, and label the packet before deciding which record leaves the room:
