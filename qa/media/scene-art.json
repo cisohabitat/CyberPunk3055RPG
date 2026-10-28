@@ -972,6 +972,42 @@
       "scenes": [
         "act3_witness_shift_return"
       ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/archive-desk.jpg",
+      "reason": "Reuse the same archive desk and closed records for free source comparison and an unsubmitted key target. No authenticated result or acquired ledger is depicted.",
+      "scenes": [
+        "act2_craft_archive",
+        "act2_craft_archive_issuer"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/edda-archive.jpg",
+      "reason": "Reuse identity-matched Edda at the archive counter. Her two connected hands and bounded paperwork fit a correction or scoped request; the image grants no signature, worker list or source-name permission.",
+      "scenes": [
+        "act2_craft_archive_challenge",
+        "act2_craft_archive_ledger"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/correction-bench.jpg",
+      "reason": "Reuse a neutral blank workbench at the records table, fitting successful and unresolved returns without depicting an acquired source or ruling.",
+      "scenes": [
+        "act3_craft_archive_return"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/market-counter.jpg",
+      "reason": "Reuse the known sheltered Ward Four stall. The empty counter depicts no paid bond, handover, refund or treatment; the actual Kerr portrait identifies the speaker.",
+      "scenes": [
+        "act2_craft_kerr_offer",
+        "act2_craft_kerr_settlement",
+        "act3_craft_kerr_settlement"
+      ]
     }
   ],
   "variants": [
@@ -1112,7 +1148,12 @@
         "act3_edda_terms",
         "act3_edda_visit",
         "act3_spire_reply",
-        "act3_spire_visit"
+        "act3_spire_visit",
+        "act2_craft_archive",
+        "act2_craft_archive_challenge",
+        "act2_craft_archive_issuer",
+        "act2_craft_archive_ledger",
+        "act3_craft_archive_return"
       ],
       "reason": "Reviewed portrait for this actual actor during explicitly bound, revealed audible dialogue. Existing scene/flag expressions apply to this actor only; the scene’s setting and canonical story speaker remain unchanged."
     },
@@ -1143,7 +1184,10 @@
         "act3_kerr_collection_response",
         "act3_kerr_personal_question",
         "act3_pump_visit",
-        "kerr"
+        "kerr",
+        "act2_craft_kerr_offer",
+        "act2_craft_kerr_settlement",
+        "act3_craft_kerr_settlement"
       ],
       "reason": "Reviewed portrait for this actual actor during explicitly bound, revealed audible dialogue. Existing scene/flag expressions apply to this actor only; the scene’s setting and canonical story speaker remain unchanged."
     },

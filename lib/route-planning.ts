@@ -1,3 +1,4 @@
+import { craftBondRecord } from "./encounter-craft";
 import type { Effect, GameState } from "./types";
 import { depotOutcome, depotResume } from "./depot-methods";
 
@@ -34,9 +35,10 @@ export function routeDeparture(state: GameState): Effect {
   return { creds: -plan.creds, strain: plan.strain, flags: ["kerr_route_started", ...(plan.entry?.registered ? ["kerr_route_trace"] : [])], journal: [{ id: "kerr-itinerary", kind: "fact", text: `Departed through ${plan.entry!.title.toLowerCase()} toward ${plan.exit!.title.toLowerCase()}. Spent ${plan.creds} creds and took ${plan.strain} planned strain.${plan.entry?.registered ? " The gate recorded the runner's handle and Kerr as recipient." : " Entry used no recipient register."}` }] };
 }
 export function routeOutcome(state: GameState): string {
-  return [collectionOutcome(state), depotOutcome(state)].filter(Boolean).join(" ");
+  return [collectionOutcome(state), depotOutcome(state), craftBondRecord(state)].filter(Boolean).join(" ");
 }
 function collectionOutcome(state: GameState): string {
+  if (state.flags.craft_kerr_canceled && state.journal.some(j => j.id === "craft-kerr-settlement" && j.kind === "fact")) return "The private collection bargain was mutually canceled before departure. The earlier promise remains in history; no handover occurred and Kerr had not received the case.";
   const breach = Boolean(state.flags.kerr_route_private && state.flags.kerr_route_trace);
   if (state.flags.kerr_route_delivered) return `Kerr received his closed brace case.${state.flags.kerr_route_trace ? breach ? " The private-collection promise was broken: the depot retains your handle and Kerr's recipient name." : " Registration was agreed before collection; the depot retains your handle and Kerr's recipient name." : " No depot recipient entry was made."} Delivery supplies no treatment outcome, historical evidence or witness permission.`;
   if (state.flags.kerr_route_done) return `The case remains held at the depot; Kerr has not received it.${state.flags.kerr_route_trace ? " Your handle and Kerr's recipient name remain on its register." : " No recipient entry was made."} The collection promise remains unfulfilled.`;

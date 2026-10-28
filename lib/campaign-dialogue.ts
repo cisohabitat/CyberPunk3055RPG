@@ -1,3 +1,4 @@
+import craftSource from "../qa/media/encounter-craft-dialogue-bindings.json";
 import source from "../qa/media/campaign-dialogue-bindings.json";
 import districtSource from "../qa/media/district-dialogue-bindings.json";
 import techniqueSource from "../qa/media/technique-dialogue-bindings.json";
@@ -12,7 +13,7 @@ export type CampaignDialogue = {
   choiceId?: string; outcome?: string;
 };
 const byScene = new Map<string, CampaignDialogue[]>();
-export const allCampaignDialogue = [...source, ...districtSource, ...techniqueSource, ...kerrSource, ...maraSource, ...witnessSource] as CampaignDialogue[];
+export const allCampaignDialogue = [...source, ...districtSource, ...techniqueSource, ...kerrSource, ...maraSource, ...witnessSource, ...craftSource] as CampaignDialogue[];
 for (const line of allCampaignDialogue) {
   const group = byScene.get(line.scene) ?? [];
   group.push(line); byScene.set(line.scene, group);

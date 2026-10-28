@@ -1,0 +1,125 @@
+{
+  "scope": "Unpublished encounter-craft performance iterations",
+  "firstPass": {
+    "clips": 9,
+    "exactNormalizedASR": 7,
+    "mismatches": [
+      {
+        "id": "voice-campaign-encounter-craft-570639a0f84d",
+        "speaker": "Edda",
+        "path": "public/audio/voice-campaign-encounter-craft-570639a0f84d.mp3",
+        "sha256": "eeae322d0c9a2a351ae494900da74895cc540bf4669110807e1a5c9d9bdc7114",
+        "authoredText": "You have made one column answer for another. Look again. I am not asking you to believe me; I am asking you to read what is there.",
+        "transcription": "You've made one column answer for another. Look again, I am not asking you to believe me, I am asking you to read what is there.",
+        "exactNormalizedWords": false
+      },
+      {
+        "id": "voice-campaign-encounter-craft-bea952602f00",
+        "speaker": "Kerr",
+        "path": "public/audio/voice-campaign-encounter-craft-bea952602f00.mp3",
+        "sha256": "adb2d1df2a708919a3b736cef76b9ce10ce3a351fc75ac522ba2a0ca330b9091",
+        "authoredText": "You want me to pay for the quiet way in. Fine. Leave me something that makes your promise heavier than the fare.",
+        "transcription": "You want me to pay for the quiet way in. Fine. Leave me something that makes your promise heavier than the fair.",
+        "exactNormalizedWords": false
+      }
+    ]
+  },
+  "decisions": [
+    {
+      "id": "voice-campaign-encounter-craft-570639a0f84d",
+      "decision": "Same-word retake: separate You have and slow to 0.92 to make both words distinct."
+    },
+    {
+      "oldId": "voice-campaign-encounter-craft-bea952602f00",
+      "newId": "voice-campaign-encounter-craft-919dd06742a3",
+      "decision": "Fare/fair is a homophone, not evidence of a spoken-word error. Rewrite the unpublished image to the more concrete lift ticket, update script/bindings and record matching words; retain raw first pass."
+    },
+    {
+      "id": "voice-campaign-encounter-craft-919dd06742a3",
+      "decision": "Same-word Kerr retake at 0.95 after a trailing You appeared in the unprompted transcript. Retain raw observation; do not rewrite transcript or source words."
+    },
+    {
+      "oldId": "voice-campaign-encounter-craft-919dd06742a3",
+      "newId": "voice-campaign-encounter-craft-a3b854d736a3",
+      "decision": "The timed ASR read a low-confidence trailing it where the plain read gave You. Revise the unpublished final sentence to the direct physical action Put something of yours on the counter and record matching new words. No transcript trimming or expansion."
+    }
+  ],
+  "firstPassFiles": "/tmp/saint-encounter-craft/performance-first-pass",
+  "limitation": "Independent unprompted ASR is technical alignment evidence, not human acting acceptance.",
+  "secondPass": {
+    "exactNormalizedASR": 8,
+    "mismatches": [
+      {
+        "id": "voice-campaign-encounter-craft-919dd06742a3",
+        "speaker": "Kerr",
+        "path": "public/audio/voice-campaign-encounter-craft-919dd06742a3.mp3",
+        "sha256": "3c25463964151e96a46a3c3f56aa4017948f1b6b2b86edb8fa59c3e50757f4b1",
+        "authoredText": "You want me to pay for the quiet way in. Fine. Leave me something that makes your promise heavier than a lift ticket.",
+        "transcription": "You want me to pay for the quiet way in. Fine. Leave me something that makes your promise heavier than a lift ticket. You",
+        "exactNormalizedWords": false
+      }
+    ]
+  },
+  "thirdPass": {
+    "exactNormalizedASR": 8,
+    "rawTranscripts": "/tmp/saint-encounter-craft/performance-first-pass/retake-two-transcripts.json",
+    "timedWordReview": {
+      "duration": 7.046,
+      "lastWords": [
+        {
+          "word": " your",
+          "start": 4.66,
+          "end": 4.84,
+          "probability": 0.9847359657287598
+        },
+        {
+          "word": " promise",
+          "start": 4.84,
+          "end": 5.18,
+          "probability": 0.9728943109512329
+        },
+        {
+          "word": " heavier",
+          "start": 5.18,
+          "end": 5.52,
+          "probability": 0.9965691566467285
+        },
+        {
+          "word": " than",
+          "start": 5.52,
+          "end": 5.86,
+          "probability": 0.9854304790496826
+        },
+        {
+          "word": " a",
+          "start": 5.86,
+          "end": 5.94,
+          "probability": 0.9913800358772278
+        },
+        {
+          "word": " lift",
+          "start": 5.94,
+          "end": 6.1,
+          "probability": 0.7930123805999756
+        },
+        {
+          "word": " ticket.",
+          "start": 6.1,
+          "end": 6.48,
+          "probability": 0.9918155074119568
+        },
+        {
+          "word": " it.",
+          "start": 6.48,
+          "end": 6.62,
+          "probability": 0.1592843383550644
+        }
+      ]
+    }
+  },
+  "finalPass": {
+    "clips": 9,
+    "exactNormalizedASR": 9,
+    "transcripts": "qa/media/encounter-craft-dialogue-transcripts.json"
+  }
+}

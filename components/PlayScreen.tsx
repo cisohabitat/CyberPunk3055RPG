@@ -3,6 +3,7 @@ import { cinematicSequence, cinematicDetail } from "@/lib/cinematic-sequences";
 
 import { choiceReceipt } from "@/lib/play-feedback";
 import { ConversationContext } from "./ConversationContext";
+import { ArchiveQuestionDesk } from "./ArchiveQuestionDesk";
 import { ArchiveCatalog } from "./ArchiveCatalog";
 import { choiceSection } from "@/lib/choice-sections";
 import { canalThreads } from "@/lib/canal-threads";
@@ -455,6 +456,7 @@ export function PlayScreen({
               {!scene.memory && <TestimonyBrief state={state} />}
               <FieldKitBrief state={state} />
             </div>}
+            {scene.id === "act2_craft_archive" && <ArchiveQuestionDesk state={state} choices={choices} onInspect={pick} numberShortcuts={preferences.numberShortcuts} />}
             {scene.id === "act2_archive_compare" && <ArchiveCatalog state={state} choices={choices} onChoose={pick} numberShortcuts={preferences.numberShortcuts} />}
             <ArchivePlanner key={`archive-plan-${scene.id}`} state={state} onSave={draft => onChange(commitArchivePlan(state, draft))} />
             <DistrictLedger key={`district-ledger-${scene.id}`} state={state} />
@@ -501,6 +503,7 @@ export function PlayScreen({
                 {decisionIndex > 0 && <h3 className="choice-group-title">People and unfinished work</h3>}
                 {choices.map((choice, index) => {
                   if (scene.memory && choice.id.startsWith("inspect-")) return null;
+                  if (scene.id === "act2_craft_archive" && choice.id.startsWith("craft-read-")) return null;
                   if (scene.id === "act2_archive_compare" && CATALOG_ACTIONS.has(choice.id)) return null;
                   if (scene.id === "memory_sequence" && choice.id.startsWith("place-")) return null;
                   const section = choiceSection(scene.id, choice.id);

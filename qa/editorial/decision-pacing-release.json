@@ -1,0 +1,298 @@
+{
+  "revision": "a13205e7c402ae2fe190f4379030dd770ead1d79",
+  "run": {
+    "id": 40681213958,
+    "url": "https://github.com/cisohabitat/CyberPunk3055RPG/actions/runs/40681213958",
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-28T11:36:02Z",
+    "updated_at": "2026-10-28T11:51:35Z",
+    "attempt": 1
+  },
+  "checkSuite": 110265185956,
+  "decision": "build",
+  "jobs": [
+    {
+      "id": 122792081610,
+      "name": "Test",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 122793969466,
+      "name": "Browser shard (phone, 1/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 122793969496,
+      "name": "Browser shard (chromium, 3/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 122793969554,
+      "name": "Browser shard (chromium, 1/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 122793969560,
+      "name": "Browser shard (firefox, 1/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 122793969580,
+      "name": "Browser shard (firefox, 3/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 122793969615,
+      "name": "Browser shard (webkit, 4/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 122793969627,
+      "name": "Browser shard (chromium, 4/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 122793969648,
+      "name": "Browser shard (firefox, 2/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 122793969663,
+      "name": "Browser shard (webkit, 3/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 122793969674,
+      "name": "Browser shard (webkit, 1/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 122793969697,
+      "name": "Browser shard (phone, 4/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 122793969710,
+      "name": "Browser shard (phone, 3/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 122793969751,
+      "name": "Browser shard (phone, 2/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 122793969755,
+      "name": "Browser shard (firefox, 4/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 122793969872,
+      "name": "Browser shard (webkit, 2/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 122793969904,
+      "name": "Browser shard (chromium, 2/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 122798530167,
+      "name": "Browser (webkit)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 122798530192,
+      "name": "Browser (chromium)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 122798530193,
+      "name": "Browser (firefox)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 122798530250,
+      "name": "Browser (phone)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 122798772003,
+      "name": "Build",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ],
+  "projects": [
+    {
+      "project": "chromium",
+      "revision": "a13205e7c402ae2fe190f4379030dd770ead1d79",
+      "total": 1111,
+      "passed": 1111,
+      "flaky": 0,
+      "skipped": 0,
+      "longestShardSeconds": 375.3
+    },
+    {
+      "project": "phone",
+      "revision": "a13205e7c402ae2fe190f4379030dd770ead1d79",
+      "total": 1111,
+      "passed": 1109,
+      "flaky": 0,
+      "skipped": 2,
+      "longestShardSeconds": 342.7
+    },
+    {
+      "project": "firefox",
+      "revision": "a13205e7c402ae2fe190f4379030dd770ead1d79",
+      "total": 1111,
+      "passed": 1109,
+      "flaky": 0,
+      "skipped": 2,
+      "longestShardSeconds": 553.5
+    },
+    {
+      "project": "webkit",
+      "revision": "a13205e7c402ae2fe190f4379030dd770ead1d79",
+      "total": 1111,
+      "passed": 1109,
+      "flaky": 0,
+      "skipped": 2,
+      "longestShardSeconds": 562.1
+    }
+  ],
+  "deployment": {
+    "id": "dpl_4rf7rgZmrrgLdMtP6iXWQYh4WWf3",
+    "url": "cyberpunk3055rpg-lgtoyi5pj-cfusion2k-7277s-projects.vercel.app",
+    "status": "READY",
+    "sha": "a13205e7c402ae2fe190f4379030dd770ead1d79",
+    "aliases": [
+      "cyberpunk3055rpg.vercel.app",
+      "cyberpunk3055rpg-cfusion2k-7277s-projects.vercel.app",
+      "cyberpunk3055rpg-git-main-cfusion2k-7277s-projects.vercel.app"
+    ]
+  },
+  "aliases": [
+    {
+      "alias": "cyberpunk3055rpg.vercel.app",
+      "id": "dpl_4rf7rgZmrrgLdMtP6iXWQYh4WWf3",
+      "status": "READY",
+      "sha": "a13205e7c402ae2fe190f4379030dd770ead1d79"
+    },
+    {
+      "alias": "cyberpunk3055rpg-git-main-cfusion2k-7277s-projects.vercel.app",
+      "id": "dpl_4rf7rgZmrrgLdMtP6iXWQYh4WWf3",
+      "status": "READY",
+      "sha": "a13205e7c402ae2fe190f4379030dd770ead1d79"
+    }
+  ],
+  "phase": "AAA craft Phase 1: decision pacing and visible focus",
+  "observedAt": "2026-10-28T11:56:17.576282+00:00",
+  "candidateEvidence": [
+    "qa/editorial/decision-pacing-review.json",
+    "qa/editorial/decision-pacing-focus-review.json"
+  ],
+  "initialCandidate": {
+    "commit": "568203247719fca24c7289d9e5bc6e8300767b7f",
+    "ciRun": 40678405140,
+    "all22JobsSucceeded": true,
+    "deployment": "dpl_EGio4T3KVR32Sj1g4kvXt1v6PjF9",
+    "deploymentState": "CANCELED",
+    "reason": "Deliberately stopped before publication after final screenshot review found covered record heading; fresh corrected cohort required."
+  },
+  "sourceTestsPassed": 826,
+  "dependencyKnownVulnerabilities": 0,
+  "live": {
+    "url": "https://cyberpunk3055rpg.vercel.app",
+    "browser": {
+      "cases": 27,
+      "passed": 27,
+      "retries": 0,
+      "includes": "Phone/desktop/enlarged/text-only, record/back focus below sticky header, text-size changes, canonical saves/choices, preparation, paragraph reading and actual Mara automatic voice continuing once.",
+      "logSha256": "47a641e0dade2ba8f61cee290802b8120eca1d81ad585abc64b5cd004ea9d58f"
+    },
+    "campaign": {
+      "route": "qa/routes/scarce-archive-open.json",
+      "width": 320,
+      "artwork": "none",
+      "reading": "paragraph",
+      "sound": false,
+      "elapsedSeconds": 49.689,
+      "visits": 57,
+      "tabs": 513,
+      "reloads": 38,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 0,
+        "strain": 4,
+        "rolls": [
+          1,
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "errors": [],
+      "failedMedia": []
+    },
+    "sameCanonicalProseChoicesAndFinalOutcomeAsBaseline": true,
+    "campaignSha256": "e7dc5b2ebdbc3b7b755a25c0f132d466da928ec5fcc74e1df00ab246cef3e1c4",
+    "assets": [
+      {
+        "path": "public/audio/voice-campaign-mara-account-9538a155dfe3.mp3",
+        "sha256": "20e41742ce360ee00d389bce29e04c0e77faf0e0c241c77b3e000a1c9d66aac6",
+        "bytes": 50156,
+        "matchesCommittedDelivery": true
+      },
+      {
+        "path": "public/art/mara-account.jpg",
+        "sha256": "dcf2c16bc2c77e1822c9bba7fee9d89878837ede6b9b15e4f4691a61811b2cbb",
+        "bytes": 250513,
+        "matchesCommittedDelivery": true
+      },
+      {
+        "path": "public/art/mara-account-small.jpg",
+        "sha256": "4f0e7e43ca8dfe79a1dfb7c77ab6a9ab19f60b984ef2fc8a430597c763df3721",
+        "bytes": 73135,
+        "matchesCommittedDelivery": true
+      },
+      {
+        "path": "public/art/mara.jpg",
+        "sha256": "2b1c67aa8a9519999a98e8559edc831406e2014fd42d91bf4ab1ae7b1e0d3214",
+        "bytes": 427725,
+        "matchesCommittedDelivery": true
+      },
+      {
+        "path": "public/art/nia-arrival.jpg",
+        "sha256": "22829b36897ec6e10018754951c9ec8cf1ae6bdcacfd036e6508795961528fe7",
+        "bytes": 142591,
+        "matchesCommittedDelivery": true
+      }
+    ]
+  },
+  "limitations": "Source-familiar AI/automation proxy, not human, blind-player, physical-device or independent acting/AAA acceptance. First-choice distances are layout measurements; the review-every-checkpoint keyboard policy increases Tab counts. Six existing native-policy skips, no new skips, retries, forced promotion or status-only commit. Internal grade remains 8.6."
+}

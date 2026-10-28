@@ -7,6 +7,7 @@ import { caseFileChoices } from "./case-file";
 import { archivePlanBonus, archivePlanChoices, finishArchivePlan } from "./archive-plan";
 import { districtChoices } from "./district-response";
 import { techniqueChoices } from "./build-techniques";
+import { encounterCraftChoices } from "./encounter-craft";
 import { maraAccountChoices } from "./mara-account";
 import type {
   CheckPreview,
@@ -52,6 +53,7 @@ export function createCharacter(input: {
   expandedKerr?: boolean;
   expandedMara?: boolean;
   expandedWitness?: boolean;
+  craftedEncounters?: boolean;
 }): GameState {
   const origin = ORIGINS[input.origin];
   const complication = input.complication ?? null;
@@ -78,6 +80,8 @@ export function createCharacter(input: {
   if (input.expandedMara) flags.mara_account_enabled = true;
   if (input.expandedWitness !== undefined && typeof input.expandedWitness !== "boolean") throw new Error("Invalid witness return option");
   if (input.expandedWitness) flags.witness_returns_enabled = true;
+  if (input.craftedEncounters !== undefined && typeof input.craftedEncounters !== "boolean") throw new Error("Invalid encounter craft option");
+  if (input.craftedEncounters) flags.encounter_craft_enabled = true;
   if (complication === "on-file") flags.on_file = true;
   if (complication === "debt") flags.debt = true;
   if (complication === "optic") flags.optic = true;
@@ -145,7 +149,7 @@ function choiceHidden(state: GameState, choice: Choice): boolean {
 }
 
 export function presentChoices(state: GameState, scene: Scene): VisibleChoice[] {
-  return maraAccountChoices(state, scene, [...techniqueChoices(state, scene, districtChoices(state, scene, archivePlanChoices(state, scene))), ...caseFileChoices(state, scene)]).filter((choice) => !choiceHidden(state, choice)).map((choice) => {
+  return encounterCraftChoices(state, scene, maraAccountChoices(state, scene, [...techniqueChoices(state, scene, districtChoices(state, scene, archivePlanChoices(state, scene))), ...caseFileChoices(state, scene)]), SCENES).filter((choice) => !choiceHidden(state, choice)).map((choice) => {
     if (choice.maxStrain !== undefined && state.strain > choice.maxStrain) {
       return { ...choice, enabled: false, disabledReason: `Need Strain at most ${choice.maxStrain}; recover before this preparation` };
     }

@@ -32,6 +32,14 @@ Prototype an archive investigation and a negotiation that ask different kinds of
 
 **Exit:** two contrasting complete approaches for each anchor, including a scarce/failed alternative. The player can identify the decision, tradeoff and resulting response from the rendered scene. Preserve attribution, authentication limits, once-only costs and affordable recovery. Author the return alongside the encounter; expand only after comparing complete proxy campaigns.
 
+### Phase 2 implementation
+
+The [encounter-craft phase report](ENCOUNTER_CRAFT_PHASE2.md) describes the new-run source desk and Kerr bargain. The archive separates free interpretation from a real scoped request: local trained or network issuing-key tests, paid corroboration, an employee badge, and an explicitly agreed Face countersignature have different costs and attribution limits. Wrong inferences and overbroad requests remain remembered. The original failed-test recovery stays available, and Edda's Wall return distinguishes the actual question and result.
+
+Kerr wants a private handover and accepts real cash or the actual signal baffle as security. The tool cannot contribute while pledged. Self-funding and refusal remain viable. Cancellation before departure and Week closure returns security; observed private handover can return it and reimburse only a coin lift actually paid. Recipient traces and incomplete work retain their consequences. Settlement is once-only and grants no treatment, proof, forgiveness or erased history.
+
+Eight explicit art decisions reuse fitting neutral archive/counter/workbench/stall paintings. Nine new Edda/Kerr stock recordings match the final quotations; raw ASR iterations, same-word retakes and the unpublished Kerr script revision remain documented. Fifteen complete new authored campaigns accompany the immutable preceding 188-route / 13,154-visit / 776-delivery contract. Source-familiar AI play remains the available proxy. Technical checks and added encounters do not automatically increase the provisional 8.6 assessment. Phase 3 is the next craft milestone after this phase's full exact-commit publication gates.
+
 ## Phase 3: emotional payoff
 
 Connect the strongest encounter decisions to short present-day returns and the four existing endings. Prefer a person responding or an observable change over another summary of a flag. Keep private words, public testimony, medical care and institutional findings distinct. Unfinished or compromised work must remain honestly unfinished.

@@ -1,3 +1,4 @@
+import { CRAFT_KERR_ENTRY, CRAFT_SETTLE_ENTRY } from "../encounter-craft";
 import { kerrMethodResponse } from "../encounter-methods";
 import { kitBonuses } from "../loadout";
 import { routeDeparture, routeOutcome, routePlan, routeResume, ROUTE_DRAFT_FLAGS, ROUTE_ENTRIES, ROUTE_EXITS } from "../route-planning";
@@ -29,6 +30,7 @@ export const RELATIONSHIP_SCENES: Record<string, Scene> = {
       { id: "ask-quill-introduction", label: "Ask Quill for a depot introduction.", hideIfFlag: "kerr_route_intro", next: "act2_quill_introduction" },
       { id: "promise-private-collection", label: "Promise a collection without a recipient register.", detail: "Registered entry or recovery can break these terms. Planning itself costs nothing.", effects: { flags: ["kerr_route_promised", "kerr_route_private"], journal: [{ id: "kerr-collection-promise", kind: "promise", text: "You promised to collect Kerr's own unpowered brace without entering him on the depot recipient register. Delivery and treatment are separate outcomes." }] }, next: "act2_route_map" },
       { id: "agree-registered-collection", label: "Ask Kerr to accept a registered collection. He agrees.", detail: "The depot may retain your handle and Kerr’s recipient name. No clinic room or witness address.", effects: { flags: ["kerr_route_promised", "kerr_route_registered"], journal: [{ id: "kerr-collection-promise", kind: "promise", text: "Kerr agreed to collection that may register the runner's handle and his recipient name. Receipt still needs to be observed; the equipment supplies no treatment outcome." }] }, next: "act2_route_map" },
+      CRAFT_KERR_ENTRY,
       { id: "decline-kerr-collection", label: "Decline. Do not make a promise you cannot keep.", effects: { flags: ["kerr_route_declined"] }, next: "act2_middle" },
     ],
   },
@@ -103,6 +105,7 @@ ${state.flags.kerr_route_private && state.flags.kerr_route_trace ? "He puts the 
 
 ${state.flags.kerr_sold_you ? "You remind him that he sold your account. ‘That stays on my side of the page.’ His request does not cancel the betrayal." : "He shifts the cup away from the papers. ‘The terms arrive with the case.’"}\n\n${kerrMethodResponse(state)}`,
     choices: [
+      CRAFT_SETTLE_ENTRY,
       { id: "answer-kerr-breach", label: "Answer the broken private terms directly.", requireAllFlags: ["kerr_route_private", "kerr_route_trace"], next: "act3_kerr_collection_response" },
       { id: "acknowledge-kerr-collection", label: "Keep the receipt and the limits in his own words.", detail: "Kerr leaves one personal question open. No new favor or contract.", hideIfAnyFlag: ["kerr_route_private"], effects: { flags: ["kerr_route_visit", "kerr_contact_open"] }, next: "act3_arrival" },
       { id: "acknowledge-private-collection", label: "Keep the receipt and the limits in his own words.", detail: "Kerr leaves one personal question open. No new favor or contract.", requireFlag: "kerr_route_private", hideIfFlag: "kerr_route_trace", effects: { flags: ["kerr_route_visit", "kerr_contact_open"] }, next: "act3_arrival" },

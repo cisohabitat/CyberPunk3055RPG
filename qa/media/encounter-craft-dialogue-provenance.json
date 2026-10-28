@@ -1,0 +1,382 @@
+{
+  "generated": "2026-10-28",
+  "disclosure": "Stock synthetic voices generated offline with Kokoro v1.0; no actor session or individual voice clone was commissioned. Only the fixed authored quotations below are rendered. No model or speech service ships in the game.",
+  "driver": {
+    "name": "kokoro-onnx",
+    "version": "0.6.1",
+    "license": "MIT",
+    "url": "https://github.com/thewh1teagle/kokoro-onnx",
+    "licenseFile": "qa/media/voice-sources/kokoro-onnx-LICENSE.txt"
+  },
+  "model": {
+    "name": "Kokoro-82M v1.0",
+    "license": "Apache-2.0",
+    "card": "https://huggingface.co/hexgrad/Kokoro-82M",
+    "licenseFile": "qa/media/voice-sources/Kokoro-LICENSE.txt",
+    "files": [
+      {
+        "name": "kokoro-v1.0.onnx",
+        "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.onnx",
+        "sha256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+        "bytes": 325505369
+      },
+      {
+        "name": "voices-v1.0.bin",
+        "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin",
+        "sha256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+        "bytes": 28214398
+      }
+    ]
+  },
+  "source": "scripts/generate-campaign-voices.py",
+  "processing": "Exact authored character words; existing cast identities; optional sentence pauses, 8ms phrase fades, normalized PCM peak 0.72 with 80ms edges; optional per-line two-pass EBU loudness matching with -2dBTP ceiling; 96kbps mono MP3 delivery. Original PCM and normalized PCM retained outside Git.",
+  "reviewStatus": "Technical signal and source review; stock synthetic dialogue. No commissioned actors or independent listening acceptance.",
+  "lines": [
+    {
+      "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+      "speaker": "Edda",
+      "voice": "af_kore",
+      "speed": 0.95,
+      "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock identity, restrained conversational intention. Edda directs attention to a concrete record; Kerr negotiates a real personal cost. Preserve exact words; no narrator or custom name.",
+      "segments": [
+        {
+          "text": "The plant stayed on.",
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "The workers were meant to leave.",
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "Find the line that changed before you ask me to put my name under yours.",
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.51,
+      "truePeakDbtp": -6.55,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3",
+      "sourceFile": "/workspace/generated_audio/encounter-craft/voice-campaign-encounter-craft-ba69df93d8d5.wav",
+      "sourceSha256": "332f54f9f8cddf1b452781679bbd339450c9b87a7dbd7432f2917b9b6250ab11",
+      "pcmDeliveryFile": "/workspace/generated_audio/encounter-craft/voice-campaign-encounter-craft-ba69df93d8d5-delivery.wav",
+      "pcmDeliverySha256": "078cff9618d15d4600993e497559573587430f1b935b8879f94a2edb548caad8",
+      "sha256": "26825c2bc65fe72059a7ad4da468fffe47e9cd921d8fcb4ebdfe6d1ed04c872e",
+      "bytes": 101420,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 8.358625,
+      "peak": 0.46921810507774353,
+      "rms": 0.07716381549835205
+    },
+    {
+      "id": "voice-campaign-encounter-craft-570639a0f84d",
+      "speaker": "Edda",
+      "voice": "af_kore",
+      "speed": 0.92,
+      "text": "You have made one column answer for another. Look again. I am not asking you to believe me; I am asking you to read what is there.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock identity, restrained conversational intention. Edda directs attention to a concrete record; Kerr negotiates a real personal cost. Preserve exact words; no narrator or custom name.",
+      "segments": [
+        {
+          "text": "You have",
+          "pauseAfter": 0.1
+        },
+        {
+          "text": "made one column answer for another.",
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "Look again.",
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "I am not asking you to believe me;",
+          "pauseAfter": 0.12
+        },
+        {
+          "text": "I am asking you to read what is there.",
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -7.12,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-encounter-craft-570639a0f84d.mp3",
+      "sourceFile": "/workspace/generated_audio/encounter-craft/voice-campaign-encounter-craft-570639a0f84d.wav",
+      "sourceSha256": "86934680be0dc821c09e7a9c4ac3c36fe521044f51841d2774ed72c88af7b585",
+      "pcmDeliveryFile": "/workspace/generated_audio/encounter-craft/voice-campaign-encounter-craft-570639a0f84d-delivery.wav",
+      "pcmDeliverySha256": "3821351b794db226219746544f31e8765e09e37c1f4ca8980aaf8bf96e8a1828",
+      "sha256": "1e229a9ea5a53ecba66385b2284e7967ba1b993c48303f09cf86bb76bd9c36e2",
+      "bytes": 106028,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 8.741958333333333,
+      "peak": 0.43833690881729126,
+      "rms": 0.07356947660446167
+    },
+    {
+      "id": "voice-campaign-encounter-craft-0d503d1dabcb",
+      "speaker": "Edda",
+      "voice": "af_kore",
+      "speed": 0.95,
+      "text": "If you want the hand behind the instruction, bring the cancellation to its key. Her approval is a different act.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock identity, restrained conversational intention. Edda directs attention to a concrete record; Kerr negotiates a real personal cost. Preserve exact words; no narrator or custom name.",
+      "segments": [
+        {
+          "text": "If you want the hand behind the instruction, bring the cancellation to its key.",
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "Her approval is a different act.",
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.49,
+      "truePeakDbtp": -6.15,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-encounter-craft-0d503d1dabcb.mp3",
+      "sourceFile": "/workspace/generated_audio/encounter-craft/voice-campaign-encounter-craft-0d503d1dabcb.wav",
+      "sourceSha256": "af336d0e36ebbebd95fa77103f5db5b253b60e7c7a1f04f14f8a2b6d7835caa1",
+      "pcmDeliveryFile": "/workspace/generated_audio/encounter-craft/voice-campaign-encounter-craft-0d503d1dabcb-delivery.wav",
+      "pcmDeliverySha256": "2d0d5f36a977e05b225c56a2e8c44f805a1e11e2c0075209e703b1b67dedf01b",
+      "sha256": "bb673be3f3ab76f1e2506087d55a16c443d4a5aff21c54d94a029b7472e762ab",
+      "bytes": 85004,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 6.987958333333333,
+      "peak": 0.4927401840686798,
+      "rms": 0.07424257695674896
+    },
+    {
+      "id": "voice-campaign-encounter-craft-cd0a455809ce",
+      "speaker": "Edda",
+      "voice": "af_kore",
+      "speed": 0.95,
+      "text": "Ask for the movement page. Leave the families out of the request. I can help you carry a record; I will not give you people to lean on.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock identity, restrained conversational intention. Edda directs attention to a concrete record; Kerr negotiates a real personal cost. Preserve exact words; no narrator or custom name.",
+      "segments": [
+        {
+          "text": "Ask for the movement page.",
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "Leave the families out of the request.",
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "I can help you carry a record; I will not give you people to lean on.",
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.49,
+      "truePeakDbtp": -5.63,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-encounter-craft-cd0a455809ce.mp3",
+      "sourceFile": "/workspace/generated_audio/encounter-craft/voice-campaign-encounter-craft-cd0a455809ce.wav",
+      "sourceSha256": "7c434272931e1d063265228b93653dc63598d6630483e96d8e599034967fc9f7",
+      "pcmDeliveryFile": "/workspace/generated_audio/encounter-craft/voice-campaign-encounter-craft-cd0a455809ce-delivery.wav",
+      "pcmDeliverySha256": "a8aa8b557f06f413c1516250987ec2a8a29200a02274b8f67faf2ac6c4f612e4",
+      "sha256": "430e68710b08ae2ccc4f787eb8dbab539514cb20e4645f7a7ffc4556fa4f9bc4",
+      "bytes": 103148,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 8.501958333333333,
+      "peak": 0.5227285623550415,
+      "rms": 0.07560407370328903
+    },
+    {
+      "id": "voice-campaign-encounter-craft-ecb749c132e1",
+      "speaker": "Edda",
+      "voice": "af_kore",
+      "speed": 0.95,
+      "text": "Keep the question beside the answer you actually brought back. I still have to work here tomorrow.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock identity, restrained conversational intention. Edda directs attention to a concrete record; Kerr negotiates a real personal cost. Preserve exact words; no narrator or custom name.",
+      "segments": [
+        {
+          "text": "Keep the question beside the answer you actually brought back.",
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "I still have to work here tomorrow.",
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -6.56,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-encounter-craft-ecb749c132e1.mp3",
+      "sourceFile": "/workspace/generated_audio/encounter-craft/voice-campaign-encounter-craft-ecb749c132e1.wav",
+      "sourceSha256": "1dc971f304bfdb12fed43bc8b86f75425418eb7d49169226ea36ea8c063041d1",
+      "pcmDeliveryFile": "/workspace/generated_audio/encounter-craft/voice-campaign-encounter-craft-ecb749c132e1-delivery.wav",
+      "pcmDeliverySha256": "e4eef1411f30e4cb8b1c138c346eef9bea6857611f2beaeaa297ec31b46529a1",
+      "sha256": "644d289a826e3b45fd8dd7dc0d02cdc1f5d0a380ba5c950ee7098709ffddacf8",
+      "bytes": 72044,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 5.918,
+      "peak": 0.4698382318019867,
+      "rms": 0.07326922565698624
+    },
+    {
+      "id": "voice-campaign-encounter-craft-43e701b3e2c1",
+      "speaker": "Kerr",
+      "voice": "am_adam",
+      "speed": 0.97,
+      "text": "There is the case. There is no name in their register. We kept the bargain. The fitting is another day's work.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock identity, restrained conversational intention. Edda directs attention to a concrete record; Kerr negotiates a real personal cost. Preserve exact words; no narrator or custom name.",
+      "segments": [
+        {
+          "text": "There is the case.",
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "There is no name in their register.",
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "We kept the bargain.",
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "The fitting is another day's work.",
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -3.8,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-encounter-craft-43e701b3e2c1.mp3",
+      "sourceFile": "/workspace/generated_audio/encounter-craft/voice-campaign-encounter-craft-43e701b3e2c1.wav",
+      "sourceSha256": "0194884f51218cd6f3da4f471072953a7964a3609186e962401faf4bbbc427a3",
+      "pcmDeliveryFile": "/workspace/generated_audio/encounter-craft/voice-campaign-encounter-craft-43e701b3e2c1-delivery.wav",
+      "pcmDeliverySha256": "8d514620aba284b92f72d414b311aeea1ecfef03567e900f00ac9ca5a9261be4",
+      "sha256": "bc1e76f21bbe9899a8843c61951f973f885d1476d4e0ee16e0a813e82497296e",
+      "bytes": 90476,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 7.45,
+      "peak": 0.6453008055686951,
+      "rms": 0.07259204983711243
+    },
+    {
+      "id": "voice-campaign-encounter-craft-62b70985aa0d",
+      "speaker": "Kerr",
+      "voice": "am_adam",
+      "speed": 0.97,
+      "text": "I can count what arrived. I can read what they kept. We are not going to make one of those disappear by talking about the other.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock identity, restrained conversational intention. Edda directs attention to a concrete record; Kerr negotiates a real personal cost. Preserve exact words; no narrator or custom name.",
+      "segments": [
+        {
+          "text": "I can count what arrived.",
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "I can read what they kept.",
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "We are not going to make one of those disappear by talking about the other.",
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.51,
+      "truePeakDbtp": -4.23,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-encounter-craft-62b70985aa0d.mp3",
+      "sourceFile": "/workspace/generated_audio/encounter-craft/voice-campaign-encounter-craft-62b70985aa0d.wav",
+      "sourceSha256": "ca854d9bc14e276a0a9f879eb5dfd8a619ce5e45d91d9edf696fcf6d3df3b267",
+      "pcmDeliveryFile": "/workspace/generated_audio/encounter-craft/voice-campaign-encounter-craft-62b70985aa0d-delivery.wav",
+      "pcmDeliverySha256": "0b517478b993df4c11d544970e9285ede8ef1c156b41c0de234f8c5c332d5808",
+      "sha256": "85678c3358ccd498f5f069d8d43ffd308af1458776946c3a7a66b06ccc22ef2a",
+      "bytes": 93932,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 7.751291666666667,
+      "peak": 0.6125901937484741,
+      "rms": 0.07599470019340515
+    },
+    {
+      "id": "voice-campaign-encounter-craft-9597f82c6f10",
+      "speaker": "Kerr",
+      "voice": "am_adam",
+      "speed": 0.97,
+      "text": "You stopped before the journey. We can leave it here. The case is still there, and neither of us will call it collected.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock identity, restrained conversational intention. Edda directs attention to a concrete record; Kerr negotiates a real personal cost. Preserve exact words; no narrator or custom name.",
+      "segments": [
+        {
+          "text": "You stopped before the journey.",
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "We can leave it here.",
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "The case is still there, and neither of us will call it collected.",
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -4.29,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-encounter-craft-9597f82c6f10.mp3",
+      "sourceFile": "/workspace/generated_audio/encounter-craft/voice-campaign-encounter-craft-9597f82c6f10.wav",
+      "sourceSha256": "159e429a95d21ea97eeb8dab89edbc48aa40e6dbb13be804afc93f9164fe3a8a",
+      "pcmDeliveryFile": "/workspace/generated_audio/encounter-craft/voice-campaign-encounter-craft-9597f82c6f10-delivery.wav",
+      "pcmDeliverySha256": "cd20ea375b93dcefe85018f60437ad28741efc7870b4b551102a3edf118add7e",
+      "sha256": "cf50b8fee2975fe833b8f103356925801f8b09e9869762ca57ccc1ce3346e296",
+      "bytes": 87308,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 7.196625,
+      "peak": 0.605122983455658,
+      "rms": 0.07207915186882019
+    },
+    {
+      "id": "voice-campaign-encounter-craft-a3b854d736a3",
+      "speaker": "Kerr",
+      "voice": "am_adam",
+      "speed": 0.97,
+      "text": "You want me to pay for the quiet way in. Fine. Put something of yours on the counter.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock identity, restrained conversational intention. Edda directs attention to a concrete record; Kerr negotiates a real personal cost. Preserve exact words; no narrator or custom name.",
+      "segments": [
+        {
+          "text": "You want me to pay for the quiet way in.",
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "Fine.",
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "Put something of yours on the counter.",
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.48,
+      "truePeakDbtp": -1.97,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-encounter-craft-a3b854d736a3.mp3",
+      "sourceFile": "/workspace/generated_audio/encounter-craft/voice-campaign-encounter-craft-a3b854d736a3.wav",
+      "sourceSha256": "87bed50a20b5e4b46c85cdac8895038b6b49e79ac255433886bb7d6113928367",
+      "pcmDeliveryFile": "/workspace/generated_audio/encounter-craft/voice-campaign-encounter-craft-a3b854d736a3-delivery.wav",
+      "pcmDeliverySha256": "a96c0946be0146c184a6080c616e0f96b88cc1f80c2b2b38f0379f7c30e2f6a4",
+      "sha256": "dc0bf95d1599e8f7ebcf690f3de3e8565501533275acfc0ff518bfa3f1f1baf8",
+      "bytes": 70028,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 5.744666666666666,
+      "peak": 0.7967862486839294,
+      "rms": 0.0738806203007698
+    }
+  ]
+}

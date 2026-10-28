@@ -1,0 +1,102 @@
+{
+  "method": "Independent ASR of delivered MP3s, no authored-text prompt; punctuation/case/apostrophe and 20-to-twenty normalization only. Automated proxy, not human listening acceptance.",
+  "model": "Systran/faster-whisper-base.en",
+  "runtime": "faster-whisper 1.2.1, CPU int8",
+  "modelFiles": [
+    {
+      "name": "models--Systran--faster-whisper-base.en/snapshots/3d3d5dee26484f91867d81cb899cfcf72b96be6c/config.json",
+      "sha256": "f3bc3821e9fc76a27bae538e11ae5b677dcdd352b4600429ce7951d398569aeb"
+    },
+    {
+      "name": "models--Systran--faster-whisper-base.en/snapshots/3d3d5dee26484f91867d81cb899cfcf72b96be6c/model.bin",
+      "sha256": "2a166925539a16005f14ff328359f9b9adb9dc4fb631bb3b227526862e93e2ef"
+    },
+    {
+      "name": "models--Systran--faster-whisper-base.en/snapshots/3d3d5dee26484f91867d81cb899cfcf72b96be6c/tokenizer.json",
+      "sha256": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df"
+    }
+  ],
+  "lines": [
+    {
+      "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+      "speaker": "Edda",
+      "path": "public/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3",
+      "sha256": "26825c2bc65fe72059a7ad4da468fffe47e9cd921d8fcb4ebdfe6d1ed04c872e",
+      "authoredText": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+      "transcription": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-encounter-craft-570639a0f84d",
+      "speaker": "Edda",
+      "path": "public/audio/voice-campaign-encounter-craft-570639a0f84d.mp3",
+      "sha256": "1e229a9ea5a53ecba66385b2284e7967ba1b993c48303f09cf86bb76bd9c36e2",
+      "authoredText": "You have made one column answer for another. Look again. I am not asking you to believe me; I am asking you to read what is there.",
+      "transcription": "You have made one column answer for another. Look again. I am not asking you to believe me. I am asking you to read what is there. . . . . . . .",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-encounter-craft-0d503d1dabcb",
+      "speaker": "Edda",
+      "path": "public/audio/voice-campaign-encounter-craft-0d503d1dabcb.mp3",
+      "sha256": "bb673be3f3ab76f1e2506087d55a16c443d4a5aff21c54d94a029b7472e762ab",
+      "authoredText": "If you want the hand behind the instruction, bring the cancellation to its key. Her approval is a different act.",
+      "transcription": "If you want the hand behind the instruction, bring the cancellation to its key. Her approval is a different act.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-encounter-craft-cd0a455809ce",
+      "speaker": "Edda",
+      "path": "public/audio/voice-campaign-encounter-craft-cd0a455809ce.mp3",
+      "sha256": "430e68710b08ae2ccc4f787eb8dbab539514cb20e4645f7a7ffc4556fa4f9bc4",
+      "authoredText": "Ask for the movement page. Leave the families out of the request. I can help you carry a record; I will not give you people to lean on.",
+      "transcription": "Ask for the movement page. Leave the families out of the request. I can help you carry a record. I will not give you people to lean on.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-encounter-craft-ecb749c132e1",
+      "speaker": "Edda",
+      "path": "public/audio/voice-campaign-encounter-craft-ecb749c132e1.mp3",
+      "sha256": "644d289a826e3b45fd8dd7dc0d02cdc1f5d0a380ba5c950ee7098709ffddacf8",
+      "authoredText": "Keep the question beside the answer you actually brought back. I still have to work here tomorrow.",
+      "transcription": "Keep the question beside the answer you actually brought back. I still have to work here tomorrow.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-encounter-craft-43e701b3e2c1",
+      "speaker": "Kerr",
+      "path": "public/audio/voice-campaign-encounter-craft-43e701b3e2c1.mp3",
+      "sha256": "bc1e76f21bbe9899a8843c61951f973f885d1476d4e0ee16e0a813e82497296e",
+      "authoredText": "There is the case. There is no name in their register. We kept the bargain. The fitting is another day's work.",
+      "transcription": "There is the case. There is no name in their register. We kept the bargain. The fitting is another day's work.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-encounter-craft-62b70985aa0d",
+      "speaker": "Kerr",
+      "path": "public/audio/voice-campaign-encounter-craft-62b70985aa0d.mp3",
+      "sha256": "85678c3358ccd498f5f069d8d43ffd308af1458776946c3a7a66b06ccc22ef2a",
+      "authoredText": "I can count what arrived. I can read what they kept. We are not going to make one of those disappear by talking about the other.",
+      "transcription": "I can count what arrived. I can read what they kept. We are not going to make one of those disappear by talking about the other.\"",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-encounter-craft-9597f82c6f10",
+      "speaker": "Kerr",
+      "path": "public/audio/voice-campaign-encounter-craft-9597f82c6f10.mp3",
+      "sha256": "cf50b8fee2975fe833b8f103356925801f8b09e9869762ca57ccc1ce3346e296",
+      "authoredText": "You stopped before the journey. We can leave it here. The case is still there, and neither of us will call it collected.",
+      "transcription": "You stopped before the journey. We can leave it here. The case is still there, and neither of us will call it collected.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-encounter-craft-a3b854d736a3",
+      "speaker": "Kerr",
+      "path": "public/audio/voice-campaign-encounter-craft-a3b854d736a3.mp3",
+      "sha256": "dc0bf95d1599e8f7ebcf690f3de3e8565501533275acfc0ff518bfa3f1f1baf8",
+      "authoredText": "You want me to pay for the quiet way in. Fine. Put something of yours on the counter.",
+      "transcription": "You want me to pay for the quiet way in. Fine, put something of yours on the counter. . . . . . .",
+      "exactNormalizedWords": true
+    }
+  ]
+}

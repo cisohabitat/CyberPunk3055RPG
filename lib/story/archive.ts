@@ -1,3 +1,4 @@
+import { CRAFT_ARCHIVE_ENTRY, CRAFT_ARCHIVE_RETURN } from "../encounter-craft";
 import { ARCHIVE_CATALOG, CATALOG_CHOICES } from "../archive-catalog";
 import { kitBonuses } from "../loadout";
 import type { GameState, Scene } from "../types";
@@ -35,6 +36,7 @@ export const ARCHIVE_SCENES: Record<string, Scene> = {
       { id: "separate-source-tests", label: "Corroborate the cancellation; authenticate the issuer only with a key match.", effects: { flags: ["archive_compared"], journal: [{ id: "archive-method", text: "The catalog identifies an independent ledger. Retrieving it can corroborate the cancellation; a countersignature alone cannot authenticate a digital issuing key.", kind: "claim" }] }, next: "act2_archive_door" },
       { id: "catalog-is-proof", label: "The catalog alone proves who issued the command.", next: "act2_archive_challenge" },
       ...CATALOG_CHOICES,
+      CRAFT_ARCHIVE_ENTRY,
     ],
   },
   act2_archive_challenge: {
@@ -56,6 +58,7 @@ export const ARCHIVE_SCENES: Record<string, Scene> = {
       ? "Edda's next shift has been suspended pending a records review. The source still stands; publishing or signing it left a person the tower could question.\n\n'A review isn't a dismissal. If you can bridge the suspended shift, do. Keep the original available either way.'"
       : "Edda sends a message through Sera. Her shifts are still posted. The public copy has no technician's name, and she wants to keep it that way.\n\n'Keep the original available,' she says. 'Let them question the record without making my shifts the story.'",
     choices: [
+      CRAFT_ARCHIVE_RETURN,
       { id: "review-edda-shift", label: "Ask whether Edda wants help requesting paid work during the review.", requireFlag: "archive_custody", requireAnyFlag: ["edda_exposed", "archive_method_face", "archive_method_nerve"], hideIfFlag: "edda_shift_done", next: "act3_edda_terms" },
       { id: "bridge-edda-shift", label: "Contribute forty creds to the suspended shift.", requireCreds: 40, requireAnyFlag: ["edda_exposed", "archive_method_face", "archive_method_nerve"], effects: { creds: -40, flags: ["visited_edda", "edda_supported"], journal: [{ id: "edda-review", text: "Edda reported a suspended shift pending records review. You contributed forty creds; the review and original exposure remain unresolved.", kind: "fact" }] }, next: "act3_neighborhood" },
       { id: "respect-edda-source", label: "Record her limits and keep the source available.", effects: { flags: ["visited_edda"] }, next: "act3_neighborhood" },

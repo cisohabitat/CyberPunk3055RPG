@@ -268,6 +268,11 @@ ENCOUNTERS.act2_witness_return_private = { ...ENCOUNTERS.act2_witness_arrival, c
 for (const id of ["act2_witness_return_registered", "act2_witness_return_relocated"]) ENCOUNTERS[id] = { ...ENCOUNTERS.act2_witness_lost, caption: "Clinic relay · Nia answers on her terms" };
 ENCOUNTERS.act3_witness_shift_return = { ...ENCOUNTERS.act3_lumen_boundary, caption: "Glass Chapel · the work left behind" };
 
+for (const id of ["act2_craft_archive", "act2_craft_archive_issuer"]) ENCOUNTERS[id] = { ...ENCOUNTERS.act2_archive_compare, caption: "Helion · a question before a query" };
+for (const id of ["act2_craft_archive_challenge", "act2_craft_archive_ledger"]) ENCOUNTERS[id] = { ...ENCOUNTERS.act2_archive_brief, caption: "Helion · Edda keeps the request bounded" };
+ENCOUNTERS.act3_craft_archive_return = { src: "/art/correction-bench.jpg", small: "/art/correction-bench-small.jpg", caption: "Ward Nine · the question beside the answer", description: "Blank sheets and a closed unmarked sleeve lie in separate trays at a rain-lit workbench. They depict no retrieved source, authenticated key, submitted finding or restored shift." };
+for (const id of ["act2_craft_kerr_offer", "act2_craft_kerr_settlement", "act3_craft_kerr_settlement"]) ENCOUNTERS[id] = { ...ENCOUNTERS.act2_kerr_collection_terms, caption: "Ward Four · a fare has terms" };
+
 // Deliberate new viewpoints override only these two reviewed catalog scenes.
 ENCOUNTERS.act2_archive_prep = {
   src: "/art/archive-preparation.jpg", small: "/art/archive-preparation-small.jpg", caption: "Helion · before the search",

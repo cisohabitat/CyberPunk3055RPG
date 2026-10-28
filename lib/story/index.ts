@@ -1,3 +1,4 @@
+import { ENCOUNTER_CRAFT_SCENES } from "./encounter-craft";
 import { INTEGRATION_SCENES } from "./campaign-integration";
 import { WITNESS_RETURN_SCENES } from "./witness-return";
 import { ALLOCATION_SCENES } from "./notice-allocation";
@@ -33,6 +34,7 @@ export { vaultNext } from "./act1";
 export { CODEX, endingCoda } from "./codas";
 
 export const SCENES: Record<string, Scene> = mergeScenes(
+  ENCOUNTER_CRAFT_SCENES,
   WITNESS_RETURN_SCENES,
   MARA_ACCOUNT_SCENES,
   KERR_TERMS_SCENES,

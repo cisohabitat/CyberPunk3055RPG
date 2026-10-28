@@ -1,0 +1,112 @@
+[
+  {
+    "key": "5720ff8b686c7cfe",
+    "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+    "scene": "act2_craft_archive",
+    "sceneSpeaker": "Edda",
+    "speaker": "Edda",
+    "quote": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+    "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+    "part": 1
+  },
+  {
+    "key": "9312207c096007bc",
+    "id": "voice-campaign-encounter-craft-570639a0f84d",
+    "scene": "act2_craft_archive_challenge",
+    "sceneSpeaker": "Edda",
+    "speaker": "Edda",
+    "quote": "You have made one column answer for another. Look again. I am not asking you to believe me; I am asking you to read what is there.",
+    "text": "You have made one column answer for another. Look again. I am not asking you to believe me; I am asking you to read what is there.",
+    "part": 1
+  },
+  {
+    "key": "0f8c24ed37d7070a",
+    "id": "voice-campaign-encounter-craft-0d503d1dabcb",
+    "scene": "act2_craft_archive_issuer",
+    "sceneSpeaker": "Edda",
+    "speaker": "Edda",
+    "quote": "If you want the hand behind the instruction, bring the cancellation to its key. Her approval is a different act.",
+    "text": "If you want the hand behind the instruction, bring the cancellation to its key. Her approval is a different act.",
+    "part": 1
+  },
+  {
+    "key": "8d766002f00bda37",
+    "id": "voice-campaign-encounter-craft-cd0a455809ce",
+    "scene": "act2_craft_archive_ledger",
+    "sceneSpeaker": "Edda",
+    "speaker": "Edda",
+    "quote": "Ask for the movement page. Leave the families out of the request. I can help you carry a record; I will not give you people to lean on.",
+    "text": "Ask for the movement page. Leave the families out of the request. I can help you carry a record; I will not give you people to lean on.",
+    "part": 1
+  },
+  {
+    "key": "32202e9d287e18ee",
+    "id": "voice-campaign-encounter-craft-ecb749c132e1",
+    "scene": "act3_craft_archive_return",
+    "sceneSpeaker": "Edda",
+    "speaker": "Edda",
+    "quote": "Keep the question beside the answer you actually brought back. I still have to work here tomorrow.",
+    "text": "Keep the question beside the answer you actually brought back. I still have to work here tomorrow.",
+    "part": 1
+  },
+  {
+    "key": "5adb6d4028da1a5e",
+    "id": "voice-campaign-encounter-craft-a3b854d736a3",
+    "scene": "act2_craft_kerr_offer",
+    "sceneSpeaker": "Kerr",
+    "speaker": "Kerr",
+    "quote": "You want me to pay for the quiet way in. Fine. Put something of yours on the counter.",
+    "text": "You want me to pay for the quiet way in. Fine. Put something of yours on the counter.",
+    "part": 1
+  },
+  {
+    "key": "1c485c713655e59b",
+    "id": "voice-campaign-encounter-craft-43e701b3e2c1",
+    "scene": "act2_craft_kerr_settlement",
+    "sceneSpeaker": "Kerr",
+    "speaker": "Kerr",
+    "quote": "There is the case. There is no name in their register. We kept the bargain. The fitting is another day's work.",
+    "text": "There is the case. There is no name in their register. We kept the bargain. The fitting is another day's work.",
+    "part": 1
+  },
+  {
+    "key": "492c9db1126e6831",
+    "id": "voice-campaign-encounter-craft-43e701b3e2c1",
+    "scene": "act3_craft_kerr_settlement",
+    "sceneSpeaker": "Kerr",
+    "speaker": "Kerr",
+    "quote": "There is the case. There is no name in their register. We kept the bargain. The fitting is another day's work.",
+    "text": "There is the case. There is no name in their register. We kept the bargain. The fitting is another day's work.",
+    "part": 1
+  },
+  {
+    "key": "9a232b291aa233e5",
+    "id": "voice-campaign-encounter-craft-62b70985aa0d",
+    "scene": "act2_craft_kerr_settlement",
+    "sceneSpeaker": "Kerr",
+    "speaker": "Kerr",
+    "quote": "I can count what arrived. I can read what they kept. We are not going to make one of those disappear by talking about the other.",
+    "text": "I can count what arrived. I can read what they kept. We are not going to make one of those disappear by talking about the other.",
+    "part": 1
+  },
+  {
+    "key": "dd4483f602bb12c3",
+    "id": "voice-campaign-encounter-craft-62b70985aa0d",
+    "scene": "act3_craft_kerr_settlement",
+    "sceneSpeaker": "Kerr",
+    "speaker": "Kerr",
+    "quote": "I can count what arrived. I can read what they kept. We are not going to make one of those disappear by talking about the other.",
+    "text": "I can count what arrived. I can read what they kept. We are not going to make one of those disappear by talking about the other.",
+    "part": 1
+  },
+  {
+    "key": "54993bfc43c31d44",
+    "id": "voice-campaign-encounter-craft-9597f82c6f10",
+    "scene": "act2_craft_kerr_settlement",
+    "sceneSpeaker": "Kerr",
+    "speaker": "Kerr",
+    "quote": "You stopped before the journey. We can leave it here. The case is still there, and neither of us will call it collected.",
+    "text": "You stopped before the journey. We can leave it here. The case is still there, and neither of us will call it collected.",
+    "part": 1
+  }
+]

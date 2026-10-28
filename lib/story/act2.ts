@@ -1,3 +1,4 @@
+import { CRAFT_SETTLE_ENTRY } from "../encounter-craft";
 import { depotShiftChoice, witnessShiftChoice } from "../encounter-methods";
 import { responseChoice } from "./character-arcs";
 import { kerrCollectionChoice } from "./relationships";
@@ -509,6 +510,7 @@ export const ACT2_SCENES: Record<string, Scene> = {
         next: "act2_middle",
       },
       ...WITNESS_RETURN_CHOICES,
+      CRAFT_SETTLE_ENTRY,
       {
         id: "stand",
         label: "Stand where the names are.",
