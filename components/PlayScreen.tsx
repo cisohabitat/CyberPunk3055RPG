@@ -6,6 +6,7 @@ import { ConversationContext } from "./ConversationContext";
 import { ArchiveCatalog } from "./ArchiveCatalog";
 import { choiceSection } from "@/lib/choice-sections";
 import { canalThreads } from "@/lib/canal-threads";
+import { decisionFirstScene } from "@/lib/decision-pacing";
 import { choicePresentation, DISTRICT_PRESENTATIONS, sceneDistrict } from "@/lib/visual-presentation";
 import { chapterPresentation } from "@/lib/chapter-presentation";
 import { ChapterTransition } from "./ChapterTransition";
@@ -105,6 +106,7 @@ export function PlayScreen({
   const direction = pivotalScene(scene.id) ?? finale ?? investigation ?? sequence;
   const choices = presentChoices(state, scene);
   const canal = scene.id === "act2_middle";
+  const decisionFirst = decisionFirstScene(scene.id);
   const threads = canalThreads(scene.id, choices);
   const choiceMarks = choices.map(choice => choicePresentation(scene.id, choice));
   const choiceLegend = choiceMarks.filter((mark, index) => choiceMarks.findIndex(other => other.kind === mark.kind) === index);
@@ -428,7 +430,7 @@ export function PlayScreen({
             )}
             {preferences.reading === "paragraph" && paragraphs.length > 1 && <p className="reading-progress hint" role="status" aria-atomic="true">{visibleCount} of {paragraphs.length} paragraphs shown</p>}
             {dialogueQueue.length > 0 && <VoiceLine sceneId={scene.id} key={scene.id} line={dialogue} lines={dialogueQueue} automatic={preferences.autoVoices} paused={audioPaused && preferences.sound} enabled={voicesEnabled} onSpeaking={setSpeaking} />}
-            {visibleCount === paragraphs.length && <ConversationContext state={state} speaker={scene.speaker} />}
+            {!decisionFirst && visibleCount === paragraphs.length && <ConversationContext state={state} speaker={scene.speaker} />}
             {visibleCount === paragraphs.length && choices.length >= 8 && !scene.memory && scene.id !== "memory_sequence" && scene.id !== "act2_archive_compare" && <a className="decision-overview" data-testid="review-choices" href="#choices" onClick={event => {
               const target = document.getElementById("choices");
               if (!target) return;
@@ -436,7 +438,7 @@ export function PlayScreen({
               target.focus({ preventScroll: true });
               target.scrollIntoView({ block: "start", behavior: "instant" });
             }}>Review available choices</a>}
-            {!scene.finale && <div className="decision-context" data-testid="decision-context">
+            {!scene.finale && !decisionFirst && <div className="decision-context" data-testid="decision-context">
               <ObjectiveBrief state={state} />
               <TransferBrief state={state} />
               <ArchiveBrief state={state} />
@@ -450,14 +452,21 @@ export function PlayScreen({
             {scene.id === "memory_sequence" && <MemoryTimeline state={state} choices={choices} onPlace={pick} artwork={preferences.artwork !== "none"} reducedMotion={reduceMotion} numberShortcuts={preferences.numberShortcuts} />}
             {["act2_route_map", "act2_route_exit", "act2_route_review", "act2_route_crossing"].includes(scene.id) && <RouteBoard state={state} />}
             {scene.finale && <FinaleReflection state={state} artwork={preferences.artwork !== "none"} />}
-            {!scene.finale && !canal && <CampaignThread state={state} choices={choices} />}
-            {!canal && recentChoice}
+            {!scene.finale && !decisionFirst && <CampaignThread state={state} choices={choices} />}
+            {!decisionFirst && recentChoice}
             {fault && <p className="form-error">{fault}</p>}
             {choices.length > 0 && (
               <div className={scene.id === "districts" ? "choices cards" : "choices"} id="choices" tabIndex={-1} role="region" aria-labelledby="choices-title">
                 <div className="decision-help">
                   <h2 id="choices-title">Your next move</h2>
-                  <p className="hint">Selecting an option commits it. For a check, review the odds and costs first; Back leaves it unrolled.</p>
+                  {decisionFirst && <a className="decision-record-link" href="#decision-records" data-testid="review-decision-records" onClick={event => {
+                    const target = document.getElementById("decision-records");
+                    if (!target) return;
+                    event.preventDefault();
+                    target.focus({ preventScroll: true });
+                    target.scrollIntoView({ block: "start", behavior: "instant" });
+                  }}>Review your records</a>}
+                  {decisionFirst ? <p className="hint">Review costs before choosing.</p> : <p className="hint">Selecting an option commits it. For a check, review the odds and costs first; Back leaves it unrolled.</p>}
                   {threads.length > 0 && <details className="canal-threads" data-testid="canal-threads" key={scene.id}>
                     <summary>Find a thread · {threads.reduce((count, thread) => count + thread.choices.length, 0)} available choices</summary>
                     <p className="hint">Find the work you want to review. This spends nothing; select its choice below only when you are ready.</p>
@@ -472,8 +481,8 @@ export function PlayScreen({
                       }}>Find: {choice.label}</a></li>)}</ul>
                     </section>)}
                   </details>}
-                  {choiceLegend.length > 1 && <p className="choice-legend" aria-label="Choice markers">{choiceLegend.map(mark => <span key={mark.kind}><Symbol name={mark.symbol} /> {mark.label}</span>)}</p>}
-                  {unavailableChoices.length > 0 && <details data-testid="unavailable-choices"><summary>Review unavailable approaches ({unavailableChoices.length})</summary><ul>{unavailableChoices.map((choice) => <li key={choice.id}><strong>{choice.label}</strong><p>{choice.disabledReason}</p></li>)}</ul></details>}
+                  {!decisionFirst && choiceLegend.length > 1 && <p className="choice-legend" aria-label="Choice markers">{choiceLegend.map(mark => <span key={mark.kind}><Symbol name={mark.symbol} /> {mark.label}</span>)}</p>}
+                  {!decisionFirst && unavailableChoices.length > 0 && <details data-testid="unavailable-choices"><summary>Review unavailable approaches ({unavailableChoices.length})</summary><ul>{unavailableChoices.map((choice) => <li key={choice.id}><strong>{choice.label}</strong><p>{choice.disabledReason}</p></li>)}</ul></details>}
                   {decisionIndex > 0 && <a href="#chapter-decision" data-testid="decision-jump" onClick={event => {
                     const target = document.getElementById("chapter-decision");
                     if (!target) return;
@@ -532,9 +541,26 @@ export function PlayScreen({
                 })}
               </div>
             )}
-            {canal && <section className="canal-history" aria-label="Review your campaign so far" data-testid="canal-history">
-              <CampaignThread state={state} choices={choices} />
-              {recentChoice}
+            {decisionFirst && <section className="decision-records" id="decision-records" tabIndex={-1} aria-labelledby="decision-records-title" data-testid="decision-records" key={`decision-records-${scene.id}`}>
+              <h2 id="decision-records-title">Commitments and history</h2>
+              {visibleCount === paragraphs.length && <ConversationContext state={state} speaker={scene.speaker} />}
+              <div className="decision-context"><ObjectiveBrief state={state} /></div>
+              <section aria-label="Choice reference"><h3>Choosing an action</h3>
+                <p className="hint">Selecting an option commits it. For a check, review the odds and costs first; Back leaves it unrolled.</p>
+                {choiceLegend.length > 1 && <p className="choice-legend" aria-label="Choice markers">{choiceLegend.map(mark => <span key={mark.kind}><Symbol name={mark.symbol} /> {mark.label}</span>)}</p>}
+                {unavailableChoices.length > 0 && <details data-testid="unavailable-choices"><summary>Review unavailable approaches ({unavailableChoices.length})</summary><ul>{unavailableChoices.map((choice) => <li key={choice.id}><strong>{choice.label}</strong><p>{choice.disabledReason}</p></li>)}</ul></details>}
+              </section>
+              {canal ? <section className="canal-history" aria-label="Review your campaign so far" data-testid="canal-history">
+                <CampaignThread state={state} choices={choices} />
+                {recentChoice}
+              </section> : <><CampaignThread state={state} choices={choices} />{recentChoice}</>}
+              <a className="decision-record-link" href="#choices" data-testid="return-to-choices" onClick={event => {
+                const target = document.getElementById("choices");
+                if (!target) return;
+                event.preventDefault();
+                target.focus({ preventScroll: true });
+                target.scrollIntoView({ block: "start", behavior: "instant" });
+              }}>Back to choices</a>
             </section>}
             {scene.memory && scene.id !== "memory_table" && <details className="memory-review" data-testid="memory-review"><summary>Review the inspected memory · {memoryDisposition(state)}</summary><TestimonyBrief state={state} /><MemoryPlate key={scene.id} state={state} choices={choices} onInspect={pick} artwork={preferences.artwork !== "none"} numberShortcuts={preferences.numberShortcuts} /></details>}
             {scene.ending && (

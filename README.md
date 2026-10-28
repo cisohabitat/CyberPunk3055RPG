@@ -1,5 +1,7 @@
 # Saint Shard
 
+The [AAA craft roadmap](docs/AAA_CRAFT_ROADMAP.md) records the latest provisional 8.6 internal review and six sequential improvement phases. Phase 1 brings ordinary hub/conversation choices ahead of saved commitments and history, with focus links for review and return. Active preparation, costs, warnings, exact dialogue and matching art/voices remain intact; no new painting or performance is needed for this layout change.
+
 A solo story RPG in **Kite City, 3055**. You play it in the browser. The run stays on that browser. There is no account and no server save.
 
 Quill hires you to lift Mara Voss's unedited hour from Glass Chapel before dawn. Helion is about to edit a crime out of her: she signed the Ward Nine coolant dump, and three hundred people died. Kerr is paid to stop you. Sister Lumen may help you leak the hour or break it. A week later the city asks for a buyer or a witness. At Ward Nine, Sera keeps the dead on a wall, and that is the last choice.

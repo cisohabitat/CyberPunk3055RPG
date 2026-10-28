@@ -1,6 +1,8 @@
-# Saint Shard roadmap: 8.2 to a supported 9+
+# Saint Shard roadmap: 8.2 to a supported 9+ — historical 12 October plan
 
-Updated 12 October 2026. Current candidate: 197 scenes, 587 choices and 133 deterministic replay routes. The latest **provisional internal weighted grade is 8.2/10**; historical assessments remain in [the review](REVIEW.md). Simulated play is the primary development proxy while independent participants are unavailable. It supports development decisions and provisional grading without inventing human participation.
+Historical snapshot; current priorities and the 8.6 internal review are in [AAA craft roadmap](AAA_CRAFT_ROADMAP.md).
+
+Updated 12 October 2026. Candidate at that date: 197 scenes, 587 choices and 133 deterministic replay routes. The **provisional internal weighted grade at that date was 8.2/10**; historical assessments remain in [the review](REVIEW.md). Simulated play is the primary development proxy while independent participants are unavailable. It supports development decisions and provisional grading without inventing human participation.
 
 This roadmap improves the existing browser narrative RPG. The [funded AAA production program](AAA_PRODUCTION_PLAN.md) remains the separate 24–30 month proposal for staffing, expanded campaign scope, commissions, localization and launch support. Completing development cycles does not complete that larger program or guarantee a review score.
 
