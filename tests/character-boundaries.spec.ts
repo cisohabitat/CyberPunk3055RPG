@@ -3,7 +3,7 @@ import AxeBuilder from "@axe-core/playwright";
 import { keyboardActivate } from "../qa/production/keyboard";
 import { voiceLevel } from "../lib/voice-level";
 import { installAudioReview, type AudioReview } from "../qa/production/audio-review";
-import { fixture, openRun } from "./fixtures/game";
+import { fixture, openRun, kerrRegisteredReceiptFixture } from "./fixtures/game";
 import { observeBeds, bedReview } from "./fixtures/audio";
 
 for (const [width, textOnly] of [[390, false], [1440, false], [320, true]] as const) test(`Kerr route draft, recorded roll and delayed receipt at ${width}px`, async ({ page }) => {
@@ -37,7 +37,7 @@ for (const [width, textOnly] of [[390, false], [1440, false], [320, true]] as co
   if(textOnly) expect(artwork).toEqual([]);
 });
 
-test("Kerr failed collection preserves registration and refusal of further contact", async ({ page }) => {
+test("Kerr failed collection preserves registration and paid receipt through reload", async ({ page }) => {
   await page.addInitScript(() => { Math.random = () => .05; localStorage.setItem("saint-shard-preferences", JSON.stringify({ reading: "all" })); });
   await openRun(page, fixture("act2_middle", { creds: 20, strain: 0, stats: {chrome:1,face:1,ghost:1,nerve:1}, flags: { kerr_talked: true, kerr_sold_you: true } }));
   for(const id of ["answer-kerr-collection", "promise-private-collection", "route-entry-gate", "route-exit-gap"]) await page.getByTestId(`choice-${id}`).click();
@@ -47,7 +47,15 @@ test("Kerr failed collection preserves registration and refusal of further conta
   await expect(page.getByTestId("choice-route-use-gap")).toHaveCount(0);
   await page.getByTestId("choice-fund-kerr-courier").click(); await page.reload(); await page.getByTestId("continue-run").click();
   await expect(page.getByTestId("creds")).toContainText("0"); await page.getByTestId("choice-record-kerr-receipt").click();
+  const receipt = await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!));
+  expect(receipt).toEqual(kerrRegisteredReceiptFixture());
+});
+
+test("Kerr registered receipt preserves refusal of further contact through reload", async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem("saint-shard-preferences", JSON.stringify({ reading: "all" })));
+  await openRun(page, kerrRegisteredReceiptFixture());
   for(const id of ["stand", "back-to-board", "to-the-wall", "to-ward-nine", "face-sera", "visit-kerr-collection", "answer-kerr-breach", "deny-kerr-disclosure"]) await page.getByTestId(`choice-${id}`).click();
+  await page.reload(); await page.getByTestId("continue-run").click();
   await expect(page.getByTestId("choice-ask-kerr-personal-question")).toHaveCount(0);
   if (await page.getByTestId("sheet-toggle").isVisible()) await page.getByTestId("sheet-toggle").click();
   await expect(page.locator("#runner-sheet .cast")).toContainText("He sold your account to Helion");

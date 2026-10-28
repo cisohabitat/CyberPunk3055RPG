@@ -1,0 +1,31 @@
+{
+  "parent": "976cbb5bcb79cbb6c0b96ea5cf1c5f9e0ec2deae",
+  "originalTest": "Kerr failed collection preserves registration and refusal of further contact",
+  "originalSha256": "3209d6f0ad4615b7257dd9e94805c591fd480d65208c7a4970822c61174bdfee",
+  "unchangedOtherStatements": 10,
+  "originalAssertions": 8,
+  "replacementAssertions": 9,
+  "allOriginalActionIdsPreservedInOrder": true,
+  "defaultTimeoutMs": 30000,
+  "workers": 4,
+  "retriesAdded": 0,
+  "checkpoint": "canonical choices with die 1; exact UI-save equality",
+  "additionalCoverage": "refusal persists through another reload",
+  "gameMediaWorkflowChanged": false,
+  "localRepeated": {
+    "passed": 20,
+    "projects": [
+      "chromium",
+      "webkit"
+    ],
+    "retries": 0,
+    "localWebkitDiagnosticOnly": true
+  },
+  "precedingRun": {
+    "id": 40623916875,
+    "seconds": 1126,
+    "previousSeconds": 3309,
+    "allJobsPassed": 22,
+    "flaky": 1
+  }
+}

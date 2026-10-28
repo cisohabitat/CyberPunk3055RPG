@@ -18,6 +18,17 @@ export function archiveCustodyFixture(): GameState {
   return state;
 }
 
+/** Replays the failed private collection and paid, registered handover. */
+export function kerrRegisteredReceiptFixture(): GameState {
+  let state = fixture("act2_middle", { creds: 20, strain: 0, stats: { chrome: 1, face: 1, ghost: 1, nerve: 1 }, flags: { kerr_talked: true, kerr_sold_you: true } });
+  for (const id of ["answer-kerr-collection", "promise-private-collection", "route-entry-gate", "route-exit-gap", "depart-kerr-foot", "route-use-gap", "fund-kerr-courier", "record-kerr-receipt"]) {
+    const choice = getScene(state.sceneId).choices.find(choice => choice.id === id);
+    if (!choice) throw new Error(`Missing canonical Kerr collection action: ${id}`);
+    state = commitChoice(state, choice, choice.check ? { roll: 1 } : undefined).state;
+  }
+  return state;
+}
+
 export async function openRun(page: Page, state = fixture()) {
   await page.addInitScript((run) => {
     if (!localStorage.getItem("saint-shard-3055-v1")) localStorage.setItem("saint-shard-3055-v1", JSON.stringify(run));
