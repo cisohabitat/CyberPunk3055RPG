@@ -1,0 +1,87 @@
+{
+  "parent": "346403c45d78ffcafae702cca41fdddd83d7fb18",
+  "scope": "Written ending payoff and one existing unfinished commitment; canonical scenes, story states, art, actors, quotations and media bytes unchanged",
+  "reviewKind": "source-familiar AI browser proxy, not independent human or physical-device acceptance",
+  "baseline": [
+    {
+      "name": "names",
+      "route": "finale-names-consent-withdrawn",
+      "visible": "What you carry\n\nYou came to keep your name your own. Now your voice has a place beside Sera\u2019s pencil.\n\nWhat remains\n\n1 complete \u00b7 0 open \u00b7 0 unresolved \u00b7 0 compromised\n\nReview every commitment and its limits\nReview the factual aftermath\nRevisit the three chapters and final resources\nFollow your campaign thread \u00b7 3 connections\nThree moments from your run",
+      "title": "SAID ALOUD"
+    },
+    {
+      "name": "quiet",
+      "route": "finale-quiet-withdrawn",
+      "visible": "What you carry\n\nYou came to keep tomorrow paid for. Now the stair is quiet behind you.\n\nThe room and the account\n\nNia's words survive beside the cost of a room Helion learned to find. The memorial page cannot make that earlier address private again.\n\nWhat remains\n\n0 complete \u00b7 0 open \u00b7 1 unresolved \u00b7 1 compromised\n\nReview every commitment and its limits\nReview the factual aftermath\nRevisit the three chapters and final resources\nFollow your campaign thread \u00b7 3 connections\nThree moments from your run",
+      "title": "LEFT TO THE RAIN"
+    },
+    {
+      "name": "witness",
+      "route": "finale-witness-corrected",
+      "visible": "What you carry\n\nYou came to keep your name your own. Now you have admitted where the fire began.\n\nWhat remains\n\n0 complete \u00b7 0 open \u00b7 1 unresolved \u00b7 0 compromised\n\nReview every commitment and its limits\nReview the factual aftermath\nRevisit the three chapters and final resources\nFollow your campaign thread \u00b7 2 connections\nThree moments from your run",
+      "title": "ALREADY LOOSE"
+    },
+    {
+      "name": "listed",
+      "route": "finale-listed-archive",
+      "visible": "What you carry\n\nYou came looking for a way beyond the next closed door. Now Ives has a folio you cannot take back.\n\nWhat remains\n\n1 complete \u00b7 0 open \u00b7 0 unresolved \u00b7 0 compromised\n\nReview every commitment and its limits\nReview the factual aftermath\nRevisit the three chapters and final resources\nFollow your campaign thread \u00b7 2 connections\nThree moments from your run",
+      "title": "ON THE FOLIO"
+    }
+  ],
+  "candidateSources": {
+    "lib/ending-payoff.ts": "da7b8de67eefbc0b325983f7baca2555a742dd57a8818fe10dca1eb8f80b8412",
+    "lib/finale-commitments.ts": "19aefbf6f43b60acc473f210ab050f35d03308d2633c2da7d76cf815233add14",
+    "components/FinaleReflection.tsx": "bbc097d616d793e35ad36b3866d1b863308fad097801019cd5f6af176df70b1c",
+    "app/globals.css": "76e176b570a3377fd90903c4f010a259a7dd486e423f91df9cd18909ae44d708",
+    "tests/ending-payoff.spec.ts": "73346862376c11486ae86c829db5de0ca84d32eb64ab9b1e3f6c27f6fa158eaa",
+    "lib/ending-payoff.test.ts": "66110f49beafb34cbf2695ceae4cfbe9217f332a7138d113168fb27a69d9cf32"
+  },
+  "local": {
+    "sourcePassed": 812,
+    "typescript": "passed",
+    "productionBuild": "passed",
+    "securityKnownVulnerabilities": 0,
+    "productionBudgetViolations": [],
+    "directedChromiumWebkit": {
+      "passed": 52,
+      "retries": 0,
+      "workers": 4,
+      "includes": "18 new cases and 8 unchanged finale direction/voice cases per project"
+    },
+    "finalStyleChecks": {
+      "passed": 36,
+      "retries": 0,
+      "workers": 4
+    },
+    "localWebkitDiagnosticOnly": true,
+    "collectedPerProject": 1020,
+    "totalCollected": 4080
+  },
+  "visualReview": {
+    "widths": [
+      390,
+      1440,
+      320
+    ],
+    "artwork": [
+      "full",
+      "full",
+      "none"
+    ],
+    "observations": [
+      "Scene and voice controls precede the written afterword",
+      "Corrected hearing and the unverified source question remain distinct",
+      "Native review link follows the game cyan accent; no extra painting or crop",
+      "Text-only enlarged view has no art requests or horizontal overflow"
+    ],
+    "captureSha256": {
+      "frozen-results/ending-payoff-earned-endin-2bda2--witness-corrected-at-320px-webkit/ending-payoff-320.png": "230df1cd575b4948e39655c1a90481471dfeb2ef7c65d4a637ca9c2e49ec5dd5",
+      "frozen-results/ending-payoff-earned-endin-28527-witness-corrected-at-1440px-webkit/ending-payoff-1440.png": "70a87b7648bcf11ab80eb871d55f032f6887b8b72629bc827d2024ae0c79ca08",
+      "frozen-results/ending-payoff-earned-endin-113d8--witness-corrected-at-390px-webkit/ending-payoff-390.png": "00e83424a471b1c9e0fd209ca0c28558b7ca21747c1ff03736f31ff98817a75c",
+      "frozen-results/ending-payoff-earned-endin-2bda2--witness-corrected-at-320px-chromium/ending-payoff-320.png": "802fd449044040f559dc7c12786179a2c2502aa48220a2e9c179304ec3c3f908",
+      "frozen-results/ending-payoff-earned-endin-28527-witness-corrected-at-1440px-chromium/ending-payoff-1440.png": "51780dd85b438adbbb0dad470a1262cd939107648d32894259d3fc1abf7c0b74",
+      "frozen-results/ending-payoff-earned-endin-113d8--witness-corrected-at-390px-chromium/ending-payoff-390.png": "a2972d3157958573ddfb2285d2e07a1efb2ef1a81a9ffeac9de88ba5c2e74114"
+    }
+  },
+  "release": "Candidate only. Full hosted CI and exact-commit live verification required separately."
+}

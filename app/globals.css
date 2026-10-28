@@ -1238,6 +1238,14 @@ html[data-motion="reduce"] .fragment-placed { animation: none; }
 /* Final scenes lead with their words; the campaign ledger follows the farewell. */
 .finale-stage { margin-top: .75rem; }
 .finale-reflection { margin-top: 1.5rem; }
+.ending-payoff { border-block: 1px solid var(--line); padding-block: 1.25rem; margin-block-end: 1.25rem; }
+.ending-payoff h2 { font: 600 1.2rem/1.5 var(--font-display), sans-serif; margin: 0 0 .75rem; }
+.ending-payoff p { max-width: 65ch; }
+.ending-payoff a { display: inline-flex; align-items: center; min-height: 45px; color: var(--cyan); text-underline-offset: .2em; }
+#ending-facts { scroll-margin-block-start: calc(var(--header-h, 0px) + 1rem); }
+.finale-open-thread { border-inline-start: 2px solid var(--amber); padding-inline-start: 1rem; margin-block: 1rem; }
+.finale-open-thread h3 { font-size: 1rem; margin-block: 0 .5rem; }
+.finale-open-thread p { max-width: 65ch; }
 .finale-carry { border-left: 2px solid var(--amber); padding-left: 1rem; }
 .finale-carry h2 { font: 600 1.2rem/1.5 var(--font-display), sans-serif; color: var(--amber); margin: 0 0 .75rem; }
 .finale-carry p { max-width: 65ch; }

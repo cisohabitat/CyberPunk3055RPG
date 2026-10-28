@@ -63,6 +63,8 @@ If the browser blocks storage or cannot save, the game still opens and plays. A 
 
 ## The memory bench and the week
 
+The four final endings now connect the wall choice to your earlier record: a paid silence bargain, a filed or withdrawn hearing, a retained correction, or Sera’s custody of an archive original. These short written reflections follow the scene and its matching art/dialogue. The ending also names one compromised, unresolved or open commitment, with the full record still available below. Nothing in the afterword grants evidence, permission, money or a new outcome. See [ending payoff review](docs/ENDING_PAYOFF.md).
+
 After Mara explains her signature, open the memory bench to inspect three fragments: her account, an exported counter-order awaiting independent verification, and the roster identifying Nia Pell as a living witness. The journal distinguishes claims, facts, and promises. Inspect all three, compare the decisions, and label the packet before deciding which record leaves the room:
 
 - **Complete archive:** preserve the chain and roster, take Strain and surveillance attention, and investigate its issuing key during The Week.
