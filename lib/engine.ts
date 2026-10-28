@@ -8,6 +8,7 @@ import { archivePlanBonus, archivePlanChoices, finishArchivePlan } from "./archi
 import { districtChoices } from "./district-response";
 import { techniqueChoices } from "./build-techniques";
 import { encounterCraftChoices } from "./encounter-craft";
+import { payoffChoices } from "./emotional-payoff";
 import { maraAccountChoices } from "./mara-account";
 import type {
   CheckPreview,
@@ -54,6 +55,7 @@ export function createCharacter(input: {
   expandedMara?: boolean;
   expandedWitness?: boolean;
   craftedEncounters?: boolean;
+  emotionalPayoffs?: boolean;
 }): GameState {
   const origin = ORIGINS[input.origin];
   const complication = input.complication ?? null;
@@ -82,6 +84,8 @@ export function createCharacter(input: {
   if (input.expandedWitness) flags.witness_returns_enabled = true;
   if (input.craftedEncounters !== undefined && typeof input.craftedEncounters !== "boolean") throw new Error("Invalid encounter craft option");
   if (input.craftedEncounters) flags.encounter_craft_enabled = true;
+  if (input.emotionalPayoffs !== undefined && typeof input.emotionalPayoffs !== "boolean") throw new Error("Invalid emotional payoff option");
+  if (input.emotionalPayoffs) flags.emotional_payoffs_enabled = true;
   if (complication === "on-file") flags.on_file = true;
   if (complication === "debt") flags.debt = true;
   if (complication === "optic") flags.optic = true;
@@ -149,7 +153,7 @@ function choiceHidden(state: GameState, choice: Choice): boolean {
 }
 
 export function presentChoices(state: GameState, scene: Scene): VisibleChoice[] {
-  return encounterCraftChoices(state, scene, maraAccountChoices(state, scene, [...techniqueChoices(state, scene, districtChoices(state, scene, archivePlanChoices(state, scene))), ...caseFileChoices(state, scene)]), SCENES).filter((choice) => !choiceHidden(state, choice)).map((choice) => {
+  return payoffChoices(state, scene.id, encounterCraftChoices(state, scene, maraAccountChoices(state, scene, [...techniqueChoices(state, scene, districtChoices(state, scene, archivePlanChoices(state, scene))), ...caseFileChoices(state, scene)]), SCENES)).filter((choice) => !choiceHidden(state, choice)).map((choice) => {
     if (choice.maxStrain !== undefined && state.strain > choice.maxStrain) {
       return { ...choice, enabled: false, disabledReason: `Need Strain at most ${choice.maxStrain}; recover before this preparation` };
     }

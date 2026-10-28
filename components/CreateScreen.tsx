@@ -50,7 +50,7 @@ export function CreateScreen({
         onSubmit={(event) => {
           event.preventDefault();
           if (!ready) return;
-          onStart(createCharacter({ handle, givenName, origin, bonus, complication, keepsake: keepsake || null, startWithPrologue: true, expandedKerr: true, expandedMara: true, expandedWitness: true, craftedEncounters: true }));
+          onStart(createCharacter({ handle, givenName, origin, bonus, complication, keepsake: keepsake || null, startWithPrologue: true, expandedKerr: true, expandedMara: true, expandedWitness: true, craftedEncounters: true, emotionalPayoffs: true }));
         }}
       >
         <p className="eyebrow">New runner</p>

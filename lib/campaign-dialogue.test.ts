@@ -1,3 +1,4 @@
+import payoff from "../qa/media/emotional-payoff.json";
 import craft from "../qa/media/encounter-craft.json";
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
@@ -143,8 +144,8 @@ describe("campaign character dialogue", () => {
     }
   });
   it("has fitting explicit art decisions for the entire campaign and preserves chapter cards", () => {
-    assert.equal(Object.keys(auditSceneArt(SCENES)).length, 217 + kerrPhase.newScenes.length + maraPhase.newScenes.length + witnessPhase.newScenes.length + craft.newScenes.length);
-    assert.equal(Object.values(SCENES).filter(s => sceneIllustration(s.id)).length, 213 + 7 + maraPhase.newScenes.length + witnessPhase.newScenes.length + craft.newScenes.length);
+    assert.equal(Object.keys(auditSceneArt(SCENES)).length, 217 + kerrPhase.newScenes.length + maraPhase.newScenes.length + witnessPhase.newScenes.length + craft.newScenes.length + payoff.newScenes.length);
+    assert.equal(Object.values(SCENES).filter(s => sceneIllustration(s.id)).length, 213 + 7 + maraPhase.newScenes.length + witnessPhase.newScenes.length + craft.newScenes.length + payoff.newScenes.length);
     assert.equal(sceneIllustration("card_week"), undefined); assert.equal(sceneIllustration("card_wall"), undefined);
     for (const id of ["ending_names", "ending_quiet", "ending_witness", "ending_listed"]) assert.ok(sceneIllustration(id)?.src.startsWith("/art/finale-"));
   });

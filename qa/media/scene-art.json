@@ -144,7 +144,7 @@
     {
       "treatment": "illustration",
       "asset": "/art/finale-names.jpg",
-      "reason": "The existing plate shows memorial marks and Sera writing, with no hearing document or private identity displayed. Speaking names does not file a hearing draft or change source permission. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Expression staging accompanies the actual actor and adds no outcome or permission. Finale direction reuses this complete painting beside canonical closing prose on desktop and after prose on phones. The compact speaker header and subsequent factual disclosures depict no new closure, source transfer, forgiveness or permission. The written commitment-status list retains this final action and its existing illustration; unresolved and compromised work cannot be turned into completed outcomes by the ending.",
+      "reason": "The existing plate shows memorial marks and Sera writing, with no hearing document or private identity displayed. Speaking names does not file a hearing draft or change source permission. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Expression staging accompanies the actual actor and adds no outcome or permission. Finale direction reuses this complete painting beside canonical closing prose on desktop and after prose on phones. The compact speaker header and subsequent factual disclosures depict no new closure, source transfer, forgiveness or permission. The written commitment-status list retains this final action and its existing illustration; unresolved and compromised work cannot be turned into completed outcomes by the ending. Emotional payoff mode changes only the closing human beat: the existing memorial/pencil/stair/folio composition still fits the actual finale. No new source, private visit disclosure, absolution or restored outcome is depicted.",
       "scenes": [
         "ending_names"
       ]
@@ -152,7 +152,7 @@
     {
       "treatment": "illustration",
       "asset": "/art/finale-quiet.jpg",
-      "reason": "The existing rain and empty stair preserve the departure. They depict no erased testimony; filed and withdrawn accounts retain their separate status. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Expression staging accompanies the actual actor and adds no outcome or permission. Finale direction reuses this complete painting beside canonical closing prose on desktop and after prose on phones. The compact speaker header and subsequent factual disclosures depict no new closure, source transfer, forgiveness or permission. The written commitment-status list retains this final action and its existing illustration; unresolved and compromised work cannot be turned into completed outcomes by the ending.",
+      "reason": "The existing rain and empty stair preserve the departure. They depict no erased testimony; filed and withdrawn accounts retain their separate status. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Expression staging accompanies the actual actor and adds no outcome or permission. Finale direction reuses this complete painting beside canonical closing prose on desktop and after prose on phones. The compact speaker header and subsequent factual disclosures depict no new closure, source transfer, forgiveness or permission. The written commitment-status list retains this final action and its existing illustration; unresolved and compromised work cannot be turned into completed outcomes by the ending. Emotional payoff mode changes only the closing human beat: the existing memorial/pencil/stair/folio composition still fits the actual finale. No new source, private visit disclosure, absolution or restored outcome is depicted.",
       "scenes": [
         "ending_quiet"
       ]
@@ -160,7 +160,7 @@
     {
       "treatment": "illustration",
       "asset": "/art/finale-witness.jpg",
-      "reason": "The existing listening portrait and unmarked notebook fit acknowledgement of the earlier leak. No new corroboration, absolution or witness publication permission is depicted. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Expression staging accompanies the actual actor and adds no outcome or permission. Finale direction reuses this complete painting beside canonical closing prose on desktop and after prose on phones. The compact speaker header and subsequent factual disclosures depict no new closure, source transfer, forgiveness or permission. The written commitment-status list retains this final action and its existing illustration; unresolved and compromised work cannot be turned into completed outcomes by the ending.",
+      "reason": "The existing listening portrait and unmarked notebook fit acknowledgement of the earlier leak. No new corroboration, absolution or witness publication permission is depicted. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Expression staging accompanies the actual actor and adds no outcome or permission. Finale direction reuses this complete painting beside canonical closing prose on desktop and after prose on phones. The compact speaker header and subsequent factual disclosures depict no new closure, source transfer, forgiveness or permission. The written commitment-status list retains this final action and its existing illustration; unresolved and compromised work cannot be turned into completed outcomes by the ending. Emotional payoff mode changes only the closing human beat: the existing memorial/pencil/stair/folio composition still fits the actual finale. No new source, private visit disclosure, absolution or restored outcome is depicted.",
       "scenes": [
         "ending_witness"
       ]
@@ -168,7 +168,7 @@
     {
       "treatment": "illustration",
       "asset": "/art/finale-listed.jpg",
-      "reason": "The existing closing folio represents the memorial page only. Sera keeps her private witness ledger; separately held originals and recordings retain their actual custody and publication limits. No private-source transfer is depicted. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Finale direction reuses this complete painting beside canonical closing prose on desktop and after prose on phones. The compact speaker header and subsequent factual disclosures depict no new closure, source transfer, forgiveness or permission. The written commitment-status list retains this final action and its existing illustration; unresolved and compromised work cannot be turned into completed outcomes by the ending.",
+      "reason": "The existing closing folio represents the memorial page only. Sera keeps her private witness ledger; separately held originals and recordings retain their actual custody and publication limits. No private-source transfer is depicted. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Finale direction reuses this complete painting beside canonical closing prose on desktop and after prose on phones. The compact speaker header and subsequent factual disclosures depict no new closure, source transfer, forgiveness or permission. The written commitment-status list retains this final action and its existing illustration; unresolved and compromised work cannot be turned into completed outcomes by the ending. Emotional payoff mode changes only the closing human beat: the existing memorial/pencil/stair/folio composition still fits the actual finale. No new source, private visit disclosure, absolution or restored outcome is depicted.",
       "scenes": [
         "ending_listed"
       ]
@@ -1008,9 +1008,37 @@
         "act2_craft_kerr_settlement",
         "act3_craft_kerr_settlement"
       ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/correction-bench.jpg",
+      "reason": "Reuse the blank records workbench for a personal pause after an actual submitted or unsubmitted question. The actual Edda portrait supplies identity; no retrieved source, restored shift, consent or inquiry result is painted.",
+      "scenes": [
+        "act3_payoff_edda"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/market-counter.jpg",
+      "reason": "Reuse the neutral stall counter for Kerr’s received-case or empty-space pause, with his actual portrait and retained broken-promise expression. No fitting, cure, refund, erased register or unobserved delivery is painted.",
+      "scenes": [
+        "act3_payoff_kerr"
+      ]
     }
   ],
   "variants": [
+    {
+      "speaker": "Kerr",
+      "asset": "/art/kerr-closed.jpg",
+      "scenes": [
+        "act3_payoff_kerr"
+      ],
+      "allFlags": [
+        "kerr_route_private",
+        "kerr_route_trace"
+      ],
+      "reason": "The personal pause preserves Kerr's response to the known broken private terms. A minute together grants no forgiveness or reopened contact."
+    },
     {
       "speaker": "Mara",
       "asset": "/art/mara-boundary.jpg",
@@ -1153,7 +1181,8 @@
         "act2_craft_archive_challenge",
         "act2_craft_archive_issuer",
         "act2_craft_archive_ledger",
-        "act3_craft_archive_return"
+        "act3_craft_archive_return",
+        "act3_payoff_edda"
       ],
       "reason": "Reviewed portrait for this actual actor during explicitly bound, revealed audible dialogue. Existing scene/flag expressions apply to this actor only; the scene’s setting and canonical story speaker remain unchanged."
     },
@@ -1187,7 +1216,8 @@
         "kerr",
         "act2_craft_kerr_offer",
         "act2_craft_kerr_settlement",
-        "act3_craft_kerr_settlement"
+        "act3_craft_kerr_settlement",
+        "act3_payoff_kerr"
       ],
       "reason": "Reviewed portrait for this actual actor during explicitly bound, revealed audible dialogue. Existing scene/flag expressions apply to this actor only; the scene’s setting and canonical story speaker remain unchanged."
     },

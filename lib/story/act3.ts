@@ -7,6 +7,7 @@ import { weekRetell } from "./retell";
 import { campaignReturnBeat } from "./campaign-beats";
 import { kerrQuestionChoice, kerrVisitChoice, quillVisitChoice } from "./relationships";
 import type { GameState, Scene } from "../types";
+import { emotionalFinale } from "../emotional-payoff";
 
 function wallCardText(state: GameState): string {
   const did = weekRetell(state);
@@ -253,14 +254,14 @@ export const ACT3_SCENES: Record<string, Scene> = {
     finale: true,
     endingTitle: "On the Folio",
     speaker: "Ives",
-    text: (state) =>
+    text: (state) => emotionalFinale(state,
       `Ives closes the memorial list into the folio like it was always a Helion document that had been stored in the rain by mistake. Sera keeps the pencil. She does not keep the page.
 
 Her private witness ledger stays on the stair. ${state.flags.archive_custody ? "The archive original stays with Sera under its recorded source terms. " : ""}${state.journal.some(entry => entry.id === "nia-account") ? state.flags.testimony_published && state.flags.nia_public_consent ? "Nia’s approved words remain authorized only for the filed account, with her address withheld. " : "Nia’s recording stays outside public circulation. " : ""}Taking the memorial page opens no separately held source to Ives.
 
 ${state.handle} is still on file. Ward Nine is now a line item under resolved, which is the word the tower uses when it means owned.
 
-"The folio is closed," Ives says. "Your name is still on file. That is what the tower will keep."`,
+"The folio is closed," Ives says. "Your name is still on file. That is what the tower will keep."`),
     choices: [],
   },
   ending_names: {
@@ -270,7 +271,7 @@ ${state.handle} is still on file. Ward Nine is now a line item under resolved, w
     finale: true,
     endingTitle: "Said Aloud",
     speaker: "Sera",
-    text: (state) => `${namesText(state)}\n\n"One at a time," Sera says. "The wall has room for a voice. It has never had room for an excuse."`,
+    text: (state) => emotionalFinale(state, `${namesText(state)}\n\n"One at a time," Sera says. "The wall has room for a voice. It has never had room for an excuse."`),
     choices: [],
   },
   ending_quiet: {
@@ -280,7 +281,7 @@ ${state.handle} is still on file. Ward Nine is now a line item under resolved, w
     finale: true,
     endingTitle: "Left to the Rain",
     speaker: "Sera",
-    text: (state) => `${quietText(state)}\n\n"I won't call you back," Sera says. "I have the pencil. The rain can wait with me."`,
+    text: (state) => emotionalFinale(state, `${quietText(state)}\n\n"I won't call you back," Sera says. "I have the pencil. The rain can wait with me."`),
     choices: [],
   },
   ending_witness: {
@@ -290,7 +291,7 @@ ${state.handle} is still on file. Ward Nine is now a line item under resolved, w
     finale: true,
     endingTitle: "Already Loose",
     speaker: "Sera",
-    text: (state) => `${witnessText(state)}\n\n"You came late," Sera says. "Leave that beside what you know. Don't make it a clean story for me."`,
+    text: (state) => emotionalFinale(state, `${witnessText(state)}\n\n"You came late," Sera says. "Leave that beside what you know. Don't make it a clean story for me."`),
     choices: [],
   },
 };

@@ -1,0 +1,111 @@
+{
+  "method": "Independent ASR of delivered MP3s, no authored-text prompt; punctuation/case/apostrophe and 20-to-twenty normalization only. Automated proxy, not human listening acceptance.",
+  "model": "Systran/faster-whisper-base.en",
+  "runtime": "faster-whisper 1.2.1, CPU int8",
+  "modelFiles": [
+    {
+      "name": "models--Systran--faster-whisper-base.en/snapshots/3d3d5dee26484f91867d81cb899cfcf72b96be6c/config.json",
+      "sha256": "f3bc3821e9fc76a27bae538e11ae5b677dcdd352b4600429ce7951d398569aeb"
+    },
+    {
+      "name": "models--Systran--faster-whisper-base.en/snapshots/3d3d5dee26484f91867d81cb899cfcf72b96be6c/model.bin",
+      "sha256": "2a166925539a16005f14ff328359f9b9adb9dc4fb631bb3b227526862e93e2ef"
+    },
+    {
+      "name": "models--Systran--faster-whisper-base.en/snapshots/3d3d5dee26484f91867d81cb899cfcf72b96be6c/tokenizer.json",
+      "sha256": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df"
+    }
+  ],
+  "lines": [
+    {
+      "id": "voice-campaign-emotional-payoff-ee1ca23521df",
+      "speaker": "Edda",
+      "path": "public/audio/voice-campaign-emotional-payoff-ee1ca23521df.mp3",
+      "sha256": "6d1bbb329a788595fdd825c941793013cd5c78c29e130448e4d8d9ae99617fc1",
+      "authoredText": "Put the reader away. I want to hear the rain for a minute.",
+      "transcription": "Put the reader away. I want to hear the rain for a minute.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-a8c4c936daad",
+      "speaker": "Edda",
+      "path": "public/audio/voice-campaign-emotional-payoff-a8c4c936daad.mp3",
+      "sha256": "ecb6ae5d673450cbe327e9f34158dd8dc8b5eca1638b5fe29148ce3776cc00fc",
+      "authoredText": "The tea will be cold. Sit down anyway.",
+      "transcription": "The tea will be cold. Sit down anyway.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-a1cf0d3718e8",
+      "speaker": "Edda",
+      "path": "public/audio/voice-campaign-emotional-payoff-a1cf0d3718e8.mp3",
+      "sha256": "66912cc0004f548ac4699f8b15574585a64c068f1c6b05b9747fc5c65279530d",
+      "authoredText": "Stay a minute. You don't have to bring me an answer to sit here.",
+      "transcription": "Stay a minute. You don't have to bring me an answer to sit here.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-4a4c8f261a79",
+      "speaker": "Kerr",
+      "path": "public/audio/voice-campaign-emotional-payoff-4a4c8f261a79.mp3",
+      "sha256": "8f23b61a5bb7965fd8a61645e25aa02bf7e08a4f63cf639899ded32d41a5e71e",
+      "authoredText": "Put it beside the table leg. I can reach it from here.",
+      "transcription": "Put it beside the table leg. I can reach it from here.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-a00e2510dc2a",
+      "speaker": "Kerr",
+      "path": "public/audio/voice-campaign-emotional-payoff-a00e2510dc2a.mp3",
+      "sha256": "773fb56a7955930527cc127e48cc365f35171a627f97a90b4adf0a6e412766ed",
+      "authoredText": "Leave the case there. I need a minute before we talk about anything else.",
+      "transcription": "Leave the case there. I need a minute before we talk about anything else.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-5ca32a5e2923",
+      "speaker": "Kerr",
+      "path": "public/audio/voice-campaign-emotional-payoff-5ca32a5e2923.mp3",
+      "sha256": "93c5d2b535b298144727ab613708ca318d59e076968506c1ca3f049f665ee9ad",
+      "authoredText": "Leave that space. I'll know what it's for.",
+      "transcription": "Leave that space. I'll know what it's for.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-0a1b8bb22589",
+      "speaker": "Sera",
+      "path": "public/audio/voice-campaign-emotional-payoff-0a1b8bb22589.mp3",
+      "sha256": "74917bdbd4d7b873f2b5871a6cf53aabd5fe416f290c5b72967e87ad1d605de0",
+      "authoredText": "Wait. Let me hear that one again.",
+      "transcription": "Wait, let me hear that one again.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-8b41fca71d2b",
+      "speaker": "Sera",
+      "path": "public/audio/voice-campaign-emotional-payoff-8b41fca71d2b.mp3",
+      "sha256": "d23aa919bba9c3dc4078e86c135723623961db98b464e0b2e6a947be868feb35",
+      "authoredText": "Mind the broken step. It's the second one down.",
+      "transcription": "Mind the broken step. It's the second one down.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-52ad3344069a",
+      "speaker": "Sera",
+      "path": "public/audio/voice-campaign-emotional-payoff-52ad3344069a.mp3",
+      "sha256": "31cc2e900ef1826edfc9414e12e73e75e90a9b495c2d9e036e0175b0831e5cd3",
+      "authoredText": "Your name can stay. Leave theirs where they are.",
+      "transcription": "Your name can stay. Leave theirs where they are.",
+      "exactNormalizedWords": true
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-26350d370631",
+      "speaker": "Ives",
+      "path": "public/audio/voice-campaign-emotional-payoff-26350d370631.mp3",
+      "sha256": "eefda43383f710b5c096118fca649e26c54dc0fa1cccb2df092ecdfb32f98ab4",
+      "authoredText": "Mind the edge. Keep that page in one piece.",
+      "transcription": "Mind the edge. Keep that page in one piece.",
+      "exactNormalizedWords": true
+    }
+  ]
+}

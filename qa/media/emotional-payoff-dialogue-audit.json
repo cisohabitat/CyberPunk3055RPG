@@ -1,0 +1,143 @@
+{
+  "scope": "New-run personal returns and four finale closing beats; legacy text/media unchanged.",
+  "scenes": [
+    "act3_payoff_edda",
+    "act3_payoff_kerr",
+    "ending_names",
+    "ending_quiet",
+    "ending_witness",
+    "ending_listed"
+  ],
+  "decisions": [
+    {
+      "scene": "act3_payoff_edda",
+      "primary": "Edda",
+      "text": "Put the reader away. I want to hear the rain for a minute.",
+      "context": "Explicit legal current outcome or coherent final wall choice. Narrator memories do not disclose private visits to the wall actors.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Fixed visible character quotation with matching established stock identity.",
+      "bindingKeys": [
+        "e7627685839beb0a"
+      ]
+    },
+    {
+      "scene": "act3_payoff_edda",
+      "primary": "Edda",
+      "text": "The tea will be cold. Sit down anyway.",
+      "context": "Explicit legal current outcome or coherent final wall choice. Narrator memories do not disclose private visits to the wall actors.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Fixed visible character quotation with matching established stock identity.",
+      "bindingKeys": [
+        "aeaf73248cbd7157"
+      ]
+    },
+    {
+      "scene": "act3_payoff_edda",
+      "primary": "Edda",
+      "text": "Stay a minute. You don't have to bring me an answer to sit here.",
+      "context": "Explicit legal current outcome or coherent final wall choice. Narrator memories do not disclose private visits to the wall actors.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Edda",
+      "reason": "Fixed visible character quotation with matching established stock identity.",
+      "bindingKeys": [
+        "c70da10b1b411ebd"
+      ]
+    },
+    {
+      "scene": "act3_payoff_kerr",
+      "primary": "Kerr",
+      "text": "Put it beside the table leg. I can reach it from here.",
+      "context": "Explicit legal current outcome or coherent final wall choice. Narrator memories do not disclose private visits to the wall actors.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Fixed visible character quotation with matching established stock identity.",
+      "bindingKeys": [
+        "7eb31e588e3c48c0"
+      ]
+    },
+    {
+      "scene": "act3_payoff_kerr",
+      "primary": "Kerr",
+      "text": "Leave the case there. I need a minute before we talk about anything else.",
+      "context": "Explicit legal current outcome or coherent final wall choice. Narrator memories do not disclose private visits to the wall actors.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Fixed visible character quotation with matching established stock identity.",
+      "bindingKeys": [
+        "f08baac6e13f3e31"
+      ]
+    },
+    {
+      "scene": "act3_payoff_kerr",
+      "primary": "Kerr",
+      "text": "Leave that space. I'll know what it's for.",
+      "context": "Explicit legal current outcome or coherent final wall choice. Narrator memories do not disclose private visits to the wall actors.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Kerr",
+      "reason": "Fixed visible character quotation with matching established stock identity.",
+      "bindingKeys": [
+        "7a61731e4c785764"
+      ]
+    },
+    {
+      "scene": "ending_names",
+      "primary": "Sera",
+      "text": "Wait. Let me hear that one again.",
+      "context": "Explicit legal current outcome or coherent final wall choice. Narrator memories do not disclose private visits to the wall actors.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Sera",
+      "reason": "Fixed visible character quotation with matching established stock identity.",
+      "bindingKeys": [
+        "42df45964ad11481"
+      ]
+    },
+    {
+      "scene": "ending_quiet",
+      "primary": "Sera",
+      "text": "Mind the broken step. It's the second one down.",
+      "context": "Explicit legal current outcome or coherent final wall choice. Narrator memories do not disclose private visits to the wall actors.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Sera",
+      "reason": "Fixed visible character quotation with matching established stock identity.",
+      "bindingKeys": [
+        "bd444ea27e624368"
+      ]
+    },
+    {
+      "scene": "ending_witness",
+      "primary": "Sera",
+      "text": "Your name can stay. Leave theirs where they are.",
+      "context": "Explicit legal current outcome or coherent final wall choice. Narrator memories do not disclose private visits to the wall actors.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Sera",
+      "reason": "Fixed visible character quotation with matching established stock identity.",
+      "bindingKeys": [
+        "4b1845996e82a968"
+      ]
+    },
+    {
+      "scene": "ending_listed",
+      "primary": "Ives",
+      "text": "Mind the edge. Keep that page in one piece.",
+      "context": "Explicit legal current outcome or coherent final wall choice. Narrator memories do not disclose private visits to the wall actors.",
+      "index": 0,
+      "decision": "voice",
+      "speaker": "Ives",
+      "reason": "Fixed visible character quotation with matching established stock identity.",
+      "bindingKeys": [
+        "dbf061397b330252"
+      ]
+    }
+  ]
+}

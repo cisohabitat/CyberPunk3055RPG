@@ -1,0 +1,366 @@
+{
+  "generated": "2026-10-28",
+  "disclosure": "Stock synthetic voices generated offline with Kokoro v1.0; no actor session or individual voice clone was commissioned. Only the fixed authored quotations below are rendered. No model or speech service ships in the game.",
+  "driver": {
+    "name": "kokoro-onnx",
+    "version": "0.6.1",
+    "license": "MIT",
+    "url": "https://github.com/thewh1teagle/kokoro-onnx",
+    "licenseFile": "qa/media/voice-sources/kokoro-onnx-LICENSE.txt"
+  },
+  "model": {
+    "name": "Kokoro-82M v1.0",
+    "license": "Apache-2.0",
+    "card": "https://huggingface.co/hexgrad/Kokoro-82M",
+    "licenseFile": "qa/media/voice-sources/Kokoro-LICENSE.txt",
+    "files": [
+      {
+        "name": "kokoro-v1.0.onnx",
+        "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.onnx",
+        "sha256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+        "bytes": 325505369
+      },
+      {
+        "name": "voices-v1.0.bin",
+        "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin",
+        "sha256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+        "bytes": 28214398
+      }
+    ]
+  },
+  "source": "scripts/generate-campaign-voices.py",
+  "processing": "Exact authored character words; existing cast identities; optional sentence pauses, 8ms phrase fades, normalized PCM peak 0.72 with 80ms edges; optional per-line two-pass EBU loudness matching with -2dBTP ceiling; 96kbps mono MP3 delivery. Original PCM and normalized PCM retained outside Git.",
+  "reviewStatus": "Technical signal and source review; stock synthetic dialogue. No commissioned actors or independent listening acceptance.",
+  "lines": [
+    {
+      "id": "voice-campaign-emotional-payoff-ee1ca23521df",
+      "speaker": "Edda",
+      "voice": "af_kore",
+      "speed": 0.95,
+      "text": "Put the reader away. I want to hear the rain for a minute.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock identity, quiet present-day response; no narrator, custom name, absolution or new institutional outcome. Exact words and natural completion.",
+      "segments": [
+        {
+          "text": "Put the reader away.",
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "I want to hear the rain for a minute.",
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -7.99,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-emotional-payoff-ee1ca23521df.mp3",
+      "sourceFile": "/workspace/generated_audio/emotional-payoff/voice-campaign-emotional-payoff-ee1ca23521df.wav",
+      "sourceSha256": "2c7f10601bf8057ce3062951b4ea9c2cb8cd21e1510270808ae938d45e3de326",
+      "pcmDeliveryFile": "/workspace/generated_audio/emotional-payoff/voice-campaign-emotional-payoff-ee1ca23521df-delivery.wav",
+      "pcmDeliverySha256": "1229921d5e17823391096dd18027dece0045bf2642a9d19d4d3b35788f652797",
+      "sha256": "6d1bbb329a788595fdd825c941793013cd5c78c29e130448e4d8d9ae99617fc1",
+      "bytes": 44684,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 3.6346666666666665,
+      "peak": 0.3976017236709595,
+      "rms": 0.07398821413516998
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-a8c4c936daad",
+      "speaker": "Edda",
+      "voice": "af_kore",
+      "speed": 0.95,
+      "text": "The tea will be cold. Sit down anyway.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock identity, quiet present-day response; no narrator, custom name, absolution or new institutional outcome. Exact words and natural completion.",
+      "segments": [
+        {
+          "text": "The tea will be cold.",
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "Sit down anyway.",
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -8.38,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-emotional-payoff-a8c4c936daad.mp3",
+      "sourceFile": "/workspace/generated_audio/emotional-payoff/voice-campaign-emotional-payoff-a8c4c936daad.wav",
+      "sourceSha256": "dbea034215ffc05dcb5bac16e2b80a064d1ad5d041b34317c831da599dbd5c45",
+      "pcmDeliveryFile": "/workspace/generated_audio/emotional-payoff/voice-campaign-emotional-payoff-a8c4c936daad-delivery.wav",
+      "pcmDeliverySha256": "4f66dd6a69b35395e0c4b912adeac3b88016008a34f2f2c53fd86b99c08d57fe",
+      "sha256": "ecb6ae5d673450cbe327e9f34158dd8dc8b5eca1638b5fe29148ce3776cc00fc",
+      "bytes": 36620,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 2.970666666666667,
+      "peak": 0.3811635673046112,
+      "rms": 0.06506906449794769
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-a1cf0d3718e8",
+      "speaker": "Edda",
+      "voice": "af_kore",
+      "speed": 0.95,
+      "text": "Stay a minute. You don't have to bring me an answer to sit here.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock identity, quiet present-day response; no narrator, custom name, absolution or new institutional outcome. Exact words and natural completion.",
+      "segments": [
+        {
+          "text": "Stay a minute.",
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "You don't have to bring me an answer to sit here.",
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.52,
+      "truePeakDbtp": -8.02,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-emotional-payoff-a1cf0d3718e8.mp3",
+      "sourceFile": "/workspace/generated_audio/emotional-payoff/voice-campaign-emotional-payoff-a1cf0d3718e8.wav",
+      "sourceSha256": "bd81f8bede58b5b06472d8c745a980669f5a6e113518710c53fd983d9427bfb2",
+      "pcmDeliveryFile": "/workspace/generated_audio/emotional-payoff/voice-campaign-emotional-payoff-a1cf0d3718e8-delivery.wav",
+      "pcmDeliverySha256": "7c28881687bb27165b0c3edbbe29bcab8e35937021cac20ba6407c293577e887",
+      "sha256": "66912cc0004f548ac4699f8b15574585a64c068f1c6b05b9747fc5c65279530d",
+      "bytes": 47564,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 3.882,
+      "peak": 0.397050678730011,
+      "rms": 0.06988285481929779
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-4a4c8f261a79",
+      "speaker": "Kerr",
+      "voice": "am_adam",
+      "speed": 0.97,
+      "text": "Put it beside the table leg. I can reach it from here.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock identity, quiet present-day response; no narrator, custom name, absolution or new institutional outcome. Exact words and natural completion.",
+      "segments": [
+        {
+          "text": "Put it beside the table leg.",
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "I can reach it from here.",
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -4.15,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-emotional-payoff-4a4c8f261a79.mp3",
+      "sourceFile": "/workspace/generated_audio/emotional-payoff/voice-campaign-emotional-payoff-4a4c8f261a79.wav",
+      "sourceSha256": "4cf52ecc64fc91ea286faccedf7b8aa399d804cfeeef7145b6b888f51d777383",
+      "pcmDeliveryFile": "/workspace/generated_audio/emotional-payoff/voice-campaign-emotional-payoff-4a4c8f261a79-delivery.wav",
+      "pcmDeliverySha256": "27829182e84db3699dd576c1db64ccd5be96a43dd33d05f9df9fe44e05abc809",
+      "sha256": "8f23b61a5bb7965fd8a61645e25aa02bf7e08a4f63cf639899ded32d41a5e71e",
+      "bytes": 44396,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 3.612625,
+      "peak": 0.6182473301887512,
+      "rms": 0.07413400709629059
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-a00e2510dc2a",
+      "speaker": "Kerr",
+      "voice": "am_adam",
+      "speed": 0.97,
+      "text": "Leave the case there. I need a minute before we talk about anything else.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock identity, quiet present-day response; no narrator, custom name, absolution or new institutional outcome. Exact words and natural completion.",
+      "segments": [
+        {
+          "text": "Leave the case there.",
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "I need a minute before we talk about anything else.",
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -5.38,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-emotional-payoff-a00e2510dc2a.mp3",
+      "sourceFile": "/workspace/generated_audio/emotional-payoff/voice-campaign-emotional-payoff-a00e2510dc2a.wav",
+      "sourceSha256": "ed59b89e8c67cf31d713689fc8f9f7a1b9b8601300d971cbb7a7204580fa407a",
+      "pcmDeliveryFile": "/workspace/generated_audio/emotional-payoff/voice-campaign-emotional-payoff-a00e2510dc2a-delivery.wav",
+      "pcmDeliverySha256": "ce2c96c42aa1b883c16bcea07ddcf8b5ccbda4babe1b4c47dd1ba3cd7f3f974f",
+      "sha256": "773fb56a7955930527cc127e48cc365f35171a627f97a90b4adf0a6e412766ed",
+      "bytes": 53612,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 4.389333333333333,
+      "peak": 0.5325713157653809,
+      "rms": 0.07445895671844482
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-5ca32a5e2923",
+      "speaker": "Kerr",
+      "voice": "am_adam",
+      "speed": 0.97,
+      "text": "Leave that space. I'll know what it's for.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock identity, quiet present-day response; no narrator, custom name, absolution or new institutional outcome. Exact words and natural completion.",
+      "segments": [
+        {
+          "text": "Leave that space.",
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "I'll know what it's for.",
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -5.86,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-emotional-payoff-5ca32a5e2923.mp3",
+      "sourceFile": "/workspace/generated_audio/emotional-payoff/voice-campaign-emotional-payoff-5ca32a5e2923.wav",
+      "sourceSha256": "06b7735f2bd8f1469b4d378bd67bc7fe74a284c97bffa1d4b0c77e1d5dc04603",
+      "pcmDeliveryFile": "/workspace/generated_audio/emotional-payoff/voice-campaign-emotional-payoff-5ca32a5e2923-delivery.wav",
+      "pcmDeliverySha256": "39ee43987f39db1f1cc1506eae18eec8fec16ba2578ed6082dde54b2548c2ff5",
+      "sha256": "93c5d2b535b298144727ab613708ca318d59e076968506c1ca3f049f665ee9ad",
+      "bytes": 37484,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 3.0353333333333334,
+      "peak": 0.509446918964386,
+      "rms": 0.06866775453090668
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-0a1b8bb22589",
+      "speaker": "Sera",
+      "voice": "af_bella",
+      "speed": 0.92,
+      "text": "Wait. Let me hear that one again.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock identity, quiet present-day response; no narrator, custom name, absolution or new institutional outcome. Exact words and natural completion.",
+      "integratedLufs": -23.52,
+      "truePeakDbtp": -5.52,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-emotional-payoff-0a1b8bb22589.mp3",
+      "sourceFile": "/workspace/generated_audio/emotional-payoff/voice-campaign-emotional-payoff-0a1b8bb22589.wav",
+      "sourceSha256": "2aae0857e933cefae056626fee6c3503177ebb66859b1a4e420f14a462db26a3",
+      "pcmDeliveryFile": "/workspace/generated_audio/emotional-payoff/voice-campaign-emotional-payoff-0a1b8bb22589-delivery.wav",
+      "pcmDeliverySha256": "b61b0a66cedc23dba1aab16a5cc2a7b85151d7892de1a46a78e99f8dd536d266",
+      "sha256": "74917bdbd4d7b873f2b5871a6cf53aabd5fe416f290c5b72967e87ad1d605de0",
+      "bytes": 29996,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 2.4072916666666666,
+      "peak": 0.5294896364212036,
+      "rms": 0.07287725061178207
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-8b41fca71d2b",
+      "speaker": "Sera",
+      "voice": "af_bella",
+      "speed": 0.95,
+      "text": "Mind the broken step. It's the second one down.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock identity, quiet present-day response; no narrator, custom name, absolution or new institutional outcome. Exact words and natural completion.",
+      "segments": [
+        {
+          "text": "Mind the broken step.",
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "It's the second one down.",
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.49,
+      "truePeakDbtp": -2.72,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-emotional-payoff-8b41fca71d2b.mp3",
+      "sourceFile": "/workspace/generated_audio/emotional-payoff/voice-campaign-emotional-payoff-8b41fca71d2b.wav",
+      "sourceSha256": "48f2c3358b1db9ef5674a1c60c6c06b90a7e63f7923612be03cc6d2087d201de",
+      "pcmDeliveryFile": "/workspace/generated_audio/emotional-payoff/voice-campaign-emotional-payoff-8b41fca71d2b-delivery.wav",
+      "pcmDeliverySha256": "46b4b1f0859a5e41514b1de53eeff3b1350550c365369182cd790d77b5fc0de4",
+      "sha256": "d23aa919bba9c3dc4078e86c135723623961db98b464e0b2e6a947be868feb35",
+      "bytes": 42092,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 3.423958333333333,
+      "peak": 0.7266860604286194,
+      "rms": 0.07964703440666199
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-52ad3344069a",
+      "speaker": "Sera",
+      "voice": "af_bella",
+      "speed": 0.95,
+      "text": "Your name can stay. Leave theirs where they are.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock identity, quiet present-day response; no narrator, custom name, absolution or new institutional outcome. Exact words and natural completion.",
+      "segments": [
+        {
+          "text": "Your name can stay.",
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "Leave theirs where they are.",
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -6.21,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-emotional-payoff-52ad3344069a.mp3",
+      "sourceFile": "/workspace/generated_audio/emotional-payoff/voice-campaign-emotional-payoff-52ad3344069a.wav",
+      "sourceSha256": "fd57648bbcd9a905974fd23bdc948cd98a45127ea8ca598b04cd6a532e00f241",
+      "pcmDeliveryFile": "/workspace/generated_audio/emotional-payoff/voice-campaign-emotional-payoff-52ad3344069a-delivery.wav",
+      "pcmDeliverySha256": "d7be82bbe7848caac0203f0f879b998b311281f22aa82d8841d3ed6c3e41d2fc",
+      "sha256": "31cc2e900ef1826edfc9414e12e73e75e90a9b495c2d9e036e0175b0831e5cd3",
+      "bytes": 38636,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 3.133958333333333,
+      "peak": 0.4802669882774353,
+      "rms": 0.07433513551950455
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-26350d370631",
+      "speaker": "Ives",
+      "voice": "am_eric",
+      "speed": 0.96,
+      "text": "Mind the edge. Keep that page in one piece.",
+      "loudnessLufs": -23.5,
+      "direction": "Established stock identity, quiet present-day response; no narrator, custom name, absolution or new institutional outcome. Exact words and natural completion.",
+      "segments": [
+        {
+          "text": "Mind the edge.",
+          "pauseAfter": 0.18
+        },
+        {
+          "text": "Keep that page in one piece.",
+          "pauseAfter": 0
+        }
+      ],
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -6.54,
+      "language": "en-us",
+      "path": "public/audio/voice-campaign-emotional-payoff-26350d370631.mp3",
+      "sourceFile": "/workspace/generated_audio/emotional-payoff/voice-campaign-emotional-payoff-26350d370631.wav",
+      "sourceSha256": "c4a5285e0d5363dd1eff45c38fc91c4c8c98150cc571f47d70c8ab1626fcec08",
+      "pcmDeliveryFile": "/workspace/generated_audio/emotional-payoff/voice-campaign-emotional-payoff-26350d370631-delivery.wav",
+      "pcmDeliverySha256": "aaab8d25458c52eeaf451831593f65f7f5fd8d1c03e4fc8a6b0de987a9d61853",
+      "sha256": "eefda43383f710b5c096118fca649e26c54dc0fa1cccb2df092ecdfb32f98ab4",
+      "bytes": 44972,
+      "sampleRate": 24000,
+      "channels": 1,
+      "durationSeconds": 3.6525833333333333,
+      "peak": 0.47079962491989136,
+      "rms": 0.07759863138198853
+    }
+  ]
+}

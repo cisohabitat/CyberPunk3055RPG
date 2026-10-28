@@ -1,4 +1,5 @@
 import { CRAFT_KERR_ENTRY, CRAFT_SETTLE_ENTRY } from "../encounter-craft";
+import { KERR_PERSONAL_RETURN } from "../emotional-payoff";
 import { kerrMethodResponse } from "../encounter-methods";
 import { kitBonuses } from "../loadout";
 import { routeDeparture, routeOutcome, routePlan, routeResume, ROUTE_DRAFT_FLAGS, ROUTE_ENTRIES, ROUTE_EXITS } from "../route-planning";
@@ -106,6 +107,7 @@ ${state.flags.kerr_route_private && state.flags.kerr_route_trace ? "He puts the 
 ${state.flags.kerr_sold_you ? "You remind him that he sold your account. ‘That stays on my side of the page.’ His request does not cancel the betrayal." : "He shifts the cup away from the papers. ‘The terms arrive with the case.’"}\n\n${kerrMethodResponse(state)}`,
     choices: [
       CRAFT_SETTLE_ENTRY,
+      KERR_PERSONAL_RETURN,
       { id: "answer-kerr-breach", label: "Answer the broken private terms directly.", requireAllFlags: ["kerr_route_private", "kerr_route_trace"], next: "act3_kerr_collection_response" },
       { id: "acknowledge-kerr-collection", label: "Keep the receipt and the limits in his own words.", detail: "Kerr leaves one personal question open. No new favor or contract.", hideIfAnyFlag: ["kerr_route_private"], effects: { flags: ["kerr_route_visit", "kerr_contact_open"] }, next: "act3_arrival" },
       { id: "acknowledge-private-collection", label: "Keep the receipt and the limits in his own words.", detail: "Kerr leaves one personal question open. No new favor or contract.", requireFlag: "kerr_route_private", hideIfFlag: "kerr_route_trace", effects: { flags: ["kerr_route_visit", "kerr_contact_open"] }, next: "act3_arrival" },

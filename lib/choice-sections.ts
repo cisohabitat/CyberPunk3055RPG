@@ -28,7 +28,7 @@ export const CHOICE_SECTIONS: Record<string, { title: string; choices: string[] 
     { title: "Approach the names", choices: ["face-sera", "read-third"] },
   ],
   act3_neighborhood: [
-    { title: "People and unfinished work", choices: ["craft-return-edda", "visit-chapel-return", "visit-shelter-neighbors", "visit-spire-key", "visit-asa", "visit-notice", "return-notice-response", "visit-pump", "visit-nia", "visit-records", "return-edda-payroll", "visit-edda"] },
+    { title: "People and unfinished work", choices: ["craft-return-edda", "payoff-return-draft", "visit-chapel-return", "visit-shelter-neighbors", "visit-spire-key", "visit-asa", "visit-notice", "return-notice-response", "visit-pump", "visit-nia", "visit-records", "return-edda-payroll", "visit-edda"] },
     { title: "Return to the wall", choices: ["go-wall"] },
   ],
 };

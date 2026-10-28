@@ -46,6 +46,12 @@ Connect the strongest encounter decisions to short present-day returns and the f
 
 **Exit:** contrasting prepared, failed, deferred and unfinished campaigns deliver different earned closing moments. The finale's emotional scene works before optional factual history is expanded. Lock text, actor and art meaning before commissioning or generating performances.
 
+### Phase 3 implementation
+
+The [emotional-payoff report](EMOTIONAL_PAYOFF_PHASE3.md) connects the actual archive question and Kerr bargain to two short present-day pauses. Edda can make room at the table after an authenticated result, ledger, failed search or unsubmitted draft. Kerr makes room for a closed case or leaves its place empty, retaining registered handovers, cancellation, unfinished work and contact limits. Hearing them grants only an attributed personal response; the existing source, settlement, treatment and employment records keep their actual status.
+
+Each of the four original finales receives a distinct acted closing beat in new runs, before the optional factual history. Earned private memories belong to the runner and disclose nothing to Sera or Ives. Sixteen complete new routes cover contrasting outcomes and skipped returns. Ten matching stock recordings, fitting existing art and retained ASR/retake evidence accompany the change. Preserve the preceding 203-route / 14,304-visit / 785-delivery contract and all full publication gates. The provisional 8.6 estimate remains unchanged by implementation or technical acceptance; visual sequence direction is Phase 4.
+
 ## Phase 4: visual direction
 
 Stage the selected anchor sequences with deliberate establishing views, reactions, expressions and detail shots. Preserve established faces, anatomy and actual scene knowledge. Avoid painting unearned safety, permission or success. Keep the title identity; direct effort toward the ordinary play that follows it.

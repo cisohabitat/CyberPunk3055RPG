@@ -1,3 +1,4 @@
+import payoff from "../qa/media/emotional-payoff.json";
 import craft from "../qa/media/encounter-craft.json";
 import assert from "node:assert/strict";
 import { it } from "node:test";
@@ -12,7 +13,7 @@ import baseline from "../qa/media/decision-pacing.json";
 const files = (dir: string): string[] => readdirSync(dir, { withFileTypes: true }).flatMap(row => row.isDirectory() ? files(`${dir}/${row.name}`) : [`${dir}/${row.name}`]);
 const hash = (data: string | Buffer) => createHash("sha256").update(data).digest("hex");
 it("preserves all 188 campaigns, 13,154 full visits and all 776 existing art/audio deliveries", () => {
-  const routes = files("qa/routes").filter(file => file.endsWith(".json") && !craft.newRoutes.includes(file.slice("qa/routes/".length))).sort(), rows = [];
+  const routes = files("qa/routes").filter(file => file.endsWith(".json") && ![...craft.newRoutes, ...payoff.newRoutes].includes(file.slice("qa/routes/".length))).sort(), rows = [];
   assert.equal(routes.length, baseline.routes);
   for (const file of routes) {
     const spec = JSON.parse(readFileSync(file, "utf8")) as ReplaySpec; let state = createCharacter(spec.character);
@@ -25,7 +26,7 @@ it("preserves all 188 campaigns, 13,154 full visits and all 776 existing art/aud
     }
   }
   assert.equal(rows.length, baseline.visits); assert.equal(hash(JSON.stringify(rows)), baseline.campaignSha256);
-  const media = [...files("public/art"), ...files("public/audio")].sort().filter(path => !craft.voiceIds.some(id => path === `public/audio/${id}.mp3`)).map(path => ({ path, sha256: hash(readFileSync(path)) }));
+  const media = [...files("public/art"), ...files("public/audio")].sort().filter(path => ![...craft.voiceIds, ...payoff.voiceIds].some(id => path === `public/audio/${id}.mp3`)).map(path => ({ path, sha256: hash(readFileSync(path)) }));
   assert.equal(media.length, baseline.mediaFiles); assert.equal(hash(JSON.stringify(media)), baseline.mediaSha256);
 });
 it("limits relocation to explicitly authored conversations and hubs, retaining every active task workspace", () => {

@@ -1,4 +1,5 @@
 import { CRAFT_ARCHIVE_RETURN } from "../encounter-craft";
+import { DEFERRED_EDDA_RETURN } from "../emotional-payoff";
 import { chapelReturnChoice } from "./campaign-integration";
 import { witnessMethodResponse } from "../encounter-methods";
 import { spireVisitChoice } from "./spire";
@@ -72,6 +73,7 @@ export const OPERATION_SCENES: Record<string, Scene> = {
     },
     choices: [
       CRAFT_ARCHIVE_RETURN,
+      DEFERRED_EDDA_RETURN,
       chapelReturnChoice,
       shelterVisitChoice(),
       spireVisitChoice(),

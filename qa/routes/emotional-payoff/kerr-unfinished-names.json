@@ -1,0 +1,355 @@
+{
+  "name": "Emotional payoff: kerr-unfinished-names",
+  "character": {
+    "handle": "Replay",
+    "givenName": "Ada",
+    "origin": "spire",
+    "complication": "on-file",
+    "bonus": {
+      "chrome": 2,
+      "nerve": 0,
+      "face": 0,
+      "ghost": 0
+    },
+    "startWithPrologue": true,
+    "expandedKerr": true,
+    "expandedMara": true,
+    "expandedWitness": true,
+    "craftedEncounters": true,
+    "emotionalPayoffs": true
+  },
+  "steps": [
+    {
+      "choiceId": "begin-opening",
+      "reload": true
+    },
+    {
+      "choiceId": "opening-survival",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-stallholder",
+      "reload": true
+    },
+    {
+      "choiceId": "take-the-stool",
+      "reload": true
+    },
+    {
+      "choiceId": "ask-pay",
+      "reload": true
+    },
+    {
+      "choiceId": "haggle",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "pocket",
+      "reload": true
+    },
+    {
+      "choiceId": "accept",
+      "reload": true
+    },
+    {
+      "choiceId": "side",
+      "reload": true
+    },
+    {
+      "choiceId": "spoof-door",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "go",
+      "reload": true
+    },
+    {
+      "choiceId": "honest",
+      "reload": true
+    },
+    {
+      "choiceId": "pact-copy",
+      "reload": true
+    },
+    {
+      "choiceId": "copy",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "heard",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-hour",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-signature",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-order",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-roster",
+      "reload": true
+    },
+    {
+      "choiceId": "reconstruct",
+      "reload": true
+    },
+    {
+      "choiceId": "separate-decisions",
+      "reload": true
+    },
+    {
+      "choiceId": "label-unverified",
+      "reload": true
+    },
+    {
+      "choiceId": "seal-full",
+      "reload": true
+    },
+    {
+      "choiceId": "talk-leave",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "both",
+      "reload": true
+    },
+    {
+      "choiceId": "week-after",
+      "reload": true
+    },
+    {
+      "choiceId": "into-week",
+      "reload": true
+    },
+    {
+      "choiceId": "practice",
+      "reload": true
+    },
+    {
+      "choiceId": "learn-chrome",
+      "reload": true
+    },
+    {
+      "choiceId": "read-board",
+      "reload": true
+    },
+    {
+      "choiceId": "origin-contract",
+      "reload": true
+    },
+    {
+      "choiceId": "clear-key",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "return-board",
+      "reload": true
+    },
+    {
+      "choiceId": "to-helion",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-ives",
+      "reload": true
+    },
+    {
+      "choiceId": "refuse-ives",
+      "reload": true
+    },
+    {
+      "choiceId": "answer-kerr-collection",
+      "reload": true
+    },
+    {
+      "choiceId": "craft-kerr-bargain",
+      "reload": true
+    },
+    {
+      "choiceId": "craft-bond-cash",
+      "reload": true
+    },
+    {
+      "choiceId": "pause-kerr-plan",
+      "reload": true
+    },
+    {
+      "choiceId": "trace-order",
+      "reload": true
+    },
+    {
+      "choiceId": "agree-archive-terms",
+      "reload": true
+    },
+    {
+      "choiceId": "index-archive",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "catalog-is-proof",
+      "reload": true
+    },
+    {
+      "choiceId": "revise-source-test",
+      "reload": true
+    },
+    {
+      "choiceId": "trace-receipt",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "withhold-technician",
+      "reload": true
+    },
+    {
+      "choiceId": "keep-chain",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-response",
+      "reload": true
+    },
+    {
+      "choiceId": "answer-with-source",
+      "reload": true
+    },
+    {
+      "choiceId": "stand",
+      "reload": true
+    },
+    {
+      "choiceId": "back-to-board",
+      "reload": true
+    },
+    {
+      "choiceId": "to-the-wall",
+      "reload": true
+    },
+    {
+      "choiceId": "to-ward-nine",
+      "reload": true
+    },
+    {
+      "choiceId": "visit-edda",
+      "reload": true
+    },
+    {
+      "choiceId": "respect-edda-source",
+      "reload": true
+    },
+    {
+      "choiceId": "visit-records",
+      "reload": true
+    },
+    {
+      "choiceId": "keep-limits",
+      "reload": true
+    },
+    {
+      "choiceId": "go-wall",
+      "reload": true
+    },
+    {
+      "choiceId": "face-sera",
+      "reload": true
+    },
+    {
+      "choiceId": "visit-kerr-collection",
+      "reload": true
+    },
+    {
+      "choiceId": "payoff-kerr-moment",
+      "reload": true
+    },
+    {
+      "choiceId": "payoff-keep-kerr",
+      "reload": true
+    },
+    {
+      "choiceId": "acknowledge-private-collection",
+      "reload": true
+    },
+    {
+      "choiceId": "ask-kerr-personal-question",
+      "reload": true
+    },
+    {
+      "choiceId": "keep-kerr-personal-answer",
+      "reload": true
+    },
+    {
+      "choiceId": "prepare-public-account",
+      "reload": true
+    },
+    {
+      "choiceId": "scope-corroborated",
+      "reload": true
+    },
+    {
+      "choiceId": "keep-recording-private",
+      "reload": true
+    },
+    {
+      "choiceId": "answer-authenticated-key",
+      "reload": true
+    },
+    {
+      "choiceId": "file-public-account",
+      "reload": true
+    },
+    {
+      "choiceId": "read-names",
+      "reload": true
+    }
+  ],
+  "expected": {
+    "sceneId": "ending_names",
+    "creds": 370,
+    "strain": 1,
+    "flags": {
+      "emotional_payoffs_enabled": true,
+      "craft_kerr_agreed": true,
+      "craft_bond_cash": true,
+      "archive_key_authenticated": true,
+      "act2_done": true,
+      "payoff_kerr_seen": true
+    },
+    "journal": [
+      "quill-agreed-to-ninety-up-front",
+      "quill-hired-you-to-lift-mara-voss-s-unedited-hou",
+      "the-choir-door-accepted-a-name-you-kept-on-a-chi",
+      "ward-nine",
+      "shard-copy",
+      "memory-signature",
+      "memory-order",
+      "memory-roster",
+      "memory-analysis",
+      "public-packet",
+      "archive-promise",
+      "kerr-collection-promise",
+      "craft-kerr-terms",
+      "verified-order",
+      "archive-custody",
+      "payoff-kerr-moment",
+      "kerr-personal-answer",
+      "wall-account"
+    ],
+    "items": [
+      "spoof-chip",
+      "signal-baffle"
+    ]
+  }
+}

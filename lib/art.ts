@@ -207,6 +207,7 @@ for (const id of ["memory_model_result", "memory_publication"]) PORTRAIT_VARIANT
 for (const id of ["vault_quiet", "act2_lumen_door", "act3_chapel_return"]) PORTRAIT_VARIANTS[id] = { speaker: "Sister Lumen", src: "/art/lumen-considering.jpg" };
 PORTRAIT_VARIANTS.act3_witness_visit = { speaker: "Nia Pell", src: "/art/nia-speaking.jpg" };
 export const PORTRAIT_STAGING = [
+  { speaker: "Kerr", asset: "/art/kerr-closed.jpg", scenes: ["act3_payoff_kerr"], allFlags: ["kerr_route_private", "kerr_route_trace"], reason: "The personal pause preserves Kerr's response to the known broken private terms. A minute together grants no forgiveness or reopened contact." },
   { speaker: "Mara", asset: "/art/mara-boundary.jpg", scenes: ["act2_response_agenda", "act2_response_refusal", "act2_response_terms", "act2_response_dispatch", "act3_response_visit"], allFlags: ["response_public_refused"], reason: "Mara's actual refusal remains a boundary after a private reply; this expression grants no new permission." },
   { speaker: "Sister Lumen", asset: "/art/lumen-guarded.jpg", scenes: ["act2_lumen_quiet", "act3_lumen_boundary", "act3_chapel_return"], anyFlags: ["betrayed_lumen", "response_clinic_refused"], reason: "Recorded betrayal or refused clinic sponsorship informs guarded attention, without depicting forgiveness." },
   { speaker: "Kerr", asset: "/art/kerr-closed.jpg", scenes: ["act2_route_receipt", "act3_kerr_collection", "act3_kerr_collection_response", "act3_kerr_personal_question"], allFlags: ["kerr_route_private", "kerr_route_trace"], reason: "Broken private collection terms keep a closed expression even after an observed handover or acknowledgement." },
@@ -271,6 +272,8 @@ ENCOUNTERS.act3_witness_shift_return = { ...ENCOUNTERS.act3_lumen_boundary, capt
 for (const id of ["act2_craft_archive", "act2_craft_archive_issuer"]) ENCOUNTERS[id] = { ...ENCOUNTERS.act2_archive_compare, caption: "Helion · a question before a query" };
 for (const id of ["act2_craft_archive_challenge", "act2_craft_archive_ledger"]) ENCOUNTERS[id] = { ...ENCOUNTERS.act2_archive_brief, caption: "Helion · Edda keeps the request bounded" };
 ENCOUNTERS.act3_craft_archive_return = { src: "/art/correction-bench.jpg", small: "/art/correction-bench-small.jpg", caption: "Ward Nine · the question beside the answer", description: "Blank sheets and a closed unmarked sleeve lie in separate trays at a rain-lit workbench. They depict no retrieved source, authenticated key, submitted finding or restored shift." };
+ENCOUNTERS.act3_payoff_edda = { ...ENCOUNTERS.act3_craft_archive_return, caption: "Ward Nine · a place beside the work" };
+ENCOUNTERS.act3_payoff_kerr = { ...ENCOUNTERS.act3_kerr_collection, caption: "Ward Nine · the space beside the table" };
 for (const id of ["act2_craft_kerr_offer", "act2_craft_kerr_settlement", "act3_craft_kerr_settlement"]) ENCOUNTERS[id] = { ...ENCOUNTERS.act2_kerr_collection_terms, caption: "Ward Four · a fare has terms" };
 
 // Deliberate new viewpoints override only these two reviewed catalog scenes.
