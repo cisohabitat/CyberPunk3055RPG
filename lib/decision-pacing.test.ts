@@ -1,3 +1,4 @@
+import performance from "../qa/media/aaa-performance-direction.json";
 import visual from "../qa/media/aaa-visual-direction.json";
 import payoff from "../qa/media/emotional-payoff.json";
 import craft from "../qa/media/encounter-craft.json";
@@ -27,7 +28,7 @@ it("preserves all 188 campaigns, 13,154 full visits and all 776 existing art/aud
     }
   }
   assert.equal(rows.length, baseline.visits); assert.equal(hash(JSON.stringify(rows)), baseline.campaignSha256);
-  const media = [...files("public/art"), ...files("public/audio")].sort().filter(path => ![...craft.voiceIds, ...payoff.voiceIds].some(id => path === `public/audio/${id}.mp3`) && !visual.artAssets.flatMap(a => a.files).some(f => f.path === path)).map(path => ({ path, sha256: hash(readFileSync(path)) }));
+  const media = [...files("public/art"), ...files("public/audio")].sort().filter(path => ![...craft.voiceIds, ...payoff.voiceIds].some(id => path === `public/audio/${id}.mp3`) && !visual.artAssets.flatMap(a => a.files).some(f => f.path === path) && !performance.deliveries.some(d => d.path === path)).map(path => ({ path, sha256: hash(readFileSync(path)) }));
   assert.equal(media.length, baseline.mediaFiles); assert.equal(hash(JSON.stringify(media)), baseline.mediaSha256);
 });
 it("limits relocation to explicitly authored conversations and hubs, retaining every active task workspace", () => {

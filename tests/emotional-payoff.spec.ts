@@ -91,7 +91,7 @@ for (const [sound, voices] of [[false, 100], [true, 0]] as const) test(`emotiona
   expect((await audio(page)).started.filter(f => f.startsWith("voice-"))).toEqual([]); expect(await saved(page)).toEqual(before); await exit(page, state);
 });
 test("missing emotional recording and art preserve the entire scene and canonical exit", async ({ page }) => {
-  await page.route("**/audio/voice-campaign-emotional-payoff-*.mp3", route => route.abort()); await page.route("**/art/*.jpg", route => route.abort());
+  await page.route("**/voice-campaign-emotional-payoff-*.mp3", route => route.abort()); await page.route("**/art/*.jpg", route => route.abort());
   const state = stateFor(profiles[0]); await open(page, state, 390, true); await expect(page.getByTestId("scene-text")).toContainText(Q.authenticated); await exit(page, state);
 });
 test("explicit contradictory imported contact state cannot speak a new Kerr invitation", async ({ page }) => {

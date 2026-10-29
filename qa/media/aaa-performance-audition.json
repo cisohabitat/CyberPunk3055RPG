@@ -1,0 +1,571 @@
+{
+  "method": "Complete quoted performances at actual authored checkpoints; seven before/directed pairs and twelve retained performances over the same delivered stereo music/ambience. Default Voice70/Music60/Ambience50, source voice gain1, bed gains.5/.35, speech duck.22/.44 and unchanged scene focus. One-second separator between labeled intervals. Canonical scene context and art are in aaa-performance-direction.json.",
+  "limitations": "Offline settled-gain 24kHz comparison, not runtime ramp/crossfade simulation, hardware playback, human listening, independent intelligibility or acting acceptance. No added narrator, timing cue or synthesized name.",
+  "previewPath": "qa/media/aaa-performance-audition.mp3",
+  "previewSha256": "8ff0827cd37c9aa58feb8422f1b6c5aa93fee20d207d668ed3c64307e2e092ff",
+  "bytes": 2044844,
+  "durationSeconds": 170.3265,
+  "channels": 2,
+  "sampleRate": 24000,
+  "samples": [
+    {
+      "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+      "sceneId": "act2_craft_archive",
+      "speaker": "Edda",
+      "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-spire.flac",
+      "ambienceSha256": "c591122dbc8dd9df3af27778415959b4b325326fe1ba0caf21d1ce861a3b2eff",
+      "focus": "normal",
+      "versions": [
+        {
+          "version": "retained",
+          "path": "public/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3",
+          "sha256": "26825c2bc65fe72059a7ad4da468fffe47e9cd921d8fcb4ebdfe6d1ed04c872e",
+          "startSeconds": 0.0,
+          "durationSeconds": 8.358625,
+          "sourceFile": "/workspace/generated_audio/aaa-performance-direction/mixes/voice-campaign-encounter-craft-ba69df93d8d5-retained.wav",
+          "sourceSha256": "00de41399e5b440d7be9a0f454e32acf88b4e490deeeeae9471260864db4d5fe",
+          "peak": 0.3302890956401825,
+          "voiceRms": 0.0540146678686142,
+          "bedRms": 0.002347963396459818
+        }
+      ]
+    },
+    {
+      "id": "voice-campaign-encounter-craft-570639a0f84d",
+      "sceneId": "act2_craft_archive_challenge",
+      "speaker": "Edda",
+      "text": "You have made one column answer for another. Look again. I am not asking you to believe me; I am asking you to read what is there.",
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-spire.flac",
+      "ambienceSha256": "c591122dbc8dd9df3af27778415959b4b325326fe1ba0caf21d1ce861a3b2eff",
+      "focus": "normal",
+      "versions": [
+        {
+          "version": "before",
+          "path": "public/audio/voice-campaign-encounter-craft-570639a0f84d.mp3",
+          "sha256": "1e229a9ea5a53ecba66385b2284e7967ba1b993c48303f09cf86bb76bd9c36e2",
+          "startSeconds": 9.358625,
+          "durationSeconds": 8.741958333333333,
+          "sourceFile": "/workspace/generated_audio/aaa-performance-direction/mixes/voice-campaign-encounter-craft-570639a0f84d-before.wav",
+          "sourceSha256": "361851cf26012610d30ce795a396f80758bfc46b638dcf2e8fc4ea360da7b1e7",
+          "peak": 0.3089918792247772,
+          "voiceRms": 0.05149862915277481,
+          "bedRms": 0.002354519907385111
+        },
+        {
+          "version": "directed",
+          "path": "public/audio/performance-direction-v1/voice-campaign-encounter-craft-570639a0f84d.mp3",
+          "sha256": "74decc3a98680b010f12ece93f5fe4ce0df88386c74a6c8a845192d856835657",
+          "startSeconds": 19.100583333333333,
+          "durationSeconds": 8.776666666666667,
+          "sourceFile": "/workspace/generated_audio/aaa-performance-direction/mixes/voice-campaign-encounter-craft-570639a0f84d-directed.wav",
+          "sourceSha256": "dd401682f25dcda46c3144373654261fe52af9692924d210a38e420c36e35d7f",
+          "peak": 0.33075639605522156,
+          "voiceRms": 0.05334523692727089,
+          "bedRms": 0.0023550514597445726
+        }
+      ]
+    },
+    {
+      "id": "voice-campaign-encounter-craft-0d503d1dabcb",
+      "sceneId": "act2_craft_archive_issuer",
+      "speaker": "Edda",
+      "text": "If you want the hand behind the instruction, bring the cancellation to its key. Her approval is a different act.",
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-spire.flac",
+      "ambienceSha256": "c591122dbc8dd9df3af27778415959b4b325326fe1ba0caf21d1ce861a3b2eff",
+      "focus": "normal",
+      "versions": [
+        {
+          "version": "retained",
+          "path": "public/audio/voice-campaign-encounter-craft-0d503d1dabcb.mp3",
+          "sha256": "bb673be3f3ab76f1e2506087d55a16c443d4a5aff21c54d94a029b7472e762ab",
+          "startSeconds": 28.87725,
+          "durationSeconds": 6.987958333333333,
+          "sourceFile": "/workspace/generated_audio/aaa-performance-direction/mixes/voice-campaign-encounter-craft-0d503d1dabcb-retained.wav",
+          "sourceSha256": "b5b10099eb1b6ac2546b254703880d8e9fe2b69395d8a83e6f3720ead6cc8ddb",
+          "peak": 0.3427799642086029,
+          "voiceRms": 0.051969803869724274,
+          "bedRms": 0.002338087884709239
+        }
+      ]
+    },
+    {
+      "id": "voice-campaign-encounter-craft-cd0a455809ce",
+      "sceneId": "act2_craft_archive_ledger",
+      "speaker": "Edda",
+      "text": "Ask for the movement page. Leave the families out of the request. I can help you carry a record; I will not give you people to lean on.",
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-spire.flac",
+      "ambienceSha256": "c591122dbc8dd9df3af27778415959b4b325326fe1ba0caf21d1ce861a3b2eff",
+      "focus": "normal",
+      "versions": [
+        {
+          "version": "before",
+          "path": "public/audio/voice-campaign-encounter-craft-cd0a455809ce.mp3",
+          "sha256": "430e68710b08ae2ccc4f787eb8dbab539514cb20e4645f7a7ffc4556fa4f9bc4",
+          "startSeconds": 36.865208333333335,
+          "durationSeconds": 8.501958333333333,
+          "sourceFile": "/workspace/generated_audio/aaa-performance-direction/mixes/voice-campaign-encounter-craft-cd0a455809ce-before.wav",
+          "sourceSha256": "75e20f6cdde1d999399ed5cdfe68001b8c322b0a4e447538f96fea79c3a9078a",
+          "peak": 0.36347696185112,
+          "voiceRms": 0.05292285606265068,
+          "bedRms": 0.002350748749449849
+        },
+        {
+          "version": "directed",
+          "path": "public/audio/performance-direction-v1/voice-campaign-encounter-craft-cd0a455809ce.mp3",
+          "sha256": "ea1258e102a5917c1b5594e4b51c289bfa41d58ad53f204c0d38225bd82a6b5a",
+          "startSeconds": 46.36716666666667,
+          "durationSeconds": 8.806,
+          "sourceFile": "/workspace/generated_audio/aaa-performance-direction/mixes/voice-campaign-encounter-craft-cd0a455809ce-directed.wav",
+          "sourceSha256": "7bf17e61896b34b63ad210a4e8d97711c8ec9634df99b23faee429d2e3bff0db",
+          "peak": 0.32526707649230957,
+          "voiceRms": 0.05282880738377571,
+          "bedRms": 0.0023555660154670477
+        }
+      ]
+    },
+    {
+      "id": "voice-campaign-encounter-craft-ecb749c132e1",
+      "sceneId": "act3_craft_archive_return",
+      "speaker": "Edda",
+      "text": "Keep the question beside the answer you actually brought back. I still have to work here tomorrow.",
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-ward.flac",
+      "ambienceSha256": "a3cb998a109b169e7da44fd4f6f1f9299b01a8fe477d04ec681a0bad425c75e6",
+      "focus": "normal",
+      "versions": [
+        {
+          "version": "retained",
+          "path": "public/audio/voice-campaign-encounter-craft-ecb749c132e1.mp3",
+          "sha256": "644d289a826e3b45fd8dd7dc0d02cdc1f5d0a380ba5c950ee7098709ffddacf8",
+          "startSeconds": 56.17316666666667,
+          "durationSeconds": 5.918,
+          "sourceFile": "/workspace/generated_audio/aaa-performance-direction/mixes/voice-campaign-encounter-craft-ecb749c132e1-retained.wav",
+          "sourceSha256": "3f6399b9321e081b6f5794894b4cd5aa8d9e20c6d74644b4a51c90f0fc77bf15",
+          "peak": 0.32891517877578735,
+          "voiceRms": 0.051288455724716187,
+          "bedRms": 0.002435733564198017
+        }
+      ]
+    },
+    {
+      "id": "voice-campaign-encounter-craft-43e701b3e2c1",
+      "sceneId": "act2_craft_kerr_settlement",
+      "speaker": "Kerr",
+      "text": "There is the case. There is no name in their register. We kept the bargain. The fitting is another day's work.",
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-stall.flac",
+      "ambienceSha256": "f09d109ea3684058422c311f464a49708b17842dad4b00d44d19a5cf53a309bf",
+      "focus": "normal",
+      "versions": [
+        {
+          "version": "before",
+          "path": "public/audio/voice-campaign-encounter-craft-43e701b3e2c1.mp3",
+          "sha256": "bc1e76f21bbe9899a8843c61951f973f885d1476d4e0ee16e0a813e82497296e",
+          "startSeconds": 63.091166666666666,
+          "durationSeconds": 7.45,
+          "sourceFile": "/workspace/generated_audio/aaa-performance-direction/mixes/voice-campaign-encounter-craft-43e701b3e2c1-before.wav",
+          "sourceSha256": "8ca044e59eda15eb75bb80a31c9d03adc6b9d9c2be9c0fbf1463bd514236df61",
+          "peak": 0.4541209638118744,
+          "voiceRms": 0.0508144348859787,
+          "bedRms": 0.002825560048222542
+        },
+        {
+          "version": "directed",
+          "path": "public/audio/performance-direction-v1/voice-campaign-encounter-craft-43e701b3e2c1.mp3",
+          "sha256": "0d405f07c24162111515991dae415337b74f9aa96aaf46c15c40ee19410809b6",
+          "startSeconds": 71.54116666666667,
+          "durationSeconds": 7.2316666666666665,
+          "sourceFile": "/workspace/generated_audio/aaa-performance-direction/mixes/voice-campaign-encounter-craft-43e701b3e2c1-directed.wav",
+          "sourceSha256": "a5470adbb537d9782d5cd8df8b10c41a6915cce7a7f89c483bbf36ef24cf9f56",
+          "peak": 0.4468449354171753,
+          "voiceRms": 0.05212483927607536,
+          "bedRms": 0.002823223127052188
+        }
+      ]
+    },
+    {
+      "id": "voice-campaign-encounter-craft-62b70985aa0d",
+      "sceneId": "act2_craft_kerr_settlement",
+      "speaker": "Kerr",
+      "text": "I can count what arrived. I can read what they kept. We are not going to make one of those disappear by talking about the other.",
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-stall.flac",
+      "ambienceSha256": "f09d109ea3684058422c311f464a49708b17842dad4b00d44d19a5cf53a309bf",
+      "focus": "normal",
+      "versions": [
+        {
+          "version": "before",
+          "path": "public/audio/voice-campaign-encounter-craft-62b70985aa0d.mp3",
+          "sha256": "85678c3358ccd498f5f069d8d43ffd308af1458776946c3a7a66b06ccc22ef2a",
+          "startSeconds": 79.77283333333334,
+          "durationSeconds": 7.751291666666667,
+          "sourceFile": "/workspace/generated_audio/aaa-performance-direction/mixes/voice-campaign-encounter-craft-62b70985aa0d-before.wav",
+          "sourceSha256": "6215d60c63817c3a7778aa4dd0e54597caff8577c7bbfb663c2fadba246b28be",
+          "peak": 0.43110331892967224,
+          "voiceRms": 0.05319628864526749,
+          "bedRms": 0.002826574956998229
+        },
+        {
+          "version": "directed",
+          "path": "public/audio/performance-direction-v1/voice-campaign-encounter-craft-62b70985aa0d.mp3",
+          "sha256": "73dc8995d53d6b973e045205994e7bb1f527d950a20a789a7ed2b1d417403359",
+          "startSeconds": 88.524125,
+          "durationSeconds": 7.643666666666666,
+          "sourceFile": "/workspace/generated_audio/aaa-performance-direction/mixes/voice-campaign-encounter-craft-62b70985aa0d-directed.wav",
+          "sourceSha256": "2934afc499928e37f0f051848b6ea2c6296614b2d5bc7f14b27d254af030b0b3",
+          "peak": 0.4255136251449585,
+          "voiceRms": 0.054116446524858475,
+          "bedRms": 0.002826052950695157
+        }
+      ]
+    },
+    {
+      "id": "voice-campaign-encounter-craft-9597f82c6f10",
+      "sceneId": "act2_craft_kerr_settlement",
+      "speaker": "Kerr",
+      "text": "You stopped before the journey. We can leave it here. The case is still there, and neither of us will call it collected.",
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-stall.flac",
+      "ambienceSha256": "f09d109ea3684058422c311f464a49708b17842dad4b00d44d19a5cf53a309bf",
+      "focus": "normal",
+      "versions": [
+        {
+          "version": "retained",
+          "path": "public/audio/voice-campaign-encounter-craft-9597f82c6f10.mp3",
+          "sha256": "cf50b8fee2975fe833b8f103356925801f8b09e9869762ca57ccc1ce3346e296",
+          "startSeconds": 97.16779166666667,
+          "durationSeconds": 7.196625,
+          "sourceFile": "/workspace/generated_audio/aaa-performance-direction/mixes/voice-campaign-encounter-craft-9597f82c6f10-retained.wav",
+          "sourceSha256": "13cd7787e0f265562ba2688aa35026af68ad1b7603a4ff8db32ea82553fcabbe",
+          "peak": 0.42840084433555603,
+          "voiceRms": 0.05045540630817413,
+          "bedRms": 0.0028216687496751547
+        }
+      ]
+    },
+    {
+      "id": "voice-campaign-encounter-craft-a3b854d736a3",
+      "sceneId": "act2_craft_kerr_offer",
+      "speaker": "Kerr",
+      "text": "You want me to pay for the quiet way in. Fine. Put something of yours on the counter.",
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-stall.flac",
+      "ambienceSha256": "f09d109ea3684058422c311f464a49708b17842dad4b00d44d19a5cf53a309bf",
+      "focus": "normal",
+      "versions": [
+        {
+          "version": "before",
+          "path": "public/audio/voice-campaign-encounter-craft-a3b854d736a3.mp3",
+          "sha256": "dc0bf95d1599e8f7ebcf690f3de3e8565501533275acfc0ff518bfa3f1f1baf8",
+          "startSeconds": 105.36441666666667,
+          "durationSeconds": 5.744666666666666,
+          "sourceFile": "/workspace/generated_audio/aaa-performance-direction/mixes/voice-campaign-encounter-craft-a3b854d736a3-before.wav",
+          "sourceSha256": "5214b38ef7b70018edb977c6810edae3371e911ff017d90e60a7785121e5f61a",
+          "peak": 0.5595093369483948,
+          "voiceRms": 0.051716431975364685,
+          "bedRms": 0.002906389068812132
+        },
+        {
+          "version": "directed",
+          "path": "public/audio/performance-direction-v1/voice-campaign-encounter-craft-a3b854d736a3.mp3",
+          "sha256": "df9d2fe325186297614ba22045756bf2853cc8364757c32106f9f8d57e06974c",
+          "startSeconds": 112.10908333333333,
+          "durationSeconds": 5.189666666666667,
+          "sourceFile": "/workspace/generated_audio/aaa-performance-direction/mixes/voice-campaign-encounter-craft-a3b854d736a3-directed.wav",
+          "sourceSha256": "089628258e95d93fc04443ccce1ec83166df3414d114497a2bd262e858f5f9b6",
+          "peak": 0.548356831073761,
+          "voiceRms": 0.05180772766470909,
+          "bedRms": 0.0029546974692493677
+        }
+      ]
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-ee1ca23521df",
+      "sceneId": "act3_payoff_edda",
+      "speaker": "Edda",
+      "text": "Put the reader away. I want to hear the rain for a minute.",
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-ward.flac",
+      "ambienceSha256": "a3cb998a109b169e7da44fd4f6f1f9299b01a8fe477d04ec681a0bad425c75e6",
+      "focus": "normal",
+      "versions": [
+        {
+          "version": "retained",
+          "path": "public/audio/voice-campaign-emotional-payoff-ee1ca23521df.mp3",
+          "sha256": "6d1bbb329a788595fdd825c941793013cd5c78c29e130448e4d8d9ae99617fc1",
+          "startSeconds": 118.29875,
+          "durationSeconds": 3.6346666666666665,
+          "sourceFile": "/workspace/generated_audio/aaa-performance-direction/mixes/voice-campaign-emotional-payoff-ee1ca23521df-retained.wav",
+          "sourceSha256": "46f7c69c5a41aeee57efc3e939ea8e35eadfd9bdd1d67c408c0b9670ada120b9",
+          "peak": 0.277084618806839,
+          "voiceRms": 0.05179174616932869,
+          "bedRms": 0.0026934377383440733
+        }
+      ]
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-a8c4c936daad",
+      "sceneId": "act3_payoff_edda",
+      "speaker": "Edda",
+      "text": "The tea will be cold. Sit down anyway.",
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-ward.flac",
+      "ambienceSha256": "a3cb998a109b169e7da44fd4f6f1f9299b01a8fe477d04ec681a0bad425c75e6",
+      "focus": "normal",
+      "versions": [
+        {
+          "version": "retained",
+          "path": "public/audio/voice-campaign-emotional-payoff-a8c4c936daad.mp3",
+          "sha256": "ecb6ae5d673450cbe327e9f34158dd8dc8b5eca1638b5fe29148ce3776cc00fc",
+          "startSeconds": 122.93341666666667,
+          "durationSeconds": 2.970666666666667,
+          "sourceFile": "/workspace/generated_audio/aaa-performance-direction/mixes/voice-campaign-emotional-payoff-a8c4c936daad-retained.wav",
+          "sourceSha256": "e64f842fd12d2a9687c07b23627638c722fb7e91cf55a0b0a7d279a0d97b770a",
+          "peak": 0.2657977044582367,
+          "voiceRms": 0.045548345893621445,
+          "bedRms": 0.0027913409285247326
+        }
+      ]
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-a1cf0d3718e8",
+      "sceneId": "act3_payoff_edda",
+      "speaker": "Edda",
+      "text": "Stay a minute. You don't have to bring me an answer to sit here.",
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-ward.flac",
+      "ambienceSha256": "a3cb998a109b169e7da44fd4f6f1f9299b01a8fe477d04ec681a0bad425c75e6",
+      "focus": "normal",
+      "versions": [
+        {
+          "version": "retained",
+          "path": "public/audio/voice-campaign-emotional-payoff-a1cf0d3718e8.mp3",
+          "sha256": "66912cc0004f548ac4699f8b15574585a64c068f1c6b05b9747fc5c65279530d",
+          "startSeconds": 126.90408333333333,
+          "durationSeconds": 3.882,
+          "sourceFile": "/workspace/generated_audio/aaa-performance-direction/mixes/voice-campaign-emotional-payoff-a1cf0d3718e8-retained.wav",
+          "sourceSha256": "dc80dcdcfe7859471e4e911922c8eee4699ca874fa5ba760767a3333b2d29f89",
+          "peak": 0.28074970841407776,
+          "voiceRms": 0.048917993903160095,
+          "bedRms": 0.0026579839177429676
+        }
+      ]
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-4a4c8f261a79",
+      "sceneId": "act3_payoff_kerr",
+      "speaker": "Kerr",
+      "text": "Put it beside the table leg. I can reach it from here.",
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-stall.flac",
+      "ambienceSha256": "f09d109ea3684058422c311f464a49708b17842dad4b00d44d19a5cf53a309bf",
+      "focus": "normal",
+      "versions": [
+        {
+          "version": "retained",
+          "path": "public/audio/voice-campaign-emotional-payoff-4a4c8f261a79.mp3",
+          "sha256": "8f23b61a5bb7965fd8a61645e25aa02bf7e08a4f63cf639899ded32d41a5e71e",
+          "startSeconds": 131.78608333333332,
+          "durationSeconds": 3.612625,
+          "sourceFile": "/workspace/generated_audio/aaa-performance-direction/mixes/voice-campaign-emotional-payoff-4a4c8f261a79-retained.wav",
+          "sourceSha256": "2c12e197d0d0b5cf95d4376e648a603279562c621b262686f51d465a8da53863",
+          "peak": 0.4355597198009491,
+          "voiceRms": 0.051893800497055054,
+          "bedRms": 0.0031381461303681135
+        }
+      ]
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-a00e2510dc2a",
+      "sceneId": "act3_payoff_kerr",
+      "speaker": "Kerr",
+      "text": "Leave the case there. I need a minute before we talk about anything else.",
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-stall.flac",
+      "ambienceSha256": "f09d109ea3684058422c311f464a49708b17842dad4b00d44d19a5cf53a309bf",
+      "focus": "normal",
+      "versions": [
+        {
+          "version": "retained",
+          "path": "public/audio/voice-campaign-emotional-payoff-a00e2510dc2a.mp3",
+          "sha256": "773fb56a7955930527cc127e48cc365f35171a627f97a90b4adf0a6e412766ed",
+          "startSeconds": 136.39870833333333,
+          "durationSeconds": 4.389333333333333,
+          "sourceFile": "/workspace/generated_audio/aaa-performance-direction/mixes/voice-campaign-emotional-payoff-a00e2510dc2a-retained.wav",
+          "sourceSha256": "a92b1f48980f7560fccd1dde345a33aba4f461dc1fd73e20662ffeb5c2793226",
+          "peak": 0.3774234652519226,
+          "voiceRms": 0.05212126672267914,
+          "bedRms": 0.003042579395696521
+        }
+      ]
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-5ca32a5e2923",
+      "sceneId": "act3_payoff_kerr",
+      "speaker": "Kerr",
+      "text": "Leave that space. I'll know what it's for.",
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-stall.flac",
+      "ambienceSha256": "f09d109ea3684058422c311f464a49708b17842dad4b00d44d19a5cf53a309bf",
+      "focus": "normal",
+      "versions": [
+        {
+          "version": "retained",
+          "path": "public/audio/voice-campaign-emotional-payoff-5ca32a5e2923.mp3",
+          "sha256": "93c5d2b535b298144727ab613708ca318d59e076968506c1ca3f049f665ee9ad",
+          "startSeconds": 141.78804166666666,
+          "durationSeconds": 3.0353333333333334,
+          "sourceFile": "/workspace/generated_audio/aaa-performance-direction/mixes/voice-campaign-emotional-payoff-5ca32a5e2923-retained.wav",
+          "sourceSha256": "63a7797fd08f051c7a3664058b5ab47f5d9df266d7363df8d88d800e2fafe5e9",
+          "peak": 0.3612579107284546,
+          "voiceRms": 0.048067424446344376,
+          "bedRms": 0.0032124249264597893
+        }
+      ]
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-0a1b8bb22589",
+      "sceneId": "ending_names",
+      "speaker": "Sera",
+      "text": "Wait. Let me hear that one again.",
+      "musicPath": "public/audio/theme-ward.flac",
+      "musicSha256": "46e9fd33430a61b4a36645c45fcd88bbc616e57e4643cb2e61aaacc0b62cfc39",
+      "ambiencePath": "public/audio/ambience-ward.flac",
+      "ambienceSha256": "a3cb998a109b169e7da44fd4f6f1f9299b01a8fe477d04ec681a0bad425c75e6",
+      "focus": "closing",
+      "versions": [
+        {
+          "version": "before",
+          "path": "public/audio/voice-campaign-emotional-payoff-0a1b8bb22589.mp3",
+          "sha256": "74917bdbd4d7b873f2b5871a6cf53aabd5fe416f290c5b72967e87ad1d605de0",
+          "startSeconds": 145.823375,
+          "durationSeconds": 2.4072916666666666,
+          "sourceFile": "/workspace/generated_audio/aaa-performance-direction/mixes/voice-campaign-emotional-payoff-0a1b8bb22589-before.wav",
+          "sourceSha256": "780e072fa87036cddeb32cdae2d0db32167c8bc764517fdb91a4bdfa01daa19f",
+          "peak": 0.3694552481174469,
+          "voiceRms": 0.05101407691836357,
+          "bedRms": 0.0019611837342381477
+        },
+        {
+          "version": "directed",
+          "path": "public/audio/performance-direction-v1/voice-campaign-emotional-payoff-0a1b8bb22589.mp3",
+          "sha256": "72b7ed1c7b6b8ee117e0b6ebf38c0d44acca5d0cfa3c6c51f6ed1a1ac6fc1771",
+          "startSeconds": 149.23066666666668,
+          "durationSeconds": 2.84,
+          "sourceFile": "/workspace/generated_audio/aaa-performance-direction/mixes/voice-campaign-emotional-payoff-0a1b8bb22589-directed.wav",
+          "sourceSha256": "42c63a4eae705c9ae50bc8f585ba3dee99220d5bc80c1cffc6109c5475b0e026",
+          "peak": 0.3983314335346222,
+          "voiceRms": 0.05005841329693794,
+          "bedRms": 0.0020688646472990513
+        }
+      ]
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-8b41fca71d2b",
+      "sceneId": "ending_quiet",
+      "speaker": "Sera",
+      "text": "Mind the broken step. It's the second one down.",
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-ward.flac",
+      "ambienceSha256": "a3cb998a109b169e7da44fd4f6f1f9299b01a8fe477d04ec681a0bad425c75e6",
+      "focus": "closing",
+      "versions": [
+        {
+          "version": "retained",
+          "path": "public/audio/voice-campaign-emotional-payoff-8b41fca71d2b.mp3",
+          "sha256": "d23aa919bba9c3dc4078e86c135723623961db98b464e0b2e6a947be868feb35",
+          "startSeconds": 153.07066666666665,
+          "durationSeconds": 3.423958333333333,
+          "sourceFile": "/workspace/generated_audio/aaa-performance-direction/mixes/voice-campaign-emotional-payoff-8b41fca71d2b-retained.wav",
+          "sourceSha256": "c659eb68675e1ae23bf56ee249bc0e71cb5dc3de95280b393f0f286fc7732297",
+          "peak": 0.5113379955291748,
+          "voiceRms": 0.05575292557477951,
+          "bedRms": 0.0017592939548194408
+        }
+      ]
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-52ad3344069a",
+      "sceneId": "ending_witness",
+      "speaker": "Sera",
+      "text": "Your name can stay. Leave theirs where they are.",
+      "musicPath": "public/audio/theme-ward.flac",
+      "musicSha256": "46e9fd33430a61b4a36645c45fcd88bbc616e57e4643cb2e61aaacc0b62cfc39",
+      "ambiencePath": "public/audio/ambience-ward.flac",
+      "ambienceSha256": "a3cb998a109b169e7da44fd4f6f1f9299b01a8fe477d04ec681a0bad425c75e6",
+      "focus": "closing",
+      "versions": [
+        {
+          "version": "retained",
+          "path": "public/audio/voice-campaign-emotional-payoff-52ad3344069a.mp3",
+          "sha256": "31cc2e900ef1826edfc9414e12e73e75e90a9b495c2d9e036e0175b0831e5cd3",
+          "startSeconds": 157.494625,
+          "durationSeconds": 3.133958333333333,
+          "sourceFile": "/workspace/generated_audio/aaa-performance-direction/mixes/voice-campaign-emotional-payoff-52ad3344069a-retained.wav",
+          "sourceSha256": "96c84b5035caf105690ed4750a16c021f83dc57297d0940bdb8cef2757fc6dc3",
+          "peak": 0.3383195698261261,
+          "voiceRms": 0.05203459784388542,
+          "bedRms": 0.0020901975221931934
+        }
+      ]
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-26350d370631",
+      "sceneId": "ending_listed",
+      "speaker": "Ives",
+      "text": "Mind the edge. Keep that page in one piece.",
+      "musicPath": "public/audio/theme-ward.flac",
+      "musicSha256": "46e9fd33430a61b4a36645c45fcd88bbc616e57e4643cb2e61aaacc0b62cfc39",
+      "ambiencePath": "public/audio/ambience-ward.flac",
+      "ambienceSha256": "a3cb998a109b169e7da44fd4f6f1f9299b01a8fe477d04ec681a0bad425c75e6",
+      "focus": "closing",
+      "versions": [
+        {
+          "version": "before",
+          "path": "public/audio/voice-campaign-emotional-payoff-26350d370631.mp3",
+          "sha256": "eefda43383f710b5c096118fca649e26c54dc0fa1cccb2df092ecdfb32f98ab4",
+          "startSeconds": 161.62858333333332,
+          "durationSeconds": 3.6525833333333333,
+          "sourceFile": "/workspace/generated_audio/aaa-performance-direction/mixes/voice-campaign-emotional-payoff-26350d370631-before.wav",
+          "sourceSha256": "522a1d4fb5aac9bf6dc1c19fbac32b87007d3babee5e9f7547bcb3b25bf24ac5",
+          "peak": 0.33443233370780945,
+          "voiceRms": 0.054319046437740326,
+          "bedRms": 0.002209665020927787
+        },
+        {
+          "version": "directed",
+          "path": "public/audio/performance-direction-v1/voice-campaign-emotional-payoff-26350d370631.mp3",
+          "sha256": "bcd650c8e634b2e5284f1ec3842079d649a32aa7d8f02817b977982144e7fffe",
+          "startSeconds": 166.28116666666668,
+          "durationSeconds": 3.0453333333333332,
+          "sourceFile": "/workspace/generated_audio/aaa-performance-direction/mixes/voice-campaign-emotional-payoff-26350d370631-directed.wav",
+          "sourceSha256": "0e4c0dc203242326a891a3e2572c0188106631536f38b2c7324e7692d5dae4ae",
+          "peak": 0.34420403838157654,
+          "voiceRms": 0.05321135371923447,
+          "bedRms": 0.00208749296143651
+        }
+      ]
+    }
+  ]
+}

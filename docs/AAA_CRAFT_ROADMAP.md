@@ -66,6 +66,8 @@ Audition the complete anchor scenes rather than individual file counts. Review e
 
 **Exit:** matched actor/text/voice/art, reviewed scene-level before/after performances, natural completion, Stop/mute/manual/zero-channel/interruption behavior and a readable silent version. No runtime synthesis or invented personalized narration is required.
 
+Phase 5 implementation reviews nineteen actual archive/bargain/personal-return/finale performances and accepts seven same-word, same-stock-actor alternatives. Twelve performances remain unchanged, including an introduction whose candidates failed exact-word/timing review. Explicit nested deliveries preserve all 807 preceding media bytes and use one original-recording fallback on download/decode failure. Scene art, words, bindings, gains, mixing, canonical campaigns and saves remain intact. The retained raw ASR/retake history, labeled complete scene-bed A/B comparison and browser playback/fallback checks are documented in [the Phase 5 report](PERFORMANCE_DIRECTION_PHASE5.md). These technical and source-familiar observations do not automatically raise the provisional 8.6 grade.
+
 ## Phase 6: whole-campaign acceptance
 
 Repeat fixed proxy campaigns spanning origins, builds, resources, failure and the four finales. Assess comprehension, decision fatigue, build recognition and emotional continuity with an unchanged rubric. Keep negative findings and retry evidence. Add physical-device and assistive-technology observations when available; do not relabel synthetic viewports as hardware tests.

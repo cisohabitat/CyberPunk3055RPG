@@ -1,3 +1,4 @@
+import { DIRECTED_VOICE_IDS, performanceVoicePath } from "../lib/performance-delivery";
 import { createHash } from "node:crypto";
 import { existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSync } from "node:fs";
 import { resolve, relative } from "node:path";
@@ -68,6 +69,7 @@ for (const [id, direction] of Object.entries(VISUAL_DIRECTIONS)) {
     if (asset && !existsSync(`public${asset}`)) throw new Error(`Missing sequence artwork ${id}: ${asset}`);
   }
 }
+for (const id of DIRECTED_VOICE_IDS) if (!existsSync(`public${performanceVoicePath(id)}`)) throw new Error(`Missing directed voice ${id}`);
 inventory("public/art", "artwork"); inventory("public/audio", "audio"); inventory(".next/static", "build");
 const violations = budgetViolations(assets, budgets);
 const gates: AcceptanceGate[] = JSON.parse(readFileSync("qa/production/acceptance.json", "utf8"));

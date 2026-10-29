@@ -140,7 +140,7 @@ test("crafted paragraph/manual/text-only respects reveal, Stop and preferences",
   expect(await saved(page)).toEqual(before); expect(requests).toEqual([]);
 });
 test("missing crafted art and recordings leave written speech and a legal exit", async ({ page }) => {
-  await page.route("**/audio/voice-campaign-encounter-craft-*.mp3", route => route.abort());
+  await page.route("**/voice-campaign-encounter-craft-*.mp3", route => route.abort());
   await page.route("**/art/*.jpg", route => route.abort());
   const state = stages[5]; await open(page, state, 390, true);
   await expect(page.getByTestId("scene-text")).toHaveText(sceneText(getScene(state.sceneId), state).split(/\n\n+/).filter(Boolean).join(""));

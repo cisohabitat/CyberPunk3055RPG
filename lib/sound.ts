@@ -1,3 +1,4 @@
+import { performanceVoicePath } from "./performance-delivery";
 import type { Preferences } from "./preferences";
 import type { GameState } from "./types";
 import { windowRemaining } from "./chapel-window";
@@ -85,9 +86,22 @@ async function load(name: string) {
   if (controller) titleRequest = controller;
   const pending = (async () => {
     const extension = name.startsWith("voice-campaign-") ? "mp3" : name === TITLE_MUSIC.name ? TITLE_MUSIC.extension : name === "theme" || name.startsWith("theme-") || name.startsWith("ambience-") ? "flac" : "wav";
-    const response = await fetch(`/audio/${name}.${extension}`, { signal: controller?.signal });
-    if (!response.ok) throw new Error("Audio unavailable");
-    const buffer = await context().decodeAudioData(await response.arrayBuffer());
+    const original = `/audio/${name}.${extension}`, directed = performanceVoicePath(name);
+    let buffer: AudioBuffer | undefined, failure: unknown;
+    // A reviewed alternative may fail to download or decode. Try its exact
+    // retained words/actor once, then keep the existing unavailable behavior.
+    for (const path of directed ? [directed, original] : [original]) {
+      try {
+        const response = await fetch(path, { signal: controller?.signal });
+        if (!response.ok) throw new Error("Audio unavailable");
+        buffer = await context().decodeAudioData(await response.arrayBuffer());
+        break;
+      } catch (error) {
+        if (controller?.signal.aborted) throw error;
+        failure = error;
+      }
+    }
+    if (!buffer) throw failure ?? new Error("Audio unavailable");
     if (controller?.signal.aborted) throw new Error("Menu audio cancelled");
     cache.set(name, buffer);
     let bytes = 0; for (const value of cache.values()) bytes += value.length * value.numberOfChannels * 4;

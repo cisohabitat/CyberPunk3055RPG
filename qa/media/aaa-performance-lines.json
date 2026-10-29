@@ -1,0 +1,178 @@
+[
+  {
+    "id": "voice-campaign-encounter-craft-570639a0f84d",
+    "speaker": "Edda",
+    "voice": "af_kore",
+    "text": "You have made one column answer for another. Look again. I am not asking you to believe me; I am asking you to read what is there.",
+    "speed": 0.92,
+    "loudnessLufs": -23.5,
+    "segments": [
+      {
+        "text": "You have made one column answer for another.",
+        "pauseAfter": 0.1,
+        "speed": 0.88
+      },
+      {
+        "text": "Look again.",
+        "pauseAfter": 0.26,
+        "speed": 0.91
+      },
+      {
+        "text": "I am not asking you to believe me; I am asking you to read what is there.",
+        "pauseAfter": 0,
+        "speed": 0.96
+      }
+    ],
+    "direction": "Keep the first sentence intact; separate the correction from the reading invitation.",
+    "previousPath": "public/audio/voice-campaign-encounter-craft-570639a0f84d.mp3",
+    "previousSha256": "1e229a9ea5a53ecba66385b2284e7967ba1b993c48303f09cf86bb76bd9c36e2"
+  },
+  {
+    "id": "voice-campaign-encounter-craft-cd0a455809ce",
+    "speaker": "Edda",
+    "voice": "af_kore",
+    "text": "Ask for the movement page. Leave the families out of the request. I can help you carry a record; I will not give you people to lean on.",
+    "speed": 0.95,
+    "loudnessLufs": -23.5,
+    "segments": [
+      {
+        "text": "Ask for the movement page. Leave the families out of the request.",
+        "pauseAfter": 0.3,
+        "speed": 0.96
+      },
+      {
+        "text": "I can help you carry a record; I will not give you people to lean on.",
+        "pauseAfter": 0,
+        "speed": 0.96
+      }
+    ],
+    "direction": "Practical request, clear family boundary, then the limit of help.",
+    "previousPath": "public/audio/voice-campaign-encounter-craft-cd0a455809ce.mp3",
+    "previousSha256": "430e68710b08ae2ccc4f787eb8dbab539514cb20e4645f7a7ffc4556fa4f9bc4"
+  },
+  {
+    "id": "voice-campaign-encounter-craft-a3b854d736a3",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "text": "You want me to pay for the quiet way in. Fine. Put something of yours on the counter.",
+    "speed": 0.97,
+    "loudnessLufs": -23.5,
+    "segments": [
+      {
+        "text": "You want me to pay for the quiet way in.",
+        "pauseAfter": 0.4,
+        "speed": 0.97
+      },
+      {
+        "text": "Fine. Put something of yours on the counter.",
+        "pauseAfter": 0,
+        "speed": 0.95
+      }
+    ],
+    "direction": "Reluctant agreement stays attached to the demand, without an isolated one-word splice.",
+    "previousPath": "public/audio/voice-campaign-encounter-craft-a3b854d736a3.mp3",
+    "previousSha256": "dc0bf95d1599e8f7ebcf690f3de3e8565501533275acfc0ff518bfa3f1f1baf8"
+  },
+  {
+    "id": "voice-campaign-encounter-craft-43e701b3e2c1",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "text": "There is the case. There is no name in their register. We kept the bargain. The fitting is another day's work.",
+    "speed": 0.97,
+    "loudnessLufs": -23.5,
+    "segments": [
+      {
+        "text": "There is the case.",
+        "pauseAfter": 0.24,
+        "speed": 0.99
+      },
+      {
+        "text": "There is no name in their register.",
+        "pauseAfter": 0.26,
+        "speed": 0.99
+      },
+      {
+        "text": "We kept the bargain.",
+        "pauseAfter": 0.4,
+        "speed": 0.97
+      },
+      {
+        "text": "The fitting is another day's work.",
+        "pauseAfter": 0,
+        "speed": 0.92
+      }
+    ],
+    "direction": "Count the real result, then distinctly slow the unearned-treatment boundary.",
+    "previousPath": "public/audio/voice-campaign-encounter-craft-43e701b3e2c1.mp3",
+    "previousSha256": "bc1e76f21bbe9899a8843c61951f973f885d1476d4e0ee16e0a813e82497296e"
+  },
+  {
+    "id": "voice-campaign-encounter-craft-62b70985aa0d",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "text": "I can count what arrived. I can read what they kept. We are not going to make one of those disappear by talking about the other.",
+    "speed": 0.97,
+    "loudnessLufs": -23.5,
+    "segments": [
+      {
+        "text": "I can count what arrived.",
+        "pauseAfter": 0.24,
+        "speed": 0.98
+      },
+      {
+        "text": "I can read what they kept.",
+        "pauseAfter": 0.4,
+        "speed": 0.98
+      },
+      {
+        "text": "We are not going to make one of those disappear by talking about the other.",
+        "pauseAfter": 0,
+        "speed": 0.95
+      }
+    ],
+    "direction": "Connect the two observations, then pause before refusing to erase the record.",
+    "previousPath": "public/audio/voice-campaign-encounter-craft-62b70985aa0d.mp3",
+    "previousSha256": "85678c3358ccd498f5f069d8d43ffd308af1458776946c3a7a66b06ccc22ef2a"
+  },
+  {
+    "id": "voice-campaign-emotional-payoff-0a1b8bb22589",
+    "speaker": "Sera",
+    "voice": "af_bella",
+    "text": "Wait. Let me hear that one again.",
+    "speed": 0.92,
+    "loudnessLufs": -23.5,
+    "segments": [
+      {
+        "text": "Wait.",
+        "pauseAfter": 0.32,
+        "speed": 0.92
+      },
+      {
+        "text": "Let me hear that one again.",
+        "pauseAfter": 0,
+        "speed": 0.93
+      }
+    ],
+    "direction": "Give the call to stop a separate beat before asking to hear the name again.",
+    "previousPath": "public/audio/voice-campaign-emotional-payoff-0a1b8bb22589.mp3",
+    "previousSha256": "74917bdbd4d7b873f2b5871a6cf53aabd5fe416f290c5b72967e87ad1d605de0"
+  },
+  {
+    "id": "voice-campaign-emotional-payoff-26350d370631",
+    "speaker": "Ives",
+    "voice": "am_eric",
+    "text": "Mind the edge. Keep that page in one piece.",
+    "speed": 0.96,
+    "loudnessLufs": -23.5,
+    "segments": [
+      {
+        "text": "Mind the edge. Keep that page in one piece.",
+        "pauseAfter": 0,
+        "speed": 0.94
+      }
+    ],
+    "direction": "One connected practical caution; avoid a repeated gap between two short clauses.",
+    "previousPath": "public/audio/voice-campaign-emotional-payoff-26350d370631.mp3",
+    "previousSha256": "eefda43383f710b5c096118fca649e26c54dc0fa1cccb2df092ecdfb32f98ab4"
+  }
+]

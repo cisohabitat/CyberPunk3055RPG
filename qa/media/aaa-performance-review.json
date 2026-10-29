@@ -1,0 +1,6149 @@
+{
+  "method": "Source-familiar AI/automation proxy: exact-word unprompted ASR and phrase/signal/context comparison. Not blind, human, independent acting or perceptual-quality acceptance. No authored text was provided to the transcriber. Normalization removes case/punctuation/apostrophe differences only; it never expands contractions or removes trailing words.",
+  "before": {
+    "method": "Unprompted base.en CPU int8 ASR with word times, no authored prompt. Timing is a proxy, not a phonetic/acting judgment.",
+    "model": "Systran/faster-whisper-base.en",
+    "lines": [
+      {
+        "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+        "speaker": "Edda",
+        "voice": "af_kore",
+        "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+        "path": "public/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3",
+        "sha256": "26825c2bc65fe72059a7ad4da468fffe47e9cd921d8fcb4ebdfe6d1ed04c872e",
+        "durationSeconds": 8.358625,
+        "transcription": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+        "exactNormalizedWords": true,
+        "words": [
+          {
+            "word": " The",
+            "start": 0.0,
+            "end": 0.14
+          },
+          {
+            "word": " plant",
+            "start": 0.14,
+            "end": 0.3
+          },
+          {
+            "word": " stayed",
+            "start": 0.3,
+            "end": 0.66
+          },
+          {
+            "word": " on.",
+            "start": 0.66,
+            "end": 0.94
+          },
+          {
+            "word": " The",
+            "start": 1.62,
+            "end": 1.68
+          },
+          {
+            "word": " workers",
+            "start": 1.68,
+            "end": 1.92
+          },
+          {
+            "word": " were",
+            "start": 1.92,
+            "end": 2.28
+          },
+          {
+            "word": " meant",
+            "start": 2.28,
+            "end": 2.42
+          },
+          {
+            "word": " to",
+            "start": 2.42,
+            "end": 2.58
+          },
+          {
+            "word": " leave.",
+            "start": 2.58,
+            "end": 2.82
+          },
+          {
+            "word": " Find",
+            "start": 3.56,
+            "end": 3.74
+          },
+          {
+            "word": " the",
+            "start": 3.74,
+            "end": 3.9
+          },
+          {
+            "word": " line",
+            "start": 3.9,
+            "end": 4.14
+          },
+          {
+            "word": " that",
+            "start": 4.14,
+            "end": 4.44
+          },
+          {
+            "word": " changed",
+            "start": 4.44,
+            "end": 4.72
+          },
+          {
+            "word": " before",
+            "start": 4.72,
+            "end": 5.24
+          },
+          {
+            "word": " you",
+            "start": 5.24,
+            "end": 5.58
+          },
+          {
+            "word": " ask",
+            "start": 5.58,
+            "end": 5.82
+          },
+          {
+            "word": " me",
+            "start": 5.82,
+            "end": 6.12
+          },
+          {
+            "word": " to",
+            "start": 6.12,
+            "end": 6.3
+          },
+          {
+            "word": " put",
+            "start": 6.3,
+            "end": 6.46
+          },
+          {
+            "word": " my",
+            "start": 6.46,
+            "end": 6.64
+          },
+          {
+            "word": " name",
+            "start": 6.64,
+            "end": 6.86
+          },
+          {
+            "word": " under",
+            "start": 6.86,
+            "end": 7.24
+          },
+          {
+            "word": " yours.",
+            "start": 7.24,
+            "end": 7.6
+          }
+        ],
+        "sentenceGaps": [
+          {
+            "after": " on.",
+            "before": " The",
+            "gap": 0.68
+          },
+          {
+            "after": " leave.",
+            "before": " Find",
+            "gap": 0.74
+          }
+        ],
+        "segments": [
+          {
+            "text": "The plant stayed on.",
+            "pauseAfter": 0.16
+          },
+          {
+            "text": "The workers were meant to leave.",
+            "pauseAfter": 0.16
+          },
+          {
+            "text": "Find the line that changed before you ask me to put my name under yours.",
+            "pauseAfter": 0
+          }
+        ],
+        "speed": 0.95,
+        "integratedLufs": -23.51,
+        "truePeakDbtp": -6.55
+      },
+      {
+        "id": "voice-campaign-encounter-craft-570639a0f84d",
+        "speaker": "Edda",
+        "voice": "af_kore",
+        "text": "You have made one column answer for another. Look again. I am not asking you to believe me; I am asking you to read what is there.",
+        "path": "public/audio/voice-campaign-encounter-craft-570639a0f84d.mp3",
+        "sha256": "1e229a9ea5a53ecba66385b2284e7967ba1b993c48303f09cf86bb76bd9c36e2",
+        "durationSeconds": 8.742,
+        "transcription": "You have made one column answer for another. Look again. I am not asking you to believe me. I am asking you to read what is there. There. There.",
+        "exactNormalizedWords": false,
+        "words": [
+          {
+            "word": " You",
+            "start": 0.0,
+            "end": 0.2
+          },
+          {
+            "word": " have",
+            "start": 0.2,
+            "end": 0.42
+          },
+          {
+            "word": " made",
+            "start": 0.42,
+            "end": 1.0
+          },
+          {
+            "word": " one",
+            "start": 1.0,
+            "end": 1.3
+          },
+          {
+            "word": " column",
+            "start": 1.3,
+            "end": 1.58
+          },
+          {
+            "word": " answer",
+            "start": 1.58,
+            "end": 2.0
+          },
+          {
+            "word": " for",
+            "start": 2.0,
+            "end": 2.28
+          },
+          {
+            "word": " another.",
+            "start": 2.28,
+            "end": 2.52
+          },
+          {
+            "word": " Look",
+            "start": 3.26,
+            "end": 3.32
+          },
+          {
+            "word": " again.",
+            "start": 3.32,
+            "end": 3.64
+          },
+          {
+            "word": " I",
+            "start": 4.4,
+            "end": 4.46
+          },
+          {
+            "word": " am",
+            "start": 4.46,
+            "end": 4.58
+          },
+          {
+            "word": " not",
+            "start": 4.58,
+            "end": 4.72
+          },
+          {
+            "word": " asking",
+            "start": 4.72,
+            "end": 5.1
+          },
+          {
+            "word": " you",
+            "start": 5.1,
+            "end": 5.3
+          },
+          {
+            "word": " to",
+            "start": 5.3,
+            "end": 5.4
+          },
+          {
+            "word": " believe",
+            "start": 5.4,
+            "end": 5.62
+          },
+          {
+            "word": " me.",
+            "start": 5.62,
+            "end": 5.96
+          },
+          {
+            "word": " I",
+            "start": 6.42,
+            "end": 6.56
+          },
+          {
+            "word": " am",
+            "start": 6.56,
+            "end": 6.68
+          },
+          {
+            "word": " asking",
+            "start": 6.68,
+            "end": 7.02
+          },
+          {
+            "word": " you",
+            "start": 7.02,
+            "end": 7.26
+          },
+          {
+            "word": " to",
+            "start": 7.26,
+            "end": 7.36
+          },
+          {
+            "word": " read",
+            "start": 7.36,
+            "end": 7.56
+          },
+          {
+            "word": " what",
+            "start": 7.56,
+            "end": 7.8
+          },
+          {
+            "word": " is",
+            "start": 7.8,
+            "end": 7.92
+          },
+          {
+            "word": " there.",
+            "start": 7.92,
+            "end": 8.2
+          },
+          {
+            "word": " There.",
+            "start": 8.2,
+            "end": 8.3
+          },
+          {
+            "word": " There.",
+            "start": 8.52,
+            "end": 8.72
+          }
+        ],
+        "sentenceGaps": [
+          {
+            "after": " another.",
+            "before": " Look",
+            "gap": 0.74
+          },
+          {
+            "after": " again.",
+            "before": " I",
+            "gap": 0.76
+          },
+          {
+            "after": " me.",
+            "before": " I",
+            "gap": 0.46
+          },
+          {
+            "after": " there.",
+            "before": " There.",
+            "gap": 0.0
+          },
+          {
+            "after": " There.",
+            "before": " There.",
+            "gap": 0.22
+          }
+        ],
+        "segments": [
+          {
+            "text": "You have",
+            "pauseAfter": 0.1
+          },
+          {
+            "text": "made one column answer for another.",
+            "pauseAfter": 0.16
+          },
+          {
+            "text": "Look again.",
+            "pauseAfter": 0.16
+          },
+          {
+            "text": "I am not asking you to believe me;",
+            "pauseAfter": 0.12
+          },
+          {
+            "text": "I am asking you to read what is there.",
+            "pauseAfter": 0
+          }
+        ],
+        "speed": 0.92,
+        "integratedLufs": -23.5,
+        "truePeakDbtp": -7.12
+      },
+      {
+        "id": "voice-campaign-encounter-craft-0d503d1dabcb",
+        "speaker": "Edda",
+        "voice": "af_kore",
+        "text": "If you want the hand behind the instruction, bring the cancellation to its key. Her approval is a different act.",
+        "path": "public/audio/voice-campaign-encounter-craft-0d503d1dabcb.mp3",
+        "sha256": "bb673be3f3ab76f1e2506087d55a16c443d4a5aff21c54d94a029b7472e762ab",
+        "durationSeconds": 6.988,
+        "transcription": "If you want the hand behind the instruction, bring the cancellation to its key. Her approval is a different act.",
+        "exactNormalizedWords": true,
+        "words": [
+          {
+            "word": " If",
+            "start": 0.0,
+            "end": 0.18
+          },
+          {
+            "word": " you",
+            "start": 0.18,
+            "end": 0.3
+          },
+          {
+            "word": " want",
+            "start": 0.3,
+            "end": 0.58
+          },
+          {
+            "word": " the",
+            "start": 0.58,
+            "end": 0.78
+          },
+          {
+            "word": " hand",
+            "start": 0.78,
+            "end": 1.08
+          },
+          {
+            "word": " behind",
+            "start": 1.08,
+            "end": 1.4
+          },
+          {
+            "word": " the",
+            "start": 1.4,
+            "end": 1.7
+          },
+          {
+            "word": " instruction,",
+            "start": 1.7,
+            "end": 2.16
+          },
+          {
+            "word": " bring",
+            "start": 2.62,
+            "end": 2.74
+          },
+          {
+            "word": " the",
+            "start": 2.74,
+            "end": 2.94
+          },
+          {
+            "word": " cancellation",
+            "start": 2.94,
+            "end": 3.28
+          },
+          {
+            "word": " to",
+            "start": 3.28,
+            "end": 3.88
+          },
+          {
+            "word": " its",
+            "start": 3.88,
+            "end": 4.04
+          },
+          {
+            "word": " key.",
+            "start": 4.04,
+            "end": 4.3
+          },
+          {
+            "word": " Her",
+            "start": 5.1,
+            "end": 5.16
+          },
+          {
+            "word": " approval",
+            "start": 5.16,
+            "end": 5.48
+          },
+          {
+            "word": " is",
+            "start": 5.48,
+            "end": 5.78
+          },
+          {
+            "word": " a",
+            "start": 5.78,
+            "end": 5.86
+          },
+          {
+            "word": " different",
+            "start": 5.86,
+            "end": 6.08
+          },
+          {
+            "word": " act.",
+            "start": 6.08,
+            "end": 6.4
+          }
+        ],
+        "sentenceGaps": [
+          {
+            "after": " key.",
+            "before": " Her",
+            "gap": 0.8
+          }
+        ],
+        "segments": [
+          {
+            "text": "If you want the hand behind the instruction, bring the cancellation to its key.",
+            "pauseAfter": 0.16
+          },
+          {
+            "text": "Her approval is a different act.",
+            "pauseAfter": 0
+          }
+        ],
+        "speed": 0.95,
+        "integratedLufs": -23.49,
+        "truePeakDbtp": -6.15
+      },
+      {
+        "id": "voice-campaign-encounter-craft-cd0a455809ce",
+        "speaker": "Edda",
+        "voice": "af_kore",
+        "text": "Ask for the movement page. Leave the families out of the request. I can help you carry a record; I will not give you people to lean on.",
+        "path": "public/audio/voice-campaign-encounter-craft-cd0a455809ce.mp3",
+        "sha256": "430e68710b08ae2ccc4f787eb8dbab539514cb20e4645f7a7ffc4556fa4f9bc4",
+        "durationSeconds": 8.502,
+        "transcription": "Ask for the movement page. Leave the families out of the request. I can help you carry a record. I will not give you people to lean on.",
+        "exactNormalizedWords": true,
+        "words": [
+          {
+            "word": " Ask",
+            "start": 0.0,
+            "end": 0.28
+          },
+          {
+            "word": " for",
+            "start": 0.28,
+            "end": 0.42
+          },
+          {
+            "word": " the",
+            "start": 0.42,
+            "end": 0.52
+          },
+          {
+            "word": " movement",
+            "start": 0.52,
+            "end": 0.68
+          },
+          {
+            "word": " page.",
+            "start": 0.68,
+            "end": 1.02
+          },
+          {
+            "word": " Leave",
+            "start": 1.96,
+            "end": 1.96
+          },
+          {
+            "word": " the",
+            "start": 1.96,
+            "end": 2.14
+          },
+          {
+            "word": " families",
+            "start": 2.14,
+            "end": 2.5
+          },
+          {
+            "word": " out",
+            "start": 2.5,
+            "end": 2.82
+          },
+          {
+            "word": " of",
+            "start": 2.82,
+            "end": 2.94
+          },
+          {
+            "word": " the",
+            "start": 2.94,
+            "end": 3.02
+          },
+          {
+            "word": " request.",
+            "start": 3.02,
+            "end": 3.32
+          },
+          {
+            "word": " I",
+            "start": 4.14,
+            "end": 4.2
+          },
+          {
+            "word": " can",
+            "start": 4.2,
+            "end": 4.36
+          },
+          {
+            "word": " help",
+            "start": 4.36,
+            "end": 4.6
+          },
+          {
+            "word": " you",
+            "start": 4.6,
+            "end": 4.78
+          },
+          {
+            "word": " carry",
+            "start": 4.78,
+            "end": 5.04
+          },
+          {
+            "word": " a",
+            "start": 5.04,
+            "end": 5.24
+          },
+          {
+            "word": " record.",
+            "start": 5.24,
+            "end": 5.52
+          },
+          {
+            "word": " I",
+            "start": 6.08,
+            "end": 6.12
+          },
+          {
+            "word": " will",
+            "start": 6.12,
+            "end": 6.26
+          },
+          {
+            "word": " not",
+            "start": 6.26,
+            "end": 6.46
+          },
+          {
+            "word": " give",
+            "start": 6.46,
+            "end": 6.72
+          },
+          {
+            "word": " you",
+            "start": 6.72,
+            "end": 6.9
+          },
+          {
+            "word": " people",
+            "start": 6.9,
+            "end": 7.18
+          },
+          {
+            "word": " to",
+            "start": 7.18,
+            "end": 7.4
+          },
+          {
+            "word": " lean",
+            "start": 7.4,
+            "end": 7.56
+          },
+          {
+            "word": " on.",
+            "start": 7.56,
+            "end": 7.86
+          }
+        ],
+        "sentenceGaps": [
+          {
+            "after": " page.",
+            "before": " Leave",
+            "gap": 0.94
+          },
+          {
+            "after": " request.",
+            "before": " I",
+            "gap": 0.82
+          },
+          {
+            "after": " record.",
+            "before": " I",
+            "gap": 0.56
+          }
+        ],
+        "segments": [
+          {
+            "text": "Ask for the movement page.",
+            "pauseAfter": 0.16
+          },
+          {
+            "text": "Leave the families out of the request.",
+            "pauseAfter": 0.16
+          },
+          {
+            "text": "I can help you carry a record; I will not give you people to lean on.",
+            "pauseAfter": 0
+          }
+        ],
+        "speed": 0.95,
+        "integratedLufs": -23.49,
+        "truePeakDbtp": -5.63
+      },
+      {
+        "id": "voice-campaign-encounter-craft-ecb749c132e1",
+        "speaker": "Edda",
+        "voice": "af_kore",
+        "text": "Keep the question beside the answer you actually brought back. I still have to work here tomorrow.",
+        "path": "public/audio/voice-campaign-encounter-craft-ecb749c132e1.mp3",
+        "sha256": "644d289a826e3b45fd8dd7dc0d02cdc1f5d0a380ba5c950ee7098709ffddacf8",
+        "durationSeconds": 5.918,
+        "transcription": "Keep the question beside the answer you actually brought back. I still have to work here tomorrow.",
+        "exactNormalizedWords": true,
+        "words": [
+          {
+            "word": " Keep",
+            "start": 0.0,
+            "end": 0.22
+          },
+          {
+            "word": " the",
+            "start": 0.22,
+            "end": 0.4
+          },
+          {
+            "word": " question",
+            "start": 0.4,
+            "end": 0.7
+          },
+          {
+            "word": " beside",
+            "start": 0.7,
+            "end": 1.08
+          },
+          {
+            "word": " the",
+            "start": 1.08,
+            "end": 1.4
+          },
+          {
+            "word": " answer",
+            "start": 1.4,
+            "end": 1.78
+          },
+          {
+            "word": " you",
+            "start": 1.78,
+            "end": 2.08
+          },
+          {
+            "word": " actually",
+            "start": 2.08,
+            "end": 2.4
+          },
+          {
+            "word": " brought",
+            "start": 2.4,
+            "end": 2.8
+          },
+          {
+            "word": " back.",
+            "start": 2.8,
+            "end": 3.1
+          },
+          {
+            "word": " I",
+            "start": 3.8,
+            "end": 3.88
+          },
+          {
+            "word": " still",
+            "start": 3.88,
+            "end": 4.08
+          },
+          {
+            "word": " have",
+            "start": 4.08,
+            "end": 4.34
+          },
+          {
+            "word": " to",
+            "start": 4.34,
+            "end": 4.5
+          },
+          {
+            "word": " work",
+            "start": 4.5,
+            "end": 4.7
+          },
+          {
+            "word": " here",
+            "start": 4.7,
+            "end": 4.92
+          },
+          {
+            "word": " tomorrow.",
+            "start": 4.92,
+            "end": 5.22
+          }
+        ],
+        "sentenceGaps": [
+          {
+            "after": " back.",
+            "before": " I",
+            "gap": 0.7
+          }
+        ],
+        "segments": [
+          {
+            "text": "Keep the question beside the answer you actually brought back.",
+            "pauseAfter": 0.16
+          },
+          {
+            "text": "I still have to work here tomorrow.",
+            "pauseAfter": 0
+          }
+        ],
+        "speed": 0.95,
+        "integratedLufs": -23.5,
+        "truePeakDbtp": -6.56
+      },
+      {
+        "id": "voice-campaign-encounter-craft-43e701b3e2c1",
+        "speaker": "Kerr",
+        "voice": "am_adam",
+        "text": "There is the case. There is no name in their register. We kept the bargain. The fitting is another day's work.",
+        "path": "public/audio/voice-campaign-encounter-craft-43e701b3e2c1.mp3",
+        "sha256": "bc1e76f21bbe9899a8843c61951f973f885d1476d4e0ee16e0a813e82497296e",
+        "durationSeconds": 7.45,
+        "transcription": "There is the case. There is no name in their register. We kept the bargain. The fitting is another day's work.",
+        "exactNormalizedWords": true,
+        "words": [
+          {
+            "word": " There",
+            "start": 0.0,
+            "end": 0.22
+          },
+          {
+            "word": " is",
+            "start": 0.22,
+            "end": 0.38
+          },
+          {
+            "word": " the",
+            "start": 0.38,
+            "end": 0.54
+          },
+          {
+            "word": " case.",
+            "start": 0.54,
+            "end": 0.8
+          },
+          {
+            "word": " There",
+            "start": 1.58,
+            "end": 1.62
+          },
+          {
+            "word": " is",
+            "start": 1.62,
+            "end": 1.74
+          },
+          {
+            "word": " no",
+            "start": 1.74,
+            "end": 1.94
+          },
+          {
+            "word": " name",
+            "start": 1.94,
+            "end": 2.28
+          },
+          {
+            "word": " in",
+            "start": 2.28,
+            "end": 2.46
+          },
+          {
+            "word": " their",
+            "start": 2.46,
+            "end": 2.6
+          },
+          {
+            "word": " register.",
+            "start": 2.6,
+            "end": 2.96
+          },
+          {
+            "word": " We",
+            "start": 3.84,
+            "end": 3.84
+          },
+          {
+            "word": " kept",
+            "start": 3.84,
+            "end": 4.02
+          },
+          {
+            "word": " the",
+            "start": 4.02,
+            "end": 4.22
+          },
+          {
+            "word": " bargain.",
+            "start": 4.22,
+            "end": 4.52
+          },
+          {
+            "word": " The",
+            "start": 5.32,
+            "end": 5.36
+          },
+          {
+            "word": " fitting",
+            "start": 5.36,
+            "end": 5.6
+          },
+          {
+            "word": " is",
+            "start": 5.6,
+            "end": 5.98
+          },
+          {
+            "word": " another",
+            "start": 5.98,
+            "end": 6.26
+          },
+          {
+            "word": " day's",
+            "start": 6.26,
+            "end": 6.7
+          },
+          {
+            "word": " work.",
+            "start": 6.7,
+            "end": 6.96
+          }
+        ],
+        "sentenceGaps": [
+          {
+            "after": " case.",
+            "before": " There",
+            "gap": 0.78
+          },
+          {
+            "after": " register.",
+            "before": " We",
+            "gap": 0.88
+          },
+          {
+            "after": " bargain.",
+            "before": " The",
+            "gap": 0.8
+          }
+        ],
+        "segments": [
+          {
+            "text": "There is the case.",
+            "pauseAfter": 0.16
+          },
+          {
+            "text": "There is no name in their register.",
+            "pauseAfter": 0.16
+          },
+          {
+            "text": "We kept the bargain.",
+            "pauseAfter": 0.16
+          },
+          {
+            "text": "The fitting is another day's work.",
+            "pauseAfter": 0
+          }
+        ],
+        "speed": 0.97,
+        "integratedLufs": -23.5,
+        "truePeakDbtp": -3.8
+      },
+      {
+        "id": "voice-campaign-encounter-craft-62b70985aa0d",
+        "speaker": "Kerr",
+        "voice": "am_adam",
+        "text": "I can count what arrived. I can read what they kept. We are not going to make one of those disappear by talking about the other.",
+        "path": "public/audio/voice-campaign-encounter-craft-62b70985aa0d.mp3",
+        "sha256": "85678c3358ccd498f5f069d8d43ffd308af1458776946c3a7a66b06ccc22ef2a",
+        "durationSeconds": 7.7513125,
+        "transcription": "I can count what arrived. I can read what they kept. We are not going to make one of those disappear by talking about the other.\"",
+        "exactNormalizedWords": true,
+        "words": [
+          {
+            "word": " I",
+            "start": 0.0,
+            "end": 0.18
+          },
+          {
+            "word": " can",
+            "start": 0.18,
+            "end": 0.34
+          },
+          {
+            "word": " count",
+            "start": 0.34,
+            "end": 0.64
+          },
+          {
+            "word": " what",
+            "start": 0.64,
+            "end": 0.84
+          },
+          {
+            "word": " arrived.",
+            "start": 0.84,
+            "end": 1.16
+          },
+          {
+            "word": " I",
+            "start": 1.96,
+            "end": 2.0
+          },
+          {
+            "word": " can",
+            "start": 2.0,
+            "end": 2.16
+          },
+          {
+            "word": " read",
+            "start": 2.16,
+            "end": 2.38
+          },
+          {
+            "word": " what",
+            "start": 2.38,
+            "end": 2.68
+          },
+          {
+            "word": " they",
+            "start": 2.68,
+            "end": 2.84
+          },
+          {
+            "word": " kept.",
+            "start": 2.84,
+            "end": 3.14
+          },
+          {
+            "word": " We",
+            "start": 3.76,
+            "end": 3.88
+          },
+          {
+            "word": " are",
+            "start": 3.88,
+            "end": 3.98
+          },
+          {
+            "word": " not",
+            "start": 3.98,
+            "end": 4.16
+          },
+          {
+            "word": " going",
+            "start": 4.16,
+            "end": 4.48
+          },
+          {
+            "word": " to",
+            "start": 4.48,
+            "end": 4.64
+          },
+          {
+            "word": " make",
+            "start": 4.64,
+            "end": 4.78
+          },
+          {
+            "word": " one",
+            "start": 4.78,
+            "end": 4.96
+          },
+          {
+            "word": " of",
+            "start": 4.96,
+            "end": 5.04
+          },
+          {
+            "word": " those",
+            "start": 5.04,
+            "end": 5.2
+          },
+          {
+            "word": " disappear",
+            "start": 5.2,
+            "end": 5.64
+          },
+          {
+            "word": " by",
+            "start": 5.64,
+            "end": 6.18
+          },
+          {
+            "word": " talking",
+            "start": 6.18,
+            "end": 6.46
+          },
+          {
+            "word": " about",
+            "start": 6.46,
+            "end": 6.86
+          },
+          {
+            "word": " the",
+            "start": 6.86,
+            "end": 7.04
+          },
+          {
+            "word": " other.\"",
+            "start": 7.04,
+            "end": 7.62
+          }
+        ],
+        "sentenceGaps": [
+          {
+            "after": " arrived.",
+            "before": " I",
+            "gap": 0.8
+          },
+          {
+            "after": " kept.",
+            "before": " We",
+            "gap": 0.62
+          }
+        ],
+        "segments": [
+          {
+            "text": "I can count what arrived.",
+            "pauseAfter": 0.16
+          },
+          {
+            "text": "I can read what they kept.",
+            "pauseAfter": 0.16
+          },
+          {
+            "text": "We are not going to make one of those disappear by talking about the other.",
+            "pauseAfter": 0
+          }
+        ],
+        "speed": 0.97,
+        "integratedLufs": -23.51,
+        "truePeakDbtp": -4.23
+      },
+      {
+        "id": "voice-campaign-encounter-craft-9597f82c6f10",
+        "speaker": "Kerr",
+        "voice": "am_adam",
+        "text": "You stopped before the journey. We can leave it here. The case is still there, and neither of us will call it collected.",
+        "path": "public/audio/voice-campaign-encounter-craft-9597f82c6f10.mp3",
+        "sha256": "cf50b8fee2975fe833b8f103356925801f8b09e9869762ca57ccc1ce3346e296",
+        "durationSeconds": 7.196625,
+        "transcription": "You stopped before the journey. We can leave it here. The case is still there, and neither of us will call it collected.",
+        "exactNormalizedWords": true,
+        "words": [
+          {
+            "word": " You",
+            "start": 0.0,
+            "end": 0.2
+          },
+          {
+            "word": " stopped",
+            "start": 0.2,
+            "end": 0.44
+          },
+          {
+            "word": " before",
+            "start": 0.44,
+            "end": 0.82
+          },
+          {
+            "word": " the",
+            "start": 0.82,
+            "end": 1.04
+          },
+          {
+            "word": " journey.",
+            "start": 1.04,
+            "end": 1.26
+          },
+          {
+            "word": " We",
+            "start": 2.08,
+            "end": 2.12
+          },
+          {
+            "word": " can",
+            "start": 2.12,
+            "end": 2.26
+          },
+          {
+            "word": " leave",
+            "start": 2.26,
+            "end": 2.52
+          },
+          {
+            "word": " it",
+            "start": 2.52,
+            "end": 2.72
+          },
+          {
+            "word": " here.",
+            "start": 2.72,
+            "end": 2.94
+          },
+          {
+            "word": " The",
+            "start": 3.58,
+            "end": 3.62
+          },
+          {
+            "word": " case",
+            "start": 3.62,
+            "end": 3.82
+          },
+          {
+            "word": " is",
+            "start": 3.82,
+            "end": 4.04
+          },
+          {
+            "word": " still",
+            "start": 4.04,
+            "end": 4.3
+          },
+          {
+            "word": " there,",
+            "start": 4.3,
+            "end": 4.62
+          },
+          {
+            "word": " and",
+            "start": 5.08,
+            "end": 5.18
+          },
+          {
+            "word": " neither",
+            "start": 5.18,
+            "end": 5.36
+          },
+          {
+            "word": " of",
+            "start": 5.36,
+            "end": 5.62
+          },
+          {
+            "word": " us",
+            "start": 5.62,
+            "end": 5.72
+          },
+          {
+            "word": " will",
+            "start": 5.72,
+            "end": 5.9
+          },
+          {
+            "word": " call",
+            "start": 5.9,
+            "end": 6.14
+          },
+          {
+            "word": " it",
+            "start": 6.14,
+            "end": 6.28
+          },
+          {
+            "word": " collected.",
+            "start": 6.28,
+            "end": 6.48
+          }
+        ],
+        "sentenceGaps": [
+          {
+            "after": " journey.",
+            "before": " We",
+            "gap": 0.82
+          },
+          {
+            "after": " here.",
+            "before": " The",
+            "gap": 0.64
+          }
+        ],
+        "segments": [
+          {
+            "text": "You stopped before the journey.",
+            "pauseAfter": 0.16
+          },
+          {
+            "text": "We can leave it here.",
+            "pauseAfter": 0.16
+          },
+          {
+            "text": "The case is still there, and neither of us will call it collected.",
+            "pauseAfter": 0
+          }
+        ],
+        "speed": 0.97,
+        "integratedLufs": -23.5,
+        "truePeakDbtp": -4.29
+      },
+      {
+        "id": "voice-campaign-encounter-craft-a3b854d736a3",
+        "speaker": "Kerr",
+        "voice": "am_adam",
+        "text": "You want me to pay for the quiet way in. Fine. Put something of yours on the counter.",
+        "path": "public/audio/voice-campaign-encounter-craft-a3b854d736a3.mp3",
+        "sha256": "dc0bf95d1599e8f7ebcf690f3de3e8565501533275acfc0ff518bfa3f1f1baf8",
+        "durationSeconds": 5.7446875,
+        "transcription": "You want me to pay for the quiet way in. Fine, put something of yours on the counter. Center. //",
+        "exactNormalizedWords": false,
+        "words": [
+          {
+            "word": " You",
+            "start": 0.0,
+            "end": 0.18
+          },
+          {
+            "word": " want",
+            "start": 0.18,
+            "end": 0.32
+          },
+          {
+            "word": " me",
+            "start": 0.32,
+            "end": 0.46
+          },
+          {
+            "word": " to",
+            "start": 0.46,
+            "end": 0.56
+          },
+          {
+            "word": " pay",
+            "start": 0.56,
+            "end": 0.74
+          },
+          {
+            "word": " for",
+            "start": 0.74,
+            "end": 0.94
+          },
+          {
+            "word": " the",
+            "start": 0.94,
+            "end": 1.02
+          },
+          {
+            "word": " quiet",
+            "start": 1.02,
+            "end": 1.34
+          },
+          {
+            "word": " way",
+            "start": 1.34,
+            "end": 1.62
+          },
+          {
+            "word": " in.",
+            "start": 1.62,
+            "end": 1.88
+          },
+          {
+            "word": " Fine,",
+            "start": 2.42,
+            "end": 2.76
+          },
+          {
+            "word": " put",
+            "start": 3.32,
+            "end": 3.56
+          },
+          {
+            "word": " something",
+            "start": 3.56,
+            "end": 3.84
+          },
+          {
+            "word": " of",
+            "start": 3.84,
+            "end": 4.12
+          },
+          {
+            "word": " yours",
+            "start": 4.12,
+            "end": 4.34
+          },
+          {
+            "word": " on",
+            "start": 4.34,
+            "end": 4.72
+          },
+          {
+            "word": " the",
+            "start": 4.72,
+            "end": 4.82
+          },
+          {
+            "word": " counter.",
+            "start": 4.82,
+            "end": 5.14
+          },
+          {
+            "word": " Center.",
+            "start": 5.14,
+            "end": 5.32
+          },
+          {
+            "word": " //",
+            "start": 5.56,
+            "end": 5.72
+          }
+        ],
+        "sentenceGaps": [
+          {
+            "after": " in.",
+            "before": " Fine,",
+            "gap": 0.54
+          },
+          {
+            "after": " counter.",
+            "before": " Center.",
+            "gap": 0.0
+          },
+          {
+            "after": " Center.",
+            "before": " //",
+            "gap": 0.24
+          }
+        ],
+        "segments": [
+          {
+            "text": "You want me to pay for the quiet way in.",
+            "pauseAfter": 0.16
+          },
+          {
+            "text": "Fine.",
+            "pauseAfter": 0.16
+          },
+          {
+            "text": "Put something of yours on the counter.",
+            "pauseAfter": 0
+          }
+        ],
+        "speed": 0.97,
+        "integratedLufs": -23.48,
+        "truePeakDbtp": -1.97
+      },
+      {
+        "id": "voice-campaign-emotional-payoff-ee1ca23521df",
+        "speaker": "Edda",
+        "voice": "af_kore",
+        "text": "Put the reader away. I want to hear the rain for a minute.",
+        "path": "public/audio/voice-campaign-emotional-payoff-ee1ca23521df.mp3",
+        "sha256": "6d1bbb329a788595fdd825c941793013cd5c78c29e130448e4d8d9ae99617fc1",
+        "durationSeconds": 3.6346875,
+        "transcription": "Put the reader away. I want to hear the rain for a minute.",
+        "exactNormalizedWords": true,
+        "words": [
+          {
+            "word": " Put",
+            "start": 0.0,
+            "end": 0.16
+          },
+          {
+            "word": " the",
+            "start": 0.16,
+            "end": 0.26
+          },
+          {
+            "word": " reader",
+            "start": 0.26,
+            "end": 0.42
+          },
+          {
+            "word": " away.",
+            "start": 0.42,
+            "end": 0.82
+          },
+          {
+            "word": " I",
+            "start": 1.58,
+            "end": 1.68
+          },
+          {
+            "word": " want",
+            "start": 1.68,
+            "end": 1.86
+          },
+          {
+            "word": " to",
+            "start": 1.86,
+            "end": 1.98
+          },
+          {
+            "word": " hear",
+            "start": 1.98,
+            "end": 2.16
+          },
+          {
+            "word": " the",
+            "start": 2.16,
+            "end": 2.3
+          },
+          {
+            "word": " rain",
+            "start": 2.3,
+            "end": 2.5
+          },
+          {
+            "word": " for",
+            "start": 2.5,
+            "end": 2.76
+          },
+          {
+            "word": " a",
+            "start": 2.76,
+            "end": 2.86
+          },
+          {
+            "word": " minute.",
+            "start": 2.86,
+            "end": 3.08
+          }
+        ],
+        "sentenceGaps": [
+          {
+            "after": " away.",
+            "before": " I",
+            "gap": 0.76
+          }
+        ],
+        "segments": [
+          {
+            "text": "Put the reader away.",
+            "pauseAfter": 0.18
+          },
+          {
+            "text": "I want to hear the rain for a minute.",
+            "pauseAfter": 0
+          }
+        ],
+        "speed": 0.95,
+        "integratedLufs": -23.5,
+        "truePeakDbtp": -7.99
+      },
+      {
+        "id": "voice-campaign-emotional-payoff-a8c4c936daad",
+        "speaker": "Edda",
+        "voice": "af_kore",
+        "text": "The tea will be cold. Sit down anyway.",
+        "path": "public/audio/voice-campaign-emotional-payoff-a8c4c936daad.mp3",
+        "sha256": "ecb6ae5d673450cbe327e9f34158dd8dc8b5eca1638b5fe29148ce3776cc00fc",
+        "durationSeconds": 2.9706875,
+        "transcription": "The tea will be cold. Sit down anyway.",
+        "exactNormalizedWords": true,
+        "words": [
+          {
+            "word": " The",
+            "start": 0.0,
+            "end": 0.16
+          },
+          {
+            "word": " tea",
+            "start": 0.16,
+            "end": 0.28
+          },
+          {
+            "word": " will",
+            "start": 0.28,
+            "end": 0.46
+          },
+          {
+            "word": " be",
+            "start": 0.46,
+            "end": 0.56
+          },
+          {
+            "word": " cold.",
+            "start": 0.56,
+            "end": 0.86
+          },
+          {
+            "word": " Sit",
+            "start": 1.6,
+            "end": 1.72
+          },
+          {
+            "word": " down",
+            "start": 1.72,
+            "end": 1.98
+          },
+          {
+            "word": " anyway.",
+            "start": 1.98,
+            "end": 2.3
+          }
+        ],
+        "sentenceGaps": [
+          {
+            "after": " cold.",
+            "before": " Sit",
+            "gap": 0.74
+          }
+        ],
+        "segments": [
+          {
+            "text": "The tea will be cold.",
+            "pauseAfter": 0.18
+          },
+          {
+            "text": "Sit down anyway.",
+            "pauseAfter": 0
+          }
+        ],
+        "speed": 0.95,
+        "integratedLufs": -23.5,
+        "truePeakDbtp": -8.38
+      },
+      {
+        "id": "voice-campaign-emotional-payoff-a1cf0d3718e8",
+        "speaker": "Edda",
+        "voice": "af_kore",
+        "text": "Stay a minute. You don't have to bring me an answer to sit here.",
+        "path": "public/audio/voice-campaign-emotional-payoff-a1cf0d3718e8.mp3",
+        "sha256": "66912cc0004f548ac4699f8b15574585a64c068f1c6b05b9747fc5c65279530d",
+        "durationSeconds": 3.882,
+        "transcription": "Stay a minute. You don't have to bring me an answer to sit here.",
+        "exactNormalizedWords": true,
+        "words": [
+          {
+            "word": " Stay",
+            "start": 0.0,
+            "end": 0.26
+          },
+          {
+            "word": " a",
+            "start": 0.26,
+            "end": 0.42
+          },
+          {
+            "word": " minute.",
+            "start": 0.42,
+            "end": 0.62
+          },
+          {
+            "word": " You",
+            "start": 1.3,
+            "end": 1.42
+          },
+          {
+            "word": " don't",
+            "start": 1.42,
+            "end": 1.58
+          },
+          {
+            "word": " have",
+            "start": 1.58,
+            "end": 1.72
+          },
+          {
+            "word": " to",
+            "start": 1.72,
+            "end": 1.9
+          },
+          {
+            "word": " bring",
+            "start": 1.9,
+            "end": 2.1
+          },
+          {
+            "word": " me",
+            "start": 2.1,
+            "end": 2.26
+          },
+          {
+            "word": " an",
+            "start": 2.26,
+            "end": 2.36
+          },
+          {
+            "word": " answer",
+            "start": 2.36,
+            "end": 2.72
+          },
+          {
+            "word": " to",
+            "start": 2.72,
+            "end": 2.9
+          },
+          {
+            "word": " sit",
+            "start": 2.9,
+            "end": 3.08
+          },
+          {
+            "word": " here.",
+            "start": 3.08,
+            "end": 3.42
+          }
+        ],
+        "sentenceGaps": [
+          {
+            "after": " minute.",
+            "before": " You",
+            "gap": 0.68
+          }
+        ],
+        "segments": [
+          {
+            "text": "Stay a minute.",
+            "pauseAfter": 0.18
+          },
+          {
+            "text": "You don't have to bring me an answer to sit here.",
+            "pauseAfter": 0
+          }
+        ],
+        "speed": 0.95,
+        "integratedLufs": -23.52,
+        "truePeakDbtp": -8.02
+      },
+      {
+        "id": "voice-campaign-emotional-payoff-4a4c8f261a79",
+        "speaker": "Kerr",
+        "voice": "am_adam",
+        "text": "Put it beside the table leg. I can reach it from here.",
+        "path": "public/audio/voice-campaign-emotional-payoff-4a4c8f261a79.mp3",
+        "sha256": "8f23b61a5bb7965fd8a61645e25aa02bf7e08a4f63cf639899ded32d41a5e71e",
+        "durationSeconds": 3.612625,
+        "transcription": "Put it beside the table leg. I can reach it from here.",
+        "exactNormalizedWords": true,
+        "words": [
+          {
+            "word": " Put",
+            "start": 0.0,
+            "end": 0.2
+          },
+          {
+            "word": " it",
+            "start": 0.2,
+            "end": 0.28
+          },
+          {
+            "word": " beside",
+            "start": 0.28,
+            "end": 0.54
+          },
+          {
+            "word": " the",
+            "start": 0.54,
+            "end": 0.78
+          },
+          {
+            "word": " table",
+            "start": 0.78,
+            "end": 0.98
+          },
+          {
+            "word": " leg.",
+            "start": 0.98,
+            "end": 1.38
+          },
+          {
+            "word": " I",
+            "start": 2.0,
+            "end": 2.1
+          },
+          {
+            "word": " can",
+            "start": 2.1,
+            "end": 2.24
+          },
+          {
+            "word": " reach",
+            "start": 2.24,
+            "end": 2.46
+          },
+          {
+            "word": " it",
+            "start": 2.46,
+            "end": 2.7
+          },
+          {
+            "word": " from",
+            "start": 2.7,
+            "end": 2.86
+          },
+          {
+            "word": " here.",
+            "start": 2.86,
+            "end": 3.16
+          }
+        ],
+        "sentenceGaps": [
+          {
+            "after": " leg.",
+            "before": " I",
+            "gap": 0.62
+          }
+        ],
+        "segments": [
+          {
+            "text": "Put it beside the table leg.",
+            "pauseAfter": 0.18
+          },
+          {
+            "text": "I can reach it from here.",
+            "pauseAfter": 0
+          }
+        ],
+        "speed": 0.97,
+        "integratedLufs": -23.5,
+        "truePeakDbtp": -4.15
+      },
+      {
+        "id": "voice-campaign-emotional-payoff-a00e2510dc2a",
+        "speaker": "Kerr",
+        "voice": "am_adam",
+        "text": "Leave the case there. I need a minute before we talk about anything else.",
+        "path": "public/audio/voice-campaign-emotional-payoff-a00e2510dc2a.mp3",
+        "sha256": "773fb56a7955930527cc127e48cc365f35171a627f97a90b4adf0a6e412766ed",
+        "durationSeconds": 4.389375,
+        "transcription": "Leave the case there. I need a minute before we talk about anything else.",
+        "exactNormalizedWords": true,
+        "words": [
+          {
+            "word": " Leave",
+            "start": 0.0,
+            "end": 0.28
+          },
+          {
+            "word": " the",
+            "start": 0.28,
+            "end": 0.44
+          },
+          {
+            "word": " case",
+            "start": 0.44,
+            "end": 0.66
+          },
+          {
+            "word": " there.",
+            "start": 0.66,
+            "end": 1.02
+          },
+          {
+            "word": " I",
+            "start": 1.64,
+            "end": 1.74
+          },
+          {
+            "word": " need",
+            "start": 1.74,
+            "end": 1.92
+          },
+          {
+            "word": " a",
+            "start": 1.92,
+            "end": 2.08
+          },
+          {
+            "word": " minute",
+            "start": 2.08,
+            "end": 2.28
+          },
+          {
+            "word": " before",
+            "start": 2.28,
+            "end": 2.6
+          },
+          {
+            "word": " we",
+            "start": 2.6,
+            "end": 2.74
+          },
+          {
+            "word": " talk",
+            "start": 2.74,
+            "end": 2.94
+          },
+          {
+            "word": " about",
+            "start": 2.94,
+            "end": 3.22
+          },
+          {
+            "word": " anything",
+            "start": 3.22,
+            "end": 3.46
+          },
+          {
+            "word": " else.",
+            "start": 3.46,
+            "end": 3.84
+          }
+        ],
+        "sentenceGaps": [
+          {
+            "after": " there.",
+            "before": " I",
+            "gap": 0.62
+          }
+        ],
+        "segments": [
+          {
+            "text": "Leave the case there.",
+            "pauseAfter": 0.18
+          },
+          {
+            "text": "I need a minute before we talk about anything else.",
+            "pauseAfter": 0
+          }
+        ],
+        "speed": 0.97,
+        "integratedLufs": -23.5,
+        "truePeakDbtp": -5.38
+      },
+      {
+        "id": "voice-campaign-emotional-payoff-5ca32a5e2923",
+        "speaker": "Kerr",
+        "voice": "am_adam",
+        "text": "Leave that space. I'll know what it's for.",
+        "path": "public/audio/voice-campaign-emotional-payoff-5ca32a5e2923.mp3",
+        "sha256": "93c5d2b535b298144727ab613708ca318d59e076968506c1ca3f049f665ee9ad",
+        "durationSeconds": 3.035375,
+        "transcription": "Leave that space. I'll know what it's for.",
+        "exactNormalizedWords": true,
+        "words": [
+          {
+            "word": " Leave",
+            "start": 0.0,
+            "end": 0.28
+          },
+          {
+            "word": " that",
+            "start": 0.28,
+            "end": 0.5
+          },
+          {
+            "word": " space.",
+            "start": 0.5,
+            "end": 0.92
+          },
+          {
+            "word": " I'll",
+            "start": 1.56,
+            "end": 1.74
+          },
+          {
+            "word": " know",
+            "start": 1.74,
+            "end": 1.88
+          },
+          {
+            "word": " what",
+            "start": 1.88,
+            "end": 2.1
+          },
+          {
+            "word": " it's",
+            "start": 2.1,
+            "end": 2.3
+          },
+          {
+            "word": " for.",
+            "start": 2.3,
+            "end": 2.5
+          }
+        ],
+        "sentenceGaps": [
+          {
+            "after": " space.",
+            "before": " I'll",
+            "gap": 0.64
+          }
+        ],
+        "segments": [
+          {
+            "text": "Leave that space.",
+            "pauseAfter": 0.18
+          },
+          {
+            "text": "I'll know what it's for.",
+            "pauseAfter": 0
+          }
+        ],
+        "speed": 0.97,
+        "integratedLufs": -23.5,
+        "truePeakDbtp": -5.86
+      },
+      {
+        "id": "voice-campaign-emotional-payoff-0a1b8bb22589",
+        "speaker": "Sera",
+        "voice": "af_bella",
+        "text": "Wait. Let me hear that one again.",
+        "path": "public/audio/voice-campaign-emotional-payoff-0a1b8bb22589.mp3",
+        "sha256": "74917bdbd4d7b873f2b5871a6cf53aabd5fe416f290c5b72967e87ad1d605de0",
+        "durationSeconds": 2.4073125,
+        "transcription": "Wait, let me hear that one again.",
+        "exactNormalizedWords": true,
+        "words": [
+          {
+            "word": " Wait,",
+            "start": 0.0,
+            "end": 0.32
+          },
+          {
+            "word": " let",
+            "start": 0.74,
+            "end": 0.94
+          },
+          {
+            "word": " me",
+            "start": 0.94,
+            "end": 1.04
+          },
+          {
+            "word": " hear",
+            "start": 1.04,
+            "end": 1.24
+          },
+          {
+            "word": " that",
+            "start": 1.24,
+            "end": 1.46
+          },
+          {
+            "word": " one",
+            "start": 1.46,
+            "end": 1.58
+          },
+          {
+            "word": " again.",
+            "start": 1.58,
+            "end": 1.86
+          }
+        ],
+        "sentenceGaps": [],
+        "segments": null,
+        "speed": 0.92,
+        "integratedLufs": -23.52,
+        "truePeakDbtp": -5.52
+      },
+      {
+        "id": "voice-campaign-emotional-payoff-8b41fca71d2b",
+        "speaker": "Sera",
+        "voice": "af_bella",
+        "text": "Mind the broken step. It's the second one down.",
+        "path": "public/audio/voice-campaign-emotional-payoff-8b41fca71d2b.mp3",
+        "sha256": "d23aa919bba9c3dc4078e86c135723623961db98b464e0b2e6a947be868feb35",
+        "durationSeconds": 3.424,
+        "transcription": "Mind the broken step. It's the second one down.",
+        "exactNormalizedWords": true,
+        "words": [
+          {
+            "word": " Mind",
+            "start": 0.0,
+            "end": 0.32
+          },
+          {
+            "word": " the",
+            "start": 0.32,
+            "end": 0.44
+          },
+          {
+            "word": " broken",
+            "start": 0.44,
+            "end": 0.64
+          },
+          {
+            "word": " step.",
+            "start": 0.64,
+            "end": 1.1
+          },
+          {
+            "word": " It's",
+            "start": 1.72,
+            "end": 1.88
+          },
+          {
+            "word": " the",
+            "start": 1.88,
+            "end": 1.98
+          },
+          {
+            "word": " second",
+            "start": 1.98,
+            "end": 2.32
+          },
+          {
+            "word": " one",
+            "start": 2.32,
+            "end": 2.54
+          },
+          {
+            "word": " down.",
+            "start": 2.54,
+            "end": 2.84
+          }
+        ],
+        "sentenceGaps": [
+          {
+            "after": " step.",
+            "before": " It's",
+            "gap": 0.62
+          }
+        ],
+        "segments": [
+          {
+            "text": "Mind the broken step.",
+            "pauseAfter": 0.18
+          },
+          {
+            "text": "It's the second one down.",
+            "pauseAfter": 0
+          }
+        ],
+        "speed": 0.95,
+        "integratedLufs": -23.49,
+        "truePeakDbtp": -2.72
+      },
+      {
+        "id": "voice-campaign-emotional-payoff-52ad3344069a",
+        "speaker": "Sera",
+        "voice": "af_bella",
+        "text": "Your name can stay. Leave theirs where they are.",
+        "path": "public/audio/voice-campaign-emotional-payoff-52ad3344069a.mp3",
+        "sha256": "31cc2e900ef1826edfc9414e12e73e75e90a9b495c2d9e036e0175b0831e5cd3",
+        "durationSeconds": 3.134,
+        "transcription": "Your name can stay. Leave theirs where they are.",
+        "exactNormalizedWords": true,
+        "words": [
+          {
+            "word": " Your",
+            "start": 0.0,
+            "end": 0.2
+          },
+          {
+            "word": " name",
+            "start": 0.2,
+            "end": 0.36
+          },
+          {
+            "word": " can",
+            "start": 0.36,
+            "end": 0.62
+          },
+          {
+            "word": " stay.",
+            "start": 0.62,
+            "end": 0.94
+          },
+          {
+            "word": " Leave",
+            "start": 1.58,
+            "end": 1.74
+          },
+          {
+            "word": " theirs",
+            "start": 1.74,
+            "end": 2.0
+          },
+          {
+            "word": " where",
+            "start": 2.0,
+            "end": 2.3
+          },
+          {
+            "word": " they",
+            "start": 2.3,
+            "end": 2.42
+          },
+          {
+            "word": " are.",
+            "start": 2.42,
+            "end": 2.68
+          }
+        ],
+        "sentenceGaps": [
+          {
+            "after": " stay.",
+            "before": " Leave",
+            "gap": 0.64
+          }
+        ],
+        "segments": [
+          {
+            "text": "Your name can stay.",
+            "pauseAfter": 0.18
+          },
+          {
+            "text": "Leave theirs where they are.",
+            "pauseAfter": 0
+          }
+        ],
+        "speed": 0.95,
+        "integratedLufs": -23.5,
+        "truePeakDbtp": -6.21
+      },
+      {
+        "id": "voice-campaign-emotional-payoff-26350d370631",
+        "speaker": "Ives",
+        "voice": "am_eric",
+        "text": "Mind the edge. Keep that page in one piece.",
+        "path": "public/audio/voice-campaign-emotional-payoff-26350d370631.mp3",
+        "sha256": "eefda43383f710b5c096118fca649e26c54dc0fa1cccb2df092ecdfb32f98ab4",
+        "durationSeconds": 3.652625,
+        "transcription": "Mind the edge. Keep that page in one piece.",
+        "exactNormalizedWords": true,
+        "words": [
+          {
+            "word": " Mind",
+            "start": 0.0,
+            "end": 0.38
+          },
+          {
+            "word": " the",
+            "start": 0.38,
+            "end": 0.56
+          },
+          {
+            "word": " edge.",
+            "start": 0.56,
+            "end": 0.84
+          },
+          {
+            "word": " Keep",
+            "start": 1.56,
+            "end": 1.74
+          },
+          {
+            "word": " that",
+            "start": 1.74,
+            "end": 1.98
+          },
+          {
+            "word": " page",
+            "start": 1.98,
+            "end": 2.24
+          },
+          {
+            "word": " in",
+            "start": 2.24,
+            "end": 2.5
+          },
+          {
+            "word": " one",
+            "start": 2.5,
+            "end": 2.7
+          },
+          {
+            "word": " piece.",
+            "start": 2.7,
+            "end": 3.02
+          }
+        ],
+        "sentenceGaps": [
+          {
+            "after": " edge.",
+            "before": " Keep",
+            "gap": 0.72
+          }
+        ],
+        "segments": [
+          {
+            "text": "Mind the edge.",
+            "pauseAfter": 0.18
+          },
+          {
+            "text": "Keep that page in one piece.",
+            "pauseAfter": 0
+          }
+        ],
+        "speed": 0.96,
+        "integratedLufs": -23.5,
+        "truePeakDbtp": -6.54
+      }
+    ]
+  },
+  "iterations": [
+    {
+      "description": "First eight candidates: preserve seven exact matches, one contraction mismatch and timing regressions.",
+      "provenance": {
+        "generatedAt": "2026-10-28T23:24:47.666499+00:00",
+        "source": "scripts/direct-anchor-voices.py",
+        "driver": {
+          "name": "kokoro-onnx",
+          "version": "0.6.1",
+          "license": "MIT",
+          "url": "https://github.com/thewh1teagle/kokoro-onnx",
+          "licenseFile": "qa/media/voice-sources/kokoro-onnx-LICENSE.txt"
+        },
+        "model": {
+          "name": "Kokoro-82M v1.0",
+          "license": "Apache-2.0",
+          "card": "https://huggingface.co/hexgrad/Kokoro-82M",
+          "licenseFile": "qa/media/voice-sources/Kokoro-LICENSE.txt",
+          "files": [
+            {
+              "name": "kokoro-v1.0.onnx",
+              "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.onnx",
+              "sha256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+              "bytes": 325505369
+            },
+            {
+              "name": "voices-v1.0.bin",
+              "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin",
+              "sha256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+              "bytes": 28214398
+            }
+          ]
+        },
+        "disclosure": "Stock synthetic voices generated offline with Kokoro v1.0; no actor session or individual voice clone was commissioned. Only the fixed authored quotations below are rendered. No model or speech service ships in the game.",
+        "method": "Exact words and stock identity; phrase speed/pause direction, conservative -60dB-relative model-padding removal with80ms guards/8ms fades, two-pass -23.5LUFS codec matching,96kbps mono MP3. Masters retained outside Git.",
+        "lines": [
+          {
+            "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+            "speaker": "Edda",
+            "voice": "af_kore",
+            "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+            "speed": 0.95,
+            "loudnessLufs": -23.5,
+            "segments": [
+              {
+                "text": "The plant stayed on.",
+                "pauseAfter": 0.26,
+                "speed": 0.95
+              },
+              {
+                "text": "The workers were meant to leave.",
+                "pauseAfter": 0.26,
+                "speed": 0.95
+              },
+              {
+                "text": "Find the line that changed before you ask me to put my name under yours.",
+                "pauseAfter": 0,
+                "speed": 0.95
+              }
+            ],
+            "direction": "Connect the two observed facts before the personal demand.",
+            "previousPath": "public/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3",
+            "previousSha256": "26825c2bc65fe72059a7ad4da468fffe47e9cd921d8fcb4ebdfe6d1ed04c872e",
+            "candidateFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-ba69df93d8d5.mp3",
+            "sha256": "2d89913af38a8901620123f105b0ff1a13f5ddd3a0c821cbd684e784890b51a0",
+            "bytes": 103724,
+            "sourceFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-ba69df93d8d5-master.wav",
+            "sourceSha256": "7311789e25919d47617b8b6d6f26f7a61ecd4bf83936669588acbc29a074f00b",
+            "pcmDeliveryFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-ba69df93d8d5-pcm.wav",
+            "pcmDeliverySha256": "37d67997fda2e2f8c04a6b3ef4efeffa9117de0c11c1b2b962a04ed2172514a4",
+            "parts": [
+              {
+                "text": "The plant stayed on.",
+                "pauseAfter": 0.26,
+                "speed": 0.95,
+                "rawFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-ba69df93d8d5-phrase-0.wav",
+                "rawSha256": "cf8422578c383a827e527897a9188dbfaab2648772a442d40c86164bd94fa2a6",
+                "rawSeconds": 1.3773333333333333,
+                "retainedSeconds": 1.3773333333333333,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.0,
+                "startSeconds": 0.0
+              },
+              {
+                "text": "The workers were meant to leave.",
+                "pauseAfter": 0.26,
+                "speed": 0.95,
+                "rawFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-ba69df93d8d5-phrase-1.wav",
+                "rawSha256": "21cd8b1b14de2d930d9a078f27ed742d19b00b851a40e17323fcd2582f121f62",
+                "rawSeconds": 1.7652916666666667,
+                "retainedSeconds": 1.7652916666666667,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.0,
+                "startSeconds": 1.6373333333333333
+              },
+              {
+                "text": "Find the line that changed before you ask me to put my name under yours.",
+                "pauseAfter": 0,
+                "speed": 0.95,
+                "rawFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-ba69df93d8d5-phrase-2.wav",
+                "rawSha256": "165f73694fe028ddd4c3e1c8cf11644e5bd2ad215ad66b3ae830b88b77d27ab5",
+                "rawSeconds": 4.736,
+                "retainedSeconds": 4.736,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.0,
+                "startSeconds": 3.662625
+              }
+            ],
+            "integratedLufs": -23.5,
+            "truePeakDbtp": -6.43,
+            "durationSeconds": 8.558625,
+            "sampleRate": 24000,
+            "channels": 1,
+            "peak": 0.47541049122810364
+          },
+          {
+            "id": "voice-campaign-encounter-craft-570639a0f84d",
+            "speaker": "Edda",
+            "voice": "af_kore",
+            "text": "You have made one column answer for another. Look again. I am not asking you to believe me; I am asking you to read what is there.",
+            "speed": 0.92,
+            "loudnessLufs": -23.5,
+            "segments": [
+              {
+                "text": "You have made one column answer for another.",
+                "pauseAfter": 0.28,
+                "speed": 0.96
+              },
+              {
+                "text": "Look again.",
+                "pauseAfter": 0.38,
+                "speed": 0.91
+              },
+              {
+                "text": "I am not asking you to believe me; I am asking you to read what is there.",
+                "pauseAfter": 0,
+                "speed": 0.96
+              }
+            ],
+            "direction": "Keep the first sentence intact; separate the correction from the reading invitation.",
+            "previousPath": "public/audio/voice-campaign-encounter-craft-570639a0f84d.mp3",
+            "previousSha256": "1e229a9ea5a53ecba66385b2284e7967ba1b993c48303f09cf86bb76bd9c36e2",
+            "candidateFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-570639a0f84d.mp3",
+            "sha256": "7a2c899c14defdd5ee767f1cd358edfe674d8eaffdd78d0fa3cb0f259939d627",
+            "bytes": 108620,
+            "sourceFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-570639a0f84d-master.wav",
+            "sourceSha256": "bcc88b310736b6d5bff7de0fc5942f275280c9816721bac7de3deafad0508103",
+            "pcmDeliveryFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-570639a0f84d-pcm.wav",
+            "pcmDeliverySha256": "5d08efcb565adf912a0824840e43714f66917274e625fd8b37bd8afae5fee98f",
+            "parts": [
+              {
+                "text": "You have made one column answer for another.",
+                "pauseAfter": 0.28,
+                "speed": 0.96,
+                "rawFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-570639a0f84d-phrase-0.wav",
+                "rawSha256": "8720c71121f18f837f86f2f20cffcb76f503c4244d4e3069f894b7799d8fea13",
+                "rawSeconds": 2.432,
+                "retainedSeconds": 2.432,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.0,
+                "startSeconds": 0.0
+              },
+              {
+                "text": "Look again.",
+                "pauseAfter": 0.38,
+                "speed": 0.91,
+                "rawFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-570639a0f84d-phrase-1.wav",
+                "rawSha256": "fbb9226161b04e1de2c272c7a025c90297ebba7d79e027e84e4829b0e948daf3",
+                "rawSeconds": 1.046,
+                "retainedSeconds": 1.046,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.0,
+                "startSeconds": 2.712
+              },
+              {
+                "text": "I am not asking you to believe me; I am asking you to read what is there.",
+                "pauseAfter": 0,
+                "speed": 0.96,
+                "rawFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-570639a0f84d-phrase-2.wav",
+                "rawSha256": "8fc0027cd18794bb01beb9e3b8a41742b185b336080fd6abeede6e5da9804e22",
+                "rawSeconds": 4.672,
+                "retainedSeconds": 4.672,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.0,
+                "startSeconds": 4.138
+              }
+            ],
+            "integratedLufs": -23.5,
+            "truePeakDbtp": -6.65,
+            "durationSeconds": 8.97,
+            "sampleRate": 24000,
+            "channels": 1,
+            "peak": 0.4638218283653259
+          },
+          {
+            "id": "voice-campaign-encounter-craft-cd0a455809ce",
+            "speaker": "Edda",
+            "voice": "af_kore",
+            "text": "Ask for the movement page. Leave the families out of the request. I can help you carry a record; I will not give you people to lean on.",
+            "speed": 0.95,
+            "loudnessLufs": -23.5,
+            "segments": [
+              {
+                "text": "Ask for the movement page.",
+                "pauseAfter": 0.26,
+                "speed": 0.97
+              },
+              {
+                "text": "Leave the families out of the request.",
+                "pauseAfter": 0.4,
+                "speed": 0.93
+              },
+              {
+                "text": "I can help you carry a record; I will not give you people to lean on.",
+                "pauseAfter": 0,
+                "speed": 0.96
+              }
+            ],
+            "direction": "Practical request, clear family boundary, then the limit of help.",
+            "previousPath": "public/audio/voice-campaign-encounter-craft-cd0a455809ce.mp3",
+            "previousSha256": "430e68710b08ae2ccc4f787eb8dbab539514cb20e4645f7a7ffc4556fa4f9bc4",
+            "candidateFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-cd0a455809ce.mp3",
+            "sha256": "053a924ed817f9d84b62321c10885a2c2d084261b78a81eeef42f9ba33aec56d",
+            "bytes": 106892,
+            "sourceFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-cd0a455809ce-master.wav",
+            "sourceSha256": "539719d6d40e6b5e1a0569601d1fc64bf7f38fc8211e8a7b734b224111331fd4",
+            "pcmDeliveryFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-cd0a455809ce-pcm.wav",
+            "pcmDeliverySha256": "6c04623f83ad998b18d5fec690b5ad356dfb56f1568ddab73fff1a6fa6addca0",
+            "parts": [
+              {
+                "text": "Ask for the movement page.",
+                "pauseAfter": 0.26,
+                "speed": 0.97,
+                "rawFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-cd0a455809ce-phrase-0.wav",
+                "rawSha256": "3ba0cd1bfc57f869c02f7e35da5b01b7ca802333d8c87e78c14f607607d28892",
+                "rawSeconds": 1.5206666666666666,
+                "retainedSeconds": 1.5206666666666666,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.0,
+                "startSeconds": 0.0
+              },
+              {
+                "text": "Leave the families out of the request.",
+                "pauseAfter": 0.4,
+                "speed": 0.93,
+                "rawFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-cd0a455809ce-phrase-1.wav",
+                "rawSha256": "60994b1e8fedf485b6c45ddd4c86312d89f7ead7bfc51c182f5241e88e441d6f",
+                "rawSeconds": 2.1933333333333334,
+                "retainedSeconds": 2.1933333333333334,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.0,
+                "startSeconds": 1.7806666666666666
+              },
+              {
+                "text": "I can help you carry a record; I will not give you people to lean on.",
+                "pauseAfter": 0,
+                "speed": 0.96,
+                "rawFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-cd0a455809ce-phrase-2.wav",
+                "rawSha256": "fb0e5633bbb43286bf5cdac06f513e7c3759239c875b0ffd37bb41e2713b2d67",
+                "rawSeconds": 4.288,
+                "retainedSeconds": 4.288,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.0,
+                "startSeconds": 4.374
+              }
+            ],
+            "integratedLufs": -23.52,
+            "truePeakDbtp": -5.78,
+            "durationSeconds": 8.822,
+            "sampleRate": 24000,
+            "channels": 1,
+            "peak": 0.513176441192627
+          },
+          {
+            "id": "voice-campaign-encounter-craft-a3b854d736a3",
+            "speaker": "Kerr",
+            "voice": "am_adam",
+            "text": "You want me to pay for the quiet way in. Fine. Put something of yours on the counter.",
+            "speed": 0.97,
+            "loudnessLufs": -23.5,
+            "segments": [
+              {
+                "text": "You want me to pay for the quiet way in.",
+                "pauseAfter": 0.4,
+                "speed": 0.97
+              },
+              {
+                "text": "Fine. Put something of yours on the counter.",
+                "pauseAfter": 0,
+                "speed": 0.95
+              }
+            ],
+            "direction": "Reluctant agreement stays attached to the demand, without an isolated one-word splice.",
+            "previousPath": "public/audio/voice-campaign-encounter-craft-a3b854d736a3.mp3",
+            "previousSha256": "dc0bf95d1599e8f7ebcf690f3de3e8565501533275acfc0ff518bfa3f1f1baf8",
+            "candidateFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-a3b854d736a3.mp3",
+            "sha256": "df9d2fe325186297614ba22045756bf2853cc8364757c32106f9f8d57e06974c",
+            "bytes": 63404,
+            "sourceFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-a3b854d736a3-master.wav",
+            "sourceSha256": "04c165b0e434752847727d73f054205f870ecad1cc58700cdbba83dfe66a82f0",
+            "pcmDeliveryFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-a3b854d736a3-pcm.wav",
+            "pcmDeliverySha256": "eedfe5fd8e5520603246c099564c0bf90feb8df11485567419ec1f62d1a5c959",
+            "parts": [
+              {
+                "text": "You want me to pay for the quiet way in.",
+                "pauseAfter": 0.4,
+                "speed": 0.97,
+                "rawFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-a3b854d736a3-phrase-0.wav",
+                "rawSha256": "9958ba631851b7986bf722ce5e39e84459fe25f76b06ffadd0c6c437b2ef1448",
+                "rawSeconds": 2.216666666666667,
+                "retainedSeconds": 2.0572916666666665,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.159375,
+                "startSeconds": 0.0
+              },
+              {
+                "text": "Fine. Put something of yours on the counter.",
+                "pauseAfter": 0,
+                "speed": 0.95,
+                "rawFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-a3b854d736a3-phrase-1.wav",
+                "rawSha256": "ae1d99df20af624f9f43cf9fd93ff2b56c47c3a1e6b28c859bf8b45e2e58d1e6",
+                "rawSeconds": 2.736666666666667,
+                "retainedSeconds": 2.572375,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.16429166666666667,
+                "startSeconds": 2.457291666666667
+              }
+            ],
+            "integratedLufs": -23.5,
+            "truePeakDbtp": -2.16,
+            "durationSeconds": 5.189666666666667,
+            "sampleRate": 24000,
+            "channels": 1,
+            "peak": 0.7794355154037476
+          },
+          {
+            "id": "voice-campaign-encounter-craft-43e701b3e2c1",
+            "speaker": "Kerr",
+            "voice": "am_adam",
+            "text": "There is the case. There is no name in their register. We kept the bargain. The fitting is another day's work.",
+            "speed": 0.97,
+            "loudnessLufs": -23.5,
+            "segments": [
+              {
+                "text": "There is the case.",
+                "pauseAfter": 0.24,
+                "speed": 0.99
+              },
+              {
+                "text": "There is no name in their register.",
+                "pauseAfter": 0.26,
+                "speed": 0.99
+              },
+              {
+                "text": "We kept the bargain.",
+                "pauseAfter": 0.4,
+                "speed": 0.97
+              },
+              {
+                "text": "The fitting is another day's work.",
+                "pauseAfter": 0,
+                "speed": 0.92
+              }
+            ],
+            "direction": "Count the real result, then distinctly slow the unearned-treatment boundary.",
+            "previousPath": "public/audio/voice-campaign-encounter-craft-43e701b3e2c1.mp3",
+            "previousSha256": "bc1e76f21bbe9899a8843c61951f973f885d1476d4e0ee16e0a813e82497296e",
+            "candidateFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-43e701b3e2c1.mp3",
+            "sha256": "0d405f07c24162111515991dae415337b74f9aa96aaf46c15c40ee19410809b6",
+            "bytes": 87884,
+            "sourceFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-43e701b3e2c1-master.wav",
+            "sourceSha256": "ef64aadf723e025292937cd185af891167368ed65aac92c8547fe7b0b1b77fbe",
+            "pcmDeliveryFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-43e701b3e2c1-pcm.wav",
+            "pcmDeliverySha256": "87e255b7e12816d0418f2407f7fa60aa16946c3f9e4673f5433120a947d5c9b9",
+            "parts": [
+              {
+                "text": "There is the case.",
+                "pauseAfter": 0.24,
+                "speed": 0.99,
+                "rawFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-43e701b3e2c1-phrase-0.wav",
+                "rawSha256": "380b842fc86985693c904d34219fa4aaaaedcfcaa4566f39aa0ae1b5dbe57098",
+                "rawSeconds": 1.2566666666666666,
+                "retainedSeconds": 1.0979583333333334,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.15870833333333334,
+                "startSeconds": 0.0
+              },
+              {
+                "text": "There is no name in their register.",
+                "pauseAfter": 0.26,
+                "speed": 0.99,
+                "rawFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-43e701b3e2c1-phrase-1.wav",
+                "rawSha256": "2bb9f656232a8d7a5b3fbf2640172731abb3d8a2dfcebc94f960fa514190cbbb",
+                "rawSeconds": 2.046,
+                "retainedSeconds": 1.8855416666666667,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.16045833333333334,
+                "startSeconds": 1.3379583333333334
+              },
+              {
+                "text": "We kept the bargain.",
+                "pauseAfter": 0.4,
+                "speed": 0.97,
+                "rawFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-43e701b3e2c1-phrase-2.wav",
+                "rawSha256": "75c50fc218250b5efb5124cd9be14e1e0324c7d7e7fa54dcb014cd8dd006d125",
+                "rawSeconds": 1.3746666666666667,
+                "retainedSeconds": 1.2285416666666666,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.146125,
+                "startSeconds": 3.4835
+              },
+              {
+                "text": "The fitting is another day's work.",
+                "pauseAfter": 0,
+                "speed": 0.92,
+                "rawFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-43e701b3e2c1-phrase-3.wav",
+                "rawSha256": "4b760d2a408c8b85f4682a88288bf6a7dd205c6bfd0d01ca0c0ea95387229acd",
+                "rawSeconds": 2.11,
+                "retainedSeconds": 1.959625,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.150375,
+                "startSeconds": 5.112041666666666
+              }
+            ],
+            "integratedLufs": -23.5,
+            "truePeakDbtp": -3.82,
+            "durationSeconds": 7.2316666666666665,
+            "sampleRate": 24000,
+            "channels": 1,
+            "peak": 0.642774760723114
+          },
+          {
+            "id": "voice-campaign-encounter-craft-62b70985aa0d",
+            "speaker": "Kerr",
+            "voice": "am_adam",
+            "text": "I can count what arrived. I can read what they kept. We are not going to make one of those disappear by talking about the other.",
+            "speed": 0.97,
+            "loudnessLufs": -23.5,
+            "segments": [
+              {
+                "text": "I can count what arrived.",
+                "pauseAfter": 0.24,
+                "speed": 0.98
+              },
+              {
+                "text": "I can read what they kept.",
+                "pauseAfter": 0.4,
+                "speed": 0.98
+              },
+              {
+                "text": "We are not going to make one of those disappear by talking about the other.",
+                "pauseAfter": 0,
+                "speed": 0.95
+              }
+            ],
+            "direction": "Connect the two observations, then pause before refusing to erase the record.",
+            "previousPath": "public/audio/voice-campaign-encounter-craft-62b70985aa0d.mp3",
+            "previousSha256": "85678c3358ccd498f5f069d8d43ffd308af1458776946c3a7a66b06ccc22ef2a",
+            "candidateFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-62b70985aa0d.mp3",
+            "sha256": "73dc8995d53d6b973e045205994e7bb1f527d950a20a789a7ed2b1d417403359",
+            "bytes": 92780,
+            "sourceFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-62b70985aa0d-master.wav",
+            "sourceSha256": "a191f020bb8f448b2ab1acff9a281396523c41b2ee384e13b60764f0b502f078",
+            "pcmDeliveryFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-62b70985aa0d-pcm.wav",
+            "pcmDeliverySha256": "53fd82710ffe48ee56d5d9721f79eb2f370c5b11906d37592f166a3b80efd2b3",
+            "parts": [
+              {
+                "text": "I can count what arrived.",
+                "pauseAfter": 0.24,
+                "speed": 0.98,
+                "rawFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-62b70985aa0d-phrase-0.wav",
+                "rawSha256": "4be77ecfb4d53bd276061405cce8fd4f8bfe6bff14c5f0461d2035c5885a55f2",
+                "rawSeconds": 1.6632916666666666,
+                "retainedSeconds": 1.51675,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.14654166666666665,
+                "startSeconds": 0.0
+              },
+              {
+                "text": "I can read what they kept.",
+                "pauseAfter": 0.4,
+                "speed": 0.98,
+                "rawFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-62b70985aa0d-phrase-1.wav",
+                "rawSha256": "a08ce3b671258b6c905079f8086264a7ac631646e9e418158e889faa04d0d54d",
+                "rawSeconds": 1.716,
+                "retainedSeconds": 1.558,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.158,
+                "startSeconds": 1.75675
+              },
+              {
+                "text": "We are not going to make one of those disappear by talking about the other.",
+                "pauseAfter": 0,
+                "speed": 0.95,
+                "rawFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-62b70985aa0d-phrase-2.wav",
+                "rawSha256": "bfe17121a7fb6a569848ec9e95ed8a6b003e43b8f845ea42b38b46bd08dceea0",
+                "rawSeconds": 3.9233333333333333,
+                "retainedSeconds": 3.7689166666666667,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.15441666666666667,
+                "startSeconds": 3.71475
+              }
+            ],
+            "integratedLufs": -23.49,
+            "truePeakDbtp": -4.25,
+            "durationSeconds": 7.643666666666666,
+            "sampleRate": 24000,
+            "channels": 1,
+            "peak": 0.6120902299880981
+          },
+          {
+            "id": "voice-campaign-emotional-payoff-0a1b8bb22589",
+            "speaker": "Sera",
+            "voice": "af_bella",
+            "text": "Wait. Let me hear that one again.",
+            "speed": 0.92,
+            "loudnessLufs": -23.5,
+            "segments": [
+              {
+                "text": "Wait.",
+                "pauseAfter": 0.32,
+                "speed": 0.92
+              },
+              {
+                "text": "Let me hear that one again.",
+                "pauseAfter": 0,
+                "speed": 0.93
+              }
+            ],
+            "direction": "Give the call to stop a separate beat before asking to hear the name again.",
+            "previousPath": "public/audio/voice-campaign-emotional-payoff-0a1b8bb22589.mp3",
+            "previousSha256": "74917bdbd4d7b873f2b5871a6cf53aabd5fe416f290c5b72967e87ad1d605de0",
+            "candidateFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-emotional-payoff-0a1b8bb22589.mp3",
+            "sha256": "72b7ed1c7b6b8ee117e0b6ebf38c0d44acca5d0cfa3c6c51f6ed1a1ac6fc1771",
+            "bytes": 35180,
+            "sourceFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-emotional-payoff-0a1b8bb22589-master.wav",
+            "sourceSha256": "9a0f56dc9e60901b74b6afb04fdb21860841038e6a1e27bdc44829909f6e26ab",
+            "pcmDeliveryFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-emotional-payoff-0a1b8bb22589-pcm.wav",
+            "pcmDeliverySha256": "e26869c73cd38ad49df55bf0693548c136b9d227b8638b3f8fa3335f1a9f9dc4",
+            "parts": [
+              {
+                "text": "Wait.",
+                "pauseAfter": 0.32,
+                "speed": 0.92,
+                "rawFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-emotional-payoff-0a1b8bb22589-phrase-0.wav",
+                "rawSha256": "5eec2800f6630fa80521f5c86ac7230e34d49b3f17316563904f9dccfa77ff6a",
+                "rawSeconds": 0.7853333333333333,
+                "retainedSeconds": 0.7853333333333333,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.0,
+                "startSeconds": 0.0
+              },
+              {
+                "text": "Let me hear that one again.",
+                "pauseAfter": 0,
+                "speed": 0.93,
+                "rawFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-emotional-payoff-0a1b8bb22589-phrase-1.wav",
+                "rawSha256": "e28a167a0b796399b9b4dcd7475a2e97802c6ad1db13c0ab678b9c5708769f60",
+                "rawSeconds": 1.5746666666666667,
+                "retainedSeconds": 1.5746666666666667,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.0,
+                "startSeconds": 1.1053333333333333
+              }
+            ],
+            "integratedLufs": -23.5,
+            "truePeakDbtp": -4.85,
+            "durationSeconds": 2.84,
+            "sampleRate": 24000,
+            "channels": 1,
+            "peak": 0.5681044459342957
+          },
+          {
+            "id": "voice-campaign-emotional-payoff-26350d370631",
+            "speaker": "Ives",
+            "voice": "am_eric",
+            "text": "Mind the edge. Keep that page in one piece.",
+            "speed": 0.96,
+            "loudnessLufs": -23.5,
+            "segments": [
+              {
+                "text": "Mind the edge. Keep that page in one piece.",
+                "pauseAfter": 0,
+                "speed": 0.94
+              }
+            ],
+            "direction": "One connected practical caution; avoid a repeated gap between two short clauses.",
+            "previousPath": "public/audio/voice-campaign-emotional-payoff-26350d370631.mp3",
+            "previousSha256": "eefda43383f710b5c096118fca649e26c54dc0fa1cccb2df092ecdfb32f98ab4",
+            "candidateFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-emotional-payoff-26350d370631.mp3",
+            "sha256": "bcd650c8e634b2e5284f1ec3842079d649a32aa7d8f02817b977982144e7fffe",
+            "bytes": 37484,
+            "sourceFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-emotional-payoff-26350d370631-master.wav",
+            "sourceSha256": "7e6825def9b3bca1b5dec47e043fd8e5408a892ec06476758c94a3fb0653cc22",
+            "pcmDeliveryFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-emotional-payoff-26350d370631-pcm.wav",
+            "pcmDeliverySha256": "c0ecc90f356966248cbdb8fccb14700e11afd670add3c217ea4b3639b656d12a",
+            "parts": [
+              {
+                "text": "Mind the edge. Keep that page in one piece.",
+                "pauseAfter": 0,
+                "speed": 0.94,
+                "rawFile": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-emotional-payoff-26350d370631-phrase-0.wav",
+                "rawSha256": "a0d8a748eed0d820ef52692b788d9eef85623ce565fb3ad26c074a7b695803e4",
+                "rawSeconds": 2.8853333333333335,
+                "retainedSeconds": 2.8853333333333335,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.0,
+                "startSeconds": 0.0
+              }
+            ],
+            "integratedLufs": -23.51,
+            "truePeakDbtp": -6.06,
+            "durationSeconds": 3.0453333333333332,
+            "sampleRate": 24000,
+            "channels": 1,
+            "peak": 0.4915001094341278
+          }
+        ]
+      },
+      "transcripts": {
+        "method": "Unprompted base.en CPU int8 ASR with word times, no authored prompt. Timing is a proxy, not a phonetic/acting judgment.",
+        "model": "Systran/faster-whisper-base.en",
+        "lines": [
+          {
+            "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+            "speaker": "Edda",
+            "voice": "af_kore",
+            "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+            "path": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-ba69df93d8d5.mp3",
+            "sha256": "2d89913af38a8901620123f105b0ff1a13f5ddd3a0c821cbd684e784890b51a0",
+            "durationSeconds": 8.558625,
+            "transcription": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+            "exactNormalizedWords": true,
+            "words": [
+              {
+                "word": " The",
+                "start": 0.0,
+                "end": 0.14
+              },
+              {
+                "word": " plant",
+                "start": 0.14,
+                "end": 0.3
+              },
+              {
+                "word": " stayed",
+                "start": 0.3,
+                "end": 0.66
+              },
+              {
+                "word": " on.",
+                "start": 0.66,
+                "end": 0.96
+              },
+              {
+                "word": " The",
+                "start": 1.72,
+                "end": 1.78
+              },
+              {
+                "word": " workers",
+                "start": 1.78,
+                "end": 2.0
+              },
+              {
+                "word": " were",
+                "start": 2.0,
+                "end": 2.38
+              },
+              {
+                "word": " meant",
+                "start": 2.38,
+                "end": 2.52
+              },
+              {
+                "word": " to",
+                "start": 2.52,
+                "end": 2.68
+              },
+              {
+                "word": " leave.",
+                "start": 2.68,
+                "end": 2.92
+              },
+              {
+                "word": " Find",
+                "start": 3.76,
+                "end": 3.94
+              },
+              {
+                "word": " the",
+                "start": 3.94,
+                "end": 4.1
+              },
+              {
+                "word": " line",
+                "start": 4.1,
+                "end": 4.36
+              },
+              {
+                "word": " that",
+                "start": 4.36,
+                "end": 4.64
+              },
+              {
+                "word": " changed",
+                "start": 4.64,
+                "end": 4.92
+              },
+              {
+                "word": " before",
+                "start": 4.92,
+                "end": 5.42
+              },
+              {
+                "word": " you",
+                "start": 5.42,
+                "end": 5.78
+              },
+              {
+                "word": " ask",
+                "start": 5.78,
+                "end": 6.02
+              },
+              {
+                "word": " me",
+                "start": 6.02,
+                "end": 6.32
+              },
+              {
+                "word": " to",
+                "start": 6.32,
+                "end": 6.48
+              },
+              {
+                "word": " put",
+                "start": 6.48,
+                "end": 6.66
+              },
+              {
+                "word": " my",
+                "start": 6.66,
+                "end": 6.84
+              },
+              {
+                "word": " name",
+                "start": 6.84,
+                "end": 7.06
+              },
+              {
+                "word": " under",
+                "start": 7.06,
+                "end": 7.44
+              },
+              {
+                "word": " yours.",
+                "start": 7.44,
+                "end": 7.78
+              }
+            ],
+            "sentenceGaps": [
+              {
+                "after": " on.",
+                "before": " The",
+                "gap": 0.76
+              },
+              {
+                "after": " leave.",
+                "before": " Find",
+                "gap": 0.84
+              }
+            ],
+            "segments": [
+              {
+                "text": "The plant stayed on.",
+                "pauseAfter": 0.26,
+                "speed": 0.95
+              },
+              {
+                "text": "The workers were meant to leave.",
+                "pauseAfter": 0.26,
+                "speed": 0.95
+              },
+              {
+                "text": "Find the line that changed before you ask me to put my name under yours.",
+                "pauseAfter": 0,
+                "speed": 0.95
+              }
+            ],
+            "speed": 0.95,
+            "integratedLufs": -23.5,
+            "truePeakDbtp": -6.43
+          },
+          {
+            "id": "voice-campaign-encounter-craft-570639a0f84d",
+            "speaker": "Edda",
+            "voice": "af_kore",
+            "text": "You have made one column answer for another. Look again. I am not asking you to believe me; I am asking you to read what is there.",
+            "path": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-570639a0f84d.mp3",
+            "sha256": "7a2c899c14defdd5ee767f1cd358edfe674d8eaffdd78d0fa3cb0f259939d627",
+            "durationSeconds": 8.97,
+            "transcription": "You've made one column answer for another. Look again. I am not asking you to believe me. I am asking you to read what is there.",
+            "exactNormalizedWords": false,
+            "words": [
+              {
+                "word": " You've",
+                "start": 0.0,
+                "end": 0.26
+              },
+              {
+                "word": " made",
+                "start": 0.26,
+                "end": 0.42
+              },
+              {
+                "word": " one",
+                "start": 0.42,
+                "end": 0.68
+              },
+              {
+                "word": " column",
+                "start": 0.68,
+                "end": 1.08
+              },
+              {
+                "word": " answer",
+                "start": 1.08,
+                "end": 1.52
+              },
+              {
+                "word": " for",
+                "start": 1.52,
+                "end": 1.76
+              },
+              {
+                "word": " another.",
+                "start": 1.76,
+                "end": 2.04
+              },
+              {
+                "word": " Look",
+                "start": 2.86,
+                "end": 2.96
+              },
+              {
+                "word": " again.",
+                "start": 2.96,
+                "end": 3.26
+              },
+              {
+                "word": " I",
+                "start": 4.26,
+                "end": 4.34
+              },
+              {
+                "word": " am",
+                "start": 4.34,
+                "end": 4.48
+              },
+              {
+                "word": " not",
+                "start": 4.48,
+                "end": 4.66
+              },
+              {
+                "word": " asking",
+                "start": 4.66,
+                "end": 5.18
+              },
+              {
+                "word": " you",
+                "start": 5.18,
+                "end": 5.44
+              },
+              {
+                "word": " to",
+                "start": 5.44,
+                "end": 5.58
+              },
+              {
+                "word": " believe",
+                "start": 5.58,
+                "end": 5.82
+              },
+              {
+                "word": " me.",
+                "start": 5.82,
+                "end": 6.14
+              },
+              {
+                "word": " I",
+                "start": 6.48,
+                "end": 6.54
+              },
+              {
+                "word": " am",
+                "start": 6.54,
+                "end": 6.68
+              },
+              {
+                "word": " asking",
+                "start": 6.68,
+                "end": 7.02
+              },
+              {
+                "word": " you",
+                "start": 7.02,
+                "end": 7.3
+              },
+              {
+                "word": " to",
+                "start": 7.3,
+                "end": 7.46
+              },
+              {
+                "word": " read",
+                "start": 7.46,
+                "end": 7.66
+              },
+              {
+                "word": " what",
+                "start": 7.66,
+                "end": 7.94
+              },
+              {
+                "word": " is",
+                "start": 7.94,
+                "end": 8.06
+              },
+              {
+                "word": " there.",
+                "start": 8.06,
+                "end": 8.34
+              }
+            ],
+            "sentenceGaps": [
+              {
+                "after": " another.",
+                "before": " Look",
+                "gap": 0.82
+              },
+              {
+                "after": " again.",
+                "before": " I",
+                "gap": 1.0
+              },
+              {
+                "after": " me.",
+                "before": " I",
+                "gap": 0.34
+              }
+            ],
+            "segments": [
+              {
+                "text": "You have made one column answer for another.",
+                "pauseAfter": 0.28,
+                "speed": 0.96
+              },
+              {
+                "text": "Look again.",
+                "pauseAfter": 0.38,
+                "speed": 0.91
+              },
+              {
+                "text": "I am not asking you to believe me; I am asking you to read what is there.",
+                "pauseAfter": 0,
+                "speed": 0.96
+              }
+            ],
+            "speed": 0.92,
+            "integratedLufs": -23.5,
+            "truePeakDbtp": -6.65
+          },
+          {
+            "id": "voice-campaign-encounter-craft-cd0a455809ce",
+            "speaker": "Edda",
+            "voice": "af_kore",
+            "text": "Ask for the movement page. Leave the families out of the request. I can help you carry a record; I will not give you people to lean on.",
+            "path": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-cd0a455809ce.mp3",
+            "sha256": "053a924ed817f9d84b62321c10885a2c2d084261b78a81eeef42f9ba33aec56d",
+            "durationSeconds": 8.822,
+            "transcription": "Ask for the movement page. Leave the families out of the request. I can help you carry a record I will not give you people to lean on.",
+            "exactNormalizedWords": true,
+            "words": [
+              {
+                "word": " Ask",
+                "start": 0.0,
+                "end": 0.28
+              },
+              {
+                "word": " for",
+                "start": 0.28,
+                "end": 0.42
+              },
+              {
+                "word": " the",
+                "start": 0.42,
+                "end": 0.5
+              },
+              {
+                "word": " movement",
+                "start": 0.5,
+                "end": 0.66
+              },
+              {
+                "word": " page.",
+                "start": 0.66,
+                "end": 1.02
+              },
+              {
+                "word": " Leave",
+                "start": 2.02,
+                "end": 2.02
+              },
+              {
+                "word": " the",
+                "start": 2.02,
+                "end": 2.22
+              },
+              {
+                "word": " families",
+                "start": 2.22,
+                "end": 2.56
+              },
+              {
+                "word": " out",
+                "start": 2.56,
+                "end": 2.9
+              },
+              {
+                "word": " of",
+                "start": 2.9,
+                "end": 3.02
+              },
+              {
+                "word": " the",
+                "start": 3.02,
+                "end": 3.1
+              },
+              {
+                "word": " request.",
+                "start": 3.1,
+                "end": 3.4
+              },
+              {
+                "word": " I",
+                "start": 4.48,
+                "end": 4.54
+              },
+              {
+                "word": " can",
+                "start": 4.54,
+                "end": 4.7
+              },
+              {
+                "word": " help",
+                "start": 4.7,
+                "end": 4.96
+              },
+              {
+                "word": " you",
+                "start": 4.96,
+                "end": 5.14
+              },
+              {
+                "word": " carry",
+                "start": 5.14,
+                "end": 5.38
+              },
+              {
+                "word": " a",
+                "start": 5.38,
+                "end": 5.6
+              },
+              {
+                "word": " record",
+                "start": 5.6,
+                "end": 5.88
+              },
+              {
+                "word": " I",
+                "start": 5.88,
+                "end": 6.42
+              },
+              {
+                "word": " will",
+                "start": 6.42,
+                "end": 6.58
+              },
+              {
+                "word": " not",
+                "start": 6.58,
+                "end": 6.76
+              },
+              {
+                "word": " give",
+                "start": 6.76,
+                "end": 7.02
+              },
+              {
+                "word": " you",
+                "start": 7.02,
+                "end": 7.22
+              },
+              {
+                "word": " people",
+                "start": 7.22,
+                "end": 7.5
+              },
+              {
+                "word": " to",
+                "start": 7.5,
+                "end": 7.7
+              },
+              {
+                "word": " lean",
+                "start": 7.7,
+                "end": 7.88
+              },
+              {
+                "word": " on.",
+                "start": 7.88,
+                "end": 8.22
+              }
+            ],
+            "sentenceGaps": [
+              {
+                "after": " page.",
+                "before": " Leave",
+                "gap": 1.0
+              },
+              {
+                "after": " request.",
+                "before": " I",
+                "gap": 1.08
+              }
+            ],
+            "segments": [
+              {
+                "text": "Ask for the movement page.",
+                "pauseAfter": 0.26,
+                "speed": 0.97
+              },
+              {
+                "text": "Leave the families out of the request.",
+                "pauseAfter": 0.4,
+                "speed": 0.93
+              },
+              {
+                "text": "I can help you carry a record; I will not give you people to lean on.",
+                "pauseAfter": 0,
+                "speed": 0.96
+              }
+            ],
+            "speed": 0.95,
+            "integratedLufs": -23.52,
+            "truePeakDbtp": -5.78
+          },
+          {
+            "id": "voice-campaign-encounter-craft-a3b854d736a3",
+            "speaker": "Kerr",
+            "voice": "am_adam",
+            "text": "You want me to pay for the quiet way in. Fine. Put something of yours on the counter.",
+            "path": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-a3b854d736a3.mp3",
+            "sha256": "df9d2fe325186297614ba22045756bf2853cc8364757c32106f9f8d57e06974c",
+            "durationSeconds": 5.1896875,
+            "transcription": "You want me to pay for the quiet way in. Fine, put something of yours on the counter.",
+            "exactNormalizedWords": true,
+            "words": [
+              {
+                "word": " You",
+                "start": 0.0,
+                "end": 0.16
+              },
+              {
+                "word": " want",
+                "start": 0.16,
+                "end": 0.32
+              },
+              {
+                "word": " me",
+                "start": 0.32,
+                "end": 0.46
+              },
+              {
+                "word": " to",
+                "start": 0.46,
+                "end": 0.56
+              },
+              {
+                "word": " pay",
+                "start": 0.56,
+                "end": 0.74
+              },
+              {
+                "word": " for",
+                "start": 0.74,
+                "end": 0.94
+              },
+              {
+                "word": " the",
+                "start": 0.94,
+                "end": 1.02
+              },
+              {
+                "word": " quiet",
+                "start": 1.02,
+                "end": 1.28
+              },
+              {
+                "word": " way",
+                "start": 1.28,
+                "end": 1.6
+              },
+              {
+                "word": " in.",
+                "start": 1.6,
+                "end": 1.88
+              },
+              {
+                "word": " Fine,",
+                "start": 2.44,
+                "end": 2.8
+              },
+              {
+                "word": " put",
+                "start": 3.18,
+                "end": 3.34
+              },
+              {
+                "word": " something",
+                "start": 3.34,
+                "end": 3.6
+              },
+              {
+                "word": " of",
+                "start": 3.6,
+                "end": 3.8
+              },
+              {
+                "word": " yours",
+                "start": 3.8,
+                "end": 3.98
+              },
+              {
+                "word": " on",
+                "start": 3.98,
+                "end": 4.32
+              },
+              {
+                "word": " the",
+                "start": 4.32,
+                "end": 4.4
+              },
+              {
+                "word": " counter.",
+                "start": 4.4,
+                "end": 4.72
+              }
+            ],
+            "sentenceGaps": [
+              {
+                "after": " in.",
+                "before": " Fine,",
+                "gap": 0.56
+              }
+            ],
+            "segments": [
+              {
+                "text": "You want me to pay for the quiet way in.",
+                "pauseAfter": 0.4,
+                "speed": 0.97
+              },
+              {
+                "text": "Fine. Put something of yours on the counter.",
+                "pauseAfter": 0,
+                "speed": 0.95
+              }
+            ],
+            "speed": 0.97,
+            "integratedLufs": -23.5,
+            "truePeakDbtp": -2.16
+          },
+          {
+            "id": "voice-campaign-encounter-craft-43e701b3e2c1",
+            "speaker": "Kerr",
+            "voice": "am_adam",
+            "text": "There is the case. There is no name in their register. We kept the bargain. The fitting is another day's work.",
+            "path": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-43e701b3e2c1.mp3",
+            "sha256": "0d405f07c24162111515991dae415337b74f9aa96aaf46c15c40ee19410809b6",
+            "durationSeconds": 7.2316875,
+            "transcription": "There is the case. There is no name in their register. We kept the bargain. The fitting is another day's work.",
+            "exactNormalizedWords": true,
+            "words": [
+              {
+                "word": " There",
+                "start": 0.0,
+                "end": 0.2
+              },
+              {
+                "word": " is",
+                "start": 0.2,
+                "end": 0.36
+              },
+              {
+                "word": " the",
+                "start": 0.36,
+                "end": 0.52
+              },
+              {
+                "word": " case.",
+                "start": 0.52,
+                "end": 0.78
+              },
+              {
+                "word": " There",
+                "start": 1.48,
+                "end": 1.52
+              },
+              {
+                "word": " is",
+                "start": 1.52,
+                "end": 1.62
+              },
+              {
+                "word": " no",
+                "start": 1.62,
+                "end": 1.82
+              },
+              {
+                "word": " name",
+                "start": 1.82,
+                "end": 2.18
+              },
+              {
+                "word": " in",
+                "start": 2.18,
+                "end": 2.36
+              },
+              {
+                "word": " their",
+                "start": 2.36,
+                "end": 2.5
+              },
+              {
+                "word": " register.",
+                "start": 2.5,
+                "end": 2.88
+              },
+              {
+                "word": " We",
+                "start": 3.66,
+                "end": 3.68
+              },
+              {
+                "word": " kept",
+                "start": 3.68,
+                "end": 3.86
+              },
+              {
+                "word": " the",
+                "start": 3.86,
+                "end": 4.04
+              },
+              {
+                "word": " bargain.",
+                "start": 4.04,
+                "end": 4.38
+              },
+              {
+                "word": " The",
+                "start": 5.24,
+                "end": 5.28
+              },
+              {
+                "word": " fitting",
+                "start": 5.28,
+                "end": 5.52
+              },
+              {
+                "word": " is",
+                "start": 5.52,
+                "end": 5.9
+              },
+              {
+                "word": " another",
+                "start": 5.9,
+                "end": 6.18
+              },
+              {
+                "word": " day's",
+                "start": 6.18,
+                "end": 6.64
+              },
+              {
+                "word": " work.",
+                "start": 6.64,
+                "end": 6.88
+              }
+            ],
+            "sentenceGaps": [
+              {
+                "after": " case.",
+                "before": " There",
+                "gap": 0.7
+              },
+              {
+                "after": " register.",
+                "before": " We",
+                "gap": 0.78
+              },
+              {
+                "after": " bargain.",
+                "before": " The",
+                "gap": 0.86
+              }
+            ],
+            "segments": [
+              {
+                "text": "There is the case.",
+                "pauseAfter": 0.24,
+                "speed": 0.99
+              },
+              {
+                "text": "There is no name in their register.",
+                "pauseAfter": 0.26,
+                "speed": 0.99
+              },
+              {
+                "text": "We kept the bargain.",
+                "pauseAfter": 0.4,
+                "speed": 0.97
+              },
+              {
+                "text": "The fitting is another day's work.",
+                "pauseAfter": 0,
+                "speed": 0.92
+              }
+            ],
+            "speed": 0.97,
+            "integratedLufs": -23.5,
+            "truePeakDbtp": -3.82
+          },
+          {
+            "id": "voice-campaign-encounter-craft-62b70985aa0d",
+            "speaker": "Kerr",
+            "voice": "am_adam",
+            "text": "I can count what arrived. I can read what they kept. We are not going to make one of those disappear by talking about the other.",
+            "path": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-62b70985aa0d.mp3",
+            "sha256": "73dc8995d53d6b973e045205994e7bb1f527d950a20a789a7ed2b1d417403359",
+            "durationSeconds": 7.6436875,
+            "transcription": "I can count what arrived. I can read what they kept. We are not going to make one of those disappear by talking about the other.\"",
+            "exactNormalizedWords": true,
+            "words": [
+              {
+                "word": " I",
+                "start": 0.0,
+                "end": 0.18
+              },
+              {
+                "word": " can",
+                "start": 0.18,
+                "end": 0.34
+              },
+              {
+                "word": " count",
+                "start": 0.34,
+                "end": 0.64
+              },
+              {
+                "word": " what",
+                "start": 0.64,
+                "end": 0.84
+              },
+              {
+                "word": " arrived.",
+                "start": 0.84,
+                "end": 1.22
+              },
+              {
+                "word": " I",
+                "start": 1.82,
+                "end": 1.94
+              },
+              {
+                "word": " can",
+                "start": 1.94,
+                "end": 2.08
+              },
+              {
+                "word": " read",
+                "start": 2.08,
+                "end": 2.32
+              },
+              {
+                "word": " what",
+                "start": 2.32,
+                "end": 2.6
+              },
+              {
+                "word": " they",
+                "start": 2.6,
+                "end": 2.78
+              },
+              {
+                "word": " kept.",
+                "start": 2.78,
+                "end": 3.08
+              },
+              {
+                "word": " We",
+                "start": 3.74,
+                "end": 3.9
+              },
+              {
+                "word": " are",
+                "start": 3.9,
+                "end": 4.0
+              },
+              {
+                "word": " not",
+                "start": 4.0,
+                "end": 4.16
+              },
+              {
+                "word": " going",
+                "start": 4.16,
+                "end": 4.48
+              },
+              {
+                "word": " to",
+                "start": 4.48,
+                "end": 4.66
+              },
+              {
+                "word": " make",
+                "start": 4.66,
+                "end": 4.78
+              },
+              {
+                "word": " one",
+                "start": 4.78,
+                "end": 4.96
+              },
+              {
+                "word": " of",
+                "start": 4.96,
+                "end": 5.06
+              },
+              {
+                "word": " those",
+                "start": 5.06,
+                "end": 5.22
+              },
+              {
+                "word": " disappear",
+                "start": 5.22,
+                "end": 5.64
+              },
+              {
+                "word": " by",
+                "start": 5.64,
+                "end": 6.22
+              },
+              {
+                "word": " talking",
+                "start": 6.22,
+                "end": 6.48
+              },
+              {
+                "word": " about",
+                "start": 6.48,
+                "end": 6.88
+              },
+              {
+                "word": " the",
+                "start": 6.88,
+                "end": 7.08
+              },
+              {
+                "word": " other.\"",
+                "start": 7.08,
+                "end": 7.62
+              }
+            ],
+            "sentenceGaps": [
+              {
+                "after": " arrived.",
+                "before": " I",
+                "gap": 0.6
+              },
+              {
+                "after": " kept.",
+                "before": " We",
+                "gap": 0.66
+              }
+            ],
+            "segments": [
+              {
+                "text": "I can count what arrived.",
+                "pauseAfter": 0.24,
+                "speed": 0.98
+              },
+              {
+                "text": "I can read what they kept.",
+                "pauseAfter": 0.4,
+                "speed": 0.98
+              },
+              {
+                "text": "We are not going to make one of those disappear by talking about the other.",
+                "pauseAfter": 0,
+                "speed": 0.95
+              }
+            ],
+            "speed": 0.97,
+            "integratedLufs": -23.49,
+            "truePeakDbtp": -4.25
+          },
+          {
+            "id": "voice-campaign-emotional-payoff-0a1b8bb22589",
+            "speaker": "Sera",
+            "voice": "af_bella",
+            "text": "Wait. Let me hear that one again.",
+            "path": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-emotional-payoff-0a1b8bb22589.mp3",
+            "sha256": "72b7ed1c7b6b8ee117e0b6ebf38c0d44acca5d0cfa3c6c51f6ed1a1ac6fc1771",
+            "durationSeconds": 2.84,
+            "transcription": "Wait, let me hear that one again.",
+            "exactNormalizedWords": true,
+            "words": [
+              {
+                "word": " Wait,",
+                "start": 0.0,
+                "end": 0.34
+              },
+              {
+                "word": " let",
+                "start": 0.88,
+                "end": 1.36
+              },
+              {
+                "word": " me",
+                "start": 1.36,
+                "end": 1.46
+              },
+              {
+                "word": " hear",
+                "start": 1.46,
+                "end": 1.68
+              },
+              {
+                "word": " that",
+                "start": 1.68,
+                "end": 1.9
+              },
+              {
+                "word": " one",
+                "start": 1.9,
+                "end": 2.06
+              },
+              {
+                "word": " again.",
+                "start": 2.06,
+                "end": 2.3
+              }
+            ],
+            "sentenceGaps": [],
+            "segments": [
+              {
+                "text": "Wait.",
+                "pauseAfter": 0.32,
+                "speed": 0.92
+              },
+              {
+                "text": "Let me hear that one again.",
+                "pauseAfter": 0,
+                "speed": 0.93
+              }
+            ],
+            "speed": 0.92,
+            "integratedLufs": -23.5,
+            "truePeakDbtp": -4.85
+          },
+          {
+            "id": "voice-campaign-emotional-payoff-26350d370631",
+            "speaker": "Ives",
+            "voice": "am_eric",
+            "text": "Mind the edge. Keep that page in one piece.",
+            "path": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-emotional-payoff-26350d370631.mp3",
+            "sha256": "bcd650c8e634b2e5284f1ec3842079d649a32aa7d8f02817b977982144e7fffe",
+            "durationSeconds": 3.045375,
+            "transcription": "Mind the edge, keep that page in one piece.",
+            "exactNormalizedWords": true,
+            "words": [
+              {
+                "word": " Mind",
+                "start": 0.0,
+                "end": 0.32
+              },
+              {
+                "word": " the",
+                "start": 0.32,
+                "end": 0.48
+              },
+              {
+                "word": " edge,",
+                "start": 0.48,
+                "end": 0.68
+              },
+              {
+                "word": " keep",
+                "start": 0.98,
+                "end": 1.26
+              },
+              {
+                "word": " that",
+                "start": 1.26,
+                "end": 1.44
+              },
+              {
+                "word": " page",
+                "start": 1.44,
+                "end": 1.72
+              },
+              {
+                "word": " in",
+                "start": 1.72,
+                "end": 1.94
+              },
+              {
+                "word": " one",
+                "start": 1.94,
+                "end": 2.08
+              },
+              {
+                "word": " piece.",
+                "start": 2.08,
+                "end": 2.44
+              }
+            ],
+            "sentenceGaps": [],
+            "segments": [
+              {
+                "text": "Mind the edge. Keep that page in one piece.",
+                "pauseAfter": 0,
+                "speed": 0.94
+              }
+            ],
+            "speed": 0.96,
+            "integratedLufs": -23.51,
+            "truePeakDbtp": -6.06
+          }
+        ]
+      }
+    },
+    {
+      "description": "Three same-word Edda retakes: two exact; introduction ask/asked mismatch.",
+      "provenance": {
+        "generatedAt": "2026-10-28T23:27:17.191252+00:00",
+        "source": "scripts/direct-anchor-voices.py",
+        "driver": {
+          "name": "kokoro-onnx",
+          "version": "0.6.1",
+          "license": "MIT",
+          "url": "https://github.com/thewh1teagle/kokoro-onnx",
+          "licenseFile": "qa/media/voice-sources/kokoro-onnx-LICENSE.txt"
+        },
+        "model": {
+          "name": "Kokoro-82M v1.0",
+          "license": "Apache-2.0",
+          "card": "https://huggingface.co/hexgrad/Kokoro-82M",
+          "licenseFile": "qa/media/voice-sources/Kokoro-LICENSE.txt",
+          "files": [
+            {
+              "name": "kokoro-v1.0.onnx",
+              "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.onnx",
+              "sha256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+              "bytes": 325505369
+            },
+            {
+              "name": "voices-v1.0.bin",
+              "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin",
+              "sha256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+              "bytes": 28214398
+            }
+          ]
+        },
+        "disclosure": "Stock synthetic voices generated offline with Kokoro v1.0; no actor session or individual voice clone was commissioned. Only the fixed authored quotations below are rendered. No model or speech service ships in the game.",
+        "method": "Exact words and stock identity; phrase speed/pause direction, conservative -60dB-relative model-padding removal with80ms guards/8ms fades, two-pass -23.5LUFS codec matching,96kbps mono MP3. Masters retained outside Git.",
+        "lines": [
+          {
+            "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+            "speaker": "Edda",
+            "voice": "af_kore",
+            "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+            "speed": 0.95,
+            "loudnessLufs": -23.5,
+            "segments": [
+              {
+                "text": "The plant stayed on. The workers were meant to leave.",
+                "pauseAfter": 0.16,
+                "speed": 0.96
+              },
+              {
+                "text": "Find the line that changed before you ask me to put my name under yours.",
+                "pauseAfter": 0,
+                "speed": 0.96
+              }
+            ],
+            "direction": "Connect the two observed facts before the personal demand.",
+            "previousPath": "public/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3",
+            "previousSha256": "26825c2bc65fe72059a7ad4da468fffe47e9cd921d8fcb4ebdfe6d1ed04c872e",
+            "candidateFile": "/workspace/generated_audio/aaa-performance-direction/second-pass/voice-campaign-encounter-craft-ba69df93d8d5.mp3",
+            "sha256": "ecdd3ee96cec9cf5fb88963f33b080d782eee5d432648de1460254d6ca3135e4",
+            "bytes": 98540,
+            "sourceFile": "/workspace/generated_audio/aaa-performance-direction/second-pass/voice-campaign-encounter-craft-ba69df93d8d5-master.wav",
+            "sourceSha256": "1f1cc7b55abb7d23e5690939019276f6cb96b822ff5e82368ca1706fd22ee3c1",
+            "pcmDeliveryFile": "/workspace/generated_audio/aaa-performance-direction/second-pass/voice-campaign-encounter-craft-ba69df93d8d5-pcm.wav",
+            "pcmDeliverySha256": "e52d4f3c5d15bdbf03e555f7647924f754f00e4de4de2bc2974e77d6e31b1ce2",
+            "parts": [
+              {
+                "text": "The plant stayed on. The workers were meant to leave.",
+                "pauseAfter": 0.16,
+                "speed": 0.96,
+                "rawFile": "/workspace/generated_audio/aaa-performance-direction/second-pass/voice-campaign-encounter-craft-ba69df93d8d5-phrase-0.wav",
+                "rawSha256": "73adbb3d5c19bf732bd90c010060dd931fa4b84845aa5fd28d393ca451857e4e",
+                "rawSeconds": 3.1013333333333333,
+                "retainedSeconds": 3.1013333333333333,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.0,
+                "startSeconds": 0.0
+              },
+              {
+                "text": "Find the line that changed before you ask me to put my name under yours.",
+                "pauseAfter": 0,
+                "speed": 0.96,
+                "rawFile": "/workspace/generated_audio/aaa-performance-direction/second-pass/voice-campaign-encounter-craft-ba69df93d8d5-phrase-1.wav",
+                "rawSha256": "284de14a8023b3b2ac0d393a3c2bb2e0e7bc73be76656e14a56e6f07ad04df7b",
+                "rawSeconds": 4.714666666666667,
+                "retainedSeconds": 4.714666666666667,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.0,
+                "startSeconds": 3.2613333333333334
+              }
+            ],
+            "integratedLufs": -23.5,
+            "truePeakDbtp": -6.71,
+            "durationSeconds": 8.136,
+            "sampleRate": 24000,
+            "channels": 1,
+            "peak": 0.4619355797767639
+          },
+          {
+            "id": "voice-campaign-encounter-craft-570639a0f84d",
+            "speaker": "Edda",
+            "voice": "af_kore",
+            "text": "You have made one column answer for another. Look again. I am not asking you to believe me; I am asking you to read what is there.",
+            "speed": 0.92,
+            "loudnessLufs": -23.5,
+            "segments": [
+              {
+                "text": "You have made one column answer for another.",
+                "pauseAfter": 0.1,
+                "speed": 0.88
+              },
+              {
+                "text": "Look again.",
+                "pauseAfter": 0.26,
+                "speed": 0.91
+              },
+              {
+                "text": "I am not asking you to believe me; I am asking you to read what is there.",
+                "pauseAfter": 0,
+                "speed": 0.96
+              }
+            ],
+            "direction": "Keep the first sentence intact; separate the correction from the reading invitation.",
+            "previousPath": "public/audio/voice-campaign-encounter-craft-570639a0f84d.mp3",
+            "previousSha256": "1e229a9ea5a53ecba66385b2284e7967ba1b993c48303f09cf86bb76bd9c36e2",
+            "candidateFile": "/workspace/generated_audio/aaa-performance-direction/second-pass/voice-campaign-encounter-craft-570639a0f84d.mp3",
+            "sha256": "74decc3a98680b010f12ece93f5fe4ce0df88386c74a6c8a845192d856835657",
+            "bytes": 106316,
+            "sourceFile": "/workspace/generated_audio/aaa-performance-direction/second-pass/voice-campaign-encounter-craft-570639a0f84d-master.wav",
+            "sourceSha256": "441d2bd85f916d13eae795fa342c132830b9fe9c5e92ef03b0d4f816331d6568",
+            "pcmDeliveryFile": "/workspace/generated_audio/aaa-performance-direction/second-pass/voice-campaign-encounter-craft-570639a0f84d-pcm.wav",
+            "pcmDeliverySha256": "3f235bc7cf4b8a14a0462c296b4634a0ada9d9cfa20ae808900d1842dfefd794",
+            "parts": [
+              {
+                "text": "You have made one column answer for another.",
+                "pauseAfter": 0.1,
+                "speed": 0.88,
+                "rawFile": "/workspace/generated_audio/aaa-performance-direction/second-pass/voice-campaign-encounter-craft-570639a0f84d-phrase-0.wav",
+                "rawSha256": "41a97085e519c610e6f5d3097b4c88c793e6062ae764e34fee1de9cf402f9c9b",
+                "rawSeconds": 2.538666666666667,
+                "retainedSeconds": 2.538666666666667,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.0,
+                "startSeconds": 0.0
+              },
+              {
+                "text": "Look again.",
+                "pauseAfter": 0.26,
+                "speed": 0.91,
+                "rawFile": "/workspace/generated_audio/aaa-performance-direction/second-pass/voice-campaign-encounter-craft-570639a0f84d-phrase-1.wav",
+                "rawSha256": "4911f2d37446e507ea009c4e50cfac63b804827da8a8d0315054bee2f2a9388d",
+                "rawSeconds": 1.046,
+                "retainedSeconds": 1.046,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.0,
+                "startSeconds": 2.6386666666666665
+              },
+              {
+                "text": "I am not asking you to believe me; I am asking you to read what is there.",
+                "pauseAfter": 0,
+                "speed": 0.96,
+                "rawFile": "/workspace/generated_audio/aaa-performance-direction/second-pass/voice-campaign-encounter-craft-570639a0f84d-phrase-2.wav",
+                "rawSha256": "f0e7f839671c17509df4b0fc2c0c9735fa8c381cad37d25de78ce9f98b4e044f",
+                "rawSeconds": 4.672,
+                "retainedSeconds": 4.672,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.0,
+                "startSeconds": 3.9446666666666665
+              }
+            ],
+            "integratedLufs": -23.5,
+            "truePeakDbtp": -6.45,
+            "durationSeconds": 8.776666666666667,
+            "sampleRate": 24000,
+            "channels": 1,
+            "peak": 0.4758792817592621
+          },
+          {
+            "id": "voice-campaign-encounter-craft-cd0a455809ce",
+            "speaker": "Edda",
+            "voice": "af_kore",
+            "text": "Ask for the movement page. Leave the families out of the request. I can help you carry a record; I will not give you people to lean on.",
+            "speed": 0.95,
+            "loudnessLufs": -23.5,
+            "segments": [
+              {
+                "text": "Ask for the movement page. Leave the families out of the request.",
+                "pauseAfter": 0.3,
+                "speed": 0.96
+              },
+              {
+                "text": "I can help you carry a record; I will not give you people to lean on.",
+                "pauseAfter": 0,
+                "speed": 0.96
+              }
+            ],
+            "direction": "Practical request, clear family boundary, then the limit of help.",
+            "previousPath": "public/audio/voice-campaign-encounter-craft-cd0a455809ce.mp3",
+            "previousSha256": "430e68710b08ae2ccc4f787eb8dbab539514cb20e4645f7a7ffc4556fa4f9bc4",
+            "candidateFile": "/workspace/generated_audio/aaa-performance-direction/second-pass/voice-campaign-encounter-craft-cd0a455809ce.mp3",
+            "sha256": "ea1258e102a5917c1b5594e4b51c289bfa41d58ad53f204c0d38225bd82a6b5a",
+            "bytes": 106604,
+            "sourceFile": "/workspace/generated_audio/aaa-performance-direction/second-pass/voice-campaign-encounter-craft-cd0a455809ce-master.wav",
+            "sourceSha256": "38c18305afa8963e5a40ae48b593a70fc71885df778dc4634bccc6a1154eb39b",
+            "pcmDeliveryFile": "/workspace/generated_audio/aaa-performance-direction/second-pass/voice-campaign-encounter-craft-cd0a455809ce-pcm.wav",
+            "pcmDeliverySha256": "96a9e73c69b8c147dafca32bfd6b66c3f1f9aa2749e83281ca411a4d94f94c36",
+            "parts": [
+              {
+                "text": "Ask for the movement page. Leave the families out of the request.",
+                "pauseAfter": 0.3,
+                "speed": 0.96,
+                "rawFile": "/workspace/generated_audio/aaa-performance-direction/second-pass/voice-campaign-encounter-craft-cd0a455809ce-phrase-0.wav",
+                "rawSha256": "47348be17784df9f3ca201eb25fa189f46d9e4a5c360bffbc3e5c3c8b02eab1e",
+                "rawSeconds": 4.058,
+                "retainedSeconds": 4.058,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.0,
+                "startSeconds": 0.0
+              },
+              {
+                "text": "I can help you carry a record; I will not give you people to lean on.",
+                "pauseAfter": 0,
+                "speed": 0.96,
+                "rawFile": "/workspace/generated_audio/aaa-performance-direction/second-pass/voice-campaign-encounter-craft-cd0a455809ce-phrase-1.wav",
+                "rawSha256": "d2799af1dec7c5483a7a4d5ffd999be252d4f1cd722c29ebe4c4b4e6c3af4705",
+                "rawSeconds": 4.288,
+                "retainedSeconds": 4.288,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.0,
+                "startSeconds": 4.358
+              }
+            ],
+            "integratedLufs": -23.5,
+            "truePeakDbtp": -6.71,
+            "durationSeconds": 8.806,
+            "sampleRate": 24000,
+            "channels": 1,
+            "peak": 0.4619107246398926
+          }
+        ]
+      },
+      "transcripts": {
+        "method": "Unprompted base.en CPU int8 ASR with word times, no authored prompt. Timing is a proxy, not a phonetic/acting judgment.",
+        "model": "Systran/faster-whisper-base.en",
+        "lines": [
+          {
+            "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+            "speaker": "Edda",
+            "voice": "af_kore",
+            "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+            "path": "/workspace/generated_audio/aaa-performance-direction/second-pass/voice-campaign-encounter-craft-ba69df93d8d5.mp3",
+            "sha256": "ecdd3ee96cec9cf5fb88963f33b080d782eee5d432648de1460254d6ca3135e4",
+            "durationSeconds": 8.136,
+            "transcription": "The plant stayed on, the workers were meant to leave. Find the line that changed before you asked me to put my name under yours.",
+            "exactNormalizedWords": false,
+            "words": [
+              {
+                "word": " The",
+                "start": 0.0,
+                "end": 0.16
+              },
+              {
+                "word": " plant",
+                "start": 0.16,
+                "end": 0.32
+              },
+              {
+                "word": " stayed",
+                "start": 0.32,
+                "end": 0.66
+              },
+              {
+                "word": " on,",
+                "start": 0.66,
+                "end": 0.92
+              },
+              {
+                "word": " the",
+                "start": 1.3,
+                "end": 1.44
+              },
+              {
+                "word": " workers",
+                "start": 1.44,
+                "end": 1.68
+              },
+              {
+                "word": " were",
+                "start": 1.68,
+                "end": 2.06
+              },
+              {
+                "word": " meant",
+                "start": 2.06,
+                "end": 2.22
+              },
+              {
+                "word": " to",
+                "start": 2.22,
+                "end": 2.38
+              },
+              {
+                "word": " leave.",
+                "start": 2.38,
+                "end": 2.64
+              },
+              {
+                "word": " Find",
+                "start": 3.54,
+                "end": 3.54
+              },
+              {
+                "word": " the",
+                "start": 3.54,
+                "end": 3.7
+              },
+              {
+                "word": " line",
+                "start": 3.7,
+                "end": 3.94
+              },
+              {
+                "word": " that",
+                "start": 3.94,
+                "end": 4.2
+              },
+              {
+                "word": " changed",
+                "start": 4.2,
+                "end": 4.5
+              },
+              {
+                "word": " before",
+                "start": 4.5,
+                "end": 4.98
+              },
+              {
+                "word": " you",
+                "start": 4.98,
+                "end": 5.36
+              },
+              {
+                "word": " asked",
+                "start": 5.36,
+                "end": 5.58
+              },
+              {
+                "word": " me",
+                "start": 5.58,
+                "end": 5.9
+              },
+              {
+                "word": " to",
+                "start": 5.9,
+                "end": 6.06
+              },
+              {
+                "word": " put",
+                "start": 6.06,
+                "end": 6.24
+              },
+              {
+                "word": " my",
+                "start": 6.24,
+                "end": 6.4
+              },
+              {
+                "word": " name",
+                "start": 6.4,
+                "end": 6.72
+              },
+              {
+                "word": " under",
+                "start": 6.72,
+                "end": 7.02
+              },
+              {
+                "word": " yours.",
+                "start": 7.02,
+                "end": 7.34
+              }
+            ],
+            "sentenceGaps": [
+              {
+                "after": " leave.",
+                "before": " Find",
+                "gap": 0.9
+              }
+            ],
+            "segments": [
+              {
+                "text": "The plant stayed on. The workers were meant to leave.",
+                "pauseAfter": 0.16,
+                "speed": 0.96
+              },
+              {
+                "text": "Find the line that changed before you ask me to put my name under yours.",
+                "pauseAfter": 0,
+                "speed": 0.96
+              }
+            ],
+            "speed": 0.95,
+            "integratedLufs": -23.5,
+            "truePeakDbtp": -6.71
+          },
+          {
+            "id": "voice-campaign-encounter-craft-570639a0f84d",
+            "speaker": "Edda",
+            "voice": "af_kore",
+            "text": "You have made one column answer for another. Look again. I am not asking you to believe me; I am asking you to read what is there.",
+            "path": "/workspace/generated_audio/aaa-performance-direction/second-pass/voice-campaign-encounter-craft-570639a0f84d.mp3",
+            "sha256": "74decc3a98680b010f12ece93f5fe4ce0df88386c74a6c8a845192d856835657",
+            "durationSeconds": 8.7766875,
+            "transcription": "You have made one column answer for another. Look again. I am not asking you to believe me. I am asking you to read what is there.",
+            "exactNormalizedWords": true,
+            "words": [
+              {
+                "word": " You",
+                "start": 0.0,
+                "end": 0.18
+              },
+              {
+                "word": " have",
+                "start": 0.18,
+                "end": 0.3
+              },
+              {
+                "word": " made",
+                "start": 0.3,
+                "end": 0.48
+              },
+              {
+                "word": " one",
+                "start": 0.48,
+                "end": 0.74
+              },
+              {
+                "word": " column",
+                "start": 0.74,
+                "end": 1.12
+              },
+              {
+                "word": " answer",
+                "start": 1.12,
+                "end": 1.6
+              },
+              {
+                "word": " for",
+                "start": 1.6,
+                "end": 1.84
+              },
+              {
+                "word": " another.",
+                "start": 1.84,
+                "end": 2.1
+              },
+              {
+                "word": " Look",
+                "start": 2.82,
+                "end": 2.88
+              },
+              {
+                "word": " again.",
+                "start": 2.88,
+                "end": 3.2
+              },
+              {
+                "word": " I",
+                "start": 4.06,
+                "end": 4.14
+              },
+              {
+                "word": " am",
+                "start": 4.14,
+                "end": 4.28
+              },
+              {
+                "word": " not",
+                "start": 4.28,
+                "end": 4.48
+              },
+              {
+                "word": " asking",
+                "start": 4.48,
+                "end": 4.98
+              },
+              {
+                "word": " you",
+                "start": 4.98,
+                "end": 5.24
+              },
+              {
+                "word": " to",
+                "start": 5.24,
+                "end": 5.38
+              },
+              {
+                "word": " believe",
+                "start": 5.38,
+                "end": 5.62
+              },
+              {
+                "word": " me.",
+                "start": 5.62,
+                "end": 5.96
+              },
+              {
+                "word": " I",
+                "start": 6.3,
+                "end": 6.36
+              },
+              {
+                "word": " am",
+                "start": 6.36,
+                "end": 6.5
+              },
+              {
+                "word": " asking",
+                "start": 6.5,
+                "end": 6.82
+              },
+              {
+                "word": " you",
+                "start": 6.82,
+                "end": 7.1
+              },
+              {
+                "word": " to",
+                "start": 7.1,
+                "end": 7.26
+              },
+              {
+                "word": " read",
+                "start": 7.26,
+                "end": 7.48
+              },
+              {
+                "word": " what",
+                "start": 7.48,
+                "end": 7.74
+              },
+              {
+                "word": " is",
+                "start": 7.74,
+                "end": 7.86
+              },
+              {
+                "word": " there.",
+                "start": 7.86,
+                "end": 8.14
+              }
+            ],
+            "sentenceGaps": [
+              {
+                "after": " another.",
+                "before": " Look",
+                "gap": 0.72
+              },
+              {
+                "after": " again.",
+                "before": " I",
+                "gap": 0.86
+              },
+              {
+                "after": " me.",
+                "before": " I",
+                "gap": 0.34
+              }
+            ],
+            "segments": [
+              {
+                "text": "You have made one column answer for another.",
+                "pauseAfter": 0.1,
+                "speed": 0.88
+              },
+              {
+                "text": "Look again.",
+                "pauseAfter": 0.26,
+                "speed": 0.91
+              },
+              {
+                "text": "I am not asking you to believe me; I am asking you to read what is there.",
+                "pauseAfter": 0,
+                "speed": 0.96
+              }
+            ],
+            "speed": 0.92,
+            "integratedLufs": -23.5,
+            "truePeakDbtp": -6.45
+          },
+          {
+            "id": "voice-campaign-encounter-craft-cd0a455809ce",
+            "speaker": "Edda",
+            "voice": "af_kore",
+            "text": "Ask for the movement page. Leave the families out of the request. I can help you carry a record; I will not give you people to lean on.",
+            "path": "/workspace/generated_audio/aaa-performance-direction/second-pass/voice-campaign-encounter-craft-cd0a455809ce.mp3",
+            "sha256": "ea1258e102a5917c1b5594e4b51c289bfa41d58ad53f204c0d38225bd82a6b5a",
+            "durationSeconds": 8.806,
+            "transcription": "Ask for the movement page, leave the families out of the request. I can help you carry a record I will not give you people to lean on.",
+            "exactNormalizedWords": true,
+            "words": [
+              {
+                "word": " Ask",
+                "start": 0.0,
+                "end": 0.34
+              },
+              {
+                "word": " for",
+                "start": 0.34,
+                "end": 0.52
+              },
+              {
+                "word": " the",
+                "start": 0.52,
+                "end": 0.62
+              },
+              {
+                "word": " movement",
+                "start": 0.62,
+                "end": 0.82
+              },
+              {
+                "word": " page,",
+                "start": 0.82,
+                "end": 1.24
+              },
+              {
+                "word": " leave",
+                "start": 1.68,
+                "end": 1.98
+              },
+              {
+                "word": " the",
+                "start": 1.98,
+                "end": 2.18
+              },
+              {
+                "word": " families",
+                "start": 2.18,
+                "end": 2.58
+              },
+              {
+                "word": " out",
+                "start": 2.58,
+                "end": 2.94
+              },
+              {
+                "word": " of",
+                "start": 2.94,
+                "end": 3.06
+              },
+              {
+                "word": " the",
+                "start": 3.06,
+                "end": 3.14
+              },
+              {
+                "word": " request.",
+                "start": 3.14,
+                "end": 3.44
+              },
+              {
+                "word": " I",
+                "start": 4.48,
+                "end": 4.54
+              },
+              {
+                "word": " can",
+                "start": 4.54,
+                "end": 4.68
+              },
+              {
+                "word": " help",
+                "start": 4.68,
+                "end": 4.94
+              },
+              {
+                "word": " you",
+                "start": 4.94,
+                "end": 5.12
+              },
+              {
+                "word": " carry",
+                "start": 5.12,
+                "end": 5.38
+              },
+              {
+                "word": " a",
+                "start": 5.38,
+                "end": 5.58
+              },
+              {
+                "word": " record",
+                "start": 5.58,
+                "end": 5.84
+              },
+              {
+                "word": " I",
+                "start": 5.84,
+                "end": 6.4
+              },
+              {
+                "word": " will",
+                "start": 6.4,
+                "end": 6.56
+              },
+              {
+                "word": " not",
+                "start": 6.56,
+                "end": 6.74
+              },
+              {
+                "word": " give",
+                "start": 6.74,
+                "end": 7.02
+              },
+              {
+                "word": " you",
+                "start": 7.02,
+                "end": 7.2
+              },
+              {
+                "word": " people",
+                "start": 7.2,
+                "end": 7.48
+              },
+              {
+                "word": " to",
+                "start": 7.48,
+                "end": 7.7
+              },
+              {
+                "word": " lean",
+                "start": 7.7,
+                "end": 7.86
+              },
+              {
+                "word": " on.",
+                "start": 7.86,
+                "end": 8.2
+              }
+            ],
+            "sentenceGaps": [
+              {
+                "after": " request.",
+                "before": " I",
+                "gap": 1.04
+              }
+            ],
+            "segments": [
+              {
+                "text": "Ask for the movement page. Leave the families out of the request.",
+                "pauseAfter": 0.3,
+                "speed": 0.96
+              },
+              {
+                "text": "I can help you carry a record; I will not give you people to lean on.",
+                "pauseAfter": 0,
+                "speed": 0.96
+              }
+            ],
+            "speed": 0.95,
+            "integratedLufs": -23.5,
+            "truePeakDbtp": -6.71
+          }
+        ]
+      }
+    },
+    {
+      "description": "Final introduction experiment still mismatched; reject and retain original.",
+      "provenance": {
+        "generatedAt": "2026-10-28T23:29:36.980857+00:00",
+        "source": "scripts/direct-anchor-voices.py",
+        "driver": {
+          "name": "kokoro-onnx",
+          "version": "0.6.1",
+          "license": "MIT",
+          "url": "https://github.com/thewh1teagle/kokoro-onnx",
+          "licenseFile": "qa/media/voice-sources/kokoro-onnx-LICENSE.txt"
+        },
+        "model": {
+          "name": "Kokoro-82M v1.0",
+          "license": "Apache-2.0",
+          "card": "https://huggingface.co/hexgrad/Kokoro-82M",
+          "licenseFile": "qa/media/voice-sources/Kokoro-LICENSE.txt",
+          "files": [
+            {
+              "name": "kokoro-v1.0.onnx",
+              "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.onnx",
+              "sha256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+              "bytes": 325505369
+            },
+            {
+              "name": "voices-v1.0.bin",
+              "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin",
+              "sha256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+              "bytes": 28214398
+            }
+          ]
+        },
+        "disclosure": "Stock synthetic voices generated offline with Kokoro v1.0; no actor session or individual voice clone was commissioned. Only the fixed authored quotations below are rendered. No model or speech service ships in the game.",
+        "method": "Exact words and stock identity; phrase speed/pause direction, conservative -60dB-relative model-padding removal with80ms guards/8ms fades, two-pass -23.5LUFS codec matching,96kbps mono MP3. Masters retained outside Git.",
+        "lines": [
+          {
+            "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+            "speaker": "Edda",
+            "voice": "af_kore",
+            "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+            "speed": 0.95,
+            "loudnessLufs": -23.5,
+            "segments": [
+              {
+                "text": "The plant stayed on. The workers were meant to leave.",
+                "pauseAfter": 0.16,
+                "speed": 0.96
+              },
+              {
+                "text": "Find the line that changed before you ask me to put my name under yours.",
+                "pauseAfter": 0,
+                "speed": 0.95
+              }
+            ],
+            "direction": "Connect the two observed facts before the personal demand.",
+            "previousPath": "public/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3",
+            "previousSha256": "26825c2bc65fe72059a7ad4da468fffe47e9cd921d8fcb4ebdfe6d1ed04c872e",
+            "candidateFile": "/workspace/generated_audio/aaa-performance-direction/third-pass/voice-campaign-encounter-craft-ba69df93d8d5.mp3",
+            "sha256": "7117a439eb760393d7ffc89a09d47410e6cb83f154861bc4baa1e74d358e5267",
+            "bytes": 98828,
+            "sourceFile": "/workspace/generated_audio/aaa-performance-direction/third-pass/voice-campaign-encounter-craft-ba69df93d8d5-master.wav",
+            "sourceSha256": "723045a1ab861d2c1915b70007222a41a3fa9b97419968cd5804d88c1247a854",
+            "pcmDeliveryFile": "/workspace/generated_audio/aaa-performance-direction/third-pass/voice-campaign-encounter-craft-ba69df93d8d5-pcm.wav",
+            "pcmDeliverySha256": "973f705e62b53690bd6a72b47d8ee5846fed857d0b8ca1644797bf2e728f3796",
+            "parts": [
+              {
+                "text": "The plant stayed on. The workers were meant to leave.",
+                "pauseAfter": 0.16,
+                "speed": 0.96,
+                "rawFile": "/workspace/generated_audio/aaa-performance-direction/third-pass/voice-campaign-encounter-craft-ba69df93d8d5-phrase-0.wav",
+                "rawSha256": "327330446feac414e60c78903fbae11614cc50be13c0d326e69aeebcc3b620a4",
+                "rawSeconds": 3.1013333333333333,
+                "retainedSeconds": 3.1013333333333333,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.0,
+                "startSeconds": 0.0
+              },
+              {
+                "text": "Find the line that changed before you ask me to put my name under yours.",
+                "pauseAfter": 0,
+                "speed": 0.95,
+                "rawFile": "/workspace/generated_audio/aaa-performance-direction/third-pass/voice-campaign-encounter-craft-ba69df93d8d5-phrase-1.wav",
+                "rawSha256": "1dac89312ee3e3302610731efcde6aa41104db7fb5d6ef46e3f147c9d11e7948",
+                "rawSeconds": 4.736,
+                "retainedSeconds": 4.736,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.0,
+                "startSeconds": 3.2613333333333334
+              }
+            ],
+            "integratedLufs": -23.5,
+            "truePeakDbtp": -6.36,
+            "durationSeconds": 8.157333333333334,
+            "sampleRate": 24000,
+            "channels": 1,
+            "peak": 0.4807996153831482
+          }
+        ]
+      },
+      "transcripts": {
+        "method": "Unprompted base.en CPU int8 ASR with word times, no authored prompt. Timing is a proxy, not a phonetic/acting judgment.",
+        "model": "Systran/faster-whisper-base.en",
+        "lines": [
+          {
+            "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+            "speaker": "Edda",
+            "voice": "af_kore",
+            "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+            "path": "/workspace/generated_audio/aaa-performance-direction/third-pass/voice-campaign-encounter-craft-ba69df93d8d5.mp3",
+            "sha256": "7117a439eb760393d7ffc89a09d47410e6cb83f154861bc4baa1e74d358e5267",
+            "durationSeconds": 8.157375,
+            "transcription": "The plant stayed on, the workers were meant to leave. Find the line that changed before you asked me to put my name under yours.",
+            "exactNormalizedWords": false,
+            "words": [
+              {
+                "word": " The",
+                "start": 0.0,
+                "end": 0.16
+              },
+              {
+                "word": " plant",
+                "start": 0.16,
+                "end": 0.32
+              },
+              {
+                "word": " stayed",
+                "start": 0.32,
+                "end": 0.66
+              },
+              {
+                "word": " on,",
+                "start": 0.66,
+                "end": 0.94
+              },
+              {
+                "word": " the",
+                "start": 1.28,
+                "end": 1.44
+              },
+              {
+                "word": " workers",
+                "start": 1.44,
+                "end": 1.68
+              },
+              {
+                "word": " were",
+                "start": 1.68,
+                "end": 2.06
+              },
+              {
+                "word": " meant",
+                "start": 2.06,
+                "end": 2.22
+              },
+              {
+                "word": " to",
+                "start": 2.22,
+                "end": 2.4
+              },
+              {
+                "word": " leave.",
+                "start": 2.4,
+                "end": 2.64
+              },
+              {
+                "word": " Find",
+                "start": 3.54,
+                "end": 3.54
+              },
+              {
+                "word": " the",
+                "start": 3.54,
+                "end": 3.7
+              },
+              {
+                "word": " line",
+                "start": 3.7,
+                "end": 3.96
+              },
+              {
+                "word": " that",
+                "start": 3.96,
+                "end": 4.24
+              },
+              {
+                "word": " changed",
+                "start": 4.24,
+                "end": 4.52
+              },
+              {
+                "word": " before",
+                "start": 4.52,
+                "end": 5.02
+              },
+              {
+                "word": " you",
+                "start": 5.02,
+                "end": 5.38
+              },
+              {
+                "word": " asked",
+                "start": 5.38,
+                "end": 5.6
+              },
+              {
+                "word": " me",
+                "start": 5.6,
+                "end": 5.92
+              },
+              {
+                "word": " to",
+                "start": 5.92,
+                "end": 6.08
+              },
+              {
+                "word": " put",
+                "start": 6.08,
+                "end": 6.26
+              },
+              {
+                "word": " my",
+                "start": 6.26,
+                "end": 6.42
+              },
+              {
+                "word": " name",
+                "start": 6.42,
+                "end": 6.72
+              },
+              {
+                "word": " under",
+                "start": 6.72,
+                "end": 7.04
+              },
+              {
+                "word": " yours.",
+                "start": 7.04,
+                "end": 7.36
+              }
+            ],
+            "sentenceGaps": [
+              {
+                "after": " leave.",
+                "before": " Find",
+                "gap": 0.9
+              }
+            ],
+            "segments": [
+              {
+                "text": "The plant stayed on. The workers were meant to leave.",
+                "pauseAfter": 0.16,
+                "speed": 0.96
+              },
+              {
+                "text": "Find the line that changed before you ask me to put my name under yours.",
+                "pauseAfter": 0,
+                "speed": 0.95
+              }
+            ],
+            "speed": 0.95,
+            "integratedLufs": -23.5,
+            "truePeakDbtp": -6.36
+          }
+        ]
+      }
+    }
+  ],
+  "acceptedIds": [
+    "voice-campaign-encounter-craft-570639a0f84d",
+    "voice-campaign-encounter-craft-cd0a455809ce",
+    "voice-campaign-encounter-craft-a3b854d736a3",
+    "voice-campaign-encounter-craft-43e701b3e2c1",
+    "voice-campaign-encounter-craft-62b70985aa0d",
+    "voice-campaign-emotional-payoff-0a1b8bb22589",
+    "voice-campaign-emotional-payoff-26350d370631"
+  ],
+  "retainedIds": [
+    "voice-campaign-encounter-craft-ba69df93d8d5",
+    "voice-campaign-encounter-craft-0d503d1dabcb",
+    "voice-campaign-encounter-craft-ecb749c132e1",
+    "voice-campaign-encounter-craft-9597f82c6f10",
+    "voice-campaign-emotional-payoff-ee1ca23521df",
+    "voice-campaign-emotional-payoff-a8c4c936daad",
+    "voice-campaign-emotional-payoff-a1cf0d3718e8",
+    "voice-campaign-emotional-payoff-4a4c8f261a79",
+    "voice-campaign-emotional-payoff-a00e2510dc2a",
+    "voice-campaign-emotional-payoff-5ca32a5e2923",
+    "voice-campaign-emotional-payoff-8b41fca71d2b",
+    "voice-campaign-emotional-payoff-52ad3344069a"
+  ],
+  "finalTranscripts": [
+    {
+      "id": "voice-campaign-encounter-craft-570639a0f84d",
+      "speaker": "Edda",
+      "voice": "af_kore",
+      "text": "You have made one column answer for another. Look again. I am not asking you to believe me; I am asking you to read what is there.",
+      "path": "/workspace/generated_audio/aaa-performance-direction/second-pass/voice-campaign-encounter-craft-570639a0f84d.mp3",
+      "sha256": "74decc3a98680b010f12ece93f5fe4ce0df88386c74a6c8a845192d856835657",
+      "durationSeconds": 8.7766875,
+      "transcription": "You have made one column answer for another. Look again. I am not asking you to believe me. I am asking you to read what is there.",
+      "exactNormalizedWords": true,
+      "words": [
+        {
+          "word": " You",
+          "start": 0.0,
+          "end": 0.18
+        },
+        {
+          "word": " have",
+          "start": 0.18,
+          "end": 0.3
+        },
+        {
+          "word": " made",
+          "start": 0.3,
+          "end": 0.48
+        },
+        {
+          "word": " one",
+          "start": 0.48,
+          "end": 0.74
+        },
+        {
+          "word": " column",
+          "start": 0.74,
+          "end": 1.12
+        },
+        {
+          "word": " answer",
+          "start": 1.12,
+          "end": 1.6
+        },
+        {
+          "word": " for",
+          "start": 1.6,
+          "end": 1.84
+        },
+        {
+          "word": " another.",
+          "start": 1.84,
+          "end": 2.1
+        },
+        {
+          "word": " Look",
+          "start": 2.82,
+          "end": 2.88
+        },
+        {
+          "word": " again.",
+          "start": 2.88,
+          "end": 3.2
+        },
+        {
+          "word": " I",
+          "start": 4.06,
+          "end": 4.14
+        },
+        {
+          "word": " am",
+          "start": 4.14,
+          "end": 4.28
+        },
+        {
+          "word": " not",
+          "start": 4.28,
+          "end": 4.48
+        },
+        {
+          "word": " asking",
+          "start": 4.48,
+          "end": 4.98
+        },
+        {
+          "word": " you",
+          "start": 4.98,
+          "end": 5.24
+        },
+        {
+          "word": " to",
+          "start": 5.24,
+          "end": 5.38
+        },
+        {
+          "word": " believe",
+          "start": 5.38,
+          "end": 5.62
+        },
+        {
+          "word": " me.",
+          "start": 5.62,
+          "end": 5.96
+        },
+        {
+          "word": " I",
+          "start": 6.3,
+          "end": 6.36
+        },
+        {
+          "word": " am",
+          "start": 6.36,
+          "end": 6.5
+        },
+        {
+          "word": " asking",
+          "start": 6.5,
+          "end": 6.82
+        },
+        {
+          "word": " you",
+          "start": 6.82,
+          "end": 7.1
+        },
+        {
+          "word": " to",
+          "start": 7.1,
+          "end": 7.26
+        },
+        {
+          "word": " read",
+          "start": 7.26,
+          "end": 7.48
+        },
+        {
+          "word": " what",
+          "start": 7.48,
+          "end": 7.74
+        },
+        {
+          "word": " is",
+          "start": 7.74,
+          "end": 7.86
+        },
+        {
+          "word": " there.",
+          "start": 7.86,
+          "end": 8.14
+        }
+      ],
+      "sentenceGaps": [
+        {
+          "after": " another.",
+          "before": " Look",
+          "gap": 0.72
+        },
+        {
+          "after": " again.",
+          "before": " I",
+          "gap": 0.86
+        },
+        {
+          "after": " me.",
+          "before": " I",
+          "gap": 0.34
+        }
+      ],
+      "segments": [
+        {
+          "text": "You have made one column answer for another.",
+          "pauseAfter": 0.1,
+          "speed": 0.88
+        },
+        {
+          "text": "Look again.",
+          "pauseAfter": 0.26,
+          "speed": 0.91
+        },
+        {
+          "text": "I am not asking you to believe me; I am asking you to read what is there.",
+          "pauseAfter": 0,
+          "speed": 0.96
+        }
+      ],
+      "speed": 0.92,
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -6.45
+    },
+    {
+      "id": "voice-campaign-encounter-craft-cd0a455809ce",
+      "speaker": "Edda",
+      "voice": "af_kore",
+      "text": "Ask for the movement page. Leave the families out of the request. I can help you carry a record; I will not give you people to lean on.",
+      "path": "/workspace/generated_audio/aaa-performance-direction/second-pass/voice-campaign-encounter-craft-cd0a455809ce.mp3",
+      "sha256": "ea1258e102a5917c1b5594e4b51c289bfa41d58ad53f204c0d38225bd82a6b5a",
+      "durationSeconds": 8.806,
+      "transcription": "Ask for the movement page, leave the families out of the request. I can help you carry a record I will not give you people to lean on.",
+      "exactNormalizedWords": true,
+      "words": [
+        {
+          "word": " Ask",
+          "start": 0.0,
+          "end": 0.34
+        },
+        {
+          "word": " for",
+          "start": 0.34,
+          "end": 0.52
+        },
+        {
+          "word": " the",
+          "start": 0.52,
+          "end": 0.62
+        },
+        {
+          "word": " movement",
+          "start": 0.62,
+          "end": 0.82
+        },
+        {
+          "word": " page,",
+          "start": 0.82,
+          "end": 1.24
+        },
+        {
+          "word": " leave",
+          "start": 1.68,
+          "end": 1.98
+        },
+        {
+          "word": " the",
+          "start": 1.98,
+          "end": 2.18
+        },
+        {
+          "word": " families",
+          "start": 2.18,
+          "end": 2.58
+        },
+        {
+          "word": " out",
+          "start": 2.58,
+          "end": 2.94
+        },
+        {
+          "word": " of",
+          "start": 2.94,
+          "end": 3.06
+        },
+        {
+          "word": " the",
+          "start": 3.06,
+          "end": 3.14
+        },
+        {
+          "word": " request.",
+          "start": 3.14,
+          "end": 3.44
+        },
+        {
+          "word": " I",
+          "start": 4.48,
+          "end": 4.54
+        },
+        {
+          "word": " can",
+          "start": 4.54,
+          "end": 4.68
+        },
+        {
+          "word": " help",
+          "start": 4.68,
+          "end": 4.94
+        },
+        {
+          "word": " you",
+          "start": 4.94,
+          "end": 5.12
+        },
+        {
+          "word": " carry",
+          "start": 5.12,
+          "end": 5.38
+        },
+        {
+          "word": " a",
+          "start": 5.38,
+          "end": 5.58
+        },
+        {
+          "word": " record",
+          "start": 5.58,
+          "end": 5.84
+        },
+        {
+          "word": " I",
+          "start": 5.84,
+          "end": 6.4
+        },
+        {
+          "word": " will",
+          "start": 6.4,
+          "end": 6.56
+        },
+        {
+          "word": " not",
+          "start": 6.56,
+          "end": 6.74
+        },
+        {
+          "word": " give",
+          "start": 6.74,
+          "end": 7.02
+        },
+        {
+          "word": " you",
+          "start": 7.02,
+          "end": 7.2
+        },
+        {
+          "word": " people",
+          "start": 7.2,
+          "end": 7.48
+        },
+        {
+          "word": " to",
+          "start": 7.48,
+          "end": 7.7
+        },
+        {
+          "word": " lean",
+          "start": 7.7,
+          "end": 7.86
+        },
+        {
+          "word": " on.",
+          "start": 7.86,
+          "end": 8.2
+        }
+      ],
+      "sentenceGaps": [
+        {
+          "after": " request.",
+          "before": " I",
+          "gap": 1.04
+        }
+      ],
+      "segments": [
+        {
+          "text": "Ask for the movement page. Leave the families out of the request.",
+          "pauseAfter": 0.3,
+          "speed": 0.96
+        },
+        {
+          "text": "I can help you carry a record; I will not give you people to lean on.",
+          "pauseAfter": 0,
+          "speed": 0.96
+        }
+      ],
+      "speed": 0.95,
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -6.71
+    },
+    {
+      "id": "voice-campaign-encounter-craft-a3b854d736a3",
+      "speaker": "Kerr",
+      "voice": "am_adam",
+      "text": "You want me to pay for the quiet way in. Fine. Put something of yours on the counter.",
+      "path": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-a3b854d736a3.mp3",
+      "sha256": "df9d2fe325186297614ba22045756bf2853cc8364757c32106f9f8d57e06974c",
+      "durationSeconds": 5.1896875,
+      "transcription": "You want me to pay for the quiet way in. Fine, put something of yours on the counter.",
+      "exactNormalizedWords": true,
+      "words": [
+        {
+          "word": " You",
+          "start": 0.0,
+          "end": 0.16
+        },
+        {
+          "word": " want",
+          "start": 0.16,
+          "end": 0.32
+        },
+        {
+          "word": " me",
+          "start": 0.32,
+          "end": 0.46
+        },
+        {
+          "word": " to",
+          "start": 0.46,
+          "end": 0.56
+        },
+        {
+          "word": " pay",
+          "start": 0.56,
+          "end": 0.74
+        },
+        {
+          "word": " for",
+          "start": 0.74,
+          "end": 0.94
+        },
+        {
+          "word": " the",
+          "start": 0.94,
+          "end": 1.02
+        },
+        {
+          "word": " quiet",
+          "start": 1.02,
+          "end": 1.28
+        },
+        {
+          "word": " way",
+          "start": 1.28,
+          "end": 1.6
+        },
+        {
+          "word": " in.",
+          "start": 1.6,
+          "end": 1.88
+        },
+        {
+          "word": " Fine,",
+          "start": 2.44,
+          "end": 2.8
+        },
+        {
+          "word": " put",
+          "start": 3.18,
+          "end": 3.34
+        },
+        {
+          "word": " something",
+          "start": 3.34,
+          "end": 3.6
+        },
+        {
+          "word": " of",
+          "start": 3.6,
+          "end": 3.8
+        },
+        {
+          "word": " yours",
+          "start": 3.8,
+          "end": 3.98
+        },
+        {
+          "word": " on",
+          "start": 3.98,
+          "end": 4.32
+        },
+        {
+          "word": " the",
+          "start": 4.32,
+          "end": 4.4
+        },
+        {
+          "word": " counter.",
+          "start": 4.4,
+          "end": 4.72
+        }
+      ],
+      "sentenceGaps": [
+        {
+          "after": " in.",
+          "before": " Fine,",
+          "gap": 0.56
+        }
+      ],
+      "segments": [
+        {
+          "text": "You want me to pay for the quiet way in.",
+          "pauseAfter": 0.4,
+          "speed": 0.97
+        },
+        {
+          "text": "Fine. Put something of yours on the counter.",
+          "pauseAfter": 0,
+          "speed": 0.95
+        }
+      ],
+      "speed": 0.97,
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -2.16
+    },
+    {
+      "id": "voice-campaign-encounter-craft-43e701b3e2c1",
+      "speaker": "Kerr",
+      "voice": "am_adam",
+      "text": "There is the case. There is no name in their register. We kept the bargain. The fitting is another day's work.",
+      "path": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-43e701b3e2c1.mp3",
+      "sha256": "0d405f07c24162111515991dae415337b74f9aa96aaf46c15c40ee19410809b6",
+      "durationSeconds": 7.2316875,
+      "transcription": "There is the case. There is no name in their register. We kept the bargain. The fitting is another day's work.",
+      "exactNormalizedWords": true,
+      "words": [
+        {
+          "word": " There",
+          "start": 0.0,
+          "end": 0.2
+        },
+        {
+          "word": " is",
+          "start": 0.2,
+          "end": 0.36
+        },
+        {
+          "word": " the",
+          "start": 0.36,
+          "end": 0.52
+        },
+        {
+          "word": " case.",
+          "start": 0.52,
+          "end": 0.78
+        },
+        {
+          "word": " There",
+          "start": 1.48,
+          "end": 1.52
+        },
+        {
+          "word": " is",
+          "start": 1.52,
+          "end": 1.62
+        },
+        {
+          "word": " no",
+          "start": 1.62,
+          "end": 1.82
+        },
+        {
+          "word": " name",
+          "start": 1.82,
+          "end": 2.18
+        },
+        {
+          "word": " in",
+          "start": 2.18,
+          "end": 2.36
+        },
+        {
+          "word": " their",
+          "start": 2.36,
+          "end": 2.5
+        },
+        {
+          "word": " register.",
+          "start": 2.5,
+          "end": 2.88
+        },
+        {
+          "word": " We",
+          "start": 3.66,
+          "end": 3.68
+        },
+        {
+          "word": " kept",
+          "start": 3.68,
+          "end": 3.86
+        },
+        {
+          "word": " the",
+          "start": 3.86,
+          "end": 4.04
+        },
+        {
+          "word": " bargain.",
+          "start": 4.04,
+          "end": 4.38
+        },
+        {
+          "word": " The",
+          "start": 5.24,
+          "end": 5.28
+        },
+        {
+          "word": " fitting",
+          "start": 5.28,
+          "end": 5.52
+        },
+        {
+          "word": " is",
+          "start": 5.52,
+          "end": 5.9
+        },
+        {
+          "word": " another",
+          "start": 5.9,
+          "end": 6.18
+        },
+        {
+          "word": " day's",
+          "start": 6.18,
+          "end": 6.64
+        },
+        {
+          "word": " work.",
+          "start": 6.64,
+          "end": 6.88
+        }
+      ],
+      "sentenceGaps": [
+        {
+          "after": " case.",
+          "before": " There",
+          "gap": 0.7
+        },
+        {
+          "after": " register.",
+          "before": " We",
+          "gap": 0.78
+        },
+        {
+          "after": " bargain.",
+          "before": " The",
+          "gap": 0.86
+        }
+      ],
+      "segments": [
+        {
+          "text": "There is the case.",
+          "pauseAfter": 0.24,
+          "speed": 0.99
+        },
+        {
+          "text": "There is no name in their register.",
+          "pauseAfter": 0.26,
+          "speed": 0.99
+        },
+        {
+          "text": "We kept the bargain.",
+          "pauseAfter": 0.4,
+          "speed": 0.97
+        },
+        {
+          "text": "The fitting is another day's work.",
+          "pauseAfter": 0,
+          "speed": 0.92
+        }
+      ],
+      "speed": 0.97,
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -3.82
+    },
+    {
+      "id": "voice-campaign-encounter-craft-62b70985aa0d",
+      "speaker": "Kerr",
+      "voice": "am_adam",
+      "text": "I can count what arrived. I can read what they kept. We are not going to make one of those disappear by talking about the other.",
+      "path": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-encounter-craft-62b70985aa0d.mp3",
+      "sha256": "73dc8995d53d6b973e045205994e7bb1f527d950a20a789a7ed2b1d417403359",
+      "durationSeconds": 7.6436875,
+      "transcription": "I can count what arrived. I can read what they kept. We are not going to make one of those disappear by talking about the other.\"",
+      "exactNormalizedWords": true,
+      "words": [
+        {
+          "word": " I",
+          "start": 0.0,
+          "end": 0.18
+        },
+        {
+          "word": " can",
+          "start": 0.18,
+          "end": 0.34
+        },
+        {
+          "word": " count",
+          "start": 0.34,
+          "end": 0.64
+        },
+        {
+          "word": " what",
+          "start": 0.64,
+          "end": 0.84
+        },
+        {
+          "word": " arrived.",
+          "start": 0.84,
+          "end": 1.22
+        },
+        {
+          "word": " I",
+          "start": 1.82,
+          "end": 1.94
+        },
+        {
+          "word": " can",
+          "start": 1.94,
+          "end": 2.08
+        },
+        {
+          "word": " read",
+          "start": 2.08,
+          "end": 2.32
+        },
+        {
+          "word": " what",
+          "start": 2.32,
+          "end": 2.6
+        },
+        {
+          "word": " they",
+          "start": 2.6,
+          "end": 2.78
+        },
+        {
+          "word": " kept.",
+          "start": 2.78,
+          "end": 3.08
+        },
+        {
+          "word": " We",
+          "start": 3.74,
+          "end": 3.9
+        },
+        {
+          "word": " are",
+          "start": 3.9,
+          "end": 4.0
+        },
+        {
+          "word": " not",
+          "start": 4.0,
+          "end": 4.16
+        },
+        {
+          "word": " going",
+          "start": 4.16,
+          "end": 4.48
+        },
+        {
+          "word": " to",
+          "start": 4.48,
+          "end": 4.66
+        },
+        {
+          "word": " make",
+          "start": 4.66,
+          "end": 4.78
+        },
+        {
+          "word": " one",
+          "start": 4.78,
+          "end": 4.96
+        },
+        {
+          "word": " of",
+          "start": 4.96,
+          "end": 5.06
+        },
+        {
+          "word": " those",
+          "start": 5.06,
+          "end": 5.22
+        },
+        {
+          "word": " disappear",
+          "start": 5.22,
+          "end": 5.64
+        },
+        {
+          "word": " by",
+          "start": 5.64,
+          "end": 6.22
+        },
+        {
+          "word": " talking",
+          "start": 6.22,
+          "end": 6.48
+        },
+        {
+          "word": " about",
+          "start": 6.48,
+          "end": 6.88
+        },
+        {
+          "word": " the",
+          "start": 6.88,
+          "end": 7.08
+        },
+        {
+          "word": " other.\"",
+          "start": 7.08,
+          "end": 7.62
+        }
+      ],
+      "sentenceGaps": [
+        {
+          "after": " arrived.",
+          "before": " I",
+          "gap": 0.6
+        },
+        {
+          "after": " kept.",
+          "before": " We",
+          "gap": 0.66
+        }
+      ],
+      "segments": [
+        {
+          "text": "I can count what arrived.",
+          "pauseAfter": 0.24,
+          "speed": 0.98
+        },
+        {
+          "text": "I can read what they kept.",
+          "pauseAfter": 0.4,
+          "speed": 0.98
+        },
+        {
+          "text": "We are not going to make one of those disappear by talking about the other.",
+          "pauseAfter": 0,
+          "speed": 0.95
+        }
+      ],
+      "speed": 0.97,
+      "integratedLufs": -23.49,
+      "truePeakDbtp": -4.25
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-0a1b8bb22589",
+      "speaker": "Sera",
+      "voice": "af_bella",
+      "text": "Wait. Let me hear that one again.",
+      "path": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-emotional-payoff-0a1b8bb22589.mp3",
+      "sha256": "72b7ed1c7b6b8ee117e0b6ebf38c0d44acca5d0cfa3c6c51f6ed1a1ac6fc1771",
+      "durationSeconds": 2.84,
+      "transcription": "Wait, let me hear that one again.",
+      "exactNormalizedWords": true,
+      "words": [
+        {
+          "word": " Wait,",
+          "start": 0.0,
+          "end": 0.34
+        },
+        {
+          "word": " let",
+          "start": 0.88,
+          "end": 1.36
+        },
+        {
+          "word": " me",
+          "start": 1.36,
+          "end": 1.46
+        },
+        {
+          "word": " hear",
+          "start": 1.46,
+          "end": 1.68
+        },
+        {
+          "word": " that",
+          "start": 1.68,
+          "end": 1.9
+        },
+        {
+          "word": " one",
+          "start": 1.9,
+          "end": 2.06
+        },
+        {
+          "word": " again.",
+          "start": 2.06,
+          "end": 2.3
+        }
+      ],
+      "sentenceGaps": [],
+      "segments": [
+        {
+          "text": "Wait.",
+          "pauseAfter": 0.32,
+          "speed": 0.92
+        },
+        {
+          "text": "Let me hear that one again.",
+          "pauseAfter": 0,
+          "speed": 0.93
+        }
+      ],
+      "speed": 0.92,
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -4.85
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-26350d370631",
+      "speaker": "Ives",
+      "voice": "am_eric",
+      "text": "Mind the edge. Keep that page in one piece.",
+      "path": "/workspace/generated_audio/aaa-performance-direction/first-pass/voice-campaign-emotional-payoff-26350d370631.mp3",
+      "sha256": "bcd650c8e634b2e5284f1ec3842079d649a32aa7d8f02817b977982144e7fffe",
+      "durationSeconds": 3.045375,
+      "transcription": "Mind the edge, keep that page in one piece.",
+      "exactNormalizedWords": true,
+      "words": [
+        {
+          "word": " Mind",
+          "start": 0.0,
+          "end": 0.32
+        },
+        {
+          "word": " the",
+          "start": 0.32,
+          "end": 0.48
+        },
+        {
+          "word": " edge,",
+          "start": 0.48,
+          "end": 0.68
+        },
+        {
+          "word": " keep",
+          "start": 0.98,
+          "end": 1.26
+        },
+        {
+          "word": " that",
+          "start": 1.26,
+          "end": 1.44
+        },
+        {
+          "word": " page",
+          "start": 1.44,
+          "end": 1.72
+        },
+        {
+          "word": " in",
+          "start": 1.72,
+          "end": 1.94
+        },
+        {
+          "word": " one",
+          "start": 1.94,
+          "end": 2.08
+        },
+        {
+          "word": " piece.",
+          "start": 2.08,
+          "end": 2.44
+        }
+      ],
+      "sentenceGaps": [],
+      "segments": [
+        {
+          "text": "Mind the edge. Keep that page in one piece.",
+          "pauseAfter": 0,
+          "speed": 0.94
+        }
+      ],
+      "speed": 0.96,
+      "integratedLufs": -23.51,
+      "truePeakDbtp": -6.06
+    }
+  ],
+  "findings": [
+    "Two word-timestamp baseline ASR passes added trailing words; previous phase transcripts remain unchanged. ASR variability is retained, not proof of audible added words.",
+    "First Edda challenge candidate transcribed You have as You've; slower same-word retake matched.",
+    "First introduction/ledger candidates increased pause spacing. Connect related statements within one synthesis phrase.",
+    "Introduction second/third candidates transcribed ask as asked; retain original rather than changing authored text or normalizing a mismatch away.",
+    "Kerr agreement stays attached to its demand; factual settlement clauses connect while the treatment boundary remains distinct.",
+    "Sera's Wait has a separate attention beat; Ives's practical caution becomes one connected phrase.",
+    "Original files, gain metadata, all807 preceding media bytes and all219 canonical campaigns stay intact. New alternatives have one exact-original fallback on download/decode failure.",
+    "Alternative delivery loudness matches the preceding -23.5LUFS target; signal and timing differences do not establish emotional or independent acting acceptance."
+  ],
+  "timingComparison": [
+    {
+      "id": "voice-campaign-encounter-craft-570639a0f84d",
+      "afterWord": "have",
+      "beforeWord": "made",
+      "beforeGapSeconds": 0.0,
+      "afterGapSeconds": 0.0
+    },
+    {
+      "id": "voice-campaign-encounter-craft-cd0a455809ce",
+      "afterWord": "page",
+      "beforeWord": "leave",
+      "beforeGapSeconds": 0.94,
+      "afterGapSeconds": 0.44
+    },
+    {
+      "id": "voice-campaign-encounter-craft-a3b854d736a3",
+      "afterWord": "fine",
+      "beforeWord": "put",
+      "beforeGapSeconds": 0.56,
+      "afterGapSeconds": 0.38
+    },
+    {
+      "id": "voice-campaign-encounter-craft-43e701b3e2c1",
+      "afterWord": "register",
+      "beforeWord": "we",
+      "beforeGapSeconds": 0.88,
+      "afterGapSeconds": 0.78
+    },
+    {
+      "id": "voice-campaign-encounter-craft-43e701b3e2c1",
+      "afterWord": "bargain",
+      "beforeWord": "the",
+      "beforeGapSeconds": 0.8,
+      "afterGapSeconds": 0.86
+    },
+    {
+      "id": "voice-campaign-encounter-craft-62b70985aa0d",
+      "afterWord": "arrived",
+      "beforeWord": "i",
+      "beforeGapSeconds": 0.8,
+      "afterGapSeconds": 0.6
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-0a1b8bb22589",
+      "afterWord": "wait",
+      "beforeWord": "let",
+      "beforeGapSeconds": 0.42,
+      "afterGapSeconds": 0.54
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-26350d370631",
+      "afterWord": "edge",
+      "beforeWord": "keep",
+      "beforeGapSeconds": 0.72,
+      "afterGapSeconds": 0.3
+    }
+  ],
+  "asrModel": {
+    "name": "Systran/faster-whisper-base.en",
+    "files": [
+      {
+        "name": "models--Systran--faster-whisper-base.en/snapshots/3d3d5dee26484f91867d81cb899cfcf72b96be6c/config.json",
+        "sha256": "f3bc3821e9fc76a27bae538e11ae5b677dcdd352b4600429ce7951d398569aeb"
+      },
+      {
+        "name": "models--Systran--faster-whisper-base.en/snapshots/3d3d5dee26484f91867d81cb899cfcf72b96be6c/model.bin",
+        "sha256": "2a166925539a16005f14ff328359f9b9adb9dc4fb631bb3b227526862e93e2ef"
+      },
+      {
+        "name": "models--Systran--faster-whisper-base.en/snapshots/3d3d5dee26484f91867d81cb899cfcf72b96be6c/tokenizer.json",
+        "sha256": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df"
+      }
+    ],
+    "runtime": "faster-whisper 1.2.1,CPU int8",
+    "settings": {
+      "cpu_threads": 2,
+      "num_workers": 1,
+      "language": "en",
+      "beam_size": 5,
+      "temperature": 0,
+      "vad_filter": false,
+      "condition_on_previous_text": false,
+      "word_timestamps": true,
+      "initial_prompt": null
+    }
+  }
+}

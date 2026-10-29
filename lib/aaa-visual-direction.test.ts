@@ -1,3 +1,4 @@
+import performance from "../qa/media/aaa-performance-direction.json";
 import assert from "node:assert/strict";
 import { it } from "node:test";
 import { createHash } from "node:crypto";
@@ -32,7 +33,7 @@ it("preserves every one of 219 campaigns, 15,496 visits, exact voices and origin
   }
   assert.equal(rows.length, phase.baseline.visits); assert.equal(hash(JSON.stringify(rows)), phase.baseline.campaignSha256);
   const additions = phase.artAssets.flatMap(a => a.files).map(f => f.path);
-  const media = [...files("public/art"), ...files("public/audio")].filter(f => !additions.includes(f)).sort().map(path => ({ path, sha256: hash(readFileSync(path)) }));
+  const media = [...files("public/art"), ...files("public/audio")].filter(f => !additions.includes(f) && !performance.deliveries.some(d => d.path === f)).sort().map(path => ({ path, sha256: hash(readFileSync(path)) }));
   assert.deepEqual(media, phase.baseline.media);
 });
 it("directs precisely fourteen actual places/actors with no unknown-scene or actor-only fallback", () => {
