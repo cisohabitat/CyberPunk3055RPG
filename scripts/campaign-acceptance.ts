@@ -23,8 +23,10 @@ type BrowserReport = {
   finalAudio: { liveSources: number; sourcesCreated: number; sourcesDisposed: number; buffersCleared: number };
 };
 
-const [reportsDirectory, output = "qa/production/reports/aaa-campaign-acceptance.json"] = process.argv.slice(2);
-assert.ok(reportsDirectory, "Usage: node --import tsx scripts/campaign-acceptance.ts REPORT_DIRECTORY [OUTPUT_JSON]");
+const [reportsDirectory, output = "qa/production/reports/aaa-campaign-acceptance.json", phaseArgument = "6"] = process.argv.slice(2);
+assert.ok(reportsDirectory, "Usage: node --import tsx scripts/campaign-acceptance.ts REPORT_DIRECTORY [OUTPUT_JSON] [PHASE]");
+const phase = Number(phaseArgument);
+assert.ok(Number.isSafeInteger(phase) && phase > 0, "Phase must be a positive integer");
 const sourceFiles = [...files("app"), ...files("components"), ...files("lib"), ...files("qa/routes"), ...files("qa/media"), "qa/production/campaign-observation.ts", "qa/production/keyboard.ts", "qa/production/audio-review.ts", "scripts/player-experience.ts", "scripts/campaign-acceptance.ts", "qa/editorial/aaa-campaign-profiles.json"];
 const sourceFingerprint = hash(JSON.stringify(sourceFiles.map(path => ({ path, sha256: hash(readFileSync(path)) }))));
 const visited = new Set<string>(), available = new Set<string>(), selected = new Set<string>();
@@ -88,7 +90,7 @@ assert.deepEqual([...new Set(browserCampaigns.map(row => row.complication))].sor
 assert.ok(browserCampaigns.some(row => row.failedChecks > 0), "Actual failed dice required");
 assert.ok(browserCampaigns.some(row => row.minimumCreds === 0), "Scarce-resource run required");
 const result = {
-  version: 1, phase: 6, revision: execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8" }).trim(),
+  version: 1, phase, revision: execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8" }).trim(),
   dirty: Boolean(execFileSync("git", ["status", "--porcelain"], { encoding: "utf8" }).trim()), sourceFingerprint,
   method: "Source-familiar AI proxy over fixed authored dice and keyboard UI runs. No blind players, physical devices, screen-reader listening, perceptual audio scores or automatic craft grade.",
   source: { routes: sourceCampaigns.length, visits: sourceVisits, visitedScenes: visited.size, totalScenes: Object.keys(SCENES).length, unvisitedScenes: Object.keys(SCENES).filter(id => !visited.has(id)).sort(), presentedSceneChoices: available.size, selectedSceneChoices: selected.size, campaigns: sourceCampaigns },

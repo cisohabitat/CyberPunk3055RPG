@@ -9,6 +9,7 @@ import { ArchiveCatalog } from "./ArchiveCatalog";
 import { choiceSection } from "@/lib/choice-sections";
 import { canalThreads } from "@/lib/canal-threads";
 import { decisionFirstScene } from "@/lib/decision-pacing";
+import { workspaceFlowScene } from "@/lib/workspace-flow";
 import { choicePresentation, DISTRICT_PRESENTATIONS, sceneDistrict } from "@/lib/visual-presentation";
 import { chapterPresentation } from "@/lib/chapter-presentation";
 import { ChapterTransition } from "./ChapterTransition";
@@ -369,6 +370,7 @@ export function PlayScreen({
             id="scene-top"
             tabIndex={-1}
             data-testid="scene"
+            data-workspace-flow={workspaceFlowScene(scene.id) ? "compact" : undefined}
             data-district={visualDistrict}
             style={{ backgroundImage: preferences.artwork === "none" || illustration ? undefined : `linear-gradient(180deg, rgba(9,8,13,0.72), rgba(9,8,13,0.94)), url(${sceneBackdrop(scene.id, scene.location)})` }}
           >

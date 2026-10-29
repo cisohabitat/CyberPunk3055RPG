@@ -1785,3 +1785,21 @@ html[data-motion="reduce"] .location-entry, html[data-motion="reduce"] .portrait
 .question-records button { width: 100%; min-height: 45px; text-align: left; white-space: normal; }
 .question-records p { margin-block: .5rem 0; }
 .question-read-state { color: var(--muted); font-size: .85rem; }
+
+/* Active work keeps every word/control and its order. Trim frames, not reading metrics. */
+.scene[data-workspace-flow="compact"] .decision-context { margin-block: .8rem; }
+.scene[data-workspace-flow="compact"] .decision-context .objective-brief { margin-block: .65rem; padding-block: .55rem; }
+.scene[data-workspace-flow="compact"] .transfer-brief { margin-block: .65rem; padding: .6rem; }
+.scene[data-workspace-flow="compact"] .testimony-sources > div + div { margin-top: .6rem; }
+.scene[data-workspace-flow="compact"] .question-desk { margin-block: .8rem; padding-block: .6rem; }
+.scene[data-workspace-flow="compact"] .question-desk h2 { margin: .3rem 0 .5rem; }
+.scene[data-workspace-flow="compact"] .question-desk > .hint { margin-block: .4rem; }
+.scene[data-workspace-flow="compact"] .question-records { margin-block: .65rem; gap: .5rem; }
+.scene[data-workspace-flow="compact"] .question-records > li { padding: .5rem; }
+.scene[data-workspace-flow="compact"] .question-records h3 { margin-bottom: .4rem; }
+.scene[data-workspace-flow="compact"] .question-records p { margin-top: .35rem; }
+.scene[data-workspace-flow="compact"] .route-board { margin-block: .65rem; padding: .5rem; }
+.scene[data-workspace-flow="compact"] .route-lanes { gap: .6rem; }
+.scene[data-workspace-flow="compact"] .route-lanes h3 { margin-block: .65rem .4rem; }
+.scene[data-workspace-flow="compact"] .route-lanes li { padding: .4rem; margin-bottom: .4rem; }
+.scene[data-workspace-flow="compact"] .route-summary { padding-top: .6rem; }

@@ -1,0 +1,1121 @@
+{
+  "version": 1,
+  "phase": 7,
+  "status": "Validated pre-publication candidate; full exact-commit hosted CI and live verification pending",
+  "candidateBeforeCommit": "6d83810b3f1ab6e9458a99d79d175f2d8de748a3",
+  "dirty": true,
+  "grade": 8.8,
+  "sourceFingerprint": "75f74da3efb8c7457509e1ec245b97d5907a55b7af15650bcda9b7c08fe811b0",
+  "method": "Source-familiar AI proxy over fixed authored dice and keyboard UI runs. No blind players, physical devices, screen-reader listening, perceptual audio scores or automatic craft grade.",
+  "scope": {
+    "scenes": [
+      "act2_craft_archive",
+      "act2_craft_archive_challenge",
+      "act2_craft_archive_issuer",
+      "act2_craft_archive_ledger",
+      "act2_route_map",
+      "act2_route_exit",
+      "act2_route_review",
+      "act2_route_crossing",
+      "act3_testimony_review",
+      "act3_testimony_consent",
+      "act3_testimony_nia",
+      "act3_testimony_hearing",
+      "act3_testimony_correction",
+      "act3_testimony_record"
+    ],
+    "presentation": "Attribute plus scoped margins/padding/gaps only; no text/order/typography/target/handler/save/audio/art changes",
+    "newScenes": 0,
+    "newQuotations": 0,
+    "newPublicMedia": 0
+  },
+  "baseline": "qa/editorial/workspace-flow-baseline.json",
+  "acceptance": "qa/editorial/workspace-flow-acceptance.json",
+  "preservedPreviousRelease": "qa/editorial/aaa-campaign-acceptance-release.json",
+  "captures": [
+    {
+      "sceneId": "act2_craft_archive",
+      "width": 320,
+      "before": 2039,
+      "after": 1840,
+      "reduction": 199,
+      "textTypographyAndFocusOrder": "identical"
+    },
+    {
+      "sceneId": "act2_craft_archive",
+      "width": 390,
+      "before": 2100,
+      "after": 1867,
+      "reduction": 233,
+      "textTypographyAndFocusOrder": "identical"
+    },
+    {
+      "sceneId": "act2_route_exit",
+      "width": 1440,
+      "before": 1181,
+      "after": 1107,
+      "reduction": 74,
+      "textTypographyAndFocusOrder": "identical"
+    },
+    {
+      "sceneId": "act3_testimony_hearing",
+      "width": 390,
+      "before": 1722,
+      "after": 1645,
+      "reduction": 77,
+      "textTypographyAndFocusOrder": "identical"
+    }
+  ],
+  "campaigns": [
+    {
+      "profile": "deferred",
+      "visits": 63,
+      "reloads": 62,
+      "tabs": 574,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 0,
+        "strain": 3,
+        "rolls": [
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "gaps": [
+        {
+          "sceneId": "act2_route_map",
+          "step": 33,
+          "before": 1645,
+          "after": 1485,
+          "reduction": 160
+        },
+        {
+          "sceneId": "act2_route_exit",
+          "step": 34,
+          "before": 1934,
+          "after": 1760,
+          "reduction": 174
+        },
+        {
+          "sceneId": "act2_route_review",
+          "step": 35,
+          "before": 1490,
+          "after": 1365,
+          "reduction": 125
+        },
+        {
+          "sceneId": "act2_route_crossing",
+          "step": 36,
+          "before": 1519,
+          "after": 1394,
+          "reduction": 125
+        },
+        {
+          "sceneId": "act2_craft_archive",
+          "step": 42,
+          "before": 1505,
+          "after": 1319,
+          "reduction": 186
+        },
+        {
+          "sceneId": "act2_craft_archive",
+          "step": 43,
+          "before": 1665,
+          "after": 1476,
+          "reduction": 189
+        },
+        {
+          "sceneId": "act2_craft_archive",
+          "step": 44,
+          "before": 1859,
+          "after": 1667,
+          "reduction": 192
+        },
+        {
+          "sceneId": "act2_craft_archive",
+          "step": 45,
+          "before": 2090,
+          "after": 1891,
+          "reduction": 199
+        },
+        {
+          "sceneId": "act2_craft_archive_issuer",
+          "step": 46,
+          "before": 468,
+          "after": 450,
+          "reduction": 18
+        },
+        {
+          "sceneId": "act2_craft_archive_issuer",
+          "step": 47,
+          "before": 468,
+          "after": 450,
+          "reduction": 18
+        }
+      ],
+      "comparison": "Exact story/choices/metadata/summary order/final resources/Tab counts preserved. All noncohort gaps unchanged; affected gaps only decrease."
+    },
+    {
+      "profile": "denied",
+      "visits": 82,
+      "reloads": 81,
+      "tabs": 697,
+      "final": {
+        "sceneId": "ending_witness",
+        "creds": 370,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "gaps": [
+        {
+          "sceneId": "act2_route_map",
+          "step": 39,
+          "before": 984,
+          "after": 883,
+          "reduction": 101
+        },
+        {
+          "sceneId": "act2_route_exit",
+          "step": 40,
+          "before": 1181,
+          "after": 1107,
+          "reduction": 74
+        },
+        {
+          "sceneId": "act2_route_exit",
+          "step": 42,
+          "before": 1181,
+          "after": 1107,
+          "reduction": 74
+        },
+        {
+          "sceneId": "act2_route_review",
+          "step": 43,
+          "before": 844,
+          "after": 786,
+          "reduction": 58
+        },
+        {
+          "sceneId": "act2_route_review",
+          "step": 45,
+          "before": 844,
+          "after": 786,
+          "reduction": 58
+        },
+        {
+          "sceneId": "act2_route_crossing",
+          "step": 46,
+          "before": 899,
+          "after": 841,
+          "reduction": 58
+        },
+        {
+          "sceneId": "act3_testimony_review",
+          "step": 76,
+          "before": 899,
+          "after": 856,
+          "reduction": 43
+        },
+        {
+          "sceneId": "act3_testimony_consent",
+          "step": 77,
+          "before": 868,
+          "after": 824,
+          "reduction": 44
+        },
+        {
+          "sceneId": "act3_testimony_hearing",
+          "step": 78,
+          "before": 899,
+          "after": 856,
+          "reduction": 43
+        },
+        {
+          "sceneId": "act3_testimony_record",
+          "step": 79,
+          "before": 765,
+          "after": 721,
+          "reduction": 44
+        }
+      ],
+      "comparison": "Exact story/choices/metadata/summary order/final resources/Tab counts preserved. All noncohort gaps unchanged; affected gaps only decrease."
+    },
+    {
+      "profile": "names",
+      "visits": 89,
+      "reloads": 88,
+      "tabs": 760,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 390,
+        "strain": 3,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "gaps": [
+        {
+          "sceneId": "act2_route_map",
+          "step": 38,
+          "before": 1348,
+          "after": 1251,
+          "reduction": 97
+        },
+        {
+          "sceneId": "act2_route_exit",
+          "step": 39,
+          "before": 1610,
+          "after": 1505,
+          "reduction": 105
+        },
+        {
+          "sceneId": "act2_route_exit",
+          "step": 41,
+          "before": 1610,
+          "after": 1505,
+          "reduction": 105
+        },
+        {
+          "sceneId": "act2_route_review",
+          "step": 42,
+          "before": 1220,
+          "after": 1098,
+          "reduction": 122
+        },
+        {
+          "sceneId": "act2_route_review",
+          "step": 44,
+          "before": 1220,
+          "after": 1098,
+          "reduction": 122
+        },
+        {
+          "sceneId": "act2_route_crossing",
+          "step": 45,
+          "before": 1250,
+          "after": 1161,
+          "reduction": 89
+        },
+        {
+          "sceneId": "act2_craft_archive",
+          "step": 51,
+          "before": 1621,
+          "after": 1434,
+          "reduction": 187
+        },
+        {
+          "sceneId": "act2_craft_archive",
+          "step": 52,
+          "before": 1747,
+          "after": 1554,
+          "reduction": 193
+        },
+        {
+          "sceneId": "act2_craft_archive",
+          "step": 53,
+          "before": 1907,
+          "after": 1710,
+          "reduction": 197
+        },
+        {
+          "sceneId": "act2_craft_archive",
+          "step": 54,
+          "before": 2100,
+          "after": 1867,
+          "reduction": 233
+        },
+        {
+          "sceneId": "act2_craft_archive_challenge",
+          "step": 55,
+          "before": 746,
+          "after": 728,
+          "reduction": 18
+        },
+        {
+          "sceneId": "act2_craft_archive",
+          "step": 56,
+          "before": 2100,
+          "after": 1867,
+          "reduction": 233
+        },
+        {
+          "sceneId": "act2_craft_archive_issuer",
+          "step": 57,
+          "before": 746,
+          "after": 728,
+          "reduction": 18
+        },
+        {
+          "sceneId": "act2_craft_archive_challenge",
+          "step": 58,
+          "before": 746,
+          "after": 728,
+          "reduction": 18
+        },
+        {
+          "sceneId": "act2_craft_archive",
+          "step": 59,
+          "before": 2100,
+          "after": 1867,
+          "reduction": 233
+        },
+        {
+          "sceneId": "act2_craft_archive_issuer",
+          "step": 60,
+          "before": 746,
+          "after": 728,
+          "reduction": 18
+        },
+        {
+          "sceneId": "act2_craft_archive_issuer",
+          "step": 61,
+          "before": 746,
+          "after": 728,
+          "reduction": 18
+        },
+        {
+          "sceneId": "act3_testimony_review",
+          "step": 83,
+          "before": 1625,
+          "after": 1548,
+          "reduction": 77
+        },
+        {
+          "sceneId": "act3_testimony_consent",
+          "step": 84,
+          "before": 1498,
+          "after": 1421,
+          "reduction": 77
+        },
+        {
+          "sceneId": "act3_testimony_hearing",
+          "step": 85,
+          "before": 1654,
+          "after": 1578,
+          "reduction": 76
+        },
+        {
+          "sceneId": "act3_testimony_record",
+          "step": 86,
+          "before": 1498,
+          "after": 1421,
+          "reduction": 77
+        }
+      ],
+      "comparison": "Exact story/choices/metadata/summary order/final resources/Tab counts preserved. All noncohort gaps unchanged; affected gaps only decrease."
+    },
+    {
+      "profile": "listed-sound",
+      "visits": 87,
+      "reloads": 86,
+      "tabs": 929,
+      "final": {
+        "sceneId": "ending_listed",
+        "creds": 470,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "completedVoices": 41,
+      "shotReviews": 51,
+      "gaps": [
+        {
+          "sceneId": "act2_route_map",
+          "step": 39,
+          "before": 1348,
+          "after": 1251,
+          "reduction": 97
+        },
+        {
+          "sceneId": "act2_route_exit",
+          "step": 40,
+          "before": 1637,
+          "after": 1532,
+          "reduction": 105
+        },
+        {
+          "sceneId": "act2_route_exit",
+          "step": 42,
+          "before": 1637,
+          "after": 1532,
+          "reduction": 105
+        },
+        {
+          "sceneId": "act2_route_review",
+          "step": 43,
+          "before": 1220,
+          "after": 1098,
+          "reduction": 122
+        },
+        {
+          "sceneId": "act2_craft_archive",
+          "step": 48,
+          "before": 1621,
+          "after": 1434,
+          "reduction": 187
+        },
+        {
+          "sceneId": "act2_craft_archive",
+          "step": 49,
+          "before": 1747,
+          "after": 1554,
+          "reduction": 193
+        },
+        {
+          "sceneId": "act2_craft_archive",
+          "step": 50,
+          "before": 1907,
+          "after": 1710,
+          "reduction": 197
+        },
+        {
+          "sceneId": "act2_craft_archive",
+          "step": 51,
+          "before": 2100,
+          "after": 1867,
+          "reduction": 233
+        },
+        {
+          "sceneId": "act2_craft_archive_issuer",
+          "step": 52,
+          "before": 746,
+          "after": 728,
+          "reduction": 18
+        },
+        {
+          "sceneId": "act2_craft_archive_issuer",
+          "step": 53,
+          "before": 746,
+          "after": 728,
+          "reduction": 18
+        },
+        {
+          "sceneId": "act2_route_review",
+          "step": 57,
+          "before": 1220,
+          "after": 1098,
+          "reduction": 122
+        },
+        {
+          "sceneId": "act2_route_crossing",
+          "step": 58,
+          "before": 1250,
+          "after": 1161,
+          "reduction": 89
+        },
+        {
+          "sceneId": "act3_testimony_review",
+          "step": 81,
+          "before": 1625,
+          "after": 1548,
+          "reduction": 77
+        },
+        {
+          "sceneId": "act3_testimony_consent",
+          "step": 82,
+          "before": 1498,
+          "after": 1421,
+          "reduction": 77
+        },
+        {
+          "sceneId": "act3_testimony_hearing",
+          "step": 83,
+          "before": 1654,
+          "after": 1578,
+          "reduction": 76
+        },
+        {
+          "sceneId": "act3_testimony_record",
+          "step": 84,
+          "before": 1498,
+          "after": 1421,
+          "reduction": 77
+        }
+      ],
+      "comparison": "Exact story/choices/metadata/summary order/final resources/Tab counts preserved. All noncohort gaps unchanged; affected gaps only decrease."
+    },
+    {
+      "profile": "nerve",
+      "visits": 77,
+      "reloads": 30,
+      "tabs": 533,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 350,
+        "strain": 5,
+        "rolls": [
+          1,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "gaps": [
+        {
+          "sceneId": "act3_testimony_review",
+          "step": 70,
+          "before": 1787,
+          "after": 1706,
+          "reduction": 81
+        },
+        {
+          "sceneId": "act3_testimony_consent",
+          "step": 71,
+          "before": 1660,
+          "after": 1578,
+          "reduction": 82
+        },
+        {
+          "sceneId": "act3_testimony_hearing",
+          "step": 72,
+          "before": 1817,
+          "after": 1735,
+          "reduction": 82
+        },
+        {
+          "sceneId": "act3_testimony_correction",
+          "step": 73,
+          "before": 1817,
+          "after": 1735,
+          "reduction": 82
+        },
+        {
+          "sceneId": "act3_testimony_record",
+          "step": 74,
+          "before": 1565,
+          "after": 1488,
+          "reduction": 77
+        }
+      ],
+      "comparison": "Exact story/choices/metadata/summary order/final resources/Tab counts preserved. All noncohort gaps unchanged; affected gaps only decrease."
+    },
+    {
+      "profile": "face-failed",
+      "visits": 75,
+      "reloads": 27,
+      "tabs": 580,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 345,
+        "strain": 0,
+        "rolls": [
+          10,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "gaps": [
+        {
+          "sceneId": "act2_route_map",
+          "step": 46,
+          "before": 984,
+          "after": 883,
+          "reduction": 101
+        },
+        {
+          "sceneId": "act2_route_exit",
+          "step": 47,
+          "before": 1092,
+          "after": 1018,
+          "reduction": 74
+        },
+        {
+          "sceneId": "act2_route_review",
+          "step": 48,
+          "before": 756,
+          "after": 698,
+          "reduction": 58
+        },
+        {
+          "sceneId": "act2_route_crossing",
+          "step": 49,
+          "before": 756,
+          "after": 698,
+          "reduction": 58
+        },
+        {
+          "sceneId": "act3_testimony_review",
+          "step": 68,
+          "before": 1028,
+          "after": 980,
+          "reduction": 48
+        },
+        {
+          "sceneId": "act3_testimony_consent",
+          "step": 69,
+          "before": 1028,
+          "after": 980,
+          "reduction": 48
+        },
+        {
+          "sceneId": "act3_testimony_nia",
+          "step": 70,
+          "before": 1028,
+          "after": 980,
+          "reduction": 48
+        },
+        {
+          "sceneId": "act3_testimony_hearing",
+          "step": 71,
+          "before": 933,
+          "after": 890,
+          "reduction": 43
+        },
+        {
+          "sceneId": "act3_testimony_record",
+          "step": 72,
+          "before": 894,
+          "after": 845,
+          "reduction": 49
+        }
+      ],
+      "comparison": "Exact story/choices/metadata/summary order/final resources/Tab counts preserved. All noncohort gaps unchanged; affected gaps only decrease."
+    },
+    {
+      "profile": "archive-failed",
+      "visits": 64,
+      "reloads": 63,
+      "tabs": 585,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 0,
+        "strain": 4,
+        "rolls": [
+          1,
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "gaps": [
+        {
+          "sceneId": "act2_route_map",
+          "step": 33,
+          "before": 1645,
+          "after": 1485,
+          "reduction": 160
+        },
+        {
+          "sceneId": "act2_route_exit",
+          "step": 34,
+          "before": 1934,
+          "after": 1760,
+          "reduction": 174
+        },
+        {
+          "sceneId": "act2_route_review",
+          "step": 35,
+          "before": 1490,
+          "after": 1365,
+          "reduction": 125
+        },
+        {
+          "sceneId": "act2_route_crossing",
+          "step": 36,
+          "before": 1519,
+          "after": 1394,
+          "reduction": 125
+        },
+        {
+          "sceneId": "act2_craft_archive",
+          "step": 42,
+          "before": 1505,
+          "after": 1319,
+          "reduction": 186
+        },
+        {
+          "sceneId": "act2_craft_archive",
+          "step": 43,
+          "before": 1665,
+          "after": 1476,
+          "reduction": 189
+        },
+        {
+          "sceneId": "act2_craft_archive",
+          "step": 44,
+          "before": 1859,
+          "after": 1667,
+          "reduction": 192
+        },
+        {
+          "sceneId": "act2_craft_archive",
+          "step": 45,
+          "before": 2090,
+          "after": 1891,
+          "reduction": 199
+        },
+        {
+          "sceneId": "act2_craft_archive_issuer",
+          "step": 46,
+          "before": 468,
+          "after": 450,
+          "reduction": 18
+        },
+        {
+          "sceneId": "act2_craft_archive_issuer",
+          "step": 47,
+          "before": 468,
+          "after": 450,
+          "reduction": 18
+        }
+      ],
+      "comparison": "Exact story/choices/metadata/summary order/final resources/Tab counts preserved. All noncohort gaps unchanged; affected gaps only decrease."
+    },
+    {
+      "profile": "canceled",
+      "visits": 75,
+      "reloads": 74,
+      "tabs": 619,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 390,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "gaps": [
+        {
+          "sceneId": "act2_route_map",
+          "step": 39,
+          "before": 1348,
+          "after": 1251,
+          "reduction": 97
+        },
+        {
+          "sceneId": "act2_route_exit",
+          "step": 40,
+          "before": 1637,
+          "after": 1532,
+          "reduction": 105
+        },
+        {
+          "sceneId": "act2_route_review",
+          "step": 41,
+          "before": 1247,
+          "after": 1125,
+          "reduction": 122
+        },
+        {
+          "sceneId": "act3_testimony_review",
+          "step": 69,
+          "before": 1625,
+          "after": 1548,
+          "reduction": 77
+        },
+        {
+          "sceneId": "act3_testimony_consent",
+          "step": 70,
+          "before": 1498,
+          "after": 1421,
+          "reduction": 77
+        },
+        {
+          "sceneId": "act3_testimony_hearing",
+          "step": 71,
+          "before": 1654,
+          "after": 1578,
+          "reduction": 76
+        },
+        {
+          "sceneId": "act3_testimony_record",
+          "step": 72,
+          "before": 1498,
+          "after": 1421,
+          "reduction": 77
+        }
+      ],
+      "comparison": "Exact story/choices/metadata/summary order/final resources/Tab counts preserved. All noncohort gaps unchanged; affected gaps only decrease."
+    },
+    {
+      "profile": "nerve-handling-failed",
+      "visits": 76,
+      "reloads": 28,
+      "tabs": 577,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 355,
+        "strain": 3,
+        "rolls": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "gaps": [
+        {
+          "sceneId": "act2_route_map",
+          "step": 47,
+          "before": 1348,
+          "after": 1251,
+          "reduction": 97
+        },
+        {
+          "sceneId": "act2_route_exit",
+          "step": 48,
+          "before": 1637,
+          "after": 1532,
+          "reduction": 105
+        },
+        {
+          "sceneId": "act2_route_review",
+          "step": 49,
+          "before": 1281,
+          "after": 1192,
+          "reduction": 89
+        },
+        {
+          "sceneId": "act2_route_crossing",
+          "step": 50,
+          "before": 1310,
+          "after": 1221,
+          "reduction": 89
+        },
+        {
+          "sceneId": "act3_testimony_review",
+          "step": 69,
+          "before": 1754,
+          "after": 1672,
+          "reduction": 82
+        },
+        {
+          "sceneId": "act3_testimony_consent",
+          "step": 70,
+          "before": 1754,
+          "after": 1672,
+          "reduction": 82
+        },
+        {
+          "sceneId": "act3_testimony_nia",
+          "step": 71,
+          "before": 1754,
+          "after": 1672,
+          "reduction": 82
+        },
+        {
+          "sceneId": "act3_testimony_hearing",
+          "step": 72,
+          "before": 1688,
+          "after": 1611,
+          "reduction": 77
+        },
+        {
+          "sceneId": "act3_testimony_record",
+          "step": 73,
+          "before": 1627,
+          "after": 1544,
+          "reduction": 83
+        }
+      ],
+      "comparison": "Exact story/choices/metadata/summary order/final resources/Tab counts preserved. All noncohort gaps unchanged; affected gaps only decrease."
+    },
+    {
+      "profile": "ghost-routing",
+      "visits": 80,
+      "reloads": 32,
+      "tabs": 635,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 380,
+        "strain": 2,
+        "rolls": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "gaps": [
+        {
+          "sceneId": "act2_route_map",
+          "step": 48,
+          "before": 1348,
+          "after": 1251,
+          "reduction": 97
+        },
+        {
+          "sceneId": "act2_route_exit",
+          "step": 49,
+          "before": 1637,
+          "after": 1532,
+          "reduction": 105
+        },
+        {
+          "sceneId": "act2_route_review",
+          "step": 50,
+          "before": 1247,
+          "after": 1125,
+          "reduction": 122
+        },
+        {
+          "sceneId": "act2_route_crossing",
+          "step": 51,
+          "before": 1277,
+          "after": 1188,
+          "reduction": 89
+        },
+        {
+          "sceneId": "act3_testimony_review",
+          "step": 73,
+          "before": 1754,
+          "after": 1672,
+          "reduction": 82
+        },
+        {
+          "sceneId": "act3_testimony_consent",
+          "step": 74,
+          "before": 1754,
+          "after": 1672,
+          "reduction": 82
+        },
+        {
+          "sceneId": "act3_testimony_nia",
+          "step": 75,
+          "before": 1754,
+          "after": 1672,
+          "reduction": 82
+        },
+        {
+          "sceneId": "act3_testimony_hearing",
+          "step": 76,
+          "before": 1688,
+          "after": 1611,
+          "reduction": 77
+        },
+        {
+          "sceneId": "act3_testimony_record",
+          "step": 77,
+          "before": 1627,
+          "after": 1544,
+          "reduction": 83
+        }
+      ],
+      "comparison": "Exact story/choices/metadata/summary order/final resources/Tab counts preserved. All noncohort gaps unchanged; affected gaps only decrease."
+    }
+  ],
+  "totals": {
+    "browserCampaigns": 10,
+    "visits": 768,
+    "reloads": 571,
+    "tabs": 6489,
+    "completedVoices": 41,
+    "shotReviews": 51
+  },
+  "improvedObservedGaps": 106,
+  "unchangedOutsideExplicitCohort": true,
+  "validation": {
+    "source": {
+      "passed": 881,
+      "failed": 0,
+      "skipped": 0
+    },
+    "typescript": "passed",
+    "productionBuild": "passed",
+    "knownDependencyVulnerabilities": 0,
+    "balanceAudits": 5,
+    "production": {
+      "scenes": 247,
+      "rawChoices": 751,
+      "routes": 219,
+      "assets": 836,
+      "budgetViolations": []
+    },
+    "localBrowser": {
+      "chromium": {
+        "passed": 53,
+        "failed": 0,
+        "retries": 0,
+        "skipped": 0,
+        "workers": 4,
+        "caseDeadlineSeconds": 30,
+        "elapsed": "1.3m"
+      },
+      "webkit": {
+        "passed": 53,
+        "failed": 0,
+        "retries": 0,
+        "skipped": 0,
+        "workers": 4,
+        "caseDeadlineSeconds": 30,
+        "elapsed": "2.0m",
+        "diagnosticOnly": true
+      }
+    },
+    "localWebkitLimitation": "Host requirements validation disabled locally only; mandatory hosted Firefox/WebKit and complete four-profile acceptance retain normal validation.",
+    "documentationChecks": "passed"
+  },
+  "negativeFindings": [
+    {
+      "case": "First local new-suite run: 18 passed, 1 failed",
+      "reason": "Expected ordinary detail rows on canonical free-inspection buttons; existing desk uses shared terms.",
+      "resolution": "Check existing free/no-ledger/no-issuing-key desk terms for exactly the three authored inspection actions, retaining ordinary button metadata checks. No production text or evidence rewrite."
+    },
+    {
+      "case": "Residual workspace length",
+      "reason": "The fixed archive and testimony compositions still retain necessary comparisons and terms; no universal pacing, reading-speed or keyboard-speed claim."
+    }
+  ],
+  "report": "docs/WORKSPACE_READING_FLOW_PHASE7.md",
+  "nextPhase": "Phase 8: distribute encounter depth with matching voices and art for new authored content"
+}

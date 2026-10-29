@@ -1,0 +1,72 @@
+[
+  {
+    "sceneId": "act2_craft_archive",
+    "route": "emotional-payoff/both-returns-listed",
+    "choiceId": "craft-read-export"
+  },
+  {
+    "sceneId": "act2_craft_archive_challenge",
+    "route": "emotional-payoff/edda-authenticated-names",
+    "choiceId": "craft-revise-question"
+  },
+  {
+    "sceneId": "act2_craft_archive_issuer",
+    "route": "emotional-payoff/both-returns-listed",
+    "choiceId": "craft-target-cancellation"
+  },
+  {
+    "sceneId": "act2_craft_archive_ledger",
+    "route": "emotional-payoff/edda-corroborated-witness",
+    "choiceId": "craft-request-roster"
+  },
+  {
+    "sceneId": "act2_route_map",
+    "route": "balance-dustline-nerve-equipped",
+    "choiceId": "route-entry-lift"
+  },
+  {
+    "sceneId": "act2_route_exit",
+    "route": "balance-dustline-nerve-equipped",
+    "choiceId": "route-exit-walk"
+  },
+  {
+    "sceneId": "act2_route_review",
+    "route": "balance-dustline-nerve-equipped",
+    "choiceId": "depart-kerr-lift"
+  },
+  {
+    "sceneId": "act2_route_crossing",
+    "route": "balance-dustline-nerve-equipped",
+    "choiceId": "compare-trained-depot-methods"
+  },
+  {
+    "sceneId": "act3_testimony_review",
+    "route": "allocation-dustline",
+    "choiceId": "scope-bounded"
+  },
+  {
+    "sceneId": "act3_testimony_consent",
+    "route": "allocation-dustline",
+    "choiceId": "keep-recording-private"
+  },
+  {
+    "sceneId": "act3_testimony_nia",
+    "route": "balance-dustline-nerve-equipped",
+    "choiceId": "accept-public-permission"
+  },
+  {
+    "sceneId": "act3_testimony_hearing",
+    "route": "allocation-dustline",
+    "choiceId": "claim-key-anyway"
+  },
+  {
+    "sceneId": "act3_testimony_correction",
+    "route": "allocation-dustline",
+    "choiceId": "correct-hearing"
+  },
+  {
+    "sceneId": "act3_testimony_record",
+    "route": "allocation-dustline",
+    "choiceId": "file-public-account"
+  }
+]

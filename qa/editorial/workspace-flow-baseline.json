@@ -1,0 +1,1119 @@
+[
+  {
+    "route": "emotional-payoff/edda-deferred-quiet",
+    "sceneId": "act2_craft_archive",
+    "width": 320,
+    "text": "Edda\nThe archive technician\n\nHELION SERVICE ARCHIVE · THE WEEK\n\nHELION SERVICE ARCHIVE · THE WEEK\n\nThe week wants a buyer or a witness.\n\nHelion service archive · The Week. The week wants a buyer or a witness.\n\nLoaded Autosave — The Week · Helion service archive\n\nAT EDDA'S DESK · THREE DESCRIPTIONS\n\nEdda puts three headings on separate sheets. Nothing has been extracted from the archive.\n\n\"The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.\"\n\nThe coolant work can remain scheduled while the evacuation instruction changes. Decide which question to put to an actual source.\n\nListen to Edda\n\nEnable Sound and voice volume in Settings to listen.\n\nVoice transcript\nCampaign commitments · 0/2 complete · 2 open\nCompare the records\n\nDescriptions help you choose a request. Inspection retrieves no ledger and tests no issuing key.\n\nExport receipt\n\nA later instruction cancels worker evacuation. Mara's earlier approval remains attached to the coolant work.\n\nDescription inspected\n\nPlant-service catalog\n\nThe coolant operation remained scheduled. This summary describes machinery work, not whether workers were told to leave.\n\nDescription inspected\n\nShift-movement catalog\n\nAn evacuation revision has a ledger locator, WN/SHIFT/REV. This describes a possible second source; it is not the retrieved page or an issuing-key match.\n\nDescription inspected\n\n3 of 3 descriptions inspected. Choose the question below.\n\nYour next move\n\nSelecting an option commits it. For a check, review the odds and costs first; Back leaves it unrolled.\n\nAction\nMove on\n\n1\nWhose key canceled evacuation? Test the cancellation's issuer.\n2\nDid the shift record the evacuation change? Retrieve the movement page.\n3\nTreat the unchanged coolant schedule as proof that evacuation never changed.\n4\nKeep the draft. Leave without submitting a request.\nDetails\nFree. No retrieved record or authenticated key. Return before the week closes.",
+    "gap": 2039,
+    "sections": [
+      {
+        "id": "scene-row",
+        "height": 290,
+        "text": "Edda\nThe archive technician\n\nHELION SERVICE ARCHIVE · THE WEEK\n\nHELION SERVICE ARCHIVE · T"
+      },
+      {
+        "id": "restore-notice",
+        "height": 44,
+        "text": "Loaded Autosave — The Week · Helion service archive"
+      },
+      {
+        "id": "pivotal-scene",
+        "height": 883,
+        "text": "AT EDDA'S DESK · THREE DESCRIPTIONS\n\nEdda puts three headings on separate sheets. Nothing "
+      },
+      {
+        "id": "voice-line",
+        "height": 158,
+        "text": "Listen to Edda\n\nEnable Sound and voice volume in Settings to listen.\n\nVoice transcript"
+      },
+      {
+        "id": "decision-context",
+        "height": 128,
+        "text": "Campaign commitments · 0/2 complete · 2 open"
+      },
+      {
+        "id": "archive-question-desk",
+        "height": 1597,
+        "text": "Compare the records\n\nDescriptions help you choose a request. Inspection retrieves no ledge"
+      },
+      {
+        "id": "choices",
+        "height": 1461,
+        "text": "Your next move\n\nSelecting an option commits it. For a check, review the odds and costs fir"
+      }
+    ],
+    "focusOrder": [
+      {
+        "tag": "SUMMARY",
+        "id": "",
+        "text": "Voice transcript"
+      },
+      {
+        "tag": "SUMMARY",
+        "id": "",
+        "text": "Campaign commitments · 0/2 complete · 2 open"
+      },
+      {
+        "tag": "BUTTON",
+        "id": "choice-craft-question-issuer",
+        "text": "1\nWhose key canceled evacuation? Test the cancellation's issuer."
+      },
+      {
+        "tag": "BUTTON",
+        "id": "choice-craft-question-movement",
+        "text": "2\nDid the shift record the evacuation change? Retrieve the movement page."
+      },
+      {
+        "tag": "BUTTON",
+        "id": "choice-craft-question-conflate",
+        "text": "3\nTreat the unchanged coolant schedule as proof that evacuation never changed."
+      },
+      {
+        "tag": "BUTTON",
+        "id": "choice-craft-leave-archive",
+        "text": "4\nKeep the draft. Leave without submitting a request.\nDetails\nFree. No retrieved record or authenticated key. Return before the week closes."
+      }
+    ],
+    "typography": [
+      {
+        "text": "HELION SERVICE ARCHIVE · THE WEEK",
+        "size": "15.6px",
+        "lineHeight": "24.96px"
+      },
+      {
+        "text": "The week wants a buyer or a witness.",
+        "size": "19.2px",
+        "lineHeight": "30.72px"
+      },
+      {
+        "text": "Helion service archive · The Week. The week wants a buyer or a witness.",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "Loaded Autosave — The Week · Helion service archive",
+        "size": "15.6px",
+        "lineHeight": "21.84px"
+      },
+      {
+        "text": "AT EDDA'S DESK · THREE DESCRIPTIONS",
+        "size": "18px",
+        "lineHeight": "27px"
+      },
+      {
+        "text": "Edda puts three headings on separate sheets. Nothing has been extracted from the archive.",
+        "size": "20.4px",
+        "lineHeight": "37.74px"
+      },
+      {
+        "text": "\"The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.\"",
+        "size": "20.4px",
+        "lineHeight": "37.74px"
+      },
+      {
+        "text": "The coolant work can remain scheduled while the evacuation instruction changes. Decide which question to put to an actual source.",
+        "size": "20.4px",
+        "lineHeight": "37.74px"
+      },
+      {
+        "text": "Listen to Edda",
+        "size": "16px",
+        "lineHeight": "25.6px"
+      },
+      {
+        "text": "Enable Sound and voice volume in Settings to listen.",
+        "size": "15.6px",
+        "lineHeight": "22.62px"
+      },
+      {
+        "text": "Voice transcript",
+        "size": "16px",
+        "lineHeight": "25.6px"
+      },
+      {
+        "text": "Campaign commitments · 0/2 complete · 2 open",
+        "size": "17.6px",
+        "lineHeight": "28.16px"
+      },
+      {
+        "text": "",
+        "size": "17.6px",
+        "lineHeight": "28.16px"
+      },
+      {
+        "text": "",
+        "size": "17.6px",
+        "lineHeight": "28.16px"
+      },
+      {
+        "text": "Compare the records",
+        "size": "24px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "Descriptions help you choose a request. Inspection retrieves no ledger and tests no issuing key.",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "Export receipt",
+        "size": "20px",
+        "lineHeight": "32px"
+      },
+      {
+        "text": "A later instruction cancels worker evacuation. Mara's earlier approval remains attached to the coolant work.",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "Description inspected",
+        "size": "17px",
+        "lineHeight": "27.2px"
+      },
+      {
+        "text": "Plant-service catalog",
+        "size": "20px",
+        "lineHeight": "32px"
+      },
+      {
+        "text": "The coolant operation remained scheduled. This summary describes machinery work, not whether workers were told to leave.",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "Description inspected",
+        "size": "17px",
+        "lineHeight": "27.2px"
+      },
+      {
+        "text": "Shift-movement catalog",
+        "size": "20px",
+        "lineHeight": "32px"
+      },
+      {
+        "text": "An evacuation revision has a ledger locator, WN/SHIFT/REV. This describes a possible second source; it is not the retrieved page or an issuing-key match.",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "Description inspected",
+        "size": "17px",
+        "lineHeight": "27.2px"
+      },
+      {
+        "text": "3 of 3 descriptions inspected. Choose the question below.",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "Your next move",
+        "size": "20px",
+        "lineHeight": "32px"
+      },
+      {
+        "text": "Selecting an option commits it. For a check, review the odds and costs first; Back leaves it unrolled.",
+        "size": "18px",
+        "lineHeight": "29.7px"
+      },
+      {
+        "text": "Action\nMove on",
+        "size": "15px",
+        "lineHeight": "22.5px"
+      },
+      {
+        "text": "1\nWhose key canceled evacuation? Test the cancellation's issuer.",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "2\nDid the shift record the evacuation change? Retrieve the movement page.",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "3\nTreat the unchanged coolant schedule as proof that evacuation never changed.",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "4\nKeep the draft. Leave without submitting a request.\nDetails\nFree. No retrieved record or authenticated key. Return before the week closes.",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      }
+    ]
+  },
+  {
+    "route": "emotional-payoff/edda-authenticated-names",
+    "sceneId": "act2_craft_archive",
+    "width": 390,
+    "text": "Edda\nThe archive technician\n\nHELION SERVICE ARCHIVE · THE WEEK\n\nHELION SERVICE ARCHIVE · THE WEEK\n\nThe week wants a buyer or a witness.\n\nHelion service archive · The Week. The week wants a buyer or a witness.\n\nLoaded Autosave — The Week · Helion service archive\n\nAT EDDA'S DESK · THREE DESCRIPTIONS\n\nEdda puts three headings on separate sheets. Nothing has been extracted from the archive.\n\n\"The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.\"\n\nThe coolant work can remain scheduled while the evacuation instruction changes. Decide which question to put to an actual source.\n\nHelion · a question before a query\nVIEW ARTWORK\nSCENE\nPERSON\nDETAIL\nListen to Edda\n\nEnable Sound and voice volume in Settings to listen.\n\nVoice transcript\nCampaign commitments · 1/2 complete · 1 open\nCompare the records\n\nDescriptions help you choose a request. Inspection retrieves no ledger and tests no issuing key.\n\nExport receipt\n\nA later instruction cancels worker evacuation. Mara's earlier approval remains attached to the coolant work.\n\nDescription inspected\n\nPlant-service catalog\n\nThe coolant operation remained scheduled. This summary describes machinery work, not whether workers were told to leave.\n\nDescription inspected\n\nShift-movement catalog\n\nAn evacuation revision has a ledger locator, WN/SHIFT/REV. This describes a possible second source; it is not the retrieved page or an issuing-key match.\n\nDescription inspected\n\n3 of 3 descriptions inspected. Choose the question below.\n\nYour next move\n\nSelecting an option commits it. For a check, review the odds and costs first; Back leaves it unrolled.\n\nAction\nMove on\n\n1\nWhose key canceled evacuation? Test the cancellation's issuer.\n2\nDid the shift record the evacuation change? Retrieve the movement page.\n3\nKeep the draft. Leave without submitting a request.\nDetails\nFree. No retrieved record or authenticated key. Return before the week closes.",
+    "gap": 2100,
+    "sections": [
+      {
+        "id": "scene-row",
+        "height": 290,
+        "text": "Edda\nThe archive technician\n\nHELION SERVICE ARCHIVE · THE WEEK\n\nHELION SERVICE ARCHIVE · T"
+      },
+      {
+        "id": "restore-notice",
+        "height": 44,
+        "text": "Loaded Autosave — The Week · Helion service archive"
+      },
+      {
+        "id": "pivotal-scene",
+        "height": 1070,
+        "text": "AT EDDA'S DESK · THREE DESCRIPTIONS\n\nEdda puts three headings on separate sheets. Nothing "
+      },
+      {
+        "id": "voice-line",
+        "height": 110,
+        "text": "Listen to Edda\n\nEnable Sound and voice volume in Settings to listen.\n\nVoice transcript"
+      },
+      {
+        "id": "decision-context",
+        "height": 128,
+        "text": "Campaign commitments · 1/2 complete · 1 open"
+      },
+      {
+        "id": "archive-question-desk",
+        "height": 1330,
+        "text": "Compare the records\n\nDescriptions help you choose a request. Inspection retrieves no ledge"
+      },
+      {
+        "id": "choices",
+        "height": 827,
+        "text": "Your next move\n\nSelecting an option commits it. For a check, review the odds and costs fir"
+      }
+    ],
+    "focusOrder": [
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "VIEW ARTWORK"
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "SCENE"
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "PERSON"
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "DETAIL"
+      },
+      {
+        "tag": "SUMMARY",
+        "id": "",
+        "text": "Voice transcript"
+      },
+      {
+        "tag": "SUMMARY",
+        "id": "",
+        "text": "Campaign commitments · 1/2 complete · 1 open"
+      },
+      {
+        "tag": "BUTTON",
+        "id": "choice-craft-question-issuer",
+        "text": "1\nWhose key canceled evacuation? Test the cancellation's issuer."
+      },
+      {
+        "tag": "BUTTON",
+        "id": "choice-craft-question-movement",
+        "text": "2\nDid the shift record the evacuation change? Retrieve the movement page."
+      },
+      {
+        "tag": "BUTTON",
+        "id": "choice-craft-leave-archive",
+        "text": "3\nKeep the draft. Leave without submitting a request.\nDetails\nFree. No retrieved record or authenticated key. Return before the week closes."
+      }
+    ],
+    "typography": [
+      {
+        "text": "HELION SERVICE ARCHIVE · THE WEEK",
+        "size": "15.6px",
+        "lineHeight": "24.96px"
+      },
+      {
+        "text": "The week wants a buyer or a witness.",
+        "size": "19.2px",
+        "lineHeight": "30.72px"
+      },
+      {
+        "text": "Helion service archive · The Week. The week wants a buyer or a witness.",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "Loaded Autosave — The Week · Helion service archive",
+        "size": "15.6px",
+        "lineHeight": "21.84px"
+      },
+      {
+        "text": "AT EDDA'S DESK · THREE DESCRIPTIONS",
+        "size": "18px",
+        "lineHeight": "27px"
+      },
+      {
+        "text": "Edda puts three headings on separate sheets. Nothing has been extracted from the archive.",
+        "size": "20.4px",
+        "lineHeight": "37.74px"
+      },
+      {
+        "text": "\"The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.\"",
+        "size": "20.4px",
+        "lineHeight": "37.74px"
+      },
+      {
+        "text": "The coolant work can remain scheduled while the evacuation instruction changes. Decide which question to put to an actual source.",
+        "size": "20.4px",
+        "lineHeight": "37.74px"
+      },
+      {
+        "text": "VIEW ARTWORK",
+        "size": "16px",
+        "lineHeight": "25.6px"
+      },
+      {
+        "text": "SCENE",
+        "size": "18.4px",
+        "lineHeight": "29.44px"
+      },
+      {
+        "text": "PERSON",
+        "size": "18.4px",
+        "lineHeight": "29.44px"
+      },
+      {
+        "text": "DETAIL",
+        "size": "18.4px",
+        "lineHeight": "29.44px"
+      },
+      {
+        "text": "Listen to Edda",
+        "size": "16px",
+        "lineHeight": "25.6px"
+      },
+      {
+        "text": "Enable Sound and voice volume in Settings to listen.",
+        "size": "15.6px",
+        "lineHeight": "22.62px"
+      },
+      {
+        "text": "Voice transcript",
+        "size": "16px",
+        "lineHeight": "25.6px"
+      },
+      {
+        "text": "Campaign commitments · 1/2 complete · 1 open",
+        "size": "17.6px",
+        "lineHeight": "28.16px"
+      },
+      {
+        "text": "",
+        "size": "17.6px",
+        "lineHeight": "28.16px"
+      },
+      {
+        "text": "",
+        "size": "17.6px",
+        "lineHeight": "28.16px"
+      },
+      {
+        "text": "Compare the records",
+        "size": "24px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "Descriptions help you choose a request. Inspection retrieves no ledger and tests no issuing key.",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "Export receipt",
+        "size": "20px",
+        "lineHeight": "32px"
+      },
+      {
+        "text": "A later instruction cancels worker evacuation. Mara's earlier approval remains attached to the coolant work.",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "Description inspected",
+        "size": "17px",
+        "lineHeight": "27.2px"
+      },
+      {
+        "text": "Plant-service catalog",
+        "size": "20px",
+        "lineHeight": "32px"
+      },
+      {
+        "text": "The coolant operation remained scheduled. This summary describes machinery work, not whether workers were told to leave.",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "Description inspected",
+        "size": "17px",
+        "lineHeight": "27.2px"
+      },
+      {
+        "text": "Shift-movement catalog",
+        "size": "20px",
+        "lineHeight": "32px"
+      },
+      {
+        "text": "An evacuation revision has a ledger locator, WN/SHIFT/REV. This describes a possible second source; it is not the retrieved page or an issuing-key match.",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "Description inspected",
+        "size": "17px",
+        "lineHeight": "27.2px"
+      },
+      {
+        "text": "3 of 3 descriptions inspected. Choose the question below.",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "Your next move",
+        "size": "20px",
+        "lineHeight": "32px"
+      },
+      {
+        "text": "Selecting an option commits it. For a check, review the odds and costs first; Back leaves it unrolled.",
+        "size": "18px",
+        "lineHeight": "29.7px"
+      },
+      {
+        "text": "Action\nMove on",
+        "size": "15px",
+        "lineHeight": "22.5px"
+      },
+      {
+        "text": "1\nWhose key canceled evacuation? Test the cancellation's issuer.",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "2\nDid the shift record the evacuation change? Retrieve the movement page.",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "3\nKeep the draft. Leave without submitting a request.\nDetails\nFree. No retrieved record or authenticated key. Return before the week closes.",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      }
+    ]
+  },
+  {
+    "route": "emotional-payoff/kerr-contact-denied-witness",
+    "sceneId": "act2_route_exit",
+    "width": 1440,
+    "text": "Replay\nSpire\n\nCANAL DISPATCH ALCOVE · THE WEEK\n\nCANAL DISPATCH ALCOVE · THE WEEK\n\nThe week wants a buyer or a witness.\n\nCanal dispatch alcove · The Week. The week wants a buyer or a witness.\n\nLoaded Autosave — The Week · Canal dispatch alcove\n\nCanal depot · the planning alcove\nVIEW ARTWORK\n\nNow choose how to leave the depot with the case. The sensor ramp suits a machine approach, the patrol gap suits timing, and the maintenance stairs suit carrying weight. Negotiation is available at the counter on any plan.\n\nAn anonymous exit cannot erase a name already recorded at entry. A failed sensor or counter approach also records Kerr as the recipient; missing the patrol or failing to carry the case leaves it held without a new entry.\n\n NEXT STEP\nPlan an entry and an exit. Review the fee, strain and recipient registration before departing; your draft is saved.\n\nCampaign commitments · 0/2 complete · 2 open\nTwo crossings\nSaved draft · no cost yet\nEntry\nCourier gate · selected\n\nNo fee or strain. Records your handle and Kerr as the recipient on departure.\n\nExit\nSensor ramp\n\nChrome can suppress the recipient field; Face can negotiate. A failed approach logs the recipient.\n\nPatrol gap\n\nGhost can time the patrol. A missed gap holds the case without a new entry. A failed Face negotiation registers the recipient.\n\nMaintenance stairs\n\nNerve can carry the case. Add 1 strain on departure; no stairs register. A failed Face negotiation registers the recipient.\n\nCourier gate → Choose an exit · On departure: 0 creds, +0 strain.\n\nThis entry breaks your private terms. It records your handle and Kerr’s recipient name before any exit attempt.\n\nChoose with the numbered options below. No timer or drag gesture is required.\n\nYour next move\n\nSelecting an option commits it. For a check, review the odds and costs first; Back leaves it unrolled.\n\nAction\nMove on\n\n1\nPlan the sensor ramp.\nDetails\nChrome can suppress the recipient field; Face can negotiate. A failed approach logs the recipient.\n2\nPlan the patrol gap.\nDetails\nGhost can time the patrol. A missed gap holds the case without a new entry. A failed Face negotiation registers the recipient.\n3\nPlan the maintenance stairs.\nDetails\nNerve can carry the case. Add 1 strain on departure; no stairs register. A failed Face negotiation registers the recipient.\n4\nChoose the entry again.\n5\nPause with this entry saved.",
+    "gap": 1181,
+    "sections": [
+      {
+        "id": "scene-row",
+        "height": 167,
+        "text": "Replay\nSpire\n\nCANAL DISPATCH ALCOVE · THE WEEK\n\nCANAL DISPATCH ALCOVE · THE WEEK\n\nThe week"
+      },
+      {
+        "id": "restore-notice",
+        "height": 22,
+        "text": "Loaded Autosave — The Week · Canal dispatch alcove"
+      },
+      {
+        "id": "scene-illustration",
+        "height": 197,
+        "text": "Canal depot · the planning alcove\nVIEW ARTWORK"
+      },
+      {
+        "id": "scene-text",
+        "height": 337,
+        "text": "Now choose how to leave the depot with the case. The sensor ramp suits a machine approach,"
+      },
+      {
+        "id": "decision-context",
+        "height": 189,
+        "text": " NEXT STEP\nPlan an entry and an exit. Review the fee, strain and recipient registration be"
+      },
+      {
+        "id": "route-board",
+        "height": 910,
+        "text": "Two crossings\nSaved draft · no cost yet\nEntry\nCourier gate · selected\n\nNo fee or strain. R"
+      },
+      {
+        "id": "choices",
+        "height": 776,
+        "text": "Your next move\n\nSelecting an option commits it. For a check, review the odds and costs fir"
+      }
+    ],
+    "focusOrder": [
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "VIEW ARTWORK"
+      },
+      {
+        "tag": "SUMMARY",
+        "id": "",
+        "text": "Campaign commitments · 0/2 complete · 2 open"
+      },
+      {
+        "tag": "BUTTON",
+        "id": "choice-route-exit-ramp",
+        "text": "1\nPlan the sensor ramp.\nDetails\nChrome can suppress the recipient field; Face can negotiate. A failed approach logs the recipient."
+      },
+      {
+        "tag": "BUTTON",
+        "id": "choice-route-exit-gap",
+        "text": "2\nPlan the patrol gap.\nDetails\nGhost can time the patrol. A missed gap holds the case without a new entry. A failed Face negotiation registers the recipient."
+      },
+      {
+        "tag": "BUTTON",
+        "id": "choice-route-exit-walk",
+        "text": "3\nPlan the maintenance stairs.\nDetails\nNerve can carry the case. Add 1 strain on departure; no stairs register. A failed Face negotiation registers the recipient."
+      },
+      {
+        "tag": "BUTTON",
+        "id": "choice-replan-kerr-entry",
+        "text": "4\nChoose the entry again."
+      },
+      {
+        "tag": "BUTTON",
+        "id": "choice-pause-kerr-exit",
+        "text": "5\nPause with this entry saved."
+      }
+    ],
+    "typography": [
+      {
+        "text": "CANAL DISPATCH ALCOVE · THE WEEK",
+        "size": "15.6px",
+        "lineHeight": "24.96px"
+      },
+      {
+        "text": "The week wants a buyer or a witness.",
+        "size": "20.4px",
+        "lineHeight": "32.64px"
+      },
+      {
+        "text": "Canal dispatch alcove · The Week. The week wants a buyer or a witness.",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "Loaded Autosave — The Week · Canal dispatch alcove",
+        "size": "15.6px",
+        "lineHeight": "21.84px"
+      },
+      {
+        "text": "VIEW ARTWORK",
+        "size": "16px",
+        "lineHeight": "25.6px"
+      },
+      {
+        "text": "Now choose how to leave the depot with the case. The sensor ramp suits a machine approach, the patrol gap suits timing, and the maintenance stairs suit carrying weight. Negotiation is available at the counter on any plan.",
+        "size": "21px",
+        "lineHeight": "38.85px"
+      },
+      {
+        "text": "An anonymous exit cannot erase a name already recorded at entry. A failed sensor or counter approach also records Kerr as the recipient; missing the patrol or failing to carry the case leaves it held without a new entry.",
+        "size": "21px",
+        "lineHeight": "38.85px"
+      },
+      {
+        "text": " NEXT STEP\nPlan an entry and an exit. Review the fee, strain and recipient registration before departing; your draft is saved.",
+        "size": "18.4px",
+        "lineHeight": "29.44px"
+      },
+      {
+        "text": "Campaign commitments · 0/2 complete · 2 open",
+        "size": "17.6px",
+        "lineHeight": "28.16px"
+      },
+      {
+        "text": "",
+        "size": "17.6px",
+        "lineHeight": "28.16px"
+      },
+      {
+        "text": "",
+        "size": "17.6px",
+        "lineHeight": "28.16px"
+      },
+      {
+        "text": "Two crossings",
+        "size": "22px",
+        "lineHeight": "35.2px"
+      },
+      {
+        "text": "Entry",
+        "size": "20px",
+        "lineHeight": "32px"
+      },
+      {
+        "text": "No fee or strain. Records your handle and Kerr as the recipient on departure.",
+        "size": "18px",
+        "lineHeight": "27px"
+      },
+      {
+        "text": "Exit",
+        "size": "20px",
+        "lineHeight": "32px"
+      },
+      {
+        "text": "Chrome can suppress the recipient field; Face can negotiate. A failed approach logs the recipient.",
+        "size": "18px",
+        "lineHeight": "27px"
+      },
+      {
+        "text": "Ghost can time the patrol. A missed gap holds the case without a new entry. A failed Face negotiation registers the recipient.",
+        "size": "18px",
+        "lineHeight": "27px"
+      },
+      {
+        "text": "Nerve can carry the case. Add 1 strain on departure; no stairs register. A failed Face negotiation registers the recipient.",
+        "size": "18px",
+        "lineHeight": "27px"
+      },
+      {
+        "text": "Courier gate → Choose an exit · On departure: 0 creds, +0 strain.",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "This entry breaks your private terms. It records your handle and Kerr’s recipient name before any exit attempt.",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "Choose with the numbered options below. No timer or drag gesture is required.",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "Your next move",
+        "size": "20px",
+        "lineHeight": "32px"
+      },
+      {
+        "text": "Selecting an option commits it. For a check, review the odds and costs first; Back leaves it unrolled.",
+        "size": "18px",
+        "lineHeight": "29.7px"
+      },
+      {
+        "text": "Action\nMove on",
+        "size": "15px",
+        "lineHeight": "22.5px"
+      },
+      {
+        "text": "1\nPlan the sensor ramp.\nDetails\nChrome can suppress the recipient field; Face can negotiate. A failed approach logs the recipient.",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "2\nPlan the patrol gap.\nDetails\nGhost can time the patrol. A missed gap holds the case without a new entry. A failed Face negotiation registers the recipient.",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "3\nPlan the maintenance stairs.\nDetails\nNerve can carry the case. Add 1 strain on departure; no stairs register. A failed Face negotiation registers the recipient.",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "4\nChoose the entry again.",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "5\nPause with this entry saved.",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      }
+    ]
+  },
+  {
+    "route": "allocation-gutterwire",
+    "sceneId": "act3_testimony_hearing",
+    "width": 390,
+    "text": "Ives\nThe folio\n\nWARD NINE RECORDS TABLE · THE WALL\n\nWARD NINE RECORDS TABLE · THE WALL\n\nAnswer Ives with the source you have. Corroboration and key authentication are different claims.\n\nWard Nine records table · The Wall. Answer Ives with the source you have. Corroboration and key authentication are different claims.\n\nLoaded Autosave — The Wall · Ward Nine records table\n\nTHE SOURCE IS QUESTIONED · IVES\n\nIves places his folio beside the recorder. 'A maintenance signature isn't an issuing key. A witness isn't a server. What exactly are you asking people to believe?'\n\nSera leaves the recorder running. The mechanic waits for the source you can point to; a witness's address stays off the table.\n\nWard Nine · Ives asks for the source\nVIEW ARTWORK\nCONSULT ACQUIRED SOURCES\nListen to Ives\n\nEnable Sound and voice volume in Settings to listen.\n\nVoice transcript\n\n NEXT STEP\nIdentify corroboration or key authentication precisely; preserve any correction beside the original claim.\n\nCampaign commitments · 2/4 complete · 1 open · 1 unresolved\nWhat survives\nMara’s authorization and the later evacuation cancellation are separate decisions. An explanation does not erase authorization.\nSource strength\nThe exported receipt or remembered account is available; the cancellation has no independent corroborating source attached.\nWitness permission\nNo approved account from Nia is attached. A protected roster or safe room supplies no testimony.\nReview acquired sources and permissions · 8 records\nYour next move\n\nSelecting an option commits it. For a check, review the odds and costs first; Back leaves it unrolled.\n\n1\nState the cancellation as an open question and preserve the source limits.\n2\nCall the issuing key authenticated without a successful key match.\nDetails\nThe mechanic will challenge the claim. Ward trust −1; Helion scrutiny +1.\nChanges\nHelion +1 · The wards -1",
+    "gap": 1722,
+    "sections": [
+      {
+        "id": "scene-row",
+        "height": 342,
+        "text": "Ives\nThe folio\n\nWARD NINE RECORDS TABLE · THE WALL\n\nWARD NINE RECORDS TABLE · THE WALL\n\nAn"
+      },
+      {
+        "id": "restore-notice",
+        "height": 44,
+        "text": "Loaded Autosave — The Wall · Ward Nine records table"
+      },
+      {
+        "id": "investigation-scene",
+        "height": 880,
+        "text": "THE SOURCE IS QUESTIONED · IVES\n\nIves places his folio beside the recorder. 'A maintenance"
+      },
+      {
+        "id": "investigation-tools",
+        "height": 55,
+        "text": "CONSULT ACQUIRED SOURCES"
+      },
+      {
+        "id": "voice-line",
+        "height": 110,
+        "text": "Listen to Ives\n\nEnable Sound and voice volume in Settings to listen.\n\nVoice transcript"
+      },
+      {
+        "id": "decision-context",
+        "height": 1095,
+        "text": " NEXT STEP\nIdentify corroboration or key authentication precisely; preserve any correction"
+      },
+      {
+        "id": "choices",
+        "height": 742,
+        "text": "Your next move\n\nSelecting an option commits it. For a check, review the odds and costs fir"
+      }
+    ],
+    "focusOrder": [
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "VIEW ARTWORK"
+      },
+      {
+        "tag": "BUTTON",
+        "id": "consult-sources",
+        "text": "CONSULT ACQUIRED SOURCES"
+      },
+      {
+        "tag": "SUMMARY",
+        "id": "",
+        "text": "Voice transcript"
+      },
+      {
+        "tag": "SUMMARY",
+        "id": "",
+        "text": "Campaign commitments · 2/4 complete · 1 open · 1 unresolved"
+      },
+      {
+        "tag": "SUMMARY",
+        "id": "",
+        "text": "Review acquired sources and permissions · 8 records"
+      },
+      {
+        "tag": "BUTTON",
+        "id": "choice-answer-open-question",
+        "text": "1\nState the cancellation as an open question and preserve the source limits."
+      },
+      {
+        "tag": "BUTTON",
+        "id": "choice-claim-key-anyway",
+        "text": "2\nCall the issuing key authenticated without a successful key match.\nDetails\nThe mechanic will challenge the claim. Ward trust −1; Helion scrutiny +1.\nChanges\nHelion +1 · The wards -1"
+      }
+    ],
+    "typography": [
+      {
+        "text": "WARD NINE RECORDS TABLE · THE WALL",
+        "size": "15.6px",
+        "lineHeight": "24.96px"
+      },
+      {
+        "text": "Answer Ives with the source you have. Corroboration and key authentication are different claims.",
+        "size": "19.2px",
+        "lineHeight": "30.72px"
+      },
+      {
+        "text": "Ward Nine records table · The Wall. Answer Ives with the source you have. Corroboration and key authentication are different claims.",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "Loaded Autosave — The Wall · Ward Nine records table",
+        "size": "15.6px",
+        "lineHeight": "21.84px"
+      },
+      {
+        "text": "THE SOURCE IS QUESTIONED · IVES",
+        "size": "18px",
+        "lineHeight": "27px"
+      },
+      {
+        "text": "Ives places his folio beside the recorder. 'A maintenance signature isn't an issuing key. A witness isn't a server. What exactly are you asking people to believe?'",
+        "size": "20.4px",
+        "lineHeight": "37.74px"
+      },
+      {
+        "text": "Sera leaves the recorder running. The mechanic waits for the source you can point to; a witness's address stays off the table.",
+        "size": "20.4px",
+        "lineHeight": "37.74px"
+      },
+      {
+        "text": "VIEW ARTWORK",
+        "size": "16px",
+        "lineHeight": "25.6px"
+      },
+      {
+        "text": "CONSULT ACQUIRED SOURCES",
+        "size": "18.4px",
+        "lineHeight": "29.44px"
+      },
+      {
+        "text": "Listen to Ives",
+        "size": "16px",
+        "lineHeight": "25.6px"
+      },
+      {
+        "text": "Enable Sound and voice volume in Settings to listen.",
+        "size": "15.6px",
+        "lineHeight": "22.62px"
+      },
+      {
+        "text": "Voice transcript",
+        "size": "16px",
+        "lineHeight": "25.6px"
+      },
+      {
+        "text": " NEXT STEP\nIdentify corroboration or key authentication precisely; preserve any correction beside the original claim.",
+        "size": "18.4px",
+        "lineHeight": "29.44px"
+      },
+      {
+        "text": "Campaign commitments · 2/4 complete · 1 open · 1 unresolved",
+        "size": "17.6px",
+        "lineHeight": "28.16px"
+      },
+      {
+        "text": "",
+        "size": "17.6px",
+        "lineHeight": "28.16px"
+      },
+      {
+        "text": "",
+        "size": "17.6px",
+        "lineHeight": "28.16px"
+      },
+      {
+        "text": "",
+        "size": "17.6px",
+        "lineHeight": "28.16px"
+      },
+      {
+        "text": "",
+        "size": "17.6px",
+        "lineHeight": "28.16px"
+      },
+      {
+        "text": "What survives",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "Mara’s authorization and the later evacuation cancellation are separate decisions. An explanation does not erase authorization.",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "Source strength",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "The exported receipt or remembered account is available; the cancellation has no independent corroborating source attached.",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "Witness permission",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "No approved account from Nia is attached. A protected roster or safe room supplies no testimony.",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "Review acquired sources and permissions · 8 records",
+        "size": "21px",
+        "lineHeight": "31.5px"
+      },
+      {
+        "text": "",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "",
+        "size": "18.4px",
+        "lineHeight": "29.44px"
+      },
+      {
+        "text": "",
+        "size": "18.4px",
+        "lineHeight": "29.44px"
+      },
+      {
+        "text": "",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "",
+        "size": "18.4px",
+        "lineHeight": "29.44px"
+      },
+      {
+        "text": "",
+        "size": "18.4px",
+        "lineHeight": "29.44px"
+      },
+      {
+        "text": "",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "",
+        "size": "18.4px",
+        "lineHeight": "29.44px"
+      },
+      {
+        "text": "",
+        "size": "18.4px",
+        "lineHeight": "29.44px"
+      },
+      {
+        "text": "",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "",
+        "size": "18.4px",
+        "lineHeight": "29.44px"
+      },
+      {
+        "text": "",
+        "size": "18.4px",
+        "lineHeight": "29.44px"
+      },
+      {
+        "text": "",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "",
+        "size": "18.4px",
+        "lineHeight": "29.44px"
+      },
+      {
+        "text": "",
+        "size": "18.4px",
+        "lineHeight": "29.44px"
+      },
+      {
+        "text": "",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "",
+        "size": "18.4px",
+        "lineHeight": "29.44px"
+      },
+      {
+        "text": "",
+        "size": "18.4px",
+        "lineHeight": "29.44px"
+      },
+      {
+        "text": "",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "",
+        "size": "18.4px",
+        "lineHeight": "29.44px"
+      },
+      {
+        "text": "",
+        "size": "18.4px",
+        "lineHeight": "29.44px"
+      },
+      {
+        "text": "",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "",
+        "size": "18.4px",
+        "lineHeight": "29.44px"
+      },
+      {
+        "text": "",
+        "size": "18.4px",
+        "lineHeight": "29.44px"
+      },
+      {
+        "text": "",
+        "size": "18.4px",
+        "lineHeight": "29.44px"
+      },
+      {
+        "text": "Your next move",
+        "size": "20px",
+        "lineHeight": "32px"
+      },
+      {
+        "text": "Selecting an option commits it. For a check, review the odds and costs first; Back leaves it unrolled.",
+        "size": "18px",
+        "lineHeight": "29.7px"
+      },
+      {
+        "text": "1\nState the cancellation as an open question and preserve the source limits.",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      },
+      {
+        "text": "2\nCall the issuing key authenticated without a successful key match.\nDetails\nThe mechanic will challenge the claim. Ward trust −1; Helion scrutiny +1.\nChanges\nHelion +1 · The wards -1",
+        "size": "21px",
+        "lineHeight": "33.6px"
+      }
+    ]
+  }
+]
