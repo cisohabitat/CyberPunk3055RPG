@@ -1,4 +1,5 @@
 "use client";
+import { sequenceContinuity } from "@/lib/sequence-continuity";
 import { cinematicSequence, cinematicDetail } from "@/lib/cinematic-sequences";
 import { visualDirection } from "@/lib/visual-direction";
 
@@ -137,7 +138,7 @@ export function PlayScreen({
   const compactHeader = preferences.artwork !== "none" && paintedActor(illustration, scene.speaker) && !scene.finale;
   const [confirmAbandon, setConfirmAbandon] = useState(false);
   const sound = preferences.sound && !audioPaused;
-  const { mood, district } = sceneSoundPlan(state, scene.location, actName(state));
+  const { mood, district, focus: bedFocus } = sequenceContinuity(state, sceneSoundPlan(state, scene.location, actName(state)), finale ? "closing" : sequence?.focus ?? (existingDirection ? "intimate" : "normal"));
   const [fault, setFault] = useState("");
   const [receipt, setReceipt] = useState<{ state: GameState; values: ResourceChanges } | null>(null);
   const changes = receipt?.state === state ? receipt.values : {};
@@ -197,11 +198,11 @@ export function PlayScreen({
   }, [preferences.motion]);
 
   useEffect(() => {
-    setBed(sound, mood, district, undefined, finale ? "closing" : sequence?.focus ?? (existingDirection ? "intimate" : "normal"));
+    setBed(sound, mood, district, undefined, bedFocus);
     const previous = priorSound.current;
     if (sound && (!previous?.on || previous.location !== scene.location || Boolean(scene.ending) !== previous.ending)) playCue(locationCue(scene.location, Boolean(scene.ending)));
     priorSound.current = { location: scene.location, on: preferences.sound, ending: Boolean(scene.ending) };
-  }, [sound, preferences.sound, mood, district, scene.id, scene.location, scene.ending, existingDirection, finale, sequence]);
+  }, [sound, preferences.sound, mood, district, bedFocus, scene.id, scene.location, scene.ending]);
 
   useEffect(() => () => { setBed(false); }, []);
 

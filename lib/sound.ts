@@ -191,10 +191,26 @@ export function setBed(on: boolean, nextMood: SoundMood = "street", nextDistrict
       if (!musicChanged && !ambienceChanged) return;
       unlockAudio();
       const name = nextMood === "title" ? TITLE_MUSIC.name : nextMood === "street" ? "theme" : `theme-${nextMood}`;
-      const [musicResult, ambienceResult] = await Promise.allSettled([musicChanged ? load(name) : null, ambienceChanged ? load(`ambience-${nextDistrict}`) : null]);
+      // Each ready channel can establish the new place without waiting for the
+      // other's download/decode. Both still belong to this cancellable plan.
+      await Promise.allSettled([
+        (async () => {
+          if (!musicChanged) return;
+          const buffer = await load(name);
+          if (id !== ticket || !want || mix.music === 0) return;
+          theme = crossfade(buffer, "music", 0.5, theme, nextMood === "title" ? TITLE_MUSIC.loopStartSeconds : 0);
+          playingMood = nextMood;
+          report?.("playing");
+        })(),
+        (async () => {
+          if (!ambienceChanged) return;
+          const buffer = await load(`ambience-${nextDistrict}`);
+          if (id !== ticket || !want || mix.ambience === 0) return;
+          ambience = crossfade(buffer, "ambience", 0.35, ambience);
+          playingDistrict = nextDistrict;
+        })(),
+      ]);
       if (id !== ticket || !want) return;
-      if (mix.music > 0 && musicResult.status === "fulfilled" && musicResult.value) { theme = crossfade(musicResult.value, "music", 0.5, theme, nextMood === "title" ? TITLE_MUSIC.loopStartSeconds : 0); playingMood = nextMood; }
-      if (mix.ambience > 0 && ambienceResult.status === "fulfilled" && ambienceResult.value) { ambience = crossfade(ambienceResult.value, "ambience", 0.35, ambience); playingDistrict = nextDistrict; }
       report?.(theme && playingMood === nextMood ? "playing" : "unavailable");
     } catch { if (id === ticket && want) report?.("unavailable"); /* Audio stays optional. */ }
   })();

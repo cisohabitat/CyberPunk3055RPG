@@ -1,0 +1,769 @@
+{
+  "phase": 9,
+  "grade": 8.8,
+  "status": "Validated pre-publication candidate; exact-commit full hosted CI and public checks remain separate",
+  "revision": "b388fa333c4c36de438d5669a16972ea37d975ba",
+  "dirty": true,
+  "historicalProfiles": [
+    {
+      "id": "deferred",
+      "visits": 63,
+      "reloads": 62,
+      "tabs": 574,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 0,
+        "strain": 3,
+        "rolls": [
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "finalAudio": {
+        "sourcesCreated": 0,
+        "sourcesDisposed": 0,
+        "buffersCleared": 0,
+        "liveSources": 0,
+        "peakLiveSources": 0,
+        "starts": 0,
+        "stops": 0,
+        "started": [],
+        "decoded": [],
+        "disposed": [],
+        "cleared": [],
+        "voiceLevels": [],
+        "sceneCueLevels": [],
+        "stoppedSources": []
+      },
+      "comparison": "Exact preceding UI observations, canonical actions, resources, dice, Tab travel and completed voices/art selections. Bed deliveries/focus intentionally differ."
+    },
+    {
+      "id": "denied",
+      "visits": 82,
+      "reloads": 81,
+      "tabs": 697,
+      "final": {
+        "sceneId": "ending_witness",
+        "creds": 370,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "finalAudio": {
+        "sourcesCreated": 0,
+        "sourcesDisposed": 0,
+        "buffersCleared": 0,
+        "liveSources": 0,
+        "peakLiveSources": 0,
+        "starts": 0,
+        "stops": 0,
+        "started": [],
+        "decoded": [],
+        "disposed": [],
+        "cleared": [],
+        "voiceLevels": [],
+        "sceneCueLevels": [],
+        "stoppedSources": []
+      },
+      "comparison": "Exact preceding UI observations, canonical actions, resources, dice, Tab travel and completed voices/art selections. Bed deliveries/focus intentionally differ."
+    },
+    {
+      "id": "names",
+      "visits": 89,
+      "reloads": 88,
+      "tabs": 760,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 390,
+        "strain": 3,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "finalAudio": {
+        "sourcesCreated": 0,
+        "sourcesDisposed": 0,
+        "buffersCleared": 0,
+        "liveSources": 0,
+        "peakLiveSources": 0,
+        "starts": 0,
+        "stops": 0,
+        "started": [],
+        "decoded": [],
+        "disposed": [],
+        "cleared": [],
+        "voiceLevels": [],
+        "sceneCueLevels": [],
+        "stoppedSources": []
+      },
+      "comparison": "Exact preceding UI observations, canonical actions, resources, dice, Tab travel and completed voices/art selections. Bed deliveries/focus intentionally differ."
+    },
+    {
+      "id": "listed-sound",
+      "visits": 87,
+      "reloads": 86,
+      "tabs": 929,
+      "final": {
+        "sceneId": "ending_listed",
+        "creds": 470,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "completedVoices": 41,
+      "shotReviews": 51,
+      "finalAudio": {
+        "sourcesCreated": 4,
+        "sourcesDisposed": 4,
+        "buffersCleared": 4,
+        "liveSources": 0,
+        "peakLiveSources": 4,
+        "starts": 4,
+        "stops": 2,
+        "started": [
+          "sting-ending.wav",
+          "theme-ward.flac",
+          "ambience-ward.flac",
+          "voice-campaign-emotional-payoff-26350d370631.mp3"
+        ],
+        "decoded": [
+          "sting-ending.wav",
+          "theme-ward.flac",
+          "ambience-ward.flac",
+          "voice-campaign-emotional-payoff-26350d370631.mp3"
+        ],
+        "disposed": [
+          "sting-ending.wav",
+          "voice-campaign-emotional-payoff-26350d370631.mp3",
+          "theme-ward.flac",
+          "ambience-ward.flac"
+        ],
+        "cleared": [
+          "sting-ending.wav",
+          "voice-campaign-emotional-payoff-26350d370631.mp3",
+          "theme-ward.flac",
+          "ambience-ward.flac"
+        ],
+        "voiceLevels": [
+          {
+            "file": "voice-campaign-emotional-payoff-26350d370631.mp3",
+            "gain": 1
+          }
+        ],
+        "sceneCueLevels": [],
+        "stoppedSources": [
+          "theme-ward.flac",
+          "ambience-ward.flac"
+        ]
+      },
+      "comparison": "Exact preceding UI observations, canonical actions, resources, dice, Tab travel and completed voices/art selections. Bed deliveries/focus intentionally differ."
+    },
+    {
+      "id": "nerve",
+      "visits": 77,
+      "reloads": 30,
+      "tabs": 533,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 350,
+        "strain": 5,
+        "rolls": [
+          1,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "finalAudio": {
+        "sourcesCreated": 0,
+        "sourcesDisposed": 0,
+        "buffersCleared": 0,
+        "liveSources": 0,
+        "peakLiveSources": 0,
+        "starts": 0,
+        "stops": 0,
+        "started": [],
+        "decoded": [],
+        "disposed": [],
+        "cleared": [],
+        "voiceLevels": [],
+        "sceneCueLevels": [],
+        "stoppedSources": []
+      },
+      "comparison": "Exact preceding UI observations, canonical actions, resources, dice, Tab travel and completed voices/art selections. Bed deliveries/focus intentionally differ."
+    },
+    {
+      "id": "face-failed",
+      "visits": 75,
+      "reloads": 27,
+      "tabs": 580,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 345,
+        "strain": 0,
+        "rolls": [
+          10,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "finalAudio": {
+        "sourcesCreated": 0,
+        "sourcesDisposed": 0,
+        "buffersCleared": 0,
+        "liveSources": 0,
+        "peakLiveSources": 0,
+        "starts": 0,
+        "stops": 0,
+        "started": [],
+        "decoded": [],
+        "disposed": [],
+        "cleared": [],
+        "voiceLevels": [],
+        "sceneCueLevels": [],
+        "stoppedSources": []
+      },
+      "comparison": "Exact preceding UI observations, canonical actions, resources, dice, Tab travel and completed voices/art selections. Bed deliveries/focus intentionally differ."
+    },
+    {
+      "id": "archive-failed",
+      "visits": 64,
+      "reloads": 63,
+      "tabs": 585,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 0,
+        "strain": 4,
+        "rolls": [
+          1,
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "finalAudio": {
+        "sourcesCreated": 0,
+        "sourcesDisposed": 0,
+        "buffersCleared": 0,
+        "liveSources": 0,
+        "peakLiveSources": 0,
+        "starts": 0,
+        "stops": 0,
+        "started": [],
+        "decoded": [],
+        "disposed": [],
+        "cleared": [],
+        "voiceLevels": [],
+        "sceneCueLevels": [],
+        "stoppedSources": []
+      },
+      "comparison": "Exact preceding UI observations, canonical actions, resources, dice, Tab travel and completed voices/art selections. Bed deliveries/focus intentionally differ."
+    },
+    {
+      "id": "canceled",
+      "visits": 75,
+      "reloads": 74,
+      "tabs": 619,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 390,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "finalAudio": {
+        "sourcesCreated": 0,
+        "sourcesDisposed": 0,
+        "buffersCleared": 0,
+        "liveSources": 0,
+        "peakLiveSources": 0,
+        "starts": 0,
+        "stops": 0,
+        "started": [],
+        "decoded": [],
+        "disposed": [],
+        "cleared": [],
+        "voiceLevels": [],
+        "sceneCueLevels": [],
+        "stoppedSources": []
+      },
+      "comparison": "Exact preceding UI observations, canonical actions, resources, dice, Tab travel and completed voices/art selections. Bed deliveries/focus intentionally differ."
+    },
+    {
+      "id": "nerve-handling-failed",
+      "visits": 76,
+      "reloads": 28,
+      "tabs": 577,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 355,
+        "strain": 3,
+        "rolls": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "finalAudio": {
+        "sourcesCreated": 0,
+        "sourcesDisposed": 0,
+        "buffersCleared": 0,
+        "liveSources": 0,
+        "peakLiveSources": 0,
+        "starts": 0,
+        "stops": 0,
+        "started": [],
+        "decoded": [],
+        "disposed": [],
+        "cleared": [],
+        "voiceLevels": [],
+        "sceneCueLevels": [],
+        "stoppedSources": []
+      },
+      "comparison": "Exact preceding UI observations, canonical actions, resources, dice, Tab travel and completed voices/art selections. Bed deliveries/focus intentionally differ."
+    },
+    {
+      "id": "ghost-routing",
+      "visits": 80,
+      "reloads": 32,
+      "tabs": 635,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 380,
+        "strain": 2,
+        "rolls": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "finalAudio": {
+        "sourcesCreated": 0,
+        "sourcesDisposed": 0,
+        "buffersCleared": 0,
+        "liveSources": 0,
+        "peakLiveSources": 0,
+        "starts": 0,
+        "stops": 0,
+        "started": [],
+        "decoded": [],
+        "disposed": [],
+        "cleared": [],
+        "voiceLevels": [],
+        "sceneCueLevels": [],
+        "stoppedSources": []
+      },
+      "comparison": "Exact preceding UI observations, canonical actions, resources, dice, Tab travel and completed voices/art selections. Bed deliveries/focus intentionally differ."
+    }
+  ],
+  "additionalProfiles": [
+    {
+      "id": "bare-names",
+      "visits": 79,
+      "reloads": 78,
+      "tabs": 571,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 330,
+        "strain": 5,
+        "rolls": [
+          1,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "finalAudio": {
+        "sourcesCreated": 0,
+        "sourcesDisposed": 0,
+        "buffersCleared": 0,
+        "liveSources": 0,
+        "peakLiveSources": 0,
+        "starts": 0,
+        "stops": 0,
+        "started": [],
+        "decoded": [],
+        "disposed": [],
+        "cleared": [],
+        "voiceLevels": [],
+        "sceneCueLevels": [],
+        "stoppedSources": []
+      },
+      "comparison": "Exact preceding UI observations, canonical actions, resources, dice, Tab travel and completed voices/art selections. Bed deliveries/focus intentionally differ."
+    },
+    {
+      "id": "scarce",
+      "visits": 88,
+      "reloads": 87,
+      "tabs": 751,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 0,
+        "strain": 5,
+        "rolls": [
+          1,
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "finalAudio": {
+        "sourcesCreated": 0,
+        "sourcesDisposed": 0,
+        "buffersCleared": 0,
+        "liveSources": 0,
+        "peakLiveSources": 0,
+        "starts": 0,
+        "stops": 0,
+        "started": [],
+        "decoded": [],
+        "disposed": [],
+        "cleared": [],
+        "voiceLevels": [],
+        "sceneCueLevels": [],
+        "stoppedSources": []
+      },
+      "comparison": "Exact preceding UI observations, canonical actions, resources, dice, Tab travel and completed voices/art selections. Bed deliveries/focus intentionally differ."
+    }
+  ],
+  "totals": {
+    "historicalVisits": 768,
+    "historicalReloads": 571,
+    "historicalTabs": 6489,
+    "additionalVisits": 167,
+    "additionalReloads": 165,
+    "additionalTabs": 1322
+  },
+  "measurement": {
+    "visits": 16441,
+    "changedVisits": 935,
+    "beforeMusic": 4758,
+    "afterMusic": 4422,
+    "beforeFocus": 3783,
+    "afterFocus": 3379,
+    "precedingRoomTransitions": 4514,
+    "changedScenes": [
+      {
+        "sceneId": "act2_freight_brief",
+        "before": {
+          "mood": "week",
+          "district": "canal",
+          "focus": "normal"
+        },
+        "after": {
+          "mood": "quiet",
+          "district": "canal",
+          "focus": "normal"
+        },
+        "visits": 24
+      },
+      {
+        "sceneId": "act2_freight_sources",
+        "before": {
+          "mood": "week",
+          "district": "canal",
+          "focus": "normal"
+        },
+        "after": {
+          "mood": "quiet",
+          "district": "canal",
+          "focus": "normal"
+        },
+        "visits": 92
+      },
+      {
+        "sceneId": "act2_freight_prep",
+        "before": {
+          "mood": "week",
+          "district": "canal",
+          "focus": "normal"
+        },
+        "after": {
+          "mood": "quiet",
+          "district": "canal",
+          "focus": "normal"
+        },
+        "visits": 25
+      },
+      {
+        "sceneId": "act2_freight_intake",
+        "before": {
+          "mood": "week",
+          "district": "chapel",
+          "focus": "normal"
+        },
+        "after": {
+          "mood": "quiet",
+          "district": "clinic",
+          "focus": "normal"
+        },
+        "visits": 21
+      },
+      {
+        "sceneId": "act2_freight_result",
+        "before": {
+          "mood": "week",
+          "district": "canal",
+          "focus": "normal"
+        },
+        "after": {
+          "mood": "quiet",
+          "district": "canal",
+          "focus": "normal"
+        },
+        "visits": 23
+      },
+      {
+        "sceneId": "act2_archive_prep",
+        "before": {
+          "mood": "week",
+          "district": "spire",
+          "focus": "normal"
+        },
+        "after": {
+          "mood": "quiet",
+          "district": "spire",
+          "focus": "intimate"
+        },
+        "visits": 165
+      },
+      {
+        "sceneId": "act2_archive_compare",
+        "before": {
+          "mood": "week",
+          "district": "spire",
+          "focus": "normal"
+        },
+        "after": {
+          "mood": "quiet",
+          "district": "spire",
+          "focus": "intimate"
+        },
+        "visits": 236
+      },
+      {
+        "sceneId": "act2_archive_door",
+        "before": {
+          "mood": "week",
+          "district": "spire",
+          "focus": "normal"
+        },
+        "after": {
+          "mood": "quiet",
+          "district": "spire",
+          "focus": "intimate"
+        },
+        "visits": 134
+      },
+      {
+        "sceneId": "act2_archive_gap",
+        "before": {
+          "mood": "week",
+          "district": "spire",
+          "focus": "normal"
+        },
+        "after": {
+          "mood": "quiet",
+          "district": "spire",
+          "focus": "intimate"
+        },
+        "visits": 53
+      },
+      {
+        "sceneId": "act3_freight_visit",
+        "before": {
+          "mood": "ward",
+          "district": "ward",
+          "focus": "normal"
+        },
+        "after": {
+          "mood": "quiet",
+          "district": "ward",
+          "focus": "normal"
+        },
+        "visits": 36
+      },
+      {
+        "sceneId": "act3_freight_reflection",
+        "before": {
+          "mood": "ward",
+          "district": "ward",
+          "focus": "normal"
+        },
+        "after": {
+          "mood": "quiet",
+          "district": "ward",
+          "focus": "normal"
+        },
+        "visits": 23
+      },
+      {
+        "sceneId": "act2_craft_archive",
+        "before": {
+          "mood": "quiet",
+          "district": "spire",
+          "focus": "normal"
+        },
+        "after": {
+          "mood": "quiet",
+          "district": "spire",
+          "focus": "intimate"
+        },
+        "visits": 61
+      },
+      {
+        "sceneId": "act2_craft_archive_issuer",
+        "before": {
+          "mood": "quiet",
+          "district": "spire",
+          "focus": "normal"
+        },
+        "after": {
+          "mood": "quiet",
+          "district": "spire",
+          "focus": "intimate"
+        },
+        "visits": 21
+      },
+      {
+        "sceneId": "act2_craft_archive_challenge",
+        "before": {
+          "mood": "quiet",
+          "district": "spire",
+          "focus": "normal"
+        },
+        "after": {
+          "mood": "quiet",
+          "district": "spire",
+          "focus": "intimate"
+        },
+        "visits": 9
+      },
+      {
+        "sceneId": "act2_craft_archive_ledger",
+        "before": {
+          "mood": "quiet",
+          "district": "spire",
+          "focus": "normal"
+        },
+        "after": {
+          "mood": "quiet",
+          "district": "spire",
+          "focus": "intimate"
+        },
+        "visits": 7
+      },
+      {
+        "sceneId": "act2_freight_recovery",
+        "before": {
+          "mood": "week",
+          "district": "canal",
+          "focus": "normal"
+        },
+        "after": {
+          "mood": "quiet",
+          "district": "canal",
+          "focus": "normal"
+        },
+        "visits": 2
+      },
+      {
+        "sceneId": "act3_freight_query",
+        "before": {
+          "mood": "ward",
+          "district": "ward",
+          "focus": "normal"
+        },
+        "after": {
+          "mood": "quiet",
+          "district": "ward",
+          "focus": "normal"
+        },
+        "visits": 3
+      }
+    ],
+    "method": "Canonical selected route edges, including self inspections and finales. Not listening, timing, perceived smoothness or reduced loading bytes."
+  },
+  "sourceTests": 901,
+  "browser": {
+    "precedingChromiumCases": 186,
+    "focusedChromium": 37,
+    "focusedWebkit": 37,
+    "workers": 4,
+    "retries": 0,
+    "localWebkitHostValidationDisabled": true,
+    "originalDeadlinesPreserved": true
+  },
+  "diagnostics": "qa/editorial/sequence-continuity-diagnostics.json",
+  "previousRelease": "qa/editorial/freight-craft-release.json",
+  "limitations": "Source-familiar AI proxy. Fixed authored dice and synthetic viewports; not human, blind, physical-iPhone or independent acting/listening acceptance. No grade increase."
+}

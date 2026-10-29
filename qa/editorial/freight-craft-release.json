@@ -1,0 +1,3171 @@
+{
+  "version": 1,
+  "phase": 8,
+  "revision": "b388fa333c4c36de438d5669a16972ea37d975ba",
+  "grade": 8.8,
+  "status": "Exact-commit hosted CI and public release verified",
+  "ciRun": 40906329549,
+  "deploymentId": "dpl_HUr75afAWhHy5Y6GzqsVdHQJ7w9W",
+  "candidate": "qa/editorial/freight-craft-review.json",
+  "priorRelease": "qa/editorial/workspace-flow-release.json",
+  "ci": {
+    "runId": 40906329549,
+    "conclusion": "success",
+    "url": "https://github.com/cisohabitat/CyberPunk3055RPG/actions/runs/40906329549",
+    "jobs": [
+      {
+        "id": 123561975271,
+        "name": "Test",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 40906329549,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Require README and agent guide updates",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Run npm ci",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Audit dependency vulnerabilities",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Run npm test",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Audit gameplay balance",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8
+          },
+          {
+            "name": "Compare matched mission objectives",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9
+          },
+          {
+            "name": "Check goal-driven campaign economy",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 10
+          },
+          {
+            "name": "Check overlapping clinic and witness work",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 11
+          },
+          {
+            "name": "Upload gameplay balance evidence",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 12
+          },
+          {
+            "name": "Build production application once",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 13
+          },
+          {
+            "name": "Audit production catalog and budgets once",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 14
+          },
+          {
+            "name": "Collect complete browser inventory and bind the shared build",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 15
+          },
+          {
+            "name": "Upload exact-commit production build",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 16
+          },
+          {
+            "name": "Upload complete browser plan",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 17
+          },
+          {
+            "name": "Upload shared production evidence",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 18
+          },
+          {
+            "name": "Post Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 35
+          },
+          {
+            "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 36
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 37
+          }
+        ]
+      },
+      {
+        "id": 123565503695,
+        "name": "Browser shard (firefox, 3/4)",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 40906329549,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Run npm ci",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Restore version-matched browser binaries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Run npx playwright install --with-deps firefox",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Start virtual audio device",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9
+          },
+          {
+            "name": "Generate deterministic public score deliveries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 10
+          },
+          {
+            "name": "Verify Chromium loading and performance",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 11
+          },
+          {
+            "name": "Check native menu permission before campaign regressions",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 12
+          },
+          {
+            "name": "Check all speaker captions before campaign regressions",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 13
+          },
+          {
+            "name": "Run and verify the required browser shard",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 14
+          },
+          {
+            "name": "Upload shard results, raw blob report and failure evidence",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 15
+          },
+          {
+            "name": "Upload Chromium production probe evidence",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 16
+          },
+          {
+            "name": "Post Restore version-matched browser binaries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 30
+          },
+          {
+            "name": "Post Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 31
+          },
+          {
+            "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 32
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 33
+          }
+        ]
+      },
+      {
+        "id": 123565503710,
+        "name": "Browser shard (chromium, 3/4)",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 40906329549,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Run npm ci",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Restore version-matched browser binaries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Run npx playwright install --with-deps chromium",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Start virtual audio device",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9
+          },
+          {
+            "name": "Generate deterministic public score deliveries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 10
+          },
+          {
+            "name": "Verify Chromium loading and performance",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 11
+          },
+          {
+            "name": "Check native menu permission before campaign regressions",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 12
+          },
+          {
+            "name": "Check all speaker captions before campaign regressions",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 13
+          },
+          {
+            "name": "Run and verify the required browser shard",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 14
+          },
+          {
+            "name": "Upload shard results, raw blob report and failure evidence",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 15
+          },
+          {
+            "name": "Upload Chromium production probe evidence",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 16
+          },
+          {
+            "name": "Post Restore version-matched browser binaries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 30
+          },
+          {
+            "name": "Post Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 31
+          },
+          {
+            "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 32
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 33
+          }
+        ]
+      },
+      {
+        "id": 123565503711,
+        "name": "Browser shard (firefox, 1/4)",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 40906329549,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Run npm ci",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Restore version-matched browser binaries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Run npx playwright install --with-deps firefox",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Start virtual audio device",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9
+          },
+          {
+            "name": "Generate deterministic public score deliveries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 10
+          },
+          {
+            "name": "Verify Chromium loading and performance",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 11
+          },
+          {
+            "name": "Check native menu permission before campaign regressions",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 12
+          },
+          {
+            "name": "Check all speaker captions before campaign regressions",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 13
+          },
+          {
+            "name": "Run and verify the required browser shard",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 14
+          },
+          {
+            "name": "Upload shard results, raw blob report and failure evidence",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 15
+          },
+          {
+            "name": "Upload Chromium production probe evidence",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 16
+          },
+          {
+            "name": "Post Restore version-matched browser binaries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 30
+          },
+          {
+            "name": "Post Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 31
+          },
+          {
+            "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 32
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 33
+          }
+        ]
+      },
+      {
+        "id": 123565503721,
+        "name": "Browser shard (chromium, 2/4)",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 40906329549,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Run npm ci",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Restore version-matched browser binaries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Run npx playwright install --with-deps chromium",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Start virtual audio device",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9
+          },
+          {
+            "name": "Generate deterministic public score deliveries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 10
+          },
+          {
+            "name": "Verify Chromium loading and performance",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 11
+          },
+          {
+            "name": "Check native menu permission before campaign regressions",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 12
+          },
+          {
+            "name": "Check all speaker captions before campaign regressions",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 13
+          },
+          {
+            "name": "Run and verify the required browser shard",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 14
+          },
+          {
+            "name": "Upload shard results, raw blob report and failure evidence",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 15
+          },
+          {
+            "name": "Upload Chromium production probe evidence",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 16
+          },
+          {
+            "name": "Post Restore version-matched browser binaries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 30
+          },
+          {
+            "name": "Post Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 31
+          },
+          {
+            "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 32
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 33
+          }
+        ]
+      },
+      {
+        "id": 123565503725,
+        "name": "Browser shard (webkit, 2/4)",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 40906329549,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Run npm ci",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Restore version-matched browser binaries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Run npx playwright install --with-deps webkit",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Start virtual audio device",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9
+          },
+          {
+            "name": "Generate deterministic public score deliveries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 10
+          },
+          {
+            "name": "Verify Chromium loading and performance",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 11
+          },
+          {
+            "name": "Check native menu permission before campaign regressions",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 12
+          },
+          {
+            "name": "Check all speaker captions before campaign regressions",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 13
+          },
+          {
+            "name": "Run and verify the required browser shard",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 14
+          },
+          {
+            "name": "Upload shard results, raw blob report and failure evidence",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 15
+          },
+          {
+            "name": "Upload Chromium production probe evidence",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 16
+          },
+          {
+            "name": "Post Restore version-matched browser binaries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 30
+          },
+          {
+            "name": "Post Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 31
+          },
+          {
+            "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 32
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 33
+          }
+        ]
+      },
+      {
+        "id": 123565503726,
+        "name": "Browser shard (phone, 1/4)",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 40906329549,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Run npm ci",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Restore version-matched browser binaries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Run npx playwright install --with-deps chromium",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Start virtual audio device",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9
+          },
+          {
+            "name": "Generate deterministic public score deliveries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 10
+          },
+          {
+            "name": "Verify Chromium loading and performance",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 11
+          },
+          {
+            "name": "Check native menu permission before campaign regressions",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 12
+          },
+          {
+            "name": "Check all speaker captions before campaign regressions",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 13
+          },
+          {
+            "name": "Run and verify the required browser shard",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 14
+          },
+          {
+            "name": "Upload shard results, raw blob report and failure evidence",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 15
+          },
+          {
+            "name": "Upload Chromium production probe evidence",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 16
+          },
+          {
+            "name": "Post Restore version-matched browser binaries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 30
+          },
+          {
+            "name": "Post Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 31
+          },
+          {
+            "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 32
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 33
+          }
+        ]
+      },
+      {
+        "id": 123565503742,
+        "name": "Browser shard (phone, 3/4)",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 40906329549,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Run npm ci",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Restore version-matched browser binaries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Run npx playwright install --with-deps chromium",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Start virtual audio device",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9
+          },
+          {
+            "name": "Generate deterministic public score deliveries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 10
+          },
+          {
+            "name": "Verify Chromium loading and performance",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 11
+          },
+          {
+            "name": "Check native menu permission before campaign regressions",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 12
+          },
+          {
+            "name": "Check all speaker captions before campaign regressions",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 13
+          },
+          {
+            "name": "Run and verify the required browser shard",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 14
+          },
+          {
+            "name": "Upload shard results, raw blob report and failure evidence",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 15
+          },
+          {
+            "name": "Upload Chromium production probe evidence",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 16
+          },
+          {
+            "name": "Post Restore version-matched browser binaries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 30
+          },
+          {
+            "name": "Post Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 31
+          },
+          {
+            "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 32
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 33
+          }
+        ]
+      },
+      {
+        "id": 123565503745,
+        "name": "Browser shard (firefox, 2/4)",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 40906329549,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Run npm ci",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Restore version-matched browser binaries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Run npx playwright install --with-deps firefox",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Start virtual audio device",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9
+          },
+          {
+            "name": "Generate deterministic public score deliveries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 10
+          },
+          {
+            "name": "Verify Chromium loading and performance",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 11
+          },
+          {
+            "name": "Check native menu permission before campaign regressions",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 12
+          },
+          {
+            "name": "Check all speaker captions before campaign regressions",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 13
+          },
+          {
+            "name": "Run and verify the required browser shard",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 14
+          },
+          {
+            "name": "Upload shard results, raw blob report and failure evidence",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 15
+          },
+          {
+            "name": "Upload Chromium production probe evidence",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 16
+          },
+          {
+            "name": "Post Restore version-matched browser binaries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 30
+          },
+          {
+            "name": "Post Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 31
+          },
+          {
+            "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 32
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 33
+          }
+        ]
+      },
+      {
+        "id": 123565503783,
+        "name": "Browser shard (chromium, 4/4)",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 40906329549,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Run npm ci",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Restore version-matched browser binaries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Run npx playwright install --with-deps chromium",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Start virtual audio device",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9
+          },
+          {
+            "name": "Generate deterministic public score deliveries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 10
+          },
+          {
+            "name": "Verify Chromium loading and performance",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 11
+          },
+          {
+            "name": "Check native menu permission before campaign regressions",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 12
+          },
+          {
+            "name": "Check all speaker captions before campaign regressions",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 13
+          },
+          {
+            "name": "Run and verify the required browser shard",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 14
+          },
+          {
+            "name": "Upload shard results, raw blob report and failure evidence",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 15
+          },
+          {
+            "name": "Upload Chromium production probe evidence",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 16
+          },
+          {
+            "name": "Post Restore version-matched browser binaries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 30
+          },
+          {
+            "name": "Post Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 31
+          },
+          {
+            "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 32
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 33
+          }
+        ]
+      },
+      {
+        "id": 123565503820,
+        "name": "Browser shard (webkit, 4/4)",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 40906329549,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Run npm ci",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Restore version-matched browser binaries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Run npx playwright install --with-deps webkit",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Start virtual audio device",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9
+          },
+          {
+            "name": "Generate deterministic public score deliveries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 10
+          },
+          {
+            "name": "Verify Chromium loading and performance",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 11
+          },
+          {
+            "name": "Check native menu permission before campaign regressions",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 12
+          },
+          {
+            "name": "Check all speaker captions before campaign regressions",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 13
+          },
+          {
+            "name": "Run and verify the required browser shard",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 14
+          },
+          {
+            "name": "Upload shard results, raw blob report and failure evidence",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 15
+          },
+          {
+            "name": "Upload Chromium production probe evidence",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 16
+          },
+          {
+            "name": "Post Restore version-matched browser binaries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 30
+          },
+          {
+            "name": "Post Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 31
+          },
+          {
+            "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 32
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 33
+          }
+        ]
+      },
+      {
+        "id": 123565503825,
+        "name": "Browser shard (firefox, 4/4)",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 40906329549,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Run npm ci",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Restore version-matched browser binaries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Run npx playwright install --with-deps firefox",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Start virtual audio device",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9
+          },
+          {
+            "name": "Generate deterministic public score deliveries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 10
+          },
+          {
+            "name": "Verify Chromium loading and performance",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 11
+          },
+          {
+            "name": "Check native menu permission before campaign regressions",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 12
+          },
+          {
+            "name": "Check all speaker captions before campaign regressions",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 13
+          },
+          {
+            "name": "Run and verify the required browser shard",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 14
+          },
+          {
+            "name": "Upload shard results, raw blob report and failure evidence",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 15
+          },
+          {
+            "name": "Upload Chromium production probe evidence",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 16
+          },
+          {
+            "name": "Post Restore version-matched browser binaries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 30
+          },
+          {
+            "name": "Post Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 31
+          },
+          {
+            "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 32
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 33
+          }
+        ]
+      },
+      {
+        "id": 123565503839,
+        "name": "Browser shard (webkit, 3/4)",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 40906329549,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Run npm ci",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Restore version-matched browser binaries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Run npx playwright install --with-deps webkit",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Start virtual audio device",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9
+          },
+          {
+            "name": "Generate deterministic public score deliveries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 10
+          },
+          {
+            "name": "Verify Chromium loading and performance",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 11
+          },
+          {
+            "name": "Check native menu permission before campaign regressions",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 12
+          },
+          {
+            "name": "Check all speaker captions before campaign regressions",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 13
+          },
+          {
+            "name": "Run and verify the required browser shard",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 14
+          },
+          {
+            "name": "Upload shard results, raw blob report and failure evidence",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 15
+          },
+          {
+            "name": "Upload Chromium production probe evidence",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 16
+          },
+          {
+            "name": "Post Restore version-matched browser binaries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 30
+          },
+          {
+            "name": "Post Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 31
+          },
+          {
+            "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 32
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 33
+          }
+        ]
+      },
+      {
+        "id": 123565503873,
+        "name": "Browser shard (chromium, 1/4)",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 40906329549,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Run npm ci",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Restore version-matched browser binaries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Run npx playwright install --with-deps chromium",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Start virtual audio device",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9
+          },
+          {
+            "name": "Generate deterministic public score deliveries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 10
+          },
+          {
+            "name": "Verify Chromium loading and performance",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 11
+          },
+          {
+            "name": "Check native menu permission before campaign regressions",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 12
+          },
+          {
+            "name": "Check all speaker captions before campaign regressions",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 13
+          },
+          {
+            "name": "Run and verify the required browser shard",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 14
+          },
+          {
+            "name": "Upload shard results, raw blob report and failure evidence",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 15
+          },
+          {
+            "name": "Upload Chromium production probe evidence",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 16
+          },
+          {
+            "name": "Post Restore version-matched browser binaries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 30
+          },
+          {
+            "name": "Post Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 31
+          },
+          {
+            "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 32
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 33
+          }
+        ]
+      },
+      {
+        "id": 123565503886,
+        "name": "Browser shard (webkit, 1/4)",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 40906329549,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Run npm ci",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Restore version-matched browser binaries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Run npx playwright install --with-deps webkit",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Start virtual audio device",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9
+          },
+          {
+            "name": "Generate deterministic public score deliveries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 10
+          },
+          {
+            "name": "Verify Chromium loading and performance",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 11
+          },
+          {
+            "name": "Check native menu permission before campaign regressions",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 12
+          },
+          {
+            "name": "Check all speaker captions before campaign regressions",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 13
+          },
+          {
+            "name": "Run and verify the required browser shard",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 14
+          },
+          {
+            "name": "Upload shard results, raw blob report and failure evidence",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 15
+          },
+          {
+            "name": "Upload Chromium production probe evidence",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 16
+          },
+          {
+            "name": "Post Restore version-matched browser binaries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 30
+          },
+          {
+            "name": "Post Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 31
+          },
+          {
+            "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 32
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 33
+          }
+        ]
+      },
+      {
+        "id": 123565503914,
+        "name": "Browser shard (phone, 4/4)",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 40906329549,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Run npm ci",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Restore version-matched browser binaries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Run npx playwright install --with-deps chromium",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Start virtual audio device",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9
+          },
+          {
+            "name": "Generate deterministic public score deliveries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 10
+          },
+          {
+            "name": "Verify Chromium loading and performance",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 11
+          },
+          {
+            "name": "Check native menu permission before campaign regressions",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 12
+          },
+          {
+            "name": "Check all speaker captions before campaign regressions",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 13
+          },
+          {
+            "name": "Run and verify the required browser shard",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 14
+          },
+          {
+            "name": "Upload shard results, raw blob report and failure evidence",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 15
+          },
+          {
+            "name": "Upload Chromium production probe evidence",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 16
+          },
+          {
+            "name": "Post Restore version-matched browser binaries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 30
+          },
+          {
+            "name": "Post Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 31
+          },
+          {
+            "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 32
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 33
+          }
+        ]
+      },
+      {
+        "id": 123565503945,
+        "name": "Browser shard (phone, 2/4)",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 40906329549,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Run npm ci",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Restore version-matched browser binaries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Run npx playwright install --with-deps chromium",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Start virtual audio device",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9
+          },
+          {
+            "name": "Generate deterministic public score deliveries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 10
+          },
+          {
+            "name": "Verify Chromium loading and performance",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 11
+          },
+          {
+            "name": "Check native menu permission before campaign regressions",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 12
+          },
+          {
+            "name": "Check all speaker captions before campaign regressions",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 13
+          },
+          {
+            "name": "Run and verify the required browser shard",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 14
+          },
+          {
+            "name": "Upload shard results, raw blob report and failure evidence",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 15
+          },
+          {
+            "name": "Upload Chromium production probe evidence",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 16
+          },
+          {
+            "name": "Post Restore version-matched browser binaries",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 30
+          },
+          {
+            "name": "Post Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 31
+          },
+          {
+            "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 32
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 33
+          }
+        ]
+      },
+      {
+        "id": 123576123905,
+        "name": "Browser (phone)",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 40906329549,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Run npm ci",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Require every shard and exact complete project coverage",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Merge the complete project browser report",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8
+          },
+          {
+            "name": "Upload verified complete browser evidence",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9
+          },
+          {
+            "name": "Post Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 17
+          },
+          {
+            "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 18
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 19
+          }
+        ]
+      },
+      {
+        "id": 123576123959,
+        "name": "Browser (chromium)",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 40906329549,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Run npm ci",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Require every shard and exact complete project coverage",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Merge the complete project browser report",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8
+          },
+          {
+            "name": "Upload verified complete browser evidence",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9
+          },
+          {
+            "name": "Post Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 17
+          },
+          {
+            "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 18
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 19
+          }
+        ]
+      },
+      {
+        "id": 123576123981,
+        "name": "Browser (webkit)",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 40906329549,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Run npm ci",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Require every shard and exact complete project coverage",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Merge the complete project browser report",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8
+          },
+          {
+            "name": "Upload verified complete browser evidence",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9
+          },
+          {
+            "name": "Post Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 17
+          },
+          {
+            "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 18
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 19
+          }
+        ]
+      },
+      {
+        "id": 123576124119,
+        "name": "Browser (firefox)",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 40906329549,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Run npm ci",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Require every shard and exact complete project coverage",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Merge the complete project browser report",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8
+          },
+          {
+            "name": "Upload verified complete browser evidence",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9
+          },
+          {
+            "name": "Post Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 17
+          },
+          {
+            "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 18
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 19
+          }
+        ]
+      },
+      {
+        "id": 123576539120,
+        "name": "Build",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 40906329549,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Require source tests and every browser project",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Post Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9
+          }
+        ]
+      }
+    ],
+    "metrics": [
+      {
+        "project": "chromium",
+        "revision": "b388fa333c4c36de438d5669a16972ea37d975ba",
+        "total": 1403,
+        "passed": 1403,
+        "flaky": 0,
+        "skipped": 0,
+        "longestShardSeconds": 414.6
+      },
+      {
+        "project": "phone",
+        "revision": "b388fa333c4c36de438d5669a16972ea37d975ba",
+        "total": 1403,
+        "passed": 1401,
+        "flaky": 0,
+        "skipped": 2,
+        "longestShardSeconds": 470.8
+      },
+      {
+        "project": "firefox",
+        "revision": "b388fa333c4c36de438d5669a16972ea37d975ba",
+        "total": 1403,
+        "passed": 1401,
+        "flaky": 0,
+        "skipped": 2,
+        "longestShardSeconds": 604.9
+      },
+      {
+        "project": "webkit",
+        "revision": "b388fa333c4c36de438d5669a16972ea37d975ba",
+        "total": 1403,
+        "passed": 1401,
+        "flaky": 0,
+        "skipped": 2,
+        "longestShardSeconds": 980.6
+      }
+    ],
+    "revision": "b388fa333c4c36de438d5669a16972ea37d975ba"
+  },
+  "deployment": {
+    "id": "dpl_HUr75afAWhHy5Y6GzqsVdHQJ7w9W",
+    "revision": "b388fa333c4c36de438d5669a16972ea37d975ba",
+    "status": "READY",
+    "target": "production",
+    "projectId": "prj_JYHAxYL8onO9SFrvFN0i5q3IepIp",
+    "url": "cyberpunk3055rpg-fiw7wzgrc-cfusion2k-7277s-projects.vercel.app",
+    "aliases": [
+      "cyberpunk3055rpg.vercel.app",
+      "cyberpunk3055rpg-cfusion2k-7277s-projects.vercel.app",
+      "cyberpunk3055rpg-git-main-cfusion2k-7277s-projects.vercel.app"
+    ],
+    "source": "redeploy",
+    "priorCanceled": {
+      "id": "dpl_2nxiHemP1DASZy9WKMyzZGUFji1T",
+      "reason": "CI status request failed within request limit; ignored-build step returned0"
+    },
+    "teamConsent": "Granted by user before same-commit redeployment"
+  },
+  "publicBrowser": {
+    "cases": 60,
+    "passed": 60,
+    "retries": 0,
+    "workers": 4,
+    "includes": "All53 freight cases and seven full gallery regressions",
+    "method": "Real Chromium, normal curl CA validation and exact public-host SPKI proxy compatibility; no blanket TLS bypass"
+  },
+  "publicMedia": [
+    {
+      "path": "/art/archive-desk-small.jpg",
+      "bytes": 66877,
+      "sha256": "2f5ac1bc069bc135913ff3abb573ce67ba5332dc6893db2f3216fbfff85f9fdc",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/archive-desk.jpg",
+      "bytes": 237437,
+      "sha256": "3380a27c045a88e14ed668eac830ff10184f802149f877fd5d5348b64f51c2b2",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/archive-question-detail-small.jpg",
+      "bytes": 76243,
+      "sha256": "1af1501de9f82a69d9339867c193da048e5949aa24c980999f164dae8e2416a1",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/archive-question-detail.jpg",
+      "bytes": 273275,
+      "sha256": "40f889347acb89606924884223462bc18faf2db264589b0d769de23a06598783",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/correction-bench-small.jpg",
+      "bytes": 105559,
+      "sha256": "3ddac00a6bb46f325776b6bab033c9be6f38433ecdafade78e795e9c257ad653",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/correction-bench.jpg",
+      "bytes": 397454,
+      "sha256": "736b7458376c81ed74a7ee6ba77b361a8cd84571512b70cc3feefeab547127c6",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/edda-archive-small.jpg",
+      "bytes": 74651,
+      "sha256": "359e29bb4b084b1fc957a87d772a683bd77ec7a96eea4dd28e513962eae5c9c5",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/edda-archive.jpg",
+      "bytes": 246442,
+      "sha256": "090a907f59e2587d9ccc536652621ff0868c6ac46aa0e4a3067401a671cc9810",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/edda-listening-wide-small.jpg",
+      "bytes": 60973,
+      "sha256": "8bfde30452162207e32b10fd5f96304398548622d6e9d8d12212d6c052dc4dbe",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/edda-listening-wide.jpg",
+      "bytes": 220700,
+      "sha256": "eb27a52a84a1b20042967513b555226462d91b5a1129229ae3bb32c9830aaf94",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/edda.jpg",
+      "bytes": 59087,
+      "sha256": "6af115f70e05fbf24b71e7dedf74885e774dba1ac75f5d1689f1b66ee4931223",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/finale-listed-small.jpg",
+      "bytes": 74999,
+      "sha256": "adc674abba2e4e39af79a919cce5bfc5c9d9a4ff74deff6285eed220e7856f37",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/finale-listed.jpg",
+      "bytes": 283489,
+      "sha256": "097e29b0e4558bcbfccfd9f2431b0cdc80c810d01b313b1a29407df4ebec1954",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/finale-names-small.jpg",
+      "bytes": 81924,
+      "sha256": "8cd0509d1862947e9fc82878b37f7d48ce76b38bcfaf888eb6a5db314bf6c269",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/finale-names.jpg",
+      "bytes": 284789,
+      "sha256": "7a22dc054a9e6700b8a688dedc17f02dc672efe4cccaa979082e07ff2153e72c",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/finale-quiet-small.jpg",
+      "bytes": 78706,
+      "sha256": "4341796646fc70459af7481f8df71720e2f37c304605ec687d09d75bb6b7560c",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/finale-quiet.jpg",
+      "bytes": 294800,
+      "sha256": "ac9eaf092f9d3e79f6ddc9efdf5b306e0f0838cad1414f21f7159cc7c5061074",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/finale-witness-small.jpg",
+      "bytes": 69937,
+      "sha256": "5c00c4fd455cc0e3f819c5ca1919a907eeba363838303dba0f7d3679fdb8f719",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/finale-witness.jpg",
+      "bytes": 247623,
+      "sha256": "08b5ebc44ac43c137ac792901092963f3f21ab35a5ae12f7390a3125f3e66c37",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/ives.jpg",
+      "bytes": 350671,
+      "sha256": "0fbff0f64074ee10c85fb6e4f475f2c6df11b559b6a1ab11e78af4b4ed5e1fd8",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/kerr-listening-wide-small.jpg",
+      "bytes": 65405,
+      "sha256": "fe23b9441944fac11c5fb0468277c30ec88bb3f2926780dad5ffe4902b4c9160",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/kerr-listening-wide.jpg",
+      "bytes": 256992,
+      "sha256": "645155236e28715723c33a630566578b8f08fd4667798a842170711de67ffeba",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/kerr.jpg",
+      "bytes": 417492,
+      "sha256": "ec67f4b4299b3ff3302f9e6ae399dc2988d3f086b4f75bd8db2f481884b500ea",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/market-counter-small.jpg",
+      "bytes": 76244,
+      "sha256": "2ee3420b4057b96c9625efb7deb55d0e1ecbec56d7122d1ff6a6e4bb4a57f172",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/market-counter.jpg",
+      "bytes": 265620,
+      "sha256": "709cb53138b1b9f4ec6d3a4a168008f124cc0598903c20d04cccb63f7e0ef9b8",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/previews/archive-question-detail.jpg",
+      "bytes": 1985,
+      "sha256": "8c8c751c4d8c472b161bda5ca6521cee888debc2f32d15362c90621b000e55f0",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/previews/edda-listening-wide.jpg",
+      "bytes": 1829,
+      "sha256": "04f61bca7dc4633bd38530b7742b42aad2f27801b9156db9dac82598d4d6fd6b",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/previews/kerr-listening-wide.jpg",
+      "bytes": 1711,
+      "sha256": "b7d25cbfc45f906b2f6aeeafe8cfec3939dff18913d417fd297f3f7485bad2fc",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/previews/stall-quiet-detail.jpg",
+      "bytes": 1805,
+      "sha256": "3aa27441f8c6f773f9d594ea6188a9bb3e2b0794309bd234e5dcb7438683fe1c",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/sera-attentive.jpg",
+      "bytes": 159234,
+      "sha256": "a5a6399fa6e6e924b7f97eda2b75d83895ef2500783c52ba5ddfd97b0119ed4a",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/sera-listening.jpg",
+      "bytes": 70999,
+      "sha256": "2f6f082f184eb1f8bd6e44e64b8a92facde781d1a7f8d572a794a335a87e4369",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/stall-quiet-detail-small.jpg",
+      "bytes": 75356,
+      "sha256": "f5ffaa5a3505f4b8e19df39acf4d7fd9db1b8f73e39640b2141ecc2c3f997fbe",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/stall-quiet-detail.jpg",
+      "bytes": 269214,
+      "sha256": "1e98057d1122f09c519fd21b34df8481c1e65d994b387a14aa169dc86e12770a",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/performance-direction-v1/voice-campaign-emotional-payoff-0a1b8bb22589.mp3",
+      "bytes": 35180,
+      "sha256": "72b7ed1c7b6b8ee117e0b6ebf38c0d44acca5d0cfa3c6c51f6ed1a1ac6fc1771",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/performance-direction-v1/voice-campaign-emotional-payoff-26350d370631.mp3",
+      "bytes": 37484,
+      "sha256": "bcd650c8e634b2e5284f1ec3842079d649a32aa7d8f02817b977982144e7fffe",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/performance-direction-v1/voice-campaign-encounter-craft-43e701b3e2c1.mp3",
+      "bytes": 87884,
+      "sha256": "0d405f07c24162111515991dae415337b74f9aa96aaf46c15c40ee19410809b6",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/performance-direction-v1/voice-campaign-encounter-craft-570639a0f84d.mp3",
+      "bytes": 106316,
+      "sha256": "74decc3a98680b010f12ece93f5fe4ce0df88386c74a6c8a845192d856835657",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/performance-direction-v1/voice-campaign-encounter-craft-62b70985aa0d.mp3",
+      "bytes": 92780,
+      "sha256": "73dc8995d53d6b973e045205994e7bb1f527d950a20a789a7ed2b1d417403359",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/performance-direction-v1/voice-campaign-encounter-craft-a3b854d736a3.mp3",
+      "bytes": 63404,
+      "sha256": "df9d2fe325186297614ba22045756bf2853cc8364757c32106f9f8d57e06974c",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/performance-direction-v1/voice-campaign-encounter-craft-cd0a455809ce.mp3",
+      "bytes": 106604,
+      "sha256": "ea1258e102a5917c1b5594e4b51c289bfa41d58ad53f204c0d38225bd82a6b5a",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-emotional-payoff-0a1b8bb22589.mp3",
+      "bytes": 29996,
+      "sha256": "74917bdbd4d7b873f2b5871a6cf53aabd5fe416f290c5b72967e87ad1d605de0",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-emotional-payoff-26350d370631.mp3",
+      "bytes": 44972,
+      "sha256": "eefda43383f710b5c096118fca649e26c54dc0fa1cccb2df092ecdfb32f98ab4",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-emotional-payoff-4a4c8f261a79.mp3",
+      "bytes": 44396,
+      "sha256": "8f23b61a5bb7965fd8a61645e25aa02bf7e08a4f63cf639899ded32d41a5e71e",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-emotional-payoff-52ad3344069a.mp3",
+      "bytes": 38636,
+      "sha256": "31cc2e900ef1826edfc9414e12e73e75e90a9b495c2d9e036e0175b0831e5cd3",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-emotional-payoff-8b41fca71d2b.mp3",
+      "bytes": 42092,
+      "sha256": "d23aa919bba9c3dc4078e86c135723623961db98b464e0b2e6a947be868feb35",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-emotional-payoff-ee1ca23521df.mp3",
+      "bytes": 44684,
+      "sha256": "6d1bbb329a788595fdd825c941793013cd5c78c29e130448e4d8d9ae99617fc1",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-encounter-craft-0d503d1dabcb.mp3",
+      "bytes": 85004,
+      "sha256": "bb673be3f3ab76f1e2506087d55a16c443d4a5aff21c54d94a029b7472e762ab",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-encounter-craft-43e701b3e2c1.mp3",
+      "bytes": 90476,
+      "sha256": "bc1e76f21bbe9899a8843c61951f973f885d1476d4e0ee16e0a813e82497296e",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-encounter-craft-570639a0f84d.mp3",
+      "bytes": 106028,
+      "sha256": "1e229a9ea5a53ecba66385b2284e7967ba1b993c48303f09cf86bb76bd9c36e2",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-encounter-craft-62b70985aa0d.mp3",
+      "bytes": 93932,
+      "sha256": "85678c3358ccd498f5f069d8d43ffd308af1458776946c3a7a66b06ccc22ef2a",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-encounter-craft-a3b854d736a3.mp3",
+      "bytes": 70028,
+      "sha256": "dc0bf95d1599e8f7ebcf690f3de3e8565501533275acfc0ff518bfa3f1f1baf8",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3",
+      "bytes": 101420,
+      "sha256": "26825c2bc65fe72059a7ad4da468fffe47e9cd921d8fcb4ebdfe6d1ed04c872e",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-encounter-craft-cd0a455809ce.mp3",
+      "bytes": 103148,
+      "sha256": "430e68710b08ae2ccc4f787eb8dbab539514cb20e4645f7a7ffc4556fa4f9bc4",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-encounter-craft-ecb749c132e1.mp3",
+      "bytes": 72044,
+      "sha256": "644d289a826e3b45fd8dd7dc0d02cdc1f5d0a380ba5c950ee7098709ffddacf8",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/freight-ramp.jpg",
+      "bytes": 393643,
+      "sha256": "7623e3669ee4bdf2090206b60dee93607529ea41c954f15458a3b1ed89f13168",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/freight-ramp-small.jpg",
+      "bytes": 105591,
+      "sha256": "6bf33a07407f805f26d9f6ffb8d5ff47a2dee1d905da1ddef8037ea94477789e",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/previews/freight-ramp.jpg",
+      "bytes": 3281,
+      "sha256": "4480528b496c9b356dc48c35fe977677c8e4b4d52186390a57c711d224060015",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-freight-craft-4d3307b2d4d5.mp3",
+      "bytes": 96812,
+      "sha256": "e89c77cd0dc516c8c4cf864878634f2462a538082dc328c7f2f9f6ffad1d73dc",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-freight-craft-3215df9a9ef6.mp3",
+      "bytes": 67436,
+      "sha256": "9633e5fda24e725b16a764421c8299ea4e793553f5e8dcb7c6d3fe2d6d3c985f",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-freight-craft-b57bd816cb58.mp3",
+      "bytes": 72908,
+      "sha256": "edacf90cdbc265371f5b77fa7a3920786df1cf4a4cde2c03714a00e388521601",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-freight-craft-f609e901e947.mp3",
+      "bytes": 93356,
+      "sha256": "92c843d51163d22dbd2700318e37ad670e0d6bfd52b7799e7510405e34d01560",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-freight-craft-0707294020e3.mp3",
+      "bytes": 59084,
+      "sha256": "d450d0c227623fb70ef63913b81f7f5926a1193aeaf2f760b7fc37b42b2c17f3",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-freight-craft-28a71316e1ad.mp3",
+      "bytes": 68300,
+      "sha256": "4d0bcd07ca39db7bd437996efe37481ca2122cf4c2b0d5bc069a6a2bdb99e28e",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-freight-craft-52ca52bbb14b.mp3",
+      "bytes": 70028,
+      "sha256": "bc4d518f2d1321ec9d075a44d641918435b10d2c493e0227d64281a238682213",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-freight-craft-65d1cb340235.mp3",
+      "bytes": 75788,
+      "sha256": "fa0b2bac4bc6d2e13a0cc19821fc15c32f4e05579835cff46896385600642072",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-freight-craft-5bfa06763c3c.mp3",
+      "bytes": 74348,
+      "sha256": "22e2256b072fc32153911b5fb0b363d51e4e0bff63e54e6281a76cab7ca53e4d",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-freight-craft-c643ecc39c94.mp3",
+      "bytes": 66284,
+      "sha256": "ad83ca80d2df5be31508e36a7d316e1275bbbaccab349304d6253f98f46b95ba",
+      "matchesLocal": true
+    }
+  ],
+  "publicCampaigns": [
+    {
+      "id": "bare-names",
+      "visits": 79,
+      "reloads": 78,
+      "tabs": 571,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 330,
+        "strain": 5,
+        "rolls": [
+          1,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "errors": [],
+      "failedMedia": [],
+      "finalAudio": {
+        "sourcesCreated": 0,
+        "sourcesDisposed": 0,
+        "buffersCleared": 0,
+        "liveSources": 0,
+        "peakLiveSources": 0,
+        "starts": 0,
+        "stops": 0,
+        "started": [],
+        "decoded": [],
+        "disposed": [],
+        "cleared": [],
+        "voiceLevels": [],
+        "sceneCueLevels": [],
+        "stoppedSources": []
+      },
+      "limitations": "Internal authored campaign, not blind or fresh-player observation. Synthetic viewport and pagehide, not physical hardware or app switch. Voice completion and cleanup do not establish listening quality. Transition times include UI review/reloads; they are not INP or field percentiles."
+    },
+    {
+      "id": "scarce",
+      "visits": 88,
+      "reloads": 87,
+      "tabs": 751,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 0,
+        "strain": 5,
+        "rolls": [
+          1,
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "errors": [],
+      "failedMedia": [],
+      "finalAudio": {
+        "sourcesCreated": 0,
+        "sourcesDisposed": 0,
+        "buffersCleared": 0,
+        "liveSources": 0,
+        "peakLiveSources": 0,
+        "starts": 0,
+        "stops": 0,
+        "started": [],
+        "decoded": [],
+        "disposed": [],
+        "cleared": [],
+        "voiceLevels": [],
+        "sceneCueLevels": [],
+        "stoppedSources": []
+      },
+      "limitations": "Internal authored campaign, not blind or fresh-player observation. Synthetic viewport and pagehide, not physical hardware or app switch. Voice completion and cleanup do not establish listening quality. Transition times include UI review/reloads; they are not INP or field percentiles."
+    }
+  ],
+  "publicTotals": {
+    "visits": 167,
+    "reloads": 165,
+    "tabs": 1322
+  },
+  "candidateReproduced": true,
+  "sourceFingerprint": "972f56abd574558b5a36565c6d7a56621f63c7919176eb0404f30790a30d5ae2",
+  "limitations": "Source-familiar AI proxy and fixed authored dice. Synthetic viewports, not physical iPhone/human/blind/perceptual acting acceptance. Original local WebKit concurrent timeout retained beside isolated53/53 diagnostic; exact hosted retries/skips belong to the CI record. No automatic grade increase.",
+  "nextPhase": "Complete-sequence audiovisual continuity, then fixed-rubric reassessment",
+  "publicationEvidencePolicy": "Live evidence follows the implementation commit without a status-only repush; preserve it in the next substantive phase."
+}

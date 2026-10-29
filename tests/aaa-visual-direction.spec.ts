@@ -153,21 +153,22 @@ test("Settings preserves the selected view and canonical navigation resets it", 
   await expect(page.getByTestId("scene-illustration").locator("img")).toHaveAttribute("src", sceneIllustration(next.sceneId, next.flags)!.src);
 });
 
-for (const id of ["act2_craft_archive", "act2_craft_kerr_offer"]) test(`new visual frame preserves preceding normal bed focus: ${id}`, async ({ page }) => {
+for (const id of ["act2_craft_archive", "act2_craft_kerr_offer"]) test(`visual frame preserves the current authored sequence focus: ${id}`, async ({ page }) => {
   await page.addInitScript(installAudioReview, {}); await page.addInitScript(installSequenceAudioReview);
   const state = stateFor(id); await open(page, state, 1440, true, false); const before = await saved(page);
+  const focus = id === "act2_craft_archive" ? {music:.55,ambience:.75} : {music:1,ambience:1};
   const mix = () => page.evaluate(() => (window as unknown as { sequenceAudioReview: SequenceAudioReview }).sequenceAudioReview.sample());
-  await expect.poll(async () => (await mix()).music).toBeCloseTo(.6, 5);
-  await expect.poll(async () => (await mix()).ambience).toBeCloseTo(.5, 5);
+  await expect.poll(async () => (await mix()).music).toBeCloseTo(.6 * focus.music, 5);
+  await expect.poll(async () => (await mix()).ambience).toBeCloseTo(.5 * focus.ambience, 5);
   const voice = page.getByTestId("voice-line"); await voice.locator("summary").click();
   await voice.getByRole("button", { name: `Listen to ${getScene(id).speaker}`, exact: true }).click();
-  await expect.poll(async () => (await mix()).music).toBeCloseTo(.6 * .22, 5);
-  await expect.poll(async () => (await mix()).ambience).toBeCloseTo(.5 * .44, 5);
+  await expect.poll(async () => (await mix()).music).toBeCloseTo(.6 * focus.music * .22, 5);
+  await expect.poll(async () => (await mix()).ambience).toBeCloseTo(.5 * focus.ambience * .44, 5);
   const group = page.getByTestId("sequence-shots");
   await group.getByRole("button", { name: "Person", exact: true }).click();
-  await expect.poll(async () => (await mix()).music).toBeCloseTo(.6 * .22, 5);
+  await expect.poll(async () => (await mix()).music).toBeCloseTo(.6 * focus.music * .22, 5);
   await voice.getByRole("button", { name: "Stop line", exact: true }).click();
-  await expect.poll(async () => (await mix()).music).toBeCloseTo(.6, 5);
-  await expect.poll(async () => (await mix()).ambience).toBeCloseTo(.5, 5);
+  await expect.poll(async () => (await mix()).music).toBeCloseTo(.6 * focus.music, 5);
+  await expect.poll(async () => (await mix()).ambience).toBeCloseTo(.5 * focus.ambience, 5);
   expect(await saved(page)).toEqual(before);
 });

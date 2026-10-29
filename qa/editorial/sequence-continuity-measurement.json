@@ -1,0 +1,250 @@
+{
+  "visits": 16441,
+  "changedVisits": 935,
+  "beforeMusic": 4758,
+  "afterMusic": 4422,
+  "beforeFocus": 3783,
+  "afterFocus": 3379,
+  "precedingRoomTransitions": 4514,
+  "changedScenes": [
+    {
+      "sceneId": "act2_freight_brief",
+      "before": {
+        "mood": "week",
+        "district": "canal",
+        "focus": "normal"
+      },
+      "after": {
+        "mood": "quiet",
+        "district": "canal",
+        "focus": "normal"
+      },
+      "visits": 24
+    },
+    {
+      "sceneId": "act2_freight_sources",
+      "before": {
+        "mood": "week",
+        "district": "canal",
+        "focus": "normal"
+      },
+      "after": {
+        "mood": "quiet",
+        "district": "canal",
+        "focus": "normal"
+      },
+      "visits": 92
+    },
+    {
+      "sceneId": "act2_freight_prep",
+      "before": {
+        "mood": "week",
+        "district": "canal",
+        "focus": "normal"
+      },
+      "after": {
+        "mood": "quiet",
+        "district": "canal",
+        "focus": "normal"
+      },
+      "visits": 25
+    },
+    {
+      "sceneId": "act2_freight_intake",
+      "before": {
+        "mood": "week",
+        "district": "chapel",
+        "focus": "normal"
+      },
+      "after": {
+        "mood": "quiet",
+        "district": "clinic",
+        "focus": "normal"
+      },
+      "visits": 21
+    },
+    {
+      "sceneId": "act2_freight_result",
+      "before": {
+        "mood": "week",
+        "district": "canal",
+        "focus": "normal"
+      },
+      "after": {
+        "mood": "quiet",
+        "district": "canal",
+        "focus": "normal"
+      },
+      "visits": 23
+    },
+    {
+      "sceneId": "act2_archive_prep",
+      "before": {
+        "mood": "week",
+        "district": "spire",
+        "focus": "normal"
+      },
+      "after": {
+        "mood": "quiet",
+        "district": "spire",
+        "focus": "intimate"
+      },
+      "visits": 165
+    },
+    {
+      "sceneId": "act2_archive_compare",
+      "before": {
+        "mood": "week",
+        "district": "spire",
+        "focus": "normal"
+      },
+      "after": {
+        "mood": "quiet",
+        "district": "spire",
+        "focus": "intimate"
+      },
+      "visits": 236
+    },
+    {
+      "sceneId": "act2_archive_door",
+      "before": {
+        "mood": "week",
+        "district": "spire",
+        "focus": "normal"
+      },
+      "after": {
+        "mood": "quiet",
+        "district": "spire",
+        "focus": "intimate"
+      },
+      "visits": 134
+    },
+    {
+      "sceneId": "act2_archive_gap",
+      "before": {
+        "mood": "week",
+        "district": "spire",
+        "focus": "normal"
+      },
+      "after": {
+        "mood": "quiet",
+        "district": "spire",
+        "focus": "intimate"
+      },
+      "visits": 53
+    },
+    {
+      "sceneId": "act3_freight_visit",
+      "before": {
+        "mood": "ward",
+        "district": "ward",
+        "focus": "normal"
+      },
+      "after": {
+        "mood": "quiet",
+        "district": "ward",
+        "focus": "normal"
+      },
+      "visits": 36
+    },
+    {
+      "sceneId": "act3_freight_reflection",
+      "before": {
+        "mood": "ward",
+        "district": "ward",
+        "focus": "normal"
+      },
+      "after": {
+        "mood": "quiet",
+        "district": "ward",
+        "focus": "normal"
+      },
+      "visits": 23
+    },
+    {
+      "sceneId": "act2_craft_archive",
+      "before": {
+        "mood": "quiet",
+        "district": "spire",
+        "focus": "normal"
+      },
+      "after": {
+        "mood": "quiet",
+        "district": "spire",
+        "focus": "intimate"
+      },
+      "visits": 61
+    },
+    {
+      "sceneId": "act2_craft_archive_issuer",
+      "before": {
+        "mood": "quiet",
+        "district": "spire",
+        "focus": "normal"
+      },
+      "after": {
+        "mood": "quiet",
+        "district": "spire",
+        "focus": "intimate"
+      },
+      "visits": 21
+    },
+    {
+      "sceneId": "act2_craft_archive_challenge",
+      "before": {
+        "mood": "quiet",
+        "district": "spire",
+        "focus": "normal"
+      },
+      "after": {
+        "mood": "quiet",
+        "district": "spire",
+        "focus": "intimate"
+      },
+      "visits": 9
+    },
+    {
+      "sceneId": "act2_craft_archive_ledger",
+      "before": {
+        "mood": "quiet",
+        "district": "spire",
+        "focus": "normal"
+      },
+      "after": {
+        "mood": "quiet",
+        "district": "spire",
+        "focus": "intimate"
+      },
+      "visits": 7
+    },
+    {
+      "sceneId": "act2_freight_recovery",
+      "before": {
+        "mood": "week",
+        "district": "canal",
+        "focus": "normal"
+      },
+      "after": {
+        "mood": "quiet",
+        "district": "canal",
+        "focus": "normal"
+      },
+      "visits": 2
+    },
+    {
+      "sceneId": "act3_freight_query",
+      "before": {
+        "mood": "ward",
+        "district": "ward",
+        "focus": "normal"
+      },
+      "after": {
+        "mood": "quiet",
+        "district": "ward",
+        "focus": "normal"
+      },
+      "visits": 3
+    }
+  ],
+  "method": "Canonical selected route edges, including self inspections and finales. Not listening, timing, perceived smoothness or reduced loading bytes."
+}

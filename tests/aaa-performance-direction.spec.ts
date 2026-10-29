@@ -35,7 +35,7 @@ async function exit(page: Page, state: GameState) {
   await page.getByTestId(`choice-${choice.id}`).click(); await expect.poll(async () => JSON.parse((await saved(page)).save!)).toEqual(commitChoice(state, choice).state);
 }
 for (const width of [390, 1440]) for (const row of rows) test(`directed performance ${row.delivery.id} completes with matching actor, art and actual buses at ${width}px`, async ({ page }) => {
-  const observation = await observe(page, row), state = stateFor(row), focus = BED_FOCUS[row.example.focus as BedFocus];
+  const observation = await observe(page, row), state = stateFor(row), focus = BED_FOCUS[["act2_craft_archive", "act2_craft_archive_challenge", "act2_craft_archive_ledger"].includes(row.example.sceneId) ? "intimate" : row.example.focus as BedFocus];
   let release!: () => void; const ready = new Promise<void>(resolve => { release = resolve; });
   await page.route(observation.directed, async route => { await ready; await route.continue(); });
   try {
@@ -100,8 +100,8 @@ for (const fallback of [false, true]) test(`logical voice cache replays one deli
     await open(page, stateFor(row)); const before = await saved(page);
     // Measure reuse after actual cold beds settle. The existing bounded LRU
     // may evict an earlier voice while a larger score finishes decoding.
-    await expect.poll(async () => (await mix(page)).music).toBeCloseTo(.6, 5);
-    await expect.poll(async () => (await mix(page)).ambience).toBeCloseTo(.5, 5); release();
+    await expect.poll(async () => (await mix(page)).music).toBeCloseTo(.6 * .55, 5);
+    await expect.poll(async () => (await mix(page)).ambience).toBeCloseTo(.5 * .75, 5); release();
     await natural(page, observation.file);
     const widget = page.getByTestId("voice-line"); await widget.locator("summary").click(); await widget.getByRole("button", { name: `Listen to ${row.delivery.speaker}`, exact: true }).click();
     await natural(page, observation.file, 2); expect((await audio(page)).started.filter(f => f.startsWith("voice-"))).toEqual([observation.file, observation.file]);
