@@ -1,0 +1,278 @@
+{
+  "version": 1,
+  "phase": 6,
+  "status": "Validated pre-publication candidate; exact-commit hosted CI and live release pending",
+  "candidateBeforeCommit": "50e44428af09c37d8bfb11794b8856d05d53c3c5",
+  "sourceFingerprint": "b9d813edc6e1043b9053b5cde6e3813e8309ab35862017c003d6ff5fb7e882ca",
+  "grade": 8.8,
+  "weightedEstimate": 8.77,
+  "rubric": [
+    {
+      "area": "Narrative",
+      "weight": 0.2,
+      "baseline": 8.7,
+      "current": 8.9
+    },
+    {
+      "area": "RPG depth",
+      "weight": 0.2,
+      "baseline": 8.4,
+      "current": 8.6
+    },
+    {
+      "area": "Visuals",
+      "weight": 0.15,
+      "baseline": 8.5,
+      "current": 8.8
+    },
+    {
+      "area": "Audio",
+      "weight": 0.1,
+      "baseline": 8.2,
+      "current": 8.4
+    },
+    {
+      "area": "Usability",
+      "weight": 0.15,
+      "baseline": 8.6,
+      "current": 8.6
+    },
+    {
+      "area": "Engineering",
+      "weight": 0.2,
+      "baseline": 9.1,
+      "current": 9.1
+    }
+  ],
+  "method": "Source-familiar AI proxy over fixed authored dice and keyboard UI runs. No blind players, physical devices, screen-reader listening, perceptual audio scores or automatic craft grade.",
+  "implementation": "Offline acceptance tooling, raw/derived QA evidence and documentation; no gameplay, text, art, voice, preference or save changes",
+  "acceptance": "qa/editorial/aaa-campaign-acceptance.json",
+  "fixedProfiles": "qa/editorial/aaa-campaign-profiles.json",
+  "totals": {
+    "browserCampaigns": 10,
+    "visits": 768,
+    "reloads": 571,
+    "tabs": 6489,
+    "completedVoices": 41,
+    "shotReviews": 51
+  },
+  "sourceCoverage": {
+    "routes": 219,
+    "visits": 15496,
+    "visitedScenes": 235,
+    "totalScenes": 247,
+    "unvisitedScenes": [
+      "act2_folio",
+      "act2_heat",
+      "chapel",
+      "ending_exposed",
+      "ending_sainted",
+      "ending_smashed",
+      "ending_taken",
+      "hatch",
+      "hatch_caught",
+      "kerr_fight",
+      "lumen_cold",
+      "why"
+    ],
+    "presentedSceneChoices": 716,
+    "selectedSceneChoices": 562
+  },
+  "matchedPreviousPhase": [
+    {
+      "profile": "deferred",
+      "comparison": "All rendered prose, choices, decision gaps, final resources, and measured navigation/voice/shot counts unchanged from Phase 5",
+      "previousEvidence": "qa/editorial/aaa-performance-direction-review.json"
+    },
+    {
+      "profile": "denied",
+      "comparison": "All rendered prose, choices, decision gaps, final resources, and measured navigation/voice/shot counts unchanged from Phase 5",
+      "previousEvidence": "qa/editorial/aaa-performance-direction-review.json"
+    },
+    {
+      "profile": "names",
+      "comparison": "All rendered prose, choices, decision gaps, final resources, and measured navigation/voice/shot counts unchanged from Phase 5",
+      "previousEvidence": "qa/editorial/aaa-performance-direction-review.json"
+    },
+    {
+      "profile": "listed-sound",
+      "comparison": "All rendered prose, choices, decision gaps, final resources, and measured navigation/voice/shot counts unchanged from Phase 5",
+      "previousEvidence": "qa/editorial/aaa-performance-direction-review.json"
+    }
+  ],
+  "findings": [
+    {
+      "id": "workspace-density",
+      "severity": "craft priority; no progression blocker observed",
+      "evidence": [
+        {
+          "profile": "deferred",
+          "step": 45,
+          "sceneId": "act2_craft_archive",
+          "gapPx": 2090
+        },
+        {
+          "profile": "denied",
+          "step": 40,
+          "sceneId": "act2_route_exit",
+          "gapPx": 1181
+        },
+        {
+          "profile": "names",
+          "step": 54,
+          "sceneId": "act2_craft_archive",
+          "gapPx": 2100
+        },
+        {
+          "profile": "listed-sound",
+          "step": 51,
+          "sceneId": "act2_craft_archive",
+          "gapPx": 2100
+        },
+        {
+          "profile": "nerve",
+          "step": 72,
+          "sceneId": "act3_testimony_hearing",
+          "gapPx": 1817
+        },
+        {
+          "profile": "face-failed",
+          "step": 47,
+          "sceneId": "act2_route_exit",
+          "gapPx": 1092
+        },
+        {
+          "profile": "archive-failed",
+          "step": 45,
+          "sceneId": "act2_craft_archive",
+          "gapPx": 2090
+        },
+        {
+          "profile": "canceled",
+          "step": 71,
+          "sceneId": "act3_testimony_hearing",
+          "gapPx": 1654
+        },
+        {
+          "profile": "nerve-handling-failed",
+          "step": 69,
+          "sceneId": "act3_testimony_review",
+          "gapPx": 1754
+        },
+        {
+          "profile": "ghost-routing",
+          "step": 73,
+          "sceneId": "act3_testimony_review",
+          "gapPx": 1754
+        }
+      ],
+      "next": "Phase 7: active-workspace reading flow; preserve necessary editing, source/consent/cost controls"
+    },
+    {
+      "id": "source-coverage-limit",
+      "severity": "coverage limitation",
+      "unvisitedScenes": [
+        "act2_folio",
+        "act2_heat",
+        "chapel",
+        "ending_exposed",
+        "ending_sainted",
+        "ending_smashed",
+        "ending_taken",
+        "hatch",
+        "hatch_caught",
+        "kerr_fight",
+        "lumen_cold",
+        "why"
+      ],
+      "note": "219 historical routes visit 235/247 scenes and select 562 scene/choice pairs. Source graph and other browser cases are separate evidence; no exhaustive UI path claim."
+    },
+    {
+      "id": "performance-limits",
+      "severity": "craft/confidence limitation",
+      "evidence": "qa/media/aaa-performance-review.json",
+      "note": "Stock expression, retained ASR disagreements, rejected introduction and no physical listening review remain."
+    },
+    {
+      "id": "prior-retry-and-cache",
+      "severity": "retained QA history",
+      "evidence": [
+        "qa/editorial/aaa-visual-direction-release.json",
+        "qa/editorial/aaa-performance-direction-release.json"
+      ],
+      "note": "Retain earlier WebKit retry and cold-bed cache fixture failure; no limits/workers/retries loosened."
+    }
+  ],
+  "validation": {
+    "source": {
+      "passed": 881,
+      "failed": 0,
+      "skipped": 0
+    },
+    "typescript": "passed",
+    "build": "passed",
+    "knownDependencyVulnerabilities": 0,
+    "balanceAudits": 5,
+    "production": {
+      "scenes": 247,
+      "rawChoices": 751,
+      "routes": 219,
+      "deliveryAssets": 836,
+      "budgetViolations": []
+    },
+    "evidenceRejectionProbes": [
+      {
+        "case": "missing-report",
+        "exitCode": 1,
+        "accepted": false
+      },
+      {
+        "case": "stale-source",
+        "exitCode": 1,
+        "accepted": false
+      },
+      {
+        "case": "changed-prose",
+        "exitCode": 1,
+        "accepted": false
+      },
+      {
+        "case": "disabled-choice",
+        "exitCode": 1,
+        "accepted": false
+      },
+      {
+        "case": "wrong-final",
+        "exitCode": 1,
+        "accepted": false
+      },
+      {
+        "case": "live-audio",
+        "exitCode": 1,
+        "accepted": false
+      },
+      {
+        "case": "overflow",
+        "exitCode": 1,
+        "accepted": false
+      }
+    ],
+    "hosted": "pending exact implementation commit"
+  },
+  "retainedInitialFindings": [
+    {
+      "case": "CLI sandbox IPC",
+      "resolution": "Use node --import tsx; runtime network capability still needed for sandbox child-process metadata observation. No production change."
+    },
+    {
+      "case": "verifier label assumptions",
+      "resolution": "Canonical memory labels end with punctuation while existing MemoryPlate controls omit it and CSS uppercases the text. Compare every label word with case/punctuation folding only; keep prose comparison exact after whitespace normalization."
+    },
+    {
+      "case": "negative probe results",
+      "resolution": "Seven modified evidence sets correctly rejected; no input report was rewritten to manufacture a pass."
+    }
+  ],
+  "report": "docs/WHOLE_CAMPAIGN_ACCEPTANCE_PHASE6.md",
+  "releaseEvidence": "Recorded separately after publication without a status-only push"
+}

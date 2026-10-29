@@ -1,0 +1,92 @@
+[
+  {
+    "id": "deferred",
+    "route": "qa/routes/emotional-payoff/edda-deferred-quiet.json",
+    "width": 320,
+    "artwork": "none",
+    "reading": "paragraph",
+    "sound": false,
+    "shots": false
+  },
+  {
+    "id": "denied",
+    "route": "qa/routes/emotional-payoff/kerr-contact-denied-witness.json",
+    "width": 1440,
+    "artwork": "full",
+    "reading": "all",
+    "sound": false,
+    "shots": false
+  },
+  {
+    "id": "names",
+    "route": "qa/routes/emotional-payoff/edda-authenticated-names.json",
+    "width": 390,
+    "artwork": "full",
+    "reading": "all",
+    "sound": false,
+    "shots": false
+  },
+  {
+    "id": "listed-sound",
+    "route": "qa/routes/emotional-payoff/both-returns-listed.json",
+    "width": 390,
+    "artwork": "full",
+    "reading": "all",
+    "sound": true,
+    "shots": true
+  },
+  {
+    "id": "nerve",
+    "route": "qa/routes/allocation-gutterwire.json",
+    "width": 390,
+    "artwork": "full",
+    "reading": "all",
+    "sound": false,
+    "shots": false
+  },
+  {
+    "id": "face-failed",
+    "route": "qa/routes/depot-build-face-failed.json",
+    "width": 1440,
+    "artwork": "full",
+    "reading": "all",
+    "sound": false,
+    "shots": false
+  },
+  {
+    "id": "archive-failed",
+    "route": "qa/routes/emotional-payoff/edda-failed-quiet.json",
+    "width": 320,
+    "artwork": "none",
+    "reading": "paragraph",
+    "sound": false,
+    "shots": false
+  },
+  {
+    "id": "canceled",
+    "route": "qa/routes/emotional-payoff/kerr-canceled-quiet.json",
+    "width": 390,
+    "artwork": "full",
+    "reading": "all",
+    "sound": false,
+    "shots": false
+  },
+  {
+    "id": "nerve-handling-failed",
+    "route": "qa/routes/depot-build-nerve-failed.json",
+    "width": 390,
+    "artwork": "full",
+    "reading": "all",
+    "sound": false,
+    "shots": false
+  },
+  {
+    "id": "ghost-routing",
+    "route": "qa/routes/depot-build-ghost.json",
+    "width": 390,
+    "artwork": "full",
+    "reading": "all",
+    "sound": false,
+    "shots": false
+  }
+]

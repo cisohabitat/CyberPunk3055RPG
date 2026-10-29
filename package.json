@@ -24,7 +24,8 @@
     "production:voices": "tsx scripts/voice-validation.ts",
     "production:rehearse": "tsx scripts/release-rehearsal.ts",
     "balance:overlap": "node --import tsx scripts/clinic-overlap.ts && node --import tsx scripts/distribution-overlap.ts",
-    "security:audit": "npm audit --include=dev --audit-level=moderate"
+    "security:audit": "npm audit --include=dev --audit-level=moderate",
+    "production:acceptance": "node --import tsx scripts/campaign-acceptance.ts"
   },
   "dependencies": {
     "next": "^15.5.28",
