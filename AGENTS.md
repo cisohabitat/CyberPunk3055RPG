@@ -1,5 +1,7 @@
 # Saint Shard — agent guide
 
+AAA craft Phase 9: retain the corrected return-to-active-bed regression: wait for Chapel ambience while pressure music is held, verify street ambience on return, preserve the original score and reject the late pressure-track start. No array filtering or deadline/worker relaxation.
+
 AAA craft Phase 9: the offline edge audit must reject a missing authored check roll before calling the engine; retain its explicit roll guard and strict TypeScript check.
 
  `lib/sequence-continuity.ts` explicitly scopes 27 archive, freight-work and Asa-return stages. Briefed archive desk work uses quiet/intimate direction throughout; unbriefed legacy desk paths and actual pressure retain their base plan. Freight planning, cold recovery, intake, result and personal return keep quiet/normal direction; the actual clinic freight hatch uses clinic ambience. Do not extend this to the checkpoint, departure canal, memorial finale, timed windows or unrelated rooms. Each bed channel adopts its ready buffer independently under the same existing generation ticket, current requested plan, Sound and channel-volume guards. Stop/mute/scene changes still cancel late starts; no speculative room or score can speak after dismissal. Preserve fades, loop offsets, ducking, sliders, source voice gain, recordings, pause timing and native autoplay policy.

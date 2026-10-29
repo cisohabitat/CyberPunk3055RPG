@@ -40,5 +40,24 @@
     "error": "TS2345: authored roll can be undefined in the new offline audit CLI.",
     "cause": "The audit tool was added after the runtime build; the commit/push chain continued despite a failing final typecheck.",
     "correction": "Explicitly reject missing check rolls before engine replay; assert the guarded roll type. Corrected TypeScript exits0 and reproduces identical16441-visit edge measurements. Runtime/UI/media unchanged; final exact-commit hosted CI remains required."
+  },
+  "hostedRoomHandoffCorrection": {
+    "run": 40922213184,
+    "revision": "68525a76671700290327f5d7f9b981eeb4c390b4",
+    "case": "directed audio returning to an active bed cancels a late pressure start",
+    "failure": "Both attempts expected the original two loops only; WebKit correctly started Chapel ambience while pressure music was held and street ambience on return.",
+    "correction": "Wait for and assert both exact room starts, preserve the original street score, reject any late pressure-track start, retain saved allowance. No runtime change, skips, deadline or worker changes.",
+    "verification": {
+      "chromium": {
+        "passed": 1,
+        "seconds": 3.2
+      },
+      "webkit": {
+        "passed": 1,
+        "seconds": 5.2,
+        "localHostValidationDisabled": true
+      }
+    },
+    "otherHostedShards": "All15 other browser shards passed. Aggregate/Build gates correctly failed because one required shard failed."
   }
 }

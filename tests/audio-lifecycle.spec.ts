@@ -80,9 +80,13 @@ test("directed audio returning to an active bed cancels a late pressure start", 
   await expect.poll(async () => (await bedReview(page)).started.filter(name => name !== "theme-title.flac").length).toBe(2);
   const initial = (await bedReview(page)).started;
   await page.getByTestId("choice-begin-chapel-window").click();
+  // The ready room now starts independently of the held pressure score.
+  await expect.poll(async () => (await bedReview(page)).started).toEqual([...initial, "ambience-chapel.flac"]);
   await page.getByTestId("choice-pause-chapel-window").click();
+  await expect.poll(async () => (await bedReview(page)).started).toEqual([...initial, "ambience-chapel.flac", "ambience-street.flac"]);
   release(); await expect.poll(async () => (await bedReview(page)).decoded).toContain("theme-pressure.flac");
-  expect((await bedReview(page)).started).toEqual(initial);
+  expect((await bedReview(page)).started).toEqual([...initial, "ambience-chapel.flac", "ambience-street.flac"]);
+  expect((await bedReview(page)).started).not.toContain("theme-pressure.flac");
   expect((await page.evaluate(() => JSON.parse(localStorage.getItem("saint-shard-3055-v1")!))).flags.chapel_window_2).toBe(true);
 });
 
