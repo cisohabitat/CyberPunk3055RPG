@@ -34,5 +34,11 @@
     "longestObservedCaseSeconds": 29.5,
     "localHostValidationDisabled": true
   },
-  "boundarySplit": "Split archive description/question and freight lift/receipt into independent legal-checkpoint segments; preserve every original action and assertion, same30-second limit/four workers. Addresses observed29.5-second WebKit segment before hosted publication."
+  "boundarySplit": "Split archive description/question and freight lift/receipt into independent legal-checkpoint segments; preserve every original action and assertion, same30-second limit/four workers. Addresses observed29.5-second WebKit segment before hosted publication.",
+  "auditTypeCorrection": {
+    "firstCommit": "a88ede4",
+    "error": "TS2345: authored roll can be undefined in the new offline audit CLI.",
+    "cause": "The audit tool was added after the runtime build; the commit/push chain continued despite a failing final typecheck.",
+    "correction": "Explicitly reject missing check rolls before engine replay; assert the guarded roll type. Corrected TypeScript exits0 and reproduces identical16441-visit edge measurements. Runtime/UI/media unchanged; final exact-commit hosted CI remains required."
+  }
 }
