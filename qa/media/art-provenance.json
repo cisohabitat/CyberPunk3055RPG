@@ -4619,6 +4619,38 @@
           "sha256": "3aa27441f8c6f773f9d594ea6188a9bb3e2b0794309bd234e5dcb7438683fe1c"
         }
       ]
+    },
+    {
+      "id": "freight-ramp",
+      "sourceTool": "image_gen.imagegen",
+      "generated": "2026-10-29",
+      "sourceFile": "/workspace/generated_images/exec-0d3cd157-d3d2-4b62-9734-1e8125ab2f78.png",
+      "sourceSha256": "b1557dcf4d13944d1d847d6643f1a9dd4395bf705f593aad39ef5647c1c38cd4",
+      "promptSummary": "Neutral empty covered canal freight ramp, broad recessed landing before the rail bend and a closed storage hood; hand-painted petroleum-blue/amber noir. No people, hands, case, receipt, text, patient, completed carry or outcome. The prose supplies inspected route geometry and actual custody; this plate establishes setting only.",
+      "processing": "Full-frame proportional JPEG deliveries at1200x800,600x400,96x64; no cropping or creative editing.",
+      "files": [
+        {
+          "path": "public/art/freight-ramp.jpg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 393643,
+          "sha256": "7623e3669ee4bdf2090206b60dee93607529ea41c954f15458a3b1ed89f13168"
+        },
+        {
+          "path": "public/art/freight-ramp-small.jpg",
+          "width": 600,
+          "height": 400,
+          "bytes": 105591,
+          "sha256": "6bf33a07407f805f26d9f6ffb8d5ff47a2dee1d905da1ddef8037ea94477789e"
+        },
+        {
+          "path": "public/art/previews/freight-ramp.jpg",
+          "width": 96,
+          "height": 64,
+          "bytes": 3281,
+          "sha256": "4480528b496c9b356dc48c35fe977677c8e4b4d52186390a57c711d224060015"
+        }
+      ]
     }
   ]
 }

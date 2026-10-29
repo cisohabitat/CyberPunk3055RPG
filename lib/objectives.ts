@@ -1,3 +1,4 @@
+import { rampAgreement, rampOutcome, RAMP_RECORDS } from "./freight-craft";
 import { encounterRecords, noticePlanRecord } from "./campaign-consequences";
 import { noticeSchedule } from "./notice-allocation";
 import { windowRemaining } from "./chapel-window";
@@ -13,6 +14,10 @@ export type Objective = { id: string; title: string; status: "Open" | "Complete"
 export function objectives(state: GameState): Objective[] {
   const rows: Objective[] = [];
   const atWall = actName(state) === "The Wall";
+  if (rampAgreement(state)) {
+    const outcome = rampOutcome(state);
+    rows.push({ id: "freight-ramp", title: "Asa’s cooperative carry plan", status: outcome === "kept" || outcome === "closed" ? "Complete" : outcome === "failed" || atWall ? "Unresolved" : "Open", detail: outcome === "kept" ? RAMP_RECORDS.arrived : outcome === "closed" ? RAMP_RECORDS.canceled : outcome === "failed" ? RAMP_RECORDS.failed : atWall ? "The week closed without completing the planned carry. The actual parcel receipt and any route exposure remain separate." : "Survey a level stop and choose real support. Resume the plan from the district board, or cancel before lifting. Any lift effort and materials stay spent." });
+  }
   if (state.flags.response_private_consent) rows.push({
     id: "mara-response", title: "Mara’s current private reply",
     status: state.flags.response_received ? "Complete" : atWall && !state.flags.response_sent ? "Unresolved" : "Open",
@@ -80,6 +85,8 @@ export function weekClosingPromises(state: GameState): Objective[] {
 }
 
 export function nextStep(state: GameState): string {
+  if (state.sceneId.startsWith("act2_ramp_")) return "Keep Asa’s gate task separate from the load, paid effort, handover and actual stock receipt. A stopped carry can use another carrier.";
+  if (state.sceneId === "act3_ramp_return") return "Hear Asa’s personal answer beside the actual parcel record. No receipt or treatment is added.";
   if (state.pendingCheck) return "Finish the recorded roll. Its outcome is already saved.";
   if (state.sceneId === "act2_mara_company") return "Choose company and dispatch separately: pay a courier to stay, walk the reply, stay with it pending, or decline the invitation.";
   if (state.sceneId === "act2_mara_company_kept") return "Keep the shared hour in its own record. A dispatched reply still awaits receipt; a sealed one can resume before the Week closes.";

@@ -1,3 +1,4 @@
+import freight from "../qa/media/freight-craft.json";
 import payoff from "../qa/media/emotional-payoff.json";
 import craft from "../qa/media/encounter-craft.json";
 import { reviewedDeliveryHash } from "../qa/production/delivery-history";
@@ -58,7 +59,7 @@ it("matches highlighted words to actual visible quotations throughout all comple
 it("requires a reviewed portrait and exact scene list for every actor and keeps all voice files locked", () => {
   assert.equal(presentation.version, 1);
   assert.equal(new Set(presentation.speakers.map(entry => entry.speaker)).size, 15);
-  const current = presentation.speakers.map(entry => ({ ...entry, scenes: [...entry.scenes, ...[...mara.portraitAdditions, ...witness.portraitAdditions, ...craft.portraitAdditions, ...payoff.portraitAdditions].filter(a => a.speaker === entry.speaker).flatMap(a => a.scenes)] }));
+  const current = presentation.speakers.map(entry => ({ ...entry, scenes: [...entry.scenes, ...[...mara.portraitAdditions, ...witness.portraitAdditions, ...craft.portraitAdditions, ...payoff.portraitAdditions, ...freight.portraitAdditions].filter(a => a.speaker === entry.speaker).flatMap(a => a.scenes)] }));
   assert.deepEqual(decisions.speakingPortraits, current);
   for (const addition of mara.portraitAdditions) assert.equal(portraitArt(addition.speaker), addition.asset);
   assert.equal(presentation.bindingSha256, sha("qa/media/campaign-dialogue-bindings.json"));

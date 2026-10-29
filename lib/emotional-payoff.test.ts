@@ -1,3 +1,4 @@
+import freight from "../qa/media/freight-craft.json";
 import performance from "../qa/media/aaa-performance-direction.json";
 import visual from "../qa/media/aaa-visual-direction.json";
 import assert from "node:assert/strict";
@@ -32,7 +33,7 @@ for (const file of phase.newRoutes) it(`plays ${file} through held saves and its
   assert.deepEqual(importRun(exportRun(result.state)), result.state);
 });
 it("preserves all 203 preceding campaigns, 14,304 visits and all 785 preceding art/audio bytes", () => {
-  const routes = files("qa/routes").filter(file => file.endsWith(".json") && !phase.newRoutes.includes(file.slice("qa/routes/".length))).sort(), rows = [];
+  const routes = files("qa/routes").filter(file => file.endsWith(".json") && ![...phase.newRoutes, ...freight.newRoutes].includes(file.slice("qa/routes/".length))).sort(), rows = [];
   assert.equal(routes.length, phase.baseline.routes);
   for (const file of routes) {
     const spec = JSON.parse(readFileSync(file, "utf8")) as ReplaySpec; let state = createCharacter(spec.character);
@@ -44,7 +45,7 @@ it("preserves all 203 preceding campaigns, 14,304 visits and all 785 preceding a
     }
   }
   assert.equal(rows.length, phase.baseline.visits); assert.equal(hash(JSON.stringify(rows)), phase.baseline.campaignSha256);
-  const media = [...files("public/art"), ...files("public/audio")].filter(path => !phase.voiceIds.some(id => path === `public/audio/${id}.mp3`) && !visual.artAssets.flatMap(a => a.files).some(f => f.path === path) && !performance.deliveries.some(d => d.path === path)).sort().map(path => ({ path, sha256: hash(readFileSync(path)) }));
+  const media = [...files("public/art"), ...files("public/audio")].filter(path => !phase.voiceIds.some(id => path === `public/audio/${id}.mp3`) && !visual.artAssets.flatMap(a => a.files).some(f => f.path === path) && !performance.deliveries.some(d => d.path === path) && ![...freight.artAssets.flatMap(a => a.files).map(r => r.path), ...freight.voiceIds.map(id => `public/audio/${id}.mp3`)].includes(path)).sort().map(path => ({ path, sha256: hash(readFileSync(path)) }));
   assert.deepEqual(media, phase.baseline.media);
 });
 it("opts in new UI cohorts without changing default factories, saves or game rules", () => {

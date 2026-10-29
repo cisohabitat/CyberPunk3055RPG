@@ -1,4 +1,5 @@
 import { kitBonuses } from "../loadout";
+import { closedRampFreightRecord } from "../freight-craft";
 import { openingMotive } from "./opening";
 import type { Choice, GameState, Scene } from "../types";
 
@@ -8,6 +9,8 @@ export function freightVisitChoice(fromWall = false): Choice {
   return { id: "visit-asa", label: "Ask Asa what became of the clinic parcel.", requireOrigin: "dustline", requireAnyFlag: ["freight_started", "freight_declined"], hideIfFlag: "visited_asa", effects: { flags: fromWall ? ["freight_return_wall"] : [], flagsOff: fromWall ? [] : ["freight_return_wall"] }, next: "act3_freight_visit" };
 }
 export function freightOutcome(state: GameState): string {
+  const closedCarry = closedRampFreightRecord(state);
+  if (closedCarry) return closedCarry;
   const exposed = state.flags.freight_exposed ? " The earlier service route remains exposed." : "";
   if (state.flags.freight_started && !state.flags.freight_done) return "You accepted the sealed parcel. Keep it cold and observe a clinic stock receipt before claiming delivery." + exposed;
   if (state.flags.freight_late_received) return "A later clinic stock reply confirms receipt of the parcel. Its route was not certified during the week; no passenger clearance was earned. Patient treatment remains unobserved." + exposed;

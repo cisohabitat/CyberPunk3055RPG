@@ -1,0 +1,1472 @@
+{
+  "scope": "All primary public/art images, including portrait-card crops; responsive small deliveries and previews are represented by their main image, not repeated as separate entries.",
+  "entries": [
+    {
+      "src": "/art/archive-desk.jpg",
+      "small": "/art/archive-desk-small.jpg",
+      "caption": "Helion \u00b7 the service archive desk",
+      "description": "A closed maintenance ledger, a catalog beneath glass and a dim record reader sit under a brass task lamp before rows of steel drawers and a service shutter.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/archive-held-original.jpg",
+      "small": "/art/archive-held-original-small.jpg",
+      "caption": "Ward Nine \u00b7 the source keeps its own terms",
+      "description": "A closed source ledger in a protective sleeve stays apart from a folded copy and pencil. No inquiry decision or restored shift is depicted.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/archive-preparation.jpg",
+      "small": "/art/archive-preparation-small.jpg",
+      "caption": "Helion \u00b7 before the search",
+      "description": "A closed service folio and unused inspection light rest beside a dark reader on the scratched archive preparation desk; the drawers remain shut.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/archive-question-detail.jpg",
+      "small": "/art/archive-question-detail-small.jpg",
+      "caption": "The question \u00b7 a space on the table",
+      "description": "Three separate blank cards and one plain cup occupy a scratched brass tabletop beneath amber light. No source, signature, writing, permission or issuing-key result is depicted.",
+      "category": "Equipment & sources",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/asa-dispatch.jpg",
+      "small": "/art/asa-dispatch-small.jpg",
+      "caption": "Canal freight gate \u00b7 Asa sets the terms",
+      "description": "Asa, wearing a rust scarf and worn courier coat, touches the closed cooling case seal beneath the gate lamp; the case remains at dispatch.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/asa-terms.jpg",
+      "small": "/art/asa-terms.jpg",
+      "caption": "Asa \u00b7 terms",
+      "description": "Painted portrait of Asa, terms view.",
+      "category": "Characters",
+      "width": 600,
+      "height": 800
+    },
+    {
+      "src": "/art/asa.jpg",
+      "small": "/art/asa.jpg",
+      "caption": "Asa \u00b7 portrait",
+      "description": "Painted portrait of Asa, portrait view.",
+      "category": "Characters",
+      "width": 440,
+      "height": 587
+    },
+    {
+      "src": "/art/attendant-alert.jpg",
+      "small": "/art/attendant-alert.jpg",
+      "caption": "Masked attendant \u00b7 alert",
+      "description": "Painted portrait of Masked attendant, alert view.",
+      "category": "Characters",
+      "width": 600,
+      "height": 800
+    },
+    {
+      "src": "/art/attendant-confrontation.jpg",
+      "small": "/art/attendant-confrontation-small.jpg",
+      "caption": "Glass Chapel \u00b7 caught at the hatch",
+      "description": "The masked attendant stands among copper service pipes with an ordinary wrench held low and a collar microphone visible; the corridor beyond remains empty.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/canal-dispatch.jpg",
+      "small": "/art/canal-dispatch-small.jpg",
+      "caption": "Canal depot \u00b7 the planning alcove",
+      "description": "A neutral transit diagram rests beneath a lamp in a sheltered canal alcove; a closed canvas case waits on a shelf. No selected route or completed handover is depicted.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/canal-origin.webp",
+      "small": "/art/canal-origin.webp",
+      "caption": "Canal origin",
+      "description": "Rain and blue light reflect in a canal beneath industrial walkways and copper service pipes.",
+      "category": "Title & city",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "src": "/art/canal.jpg",
+      "small": "/art/canal.jpg",
+      "caption": "Canal",
+      "description": "Rain and blue light reflect in a canal beneath industrial walkways and copper service pipes.",
+      "category": "Scenes & places",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "src": "/art/cast-asa.jpg",
+      "small": "/art/cast-asa.jpg",
+      "caption": "Asa \u00b7 cast card",
+      "description": "Painted portrait of Asa, cast card view.",
+      "category": "Characters",
+      "width": 160,
+      "height": 213
+    },
+    {
+      "src": "/art/cast-attendant.jpg",
+      "small": "/art/cast-attendant.jpg",
+      "caption": "Masked attendant \u00b7 cast card",
+      "description": "Painted portrait of Masked attendant, cast card view.",
+      "category": "Characters",
+      "width": 160,
+      "height": 213
+    },
+    {
+      "src": "/art/cast-dispatcher.jpg",
+      "small": "/art/cast-dispatcher.jpg",
+      "caption": "Dispatcher \u00b7 cast card",
+      "description": "Painted portrait of Dispatcher, cast card view.",
+      "category": "Characters",
+      "width": 160,
+      "height": 213
+    },
+    {
+      "src": "/art/cast-edda.jpg",
+      "small": "/art/cast-edda.jpg",
+      "caption": "Edda \u00b7 cast card",
+      "description": "Painted portrait of Edda, cast card view.",
+      "category": "Characters",
+      "width": 160,
+      "height": 213
+    },
+    {
+      "src": "/art/cast-ives.jpg",
+      "small": "/art/cast-ives.jpg",
+      "caption": "Ives \u00b7 cast card",
+      "description": "Painted portrait of Ives, cast card view.",
+      "category": "Characters",
+      "width": 160,
+      "height": 213
+    },
+    {
+      "src": "/art/cast-kerr.jpg",
+      "small": "/art/cast-kerr.jpg",
+      "caption": "Kerr \u00b7 cast card",
+      "description": "Painted portrait of Kerr, cast card view.",
+      "category": "Characters",
+      "width": 160,
+      "height": 213
+    },
+    {
+      "src": "/art/cast-lumen.jpg",
+      "small": "/art/cast-lumen.jpg",
+      "caption": "Sister Lumen \u00b7 cast card",
+      "description": "Painted portrait of Sister Lumen, cast card view.",
+      "category": "Characters",
+      "width": 160,
+      "height": 213
+    },
+    {
+      "src": "/art/cast-mara.jpg",
+      "small": "/art/cast-mara.jpg",
+      "caption": "Mara \u00b7 cast card",
+      "description": "Painted portrait of Mara, cast card view.",
+      "category": "Characters",
+      "width": 160,
+      "height": 213
+    },
+    {
+      "src": "/art/cast-mechanic.jpg",
+      "small": "/art/cast-mechanic.jpg",
+      "caption": "Mechanic \u00b7 cast card",
+      "description": "Painted portrait of Mechanic, cast card view.",
+      "category": "Characters",
+      "width": 160,
+      "height": 213
+    },
+    {
+      "src": "/art/cast-nia.jpg",
+      "small": "/art/cast-nia.jpg",
+      "caption": "Nia Pell \u00b7 cast card",
+      "description": "Painted portrait of Nia Pell, cast card view.",
+      "category": "Characters",
+      "width": 160,
+      "height": 213
+    },
+    {
+      "src": "/art/cast-orderly.jpg",
+      "small": "/art/cast-orderly.jpg",
+      "caption": "Orderly \u00b7 cast card",
+      "description": "Painted portrait of Orderly, cast card view.",
+      "category": "Characters",
+      "width": 160,
+      "height": 213
+    },
+    {
+      "src": "/art/cast-quill.jpg",
+      "small": "/art/cast-quill.jpg",
+      "caption": "Quill \u00b7 cast card",
+      "description": "Painted portrait of Quill, cast card view.",
+      "category": "Characters",
+      "width": 160,
+      "height": 213
+    },
+    {
+      "src": "/art/cast-ren.jpg",
+      "small": "/art/cast-ren.jpg",
+      "caption": "Ren \u00b7 cast card",
+      "description": "Painted portrait of Ren, cast card view.",
+      "category": "Characters",
+      "width": 160,
+      "height": 213
+    },
+    {
+      "src": "/art/cast-sera.jpg",
+      "small": "/art/cast-sera.jpg",
+      "caption": "Sera \u00b7 cast card",
+      "description": "Painted portrait of Sera, cast card view.",
+      "category": "Characters",
+      "width": 160,
+      "height": 213
+    },
+    {
+      "src": "/art/cast-stallholder.jpg",
+      "small": "/art/cast-stallholder.jpg",
+      "caption": "Stallholder \u00b7 cast card",
+      "description": "Painted portrait of Stallholder, cast card view.",
+      "category": "Characters",
+      "width": 160,
+      "height": 213
+    },
+    {
+      "src": "/art/chapel-entry.jpg",
+      "small": "/art/chapel-entry-small.jpg",
+      "caption": "Glass Chapel \u00b7 the service threshold",
+      "description": "A shallow basin and worn visitor desk stand beside a dim service stair, copper rails and a closed clinic door.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/chapel-reader.jpg",
+      "small": "/art/chapel-reader-small.jpg",
+      "caption": "Glass Chapel \u00b7 the maintenance landing",
+      "description": "A dim memory reader and mechanical latch face an empty wet stair beside a task lamp; their status is unresolved.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/chapel-service.jpg",
+      "small": "/art/chapel-service-small.jpg",
+      "caption": "Glass Chapel \u00b7 behind the clinic walls",
+      "description": "Copper pipes and a dark reader flank a closed service hatch in a narrow maintenance passage.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/chapel-shared.jpg",
+      "small": "/art/chapel-shared-small.jpg",
+      "caption": "Glass Chapel \u00b7 a minute before the choice",
+      "description": "Mara sits beneath the memory halo while Lumen waits beside the controls, her magenta optic lit. Both keep their hands away from the shard; no extraction or outcome is shown.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/chapel-threshold-detail.jpg",
+      "small": "/art/chapel-threshold-detail-small.jpg",
+      "caption": "Glass Chapel \u00b7 the threshold",
+      "description": "A worn metal latch and chair-room doorway face a rain-damp passage. No weapon, injury, defeated person or successful escape is shown.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/chapel.jpg",
+      "small": "/art/chapel.jpg",
+      "caption": "Chapel",
+      "description": "A vacant clinic chair stands beneath magenta light in a vaulted chapel with blue stained-glass windows.",
+      "category": "Scenes & places",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "src": "/art/chapter-wall.jpg",
+      "small": "/art/chapter-wall-small.jpg",
+      "caption": "The Wall \u00b7 weather and memory",
+      "description": "Rain traces indistinct engraved rows on a weathered memorial wall beneath a muted green lamp beside an empty walkway.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/chapter-week.jpg",
+      "small": "/art/chapter-week-small.jpg",
+      "caption": "The Week \u00b7 the street waits",
+      "description": "Closed shop shutters and inhabited balconies line a rain-dark lower-ward street beneath the distant dome at blue dawn.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/city-schematic.jpg",
+      "small": "/art/city-schematic-small.jpg",
+      "caption": "Kite City \u00b7 runner\u2019s schematic",
+      "description": "An atmospheric sketch of anonymous blocks and channels in copper ink on dark paper; positions are schematic, not geographic directions.",
+      "category": "Title & city",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/clinic-conversation.jpg",
+      "small": "/art/clinic-conversation-small.jpg",
+      "caption": "Clinic conversation",
+      "description": "Two empty chairs face a small wooden table with a cup and lamp beside a rain-streaked clinic window.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/clinic-coolant.jpg",
+      "small": "/art/clinic-coolant-small.jpg",
+      "caption": "Ward Nine \u00b7 the coolant service room",
+      "description": "Closed coolant cabinets, insulated pipes and a portable supply trolley wait beneath a brass service lamp.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/clinic-relay.jpg",
+      "small": "/art/clinic-relay-small.jpg",
+      "caption": "Clinic \u00b7 the private relay",
+      "description": "An unmarked handset and closed notebook sit beside a privacy curtain and rain-streaked clinic window.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/correction-bench.jpg",
+      "small": "/art/correction-bench-small.jpg",
+      "caption": "Canal depot \u00b7 two records stay separate",
+      "description": "A blank comparison sheet and closed opaque sleeve rest in separate trays beside an unpowered reference display on a lamp-lit filing bench. No signature, review receipt, authentication, personal identity or successful outcome is displayed.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/courier-receipt.jpg",
+      "small": "/art/courier-receipt-small.jpg",
+      "caption": "Courier table \u00b7 stock receipt confirmed",
+      "description": "An anonymous stock receipt with an indistinct stamp lies beside a closed reference ledger, pencil, metal cup and folded rust scarf. No parcel, passenger clearance or patient treatment is shown.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/courier-table.jpg",
+      "small": "/art/courier-table-small.jpg",
+      "caption": "Ward Nine \u00b7 Asa's courier table",
+      "description": "A closed courier satchel, indistinct routing slips, a metal cup and a desk relay rest beside an empty chair with a dark coat and rust-colored scarf, overlooking rainy neighborhood walkways.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/depot-review.jpg",
+      "small": "/art/depot-review-small.jpg",
+      "caption": "Canal depot \u00b7 the main counter stays open",
+      "description": "A queue rail closes the anonymous side hatch beneath an unlettered review cover; the lit main counter has an open unmarked worker ledger. No payment, recipient name or completed review is shown.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/dispatcher-considering.jpg",
+      "small": "/art/dispatcher-considering.jpg",
+      "caption": "Dispatcher \u00b7 considering",
+      "description": "Painted portrait of Dispatcher, considering view.",
+      "category": "Characters",
+      "width": 600,
+      "height": 800
+    },
+    {
+      "src": "/art/dispatcher-portrait.jpg",
+      "small": "/art/dispatcher-portrait.jpg",
+      "caption": "Dispatcher \u00b7 portrait",
+      "description": "Painted portrait of Dispatcher, portrait view.",
+      "category": "Characters",
+      "width": 600,
+      "height": 800
+    },
+    {
+      "src": "/art/district-board.jpg",
+      "small": "/art/district-board-small.jpg",
+      "caption": "Ward Four \u00b7 the district board",
+      "description": "Indistinct notices and blank-backed cards hang under a sheltered district board beside a wet walkway.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/edda-archive.jpg",
+      "small": "/art/edda-archive-small.jpg",
+      "caption": "Helion \u00b7 Edda keeps her own terms",
+      "description": "Edda sits at the service archive desk, one hand on a closed worn ledger and the other holding blank folded paper. No identifying record, signature or authenticated outcome is displayed.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/edda-assignment.jpg",
+      "small": "/art/edda-assignment.jpg",
+      "caption": "Edda \u00b7 assignment",
+      "description": "Painted portrait of Edda, assignment view.",
+      "category": "Characters",
+      "width": 600,
+      "height": 800
+    },
+    {
+      "src": "/art/edda-listening-wide.jpg",
+      "small": "/art/edda-listening-wide-small.jpg",
+      "caption": "Edda \u00b7 a moment of attention",
+      "description": "Edda listens in her worn brown coat, gray-streaked short hair, glasses and dark scarf. A neutral rain-lit wall and window identify no employer; hands, papers and archive access remain outside the image.",
+      "category": "Characters",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/edda-scrutiny.jpg",
+      "small": "/art/edda-scrutiny.jpg",
+      "caption": "Edda \u00b7 scrutiny",
+      "description": "Painted portrait of Edda, scrutiny view.",
+      "category": "Characters",
+      "width": 600,
+      "height": 800
+    },
+    {
+      "src": "/art/edda-service-review.jpg",
+      "small": "/art/edda-service-review-small.jpg",
+      "caption": "Helion \u00b7 three things to read",
+      "description": "Edda rests both hands on the counter, covering the current account number on a slip beside a separate service card and closed receiver sleeve. No query, handover or completed closure is shown.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/edda.jpg",
+      "small": "/art/edda.jpg",
+      "caption": "Edda \u00b7 portrait",
+      "description": "Painted portrait of Edda, portrait view.",
+      "category": "Characters",
+      "width": 440,
+      "height": 587
+    },
+    {
+      "src": "/art/equipment-atlas.jpg",
+      "small": "/art/equipment-atlas-small.jpg",
+      "caption": "Equipment atlas",
+      "description": "A grid of illustrated tools, passes, tokens and glass memory slivers on a dark background.",
+      "category": "Equipment & sources",
+      "width": 1600,
+      "height": 1600
+    },
+    {
+      "src": "/art/finale-listed.jpg",
+      "small": "/art/finale-listed-small.jpg",
+      "caption": "On the Folio \u00b7 the page is taken",
+      "description": "Ives closes a black folio at the memorial stair while Sera retains her pencil and watches.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/finale-names.jpg",
+      "small": "/art/finale-names-small.jpg",
+      "caption": "Said Aloud \u00b7 the pencil moves",
+      "description": "Sera writes indistinct marks on rain-worn memorial concrete, keeping a place for the names without displaying private identities.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/finale-quiet.jpg",
+      "small": "/art/finale-quiet-small.jpg",
+      "caption": "Left to the Rain \u00b7 the stair remains",
+      "description": "Rain falls over the empty memorial stair while Sera stands aside with her pencil held still.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/finale-witness.jpg",
+      "small": "/art/finale-witness-small.jpg",
+      "caption": "Already Loose \u00b7 a late witness",
+      "description": "Sera listens beside the rain-worn wall, pencil poised over an unmarked notebook; no absolution or inquiry outcome is depicted.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/fragment-order.jpg",
+      "small": "/art/fragment-order-small.jpg",
+      "caption": "Command receipt \u00b7 illustrative close-up",
+      "description": "Illustration of a receipt beneath glass beside relay hardware, with an empty issuer field; no authenticated issuer is depicted.",
+      "category": "Equipment & sources",
+      "width": 900,
+      "height": 600
+    },
+    {
+      "src": "/art/fragment-roster.jpg",
+      "small": "/art/fragment-roster-small.jpg",
+      "caption": "Roster \u00b7 illustrative close-up",
+      "description": "Illustration of anonymous tally rows and an exit diagram beside a closed privacy sleeve; no names, addresses or rescue outcome are depicted.",
+      "category": "Equipment & sources",
+      "width": 900,
+      "height": 600
+    },
+    {
+      "src": "/art/fragment-signature.jpg",
+      "small": "/art/fragment-signature-small.jpg",
+      "caption": "Signature \u00b7 illustrative close-up",
+      "description": "Illustration of a glass sliver with an abstract signature stroke in a copper cradle; written source details carry the evidence.",
+      "category": "Equipment & sources",
+      "width": 900,
+      "height": 600
+    },
+    {
+      "src": "/art/freight-passage.jpg",
+      "small": "/art/freight-passage-small.jpg",
+      "caption": "Canal district \u00b7 the service passage",
+      "description": "A closed freight hatch, empty handling trolley and shadowed corridor sit beyond wet canal railings.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/freight.jpg",
+      "small": "/art/freight-small.jpg",
+      "caption": "Canal gate \u00b7 dispatch",
+      "description": "A closed, sealed diagnostic case rests under a lamp at a sheltered canal dispatch table.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/hearing-filed.jpg",
+      "small": "/art/hearing-filed-small.jpg",
+      "caption": "Ward Nine \u00b7 the bounded account is filed",
+      "description": "A slim public-account folder rests in an ordinary records tray beside a set-down pencil and stopped recorder; a separate dark privacy sleeve stays closed away from the tray. No names, addresses or authenticated seal are legible.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/hearing-table.jpg",
+      "small": "/art/hearing-table-small.jpg",
+      "caption": "Ward Nine \u00b7 the records table",
+      "description": "An untouched pencil, blank cover sheets, a closed privacy sleeve and an unmarked recorder wait on a worn table beside three empty chairs and a rainy window.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/held-case.jpg",
+      "small": "/art/held-case-small.jpg",
+      "caption": "Canal depot \u00b7 the case stays held",
+      "description": "A closed canvas-covered case rests on a worn shelf beneath an amber lamp beside the shut depot service shutter; a second shelf is empty.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/incinerator-flue.jpg",
+      "small": "/art/incinerator-flue-small.jpg",
+      "caption": "Glass Chapel \u00b7 the incinerator vein",
+      "description": "A square closed hatch hangs above a curved incinerator flue, framed by copper ducts, maintenance rails and cold light from a high grille.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/item-archive-probe.jpg",
+      "small": "/art/item-archive-probe-small.jpg",
+      "caption": "Archive probe",
+      "description": "A worn copper contact scanner with a coiled probe cable.",
+      "category": "Equipment & sources",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "src": "/art/item-burner-route.jpg",
+      "small": "/art/item-burner-route-small.jpg",
+      "caption": "Burner route",
+      "description": "An orange disposable freight-clearance card with abstract bars.",
+      "category": "Equipment & sources",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "src": "/art/item-chair-harness.jpg",
+      "small": "/art/item-chair-harness-small.jpg",
+      "caption": "Chair harness",
+      "description": "Folded padded support straps with worn metal buckles.",
+      "category": "Equipment & sources",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "src": "/art/item-clinic-marker.jpg",
+      "small": "/art/item-clinic-marker-small.jpg",
+      "caption": "Clinic marker",
+      "description": "A pale frosted-glass debt token in a copper rim.",
+      "category": "Equipment & sources",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "src": "/art/item-counterfeit-pass.jpg",
+      "small": "/art/item-counterfeit-pass-small.jpg",
+      "caption": "Counterfeit pass",
+      "description": "A pale blue appointment card with an anonymous silhouette and indistinct fields.",
+      "category": "Equipment & sources",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "src": "/art/item-desk-guide.jpg",
+      "small": "/art/item-desk-guide-small.jpg",
+      "caption": "Desk guide",
+      "description": "A small cream procedural booklet with a clipped pencil.",
+      "category": "Equipment & sources",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "src": "/art/item-layout-scrap.jpg",
+      "small": "/art/item-layout-scrap-small.jpg",
+      "caption": "Layout scrap",
+      "description": "Folded thermal paper carrying a service diagram without readable labels.",
+      "category": "Equipment & sources",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "src": "/art/item-mono-knife.jpg",
+      "small": "/art/item-mono-knife-small.jpg",
+      "caption": "Mono knife",
+      "description": "A small worn utility knife with a narrow blade.",
+      "category": "Equipment & sources",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "src": "/art/item-route-shroud.jpg",
+      "small": "/art/item-route-shroud-small.jpg",
+      "caption": "Route shroud",
+      "description": "Folded charcoal shielding fabric with a worn stitched edge.",
+      "category": "Equipment & sources",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "src": "/art/item-sedative.jpg",
+      "small": "/art/item-sedative-small.jpg",
+      "caption": "Sedative",
+      "description": "A sealed amber medicine vial without a readable label.",
+      "category": "Equipment & sources",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "src": "/art/item-shard-damaged.jpg",
+      "small": "/art/item-shard-damaged-small.jpg",
+      "caption": "Shard damaged",
+      "description": "A chipped and cracked glass memory sliver with a dim uneven cyan edge.",
+      "category": "Equipment & sources",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "src": "/art/item-shard.jpg",
+      "small": "/art/item-shard-small.jpg",
+      "caption": "Shard",
+      "description": "A thin intact glass memory sliver with softly glowing cyan edges.",
+      "category": "Equipment & sources",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "src": "/art/item-signal-baffle.jpg",
+      "small": "/art/item-signal-baffle-small.jpg",
+      "caption": "Signal baffle",
+      "description": "A shielded copper receiver with a short antenna.",
+      "category": "Equipment & sources",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "src": "/art/item-spoof-chip.jpg",
+      "small": "/art/item-spoof-chip-small.jpg",
+      "caption": "Spoof chip",
+      "description": "A dark ceramic chip with exposed copper contacts.",
+      "category": "Equipment & sources",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "src": "/art/item-witness-token.jpg",
+      "small": "/art/item-witness-token-small.jpg",
+      "caption": "Witness token",
+      "description": "A round verdigris brass room token with a square opening.",
+      "category": "Equipment & sources",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "src": "/art/ives-assessing.jpg",
+      "small": "/art/ives-assessing.jpg",
+      "caption": "Ives \u00b7 assessing",
+      "description": "Painted portrait of Ives, assessing view.",
+      "category": "Characters",
+      "width": 600,
+      "height": 800
+    },
+    {
+      "src": "/art/ives-hearing.jpg",
+      "small": "/art/ives-hearing-small.jpg",
+      "caption": "Ward Nine \u00b7 Ives asks for the source",
+      "description": "Ives faces the visitor at the rain-lit records table, a closed black folio beside the unmarked running recorder; blank cover papers and a pencil wait beside an empty chair.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/ives-questioning.jpg",
+      "small": "/art/ives-questioning.jpg",
+      "caption": "Ives \u00b7 questioning",
+      "description": "Painted portrait of Ives, questioning view.",
+      "category": "Characters",
+      "width": 600,
+      "height": 800
+    },
+    {
+      "src": "/art/ives.jpg",
+      "small": "/art/ives.jpg",
+      "caption": "Ives \u00b7 portrait",
+      "description": "Painted portrait of Ives, portrait view.",
+      "category": "Characters",
+      "width": 864,
+      "height": 1152
+    },
+    {
+      "src": "/art/kerr-closed.jpg",
+      "small": "/art/kerr-closed.jpg",
+      "caption": "Kerr \u00b7 closed",
+      "description": "Painted portrait of Kerr, closed view.",
+      "category": "Characters",
+      "width": 440,
+      "height": 587
+    },
+    {
+      "src": "/art/kerr-considering.jpg",
+      "small": "/art/kerr-considering.jpg",
+      "caption": "Kerr \u00b7 considering",
+      "description": "Painted portrait of Kerr, considering view.",
+      "category": "Characters",
+      "width": 600,
+      "height": 800
+    },
+    {
+      "src": "/art/kerr-handover.jpg",
+      "small": "/art/kerr-handover-small.jpg",
+      "caption": "Ward Four \u00b7 the closed case",
+      "description": "Kerr checks an unmarked tag beside the strap of a closed brace case on the sheltered stall counter.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/kerr-listening-wide.jpg",
+      "small": "/art/kerr-listening-wide-small.jpg",
+      "caption": "Kerr \u00b7 under the awning",
+      "description": "Kerr listens with a serious weathered face beneath amber stall light, wearing the same black coat and scarf. Hands, brace and case remain outside the frame; no outcome or forgiveness is depicted.",
+      "category": "Characters",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/kerr-terms.jpg",
+      "small": "/art/kerr-terms-small.jpg",
+      "caption": "Glass Chapel \u00b7 the price of a doorway",
+      "description": "Kerr, in a dark raincoat, listens against a worn metal chapel doorway; amber light catches his face and the one hand resting on the jamb.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/kerr.jpg",
+      "small": "/art/kerr.jpg",
+      "caption": "Kerr \u00b7 portrait",
+      "description": "Painted portrait of Kerr, portrait view.",
+      "category": "Characters",
+      "width": 864,
+      "height": 1152
+    },
+    {
+      "src": "/art/laundry-cart.jpg",
+      "small": "/art/laundry-cart-small.jpg",
+      "caption": "Ward Nine \u00b7 the next ordinary job",
+      "description": "Damp clothes await washing in a wheeled cart beside a worn basin, spare towels, a battered stool and a teal raincoat beneath amber light and a rain-streaked window.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/lumen-challenging.jpg",
+      "small": "/art/lumen-challenging.jpg",
+      "caption": "Sister Lumen \u00b7 challenging",
+      "description": "Painted portrait of Sister Lumen, challenging view.",
+      "category": "Characters",
+      "width": 440,
+      "height": 587
+    },
+    {
+      "src": "/art/lumen-considering.jpg",
+      "small": "/art/lumen-considering.jpg",
+      "caption": "Sister Lumen \u00b7 considering",
+      "description": "Painted portrait of Sister Lumen, considering view.",
+      "category": "Characters",
+      "width": 600,
+      "height": 800
+    },
+    {
+      "src": "/art/lumen-cup.jpg",
+      "small": "/art/lumen-cup-small.jpg",
+      "caption": "Ward Four \u00b7 the ring beneath the cup",
+      "description": "Lumen lifts Mara\u2019s cup to wipe its ring from the clinic table beside the spare chair and rainy window, her magenta optic lit. No signature or endorsement is shown.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/lumen-guarded.jpg",
+      "small": "/art/lumen-guarded.jpg",
+      "caption": "Sister Lumen \u00b7 guarded",
+      "description": "Painted portrait of Sister Lumen, guarded view.",
+      "category": "Characters",
+      "width": 440,
+      "height": 587
+    },
+    {
+      "src": "/art/lumen.jpg",
+      "small": "/art/lumen.jpg",
+      "caption": "Sister Lumen \u00b7 portrait",
+      "description": "Painted portrait of Sister Lumen, portrait view.",
+      "category": "Characters",
+      "width": 864,
+      "height": 1152
+    },
+    {
+      "src": "/art/mara-account.jpg",
+      "small": "/art/mara-account-small.jpg",
+      "caption": "Ward Four \u00b7 a conversation with a past",
+      "description": "Mara listens beside a rainy clinic window, one hand resting on her knee and the other out of view; an untouched ceramic cup stands between her and an empty visitor chair.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/mara-boundary.jpg",
+      "small": "/art/mara-boundary.jpg",
+      "caption": "Mara \u00b7 boundary",
+      "description": "Painted portrait of Mara, boundary view.",
+      "category": "Characters",
+      "width": 440,
+      "height": 587
+    },
+    {
+      "src": "/art/mara-present.jpg",
+      "small": "/art/mara-present-small.jpg",
+      "caption": "Ward Four \u00b7 Mara, in the present",
+      "description": "Mara sits beside a rainy clinic window, her hands by an unmarked envelope and tea cup; an empty chair faces her across the table.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/mara-questioning.jpg",
+      "small": "/art/mara-questioning.jpg",
+      "caption": "Mara \u00b7 questioning",
+      "description": "Painted portrait of Mara, questioning view.",
+      "category": "Characters",
+      "width": 440,
+      "height": 587
+    },
+    {
+      "src": "/art/mara-remorse.jpg",
+      "small": "/art/mara-remorse.jpg",
+      "caption": "Mara \u00b7 remorse",
+      "description": "Painted portrait of Mara, remorse view.",
+      "category": "Characters",
+      "width": 600,
+      "height": 800
+    },
+    {
+      "src": "/art/mara-revelation.jpg",
+      "small": "/art/mara-revelation-small.jpg",
+      "caption": "The recorded hour \u00b7 Mara",
+      "description": "Mara's recorded likeness sits beside the cyan memory apparatus; her steady gaze carries no present-day permission.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/mara-shared-hour.jpg",
+      "small": "/art/mara-shared-hour-small.jpg",
+      "caption": "Ward Four \u00b7 the cup turns",
+      "description": "Mara holds her ordinary chipped cup beside the rainy clinic window, its notch toward the glass; the edge of the visitor chair remains in the foreground. No reply or recorder is displayed.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/mara-window.jpg",
+      "small": "/art/mara-window-small.jpg",
+      "caption": "Ward Four \u00b7 a chair beside the rain",
+      "description": "Mara holds an ordinary ceramic cup beside a rain-streaked clinic window; an empty visitor chair faces her across the worn table, with no papers or recorder in view.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/mara.jpg",
+      "small": "/art/mara.jpg",
+      "caption": "Mara \u00b7 portrait",
+      "description": "Painted portrait of Mara, portrait view.",
+      "category": "Characters",
+      "width": 864,
+      "height": 1152
+    },
+    {
+      "src": "/art/market-counter.jpg",
+      "small": "/art/market-counter-small.jpg",
+      "caption": "Kite City \u00b7 the sheltered counter",
+      "description": "Steam rises from an unattended copper noodle pot beneath a patched market awning, beside a damp menu and two empty counter seats.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/masked-attendant-portrait.jpg",
+      "small": "/art/masked-attendant-portrait.jpg",
+      "caption": "Masked attendant \u00b7 attendant portrait",
+      "description": "Painted portrait of Masked attendant, attendant portrait view.",
+      "category": "Characters",
+      "width": 600,
+      "height": 800
+    },
+    {
+      "src": "/art/mechanic-explaining.jpg",
+      "small": "/art/mechanic-explaining.jpg",
+      "caption": "Mechanic \u00b7 explaining",
+      "description": "Painted portrait of Mechanic, explaining view.",
+      "category": "Characters",
+      "width": 600,
+      "height": 800
+    },
+    {
+      "src": "/art/mechanic-portrait.jpg",
+      "small": "/art/mechanic-portrait.jpg",
+      "caption": "Mechanic \u00b7 portrait",
+      "description": "Painted portrait of Mechanic, portrait view.",
+      "category": "Characters",
+      "width": 600,
+      "height": 800
+    },
+    {
+      "src": "/art/memorial-pause-detail.jpg",
+      "small": "/art/memorial-pause-detail-small.jpg",
+      "caption": "Ward Nine \u00b7 the pencil and the rain",
+      "description": "A pencil lies on a dry lip of the rain-worn memorial stair. No legible name, new inscription, transferred paper or final choice is depicted.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/memorial-stair.jpg",
+      "small": "/art/memorial-stair-small.jpg",
+      "caption": "Ward Nine \u00b7 the weathered names",
+      "description": "Indistinct engraved rows cover a rain-worn memorial wall above a wet stair; a closed private ledger and spare capped writing tool rest on a sheltered ledge.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/memory-apparatus.jpg",
+      "small": "/art/memory-apparatus-small.jpg",
+      "caption": "Glass Chapel \u00b7 the chair room",
+      "description": "A glass sliver holder and copper memory-reader controls sit beside the edge of a screened medical apparatus.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/memory-bench.jpg",
+      "small": "/art/memory-bench-small.jpg",
+      "caption": "Glass Chapel \u00b7 the inspection bench",
+      "description": "Three luminous glass slivers stand in a worn copper viewer beside an empty clinic chair.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/nia-arrival.jpg",
+      "small": "/art/nia-arrival-small.jpg",
+      "caption": "Ward Nine \u00b7 before the account",
+      "description": "Nia sits in her chair at a modest lamp-lit room table, one hand beside a closed notebook and the other on her chair arm.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/nia-speaking.jpg",
+      "small": "/art/nia-speaking.jpg",
+      "caption": "Nia Pell \u00b7 speaking",
+      "description": "Painted portrait of Nia Pell, speaking view.",
+      "category": "Characters",
+      "width": 600,
+      "height": 800
+    },
+    {
+      "src": "/art/nia-terms.jpg",
+      "small": "/art/nia-terms.jpg",
+      "caption": "Nia Pell \u00b7 terms",
+      "description": "Painted portrait of Nia Pell, terms view.",
+      "category": "Characters",
+      "width": 600,
+      "height": 800
+    },
+    {
+      "src": "/art/nia-transfer.jpg",
+      "small": "/art/nia-transfer-small.jpg",
+      "caption": "Glass Chapel \u00b7 Nia sets her own terms",
+      "description": "Nia sits upright beside her clinic bed in her ordinary wheelchair, wearing shoes and resting one hand on its brake; an untouched photograph frame stays on the bedside shelf.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/nia.jpg",
+      "small": "/art/nia.jpg",
+      "caption": "Nia Pell \u00b7 portrait",
+      "description": "Painted portrait of Nia Pell, portrait view.",
+      "category": "Characters",
+      "width": 440,
+      "height": 587
+    },
+    {
+      "src": "/art/notice-desk.jpg",
+      "small": "/art/notice-desk-small.jpg",
+      "caption": "Glass Chapel \u00b7 the dispatch desk",
+      "description": "Loose blank stationery, an unmarked divider, a closed dispatch satchel and a dark relay wait on a worn clinic counter beside an empty chair.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/opening.jpg",
+      "small": "/art/opening-small.jpg",
+      "caption": "Kite City \u00b7 before midnight",
+      "description": "An amber noodle stall shelters a rainy walkway beneath the city's immense dome.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/orderly-assessing.jpg",
+      "small": "/art/orderly-assessing.jpg",
+      "caption": "Orderly \u00b7 assessing",
+      "description": "Painted portrait of Orderly, assessing view.",
+      "category": "Characters",
+      "width": 600,
+      "height": 800
+    },
+    {
+      "src": "/art/orderly.jpg",
+      "small": "/art/orderly.jpg",
+      "caption": "Orderly \u00b7 portrait",
+      "description": "Painted portrait of Orderly, portrait view.",
+      "category": "Characters",
+      "width": 864,
+      "height": 1152
+    },
+    {
+      "src": "/art/ordinary-rest.jpg",
+      "small": "/art/ordinary-rest-small.jpg",
+      "caption": "Clinic \u00b7 an ordinary conversation",
+      "description": "A plain wooden chair and folded blanket wait beside a water glass and a rain-streaked clinic window, with no memory apparatus or restraints.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/private-reply.jpg",
+      "small": "/art/private-reply-small.jpg",
+      "caption": "Ward Four \u00b7 the private reply table",
+      "description": "A plain envelope, closed pen, unmarked cover papers and chipped cup sit on a small clinic writing table beside an empty chair.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/quill-offer.jpg",
+      "small": "/art/quill-offer-small.jpg",
+      "caption": "Ward Four \u00b7 an offer, unanswered",
+      "description": "Quill waits beside an untouched bowl at an amber-lit stall counter while rain falls beyond the awning.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/quill-terms.jpg",
+      "small": "/art/quill-terms.jpg",
+      "caption": "Quill \u00b7 terms",
+      "description": "Painted portrait of Quill, terms view.",
+      "category": "Characters",
+      "width": 600,
+      "height": 800
+    },
+    {
+      "src": "/art/quill-waiting.jpg",
+      "small": "/art/quill-waiting.jpg",
+      "caption": "Quill \u00b7 waiting",
+      "description": "Painted portrait of Quill, waiting view.",
+      "category": "Characters",
+      "width": 440,
+      "height": 587
+    },
+    {
+      "src": "/art/quill.jpg",
+      "small": "/art/quill.jpg",
+      "caption": "Quill \u00b7 portrait",
+      "description": "Painted portrait of Quill, portrait view.",
+      "category": "Characters",
+      "width": 864,
+      "height": 1152
+    },
+    {
+      "src": "/art/recorded-hour-detail.jpg",
+      "small": "/art/recorded-hour-detail-small.jpg",
+      "caption": "The recorded hour \u00b7 glass and copper",
+      "description": "A narrow cyan memory shard rests in a worn copper reader cradle. No recorded face, signature or authentication is displayed.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/ren-canal.jpg",
+      "small": "/art/ren-canal-small.jpg",
+      "caption": "Ward Four \u00b7 Ren at the canal",
+      "description": "Ren Calder, a woman in a worn ochre jacket, sits beside a rain-filled grate with her boots lifted clear and a folded bag beside her.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/ren-concerned.jpg",
+      "small": "/art/ren-concerned.jpg",
+      "caption": "Ren \u00b7 concerned",
+      "description": "Painted portrait of Ren, concerned view.",
+      "category": "Characters",
+      "width": 600,
+      "height": 800
+    },
+    {
+      "src": "/art/ren-listening.jpg",
+      "small": "/art/ren-listening.jpg",
+      "caption": "Ren \u00b7 listening",
+      "description": "Painted portrait of Ren, listening view.",
+      "category": "Characters",
+      "width": 600,
+      "height": 800
+    },
+    {
+      "src": "/art/ren-portrait.jpg",
+      "small": "/art/ren-portrait.jpg",
+      "caption": "Ren \u00b7 portrait",
+      "description": "Painted portrait of Ren, portrait view.",
+      "category": "Characters",
+      "width": 600,
+      "height": 800
+    },
+    {
+      "src": "/art/repair-bench.jpg",
+      "small": "/art/repair-bench-small.jpg",
+      "caption": "District workshop \u00b7 one field kit",
+      "description": "A copper probe, folded carrying harness, closed desk guide and bundled route shroud lie separately on a worn repair bench beneath a brass lamp.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/saint-shard-brand.webp",
+      "small": "/art/saint-shard-brand-small.webp",
+      "caption": "Saint shard brand",
+      "description": "The Saint Shard title in worn silver lettering beneath a luminous blue shard and broken circular emblem.",
+      "category": "Title & city",
+      "width": 800,
+      "height": 450
+    },
+    {
+      "src": "/art/sera-attentive.jpg",
+      "small": "/art/sera-attentive.jpg",
+      "caption": "Sera \u00b7 attentive",
+      "description": "Painted portrait of Sera, attentive view.",
+      "category": "Characters",
+      "width": 600,
+      "height": 800
+    },
+    {
+      "src": "/art/sera-hearing.jpg",
+      "small": "/art/sera-hearing-small.jpg",
+      "caption": "Ward Nine \u00b7 the account can still change",
+      "description": "Sera holds a pencil over a blank cover sheet at the rain-lit records table. A closed folder stays separate beside her hand; the recorder shows no operating status, private identity or filed outcome.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/sera-listening.jpg",
+      "small": "/art/sera-listening.jpg",
+      "caption": "Sera \u00b7 listening",
+      "description": "Painted portrait of Sera, listening view.",
+      "category": "Characters",
+      "width": 440,
+      "height": 587
+    },
+    {
+      "src": "/art/sera.jpg",
+      "small": "/art/sera.jpg",
+      "caption": "Sera \u00b7 portrait",
+      "description": "Painted portrait of Sera, portrait view.",
+      "category": "Characters",
+      "width": 864,
+      "height": 1152
+    },
+    {
+      "src": "/art/shelter-conversation.jpg",
+      "small": "/art/shelter-conversation-small.jpg",
+      "caption": "Ward Four \u00b7 before the repair",
+      "description": "Sera catches a bucket under the leaking shelter valve while Ren sets a kettle on a dry step beside the ramp. The repair and resident beds remain undecided.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/shelter-hall.jpg",
+      "small": "/art/shelter-hall-small.jpg",
+      "caption": "Ward Four \u00b7 the staffed hall",
+      "description": "A plain kettle and stacked folded mattresses wait beside a broad ramp doorway in a communal hall.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/shelter-landing.jpg",
+      "small": "/art/shelter-landing-small.jpg",
+      "caption": "Ward Four \u00b7 the shelter stair",
+      "description": "A broad worn ramp and handrail run beside the shelter stair, under a dim lamp and rain-streaked window.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/shelter-pump.jpg",
+      "small": "/art/shelter-pump-small.jpg",
+      "caption": "Ward Four \u00b7 the leaking pump",
+      "description": "Moisture drips from an aging copper valve into an enamel bucket beside a dark controller and a loose brace in a cramped concrete pump room.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/shelter-restored.jpg",
+      "small": "/art/shelter-restored-small.jpg",
+      "caption": "Ward Four \u00b7 the valve holds",
+      "description": "A fresh collar holds the shelter valve's dry seam; the emptied bucket stands aside and a clean cloth rests beside tools. Old stains remain. No beds or referral room are shown.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/shelter.jpg",
+      "small": "/art/shelter-small.jpg",
+      "caption": "Shelter",
+      "description": "A rain-dark shelter stair and ramp pass a wheelchair, rolled blankets and a worn copper service valve.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/spire-counter.jpg",
+      "small": "/art/spire-counter-small.jpg",
+      "caption": "Helion \u00b7 the service counter",
+      "description": "Shift papers, a closed folio and a sleeved receiver rest on a worn service counter beneath an amber lamp; workers wait beyond the queue rails.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/spire-origin.webp",
+      "small": "/art/spire-origin.webp",
+      "caption": "Spire origin",
+      "description": "A luminous blue corporate tower rises through mist beyond the massive columns of a dark elevated roadway.",
+      "category": "Title & city",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "src": "/art/spire-payroll.jpg",
+      "small": "/art/spire-payroll-small.jpg",
+      "caption": "Ward Nine \u00b7 the payroll table",
+      "description": "Two empty chairs face a lamp-lit table with folded papers, a closed folio and a small reply relay beside a rain-streaked window.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/spire-terminal.jpg",
+      "small": "/art/spire-terminal-small.jpg",
+      "caption": "Spire \u00b7 the maintenance alcove",
+      "description": "Two dim maintenance panels overlook a paper request beneath glass, beside a mechanical latch and an old badge reader.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/spire.jpg",
+      "small": "/art/spire.jpg",
+      "caption": "Spire",
+      "description": "A luminous blue corporate tower rises through mist beyond the massive columns of a dark elevated roadway.",
+      "category": "Scenes & places",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "src": "/art/stall-origin.webp",
+      "small": "/art/stall-origin.webp",
+      "caption": "Stall origin",
+      "description": "An amber noodle stall and empty stools overlook blue rain on the city walkway.",
+      "category": "Title & city",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "src": "/art/stall-quiet-detail.jpg",
+      "small": "/art/stall-quiet-detail-small.jpg",
+      "caption": "The counter \u00b7 a quiet corner",
+      "description": "A chipped cup, pale ring and folded blank paper occupy a worn tabletop corner beneath an awning. The case location remains out of frame; no handover, payment, cure or recipient entry is shown.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/stall.jpg",
+      "small": "/art/stall.jpg",
+      "caption": "Stall",
+      "description": "An amber noodle stall and empty stools overlook blue rain on the city walkway.",
+      "category": "Scenes & places",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "src": "/art/stallholder-portrait.jpg",
+      "small": "/art/stallholder-portrait.jpg",
+      "caption": "Stallholder \u00b7 portrait",
+      "description": "Painted portrait of Stallholder, portrait view.",
+      "category": "Characters",
+      "width": 600,
+      "height": 800
+    },
+    {
+      "src": "/art/stallholder-speaking.jpg",
+      "small": "/art/stallholder-speaking.jpg",
+      "caption": "Stallholder \u00b7 speaking",
+      "description": "Painted portrait of Stallholder, speaking view.",
+      "category": "Characters",
+      "width": 600,
+      "height": 800
+    },
+    {
+      "src": "/art/stallholder-story.jpg",
+      "small": "/art/stallholder-story-small.jpg",
+      "caption": "Ward Four \u00b7 the stallholder\u2019s story",
+      "description": "A woman in an indigo apron rests her hand on a damp menu beneath an amber lamp; steam rises from a copper noodle pot beside the empty counter stool.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/title-portrait.jpg",
+      "small": "/art/title-portrait-small.jpg",
+      "caption": "Title portrait",
+      "description": "A lone runner stands at a wet balcony rail, looking across Kite City toward a luminous blue tower beneath the dome.",
+      "category": "Title & city",
+      "width": 960,
+      "height": 1440
+    },
+    {
+      "src": "/art/title.jpg",
+      "small": "/art/title-small.jpg",
+      "caption": "Kite City \u00b7 an hour of memory",
+      "description": "Symbolic title art: a lone runner studies a luminous glass memory shard above Kite City's rainy walkways, beneath an immense blue dome.",
+      "category": "Title & city",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/wall-shared.jpg",
+      "small": "/art/wall-shared-small.jpg",
+      "caption": "Ward Nine \u00b7 the pencil and the open folio",
+      "description": "Sera holds her pencil beside the rain-worn memorial while Ives waits a step apart with an open black folio. No page changes hands and no private identity is legible.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/wardnine.jpg",
+      "small": "/art/wardnine.jpg",
+      "caption": "Wardnine",
+      "description": "Rain falls down a narrow memorial passage beneath a green lamp, with indistinct inscriptions on the wall.",
+      "category": "Scenes & places",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "src": "/art/witness-checkpoint.jpg",
+      "small": "/art/witness-checkpoint-small.jpg",
+      "caption": "City crossing \u00b7 the inspection point",
+      "description": "An empty inspection booth and a dark scanner face a wet tiled passage beneath amber lamps, with the corridor bending out of view.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/witness-choice-detail.jpg",
+      "small": "/art/witness-choice-detail-small.jpg",
+      "caption": "The account \u00b7 a pause at the table",
+      "description": "A closed notebook and switched-off recorder sit beside a face-down plain form on a private room table. No address, signature, photograph or agreement is displayed.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    }
+  ]
+}

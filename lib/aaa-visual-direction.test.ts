@@ -1,3 +1,4 @@
+import freight from "../qa/media/freight-craft.json";
 import performance from "../qa/media/aaa-performance-direction.json";
 import assert from "node:assert/strict";
 import { it } from "node:test";
@@ -19,7 +20,7 @@ import provenance from "../qa/media/art-provenance.json";
 const hash = (v: string | Buffer) => createHash("sha256").update(v).digest("hex");
 const files = (dir: string): string[] => readdirSync(dir, { withFileTypes: true }).flatMap(row => row.isDirectory() ? files(`${dir}/${row.name}`) : [`${dir}/${row.name}`]);
 it("preserves every one of 219 campaigns, 15,496 visits, exact voices and original primary/earned shots", () => {
-  const routes = files("qa/routes").filter(f => f.endsWith(".json")).sort(), rows = [];
+  const routes = files("qa/routes").filter(f => f.endsWith(".json") && !freight.newRoutes.includes(f.slice("qa/routes/".length))).sort(), rows = [];
   assert.equal(routes.length, phase.baseline.routes);
   for (const file of routes) {
     const spec = JSON.parse(readFileSync(file, "utf8")) as ReplaySpec; let state = createCharacter(spec.character);
@@ -33,7 +34,7 @@ it("preserves every one of 219 campaigns, 15,496 visits, exact voices and origin
   }
   assert.equal(rows.length, phase.baseline.visits); assert.equal(hash(JSON.stringify(rows)), phase.baseline.campaignSha256);
   const additions = phase.artAssets.flatMap(a => a.files).map(f => f.path);
-  const media = [...files("public/art"), ...files("public/audio")].filter(f => !additions.includes(f) && !performance.deliveries.some(d => d.path === f)).sort().map(path => ({ path, sha256: hash(readFileSync(path)) }));
+  const media = [...files("public/art"), ...files("public/audio")].filter(f => !additions.includes(f) && !performance.deliveries.some(d => d.path === f) && ![...freight.artAssets.flatMap(a => a.files).map(r => r.path), ...freight.voiceIds.map(id => `public/audio/${id}.mp3`)].includes(f)).sort().map(path => ({ path, sha256: hash(readFileSync(path)) }));
   assert.deepEqual(media, phase.baseline.media);
 });
 it("directs precisely fourteen actual places/actors with no unknown-scene or actor-only fallback", () => {

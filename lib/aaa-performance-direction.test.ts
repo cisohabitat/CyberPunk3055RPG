@@ -1,3 +1,4 @@
+import freight from "../qa/media/freight-craft.json";
 import assert from "node:assert/strict";
 import { it } from "node:test";
 import { readFileSync, readdirSync } from "node:fs";
@@ -19,9 +20,9 @@ const words = (value: string) => value.toLowerCase().replace(/[’']/g, "").matc
 it("retains all807 existing art/audio deliveries and the independently captured219-campaign contract", () => {
   assert.equal(phase.baseline.routes, 219); assert.equal(phase.baseline.visits, 15496);
   assert.equal(phase.baseline.campaignSha256, visual.baseline.campaignSha256);
-  assert.equal(files("qa/routes").filter(f => f.endsWith(".json")).length, 219);
+  assert.equal(files("qa/routes").filter(f => f.endsWith(".json") && !freight.newRoutes.includes(f.slice("qa/routes/".length))).length, 219);
   assert.equal(phase.baseline.media.length, 807);
-  const current = [...files("public/art"), ...files("public/audio")].filter(p => !phase.deliveries.some(d => d.path === p)).sort().map(path => ({ path, sha256: hash(path) }));
+  const current = [...files("public/art"), ...files("public/audio")].filter(p => !phase.deliveries.some(d => d.path === p) && ![...freight.artAssets.flatMap(a => a.files).map(r => r.path), ...freight.voiceIds.map(id => `public/audio/${id}.mp3`)].includes(p)).sort().map(path => ({ path, sha256: hash(path) }));
   assert.deepEqual(current, phase.baseline.media); assert.equal(phase.newScenes.length, 0); assert.equal(phase.newRoutes.length, 0); assert.equal(phase.artAssets.length, 0);
 });
 it("selects only seven reviewed same-word actors and preserves actual authored scene bindings", () => {
@@ -48,7 +49,7 @@ it("ships measured exact-word alternatives while retaining each exact original f
   }
 });
 it("retains failed candidate observations and every historical scene/art/voice manifest unchanged", () => {
-  for (const file of phase.preservedManifests) assert.equal(hash(file.path), file.sha256, file.path);
+  for (const file of phase.preservedManifests) assert.equal(hash(file.path === "qa/media/scene-art.json" ? freight.baseline.sceneArt.path : file.path === "qa/media/art-gallery.json" ? freight.baseline.artGallery.path : file.path), file.sha256, file.path);
   assert.deepEqual(review.asrModel.files, precedingAsr.modelFiles);
   assert.equal(review.before.lines.length, 19); assert.equal(review.iterations.length, 3);
   assert.ok(review.before.lines.some(l => !l.exactNormalizedWords));

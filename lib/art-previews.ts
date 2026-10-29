@@ -1,5 +1,6 @@
 // Generated delivery lookup; source hashes and processing are in qa/media/art-previews.json.
 export const ART_PREVIEWS: Readonly<Record<string, string>> = {
+  "/art/freight-ramp.jpg": "/art/previews/freight-ramp.jpg",
   "/art/archive-desk.jpg": "/art/previews/archive-desk.jpg",
   "/art/archive-held-original.jpg": "/art/previews/archive-held-original.jpg",
   "/art/archive-preparation.jpg": "/art/previews/archive-preparation.jpg",

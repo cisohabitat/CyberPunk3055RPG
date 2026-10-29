@@ -1,3 +1,4 @@
+import freight from "../qa/media/freight-craft.json";
 import payoff from "../qa/media/emotional-payoff.json";
 import craft from "../qa/media/encounter-craft.json";
 import assert from "node:assert/strict";
@@ -38,7 +39,7 @@ function files(dir: string): string[] {
 }
 
 it("preserves all 171 preceding full campaigns, 12,201 visits, actor/voice/art and every preceding delivery", () => {
-  const rows = [], old = files("qa/routes").filter(f => f.endsWith(".json") && ![...phase.newRoutes, ...witness.newRoutes, ...craft.newRoutes, ...payoff.newRoutes].includes(f.slice("qa/routes/".length))).sort();
+  const rows = [], old = files("qa/routes").filter(f => f.endsWith(".json") && ![...phase.newRoutes, ...witness.newRoutes, ...craft.newRoutes, ...payoff.newRoutes, ...freight.newRoutes].includes(f.slice("qa/routes/".length))).sort();
   assert.equal(old.length, phase.baseline.routes);
   for (const file of old) {
     const spec = JSON.parse(readFileSync(file, "utf8")) as ReplaySpec; let state = createCharacter(spec.character);

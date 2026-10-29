@@ -9,6 +9,7 @@ import { districtChoices } from "./district-response";
 import { techniqueChoices } from "./build-techniques";
 import { encounterCraftChoices } from "./encounter-craft";
 import { payoffChoices } from "./emotional-payoff";
+import { freightCraftChoices, freightFinale } from "./freight-craft";
 import { maraAccountChoices } from "./mara-account";
 import type {
   CheckPreview,
@@ -40,7 +41,7 @@ export function getScene(id: string): Scene {
 }
 
 export function sceneText(scene: Scene, state: GameState): string {
-  return typeof scene.text === "function" ? scene.text(state) : scene.text;
+  return freightFinale(state, typeof scene.text === "function" ? scene.text(state) : scene.text, scene.finale);
 }
 
 export function createCharacter(input: {
@@ -56,6 +57,7 @@ export function createCharacter(input: {
   expandedWitness?: boolean;
   craftedEncounters?: boolean;
   emotionalPayoffs?: boolean;
+  freightCraft?: boolean;
 }): GameState {
   const origin = ORIGINS[input.origin];
   const complication = input.complication ?? null;
@@ -86,6 +88,8 @@ export function createCharacter(input: {
   if (input.craftedEncounters) flags.encounter_craft_enabled = true;
   if (input.emotionalPayoffs !== undefined && typeof input.emotionalPayoffs !== "boolean") throw new Error("Invalid emotional payoff option");
   if (input.emotionalPayoffs) flags.emotional_payoffs_enabled = true;
+  if (input.freightCraft !== undefined && typeof input.freightCraft !== "boolean") throw new Error("Invalid freight craft option");
+  if (input.freightCraft) flags.freight_craft_enabled = true;
   if (complication === "on-file") flags.on_file = true;
   if (complication === "debt") flags.debt = true;
   if (complication === "optic") flags.optic = true;
@@ -153,7 +157,7 @@ function choiceHidden(state: GameState, choice: Choice): boolean {
 }
 
 export function presentChoices(state: GameState, scene: Scene): VisibleChoice[] {
-  return payoffChoices(state, scene.id, encounterCraftChoices(state, scene, maraAccountChoices(state, scene, [...techniqueChoices(state, scene, districtChoices(state, scene, archivePlanChoices(state, scene))), ...caseFileChoices(state, scene)]), SCENES)).filter((choice) => !choiceHidden(state, choice)).map((choice) => {
+  return freightCraftChoices(state, scene.id, payoffChoices(state, scene.id, encounterCraftChoices(state, scene, maraAccountChoices(state, scene, [...techniqueChoices(state, scene, districtChoices(state, scene, archivePlanChoices(state, scene))), ...caseFileChoices(state, scene)]), SCENES))).filter((choice) => !choiceHidden(state, choice)).map((choice) => {
     if (choice.maxStrain !== undefined && state.strain > choice.maxStrain) {
       return { ...choice, enabled: false, disabledReason: `Need Strain at most ${choice.maxStrain}; recover before this preparation` };
     }

@@ -1024,9 +1024,51 @@
       "scenes": [
         "act3_payoff_kerr"
       ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/asa-dispatch.jpg",
+      "reason": "Reuse the actual established Asa beside a closed dispatch case for the offer; no lifting, receipt, agreement or shared load is depicted.",
+      "scenes": [
+        "act2_ramp_terms"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/freight-ramp.jpg",
+      "reason": "New empty covered ramp establishes a distinct surveyed carry space. Neutral architecture shows no selected equipment, moving case, handover, stock receipt, treatment or consent; written observations and actual choices carry those facts.",
+      "scenes": [
+        "act2_ramp_survey",
+        "act2_ramp_gear",
+        "act2_ramp_load",
+        "act2_ramp_arrived",
+        "act2_ramp_stopped"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/courier-table.jpg",
+      "reason": "Reuse the quiet unoccupied courier table for an attributed personal return. No new receipt, restored route, patient outcome or forgiveness is painted.",
+      "scenes": [
+        "act3_ramp_return"
+      ]
     }
   ],
   "variants": [
+    {
+      "speaker": "Asa",
+      "asset": "/art/asa-terms.jpg",
+      "scenes": [
+        "act2_ramp_terms",
+        "act2_ramp_survey",
+        "act2_ramp_gear",
+        "act2_ramp_load",
+        "act2_ramp_arrived",
+        "act2_ramp_stopped",
+        "act3_ramp_return"
+      ],
+      "reason": "Established practical attention during the cooperative carry and personal return; no expression grants a receipt, treatment, or acquittal."
+    },
     {
       "speaker": "Kerr",
       "asset": "/art/kerr-closed.jpg",
@@ -1145,7 +1187,14 @@
         "act2_freight_recovery",
         "act2_freight_result",
         "act3_freight_reflection",
-        "act3_freight_visit"
+        "act3_freight_visit",
+        "act2_ramp_terms",
+        "act2_ramp_survey",
+        "act2_ramp_gear",
+        "act2_ramp_load",
+        "act2_ramp_arrived",
+        "act2_ramp_stopped",
+        "act3_ramp_return"
       ],
       "reason": "Reviewed portrait for this actual actor during explicitly bound, revealed audible dialogue. Existing scene/flag expressions apply to this actor only; the scene’s setting and canonical story speaker remain unchanged."
     },

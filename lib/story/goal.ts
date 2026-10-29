@@ -30,6 +30,13 @@ const BRIEFING = new Set(["stall", "pay", "pay_yes", "pay_no", "why", "chapel", 
 // Written directions for the current task, never a new spoken quotation or
 // evidence that its outcome has already happened.
 const TASK_GOALS: Readonly<Record<string, string>> = {
+  act2_ramp_terms: "Hear Asa’s gate task and decide whether to plan a trained carry.",
+  act2_ramp_survey: "Inspect both resting places before choosing support. The case has not moved.",
+  act2_ramp_gear: "Choose a real harness, five-creds blocks or two-strain carry; cancel free before lifting.",
+  act2_ramp_load: "The lift is paid. Choose a resting place before the narrowing rail; no timer runs.",
+  act2_ramp_arrived: "A handover reached intake. Review the separate stock-receipt decision.",
+  act2_ramp_stopped: "The carry stopped. Choose a real recovery carrier or return the case without a receipt.",
+  act3_ramp_return: "Hear Asa’s personal reply beside the actual freight record; add no invented receipt.",
   act2_archive_brief: "Hear Edda's access terms, or leave the archive search open.",
   act2_archive_prep: "Prepare one archive route, or proceed without a preparation bonus.",
   act2_archive_challenge: "Keep the catalog's limits clear, then retrieve the actual source.",

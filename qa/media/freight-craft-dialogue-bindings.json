@@ -1,0 +1,102 @@
+[
+  {
+    "key": "6911ea9c3e4e",
+    "id": "voice-campaign-freight-craft-4d3307b2d4d5",
+    "scene": "act2_ramp_terms",
+    "sceneSpeaker": "Asa",
+    "speaker": "Asa",
+    "quote": "I will hold the catch while you carry. Show me where the load can rest. I am not your second carrier.",
+    "text": "I will hold the catch while you carry. Show me where the load can rest. I am not your second carrier.",
+    "part": 0
+  },
+  {
+    "key": "a30bc1ff9193",
+    "id": "voice-campaign-freight-craft-3215df9a9ef6",
+    "scene": "act2_ramp_survey",
+    "sceneSpeaker": "Asa",
+    "speaker": "Asa",
+    "quote": "Watch where the weight can stop. Not how quickly you can make it move.",
+    "text": "Watch where the weight can stop. Not how quickly you can make it move.",
+    "part": 0
+  },
+  {
+    "key": "3d46ef882449",
+    "id": "voice-campaign-freight-craft-b57bd816cb58",
+    "scene": "act2_ramp_gear",
+    "sceneSpeaker": "Asa",
+    "speaker": "Asa",
+    "quote": "Use the support you actually have. A promise won't hold the bottom of this case.",
+    "text": "Use the support you actually have. A promise won't hold the bottom of this case.",
+    "part": 0
+  },
+  {
+    "key": "35013e737279",
+    "id": "voice-campaign-freight-craft-f609e901e947",
+    "scene": "act2_ramp_load",
+    "sceneSpeaker": "Asa",
+    "speaker": "Asa",
+    "quote": "The gate is mine. The weight is yours. Call down before the bend if you need the landing.",
+    "text": "The gate is mine. The weight is yours. Call down before the bend if you need the landing.",
+    "part": 0
+  },
+  {
+    "key": "40c38d9bdf81",
+    "id": "voice-campaign-freight-craft-0707294020e3",
+    "scene": "act2_ramp_arrived",
+    "sceneSpeaker": "Asa",
+    "speaker": "Asa",
+    "quote": "Put it down flat. The stamp is still the clerk's work.",
+    "text": "Put it down flat. The stamp is still the clerk's work.",
+    "part": 0
+  },
+  {
+    "key": "57f0afe8255d",
+    "id": "voice-campaign-freight-craft-28a71316e1ad",
+    "scene": "act2_ramp_stopped",
+    "sceneSpeaker": "Asa",
+    "speaker": "Asa",
+    "quote": "The case stays under the hood. A stopped carry is not a lost parcel.",
+    "text": "The case stays under the hood. A stopped carry is not a lost parcel.",
+    "part": 0
+  },
+  {
+    "key": "f0770dfc7339",
+    "id": "voice-campaign-freight-craft-52ca52bbb14b",
+    "scene": "act3_ramp_return",
+    "sceneSpeaker": "Asa",
+    "speaker": "Asa",
+    "quote": "You called down, and there was somewhere to put it. That's work I can do with you.",
+    "text": "You called down, and there was somewhere to put it. That's work I can do with you.",
+    "part": 0
+  },
+  {
+    "key": "606b5474d1aa",
+    "id": "voice-campaign-freight-craft-65d1cb340235",
+    "scene": "act3_ramp_return",
+    "sceneSpeaker": "Asa",
+    "speaker": "Asa",
+    "quote": "You stopped before the seal opened. How it went on from there belongs in the clinic ledger.",
+    "text": "You stopped before the seal opened. How it went on from there belongs in the clinic ledger.",
+    "part": 0
+  },
+  {
+    "key": "243db3f2d90f",
+    "id": "voice-campaign-freight-craft-5bfa06763c3c",
+    "scene": "act3_ramp_return",
+    "sceneSpeaker": "Asa",
+    "speaker": "Asa",
+    "quote": "A no before the weight is in the air is a useful word. Keep it available.",
+    "text": "A no before the weight is in the air is a useful word. Keep it available.",
+    "part": 0
+  },
+  {
+    "key": "f0b070dc7b38",
+    "id": "voice-campaign-freight-craft-c643ecc39c94",
+    "scene": "act3_ramp_return",
+    "sceneSpeaker": "Asa",
+    "speaker": "Asa",
+    "quote": "We never finished that carry. The rest belongs in the clinic ledger.",
+    "text": "We never finished that carry. The rest belongs in the clinic ledger.",
+    "part": 0
+  }
+]

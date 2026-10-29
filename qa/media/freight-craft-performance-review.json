@@ -1,0 +1,3908 @@
+{
+  "method": "Unprompted ASR and source/signal review, not human or independent expressive acceptance. Unpublished script revisions retained honestly.",
+  "iterations": [
+    {
+      "stage": "initial draft",
+      "provenance": {
+        "generated": "2026-10-29",
+        "disclosure": "Stock synthetic voices generated offline with Kokoro v1.0; no actor session or individual voice clone was commissioned. Only the fixed authored quotations below are rendered. No model or speech service ships in the game.",
+        "driver": {
+          "name": "kokoro-onnx",
+          "version": "0.6.1",
+          "license": "MIT",
+          "url": "https://github.com/thewh1teagle/kokoro-onnx",
+          "licenseFile": "qa/media/voice-sources/kokoro-onnx-LICENSE.txt"
+        },
+        "model": {
+          "name": "Kokoro-82M v1.0",
+          "license": "Apache-2.0",
+          "card": "https://huggingface.co/hexgrad/Kokoro-82M",
+          "licenseFile": "qa/media/voice-sources/Kokoro-LICENSE.txt",
+          "files": [
+            {
+              "name": "kokoro-v1.0.onnx",
+              "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.onnx",
+              "sha256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+              "bytes": 325505369
+            },
+            {
+              "name": "voices-v1.0.bin",
+              "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin",
+              "sha256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+              "bytes": 28214398
+            }
+          ]
+        },
+        "source": "scripts/generate-campaign-voices.py",
+        "processing": "Exact authored character words; existing cast identities; optional sentence pauses, 8ms phrase fades, normalized PCM peak 0.72 with 80ms edges; optional per-line two-pass EBU loudness matching with -2dBTP ceiling; 96kbps mono MP3 delivery. Original PCM and normalized PCM retained outside Git.",
+        "reviewStatus": "Technical signal and source review; stock synthetic dialogue. No commissioned actors or independent listening acceptance.",
+        "lines": [
+          {
+            "id": "voice-campaign-freight-craft-96eb087f3f04",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "speed": 0.98,
+            "text": "I can hold the gate. I can't take your half of the weight. Show me where you can put it down before we lift it.",
+            "loudnessLufs": -23.5,
+            "direction": "Established Asa identity; practical cooperation and personal boundary, no treatment or invented receipt. Complete exact words and natural ending.",
+            "segments": [
+              {
+                "text": "I can hold the gate.",
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "I can't take your half of the weight.",
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "Show me where you can put it down before we lift it.",
+                "pauseAfter": 0
+              }
+            ],
+            "integratedLufs": -23.48,
+            "truePeakDbtp": -3.4,
+            "language": "en-us",
+            "path": "public/audio/voice-campaign-freight-craft-96eb087f3f04.mp3",
+            "sourceFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-96eb087f3f04.wav",
+            "sourceSha256": "02c87afc8b462fde9bed81cc24ba78dcfea35c9120556ed7b43a239a8c8f8282",
+            "pcmDeliveryFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-96eb087f3f04-delivery.wav",
+            "pcmDeliverySha256": "610b5c8b16a156a2264da320ffe87a98fa8e39d40e7b6389627c002a90070aa4",
+            "sha256": "fe60389c815dd4691fff17d260f086cb7a3d615ed73bc47e0a19b1a18146a781",
+            "bytes": 97964,
+            "sampleRate": 24000,
+            "channels": 1,
+            "durationSeconds": 8.072625,
+            "peak": 0.6730986833572388,
+            "rms": 0.06946811079978943
+          },
+          {
+            "id": "voice-campaign-freight-craft-3215df9a9ef6",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "speed": 0.98,
+            "text": "Watch where the weight can stop. Not how quickly you can make it move.",
+            "loudnessLufs": -23.5,
+            "direction": "Established Asa identity; practical cooperation and personal boundary, no treatment or invented receipt. Complete exact words and natural ending.",
+            "segments": [
+              {
+                "text": "Watch where the weight can stop.",
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "Not how quickly you can make it move.",
+                "pauseAfter": 0
+              }
+            ],
+            "integratedLufs": -23.48,
+            "truePeakDbtp": -4.85,
+            "language": "en-us",
+            "path": "public/audio/voice-campaign-freight-craft-3215df9a9ef6.mp3",
+            "sourceFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-3215df9a9ef6.wav",
+            "sourceSha256": "acbb99774687567bfb1d9c56d789d388d17f061d1f887a78862f9774c065914c",
+            "pcmDeliveryFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-3215df9a9ef6-delivery.wav",
+            "pcmDeliverySha256": "8e527a6480d14126035ad5c26c68f52b1df27f4d1adedc9508c8ecbfd960314c",
+            "sha256": "9633e5fda24e725b16a764421c8299ea4e793553f5e8dcb7c6d3fe2d6d3c985f",
+            "bytes": 67436,
+            "sampleRate": 24000,
+            "channels": 1,
+            "durationSeconds": 5.527333333333333,
+            "peak": 0.5723567605018616,
+            "rms": 0.07056616246700287
+          },
+          {
+            "id": "voice-campaign-freight-craft-b57bd816cb58",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "speed": 0.98,
+            "text": "Use the support you actually have. A promise won't hold the bottom of this case.",
+            "loudnessLufs": -23.5,
+            "direction": "Established Asa identity; practical cooperation and personal boundary, no treatment or invented receipt. Complete exact words and natural ending.",
+            "segments": [
+              {
+                "text": "Use the support you actually have.",
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "A promise won't hold the bottom of this case.",
+                "pauseAfter": 0
+              }
+            ],
+            "integratedLufs": -23.5,
+            "truePeakDbtp": -4.8,
+            "language": "en-us",
+            "path": "public/audio/voice-campaign-freight-craft-b57bd816cb58.mp3",
+            "sourceFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-b57bd816cb58.wav",
+            "sourceSha256": "5c0f257386ed6d7635920b3095ac6f8b406df217adeb5a60d333371e151b25b1",
+            "pcmDeliveryFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-b57bd816cb58-delivery.wav",
+            "pcmDeliverySha256": "989284bca7180aca99805dccf53661cf051dc70775ae341e9f8ed4f7f9a32bcc",
+            "sha256": "edacf90cdbc265371f5b77fa7a3920786df1cf4a4cde2c03714a00e388521601",
+            "bytes": 72908,
+            "sampleRate": 24000,
+            "channels": 1,
+            "durationSeconds": 5.992,
+            "peak": 0.569374680519104,
+            "rms": 0.06919966638088226
+          },
+          {
+            "id": "voice-campaign-freight-craft-f609e901e947",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "speed": 0.98,
+            "text": "The gate is mine. The weight is yours. Call down before the bend if you need the landing.",
+            "loudnessLufs": -23.5,
+            "direction": "Established Asa identity; practical cooperation and personal boundary, no treatment or invented receipt. Complete exact words and natural ending.",
+            "segments": [
+              {
+                "text": "The gate is mine.",
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "The weight is yours.",
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "Call down before the bend if you need the landing.",
+                "pauseAfter": 0
+              }
+            ],
+            "integratedLufs": -23.49,
+            "truePeakDbtp": -4.64,
+            "language": "en-us",
+            "path": "public/audio/voice-campaign-freight-craft-f609e901e947.mp3",
+            "sourceFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-f609e901e947.wav",
+            "sourceSha256": "3e33f98d877d26755018a9a12afdd3e438d5f25c284676076ed58ff1ab8e3cf2",
+            "pcmDeliveryFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-f609e901e947-delivery.wav",
+            "pcmDeliverySha256": "26615881040fa5ed08499a9f8ea4c8196d82c5de545a435bbb054a18560c524f",
+            "sha256": "92c843d51163d22dbd2700318e37ad670e0d6bfd52b7799e7510405e34d01560",
+            "bytes": 93356,
+            "sampleRate": 24000,
+            "channels": 1,
+            "durationSeconds": 7.696625,
+            "peak": 0.5850855708122253,
+            "rms": 0.07470623403787613
+          },
+          {
+            "id": "voice-campaign-freight-craft-0707294020e3",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "speed": 0.98,
+            "text": "Put it down flat. The stamp is still the clerk's work.",
+            "loudnessLufs": -23.5,
+            "direction": "Established Asa identity; practical cooperation and personal boundary, no treatment or invented receipt. Complete exact words and natural ending.",
+            "segments": [
+              {
+                "text": "Put it down flat.",
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "The stamp is still the clerk's work.",
+                "pauseAfter": 0
+              }
+            ],
+            "integratedLufs": -23.5,
+            "truePeakDbtp": -4.22,
+            "language": "en-us",
+            "path": "public/audio/voice-campaign-freight-craft-0707294020e3.mp3",
+            "sourceFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-0707294020e3.wav",
+            "sourceSha256": "828c7ee102552d4bcccb53292e25f8c71fcddfb92e43894068f59c506de47827",
+            "pcmDeliveryFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-0707294020e3-delivery.wav",
+            "pcmDeliverySha256": "7113448068e48cd1d04de7f3789ca90c36594e4461aaea99aeb4154e00bd6f00",
+            "sha256": "d450d0c227623fb70ef63913b81f7f5926a1193aeaf2f760b7fc37b42b2c17f3",
+            "bytes": 59084,
+            "sampleRate": 24000,
+            "channels": 1,
+            "durationSeconds": 4.846,
+            "peak": 0.6113645434379578,
+            "rms": 0.0687691792845726
+          },
+          {
+            "id": "voice-campaign-freight-craft-6efc89c100cb",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "speed": 0.98,
+            "text": "Leave it under the hood. A stopped carry isn't a lost parcel.",
+            "loudnessLufs": -23.5,
+            "direction": "Established Asa identity; practical cooperation and personal boundary, no treatment or invented receipt. Complete exact words and natural ending.",
+            "segments": [
+              {
+                "text": "Leave it under the hood.",
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "A stopped carry isn't a lost parcel.",
+                "pauseAfter": 0
+              }
+            ],
+            "integratedLufs": -23.62,
+            "truePeakDbtp": -4.04,
+            "language": "en-us",
+            "path": "public/audio/voice-campaign-freight-craft-6efc89c100cb.mp3",
+            "sourceFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-6efc89c100cb.wav",
+            "sourceSha256": "6cf0b26ca40c9c3c9db44eb0edbbfe5a02564afffe761562ec389428161ffa66",
+            "pcmDeliveryFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-6efc89c100cb-delivery.wav",
+            "pcmDeliverySha256": "df5584391a4cea5f2156ef759c3972c70f1ff7086da31c8fae86726bda44bbd4",
+            "sha256": "3e515e1cd8f1a6e410b5d5e391044439bf21562068dfd09e6563efa38e5e88e0",
+            "bytes": 64844,
+            "sampleRate": 24000,
+            "channels": 1,
+            "durationSeconds": 5.322,
+            "peak": 0.6280009150505066,
+            "rms": 0.0703745037317276
+          },
+          {
+            "id": "voice-campaign-freight-craft-52ca52bbb14b",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "speed": 0.98,
+            "text": "You called down, and there was somewhere to put it. That's work I can do with you.",
+            "loudnessLufs": -23.5,
+            "direction": "Established Asa identity; practical cooperation and personal boundary, no treatment or invented receipt. Complete exact words and natural ending.",
+            "segments": [
+              {
+                "text": "You called down, and there was somewhere to put it.",
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "That's work I can do with you.",
+                "pauseAfter": 0
+              }
+            ],
+            "integratedLufs": -23.51,
+            "truePeakDbtp": -3.67,
+            "language": "en-us",
+            "path": "public/audio/voice-campaign-freight-craft-52ca52bbb14b.mp3",
+            "sourceFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-52ca52bbb14b.wav",
+            "sourceSha256": "a21a038af6b8431e9d8b3a0e9ef547ba57f8088ca4b8a6df6deea806fdc2bff3",
+            "pcmDeliveryFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-52ca52bbb14b-delivery.wav",
+            "pcmDeliverySha256": "1517d0d9f03c011e7b4b561f286a3fe347f1854d3328b8d01846f173a381992c",
+            "sha256": "bc4d518f2d1321ec9d075a44d641918435b10d2c493e0227d64281a238682213",
+            "bytes": 70028,
+            "sampleRate": 24000,
+            "channels": 1,
+            "durationSeconds": 5.753333333333333,
+            "peak": 0.647798478603363,
+            "rms": 0.06810151785612106
+          },
+          {
+            "id": "voice-campaign-freight-craft-3578f9ef5a0c",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "speed": 0.98,
+            "text": "You stopped before the seal opened. How it went on from there belongs in the stock book.",
+            "loudnessLufs": -23.5,
+            "direction": "Established Asa identity; practical cooperation and personal boundary, no treatment or invented receipt. Complete exact words and natural ending.",
+            "segments": [
+              {
+                "text": "You stopped before the seal opened.",
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "How it went on from there belongs in the stock book.",
+                "pauseAfter": 0
+              }
+            ],
+            "integratedLufs": -23.38,
+            "truePeakDbtp": -2.75,
+            "language": "en-us",
+            "path": "public/audio/voice-campaign-freight-craft-3578f9ef5a0c.mp3",
+            "sourceFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-3578f9ef5a0c.wav",
+            "sourceSha256": "13ef3238b06985b05123db383ca8ead68ea4c5a9405875ea597535cd9906adc0",
+            "pcmDeliveryFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-3578f9ef5a0c-delivery.wav",
+            "pcmDeliverySha256": "a572310eaf46921932a7e1c4341f5c8cbfbfcaa777eb022d3a0e7b456c8b7319",
+            "sha256": "74aec23fb78f0950853b2ced863301d773361fc5a9d747a6ba259a7534e8ef44",
+            "bytes": 73772,
+            "sampleRate": 24000,
+            "channels": 1,
+            "durationSeconds": 6.068666666666667,
+            "peak": 0.7222317457199097,
+            "rms": 0.07232168316841125
+          },
+          {
+            "id": "voice-campaign-freight-craft-5bfa06763c3c",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "speed": 0.98,
+            "text": "A no before the weight is in the air is a useful word. Keep it available.",
+            "loudnessLufs": -23.5,
+            "direction": "Established Asa identity; practical cooperation and personal boundary, no treatment or invented receipt. Complete exact words and natural ending.",
+            "segments": [
+              {
+                "text": "A no before the weight is in the air is a useful word.",
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "Keep it available.",
+                "pauseAfter": 0
+              }
+            ],
+            "integratedLufs": -23.49,
+            "truePeakDbtp": -4.25,
+            "language": "en-us",
+            "path": "public/audio/voice-campaign-freight-craft-5bfa06763c3c.mp3",
+            "sourceFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-5bfa06763c3c.wav",
+            "sourceSha256": "895dcd0048512b789f7029be636469966d604325842fb1bad7d0eaf74dea9122",
+            "pcmDeliveryFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-5bfa06763c3c-delivery.wav",
+            "pcmDeliverySha256": "9b7ad1ce735d0c06d244408d2fc985866eabf9a32e0dceaa11db717ddde4187f",
+            "sha256": "22e2256b072fc32153911b5fb0b363d51e4e0bff63e54e6281a76cab7ca53e4d",
+            "bytes": 74348,
+            "sampleRate": 24000,
+            "channels": 1,
+            "durationSeconds": 6.114625,
+            "peak": 0.6117959022521973,
+            "rms": 0.06797082722187042
+          },
+          {
+            "id": "voice-campaign-freight-craft-5f7b638209db",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "speed": 0.98,
+            "text": "We never finished that carry. The rest belongs to the stock book.",
+            "loudnessLufs": -23.5,
+            "direction": "Established Asa identity; practical cooperation and personal boundary, no treatment or invented receipt. Complete exact words and natural ending.",
+            "segments": [
+              {
+                "text": "We never finished that carry.",
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "The rest belongs to the stock book.",
+                "pauseAfter": 0
+              }
+            ],
+            "integratedLufs": -23.52,
+            "truePeakDbtp": -4.4,
+            "language": "en-us",
+            "path": "public/audio/voice-campaign-freight-craft-5f7b638209db.mp3",
+            "sourceFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-5f7b638209db.wav",
+            "sourceSha256": "2bb1a490805509e5060e4905524a840e762bb48406222a4a519afbefa865bc6e",
+            "pcmDeliveryFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-5f7b638209db-delivery.wav",
+            "pcmDeliverySha256": "2dc515427c720b82420cbe3fd428a4b7523e23b662a643f661a34dc940f1a5fa",
+            "sha256": "d7d7eeb06f604c2d6f65d9e8e5dc6adb9858e38a181f30aa249ab3c23ee9ec1a",
+            "bytes": 65420,
+            "sampleRate": 24000,
+            "channels": 1,
+            "durationSeconds": 5.373958333333333,
+            "peak": 0.6026153564453125,
+            "rms": 0.06835152953863144
+          }
+        ]
+      },
+      "transcripts": {
+        "method": "Unprompted base.en CPU int8 ASR; no authored prompt; punctuation/case/apostrophe normalization only. Not independent listening or expressive acceptance.",
+        "model": "Systran/faster-whisper-base.en",
+        "modelFiles": [
+          {
+            "name": "models--Systran--faster-whisper-base.en/snapshots/3d3d5dee26484f91867d81cb899cfcf72b96be6c/config.json",
+            "sha256": "f3bc3821e9fc76a27bae538e11ae5b677dcdd352b4600429ce7951d398569aeb"
+          },
+          {
+            "name": "models--Systran--faster-whisper-base.en/snapshots/3d3d5dee26484f91867d81cb899cfcf72b96be6c/model.bin",
+            "sha256": "2a166925539a16005f14ff328359f9b9adb9dc4fb631bb3b227526862e93e2ef"
+          },
+          {
+            "name": "models--Systran--faster-whisper-base.en/snapshots/3d3d5dee26484f91867d81cb899cfcf72b96be6c/tokenizer.json",
+            "sha256": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df"
+          }
+        ],
+        "lines": [
+          {
+            "id": "voice-campaign-freight-craft-96eb087f3f04",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "text": "I can hold the gate. I can't take your half of the weight. Show me where you can put it down before we lift it.",
+            "path": "public/audio/voice-campaign-freight-craft-96eb087f3f04.mp3",
+            "sha256": "fe60389c815dd4691fff17d260f086cb7a3d615ed73bc47e0a19b1a18146a781",
+            "transcription": "I can hold the gates. I can't take your half of the weights. Show me where you can put it down before we lift it.",
+            "exactNormalizedWords": false,
+            "words": [
+              {
+                "word": " I",
+                "start": 0.0,
+                "end": 0.24
+              },
+              {
+                "word": " can",
+                "start": 0.24,
+                "end": 0.42
+              },
+              {
+                "word": " hold",
+                "start": 0.42,
+                "end": 0.7
+              },
+              {
+                "word": " the",
+                "start": 0.7,
+                "end": 0.96
+              },
+              {
+                "word": " gates.",
+                "start": 0.96,
+                "end": 1.24
+              },
+              {
+                "word": " I",
+                "start": 2.42,
+                "end": 2.44
+              },
+              {
+                "word": " can't",
+                "start": 2.44,
+                "end": 2.82
+              },
+              {
+                "word": " take",
+                "start": 2.82,
+                "end": 3.0
+              },
+              {
+                "word": " your",
+                "start": 3.0,
+                "end": 3.24
+              },
+              {
+                "word": " half",
+                "start": 3.24,
+                "end": 3.48
+              },
+              {
+                "word": " of",
+                "start": 3.48,
+                "end": 3.68
+              },
+              {
+                "word": " the",
+                "start": 3.68,
+                "end": 3.8
+              },
+              {
+                "word": " weights.",
+                "start": 3.8,
+                "end": 4.06
+              },
+              {
+                "word": " Show",
+                "start": 5.14,
+                "end": 5.2
+              },
+              {
+                "word": " me",
+                "start": 5.2,
+                "end": 5.38
+              },
+              {
+                "word": " where",
+                "start": 5.38,
+                "end": 5.52
+              },
+              {
+                "word": " you",
+                "start": 5.52,
+                "end": 5.66
+              },
+              {
+                "word": " can",
+                "start": 5.66,
+                "end": 5.78
+              },
+              {
+                "word": " put",
+                "start": 5.78,
+                "end": 6.0
+              },
+              {
+                "word": " it",
+                "start": 6.0,
+                "end": 6.08
+              },
+              {
+                "word": " down",
+                "start": 6.08,
+                "end": 6.34
+              },
+              {
+                "word": " before",
+                "start": 6.34,
+                "end": 6.64
+              },
+              {
+                "word": " we",
+                "start": 6.64,
+                "end": 6.92
+              },
+              {
+                "word": " lift",
+                "start": 6.92,
+                "end": 7.12
+              },
+              {
+                "word": " it.",
+                "start": 7.12,
+                "end": 7.4
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-freight-craft-3215df9a9ef6",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "text": "Watch where the weight can stop. Not how quickly you can make it move.",
+            "path": "public/audio/voice-campaign-freight-craft-3215df9a9ef6.mp3",
+            "sha256": "9633e5fda24e725b16a764421c8299ea4e793553f5e8dcb7c6d3fe2d6d3c985f",
+            "transcription": "Watch where the weight can stop, not how quickly you can make it move.",
+            "exactNormalizedWords": true,
+            "words": [
+              {
+                "word": " Watch",
+                "start": 0.0,
+                "end": 0.4
+              },
+              {
+                "word": " where",
+                "start": 0.4,
+                "end": 0.66
+              },
+              {
+                "word": " the",
+                "start": 0.66,
+                "end": 0.76
+              },
+              {
+                "word": " weight",
+                "start": 0.76,
+                "end": 1.0
+              },
+              {
+                "word": " can",
+                "start": 1.0,
+                "end": 1.24
+              },
+              {
+                "word": " stop,",
+                "start": 1.24,
+                "end": 1.66
+              },
+              {
+                "word": " not",
+                "start": 2.54,
+                "end": 2.82
+              },
+              {
+                "word": " how",
+                "start": 2.82,
+                "end": 3.06
+              },
+              {
+                "word": " quickly",
+                "start": 3.06,
+                "end": 3.42
+              },
+              {
+                "word": " you",
+                "start": 3.42,
+                "end": 3.82
+              },
+              {
+                "word": " can",
+                "start": 3.82,
+                "end": 4.0
+              },
+              {
+                "word": " make",
+                "start": 4.0,
+                "end": 4.22
+              },
+              {
+                "word": " it",
+                "start": 4.22,
+                "end": 4.4
+              },
+              {
+                "word": " move.",
+                "start": 4.4,
+                "end": 4.7
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-freight-craft-b57bd816cb58",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "text": "Use the support you actually have. A promise won't hold the bottom of this case.",
+            "path": "public/audio/voice-campaign-freight-craft-b57bd816cb58.mp3",
+            "sha256": "edacf90cdbc265371f5b77fa7a3920786df1cf4a4cde2c03714a00e388521601",
+            "transcription": "Use the support you actually have. A promise won't hold the bottom of this case.",
+            "exactNormalizedWords": true,
+            "words": [
+              {
+                "word": " Use",
+                "start": 0.0,
+                "end": 0.32
+              },
+              {
+                "word": " the",
+                "start": 0.32,
+                "end": 0.5
+              },
+              {
+                "word": " support",
+                "start": 0.5,
+                "end": 0.78
+              },
+              {
+                "word": " you",
+                "start": 0.78,
+                "end": 1.12
+              },
+              {
+                "word": " actually",
+                "start": 1.12,
+                "end": 1.48
+              },
+              {
+                "word": " have.",
+                "start": 1.48,
+                "end": 1.92
+              },
+              {
+                "word": " A",
+                "start": 2.88,
+                "end": 2.92
+              },
+              {
+                "word": " promise",
+                "start": 2.92,
+                "end": 3.36
+              },
+              {
+                "word": " won't",
+                "start": 3.36,
+                "end": 3.76
+              },
+              {
+                "word": " hold",
+                "start": 3.76,
+                "end": 4.02
+              },
+              {
+                "word": " the",
+                "start": 4.02,
+                "end": 4.18
+              },
+              {
+                "word": " bottom",
+                "start": 4.18,
+                "end": 4.46
+              },
+              {
+                "word": " of",
+                "start": 4.46,
+                "end": 4.7
+              },
+              {
+                "word": " this",
+                "start": 4.7,
+                "end": 4.84
+              },
+              {
+                "word": " case.",
+                "start": 4.84,
+                "end": 5.16
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-freight-craft-f609e901e947",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "text": "The gate is mine. The weight is yours. Call down before the bend if you need the landing.",
+            "path": "public/audio/voice-campaign-freight-craft-f609e901e947.mp3",
+            "sha256": "92c843d51163d22dbd2700318e37ad670e0d6bfd52b7799e7510405e34d01560",
+            "transcription": "The gate is mine. The weight is yours. Call down before the bend if you need the landing.",
+            "exactNormalizedWords": true,
+            "words": [
+              {
+                "word": " The",
+                "start": 0.0,
+                "end": 0.24
+              },
+              {
+                "word": " gate",
+                "start": 0.24,
+                "end": 0.5
+              },
+              {
+                "word": " is",
+                "start": 0.5,
+                "end": 0.84
+              },
+              {
+                "word": " mine.",
+                "start": 0.84,
+                "end": 1.06
+              },
+              {
+                "word": " The",
+                "start": 2.26,
+                "end": 2.3
+              },
+              {
+                "word": " weight",
+                "start": 2.3,
+                "end": 2.56
+              },
+              {
+                "word": " is",
+                "start": 2.56,
+                "end": 2.88
+              },
+              {
+                "word": " yours.",
+                "start": 2.88,
+                "end": 3.22
+              },
+              {
+                "word": " Call",
+                "start": 4.34,
+                "end": 4.5
+              },
+              {
+                "word": " down",
+                "start": 4.5,
+                "end": 4.86
+              },
+              {
+                "word": " before",
+                "start": 4.86,
+                "end": 5.12
+              },
+              {
+                "word": " the",
+                "start": 5.12,
+                "end": 5.36
+              },
+              {
+                "word": " bend",
+                "start": 5.36,
+                "end": 5.6
+              },
+              {
+                "word": " if",
+                "start": 5.6,
+                "end": 6.02
+              },
+              {
+                "word": " you",
+                "start": 6.02,
+                "end": 6.18
+              },
+              {
+                "word": " need",
+                "start": 6.18,
+                "end": 6.36
+              },
+              {
+                "word": " the",
+                "start": 6.36,
+                "end": 6.52
+              },
+              {
+                "word": " landing.",
+                "start": 6.52,
+                "end": 6.86
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-freight-craft-0707294020e3",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "text": "Put it down flat. The stamp is still the clerk's work.",
+            "path": "public/audio/voice-campaign-freight-craft-0707294020e3.mp3",
+            "sha256": "d450d0c227623fb70ef63913b81f7f5926a1193aeaf2f760b7fc37b42b2c17f3",
+            "transcription": "Put it down flat. The stamp is still the clerk's work.",
+            "exactNormalizedWords": true,
+            "words": [
+              {
+                "word": " Put",
+                "start": 0.0,
+                "end": 0.28
+              },
+              {
+                "word": " it",
+                "start": 0.28,
+                "end": 0.4
+              },
+              {
+                "word": " down",
+                "start": 0.4,
+                "end": 0.68
+              },
+              {
+                "word": " flat.",
+                "start": 0.68,
+                "end": 1.1
+              },
+              {
+                "word": " The",
+                "start": 2.22,
+                "end": 2.28
+              },
+              {
+                "word": " stamp",
+                "start": 2.28,
+                "end": 2.52
+              },
+              {
+                "word": " is",
+                "start": 2.52,
+                "end": 2.84
+              },
+              {
+                "word": " still",
+                "start": 2.84,
+                "end": 3.16
+              },
+              {
+                "word": " the",
+                "start": 3.16,
+                "end": 3.34
+              },
+              {
+                "word": " clerk's",
+                "start": 3.34,
+                "end": 3.76
+              },
+              {
+                "word": " work.",
+                "start": 3.76,
+                "end": 4.16
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-freight-craft-6efc89c100cb",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "text": "Leave it under the hood. A stopped carry isn't a lost parcel.",
+            "path": "public/audio/voice-campaign-freight-craft-6efc89c100cb.mp3",
+            "sha256": "3e515e1cd8f1a6e410b5d5e391044439bf21562068dfd09e6563efa38e5e88e0",
+            "transcription": "Lave it under the hood. A stopped carry isn't a lost parcel.",
+            "exactNormalizedWords": false,
+            "words": [
+              {
+                "word": " Lave",
+                "start": 0.0,
+                "end": 0.48
+              },
+              {
+                "word": " it",
+                "start": 0.48,
+                "end": 0.58
+              },
+              {
+                "word": " under",
+                "start": 0.58,
+                "end": 0.84
+              },
+              {
+                "word": " the",
+                "start": 0.84,
+                "end": 1.08
+              },
+              {
+                "word": " hood.",
+                "start": 1.08,
+                "end": 1.38
+              },
+              {
+                "word": " A",
+                "start": 2.32,
+                "end": 2.36
+              },
+              {
+                "word": " stopped",
+                "start": 2.36,
+                "end": 2.62
+              },
+              {
+                "word": " carry",
+                "start": 2.62,
+                "end": 3.04
+              },
+              {
+                "word": " isn't",
+                "start": 3.04,
+                "end": 3.58
+              },
+              {
+                "word": " a",
+                "start": 3.58,
+                "end": 3.68
+              },
+              {
+                "word": " lost",
+                "start": 3.68,
+                "end": 3.94
+              },
+              {
+                "word": " parcel.",
+                "start": 3.94,
+                "end": 4.46
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-freight-craft-52ca52bbb14b",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "text": "You called down, and there was somewhere to put it. That's work I can do with you.",
+            "path": "public/audio/voice-campaign-freight-craft-52ca52bbb14b.mp3",
+            "sha256": "bc4d518f2d1321ec9d075a44d641918435b10d2c493e0227d64281a238682213",
+            "transcription": "You called down and there was somewhere to put it. That's work I can do with you.",
+            "exactNormalizedWords": true,
+            "words": [
+              {
+                "word": " You",
+                "start": 0.0,
+                "end": 0.22
+              },
+              {
+                "word": " called",
+                "start": 0.22,
+                "end": 0.42
+              },
+              {
+                "word": " down",
+                "start": 0.42,
+                "end": 0.84
+              },
+              {
+                "word": " and",
+                "start": 0.84,
+                "end": 1.26
+              },
+              {
+                "word": " there",
+                "start": 1.26,
+                "end": 1.4
+              },
+              {
+                "word": " was",
+                "start": 1.4,
+                "end": 1.52
+              },
+              {
+                "word": " somewhere",
+                "start": 1.52,
+                "end": 1.82
+              },
+              {
+                "word": " to",
+                "start": 1.82,
+                "end": 2.1
+              },
+              {
+                "word": " put",
+                "start": 2.1,
+                "end": 2.34
+              },
+              {
+                "word": " it.",
+                "start": 2.34,
+                "end": 2.44
+              },
+              {
+                "word": " That's",
+                "start": 3.32,
+                "end": 3.64
+              },
+              {
+                "word": " work",
+                "start": 3.64,
+                "end": 3.88
+              },
+              {
+                "word": " I",
+                "start": 3.88,
+                "end": 4.14
+              },
+              {
+                "word": " can",
+                "start": 4.14,
+                "end": 4.32
+              },
+              {
+                "word": " do",
+                "start": 4.32,
+                "end": 4.54
+              },
+              {
+                "word": " with",
+                "start": 4.54,
+                "end": 4.76
+              },
+              {
+                "word": " you.",
+                "start": 4.76,
+                "end": 5.0
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-freight-craft-3578f9ef5a0c",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "text": "You stopped before the seal opened. How it went on from there belongs in the stock book.",
+            "path": "public/audio/voice-campaign-freight-craft-3578f9ef5a0c.mp3",
+            "sha256": "74aec23fb78f0950853b2ced863301d773361fc5a9d747a6ba259a7534e8ef44",
+            "transcription": "You stopped before the seal opened. How it went on from there belongs in the stockbook.",
+            "exactNormalizedWords": false,
+            "words": [
+              {
+                "word": " You",
+                "start": 0.0,
+                "end": 0.24
+              },
+              {
+                "word": " stopped",
+                "start": 0.24,
+                "end": 0.52
+              },
+              {
+                "word": " before",
+                "start": 0.52,
+                "end": 0.92
+              },
+              {
+                "word": " the",
+                "start": 0.92,
+                "end": 1.16
+              },
+              {
+                "word": " seal",
+                "start": 1.16,
+                "end": 1.36
+              },
+              {
+                "word": " opened.",
+                "start": 1.36,
+                "end": 1.92
+              },
+              {
+                "word": " How",
+                "start": 2.96,
+                "end": 3.0
+              },
+              {
+                "word": " it",
+                "start": 3.0,
+                "end": 3.14
+              },
+              {
+                "word": " went",
+                "start": 3.14,
+                "end": 3.24
+              },
+              {
+                "word": " on",
+                "start": 3.24,
+                "end": 3.44
+              },
+              {
+                "word": " from",
+                "start": 3.44,
+                "end": 3.68
+              },
+              {
+                "word": " there",
+                "start": 3.68,
+                "end": 3.82
+              },
+              {
+                "word": " belongs",
+                "start": 3.82,
+                "end": 4.1
+              },
+              {
+                "word": " in",
+                "start": 4.1,
+                "end": 4.58
+              },
+              {
+                "word": " the",
+                "start": 4.58,
+                "end": 4.68
+              },
+              {
+                "word": " stockbook.",
+                "start": 4.68,
+                "end": 5.3
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-freight-craft-5bfa06763c3c",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "text": "A no before the weight is in the air is a useful word. Keep it available.",
+            "path": "public/audio/voice-campaign-freight-craft-5bfa06763c3c.mp3",
+            "sha256": "22e2256b072fc32153911b5fb0b363d51e4e0bff63e54e6281a76cab7ca53e4d",
+            "transcription": "A no before the weight is in the air is a useful word. Keep it available.",
+            "exactNormalizedWords": true,
+            "words": [
+              {
+                "word": " A",
+                "start": 0.0,
+                "end": 0.18
+              },
+              {
+                "word": " no",
+                "start": 0.18,
+                "end": 0.36
+              },
+              {
+                "word": " before",
+                "start": 0.36,
+                "end": 0.72
+              },
+              {
+                "word": " the",
+                "start": 0.72,
+                "end": 0.9
+              },
+              {
+                "word": " weight",
+                "start": 0.9,
+                "end": 1.14
+              },
+              {
+                "word": " is",
+                "start": 1.14,
+                "end": 1.44
+              },
+              {
+                "word": " in",
+                "start": 1.44,
+                "end": 1.56
+              },
+              {
+                "word": " the",
+                "start": 1.56,
+                "end": 1.68
+              },
+              {
+                "word": " air",
+                "start": 1.68,
+                "end": 2.0
+              },
+              {
+                "word": " is",
+                "start": 2.0,
+                "end": 2.32
+              },
+              {
+                "word": " a",
+                "start": 2.32,
+                "end": 2.42
+              },
+              {
+                "word": " useful",
+                "start": 2.42,
+                "end": 2.68
+              },
+              {
+                "word": " word.",
+                "start": 2.68,
+                "end": 3.32
+              },
+              {
+                "word": " Keep",
+                "start": 4.16,
+                "end": 4.3
+              },
+              {
+                "word": " it",
+                "start": 4.3,
+                "end": 4.66
+              },
+              {
+                "word": " available.",
+                "start": 4.66,
+                "end": 5.04
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-freight-craft-5f7b638209db",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "text": "We never finished that carry. The rest belongs to the stock book.",
+            "path": "public/audio/voice-campaign-freight-craft-5f7b638209db.mp3",
+            "sha256": "d7d7eeb06f604c2d6f65d9e8e5dc6adb9858e38a181f30aa249ab3c23ee9ec1a",
+            "transcription": "We never finished that carry. The rest belongs to the stockbook.",
+            "exactNormalizedWords": false,
+            "words": [
+              {
+                "word": " We",
+                "start": 0.0,
+                "end": 0.24
+              },
+              {
+                "word": " never",
+                "start": 0.24,
+                "end": 0.48
+              },
+              {
+                "word": " finished",
+                "start": 0.48,
+                "end": 0.96
+              },
+              {
+                "word": " that",
+                "start": 0.96,
+                "end": 1.24
+              },
+              {
+                "word": " carry.",
+                "start": 1.24,
+                "end": 1.54
+              },
+              {
+                "word": " The",
+                "start": 2.62,
+                "end": 2.68
+              },
+              {
+                "word": " rest",
+                "start": 2.68,
+                "end": 2.88
+              },
+              {
+                "word": " belongs",
+                "start": 2.88,
+                "end": 3.4
+              },
+              {
+                "word": " to",
+                "start": 3.4,
+                "end": 3.76
+              },
+              {
+                "word": " the",
+                "start": 3.76,
+                "end": 3.86
+              },
+              {
+                "word": " stockbook.",
+                "start": 3.86,
+                "end": 4.46
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "stage": "unpublished clarity revisions",
+      "provenance": {
+        "generated": "2026-10-29",
+        "disclosure": "Stock synthetic voices generated offline with Kokoro v1.0; no actor session or individual voice clone was commissioned. Only the fixed authored quotations below are rendered. No model or speech service ships in the game.",
+        "driver": {
+          "name": "kokoro-onnx",
+          "version": "0.6.1",
+          "license": "MIT",
+          "url": "https://github.com/thewh1teagle/kokoro-onnx",
+          "licenseFile": "qa/media/voice-sources/kokoro-onnx-LICENSE.txt"
+        },
+        "model": {
+          "name": "Kokoro-82M v1.0",
+          "license": "Apache-2.0",
+          "card": "https://huggingface.co/hexgrad/Kokoro-82M",
+          "licenseFile": "qa/media/voice-sources/Kokoro-LICENSE.txt",
+          "files": [
+            {
+              "name": "kokoro-v1.0.onnx",
+              "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.onnx",
+              "sha256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+              "bytes": 325505369
+            },
+            {
+              "name": "voices-v1.0.bin",
+              "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin",
+              "sha256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+              "bytes": 28214398
+            }
+          ]
+        },
+        "source": "scripts/generate-campaign-voices.py",
+        "processing": "Exact authored character words; existing cast identities; optional sentence pauses, 8ms phrase fades, normalized PCM peak 0.72 with 80ms edges; optional per-line two-pass EBU loudness matching with -2dBTP ceiling; 96kbps mono MP3 delivery. Original PCM and normalized PCM retained outside Git.",
+        "reviewStatus": "Technical signal and source review; stock synthetic dialogue. No commissioned actors or independent listening acceptance.",
+        "lines": [
+          {
+            "id": "voice-campaign-freight-craft-3215df9a9ef6",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "speed": 0.98,
+            "text": "Watch where the weight can stop. Not how quickly you can make it move.",
+            "loudnessLufs": -23.5,
+            "direction": "Established Asa identity; practical cooperation and personal boundary, no treatment or invented receipt. Complete exact words and natural ending.",
+            "segments": [
+              {
+                "text": "Watch where the weight can stop.",
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "Not how quickly you can make it move.",
+                "pauseAfter": 0
+              }
+            ],
+            "integratedLufs": -23.48,
+            "truePeakDbtp": -4.85,
+            "language": "en-us",
+            "path": "public/audio/voice-campaign-freight-craft-3215df9a9ef6.mp3",
+            "sourceFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-3215df9a9ef6.wav",
+            "sourceSha256": "acbb99774687567bfb1d9c56d789d388d17f061d1f887a78862f9774c065914c",
+            "pcmDeliveryFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-3215df9a9ef6-delivery.wav",
+            "pcmDeliverySha256": "8e527a6480d14126035ad5c26c68f52b1df27f4d1adedc9508c8ecbfd960314c",
+            "sha256": "9633e5fda24e725b16a764421c8299ea4e793553f5e8dcb7c6d3fe2d6d3c985f",
+            "bytes": 67436,
+            "sampleRate": 24000,
+            "channels": 1,
+            "durationSeconds": 5.527333333333333,
+            "peak": 0.5723567605018616,
+            "rms": 0.07056616246700287
+          },
+          {
+            "id": "voice-campaign-freight-craft-b57bd816cb58",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "speed": 0.98,
+            "text": "Use the support you actually have. A promise won't hold the bottom of this case.",
+            "loudnessLufs": -23.5,
+            "direction": "Established Asa identity; practical cooperation and personal boundary, no treatment or invented receipt. Complete exact words and natural ending.",
+            "segments": [
+              {
+                "text": "Use the support you actually have.",
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "A promise won't hold the bottom of this case.",
+                "pauseAfter": 0
+              }
+            ],
+            "integratedLufs": -23.5,
+            "truePeakDbtp": -4.8,
+            "language": "en-us",
+            "path": "public/audio/voice-campaign-freight-craft-b57bd816cb58.mp3",
+            "sourceFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-b57bd816cb58.wav",
+            "sourceSha256": "5c0f257386ed6d7635920b3095ac6f8b406df217adeb5a60d333371e151b25b1",
+            "pcmDeliveryFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-b57bd816cb58-delivery.wav",
+            "pcmDeliverySha256": "989284bca7180aca99805dccf53661cf051dc70775ae341e9f8ed4f7f9a32bcc",
+            "sha256": "edacf90cdbc265371f5b77fa7a3920786df1cf4a4cde2c03714a00e388521601",
+            "bytes": 72908,
+            "sampleRate": 24000,
+            "channels": 1,
+            "durationSeconds": 5.992,
+            "peak": 0.569374680519104,
+            "rms": 0.06919966638088226
+          },
+          {
+            "id": "voice-campaign-freight-craft-f609e901e947",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "speed": 0.98,
+            "text": "The gate is mine. The weight is yours. Call down before the bend if you need the landing.",
+            "loudnessLufs": -23.5,
+            "direction": "Established Asa identity; practical cooperation and personal boundary, no treatment or invented receipt. Complete exact words and natural ending.",
+            "segments": [
+              {
+                "text": "The gate is mine.",
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "The weight is yours.",
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "Call down before the bend if you need the landing.",
+                "pauseAfter": 0
+              }
+            ],
+            "integratedLufs": -23.49,
+            "truePeakDbtp": -4.64,
+            "language": "en-us",
+            "path": "public/audio/voice-campaign-freight-craft-f609e901e947.mp3",
+            "sourceFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-f609e901e947.wav",
+            "sourceSha256": "3e33f98d877d26755018a9a12afdd3e438d5f25c284676076ed58ff1ab8e3cf2",
+            "pcmDeliveryFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-f609e901e947-delivery.wav",
+            "pcmDeliverySha256": "26615881040fa5ed08499a9f8ea4c8196d82c5de545a435bbb054a18560c524f",
+            "sha256": "92c843d51163d22dbd2700318e37ad670e0d6bfd52b7799e7510405e34d01560",
+            "bytes": 93356,
+            "sampleRate": 24000,
+            "channels": 1,
+            "durationSeconds": 7.696625,
+            "peak": 0.5850855708122253,
+            "rms": 0.07470623403787613
+          },
+          {
+            "id": "voice-campaign-freight-craft-0707294020e3",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "speed": 0.98,
+            "text": "Put it down flat. The stamp is still the clerk's work.",
+            "loudnessLufs": -23.5,
+            "direction": "Established Asa identity; practical cooperation and personal boundary, no treatment or invented receipt. Complete exact words and natural ending.",
+            "segments": [
+              {
+                "text": "Put it down flat.",
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "The stamp is still the clerk's work.",
+                "pauseAfter": 0
+              }
+            ],
+            "integratedLufs": -23.5,
+            "truePeakDbtp": -4.22,
+            "language": "en-us",
+            "path": "public/audio/voice-campaign-freight-craft-0707294020e3.mp3",
+            "sourceFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-0707294020e3.wav",
+            "sourceSha256": "828c7ee102552d4bcccb53292e25f8c71fcddfb92e43894068f59c506de47827",
+            "pcmDeliveryFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-0707294020e3-delivery.wav",
+            "pcmDeliverySha256": "7113448068e48cd1d04de7f3789ca90c36594e4461aaea99aeb4154e00bd6f00",
+            "sha256": "d450d0c227623fb70ef63913b81f7f5926a1193aeaf2f760b7fc37b42b2c17f3",
+            "bytes": 59084,
+            "sampleRate": 24000,
+            "channels": 1,
+            "durationSeconds": 4.846,
+            "peak": 0.6113645434379578,
+            "rms": 0.0687691792845726
+          },
+          {
+            "id": "voice-campaign-freight-craft-52ca52bbb14b",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "speed": 0.98,
+            "text": "You called down, and there was somewhere to put it. That's work I can do with you.",
+            "loudnessLufs": -23.5,
+            "direction": "Established Asa identity; practical cooperation and personal boundary, no treatment or invented receipt. Complete exact words and natural ending.",
+            "segments": [
+              {
+                "text": "You called down, and there was somewhere to put it.",
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "That's work I can do with you.",
+                "pauseAfter": 0
+              }
+            ],
+            "integratedLufs": -23.51,
+            "truePeakDbtp": -3.67,
+            "language": "en-us",
+            "path": "public/audio/voice-campaign-freight-craft-52ca52bbb14b.mp3",
+            "sourceFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-52ca52bbb14b.wav",
+            "sourceSha256": "a21a038af6b8431e9d8b3a0e9ef547ba57f8088ca4b8a6df6deea806fdc2bff3",
+            "pcmDeliveryFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-52ca52bbb14b-delivery.wav",
+            "pcmDeliverySha256": "1517d0d9f03c011e7b4b561f286a3fe347f1854d3328b8d01846f173a381992c",
+            "sha256": "bc4d518f2d1321ec9d075a44d641918435b10d2c493e0227d64281a238682213",
+            "bytes": 70028,
+            "sampleRate": 24000,
+            "channels": 1,
+            "durationSeconds": 5.753333333333333,
+            "peak": 0.647798478603363,
+            "rms": 0.06810151785612106
+          },
+          {
+            "id": "voice-campaign-freight-craft-5bfa06763c3c",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "speed": 0.98,
+            "text": "A no before the weight is in the air is a useful word. Keep it available.",
+            "loudnessLufs": -23.5,
+            "direction": "Established Asa identity; practical cooperation and personal boundary, no treatment or invented receipt. Complete exact words and natural ending.",
+            "segments": [
+              {
+                "text": "A no before the weight is in the air is a useful word.",
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "Keep it available.",
+                "pauseAfter": 0
+              }
+            ],
+            "integratedLufs": -23.49,
+            "truePeakDbtp": -4.25,
+            "language": "en-us",
+            "path": "public/audio/voice-campaign-freight-craft-5bfa06763c3c.mp3",
+            "sourceFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-5bfa06763c3c.wav",
+            "sourceSha256": "895dcd0048512b789f7029be636469966d604325842fb1bad7d0eaf74dea9122",
+            "pcmDeliveryFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-5bfa06763c3c-delivery.wav",
+            "pcmDeliverySha256": "9b7ad1ce735d0c06d244408d2fc985866eabf9a32e0dceaa11db717ddde4187f",
+            "sha256": "22e2256b072fc32153911b5fb0b363d51e4e0bff63e54e6281a76cab7ca53e4d",
+            "bytes": 74348,
+            "sampleRate": 24000,
+            "channels": 1,
+            "durationSeconds": 6.114625,
+            "peak": 0.6117959022521973,
+            "rms": 0.06797082722187042
+          },
+          {
+            "id": "voice-campaign-freight-craft-4d3307b2d4d5",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "speed": 0.98,
+            "text": "I will hold the catch while you carry. Show me where the load can rest. I am not your second carrier.",
+            "loudnessLufs": -23.5,
+            "direction": "Established Asa identity; practical cooperation and personal boundary, no treatment or invented receipt. Complete exact words and natural ending.",
+            "segments": [
+              {
+                "text": "I will hold the catch while you carry.",
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "Show me where the load can rest.",
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "I am not your second carrier.",
+                "pauseAfter": 0
+              }
+            ],
+            "integratedLufs": -23.5,
+            "truePeakDbtp": -5.69,
+            "language": "en-us",
+            "path": "public/audio/voice-campaign-freight-craft-4d3307b2d4d5.mp3",
+            "sourceFile": "/workspace/generated_audio/freight-craft/second-pass/voice-campaign-freight-craft-4d3307b2d4d5.wav",
+            "sourceSha256": "d27917a5d4bb5c827ceb9b641042ebbe405678b05f3b80bda86c359818b71a72",
+            "pcmDeliveryFile": "/workspace/generated_audio/freight-craft/second-pass/voice-campaign-freight-craft-4d3307b2d4d5-delivery.wav",
+            "pcmDeliverySha256": "06dff840c5a3f044c85b6014508a5b0a3fe397a9fec1e25126bc01fb4da665bd",
+            "sha256": "e89c77cd0dc516c8c4cf864878634f2462a538082dc328c7f2f9f6ffad1d73dc",
+            "bytes": 96812,
+            "sampleRate": 24000,
+            "channels": 1,
+            "durationSeconds": 7.9699583333333335,
+            "peak": 0.5183880925178528,
+            "rms": 0.06987027823925018
+          },
+          {
+            "id": "voice-campaign-freight-craft-33cdf9e189ed",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "speed": 0.98,
+            "text": "Keep it under the hood. A stopped carry is not a lost parcel.",
+            "loudnessLufs": -23.5,
+            "direction": "Established Asa identity; practical cooperation and personal boundary, no treatment or invented receipt. Complete exact words and natural ending.",
+            "segments": [
+              {
+                "text": "Keep it under the hood.",
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "A stopped carry is not a lost parcel.",
+                "pauseAfter": 0
+              }
+            ],
+            "integratedLufs": -23.5,
+            "truePeakDbtp": -3.98,
+            "language": "en-us",
+            "path": "public/audio/voice-campaign-freight-craft-33cdf9e189ed.mp3",
+            "sourceFile": "/workspace/generated_audio/freight-craft/second-pass/voice-campaign-freight-craft-33cdf9e189ed.wav",
+            "sourceSha256": "042eff42a3a305a6d9d5b74abf3cb9c932a1de209fc6e29807e2ef2329c3048d",
+            "pcmDeliveryFile": "/workspace/generated_audio/freight-craft/second-pass/voice-campaign-freight-craft-33cdf9e189ed-delivery.wav",
+            "pcmDeliverySha256": "8c5b40495c69c7272f5f95fe585d8e315cc83f37658206e60128949de77581b0",
+            "sha256": "30ae06e5b5b5972cdb2287ffaeeb4080733158dbbb36428ec7124eca78dc9e5c",
+            "bytes": 66284,
+            "sampleRate": 24000,
+            "channels": 1,
+            "durationSeconds": 5.439333333333333,
+            "peak": 0.6322853565216064,
+            "rms": 0.06998303532600403
+          },
+          {
+            "id": "voice-campaign-freight-craft-65d1cb340235",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "speed": 0.98,
+            "text": "You stopped before the seal opened. How it went on from there belongs in the clinic ledger.",
+            "loudnessLufs": -23.5,
+            "direction": "Established Asa identity; practical cooperation and personal boundary, no treatment or invented receipt. Complete exact words and natural ending.",
+            "segments": [
+              {
+                "text": "You stopped before the seal opened.",
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "How it went on from there belongs in the clinic ledger.",
+                "pauseAfter": 0
+              }
+            ],
+            "integratedLufs": -23.5,
+            "truePeakDbtp": -2.31,
+            "language": "en-us",
+            "path": "public/audio/voice-campaign-freight-craft-65d1cb340235.mp3",
+            "sourceFile": "/workspace/generated_audio/freight-craft/second-pass/voice-campaign-freight-craft-65d1cb340235.wav",
+            "sourceSha256": "42b0417927de566dd002ffb3215b1ca35ac0b9c3ba5419cfaa36ded5936aee5f",
+            "pcmDeliveryFile": "/workspace/generated_audio/freight-craft/second-pass/voice-campaign-freight-craft-65d1cb340235-delivery.wav",
+            "pcmDeliverySha256": "e8fd6055356cb27a277f94c7cb7a13919a54b92ce205ec6c69028767ea21e858",
+            "sha256": "fa0b2bac4bc6d2e13a0cc19821fc15c32f4e05579835cff46896385600642072",
+            "bytes": 75788,
+            "sampleRate": 24000,
+            "channels": 1,
+            "durationSeconds": 6.239333333333334,
+            "peak": 0.7664388418197632,
+            "rms": 0.07610175758600235
+          },
+          {
+            "id": "voice-campaign-freight-craft-c643ecc39c94",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "speed": 0.98,
+            "text": "We never finished that carry. The rest belongs in the clinic ledger.",
+            "loudnessLufs": -23.5,
+            "direction": "Established Asa identity; practical cooperation and personal boundary, no treatment or invented receipt. Complete exact words and natural ending.",
+            "segments": [
+              {
+                "text": "We never finished that carry.",
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "The rest belongs in the clinic ledger.",
+                "pauseAfter": 0
+              }
+            ],
+            "integratedLufs": -23.5,
+            "truePeakDbtp": -3.04,
+            "language": "en-us",
+            "path": "public/audio/voice-campaign-freight-craft-c643ecc39c94.mp3",
+            "sourceFile": "/workspace/generated_audio/freight-craft/second-pass/voice-campaign-freight-craft-c643ecc39c94.wav",
+            "sourceSha256": "412335680707ba2232a3de23962cfa0065cf4fb3bcb98cd588911b335342f0f7",
+            "pcmDeliveryFile": "/workspace/generated_audio/freight-craft/second-pass/voice-campaign-freight-craft-c643ecc39c94-delivery.wav",
+            "pcmDeliverySha256": "6b29a047158fb0828b3ac1a11e0ebe5b01580c3319c517014899a4723d5d5ab4",
+            "sha256": "ad83ca80d2df5be31508e36a7d316e1275bbbaccab349304d6253f98f46b95ba",
+            "bytes": 66284,
+            "sampleRate": 24000,
+            "channels": 1,
+            "durationSeconds": 5.435958333333334,
+            "peak": 0.7048048973083496,
+            "rms": 0.07039830833673477
+          }
+        ]
+      },
+      "transcripts": {
+        "method": "Unprompted base.en CPU int8 ASR; no authored prompt; punctuation/case/apostrophe normalization only. Not independent listening or expressive acceptance.",
+        "model": "Systran/faster-whisper-base.en",
+        "modelFiles": [
+          {
+            "name": "models--Systran--faster-whisper-base.en/snapshots/3d3d5dee26484f91867d81cb899cfcf72b96be6c/config.json",
+            "sha256": "f3bc3821e9fc76a27bae538e11ae5b677dcdd352b4600429ce7951d398569aeb"
+          },
+          {
+            "name": "models--Systran--faster-whisper-base.en/snapshots/3d3d5dee26484f91867d81cb899cfcf72b96be6c/model.bin",
+            "sha256": "2a166925539a16005f14ff328359f9b9adb9dc4fb631bb3b227526862e93e2ef"
+          },
+          {
+            "name": "models--Systran--faster-whisper-base.en/snapshots/3d3d5dee26484f91867d81cb899cfcf72b96be6c/tokenizer.json",
+            "sha256": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df"
+          }
+        ],
+        "lines": [
+          {
+            "id": "voice-campaign-freight-craft-3215df9a9ef6",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "text": "Watch where the weight can stop. Not how quickly you can make it move.",
+            "path": "public/audio/voice-campaign-freight-craft-3215df9a9ef6.mp3",
+            "sha256": "9633e5fda24e725b16a764421c8299ea4e793553f5e8dcb7c6d3fe2d6d3c985f",
+            "transcription": "Watch where the weight can stop, not how quickly you can make it move.",
+            "exactNormalizedWords": true,
+            "words": [
+              {
+                "word": " Watch",
+                "start": 0.0,
+                "end": 0.4
+              },
+              {
+                "word": " where",
+                "start": 0.4,
+                "end": 0.66
+              },
+              {
+                "word": " the",
+                "start": 0.66,
+                "end": 0.76
+              },
+              {
+                "word": " weight",
+                "start": 0.76,
+                "end": 1.0
+              },
+              {
+                "word": " can",
+                "start": 1.0,
+                "end": 1.24
+              },
+              {
+                "word": " stop,",
+                "start": 1.24,
+                "end": 1.66
+              },
+              {
+                "word": " not",
+                "start": 2.54,
+                "end": 2.82
+              },
+              {
+                "word": " how",
+                "start": 2.82,
+                "end": 3.06
+              },
+              {
+                "word": " quickly",
+                "start": 3.06,
+                "end": 3.42
+              },
+              {
+                "word": " you",
+                "start": 3.42,
+                "end": 3.82
+              },
+              {
+                "word": " can",
+                "start": 3.82,
+                "end": 4.0
+              },
+              {
+                "word": " make",
+                "start": 4.0,
+                "end": 4.22
+              },
+              {
+                "word": " it",
+                "start": 4.22,
+                "end": 4.4
+              },
+              {
+                "word": " move.",
+                "start": 4.4,
+                "end": 4.7
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-freight-craft-b57bd816cb58",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "text": "Use the support you actually have. A promise won't hold the bottom of this case.",
+            "path": "public/audio/voice-campaign-freight-craft-b57bd816cb58.mp3",
+            "sha256": "edacf90cdbc265371f5b77fa7a3920786df1cf4a4cde2c03714a00e388521601",
+            "transcription": "Use the support you actually have. A promise won't hold the bottom of this case.",
+            "exactNormalizedWords": true,
+            "words": [
+              {
+                "word": " Use",
+                "start": 0.0,
+                "end": 0.32
+              },
+              {
+                "word": " the",
+                "start": 0.32,
+                "end": 0.5
+              },
+              {
+                "word": " support",
+                "start": 0.5,
+                "end": 0.78
+              },
+              {
+                "word": " you",
+                "start": 0.78,
+                "end": 1.12
+              },
+              {
+                "word": " actually",
+                "start": 1.12,
+                "end": 1.48
+              },
+              {
+                "word": " have.",
+                "start": 1.48,
+                "end": 1.92
+              },
+              {
+                "word": " A",
+                "start": 2.88,
+                "end": 2.92
+              },
+              {
+                "word": " promise",
+                "start": 2.92,
+                "end": 3.36
+              },
+              {
+                "word": " won't",
+                "start": 3.36,
+                "end": 3.76
+              },
+              {
+                "word": " hold",
+                "start": 3.76,
+                "end": 4.02
+              },
+              {
+                "word": " the",
+                "start": 4.02,
+                "end": 4.18
+              },
+              {
+                "word": " bottom",
+                "start": 4.18,
+                "end": 4.46
+              },
+              {
+                "word": " of",
+                "start": 4.46,
+                "end": 4.7
+              },
+              {
+                "word": " this",
+                "start": 4.7,
+                "end": 4.84
+              },
+              {
+                "word": " case.",
+                "start": 4.84,
+                "end": 5.16
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-freight-craft-f609e901e947",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "text": "The gate is mine. The weight is yours. Call down before the bend if you need the landing.",
+            "path": "public/audio/voice-campaign-freight-craft-f609e901e947.mp3",
+            "sha256": "92c843d51163d22dbd2700318e37ad670e0d6bfd52b7799e7510405e34d01560",
+            "transcription": "The gate is mine. The weight is yours. Call down before the bend if you need the landing.",
+            "exactNormalizedWords": true,
+            "words": [
+              {
+                "word": " The",
+                "start": 0.0,
+                "end": 0.24
+              },
+              {
+                "word": " gate",
+                "start": 0.24,
+                "end": 0.5
+              },
+              {
+                "word": " is",
+                "start": 0.5,
+                "end": 0.84
+              },
+              {
+                "word": " mine.",
+                "start": 0.84,
+                "end": 1.06
+              },
+              {
+                "word": " The",
+                "start": 2.26,
+                "end": 2.3
+              },
+              {
+                "word": " weight",
+                "start": 2.3,
+                "end": 2.56
+              },
+              {
+                "word": " is",
+                "start": 2.56,
+                "end": 2.88
+              },
+              {
+                "word": " yours.",
+                "start": 2.88,
+                "end": 3.22
+              },
+              {
+                "word": " Call",
+                "start": 4.34,
+                "end": 4.5
+              },
+              {
+                "word": " down",
+                "start": 4.5,
+                "end": 4.86
+              },
+              {
+                "word": " before",
+                "start": 4.86,
+                "end": 5.12
+              },
+              {
+                "word": " the",
+                "start": 5.12,
+                "end": 5.36
+              },
+              {
+                "word": " bend",
+                "start": 5.36,
+                "end": 5.6
+              },
+              {
+                "word": " if",
+                "start": 5.6,
+                "end": 6.02
+              },
+              {
+                "word": " you",
+                "start": 6.02,
+                "end": 6.18
+              },
+              {
+                "word": " need",
+                "start": 6.18,
+                "end": 6.36
+              },
+              {
+                "word": " the",
+                "start": 6.36,
+                "end": 6.52
+              },
+              {
+                "word": " landing.",
+                "start": 6.52,
+                "end": 6.86
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-freight-craft-0707294020e3",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "text": "Put it down flat. The stamp is still the clerk's work.",
+            "path": "public/audio/voice-campaign-freight-craft-0707294020e3.mp3",
+            "sha256": "d450d0c227623fb70ef63913b81f7f5926a1193aeaf2f760b7fc37b42b2c17f3",
+            "transcription": "Put it down flat. The stamp is still the clerk's work.",
+            "exactNormalizedWords": true,
+            "words": [
+              {
+                "word": " Put",
+                "start": 0.0,
+                "end": 0.28
+              },
+              {
+                "word": " it",
+                "start": 0.28,
+                "end": 0.4
+              },
+              {
+                "word": " down",
+                "start": 0.4,
+                "end": 0.68
+              },
+              {
+                "word": " flat.",
+                "start": 0.68,
+                "end": 1.1
+              },
+              {
+                "word": " The",
+                "start": 2.22,
+                "end": 2.28
+              },
+              {
+                "word": " stamp",
+                "start": 2.28,
+                "end": 2.52
+              },
+              {
+                "word": " is",
+                "start": 2.52,
+                "end": 2.84
+              },
+              {
+                "word": " still",
+                "start": 2.84,
+                "end": 3.16
+              },
+              {
+                "word": " the",
+                "start": 3.16,
+                "end": 3.34
+              },
+              {
+                "word": " clerk's",
+                "start": 3.34,
+                "end": 3.76
+              },
+              {
+                "word": " work.",
+                "start": 3.76,
+                "end": 4.16
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-freight-craft-52ca52bbb14b",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "text": "You called down, and there was somewhere to put it. That's work I can do with you.",
+            "path": "public/audio/voice-campaign-freight-craft-52ca52bbb14b.mp3",
+            "sha256": "bc4d518f2d1321ec9d075a44d641918435b10d2c493e0227d64281a238682213",
+            "transcription": "You called down and there was somewhere to put it. That's work I can do with you.",
+            "exactNormalizedWords": true,
+            "words": [
+              {
+                "word": " You",
+                "start": 0.0,
+                "end": 0.22
+              },
+              {
+                "word": " called",
+                "start": 0.22,
+                "end": 0.42
+              },
+              {
+                "word": " down",
+                "start": 0.42,
+                "end": 0.84
+              },
+              {
+                "word": " and",
+                "start": 0.84,
+                "end": 1.26
+              },
+              {
+                "word": " there",
+                "start": 1.26,
+                "end": 1.4
+              },
+              {
+                "word": " was",
+                "start": 1.4,
+                "end": 1.52
+              },
+              {
+                "word": " somewhere",
+                "start": 1.52,
+                "end": 1.82
+              },
+              {
+                "word": " to",
+                "start": 1.82,
+                "end": 2.1
+              },
+              {
+                "word": " put",
+                "start": 2.1,
+                "end": 2.34
+              },
+              {
+                "word": " it.",
+                "start": 2.34,
+                "end": 2.44
+              },
+              {
+                "word": " That's",
+                "start": 3.32,
+                "end": 3.64
+              },
+              {
+                "word": " work",
+                "start": 3.64,
+                "end": 3.88
+              },
+              {
+                "word": " I",
+                "start": 3.88,
+                "end": 4.14
+              },
+              {
+                "word": " can",
+                "start": 4.14,
+                "end": 4.32
+              },
+              {
+                "word": " do",
+                "start": 4.32,
+                "end": 4.54
+              },
+              {
+                "word": " with",
+                "start": 4.54,
+                "end": 4.76
+              },
+              {
+                "word": " you.",
+                "start": 4.76,
+                "end": 5.0
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-freight-craft-5bfa06763c3c",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "text": "A no before the weight is in the air is a useful word. Keep it available.",
+            "path": "public/audio/voice-campaign-freight-craft-5bfa06763c3c.mp3",
+            "sha256": "22e2256b072fc32153911b5fb0b363d51e4e0bff63e54e6281a76cab7ca53e4d",
+            "transcription": "A no before the weight is in the air is a useful word. Keep it available.",
+            "exactNormalizedWords": true,
+            "words": [
+              {
+                "word": " A",
+                "start": 0.0,
+                "end": 0.18
+              },
+              {
+                "word": " no",
+                "start": 0.18,
+                "end": 0.36
+              },
+              {
+                "word": " before",
+                "start": 0.36,
+                "end": 0.72
+              },
+              {
+                "word": " the",
+                "start": 0.72,
+                "end": 0.9
+              },
+              {
+                "word": " weight",
+                "start": 0.9,
+                "end": 1.14
+              },
+              {
+                "word": " is",
+                "start": 1.14,
+                "end": 1.44
+              },
+              {
+                "word": " in",
+                "start": 1.44,
+                "end": 1.56
+              },
+              {
+                "word": " the",
+                "start": 1.56,
+                "end": 1.68
+              },
+              {
+                "word": " air",
+                "start": 1.68,
+                "end": 2.0
+              },
+              {
+                "word": " is",
+                "start": 2.0,
+                "end": 2.32
+              },
+              {
+                "word": " a",
+                "start": 2.32,
+                "end": 2.42
+              },
+              {
+                "word": " useful",
+                "start": 2.42,
+                "end": 2.68
+              },
+              {
+                "word": " word.",
+                "start": 2.68,
+                "end": 3.32
+              },
+              {
+                "word": " Keep",
+                "start": 4.16,
+                "end": 4.3
+              },
+              {
+                "word": " it",
+                "start": 4.3,
+                "end": 4.66
+              },
+              {
+                "word": " available.",
+                "start": 4.66,
+                "end": 5.04
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-freight-craft-4d3307b2d4d5",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "text": "I will hold the catch while you carry. Show me where the load can rest. I am not your second carrier.",
+            "path": "public/audio/voice-campaign-freight-craft-4d3307b2d4d5.mp3",
+            "sha256": "e89c77cd0dc516c8c4cf864878634f2462a538082dc328c7f2f9f6ffad1d73dc",
+            "transcription": "I will hold the catch while you carry. Show me where the load can rest. I am not your second carrier.",
+            "exactNormalizedWords": true,
+            "words": [
+              {
+                "word": " I",
+                "start": 0.0,
+                "end": 0.22
+              },
+              {
+                "word": " will",
+                "start": 0.22,
+                "end": 0.36
+              },
+              {
+                "word": " hold",
+                "start": 0.36,
+                "end": 0.64
+              },
+              {
+                "word": " the",
+                "start": 0.64,
+                "end": 0.84
+              },
+              {
+                "word": " catch",
+                "start": 0.84,
+                "end": 1.08
+              },
+              {
+                "word": " while",
+                "start": 1.08,
+                "end": 1.48
+              },
+              {
+                "word": " you",
+                "start": 1.48,
+                "end": 1.62
+              },
+              {
+                "word": " carry.",
+                "start": 1.62,
+                "end": 1.96
+              },
+              {
+                "word": " Show",
+                "start": 3.0,
+                "end": 3.06
+              },
+              {
+                "word": " me",
+                "start": 3.06,
+                "end": 3.26
+              },
+              {
+                "word": " where",
+                "start": 3.26,
+                "end": 3.44
+              },
+              {
+                "word": " the",
+                "start": 3.44,
+                "end": 3.54
+              },
+              {
+                "word": " load",
+                "start": 3.54,
+                "end": 3.8
+              },
+              {
+                "word": " can",
+                "start": 3.8,
+                "end": 4.1
+              },
+              {
+                "word": " rest.",
+                "start": 4.1,
+                "end": 4.4
+              },
+              {
+                "word": " I",
+                "start": 5.42,
+                "end": 5.54
+              },
+              {
+                "word": " am",
+                "start": 5.54,
+                "end": 5.68
+              },
+              {
+                "word": " not",
+                "start": 5.68,
+                "end": 5.9
+              },
+              {
+                "word": " your",
+                "start": 5.9,
+                "end": 6.18
+              },
+              {
+                "word": " second",
+                "start": 6.18,
+                "end": 6.48
+              },
+              {
+                "word": " carrier.",
+                "start": 6.48,
+                "end": 6.96
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-freight-craft-33cdf9e189ed",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "text": "Keep it under the hood. A stopped carry is not a lost parcel.",
+            "path": "public/audio/voice-campaign-freight-craft-33cdf9e189ed.mp3",
+            "sha256": "30ae06e5b5b5972cdb2287ffaeeb4080733158dbbb36428ec7124eca78dc9e5c",
+            "transcription": "Keep air under the hood. A stopped carry is not a lost parcel.",
+            "exactNormalizedWords": false,
+            "words": [
+              {
+                "word": " Keep",
+                "start": 0.0,
+                "end": 0.28
+              },
+              {
+                "word": " air",
+                "start": 0.28,
+                "end": 0.56
+              },
+              {
+                "word": " under",
+                "start": 0.56,
+                "end": 0.84
+              },
+              {
+                "word": " the",
+                "start": 0.84,
+                "end": 1.04
+              },
+              {
+                "word": " hood.",
+                "start": 1.04,
+                "end": 1.3
+              },
+              {
+                "word": " A",
+                "start": 2.46,
+                "end": 2.5
+              },
+              {
+                "word": " stopped",
+                "start": 2.5,
+                "end": 2.78
+              },
+              {
+                "word": " carry",
+                "start": 2.78,
+                "end": 3.2
+              },
+              {
+                "word": " is",
+                "start": 3.2,
+                "end": 3.52
+              },
+              {
+                "word": " not",
+                "start": 3.52,
+                "end": 3.72
+              },
+              {
+                "word": " a",
+                "start": 3.72,
+                "end": 3.84
+              },
+              {
+                "word": " lost",
+                "start": 3.84,
+                "end": 4.06
+              },
+              {
+                "word": " parcel.",
+                "start": 4.06,
+                "end": 4.46
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-freight-craft-65d1cb340235",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "text": "You stopped before the seal opened. How it went on from there belongs in the clinic ledger.",
+            "path": "public/audio/voice-campaign-freight-craft-65d1cb340235.mp3",
+            "sha256": "fa0b2bac4bc6d2e13a0cc19821fc15c32f4e05579835cff46896385600642072",
+            "transcription": "You stopped before the seal opened. How it went on from there belongs in the clinic ledger.",
+            "exactNormalizedWords": true,
+            "words": [
+              {
+                "word": " You",
+                "start": 0.0,
+                "end": 0.24
+              },
+              {
+                "word": " stopped",
+                "start": 0.24,
+                "end": 0.52
+              },
+              {
+                "word": " before",
+                "start": 0.52,
+                "end": 0.9
+              },
+              {
+                "word": " the",
+                "start": 0.9,
+                "end": 1.16
+              },
+              {
+                "word": " seal",
+                "start": 1.16,
+                "end": 1.36
+              },
+              {
+                "word": " opened.",
+                "start": 1.36,
+                "end": 1.92
+              },
+              {
+                "word": " How",
+                "start": 2.96,
+                "end": 3.0
+              },
+              {
+                "word": " it",
+                "start": 3.0,
+                "end": 3.14
+              },
+              {
+                "word": " went",
+                "start": 3.14,
+                "end": 3.24
+              },
+              {
+                "word": " on",
+                "start": 3.24,
+                "end": 3.44
+              },
+              {
+                "word": " from",
+                "start": 3.44,
+                "end": 3.68
+              },
+              {
+                "word": " there",
+                "start": 3.68,
+                "end": 3.82
+              },
+              {
+                "word": " belongs",
+                "start": 3.82,
+                "end": 4.12
+              },
+              {
+                "word": " in",
+                "start": 4.12,
+                "end": 4.7
+              },
+              {
+                "word": " the",
+                "start": 4.7,
+                "end": 4.8
+              },
+              {
+                "word": " clinic",
+                "start": 4.8,
+                "end": 4.98
+              },
+              {
+                "word": " ledger.",
+                "start": 4.98,
+                "end": 5.32
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-freight-craft-c643ecc39c94",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "text": "We never finished that carry. The rest belongs in the clinic ledger.",
+            "path": "public/audio/voice-campaign-freight-craft-c643ecc39c94.mp3",
+            "sha256": "ad83ca80d2df5be31508e36a7d316e1275bbbaccab349304d6253f98f46b95ba",
+            "transcription": "We never finished that carry. The rest belongs in the clinic ledger.",
+            "exactNormalizedWords": true,
+            "words": [
+              {
+                "word": " We",
+                "start": 0.0,
+                "end": 0.24
+              },
+              {
+                "word": " never",
+                "start": 0.24,
+                "end": 0.48
+              },
+              {
+                "word": " finished",
+                "start": 0.48,
+                "end": 0.96
+              },
+              {
+                "word": " that",
+                "start": 0.96,
+                "end": 1.24
+              },
+              {
+                "word": " carry.",
+                "start": 1.24,
+                "end": 1.56
+              },
+              {
+                "word": " The",
+                "start": 2.62,
+                "end": 2.68
+              },
+              {
+                "word": " rest",
+                "start": 2.68,
+                "end": 2.88
+              },
+              {
+                "word": " belongs",
+                "start": 2.88,
+                "end": 3.4
+              },
+              {
+                "word": " in",
+                "start": 3.4,
+                "end": 3.84
+              },
+              {
+                "word": " the",
+                "start": 3.84,
+                "end": 3.94
+              },
+              {
+                "word": " clinic",
+                "start": 3.94,
+                "end": 4.16
+              },
+              {
+                "word": " ledger.",
+                "start": 4.16,
+                "end": 4.54
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "stage": "final stopped-carry wording",
+      "provenance": {
+        "generated": "2026-10-29",
+        "disclosure": "Stock synthetic voices generated offline with Kokoro v1.0; no actor session or individual voice clone was commissioned. Only the fixed authored quotations below are rendered. No model or speech service ships in the game.",
+        "driver": {
+          "name": "kokoro-onnx",
+          "version": "0.6.1",
+          "license": "MIT",
+          "url": "https://github.com/thewh1teagle/kokoro-onnx",
+          "licenseFile": "qa/media/voice-sources/kokoro-onnx-LICENSE.txt"
+        },
+        "model": {
+          "name": "Kokoro-82M v1.0",
+          "license": "Apache-2.0",
+          "card": "https://huggingface.co/hexgrad/Kokoro-82M",
+          "licenseFile": "qa/media/voice-sources/Kokoro-LICENSE.txt",
+          "files": [
+            {
+              "name": "kokoro-v1.0.onnx",
+              "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.onnx",
+              "sha256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+              "bytes": 325505369
+            },
+            {
+              "name": "voices-v1.0.bin",
+              "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin",
+              "sha256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+              "bytes": 28214398
+            }
+          ]
+        },
+        "source": "scripts/generate-campaign-voices.py",
+        "processing": "Exact authored character words; existing cast identities; optional sentence pauses, 8ms phrase fades, normalized PCM peak 0.72 with 80ms edges; optional per-line two-pass EBU loudness matching with -2dBTP ceiling; 96kbps mono MP3 delivery. Original PCM and normalized PCM retained outside Git.",
+        "reviewStatus": "Technical signal and source review; stock synthetic dialogue. No commissioned actors or independent listening acceptance.",
+        "lines": [
+          {
+            "id": "voice-campaign-freight-craft-3215df9a9ef6",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "speed": 0.98,
+            "text": "Watch where the weight can stop. Not how quickly you can make it move.",
+            "loudnessLufs": -23.5,
+            "direction": "Established Asa identity; practical cooperation and personal boundary, no treatment or invented receipt. Complete exact words and natural ending.",
+            "segments": [
+              {
+                "text": "Watch where the weight can stop.",
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "Not how quickly you can make it move.",
+                "pauseAfter": 0
+              }
+            ],
+            "integratedLufs": -23.48,
+            "truePeakDbtp": -4.85,
+            "language": "en-us",
+            "path": "public/audio/voice-campaign-freight-craft-3215df9a9ef6.mp3",
+            "sourceFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-3215df9a9ef6.wav",
+            "sourceSha256": "acbb99774687567bfb1d9c56d789d388d17f061d1f887a78862f9774c065914c",
+            "pcmDeliveryFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-3215df9a9ef6-delivery.wav",
+            "pcmDeliverySha256": "8e527a6480d14126035ad5c26c68f52b1df27f4d1adedc9508c8ecbfd960314c",
+            "sha256": "9633e5fda24e725b16a764421c8299ea4e793553f5e8dcb7c6d3fe2d6d3c985f",
+            "bytes": 67436,
+            "sampleRate": 24000,
+            "channels": 1,
+            "durationSeconds": 5.527333333333333,
+            "peak": 0.5723567605018616,
+            "rms": 0.07056616246700287
+          },
+          {
+            "id": "voice-campaign-freight-craft-b57bd816cb58",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "speed": 0.98,
+            "text": "Use the support you actually have. A promise won't hold the bottom of this case.",
+            "loudnessLufs": -23.5,
+            "direction": "Established Asa identity; practical cooperation and personal boundary, no treatment or invented receipt. Complete exact words and natural ending.",
+            "segments": [
+              {
+                "text": "Use the support you actually have.",
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "A promise won't hold the bottom of this case.",
+                "pauseAfter": 0
+              }
+            ],
+            "integratedLufs": -23.5,
+            "truePeakDbtp": -4.8,
+            "language": "en-us",
+            "path": "public/audio/voice-campaign-freight-craft-b57bd816cb58.mp3",
+            "sourceFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-b57bd816cb58.wav",
+            "sourceSha256": "5c0f257386ed6d7635920b3095ac6f8b406df217adeb5a60d333371e151b25b1",
+            "pcmDeliveryFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-b57bd816cb58-delivery.wav",
+            "pcmDeliverySha256": "989284bca7180aca99805dccf53661cf051dc70775ae341e9f8ed4f7f9a32bcc",
+            "sha256": "edacf90cdbc265371f5b77fa7a3920786df1cf4a4cde2c03714a00e388521601",
+            "bytes": 72908,
+            "sampleRate": 24000,
+            "channels": 1,
+            "durationSeconds": 5.992,
+            "peak": 0.569374680519104,
+            "rms": 0.06919966638088226
+          },
+          {
+            "id": "voice-campaign-freight-craft-f609e901e947",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "speed": 0.98,
+            "text": "The gate is mine. The weight is yours. Call down before the bend if you need the landing.",
+            "loudnessLufs": -23.5,
+            "direction": "Established Asa identity; practical cooperation and personal boundary, no treatment or invented receipt. Complete exact words and natural ending.",
+            "segments": [
+              {
+                "text": "The gate is mine.",
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "The weight is yours.",
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "Call down before the bend if you need the landing.",
+                "pauseAfter": 0
+              }
+            ],
+            "integratedLufs": -23.49,
+            "truePeakDbtp": -4.64,
+            "language": "en-us",
+            "path": "public/audio/voice-campaign-freight-craft-f609e901e947.mp3",
+            "sourceFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-f609e901e947.wav",
+            "sourceSha256": "3e33f98d877d26755018a9a12afdd3e438d5f25c284676076ed58ff1ab8e3cf2",
+            "pcmDeliveryFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-f609e901e947-delivery.wav",
+            "pcmDeliverySha256": "26615881040fa5ed08499a9f8ea4c8196d82c5de545a435bbb054a18560c524f",
+            "sha256": "92c843d51163d22dbd2700318e37ad670e0d6bfd52b7799e7510405e34d01560",
+            "bytes": 93356,
+            "sampleRate": 24000,
+            "channels": 1,
+            "durationSeconds": 7.696625,
+            "peak": 0.5850855708122253,
+            "rms": 0.07470623403787613
+          },
+          {
+            "id": "voice-campaign-freight-craft-0707294020e3",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "speed": 0.98,
+            "text": "Put it down flat. The stamp is still the clerk's work.",
+            "loudnessLufs": -23.5,
+            "direction": "Established Asa identity; practical cooperation and personal boundary, no treatment or invented receipt. Complete exact words and natural ending.",
+            "segments": [
+              {
+                "text": "Put it down flat.",
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "The stamp is still the clerk's work.",
+                "pauseAfter": 0
+              }
+            ],
+            "integratedLufs": -23.5,
+            "truePeakDbtp": -4.22,
+            "language": "en-us",
+            "path": "public/audio/voice-campaign-freight-craft-0707294020e3.mp3",
+            "sourceFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-0707294020e3.wav",
+            "sourceSha256": "828c7ee102552d4bcccb53292e25f8c71fcddfb92e43894068f59c506de47827",
+            "pcmDeliveryFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-0707294020e3-delivery.wav",
+            "pcmDeliverySha256": "7113448068e48cd1d04de7f3789ca90c36594e4461aaea99aeb4154e00bd6f00",
+            "sha256": "d450d0c227623fb70ef63913b81f7f5926a1193aeaf2f760b7fc37b42b2c17f3",
+            "bytes": 59084,
+            "sampleRate": 24000,
+            "channels": 1,
+            "durationSeconds": 4.846,
+            "peak": 0.6113645434379578,
+            "rms": 0.0687691792845726
+          },
+          {
+            "id": "voice-campaign-freight-craft-52ca52bbb14b",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "speed": 0.98,
+            "text": "You called down, and there was somewhere to put it. That's work I can do with you.",
+            "loudnessLufs": -23.5,
+            "direction": "Established Asa identity; practical cooperation and personal boundary, no treatment or invented receipt. Complete exact words and natural ending.",
+            "segments": [
+              {
+                "text": "You called down, and there was somewhere to put it.",
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "That's work I can do with you.",
+                "pauseAfter": 0
+              }
+            ],
+            "integratedLufs": -23.51,
+            "truePeakDbtp": -3.67,
+            "language": "en-us",
+            "path": "public/audio/voice-campaign-freight-craft-52ca52bbb14b.mp3",
+            "sourceFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-52ca52bbb14b.wav",
+            "sourceSha256": "a21a038af6b8431e9d8b3a0e9ef547ba57f8088ca4b8a6df6deea806fdc2bff3",
+            "pcmDeliveryFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-52ca52bbb14b-delivery.wav",
+            "pcmDeliverySha256": "1517d0d9f03c011e7b4b561f286a3fe347f1854d3328b8d01846f173a381992c",
+            "sha256": "bc4d518f2d1321ec9d075a44d641918435b10d2c493e0227d64281a238682213",
+            "bytes": 70028,
+            "sampleRate": 24000,
+            "channels": 1,
+            "durationSeconds": 5.753333333333333,
+            "peak": 0.647798478603363,
+            "rms": 0.06810151785612106
+          },
+          {
+            "id": "voice-campaign-freight-craft-5bfa06763c3c",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "speed": 0.98,
+            "text": "A no before the weight is in the air is a useful word. Keep it available.",
+            "loudnessLufs": -23.5,
+            "direction": "Established Asa identity; practical cooperation and personal boundary, no treatment or invented receipt. Complete exact words and natural ending.",
+            "segments": [
+              {
+                "text": "A no before the weight is in the air is a useful word.",
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "Keep it available.",
+                "pauseAfter": 0
+              }
+            ],
+            "integratedLufs": -23.49,
+            "truePeakDbtp": -4.25,
+            "language": "en-us",
+            "path": "public/audio/voice-campaign-freight-craft-5bfa06763c3c.mp3",
+            "sourceFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-5bfa06763c3c.wav",
+            "sourceSha256": "895dcd0048512b789f7029be636469966d604325842fb1bad7d0eaf74dea9122",
+            "pcmDeliveryFile": "/workspace/generated_audio/freight-craft/first-pass/voice-campaign-freight-craft-5bfa06763c3c-delivery.wav",
+            "pcmDeliverySha256": "9b7ad1ce735d0c06d244408d2fc985866eabf9a32e0dceaa11db717ddde4187f",
+            "sha256": "22e2256b072fc32153911b5fb0b363d51e4e0bff63e54e6281a76cab7ca53e4d",
+            "bytes": 74348,
+            "sampleRate": 24000,
+            "channels": 1,
+            "durationSeconds": 6.114625,
+            "peak": 0.6117959022521973,
+            "rms": 0.06797082722187042
+          },
+          {
+            "id": "voice-campaign-freight-craft-4d3307b2d4d5",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "speed": 0.98,
+            "text": "I will hold the catch while you carry. Show me where the load can rest. I am not your second carrier.",
+            "loudnessLufs": -23.5,
+            "direction": "Established Asa identity; practical cooperation and personal boundary, no treatment or invented receipt. Complete exact words and natural ending.",
+            "segments": [
+              {
+                "text": "I will hold the catch while you carry.",
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "Show me where the load can rest.",
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "I am not your second carrier.",
+                "pauseAfter": 0
+              }
+            ],
+            "integratedLufs": -23.5,
+            "truePeakDbtp": -5.69,
+            "language": "en-us",
+            "path": "public/audio/voice-campaign-freight-craft-4d3307b2d4d5.mp3",
+            "sourceFile": "/workspace/generated_audio/freight-craft/second-pass/voice-campaign-freight-craft-4d3307b2d4d5.wav",
+            "sourceSha256": "d27917a5d4bb5c827ceb9b641042ebbe405678b05f3b80bda86c359818b71a72",
+            "pcmDeliveryFile": "/workspace/generated_audio/freight-craft/second-pass/voice-campaign-freight-craft-4d3307b2d4d5-delivery.wav",
+            "pcmDeliverySha256": "06dff840c5a3f044c85b6014508a5b0a3fe397a9fec1e25126bc01fb4da665bd",
+            "sha256": "e89c77cd0dc516c8c4cf864878634f2462a538082dc328c7f2f9f6ffad1d73dc",
+            "bytes": 96812,
+            "sampleRate": 24000,
+            "channels": 1,
+            "durationSeconds": 7.9699583333333335,
+            "peak": 0.5183880925178528,
+            "rms": 0.06987027823925018
+          },
+          {
+            "id": "voice-campaign-freight-craft-65d1cb340235",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "speed": 0.98,
+            "text": "You stopped before the seal opened. How it went on from there belongs in the clinic ledger.",
+            "loudnessLufs": -23.5,
+            "direction": "Established Asa identity; practical cooperation and personal boundary, no treatment or invented receipt. Complete exact words and natural ending.",
+            "segments": [
+              {
+                "text": "You stopped before the seal opened.",
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "How it went on from there belongs in the clinic ledger.",
+                "pauseAfter": 0
+              }
+            ],
+            "integratedLufs": -23.5,
+            "truePeakDbtp": -2.31,
+            "language": "en-us",
+            "path": "public/audio/voice-campaign-freight-craft-65d1cb340235.mp3",
+            "sourceFile": "/workspace/generated_audio/freight-craft/second-pass/voice-campaign-freight-craft-65d1cb340235.wav",
+            "sourceSha256": "42b0417927de566dd002ffb3215b1ca35ac0b9c3ba5419cfaa36ded5936aee5f",
+            "pcmDeliveryFile": "/workspace/generated_audio/freight-craft/second-pass/voice-campaign-freight-craft-65d1cb340235-delivery.wav",
+            "pcmDeliverySha256": "e8fd6055356cb27a277f94c7cb7a13919a54b92ce205ec6c69028767ea21e858",
+            "sha256": "fa0b2bac4bc6d2e13a0cc19821fc15c32f4e05579835cff46896385600642072",
+            "bytes": 75788,
+            "sampleRate": 24000,
+            "channels": 1,
+            "durationSeconds": 6.239333333333334,
+            "peak": 0.7664388418197632,
+            "rms": 0.07610175758600235
+          },
+          {
+            "id": "voice-campaign-freight-craft-c643ecc39c94",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "speed": 0.98,
+            "text": "We never finished that carry. The rest belongs in the clinic ledger.",
+            "loudnessLufs": -23.5,
+            "direction": "Established Asa identity; practical cooperation and personal boundary, no treatment or invented receipt. Complete exact words and natural ending.",
+            "segments": [
+              {
+                "text": "We never finished that carry.",
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "The rest belongs in the clinic ledger.",
+                "pauseAfter": 0
+              }
+            ],
+            "integratedLufs": -23.5,
+            "truePeakDbtp": -3.04,
+            "language": "en-us",
+            "path": "public/audio/voice-campaign-freight-craft-c643ecc39c94.mp3",
+            "sourceFile": "/workspace/generated_audio/freight-craft/second-pass/voice-campaign-freight-craft-c643ecc39c94.wav",
+            "sourceSha256": "412335680707ba2232a3de23962cfa0065cf4fb3bcb98cd588911b335342f0f7",
+            "pcmDeliveryFile": "/workspace/generated_audio/freight-craft/second-pass/voice-campaign-freight-craft-c643ecc39c94-delivery.wav",
+            "pcmDeliverySha256": "6b29a047158fb0828b3ac1a11e0ebe5b01580c3319c517014899a4723d5d5ab4",
+            "sha256": "ad83ca80d2df5be31508e36a7d316e1275bbbaccab349304d6253f98f46b95ba",
+            "bytes": 66284,
+            "sampleRate": 24000,
+            "channels": 1,
+            "durationSeconds": 5.435958333333334,
+            "peak": 0.7048048973083496,
+            "rms": 0.07039830833673477
+          },
+          {
+            "id": "voice-campaign-freight-craft-28a71316e1ad",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "speed": 0.98,
+            "text": "The case stays under the hood. A stopped carry is not a lost parcel.",
+            "loudnessLufs": -23.5,
+            "direction": "Established Asa identity; practical cooperation and personal boundary, no treatment or invented receipt. Complete exact words and natural ending.",
+            "segments": [
+              {
+                "text": "The case stays under the hood.",
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "A stopped carry is not a lost parcel.",
+                "pauseAfter": 0
+              }
+            ],
+            "integratedLufs": -23.5,
+            "truePeakDbtp": -4.04,
+            "language": "en-us",
+            "path": "public/audio/voice-campaign-freight-craft-28a71316e1ad.mp3",
+            "sourceFile": "/workspace/generated_audio/freight-craft/third-pass/voice-campaign-freight-craft-28a71316e1ad.wav",
+            "sourceSha256": "eed04eb0de7b80f2e607f325dd192cd2e962c633f7536168a71ad5aff5a42dca",
+            "pcmDeliveryFile": "/workspace/generated_audio/freight-craft/third-pass/voice-campaign-freight-craft-28a71316e1ad-delivery.wav",
+            "pcmDeliverySha256": "72f330e73061e4af87022b9b02e881567ebace0fc20f960a4dad133cdc17f8f8",
+            "sha256": "4d0bcd07ca39db7bd437996efe37481ca2122cf4c2b0d5bc069a6a2bdb99e28e",
+            "bytes": 68300,
+            "sampleRate": 24000,
+            "channels": 1,
+            "durationSeconds": 5.599333333333333,
+            "peak": 0.6282724738121033,
+            "rms": 0.07039052248001099
+          }
+        ]
+      },
+      "transcripts": {
+        "method": "Unprompted base.en CPU int8 ASR; no authored prompt; punctuation/case/apostrophe normalization only. Not independent listening or expressive acceptance.",
+        "model": "Systran/faster-whisper-base.en",
+        "modelFiles": [
+          {
+            "name": "models--Systran--faster-whisper-base.en/snapshots/3d3d5dee26484f91867d81cb899cfcf72b96be6c/config.json",
+            "sha256": "f3bc3821e9fc76a27bae538e11ae5b677dcdd352b4600429ce7951d398569aeb"
+          },
+          {
+            "name": "models--Systran--faster-whisper-base.en/snapshots/3d3d5dee26484f91867d81cb899cfcf72b96be6c/model.bin",
+            "sha256": "2a166925539a16005f14ff328359f9b9adb9dc4fb631bb3b227526862e93e2ef"
+          },
+          {
+            "name": "models--Systran--faster-whisper-base.en/snapshots/3d3d5dee26484f91867d81cb899cfcf72b96be6c/tokenizer.json",
+            "sha256": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df"
+          }
+        ],
+        "lines": [
+          {
+            "id": "voice-campaign-freight-craft-3215df9a9ef6",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "text": "Watch where the weight can stop. Not how quickly you can make it move.",
+            "path": "public/audio/voice-campaign-freight-craft-3215df9a9ef6.mp3",
+            "sha256": "9633e5fda24e725b16a764421c8299ea4e793553f5e8dcb7c6d3fe2d6d3c985f",
+            "transcription": "Watch where the weight can stop, not how quickly you can make it move.",
+            "exactNormalizedWords": true,
+            "words": [
+              {
+                "word": " Watch",
+                "start": 0.0,
+                "end": 0.4
+              },
+              {
+                "word": " where",
+                "start": 0.4,
+                "end": 0.66
+              },
+              {
+                "word": " the",
+                "start": 0.66,
+                "end": 0.76
+              },
+              {
+                "word": " weight",
+                "start": 0.76,
+                "end": 1.0
+              },
+              {
+                "word": " can",
+                "start": 1.0,
+                "end": 1.24
+              },
+              {
+                "word": " stop,",
+                "start": 1.24,
+                "end": 1.66
+              },
+              {
+                "word": " not",
+                "start": 2.54,
+                "end": 2.82
+              },
+              {
+                "word": " how",
+                "start": 2.82,
+                "end": 3.06
+              },
+              {
+                "word": " quickly",
+                "start": 3.06,
+                "end": 3.42
+              },
+              {
+                "word": " you",
+                "start": 3.42,
+                "end": 3.82
+              },
+              {
+                "word": " can",
+                "start": 3.82,
+                "end": 4.0
+              },
+              {
+                "word": " make",
+                "start": 4.0,
+                "end": 4.22
+              },
+              {
+                "word": " it",
+                "start": 4.22,
+                "end": 4.4
+              },
+              {
+                "word": " move.",
+                "start": 4.4,
+                "end": 4.7
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-freight-craft-b57bd816cb58",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "text": "Use the support you actually have. A promise won't hold the bottom of this case.",
+            "path": "public/audio/voice-campaign-freight-craft-b57bd816cb58.mp3",
+            "sha256": "edacf90cdbc265371f5b77fa7a3920786df1cf4a4cde2c03714a00e388521601",
+            "transcription": "Use the support you actually have. A promise won't hold the bottom of this case.",
+            "exactNormalizedWords": true,
+            "words": [
+              {
+                "word": " Use",
+                "start": 0.0,
+                "end": 0.32
+              },
+              {
+                "word": " the",
+                "start": 0.32,
+                "end": 0.5
+              },
+              {
+                "word": " support",
+                "start": 0.5,
+                "end": 0.78
+              },
+              {
+                "word": " you",
+                "start": 0.78,
+                "end": 1.12
+              },
+              {
+                "word": " actually",
+                "start": 1.12,
+                "end": 1.48
+              },
+              {
+                "word": " have.",
+                "start": 1.48,
+                "end": 1.92
+              },
+              {
+                "word": " A",
+                "start": 2.88,
+                "end": 2.92
+              },
+              {
+                "word": " promise",
+                "start": 2.92,
+                "end": 3.36
+              },
+              {
+                "word": " won't",
+                "start": 3.36,
+                "end": 3.76
+              },
+              {
+                "word": " hold",
+                "start": 3.76,
+                "end": 4.02
+              },
+              {
+                "word": " the",
+                "start": 4.02,
+                "end": 4.18
+              },
+              {
+                "word": " bottom",
+                "start": 4.18,
+                "end": 4.46
+              },
+              {
+                "word": " of",
+                "start": 4.46,
+                "end": 4.7
+              },
+              {
+                "word": " this",
+                "start": 4.7,
+                "end": 4.84
+              },
+              {
+                "word": " case.",
+                "start": 4.84,
+                "end": 5.16
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-freight-craft-f609e901e947",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "text": "The gate is mine. The weight is yours. Call down before the bend if you need the landing.",
+            "path": "public/audio/voice-campaign-freight-craft-f609e901e947.mp3",
+            "sha256": "92c843d51163d22dbd2700318e37ad670e0d6bfd52b7799e7510405e34d01560",
+            "transcription": "The gate is mine. The weight is yours. Call down before the bend if you need the landing.",
+            "exactNormalizedWords": true,
+            "words": [
+              {
+                "word": " The",
+                "start": 0.0,
+                "end": 0.24
+              },
+              {
+                "word": " gate",
+                "start": 0.24,
+                "end": 0.5
+              },
+              {
+                "word": " is",
+                "start": 0.5,
+                "end": 0.84
+              },
+              {
+                "word": " mine.",
+                "start": 0.84,
+                "end": 1.06
+              },
+              {
+                "word": " The",
+                "start": 2.26,
+                "end": 2.3
+              },
+              {
+                "word": " weight",
+                "start": 2.3,
+                "end": 2.56
+              },
+              {
+                "word": " is",
+                "start": 2.56,
+                "end": 2.88
+              },
+              {
+                "word": " yours.",
+                "start": 2.88,
+                "end": 3.22
+              },
+              {
+                "word": " Call",
+                "start": 4.34,
+                "end": 4.5
+              },
+              {
+                "word": " down",
+                "start": 4.5,
+                "end": 4.86
+              },
+              {
+                "word": " before",
+                "start": 4.86,
+                "end": 5.12
+              },
+              {
+                "word": " the",
+                "start": 5.12,
+                "end": 5.36
+              },
+              {
+                "word": " bend",
+                "start": 5.36,
+                "end": 5.6
+              },
+              {
+                "word": " if",
+                "start": 5.6,
+                "end": 6.02
+              },
+              {
+                "word": " you",
+                "start": 6.02,
+                "end": 6.18
+              },
+              {
+                "word": " need",
+                "start": 6.18,
+                "end": 6.36
+              },
+              {
+                "word": " the",
+                "start": 6.36,
+                "end": 6.52
+              },
+              {
+                "word": " landing.",
+                "start": 6.52,
+                "end": 6.86
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-freight-craft-0707294020e3",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "text": "Put it down flat. The stamp is still the clerk's work.",
+            "path": "public/audio/voice-campaign-freight-craft-0707294020e3.mp3",
+            "sha256": "d450d0c227623fb70ef63913b81f7f5926a1193aeaf2f760b7fc37b42b2c17f3",
+            "transcription": "Put it down flat. The stamp is still the clerk's work.",
+            "exactNormalizedWords": true,
+            "words": [
+              {
+                "word": " Put",
+                "start": 0.0,
+                "end": 0.28
+              },
+              {
+                "word": " it",
+                "start": 0.28,
+                "end": 0.4
+              },
+              {
+                "word": " down",
+                "start": 0.4,
+                "end": 0.68
+              },
+              {
+                "word": " flat.",
+                "start": 0.68,
+                "end": 1.1
+              },
+              {
+                "word": " The",
+                "start": 2.22,
+                "end": 2.28
+              },
+              {
+                "word": " stamp",
+                "start": 2.28,
+                "end": 2.52
+              },
+              {
+                "word": " is",
+                "start": 2.52,
+                "end": 2.84
+              },
+              {
+                "word": " still",
+                "start": 2.84,
+                "end": 3.16
+              },
+              {
+                "word": " the",
+                "start": 3.16,
+                "end": 3.34
+              },
+              {
+                "word": " clerk's",
+                "start": 3.34,
+                "end": 3.76
+              },
+              {
+                "word": " work.",
+                "start": 3.76,
+                "end": 4.16
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-freight-craft-52ca52bbb14b",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "text": "You called down, and there was somewhere to put it. That's work I can do with you.",
+            "path": "public/audio/voice-campaign-freight-craft-52ca52bbb14b.mp3",
+            "sha256": "bc4d518f2d1321ec9d075a44d641918435b10d2c493e0227d64281a238682213",
+            "transcription": "You called down and there was somewhere to put it. That's work I can do with you.",
+            "exactNormalizedWords": true,
+            "words": [
+              {
+                "word": " You",
+                "start": 0.0,
+                "end": 0.22
+              },
+              {
+                "word": " called",
+                "start": 0.22,
+                "end": 0.42
+              },
+              {
+                "word": " down",
+                "start": 0.42,
+                "end": 0.84
+              },
+              {
+                "word": " and",
+                "start": 0.84,
+                "end": 1.26
+              },
+              {
+                "word": " there",
+                "start": 1.26,
+                "end": 1.4
+              },
+              {
+                "word": " was",
+                "start": 1.4,
+                "end": 1.52
+              },
+              {
+                "word": " somewhere",
+                "start": 1.52,
+                "end": 1.82
+              },
+              {
+                "word": " to",
+                "start": 1.82,
+                "end": 2.1
+              },
+              {
+                "word": " put",
+                "start": 2.1,
+                "end": 2.34
+              },
+              {
+                "word": " it.",
+                "start": 2.34,
+                "end": 2.44
+              },
+              {
+                "word": " That's",
+                "start": 3.32,
+                "end": 3.64
+              },
+              {
+                "word": " work",
+                "start": 3.64,
+                "end": 3.88
+              },
+              {
+                "word": " I",
+                "start": 3.88,
+                "end": 4.14
+              },
+              {
+                "word": " can",
+                "start": 4.14,
+                "end": 4.32
+              },
+              {
+                "word": " do",
+                "start": 4.32,
+                "end": 4.54
+              },
+              {
+                "word": " with",
+                "start": 4.54,
+                "end": 4.76
+              },
+              {
+                "word": " you.",
+                "start": 4.76,
+                "end": 5.0
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-freight-craft-5bfa06763c3c",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "text": "A no before the weight is in the air is a useful word. Keep it available.",
+            "path": "public/audio/voice-campaign-freight-craft-5bfa06763c3c.mp3",
+            "sha256": "22e2256b072fc32153911b5fb0b363d51e4e0bff63e54e6281a76cab7ca53e4d",
+            "transcription": "A no before the weight is in the air is a useful word. Keep it available.",
+            "exactNormalizedWords": true,
+            "words": [
+              {
+                "word": " A",
+                "start": 0.0,
+                "end": 0.18
+              },
+              {
+                "word": " no",
+                "start": 0.18,
+                "end": 0.36
+              },
+              {
+                "word": " before",
+                "start": 0.36,
+                "end": 0.72
+              },
+              {
+                "word": " the",
+                "start": 0.72,
+                "end": 0.9
+              },
+              {
+                "word": " weight",
+                "start": 0.9,
+                "end": 1.14
+              },
+              {
+                "word": " is",
+                "start": 1.14,
+                "end": 1.44
+              },
+              {
+                "word": " in",
+                "start": 1.44,
+                "end": 1.56
+              },
+              {
+                "word": " the",
+                "start": 1.56,
+                "end": 1.68
+              },
+              {
+                "word": " air",
+                "start": 1.68,
+                "end": 2.0
+              },
+              {
+                "word": " is",
+                "start": 2.0,
+                "end": 2.32
+              },
+              {
+                "word": " a",
+                "start": 2.32,
+                "end": 2.42
+              },
+              {
+                "word": " useful",
+                "start": 2.42,
+                "end": 2.68
+              },
+              {
+                "word": " word.",
+                "start": 2.68,
+                "end": 3.32
+              },
+              {
+                "word": " Keep",
+                "start": 4.16,
+                "end": 4.3
+              },
+              {
+                "word": " it",
+                "start": 4.3,
+                "end": 4.66
+              },
+              {
+                "word": " available.",
+                "start": 4.66,
+                "end": 5.04
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-freight-craft-4d3307b2d4d5",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "text": "I will hold the catch while you carry. Show me where the load can rest. I am not your second carrier.",
+            "path": "public/audio/voice-campaign-freight-craft-4d3307b2d4d5.mp3",
+            "sha256": "e89c77cd0dc516c8c4cf864878634f2462a538082dc328c7f2f9f6ffad1d73dc",
+            "transcription": "I will hold the catch while you carry. Show me where the load can rest. I am not your second carrier.",
+            "exactNormalizedWords": true,
+            "words": [
+              {
+                "word": " I",
+                "start": 0.0,
+                "end": 0.22
+              },
+              {
+                "word": " will",
+                "start": 0.22,
+                "end": 0.36
+              },
+              {
+                "word": " hold",
+                "start": 0.36,
+                "end": 0.64
+              },
+              {
+                "word": " the",
+                "start": 0.64,
+                "end": 0.84
+              },
+              {
+                "word": " catch",
+                "start": 0.84,
+                "end": 1.08
+              },
+              {
+                "word": " while",
+                "start": 1.08,
+                "end": 1.48
+              },
+              {
+                "word": " you",
+                "start": 1.48,
+                "end": 1.62
+              },
+              {
+                "word": " carry.",
+                "start": 1.62,
+                "end": 1.96
+              },
+              {
+                "word": " Show",
+                "start": 3.0,
+                "end": 3.06
+              },
+              {
+                "word": " me",
+                "start": 3.06,
+                "end": 3.26
+              },
+              {
+                "word": " where",
+                "start": 3.26,
+                "end": 3.44
+              },
+              {
+                "word": " the",
+                "start": 3.44,
+                "end": 3.54
+              },
+              {
+                "word": " load",
+                "start": 3.54,
+                "end": 3.8
+              },
+              {
+                "word": " can",
+                "start": 3.8,
+                "end": 4.1
+              },
+              {
+                "word": " rest.",
+                "start": 4.1,
+                "end": 4.4
+              },
+              {
+                "word": " I",
+                "start": 5.42,
+                "end": 5.54
+              },
+              {
+                "word": " am",
+                "start": 5.54,
+                "end": 5.68
+              },
+              {
+                "word": " not",
+                "start": 5.68,
+                "end": 5.9
+              },
+              {
+                "word": " your",
+                "start": 5.9,
+                "end": 6.18
+              },
+              {
+                "word": " second",
+                "start": 6.18,
+                "end": 6.48
+              },
+              {
+                "word": " carrier.",
+                "start": 6.48,
+                "end": 6.96
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-freight-craft-65d1cb340235",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "text": "You stopped before the seal opened. How it went on from there belongs in the clinic ledger.",
+            "path": "public/audio/voice-campaign-freight-craft-65d1cb340235.mp3",
+            "sha256": "fa0b2bac4bc6d2e13a0cc19821fc15c32f4e05579835cff46896385600642072",
+            "transcription": "You stopped before the seal opened. How it went on from there belongs in the clinic ledger.",
+            "exactNormalizedWords": true,
+            "words": [
+              {
+                "word": " You",
+                "start": 0.0,
+                "end": 0.24
+              },
+              {
+                "word": " stopped",
+                "start": 0.24,
+                "end": 0.52
+              },
+              {
+                "word": " before",
+                "start": 0.52,
+                "end": 0.9
+              },
+              {
+                "word": " the",
+                "start": 0.9,
+                "end": 1.16
+              },
+              {
+                "word": " seal",
+                "start": 1.16,
+                "end": 1.36
+              },
+              {
+                "word": " opened.",
+                "start": 1.36,
+                "end": 1.92
+              },
+              {
+                "word": " How",
+                "start": 2.96,
+                "end": 3.0
+              },
+              {
+                "word": " it",
+                "start": 3.0,
+                "end": 3.14
+              },
+              {
+                "word": " went",
+                "start": 3.14,
+                "end": 3.24
+              },
+              {
+                "word": " on",
+                "start": 3.24,
+                "end": 3.44
+              },
+              {
+                "word": " from",
+                "start": 3.44,
+                "end": 3.68
+              },
+              {
+                "word": " there",
+                "start": 3.68,
+                "end": 3.82
+              },
+              {
+                "word": " belongs",
+                "start": 3.82,
+                "end": 4.12
+              },
+              {
+                "word": " in",
+                "start": 4.12,
+                "end": 4.7
+              },
+              {
+                "word": " the",
+                "start": 4.7,
+                "end": 4.8
+              },
+              {
+                "word": " clinic",
+                "start": 4.8,
+                "end": 4.98
+              },
+              {
+                "word": " ledger.",
+                "start": 4.98,
+                "end": 5.32
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-freight-craft-c643ecc39c94",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "text": "We never finished that carry. The rest belongs in the clinic ledger.",
+            "path": "public/audio/voice-campaign-freight-craft-c643ecc39c94.mp3",
+            "sha256": "ad83ca80d2df5be31508e36a7d316e1275bbbaccab349304d6253f98f46b95ba",
+            "transcription": "We never finished that carry. The rest belongs in the clinic ledger.",
+            "exactNormalizedWords": true,
+            "words": [
+              {
+                "word": " We",
+                "start": 0.0,
+                "end": 0.24
+              },
+              {
+                "word": " never",
+                "start": 0.24,
+                "end": 0.48
+              },
+              {
+                "word": " finished",
+                "start": 0.48,
+                "end": 0.96
+              },
+              {
+                "word": " that",
+                "start": 0.96,
+                "end": 1.24
+              },
+              {
+                "word": " carry.",
+                "start": 1.24,
+                "end": 1.56
+              },
+              {
+                "word": " The",
+                "start": 2.62,
+                "end": 2.68
+              },
+              {
+                "word": " rest",
+                "start": 2.68,
+                "end": 2.88
+              },
+              {
+                "word": " belongs",
+                "start": 2.88,
+                "end": 3.4
+              },
+              {
+                "word": " in",
+                "start": 3.4,
+                "end": 3.84
+              },
+              {
+                "word": " the",
+                "start": 3.84,
+                "end": 3.94
+              },
+              {
+                "word": " clinic",
+                "start": 3.94,
+                "end": 4.16
+              },
+              {
+                "word": " ledger.",
+                "start": 4.16,
+                "end": 4.54
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-freight-craft-28a71316e1ad",
+            "speaker": "Asa",
+            "voice": "af_alloy",
+            "text": "The case stays under the hood. A stopped carry is not a lost parcel.",
+            "path": "public/audio/voice-campaign-freight-craft-28a71316e1ad.mp3",
+            "sha256": "4d0bcd07ca39db7bd437996efe37481ca2122cf4c2b0d5bc069a6a2bdb99e28e",
+            "transcription": "The case stays under the hood. A stopped carry is not a lost parcel.",
+            "exactNormalizedWords": true,
+            "words": [
+              {
+                "word": " The",
+                "start": 0.0,
+                "end": 0.18
+              },
+              {
+                "word": " case",
+                "start": 0.18,
+                "end": 0.4
+              },
+              {
+                "word": " stays",
+                "start": 0.4,
+                "end": 0.8
+              },
+              {
+                "word": " under",
+                "start": 0.8,
+                "end": 1.22
+              },
+              {
+                "word": " the",
+                "start": 1.22,
+                "end": 1.42
+              },
+              {
+                "word": " hood.",
+                "start": 1.42,
+                "end": 1.68
+              },
+              {
+                "word": " A",
+                "start": 2.58,
+                "end": 2.66
+              },
+              {
+                "word": " stopped",
+                "start": 2.66,
+                "end": 2.92
+              },
+              {
+                "word": " carry",
+                "start": 2.92,
+                "end": 3.38
+              },
+              {
+                "word": " is",
+                "start": 3.38,
+                "end": 3.68
+              },
+              {
+                "word": " not",
+                "start": 3.68,
+                "end": 3.86
+              },
+              {
+                "word": " a",
+                "start": 3.86,
+                "end": 4.0
+              },
+              {
+                "word": " lost",
+                "start": 4.0,
+                "end": 4.22
+              },
+              {
+                "word": " parcel.",
+                "start": 4.22,
+                "end": 4.68
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "finalExactMatches": 10,
+  "rejectedDrafts": "Initial gates/weights plurals, Lave, and stockbook boundaries; second Keep air. Authored unpublished wording was revised, never normalized into a false match. The other six initial deliveries remain byte-identical."
+}

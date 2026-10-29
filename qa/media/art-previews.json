@@ -86,7 +86,8 @@
     "/art/edda-listening-wide.jpg": "/art/previews/edda-listening-wide.jpg",
     "/art/kerr-listening-wide.jpg": "/art/previews/kerr-listening-wide.jpg",
     "/art/archive-question-detail.jpg": "/art/previews/archive-question-detail.jpg",
-    "/art/stall-quiet-detail.jpg": "/art/previews/stall-quiet-detail.jpg"
+    "/art/stall-quiet-detail.jpg": "/art/previews/stall-quiet-detail.jpg",
+    "/art/freight-ramp.jpg": "/art/previews/freight-ramp.jpg"
   },
   "files": [
     {
@@ -862,6 +863,15 @@
       "sha256": "3aa27441f8c6f773f9d594ea6188a9bb3e2b0794309bd234e5dcb7438683fe1c",
       "source": "public/art/stall-quiet-detail.jpg",
       "sourceSha256": "1e98057d1122f09c519fd21b34df8481c1e65d994b387a14aa169dc86e12770a"
+    },
+    {
+      "path": "public/art/previews/freight-ramp.jpg",
+      "width": 96,
+      "height": 64,
+      "bytes": 3281,
+      "sha256": "4480528b496c9b356dc48c35fe977677c8e4b4d52186390a57c711d224060015",
+      "source": "public/art/freight-ramp.jpg",
+      "sourceSha256": "7623e3669ee4bdf2090206b60dee93607529ea41c954f15458a3b1ed89f13168"
     }
   ]
 }

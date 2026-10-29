@@ -1,0 +1,358 @@
+{
+  "version": 1,
+  "phase": 8,
+  "grade": 8.8,
+  "status": "Validated candidate before publication; exact-commit hosted CI and live verification remain separate",
+  "revision": "90c62315f9968c293513dadcb53942db423be13a",
+  "dirty": true,
+  "historicalProfiles": [
+    {
+      "id": "deferred",
+      "visits": 63,
+      "reloads": 62,
+      "tabs": 574,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 0,
+        "strain": 3,
+        "rolls": [
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "comparison": "Exact preceding rendered prose, choices, metadata, distances, Tab counts, resources and audio observations preserved."
+    },
+    {
+      "id": "denied",
+      "visits": 82,
+      "reloads": 81,
+      "tabs": 697,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "final": {
+        "sceneId": "ending_witness",
+        "creds": 370,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "comparison": "Exact preceding rendered prose, choices, metadata, distances, Tab counts, resources and audio observations preserved."
+    },
+    {
+      "id": "names",
+      "visits": 89,
+      "reloads": 88,
+      "tabs": 760,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 390,
+        "strain": 3,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "comparison": "Exact preceding rendered prose, choices, metadata, distances, Tab counts, resources and audio observations preserved."
+    },
+    {
+      "id": "listed-sound",
+      "visits": 87,
+      "reloads": 86,
+      "tabs": 929,
+      "completedVoices": 41,
+      "shotReviews": 51,
+      "final": {
+        "sceneId": "ending_listed",
+        "creds": 470,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "comparison": "Exact preceding rendered prose, choices, metadata, distances, Tab counts, resources and audio observations preserved."
+    },
+    {
+      "id": "nerve",
+      "visits": 77,
+      "reloads": 30,
+      "tabs": 533,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 350,
+        "strain": 5,
+        "rolls": [
+          1,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "comparison": "Exact preceding rendered prose, choices, metadata, distances, Tab counts, resources and audio observations preserved."
+    },
+    {
+      "id": "face-failed",
+      "visits": 75,
+      "reloads": 27,
+      "tabs": 580,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 345,
+        "strain": 0,
+        "rolls": [
+          10,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      "comparison": "Exact preceding rendered prose, choices, metadata, distances, Tab counts, resources and audio observations preserved."
+    },
+    {
+      "id": "archive-failed",
+      "visits": 64,
+      "reloads": 63,
+      "tabs": 585,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 0,
+        "strain": 4,
+        "rolls": [
+          1,
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "comparison": "Exact preceding rendered prose, choices, metadata, distances, Tab counts, resources and audio observations preserved."
+    },
+    {
+      "id": "canceled",
+      "visits": 75,
+      "reloads": 74,
+      "tabs": 619,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 390,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "comparison": "Exact preceding rendered prose, choices, metadata, distances, Tab counts, resources and audio observations preserved."
+    },
+    {
+      "id": "nerve-handling-failed",
+      "visits": 76,
+      "reloads": 28,
+      "tabs": 577,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 355,
+        "strain": 3,
+        "rolls": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      "comparison": "Exact preceding rendered prose, choices, metadata, distances, Tab counts, resources and audio observations preserved."
+    },
+    {
+      "id": "ghost-routing",
+      "visits": 80,
+      "reloads": 32,
+      "tabs": 635,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 380,
+        "strain": 2,
+        "rolls": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      "comparison": "Exact preceding rendered prose, choices, metadata, distances, Tab counts, resources and audio observations preserved."
+    }
+  ],
+  "newCampaigns": [
+    {
+      "id": "bare-names",
+      "visits": 79,
+      "reloads": 78,
+      "tabs": 571,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 330,
+        "strain": 5,
+        "rolls": [
+          1,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "limitations": "Internal authored campaign, not blind or fresh-player observation. Synthetic viewport and pagehide, not physical hardware or app switch. Voice completion and cleanup do not establish listening quality. Transition times include UI review/reloads; they are not INP or field percentiles."
+    },
+    {
+      "id": "blocks-witness",
+      "visits": 79,
+      "reloads": 78,
+      "tabs": 567,
+      "final": {
+        "sceneId": "ending_witness",
+        "creds": 325,
+        "strain": 4,
+        "rolls": [
+          1,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "limitations": "Internal authored campaign, not blind or fresh-player observation. Synthetic viewport and pagehide, not physical hardware or app switch. Voice completion and cleanup do not establish listening quality. Transition times include UI review/reloads; they are not INP or field percentiles."
+    },
+    {
+      "id": "harness-listed",
+      "visits": 81,
+      "reloads": 80,
+      "tabs": 591,
+      "final": {
+        "sceneId": "ending_listed",
+        "creds": 290,
+        "strain": 4,
+        "rolls": [
+          1,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "limitations": "Internal authored campaign, not blind or fresh-player observation. Synthetic viewport and pagehide, not physical hardware or app switch. Voice completion and cleanup do not establish listening quality. Transition times include UI review/reloads; they are not INP or field percentiles."
+    },
+    {
+      "id": "scarce",
+      "visits": 88,
+      "reloads": 87,
+      "tabs": 751,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 0,
+        "strain": 5,
+        "rolls": [
+          1,
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "limitations": "Internal authored campaign, not blind or fresh-player observation. Synthetic viewport and pagehide, not physical hardware or app switch. Voice completion and cleanup do not establish listening quality. Transition times include UI review/reloads; they are not INP or field percentiles."
+    }
+  ],
+  "totals": {
+    "historicalVisits": 768,
+    "historicalReloads": 571,
+    "historicalTabs": 6489,
+    "newVisits": 327,
+    "newReloads": 323,
+    "newTabs": 2480
+  },
+  "browser": {
+    "chromium": {
+      "cases": 53,
+      "passed": 53,
+      "retries": 0,
+      "workers": 4,
+      "deadlineSeconds": 30
+    },
+    "webkit": {
+      "cases": 53,
+      "passed": 53,
+      "retries": 0,
+      "workers": 4,
+      "deadlineSeconds": 30,
+      "diagnostic": "qa/editorial/freight-craft-webkit-diagnostic.json",
+      "limitations": "Local host validation disabled; full hosted normal validation remains mandatory. First concurrent run retained52 passes and one timeout."
+    }
+  },
+  "sourceTests": 899,
+  "production": {
+    "scenes": 254,
+    "rawChoices": 771,
+    "routes": 231,
+    "assets": 849,
+    "budgetViolations": []
+  },
+  "limitations": "Source-familiar AI proxy; fixed authored dice and synthetic viewports. No independent acting, human, physical-iPhone, randomized new-policy or automatic AAA-grade acceptance.",
+  "acceptance": "qa/editorial/freight-craft-acceptance.json",
+  "priorRelease": "qa/editorial/workspace-flow-release.json",
+  "diagnostic": "qa/editorial/freight-craft-webkit-diagnostic.json",
+  "preservation": {
+    "routes": 219,
+    "visits": 15496,
+    "mediaHashes": 814,
+    "newRoutes": 12,
+    "newDeliveries": 13
+  }
+}

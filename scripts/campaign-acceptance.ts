@@ -58,7 +58,7 @@ const browserCampaigns = profiles.map(profile => {
   if (!profile.sound) assert.deepEqual(report.mediaRequests.filter(path => path.startsWith("/audio/")), []);
   if (profile.artwork === "none") assert.deepEqual(report.mediaRequests.filter(path => path.startsWith("/art/")), []);
   // UI runs enable the current content cohort. Historical fixtures remain unchanged.
-  let state = createCharacter({ ...spec.character, startWithPrologue: true, expandedKerr: true, expandedMara: true, expandedWitness: true, craftedEncounters: true, emotionalPayoffs: true });
+  let state = createCharacter({ ...spec.character, startWithPrologue: true, expandedKerr: true, expandedMara: true, expandedWitness: true, craftedEncounters: true, emotionalPayoffs: true, freightCraft: true });
   const checkpoints = report.observations.map((observation, step) => {
     const scene = getScene(state.sceneId), choices = presentChoices(state, scene);
     assert.equal(observation.step, step); assert.equal(observation.sceneId, state.sceneId); assert.equal(report.scenes[step], state.sceneId);
