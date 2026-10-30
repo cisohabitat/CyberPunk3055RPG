@@ -38,6 +38,12 @@ export function GameApp() {
   const [preferences, setPreferences] = useState<Preferences>(DEFAULT_PREFERENCES);
   const [dialog, setDialog] = useState<"saves" | "settings" | null>(null);
   const [audioPaused, setAudioPaused] = useState(false);
+  // React state can commit after pagehide; obsolete menu effects must stop synchronously.
+  const pageActive = useRef(true);
+  useEffect(() => {
+    pageActive.current = document.visibilityState === "visible";
+    return () => { pageActive.current = false; cancelPendingMenuAudio(); leaveMenuMusic(); };
+  }, []);
   const [menuMusicRequested, setMenuMusicRequested] = useState(true);
   const [menuMusicActivated, setMenuMusicActivated] = useState(false);
   const [menuMusicStatus, setMenuMusicStatus] = useState<BedStatus>("idle");
@@ -58,16 +64,19 @@ export function GameApp() {
   useEffect(() => { setAudioMix(preferences); }, [preferences]);
   useEffect(() => {
     if (screen === "play" && !reference) { setMenuMusicStatus("idle"); return; }
-    const on = ready && menu && menuMusicRequested && menuMusicActivated && preferences.sound && preferences.music > 0 && !audioPaused;
+    const on = pageActive.current && document.visibilityState === "visible" && ready && menu && menuMusicRequested && menuMusicActivated && preferences.sound && preferences.music > 0 && !audioPaused;
     setBed(on, "title", "street", setMenuMusicStatus);
   }, [ready, screen, reference, menu, menuMusicRequested, menuMusicActivated, preferences.sound, preferences.music, audioPaused]);
   useEffect(() => {
     if (!ready || !menu || !menuMusicRequested || menuMusicActivated || !preferences.sound || preferences.music === 0 || audioPaused) return;
-    return prepareMenuAutoplay(() => setMenuMusicActivated(true));
+    return prepareMenuAutoplay(() => {
+      if (pageActive.current && document.visibilityState === "visible") setMenuMusicActivated(true);
+    });
   }, [ready, menu, menuMusicRequested, menuMusicActivated, preferences.sound, preferences.music, audioPaused]);
   useEffect(() => {
     if (!ready || !menu || !menuMusicRequested || menuMusicActivated || !preferences.sound || preferences.music === 0 || audioPaused) return;
     function activate(event: Event) {
+      if (!pageActive.current || document.visibilityState !== "visible") return;
       // Navigation should hand off directly, without downloading a menu-only track.
       if (event.target instanceof Element && event.target.closest('[data-testid="new-run"], [data-testid="continue-run"], [data-testid="title-music"] button')) return;
       if (event instanceof KeyboardEvent && (event.repeat || !["Enter", " "].includes(event.key))) return;
@@ -80,9 +89,9 @@ export function GameApp() {
       document.removeEventListener("pointerup", activate); document.removeEventListener("keydown", activate);
     };
   }, [ready, menu, menuMusicRequested, menuMusicActivated, preferences.sound, preferences.music, audioPaused]);
-  useEffect(() => () => { cancelPendingMenuAudio(); leaveMenuMusic(); }, []);
   useEffect(() => {
     function pause() {
+      pageActive.current = false;
       cancelPendingMenuAudio();
       if (!preferences.sound) return;
       setBed(false);
@@ -92,10 +101,12 @@ export function GameApp() {
     function visibility() { if (document.visibilityState !== "visible") pause(); }
     document.addEventListener("visibilitychange", visibility);
     window.addEventListener("pagehide", pause);
+    window.addEventListener("beforeunload", pause);
     visibility();
     return () => {
       document.removeEventListener("visibilitychange", visibility);
       window.removeEventListener("pagehide", pause);
+      window.removeEventListener("beforeunload", pause);
     };
   }, [preferences.sound]);
 
@@ -107,7 +118,7 @@ export function GameApp() {
   }
   function updatePreferences(next: Preferences) {
     if (next.sound && !preferences.sound) {
-      unlockAudio(); setAudioPaused(false);
+      pageActive.current = true; unlockAudio(); setAudioPaused(false);
       if (menu) { setMenuMusicRequested(true); setMenuMusicActivated(true); }
     } else if (next.sound && next.music > 0 && preferences.music === 0) { unlockAudio(); setMenuMusicActivated(true); }
     if (!next.sound) setAudioPaused(false);
@@ -120,13 +131,14 @@ export function GameApp() {
     } else {
       unlockAudio();
       if (!preferences.sound) updatePreferences({ ...preferences, sound: true });
-      setAudioPaused(false); setMenuMusicRequested(true); setMenuMusicActivated(true);
+      pageActive.current = true; setAudioPaused(false); setMenuMusicRequested(true); setMenuMusicActivated(true);
       setBed(true, "title", "street", setMenuMusicStatus);
     }
   }
   function load(next: GameState, source = "Autosave") {
     // Dispose menu sources before gameplay, including when ended is delayed.
     if (screen === "title") { leaveMenuMusic(); setMenuMusicStatus("idle"); }
+    pageActive.current = true;
     if (preferences.sound) unlockAudio();
     // This navigation is a player gesture. Returning to title can resume the
     // enabled menu theme without activating it during a fresh save restore.
@@ -145,7 +157,7 @@ export function GameApp() {
       music={{ status: menuMusicStatus, muted: preferences.music === 0, paused: audioPaused && menuMusicRequested,
         waiting: menuMusicRequested && !menuMusicActivated && preferences.sound && preferences.music > 0 && !audioPaused, onToggle: toggleMenuMusic }} />
       : screen === "play" && run ? <PlayScreen key={playSession} restoreNotice={restoreNotice} state={run} saveFailed={saveFailed} preferences={preferences}
-      audioPaused={audioPaused} onResumeAudio={() => { unlockAudio(); setAudioPaused(false); }}
+      audioPaused={audioPaused} onResumeAudio={() => { pageActive.current = true; unlockAudio(); setAudioPaused(false); }}
       modalOpen={dialog !== null} onSettings={() => setDialog("settings")} onSaves={() => setDialog("saves")}
       onChange={(next) => { setRestoreNotice(null); updateRun(next); }} onTitle={title} onNewRun={() => { setCodex(loadCodex()); setRun(null); setScreen("create"); }}
       onAbandon={() => { clearSave(); setSaved(null); setRun(null); setSaveFailed(false); title(); }} />

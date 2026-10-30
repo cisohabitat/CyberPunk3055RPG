@@ -20,8 +20,9 @@ test("enabled menu music autoplays when permitted or starts on interaction witho
   expect(errors).toEqual([]);
 });
 
-test("pagehide cancels a pending title download; Resume can fetch a fresh playable track", async ({ page }) => {
+for (const departure of ["pagehide", "beforeunload"] as const) test(`${departure} cancels a pending title download; Resume can fetch a fresh playable track`, async ({ page }) => {
   await page.addInitScript(installAudioReview, {});
+  const errors: string[] = []; page.on("pageerror", error => errors.push(error.message));
   let attempts = 0, release!: () => void;
   const gate = new Promise<void>(resolve => { release = resolve; });
   await page.route("**/audio/theme-title.flac", async route => {
@@ -31,12 +32,12 @@ test("pagehide cancels a pending title download; Resume can fetch a fresh playab
   await page.goto("/");
   await page.getByRole("heading", { name: "Saint Shard", exact: true }).click();
   await expect(page.getByTestId("title-music")).toContainText("Loading");
-  await page.evaluate(() => window.dispatchEvent(new PageTransitionEvent("pagehide", { persisted: true })));
+  await page.evaluate(departure => window.dispatchEvent(departure === "pagehide" ? new PageTransitionEvent("pagehide", { persisted: true }) : new Event("beforeunload")), departure);
   release();
   await expect(page.getByTestId("title-music")).toContainText("paused");
   await page.getByRole("button", { name: "Resume menu music", exact: true }).click();
   await expect.poll(() => page.evaluate(() => (window as unknown as { audioReview: AudioReview }).audioReview.started)).toEqual(["theme-title.flac"]);
-  expect(attempts).toBe(2);
+  expect(attempts).toBe(2); expect(errors).toEqual([]);
   await page.getByRole("button", { name: "Stop menu music", exact: true }).click();
 });
 

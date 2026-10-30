@@ -1,0 +1,159 @@
+{
+  "version": 1,
+  "revision": "ea526370b8e24a2246a253d2a6115482abd9346c",
+  "runId": 41102774327,
+  "conclusion": "failure",
+  "url": "https://github.com/cisohabitat/CyberPunk3055RPG/actions/runs/41102774327",
+  "startedAt": "2026-10-30T17:57:56Z",
+  "updatedAt": "2026-10-30T18:23:03Z",
+  "jobs": [
+    {
+      "id": 124223532165,
+      "name": "Test",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124226700775,
+      "name": "Browser shard (firefox, 1/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124226700805,
+      "name": "Browser shard (webkit, 1/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124226700853,
+      "name": "Browser shard (webkit, 2/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124226700857,
+      "name": "Browser shard (chromium, 4/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124226700858,
+      "name": "Browser shard (firefox, 3/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124226700877,
+      "name": "Browser shard (firefox, 4/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124226700929,
+      "name": "Browser shard (chromium, 3/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124226700972,
+      "name": "Browser shard (phone, 1/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124226701007,
+      "name": "Browser shard (phone, 2/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124226701046,
+      "name": "Browser shard (phone, 3/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124226701092,
+      "name": "Browser shard (chromium, 1/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124226701158,
+      "name": "Browser shard (firefox, 2/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124226701172,
+      "name": "Browser shard (chromium, 2/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124226701183,
+      "name": "Browser shard (phone, 4/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124226701275,
+      "name": "Browser shard (webkit, 4/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124226701437,
+      "name": "Browser shard (webkit, 3/4)",
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    {
+      "id": 124237096168,
+      "name": "Browser (webkit)",
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    {
+      "id": 124237096223,
+      "name": "Browser (phone)",
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    {
+      "id": 124237096231,
+      "name": "Browser (chromium)",
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    {
+      "id": 124237096307,
+      "name": "Browser (firefox)",
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    {
+      "id": 124237345884,
+      "name": "Build",
+      "status": "completed",
+      "conclusion": "failure"
+    }
+  ],
+  "deployment": {
+    "id": "dpl_6tcTbVFf44MPTUbRahpT1fS9S24v",
+    "status": "CANCELED",
+    "revision": "ea526370b8e24a2246a253d2a6115482abd9346c"
+  },
+  "failure": {
+    "jobId": 124226701437,
+    "artifactId": 13002710132,
+    "artifactSha256": "087d0164d96532d7e7570bceadf2071351f26c3b0f42cea8837cc4d9282ad722",
+    "test": "a recorded roll survives reload and cannot be rerolled",
+    "error": "/127.0.0.1:3101/audio/theme-title.flac due to access control checks.",
+    "actualDiceAndPendingSaveAssertions": "Passed; original empty pageerror assertion correctly failed",
+    "attempts": 2
+  },
+  "fix": "Synchronous visible-document lifecycle gate and early beforeunload cancellation; do not disable music or filter pageerrors.",
+  "newValidation": "Eight unchanged WebKit repeats, visible menu default/Stop/Resume, beforeunload/pagehide cancellation and new source-bound campaign captures; require a fresh full exact-commit CI cohort."
+}
