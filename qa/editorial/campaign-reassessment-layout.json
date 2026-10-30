@@ -1,0 +1,128 @@
+[
+  {
+    "id": "archive-phone",
+    "scene": "act2_craft_archive",
+    "route": "emotional-payoff/both-returns-listed",
+    "choice": "craft-question-issuer",
+    "width": 390,
+    "artwork": "full",
+    "metrics": {
+      "proseToChoiceSectionPx": 1867,
+      "proseToFirstFollowingControlPx": 282,
+      "firstFollowingControl": "VIEW ARTWORK",
+      "proseToFirstTaskActionPx": 2069,
+      "firstTaskAction": "1\nWhose key canceled evacuation? Test the cancellation's issuer.",
+      "proseToFirstCanonicalButtonPx": 2069,
+      "pageHeight": 4254,
+      "overflow": false
+    },
+    "violations": [],
+    "errors": [],
+    "method": "Legally replayed authored checkpoint, actual public UI, synthetic viewport and axe; no physical-device or screen-reader listening claim."
+  },
+  {
+    "id": "archive-text",
+    "scene": "act2_craft_archive",
+    "route": "emotional-payoff/both-returns-listed",
+    "choice": "craft-question-issuer",
+    "width": 320,
+    "artwork": "none",
+    "metrics": {
+      "proseToChoiceSectionPx": 1840,
+      "proseToFirstFollowingControlPx": 133,
+      "firstFollowingControl": "Voice transcript",
+      "proseToFirstTaskActionPx": 2071,
+      "firstTaskAction": "1\nWhose key canceled evacuation? Test the cancellation's issuer.",
+      "proseToFirstCanonicalButtonPx": 2071,
+      "pageHeight": 4865,
+      "overflow": false
+    },
+    "violations": [],
+    "errors": [],
+    "method": "Legally replayed authored checkpoint, actual public UI, synthetic viewport and axe; no physical-device or screen-reader listening claim."
+  },
+  {
+    "id": "testimony-phone",
+    "scene": "act3_testimony_review",
+    "route": "allocation-dustline",
+    "choice": "scope-bounded",
+    "width": 390,
+    "artwork": "full",
+    "metrics": {
+      "proseToChoiceSectionPx": 1616,
+      "proseToFirstFollowingControlPx": 282,
+      "firstFollowingControl": "VIEW ARTWORK",
+      "proseToFirstTaskActionPx": 1817,
+      "firstTaskAction": "1\nKeep the cancellation as a question that still needs corroboration.",
+      "proseToFirstCanonicalButtonPx": 1817,
+      "pageHeight": 3371,
+      "overflow": false
+    },
+    "violations": [],
+    "errors": [],
+    "method": "Legally replayed authored checkpoint, actual public UI, synthetic viewport and axe; no physical-device or screen-reader listening claim."
+  },
+  {
+    "id": "route-desktop",
+    "scene": "act2_route_exit",
+    "route": "balance-dustline-nerve-equipped",
+    "choice": "route-exit-walk",
+    "width": 1440,
+    "artwork": "full",
+    "metrics": {
+      "proseToChoiceSectionPx": 1018,
+      "proseToFirstFollowingControlPx": 140,
+      "firstFollowingControl": "Campaign commitments · 1/2 complete · 1 open",
+      "proseToFirstTaskActionPx": 1190,
+      "firstTaskAction": "1\nPlan the sensor ramp.\nDetails\nChrome can suppress the recipient field; Face can negotiate. A failed approach logs the recipient.",
+      "proseToFirstCanonicalButtonPx": 1190,
+      "pageHeight": 2796,
+      "overflow": false
+    },
+    "violations": [],
+    "errors": [],
+    "method": "Legally replayed authored checkpoint, actual public UI, synthetic viewport and axe; no physical-device or screen-reader listening claim."
+  },
+  {
+    "id": "freight-loaded",
+    "scene": "act2_ramp_load",
+    "route": "freight-craft/failed-desk",
+    "choice": "ramp-carry-past",
+    "width": 390,
+    "artwork": "full",
+    "metrics": {
+      "proseToChoiceSectionPx": 466,
+      "proseToFirstFollowingControlPx": 34,
+      "firstFollowingControl": "Voice transcript",
+      "proseToFirstTaskActionPx": 667,
+      "firstTaskAction": "1\nCall down at the broad landing before the bend.\nDetails\nUse the inspected level rest, then carry through Asa's gate to intake. A stock receipt remains a separate step.",
+      "proseToFirstCanonicalButtonPx": 667,
+      "pageHeight": 2976,
+      "overflow": false
+    },
+    "violations": [],
+    "errors": [],
+    "method": "Legally replayed authored checkpoint, actual public UI, synthetic viewport and axe; no physical-device or screen-reader listening claim."
+  },
+  {
+    "id": "workshop-phone",
+    "scene": "act2_workshop",
+    "route": "freight-craft/harness-listed",
+    "choice": "buy-chair-harness",
+    "width": 390,
+    "artwork": "full",
+    "metrics": {
+      "proseToChoiceSectionPx": 4375,
+      "proseToFirstFollowingControlPx": 82,
+      "firstFollowingControl": "Voice transcript",
+      "proseToFirstTaskActionPx": 4547,
+      "firstTaskAction": "1\nBuy the Archive Probe.\nDetails\n140 creds. +2 to scanner inspection, archive index preparation, receipt authentication, and the depot sensor ramp. One field kit this week; it stays in your inventory.\nChanges\n-140 cr · Gain Archive Probe",
+      "proseToFirstCanonicalButtonPx": 4547,
+      "pageHeight": 7872,
+      "overflow": false
+    },
+    "violations": [],
+    "errors": [],
+    "method": "Legally replayed authored checkpoint, actual public UI, synthetic viewport and axe; no physical-device or screen-reader listening claim."
+  }
+]

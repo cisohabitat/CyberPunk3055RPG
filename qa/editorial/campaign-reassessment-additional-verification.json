@@ -1,0 +1,23 @@
+[
+  {
+    "id": "harness-listed",
+    "visits": 81,
+    "canonicalTextAndChosenActionAtEveryCheckpoint": true,
+    "exactFinal": true,
+    "quietNoArtAndDisposal": true
+  },
+  {
+    "id": "failed-desk",
+    "visits": 79,
+    "canonicalTextAndChosenActionAtEveryCheckpoint": true,
+    "exactFinal": true,
+    "quietNoArtAndDisposal": true
+  },
+  {
+    "id": "scarce",
+    "visits": 88,
+    "canonicalTextAndChosenActionAtEveryCheckpoint": true,
+    "exactFinal": true,
+    "quietNoArtAndDisposal": true
+  }
+]

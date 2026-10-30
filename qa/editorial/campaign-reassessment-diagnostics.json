@@ -1,0 +1,43 @@
+{
+  "phase": 10,
+  "gameChanges": false,
+  "temporaryCaptureAttempts": [
+    {
+      "log": "/tmp/saint-phase10/captures.log",
+      "sha256": "0eeffd3e13a1a17525967646fd936f588366c7a7a0f40f1b9de08c1c4f4c2669",
+      "result": "Failed isolated browser evaluate: ReferenceError __name is not defined"
+    },
+    {
+      "log": "/tmp/saint-phase10/captures-corrected.log",
+      "sha256": "51aff6a2c9149540d4f63598521af4ff14e8125d73e1b27e47963058aa30ab41",
+      "result": "Failed isolated browser evaluate: ReferenceError __name is not defined"
+    }
+  ],
+  "correction": "Temporary named arrow introduced a tsx __name helper inside locator.evaluate isolated world. Main-world init did not fix it. Removing the named helper fixed the probe; no game change or deadline/assertion relaxation.",
+  "finalCaptureCases": 6,
+  "finalViolations": 0,
+  "priorFailures": "Preserved Phase9 exact-commit release, prior hosted WebKit return-bed assertion failure, initial optional-roll tool error and earlier retained ASR/retry records. No historical evidence rewritten.",
+  "publicBrowser": {
+    "initial": {
+      "planned": 50,
+      "passed": 48,
+      "failed": 2,
+      "retries": 0,
+      "configuredWorkers": 4,
+      "failure": "Intercepted route.fetch requests attempted direct Vercel IPs and failed ECONNREFUSED; the session requires its configured HTTP proxy.",
+      "logSha256": "fcb0dd0685be696baf60743b73574fc1ff22d36c22b60ed3102d3ffd3251ba76"
+    },
+    "correction": "Temporary public-only Playwright context uses inherited HTTPS_PROXY/HTTP_PROXY; Node trusts the system CA bundle through NODE_EXTRA_CA_CERTS. No TLS validation disabled, game change, assertion change, deadline change or workflow change.",
+    "targetedFollowup": {
+      "cases": 2,
+      "passed": 2,
+      "failed": 0,
+      "retries": 0,
+      "configuredWorkers": 4,
+      "actualWorkers": 2,
+      "reasonForActualWorkers": "Only two selected tests exist; four-worker maximum remains unchanged.",
+      "logSha256": "0a89272ec15d1c7e29149e302bee0978d40862e15f66cab7126105dc33778ecc"
+    },
+    "conclusion": "All50 selected cases covered successfully across initial and corrected targeted executions; not labeled as one clean50-case run. Full exact-commit hosted gates remain mandatory."
+  }
+}

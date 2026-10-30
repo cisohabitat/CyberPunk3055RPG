@@ -1,0 +1,29 @@
+[
+  {
+    "id": "harness-listed",
+    "route": "qa/routes/freight-craft/harness-listed.json",
+    "width": 390,
+    "artwork": "full",
+    "reading": "all",
+    "sound": false,
+    "shots": false
+  },
+  {
+    "id": "failed-desk",
+    "route": "qa/routes/freight-craft/failed-desk.json",
+    "width": 390,
+    "artwork": "full",
+    "reading": "all",
+    "sound": false,
+    "shots": false
+  },
+  {
+    "id": "scarce",
+    "route": "qa/routes/freight-craft/scarce.json",
+    "width": 320,
+    "artwork": "none",
+    "reading": "paragraph",
+    "sound": false,
+    "shots": false
+  }
+]

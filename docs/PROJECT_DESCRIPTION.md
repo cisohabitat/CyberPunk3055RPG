@@ -1,5 +1,7 @@
 # Saint Shard — project description
 
+The latest [Phase 10 review](CAMPAIGN_REASSESSMENT_PHASE10.md) gives a provisional internal 8.9/10 (weighted 8.860), using thirteen fresh public keyboard campaigns and the unchanged rubric. The current catalog has 254 scenes, 771 raw choices, 231 authored routes and 164 primary artwork entries. This QA/documentation review preserves game/media/saves and prioritizes equipment/workspace flow next; it does not claim independent AAA acceptance. Earlier phase figures below are historical.
+
 ## Short repository description
 
 Saint Shard: a solo cyberpunk story RPG set in Kite City, 3055. Branching choices, 1d10 checks, illustrated scenes, voiced dialogue and local saves. Built with Next.js and React.
@@ -10,7 +12,7 @@ Take a memory-retrieval job that draws you into Ward Nine’s history and the li
 
 Illustrated locations and character portraits accompany fixed voiced dialogue. A field guide introduces the setting and rules; reading, sound, artwork and accessibility settings let players adjust the presentation. Progress stays in the browser, with manual save slots and export/import. Play requires no account.
 
-The main-page **Artwork gallery** opens a searchable, filtered collection at `/artwork`. A spoiler notice precedes the full collection, including later scenes and ending art. Its 159 entries include character portraits and cast-card crops; responsive copies and previews are grouped with their main image. Browsing and zooming preserve the campaign, and text-only artwork remains supported.
+The main-page **Artwork gallery** opens a searchable, filtered collection at `/artwork`. A spoiler notice precedes the full collection, including later scenes and ending art. Its 164 entries include character portraits and cast-card crops; responsive copies and previews are grouped with their main image. Browsing and zooming preserve the campaign, and text-only artwork remains supported.
 
 The [visual library cycle](VISUAL_LIBRARY_CYCLE.md) adds compact actor strips beside character paintings, illustrated owned equipment, two more earned scene variants, and an accessible zoomable artwork viewer. Opening a painting interrupts dialogue safely and returns focus when closed. Artwork remains optional.
 
@@ -71,12 +73,12 @@ The campaign thread connects acquired evidence, tested cases, archive preparatio
 The [27 October internal review](POST_ROADMAP_REVIEW.md) uses three complete prepared/scarce/failure-heavy proxy campaigns. Focused polish consolidates task history, makes crowded ordinary choices easier to reach and gives earned costs a written place at the ending. The provisional internal grade is 8.5/10, without claiming independent AAA acceptance.
 
 
-The preceding content phase, [Kerr: the price of a doorway](KERR_CONFRONTATION_PHASE.md), adds an optional new-run chapel negotiation, a checked false-clearance bluff and a voluntary withdrawal, with different costs and week-later reactions. A matching neutral painting and thirteen fixed synthetic Kerr performances accompany the new material. That release contained 225 scenes, 688 choices and 171 authored replay routes; the separate historical cohort and save compatibility remain protected. The latest internal grade remains the provisional 8.5/10 [whole-campaign review](POST_ROADMAP_REVIEW.md).
+The preceding content phase, [Kerr: the price of a doorway](KERR_CONFRONTATION_PHASE.md), adds an optional new-run chapel negotiation, a checked false-clearance bluff and a voluntary withdrawal, with different costs and week-later reactions. A matching neutral painting and thirteen fixed synthetic Kerr performances accompany the new material. That release contained 225 scenes, 688 choices and 171 authored replay routes; the separate historical cohort and save compatibility remain protected. That phase retained the provisional 8.5/10 [whole-campaign review](POST_ROADMAP_REVIEW.md).
 
 
 The Mara character phase, [Mara: a conversation with a past](MARA_RELATIONSHIP_PHASE.md), gives Mara an optional personal response to the runner’s actual handling of her hour. Honesty, distance and deflection carry distinct later reactions; acknowledgment retains the earlier deflection and its personal boundary. Eight scenes, a fitting new painting and fifteen exact-text synthetic performances accompany this addition, preserving past company and the private-letter arrangements. That release brought the catalog to 233 scenes, 705 choices and 182 authored complete replay routes.
 
-The [witness return conversations](WITNESS_RETURN_CONVERSATIONS.md) add four optional new-run scenes and seven matching Nia/Lumen performances with fitting existing artwork. The current catalog has 237 scenes, 714 choices and 188 authored complete routes. The [AAA craft roadmap](AAA_CRAFT_ROADMAP.md) records the latest provisional 8.6 internal assessment and the current decision-pacing phase, preserving active preparation and every game/media outcome.
+The [witness return conversations](WITNESS_RETURN_CONVERSATIONS.md) add four optional new-run scenes and seven matching Nia/Lumen performances with fitting existing artwork. That phase brought the catalog to 237 scenes, 714 choices and 188 authored complete routes. The [AAA craft roadmap](AAA_CRAFT_ROADMAP.md) records the dated provisional 8.6 internal assessment and the current decision-pacing phase, preserving active preparation and every game/media outcome.
 
 The [encounter-craft phase](ENCOUNTER_CRAFT_PHASE2.md) adds a written source-comparison desk, scoped archive execution and Kerr’s real cash/tool/fare negotiation for new runs, with earned returns, matching stock voices and fitting existing artwork. The grade remains a provisional internal 8.6.
 
@@ -86,7 +88,7 @@ AAA craft Phase 4 adds explicit visual direction at fourteen archive, bargain, p
 
 AAA craft Phase 5 reviews nineteen complete anchor-scene performances and supplies seven exact-word stock-voice alternatives, with original-recording fallback and unchanged art, actors, story and saves. Rejected retakes and labeled scene-bed comparisons remain available. See [performance direction](PERFORMANCE_DIRECTION_PHASE5.md); the provisional internal assessment remains 8.6.
 
-The [whole-campaign acceptance review](WHOLE_CAMPAIGN_ACCEPTANCE_PHASE6.md) completes the six-phase AAA craft roadmap. The current catalog remains 247 scenes, 751 raw choices and 219 historical authored routes, with a 163-entry artwork gallery. Ten current-cohort keyboard campaigns and a repeatable source-bound acceptance report support a provisional internal 8.8/10 reassessment. Long active workspaces, uneven encounter depth and stock voice expression remain priorities; the report specifies four further milestones toward a supported 9+. This QA/documentation phase changes no game or media content and makes no independent AAA claim.
+The [whole-campaign acceptance review](WHOLE_CAMPAIGN_ACCEPTANCE_PHASE6.md) completes the six-phase AAA craft roadmap. At Phase 6 the catalog contained 247 scenes, 751 raw choices and 219 historical authored routes, with a 163-entry artwork gallery. Ten current-cohort keyboard campaigns and a repeatable source-bound acceptance report support a provisional internal 8.8/10 reassessment. Long active workspaces, uneven encounter depth and stock voice expression remain priorities; the report specifies four further milestones toward a supported 9+. This QA/documentation phase changes no game or media content and makes no independent AAA claim.
 
 The [workspace reading-flow phase](WORKSPACE_READING_FLOW_PHASE7.md) compacts fourteen active archive, route and testimony screens while keeping every comparison, cost, warning, consent term and canonical control in place. Matched enlarged captures reduce decision-section travel by 74–233px without changing typography, focus order, story or matching media. The provisional internal assessment remains 8.8/10.
 

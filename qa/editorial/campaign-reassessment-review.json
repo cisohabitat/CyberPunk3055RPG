@@ -1,0 +1,743 @@
+{
+  "version": 1,
+  "phase": 10,
+  "date": "2026-10-30",
+  "reviewedRevision": "4f94d06dbc1257dc48070daa0ea28f25cb71029a",
+  "status": "Review candidate based on exact Phase9 public release; Phase10 publication evidence is separate",
+  "method": "Source-familiar AI proxy over fixed authored dice and keyboard UI runs. No blind players, physical devices, screen-reader listening, perceptual audio scores or automatic craft grade.",
+  "implementation": "QA evidence and documentation only; no runtime, story, art, voice, rules, preference or save changes",
+  "grade": 8.9,
+  "weightedEstimate": 8.86,
+  "previousGrade": 8.8,
+  "previousWeightedEstimate": 8.77,
+  "rubric": [
+    {
+      "area": "Narrative",
+      "weight": 0.2,
+      "phase6": 8.9,
+      "current": 8.9,
+      "target": 9.2,
+      "reason": "Opening context and distinct personal returns/four closing beats remain coherent. Freight adds an attributed private reply, but ordinary procedural passages retain repetition."
+    },
+    {
+      "area": "RPG depth",
+      "weight": 0.2,
+      "phase6": 8.6,
+      "current": 8.8,
+      "target": 9.1,
+      "reason": "Actual Nerve survey, owned/paid/bare support, strain, stopping and recovery add practical work beyond percentage differences. Fresh successful, stopped and zero-credit campaigns retain consequences; equivalent depth remains uneven elsewhere."
+    },
+    {
+      "area": "Visuals",
+      "weight": 0.15,
+      "phase6": 8.8,
+      "current": 8.8,
+      "target": 9.0,
+      "reason": "Neutral ramp and established listening paintings fit actual knowledge and have no visible hands. Five enlarged public layouts remain legible. Most play still uses static compositions; no boost from the asset count."
+    },
+    {
+      "area": "Audio",
+      "weight": 0.1,
+      "phase6": 8.4,
+      "current": 8.6,
+      "target": 8.9,
+      "reason": "Reviewed sequence direction removes needless score/focus switches and independent channel loading prevents observed ready-channel silence. Natural completion and fallback are verified; no new expressive-listening score or physical playback acceptance is claimed."
+    },
+    {
+      "area": "Usability",
+      "weight": 0.15,
+      "phase6": 8.6,
+      "current": 8.8,
+      "target": 9.0,
+      "reason": "Phase7 moves choices closer with unchanged typography/controls and current complete campaigns preserve keyboard travel. Remaining 1,891px fixed-profile gaps and the broader workshop's 4,375px gap/4,547px raw purchase distance remain substantial; existing per-kit Review purchase links mitigate the latter but do not shrink the catalog."
+    },
+    {
+      "area": "Engineering",
+      "weight": 0.2,
+      "phase6": 9.1,
+      "current": 9.1,
+      "target": 9.2,
+      "reason": "Historical state/media contracts, source/security/balance and complete release gates remain strong. Passing counts alone do not increase craft or engineering scores."
+    }
+  ],
+  "sourceFingerprint": "2dca83722ff54be8e1c8cdf959e38578500b4569bb85ff9e780f9fc102bc3c71",
+  "fixedProfiles": "qa/editorial/aaa-campaign-profiles.json",
+  "additionalProfiles": "qa/editorial/campaign-reassessment-additional-profiles.json",
+  "fixedTotals": {
+    "browserCampaigns": 10,
+    "visits": 768,
+    "reloads": 571,
+    "tabs": 6489,
+    "completedVoices": 41,
+    "shotReviews": 51
+  },
+  "allTotals": {
+    "visits": 1016,
+    "reloads": 816,
+    "tabs": 8402,
+    "completedVoices": 41,
+    "shotReviews": 51,
+    "interruptions": 2
+  },
+  "sourceCoverage": {
+    "routes": 231,
+    "visits": 16441,
+    "visitedScenes": 242,
+    "totalScenes": 254,
+    "unvisitedScenes": [
+      "act2_folio",
+      "act2_heat",
+      "chapel",
+      "ending_exposed",
+      "ending_sainted",
+      "ending_smashed",
+      "ending_taken",
+      "hatch",
+      "hatch_caught",
+      "kerr_fight",
+      "lumen_cold",
+      "why"
+    ],
+    "presentedSceneChoices": 741,
+    "selectedSceneChoices": 584
+  },
+  "campaigns": [
+    {
+      "id": "deferred",
+      "profile": {
+        "id": "deferred",
+        "route": "qa/routes/emotional-payoff/edda-deferred-quiet.json",
+        "width": 320,
+        "artwork": "none",
+        "reading": "paragraph",
+        "sound": false,
+        "shots": false
+      },
+      "visits": 63,
+      "reloads": 62,
+      "tabs": 574,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 0,
+        "strain": 3,
+        "rolls": [
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "maxGap": {
+        "scene": "act2_craft_archive",
+        "step": 45,
+        "pixels": 1891
+      },
+      "visitsWithGapOver1000": 8,
+      "proseWordsAcrossVisits": 4163,
+      "evidence": "qa/editorial/campaign-reassessment-runs/deferred.json",
+      "sha256": "17464a7d1ff29e0adbcbe79aa77f78c0e1a186dfa5b26500b1236e77fb7a416e"
+    },
+    {
+      "id": "denied",
+      "profile": {
+        "id": "denied",
+        "route": "qa/routes/emotional-payoff/kerr-contact-denied-witness.json",
+        "width": 1440,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "shots": false
+      },
+      "visits": 82,
+      "reloads": 81,
+      "tabs": 697,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_witness",
+        "creds": 370,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "maxGap": {
+        "scene": "act2_route_exit",
+        "step": 40,
+        "pixels": 1107
+      },
+      "visitsWithGapOver1000": 2,
+      "proseWordsAcrossVisits": 5012,
+      "evidence": "qa/editorial/campaign-reassessment-runs/denied.json",
+      "sha256": "db0dab90c39e2b68244f484fb83b3f51efe4927b37742216dab0ad6b6a0bd5db"
+    },
+    {
+      "id": "names",
+      "profile": {
+        "id": "names",
+        "route": "qa/routes/emotional-payoff/edda-authenticated-names.json",
+        "width": 390,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "shots": false
+      },
+      "visits": 89,
+      "reloads": 88,
+      "tabs": 760,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 390,
+        "strain": 3,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "maxGap": {
+        "scene": "act2_craft_archive",
+        "step": 54,
+        "pixels": 1867
+      },
+      "visitsWithGapOver1000": 17,
+      "proseWordsAcrossVisits": 5407,
+      "evidence": "qa/editorial/campaign-reassessment-runs/names.json",
+      "sha256": "28ce82a552ad32d2c5a750ae3cc305c5f9334e38c73e01901364ee6881042d5c"
+    },
+    {
+      "id": "listed-sound",
+      "profile": {
+        "id": "listed-sound",
+        "route": "qa/routes/emotional-payoff/both-returns-listed.json",
+        "width": 390,
+        "artwork": "full",
+        "reading": "all",
+        "sound": true,
+        "shots": true
+      },
+      "visits": 87,
+      "reloads": 86,
+      "tabs": 929,
+      "completedVoices": 41,
+      "shotReviews": 51,
+      "interruptions": 2,
+      "final": {
+        "sceneId": "ending_listed",
+        "creds": 470,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "maxGap": {
+        "scene": "act2_craft_archive",
+        "step": 51,
+        "pixels": 1867
+      },
+      "visitsWithGapOver1000": 15,
+      "proseWordsAcrossVisits": 5345,
+      "evidence": "qa/editorial/campaign-reassessment-runs/listed-sound.json",
+      "sha256": "908965f5d06ec129779bee91644ef0b666fd0141658edf080ed64130805da0e1"
+    },
+    {
+      "id": "nerve",
+      "profile": {
+        "id": "nerve",
+        "route": "qa/routes/allocation-gutterwire.json",
+        "width": 390,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "shots": false
+      },
+      "visits": 77,
+      "reloads": 30,
+      "tabs": 533,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 350,
+        "strain": 5,
+        "rolls": [
+          1,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "maxGap": {
+        "scene": "act3_testimony_hearing",
+        "step": 72,
+        "pixels": 1735
+      },
+      "visitsWithGapOver1000": 5,
+      "proseWordsAcrossVisits": 4943,
+      "evidence": "qa/editorial/campaign-reassessment-runs/nerve.json",
+      "sha256": "9c04c3b17ebd16b944bb93f1585fbffadf83016bc539e94540290216b2a2b234"
+    },
+    {
+      "id": "face-failed",
+      "profile": {
+        "id": "face-failed",
+        "route": "qa/routes/depot-build-face-failed.json",
+        "width": 1440,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "shots": false
+      },
+      "visits": 75,
+      "reloads": 27,
+      "tabs": 580,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 345,
+        "strain": 0,
+        "rolls": [
+          10,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      "maxGap": {
+        "scene": "act2_route_exit",
+        "step": 47,
+        "pixels": 1018
+      },
+      "visitsWithGapOver1000": 1,
+      "proseWordsAcrossVisits": 5027,
+      "evidence": "qa/editorial/campaign-reassessment-runs/face-failed.json",
+      "sha256": "24c47b2002d6e00dd6218e3625c307cd99c0b942966052e328fa8bc92c12e3cc"
+    },
+    {
+      "id": "archive-failed",
+      "profile": {
+        "id": "archive-failed",
+        "route": "qa/routes/emotional-payoff/edda-failed-quiet.json",
+        "width": 320,
+        "artwork": "none",
+        "reading": "paragraph",
+        "sound": false,
+        "shots": false
+      },
+      "visits": 64,
+      "reloads": 63,
+      "tabs": 585,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 0,
+        "strain": 4,
+        "rolls": [
+          1,
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "maxGap": {
+        "scene": "act2_craft_archive",
+        "step": 45,
+        "pixels": 1891
+      },
+      "visitsWithGapOver1000": 8,
+      "proseWordsAcrossVisits": 4269,
+      "evidence": "qa/editorial/campaign-reassessment-runs/archive-failed.json",
+      "sha256": "bc8f34dc4ff2b4b1c9b6d5a4a331ff4515206a4c3870df073b75b9b3ed2ed343"
+    },
+    {
+      "id": "canceled",
+      "profile": {
+        "id": "canceled",
+        "route": "qa/routes/emotional-payoff/kerr-canceled-quiet.json",
+        "width": 390,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "shots": false
+      },
+      "visits": 75,
+      "reloads": 74,
+      "tabs": 619,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 390,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "maxGap": {
+        "scene": "act3_testimony_hearing",
+        "step": 71,
+        "pixels": 1578
+      },
+      "visitsWithGapOver1000": 8,
+      "proseWordsAcrossVisits": 4545,
+      "evidence": "qa/editorial/campaign-reassessment-runs/canceled.json",
+      "sha256": "4898782eb96178089db92c92a69ba48865a43ec900293894e1d569b9345b9841"
+    },
+    {
+      "id": "nerve-handling-failed",
+      "profile": {
+        "id": "nerve-handling-failed",
+        "route": "qa/routes/depot-build-nerve-failed.json",
+        "width": 390,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "shots": false
+      },
+      "visits": 76,
+      "reloads": 28,
+      "tabs": 577,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 355,
+        "strain": 3,
+        "rolls": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      "maxGap": {
+        "scene": "act3_testimony_review",
+        "step": 69,
+        "pixels": 1672
+      },
+      "visitsWithGapOver1000": 13,
+      "proseWordsAcrossVisits": 5097,
+      "evidence": "qa/editorial/campaign-reassessment-runs/nerve-handling-failed.json",
+      "sha256": "9a91844673d8e4f2d2647f96872d1cbb3e8d571bd41286716e25f36ece318351"
+    },
+    {
+      "id": "ghost-routing",
+      "profile": {
+        "id": "ghost-routing",
+        "route": "qa/routes/depot-build-ghost.json",
+        "width": 390,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "shots": false
+      },
+      "visits": 80,
+      "reloads": 32,
+      "tabs": 635,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 380,
+        "strain": 2,
+        "rolls": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      "maxGap": {
+        "scene": "act3_testimony_review",
+        "step": 73,
+        "pixels": 1672
+      },
+      "visitsWithGapOver1000": 13,
+      "proseWordsAcrossVisits": 5244,
+      "evidence": "qa/editorial/campaign-reassessment-runs/ghost-routing.json",
+      "sha256": "7f38cf2cd852d24fe5284e61e0283488838ffbfefde4216d7804a8e007476902"
+    },
+    {
+      "id": "harness-listed",
+      "profile": {
+        "id": "harness-listed",
+        "route": "qa/routes/freight-craft/harness-listed.json",
+        "width": 390,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "shots": false
+      },
+      "visits": 81,
+      "reloads": 80,
+      "tabs": 591,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_listed",
+        "creds": 290,
+        "strain": 4,
+        "rolls": [
+          1,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "maxGap": {
+        "scene": "act2_workshop",
+        "step": 32,
+        "pixels": 4375
+      },
+      "visitsWithGapOver1000": 8,
+      "proseWordsAcrossVisits": 5347,
+      "evidence": "qa/editorial/campaign-reassessment-runs/harness-listed.json",
+      "sha256": "d5ed5ad858f1f2babf6e79630635a8018329660094c60a513c1df6f4daa9b980"
+    },
+    {
+      "id": "failed-desk",
+      "profile": {
+        "id": "failed-desk",
+        "route": "qa/routes/freight-craft/failed-desk.json",
+        "width": 390,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "shots": false
+      },
+      "visits": 79,
+      "reloads": 78,
+      "tabs": 571,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 330,
+        "strain": 5,
+        "rolls": [
+          1,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "maxGap": {
+        "scene": "act3_testimony_hearing",
+        "step": 74,
+        "pixels": 1673
+      },
+      "visitsWithGapOver1000": 5,
+      "proseWordsAcrossVisits": 5271,
+      "evidence": "qa/editorial/campaign-reassessment-runs/failed-desk.json",
+      "sha256": "3ec6e9a49f97199a9aeb7758fda7b5072fd5a6793f3bf9a9da3fb5c8b13a0f4b"
+    },
+    {
+      "id": "scarce",
+      "profile": {
+        "id": "scarce",
+        "route": "qa/routes/freight-craft/scarce.json",
+        "width": 320,
+        "artwork": "none",
+        "reading": "paragraph",
+        "sound": false,
+        "shots": false
+      },
+      "visits": 88,
+      "reloads": 87,
+      "tabs": 751,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 0,
+        "strain": 5,
+        "rolls": [
+          1,
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "maxGap": {
+        "scene": "act2_craft_archive",
+        "step": 72,
+        "pixels": 1891
+      },
+      "visitsWithGapOver1000": 8,
+      "proseWordsAcrossVisits": 5923,
+      "evidence": "qa/editorial/campaign-reassessment-runs/scarce.json",
+      "sha256": "7e0873ec42b1121305ba65e43117ccdc45330ec7174f5210165244dcb1b81b8a"
+    }
+  ],
+  "matchedPreviousPhase": [
+    {
+      "id": "deferred",
+      "storyChoicesResourcesDiceAndNavigation": "Exact Phase9 match",
+      "geometryChanges": []
+    },
+    {
+      "id": "denied",
+      "storyChoicesResourcesDiceAndNavigation": "Exact Phase9 match",
+      "geometryChanges": []
+    },
+    {
+      "id": "names",
+      "storyChoicesResourcesDiceAndNavigation": "Exact Phase9 match",
+      "geometryChanges": []
+    },
+    {
+      "id": "listed-sound",
+      "storyChoicesResourcesDiceAndNavigation": "Exact Phase9 match",
+      "geometryChanges": []
+    },
+    {
+      "id": "nerve",
+      "storyChoicesResourcesDiceAndNavigation": "Exact Phase9 match",
+      "geometryChanges": []
+    },
+    {
+      "id": "face-failed",
+      "storyChoicesResourcesDiceAndNavigation": "Exact Phase9 match",
+      "geometryChanges": []
+    },
+    {
+      "id": "archive-failed",
+      "storyChoicesResourcesDiceAndNavigation": "Exact Phase9 match",
+      "geometryChanges": []
+    },
+    {
+      "id": "canceled",
+      "storyChoicesResourcesDiceAndNavigation": "Exact Phase9 match",
+      "geometryChanges": []
+    },
+    {
+      "id": "nerve-handling-failed",
+      "storyChoicesResourcesDiceAndNavigation": "Exact Phase9 match",
+      "geometryChanges": []
+    },
+    {
+      "id": "ghost-routing",
+      "storyChoicesResourcesDiceAndNavigation": "Exact Phase9 match",
+      "geometryChanges": []
+    }
+  ],
+  "additionalCanonicalVerification": [
+    {
+      "id": "harness-listed",
+      "visits": 81,
+      "canonicalTextAndChosenActionAtEveryCheckpoint": true,
+      "exactFinal": true,
+      "quietNoArtAndDisposal": true
+    },
+    {
+      "id": "failed-desk",
+      "visits": 79,
+      "canonicalTextAndChosenActionAtEveryCheckpoint": true,
+      "exactFinal": true,
+      "quietNoArtAndDisposal": true
+    },
+    {
+      "id": "scarce",
+      "visits": 88,
+      "canonicalTextAndChosenActionAtEveryCheckpoint": true,
+      "exactFinal": true,
+      "quietNoArtAndDisposal": true
+    }
+  ],
+  "publicAssets": {
+    "files": 73,
+    "bytes": 11643380,
+    "allMatch": true,
+    "method": "curl --compressed normal CA TLS, decoded response body compared to local bytes and preceding live SHA256"
+  },
+  "layoutEvidence": "qa/editorial/campaign-reassessment-layout.json",
+  "priorRelease": "qa/editorial/sequence-continuity-release.json",
+  "diagnostics": "qa/editorial/campaign-reassessment-diagnostics.json",
+  "limitations": "Accepted source-familiar AI proxy; directed dice, synthetic viewports, selected full UI routes. No blind-player comprehension, physical iPhone, screen-reader listening or independent expressive audition. Historical source fixtures leave12 scene ids unvisited. Initial title requests are separated from requests after explicit no-art/quiet preferences.",
+  "report": "docs/CAMPAIGN_REASSESSMENT_PHASE10.md",
+  "nextPhase": "Phase11: compact the equipment workshop first, then bounded archive/testimony/route workspaces with baseline actual-action distances and all consequence/source/consent terms retained; new text or setting requires matching voices/art.",
+  "validation": {
+    "sourceTests": 901,
+    "sourceFailures": 0,
+    "typescript": "passed",
+    "build": "passed",
+    "knownDependencyVulnerabilities": 0,
+    "balanceAudits": 5,
+    "catalog": {
+      "scenes": 254,
+      "choices": 771,
+      "routes": 231,
+      "assets": 849,
+      "budgetViolations": []
+    },
+    "layoutCases": 6,
+    "layoutAxeViolations": 0,
+    "balanceScope": "Existing legacy-policy simulations; optional freight additionally verified by authored source/browser campaigns.",
+    "publication": "Exact-commit full hosted workflow and subsequent public verification pending; previous release is separately preserved.",
+    "publicBrowser": {
+      "uniqueCases": 50,
+      "initialPassed": 48,
+      "initialFailed": 2,
+      "correctedTargetedPassed": 2,
+      "initialFailure": "Temporary route.fetch direct-network configuration, corrected to inherited proxy and system CA; no game change.",
+      "singleCleanFullRun": false,
+      "diagnostics": "qa/editorial/campaign-reassessment-diagnostics.json"
+    }
+  }
+}
