@@ -1,0 +1,162 @@
+{
+  "version": 1,
+  "revision": "a7e3fea3892d78b1dea4127fa8fe55cd2c2e1252",
+  "runId": 41096690451,
+  "url": "https://github.com/cisohabitat/CyberPunk3055RPG/actions/runs/41096690451",
+  "conclusion": "failure",
+  "startedAt": "2026-10-30T17:11:51Z",
+  "updatedAt": "2026-10-30T17:32:52Z",
+  "jobs": [
+    {
+      "id": 124204162872,
+      "name": "Test",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124205931847,
+      "name": "Browser shard (phone, 1/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124205931855,
+      "name": "Browser shard (chromium, 1/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124205931887,
+      "name": "Browser shard (phone, 3/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124205931904,
+      "name": "Browser shard (phone, 2/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124205931923,
+      "name": "Browser shard (chromium, 4/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124205931930,
+      "name": "Browser shard (phone, 4/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124205931953,
+      "name": "Browser shard (firefox, 2/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124205931956,
+      "name": "Browser shard (chromium, 3/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124205932067,
+      "name": "Browser shard (chromium, 2/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124205932089,
+      "name": "Browser shard (firefox, 1/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124205932214,
+      "name": "Browser shard (firefox, 4/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124205932304,
+      "name": "Browser shard (webkit, 1/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124205932352,
+      "name": "Browser shard (webkit, 3/4)",
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    {
+      "id": 124205932408,
+      "name": "Browser shard (firefox, 3/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124205932498,
+      "name": "Browser shard (webkit, 2/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124205932556,
+      "name": "Browser shard (webkit, 4/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124214297793,
+      "name": "Browser (firefox)",
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    {
+      "id": 124214297806,
+      "name": "Browser (chromium)",
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    {
+      "id": 124214297811,
+      "name": "Browser (webkit)",
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    {
+      "id": 124214297863,
+      "name": "Browser (phone)",
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    {
+      "id": 124214628395,
+      "name": "Build",
+      "status": "completed",
+      "conclusion": "failure"
+    }
+  ],
+  "deployment": {
+    "id": "dpl_51wxABxnzhhWQnQmZabPnJZhhJzJ",
+    "status": "CANCELED",
+    "target": "production",
+    "revision": "a7e3fea3892d78b1dea4127fa8fe55cd2c2e1252",
+    "projectId": "prj_JYHAxYL8onO9SFrvFN0i5q3IepIp"
+  },
+  "failure": {
+    "jobId": 124205932352,
+    "test": "ordinary view selection retains reading anchor and Settings at1440px",
+    "attempts": 2,
+    "error": "Control not reached after240 Tabs: Settings",
+    "artifactId": 12998560918,
+    "artifactSha256": "93cf272bd27f92d79b64ee684f6b8133ea1c500b3b48282d04693a1c46ff05f1",
+    "localTraceDirectory": "/tmp/saint-phase13/failed-artifact",
+    "rootCause": "Same native WebKit reverse-Tab-after-pointer behavior reproduced on plain buttons with no game code; keyboard-entered reverse navigation and genuine forward-Tab then reverse navigation succeed."
+  },
+  "correction": "Retain every anchor/save/Settings/zoom/focus assertion. Cover keyboard and pointer paths at all3 widths; pointer path establishes actual keyboard navigation with one real forward Tab. No programmatic focus, UA branch, helper/timeout/retry/worker change or game workaround.",
+  "next": "Fresh full22-job exact-commit CI required; partial reruns and status-only repushes are not used."
+}

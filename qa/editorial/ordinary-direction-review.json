@@ -745,7 +745,7 @@
   "checks": {
     "sourceBeforeCaptionCorrection": 919,
     "focusedSourceAndDocsAfterCorrection": 4,
-    "finalBrowserCases": 34,
+    "finalBrowserCases": 37,
     "workers": 4,
     "retries": 0,
     "typeScript": true,
@@ -753,7 +753,12 @@
     "securityVulnerabilities": 0,
     "balanceAudits": 5,
     "budgetViolations": 0,
-    "plannedCasesPerHostedProfile": 1562
+    "plannedCasesPerHostedProfile": 1565,
+    "localWebKitFinalCases": 37,
+    "localWebKitRetries": 0,
+    "localWebKitConfiguredWorkers": 4,
+    "localChromiumFinalCases": 37,
+    "hostedFirstCandidateSourceCases": 919
   },
   "visual": {
     "reviewedAssets": [
@@ -770,5 +775,9 @@
   "precedingRelease": "qa/editorial/return-routing-release.json",
   "firstCandidate": "qa/editorial/ordinary-direction-first-candidate.json",
   "limits": "Source-familiar AI proxy with directed dice/synthetic viewports. Extra optional art navigation is counted, not claimed as faster play or an independently improved acting/AAA grade.",
-  "next": "Phase14 expressive performance; exact words/actor, connected beds, retained rejected alternatives and original fallback."
+  "next": "Phase14 expressive performance; exact words/actor, connected beds, retained rejected alternatives and original fallback.",
+  "firstHostedAttempt": "qa/editorial/ordinary-direction-first-ci.json",
+  "harnessCorrection": "Keyboard-only and pointer flows separately preserve every original anchor/save/Settings/zoom/focus assertion at320/390/1440. Pointer flow establishes keyboard navigation with one genuine forward Tab, following independent plain-HTML native WebKit reproduction. No game, media, helper, timeout, worker, retry or native skip changes.",
+  "responsiveReadiness": "Actual viewport entry and existing decoded-ready marker precede the retained decode assertion and positive natural-width assertion; native responsive adoption aborts are retained in diagnostics.",
+  "runtimeSourceUnchangedFrom": "a7e3fea3892d78b1dea4127fa8fe55cd2c2e1252"
 }

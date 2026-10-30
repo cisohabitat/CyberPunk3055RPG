@@ -1,0 +1,11 @@
+{
+  "method": "Actual installed Playwright WebKit2370 headless WPE, with four system library packages extracted under/tmp and an explicit local executable. No bypass flag, CI setting or browser binary patch; actual WPE dependencies resolve locally, while a complete GTK host preflight is not claimed.",
+  "minimalSource": "import{webkit}from'/workspace/saint-shard-fix/node_modules/@playwright/test/index.mjs';\nasync function main(){const b=await webkit.launch({executablePath:'/tmp/saint-phase13/webkit.sh'});try{for(const details of[false,true]){const p=await b.newPage({viewport:{width:1440,height:900}});await p.setContent(`<button>Settings</button>${details?'<details open><summary>Look closer</summary>':'<div>'}<div style=\"height:1000px\"></div><div role=\"group\" aria-label=\"Artwork view\"><button>Scene</button><button>Person</button><button>Detail</button></div>${details?'</details>':'</div>'}<button>City map</button>`);await p.getByRole('button',{name:'Person',exact:true}).focus();await p.getByRole('button',{name:'Detail',exact:true}).click();const rows=[];for(let i=0;i<5;i++){await p.keyboard.press('Shift+Tab');rows.push(await p.evaluate(()=>document.activeElement?.outerHTML));}console.log(details,rows);await p.close();}}finally{await b.close();}}main().catch(e=>{console.error(e);process.exitCode=1;});\n",
+  "minimalResult": "false [\n  '<button>Detail</button>',\n  '<button>Detail</button>',\n  '<button>Detail</button>',\n  '<button>Detail</button>',\n  '<button>Detail</button>'\n]\ntrue [\n  '<button>Detail</button>',\n  '<button>Detail</button>',\n  '<button>Detail</button>',\n  '<button>Detail</button>',\n  '<button>Detail</button>'\n]\n",
+  "originalAppFailure": "Error: Control not reached after 240 Tabs: <button class=\"ghost\" type=\"button\">Settings</button>",
+  "keyboardAppResult": "Settings reached",
+  "forwardThenReverseAppResult": [
+    "Settings reached"
+  ],
+  "note": "Prototype content wrapper did not affect the native behavior and was reverted. Production components and media remain exact a7e3fea bytes. Original binary traces and archive remain local; error context/screenshot and original log are committed."
+}
