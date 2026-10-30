@@ -14,6 +14,8 @@ import {visibleCampaignDialogue} from '../lib/campaign-dialogue';
 const normalized=(s:string)=>s.replace(/\s+/g,' ').trim();
 const wordInventory=(s:string)=>s.match(/\S+/g)?.sort()??[];
 const sortRows=<T,>(rows:T[])=>rows.map(r=>JSON.stringify(r)).sort();
+const precedingCSS=readFileSync('qa/editorial/decision-flow-baseline.css','utf8');
+test.beforeAll(()=>expect(createHash('sha256').update(precedingCSS).digest('hex')).toBe('720de965b213b4c919064930d65af070f83a10b97046ef745410211b74e7d18c'));
 test.beforeAll(()=>expect(createHash('sha256').update(readFileSync('qa/editorial/decision-flow-baseline.json')).digest('hex')).toBe('8df3961cea4acd02d6f04780c7e0a9c1e2045058dfde782a6dfbbdeb69bed026'));
 const saved=(page:Page)=>page.evaluate(()=>({run:localStorage.getItem('saint-shard-3055-v1'),preferences:localStorage.getItem('saint-shard-preferences'),codex:localStorage.getItem('saint-shard-codex')}));
 async function open(page:Page,state:GameState,width:number,artwork=width===320?'none':'full',paragraph=false,sound=false){
@@ -50,11 +52,23 @@ for(const original of baseline.rows)test(`nearby decisions preserve terms and im
  const originalType=original.typography.filter(r=>r.tag!=='DD'&&!(original.sceneId==='act2_craft_archive'&&r.tag==='P'&&r.text==='Description inspected')&&!(original.sceneId==='act2_workshop'&&r.tag==='P'&&r.text===reviewTerms));
  const ordered=(rows:typeof currentType)=>rows.map(r=>({...r,text:normalized(r.text)})).sort((a,b)=>(a.tag+a.text).localeCompare(b.tag+b.text)||parseFloat(a.fontSize)-parseFloat(b.fontSize));
  const types=ordered(currentType),previousTypes=ordered(originalType);expect(types.map(({tag,text})=>({tag,text}))).toEqual(previousTypes.map(({tag,text})=>({tag,text})));
- // Browser engines serialize subpixel CSS sizes differently. Less than one
- // 1/64px layout unit is allowed; the observed1px regression still fails.
- for(let i=0;i<types.length;i++)for(const key of ['fontSize','lineHeight']as const){
-  const a=parseFloat(types[i][key]),b=parseFloat(previousTypes[i][key]);if(Number.isFinite(a)&&Number.isFinite(b))expect(Math.abs(a-b)).toBeLessThan(1/64);else expect(types[i][key]).toBe(previousTypes[i][key]);
- }
+ // Compare exact computed sizes with the independent preceding stylesheet in
+ // this same engine, rather than treating Chromium serialization as Firefox's.
+ // Original text/tag inventory above remains bound to the immutable capture.
+ const precedingType=await page.getByTestId('scene').evaluate((root,css)=>{
+  const sheet=document.createElement('style');sheet.textContent=css;
+  const changed=[root,...root.querySelectorAll<HTMLElement>('.kit-commit,.decision-flow-records,[aria-label="Choice reference"]')].map(n=>({n,classes:n.getAttribute('class'),workspace:n.getAttribute('data-workspace-flow'),decision:n.getAttribute('data-decision-flow')}));
+  try{
+   root.removeAttribute('data-decision-flow');root.removeAttribute('data-workspace-flow');
+   for(const {n}of changed){n.classList.remove('kit-commit','decision-flow-records');if(n.getAttribute('aria-label')==='Choice reference')n.classList.add('decision-help');}
+   document.head.append(sheet);
+   return [...root.querySelectorAll<HTMLElement>('p,dt,h2,h3,button,summary')].filter(n=>n.getBoundingClientRect().height>0).map(n=>({tag:n.tagName,text:n.innerText,fontSize:getComputedStyle(n).fontSize,lineHeight:getComputedStyle(n).lineHeight}));
+  }finally{
+   sheet.remove();for(const {n,classes,workspace,decision}of changed)for(const [key,value]of [['class',classes],['data-workspace-flow',workspace],['data-decision-flow',decision]]as const){if(value===null)n.removeAttribute(key);else n.setAttribute(key,value);}
+  }
+ },precedingCSS);
+ const referenceType=ordered(precedingType.filter(r=>!(r.tag==='P'&&(r.text==='Selecting an option commits it.'||original.sceneId==='act2_workshop'&&r.text===reviewTerms))));
+ expect(types).toEqual(referenceType);
  if(original.sceneId==='act2_workshop')await expect(page.locator('.kit-review-terms')).toHaveText(reviewTerms);
  expect(current.actions.map(({gap,height,...rest})=>({...rest,text:normalized(rest.text)}))).toEqual(original.actions.map(({gap,height,...rest})=>({...rest,text:normalized(rest.text)})));
  const first=current.actions.find(a=>!a.disabled)!,oldFirst=original.actions.find(a=>!a.disabled)!;

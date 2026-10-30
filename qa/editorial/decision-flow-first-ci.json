@@ -1,0 +1,166 @@
+{
+  "revision": "d3806c5188a9977fe47476f39c322330d53fadb4",
+  "runId": 41061066022,
+  "url": "https://github.com/cisohabitat/CyberPunk3055RPG/actions/runs/41061066022",
+  "status": "failed candidate, never published",
+  "jobs": [
+    {
+      "id": 124080624286,
+      "name": "Test",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124082289364,
+      "name": "Browser shard (firefox, 1/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124082289365,
+      "name": "Browser shard (webkit, 4/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124082289379,
+      "name": "Browser shard (firefox, 2/4)",
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    {
+      "id": 124082289391,
+      "name": "Browser shard (firefox, 4/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124082289401,
+      "name": "Browser shard (webkit, 2/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124082289419,
+      "name": "Browser shard (phone, 3/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124082289485,
+      "name": "Browser shard (webkit, 3/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124082289486,
+      "name": "Browser shard (chromium, 1/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124082289499,
+      "name": "Browser shard (chromium, 2/4)",
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    {
+      "id": 124082289502,
+      "name": "Browser shard (phone, 4/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124082289512,
+      "name": "Browser shard (phone, 2/4)",
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    {
+      "id": 124082289561,
+      "name": "Browser shard (firefox, 3/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124082289589,
+      "name": "Browser shard (webkit, 1/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124082289593,
+      "name": "Browser shard (chromium, 4/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124082289602,
+      "name": "Browser shard (phone, 1/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124082289644,
+      "name": "Browser shard (chromium, 3/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124089947486,
+      "name": "Browser (webkit)",
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    {
+      "id": 124089947578,
+      "name": "Browser (firefox)",
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    {
+      "id": 124089947663,
+      "name": "Browser (phone)",
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    {
+      "id": 124089947735,
+      "name": "Browser (chromium)",
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    {
+      "id": 124090207508,
+      "name": "Build",
+      "status": "completed",
+      "conclusion": "failure"
+    }
+  ],
+  "findings": {
+    "chromiumPhone": {
+      "cases": 3,
+      "scenes": [
+        "act2_craft_archive/390",
+        "act3_testimony_review/390",
+        "act3_testimony_hearing/390"
+      ],
+      "actual": [
+        1609,
+        1375,
+        1375
+      ],
+      "limits": [
+        1551.75,
+        1362.75,
+        1362.75
+      ]
+    },
+    "firefox": {
+      "cases": 12,
+      "issue": "Cross-engine computed typography serialization differs by0.02px from Chromium reference; use independent preceding stylesheet and exact same-browser equality, no tolerance increase."
+    },
+    "webkit": "All4 shard jobs passed; aggregate correctly blocked by global shard gate."
+  },
+  "correction": "Tighter scoped spacing and inline record headings with full source text/type retained; exact same-engine old stylesheet typography control. Original baseline and action-distance budget unchanged."
+}

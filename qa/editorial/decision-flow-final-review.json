@@ -1,0 +1,894 @@
+{
+  "phase": 11,
+  "status": "Corrected final source candidate; exact-commit CI/public verification remains separate",
+  "revision": "d3806c5188a9977fe47476f39c322330d53fadb4",
+  "dirty": true,
+  "sourceFingerprint": "c1e0c3c0492e3b10b02a5cc1403f2ea44e031759c5d74dcbcf6e1a8c9daf77f7",
+  "grade": 8.9,
+  "initialCandidate": "qa/editorial/decision-flow-review.json",
+  "initialCI": "qa/editorial/decision-flow-first-ci.json",
+  "baseline": "qa/editorial/decision-flow-baseline.json",
+  "baselineSha256": "8df3961cea4acd02d6f04780c7e0a9c1e2045058dfde782a6dfbbdeb69bed026",
+  "precedingStylesheet": "qa/editorial/decision-flow-baseline.css",
+  "precedingStylesheetSha256": "720de965b213b4c919064930d65af070f83a10b97046ef745410211b74e7d18c",
+  "typography": "Exact computed sizes against independent preceding stylesheet within each browser; original text/tag/control capture and action-distance budget unchanged",
+  "profiles": [
+    {
+      "id": "deferred",
+      "visits": 63,
+      "reloads": 62,
+      "tabs": 567,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 0,
+        "strain": 3,
+        "rolls": [
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "evidence": "qa/editorial/decision-flow-final-runs/deferred.json",
+      "sha256": "0153d49bd92164bb1d700a2ae4ee1f23de7671ea732f29c272076a24cf1e2539"
+    },
+    {
+      "id": "denied",
+      "visits": 82,
+      "reloads": 81,
+      "tabs": 693,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_witness",
+        "creds": 370,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "evidence": "qa/editorial/decision-flow-final-runs/denied.json",
+      "sha256": "30aac23671331ac8729c0675dc7cc8b488e5186a879ea647b6e553a53416e510"
+    },
+    {
+      "id": "names",
+      "visits": 89,
+      "reloads": 88,
+      "tabs": 747,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 390,
+        "strain": 3,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "evidence": "qa/editorial/decision-flow-final-runs/names.json",
+      "sha256": "3764ec40f3e7efbf3aa34798021dde94f31f85fb6941983b0aca705b5b4c382d"
+    },
+    {
+      "id": "listed-sound",
+      "visits": 87,
+      "reloads": 86,
+      "tabs": 919,
+      "completedVoices": 41,
+      "shotReviews": 51,
+      "interruptions": 2,
+      "final": {
+        "sceneId": "ending_listed",
+        "creds": 470,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "evidence": "qa/editorial/decision-flow-final-runs/listed-sound.json",
+      "sha256": "67371922e389b92f24140099775a63c28e6590df0bc0b308bea20e577c1cc803"
+    },
+    {
+      "id": "nerve",
+      "visits": 77,
+      "reloads": 30,
+      "tabs": 529,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 350,
+        "strain": 5,
+        "rolls": [
+          1,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "evidence": "qa/editorial/decision-flow-final-runs/nerve.json",
+      "sha256": "e38a85ed89c04872379c0c927b70658f7d8a41d58bd62d9015e38a8d9df63067"
+    },
+    {
+      "id": "face-failed",
+      "visits": 75,
+      "reloads": 27,
+      "tabs": 576,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 345,
+        "strain": 0,
+        "rolls": [
+          10,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      "evidence": "qa/editorial/decision-flow-final-runs/face-failed.json",
+      "sha256": "84dc0a1bbc5d23ae4744079614567931650033295e1fd4d87a0c82763abb0932"
+    },
+    {
+      "id": "archive-failed",
+      "visits": 64,
+      "reloads": 63,
+      "tabs": 578,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 0,
+        "strain": 4,
+        "rolls": [
+          1,
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "evidence": "qa/editorial/decision-flow-final-runs/archive-failed.json",
+      "sha256": "3d0a2d1b5c9cad70b191dd30390fb4e7df5a41c4dbf754c79eb3518967bdf212"
+    },
+    {
+      "id": "canceled",
+      "visits": 75,
+      "reloads": 74,
+      "tabs": 616,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 390,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "evidence": "qa/editorial/decision-flow-final-runs/canceled.json",
+      "sha256": "69e762196ba8df6c2797e593c7de0618f846a5e1b64e9be23e611ee09105d434"
+    },
+    {
+      "id": "nerve-handling-failed",
+      "visits": 76,
+      "reloads": 28,
+      "tabs": 573,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 355,
+        "strain": 3,
+        "rolls": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      "evidence": "qa/editorial/decision-flow-final-runs/nerve-handling-failed.json",
+      "sha256": "54f0245a5ae1012368cc752b877a116a981600724af20936d52d22c9babdf9a5"
+    },
+    {
+      "id": "ghost-routing",
+      "visits": 80,
+      "reloads": 32,
+      "tabs": 631,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 380,
+        "strain": 2,
+        "rolls": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      "evidence": "qa/editorial/decision-flow-final-runs/ghost-routing.json",
+      "sha256": "2428125043215a61ad4920c13c5281b89a76a3460463fea5548e6ea55a888c91"
+    },
+    {
+      "id": "harness-listed",
+      "visits": 81,
+      "reloads": 80,
+      "tabs": 585,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_listed",
+        "creds": 290,
+        "strain": 4,
+        "rolls": [
+          1,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "evidence": "qa/editorial/decision-flow-final-runs/harness-listed.json",
+      "sha256": "b01bdf2ad94250f620132596b5e874c5f5735d0c8e17a22af517ff2820921967"
+    },
+    {
+      "id": "failed-desk",
+      "visits": 79,
+      "reloads": 78,
+      "tabs": 569,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 330,
+        "strain": 5,
+        "rolls": [
+          1,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "evidence": "qa/editorial/decision-flow-final-runs/failed-desk.json",
+      "sha256": "dd136b179fbfeba097e05ce6977cb94d34b23a0e0b1341bf4b830f00f15e173b"
+    },
+    {
+      "id": "scarce",
+      "visits": 88,
+      "reloads": 87,
+      "tabs": 744,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 0,
+        "strain": 5,
+        "rolls": [
+          1,
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "evidence": "qa/editorial/decision-flow-final-runs/scarce.json",
+      "sha256": "5fa0b03cb1742e2f201496207033825af00c2617aa8d44e1641ecefd9b1c43eb"
+    }
+  ],
+  "totals": {
+    "visits": 1016,
+    "reloads": 816,
+    "tabs": 8327,
+    "completedVoices": 41,
+    "shotReviews": 51,
+    "interruptions": 2
+  },
+  "tabsSavedFromPhase10": 75,
+  "measurements": [
+    {
+      "sceneId": "act2_workshop",
+      "width": 320,
+      "artwork": "none",
+      "firstBefore": 5541,
+      "firstAfter": 1726,
+      "reductionPercent": 68.85,
+      "actions": [
+        {
+          "id": "choice-buy-archive-probe",
+          "before": 5541,
+          "after": 1726
+        },
+        {
+          "id": "choice-buy-chair-harness",
+          "before": 6035,
+          "after": 2966
+        },
+        {
+          "id": "choice-buy-desk-guide",
+          "before": 6681,
+          "after": 4372
+        },
+        {
+          "id": "choice-buy-route-shroud",
+          "before": 7268,
+          "after": 5609
+        },
+        {
+          "id": "choice-leave-workshop",
+          "before": 7808,
+          "after": 6276
+        }
+      ]
+    },
+    {
+      "sceneId": "act2_workshop",
+      "width": 390,
+      "artwork": "full",
+      "firstBefore": 4547,
+      "firstAfter": 1409,
+      "reductionPercent": 69.01,
+      "actions": [
+        {
+          "id": "choice-buy-archive-probe",
+          "before": 4547,
+          "after": 1409
+        },
+        {
+          "id": "choice-buy-chair-harness",
+          "before": 4913,
+          "after": 2451
+        },
+        {
+          "id": "choice-buy-desk-guide",
+          "before": 5396,
+          "after": 3568
+        },
+        {
+          "id": "choice-buy-route-shroud",
+          "before": 5809,
+          "after": 4551
+        },
+        {
+          "id": "choice-leave-workshop",
+          "before": 6175,
+          "after": 5061
+        }
+      ]
+    },
+    {
+      "sceneId": "act2_workshop",
+      "width": 1440,
+      "artwork": "full",
+      "firstBefore": 2421,
+      "firstAfter": 1068,
+      "reductionPercent": 55.89,
+      "actions": [
+        {
+          "id": "choice-buy-archive-probe",
+          "before": 2421,
+          "after": 1068
+        },
+        {
+          "id": "choice-buy-chair-harness",
+          "before": 2631,
+          "after": 1167
+        },
+        {
+          "id": "choice-buy-desk-guide",
+          "before": 2888,
+          "after": 2423
+        },
+        {
+          "id": "choice-buy-route-shroud",
+          "before": 3121,
+          "after": 2423
+        },
+        {
+          "id": "choice-leave-workshop",
+          "before": 3332,
+          "after": 3140
+        }
+      ]
+    },
+    {
+      "sceneId": "act2_craft_archive",
+      "width": 320,
+      "artwork": "none",
+      "firstBefore": 2071,
+      "firstAfter": 1393,
+      "reductionPercent": 32.74,
+      "actions": [
+        {
+          "id": "choice-craft-question-issuer",
+          "before": 2071,
+          "after": 1393
+        },
+        {
+          "id": "choice-craft-question-movement",
+          "before": 2326,
+          "after": 1643
+        },
+        {
+          "id": "choice-craft-question-conflate",
+          "before": 2614,
+          "after": 1928
+        },
+        {
+          "id": "choice-craft-leave-archive",
+          "before": 2936,
+          "after": 2245
+        }
+      ]
+    },
+    {
+      "sceneId": "act2_craft_archive",
+      "width": 390,
+      "artwork": "full",
+      "firstBefore": 2069,
+      "firstAfter": 1423,
+      "reductionPercent": 31.22,
+      "actions": [
+        {
+          "id": "choice-craft-question-issuer",
+          "before": 2069,
+          "after": 1423
+        },
+        {
+          "id": "choice-craft-question-movement",
+          "before": 2223,
+          "after": 1572
+        },
+        {
+          "id": "choice-craft-question-conflate",
+          "before": 2410,
+          "after": 1756
+        },
+        {
+          "id": "choice-craft-leave-archive",
+          "before": 2631,
+          "after": 1973
+        }
+      ]
+    },
+    {
+      "sceneId": "act2_craft_archive",
+      "width": 1440,
+      "artwork": "full",
+      "firstBefore": 1244,
+      "firstAfter": 689,
+      "reductionPercent": 44.61,
+      "actions": [
+        {
+          "id": "choice-craft-question-issuer",
+          "before": 1244,
+          "after": 689
+        },
+        {
+          "id": "choice-craft-question-movement",
+          "before": 1365,
+          "after": 805
+        },
+        {
+          "id": "choice-craft-question-conflate",
+          "before": 1485,
+          "after": 921
+        },
+        {
+          "id": "choice-craft-leave-archive",
+          "before": 1605,
+          "after": 1037
+        }
+      ]
+    },
+    {
+      "sceneId": "act2_craft_archive_issuer",
+      "width": 320,
+      "artwork": "none",
+      "firstBefore": 631,
+      "firstAfter": 376,
+      "reductionPercent": 40.41,
+      "actions": [
+        {
+          "id": "choice-craft-target-cancellation",
+          "before": 631,
+          "after": 376
+        },
+        {
+          "id": "choice-craft-target-approval",
+          "before": 852,
+          "after": 593
+        },
+        {
+          "id": "choice-craft-change-question",
+          "before": 1073,
+          "after": 810
+        },
+        {
+          "id": "choice-craft-leave-archive",
+          "before": 1294,
+          "after": 1027
+        }
+      ]
+    },
+    {
+      "sceneId": "act2_craft_archive_issuer",
+      "width": 390,
+      "artwork": "full",
+      "firstBefore": 929,
+      "firstAfter": 674,
+      "reductionPercent": 27.45,
+      "actions": [
+        {
+          "id": "choice-craft-target-cancellation",
+          "before": 929,
+          "after": 674
+        },
+        {
+          "id": "choice-craft-target-approval",
+          "before": 1083,
+          "after": 824
+        },
+        {
+          "id": "choice-craft-change-question",
+          "before": 1270,
+          "after": 1007
+        },
+        {
+          "id": "choice-craft-leave-archive",
+          "before": 1458,
+          "after": 1191
+        }
+      ]
+    },
+    {
+      "sceneId": "act2_craft_archive_issuer",
+      "width": 1440,
+      "artwork": "full",
+      "firstBefore": 474,
+      "firstAfter": 276,
+      "reductionPercent": 41.77,
+      "actions": [
+        {
+          "id": "choice-craft-target-cancellation",
+          "before": 474,
+          "after": 276
+        },
+        {
+          "id": "choice-craft-target-approval",
+          "before": 561,
+          "after": 359
+        },
+        {
+          "id": "choice-craft-change-question",
+          "before": 648,
+          "after": 441
+        },
+        {
+          "id": "choice-craft-leave-archive",
+          "before": 734,
+          "after": 524
+        }
+      ]
+    },
+    {
+      "sceneId": "act2_route_exit",
+      "width": 320,
+      "artwork": "none",
+      "firstBefore": 1941,
+      "firstAfter": 1363,
+      "reductionPercent": 29.78,
+      "actions": [
+        {
+          "id": "choice-route-exit-ramp",
+          "before": 1941,
+          "after": 1363
+        },
+        {
+          "id": "choice-route-exit-gap",
+          "before": 2219,
+          "after": 1637
+        },
+        {
+          "id": "choice-route-exit-walk",
+          "before": 2544,
+          "after": 1958
+        },
+        {
+          "id": "choice-replan-kerr-entry",
+          "before": 2903,
+          "after": 2312
+        },
+        {
+          "id": "choice-pause-kerr-exit",
+          "before": 3023,
+          "after": 2429
+        }
+      ]
+    },
+    {
+      "sceneId": "act2_route_exit",
+      "width": 390,
+      "artwork": "full",
+      "firstBefore": 1734,
+      "firstAfter": 1131,
+      "reductionPercent": 34.78,
+      "actions": [
+        {
+          "id": "choice-route-exit-ramp",
+          "before": 1734,
+          "after": 1131
+        },
+        {
+          "id": "choice-route-exit-gap",
+          "before": 1989,
+          "after": 1382
+        },
+        {
+          "id": "choice-route-exit-walk",
+          "before": 2233,
+          "after": 1622
+        },
+        {
+          "id": "choice-replan-kerr-entry",
+          "before": 2511,
+          "after": 1896
+        },
+        {
+          "id": "choice-pause-kerr-exit",
+          "before": 2631,
+          "after": 2013
+        }
+      ]
+    },
+    {
+      "sceneId": "act2_route_exit",
+      "width": 1440,
+      "artwork": "full",
+      "firstBefore": 1190,
+      "firstAfter": 837,
+      "reductionPercent": 29.66,
+      "actions": [
+        {
+          "id": "choice-route-exit-ramp",
+          "before": 1190,
+          "after": 837
+        },
+        {
+          "id": "choice-route-exit-gap",
+          "before": 1339,
+          "after": 981
+        },
+        {
+          "id": "choice-route-exit-walk",
+          "before": 1487,
+          "after": 1125
+        },
+        {
+          "id": "choice-replan-kerr-entry",
+          "before": 1635,
+          "after": 1270
+        },
+        {
+          "id": "choice-pause-kerr-exit",
+          "before": 1722,
+          "after": 1352
+        }
+      ]
+    },
+    {
+      "sceneId": "act3_testimony_review",
+      "width": 320,
+      "artwork": "none",
+      "firstBefore": 1860,
+      "firstAfter": 1308,
+      "reductionPercent": 29.68,
+      "actions": [
+        {
+          "id": "choice-scope-bounded",
+          "before": 1860,
+          "after": 1308
+        },
+        {
+          "id": "choice-skip-testimony",
+          "before": 2148,
+          "after": 1592
+        }
+      ]
+    },
+    {
+      "sceneId": "act3_testimony_review",
+      "width": 390,
+      "artwork": "full",
+      "firstBefore": 1817,
+      "firstAfter": 1320,
+      "reductionPercent": 27.35,
+      "actions": [
+        {
+          "id": "choice-scope-bounded",
+          "before": 1817,
+          "after": 1320
+        },
+        {
+          "id": "choice-skip-testimony",
+          "before": 2038,
+          "after": 1537
+        }
+      ]
+    },
+    {
+      "sceneId": "act3_testimony_review",
+      "width": 1440,
+      "artwork": "full",
+      "firstBefore": 1061,
+      "firstAfter": 684,
+      "reductionPercent": 35.53,
+      "actions": [
+        {
+          "id": "choice-scope-bounded",
+          "before": 1061,
+          "after": 684
+        },
+        {
+          "id": "choice-skip-testimony",
+          "before": 1182,
+          "after": 801
+        }
+      ]
+    },
+    {
+      "sceneId": "act3_testimony_hearing",
+      "width": 320,
+      "artwork": "none",
+      "firstBefore": 1860,
+      "firstAfter": 1308,
+      "reductionPercent": 29.68,
+      "actions": [
+        {
+          "id": "choice-answer-open-question",
+          "before": 1860,
+          "after": 1308
+        },
+        {
+          "id": "choice-claim-key-anyway",
+          "before": 2115,
+          "after": 1558
+        }
+      ]
+    },
+    {
+      "sceneId": "act3_testimony_hearing",
+      "width": 390,
+      "artwork": "full",
+      "firstBefore": 1817,
+      "firstAfter": 1320,
+      "reductionPercent": 27.35,
+      "actions": [
+        {
+          "id": "choice-answer-open-question",
+          "before": 1817,
+          "after": 1320
+        },
+        {
+          "id": "choice-claim-key-anyway",
+          "before": 2038,
+          "after": 1537
+        }
+      ]
+    },
+    {
+      "sceneId": "act3_testimony_hearing",
+      "width": 1440,
+      "artwork": "full",
+      "firstBefore": 1032,
+      "firstAfter": 684,
+      "reductionPercent": 33.72,
+      "actions": [
+        {
+          "id": "choice-answer-open-question",
+          "before": 1032,
+          "after": 684
+        },
+        {
+          "id": "choice-claim-key-anyway",
+          "before": 1152,
+          "after": 801
+        }
+      ]
+    }
+  ],
+  "firstReductionRange": [
+    27.35,
+    69.01
+  ],
+  "acceptance": "qa/editorial/decision-flow-final-acceptance.json",
+  "additionalCanonicalVerification": [
+    {
+      "id": "harness-listed",
+      "visits": 81,
+      "canonicalTextAndChosenActionAtEveryCheckpoint": true,
+      "exactFinal": true,
+      "quietNoArtAndDisposal": true
+    },
+    {
+      "id": "failed-desk",
+      "visits": 79,
+      "canonicalTextAndChosenActionAtEveryCheckpoint": true,
+      "exactFinal": true,
+      "quietNoArtAndDisposal": true
+    },
+    {
+      "id": "scarce",
+      "visits": 88,
+      "canonicalTextAndChosenActionAtEveryCheckpoint": true,
+      "exactFinal": true,
+      "quietNoArtAndDisposal": true
+    }
+  ],
+  "validation": {
+    "focusedBrowser": 57,
+    "retries": 0,
+    "workers": 4,
+    "browser": "Playwright bundled Chromium156",
+    "focusedLogSha256": "4ecf1da634a68751b72d49a42f3f7806b7f4223496b46db6f8fc8fd83040b1db",
+    "sourceTests": 901,
+    "sourceLogSha256": "4bf379ab7edbe588157e86f3548c1eba94e091288515d451a82a0e44dd65103d",
+    "build": "passed",
+    "buildLogSha256": "997baf17f03a31cb941423d96f7c63a52a70383a07baa1d3fc615c44002bf9a8"
+  },
+  "limits": "AI proxy, directed dice, synthetic viewports; not physical-device or independent expressive acceptance. Source census still leaves12 scenes unvisited. Local WebKit dependencies and Firefox profile errors retained; normal hosted full four-profile gate mandatory.",
+  "report": "docs/DECISION_FLOW_PHASE11.md",
+  "nextPhase": "Phase12 broader encounter/editorial craft with matching media; grade stays8.9 provisional"
+}

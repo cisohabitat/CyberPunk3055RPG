@@ -1837,3 +1837,16 @@ html[data-motion="reduce"] .location-entry, html[data-motion="reduce"] .portrait
 .kit-commit .choice { padding-inline: .75rem; }
 .kit-exit-review { display: inline-flex; align-items: center; min-height: 44px; max-width: 100%; margin-block: .4rem; white-space: normal; }
 .scene[data-decision-flow="nearby"] #campaign-choice-leave-workshop { scroll-margin-block-start: calc(var(--header-h, 0px) + 1rem); }
+.scene[data-decision-flow="nearby"] .decision-context { margin-block: .25rem; }
+.scene[data-decision-flow="nearby"] .testimony-brief > .testimony-sources { margin-block: .25rem; }
+.scene[data-decision-flow="nearby"] .question-records h3:has(+ p),
+.scene[data-decision-flow="nearby"] .question-records h3 + p { display: inline; }
+.scene[data-decision-flow="nearby"] .question-desk > h2,
+.scene[data-decision-flow="nearby"] .question-desk > h2 + p { display: inline; }
+.scene[data-decision-flow="nearby"] .question-records { margin-block: .1rem; gap: .1rem; }
+.scene[data-decision-flow="nearby"] .question-records > li { padding-block: .05rem; }
+.scene[data-decision-flow="nearby"] .question-desk { padding-block: .1rem; }
+.scene[data-decision-flow="nearby"] .campaign-thread { padding-inline: 0; border-inline: 0; }
+.scene[data-decision-flow="nearby"] .testimony-brief > .testimony-sources > div + div { margin-top: .1rem; }
+.scene[data-decision-flow="nearby"] .testimony-brief .source-ledger { margin-top: .25rem; }
+.scene[data-decision-flow="nearby"] .question-desk { margin-inline: -.5rem; }
