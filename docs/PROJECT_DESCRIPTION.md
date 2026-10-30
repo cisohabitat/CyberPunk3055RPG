@@ -1,6 +1,6 @@
 # Saint Shard — project description
 
-The latest [Phase 10 review](CAMPAIGN_REASSESSMENT_PHASE10.md) gives a provisional internal 8.9/10 (weighted 8.860), using thirteen fresh public keyboard campaigns and the unchanged rubric. The current catalog has 254 scenes, 771 raw choices, 231 authored routes and 164 primary artwork entries. This QA/documentation review preserves game/media/saves and prioritizes equipment/workspace flow next; it does not claim independent AAA acceptance. Earlier phase figures below are historical.
+The latest feature is [Phase 13 ordinary scene direction](ORDINARY_SCENE_DIRECTION_PHASE13.md): optional setting/person/detail views through Kerr’s depot conversation, with unchanged story, actual conduct portraits, voices and saves. The current catalog has 260 scenes, 790 raw choices, 241 authored routes and 164 primary artwork entries. The last [weighted review](CAMPAIGN_REASSESSMENT_PHASE10.md) remains a provisional internal 8.9/10 (8.860); expressive performance is the next phase. Earlier phase figures below are historical.
 
 ## Short repository description
 
@@ -101,3 +101,5 @@ The [Phase 11 equipment/decision-flow update](DECISION_FLOW_PHASE11.md) brings r
 
 
 The [return-path encounter](RETURN_ROUTING_PHASE12.md) gives trained Ghost runners an optional inspected routing decision and a Dispatcher with a practical concern: a packet that can find its way back. Six scenes, ten exact-script stock voice clips and explicit reused art accompany success, failed routing, cancellation, refusal and unfinished returns. The catalog contains 260 scenes, 790 raw choices, 241 routes and 164 gallery works. The internal grade stays 8.9 provisional.
+
+Optional **Look closer** views stage Kerr’s depot conversation with its existing setting, listening portrait and neutral counter detail after the story decisions. [Phase13 report](ORDINARY_SCENE_DIRECTION_PHASE13.md).

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ordinary-shared",
+    "route": "qa/routes/district-public-work.json",
+    "width": 390,
+    "artwork": "full",
+    "reading": "all",
+    "sound": false,
+    "shots": false,
+    "ordinaryShots": true
+  },
+  {
+    "id": "ordinary-private",
+    "route": "qa/routes/district-private-rest.json",
+    "width": 320,
+    "artwork": "none",
+    "reading": "paragraph",
+    "sound": false,
+    "shots": false,
+    "ordinaryShots": false
+  },
+  {
+    "id": "ordinary-refused",
+    "route": "qa/routes/district-breach-denied.json",
+    "width": 390,
+    "artwork": "full",
+    "reading": "all",
+    "sound": true,
+    "shots": false,
+    "ordinaryShots": true
+  }
+]

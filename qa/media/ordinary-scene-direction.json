@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "phase": 13,
+  "scope": "One complete ordinary Kerr entry, disclosure decision and conditional response. Optional art only; preserve all canonical story, current conduct portrait, actor and recording bytes.",
+  "stages": [
+    {
+      "scene": {
+        "src": "/art/stall.jpg",
+        "small": "/art/stall.jpg",
+        "caption": "Ward Four · beneath the awning",
+        "description": "An amber-lit cooking counter and empty stool overlook rainy walkways. This setting view leaves Kerr and your private notes outside the frame; no disclosure or introduction is depicted."
+      },
+      "label": "Kerr's counter · before you share",
+      "speaker": "Kerr",
+      "person": {
+        "src": "/art/kerr-listening-wide.jpg",
+        "small": "/art/kerr-listening-wide-small.jpg",
+        "caption": "Kerr · under the awning",
+        "description": "Kerr listens beneath amber stall light in his worn black raincoat and scarf. His weathered face remains serious; hands, case and brace are outside the frame. No handover, cure or forgiveness is shown."
+      },
+      "detail": {
+        "src": "/art/stall-quiet-detail.jpg",
+        "small": "/art/stall-quiet-detail-small.jpg",
+        "caption": "The counter · a quiet corner",
+        "description": "A chipped cup, its pale ring and a folded blank paper occupy a worn wooden tabletop corner. The floor and case location remain outside the frame; no delivery, recipient entry, payment or treatment is depicted."
+      }
+    },
+    {
+      "scene": {
+        "src": "/art/stall.jpg",
+        "small": "/art/stall.jpg",
+        "caption": "Ward Four · the counter remains",
+        "description": "The same sheltered cooking counter and empty stool overlook the wet walkway. The view depicts no agreed introduction, recipient entry, wage, recovery or erased breach."
+      },
+      "label": "Kerr's counter · his answer",
+      "speaker": "Kerr",
+      "person": {
+        "src": "/art/kerr-listening-wide.jpg",
+        "small": "/art/kerr-listening-wide-small.jpg",
+        "caption": "Kerr · under the awning",
+        "description": "Kerr listens beneath amber stall light in his worn black raincoat and scarf. His weathered face remains serious; hands, case and brace are outside the frame. No handover, cure or forgiveness is shown."
+      },
+      "detail": {
+        "src": "/art/stall-quiet-detail.jpg",
+        "small": "/art/stall-quiet-detail-small.jpg",
+        "caption": "The counter · a quiet corner",
+        "description": "A chipped cup, its pale ring and a folded blank paper occupy a worn wooden tabletop corner. The floor and case location remain outside the frame; no delivery, recipient entry, payment or treatment is depicted."
+      }
+    }
+  ],
+  "assets": [
+    {
+      "path": "public/art/stall.jpg",
+      "sha256": "c77892d16439f0430abcbd058c36530c0d17be366c95a89f486dd3c59dc60969",
+      "review": "Existing painting reused. Identity, no visible hands, neutral props, no depicted agreement, docket, payment, recipient, treatment or forgiveness."
+    },
+    {
+      "path": "public/art/kerr-listening-wide.jpg",
+      "sha256": "645155236e28715723c33a630566578b8f08fd4667798a842170711de67ffeba",
+      "review": "Existing painting reused. Identity, no visible hands, neutral props, no depicted agreement, docket, payment, recipient, treatment or forgiveness."
+    },
+    {
+      "path": "public/art/kerr-listening-wide-small.jpg",
+      "sha256": "fe23b9441944fac11c5fb0468277c30ec88bb3f2926780dad5ffe4902b4c9160",
+      "review": "Existing painting reused. Identity, no visible hands, neutral props, no depicted agreement, docket, payment, recipient, treatment or forgiveness."
+    },
+    {
+      "path": "public/art/stall-quiet-detail.jpg",
+      "sha256": "1e98057d1122f09c519fd21b34df8481c1e65d994b387a14aa169dc86e12770a",
+      "review": "Existing painting reused. Identity, no visible hands, neutral props, no depicted agreement, docket, payment, recipient, treatment or forgiveness."
+    },
+    {
+      "path": "public/art/stall-quiet-detail-small.jpg",
+      "sha256": "f5ffaa5a3505f4b8e19df39acf4d7fd9db1b8f73e39640b2141ecc2c3f997fbe",
+      "review": "Existing painting reused. Identity, no visible hands, neutral props, no depicted agreement, docket, payment, recipient, treatment or forgiveness."
+    }
+  ],
+  "artDecision": "Supplemental optional scene/person/detail views after canonical choices. The preceding scene-art portrait decisions remain authoritative for the default presentation and current conduct. Opening is deliberate, loads one view, changes no source/permission/knowledge. Existing provenance and gallery entries remain unchanged.",
+  "voiceDecision": "No source words or actor changed. Reuse every exact bound stock Kerr clip; natural playback, Stop, mute and cancellation remain acceptance gates.",
+  "newScenes": [],
+  "newRoutes": [],
+  "newMedia": [],
+  "baseline": "qa/editorial/ordinary-direction-baseline.json"
+}

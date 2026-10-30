@@ -1771,6 +1771,12 @@ html[data-motion="reduce"] .location-entry, html[data-motion="reduce"] .portrait
 .sequence-shots button { min-height: 45px; min-width: 75px; }
 .sequence-shots button[aria-pressed="true"] { color: var(--cyan); border-color: var(--cyan); }
 
+/* Optional ordinary-scene views follow decisions; default reading geometry stays intact. */
+.ordinary-artwork { clear: both; margin-block: 1.25rem; padding: .8rem 1rem; border: 1px solid var(--line); }
+.ordinary-artwork > summary { min-height: 45px; cursor: pointer; overflow-wrap: anywhere; }
+.ordinary-artwork .scene-illustration { margin-block: .75rem; }
+.ordinary-artwork .scene-illustration figcaption > span { min-block-size: 3.2em; }
+
 /* Saved context follows ordinary decisions; task preparation stays at its controls. */
 .decision-records { margin-block-start: 2rem; padding-block-start: 1rem; border-top: 1px solid var(--line); scroll-margin-block-start: calc(var(--header-h, 0px) + 1rem); }
 .decision-records > h2 { font: 600 1.2rem/1.4 var(--font-display), sans-serif; }

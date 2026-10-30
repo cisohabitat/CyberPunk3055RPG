@@ -1,0 +1,774 @@
+{
+  "version": 1,
+  "phase": 13,
+  "status": "Validated dirty candidate; exact-commit hosted CI and public release remain separate",
+  "revision": "9d480a19127cb573910f61e11194ec5a5388e90e",
+  "dirty": true,
+  "sourceFingerprint": "5b901a3708b81d926bb88be1a91d3f9af7c094551bf7d492c00e2e88f70d6f57",
+  "grade": 8.9,
+  "weightedGrade": 8.86,
+  "scope": "One complete ordinary Kerr disclosure/reaction sequence;2 explicit optional view stages,3 existing paintings,0 new scenes/routes/media or changed quotation/actor",
+  "profiles": [
+    {
+      "id": "deferred",
+      "visits": 63,
+      "reloads": 62,
+      "tabs": 567,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 0,
+        "strain": 3,
+        "rolls": [
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "report": "qa/editorial/ordinary-direction-runs/deferred.json",
+      "sha256": "897c8f34894556150510a8331b0d92a843b6b1bb3a21cd65138bb326e81b8ab6"
+    },
+    {
+      "id": "denied",
+      "visits": 82,
+      "reloads": 81,
+      "tabs": 693,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_witness",
+        "creds": 370,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "report": "qa/editorial/ordinary-direction-runs/denied.json",
+      "sha256": "a360120a3e3d46871f514c7b42bcfee008ee8d6f2016f2396c923af30a6dba2e"
+    },
+    {
+      "id": "names",
+      "visits": 89,
+      "reloads": 88,
+      "tabs": 747,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 390,
+        "strain": 3,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "report": "qa/editorial/ordinary-direction-runs/names.json",
+      "sha256": "5d27dc042cfb2dfe1300c7d8e15127c5a5436e710a339fed422e3b0b2b9feaaa"
+    },
+    {
+      "id": "listed-sound",
+      "visits": 87,
+      "reloads": 86,
+      "tabs": 919,
+      "voices": 41,
+      "artViews": 51,
+      "ordinaryArtViews": 0,
+      "interruptions": 2,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_listed",
+        "creds": 470,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "report": "qa/editorial/ordinary-direction-runs/listed-sound.json",
+      "sha256": "4cfa56d5ae0168fefe85868bc272e80a66c5cd8452fa2c7cccea6cd946ddf437"
+    },
+    {
+      "id": "nerve",
+      "visits": 77,
+      "reloads": 30,
+      "tabs": 529,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 350,
+        "strain": 5,
+        "rolls": [
+          1,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "report": "qa/editorial/ordinary-direction-runs/nerve.json",
+      "sha256": "deca45984655a7fd1975c5b9c5f679275c7ee17477aa52af76aa036aa9547dcd"
+    },
+    {
+      "id": "face-failed",
+      "visits": 75,
+      "reloads": 27,
+      "tabs": 576,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 345,
+        "strain": 0,
+        "rolls": [
+          10,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      "report": "qa/editorial/ordinary-direction-runs/face-failed.json",
+      "sha256": "b38adb168f1d826441d67b5b50dbf0ab4a5e39818843592f230c56eaefb98722"
+    },
+    {
+      "id": "archive-failed",
+      "visits": 64,
+      "reloads": 63,
+      "tabs": 578,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 0,
+        "strain": 4,
+        "rolls": [
+          1,
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "report": "qa/editorial/ordinary-direction-runs/archive-failed.json",
+      "sha256": "c144f56a8453d9a7594a8f2c907c848f3096bf08dc63fa7d7e74a144d8be9d7e"
+    },
+    {
+      "id": "canceled",
+      "visits": 75,
+      "reloads": 74,
+      "tabs": 616,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 390,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "report": "qa/editorial/ordinary-direction-runs/canceled.json",
+      "sha256": "c76ba2198655243af255dbcbb60371cbd81ea41d3a0da54bf4bb6feab47be656"
+    },
+    {
+      "id": "nerve-handling-failed",
+      "visits": 76,
+      "reloads": 28,
+      "tabs": 573,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 355,
+        "strain": 3,
+        "rolls": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      "report": "qa/editorial/ordinary-direction-runs/nerve-handling-failed.json",
+      "sha256": "5ecf889ce15ae19c50743c93cfd5341c424c0e002da525e896e94d61ad25c204"
+    },
+    {
+      "id": "ghost-routing",
+      "visits": 80,
+      "reloads": 32,
+      "tabs": 631,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 380,
+        "strain": 2,
+        "rolls": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      "report": "qa/editorial/ordinary-direction-runs/ghost-routing.json",
+      "sha256": "e5a51783877bb6cab5dd04a240ee853792604aac4a5ac3e10a9d284d3eca0a3d"
+    },
+    {
+      "id": "harness-listed",
+      "visits": 81,
+      "reloads": 80,
+      "tabs": 585,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_listed",
+        "creds": 290,
+        "strain": 4,
+        "rolls": [
+          1,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "report": "qa/editorial/ordinary-direction-runs/harness-listed.json",
+      "sha256": "69d5c13adc27096d89b704c8ce752457b42ee6141b368f3b0a66861136d6938a"
+    },
+    {
+      "id": "failed-desk",
+      "visits": 79,
+      "reloads": 78,
+      "tabs": 569,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 330,
+        "strain": 5,
+        "rolls": [
+          1,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "report": "qa/editorial/ordinary-direction-runs/failed-desk.json",
+      "sha256": "2797fe6e55a20034d157157adcbcd3bec4a7c5dc940aec1b35fc6e469512f99a"
+    },
+    {
+      "id": "scarce",
+      "visits": 88,
+      "reloads": 87,
+      "tabs": 744,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 0,
+        "strain": 5,
+        "rolls": [
+          1,
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "report": "qa/editorial/ordinary-direction-runs/scarce.json",
+      "sha256": "8d033bd9ebf5e92768fc1fc9783504c4c1ef6e72467a5d44476aa173c8246bce"
+    },
+    {
+      "id": "routing-cancel-after",
+      "visits": 86,
+      "reloads": 85,
+      "tabs": 675,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 165,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "report": "qa/editorial/ordinary-direction-runs/routing-cancel-after.json",
+      "sha256": "182d8b5bff63c387b7d1d03c2b222d5b41917c560f664b95cacb495559f31de1"
+    },
+    {
+      "id": "routing-cancel-before",
+      "visits": 82,
+      "reloads": 81,
+      "tabs": 656,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 305,
+        "strain": 0,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "report": "qa/editorial/ordinary-direction-runs/routing-cancel-before.json",
+      "sha256": "40e2b7dad7aa825f8c619d947b7a93e97a368de02ae7d3908bbbf45557535a46"
+    },
+    {
+      "id": "routing-declined",
+      "visits": 83,
+      "reloads": 82,
+      "tabs": 663,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 305,
+        "strain": 0,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "report": "qa/editorial/ordinary-direction-runs/routing-declined.json",
+      "sha256": "6fc6c29589a4ca835c46ba8f6485c6398e4893b6ebe2b1abd078b4201e39bd57"
+    },
+    {
+      "id": "routing-held-hatch",
+      "visits": 87,
+      "reloads": 86,
+      "tabs": 680,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 165,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "report": "qa/editorial/ordinary-direction-runs/routing-held-hatch.json",
+      "sha256": "595769f3576584efbfb45e198b33de5701acdc529903d9f66081885df4f6596a"
+    },
+    {
+      "id": "routing-held-strip",
+      "visits": 87,
+      "reloads": 86,
+      "tabs": 677,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 305,
+        "strain": 0,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "report": "qa/editorial/ordinary-direction-runs/routing-held-strip.json",
+      "sha256": "777dd65212cf363088dcb94ea0e4b756fdbee00f738995933899b6dfc36ae27a"
+    },
+    {
+      "id": "routing-scarce",
+      "visits": 76,
+      "reloads": 75,
+      "tabs": 665,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 0,
+        "strain": 4,
+        "rolls": [
+          10,
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "report": "qa/editorial/ordinary-direction-runs/routing-scarce.json",
+      "sha256": "5ebe9c1e43876f9a45b867620120ecd5d0f41186204e1529cdd3353339eb3de7"
+    },
+    {
+      "id": "routing-screened",
+      "visits": 87,
+      "reloads": 86,
+      "tabs": 781,
+      "voices": 43,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 2,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 165,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "report": "qa/editorial/ordinary-direction-runs/routing-screened.json",
+      "sha256": "340d553cd2fc9147192e2d9456d6c0ebd700451ce6e29c1a11fb1883c070f7a0"
+    },
+    {
+      "id": "routing-signed",
+      "visits": 87,
+      "reloads": 86,
+      "tabs": 678,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 305,
+        "strain": 0,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "report": "qa/editorial/ordinary-direction-runs/routing-signed.json",
+      "sha256": "2ca3a463627b31aaf461fec0dd8a74e07110956c3942e9f6294887f0c8c61621"
+    },
+    {
+      "id": "routing-skipped",
+      "visits": 79,
+      "reloads": 78,
+      "tabs": 634,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 305,
+        "strain": 0,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "report": "qa/editorial/ordinary-direction-runs/routing-skipped.json",
+      "sha256": "c4b5eaf687f4bdf36a4d020908d62d0f406f6339e2eb4cf9941c02fe41f36319"
+    },
+    {
+      "id": "routing-unfinished",
+      "visits": 86,
+      "reloads": 85,
+      "tabs": 677,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 305,
+        "strain": 0,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "report": "qa/editorial/ordinary-direction-runs/routing-unfinished.json",
+      "sha256": "b73626908d307521989b9bc6c76052267b7bc93bc303d3bf58fbd50a7ed55dab"
+    },
+    {
+      "id": "ordinary-shared",
+      "visits": 94,
+      "reloads": 42,
+      "tabs": 717,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 9,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 185,
+        "strain": 1,
+        "rolls": [
+          10,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "report": "qa/editorial/ordinary-direction-runs/ordinary-shared.json",
+      "sha256": "0da879774d4b7031ab14de70408e5b166f05d95f7fe3cbfc7c11d04d630cdcde"
+    },
+    {
+      "id": "ordinary-private",
+      "visits": 80,
+      "reloads": 28,
+      "tabs": 623,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 165,
+        "strain": 0,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "report": "qa/editorial/ordinary-direction-runs/ordinary-private.json",
+      "sha256": "1897f941ba9684359aaf4dc3696273f58f892e92244d83b22a9d4bb43dd7849b"
+    },
+    {
+      "id": "ordinary-refused",
+      "visits": 87,
+      "reloads": 35,
+      "tabs": 808,
+      "voices": 38,
+      "artViews": 0,
+      "ordinaryArtViews": 9,
+      "interruptions": 2,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 165,
+        "strain": 1,
+        "rolls": [
+          10,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "report": "qa/editorial/ordinary-direction-runs/ordinary-refused.json",
+      "sha256": "2d312b7c4c4679f57c8a620606f5dc56ec5433a3e2c3cc24217ae2bc13ef45ba"
+    }
+  ],
+  "totals": {
+    "visits": 2117,
+    "reloads": 1751,
+    "tabs": 17261,
+    "voices": 122,
+    "artViews": 51,
+    "ordinaryArtViews": 18,
+    "interruptions": 6
+  },
+  "matchedPreceding23": {
+    "ids": [
+      "deferred",
+      "denied",
+      "names",
+      "listed-sound",
+      "nerve",
+      "face-failed",
+      "archive-failed",
+      "canceled",
+      "nerve-handling-failed",
+      "ghost-routing",
+      "harness-listed",
+      "failed-desk",
+      "scarce",
+      "routing-cancel-after",
+      "routing-cancel-before",
+      "routing-declined",
+      "routing-held-hatch",
+      "routing-held-strip",
+      "routing-scarce",
+      "routing-screened",
+      "routing-signed",
+      "routing-skipped",
+      "routing-unfinished"
+    ],
+    "visits": 1856,
+    "reloads": 1646,
+    "tabs": 15113,
+    "exactCanonicalWordsChoicesFinalResourcesDiceAndNavigation": true
+  },
+  "source": {
+    "routes": 241,
+    "visits": 17281,
+    "coveredScenes": 248,
+    "totalScenes": 260,
+    "unvisited": [
+      "act2_folio",
+      "act2_heat",
+      "chapel",
+      "ending_exposed",
+      "ending_sainted",
+      "ending_smashed",
+      "ending_taken",
+      "hatch",
+      "hatch_caught",
+      "kerr_fight",
+      "lumen_cold",
+      "why"
+    ],
+    "media": 837,
+    "newMedia": 0,
+    "baseline": "qa/editorial/ordinary-direction-baseline.json",
+    "campaignSha256": "402c12d19542024d58bded4acf27643569d6b5092443a42a071c2b904c2a19d6"
+  },
+  "checks": {
+    "sourceBeforeCaptionCorrection": 919,
+    "focusedSourceAndDocsAfterCorrection": 4,
+    "finalBrowserCases": 34,
+    "workers": 4,
+    "retries": 0,
+    "typeScript": true,
+    "productionBuild": true,
+    "securityVulnerabilities": 0,
+    "balanceAudits": 5,
+    "budgetViolations": 0,
+    "plannedCasesPerHostedProfile": 1562
+  },
+  "visual": {
+    "reviewedAssets": [
+      "/art/stall.jpg",
+      "/art/kerr-listening-wide.jpg",
+      "/art/stall-quiet-detail.jpg",
+      "/art/kerr.jpg",
+      "/art/kerr-closed.jpg"
+    ],
+    "findings": "Same place/identity/black coat/scarf; no visible hands or identifying/signed source, recipient, treatment, payment, forgiveness or outcome.",
+    "defaultGeometry": "Exact same-browser before/control coordinates, typography and all action positions; independent public Chromium baseline retained.",
+    "captionCorrection": "Retained25.59375px320px failure; reserve two lines only within optional panel, unchanged less-than1px anchor assertion."
+  },
+  "precedingRelease": "qa/editorial/return-routing-release.json",
+  "firstCandidate": "qa/editorial/ordinary-direction-first-candidate.json",
+  "limits": "Source-familiar AI proxy with directed dice/synthetic viewports. Extra optional art navigation is counted, not claimed as faster play or an independently improved acting/AAA grade.",
+  "next": "Phase14 expressive performance; exact words/actor, connected beds, retained rejected alternatives and original fallback."
+}

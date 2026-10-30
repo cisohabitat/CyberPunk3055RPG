@@ -99,3 +99,7 @@ Phase 11 implementation completes the six-workspace decision-flow slice. Eightee
 
 
 Phase 12 implements one broader Ghost encounter, before expansion to another build: the Dispatcher’s return path. Free field inspection, signature versus screened effort, real two-action costs, a usable refusal, held/unfinished outcomes and earned later responses accompany matching actor/voice/art. Every older campaign/media snapshot remains protected; the unchanged grade8.9 needs a later full reassessment. See [the implementation report](RETURN_ROUTING_PHASE12.md). Phase 13 now directs an ordinary complete scene sequence, with knowledge/anatomy/identity review and measured whole-phone navigation costs.
+
+### Phase 13 ordinary direction
+
+[Kerr’s counter](ORDINARY_SCENE_DIRECTION_PHASE13.md) adds one optional complete entry/disclosure/response visual sequence using reviewed existing setting/person/detail paintings. Art inspection follows canonical decisions and retains default portraits, reading/action paths, exact speech, saves and quiet/text-only behavior. Preserve the complete Phase12 release separately, compare fixed23 plus3 explicit campaigns, and require full exact-commit CI/READY/public verification. Grade remains8.9 provisional; Phase14 is the connected expressive-performance pass.

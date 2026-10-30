@@ -1,0 +1,124 @@
+{
+  "status": "Superseded dirty candidate; interrupted remaining campaigns after a new320px view-anchor regression was found",
+  "finding": {
+    "width": 320,
+    "expected": "less than1px anchor movement",
+    "observedPx": 25.59375,
+    "cause": "Different caption wrapping between Person and Detail",
+    "fix": "Reserve two caption lines in the optional panel, without shrinking typography or changing default scene geometry"
+  },
+  "sourceTests": 919,
+  "browserFirstComplete": 32,
+  "expandedAnchor": {
+    "passed": 2,
+    "failed": 1
+  },
+  "completedCampaigns": [
+    {
+      "path": "qa/editorial/ordinary-direction-first-candidate-runs/archive-failed.json",
+      "sha256": "846c5faa14777b61f9f2818120f0fb2fa6e1cd9b654227c1bd8924b6ef37dd69",
+      "revision": "9d480a19127cb573910f61e11194ec5a5388e90e",
+      "dirty": true,
+      "visits": 64,
+      "tabs": 578
+    },
+    {
+      "path": "qa/editorial/ordinary-direction-first-candidate-runs/canceled.json",
+      "sha256": "61462435b76691636c7a02b1afeb7b874b37ff4dbe526032368d34445b657c78",
+      "revision": "9d480a19127cb573910f61e11194ec5a5388e90e",
+      "dirty": true,
+      "visits": 75,
+      "tabs": 616
+    },
+    {
+      "path": "qa/editorial/ordinary-direction-first-candidate-runs/deferred.json",
+      "sha256": "9b7ef6d210b827e2732809e609115b34709482dc6622f948f29bc2c700f93061",
+      "revision": "9d480a19127cb573910f61e11194ec5a5388e90e",
+      "dirty": true,
+      "visits": 63,
+      "tabs": 567
+    },
+    {
+      "path": "qa/editorial/ordinary-direction-first-candidate-runs/denied.json",
+      "sha256": "7850c5e1608946307befd82b9a292e17498d940cfb5d3d773e6552a56292683e",
+      "revision": "9d480a19127cb573910f61e11194ec5a5388e90e",
+      "dirty": true,
+      "visits": 82,
+      "tabs": 693
+    },
+    {
+      "path": "qa/editorial/ordinary-direction-first-candidate-runs/face-failed.json",
+      "sha256": "45a65403f2fec1aad748aacad8524ed3654093fc4654ecd4952dfa3cae9911c0",
+      "revision": "9d480a19127cb573910f61e11194ec5a5388e90e",
+      "dirty": true,
+      "visits": 75,
+      "tabs": 576
+    },
+    {
+      "path": "qa/editorial/ordinary-direction-first-candidate-runs/failed-desk.json",
+      "sha256": "9b2bc16ebc2f1033b49272f8c24e6eb614476a8dc39b4fe9940f5778f1cfe6bc",
+      "revision": "9d480a19127cb573910f61e11194ec5a5388e90e",
+      "dirty": true,
+      "visits": 79,
+      "tabs": 569
+    },
+    {
+      "path": "qa/editorial/ordinary-direction-first-candidate-runs/ghost-routing.json",
+      "sha256": "45c26bd2085f64d0ebb8cc5cfb6bb68cfa26440f9fa2739a44e3c2fe222bb35f",
+      "revision": "9d480a19127cb573910f61e11194ec5a5388e90e",
+      "dirty": true,
+      "visits": 80,
+      "tabs": 631
+    },
+    {
+      "path": "qa/editorial/ordinary-direction-first-candidate-runs/harness-listed.json",
+      "sha256": "d8b3c8c81d831dec665f8ab3a2eeadeb035401eb54adcc7bae757d9644971a58",
+      "revision": "9d480a19127cb573910f61e11194ec5a5388e90e",
+      "dirty": true,
+      "visits": 81,
+      "tabs": 585
+    },
+    {
+      "path": "qa/editorial/ordinary-direction-first-candidate-runs/names.json",
+      "sha256": "692bd79d4cb5c471ea1c61402687aedaff72d8bf290625588234098773ffd885",
+      "revision": "9d480a19127cb573910f61e11194ec5a5388e90e",
+      "dirty": true,
+      "visits": 89,
+      "tabs": 747
+    },
+    {
+      "path": "qa/editorial/ordinary-direction-first-candidate-runs/nerve-handling-failed.json",
+      "sha256": "2f2b38a6ea2b0631bbc83dec63cbc99e962159ee3d6977b04b8b769a15de0da7",
+      "revision": "9d480a19127cb573910f61e11194ec5a5388e90e",
+      "dirty": true,
+      "visits": 76,
+      "tabs": 573
+    },
+    {
+      "path": "qa/editorial/ordinary-direction-first-candidate-runs/nerve.json",
+      "sha256": "5ffbb486f8f8f1e862e2f3f35f6ac0f263c53ef01ee1c75a6bb9706f0243f8ad",
+      "revision": "9d480a19127cb573910f61e11194ec5a5388e90e",
+      "dirty": true,
+      "visits": 77,
+      "tabs": 529
+    },
+    {
+      "path": "qa/editorial/ordinary-direction-first-candidate-runs/routing-screened.json",
+      "sha256": "f0efcdf37f91d52e727001540258432eb3464683c564128296cac27ee982d1cc",
+      "revision": "9d480a19127cb573910f61e11194ec5a5388e90e",
+      "dirty": true,
+      "visits": 87,
+      "tabs": 781
+    },
+    {
+      "path": "qa/editorial/ordinary-direction-first-candidate-runs/scarce.json",
+      "sha256": "36c64240478211802b4f088fa1bf886e23a3468846511e051488e452ee2efa0d",
+      "revision": "9d480a19127cb573910f61e11194ec5a5388e90e",
+      "dirty": true,
+      "visits": 88,
+      "tabs": 744
+    }
+  ],
+  "remainingCampaigns": "Intentionally stopped, not counted as passed",
+  "limits": "Not a completed phase, exact commit or production release."
+}

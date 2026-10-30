@@ -2,6 +2,7 @@
 import { sequenceContinuity } from "@/lib/sequence-continuity";
 import { cinematicSequence, cinematicDetail } from "@/lib/cinematic-sequences";
 import { visualDirection } from "@/lib/visual-direction";
+import { OrdinarySceneArtwork } from "./OrdinarySceneArtwork";
 
 import { choiceReceipt } from "@/lib/play-feedback";
 import { ConversationContext } from "./ConversationContext";
@@ -571,6 +572,7 @@ export function PlayScreen({
                 })}
               </div>
             )}
+            {preferences.artwork !== "none" && <OrdinarySceneArtwork key={`ordinary-art-${scene.id}`} sceneId={scene.id} />}
             {nearbyDecisions && <section className="decision-flow-records" aria-label="Commitments and history" data-testid="decision-flow-records">
               <div className="decision-context"><ObjectiveBrief state={state} /></div>
               <section aria-label="Choice reference">
