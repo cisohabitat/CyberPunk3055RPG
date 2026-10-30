@@ -1052,6 +1052,19 @@
       "scenes": [
         "act3_ramp_return"
       ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/correction-bench.jpg",
+      "reason": "The same canal filing bench, with blank sheet and closed sleeve. Neutral unresolved props fit invitation, inspection, preparation, routing, held/accepted result and later conversation without depicting signature, witness identity, receipt, completed review or permission.",
+      "scenes": [
+        "act2_return_routing_terms",
+        "act2_return_routing_read",
+        "act2_return_routing_prepare",
+        "act2_return_routing_route",
+        "act2_return_routing_result",
+        "act3_return_routing_return"
+      ]
     }
   ],
   "variants": [
@@ -1203,7 +1216,13 @@
       "asset": "/art/dispatcher-portrait.jpg",
       "scenes": [
         "act2_notice_counter",
-        "act2_notice_offer"
+        "act2_notice_offer",
+        "act2_return_routing_terms",
+        "act2_return_routing_read",
+        "act2_return_routing_prepare",
+        "act2_return_routing_route",
+        "act2_return_routing_result",
+        "act3_return_routing_return"
       ],
       "reason": "Reviewed portrait for this actual actor during explicitly bound, revealed audible dialogue. Existing scene/flag expressions apply to this actor only; the scene’s setting and canonical story speaker remain unchanged."
     },

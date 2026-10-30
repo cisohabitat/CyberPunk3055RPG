@@ -1,3 +1,4 @@
+import routing from "../qa/media/return-routing.json";
 import freight from "../qa/media/freight-craft.json";
 import performance from "../qa/media/aaa-performance-direction.json";
 import visual from "../qa/media/aaa-visual-direction.json";
@@ -32,7 +33,7 @@ it("keeps every preceding audio and art byte unchanged and inventories all twelv
  const laterAdditions=[kerr,mara,witness,craft,payoff,visual,freight].flatMap(p=>[...p.artAssets.flatMap(a=>a.files).map(f=>f.path),...p.voiceIds.map(id=>`public/audio/${id}.mp3`)]);
  const generated=phase.baseline.reproducibleAudio.map(f=>f.path);for(const f of phase.baseline.reproducibleAudio)assert.equal(hash(readFileSync(f.path)),f.sha256);
  for(const[dir,contract]of [["audio",phase.baseline.precedingAudio],["art",phase.baseline.precedingArt]]as const){
-  const files=readdirSync(`public/${dir}`,{recursive:true}).map(p=>`public/${dir}/${p}`).filter(p=>!additions.includes(p)&&!laterAdditions.includes(p)&&!performance.deliveries.some(d=>d.path===p)&&!generated.includes(p)&&statSync(p).isFile()).map(path=>{const b=readFileSync(path);return{path,blob:createHash("sha1").update(`blob ${b.length}\0`).update(b).digest("hex")};}).sort((a,b)=>a.path.localeCompare(b.path,"en"));assert.equal(files.length,contract.count);assert.equal(hash(JSON.stringify(files)),contract.sha256,dir);
+  const files=readdirSync(`public/${dir}`,{recursive:true}).map(p=>`public/${dir}/${p}`).filter(p=>!routing.newMedia.includes(p)&&!additions.includes(p)&&!laterAdditions.includes(p)&&!performance.deliveries.some(d=>d.path===p)&&!generated.includes(p)&&statSync(p).isFile()).map(path=>{const b=readFileSync(path);return{path,blob:createHash("sha1").update(`blob ${b.length}\0`).update(b).digest("hex")};}).sort((a,b)=>a.path.localeCompare(b.path,"en"));assert.equal(files.length,contract.count);assert.equal(hash(JSON.stringify(files)),contract.sha256,dir);
  }
  assert.equal(additions.length,12);for(const a of phase.artAssets)for(const f of a.files)assert.equal(hash(readFileSync(f.path)),f.sha256);
 });

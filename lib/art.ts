@@ -329,3 +329,6 @@ ENCOUNTERS.act2_lumen_quiet = { src: "/art/lumen-cup.jpg", small: "/art/lumen-cu
 ENCOUNTERS.act2_ramp_terms = { ...ENCOUNTERS.act2_freight_brief, caption: "Canal freight · Asa keeps the gate task bounded" };
 for (const id of ["act2_ramp_survey", "act2_ramp_gear", "act2_ramp_load", "act2_ramp_arrived", "act2_ramp_stopped"]) ENCOUNTERS[id] = {"src": "/art/freight-ramp.jpg", "small": "/art/freight-ramp-small.jpg", "caption": "Canal freight ramp · a place to set the weight down", "description": "An empty covered freight ramp turns beside a broad landing, a closed metal storage hood and a narrowing rail. No cargo, handover, receipt or treatment is shown."};
 ENCOUNTERS.act3_ramp_return = { ...COURIER_TABLE, caption: "Ward Nine · a carry beside its actual record" };
+
+// Same neutral bench; no depicted signature, receipt, witness or successful review.
+for (const id of ["act2_return_routing_terms","act2_return_routing_read","act2_return_routing_prepare","act2_return_routing_route","act2_return_routing_result","act3_return_routing_return"]) ENCOUNTERS[id] = { ...ENCOUNTERS.act2_technique_bench };

@@ -1,3 +1,4 @@
+import {routingAgreed,routingOutcome,ROUTING_RECORDS} from "./return-routing";
 import { rampAgreement, rampOutcome, RAMP_RECORDS } from "./freight-craft";
 import { encounterRecords, noticePlanRecord } from "./campaign-consequences";
 import { noticeSchedule } from "./notice-allocation";
@@ -14,6 +15,10 @@ export type Objective = { id: string; title: string; status: "Open" | "Complete"
 export function objectives(state: GameState): Objective[] {
   const rows: Objective[] = [];
   const atWall = actName(state) === "The Wall";
+  if (routingAgreed(state)) {
+    const outcome = routingOutcome(state);
+    rows.push({id:"return-routing",title:"The Dispatcher’s return path",status:outcome==="kept"||outcome==="closed"?"Complete":outcome==="failed"||atWall?"Unresolved":"Open",detail:outcome==="kept"?ROUTING_RECORDS.accepted:outcome==="failed"?ROUTING_RECORDS.held:outcome==="closed"?ROUTING_RECORDS.closed:atWall?"The week closed with the routing plan unfinished; no review reference is claimed.":"Inspect the return fields and choose your own trace. Resume from the depot. Preparation and submission each spend one saved depot action; cancellation refunds nothing already committed."});
+  }
   if (rampAgreement(state)) {
     const outcome = rampOutcome(state);
     rows.push({ id: "freight-ramp", title: "Asa’s cooperative carry plan", status: outcome === "kept" || outcome === "closed" ? "Complete" : outcome === "failed" || atWall ? "Unresolved" : "Open", detail: outcome === "kept" ? RAMP_RECORDS.arrived : outcome === "closed" ? RAMP_RECORDS.canceled : outcome === "failed" ? RAMP_RECORDS.failed : atWall ? "The week closed without completing the planned carry. The actual parcel receipt and any route exposure remain separate." : "Survey a level stop and choose real support. Resume the plan from the district board, or cancel before lifting. Any lift effort and materials stay spent." });

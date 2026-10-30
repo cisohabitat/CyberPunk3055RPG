@@ -1,0 +1,102 @@
+[
+  {
+    "id": "voice-campaign-return-routing-842083fe00dc",
+    "key": "3c22fd3be3f7d25e",
+    "scene": "act2_return_routing_terms",
+    "sceneSpeaker": "Dispatcher",
+    "speaker": "Dispatcher",
+    "quote": "Most of my shift is finding where these came from. Leave me a way to send this one back.",
+    "text": "Most of my shift is finding where these came from. Leave me a way to send this one back.",
+    "part": 0
+  },
+  {
+    "id": "voice-campaign-return-routing-cc41685259bb",
+    "key": "dab721dddad0d4be",
+    "scene": "act2_return_routing_read",
+    "sceneSpeaker": "Dispatcher",
+    "speaker": "Dispatcher",
+    "quote": "The desk needs a return code. It does not need somebody else's name.",
+    "text": "The desk needs a return code. It does not need somebody else's name.",
+    "part": 0
+  },
+  {
+    "id": "voice-campaign-return-routing-20fd6e7e840c",
+    "key": "25db45b82b38d488",
+    "scene": "act2_return_routing_prepare",
+    "sceneSpeaker": "Dispatcher",
+    "speaker": "Dispatcher",
+    "quote": "You can sign for yourself. If you screen the outside, leave the desk its way back.",
+    "text": "You can sign for yourself. If you screen the outside, leave the desk its way back.",
+    "part": 0
+  },
+  {
+    "id": "voice-campaign-return-routing-d3c55dcaa6d8",
+    "key": "b5bcfa8f5cc127f1",
+    "scene": "act2_return_routing_route",
+    "sceneSpeaker": "Dispatcher",
+    "speaker": "Dispatcher",
+    "quote": "The lit counter is still open. The old hatch is not another way in.",
+    "text": "The lit counter is still open. The old hatch is not another way in.",
+    "part": 0
+  },
+  {
+    "id": "voice-campaign-return-routing-3618a7c3e345",
+    "key": "0005aad23ccf089d",
+    "scene": "act2_return_routing_result",
+    "sceneSpeaker": "Dispatcher",
+    "speaker": "Dispatcher",
+    "quote": "I can route this. What the review decides is still their work.",
+    "text": "I can route this. What the review decides is still their work.",
+    "part": 0
+  },
+  {
+    "id": "voice-campaign-return-routing-2672256d1346",
+    "key": "68725435b7bd16e9",
+    "scene": "act2_return_routing_result",
+    "sceneSpeaker": "Dispatcher",
+    "speaker": "Dispatcher",
+    "quote": "I have to hold it here. I cannot give you the counter's reference.",
+    "text": "I have to hold it here. I cannot give you the counter's reference.",
+    "part": 0
+  },
+  {
+    "id": "voice-campaign-return-routing-dae60204b64a",
+    "key": "8b5152e84ceaf3c8",
+    "scene": "act3_return_routing_return",
+    "sceneSpeaker": "Dispatcher",
+    "speaker": "Dispatcher",
+    "quote": "I knew whose table it could come back to. That mattered to me.",
+    "text": "I knew whose table it could come back to. That mattered to me.",
+    "part": 0
+  },
+  {
+    "id": "voice-campaign-return-routing-5fcbff73f348",
+    "key": "31b71c362efaf365",
+    "scene": "act3_return_routing_return",
+    "sceneSpeaker": "Dispatcher",
+    "speaker": "Dispatcher",
+    "quote": "I kept it on the held shelf. I will not call that the same as getting it through.",
+    "text": "I kept it on the held shelf. I will not call that the same as getting it through.",
+    "part": 0
+  },
+  {
+    "id": "voice-campaign-return-routing-28f1f3a61532",
+    "key": "f9137b688bc2fc6c",
+    "scene": "act3_return_routing_return",
+    "sceneSpeaker": "Dispatcher",
+    "speaker": "Dispatcher",
+    "quote": "You told me where you stopped. I can work with an honest stop.",
+    "text": "You told me where you stopped. I can work with an honest stop.",
+    "part": 0
+  },
+  {
+    "id": "voice-campaign-return-routing-899ae129e60b",
+    "key": "9567919132bd4785",
+    "scene": "act3_return_routing_return",
+    "sceneSpeaker": "Dispatcher",
+    "speaker": "Dispatcher",
+    "quote": "I remember the plan. I have no finished packet from it.",
+    "text": "I remember the plan. I have no finished packet from it.",
+    "part": 0
+  }
+]

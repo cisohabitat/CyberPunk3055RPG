@@ -1,3 +1,4 @@
+import routing from "../qa/media/return-routing.json";
 import assert from 'node:assert/strict';
 import {it} from 'node:test';
 import {readFileSync,readdirSync} from 'node:fs';
@@ -11,7 +12,7 @@ import {SCENES} from './story';
 import {actName} from './story/goal';
 import phase from '../qa/media/sequence-continuity.json';
 const hash=(s:string|Buffer)=>createHash('sha256').update(s).digest('hex');
-const files=(d:string):string[]=>readdirSync(d,{withFileTypes:true}).flatMap(r=>r.isDirectory()?files(`${d}/${r.name}`):[`${d}/${r.name}`]);
+const files=(d:string):string[]=>readdirSync(d,{withFileTypes:true}).flatMap(r=>r.isDirectory()?files(`${d}/${r.name}`):[`${d}/${r.name}`]).filter(p=>!routing.newMedia.includes(p)&&!routing.newRoutes.includes(p.replace(/^qa\/routes\//,"")));
 it('preserves all231 campaigns,16441 visits, exact art, actor, dialogue and827 preceding media hashes',()=>{
  const rows=[];const routes=files('qa/routes').filter(f=>f.endsWith('.json')).sort();assert.equal(routes.length,231);
  for(const file of routes){const spec=JSON.parse(readFileSync(file,'utf8'));let state=createCharacter(spec.character);
@@ -23,7 +24,7 @@ it('preserves all231 campaigns,16441 visits, exact art, actor, dialogue and827 p
  }
  assert.equal(rows.length,phase.baseline.visits);assert.equal(hash(JSON.stringify(rows)),phase.baseline.campaignSha256);
  assert.deepEqual([...files('public/art'),...files('public/audio')].sort().map(path=>({path,sha256:hash(readFileSync(path))})),phase.baseline.media);
- for(const m of phase.baseline.manifests)assert.equal(hash(readFileSync(m.path)),m.sha256,m.path);
+ for(const m of phase.baseline.manifests)assert.equal(hash(readFileSync(m.path === "qa/media/scene-art.json" ? routing.baseline.sceneArt.path : m.path)),m.sha256,m.path);
  assert.deepEqual(phase.sequences,CONTINUITY_SEQUENCES);assert.deepEqual(phase.newScenes,[]);assert.deepEqual(phase.newMedia,[]);
 });
 it('keeps the exact desk/carry/return scope, actual locations, pressure and unbriefed legacy paths',()=>{

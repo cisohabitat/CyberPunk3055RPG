@@ -1,0 +1,109 @@
+[
+  {
+    "id": "voice-campaign-return-routing-842083fe00dc",
+    "speaker": "Dispatcher",
+    "voice": "af_river",
+    "speed": 0.94,
+    "text": "Most of my shift is finding where these came from. Leave me a way to send this one back.",
+    "loudnessLufs": -23.5,
+    "direction": "Practical, restrained, with a personal stake in a usable return path. Exact words; no narration or extra lines."
+  },
+  {
+    "id": "voice-campaign-return-routing-cc41685259bb",
+    "speaker": "Dispatcher",
+    "voice": "af_river",
+    "speed": 0.94,
+    "text": "The desk needs a return code. It does not need somebody else's name.",
+    "loudnessLufs": -23.5,
+    "direction": "Practical, restrained, with a personal stake in a usable return path. Exact words; no narration or extra lines."
+  },
+  {
+    "id": "voice-campaign-return-routing-20fd6e7e840c",
+    "speaker": "Dispatcher",
+    "voice": "af_river",
+    "speed": 0.94,
+    "text": "You can sign for yourself. If you screen the outside, leave the desk its way back.",
+    "loudnessLufs": -23.5,
+    "direction": "Practical, restrained, with a personal stake in a usable return path. Exact words; no narration or extra lines."
+  },
+  {
+    "id": "voice-campaign-return-routing-d3c55dcaa6d8",
+    "speaker": "Dispatcher",
+    "voice": "af_river",
+    "speed": 0.94,
+    "text": "The lit counter is still open. The old hatch is not another way in.",
+    "loudnessLufs": -23.5,
+    "direction": "Practical, restrained, with a personal stake in a usable return path. Exact words; no narration or extra lines."
+  },
+  {
+    "id": "voice-campaign-return-routing-3618a7c3e345",
+    "speaker": "Dispatcher",
+    "voice": "af_river",
+    "speed": 0.94,
+    "text": "I can route this. What the review decides is still their work.",
+    "loudnessLufs": -23.5,
+    "direction": "Practical, restrained, with a personal stake in a usable return path. Exact words; no narration or extra lines."
+  },
+  {
+    "id": "voice-campaign-return-routing-2672256d1346",
+    "speaker": "Dispatcher",
+    "voice": "af_river",
+    "speed": 0.94,
+    "text": "I have to hold it here. I cannot give you the counter's reference.",
+    "loudnessLufs": -23.5,
+    "direction": "Practical, restrained, with a personal stake in a usable return path. Exact words; no narration or extra lines."
+  },
+  {
+    "id": "voice-campaign-return-routing-dae60204b64a",
+    "speaker": "Dispatcher",
+    "voice": "af_river",
+    "speed": 0.94,
+    "text": "I knew whose table it could come back to. That mattered to me.",
+    "loudnessLufs": -23.5,
+    "direction": "Practical, restrained, with a personal stake in a usable return path. Exact words; no narration or extra lines."
+  },
+  {
+    "id": "voice-campaign-return-routing-5fcbff73f348",
+    "speaker": "Dispatcher",
+    "voice": "af_river",
+    "speed": 0.94,
+    "text": "I kept it on the held shelf. I will not call that the same as getting it through.",
+    "loudnessLufs": -23.5,
+    "direction": "Practical, restrained, with a personal stake in a usable return path. Exact words; no narration or extra lines.",
+    "segments": [
+      {
+        "text": "I kept it on the held shelf.",
+        "speed": 0.94,
+        "pauseAfter": 0.2
+      },
+      {
+        "text": "I will not call that",
+        "speed": 0.94,
+        "pauseAfter": 0.1
+      },
+      {
+        "text": "the same as getting it through.",
+        "speed": 0.9,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-return-routing-28f1f3a61532",
+    "speaker": "Dispatcher",
+    "voice": "af_river",
+    "speed": 0.94,
+    "text": "You told me where you stopped. I can work with an honest stop.",
+    "loudnessLufs": -23.5,
+    "direction": "Practical, restrained, with a personal stake in a usable return path. Exact words; no narration or extra lines."
+  },
+  {
+    "id": "voice-campaign-return-routing-899ae129e60b",
+    "speaker": "Dispatcher",
+    "voice": "af_river",
+    "speed": 0.94,
+    "text": "I remember the plan. I have no finished packet from it.",
+    "loudnessLufs": -23.5,
+    "direction": "Practical, restrained, with a personal stake in a usable return path. Exact words; no narration or extra lines."
+  }
+]

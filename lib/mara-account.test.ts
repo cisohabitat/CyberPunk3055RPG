@@ -1,3 +1,4 @@
+import routing from "../qa/media/return-routing.json";
 import freight from "../qa/media/freight-craft.json";
 import payoff from "../qa/media/emotional-payoff.json";
 import craft from "../qa/media/encounter-craft.json";
@@ -35,7 +36,7 @@ function checkpoint(name: string, sceneId: string, choiceId?: string) {
   throw Error(`Missing ${name}/${sceneId}/${choiceId}`);
 }
 function files(dir: string): string[] {
-  return readdirSync(dir, { withFileTypes: true }).flatMap(e => e.isDirectory() ? files(`${dir}/${e.name}`) : [`${dir}/${e.name}`]);
+  return readdirSync(dir, { withFileTypes: true }).flatMap(e => e.isDirectory() ? files(`${dir}/${e.name}`) : [`${dir}/${e.name}`]).filter(p => !routing.newMedia.includes(p) && !routing.newRoutes.includes(p.replace(/^qa\/routes\//, "")));
 }
 
 it("preserves all 171 preceding full campaigns, 12,201 visits, actor/voice/art and every preceding delivery", () => {

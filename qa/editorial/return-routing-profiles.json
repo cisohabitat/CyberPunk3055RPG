@@ -1,0 +1,92 @@
+[
+  {
+    "id": "routing-cancel-after",
+    "route": "qa/routes/return-routing/cancel-after.json",
+    "width": 1440,
+    "artwork": "full",
+    "reading": "all",
+    "sound": false,
+    "shots": false
+  },
+  {
+    "id": "routing-cancel-before",
+    "route": "qa/routes/return-routing/cancel-before.json",
+    "width": 390,
+    "artwork": "full",
+    "reading": "all",
+    "sound": false,
+    "shots": false
+  },
+  {
+    "id": "routing-declined",
+    "route": "qa/routes/return-routing/declined.json",
+    "width": 1440,
+    "artwork": "full",
+    "reading": "all",
+    "sound": false,
+    "shots": false
+  },
+  {
+    "id": "routing-held-hatch",
+    "route": "qa/routes/return-routing/held-hatch.json",
+    "width": 390,
+    "artwork": "full",
+    "reading": "all",
+    "sound": false,
+    "shots": false
+  },
+  {
+    "id": "routing-held-strip",
+    "route": "qa/routes/return-routing/held-strip.json",
+    "width": 1440,
+    "artwork": "full",
+    "reading": "all",
+    "sound": false,
+    "shots": false
+  },
+  {
+    "id": "routing-scarce",
+    "route": "qa/routes/return-routing/scarce.json",
+    "width": 320,
+    "artwork": "none",
+    "reading": "paragraph",
+    "sound": false,
+    "shots": false
+  },
+  {
+    "id": "routing-screened",
+    "route": "qa/routes/return-routing/screened.json",
+    "width": 1440,
+    "artwork": "full",
+    "reading": "all",
+    "sound": true,
+    "shots": false
+  },
+  {
+    "id": "routing-signed",
+    "route": "qa/routes/return-routing/signed.json",
+    "width": 390,
+    "artwork": "full",
+    "reading": "all",
+    "sound": false,
+    "shots": false
+  },
+  {
+    "id": "routing-skipped",
+    "route": "qa/routes/return-routing/skipped.json",
+    "width": 1440,
+    "artwork": "full",
+    "reading": "all",
+    "sound": false,
+    "shots": false
+  },
+  {
+    "id": "routing-unfinished",
+    "route": "qa/routes/return-routing/unfinished.json",
+    "width": 390,
+    "artwork": "full",
+    "reading": "all",
+    "sound": false,
+    "shots": false
+  }
+]

@@ -1,3 +1,4 @@
+import { RETURN_ROUTING_SCENES } from "./return-routing";
 import { ENCOUNTER_CRAFT_SCENES } from "./encounter-craft";
 import { FREIGHT_CRAFT_SCENES } from "./freight-craft";
 import { EMOTIONAL_PAYOFF_SCENES } from "./emotional-payoff";
@@ -36,6 +37,7 @@ export { vaultNext } from "./act1";
 export { CODEX, endingCoda } from "./codas";
 
 export const SCENES: Record<string, Scene> = mergeScenes(
+  RETURN_ROUTING_SCENES,
   FREIGHT_CRAFT_SCENES,
   EMOTIONAL_PAYOFF_SCENES,
   ENCOUNTER_CRAFT_SCENES,

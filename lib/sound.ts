@@ -329,7 +329,7 @@ export function sceneSoundPlan(state: GameState, location: string, act = ""): { 
     : /spire|helion/.test(value) ? "spire" : /canal|depot/.test(value) ? "canal" : "street");
   const pressure = state.sceneId.startsWith("chapel_window_") && state.flags.chapel_window_started && !state.flags.chapel_window_done && windowRemaining(state) > 0
     || ["act2_district_canal", "act2_district_work", "act2_district_rest"].includes(state.sceneId) && state.flags.district_query_sent && !state.flags.district_window_closed && districtRemaining(state) > 0;
-  const mood = pressure ? "pressure" : state.sceneId.includes("_district_") || state.sceneId.startsWith("act2_technique_") || investigationScene(state.sceneId) || QUIET_SCENES.has(state.sceneId) || CLINIC_SCENES.has(state.sceneId) || ["act2_witness_brief", "act2_witness_support", "act2_witness_arrival", "act2_route_receipt"].includes(state.sceneId) ? "quiet"
+  const mood = pressure ? "pressure" : state.sceneId.includes("_district_") || state.sceneId.startsWith("act2_technique_") || ["act2_return_routing_terms","act2_return_routing_read","act2_return_routing_prepare","act2_return_routing_route","act2_return_routing_result","act3_return_routing_return"].includes(state.sceneId) || investigationScene(state.sceneId) || QUIET_SCENES.has(state.sceneId) || CLINIC_SCENES.has(state.sceneId) || ["act2_witness_brief", "act2_witness_support", "act2_witness_arrival", "act2_route_receipt"].includes(state.sceneId) ? "quiet"
     : state.sceneId === "memo" || state.sceneId === "mara_why" || state.sceneId.startsWith("memory_") && state.sceneId !== "memory_table" ? "reading"
     : state.sceneId.startsWith("ending_") && district === "ward" ? "ward" : sceneMood(location, act);
   return { mood, district };

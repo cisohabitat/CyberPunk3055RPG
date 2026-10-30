@@ -1,0 +1,403 @@
+{
+  "name": "return-routing-held-strip",
+  "character": {
+    "handle": "Replay",
+    "givenName": "Ada",
+    "origin": "dustline",
+    "complication": "on-file",
+    "bonus": {
+      "chrome": 0,
+      "nerve": 0,
+      "face": 0,
+      "ghost": 2
+    },
+    "startWithPrologue": true,
+    "returnRouting": true
+  },
+  "steps": [
+    {
+      "choiceId": "begin-opening",
+      "reload": true
+    },
+    {
+      "choiceId": "opening-exit",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-stallholder",
+      "reload": true
+    },
+    {
+      "choiceId": "take-the-stool",
+      "reload": true
+    },
+    {
+      "choiceId": "ask-pay",
+      "reload": true
+    },
+    {
+      "choiceId": "haggle",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "pocket",
+      "reload": true
+    },
+    {
+      "choiceId": "accept",
+      "reload": true
+    },
+    {
+      "choiceId": "side",
+      "reload": true
+    },
+    {
+      "choiceId": "spoof-door",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "go",
+      "reload": true
+    },
+    {
+      "choiceId": "honest",
+      "reload": true
+    },
+    {
+      "choiceId": "pact-copy",
+      "reload": true
+    },
+    {
+      "choiceId": "copy",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "heard",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-hour",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-signature",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-order",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-roster",
+      "reload": true
+    },
+    {
+      "choiceId": "reconstruct",
+      "reload": true
+    },
+    {
+      "choiceId": "ignore-order",
+      "reload": true
+    },
+    {
+      "choiceId": "keep-both-decisions",
+      "reload": true
+    },
+    {
+      "choiceId": "name-tower",
+      "reload": true
+    },
+    {
+      "choiceId": "seal-full",
+      "reload": true
+    },
+    {
+      "choiceId": "talk-leave",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "both",
+      "reload": true
+    },
+    {
+      "choiceId": "week-after",
+      "reload": true
+    },
+    {
+      "choiceId": "into-week",
+      "reload": true
+    },
+    {
+      "choiceId": "practice",
+      "reload": true
+    },
+    {
+      "choiceId": "learn-ghost",
+      "reload": true
+    },
+    {
+      "choiceId": "read-board",
+      "reload": true
+    },
+    {
+      "choiceId": "origin-contract",
+      "reload": true
+    },
+    {
+      "choiceId": "courier-run",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "return-board",
+      "reload": true
+    },
+    {
+      "choiceId": "visit-workshop",
+      "reload": true
+    },
+    {
+      "choiceId": "leave-workshop",
+      "reload": true
+    },
+    {
+      "choiceId": "to-helion",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-ives",
+      "reload": true
+    },
+    {
+      "choiceId": "refuse-ives",
+      "reload": true
+    },
+    {
+      "choiceId": "take-recovery",
+      "reload": true
+    },
+    {
+      "choiceId": "short-recovery",
+      "reload": true
+    },
+    {
+      "choiceId": "return-after-recovery",
+      "reload": true
+    },
+    {
+      "choiceId": "trace-order",
+      "reload": true
+    },
+    {
+      "choiceId": "agree-archive-terms",
+      "reload": true
+    },
+    {
+      "choiceId": "skip-archive-prep",
+      "reload": true
+    },
+    {
+      "choiceId": "open-archive-catalog",
+      "reload": true
+    },
+    {
+      "choiceId": "catalog-inspect-revision",
+      "reload": true
+    },
+    {
+      "choiceId": "catalog-request-revision",
+      "reload": true
+    },
+    {
+      "choiceId": "catalog-buy-extraction",
+      "reload": true
+    },
+    {
+      "choiceId": "withhold-technician",
+      "reload": true
+    },
+    {
+      "choiceId": "keep-chain",
+      "reload": true
+    },
+    {
+      "choiceId": "open-district-response",
+      "reload": true
+    },
+    {
+      "choiceId": "district-edda-corroboration",
+      "reload": true
+    },
+    {
+      "choiceId": "district-public-review",
+      "reload": true
+    },
+    {
+      "choiceId": "open-build-techniques",
+      "reload": true
+    },
+    {
+      "choiceId": "plan-technique-ghost",
+      "reload": true
+    },
+    {
+      "choiceId": "routing-open",
+      "reload": true
+    },
+    {
+      "choiceId": "routing-agree",
+      "reload": true
+    },
+    {
+      "choiceId": "routing-inspect-stub",
+      "reload": true
+    },
+    {
+      "choiceId": "routing-inspect-tag",
+      "reload": true
+    },
+    {
+      "choiceId": "routing-inspect-hatch",
+      "reload": true
+    },
+    {
+      "choiceId": "routing-choose-preparation",
+      "reload": true
+    },
+    {
+      "choiceId": "routing-prepare-signed",
+      "reload": true
+    },
+    {
+      "choiceId": "routing-submit-strip",
+      "reload": true
+    },
+    {
+      "choiceId": "routing-leave-result",
+      "reload": true
+    },
+    {
+      "choiceId": "district-close",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-response",
+      "reload": true
+    },
+    {
+      "choiceId": "answer-with-source",
+      "reload": true
+    },
+    {
+      "choiceId": "stand",
+      "reload": true
+    },
+    {
+      "choiceId": "back-to-board",
+      "reload": true
+    },
+    {
+      "choiceId": "to-the-wall",
+      "reload": true
+    },
+    {
+      "choiceId": "to-ward-nine",
+      "reload": true
+    },
+    {
+      "choiceId": "visit-records",
+      "reload": true
+    },
+    {
+      "choiceId": "keep-limits",
+      "reload": true
+    },
+    {
+      "choiceId": "visit-district-return",
+      "reload": true
+    },
+    {
+      "choiceId": "district-record-return",
+      "reload": true
+    },
+    {
+      "choiceId": "routing-ask-return",
+      "reload": true
+    },
+    {
+      "choiceId": "routing-keep-reply",
+      "reload": true
+    },
+    {
+      "choiceId": "go-wall",
+      "reload": true
+    },
+    {
+      "choiceId": "face-sera",
+      "reload": true
+    },
+    {
+      "choiceId": "prepare-public-account",
+      "reload": true
+    },
+    {
+      "choiceId": "scope-corroborated",
+      "reload": true
+    },
+    {
+      "choiceId": "keep-recording-private",
+      "reload": true
+    },
+    {
+      "choiceId": "answer-corroboration",
+      "reload": true
+    },
+    {
+      "choiceId": "file-public-account",
+      "reload": true
+    },
+    {
+      "choiceId": "leave-wall",
+      "reload": true
+    }
+  ],
+  "expected": {
+    "sceneId": "ending_quiet",
+    "creds": 305,
+    "strain": 0,
+    "flags": {
+      "routing_offered": true,
+      "routing_agreed": true,
+      "routing_read_stub": true,
+      "routing_read_tag": true,
+      "routing_read_hatch": true,
+      "technique_started": true,
+      "technique_ghost": true,
+      "technique_mode_signed": true,
+      "routing_prepared": true,
+      "technique_courier_signed": true,
+      "technique_failed": true,
+      "technique_packet_held": true,
+      "routing_held": true,
+      "routing_return_seen": true
+    },
+    "items": [
+      "spoof-chip",
+      "burner-route"
+    ],
+    "journal": [
+      "return-routing-offer",
+      "return-routing-agreement",
+      "return-routing-stub",
+      "return-routing-tag",
+      "return-routing-hatch",
+      "return-routing-preparation",
+      "return-routing-result",
+      "return-routing-moment"
+    ]
+  }
+}

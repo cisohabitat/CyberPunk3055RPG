@@ -86,7 +86,7 @@ Phase 7 continues the production plan with [active-workspace reading flow](WORKS
 
 Phase 8 implements a broader encounter-depth slice: the optional cooperative freight-ramp carry, actual support/capacity costs, safe stopping decision, alternate recovery, low-cash pause/resume and outcome-aware Asa return. See [Phase 8](FREIGHT_CRAFT_PHASE8.md). Subsequent work should review complete audiovisual sequences across the campaign, then repeat the unchanged weighted reassessment; neither this addition nor passing automation automatically earns9+.
 
-Phase 9 reviews complete selected scene sequences and corrects observed bed-loading and score/focus discontinuities. A 27-stage presentation-only scope preserves all231 campaigns and827 preceding media files; exact original words, art, actor bindings, costs, controls and saves remain intact. See [the continuity report](SEQUENCE_CONTINUITY_PHASE9.md). Phase 10 should repeat the fixed weighted rubric and whole-campaign pacing/accessibility review after this phase’s exact-commit live verification, without awarding9+ for test counts.
+Phase 9 reviews complete selected scene sequences and corrects observed bed-loading and score/focus discontinuities. A 27-stage presentation-only scope preserves all 231 campaigns and 827 preceding media files; exact original words, art, actor bindings, costs, controls and saves remain intact. See [the continuity report](SEQUENCE_CONTINUITY_PHASE9.md). Phase 10 should repeat the fixed weighted rubric and whole-campaign pacing/accessibility review after this phase’s exact-commit live verification, without awarding9+ for test counts.
 
 ## Phase 10 completed and next production sequence
 
@@ -96,3 +96,6 @@ Phase 11 prioritizes compact equipment comparisons and nearby real purchase/refu
 
 
 Phase 11 implementation completes the six-workspace decision-flow slice. Eighteen enlarged layouts reduce actual first-action travel by 25.5–69.0% with unchanged canonical outcomes, complete terms and body typography. Thirteen matched campaigns use75 fewer Tabs; exact actor/text/art/audio and all historical routes remain intact. Read-only workshop review links include the existing return without buying. The grade stays 8.9 provisional; retained diagnostics and remaining long later actions are in [the Phase 11 report](DECISION_FLOW_PHASE11.md). Phase 12 now prioritizes broader Ghost/Face encounter and editorial craft, with matching media and the same full publication gates.
+
+
+Phase 12 implements one broader Ghost encounter, before expansion to another build: the Dispatcher’s return path. Free field inspection, signature versus screened effort, real two-action costs, a usable refusal, held/unfinished outcomes and earned later responses accompany matching actor/voice/art. Every older campaign/media snapshot remains protected; the unchanged grade8.9 needs a later full reassessment. See [the implementation report](RETURN_ROUTING_PHASE12.md). Phase 13 now directs an ordinary complete scene sequence, with knowledge/anatomy/identity review and measured whole-phone navigation costs.

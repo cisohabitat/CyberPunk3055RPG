@@ -1,0 +1,166 @@
+{
+  "firstPass": {
+    "model": "faster-whisper base.en",
+    "method": "Unprompted CPU int8, beam5, no initial prompt, no conditioning on previous text; lowercase/apostrophe/punctuation normalization only",
+    "lines": [
+      {
+        "id": "voice-campaign-return-routing-842083fe00dc",
+        "text": "Most of my shift is finding where these came from. Leave me a way to send this one back.",
+        "transcription": "Most of my shift is finding where these came from. Leave me a way to send this one back.",
+        "exactNormalizedWords": true,
+        "sha256": "f777f59c71f04bb5c6ee74a558caea0b22e095e653174da2d9e4ccb5c77c1d1c"
+      },
+      {
+        "id": "voice-campaign-return-routing-cc41685259bb",
+        "text": "The desk needs a return code. It does not need somebody else's name.",
+        "transcription": "The desk needs a return code. It does not need somebody else's name.",
+        "exactNormalizedWords": true,
+        "sha256": "753bbdd05ab9a004b0b34e18283c15aa342754c4d8608b3337753a09eceaade1"
+      },
+      {
+        "id": "voice-campaign-return-routing-20fd6e7e840c",
+        "text": "You can sign for yourself. If you screen the outside, leave the desk its way back.",
+        "transcription": "You can sign for yourself. If you screen the outside, leave the desk its way back.",
+        "exactNormalizedWords": true,
+        "sha256": "aa2ddc853fb1a48e2d71990e71fbfc0c86314a2af7e195c1227418b2d081cb5c"
+      },
+      {
+        "id": "voice-campaign-return-routing-d3c55dcaa6d8",
+        "text": "The lit counter is still open. The old hatch is not another way in.",
+        "transcription": "The lit counter is still open, the old hatch is not another way in. //",
+        "exactNormalizedWords": true,
+        "sha256": "b79d4b7574e161ef8fde713c5a17d4f8d1324f4721f4b84b0bf9d93c5bfe36bd"
+      },
+      {
+        "id": "voice-campaign-return-routing-3618a7c3e345",
+        "text": "I can route this. What the review decides is still their work.",
+        "transcription": "I can route this, what the review decides is still their work.",
+        "exactNormalizedWords": true,
+        "sha256": "3679de9376e37e4c513689eef88cf7b29093594459b8e313f168357b7deec9ae"
+      },
+      {
+        "id": "voice-campaign-return-routing-2672256d1346",
+        "text": "I have to hold it here. I cannot give you the counter's reference.",
+        "transcription": "I have to hold it here. I cannot give you the counters reference.",
+        "exactNormalizedWords": true,
+        "sha256": "4a36d7811bb44e7edb127c54f4e319f910d215a2c85f0c4390e25f92c0984099"
+      },
+      {
+        "id": "voice-campaign-return-routing-dae60204b64a",
+        "text": "I knew whose table it could come back to. That mattered to me.",
+        "transcription": "I knew whose table it could come back to that mattered to me.",
+        "exactNormalizedWords": true,
+        "sha256": "cf4b2a38137bd4822f1445783c3831bb92f050824a1396c8317f1a21605c16bf"
+      },
+      {
+        "id": "voice-campaign-return-routing-5fcbff73f348",
+        "text": "I kept it on the held shelf. I will not call that the same as getting it through.",
+        "transcription": "I kept it on the held shelf. I will not call that the same is getting it through. //",
+        "exactNormalizedWords": false,
+        "sha256": "7f2a0e856f622a51852a3d57ecf88cab572bc2e59ba3ae0e4540bc41dfdde129"
+      },
+      {
+        "id": "voice-campaign-return-routing-28f1f3a61532",
+        "text": "You told me where you stopped. I can work with an honest stop.",
+        "transcription": "You told me where you stopped. I can work with an honest stop.",
+        "exactNormalizedWords": true,
+        "sha256": "10f93c777ca0a51ce794b4b0c9fe96a2b1f2b51b75e199f8bfbcab8877d8f45e"
+      },
+      {
+        "id": "voice-campaign-return-routing-899ae129e60b",
+        "text": "I remember the plan. I have no finished packet from it.",
+        "transcription": "I remember the plan, I have no finished packet from it.",
+        "exactNormalizedWords": true,
+        "sha256": "05e9edd38df086c2c90004a32f62e0cd4d6d038c45934a52d26eb79b31056286"
+      }
+    ]
+  },
+  "retake": {
+    "id": "voice-campaign-return-routing-5fcbff73f348",
+    "wordsChanged": false,
+    "direction": "Three exact-word phrases with bounded pauses; final phrase speed0.90",
+    "firstWaveformRetained": false,
+    "reproduction": {
+      "path": "/workspace/generated_audio/return-routing/rejected/voice-campaign-return-routing-5fcbff73f348.mp3",
+      "sha256": "71e8014739f8634719a412e395d1177944364b982acfc27e6ea2ed6359a41c2e",
+      "status": "Unpublished reference rendering; differs from original first-pass bytes and must not be relabeled as that candidate"
+    }
+  },
+  "final": {
+    "model": "faster-whisper base.en",
+    "method": "Unprompted CPU int8, beam5, no initial prompt, no conditioning on previous text; lowercase/apostrophe/punctuation normalization only",
+    "lines": [
+      {
+        "id": "voice-campaign-return-routing-842083fe00dc",
+        "text": "Most of my shift is finding where these came from. Leave me a way to send this one back.",
+        "transcription": "Most of my shift is finding where these came from. Leave me a way to send this one back.",
+        "exactNormalizedWords": true,
+        "sha256": "f777f59c71f04bb5c6ee74a558caea0b22e095e653174da2d9e4ccb5c77c1d1c"
+      },
+      {
+        "id": "voice-campaign-return-routing-cc41685259bb",
+        "text": "The desk needs a return code. It does not need somebody else's name.",
+        "transcription": "The desk needs a return code. It does not need somebody else's name.",
+        "exactNormalizedWords": true,
+        "sha256": "753bbdd05ab9a004b0b34e18283c15aa342754c4d8608b3337753a09eceaade1"
+      },
+      {
+        "id": "voice-campaign-return-routing-20fd6e7e840c",
+        "text": "You can sign for yourself. If you screen the outside, leave the desk its way back.",
+        "transcription": "You can sign for yourself. If you screen the outside, leave the desk its way back.",
+        "exactNormalizedWords": true,
+        "sha256": "aa2ddc853fb1a48e2d71990e71fbfc0c86314a2af7e195c1227418b2d081cb5c"
+      },
+      {
+        "id": "voice-campaign-return-routing-d3c55dcaa6d8",
+        "text": "The lit counter is still open. The old hatch is not another way in.",
+        "transcription": "The lit counter is still open, the old hatch is not another way in. //",
+        "exactNormalizedWords": true,
+        "sha256": "b79d4b7574e161ef8fde713c5a17d4f8d1324f4721f4b84b0bf9d93c5bfe36bd"
+      },
+      {
+        "id": "voice-campaign-return-routing-3618a7c3e345",
+        "text": "I can route this. What the review decides is still their work.",
+        "transcription": "I can route this, what the review decides is still their work.",
+        "exactNormalizedWords": true,
+        "sha256": "3679de9376e37e4c513689eef88cf7b29093594459b8e313f168357b7deec9ae"
+      },
+      {
+        "id": "voice-campaign-return-routing-2672256d1346",
+        "text": "I have to hold it here. I cannot give you the counter's reference.",
+        "transcription": "I have to hold it here. I cannot give you the counters reference.",
+        "exactNormalizedWords": true,
+        "sha256": "4a36d7811bb44e7edb127c54f4e319f910d215a2c85f0c4390e25f92c0984099"
+      },
+      {
+        "id": "voice-campaign-return-routing-dae60204b64a",
+        "text": "I knew whose table it could come back to. That mattered to me.",
+        "transcription": "I knew whose table it could come back to that mattered to me.",
+        "exactNormalizedWords": true,
+        "sha256": "cf4b2a38137bd4822f1445783c3831bb92f050824a1396c8317f1a21605c16bf"
+      },
+      {
+        "id": "voice-campaign-return-routing-5fcbff73f348",
+        "text": "I kept it on the held shelf. I will not call that the same as getting it through.",
+        "transcription": "I kept it on the held shelf. I will not call that. The same as getting it through.",
+        "exactNormalizedWords": true,
+        "sha256": "236f3da8dfe84b80d99dd1d5a7b0a227b3693d410bb377445895016c47d11095"
+      },
+      {
+        "id": "voice-campaign-return-routing-28f1f3a61532",
+        "text": "You told me where you stopped. I can work with an honest stop.",
+        "transcription": "You told me where you stopped. I can work with an honest stop.",
+        "exactNormalizedWords": true,
+        "sha256": "10f93c777ca0a51ce794b4b0c9fe96a2b1f2b51b75e199f8bfbcab8877d8f45e"
+      },
+      {
+        "id": "voice-campaign-return-routing-899ae129e60b",
+        "text": "I remember the plan. I have no finished packet from it.",
+        "transcription": "I remember the plan, I have no finished packet from it.",
+        "exactNormalizedWords": true,
+        "sha256": "05e9edd38df086c2c90004a32f62e0cd4d6d038c45934a52d26eb79b31056286"
+      }
+    ]
+  },
+  "limits": "Original first-pass raw ASR and observed SHA retained; its waveform was overwritten. A later reproduction differs and is separately labeled. Exact words/signal and AI source review do not establish independent acting acceptance."
+}

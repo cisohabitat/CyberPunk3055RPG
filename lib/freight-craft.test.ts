@@ -1,3 +1,4 @@
+import routing from "../qa/media/return-routing.json";
 import assert from "node:assert/strict";
 import { it } from "node:test";
 import { readFileSync, readdirSync } from "node:fs";
@@ -21,7 +22,7 @@ import originalGallery from "../qa/media/freight-craft-preceding-art-gallery.jso
 import originalArt from "../qa/media/freight-craft-preceding-scene-art.json";
 import { sceneSoundPlan } from "./sound";
 const hash = (path: string) => createHash("sha256").update(readFileSync(path)).digest("hex");
-const files = (dir: string): string[] => readdirSync(dir, { withFileTypes: true }).flatMap(r => r.isDirectory() ? files(`${dir}/${r.name}`) : [`${dir}/${r.name}`]);
+const files = (dir: string): string[] => readdirSync(dir, { withFileTypes: true }).flatMap(r => r.isDirectory() ? files(`${dir}/${r.name}`) : [`${dir}/${r.name}`]).filter(p => !routing.newMedia.includes(p) && !routing.newRoutes.includes(p.replace(/^qa\/routes\//, "")));
 const checkpoint = (name: string, scene: string, action?: string) => routeCheckpoint(`freight-craft/${name}`, scene, action);
 const take = (s: ReturnType<typeof createCharacter>, id: string) => { const c = presentChoices(s, getScene(s.sceneId)).find(c => c.id === id && c.enabled); assert.ok(c, `${s.sceneId}/${id}`); return commitChoice(s, c).state; };
 for (const file of phase.newRoutes) it(`plays ${file} through actual held saves, receipts and finale`, () => {
@@ -38,6 +39,8 @@ it("preserves the precise historical route/media cohort and appends only thirtee
   for (const p of phase.baseline.preservedManifests) assert.equal(hash(p.path), p.sha256, p.path);
   assert.equal(hash(phase.baseline.sceneArt.path), phase.baseline.sceneArt.sha256);
   const reconstructed = structuredClone(currentArt);
+  reconstructed.decisions = reconstructed.decisions.filter(row => !row.scenes.some(id => routing.newScenes.includes(id)));
+  for (const actor of reconstructed.speakingPortraits) actor.scenes = actor.scenes.filter(id => !routing.newScenes.includes(id));
   reconstructed.decisions = reconstructed.decisions.filter(row => !row.scenes.some(id => phase.newScenes.includes(id)));
   reconstructed.variants = reconstructed.variants.filter(row => !row.scenes.some(id => phase.newScenes.includes(id)));
   for (const actor of reconstructed.speakingPortraits) actor.scenes = actor.scenes.filter(id => !phase.newScenes.includes(id));

@@ -1,3 +1,4 @@
+import routingSource from "../qa/media/return-routing-dialogue-bindings.json";
 import freightSource from "../qa/media/freight-craft-dialogue-bindings.json";
 import craftSource from "../qa/media/encounter-craft-dialogue-bindings.json";
 import payoffSource from "../qa/media/emotional-payoff-dialogue-bindings.json";
@@ -15,7 +16,7 @@ export type CampaignDialogue = {
   choiceId?: string; outcome?: string;
 };
 const byScene = new Map<string, CampaignDialogue[]>();
-export const allCampaignDialogue = [...source, ...districtSource, ...techniqueSource, ...kerrSource, ...maraSource, ...witnessSource, ...craftSource, ...payoffSource, ...freightSource] as CampaignDialogue[];
+export const allCampaignDialogue = [...source, ...districtSource, ...techniqueSource, ...kerrSource, ...maraSource, ...witnessSource, ...craftSource, ...payoffSource, ...freightSource, ...routingSource] as CampaignDialogue[];
 for (const line of allCampaignDialogue) {
   const group = byScene.get(line.scene) ?? [];
   group.push(line); byScene.set(line.scene, group);
