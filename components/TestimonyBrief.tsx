@@ -8,9 +8,9 @@ export function TestimonyBrief({ state }: { state: GameState }) {
   if (!publicAccount && !COMPARISON_SCENES.has(state.sceneId)) return null;
   const sources = sourceLedger(state);
   const readiness = sourceReadiness(state);
-  return <aside className="transfer-brief" aria-label="Public account sources and permission" data-testid="testimony-brief">
+  return <aside className="transfer-brief testimony-brief" aria-label="Public account sources and permission" data-testid="testimony-brief">
     {publicAccount ? <dl className="testimony-sources">
-      {testimonyPacket(state).map((row) => <div key={row.title}><dt>{row.title}</dt><dd>{row.text}</dd></div>)}
+      {testimonyPacket(state).map((row) => <div key={row.title}><dt>{row.title}</dt>{" "}<dd>{row.text}</dd></div>)}
     </dl> : <p className="hint">A source’s contents, independent corroboration and permission to publish are separate questions.</p>}
     <details className="source-ledger" data-testid="source-ledger">
       <summary>Review acquired sources and permissions · {sources.length} records</summary>

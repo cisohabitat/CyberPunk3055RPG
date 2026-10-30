@@ -11,6 +11,7 @@ import { choiceSection } from "@/lib/choice-sections";
 import { canalThreads } from "@/lib/canal-threads";
 import { decisionFirstScene } from "@/lib/decision-pacing";
 import { workspaceFlowScene } from "@/lib/workspace-flow";
+import { decisionFlowScene } from "@/lib/decision-flow";
 import { choicePresentation, DISTRICT_PRESENTATIONS, sceneDistrict } from "@/lib/visual-presentation";
 import { chapterPresentation } from "@/lib/chapter-presentation";
 import { ChapterTransition } from "./ChapterTransition";
@@ -56,6 +57,7 @@ import { memoryInteractionCue, visibleDialogue } from "@/lib/memory-media";
 import { visibleCampaignDialogue, spokenDialogueRange, type CampaignDialogue } from "@/lib/campaign-dialogue";
 import { SpokenText } from "./SpokenText";
 import { FieldKitBrief } from "./FieldKitBrief";
+import { FIELD_KITS } from "@/lib/loadout";
 import { TestimonyBrief } from "./TestimonyBrief";
 import { ArchiveBrief } from "./ArchiveBrief";
 import { ArchivePlanner } from "./ArchivePlanner";
@@ -123,6 +125,7 @@ export function PlayScreen({
   const choices = presentChoices(state, scene);
   const canal = scene.id === "act2_middle";
   const decisionFirst = decisionFirstScene(scene.id);
+  const nearbyDecisions = decisionFlowScene(scene.id);
   const threads = canalThreads(scene.id, choices);
   const choiceMarks = choices.map(choice => choicePresentation(scene.id, choice));
   const choiceLegend = choiceMarks.filter((mark, index) => choiceMarks.findIndex(other => other.kind === mark.kind) === index);
@@ -318,6 +321,52 @@ export function PlayScreen({
     <p className="hint">Changes already applied. Faction numbers are standing, not a guarantee of trust or consent.</p>
   </details>;
 
+  function renderChoice(choice: VisibleChoice, index: number) {
+    const section = choiceSection(scene.id, choice.id);
+    const startsSection = section && section !== choiceSection(scene.id, choices[index - 1]?.id ?? "");
+    const odds = choice.check ? previewCheck(state, choice.check) : null;
+    const presentation = choiceMarks[index];
+    const effects = choice.disabledReason !== undefined ? [] : effectPreview(state, choice);
+    const costs = choice.disabledReason !== undefined ? [] : checkResourceCosts(state, choice);
+    const chance = !odds ? null : odds.hits === 10 ? "certain" : odds.hits === 0 ? "no chance" : `${odds.hits} in 10`;
+    return (
+      <Fragment key={choice.id}>
+        {startsSection && <h3 className="choice-group-title" data-testid="choice-section">{section}</h3>}
+        {index === decisionIndex && <h3 id="chapter-decision" className="choice-group-title" tabIndex={-1}>{decisionTitle}</h3>}
+        <button
+          className="choice"
+          data-choice-kind={presentation.kind}
+          data-available={choice.enabled ? "true" : "false"}
+          type="button"
+          id={choice.id === "open-archive-catalog" ? "archive-catalog-toggle" : `campaign-choice-${choice.id}`}
+          data-testid={`choice-${choice.id}`}
+          aria-labelledby={`choice-label-${choice.id}`}
+          aria-describedby={`choice-detail-${choice.id}`}
+          aria-keyshortcuts={preferences.numberShortcuts && choice.enabled && index < 9 ? String(index + 1) : undefined}
+          disabled={!choice.enabled || activeChoice !== null}
+          onClick={() => pick(choice)}
+        >
+          {preferences.artwork !== "none" && scene.id === "districts" && DISTRICT_ART[choice.id] && (
+            <img className="card-art" src={DISTRICT_ART[choice.id]} alt="" loading="lazy" width={320} height={180} />
+          )}
+          <span className="index">{index + 1}</span>
+          <span className="label" id={`choice-label-${choice.id}`}>{choice.label}</span>
+          <span className="choice-action-mark" aria-hidden="true" title={presentation.label}><Symbol name={presentation.symbol} /></span>
+          <span className="odds" id={`choice-detail-${choice.id}`}>
+            {choice.disabledReason !== undefined ? <span className="choice-meta" data-kind="unavailable">{choice.disabledReason}</span> : <>
+              {odds && <span className="choice-fact"><span className="choice-fact-label">Check</span><span className="choice-meta" data-kind="check">{STAT_INFO[odds.stat].name} · DC {odds.dc} · {chance}</span></span>}{" "}
+              {choice.detail && <span className="choice-fact"><span className="choice-fact-label">Details</span><span className="choice-meta" data-kind="detail">{choice.detail}</span></span>}{" "}
+              {openPromises.length > 0 && [choice.next, choice.nextSuccess, choice.nextFail].some(next => typeof next === "string" && ["ending_week_wards", "ending_week_deal", "ending_exposed"].includes(next)) && <span className="choice-meta" data-kind="promise">{`${openPromises.length} campaign ${openPromises.length === 1 ? "promise remains" : "promises remain"} unresolved if the week closes: ${openPromises.map(row => row.title).join("; ")}`}</span>}{" "}
+              {effects.length > 0 && <span className="choice-fact"><span className="choice-fact-label">Changes</span><span className="choice-meta" data-kind="effects">{effects.join(" · ")}</span></span>}{" "}
+              {costs.length > 0 && <span className="choice-fact"><span className="choice-fact-label">Roll outcomes</span><span className="choice-meta" data-kind="costs">{costs.join("; ")}</span></span>}
+            </>}
+          </span>
+        </button>
+      </Fragment>
+    );
+
+  }
+
   return (
     <ArtworkContext.Provider value={preferences.artwork !== "none" ? art => setViewedArt({ art, scene: scene.id }) : undefined}><div className="screen">
       <a className="skip" href={choices.length > 0 ? "#choices" : "#scene-top"}>
@@ -372,6 +421,7 @@ export function PlayScreen({
             tabIndex={-1}
             data-testid="scene"
             data-workspace-flow={workspaceFlowScene(scene.id) ? "compact" : undefined}
+            data-decision-flow={nearbyDecisions ? "nearby" : undefined}
             data-district={visualDistrict}
             style={{ backgroundImage: preferences.artwork === "none" || illustration ? undefined : `linear-gradient(180deg, rgba(9,8,13,0.72), rgba(9,8,13,0.94)), url(${sceneBackdrop(scene.id, scene.location)})` }}
           >
@@ -456,11 +506,11 @@ export function PlayScreen({
               target.scrollIntoView({ block: "start", behavior: "instant" });
             }}>Review available choices</a>}
             {!scene.finale && !decisionFirst && <div className="decision-context" data-testid="decision-context">
-              <ObjectiveBrief state={state} />
+              {!nearbyDecisions && <ObjectiveBrief state={state} />}
               <TransferBrief state={state} />
               <ArchiveBrief state={state} />
               {!scene.memory && <TestimonyBrief state={state} />}
-              <FieldKitBrief state={state} />
+              {scene.id !== "act2_workshop" && <FieldKitBrief state={state} />}
             </div>}
             {scene.id === "act2_craft_archive" && <ArchiveQuestionDesk state={state} choices={choices} onInspect={pick} numberShortcuts={preferences.numberShortcuts} />}
             {scene.id === "act2_archive_compare" && <ArchiveCatalog state={state} choices={choices} onChoose={pick} numberShortcuts={preferences.numberShortcuts} />}
@@ -471,7 +521,7 @@ export function PlayScreen({
             {["act2_route_map", "act2_route_exit", "act2_route_review", "act2_route_crossing"].includes(scene.id) && <RouteBoard state={state} />}
             {scene.finale && <FinaleReflection state={state} artwork={preferences.artwork !== "none"} />}
             {!scene.finale && !decisionFirst && <CampaignThread state={state} choices={choices} />}
-            {!decisionFirst && recentChoice}
+            {!decisionFirst && !nearbyDecisions && recentChoice}
             {fault && <p className="form-error">{fault}</p>}
             {choices.length > 0 && (
               <div className={scene.id === "districts" ? "choices cards" : "choices"} id="choices" tabIndex={-1} role="region" aria-labelledby="choices-title">
@@ -481,7 +531,7 @@ export function PlayScreen({
                     event.preventDefault();
                     focusDecisionSection("decision-records");
                   }}>Review your records</a>}
-                  {decisionFirst ? <p className="hint">Review costs before choosing.</p> : <p className="hint">Selecting an option commits it. For a check, review the odds and costs first; Back leaves it unrolled.</p>}
+                  {decisionFirst ? <p className="hint">Review costs before choosing.</p> : nearbyDecisions ? <p className="hint decision-commit-reminder">Selecting an option commits it.</p> : <p className="hint">Selecting an option commits it. For a check, review the odds and costs first; Back leaves it unrolled.</p>}
                   {threads.length > 0 && <details className="canal-threads" data-testid="canal-threads" key={scene.id}>
                     <summary>Find a thread · {threads.reduce((count, thread) => count + thread.choices.length, 0)} available choices</summary>
                     <p className="hint">Find the work you want to review. This spends nothing; select its choice below only when you are ready.</p>
@@ -496,8 +546,8 @@ export function PlayScreen({
                       }}>Find: {choice.label}</a></li>)}</ul>
                     </section>)}
                   </details>}
-                  {!decisionFirst && choiceLegend.length > 1 && <p className="choice-legend" aria-label="Choice markers">{choiceLegend.map(mark => <span key={mark.kind}><Symbol name={mark.symbol} /> {mark.label}</span>)}</p>}
-                  {!decisionFirst && unavailableChoices.length > 0 && <details data-testid="unavailable-choices"><summary>Review unavailable approaches ({unavailableChoices.length})</summary><ul>{unavailableChoices.map((choice) => <li key={choice.id}><strong>{choice.label}</strong><p>{choice.disabledReason}</p></li>)}</ul></details>}
+                  {!decisionFirst && !nearbyDecisions && choiceLegend.length > 1 && <p className="choice-legend" aria-label="Choice markers">{choiceLegend.map(mark => <span key={mark.kind}><Symbol name={mark.symbol} /> {mark.label}</span>)}</p>}
+                  {!decisionFirst && !nearbyDecisions && unavailableChoices.length > 0 && <details data-testid="unavailable-choices"><summary>Review unavailable approaches ({unavailableChoices.length})</summary><ul>{unavailableChoices.map((choice) => <li key={choice.id}><strong>{choice.label}</strong><p>{choice.disabledReason}</p></li>)}</ul></details>}
                   {decisionIndex > 0 && <a href="#chapter-decision" data-testid="decision-jump" onClick={event => {
                     const target = document.getElementById("chapter-decision");
                     if (!target) return;
@@ -507,56 +557,29 @@ export function PlayScreen({
                   }}>Go to {decisionTitle === "Street or silence" ? "street or silence decision" : "final decision"}</a>}
                 </div>
                 {decisionIndex > 0 && <h3 className="choice-group-title">People and unfinished work</h3>}
+                {scene.id === "act2_workshop" && <FieldKitBrief state={state} renderPurchase={id => {
+                  const index = choices.findIndex(choice => choice.id === id);
+                  return index < 0 ? null : renderChoice(choices[index], index);
+                }} />}
                 {choices.map((choice, index) => {
                   if (scene.memory && choice.id.startsWith("inspect-")) return null;
                   if (scene.id === "act2_craft_archive" && choice.id.startsWith("craft-read-")) return null;
                   if (scene.id === "act2_archive_compare" && CATALOG_ACTIONS.has(choice.id)) return null;
                   if (scene.id === "memory_sequence" && choice.id.startsWith("place-")) return null;
-                  const section = choiceSection(scene.id, choice.id);
-                  const startsSection = section && section !== choiceSection(scene.id, choices[index - 1]?.id ?? "");
-                  const odds = choice.check ? previewCheck(state, choice.check) : null;
-                  const presentation = choiceMarks[index];
-                  const effects = choice.disabledReason !== undefined ? [] : effectPreview(state, choice);
-                  const costs = choice.disabledReason !== undefined ? [] : checkResourceCosts(state, choice);
-                  const chance = !odds ? null : odds.hits === 10 ? "certain" : odds.hits === 0 ? "no chance" : `${odds.hits} in 10`;
-                  return (
-                    <Fragment key={choice.id}>
-                      {startsSection && <h3 className="choice-group-title" data-testid="choice-section">{section}</h3>}
-                      {index === decisionIndex && <h3 id="chapter-decision" className="choice-group-title" tabIndex={-1}>{decisionTitle}</h3>}
-                      <button
-                        className="choice"
-                        data-choice-kind={presentation.kind}
-                        data-available={choice.enabled ? "true" : "false"}
-                        type="button"
-                        id={choice.id === "open-archive-catalog" ? "archive-catalog-toggle" : `campaign-choice-${choice.id}`}
-                        data-testid={`choice-${choice.id}`}
-                        aria-labelledby={`choice-label-${choice.id}`}
-                        aria-describedby={`choice-detail-${choice.id}`}
-                        aria-keyshortcuts={preferences.numberShortcuts && choice.enabled && index < 9 ? String(index + 1) : undefined}
-                        disabled={!choice.enabled || activeChoice !== null}
-                        onClick={() => pick(choice)}
-                      >
-                        {preferences.artwork !== "none" && scene.id === "districts" && DISTRICT_ART[choice.id] && (
-                          <img className="card-art" src={DISTRICT_ART[choice.id]} alt="" loading="lazy" width={320} height={180} />
-                        )}
-                        <span className="index">{index + 1}</span>
-                        <span className="label" id={`choice-label-${choice.id}`}>{choice.label}</span>
-                        <span className="choice-action-mark" aria-hidden="true" title={presentation.label}><Symbol name={presentation.symbol} /></span>
-                        <span className="odds" id={`choice-detail-${choice.id}`}>
-                          {choice.disabledReason !== undefined ? <span className="choice-meta" data-kind="unavailable">{choice.disabledReason}</span> : <>
-                            {odds && <span className="choice-fact"><span className="choice-fact-label">Check</span><span className="choice-meta" data-kind="check">{STAT_INFO[odds.stat].name} · DC {odds.dc} · {chance}</span></span>}{" "}
-                            {choice.detail && <span className="choice-fact"><span className="choice-fact-label">Details</span><span className="choice-meta" data-kind="detail">{choice.detail}</span></span>}{" "}
-                            {openPromises.length > 0 && [choice.next, choice.nextSuccess, choice.nextFail].some(next => typeof next === "string" && ["ending_week_wards", "ending_week_deal", "ending_exposed"].includes(next)) && <span className="choice-meta" data-kind="promise">{`${openPromises.length} campaign ${openPromises.length === 1 ? "promise remains" : "promises remain"} unresolved if the week closes: ${openPromises.map(row => row.title).join("; ")}`}</span>}{" "}
-                            {effects.length > 0 && <span className="choice-fact"><span className="choice-fact-label">Changes</span><span className="choice-meta" data-kind="effects">{effects.join(" · ")}</span></span>}{" "}
-                            {costs.length > 0 && <span className="choice-fact"><span className="choice-fact-label">Roll outcomes</span><span className="choice-meta" data-kind="costs">{costs.join("; ")}</span></span>}
-                          </>}
-                        </span>
-                      </button>
-                    </Fragment>
-                  );
+                  if (scene.id === "act2_workshop" && FIELD_KITS.some(kit => choice.id === `buy-${kit.id}`)) return null;
+                  return renderChoice(choice, index);
                 })}
               </div>
             )}
+            {nearbyDecisions && <section className="decision-flow-records" aria-label="Commitments and history" data-testid="decision-flow-records">
+              <div className="decision-context"><ObjectiveBrief state={state} /></div>
+              <section aria-label="Choice reference">
+                <p className="hint">Selecting an option commits it. For a check, review the odds and costs first; Back leaves it unrolled.</p>
+                {choiceLegend.length > 1 && <p className="choice-legend" aria-label="Choice markers">{choiceLegend.map(mark => <span key={mark.kind}><Symbol name={mark.symbol} /> {mark.label}</span>)}</p>}
+                {unavailableChoices.length > 0 && <details data-testid="unavailable-choices"><summary>Review unavailable approaches ({unavailableChoices.length})</summary><ul>{unavailableChoices.map((choice) => <li key={choice.id}><strong>{choice.label}</strong><p>{choice.disabledReason}</p></li>)}</ul></details>}
+              </section>
+              {recentChoice}
+            </section>}
             {decisionFirst && <section className="decision-records" id="decision-records" tabIndex={-1} aria-labelledby="decision-records-title" data-testid="decision-records" key={`decision-records-${scene.id}`}>
               <h2 id="decision-records-title">Commitments and history</h2>
               {visibleCount === paragraphs.length && <ConversationContext state={state} speaker={scene.speaker} />}

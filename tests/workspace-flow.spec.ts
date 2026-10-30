@@ -9,6 +9,7 @@ import { testimonyPacket } from "../lib/testimony";
 import { routePlan } from "../lib/route-planning";
 import { CRAFT_RECORDS } from "../lib/encounter-craft";
 import type { GameState } from "../lib/types";
+import { decisionFlowScene } from "../lib/decision-flow";
 
 const saved = (page: Page) => page.evaluate(() => ({ run: localStorage.getItem("saint-shard-3055-v1"), preferences: localStorage.getItem("saint-shard-preferences"), codex: localStorage.getItem("saint-shard-codex") }));
 async function open(page: Page, state: GameState, width = 390, artwork = "full", paragraph = false) {
@@ -31,12 +32,19 @@ for (const original of baseline) test(`workspace reading metrics and keyboard or
   const current = await measure();
   // Compare the preceding layout in this same browser; typography/innerText differ
   // legitimately between engines. Removing a presentation attribute changes no run.
-  await page.getByTestId("scene").evaluate(n => n.removeAttribute("data-workspace-flow"));
+  await page.getByTestId("scene").evaluate(n => { n.removeAttribute("data-workspace-flow"); n.removeAttribute("data-decision-flow"); });
   const preceding = await measure();
   await page.getByTestId("scene").evaluate(n => n.setAttribute("data-workspace-flow", "compact"));
+  if (decisionFlowScene(original.sceneId)) await page.getByTestId("scene").evaluate(n => n.setAttribute("data-decision-flow", "nearby"));
   const words = (text: string) => text.replace(/\s+/g, " ").trim();
-  expect(words(current.text)).toBe(words(original.text));
-  expect(current.text).toBe(preceding.text); expect(current.focusOrder).toEqual(preceding.focusOrder); expect(current.typography).toEqual(preceding.typography);
+  if (decisionFlowScene(original.sceneId)) {
+    // Phase11 moves only passive history after decisions. Preserve every visible
+    // original block here; the new suite asserts the exact intended DOM order.
+    let previous = original.text;
+    if (original.sceneId === "act2_craft_archive") for (let i = 0; i < 3; i++) previous = previous.replace("Description inspected", "");
+    expect(words(current.text.replace('Selecting an option commits it.', '')).split(' ').sort()).toEqual(words(previous).split(' ').sort());
+  } else expect(words(current.text)).toBe(words(original.text));
+  expect(words(current.text)).toBe(words(preceding.text)); expect(current.focusOrder).toEqual(preceding.focusOrder); expect(current.typography).toEqual(preceding.typography);
   expect(current.gap).toBeLessThan(preceding.gap - 40);
   await expect(page.getByTestId("goal")).toBeInViewport();
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true); expect(await saved(page)).toEqual(before);

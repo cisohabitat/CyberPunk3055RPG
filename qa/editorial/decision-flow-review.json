@@ -1,0 +1,616 @@
+{
+  "version": 1,
+  "phase": 11,
+  "grade": 8.9,
+  "status": "Validated pre-publication candidate; exact-commit hosted/live evidence remains separate",
+  "revision": "9b0877595d7c1802a99b1294e3bd6b17d40a227d",
+  "dirty": true,
+  "sourceFingerprint": "91641125a9e21a58deee93d50076dd0877ac6ee5c7e1c55fa1d9c4ffdc485af1",
+  "scope": [
+    "act2_craft_archive",
+    "act2_craft_archive_issuer",
+    "act2_route_exit",
+    "act2_workshop",
+    "act3_testimony_hearing",
+    "act3_testimony_review"
+  ],
+  "implementation": "Six-scene presentation scope, shared canonical renderer, readonly review navigation, exact duplicate reference consolidation. Story/quotes/actors/art/audio/rules/saves unchanged.",
+  "baseline": "qa/editorial/decision-flow-baseline.json",
+  "baselineSha256": "8df3961cea4acd02d6f04780c7e0a9c1e2045058dfde782a6dfbbdeb69bed026",
+  "measurements": "qa/editorial/decision-flow-measurements.json",
+  "diagnostics": "qa/editorial/decision-flow-diagnostics.json",
+  "previousRelease": "qa/editorial/aaa-craft-reassessment-release.json",
+  "fixedAcceptance": "qa/editorial/decision-flow-acceptance.json",
+  "additionalVerification": [
+    {
+      "id": "harness-listed",
+      "visits": 81,
+      "canonicalTextAndChosenActionAtEveryCheckpoint": true,
+      "exactFinal": true,
+      "quietNoArtAndDisposal": true
+    },
+    {
+      "id": "failed-desk",
+      "visits": 79,
+      "canonicalTextAndChosenActionAtEveryCheckpoint": true,
+      "exactFinal": true,
+      "quietNoArtAndDisposal": true
+    },
+    {
+      "id": "scarce",
+      "visits": 88,
+      "canonicalTextAndChosenActionAtEveryCheckpoint": true,
+      "exactFinal": true,
+      "quietNoArtAndDisposal": true
+    }
+  ],
+  "profiles": [
+    {
+      "id": "deferred",
+      "profile": {
+        "id": "deferred",
+        "route": "qa/routes/emotional-payoff/edda-deferred-quiet.json",
+        "width": 320,
+        "artwork": "none",
+        "reading": "paragraph",
+        "sound": false,
+        "shots": false
+      },
+      "visits": 63,
+      "reloads": 62,
+      "tabsBefore": 574,
+      "tabs": 567,
+      "tabsSaved": 7,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 0,
+        "strain": 3,
+        "rolls": [
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "maxGap": {
+        "scene": "act2_route_map",
+        "pixels": 1485
+      },
+      "evidence": "qa/editorial/decision-flow-runs/deferred.json",
+      "sha256": "1a4a44bc58550ab3ab7adff34236067288ee4e865d77f47b19cf772df9866e17"
+    },
+    {
+      "id": "denied",
+      "profile": {
+        "id": "denied",
+        "route": "qa/routes/emotional-payoff/kerr-contact-denied-witness.json",
+        "width": 1440,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "shots": false
+      },
+      "visits": 82,
+      "reloads": 81,
+      "tabsBefore": 697,
+      "tabs": 693,
+      "tabsSaved": 4,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_witness",
+        "creds": 370,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "maxGap": {
+        "scene": "act2_route_map",
+        "pixels": 883
+      },
+      "evidence": "qa/editorial/decision-flow-runs/denied.json",
+      "sha256": "feebe14c6ef93830a3c60cd09edca274ccb4201b7ad9c679120fc0455d67bb1b"
+    },
+    {
+      "id": "names",
+      "profile": {
+        "id": "names",
+        "route": "qa/routes/emotional-payoff/edda-authenticated-names.json",
+        "width": 390,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "shots": false
+      },
+      "visits": 89,
+      "reloads": 88,
+      "tabsBefore": 760,
+      "tabs": 747,
+      "tabsSaved": 13,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 390,
+        "strain": 3,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "maxGap": {
+        "scene": "act2_craft_archive",
+        "pixels": 1447
+      },
+      "evidence": "qa/editorial/decision-flow-runs/names.json",
+      "sha256": "4d014adc4e73c21eabc32403a3874c1cbf055963493a186499fbf9906b4a7b95"
+    },
+    {
+      "id": "listed-sound",
+      "profile": {
+        "id": "listed-sound",
+        "route": "qa/routes/emotional-payoff/both-returns-listed.json",
+        "width": 390,
+        "artwork": "full",
+        "reading": "all",
+        "sound": true,
+        "shots": true
+      },
+      "visits": 87,
+      "reloads": 86,
+      "tabsBefore": 929,
+      "tabs": 919,
+      "tabsSaved": 10,
+      "completedVoices": 41,
+      "shotReviews": 51,
+      "interruptions": 2,
+      "final": {
+        "sceneId": "ending_listed",
+        "creds": 470,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "maxGap": {
+        "scene": "act2_craft_archive",
+        "pixels": 1447
+      },
+      "evidence": "qa/editorial/decision-flow-runs/listed-sound.json",
+      "sha256": "4f8a33aa3bff3c35d70cf633642a632a3cc9043aaaeeba8e64b99f435cb896f8"
+    },
+    {
+      "id": "nerve",
+      "profile": {
+        "id": "nerve",
+        "route": "qa/routes/allocation-gutterwire.json",
+        "width": 390,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "shots": false
+      },
+      "visits": 77,
+      "reloads": 30,
+      "tabsBefore": 533,
+      "tabs": 529,
+      "tabsSaved": 4,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 350,
+        "strain": 5,
+        "rolls": [
+          1,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "maxGap": {
+        "scene": "act3_testimony_correction",
+        "pixels": 1735
+      },
+      "evidence": "qa/editorial/decision-flow-runs/nerve.json",
+      "sha256": "8f9d6245c890498d352dc836508476e2310d52caff6a860e7995da5d08b2154e"
+    },
+    {
+      "id": "face-failed",
+      "profile": {
+        "id": "face-failed",
+        "route": "qa/routes/depot-build-face-failed.json",
+        "width": 1440,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "shots": false
+      },
+      "visits": 75,
+      "reloads": 27,
+      "tabsBefore": 580,
+      "tabs": 576,
+      "tabsSaved": 4,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 345,
+        "strain": 0,
+        "rolls": [
+          10,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      "maxGap": {
+        "scene": "act3_testimony_consent",
+        "pixels": 980
+      },
+      "evidence": "qa/editorial/decision-flow-runs/face-failed.json",
+      "sha256": "3faf6d22affe6fa8b1029cb97950423733dfed94525296ec13b88d0c6579aec9"
+    },
+    {
+      "id": "archive-failed",
+      "profile": {
+        "id": "archive-failed",
+        "route": "qa/routes/emotional-payoff/edda-failed-quiet.json",
+        "width": 320,
+        "artwork": "none",
+        "reading": "paragraph",
+        "sound": false,
+        "shots": false
+      },
+      "visits": 64,
+      "reloads": 63,
+      "tabsBefore": 585,
+      "tabs": 578,
+      "tabsSaved": 7,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 0,
+        "strain": 4,
+        "rolls": [
+          1,
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "maxGap": {
+        "scene": "act2_route_map",
+        "pixels": 1485
+      },
+      "evidence": "qa/editorial/decision-flow-runs/archive-failed.json",
+      "sha256": "081a4db9bf7fc7a9625c8eecffb931583c6171452922e50f6c390ad97cc578ac"
+    },
+    {
+      "id": "canceled",
+      "profile": {
+        "id": "canceled",
+        "route": "qa/routes/emotional-payoff/kerr-canceled-quiet.json",
+        "width": 390,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "shots": false
+      },
+      "visits": 75,
+      "reloads": 74,
+      "tabsBefore": 619,
+      "tabs": 616,
+      "tabsSaved": 3,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 390,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "maxGap": {
+        "scene": "act3_testimony_consent",
+        "pixels": 1421
+      },
+      "evidence": "qa/editorial/decision-flow-runs/canceled.json",
+      "sha256": "597e75bb8445e9ec4247055125bfadf894ab3caba434d28bd485589aa56221c0"
+    },
+    {
+      "id": "nerve-handling-failed",
+      "profile": {
+        "id": "nerve-handling-failed",
+        "route": "qa/routes/depot-build-nerve-failed.json",
+        "width": 390,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "shots": false
+      },
+      "visits": 76,
+      "reloads": 28,
+      "tabsBefore": 577,
+      "tabs": 573,
+      "tabsSaved": 4,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 355,
+        "strain": 3,
+        "rolls": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      "maxGap": {
+        "scene": "act3_testimony_consent",
+        "pixels": 1672
+      },
+      "evidence": "qa/editorial/decision-flow-runs/nerve-handling-failed.json",
+      "sha256": "bcccc5dff20a8c0e81c9ef2ed28a65e1aa489b9d90ea960bd90573c7aa8a0475"
+    },
+    {
+      "id": "ghost-routing",
+      "profile": {
+        "id": "ghost-routing",
+        "route": "qa/routes/depot-build-ghost.json",
+        "width": 390,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "shots": false
+      },
+      "visits": 80,
+      "reloads": 32,
+      "tabsBefore": 635,
+      "tabs": 631,
+      "tabsSaved": 4,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 380,
+        "strain": 2,
+        "rolls": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      "maxGap": {
+        "scene": "act3_testimony_consent",
+        "pixels": 1672
+      },
+      "evidence": "qa/editorial/decision-flow-runs/ghost-routing.json",
+      "sha256": "4d43235a44470dbe230ab93d601adaa12ffe9d07e304f1be97856f652df705b6"
+    },
+    {
+      "id": "harness-listed",
+      "profile": {
+        "id": "harness-listed",
+        "route": "qa/routes/freight-craft/harness-listed.json",
+        "width": 390,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "shots": false
+      },
+      "visits": 81,
+      "reloads": 80,
+      "tabsBefore": 591,
+      "tabs": 585,
+      "tabsSaved": 6,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_listed",
+        "creds": 290,
+        "strain": 4,
+        "rolls": [
+          1,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "maxGap": {
+        "scene": "act3_testimony_correction",
+        "pixels": 1645
+      },
+      "evidence": "qa/editorial/decision-flow-runs/harness-listed.json",
+      "sha256": "4ecf84d5fa321d77caf4e129470ea6cb159b5be46b0c3569b7e31edb09e605ab"
+    },
+    {
+      "id": "failed-desk",
+      "profile": {
+        "id": "failed-desk",
+        "route": "qa/routes/freight-craft/failed-desk.json",
+        "width": 390,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "shots": false
+      },
+      "visits": 79,
+      "reloads": 78,
+      "tabsBefore": 571,
+      "tabs": 569,
+      "tabsSaved": 2,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 330,
+        "strain": 5,
+        "rolls": [
+          1,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "maxGap": {
+        "scene": "act3_testimony_correction",
+        "pixels": 1673
+      },
+      "evidence": "qa/editorial/decision-flow-runs/failed-desk.json",
+      "sha256": "669df97953d50856ff8531fbb959eb7024a354d8d7f43f034a463de3db82f9e7"
+    },
+    {
+      "id": "scarce",
+      "profile": {
+        "id": "scarce",
+        "route": "qa/routes/freight-craft/scarce.json",
+        "width": 320,
+        "artwork": "none",
+        "reading": "paragraph",
+        "sound": false,
+        "shots": false
+      },
+      "visits": 88,
+      "reloads": 87,
+      "tabsBefore": 751,
+      "tabs": 744,
+      "tabsSaved": 7,
+      "completedVoices": 0,
+      "shotReviews": 0,
+      "interruptions": 0,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 0,
+        "strain": 5,
+        "rolls": [
+          1,
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "maxGap": {
+        "scene": "act2_route_map",
+        "pixels": 1485
+      },
+      "evidence": "qa/editorial/decision-flow-runs/scarce.json",
+      "sha256": "1534dac6afa856d3a6e624b76d9f12af6f700908ad42541707d847938d7d260a"
+    }
+  ],
+  "totals": {
+    "visits": 1016,
+    "reloads": 816,
+    "tabs": 8327,
+    "tabsBefore": 8402,
+    "tabsSaved": 75,
+    "completedVoices": 41,
+    "shotReviews": 51,
+    "interruptions": 2
+  },
+  "sourceCoverage": {
+    "routes": 231,
+    "visits": 16441,
+    "visitedScenes": 242,
+    "totalScenes": 254,
+    "unvisitedScenes": [
+      "act2_folio",
+      "act2_heat",
+      "chapel",
+      "ending_exposed",
+      "ending_sainted",
+      "ending_smashed",
+      "ending_taken",
+      "hatch",
+      "hatch_caught",
+      "kerr_fight",
+      "lumen_cold",
+      "why"
+    ],
+    "presentedSceneChoices": 741,
+    "selectedSceneChoices": 584
+  },
+  "validation": {
+    "sourceTests": 901,
+    "sourceFailures": 0,
+    "typescript": "standalone noEmit and production build passed",
+    "build": "passed",
+    "knownDependencyVulnerabilities": 0,
+    "balanceAudits": 5,
+    "catalog": {
+      "scenes": 254,
+      "choices": 771,
+      "routes": 231,
+      "assets": 849,
+      "budgetViolations": []
+    },
+    "newBrowserCases": 38,
+    "latestUI": "246 focused/preservation Chromium cases passed together, including all38 new cases; no retry, four workers; full hosted cohort still required",
+    "retries": 0,
+    "workers": 4,
+    "documentationCases": 8,
+    "browserCases": 246,
+    "browserFailures": 0,
+    "browserLogSha256": "ac807bcdae3a2952b561e425fc35927bef747dd041a3d84d9152cab3e3e9862b"
+  },
+  "limits": "Source-familiar AI proxy over directed dice and synthetic viewports; no human/blind/physical-iPhone/screen-reader listening/independent acting acceptance. Fixed Chromium before reference; unchanged score. Source fixtures leave12 scenes unvisited.",
+  "report": "docs/DECISION_FLOW_PHASE11.md",
+  "nextPhase": "Phase12 broader encounter and editorial craft with matching art/voices; no automatic grade increase."
+}

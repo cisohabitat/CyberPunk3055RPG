@@ -1803,3 +1803,37 @@ html[data-motion="reduce"] .location-entry, html[data-motion="reduce"] .portrait
 .scene[data-workspace-flow="compact"] .route-lanes h3 { margin-block: .65rem .4rem; }
 .scene[data-workspace-flow="compact"] .route-lanes li { padding: .4rem; margin-bottom: .4rem; }
 .scene[data-workspace-flow="compact"] .route-summary { padding-top: .6rem; }
+
+/* Scoped decision flow: all active terms stay visible, with no smaller type. */
+.scene[data-decision-flow="nearby"] .decision-context:empty { display: none; }
+.scene[data-decision-flow="nearby"] .question-desk,
+.scene[data-decision-flow="nearby"] .transfer-brief,
+.scene[data-decision-flow="nearby"] .route-board { border-inline: 0; padding-inline: 0; }
+.scene[data-decision-flow="nearby"] .question-records > li { border-inline: 0; padding-inline: 0; }
+.decision-flow-records { margin-top: 1.25rem; padding-top: .75rem; border-top: 1px solid var(--line); }
+.kit-commit { margin-top: .65rem; }
+.kit-commit .choice { width: 100%; scroll-margin-block-start: calc(var(--header-h, 0px) + 1rem); }
+.scene[data-decision-flow="nearby"] .question-desk { margin-block: .4rem; padding-block: .3rem; }
+.scene[data-decision-flow="nearby"] .question-desk h2 { margin-block: .2rem .3rem; }
+.scene[data-decision-flow="nearby"] .question-records { margin-block: .35rem; gap: .2rem; }
+.scene[data-decision-flow="nearby"] .question-records > li { padding-block: .2rem; }
+.scene[data-decision-flow="nearby"] .question-records h3 { margin-bottom: .2rem; }
+.scene[data-decision-flow="nearby"] .question-records p { margin-block: .1rem 0; }
+.scene[data-decision-flow="nearby"] .campaign-thread { margin-block: .3rem; padding-block: .4rem; }
+.scene[data-decision-flow="nearby"] .testimony-sources > div + div { margin-top: .3rem; }
+.scene .decision-flow-records [aria-label="Choice reference"] > .hint { max-width: 64ch; font-size: .9rem; line-height: 1.65; }
+.kit-commit .choice-meta[data-kind="detail"] { font-size: 1.05rem; line-height: 1.6; letter-spacing: normal; }
+.scene[data-decision-flow="nearby"] .question-desk > .hint { margin-block: .2rem; }
+.scene[data-decision-flow="nearby"] .route-lanes h3 { margin-block: .3rem .25rem; }
+.scene[data-decision-flow="nearby"] .route-lanes li { padding-block: .25rem; margin-bottom: .25rem; }
+.scene[data-decision-flow="nearby"] .testimony-brief { margin-block: .3rem; padding-block: .3rem; }
+.scene[data-decision-flow="nearby"] .testimony-brief > .testimony-sources dt,
+.scene[data-decision-flow="nearby"] .testimony-brief > .testimony-sources dd { display: inline; }
+.scene[data-decision-flow="nearby"] .testimony-brief > .testimony-sources dt::after { content: ":"; }
+.kit-commit .choice > .odds { grid-column: 1 / -1; }
+.kit-commit .choice > .index, .kit-commit .choice > .choice-action-mark { grid-row: 1; }
+.scene[data-decision-flow="nearby"] .choices { margin-top: .4rem; padding-top: .4rem; gap: .5rem; }
+.scene[data-decision-flow="nearby"] .kit-shop > .testimony-sources > div { padding: .6rem; }
+.kit-commit .choice { padding-inline: .75rem; }
+.kit-exit-review { display: inline-flex; align-items: center; min-height: 44px; max-width: 100%; margin-block: .4rem; white-space: normal; }
+.scene[data-decision-flow="nearby"] #campaign-choice-leave-workshop { scroll-margin-block-start: calc(var(--header-h, 0px) + 1rem); }

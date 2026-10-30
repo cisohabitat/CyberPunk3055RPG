@@ -1,0 +1,561 @@
+{
+  "phase": 11,
+  "prototypes": [
+    {
+      "file": "prototype-first.json",
+      "revision": "9b0877595d7c1802a99b1294e3bd6b17d40a227d",
+      "dirty": true,
+      "sha256": "40d2d185013719d22d7a4ebd387eecc3406eeb36039ab7c05d43a69904423f88",
+      "measurements": [
+        {
+          "scene": "act2_workshop",
+          "width": 320,
+          "first": 1957,
+          "last": 7974
+        },
+        {
+          "scene": "act2_workshop",
+          "width": 390,
+          "first": 1572,
+          "last": 6186
+        },
+        {
+          "scene": "act2_workshop",
+          "width": 1440,
+          "first": 1197,
+          "last": 3914
+        },
+        {
+          "scene": "act2_craft_archive",
+          "width": 320,
+          "first": 1838,
+          "last": 2702
+        },
+        {
+          "scene": "act2_craft_archive",
+          "width": 390,
+          "first": 1867,
+          "last": 2429
+        },
+        {
+          "scene": "act2_craft_archive",
+          "width": 1440,
+          "first": 1137,
+          "last": 1498
+        },
+        {
+          "scene": "act2_craft_archive_issuer",
+          "width": 320,
+          "first": 496,
+          "last": 1158
+        },
+        {
+          "scene": "act2_craft_archive_issuer",
+          "width": 390,
+          "first": 794,
+          "last": 1322
+        },
+        {
+          "scene": "act2_craft_archive_issuer",
+          "width": 1440,
+          "first": 366,
+          "last": 626
+        },
+        {
+          "scene": "act2_route_exit",
+          "width": 320,
+          "first": 1543,
+          "last": 2624
+        },
+        {
+          "scene": "act2_route_exit",
+          "width": 390,
+          "first": 1311,
+          "last": 2208
+        },
+        {
+          "scene": "act2_route_exit",
+          "width": 1440,
+          "first": 968,
+          "last": 1500
+        },
+        {
+          "scene": "act3_testimony_review",
+          "width": 320,
+          "first": 1488,
+          "last": 1777
+        },
+        {
+          "scene": "act3_testimony_review",
+          "width": 390,
+          "first": 1535,
+          "last": 1756
+        },
+        {
+          "scene": "act3_testimony_review",
+          "width": 1440,
+          "first": 869,
+          "last": 989
+        },
+        {
+          "scene": "act3_testimony_hearing",
+          "width": 320,
+          "first": 1459,
+          "last": 1713
+        },
+        {
+          "scene": "act3_testimony_hearing",
+          "width": 390,
+          "first": 1505,
+          "last": 1726
+        },
+        {
+          "scene": "act3_testimony_hearing",
+          "width": 1440,
+          "first": 840,
+          "last": 960
+        }
+      ]
+    },
+    {
+      "file": "prototype-second.json",
+      "revision": "9b0877595d7c1802a99b1294e3bd6b17d40a227d",
+      "dirty": true,
+      "sha256": "dc2d5738e6e2639d9842598d9eabb6216877102bcf8b5a9b2fd236faf6c24a03",
+      "measurements": [
+        {
+          "scene": "act2_workshop",
+          "width": 320,
+          "first": 1696,
+          "last": 7908
+        },
+        {
+          "scene": "act2_workshop",
+          "width": 390,
+          "first": 1378,
+          "last": 6000
+        },
+        {
+          "scene": "act2_workshop",
+          "width": 1440,
+          "first": 1067,
+          "last": 4365
+        },
+        {
+          "scene": "act2_craft_archive",
+          "width": 320,
+          "first": 1552,
+          "last": 2417
+        },
+        {
+          "scene": "act2_craft_archive",
+          "width": 390,
+          "first": 1582,
+          "last": 2144
+        },
+        {
+          "scene": "act2_craft_archive",
+          "width": 1440,
+          "first": 882,
+          "last": 1242
+        },
+        {
+          "scene": "act2_craft_archive_issuer",
+          "width": 320,
+          "first": 407,
+          "last": 1070
+        },
+        {
+          "scene": "act2_craft_archive_issuer",
+          "width": 390,
+          "first": 705,
+          "last": 1234
+        },
+        {
+          "scene": "act2_craft_archive_issuer",
+          "width": 1440,
+          "first": 307,
+          "last": 567
+        },
+        {
+          "scene": "act2_route_exit",
+          "width": 320,
+          "first": 1398,
+          "last": 2480
+        },
+        {
+          "scene": "act2_route_exit",
+          "width": 390,
+          "first": 1166,
+          "last": 2064
+        },
+        {
+          "scene": "act2_route_exit",
+          "width": 1440,
+          "first": 872,
+          "last": 1403
+        },
+        {
+          "scene": "act3_testimony_review",
+          "width": 320,
+          "first": 1361,
+          "last": 1649
+        },
+        {
+          "scene": "act3_testimony_review",
+          "width": 390,
+          "first": 1373,
+          "last": 1594
+        },
+        {
+          "scene": "act3_testimony_review",
+          "width": 1440,
+          "first": 737,
+          "last": 858
+        },
+        {
+          "scene": "act3_testimony_hearing",
+          "width": 320,
+          "first": 1361,
+          "last": 1615
+        },
+        {
+          "scene": "act3_testimony_hearing",
+          "width": 390,
+          "first": 1373,
+          "last": 1594
+        },
+        {
+          "scene": "act3_testimony_hearing",
+          "width": 1440,
+          "first": 737,
+          "last": 858
+        }
+      ]
+    },
+    {
+      "file": "prototype-third-font-diagnostic.json",
+      "revision": "9b0877595d7c1802a99b1294e3bd6b17d40a227d",
+      "dirty": true,
+      "sha256": "d739e3082e1065e3a1bd3cee013e17ad6e071e3bc0aaa606f9ce0018ca5ff37b",
+      "measurements": [
+        {
+          "scene": "act2_workshop",
+          "width": 320,
+          "first": 1665,
+          "last": 6459
+        },
+        {
+          "scene": "act2_workshop",
+          "width": 390,
+          "first": 1347,
+          "last": 5195
+        },
+        {
+          "scene": "act2_workshop",
+          "width": 1440,
+          "first": 1006,
+          "last": 3203
+        },
+        {
+          "scene": "act2_craft_archive",
+          "width": 320,
+          "first": 1512,
+          "last": 2365
+        },
+        {
+          "scene": "act2_craft_archive",
+          "width": 390,
+          "first": 1542,
+          "last": 2092
+        },
+        {
+          "scene": "act2_craft_archive",
+          "width": 1440,
+          "first": 842,
+          "last": 1190
+        },
+        {
+          "scene": "act2_craft_archive_issuer",
+          "width": 320,
+          "first": 376,
+          "last": 1027
+        },
+        {
+          "scene": "act2_craft_archive_issuer",
+          "width": 390,
+          "first": 674,
+          "last": 1191
+        },
+        {
+          "scene": "act2_craft_archive_issuer",
+          "width": 1440,
+          "first": 276,
+          "last": 524
+        },
+        {
+          "scene": "act2_route_exit",
+          "width": 320,
+          "first": 1363,
+          "last": 2429
+        },
+        {
+          "scene": "act2_route_exit",
+          "width": 390,
+          "first": 1131,
+          "last": 2013
+        },
+        {
+          "scene": "act2_route_exit",
+          "width": 1440,
+          "first": 837,
+          "last": 1352
+        },
+        {
+          "scene": "act3_testimony_review",
+          "width": 320,
+          "first": 1329,
+          "last": 1613
+        },
+        {
+          "scene": "act3_testimony_review",
+          "width": 390,
+          "first": 1341,
+          "last": 1558
+        },
+        {
+          "scene": "act3_testimony_review",
+          "width": 1440,
+          "first": 705,
+          "last": 822
+        },
+        {
+          "scene": "act3_testimony_hearing",
+          "width": 320,
+          "first": 1329,
+          "last": 1579
+        },
+        {
+          "scene": "act3_testimony_hearing",
+          "width": 390,
+          "first": 1341,
+          "last": 1558
+        },
+        {
+          "scene": "act3_testimony_hearing",
+          "width": 1440,
+          "first": 705,
+          "last": 822
+        }
+      ]
+    }
+  ],
+  "initialFocused": {
+    "cases": 36,
+    "passed": 33,
+    "failed": 3,
+    "reason": "Real metadata font20px vs old catalog21px; restored1.05rem/1.6",
+    "logSha256": "710aeaefbb3a7163905caa2300f1da991eba5633848a4f1dfeb3698c00bdf8e5"
+  },
+  "initialHeader": {
+    "cases": 3,
+    "failed": 3,
+    "reason": "Inherited center-scroll placed labels under real sticky header. Measured-header/start scrolling fixes actual navigation.",
+    "logSha256": "246553b7eea6b7e7fdb87cea8c878085c82b76ba89e2d8f58c8da8a7f274351b"
+  },
+  "oldCounterfactual": {
+    "cases": 98,
+    "passed": 94,
+    "failed": 4,
+    "new36AllPassed": true,
+    "reason": "Removing spacing attributes also removed moved reference font style. Component typography now independent of spacing attribute; old golden snapshots unchanged.",
+    "logSha256": "6b95e7c3157829d34ae5e5270f8a3bbc493981bf1bd9f23f66ed1804ebb0deb7"
+  },
+  "correctedFlow": {
+    "cases": 56,
+    "passed": 56,
+    "logSha256": "f323630a60cd6232320ab9159c345d455c40383c23127730be1c43ac6f432e44"
+  },
+  "preExitCampaigns": [
+    {
+      "id": "canceled",
+      "tabs": 616,
+      "beforeTabs": 619,
+      "visits": 75,
+      "reloads": 74,
+      "errors": [],
+      "failedMedia": [],
+      "revision": "9b0877595d7c1802a99b1294e3bd6b17d40a227d",
+      "dirty": true
+    },
+    {
+      "id": "face-failed",
+      "tabs": 576,
+      "beforeTabs": 580,
+      "visits": 75,
+      "reloads": 27,
+      "errors": [],
+      "failedMedia": [],
+      "revision": "9b0877595d7c1802a99b1294e3bd6b17d40a227d",
+      "dirty": true
+    },
+    {
+      "id": "nerve-handling-failed",
+      "tabs": 573,
+      "beforeTabs": 577,
+      "visits": 76,
+      "reloads": 28,
+      "errors": [],
+      "failedMedia": [],
+      "revision": "9b0877595d7c1802a99b1294e3bd6b17d40a227d",
+      "dirty": true
+    },
+    {
+      "id": "nerve",
+      "tabs": 529,
+      "beforeTabs": 533,
+      "visits": 77,
+      "reloads": 30,
+      "errors": [],
+      "failedMedia": [],
+      "revision": "9b0877595d7c1802a99b1294e3bd6b17d40a227d",
+      "dirty": true
+    },
+    {
+      "id": "archive-failed",
+      "tabs": 578,
+      "beforeTabs": 585,
+      "visits": 64,
+      "reloads": 63,
+      "errors": [],
+      "failedMedia": [],
+      "revision": "9b0877595d7c1802a99b1294e3bd6b17d40a227d",
+      "dirty": true
+    },
+    {
+      "id": "names",
+      "tabs": 747,
+      "beforeTabs": 760,
+      "visits": 89,
+      "reloads": 88,
+      "errors": [],
+      "failedMedia": [],
+      "revision": "9b0877595d7c1802a99b1294e3bd6b17d40a227d",
+      "dirty": true
+    },
+    {
+      "id": "deferred",
+      "tabs": 567,
+      "beforeTabs": 574,
+      "visits": 63,
+      "reloads": 62,
+      "errors": [],
+      "failedMedia": [],
+      "revision": "9b0877595d7c1802a99b1294e3bd6b17d40a227d",
+      "dirty": true
+    },
+    {
+      "id": "scarce",
+      "tabs": 744,
+      "beforeTabs": 751,
+      "visits": 88,
+      "reloads": 87,
+      "errors": [],
+      "failedMedia": [],
+      "revision": "9b0877595d7c1802a99b1294e3bd6b17d40a227d",
+      "dirty": true
+    },
+    {
+      "id": "ghost-routing",
+      "tabs": 631,
+      "beforeTabs": 635,
+      "visits": 80,
+      "reloads": 32,
+      "errors": [],
+      "failedMedia": [],
+      "revision": "9b0877595d7c1802a99b1294e3bd6b17d40a227d",
+      "dirty": true
+    },
+    {
+      "id": "denied",
+      "tabs": 693,
+      "beforeTabs": 697,
+      "visits": 82,
+      "reloads": 81,
+      "errors": [],
+      "failedMedia": [],
+      "revision": "9b0877595d7c1802a99b1294e3bd6b17d40a227d",
+      "dirty": true
+    },
+    {
+      "id": "failed-desk",
+      "tabs": 569,
+      "beforeTabs": 571,
+      "visits": 79,
+      "reloads": 78,
+      "errors": [],
+      "failedMedia": [],
+      "revision": "9b0877595d7c1802a99b1294e3bd6b17d40a227d",
+      "dirty": true
+    },
+    {
+      "id": "harness-listed",
+      "tabs": 584,
+      "beforeTabs": 591,
+      "visits": 81,
+      "reloads": 80,
+      "errors": [],
+      "failedMedia": [],
+      "revision": "9b0877595d7c1802a99b1294e3bd6b17d40a227d",
+      "dirty": true
+    }
+  ],
+  "finalExit": {
+    "cases": 37,
+    "passed": 37,
+    "retries": 0,
+    "workers": 4,
+    "logSha256": "bb372cb76830928b16eee9ee295958afec8f95139369bab389902ab2f2e1396b"
+  },
+  "voiceHarness": {
+    "initial": "Listen uses the existing preferred Quill line, not necessarily first list entry; incorrect first-line assumption failed.",
+    "correction": "Explicit Play all with atomic selected-id/speaker/quote check and both exact files completing once; no game/audio/recording change.",
+    "initialLogSha256": "d7a117e738414c7c202d7e796aa580d519389a774341cb58836819269445726f",
+    "finalLogSha256": "76d2c1629db027fc6e198d2c1c13e0dcb96c0f885035527ada36061e60c220b0"
+  },
+  "localWebKit": {
+    "status": "Not accepted locally: host dependency preflight missing6 shared libraries",
+    "missing": [
+      "libgtk-4.so.1",
+      "libgraphene-1.0.so.0",
+      "libharfbuzz-icu.so.0",
+      "libmanette-0.2.so.0",
+      "libhyphen.so.0",
+      "libGLESv2.so.2"
+    ],
+    "hostValidationDisabled": false,
+    "logSha256": "c01b5da4e0a45865f257b887888d1bdefd970447a2d5537caad1832cd1b67a81",
+    "required": "Normal full hosted WebKit matrix with actual dependencies; no new skip or policy exception."
+  },
+  "documentationRunner": {
+    "initial": "Default sandbox invocation reported docs-freshness test process failure without an assertion diagnostic; production source run had passed.",
+    "normalEnvironmentRerun": "8 documentation cases passed with normal tool network/process permissions; no test/source change."
+  },
+  "finalPreservation": {
+    "cases": 246,
+    "passed": 246,
+    "retries": 0,
+    "workers": 4,
+    "logSha256": "ac807bcdae3a2952b561e425fc35927bef747dd041a3d84d9152cab3e3e9862b",
+    "suites": [
+      "decision-flow",
+      "workspace-flow",
+      "sequence-continuity",
+      "aaa-performance-direction",
+      "aaa-visual-direction",
+      "speaker-presentation",
+      "automatic-voices",
+      "audio-lifecycle"
+    ]
+  }
+}

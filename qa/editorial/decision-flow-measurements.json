@@ -1,0 +1,742 @@
+{
+  "phase": 11,
+  "baseline": "qa/editorial/decision-flow-baseline.json",
+  "baselineSha256": "8df3961cea4acd02d6f04780c7e0a9c1e2045058dfde782a6dfbbdeb69bed026",
+  "candidateRevision": "9b0877595d7c1802a99b1294e3bd6b17d40a227d",
+  "dirty": true,
+  "method": "Before-edit and final-candidate Chromium production-build layouts, actual legal saved checkpoints, enlarged high-contrast reduced-motion synthetic viewports. Real canonical actions, not region markers or readonly review links. No reading-time, physical-device or cross-engine before/after claim.",
+  "rows": [
+    {
+      "sceneId": "act2_workshop",
+      "route": "freight-craft/harness-listed",
+      "choice": "buy-chair-harness",
+      "width": 320,
+      "artwork": "none",
+      "sectionBefore": 5340,
+      "sectionAfter": 249,
+      "firstAction": "choice-buy-archive-probe",
+      "firstBefore": 5541,
+      "firstAfter": 1726,
+      "firstReductionPercent": 68.85,
+      "actions": [
+        {
+          "id": "choice-buy-archive-probe",
+          "before": 5541,
+          "after": 1726,
+          "heightBefore": 479.078125,
+          "heightAfter": 547.515625
+        },
+        {
+          "id": "choice-buy-chair-harness",
+          "before": 6035,
+          "after": 2966,
+          "heightBefore": 632.609375,
+          "heightAfter": 839.65625
+        },
+        {
+          "id": "choice-buy-desk-guide",
+          "before": 6681,
+          "after": 4372,
+          "heightBefore": 572.640625,
+          "heightAfter": 671.6875
+        },
+        {
+          "id": "choice-buy-route-shroud",
+          "before": 7268,
+          "after": 5609,
+          "heightBefore": 525.859375,
+          "heightAfter": 604.5
+        },
+        {
+          "id": "choice-leave-workshop",
+          "before": 7808,
+          "after": 6276,
+          "heightBefore": 206.96875,
+          "heightAfter": 206.96875
+        }
+      ]
+    },
+    {
+      "sceneId": "act2_workshop",
+      "route": "freight-craft/harness-listed",
+      "choice": "buy-chair-harness",
+      "width": 390,
+      "artwork": "full",
+      "sectionBefore": 4375,
+      "sectionAfter": 200,
+      "firstAction": "choice-buy-archive-probe",
+      "firstBefore": 4547,
+      "firstAfter": 1409,
+      "firstReductionPercent": 69.01,
+      "actions": [
+        {
+          "id": "choice-buy-archive-probe",
+          "before": 4547,
+          "after": 1409,
+          "heightBefore": 351.921875,
+          "heightAfter": 446.734375
+        },
+        {
+          "id": "choice-buy-chair-harness",
+          "before": 4913,
+          "after": 2451,
+          "heightBefore": 468.875,
+          "heightAfter": 614.703125
+        },
+        {
+          "id": "choice-buy-desk-guide",
+          "before": 5396,
+          "after": 3568,
+          "heightBefore": 398.703125,
+          "heightAfter": 480.328125
+        },
+        {
+          "id": "choice-buy-route-shroud",
+          "before": 5809,
+          "after": 4551,
+          "heightBefore": 351.921875,
+          "heightAfter": 446.734375
+        },
+        {
+          "id": "choice-leave-workshop",
+          "before": 6175,
+          "after": 5061,
+          "heightBefore": 139.78125,
+          "heightAfter": 139.78125
+        }
+      ]
+    },
+    {
+      "sceneId": "act2_workshop",
+      "route": "freight-craft/harness-listed",
+      "choice": "buy-chair-harness",
+      "width": 1440,
+      "artwork": "full",
+      "sectionBefore": 2278,
+      "sectionAfter": 130,
+      "firstAction": "choice-buy-archive-probe",
+      "firstBefore": 2421,
+      "firstAfter": 1068,
+      "firstReductionPercent": 55.89,
+      "actions": [
+        {
+          "id": "choice-buy-archive-probe",
+          "before": 2421,
+          "after": 1068,
+          "heightBefore": 196.15625,
+          "heightAfter": 486.3125
+        },
+        {
+          "id": "choice-buy-chair-harness",
+          "before": 2631,
+          "after": 1167,
+          "heightBefore": 242.9375,
+          "heightAfter": 787.65625
+        },
+        {
+          "id": "choice-buy-desk-guide",
+          "before": 2888,
+          "after": 2423,
+          "heightBefore": 219.546875,
+          "heightAfter": 653.28125
+        },
+        {
+          "id": "choice-buy-route-shroud",
+          "before": 3121,
+          "after": 2423,
+          "heightBefore": 196.15625,
+          "heightAfter": 519.90625
+        },
+        {
+          "id": "choice-leave-workshop",
+          "before": 3332,
+          "after": 3140,
+          "heightBefore": 72.59375,
+          "heightAfter": 72.59375
+        }
+      ]
+    },
+    {
+      "sceneId": "act2_craft_archive",
+      "route": "emotional-payoff/both-returns-listed",
+      "choice": "craft-question-issuer",
+      "width": 320,
+      "artwork": "none",
+      "sectionBefore": 1840,
+      "sectionAfter": 1388,
+      "firstAction": "choice-craft-question-issuer",
+      "firstBefore": 2071,
+      "firstAfter": 1512,
+      "firstReductionPercent": 26.99,
+      "actions": [
+        {
+          "id": "choice-craft-question-issuer",
+          "before": 2071,
+          "after": 1512,
+          "heightBefore": 240.5625,
+          "heightAfter": 240.5625
+        },
+        {
+          "id": "choice-craft-question-movement",
+          "before": 2326,
+          "after": 1763,
+          "heightBefore": 274.15625,
+          "heightAfter": 274.15625
+        },
+        {
+          "id": "choice-craft-question-conflate",
+          "before": 2614,
+          "after": 2047,
+          "heightBefore": 307.75,
+          "heightAfter": 307.75
+        },
+        {
+          "id": "choice-craft-leave-archive",
+          "before": 2936,
+          "after": 2365,
+          "heightBefore": 364.921875,
+          "heightAfter": 364.921875
+        }
+      ]
+    },
+    {
+      "sceneId": "act2_craft_archive",
+      "route": "emotional-payoff/both-returns-listed",
+      "choice": "craft-question-issuer",
+      "width": 390,
+      "artwork": "full",
+      "sectionBefore": 1867,
+      "sectionAfter": 1447,
+      "firstAction": "choice-craft-question-issuer",
+      "firstBefore": 2069,
+      "firstAfter": 1542,
+      "firstReductionPercent": 25.47,
+      "actions": [
+        {
+          "id": "choice-craft-question-issuer",
+          "before": 2069,
+          "after": 1542,
+          "heightBefore": 139.78125,
+          "heightAfter": 139.78125
+        },
+        {
+          "id": "choice-craft-question-movement",
+          "before": 2223,
+          "after": 1692,
+          "heightBefore": 173.375,
+          "heightAfter": 173.375
+        },
+        {
+          "id": "choice-craft-question-conflate",
+          "before": 2410,
+          "after": 1875,
+          "heightBefore": 206.96875,
+          "heightAfter": 206.96875
+        },
+        {
+          "id": "choice-craft-leave-archive",
+          "before": 2631,
+          "after": 2092,
+          "heightBefore": 284.546875,
+          "heightAfter": 284.546875
+        }
+      ]
+    },
+    {
+      "sceneId": "act2_craft_archive",
+      "route": "emotional-payoff/both-returns-listed",
+      "choice": "craft-question-issuer",
+      "width": 1440,
+      "artwork": "full",
+      "sectionBefore": 1073,
+      "sectionAfter": 747,
+      "firstAction": "choice-craft-question-issuer",
+      "firstBefore": 1244,
+      "firstAfter": 842,
+      "firstReductionPercent": 32.32,
+      "actions": [
+        {
+          "id": "choice-craft-question-issuer",
+          "before": 1244,
+          "after": 842,
+          "heightBefore": 106.1875,
+          "heightAfter": 106.1875
+        },
+        {
+          "id": "choice-craft-question-movement",
+          "before": 1365,
+          "after": 958,
+          "heightBefore": 106.1875,
+          "heightAfter": 106.1875
+        },
+        {
+          "id": "choice-craft-question-conflate",
+          "before": 1485,
+          "after": 1074,
+          "heightBefore": 106.1875,
+          "heightAfter": 106.1875
+        },
+        {
+          "id": "choice-craft-leave-archive",
+          "before": 1605,
+          "after": 1190,
+          "heightBefore": 134.375,
+          "heightAfter": 134.375
+        }
+      ]
+    },
+    {
+      "sceneId": "act2_craft_archive_issuer",
+      "route": "emotional-payoff/both-returns-listed",
+      "choice": "craft-target-cancellation",
+      "width": 320,
+      "artwork": "none",
+      "sectionBefore": 400,
+      "sectionAfter": 251,
+      "firstAction": "choice-craft-target-cancellation",
+      "firstBefore": 631,
+      "firstAfter": 376,
+      "firstReductionPercent": 40.41,
+      "actions": [
+        {
+          "id": "choice-craft-target-cancellation",
+          "before": 631,
+          "after": 376,
+          "heightBefore": 206.96875,
+          "heightAfter": 206.96875
+        },
+        {
+          "id": "choice-craft-target-approval",
+          "before": 852,
+          "after": 593,
+          "heightBefore": 206.96875,
+          "heightAfter": 206.96875
+        },
+        {
+          "id": "choice-craft-change-question",
+          "before": 1073,
+          "after": 810,
+          "heightBefore": 206.96875,
+          "heightAfter": 206.96875
+        },
+        {
+          "id": "choice-craft-leave-archive",
+          "before": 1294,
+          "after": 1027,
+          "heightBefore": 364.921875,
+          "heightAfter": 364.921875
+        }
+      ]
+    },
+    {
+      "sceneId": "act2_craft_archive_issuer",
+      "route": "emotional-payoff/both-returns-listed",
+      "choice": "craft-target-cancellation",
+      "width": 390,
+      "artwork": "full",
+      "sectionBefore": 728,
+      "sectionAfter": 579,
+      "firstAction": "choice-craft-target-cancellation",
+      "firstBefore": 929,
+      "firstAfter": 674,
+      "firstReductionPercent": 27.45,
+      "actions": [
+        {
+          "id": "choice-craft-target-cancellation",
+          "before": 929,
+          "after": 674,
+          "heightBefore": 139.78125,
+          "heightAfter": 139.78125
+        },
+        {
+          "id": "choice-craft-target-approval",
+          "before": 1083,
+          "after": 824,
+          "heightBefore": 173.375,
+          "heightAfter": 173.375
+        },
+        {
+          "id": "choice-craft-change-question",
+          "before": 1270,
+          "after": 1007,
+          "heightBefore": 173.375,
+          "heightAfter": 173.375
+        },
+        {
+          "id": "choice-craft-leave-archive",
+          "before": 1458,
+          "after": 1191,
+          "heightBefore": 284.546875,
+          "heightAfter": 284.546875
+        }
+      ]
+    },
+    {
+      "sceneId": "act2_craft_archive_issuer",
+      "route": "emotional-payoff/both-returns-listed",
+      "choice": "craft-target-cancellation",
+      "width": 1440,
+      "artwork": "full",
+      "sectionBefore": 302,
+      "sectionAfter": 181,
+      "firstAction": "choice-craft-target-cancellation",
+      "firstBefore": 474,
+      "firstAfter": 276,
+      "firstReductionPercent": 41.77,
+      "actions": [
+        {
+          "id": "choice-craft-target-cancellation",
+          "before": 474,
+          "after": 276,
+          "heightBefore": 72.59375,
+          "heightAfter": 72.59375
+        },
+        {
+          "id": "choice-craft-target-approval",
+          "before": 561,
+          "after": 359,
+          "heightBefore": 72.59375,
+          "heightAfter": 72.59375
+        },
+        {
+          "id": "choice-craft-change-question",
+          "before": 648,
+          "after": 441,
+          "heightBefore": 72.59375,
+          "heightAfter": 72.59375
+        },
+        {
+          "id": "choice-craft-leave-archive",
+          "before": 734,
+          "after": 524,
+          "heightBefore": 134.375,
+          "heightAfter": 134.375
+        }
+      ]
+    },
+    {
+      "sceneId": "act2_route_exit",
+      "route": "balance-dustline-nerve-equipped",
+      "choice": "route-exit-walk",
+      "width": 320,
+      "artwork": "none",
+      "sectionBefore": 1710,
+      "sectionAfter": 1238,
+      "firstAction": "choice-route-exit-ramp",
+      "firstBefore": 1941,
+      "firstAfter": 1363,
+      "firstReductionPercent": 29.78,
+      "actions": [
+        {
+          "id": "choice-route-exit-ramp",
+          "before": 1941,
+          "after": 1363,
+          "heightBefore": 264.140625,
+          "heightAfter": 264.140625
+        },
+        {
+          "id": "choice-route-exit-gap",
+          "before": 2219,
+          "after": 1637,
+          "heightBefore": 310.921875,
+          "heightAfter": 310.921875
+        },
+        {
+          "id": "choice-route-exit-walk",
+          "before": 2544,
+          "after": 1958,
+          "heightBefore": 344.515625,
+          "heightAfter": 344.515625
+        },
+        {
+          "id": "choice-replan-kerr-entry",
+          "before": 2903,
+          "after": 2312,
+          "heightBefore": 106.1875,
+          "heightAfter": 106.1875
+        },
+        {
+          "id": "choice-pause-kerr-exit",
+          "before": 3023,
+          "after": 2429,
+          "heightBefore": 139.78125,
+          "heightAfter": 139.78125
+        }
+      ]
+    },
+    {
+      "sceneId": "act2_route_exit",
+      "route": "balance-dustline-nerve-equipped",
+      "choice": "route-exit-walk",
+      "width": 390,
+      "artwork": "full",
+      "sectionBefore": 1532,
+      "sectionAfter": 1036,
+      "firstAction": "choice-route-exit-ramp",
+      "firstBefore": 1734,
+      "firstAfter": 1131,
+      "firstReductionPercent": 34.78,
+      "actions": [
+        {
+          "id": "choice-route-exit-ramp",
+          "before": 1734,
+          "after": 1131,
+          "heightBefore": 240.75,
+          "heightAfter": 240.75
+        },
+        {
+          "id": "choice-route-exit-gap",
+          "before": 1989,
+          "after": 1382,
+          "heightBefore": 230.546875,
+          "heightAfter": 230.546875
+        },
+        {
+          "id": "choice-route-exit-walk",
+          "before": 2233,
+          "after": 1622,
+          "heightBefore": 264.140625,
+          "heightAfter": 264.140625
+        },
+        {
+          "id": "choice-replan-kerr-entry",
+          "before": 2511,
+          "after": 1896,
+          "heightBefore": 106.1875,
+          "heightAfter": 106.1875
+        },
+        {
+          "id": "choice-pause-kerr-exit",
+          "before": 2631,
+          "after": 2013,
+          "heightBefore": 106.1875,
+          "heightAfter": 106.1875
+        }
+      ]
+    },
+    {
+      "sceneId": "act2_route_exit",
+      "route": "balance-dustline-nerve-equipped",
+      "choice": "route-exit-walk",
+      "width": 1440,
+      "artwork": "full",
+      "sectionBefore": 1018,
+      "sectionAfter": 742,
+      "firstAction": "choice-route-exit-ramp",
+      "firstBefore": 1190,
+      "firstAfter": 837,
+      "firstReductionPercent": 29.66,
+      "actions": [
+        {
+          "id": "choice-route-exit-ramp",
+          "before": 1190,
+          "after": 837,
+          "heightBefore": 134.375,
+          "heightAfter": 134.375
+        },
+        {
+          "id": "choice-route-exit-gap",
+          "before": 1339,
+          "after": 981,
+          "heightBefore": 134.375,
+          "heightAfter": 134.375
+        },
+        {
+          "id": "choice-route-exit-walk",
+          "before": 1487,
+          "after": 1125,
+          "heightBefore": 134.375,
+          "heightAfter": 134.375
+        },
+        {
+          "id": "choice-replan-kerr-entry",
+          "before": 1635,
+          "after": 1270,
+          "heightBefore": 72.59375,
+          "heightAfter": 72.59375
+        },
+        {
+          "id": "choice-pause-kerr-exit",
+          "before": 1722,
+          "after": 1352,
+          "heightBefore": 72.59375,
+          "heightAfter": 72.59375
+        }
+      ]
+    },
+    {
+      "sceneId": "act3_testimony_review",
+      "route": "allocation-dustline",
+      "choice": "scope-bounded",
+      "width": 320,
+      "artwork": "none",
+      "sectionBefore": 1629,
+      "sectionAfter": 1204,
+      "firstAction": "choice-scope-bounded",
+      "firstBefore": 1860,
+      "firstAfter": 1329,
+      "firstReductionPercent": 28.55,
+      "actions": [
+        {
+          "id": "choice-scope-bounded",
+          "before": 1860,
+          "after": 1329,
+          "heightBefore": 274.15625,
+          "heightAfter": 274.15625
+        },
+        {
+          "id": "choice-skip-testimony",
+          "before": 2148,
+          "after": 1613,
+          "heightBefore": 240.5625,
+          "heightAfter": 240.5625
+        }
+      ]
+    },
+    {
+      "sceneId": "act3_testimony_review",
+      "route": "allocation-dustline",
+      "choice": "scope-bounded",
+      "width": 390,
+      "artwork": "full",
+      "sectionBefore": 1616,
+      "sectionAfter": 1246,
+      "firstAction": "choice-scope-bounded",
+      "firstBefore": 1817,
+      "firstAfter": 1341,
+      "firstReductionPercent": 26.2,
+      "actions": [
+        {
+          "id": "choice-scope-bounded",
+          "before": 1817,
+          "after": 1341,
+          "heightBefore": 206.96875,
+          "heightAfter": 206.96875
+        },
+        {
+          "id": "choice-skip-testimony",
+          "before": 2038,
+          "after": 1558,
+          "heightBefore": 139.78125,
+          "heightAfter": 139.78125
+        }
+      ]
+    },
+    {
+      "sceneId": "act3_testimony_review",
+      "route": "allocation-dustline",
+      "choice": "scope-bounded",
+      "width": 1440,
+      "artwork": "full",
+      "sectionBefore": 890,
+      "sectionAfter": 611,
+      "firstAction": "choice-scope-bounded",
+      "firstBefore": 1061,
+      "firstAfter": 705,
+      "firstReductionPercent": 33.55,
+      "actions": [
+        {
+          "id": "choice-scope-bounded",
+          "before": 1061,
+          "after": 705,
+          "heightBefore": 106.1875,
+          "heightAfter": 106.1875
+        },
+        {
+          "id": "choice-skip-testimony",
+          "before": 1182,
+          "after": 822,
+          "heightBefore": 72.59375,
+          "heightAfter": 72.59375
+        }
+      ]
+    },
+    {
+      "sceneId": "act3_testimony_hearing",
+      "route": "allocation-dustline",
+      "choice": "claim-key-anyway",
+      "width": 320,
+      "artwork": "none",
+      "sectionBefore": 1658,
+      "sectionAfter": 1204,
+      "firstAction": "choice-answer-open-question",
+      "firstBefore": 1860,
+      "firstAfter": 1329,
+      "firstReductionPercent": 28.55,
+      "actions": [
+        {
+          "id": "choice-answer-open-question",
+          "before": 1860,
+          "after": 1329,
+          "heightBefore": 240.5625,
+          "heightAfter": 240.5625
+        },
+        {
+          "id": "choice-claim-key-anyway",
+          "before": 2115,
+          "after": 1579,
+          "heightBefore": 462.90625,
+          "heightAfter": 462.90625
+        }
+      ]
+    },
+    {
+      "sceneId": "act3_testimony_hearing",
+      "route": "allocation-dustline",
+      "choice": "claim-key-anyway",
+      "width": 390,
+      "artwork": "full",
+      "sectionBefore": 1645,
+      "sectionAfter": 1246,
+      "firstAction": "choice-answer-open-question",
+      "firstBefore": 1817,
+      "firstAfter": 1341,
+      "firstReductionPercent": 26.2,
+      "actions": [
+        {
+          "id": "choice-answer-open-question",
+          "before": 1817,
+          "after": 1341,
+          "heightBefore": 206.96875,
+          "heightAfter": 206.96875
+        },
+        {
+          "id": "choice-claim-key-anyway",
+          "before": 2038,
+          "after": 1558,
+          "heightBefore": 348.9375,
+          "heightAfter": 348.9375
+        }
+      ]
+    },
+    {
+      "sceneId": "act3_testimony_hearing",
+      "route": "allocation-dustline",
+      "choice": "claim-key-anyway",
+      "width": 1440,
+      "artwork": "full",
+      "sectionBefore": 890,
+      "sectionAfter": 611,
+      "firstAction": "choice-answer-open-question",
+      "firstBefore": 1032,
+      "firstAfter": 705,
+      "firstReductionPercent": 31.69,
+      "actions": [
+        {
+          "id": "choice-answer-open-question",
+          "before": 1032,
+          "after": 705,
+          "heightBefore": 106.1875,
+          "heightAfter": 106.1875
+        },
+        {
+          "id": "choice-claim-key-anyway",
+          "before": 1152,
+          "after": 822,
+          "heightBefore": 182.96875,
+          "heightAfter": 182.96875
+        }
+      ]
+    }
+  ]
+}

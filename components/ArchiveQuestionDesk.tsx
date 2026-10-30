@@ -25,7 +25,7 @@ export function ArchiveQuestionDesk({ state, choices, onInspect, numberShortcuts
       const read = state.flags[`craft_read_${record.id}`], choice = choices.find(c => c.id === `craft-read-${record.id}`);
       return <li key={record.id} data-record={record.id} data-testid={`craft-record-${record.id}`}>
         <h3 tabIndex={-1}>{record.title}</h3>
-        {read ? <><p>{record.text}</p><p className="question-read-state">Description inspected</p></> : choice && <button className="ghost" type="button" data-testid={`choice-${choice.id}`} disabled={!choice.enabled} aria-keyshortcuts={numberShortcuts ? String(choices.indexOf(choice) + 1) : undefined} onClick={() => { requested.current = record.id; onInspect(choice); }}>{choice.label}</button>}
+        {read ? <><p>{record.text}</p>{count < 3 && <p className="question-read-state">Description inspected</p>}</> : choice && <button className="ghost" type="button" data-testid={`choice-${choice.id}`} disabled={!choice.enabled} aria-keyshortcuts={numberShortcuts ? String(choices.indexOf(choice) + 1) : undefined} onClick={() => { requested.current = record.id; onInspect(choice); }}>{choice.label}</button>}
       </li>;
     })}</ol>
     <p className="hint" role="status" aria-atomic="true">{count} of 3 descriptions inspected. {count === 3 ? "Choose the question below." : "Inspection is free."}</p>

@@ -95,3 +95,6 @@ The [workspace reading-flow phase](WORKSPACE_READING_FLOW_PHASE7.md) compacts fo
 The latest [freight-ramp encounter](FREIGHT_CRAFT_PHASE8.md) gives new Dustline Nerve runners a cooperative survey/support/carry decision, with cancellation, real costs, stopped-carry recovery and a later Asa response. Seven scenes include explicit fitting art and ten exact-script stock voice clips; the gallery contains164 primary works. The internal grade stays8.8 provisional.
 
 The [sequence-continuity phase](SEQUENCE_CONTINUITY_PHASE9.md) steadies score and focus across archive and freight work, uses clinic ambience at the real freight intake, and lets ready music/ambience start independently. Story, art, actor lines, voice recordings and saves remain intact; the provisional grade remains8.8.
+
+
+The [Phase 11 equipment/decision-flow update](DECISION_FLOW_PHASE11.md) brings real actions closer across six workshop/archive/route/testimony workspaces while preserving source/consent terms, affordability, full body text, canonical choices and matching art/voice. Thirteen matched campaigns retain outcomes with 75 fewer Tab steps. The catalog remains 254 scenes, 771 raw choices, 231 authored routes and 164 gallery works; the provisional internal grade remains8.9.
