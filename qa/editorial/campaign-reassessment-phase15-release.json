@@ -1,0 +1,1055 @@
+{
+  "version": 1,
+  "phase": 15,
+  "revision": "d0d6c509577d135f0b5e6aa119063d29a2427f88",
+  "status": "Exact-commit hosted CI and public production verified",
+  "grade": 8.9,
+  "weightedGrade": 8.91,
+  "targetWeightedGrade": 9.09,
+  "reviewedRevision": "632f29e9d38eb61f86c494f8f7731dff8e555bb0",
+  "sourceFingerprint": "5606ffc2b6506722fb3ba775926692c60bc7f611e2279a88661c90d4b7afc336",
+  "scope": "QA/evidence/scorecard/reproduction tool and detailed Phases16\u201321 roadmap; all six protected game/scene/route/media trees retained exactly",
+  "report": "docs/CAMPAIGN_REASSESSMENT_PHASE15.md",
+  "roadmap": "docs/AAA_PRODUCTION_ROADMAP_PHASE16_21.md",
+  "review": "qa/editorial/campaign-reassessment-phase15-review.json",
+  "ci": {
+    "revision": "d0d6c509577d135f0b5e6aa119063d29a2427f88",
+    "runId": 41155102136,
+    "conclusion": "success",
+    "url": "https://github.com/cisohabitat/CyberPunk3055RPG/actions/runs/41155102136",
+    "startedAt": "2026-10-31T01:23:13Z",
+    "updatedAt": "2026-10-31T01:50:26Z",
+    "jobs": [
+      {
+        "id": 124400044239,
+        "name": "Test",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124401475970,
+        "name": "Browser shard (phone, 2/4)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124401476000,
+        "name": "Browser shard (chromium, 3/4)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124401476011,
+        "name": "Browser shard (chromium, 4/4)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124401476016,
+        "name": "Browser shard (chromium, 2/4)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124401476028,
+        "name": "Browser shard (chromium, 1/4)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124401476033,
+        "name": "Browser shard (phone, 3/4)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124401476062,
+        "name": "Browser shard (webkit, 1/4)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124401476070,
+        "name": "Browser shard (webkit, 4/4)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124401476078,
+        "name": "Browser shard (phone, 4/4)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124401476079,
+        "name": "Browser shard (webkit, 3/4)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124401476098,
+        "name": "Browser shard (firefox, 3/4)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124401476102,
+        "name": "Browser shard (phone, 1/4)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124401476113,
+        "name": "Browser shard (firefox, 4/4)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124401476115,
+        "name": "Browser shard (firefox, 2/4)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124401476133,
+        "name": "Browser shard (webkit, 2/4)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124401476136,
+        "name": "Browser shard (firefox, 1/4)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124406411009,
+        "name": "Browser (phone)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124406411056,
+        "name": "Browser (webkit)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124406411080,
+        "name": "Browser (chromium)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124406411081,
+        "name": "Browser (firefox)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124406544438,
+        "name": "Build",
+        "status": "completed",
+        "conclusion": "success"
+      }
+    ],
+    "metrics": [
+      {
+        "project": "phone",
+        "revision": "d0d6c509577d135f0b5e6aa119063d29a2427f88",
+        "total": 1598,
+        "passed": 1596,
+        "flaky": 0,
+        "skipped": 2,
+        "longestShardSeconds": 516.2
+      },
+      {
+        "project": "webkit",
+        "revision": "d0d6c509577d135f0b5e6aa119063d29a2427f88",
+        "total": 1598,
+        "passed": 1596,
+        "flaky": 0,
+        "skipped": 2,
+        "longestShardSeconds": 1115.3
+      },
+      {
+        "project": "chromium",
+        "revision": "d0d6c509577d135f0b5e6aa119063d29a2427f88",
+        "total": 1598,
+        "passed": 1598,
+        "flaky": 0,
+        "skipped": 0,
+        "longestShardSeconds": 536.4
+      },
+      {
+        "project": "firefox",
+        "revision": "d0d6c509577d135f0b5e6aa119063d29a2427f88",
+        "total": 1598,
+        "passed": 1595,
+        "flaky": 1,
+        "skipped": 2,
+        "longestShardSeconds": 712.4
+      }
+    ],
+    "hostedRetries": [
+      {
+        "report": "qa/production/reports/campaign-reassessment-phase15-hosted-retry/review.json",
+        "sha256": "a5d9d16824e2da7ad37f9e478ee43a86059b4ab3d67d7eaa2d5abb94645f84b0",
+        "test": "complete compositions preserve boundaries and saves at 390px, batch 1",
+        "project": "firefox",
+        "jobId": 124401476113,
+        "passedOnRetry": true
+      }
+    ]
+  },
+  "hostedRetry": {
+    "revision": "d0d6c509577d135f0b5e6aa119063d29a2427f88",
+    "runId": 41155102136,
+    "jobId": 124401476113,
+    "project": "firefox",
+    "test": "complete compositions preserve boundaries and saves at 390px, batch 1",
+    "source": "tests/visual-staging.spec.ts:54",
+    "firstError": "locator.evaluate: Invalid image request.",
+    "retryPassed": true,
+    "configuredRetries": 1,
+    "caseTimeoutMs": 90000,
+    "artifact": {
+      "id": 13025355462,
+      "sha256": "4096c99e2e708e1df3ce806a76afaa9d1506a2f66d0f53d2b45f8e3052bbe80a",
+      "bytes": 13903270,
+      "localZip": "/tmp/saint-phase15/firefox4.zip",
+      "localTrace": "/tmp/saint-phase15/firefox4-artifact/test-results/visual-staging-complete-co-67add--and-saves-at-390px-batch-1-firefox/trace.zip",
+      "traceSha256": "b1e1ffb2ab5c71eff611f133685bdde37a659d6fc20d0cf78d9cd884944143d7"
+    },
+    "traceObservation": {
+      "failedDecodeActionEndMs": 362217.462,
+      "imageRequestStartMs": 362224.929,
+      "requestAfterFailureMs": 7.467,
+      "imageUrl": "http://127.0.0.1:3101/art/nia-transfer-small.jpg",
+      "responseStatus": 200,
+      "failedImageRequest": false
+    },
+    "publicDiagnostic": {
+      "route": "methods-volunteer-shift",
+      "scene": "act2_witness_support",
+      "width": 390,
+      "ready": true,
+      "decoded": {
+        "width": 326,
+        "currentSrc": "https://cyberpunk3055rpg.vercel.app/art/nia-transfer-small.jpg",
+        "ratio": 1.5000352982703848,
+        "fit": "contain"
+      },
+      "errors": [],
+      "method": "Actual public Chromium at a legal authored checkpoint; wait for existing player-ready signal, retain native decode, dimensions/fit and exact save assertions. Separate from original hosted Firefox observation."
+    },
+    "additionalPublicMedia": [
+      {
+        "path": "/art/nia-transfer.jpg",
+        "sha256": "d850e4a5d57088ae9ff7568c76d5a5f140fe46e50679e0c3d28fa6333983263f",
+        "bytes": 246783,
+        "matchesLocal": true
+      },
+      {
+        "path": "/art/nia-transfer-small.jpg",
+        "sha256": "e45d52caf442005cbb3ed40b1df5afe5eccc524d8a9ee77747112eb095aef519",
+        "bytes": 70976,
+        "matchesLocal": true
+      }
+    ],
+    "interpretation": "Native decode observation occurred before the lazy image request began; the component performs its own decode from onLoad and reaches ready normally. This supports an observer/load-order race. Original unchanged Firefox case passed its configured retry, and public Chromium ready/native decode, dimensions/fit and exact save checks pass. No broken production JPEG or failed image request was observed; not a claim of a new Firefox reproduction or a fixed test.",
+    "productionCodeChanged": false,
+    "deadlinesWorkersSkipsAndRetryPolicy": "unchanged",
+    "next": "Preserve this record/raw context/PNG/log in the next substantive phase. Align the older visual-staging observer with the existing player-ready state before retaining native decode if this helper is revised; do not filter errors or alter limits."
+  },
+  "deployment": {
+    "id": "dpl_516L1WpCHoz7oigs6P6eVrYTuF5e",
+    "revision": "d0d6c509577d135f0b5e6aa119063d29a2427f88",
+    "status": "READY",
+    "target": "production",
+    "projectId": "prj_JYHAxYL8onO9SFrvFN0i5q3IepIp",
+    "url": "cyberpunk3055rpg-dotqga8mg-cfusion2k-7277s-projects.vercel.app",
+    "aliases": [
+      "cyberpunk3055rpg.vercel.app",
+      "cyberpunk3055rpg-cfusion2k-7277s-projects.vercel.app",
+      "cyberpunk3055rpg-git-main-cfusion2k-7277s-projects.vercel.app"
+    ],
+    "publicAliasVerified": true,
+    "branchAliasVerified": true
+  },
+  "publicBrowser": {
+    "cases": 214,
+    "passed": 214,
+    "retries": 0,
+    "configuredWorkers": 4,
+    "suites": [
+      "connected-performance",
+      "ordinary-direction",
+      "return-routing",
+      "decision-flow",
+      "workspace-flow",
+      "story-scroll",
+      "automatic-voices",
+      "speaker-presentation",
+      "dialogue-staging",
+      "title-music",
+      "game:recorded-roll"
+    ],
+    "method": "Actual new public deployment. Normal curl CA validation, inherited proxy/Node CA, exact verified leaf-SPKI Chromium compatibility; no blanket TLS/host-validation bypass."
+  },
+  "publicMedia": [
+    {
+      "path": "/art/archive-desk-small.jpg",
+      "bytes": 66877,
+      "sha256": "2f5ac1bc069bc135913ff3abb573ce67ba5332dc6893db2f3216fbfff85f9fdc",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/archive-desk.jpg",
+      "bytes": 237437,
+      "sha256": "3380a27c045a88e14ed668eac830ff10184f802149f877fd5d5348b64f51c2b2",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/archive-question-detail-small.jpg",
+      "bytes": 76243,
+      "sha256": "1af1501de9f82a69d9339867c193da048e5949aa24c980999f164dae8e2416a1",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/archive-question-detail.jpg",
+      "bytes": 273275,
+      "sha256": "40f889347acb89606924884223462bc18faf2db264589b0d769de23a06598783",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/correction-bench-small.jpg",
+      "bytes": 105559,
+      "sha256": "3ddac00a6bb46f325776b6bab033c9be6f38433ecdafade78e795e9c257ad653",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/correction-bench.jpg",
+      "bytes": 397454,
+      "sha256": "736b7458376c81ed74a7ee6ba77b361a8cd84571512b70cc3feefeab547127c6",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/dispatcher-portrait.jpg",
+      "bytes": 96954,
+      "sha256": "a6f0ab256de0c7506592ab47d7bef73c4bfcba9d820d43f4dc78923aed6d8453",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/edda-archive-small.jpg",
+      "bytes": 74651,
+      "sha256": "359e29bb4b084b1fc957a87d772a683bd77ec7a96eea4dd28e513962eae5c9c5",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/edda-archive.jpg",
+      "bytes": 246442,
+      "sha256": "090a907f59e2587d9ccc536652621ff0868c6ac46aa0e4a3067401a671cc9810",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/edda-listening-wide-small.jpg",
+      "bytes": 60973,
+      "sha256": "8bfde30452162207e32b10fd5f96304398548622d6e9d8d12212d6c052dc4dbe",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/edda-listening-wide.jpg",
+      "bytes": 220700,
+      "sha256": "eb27a52a84a1b20042967513b555226462d91b5a1129229ae3bb32c9830aaf94",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/edda.jpg",
+      "bytes": 59087,
+      "sha256": "6af115f70e05fbf24b71e7dedf74885e774dba1ac75f5d1689f1b66ee4931223",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/finale-listed-small.jpg",
+      "bytes": 74999,
+      "sha256": "adc674abba2e4e39af79a919cce5bfc5c9d9a4ff74deff6285eed220e7856f37",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/finale-listed.jpg",
+      "bytes": 283489,
+      "sha256": "097e29b0e4558bcbfccfd9f2431b0cdc80c810d01b313b1a29407df4ebec1954",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/finale-names-small.jpg",
+      "bytes": 81924,
+      "sha256": "8cd0509d1862947e9fc82878b37f7d48ce76b38bcfaf888eb6a5db314bf6c269",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/finale-names.jpg",
+      "bytes": 284789,
+      "sha256": "7a22dc054a9e6700b8a688dedc17f02dc672efe4cccaa979082e07ff2153e72c",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/finale-quiet-small.jpg",
+      "bytes": 78706,
+      "sha256": "4341796646fc70459af7481f8df71720e2f37c304605ec687d09d75bb6b7560c",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/finale-quiet.jpg",
+      "bytes": 294800,
+      "sha256": "ac9eaf092f9d3e79f6ddc9efdf5b306e0f0838cad1414f21f7159cc7c5061074",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/finale-witness-small.jpg",
+      "bytes": 69937,
+      "sha256": "5c00c4fd455cc0e3f819c5ca1919a907eeba363838303dba0f7d3679fdb8f719",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/finale-witness.jpg",
+      "bytes": 247623,
+      "sha256": "08b5ebc44ac43c137ac792901092963f3f21ab35a5ae12f7390a3125f3e66c37",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/freight-ramp-small.jpg",
+      "bytes": 105591,
+      "sha256": "6bf33a07407f805f26d9f6ffb8d5ff47a2dee1d905da1ddef8037ea94477789e",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/freight-ramp.jpg",
+      "bytes": 393643,
+      "sha256": "7623e3669ee4bdf2090206b60dee93607529ea41c954f15458a3b1ed89f13168",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/ives.jpg",
+      "bytes": 350671,
+      "sha256": "0fbff0f64074ee10c85fb6e4f475f2c6df11b559b6a1ab11e78af4b4ed5e1fd8",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/kerr-listening-wide-small.jpg",
+      "bytes": 65405,
+      "sha256": "fe23b9441944fac11c5fb0468277c30ec88bb3f2926780dad5ffe4902b4c9160",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/kerr-listening-wide.jpg",
+      "bytes": 256992,
+      "sha256": "645155236e28715723c33a630566578b8f08fd4667798a842170711de67ffeba",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/kerr.jpg",
+      "bytes": 417492,
+      "sha256": "ec67f4b4299b3ff3302f9e6ae399dc2988d3f086b4f75bd8db2f481884b500ea",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/market-counter-small.jpg",
+      "bytes": 76244,
+      "sha256": "2ee3420b4057b96c9625efb7deb55d0e1ecbec56d7122d1ff6a6e4bb4a57f172",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/market-counter.jpg",
+      "bytes": 265620,
+      "sha256": "709cb53138b1b9f4ec6d3a4a168008f124cc0598903c20d04cccb63f7e0ef9b8",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/previews/archive-question-detail.jpg",
+      "bytes": 1985,
+      "sha256": "8c8c751c4d8c472b161bda5ca6521cee888debc2f32d15362c90621b000e55f0",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/previews/edda-listening-wide.jpg",
+      "bytes": 1829,
+      "sha256": "04f61bca7dc4633bd38530b7742b42aad2f27801b9156db9dac82598d4d6fd6b",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/previews/freight-ramp.jpg",
+      "bytes": 3281,
+      "sha256": "4480528b496c9b356dc48c35fe977677c8e4b4d52186390a57c711d224060015",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/previews/kerr-listening-wide.jpg",
+      "bytes": 1711,
+      "sha256": "b7d25cbfc45f906b2f6aeeafe8cfec3939dff18913d417fd297f3f7485bad2fc",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/previews/stall-quiet-detail.jpg",
+      "bytes": 1805,
+      "sha256": "3aa27441f8c6f773f9d594ea6188a9bb3e2b0794309bd234e5dcb7438683fe1c",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/sera-attentive.jpg",
+      "bytes": 159234,
+      "sha256": "a5a6399fa6e6e924b7f97eda2b75d83895ef2500783c52ba5ddfd97b0119ed4a",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/sera-listening.jpg",
+      "bytes": 70999,
+      "sha256": "2f6f082f184eb1f8bd6e44e64b8a92facde781d1a7f8d572a794a335a87e4369",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/stall-quiet-detail-small.jpg",
+      "bytes": 75356,
+      "sha256": "f5ffaa5a3505f4b8e19df39acf4d7fd9db1b8f73e39640b2141ecc2c3f997fbe",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/stall-quiet-detail.jpg",
+      "bytes": 269214,
+      "sha256": "1e98057d1122f09c519fd21b34df8481c1e65d994b387a14aa169dc86e12770a",
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/stall.jpg",
+      "bytes": 448475,
+      "sha256": "c77892d16439f0430abcbd058c36530c0d17be366c95a89f486dd3c59dc60969",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/ambience-canal.flac",
+      "bytes": 368619,
+      "sha256": "4a79d2597aab79cd6d5218415b7935bd5fc47513178688ddf84a67eea1fc5a63",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/ambience-clinic.flac",
+      "bytes": 1722093,
+      "sha256": "aa7eb3aba1e16568f3d2e9b42d4d8608645342cffbe422f3a731940038dc146d",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/ambience-spire.flac",
+      "bytes": 367392,
+      "sha256": "c591122dbc8dd9df3af27778415959b4b325326fe1ba0caf21d1ce861a3b2eff",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/ambience-ward.flac",
+      "bytes": 369185,
+      "sha256": "a3cb998a109b169e7da44fd4f6f1f9299b01a8fe477d04ec681a0bad425c75e6",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/performance-direction-v1/voice-campaign-emotional-payoff-0a1b8bb22589.mp3",
+      "bytes": 35180,
+      "sha256": "72b7ed1c7b6b8ee117e0b6ebf38c0d44acca5d0cfa3c6c51f6ed1a1ac6fc1771",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/performance-direction-v1/voice-campaign-emotional-payoff-26350d370631.mp3",
+      "bytes": 37484,
+      "sha256": "bcd650c8e634b2e5284f1ec3842079d649a32aa7d8f02817b977982144e7fffe",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/performance-direction-v1/voice-campaign-encounter-craft-43e701b3e2c1.mp3",
+      "bytes": 87884,
+      "sha256": "0d405f07c24162111515991dae415337b74f9aa96aaf46c15c40ee19410809b6",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/performance-direction-v1/voice-campaign-encounter-craft-570639a0f84d.mp3",
+      "bytes": 106316,
+      "sha256": "74decc3a98680b010f12ece93f5fe4ce0df88386c74a6c8a845192d856835657",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/performance-direction-v1/voice-campaign-encounter-craft-62b70985aa0d.mp3",
+      "bytes": 92780,
+      "sha256": "73dc8995d53d6b973e045205994e7bb1f527d950a20a789a7ed2b1d417403359",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/performance-direction-v1/voice-campaign-encounter-craft-a3b854d736a3.mp3",
+      "bytes": 63404,
+      "sha256": "df9d2fe325186297614ba22045756bf2853cc8364757c32106f9f8d57e06974c",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/performance-direction-v1/voice-campaign-encounter-craft-cd0a455809ce.mp3",
+      "bytes": 106604,
+      "sha256": "ea1258e102a5917c1b5594e4b51c289bfa41d58ad53f204c0d38225bd82a6b5a",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/theme-quiet.flac",
+      "bytes": 379641,
+      "sha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/theme-week.flac",
+      "bytes": 443561,
+      "sha256": "7a1ce96be5bc278aa09cf5301353f74fa07ffb6b8200eac4da506c2e4c6c5d6e",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-emotional-payoff-0a1b8bb22589.mp3",
+      "bytes": 29996,
+      "sha256": "74917bdbd4d7b873f2b5871a6cf53aabd5fe416f290c5b72967e87ad1d605de0",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-emotional-payoff-26350d370631.mp3",
+      "bytes": 44972,
+      "sha256": "eefda43383f710b5c096118fca649e26c54dc0fa1cccb2df092ecdfb32f98ab4",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-emotional-payoff-4a4c8f261a79.mp3",
+      "bytes": 44396,
+      "sha256": "8f23b61a5bb7965fd8a61645e25aa02bf7e08a4f63cf639899ded32d41a5e71e",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-emotional-payoff-52ad3344069a.mp3",
+      "bytes": 38636,
+      "sha256": "31cc2e900ef1826edfc9414e12e73e75e90a9b495c2d9e036e0175b0831e5cd3",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-emotional-payoff-8b41fca71d2b.mp3",
+      "bytes": 42092,
+      "sha256": "d23aa919bba9c3dc4078e86c135723623961db98b464e0b2e6a947be868feb35",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-emotional-payoff-ee1ca23521df.mp3",
+      "bytes": 44684,
+      "sha256": "6d1bbb329a788595fdd825c941793013cd5c78c29e130448e4d8d9ae99617fc1",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-encounter-craft-0d503d1dabcb.mp3",
+      "bytes": 85004,
+      "sha256": "bb673be3f3ab76f1e2506087d55a16c443d4a5aff21c54d94a029b7472e762ab",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-encounter-craft-43e701b3e2c1.mp3",
+      "bytes": 90476,
+      "sha256": "bc1e76f21bbe9899a8843c61951f973f885d1476d4e0ee16e0a813e82497296e",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-encounter-craft-570639a0f84d.mp3",
+      "bytes": 106028,
+      "sha256": "1e229a9ea5a53ecba66385b2284e7967ba1b993c48303f09cf86bb76bd9c36e2",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-encounter-craft-62b70985aa0d.mp3",
+      "bytes": 93932,
+      "sha256": "85678c3358ccd498f5f069d8d43ffd308af1458776946c3a7a66b06ccc22ef2a",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-encounter-craft-a3b854d736a3.mp3",
+      "bytes": 70028,
+      "sha256": "dc0bf95d1599e8f7ebcf690f3de3e8565501533275acfc0ff518bfa3f1f1baf8",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3",
+      "bytes": 101420,
+      "sha256": "26825c2bc65fe72059a7ad4da468fffe47e9cd921d8fcb4ebdfe6d1ed04c872e",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-encounter-craft-cd0a455809ce.mp3",
+      "bytes": 103148,
+      "sha256": "430e68710b08ae2ccc4f787eb8dbab539514cb20e4645f7a7ffc4556fa4f9bc4",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-encounter-craft-ecb749c132e1.mp3",
+      "bytes": 72044,
+      "sha256": "644d289a826e3b45fd8dd7dc0d02cdc1f5d0a380ba5c950ee7098709ffddacf8",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-freight-craft-0707294020e3.mp3",
+      "bytes": 59084,
+      "sha256": "d450d0c227623fb70ef63913b81f7f5926a1193aeaf2f760b7fc37b42b2c17f3",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-freight-craft-28a71316e1ad.mp3",
+      "bytes": 68300,
+      "sha256": "4d0bcd07ca39db7bd437996efe37481ca2122cf4c2b0d5bc069a6a2bdb99e28e",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-freight-craft-3215df9a9ef6.mp3",
+      "bytes": 67436,
+      "sha256": "9633e5fda24e725b16a764421c8299ea4e793553f5e8dcb7c6d3fe2d6d3c985f",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-freight-craft-4d3307b2d4d5.mp3",
+      "bytes": 96812,
+      "sha256": "e89c77cd0dc516c8c4cf864878634f2462a538082dc328c7f2f9f6ffad1d73dc",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-freight-craft-52ca52bbb14b.mp3",
+      "bytes": 70028,
+      "sha256": "bc4d518f2d1321ec9d075a44d641918435b10d2c493e0227d64281a238682213",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-freight-craft-5bfa06763c3c.mp3",
+      "bytes": 74348,
+      "sha256": "22e2256b072fc32153911b5fb0b363d51e4e0bff63e54e6281a76cab7ca53e4d",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-freight-craft-65d1cb340235.mp3",
+      "bytes": 75788,
+      "sha256": "fa0b2bac4bc6d2e13a0cc19821fc15c32f4e05579835cff46896385600642072",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-freight-craft-b57bd816cb58.mp3",
+      "bytes": 72908,
+      "sha256": "edacf90cdbc265371f5b77fa7a3920786df1cf4a4cde2c03714a00e388521601",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-freight-craft-c643ecc39c94.mp3",
+      "bytes": 66284,
+      "sha256": "ad83ca80d2df5be31508e36a7d316e1275bbbaccab349304d6253f98f46b95ba",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-freight-craft-f609e901e947.mp3",
+      "bytes": 93356,
+      "sha256": "92c843d51163d22dbd2700318e37ad670e0d6bfd52b7799e7510405e34d01560",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-kerr-10b6e71a11eb.mp3",
+      "bytes": 75212,
+      "sha256": "512593cc157650d5a50be2f01fde4159063ab9c88b10237848f34f9987a41176",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-kerr-1903a3d3a421.mp3",
+      "bytes": 86732,
+      "sha256": "3ef85b7ef5a09e0a6cb7cbbed23127ba032942a0dd1dc019aaa8b68a49567dc5",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-kerr-899d4ba5ecfb.mp3",
+      "bytes": 84428,
+      "sha256": "efc7a1dfac22ba92865fc4a7725233f4d4312576b99cb82a7e02ddcaf33b617e",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-kerr-e8022742ad26.mp3",
+      "bytes": 79244,
+      "sha256": "1dc1eb6e6e2f1203c290800caedda3a1ea0a5cffa3b59b628f449492f8d5f090",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-kerr-f001a675c451.mp3",
+      "bytes": 73196,
+      "sha256": "c9cdfb49162cff0a08bb2ab7cddca6a5a1936059832c3e7dbbdb3076daff39c9",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-kerr-f829eb68f234.mp3",
+      "bytes": 64844,
+      "sha256": "181bdff21515e3dd7244fc8d2346fdb3125ef84361a6abc88079012fc96d20dd",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-return-routing-20fd6e7e840c.mp3",
+      "bytes": 57068,
+      "sha256": "aa2ddc853fb1a48e2d71990e71fbfc0c86314a2af7e195c1227418b2d081cb5c",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-return-routing-2672256d1346.mp3",
+      "bytes": 47276,
+      "sha256": "4a36d7811bb44e7edb127c54f4e319f910d215a2c85f0c4390e25f92c0984099",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-return-routing-28f1f3a61532.mp3",
+      "bytes": 46412,
+      "sha256": "10f93c777ca0a51ce794b4b0c9fe96a2b1f2b51b75e199f8bfbcab8877d8f45e",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-return-routing-3618a7c3e345.mp3",
+      "bytes": 46124,
+      "sha256": "3679de9376e37e4c513689eef88cf7b29093594459b8e313f168357b7deec9ae",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-return-routing-5fcbff73f348.mp3",
+      "bytes": 75212,
+      "sha256": "236f3da8dfe84b80d99dd1d5a7b0a227b3693d410bb377445895016c47d11095",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-return-routing-842083fe00dc.mp3",
+      "bytes": 61100,
+      "sha256": "f777f59c71f04bb5c6ee74a558caea0b22e095e653174da2d9e4ccb5c77c1d1c",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-return-routing-899ae129e60b.mp3",
+      "bytes": 40940,
+      "sha256": "05e9edd38df086c2c90004a32f62e0cd4d6d038c45934a52d26eb79b31056286",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-return-routing-cc41685259bb.mp3",
+      "bytes": 54188,
+      "sha256": "753bbdd05ab9a004b0b34e18283c15aa342754c4d8608b3337753a09eceaade1",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-return-routing-d3c55dcaa6d8.mp3",
+      "bytes": 51884,
+      "sha256": "b79d4b7574e161ef8fde713c5a17d4f8d1324f4721f4b84b0bf9d93c5bfe36bd",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/voice-campaign-return-routing-dae60204b64a.mp3",
+      "bytes": 46412,
+      "sha256": "cf4b2a38137bd4822f1445783c3831bb92f050824a1396c8317f1a21605c16bf",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/connected-performance-v1/voice-campaign-kerr-10b6e71a11eb.mp3",
+      "bytes": 76652,
+      "sha256": "4fff91bf11e8a26c06fd9bf4049e6dcb5e93cf338bc17d2765e4c457ebc3d201",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/connected-performance-v1/voice-campaign-kerr-e8022742ad26.mp3",
+      "bytes": 82412,
+      "sha256": "a541ea49a17e95abf354b20aceaa0e97c47076249a1a071b13b305c3500dded7",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/connected-performance-v1/voice-campaign-kerr-f001a675c451.mp3",
+      "bytes": 76364,
+      "sha256": "109f90b0698be1df2e844c0213fad49485fea2de7649a68f421b63ce21227c38",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/connected-performance-v1/voice-campaign-kerr-f829eb68f234.mp3",
+      "bytes": 67436,
+      "sha256": "fe5a2f979f807968e127863fe6a9653aa83c3a5a3d88c8c7d6658489995f020e",
+      "matchesLocal": true
+    },
+    {
+      "path": "/audio/connected-performance-v1/voice-campaign-kerr-1903a3d3a421.mp3",
+      "bytes": 85292,
+      "sha256": "60c41b9cb0077ff793a52ba14559e97e213d4224e1420ee7133597333e0a3073",
+      "matchesLocal": true
+    }
+  ],
+  "publicCampaigns": [
+    {
+      "id": "deferred",
+      "visits": 63,
+      "reloads": 62,
+      "tabs": 567,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 0,
+        "strain": 3,
+        "rolls": [
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "errors": [],
+      "failedMedia": [],
+      "finalAudio": {
+        "sourcesCreated": 0,
+        "sourcesDisposed": 0,
+        "buffersCleared": 0,
+        "liveSources": 0,
+        "peakLiveSources": 0,
+        "starts": 0,
+        "stops": 0,
+        "started": [],
+        "decoded": [],
+        "disposed": [],
+        "cleared": [],
+        "voiceLevels": [],
+        "sceneCueLevels": [],
+        "stoppedSources": []
+      }
+    },
+    {
+      "id": "ordinary-shared",
+      "visits": 94,
+      "reloads": 42,
+      "tabs": 717,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 185,
+        "strain": 1,
+        "rolls": [
+          10,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "errors": [],
+      "failedMedia": [],
+      "finalAudio": {
+        "sourcesCreated": 0,
+        "sourcesDisposed": 0,
+        "buffersCleared": 0,
+        "liveSources": 0,
+        "peakLiveSources": 0,
+        "starts": 0,
+        "stops": 0,
+        "started": [],
+        "decoded": [],
+        "disposed": [],
+        "cleared": [],
+        "voiceLevels": [],
+        "sceneCueLevels": [],
+        "stoppedSources": []
+      }
+    },
+    {
+      "id": "ordinary-private",
+      "visits": 80,
+      "reloads": 28,
+      "tabs": 623,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 165,
+        "strain": 0,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "errors": [],
+      "failedMedia": [],
+      "finalAudio": {
+        "sourcesCreated": 0,
+        "sourcesDisposed": 0,
+        "buffersCleared": 0,
+        "liveSources": 0,
+        "peakLiveSources": 0,
+        "starts": 0,
+        "stops": 0,
+        "started": [],
+        "decoded": [],
+        "disposed": [],
+        "cleared": [],
+        "voiceLevels": [],
+        "sceneCueLevels": [],
+        "stoppedSources": []
+      }
+    }
+  ],
+  "publicTotals": {
+    "visits": 237,
+    "reloads": 132,
+    "tabs": 1907
+  },
+  "freshReview": {
+    "revision": "632f29e9d38eb61f86c494f8f7731dff8e555bb0",
+    "dirty": false,
+    "campaigns": 26,
+    "totals": {
+      "visits": 2117,
+      "reloads": 1751,
+      "tabs": 17261,
+      "voices": 122,
+      "artViews": 51,
+      "ordinaryArtViews": 18,
+      "interruptions": 6
+    },
+    "uniqueUiScenes": 152,
+    "sourceRoutes": 241,
+    "sourceVisits": 17281,
+    "sourceVisitedScenes": 248,
+    "sourceTotalScenes": 260,
+    "unvisitedScenes": [
+      "act2_folio",
+      "act2_heat",
+      "chapel",
+      "ending_exposed",
+      "ending_sainted",
+      "ending_smashed",
+      "ending_taken",
+      "hatch",
+      "hatch_caught",
+      "kerr_fight",
+      "lumen_cold",
+      "why"
+    ],
+    "initialLayouts": 19,
+    "reproducedLayouts": 19,
+    "inspectedCaptures": 6
+  },
+  "preservation": {
+    "trees": {
+      "app": "d3c0eae6a07d0c859eba86fbf5737a47b0489f49",
+      "components": "6c1916628285a945ba2c0da818684ae5337d8659",
+      "lib": "722e69b6a800c1cccfa5a1b6b9bb92a55d426d3f",
+      "public": "f0db8fd0aa532d7d8f51246000d87438e90e70f9",
+      "qa/media": "1890d3135bd985291ac0d0c4f32766ee5a6edace",
+      "qa/routes": "c1c2c207c41eae838f2ae6b5137fa7a97337afb5"
+    },
+    "originalMedia": 842,
+    "newScenes": 0,
+    "newQuotes": 0,
+    "newMedia": 0,
+    "saveVersion": 2,
+    "saveKey": "saint-shard-3055-v1",
+    "originalRulesAndFourCurrentFinales": "retained"
+  },
+  "previousRelease": "qa/editorial/expressive-performance-release.json",
+  "limits": [
+    "Technical playback/ASR and signal measurements are not acting ratings. Existing comparison is not level matched.",
+    "Prose and Tab totals reflect fixed review policies and directed dice, not unfamiliar-player comprehension or speed.",
+    "Nineteen enlarged layouts/six inspected screenshots do not establish physical-iPhone or all-art anatomy acceptance.",
+    "Twelve source scenes remain unvisited; all five original randomized balance policy cohorts remain historically scoped."
+  ],
+  "nextPhase": "Phase16 character-driven dramatic pilot with matching art/voices; preserve this exact release in the next substantive phase rather than a status-only push."
+}

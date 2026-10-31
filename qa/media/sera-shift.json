@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "phase": "16 pilot",
+  "baseline": "qa/editorial/dramatic-pilot-baseline.json",
+  "baselineSha256": "7510d19c136ae8d92da4717ca4422f4eeb5c26a82ab1dfc12b9a24a093191375",
+  "newScenes": [
+    "act3_sera_shift",
+    "act3_sera_carry",
+    "act3_sera_watch",
+    "act3_sera_reply"
+  ],
+  "newRoutes": [
+    "sera-shift/carry-authenticated.json",
+    "sera-shift/watch-private.json",
+    "sera-shift/watch-corrected.json",
+    "sera-shift/declined.json",
+    "sera-shift/interrupted-switch.json",
+    "sera-shift/carry-failed.json"
+  ],
+  "newMedia": [
+    "public/audio/voice-campaign-sera-shift-9d3da67ec4a0.mp3",
+    "public/audio/voice-campaign-sera-shift-e3d3b032a010.mp3",
+    "public/audio/voice-campaign-sera-shift-e11348e47d49.mp3",
+    "public/audio/voice-campaign-sera-shift-3c226a939b14.mp3",
+    "public/audio/voice-campaign-sera-shift-5ddc8dde0286.mp3",
+    "public/audio/voice-campaign-sera-shift-03e8041dbaa0.mp3",
+    "public/audio/voice-campaign-sera-shift-47e105e137c8.mp3"
+  ],
+  "newManifests": [
+    "qa/media/sera-shift.json",
+    "qa/media/sera-shift-dialogue-bindings.json",
+    "qa/media/sera-shift-dialogue-lines.json",
+    "qa/media/sera-shift-dialogue-provenance.json",
+    "qa/media/sera-shift-dialogue-transcripts.json"
+  ],
+  "artAssets": [],
+  "voiceIds": [
+    "voice-campaign-sera-shift-9d3da67ec4a0",
+    "voice-campaign-sera-shift-e3d3b032a010",
+    "voice-campaign-sera-shift-e11348e47d49",
+    "voice-campaign-sera-shift-3c226a939b14",
+    "voice-campaign-sera-shift-5ddc8dde0286",
+    "voice-campaign-sera-shift-03e8041dbaa0",
+    "voice-campaign-sera-shift-47e105e137c8"
+  ],
+  "precedingSceneArt": "qa/editorial/sera-shift-preceding-scene-art.json",
+  "portraitAdditions": [
+    {
+      "speaker": "Sera",
+      "asset": "/art/sera.jpg",
+      "scenes": [
+        "act3_sera_shift",
+        "act3_sera_carry",
+        "act3_sera_watch",
+        "act3_sera_reply",
+        "act3_testimony_record"
+      ]
+    }
+  ]
+}

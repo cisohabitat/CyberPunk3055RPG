@@ -1,0 +1,5 @@
+Error: Project(s) "tests/sera-shift.spec.ts", "tests/visual-staging.spec.ts" not found. Available projects: "chromium", "webkit"
+    at Object.filterProjects (/workspace/saint-shard-fix/node_modules/playwright/lib/runner/index.js:2164:11)
+    at runTests (/workspace/saint-shard-fix/node_modules/playwright/lib/cli/testActions.js:59:30)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at _Command.<anonymous> (/workspace/saint-shard-fix/node_modules/playwright/lib/program.js:55:7)

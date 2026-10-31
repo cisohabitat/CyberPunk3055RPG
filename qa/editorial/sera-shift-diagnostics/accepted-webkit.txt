@@ -1,0 +1,46 @@
+
+Running 33 tests using 4 workers
+
+(node:270996) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:270998) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:270999) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:270997) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   2 [webkit] › tests/sera-shift.spec.ts:37:87 › Sera stage voice-campaign-sera-shift-3c226a939b14: exact text, art, costs, save and exit at 390px (6.8s)
+  ✓   4 [webkit] › tests/sera-shift.spec.ts:37:87 › Sera stage voice-campaign-sera-shift-9d3da67ec4a0: exact text, art, costs, save and exit at 390px (7.3s)
+  ✓   3 [webkit] › tests/sera-shift.spec.ts:37:87 › Sera stage voice-campaign-sera-shift-e3d3b032a010: exact text, art, costs, save and exit at 390px (7.6s)
+  ✓   1 [webkit] › tests/sera-shift.spec.ts:37:87 › Sera stage voice-campaign-sera-shift-e11348e47d49: exact text, art, costs, save and exit at 390px (7.7s)
+  ✓   5 [webkit] › tests/sera-shift.spec.ts:37:87 › Sera stage voice-campaign-sera-shift-5ddc8dde0286: exact text, art, costs, save and exit at 390px (6.8s)
+  ✓   6 [webkit] › tests/sera-shift.spec.ts:37:87 › Sera stage voice-campaign-sera-shift-03e8041dbaa0: exact text, art, costs, save and exit at 390px (8.0s)
+  ✓   7 [webkit] › tests/sera-shift.spec.ts:37:87 › Sera stage voice-campaign-sera-shift-47e105e137c8: exact text, art, costs, save and exit at 390px (7.9s)
+  ✓   8 [webkit] › tests/sera-shift.spec.ts:37:87 › Sera stage voice-campaign-sera-shift-9d3da67ec4a0: exact text, art, costs, save and exit at 1440px (9.9s)
+  ✓   9 [webkit] › tests/sera-shift.spec.ts:37:87 › Sera stage voice-campaign-sera-shift-e3d3b032a010: exact text, art, costs, save and exit at 1440px (9.4s)
+  ✓  11 [webkit] › tests/sera-shift.spec.ts:37:87 › Sera stage voice-campaign-sera-shift-3c226a939b14: exact text, art, costs, save and exit at 1440px (9.6s)
+  ✓  10 [webkit] › tests/sera-shift.spec.ts:37:87 › Sera stage voice-campaign-sera-shift-e11348e47d49: exact text, art, costs, save and exit at 1440px (10.3s)
+  ✓  12 [webkit] › tests/sera-shift.spec.ts:37:87 › Sera stage voice-campaign-sera-shift-5ddc8dde0286: exact text, art, costs, save and exit at 1440px (9.5s)
+  ✓  15 [webkit] › tests/sera-shift.spec.ts:37:87 › Sera stage voice-campaign-sera-shift-9d3da67ec4a0: exact text, art, costs, save and exit at 320px (5.5s)
+  ✓  13 [webkit] › tests/sera-shift.spec.ts:37:87 › Sera stage voice-campaign-sera-shift-03e8041dbaa0: exact text, art, costs, save and exit at 1440px (10.5s)
+  ✓  16 [webkit] › tests/sera-shift.spec.ts:37:87 › Sera stage voice-campaign-sera-shift-e3d3b032a010: exact text, art, costs, save and exit at 320px (6.4s)
+  ✓  14 [webkit] › tests/sera-shift.spec.ts:37:87 › Sera stage voice-campaign-sera-shift-47e105e137c8: exact text, art, costs, save and exit at 1440px (10.1s)
+  ✓  17 [webkit] › tests/sera-shift.spec.ts:37:87 › Sera stage voice-campaign-sera-shift-e11348e47d49: exact text, art, costs, save and exit at 320px (6.1s)
+  ✓  18 [webkit] › tests/sera-shift.spec.ts:37:87 › Sera stage voice-campaign-sera-shift-3c226a939b14: exact text, art, costs, save and exit at 320px (6.4s)
+  ✓  19 [webkit] › tests/sera-shift.spec.ts:37:87 › Sera stage voice-campaign-sera-shift-5ddc8dde0286: exact text, art, costs, save and exit at 320px (6.7s)
+  ✓  20 [webkit] › tests/sera-shift.spec.ts:37:87 › Sera stage voice-campaign-sera-shift-03e8041dbaa0: exact text, art, costs, save and exit at 320px (5.6s)
+  ✓  21 [webkit] › tests/sera-shift.spec.ts:37:87 › Sera stage voice-campaign-sera-shift-47e105e137c8: exact text, art, costs, save and exit at 320px (7.2s)
+  ✓  22 [webkit] › tests/sera-shift.spec.ts:53:49 › Sera voice voice-campaign-sera-shift-9d3da67ec4a0: actor, exact quote, gain, completion and Stop (12.3s)
+  ✓  23 [webkit] › tests/sera-shift.spec.ts:53:49 › Sera voice voice-campaign-sera-shift-e3d3b032a010: actor, exact quote, gain, completion and Stop (12.5s)
+  ✓  24 [webkit] › tests/sera-shift.spec.ts:53:49 › Sera voice voice-campaign-sera-shift-e11348e47d49: actor, exact quote, gain, completion and Stop (14.1s)
+  ✓  25 [webkit] › tests/sera-shift.spec.ts:53:49 › Sera voice voice-campaign-sera-shift-3c226a939b14: actor, exact quote, gain, completion and Stop (10.6s)
+  ✓  29 [webkit] › tests/sera-shift.spec.ts:65:5 › Sera paragraph/manual/no-art reveals the quote before explicit playback (4.2s)
+  ✓  30 [webkit] › tests/sera-shift.spec.ts:68:63 › Sera respects sound=false, voices=100 (1.3s)
+  ✓  26 [webkit] › tests/sera-shift.spec.ts:53:49 › Sera voice voice-campaign-sera-shift-5ddc8dde0286: actor, exact quote, gain, completion and Stop (9.7s)
+  ✓  31 [webkit] › tests/sera-shift.spec.ts:68:63 › Sera respects sound=true, voices=0 (2.4s)
+  ✓  27 [webkit] › tests/sera-shift.spec.ts:53:49 › Sera voice voice-campaign-sera-shift-03e8041dbaa0: actor, exact quote, gain, completion and Stop (11.4s)
+  ✓  32 [webkit] › tests/sera-shift.spec.ts:69:5 › missing Sera voice leaves exact readable text and working choices (2.9s)
+  ✓  28 [webkit] › tests/sera-shift.spec.ts:53:49 › Sera voice voice-campaign-sera-shift-47e105e137c8: actor, exact quote, gain, completion and Stop (11.2s)
+  ✓  33 [webkit] › tests/sera-shift.spec.ts:72:5 › leaving Sera while its exact quote is loading cancels the late start (10.8s)
+
+  33 passed (1.3m)

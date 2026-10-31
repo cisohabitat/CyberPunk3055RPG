@@ -1,0 +1,330 @@
+{
+  "name": "Sera shift / watch-corrected",
+  "character": {
+    "handle": "Replay",
+    "givenName": "Ada",
+    "origin": "dustline",
+    "complication": "on-file",
+    "bonus": {
+      "chrome": 0,
+      "nerve": 0,
+      "face": 0,
+      "ghost": 2
+    },
+    "startWithPrologue": true,
+    "seraShift": true
+  },
+  "steps": [
+    {
+      "choiceId": "begin-opening",
+      "reload": true
+    },
+    {
+      "choiceId": "opening-identity",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-stallholder",
+      "reload": true
+    },
+    {
+      "choiceId": "take-the-stool",
+      "reload": true
+    },
+    {
+      "choiceId": "ask-pay",
+      "reload": true
+    },
+    {
+      "choiceId": "haggle",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "pocket",
+      "reload": true
+    },
+    {
+      "choiceId": "accept",
+      "reload": true
+    },
+    {
+      "choiceId": "side",
+      "reload": true
+    },
+    {
+      "choiceId": "spoof-door",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "go",
+      "reload": true
+    },
+    {
+      "choiceId": "honest",
+      "reload": true
+    },
+    {
+      "choiceId": "pact-copy",
+      "reload": true
+    },
+    {
+      "choiceId": "copy",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "heard",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-hour",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-signature",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-order",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-roster",
+      "reload": true
+    },
+    {
+      "choiceId": "reconstruct",
+      "reload": true
+    },
+    {
+      "choiceId": "assemble-timeline",
+      "reload": true
+    },
+    {
+      "choiceId": "place-roster",
+      "reload": true
+    },
+    {
+      "choiceId": "place-signature",
+      "reload": true
+    },
+    {
+      "choiceId": "place-order",
+      "reload": true
+    },
+    {
+      "choiceId": "test-timeline",
+      "reload": true
+    },
+    {
+      "choiceId": "leave-sequence-open",
+      "reload": true
+    },
+    {
+      "choiceId": "model-issuer",
+      "reload": true
+    },
+    {
+      "choiceId": "verdict-supported",
+      "reload": true
+    },
+    {
+      "choiceId": "carry-disputed-model",
+      "reload": true
+    },
+    {
+      "choiceId": "name-tower",
+      "reload": true
+    },
+    {
+      "choiceId": "seal-full",
+      "reload": true
+    },
+    {
+      "choiceId": "talk-leave",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "both",
+      "reload": true
+    },
+    {
+      "choiceId": "week-after",
+      "reload": true
+    },
+    {
+      "choiceId": "into-week",
+      "reload": true
+    },
+    {
+      "choiceId": "practice",
+      "reload": true
+    },
+    {
+      "choiceId": "learn-chrome",
+      "reload": true
+    },
+    {
+      "choiceId": "read-board",
+      "reload": true
+    },
+    {
+      "choiceId": "origin-contract",
+      "reload": true
+    },
+    {
+      "choiceId": "courier-run",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "return-board",
+      "reload": true
+    },
+    {
+      "choiceId": "to-helion",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-ives",
+      "reload": true
+    },
+    {
+      "choiceId": "refuse-ives",
+      "reload": true
+    },
+    {
+      "choiceId": "trace-order",
+      "reload": true
+    },
+    {
+      "choiceId": "agree-archive-terms",
+      "reload": true
+    },
+    {
+      "choiceId": "skip-archive-prep",
+      "reload": true
+    },
+    {
+      "choiceId": "separate-source-tests",
+      "reload": true
+    },
+    {
+      "choiceId": "trace-receipt",
+      "roll": 1,
+      "reload": true
+    },
+    {
+      "choiceId": "keep-gap",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-response",
+      "reload": true
+    },
+    {
+      "choiceId": "correct-bench-model",
+      "reload": true
+    },
+    {
+      "choiceId": "correct-public-claim",
+      "reload": true
+    },
+    {
+      "choiceId": "stand",
+      "reload": true
+    },
+    {
+      "choiceId": "back-to-board",
+      "reload": true
+    },
+    {
+      "choiceId": "to-the-wall",
+      "reload": true
+    },
+    {
+      "choiceId": "to-ward-nine",
+      "reload": true
+    },
+    {
+      "choiceId": "visit-records",
+      "reload": true
+    },
+    {
+      "choiceId": "keep-limits",
+      "reload": true
+    },
+    {
+      "choiceId": "face-sera",
+      "reload": true
+    },
+    {
+      "choiceId": "prepare-public-account",
+      "reload": true
+    },
+    {
+      "choiceId": "sera-choose-watch",
+      "reload": true
+    },
+    {
+      "choiceId": "sera-watch-table",
+      "reload": true
+    },
+    {
+      "choiceId": "sera-return-to-account",
+      "reload": true
+    },
+    {
+      "choiceId": "scope-bounded",
+      "reload": true
+    },
+    {
+      "choiceId": "keep-recording-private",
+      "reload": true
+    },
+    {
+      "choiceId": "claim-key-anyway",
+      "reload": true
+    },
+    {
+      "choiceId": "correct-hearing",
+      "reload": true
+    },
+    {
+      "choiceId": "file-public-account",
+      "reload": true
+    },
+    {
+      "choiceId": "confirm-leak",
+      "reload": true
+    }
+  ],
+  "expected": {
+    "sceneId": "ending_witness",
+    "creds": 330,
+    "strain": 3,
+    "flags": {
+      "archive_done": true,
+      "archive_paused": false,
+      "archive_key_authenticated": false,
+      "order_verified": false,
+      "witness_lost": false,
+      "witness_relocated": false,
+      "witness_safe": false,
+      "nia_public_consent": false,
+      "testimony_published": true,
+      "testimony_withdrawn": false,
+      "testimony_corrected": true,
+      "confirmed_leak": true,
+      "ives_took_list": false,
+      "spoke_names": false
+    },
+    "journal": [
+      "archive-gap",
+      "wall-account"
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "id": "voice-campaign-sera-shift-9d3da67ec4a0",
+    "speaker": "Sera",
+    "voice": "af_bella",
+    "speed": 0.95,
+    "text": "I keep sending people to the wall. I would like to stand there myself for once. But I cannot leave this table open.",
+    "loudnessLufs": -23.5,
+    "direction": "Tired but direct; ask for a concrete favor, without accusation."
+  },
+  {
+    "id": "voice-campaign-sera-shift-e3d3b032a010",
+    "speaker": "Sera",
+    "voice": "af_bella",
+    "speed": 0.95,
+    "text": "Take the blank cards. Bring back the empty tray too. People should have somewhere to put a question when they find one.",
+    "loudnessLufs": -23.5,
+    "direction": "Practical instruction, then gently make room for an unanswered question."
+  },
+  {
+    "id": "voice-campaign-sera-shift-e11348e47d49",
+    "speaker": "Sera",
+    "voice": "af_bella",
+    "speed": 0.95,
+    "text": "Stay on this side. If someone asks for a source, ask them to wait for me. You do not have to answer for anybody.",
+    "loudnessLufs": -23.5,
+    "direction": "A quiet, precise boundary before stepping away."
+  },
+  {
+    "id": "voice-campaign-sera-shift-3c226a939b14",
+    "speaker": "Sera",
+    "voice": "af_bella",
+    "speed": 0.95,
+    "text": "You brought the tray back empty. That is all right. An empty place for a question is still worth keeping.",
+    "loudnessLufs": -23.5,
+    "direction": "Accept the empty tray without disappointment."
+  },
+  {
+    "id": "voice-campaign-sera-shift-5ddc8dde0286",
+    "speaker": "Sera",
+    "voice": "af_bella",
+    "speed": 0.95,
+    "text": "I heard the voices from the wall instead of through this doorway. Thank you for staying.",
+    "loudnessLufs": -23.5,
+    "direction": "Personal relief, understated thanks."
+  },
+  {
+    "id": "voice-campaign-sera-shift-03e8041dbaa0",
+    "speaker": "Sera",
+    "voice": "af_bella",
+    "speed": 0.95,
+    "text": "Leave a space beside the account. Someone may come back with a question after we have gone.",
+    "loudnessLufs": -23.5,
+    "direction": "Make space for a future question without promising an answer."
+  },
+  {
+    "id": "voice-campaign-sera-shift-47e105e137c8",
+    "speaker": "Sera",
+    "voice": "af_bella",
+    "speed": 0.95,
+    "text": "I can take the table again. You do not have to stay here to make this account worth keeping.",
+    "loudnessLufs": -23.5,
+    "direction": "Release the runner from the favor; no implied debt."
+  }
+]

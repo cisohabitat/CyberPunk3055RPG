@@ -332,3 +332,5 @@ ENCOUNTERS.act3_ramp_return = { ...COURIER_TABLE, caption: "Ward Nine · a carry
 
 // Same neutral bench; no depicted signature, receipt, witness or successful review.
 for (const id of ["act2_return_routing_terms","act2_return_routing_read","act2_return_routing_prepare","act2_return_routing_route","act2_return_routing_result","act3_return_routing_return"]) ENCOUNTERS[id] = { ...ENCOUNTERS.act2_technique_bench };
+
+for (const id of ["act3_sera_shift", "act3_sera_carry", "act3_sera_watch", "act3_sera_reply"]) ENCOUNTERS[id] = { ...ENCOUNTERS.act3_testimony_review };

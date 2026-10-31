@@ -1,0 +1,60 @@
+{
+  "revision": "d0d6c509577d135f0b5e6aa119063d29a2427f88",
+  "runId": 41155102136,
+  "jobId": 124401476113,
+  "project": "firefox",
+  "test": "complete compositions preserve boundaries and saves at 390px, batch 1",
+  "source": "tests/visual-staging.spec.ts:54",
+  "firstError": "locator.evaluate: Invalid image request.",
+  "retryPassed": true,
+  "configuredRetries": 1,
+  "caseTimeoutMs": 90000,
+  "artifact": {
+    "id": 13025355462,
+    "sha256": "4096c99e2e708e1df3ce806a76afaa9d1506a2f66d0f53d2b45f8e3052bbe80a",
+    "bytes": 13903270,
+    "localZip": "/tmp/saint-phase15/firefox4.zip",
+    "localTrace": "/tmp/saint-phase15/firefox4-artifact/test-results/visual-staging-complete-co-67add--and-saves-at-390px-batch-1-firefox/trace.zip",
+    "traceSha256": "b1e1ffb2ab5c71eff611f133685bdde37a659d6fc20d0cf78d9cd884944143d7"
+  },
+  "traceObservation": {
+    "failedDecodeActionEndMs": 362217.462,
+    "imageRequestStartMs": 362224.929,
+    "requestAfterFailureMs": 7.467,
+    "imageUrl": "http://127.0.0.1:3101/art/nia-transfer-small.jpg",
+    "responseStatus": 200,
+    "failedImageRequest": false
+  },
+  "publicDiagnostic": {
+    "route": "methods-volunteer-shift",
+    "scene": "act2_witness_support",
+    "width": 390,
+    "ready": true,
+    "decoded": {
+      "width": 326,
+      "currentSrc": "https://cyberpunk3055rpg.vercel.app/art/nia-transfer-small.jpg",
+      "ratio": 1.5000352982703848,
+      "fit": "contain"
+    },
+    "errors": [],
+    "method": "Actual public Chromium at a legal authored checkpoint; wait for existing player-ready signal, retain native decode, dimensions/fit and exact save assertions. Separate from original hosted Firefox observation."
+  },
+  "additionalPublicMedia": [
+    {
+      "path": "/art/nia-transfer.jpg",
+      "sha256": "d850e4a5d57088ae9ff7568c76d5a5f140fe46e50679e0c3d28fa6333983263f",
+      "bytes": 246783,
+      "matchesLocal": true
+    },
+    {
+      "path": "/art/nia-transfer-small.jpg",
+      "sha256": "e45d52caf442005cbb3ed40b1df5afe5eccc524d8a9ee77747112eb095aef519",
+      "bytes": 70976,
+      "matchesLocal": true
+    }
+  ],
+  "interpretation": "Native decode observation occurred before the lazy image request began; the component performs its own decode from onLoad and reaches ready normally. This supports an observer/load-order race. Original unchanged Firefox case passed its configured retry, and public Chromium ready/native decode, dimensions/fit and exact save checks pass. No broken production JPEG or failed image request was observed; not a claim of a new Firefox reproduction or a fixed test.",
+  "productionCodeChanged": false,
+  "deadlinesWorkersSkipsAndRetryPolicy": "unchanged",
+  "next": "Preserve this record/raw context/PNG/log in the next substantive phase. Align the older visual-staging observer with the existing player-ready state before retaining native decode if this helper is revised; do not filter errors or alter limits."
+}

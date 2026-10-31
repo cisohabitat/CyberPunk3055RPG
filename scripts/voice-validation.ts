@@ -1,3 +1,4 @@
+import seraAdditions from "../qa/media/sera-shift-dialogue-lines.json";
 import routingAdditions from "../qa/media/return-routing-dialogue-lines.json";
 import { performanceVoicePath } from "../lib/performance-delivery";
 import freightAdditions from "../qa/media/freight-craft-dialogue-lines.json";
@@ -31,7 +32,7 @@ async function main() {
   if (!Number.isInteger(workers) || workers < 1 || workers > 4) throw new Error("Use 1..4 QA browser workers");
   const automatic = args.includes("--automatic"), used = new Set(bindings.map(line => line.id));
   const requested = args.includes("--ids") ? argument("--ids", "").split(",") : undefined;
-  const candidates = [...(args.includes("--only-new") ? [] : old), ...additions, ...districtAdditions, ...techniqueAdditions, ...kerrAdditions, ...maraAdditions, ...witnessAdditions, ...craftAdditions, ...payoffAdditions, ...freightAdditions, ...routingAdditions].filter(line => used.has(line.id));
+  const candidates = [...(args.includes("--only-new") ? [] : old), ...additions, ...districtAdditions, ...techniqueAdditions, ...kerrAdditions, ...maraAdditions, ...witnessAdditions, ...craftAdditions, ...payoffAdditions, ...freightAdditions, ...seraAdditions, ...routingAdditions].filter(line => used.has(line.id));
   if (requested && (!requested.length || requested.some(id => !candidates.some(line => line.id === id)))) throw new Error("Every --ids entry must identify an active delivery in this audit scope");
   const lines = candidates.filter(line => !requested || requested.includes(line.id));
   const examples = dialogueExamples();

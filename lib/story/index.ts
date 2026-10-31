@@ -1,3 +1,4 @@
+import { SERA_SHIFT_STORY } from './sera-shift';
 import { RETURN_ROUTING_SCENES } from "./return-routing";
 import { ENCOUNTER_CRAFT_SCENES } from "./encounter-craft";
 import { FREIGHT_CRAFT_SCENES } from "./freight-craft";
@@ -55,6 +56,7 @@ export const SCENES: Record<string, Scene> = mergeScenes(
   ACT2_SCENES,
   ACT3_SCENES,
   TESTIMONY_SCENES,
+  SERA_SHIFT_STORY,
   MEMORY_SCENES,
   MISSION_SCENES,
   SUPPORT_SCENES,

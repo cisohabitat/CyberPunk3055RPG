@@ -1,0 +1,808 @@
+{
+  "method": "Two connected task-to-account sequences, 14 complete spoken stages including intervening consent and witness relay; actual delivered clips and ward/quiet music and ward ambience. Settled normal-focus approximation: Voice70/Music60/Ambience50, source gains from runtime, music/room source .5/.35, speech duck .22/.44, 120ms same-speaker gaps and one-second stage separators.",
+  "limitations": "Offline preview omits browser fades, download timing and hardware. Original account recordings and new-23.5LUFS clips are not level matched. No independent listening/acting score or comprehension finding is inferred.",
+  "previewPath": "qa/editorial/sera-shift-audition.mp3",
+  "previewSha256": "5761c5a671fa7ba1201c446c2927999837a41c015060b0882191e596c06d844f",
+  "bytes": 1370348,
+  "durationSeconds": 114.09991666666667,
+  "scenes": [
+    {
+      "route": "carry-authenticated",
+      "scene": "act3_sera_shift",
+      "text": "Sera has a hand on the back of her chair. From the doorway, the wall is only a strip of wet light. A tray of blank question cards waits on the visitor side; the source folders are closed behind her.\n\n\"I keep sending people to the wall. I would like to stand there myself for once. But I cannot leave this table open.\"\n\nYou can carry the cards to the wall while she keeps custody here, or watch the closed table while she listens. Either task takes you away from drafting for a moment. Neither earns money or standing.",
+      "lines": [
+        {
+          "id": "voice-campaign-sera-shift-9d3da67ec4a0",
+          "key": "c5afd75e7c77dcd3",
+          "scene": "act3_sera_shift",
+          "sceneSpeaker": "Sera",
+          "speaker": "Sera",
+          "quote": "I keep sending people to the wall. I would like to stand there myself for once. But I cannot leave this table open.",
+          "text": "I keep sending people to the wall. I would like to stand there myself for once. But I cannot leave this table open.",
+          "part": 0,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-sera-shift-9d3da67ec4a0.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "ward",
+        "district": "ward"
+      },
+      "art": {
+        "src": "/art/sera-hearing.jpg",
+        "small": "/art/sera-hearing-small.jpg",
+        "caption": "Ward Nine \u00b7 the account can still change",
+        "description": "Sera holds a pencil over a blank cover sheet at the rain-lit records table. A closed folder stays separate beside her hand; the recorder shows no operating status, private identity or filed outcome."
+      },
+      "clips": [
+        {
+          "id": "voice-campaign-sera-shift-9d3da67ec4a0",
+          "key": "c5afd75e7c77dcd3",
+          "scene": "act3_sera_shift",
+          "sceneSpeaker": "Sera",
+          "speaker": "Sera",
+          "quote": "I keep sending people to the wall. I would like to stand there myself for once. But I cannot leave this table open.",
+          "text": "I keep sending people to the wall. I would like to stand there myself for once. But I cannot leave this table open.",
+          "part": 0,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-sera-shift-9d3da67ec4a0.mp3",
+          "sha256": "7000d312ad041bf1d03f872bc8fd3143328f5516ef1378262179b59612611ba7",
+          "startSeconds": 0.0,
+          "durationSeconds": 7.391291666666667
+        }
+      ],
+      "startSeconds": 0.0,
+      "durationSeconds": 7.391291666666667,
+      "musicPath": "public/audio/theme-ward.flac",
+      "musicSha256": "46e9fd33430a61b4a36645c45fcd88bbc616e57e4643cb2e61aaacc0b62cfc39",
+      "ambiencePath": "public/audio/ambience-ward.flac",
+      "ambienceSha256": "a3cb998a109b169e7da44fd4f6f1f9299b01a8fe477d04ec681a0bad425c75e6",
+      "masterPath": "/workspace/generated_audio/sera-shift/mixes/carry-authenticated-act3_sera_shift.wav",
+      "masterSha256": "e43c6fb815acbcba26a7e4ba23c6c05ba3b3bedf77fe77a88d1061e573b86939",
+      "peak": 0.2755478024482727,
+      "voiceRms": 0.036400265991687775,
+      "bedRms": 0.003060161368921399
+    },
+    {
+      "route": "carry-authenticated",
+      "scene": "act3_sera_carry",
+      "text": "Sera slides the tray across the visitor side. The cards are blank; none is a source or an approved witness account.\n\n\"Take the blank cards. Bring back the empty tray too. People should have somewhere to put a question when they find one.\"\n\nThe wall is a short walk from the table. You can make that trip, choose the other task, or leave this work with Sera.",
+      "lines": [
+        {
+          "id": "voice-campaign-sera-shift-e3d3b032a010",
+          "key": "900246b81fcf9e76",
+          "scene": "act3_sera_carry",
+          "sceneSpeaker": "Sera",
+          "speaker": "Sera",
+          "quote": "Take the blank cards. Bring back the empty tray too. People should have somewhere to put a question when they find one.",
+          "text": "Take the blank cards. Bring back the empty tray too. People should have somewhere to put a question when they find one.",
+          "part": 0,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-sera-shift-e3d3b032a010.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "ward",
+        "district": "ward"
+      },
+      "art": {
+        "src": "/art/sera-hearing.jpg",
+        "small": "/art/sera-hearing-small.jpg",
+        "caption": "Ward Nine \u00b7 the account can still change",
+        "description": "Sera holds a pencil over a blank cover sheet at the rain-lit records table. A closed folder stays separate beside her hand; the recorder shows no operating status, private identity or filed outcome."
+      },
+      "clips": [
+        {
+          "id": "voice-campaign-sera-shift-e3d3b032a010",
+          "key": "900246b81fcf9e76",
+          "scene": "act3_sera_carry",
+          "sceneSpeaker": "Sera",
+          "speaker": "Sera",
+          "quote": "Take the blank cards. Bring back the empty tray too. People should have somewhere to put a question when they find one.",
+          "text": "Take the blank cards. Bring back the empty tray too. People should have somewhere to put a question when they find one.",
+          "part": 0,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-sera-shift-e3d3b032a010.mp3",
+          "sha256": "021bb7ef3f308f734e01fc1ba75e346094f6115e81403f476b9830110cf7d77a",
+          "startSeconds": 0.0,
+          "durationSeconds": 7.240666666666667
+        }
+      ],
+      "startSeconds": 8.391291666666667,
+      "durationSeconds": 7.240666666666667,
+      "musicPath": "public/audio/theme-ward.flac",
+      "musicSha256": "46e9fd33430a61b4a36645c45fcd88bbc616e57e4643cb2e61aaacc0b62cfc39",
+      "ambiencePath": "public/audio/ambience-ward.flac",
+      "ambienceSha256": "a3cb998a109b169e7da44fd4f6f1f9299b01a8fe477d04ec681a0bad425c75e6",
+      "masterPath": "/workspace/generated_audio/sera-shift/mixes/carry-authenticated-act3_sera_carry.wav",
+      "masterSha256": "3c6807cdd9bc55301cb255fb23ec6d227c1ad338175cbfd396d830b3b41e4185",
+      "peak": 0.290487140417099,
+      "voiceRms": 0.036040663719177246,
+      "bedRms": 0.0030677281320095062
+    },
+    {
+      "route": "carry-authenticated",
+      "scene": "act3_sera_reply",
+      "text": "The cards stay at the wall. Back at the table, you set down the empty tray. Sera moves her pencil out of its way.\n\n\"You brought the tray back empty. That is all right. An empty place for a question is still worth keeping.\"\n\nShe draws the blank cover sheet toward you. Now there is room for the account, if you still want to prepare it.",
+      "lines": [
+        {
+          "id": "voice-campaign-sera-shift-3c226a939b14",
+          "key": "61b1b9941f9db539",
+          "scene": "act3_sera_reply",
+          "sceneSpeaker": "Sera",
+          "speaker": "Sera",
+          "quote": "You brought the tray back empty. That is all right. An empty place for a question is still worth keeping.",
+          "text": "You brought the tray back empty. That is all right. An empty place for a question is still worth keeping.",
+          "part": 0,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-sera-shift-3c226a939b14.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "ward",
+        "district": "ward"
+      },
+      "art": {
+        "src": "/art/sera-hearing.jpg",
+        "small": "/art/sera-hearing-small.jpg",
+        "caption": "Ward Nine \u00b7 the account can still change",
+        "description": "Sera holds a pencil over a blank cover sheet at the rain-lit records table. A closed folder stays separate beside her hand; the recorder shows no operating status, private identity or filed outcome."
+      },
+      "clips": [
+        {
+          "id": "voice-campaign-sera-shift-3c226a939b14",
+          "key": "61b1b9941f9db539",
+          "scene": "act3_sera_reply",
+          "sceneSpeaker": "Sera",
+          "speaker": "Sera",
+          "quote": "You brought the tray back empty. That is all right. An empty place for a question is still worth keeping.",
+          "text": "You brought the tray back empty. That is all right. An empty place for a question is still worth keeping.",
+          "part": 0,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-sera-shift-3c226a939b14.mp3",
+          "sha256": "47589aa7143709cc5503fc41d49f2882a081f2790d4e18cd54240f3142c35276",
+          "startSeconds": 0.0,
+          "durationSeconds": 6.515333333333333
+        }
+      ],
+      "startSeconds": 16.631958333333333,
+      "durationSeconds": 6.515333333333333,
+      "musicPath": "public/audio/theme-ward.flac",
+      "musicSha256": "46e9fd33430a61b4a36645c45fcd88bbc616e57e4643cb2e61aaacc0b62cfc39",
+      "ambiencePath": "public/audio/ambience-ward.flac",
+      "ambienceSha256": "a3cb998a109b169e7da44fd4f6f1f9299b01a8fe477d04ec681a0bad425c75e6",
+      "masterPath": "/workspace/generated_audio/sera-shift/mixes/carry-authenticated-act3_sera_reply.wav",
+      "masterSha256": "5ab75271b1b96b00f7a7e0f16de965c048b0566b6ff5a883c2098f633314bd19",
+      "peak": 0.31705039739608765,
+      "voiceRms": 0.03730882331728935,
+      "bedRms": 0.0030873685609549284
+    },
+    {
+      "route": "carry-authenticated",
+      "scene": "act3_testimony_review",
+      "text": "Sera puts a blank public cover sheet beside the recorder and your sources. 'The names can be spoken either way. This is a different promise: an account someone can question after you leave.'\n\nFirst decide what the sources support. Then decide whose words can appear on the sheet.",
+      "lines": [
+        {
+          "key": "c9cfdae9c7f6db05",
+          "id": "voice-sera-hearing-purpose",
+          "scene": "act3_testimony_review",
+          "sceneSpeaker": "Sera",
+          "speaker": "Sera",
+          "quote": "The names can be spoken either way. This is a different promise: an account someone can question after you leave.",
+          "text": "The names can be spoken either way. This is a different promise: an account someone can question after you leave.",
+          "part": 0,
+          "sourceGain": 0.73790423,
+          "path": "public/audio/voice-sera-hearing-purpose.wav"
+        }
+      ],
+      "sound": {
+        "mood": "quiet",
+        "district": "ward"
+      },
+      "art": {
+        "src": "/art/sera-hearing.jpg",
+        "small": "/art/sera-hearing-small.jpg",
+        "caption": "Ward Nine \u00b7 the account can still change",
+        "description": "Sera holds a pencil over a blank cover sheet at the rain-lit records table. A closed folder stays separate beside her hand; the recorder shows no operating status, private identity or filed outcome."
+      },
+      "clips": [
+        {
+          "key": "c9cfdae9c7f6db05",
+          "id": "voice-sera-hearing-purpose",
+          "scene": "act3_testimony_review",
+          "sceneSpeaker": "Sera",
+          "speaker": "Sera",
+          "quote": "The names can be spoken either way. This is a different promise: an account someone can question after you leave.",
+          "text": "The names can be spoken either way. This is a different promise: an account someone can question after you leave.",
+          "part": 0,
+          "sourceGain": 0.73790423,
+          "path": "public/audio/voice-sera-hearing-purpose.wav",
+          "sha256": "0da826f7f4f705f3d4633137138386e1cef7a2b38cdf81e4991a5cf4de57c668",
+          "startSeconds": 0.0,
+          "durationSeconds": 7.318
+        }
+      ],
+      "startSeconds": 24.147291666666668,
+      "durationSeconds": 7.318,
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-ward.flac",
+      "ambienceSha256": "a3cb998a109b169e7da44fd4f6f1f9299b01a8fe477d04ec681a0bad425c75e6",
+      "masterPath": "/workspace/generated_audio/sera-shift/mixes/carry-authenticated-act3_testimony_review.wav",
+      "masterSha256": "57a2b25c956178c2a8e6870a716f84ea50489958c659bf35aaf6badbac50963e",
+      "peak": 0.26114365458488464,
+      "voiceRms": 0.03591342270374298,
+      "bedRms": 0.0016726937610656023
+    },
+    {
+      "route": "carry-authenticated",
+      "scene": "act3_testimony_hearing",
+      "text": "Ives places his folio beside the recorder. 'A maintenance signature isn't an issuing key. A witness isn't a server. What exactly are you asking people to believe?'\n\nSera leaves the recorder running. The mechanic waits for the source you can point to; a witness's address stays off the table.",
+      "lines": [
+        {
+          "key": "12cdbd3602fe040e",
+          "id": "voice-campaign-ives-hearing-challenge-performance",
+          "scene": "act3_testimony_hearing",
+          "sceneSpeaker": "Ives",
+          "speaker": "Ives",
+          "quote": "A maintenance signature isn't an issuing key. A witness isn't a server. What exactly are you asking people to believe?",
+          "text": "A maintenance signature isn't an issuing key. A witness isn't a server. What exactly are you asking people to believe?",
+          "part": 0,
+          "sourceGain": 0.66834392,
+          "path": "public/audio/voice-campaign-ives-hearing-challenge-performance.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "quiet",
+        "district": "ward"
+      },
+      "art": {
+        "src": "/art/ives-hearing.jpg",
+        "small": "/art/ives-hearing-small.jpg",
+        "caption": "Ward Nine \u00b7 Ives asks for the source",
+        "description": "Ives faces the visitor at the rain-lit records table, a closed black folio beside the unmarked running recorder; blank cover papers and a pencil wait beside an empty chair."
+      },
+      "clips": [
+        {
+          "key": "12cdbd3602fe040e",
+          "id": "voice-campaign-ives-hearing-challenge-performance",
+          "scene": "act3_testimony_hearing",
+          "sceneSpeaker": "Ives",
+          "speaker": "Ives",
+          "quote": "A maintenance signature isn't an issuing key. A witness isn't a server. What exactly are you asking people to believe?",
+          "text": "A maintenance signature isn't an issuing key. A witness isn't a server. What exactly are you asking people to believe?",
+          "part": 0,
+          "sourceGain": 0.66834392,
+          "path": "public/audio/voice-campaign-ives-hearing-challenge-performance.mp3",
+          "sha256": "098b4820461ecb996f2da469d7ce513916f773506ebb74e4ce8dab2f9363ad8b",
+          "startSeconds": 0.0,
+          "durationSeconds": 8.310666666666666
+        }
+      ],
+      "startSeconds": 32.465291666666666,
+      "durationSeconds": 8.310666666666666,
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-ward.flac",
+      "ambienceSha256": "a3cb998a109b169e7da44fd4f6f1f9299b01a8fe477d04ec681a0bad425c75e6",
+      "masterPath": "/workspace/generated_audio/sera-shift/mixes/carry-authenticated-act3_testimony_hearing.wav",
+      "masterSha256": "1069b663042b52cb9050fe82d52c0ea18cc3441cb901a186586b94198cd65782",
+      "peak": 0.20709164440631866,
+      "voiceRms": 0.038059063255786896,
+      "bedRms": 0.0016800195444375277
+    },
+    {
+      "route": "carry-authenticated",
+      "scene": "act3_testimony_record",
+      "text": "Sera holds the cover sheet at the edge of the table. No approved recording from Nia was obtained; the public account quotes none of her words.\n\nSera asks whether to file the account or withdraw it. The names are still waiting at the wall.\n\nSera sets the question tray beside the public draft. \"Leave a space beside the account. Someone may come back with a question after we have gone.\"",
+      "lines": [
+        {
+          "id": "voice-campaign-sera-shift-03e8041dbaa0",
+          "key": "6f520f078bdc3441",
+          "scene": "act3_testimony_record",
+          "sceneSpeaker": "Sera",
+          "speaker": "Sera",
+          "quote": "Leave a space beside the account. Someone may come back with a question after we have gone.",
+          "text": "Leave a space beside the account. Someone may come back with a question after we have gone.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-sera-shift-03e8041dbaa0.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "quiet",
+        "district": "ward"
+      },
+      "art": {
+        "src": "/art/sera-hearing.jpg",
+        "small": "/art/sera-hearing-small.jpg",
+        "caption": "Ward Nine \u00b7 the account can still change",
+        "description": "Sera holds a pencil over a blank cover sheet at the rain-lit records table. A closed folder stays separate beside her hand; the recorder shows no operating status, private identity or filed outcome."
+      },
+      "clips": [
+        {
+          "id": "voice-campaign-sera-shift-03e8041dbaa0",
+          "key": "6f520f078bdc3441",
+          "scene": "act3_testimony_record",
+          "sceneSpeaker": "Sera",
+          "speaker": "Sera",
+          "quote": "Leave a space beside the account. Someone may come back with a question after we have gone.",
+          "text": "Leave a space beside the account. Someone may come back with a question after we have gone.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-sera-shift-03e8041dbaa0.mp3",
+          "sha256": "87117f4a4b1e5d856c779e0e9c6e0e4e437dd72fc1ceaf5c81cd2981bafa7660",
+          "startSeconds": 0.0,
+          "durationSeconds": 5.716
+        }
+      ],
+      "startSeconds": 41.775958333333335,
+      "durationSeconds": 5.716,
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-ward.flac",
+      "ambienceSha256": "a3cb998a109b169e7da44fd4f6f1f9299b01a8fe477d04ec681a0bad425c75e6",
+      "masterPath": "/workspace/generated_audio/sera-shift/mixes/carry-authenticated-act3_testimony_record.wav",
+      "masterSha256": "af2689055b34356440d961262cbc53a5bc972b415e580f6e4bd01d8d10fcc8de",
+      "peak": 0.26407280564308167,
+      "voiceRms": 0.03726467490196228,
+      "bedRms": 0.0017358232289552689
+    },
+    {
+      "route": "watch-private",
+      "scene": "act3_sera_shift",
+      "text": "Sera has a hand on the back of her chair. From the doorway, the wall is only a strip of wet light. A tray of blank question cards waits on the visitor side; the source folders are closed behind her.\n\n\"I keep sending people to the wall. I would like to stand there myself for once. But I cannot leave this table open.\"\n\nYou can carry the cards to the wall while she keeps custody here, or watch the closed table while she listens. Either task takes you away from drafting for a moment. Neither earns money or standing.",
+      "lines": [
+        {
+          "id": "voice-campaign-sera-shift-9d3da67ec4a0",
+          "key": "c5afd75e7c77dcd3",
+          "scene": "act3_sera_shift",
+          "sceneSpeaker": "Sera",
+          "speaker": "Sera",
+          "quote": "I keep sending people to the wall. I would like to stand there myself for once. But I cannot leave this table open.",
+          "text": "I keep sending people to the wall. I would like to stand there myself for once. But I cannot leave this table open.",
+          "part": 0,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-sera-shift-9d3da67ec4a0.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "ward",
+        "district": "ward"
+      },
+      "art": {
+        "src": "/art/sera-hearing.jpg",
+        "small": "/art/sera-hearing-small.jpg",
+        "caption": "Ward Nine \u00b7 the account can still change",
+        "description": "Sera holds a pencil over a blank cover sheet at the rain-lit records table. A closed folder stays separate beside her hand; the recorder shows no operating status, private identity or filed outcome."
+      },
+      "clips": [
+        {
+          "id": "voice-campaign-sera-shift-9d3da67ec4a0",
+          "key": "c5afd75e7c77dcd3",
+          "scene": "act3_sera_shift",
+          "sceneSpeaker": "Sera",
+          "speaker": "Sera",
+          "quote": "I keep sending people to the wall. I would like to stand there myself for once. But I cannot leave this table open.",
+          "text": "I keep sending people to the wall. I would like to stand there myself for once. But I cannot leave this table open.",
+          "part": 0,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-sera-shift-9d3da67ec4a0.mp3",
+          "sha256": "7000d312ad041bf1d03f872bc8fd3143328f5516ef1378262179b59612611ba7",
+          "startSeconds": 0.0,
+          "durationSeconds": 7.391291666666667
+        }
+      ],
+      "startSeconds": 48.491958333333336,
+      "durationSeconds": 7.391291666666667,
+      "musicPath": "public/audio/theme-ward.flac",
+      "musicSha256": "46e9fd33430a61b4a36645c45fcd88bbc616e57e4643cb2e61aaacc0b62cfc39",
+      "ambiencePath": "public/audio/ambience-ward.flac",
+      "ambienceSha256": "a3cb998a109b169e7da44fd4f6f1f9299b01a8fe477d04ec681a0bad425c75e6",
+      "masterPath": "/workspace/generated_audio/sera-shift/mixes/watch-private-act3_sera_shift.wav",
+      "masterSha256": "e43c6fb815acbcba26a7e4ba23c6c05ba3b3bedf77fe77a88d1061e573b86939",
+      "peak": 0.2755478024482727,
+      "voiceRms": 0.036400265991687775,
+      "bedRms": 0.003060161368921399
+    },
+    {
+      "route": "watch-private",
+      "scene": "act3_sera_watch",
+      "text": "Sera closes the tray drawer. The folders remain on her side of the table. She waits until you have taken a place facing the doorway.\n\n\"Stay on this side. If someone asks for a source, ask them to wait for me. You do not have to answer for anybody.\"\n\nYou are keeping a place, not taking custody of the sources. Wait for her return, choose the other task, or leave the table with her.",
+      "lines": [
+        {
+          "id": "voice-campaign-sera-shift-e11348e47d49",
+          "key": "ca638c33f6720dd8",
+          "scene": "act3_sera_watch",
+          "sceneSpeaker": "Sera",
+          "speaker": "Sera",
+          "quote": "Stay on this side. If someone asks for a source, ask them to wait for me. You do not have to answer for anybody.",
+          "text": "Stay on this side. If someone asks for a source, ask them to wait for me. You do not have to answer for anybody.",
+          "part": 0,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-sera-shift-e11348e47d49.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "ward",
+        "district": "ward"
+      },
+      "art": {
+        "src": "/art/sera-hearing.jpg",
+        "small": "/art/sera-hearing-small.jpg",
+        "caption": "Ward Nine \u00b7 the account can still change",
+        "description": "Sera holds a pencil over a blank cover sheet at the rain-lit records table. A closed folder stays separate beside her hand; the recorder shows no operating status, private identity or filed outcome."
+      },
+      "clips": [
+        {
+          "id": "voice-campaign-sera-shift-e11348e47d49",
+          "key": "ca638c33f6720dd8",
+          "scene": "act3_sera_watch",
+          "sceneSpeaker": "Sera",
+          "speaker": "Sera",
+          "quote": "Stay on this side. If someone asks for a source, ask them to wait for me. You do not have to answer for anybody.",
+          "text": "Stay on this side. If someone asks for a source, ask them to wait for me. You do not have to answer for anybody.",
+          "part": 0,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-sera-shift-e11348e47d49.mp3",
+          "sha256": "d3aff575f0c3c63709f356a123962a8a2b512f90aeca810c837b138e5800cc99",
+          "startSeconds": 0.0,
+          "durationSeconds": 7.293333333333333
+        }
+      ],
+      "startSeconds": 56.88325,
+      "durationSeconds": 7.293333333333333,
+      "musicPath": "public/audio/theme-ward.flac",
+      "musicSha256": "46e9fd33430a61b4a36645c45fcd88bbc616e57e4643cb2e61aaacc0b62cfc39",
+      "ambiencePath": "public/audio/ambience-ward.flac",
+      "ambienceSha256": "a3cb998a109b169e7da44fd4f6f1f9299b01a8fe477d04ec681a0bad425c75e6",
+      "masterPath": "/workspace/generated_audio/sera-shift/mixes/watch-private-act3_sera_watch.wav",
+      "masterSha256": "1eb8ed9f21482b16e90d20fa23832b8a3e1e3524880671afa7d252552084daa3",
+      "peak": 0.2540382742881775,
+      "voiceRms": 0.03495990112423897,
+      "bedRms": 0.0030653420835733414
+    },
+    {
+      "route": "watch-private",
+      "scene": "act3_sera_reply",
+      "text": "Sera comes back through the doorway and takes her place on the source side. You have left the closed folders where they were.\n\n\"I heard the voices from the wall instead of through this doorway. Thank you for staying.\"\n\nShe draws the blank cover sheet toward you. The account is still yours to prepare or leave.",
+      "lines": [
+        {
+          "id": "voice-campaign-sera-shift-5ddc8dde0286",
+          "key": "80d967c9a3035f3f",
+          "scene": "act3_sera_reply",
+          "sceneSpeaker": "Sera",
+          "speaker": "Sera",
+          "quote": "I heard the voices from the wall instead of through this doorway. Thank you for staying.",
+          "text": "I heard the voices from the wall instead of through this doorway. Thank you for staying.",
+          "part": 0,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-sera-shift-5ddc8dde0286.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "ward",
+        "district": "ward"
+      },
+      "art": {
+        "src": "/art/sera-hearing.jpg",
+        "small": "/art/sera-hearing-small.jpg",
+        "caption": "Ward Nine \u00b7 the account can still change",
+        "description": "Sera holds a pencil over a blank cover sheet at the rain-lit records table. A closed folder stays separate beside her hand; the recorder shows no operating status, private identity or filed outcome."
+      },
+      "clips": [
+        {
+          "id": "voice-campaign-sera-shift-5ddc8dde0286",
+          "key": "80d967c9a3035f3f",
+          "scene": "act3_sera_reply",
+          "sceneSpeaker": "Sera",
+          "speaker": "Sera",
+          "quote": "I heard the voices from the wall instead of through this doorway. Thank you for staying.",
+          "text": "I heard the voices from the wall instead of through this doorway. Thank you for staying.",
+          "part": 0,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-sera-shift-5ddc8dde0286.mp3",
+          "sha256": "53c10e0d73ec21fa6109405d118247738e605fad99676e10ca2d86fe1e013f88",
+          "startSeconds": 0.0,
+          "durationSeconds": 5.107333333333333
+        }
+      ],
+      "startSeconds": 65.17658333333334,
+      "durationSeconds": 5.107333333333333,
+      "musicPath": "public/audio/theme-ward.flac",
+      "musicSha256": "46e9fd33430a61b4a36645c45fcd88bbc616e57e4643cb2e61aaacc0b62cfc39",
+      "ambiencePath": "public/audio/ambience-ward.flac",
+      "ambienceSha256": "a3cb998a109b169e7da44fd4f6f1f9299b01a8fe477d04ec681a0bad425c75e6",
+      "masterPath": "/workspace/generated_audio/sera-shift/mixes/watch-private-act3_sera_reply.wav",
+      "masterSha256": "f1e8b3dee10b55b2332f80a55402d795f18c96223cfcadb49984af66323d1cb3",
+      "peak": 0.2993912696838379,
+      "voiceRms": 0.0385134257376194,
+      "bedRms": 0.003223602892830968
+    },
+    {
+      "route": "watch-private",
+      "scene": "act3_testimony_review",
+      "text": "Sera puts a blank public cover sheet beside the recorder and your sources. 'The names can be spoken either way. This is a different promise: an account someone can question after you leave.'\n\nFirst decide what the sources support. Then decide whose words can appear on the sheet.",
+      "lines": [
+        {
+          "key": "c9cfdae9c7f6db05",
+          "id": "voice-sera-hearing-purpose",
+          "scene": "act3_testimony_review",
+          "sceneSpeaker": "Sera",
+          "speaker": "Sera",
+          "quote": "The names can be spoken either way. This is a different promise: an account someone can question after you leave.",
+          "text": "The names can be spoken either way. This is a different promise: an account someone can question after you leave.",
+          "part": 0,
+          "sourceGain": 0.73790423,
+          "path": "public/audio/voice-sera-hearing-purpose.wav"
+        }
+      ],
+      "sound": {
+        "mood": "quiet",
+        "district": "ward"
+      },
+      "art": {
+        "src": "/art/sera-hearing.jpg",
+        "small": "/art/sera-hearing-small.jpg",
+        "caption": "Ward Nine \u00b7 the account can still change",
+        "description": "Sera holds a pencil over a blank cover sheet at the rain-lit records table. A closed folder stays separate beside her hand; the recorder shows no operating status, private identity or filed outcome."
+      },
+      "clips": [
+        {
+          "key": "c9cfdae9c7f6db05",
+          "id": "voice-sera-hearing-purpose",
+          "scene": "act3_testimony_review",
+          "sceneSpeaker": "Sera",
+          "speaker": "Sera",
+          "quote": "The names can be spoken either way. This is a different promise: an account someone can question after you leave.",
+          "text": "The names can be spoken either way. This is a different promise: an account someone can question after you leave.",
+          "part": 0,
+          "sourceGain": 0.73790423,
+          "path": "public/audio/voice-sera-hearing-purpose.wav",
+          "sha256": "0da826f7f4f705f3d4633137138386e1cef7a2b38cdf81e4991a5cf4de57c668",
+          "startSeconds": 0.0,
+          "durationSeconds": 7.318
+        }
+      ],
+      "startSeconds": 71.28391666666667,
+      "durationSeconds": 7.318,
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-ward.flac",
+      "ambienceSha256": "a3cb998a109b169e7da44fd4f6f1f9299b01a8fe477d04ec681a0bad425c75e6",
+      "masterPath": "/workspace/generated_audio/sera-shift/mixes/watch-private-act3_testimony_review.wav",
+      "masterSha256": "57a2b25c956178c2a8e6870a716f84ea50489958c659bf35aaf6badbac50963e",
+      "peak": 0.26114365458488464,
+      "voiceRms": 0.03591342270374298,
+      "bedRms": 0.0016726937610656023
+    },
+    {
+      "route": "watch-private",
+      "scene": "act3_testimony_consent",
+      "text": "Sera holds Nia's approved recording. 'She agreed to record it. That wasn't permission for every public use.' You can ask through the clinic relay, or keep her words out of the hearing. A safe room bought no quotation rights.",
+      "lines": [
+        {
+          "key": "e9db74e0fb93b6d1",
+          "id": "voice-campaign-sera-ab673ed27369",
+          "scene": "act3_testimony_consent",
+          "sceneSpeaker": "Sera",
+          "speaker": "Sera",
+          "quote": "She agreed to record it. That wasn't permission for every public use.",
+          "text": "She agreed to record it. That wasn't permission for every public use.",
+          "part": 0,
+          "sourceGain": 0.81002794,
+          "path": "public/audio/voice-campaign-sera-ab673ed27369.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "quiet",
+        "district": "ward"
+      },
+      "art": {
+        "src": "/art/hearing-table.jpg",
+        "small": "/art/hearing-table-small.jpg",
+        "caption": "Ward Nine \u00b7 a public account, not yet filed",
+        "description": "An untouched pencil, blank cover sheets, a closed privacy sleeve and an unmarked recorder wait on a worn table beside three empty chairs and a rainy window."
+      },
+      "clips": [
+        {
+          "key": "e9db74e0fb93b6d1",
+          "id": "voice-campaign-sera-ab673ed27369",
+          "scene": "act3_testimony_consent",
+          "sceneSpeaker": "Sera",
+          "speaker": "Sera",
+          "quote": "She agreed to record it. That wasn't permission for every public use.",
+          "text": "She agreed to record it. That wasn't permission for every public use.",
+          "part": 0,
+          "sourceGain": 0.81002794,
+          "path": "public/audio/voice-campaign-sera-ab673ed27369.mp3",
+          "sha256": "dcf495058b3624bfc578c6d66dbb0b313e96249b88a9deafecc295c360aa78e7",
+          "startSeconds": 0.0,
+          "durationSeconds": 4.660666666666667
+        }
+      ],
+      "startSeconds": 79.60191666666667,
+      "durationSeconds": 4.660666666666667,
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-ward.flac",
+      "ambienceSha256": "a3cb998a109b169e7da44fd4f6f1f9299b01a8fe477d04ec681a0bad425c75e6",
+      "masterPath": "/workspace/generated_audio/sera-shift/mixes/watch-private-act3_testimony_consent.wav",
+      "masterSha256": "3441e70a2f98f9a1e05a21836455f36565bb45ad9a743c50d65e8d5e3ae0ecd1",
+      "peak": 0.27491819858551025,
+      "voiceRms": 0.03651862218976021,
+      "bedRms": 0.0018029948696494102
+    },
+    {
+      "route": "watch-private",
+      "scene": "act3_testimony_nia",
+      "text": "Nia listens to the proposed cover sheet through Sera's relay. 'Use the words I approved. You can name me as the source through Sera. No address, no new story about how brave I was, and no sentence saying the room made me owe you this.'\n\nShe authorizes this account. You can accept those limits or leave the recording private. The recording will not be opened to public circulation until the hearing is filed.",
+      "lines": [
+        {
+          "key": "7e44e6048adce128",
+          "id": "voice-nia-public-terms",
+          "scene": "act3_testimony_nia",
+          "sceneSpeaker": "Nia Pell",
+          "speaker": "Nia Pell",
+          "quote": "Use the words I approved. You can name me as the source through Sera. No address, no new story about how brave I was, and no sentence saying the room made me owe you this.",
+          "text": "Use the words I approved. You can name me as the source through Sera. No address, no new story about how brave I was, and no sentence saying the room made me owe you this.",
+          "part": 0,
+          "sourceGain": 0.90157114,
+          "path": "public/audio/voice-nia-public-terms.wav"
+        }
+      ],
+      "sound": {
+        "mood": "quiet",
+        "district": "witness"
+      },
+      "art": {
+        "src": "/art/clinic-relay.jpg",
+        "small": "/art/clinic-relay-small.jpg",
+        "caption": "Clinic \u00b7 the private relay",
+        "description": "An unmarked handset and closed notebook sit beside a privacy curtain and rain-streaked clinic window."
+      },
+      "clips": [
+        {
+          "key": "7e44e6048adce128",
+          "id": "voice-nia-public-terms",
+          "scene": "act3_testimony_nia",
+          "sceneSpeaker": "Nia Pell",
+          "speaker": "Nia Pell",
+          "quote": "Use the words I approved. You can name me as the source through Sera. No address, no new story about how brave I was, and no sentence saying the room made me owe you this.",
+          "text": "Use the words I approved. You can name me as the source through Sera. No address, no new story about how brave I was, and no sentence saying the room made me owe you this.",
+          "part": 0,
+          "sourceGain": 0.90157114,
+          "path": "public/audio/voice-nia-public-terms.wav",
+          "sha256": "831dc6693059bc1bcb308cc159dbf8f1bb0fb50dd49fc11b72112ecbd723ac72",
+          "startSeconds": 0.0,
+          "durationSeconds": 12.216
+        }
+      ],
+      "startSeconds": 85.26258333333334,
+      "durationSeconds": 12.216,
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-witness.flac",
+      "ambienceSha256": "e3fe2b2e0e09a2c36ec5566c63e469de416cdae7c8fbf9d25411bf7d46d9e1a3",
+      "masterPath": "/workspace/generated_audio/sera-shift/mixes/watch-private-act3_testimony_nia.wav",
+      "masterSha256": "0791324a06aede91f044d115389809690bdff1814d8bf4309d57105fdc3bc306",
+      "peak": 0.31995683908462524,
+      "voiceRms": 0.0399717316031456,
+      "bedRms": 0.001786285312846303
+    },
+    {
+      "route": "watch-private",
+      "scene": "act3_testimony_hearing",
+      "text": "Ives places his folio beside the recorder. 'A maintenance signature isn't an issuing key. A witness isn't a server. What exactly are you asking people to believe?'\n\nSera leaves the recorder running. The mechanic waits for the source you can point to; a witness's address stays off the table.",
+      "lines": [
+        {
+          "key": "12cdbd3602fe040e",
+          "id": "voice-campaign-ives-hearing-challenge-performance",
+          "scene": "act3_testimony_hearing",
+          "sceneSpeaker": "Ives",
+          "speaker": "Ives",
+          "quote": "A maintenance signature isn't an issuing key. A witness isn't a server. What exactly are you asking people to believe?",
+          "text": "A maintenance signature isn't an issuing key. A witness isn't a server. What exactly are you asking people to believe?",
+          "part": 0,
+          "sourceGain": 0.66834392,
+          "path": "public/audio/voice-campaign-ives-hearing-challenge-performance.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "quiet",
+        "district": "ward"
+      },
+      "art": {
+        "src": "/art/ives-hearing.jpg",
+        "small": "/art/ives-hearing-small.jpg",
+        "caption": "Ward Nine \u00b7 Ives asks for the source",
+        "description": "Ives faces the visitor at the rain-lit records table, a closed black folio beside the unmarked running recorder; blank cover papers and a pencil wait beside an empty chair."
+      },
+      "clips": [
+        {
+          "key": "12cdbd3602fe040e",
+          "id": "voice-campaign-ives-hearing-challenge-performance",
+          "scene": "act3_testimony_hearing",
+          "sceneSpeaker": "Ives",
+          "speaker": "Ives",
+          "quote": "A maintenance signature isn't an issuing key. A witness isn't a server. What exactly are you asking people to believe?",
+          "text": "A maintenance signature isn't an issuing key. A witness isn't a server. What exactly are you asking people to believe?",
+          "part": 0,
+          "sourceGain": 0.66834392,
+          "path": "public/audio/voice-campaign-ives-hearing-challenge-performance.mp3",
+          "sha256": "098b4820461ecb996f2da469d7ce513916f773506ebb74e4ce8dab2f9363ad8b",
+          "startSeconds": 0.0,
+          "durationSeconds": 8.310666666666666
+        }
+      ],
+      "startSeconds": 98.47858333333333,
+      "durationSeconds": 8.310666666666666,
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-ward.flac",
+      "ambienceSha256": "a3cb998a109b169e7da44fd4f6f1f9299b01a8fe477d04ec681a0bad425c75e6",
+      "masterPath": "/workspace/generated_audio/sera-shift/mixes/watch-private-act3_testimony_hearing.wav",
+      "masterSha256": "1069b663042b52cb9050fe82d52c0ea18cc3441cb901a186586b94198cd65782",
+      "peak": 0.20709164440631866,
+      "voiceRms": 0.038059063255786896,
+      "bedRms": 0.0016800195444375277
+    },
+    {
+      "route": "watch-private",
+      "scene": "act3_testimony_record",
+      "text": "Sera holds the cover sheet at the edge of the table. Nia's approved words can enter this account under the terms she set, with no address.\n\nSera asks whether to file the account or withdraw it. The names are still waiting at the wall.\n\nSera sets the question tray beside the public draft. \"I can take the table again. You do not have to stay here to make this account worth keeping.\"",
+      "lines": [
+        {
+          "id": "voice-campaign-sera-shift-47e105e137c8",
+          "key": "d398e33879ca530c",
+          "scene": "act3_testimony_record",
+          "sceneSpeaker": "Sera",
+          "speaker": "Sera",
+          "quote": "I can take the table again. You do not have to stay here to make this account worth keeping.",
+          "text": "I can take the table again. You do not have to stay here to make this account worth keeping.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-sera-shift-47e105e137c8.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "quiet",
+        "district": "ward"
+      },
+      "art": {
+        "src": "/art/sera-hearing.jpg",
+        "small": "/art/sera-hearing-small.jpg",
+        "caption": "Ward Nine \u00b7 the account can still change",
+        "description": "Sera holds a pencil over a blank cover sheet at the rain-lit records table. A closed folder stays separate beside her hand; the recorder shows no operating status, private identity or filed outcome."
+      },
+      "clips": [
+        {
+          "id": "voice-campaign-sera-shift-47e105e137c8",
+          "key": "d398e33879ca530c",
+          "scene": "act3_testimony_record",
+          "sceneSpeaker": "Sera",
+          "speaker": "Sera",
+          "quote": "I can take the table again. You do not have to stay here to make this account worth keeping.",
+          "text": "I can take the table again. You do not have to stay here to make this account worth keeping.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-sera-shift-47e105e137c8.mp3",
+          "sha256": "df02aa50d03fbd36acbcf853527de4735ccd9a518191886d8e3b987703cede29",
+          "startSeconds": 0.0,
+          "durationSeconds": 5.310666666666667
+        }
+      ],
+      "startSeconds": 107.78925,
+      "durationSeconds": 5.310666666666667,
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-ward.flac",
+      "ambienceSha256": "a3cb998a109b169e7da44fd4f6f1f9299b01a8fe477d04ec681a0bad425c75e6",
+      "masterPath": "/workspace/generated_audio/sera-shift/mixes/watch-private-act3_testimony_record.wav",
+      "masterSha256": "b0574742b483c7b5feeaa9853c6d06b84084097880462ed043f03b32e874fbd5",
+      "peak": 0.23898945748806,
+      "voiceRms": 0.0382198728621006,
+      "bedRms": 0.0017668073996901512
+    }
+  ]
+}

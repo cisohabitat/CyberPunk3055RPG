@@ -1,0 +1,55 @@
+{
+  "reason": "Preserve initial catalog-guard failures, CLI invocation error, offline audition path/extension errors, and preliminary campaign interruption. These are not final acceptance. The finalized source and isolated browser results are separately named.",
+  "preliminaryCampaignReports": [
+    "canceled.json",
+    "face-failed.json",
+    "nerve-handling-failed.json",
+    "nerve.json",
+    "archive-failed.json",
+    "names.json",
+    "deferred.json",
+    "denied.json"
+  ],
+  "observations": [
+    {
+      "path": "qa/editorial/sera-shift-diagnostics/source-first.txt",
+      "sha256": "92f92978c0b0ef7fc7b000146b9e3023946bda45af594cab436ecd097059b56d"
+    },
+    {
+      "path": "qa/editorial/sera-shift-diagnostics/browser-first.txt",
+      "sha256": "19bcfd62c8f163f40f774acdf89f4fe6611e96c711ba17f8a4acbd5134179e86"
+    },
+    {
+      "path": "qa/editorial/sera-shift-diagnostics/first-campaign-interruption.json",
+      "sha256": "add85e375ceb392f793b8a32db133a796323f6e7ab09d285cf9ad0b914e3560e"
+    },
+    {
+      "path": "qa/editorial/sera-shift-diagnostics/audition.txt",
+      "sha256": "780580a95c27a169aed4d931987b3bb99755c40fb49cc256737296e5dfc78e55"
+    },
+    {
+      "path": "qa/editorial/sera-shift-diagnostics/audition-corrected.txt",
+      "sha256": "5c333fbff742cc74fc66ebf7b9d08aa6e1aae8acbc3174e1af653aed390a4aa6"
+    },
+    {
+      "path": "qa/editorial/sera-shift-diagnostics/browser-chromium.txt",
+      "sha256": "474b46aaf4870f88a465f7911abc30201abfa1bd36bd6356590cf766781f17cb"
+    },
+    {
+      "path": "qa/editorial/sera-shift-diagnostics/final-chromium.txt",
+      "sha256": "463a1399af5250dbb016f3dbd0a15a7e8b3c943186c0b28b5b3e6a07fbb525b1"
+    },
+    {
+      "path": "qa/editorial/sera-shift-diagnostics/final-webkit.txt",
+      "sha256": "9be8c3a6b7ebd29aa042c1087b0f0be469eb2c343f387144a606b78e4477090b"
+    },
+    {
+      "path": "qa/editorial/sera-shift-diagnostics/source-release.txt",
+      "sha256": "8bc6cbe290c47c3c55f7c865cb6770414c469a06cbc781747378d07843f19f10"
+    },
+    {
+      "path": "qa/editorial/sera-shift-diagnostics/pilot-final-source.txt",
+      "sha256": "20fc79ec8b083b0a1ea74bd5e8661a07f9ed3f207b119f0597cff2bb6682d065"
+    }
+  ]
+}

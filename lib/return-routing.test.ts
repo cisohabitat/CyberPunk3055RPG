@@ -1,3 +1,4 @@
+import { withoutSeraArt } from '../qa/production/sera-shift-cohort';
 import { isConnectedPerformanceFile } from "../qa/production/connected-performance-media";
 import assert from 'node:assert/strict';import{it}from'node:test';import{readFileSync,readdirSync}from'node:fs';import{createHash}from'node:crypto';
 import{createCharacter,getScene,presentChoices,commitChoice,sceneText}from'./engine';import{replayCampaign,type ReplaySpec}from'./story-replay';import{routeCheckpoint}from'../qa/production/route-checkpoint';import{importRun,exportRun}from'./vault';
@@ -16,7 +17,7 @@ it('preserves all231 preceding campaigns,16441 exact visits,827 media bytes and 
  assert.equal(rows.length,16441);assert.equal(hash(JSON.stringify(rows)),phase.baseline.campaignSha256);
  assert.deepEqual([...files('public/art'),...files('public/audio')].filter(p=>!phase.newMedia.includes(p)).sort().map(path=>({path,sha256:hash(readFileSync(path))})),phase.baseline.media);
  for(const m of phase.baseline.manifests)assert.equal(hash(readFileSync(m.path==='qa/media/scene-art.json'?phase.baseline.sceneArt.path:m.path)),m.sha256,m.path);
- const restored=structuredClone(art);restored.decisions=restored.decisions.filter(r=>!r.scenes.some(id=>phase.newScenes.includes(id)));for(const r of restored.speakingPortraits)r.scenes=r.scenes.filter(id=>!phase.newScenes.includes(id));assert.deepEqual(restored,previousArt);
+ const restored=withoutSeraArt(art);restored.decisions=restored.decisions.filter(r=>!r.scenes.some(id=>phase.newScenes.includes(id)));for(const r of restored.speakingPortraits)r.scenes=r.scenes.filter(id=>!phase.newScenes.includes(id));assert.deepEqual(restored,previousArt);
  assert.equal(hash(readFileSync('qa/media/art-gallery.json')),phase.baseline.artGallery.sha256);
 });
 it('keeps inspection, conversation and cancellation free; commits the real two-action methods once',()=>{

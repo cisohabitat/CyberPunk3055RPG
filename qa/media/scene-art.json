@@ -1065,6 +1065,17 @@
         "act2_return_routing_result",
         "act3_return_routing_return"
       ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/sera-hearing.jpg",
+      "reason": "Reuse the reviewed neutral Sera records-table painting at conversation entry and after return. Closed folders and blank papers reveal no source, signature, quoted witness or filing outcome. The art represents the table conversation, never Sera simultaneously at the wall. No new setting or major visual event needs a new primary painting.",
+      "scenes": [
+        "act3_sera_shift",
+        "act3_sera_carry",
+        "act3_sera_watch",
+        "act3_sera_reply"
+      ]
     }
   ],
   "variants": [
@@ -1411,7 +1422,12 @@
         "ending_names",
         "ending_quiet",
         "ending_witness",
-        "ward_wall"
+        "ward_wall",
+        "act3_sera_shift",
+        "act3_sera_carry",
+        "act3_sera_watch",
+        "act3_sera_reply",
+        "act3_testimony_record"
       ],
       "reason": "Reviewed portrait for this actual actor during explicitly bound, revealed audible dialogue. Existing scene/flag expressions apply to this actor only; the scene’s setting and canonical story speaker remain unchanged."
     },

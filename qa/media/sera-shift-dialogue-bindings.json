@@ -1,0 +1,72 @@
+[
+  {
+    "id": "voice-campaign-sera-shift-9d3da67ec4a0",
+    "key": "c5afd75e7c77dcd3",
+    "scene": "act3_sera_shift",
+    "sceneSpeaker": "Sera",
+    "speaker": "Sera",
+    "quote": "I keep sending people to the wall. I would like to stand there myself for once. But I cannot leave this table open.",
+    "text": "I keep sending people to the wall. I would like to stand there myself for once. But I cannot leave this table open.",
+    "part": 0
+  },
+  {
+    "id": "voice-campaign-sera-shift-e3d3b032a010",
+    "key": "900246b81fcf9e76",
+    "scene": "act3_sera_carry",
+    "sceneSpeaker": "Sera",
+    "speaker": "Sera",
+    "quote": "Take the blank cards. Bring back the empty tray too. People should have somewhere to put a question when they find one.",
+    "text": "Take the blank cards. Bring back the empty tray too. People should have somewhere to put a question when they find one.",
+    "part": 0
+  },
+  {
+    "id": "voice-campaign-sera-shift-e11348e47d49",
+    "key": "ca638c33f6720dd8",
+    "scene": "act3_sera_watch",
+    "sceneSpeaker": "Sera",
+    "speaker": "Sera",
+    "quote": "Stay on this side. If someone asks for a source, ask them to wait for me. You do not have to answer for anybody.",
+    "text": "Stay on this side. If someone asks for a source, ask them to wait for me. You do not have to answer for anybody.",
+    "part": 0
+  },
+  {
+    "id": "voice-campaign-sera-shift-3c226a939b14",
+    "key": "61b1b9941f9db539",
+    "scene": "act3_sera_reply",
+    "sceneSpeaker": "Sera",
+    "speaker": "Sera",
+    "quote": "You brought the tray back empty. That is all right. An empty place for a question is still worth keeping.",
+    "text": "You brought the tray back empty. That is all right. An empty place for a question is still worth keeping.",
+    "part": 0
+  },
+  {
+    "id": "voice-campaign-sera-shift-5ddc8dde0286",
+    "key": "80d967c9a3035f3f",
+    "scene": "act3_sera_reply",
+    "sceneSpeaker": "Sera",
+    "speaker": "Sera",
+    "quote": "I heard the voices from the wall instead of through this doorway. Thank you for staying.",
+    "text": "I heard the voices from the wall instead of through this doorway. Thank you for staying.",
+    "part": 0
+  },
+  {
+    "id": "voice-campaign-sera-shift-03e8041dbaa0",
+    "key": "6f520f078bdc3441",
+    "scene": "act3_testimony_record",
+    "sceneSpeaker": "Sera",
+    "speaker": "Sera",
+    "quote": "Leave a space beside the account. Someone may come back with a question after we have gone.",
+    "text": "Leave a space beside the account. Someone may come back with a question after we have gone.",
+    "part": 1
+  },
+  {
+    "id": "voice-campaign-sera-shift-47e105e137c8",
+    "key": "d398e33879ca530c",
+    "scene": "act3_testimony_record",
+    "sceneSpeaker": "Sera",
+    "speaker": "Sera",
+    "quote": "I can take the table again. You do not have to stay here to make this account worth keeping.",
+    "text": "I can take the table again. You do not have to stay here to make this account worth keeping.",
+    "part": 1
+  }
+]

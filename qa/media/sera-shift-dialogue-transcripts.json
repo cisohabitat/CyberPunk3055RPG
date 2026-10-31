@@ -1,0 +1,805 @@
+{
+  "method": "Unprompted base.en CPU int8, beam5, no initial prompt/previous-text conditioning. Case/apostrophe/punctuation normalization only. ASR is not phonetic or acting acceptance.",
+  "modelFiles": [
+    {
+      "path": "config.json",
+      "sha256": "f3bc3821e9fc76a27bae538e11ae5b677dcdd352b4600429ce7951d398569aeb"
+    },
+    {
+      "path": "model.bin",
+      "sha256": "2a166925539a16005f14ff328359f9b9adb9dc4fb631bb3b227526862e93e2ef"
+    },
+    {
+      "path": "tokenizer.json",
+      "sha256": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df"
+    },
+    {
+      "path": "vocabulary.txt",
+      "sha256": "ff77588746d3a2595d32ab5b69ffd7b95ce2441ac57533cb66fc3eb575a115cf"
+    }
+  ],
+  "lines": [
+    {
+      "id": "voice-campaign-sera-shift-9d3da67ec4a0",
+      "text": "I keep sending people to the wall. I would like to stand there myself for once. But I cannot leave this table open.",
+      "path": "/workspace/saint-shard-fix/public/audio/voice-campaign-sera-shift-9d3da67ec4a0.mp3",
+      "sha256": "7000d312ad041bf1d03f872bc8fd3143328f5516ef1378262179b59612611ba7",
+      "transcription": "I keep sending people to the wall. I would like to stand there myself for once, but I cannot leave this table open.",
+      "exactNormalizedWords": true,
+      "durationSeconds": 7.3913125,
+      "words": [
+        {
+          "word": " I",
+          "start": 0.0,
+          "end": 0.22
+        },
+        {
+          "word": " keep",
+          "start": 0.22,
+          "end": 0.42
+        },
+        {
+          "word": " sending",
+          "start": 0.42,
+          "end": 0.76
+        },
+        {
+          "word": " people",
+          "start": 0.76,
+          "end": 1.24
+        },
+        {
+          "word": " to",
+          "start": 1.24,
+          "end": 1.44
+        },
+        {
+          "word": " the",
+          "start": 1.44,
+          "end": 1.54
+        },
+        {
+          "word": " wall.",
+          "start": 1.54,
+          "end": 1.78
+        },
+        {
+          "word": " I",
+          "start": 2.48,
+          "end": 2.56
+        },
+        {
+          "word": " would",
+          "start": 2.56,
+          "end": 2.66
+        },
+        {
+          "word": " like",
+          "start": 2.66,
+          "end": 2.78
+        },
+        {
+          "word": " to",
+          "start": 2.78,
+          "end": 2.92
+        },
+        {
+          "word": " stand",
+          "start": 2.92,
+          "end": 3.14
+        },
+        {
+          "word": " there",
+          "start": 3.14,
+          "end": 3.4
+        },
+        {
+          "word": " myself",
+          "start": 3.4,
+          "end": 3.78
+        },
+        {
+          "word": " for",
+          "start": 3.78,
+          "end": 4.1
+        },
+        {
+          "word": " once,",
+          "start": 4.1,
+          "end": 4.32
+        },
+        {
+          "word": " but",
+          "start": 4.9,
+          "end": 5.14
+        },
+        {
+          "word": " I",
+          "start": 5.14,
+          "end": 5.26
+        },
+        {
+          "word": " cannot",
+          "start": 5.26,
+          "end": 5.44
+        },
+        {
+          "word": " leave",
+          "start": 5.44,
+          "end": 5.86
+        },
+        {
+          "word": " this",
+          "start": 5.86,
+          "end": 6.1
+        },
+        {
+          "word": " table",
+          "start": 6.1,
+          "end": 6.34
+        },
+        {
+          "word": " open.",
+          "start": 6.34,
+          "end": 6.82
+        }
+      ]
+    },
+    {
+      "id": "voice-campaign-sera-shift-e3d3b032a010",
+      "text": "Take the blank cards. Bring back the empty tray too. People should have somewhere to put a question when they find one.",
+      "path": "/workspace/saint-shard-fix/public/audio/voice-campaign-sera-shift-e3d3b032a010.mp3",
+      "sha256": "021bb7ef3f308f734e01fc1ba75e346094f6115e81403f476b9830110cf7d77a",
+      "transcription": "Take the blank cards. Bring back the empty tray too. People should have somewhere to put a question when they find one.",
+      "exactNormalizedWords": true,
+      "durationSeconds": 7.2406875,
+      "words": [
+        {
+          "word": " Take",
+          "start": 0.0,
+          "end": 0.26
+        },
+        {
+          "word": " the",
+          "start": 0.26,
+          "end": 0.44
+        },
+        {
+          "word": " blank",
+          "start": 0.44,
+          "end": 0.62
+        },
+        {
+          "word": " cards.",
+          "start": 0.62,
+          "end": 1.04
+        },
+        {
+          "word": " Bring",
+          "start": 1.86,
+          "end": 1.88
+        },
+        {
+          "word": " back",
+          "start": 1.88,
+          "end": 2.18
+        },
+        {
+          "word": " the",
+          "start": 2.18,
+          "end": 2.42
+        },
+        {
+          "word": " empty",
+          "start": 2.42,
+          "end": 2.64
+        },
+        {
+          "word": " tray",
+          "start": 2.64,
+          "end": 3.08
+        },
+        {
+          "word": " too.",
+          "start": 3.08,
+          "end": 3.38
+        },
+        {
+          "word": " People",
+          "start": 4.06,
+          "end": 4.24
+        },
+        {
+          "word": " should",
+          "start": 4.24,
+          "end": 4.56
+        },
+        {
+          "word": " have",
+          "start": 4.56,
+          "end": 4.68
+        },
+        {
+          "word": " somewhere",
+          "start": 4.68,
+          "end": 4.9
+        },
+        {
+          "word": " to",
+          "start": 4.9,
+          "end": 5.14
+        },
+        {
+          "word": " put",
+          "start": 5.14,
+          "end": 5.28
+        },
+        {
+          "word": " a",
+          "start": 5.28,
+          "end": 5.32
+        },
+        {
+          "word": " question",
+          "start": 5.32,
+          "end": 5.64
+        },
+        {
+          "word": " when",
+          "start": 5.64,
+          "end": 5.94
+        },
+        {
+          "word": " they",
+          "start": 5.94,
+          "end": 6.08
+        },
+        {
+          "word": " find",
+          "start": 6.08,
+          "end": 6.3
+        },
+        {
+          "word": " one.",
+          "start": 6.3,
+          "end": 6.76
+        }
+      ]
+    },
+    {
+      "id": "voice-campaign-sera-shift-e11348e47d49",
+      "text": "Stay on this side. If someone asks for a source, ask them to wait for me. You do not have to answer for anybody.",
+      "path": "/workspace/saint-shard-fix/public/audio/voice-campaign-sera-shift-e11348e47d49.mp3",
+      "sha256": "d3aff575f0c3c63709f356a123962a8a2b512f90aeca810c837b138e5800cc99",
+      "transcription": "Stay on this side. If someone asks for a source, ask them to wait for me. You do not have to answer for anybody.",
+      "exactNormalizedWords": true,
+      "durationSeconds": 7.293375,
+      "words": [
+        {
+          "word": " Stay",
+          "start": 0.0,
+          "end": 0.28
+        },
+        {
+          "word": " on",
+          "start": 0.28,
+          "end": 0.46
+        },
+        {
+          "word": " this",
+          "start": 0.46,
+          "end": 0.56
+        },
+        {
+          "word": " side.",
+          "start": 0.56,
+          "end": 0.96
+        },
+        {
+          "word": " If",
+          "start": 1.66,
+          "end": 1.72
+        },
+        {
+          "word": " someone",
+          "start": 1.72,
+          "end": 1.94
+        },
+        {
+          "word": " asks",
+          "start": 1.94,
+          "end": 2.32
+        },
+        {
+          "word": " for",
+          "start": 2.32,
+          "end": 2.58
+        },
+        {
+          "word": " a",
+          "start": 2.58,
+          "end": 2.7
+        },
+        {
+          "word": " source,",
+          "start": 2.7,
+          "end": 3.04
+        },
+        {
+          "word": " ask",
+          "start": 3.36,
+          "end": 3.52
+        },
+        {
+          "word": " them",
+          "start": 3.52,
+          "end": 3.8
+        },
+        {
+          "word": " to",
+          "start": 3.8,
+          "end": 3.94
+        },
+        {
+          "word": " wait",
+          "start": 3.94,
+          "end": 4.14
+        },
+        {
+          "word": " for",
+          "start": 4.14,
+          "end": 4.38
+        },
+        {
+          "word": " me.",
+          "start": 4.38,
+          "end": 4.54
+        },
+        {
+          "word": " You",
+          "start": 5.0,
+          "end": 5.14
+        },
+        {
+          "word": " do",
+          "start": 5.14,
+          "end": 5.24
+        },
+        {
+          "word": " not",
+          "start": 5.24,
+          "end": 5.4
+        },
+        {
+          "word": " have",
+          "start": 5.4,
+          "end": 5.6
+        },
+        {
+          "word": " to",
+          "start": 5.6,
+          "end": 5.74
+        },
+        {
+          "word": " answer",
+          "start": 5.74,
+          "end": 6.08
+        },
+        {
+          "word": " for",
+          "start": 6.08,
+          "end": 6.3
+        },
+        {
+          "word": " anybody.",
+          "start": 6.3,
+          "end": 6.6
+        }
+      ]
+    },
+    {
+      "id": "voice-campaign-sera-shift-3c226a939b14",
+      "text": "You brought the tray back empty. That is all right. An empty place for a question is still worth keeping.",
+      "path": "/workspace/saint-shard-fix/public/audio/voice-campaign-sera-shift-3c226a939b14.mp3",
+      "sha256": "47589aa7143709cc5503fc41d49f2882a081f2790d4e18cd54240f3142c35276",
+      "transcription": "You brought the tray back empty. That is all right. An empty place for a question is still worth keeping.",
+      "exactNormalizedWords": true,
+      "durationSeconds": 6.515375,
+      "words": [
+        {
+          "word": " You",
+          "start": 0.0,
+          "end": 0.2
+        },
+        {
+          "word": " brought",
+          "start": 0.2,
+          "end": 0.4
+        },
+        {
+          "word": " the",
+          "start": 0.4,
+          "end": 0.56
+        },
+        {
+          "word": " tray",
+          "start": 0.56,
+          "end": 0.78
+        },
+        {
+          "word": " back",
+          "start": 0.78,
+          "end": 1.08
+        },
+        {
+          "word": " empty.",
+          "start": 1.08,
+          "end": 1.5
+        },
+        {
+          "word": " That",
+          "start": 2.14,
+          "end": 2.26
+        },
+        {
+          "word": " is",
+          "start": 2.26,
+          "end": 2.38
+        },
+        {
+          "word": " all",
+          "start": 2.38,
+          "end": 2.56
+        },
+        {
+          "word": " right.",
+          "start": 2.56,
+          "end": 2.84
+        },
+        {
+          "word": " An",
+          "start": 3.44,
+          "end": 3.56
+        },
+        {
+          "word": " empty",
+          "start": 3.56,
+          "end": 3.8
+        },
+        {
+          "word": " place",
+          "start": 3.8,
+          "end": 4.14
+        },
+        {
+          "word": " for",
+          "start": 4.14,
+          "end": 4.38
+        },
+        {
+          "word": " a",
+          "start": 4.38,
+          "end": 4.44
+        },
+        {
+          "word": " question",
+          "start": 4.44,
+          "end": 4.78
+        },
+        {
+          "word": " is",
+          "start": 4.78,
+          "end": 5.02
+        },
+        {
+          "word": " still",
+          "start": 5.02,
+          "end": 5.22
+        },
+        {
+          "word": " worth",
+          "start": 5.22,
+          "end": 5.48
+        },
+        {
+          "word": " keeping.",
+          "start": 5.48,
+          "end": 5.84
+        }
+      ]
+    },
+    {
+      "id": "voice-campaign-sera-shift-5ddc8dde0286",
+      "text": "I heard the voices from the wall instead of through this doorway. Thank you for staying.",
+      "path": "/workspace/saint-shard-fix/public/audio/voice-campaign-sera-shift-5ddc8dde0286.mp3",
+      "sha256": "53c10e0d73ec21fa6109405d118247738e605fad99676e10ca2d86fe1e013f88",
+      "transcription": "I heard the voices from the wall instead of through this doorway. Thank you for staying.",
+      "exactNormalizedWords": true,
+      "durationSeconds": 5.107375,
+      "words": [
+        {
+          "word": " I",
+          "start": 0.0,
+          "end": 0.16
+        },
+        {
+          "word": " heard",
+          "start": 0.16,
+          "end": 0.38
+        },
+        {
+          "word": " the",
+          "start": 0.38,
+          "end": 0.52
+        },
+        {
+          "word": " voices",
+          "start": 0.52,
+          "end": 0.76
+        },
+        {
+          "word": " from",
+          "start": 0.76,
+          "end": 1.14
+        },
+        {
+          "word": " the",
+          "start": 1.14,
+          "end": 1.28
+        },
+        {
+          "word": " wall",
+          "start": 1.28,
+          "end": 1.52
+        },
+        {
+          "word": " instead",
+          "start": 1.52,
+          "end": 1.92
+        },
+        {
+          "word": " of",
+          "start": 1.92,
+          "end": 2.14
+        },
+        {
+          "word": " through",
+          "start": 2.14,
+          "end": 2.32
+        },
+        {
+          "word": " this",
+          "start": 2.32,
+          "end": 2.52
+        },
+        {
+          "word": " doorway.",
+          "start": 2.52,
+          "end": 2.84
+        },
+        {
+          "word": " Thank",
+          "start": 3.68,
+          "end": 3.82
+        },
+        {
+          "word": " you",
+          "start": 3.82,
+          "end": 4.02
+        },
+        {
+          "word": " for",
+          "start": 4.02,
+          "end": 4.16
+        },
+        {
+          "word": " staying.",
+          "start": 4.16,
+          "end": 4.48
+        }
+      ]
+    },
+    {
+      "id": "voice-campaign-sera-shift-03e8041dbaa0",
+      "text": "Leave a space beside the account. Someone may come back with a question after we have gone.",
+      "path": "/workspace/saint-shard-fix/public/audio/voice-campaign-sera-shift-03e8041dbaa0.mp3",
+      "sha256": "87117f4a4b1e5d856c779e0e9c6e0e4e437dd72fc1ceaf5c81cd2981bafa7660",
+      "transcription": "Leave a space beside the account. Someone may come back with a question after we have gone.",
+      "exactNormalizedWords": true,
+      "durationSeconds": 5.716,
+      "words": [
+        {
+          "word": " Leave",
+          "start": 0.0,
+          "end": 0.22
+        },
+        {
+          "word": " a",
+          "start": 0.22,
+          "end": 0.36
+        },
+        {
+          "word": " space",
+          "start": 0.36,
+          "end": 0.76
+        },
+        {
+          "word": " beside",
+          "start": 0.76,
+          "end": 1.16
+        },
+        {
+          "word": " the",
+          "start": 1.16,
+          "end": 1.38
+        },
+        {
+          "word": " account.",
+          "start": 1.38,
+          "end": 1.62
+        },
+        {
+          "word": " Someone",
+          "start": 2.54,
+          "end": 2.64
+        },
+        {
+          "word": " may",
+          "start": 2.64,
+          "end": 2.96
+        },
+        {
+          "word": " come",
+          "start": 2.96,
+          "end": 3.16
+        },
+        {
+          "word": " back",
+          "start": 3.16,
+          "end": 3.44
+        },
+        {
+          "word": " with",
+          "start": 3.44,
+          "end": 3.62
+        },
+        {
+          "word": " a",
+          "start": 3.62,
+          "end": 3.68
+        },
+        {
+          "word": " question",
+          "start": 3.68,
+          "end": 4.08
+        },
+        {
+          "word": " after",
+          "start": 4.08,
+          "end": 4.54
+        },
+        {
+          "word": " we",
+          "start": 4.54,
+          "end": 4.72
+        },
+        {
+          "word": " have",
+          "start": 4.72,
+          "end": 4.86
+        },
+        {
+          "word": " gone.",
+          "start": 4.86,
+          "end": 5.06
+        }
+      ]
+    },
+    {
+      "id": "voice-campaign-sera-shift-47e105e137c8",
+      "text": "I can take the table again. You do not have to stay here to make this account worth keeping.",
+      "path": "/workspace/saint-shard-fix/public/audio/voice-campaign-sera-shift-47e105e137c8.mp3",
+      "sha256": "df02aa50d03fbd36acbcf853527de4735ccd9a518191886d8e3b987703cede29",
+      "transcription": "I can take the table again. You do not have to stay here to make this account worth keeping.",
+      "exactNormalizedWords": true,
+      "durationSeconds": 5.3106875,
+      "words": [
+        {
+          "word": " I",
+          "start": 0.0,
+          "end": 0.18
+        },
+        {
+          "word": " can",
+          "start": 0.18,
+          "end": 0.32
+        },
+        {
+          "word": " take",
+          "start": 0.32,
+          "end": 0.54
+        },
+        {
+          "word": " the",
+          "start": 0.54,
+          "end": 0.74
+        },
+        {
+          "word": " table",
+          "start": 0.74,
+          "end": 0.98
+        },
+        {
+          "word": " again.",
+          "start": 0.98,
+          "end": 1.38
+        },
+        {
+          "word": " You",
+          "start": 1.98,
+          "end": 2.12
+        },
+        {
+          "word": " do",
+          "start": 2.12,
+          "end": 2.2
+        },
+        {
+          "word": " not",
+          "start": 2.2,
+          "end": 2.34
+        },
+        {
+          "word": " have",
+          "start": 2.34,
+          "end": 2.52
+        },
+        {
+          "word": " to",
+          "start": 2.52,
+          "end": 2.68
+        },
+        {
+          "word": " stay",
+          "start": 2.68,
+          "end": 2.88
+        },
+        {
+          "word": " here",
+          "start": 2.88,
+          "end": 3.12
+        },
+        {
+          "word": " to",
+          "start": 3.12,
+          "end": 3.28
+        },
+        {
+          "word": " make",
+          "start": 3.28,
+          "end": 3.42
+        },
+        {
+          "word": " this",
+          "start": 3.42,
+          "end": 3.62
+        },
+        {
+          "word": " account",
+          "start": 3.62,
+          "end": 3.94
+        },
+        {
+          "word": " worth",
+          "start": 3.94,
+          "end": 4.32
+        },
+        {
+          "word": " keeping.",
+          "start": 4.32,
+          "end": 4.66
+        }
+      ]
+    }
+  ]
+}

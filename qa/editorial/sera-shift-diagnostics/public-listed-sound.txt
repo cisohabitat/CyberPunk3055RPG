@@ -1,0 +1,303 @@
+ExpectError: expect(locator).toBeVisible() failed
+
+Locator: getByRole('button', { name: /^Listen to / })
+Expected: visible
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" getByRole('button', { name: /^Listen to / }) with timeout 30000ms
+  - waiting for getByRole('button', { name: /^Listen to / })
+  - Target page, context or browser has been closed
+Browser logs:
+
+<launching> /usr/bin/chromium --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-9aI2O7 --remote-debugging-pipe --no-startup-window
+<launched> pid=247731
+[pid=247731][err] [247731:247731:1031/022723.537823:ERROR:third_party/crashpad/crashpad/util/file/filesystem_posix.cc:63] mkdir : No such file or directory (2)
+[pid=247731][err] chrome_crashpad_handler: --database is required
+[pid=247731][err] Try 'chrome_crashpad_handler --help' for more information.
+[pid=247731][err] [247731:247794:1031/022723.645060:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=247731][err] [247731:247794:1031/022723.654229:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=247731][err] [247731:247794:1031/022723.654315:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=247731][err] [247731:247794:1031/022723.654334:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=247731][err] [247731:247794:1031/022723.654340:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=247731][err] [247731:247817:1031/022723.666374:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 247820: Read-only file system (30)
+[pid=247731][err] Fontconfig error: No writable cache directories
+[pid=247731][err] Fontconfig error: No writable cache directories
+[pid=247731][err] Fontconfig error: No writable cache directories
+[pid=247731][err] Fontconfig error: No writable cache directories
+[pid=247731][err] Fontconfig error: No writable cache directories
+[pid=247731][err] Fontconfig error: No writable cache directories
+[pid=247731][err] Fontconfig error: No writable cache directories
+[pid=247731][err] Fontconfig error: No writable cache directories
+[pid=247731][err] Fontconfig error: No writable cache directories
+[pid=247731][err] Fontconfig error: No writable cache directories
+[pid=247731][err] Fontconfig error: No writable cache directories
+[pid=247731][err] Fontconfig error: No writable cache directories
+[pid=247731][err] Fontconfig error: No writable cache directories
+[pid=247731][err] Fontconfig error: No writable cache directories
+[pid=247731][err] Fontconfig error: No writable cache directories
+[pid=247731][err] Fontconfig error: No writable cache directories
+[pid=247731][err] Fontconfig error: No writable cache directories
+[pid=247731][err] Fontconfig error: No writable cache directories
+[pid=247731][err] Fontconfig error: No writable cache directories
+[pid=247731][err] Fontconfig error: No writable cache directories
+[pid=247731][err] Fontconfig error: No writable cache directories
+[pid=247731][err] Fontconfig error: No writable cache directories
+[pid=247731][err] Fontconfig error: No writable cache directories
+[pid=247731][err] Fontconfig error: No writable cache directories
+[pid=247731][err] Fontconfig error: No writable cache directories
+[pid=247731][err] Fontconfig error: No writable cache directories
+[pid=247731][err] Fontconfig error: No writable cache directories
+[pid=247731][err] Fontconfig error: No writable cache directories
+[pid=247731][err] Fontconfig error: No writable cache directories
+[pid=247731][err] [247731:247794:1031/022724.230532:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=247731][err] [247731:247817:1031/022724.232423:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 247871: Read-only file system (30)
+[pid=247731][err] [247731:247731:1031/022724.262765:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=247731][err] [247731:247794:1031/022724.265172:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=247731][err] [247731:247731:1031/022724.265274:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=247731][err] [247731:247794:1031/022724.265356:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=247731][err] [247731:247731:1031/022724.274532:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=247731][err] [247731:247794:1031/022724.280775:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=247731][err] [247731:247794:1031/022724.281086:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=247731][err] [247731:247731:1031/022724.281856:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=247731][err] [247731:247731:1031/022724.281940:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=247731][err] [247731:247794:1031/022724.281996:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=247731][err] [247731:247731:1031/022724.283826:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.Properties.GetAll: object_path= /org/freedesktop/UPower/devices/DisplayDevice: unknown error type: 
+[pid=247731][err] [247731:247731:1031/022724.283950:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=247731][err] [247731:247794:1031/022724.284011:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=247731][err] [247731:247731:1031/022724.304603:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=247731][err] [247731:247794:1031/022724.309111:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=247731][err] [247731:247731:1031/022724.309395:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=247731][err] [247731:247792:1031/022724.326290:ERROR:crypto/nss_util.cc:256] Error initializing NSS with a persistent database (sql:/home/agent/.pki/nssdb): NSS error code: -8126
+[pid=247731][err] 
+[pid=247731][err] (process:247731): dconf-CRITICAL **: 02:27:24.330: unable to create directory '/home/agent/.cache/dconf': Read-only file system.  dconf will not work properly.
+[pid=247731][err] 
+[pid=247731][err] (process:247731): dconf-CRITICAL **: 02:27:24.331: unable to create directory '/home/agent/.cache/dconf': Read-only file system.  dconf will not work properly.
+[pid=247731][err] 
+[pid=247731][err] (process:247731): dconf-CRITICAL **: 02:27:24.331: unable to create directory '/home/agent/.cache/dconf': Read-only file system.  dconf will not work properly.
+[pid=247731][err] [247731:247817:1031/022724.379223:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 247921: Read-only file system (30)
+[pid=247731][err] [247731:247817:1031/022724.416155:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 247929: Read-only file system (30)
+[pid=247731][err] [247731:247817:1031/022724.418350:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 247930: Read-only file system (30)
+[pid=247731][err] [247869:247890:1031/022724.427897:ERROR:net/socket/ssl_client_socket_impl.cc:964] handshake failed; returned -1, SSL error code 1, net_error -202
+[pid=247731][err] [247869:247890:1031/022725.505147:ERROR:net/socket/ssl_client_socket_impl.cc:964] handshake failed; returned -1, SSL error code 1, net_error -202
+[pid=247731][err] Failed to create secure directory (/home/agent/.config/pulse): Read-only file system
+[pid=247731][err] [247869:247890:1031/022728.403699:ERROR:net/socket/ssl_client_socket_impl.cc:964] handshake failed; returned -1, SSL error code 1, net_error -202
+[pid=247731][err] [247869:247890:1031/022728.509320:ERROR:net/socket/ssl_client_socket_impl.cc:964] handshake failed; returned -1, SSL error code 1, net_error -202
+[pid=247731][err] [247869:247890:1031/022730.485322:ERROR:net/socket/ssl_client_socket_impl.cc:964] handshake failed; returned -1, SSL error code 1, net_error -202
+[pid=247731][err] [247869:247890:1031/022736.874278:ERROR:net/socket/ssl_client_socket_impl.cc:964] handshake failed; returned -1, SSL error code 1, net_error -202
+[pid=247731][err] [247869:247890:1031/022750.768115:ERROR:net/socket/ssl_client_socket_impl.cc:964] handshake failed; returned -1, SSL error code 1, net_error -202
+[pid=247731][err] [247869:247890:1031/022759.400893:ERROR:net/socket/ssl_client_socket_impl.cc:964] handshake failed; returned -1, SSL error code 1, net_error -202
+[pid=247731][err] [247869:247890:1031/022842.135931:ERROR:net/socket/ssl_client_socket_impl.cc:964] handshake failed; returned -1, SSL error code 1, net_error -202
+[pid=247731][err] [247869:247890:1031/022913.865132:ERROR:net/socket/ssl_client_socket_impl.cc:964] handshake failed; returned -1, SSL error code 1, net_error -202
+[pid=247731] <gracefully close start>
+[pid=247731][err] [247731:247731:1031/022929.084109:ERROR:content/common/zygote/zygote_communication_linux.cc:291] Failed to send GetTerminationStatus message to zygote
+[pid=247731][err] [247731:247731:1031/022929.084661:ERROR:content/common/zygote/zygote_communication_linux.cc:291] Failed to send GetTerminationStatus message to zygote
+
+    at captureRawStack (/workspace/saint-shard-fix/node_modules/playwright-core/lib/coreBundle.js:9282:17)
+    at callMatcherAsStep (/workspace/saint-shard-fix/node_modules/playwright/lib/matchers/expect.js:13316:57)
+    at Object.toBeVisible (/workspace/saint-shard-fix/node_modules/playwright/lib/matchers/expect.js:13308:23)
+    at main (/workspace/saint-shard-fix/scripts/player-experience.ts:166:75) {
+  matcherResult: {
+    message: 'expect(locator).toBeVisible() failed\n' +
+      '\n' +
+      "Locator: getByRole('button', { name: /^Listen to / })\n" +
+      'Expected: visible\n' +
+      'Error: element(s) not found\n' +
+      '\n' +
+      'Call log:\n' +
+      `  - Expect "toBeVisible" getByRole('button', { name: /^Listen to / }) with timeout 30000ms\n` +
+      "  - waiting for getByRole('button', { name: /^Listen to / })\n" +
+      '  - Target page, context or browser has been closed\n' +
+      'Browser logs:\n' +
+      '\n' +
+      '<launching> /usr/bin/chromium --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-9aI2O7 --remote-debugging-pipe --no-startup-window\n' +
+      '<launched> pid=247731\n' +
+      '[pid=247731][err] [247731:247731:1031/022723.537823:ERROR:third_party/crashpad/crashpad/util/file/filesystem_posix.cc:63] mkdir : No such file or directory (2)\n' +
+      '[pid=247731][err] chrome_crashpad_handler: --database is required\n' +
+      "[pid=247731][err] Try 'chrome_crashpad_handler --help' for more information.\n" +
+      '[pid=247731][err] [247731:247794:1031/022723.645060:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n' +
+      '[pid=247731][err] [247731:247794:1031/022723.654229:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")\n' +
+      '[pid=247731][err] [247731:247794:1031/022723.654315:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n' +
+      '[pid=247731][err] [247731:247794:1031/022723.654334:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n' +
+      '[pid=247731][err] [247731:247794:1031/022723.654340:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")\n' +
+      '[pid=247731][err] [247731:247817:1031/022723.666374:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 247820: Read-only file system (30)\n' +
+      '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+      '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+      '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+      '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+      '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+      '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+      '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+      '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+      '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+      '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+      '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+      '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+      '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+      '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+      '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+      '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+      '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+      '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+      '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+      '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+      '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+      '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+      '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+      '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+      '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+      '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+      '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+      '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+      '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+      '[pid=247731][err] [247731:247794:1031/022724.230532:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")\n' +
+      '[pid=247731][err] [247731:247817:1031/022724.232423:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 247871: Read-only file system (30)\n' +
+      '[pid=247731][err] [247731:247731:1031/022724.262765:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n' +
+      '[pid=247731][err] [247731:247794:1031/022724.265172:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")\n' +
+      '[pid=247731][err] [247731:247731:1031/022724.265274:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n' +
+      '[pid=247731][err] [247731:247794:1031/022724.265356:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")\n' +
+      '[pid=247731][err] [247731:247731:1031/022724.274532:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n' +
+      '[pid=247731][err] [247731:247794:1031/022724.280775:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n' +
+      '[pid=247731][err] [247731:247794:1031/022724.281086:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n' +
+      '[pid=247731][err] [247731:247731:1031/022724.281856:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n' +
+      '[pid=247731][err] [247731:247731:1031/022724.281940:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n' +
+      '[pid=247731][err] [247731:247794:1031/022724.281996:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")\n' +
+      '[pid=247731][err] [247731:247731:1031/022724.283826:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.Properties.GetAll: object_path= /org/freedesktop/UPower/devices/DisplayDevice: unknown error type: \n' +
+      '[pid=247731][err] [247731:247731:1031/022724.283950:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n' +
+      '[pid=247731][err] [247731:247794:1031/022724.284011:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")\n' +
+      '[pid=247731][err] [247731:247731:1031/022724.304603:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n' +
+      '[pid=247731][err] [247731:247794:1031/022724.309111:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")\n' +
+      '[pid=247731][err] [247731:247731:1031/022724.309395:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n' +
+      '[pid=247731][err] [247731:247792:1031/022724.326290:ERROR:crypto/nss_util.cc:256] Error initializing NSS with a persistent database (sql:/home/agent/.pki/nssdb): NSS error code: -8126\n' +
+      '[pid=247731][err] \n' +
+      "[pid=247731][err] (process:247731): dconf-CRITICAL **: 02:27:24.330: unable to create directory '/home/agent/.cache/dconf': Read-only file system.  dconf will not work properly.\n" +
+      '[pid=247731][err] \n' +
+      "[pid=247731][err] (process:247731): dconf-CRITICAL **: 02:27:24.331: unable to create directory '/home/agent/.cache/dconf': Read-only file system.  dconf will not work properly.\n" +
+      '[pid=247731][err] \n' +
+      "[pid=247731][err] (process:247731): dconf-CRITICAL **: 02:27:24.331: unable to create directory '/home/agent/.cache/dconf': Read-only file system.  dconf will not work properly.\n" +
+      '[pid=247731][err] [24773'... 2695 more characters,
+    pass: false,
+    actual: undefined,
+    name: 'toBeVisible',
+    expected: 'visible',
+    log: [
+      `  - Expect "toBeVisible" getByRole('button', { name: /^Listen to / }) with timeout 30000ms`,
+      "  - waiting for getByRole('button', { name: /^Listen to / })",
+      '  - Target page, context or browser has been closed\n' +
+        'Browser logs:\n' +
+        '\n' +
+        '<launching> /usr/bin/chromium --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-9aI2O7 --remote-debugging-pipe --no-startup-window\n' +
+        '<launched> pid=247731\n' +
+        '[pid=247731][err] [247731:247731:1031/022723.537823:ERROR:third_party/crashpad/crashpad/util/file/filesystem_posix.cc:63] mkdir : No such file or directory (2)\n' +
+        '[pid=247731][err] chrome_crashpad_handler: --database is required\n' +
+        "[pid=247731][err] Try 'chrome_crashpad_handler --help' for more information.\n" +
+        '[pid=247731][err] [247731:247794:1031/022723.645060:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n' +
+        '[pid=247731][err] [247731:247794:1031/022723.654229:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")\n' +
+        '[pid=247731][err] [247731:247794:1031/022723.654315:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n' +
+        '[pid=247731][err] [247731:247794:1031/022723.654334:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n' +
+        '[pid=247731][err] [247731:247794:1031/022723.654340:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")\n' +
+        '[pid=247731][err] [247731:247817:1031/022723.666374:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 247820: Read-only file system (30)\n' +
+        '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+        '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+        '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+        '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+        '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+        '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+        '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+        '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+        '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+        '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+        '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+        '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+        '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+        '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+        '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+        '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+        '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+        '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+        '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+        '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+        '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+        '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+        '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+        '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+        '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+        '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+        '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+        '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+        '[pid=247731][err] Fontconfig error: No writable cache directories\n' +
+        '[pid=247731][err] [247731:247794:1031/022724.230532:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")\n' +
+        '[pid=247731][err] [247731:247817:1031/022724.232423:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 247871: Read-only file system (30)\n' +
+        '[pid=247731][err] [247731:247731:1031/022724.262765:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n' +
+        '[pid=247731][err] [247731:247794:1031/022724.265172:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")\n' +
+        '[pid=247731][err] [247731:247731:1031/022724.265274:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n' +
+        '[pid=247731][err] [247731:247794:1031/022724.265356:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")\n' +
+        '[pid=247731][err] [247731:247731:1031/022724.274532:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n' +
+        '[pid=247731][err] [247731:247794:1031/022724.280775:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n' +
+        '[pid=247731][err] [247731:247794:1031/022724.281086:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n' +
+        '[pid=247731][err] [247731:247731:1031/022724.281856:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n' +
+        '[pid=247731][err] [247731:247731:1031/022724.281940:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n' +
+        '[pid=247731][err] [247731:247794:1031/022724.281996:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")\n' +
+        '[pid=247731][err] [247731:247731:1031/022724.283826:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.Properties.GetAll: object_path= /org/freedesktop/UPower/devices/DisplayDevice: unknown error type: \n' +
+        '[pid=247731][err] [247731:247731:1031/022724.283950:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n' +
+        '[pid=247731][err] [247731:247794:1031/022724.284011:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")\n' +
+        '[pid=247731][err] [247731:247731:1031/022724.304603:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n' +
+        '[pid=247731][err] [247731:247794:1031/022724.309111:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")\n' +
+        '[pid=247731][err] [247731:247731:1031/022724.309395:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n' +
+        '[pid=247731][err] [247731:247792:1031/022724.326290:ERROR:crypto/nss_util.cc:256] Error initializing NSS with a persistent database (sql:/home/agent/.pki/nssdb): NSS error code: -8126\n' +
+        '[pid=247731][err] \n' +
+        "[pid=247731][err] (process:247731): dconf-CRITICAL **: 02:27:24.330: unable to create directory '/home/agent/.cache/dconf': Read-only file system.  dconf will not work properly.\n" +
+        '[pid=247731][err] \n' +
+        "[pid=247731][err] (process:247731): dconf-CRITICAL **: 02:27:24.331: unable to create directory '/home/agent/.cache/dconf': Read-only file system.  dconf will not work properly.\n" +
+        '[pid=247731][err] \n' +
+        "[pid=247731][err] (process:247731): dconf-CRITICAL **: 02:27:24.331: unable to create directory '/home/agent/.cache/dconf': Read-only file system.  dconf will not work properly.\n" +
+        '[pid=247731][err] [247731:247817:1031/022724.379223:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 247921: Read-only file system (30)\n' +
+        '[pid=247731][err] [247731:247817:1031/022724.416155:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed t'... 2393 more characters
+    ],
+    timeout: undefined,
+    ariaSnapshot: '- alert\n' +
+      '- link "Skip to choices":\n' +
+      '  - /url: "#choices"\n' +
+      '- banner:\n' +
+      '  - text: Saint Shard Kite City 3055 Strain\n' +
+      '  - meter "Strain 0 of 5"\n' +
+      '  - text: 190 cr\n' +
+      '  - button "Settings"\n' +
+      '  - button "Saves"\n' +
+      '  - button "Sheet"\n' +
+      '  - button "Abandon"\n' +
+      '- main:\n' +
+      '  - article:\n' +
+      '    - figure "Mara · The patient": Mara The patient Speaking\n' +
+      '    - paragraph: The chair room · The Hour\n' +
+      '    - heading "The chair room · The Hour" [level=1]\n' +
+      '    - paragraph: You know what the hour is. Decide who gets it.\n' +
+      '    - paragraph: The chair room · The Hour. You know what the hour is. Decide who gets it.\n' +
+      '    - status: Loaded Autosave — The Hour · The chair room\n' +
+      '    - region "The recorded explanation · Mara":\n' +
+      '      - paragraph: The recorded explanation · Mara\n' +
+      '      - paragraph: The hour is not finished with you.\n' +
+      '      - paragraph:\n' +
+      '        - text: "Mara’s recorded voice, still unedited: \\""\n' +
+      '        - mark: Helion told me the dump was a flush, not a kill. I signed because the night shift was already in the building and I thought the tower would move them. They did not move them.\n' +
+      '        - text: "\\""\n' +
+      '      - paragraph: She does not ask you to forgive it. She asks you to keep the reason attached to the crime.\n' +
+      `      - 'figure "The recorded hour · Mara View artwork: The recorded hour · Mara"':\n` +
+      `        - img "Mara's recorded likeness sits beside the cyan memory apparatus; her steady gaze carries no present-day permission."\n` +
+      '        - text: The recorded hour · Mara\n' +
+      `        - 'button "View artwork: The recorded hour · Mara"': View artwork\n` +
+      '      - group "Artwork view":\n' +
+      '        - button "Scene" [pressed]\n' +
+      '        - button "Detail"\n' +
+      '    - complementary "Mara selected dialogue":\n' +
+      '      - button "Stop line"\n' +
+      '      - status: Playing selected dialogue · Mara · Line 1 of 1 · synthetic voice\n' +
+      '      - group: Voice transcript\n' +
+      '    - region "Your next move":\n' +
+      '      - heading "Your next move" [level=2]\n' +
+      '      - paragraph: Selecting an option commits it. For a check, review the odds and costs first; Back leaves it unrolled.\n' +
+      '      - paragraph: Move on Action\n' +
+      '      - button "Open the hour on the memory bench.": 1 Open the hour on the memory bench. Details Inspect the signature, counter-order, and roster. Decide what becomes evidence.\n' +
+      '      - button "Keep the reason with the hour.": 2 Keep the reason with the hour. Details No check. Kerr is still the door.'
+  }
+}

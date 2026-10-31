@@ -1,3 +1,4 @@
+import { withoutSeraArt } from '../qa/production/sera-shift-cohort';
 import { isConnectedPerformanceFile } from "../qa/production/connected-performance-media";
 import routing from "../qa/media/return-routing.json";
 import assert from "node:assert/strict";
@@ -39,7 +40,7 @@ it("preserves the precise historical route/media cohort and appends only thirtee
   assert.deepEqual(current, phase.baseline.media);
   for (const p of phase.baseline.preservedManifests) assert.equal(hash(p.path), p.sha256, p.path);
   assert.equal(hash(phase.baseline.sceneArt.path), phase.baseline.sceneArt.sha256);
-  const reconstructed = structuredClone(currentArt);
+  const reconstructed = withoutSeraArt(currentArt);
   reconstructed.decisions = reconstructed.decisions.filter(row => !row.scenes.some(id => routing.newScenes.includes(id)));
   for (const actor of reconstructed.speakingPortraits) actor.scenes = actor.scenes.filter(id => !routing.newScenes.includes(id));
   reconstructed.decisions = reconstructed.decisions.filter(row => !row.scenes.some(id => phase.newScenes.includes(id)));

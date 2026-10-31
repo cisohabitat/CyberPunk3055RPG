@@ -1,0 +1,5 @@
+{
+  "observedAt": "2026-10-31T02:29:29.080460+00:00",
+  "reason": "Final task-goal build was started while preliminary whole-campaign workers remained active. Preliminary cohort is not final acceptance; retain completed raw reports and logs without relabeling. Stop owned workers and repeat all32 against separate final server.",
+  "stoppedProcesses": 34
+}

@@ -1,3 +1,4 @@
+import { precedingSeraArt } from '../qa/production/sera-shift-cohort';
 import { isConnectedPerformanceFile } from "../qa/production/connected-performance-media";
 import assert from 'node:assert/strict';
 import { it } from 'node:test';
@@ -19,7 +20,7 @@ it('preserves all241 campaigns,17281 full visits,837 media and every preceding m
  for(const file of routes){const spec=JSON.parse(readFileSync(file,'utf8'));let state=createCharacter(spec.character);for(let step=0;step<=spec.steps.length;step++){const scene=getScene(state.sceneId),text=sceneText(scene,state),choices=presentChoices(state,scene);rows.push({file,step,state,text,choices,voice:visibleCampaignDialogue(scene.id,scene.speaker,text),actor:scene.speaker,art:sceneIllustration(scene.id,state.flags),portrait:portraitArt(scene.speaker,scene.id,state.flags)});if(step===spec.steps.length)break;const a=spec.steps[step],c=choices.find(c=>c.id===a.choiceId&&c.enabled);assert.ok(c);state=commitChoice(state,c,c.check?{roll:a.roll}:undefined).state;}}
  assert.equal(rows.length,17281);assert.equal(hash(JSON.stringify(rows)),baseline.campaignSha256);
  assert.deepEqual([...files('public/art'),...files('public/audio')].sort().map(path=>({path,sha256:hash(readFileSync(path))})),baseline.media);
- const mediaManifests=files('qa/media').filter(f=>f.endsWith('.json')&&f!=='qa/media/ordinary-scene-direction.json').sort();assert.deepEqual(mediaManifests,baseline.manifests.map(m=>m.path));for(const m of baseline.manifests)assert.equal(hash(readFileSync(m.path)),m.sha256,m.path);
+ const mediaManifests=files('qa/media').filter(f=>f.endsWith('.json')&&f!=='qa/media/ordinary-scene-direction.json').sort();assert.deepEqual(mediaManifests,baseline.manifests.map(m=>m.path));for(const m of baseline.manifests)assert.equal(hash(readFileSync(precedingSeraArt(m.path))),m.sha256,m.path);
 });
 it('enumerates only the complete Kerr disclosure sequence with accurate identity and no future-scene fallback',()=>{
  assert.deepEqual(Object.keys(ORDINARY_DIRECTIONS),['act2_district_kerr','act2_district_kerr_reply']);

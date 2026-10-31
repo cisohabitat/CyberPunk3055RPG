@@ -17,6 +17,8 @@ Existing randomized balance policies keep their historical meaning. A newer coho
 
 ## Phase 16 — character-driven dramatic pilot
 
+The first implementation is [Sera’s table-and-wall pilot](SERA_DRAMATIC_PILOT_PHASE16.md). It adds a complete entry/task/response and later filing reflection for an explicit new-run cohort. The other two high-traffic beats remain pending; publication of this pilot must not be described as completing all of Phase 16. The grade and target below remain unchanged.
+
 **Purpose:** strengthen the narrative through immediate personal wants, choices and responses. The current Dispatcher/Kerr scenes have coherent consequences but often close their emotional beat with another procedural explanation.
 
 **Scope:** begin with one connected conversation frequently visited in the fixed campaign matrix. Review Kerr's depot disclosure sequence first, then select the strongest pilot after comparing its visit frequency in the retained profiles with the archive opening and Wall account. Direct the opening intervention, two legitimate responses, the cost of choosing and the resulting character reaction. Keep the historical interpretation and witness boundaries authoritative.

@@ -1,0 +1,18 @@
+✔ preserves all241 preceding campaigns,17281 exact visits,842 media and every earlier manifest (1711.232198ms)
+✔ completes sera-shift/carry-authenticated.json with exact reloadable saves and unchanged prior outcomes (33.022245ms)
+✔ completes sera-shift/watch-private.json with exact reloadable saves and unchanged prior outcomes (11.57172ms)
+✔ completes sera-shift/watch-corrected.json with exact reloadable saves and unchanged prior outcomes (13.160779ms)
+✔ completes sera-shift/declined.json with exact reloadable saves and unchanged prior outcomes (13.971217ms)
+✔ completes sera-shift/interrupted-switch.json with exact reloadable saves and unchanged prior outcomes (20.284548ms)
+✔ completes sera-shift/carry-failed.json with exact reloadable saves and unchanged prior outcomes (27.461516ms)
+✔ keeps both tasks free and distinct, grants no sources/permissions/trust and prevents repeats (15.674299ms)
+✔ supports scarcity, refusal and coherent imported fallback without altering older save cohorts (2.622946ms)
+✔ binds every new spoken word to Sera, matching stock identity, delivery hashes and unprompted ASR (28.333038ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2214.017498

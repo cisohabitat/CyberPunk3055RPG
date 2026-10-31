@@ -1,0 +1,62 @@
+[
+  {
+    "id": "carry-authenticated",
+    "route": "qa/routes/sera-shift/carry-authenticated.json",
+    "width": 1440,
+    "artwork": "full",
+    "reading": "all",
+    "sound": true,
+    "shots": false,
+    "precedingRoute": "qa/routes/emotional-payoff/edda-authenticated-names.json"
+  },
+  {
+    "id": "watch-private",
+    "route": "qa/routes/sera-shift/watch-private.json",
+    "width": 390,
+    "artwork": "full",
+    "reading": "all",
+    "sound": true,
+    "shots": false,
+    "precedingRoute": "qa/routes/finale-names-consent-withdrawn.json"
+  },
+  {
+    "id": "watch-corrected",
+    "route": "qa/routes/sera-shift/watch-corrected.json",
+    "width": 390,
+    "artwork": "full",
+    "reading": "all",
+    "sound": true,
+    "shots": false,
+    "precedingRoute": "qa/routes/finale-witness-corrected.json"
+  },
+  {
+    "id": "declined",
+    "route": "qa/routes/sera-shift/declined.json",
+    "width": 320,
+    "artwork": "none",
+    "reading": "all",
+    "sound": false,
+    "shots": false,
+    "precedingRoute": "qa/routes/emotional-payoff/finale-listed-unvisited.json"
+  },
+  {
+    "id": "interrupted-switch",
+    "route": "qa/routes/sera-shift/interrupted-switch.json",
+    "width": 390,
+    "artwork": "full",
+    "reading": "paragraph",
+    "sound": false,
+    "shots": false,
+    "precedingRoute": "qa/routes/emotional-payoff/kerr-canceled-quiet.json"
+  },
+  {
+    "id": "carry-failed",
+    "route": "qa/routes/sera-shift/carry-failed.json",
+    "width": 390,
+    "artwork": "full",
+    "reading": "all",
+    "sound": false,
+    "shots": false,
+    "precedingRoute": "qa/routes/freight-craft/failed-desk.json"
+  }
+]

@@ -30,6 +30,10 @@ const BRIEFING = new Set(["stall", "pay", "pay_yes", "pay_no", "why", "chapel", 
 // Written directions for the current task, never a new spoken quotation or
 // evidence that its outcome has already happened.
 const TASK_GOALS: Readonly<Record<string, string>> = {
+  act3_sera_shift: "Choose how to help Sera, or leave the task with her and prepare the account.",
+  act3_sera_carry: "Carry the blank cards and return the empty tray, change tasks, or decline before doing it.",
+  act3_sera_watch: "Watch the closed table until Sera returns, change tasks, or decline before doing it.",
+  act3_sera_reply: "Hear Sera's response to your completed task. Return to reviewing the account.",
   act2_ramp_terms: "Hear Asa’s gate task and decide whether to plan a trained carry.",
   act2_ramp_survey: "Inspect both resting places before choosing support. The case has not moved.",
   act2_ramp_gear: "Choose a real harness, five-creds blocks or two-strain carry; cancel free before lifting.",

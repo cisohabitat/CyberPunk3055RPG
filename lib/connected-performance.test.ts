@@ -1,3 +1,4 @@
+import { isSeraShiftFile, precedingSeraArt } from '../qa/production/sera-shift-cohort';
 import assert from 'node:assert/strict';
 import { it } from 'node:test';
 import { createHash } from 'node:crypto';
@@ -21,9 +22,9 @@ const files=(d:string):string[]=>readdirSync(d,{withFileTypes:true}).flatMap(r=>
 const words=(s:string)=>s.toLowerCase().replace(/[’']/g,'').match(/[a-z0-9]+/g)??[];
 it('preserves the independent full preceding inventory and every existing manifest without broad exemptions',()=>{
  assert.equal(phase.baselineSha256,'534fea12322018e9e7efbb9e86fe7f7751d386b60e1ba6494b139200b66f7914');assert.equal(sha(phase.baseline),phase.baselineSha256);assert.equal(baseline.routes,241);assert.equal(baseline.visits,17281);assert.equal(baseline.campaignSha256,'402c12d19542024d58bded4acf27643569d6b5092443a42a071c2b904c2a19d6');
- assert.deepEqual(files('qa/routes').filter(p=>p.endsWith('.json')).sort(),baseline.routeFiles);
- const current=[...files('public/art'),...files('public/audio')].sort();assert.equal(current.length,842);assert.equal(baseline.media.length,837);assert.deepEqual(current.filter(p=>!CONNECTED_PERFORMANCE_MEDIA.includes(p)).map(path=>({path,sha256:sha(path)})),baseline.media);
- const manifests=files('qa/media').filter(p=>p.endsWith('.json')&&!CONNECTED_PERFORMANCE_MANIFESTS.includes(p)).sort();assert.deepEqual(manifests,baseline.manifests.map(p=>p.path));for(const m of baseline.manifests)assert.equal(sha(m.path),m.sha256,m.path);
+ assert.deepEqual(files('qa/routes').filter(p=>p.endsWith('.json')&&!isSeraShiftFile(p)).sort(),baseline.routeFiles);
+ const current=[...files('public/art'),...files('public/audio')].filter(p=>!isSeraShiftFile(p)).sort();assert.equal(current.length,842);assert.equal(baseline.media.length,837);assert.deepEqual(current.filter(p=>!CONNECTED_PERFORMANCE_MEDIA.includes(p)).map(path=>({path,sha256:sha(path)})),baseline.media);
+ const manifests=files('qa/media').filter(p=>p.endsWith('.json')&&!isSeraShiftFile(p)&&!CONNECTED_PERFORMANCE_MANIFESTS.includes(p)).sort();assert.deepEqual(manifests,baseline.manifests.map(p=>p.path));for(const m of baseline.manifests)assert.equal(sha(precedingSeraArt(m.path)),m.sha256,m.path);
  assert.deepEqual(phase.newScenes,[]);assert.deepEqual(phase.newRoutes,[]);
  for(const p of ['public/audio/connected-performance-v1/unknown.mp3','public/audio/connected-performance-v1/constructor.mp3','qa/media/expressive-performance-future.json'])assert.equal(isConnectedPerformanceFile(p),false);
 });

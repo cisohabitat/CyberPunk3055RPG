@@ -1,0 +1,97 @@
+locator.evaluate: Target page, context or browser has been closed
+Browser logs:
+
+<launching> /usr/bin/chromium --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-1qI0pC --remote-debugging-pipe --no-startup-window
+<launched> pid=247686
+[pid=247686][err] [247686:247686:1031/022723.436919:ERROR:third_party/crashpad/crashpad/util/file/filesystem_posix.cc:63] mkdir : No such file or directory (2)
+[pid=247686][err] chrome_crashpad_handler: --database is required
+[pid=247686][err] Try 'chrome_crashpad_handler --help' for more information.
+[pid=247686][err] [247686:247765:1031/022723.584685:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=247686][err] [247686:247765:1031/022723.584712:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=247686][err] [247686:247765:1031/022723.584727:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=247686][err] [247686:247765:1031/022723.584739:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=247686][err] [247686:247765:1031/022723.584743:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=247686][err] [247686:247782:1031/022723.616213:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 247785: Read-only file system (30)
+[pid=247686][err] Fontconfig error: No writable cache directories
+[pid=247686][err] Fontconfig error: No writable cache directories
+[pid=247686][err] Fontconfig error: No writable cache directories
+[pid=247686][err] Fontconfig error: No writable cache directories
+[pid=247686][err] Fontconfig error: No writable cache directories
+[pid=247686][err] Fontconfig error: No writable cache directories
+[pid=247686][err] Fontconfig error: No writable cache directories
+[pid=247686][err] Fontconfig error: No writable cache directories
+[pid=247686][err] Fontconfig error: No writable cache directories
+[pid=247686][err] Fontconfig error: No writable cache directories
+[pid=247686][err] Fontconfig error: No writable cache directories
+[pid=247686][err] Fontconfig error: No writable cache directories
+[pid=247686][err] Fontconfig error: No writable cache directories
+[pid=247686][err] Fontconfig error: No writable cache directories
+[pid=247686][err] Fontconfig error: No writable cache directories
+[pid=247686][err] Fontconfig error: No writable cache directories
+[pid=247686][err] Fontconfig error: No writable cache directories
+[pid=247686][err] Fontconfig error: No writable cache directories
+[pid=247686][err] Fontconfig error: No writable cache directories
+[pid=247686][err] Fontconfig error: No writable cache directories
+[pid=247686][err] Fontconfig error: No writable cache directories
+[pid=247686][err] Fontconfig error: No writable cache directories
+[pid=247686][err] Fontconfig error: No writable cache directories
+[pid=247686][err] Fontconfig error: No writable cache directories
+[pid=247686][err] Fontconfig error: No writable cache directories
+[pid=247686][err] Fontconfig error: No writable cache directories
+[pid=247686][err] Fontconfig error: No writable cache directories
+[pid=247686][err] Fontconfig error: No writable cache directories
+[pid=247686][err] Fontconfig error: No writable cache directories
+[pid=247686][err] [247686:247765:1031/022724.327393:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=247686][err] [247686:247782:1031/022724.331699:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 247898: Read-only file system (30)
+[pid=247686][err] [247686:247686:1031/022724.369723:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=247686][err] [247686:247765:1031/022724.370032:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=247686][err] [247686:247686:1031/022724.370101:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=247686][err] [247686:247765:1031/022724.370156:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=247686][err] [247686:247686:1031/022724.375376:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=247686][err] [247686:247765:1031/022724.384849:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=247686][err] [247686:247686:1031/022724.385097:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=247686][err] [247686:247765:1031/022724.385184:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=247686][err] [247686:247686:1031/022724.385245:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=247686][err] [247686:247765:1031/022724.386828:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=247686][err] [247686:247686:1031/022724.402664:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.Properties.GetAll: object_path= /org/freedesktop/UPower/devices/DisplayDevice: unknown error type: 
+[pid=247686][err] [247686:247686:1031/022724.403400:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=247686][err] [247686:247765:1031/022724.406308:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=247686][err] [247686:247686:1031/022724.412770:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=247686][err] [247686:247765:1031/022724.413497:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=247686][err] [247686:247686:1031/022724.413635:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=247686][err] [247686:247763:1031/022724.434188:ERROR:crypto/nss_util.cc:256] Error initializing NSS with a persistent database (sql:/home/agent/.pki/nssdb): NSS error code: -8126
+[pid=247686][err] [247870:247912:1031/022724.438218:ERROR:net/socket/ssl_client_socket_impl.cc:964] handshake failed; returned -1, SSL error code 1, net_error -202
+[pid=247686][err] 
+[pid=247686][err] (process:247686): dconf-CRITICAL **: 02:27:24.455: unable to create directory '/home/agent/.cache/dconf': Read-only file system.  dconf will not work properly.
+[pid=247686][err] 
+[pid=247686][err] (process:247686): dconf-CRITICAL **: 02:27:24.455: unable to create directory '/home/agent/.cache/dconf': Read-only file system.  dconf will not work properly.
+[pid=247686][err] 
+[pid=247686][err] (process:247686): dconf-CRITICAL **: 02:27:24.455: unable to create directory '/home/agent/.cache/dconf': Read-only file system.  dconf will not work properly.
+[pid=247686][err] [247686:247782:1031/022724.512299:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 247954: Read-only file system (30)
+[pid=247686][err] [247686:247782:1031/022724.563459:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 247965: Read-only file system (30)
+[pid=247686][err] [247686:247782:1031/022724.602086:ERROR:content/browser/zygote_host/zygote_host_impl_linux.cc:279] Failed to adjust OOM score of renderer with pid 247967: Read-only file system (30)
+[pid=247686][err] [247870:247912:1031/022725.360905:ERROR:net/socket/ssl_client_socket_impl.cc:964] handshake failed; returned -1, SSL error code 1, net_error -202
+[pid=247686][err] Failed to create secure directory (/home/agent/.config/pulse): Read-only file system
+[pid=247686][err] [247870:247912:1031/022727.870237:ERROR:net/socket/ssl_client_socket_impl.cc:964] handshake failed; returned -1, SSL error code 1, net_error -202
+[pid=247686][err] [247870:247912:1031/022728.632503:ERROR:net/socket/ssl_client_socket_impl.cc:964] handshake failed; returned -1, SSL error code 1, net_error -202
+[pid=247686][err] [247870:247912:1031/022729.094568:ERROR:net/socket/ssl_client_socket_impl.cc:964] handshake failed; returned -1, SSL error code 1, net_error -202
+[pid=247686][err] [247870:247912:1031/022735.863294:ERROR:net/socket/ssl_client_socket_impl.cc:964] handshake failed; returned -1, SSL error code 1, net_error -202
+[pid=247686][err] [247870:247912:1031/022755.480698:ERROR:net/socket/ssl_client_socket_impl.cc:964] handshake failed; returned -1, SSL error code 1, net_error -202
+[pid=247686][err] [247870:247912:1031/022757.669295:ERROR:net/socket/ssl_client_socket_impl.cc:964] handshake failed; returned -1, SSL error code 1, net_error -202
+[pid=247686][err] [247870:247912:1031/022839.741495:ERROR:net/socket/ssl_client_socket_impl.cc:964] handshake failed; returned -1, SSL error code 1, net_error -202
+[pid=247686][err] [247870:247912:1031/022917.484032:ERROR:net/socket/ssl_client_socket_impl.cc:964] handshake failed; returned -1, SSL error code 1, net_error -202
+[pid=247686] <gracefully close start>
+[pid=247686][err] [247686:247686:1031/022929.109149:ERROR:content/common/zygote/zygote_communication_linux.cc:291] Failed to send GetTerminationStatus message to zygote
+[pid=247686][err] [247686:247686:1031/022929.109794:ERROR:content/common/zygote/zygote_communication_linux.cc:291] Failed to send GetTerminationStatus message to zygote
+[pid=247686][err] [247686:247686:1031/022929.110764:ERROR:content/common/zygote/zygote_communication_linux.cc:291] Failed to send GetTerminationStatus message to zygote
+Call log:
+[2m  - waiting for getByTestId('choice-keep-both-decisions')[22m
+[2m    - locator resolved to visible <button type="button" class="choice" data-available="true" data-choice-kind="action" id="campaign-choice-keep-both-decisions" data-testid="choice-keep-both-decisions" aria-labelledby="choice-label-keep-both-decisions" aria-describedby="choice-detail-keep-both-decisions">…</button>[22m
+
+    at tabTo (/workspace/saint-shard-fix/qa/production/keyboard.ts:8:36)
+    at async main (/workspace/saint-shard-fix/scripts/player-experience.ts:180:15) {
+  log: [
+    "  - waiting for getByTestId('choice-keep-both-decisions')",
+    '    - locator resolved to visible <button type="button" class="choice" data-available="true" data-choice-kind="action" id="campaign-choice-keep-both-decisions" data-testid="choice-keep-both-decisions" aria-labelledby="choice-label-keep-both-decisions" aria-describedby="choice-detail-keep-both-decisions">…</button>'
+  ]
+}

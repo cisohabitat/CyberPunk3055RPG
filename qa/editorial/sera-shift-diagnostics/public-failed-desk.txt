@@ -1,0 +1,40 @@
+ExpectError: expect(locator).toBeEnabled() failed
+
+Locator: getByRole('button', { name: 'Settings', exact: true })
+Expected: enabled
+Timeout: 5000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeEnabled" getByRole('button', { name: 'Settings', exact: true }) with timeout 5000ms
+  - waiting for getByRole('button', { name: 'Settings', exact: true })
+
+    at captureRawStack (/workspace/saint-shard-fix/node_modules/playwright-core/lib/coreBundle.js:9282:17)
+    at callMatcherAsStep (/workspace/saint-shard-fix/node_modules/playwright/lib/matchers/expect.js:13316:57)
+    at Object.toBeEnabled (/workspace/saint-shard-fix/node_modules/playwright/lib/matchers/expect.js:13308:23)
+    at keyboardActivate (/workspace/saint-shard-fix/qa/production/keyboard.ts:22:24)
+    at activate (/workspace/saint-shard-fix/scripts/player-experience.ts:44:94)
+    at main (/workspace/saint-shard-fix/scripts/player-experience.ts:86:11) {
+  matcherResult: {
+    message: 'expect(locator).toBeEnabled() failed\n' +
+      '\n' +
+      "Locator: getByRole('button', { name: 'Settings', exact: true })\n" +
+      'Expected: enabled\n' +
+      'Timeout: 5000ms\n' +
+      'Error: element(s) not found\n' +
+      '\n' +
+      'Call log:\n' +
+      `  - Expect "toBeEnabled" getByRole('button', { name: 'Settings', exact: true }) with timeout 5000ms\n` +
+      "  - waiting for getByRole('button', { name: 'Settings', exact: true })\n",
+    pass: false,
+    actual: undefined,
+    name: 'toBeEnabled',
+    expected: 'enabled',
+    log: [
+      `  - Expect "toBeEnabled" getByRole('button', { name: 'Settings', exact: true }) with timeout 5000ms`,
+      "  - waiting for getByRole('button', { name: 'Settings', exact: true })"
+    ],
+    timeout: 5000,
+    ariaSnapshot: '- main "Saint Shard":\n  - status: Jacking in'
+  }
+}

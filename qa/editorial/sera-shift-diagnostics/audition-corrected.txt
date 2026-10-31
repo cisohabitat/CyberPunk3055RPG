@@ -1,0 +1,16 @@
+[in#0 @ 0x556fb7347080] Error opening input: No such file or directory
+Error opening input file /workspace/saint-shard-fix/public/audio/voice-sera-hearing-purpose.mp3.
+Error opening input files: No such file or directory
+Traceback (most recent call last):
+  File "/workspace/saint-shard-fix/scripts/sera-shift-audition.py", line 15, in <module>
+    path=root/line['path'];voice=decode(path)*(.7*line['sourceGain']);clips.append(dict(**line,sha256=sha(path),startSeconds=pos/rate,durationSeconds=len(voice)/rate));voices.append(voice);pos+=len(voice)
+                                 ^^^^^^^^^^^^
+  File "/workspace/saint-shard-fix/scripts/sera-shift-audition.py", line 11, in decode
+    def decode(p):return np.frombuffer(subprocess.check_output(['ffmpeg','-loglevel','error','-i',str(p),'-f','f32le','-ar',str(rate),'-ac','2','pipe:1']),dtype='<f4').reshape(-1,2).copy()
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['ffmpeg', '-loglevel', 'error', '-i', '/workspace/saint-shard-fix/public/audio/voice-sera-hearing-purpose.mp3', '-f', 'f32le', '-ar', '24000', '-ac', '2', 'pipe:1']' returned non-zero exit status 254.

@@ -51,6 +51,7 @@ for (const [width, artwork] of [[390, "full"], [1440, "full"], [320, "none"]] as
       const img = page.getByTestId("scene-illustration").locator("img");
       await expect(img).toHaveAttribute("src", `/art/${scenario.art}.jpg`);
       await img.scrollIntoViewIfNeeded();
+      await expect(img.locator("xpath=..")).toHaveAttribute("data-ready", "true");
       const decoded = await img.evaluate(async (el: HTMLImageElement) => { await el.decode(); const box = el.getBoundingClientRect(); return { width: el.naturalWidth, ratio: box.width / box.height, fit: getComputedStyle(el).objectFit, source: el.currentSrc }; });
       expect(decoded.width).toBeGreaterThan(0); expect(decoded.ratio).toBeCloseTo(1.5, 2); expect(decoded.fit).toBe("contain");
       await expect(img).toHaveAttribute("srcset", `/art/${scenario.art}-small.jpg 600w, /art/${scenario.art}.jpg 1200w`);

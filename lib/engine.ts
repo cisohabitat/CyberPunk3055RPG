@@ -1,3 +1,4 @@
+import { seraShiftChoices, seraShiftText } from './sera-shift';
 import { COMPLICATIONS, FACTIONS, FACTION_INFO, ORIGINS, POINTS, STAT_CAP, STATS, STAT_INFO, STRAIN_MAX, isValidName, startingFactions } from "./character";
 import { ITEMS } from "./items";
 import { mergeJournal } from "./journal";
@@ -42,7 +43,7 @@ export function getScene(id: string): Scene {
 }
 
 export function sceneText(scene: Scene, state: GameState): string {
-  return routingFinale(state, freightFinale(state, typeof scene.text === "function" ? scene.text(state) : scene.text, scene.finale), scene.finale);
+  return seraShiftText(state, scene.id, routingFinale(state, freightFinale(state, typeof scene.text === "function" ? scene.text(state) : scene.text, scene.finale), scene.finale));
 }
 
 export function createCharacter(input: {
@@ -60,6 +61,7 @@ export function createCharacter(input: {
   emotionalPayoffs?: boolean;
   freightCraft?: boolean;
   returnRouting?: boolean;
+  seraShift?: boolean;
 }): GameState {
   const origin = ORIGINS[input.origin];
   const complication = input.complication ?? null;
@@ -93,6 +95,8 @@ export function createCharacter(input: {
   if (input.freightCraft !== undefined && typeof input.freightCraft !== "boolean") throw new Error("Invalid freight craft option");
   if (input.freightCraft) flags.freight_craft_enabled = true;
   if (input.returnRouting !== undefined && typeof input.returnRouting !== "boolean") throw new Error("Invalid return routing option");
+  if (input.seraShift !== undefined && typeof input.seraShift !== "boolean") throw new Error("Invalid Sera shift option");
+  if (input.seraShift) flags.sera_shift_enabled = true;
   if (input.returnRouting) flags.return_routing_enabled = true;
   if (complication === "on-file") flags.on_file = true;
   if (complication === "debt") flags.debt = true;
@@ -161,7 +165,7 @@ function choiceHidden(state: GameState, choice: Choice): boolean {
 }
 
 export function presentChoices(state: GameState, scene: Scene): VisibleChoice[] {
-  return returnRoutingChoices(state, scene.id, freightCraftChoices(state, scene.id, payoffChoices(state, scene.id, encounterCraftChoices(state, scene, maraAccountChoices(state, scene, [...techniqueChoices(state, scene, districtChoices(state, scene, archivePlanChoices(state, scene))), ...caseFileChoices(state, scene)]), SCENES)))).filter((choice) => !choiceHidden(state, choice)).map((choice) => {
+  return seraShiftChoices(state, scene.id, returnRoutingChoices(state, scene.id, freightCraftChoices(state, scene.id, payoffChoices(state, scene.id, encounterCraftChoices(state, scene, maraAccountChoices(state, scene, [...techniqueChoices(state, scene, districtChoices(state, scene, archivePlanChoices(state, scene))), ...caseFileChoices(state, scene)]), SCENES))))).filter((choice) => !choiceHidden(state, choice)).map((choice) => {
     if (choice.maxStrain !== undefined && state.strain > choice.maxStrain) {
       return { ...choice, enabled: false, disabledReason: `Need Strain at most ${choice.maxStrain}; recover before this preparation` };
     }
