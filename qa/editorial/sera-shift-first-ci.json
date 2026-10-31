@@ -1,0 +1,111 @@
+{
+  "revision": "c859d82c119cc6f9bebcc6154dfb12aeef8f58d8",
+  "runId": 41161872463,
+  "url": "https://github.com/cisohabitat/CyberPunk3055RPG/actions/runs/41161872463",
+  "status": "Observed before a substantive QA verifier/evidence follow-up; not final release acceptance",
+  "jobs": [
+    {
+      "id": 124420974811,
+      "name": "Test",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124421932937,
+      "name": "Browser shard (firefox, 2/4)",
+      "status": "in_progress",
+      "conclusion": null
+    },
+    {
+      "id": 124421932956,
+      "name": "Browser shard (chromium, 2/4)",
+      "status": "in_progress",
+      "conclusion": null
+    },
+    {
+      "id": 124421932958,
+      "name": "Browser shard (firefox, 1/4)",
+      "status": "in_progress",
+      "conclusion": null
+    },
+    {
+      "id": 124421932966,
+      "name": "Browser shard (chromium, 3/4)",
+      "status": "in_progress",
+      "conclusion": null
+    },
+    {
+      "id": 124421932968,
+      "name": "Browser shard (phone, 2/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124421932980,
+      "name": "Browser shard (chromium, 4/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124421932992,
+      "name": "Browser shard (chromium, 1/4)",
+      "status": "in_progress",
+      "conclusion": null
+    },
+    {
+      "id": 124421932994,
+      "name": "Browser shard (phone, 4/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124421932997,
+      "name": "Browser shard (webkit, 1/4)",
+      "status": "in_progress",
+      "conclusion": null
+    },
+    {
+      "id": 124421933018,
+      "name": "Browser shard (webkit, 4/4)",
+      "status": "in_progress",
+      "conclusion": null
+    },
+    {
+      "id": 124421933024,
+      "name": "Browser shard (webkit, 2/4)",
+      "status": "in_progress",
+      "conclusion": null
+    },
+    {
+      "id": 124421933036,
+      "name": "Browser shard (firefox, 4/4)",
+      "status": "in_progress",
+      "conclusion": null
+    },
+    {
+      "id": 124421933056,
+      "name": "Browser shard (firefox, 3/4)",
+      "status": "in_progress",
+      "conclusion": null
+    },
+    {
+      "id": 124421933061,
+      "name": "Browser shard (webkit, 3/4)",
+      "status": "in_progress",
+      "conclusion": null
+    },
+    {
+      "id": 124421933082,
+      "name": "Browser shard (phone, 3/4)",
+      "status": "in_progress",
+      "conclusion": null
+    },
+    {
+      "id": 124421933125,
+      "name": "Browser shard (phone, 1/4)",
+      "status": "in_progress",
+      "conclusion": null
+    }
+  ],
+  "reason": "Existing compact memory timeline labels on the added correction profile require exact presentation verification alongside canonical source labels. No game, art, voice or source fixture changes in the follow-up. Preserve this original CI attempt; a fresh full exact-commit CI cohort remains required."
+}

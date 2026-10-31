@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "status": "All32 corrected candidate campaigns verified; fresh full exact-commit CI and READY/public proof remain required.",
+  "runtimeRevision": "c859d82c119cc6f9bebcc6154dfb12aeef8f58d8",
+  "runtimeSourceFingerprint": "052685336c1a9770a31f8e486733b5315a98b55373ebc07cace0cd885624cd3a",
+  "profiles": 32,
+  "totals": {
+    "visits": 2573,
+    "reloads": 2227,
+    "tabs": 21315,
+    "voices": 242,
+    "artViews": 51,
+    "ordinaryArtViews": 18,
+    "interruptions": 12,
+    "addedAuthoredChoices": 21
+  },
+  "prior26": {
+    "visits": 2117,
+    "reloads": 1777,
+    "tabs": 17287,
+    "voices": 122,
+    "artViews": 51,
+    "ordinaryArtViews": 18,
+    "interruptions": 6
+  },
+  "current6": {
+    "visits": 456,
+    "reloads": 450,
+    "tabs": 4028,
+    "voices": 120,
+    "addedAuthoredChoices": 21
+  },
+  "browserScenes": 161,
+  "sourceRoutes": 247,
+  "sourceVisits": 17737,
+  "sourceScenes": 252,
+  "totalScenes": 264,
+  "grade": 8.9,
+  "weightedGrade": 8.91,
+  "targetWeightedGrade": 9.09,
+  "preservation": "All26 preceding story words, choice inventories, decision-gap coordinates, outcomes/resources/dice, art inspections and voice workloads remain exact. Each prior-save setup retains one extra Tab and reload; six new current-creation profiles retain21 added authored actions. No historical report was rewritten.",
+  "labelReview": "Only memory_sequence/place-roster,place-signature,place-order use the pre-existing MemoryTimeline compact label. Verify both exact canonical source wording and exact compact label derived from its bound FRAGMENTS title; all other label checks remain unchanged.",
+  "rawMetadata": "Actual original revision/dirty/source hashes and output paths remain inside every report. Reports were produced across d0d6c50 dirty and c859d82 clean source-equivalent snapshots; do not relabel the whole cohort as clean/current-public.",
+  "committedReports": "qa/editorial/sera-shift-accepted-runs/",
+  "rawOrigin": "qa/production/reports/sera-shift-accepted-runs/",
+  "sourceAcceptance": "qa/editorial/sera-shift-postcommit.json",
+  "fullAcceptance": "qa/editorial/sera-shift-all32-acceptance.json",
+  "firstCi": "qa/editorial/sera-shift-first-ci.json",
+  "scope": "QA verifier and current evidence follow-up; all app/components/lib/public/qa-media/route trees remain exactly c859d82. No scene, quote, actor, art, audio, rule, preference or save changes.",
+  "next": "Finish exact-commit publication of this pilot, then two other high-traffic beats remain in Phase16; no automatic grade increase."
+}

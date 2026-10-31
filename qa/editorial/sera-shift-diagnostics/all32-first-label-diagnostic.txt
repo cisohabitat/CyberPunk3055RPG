@@ -1,0 +1,27 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert.ok(words(rendered.text).includes(words(c.label)))
+
+    at <anonymous> (/workspace/saint-shard-fix/qa/production/sera-shift-acceptance.ts:38:12)
+    at Array.map (<anonymous>)
+    at pilot (/workspace/saint-shard-fix/qa/production/sera-shift-acceptance.ts:19:38)
+    at Object.<anonymous> (/workspace/saint-shard-fix/qa/production/sera-shift-acceptance.ts:59:202)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object.transformer (/workspace/saint-shard-fix/node_modules/tsx/dist/register-B1c7OH6V.cjs:22:2188)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at loadCJSModuleWithModuleLoad (node:internal/modules/esm/translators:372:15) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

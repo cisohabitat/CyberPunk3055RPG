@@ -1,3 +1,4 @@
+import { FRAGMENTS } from '../../lib/evidence';
 /** Explicit offline 26 prior-save + six current-creation acceptance; never shipped. */
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
@@ -35,7 +36,13 @@ const rows = [...previous, ...pilot].map(p => {
     const a = spec.steps[i]; if (!a) continue;
     const c = presentChoices(state, getScene(state.sceneId)).find(c => c.id === a.choiceId && c.enabled); assert.ok(c);
     const rendered = o.choices.find((r: {id: string}) => r.id === `choice-${c.id}`); assert.ok(rendered?.enabled);
-    assert.ok(words(rendered.text).includes(words(c.label)));
+    if (state.sceneId === 'memory_sequence' && ['place-roster', 'place-signature', 'place-order'].includes(c.id)) {
+      const fragment = FRAGMENTS.find(f => `place-${f.id}` === c.id)!; assert.ok(fragment);
+      // Existing MemoryTimeline projection: retain the exact canonical label AND
+      // the complete compact button label; no general word omission tolerance.
+      assert.equal(c.label, `Place ${fragment.title.toLowerCase()} in the next slot.`);
+      assert.equal(words(rendered.text.replace(/^\d+\s*·\s*/, '')), words(`Place ${fragment.title.toLowerCase()} next`));
+    } else assert.ok(words(rendered.text).includes(words(c.label)), `${p.id}/${i}/${c.id}: canonical label`);
     state = commitChoice(state, c, c.check ? { roll: a.roll! } : undefined).state;
   }
   assert.deepEqual(report.final, { sceneId: state.sceneId, creds: state.creds, strain: state.strain, rolls: state.rolls.map(r => r.roll) });
