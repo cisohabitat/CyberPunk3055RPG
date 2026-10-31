@@ -1,0 +1,255 @@
+{
+  "generatedAt": "2026-10-31T14:33:52.123325+00:00",
+  "source": "scripts/direct-scene-voices.py",
+  "driver": {
+    "name": "kokoro-onnx",
+    "version": "0.6.1",
+    "license": "MIT",
+    "url": "https://github.com/thewh1teagle/kokoro-onnx",
+    "licenseFile": "qa/media/voice-sources/kokoro-onnx-LICENSE.txt"
+  },
+  "model": {
+    "name": "Kokoro-82M v1.0",
+    "license": "Apache-2.0",
+    "card": "https://huggingface.co/hexgrad/Kokoro-82M",
+    "licenseFile": "qa/media/voice-sources/Kokoro-LICENSE.txt",
+    "files": [
+      {
+        "name": "kokoro-v1.0.onnx",
+        "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.onnx",
+        "sha256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+        "bytes": 325505369
+      },
+      {
+        "name": "voices-v1.0.bin",
+        "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin",
+        "sha256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+        "bytes": 28214398
+      }
+    ]
+  },
+  "disclosure": "Stock synthetic voices generated offline with Kokoro v1.0; no actor session or individual voice clone was commissioned. Only the fixed authored quotations below are rendered. No model or speech service ships in the game.",
+  "method": "Exact words and stock identity; phrase speed/pause direction, conservative -60dB-relative model-padding removal with80ms guards/8ms fades, two-pass -23.5LUFS codec matching,96kbps mono MP3. Masters retained outside Git.",
+  "linesPath": "qa/editorial/connected-scenes-retake-lines.json",
+  "linesSha256": "ddf7f07359894edc3f12c3cbe319bd02d659caa6d330b79571e669420b8557f3",
+  "lines": [
+    {
+      "id": "voice-campaign-dramatic-beats-ebb05f183613",
+      "speaker": "Edda",
+      "voice": "af_kore",
+      "speed": 0.98,
+      "text": "A fee, an old number, a signature. Each leaves someone carrying this request. I want to know which part you are asking me to carry.",
+      "direction": "Name three distinct costs with a connected list. Practical boundaries and tired attention, not accusation or consent beyond the request.",
+      "loudnessLufs": -23.5,
+      "previousPath": "public/audio/voice-campaign-dramatic-beats-ebb05f183613.mp3",
+      "previousSha256": "f74cd28bba8e211a32e1e4e5ed6165104279b8f85a0bad7ce637d41814201eb1",
+      "previousSourceGain": 1,
+      "sourceGain": 1,
+      "checkpoint": {
+        "route": "qa/routes/dramatic-sequences/face.json",
+        "scene": "act2_craft_archive_ledger",
+        "step": 46,
+        "choice": null
+      },
+      "sceneText": "Edda lays a narrow request form over the movement locator. The worker roster does not go on it.\n\nEdda smooths the request form once. Her hand stops above the signature line.\n\n\"A fee, an old number, a signature. Each leaves someone carrying this request. I want to know which part you are asking me to carry.\"\n\nShe can help carry this bounded record. The families stay out of the request.\n\nA staffed movement-page extraction costs twenty-five creds and logs a query. A Spire employee can bill it to the old badge, adding its trace. Earned Face training lets you ask Edda for a bounded countersignature instead: she agrees to this extraction, and her employer can identify her signed shift. None of these methods tests an issuing key.",
+      "sound": {
+        "mood": "quiet",
+        "district": "spire"
+      },
+      "segments": [
+        {
+          "text": "A fee,",
+          "speed": 0.95,
+          "pauseAfter": 0.14
+        },
+        {
+          "text": "an old number,",
+          "speed": 0.95,
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "a signature.",
+          "speed": 0.95,
+          "pauseAfter": 0.27
+        },
+        {
+          "text": "Each leaves someone carrying this request.",
+          "speed": 0.92,
+          "pauseAfter": 0.23
+        },
+        {
+          "text": "I want to know which part you are asking me to carry.",
+          "speed": 0.96,
+          "pauseAfter": 0
+        }
+      ],
+      "candidateFile": "/workspace/generated_audio/connected-scenes/v2/voice-campaign-dramatic-beats-ebb05f183613.mp3",
+      "sha256": "34fd64950af14be950565011f06187171ad6e8ec78704461b56afd5ea6a5c22b",
+      "bytes": 110636,
+      "sourceFile": "/workspace/generated_audio/connected-scenes/v2/voice-campaign-dramatic-beats-ebb05f183613-master.wav",
+      "sourceSha256": "62a9e5707958d4349bafb85bfac7b2a85edcf6a5f47aa91e0c78673de544eae7",
+      "pcmDeliveryFile": "/workspace/generated_audio/connected-scenes/v2/voice-campaign-dramatic-beats-ebb05f183613-pcm.wav",
+      "pcmDeliverySha256": "5ecc1e568c2e5a871dd7e8a1a43974aa7a5a0e3d8256b2d21857276f4705e787",
+      "parts": [
+        {
+          "text": "A fee,",
+          "speed": 0.95,
+          "pauseAfter": 0.14,
+          "rawFile": "/workspace/generated_audio/connected-scenes/v2/voice-campaign-dramatic-beats-ebb05f183613-phrase-0.wav",
+          "rawSha256": "39f25e32b79c751a18e2eda4cda7d2dafb8815355a2f688ae95a2c418b65b27d",
+          "rawSeconds": 0.7253333333333334,
+          "retainedSeconds": 0.7253333333333334,
+          "trimmedHeadSeconds": 0.0,
+          "trimmedTailSeconds": 0.0,
+          "startSeconds": 0.0
+        },
+        {
+          "text": "an old number,",
+          "speed": 0.95,
+          "pauseAfter": 0.16,
+          "rawFile": "/workspace/generated_audio/connected-scenes/v2/voice-campaign-dramatic-beats-ebb05f183613-phrase-1.wav",
+          "rawSha256": "ad9eefb5dc8c94c5ddd788fccd9a7669afa5d0a5cf6fbb491e86a23b7d3e0371",
+          "rawSeconds": 1.024,
+          "retainedSeconds": 1.024,
+          "trimmedHeadSeconds": 0.0,
+          "trimmedTailSeconds": 0.0,
+          "startSeconds": 0.8653333333333333
+        },
+        {
+          "text": "a signature.",
+          "speed": 0.95,
+          "pauseAfter": 0.27,
+          "rawFile": "/workspace/generated_audio/connected-scenes/v2/voice-campaign-dramatic-beats-ebb05f183613-phrase-2.wav",
+          "rawSha256": "22199be50840e9740980a6aa881068784ba288f8a8afd6994e58a1ce692d294f",
+          "rawSeconds": 1.09,
+          "retainedSeconds": 1.09,
+          "trimmedHeadSeconds": 0.0,
+          "trimmedTailSeconds": 0.0,
+          "startSeconds": 2.0493333333333332
+        },
+        {
+          "text": "Each leaves someone carrying this request.",
+          "speed": 0.92,
+          "pauseAfter": 0.23,
+          "rawFile": "/workspace/generated_audio/connected-scenes/v2/voice-campaign-dramatic-beats-ebb05f183613-phrase-3.wav",
+          "rawSha256": "574c26b3fbe04e8b699a2a3dd5db4569edc785dd140d00dbd88a0fb9fce0dd37",
+          "rawSeconds": 2.409291666666667,
+          "retainedSeconds": 2.409291666666667,
+          "trimmedHeadSeconds": 0.0,
+          "trimmedTailSeconds": 0.0,
+          "startSeconds": 3.4093333333333335
+        },
+        {
+          "text": "I want to know which part you are asking me to carry.",
+          "speed": 0.96,
+          "pauseAfter": 0,
+          "rawFile": "/workspace/generated_audio/connected-scenes/v2/voice-campaign-dramatic-beats-ebb05f183613-phrase-4.wav",
+          "rawSha256": "2a77b5a0021445d0caf4e37c8ca65a130c3ec92c0efb4ec9fcaf9e872f25d370",
+          "rawSeconds": 2.9226666666666667,
+          "retainedSeconds": 2.9226666666666667,
+          "trimmedHeadSeconds": 0.0,
+          "trimmedTailSeconds": 0.0,
+          "startSeconds": 6.048625
+        }
+      ],
+      "integratedLufs": -23.51,
+      "truePeakDbtp": -5.51,
+      "durationSeconds": 9.131291666666666,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.5287980437278748
+    },
+    {
+      "id": "voice-campaign-sera-shift-9d3da67ec4a0",
+      "speaker": "Sera",
+      "voice": "af_bella",
+      "speed": 0.98,
+      "text": "I keep sending people to the wall. I would like to stand there myself for once. But I cannot leave this table open.",
+      "direction": "A personal wish to leave the table briefly. Differentiate the wish from the practical reason she stays. No martyr speech.",
+      "loudnessLufs": -23.5,
+      "previousPath": "public/audio/voice-campaign-sera-shift-9d3da67ec4a0.mp3",
+      "previousSha256": "7000d312ad041bf1d03f872bc8fd3143328f5516ef1378262179b59612611ba7",
+      "previousSourceGain": 1,
+      "sourceGain": 1,
+      "checkpoint": {
+        "route": "qa/routes/dramatic-sequences/face.json",
+        "scene": "act3_sera_shift",
+        "step": 69,
+        "choice": null
+      },
+      "sceneText": "Sera has a hand on the back of her chair. From the doorway, the wall is only a strip of wet light. A tray of blank question cards waits on the visitor side; the source folders are closed behind her.\n\n\"I keep sending people to the wall. I would like to stand there myself for once. But I cannot leave this table open.\"\n\nYou can carry the cards to the wall while she keeps custody here, or watch the closed table while she listens. Either task takes you away from drafting for a moment. Neither earns money or standing.",
+      "sound": {
+        "mood": "ward",
+        "district": "ward"
+      },
+      "segments": [
+        {
+          "text": "I keep sending people to the wall.",
+          "speed": 0.98,
+          "pauseAfter": 0.21
+        },
+        {
+          "text": "I would like to stand there myself for once.",
+          "speed": 0.95,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "But I cannot leave this table open.",
+          "speed": 0.94,
+          "pauseAfter": 0
+        }
+      ],
+      "candidateFile": "/workspace/generated_audio/connected-scenes/v2/voice-campaign-sera-shift-9d3da67ec4a0.mp3",
+      "sha256": "afe1cc7a1383b84f9d34f59176d65e723474ab6f1d0e7ee249c6f177a9d97d73",
+      "bytes": 85868,
+      "sourceFile": "/workspace/generated_audio/connected-scenes/v2/voice-campaign-sera-shift-9d3da67ec4a0-master.wav",
+      "sourceSha256": "c05908e441f2b3808a8a821b839f9c79d8710afa955f13266e25fe6c74231d6a",
+      "pcmDeliveryFile": "/workspace/generated_audio/connected-scenes/v2/voice-campaign-sera-shift-9d3da67ec4a0-pcm.wav",
+      "pcmDeliverySha256": "bbc177b08c85dc31e0405f1e67beca1af7d08b7a4e4006c6d945051bd85c64f7",
+      "parts": [
+        {
+          "text": "I keep sending people to the wall.",
+          "speed": 0.98,
+          "pauseAfter": 0.21,
+          "rawFile": "/workspace/generated_audio/connected-scenes/v2/voice-campaign-sera-shift-9d3da67ec4a0-phrase-0.wav",
+          "rawSha256": "d92e935e55a064240a663e24b0de505312391812d2fe1ad92c516dc4de110500",
+          "rawSeconds": 1.9272916666666666,
+          "retainedSeconds": 1.9272916666666666,
+          "trimmedHeadSeconds": 0.0,
+          "trimmedTailSeconds": 0.0,
+          "startSeconds": 0.0
+        },
+        {
+          "text": "I would like to stand there myself for once.",
+          "speed": 0.95,
+          "pauseAfter": 0.28,
+          "rawFile": "/workspace/generated_audio/connected-scenes/v2/voice-campaign-sera-shift-9d3da67ec4a0-phrase-1.wav",
+          "rawSha256": "8ee59b528619a212c85962bcbc6ea2861a619cca1030ceebadc5ec8bd2811909",
+          "rawSeconds": 2.27,
+          "retainedSeconds": 2.27,
+          "trimmedHeadSeconds": 0.0,
+          "trimmedTailSeconds": 0.0,
+          "startSeconds": 2.1372916666666666
+        },
+        {
+          "text": "But I cannot leave this table open.",
+          "speed": 0.94,
+          "pauseAfter": 0,
+          "rawFile": "/workspace/generated_audio/connected-scenes/v2/voice-campaign-sera-shift-9d3da67ec4a0-phrase-2.wav",
+          "rawSha256": "0613fd4553fa1c96dbd9fdae9b0af9827243203479dec6bed0a4b453dddd0839",
+          "rawSeconds": 2.2259583333333333,
+          "retainedSeconds": 2.2259583333333333,
+          "trimmedHeadSeconds": 0.0,
+          "trimmedTailSeconds": 0.0,
+          "startSeconds": 4.687291666666667
+        }
+      ],
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -5.17,
+      "durationSeconds": 7.07325,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.5483179688453674
+    }
+  ]
+}

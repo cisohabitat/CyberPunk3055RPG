@@ -1,3 +1,4 @@
+import { scenePerformancePath } from './scene-performance';
 import { connectedPerformancePath } from "./connected-performance";
 
 /** Reviewed same-word alternatives only. Original files remain the bounded fallback.
@@ -14,5 +15,5 @@ export const DIRECTED_VOICE_IDS = [
 ] as const;
 const directed = new Set<string>(DIRECTED_VOICE_IDS);
 export function performanceVoicePath(id: string): string | undefined {
-  return connectedPerformancePath(id) ?? (directed.has(id) ? `/audio/performance-direction-v1/${id}.mp3` : undefined);
+  return scenePerformancePath(id) ?? connectedPerformancePath(id) ?? (directed.has(id) ? `/audio/performance-direction-v1/${id}.mp3` : undefined);
 }

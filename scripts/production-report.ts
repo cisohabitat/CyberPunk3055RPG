@@ -1,3 +1,4 @@
+import { SCENE_PERFORMANCE_IDS } from '../lib/scene-performance';
 import { CONNECTED_PERFORMANCE_IDS } from "../lib/connected-performance";
 import { DIRECTED_VOICE_IDS, performanceVoicePath } from "../lib/performance-delivery";
 import { createHash } from "node:crypto";
@@ -70,7 +71,7 @@ for (const [id, direction] of Object.entries(VISUAL_DIRECTIONS)) {
     if (asset && !existsSync(`public${asset}`)) throw new Error(`Missing sequence artwork ${id}: ${asset}`);
   }
 }
-for (const id of [...DIRECTED_VOICE_IDS, ...CONNECTED_PERFORMANCE_IDS]) if (!existsSync(`public${performanceVoicePath(id)}`)) throw new Error(`Missing directed voice ${id}`);
+for (const id of [...DIRECTED_VOICE_IDS, ...CONNECTED_PERFORMANCE_IDS, ...SCENE_PERFORMANCE_IDS]) if (!existsSync(`public${performanceVoicePath(id)}`)) throw new Error(`Missing directed voice ${id}`);
 inventory("public/art", "artwork"); inventory("public/audio", "audio"); inventory(".next/static", "build");
 const violations = budgetViolations(assets, budgets);
 const gates: AcceptanceGate[] = JSON.parse(readFileSync("qa/production/acceptance.json", "utf8"));

@@ -1,0 +1,478 @@
+{
+  "driver": {
+    "name": "kokoro-onnx",
+    "version": "0.6.1",
+    "license": "MIT",
+    "url": "https://github.com/thewh1teagle/kokoro-onnx",
+    "licenseFile": "qa/media/voice-sources/kokoro-onnx-LICENSE.txt"
+  },
+  "model": {
+    "name": "Kokoro-82M v1.0",
+    "license": "Apache-2.0",
+    "card": "https://huggingface.co/hexgrad/Kokoro-82M",
+    "licenseFile": "qa/media/voice-sources/Kokoro-LICENSE.txt",
+    "files": [
+      {
+        "name": "kokoro-v1.0.onnx",
+        "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.onnx",
+        "sha256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+        "bytes": 325505369
+      },
+      {
+        "name": "voices-v1.0.bin",
+        "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin",
+        "sha256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+        "bytes": 28214398
+      }
+    ]
+  },
+  "disclosure": "Stock synthetic voices generated offline with Kokoro v1.0; no actor session or individual voice clone was commissioned. Only the fixed authored quotations below are rendered. No model or speech service ships in the game.",
+  "source": "scripts/direct-scene-voices.py",
+  "method": "Exact words and stock identity; phrase speed/pause direction, conservative -60dB-relative model-padding removal with80ms guards/8ms fades, two-pass -23.5LUFS codec matching,96kbps mono MP3. Masters retained outside Git.",
+  "selected": [
+    {
+      "id": "voice-campaign-dramatic-beats-dceb613b987f",
+      "speaker": "Quill",
+      "voice": "am_michael",
+      "speed": 0.98,
+      "text": "Do not give me an easy yes. I need you to come back with the hour.",
+      "direction": "Quiet practical need; keep the first sentence together, then ask for a real return. No bark or heroic certainty.",
+      "loudnessLufs": -23.5,
+      "previousPath": "public/audio/voice-campaign-dramatic-beats-dceb613b987f.mp3",
+      "previousSha256": "fa122b800d46a8dd180a708ae740957833a69da670d5731912f69cb9033d24a2",
+      "previousSourceGain": 1,
+      "sourceGain": 1,
+      "checkpoint": {
+        "route": "qa/routes/dramatic-sequences/face.json",
+        "scene": "stall",
+        "step": 4,
+        "choice": null
+      },
+      "sceneText": "Quill moves his bowl aside. \"Replay. Mara Voss, Helion logistics. Glass Chapel edits her memory at dawn. Bring me the original hour, intact. Fifty now, two hundred on delivery. Her bodyguard is Kerr. He is paid to stop you.\"\n\nYou came for enough money to keep tomorrow yours. You want the terms before the promises. Somewhere above the rain, a file with your old name is still open.\n\nThe stallholder\u2019s story stays with you. Whose hour are you being asked to carry? Quill has not touched his dinner. You have not agreed to the job.\n\nQuill turns the untouched bowl away from the edge. \"Do not give me an easy yes. I need you to come back with the hour.\"",
+      "sound": {
+        "mood": "street",
+        "district": "stall"
+      },
+      "segments": [
+        {
+          "text": "Do not give me an easy yes.",
+          "speed": 0.98,
+          "pauseAfter": 0.19
+        },
+        {
+          "text": "I need you to come back with the hour.",
+          "speed": 0.94,
+          "pauseAfter": 0
+        }
+      ],
+      "candidateFile": "/workspace/generated_audio/connected-scenes/v1/voice-campaign-dramatic-beats-dceb613b987f.mp3",
+      "sha256": "1b56aa065d3493a3db5693d12d4382bf161cf4d01716c879690bb196033fcb43",
+      "bytes": 59084,
+      "sourceFile": "/workspace/generated_audio/connected-scenes/v1/voice-campaign-dramatic-beats-dceb613b987f-master.wav",
+      "sourceSha256": "0600bd92cb54ee6d2a6ab03fd61368f2ad4f89616a55fb52ac54ac9f8e24b559",
+      "pcmDeliveryFile": "/workspace/generated_audio/connected-scenes/v1/voice-campaign-dramatic-beats-dceb613b987f-pcm.wav",
+      "pcmDeliverySha256": "280789f50af66a0105c01d4e781b174268fe66c84413c5c79a35e6f24a2c3117",
+      "parts": [
+        {
+          "text": "Do not give me an easy yes.",
+          "speed": 0.98,
+          "pauseAfter": 0.19,
+          "rawFile": "/workspace/generated_audio/connected-scenes/v1/voice-campaign-dramatic-beats-dceb613b987f-phrase-0.wav",
+          "rawSha256": "c8288121f91c6e505eac897dcd05f96a4552220dd60c95ed448f0536942f9a6c",
+          "rawSeconds": 2.0906666666666665,
+          "retainedSeconds": 1.985625,
+          "trimmedHeadSeconds": 0.0,
+          "trimmedTailSeconds": 0.10504166666666667,
+          "startSeconds": 0.0
+        },
+        {
+          "text": "I need you to come back with the hour.",
+          "speed": 0.94,
+          "pauseAfter": 0,
+          "rawFile": "/workspace/generated_audio/connected-scenes/v1/voice-campaign-dramatic-beats-dceb613b987f-phrase-1.wav",
+          "rawSha256": "278e04d41767c93aeeaab041238b55add0e48ce1c805da4f709658ca748712f1",
+          "rawSeconds": 2.538666666666667,
+          "retainedSeconds": 2.4985833333333334,
+          "trimmedHeadSeconds": 0.0,
+          "trimmedTailSeconds": 0.04008333333333333,
+          "startSeconds": 2.175625
+        }
+      ],
+      "integratedLufs": -23.49,
+      "truePeakDbtp": -2.05,
+      "durationSeconds": 4.834208333333334,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.7896822690963745
+    },
+    {
+      "id": "voice-campaign-mara-account-3aed03ac8227",
+      "speaker": "Mara",
+      "voice": "af_sarah",
+      "speed": 0.98,
+      "text": "You stayed in that sentence. Thank you. It is harder to talk to someone who keeps disappearing behind the job.",
+      "direction": "A small thanks inside a difficult conversation. Let the final observation stay specific; no absolution or romantic warmth.",
+      "loudnessLufs": -23.5,
+      "previousPath": "public/audio/voice-campaign-mara-account-3aed03ac8227.mp3",
+      "previousSha256": "0b427c02e750b566d4a2e7c9df15d584f4fd54b82a2d3cb09f7b93edcc23c9d0",
+      "previousSourceGain": 1,
+      "sourceGain": 1,
+      "checkpoint": {
+        "route": "qa/routes/dramatic-sequences/both-owned-company.json",
+        "scene": "act2_mara_account_owned",
+        "step": 30,
+        "choice": null
+      },
+      "sceneText": "Mara takes a breath before she answers. The rain has worked a bright line down the window frame.\n\n\"You stayed in that sentence. Thank you. It is harder to talk to someone who keeps disappearing behind the job.\"\n\nShe moves her cup off the unused chair's side of the table. If you return later, there may be something ordinary to ask her about.",
+      "sound": {
+        "mood": "quiet",
+        "district": "clinic"
+      },
+      "segments": [
+        {
+          "text": "You stayed in that sentence.",
+          "speed": 0.99,
+          "pauseAfter": 0.13
+        },
+        {
+          "text": "Thank you.",
+          "speed": 0.96,
+          "pauseAfter": 0.22
+        },
+        {
+          "text": "It is harder to talk to someone who keeps disappearing behind the job.",
+          "speed": 0.98,
+          "pauseAfter": 0
+        }
+      ],
+      "candidateFile": "/workspace/generated_audio/connected-scenes/v1/voice-campaign-mara-account-3aed03ac8227.mp3",
+      "sha256": "be9adbddef1190fe1821486264d3c1ec0896c4cb58e95f5f82eb537f722ef242",
+      "bytes": 82700,
+      "sourceFile": "/workspace/generated_audio/connected-scenes/v1/voice-campaign-mara-account-3aed03ac8227-master.wav",
+      "sourceSha256": "ec94845d3a564f1d5ffc66bf6754f0abb18b3df2af5cdf43afd31fdb268f815d",
+      "pcmDeliveryFile": "/workspace/generated_audio/connected-scenes/v1/voice-campaign-mara-account-3aed03ac8227-pcm.wav",
+      "pcmDeliverySha256": "34198bc69e6bfa21098b3efe084df813d57d8a4e4f5720b0f0909836cc806f6b",
+      "parts": [
+        {
+          "text": "You stayed in that sentence.",
+          "speed": 0.99,
+          "pauseAfter": 0.13,
+          "rawFile": "/workspace/generated_audio/connected-scenes/v1/voice-campaign-mara-account-3aed03ac8227-phrase-0.wav",
+          "rawSha256": "9b4c50ff6a4ec3ce9e54e6f3c58d9742896d6f304f2c0c4d7137103d5f240008",
+          "rawSeconds": 1.696,
+          "retainedSeconds": 1.555,
+          "trimmedHeadSeconds": 0.0,
+          "trimmedTailSeconds": 0.141,
+          "startSeconds": 0.0
+        },
+        {
+          "text": "Thank you.",
+          "speed": 0.96,
+          "pauseAfter": 0.22,
+          "rawFile": "/workspace/generated_audio/connected-scenes/v1/voice-campaign-mara-account-3aed03ac8227-phrase-1.wav",
+          "rawSha256": "1f5b8bfe899d6e8c1dc61f699524731087cd8db6feb7bfbcb5bb45d565d98954",
+          "rawSeconds": 1.0019583333333333,
+          "retainedSeconds": 0.869125,
+          "trimmedHeadSeconds": 0.0,
+          "trimmedTailSeconds": 0.13283333333333333,
+          "startSeconds": 1.685
+        },
+        {
+          "text": "It is harder to talk to someone who keeps disappearing behind the job.",
+          "speed": 0.98,
+          "pauseAfter": 0,
+          "rawFile": "/workspace/generated_audio/connected-scenes/v1/voice-campaign-mara-account-3aed03ac8227-phrase-2.wav",
+          "rawSha256": "1811557b40791642d994fa98b1cc5ce4faefcc92f38fd68594f99c78a4ac8155",
+          "rawSeconds": 4.0,
+          "retainedSeconds": 3.867625,
+          "trimmedHeadSeconds": 0.0,
+          "trimmedTailSeconds": 0.132375,
+          "startSeconds": 2.774125
+        }
+      ],
+      "integratedLufs": -23.51,
+      "truePeakDbtp": -3.52,
+      "durationSeconds": 6.80175,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.6659552454948425
+    },
+    {
+      "id": "voice-campaign-kerr-899d4ba5ecfb",
+      "speaker": "Kerr",
+      "voice": "am_adam",
+      "speed": 0.98,
+      "text": "You showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.",
+      "direction": "Routine source boundary, not menace. Connect source summary and witness exclusion; clarify that an address is unnecessary.",
+      "loudnessLufs": -23.5,
+      "previousPath": "public/audio/voice-campaign-kerr-899d4ba5ecfb.mp3",
+      "previousSha256": "efc7a1dfac22ba92865fc4a7725233f4d4312576b99cb82a7e02ddcaf33b617e",
+      "previousSourceGain": 1,
+      "sourceGain": 1,
+      "checkpoint": {
+        "route": "qa/routes/district-public-work.json",
+        "scene": "act2_district_kerr_reply",
+        "step": null,
+        "choice": "district-kerr-acknowledge"
+      },
+      "sceneText": "\u201cYou showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.\u201d\n\n\u201cMy name went into their register after you promised it wouldn't. Say that before you ask me for another introduction.\u201d\n\nThe counter offers registered sorting work under your own handle. An introduction supplies no payment, recovery, treatment or source. Any earlier breach stays recorded.",
+      "sound": {
+        "mood": "quiet",
+        "district": "street"
+      },
+      "segments": [
+        {
+          "text": "You showed me the source summary.",
+          "speed": 0.99,
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "Leave the witness out of my errands.",
+          "speed": 0.98,
+          "pauseAfter": 0.17
+        },
+        {
+          "text": "I don't need a person's address to ask about a shift.",
+          "speed": 0.97,
+          "pauseAfter": 0
+        }
+      ],
+      "candidateFile": "/workspace/generated_audio/connected-scenes/v1/voice-campaign-kerr-899d4ba5ecfb.mp3",
+      "sha256": "79acfabfd283a50204e6bfc9f7d887d587521b80d2665b6445d3e2fa114707b4",
+      "bytes": 79820,
+      "sourceFile": "/workspace/generated_audio/connected-scenes/v1/voice-campaign-kerr-899d4ba5ecfb-master.wav",
+      "sourceSha256": "fc34200feb02b228ba475bfa6b027b7474cf2dfd55819ee992fc7554154ca442",
+      "pcmDeliveryFile": "/workspace/generated_audio/connected-scenes/v1/voice-campaign-kerr-899d4ba5ecfb-pcm.wav",
+      "pcmDeliverySha256": "fd03dafd4841551960af8cc1bef68a314a6b8296977354b94c68cc26bd67c88f",
+      "parts": [
+        {
+          "text": "You showed me the source summary.",
+          "speed": 0.99,
+          "pauseAfter": 0.16,
+          "rawFile": "/workspace/generated_audio/connected-scenes/v1/voice-campaign-kerr-899d4ba5ecfb-phrase-0.wav",
+          "rawSha256": "cf3068d37a9e2cf9108a1b287faebed573d64db82fa43693a57b4eee6f69cbe8",
+          "rawSeconds": 1.7573333333333334,
+          "retainedSeconds": 1.5898333333333334,
+          "trimmedHeadSeconds": 0.0,
+          "trimmedTailSeconds": 0.1675,
+          "startSeconds": 0.0
+        },
+        {
+          "text": "Leave the witness out of my errands.",
+          "speed": 0.98,
+          "pauseAfter": 0.17,
+          "rawFile": "/workspace/generated_audio/connected-scenes/v1/voice-campaign-kerr-899d4ba5ecfb-phrase-1.wav",
+          "rawSha256": "3330a846cbfa9de930562b4da7b06283daced31cebbdf027b21e531f6908ae84",
+          "rawSeconds": 2.056,
+          "retainedSeconds": 1.8965416666666666,
+          "trimmedHeadSeconds": 0.0,
+          "trimmedTailSeconds": 0.15945833333333334,
+          "startSeconds": 1.7498333333333334
+        },
+        {
+          "text": "I don't need a person's address to ask about a shift.",
+          "speed": 0.97,
+          "pauseAfter": 0,
+          "rawFile": "/workspace/generated_audio/connected-scenes/v1/voice-campaign-kerr-899d4ba5ecfb-phrase-2.wav",
+          "rawSha256": "2254cc1b14f6f0d780ac1ff61432c36a7cc92e8da4834e00960ddb8a21d49ce5",
+          "rawSeconds": 2.7299583333333333,
+          "retainedSeconds": 2.581625,
+          "trimmedHeadSeconds": 0.0,
+          "trimmedTailSeconds": 0.14833333333333334,
+          "startSeconds": 3.816375
+        }
+      ],
+      "integratedLufs": -23.49,
+      "truePeakDbtp": -4.87,
+      "durationSeconds": 6.558,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.570603609085083
+    },
+    {
+      "id": "voice-campaign-sera-shift-9d3da67ec4a0",
+      "speaker": "Sera",
+      "voice": "af_bella",
+      "speed": 0.98,
+      "text": "I keep sending people to the wall. I would like to stand there myself for once. But I cannot leave this table open.",
+      "direction": "A personal wish to leave the table briefly. Differentiate the wish from the practical reason she stays. No martyr speech.",
+      "loudnessLufs": -23.5,
+      "previousPath": "public/audio/voice-campaign-sera-shift-9d3da67ec4a0.mp3",
+      "previousSha256": "7000d312ad041bf1d03f872bc8fd3143328f5516ef1378262179b59612611ba7",
+      "previousSourceGain": 1,
+      "sourceGain": 1,
+      "checkpoint": {
+        "route": "qa/routes/dramatic-sequences/face.json",
+        "scene": "act3_sera_shift",
+        "step": 69,
+        "choice": null
+      },
+      "sceneText": "Sera has a hand on the back of her chair. From the doorway, the wall is only a strip of wet light. A tray of blank question cards waits on the visitor side; the source folders are closed behind her.\n\n\"I keep sending people to the wall. I would like to stand there myself for once. But I cannot leave this table open.\"\n\nYou can carry the cards to the wall while she keeps custody here, or watch the closed table while she listens. Either task takes you away from drafting for a moment. Neither earns money or standing.",
+      "sound": {
+        "mood": "ward",
+        "district": "ward"
+      },
+      "segments": [
+        {
+          "text": "I keep sending people to the wall.",
+          "speed": 0.98,
+          "pauseAfter": 0.21
+        },
+        {
+          "text": "I would like to stand there myself for once.",
+          "speed": 0.95,
+          "pauseAfter": 0.28
+        },
+        {
+          "text": "But I cannot leave this table open.",
+          "speed": 0.94,
+          "pauseAfter": 0
+        }
+      ],
+      "candidateFile": "/workspace/generated_audio/connected-scenes/v2/voice-campaign-sera-shift-9d3da67ec4a0.mp3",
+      "sha256": "afe1cc7a1383b84f9d34f59176d65e723474ab6f1d0e7ee249c6f177a9d97d73",
+      "bytes": 85868,
+      "sourceFile": "/workspace/generated_audio/connected-scenes/v2/voice-campaign-sera-shift-9d3da67ec4a0-master.wav",
+      "sourceSha256": "c05908e441f2b3808a8a821b839f9c79d8710afa955f13266e25fe6c74231d6a",
+      "pcmDeliveryFile": "/workspace/generated_audio/connected-scenes/v2/voice-campaign-sera-shift-9d3da67ec4a0-pcm.wav",
+      "pcmDeliverySha256": "bbc177b08c85dc31e0405f1e67beca1af7d08b7a4e4006c6d945051bd85c64f7",
+      "parts": [
+        {
+          "text": "I keep sending people to the wall.",
+          "speed": 0.98,
+          "pauseAfter": 0.21,
+          "rawFile": "/workspace/generated_audio/connected-scenes/v2/voice-campaign-sera-shift-9d3da67ec4a0-phrase-0.wav",
+          "rawSha256": "d92e935e55a064240a663e24b0de505312391812d2fe1ad92c516dc4de110500",
+          "rawSeconds": 1.9272916666666666,
+          "retainedSeconds": 1.9272916666666666,
+          "trimmedHeadSeconds": 0.0,
+          "trimmedTailSeconds": 0.0,
+          "startSeconds": 0.0
+        },
+        {
+          "text": "I would like to stand there myself for once.",
+          "speed": 0.95,
+          "pauseAfter": 0.28,
+          "rawFile": "/workspace/generated_audio/connected-scenes/v2/voice-campaign-sera-shift-9d3da67ec4a0-phrase-1.wav",
+          "rawSha256": "8ee59b528619a212c85962bcbc6ea2861a619cca1030ceebadc5ec8bd2811909",
+          "rawSeconds": 2.27,
+          "retainedSeconds": 2.27,
+          "trimmedHeadSeconds": 0.0,
+          "trimmedTailSeconds": 0.0,
+          "startSeconds": 2.1372916666666666
+        },
+        {
+          "text": "But I cannot leave this table open.",
+          "speed": 0.94,
+          "pauseAfter": 0,
+          "rawFile": "/workspace/generated_audio/connected-scenes/v2/voice-campaign-sera-shift-9d3da67ec4a0-phrase-2.wav",
+          "rawSha256": "0613fd4553fa1c96dbd9fdae9b0af9827243203479dec6bed0a4b453dddd0839",
+          "rawSeconds": 2.2259583333333333,
+          "retainedSeconds": 2.2259583333333333,
+          "trimmedHeadSeconds": 0.0,
+          "trimmedTailSeconds": 0.0,
+          "startSeconds": 4.687291666666667
+        }
+      ],
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -5.17,
+      "durationSeconds": 7.07325,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.5483179688453674
+    },
+    {
+      "id": "voice-campaign-mara-account-91141bd45474",
+      "speaker": "Mara",
+      "voice": "af_sarah",
+      "speed": 0.98,
+      "text": "A morning market. I used to go before the stalls opened, when nobody wanted anything from me yet. I would like to choose that again.",
+      "direction": "Private tentative hope. Keep the market memory fluid, and the last wish conditional; no recovery, promise or public permission.",
+      "loudnessLufs": -23.5,
+      "previousPath": "public/audio/voice-campaign-mara-account-91141bd45474.mp3",
+      "previousSha256": "5e7dfb000d89e81255e9cc6c426ff233e3529c00a8594b4b6c9da90468e55619",
+      "previousSourceGain": 1,
+      "sourceGain": 1,
+      "checkpoint": {
+        "route": "qa/routes/dramatic-sequences/both-owned-company.json",
+        "scene": "act3_mara_account_question",
+        "step": 45,
+        "choice": null
+      },
+      "sceneText": "You ask what she would do with a morning that belonged to her. Mara watches a shutter opening across the walkway.\n\n\"A morning market. I used to go before the stalls opened, when nobody wanted anything from me yet. I would like to choose that again.\"\n\nShe has offered a hope. You leave it in the room with her.",
+      "sound": {
+        "mood": "quiet",
+        "district": "clinic"
+      },
+      "segments": [
+        {
+          "text": "A morning market.",
+          "speed": 0.98,
+          "pauseAfter": 0.14
+        },
+        {
+          "text": "I used to go before the stalls opened, when nobody wanted anything from me yet.",
+          "speed": 0.99,
+          "pauseAfter": 0.22
+        },
+        {
+          "text": "I would like to choose that again.",
+          "speed": 0.95,
+          "pauseAfter": 0
+        }
+      ],
+      "candidateFile": "/workspace/generated_audio/connected-scenes/v1/voice-campaign-mara-account-91141bd45474.mp3",
+      "sha256": "3b1d0cdb2d9d40c848ef9b0e376d66b63588a08262a52c0bd33453b43ee2b471",
+      "bytes": 94796,
+      "sourceFile": "/workspace/generated_audio/connected-scenes/v1/voice-campaign-mara-account-91141bd45474-master.wav",
+      "sourceSha256": "0b2fcb49c506d06a825aa7af315dc92cc6a6ffd4a1fe4b28ce745e1d7d6477ac",
+      "pcmDeliveryFile": "/workspace/generated_audio/connected-scenes/v1/voice-campaign-mara-account-91141bd45474-pcm.wav",
+      "pcmDeliverySha256": "a28e104605ad8f37069d3ae35726ab7f9c7debec73dbb491699ff589d3cebd6d",
+      "parts": [
+        {
+          "text": "A morning market.",
+          "speed": 0.98,
+          "pauseAfter": 0.14,
+          "rawFile": "/workspace/generated_audio/connected-scenes/v1/voice-campaign-mara-account-91141bd45474-phrase-0.wav",
+          "rawSha256": "bf89f6bdef252b798918132e529e9045ee7cc2d17dd8564a900ce6aee0144714",
+          "rawSeconds": 1.302,
+          "retainedSeconds": 1.165125,
+          "trimmedHeadSeconds": 0.0,
+          "trimmedTailSeconds": 0.136875,
+          "startSeconds": 0.0
+        },
+        {
+          "text": "I used to go before the stalls opened, when nobody wanted anything from me yet.",
+          "speed": 0.99,
+          "pauseAfter": 0.22,
+          "rawFile": "/workspace/generated_audio/connected-scenes/v1/voice-campaign-mara-account-91141bd45474-phrase-1.wav",
+          "rawSha256": "bf04b95788b5abc8ad8a6d1e14904064ea85bf181cabf35ad7abaad1de5de521",
+          "rawSeconds": 4.597333333333333,
+          "retainedSeconds": 4.45625,
+          "trimmedHeadSeconds": 0.0,
+          "trimmedTailSeconds": 0.14108333333333334,
+          "startSeconds": 1.305125
+        },
+        {
+          "text": "I would like to choose that again.",
+          "speed": 0.95,
+          "pauseAfter": 0,
+          "rawFile": "/workspace/generated_audio/connected-scenes/v1/voice-campaign-mara-account-91141bd45474-phrase-2.wav",
+          "rawSha256": "4b168d9db112859849641cc7935019608584f5c22a22484dfac31a96a5a718d3",
+          "rawSeconds": 1.7912916666666667,
+          "retainedSeconds": 1.6586666666666667,
+          "trimmedHeadSeconds": 0.0,
+          "trimmedTailSeconds": 0.132625,
+          "startSeconds": 5.981375
+        }
+      ],
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -3.7,
+      "durationSeconds": 7.801958333333333,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.6500355005264282
+    }
+  ],
+  "candidateEvidence": "qa/editorial/connected-scenes-candidates/"
+}

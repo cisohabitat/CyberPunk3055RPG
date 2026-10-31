@@ -1,0 +1,600 @@
+{
+  "method": "Unprompted faster-whisper base.en CPU int8/beam5; no initial prompt or previous-text conditioning. Exact lowercase/apostrophe/punctuation normalization only. No number/name/tense replacement or omitted words.",
+  "lines": [
+    {
+      "id": "voice-campaign-dramatic-beats-dceb613b987f",
+      "text": "Do not give me an easy yes. I need you to come back with the hour.",
+      "path": "/workspace/generated_audio/connected-scenes/v1/voice-campaign-dramatic-beats-dceb613b987f.mp3",
+      "transcription": "Do not give me an easy yes. I need you to come back with the hour.",
+      "exactNormalizedWords": true,
+      "sha256": "1b56aa065d3493a3db5693d12d4382bf161cf4d01716c879690bb196033fcb43",
+      "durationSeconds": 4.83425,
+      "words": [
+        {
+          "word": " Do",
+          "start": 0.0,
+          "end": 0.26
+        },
+        {
+          "word": " not",
+          "start": 0.26,
+          "end": 0.42
+        },
+        {
+          "word": " give",
+          "start": 0.42,
+          "end": 0.7
+        },
+        {
+          "word": " me",
+          "start": 0.7,
+          "end": 0.88
+        },
+        {
+          "word": " an",
+          "start": 0.88,
+          "end": 1.0
+        },
+        {
+          "word": " easy",
+          "start": 1.0,
+          "end": 1.2
+        },
+        {
+          "word": " yes.",
+          "start": 1.2,
+          "end": 1.64
+        },
+        {
+          "word": " I",
+          "start": 2.46,
+          "end": 2.52
+        },
+        {
+          "word": " need",
+          "start": 2.52,
+          "end": 2.72
+        },
+        {
+          "word": " you",
+          "start": 2.72,
+          "end": 2.92
+        },
+        {
+          "word": " to",
+          "start": 2.92,
+          "end": 3.02
+        },
+        {
+          "word": " come",
+          "start": 3.02,
+          "end": 3.22
+        },
+        {
+          "word": " back",
+          "start": 3.22,
+          "end": 3.48
+        },
+        {
+          "word": " with",
+          "start": 3.48,
+          "end": 3.7
+        },
+        {
+          "word": " the",
+          "start": 3.7,
+          "end": 3.84
+        },
+        {
+          "word": " hour.",
+          "start": 3.84,
+          "end": 4.2
+        }
+      ]
+    },
+    {
+      "id": "voice-campaign-mara-account-3aed03ac8227",
+      "text": "You stayed in that sentence. Thank you. It is harder to talk to someone who keeps disappearing behind the job.",
+      "path": "/workspace/generated_audio/connected-scenes/v1/voice-campaign-mara-account-3aed03ac8227.mp3",
+      "transcription": "You stayed in that sentence. Thank you. It is harder to talk to someone who keeps disappearing behind the job.",
+      "exactNormalizedWords": true,
+      "sha256": "be9adbddef1190fe1821486264d3c1ec0896c4cb58e95f5f82eb537f722ef242",
+      "durationSeconds": 6.80175,
+      "words": [
+        {
+          "word": " You",
+          "start": 0.0,
+          "end": 0.22
+        },
+        {
+          "word": " stayed",
+          "start": 0.22,
+          "end": 0.44
+        },
+        {
+          "word": " in",
+          "start": 0.44,
+          "end": 0.64
+        },
+        {
+          "word": " that",
+          "start": 0.64,
+          "end": 0.76
+        },
+        {
+          "word": " sentence.",
+          "start": 0.76,
+          "end": 1.24
+        },
+        {
+          "word": " Thank",
+          "start": 1.9,
+          "end": 1.96
+        },
+        {
+          "word": " you.",
+          "start": 1.96,
+          "end": 2.26
+        },
+        {
+          "word": " It",
+          "start": 2.86,
+          "end": 2.96
+        },
+        {
+          "word": " is",
+          "start": 2.96,
+          "end": 3.1
+        },
+        {
+          "word": " harder",
+          "start": 3.1,
+          "end": 3.36
+        },
+        {
+          "word": " to",
+          "start": 3.36,
+          "end": 3.6
+        },
+        {
+          "word": " talk",
+          "start": 3.6,
+          "end": 3.82
+        },
+        {
+          "word": " to",
+          "start": 3.82,
+          "end": 4.02
+        },
+        {
+          "word": " someone",
+          "start": 4.02,
+          "end": 4.38
+        },
+        {
+          "word": " who",
+          "start": 4.38,
+          "end": 4.82
+        },
+        {
+          "word": " keeps",
+          "start": 4.82,
+          "end": 5.02
+        },
+        {
+          "word": " disappearing",
+          "start": 5.02,
+          "end": 5.42
+        },
+        {
+          "word": " behind",
+          "start": 5.42,
+          "end": 5.96
+        },
+        {
+          "word": " the",
+          "start": 5.96,
+          "end": 6.14
+        },
+        {
+          "word": " job.",
+          "start": 6.14,
+          "end": 6.38
+        }
+      ]
+    },
+    {
+      "id": "voice-campaign-kerr-899d4ba5ecfb",
+      "text": "You showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.",
+      "path": "/workspace/generated_audio/connected-scenes/v1/voice-campaign-kerr-899d4ba5ecfb.mp3",
+      "transcription": "You showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.",
+      "exactNormalizedWords": true,
+      "sha256": "79acfabfd283a50204e6bfc9f7d887d587521b80d2665b6445d3e2fa114707b4",
+      "durationSeconds": 6.558,
+      "words": [
+        {
+          "word": " You",
+          "start": 0.0,
+          "end": 0.18
+        },
+        {
+          "word": " showed",
+          "start": 0.18,
+          "end": 0.36
+        },
+        {
+          "word": " me",
+          "start": 0.36,
+          "end": 0.58
+        },
+        {
+          "word": " the",
+          "start": 0.58,
+          "end": 0.7
+        },
+        {
+          "word": " source",
+          "start": 0.7,
+          "end": 0.88
+        },
+        {
+          "word": " summary.",
+          "start": 0.88,
+          "end": 1.32
+        },
+        {
+          "word": " Leave",
+          "start": 1.94,
+          "end": 1.98
+        },
+        {
+          "word": " the",
+          "start": 1.98,
+          "end": 2.16
+        },
+        {
+          "word": " witness",
+          "start": 2.16,
+          "end": 2.44
+        },
+        {
+          "word": " out",
+          "start": 2.44,
+          "end": 2.78
+        },
+        {
+          "word": " of",
+          "start": 2.78,
+          "end": 2.88
+        },
+        {
+          "word": " my",
+          "start": 2.88,
+          "end": 3.0
+        },
+        {
+          "word": " errands.",
+          "start": 3.0,
+          "end": 3.46
+        },
+        {
+          "word": " I",
+          "start": 3.92,
+          "end": 3.98
+        },
+        {
+          "word": " don't",
+          "start": 3.98,
+          "end": 4.18
+        },
+        {
+          "word": " need",
+          "start": 4.18,
+          "end": 4.28
+        },
+        {
+          "word": " a",
+          "start": 4.28,
+          "end": 4.34
+        },
+        {
+          "word": " person's",
+          "start": 4.34,
+          "end": 4.82
+        },
+        {
+          "word": " address",
+          "start": 4.82,
+          "end": 5.06
+        },
+        {
+          "word": " to",
+          "start": 5.06,
+          "end": 5.32
+        },
+        {
+          "word": " ask",
+          "start": 5.32,
+          "end": 5.5
+        },
+        {
+          "word": " about",
+          "start": 5.5,
+          "end": 5.76
+        },
+        {
+          "word": " a",
+          "start": 5.76,
+          "end": 5.9
+        },
+        {
+          "word": " shift.",
+          "start": 5.9,
+          "end": 6.18
+        }
+      ]
+    },
+    {
+      "id": "voice-campaign-sera-shift-9d3da67ec4a0",
+      "text": "I keep sending people to the wall. I would like to stand there myself for once. But I cannot leave this table open.",
+      "path": "/workspace/generated_audio/connected-scenes/v2/voice-campaign-sera-shift-9d3da67ec4a0.mp3",
+      "transcription": "I keep sending people to the wall. I would like to stand there myself for once, but I cannot leave this table open.",
+      "exactNormalizedWords": true,
+      "sha256": "afe1cc7a1383b84f9d34f59176d65e723474ab6f1d0e7ee249c6f177a9d97d73",
+      "durationSeconds": 7.07325,
+      "words": [
+        {
+          "word": " I",
+          "start": 0.0,
+          "end": 0.18
+        },
+        {
+          "word": " keep",
+          "start": 0.18,
+          "end": 0.34
+        },
+        {
+          "word": " sending",
+          "start": 0.34,
+          "end": 0.64
+        },
+        {
+          "word": " people",
+          "start": 0.64,
+          "end": 1.08
+        },
+        {
+          "word": " to",
+          "start": 1.08,
+          "end": 1.26
+        },
+        {
+          "word": " the",
+          "start": 1.26,
+          "end": 1.34
+        },
+        {
+          "word": " wall.",
+          "start": 1.34,
+          "end": 1.54
+        },
+        {
+          "word": " I",
+          "start": 2.26,
+          "end": 2.3
+        },
+        {
+          "word": " would",
+          "start": 2.3,
+          "end": 2.4
+        },
+        {
+          "word": " like",
+          "start": 2.4,
+          "end": 2.52
+        },
+        {
+          "word": " to",
+          "start": 2.52,
+          "end": 2.64
+        },
+        {
+          "word": " stand",
+          "start": 2.64,
+          "end": 2.84
+        },
+        {
+          "word": " there",
+          "start": 2.84,
+          "end": 3.08
+        },
+        {
+          "word": " myself",
+          "start": 3.08,
+          "end": 3.46
+        },
+        {
+          "word": " for",
+          "start": 3.46,
+          "end": 3.76
+        },
+        {
+          "word": " once,",
+          "start": 3.76,
+          "end": 4.0
+        },
+        {
+          "word": " but",
+          "start": 4.56,
+          "end": 4.84
+        },
+        {
+          "word": " I",
+          "start": 4.84,
+          "end": 4.96
+        },
+        {
+          "word": " cannot",
+          "start": 4.96,
+          "end": 5.14
+        },
+        {
+          "word": " leave",
+          "start": 5.14,
+          "end": 5.54
+        },
+        {
+          "word": " this",
+          "start": 5.54,
+          "end": 5.78
+        },
+        {
+          "word": " table",
+          "start": 5.78,
+          "end": 6.02
+        },
+        {
+          "word": " open.",
+          "start": 6.02,
+          "end": 6.52
+        }
+      ]
+    },
+    {
+      "id": "voice-campaign-mara-account-91141bd45474",
+      "text": "A morning market. I used to go before the stalls opened, when nobody wanted anything from me yet. I would like to choose that again.",
+      "path": "/workspace/generated_audio/connected-scenes/v1/voice-campaign-mara-account-91141bd45474.mp3",
+      "transcription": "A morning market, I used to go before the stalls opened, when nobody wanted anything from me yet. I would like to choose that again.",
+      "exactNormalizedWords": true,
+      "sha256": "3b1d0cdb2d9d40c848ef9b0e376d66b63588a08262a52c0bd33453b43ee2b471",
+      "durationSeconds": 7.802,
+      "words": [
+        {
+          "word": " A",
+          "start": 0.0,
+          "end": 0.2
+        },
+        {
+          "word": " morning",
+          "start": 0.2,
+          "end": 0.38
+        },
+        {
+          "word": " market,",
+          "start": 0.38,
+          "end": 0.84
+        },
+        {
+          "word": " I",
+          "start": 1.42,
+          "end": 1.5
+        },
+        {
+          "word": " used",
+          "start": 1.5,
+          "end": 1.68
+        },
+        {
+          "word": " to",
+          "start": 1.68,
+          "end": 1.84
+        },
+        {
+          "word": " go",
+          "start": 1.84,
+          "end": 2.0
+        },
+        {
+          "word": " before",
+          "start": 2.0,
+          "end": 2.24
+        },
+        {
+          "word": " the",
+          "start": 2.24,
+          "end": 2.44
+        },
+        {
+          "word": " stalls",
+          "start": 2.44,
+          "end": 2.6
+        },
+        {
+          "word": " opened,",
+          "start": 2.6,
+          "end": 3.14
+        },
+        {
+          "word": " when",
+          "start": 3.62,
+          "end": 3.82
+        },
+        {
+          "word": " nobody",
+          "start": 3.82,
+          "end": 4.06
+        },
+        {
+          "word": " wanted",
+          "start": 4.06,
+          "end": 4.48
+        },
+        {
+          "word": " anything",
+          "start": 4.48,
+          "end": 4.84
+        },
+        {
+          "word": " from",
+          "start": 4.84,
+          "end": 5.18
+        },
+        {
+          "word": " me",
+          "start": 5.18,
+          "end": 5.32
+        },
+        {
+          "word": " yet.",
+          "start": 5.32,
+          "end": 5.52
+        },
+        {
+          "word": " I",
+          "start": 6.1,
+          "end": 6.18
+        },
+        {
+          "word": " would",
+          "start": 6.18,
+          "end": 6.28
+        },
+        {
+          "word": " like",
+          "start": 6.28,
+          "end": 6.44
+        },
+        {
+          "word": " to",
+          "start": 6.44,
+          "end": 6.62
+        },
+        {
+          "word": " choose",
+          "start": 6.62,
+          "end": 6.82
+        },
+        {
+          "word": " that",
+          "start": 6.82,
+          "end": 7.12
+        },
+        {
+          "word": " again.",
+          "start": 7.12,
+          "end": 7.36
+        }
+      ]
+    }
+  ]
+}

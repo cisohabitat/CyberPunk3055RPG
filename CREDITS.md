@@ -204,3 +204,7 @@ Ten additional Phase16 quotations retain Quill’s `am_michael` and Edda’s `af
 ## Phase18 dramatic-sequence paintings
 
 Five Quill/Edda/Mara paintings were generated with OpenAI image generation from the existing cast references on31October2026. Full masters remain outside Git; ten proportional JPEG exports, hashes, references and direction are recorded in `qa/media/dramatic-sequences-provenance.json`. These are synthetic images; no commissioned artist or independent anatomy acceptance is claimed. Original art and all exact stock-cast dialogue remain unchanged.
+
+## Phase19 connected-scene preferences
+
+Five selected offline Kokoro performances retain the established stock Quill, Mara, Sera and Kerr cast and pinned MIT driver/Apache2.0 model licenses. No commissioned performer or voice clone is introduced. Scripts, source/model/delivery hashes, conservative phrase-padding guards, loudness measurements and exact unprompted transcripts are in `qa/media/connected-scenes-*.json`. All eleven candidate deliveries and raw transcripts remain in the editorial candidate directory; original public recordings and all artwork remain intact. Technical matching and internal direction do not imply independent acting acceptance.

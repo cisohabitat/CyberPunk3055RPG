@@ -1,0 +1,180 @@
+{
+  "generatedAt": "2026-10-31T14:36:24.128346+00:00",
+  "source": "scripts/direct-scene-voices.py",
+  "driver": {
+    "name": "kokoro-onnx",
+    "version": "0.6.1",
+    "license": "MIT",
+    "url": "https://github.com/thewh1teagle/kokoro-onnx",
+    "licenseFile": "qa/media/voice-sources/kokoro-onnx-LICENSE.txt"
+  },
+  "model": {
+    "name": "Kokoro-82M v1.0",
+    "license": "Apache-2.0",
+    "card": "https://huggingface.co/hexgrad/Kokoro-82M",
+    "licenseFile": "qa/media/voice-sources/Kokoro-LICENSE.txt",
+    "files": [
+      {
+        "name": "kokoro-v1.0.onnx",
+        "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.onnx",
+        "sha256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+        "bytes": 325505369
+      },
+      {
+        "name": "voices-v1.0.bin",
+        "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin",
+        "sha256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+        "bytes": 28214398
+      }
+    ]
+  },
+  "disclosure": "Stock synthetic voices generated offline with Kokoro v1.0; no actor session or individual voice clone was commissioned. Only the fixed authored quotations below are rendered. No model or speech service ships in the game.",
+  "method": "Exact words and stock identity; phrase speed/pause direction, conservative -60dB-relative model-padding removal with80ms guards/8ms fades, two-pass -23.5LUFS codec matching,96kbps mono MP3. Masters retained outside Git.",
+  "linesPath": "qa/editorial/connected-scenes-edda-retake-lines.json",
+  "linesSha256": "7a9624bc03835187a41ab9b9dea20f5329e874a7a1b03c54bf46600b6c6a7b9c",
+  "lines": [
+    {
+      "id": "voice-campaign-dramatic-beats-ebb05f183613",
+      "speaker": "Edda",
+      "voice": "af_kore",
+      "speed": 0.98,
+      "text": "A fee, an old number, a signature. Each leaves someone carrying this request. I want to know which part you are asking me to carry.",
+      "direction": "Name three distinct costs with a connected list. Practical boundaries and tired attention, not accusation or consent beyond the request.",
+      "loudnessLufs": -23.5,
+      "previousPath": "public/audio/voice-campaign-dramatic-beats-ebb05f183613.mp3",
+      "previousSha256": "f74cd28bba8e211a32e1e4e5ed6165104279b8f85a0bad7ce637d41814201eb1",
+      "previousSourceGain": 1,
+      "sourceGain": 1,
+      "checkpoint": {
+        "route": "qa/routes/dramatic-sequences/face.json",
+        "scene": "act2_craft_archive_ledger",
+        "step": 46,
+        "choice": null
+      },
+      "sceneText": "Edda lays a narrow request form over the movement locator. The worker roster does not go on it.\n\nEdda smooths the request form once. Her hand stops above the signature line.\n\n\"A fee, an old number, a signature. Each leaves someone carrying this request. I want to know which part you are asking me to carry.\"\n\nShe can help carry this bounded record. The families stay out of the request.\n\nA staffed movement-page extraction costs twenty-five creds and logs a query. A Spire employee can bill it to the old badge, adding its trace. Earned Face training lets you ask Edda for a bounded countersignature instead: she agrees to this extraction, and her employer can identify her signed shift. None of these methods tests an issuing key.",
+      "sound": {
+        "mood": "quiet",
+        "district": "spire"
+      },
+      "segments": [
+        {
+          "text": "A fee,",
+          "speed": 0.95,
+          "pauseAfter": 0.14
+        },
+        {
+          "text": "an old number,",
+          "speed": 0.9,
+          "pauseAfter": 0.16
+        },
+        {
+          "text": "a signature.",
+          "speed": 0.95,
+          "pauseAfter": 0.27
+        },
+        {
+          "text": "Each leaves",
+          "speed": 0.84,
+          "pauseAfter": 0.13
+        },
+        {
+          "text": "someone carrying this request.",
+          "speed": 0.95,
+          "pauseAfter": 0.24
+        },
+        {
+          "text": "I want to know which part you are asking me to carry.",
+          "speed": 0.95,
+          "pauseAfter": 0
+        }
+      ],
+      "candidateFile": "/workspace/generated_audio/connected-scenes/v3/voice-campaign-dramatic-beats-ebb05f183613.mp3",
+      "sha256": "d692143c6d590f945bbb8399d786ffc963656a26d59e68d6cc67e147989f2064",
+      "bytes": 119276,
+      "sourceFile": "/workspace/generated_audio/connected-scenes/v3/voice-campaign-dramatic-beats-ebb05f183613-master.wav",
+      "sourceSha256": "5b838a6634bf94ab83fba3af08ad873d09d651afc3c86e6d2507a4779c705366",
+      "pcmDeliveryFile": "/workspace/generated_audio/connected-scenes/v3/voice-campaign-dramatic-beats-ebb05f183613-pcm.wav",
+      "pcmDeliverySha256": "53ca3b1131bf27ca453d5746ba317561b8b8101c8313f836743b1e9f76624aad",
+      "parts": [
+        {
+          "text": "A fee,",
+          "speed": 0.95,
+          "pauseAfter": 0.14,
+          "rawFile": "/workspace/generated_audio/connected-scenes/v3/voice-campaign-dramatic-beats-ebb05f183613-phrase-0.wav",
+          "rawSha256": "2716cefc9a0dafb6ed8eb7c68162ca0974be4d5c0e8c20784c4516e19d0e2767",
+          "rawSeconds": 0.7253333333333334,
+          "retainedSeconds": 0.7253333333333334,
+          "trimmedHeadSeconds": 0.0,
+          "trimmedTailSeconds": 0.0,
+          "startSeconds": 0.0
+        },
+        {
+          "text": "an old number,",
+          "speed": 0.9,
+          "pauseAfter": 0.16,
+          "rawFile": "/workspace/generated_audio/connected-scenes/v3/voice-campaign-dramatic-beats-ebb05f183613-phrase-1.wav",
+          "rawSha256": "0897a14cc48b27f39e365b674de9f42aa5af1523745239709d6d8b19885f319b",
+          "rawSeconds": 1.0453333333333332,
+          "retainedSeconds": 1.0453333333333332,
+          "trimmedHeadSeconds": 0.0,
+          "trimmedTailSeconds": 0.0,
+          "startSeconds": 0.8653333333333333
+        },
+        {
+          "text": "a signature.",
+          "speed": 0.95,
+          "pauseAfter": 0.27,
+          "rawFile": "/workspace/generated_audio/connected-scenes/v3/voice-campaign-dramatic-beats-ebb05f183613-phrase-2.wav",
+          "rawSha256": "e4d24c11cd8a2de0b153cdcc73ffc48d446c66b2157464214671f53e4c308936",
+          "rawSeconds": 1.09,
+          "retainedSeconds": 1.09,
+          "trimmedHeadSeconds": 0.0,
+          "trimmedTailSeconds": 0.0,
+          "startSeconds": 2.070666666666667
+        },
+        {
+          "text": "Each leaves",
+          "speed": 0.84,
+          "pauseAfter": 0.13,
+          "rawFile": "/workspace/generated_audio/connected-scenes/v3/voice-campaign-dramatic-beats-ebb05f183613-phrase-3.wav",
+          "rawSha256": "1937c08e80fb56dc413ec90f3ec68aa28559788a81fd0b241d8550a396c00156",
+          "rawSeconds": 1.024,
+          "retainedSeconds": 1.024,
+          "trimmedHeadSeconds": 0.0,
+          "trimmedTailSeconds": 0.0,
+          "startSeconds": 3.4306666666666668
+        },
+        {
+          "text": "someone carrying this request.",
+          "speed": 0.95,
+          "pauseAfter": 0.24,
+          "rawFile": "/workspace/generated_audio/connected-scenes/v3/voice-campaign-dramatic-beats-ebb05f183613-phrase-4.wav",
+          "rawSha256": "66442ffd7eeee2f7c217a49e99b83b50dea563ec439643ac682bff15ef9b8adc",
+          "rawSeconds": 1.8932916666666666,
+          "retainedSeconds": 1.8932916666666666,
+          "trimmedHeadSeconds": 0.0,
+          "trimmedTailSeconds": 0.0,
+          "startSeconds": 4.584666666666666
+        },
+        {
+          "text": "I want to know which part you are asking me to carry.",
+          "speed": 0.95,
+          "pauseAfter": 0,
+          "rawFile": "/workspace/generated_audio/connected-scenes/v3/voice-campaign-dramatic-beats-ebb05f183613-phrase-5.wav",
+          "rawSha256": "e528a3da2fe59e2a1bc9b964cb5528d7df78372597e0c1362229c20ea7da9f1b",
+          "rawSeconds": 2.965333333333333,
+          "retainedSeconds": 2.965333333333333,
+          "trimmedHeadSeconds": 0.0,
+          "trimmedTailSeconds": 0.0,
+          "startSeconds": 6.717958333333334
+        }
+      ],
+      "integratedLufs": -23.5,
+      "truePeakDbtp": -5.59,
+      "durationSeconds": 9.843291666666667,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.5224603414535522
+    }
+  ]
+}

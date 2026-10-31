@@ -1,0 +1,268 @@
+{
+  "model": "faster-whisper base.en",
+  "method": "Unprompted CPU int8, beam5, no initial prompt, no conditioning on previous text; lowercase/apostrophe/punctuation normalization only",
+  "lines": [
+    {
+      "id": "voice-campaign-dramatic-beats-ebb05f183613",
+      "text": "A fee, an old number, a signature. Each leaves someone carrying this request. I want to know which part you are asking me to carry.",
+      "path": "/workspace/generated_audio/connected-scenes/v2/voice-campaign-dramatic-beats-ebb05f183613.mp3",
+      "transcription": "A fee, an old number, a signature. Each leave someone carrying this request. I want to know which part you are asking me to carry.",
+      "exactNormalizedWords": false,
+      "sha256": "34fd64950af14be950565011f06187171ad6e8ec78704461b56afd5ea6a5c22b",
+      "durationSeconds": 9.1313125,
+      "words": [
+        {
+          "word": " A",
+          "start": 0.0,
+          "end": 0.16
+        },
+        {
+          "word": " fee,",
+          "start": 0.16,
+          "end": 0.36
+        },
+        {
+          "word": " an",
+          "start": 0.9,
+          "end": 1.06
+        },
+        {
+          "word": " old",
+          "start": 1.06,
+          "end": 1.22
+        },
+        {
+          "word": " number,",
+          "start": 1.22,
+          "end": 1.54
+        },
+        {
+          "word": " a",
+          "start": 2.1,
+          "end": 2.2
+        },
+        {
+          "word": " signature.",
+          "start": 2.2,
+          "end": 2.58
+        },
+        {
+          "word": " Each",
+          "start": 3.58,
+          "end": 3.62
+        },
+        {
+          "word": " leave",
+          "start": 3.62,
+          "end": 3.88
+        },
+        {
+          "word": " someone",
+          "start": 3.88,
+          "end": 4.2
+        },
+        {
+          "word": " carrying",
+          "start": 4.2,
+          "end": 4.54
+        },
+        {
+          "word": " this",
+          "start": 4.54,
+          "end": 4.92
+        },
+        {
+          "word": " request.",
+          "start": 4.92,
+          "end": 5.26
+        },
+        {
+          "word": " I",
+          "start": 6.14,
+          "end": 6.22
+        },
+        {
+          "word": " want",
+          "start": 6.22,
+          "end": 6.4
+        },
+        {
+          "word": " to",
+          "start": 6.4,
+          "end": 6.52
+        },
+        {
+          "word": " know",
+          "start": 6.52,
+          "end": 6.7
+        },
+        {
+          "word": " which",
+          "start": 6.7,
+          "end": 6.98
+        },
+        {
+          "word": " part",
+          "start": 6.98,
+          "end": 7.24
+        },
+        {
+          "word": " you",
+          "start": 7.24,
+          "end": 7.44
+        },
+        {
+          "word": " are",
+          "start": 7.44,
+          "end": 7.56
+        },
+        {
+          "word": " asking",
+          "start": 7.56,
+          "end": 7.92
+        },
+        {
+          "word": " me",
+          "start": 7.92,
+          "end": 8.14
+        },
+        {
+          "word": " to",
+          "start": 8.14,
+          "end": 8.22
+        },
+        {
+          "word": " carry.",
+          "start": 8.22,
+          "end": 8.5
+        }
+      ]
+    },
+    {
+      "id": "voice-campaign-sera-shift-9d3da67ec4a0",
+      "text": "I keep sending people to the wall. I would like to stand there myself for once. But I cannot leave this table open.",
+      "path": "/workspace/generated_audio/connected-scenes/v2/voice-campaign-sera-shift-9d3da67ec4a0.mp3",
+      "transcription": "I keep sending people to the wall. I would like to stand there myself for once, but I cannot leave this table open.",
+      "exactNormalizedWords": true,
+      "sha256": "afe1cc7a1383b84f9d34f59176d65e723474ab6f1d0e7ee249c6f177a9d97d73",
+      "durationSeconds": 7.07325,
+      "words": [
+        {
+          "word": " I",
+          "start": 0.0,
+          "end": 0.18
+        },
+        {
+          "word": " keep",
+          "start": 0.18,
+          "end": 0.34
+        },
+        {
+          "word": " sending",
+          "start": 0.34,
+          "end": 0.64
+        },
+        {
+          "word": " people",
+          "start": 0.64,
+          "end": 1.08
+        },
+        {
+          "word": " to",
+          "start": 1.08,
+          "end": 1.26
+        },
+        {
+          "word": " the",
+          "start": 1.26,
+          "end": 1.34
+        },
+        {
+          "word": " wall.",
+          "start": 1.34,
+          "end": 1.54
+        },
+        {
+          "word": " I",
+          "start": 2.26,
+          "end": 2.3
+        },
+        {
+          "word": " would",
+          "start": 2.3,
+          "end": 2.4
+        },
+        {
+          "word": " like",
+          "start": 2.4,
+          "end": 2.52
+        },
+        {
+          "word": " to",
+          "start": 2.52,
+          "end": 2.64
+        },
+        {
+          "word": " stand",
+          "start": 2.64,
+          "end": 2.84
+        },
+        {
+          "word": " there",
+          "start": 2.84,
+          "end": 3.08
+        },
+        {
+          "word": " myself",
+          "start": 3.08,
+          "end": 3.46
+        },
+        {
+          "word": " for",
+          "start": 3.46,
+          "end": 3.76
+        },
+        {
+          "word": " once,",
+          "start": 3.76,
+          "end": 4.0
+        },
+        {
+          "word": " but",
+          "start": 4.56,
+          "end": 4.84
+        },
+        {
+          "word": " I",
+          "start": 4.84,
+          "end": 4.96
+        },
+        {
+          "word": " cannot",
+          "start": 4.96,
+          "end": 5.14
+        },
+        {
+          "word": " leave",
+          "start": 5.14,
+          "end": 5.54
+        },
+        {
+          "word": " this",
+          "start": 5.54,
+          "end": 5.78
+        },
+        {
+          "word": " table",
+          "start": 5.78,
+          "end": 6.02
+        },
+        {
+          "word": " open.",
+          "start": 6.02,
+          "end": 6.52
+        }
+      ]
+    }
+  ]
+}

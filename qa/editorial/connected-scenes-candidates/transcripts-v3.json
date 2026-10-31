@@ -1,0 +1,142 @@
+{
+  "model": "faster-whisper base.en",
+  "method": "Unprompted CPU int8, beam5, no initial prompt, no conditioning on previous text; lowercase/apostrophe/punctuation normalization only",
+  "lines": [
+    {
+      "id": "voice-campaign-dramatic-beats-ebb05f183613",
+      "text": "A fee, an old number, a signature. Each leaves someone carrying this request. I want to know which part you are asking me to carry.",
+      "path": "/workspace/generated_audio/connected-scenes/v3/voice-campaign-dramatic-beats-ebb05f183613.mp3",
+      "transcription": "A fee. An old number. A signature. Each leaves. Someone carrying this request. I want to know which part you are asking me to carry.",
+      "exactNormalizedWords": true,
+      "sha256": "d692143c6d590f945bbb8399d786ffc963656a26d59e68d6cc67e147989f2064",
+      "durationSeconds": 9.8433125,
+      "words": [
+        {
+          "word": " A",
+          "start": 0.0,
+          "end": 0.16
+        },
+        {
+          "word": " fee.",
+          "start": 0.16,
+          "end": 0.4
+        },
+        {
+          "word": " An",
+          "start": 0.92,
+          "end": 1.04
+        },
+        {
+          "word": " old",
+          "start": 1.04,
+          "end": 1.2
+        },
+        {
+          "word": " number.",
+          "start": 1.2,
+          "end": 1.56
+        },
+        {
+          "word": " A",
+          "start": 2.12,
+          "end": 2.22
+        },
+        {
+          "word": " signature.",
+          "start": 2.22,
+          "end": 2.58
+        },
+        {
+          "word": " Each",
+          "start": 3.48,
+          "end": 3.68
+        },
+        {
+          "word": " leaves.",
+          "start": 3.68,
+          "end": 4.02
+        },
+        {
+          "word": " Someone",
+          "start": 4.66,
+          "end": 4.88
+        },
+        {
+          "word": " carrying",
+          "start": 4.88,
+          "end": 5.22
+        },
+        {
+          "word": " this",
+          "start": 5.22,
+          "end": 5.58
+        },
+        {
+          "word": " request.",
+          "start": 5.58,
+          "end": 5.94
+        },
+        {
+          "word": " I",
+          "start": 6.78,
+          "end": 6.9
+        },
+        {
+          "word": " want",
+          "start": 6.9,
+          "end": 7.08
+        },
+        {
+          "word": " to",
+          "start": 7.08,
+          "end": 7.2
+        },
+        {
+          "word": " know",
+          "start": 7.2,
+          "end": 7.36
+        },
+        {
+          "word": " which",
+          "start": 7.36,
+          "end": 7.6
+        },
+        {
+          "word": " part",
+          "start": 7.6,
+          "end": 7.9
+        },
+        {
+          "word": " you",
+          "start": 7.9,
+          "end": 8.12
+        },
+        {
+          "word": " are",
+          "start": 8.12,
+          "end": 8.26
+        },
+        {
+          "word": " asking",
+          "start": 8.26,
+          "end": 8.6
+        },
+        {
+          "word": " me",
+          "start": 8.6,
+          "end": 8.82
+        },
+        {
+          "word": " to",
+          "start": 8.82,
+          "end": 8.92
+        },
+        {
+          "word": " carry.",
+          "start": 8.92,
+          "end": 9.18
+        }
+      ]
+    }
+  ]
+}

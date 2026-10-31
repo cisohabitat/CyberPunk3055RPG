@@ -1,3 +1,4 @@
+import { isConnectedScenesFile } from './connected-scenes-cohort';
 import phase from '../media/dramatic-sequences.json';
 /** Only exact named assets/manifests/routes are additive. */
-export const isDramaticSequencesFile=(path:string)=>phase.newMedia.includes(path)||phase.newManifests.includes(path)||phase.newRoutes.includes(path);
+export const isDramaticSequencesFile=(path:string)=>isConnectedScenesFile(path)||phase.newMedia.includes(path)||phase.newManifests.includes(path)||phase.newRoutes.includes(path);

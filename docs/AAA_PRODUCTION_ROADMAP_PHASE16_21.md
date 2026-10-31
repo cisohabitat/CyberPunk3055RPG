@@ -73,6 +73,8 @@ Create both an actual-delivery scene comparison and a separately labeled loudnes
 
 **Exit:** retained before/current whole scenes support the stated performance choices, with technical ASR/signal evidence clearly separate from expressive judgment. All selected deliveries complete naturally, identify the right visible speaker/words, remain intelligible over the actual beds under the accepted proxy, and preserve Stop/mute/manual/paragraph/zero-volume/cache/missing-file/late-cancellation behavior. Keep hardware and independent listening limits stated; never present an ASR match as an acting score.
 
+Phase19 implementation and selection evidence is documented in [the connected-performance report](CONNECTED_PERFORMANCE_PHASE19.md): five selected deliveries, three retained originals, complete-sequence actual/matched comparisons and a scoped cached-fallback level policy. Candidate and exact-commit publication evidence remain separate.
+
 ## Phase 20 — remaining navigation and release robustness
 
 **Purpose:** protect the preceding craft while addressing observed interaction and coverage costs. Current raw workshop exit travel is 5,061 px at enlarged 390 px; the review link helps, and the original26 campaigns visit 152 distinct UI scenes rather than every source id.

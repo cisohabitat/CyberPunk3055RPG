@@ -1,3 +1,4 @@
+import { scenePerformanceLevel } from './scene-performance';
 import { performanceVoicePath } from "./performance-delivery";
 import type { Preferences } from "./preferences";
 import type { GameState } from "./types";
@@ -36,6 +37,8 @@ let diceCueTicket = 0;
 let diceCueSource: AudioSource | null = null;
 const buses = new Map<string, GainNode>();
 const cache = new Map<string, AudioBuffer>();
+// Weak keys preserve the existing cache/source disposal budget.
+const decodedVoiceLevels = new WeakMap<AudioBuffer, number>();
 const loading = new Map<string, Promise<AudioBuffer>>();
 let titleRequest: AbortController | null = null;
 const CACHE_BYTES = 24 * 1024 * 1024;
@@ -95,6 +98,8 @@ async function load(name: string) {
         const response = await fetch(path, { signal: controller?.signal });
         if (!response.ok) throw new Error("Audio unavailable");
         buffer = await context().decodeAudioData(await response.arrayBuffer());
+        const level = scenePerformanceLevel(name, path);
+        if (level !== undefined) decodedVoiceLevels.set(buffer, level);
         break;
       } catch (error) {
         if (controller?.signal.aborted) throw error;
@@ -240,7 +245,7 @@ export function playVoice(name: string, report: (status: VoiceStatus) => void, f
     try {
       const buffer = await load(name);
       if (id !== voiceTicket || !want || mix.voices === 0) return;
-      const { node } = source(buffer, "voices", voiceLevel(name), false);
+      const { node } = source(buffer, "voices", decodedVoiceLevels.get(buffer) ?? voiceLevel(name), false);
       const cleanup = node.onended;
       node.onended = (event) => {
         cleanup?.call(node, event);

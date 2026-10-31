@@ -1,0 +1,345 @@
+[
+  {
+    "id": "voice-campaign-dramatic-beats-dceb613b987f",
+    "speaker": "Quill",
+    "voice": "am_michael",
+    "speed": 0.98,
+    "text": "Do not give me an easy yes. I need you to come back with the hour.",
+    "direction": "Quiet practical need; keep the first sentence together, then ask for a real return. No bark or heroic certainty.",
+    "loudnessLufs": -23.5,
+    "previousPath": "public/audio/voice-campaign-dramatic-beats-dceb613b987f.mp3",
+    "previousSha256": "fa122b800d46a8dd180a708ae740957833a69da670d5731912f69cb9033d24a2",
+    "previousSourceGain": 1,
+    "sourceGain": 1,
+    "checkpoint": {
+      "route": "qa/routes/dramatic-sequences/face.json",
+      "scene": "stall",
+      "step": 4,
+      "choice": null
+    },
+    "sceneText": "Quill moves his bowl aside. \"Replay. Mara Voss, Helion logistics. Glass Chapel edits her memory at dawn. Bring me the original hour, intact. Fifty now, two hundred on delivery. Her bodyguard is Kerr. He is paid to stop you.\"\n\nYou came for enough money to keep tomorrow yours. You want the terms before the promises. Somewhere above the rain, a file with your old name is still open.\n\nThe stallholder\u2019s story stays with you. Whose hour are you being asked to carry? Quill has not touched his dinner. You have not agreed to the job.\n\nQuill turns the untouched bowl away from the edge. \"Do not give me an easy yes. I need you to come back with the hour.\"",
+    "sound": {
+      "mood": "street",
+      "district": "stall"
+    },
+    "segments": [
+      {
+        "text": "Do not give me an easy yes.",
+        "speed": 0.98,
+        "pauseAfter": 0.19
+      },
+      {
+        "text": "I need you to come back with the hour.",
+        "speed": 0.94,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-mara-revelation-performance",
+    "speaker": "Mara",
+    "voice": "af_sarah",
+    "speed": 0.98,
+    "text": "I signed the coolant dump. Ward Nine. Three hundred on the night shift. I want that sentence to stay in my mouth.",
+    "direction": "Own the complete first sentence without the preceding version\u2019s verb/object split. A short stillness after the scale of loss; no plea for forgiveness.",
+    "loudnessLufs": -23.5,
+    "previousPath": "public/audio/voice-campaign-mara-revelation-performance.mp3",
+    "previousSha256": "c862782aa863dea10d16fa4740542283d252475332366cba2be1efc931c3af58",
+    "previousSourceGain": 0.96827786,
+    "sourceGain": 1,
+    "checkpoint": {
+      "route": "qa/routes/dramatic-sequences/face.json",
+      "scene": "memo",
+      "step": 16,
+      "choice": null
+    },
+    "sceneText": "The shard is warm against your palm, and it does not wait for you to be ready.\n\nMara's voice, unedited: \"I signed the coolant dump. Ward Nine. Three hundred on the night shift. I want that sentence to stay in my mouth.\"\n\nThe halo would have taken it out of her by dawn. It is in your hand instead.",
+    "sound": {
+      "mood": "reading",
+      "district": "chapel"
+    },
+    "segments": [
+      {
+        "text": "I signed the coolant dump.",
+        "speed": 0.98,
+        "pauseAfter": 0.2
+      },
+      {
+        "text": "Ward Nine.",
+        "speed": 0.94,
+        "pauseAfter": 0.18
+      },
+      {
+        "text": "Three hundred on the night shift.",
+        "speed": 0.96,
+        "pauseAfter": 0.3
+      },
+      {
+        "text": "I want that sentence to stay in my mouth.",
+        "speed": 0.96,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-mara-why-performance",
+    "speaker": "Mara",
+    "voice": "af_sarah",
+    "speed": 0.98,
+    "text": "Helion told me the dump was a flush, not a kill. I signed because the night shift was already in the building and I thought the tower would move them. They did not move them.",
+    "direction": "Explain a mistaken assumption without excusing the signature. Connect the causal sentence; make the final contradiction plain.",
+    "loudnessLufs": -23.5,
+    "previousPath": "public/audio/voice-campaign-mara-why-performance.mp3",
+    "previousSha256": "d329fdf65e5d6efbeeedc12082e96b84191f32cece91150a8a561aa09eade44f",
+    "previousSourceGain": 0.93756201,
+    "sourceGain": 1,
+    "checkpoint": {
+      "route": "qa/routes/dramatic-sequences/face.json",
+      "scene": "mara_why",
+      "step": 17,
+      "choice": null
+    },
+    "sceneText": "The hour is not finished with you.\n\nMara\u2019s recorded voice, still unedited: \"Helion told me the dump was a flush, not a kill. I signed because the night shift was already in the building and I thought the tower would move them. They did not move them.\"\n\nShe does not ask you to forgive it. She asks you to keep the reason attached to the crime.",
+    "sound": {
+      "mood": "reading",
+      "district": "chapel"
+    },
+    "segments": [
+      {
+        "text": "Helion told me the dump was a flush, not a kill.",
+        "speed": 0.98,
+        "pauseAfter": 0.2
+      },
+      {
+        "text": "I signed because the night shift was already in the building and I thought the tower would move them.",
+        "speed": 0.99,
+        "pauseAfter": 0.24
+      },
+      {
+        "text": "They did not move them.",
+        "speed": 0.92,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-dramatic-beats-ebb05f183613",
+    "speaker": "Edda",
+    "voice": "af_kore",
+    "speed": 0.98,
+    "text": "A fee, an old number, a signature. Each leaves someone carrying this request. I want to know which part you are asking me to carry.",
+    "direction": "Name three distinct costs with a connected list. Practical boundaries and tired attention, not accusation or consent beyond the request.",
+    "loudnessLufs": -23.5,
+    "previousPath": "public/audio/voice-campaign-dramatic-beats-ebb05f183613.mp3",
+    "previousSha256": "f74cd28bba8e211a32e1e4e5ed6165104279b8f85a0bad7ce637d41814201eb1",
+    "previousSourceGain": 1,
+    "sourceGain": 1,
+    "checkpoint": {
+      "route": "qa/routes/dramatic-sequences/face.json",
+      "scene": "act2_craft_archive_ledger",
+      "step": 46,
+      "choice": null
+    },
+    "sceneText": "Edda lays a narrow request form over the movement locator. The worker roster does not go on it.\n\nEdda smooths the request form once. Her hand stops above the signature line.\n\n\"A fee, an old number, a signature. Each leaves someone carrying this request. I want to know which part you are asking me to carry.\"\n\nShe can help carry this bounded record. The families stay out of the request.\n\nA staffed movement-page extraction costs twenty-five creds and logs a query. A Spire employee can bill it to the old badge, adding its trace. Earned Face training lets you ask Edda for a bounded countersignature instead: she agrees to this extraction, and her employer can identify her signed shift. None of these methods tests an issuing key.",
+    "sound": {
+      "mood": "quiet",
+      "district": "spire"
+    },
+    "segments": [
+      {
+        "text": "A fee,",
+        "speed": 0.95,
+        "pauseAfter": 0.14
+      },
+      {
+        "text": "an old number,",
+        "speed": 0.9,
+        "pauseAfter": 0.16
+      },
+      {
+        "text": "a signature.",
+        "speed": 0.95,
+        "pauseAfter": 0.27
+      },
+      {
+        "text": "Each leaves",
+        "speed": 0.84,
+        "pauseAfter": 0.13
+      },
+      {
+        "text": "someone carrying this request.",
+        "speed": 0.95,
+        "pauseAfter": 0.24
+      },
+      {
+        "text": "I want to know which part you are asking me to carry.",
+        "speed": 0.95,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-mara-account-3aed03ac8227",
+    "speaker": "Mara",
+    "voice": "af_sarah",
+    "speed": 0.98,
+    "text": "You stayed in that sentence. Thank you. It is harder to talk to someone who keeps disappearing behind the job.",
+    "direction": "A small thanks inside a difficult conversation. Let the final observation stay specific; no absolution or romantic warmth.",
+    "loudnessLufs": -23.5,
+    "previousPath": "public/audio/voice-campaign-mara-account-3aed03ac8227.mp3",
+    "previousSha256": "0b427c02e750b566d4a2e7c9df15d584f4fd54b82a2d3cb09f7b93edcc23c9d0",
+    "previousSourceGain": 1,
+    "sourceGain": 1,
+    "checkpoint": {
+      "route": "qa/routes/dramatic-sequences/both-owned-company.json",
+      "scene": "act2_mara_account_owned",
+      "step": 30,
+      "choice": null
+    },
+    "sceneText": "Mara takes a breath before she answers. The rain has worked a bright line down the window frame.\n\n\"You stayed in that sentence. Thank you. It is harder to talk to someone who keeps disappearing behind the job.\"\n\nShe moves her cup off the unused chair's side of the table. If you return later, there may be something ordinary to ask her about.",
+    "sound": {
+      "mood": "quiet",
+      "district": "clinic"
+    },
+    "segments": [
+      {
+        "text": "You stayed in that sentence.",
+        "speed": 0.99,
+        "pauseAfter": 0.13
+      },
+      {
+        "text": "Thank you.",
+        "speed": 0.96,
+        "pauseAfter": 0.22
+      },
+      {
+        "text": "It is harder to talk to someone who keeps disappearing behind the job.",
+        "speed": 0.98,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-kerr-899d4ba5ecfb",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.98,
+    "text": "You showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.",
+    "direction": "Routine source boundary, not menace. Connect source summary and witness exclusion; clarify that an address is unnecessary.",
+    "loudnessLufs": -23.5,
+    "previousPath": "public/audio/voice-campaign-kerr-899d4ba5ecfb.mp3",
+    "previousSha256": "efc7a1dfac22ba92865fc4a7725233f4d4312576b99cb82a7e02ddcaf33b617e",
+    "previousSourceGain": 1,
+    "sourceGain": 1,
+    "checkpoint": {
+      "route": "qa/routes/district-public-work.json",
+      "scene": "act2_district_kerr_reply",
+      "step": null,
+      "choice": "district-kerr-acknowledge"
+    },
+    "sceneText": "\u201cYou showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.\u201d\n\n\u201cMy name went into their register after you promised it wouldn't. Say that before you ask me for another introduction.\u201d\n\nThe counter offers registered sorting work under your own handle. An introduction supplies no payment, recovery, treatment or source. Any earlier breach stays recorded.",
+    "sound": {
+      "mood": "quiet",
+      "district": "street"
+    },
+    "segments": [
+      {
+        "text": "You showed me the source summary.",
+        "speed": 0.99,
+        "pauseAfter": 0.16
+      },
+      {
+        "text": "Leave the witness out of my errands.",
+        "speed": 0.98,
+        "pauseAfter": 0.17
+      },
+      {
+        "text": "I don't need a person's address to ask about a shift.",
+        "speed": 0.97,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-sera-shift-9d3da67ec4a0",
+    "speaker": "Sera",
+    "voice": "af_bella",
+    "speed": 0.98,
+    "text": "I keep sending people to the wall. I would like to stand there myself for once. But I cannot leave this table open.",
+    "direction": "A personal wish to leave the table briefly. Differentiate the wish from the practical reason she stays. No martyr speech.",
+    "loudnessLufs": -23.5,
+    "previousPath": "public/audio/voice-campaign-sera-shift-9d3da67ec4a0.mp3",
+    "previousSha256": "7000d312ad041bf1d03f872bc8fd3143328f5516ef1378262179b59612611ba7",
+    "previousSourceGain": 1,
+    "sourceGain": 1,
+    "checkpoint": {
+      "route": "qa/routes/dramatic-sequences/face.json",
+      "scene": "act3_sera_shift",
+      "step": 69,
+      "choice": null
+    },
+    "sceneText": "Sera has a hand on the back of her chair. From the doorway, the wall is only a strip of wet light. A tray of blank question cards waits on the visitor side; the source folders are closed behind her.\n\n\"I keep sending people to the wall. I would like to stand there myself for once. But I cannot leave this table open.\"\n\nYou can carry the cards to the wall while she keeps custody here, or watch the closed table while she listens. Either task takes you away from drafting for a moment. Neither earns money or standing.",
+    "sound": {
+      "mood": "ward",
+      "district": "ward"
+    },
+    "segments": [
+      {
+        "text": "I keep sending people to the wall.",
+        "speed": 0.98,
+        "pauseAfter": 0.21
+      },
+      {
+        "text": "I would like to stand there myself for once.",
+        "speed": 0.95,
+        "pauseAfter": 0.28
+      },
+      {
+        "text": "But I cannot leave this table open.",
+        "speed": 0.94,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-mara-account-91141bd45474",
+    "speaker": "Mara",
+    "voice": "af_sarah",
+    "speed": 0.98,
+    "text": "A morning market. I used to go before the stalls opened, when nobody wanted anything from me yet. I would like to choose that again.",
+    "direction": "Private tentative hope. Keep the market memory fluid, and the last wish conditional; no recovery, promise or public permission.",
+    "loudnessLufs": -23.5,
+    "previousPath": "public/audio/voice-campaign-mara-account-91141bd45474.mp3",
+    "previousSha256": "5e7dfb000d89e81255e9cc6c426ff233e3529c00a8594b4b6c9da90468e55619",
+    "previousSourceGain": 1,
+    "sourceGain": 1,
+    "checkpoint": {
+      "route": "qa/routes/dramatic-sequences/both-owned-company.json",
+      "scene": "act3_mara_account_question",
+      "step": 45,
+      "choice": null
+    },
+    "sceneText": "You ask what she would do with a morning that belonged to her. Mara watches a shutter opening across the walkway.\n\n\"A morning market. I used to go before the stalls opened, when nobody wanted anything from me yet. I would like to choose that again.\"\n\nShe has offered a hope. You leave it in the room with her.",
+    "sound": {
+      "mood": "quiet",
+      "district": "clinic"
+    },
+    "segments": [
+      {
+        "text": "A morning market.",
+        "speed": 0.98,
+        "pauseAfter": 0.14
+      },
+      {
+        "text": "I used to go before the stalls opened, when nobody wanted anything from me yet.",
+        "speed": 0.99,
+        "pauseAfter": 0.22
+      },
+      {
+        "text": "I would like to choose that again.",
+        "speed": 0.95,
+        "pauseAfter": 0
+      }
+    ]
+  }
+]

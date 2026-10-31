@@ -1,0 +1,2924 @@
+{
+  "referenceRevision": "d7edcff17a5126091e5fb3db891f89c9999fd4dd",
+  "method": "Detached git archive of the exact published Phase18 runtime; every canonical root voice id compares actual preferred-path selection and unchanged original mastering map. Exactly five explicit preferences change. Per-buffer fallback correction is checked separately in signal and browser evidence.",
+  "referenceSources": {
+    "lib/performance-delivery.ts": "5219de722d6c71a0f61671298beba259f9cce330c8a89f16e64ad5d25690642f",
+    "lib/connected-performance.ts": "c5a634187e4d0c8d9888ee7904517d3ffb5f9b682a26544ff615782da3a40f74",
+    "lib/voice-level.ts": "38e45d97714756d00f4f37e529305c1971cca501b31b1e82839bdde94ce577c6",
+    "qa/media/voice-levels.json": "f249e8aadec56f250c59cfba1d939bf0f7fe058d0d75c043ce714aa0a0442dc9"
+  },
+  "rows": [
+    {
+      "id": "voice-asa-earned-clearance",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.86796058,
+      "changed": false
+    },
+    {
+      "id": "voice-asa-exposed-crossing",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.90991327,
+      "changed": false
+    },
+    {
+      "id": "voice-asa-exposed-receipt",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.86896043,
+      "changed": false
+    },
+    {
+      "id": "voice-asa-freight-terms",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.98969186,
+      "changed": false
+    },
+    {
+      "id": "voice-asa-late-receipt",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.84527885,
+      "changed": false
+    },
+    {
+      "id": "voice-asa-motive-exit",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.71039517,
+      "changed": false
+    },
+    {
+      "id": "voice-asa-motive-identity",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1.09018449,
+      "changed": false
+    },
+    {
+      "id": "voice-asa-motive-survival",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.98969186,
+      "changed": false
+    },
+    {
+      "id": "voice-asa-private-receipt",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.83849408,
+      "changed": false
+    },
+    {
+      "id": "voice-asa-unconfirmed-result",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.78976885,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-asa-0e81be1b767b",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.70876131,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-asa-1cb14e9d8928",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.80075563,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-asa-2badc1c2c563",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66911382,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-asa-4886abf2e519",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.70469307,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-asa-85f28e598eb3",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.82603795,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-asa-8b96bfc8114a",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66988461,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-asa-d6b69d9d670c",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1.06169556,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-asa-de5224a38bd1",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66834392,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-asa-f4168ab58dd9",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1.02211556,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-dispatcher-05ca9f853d11",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-dispatcher-0736bc19689f",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1.17896252,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-dispatcher-094917ba4d45",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-dispatcher-0ab16b5254b9",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1.01391139,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-dispatcher-15916f6b7de0",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-dispatcher-2d3cd37c57b9",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-dispatcher-33a79deedbfe",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-dispatcher-83c284401881",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-dispatcher-8bf37188cd15",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-dispatcher-e5e1ea7d5a4a",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-dispatcher-e8cadae1434a",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-dispatcher-fc3a0c281ee2",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-dramatic-beats-043fc7da30bc",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-dramatic-beats-0f19f0d22108",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-dramatic-beats-11d2890d6c98",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-dramatic-beats-1658a251f1cf",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-dramatic-beats-7864742e6cf1",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-dramatic-beats-9455c282881b",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-dramatic-beats-9919ec3d53bd",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-dramatic-beats-cf3cf27dbc01",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-dramatic-beats-dceb613b987f",
+      "before": null,
+      "current": "/audio/connected-scenes-v2/voice-campaign-dramatic-beats-dceb613b987f.mp3",
+      "originalSourceGain": 1,
+      "changed": true
+    },
+    {
+      "id": "voice-campaign-dramatic-beats-ebb05f183613",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-edda-07130fdc6f54",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.6675749,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-edda-0b7889bba8b9",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.65614527,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-edda-33e6d2a6a428",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.55847019,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-edda-3ba7652c8a59",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.51939767,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-edda-402c00c4c4d2",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.58143343,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-edda-4c4a033f7b14",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66911382,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-edda-517f9439fca0",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.65765784,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-edda-5d03c165abf4",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.54387613,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-edda-6b0cccd1941b",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.57477782,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-edda-6e522a26c358",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-edda-7b79a3e4c6d0",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-edda-99446ae38d6d",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-edda-a4ad65c73326",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.79158945,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-edda-a80db8f505be",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.65614527,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-edda-a8fa6fb017b5",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.52844525,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-edda-acdfea67c0a0",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.61235039,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-edda-b7469ce19b81",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.49488011,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-edda-bb85ccac0d99",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66297935,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-edda-bcee1bb4ec5b",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66834392,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-edda-cf0b92febd12",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.55398754,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-edda-d4b034abcf9f",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66834392,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-edda-db9226a2fcd3",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.50640735,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-edda-de8cf8a1dc03",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66911382,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-edda-ea88bd84a4c4",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.63095734,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-edda-ee8d63542999",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-edda-f9a9ab61ae78",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-edda-f9bf7fe7c969",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.64268772,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-edda-fcdc71e74fea",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.70469307,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-0a1b8bb22589",
+      "before": "/audio/performance-direction-v1/voice-campaign-emotional-payoff-0a1b8bb22589.mp3",
+      "current": "/audio/performance-direction-v1/voice-campaign-emotional-payoff-0a1b8bb22589.mp3",
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-26350d370631",
+      "before": "/audio/performance-direction-v1/voice-campaign-emotional-payoff-26350d370631.mp3",
+      "current": "/audio/performance-direction-v1/voice-campaign-emotional-payoff-26350d370631.mp3",
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-4a4c8f261a79",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-52ad3344069a",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-5ca32a5e2923",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-8b41fca71d2b",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-a00e2510dc2a",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-a1cf0d3718e8",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-a8c4c936daad",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-emotional-payoff-ee1ca23521df",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-encounter-craft-0d503d1dabcb",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-encounter-craft-43e701b3e2c1",
+      "before": "/audio/performance-direction-v1/voice-campaign-encounter-craft-43e701b3e2c1.mp3",
+      "current": "/audio/performance-direction-v1/voice-campaign-encounter-craft-43e701b3e2c1.mp3",
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-encounter-craft-570639a0f84d",
+      "before": "/audio/performance-direction-v1/voice-campaign-encounter-craft-570639a0f84d.mp3",
+      "current": "/audio/performance-direction-v1/voice-campaign-encounter-craft-570639a0f84d.mp3",
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-encounter-craft-62b70985aa0d",
+      "before": "/audio/performance-direction-v1/voice-campaign-encounter-craft-62b70985aa0d.mp3",
+      "current": "/audio/performance-direction-v1/voice-campaign-encounter-craft-62b70985aa0d.mp3",
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-encounter-craft-9597f82c6f10",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-encounter-craft-a3b854d736a3",
+      "before": "/audio/performance-direction-v1/voice-campaign-encounter-craft-a3b854d736a3.mp3",
+      "current": "/audio/performance-direction-v1/voice-campaign-encounter-craft-a3b854d736a3.mp3",
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-encounter-craft-cd0a455809ce",
+      "before": "/audio/performance-direction-v1/voice-campaign-encounter-craft-cd0a455809ce.mp3",
+      "current": "/audio/performance-direction-v1/voice-campaign-encounter-craft-cd0a455809ce.mp3",
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-encounter-craft-ecb749c132e1",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-freight-craft-0707294020e3",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-freight-craft-28a71316e1ad",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-freight-craft-3215df9a9ef6",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-freight-craft-4d3307b2d4d5",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-freight-craft-52ca52bbb14b",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-freight-craft-5bfa06763c3c",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-freight-craft-65d1cb340235",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-freight-craft-b57bd816cb58",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-freight-craft-c643ecc39c94",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-freight-craft-f609e901e947",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-ives-071bb773ee1d",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66834392,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-ives-27bd077273a1",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66834392,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-ives-61d366ec9772",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.6675749,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-ives-709c45808ce6",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.6675749,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-ives-7117058514fc",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.6675749,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-ives-9317a0ee9650",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66834392,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-ives-a94db9de69a3",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.6675749,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-ives-act2-archive-door-performance",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66527316,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-ives-c0151cd75fa1",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66834392,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-ives-c0f98673baa3",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66834392,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-ives-hearing-challenge-performance",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66834392,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-ives-kept-name-performance",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66834392,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-ives-listed-performance",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66680677,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-009cf5acd8f3",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.69502432,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-05464a5d2167",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66834392,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-0f0f6ae149a0",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.7362071,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-10b6e71a11eb",
+      "before": "/audio/connected-performance-v1/voice-campaign-kerr-10b6e71a11eb.mp3",
+      "current": "/audio/connected-performance-v1/voice-campaign-kerr-10b6e71a11eb.mp3",
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-12d595f0fd1a",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.89949758,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-1903a3d3a421",
+      "before": "/audio/connected-performance-v1/voice-campaign-kerr-1903a3d3a421.mp3",
+      "current": "/audio/connected-performance-v1/voice-campaign-kerr-1903a3d3a421.mp3",
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-25c53b99936f",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.87801109,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-29ee7c589eed",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.6675749,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-2ca147e47255",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.88920112,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-35739b2889fc",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.76559661,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-3914d401fb83",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.73113908,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-438346af4765",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.70550484,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-636ce1c1a709",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66834392,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-684866ad9287",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.80075563,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-871f7e54aee7",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.82889592,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-899d4ba5ecfb",
+      "before": null,
+      "current": "/audio/connected-scenes-v2/voice-campaign-kerr-899d4ba5ecfb.mp3",
+      "originalSourceGain": 1,
+      "changed": true
+    },
+    {
+      "id": "voice-campaign-kerr-8b5f1b44656f",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.78252821,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-a2e9087805ff",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.88613522,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-a71768b4e3a3",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.73705518,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-b952a4b4f4eb",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.75770473,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-c53b950b1cbc",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.84527885,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-c885cfd984a7",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.82318984,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-d547c33558df",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.71285303,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-d8fb4323e19b",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.7568329,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-dd35539e0644",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.91096145,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-e4660f52938f",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.84333476,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-e8022742ad26",
+      "before": "/audio/connected-performance-v1/voice-campaign-kerr-e8022742ad26.mp3",
+      "current": "/audio/connected-performance-v1/voice-campaign-kerr-e8022742ad26.mp3",
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-f001a675c451",
+      "before": "/audio/connected-performance-v1/voice-campaign-kerr-f001a675c451.mp3",
+      "current": "/audio/connected-performance-v1/voice-campaign-kerr-f001a675c451.mp3",
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-f10a83941fef",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.88003511,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-f62283c66903",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66911382,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-f829eb68f234",
+      "before": "/audio/connected-performance-v1/voice-campaign-kerr-f829eb68f234.mp3",
+      "current": "/audio/connected-performance-v1/voice-campaign-kerr-f829eb68f234.mp3",
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-f91cd82e5369",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.95169985,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-fd97386dd24d",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.72443596,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-terms-21d133ddba35",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-terms-3d29183560fe",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-terms-4d6f6c624ea7",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-terms-84e2cc909f99",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-terms-89370c1ffbd4",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-terms-9eb4b102fa0b",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-terms-acd344b4f340",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-terms-b055761e9afc",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-terms-b12348e1925b",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-terms-c2ea702b5503",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-terms-c36a52eb86fe",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-terms-cae166cd5d8e",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-kerr-terms-e69c29cfbc36",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-lumen-boundary-performance",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.70307232,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-mara-167e67a571d6",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.7816278,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-mara-18de895b94ce",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.68233869,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-mara-1b139c158594",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1.04111811,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-mara-5ba01af16fc4",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66834392,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-mara-6fa5c12c1612",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.6675749,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-mara-7d7228387866",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.79432823,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-mara-8bce931b08e0",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1.05075145,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-mara-9cbc15df9e14",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.67220231,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-mara-a34d49ceb13d",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66145454,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-mara-account-17ad848ae272",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-mara-account-19e71532ae30",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-mara-account-297102e9173d",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-mara-account-34789ac8f687",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-mara-account-3aed03ac8227",
+      "before": null,
+      "current": "/audio/connected-scenes-v2/voice-campaign-mara-account-3aed03ac8227.mp3",
+      "originalSourceGain": 1,
+      "changed": true
+    },
+    {
+      "id": "voice-campaign-mara-account-4fb30a767f10",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-mara-account-6665608553f7",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-mara-account-766693e6f9ac",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-mara-account-91141bd45474",
+      "before": null,
+      "current": "/audio/connected-scenes-v2/voice-campaign-mara-account-91141bd45474.mp3",
+      "originalSourceGain": 1,
+      "changed": true
+    },
+    {
+      "id": "voice-campaign-mara-account-9538a155dfe3",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-mara-account-9a97bdb6e1f9",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-mara-account-9cfab5a46336",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-mara-account-abad0fc34525",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-mara-account-c6da691e4ed7",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-mara-account-ee3ba0f2e682",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-mara-dfe90cca5bfe",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.85113804,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-mara-ed6c9a89a527",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66988461,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-mara-f8abaa9e676e",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.98061831,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-mara-revelation-performance",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.96827786,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-mara-why-performance",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.93756201,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-masked-attendant-8418f249bf02",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.97274722,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-masked-attendant-9186666a84ba",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.58210322,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-mechanic-2d8a9efa667f",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1.0556015,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-mechanic-9395de375f4f",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.83080672,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-multiline-chapel-1",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66834392,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-multiline-chapel-2",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.67608298,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-multiline-lumen-deal-1",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.6675749,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-multiline-lumen-deal-2",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66834392,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-nia-pell-11dcdea73215",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.6942246,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-nia-pell-28180cc2b39c",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.73960528,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-nia-pell-292f0e2b6351",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.91939047,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-nia-pell-5b29f7d4a657",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66911382,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-nia-pell-9691a2f29041",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66834392,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-nia-pell-97c62dc0bb78",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.6360628,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-nia-pell-bea4f8df04a1",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.9418896,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-nia-pell-c987f8a09159",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.68312472,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-nia-pell-d5e530c55a4c",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66297935,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-nia-pell-d8b7b7d16f6e",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66680677,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-nia-pell-ec820e69b73c",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.62158425,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-nia-terms-performance",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.79158945,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-orderly-196a881f1c95",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.65765784,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-orderly-cc082ea4de2f",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.86397266,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-quill-0d361f81e1bf",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.5597576,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-quill-2ab424110b96",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66834392,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-quill-2b6a39f58b92",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.86996143,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-quill-39284d611815",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.78072844,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-quill-3b5fe2def65d",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.86000307,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-quill-3b6151a19c29",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.94080583,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-quill-3be212ca911c",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.76913044,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-quill-41a608e4e7c2",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.83849408,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-quill-45259fa18cc2",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.90260971,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-quill-4f2d77910bb8",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.93003651,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-quill-52ddae919538",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.73282453,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-quill-63d3271f8495",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.61235039,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-quill-6a63b21d89c5",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66988461,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-quill-8187b9c40d70",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66680677,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-quill-83fa5b1deb5a",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.60394863,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-quill-8888435582e7",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.71944898,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-quill-9d1501e686c7",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.98627949,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-quill-9f2423d67881",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.57876199,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-quill-bca344313982",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.75248873,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-quill-c8cfa180c8e3",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.60394863,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-quill-c98855695ec0",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1.0104155,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-quill-cbce468b33c1",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1.10280823,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-quill-d62c4bfc7196",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66911382,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-quill-d65247015b3d",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.73790423,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-quill-d754198511c6",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.89125094,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-quill-e467cd6ce1d3",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.71121351,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-quill-f1850a3ef768",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.76736149,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-quill-facb468bbd8c",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.74473197,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-ren-40e4d9a95be2",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.9332543,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-ren-4f73bedda5ff",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.92044957,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-ren-7acf21262f21",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1.0556015,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-ren-83ccbd90da95",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1.10789857,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-ren-849965fb2829",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.71531939,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-ren-88411fc0eaa0",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.82224265,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-ren-8fe81a46651c",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.91306144,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-ren-db09fe4a26b0",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.78976885,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-return-routing-20fd6e7e840c",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-return-routing-2672256d1346",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-return-routing-28f1f3a61532",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-return-routing-3618a7c3e345",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-return-routing-5fcbff73f348",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-return-routing-842083fe00dc",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-return-routing-899ae129e60b",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-return-routing-cc41685259bb",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-return-routing-d3c55dcaa6d8",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-return-routing-dae60204b64a",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sera-1031969a7935",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.58884366,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sera-3acd9a434593",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.77001644,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sera-4265e1807135",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.79524327,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sera-44d1f1b59758",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.92363419,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sera-5e173a8c53cb",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.67530505,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sera-865cdf54da9e",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.74301914,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sera-aa1069e7abb6",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.59497676,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sera-ab673ed27369",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.81002794,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sera-ae46d6d71e83",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.72527048,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sera-b4f7128c2a13",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1.10153931,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sera-bd40f64ddfb9",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1.04231743,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sera-c70735dc83fd",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.81189525,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sera-d9a5680cf8c7",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.75857758,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sera-dc4258b3a9d7",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.80816493,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sera-names-performance",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.82889592,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sera-shift-03e8041dbaa0",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sera-shift-3c226a939b14",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sera-shift-47e105e137c8",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sera-shift-5ddc8dde0286",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sera-shift-9d3da67ec4a0",
+      "before": null,
+      "current": "/audio/connected-scenes-v2/voice-campaign-sera-shift-9d3da67ec4a0.mp3",
+      "originalSourceGain": 1,
+      "changed": true
+    },
+    {
+      "id": "voice-campaign-sera-shift-e11348e47d49",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sera-shift-e3d3b032a010",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sister-lumen-096438ce634b",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1.03514217,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sister-lumen-16d2427d039f",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.62086903,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sister-lumen-1b822a5834e0",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.71614341,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sister-lumen-1d31b215d4c0",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.76207901,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sister-lumen-2f09629a089e",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.55590426,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sister-lumen-351fd141b54c",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.82985077,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sister-lumen-390123751d0a",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.76471569,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sister-lumen-39285de09ad7",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.77179152,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sister-lumen-39c6cb6305d6",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.6902398,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sister-lumen-3e167d1ff04b",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.69342581,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sister-lumen-3f761277c259",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.75596206,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sister-lumen-42a4c77e877a",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66834392,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sister-lumen-43ce57d8cdbe",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.53272122,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sister-lumen-450395d62692",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.79983426,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sister-lumen-4544c3e30291",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1.00693167,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sister-lumen-557bd2f9d851",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.57016427,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sister-lumen-605b0079cbb3",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.81940762,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sister-lumen-62cf0bfa124b",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.65690112,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sister-lumen-705922337466",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.72110748,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sister-lumen-845ed726cd2f",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.77001644,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sister-lumen-88d18fce270c",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.60048201,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sister-lumen-902d05ea34c1",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.6902398,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sister-lumen-a1abd898aca3",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66834392,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sister-lumen-a4523a4ec15c",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.79432823,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sister-lumen-ac1616d6fe27",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.73366871,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sister-lumen-b87596f8bebe",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66911382,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sister-lumen-bd31a2e3e8be",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.69662651,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sister-lumen-bf2d45489211",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.75596206,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sister-lumen-c0bbc5b77e59",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.67686179,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sister-lumen-c41d638134ed",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.71614341,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sister-lumen-c42d4ffc2e40",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.62950618,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sister-lumen-c81c87c79a05",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.80075563,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sister-lumen-d22f53686c15",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.93540567,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sister-lumen-eb5709fe89c8",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.68944559,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sister-lumen-ef706d358585",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.44926232,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-sister-lumen-fb180ed923e4",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.74558987,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-stallholder-186ef0bc3f48",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.96161228,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-stallholder-47b091d0fd85",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.85310011,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-stallholder-4fdd6b715c84",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.80816493,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-stallholder-6cf1cf693aa4",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.72861817,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-stallholder-86bfd85012a8",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.92682982,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-witness-return-0bdc858ea31a",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-witness-return-29f12b08a1ae",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-witness-return-39a2d055c5e5",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-witness-return-3ed7f61b4ca1",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-witness-return-6f3574fd5a60",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-witness-return-b30a4eb1c780",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-campaign-witness-return-ea25eb2c8312",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-edda-archive-access",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.67142885,
+      "changed": false
+    },
+    {
+      "id": "voice-edda-clean-number",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.55718575,
+      "changed": false
+    },
+    {
+      "id": "voice-edda-private-work",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.76736149,
+      "changed": false
+    },
+    {
+      "id": "voice-edda-query-remains",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.64565423,
+      "changed": false
+    },
+    {
+      "id": "voice-edda-service-key",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.59429216,
+      "changed": false
+    },
+    {
+      "id": "voice-edda-source-custody",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.52239619,
+      "changed": false
+    },
+    {
+      "id": "voice-edda-staffed-desk",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.60048201,
+      "changed": false
+    },
+    {
+      "id": "voice-ives-act2-archive-door",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-ives-hearing-challenge",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-ives-kept-name",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-ives-listed",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-kerr-act2-kerr",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.77535394,
+      "changed": false
+    },
+    {
+      "id": "voice-kerr-act2-witness-checkpoint",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.87297137,
+      "changed": false
+    },
+    {
+      "id": "voice-kerr-boundary",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.82318984,
+      "changed": false
+    },
+    {
+      "id": "voice-kerr-canal-question",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.82129655,
+      "changed": false
+    },
+    {
+      "id": "voice-kerr-case-terms",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.93864204,
+      "changed": false
+    },
+    {
+      "id": "voice-kerr-handover-breached",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.7816278,
+      "changed": false
+    },
+    {
+      "id": "voice-kerr-handover-private",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.9183326,
+      "changed": false
+    },
+    {
+      "id": "voice-kerr-handover-registered",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.73875426,
+      "changed": false
+    },
+    {
+      "id": "voice-kerr-kerr",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.84430624,
+      "changed": false
+    },
+    {
+      "id": "voice-kerr-open-door",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.76383578,
+      "changed": false
+    },
+    {
+      "id": "voice-kerr-personal",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.82129655,
+      "changed": false
+    },
+    {
+      "id": "voice-kerr-trust-broken",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.9183326,
+      "changed": false
+    },
+    {
+      "id": "voice-kerr-trust-kept",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.74131024,
+      "changed": false
+    },
+    {
+      "id": "voice-kerr-unsettled-week",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.84430624,
+      "changed": false
+    },
+    {
+      "id": "voice-lumen-act2-lumen",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.6675749,
+      "changed": false
+    },
+    {
+      "id": "voice-lumen-act2-notice-brief",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.78976885,
+      "changed": false
+    },
+    {
+      "id": "voice-lumen-act2-notice-receipt",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.72443596,
+      "changed": false
+    },
+    {
+      "id": "voice-lumen-act2-witness-lost",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.61023906,
+      "changed": false
+    },
+    {
+      "id": "voice-lumen-act2-witness-repair",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.59497676,
+      "changed": false
+    },
+    {
+      "id": "voice-lumen-after-rest",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.65012969,
+      "changed": false
+    },
+    {
+      "id": "voice-lumen-boundary",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-lumen-counteroffer",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-lumen-ending-burned",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.7481695,
+      "changed": false
+    },
+    {
+      "id": "voice-lumen-full-window",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.68076936,
+      "changed": false
+    },
+    {
+      "id": "voice-lumen-funded-carrier",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.86297855,
+      "changed": false
+    },
+    {
+      "id": "voice-lumen-later-trip",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.6622165,
+      "changed": false
+    },
+    {
+      "id": "voice-lumen-lumen",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.6902398,
+      "changed": false
+    },
+    {
+      "id": "voice-lumen-ordinary-seat",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.77090347,
+      "changed": false
+    },
+    {
+      "id": "voice-lumen-private-door",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.67920363,
+      "changed": false
+    },
+    {
+      "id": "voice-lumen-publication",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.68155357,
+      "changed": false
+    },
+    {
+      "id": "voice-lumen-relay-limits",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.6942246,
+      "changed": false
+    },
+    {
+      "id": "voice-lumen-return-bundle",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.65012969,
+      "changed": false
+    },
+    {
+      "id": "voice-lumen-staying",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.83560302,
+      "changed": false
+    },
+    {
+      "id": "voice-lumen-withdrawn-window",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.65765784,
+      "changed": false
+    },
+    {
+      "id": "voice-mara-assurance",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.86696188,
+      "changed": false
+    },
+    {
+      "id": "voice-mara-chair-remembered",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.97386779,
+      "changed": false
+    },
+    {
+      "id": "voice-mara-channel",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.94841846,
+      "changed": false
+    },
+    {
+      "id": "voice-mara-company-declined",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.9088663,
+      "changed": false
+    },
+    {
+      "id": "voice-mara-company",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.76647854,
+      "changed": false
+    },
+    {
+      "id": "voice-mara-envelope-pending",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.96161228,
+      "changed": false
+    },
+    {
+      "id": "voice-mara-mara-why",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-mara-memory-cross-exam",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.95829672,
+      "changed": false
+    },
+    {
+      "id": "voice-mara-name-at-desk",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.9088663,
+      "changed": false
+    },
+    {
+      "id": "voice-mara-next-batch",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.89227762,
+      "changed": false
+    },
+    {
+      "id": "voice-mara-not-acquittal",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.90053376,
+      "changed": false
+    },
+    {
+      "id": "voice-mara-own-dispatch",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.80075563,
+      "changed": false
+    },
+    {
+      "id": "voice-mara-public-refusal",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.95169985,
+      "changed": false
+    },
+    {
+      "id": "voice-mara-response",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.93648322,
+      "changed": false
+    },
+    {
+      "id": "voice-mara-revelation",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-mara-sequence",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.98514464,
+      "changed": false
+    },
+    {
+      "id": "voice-mara-tomorrow",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.88613522,
+      "changed": false
+    },
+    {
+      "id": "voice-mara-waiting-open",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.88613522,
+      "changed": false
+    },
+    {
+      "id": "voice-mara-waits-answer",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.79524327,
+      "changed": false
+    },
+    {
+      "id": "voice-mara-walked-reply",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.89125094,
+      "changed": false
+    },
+    {
+      "id": "voice-nia-act2-witness-brief",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-nia-act3-nia-contact",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.73960528,
+      "changed": false
+    },
+    {
+      "id": "voice-nia-arrival",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.61517687,
+      "changed": false
+    },
+    {
+      "id": "voice-nia-known-room",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.78072844,
+      "changed": false
+    },
+    {
+      "id": "voice-nia-own-work",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.51345218,
+      "changed": false
+    },
+    {
+      "id": "voice-nia-public-terms",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.90157114,
+      "changed": false
+    },
+    {
+      "id": "voice-nia-room-ownership",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.61235039,
+      "changed": false
+    },
+    {
+      "id": "voice-nia-second-room",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.62589286,
+      "changed": false
+    },
+    {
+      "id": "voice-quill-act2-origin-dustline",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.73282453,
+      "changed": false
+    },
+    {
+      "id": "voice-quill-care-budget",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.76824546,
+      "changed": false
+    },
+    {
+      "id": "voice-quill-job-owner",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.75945142,
+      "changed": false
+    },
+    {
+      "id": "voice-quill-offer",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.66450767,
+      "changed": false
+    },
+    {
+      "id": "voice-quill-pay-no",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.87498378,
+      "changed": false
+    },
+    {
+      "id": "voice-quill-pay-yes",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.7481695,
+      "changed": false
+    },
+    {
+      "id": "voice-quill-pay",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.89536477,
+      "changed": false
+    },
+    {
+      "id": "voice-quill-route",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1.16144861,
+      "changed": false
+    },
+    {
+      "id": "voice-sera-act2-origin-gutterwire",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.82035154,
+      "changed": false
+    },
+    {
+      "id": "voice-sera-daylight",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.92789749,
+      "changed": false
+    },
+    {
+      "id": "voice-sera-hearing-correction",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.91411324,
+      "changed": false
+    },
+    {
+      "id": "voice-sera-hearing-purpose",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.73790423,
+      "changed": false
+    },
+    {
+      "id": "voice-sera-laundry-invitation",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.81752304,
+      "changed": false
+    },
+    {
+      "id": "voice-sera-names",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 1,
+      "changed": false
+    },
+    {
+      "id": "voice-sera-quiet",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.69262793,
+      "changed": false
+    },
+    {
+      "id": "voice-sera-third-row",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.91727594,
+      "changed": false
+    },
+    {
+      "id": "voice-sera-wall-invitation",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.81283052,
+      "changed": false
+    },
+    {
+      "id": "voice-sera-witness",
+      "before": null,
+      "current": null,
+      "originalSourceGain": 0.77803655,
+      "changed": false
+    }
+  ]
+}

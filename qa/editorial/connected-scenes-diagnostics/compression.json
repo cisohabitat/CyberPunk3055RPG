@@ -1,0 +1,143 @@
+{
+  "method": "Deterministic lossless gzip; raw diagnostic whitespace and failures preserved without changing source whitespace checks.",
+  "files": [
+    {
+      "path": "qa/editorial/connected-scenes-diagnostics/types-first.log.gz",
+      "rawSha256": "45342ca54fc3787657ce6eb4dbe6d4510cbf68d24318d44416c0176ab31ebf4b",
+      "compressedSha256": "3666ed3b3c8b06273f9b69296193c08849e73cf9d0ad65c063212687ecf3355d",
+      "rawBytes": 208
+    },
+    {
+      "path": "qa/editorial/connected-scenes-diagnostics/finish-local.log.gz",
+      "rawSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compressedSha256": "f61f27bd17de546264aa58f40f3aafaac7021e0ef69c17f6b1b4cd7664a037ec",
+      "rawBytes": 0
+    },
+    {
+      "path": "qa/editorial/connected-scenes-diagnostics/webkit-float32.log.gz",
+      "rawSha256": "94c31ee0aae111aae6473a13d3e6b3e510823559f3ca0cf21dec1745b34ae73a",
+      "compressedSha256": "69cf13abb06063f557a5190e2ac23fde06044210dac38ebb61ba7601d888423b",
+      "rawBytes": 586
+    },
+    {
+      "path": "qa/editorial/connected-scenes-diagnostics/asr-v1.log.gz",
+      "rawSha256": "cf6d2875b1fb7e3597e37cebffd4af455baa86b7a9089d89a589ab6cde55a6c6",
+      "compressedSha256": "a6a60f779b55e70d254ce5ac0a5238f80ed26bcbd9f3c0995195c77900a61c74",
+      "rawBytes": 4523
+    },
+    {
+      "path": "qa/editorial/connected-scenes-diagnostics/reference.log.gz",
+      "rawSha256": "cf53f75bf5b585b7ebf38d627d14206da17c699850caa2d20a31caca5f4514af",
+      "compressedSha256": "299ffa7593666ffb46121eae47132ff71438d762cdadcb6c28992e5d3dce2182",
+      "rawBytes": 67
+    },
+    {
+      "path": "qa/editorial/connected-scenes-diagnostics/inventory.log.gz",
+      "rawSha256": "e8615d9928035633a823d67803d5bebc322f0aa4233bd5d5fa8f3098a56db16a",
+      "compressedSha256": "6207c3a8efdd76e0bbf7943d944ed5de391f6c18e77c1ae20f10144c79c848b3",
+      "rawBytes": 930137
+    },
+    {
+      "path": "qa/editorial/connected-scenes-diagnostics/source-accepted-final.log.gz",
+      "rawSha256": "fd0d375f8aabd6ee2e2895840e0234bef58dafc523b357defa9efe10e4bf2e76",
+      "compressedSha256": "4d48d7d68bd34f08c9dcb547c7a6f0dfbd7672985e94fec85000308fb9d1da7e",
+      "rawBytes": 476
+    },
+    {
+      "path": "qa/editorial/connected-scenes-diagnostics/generate-v3.log.gz",
+      "rawSha256": "0a486f53dc275194e5361a627094312070d2f4912bcf3b72a31b954569038370",
+      "compressedSha256": "99f1f61e91ddf110b1e8234d90147b689442e05fae987552543be53f00531eb4",
+      "rawBytes": 267
+    },
+    {
+      "path": "qa/editorial/connected-scenes-diagnostics/webkit-correction.log.gz",
+      "rawSha256": "1d9ddc37334e5dd8ffc76a9b3c24e5788de3fda0dd5b9cd5fce4c5f54fa1851d",
+      "compressedSha256": "77a2147989e1515f0f67ae953d446a7d45c2c5a0631880c1c4a434e8e421b4e7",
+      "rawBytes": 2613
+    },
+    {
+      "path": "qa/editorial/connected-scenes-diagnostics/source.log.gz",
+      "rawSha256": "586019dd145b4726d199f46d3c9e6323a317f45a95ade709ff51fa7a6a3a57cf",
+      "compressedSha256": "9170715b81331d49f80b4c6fd044ffe0da098239fe1722218d609b4a011480f1",
+      "rawBytes": 104477
+    },
+    {
+      "path": "qa/editorial/connected-scenes-diagnostics/types-second.log.gz",
+      "rawSha256": "45342ca54fc3787657ce6eb4dbe6d4510cbf68d24318d44416c0176ab31ebf4b",
+      "compressedSha256": "3666ed3b3c8b06273f9b69296193c08849e73cf9d0ad65c063212687ecf3355d",
+      "rawBytes": 208
+    },
+    {
+      "path": "qa/editorial/connected-scenes-diagnostics/generate-v2.log.gz",
+      "rawSha256": "082c02c2b706326ff6894538cc8dc49a33cb780c91a0fe7d96c568e84801bd64",
+      "compressedSha256": "f5e0f4a3e028ff8c30cd5dae6a2b9d45c7b7e6afa3104c505722febb02fe0136",
+      "rawBytes": 354
+    },
+    {
+      "path": "qa/editorial/connected-scenes-diagnostics/webkit-first.log.gz",
+      "rawSha256": "197a4cff5e93e6311293ab191dd5c951ae3657a452e7230a9ca6c8152361f82b",
+      "compressedSha256": "0632b0bad695e2cfc5a0f17ab1d7d4668637ea46c4aac48a3afaa1cbc34e9db7",
+      "rawBytes": 16341
+    },
+    {
+      "path": "qa/editorial/connected-scenes-diagnostics/mix.log.gz",
+      "rawSha256": "1caef2ef7c63b927cae2ae32a936dc4c97b382fd14f8b1696d40aa22351f6a72",
+      "compressedSha256": "5fc4d1decd37d21f6633df98ca55ecafe78a1c56d388bb6049bf0aadfde33661",
+      "rawBytes": 976
+    },
+    {
+      "path": "qa/editorial/connected-scenes-diagnostics/probe.log.gz",
+      "rawSha256": "cbd1f2136dabbf32e99495e48ceba4d40d6d00e405b67e176f733b55e22da4d1",
+      "compressedSha256": "c56e57d4ec9f75b7f024de185cab51569189ed8537fae323a5d9cc1fd4c45e6c",
+      "rawBytes": 2124
+    },
+    {
+      "path": "qa/editorial/connected-scenes-diagnostics/focused-first.log.gz",
+      "rawSha256": "1ee2f2b2d5b641d8e74b38c07d80b053b398758e9bd687d0c0f0482e3c9c0674",
+      "compressedSha256": "807e83111168573a4ba1f467b0c6025fa34315c8466171ca73928d14e49c879b",
+      "rawBytes": 1530
+    },
+    {
+      "path": "qa/editorial/connected-scenes-diagnostics/generate-v1.log.gz",
+      "rawSha256": "bd5daec24f50f2cfe0926e19d15c1317975f84bca768d603975c40944078674f",
+      "compressedSha256": "3b91d835dc758c8400dfd61842069e09b770721228f03cff973cf11397f8a8a4",
+      "rawBytes": 918
+    },
+    {
+      "path": "qa/editorial/connected-scenes-diagnostics/asr-v2.log.gz",
+      "rawSha256": "8d40925a4108207d3cf97dcabf755e0c31d76df25e18519dff3dcb1c4648f3b3",
+      "compressedSha256": "3991800547f224d63cbf4c554f675d8c5a892945be2b351628b02070b2e60e9a",
+      "rawBytes": 1140
+    },
+    {
+      "path": "qa/editorial/connected-scenes-diagnostics/types-final.log.gz",
+      "rawSha256": "45342ca54fc3787657ce6eb4dbe6d4510cbf68d24318d44416c0176ab31ebf4b",
+      "compressedSha256": "3666ed3b3c8b06273f9b69296193c08849e73cf9d0ad65c063212687ecf3355d",
+      "rawBytes": 208
+    },
+    {
+      "path": "qa/editorial/connected-scenes-diagnostics/asr-v3.log.gz",
+      "rawSha256": "943140eb252ecfbca1685e6aeeadc15537df881a4ae0649c6c5a4924ed397b0a",
+      "compressedSha256": "f06641606dccff45c06cb50fbbb77ac646d46b9027d74d3eb31adc0b758a80fa",
+      "rawBytes": 592
+    },
+    {
+      "path": "qa/editorial/connected-scenes-diagnostics/error-context.md.gz",
+      "rawSha256": "17a82b6690eb0cc39341460581f39f6360318b40edf481a9446ffda26dd180e2",
+      "compressedSha256": "8aaa69cb2229b99a86b9b55b78ce825e8beeaac40cdf7f64f840afaefd84e491",
+      "rawBytes": 15219
+    },
+    {
+      "path": "qa/editorial/connected-scenes-diagnostics/chromium-first.log.gz",
+      "rawSha256": "f358ada8bba93447db2f685b55809f5824a81d72788be10d99b922869f79b524",
+      "compressedSha256": "759a6bdbb9b99497a69a0d581a6eb6a227791857ef9d142d6cf9860202fd2df6",
+      "rawBytes": 21423
+    },
+    {
+      "path": "qa/editorial/connected-scenes-diagnostics/all66-accepted.log.gz",
+      "rawSha256": "905eb7a90b4cc5ee94ec8a821546895ef60aada6aaf9647b0f79d7777386a4c4",
+      "compressedSha256": "9331e627b94b0b8e294222983d9ceef12522d62509876b8012d96ea436f09bc5",
+      "rawBytes": 243
+    }
+  ]
+}
