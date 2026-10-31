@@ -200,3 +200,7 @@ The seven new Phase16 pilot lines retain Sera’s existing `af_bella` stock synt
 ## Quill and Edda character-drama continuation
 
 Ten additional Phase16 quotations retain Quill’s `am_michael` and Edda’s `af_kore` stock synthetic cast and pinned Kokoro licensing. Exact words, model/source/delivery hashes and raw unprompted transcripts are in `qa/media/dramatic-beats-dialogue-*.json`. The existing Quill counter and Edda archive/portrait art is reused with explicit scene rationale in `qa/media/dramatic-beats.json`. No commissioned performer or independent acting acceptance is claimed.
+
+## Phase18 dramatic-sequence paintings
+
+Five Quill/Edda/Mara paintings were generated with OpenAI image generation from the existing cast references on31October2026. Full masters remain outside Git; ten proportional JPEG exports, hashes, references and direction are recorded in `qa/media/dramatic-sequences-provenance.json`. These are synthetic images; no commissioned artist or independent anatomy acceptance is claimed. Original art and all exact stock-cast dialogue remain unchanged.

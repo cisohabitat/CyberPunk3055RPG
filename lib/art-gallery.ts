@@ -1,8 +1,9 @@
+import { DRAMATIC_SEQUENCE_GALLERY } from './dramatic-sequence-art';
 import catalog from "../qa/media/art-gallery.json";
 import type { ViewableArt } from "./art";
 
 export type GalleryEntry = ViewableArt & { category: string; width: number; height: number };
-export const GALLERY_ART: readonly GalleryEntry[] = catalog.entries;
+export const GALLERY_ART: readonly GalleryEntry[] = [...catalog.entries, ...DRAMATIC_SEQUENCE_GALLERY];
 export const GALLERY_CATEGORIES = ["Scenes & places", "Characters", "Equipment & sources", "Title & city"] as const;
 export const GALLERY_PAGE_SIZE = 24;
 export function filterGallery(category: string, query: string): readonly GalleryEntry[] {

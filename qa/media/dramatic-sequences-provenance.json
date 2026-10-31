@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "method": "Generated with image_gen from the three existing character-setting references; standalone 1536x1024 PNG masters retained outside Git. Responsive JPEG encoding/resizing only with ImageMagick; no creative retouch outside image_gen.",
+  "references": [
+    "public/art/quill-offer.jpg",
+    "public/art/edda-archive.jpg",
+    "public/art/mara-present.jpg"
+  ],
+  "inspection": "Reviewed the five generated full frames before encoding. Visible limbs connect to the actors; no extra visible hand observed. Closed/blank props and absent visitor hands maintain unresolved knowledge and permission. Delivery/phone inspection and browser sequence comparison remain required.",
+  "assets": [
+    {
+      "id": "sequence-quill-agreement",
+      "master": "/workspace/generated_images/exec-6e60658c-d0a9-4cc3-9364-8aad83c4023d.png",
+      "masterSha256": "a4bd8158ee525a60e6f8830773a2d0169d4a726dbe744b0b0111cddbe7ad27d3",
+      "deliveries": [
+        {
+          "path": "public/art/sequence-quill-agreement.jpg",
+          "sha256": "886aa389bd6dd4c7bb7a09ca2fe8eefdd6893a0d78d9bf5b44887491e8cf831b",
+          "bytes": 281131
+        },
+        {
+          "path": "public/art/sequence-quill-agreement-small.jpg",
+          "sha256": "27980163ea663dec36d4e7d7737a38a93e5096ea4bf1dbb5f7faf4b1b461ca79",
+          "bytes": 116211
+        }
+      ]
+    },
+    {
+      "id": "sequence-quill-refusal",
+      "master": "/workspace/generated_images/exec-9eb6bb69-e0fe-4365-9397-6bca6e8329c6.png",
+      "masterSha256": "b82a158c35d1ec2f98ab85ecd61be6f673efb62db6e312bf7abb095e4dc912d3",
+      "deliveries": [
+        {
+          "path": "public/art/sequence-quill-refusal.jpg",
+          "sha256": "e1b940f5a3ffe4b9ec88d66a00eff42c16a3a8cfadde388cb829f54bfad6732d",
+          "bytes": 286325
+        },
+        {
+          "path": "public/art/sequence-quill-refusal-small.jpg",
+          "sha256": "7653b4220ae9c27d8c3316dfb5af5b0ecc17462ba1116412a6ce6884a29a2796",
+          "bytes": 116989
+        }
+      ]
+    },
+    {
+      "id": "sequence-edda-request",
+      "master": "/workspace/generated_images/exec-4b1d971d-c4de-49b7-9a50-75ad8edcecd4.png",
+      "masterSha256": "9b66357aca65ffce8b300ea9c226ad32196dd81dc24f0d7fded081accd55818e",
+      "deliveries": [
+        {
+          "path": "public/art/sequence-edda-request.jpg",
+          "sha256": "36423080f2e5a6efe01edb23290586c3ef986b43a370c27639f2ed56fd39549c",
+          "bytes": 284601
+        },
+        {
+          "path": "public/art/sequence-edda-request-small.jpg",
+          "sha256": "206aca3273a13ee15c78e72b969a1dfbb235ab3dff5f4d4417aea67f3157d192",
+          "bytes": 113378
+        }
+      ]
+    },
+    {
+      "id": "sequence-edda-boundary",
+      "master": "/workspace/generated_images/exec-34578061-4228-4893-90dc-a245d5b47eaf.png",
+      "masterSha256": "d198461a7b9178623d95bb55d48bbe87de23c8b562da810d6c90a41a4ce12ae9",
+      "deliveries": [
+        {
+          "path": "public/art/sequence-edda-boundary.jpg",
+          "sha256": "c7a31cfa29e8b3959cf6124a2c2ea12fa17fa5386ea315a623501a67b5613a31",
+          "bytes": 278091
+        },
+        {
+          "path": "public/art/sequence-edda-boundary-small.jpg",
+          "sha256": "9c36b799b27e2c2aec0d1b9e7e802e61736a55719439ea193b160c91ca53e7d7",
+          "bytes": 111544
+        }
+      ]
+    },
+    {
+      "id": "sequence-mara-return",
+      "master": "/workspace/generated_images/exec-127728e8-b7fb-4ee4-9471-fbdf22b77038.png",
+      "masterSha256": "30677fdf5ee0b4186844450a2b70725f340cab2997e64a083fe5113690573a4f",
+      "deliveries": [
+        {
+          "path": "public/art/sequence-mara-return.jpg",
+          "sha256": "26dda5ef6cc74426649ed95f7da30e1c2460f4cc43f95b187ac091c72f1450fe",
+          "bytes": 181921
+        },
+        {
+          "path": "public/art/sequence-mara-return-small.jpg",
+          "sha256": "b18bf51a76887fc35010f5a6b7d7d82420aac3d54b4311c05cc633ff5f97995b",
+          "bytes": 72027
+        }
+      ]
+    }
+  ],
+  "referenceSha256": {
+    "public/art/quill-offer.jpg": "c1dfbc8b368cd0d02542c14407a0b2733847425ce89d96e9ba2df49feae12c1c",
+    "public/art/edda-archive.jpg": "090a907f59e2587d9ccc536652621ff0868c6ac46aa0e4a3067401a671cc9810",
+    "public/art/mara-present.jpg": "c981bd1f21bfe996d6493e78987b4cffd63c06954d8d7be945a5799216866337"
+  },
+  "direction": {
+    "all": "Same identity, costume and setting as its supplied reference; cinematic painterly realism, no text or logos, no visitor hands. Connected ordinary anatomy. Keep props owned and information unresolved.",
+    "quill-agreement": "Conditional advance, older gray-haired stubbled Quill, amber noodle stall against blue rain. Chip under his fingertips on his own side; no transfer.",
+    "quill-refusal": "Same man and stall; folded connected forearms, one naturally visible hand, chip back by bowl. Refusal through posture; no aggression or transfer.",
+    "edda-request": "Mature East Asian archive worker with short salt-and-pepper hair and glasses; pencil paused above blank unsigned page, other hand flat, closed ledger. No signature or extracted knowledge yet.",
+    "edda-boundary": "Same archive worker, closed ledger and blank folded copy separate; pencil set down; no witness name, signature, issuing-key authentication or custody transfer.",
+    "mara-return": "Same tired dark-haired woman and rainy clinic room; slightly attentive listening posture, one visible hand and other naturally in lap. Her own cup and closed envelope, empty chair. No forgiveness, recovery, public permission or fulfilled hope depicted."
+  }
+}

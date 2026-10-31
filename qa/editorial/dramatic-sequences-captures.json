@@ -1,0 +1,87 @@
+{
+  "revision": "a2b7df9a83f70be944fb786fba4a1e9278a58775",
+  "dirty": true,
+  "method": "Same current Chromium source, legal route checkpoints; preceding supported visual flag absent for before, present for current. Enlarged390px, full-scene reading, actual image decode. This does not relabel source as the preceding deployed renderer. All preceding source selections independently preserved by baseline.",
+  "rows": [
+    {
+      "id": "quill-agreement",
+      "mode": "before",
+      "sceneId": "pay_yes",
+      "source": "/art/market-counter.jpg",
+      "file": "/workspace/saint-shard-fix/qa/production/reports/dramatic-sequences-final-captures/quill-agreement-before.png",
+      "sha256": "830f4c88989a11e90a7dae8c67e99ee96d546e7f909bebad6a04cd598cb17772"
+    },
+    {
+      "id": "quill-agreement",
+      "mode": "current",
+      "sceneId": "pay_yes",
+      "source": "/art/sequence-quill-agreement.jpg",
+      "file": "/workspace/saint-shard-fix/qa/production/reports/dramatic-sequences-final-captures/quill-agreement-current.png",
+      "sha256": "5ca28f4dffe5f4fce72bee17e1bcb118d93ee9e1ddef5eb86a2b6db67800ba8b"
+    },
+    {
+      "id": "quill-refusal",
+      "mode": "before",
+      "sceneId": "pay_no",
+      "source": "/art/market-counter.jpg",
+      "file": "/workspace/saint-shard-fix/qa/production/reports/dramatic-sequences-final-captures/quill-refusal-before.png",
+      "sha256": "1fcae7f6d60cd5f047f51af8d3ace7d02ef5e5f547890d69af48a0ae2409f4aa"
+    },
+    {
+      "id": "quill-refusal",
+      "mode": "current",
+      "sceneId": "pay_no",
+      "source": "/art/sequence-quill-refusal.jpg",
+      "file": "/workspace/saint-shard-fix/qa/production/reports/dramatic-sequences-final-captures/quill-refusal-current.png",
+      "sha256": "44b78c1c130eb8c26ca535a4b825d401b07da4504f397d3eaa903585822c95c3"
+    },
+    {
+      "id": "edda-request",
+      "mode": "before",
+      "sceneId": "act2_craft_archive_ledger",
+      "source": "/art/edda-archive.jpg",
+      "file": "/workspace/saint-shard-fix/qa/production/reports/dramatic-sequences-final-captures/edda-request-before.png",
+      "sha256": "3ba1b4b82ce0e97c3985c64d12daf6a3fdaa75b966e49fc9665bac535ce5d725"
+    },
+    {
+      "id": "edda-request",
+      "mode": "current",
+      "sceneId": "act2_craft_archive_ledger",
+      "source": "/art/sequence-edda-request.jpg",
+      "file": "/workspace/saint-shard-fix/qa/production/reports/dramatic-sequences-final-captures/edda-request-current.png",
+      "sha256": "4635b87da7542afc65098a0a2cfc4eed0e31997c523c184563fe4d6d85067900"
+    },
+    {
+      "id": "edda-boundary",
+      "mode": "before",
+      "sceneId": "act2_archive_custody",
+      "source": "/art/edda-archive.jpg",
+      "file": "/workspace/saint-shard-fix/qa/production/reports/dramatic-sequences-final-captures/edda-boundary-before.png",
+      "sha256": "5ec9d7c218baa504dcbf66fa6667b703e46834691e9fd7a4aaafd51ad27a9925"
+    },
+    {
+      "id": "edda-boundary",
+      "mode": "current",
+      "sceneId": "act2_archive_custody",
+      "source": "/art/sequence-edda-boundary.jpg",
+      "file": "/workspace/saint-shard-fix/qa/production/reports/dramatic-sequences-final-captures/edda-boundary-current.png",
+      "sha256": "6491edbbe2ce7d4baef0e8b57e3cec00bb17d8a0e9aecb8a84bb760994f3cc3c"
+    },
+    {
+      "id": "mara-return",
+      "mode": "before",
+      "sceneId": "act3_mara_account_return",
+      "source": "/art/mara-account.jpg",
+      "file": "/workspace/saint-shard-fix/qa/production/reports/dramatic-sequences-final-captures/mara-return-before.png",
+      "sha256": "9d6339e7da7967d41322802714e272ba410678dfe2ea188b32cac20f0914b011"
+    },
+    {
+      "id": "mara-return",
+      "mode": "current",
+      "sceneId": "act3_mara_account_return",
+      "source": "/art/sequence-mara-return.jpg",
+      "file": "/workspace/saint-shard-fix/qa/production/reports/dramatic-sequences-final-captures/mara-return-current.png",
+      "sha256": "ecae8ce79c9961b37781830cd1f05d5fc554cded78014fd26e2055d1a3c2a23f"
+    }
+  ]
+}

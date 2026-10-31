@@ -1,0 +1,31 @@
+{
+  "method": "Legal current-route checkpoints for retained sequence entry frames; default type, full-scene reading,390px, sound off, actual decode. Internal synthetic viewport review, not physical-device or blind observation.",
+  "revision": "a2b7df9a83f70be944fb786fba4a1e9278a58775",
+  "dirty": true,
+  "rows": [
+    {
+      "actor": "Quill",
+      "route": "qa/routes/dramatic-sequences/face.json",
+      "scene": "stall",
+      "source": "/art/quill-offer.jpg",
+      "file": "/workspace/saint-shard-fix/qa/production/reports/dramatic-sequences-entry-captures/Quill.png",
+      "sha256": "04c036b29285508d7c192fd34840666a35ed57768cc870fc34fffb0b2502bab7"
+    },
+    {
+      "actor": "Edda",
+      "route": "qa/routes/dramatic-sequences/face.json",
+      "scene": "act2_archive_brief",
+      "source": "/art/edda-archive.jpg",
+      "file": "/workspace/saint-shard-fix/qa/production/reports/dramatic-sequences-entry-captures/Edda.png",
+      "sha256": "e06abd1bd5e19e61e535dfae39e1e70c068a38ecd96bbc962fa53d6c518c3c74"
+    },
+    {
+      "actor": "Mara",
+      "route": "qa/routes/dramatic-sequences/both-owned-company.json",
+      "scene": "act2_mara_account_owned",
+      "source": "/art/mara-account.jpg",
+      "file": "/workspace/saint-shard-fix/qa/production/reports/dramatic-sequences-entry-captures/Mara.png",
+      "sha256": "b01668e0f812560d3acd64bc937b55bb858b0e00bd0cc5b3dd1e5021e47c4781"
+    }
+  ]
+}

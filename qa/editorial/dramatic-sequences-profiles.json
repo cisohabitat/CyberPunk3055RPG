@@ -1,0 +1,80 @@
+[
+  {
+    "id": "sequence-face",
+    "route": "qa/routes/dramatic-sequences/face.json",
+    "precedingRoute": "qa/editorial/dramatic-sequences-controls/face.json",
+    "historicalRoute": "qa/routes/dramatic-beats/face.json",
+    "translations": [],
+    "kind": "ending",
+    "width": 390,
+    "artwork": "full",
+    "reading": "all",
+    "sound": true,
+    "shots": false
+  },
+  {
+    "id": "sequence-badge-scarce",
+    "route": "qa/routes/dramatic-sequences/badge-scarce.json",
+    "precedingRoute": "qa/editorial/dramatic-sequences-controls/badge-scarce.json",
+    "historicalRoute": "qa/routes/dramatic-beats/badge-scarce.json",
+    "translations": [],
+    "kind": "ending",
+    "width": 320,
+    "artwork": "full",
+    "reading": "all",
+    "sound": false,
+    "shots": false
+  },
+  {
+    "id": "sequence-paid",
+    "route": "qa/routes/dramatic-sequences/paid.json",
+    "precedingRoute": "qa/editorial/dramatic-sequences-controls/paid.json",
+    "historicalRoute": "qa/routes/dramatic-beats/paid.json",
+    "translations": [],
+    "kind": "ending",
+    "width": 1440,
+    "artwork": "full",
+    "reading": "all",
+    "sound": false,
+    "shots": false
+  },
+  {
+    "id": "sequence-both-owned-company",
+    "route": "qa/routes/dramatic-sequences/both-owned-company.json",
+    "precedingRoute": "qa/editorial/dramatic-sequences-controls/both-owned-company.json",
+    "historicalRoute": "qa/routes/mara-account/both-owned-company.json",
+    "translations": [],
+    "kind": "ending",
+    "width": 390,
+    "artwork": "full",
+    "reading": "all",
+    "sound": true,
+    "shots": false
+  },
+  {
+    "id": "sequence-partial-deflected",
+    "route": "qa/routes/dramatic-sequences/partial-deflected.json",
+    "precedingRoute": "qa/editorial/dramatic-sequences-controls/partial-deflected.json",
+    "historicalRoute": "qa/routes/mara-account/partial-deflected.json",
+    "translations": [],
+    "kind": "ending",
+    "width": 320,
+    "artwork": "none",
+    "reading": "all",
+    "sound": false,
+    "shots": false
+  },
+  {
+    "id": "sequence-sold-distance",
+    "route": "qa/routes/dramatic-sequences/sold-distance.json",
+    "precedingRoute": "qa/editorial/dramatic-sequences-controls/sold-distance.json",
+    "historicalRoute": "qa/routes/mara-account/sold-distance.json",
+    "translations": [],
+    "kind": "ending",
+    "width": 1440,
+    "artwork": "full",
+    "reading": "all",
+    "sound": false,
+    "shots": false
+  }
+]

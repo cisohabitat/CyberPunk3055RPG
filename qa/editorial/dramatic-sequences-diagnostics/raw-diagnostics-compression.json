@@ -1,0 +1,17 @@
+{
+  "reason": "Lossless storage of exact raw diagnostic whitespace; all source whitespace checks remain enabled.",
+  "files": [
+    {
+      "path": "qa/editorial/dramatic-sequences-diagnostics/error-context.md.gz",
+      "rawSha256": "c113630aa22295e38cfecc9360d1ba5555ad8656cf86cb62821650c2bc04a1ad",
+      "rawBytes": 6578,
+      "compressedSha256": "63cad11eb9ce2bae7a69e9570ec4954c7792db30e3d0bf0f35feab0fe5d5468b"
+    },
+    {
+      "path": "qa/editorial/dramatic-sequences-diagnostics/push-whitespace-first.log.gz",
+      "rawSha256": "4365e515d5f288023d6dc628f2e6708b22472588b0035f598a8efa4fa4c0bab7",
+      "rawBytes": 1242,
+      "compressedSha256": "6ef19f7f870195e77c443669979747d306832a224b865c51371aa65e1c6ac7c7"
+    }
+  ]
+}

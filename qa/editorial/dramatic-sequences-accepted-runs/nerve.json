@@ -1,0 +1,3365 @@
+{
+  "revision": "a2b7df9a83f70be944fb786fba4a1e9278a58775",
+  "dirty": true,
+  "cohortSetup": {
+    "kind": "supported-prior-sequence-factory-save",
+    "tabs": 1,
+    "reloads": 1
+  },
+  "testedSources": {
+    "lib/dramatic-sequence-art.ts": "35f5a3f491867d03d39753dd43758f53cff9602fdacbe3b4adb58adf350bd4bf",
+    "lib/art-gallery.ts": "0ab14bc965c35791bbe7da01ea0661e6d73b1bc48b43a9e3e3e107584d29082c",
+    "qa/media/dramatic-sequences.json": "a144dacbe36e23f1d264f1a8db8bdff14450250b61931e08e0490af2b6cf320e",
+    "qa/media/dramatic-sequences-provenance.json": "b82bc2eb48b9efb0933912c8b7838e5f706524b936737199a129bc4f896985bb",
+    "qa/media/consequential-expansion.json": "fff7e59ba841120420ae59eb012c3c26edcddd97743aba1ca8714caf7d1a506b",
+    "lib/consequential-methods.ts": "9a4f8d803f55786bbcdc9205274a44d118073e637a6d7c4f9b26f28e732ad8b8",
+    "qa/media/consequential-methods.json": "a7e20e6b1e50ec3fcf10a818343aed83f39f0b710ed4194582cc5027ba07c4cd",
+    "lib/dramatic-beats.ts": "27999306f632bfb14b4f29ab40667a10278af5ce0991dcf493908a6ea2c0720c",
+    "qa/media/dramatic-beats.json": "026304a0564bf32e69fd16d4ea79bdd2e979fa27cd4d92511e6ac75a9d5c38d9",
+    "qa/media/dramatic-beats-dialogue-bindings.json": "73cd270888ce3c563b6ce131072acf6661d7acf0b0d64eb5ee4f552581910d45",
+    "qa/media/dramatic-beats-dialogue-lines.json": "625f6359664e0b7a60485fed2120bad8c64f629b599b9e281b5d4ec04347b4de",
+    "qa/media/dramatic-beats-dialogue-provenance.json": "660e6c4473613f96c7c078b87b5ac8027eadcd5d45bb0d425dcbbce93a6c4654",
+    "qa/media/dramatic-beats-dialogue-transcripts.json": "b22cecb3946f137041a3f8d99b8220a3c136dbc12a9cd6d46e18ada13f10cacd",
+    "lib/story/goal.ts": "ab27abd3e887d3f46b28a339692bbb1b01f95c5ae4b62268c0e814019800afd6",
+    "lib/sera-shift.ts": "c83ac805ab97e27e2419a37b18091a996b269739a39491a743927b573129555f",
+    "lib/story/sera-shift.ts": "b1f8e0fdbbe4a4edda143a9349a2ae43bc50e8078641c5bb3883dbb78a163182",
+    "qa/media/sera-shift.json": "b1c23e917b4ba5de2184d368fa152c6c3b5c203520868801ea37f37ca44e2344",
+    "qa/media/sera-shift-dialogue-bindings.json": "d39822662d128a3aef672d09934143a40124b8e6927bfe0983f151fbf3cf421a",
+    "qa/media/sera-shift-dialogue-lines.json": "433ca404c59ce3228f866140e3b82cc6bfc2320e51e813ed1ffa970569a00797",
+    "qa/media/sera-shift-dialogue-provenance.json": "f8568aae7461dc2c0a961f2cf3cc7ae31e5f7de55714ba5a7b9317057f50e735",
+    "qa/media/sera-shift-dialogue-transcripts.json": "0fdde859bc91efc6a5aff25d87954fddeddb9992029f8d5e81c89ee56bd43e3e",
+    "lib/connected-performance.ts": "c5a634187e4d0c8d9888ee7904517d3ffb5f9b682a26544ff615782da3a40f74",
+    "qa/media/expressive-performance.json": "8230a13d7467611663aa6c32c5cef6efbadaeb2afdb10453ef45b52151bc32a3",
+    "lib/ordinary-direction.ts": "7932e53f8fac81b5a54c42a7a53e83cff0456e405dea84f1ca19d2edf0d594c1",
+    "components/OrdinarySceneArtwork.tsx": "8c3c080aa361f45ee7396d7cd0a0fe7b8f6da1eb4300b870b292d4d28dee2b98",
+    "qa/media/ordinary-scene-direction.json": "0f8b5ccd44663bff042f179110139ac6546520776cbfc47de9f9e051ee3686a6",
+    "lib/engine.ts": "0d11543994b28688d6f3e8598e024e0e85718fd8a022d69aadf62c6b7c7fe432",
+    "lib/story/index.ts": "b04c3761559a47531ed07008611bc86ff37df52a668adf92a19d06c222ad305f",
+    "lib/objectives.ts": "6af7e2f57f16b72cf69450ee3a0d35efaa6b97eae9f62a29e51545b5663476d0",
+    "qa/media/scene-art.json": "16f90da58dc77a07333b0426756bf65ef5cb8556e27640ae4c21174bfac9228f",
+    "qa/media/return-routing-dialogue-transcripts.json": "7cb80c1f1b71ef1c8f940d56136b83cfdccc601711036f5fc5a4259007d9b9e3",
+    "qa/media/return-routing-performance-review.json": "49a099f6c3e354ffb2af35cdb9b59fe0f4bd250f376847e1c14d9edd7fb52422",
+    "lib/return-routing.ts": "fe4d9171ddaa7c52d8f770822197bd4ca5ec46f9f7368115fb11525d2d872096",
+    "lib/story/return-routing.ts": "bed558a7014a7e54c994072e8f1d007728eaf876de3d7420f6314e79f27a1acc",
+    "qa/media/return-routing.json": "a7130566c854d00df936baa3656e8702654c6d72cdb18fbecc096522472b6e59",
+    "qa/media/return-routing-dialogue-bindings.json": "e01aee74ea70bfbec1f13bb2ef813739b353f1ac5f406161798a677abd819562",
+    "qa/media/return-routing-dialogue-lines.json": "13daf4736d4bfa21b0c516fd95d5851609fd0cc93150d810dc454ca5fbecaf06",
+    "qa/media/return-routing-dialogue-provenance.json": "798a74062cf44db592dca5c8e364dbf70cca09153aa7cc07370e2dc14f82b2b1",
+    "lib/decision-flow.ts": "34d192d217c2074b154d77720d9b036b48827ffecee7f8af88291093f35fd8d6",
+    "components/TestimonyBrief.tsx": "6e3da0c3ae7965543c62f8e93f856b6dc94417550ac557a1bec251276f05e895",
+    "components/FieldKitBrief.tsx": "96d25601910c497c31d320f242d7301e9ce21fc938312437aa143b6f70d5e595",
+    "qa/editorial/decision-flow-baseline.json": "8df3961cea4acd02d6f04780c7e0a9c1e2045058dfde782a6dfbbdeb69bed026",
+    "lib/sequence-continuity.ts": "c91672a557a6dfd40f67c9a5d2a2aca53ac274aae9d4dcc6e021cca0cb1f99fe",
+    "qa/media/sequence-continuity.json": "4566f388af18a4185fde99d85537ac2c07568d57aabd8d04771f111307fb50dd",
+    "lib/freight-craft.ts": "0967ec0d9fe3795c42b157e6e004af4b2651148e792e8584c06f418a29cd5e95",
+    "lib/story/freight-craft.ts": "314ab3941c9fa115a08e4f92bdcbe24e1a70015a1156ab2b038545e8ef401dc6",
+    "qa/media/freight-craft.json": "ede42bf05070dee20e6e40c78e12b25b1336b7b1e0f63d81d5e4245215fe9d7f",
+    "qa/media/freight-craft-dialogue-bindings.json": "623944db233f3ea8caa0b95d61c878bd2a7ed6f22e837d431361aea526827ac6",
+    "qa/media/freight-craft-dialogue-lines.json": "2856fa68fa67475feea241bdbc6e9862deda561d87fc92a230a7efe69a00a03e",
+    "qa/media/freight-craft-dialogue-provenance.json": "f7096dec6ef145ecf53e1d6a4279241519d8c7efe88eb37603fe1a7e471bad10",
+    "lib/workspace-flow.ts": "94744c3ee435d17114cce49ea235644203ca57c03bb9cc720b10bc60702c6b8b",
+    "lib/performance-delivery.ts": "5219de722d6c71a0f61671298beba259f9cce330c8a89f16e64ad5d25690642f",
+    "qa/media/aaa-performance-direction.json": "1984052cae8f8952d04f3997e148f124700e7acc0a588c4d922a4b187998431a",
+    "lib/visual-direction.ts": "1254830195020aea158bb72433f51f5695a7191f4e7c0c1aa06cf38d5513a1e7",
+    "qa/media/aaa-visual-direction.json": "de363adcf52abe05eab1fd0df4934575301e676c77823d92b2148641ee43907c",
+    "lib/emotional-payoff.ts": "7c896e3a9c836eba9ab462f13804c88c59b680f0c8f7589bf7a19c7de15c8a33",
+    "lib/story/emotional-payoff.ts": "5a691265ddae8a2ebd5e6c0c2c33b075a961d32ea56b49735424760199ffdec9",
+    "qa/media/emotional-payoff.json": "f1191cb772ed22ed8d84343f4a751d162eb34521a26027648b4d719260caa241",
+    "qa/media/emotional-payoff-dialogue-bindings.json": "a707a346bb900fe31c4073ab7c66bf5dbac36da8e8287dd8c0a1b1f77c5931f6",
+    "qa/media/emotional-payoff-dialogue-lines.json": "3ad468fea0fe841f2e54840bf9150b4d53b94fe53faad3bf894540f6a7089c46",
+    "qa/media/emotional-payoff-dialogue-provenance.json": "8966ffb935857752f88b1a894832cf5324198b8732a45908d1813905a19151c2",
+    "components/ArchiveQuestionDesk.tsx": "b635102472f5e76e2bac57b7d520624ade71c4e1ad7f6d14cae49e83a1b02d5d",
+    "lib/encounter-craft.ts": "efc77b3a16e813aa1d5e8172762672370eafd5d82cbfa70ba053b8cfe553adee",
+    "lib/story/encounter-craft.ts": "f5f3cc9de451748f49694349422047e00710f30a069f119e1e6f4117ca015c3d",
+    "qa/media/encounter-craft.json": "348312c5d6d20a0175300e3a1f93d4e2a99eb0b5a36e00d571221d9c64fee093",
+    "qa/media/encounter-craft-dialogue-bindings.json": "66a1476afbc50a58c9a1839d638053b7e8ac48927fc05260d406a3216a94dfa7",
+    "qa/media/encounter-craft-dialogue-lines.json": "5dcc0e95d88e4362a5afbb9f3e9825dbd46aa975ca62b2528904ed8f0184b139",
+    "qa/media/encounter-craft-dialogue-provenance.json": "5ee7569d21309923c84d0b435151f443bc75ad5e9f7bb60b23ba78ea8925859e",
+    "lib/decision-pacing.ts": "aa3905f0f88e669e30dad423ab78a5ff95e5adba1051eebf03f608e20a94b07e",
+    "lib/witness-return.ts": "dd14e864d5b546133ce3c8e22773e90bff3a9892510a2c28ac2f153ac949e076",
+    "lib/story/witness-return.ts": "b512e29f5e7c3bb109994607f71e590cbf696289b75e699c4664ce40b407b3d0",
+    "qa/media/witness-return.json": "45f140cf371ad5b5fbe714567d797a2162327cdb1ca63c8de65385099968de33",
+    "qa/media/witness-return-dialogue-bindings.json": "9fd64ac744aff7d1d8b030cac798571ac6cbdc2e705141ddccd8e1fdf55d90b7",
+    "qa/media/witness-return-dialogue-lines.json": "e8dbf59dbcde428f25f22d5c801bdb75f0b4599b22ddf5814854b1376855dfa3",
+    "qa/media/witness-return-dialogue-provenance.json": "aadedf131a2b2826cf4db4340c0530e632e338f6535343545e0a3e7b10aa6359",
+    "lib/mara-account.ts": "226ec2625d2488eebe1b0a0e2b1c77521727f01652052b37ef7b8c2da2a490f0",
+    "lib/story/mara-account.ts": "ca16118ea7b76f8c084427718cfa5c876861f00158ca01eea9f0800a96573df4",
+    "qa/media/mara-relationship.json": "a7724ef5992099d2316e571468777c48c948224fa2c4bbb586538b0d5080ff02",
+    "qa/media/mara-account-dialogue-bindings.json": "b011845fb548eaa2426e19e5a5cb94b911e2a25be2fd094385daa0b1d57bcaf9",
+    "qa/media/mara-account-dialogue-lines.json": "ae97c8f70c1163f8b47b85ccdbb9d7a657ebccea457d2bec7acf20576c996043",
+    "qa/media/mara-account-dialogue-provenance.json": "e89b035462374ddb115807cbeb82570e46b79f2e012fde4b3ae4fc398f4b8f30",
+    "lib/kerr-terms.ts": "c05769964e593acc568da5ea0683099ca7ffcbf9ab5c27102be580262f6c216b",
+    "lib/story/kerr-terms.ts": "93d5cf3cd43cb3b812d113b5b5bc73cc0c2dea053697676709f048ee3b8cf1bd",
+    "qa/media/kerr-confrontation.json": "0a9f9f72fa96749c8e263d588bc2f46c68a493075e14d15b4d6560637f92f752",
+    "qa/media/kerr-terms-dialogue-bindings.json": "428e7afd67fadd5481c18cba94aad12706d48909e490f2a58b4d029e6ea81689",
+    "qa/media/kerr-terms-dialogue-lines.json": "14ac958a2a9990c8c411e00d477792fd1d307758a8479ee2cd22cd6bca4b3062",
+    "qa/media/kerr-terms-dialogue-provenance.json": "31714dc681b3e5e9c5532293b5f1085f7c91c4f87487719bccb1fc01768df537",
+    "lib/campaign-presentation.ts": "6f346ead4243c787254978c78d185c45f3d47f680240ba259d95f09fc6929ff1",
+    "components/ArchivePlanner.tsx": "f9a8c873626e03fe7327f15cd3730606c874bbb5b1712bd0d3ff14d57e497a79",
+    "qa/production/campaign-observation.ts": "3c44a0b15d5e3948fc98010e72dec7aa31e27ce2e027f77df416c571a7158c80",
+    "lib/campaign-thread.ts": "830c66a973210075355c162f88b26f8c58d15ed132d6d8bc706c672f54c21b63",
+    "components/CampaignThread.tsx": "8aae3954feaaa7fddeae0cd6ddb4009055f7bf09fe8a0fa01fbd02854293b13c",
+    "qa/production/integrated-campaign.ts": "f57eeec4e310e0eae015e77358e2a4fbbf062546ee05d546459a673827de765c",
+    "lib/cinematic-sequences.ts": "7b1ba14a3c3ed1e9010979bbed595047468783015723d9ed5036d08801a04e73",
+    "components/SequenceArtwork.tsx": "0ade36978da94bf4ae67e84cf6efd4142a2f755f66353fa7b00690af04d059ac",
+    "components/PivotalScene.tsx": "ad27b2ba407a0ff2695832856fff4b82187c9b8fea597cd0c62231fefe09f18b",
+    "qa/media/cinematic-sequences.json": "7624313f122307390b1813acb0ee16fb5109460be22248bc753c8067e4276fb0",
+    "lib/build-techniques.ts": "663a38618172c28bf7546c455de1da1ad15cbf1a4dd51973d88f971d8ab1923d",
+    "lib/story/build-techniques.ts": "96c22a876beef9be96da9dd91d67d7eb21bd2ca8584ad7bc380e9fab2b7ded71",
+    "lib/technique-dialogue.ts": "a99785fd05a7091409a1152a8af1c3b235f297da4c7c599873bdf4d1b8fa3dda",
+    "components/TechniqueBoard.tsx": "e53a754ca151ce24ec8f0f8a6c4c4967eca41be76477a188d07da39687dee8cd",
+    "qa/media/technique-dialogue-bindings.json": "ea4bb0ebadd57641019478237a33ddb5655205f2632dd3bb822e7cfc58d25504",
+    "qa/media/technique-dialogue-lines.json": "3ba5f8c12b0fe81645ac3494dc74189eb8011dbb7a95f5d9efa68051412a1301",
+    "qa/media/technique-dialogue-provenance.json": "ad7bcf50bdff909b8630a7d85f3bb33a22a370c04d5653472426020df46490da",
+    "lib/sound.ts": "c013f398541c50fc4012526025bbf31621cb068b6ba21570c7651223e496a120",
+    "components/GameApp.tsx": "0b467b99438488c3f329360f1da198933173e88e6f8e41a6dccc1c4079b6360e",
+    "components/CreateScreen.tsx": "cd43ce0e9f49f66ce4e029b8653ec100f6576882bc42be9d9ae6efab1e6ab74a",
+    "lib/runner-names.ts": "5885d74f8df3117dc3aef392cfb2619c7e96280afd1624a951f21a0a33c13b52",
+    "components/PlayScreen.tsx": "56241d6f8ab2b377e793a781a9dcb35017911c93e719bf39d3ccbe38965bda72",
+    "components/Portrait.tsx": "4db7f4644609102c4205292530a4330b3a19a0d735ea55993daf1bc1fc108e1b",
+    "app/globals.css": "c22dc0801c22176cbf71560d36819adb3588ae6162e8539236bf677203fe91dc",
+    "components/ArchiveCatalog.tsx": "c489bb15b4510ed3a7d6a318c441a65249926f69f69b5acfbc000c18bf0e0cbb",
+    "components/FinaleReflection.tsx": "bbc097d616d793e35ad36b3866d1b863308fad097801019cd5f6af176df70b1c",
+    "lib/pivotal-scenes.ts": "9be025d6e9a22d5c0c9f2d708c1d2d7775fc7e1730e4ea4860fdae2d7338951b",
+    "lib/finale-direction.ts": "f60daea1f12d7972071e55932f19b5418c19f29d3bb1ee591427f3321e1f5572",
+    "lib/investigation-scenes.ts": "df38b381a3765c2568f10045a9257c734bd12218158857f3a5b18e9fbc82ead6",
+    "lib/scene-cues.ts": "9054e08dc32af298af5f6c324924051ade4614997a533840de9ca6d483dce724",
+    "lib/art.ts": "6bbe3b0bbc40683df2fb49046f3f2872894312f935a84a40e7414abb44e42c2b",
+    "lib/district-response.ts": "6e0714691c46081421079e48f0b9a6bc5a2c8865ae22e4b882d8c64e724fdc83",
+    "lib/district-dialogue.ts": "dfcb32b38b9c2888a1c2d09a61c6a0ed1f9727cae3747fb718f80b6c3858caf2",
+    "lib/story/district-response.ts": "c8ee3f48ac3ef94be702a0c8ee330b58a2ea4ce063e913dbbc4fcb0e324f5667",
+    "components/DistrictLedger.tsx": "8aa953888b80b552b0d0c0d37dd6b3b12607fe74c7be5ccfd9d609413641b230",
+    "qa/media/district-dialogue-bindings.json": "ba071555c4fb38294f2f98bb05de94fbd8529396b9ba6a15f67f4ee13be2428c",
+    "lib/archive-catalog.ts": "c7d571fc525d3a2b3c44922411b178a5c67f67348700b177192245e6c820a328",
+    "components/VoiceLine.tsx": "a5b44e12bf6715e0980c54790c1f1d6ac12bf9cd31401948b6d98867342cd25c",
+    "components/Sheet.tsx": "17671bbf6af7470d1324158c7f03818494bff853a32ddc1329c050c137b944fb",
+    "components/CastCard.tsx": "c75a55c2a334923ddc2f3da78f664e778e978d565df225dea627602a25a81eec",
+    "lib/character-profiles.ts": "6a03c4c2ca91ad43e2d935c47a83333717107d867763ec1cb5bdbf03c708cd93",
+    "qa/production/keyboard.ts": "14ed92fbfbcd5125fb49d5578131aa337b7ea14a4f64e749c7e6596b1a51954f",
+    "scripts/player-experience.ts": "42a771dfc5f2e4b0ce47fde821622e30b14488d62204fd46538f3af0bd93892b",
+    "qa/routes/allocation-gutterwire.json": "257f728cc9fb33b3eeffc5ccb7a9d235fd42c043913d0b62f29ee580aef5a8d1"
+  },
+  "environment": {
+    "browser": "Chromium",
+    "browserVersion": "151.0.7922.173",
+    "platform": "linux",
+    "nodeVersion": "v24.19.0",
+    "device": "cloud automation host; synthetic viewport"
+  },
+  "url": "http://127.0.0.1:3128",
+  "route": "qa/routes/allocation-gutterwire.json",
+  "width": 390,
+  "artwork": "full",
+  "reading": "all",
+  "sound": false,
+  "profiles": false,
+  "shots": false,
+  "shotReviews": [],
+  "ordinaryShots": false,
+  "ordinaryShotReviews": [],
+  "consultedProfiles": [],
+  "input": "Tab, Shift+Tab, Enter, Space, arrows and typing; no pointer actions or programmatic focus",
+  "dice": "authored/directed",
+  "elapsedSeconds": 27.67,
+  "visits": 77,
+  "scenes": [
+    "opening_city",
+    "opening_self",
+    "opening_approach",
+    "opening_neighbor",
+    "stall",
+    "pay",
+    "pay_yes",
+    "stall",
+    "route",
+    "side",
+    "undercroft",
+    "lumen",
+    "lumen_deal",
+    "vault_quiet",
+    "memo",
+    "mara_why",
+    "memory_table",
+    "memory_table",
+    "memory_table",
+    "memory_table",
+    "memory_reconstruction",
+    "memory_challenge",
+    "memory_publication",
+    "memory_table",
+    "kerr",
+    "after_kerr",
+    "ending_both",
+    "card_week",
+    "street_after",
+    "act2_training",
+    "street_after",
+    "districts",
+    "act2_origin_gutterwire",
+    "act2_shelter_brief",
+    "act2_shelter_prep",
+    "act2_shelter_methods",
+    "act2_shelter_hall",
+    "act2_shelter_result",
+    "districts",
+    "act2_helion_door",
+    "act2_helion",
+    "act2_middle",
+    "act2_archive_brief",
+    "act2_archive_prep",
+    "act2_archive_compare",
+    "act2_archive_door",
+    "act2_archive_gap",
+    "act2_middle",
+    "act2_notice_brief",
+    "act2_notice_sources",
+    "act2_notice_sources",
+    "act2_notice_sources",
+    "act2_notice_sources",
+    "act2_notice_methods",
+    "act2_notice_allocation",
+    "act2_notice_allocation_review",
+    "act2_notice_offer",
+    "act2_notice_receipt",
+    "act2_middle",
+    "act2_public_response",
+    "act2_middle",
+    "ending_week_wards",
+    "card_wall",
+    "districts",
+    "act3_neighborhood",
+    "act3_records_visit",
+    "ward_wall",
+    "act3_shelter_visit",
+    "ward_wall",
+    "act3_arrival",
+    "act3_testimony_review",
+    "act3_testimony_consent",
+    "act3_testimony_hearing",
+    "act3_testimony_correction",
+    "act3_testimony_record",
+    "act3_arrival",
+    "ending_quiet"
+  ],
+  "tabs": 530,
+  "reloads": 31,
+  "reveals": 0,
+  "voices": 0,
+  "completedVoices": [],
+  "interruptions": 0,
+  "choiceResponseMs": [
+    24,
+    40,
+    18,
+    41,
+    19,
+    372,
+    25,
+    30,
+    19,
+    361,
+    27,
+    13,
+    32,
+    365,
+    21,
+    29,
+    22,
+    10,
+    24,
+    25,
+    20,
+    18,
+    13,
+    45,
+    327,
+    45,
+    21,
+    30,
+    16,
+    17,
+    23,
+    26,
+    37,
+    36,
+    27,
+    36,
+    54,
+    30,
+    26,
+    22,
+    33,
+    42,
+    23,
+    27,
+    26,
+    429,
+    30,
+    35,
+    23,
+    11,
+    23,
+    28,
+    23,
+    25,
+    14,
+    18,
+    25,
+    35,
+    27,
+    28,
+    33,
+    37,
+    20,
+    31,
+    27,
+    27,
+    36,
+    94,
+    59,
+    27,
+    32,
+    32,
+    32,
+    24,
+    39,
+    26
+  ],
+  "final": {
+    "sceneId": "ending_quiet",
+    "creds": 350,
+    "strain": 5,
+    "rolls": [
+      1,
+      8,
+      8,
+      8,
+      8
+    ]
+  },
+  "finalAudio": {
+    "sourcesCreated": 0,
+    "sourcesDisposed": 0,
+    "buffersCleared": 0,
+    "liveSources": 0,
+    "peakLiveSources": 0,
+    "starts": 0,
+    "stops": 0,
+    "started": [],
+    "decoded": [],
+    "disposed": [],
+    "cleared": [],
+    "voiceLevels": [],
+    "sceneCueLevels": [],
+    "stoppedSources": []
+  },
+  "initialMediaRequests": [
+    "/art/title-portrait-small.jpg",
+    "/art/saint-shard-brand-small.webp",
+    "/audio/theme-title.flac"
+  ],
+  "mediaRequests": [
+    "/art/previews/opening.jpg",
+    "/art/stall-origin.webp",
+    "/art/opening-small.jpg",
+    "/art/title-portrait-small.jpg",
+    "/art/saint-shard-brand-small.webp",
+    "/art/previews/market-counter.jpg",
+    "/art/market-counter-small.jpg",
+    "/art/previews/stallholder-story.jpg",
+    "/art/stallholder-story-small.jpg",
+    "/art/previews/quill-offer.jpg",
+    "/art/quill.jpg",
+    "/art/quill-offer-small.jpg",
+    "/art/previews/chapel-service.jpg",
+    "/art/chapel-service-small.jpg",
+    "/art/previews/chapel-entry.jpg",
+    "/art/lumen.jpg",
+    "/art/chapel-entry-small.jpg",
+    "/art/previews/chapel-shared.jpg",
+    "/art/mara.jpg",
+    "/art/chapel-shared-small.jpg",
+    "/art/previews/mara-revelation.jpg",
+    "/art/mara-remorse.jpg",
+    "/art/mara-revelation-small.jpg",
+    "/art/previews/memory-bench.jpg",
+    "/art/memory-bench-small.jpg",
+    "/art/fragment-signature-small.jpg",
+    "/art/fragment-order-small.jpg",
+    "/art/fragment-roster-small.jpg",
+    "/art/lumen-challenging.jpg",
+    "/art/previews/memory-apparatus.jpg",
+    "/art/kerr.jpg",
+    "/art/memory-apparatus-small.jpg",
+    "/art/previews/district-board.jpg",
+    "/art/district-board-small.jpg",
+    "/art/stall.jpg",
+    "/art/chapel.jpg",
+    "/art/spire.jpg",
+    "/art/previews/shelter-landing.jpg",
+    "/art/sera.jpg",
+    "/art/shelter-landing-small.jpg",
+    "/art/previews/shelter-conversation.jpg",
+    "/art/shelter-conversation-small.jpg",
+    "/art/previews/shelter-pump.jpg",
+    "/art/shelter-pump-small.jpg",
+    "/art/previews/shelter-hall.jpg",
+    "/art/shelter-hall-small.jpg",
+    "/art/previews/spire-counter.jpg",
+    "/art/ives.jpg",
+    "/art/spire-counter-small.jpg",
+    "/art/ives-assessing.jpg",
+    "/art/previews/ren-canal.jpg",
+    "/art/ren-canal-small.jpg",
+    "/art/previews/edda-archive.jpg",
+    "/art/edda-scrutiny.jpg",
+    "/art/edda-archive-small.jpg",
+    "/art/previews/archive-preparation.jpg",
+    "/art/archive-preparation-small.jpg",
+    "/art/previews/archive-desk.jpg",
+    "/art/archive-desk-small.jpg",
+    "/art/ives-questioning.jpg",
+    "/art/previews/notice-desk.jpg",
+    "/art/notice-desk-small.jpg",
+    "/art/wardnine.jpg",
+    "/art/previews/memorial-stair.jpg",
+    "/art/memorial-stair-small.jpg",
+    "/art/previews/hearing-table.jpg",
+    "/art/hearing-table-small.jpg",
+    "/art/previews/laundry-cart.jpg",
+    "/art/laundry-cart-small.jpg",
+    "/art/sera-attentive.jpg",
+    "/art/previews/sera-hearing.jpg",
+    "/art/sera-hearing-small.jpg",
+    "/art/previews/ives-hearing.jpg",
+    "/art/ives-hearing-small.jpg",
+    "/art/previews/hearing-filed.jpg",
+    "/art/hearing-filed-small.jpg",
+    "/art/previews/finale-quiet.jpg",
+    "/art/finale-quiet-small.jpg"
+  ],
+  "errors": [],
+  "failedMedia": [],
+  "limitations": "Internal authored campaign, not blind or fresh-player observation. Synthetic viewport and pagehide, not physical hardware or app switch. Voice completion and cleanup do not establish listening quality. Transition times include UI review/reloads; they are not INP or field percentiles.",
+  "observations": [
+    {
+      "sceneId": "opening_city",
+      "step": 0,
+      "proseTopDocumentPx": 841,
+      "artworkControls": [],
+      "text": "Rain runs down the inside of Kite City’s dome. Above it, Helion’s towers stay dry. Below it, your chip lights up: “Ward Four noodle stall. Tonight. I have work.” Quill, a broker. You need the work. You have not said yes.\n\nThe year is 3055. You carry things, open doors, find what someone would rather lose. People call you a runner. Across the street, a Glass Chapel advertisement promises a night without regret: pay to edit an hour of memory. The original survives in a sliver of glass called a shard.\n\nThe stall’s amber light cuts through the rain a few streets ahead. Find Quill. Hear the offer before you decide what it is worth.",
+      "words": 115,
+      "choices": [
+        {
+          "id": "choice-begin-opening",
+          "enabled": true,
+          "text": "1\nWalk toward the stall."
+        },
+        {
+          "id": "choice-skip-opening",
+          "enabled": true,
+          "text": "2\nGo straight to Quill’s meeting.\nDetails\nSkip the prologue and hear the job. No money, items, or stats change."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [],
+      "decisionGapPx": 30,
+      "overflow": false
+    },
+    {
+      "sceneId": "opening_self",
+      "step": 1,
+      "proseTopDocumentPx": 747,
+      "artworkControls": [],
+      "text": "You grew up below these pipes. You know which stair stays dry, who leaves a door unlatched, and how long a patrol takes to turn the corner. People call that local knowledge. You have made it a living.\n\nYour chip holds 60 creds. Helion still keeps a file under your old name. Every official job asks for a number that leads back to it. Quill’s work comes through quieter doors.\n\nTomorrow you will still need a dry place to sleep. You would like to choose whose door you knock on. Quill brokers jobs without an official record. Tonight you are going to hear one, under the street handle Replay. What do you want it to buy?",
+      "words": 116,
+      "choices": [
+        {
+          "id": "choice-opening-survival",
+          "enabled": true,
+          "text": "1\nKeep tomorrow paid for.\nDetails\nChoose a personal reason. This changes your opening dialogue, not your stats."
+        },
+        {
+          "id": "choice-opening-identity",
+          "enabled": true,
+          "text": "2\nKeep my name and my life mine.\nDetails\nChoose a personal reason. This changes your opening dialogue, not your stats."
+        },
+        {
+          "id": "choice-opening-exit",
+          "enabled": true,
+          "text": "3\nBuild a way out of this life.\nDetails\nChoose a personal reason. This changes your opening dialogue, not your stats."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [],
+      "decisionGapPx": 30,
+      "overflow": false
+    },
+    {
+      "sceneId": "opening_approach",
+      "step": 2,
+      "proseTopDocumentPx": 747,
+      "artworkControls": [],
+      "text": "You want work without another claim on your name. Steam rises through the awnings. A woman behind the noodle counter wipes rain off a menu while the tower advert plays above her: “Sleep without yesterday.” She sees you looking.\n\n“Funny thing to sell,” she says. “Yesterday.”\n\nQuill sits at the far end of her counter, coat buttoned, bowl untouched. He raises two fingers. You have a moment before you take the stool.",
+      "words": 72,
+      "choices": [
+        {
+          "id": "choice-hear-stallholder",
+          "enabled": true,
+          "text": "1\nAsk her what she means.\nDetails\nHear one person’s experience of the memory trade. No check or purchase."
+        },
+        {
+          "id": "choice-meet-quill",
+          "enabled": true,
+          "text": "2\nTake the stool opposite Quill."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Voice transcript"
+      ],
+      "decisionGapPx": 213,
+      "overflow": false
+    },
+    {
+      "sceneId": "opening_neighbor",
+      "step": 3,
+      "proseTopDocumentPx": 747,
+      "artworkControls": [],
+      "text": "“A regular came in last winter,” she says. “He'd sold an argument with his wife to make the rent. Remembered getting paid. Didn't remember what he needed to apologize for. Asked me to write it down.”\n\nShe flattens the damp menu. “I sell dinner. But if someone hires you to carry an hour, ask whose it was before you ask what it pays.”\n\nQuill moves his bowl aside. You still need work; now you have a question to take with you.",
+      "words": 81,
+      "choices": [
+        {
+          "id": "choice-take-the-stool",
+          "enabled": true,
+          "text": "1\nSit down and hear Quill’s offer."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Voice transcript"
+      ],
+      "decisionGapPx": 213,
+      "overflow": false
+    },
+    {
+      "sceneId": "stall",
+      "step": 4,
+      "proseTopDocumentPx": 767,
+      "artworkControls": [],
+      "text": "Quill moves his bowl aside. \"Replay. Mara Voss, Helion logistics. Glass Chapel edits her memory at dawn. Bring me the original hour, intact. Fifty now, two hundred on delivery. Her bodyguard is Kerr. He is paid to stop you.\"\n\nYou came because the city already has too much say over who you are. The work is a means, not a claim on your name. Somewhere above the rain, a file with your old name is still open.\n\nThe stallholder’s story stays with you. Whose hour are you being asked to carry? Quill has not touched his dinner. You have not agreed to the job.",
+      "words": 104,
+      "choices": [
+        {
+          "id": "choice-ask-pay",
+          "enabled": true,
+          "text": "1\nDiscuss the advance.\nDetails\nHear the payment terms and decide whether to negotiate."
+        },
+        {
+          "id": "choice-ask-why",
+          "enabled": true,
+          "text": "2\nAsk why he doesn't take it himself."
+        },
+        {
+          "id": "choice-ask-chapel",
+          "enabled": true,
+          "text": "3\nAsk what the Chapel actually does."
+        },
+        {
+          "id": "choice-ask-owner",
+          "enabled": true,
+          "text": "4\nAsk whose hour you are taking, and who gets it.\nDetails\nAsk about the person behind the job. No check or payment."
+        },
+        {
+          "id": "choice-accept",
+          "enabled": true,
+          "text": "5\nTake the job.\nDetails\nAn intact hour before dawn. Two hundred on delivery. The advance hits your chip now.\nChanges\n+50 cr · Quill +1"
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Voice transcript"
+      ],
+      "decisionGapPx": 213,
+      "overflow": false
+    },
+    {
+      "sceneId": "pay",
+      "step": 5,
+      "proseTopDocumentPx": 714,
+      "artworkControls": [],
+      "text": "\"Fifty now. Two hundred when the shard is in my hand and not wandering around in your bloodstream. Kerr is her shadow. Kerr is why the number is not prettier.\"",
+      "words": 30,
+      "choices": [
+        {
+          "id": "choice-haggle",
+          "enabled": true,
+          "text": "1\nPush the advance.\nCheck\nFace · DC 8 · 5 in 10\nDetails\nHe already priced Kerr into the fifty."
+        },
+        {
+          "id": "choice-back",
+          "enabled": true,
+          "text": "2\nLeave the number alone."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Voice transcript"
+      ],
+      "decisionGapPx": 165,
+      "overflow": false
+    },
+    {
+      "sceneId": "pay_yes",
+      "step": 6,
+      "proseTopDocumentPx": 724,
+      "artworkControls": [],
+      "text": "\"Ninety. I will not go higher unless you are secretly three people. Two hundred on delivery, and if you die I am billing the corpse for my time.\"",
+      "words": 28,
+      "choices": [
+        {
+          "id": "choice-pocket",
+          "enabled": true,
+          "text": "1\nPocket the promise."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Voice transcript",
+        "Last choice · 1 update"
+      ],
+      "decisionGapPx": 260,
+      "overflow": false
+    },
+    {
+      "sceneId": "stall",
+      "step": 7,
+      "proseTopDocumentPx": 714,
+      "artworkControls": [],
+      "text": "Quill turns the untouched bowl between his hands. \"Ninety now. Two hundred for the intact shard. Before dawn. Those are the terms.\"\n\nHe already moved the advance to ninety. He will not enjoy being asked to fall in love with you twice.\n\nThe stallholder lifts another nest of noodles from the pot. Quill waits for your answer.",
+      "words": 57,
+      "choices": [
+        {
+          "id": "choice-ask-pay",
+          "enabled": true,
+          "text": "1\nDiscuss the advance.\nDetails\nHear the payment terms and decide whether to negotiate."
+        },
+        {
+          "id": "choice-ask-why",
+          "enabled": true,
+          "text": "2\nAsk why he doesn't take it himself."
+        },
+        {
+          "id": "choice-ask-chapel",
+          "enabled": true,
+          "text": "3\nAsk what the Chapel actually does."
+        },
+        {
+          "id": "choice-ask-owner",
+          "enabled": true,
+          "text": "4\nAsk whose hour you are taking, and who gets it.\nDetails\nAsk about the person behind the job. No check or payment."
+        },
+        {
+          "id": "choice-accept",
+          "enabled": true,
+          "text": "5\nTake the job.\nDetails\nAn intact hour before dawn. Two hundred on delivery. The advance hits your chip now.\nChanges\n+90 cr · Quill +1"
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Voice transcript"
+      ],
+      "decisionGapPx": 165,
+      "overflow": false
+    },
+    {
+      "sceneId": "route",
+      "step": 8,
+      "proseTopDocumentPx": 746,
+      "artworkControls": [],
+      "text": "Ninety is already on your chip. Try not to donate it to a door. You tell Quill your name stays yours. \"The front desk will ask for one,\" he says. \"The other doors ask different questions.\"\n\n\"Three ways in. The front sells forgiveness to anyone with an appointment. The hatch behind the incinerator is for people who still sweat. The choir door runs on an old Helion pad. I would not kiss it.\"\n\nThe penitent pass is a hundred. It scans often enough. Glass Chapel is three streets over. You leave the steam of the stall for its white light.",
+      "words": 100,
+      "choices": [
+        {
+          "id": "choice-begin-chapel-window",
+          "enabled": true,
+          "text": "1\nUse the patrol’s service window. Three saved opportunities.\nDetails\nScouting, entry and a quiet exit share the allowance. Resume without resetting it; expiry leaves ordinary doors available."
+        },
+        {
+          "id": "choice-prepare-chapel-method",
+          "enabled": true,
+          "text": "2\nPrepare machinery isolation or a service bargain."
+        },
+        {
+          "id": "choice-pass",
+          "enabled": true,
+          "text": "3\nBuy a counterfeit penitent pass.\nDetails\nWalk in as someone the basin expects.\nChanges\n-100 cr · Gain Counterfeit Pass"
+        },
+        {
+          "id": "choice-hatch",
+          "enabled": true,
+          "text": "4\nTake the maintenance hatch.\nDetails\nBehind the incinerator."
+        },
+        {
+          "id": "choice-side",
+          "enabled": true,
+          "text": "5\nSpoof the choir door.\nDetails\nOld Helion hardware. It bites."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Voice transcript",
+        "Last choice · 4 updates"
+      ],
+      "decisionGapPx": 308,
+      "overflow": false
+    },
+    {
+      "sceneId": "side",
+      "step": 9,
+      "proseTopDocumentPx": 699,
+      "artworkControls": [],
+      "text": "The pad is old Helion, the kind that still believes a handshake is a moral act. The shock coil behind it is less theological. Someone has scratched a halo into the paint and then tried to scratch the halo off.",
+      "words": 40,
+      "choices": [
+        {
+          "id": "choice-spoof-door",
+          "enabled": true,
+          "text": "1\nSpeak the pad's old language.\nCheck\nChrome · DC 8 · 4 in 10\nRoll outcomes\nSuccess: no resource cost (before critical adjustment); Miss: Strain +1 (before critical adjustment)"
+        },
+        {
+          "id": "choice-retreat",
+          "enabled": true,
+          "text": "2\nLeave the pad alone.\nDetails\nShock coils are a kind of opinion."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [],
+      "decisionGapPx": 30,
+      "overflow": false
+    },
+    {
+      "sceneId": "undercroft",
+      "step": 10,
+      "proseTopDocumentPx": 746,
+      "artworkControls": [],
+      "text": "Antiseptic and cheap incense are losing a fight in here. A bowl of extracted optics waits under a sign that says RECYCLE in a font meant to be kind.\n\nNo one is shouting yet. You file that under temporary.\n\nThe chair room is up a short stair. Someone is humming a hymn with the rhythm taken out.\n\nYou came to keep your life yours. The chair upstairs offers to make that question simpler. You keep walking.",
+      "words": 76,
+      "choices": [
+        {
+          "id": "choice-search",
+          "enabled": true,
+          "text": "1\nSearch the supply cage.\nCheck\nGhost · DC 6 · 7 in 10\nDetails\nOne quiet minute, spent on other people's drawers."
+        },
+        {
+          "id": "choice-slate",
+          "enabled": true,
+          "text": "2\nRead the shift slate.\nCheck\nChrome · DC 7 · 5 in 10\nDetails\nCalibration times. Or a log with your fingerprints on it."
+        },
+        {
+          "id": "choice-go",
+          "enabled": true,
+          "text": "3\nEnough. Find the nurse."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Last choice · 2 updates"
+      ],
+      "decisionGapPx": 126,
+      "overflow": false
+    },
+    {
+      "sceneId": "lumen",
+      "step": 11,
+      "proseTopDocumentPx": 699,
+      "artworkControls": [],
+      "text": "A nurse with a shaved head and an optic that refocuses like it resents the distance. Her hands are clean. Her shoes are not.\n\n\"You are not on the penitent list. Dawn puts Mara Voss in that chair so Helion can edit a crime out of her. The next sentence should be one you can survive.\"",
+      "words": 56,
+      "choices": [
+        {
+          "id": "choice-honest",
+          "enabled": true,
+          "text": "1\nQuill sent me for the Voss shard.\nChanges\nLumen +1"
+        },
+        {
+          "id": "choice-lie-stop",
+          "enabled": true,
+          "text": "2\nI'm here to stop the edit.\nCheck\nFace · DC 8 · 5 in 10"
+        },
+        {
+          "id": "choice-optic",
+          "enabled": true,
+          "text": "3\nYour optic is live. You're recording this.\nCheck\nChrome · DC 7 · 5 in 10"
+        },
+        {
+          "id": "choice-brush",
+          "enabled": true,
+          "text": "4\nMove. I'm working."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Voice transcript"
+      ],
+      "decisionGapPx": 165,
+      "overflow": false
+    },
+    {
+      "sceneId": "lumen_deal",
+      "step": 12,
+      "proseTopDocumentPx": 715,
+      "artworkControls": [],
+      "text": "\"Mara Voss signed the coolant dump into Ward Nine. Three hundred people. One memo. No funeral that used their names. The shard is the only unedited hour.\n\nSell it to Quill and he sells it to Helion, and Helion buys the last copy of its own crime. Break it, and I leak what I remember. Memory is weaker than a shard. It is still a fire.\"\n\nShe waits. The optic is dark now, which means she is doing this as a person.",
+      "words": 82,
+      "choices": [
+        {
+          "id": "choice-pact-break",
+          "enabled": true,
+          "text": "1\nI'll break it.\nChanges\nLumen +1 · The wards +1"
+        },
+        {
+          "id": "choice-pact-copy",
+          "enabled": true,
+          "text": "2\nI'll copy it. You get the leak. I get paid.\nChanges\nQuill +1 · Lumen +1"
+        },
+        {
+          "id": "choice-pact-sell",
+          "enabled": true,
+          "text": "3\nWard Nine is not my job.\nChanges\nLumen -1 · Helion +1"
+        },
+        {
+          "id": "choice-fake-pact",
+          "enabled": true,
+          "text": "4\nPromise to break it. Mean the sale.\nCheck\nFace · DC 9 · 4 in 10"
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Voice transcript",
+        "Last choice · 3 updates"
+      ],
+      "decisionGapPx": 308,
+      "overflow": false
+    },
+    {
+      "sceneId": "vault_quiet",
+      "step": 13,
+      "proseTopDocumentPx": 745,
+      "artworkControls": [],
+      "text": "Mara Voss is under the halo, breathing on a four-count. The plinth is open for calibration. The shard is a tongue of glass, still warm from a life.\n\nLumen nods at the plinth. \"Copy it. Then we both leave holding a fire. Do not get clever and die.\"\n\nYou have a minute before the door's patience ends.",
+      "words": 57,
+      "choices": [
+        {
+          "id": "choice-take",
+          "enabled": true,
+          "text": "1\nTake the shard.\nDetails\nNo copy. No fire. Just the hour in your hand.\nChanges\nGain Saint Shard"
+        },
+        {
+          "id": "choice-copy",
+          "enabled": true,
+          "text": "2\nCopy it, then take the original.\nCheck\nChrome · DC 10 · 3 in 10\nDetails\nA second file, if the dice love you.\nRoll outcomes\nSuccess: no resource cost (before critical adjustment); Miss: Strain +1 (before critical adjustment)"
+        },
+        {
+          "id": "choice-fry",
+          "enabled": true,
+          "text": "3\nFry the plinth and pull whatever survives.\nCheck\nChrome · DC 8 · 5 in 10\nDetails\nThe shard will come out damaged.\nRoll outcomes\nSuccess: Strain +1 (before critical adjustment); Miss: Strain +2 (before critical adjustment)"
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Voice transcript",
+        "Last choice · 2 updates"
+      ],
+      "decisionGapPx": 260,
+      "overflow": false
+    },
+    {
+      "sceneId": "memo",
+      "step": 14,
+      "proseTopDocumentPx": 634,
+      "artworkView": "scene",
+      "artworkControls": [
+        "SCENE",
+        "DETAIL"
+      ],
+      "text": "The shard is warm against your palm, and it does not wait for you to be ready.\n\nMara's voice, unedited: \"I signed the coolant dump. Ward Nine. Three hundred on the night shift. I want that sentence to stay in my mouth.\"\n\nThe halo would have taken it out of her by dawn. It is in your hand instead.",
+      "words": 59,
+      "choices": [
+        {
+          "id": "choice-heard",
+          "enabled": true,
+          "text": "1\nKeep the hour.\nDetails\nYou know what the glass is now."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Voice transcript",
+        "Last choice · 2 updates"
+      ],
+      "decisionGapPx": 687,
+      "overflow": false
+    },
+    {
+      "sceneId": "mara_why",
+      "step": 15,
+      "proseTopDocumentPx": 587,
+      "artworkView": "scene",
+      "artworkControls": [
+        "SCENE",
+        "DETAIL"
+      ],
+      "text": "The hour is not finished with you.\n\nMara’s recorded voice, still unedited: \"Helion told me the dump was a flush, not a kill. I signed because the night shift was already in the building and I thought the tower would move them. They did not move them.\"\n\nShe does not ask you to forgive it. She asks you to keep the reason attached to the crime.",
+      "words": 66,
+      "choices": [
+        {
+          "id": "choice-inspect-hour",
+          "enabled": true,
+          "text": "1\nOpen the hour on the memory bench.\nDetails\nInspect the signature, counter-order, and roster. Decide what becomes evidence."
+        },
+        {
+          "id": "choice-why-signed",
+          "enabled": true,
+          "text": "2\nKeep the reason with the hour.\nDetails\nNo check. Kerr is still the door."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Voice transcript"
+      ],
+      "decisionGapPx": 592,
+      "overflow": false
+    },
+    {
+      "sceneId": "memory_table",
+      "step": 16,
+      "proseTopDocumentPx": 1559,
+      "artworkControls": [],
+      "text": "The plinth separates the hour into three fragments. A signature, a command receipt, a shift roster. The chair would have kept the first and cut away everything that explained it.\n\nInspect each fragment. A claim needs a source, and a source can put a living person in danger.",
+      "words": 48,
+      "choices": [
+        {
+          "id": "choice-inspect-signature",
+          "enabled": true,
+          "text": "1 · INSPECT THE SIGNATURE"
+        },
+        {
+          "id": "choice-inspect-order",
+          "enabled": true,
+          "text": "2 · INSPECT THE COUNTER-ORDER"
+        },
+        {
+          "id": "choice-inspect-roster",
+          "enabled": true,
+          "text": "3 · INSPECT THE LIVING WITNESS"
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [],
+      "decisionGapPx": 177,
+      "overflow": false
+    },
+    {
+      "sceneId": "memory_table",
+      "step": 17,
+      "proseTopDocumentPx": 2132,
+      "artworkControls": [],
+      "text": "The plinth separates the hour into three fragments. A signature, a command receipt, a shift roster. The chair would have kept the first and cut away everything that explained it.\n\nInspect each fragment. A claim needs a source, and a source can put a living person in danger.",
+      "words": 48,
+      "choices": [
+        {
+          "id": "choice-inspect-order",
+          "enabled": true,
+          "text": "1 · INSPECT THE COUNTER-ORDER"
+        },
+        {
+          "id": "choice-inspect-roster",
+          "enabled": true,
+          "text": "2 · INSPECT THE LIVING WITNESS"
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "The signature · inspected",
+        "Last choice · 1 update"
+      ],
+      "decisionGapPx": 272,
+      "overflow": false
+    },
+    {
+      "sceneId": "memory_table",
+      "step": 18,
+      "proseTopDocumentPx": 2624,
+      "artworkControls": [],
+      "text": "The plinth separates the hour into three fragments. A signature, a command receipt, a shift roster. The chair would have kept the first and cut away everything that explained it.\n\nInspect each fragment. A claim needs a source, and a source can put a living person in danger.",
+      "words": 48,
+      "choices": [
+        {
+          "id": "choice-inspect-roster",
+          "enabled": true,
+          "text": "1 · INSPECT THE LIVING WITNESS"
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "The signature · inspected",
+        "The counter-order · inspected",
+        "Last choice · 1 update"
+      ],
+      "decisionGapPx": 272,
+      "overflow": false
+    },
+    {
+      "sceneId": "memory_table",
+      "step": 19,
+      "proseTopDocumentPx": 3723,
+      "artworkControls": [],
+      "text": "The plinth separates the hour into three fragments. A signature, a command receipt, a shift roster. The chair would have kept the first and cut away everything that explained it.\n\nThe fragments are open. Now compare the decisions: what did Mara authorize, what changed afterward, and what can this hour actually prove?",
+      "words": 52,
+      "choices": [
+        {
+          "id": "choice-reconstruct",
+          "enabled": true,
+          "text": "1\nCompare the signature with the later order.\nDetails\nBuild an account from the sources. No roll decides what is true."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "The signature · inspected",
+        "The counter-order · inspected",
+        "The living witness · inspected",
+        "Last choice · 1 update"
+      ],
+      "decisionGapPx": 301,
+      "overflow": false
+    },
+    {
+      "sceneId": "memory_reconstruction",
+      "step": 20,
+      "proseTopDocumentPx": 764,
+      "artworkControls": [],
+      "text": "The viewer holds three inspected fragments. Arrange their timestamps, replay Mara's recorded explanation, or carry a direct interpretation.\n\nHer signature is visible. Her assurance is testimony, not proof the workers left. The receipt's issuer remains unverified; the exit log identifies a possible witness, not an account she has agreed to give.\n\nWhat will you carry out?",
+      "words": 56,
+      "choices": [
+        {
+          "id": "choice-assemble-timeline",
+          "enabled": true,
+          "text": "1\nReconstruct the hour on the timeline.\nDetails\nArrange the inspected fragments, then test a claim against its source. Your draft survives a save."
+        },
+        {
+          "id": "choice-question-mara",
+          "enabled": true,
+          "text": "2\nAsk Mara what she actually knew before signing.\nDetails\nQuestion her assurance and its source. Testimony does not authenticate the later order."
+        },
+        {
+          "id": "choice-separate-decisions",
+          "enabled": true,
+          "text": "3\nKeep Mara's authorization and the later counter-order separate.\nDetails\nNeither decision cancels the other. The issuer still needs corroboration."
+        },
+        {
+          "id": "choice-clear-mara",
+          "enabled": true,
+          "text": "4\nThe later order clears Mara of responsibility.\nDetails\nTest that interpretation against her signature."
+        },
+        {
+          "id": "choice-ignore-order",
+          "enabled": true,
+          "text": "5\nHer signature is enough. Leave the counter-order out.\nDetails\nTest whether the account explains the canceled evacuation."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Review the inspected memory · Sources inspected · account undecided",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "decisionGapPx": 206,
+      "overflow": false
+    },
+    {
+      "sceneId": "memory_challenge",
+      "step": 21,
+      "proseTopDocumentPx": 764,
+      "artworkControls": [],
+      "text": "The receipt stays lit beside the signature. Someone canceled evacuation after Mara authorized the flush. An account that omits that instruction leaves the workers' last chance unexplained.\n\nMara's signature remains hers. Keeping the later instruction does not mean accepting her explanation as fact.",
+      "words": 43,
+      "choices": [
+        {
+          "id": "choice-keep-both-decisions",
+          "enabled": true,
+          "text": "1\nKeep both decisions. Mark what remains unknown."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Review the inspected memory · Sources inspected · account undecided",
+        "",
+        "",
+        ""
+      ],
+      "decisionGapPx": 206,
+      "overflow": false
+    },
+    {
+      "sceneId": "memory_publication",
+      "step": 22,
+      "proseTopDocumentPx": 764,
+      "artworkControls": [],
+      "text": "Lumen asks for the sentence that will accompany the file.\n\n\"People will repeat the sentence before they inspect the source. You can say what the receipt contains and what still needs checking. Or you can name the tower now and accept what happens when it challenges your proof.\"\n\nLabel the account first; choose custody afterward. Neither label moves Nia or verifies the issuer.",
+      "words": 63,
+      "choices": [
+        {
+          "id": "choice-label-unverified",
+          "enabled": true,
+          "text": "1\nDescribe the cancellation. Mark the issuing key unverified.\nDetails\nA bounded account. Independent corroboration remains necessary."
+        },
+        {
+          "id": "choice-name-tower",
+          "enabled": true,
+          "text": "2\nAccuse Helion publicly before authenticating the key.\nDetails\nThe wards hear the allegation sooner. Helion will challenge its source. This does not verify the order.\nChanges\nHelion +1 · The wards +1"
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Voice transcript",
+        "Last choice · 1 update",
+        "Review the inspected memory · Sequence compared · custody undecided",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "decisionGapPx": 436,
+      "overflow": false
+    },
+    {
+      "sceneId": "memory_table",
+      "step": 23,
+      "proseTopDocumentPx": 2382,
+      "artworkControls": [],
+      "text": "The plinth separates the hour into three fragments. A signature, a command receipt, a shift roster. The chair would have kept the first and cut away everything that explained it.\n\nYour packet names Helion as the issuer before its key has been authenticated. Expect a challenge. Preserving the roster exposes Nia's location. Redacting it keeps her home private. A witness chain means finding her next week. Choose what leaves this room.",
+      "words": 71,
+      "choices": [
+        {
+          "id": "choice-seal-full",
+          "enabled": true,
+          "text": "1\nPreserve the complete archive.\nDetails\nKeep the counter-order and roster together. Helion can trace the export; the strain is yours. An archive investigation opens next week.\nChanges\nStrain +1 · Helion +1"
+        },
+        {
+          "id": "choice-seal-redacted",
+          "enabled": true,
+          "text": "2\nRedact worker locations. Keep the order.\nDetails\nNia's location stays private. The wards lose a public source. A protected-witness route opens next week.\nChanges\nThe wards -1"
+        },
+        {
+          "id": "choice-seal-witness",
+          "enabled": true,
+          "text": "3\nCarry Nia's account through a witness chain.\nDetails\nLumen holds the roster privately. You promise to move Nia before her location becomes evidence.\nChanges\nLumen +1"
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "The signature · inspected",
+        "The counter-order · inspected",
+        "The living witness · inspected",
+        "Last choice · 3 updates"
+      ],
+      "decisionGapPx": 301,
+      "overflow": false
+    },
+    {
+      "sceneId": "kerr",
+      "step": 24,
+      "proseTopDocumentPx": 644,
+      "artworkView": "scene",
+      "artworkControls": [
+        "SCENE",
+        "DETAIL"
+      ],
+      "text": "The shard is already against your palm, warm as a coin left on an engine.\n\nSister Lumen stands at the halo controls with her hands open, so everyone can see she is not pressing them.\n\n\"Put it down.\" Kerr fills the door. The knee is the only apology on him. \"That glass is Mara's hour. Helion pays me so the Ward Nine memo stays in her head, not in your pocket.\"",
+      "words": 71,
+      "choices": [
+        {
+          "id": "choice-talk-leave",
+          "enabled": true,
+          "text": "1\nConvince him to let you walk.\nCheck\nFace · DC 8 · 8 in 10"
+        },
+        {
+          "id": "choice-slip",
+          "enabled": true,
+          "text": "2\nSlip the shard and the door.\nCheck\nGhost · DC 8 · 6 in 10"
+        },
+        {
+          "id": "choice-fight",
+          "enabled": true,
+          "text": "3\nPut him down.\nCheck\nNerve · DC 8 · 9 in 10\nRoll outcomes\nSuccess: Strain +1 (before critical adjustment); Miss: Strain +2 (before critical adjustment)"
+        },
+        {
+          "id": "choice-kerr-open-terms",
+          "enabled": true,
+          "text": "4\nTell Kerr what you are willing to risk.\nDetails\nConsider an offer, a false clearance or withdrawal before committing."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Voice transcript",
+        "Memory commitments · 0/1 complete · 1 open",
+        "Last choice · 3 updates"
+      ],
+      "decisionGapPx": 889,
+      "overflow": false
+    },
+    {
+      "sceneId": "after_kerr",
+      "step": 25,
+      "proseTopDocumentPx": 597,
+      "artworkControls": [],
+      "text": "Kerr steps out of the door like the frame hurts him. He does not wish you luck. He spends the mercy of not counting your steps.\n\nTwo copies of Mara's hour exist. One is in your pocket. One is a file that wants a witness.\n\nQuill is a noodle stall away. He has never once been sentimental.",
+      "words": 57,
+      "choices": [
+        {
+          "id": "choice-sell",
+          "enabled": true,
+          "text": "1\nBring the shard to Quill.\nDetails\nTwo hundred on delivery.\nChanges\n+200 cr · Lose Saint Shard"
+        },
+        {
+          "id": "choice-both",
+          "enabled": true,
+          "text": "2\nQuill gets the original. The copy gets out.\nDetails\nPaid, and the wards get the file.\nChanges\n+200 cr · Lose Saint Shard"
+        },
+        {
+          "id": "choice-destroy",
+          "enabled": true,
+          "text": "3\nDestroy the shard.\nDetails\nNo delivery fee. Fewer owners of the hour.\nChanges\nGain Clinic Marker · Lose Saint Shard"
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Memory commitments · 0/1 complete · 1 open"
+      ],
+      "decisionGapPx": 548,
+      "overflow": false
+    },
+    {
+      "sceneId": "ending_both",
+      "step": 26,
+      "proseTopDocumentPx": 986,
+      "artworkControls": [],
+      "text": "Quill gets a shard and calls you a professional. The other file does not go to him.\n\nLumen takes the copy like a hot instrument. She does not thank you. She starts walking toward a transmitter that is not supposed to exist.\n\nBy morning Ward Nine is a rumor with a file attached, and Helion is busy denying a voice they have not yet bought. Replay is paid, and also listed. In this city those often arrive as a pair.",
+      "words": 80,
+      "choices": [
+        {
+          "id": "choice-week-after",
+          "enabled": true,
+          "text": "1\nThe week after.\nDetails\nThe job is over. The city is not."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Memory commitments · 0/1 complete · 1 open",
+        "Last choice · 2 updates"
+      ],
+      "decisionGapPx": 279,
+      "overflow": false
+    },
+    {
+      "sceneId": "card_week",
+      "step": 27,
+      "proseTopDocumentPx": 629,
+      "artworkControls": [],
+      "text": "The Hour\n\nYou sold the hour and let a copy walk.\n\nThe Week starts in the street. The week wants a buyer or a witness.",
+      "words": 25,
+      "choices": [
+        {
+          "id": "choice-into-week",
+          "enabled": true,
+          "text": "1\nWalk out into the week."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 1,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Memory commitments · 0/1 complete · 1 open",
+        "Follow your campaign thread · 1 connection",
+        "Last choice · 1 update"
+      ],
+      "decisionGapPx": 412,
+      "overflow": false
+    },
+    {
+      "sceneId": "street_after",
+      "step": 28,
+      "proseTopDocumentPx": 668,
+      "artworkControls": [],
+      "text": "A week of rain has rewritten the paint. The stall is open and pretending it was always open. Quill does not look up.\n\nThe leaks are the ones you grew up counting. This street still smells like that arithmetic.\n\nSomeone on the corner says Ward Nine like it is a file now, not a rumor.\n\nThe route board is still there. The cards that know your name are the ones face up.",
+      "words": 72,
+      "choices": [
+        {
+          "id": "choice-practice",
+          "enabled": true,
+          "text": "1\nLearn one thing from the night.\nDetails\nChoose one practiced skill. Its checks gain +1 for the rest of this run."
+        },
+        {
+          "id": "choice-read-board",
+          "enabled": true,
+          "text": "2\nRead the board."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Memory commitments · 0/1 complete · 1 open"
+      ],
+      "decisionGapPx": 184,
+      "overflow": false
+    },
+    {
+      "sceneId": "act2_training",
+      "step": 29,
+      "proseTopDocumentPx": 668,
+      "artworkControls": [],
+      "text": "A week gives you time to practice one thing. You find a quiet stair, mark a circuit on paper, count your breath, and replay the moment the door almost closed. Choose what you will be better at the next time the city asks.",
+      "words": 43,
+      "choices": [
+        {
+          "id": "choice-learn-chrome",
+          "enabled": true,
+          "text": "1\nSignal discipline\nDetails\nChrome checks +1. Isolate an archive key locally; scanner preparation unlocks a clinic-only transfer at a strain cost."
+        },
+        {
+          "id": "choice-learn-nerve",
+          "enabled": true,
+          "text": "2\nSteady hands\nDetails\nNerve checks +1. Hold an archive hatch for Edda; chair preparation unlocks a physical transfer route."
+        },
+        {
+          "id": "choice-learn-face",
+          "enabled": true,
+          "text": "3\nRead the room\nDetails\nFace checks +1. Request a countersigned invoice; escort preparation unlocks a clinic favor for a room."
+        },
+        {
+          "id": "choice-learn-ghost",
+          "enabled": true,
+          "text": "4\nCount the exits\nDetails\nGhost checks +1. Recover a carbon ledger; patrol preparation unlocks a silent transfer at a strain cost."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Memory commitments · 0/1 complete · 1 open"
+      ],
+      "decisionGapPx": 184,
+      "overflow": false
+    },
+    {
+      "sceneId": "street_after",
+      "step": 30,
+      "proseTopDocumentPx": 668,
+      "artworkControls": [],
+      "text": "A week of rain has rewritten the paint. The stall is open and pretending it was always open. Quill does not look up.\n\nThe leaks are the ones you grew up counting. This street still smells like that arithmetic.\n\nSomeone on the corner says Ward Nine like it is a file now, not a rumor.\n\nThe route board is still there. The cards that know your name are the ones face up.",
+      "words": 72,
+      "choices": [
+        {
+          "id": "choice-read-board",
+          "enabled": true,
+          "text": "1\nRead the board."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Memory commitments · 0/1 complete · 1 open"
+      ],
+      "decisionGapPx": 184,
+      "overflow": false
+    },
+    {
+      "sceneId": "districts",
+      "step": 31,
+      "proseTopDocumentPx": 693,
+      "artworkControls": [],
+      "text": "Between jobs the city offers cards, not streets. You stand under a cracked route board in Ward Four and the rain writes on it faster than the tower does.\n\nWard Four is Kerr. He collects. Glass Chapel is Lumen. She still has your name in a mouth that does not forget. Helion Spire is a dry voice that already knows which hour moved.\n\nThe badge you burned is penciled on the underside of the Helion card.\n\nPick the door that knows you. The others can wait for a week you do not have.",
+      "words": 93,
+      "choices": [
+        {
+          "id": "choice-visit-workshop",
+          "enabled": true,
+          "text": "1\nCompare field equipment at the repair bench.\nDetails\nOne purchased kit this week. Keep funds for recovery and witness care."
+        },
+        {
+          "id": "choice-origin-contract",
+          "enabled": true,
+          "text": "2\nCall the contact who knew you before this job.\nDetails\nAn origin-specific favor can earn a shelter, receiver, or freight clearance."
+        },
+        {
+          "id": "choice-to-kerr",
+          "enabled": true,
+          "text": "3\nWard Four\nDetails\nKerr is still counting."
+        },
+        {
+          "id": "choice-to-lumen",
+          "enabled": true,
+          "text": "4\nGlass Chapel\nDetails\nLumen called the marker in."
+        },
+        {
+          "id": "choice-to-helion",
+          "enabled": true,
+          "text": "5\nHelion Spire\nDetails\nA dry coat wants the rest of the hour."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Memory commitments · 0/1 complete · 1 open"
+      ],
+      "decisionGapPx": 302,
+      "overflow": false
+    },
+    {
+      "sceneId": "act2_origin_gutterwire",
+      "step": 32,
+      "proseTopDocumentPx": 668,
+      "artworkControls": [],
+      "text": "Sera knows the stair you grew up on. A shelter pump has stopped, and the rooms above it are taking coolant. Dry rooms could let her hold a bed for Nia, once the residents have somewhere to sleep.\n\n\"No speeches. Put your shoulder here. Someone has to sleep upstairs tonight.\"",
+      "words": 50,
+      "choices": [
+        {
+          "id": "choice-plan-shelter",
+          "enabled": true,
+          "text": "1\nHelp Sera plan the repair and resident beds."
+        },
+        {
+          "id": "choice-move-valve",
+          "enabled": true,
+          "text": "2\nBrace the pump and turn the valve.\nCheck\nNerve · DC 8 · 9 in 10\nRoll outcomes\nSuccess: no resource cost (before critical adjustment); Miss: Strain +1 (before critical adjustment)"
+        },
+        {
+          "id": "choice-leave-pump",
+          "enabled": true,
+          "text": "3\nLeave the pump to its crew."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Voice transcript",
+        "Memory commitments · 0/1 complete · 1 open"
+      ],
+      "decisionGapPx": 319,
+      "overflow": false
+    },
+    {
+      "sceneId": "act2_shelter_brief",
+      "step": 33,
+      "proseTopDocumentPx": 777,
+      "artworkControls": [],
+      "text": "The stair rail is sticky with coolant. Sera catches a bucket under the landing. You remember this stair being taller.\n\n‘Six households upstairs. One valve downstairs. We stop the leak or move everyone to the hall.’ A resident, Ren, sets a kettle on a dry step. ‘We can walk. My father needs the ramp, not the stairs.’\n\nSera has no spare room to promise yet. Repair comes first; beds come after. Ren’s family is willing to use the hall annex if someone covers its mattresses. No one will be displaced without agreeing.",
+      "words": 92,
+      "choices": [
+        {
+          "id": "choice-accept-shelter",
+          "enabled": true,
+          "text": "1\nHelp the residents, then decide what room can be spared."
+        },
+        {
+          "id": "choice-decline-shelter",
+          "enabled": true,
+          "text": "2\nTell Sera you cannot take responsibility for this move."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Voice transcript",
+        "Memory commitments · 0/1 complete · 1 open"
+      ],
+      "decisionGapPx": 484,
+      "overflow": false
+    },
+    {
+      "sceneId": "act2_shelter_prep",
+      "step": 34,
+      "proseTopDocumentPx": 700,
+      "artworkControls": [],
+      "text": "Ren’s father checks the ramp with his cane. You have time for one preparation before the coolant reaches the door sill.\n\nA brace improves the valve check. A trained technician can isolate the controller; a practiced negotiator can organize the repair crew. Mapping the ramp lets a trained runner evacuate without a roll, but it does not repair the pump. Forty creds hire the shelter fitter without a check.",
+      "words": 69,
+      "choices": [
+        {
+          "id": "choice-shelter-prep-brace",
+          "enabled": true,
+          "text": "1\nWedge a brace under the valve housing.\nDetails\nNerve valve check +1. Equipment can add its own listed bonus."
+        },
+        {
+          "id": "choice-shelter-prep-ramp",
+          "enabled": true,
+          "text": "2\nClear the accessible ramp to the staffed hall.\nDetails\nA prepared Ghost evacuation costs Strain +1. It saves no private room."
+        },
+        {
+          "id": "choice-shelter-no-prep",
+          "enabled": true,
+          "text": "3\nCall the fitter or start the move now."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Campaign commitments · 0/2 complete · 2 open"
+      ],
+      "decisionGapPx": 302,
+      "overflow": false
+    },
+    {
+      "sceneId": "act2_shelter_methods",
+      "step": 35,
+      "proseTopDocumentPx": 722,
+      "artworkControls": [],
+      "text": "The valve shudders against its stop. Ren keeps the door clear while the neighbors carry bags to the landing.\n\nYou can try one repair, use a prepared skill or pay the fitter. Evacuating to the hall is also a complete response to tonight’s danger; it leaves the shelter repair unfinished. A failed valve attempt cannot be rolled again.",
+      "words": 58,
+      "choices": [
+        {
+          "id": "choice-shelter-turn-valve",
+          "enabled": true,
+          "text": "1\nHold the housing and turn the valve.\nCheck\nNerve · DC 10 · 7 in 10\nRoll outcomes\nSuccess: no resource cost (before critical adjustment); Miss: Strain +1 (before critical adjustment)"
+        },
+        {
+          "id": "choice-shelter-hire-fitter",
+          "enabled": true,
+          "text": "2\nPay forty creds for the shelter fitter.\nChanges\n-40 cr"
+        },
+        {
+          "id": "choice-shelter-ghost-ramp",
+          "enabled": true,
+          "text": "3\nLead the residents down your cleared ramp.\nDetails\nStrain +1. Reach the hall without a roll; the pump remains broken.\nChanges\nStrain +1"
+        },
+        {
+          "id": "choice-shelter-start-evacuation",
+          "enabled": true,
+          "text": "4\nLeave the valve. Arrange the free hall move."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Campaign commitments · 0/2 complete · 2 open"
+      ],
+      "decisionGapPx": 302,
+      "overflow": false
+    },
+    {
+      "sceneId": "act2_shelter_hall",
+      "step": 36,
+      "proseTopDocumentPx": 787,
+      "artworkControls": [],
+      "text": "Ren’s father rolls through the ramp door. The caretaker counts all six households inside, then unlocks the mattress cupboard. Ren fills the kettle.\n\n‘We’re here,’ Ren says. ‘It’s loud. It’s still somewhere.’ The pump remains broken and there is no private referral room. This is an observed evacuation, not a repair report or a witness transfer.",
+      "words": 56,
+      "choices": [
+        {
+          "id": "choice-shelter-confirm-hall",
+          "enabled": true,
+          "text": "1\nRecord the arrival and leave the valve repair open.\nChanges\nThe wards +1"
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Voice transcript",
+        "Campaign commitments · 0/2 complete · 2 open"
+      ],
+      "decisionGapPx": 484,
+      "overflow": false
+    },
+    {
+      "sceneId": "act2_shelter_result",
+      "step": 37,
+      "proseTopDocumentPx": 747,
+      "artworkControls": [],
+      "text": "Residents reached the staffed hall. It has shared mattresses and no private witness room. The shelter valve still needs repair.\n\nSera wrings coolant from a cloth. ‘Come back when it’s daylight. A place to sleep is the start of a night, not the whole of it.’\n\nThe district board still has this week’s calls.",
+      "words": 54,
+      "choices": [
+        {
+          "id": "choice-shelter-return-board",
+          "enabled": true,
+          "text": "1\nReturn to the district board."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Voice transcript",
+        "Campaign commitments · 1/2 complete · 1 open"
+      ],
+      "decisionGapPx": 436,
+      "overflow": false
+    },
+    {
+      "sceneId": "districts",
+      "step": 38,
+      "proseTopDocumentPx": 747,
+      "artworkControls": [],
+      "text": "Back under the cracked board, you find the calls still face up. Kerr in Ward Four. Lumen at Glass Chapel if she is calling. Helion if it wants the hour.\n\nThe work you accepted or refused stays in your record. It does not answer this week's question for you.",
+      "words": 49,
+      "choices": [
+        {
+          "id": "choice-visit-workshop",
+          "enabled": true,
+          "text": "1\nCompare field equipment at the repair bench.\nDetails\nOne purchased kit this week. Keep funds for recovery and witness care."
+        },
+        {
+          "id": "choice-to-kerr",
+          "enabled": true,
+          "text": "2\nWard Four\nDetails\nKerr is still counting."
+        },
+        {
+          "id": "choice-to-lumen",
+          "enabled": true,
+          "text": "3\nGlass Chapel\nDetails\nLumen called the marker in."
+        },
+        {
+          "id": "choice-to-helion",
+          "enabled": true,
+          "text": "4\nHelion Spire\nDetails\nA dry coat wants the rest of the hour."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Campaign commitments · 1/2 complete · 1 open"
+      ],
+      "decisionGapPx": 302,
+      "overflow": false
+    },
+    {
+      "sceneId": "act2_helion_door",
+      "step": 39,
+      "proseTopDocumentPx": 668,
+      "artworkControls": [],
+      "text": "The Spire does not come down. It sends Ives, dry coat, open folio. Ives still has the badge. He lets you see the dead chip before he says a handle. The number on it is the one you burned. He opens with the file, not the weather. Your name is already the first line.\n\nA clause on the second page wants your initial. You can refuse it.\n\nYou can hear the price, or you can leave the page unfinished.",
+      "words": 79,
+      "choices": [
+        {
+          "id": "choice-hear-ives",
+          "enabled": true,
+          "text": "1\nHear the price."
+        },
+        {
+          "id": "choice-refuse-clause",
+          "enabled": true,
+          "text": "2\nRefuse to initial the clause.\nDetails\nThe blank line can stay blank."
+        },
+        {
+          "id": "choice-leave-ives",
+          "enabled": true,
+          "text": "3\nLeave the folio closed."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Campaign commitments · 1/2 complete · 1 open"
+      ],
+      "decisionGapPx": 184,
+      "overflow": false
+    },
+    {
+      "sceneId": "act2_helion",
+      "step": 40,
+      "proseTopDocumentPx": 668,
+      "artworkControls": [],
+      "text": "The Spire does not come down to Ward Four. It sends Ives, who has a dry coat and a folio that does not like rain.\n\nIves says your old badge number before your handle. \"We kept the name. Burning the badge was a hobby.\"\n\nThe second copy is a sentence Ives can already quote. They are only deciding whether you will say it too.\n\nStanding with the tower has moved the greeting. The file is the hello.\n\nUnder the overpass the traffic is a long electric animal. Ives holds the folio like a door they can open or close.",
+      "words": 99,
+      "choices": [
+        {
+          "id": "choice-give-copy",
+          "enabled": true,
+          "text": "1\nGive Ives the second copy.\nDetails\nThe leak stops being yours. The wards will remember this at the wall.\nChanges\nLumen -1 · Helion +1 · The wards -1"
+        },
+        {
+          "id": "choice-convince-ives",
+          "enabled": true,
+          "text": "2\nConvince Ives you are finished.\nCheck\nFace · DC 8 · 6 in 10\nRoll outcomes\nSuccess: no resource cost (before critical adjustment); Miss: Strain +1 (before critical adjustment)"
+        },
+        {
+          "id": "choice-refuse-ives",
+          "enabled": true,
+          "text": "3\nRefuse the tower.\nChanges\nHelion -1 · The wards +1"
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Voice transcript",
+        "Campaign commitments · 1/2 complete · 1 open"
+      ],
+      "decisionGapPx": 319,
+      "overflow": false
+    },
+    {
+      "sceneId": "act2_middle",
+      "step": 41,
+      "proseTopDocumentPx": 715,
+      "artworkControls": [],
+      "text": "Rain finds the grate in Ward Four’s dry canal. Ren Calder lifts her feet from it.\n\n\"Junie Calder worked beside Ivo Pell,\" Ren says. \"Say her if you get to the wall. She was my family before she was your evidence.\"\n\nWhoever collected you this week is not in the canal. The week is.\n\nYou can speak about Mara and Ward Nine in the street, or take Helion's money for silence. Choose any remaining work before closing the week.",
+      "words": 79,
+      "choices": [
+        {
+          "id": "choice-hear-mara-response",
+          "enabled": true,
+          "text": "1\nHear Mara’s present-day request at the clinic.\nDetails\nA voluntary reply, separate from her recorded hour. Negotiate its recipient and clinic involvement."
+        },
+        {
+          "id": "choice-answer-kerr-collection",
+          "enabled": true,
+          "text": "2\nAnswer Kerr’s personal depot request.\nDetails\nPlan two crossings and honor the collection terms. Equipment delivery supplies no evidence or treatment outcome."
+        },
+        {
+          "id": "choice-help-clinic-notice",
+          "enabled": true,
+          "text": "3\nHelp Lumen settle a clinic distribution notice."
+        },
+        {
+          "id": "choice-help-clinic-pump",
+          "enabled": true,
+          "text": "4\nAnswer the clinic’s coolant emergency.\nDetails\nOne repair attempt, then a cold-storage fallback. Today’s relay supplies no evidence about the old dump."
+        },
+        {
+          "id": "choice-take-recovery",
+          "enabled": true,
+          "text": "5\nMake time for a recovery visit.\nDetails\nOnce this week: paid care, a clinic favor, or a short rest. Recovery supplies no evidence or witness safety."
+        },
+        {
+          "id": "choice-hear-response",
+          "enabled": true,
+          "text": "6\nRead the neighborhood's response to your packet.\nDetails\nAnswer the source challenge before closing the week."
+        },
+        {
+          "id": "choice-trace-order",
+          "enabled": true,
+          "text": "7\nTrace Helion's counter-order.\nDetails\nAuthenticate the command chain. An exported archive can draw surveillance."
+        },
+        {
+          "id": "choice-stand",
+          "enabled": true,
+          "text": "8\nStand where the names are.\nDetails\nThe wards will remember this at the wall.\n1 CAMPAIGN PROMISE REMAINS UNRESOLVED IF THE WEEK CLOSES: CHECK THE COUNTER-ORDER’S SOURCE\nChanges\nThe wards +1"
+        },
+        {
+          "id": "choice-deal",
+          "enabled": true,
+          "text": "9\nSell the week to Helion.\nDetails\nEighty creds. The wards will remember this at the wall.\n1 CAMPAIGN PROMISE REMAINS UNRESOLVED IF THE WEEK CLOSES: CHECK THE COUNTER-ORDER’S SOURCE\nChanges\n+80 cr · Helion +1 · The wards -1"
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 1,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Voice transcript",
+        "Find a thread · 7 available choices",
+        "Campaign commitments · 1/2 complete · 1 open",
+        "Follow your campaign thread · 1 connection",
+        "Last choice · 2 updates"
+      ],
+      "decisionGapPx": 304,
+      "overflow": false,
+      "screenshot": "/workspace/saint-shard-fix/qa/production/reports/dramatic-sequences-runs/nerve-41-act2_middle.png"
+    },
+    {
+      "sceneId": "act2_archive_brief",
+      "step": 42,
+      "proseTopDocumentPx": 612,
+      "artworkControls": [],
+      "text": "Edda opens the desk before Ives arrives.\n\n‘Your export records a cancellation. My ledger can show whether it reached the shift. Compare them. I have to work here tomorrow.’\n\nShe offers access, not public use of her name. A signed extraction can identify her to her employer even when you withhold her name from circulation. Custody comes after retrieval.",
+      "words": 59,
+      "choices": [
+        {
+          "id": "choice-agree-archive-terms",
+          "enabled": true,
+          "text": "1\nAgree to compare sources and decide custody afterward."
+        },
+        {
+          "id": "choice-defer-archive",
+          "enabled": true,
+          "text": "2\nLeave the search open for another day."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Voice transcript",
+        "Campaign commitments · 1/2 complete · 1 open",
+        "Last choice · 1 update"
+      ],
+      "decisionGapPx": 939,
+      "overflow": false
+    },
+    {
+      "sceneId": "act2_archive_prep",
+      "step": 43,
+      "proseTopDocumentPx": 795,
+      "artworkControls": [],
+      "text": "There is time to prepare one route before the shift changes. A failed probe alerts the reader; it does not make the receipt false. You can still use a staffed ledger search if retrieval fails.",
+      "words": 35,
+      "choices": [
+        {
+          "id": "choice-index-archive",
+          "enabled": true,
+          "text": "1\nCompare the index against the receipt number.\nCheck\nChrome · DC 7 · 5 in 10\nRoll outcomes\nSuccess: no resource cost (before critical adjustment); Miss: Strain +1 (before critical adjustment)"
+        },
+        {
+          "id": "choice-watch-archive",
+          "enabled": true,
+          "text": "2\nWatch the carbon slot through a service interval.\nCheck\nGhost · DC 7 · 7 in 10\nRoll outcomes\nSuccess: no resource cost (before critical adjustment); Miss: Strain +1 (before critical adjustment)"
+        },
+        {
+          "id": "choice-brace-archive",
+          "enabled": true,
+          "text": "3\nTest and brace the inspection hatch.\nCheck\nNerve · DC 7 · certain\nRoll outcomes\nSuccess: no resource cost (before critical adjustment); Miss: Strain +1 (before critical adjustment)"
+        },
+        {
+          "id": "choice-skip-archive-prep",
+          "enabled": true,
+          "text": "4\nUse the records without a preparation bonus."
+        }
+      ],
+      "panels": {
+        "archive-planner": 1,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Campaign commitments · 1/2 complete · 1 open",
+        "Archive mission plan · optional",
+        "Last choice · 1 update"
+      ],
+      "decisionGapPx": 542,
+      "overflow": false
+    },
+    {
+      "sceneId": "act2_archive_compare",
+      "step": 44,
+      "proseTopDocumentPx": 795,
+      "artworkControls": [],
+      "text": "The search desk displays the export beside the catalog description of the shift ledger. You have not retrieved the ledger yet.\n\nExport: Mara's authorization precedes a receipt recording cancellation of evacuation.\n\nLedger catalog: a maintenance shift processed an evacuation revision. The catalog has a record number, not an authenticated command signature.\n\nWhat would retrieving this second source establish?",
+      "words": 58,
+      "choices": [
+        {
+          "id": "choice-separate-source-tests",
+          "enabled": true,
+          "text": "1\nCorroborate the cancellation; authenticate the issuer only with a key match."
+        },
+        {
+          "id": "choice-catalog-is-proof",
+          "enabled": true,
+          "text": "2\nThe catalog alone proves who issued the command."
+        },
+        {
+          "id": "choice-open-archive-catalog",
+          "enabled": true,
+          "text": "3\nWork the catalog before choosing a retrieval method.\nDetails\nInspect descriptions freely. Each submitted locator logs a query: Helion +1. Finding a locator supplies no evidence."
+        },
+        {
+          "id": "choice-craft-archive-question",
+          "enabled": true,
+          "text": "4\nWork out which part of the order changed.\nDetails\nCompare the export and two catalog summaries. Choose a question, then a scoped extraction or issuing-key test. Reading and drafting are free."
+        }
+      ],
+      "panels": {
+        "archive-planner": 1,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Campaign commitments · 1/2 complete · 1 open",
+        "Review acquired sources and permissions · 5 records",
+        "Archive mission plan · optional",
+        "Last choice · 1 update"
+      ],
+      "decisionGapPx": 796,
+      "overflow": false
+    },
+    {
+      "sceneId": "act2_archive_door",
+      "step": 45,
+      "proseTopDocumentPx": 795,
+      "artworkControls": [],
+      "text": "Ives waits at the reader. The record number you compared is already on its screen.\n\n\"If you allege an instruction, identify its issuer. We will challenge anything less.\"\n\nA rejected query will reveal which record you brought. Edda keeps the staffed ledger desk open.",
+      "words": 44,
+      "choices": [
+        {
+          "id": "choice-trace-receipt",
+          "enabled": true,
+          "text": "1\nMatch the receipt to its issuing key.\nCheck\nChrome · DC 9 · 4 in 10\nRoll outcomes\nSuccess: no resource cost (before critical adjustment); Miss: Strain +1 (before critical adjustment)"
+        },
+        {
+          "id": "choice-lift-carbon",
+          "enabled": true,
+          "text": "2\nRecover the ledger's carbon copy from the service slot.\nCheck\nGhost · DC 9 · 5 in 10\nDetails\nCount the exits. A failed retrieval still leaves the staffed ledger route.\nRoll outcomes\nSuccess: no resource cost (before critical adjustment); Miss: Strain +1 (before critical adjustment)"
+        },
+        {
+          "id": "choice-leave-archive",
+          "enabled": true,
+          "text": "3\nKeep the export without authenticating it.\nDetails\nThe archive promise remains unresolved."
+        }
+      ],
+      "panels": {
+        "archive-planner": 1,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Voice transcript",
+        "Campaign commitments · 1/2 complete · 1 open",
+        "Archive mission plan · optional",
+        "Last choice · 2 updates"
+      ],
+      "decisionGapPx": 893,
+      "overflow": false
+    },
+    {
+      "sceneId": "act2_archive_gap",
+      "step": 46,
+      "proseTopDocumentPx": 842,
+      "artworkControls": [],
+      "text": "Edda points to the staffed ledger desk. Your archive attempt supplied no independent record; a maintenance invoice can still corroborate the instruction.\n\nShe can bill the search to your old employee number if you have one. Otherwise the archive charges twenty-five creds. The unverified export remains yours either way.\n\nYou can pause this ledger request without paying and return through the canal before the week closes. The failed archive attempt remains recorded. Leaving it open supplies no evidence.",
+      "words": 78,
+      "choices": [
+        {
+          "id": "choice-buy-ledger",
+          "enabled": true,
+          "text": "1\nPay for the shift ledger.\nChanges\n-25 cr"
+        },
+        {
+          "id": "choice-keep-gap",
+          "enabled": true,
+          "text": "2\nRecord the gap. Keep the export.\nDetails\nClose this search as unresolved. The issuing key stays unauthenticated."
+        },
+        {
+          "id": "choice-pause-archive-recovery",
+          "enabled": true,
+          "text": "3\nPause the ledger request and return later.\nDetails\nFree. Resume at this desk from the canal before closing the week; the failed attempt and its exposure remain."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Campaign commitments · 1/2 complete · 1 open",
+        "Last choice · 3 updates"
+      ],
+      "decisionGapPx": 789,
+      "overflow": false
+    },
+    {
+      "sceneId": "act2_middle",
+      "step": 47,
+      "proseTopDocumentPx": 668,
+      "artworkControls": [],
+      "text": "You came back with the export and a gap beside it. The archive did not give you the missing source. Ren has not become less certain of who Junie was.\n\nChoose remaining work, street speech, or Helion's money for silence. Closing the week leaves unfinished commitments open.",
+      "words": 47,
+      "choices": [
+        {
+          "id": "choice-hear-mara-response",
+          "enabled": true,
+          "text": "1\nHear Mara’s present-day request at the clinic.\nDetails\nA voluntary reply, separate from her recorded hour. Negotiate its recipient and clinic involvement."
+        },
+        {
+          "id": "choice-answer-kerr-collection",
+          "enabled": true,
+          "text": "2\nAnswer Kerr’s personal depot request.\nDetails\nPlan two crossings and honor the collection terms. Equipment delivery supplies no evidence or treatment outcome."
+        },
+        {
+          "id": "choice-help-clinic-notice",
+          "enabled": true,
+          "text": "3\nHelp Lumen settle a clinic distribution notice."
+        },
+        {
+          "id": "choice-help-clinic-pump",
+          "enabled": true,
+          "text": "4\nAnswer the clinic’s coolant emergency.\nDetails\nOne repair attempt, then a cold-storage fallback. Today’s relay supplies no evidence about the old dump."
+        },
+        {
+          "id": "choice-take-recovery",
+          "enabled": true,
+          "text": "5\nMake time for a recovery visit.\nDetails\nOnce this week: paid care, a clinic favor, or a short rest. Recovery supplies no evidence or witness safety."
+        },
+        {
+          "id": "choice-hear-response",
+          "enabled": true,
+          "text": "6\nRead the neighborhood's response to your packet.\nDetails\nAnswer the source challenge before closing the week."
+        },
+        {
+          "id": "choice-stand",
+          "enabled": true,
+          "text": "7\nStand where the names are.\nDetails\nThe wards will remember this at the wall.\n1 CAMPAIGN PROMISE REMAINS UNRESOLVED IF THE WEEK CLOSES: CHECK THE COUNTER-ORDER’S SOURCE\nChanges\nThe wards +1"
+        },
+        {
+          "id": "choice-deal",
+          "enabled": true,
+          "text": "8\nSell the week to Helion.\nDetails\nEighty creds. The wards will remember this at the wall.\n1 CAMPAIGN PROMISE REMAINS UNRESOLVED IF THE WEEK CLOSES: CHECK THE COUNTER-ORDER’S SOURCE\nChanges\n+80 cr · Helion +1 · The wards -1"
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 1,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Find a thread · 6 available choices",
+        "Campaign commitments · 1/2 complete · 1 unresolved",
+        "Follow your campaign thread · 1 connection",
+        "Last choice · 2 updates"
+      ],
+      "decisionGapPx": 129,
+      "overflow": false,
+      "screenshot": "/workspace/saint-shard-fix/qa/production/reports/dramatic-sequences-runs/nerve-47-act2_middle.png"
+    },
+    {
+      "sceneId": "act2_notice_brief",
+      "step": 48,
+      "proseTopDocumentPx": 747,
+      "artworkControls": [],
+      "text": "Lumen has two sheets on her desk. One lists clinic appointment windows. The other is a housing slip somebody proposed pinning beside the district board.\n\n\"They need to know where the clinic is,\" she says. \"They do not need to tell every landlord where they sleep. Dispatch wants a route it can verify. I need a notice people can actually use.\"\n\nHelp separate the routing information from the private list, then choose how to distribute it. This is present-day clinic work, not evidence about Ward Nine’s old command.",
+      "words": 88,
+      "choices": [
+        {
+          "id": "choice-accept-notice",
+          "enabled": true,
+          "text": "1\nCompare the routing sources before choosing a notice."
+        },
+        {
+          "id": "choice-leave-notice-brief",
+          "enabled": true,
+          "text": "2\nLeave the distribution decision with clinic staff."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Voice transcript",
+        "Campaign commitments · 1/2 complete · 1 unresolved"
+      ],
+      "decisionGapPx": 484,
+      "overflow": false
+    },
+    {
+      "sceneId": "act2_notice_sources",
+      "step": 49,
+      "proseTopDocumentPx": 747,
+      "artworkControls": [],
+      "text": "Three papers, three different jobs. The housing slip records private destinations. The bus map locates a public stop. The appointment card gives the clinic window and a dispatch return contact.\n\nRead each before choosing what belongs on a public board. No check changes the contents.",
+      "words": 45,
+      "choices": [
+        {
+          "id": "choice-read-notice-slip",
+          "enabled": true,
+          "text": "1\nRead the housing slip."
+        },
+        {
+          "id": "choice-read-notice-map",
+          "enabled": true,
+          "text": "2\nRead the bus map."
+        },
+        {
+          "id": "choice-read-notice-card",
+          "enabled": true,
+          "text": "3\nRead the appointment card."
+        },
+        {
+          "id": "choice-defer-notice",
+          "enabled": true,
+          "text": "4\nReturn the papers. Leave distribution unresolved."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Campaign commitments · 1/3 complete · 1 open · 1 unresolved"
+      ],
+      "decisionGapPx": 302,
+      "overflow": false
+    },
+    {
+      "sceneId": "act2_notice_sources",
+      "step": 50,
+      "proseTopDocumentPx": 747,
+      "artworkControls": [],
+      "text": "Three papers, three different jobs. The housing slip records private destinations. The bus map locates a public stop. The appointment card gives the clinic window and a dispatch return contact.\n\nRead each before choosing what belongs on a public board. No check changes the contents.",
+      "words": 45,
+      "choices": [
+        {
+          "id": "choice-read-notice-map",
+          "enabled": true,
+          "text": "1\nRead the bus map."
+        },
+        {
+          "id": "choice-read-notice-card",
+          "enabled": true,
+          "text": "2\nRead the appointment card."
+        },
+        {
+          "id": "choice-defer-notice",
+          "enabled": true,
+          "text": "3\nReturn the papers. Leave distribution unresolved."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Campaign commitments · 1/3 complete · 1 open · 1 unresolved"
+      ],
+      "decisionGapPx": 302,
+      "overflow": false
+    },
+    {
+      "sceneId": "act2_notice_sources",
+      "step": 51,
+      "proseTopDocumentPx": 747,
+      "artworkControls": [],
+      "text": "Three papers, three different jobs. The housing slip records private destinations. The bus map locates a public stop. The appointment card gives the clinic window and a dispatch return contact.\n\nRead each before choosing what belongs on a public board. No check changes the contents.",
+      "words": 45,
+      "choices": [
+        {
+          "id": "choice-read-notice-card",
+          "enabled": true,
+          "text": "1\nRead the appointment card."
+        },
+        {
+          "id": "choice-defer-notice",
+          "enabled": true,
+          "text": "2\nReturn the papers. Leave distribution unresolved."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Campaign commitments · 1/3 complete · 1 open · 1 unresolved"
+      ],
+      "decisionGapPx": 302,
+      "overflow": false
+    },
+    {
+      "sceneId": "act2_notice_sources",
+      "step": 52,
+      "proseTopDocumentPx": 747,
+      "artworkControls": [],
+      "text": "Three papers, three different jobs. The housing slip records private destinations. The bus map locates a public stop. The appointment card gives the clinic window and a dispatch return contact.\n\nRead each before choosing what belongs on a public board. No check changes the contents.",
+      "words": 45,
+      "choices": [
+        {
+          "id": "choice-plan-notice",
+          "enabled": true,
+          "text": "1\nChoose how to distribute the appointment information."
+        },
+        {
+          "id": "choice-defer-notice",
+          "enabled": true,
+          "text": "2\nReturn the papers. Leave distribution unresolved."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Campaign commitments · 1/3 complete · 1 open · 1 unresolved"
+      ],
+      "decisionGapPx": 302,
+      "overflow": false
+    },
+    {
+      "sceneId": "act2_notice_methods",
+      "step": 53,
+      "proseTopDocumentPx": 747,
+      "artworkControls": [],
+      "text": "The public notice can carry a clinic stop and window without carrying homes. Private cards let patients receive details individually, but dispatch must accept them first.\n\nLumen wants the address fields left out of circulation. The desk wants an accountable return contact. You can meet both needs privately, or accept the monitoring risk of a usable public map. No method guarantees arrival.",
+      "words": 62,
+      "choices": [
+        {
+          "id": "choice-compare-notice-allocation",
+          "enabled": true,
+          "text": "1\nBuild a six-card schedule and negotiate its workload.\nDetails\nDrafts are free and saved. Compare clinic windows, courier capacity and the return contact; no stat roll changes their limits."
+        },
+        {
+          "id": "choice-courier-notice",
+          "enabled": true,
+          "text": "2\nPay twenty creds for sealed appointment cards.\nDetails\nThe courier accepts the route; no home addresses enter the public notice. Delivery is still future work.\nChanges\n-20 cr"
+        },
+        {
+          "id": "choice-post-notice-map",
+          "enabled": true,
+          "text": "3\nPublish the bus stop and clinic window, with no home addresses.\nDetails\nNo fee. Neighbors can find the clinic, but Helion can monitor the advertised window. No patient list is published.\nChanges\nHelion +1 · The wards +1"
+        },
+        {
+          "id": "choice-negotiate-notice",
+          "enabled": true,
+          "text": "4\nAsk the dispatch desk to take sealed cards without a tenancy list.\nCheck\nFace · DC 8 · 5 in 10\nDetails\nOne attempt. Failure leaves paid delivery or a public stop map available."
+        },
+        {
+          "id": "choice-carry-notice",
+          "enabled": true,
+          "text": "5\nCarry the sealed cards through the service stair yourself.\nCheck\nNerve · DC 7 · certain\nDetails\nOne Nerve check. A failed crossing delays the cards and adds strain; paid delivery or a public map remains.\nRoll outcomes\nSuccess: no resource cost (before critical adjustment); Miss: Strain +1 (before critical adjustment)"
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Campaign commitments · 1/3 complete · 1 open · 1 unresolved"
+      ],
+      "decisionGapPx": 302,
+      "overflow": false
+    },
+    {
+      "sceneId": "act2_notice_allocation",
+      "step": 54,
+      "proseTopDocumentPx": 808,
+      "artworkControls": [],
+      "text": "Six sealed appointment cards. The clinic can receive four people in the early window and three in the later one. Dispatch can carry four cards early, but only two later. Nobody's home belongs on its return slip.\n\nA four/two split fits both services. A three/three split fits the clinic but needs help with one later card. Six early overloads the clinic even if a courier can carry the paper. Draft a split, then offer a return contact. Changing a draft costs nothing; accepting dispatch commits the work or fare once.",
+      "words": 90,
+      "choices": [
+        {
+          "id": "choice-allocate-notice-42",
+          "enabled": true,
+          "text": "1\nDraft 4 early / 2 later."
+        },
+        {
+          "id": "choice-allocate-notice-33",
+          "enabled": true,
+          "text": "2\nDraft 3 early / 3 later."
+        },
+        {
+          "id": "choice-allocate-notice-60",
+          "enabled": true,
+          "text": "3\nDraft 6 early / 0 later."
+        },
+        {
+          "id": "choice-pause-notice-allocation",
+          "enabled": true,
+          "text": "4\nPause with the draft saved; arrange nothing yet."
+        },
+        {
+          "id": "choice-defer-notice-allocation",
+          "enabled": true,
+          "text": "5\nLeave the plan unresolved with clinic staff."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Campaign commitments · 1/3 complete · 1 open · 1 unresolved"
+      ],
+      "decisionGapPx": 302,
+      "overflow": false
+    },
+    {
+      "sceneId": "act2_notice_allocation_review",
+      "step": 55,
+      "proseTopDocumentPx": 808,
+      "artworkControls": [],
+      "text": "Draft: 4 early / 2 later, six cards in total.\n\nClinic capacity: four early / three later. Dispatch capacity: four early / two later. An appointment window and a courier load are different limits. The clinic offers its desk as a private return contact. A housing list would let dispatch call on homes, which Lumen will refuse.\n\nCompare the draft with both services. No roll changes these capacities or Lumen's answer.",
+      "words": 71,
+      "choices": [
+        {
+          "id": "choice-offer-notice-clinic-contact",
+          "enabled": true,
+          "text": "1\nOffer this schedule with the clinic as return contact."
+        },
+        {
+          "id": "choice-offer-notice-home-contact",
+          "enabled": true,
+          "text": "2\nPropose the housing list as a return contact.\nDetails\nLumen refuses patient homes regardless of your standing. No list will be dispatched."
+        },
+        {
+          "id": "choice-revise-notice-allocation",
+          "enabled": true,
+          "text": "3\nRevise the allocation. No charge for a draft."
+        },
+        {
+          "id": "choice-defer-notice-allocation",
+          "enabled": true,
+          "text": "4\nLeave the plan unresolved with clinic staff."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Campaign commitments · 1/3 complete · 1 open · 1 unresolved"
+      ],
+      "decisionGapPx": 302,
+      "overflow": false
+    },
+    {
+      "sceneId": "act2_notice_offer",
+      "step": 56,
+      "proseTopDocumentPx": 848,
+      "artworkControls": [],
+      "text": "Four early, two later. The dispatcher fits both bundles against the route slots. 'I can take that split if you carry the clinic's return bundle to this desk.' Lumen agrees to receive unclaimed cards through the clinic.\n\nAccepting commits one strain of carrying work, with no fare or home list. The desk then accepts the six sealed cards. This will be dispatch acceptance; later replies still have to establish any patient receipt.",
+      "words": 72,
+      "choices": [
+        {
+          "id": "choice-accept-notice-standard",
+          "enabled": true,
+          "text": "1\nCarry the return bundle. Add 1 strain; accept four/two dispatch.\nChanges\nStrain +1"
+        },
+        {
+          "id": "choice-revise-notice-allocation",
+          "enabled": true,
+          "text": "2\nRevise the allocation. No charge for a draft."
+        },
+        {
+          "id": "choice-defer-notice-allocation",
+          "enabled": true,
+          "text": "3\nLeave the plan unresolved with clinic staff."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Voice transcript",
+        "Campaign commitments · 1/3 complete · 1 open · 1 unresolved"
+      ],
+      "decisionGapPx": 436,
+      "overflow": false
+    },
+    {
+      "sceneId": "act2_notice_receipt",
+      "step": 57,
+      "proseTopDocumentPx": 747,
+      "artworkControls": [],
+      "text": "The dispatcher accepts the sealed cards with the clinic as return contact. It does not demand the housing sheet.\n\nLumen keeps the receipt. \"Come back when the window has passed. A plan deserves an answer, even if it was a good plan.\"",
+      "words": 42,
+      "choices": [
+        {
+          "id": "choice-record-private-notice",
+          "enabled": true,
+          "text": "1\nRecord private dispatch acceptance; delivery remains unobserved."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Voice transcript",
+        "Campaign commitments · 1/3 complete · 1 open · 1 unresolved"
+      ],
+      "decisionGapPx": 436,
+      "overflow": false
+    },
+    {
+      "sceneId": "act2_middle",
+      "step": 58,
+      "proseTopDocumentPx": 700,
+      "artworkControls": [],
+      "text": "The clinic has accepted private dispatch. The cards have not become observed deliveries just because you reached the canal. You leave the waiting with the work, rather than calling it finished.\n\nChoose remaining work, street speech, or Helion's money for silence. Closing the week leaves unfinished commitments open.",
+      "words": 48,
+      "choices": [
+        {
+          "id": "choice-hear-mara-response",
+          "enabled": true,
+          "text": "1\nHear Mara’s present-day request at the clinic.\nDetails\nA voluntary reply, separate from her recorded hour. Negotiate its recipient and clinic involvement."
+        },
+        {
+          "id": "choice-answer-kerr-collection",
+          "enabled": true,
+          "text": "2\nAnswer Kerr’s personal depot request.\nDetails\nPlan two crossings and honor the collection terms. Equipment delivery supplies no evidence or treatment outcome."
+        },
+        {
+          "id": "choice-help-clinic-pump",
+          "enabled": true,
+          "text": "3\nAnswer the clinic’s coolant emergency.\nDetails\nOne repair attempt, then a cold-storage fallback. Today’s relay supplies no evidence about the old dump."
+        },
+        {
+          "id": "choice-take-recovery",
+          "enabled": true,
+          "text": "4\nMake time for a recovery visit.\nDetails\nOnce this week: paid care, a clinic favor, or a short rest. Recovery supplies no evidence or witness safety."
+        },
+        {
+          "id": "choice-hear-response",
+          "enabled": true,
+          "text": "5\nRead the neighborhood's response to your packet.\nDetails\nAnswer the source challenge before closing the week."
+        },
+        {
+          "id": "choice-stand",
+          "enabled": true,
+          "text": "6\nStand where the names are.\nDetails\nThe wards will remember this at the wall.\n1 CAMPAIGN PROMISE REMAINS UNRESOLVED IF THE WEEK CLOSES: CHECK THE COUNTER-ORDER’S SOURCE\nChanges\nThe wards +1"
+        },
+        {
+          "id": "choice-deal",
+          "enabled": true,
+          "text": "7\nSell the week to Helion.\nDetails\nEighty creds. The wards will remember this at the wall.\n1 CAMPAIGN PROMISE REMAINS UNRESOLVED IF THE WEEK CLOSES: CHECK THE COUNTER-ORDER’S SOURCE\nChanges\n+80 cr · Helion +1 · The wards -1"
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 1,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Find a thread · 5 available choices",
+        "Campaign commitments · 2/4 complete · 1 open · 1 unresolved",
+        "Follow your campaign thread · 1 connection"
+      ],
+      "decisionGapPx": 30,
+      "overflow": false,
+      "screenshot": "/workspace/saint-shard-fix/qa/production/reports/dramatic-sequences-runs/nerve-58-act2_middle.png"
+    },
+    {
+      "sceneId": "act2_public_response",
+      "step": 59,
+      "proseTopDocumentPx": 764,
+      "artworkControls": [],
+      "text": "Helion has posted a denial beside the district board. It quotes your allegation, then asks who authenticated the issuing key. Neighbors read the denial before the packet.\n\nThe receipt is still an export. Calling it proof of its own issuer would make the same leap again.\n\nSera hands you a pencil. \"What do we put beside it?\"",
+      "words": 57,
+      "choices": [
+        {
+          "id": "choice-correct-public-claim",
+          "enabled": true,
+          "text": "1\nCorrect the allegation's certainty. Keep the question open.\nDetails\nLose one step of ward trust. The correction does not authenticate the key.\nChanges\nHelion -1 · The wards -1"
+        },
+        {
+          "id": "choice-repeat-public-claim",
+          "enabled": true,
+          "text": "2\nRepeat the accusation without another source.\nDetails\nHelion escalates the challenge. Some neighbors stop lending the packet their names.\nChanges\nHelion +1 · The wards -1"
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Voice transcript",
+        "Campaign commitments · 2/4 complete · 1 open · 1 unresolved",
+        "Review acquired sources and permissions · 7 records"
+      ],
+      "decisionGapPx": 691,
+      "overflow": false
+    },
+    {
+      "sceneId": "act2_middle",
+      "step": 60,
+      "proseTopDocumentPx": 715,
+      "artworkControls": [],
+      "text": "You said less than you said the first time. The correction stays beside the allegation; the question has not gone away. At the grate, Junie's name needs no louder claim from you.\n\nChoose remaining work, street speech, or Helion's money for silence. Closing the week leaves unfinished commitments open.",
+      "words": 49,
+      "choices": [
+        {
+          "id": "choice-hear-mara-response",
+          "enabled": true,
+          "text": "1\nHear Mara’s present-day request at the clinic.\nDetails\nA voluntary reply, separate from her recorded hour. Negotiate its recipient and clinic involvement."
+        },
+        {
+          "id": "choice-answer-kerr-collection",
+          "enabled": true,
+          "text": "2\nAnswer Kerr’s personal depot request.\nDetails\nPlan two crossings and honor the collection terms. Equipment delivery supplies no evidence or treatment outcome."
+        },
+        {
+          "id": "choice-help-clinic-pump",
+          "enabled": true,
+          "text": "3\nAnswer the clinic’s coolant emergency.\nDetails\nOne repair attempt, then a cold-storage fallback. Today’s relay supplies no evidence about the old dump."
+        },
+        {
+          "id": "choice-take-recovery",
+          "enabled": true,
+          "text": "4\nMake time for a recovery visit.\nDetails\nOnce this week: paid care, a clinic favor, or a short rest. Recovery supplies no evidence or witness safety."
+        },
+        {
+          "id": "choice-stand",
+          "enabled": true,
+          "text": "5\nStand where the names are.\nDetails\nThe wards will remember this at the wall.\n1 CAMPAIGN PROMISE REMAINS UNRESOLVED IF THE WEEK CLOSES: CHECK THE COUNTER-ORDER’S SOURCE\nChanges\nThe wards +1"
+        },
+        {
+          "id": "choice-deal",
+          "enabled": true,
+          "text": "6\nSell the week to Helion.\nDetails\nEighty creds. The wards will remember this at the wall.\n1 CAMPAIGN PROMISE REMAINS UNRESOLVED IF THE WEEK CLOSES: CHECK THE COUNTER-ORDER’S SOURCE\nChanges\n+80 cr · Helion +1 · The wards -1"
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 1,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Find a thread · 4 available choices",
+        "Campaign commitments · 2/4 complete · 1 open · 1 unresolved",
+        "Follow your campaign thread · 1 connection",
+        "Last choice · 3 updates"
+      ],
+      "decisionGapPx": 30,
+      "overflow": false,
+      "screenshot": "/workspace/saint-shard-fix/qa/production/reports/dramatic-sequences-runs/nerve-60-act2_middle.png"
+    },
+    {
+      "sceneId": "ending_week_wards",
+      "step": 61,
+      "proseTopDocumentPx": 981,
+      "artworkControls": [],
+      "text": "Last week the city called this Two Fires. This week you stand where the noodle steam can hear you and you say Mara Voss's name next to Ward Nine until a stranger repeats it wrong, which is how a fact learns to walk.\n\nHelion will answer. Quill will pretend he was never hungry. The wards will get it half right, and half right is more than a plinth ever offered.\n\nThe card for Ward Nine is still on the board. The people who lived there have not agreed to be a speech.",
+      "words": 92,
+      "choices": [
+        {
+          "id": "choice-back-to-board",
+          "enabled": true,
+          "text": "1\nThe districts again.\nDetails\nWard Nine is still face down."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Campaign commitments · 2/4 complete · 1 open · 1 unresolved",
+        "Last choice · 1 update"
+      ],
+      "decisionGapPx": 279,
+      "overflow": false
+    },
+    {
+      "sceneId": "card_wall",
+      "step": 62,
+      "proseTopDocumentPx": 629,
+      "artworkControls": [],
+      "text": "The Week\n\nYou spoke Mara's name and Ward Nine in the street. The wards began repeating your account.\n\nThe Wall is in Ward Nine. The wall has the names. Say them, or leave them to the rain.",
+      "words": 37,
+      "choices": [
+        {
+          "id": "choice-to-the-wall",
+          "enabled": true,
+          "text": "1\nGo down to Ward Nine."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 1,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Campaign commitments · 2/4 complete · 1 open · 1 unresolved",
+        "Follow your campaign thread · 1 connection",
+        "Last choice · 1 update"
+      ],
+      "decisionGapPx": 412,
+      "overflow": false
+    },
+    {
+      "sceneId": "districts",
+      "step": 63,
+      "proseTopDocumentPx": 693,
+      "artworkControls": [],
+      "text": "The week has a shape now. Ward Four, the chapel, and the Spire have already spent their calls.\n\nOne card is still face down. Ward Nine. The coolant dump stopped being a rumor the moment you learned how to say it, or the moment you decided not to.\n\nRain ticks the plastic. Nobody is selling noodles.",
+      "words": 56,
+      "choices": [
+        {
+          "id": "choice-to-ward-nine",
+          "enabled": true,
+          "text": "1\nWard Nine\nDetails\nThe coolant dump. The people who lived."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Campaign commitments · 2/4 complete · 1 open · 1 unresolved",
+        "Last choice · 1 update"
+      ],
+      "decisionGapPx": 367,
+      "overflow": false
+    },
+    {
+      "sceneId": "act3_neighborhood",
+      "step": 64,
+      "proseTopDocumentPx": 597,
+      "artworkView": "scene",
+      "artworkControls": [
+        "SCENE",
+        "DETAIL"
+      ],
+      "text": "The clinic and the neighbors' table lie on the way to the wall. Your week has people waiting here.\n\nThere is no transfer in your name. Your promise concerned the archive.\n\nThe correction is clipped to your allegation. Hear their answers, or go to Sera's names.",
+      "words": 46,
+      "choices": [
+        {
+          "id": "choice-visit-shelter-neighbors",
+          "enabled": true,
+          "text": "1\nAsk Sera how the shelter neighbors spent the night."
+        },
+        {
+          "id": "choice-visit-notice",
+          "enabled": true,
+          "text": "2\nAsk Lumen what happened to the clinic notice."
+        },
+        {
+          "id": "choice-visit-records",
+          "enabled": true,
+          "text": "3\nSit at the records table."
+        },
+        {
+          "id": "choice-go-wall",
+          "enabled": true,
+          "text": "4\nGo directly to the names."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 1,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Campaign commitments · 2/4 complete · 1 open · 1 unresolved",
+        "Follow your campaign thread · 1 connection",
+        "Last choice · 1 update"
+      ],
+      "decisionGapPx": 958,
+      "overflow": false,
+      "screenshot": "/workspace/saint-shard-fix/qa/production/reports/dramatic-sequences-runs/nerve-64-act3_neighborhood.png"
+    },
+    {
+      "sceneId": "act3_records_visit",
+      "step": 65,
+      "proseTopDocumentPx": 804,
+      "artworkControls": [],
+      "text": "A mechanic has put a question mark beside the issuing key. 'The file says evacuation was canceled. I still need to know who sent it. Don't rub out the question mark because the wall is waiting.'\n\nYour correction stays attached to the original packet. He says a correction is worth keeping because the first sentence already traveled.\n\nSera closes the ledger. The names on the wall do not settle this inquiry. They tell you why it has to continue.",
+      "words": 79,
+      "choices": [
+        {
+          "id": "choice-keep-limits",
+          "enabled": true,
+          "text": "1\nLeave the source and its limits available for inspection."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Voice transcript",
+        "Campaign commitments · 2/4 complete · 1 open · 1 unresolved",
+        "Review acquired sources and permissions · 8 records"
+      ],
+      "decisionGapPx": 573,
+      "overflow": false
+    },
+    {
+      "sceneId": "ward_wall",
+      "step": 66,
+      "proseTopDocumentPx": 597,
+      "artworkView": "scene",
+      "artworkControls": [
+        "SCENE",
+        "DETAIL"
+      ],
+      "text": "Sera stands you in front of the wall before she asks anything. ‘Ada.’ Sera uses your own name, then turns you toward the concrete. The rain has eaten the lower rows. One name needs no optic: Ivo Pell, night shift, level two.\n\nYou kept another name from the memo: Junie Calder, night shift, the locker beside Ivo.\n\nBeside the memorial is Sera’s private witness ledger. Nia Pell is a living witness, not one of the dead. The wards let you read her entry; her current address is not on display.\n\n\"Ivo stays legible,\" Sera says. \"The third row needs your eye, or help from the wards. You can try. You can also tell me why you came.\"\n\nShe waits with the pencil capped.",
+      "words": 123,
+      "choices": [
+        {
+          "id": "choice-visit-shelter-neighbors",
+          "enabled": true,
+          "text": "1\nAsk Sera how the shelter neighbors spent the night."
+        },
+        {
+          "id": "choice-face-sera",
+          "enabled": true,
+          "text": "2\nTell her why you came."
+        },
+        {
+          "id": "choice-read-third",
+          "enabled": true,
+          "text": "3\nRead the third name.\nCheck\nChrome · DC 7 · 6 in 10\nDetails\nThe optic helps. So do the wards."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Voice transcript",
+        "Campaign commitments · 2/4 complete · 1 open · 1 unresolved"
+      ],
+      "decisionGapPx": 794,
+      "overflow": false
+    },
+    {
+      "sceneId": "act3_shelter_visit",
+      "step": 67,
+      "proseTopDocumentPx": 787,
+      "artworkControls": [],
+      "text": "Ren returns the kettle. ‘Dad reached the ramp. We slept, but the hall lights stayed on.’ The bags still smell of coolant.\n\nThe valve is still unrepaired. Today's wash cannot fix it or reserve a witness room.\n\nSera wheels out the laundry cart. ‘The clothes are what they have left. Help me get them clean?’ You can fund a wash, carry the cart or leave today's work with her.",
+      "words": 69,
+      "choices": [
+        {
+          "id": "choice-shelter-fund-laundry",
+          "enabled": true,
+          "text": "1\nPay twenty creds for the residents’ laundry.\nChanges\n-20 cr"
+        },
+        {
+          "id": "choice-shelter-carry-laundry",
+          "enabled": true,
+          "text": "2\nCarry the laundry cart to the washhouse.\nDetails\nStrain +1. No money, new token, or historical evidence.\nChanges\nStrain unchanged (at limit)"
+        },
+        {
+          "id": "choice-shelter-listen-leave",
+          "enabled": true,
+          "text": "3\nListen, keep the limits of what you saw, and return."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Voice transcript",
+        "Your history with Sera",
+        "Campaign commitments · 2/4 complete · 1 open · 1 unresolved"
+      ],
+      "decisionGapPx": 213,
+      "overflow": false
+    },
+    {
+      "sceneId": "ward_wall",
+      "step": 68,
+      "proseTopDocumentPx": 629,
+      "artworkView": "scene",
+      "artworkControls": [
+        "SCENE",
+        "DETAIL"
+      ],
+      "text": "Sera stands you in front of the wall before she asks anything. ‘Ada.’ Sera uses your own name, then turns you toward the concrete. The rain has eaten the lower rows. One name needs no optic: Ivo Pell, night shift, level two.\n\nYou kept another name from the memo: Junie Calder, night shift, the locker beside Ivo.\n\nBeside the memorial is Sera’s private witness ledger. Nia Pell is a living witness, not one of the dead. The wards let you read her entry; her current address is not on display.\n\n\"Ivo stays legible,\" Sera says. \"The third row needs your eye, or help from the wards. You can try. You can also tell me why you came.\"\n\nShe waits with the pencil capped.",
+      "words": 123,
+      "choices": [
+        {
+          "id": "choice-face-sera",
+          "enabled": true,
+          "text": "1\nTell her why you came."
+        },
+        {
+          "id": "choice-read-third",
+          "enabled": true,
+          "text": "2\nRead the third name.\nCheck\nChrome · DC 7 · 6 in 10\nDetails\nThe optic helps. So do the wards."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Voice transcript",
+        "Campaign commitments · 2/4 complete · 1 open · 1 unresolved"
+      ],
+      "decisionGapPx": 794,
+      "overflow": false
+    },
+    {
+      "sceneId": "act3_arrival",
+      "step": 69,
+      "proseTopDocumentPx": 597,
+      "artworkView": "scene",
+      "artworkControls": [
+        "SCENE",
+        "DETAIL"
+      ],
+      "text": "Coolant scars climb Ward Nine’s lower floors. The tower called the dump maintenance. The neighbors moved upstairs and wrote the names where they could still reach them.\n\nSera uncaps her pencil. She has kept the list through another week of rain.\n\nThe street version of the week got here before you did, wrong in the details and right about the tower.\n\n\"If you know any of them,\" she says, \"say them. If you sold them, you can still say them. The wall does not check your receipt.\"",
+      "words": 87,
+      "choices": [
+        {
+          "id": "choice-prepare-public-account",
+          "enabled": true,
+          "text": "1\nPrepare an account people can question after you leave.\nDetails\nReview source strength and witness publication permission before a public hearing."
+        },
+        {
+          "id": "choice-read-names",
+          "enabled": true,
+          "text": "2\nRead the names you kept.\nDetails\nYou have to be carrying the truth, not just the mood.\nChanges\nHelion -1 · The wards +1"
+        },
+        {
+          "id": "choice-confirm-leak",
+          "enabled": true,
+          "text": "3\nTell her the leak already started.\nDetails\nLumen's fire, or the copy, is already walking.\nChanges\nLumen +1 · The wards +1"
+        },
+        {
+          "id": "choice-leave-wall",
+          "enabled": true,
+          "text": "4\nLeave the wall to the rain.\nChanges\nThe wards -1"
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 1,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Voice transcript",
+        "Campaign commitments · 2/4 complete · 1 open · 1 unresolved",
+        "Follow your campaign thread · 1 connection"
+      ],
+      "decisionGapPx": 640,
+      "overflow": false,
+      "screenshot": "/workspace/saint-shard-fix/qa/production/reports/dramatic-sequences-runs/nerve-69-act3_arrival.png"
+    },
+    {
+      "sceneId": "act3_testimony_review",
+      "step": 70,
+      "proseTopDocumentPx": 642,
+      "artworkControls": [],
+      "text": "Sera puts a blank public cover sheet beside the recorder and your sources. 'The names can be spoken either way. This is a different promise: an account someone can question after you leave.'\n\nFirst decide what the sources support. Then decide whose words can appear on the sheet.",
+      "words": 48,
+      "choices": [
+        {
+          "id": "choice-scope-bounded",
+          "enabled": true,
+          "text": "1\nKeep the cancellation as a question that still needs corroboration."
+        },
+        {
+          "id": "choice-skip-testimony",
+          "enabled": true,
+          "text": "2\nReturn to the names without drafting a public account."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Voice transcript",
+        "Review acquired sources and permissions · 8 records",
+        "Campaign commitments · 2/4 complete · 1 open · 1 unresolved",
+        "Last choice · 1 update"
+      ],
+      "decisionGapPx": 1225,
+      "overflow": false
+    },
+    {
+      "sceneId": "act3_testimony_consent",
+      "step": 71,
+      "proseTopDocumentPx": 652,
+      "artworkControls": [],
+      "text": "There is no approved recording from Nia to quote. Sera keeps the roster and any private location out of the cover sheet. You can still bring the sources you have, with their limits attached.",
+      "words": 34,
+      "choices": [
+        {
+          "id": "choice-keep-recording-private",
+          "enabled": true,
+          "text": "1\nLeave Nia's words out; describe only the source status."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Campaign commitments · 2/4 complete · 1 open · 1 unresolved",
+        "Review acquired sources and permissions · 8 records",
+        "Last choice · 1 update"
+      ],
+      "decisionGapPx": 1578,
+      "overflow": false
+    },
+    {
+      "sceneId": "act3_testimony_hearing",
+      "step": 72,
+      "proseTopDocumentPx": 673,
+      "artworkControls": [],
+      "text": "Ives places his folio beside the recorder. 'A maintenance signature isn't an issuing key. A witness isn't a server. What exactly are you asking people to believe?'\n\nSera leaves the recorder running. The mechanic waits for the source you can point to; a witness's address stays off the table.",
+      "words": 49,
+      "choices": [
+        {
+          "id": "choice-answer-open-question",
+          "enabled": true,
+          "text": "1\nState the cancellation as an open question and preserve the source limits."
+        },
+        {
+          "id": "choice-claim-key-anyway",
+          "enabled": true,
+          "text": "2\nCall the issuing key authenticated without a successful key match.\nDetails\nThe mechanic will challenge the claim. Ward trust −1; Helion scrutiny +1.\nChanges\nHelion +1 · The wards -1"
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Voice transcript",
+        "Review acquired sources and permissions · 8 records",
+        "Campaign commitments · 2/4 complete · 1 open · 1 unresolved",
+        "Last choice · 1 update"
+      ],
+      "decisionGapPx": 1225,
+      "overflow": false
+    },
+    {
+      "sceneId": "act3_testimony_correction",
+      "step": 73,
+      "proseTopDocumentPx": 717,
+      "artworkControls": [],
+      "text": "The mechanic points to the missing independent source. Repeating the receipt cannot authenticate its issuer.\n\nSera keeps the first sentence on the recording. 'Correct it here. A correction belongs beside what people already heard.' Neither the inquiry nor the names have to be abandoned.",
+      "words": 44,
+      "choices": [
+        {
+          "id": "choice-correct-hearing",
+          "enabled": true,
+          "text": "1\nCorrect the certainty and keep the earlier sentence attached."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Voice transcript",
+        "Campaign commitments · 2/4 complete · 1 open · 1 unresolved",
+        "Review acquired sources and permissions · 8 records",
+        "Last choice · 3 updates"
+      ],
+      "decisionGapPx": 1735,
+      "overflow": false
+    },
+    {
+      "sceneId": "act3_testimony_record",
+      "step": 74,
+      "proseTopDocumentPx": 754,
+      "artworkControls": [],
+      "text": "Sera holds the cover sheet at the edge of the table. No approved recording from Nia was obtained; the public account quotes none of her words.\n\nThe unsupported key claim and its correction stay together. The correction supplies no new evidence.\n\nSera asks whether to file the account or withdraw it. The names are still waiting at the wall.",
+      "words": 59,
+      "choices": [
+        {
+          "id": "choice-file-public-account",
+          "enabled": true,
+          "text": "1\nFile the public account with its sources and limits.\nDetails\nA corroborated source earns one step of ward trust. No witness address enters the record."
+        },
+        {
+          "id": "choice-withdraw-public-account",
+          "enabled": true,
+          "text": "2\nWithdraw the draft and keep the sources in private custody."
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 0,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Campaign commitments · 2/4 complete · 1 open · 1 unresolved",
+        "Review acquired sources and permissions · 8 records"
+      ],
+      "decisionGapPx": 1488,
+      "overflow": false
+    },
+    {
+      "sceneId": "act3_arrival",
+      "step": 75,
+      "proseTopDocumentPx": 629,
+      "artworkView": "scene",
+      "artworkControls": [
+        "SCENE",
+        "DETAIL"
+      ],
+      "text": "The public account is filed. Someone can question it after you leave. Sera turns from the records table to the wall: the account is there, but the names are still waiting for a voice.\n\nShe keeps her pencil in her hand. ‘We still have the names.’",
+      "words": 46,
+      "choices": [
+        {
+          "id": "choice-read-names",
+          "enabled": true,
+          "text": "1\nRead the names you kept.\nDetails\nYou have to be carrying the truth, not just the mood.\nChanges\nHelion -1 · The wards +2"
+        },
+        {
+          "id": "choice-confirm-leak",
+          "enabled": true,
+          "text": "2\nTell her the leak already started.\nDetails\nLumen's fire, or the copy, is already walking.\nChanges\nLumen +1 · The wards +1"
+        },
+        {
+          "id": "choice-leave-wall",
+          "enabled": true,
+          "text": "3\nLeave the wall to the rain.\nChanges\nThe wards -1"
+        }
+      ],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 1,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Voice transcript",
+        "Campaign commitments · 2/4 complete · 1 open · 1 unresolved",
+        "Follow your campaign thread · 2 connections"
+      ],
+      "decisionGapPx": 592,
+      "overflow": false,
+      "screenshot": "/workspace/saint-shard-fix/qa/production/reports/dramatic-sequences-runs/nerve-75-act3_arrival.png"
+    },
+    {
+      "sceneId": "ending_quiet",
+      "step": 76,
+      "proseTopDocumentPx": 585,
+      "artworkView": "scene",
+      "artworkControls": [
+        "SCENE",
+        "DETAIL"
+      ],
+      "text": "You leave the wall to the weather. The leak you already made can live without your voice on this wall.\n\nSera does not chase you. Ward Nine has practice at people who get to the stair and then remember they have somewhere dry to be. The names stay. The rain stays. You stay a person who could have spoken and did not, which is its own title.\n\nHalfway down the stair you hear Sera set the pencil against the next line. She does not ask you to turn around. Her voice reaches you through the rain.\n\n\"Mind the broken step. It's the second one down.\"",
+      "words": 105,
+      "choices": [],
+      "panels": {
+        "archive-planner": 0,
+        "district-ledger": 0,
+        "campaign-thread": 1,
+        "technique-board": 0,
+        "archive-question-desk": 0
+      },
+      "visibleSummaries": [
+        "Voice transcript",
+        "Review every commitment and its limits",
+        "Review the factual aftermath",
+        "Revisit the three chapters and final resources",
+        "Follow your campaign thread · 2 connections",
+        "Three moments from your run",
+        "Last choice · 1 update"
+      ],
+      "decisionGapPx": null,
+      "overflow": false,
+      "screenshot": "/workspace/saint-shard-fix/qa/production/reports/dramatic-sequences-runs/nerve-76-ending_quiet.png"
+    }
+  ],
+  "observerSha256": "3c44a0b15d5e3948fc98010e72dec7aa31e27ce2e027f77df416c571a7158c80"
+}

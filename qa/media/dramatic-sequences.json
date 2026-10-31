@@ -1,0 +1,205 @@
+{
+  "version": 1,
+  "phase": 18,
+  "baseline": "qa/editorial/dramatic-sequences-baseline.json",
+  "baselineSha256": "ba45683bec5ef24af7fc3b1a71d1d60998c3caa3d6150edeb729f7ab38f3f117",
+  "newMedia": [
+    "public/art/sequence-quill-agreement.jpg",
+    "public/art/sequence-quill-agreement-small.jpg",
+    "public/art/sequence-quill-refusal.jpg",
+    "public/art/sequence-quill-refusal-small.jpg",
+    "public/art/sequence-edda-request.jpg",
+    "public/art/sequence-edda-request-small.jpg",
+    "public/art/sequence-edda-boundary.jpg",
+    "public/art/sequence-edda-boundary-small.jpg",
+    "public/art/sequence-mara-return.jpg",
+    "public/art/sequence-mara-return-small.jpg"
+  ],
+  "newManifests": [
+    "qa/media/dramatic-sequences.json",
+    "qa/media/dramatic-sequences-provenance.json"
+  ],
+  "newRoutes": [
+    "qa/routes/dramatic-sequences/face.json",
+    "qa/routes/dramatic-sequences/badge-scarce.json",
+    "qa/routes/dramatic-sequences/paid.json",
+    "qa/routes/dramatic-sequences/both-owned-company.json",
+    "qa/routes/dramatic-sequences/partial-deflected.json",
+    "qa/routes/dramatic-sequences/sold-distance.json"
+  ],
+  "newScenes": [],
+  "newFlags": [
+    "dramatic_sequence_art_enabled"
+  ],
+  "rules": [
+    {
+      "id": "quill-agreement",
+      "scenes": [
+        "pay_yes"
+      ],
+      "allFlags": [
+        "haggled"
+      ],
+      "anyFlags": [],
+      "noneFlags": [
+        "haggle_failed",
+        "hired"
+      ],
+      "actor": "Quill",
+      "illustration": {
+        "src": "/art/sequence-quill-agreement.jpg",
+        "small": "/art/sequence-quill-agreement-small.jpg",
+        "caption": "Ward Four · an advance, still conditional",
+        "description": "Quill rests two fingertips on a plain chip on his own side of the stall counter; his other hand stays beside the untouched bowl. No payment changes hands."
+      },
+      "reason": "Only an actually successful negotiation permits the forward-but-untransferred chip. Acceptance, payment and intact delivery remain separate."
+    },
+    {
+      "id": "quill-refusal",
+      "scenes": [
+        "pay_no"
+      ],
+      "allFlags": [
+        "haggle_failed"
+      ],
+      "anyFlags": [],
+      "noneFlags": [
+        "haggled",
+        "hired"
+      ],
+      "actor": "Quill",
+      "illustration": {
+        "src": "/art/sequence-quill-refusal.jpg",
+        "small": "/art/sequence-quill-refusal-small.jpg",
+        "caption": "Ward Four · the offer stays at fifty",
+        "description": "Quill holds a guarded posture beside the bowl; the plain chip stays back on his side of the counter. His visible hand and folded arm remain separate, with no transfer."
+      },
+      "reason": "A failed negotiation permits the guarded posture and retained chip. It depicts no new refusal of the entire job, punishment or completed payment."
+    },
+    {
+      "id": "edda-request",
+      "scenes": [
+        "act2_craft_archive_ledger"
+      ],
+      "allFlags": [
+        "encounter_craft_enabled",
+        "craft_scope_movement",
+        "craft_read_export",
+        "craft_read_plant",
+        "craft_read_movement"
+      ],
+      "anyFlags": [],
+      "noneFlags": [
+        "craft_scope_issuer",
+        "archive_done",
+        "craft_archive_attempted",
+        "act2_done"
+      ],
+      "actor": "Edda",
+      "illustration": {
+        "src": "/art/sequence-edda-request.jpg",
+        "small": "/art/sequence-edda-request-small.jpg",
+        "caption": "Helion · before a name goes on the request",
+        "description": "Edda pauses with a pencil above a blank unsigned request sheet, her other hand open beside it. The closed ledger stays separate under the archive lamp."
+      },
+      "reason": "The inspected movement question permits a paused pencil, not an accepted signature. No fee, source, eligibility for a badge method or permission is implied."
+    },
+    {
+      "id": "edda-boundary",
+      "scenes": [
+        "act2_archive_custody"
+      ],
+      "allFlags": [
+        "encounter_craft_enabled",
+        "craft_archive_attempted",
+        "archive_done",
+        "order_verified"
+      ],
+      "anyFlags": [],
+      "noneFlags": [
+        "act2_done"
+      ],
+      "actor": "Edda",
+      "illustration": {
+        "src": "/art/sequence-edda-boundary.jpg",
+        "small": "/art/sequence-edda-boundary-small.jpg",
+        "caption": "Helion · the copy and its limits",
+        "description": "Edda rests one hand on her closed ledger and the other beside a separate folded copy. The pencil is set down; no signature, public name, seal or handover is shown."
+      },
+      "reason": "An actual scoped extraction permits separate record/copy props. It portrays no paid advance, authenticated issuing key, signature, transfer of custody or consent to naming."
+    },
+    {
+      "id": "mara-return",
+      "scenes": [
+        "act3_mara_account_return",
+        "act3_mara_account_question"
+      ],
+      "allFlags": [
+        "mara_account_enabled",
+        "mara_account_owned",
+        "response_visit"
+      ],
+      "anyFlags": [],
+      "noneFlags": [
+        "mara_account_deflected",
+        "mara_account_distance"
+      ],
+      "actor": "Mara",
+      "illustration": {
+        "src": "/art/sequence-mara-return.jpg",
+        "small": "/art/sequence-mara-return-small.jpg",
+        "caption": "Ward Four · room for a private question",
+        "description": "Mara regards the unseen visitor from beside the rainy clinic window. Her own cup and closed envelope remain on her side of the table, with the empty visitor chair separate."
+      },
+      "reason": "An acknowledged personal account permits a closer listening composition. Distance, deflection and unsupported visits retain original art; no forgiveness, treatment, public permission or promised future is depicted."
+    }
+  ],
+  "galleryEntries": [
+    {
+      "src": "/art/sequence-quill-agreement.jpg",
+      "small": "/art/sequence-quill-agreement-small.jpg",
+      "caption": "Ward Four · an advance, still conditional",
+      "description": "Quill rests two fingertips on a plain chip on his own side of the stall counter; his other hand stays beside the untouched bowl. No payment changes hands.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/sequence-quill-refusal.jpg",
+      "small": "/art/sequence-quill-refusal-small.jpg",
+      "caption": "Ward Four · the offer stays at fifty",
+      "description": "Quill holds a guarded posture beside the bowl; the plain chip stays back on his side of the counter. His visible hand and folded arm remain separate, with no transfer.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/sequence-edda-request.jpg",
+      "small": "/art/sequence-edda-request-small.jpg",
+      "caption": "Helion · before a name goes on the request",
+      "description": "Edda pauses with a pencil above a blank unsigned request sheet, her other hand open beside it. The closed ledger stays separate under the archive lamp.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/sequence-edda-boundary.jpg",
+      "small": "/art/sequence-edda-boundary-small.jpg",
+      "caption": "Helion · the copy and its limits",
+      "description": "Edda rests one hand on her closed ledger and the other beside a separate folded copy. The pencil is set down; no signature, public name, seal or handover is shown.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "src": "/art/sequence-mara-return.jpg",
+      "small": "/art/sequence-mara-return-small.jpg",
+      "caption": "Ward Four · room for a private question",
+      "description": "Mara regards the unseen visitor from beside the rainy clinic window. Her own cup and closed envelope remain on her side of the table, with the empty visitor chair separate.",
+      "category": "Scenes & places",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "preservation": "No previous image, quote, actor, voice, prose, choice, rule or source/consent outcome is replaced. Only the explicit new-run visual flag selects the five new paintings."
+}

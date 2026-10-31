@@ -1,3 +1,4 @@
+import { dramaticSequenceIllustration, DRAMATIC_SEQUENCE_PAINTED_ACTORS } from './dramatic-sequence-art';
 import campaignArt from "../qa/media/campaign-art-bindings.json";
 
 const PLACES: { test: (location: string) => boolean; src: string }[] = [
@@ -14,6 +15,7 @@ export type Illustration = { src: string; small: string; caption: string; descri
 export type ViewableArt = Illustration & { tile?: number; width?: number; height?: number };
 /** Only paintings that already carry the context actor receive a shorter identity strip. */
 const PAINTED_ACTORS: Record<string, readonly string[]> = {
+  ...DRAMATIC_SEQUENCE_PAINTED_ACTORS,
   "/art/quill-offer.jpg": ["Quill"], "/art/mara-revelation.jpg": ["Mara"],
   "/art/mara-present.jpg": ["Mara"], "/art/mara-window.jpg": ["Mara"], "/art/mara-shared-hour.jpg": ["Mara"],
   "/art/nia-arrival.jpg": ["Nia Pell"], "/art/kerr-handover.jpg": ["Kerr"],
@@ -150,6 +152,8 @@ export const ILLUSTRATION_STAGING = [
   },
 ] as const;
 export function sceneIllustration(sceneId: string, flags: Readonly<Record<string, boolean>> = {}): Illustration | undefined {
+  const directed = dramaticSequenceIllustration(sceneId, flags);
+  if (directed) return directed;
   const outcome = ILLUSTRATION_STAGING.find(rule => (rule.scenes as readonly string[]).includes(sceneId)
     && rule.allFlags.every(flag => flags[flag])
     && (!rule.anyFlags.length || rule.anyFlags.some(flag => flags[flag]))

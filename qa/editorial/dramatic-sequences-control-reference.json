@@ -1,0 +1,43 @@
+{
+  "referenceRevision": "a2b7df9a83f70be944fb786fba4a1e9278a58775",
+  "method": "Detached git archive of lib/qa-media from the published commit. Newly authored current-feature controls compare every complete state/prose/choice/voice/art visit against that actual preceding runtime. No historical report is rewritten.",
+  "controls": [
+    {
+      "profile": "sequence-face",
+      "control": "qa/editorial/dramatic-sequences-controls/face.json",
+      "visits": 76,
+      "sha256": "f9537de96fb3a3695c83972c308b1217c2ae73643c013be4738d4e8a4bbc5308"
+    },
+    {
+      "profile": "sequence-badge-scarce",
+      "control": "qa/editorial/dramatic-sequences-controls/badge-scarce.json",
+      "visits": 63,
+      "sha256": "c8b8c1dbbac1374e0435cc8764231146e07077694d671ea17d75f16c3e78593a"
+    },
+    {
+      "profile": "sequence-paid",
+      "control": "qa/editorial/dramatic-sequences-controls/paid.json",
+      "visits": 76,
+      "sha256": "fa6c7e3fa7b74b7e4c7f0d0a9140a579c20b2646dc8cc99328c4ba1e76f3b782"
+    },
+    {
+      "profile": "sequence-both-owned-company",
+      "control": "qa/editorial/dramatic-sequences-controls/both-owned-company.json",
+      "visits": 48,
+      "sha256": "8b417de5fe878ba820fe84d609499eaa6dd8f5f97988e3845da7b046da117641"
+    },
+    {
+      "profile": "sequence-partial-deflected",
+      "control": "qa/editorial/dramatic-sequences-controls/partial-deflected.json",
+      "visits": 45,
+      "sha256": "8c90ee8bff06823ab774cd6b679db26a4cc150928b123e835f3387cbeb283e22"
+    },
+    {
+      "profile": "sequence-sold-distance",
+      "control": "qa/editorial/dramatic-sequences-controls/sold-distance.json",
+      "visits": 45,
+      "sha256": "4270a76fef3c90c8410786e11bb7b1a888b4bba94022ebebd0236324943cbd48"
+    }
+  ],
+  "visits": 353
+}

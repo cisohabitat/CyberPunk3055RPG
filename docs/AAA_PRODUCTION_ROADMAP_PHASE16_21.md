@@ -59,6 +59,8 @@ Inspect anatomy at delivery size and full view: connected arms/hands, finger cou
 
 **Exit:** full before/current sequence captures communicate the intended differences without depicting an unearned result. No anatomy/identity defect is accepted in the new cohort. Default reading, canonical actions, enlarged type, focus and scroll anchors remain usable. Review deliberate extra art controls separately from decision speed. Asset count is not a visual-quality metric.
 
+Phase18 implementation: five state-bound paintings, retained entry frames and six complete current-feature comparison routes are documented in [the implementation report](DRAMATIC_SEQUENCES_PHASE18.md). Candidate and exact-commit publication evidence remain separate; no automatic grade increase.
+
 ## Phase 19 — connected performance and mix coherence
 
 **Purpose:** improve expressive distinction and consistent speech presentation across central scenes. Technical word matching and natural completion already work; five new Kerr alternatives do not establish whole-campaign acting quality.
