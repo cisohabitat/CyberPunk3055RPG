@@ -1,0 +1,90 @@
+[
+  {
+    "id": "dramatic-face",
+    "route": "qa/routes/dramatic-beats/face.json",
+    "precedingRoute": "qa/editorial/dramatic-beats-controls/dramatic-face.json",
+    "width": 1440,
+    "artwork": "full",
+    "reading": "all",
+    "sound": true,
+    "shots": false,
+    "historicalRoute": "qa/routes/encounter-craft/archive-face-countersign.json"
+  },
+  {
+    "id": "dramatic-badge-scarce",
+    "route": "qa/routes/dramatic-beats/badge-scarce.json",
+    "precedingRoute": "qa/editorial/dramatic-beats-controls/dramatic-badge-scarce.json",
+    "width": 390,
+    "artwork": "full",
+    "reading": "all",
+    "sound": true,
+    "shots": false,
+    "historicalRoute": "qa/routes/encounter-craft/archive-badge-scarce.json"
+  },
+  {
+    "id": "dramatic-paid",
+    "route": "qa/routes/dramatic-beats/paid.json",
+    "precedingRoute": "qa/editorial/dramatic-beats-controls/dramatic-paid.json",
+    "width": 1440,
+    "artwork": "full",
+    "reading": "all",
+    "sound": false,
+    "shots": false,
+    "historicalRoute": "qa/routes/encounter-craft/archive-staffed-scope.json"
+  },
+  {
+    "id": "dramatic-deferred",
+    "route": "qa/routes/dramatic-beats/deferred.json",
+    "precedingRoute": "qa/editorial/dramatic-beats-controls/dramatic-deferred.json",
+    "width": 390,
+    "artwork": "full",
+    "reading": "paragraph",
+    "sound": false,
+    "shots": false,
+    "historicalRoute": "qa/routes/emotional-payoff/edda-deferred-quiet.json"
+  },
+  {
+    "id": "dramatic-scarce",
+    "route": "qa/routes/dramatic-beats/scarce.json",
+    "precedingRoute": "qa/editorial/dramatic-beats-controls/dramatic-scarce.json",
+    "width": 320,
+    "artwork": "none",
+    "reading": "all",
+    "sound": false,
+    "shots": false,
+    "historicalRoute": "qa/routes/scarce-archive-spire.json"
+  },
+  {
+    "id": "dramatic-direct",
+    "route": "qa/routes/dramatic-beats/direct.json",
+    "precedingRoute": "qa/editorial/dramatic-beats-controls/dramatic-direct.json",
+    "width": 320,
+    "artwork": "none",
+    "reading": "paragraph",
+    "sound": false,
+    "shots": false,
+    "historicalRoute": "qa/routes/kerr/scarce-withdrew.json"
+  },
+  {
+    "id": "dramatic-sera-carry",
+    "route": "qa/routes/dramatic-beats/sera-carry.json",
+    "precedingRoute": "qa/editorial/dramatic-beats-controls/dramatic-sera-carry.json",
+    "width": 390,
+    "artwork": "full",
+    "reading": "all",
+    "sound": false,
+    "shots": false,
+    "historicalRoute": "qa/routes/sera-shift/carry-authenticated.json"
+  },
+  {
+    "id": "dramatic-listed",
+    "route": "qa/routes/dramatic-beats/listed.json",
+    "precedingRoute": "qa/editorial/dramatic-beats-controls/dramatic-listed.json",
+    "width": 390,
+    "artwork": "full",
+    "reading": "all",
+    "sound": false,
+    "shots": false,
+    "historicalRoute": "qa/routes/sera-shift/declined.json"
+  }
+]

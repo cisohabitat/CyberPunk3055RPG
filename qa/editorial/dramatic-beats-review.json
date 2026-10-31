@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "status": "All40 complete candidate campaigns verified. Exact pushed-commit CI and READY/public proof remain separate.",
+  "runtimeSourceFingerprint": "374cc193f2f6e2b88d1a78e7338224264a2b4c63798e9605ff0e157c8c7b30a5",
+  "profiles": 40,
+  "totals": {
+    "visits": 3107,
+    "reloads": 2759,
+    "tabs": 26019,
+    "voices": 314,
+    "artViews": 51,
+    "ordinaryArtViews": 18,
+    "interruptions": 16,
+    "addedAuthoredChoices": 0
+  },
+  "browserScenes": 167,
+  "sourceRoutes": 255,
+  "sourceVisits": 18271,
+  "sourceScenes": 252,
+  "totalScenes": 264,
+  "unvisitedScenes": [
+    "act2_folio",
+    "act2_heat",
+    "chapel",
+    "ending_exposed",
+    "ending_sainted",
+    "ending_smashed",
+    "ending_taken",
+    "hatch",
+    "hatch_caught",
+    "kerr_fight",
+    "lumen_cold",
+    "why"
+  ],
+  "prior32": {
+    "visits": 2573,
+    "reloads": 2233,
+    "tabs": 21321,
+    "voices": 242,
+    "artViews": 51,
+    "ordinaryArtViews": 18,
+    "interruptions": 12,
+    "addedAuthoredChoices": 0
+  },
+  "current8": {
+    "visits": 534,
+    "reloads": 526,
+    "tabs": 4698,
+    "voices": 72,
+    "artViews": 0,
+    "ordinaryArtViews": 0,
+    "interruptions": 4,
+    "addedAuthoredChoices": 0
+  },
+  "matchedControlReference": "qa/editorial/dramatic-beats-control-reference.json",
+  "referenceRevision": "5a0f160f14752b09e741a062dbd184df433ddc2c",
+  "matchedControlVisits": 534,
+  "raw": "qa/editorial/dramatic-beats-accepted-runs/",
+  "sourceTests": 946,
+  "localBrowsers": {
+    "chromium": 46,
+    "webkit": 46,
+    "workers": 4,
+    "retries": 0
+  },
+  "hostedInventory": {
+    "total": 6708,
+    "perProject": 1677,
+    "originalNativePolicySkips": 6
+  },
+  "media": {
+    "originalPreserved": 849,
+    "current": 859,
+    "deliveryAssets": 881,
+    "newQuotes": 10,
+    "newPrimaryArt": 0
+  },
+  "grade": 8.9,
+  "weightedGrade": 8.91,
+  "targetWeightedGrade": 9.09,
+  "limitations": "Source-familiar authored-dice UI/ASR proxy, not human or independent listening acceptance. Candidate reports retain actual5a0f160/dirty metadata, not relabeled clean live observations.32 prior campaigns preserve exact text/actions/layout/outcomes/media; the six previous Sera profiles gain one actual setup Tab/reload each. Eight new dramatic routes add zero authored actions against matched current-feature controls. Existing Sera integration in those controls is separate from new dramatic content."
+}

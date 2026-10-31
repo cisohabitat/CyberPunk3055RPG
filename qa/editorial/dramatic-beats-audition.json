@@ -1,0 +1,3195 @@
+{
+  "method": "Quill agreement/refusal and three Edda extraction sequences, 39 complete spoken stages including actual repeated inspections and later signed-shift response; actual delivered clips and actual planned music and room ambience. Settled normal-focus approximation: Voice70/Music60/Ambience50, source gains from runtime, music/room source .5/.35, speech duck .22/.44, 120ms same-speaker gaps and one-second stage separators.",
+  "limitations": "Offline preview omits browser fades, download timing and hardware. Original account recordings and new-23.5LUFS clips are not level matched. No independent listening/acting score or comprehension finding is inferred.",
+  "previewPath": "qa/editorial/dramatic-beats-audition.mp3",
+  "previewSha256": "3c2323e133b0ab70857489c734fd8136518d727872b34b41beebd802547ac591",
+  "bytes": 6134444,
+  "durationSeconds": 511.1077916666667,
+  "scenes": [
+    {
+      "route": "face",
+      "step": 4,
+      "scene": "stall",
+      "text": "Quill moves his bowl aside. \"Replay. Mara Voss, Helion logistics. Glass Chapel edits her memory at dawn. Bring me the original hour, intact. Fifty now, two hundred on delivery. Her bodyguard is Kerr. He is paid to stop you.\"\n\nYou came for enough money to keep tomorrow yours. You want the terms before the promises. Somewhere above the rain, a file with your old name is still open.\n\nThe stallholder\u2019s story stays with you. Whose hour are you being asked to carry? Quill has not touched his dinner. You have not agreed to the job.\n\nQuill turns the untouched bowl away from the edge. \"Do not give me an easy yes. I need you to come back with the hour.\"",
+      "choice": "ask-pay",
+      "lines": [
+        {
+          "key": "9dcfc8554bfcc3ef",
+          "id": "voice-quill-offer",
+          "scene": "stall",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "Mara Voss, Helion logistics. Glass Chapel edits her memory at dawn. Bring me the original hour, intact. Fifty now, two hundred on delivery. Her bodyguard is Kerr. He is paid to stop you.",
+          "text": "Mara Voss, Helion logistics. Glass Chapel edits her memory at dawn. Bring me the original hour, intact.",
+          "part": 0,
+          "suffix": true,
+          "sourceGain": 0.66450767,
+          "path": "public/audio/voice-quill-offer.wav"
+        },
+        {
+          "key": "f179af9169c4b07f",
+          "id": "voice-campaign-quill-3b5fe2def65d",
+          "scene": "stall",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "Mara Voss, Helion logistics. Glass Chapel edits her memory at dawn. Bring me the original hour, intact. Fifty now, two hundred on delivery. Her bodyguard is Kerr. He is paid to stop you.",
+          "text": "Fifty now, two hundred on delivery. Her bodyguard is Kerr. He is paid to stop you.",
+          "part": 1,
+          "suffix": true,
+          "sourceGain": 0.86000307,
+          "path": "public/audio/voice-campaign-quill-3b5fe2def65d.mp3"
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-dceb613b987f",
+          "key": "0259d5fac694b830",
+          "scene": "stall",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "Do not give me an easy yes. I need you to come back with the hour.",
+          "text": "Do not give me an easy yes. I need you to come back with the hour.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-dceb613b987f.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "street",
+        "district": "stall"
+      },
+      "art": {
+        "src": "/art/quill-offer.jpg",
+        "small": "/art/quill-offer-small.jpg",
+        "caption": "Ward Four \u00b7 an offer, unanswered",
+        "description": "Quill waits beside an untouched bowl at an amber-lit stall counter while rain falls beyond the awning."
+      },
+      "portrait": "/art/quill.jpg",
+      "clips": [
+        {
+          "key": "9dcfc8554bfcc3ef",
+          "id": "voice-quill-offer",
+          "scene": "stall",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "Mara Voss, Helion logistics. Glass Chapel edits her memory at dawn. Bring me the original hour, intact. Fifty now, two hundred on delivery. Her bodyguard is Kerr. He is paid to stop you.",
+          "text": "Mara Voss, Helion logistics. Glass Chapel edits her memory at dawn. Bring me the original hour, intact.",
+          "part": 0,
+          "suffix": true,
+          "sourceGain": 0.66450767,
+          "path": "public/audio/voice-quill-offer.wav",
+          "sha256": "d2709b67a0efdffdeba15544aec34bccec9eab44e830ae5438f864acce0b721f",
+          "startSeconds": 0.0,
+          "durationSeconds": 8.996
+        },
+        {
+          "key": "f179af9169c4b07f",
+          "id": "voice-campaign-quill-3b5fe2def65d",
+          "scene": "stall",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "Mara Voss, Helion logistics. Glass Chapel edits her memory at dawn. Bring me the original hour, intact. Fifty now, two hundred on delivery. Her bodyguard is Kerr. He is paid to stop you.",
+          "text": "Fifty now, two hundred on delivery. Her bodyguard is Kerr. He is paid to stop you.",
+          "part": 1,
+          "suffix": true,
+          "sourceGain": 0.86000307,
+          "path": "public/audio/voice-campaign-quill-3b5fe2def65d.mp3",
+          "sha256": "8219b83b69a0f1315032bffb9b71a9028e8be005746d31137fde46aa16641148",
+          "startSeconds": 9.116,
+          "durationSeconds": 7.018666666666666
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-dceb613b987f",
+          "key": "0259d5fac694b830",
+          "scene": "stall",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "Do not give me an easy yes. I need you to come back with the hour.",
+          "text": "Do not give me an easy yes. I need you to come back with the hour.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-dceb613b987f.mp3",
+          "sha256": "fa122b800d46a8dd180a708ae740957833a69da670d5731912f69cb9033d24a2",
+          "startSeconds": 16.254666666666665,
+          "durationSeconds": 5.032
+        }
+      ],
+      "startSeconds": 0.0,
+      "durationSeconds": 21.286666666666665,
+      "musicPath": "public/audio/theme.flac",
+      "musicSha256": "6f0f263197943165f9c164454fdad99410b912b3cb890951768eeffed456ff62",
+      "ambiencePath": "public/audio/ambience-stall.flac",
+      "ambienceSha256": "f09d109ea3684058422c311f464a49708b17842dad4b00d44d19a5cf53a309bf",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/000-face-stall.wav",
+      "masterSha256": "407bd49b191f552d1ba9cad967562a5e7990d23bff03a9b5312957da72adac3c",
+      "peak": 0.32039234042167664,
+      "voiceRms": 0.036239758133888245,
+      "bedRms": 0.0028512191493064165
+    },
+    {
+      "route": "face",
+      "step": 5,
+      "scene": "pay",
+      "text": "\"Fifty now. Two hundred when the shard is in my hand and not wandering around in your bloodstream. Kerr is her shadow. Kerr is why the number is not prettier.\"\n\nHe keeps his chip on his side of the counter. \"The advance has to get you through the door. Ask for more if that is what the work needs.\"\n\nYou can risk the existing Face check for a larger advance, or leave the number alone. No advance transfers until you take the job.",
+      "choice": "haggle",
+      "lines": [
+        {
+          "key": "a8027305bab28bc5",
+          "id": "voice-quill-pay",
+          "scene": "pay",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "Fifty now. Two hundred when the shard is in my hand and not wandering around in your bloodstream. Kerr is her shadow. Kerr is why the number is not prettier.",
+          "text": "Fifty now. Two hundred when the shard is in my hand and not wandering around in your bloodstream. Kerr is her shadow. Kerr is why the number is not prettier.",
+          "part": 0,
+          "sourceGain": 0.89536477,
+          "path": "public/audio/voice-quill-pay.wav"
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-0f19f0d22108",
+          "key": "90f38d80b9bb73ec",
+          "scene": "pay",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "The advance has to get you through the door. Ask for more if that is what the work needs.",
+          "text": "The advance has to get you through the door. Ask for more if that is what the work needs.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-0f19f0d22108.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "street",
+        "district": "stall"
+      },
+      "art": {
+        "src": "/art/quill-offer.jpg",
+        "small": "/art/quill-offer-small.jpg",
+        "caption": "Ward Four \u00b7 an offer, unanswered",
+        "description": "Quill waits beside an untouched bowl at an amber-lit stall counter while rain falls beyond the awning."
+      },
+      "portrait": "/art/quill.jpg",
+      "clips": [
+        {
+          "key": "a8027305bab28bc5",
+          "id": "voice-quill-pay",
+          "scene": "pay",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "Fifty now. Two hundred when the shard is in my hand and not wandering around in your bloodstream. Kerr is her shadow. Kerr is why the number is not prettier.",
+          "text": "Fifty now. Two hundred when the shard is in my hand and not wandering around in your bloodstream. Kerr is her shadow. Kerr is why the number is not prettier.",
+          "part": 0,
+          "sourceGain": 0.89536477,
+          "path": "public/audio/voice-quill-pay.wav",
+          "sha256": "e9620a09386bd0fd122d408c6d6c978624c1cfb95af945d40f9a9f4d9d41767d",
+          "startSeconds": 0.0,
+          "durationSeconds": 10.826666666666666
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-0f19f0d22108",
+          "key": "90f38d80b9bb73ec",
+          "scene": "pay",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "The advance has to get you through the door. Ask for more if that is what the work needs.",
+          "text": "The advance has to get you through the door. Ask for more if that is what the work needs.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-0f19f0d22108.mp3",
+          "sha256": "9ef91740018a77ed86dc8126114f398d9c1e63b9ac576df102da38bf499a290f",
+          "startSeconds": 10.946666666666667,
+          "durationSeconds": 5.926
+        }
+      ],
+      "startSeconds": 22.286666666666665,
+      "durationSeconds": 16.872666666666667,
+      "musicPath": "public/audio/theme.flac",
+      "musicSha256": "6f0f263197943165f9c164454fdad99410b912b3cb890951768eeffed456ff62",
+      "ambiencePath": "public/audio/ambience-stall.flac",
+      "ambienceSha256": "f09d109ea3684058422c311f464a49708b17842dad4b00d44d19a5cf53a309bf",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/001-face-pay.wav",
+      "masterSha256": "3c605cdd98c81ef43cf869087895795378e5d6e24be35cefec4cc46a7d5b3c6a",
+      "peak": 0.32236137986183167,
+      "voiceRms": 0.0389740914106369,
+      "bedRms": 0.0027942503802478313
+    },
+    {
+      "route": "face",
+      "step": 6,
+      "scene": "pay_yes",
+      "text": "Quill moves his chip closer, then stops short of yours.\n\n\"Ninety when you take the job. I need that extra money to get you through the door, not just get me a yes.\"\n\nThe negotiation earned a ninety-creds advance. It is paid only if you accept the job. Two hundred remains due on delivery of the intact hour; Kerr and the dawn appointment remain.",
+      "choice": "pocket",
+      "lines": [
+        {
+          "id": "voice-campaign-dramatic-beats-043fc7da30bc",
+          "key": "26128d191da26aff",
+          "scene": "pay_yes",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "Ninety when you take the job. I need that extra money to get you through the door, not just get me a yes.",
+          "text": "Ninety when you take the job. I need that extra money to get you through the door, not just get me a yes.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-043fc7da30bc.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "street",
+        "district": "stall"
+      },
+      "art": {
+        "src": "/art/market-counter.jpg",
+        "small": "/art/market-counter-small.jpg",
+        "caption": "Kite City \u00b7 the sheltered counter",
+        "description": "Steam rises from an unattended copper noodle pot beneath a patched market awning, beside a damp menu and two empty counter seats."
+      },
+      "portrait": "/art/quill.jpg",
+      "clips": [
+        {
+          "id": "voice-campaign-dramatic-beats-043fc7da30bc",
+          "key": "26128d191da26aff",
+          "scene": "pay_yes",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "Ninety when you take the job. I need that extra money to get you through the door, not just get me a yes.",
+          "text": "Ninety when you take the job. I need that extra money to get you through the door, not just get me a yes.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-043fc7da30bc.mp3",
+          "sha256": "235ad61d35ee8a80f9e0b4c774a5dd94d3d9b67b560ae9eeb523cc934422c2d4",
+          "startSeconds": 0.0,
+          "durationSeconds": 7.626666666666667
+        }
+      ],
+      "startSeconds": 40.159333333333336,
+      "durationSeconds": 7.626666666666667,
+      "musicPath": "public/audio/theme.flac",
+      "musicSha256": "6f0f263197943165f9c164454fdad99410b912b3cb890951768eeffed456ff62",
+      "ambiencePath": "public/audio/ambience-stall.flac",
+      "ambienceSha256": "f09d109ea3684058422c311f464a49708b17842dad4b00d44d19a5cf53a309bf",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/002-face-pay_yes.wav",
+      "masterSha256": "833ace38d72b39f92159fb142f31d4e829a05afa17852e1135c7fd2836eccdb4",
+      "peak": 0.33791783452033997,
+      "voiceRms": 0.03828583285212517,
+      "bedRms": 0.0030094606336206198
+    },
+    {
+      "route": "face",
+      "step": 7,
+      "scene": "stall",
+      "text": "Quill turns the untouched bowl between his hands. \"Ninety now. Two hundred for the intact shard. Before dawn. Those are the terms.\"\n\nHe already moved the advance to ninety. He will not enjoy being asked to fall in love with you twice.\n\nThe stallholder lifts another nest of noodles from the pot. Quill waits for your answer.",
+      "choice": "accept",
+      "lines": [
+        {
+          "key": "c0cb6cd8349b77cd",
+          "id": "voice-campaign-quill-e467cd6ce1d3",
+          "scene": "stall",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "Ninety now. Two hundred for the intact shard. Before dawn. Those are the terms.",
+          "text": "Ninety now. Two hundred for the intact shard. Before dawn. Those are the terms.",
+          "part": 0,
+          "sourceGain": 0.71121351,
+          "path": "public/audio/voice-campaign-quill-e467cd6ce1d3.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "street",
+        "district": "stall"
+      },
+      "art": {
+        "src": "/art/quill-offer.jpg",
+        "small": "/art/quill-offer-small.jpg",
+        "caption": "Ward Four \u00b7 an offer, unanswered",
+        "description": "Quill waits beside an untouched bowl at an amber-lit stall counter while rain falls beyond the awning."
+      },
+      "portrait": "/art/quill.jpg",
+      "clips": [
+        {
+          "key": "c0cb6cd8349b77cd",
+          "id": "voice-campaign-quill-e467cd6ce1d3",
+          "scene": "stall",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "Ninety now. Two hundred for the intact shard. Before dawn. Those are the terms.",
+          "text": "Ninety now. Two hundred for the intact shard. Before dawn. Those are the terms.",
+          "part": 0,
+          "sourceGain": 0.71121351,
+          "path": "public/audio/voice-campaign-quill-e467cd6ce1d3.mp3",
+          "sha256": "b56801d76e1e17e351b0b732f40f6c986a3ef41d42399283d075922cfdd28f4f",
+          "startSeconds": 0.0,
+          "durationSeconds": 7.365333333333333
+        }
+      ],
+      "startSeconds": 48.786,
+      "durationSeconds": 7.365333333333333,
+      "musicPath": "public/audio/theme.flac",
+      "musicSha256": "6f0f263197943165f9c164454fdad99410b912b3cb890951768eeffed456ff62",
+      "ambiencePath": "public/audio/ambience-stall.flac",
+      "ambienceSha256": "f09d109ea3684058422c311f464a49708b17842dad4b00d44d19a5cf53a309bf",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/003-face-stall.wav",
+      "masterSha256": "3549f710d45a7d195efa0e9f9e937fcc9e64725c1cd715052d5ea323b026d199",
+      "peak": 0.24006372690200806,
+      "voiceRms": 0.03448837995529175,
+      "bedRms": 0.003040099749341607
+    },
+    {
+      "route": "face",
+      "step": 8,
+      "scene": "route",
+      "text": "Ninety is already on your chip. Try not to donate it to a door. You tell Quill you need tomorrow paid for. \"Then do not spend your whole advance on my pass,\" he says. \"There are other doors.\"\n\n\"Three ways in. The front sells forgiveness to anyone with an appointment. The hatch behind the incinerator is for people who still sweat. The choir door runs on an old Helion pad. I would not kiss it.\"\n\nThe penitent pass is a hundred. It scans often enough. Glass Chapel is three streets over. You leave the steam of the stall for its white light.",
+      "choice": "begin-chapel-window",
+      "lines": [
+        {
+          "key": "4c5c7681e81bef57",
+          "id": "voice-campaign-quill-3be212ca911c",
+          "scene": "route",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "Then do not spend your whole advance on my pass,",
+          "text": "Then do not spend your whole advance on my pass,",
+          "part": 0,
+          "sourceGain": 0.76913044,
+          "path": "public/audio/voice-campaign-quill-3be212ca911c.mp3"
+        },
+        {
+          "key": "7c5d58f501cceeb7",
+          "id": "voice-campaign-quill-c8cfa180c8e3",
+          "scene": "route",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "There are other doors.",
+          "text": "There are other doors.",
+          "part": 0,
+          "sourceGain": 0.60394863,
+          "path": "public/audio/voice-campaign-quill-c8cfa180c8e3.mp3"
+        },
+        {
+          "key": "e4c354d551ed74da",
+          "id": "voice-quill-route",
+          "scene": "route",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "Three ways in. The front sells forgiveness to anyone with an appointment. The hatch behind the incinerator is for people who still sweat. The choir door runs on an old Helion pad. I would not kiss it.",
+          "text": "Three ways in. The front sells forgiveness to anyone with an appointment. The hatch behind the incinerator is for people who still sweat. The choir door runs on an old Helion pad. I would not kiss it.",
+          "part": 0,
+          "sourceGain": 1.16144861,
+          "path": "public/audio/voice-quill-route.wav"
+        }
+      ],
+      "sound": {
+        "mood": "street",
+        "district": "street"
+      },
+      "art": {
+        "src": "/art/market-counter.jpg",
+        "small": "/art/market-counter-small.jpg",
+        "caption": "Kite City \u00b7 the sheltered counter",
+        "description": "Steam rises from an unattended copper noodle pot beneath a patched market awning, beside a damp menu and two empty counter seats."
+      },
+      "portrait": "/art/quill.jpg",
+      "clips": [
+        {
+          "key": "4c5c7681e81bef57",
+          "id": "voice-campaign-quill-3be212ca911c",
+          "scene": "route",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "Then do not spend your whole advance on my pass,",
+          "text": "Then do not spend your whole advance on my pass,",
+          "part": 0,
+          "sourceGain": 0.76913044,
+          "path": "public/audio/voice-campaign-quill-3be212ca911c.mp3",
+          "sha256": "1170f255663d5b29e2790cda54825c4e7a7074437cb0a903118d5c1e9cc35be2",
+          "startSeconds": 0.0,
+          "durationSeconds": 3.296
+        },
+        {
+          "key": "7c5d58f501cceeb7",
+          "id": "voice-campaign-quill-c8cfa180c8e3",
+          "scene": "route",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "There are other doors.",
+          "text": "There are other doors.",
+          "part": 0,
+          "sourceGain": 0.60394863,
+          "path": "public/audio/voice-campaign-quill-c8cfa180c8e3.mp3",
+          "sha256": "a3708106786f1ee9d02ab51f9833fa30807d1a64352c0e074e3a1c93ac97e759",
+          "startSeconds": 3.416,
+          "durationSeconds": 1.7813333333333334
+        },
+        {
+          "key": "e4c354d551ed74da",
+          "id": "voice-quill-route",
+          "scene": "route",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "Three ways in. The front sells forgiveness to anyone with an appointment. The hatch behind the incinerator is for people who still sweat. The choir door runs on an old Helion pad. I would not kiss it.",
+          "text": "Three ways in. The front sells forgiveness to anyone with an appointment. The hatch behind the incinerator is for people who still sweat. The choir door runs on an old Helion pad. I would not kiss it.",
+          "part": 0,
+          "sourceGain": 1.16144861,
+          "path": "public/audio/voice-quill-route.wav",
+          "sha256": "1fae551c12bc1d2de0b5e7a95c3f6eee65ddc0171f2389f411bca243b794a434",
+          "startSeconds": 5.317333333333333,
+          "durationSeconds": 14.236666666666666
+        }
+      ],
+      "startSeconds": 57.15133333333333,
+      "durationSeconds": 19.554,
+      "musicPath": "public/audio/theme.flac",
+      "musicSha256": "6f0f263197943165f9c164454fdad99410b912b3cb890951768eeffed456ff62",
+      "ambiencePath": "public/audio/ambience-street.flac",
+      "ambienceSha256": "61b3bba5d867990b3cb85ef7317d49c3b0465eab2057d44d0a123b53e87cfe0d",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/004-face-route.wav",
+      "masterSha256": "cf6196a76047a7fc929a7c9446f14130add2824b4bbbacfb18ede8977c8cbb9c",
+      "peak": 0.41610464453697205,
+      "voiceRms": 0.038706935942173004,
+      "bedRms": 0.0026593899819999933
+    },
+    {
+      "route": "face",
+      "step": 42,
+      "scene": "act2_craft_archive",
+      "text": "Edda puts three headings on separate sheets. Nothing has been extracted from the archive.\n\n\"The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.\"\n\nInspect the export and both catalog descriptions at the desk. Reading and drafting are free; a submitted request has its own terms.\n\nEdda leaves a blank space beneath the request heading. \"I want this request to have an edge. Something I can finish, then put down when my shift ends.\"",
+      "choice": "craft-read-export",
+      "lines": [
+        {
+          "key": "5720ff8b686c7cfe",
+          "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3"
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-9919ec3d53bd",
+          "key": "555475ea08ddcc0f",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "text": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-9919ec3d53bd.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "quiet",
+        "district": "spire"
+      },
+      "art": {
+        "src": "/art/archive-desk.jpg",
+        "small": "/art/archive-desk-small.jpg",
+        "caption": "Helion \u00b7 a question before a query",
+        "description": "A closed maintenance ledger, a catalog beneath glass and a dim record reader sit under a brass task lamp before rows of steel drawers and a service shutter."
+      },
+      "portrait": "/art/edda.jpg",
+      "clips": [
+        {
+          "key": "5720ff8b686c7cfe",
+          "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3",
+          "sha256": "26825c2bc65fe72059a7ad4da468fffe47e9cd921d8fcb4ebdfe6d1ed04c872e",
+          "startSeconds": 0.0,
+          "durationSeconds": 8.358625
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-9919ec3d53bd",
+          "key": "555475ea08ddcc0f",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "text": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-9919ec3d53bd.mp3",
+          "sha256": "bfd3885acb869368fc833eca07ac21f859bcb835893feaf2bd00e6ae4594da46",
+          "startSeconds": 8.478625,
+          "durationSeconds": 6.3213333333333335
+        }
+      ],
+      "startSeconds": 77.70533333333333,
+      "durationSeconds": 14.799958333333333,
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-spire.flac",
+      "ambienceSha256": "c591122dbc8dd9df3af27778415959b4b325326fe1ba0caf21d1ce861a3b2eff",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/005-face-act2_craft_archive.wav",
+      "masterSha256": "1f638697d387567157915c5978f22d1413d65fdab1ea8573fb3e41dc7b346600",
+      "peak": 0.2423134595155716,
+      "voiceRms": 0.038437869399785995,
+      "bedRms": 0.0016007908852770925
+    },
+    {
+      "route": "face",
+      "step": 43,
+      "scene": "act2_craft_archive",
+      "text": "Edda puts three headings on separate sheets. Nothing has been extracted from the archive.\n\n\"The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.\"\n\nInspect the export and both catalog descriptions at the desk. Reading and drafting are free; a submitted request has its own terms.\n\nEdda leaves a blank space beneath the request heading. \"I want this request to have an edge. Something I can finish, then put down when my shift ends.\"",
+      "choice": "craft-read-plant",
+      "lines": [
+        {
+          "key": "5720ff8b686c7cfe",
+          "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3"
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-9919ec3d53bd",
+          "key": "555475ea08ddcc0f",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "text": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-9919ec3d53bd.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "quiet",
+        "district": "spire"
+      },
+      "art": {
+        "src": "/art/archive-desk.jpg",
+        "small": "/art/archive-desk-small.jpg",
+        "caption": "Helion \u00b7 a question before a query",
+        "description": "A closed maintenance ledger, a catalog beneath glass and a dim record reader sit under a brass task lamp before rows of steel drawers and a service shutter."
+      },
+      "portrait": "/art/edda.jpg",
+      "clips": [
+        {
+          "key": "5720ff8b686c7cfe",
+          "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3",
+          "sha256": "26825c2bc65fe72059a7ad4da468fffe47e9cd921d8fcb4ebdfe6d1ed04c872e",
+          "startSeconds": 0.0,
+          "durationSeconds": 8.358625
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-9919ec3d53bd",
+          "key": "555475ea08ddcc0f",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "text": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-9919ec3d53bd.mp3",
+          "sha256": "bfd3885acb869368fc833eca07ac21f859bcb835893feaf2bd00e6ae4594da46",
+          "startSeconds": 8.478625,
+          "durationSeconds": 6.3213333333333335
+        }
+      ],
+      "startSeconds": 93.50529166666666,
+      "durationSeconds": 14.799958333333333,
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-spire.flac",
+      "ambienceSha256": "c591122dbc8dd9df3af27778415959b4b325326fe1ba0caf21d1ce861a3b2eff",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/006-face-act2_craft_archive.wav",
+      "masterSha256": "1f638697d387567157915c5978f22d1413d65fdab1ea8573fb3e41dc7b346600",
+      "peak": 0.2423134595155716,
+      "voiceRms": 0.038437869399785995,
+      "bedRms": 0.0016007908852770925
+    },
+    {
+      "route": "face",
+      "step": 44,
+      "scene": "act2_craft_archive",
+      "text": "Edda puts three headings on separate sheets. Nothing has been extracted from the archive.\n\n\"The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.\"\n\nInspect the export and both catalog descriptions at the desk. Reading and drafting are free; a submitted request has its own terms.\n\nEdda leaves a blank space beneath the request heading. \"I want this request to have an edge. Something I can finish, then put down when my shift ends.\"",
+      "choice": "craft-read-movement",
+      "lines": [
+        {
+          "key": "5720ff8b686c7cfe",
+          "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3"
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-9919ec3d53bd",
+          "key": "555475ea08ddcc0f",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "text": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-9919ec3d53bd.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "quiet",
+        "district": "spire"
+      },
+      "art": {
+        "src": "/art/archive-desk.jpg",
+        "small": "/art/archive-desk-small.jpg",
+        "caption": "Helion \u00b7 a question before a query",
+        "description": "A closed maintenance ledger, a catalog beneath glass and a dim record reader sit under a brass task lamp before rows of steel drawers and a service shutter."
+      },
+      "portrait": "/art/edda.jpg",
+      "clips": [
+        {
+          "key": "5720ff8b686c7cfe",
+          "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3",
+          "sha256": "26825c2bc65fe72059a7ad4da468fffe47e9cd921d8fcb4ebdfe6d1ed04c872e",
+          "startSeconds": 0.0,
+          "durationSeconds": 8.358625
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-9919ec3d53bd",
+          "key": "555475ea08ddcc0f",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "text": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-9919ec3d53bd.mp3",
+          "sha256": "bfd3885acb869368fc833eca07ac21f859bcb835893feaf2bd00e6ae4594da46",
+          "startSeconds": 8.478625,
+          "durationSeconds": 6.3213333333333335
+        }
+      ],
+      "startSeconds": 109.30525,
+      "durationSeconds": 14.799958333333333,
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-spire.flac",
+      "ambienceSha256": "c591122dbc8dd9df3af27778415959b4b325326fe1ba0caf21d1ce861a3b2eff",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/007-face-act2_craft_archive.wav",
+      "masterSha256": "1f638697d387567157915c5978f22d1413d65fdab1ea8573fb3e41dc7b346600",
+      "peak": 0.2423134595155716,
+      "voiceRms": 0.038437869399785995,
+      "bedRms": 0.0016007908852770925
+    },
+    {
+      "route": "face",
+      "step": 45,
+      "scene": "act2_craft_archive",
+      "text": "Edda puts three headings on separate sheets. Nothing has been extracted from the archive.\n\n\"The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.\"\n\nThe coolant work can remain scheduled while the evacuation instruction changes. Decide which question to put to an actual source.\n\nEdda leaves a blank space beneath the request heading. \"I want this request to have an edge. Something I can finish, then put down when my shift ends.\"",
+      "choice": "craft-question-movement",
+      "lines": [
+        {
+          "key": "5720ff8b686c7cfe",
+          "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3"
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-9919ec3d53bd",
+          "key": "555475ea08ddcc0f",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "text": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-9919ec3d53bd.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "quiet",
+        "district": "spire"
+      },
+      "art": {
+        "src": "/art/archive-desk.jpg",
+        "small": "/art/archive-desk-small.jpg",
+        "caption": "Helion \u00b7 a question before a query",
+        "description": "A closed maintenance ledger, a catalog beneath glass and a dim record reader sit under a brass task lamp before rows of steel drawers and a service shutter."
+      },
+      "portrait": "/art/edda.jpg",
+      "clips": [
+        {
+          "key": "5720ff8b686c7cfe",
+          "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3",
+          "sha256": "26825c2bc65fe72059a7ad4da468fffe47e9cd921d8fcb4ebdfe6d1ed04c872e",
+          "startSeconds": 0.0,
+          "durationSeconds": 8.358625
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-9919ec3d53bd",
+          "key": "555475ea08ddcc0f",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "text": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-9919ec3d53bd.mp3",
+          "sha256": "bfd3885acb869368fc833eca07ac21f859bcb835893feaf2bd00e6ae4594da46",
+          "startSeconds": 8.478625,
+          "durationSeconds": 6.3213333333333335
+        }
+      ],
+      "startSeconds": 125.10520833333334,
+      "durationSeconds": 14.799958333333333,
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-spire.flac",
+      "ambienceSha256": "c591122dbc8dd9df3af27778415959b4b325326fe1ba0caf21d1ce861a3b2eff",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/008-face-act2_craft_archive.wav",
+      "masterSha256": "1f638697d387567157915c5978f22d1413d65fdab1ea8573fb3e41dc7b346600",
+      "peak": 0.2423134595155716,
+      "voiceRms": 0.038437869399785995,
+      "bedRms": 0.0016007908852770925
+    },
+    {
+      "route": "face",
+      "step": 46,
+      "scene": "act2_craft_archive_ledger",
+      "text": "Edda lays a narrow request form over the movement locator. The worker roster does not go on it.\n\nEdda smooths the request form once. Her hand stops above the signature line.\n\n\"A fee, an old number, a signature. Each leaves someone carrying this request. I want to know which part you are asking me to carry.\"\n\nShe can help carry this bounded record. The families stay out of the request.\n\nA staffed movement-page extraction costs twenty-five creds and logs a query. A Spire employee can bill it to the old badge, adding its trace. Earned Face training lets you ask Edda for a bounded countersignature instead: she agrees to this extraction, and her employer can identify her signed shift. None of these methods tests an issuing key.",
+      "choice": "craft-request-roster",
+      "lines": [
+        {
+          "id": "voice-campaign-dramatic-beats-ebb05f183613",
+          "key": "5ce258ce05cf6abc",
+          "scene": "act2_craft_archive_ledger",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "A fee, an old number, a signature. Each leaves someone carrying this request. I want to know which part you are asking me to carry.",
+          "text": "A fee, an old number, a signature. Each leaves someone carrying this request. I want to know which part you are asking me to carry.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-ebb05f183613.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "quiet",
+        "district": "spire"
+      },
+      "art": {
+        "src": "/art/edda-archive.jpg",
+        "small": "/art/edda-archive-small.jpg",
+        "caption": "Helion \u00b7 Edda keeps the request bounded",
+        "description": "Edda sits at the service archive desk, one hand on a closed worn ledger and the other holding blank folded paper. No identifying record, signature or authenticated outcome is displayed."
+      },
+      "portrait": "/art/edda.jpg",
+      "clips": [
+        {
+          "id": "voice-campaign-dramatic-beats-ebb05f183613",
+          "key": "5ce258ce05cf6abc",
+          "scene": "act2_craft_archive_ledger",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "A fee, an old number, a signature. Each leaves someone carrying this request. I want to know which part you are asking me to carry.",
+          "text": "A fee, an old number, a signature. Each leaves someone carrying this request. I want to know which part you are asking me to carry.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-ebb05f183613.mp3",
+          "sha256": "f74cd28bba8e211a32e1e4e5ed6165104279b8f85a0bad7ce637d41814201eb1",
+          "startSeconds": 0.0,
+          "durationSeconds": 9.693291666666667
+        }
+      ],
+      "startSeconds": 140.90516666666667,
+      "durationSeconds": 9.693291666666667,
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-spire.flac",
+      "ambienceSha256": "c591122dbc8dd9df3af27778415959b4b325326fe1ba0caf21d1ce861a3b2eff",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/009-face-act2_craft_archive_ledger.wav",
+      "masterSha256": "81fd1c3bffcabf5c1b6e3805b1976080b39c04d0e54b9c4c28519aa3b0b7df05",
+      "peak": 0.25465819239616394,
+      "voiceRms": 0.035527944564819336,
+      "bedRms": 0.0016719746636226773
+    },
+    {
+      "route": "face",
+      "step": 47,
+      "scene": "act2_craft_archive_challenge",
+      "text": "Edda turns the headings toward you. The unsubmitted proposal stays beside them; she does not sign it.\n\n\"You have made one column answer for another. Look again. I am not asking you to believe me; I am asking you to read what is there.\"\n\nThe wrong inference or overbroad request stays in your draft history. Reading it again changes no source, fee or permission.",
+      "choice": "craft-revise-question",
+      "lines": [
+        {
+          "key": "9312207c096007bc",
+          "id": "voice-campaign-encounter-craft-570639a0f84d",
+          "scene": "act2_craft_archive_challenge",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "You have made one column answer for another. Look again. I am not asking you to believe me; I am asking you to read what is there.",
+          "text": "You have made one column answer for another. Look again. I am not asking you to believe me; I am asking you to read what is there.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/performance-direction-v1/voice-campaign-encounter-craft-570639a0f84d.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "quiet",
+        "district": "spire"
+      },
+      "art": {
+        "src": "/art/edda-archive.jpg",
+        "small": "/art/edda-archive-small.jpg",
+        "caption": "Helion \u00b7 Edda keeps the request bounded",
+        "description": "Edda sits at the service archive desk, one hand on a closed worn ledger and the other holding blank folded paper. No identifying record, signature or authenticated outcome is displayed."
+      },
+      "portrait": "/art/edda.jpg",
+      "clips": [
+        {
+          "key": "9312207c096007bc",
+          "id": "voice-campaign-encounter-craft-570639a0f84d",
+          "scene": "act2_craft_archive_challenge",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "You have made one column answer for another. Look again. I am not asking you to believe me; I am asking you to read what is there.",
+          "text": "You have made one column answer for another. Look again. I am not asking you to believe me; I am asking you to read what is there.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/performance-direction-v1/voice-campaign-encounter-craft-570639a0f84d.mp3",
+          "sha256": "74decc3a98680b010f12ece93f5fe4ce0df88386c74a6c8a845192d856835657",
+          "startSeconds": 0.0,
+          "durationSeconds": 8.776666666666667
+        }
+      ],
+      "startSeconds": 151.59845833333333,
+      "durationSeconds": 8.776666666666667,
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-spire.flac",
+      "ambienceSha256": "c591122dbc8dd9df3af27778415959b4b325326fe1ba0caf21d1ce861a3b2eff",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/010-face-act2_craft_archive_challenge.wav",
+      "masterSha256": "53286eb68e455983e6b31daa118c69e9d6624580694ad2814b6276fc60e86203",
+      "peak": 0.23388010263442993,
+      "voiceRms": 0.037720780819654465,
+      "bedRms": 0.0016652729827910662
+    },
+    {
+      "route": "face",
+      "step": 48,
+      "scene": "act2_craft_archive",
+      "text": "Edda puts three headings on separate sheets. Nothing has been extracted from the archive.\n\n\"The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.\"\n\nThe coolant work can remain scheduled while the evacuation instruction changes. Decide which question to put to an actual source.",
+      "choice": "craft-question-movement",
+      "lines": [
+        {
+          "key": "5720ff8b686c7cfe",
+          "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "quiet",
+        "district": "spire"
+      },
+      "art": {
+        "src": "/art/archive-desk.jpg",
+        "small": "/art/archive-desk-small.jpg",
+        "caption": "Helion \u00b7 a question before a query",
+        "description": "A closed maintenance ledger, a catalog beneath glass and a dim record reader sit under a brass task lamp before rows of steel drawers and a service shutter."
+      },
+      "portrait": "/art/edda.jpg",
+      "clips": [
+        {
+          "key": "5720ff8b686c7cfe",
+          "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3",
+          "sha256": "26825c2bc65fe72059a7ad4da468fffe47e9cd921d8fcb4ebdfe6d1ed04c872e",
+          "startSeconds": 0.0,
+          "durationSeconds": 8.358625
+        }
+      ],
+      "startSeconds": 161.375125,
+      "durationSeconds": 8.358625,
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-spire.flac",
+      "ambienceSha256": "c591122dbc8dd9df3af27778415959b4b325326fe1ba0caf21d1ce861a3b2eff",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/011-face-act2_craft_archive.wav",
+      "masterSha256": "d90c2df6a1d19fc72951204c6ca4411c0fd83713f2294563ee17b7d735695f87",
+      "peak": 0.23354963958263397,
+      "voiceRms": 0.038194138556718826,
+      "bedRms": 0.0016602607211098075
+    },
+    {
+      "route": "face",
+      "step": 49,
+      "scene": "act2_craft_archive_ledger",
+      "text": "Edda lays a narrow request form over the movement locator. The worker roster does not go on it.\n\nEdda smooths the request form once. Her hand stops above the signature line.\n\n\"A fee, an old number, a signature. Each leaves someone carrying this request. I want to know which part you are asking me to carry.\"\n\nShe can help carry this bounded record. The families stay out of the request.\n\nA staffed movement-page extraction costs twenty-five creds and logs a query. A Spire employee can bill it to the old badge, adding its trace. Earned Face training lets you ask Edda for a bounded countersignature instead: she agrees to this extraction, and her employer can identify her signed shift. None of these methods tests an issuing key.",
+      "choice": "craft-extract-face",
+      "lines": [
+        {
+          "id": "voice-campaign-dramatic-beats-ebb05f183613",
+          "key": "5ce258ce05cf6abc",
+          "scene": "act2_craft_archive_ledger",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "A fee, an old number, a signature. Each leaves someone carrying this request. I want to know which part you are asking me to carry.",
+          "text": "A fee, an old number, a signature. Each leaves someone carrying this request. I want to know which part you are asking me to carry.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-ebb05f183613.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "quiet",
+        "district": "spire"
+      },
+      "art": {
+        "src": "/art/edda-archive.jpg",
+        "small": "/art/edda-archive-small.jpg",
+        "caption": "Helion \u00b7 Edda keeps the request bounded",
+        "description": "Edda sits at the service archive desk, one hand on a closed worn ledger and the other holding blank folded paper. No identifying record, signature or authenticated outcome is displayed."
+      },
+      "portrait": "/art/edda.jpg",
+      "clips": [
+        {
+          "id": "voice-campaign-dramatic-beats-ebb05f183613",
+          "key": "5ce258ce05cf6abc",
+          "scene": "act2_craft_archive_ledger",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "A fee, an old number, a signature. Each leaves someone carrying this request. I want to know which part you are asking me to carry.",
+          "text": "A fee, an old number, a signature. Each leaves someone carrying this request. I want to know which part you are asking me to carry.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-ebb05f183613.mp3",
+          "sha256": "f74cd28bba8e211a32e1e4e5ed6165104279b8f85a0bad7ce637d41814201eb1",
+          "startSeconds": 0.0,
+          "durationSeconds": 9.693291666666667
+        }
+      ],
+      "startSeconds": 170.73375,
+      "durationSeconds": 9.693291666666667,
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-spire.flac",
+      "ambienceSha256": "c591122dbc8dd9df3af27778415959b4b325326fe1ba0caf21d1ce861a3b2eff",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/012-face-act2_craft_archive_ledger.wav",
+      "masterSha256": "81fd1c3bffcabf5c1b6e3805b1976080b39c04d0e54b9c4c28519aa3b0b7df05",
+      "peak": 0.25465819239616394,
+      "voiceRms": 0.035527944564819336,
+      "bedRms": 0.0016719746636226773
+    },
+    {
+      "route": "face",
+      "step": 50,
+      "scene": "act2_archive_custody",
+      "text": "Edda keeps her signed extraction beside the ledger reference. \u2018They can find my shift from this. Taking my name off the public copy won't hide it from my employer.\u2019\n\nThe ledger corroborates the cancellation; no reader authenticated its issuing key.\n\n\u2018Keep the original with Sera,\u2019 Edda says. \u2018Ask before you put my name on a public copy.\u2019\n\nEdda keeps the request beside the retrieved reference. \"You asked me to sign, and I did. Let that stay something I chose, not something you won from me.\"",
+      "choice": "withhold-technician",
+      "lines": [
+        {
+          "key": "c101cb44e9dcbc8c",
+          "id": "voice-campaign-edda-4c4a033f7b14",
+          "scene": "act2_archive_custody",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "They can find my shift from this. Taking my name off the public copy won't hide it from my employer.",
+          "text": "They can find my shift from this. Taking my name off the public copy won't hide it from my employer.",
+          "part": 0,
+          "sourceGain": 0.66911382,
+          "path": "public/audio/voice-campaign-edda-4c4a033f7b14.mp3"
+        },
+        {
+          "key": "9b7df92b1cc2b555",
+          "id": "voice-campaign-edda-d4b034abcf9f",
+          "scene": "act2_archive_custody",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "Keep the original with Sera,",
+          "text": "Keep the original with Sera,",
+          "part": 0,
+          "sourceGain": 0.66834392,
+          "path": "public/audio/voice-campaign-edda-d4b034abcf9f.mp3"
+        },
+        {
+          "key": "0a82dcd63a373be1",
+          "id": "voice-edda-source-custody",
+          "scene": "act2_archive_custody",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "Ask before you put my name on a public copy.",
+          "text": "Ask before you put my name on a public copy.",
+          "part": 0,
+          "sourceGain": 0.52239619,
+          "path": "public/audio/voice-edda-source-custody.wav"
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-7864742e6cf1",
+          "key": "58d7c1ece64fb3fb",
+          "scene": "act2_archive_custody",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "You asked me to sign, and I did. Let that stay something I chose, not something you won from me.",
+          "text": "You asked me to sign, and I did. Let that stay something I chose, not something you won from me.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-7864742e6cf1.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "quiet",
+        "district": "spire"
+      },
+      "art": {
+        "src": "/art/edda-archive.jpg",
+        "small": "/art/edda-archive-small.jpg",
+        "caption": "Helion \u00b7 Edda keeps her own terms",
+        "description": "Edda sits at the service archive desk, one hand on a closed worn ledger and the other holding blank folded paper. No identifying record, signature or authenticated outcome is displayed."
+      },
+      "portrait": "/art/edda-scrutiny.jpg",
+      "clips": [
+        {
+          "key": "c101cb44e9dcbc8c",
+          "id": "voice-campaign-edda-4c4a033f7b14",
+          "scene": "act2_archive_custody",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "They can find my shift from this. Taking my name off the public copy won't hide it from my employer.",
+          "text": "They can find my shift from this. Taking my name off the public copy won't hide it from my employer.",
+          "part": 0,
+          "sourceGain": 0.66911382,
+          "path": "public/audio/voice-campaign-edda-4c4a033f7b14.mp3",
+          "sha256": "95f302b8fae710481fe3cc461bb089d6468d4038316f775541416e954d08e3f2",
+          "startSeconds": 0.0,
+          "durationSeconds": 6.874666666666666
+        },
+        {
+          "key": "9b7df92b1cc2b555",
+          "id": "voice-campaign-edda-d4b034abcf9f",
+          "scene": "act2_archive_custody",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "Keep the original with Sera,",
+          "text": "Keep the original with Sera,",
+          "part": 0,
+          "sourceGain": 0.66834392,
+          "path": "public/audio/voice-campaign-edda-d4b034abcf9f.mp3",
+          "sha256": "94d6f506916aab224748e7213dd4a874f376d1f9053a609fa52ae27c68e90e78",
+          "startSeconds": 6.994666666666666,
+          "durationSeconds": 1.9306666666666668
+        },
+        {
+          "key": "0a82dcd63a373be1",
+          "id": "voice-edda-source-custody",
+          "scene": "act2_archive_custody",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "Ask before you put my name on a public copy.",
+          "text": "Ask before you put my name on a public copy.",
+          "part": 0,
+          "sourceGain": 0.52239619,
+          "path": "public/audio/voice-edda-source-custody.wav",
+          "sha256": "95191e9b7d03b2cc6c3a46ae33170f68fb528065e8f67abd8b0f773b834b967f",
+          "startSeconds": 9.045333333333334,
+          "durationSeconds": 2.997333333333333
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-7864742e6cf1",
+          "key": "58d7c1ece64fb3fb",
+          "scene": "act2_archive_custody",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "You asked me to sign, and I did. Let that stay something I chose, not something you won from me.",
+          "text": "You asked me to sign, and I did. Let that stay something I chose, not something you won from me.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-7864742e6cf1.mp3",
+          "sha256": "54b43f3fbbeb148861e8c90cfcdd55367595df155f6df5ffbe159082fe0b8b46",
+          "startSeconds": 12.162666666666667,
+          "durationSeconds": 6.636
+        }
+      ],
+      "startSeconds": 181.42704166666667,
+      "durationSeconds": 18.798666666666666,
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-spire.flac",
+      "ambienceSha256": "c591122dbc8dd9df3af27778415959b4b325326fe1ba0caf21d1ce861a3b2eff",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/013-face-act2_archive_custody.wav",
+      "masterSha256": "543b9c81ca1293ddfb5531132729424fcba622420b8ad674a77aa767924174f2",
+      "peak": 0.23375742137432098,
+      "voiceRms": 0.03832719847559929,
+      "bedRms": 0.0016720914281904697
+    },
+    {
+      "route": "face",
+      "step": 59,
+      "scene": "act3_payoff_edda",
+      "text": "Edda sets your question beside the retrieved movement account. She puts her finger below its last line, where the issuing hand is still unverified. Then she lifts the cup out of the way.\n\n\"The tea will be cold. Sit down anyway.\"\n\nHer cup leaves a pale ring on the table. The rain goes on.",
+      "choice": "payoff-keep-edda",
+      "lines": [
+        {
+          "key": "aeaf73248cbd7157",
+          "id": "voice-campaign-emotional-payoff-a8c4c936daad",
+          "scene": "act3_payoff_edda",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "The tea will be cold. Sit down anyway.",
+          "text": "The tea will be cold. Sit down anyway.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-emotional-payoff-a8c4c936daad.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "quiet",
+        "district": "ward"
+      },
+      "art": {
+        "src": "/art/correction-bench.jpg",
+        "small": "/art/correction-bench-small.jpg",
+        "caption": "Ward Nine \u00b7 a place beside the work",
+        "description": "Blank sheets and a closed unmarked sleeve lie in separate trays at a rain-lit workbench. They depict no retrieved source, authenticated key, submitted finding or restored shift."
+      },
+      "portrait": "/art/edda.jpg",
+      "clips": [
+        {
+          "key": "aeaf73248cbd7157",
+          "id": "voice-campaign-emotional-payoff-a8c4c936daad",
+          "scene": "act3_payoff_edda",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "The tea will be cold. Sit down anyway.",
+          "text": "The tea will be cold. Sit down anyway.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-emotional-payoff-a8c4c936daad.mp3",
+          "sha256": "ecb6ae5d673450cbe327e9f34158dd8dc8b5eca1638b5fe29148ce3776cc00fc",
+          "startSeconds": 0.0,
+          "durationSeconds": 2.970666666666667
+        }
+      ],
+      "startSeconds": 201.22570833333333,
+      "durationSeconds": 2.970666666666667,
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-ward.flac",
+      "ambienceSha256": "a3cb998a109b169e7da44fd4f6f1f9299b01a8fe477d04ec681a0bad425c75e6",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/014-face-act3_payoff_edda.wav",
+      "masterSha256": "37fecce9d19d543643f8a04b3f54ec5f06b8a30092d95b9cbdbfbdeb0f8c0e0e",
+      "peak": 0.1879473626613617,
+      "voiceRms": 0.03220754116773605,
+      "bedRms": 0.0019737761467695236
+    },
+    {
+      "route": "face",
+      "step": 63,
+      "scene": "act3_edda_visit",
+      "text": "Edda's next shift has been suspended pending a records review. The source still stands; publishing or signing it left a person the tower could question.\n\n'A review isn't a dismissal. If you can bridge the suspended shift, do. Keep the original available either way.'\n\nEdda leaves the signed request where both of you can see it. \"I am still here. Ask me what I need, rather than deciding what my signature was worth.\"",
+      "choice": "respect-edda-source",
+      "lines": [
+        {
+          "key": "0e9540be940ead25",
+          "id": "voice-campaign-edda-fcdc71e74fea",
+          "scene": "act3_edda_visit",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "A review isn't a dismissal. If you can bridge the suspended shift, do. Keep the original available either way.",
+          "text": "A review isn't a dismissal. If you can bridge the suspended shift, do. Keep the original available either way.",
+          "part": 0,
+          "sourceGain": 0.70469307,
+          "path": "public/audio/voice-campaign-edda-fcdc71e74fea.mp3"
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-1658a251f1cf",
+          "key": "6ab2adfed5292c8a",
+          "scene": "act3_edda_visit",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "I am still here. Ask me what I need, rather than deciding what my signature was worth.",
+          "text": "I am still here. Ask me what I need, rather than deciding what my signature was worth.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-1658a251f1cf.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "ward",
+        "district": "ward"
+      },
+      "art": {
+        "src": "/art/archive-held-original.jpg",
+        "small": "/art/archive-held-original-small.jpg",
+        "caption": "Ward Nine \u00b7 the original stays separate",
+        "description": "A closed source ledger rests in a dark protective sleeve on the records table, apart from a folded paper copy; a pencil lies between them. No legible identity, authenticated seal or review verdict is displayed."
+      },
+      "portrait": "/art/edda.jpg",
+      "clips": [
+        {
+          "key": "0e9540be940ead25",
+          "id": "voice-campaign-edda-fcdc71e74fea",
+          "scene": "act3_edda_visit",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "A review isn't a dismissal. If you can bridge the suspended shift, do. Keep the original available either way.",
+          "text": "A review isn't a dismissal. If you can bridge the suspended shift, do. Keep the original available either way.",
+          "part": 0,
+          "sourceGain": 0.70469307,
+          "path": "public/audio/voice-campaign-edda-fcdc71e74fea.mp3",
+          "sha256": "40180169f98e102090d3b55ee3f84f6dcad5edcfac459ebc7da1fa3529548f5c",
+          "startSeconds": 0.0,
+          "durationSeconds": 7.268
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-1658a251f1cf",
+          "key": "6ab2adfed5292c8a",
+          "scene": "act3_edda_visit",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "I am still here. Ask me what I need, rather than deciding what my signature was worth.",
+          "text": "I am still here. Ask me what I need, rather than deciding what my signature was worth.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-1658a251f1cf.mp3",
+          "sha256": "4d8811053d10b840c969cabcad5ea435c154960db5d068453b44ad22815e2ca2",
+          "startSeconds": 7.388,
+          "durationSeconds": 5.69
+        }
+      ],
+      "startSeconds": 205.196375,
+      "durationSeconds": 13.078,
+      "musicPath": "public/audio/theme-ward.flac",
+      "musicSha256": "46e9fd33430a61b4a36645c45fcd88bbc616e57e4643cb2e61aaacc0b62cfc39",
+      "ambiencePath": "public/audio/ambience-ward.flac",
+      "ambienceSha256": "a3cb998a109b169e7da44fd4f6f1f9299b01a8fe477d04ec681a0bad425c75e6",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/015-face-act3_edda_visit.wav",
+      "masterSha256": "119e92f12b8bc084de57580045db78249eebe3cd65229f1ea56ae2c79cb41744",
+      "peak": 0.24077728390693665,
+      "voiceRms": 0.03774808347225189,
+      "bedRms": 0.002950501162558794
+    },
+    {
+      "route": "badge-scarce",
+      "step": 4,
+      "scene": "stall",
+      "text": "Quill moves his bowl aside. \"Low Reserve. Mara Voss, Helion logistics. Glass Chapel edits her memory at dawn. Bring me the original hour, intact. Fifty now, two hundred on delivery. Her bodyguard is Kerr. He is paid to stop you.\"\n\nYou came for enough money to keep tomorrow yours. You want the terms before the promises. He knows the tab. He does not mention it, which is how Quill mentions things.\n\nThe stallholder\u2019s story stays with you. Whose hour are you being asked to carry? Quill has not touched his dinner. You have not agreed to the job.\n\nQuill turns the untouched bowl away from the edge. \"Do not give me an easy yes. I need you to come back with the hour.\"",
+      "choice": "ask-pay",
+      "lines": [
+        {
+          "key": "9dcfc8554bfcc3ef",
+          "id": "voice-quill-offer",
+          "scene": "stall",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "Mara Voss, Helion logistics. Glass Chapel edits her memory at dawn. Bring me the original hour, intact. Fifty now, two hundred on delivery. Her bodyguard is Kerr. He is paid to stop you.",
+          "text": "Mara Voss, Helion logistics. Glass Chapel edits her memory at dawn. Bring me the original hour, intact.",
+          "part": 0,
+          "suffix": true,
+          "sourceGain": 0.66450767,
+          "path": "public/audio/voice-quill-offer.wav"
+        },
+        {
+          "key": "f179af9169c4b07f",
+          "id": "voice-campaign-quill-3b5fe2def65d",
+          "scene": "stall",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "Mara Voss, Helion logistics. Glass Chapel edits her memory at dawn. Bring me the original hour, intact. Fifty now, two hundred on delivery. Her bodyguard is Kerr. He is paid to stop you.",
+          "text": "Fifty now, two hundred on delivery. Her bodyguard is Kerr. He is paid to stop you.",
+          "part": 1,
+          "suffix": true,
+          "sourceGain": 0.86000307,
+          "path": "public/audio/voice-campaign-quill-3b5fe2def65d.mp3"
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-dceb613b987f",
+          "key": "0259d5fac694b830",
+          "scene": "stall",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "Do not give me an easy yes. I need you to come back with the hour.",
+          "text": "Do not give me an easy yes. I need you to come back with the hour.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-dceb613b987f.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "street",
+        "district": "stall"
+      },
+      "art": {
+        "src": "/art/quill-offer.jpg",
+        "small": "/art/quill-offer-small.jpg",
+        "caption": "Ward Four \u00b7 an offer, unanswered",
+        "description": "Quill waits beside an untouched bowl at an amber-lit stall counter while rain falls beyond the awning."
+      },
+      "portrait": "/art/quill.jpg",
+      "clips": [
+        {
+          "key": "9dcfc8554bfcc3ef",
+          "id": "voice-quill-offer",
+          "scene": "stall",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "Mara Voss, Helion logistics. Glass Chapel edits her memory at dawn. Bring me the original hour, intact. Fifty now, two hundred on delivery. Her bodyguard is Kerr. He is paid to stop you.",
+          "text": "Mara Voss, Helion logistics. Glass Chapel edits her memory at dawn. Bring me the original hour, intact.",
+          "part": 0,
+          "suffix": true,
+          "sourceGain": 0.66450767,
+          "path": "public/audio/voice-quill-offer.wav",
+          "sha256": "d2709b67a0efdffdeba15544aec34bccec9eab44e830ae5438f864acce0b721f",
+          "startSeconds": 0.0,
+          "durationSeconds": 8.996
+        },
+        {
+          "key": "f179af9169c4b07f",
+          "id": "voice-campaign-quill-3b5fe2def65d",
+          "scene": "stall",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "Mara Voss, Helion logistics. Glass Chapel edits her memory at dawn. Bring me the original hour, intact. Fifty now, two hundred on delivery. Her bodyguard is Kerr. He is paid to stop you.",
+          "text": "Fifty now, two hundred on delivery. Her bodyguard is Kerr. He is paid to stop you.",
+          "part": 1,
+          "suffix": true,
+          "sourceGain": 0.86000307,
+          "path": "public/audio/voice-campaign-quill-3b5fe2def65d.mp3",
+          "sha256": "8219b83b69a0f1315032bffb9b71a9028e8be005746d31137fde46aa16641148",
+          "startSeconds": 9.116,
+          "durationSeconds": 7.018666666666666
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-dceb613b987f",
+          "key": "0259d5fac694b830",
+          "scene": "stall",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "Do not give me an easy yes. I need you to come back with the hour.",
+          "text": "Do not give me an easy yes. I need you to come back with the hour.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-dceb613b987f.mp3",
+          "sha256": "fa122b800d46a8dd180a708ae740957833a69da670d5731912f69cb9033d24a2",
+          "startSeconds": 16.254666666666665,
+          "durationSeconds": 5.032
+        }
+      ],
+      "startSeconds": 219.274375,
+      "durationSeconds": 21.286666666666665,
+      "musicPath": "public/audio/theme.flac",
+      "musicSha256": "6f0f263197943165f9c164454fdad99410b912b3cb890951768eeffed456ff62",
+      "ambiencePath": "public/audio/ambience-stall.flac",
+      "ambienceSha256": "f09d109ea3684058422c311f464a49708b17842dad4b00d44d19a5cf53a309bf",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/016-badge-scarce-stall.wav",
+      "masterSha256": "407bd49b191f552d1ba9cad967562a5e7990d23bff03a9b5312957da72adac3c",
+      "peak": 0.32039234042167664,
+      "voiceRms": 0.036239758133888245,
+      "bedRms": 0.0028512191493064165
+    },
+    {
+      "route": "badge-scarce",
+      "step": 5,
+      "scene": "pay",
+      "text": "\"Fifty now. Two hundred when the shard is in my hand and not wandering around in your bloodstream. Kerr is her shadow. Kerr is why the number is not prettier.\"\n\nHe keeps his chip on his side of the counter. \"The advance has to get you through the door. Ask for more if that is what the work needs.\"\n\nYou can risk the existing Face check for a larger advance, or leave the number alone. No advance transfers until you take the job.",
+      "choice": "haggle",
+      "lines": [
+        {
+          "key": "a8027305bab28bc5",
+          "id": "voice-quill-pay",
+          "scene": "pay",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "Fifty now. Two hundred when the shard is in my hand and not wandering around in your bloodstream. Kerr is her shadow. Kerr is why the number is not prettier.",
+          "text": "Fifty now. Two hundred when the shard is in my hand and not wandering around in your bloodstream. Kerr is her shadow. Kerr is why the number is not prettier.",
+          "part": 0,
+          "sourceGain": 0.89536477,
+          "path": "public/audio/voice-quill-pay.wav"
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-0f19f0d22108",
+          "key": "90f38d80b9bb73ec",
+          "scene": "pay",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "The advance has to get you through the door. Ask for more if that is what the work needs.",
+          "text": "The advance has to get you through the door. Ask for more if that is what the work needs.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-0f19f0d22108.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "street",
+        "district": "stall"
+      },
+      "art": {
+        "src": "/art/quill-offer.jpg",
+        "small": "/art/quill-offer-small.jpg",
+        "caption": "Ward Four \u00b7 an offer, unanswered",
+        "description": "Quill waits beside an untouched bowl at an amber-lit stall counter while rain falls beyond the awning."
+      },
+      "portrait": "/art/quill.jpg",
+      "clips": [
+        {
+          "key": "a8027305bab28bc5",
+          "id": "voice-quill-pay",
+          "scene": "pay",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "Fifty now. Two hundred when the shard is in my hand and not wandering around in your bloodstream. Kerr is her shadow. Kerr is why the number is not prettier.",
+          "text": "Fifty now. Two hundred when the shard is in my hand and not wandering around in your bloodstream. Kerr is her shadow. Kerr is why the number is not prettier.",
+          "part": 0,
+          "sourceGain": 0.89536477,
+          "path": "public/audio/voice-quill-pay.wav",
+          "sha256": "e9620a09386bd0fd122d408c6d6c978624c1cfb95af945d40f9a9f4d9d41767d",
+          "startSeconds": 0.0,
+          "durationSeconds": 10.826666666666666
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-0f19f0d22108",
+          "key": "90f38d80b9bb73ec",
+          "scene": "pay",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "The advance has to get you through the door. Ask for more if that is what the work needs.",
+          "text": "The advance has to get you through the door. Ask for more if that is what the work needs.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-0f19f0d22108.mp3",
+          "sha256": "9ef91740018a77ed86dc8126114f398d9c1e63b9ac576df102da38bf499a290f",
+          "startSeconds": 10.946666666666667,
+          "durationSeconds": 5.926
+        }
+      ],
+      "startSeconds": 241.56104166666665,
+      "durationSeconds": 16.872666666666667,
+      "musicPath": "public/audio/theme.flac",
+      "musicSha256": "6f0f263197943165f9c164454fdad99410b912b3cb890951768eeffed456ff62",
+      "ambiencePath": "public/audio/ambience-stall.flac",
+      "ambienceSha256": "f09d109ea3684058422c311f464a49708b17842dad4b00d44d19a5cf53a309bf",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/017-badge-scarce-pay.wav",
+      "masterSha256": "3c605cdd98c81ef43cf869087895795378e5d6e24be35cefec4cc46a7d5b3c6a",
+      "peak": 0.32236137986183167,
+      "voiceRms": 0.0389740914106369,
+      "bedRms": 0.0027942503802478313
+    },
+    {
+      "route": "badge-scarce",
+      "step": 6,
+      "scene": "pay_no",
+      "text": "Quill leaves the chip where it was. The failed negotiation stays in the record.\n\n\"Fifty. That is the offer I can make. You can leave the number there without pretending you like it.\"\n\nThe advance remains fifty, payable only on acceptance. Two hundred remains due on delivery of the intact hour. You can return to the offer without another negotiation.",
+      "choice": "sit-with-it",
+      "lines": [
+        {
+          "id": "voice-campaign-dramatic-beats-11d2890d6c98",
+          "key": "be7a46852bfb907e",
+          "scene": "pay_no",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "Fifty. That is the offer I can make. You can leave the number there without pretending you like it.",
+          "text": "Fifty. That is the offer I can make. You can leave the number there without pretending you like it.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-11d2890d6c98.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "street",
+        "district": "stall"
+      },
+      "art": {
+        "src": "/art/market-counter.jpg",
+        "small": "/art/market-counter-small.jpg",
+        "caption": "Kite City \u00b7 the sheltered counter",
+        "description": "Steam rises from an unattended copper noodle pot beneath a patched market awning, beside a damp menu and two empty counter seats."
+      },
+      "portrait": "/art/quill.jpg",
+      "clips": [
+        {
+          "id": "voice-campaign-dramatic-beats-11d2890d6c98",
+          "key": "be7a46852bfb907e",
+          "scene": "pay_no",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "Fifty. That is the offer I can make. You can leave the number there without pretending you like it.",
+          "text": "Fifty. That is the offer I can make. You can leave the number there without pretending you like it.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-11d2890d6c98.mp3",
+          "sha256": "d9897230f16ea9c02a82e5272d4c490f8dea5b79ebcb5ed756d8d09b5ed89ff8",
+          "startSeconds": 0.0,
+          "durationSeconds": 6.278625
+        }
+      ],
+      "startSeconds": 259.43370833333336,
+      "durationSeconds": 6.278625,
+      "musicPath": "public/audio/theme.flac",
+      "musicSha256": "6f0f263197943165f9c164454fdad99410b912b3cb890951768eeffed456ff62",
+      "ambiencePath": "public/audio/ambience-stall.flac",
+      "ambienceSha256": "f09d109ea3684058422c311f464a49708b17842dad4b00d44d19a5cf53a309bf",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/018-badge-scarce-pay_no.wav",
+      "masterSha256": "bbfdabbc5f0b9b359d595945888f28b02cbdddc481b8a19b0ea7144afeb15efd",
+      "peak": 0.35219132900238037,
+      "voiceRms": 0.04056091606616974,
+      "bedRms": 0.0031828167848289013
+    },
+    {
+      "route": "badge-scarce",
+      "step": 7,
+      "scene": "stall",
+      "text": "Quill turns the untouched bowl between his hands. \"Fifty now. Two hundred for the intact shard. Before dawn. Those are the terms.\"\n\nHe has already refused you once. The bowl is still untouched.\n\nThe stallholder lifts another nest of noodles from the pot. Quill waits for your answer.",
+      "choice": "accept",
+      "lines": [
+        {
+          "key": "6c69777a5189b31b",
+          "id": "voice-campaign-quill-45259fa18cc2",
+          "scene": "stall",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "Fifty now. Two hundred for the intact shard. Before dawn. Those are the terms.",
+          "text": "Fifty now. Two hundred for the intact shard. Before dawn. Those are the terms.",
+          "part": 0,
+          "sourceGain": 0.90260971,
+          "path": "public/audio/voice-campaign-quill-45259fa18cc2.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "street",
+        "district": "stall"
+      },
+      "art": {
+        "src": "/art/quill-offer.jpg",
+        "small": "/art/quill-offer-small.jpg",
+        "caption": "Ward Four \u00b7 an offer, unanswered",
+        "description": "Quill waits beside an untouched bowl at an amber-lit stall counter while rain falls beyond the awning."
+      },
+      "portrait": "/art/quill.jpg",
+      "clips": [
+        {
+          "key": "6c69777a5189b31b",
+          "id": "voice-campaign-quill-45259fa18cc2",
+          "scene": "stall",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "Fifty now. Two hundred for the intact shard. Before dawn. Those are the terms.",
+          "text": "Fifty now. Two hundred for the intact shard. Before dawn. Those are the terms.",
+          "part": 0,
+          "sourceGain": 0.90260971,
+          "path": "public/audio/voice-campaign-quill-45259fa18cc2.mp3",
+          "sha256": "24b269b294ce26d4ab900862ca00be5be9e2478d16edb3067570e1d6019ee58d",
+          "startSeconds": 0.0,
+          "durationSeconds": 7.311333333333334
+        }
+      ],
+      "startSeconds": 266.71233333333333,
+      "durationSeconds": 7.311333333333334,
+      "musicPath": "public/audio/theme.flac",
+      "musicSha256": "6f0f263197943165f9c164454fdad99410b912b3cb890951768eeffed456ff62",
+      "ambiencePath": "public/audio/ambience-stall.flac",
+      "ambienceSha256": "f09d109ea3684058422c311f464a49708b17842dad4b00d44d19a5cf53a309bf",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/019-badge-scarce-stall.wav",
+      "masterSha256": "1e0d44e546d5df79b56ee8ff4d0679ee7984cc48af39d540c5f5e76be5da781c",
+      "peak": 0.30211445689201355,
+      "voiceRms": 0.034072790294885635,
+      "bedRms": 0.0030469174962490797
+    },
+    {
+      "route": "badge-scarce",
+      "step": 8,
+      "scene": "route",
+      "text": "Fifty is on your chip. The rest of the city will try to take it. You tell Quill you need tomorrow paid for. \"Then do not spend your whole advance on my pass,\" he says. \"There are other doors.\"\n\n\"Three ways in. The front sells forgiveness to anyone with an appointment. The hatch behind the incinerator is for people who still sweat. The choir door runs on an old Helion pad. I would not kiss it.\"\n\nThe penitent pass is a hundred. It scans often enough. Glass Chapel is three streets over. You leave the steam of the stall for its white light.",
+      "choice": "side",
+      "lines": [
+        {
+          "key": "4c5c7681e81bef57",
+          "id": "voice-campaign-quill-3be212ca911c",
+          "scene": "route",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "Then do not spend your whole advance on my pass,",
+          "text": "Then do not spend your whole advance on my pass,",
+          "part": 0,
+          "sourceGain": 0.76913044,
+          "path": "public/audio/voice-campaign-quill-3be212ca911c.mp3"
+        },
+        {
+          "key": "7c5d58f501cceeb7",
+          "id": "voice-campaign-quill-c8cfa180c8e3",
+          "scene": "route",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "There are other doors.",
+          "text": "There are other doors.",
+          "part": 0,
+          "sourceGain": 0.60394863,
+          "path": "public/audio/voice-campaign-quill-c8cfa180c8e3.mp3"
+        },
+        {
+          "key": "e4c354d551ed74da",
+          "id": "voice-quill-route",
+          "scene": "route",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "Three ways in. The front sells forgiveness to anyone with an appointment. The hatch behind the incinerator is for people who still sweat. The choir door runs on an old Helion pad. I would not kiss it.",
+          "text": "Three ways in. The front sells forgiveness to anyone with an appointment. The hatch behind the incinerator is for people who still sweat. The choir door runs on an old Helion pad. I would not kiss it.",
+          "part": 0,
+          "sourceGain": 1.16144861,
+          "path": "public/audio/voice-quill-route.wav"
+        }
+      ],
+      "sound": {
+        "mood": "street",
+        "district": "street"
+      },
+      "art": {
+        "src": "/art/market-counter.jpg",
+        "small": "/art/market-counter-small.jpg",
+        "caption": "Kite City \u00b7 the sheltered counter",
+        "description": "Steam rises from an unattended copper noodle pot beneath a patched market awning, beside a damp menu and two empty counter seats."
+      },
+      "portrait": "/art/quill.jpg",
+      "clips": [
+        {
+          "key": "4c5c7681e81bef57",
+          "id": "voice-campaign-quill-3be212ca911c",
+          "scene": "route",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "Then do not spend your whole advance on my pass,",
+          "text": "Then do not spend your whole advance on my pass,",
+          "part": 0,
+          "sourceGain": 0.76913044,
+          "path": "public/audio/voice-campaign-quill-3be212ca911c.mp3",
+          "sha256": "1170f255663d5b29e2790cda54825c4e7a7074437cb0a903118d5c1e9cc35be2",
+          "startSeconds": 0.0,
+          "durationSeconds": 3.296
+        },
+        {
+          "key": "7c5d58f501cceeb7",
+          "id": "voice-campaign-quill-c8cfa180c8e3",
+          "scene": "route",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "There are other doors.",
+          "text": "There are other doors.",
+          "part": 0,
+          "sourceGain": 0.60394863,
+          "path": "public/audio/voice-campaign-quill-c8cfa180c8e3.mp3",
+          "sha256": "a3708106786f1ee9d02ab51f9833fa30807d1a64352c0e074e3a1c93ac97e759",
+          "startSeconds": 3.416,
+          "durationSeconds": 1.7813333333333334
+        },
+        {
+          "key": "e4c354d551ed74da",
+          "id": "voice-quill-route",
+          "scene": "route",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "Three ways in. The front sells forgiveness to anyone with an appointment. The hatch behind the incinerator is for people who still sweat. The choir door runs on an old Helion pad. I would not kiss it.",
+          "text": "Three ways in. The front sells forgiveness to anyone with an appointment. The hatch behind the incinerator is for people who still sweat. The choir door runs on an old Helion pad. I would not kiss it.",
+          "part": 0,
+          "sourceGain": 1.16144861,
+          "path": "public/audio/voice-quill-route.wav",
+          "sha256": "1fae551c12bc1d2de0b5e7a95c3f6eee65ddc0171f2389f411bca243b794a434",
+          "startSeconds": 5.317333333333333,
+          "durationSeconds": 14.236666666666666
+        }
+      ],
+      "startSeconds": 275.02366666666666,
+      "durationSeconds": 19.554,
+      "musicPath": "public/audio/theme.flac",
+      "musicSha256": "6f0f263197943165f9c164454fdad99410b912b3cb890951768eeffed456ff62",
+      "ambiencePath": "public/audio/ambience-street.flac",
+      "ambienceSha256": "61b3bba5d867990b3cb85ef7317d49c3b0465eab2057d44d0a123b53e87cfe0d",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/020-badge-scarce-route.wav",
+      "masterSha256": "cf6196a76047a7fc929a7c9446f14130add2824b4bbbacfb18ede8977c8cbb9c",
+      "peak": 0.41610464453697205,
+      "voiceRms": 0.038706935942173004,
+      "bedRms": 0.0026593899819999933
+    },
+    {
+      "route": "badge-scarce",
+      "step": 42,
+      "scene": "act2_craft_archive",
+      "text": "Edda puts three headings on separate sheets. Nothing has been extracted from the archive.\n\n\"The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.\"\n\nInspect the export and both catalog descriptions at the desk. Reading and drafting are free; a submitted request has its own terms.\n\nEdda leaves a blank space beneath the request heading. \"I want this request to have an edge. Something I can finish, then put down when my shift ends.\"",
+      "choice": "craft-read-export",
+      "lines": [
+        {
+          "key": "5720ff8b686c7cfe",
+          "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3"
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-9919ec3d53bd",
+          "key": "555475ea08ddcc0f",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "text": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-9919ec3d53bd.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "quiet",
+        "district": "spire"
+      },
+      "art": {
+        "src": "/art/archive-desk.jpg",
+        "small": "/art/archive-desk-small.jpg",
+        "caption": "Helion \u00b7 a question before a query",
+        "description": "A closed maintenance ledger, a catalog beneath glass and a dim record reader sit under a brass task lamp before rows of steel drawers and a service shutter."
+      },
+      "portrait": "/art/edda.jpg",
+      "clips": [
+        {
+          "key": "5720ff8b686c7cfe",
+          "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3",
+          "sha256": "26825c2bc65fe72059a7ad4da468fffe47e9cd921d8fcb4ebdfe6d1ed04c872e",
+          "startSeconds": 0.0,
+          "durationSeconds": 8.358625
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-9919ec3d53bd",
+          "key": "555475ea08ddcc0f",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "text": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-9919ec3d53bd.mp3",
+          "sha256": "bfd3885acb869368fc833eca07ac21f859bcb835893feaf2bd00e6ae4594da46",
+          "startSeconds": 8.478625,
+          "durationSeconds": 6.3213333333333335
+        }
+      ],
+      "startSeconds": 295.5776666666667,
+      "durationSeconds": 14.799958333333333,
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-spire.flac",
+      "ambienceSha256": "c591122dbc8dd9df3af27778415959b4b325326fe1ba0caf21d1ce861a3b2eff",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/021-badge-scarce-act2_craft_archive.wav",
+      "masterSha256": "1f638697d387567157915c5978f22d1413d65fdab1ea8573fb3e41dc7b346600",
+      "peak": 0.2423134595155716,
+      "voiceRms": 0.038437869399785995,
+      "bedRms": 0.0016007908852770925
+    },
+    {
+      "route": "badge-scarce",
+      "step": 43,
+      "scene": "act2_craft_archive",
+      "text": "Edda puts three headings on separate sheets. Nothing has been extracted from the archive.\n\n\"The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.\"\n\nInspect the export and both catalog descriptions at the desk. Reading and drafting are free; a submitted request has its own terms.\n\nEdda leaves a blank space beneath the request heading. \"I want this request to have an edge. Something I can finish, then put down when my shift ends.\"",
+      "choice": "craft-read-plant",
+      "lines": [
+        {
+          "key": "5720ff8b686c7cfe",
+          "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3"
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-9919ec3d53bd",
+          "key": "555475ea08ddcc0f",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "text": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-9919ec3d53bd.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "quiet",
+        "district": "spire"
+      },
+      "art": {
+        "src": "/art/archive-desk.jpg",
+        "small": "/art/archive-desk-small.jpg",
+        "caption": "Helion \u00b7 a question before a query",
+        "description": "A closed maintenance ledger, a catalog beneath glass and a dim record reader sit under a brass task lamp before rows of steel drawers and a service shutter."
+      },
+      "portrait": "/art/edda.jpg",
+      "clips": [
+        {
+          "key": "5720ff8b686c7cfe",
+          "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3",
+          "sha256": "26825c2bc65fe72059a7ad4da468fffe47e9cd921d8fcb4ebdfe6d1ed04c872e",
+          "startSeconds": 0.0,
+          "durationSeconds": 8.358625
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-9919ec3d53bd",
+          "key": "555475ea08ddcc0f",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "text": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-9919ec3d53bd.mp3",
+          "sha256": "bfd3885acb869368fc833eca07ac21f859bcb835893feaf2bd00e6ae4594da46",
+          "startSeconds": 8.478625,
+          "durationSeconds": 6.3213333333333335
+        }
+      ],
+      "startSeconds": 311.377625,
+      "durationSeconds": 14.799958333333333,
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-spire.flac",
+      "ambienceSha256": "c591122dbc8dd9df3af27778415959b4b325326fe1ba0caf21d1ce861a3b2eff",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/022-badge-scarce-act2_craft_archive.wav",
+      "masterSha256": "1f638697d387567157915c5978f22d1413d65fdab1ea8573fb3e41dc7b346600",
+      "peak": 0.2423134595155716,
+      "voiceRms": 0.038437869399785995,
+      "bedRms": 0.0016007908852770925
+    },
+    {
+      "route": "badge-scarce",
+      "step": 44,
+      "scene": "act2_craft_archive",
+      "text": "Edda puts three headings on separate sheets. Nothing has been extracted from the archive.\n\n\"The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.\"\n\nInspect the export and both catalog descriptions at the desk. Reading and drafting are free; a submitted request has its own terms.\n\nEdda leaves a blank space beneath the request heading. \"I want this request to have an edge. Something I can finish, then put down when my shift ends.\"",
+      "choice": "craft-read-movement",
+      "lines": [
+        {
+          "key": "5720ff8b686c7cfe",
+          "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3"
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-9919ec3d53bd",
+          "key": "555475ea08ddcc0f",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "text": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-9919ec3d53bd.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "quiet",
+        "district": "spire"
+      },
+      "art": {
+        "src": "/art/archive-desk.jpg",
+        "small": "/art/archive-desk-small.jpg",
+        "caption": "Helion \u00b7 a question before a query",
+        "description": "A closed maintenance ledger, a catalog beneath glass and a dim record reader sit under a brass task lamp before rows of steel drawers and a service shutter."
+      },
+      "portrait": "/art/edda.jpg",
+      "clips": [
+        {
+          "key": "5720ff8b686c7cfe",
+          "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3",
+          "sha256": "26825c2bc65fe72059a7ad4da468fffe47e9cd921d8fcb4ebdfe6d1ed04c872e",
+          "startSeconds": 0.0,
+          "durationSeconds": 8.358625
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-9919ec3d53bd",
+          "key": "555475ea08ddcc0f",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "text": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-9919ec3d53bd.mp3",
+          "sha256": "bfd3885acb869368fc833eca07ac21f859bcb835893feaf2bd00e6ae4594da46",
+          "startSeconds": 8.478625,
+          "durationSeconds": 6.3213333333333335
+        }
+      ],
+      "startSeconds": 327.17758333333336,
+      "durationSeconds": 14.799958333333333,
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-spire.flac",
+      "ambienceSha256": "c591122dbc8dd9df3af27778415959b4b325326fe1ba0caf21d1ce861a3b2eff",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/023-badge-scarce-act2_craft_archive.wav",
+      "masterSha256": "1f638697d387567157915c5978f22d1413d65fdab1ea8573fb3e41dc7b346600",
+      "peak": 0.2423134595155716,
+      "voiceRms": 0.038437869399785995,
+      "bedRms": 0.0016007908852770925
+    },
+    {
+      "route": "badge-scarce",
+      "step": 45,
+      "scene": "act2_craft_archive",
+      "text": "Edda puts three headings on separate sheets. Nothing has been extracted from the archive.\n\n\"The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.\"\n\nThe coolant work can remain scheduled while the evacuation instruction changes. Decide which question to put to an actual source.\n\nEdda leaves a blank space beneath the request heading. \"I want this request to have an edge. Something I can finish, then put down when my shift ends.\"",
+      "choice": "craft-question-movement",
+      "lines": [
+        {
+          "key": "5720ff8b686c7cfe",
+          "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3"
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-9919ec3d53bd",
+          "key": "555475ea08ddcc0f",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "text": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-9919ec3d53bd.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "quiet",
+        "district": "spire"
+      },
+      "art": {
+        "src": "/art/archive-desk.jpg",
+        "small": "/art/archive-desk-small.jpg",
+        "caption": "Helion \u00b7 a question before a query",
+        "description": "A closed maintenance ledger, a catalog beneath glass and a dim record reader sit under a brass task lamp before rows of steel drawers and a service shutter."
+      },
+      "portrait": "/art/edda.jpg",
+      "clips": [
+        {
+          "key": "5720ff8b686c7cfe",
+          "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3",
+          "sha256": "26825c2bc65fe72059a7ad4da468fffe47e9cd921d8fcb4ebdfe6d1ed04c872e",
+          "startSeconds": 0.0,
+          "durationSeconds": 8.358625
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-9919ec3d53bd",
+          "key": "555475ea08ddcc0f",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "text": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-9919ec3d53bd.mp3",
+          "sha256": "bfd3885acb869368fc833eca07ac21f859bcb835893feaf2bd00e6ae4594da46",
+          "startSeconds": 8.478625,
+          "durationSeconds": 6.3213333333333335
+        }
+      ],
+      "startSeconds": 342.97754166666664,
+      "durationSeconds": 14.799958333333333,
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-spire.flac",
+      "ambienceSha256": "c591122dbc8dd9df3af27778415959b4b325326fe1ba0caf21d1ce861a3b2eff",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/024-badge-scarce-act2_craft_archive.wav",
+      "masterSha256": "1f638697d387567157915c5978f22d1413d65fdab1ea8573fb3e41dc7b346600",
+      "peak": 0.2423134595155716,
+      "voiceRms": 0.038437869399785995,
+      "bedRms": 0.0016007908852770925
+    },
+    {
+      "route": "badge-scarce",
+      "step": 46,
+      "scene": "act2_craft_archive_ledger",
+      "text": "Edda lays a narrow request form over the movement locator. The worker roster does not go on it.\n\nEdda smooths the request form once. Her hand stops above the signature line.\n\n\"A fee, an old number, a signature. Each leaves someone carrying this request. I want to know which part you are asking me to carry.\"\n\nShe can help carry this bounded record. The families stay out of the request.\n\nA staffed movement-page extraction costs twenty-five creds and logs a query. A Spire employee can bill it to the old badge, adding its trace. Earned Face training lets you ask Edda for a bounded countersignature instead: she agrees to this extraction, and her employer can identify her signed shift. None of these methods tests an issuing key.",
+      "choice": "craft-extract-badge",
+      "lines": [
+        {
+          "id": "voice-campaign-dramatic-beats-ebb05f183613",
+          "key": "5ce258ce05cf6abc",
+          "scene": "act2_craft_archive_ledger",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "A fee, an old number, a signature. Each leaves someone carrying this request. I want to know which part you are asking me to carry.",
+          "text": "A fee, an old number, a signature. Each leaves someone carrying this request. I want to know which part you are asking me to carry.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-ebb05f183613.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "quiet",
+        "district": "spire"
+      },
+      "art": {
+        "src": "/art/edda-archive.jpg",
+        "small": "/art/edda-archive-small.jpg",
+        "caption": "Helion \u00b7 Edda keeps the request bounded",
+        "description": "Edda sits at the service archive desk, one hand on a closed worn ledger and the other holding blank folded paper. No identifying record, signature or authenticated outcome is displayed."
+      },
+      "portrait": "/art/edda.jpg",
+      "clips": [
+        {
+          "id": "voice-campaign-dramatic-beats-ebb05f183613",
+          "key": "5ce258ce05cf6abc",
+          "scene": "act2_craft_archive_ledger",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "A fee, an old number, a signature. Each leaves someone carrying this request. I want to know which part you are asking me to carry.",
+          "text": "A fee, an old number, a signature. Each leaves someone carrying this request. I want to know which part you are asking me to carry.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-ebb05f183613.mp3",
+          "sha256": "f74cd28bba8e211a32e1e4e5ed6165104279b8f85a0bad7ce637d41814201eb1",
+          "startSeconds": 0.0,
+          "durationSeconds": 9.693291666666667
+        }
+      ],
+      "startSeconds": 358.7775,
+      "durationSeconds": 9.693291666666667,
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-spire.flac",
+      "ambienceSha256": "c591122dbc8dd9df3af27778415959b4b325326fe1ba0caf21d1ce861a3b2eff",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/025-badge-scarce-act2_craft_archive_ledger.wav",
+      "masterSha256": "81fd1c3bffcabf5c1b6e3805b1976080b39c04d0e54b9c4c28519aa3b0b7df05",
+      "peak": 0.25465819239616394,
+      "voiceRms": 0.035527944564819336,
+      "bedRms": 0.0016719746636226773
+    },
+    {
+      "route": "badge-scarce",
+      "step": 47,
+      "scene": "act2_archive_custody",
+      "text": "Edda points to the ledger reference. Her name can stay out of the public copy.\n\nThe ledger corroborates the cancellation; no reader authenticated its issuing key.\n\n\u2018Keep the original with Sera,\u2019 Edda says. \u2018Ask before you put my name on a public copy.\u2019\n\nEdda keeps the request beside the retrieved reference. \"You put your old number on it. I know what it costs to leave a number they still recognize.\"",
+      "choice": "withhold-technician",
+      "lines": [
+        {
+          "key": "9b7df92b1cc2b555",
+          "id": "voice-campaign-edda-d4b034abcf9f",
+          "scene": "act2_archive_custody",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "Keep the original with Sera,",
+          "text": "Keep the original with Sera,",
+          "part": 0,
+          "sourceGain": 0.66834392,
+          "path": "public/audio/voice-campaign-edda-d4b034abcf9f.mp3"
+        },
+        {
+          "key": "0a82dcd63a373be1",
+          "id": "voice-edda-source-custody",
+          "scene": "act2_archive_custody",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "Ask before you put my name on a public copy.",
+          "text": "Ask before you put my name on a public copy.",
+          "part": 0,
+          "sourceGain": 0.52239619,
+          "path": "public/audio/voice-edda-source-custody.wav"
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-cf3cf27dbc01",
+          "key": "f289c08b42f92e8c",
+          "scene": "act2_archive_custody",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "You put your old number on it. I know what it costs to leave a number they still recognize.",
+          "text": "You put your old number on it. I know what it costs to leave a number they still recognize.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-cf3cf27dbc01.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "quiet",
+        "district": "spire"
+      },
+      "art": {
+        "src": "/art/edda-archive.jpg",
+        "small": "/art/edda-archive-small.jpg",
+        "caption": "Helion \u00b7 Edda keeps her own terms",
+        "description": "Edda sits at the service archive desk, one hand on a closed worn ledger and the other holding blank folded paper. No identifying record, signature or authenticated outcome is displayed."
+      },
+      "portrait": "/art/edda-scrutiny.jpg",
+      "clips": [
+        {
+          "key": "9b7df92b1cc2b555",
+          "id": "voice-campaign-edda-d4b034abcf9f",
+          "scene": "act2_archive_custody",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "Keep the original with Sera,",
+          "text": "Keep the original with Sera,",
+          "part": 0,
+          "sourceGain": 0.66834392,
+          "path": "public/audio/voice-campaign-edda-d4b034abcf9f.mp3",
+          "sha256": "94d6f506916aab224748e7213dd4a874f376d1f9053a609fa52ae27c68e90e78",
+          "startSeconds": 0.0,
+          "durationSeconds": 1.9306666666666668
+        },
+        {
+          "key": "0a82dcd63a373be1",
+          "id": "voice-edda-source-custody",
+          "scene": "act2_archive_custody",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "Ask before you put my name on a public copy.",
+          "text": "Ask before you put my name on a public copy.",
+          "part": 0,
+          "sourceGain": 0.52239619,
+          "path": "public/audio/voice-edda-source-custody.wav",
+          "sha256": "95191e9b7d03b2cc6c3a46ae33170f68fb528065e8f67abd8b0f773b834b967f",
+          "startSeconds": 2.050666666666667,
+          "durationSeconds": 2.997333333333333
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-cf3cf27dbc01",
+          "key": "f289c08b42f92e8c",
+          "scene": "act2_archive_custody",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "You put your old number on it. I know what it costs to leave a number they still recognize.",
+          "text": "You put your old number on it. I know what it costs to leave a number they still recognize.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-cf3cf27dbc01.mp3",
+          "sha256": "b9566c423abbf467fd425480a29207484cd4574f5371034dcaa40dc4e6010e95",
+          "startSeconds": 5.168,
+          "durationSeconds": 5.559333333333333
+        }
+      ],
+      "startSeconds": 369.4707916666667,
+      "durationSeconds": 10.727333333333334,
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-spire.flac",
+      "ambienceSha256": "c591122dbc8dd9df3af27778415959b4b325326fe1ba0caf21d1ce861a3b2eff",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/026-badge-scarce-act2_archive_custody.wav",
+      "masterSha256": "881b22a2fd8a8573357af67035d53c3c194db2b3a40acd6de2cd92976b138ebe",
+      "peak": 0.2375551015138626,
+      "voiceRms": 0.037071343511343,
+      "bedRms": 0.0016659903340041637
+    },
+    {
+      "route": "badge-scarce",
+      "step": 54,
+      "scene": "act3_payoff_edda",
+      "text": "Edda sets your question beside the retrieved movement account. She puts her finger below its last line, where the issuing hand is still unverified. Then she lifts the cup out of the way.\n\n\"The tea will be cold. Sit down anyway.\"\n\nHer cup leaves a pale ring on the table. The rain goes on.",
+      "choice": "payoff-keep-edda",
+      "lines": [
+        {
+          "key": "aeaf73248cbd7157",
+          "id": "voice-campaign-emotional-payoff-a8c4c936daad",
+          "scene": "act3_payoff_edda",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "The tea will be cold. Sit down anyway.",
+          "text": "The tea will be cold. Sit down anyway.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-emotional-payoff-a8c4c936daad.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "quiet",
+        "district": "ward"
+      },
+      "art": {
+        "src": "/art/correction-bench.jpg",
+        "small": "/art/correction-bench-small.jpg",
+        "caption": "Ward Nine \u00b7 a place beside the work",
+        "description": "Blank sheets and a closed unmarked sleeve lie in separate trays at a rain-lit workbench. They depict no retrieved source, authenticated key, submitted finding or restored shift."
+      },
+      "portrait": "/art/edda.jpg",
+      "clips": [
+        {
+          "key": "aeaf73248cbd7157",
+          "id": "voice-campaign-emotional-payoff-a8c4c936daad",
+          "scene": "act3_payoff_edda",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "The tea will be cold. Sit down anyway.",
+          "text": "The tea will be cold. Sit down anyway.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-emotional-payoff-a8c4c936daad.mp3",
+          "sha256": "ecb6ae5d673450cbe327e9f34158dd8dc8b5eca1638b5fe29148ce3776cc00fc",
+          "startSeconds": 0.0,
+          "durationSeconds": 2.970666666666667
+        }
+      ],
+      "startSeconds": 381.198125,
+      "durationSeconds": 2.970666666666667,
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-ward.flac",
+      "ambienceSha256": "a3cb998a109b169e7da44fd4f6f1f9299b01a8fe477d04ec681a0bad425c75e6",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/027-badge-scarce-act3_payoff_edda.wav",
+      "masterSha256": "37fecce9d19d543643f8a04b3f54ec5f06b8a30092d95b9cbdbfbdeb0f8c0e0e",
+      "peak": 0.1879473626613617,
+      "voiceRms": 0.03220754116773605,
+      "bedRms": 0.0019737761467695236
+    },
+    {
+      "route": "paid",
+      "step": 42,
+      "scene": "act2_craft_archive",
+      "text": "Edda puts three headings on separate sheets. Nothing has been extracted from the archive.\n\n\"The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.\"\n\nInspect the export and both catalog descriptions at the desk. Reading and drafting are free; a submitted request has its own terms.\n\nEdda leaves a blank space beneath the request heading. \"I want this request to have an edge. Something I can finish, then put down when my shift ends.\"",
+      "choice": "craft-read-export",
+      "lines": [
+        {
+          "key": "5720ff8b686c7cfe",
+          "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3"
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-9919ec3d53bd",
+          "key": "555475ea08ddcc0f",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "text": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-9919ec3d53bd.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "quiet",
+        "district": "spire"
+      },
+      "art": {
+        "src": "/art/archive-desk.jpg",
+        "small": "/art/archive-desk-small.jpg",
+        "caption": "Helion \u00b7 a question before a query",
+        "description": "A closed maintenance ledger, a catalog beneath glass and a dim record reader sit under a brass task lamp before rows of steel drawers and a service shutter."
+      },
+      "portrait": "/art/edda.jpg",
+      "clips": [
+        {
+          "key": "5720ff8b686c7cfe",
+          "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3",
+          "sha256": "26825c2bc65fe72059a7ad4da468fffe47e9cd921d8fcb4ebdfe6d1ed04c872e",
+          "startSeconds": 0.0,
+          "durationSeconds": 8.358625
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-9919ec3d53bd",
+          "key": "555475ea08ddcc0f",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "text": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-9919ec3d53bd.mp3",
+          "sha256": "bfd3885acb869368fc833eca07ac21f859bcb835893feaf2bd00e6ae4594da46",
+          "startSeconds": 8.478625,
+          "durationSeconds": 6.3213333333333335
+        }
+      ],
+      "startSeconds": 385.16879166666666,
+      "durationSeconds": 14.799958333333333,
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-spire.flac",
+      "ambienceSha256": "c591122dbc8dd9df3af27778415959b4b325326fe1ba0caf21d1ce861a3b2eff",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/028-paid-act2_craft_archive.wav",
+      "masterSha256": "1f638697d387567157915c5978f22d1413d65fdab1ea8573fb3e41dc7b346600",
+      "peak": 0.2423134595155716,
+      "voiceRms": 0.038437869399785995,
+      "bedRms": 0.0016007908852770925
+    },
+    {
+      "route": "paid",
+      "step": 43,
+      "scene": "act2_craft_archive",
+      "text": "Edda puts three headings on separate sheets. Nothing has been extracted from the archive.\n\n\"The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.\"\n\nInspect the export and both catalog descriptions at the desk. Reading and drafting are free; a submitted request has its own terms.\n\nEdda leaves a blank space beneath the request heading. \"I want this request to have an edge. Something I can finish, then put down when my shift ends.\"",
+      "choice": "craft-read-plant",
+      "lines": [
+        {
+          "key": "5720ff8b686c7cfe",
+          "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3"
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-9919ec3d53bd",
+          "key": "555475ea08ddcc0f",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "text": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-9919ec3d53bd.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "quiet",
+        "district": "spire"
+      },
+      "art": {
+        "src": "/art/archive-desk.jpg",
+        "small": "/art/archive-desk-small.jpg",
+        "caption": "Helion \u00b7 a question before a query",
+        "description": "A closed maintenance ledger, a catalog beneath glass and a dim record reader sit under a brass task lamp before rows of steel drawers and a service shutter."
+      },
+      "portrait": "/art/edda.jpg",
+      "clips": [
+        {
+          "key": "5720ff8b686c7cfe",
+          "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3",
+          "sha256": "26825c2bc65fe72059a7ad4da468fffe47e9cd921d8fcb4ebdfe6d1ed04c872e",
+          "startSeconds": 0.0,
+          "durationSeconds": 8.358625
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-9919ec3d53bd",
+          "key": "555475ea08ddcc0f",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "text": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-9919ec3d53bd.mp3",
+          "sha256": "bfd3885acb869368fc833eca07ac21f859bcb835893feaf2bd00e6ae4594da46",
+          "startSeconds": 8.478625,
+          "durationSeconds": 6.3213333333333335
+        }
+      ],
+      "startSeconds": 400.96875,
+      "durationSeconds": 14.799958333333333,
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-spire.flac",
+      "ambienceSha256": "c591122dbc8dd9df3af27778415959b4b325326fe1ba0caf21d1ce861a3b2eff",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/029-paid-act2_craft_archive.wav",
+      "masterSha256": "1f638697d387567157915c5978f22d1413d65fdab1ea8573fb3e41dc7b346600",
+      "peak": 0.2423134595155716,
+      "voiceRms": 0.038437869399785995,
+      "bedRms": 0.0016007908852770925
+    },
+    {
+      "route": "paid",
+      "step": 44,
+      "scene": "act2_craft_archive",
+      "text": "Edda puts three headings on separate sheets. Nothing has been extracted from the archive.\n\n\"The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.\"\n\nInspect the export and both catalog descriptions at the desk. Reading and drafting are free; a submitted request has its own terms.\n\nEdda leaves a blank space beneath the request heading. \"I want this request to have an edge. Something I can finish, then put down when my shift ends.\"",
+      "choice": "craft-read-movement",
+      "lines": [
+        {
+          "key": "5720ff8b686c7cfe",
+          "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3"
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-9919ec3d53bd",
+          "key": "555475ea08ddcc0f",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "text": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-9919ec3d53bd.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "quiet",
+        "district": "spire"
+      },
+      "art": {
+        "src": "/art/archive-desk.jpg",
+        "small": "/art/archive-desk-small.jpg",
+        "caption": "Helion \u00b7 a question before a query",
+        "description": "A closed maintenance ledger, a catalog beneath glass and a dim record reader sit under a brass task lamp before rows of steel drawers and a service shutter."
+      },
+      "portrait": "/art/edda.jpg",
+      "clips": [
+        {
+          "key": "5720ff8b686c7cfe",
+          "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3",
+          "sha256": "26825c2bc65fe72059a7ad4da468fffe47e9cd921d8fcb4ebdfe6d1ed04c872e",
+          "startSeconds": 0.0,
+          "durationSeconds": 8.358625
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-9919ec3d53bd",
+          "key": "555475ea08ddcc0f",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "text": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-9919ec3d53bd.mp3",
+          "sha256": "bfd3885acb869368fc833eca07ac21f859bcb835893feaf2bd00e6ae4594da46",
+          "startSeconds": 8.478625,
+          "durationSeconds": 6.3213333333333335
+        }
+      ],
+      "startSeconds": 416.76870833333334,
+      "durationSeconds": 14.799958333333333,
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-spire.flac",
+      "ambienceSha256": "c591122dbc8dd9df3af27778415959b4b325326fe1ba0caf21d1ce861a3b2eff",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/030-paid-act2_craft_archive.wav",
+      "masterSha256": "1f638697d387567157915c5978f22d1413d65fdab1ea8573fb3e41dc7b346600",
+      "peak": 0.2423134595155716,
+      "voiceRms": 0.038437869399785995,
+      "bedRms": 0.0016007908852770925
+    },
+    {
+      "route": "paid",
+      "step": 45,
+      "scene": "act2_craft_archive",
+      "text": "Edda puts three headings on separate sheets. Nothing has been extracted from the archive.\n\n\"The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.\"\n\nThe coolant work can remain scheduled while the evacuation instruction changes. Decide which question to put to an actual source.\n\nEdda leaves a blank space beneath the request heading. \"I want this request to have an edge. Something I can finish, then put down when my shift ends.\"",
+      "choice": "craft-question-movement",
+      "lines": [
+        {
+          "key": "5720ff8b686c7cfe",
+          "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3"
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-9919ec3d53bd",
+          "key": "555475ea08ddcc0f",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "text": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-9919ec3d53bd.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "quiet",
+        "district": "spire"
+      },
+      "art": {
+        "src": "/art/archive-desk.jpg",
+        "small": "/art/archive-desk-small.jpg",
+        "caption": "Helion \u00b7 a question before a query",
+        "description": "A closed maintenance ledger, a catalog beneath glass and a dim record reader sit under a brass task lamp before rows of steel drawers and a service shutter."
+      },
+      "portrait": "/art/edda.jpg",
+      "clips": [
+        {
+          "key": "5720ff8b686c7cfe",
+          "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3",
+          "sha256": "26825c2bc65fe72059a7ad4da468fffe47e9cd921d8fcb4ebdfe6d1ed04c872e",
+          "startSeconds": 0.0,
+          "durationSeconds": 8.358625
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-9919ec3d53bd",
+          "key": "555475ea08ddcc0f",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "text": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-9919ec3d53bd.mp3",
+          "sha256": "bfd3885acb869368fc833eca07ac21f859bcb835893feaf2bd00e6ae4594da46",
+          "startSeconds": 8.478625,
+          "durationSeconds": 6.3213333333333335
+        }
+      ],
+      "startSeconds": 432.5686666666667,
+      "durationSeconds": 14.799958333333333,
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-spire.flac",
+      "ambienceSha256": "c591122dbc8dd9df3af27778415959b4b325326fe1ba0caf21d1ce861a3b2eff",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/031-paid-act2_craft_archive.wav",
+      "masterSha256": "1f638697d387567157915c5978f22d1413d65fdab1ea8573fb3e41dc7b346600",
+      "peak": 0.2423134595155716,
+      "voiceRms": 0.038437869399785995,
+      "bedRms": 0.0016007908852770925
+    },
+    {
+      "route": "paid",
+      "step": 46,
+      "scene": "act2_craft_archive_ledger",
+      "text": "Edda lays a narrow request form over the movement locator. The worker roster does not go on it.\n\nEdda smooths the request form once. Her hand stops above the signature line.\n\n\"A fee, an old number, a signature. Each leaves someone carrying this request. I want to know which part you are asking me to carry.\"\n\nShe can help carry this bounded record. The families stay out of the request.\n\nA staffed movement-page extraction costs twenty-five creds and logs a query. A Spire employee can bill it to the old badge, adding its trace. Earned Face training lets you ask Edda for a bounded countersignature instead: she agrees to this extraction, and her employer can identify her signed shift. None of these methods tests an issuing key.",
+      "choice": "craft-request-roster",
+      "lines": [
+        {
+          "id": "voice-campaign-dramatic-beats-ebb05f183613",
+          "key": "5ce258ce05cf6abc",
+          "scene": "act2_craft_archive_ledger",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "A fee, an old number, a signature. Each leaves someone carrying this request. I want to know which part you are asking me to carry.",
+          "text": "A fee, an old number, a signature. Each leaves someone carrying this request. I want to know which part you are asking me to carry.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-ebb05f183613.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "quiet",
+        "district": "spire"
+      },
+      "art": {
+        "src": "/art/edda-archive.jpg",
+        "small": "/art/edda-archive-small.jpg",
+        "caption": "Helion \u00b7 Edda keeps the request bounded",
+        "description": "Edda sits at the service archive desk, one hand on a closed worn ledger and the other holding blank folded paper. No identifying record, signature or authenticated outcome is displayed."
+      },
+      "portrait": "/art/edda.jpg",
+      "clips": [
+        {
+          "id": "voice-campaign-dramatic-beats-ebb05f183613",
+          "key": "5ce258ce05cf6abc",
+          "scene": "act2_craft_archive_ledger",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "A fee, an old number, a signature. Each leaves someone carrying this request. I want to know which part you are asking me to carry.",
+          "text": "A fee, an old number, a signature. Each leaves someone carrying this request. I want to know which part you are asking me to carry.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-ebb05f183613.mp3",
+          "sha256": "f74cd28bba8e211a32e1e4e5ed6165104279b8f85a0bad7ce637d41814201eb1",
+          "startSeconds": 0.0,
+          "durationSeconds": 9.693291666666667
+        }
+      ],
+      "startSeconds": 448.368625,
+      "durationSeconds": 9.693291666666667,
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-spire.flac",
+      "ambienceSha256": "c591122dbc8dd9df3af27778415959b4b325326fe1ba0caf21d1ce861a3b2eff",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/032-paid-act2_craft_archive_ledger.wav",
+      "masterSha256": "81fd1c3bffcabf5c1b6e3805b1976080b39c04d0e54b9c4c28519aa3b0b7df05",
+      "peak": 0.25465819239616394,
+      "voiceRms": 0.035527944564819336,
+      "bedRms": 0.0016719746636226773
+    },
+    {
+      "route": "paid",
+      "step": 47,
+      "scene": "act2_craft_archive_challenge",
+      "text": "Edda turns the headings toward you. The unsubmitted proposal stays beside them; she does not sign it.\n\n\"You have made one column answer for another. Look again. I am not asking you to believe me; I am asking you to read what is there.\"\n\nThe wrong inference or overbroad request stays in your draft history. Reading it again changes no source, fee or permission.",
+      "choice": "craft-revise-question",
+      "lines": [
+        {
+          "key": "9312207c096007bc",
+          "id": "voice-campaign-encounter-craft-570639a0f84d",
+          "scene": "act2_craft_archive_challenge",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "You have made one column answer for another. Look again. I am not asking you to believe me; I am asking you to read what is there.",
+          "text": "You have made one column answer for another. Look again. I am not asking you to believe me; I am asking you to read what is there.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/performance-direction-v1/voice-campaign-encounter-craft-570639a0f84d.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "quiet",
+        "district": "spire"
+      },
+      "art": {
+        "src": "/art/edda-archive.jpg",
+        "small": "/art/edda-archive-small.jpg",
+        "caption": "Helion \u00b7 Edda keeps the request bounded",
+        "description": "Edda sits at the service archive desk, one hand on a closed worn ledger and the other holding blank folded paper. No identifying record, signature or authenticated outcome is displayed."
+      },
+      "portrait": "/art/edda.jpg",
+      "clips": [
+        {
+          "key": "9312207c096007bc",
+          "id": "voice-campaign-encounter-craft-570639a0f84d",
+          "scene": "act2_craft_archive_challenge",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "You have made one column answer for another. Look again. I am not asking you to believe me; I am asking you to read what is there.",
+          "text": "You have made one column answer for another. Look again. I am not asking you to believe me; I am asking you to read what is there.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/performance-direction-v1/voice-campaign-encounter-craft-570639a0f84d.mp3",
+          "sha256": "74decc3a98680b010f12ece93f5fe4ce0df88386c74a6c8a845192d856835657",
+          "startSeconds": 0.0,
+          "durationSeconds": 8.776666666666667
+        }
+      ],
+      "startSeconds": 459.06191666666666,
+      "durationSeconds": 8.776666666666667,
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-spire.flac",
+      "ambienceSha256": "c591122dbc8dd9df3af27778415959b4b325326fe1ba0caf21d1ce861a3b2eff",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/033-paid-act2_craft_archive_challenge.wav",
+      "masterSha256": "53286eb68e455983e6b31daa118c69e9d6624580694ad2814b6276fc60e86203",
+      "peak": 0.23388010263442993,
+      "voiceRms": 0.037720780819654465,
+      "bedRms": 0.0016652729827910662
+    },
+    {
+      "route": "paid",
+      "step": 48,
+      "scene": "act2_craft_archive",
+      "text": "Edda puts three headings on separate sheets. Nothing has been extracted from the archive.\n\n\"The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.\"\n\nThe coolant work can remain scheduled while the evacuation instruction changes. Decide which question to put to an actual source.",
+      "choice": "craft-question-movement",
+      "lines": [
+        {
+          "key": "5720ff8b686c7cfe",
+          "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "quiet",
+        "district": "spire"
+      },
+      "art": {
+        "src": "/art/archive-desk.jpg",
+        "small": "/art/archive-desk-small.jpg",
+        "caption": "Helion \u00b7 a question before a query",
+        "description": "A closed maintenance ledger, a catalog beneath glass and a dim record reader sit under a brass task lamp before rows of steel drawers and a service shutter."
+      },
+      "portrait": "/art/edda.jpg",
+      "clips": [
+        {
+          "key": "5720ff8b686c7cfe",
+          "id": "voice-campaign-encounter-craft-ba69df93d8d5",
+          "scene": "act2_craft_archive",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "text": "The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-encounter-craft-ba69df93d8d5.mp3",
+          "sha256": "26825c2bc65fe72059a7ad4da468fffe47e9cd921d8fcb4ebdfe6d1ed04c872e",
+          "startSeconds": 0.0,
+          "durationSeconds": 8.358625
+        }
+      ],
+      "startSeconds": 468.83858333333336,
+      "durationSeconds": 8.358625,
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-spire.flac",
+      "ambienceSha256": "c591122dbc8dd9df3af27778415959b4b325326fe1ba0caf21d1ce861a3b2eff",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/034-paid-act2_craft_archive.wav",
+      "masterSha256": "d90c2df6a1d19fc72951204c6ca4411c0fd83713f2294563ee17b7d735695f87",
+      "peak": 0.23354963958263397,
+      "voiceRms": 0.038194138556718826,
+      "bedRms": 0.0016602607211098075
+    },
+    {
+      "route": "paid",
+      "step": 49,
+      "scene": "act2_craft_archive_ledger",
+      "text": "Edda lays a narrow request form over the movement locator. The worker roster does not go on it.\n\nEdda smooths the request form once. Her hand stops above the signature line.\n\n\"A fee, an old number, a signature. Each leaves someone carrying this request. I want to know which part you are asking me to carry.\"\n\nShe can help carry this bounded record. The families stay out of the request.\n\nA staffed movement-page extraction costs twenty-five creds and logs a query. A Spire employee can bill it to the old badge, adding its trace. Earned Face training lets you ask Edda for a bounded countersignature instead: she agrees to this extraction, and her employer can identify her signed shift. None of these methods tests an issuing key.",
+      "choice": "craft-extract-paid",
+      "lines": [
+        {
+          "id": "voice-campaign-dramatic-beats-ebb05f183613",
+          "key": "5ce258ce05cf6abc",
+          "scene": "act2_craft_archive_ledger",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "A fee, an old number, a signature. Each leaves someone carrying this request. I want to know which part you are asking me to carry.",
+          "text": "A fee, an old number, a signature. Each leaves someone carrying this request. I want to know which part you are asking me to carry.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-ebb05f183613.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "quiet",
+        "district": "spire"
+      },
+      "art": {
+        "src": "/art/edda-archive.jpg",
+        "small": "/art/edda-archive-small.jpg",
+        "caption": "Helion \u00b7 Edda keeps the request bounded",
+        "description": "Edda sits at the service archive desk, one hand on a closed worn ledger and the other holding blank folded paper. No identifying record, signature or authenticated outcome is displayed."
+      },
+      "portrait": "/art/edda.jpg",
+      "clips": [
+        {
+          "id": "voice-campaign-dramatic-beats-ebb05f183613",
+          "key": "5ce258ce05cf6abc",
+          "scene": "act2_craft_archive_ledger",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "A fee, an old number, a signature. Each leaves someone carrying this request. I want to know which part you are asking me to carry.",
+          "text": "A fee, an old number, a signature. Each leaves someone carrying this request. I want to know which part you are asking me to carry.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-ebb05f183613.mp3",
+          "sha256": "f74cd28bba8e211a32e1e4e5ed6165104279b8f85a0bad7ce637d41814201eb1",
+          "startSeconds": 0.0,
+          "durationSeconds": 9.693291666666667
+        }
+      ],
+      "startSeconds": 478.1972083333333,
+      "durationSeconds": 9.693291666666667,
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-spire.flac",
+      "ambienceSha256": "c591122dbc8dd9df3af27778415959b4b325326fe1ba0caf21d1ce861a3b2eff",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/035-paid-act2_craft_archive_ledger.wav",
+      "masterSha256": "81fd1c3bffcabf5c1b6e3805b1976080b39c04d0e54b9c4c28519aa3b0b7df05",
+      "peak": 0.25465819239616394,
+      "voiceRms": 0.035527944564819336,
+      "bedRms": 0.0016719746636226773
+    },
+    {
+      "route": "paid",
+      "step": 50,
+      "scene": "act2_archive_custody",
+      "text": "Edda points to the ledger reference. Her name can stay out of the public copy.\n\nThe ledger corroborates the cancellation; no reader authenticated its issuing key.\n\n\u2018Keep the original with Sera,\u2019 Edda says. \u2018Ask before you put my name on a public copy.\u2019\n\nEdda keeps the request beside the retrieved reference. \"You covered the fee. Let me decide about my name before this leaves the room.\"",
+      "choice": "withhold-technician",
+      "lines": [
+        {
+          "key": "9b7df92b1cc2b555",
+          "id": "voice-campaign-edda-d4b034abcf9f",
+          "scene": "act2_archive_custody",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "Keep the original with Sera,",
+          "text": "Keep the original with Sera,",
+          "part": 0,
+          "sourceGain": 0.66834392,
+          "path": "public/audio/voice-campaign-edda-d4b034abcf9f.mp3"
+        },
+        {
+          "key": "0a82dcd63a373be1",
+          "id": "voice-edda-source-custody",
+          "scene": "act2_archive_custody",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "Ask before you put my name on a public copy.",
+          "text": "Ask before you put my name on a public copy.",
+          "part": 0,
+          "sourceGain": 0.52239619,
+          "path": "public/audio/voice-edda-source-custody.wav"
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-9455c282881b",
+          "key": "fa07ec038300d177",
+          "scene": "act2_archive_custody",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "You covered the fee. Let me decide about my name before this leaves the room.",
+          "text": "You covered the fee. Let me decide about my name before this leaves the room.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-9455c282881b.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "quiet",
+        "district": "spire"
+      },
+      "art": {
+        "src": "/art/edda-archive.jpg",
+        "small": "/art/edda-archive-small.jpg",
+        "caption": "Helion \u00b7 Edda keeps her own terms",
+        "description": "Edda sits at the service archive desk, one hand on a closed worn ledger and the other holding blank folded paper. No identifying record, signature or authenticated outcome is displayed."
+      },
+      "portrait": "/art/edda-scrutiny.jpg",
+      "clips": [
+        {
+          "key": "9b7df92b1cc2b555",
+          "id": "voice-campaign-edda-d4b034abcf9f",
+          "scene": "act2_archive_custody",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "Keep the original with Sera,",
+          "text": "Keep the original with Sera,",
+          "part": 0,
+          "sourceGain": 0.66834392,
+          "path": "public/audio/voice-campaign-edda-d4b034abcf9f.mp3",
+          "sha256": "94d6f506916aab224748e7213dd4a874f376d1f9053a609fa52ae27c68e90e78",
+          "startSeconds": 0.0,
+          "durationSeconds": 1.9306666666666668
+        },
+        {
+          "key": "0a82dcd63a373be1",
+          "id": "voice-edda-source-custody",
+          "scene": "act2_archive_custody",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "Ask before you put my name on a public copy.",
+          "text": "Ask before you put my name on a public copy.",
+          "part": 0,
+          "sourceGain": 0.52239619,
+          "path": "public/audio/voice-edda-source-custody.wav",
+          "sha256": "95191e9b7d03b2cc6c3a46ae33170f68fb528065e8f67abd8b0f773b834b967f",
+          "startSeconds": 2.050666666666667,
+          "durationSeconds": 2.997333333333333
+        },
+        {
+          "id": "voice-campaign-dramatic-beats-9455c282881b",
+          "key": "fa07ec038300d177",
+          "scene": "act2_archive_custody",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "You covered the fee. Let me decide about my name before this leaves the room.",
+          "text": "You covered the fee. Let me decide about my name before this leaves the room.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-dramatic-beats-9455c282881b.mp3",
+          "sha256": "49527feaebb2c2f4b387511b40b7f8b5fe4c5de08e59fec2700b4f41328a8a0c",
+          "startSeconds": 5.168,
+          "durationSeconds": 5.091958333333333
+        }
+      ],
+      "startSeconds": 488.8905,
+      "durationSeconds": 10.259958333333334,
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-spire.flac",
+      "ambienceSha256": "c591122dbc8dd9df3af27778415959b4b325326fe1ba0caf21d1ce861a3b2eff",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/036-paid-act2_archive_custody.wav",
+      "masterSha256": "4a848ccae884dfeeea26db4145ca35dc84350efbb0113aee7c731002ca0ebfd9",
+      "peak": 0.21909599006175995,
+      "voiceRms": 0.03613649681210518,
+      "bedRms": 0.0016717351973056793
+    },
+    {
+      "route": "paid",
+      "step": 59,
+      "scene": "act3_payoff_edda",
+      "text": "Edda sets your question beside the retrieved movement account. She puts her finger below its last line, where the issuing hand is still unverified. Then she lifts the cup out of the way.\n\n\"The tea will be cold. Sit down anyway.\"\n\nHer cup leaves a pale ring on the table. The rain goes on.",
+      "choice": "payoff-keep-edda",
+      "lines": [
+        {
+          "key": "aeaf73248cbd7157",
+          "id": "voice-campaign-emotional-payoff-a8c4c936daad",
+          "scene": "act3_payoff_edda",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "The tea will be cold. Sit down anyway.",
+          "text": "The tea will be cold. Sit down anyway.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-emotional-payoff-a8c4c936daad.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "quiet",
+        "district": "ward"
+      },
+      "art": {
+        "src": "/art/correction-bench.jpg",
+        "small": "/art/correction-bench-small.jpg",
+        "caption": "Ward Nine \u00b7 a place beside the work",
+        "description": "Blank sheets and a closed unmarked sleeve lie in separate trays at a rain-lit workbench. They depict no retrieved source, authenticated key, submitted finding or restored shift."
+      },
+      "portrait": "/art/edda.jpg",
+      "clips": [
+        {
+          "key": "aeaf73248cbd7157",
+          "id": "voice-campaign-emotional-payoff-a8c4c936daad",
+          "scene": "act3_payoff_edda",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "The tea will be cold. Sit down anyway.",
+          "text": "The tea will be cold. Sit down anyway.",
+          "part": 1,
+          "sourceGain": 1,
+          "path": "public/audio/voice-campaign-emotional-payoff-a8c4c936daad.mp3",
+          "sha256": "ecb6ae5d673450cbe327e9f34158dd8dc8b5eca1638b5fe29148ce3776cc00fc",
+          "startSeconds": 0.0,
+          "durationSeconds": 2.970666666666667
+        }
+      ],
+      "startSeconds": 500.15045833333335,
+      "durationSeconds": 2.970666666666667,
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-ward.flac",
+      "ambienceSha256": "a3cb998a109b169e7da44fd4f6f1f9299b01a8fe477d04ec681a0bad425c75e6",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/037-paid-act3_payoff_edda.wav",
+      "masterSha256": "37fecce9d19d543643f8a04b3f54ec5f06b8a30092d95b9cbdbfbdeb0f8c0e0e",
+      "peak": 0.1879473626613617,
+      "voiceRms": 0.03220754116773605,
+      "bedRms": 0.0019737761467695236
+    },
+    {
+      "route": "paid",
+      "step": 63,
+      "scene": "act3_edda_visit",
+      "text": "Edda sends a message through Sera. Her shifts are still posted. The public copy has no technician's name, and she wants to keep it that way.\n\n'Keep the original available,' she says. 'Let them question the record without making my shifts the story.'",
+      "choice": "respect-edda-source",
+      "lines": [
+        {
+          "key": "807cfb3b244ef909",
+          "id": "voice-campaign-edda-cf0b92febd12",
+          "scene": "act3_edda_visit",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "Keep the original available,",
+          "text": "Keep the original available,",
+          "part": 0,
+          "sourceGain": 0.55398754,
+          "path": "public/audio/voice-campaign-edda-cf0b92febd12.mp3"
+        },
+        {
+          "key": "d9be767929686634",
+          "id": "voice-campaign-edda-acdfea67c0a0",
+          "scene": "act3_edda_visit",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "Let them question the record without making my shifts the story.",
+          "text": "Let them question the record without making my shifts the story.",
+          "part": 0,
+          "sourceGain": 0.61235039,
+          "path": "public/audio/voice-campaign-edda-acdfea67c0a0.mp3"
+        }
+      ],
+      "sound": {
+        "mood": "ward",
+        "district": "ward"
+      },
+      "art": {
+        "src": "/art/archive-held-original.jpg",
+        "small": "/art/archive-held-original-small.jpg",
+        "caption": "Ward Nine \u00b7 the original stays separate",
+        "description": "A closed source ledger rests in a dark protective sleeve on the records table, apart from a folded paper copy; a pencil lies between them. No legible identity, authenticated seal or review verdict is displayed."
+      },
+      "portrait": "/art/edda.jpg",
+      "clips": [
+        {
+          "key": "807cfb3b244ef909",
+          "id": "voice-campaign-edda-cf0b92febd12",
+          "scene": "act3_edda_visit",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "Keep the original available,",
+          "text": "Keep the original available,",
+          "part": 0,
+          "sourceGain": 0.55398754,
+          "path": "public/audio/voice-campaign-edda-cf0b92febd12.mp3",
+          "sha256": "36591b90433abe562710609b2e164b894ec1529a4dd02e3d878277f146b9dc10",
+          "startSeconds": 0.0,
+          "durationSeconds": 1.888
+        },
+        {
+          "key": "d9be767929686634",
+          "id": "voice-campaign-edda-acdfea67c0a0",
+          "scene": "act3_edda_visit",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "Let them question the record without making my shifts the story.",
+          "text": "Let them question the record without making my shifts the story.",
+          "part": 0,
+          "sourceGain": 0.61235039,
+          "path": "public/audio/voice-campaign-edda-acdfea67c0a0.mp3",
+          "sha256": "87c088a6887c7367e5f9698aeb799180b3c7d56305bf8420f56d55ffff275c08",
+          "startSeconds": 2.008,
+          "durationSeconds": 3.978666666666667
+        }
+      ],
+      "startSeconds": 504.121125,
+      "durationSeconds": 5.986666666666666,
+      "musicPath": "public/audio/theme-ward.flac",
+      "musicSha256": "46e9fd33430a61b4a36645c45fcd88bbc616e57e4643cb2e61aaacc0b62cfc39",
+      "ambiencePath": "public/audio/ambience-ward.flac",
+      "ambienceSha256": "a3cb998a109b169e7da44fd4f6f1f9299b01a8fe477d04ec681a0bad425c75e6",
+      "masterPath": "/workspace/generated_audio/dramatic-beats/mixes/038-paid-act3_edda_visit.wav",
+      "masterSha256": "eb93eb8bcdd91bceb803ce520dfe586434e36517ec83fcd283f21a68a88e52d1",
+      "peak": 0.2100270837545395,
+      "voiceRms": 0.03709091991186142,
+      "bedRms": 0.0031427766662091017
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "reason": "New matched controls use the already-published current UI feature configuration. Exact legacy archive-return action translation is recorded; original247 source fixtures remain untouched. Each control is replayed with dramaticBeats:false and then with true.",
+  "translations": [
+    {
+      "profile": "dramatic-face",
+      "step": 59,
+      "scene": "act3_payoff_edda",
+      "old": "craft-keep-archive-answer",
+      "current": "payoff-keep-edda"
+    },
+    {
+      "profile": "dramatic-badge-scarce",
+      "step": 54,
+      "scene": "act3_payoff_edda",
+      "old": "craft-keep-archive-answer",
+      "current": "payoff-keep-edda"
+    },
+    {
+      "profile": "dramatic-paid",
+      "step": 59,
+      "scene": "act3_payoff_edda",
+      "old": "craft-keep-archive-answer",
+      "current": "payoff-keep-edda"
+    }
+  ]
+}

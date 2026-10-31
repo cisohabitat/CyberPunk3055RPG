@@ -1,0 +1,36 @@
+{
+  "method": "Retain raw strict word comparison. Only two explicitly bound leading-number spellings receive a separate semantic-equivalence review; every other token must match. No contractions expanded or trailing words removed.",
+  "literalMatches": [
+    "voice-campaign-dramatic-beats-dceb613b987f",
+    "voice-campaign-dramatic-beats-0f19f0d22108",
+    "voice-campaign-dramatic-beats-ebb05f183613",
+    "voice-campaign-dramatic-beats-9455c282881b",
+    "voice-campaign-dramatic-beats-cf3cf27dbc01",
+    "voice-campaign-dramatic-beats-7864742e6cf1",
+    "voice-campaign-dramatic-beats-1658a251f1cf",
+    "voice-campaign-dramatic-beats-9919ec3d53bd"
+  ],
+  "numericReviews": [
+    {
+      "id": "voice-campaign-dramatic-beats-043fc7da30bc",
+      "authored": "Ninety when you take the job. I need that extra money to get you through the door, not just get me a yes.",
+      "rawTranscription": "90 when you take the job. I need that extra money to get you through the door, not just get me a yes.",
+      "rawExactNormalizedWords": false,
+      "review": "Leading Ninety/90 or Fifty/50 orthography only; exact remaining tokens verified in source tests."
+    },
+    {
+      "id": "voice-campaign-dramatic-beats-11d2890d6c98",
+      "authored": "Fifty. That is the offer I can make. You can leave the number there without pretending you like it.",
+      "rawTranscription": "50. That is the offer I can make. You can leave the number there without pretending you like it.",
+      "rawExactNormalizedWords": false,
+      "review": "Leading Ninety/90 or Fifty/50 orthography only; exact remaining tokens verified in source tests."
+    }
+  ],
+  "selectedRetake": {
+    "id": "voice-campaign-dramatic-beats-ebb05f183613",
+    "sha256": "f74cd28bba8e211a32e1e4e5ed6165104279b8f85a0bad7ce637d41814201eb1",
+    "literalWords": true,
+    "source": "/tmp/saint-phase16b/asr-retake-two.json"
+  },
+  "limitations": "ASR/signal evidence does not establish independent expressive acting or listener comprehension."
+}

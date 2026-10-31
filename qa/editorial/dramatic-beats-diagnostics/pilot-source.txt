@@ -1,0 +1,39 @@
+✔ preserves all247 preceding routes,17737 exact visits,849 original media and every preceding manifest (1781.680375ms)
+✔ retains real costs, outcomes and dice through dramatic-face (23.455474ms)
+✔ retains real costs, outcomes and dice through dramatic-badge-scarce (13.991927ms)
+✔ retains real costs, outcomes and dice through dramatic-paid (14.072289ms)
+✔ retains real costs, outcomes and dice through dramatic-deferred (14.485134ms)
+✔ retains real costs, outcomes and dice through dramatic-scarce (14.91866ms)
+✔ retains real costs, outcomes and dice through dramatic-direct (6.665878ms)
+✔ retains real costs, outcomes and dice through dramatic-sera-carry (27.206477ms)
+✔ retains real costs, outcomes and dice through dramatic-listed (15.831404ms)
+✔ recognizes only actual paid/badge/signed extractions, retains exposure and respects source naming decisions (9.387932ms)
+✖ binds every new quote to the right actor and exact media, retaining the two numeric ASR disagreements (1.269203ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 10
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2226.58058
+
+✖ failing tests:
+
+test at lib/dramatic-beats.test.ts:58:1
+✖ binds every new quote to the right actor and exact media, retaining the two numeric ASR disagreements (1.269203ms)
+  AssertionError [ERR_ASSERTION]: Replay. Mara Voss, Helion logistics. Glass Chapel edits her memory at dawn. Bring me the original hour, intact. Fifty now, two hundred on delivery. Her bodyguard is Kerr. He is paid to stop you.
+      at TestContext.<anonymous> (/workspace/saint-shard-fix/lib/dramatic-beats.test.ts:60:316)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

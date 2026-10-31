@@ -1,0 +1,221 @@
+Error: duplicate test title "dramatic voice voice-campaign-dramatic-beats-dceb613b987f: exact actor, words, order and natural completion", first declared in dramatic-beats.spec.ts:30
+
+   at dramatic-beats.spec.ts:30
+
+  28 | }
+  29 |
+> 30 | for (const width of [390, 1440, 320]) for (const {state, binding, lines} of checkpoints) test(`dramatic voice ${binding.id}: exact actor, words, order and natural completion`, async ({page}) => {
+     |                                                                                              ^
+  31 |   await page.addInitScript(installAudioReview, {}); await open(page, state, 390, true); const before=await saved(page);
+  32 |   const prefix=lines.slice(0,lines.findIndex(l=>l.id===binding.id));
+  33 |   for(const l of prefix) await expect.poll(async()=>(await audio(page)).disposed,{timeout:20000}).toContain(l.id+(l.id.startsWith('voice-campaign-')?'.mp3':'.wav'));
+Error: duplicate test title "dramatic voice voice-campaign-dramatic-beats-0f19f0d22108: exact actor, words, order and natural completion", first declared in dramatic-beats.spec.ts:30
+
+   at dramatic-beats.spec.ts:30
+
+  28 | }
+  29 |
+> 30 | for (const width of [390, 1440, 320]) for (const {state, binding, lines} of checkpoints) test(`dramatic voice ${binding.id}: exact actor, words, order and natural completion`, async ({page}) => {
+     |                                                                                              ^
+  31 |   await page.addInitScript(installAudioReview, {}); await open(page, state, 390, true); const before=await saved(page);
+  32 |   const prefix=lines.slice(0,lines.findIndex(l=>l.id===binding.id));
+  33 |   for(const l of prefix) await expect.poll(async()=>(await audio(page)).disposed,{timeout:20000}).toContain(l.id+(l.id.startsWith('voice-campaign-')?'.mp3':'.wav'));
+Error: duplicate test title "dramatic voice voice-campaign-dramatic-beats-043fc7da30bc: exact actor, words, order and natural completion", first declared in dramatic-beats.spec.ts:30
+
+   at dramatic-beats.spec.ts:30
+
+  28 | }
+  29 |
+> 30 | for (const width of [390, 1440, 320]) for (const {state, binding, lines} of checkpoints) test(`dramatic voice ${binding.id}: exact actor, words, order and natural completion`, async ({page}) => {
+     |                                                                                              ^
+  31 |   await page.addInitScript(installAudioReview, {}); await open(page, state, 390, true); const before=await saved(page);
+  32 |   const prefix=lines.slice(0,lines.findIndex(l=>l.id===binding.id));
+  33 |   for(const l of prefix) await expect.poll(async()=>(await audio(page)).disposed,{timeout:20000}).toContain(l.id+(l.id.startsWith('voice-campaign-')?'.mp3':'.wav'));
+Error: duplicate test title "dramatic voice voice-campaign-dramatic-beats-11d2890d6c98: exact actor, words, order and natural completion", first declared in dramatic-beats.spec.ts:30
+
+   at dramatic-beats.spec.ts:30
+
+  28 | }
+  29 |
+> 30 | for (const width of [390, 1440, 320]) for (const {state, binding, lines} of checkpoints) test(`dramatic voice ${binding.id}: exact actor, words, order and natural completion`, async ({page}) => {
+     |                                                                                              ^
+  31 |   await page.addInitScript(installAudioReview, {}); await open(page, state, 390, true); const before=await saved(page);
+  32 |   const prefix=lines.slice(0,lines.findIndex(l=>l.id===binding.id));
+  33 |   for(const l of prefix) await expect.poll(async()=>(await audio(page)).disposed,{timeout:20000}).toContain(l.id+(l.id.startsWith('voice-campaign-')?'.mp3':'.wav'));
+Error: duplicate test title "dramatic voice voice-campaign-dramatic-beats-ebb05f183613: exact actor, words, order and natural completion", first declared in dramatic-beats.spec.ts:30
+
+   at dramatic-beats.spec.ts:30
+
+  28 | }
+  29 |
+> 30 | for (const width of [390, 1440, 320]) for (const {state, binding, lines} of checkpoints) test(`dramatic voice ${binding.id}: exact actor, words, order and natural completion`, async ({page}) => {
+     |                                                                                              ^
+  31 |   await page.addInitScript(installAudioReview, {}); await open(page, state, 390, true); const before=await saved(page);
+  32 |   const prefix=lines.slice(0,lines.findIndex(l=>l.id===binding.id));
+  33 |   for(const l of prefix) await expect.poll(async()=>(await audio(page)).disposed,{timeout:20000}).toContain(l.id+(l.id.startsWith('voice-campaign-')?'.mp3':'.wav'));
+Error: duplicate test title "dramatic voice voice-campaign-dramatic-beats-9455c282881b: exact actor, words, order and natural completion", first declared in dramatic-beats.spec.ts:30
+
+   at dramatic-beats.spec.ts:30
+
+  28 | }
+  29 |
+> 30 | for (const width of [390, 1440, 320]) for (const {state, binding, lines} of checkpoints) test(`dramatic voice ${binding.id}: exact actor, words, order and natural completion`, async ({page}) => {
+     |                                                                                              ^
+  31 |   await page.addInitScript(installAudioReview, {}); await open(page, state, 390, true); const before=await saved(page);
+  32 |   const prefix=lines.slice(0,lines.findIndex(l=>l.id===binding.id));
+  33 |   for(const l of prefix) await expect.poll(async()=>(await audio(page)).disposed,{timeout:20000}).toContain(l.id+(l.id.startsWith('voice-campaign-')?'.mp3':'.wav'));
+Error: duplicate test title "dramatic voice voice-campaign-dramatic-beats-cf3cf27dbc01: exact actor, words, order and natural completion", first declared in dramatic-beats.spec.ts:30
+
+   at dramatic-beats.spec.ts:30
+
+  28 | }
+  29 |
+> 30 | for (const width of [390, 1440, 320]) for (const {state, binding, lines} of checkpoints) test(`dramatic voice ${binding.id}: exact actor, words, order and natural completion`, async ({page}) => {
+     |                                                                                              ^
+  31 |   await page.addInitScript(installAudioReview, {}); await open(page, state, 390, true); const before=await saved(page);
+  32 |   const prefix=lines.slice(0,lines.findIndex(l=>l.id===binding.id));
+  33 |   for(const l of prefix) await expect.poll(async()=>(await audio(page)).disposed,{timeout:20000}).toContain(l.id+(l.id.startsWith('voice-campaign-')?'.mp3':'.wav'));
+Error: duplicate test title "dramatic voice voice-campaign-dramatic-beats-7864742e6cf1: exact actor, words, order and natural completion", first declared in dramatic-beats.spec.ts:30
+
+   at dramatic-beats.spec.ts:30
+
+  28 | }
+  29 |
+> 30 | for (const width of [390, 1440, 320]) for (const {state, binding, lines} of checkpoints) test(`dramatic voice ${binding.id}: exact actor, words, order and natural completion`, async ({page}) => {
+     |                                                                                              ^
+  31 |   await page.addInitScript(installAudioReview, {}); await open(page, state, 390, true); const before=await saved(page);
+  32 |   const prefix=lines.slice(0,lines.findIndex(l=>l.id===binding.id));
+  33 |   for(const l of prefix) await expect.poll(async()=>(await audio(page)).disposed,{timeout:20000}).toContain(l.id+(l.id.startsWith('voice-campaign-')?'.mp3':'.wav'));
+Error: duplicate test title "dramatic voice voice-campaign-dramatic-beats-1658a251f1cf: exact actor, words, order and natural completion", first declared in dramatic-beats.spec.ts:30
+
+   at dramatic-beats.spec.ts:30
+
+  28 | }
+  29 |
+> 30 | for (const width of [390, 1440, 320]) for (const {state, binding, lines} of checkpoints) test(`dramatic voice ${binding.id}: exact actor, words, order and natural completion`, async ({page}) => {
+     |                                                                                              ^
+  31 |   await page.addInitScript(installAudioReview, {}); await open(page, state, 390, true); const before=await saved(page);
+  32 |   const prefix=lines.slice(0,lines.findIndex(l=>l.id===binding.id));
+  33 |   for(const l of prefix) await expect.poll(async()=>(await audio(page)).disposed,{timeout:20000}).toContain(l.id+(l.id.startsWith('voice-campaign-')?'.mp3':'.wav'));
+Error: duplicate test title "dramatic voice voice-campaign-dramatic-beats-9919ec3d53bd: exact actor, words, order and natural completion", first declared in dramatic-beats.spec.ts:30
+
+   at dramatic-beats.spec.ts:30
+
+  28 | }
+  29 |
+> 30 | for (const width of [390, 1440, 320]) for (const {state, binding, lines} of checkpoints) test(`dramatic voice ${binding.id}: exact actor, words, order and natural completion`, async ({page}) => {
+     |                                                                                              ^
+  31 |   await page.addInitScript(installAudioReview, {}); await open(page, state, 390, true); const before=await saved(page);
+  32 |   const prefix=lines.slice(0,lines.findIndex(l=>l.id===binding.id));
+  33 |   for(const l of prefix) await expect.poll(async()=>(await audio(page)).disposed,{timeout:20000}).toContain(l.id+(l.id.startsWith('voice-campaign-')?'.mp3':'.wav'));
+Error: duplicate test title "dramatic voice voice-campaign-dramatic-beats-dceb613b987f: exact actor, words, order and natural completion", first declared in dramatic-beats.spec.ts:30
+
+   at dramatic-beats.spec.ts:30
+
+  28 | }
+  29 |
+> 30 | for (const width of [390, 1440, 320]) for (const {state, binding, lines} of checkpoints) test(`dramatic voice ${binding.id}: exact actor, words, order and natural completion`, async ({page}) => {
+     |                                                                                              ^
+  31 |   await page.addInitScript(installAudioReview, {}); await open(page, state, 390, true); const before=await saved(page);
+  32 |   const prefix=lines.slice(0,lines.findIndex(l=>l.id===binding.id));
+  33 |   for(const l of prefix) await expect.poll(async()=>(await audio(page)).disposed,{timeout:20000}).toContain(l.id+(l.id.startsWith('voice-campaign-')?'.mp3':'.wav'));
+Error: duplicate test title "dramatic voice voice-campaign-dramatic-beats-0f19f0d22108: exact actor, words, order and natural completion", first declared in dramatic-beats.spec.ts:30
+
+   at dramatic-beats.spec.ts:30
+
+  28 | }
+  29 |
+> 30 | for (const width of [390, 1440, 320]) for (const {state, binding, lines} of checkpoints) test(`dramatic voice ${binding.id}: exact actor, words, order and natural completion`, async ({page}) => {
+     |                                                                                              ^
+  31 |   await page.addInitScript(installAudioReview, {}); await open(page, state, 390, true); const before=await saved(page);
+  32 |   const prefix=lines.slice(0,lines.findIndex(l=>l.id===binding.id));
+  33 |   for(const l of prefix) await expect.poll(async()=>(await audio(page)).disposed,{timeout:20000}).toContain(l.id+(l.id.startsWith('voice-campaign-')?'.mp3':'.wav'));
+Error: duplicate test title "dramatic voice voice-campaign-dramatic-beats-043fc7da30bc: exact actor, words, order and natural completion", first declared in dramatic-beats.spec.ts:30
+
+   at dramatic-beats.spec.ts:30
+
+  28 | }
+  29 |
+> 30 | for (const width of [390, 1440, 320]) for (const {state, binding, lines} of checkpoints) test(`dramatic voice ${binding.id}: exact actor, words, order and natural completion`, async ({page}) => {
+     |                                                                                              ^
+  31 |   await page.addInitScript(installAudioReview, {}); await open(page, state, 390, true); const before=await saved(page);
+  32 |   const prefix=lines.slice(0,lines.findIndex(l=>l.id===binding.id));
+  33 |   for(const l of prefix) await expect.poll(async()=>(await audio(page)).disposed,{timeout:20000}).toContain(l.id+(l.id.startsWith('voice-campaign-')?'.mp3':'.wav'));
+Error: duplicate test title "dramatic voice voice-campaign-dramatic-beats-11d2890d6c98: exact actor, words, order and natural completion", first declared in dramatic-beats.spec.ts:30
+
+   at dramatic-beats.spec.ts:30
+
+  28 | }
+  29 |
+> 30 | for (const width of [390, 1440, 320]) for (const {state, binding, lines} of checkpoints) test(`dramatic voice ${binding.id}: exact actor, words, order and natural completion`, async ({page}) => {
+     |                                                                                              ^
+  31 |   await page.addInitScript(installAudioReview, {}); await open(page, state, 390, true); const before=await saved(page);
+  32 |   const prefix=lines.slice(0,lines.findIndex(l=>l.id===binding.id));
+  33 |   for(const l of prefix) await expect.poll(async()=>(await audio(page)).disposed,{timeout:20000}).toContain(l.id+(l.id.startsWith('voice-campaign-')?'.mp3':'.wav'));
+Error: duplicate test title "dramatic voice voice-campaign-dramatic-beats-ebb05f183613: exact actor, words, order and natural completion", first declared in dramatic-beats.spec.ts:30
+
+   at dramatic-beats.spec.ts:30
+
+  28 | }
+  29 |
+> 30 | for (const width of [390, 1440, 320]) for (const {state, binding, lines} of checkpoints) test(`dramatic voice ${binding.id}: exact actor, words, order and natural completion`, async ({page}) => {
+     |                                                                                              ^
+  31 |   await page.addInitScript(installAudioReview, {}); await open(page, state, 390, true); const before=await saved(page);
+  32 |   const prefix=lines.slice(0,lines.findIndex(l=>l.id===binding.id));
+  33 |   for(const l of prefix) await expect.poll(async()=>(await audio(page)).disposed,{timeout:20000}).toContain(l.id+(l.id.startsWith('voice-campaign-')?'.mp3':'.wav'));
+Error: duplicate test title "dramatic voice voice-campaign-dramatic-beats-9455c282881b: exact actor, words, order and natural completion", first declared in dramatic-beats.spec.ts:30
+
+   at dramatic-beats.spec.ts:30
+
+  28 | }
+  29 |
+> 30 | for (const width of [390, 1440, 320]) for (const {state, binding, lines} of checkpoints) test(`dramatic voice ${binding.id}: exact actor, words, order and natural completion`, async ({page}) => {
+     |                                                                                              ^
+  31 |   await page.addInitScript(installAudioReview, {}); await open(page, state, 390, true); const before=await saved(page);
+  32 |   const prefix=lines.slice(0,lines.findIndex(l=>l.id===binding.id));
+  33 |   for(const l of prefix) await expect.poll(async()=>(await audio(page)).disposed,{timeout:20000}).toContain(l.id+(l.id.startsWith('voice-campaign-')?'.mp3':'.wav'));
+Error: duplicate test title "dramatic voice voice-campaign-dramatic-beats-cf3cf27dbc01: exact actor, words, order and natural completion", first declared in dramatic-beats.spec.ts:30
+
+   at dramatic-beats.spec.ts:30
+
+  28 | }
+  29 |
+> 30 | for (const width of [390, 1440, 320]) for (const {state, binding, lines} of checkpoints) test(`dramatic voice ${binding.id}: exact actor, words, order and natural completion`, async ({page}) => {
+     |                                                                                              ^
+  31 |   await page.addInitScript(installAudioReview, {}); await open(page, state, 390, true); const before=await saved(page);
+  32 |   const prefix=lines.slice(0,lines.findIndex(l=>l.id===binding.id));
+  33 |   for(const l of prefix) await expect.poll(async()=>(await audio(page)).disposed,{timeout:20000}).toContain(l.id+(l.id.startsWith('voice-campaign-')?'.mp3':'.wav'));
+Error: duplicate test title "dramatic voice voice-campaign-dramatic-beats-7864742e6cf1: exact actor, words, order and natural completion", first declared in dramatic-beats.spec.ts:30
+
+   at dramatic-beats.spec.ts:30
+
+  28 | }
+  29 |
+> 30 | for (const width of [390, 1440, 320]) for (const {state, binding, lines} of checkpoints) test(`dramatic voice ${binding.id}: exact actor, words, order and natural completion`, async ({page}) => {
+     |                                                                                              ^
+  31 |   await page.addInitScript(installAudioReview, {}); await open(page, state, 390, true); const before=await saved(page);
+  32 |   const prefix=lines.slice(0,lines.findIndex(l=>l.id===binding.id));
+  33 |   for(const l of prefix) await expect.poll(async()=>(await audio(page)).disposed,{timeout:20000}).toContain(l.id+(l.id.startsWith('voice-campaign-')?'.mp3':'.wav'));
+Error: duplicate test title "dramatic voice voice-campaign-dramatic-beats-1658a251f1cf: exact actor, words, order and natural completion", first declared in dramatic-beats.spec.ts:30
+
+   at dramatic-beats.spec.ts:30
+
+  28 | }
+  29 |
+> 30 | for (const width of [390, 1440, 320]) for (const {state, binding, lines} of checkpoints) test(`dramatic voice ${binding.id}: exact actor, words, order and natural completion`, async ({page}) => {
+     |                                                                                              ^
+  31 |   await page.addInitScript(installAudioReview, {}); await open(page, state, 390, true); const before=await saved(page);
+  32 |   const prefix=lines.slice(0,lines.findIndex(l=>l.id===binding.id));
+  33 |   for(const l of prefix) await expect.poll(async()=>(await audio(page)).disposed,{timeout:20000}).toContain(l.id+(l.id.startsWith('voice-campaign-')?'.mp3':'.wav'));
+Error: duplicate test title "dramatic voice voice-campaign-dramatic-beats-9919ec3d53bd: exact actor, words, order and natural completion", first declared in dramatic-beats.spec.ts:30
+
+   at dramatic-beats.spec.ts:30
+
+  28 | }
+  29 |
+> 30 | for (const width of [390, 1440, 320]) for (const {state, binding, lines} of checkpoints) test(`dramatic voice ${binding.id}: exact actor, words, order and natural completion`, async ({page}) => {
+     |                                                                                              ^
+  31 |   await page.addInitScript(installAudioReview, {}); await open(page, state, 390, true); const before=await saved(page);
+  32 |   const prefix=lines.slice(0,lines.findIndex(l=>l.id===binding.id));
+  33 |   for(const l of prefix) await expect.poll(async()=>(await audio(page)).disposed,{timeout:20000}).toContain(l.id+(l.id.startsWith('voice-campaign-')?'.mp3':'.wav'));
+

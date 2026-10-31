@@ -1,0 +1,55 @@
+{
+  "referenceRevision": "5a0f160f14752b09e741a062dbd184df433ddc2c",
+  "method": "Detached git archive of lib/qa-media from the published commit. Newly authored current-feature controls compare every complete state/prose/choice/voice/art visit against that actual preceding runtime. No historical report is rewritten.",
+  "controls": [
+    {
+      "profile": "dramatic-face",
+      "control": "qa/editorial/dramatic-beats-controls/dramatic-face.json",
+      "visits": 76,
+      "sha256": "d12cfbe0ef6e4c6914dcded6234d163826b5e2f4c8ab7b2d3a260f62a743a65e"
+    },
+    {
+      "profile": "dramatic-badge-scarce",
+      "control": "qa/editorial/dramatic-beats-controls/dramatic-badge-scarce.json",
+      "visits": 63,
+      "sha256": "98dabff7a45cf2a5d8ca9b7520c06a92f792e535a3fac027db2e7ae1e38957da"
+    },
+    {
+      "profile": "dramatic-paid",
+      "control": "qa/editorial/dramatic-beats-controls/dramatic-paid.json",
+      "visits": 76,
+      "sha256": "43a8eb86a454d059dc0d9b1ef9f1b65a07166172ce8f71fc5f86491e3f77b7ed"
+    },
+    {
+      "profile": "dramatic-deferred",
+      "control": "qa/editorial/dramatic-beats-controls/dramatic-deferred.json",
+      "visits": 63,
+      "sha256": "169239fc9163752d15d737f240ad81bcf178aa7d64e33183e79e7d93b1056965"
+    },
+    {
+      "profile": "dramatic-scarce",
+      "control": "qa/editorial/dramatic-beats-controls/dramatic-scarce.json",
+      "visits": 63,
+      "sha256": "684195a741cf2736d26a29a380ad4aff9f64ef5ae7803569d79171e9d9a502e6"
+    },
+    {
+      "profile": "dramatic-direct",
+      "control": "qa/editorial/dramatic-beats-controls/dramatic-direct.json",
+      "visits": 37,
+      "sha256": "1f4eeb37e495461acd8d352094ab0c70893d63c758c7874609959d08421d1b20"
+    },
+    {
+      "profile": "dramatic-sera-carry",
+      "control": "qa/editorial/dramatic-beats-controls/dramatic-sera-carry.json",
+      "visits": 92,
+      "sha256": "1405b29cbfd6c1fc73bd84bd3f494fdff65409330cfc738ee282519a7824c1bd"
+    },
+    {
+      "profile": "dramatic-listed",
+      "control": "qa/editorial/dramatic-beats-controls/dramatic-listed.json",
+      "visits": 64,
+      "sha256": "0d896015396ba4af41cca6b79e87e099b7a0a8d8b05b18d443c8fbdee7c08efc"
+    }
+  ],
+  "visits": 534
+}

@@ -1,0 +1,2016 @@
+{
+  "version": 1,
+  "decisions": [
+    {
+      "treatment": "illustration",
+      "asset": "/art/opening.jpg",
+      "reason": "Establish the inhabited city and arrival before the job; no memo evidence or ending is shown. The Hour chapter heading reuses this existing opening painting and adds only an abstract clock motif, without altering the invitation or introducing spoken narration. A brief decorative environmental layer settles to stillness after 3.8 seconds, with reduced motion disabling it; no face, evidence or outcome is animated.",
+      "scenes": [
+        "opening_city"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/memory-bench.jpg",
+      "reason": "Reuse the three-fragment viewer for the playable timeline in the same inspection workspace. The neutral plate shows neither a completed chronology nor an authenticated source. Opened sources have illustrative close-ups without readable identities or authentication; written evidence retains authority. The optional investigation notebook is a text-only consultation of acquired sources and their already-inspected timestamps; it introduces no new scene or outcome image.",
+      "scenes": [
+        "memory_table",
+        "memory_sequence"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/spire-counter.jpg",
+      "reason": "Establish and reuse the same service counter. Neutral papers and a sleeved receiver depict neither closure nor handover, including traced recovery. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
+      "scenes": [
+        "act2_spire_brief",
+        "act2_spire_recovery",
+        "act2_spire_receipt"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/spire-terminal.jpg",
+      "reason": "Establish the service alcove and its maintenance machinery. Reuse the waiting terminal without success, failure or retired-account indicators. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
+      "scenes": [
+        "act2_spire_prep",
+        "act2_spire_methods"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/spire-payroll.jpg",
+      "reason": "Establish the later neighborhood payroll table. Reuse neutral documents without implying a reply, refunded invoice, restored wage or erased badge trace. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Optional shared-history notes use recorded outcomes at these later visits. The existing scene and speaker art remains suitable and adds no promise, permission or resolved consequence.",
+      "scenes": [
+        "act3_spire_visit",
+        "act3_spire_reply"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/canal-dispatch.jpg",
+      "scenes": [
+        "act2_route_map",
+        "act2_route_exit",
+        "act2_route_review",
+        "act2_route_crossing"
+      ],
+      "reason": "Neutral planning alcove before collection; unselected map and closed case communicate the setting across drafts, success and held-case recovery without depicting an earned outcome. Failed recovery can pause with the case still held and the promise open; this neutral alcove depicts no courier, payment or handover. A brief decorative environmental layer settles to stillness after 3.8 seconds, with reduced motion disabling it; no face, evidence or outcome is animated."
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/mara-present.jpg",
+      "reason": "Mara is physically present for the voluntary clinic conversation and later visit. Ordinary light, an unmarked envelope and cup distinguish her from the recorded hour; neither dispatch, endorsement, public permission nor an inquiry finding is pictured. Refusal remains visible in the separate conduct portrait. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
+      "scenes": [
+        "act2_response_invitation",
+        "act2_response_agenda",
+        "act3_response_visit"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/canal-dispatch.jpg",
+      "reason": "Reuse the neutral depot alcove and closed case for circuit repair, saved patrol observations, load planning and liability terms in the same location. No tactic, patrol beat, release, shift, receipt, recipient privacy or refund is depicted; text carries those states. A brief decorative environmental layer settles to stillness after 3.8 seconds, with reduced motion disabling it; no face, evidence or outcome is animated.",
+      "scenes": [
+        "act2_route_handling",
+        "act2_depot_methods",
+        "act2_depot_relay",
+        "act2_depot_return",
+        "act2_depot_outer_pass",
+        "act2_depot_cart_pass",
+        "act2_depot_return_pass",
+        "act2_depot_carry",
+        "act2_depot_load",
+        "act2_depot_liability",
+        "act2_depot_contract"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/quill-offer.jpg",
+      "reason": "Quill waits across an open counter beside an untouched bowl. The closer face, hand and steam composition stages an unanswered offer without depicting payment, a selected motive or evidence. Original and skipped openings share the plate. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
+      "scenes": [
+        "stall"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/quill-offer.jpg",
+      "reason": "Quill waits across an open counter beside an untouched bowl. The closer face, hand and steam composition stages an unanswered offer without depicting payment, a selected motive or evidence. Original and skipped openings share the plate. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
+      "scenes": [
+        "pay"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/quill-offer.jpg",
+      "reason": "Quill waits across an open counter beside an untouched bowl. The closer face, hand and steam composition stages an unanswered offer without depicting payment, a selected motive or evidence. Original and skipped openings share the plate. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
+      "scenes": [
+        "job_owner"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/mara-revelation.jpg",
+      "reason": "Deliberate turning-point staging: Mara's recorded likeness sits beside the cyan memory apparatus; her steady gaze carries no present-day permission. Prose remains authoritative about costs, evidence and permissions. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Expression staging accompanies the actual actor and adds no outcome or permission. The pivotal frame keeps this complete painting beside the canonical prose on wide screens and after it on phones. Compact speaker framing and an intimate score move attention to the actual words; source facts, outcomes and voice/actor assignments remain unchanged. Phase 5 preserves this establishing/earned-state illustration; optional neutral object detail is separately enumerated in cinematic-sequences.json and never depicts consent or completion.",
+      "scenes": [
+        "memo"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/mara-revelation.jpg",
+      "reason": "Deliberate turning-point staging: Mara's recorded likeness sits beside the cyan memory apparatus; her steady gaze carries no present-day permission. Prose remains authoritative about costs, evidence and permissions. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Expression staging accompanies the actual actor and adds no outcome or permission. The pivotal frame keeps this complete painting beside the canonical prose on wide screens and after it on phones. Compact speaker framing and an intimate score move attention to the actual words; source facts, outcomes and voice/actor assignments remain unchanged. Phase 5 preserves this establishing/earned-state illustration; optional neutral object detail is separately enumerated in cinematic-sequences.json and never depicts consent or completion.",
+      "scenes": [
+        "mara_why"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/chapel-reader.jpg",
+      "reason": "Deliberate turning-point staging: A dim memory reader and mechanical latch face an empty wet stair beside a task lamp; their status is unresolved. Prose remains authoritative about costs, evidence and permissions.",
+      "scenes": [
+        "chapel_method_review"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/chapel-reader.jpg",
+      "reason": "Deliberate turning-point staging: A dim memory reader and mechanical latch face an empty wet stair beside a task lamp; their status is unresolved. Prose remains authoritative about costs, evidence and permissions.",
+      "scenes": [
+        "chapel_window_exit"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/finale-names.jpg",
+      "reason": "The existing plate shows memorial marks and Sera writing, with no hearing document or private identity displayed. Speaking names does not file a hearing draft or change source permission. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Expression staging accompanies the actual actor and adds no outcome or permission. Finale direction reuses this complete painting beside canonical closing prose on desktop and after prose on phones. The compact speaker header and subsequent factual disclosures depict no new closure, source transfer, forgiveness or permission. The written commitment-status list retains this final action and its existing illustration; unresolved and compromised work cannot be turned into completed outcomes by the ending. Emotional payoff mode changes only the closing human beat: the existing memorial/pencil/stair/folio composition still fits the actual finale. No new source, private visit disclosure, absolution or restored outcome is depicted. AAA craft visual direction at ending_names: retain the primary shot and offer only explicitly documented neutral person/detail views. These local views change no story, actual speaker, permission, source or outcome.",
+      "scenes": [
+        "ending_names"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/finale-quiet.jpg",
+      "reason": "The existing rain and empty stair preserve the departure. They depict no erased testimony; filed and withdrawn accounts retain their separate status. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Expression staging accompanies the actual actor and adds no outcome or permission. Finale direction reuses this complete painting beside canonical closing prose on desktop and after prose on phones. The compact speaker header and subsequent factual disclosures depict no new closure, source transfer, forgiveness or permission. The written commitment-status list retains this final action and its existing illustration; unresolved and compromised work cannot be turned into completed outcomes by the ending. Emotional payoff mode changes only the closing human beat: the existing memorial/pencil/stair/folio composition still fits the actual finale. No new source, private visit disclosure, absolution or restored outcome is depicted. AAA craft visual direction at ending_quiet: retain the primary shot and offer only explicitly documented neutral person/detail views. These local views change no story, actual speaker, permission, source or outcome.",
+      "scenes": [
+        "ending_quiet"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/finale-witness.jpg",
+      "reason": "The existing listening portrait and unmarked notebook fit acknowledgement of the earlier leak. No new corroboration, absolution or witness publication permission is depicted. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Expression staging accompanies the actual actor and adds no outcome or permission. Finale direction reuses this complete painting beside canonical closing prose on desktop and after prose on phones. The compact speaker header and subsequent factual disclosures depict no new closure, source transfer, forgiveness or permission. The written commitment-status list retains this final action and its existing illustration; unresolved and compromised work cannot be turned into completed outcomes by the ending. Emotional payoff mode changes only the closing human beat: the existing memorial/pencil/stair/folio composition still fits the actual finale. No new source, private visit disclosure, absolution or restored outcome is depicted. AAA craft visual direction at ending_witness: retain the primary shot and offer only explicitly documented neutral person/detail views. These local views change no story, actual speaker, permission, source or outcome.",
+      "scenes": [
+        "ending_witness"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/finale-listed.jpg",
+      "reason": "The existing closing folio represents the memorial page only. Sera keeps her private witness ledger; separately held originals and recordings retain their actual custody and publication limits. No private-source transfer is depicted. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Finale direction reuses this complete painting beside canonical closing prose on desktop and after prose on phones. The compact speaker header and subsequent factual disclosures depict no new closure, source transfer, forgiveness or permission. The written commitment-status list retains this final action and its existing illustration; unresolved and compromised work cannot be turned into completed outcomes by the ending. Emotional payoff mode changes only the closing human beat: the existing memorial/pencil/stair/folio composition still fits the actual finale. No new source, private visit disclosure, absolution or restored outcome is depicted. AAA craft visual direction at ending_listed: retain the primary shot and offer only explicitly documented neutral person/detail views. These local views change no story, actual speaker, permission, source or outcome.",
+      "scenes": [
+        "ending_listed"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/nia-arrival.jpg",
+      "reason": "Nia is present after transport and controls whether her account is reviewed. Her closed notebook and attentive posture show an unresolved conversation, with no active recording, identifiable photograph, address or quotation permission depicted. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. The pivotal frame keeps this complete painting beside the canonical prose on wide screens and after it on phones. Compact speaker framing and an intimate score move attention to the actual words; source facts, outcomes and voice/actor assignments remain unchanged. Phase 5 preserves this establishing/earned-state illustration; optional neutral object detail is separately enumerated in cinematic-sequences.json and never depicts consent or completion.",
+      "scenes": [
+        "act2_witness_arrival"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/kerr-handover.jpg",
+      "reason": "The receipt scene observes Kerr checking the tag and closed brace case. Neutral guarded staging supplies no fitting, treatment, gratitude or forgiven privacy breach; actual registration terms and the separate conduct portrait retain authority. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
+      "scenes": [
+        "act2_route_receipt"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/mara-window.jpg",
+      "reason": "New character turning point: Mara chooses an ordinary cup orientation and invites company. The empty visitor chair, cup and rainy room show no chosen dispatch, paid courier, acquired testimony, restored trust or treatment. The same neutral plate fits a later shared hour; prose distinguishes a dispatched envelope from one still sealed. The optional spoken invitation adds no visual event, so retain this suitable window plate. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
+      "scenes": [
+        "act2_mara_company",
+        "act2_mara_company_kept"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/archive-desk.jpg",
+      "reason": "A neutral service desk, closed maintenance ledger, catalog and dark reader establish the archive work across access, preparation, comparison, retrieval and custody. Nothing visible authenticates a key, retrieves a source, authorizes a name or erases a worker trace. Existing actual speaker portraits remain beside the plate. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Optional catalog investigation reuses this neutral, closed-ledger desk. Catalog descriptions and locators are search aids; the painting depicts no retrieved extraction, authenticated key, employment outcome or public source permission. Original voiced scenes and speaker portraits remain matched. The shortened catalog return and written task directions reuse the same unresolved desk; an accepted locator is not a retrieved record.",
+      "scenes": [
+        "act2_archive_compare",
+        "act2_archive_door"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/courier-table.jpg",
+      "reason": "Asa’s neutral neighborhood courier table gives later receipt and personal conversations a distinct setting. A satchel and routing papers depict no arrived parcel, stock entry, restored route, passenger clearance or patient treatment; written outcomes retain authority across declined, unconfirmed, exposed, late and private deliveries. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Explicit earned-outcome variants are reviewed separately; unresolved states keep this neutral baseline. Optional shared-history notes use recorded outcomes at these later visits. The existing scene and speaker art remains suitable and adds no promise, permission or resolved consequence.",
+      "scenes": [
+        "act3_freight_visit",
+        "act3_freight_query",
+        "act3_freight_reflection"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/laundry-cart.jpg",
+      "reason": "A cart of clothes awaiting washing establishes Sera’s ordinary shared work before funding, carrying or declining the task. Spare towels do not depict the pending wash as complete; no moved household, repaired valve, witness room or treatment is shown. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Optional shared-history notes use recorded outcomes at these later visits. The existing scene and speaker art remains suitable and adds no promise, permission or resolved consequence.",
+      "scenes": [
+        "act3_shelter_visit"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/notice-desk.jpg",
+      "reason": "Neutral dispatch materials establish the room without representing a selected schedule, receipt, attendance or private household information. The loose stationery is illustrative, not a count of committed cards. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Written saved-draft, workload and choice-finding guidance retains this neutral desk. A draft depicts no accepted dispatch; actual patient acknowledgements and attendance remain separate. Exact spoken quotations, actors and voice deliveries are unchanged.",
+      "scenes": [
+        "act2_notice_brief",
+        "act2_notice_sources",
+        "act2_notice_methods",
+        "act2_notice_allocation",
+        "act2_notice_allocation_review",
+        "act2_notice_offer",
+        "act2_notice_counter",
+        "act2_notice_capacity",
+        "act2_notice_privacy_refusal",
+        "act2_notice_receipt"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/repair-bench.jpg",
+      "reason": "The existing neutral repair bench displays the four closed kits before purchase. Cash comparisons, trained handling and optional earned-training advice change no ownership, care reservation or observed outcome in this illustration. The new advice is a written equipment comparison, not additional Quill dialogue; his actual quoted words, portrait and voice remain unchanged. Written check-odds comparisons use hypothetical equipment only; this existing workshop painting grants no purchase, access or successful check.",
+      "scenes": [
+        "act2_workshop"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/shelter-pump.jpg",
+      "reason": "This plate belongs only to the unresolved pump-method decision; it never accompanies repaired, evacuated or allocated-room outcomes.",
+      "scenes": [
+        "act2_shelter_methods"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/witness-checkpoint.jpg",
+      "reason": "The checkpoint setting depicts no witness identity, approved crossing, protected destination or completed transfer; Kerr’s actual portrait remains. It also suits the pending ninety-creds private-room funding decision: money has not yet been spent and no tenancy entry or recording permission is implied. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
+      "scenes": [
+        "act2_witness_checkpoint"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/nia-transfer.jpg",
+      "reason": "Nia’s pre-transfer agency and established appearance accompany her briefing and work question. No tightened harness, completed move, protected room, recording or new permission is depicted. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Expression staging accompanies the actual actor and adds no outcome or permission. The pivotal frame keeps this complete painting beside the canonical prose on wide screens and after it on phones. Compact speaker framing and an intimate score move attention to the actual words; source facts, outcomes and voice/actor assignments remain unchanged. Phase 5 preserves this establishing/earned-state illustration; optional neutral object detail is separately enumerated in cinematic-sequences.json and never depicts consent or completion.",
+      "scenes": [
+        "act2_witness_brief"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/nia-transfer.jpg",
+      "reason": "The existing neutral Nia transfer painting precedes transport. Trained harness handling changes added strain only; the portrait shows her agency and depicts no completed transfer, recording consent or recovery. The pivotal frame keeps this complete painting beside the canonical prose on wide screens and after it on phones. Compact speaker framing and an intimate score move attention to the actual words; source facts, outcomes and voice/actor assignments remain unchanged. Phase 5 preserves this establishing/earned-state illustration; optional neutral object detail is separately enumerated in cinematic-sequences.json and never depicts consent or completion.",
+      "scenes": [
+        "act2_witness_support"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/ordinary-rest.jpg",
+      "reason": "The available ordinary seat distinguishes optional rest from memory extraction before the player accepts, pays for or declines recovery. No completed care or strain outcome is shown. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
+      "scenes": [
+        "act2_recovery"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/private-reply.jpg",
+      "reason": "Neutral correspondence materials accompany refusal, private terms and dispatch without depicting a public release, queue intake, inquiry finding or acquittal. The envelope flap and written source details stay out of view. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
+      "scenes": [
+        "act2_response_refusal",
+        "act2_response_terms",
+        "act2_response_dispatch",
+        "act2_response_receipt"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/memorial-stair.jpg",
+      "reason": "The populated memorial establishes the wall before an independent finale choice. No readable identity, open witness ledger, address, fresh inscription, completed declaration or absolution is depicted. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Expression staging accompanies the actual actor and adds no outcome or permission. Explicit earned-outcome variants are reviewed separately; unresolved states keep this neutral baseline. Phase 5 preserves this establishing/earned-state illustration; optional neutral object detail is separately enumerated in cinematic-sequences.json and never depicts consent or completion.",
+      "scenes": [
+        "ward_wall",
+        "act3_arrival"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/market-counter.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Multiline dialogue review: the existing setting and actual speaker portrait accompany restored two-paragraph speech; no changed words or outcome. Optional shared-history notes use recorded outcomes at these later visits. The existing scene and speaker art remains suitable and adds no promise, permission or resolved consequence.",
+      "scenes": [
+        "opening_self",
+        "pay_yes",
+        "pay_no",
+        "why",
+        "chapel",
+        "route",
+        "ending_walk",
+        "act2_kerr_door",
+        "act2_kerr",
+        "act2_kerr_collection_terms",
+        "act2_quill_introduction",
+        "act3_kerr_collection",
+        "act3_kerr_collection_response",
+        "act3_kerr_personal_question",
+        "act3_quill_introduction"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/chapel-entry.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Multiline dialogue review: the existing setting and actual speaker portrait accompany restored two-paragraph speech; no changed words or outcome. Phase 5 preserves this establishing/earned-state illustration; optional neutral object detail is separately enumerated in cinematic-sequences.json and never depicts consent or completion.",
+      "scenes": [
+        "front",
+        "lumen",
+        "lumen_deal",
+        "lumen_cold",
+        "after_kerr",
+        "ending_burned",
+        "ending_taken",
+        "ending_sainted",
+        "act2_lumen_door",
+        "act2_lumen"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/chapel-service.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
+      "scenes": [
+        "side",
+        "undercroft",
+        "chapel_methods",
+        "chapel_window_plan",
+        "chapel_window_expired"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/memory-apparatus.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Phase 5 preserves this establishing/earned-state illustration; optional neutral object detail is separately enumerated in cinematic-sequences.json and never depicts consent or completion.",
+      "scenes": [
+        "vault_quiet",
+        "kerr",
+        "kerr_fight"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/opening.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits. A brief decorative environmental layer settles to stillness after 3.8 seconds, with reduced motion disabling it; no face, evidence or outcome is animated.",
+      "scenes": [
+        "ending_sold",
+        "ending_both",
+        "ending_smashed",
+        "ending_ash",
+        "ending_exposed"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/district-board.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
+      "scenes": [
+        "districts",
+        "street_after",
+        "act2_origin_return",
+        "act2_public_response",
+        "act2_training",
+        "ending_week_wards"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/spire-counter.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
+      "scenes": [
+        "act2_helion_door",
+        "act2_helion",
+        "act2_folio",
+        "ending_week_deal"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/spire-terminal.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
+      "scenes": [
+        "act2_origin_spire",
+        "act2_spire_result"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/shelter-landing.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Explicit earned-outcome variants are reviewed separately; unresolved states keep this neutral baseline.",
+      "scenes": [
+        "act2_shelter_prep",
+        "act2_shelter_evacuation",
+        "act2_shelter_rooms",
+        "act2_shelter_result",
+        "act2_origin_gutterwire"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/shelter-hall.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
+      "scenes": [
+        "act2_shelter_hall"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/freight.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits.",
+      "scenes": [
+        "act2_freight_sources"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/freight-passage.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Explicit earned-outcome variants are reviewed separately; unresolved states keep this neutral baseline.",
+      "scenes": [
+        "act2_freight_prep",
+        "act2_freight_crossing",
+        "act2_freight_recovery",
+        "act2_freight_intake",
+        "act2_freight_result",
+        "act2_origin_dustline"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/canal-dispatch.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. A brief decorative environmental layer settles to stillness after 3.8 seconds, with reduced motion disabling it; no face, evidence or outcome is animated. Phase 5 preserves this establishing/earned-state illustration; optional neutral object detail is separately enumerated in cinematic-sequences.json and never depicts consent or completion.",
+      "scenes": [
+        "act2_heat",
+        "act2_archive_verified",
+        "act2_recovery_after",
+        "act2_witness_plan"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/archive-desk.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits.",
+      "scenes": [
+        "act2_archive_gap"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/memory-bench.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
+      "scenes": [
+        "memory_reconstruction",
+        "memory_sequence_result",
+        "memory_model",
+        "memory_model_test",
+        "memory_model_result",
+        "memory_challenge",
+        "memory_cross_exam",
+        "memory_assurance",
+        "memory_channel",
+        "memory_publication"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/clinic-relay.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Expression staging accompanies the actual actor and adds no outcome or permission. Optional shared-history notes use recorded outcomes at these later visits. The existing scene and speaker art remains suitable and adds no promise, permission or resolved consequence. Phase 5 preserves this establishing/earned-state illustration; optional neutral object detail is separately enumerated in cinematic-sequences.json and never depicts consent or completion.",
+      "scenes": [
+        "act2_witness_door",
+        "act2_witness_lost",
+        "act2_witness_repair",
+        "act3_witness_visit",
+        "act3_nia_contact"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/clinic-coolant.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
+      "scenes": [
+        "act2_pump_brief",
+        "act2_pump_methods",
+        "act2_pump_triage",
+        "act2_pump_report",
+        "act3_pump_visit",
+        "act3_pump_schedule"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/notice-desk.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Written commitment and journal status now distinguish dispatch acceptance from two observed card acknowledgements. This neutral return setting claims no further receipt or attendance, and all exact audible words and actual actors remain unchanged.",
+      "scenes": [
+        "act3_chapel_return",
+        "act2_notice_recovery",
+        "act3_notice_visit",
+        "act3_notice_repair",
+        "act3_notice_result"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/hearing-table.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Optional shared-history notes use recorded outcomes at these later visits. The existing scene and speaker art remains suitable and adds no promise, permission or resolved consequence.",
+      "scenes": [
+        "act3_edda_terms",
+        "act3_edda_reply",
+        "act3_edda_visit",
+        "act3_records_visit"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/spire-payroll.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits.",
+      "scenes": [
+        "act3_edda_methods"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/memorial-stair.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits. Phase 5 preserves this establishing/earned-state illustration; optional neutral object detail is separately enumerated in cinematic-sequences.json and never depicts consent or completion.",
+      "scenes": [
+        "act3_neighborhood"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/mara-window.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Optional shared-history notes use recorded outcomes at these later visits. The existing scene and speaker art remains suitable and adds no promise, permission or resolved consequence.",
+      "scenes": [
+        "act2_mara_quiet",
+        "act3_mara_followup"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/ordinary-rest.jpg",
+      "reason": "Neutral setting plate explicitly reviewed against this conversation or unresolved/completed return. The frame shows no claimed payment, completed treatment, permission, source verdict, delivery or relocation; actual outcomes remain in prose and portraits. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Optional shared-history notes use recorded outcomes at these later visits. The existing scene and speaker art remains suitable and adds no promise, permission or resolved consequence.",
+      "scenes": [
+        "act3_lumen_boundary"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/stallholder-story.jpg",
+      "reason": "The stallholder tells her authored cautionary story at the counter before the job is accepted. The frame supplies no memory evidence or completed transaction. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes.",
+      "scenes": [
+        "opening_approach",
+        "opening_neighbor"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/ren-canal.jpg",
+      "reason": "Ren’s introduction and later canal returns retain the neutral resident setting. No shelter repair, family arrival, street declaration, relocation or source verdict is depicted. During audible bound dialogue, a separately reviewed portrait identifies the actual speaking actor without changing this setting or its outcomes. Read-only commitment directions and the care-budget comparison retain this unresolved canal setting; they are written UI advice, not new Ren dialogue or proof of completed clinic work, a kept shift or Nia’s recording approval. Existing actual-actor portraits and exact voice deliveries remain matched. Distribution drafts and deferred witness accounts now have separate written return directions and named chapter warnings. The setting supplies no accepted cards, approved recording or attendance; existing spoken words remain unchanged. Paused entry/exit plans now return to this neutral canal without repeating Ren's introduction. A saved crossing is not departure, collection or handover; no new spoken words or outcome image is introduced.",
+      "scenes": [
+        "act2_middle"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/asa-dispatch.jpg",
+      "reason": "Closer character-led dispatch briefing before acceptance or crossing. The intact sealed case supplies no delivery, clearance or treatment outcome.",
+      "scenes": [
+        "act2_freight_brief"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/edda-archive.jpg",
+      "reason": "Reuse Nia’s actual private-room/relay imagery and Ives’s hearing frame. New neutral Edda/Sera plates show blank papers and closed sources without a retrieved record, approved account, filed outcome or verdict. Canonical text and actual saved state retain authority. Investigation frame pairs the complete painting with canonical prose on desktop and places prose first on phones. Actual audible actors retain their reviewed portraits.",
+      "scenes": [
+        "act2_archive_brief"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/edda-archive.jpg",
+      "reason": "Reuse Nia’s actual private-room/relay imagery and Ives’s hearing frame. New neutral Edda/Sera plates show blank papers and closed sources without a retrieved record, approved account, filed outcome or verdict. Canonical text and actual saved state retain authority. Investigation frame pairs the complete painting with canonical prose on desktop and places prose first on phones. Actual audible actors retain their reviewed portraits.",
+      "scenes": [
+        "act2_archive_challenge"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/edda-archive.jpg",
+      "reason": "Reuse Nia’s actual private-room/relay imagery and Ives’s hearing frame. New neutral Edda/Sera plates show blank papers and closed sources without a retrieved record, approved account, filed outcome or verdict. Canonical text and actual saved state retain authority. Investigation frame pairs the complete painting with canonical prose on desktop and places prose first on phones. Actual audible actors retain their reviewed portraits.",
+      "scenes": [
+        "act2_archive_custody"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/nia-arrival.jpg",
+      "reason": "Reuse Nia’s actual private-room/relay imagery and Ives’s hearing frame. New neutral Edda/Sera plates show blank papers and closed sources without a retrieved record, approved account, filed outcome or verdict. Canonical text and actual saved state retain authority. Investigation frame pairs the complete painting with canonical prose on desktop and places prose first on phones. Actual audible actors retain their reviewed portraits. Phase 5 preserves this establishing/earned-state illustration; optional neutral object detail is separately enumerated in cinematic-sequences.json and never depicts consent or completion.",
+      "scenes": [
+        "act2_witness_safe"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/sera-hearing.jpg",
+      "reason": "Reuse Nia’s actual private-room/relay imagery and Ives’s hearing frame. New neutral Edda/Sera plates show blank papers and closed sources without a retrieved record, approved account, filed outcome or verdict. Canonical text and actual saved state retain authority. Investigation frame pairs the complete painting with canonical prose on desktop and places prose first on phones. Actual audible actors retain their reviewed portraits.",
+      "scenes": [
+        "act3_testimony_review"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/hearing-table.jpg",
+      "reason": "Reuse Nia’s actual private-room/relay imagery and Ives’s hearing frame. New neutral Edda/Sera plates show blank papers and closed sources without a retrieved record, approved account, filed outcome or verdict. Canonical text and actual saved state retain authority. Investigation frame pairs the complete painting with canonical prose on desktop and places prose first on phones. Actual audible actors retain their reviewed portraits.",
+      "scenes": [
+        "act3_testimony_consent"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/clinic-relay.jpg",
+      "reason": "Reuse Nia’s actual private-room/relay imagery and Ives’s hearing frame. New neutral Edda/Sera plates show blank papers and closed sources without a retrieved record, approved account, filed outcome or verdict. Canonical text and actual saved state retain authority. Investigation frame pairs the complete painting with canonical prose on desktop and places prose first on phones. Actual audible actors retain their reviewed portraits.",
+      "scenes": [
+        "act3_testimony_nia"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/ives-hearing.jpg",
+      "reason": "Reuse Nia’s actual private-room/relay imagery and Ives’s hearing frame. New neutral Edda/Sera plates show blank papers and closed sources without a retrieved record, approved account, filed outcome or verdict. Canonical text and actual saved state retain authority. Investigation frame pairs the complete painting with canonical prose on desktop and places prose first on phones. Actual audible actors retain their reviewed portraits.",
+      "scenes": [
+        "act3_testimony_hearing"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/sera-hearing.jpg",
+      "reason": "Reuse Nia’s actual private-room/relay imagery and Ives’s hearing frame. New neutral Edda/Sera plates show blank papers and closed sources without a retrieved record, approved account, filed outcome or verdict. Canonical text and actual saved state retain authority. Investigation frame pairs the complete painting with canonical prose on desktop and places prose first on phones. Actual audible actors retain their reviewed portraits.",
+      "scenes": [
+        "act3_testimony_correction"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/sera-hearing.jpg",
+      "reason": "Reuse Nia’s actual private-room/relay imagery and Ives’s hearing frame. New neutral Edda/Sera plates show blank papers and closed sources without a retrieved record, approved account, filed outcome or verdict. Canonical text and actual saved state retain authority. Investigation frame pairs the complete painting with canonical prose on desktop and places prose first on phones. Actual audible actors retain their reviewed portraits.",
+      "scenes": [
+        "act3_testimony_record"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/incinerator-flue.jpg",
+      "reason": "Wide establishing composition emphasizes the square hatch above the incinerator flue before entry. No open hatch, crossing, tech encounter, weapon or safe exit is depicted. Existing actual-speaker portraits and exact dialogue remain unchanged. A brief decorative environmental layer settles to stillness after 3.8 seconds, with reduced motion disabling it; no face, evidence or outcome is animated.",
+      "scenes": [
+        "hatch"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/archive-preparation.jpg",
+      "reason": "Close detail composition emphasizes preparing the reader and route before retrieval. The folio and drawers stay closed; nothing authenticates an issuing key, exposes a source, grants publication consent or claims a completed search. Existing actual-speaker portraits and exact dialogue remain unchanged.",
+      "scenes": [
+        "act2_archive_prep"
+      ]
+    },
+    {
+      "treatment": "background",
+      "asset": "/art/chapter-week.jpg",
+      "reason": "Neutral chapter setting at the start of a week: no sale, witness, resolved work, authenticated record or successful outcome is depicted. Run-specific chapter prose remains authoritative.",
+      "scenes": [
+        "card_week"
+      ]
+    },
+    {
+      "treatment": "background",
+      "asset": "/art/chapter-wall.jpg",
+      "reason": "Neutral memorial texture before the runner approaches: no readable names, public testimony, permission, witness location or completed inscription. It fits every chapter entry route.",
+      "scenes": [
+        "card_wall"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/attendant-confrontation.jpg",
+      "reason": "Literal confrontation after the hatch approach is noticed. The established masked attendant has an ordinary wrench and collar mic, with no transmitted alert indicator, injury, victory or escape. Same actor and exact existing speech; no new dialogue.",
+      "scenes": [
+        "hatch_caught"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/held-case.jpg",
+      "reason": "Failed collection aftermath: the closed case remains on its shelf, before any registered courier or handover. No recipient, register, delivery receipt, privacy guarantee, medical treatment or completed promise is depicted; both trace states retain their own prose. A brief decorative environmental layer settles to stillness after 3.8 seconds, with reduced motion disabling it; no face, evidence or outcome is animated.",
+      "scenes": [
+        "act2_route_recovery"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/shelter-conversation.jpg",
+      "reason": "Sera and Ren are both named and quoted here, before repair or room allocation. Keep the leaking valve, bucket, kettle and accessible ramp; do not reuse after a completed repair or for a refused/moved household.",
+      "scenes": [
+        "act2_shelter_brief"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/edda-service-review.jpg",
+      "reason": "Edda covers her current account number while three source objects await inspection. No submitted query, completed closure, handover or historical authentication is depicted; all inspection counts retain their own text. Anatomy retake: two separate arms end in two hands on the counter; the former book/chest-hand pose is withdrawn. Source objects and unresolved meaning are unchanged.",
+      "scenes": [
+        "act2_spire_sources"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/lumen-cup.jpg",
+      "reason": "Lumen lifts Mara’s cup to wipe beneath it in this exact room. Ordinary care establishes no endorsement, quotation permission or forgiveness; guarded portrait staging remains authoritative when trust was broken.",
+      "scenes": [
+        "act2_lumen_quiet"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/edda-archive.jpg",
+      "reason": "Reuse the fitting neutral source/service setting; source knowledge and tasks remain written facts. Public-review depot variants require the actual submitted request, not a case draft.",
+      "scenes": [
+        "act2_district_brief"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/edda-archive.jpg",
+      "reason": "Reuse the fitting neutral source/service setting; source knowledge and tasks remain written facts. Public-review depot variants require the actual submitted request, not a case draft.",
+      "scenes": [
+        "act2_district_edda"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/canal-dispatch.jpg",
+      "reason": "Reuse the fitting neutral source/service setting; source knowledge and tasks remain written facts. Public-review depot variants require the actual submitted request, not a case draft.",
+      "scenes": [
+        "act2_district_canal"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/canal-dispatch.jpg",
+      "reason": "Reuse the fitting neutral source/service setting; source knowledge and tasks remain written facts. Public-review depot variants require the actual submitted request, not a case draft.",
+      "scenes": [
+        "act2_district_docket"
+      ]
+    },
+    {
+      "treatment": "portrait",
+      "asset": "/art/kerr.jpg",
+      "reason": "Reuse Kerr’s existing portrait at the familiar stall. No closed replacement case, handover, treatment or forgiveness is depicted.",
+      "scenes": [
+        "act2_district_kerr"
+      ]
+    },
+    {
+      "treatment": "portrait",
+      "asset": "/art/kerr.jpg",
+      "reason": "Reuse Kerr’s existing portrait at the familiar stall. No closed replacement case, handover, treatment or forgiveness is depicted.",
+      "scenes": [
+        "act2_district_kerr_reply"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/depot-review.jpg",
+      "reason": "Only the registered public-counter shift uses the reviewed depot painting. Empty ledger and counter do not depict a wage, completed audit or recipient identity.",
+      "scenes": [
+        "act2_district_work"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/spire-payroll.jpg",
+      "reason": "Reuse the neutral empty-chair service-room painting for a short rest appointment, with no medical intervention, completed payroll or restored access.",
+      "scenes": [
+        "act2_district_rest"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/canal-dispatch.jpg",
+      "reason": "Reuse the fitting neutral source/service setting; source knowledge and tasks remain written facts. Public-review depot variants require the actual submitted request, not a case draft.",
+      "scenes": [
+        "act2_district_result"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/archive-held-original.jpg",
+      "reason": "Reuse the fitting neutral source/service setting; source knowledge and tasks remain written facts. Public-review depot variants require the actual submitted request, not a case draft. Phase 4 adds the actual specialist review-intake/held status to the written return; the neutral retained-original plate and existing spoken line remain suitable and imply no accepted correction. Phase 5 preserves this establishing/earned-state illustration; optional neutral object detail is separately enumerated in cinematic-sequences.json and never depicts consent or completion.",
+      "scenes": [
+        "act3_district_return"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/correction-bench.jpg",
+      "reason": "Neutral dry filing bench and separate blank/sleeved records fit this specialist procedure before and after intake. No named signature, specialized owned kit, authenticated source or accepted correction is depicted. The actual actor uses the existing portrait; source values and effects remain written.",
+      "scenes": [
+        "act2_technique_bench"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/correction-bench.jpg",
+      "reason": "Neutral dry filing bench and separate blank/sleeved records fit this specialist procedure before and after intake. No named signature, specialized owned kit, authenticated source or accepted correction is depicted. The actual actor uses the existing portrait; source values and effects remain written.",
+      "scenes": [
+        "act2_technique_chrome"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/correction-bench.jpg",
+      "reason": "Neutral dry filing bench and separate blank/sleeved records fit this specialist procedure before and after intake. No named signature, specialized owned kit, authenticated source or accepted correction is depicted. The actual actor uses the existing portrait; source values and effects remain written.",
+      "scenes": [
+        "act2_technique_chrome_submit"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/correction-bench.jpg",
+      "reason": "Neutral dry filing bench and separate blank/sleeved records fit this specialist procedure before and after intake. No named signature, specialized owned kit, authenticated source or accepted correction is depicted. The actual actor uses the existing portrait; source values and effects remain written.",
+      "scenes": [
+        "act2_technique_ghost"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/correction-bench.jpg",
+      "reason": "Neutral dry filing bench and separate blank/sleeved records fit this specialist procedure before and after intake. No named signature, specialized owned kit, authenticated source or accepted correction is depicted. The actual actor uses the existing portrait; source values and effects remain written.",
+      "scenes": [
+        "act2_technique_ghost_route"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/correction-bench.jpg",
+      "reason": "Neutral dry filing bench and separate blank/sleeved records fit this specialist procedure before and after intake. No named signature, specialized owned kit, authenticated source or accepted correction is depicted. The actual actor uses the existing portrait; source values and effects remain written.",
+      "scenes": [
+        "act2_technique_face"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/correction-bench.jpg",
+      "reason": "Neutral dry filing bench and separate blank/sleeved records fit this specialist procedure before and after intake. No named signature, specialized owned kit, authenticated source or accepted correction is depicted. The actual actor uses the existing portrait; source values and effects remain written.",
+      "scenes": [
+        "act2_technique_face_scope"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/correction-bench.jpg",
+      "reason": "Neutral dry filing bench and separate blank/sleeved records fit this specialist procedure before and after intake. No named signature, specialized owned kit, authenticated source or accepted correction is depicted. The actual actor uses the existing portrait; source values and effects remain written.",
+      "scenes": [
+        "act2_technique_nerve"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/correction-bench.jpg",
+      "reason": "Neutral dry filing bench and separate blank/sleeved records fit this specialist procedure before and after intake. No named signature, specialized owned kit, authenticated source or accepted correction is depicted. The actual actor uses the existing portrait; source values and effects remain written.",
+      "scenes": [
+        "act2_technique_nerve_handover"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/correction-bench.jpg",
+      "reason": "Neutral dry filing bench and separate blank/sleeved records fit this specialist procedure before and after intake. No named signature, specialized owned kit, authenticated source or accepted correction is depicted. The actual actor uses the existing portrait; source values and effects remain written.",
+      "scenes": [
+        "act2_technique_result"
+      ]
+    },
+    {
+      "scenes": [
+        "kerr_terms",
+        "kerr_terms_negotiate",
+        "kerr_terms_named",
+        "kerr_terms_bluff",
+        "kerr_terms_bluffed",
+        "kerr_terms_exposed",
+        "kerr_terms_retreat"
+      ],
+      "treatment": "illustration",
+      "asset": "/art/kerr-terms.jpg",
+      "reason": "Neutral reference-matched Kerr listening in the chapel. No payment, clearance, injury or departure is depicted, so the image fits every unresolved or just-spoken terms scene."
+    },
+    {
+      "scenes": [
+        "act2_kerr_terms_owned"
+      ],
+      "treatment": "portrait",
+      "asset": "/art/kerr.jpg",
+      "reason": "A voluntary admission under the existing Ward Four awning. Existing Kerr portrait and location art suit the conversation; no repair, forgiveness or new place is depicted."
+    },
+    {
+      "scenes": [
+        "act2_mara_account",
+        "act2_mara_account_told",
+        "act2_mara_account_owned",
+        "act2_mara_account_deflected",
+        "act2_mara_account_distance",
+        "act3_mara_account_return",
+        "act3_mara_account_question",
+        "act3_mara_account_repair"
+      ],
+      "treatment": "illustration",
+      "asset": "/art/mara-account.jpg",
+      "reason": "Identity-matched Mara listening in the existing clinic side room. The untouched cup and one resting visible hand depict no transaction, permission, apology or resolution and fit every personal approach. No recorder or private document appears."
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/nia-arrival.jpg",
+      "reason": "Reuse the existing identity-matched Nia room painting. The closed notebook, photograph withheld from view and resting hands depict conversation, not recording approval. The same neutral room supports her approved and deliberately unrecorded responses; exact words and actor changes carry the difference.",
+      "scenes": [
+        "act2_witness_return_private"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/clinic-relay.jpg",
+      "reason": "Reuse the neutral clinic relay setting for the registered-room and second-move calls. No private room or address, new treatment, completed promise or erased exposure is pictured. Nia remains the actual speaking portrait; the existing painting does not invent a new location.",
+      "scenes": [
+        "act2_witness_return_registered",
+        "act2_witness_return_relocated"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/ordinary-rest.jpg",
+      "reason": "Reuse the neutral clinic work/rest setting for Lumen answering the unkept shift. The empty chair and water depict no completed shift, forgiveness, treatment or extra privacy. Lumen is identified by the matching existing portrait and exact new dialogue.",
+      "scenes": [
+        "act3_witness_shift_return"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/archive-desk.jpg",
+      "reason": "Reuse the same archive desk and closed records for free source comparison and an unsubmitted key target. No authenticated result or acquired ledger is depicted. AAA craft visual direction at act2_craft_archive, act2_craft_archive_issuer: retain the primary shot and offer only explicitly documented neutral person/detail views. These local views change no story, actual speaker, permission, source or outcome.",
+      "scenes": [
+        "act2_craft_archive",
+        "act2_craft_archive_issuer"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/edda-archive.jpg",
+      "reason": "Reuse identity-matched Edda at the archive counter. Her two connected hands and bounded paperwork fit a correction or scoped request; the image grants no signature, worker list or source-name permission. AAA craft visual direction at act2_craft_archive_challenge, act2_craft_archive_ledger: retain the primary shot and offer only explicitly documented neutral person/detail views. These local views change no story, actual speaker, permission, source or outcome.",
+      "scenes": [
+        "act2_craft_archive_challenge",
+        "act2_craft_archive_ledger"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/correction-bench.jpg",
+      "reason": "Reuse a neutral blank workbench at the records table, fitting successful and unresolved returns without depicting an acquired source or ruling. AAA craft visual direction at act3_craft_archive_return: retain the primary shot and offer only explicitly documented neutral person/detail views. These local views change no story, actual speaker, permission, source or outcome.",
+      "scenes": [
+        "act3_craft_archive_return"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/market-counter.jpg",
+      "reason": "Reuse the known sheltered Ward Four stall. The empty counter depicts no paid bond, handover, refund or treatment; the actual Kerr portrait identifies the speaker. AAA craft visual direction at act2_craft_kerr_offer, act2_craft_kerr_settlement, act3_craft_kerr_settlement: retain the primary shot and offer only explicitly documented neutral person/detail views. These local views change no story, actual speaker, permission, source or outcome.",
+      "scenes": [
+        "act2_craft_kerr_offer",
+        "act2_craft_kerr_settlement",
+        "act3_craft_kerr_settlement"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/correction-bench.jpg",
+      "reason": "Reuse the blank records workbench for a personal pause after an actual submitted or unsubmitted question. The actual Edda portrait supplies identity; no retrieved source, restored shift, consent or inquiry result is painted. AAA craft visual direction at act3_payoff_edda: retain the primary shot and offer only explicitly documented neutral person/detail views. These local views change no story, actual speaker, permission, source or outcome.",
+      "scenes": [
+        "act3_payoff_edda"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/market-counter.jpg",
+      "reason": "Reuse the neutral stall counter for Kerr’s received-case or empty-space pause, with his actual portrait and retained broken-promise expression. No fitting, cure, refund, erased register or unobserved delivery is painted. AAA craft visual direction at act3_payoff_kerr: retain the primary shot and offer only explicitly documented neutral person/detail views. These local views change no story, actual speaker, permission, source or outcome.",
+      "scenes": [
+        "act3_payoff_kerr"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/asa-dispatch.jpg",
+      "reason": "Reuse the actual established Asa beside a closed dispatch case for the offer; no lifting, receipt, agreement or shared load is depicted.",
+      "scenes": [
+        "act2_ramp_terms"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/freight-ramp.jpg",
+      "reason": "New empty covered ramp establishes a distinct surveyed carry space. Neutral architecture shows no selected equipment, moving case, handover, stock receipt, treatment or consent; written observations and actual choices carry those facts.",
+      "scenes": [
+        "act2_ramp_survey",
+        "act2_ramp_gear",
+        "act2_ramp_load",
+        "act2_ramp_arrived",
+        "act2_ramp_stopped"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/courier-table.jpg",
+      "reason": "Reuse the quiet unoccupied courier table for an attributed personal return. No new receipt, restored route, patient outcome or forgiveness is painted.",
+      "scenes": [
+        "act3_ramp_return"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/correction-bench.jpg",
+      "reason": "The same canal filing bench, with blank sheet and closed sleeve. Neutral unresolved props fit invitation, inspection, preparation, routing, held/accepted result and later conversation without depicting signature, witness identity, receipt, completed review or permission.",
+      "scenes": [
+        "act2_return_routing_terms",
+        "act2_return_routing_read",
+        "act2_return_routing_prepare",
+        "act2_return_routing_route",
+        "act2_return_routing_result",
+        "act3_return_routing_return"
+      ]
+    },
+    {
+      "treatment": "illustration",
+      "asset": "/art/sera-hearing.jpg",
+      "reason": "Reuse the reviewed neutral Sera records-table painting at conversation entry and after return. Closed folders and blank papers reveal no source, signature, quoted witness or filing outcome. The art represents the table conversation, never Sera simultaneously at the wall. No new setting or major visual event needs a new primary painting.",
+      "scenes": [
+        "act3_sera_shift",
+        "act3_sera_carry",
+        "act3_sera_watch",
+        "act3_sera_reply"
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "speaker": "Asa",
+      "asset": "/art/asa-terms.jpg",
+      "scenes": [
+        "act2_ramp_terms",
+        "act2_ramp_survey",
+        "act2_ramp_gear",
+        "act2_ramp_load",
+        "act2_ramp_arrived",
+        "act2_ramp_stopped",
+        "act3_ramp_return"
+      ],
+      "reason": "Established practical attention during the cooperative carry and personal return; no expression grants a receipt, treatment, or acquittal."
+    },
+    {
+      "speaker": "Kerr",
+      "asset": "/art/kerr-closed.jpg",
+      "scenes": [
+        "act3_payoff_kerr"
+      ],
+      "allFlags": [
+        "kerr_route_private",
+        "kerr_route_trace"
+      ],
+      "reason": "The personal pause preserves Kerr's response to the known broken private terms. A minute together grants no forgiveness or reopened contact."
+    },
+    {
+      "speaker": "Mara",
+      "asset": "/art/mara-boundary.jpg",
+      "scenes": [
+        "act2_response_agenda",
+        "act2_response_refusal",
+        "act2_response_terms",
+        "act2_response_dispatch",
+        "act3_response_visit"
+      ],
+      "allFlags": [
+        "response_public_refused"
+      ],
+      "reason": "Mara's actual refusal remains a boundary after a private reply; this expression grants no new permission."
+    },
+    {
+      "speaker": "Sister Lumen",
+      "asset": "/art/lumen-guarded.jpg",
+      "scenes": [
+        "act2_lumen_quiet",
+        "act3_lumen_boundary",
+        "act3_chapel_return"
+      ],
+      "anyFlags": [
+        "betrayed_lumen",
+        "response_clinic_refused"
+      ],
+      "reason": "Recorded betrayal or refused clinic sponsorship informs guarded attention, without depicting forgiveness."
+    },
+    {
+      "speaker": "Kerr",
+      "asset": "/art/kerr-closed.jpg",
+      "scenes": [
+        "act2_route_receipt",
+        "act3_kerr_collection",
+        "act3_kerr_collection_response",
+        "act3_kerr_personal_question"
+      ],
+      "allFlags": [
+        "kerr_route_private",
+        "kerr_route_trace"
+      ],
+      "reason": "Broken private collection terms keep a closed expression even after an observed handover or acknowledgement."
+    },
+    {
+      "speaker": "Quill",
+      "asset": "/art/quill-waiting.jpg",
+      "scenes": [
+        "act2_quill_introduction",
+        "act3_quill_introduction"
+      ],
+      "allFlags": [
+        "quill_refused"
+      ],
+      "reason": "The recorded postponed tab keeps Quill unsmiling; late repayment does not erase the earlier refusal."
+    },
+    {
+      "speaker": "Sera",
+      "asset": "/art/sera-listening.jpg",
+      "scenes": [
+        "act3_arrival",
+        "ending_witness"
+      ],
+      "allFlags": [
+        "confirmed_leak"
+      ],
+      "reason": "An admitted leak calls for attentive listening; it is not absolution or permission to quote another witness."
+    },
+    {
+      "speaker": "Edda",
+      "asset": "/art/edda-assignment.jpg",
+      "scenes": [
+        "act3_edda_reply"
+      ],
+      "allFlags": [
+        "edda_shift_paid"
+      ],
+      "reason": "Only an earned paid bench assignment permits Edda holding its notice beside the inquiry reference. Archive suspension and inquiry remain; no acquittal."
+    },
+    {
+      "speaker": "Kerr",
+      "asset": "/art/kerr-closed.jpg",
+      "scenes": [
+        "act2_district_kerr_reply"
+      ],
+      "allFlags": [
+        "kerr_route_private",
+        "kerr_route_trace"
+      ],
+      "anyFlags": [
+        "district_told_kerr_trace",
+        "kerr_route_delivered",
+        "kerr_route_visit"
+      ],
+      "reason": "Only a known broken private promise closes Kerr's expression here. An undisclosed docket cannot give him knowledge through the portrait; acknowledgement does not erase the trace."
+    }
+  ],
+  "speakingPortraits": [
+    {
+      "speaker": "Asa",
+      "asset": "/art/asa.jpg",
+      "scenes": [
+        "act2_freight_brief",
+        "act2_freight_recovery",
+        "act2_freight_result",
+        "act3_freight_reflection",
+        "act3_freight_visit",
+        "act2_ramp_terms",
+        "act2_ramp_survey",
+        "act2_ramp_gear",
+        "act2_ramp_load",
+        "act2_ramp_arrived",
+        "act2_ramp_stopped",
+        "act3_ramp_return"
+      ],
+      "reason": "Reviewed portrait for this actual actor during explicitly bound, revealed audible dialogue. Existing scene/flag expressions apply to this actor only; the scene’s setting and canonical story speaker remain unchanged."
+    },
+    {
+      "speaker": "Dispatcher",
+      "asset": "/art/dispatcher-portrait.jpg",
+      "scenes": [
+        "act2_notice_counter",
+        "act2_notice_offer",
+        "act2_return_routing_terms",
+        "act2_return_routing_read",
+        "act2_return_routing_prepare",
+        "act2_return_routing_route",
+        "act2_return_routing_result",
+        "act3_return_routing_return"
+      ],
+      "reason": "Reviewed portrait for this actual actor during explicitly bound, revealed audible dialogue. Existing scene/flag expressions apply to this actor only; the scene’s setting and canonical story speaker remain unchanged."
+    },
+    {
+      "speaker": "Edda",
+      "asset": "/art/edda.jpg",
+      "scenes": [
+        "act2_archive_brief",
+        "act2_archive_challenge",
+        "act2_archive_custody",
+        "act2_origin_spire",
+        "act2_spire_brief",
+        "act2_spire_methods",
+        "act2_spire_receipt",
+        "act2_spire_recovery",
+        "act2_spire_result",
+        "act2_spire_sources",
+        "act3_edda_reply",
+        "act3_edda_terms",
+        "act3_edda_visit",
+        "act3_spire_reply",
+        "act3_spire_visit",
+        "act2_craft_archive",
+        "act2_craft_archive_challenge",
+        "act2_craft_archive_issuer",
+        "act2_craft_archive_ledger",
+        "act3_craft_archive_return",
+        "act3_payoff_edda"
+      ],
+      "reason": "Reviewed portrait for this actual actor during explicitly bound, revealed audible dialogue. Existing scene/flag expressions apply to this actor only; the scene’s setting and canonical story speaker remain unchanged."
+    },
+    {
+      "speaker": "Ives",
+      "asset": "/art/ives.jpg",
+      "scenes": [
+        "act2_archive_door",
+        "act2_folio",
+        "act2_helion",
+        "act3_testimony_hearing",
+        "ending_listed"
+      ],
+      "reason": "Reviewed portrait for this actual actor during explicitly bound, revealed audible dialogue. Existing scene/flag expressions apply to this actor only; the scene’s setting and canonical story speaker remain unchanged."
+    },
+    {
+      "speaker": "Kerr",
+      "asset": "/art/kerr.jpg",
+      "scenes": [
+        "act2_heat",
+        "act2_kerr",
+        "act2_kerr_collection_terms",
+        "act2_kerr_door",
+        "act2_pump_methods",
+        "act2_route_receipt",
+        "act2_witness_checkpoint",
+        "act3_kerr_collection",
+        "act3_kerr_collection_response",
+        "act3_kerr_personal_question",
+        "act3_pump_visit",
+        "kerr",
+        "act2_craft_kerr_offer",
+        "act2_craft_kerr_settlement",
+        "act3_craft_kerr_settlement",
+        "act3_payoff_kerr"
+      ],
+      "reason": "Reviewed portrait for this actual actor during explicitly bound, revealed audible dialogue. Existing scene/flag expressions apply to this actor only; the scene’s setting and canonical story speaker remain unchanged."
+    },
+    {
+      "speaker": "Mara",
+      "asset": "/art/mara.jpg",
+      "scenes": [
+        "act2_mara_company",
+        "act2_mara_company_kept",
+        "act2_mara_quiet",
+        "act2_response_invitation",
+        "act2_response_receipt",
+        "act2_response_refusal",
+        "act2_response_terms",
+        "act3_mara_followup",
+        "act3_response_visit",
+        "mara_why",
+        "memo",
+        "memory_assurance",
+        "memory_challenge",
+        "memory_channel",
+        "memory_cross_exam",
+        "memory_sequence_result",
+        "act2_mara_account",
+        "act2_mara_account_told",
+        "act2_mara_account_owned",
+        "act2_mara_account_deflected",
+        "act2_mara_account_distance",
+        "act3_mara_account_return",
+        "act3_mara_account_question",
+        "act3_mara_account_repair"
+      ],
+      "reason": "Reviewed portrait for this actual actor during explicitly bound, revealed audible dialogue. Existing scene/flag expressions apply to this actor only; the scene’s setting and canonical story speaker remain unchanged."
+    },
+    {
+      "speaker": "Masked attendant",
+      "asset": "/art/masked-attendant-portrait.jpg",
+      "scenes": [
+        "hatch_caught"
+      ],
+      "reason": "Reviewed portrait for this actual actor during explicitly bound, revealed audible dialogue. Existing scene/flag expressions apply to this actor only; the scene’s setting and canonical story speaker remain unchanged."
+    },
+    {
+      "speaker": "Mechanic",
+      "asset": "/art/mechanic-portrait.jpg",
+      "scenes": [
+        "act3_records_visit"
+      ],
+      "reason": "Reviewed portrait for this actual actor during explicitly bound, revealed audible dialogue. Existing scene/flag expressions apply to this actor only; the scene’s setting and canonical story speaker remain unchanged."
+    },
+    {
+      "speaker": "Nia Pell",
+      "asset": "/art/nia.jpg",
+      "scenes": [
+        "act2_witness_arrival",
+        "act2_witness_brief",
+        "act2_witness_door",
+        "act2_witness_safe",
+        "act2_witness_support",
+        "act3_nia_contact",
+        "act3_testimony_nia",
+        "act3_witness_visit",
+        "act2_witness_return_private",
+        "act2_witness_return_registered",
+        "act2_witness_return_relocated"
+      ],
+      "reason": "Reviewed portrait for this actual actor during explicitly bound, revealed audible dialogue. Existing scene/flag expressions apply to this actor only; the scene’s setting and canonical story speaker remain unchanged."
+    },
+    {
+      "speaker": "Orderly",
+      "asset": "/art/orderly.jpg",
+      "scenes": [
+        "districts",
+        "front"
+      ],
+      "reason": "Reviewed portrait for this actual actor during explicitly bound, revealed audible dialogue. Existing scene/flag expressions apply to this actor only; the scene’s setting and canonical story speaker remain unchanged."
+    },
+    {
+      "speaker": "Quill",
+      "asset": "/art/quill.jpg",
+      "scenes": [
+        "act2_origin_dustline",
+        "act2_quill_introduction",
+        "act2_workshop",
+        "act3_quill_introduction",
+        "chapel",
+        "ending_walk",
+        "job_owner",
+        "pay",
+        "pay_no",
+        "pay_yes",
+        "route",
+        "stall",
+        "why"
+      ],
+      "reason": "Reviewed portrait for this actual actor during explicitly bound, revealed audible dialogue. Existing scene/flag expressions apply to this actor only; the scene’s setting and canonical story speaker remain unchanged."
+    },
+    {
+      "speaker": "Ren",
+      "asset": "/art/ren-portrait.jpg",
+      "scenes": [
+        "act2_middle",
+        "act2_shelter_brief",
+        "act2_shelter_hall",
+        "act2_shelter_rooms",
+        "act3_shelter_visit"
+      ],
+      "reason": "Reviewed portrait for this actual actor during explicitly bound, revealed audible dialogue. Existing scene/flag expressions apply to this actor only; the scene’s setting and canonical story speaker remain unchanged."
+    },
+    {
+      "speaker": "Sera",
+      "asset": "/art/sera.jpg",
+      "scenes": [
+        "act2_origin_gutterwire",
+        "act2_public_response",
+        "act2_shelter_brief",
+        "act2_shelter_result",
+        "act3_arrival",
+        "act3_shelter_visit",
+        "act3_testimony_consent",
+        "act3_testimony_correction",
+        "act3_testimony_review",
+        "ending_names",
+        "ending_quiet",
+        "ending_witness",
+        "ward_wall",
+        "act3_sera_shift",
+        "act3_sera_carry",
+        "act3_sera_watch",
+        "act3_sera_reply",
+        "act3_testimony_record"
+      ],
+      "reason": "Reviewed portrait for this actual actor during explicitly bound, revealed audible dialogue. Existing scene/flag expressions apply to this actor only; the scene’s setting and canonical story speaker remain unchanged."
+    },
+    {
+      "speaker": "Sister Lumen",
+      "asset": "/art/lumen.jpg",
+      "scenes": [
+        "act2_lumen",
+        "act2_lumen_door",
+        "act2_lumen_quiet",
+        "act2_notice_brief",
+        "act2_notice_capacity",
+        "act2_notice_privacy_refusal",
+        "act2_notice_receipt",
+        "act2_notice_recovery",
+        "act2_pump_brief",
+        "act2_recovery",
+        "act2_recovery_after",
+        "act2_response_invitation",
+        "act2_response_refusal",
+        "act2_witness_lost",
+        "act2_witness_repair",
+        "act3_chapel_return",
+        "act3_lumen_boundary",
+        "act3_notice_result",
+        "act3_notice_visit",
+        "ending_burned",
+        "lumen",
+        "lumen_cold",
+        "lumen_deal",
+        "memory_publication",
+        "vault_quiet",
+        "act2_witness_return_private",
+        "act3_witness_shift_return"
+      ],
+      "reason": "Reviewed portrait for this actual actor during explicitly bound, revealed audible dialogue. Existing scene/flag expressions apply to this actor only; the scene’s setting and canonical story speaker remain unchanged."
+    },
+    {
+      "speaker": "Stallholder",
+      "asset": "/art/stallholder-portrait.jpg",
+      "scenes": [
+        "opening_approach",
+        "opening_neighbor"
+      ],
+      "reason": "Reviewed portrait for this actual actor during explicitly bound, revealed audible dialogue. Existing scene/flag expressions apply to this actor only; the scene’s setting and canonical story speaker remain unchanged."
+    }
+  ],
+  "expressionPortraits": [
+    {
+      "speaker": "Mara",
+      "asset": "/art/mara-remorse.jpg",
+      "scenes": [
+        "memo",
+        "mara_why"
+      ],
+      "reason": "Recorded admission and remorse; no present-day forgiveness or new permission."
+    },
+    {
+      "speaker": "Nia Pell",
+      "asset": "/art/nia-terms.jpg",
+      "scenes": [
+        "act2_witness_door",
+        "act2_witness_brief",
+        "act3_testimony_nia"
+      ],
+      "reason": "Calm testimony and contact terms; no rescue, gratitude or recording permission supplied by the picture."
+    },
+    {
+      "speaker": "Ren",
+      "asset": "/art/ren-concerned.jpg",
+      "scenes": [
+        "act2_shelter_brief"
+      ],
+      "reason": "Practical concern about her father and the ramp; no completed repair or relocation."
+    },
+    {
+      "speaker": "Sera",
+      "asset": "/art/sera-attentive.jpg",
+      "scenes": [
+        "act3_arrival",
+        "ending_names",
+        "ending_quiet",
+        "ending_witness"
+      ],
+      "reason": "Patient attention before or after the final response; no forgiveness, completed inquiry or claimed writing action."
+    },
+    {
+      "speaker": "Kerr",
+      "asset": "/art/kerr-considering.jpg",
+      "scenes": [
+        "act2_kerr_collection_terms",
+        "act2_route_receipt",
+        "act3_kerr_collection"
+      ],
+      "reason": "Practical, reserved attention to case and private terms; earned breach expression still takes precedence. No recovery or forgiveness."
+    },
+    {
+      "speaker": "Quill",
+      "asset": "/art/quill-terms.jpg",
+      "scenes": [
+        "job_owner",
+        "why",
+        "act2_quill_introduction",
+        "act3_quill_introduction"
+      ],
+      "reason": "Direct commercial terms and bookkeeping; the earlier refusal retains its waiting expression. No cleared relationship or waived debt."
+    },
+    {
+      "speaker": "Ives",
+      "asset": "/art/ives-assessing.jpg",
+      "scenes": [
+        "act2_helion",
+        "act2_folio"
+      ],
+      "reason": "An unresolved institutional offer, with no accepted payment, received source or earned closure."
+    },
+    {
+      "speaker": "Ives",
+      "asset": "/art/ives-questioning.jpg",
+      "scenes": [
+        "act2_archive_door",
+        "act3_testimony_hearing"
+      ],
+      "reason": "Professional scrutiny of an allegation or public source, before the player answers. No authentication, filed account or witness-source handover."
+    },
+    {
+      "speaker": "Sister Lumen",
+      "asset": "/art/lumen-considering.jpg",
+      "scenes": [
+        "vault_quiet",
+        "act2_lumen_door",
+        "act3_chapel_return"
+      ],
+      "reason": "Attentive practical consideration grants no endorsement or forgiveness; earned guarded expression takes precedence."
+    },
+    {
+      "speaker": "Nia Pell",
+      "asset": "/art/nia-speaking.jpg",
+      "scenes": [
+        "act3_witness_visit"
+      ],
+      "reason": "Self-possessed boundary-setting applies to all actual contact replies; no recording consent, new safety or location is depicted."
+    },
+    {
+      "speaker": "Asa",
+      "asset": "/art/asa-terms.jpg",
+      "scenes": [
+        "act2_freight_sources",
+        "act2_freight_prep",
+        "act2_freight_recovery"
+      ],
+      "reason": "Practical attention to terms and cold storage; no observed delivery or patient outcome."
+    },
+    {
+      "speaker": "Edda",
+      "asset": "/art/edda-scrutiny.jpg",
+      "scenes": [
+        "act2_archive_brief",
+        "act2_archive_prep",
+        "act2_archive_compare",
+        "act2_archive_challenge",
+        "act2_archive_custody"
+      ],
+      "reason": "Archive scrutiny before a resolved issuing key; no payroll assignment or cleared inquiry."
+    },
+    {
+      "speaker": "Ren",
+      "asset": "/art/ren-listening.jpg",
+      "scenes": [
+        "act2_middle",
+        "act2_shelter_hall",
+        "act2_shelter_rooms",
+        "act3_shelter_visit"
+      ],
+      "reason": "Ren's attributed present conversation; attentive listening supplies no shelter repair or safety claim."
+    },
+    {
+      "speaker": "Orderly",
+      "asset": "/art/orderly-assessing.jpg",
+      "scenes": [
+        "front",
+        "districts"
+      ],
+      "reason": "Practiced courtesy during actual attendant dialogue; no accepted appointment or unobserved cuff mark."
+    },
+    {
+      "speaker": "Stallholder",
+      "asset": "/art/stallholder-speaking.jpg",
+      "scenes": [
+        "opening_approach",
+        "opening_neighbor"
+      ],
+      "reason": "Sober conversation about memory work; no acceptance of Quill's job or second person depicted."
+    },
+    {
+      "speaker": "Dispatcher",
+      "asset": "/art/dispatcher-considering.jpg",
+      "scenes": [
+        "act2_notice_offer",
+        "act2_notice_counter"
+      ],
+      "reason": "Considering the actual proposal without depicting agreement, money, receipt or dispatch."
+    },
+    {
+      "speaker": "Mechanic",
+      "asset": "/art/mechanic-explaining.jpg",
+      "scenes": [
+        "act3_records_visit"
+      ],
+      "reason": "Explaining the limits of the record; no repaired evidence or authenticated issuer."
+    },
+    {
+      "speaker": "Masked attendant",
+      "asset": "/art/attendant-alert.jpg",
+      "scenes": [
+        "hatch_caught"
+      ],
+      "reason": "Alert eyes keep the established respirator and identity, without adding a weapon or outcome."
+    }
+  ],
+  "illustrationVariants": [
+    {
+      "scenes": [
+        "act2_shelter_rooms",
+        "act2_shelter_result"
+      ],
+      "allFlags": [
+        "shelter_restored"
+      ],
+      "anyFlags": [],
+      "noneFlags": [
+        "shelter_declined",
+        "shelter_unobserved",
+        "shelter_hall",
+        "shelter_failed"
+      ],
+      "illustration": {
+        "src": "/art/shelter-restored.jpg",
+        "small": "/art/shelter-restored-small.jpg",
+        "caption": "Ward Four · the valve holds",
+        "description": "A fresh collar holds the shelter valve's dry seam; the emptied bucket stands aside and a clean cloth rests beside tools. Old stains remain. No beds or referral room are shown."
+      },
+      "reason": "A confirmed repair permits the dry valve detail; evacuation, failed work and unobserved moves retain neutral setting art. Repair establishes no room allocation, witness transfer or consent."
+    },
+    {
+      "scenes": [
+        "act2_freight_result",
+        "act3_freight_visit"
+      ],
+      "allFlags": [],
+      "anyFlags": [
+        "freight_delivered",
+        "freight_late_received"
+      ],
+      "noneFlags": [],
+      "illustration": {
+        "src": "/art/courier-receipt.jpg",
+        "small": "/art/courier-receipt-small.jpg",
+        "caption": "Courier table · stock receipt confirmed",
+        "description": "An anonymous stock receipt with an indistinct stamp lies beside a closed reference ledger, pencil, metal cup and folded rust scarf. No parcel, passenger clearance or patient treatment is shown."
+      },
+      "reason": "Observed or subsequently recorded stock receipt permits the returned receipt illustration. Intake, promises and queries alone do not. Exposed or late routes retain their actual limits; this image grants no clearance or treatment."
+    },
+    {
+      "scenes": [
+        "act3_arrival"
+      ],
+      "allFlags": [
+        "testimony_done",
+        "testimony_published"
+      ],
+      "anyFlags": [],
+      "noneFlags": [
+        "testimony_withdrawn"
+      ],
+      "illustration": {
+        "src": "/art/hearing-filed.jpg",
+        "small": "/art/hearing-filed-small.jpg",
+        "caption": "Ward Nine · the bounded account is filed",
+        "description": "A slim public-account folder rests in an ordinary records tray beside a set-down pencil and stopped recorder; a separate dark privacy sleeve stays closed away from the tray. No names, addresses or authenticated seal are legible."
+      },
+      "reason": "Only completed publication at the return to the wall shows the public filing tray. Drafts, discussion and withdrawal retain neutral art. Private sources remain separate, and publication supplies no new evidence, verdict or witness permission."
+    },
+    {
+      "scenes": [
+        "act2_mara_company_kept"
+      ],
+      "allFlags": [
+        "mara_company_chosen"
+      ],
+      "anyFlags": [
+        "mara_company_courier",
+        "mara_company_waited"
+      ],
+      "noneFlags": [
+        "mara_company_left",
+        "mara_company_declined"
+      ],
+      "illustration": {
+        "src": "/art/mara-shared-hour.jpg",
+        "small": "/art/mara-shared-hour-small.jpg",
+        "caption": "Ward Four · the cup turns",
+        "description": "Mara holds her ordinary chipped cup beside the rainy clinic window, its notch toward the glass; the edge of the visitor chair remains in the foreground. No reply or recorder is displayed."
+      },
+      "reason": "Only the committed choice to stay permits the shared-hour cup detail. Courier and deferred dispatch retain separate prose and no receipt, treatment, public permission or absolution is depicted."
+    },
+    {
+      "scenes": [
+        "act3_edda_visit"
+      ],
+      "allFlags": [
+        "archive_custody"
+      ],
+      "anyFlags": [],
+      "noneFlags": [],
+      "illustration": {
+        "src": "/art/archive-held-original.jpg",
+        "small": "/art/archive-held-original-small.jpg",
+        "caption": "Ward Nine · the original stays separate",
+        "description": "A closed source ledger rests in a dark protective sleeve on the records table, apart from a folded paper copy; a pencil lies between them. No legible identity, authenticated seal or review verdict is displayed."
+      },
+      "reason": "Only agreed custody permits the separately held original at the Ward Nine return. Both named and withheld copies retain their actual employer risk in prose; the painting adds no digital authentication, permission or resolved records review."
+    },
+    {
+      "scenes": [
+        "vault_quiet"
+      ],
+      "allFlags": [
+        "lumen_here"
+      ],
+      "anyFlags": [
+        "pact_copy",
+        "pact_break",
+        "pact_fake"
+      ],
+      "noneFlags": [
+        "pact_sell"
+      ],
+      "illustration": {
+        "src": "/art/chapel-shared.jpg",
+        "small": "/art/chapel-shared-small.jpg",
+        "caption": "Glass Chapel · a minute before the choice",
+        "description": "Mara sits beneath the memory halo while Lumen waits beside the controls, her magenta optic lit. Both keep their hands away from the shard; no extraction or outcome is shown."
+      },
+      "reason": "Only the authored pact placing Lumen at the plinth permits this shared chair-room composition. Selling refuses her presence; Mara remains in the chair and the original hour is unresolved."
+    },
+    {
+      "scenes": [
+        "act3_arrival"
+      ],
+      "allFlags": [
+        "on_file",
+        "act2_deal"
+      ],
+      "anyFlags": [],
+      "noneFlags": [
+        "testimony_published"
+      ],
+      "illustration": {
+        "src": "/art/wall-shared.jpg",
+        "small": "/art/wall-shared-small.jpg",
+        "caption": "Ward Nine · the pencil and the open folio",
+        "description": "Sera holds her pencil beside the rain-worn memorial while Ives waits a step apart with an open black folio. No page changes hands and no private identity is legible."
+      },
+      "reason": "Both arrival prose branches explicitly place Ives beside Sera when on_file and act2_deal hold. Completed public filing retains its preceding earned plate; no handover, consent, verdict or ending is implied."
+    },
+    {
+      "scenes": [
+        "act2_district_canal",
+        "act2_district_docket",
+        "act2_district_result"
+      ],
+      "allFlags": [
+        "district_query_sent",
+        "district_public_review"
+      ],
+      "anyFlags": [],
+      "noneFlags": [],
+      "illustration": {
+        "src": "/art/depot-review.jpg",
+        "small": "/art/depot-review-small.jpg",
+        "caption": "Canal depot · a public request changes the doors",
+        "description": "A queue rail blocks the lowered anonymous hatch beneath a blank audit cover; an open unmarked ledger waits at the accessible lit main counter. No completed review, payment or private identity is shown."
+      },
+      "reason": "Only an actually submitted public register-review request changes this depot's anonymous hatch to a blocked route. Private service appointments retain the ordinary dispatch painting; no review finding or source authentication is implied."
+    }
+  ],
+  "sequenceViews": [
+    {
+      "scene": "act2_craft_archive",
+      "personSpeaker": "Edda",
+      "person": {
+        "src": "/art/edda-listening-wide.jpg",
+        "small": "/art/edda-listening-wide-small.jpg",
+        "caption": "Edda · a moment of attention",
+        "description": "Edda listens in three-quarter view: the same short graying hair, rectangular glasses, worn brown work coat and dark scarf. Her hands and any documents are outside the frame; her reserved expression depicts no agreement or restored archive shift."
+      },
+      "detail": {
+        "src": "/art/archive-question-detail.jpg",
+        "small": "/art/archive-question-detail-small.jpg",
+        "caption": "The question · a space on the table",
+        "description": "Three separate blank cards and one plain cup leave a pale tea ring on a scratched brass tabletop. No writing, signature, acquired source or test result is visible."
+      }
+    },
+    {
+      "scene": "act2_craft_archive_challenge",
+      "personSpeaker": "Edda",
+      "person": {
+        "src": "/art/edda-listening-wide.jpg",
+        "small": "/art/edda-listening-wide-small.jpg",
+        "caption": "Edda · a moment of attention",
+        "description": "Edda listens in three-quarter view: the same short graying hair, rectangular glasses, worn brown work coat and dark scarf. Her hands and any documents are outside the frame; her reserved expression depicts no agreement or restored archive shift."
+      },
+      "detail": {
+        "src": "/art/archive-question-detail.jpg",
+        "small": "/art/archive-question-detail-small.jpg",
+        "caption": "The question · a space on the table",
+        "description": "Three separate blank cards and one plain cup leave a pale tea ring on a scratched brass tabletop. No writing, signature, acquired source or test result is visible."
+      }
+    },
+    {
+      "scene": "act2_craft_archive_issuer",
+      "personSpeaker": "Edda",
+      "person": {
+        "src": "/art/edda-listening-wide.jpg",
+        "small": "/art/edda-listening-wide-small.jpg",
+        "caption": "Edda · a moment of attention",
+        "description": "Edda listens in three-quarter view: the same short graying hair, rectangular glasses, worn brown work coat and dark scarf. Her hands and any documents are outside the frame; her reserved expression depicts no agreement or restored archive shift."
+      },
+      "detail": {
+        "src": "/art/archive-question-detail.jpg",
+        "small": "/art/archive-question-detail-small.jpg",
+        "caption": "The question · a space on the table",
+        "description": "Three separate blank cards and one plain cup leave a pale tea ring on a scratched brass tabletop. No writing, signature, acquired source or test result is visible."
+      }
+    },
+    {
+      "scene": "act2_craft_archive_ledger",
+      "personSpeaker": "Edda",
+      "person": {
+        "src": "/art/edda-listening-wide.jpg",
+        "small": "/art/edda-listening-wide-small.jpg",
+        "caption": "Edda · a moment of attention",
+        "description": "Edda listens in three-quarter view: the same short graying hair, rectangular glasses, worn brown work coat and dark scarf. Her hands and any documents are outside the frame; her reserved expression depicts no agreement or restored archive shift."
+      },
+      "detail": {
+        "src": "/art/archive-question-detail.jpg",
+        "small": "/art/archive-question-detail-small.jpg",
+        "caption": "The question · a space on the table",
+        "description": "Three separate blank cards and one plain cup leave a pale tea ring on a scratched brass tabletop. No writing, signature, acquired source or test result is visible."
+      }
+    },
+    {
+      "scene": "act3_craft_archive_return",
+      "personSpeaker": "Edda",
+      "person": {
+        "src": "/art/edda-listening-wide.jpg",
+        "small": "/art/edda-listening-wide-small.jpg",
+        "caption": "Edda · a moment of attention",
+        "description": "Edda listens in three-quarter view: the same short graying hair, rectangular glasses, worn brown work coat and dark scarf. Her hands and any documents are outside the frame; her reserved expression depicts no agreement or restored archive shift."
+      },
+      "detail": {
+        "src": "/art/archive-question-detail.jpg",
+        "small": "/art/archive-question-detail-small.jpg",
+        "caption": "The question · a space on the table",
+        "description": "Three separate blank cards and one plain cup leave a pale tea ring on a scratched brass tabletop. No writing, signature, acquired source or test result is visible."
+      }
+    },
+    {
+      "scene": "act3_payoff_edda",
+      "personSpeaker": "Edda",
+      "person": {
+        "src": "/art/edda-listening-wide.jpg",
+        "small": "/art/edda-listening-wide-small.jpg",
+        "caption": "Edda · a moment of attention",
+        "description": "Edda listens in three-quarter view: the same short graying hair, rectangular glasses, worn brown work coat and dark scarf. Her hands and any documents are outside the frame; her reserved expression depicts no agreement or restored archive shift."
+      },
+      "detail": {
+        "src": "/art/archive-question-detail.jpg",
+        "small": "/art/archive-question-detail-small.jpg",
+        "caption": "The question · a space on the table",
+        "description": "Three separate blank cards and one plain cup leave a pale tea ring on a scratched brass tabletop. No writing, signature, acquired source or test result is visible."
+      }
+    },
+    {
+      "scene": "act2_craft_kerr_offer",
+      "personSpeaker": "Kerr",
+      "person": {
+        "src": "/art/kerr-listening-wide.jpg",
+        "small": "/art/kerr-listening-wide-small.jpg",
+        "caption": "Kerr · under the awning",
+        "description": "Kerr listens beneath amber stall light in his worn black raincoat and scarf. His weathered face remains serious; hands, case and brace are outside the frame. No handover, cure or forgiveness is shown."
+      },
+      "detail": {
+        "src": "/art/stall-quiet-detail.jpg",
+        "small": "/art/stall-quiet-detail-small.jpg",
+        "caption": "The counter · a quiet corner",
+        "description": "A chipped cup, its pale ring and a folded blank paper occupy a worn wooden tabletop corner. The floor and case location remain outside the frame; no delivery, recipient entry, payment or treatment is depicted."
+      }
+    },
+    {
+      "scene": "act2_craft_kerr_settlement",
+      "personSpeaker": "Kerr",
+      "person": {
+        "src": "/art/kerr-listening-wide.jpg",
+        "small": "/art/kerr-listening-wide-small.jpg",
+        "caption": "Kerr · under the awning",
+        "description": "Kerr listens beneath amber stall light in his worn black raincoat and scarf. His weathered face remains serious; hands, case and brace are outside the frame. No handover, cure or forgiveness is shown."
+      },
+      "detail": {
+        "src": "/art/stall-quiet-detail.jpg",
+        "small": "/art/stall-quiet-detail-small.jpg",
+        "caption": "The counter · a quiet corner",
+        "description": "A chipped cup, its pale ring and a folded blank paper occupy a worn wooden tabletop corner. The floor and case location remain outside the frame; no delivery, recipient entry, payment or treatment is depicted."
+      }
+    },
+    {
+      "scene": "act3_craft_kerr_settlement",
+      "personSpeaker": "Kerr",
+      "person": {
+        "src": "/art/kerr-listening-wide.jpg",
+        "small": "/art/kerr-listening-wide-small.jpg",
+        "caption": "Kerr · under the awning",
+        "description": "Kerr listens beneath amber stall light in his worn black raincoat and scarf. His weathered face remains serious; hands, case and brace are outside the frame. No handover, cure or forgiveness is shown."
+      },
+      "detail": {
+        "src": "/art/stall-quiet-detail.jpg",
+        "small": "/art/stall-quiet-detail-small.jpg",
+        "caption": "The counter · a quiet corner",
+        "description": "A chipped cup, its pale ring and a folded blank paper occupy a worn wooden tabletop corner. The floor and case location remain outside the frame; no delivery, recipient entry, payment or treatment is depicted."
+      }
+    },
+    {
+      "scene": "act3_payoff_kerr",
+      "personSpeaker": "Kerr",
+      "person": {
+        "src": "/art/kerr-listening-wide.jpg",
+        "small": "/art/kerr-listening-wide-small.jpg",
+        "caption": "Kerr · under the awning",
+        "description": "Kerr listens beneath amber stall light in his worn black raincoat and scarf. His weathered face remains serious; hands, case and brace are outside the frame. No handover, cure or forgiveness is shown."
+      },
+      "detail": {
+        "src": "/art/stall-quiet-detail.jpg",
+        "small": "/art/stall-quiet-detail-small.jpg",
+        "caption": "The counter · a quiet corner",
+        "description": "A chipped cup, its pale ring and a folded blank paper occupy a worn wooden tabletop corner. The floor and case location remain outside the frame; no delivery, recipient entry, payment or treatment is depicted."
+      }
+    },
+    {
+      "scene": "ending_names",
+      "detail": {
+        "src": "/art/memorial-pause-detail.jpg",
+        "small": "/art/memorial-pause-detail-small.jpg",
+        "caption": "Ward Nine · the pencil and the rain",
+        "description": "A pencil lies on a dry lip of the rain-worn memorial stair. No legible name, new inscription, transferred paper or final choice is depicted."
+      }
+    },
+    {
+      "scene": "ending_quiet",
+      "detail": {
+        "src": "/art/memorial-pause-detail.jpg",
+        "small": "/art/memorial-pause-detail-small.jpg",
+        "caption": "Ward Nine · the pencil and the rain",
+        "description": "A pencil lies on a dry lip of the rain-worn memorial stair. No legible name, new inscription, transferred paper or final choice is depicted."
+      }
+    },
+    {
+      "scene": "ending_witness",
+      "detail": {
+        "src": "/art/memorial-pause-detail.jpg",
+        "small": "/art/memorial-pause-detail-small.jpg",
+        "caption": "Ward Nine · the pencil and the rain",
+        "description": "A pencil lies on a dry lip of the rain-worn memorial stair. No legible name, new inscription, transferred paper or final choice is depicted."
+      }
+    },
+    {
+      "scene": "ending_listed",
+      "detail": {
+        "src": "/art/memorial-pause-detail.jpg",
+        "small": "/art/memorial-pause-detail-small.jpg",
+        "caption": "Ward Nine · the pencil and the rain",
+        "description": "A pencil lies on a dry lip of the rain-worn memorial stair. No legible name, new inscription, transferred paper or final choice is depicted."
+      }
+    }
+  ]
+}

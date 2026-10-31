@@ -1,0 +1,102 @@
+[
+  {
+    "id": "voice-campaign-dramatic-beats-dceb613b987f",
+    "key": "0259d5fac694b830",
+    "scene": "stall",
+    "sceneSpeaker": "Quill",
+    "speaker": "Quill",
+    "quote": "Do not give me an easy yes. I need you to come back with the hour.",
+    "text": "Do not give me an easy yes. I need you to come back with the hour.",
+    "part": 1
+  },
+  {
+    "id": "voice-campaign-dramatic-beats-0f19f0d22108",
+    "key": "90f38d80b9bb73ec",
+    "scene": "pay",
+    "sceneSpeaker": "Quill",
+    "speaker": "Quill",
+    "quote": "The advance has to get you through the door. Ask for more if that is what the work needs.",
+    "text": "The advance has to get you through the door. Ask for more if that is what the work needs.",
+    "part": 1
+  },
+  {
+    "id": "voice-campaign-dramatic-beats-043fc7da30bc",
+    "key": "26128d191da26aff",
+    "scene": "pay_yes",
+    "sceneSpeaker": "Quill",
+    "speaker": "Quill",
+    "quote": "Ninety when you take the job. I need that extra money to get you through the door, not just get me a yes.",
+    "text": "Ninety when you take the job. I need that extra money to get you through the door, not just get me a yes.",
+    "part": 1
+  },
+  {
+    "id": "voice-campaign-dramatic-beats-11d2890d6c98",
+    "key": "be7a46852bfb907e",
+    "scene": "pay_no",
+    "sceneSpeaker": "Quill",
+    "speaker": "Quill",
+    "quote": "Fifty. That is the offer I can make. You can leave the number there without pretending you like it.",
+    "text": "Fifty. That is the offer I can make. You can leave the number there without pretending you like it.",
+    "part": 1
+  },
+  {
+    "id": "voice-campaign-dramatic-beats-ebb05f183613",
+    "key": "5ce258ce05cf6abc",
+    "scene": "act2_craft_archive_ledger",
+    "sceneSpeaker": "Edda",
+    "speaker": "Edda",
+    "quote": "A fee, an old number, a signature. Each leaves someone carrying this request. I want to know which part you are asking me to carry.",
+    "text": "A fee, an old number, a signature. Each leaves someone carrying this request. I want to know which part you are asking me to carry.",
+    "part": 1
+  },
+  {
+    "id": "voice-campaign-dramatic-beats-9455c282881b",
+    "key": "fa07ec038300d177",
+    "scene": "act2_archive_custody",
+    "sceneSpeaker": "Edda",
+    "speaker": "Edda",
+    "quote": "You covered the fee. Let me decide about my name before this leaves the room.",
+    "text": "You covered the fee. Let me decide about my name before this leaves the room.",
+    "part": 1
+  },
+  {
+    "id": "voice-campaign-dramatic-beats-cf3cf27dbc01",
+    "key": "f289c08b42f92e8c",
+    "scene": "act2_archive_custody",
+    "sceneSpeaker": "Edda",
+    "speaker": "Edda",
+    "quote": "You put your old number on it. I know what it costs to leave a number they still recognize.",
+    "text": "You put your old number on it. I know what it costs to leave a number they still recognize.",
+    "part": 1
+  },
+  {
+    "id": "voice-campaign-dramatic-beats-7864742e6cf1",
+    "key": "58d7c1ece64fb3fb",
+    "scene": "act2_archive_custody",
+    "sceneSpeaker": "Edda",
+    "speaker": "Edda",
+    "quote": "You asked me to sign, and I did. Let that stay something I chose, not something you won from me.",
+    "text": "You asked me to sign, and I did. Let that stay something I chose, not something you won from me.",
+    "part": 1
+  },
+  {
+    "id": "voice-campaign-dramatic-beats-1658a251f1cf",
+    "key": "6ab2adfed5292c8a",
+    "scene": "act3_edda_visit",
+    "sceneSpeaker": "Edda",
+    "speaker": "Edda",
+    "quote": "I am still here. Ask me what I need, rather than deciding what my signature was worth.",
+    "text": "I am still here. Ask me what I need, rather than deciding what my signature was worth.",
+    "part": 1
+  },
+  {
+    "id": "voice-campaign-dramatic-beats-9919ec3d53bd",
+    "key": "555475ea08ddcc0f",
+    "scene": "act2_craft_archive",
+    "sceneSpeaker": "Edda",
+    "speaker": "Edda",
+    "quote": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+    "text": "I want this request to have an edge. Something I can finish, then put down when my shift ends.",
+    "part": 1
+  }
+]

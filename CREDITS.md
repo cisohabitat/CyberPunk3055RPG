@@ -196,3 +196,7 @@ Five preferred deliveries under `public/audio/connected-performance-v1/` use the
 ## Sera records-table pilot
 
 The seven new Phase16 pilot lines retain Sera’s existing `af_bella` stock synthetic casting and the pinned Kokoro model/style licenses above. Exact authored words, direction, delivery measurements, model/source hashes and unprompted transcription are in `qa/media/sera-shift-dialogue-{lines,bindings,provenance,transcripts}.json`. No commissioned performer or independent acting acceptance is claimed. Existing Sera table/portrait artwork is reused without changing its source bytes; explicit scene rationales remain in `qa/media/scene-art.json`. The connected offline audition and its gain/level limitations are in `qa/editorial/sera-shift-audition.json`.
+
+## Quill and Edda character-drama continuation
+
+Ten additional Phase16 quotations retain Quill’s `am_michael` and Edda’s `af_kore` stock synthetic cast and pinned Kokoro licensing. Exact words, model/source/delivery hashes and raw unprompted transcripts are in `qa/media/dramatic-beats-dialogue-*.json`. The existing Quill counter and Edda archive/portrait art is reused with explicit scene rationale in `qa/media/dramatic-beats.json`. No commissioned performer or independent acting acceptance is claimed.

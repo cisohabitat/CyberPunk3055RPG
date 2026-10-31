@@ -1,0 +1,3 @@
+{
+  "reason": "The first new paid route used a historical factory without emotionalPayoffs, while normal UI creation enables it. The actual game correctly entered act3_payoff_edda; craft-keep-archive-answer was therefore unavailable. Preserve all first new-profile observations and use explicit current-feature controls and only the real payoff-keep-edda action at that scene. All32 completed older-factory campaigns retain unchanged source hashes and remain valid."
+}

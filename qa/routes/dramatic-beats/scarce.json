@@ -1,0 +1,304 @@
+{
+  "name": "Current character-drama / dramatic-scarce",
+  "character": {
+    "handle": "Low Reserve",
+    "givenName": "Ada",
+    "origin": "spire",
+    "complication": "debt",
+    "bonus": {
+      "chrome": 0,
+      "nerve": 0,
+      "face": 0,
+      "ghost": 2
+    },
+    "startWithPrologue": true,
+    "seraShift": true,
+    "dramaticBeats": true,
+    "expandedKerr": true,
+    "expandedMara": true,
+    "expandedWitness": true,
+    "craftedEncounters": true,
+    "emotionalPayoffs": true,
+    "freightCraft": true,
+    "returnRouting": true
+  },
+  "steps": [
+    {
+      "choiceId": "begin-opening",
+      "reload": true
+    },
+    {
+      "choiceId": "opening-survival",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-stallholder",
+      "reload": true
+    },
+    {
+      "choiceId": "take-the-stool",
+      "reload": true
+    },
+    {
+      "choiceId": "ask-pay",
+      "reload": true
+    },
+    {
+      "choiceId": "haggle",
+      "roll": 1,
+      "reload": true
+    },
+    {
+      "choiceId": "sit-with-it",
+      "reload": true
+    },
+    {
+      "choiceId": "accept",
+      "reload": true
+    },
+    {
+      "choiceId": "side",
+      "reload": true
+    },
+    {
+      "choiceId": "spoof-door",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "go",
+      "reload": true
+    },
+    {
+      "choiceId": "honest",
+      "reload": true
+    },
+    {
+      "choiceId": "pact-copy",
+      "reload": true
+    },
+    {
+      "choiceId": "copy",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "heard",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-hour",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-signature",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-order",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-roster",
+      "reload": true
+    },
+    {
+      "choiceId": "reconstruct",
+      "reload": true
+    },
+    {
+      "choiceId": "separate-decisions",
+      "reload": true
+    },
+    {
+      "choiceId": "label-unverified",
+      "reload": true
+    },
+    {
+      "choiceId": "seal-full",
+      "reload": true
+    },
+    {
+      "choiceId": "talk-leave",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "destroy",
+      "reload": true
+    },
+    {
+      "choiceId": "week-after",
+      "reload": true
+    },
+    {
+      "choiceId": "into-week",
+      "reload": true
+    },
+    {
+      "choiceId": "read-board",
+      "reload": true
+    },
+    {
+      "choiceId": "to-kerr",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-kerr",
+      "reload": true
+    },
+    {
+      "choiceId": "pay-kerr",
+      "reload": true
+    },
+    {
+      "choiceId": "answer-kerr-collection",
+      "reload": true
+    },
+    {
+      "choiceId": "promise-private-collection",
+      "reload": true
+    },
+    {
+      "choiceId": "route-entry-lift",
+      "reload": true
+    },
+    {
+      "choiceId": "route-exit-gap",
+      "reload": true
+    },
+    {
+      "choiceId": "depart-kerr-lift",
+      "reload": true
+    },
+    {
+      "choiceId": "route-use-gap",
+      "roll": 1,
+      "reload": true
+    },
+    {
+      "choiceId": "pause-kerr-recovery",
+      "reload": true
+    },
+    {
+      "choiceId": "trace-order",
+      "reload": true
+    },
+    {
+      "choiceId": "agree-archive-terms",
+      "reload": true
+    },
+    {
+      "choiceId": "skip-archive-prep",
+      "reload": true
+    },
+    {
+      "choiceId": "separate-source-tests",
+      "reload": true
+    },
+    {
+      "choiceId": "trace-receipt",
+      "reload": true,
+      "roll": 1
+    },
+    {
+      "choiceId": "pause-archive-recovery",
+      "reload": true
+    },
+    {
+      "choiceId": "take-recovery",
+      "reload": true
+    },
+    {
+      "choiceId": "short-recovery",
+      "reload": true
+    },
+    {
+      "choiceId": "return-after-recovery",
+      "reload": true
+    },
+    {
+      "choiceId": "resume-archive-recovery",
+      "reload": true
+    },
+    {
+      "choiceId": "old-employee",
+      "reload": true
+    },
+    {
+      "choiceId": "withhold-technician",
+      "reload": true
+    },
+    {
+      "choiceId": "keep-chain",
+      "reload": true
+    },
+    {
+      "choiceId": "stand",
+      "reload": true
+    },
+    {
+      "choiceId": "back-to-board",
+      "reload": true
+    },
+    {
+      "choiceId": "to-the-wall",
+      "reload": true
+    },
+    {
+      "choiceId": "to-ward-nine",
+      "reload": true
+    },
+    {
+      "choiceId": "visit-records",
+      "reload": true
+    },
+    {
+      "choiceId": "keep-limits",
+      "reload": true
+    },
+    {
+      "choiceId": "go-wall",
+      "reload": true
+    },
+    {
+      "choiceId": "face-sera",
+      "reload": true
+    },
+    {
+      "choiceId": "visit-kerr-collection",
+      "reload": true
+    },
+    {
+      "choiceId": "acknowledge-private-collection",
+      "reload": true
+    },
+    {
+      "choiceId": "leave-wall",
+      "reload": true
+    }
+  ],
+  "expected": {
+    "sceneId": "ending_quiet",
+    "creds": 60,
+    "strain": 4,
+    "flags": {
+      "archive_done": true,
+      "archive_paused": false,
+      "archive_flagged": true,
+      "archive_key_authenticated": false,
+      "order_verified": true,
+      "archive_custody": true,
+      "edda_public_consent": false,
+      "witness_safe": false,
+      "nia_public_consent": false,
+      "week_recovered": true,
+      "old_badge_traced": true
+    },
+    "journal": [
+      "archive-gap",
+      "verified-order",
+      "archive-custody"
+    ]
+  }
+}

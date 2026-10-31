@@ -17,7 +17,7 @@ Existing randomized balance policies keep their historical meaning. A newer coho
 
 ## Phase 16 — character-driven dramatic pilot
 
-The first implementation is [Sera’s table-and-wall pilot](SERA_DRAMATIC_PILOT_PHASE16.md). It adds a complete entry/task/response and later filing reflection for an explicit new-run cohort. The other two high-traffic beats remain pending; publication of this pilot must not be described as completing all of Phase 16. The grade and target below remain unchanged.
+Phase 16 now includes [Sera’s table-and-wall pilot](SERA_DRAMATIC_PILOT_PHASE16.md) and [Quill’s advance / Edda’s signature](CHARACTER_DRAMA_PHASE16.md). The latter completes the planned three-beat implementation: negotiated agreement/refusal and paid/badge/signed archive responses use the existing practical decisions and exact matching voices. Candidate checks and exact-commit publication evidence are separate; completion requires the release gates documented in the reports. The grade remains 8.9 provisional, weighted 8.910; Phase 17 follows the verified release.
 
 **Purpose:** strengthen the narrative through immediate personal wants, choices and responses. The current Dispatcher/Kerr scenes have coherent consequences but often close their emotional beat with another procedural explanation.
 

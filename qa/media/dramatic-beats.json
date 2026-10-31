@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "phase": 16,
+  "baseline": "qa/editorial/dramatic-beats-baseline.json",
+  "baselineSha256": "ba18d8c35a34cb84f7ce9f2d8dbfb86db3ca43a6faa328f4ba78c9d4f371cbac",
+  "changedScenes": [
+    "stall",
+    "pay",
+    "pay_yes",
+    "pay_no",
+    "act2_craft_archive_ledger",
+    "act2_archive_custody",
+    "act3_edda_visit",
+    "act2_craft_archive"
+  ],
+  "newScenes": [],
+  "newRoutes": [
+    "dramatic-beats/face.json",
+    "dramatic-beats/badge-scarce.json",
+    "dramatic-beats/paid.json",
+    "dramatic-beats/deferred.json",
+    "dramatic-beats/scarce.json",
+    "dramatic-beats/direct.json",
+    "dramatic-beats/sera-carry.json",
+    "dramatic-beats/listed.json"
+  ],
+  "newMedia": [
+    "public/audio/voice-campaign-dramatic-beats-dceb613b987f.mp3",
+    "public/audio/voice-campaign-dramatic-beats-0f19f0d22108.mp3",
+    "public/audio/voice-campaign-dramatic-beats-043fc7da30bc.mp3",
+    "public/audio/voice-campaign-dramatic-beats-11d2890d6c98.mp3",
+    "public/audio/voice-campaign-dramatic-beats-ebb05f183613.mp3",
+    "public/audio/voice-campaign-dramatic-beats-9455c282881b.mp3",
+    "public/audio/voice-campaign-dramatic-beats-cf3cf27dbc01.mp3",
+    "public/audio/voice-campaign-dramatic-beats-7864742e6cf1.mp3",
+    "public/audio/voice-campaign-dramatic-beats-1658a251f1cf.mp3",
+    "public/audio/voice-campaign-dramatic-beats-9919ec3d53bd.mp3"
+  ],
+  "newManifests": [
+    "qa/media/dramatic-beats.json",
+    "qa/media/dramatic-beats-dialogue-bindings.json",
+    "qa/media/dramatic-beats-dialogue-lines.json",
+    "qa/media/dramatic-beats-dialogue-provenance.json",
+    "qa/media/dramatic-beats-dialogue-transcripts.json"
+  ],
+  "artDecisions": [
+    {
+      "scene": "stall",
+      "treatment": "illustration",
+      "asset": "/art/quill-offer.jpg",
+      "reason": "Existing neutral counter, closed ledger or portrait supports this actual conversation. No transferred advance, signed public permission, erased employer trace or closed employment review is depicted. Existing source/consent terms remain authoritative."
+    },
+    {
+      "scene": "pay",
+      "treatment": "illustration",
+      "asset": "/art/quill-offer.jpg",
+      "reason": "Existing neutral counter, closed ledger or portrait supports this actual conversation. No transferred advance, signed public permission, erased employer trace or closed employment review is depicted. Existing source/consent terms remain authoritative."
+    },
+    {
+      "scene": "pay_yes",
+      "treatment": "illustration",
+      "asset": "/art/market-counter.jpg",
+      "reason": "Existing neutral counter, closed ledger or portrait supports this actual conversation. No transferred advance, signed public permission, erased employer trace or closed employment review is depicted. Existing source/consent terms remain authoritative."
+    },
+    {
+      "scene": "pay_no",
+      "treatment": "illustration",
+      "asset": "/art/market-counter.jpg",
+      "reason": "Existing neutral counter, closed ledger or portrait supports this actual conversation. No transferred advance, signed public permission, erased employer trace or closed employment review is depicted. Existing source/consent terms remain authoritative."
+    },
+    {
+      "scene": "act2_craft_archive_ledger",
+      "treatment": "illustration",
+      "asset": "/art/edda-archive.jpg",
+      "reason": "Existing neutral counter, closed ledger or portrait supports this actual conversation. No transferred advance, signed public permission, erased employer trace or closed employment review is depicted. Existing source/consent terms remain authoritative."
+    },
+    {
+      "scene": "act2_archive_custody",
+      "treatment": "illustration",
+      "asset": "/art/edda-archive.jpg",
+      "reason": "Existing neutral counter, closed ledger or portrait supports this actual conversation. No transferred advance, signed public permission, erased employer trace or closed employment review is depicted. Existing source/consent terms remain authoritative."
+    },
+    {
+      "scene": "act3_edda_visit",
+      "treatment": "illustration",
+      "asset": "/art/hearing-table.jpg",
+      "reason": "Existing neutral counter, closed ledger or portrait supports this actual conversation. No transferred advance, signed public permission, erased employer trace or closed employment review is depicted. Existing source/consent terms remain authoritative."
+    },
+    {
+      "scene": "act2_craft_archive",
+      "treatment": "illustration",
+      "asset": "/art/archive-desk.jpg",
+      "reason": "Existing neutral counter, closed ledger or portrait supports this actual conversation. No transferred advance, signed public permission, erased employer trace or closed employment review is depicted. Existing source/consent terms remain authoritative."
+    }
+  ],
+  "voiceIds": [
+    "voice-campaign-dramatic-beats-dceb613b987f",
+    "voice-campaign-dramatic-beats-0f19f0d22108",
+    "voice-campaign-dramatic-beats-043fc7da30bc",
+    "voice-campaign-dramatic-beats-11d2890d6c98",
+    "voice-campaign-dramatic-beats-ebb05f183613",
+    "voice-campaign-dramatic-beats-9455c282881b",
+    "voice-campaign-dramatic-beats-cf3cf27dbc01",
+    "voice-campaign-dramatic-beats-7864742e6cf1",
+    "voice-campaign-dramatic-beats-1658a251f1cf",
+    "voice-campaign-dramatic-beats-9919ec3d53bd"
+  ],
+  "preservation": "All247 preceding factories and saves retain their exact state/text/choices/actors/art/voices. The single new-run flag changes only the ten specified spoken beats and scoped narration; no extra choice, cost, roll, source finding or permission is introduced.",
+  "newFlags": [
+    "dramatic_beats_enabled",
+    "dramatic_quill_greeted"
+  ]
+}

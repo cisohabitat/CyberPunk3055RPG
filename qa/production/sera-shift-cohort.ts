@@ -1,7 +1,8 @@
+import { isDramaticBeatsFile } from './dramatic-beats-cohort';
 import phase from '../media/sera-shift.json';
 import precedingArt from '../editorial/sera-shift-preceding-scene-art.json';
 /** Only the independently inventoried Phase16 pilot additions. No prefix/directory exemptions. */
-export const isSeraShiftFile = (path: string) => phase.newMedia.includes(path) || phase.newManifests.includes(path) || phase.newRoutes.some(p => path === `qa/routes/${p}`);
+export const isSeraShiftFile = (path: string) => isDramaticBeatsFile(path) || phase.newMedia.includes(path) || phase.newManifests.includes(path) || phase.newRoutes.some(p => path === `qa/routes/${p}`);
 export const precedingSeraArt = (path: string) => path === 'qa/media/scene-art.json' ? phase.precedingSceneArt : path;
 export const withoutSeraArt = <T>(art: T): T => {
   const copy = structuredClone(art) as typeof precedingArt;
