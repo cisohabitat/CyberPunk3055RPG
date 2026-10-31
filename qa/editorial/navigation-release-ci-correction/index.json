@@ -1,5 +1,5 @@
 {
-  "method": "Exact first-CI failure evidence and same-engine correction; no production tree changes or threshold/deadline loosening.",
+  "method": "Exact first-CI failures and complete attached cases kept outside ignored test-output directories. Each indexed path must be tracked; bytes/source paths remain original.",
   "files": [
     {
       "path": "qa/editorial/navigation-release-ci-correction/chromium-same-engine.log.gz",
@@ -18,168 +18,168 @@
     },
     {
       "path": "qa/editorial/navigation-release-ci-correction/first-artifact-index.json",
-      "bytes": 13902,
-      "sha256": "7eafb0b29ff4df77c8db249a9a4e9287927396f5704dc463ca8b44c1df822e5e"
+      "bytes": 13840,
+      "sha256": "269c14d63fe4b52a248c26059b525430f3b719227e80f4f6f8e1b81c16a34196"
+    },
+    {
+      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/cases/.last-run.json.gz",
+      "bytes": 165,
+      "sha256": "fe9dabf8f3d8e08edb63164eddebca00fdc3e3e34a58469c9f0457cd1839ec7d"
+    },
+    {
+      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/cases/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-chromium/error-context.md.gz",
+      "bytes": 5437,
+      "sha256": "5ef5cfb1ac94d4a107b7302628bd8f9500c9d40a4941578a7037d20a53dac67f"
+    },
+    {
+      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/cases/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-chromium/test-failed-1.png",
+      "bytes": 133534,
+      "sha256": "1e66d917bd38523042febdde3fac6de44215cc82ea6bf1a8736591d1e33a6a0e"
+    },
+    {
+      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/cases/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-chromium/trace.zip",
+      "bytes": 445398,
+      "sha256": "f0dc4bbea62b65130d91595ba230a93f59c2643f833453d4158722cc7205ae81"
+    },
+    {
+      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/cases/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-chromium-retry1/error-context.md.gz",
+      "bytes": 5437,
+      "sha256": "5ef5cfb1ac94d4a107b7302628bd8f9500c9d40a4941578a7037d20a53dac67f"
+    },
+    {
+      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/cases/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-chromium-retry1/test-failed-1.png",
+      "bytes": 133534,
+      "sha256": "1e66d917bd38523042febdde3fac6de44215cc82ea6bf1a8736591d1e33a6a0e"
+    },
+    {
+      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/cases/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-chromium-retry1/trace.zip",
+      "bytes": 429571,
+      "sha256": "915afd97c00a28fed8ae75b8d0ab3b231f782f17f6773a025b5c819b4f7448c7"
+    },
+    {
+      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/cases/navigation-release-worksho-0f48e-with-less-real-travel-320-0-chromium/error-context.md.gz",
+      "bytes": 4961,
+      "sha256": "176124c7e776ed3ed588ca6511eb83d9521816a9e164ed83e634a0ff8c717ec9"
+    },
+    {
+      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/cases/navigation-release-worksho-0f48e-with-less-real-travel-320-0-chromium/test-failed-1.png",
+      "bytes": 52322,
+      "sha256": "0c8148f6cbbd1f2e10e448b4b3dc3d486880479da97c2bc9decbf4a953b7f5f1"
+    },
+    {
+      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/cases/navigation-release-worksho-0f48e-with-less-real-travel-320-0-chromium/trace.zip",
+      "bytes": 265997,
+      "sha256": "f3b31813789bbb21471a9817996c1d39b9e4b037402f4c1253325192ea1b6ccb"
+    },
+    {
+      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/cases/navigation-release-worksho-0f48e-with-less-real-travel-320-0-chromium-retry1/error-context.md.gz",
+      "bytes": 4961,
+      "sha256": "176124c7e776ed3ed588ca6511eb83d9521816a9e164ed83e634a0ff8c717ec9"
+    },
+    {
+      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/cases/navigation-release-worksho-0f48e-with-less-real-travel-320-0-chromium-retry1/test-failed-1.png",
+      "bytes": 52322,
+      "sha256": "0c8148f6cbbd1f2e10e448b4b3dc3d486880479da97c2bc9decbf4a953b7f5f1"
+    },
+    {
+      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/cases/navigation-release-worksho-0f48e-with-less-real-travel-320-0-chromium-retry1/trace.zip",
+      "bytes": 277895,
+      "sha256": "8267d69ce006193a4191763989c5ccc3c2a9a9f9862cc993a69a590716a5211d"
+    },
+    {
+      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/cases/navigation-release-worksho-1edbb-th-less-real-travel-320-275-chromium/error-context.md.gz",
+      "bytes": 5207,
+      "sha256": "eb4dd47ac23f4c029bc4a569935a683c897bacb481c3dfe4ec9be1c910626aeb"
+    },
+    {
+      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/cases/navigation-release-worksho-1edbb-th-less-real-travel-320-275-chromium/test-failed-1.png",
+      "bytes": 48986,
+      "sha256": "286aec8b06acf1ecaa6c6bd57591031719dbe74fdc1c8f46539a1eae6f8a2807"
+    },
+    {
+      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/cases/navigation-release-worksho-1edbb-th-less-real-travel-320-275-chromium/trace.zip",
+      "bytes": 258574,
+      "sha256": "cfd7a9e34b972a4b093e6427633d4538f2df9c020303b1666fc431cb5d64f930"
+    },
+    {
+      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/cases/navigation-release-worksho-1edbb-th-less-real-travel-320-275-chromium-retry1/error-context.md.gz",
+      "bytes": 5207,
+      "sha256": "eb4dd47ac23f4c029bc4a569935a683c897bacb481c3dfe4ec9be1c910626aeb"
+    },
+    {
+      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/cases/navigation-release-worksho-1edbb-th-less-real-travel-320-275-chromium-retry1/test-failed-1.png",
+      "bytes": 48986,
+      "sha256": "286aec8b06acf1ecaa6c6bd57591031719dbe74fdc1c8f46539a1eae6f8a2807"
+    },
+    {
+      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/cases/navigation-release-worksho-1edbb-th-less-real-travel-320-275-chromium-retry1/trace.zip",
+      "bytes": 262050,
+      "sha256": "da4ade9f1628c1a3f69993c0f7995dee9a59843f16357e556bf9aaee8ccc2903"
+    },
+    {
+      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/cases/navigation-release-worksho-2f666-with-less-real-travel-390-0-chromium/error-context.md.gz",
+      "bytes": 4958,
+      "sha256": "c5518edb0defd8a8157763211e6af0167d699dbdd89b2d075e1ed50a4d101d34"
+    },
+    {
+      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/cases/navigation-release-worksho-2f666-with-less-real-travel-390-0-chromium/test-failed-1.png",
+      "bytes": 55000,
+      "sha256": "c47c85525e22073e3f09fbdd99e706e1f95cdc48cfa7cda451b8f3d3df1f514e"
+    },
+    {
+      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/cases/navigation-release-worksho-2f666-with-less-real-travel-390-0-chromium/trace.zip",
+      "bytes": 272224,
+      "sha256": "d81aa83ad5c9d2271a088bed4d8b25bbb6dc3bb8691c6abd96ded39d857e4b37"
+    },
+    {
+      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/cases/navigation-release-worksho-2f666-with-less-real-travel-390-0-chromium-retry1/error-context.md.gz",
+      "bytes": 4958,
+      "sha256": "c5518edb0defd8a8157763211e6af0167d699dbdd89b2d075e1ed50a4d101d34"
+    },
+    {
+      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/cases/navigation-release-worksho-2f666-with-less-real-travel-390-0-chromium-retry1/test-failed-1.png",
+      "bytes": 55000,
+      "sha256": "c47c85525e22073e3f09fbdd99e706e1f95cdc48cfa7cda451b8f3d3df1f514e"
+    },
+    {
+      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/cases/navigation-release-worksho-2f666-with-less-real-travel-390-0-chromium-retry1/trace.zip",
+      "bytes": 288588,
+      "sha256": "37fe8fd49d3fa8b26366cf5e9905c28cfba0d17bc82214e48b65fdf967c3caa6"
+    },
+    {
+      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/cases/navigation-release-worksho-fa906-th-less-real-travel-390-275-chromium/error-context.md.gz",
+      "bytes": 5204,
+      "sha256": "f8d88c5a05b587fbdad12d1d82953626a9903006921110d41145e4a42e7e0718"
+    },
+    {
+      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/cases/navigation-release-worksho-fa906-th-less-real-travel-390-275-chromium/test-failed-1.png",
+      "bytes": 55476,
+      "sha256": "d82a6d4377014bd765e9fc7ef363ad17bf7a5ba72e3e2b8c394aefad1bcfcbf9"
+    },
+    {
+      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/cases/navigation-release-worksho-fa906-th-less-real-travel-390-275-chromium/trace.zip",
+      "bytes": 273406,
+      "sha256": "2f57335d10badd27a70282c28290c903eed76afb2c3988b2ab488ee7ae75b52d"
+    },
+    {
+      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/cases/navigation-release-worksho-fa906-th-less-real-travel-390-275-chromium-retry1/error-context.md.gz",
+      "bytes": 5204,
+      "sha256": "f8d88c5a05b587fbdad12d1d82953626a9903006921110d41145e4a42e7e0718"
+    },
+    {
+      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/cases/navigation-release-worksho-fa906-th-less-real-travel-390-275-chromium-retry1/test-failed-1.png",
+      "bytes": 55476,
+      "sha256": "d82a6d4377014bd765e9fc7ef363ad17bf7a5ba72e3e2b8c394aefad1bcfcbf9"
+    },
+    {
+      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/cases/navigation-release-worksho-fa906-th-less-real-travel-390-275-chromium-retry1/trace.zip",
+      "bytes": 273980,
+      "sha256": "bddfe8411fe4c2728ea230507c93a2f83d04e0d960b03dbd1abbc625281b5ff0"
     },
     {
       "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/result.json.gz",
       "bytes": 19885,
       "sha256": "cba8bb6e7907281fc19f8216b75bbd706548d3d48a3abd2fe7cd291f1d1cfda5"
-    },
-    {
-      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/test-results/.last-run.json.gz",
-      "bytes": 165,
-      "sha256": "fe9dabf8f3d8e08edb63164eddebca00fdc3e3e34a58469c9f0457cd1839ec7d"
-    },
-    {
-      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/test-results/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-chromium/error-context.md.gz",
-      "bytes": 5437,
-      "sha256": "5ef5cfb1ac94d4a107b7302628bd8f9500c9d40a4941578a7037d20a53dac67f"
-    },
-    {
-      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/test-results/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-chromium/test-failed-1.png",
-      "bytes": 133534,
-      "sha256": "1e66d917bd38523042febdde3fac6de44215cc82ea6bf1a8736591d1e33a6a0e"
-    },
-    {
-      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/test-results/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-chromium/trace.zip",
-      "bytes": 445398,
-      "sha256": "f0dc4bbea62b65130d91595ba230a93f59c2643f833453d4158722cc7205ae81"
-    },
-    {
-      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/test-results/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-chromium-retry1/error-context.md.gz",
-      "bytes": 5437,
-      "sha256": "5ef5cfb1ac94d4a107b7302628bd8f9500c9d40a4941578a7037d20a53dac67f"
-    },
-    {
-      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/test-results/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-chromium-retry1/test-failed-1.png",
-      "bytes": 133534,
-      "sha256": "1e66d917bd38523042febdde3fac6de44215cc82ea6bf1a8736591d1e33a6a0e"
-    },
-    {
-      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/test-results/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-chromium-retry1/trace.zip",
-      "bytes": 429571,
-      "sha256": "915afd97c00a28fed8ae75b8d0ab3b231f782f17f6773a025b5c819b4f7448c7"
-    },
-    {
-      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/test-results/navigation-release-worksho-0f48e-with-less-real-travel-320-0-chromium/error-context.md.gz",
-      "bytes": 4961,
-      "sha256": "176124c7e776ed3ed588ca6511eb83d9521816a9e164ed83e634a0ff8c717ec9"
-    },
-    {
-      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/test-results/navigation-release-worksho-0f48e-with-less-real-travel-320-0-chromium/test-failed-1.png",
-      "bytes": 52322,
-      "sha256": "0c8148f6cbbd1f2e10e448b4b3dc3d486880479da97c2bc9decbf4a953b7f5f1"
-    },
-    {
-      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/test-results/navigation-release-worksho-0f48e-with-less-real-travel-320-0-chromium/trace.zip",
-      "bytes": 265997,
-      "sha256": "f3b31813789bbb21471a9817996c1d39b9e4b037402f4c1253325192ea1b6ccb"
-    },
-    {
-      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/test-results/navigation-release-worksho-0f48e-with-less-real-travel-320-0-chromium-retry1/error-context.md.gz",
-      "bytes": 4961,
-      "sha256": "176124c7e776ed3ed588ca6511eb83d9521816a9e164ed83e634a0ff8c717ec9"
-    },
-    {
-      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/test-results/navigation-release-worksho-0f48e-with-less-real-travel-320-0-chromium-retry1/test-failed-1.png",
-      "bytes": 52322,
-      "sha256": "0c8148f6cbbd1f2e10e448b4b3dc3d486880479da97c2bc9decbf4a953b7f5f1"
-    },
-    {
-      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/test-results/navigation-release-worksho-0f48e-with-less-real-travel-320-0-chromium-retry1/trace.zip",
-      "bytes": 277895,
-      "sha256": "8267d69ce006193a4191763989c5ccc3c2a9a9f9862cc993a69a590716a5211d"
-    },
-    {
-      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/test-results/navigation-release-worksho-1edbb-th-less-real-travel-320-275-chromium/error-context.md.gz",
-      "bytes": 5207,
-      "sha256": "eb4dd47ac23f4c029bc4a569935a683c897bacb481c3dfe4ec9be1c910626aeb"
-    },
-    {
-      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/test-results/navigation-release-worksho-1edbb-th-less-real-travel-320-275-chromium/test-failed-1.png",
-      "bytes": 48986,
-      "sha256": "286aec8b06acf1ecaa6c6bd57591031719dbe74fdc1c8f46539a1eae6f8a2807"
-    },
-    {
-      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/test-results/navigation-release-worksho-1edbb-th-less-real-travel-320-275-chromium/trace.zip",
-      "bytes": 258574,
-      "sha256": "cfd7a9e34b972a4b093e6427633d4538f2df9c020303b1666fc431cb5d64f930"
-    },
-    {
-      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/test-results/navigation-release-worksho-1edbb-th-less-real-travel-320-275-chromium-retry1/error-context.md.gz",
-      "bytes": 5207,
-      "sha256": "eb4dd47ac23f4c029bc4a569935a683c897bacb481c3dfe4ec9be1c910626aeb"
-    },
-    {
-      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/test-results/navigation-release-worksho-1edbb-th-less-real-travel-320-275-chromium-retry1/test-failed-1.png",
-      "bytes": 48986,
-      "sha256": "286aec8b06acf1ecaa6c6bd57591031719dbe74fdc1c8f46539a1eae6f8a2807"
-    },
-    {
-      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/test-results/navigation-release-worksho-1edbb-th-less-real-travel-320-275-chromium-retry1/trace.zip",
-      "bytes": 262050,
-      "sha256": "da4ade9f1628c1a3f69993c0f7995dee9a59843f16357e556bf9aaee8ccc2903"
-    },
-    {
-      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/test-results/navigation-release-worksho-2f666-with-less-real-travel-390-0-chromium/error-context.md.gz",
-      "bytes": 4958,
-      "sha256": "c5518edb0defd8a8157763211e6af0167d699dbdd89b2d075e1ed50a4d101d34"
-    },
-    {
-      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/test-results/navigation-release-worksho-2f666-with-less-real-travel-390-0-chromium/test-failed-1.png",
-      "bytes": 55000,
-      "sha256": "c47c85525e22073e3f09fbdd99e706e1f95cdc48cfa7cda451b8f3d3df1f514e"
-    },
-    {
-      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/test-results/navigation-release-worksho-2f666-with-less-real-travel-390-0-chromium/trace.zip",
-      "bytes": 272224,
-      "sha256": "d81aa83ad5c9d2271a088bed4d8b25bbb6dc3bb8691c6abd96ded39d857e4b37"
-    },
-    {
-      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/test-results/navigation-release-worksho-2f666-with-less-real-travel-390-0-chromium-retry1/error-context.md.gz",
-      "bytes": 4958,
-      "sha256": "c5518edb0defd8a8157763211e6af0167d699dbdd89b2d075e1ed50a4d101d34"
-    },
-    {
-      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/test-results/navigation-release-worksho-2f666-with-less-real-travel-390-0-chromium-retry1/test-failed-1.png",
-      "bytes": 55000,
-      "sha256": "c47c85525e22073e3f09fbdd99e706e1f95cdc48cfa7cda451b8f3d3df1f514e"
-    },
-    {
-      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/test-results/navigation-release-worksho-2f666-with-less-real-travel-390-0-chromium-retry1/trace.zip",
-      "bytes": 288588,
-      "sha256": "37fe8fd49d3fa8b26366cf5e9905c28cfba0d17bc82214e48b65fdf967c3caa6"
-    },
-    {
-      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/test-results/navigation-release-worksho-fa906-th-less-real-travel-390-275-chromium/error-context.md.gz",
-      "bytes": 5204,
-      "sha256": "f8d88c5a05b587fbdad12d1d82953626a9903006921110d41145e4a42e7e0718"
-    },
-    {
-      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/test-results/navigation-release-worksho-fa906-th-less-real-travel-390-275-chromium/test-failed-1.png",
-      "bytes": 55476,
-      "sha256": "d82a6d4377014bd765e9fc7ef363ad17bf7a5ba72e3e2b8c394aefad1bcfcbf9"
-    },
-    {
-      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/test-results/navigation-release-worksho-fa906-th-less-real-travel-390-275-chromium/trace.zip",
-      "bytes": 273406,
-      "sha256": "2f57335d10badd27a70282c28290c903eed76afb2c3988b2ab488ee7ae75b52d"
-    },
-    {
-      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/test-results/navigation-release-worksho-fa906-th-less-real-travel-390-275-chromium-retry1/error-context.md.gz",
-      "bytes": 5204,
-      "sha256": "f8d88c5a05b587fbdad12d1d82953626a9903006921110d41145e4a42e7e0718"
-    },
-    {
-      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/test-results/navigation-release-worksho-fa906-th-less-real-travel-390-275-chromium-retry1/test-failed-1.png",
-      "bytes": 55476,
-      "sha256": "d82a6d4377014bd765e9fc7ef363ad17bf7a5ba72e3e2b8c394aefad1bcfcbf9"
-    },
-    {
-      "path": "qa/editorial/navigation-release-ci-correction/first-chromium3-artifact/test-results/navigation-release-worksho-fa906-th-less-real-travel-390-275-chromium-retry1/trace.zip",
-      "bytes": 273980,
-      "sha256": "bddfe8411fe4c2728ea230507c93a2f83d04e0d960b03dbd1abbc625281b5ff0"
     },
     {
       "path": "qa/editorial/navigation-release-ci-correction/first-chromium3.log.gz",
