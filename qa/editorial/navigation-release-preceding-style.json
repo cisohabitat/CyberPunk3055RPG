@@ -1,0 +1,9 @@
+{
+  "precedingRevision": "808b1969904d1987b3b33d4f571ad1c5ae7446db",
+  "path": "app/globals.css",
+  "fixture": "qa/editorial/navigation-release-preceding.css",
+  "sha256": "c22dc0801c22176cbf71560d36819adb3588ae6162e8539236bf677203fe91dc",
+  "independentCapture": "qa/editorial/navigation-release-layout-baseline.json",
+  "independentCaptureSha256": "f355f0ad676d77fde8812efb85156b6b94cd8476d508646aea6e605330250c08",
+  "method": "Original raw global stylesheet from published808b196 Git object; fonts remain loaded from the unchanged separate font stylesheet. Disable exactly one current global sheet and install this frozen sheet, measure the same rendered DOM, restore current sheet before any interaction. Exact words/controls/type plus8%exit/no-increase comparisons now run in each native project. No absolute platform-pixel tolerance or modified production CSS."
+}

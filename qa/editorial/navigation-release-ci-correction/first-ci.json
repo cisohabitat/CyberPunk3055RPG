@@ -1,0 +1,145 @@
+{
+  "revision": "39231497f7192b7a44e2610e50d51ba36b72eb9b",
+  "runId": 41244369826,
+  "status": "completed",
+  "conclusion": "failure",
+  "reason": "Five new Chromium cases compared absolute reference pixels across different renderers; all other browser shards completed successfully. Follow-up keeps independent fixtures and unchanged budgets inside the same engine.",
+  "jobs": [
+    {
+      "id": 124664614248,
+      "name": "Test",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124665735868,
+      "name": "Browser shard (phone, 1/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124665735883,
+      "name": "Browser shard (firefox, 4/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124665735904,
+      "name": "Browser shard (chromium, 2/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124665735926,
+      "name": "Browser shard (phone, 4/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124665735929,
+      "name": "Browser shard (chromium, 1/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124665735936,
+      "name": "Browser shard (webkit, 4/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124665735938,
+      "name": "Browser shard (phone, 2/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124665735939,
+      "name": "Browser shard (firefox, 1/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124665735961,
+      "name": "Browser shard (chromium, 3/4)",
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    {
+      "id": 124665735965,
+      "name": "Browser shard (webkit, 1/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124665735973,
+      "name": "Browser shard (webkit, 2/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124665735985,
+      "name": "Browser shard (firefox, 2/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124665735987,
+      "name": "Browser shard (firefox, 3/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124665736007,
+      "name": "Browser shard (webkit, 3/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124665736066,
+      "name": "Browser shard (phone, 3/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124665736087,
+      "name": "Browser shard (chromium, 4/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124670222436,
+      "name": "Browser (phone)",
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    {
+      "id": 124670222437,
+      "name": "Browser (firefox)",
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    {
+      "id": 124670222462,
+      "name": "Browser (chromium)",
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    {
+      "id": 124670222509,
+      "name": "Browser (webkit)",
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    {
+      "id": 124670356244,
+      "name": "Build",
+      "status": "completed",
+      "conclusion": "failure"
+    }
+  ],
+  "artifact": {
+    "id": 13059287634,
+    "sha256": "ecd9e566ee476f6e33e05df5db007d2ef371b49b063f0be80404a17b6bed4ed8"
+  }
+}

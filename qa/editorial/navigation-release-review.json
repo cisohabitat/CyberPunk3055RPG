@@ -5976,5 +5976,21 @@
     "distinctDeliveries": 21,
     "allQuotesReconstructed": true,
     "newMedia": 0
+  },
+  "ciComparisonCorrection": {
+    "firstRevision": "39231497f7192b7a44e2610e50d51ba36b72eb9b",
+    "firstRun": 41244369826,
+    "failedNewCases": 5,
+    "raw": "qa/editorial/navigation-release-ci-correction/",
+    "frozenStyle": "qa/editorial/navigation-release-preceding-style.json",
+    "method": "Same native engine/font stylesheet, unchanged8%minimum and exact terms/control/type/no-increase contracts; thresholds now apply in all four browser projects.",
+    "localSystemChromium": 9,
+    "localPlaywrightChromium": 9,
+    "localWebKit": 9,
+    "workers": 4,
+    "retries": 0,
+    "productionTreesUnchanged": true,
+    "sourceFingerprint": "98040590e9afa5ca5c15c92c7fab650123e7cd40d188d2825ee793969c3f7b85",
+    "newHostedAndPublicGate": "Pending separately; do not relabel prior attempt or raw campaign revisions."
   }
 }
