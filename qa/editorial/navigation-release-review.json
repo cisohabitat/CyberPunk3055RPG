@@ -1,8 +1,8 @@
 {
   "version": 1,
   "phase": 20,
-  "status": "All74 fresh complete candidate campaigns accepted; exact-commit CI/READY/public proof remains separate.",
-  "runtimeSourceFingerprint": "98040590e9afa5ca5c15c92c7fab650123e7cd40d188d2825ee793969c3f7b85",
+  "status": "All74 fresh spacing-follow-up campaigns accepted; exact new commit CI/READY/public verification remains separate.",
+  "runtimeSourceFingerprint": "0a0a06350de30ef1450bf5da4b5478feedbff1e9fafaecce3adb4c81ff06357b",
   "profiles": 74,
   "priorProfiles": 66,
   "newProfiles": 8,
@@ -5854,62 +5854,68 @@
     {
       "width": 320,
       "creds": 0,
+      "actualEarnedCreds": null,
+      "importedResources": true,
       "rawExitBefore": 5164.9375,
-      "rawExitAfter": 4700.59375,
-      "reduction": 0.08990307239923034,
-      "reviewExitBefore": 990.21875,
-      "reviewExitAfter": 990.21875,
-      "textControlsTypographyExact": true
+      "rawExitAfter": 4668.59375,
+      "reduction": 0.09609869432108331,
+      "textControlsTypographyExact": true,
+      "purchaseAndReviewTravelNoIncrease": true
     },
     {
       "width": 320,
       "creds": 275,
+      "actualEarnedCreds": null,
+      "importedResources": true,
       "rawExitBefore": 6276.484375,
-      "rawExitAfter": 5551.59375,
-      "reduction": 0.11549309799723673,
-      "reviewExitBefore": 1112.96875,
-      "reviewExitAfter": 1112.96875,
-      "textControlsTypographyExact": true
+      "rawExitAfter": 5519.59375,
+      "reduction": 0.12059149354609844,
+      "textControlsTypographyExact": true,
+      "purchaseAndReviewTravelNoIncrease": true
     },
     {
       "width": 390,
       "creds": 0,
+      "actualEarnedCreds": null,
+      "importedResources": true,
       "rawExitBefore": 4234,
-      "rawExitAfter": 3653.90625,
-      "reduction": 0.13700844355219655,
-      "reviewExitBefore": 764.75,
-      "reviewExitAfter": 764.75,
-      "textControlsTypographyExact": true
+      "rawExitAfter": 3621.90625,
+      "reduction": 0.14456630845536134,
+      "textControlsTypographyExact": true,
+      "purchaseAndReviewTravelNoIncrease": true
     },
     {
       "width": 390,
       "creds": 275,
+      "actualEarnedCreds": null,
+      "importedResources": true,
       "rawExitBefore": 5061,
-      "rawExitAfter": 4540.65625,
-      "reduction": 0.10281441414740167,
-      "reviewExitBefore": 858.0625,
-      "reviewExitAfter": 858.0625,
-      "textControlsTypographyExact": true
+      "rawExitAfter": 4508.65625,
+      "reduction": 0.10913727524204697,
+      "textControlsTypographyExact": true,
+      "purchaseAndReviewTravelNoIncrease": true
     },
     {
       "width": 1440,
       "creds": 0,
+      "actualEarnedCreds": null,
+      "importedResources": true,
       "rawExitBefore": 2237.015625,
-      "rawExitAfter": 1995.203125,
-      "reduction": 0.10809602637442461,
-      "reviewExitBefore": 516.265625,
-      "reviewExitAfter": 516.265625,
-      "textControlsTypographyExact": true
+      "rawExitAfter": 1981.203125,
+      "reduction": 0.11435436442246572,
+      "textControlsTypographyExact": true,
+      "purchaseAndReviewTravelNoIncrease": true
     },
     {
       "width": 1440,
       "creds": 275,
+      "actualEarnedCreds": null,
+      "importedResources": true,
       "rawExitBefore": 3139.703125,
-      "rawExitAfter": 2422.203125,
-      "reduction": 0.22852479085900834,
-      "reviewExitBefore": 580.140625,
-      "reviewExitAfter": 580.140625,
-      "textControlsTypographyExact": true
+      "rawExitAfter": 2375.609375,
+      "reduction": 0.24336496782637684,
+      "textControlsTypographyExact": true,
+      "purchaseAndReviewTravelNoIncrease": true
     }
   ],
   "sourceTests": 1002,
@@ -5928,7 +5934,7 @@
   "limits": "Accepted authored-dice source-familiar proxy with synthetic viewport/touch. No human, unfamiliar-player, physical-iPhone or independent acting claim. Prior66 retain exact workload, words, controls, geometry at decisions, state and gameplay media sets; native menu request-set differences are separately retained. Raw precommit revision/dirty metadata and initial timing failures are preserved. New8 play existing story without scene/flag grafting; no new authored interactions. Source reachability and continuous browser coverage are distinct.",
   "canonicalLayout": {
     "baseline": "qa/editorial/navigation-release-canonical-public-baseline.json",
-    "built": "qa/editorial/navigation-release-canonical-built.json",
+    "built": "qa/editorial/navigation-release-spacing-canonical-built.json",
     "baselineDeployment": {
       "id": "dpl_ARYUBhYg9YDNjaq2K6kEBZbN6gaP",
       "revision": "808b1969904d1987b3b33d4f571ad1c5ae7446db",
@@ -5939,31 +5945,34 @@
     "rows": [
       {
         "width": 320,
+        "creds": 330,
         "actualEarnedCreds": 330,
         "importedResources": false,
         "rawExitBefore": 6276.484375,
-        "rawExitAfter": 5551.59375,
-        "reduction": 0.11549309799723673,
+        "rawExitAfter": 5519.59375,
+        "reduction": 0.12059149354609844,
         "textControlsTypographyExact": true,
         "purchaseAndReviewTravelNoIncrease": true
       },
       {
         "width": 390,
+        "creds": 330,
         "actualEarnedCreds": 330,
         "importedResources": false,
         "rawExitBefore": 5061,
-        "rawExitAfter": 4540.65625,
-        "reduction": 0.10281441414740167,
+        "rawExitAfter": 4508.65625,
+        "reduction": 0.10913727524204697,
         "textControlsTypographyExact": true,
         "purchaseAndReviewTravelNoIncrease": true
       },
       {
         "width": 1440,
+        "creds": 330,
         "actualEarnedCreds": 330,
         "importedResources": false,
         "rawExitBefore": 3139.703125,
-        "rawExitAfter": 2422.203125,
-        "reduction": 0.22852479085900834,
+        "rawExitAfter": 2375.609375,
+        "reduction": 0.24336496782637684,
         "textControlsTypographyExact": true,
         "purchaseAndReviewTravelNoIncrease": true
       }
@@ -5992,5 +6001,553 @@
     "productionTreesUnchanged": true,
     "sourceFingerprint": "98040590e9afa5ca5c15c92c7fab650123e7cd40d188d2825ee793969c3f7b85",
     "newHostedAndPublicGate": "Pending separately; do not relabel prior attempt or raw campaign revisions."
+  },
+  "spacingFollowup": {
+    "baseline": "qa/editorial/navigation-release-spacing-baseline.json",
+    "raw": "qa/editorial/navigation-release-spacing-accepted-runs/",
+    "priorRaw": "qa/editorial/navigation-release-accepted-runs/",
+    "profiles": 74,
+    "comparison": [
+      {
+        "id": "deferred",
+        "rawSha256": "daf6055584e26f5fb4215ac3450b82c585647281134bd773f7b47a94448338b0",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "denied",
+        "rawSha256": "b1169d1c0b157389471dab7307265da05a685cab83f18b54325b93fa977c7e0f",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "names",
+        "rawSha256": "2f2e985a733f6742bba8cee72edc9d59be8859888b98fa812330cf049cbe769a",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "listed-sound",
+        "rawSha256": "4a13fd03d693e02856db74919b21b742fa2ef07df05c3d63d7a6f10a32b2bc4e",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "nerve",
+        "rawSha256": "ad1fec114e16ec8043efb6cfb6454fbc19b40ac28ee749a02d57fb9fab83dbd3",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "face-failed",
+        "rawSha256": "2709c75f1ba3cd5fb9873aff7b248acf6b50826b7d87b71c786ceee3970964f0",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "archive-failed",
+        "rawSha256": "f87b79e05f6ad78e808d3e09a93deb749e7206e546738314b180c662f5639698",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "canceled",
+        "rawSha256": "34ac8cdd00c3df501d21c39cb374faaebc049f30e14eed0a6a3dbb926d183dbe",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "nerve-handling-failed",
+        "rawSha256": "81d61d9a83ffcf3a0d1abbe1ee3e3e6eea6017f66d41b8fe50300f65a3db8fc2",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "ghost-routing",
+        "rawSha256": "4d7e89fb6f7d7f05bb04d5eed9859fde2b716a6b1abec84b477a36fd515f01a8",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "harness-listed",
+        "rawSha256": "7863c4fda64a006e5d6b56f54dacb8c1fff10b9f625f89eafa84015cc32be6f3",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "failed-desk",
+        "rawSha256": "64ef0427eb24132353b0f6ede39def57b24f8addd7c8522a8b2e214f025f361a",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "scarce",
+        "rawSha256": "d8285abaebfa71dc2e9ecb6ca4d5625ce2efcd1054216540d1c98ff60dd153e8",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "routing-cancel-after",
+        "rawSha256": "d880fd632da53945499926a7641ba5c546118e785b84ef3bdbc4c2d4ae0379dd",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "routing-cancel-before",
+        "rawSha256": "193a967bbcc9ab6e9e247a70ed40b87f3959f1694f7b829d3dfb03708903e966",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "routing-declined",
+        "rawSha256": "f601362facd20ce2c6412b027214e14627d95b521fc79738c7435ddd92e50536",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "routing-held-hatch",
+        "rawSha256": "6559b42dc2f72d42f122f43c5c8970d83de9fee0ef60896a471f7d3e9e5e4613",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "routing-held-strip",
+        "rawSha256": "f29e7486a89b1af354310d529f923ff0371362f5db7d65f2fcc277e4cd2a1a06",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "routing-scarce",
+        "rawSha256": "5aa76a997ff7f6ee1de32002ca74d5cbce325070b77f197954b71502b61ae246",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "routing-screened",
+        "rawSha256": "dda14afa27ca0490185c511b689a4bcb3f85a3434322ceb70fb685620e7199c2",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "routing-signed",
+        "rawSha256": "b74b137a9823c3ed0bd7c95e70966c4bb79f7a8a8d78a4fddc09e4264705d1f4",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "routing-skipped",
+        "rawSha256": "0268b6fe95cb1ab8a414e722c43759a5d0920dd519f3b1280d395fdc99b7152f",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "routing-unfinished",
+        "rawSha256": "11949a530a20cf8e76b6a9ff450c6ac25f3d4d71a678578669efc01894e927dc",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "ordinary-shared",
+        "rawSha256": "335b208b38c0bfaf674b5a8d8b998abc5746f6c12172e0fe4d56e797d9cb06bf",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "ordinary-private",
+        "rawSha256": "8349370c8124968f84a76f13e36e2ee3c747b04dc7d63693cbf9a352536c9319",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "ordinary-refused",
+        "rawSha256": "eed3954de33eeb04d12a5731507dd6418bf1ec4449dc125b89b82da034697862",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "carry-authenticated",
+        "rawSha256": "a1c9aaeb612b08f5d2cf1f1f13284a99a66f6e9e12cbadc8003dda3b74657af3",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "watch-private",
+        "rawSha256": "14c74f742f8d08412611be97a437253598226f7cfe3e6af1ade72840d52a9bb1",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "watch-corrected",
+        "rawSha256": "6bfeb75fa5b538269c5c3d4c2ddf2e59497d94130bfe648c08462d9cf04a1b44",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "declined",
+        "rawSha256": "9173f20cfe1a87247d461a47213040a70781bcc708970cc592690ae755b275a8",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "interrupted-switch",
+        "rawSha256": "84eef8e1c2b336eb1feb4321a76d788f3316b7057d045325ab766017e46768fc",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "carry-failed",
+        "rawSha256": "19769a2a43a9a98cee6a51c505d4e4a14f3435d439af693f50b90befe8caa431",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "dramatic-face",
+        "rawSha256": "225500629d9b733b5fde89ac4f7446dca3438476ff1bcbc7e12c572f04a38135",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "dramatic-badge-scarce",
+        "rawSha256": "6ad845bae9913b1dd1164d6716d2f75aa7a4457c235040a8ace5268e2275991e",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "dramatic-paid",
+        "rawSha256": "89041e7c049bc834e19492f8abbba071c996f4ce148993983ba3a96d816c580c",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "dramatic-deferred",
+        "rawSha256": "b254f3ac197005022c50be041dcf23ce3cd2b26a05fcc25652311c3697be2daa",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "dramatic-scarce",
+        "rawSha256": "bdf0c28b1376602461f8a57b20b66cb3258bd568efbb7baba4855f47029ae74c",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "dramatic-direct",
+        "rawSha256": "567ac048b0e2e8e334f1c615894e43ecedc3b3d83e995f678185ebf38804cad8",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "dramatic-sera-carry",
+        "rawSha256": "d648b5d05acfc0204a68fa7dcebd9d7ce2be0661a57b4655efa23d79cc86a181",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "dramatic-listed",
+        "rawSha256": "f3e10b4733f42ebfecfb7e1e2f7587b5e99678bee4f68492ca8c3a0ada14b5d8",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "consequential-chrome-public-work",
+        "rawSha256": "1bd8f1d264984c10ceded2967ad72f8a306166b7b9f563e9707e6f8cf6ccbd88",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "consequential-chrome-public-stop",
+        "rawSha256": "0a030af9d34221b49d1c10ceb5e0b58f6e7332d4a580f016a9218b815949fec5",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "consequential-chrome-private",
+        "rawSha256": "3d9729f1c49c794b00fd6b079e19a828a37af83595c12cbe1990d3692d614452",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "consequential-face-public-work",
+        "rawSha256": "835541def51a57a8f0a1ab5a02f8a6d96e3f5343b6b661cd13accf68ac135fab",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "consequential-face-public-stop",
+        "rawSha256": "eb44db0f759fab8d3693a8350683c6964291392ef5938a6c1064a7c85af38b07",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "consequential-face-private",
+        "rawSha256": "94d61138ae65d69312f1ca2ba82a4d8ec38364ca2eb81866e770c8d7cc806569",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "expansion-chrome-quiet",
+        "rawSha256": "6e95376330650d3028c5e589c3a4e8ea80d2a97b48e0715bf72abfba882c4898",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "expansion-chrome-names",
+        "rawSha256": "713ae4e1be7c0dfb4208c556b7ff948e19470882ae380e294392200003813cc9",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "expansion-chrome-witness",
+        "rawSha256": "1c109a35f14ab6b8c8a0135c27f98fa43f9408aef5f352981e5b38624450d217",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "expansion-chrome-listed",
+        "rawSha256": "ebd28dddaed7b1e45186edd451b2419ce4e73933827024bba79052165bc3ad73",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "expansion-face-quiet",
+        "rawSha256": "91ebfbcb09647c19132acd27fb421437f0eef3c54b5920eb9df6820d42e283c9",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "expansion-face-names",
+        "rawSha256": "e9f865883391ea06684754a9f31a9b7e7b8c49928b24f3a69df96ab0d9031751",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "expansion-face-witness",
+        "rawSha256": "3ab4cdd2cee6f447f8f1d03476e9046874617835bcbd4251bd9272b5120581f6",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "expansion-face-listed",
+        "rawSha256": "5dc7a393fb856d2837ce54c1efcc79b169a5a4c988c4a8a7a15ed898763bd973",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "expansion-chrome-scarce",
+        "rawSha256": "4377c74877d9452441b71c4a0ebfbda4f5632dd260819ff693e5fb631d2b0aee",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "expansion-chrome-refused",
+        "rawSha256": "b619dc2350ff8feef4145819c3dad58bcb8c5904ed4a36336bf11c9ae70ecef1",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "expansion-chrome-withheld",
+        "rawSha256": "b887e78a3e56d03a6c5b5042fd7fe0a4402d395d24696f0d97cf89cf17f5e09d",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "expansion-face-scarce",
+        "rawSha256": "ca7f18180846023e31409a3cd59be00cae59c7f2e7350a2f87db240b5f64154f",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "expansion-face-refused",
+        "rawSha256": "8767a708bc1c5fb42844a46dae6a4e568ea8e053e097a5fa0410714baab45b44",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "expansion-face-withheld",
+        "rawSha256": "ad83b81847dba481be6502479f2b8e8c10906b623eb7c45f9a31e7f51c54b54d",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "sequence-face",
+        "rawSha256": "eadff5a647fac2d770c840031e718900592f7b75ed05412d5fd28da3c8d0d80e",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "sequence-badge-scarce",
+        "rawSha256": "3b80ffaa0a60ae80a03f9b960eb5ab2c14b5e368d75526b3cd62ef0dba6511a1",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "sequence-paid",
+        "rawSha256": "1f90f337f1d5ff9da8b05b708ca68647702ad861f5551ce1d8f12294cd147069",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "sequence-both-owned-company",
+        "rawSha256": "a9d95656759cb18d277213eddd0e37471a86a10f0f748246562a9417d429f133",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": {
+          "path": "/audio/theme-title.flac",
+          "beforePresent": false,
+          "currentPresent": true,
+          "scope": "Only separately disclosed native title request-set membership; not request counts. Gameplay media sets exact."
+        }
+      },
+      {
+        "id": "sequence-partial-deflected",
+        "rawSha256": "74c2b5050db145b536cc86fdeea387ea84d2d59570dd63badb46a3a1b2c51da2",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "sequence-sold-distance",
+        "rawSha256": "ff073369cbb8facac72491ef00efa231e8a41cdd611c5565db5bf66ffdcdeceb",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "navigation-1",
+        "rawSha256": "8b2a4649f4677267744d21306d1a5511be06368f763ab6842214f6a1f778cc61",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "navigation-2",
+        "rawSha256": "d93325b83dd942b5ffa506c5db88d2d6bc0d13abf90f7dbf302315e6a5e285df",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "navigation-3",
+        "rawSha256": "cceeb98f720b8c6ced91e88b5102d502c643e055f07f95b398eea60dd2aa4d13",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "navigation-4",
+        "rawSha256": "fd8f7e1992042e1c43db00ed784c68ed290443418ea091312128b9b507e3f92c",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "navigation-5",
+        "rawSha256": "3e83ba3246f796c773370d31760852512c765fecc1a2c194c0df8b8876e01479",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "navigation-6",
+        "rawSha256": "63e85964586e2057db736fb87d92f50de39c864e048d018e1fdeddf8100e8888",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "navigation-7",
+        "rawSha256": "63aaafbb624ee0ca67e10000463417291ed3a291dc04c4ab0af2d33fff98a174",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      },
+      {
+        "id": "navigation-8",
+        "rawSha256": "15a292e18c59f49ce0a8ceab4fd861877a375ab4c749f82c572f65b03a7e510f",
+        "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+        "dirty": true,
+        "menuThemeRequestSetDelta": null
+      }
+    ],
+    "scope": "Three spacing values only; every preceding74 workload/action/resource/cast/media observation matches, with native title request-set differences explicitly disclosed.",
+    "remainingHosted": "Full7308,1827/project,6original native-policy skips; unchanged8%per-task target.",
+    "nativeMeasurements": "qa/editorial/navigation-release-spacing-native-measurements.json",
+    "baselinePreservation": "qa/editorial/navigation-release-spacing-preservation.json",
+    "localBrowsers": {
+      "chromium": 47,
+      "webkit": 47,
+      "workers": 4,
+      "retries": 0
+    },
+    "loading": "qa/editorial/navigation-release-spacing-loading.json",
+    "sourceTests": 1002
+  },
+  "layoutBeforeSpacing": {
+    "independentBuilt": "qa/editorial/navigation-release-layout-built.json",
+    "canonicalBuilt": "qa/editorial/navigation-release-canonical-built.json",
+    "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd"
   }
 }

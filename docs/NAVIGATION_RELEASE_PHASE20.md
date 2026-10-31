@@ -74,3 +74,15 @@ The original reference positions remain unmodified. Hosted review-link positions
 All five first-CI failures, both attempts, screenshots/contexts/traces and exact full-shard result are retained under`qa/editorial/navigation-release-ci-correction/`; full artifact SHA/ID is indexed. The optional local Firefox native-profile launch remains unavailable even with a workspace temp folder; the first hosted Firefox cohort passes, and the fresh hosted full Firefox project is still required.
 
 Failure attachments are versioned under the archive’s `cases/` directory so the repository’s ordinary `test-results` ignore rule cannot omit them. Original artifact source names and hashes remain intact in the index; every archive path is checked against the Git index.
+
+## Real zero-credit desktop spacing miss
+
+Phase20 spacing follow-up: the same-engine hosted comparison exposed a real1440px/zero-credit miss (7.85%raw exit reduction against the unchanged8%budget). Tighten only existing card-review whitespace and grid gaps; preserve all text, computed type,44px controls, prices and focus order. A new independent289-route/20,681-visit/874-media baseline precedes this edit. Repeat all74 campaigns and original release gates in fresh directories; preserve the62cd512 CI failure and prior accepted evidence. Grade remains8.9 provisional.
+
+The corrected phone-project1440px zero-credit case measured2061.39px against a2237.02px preceding layout:7.85%improvement,3.34px beyond the8%target. This is a genuine budget miss, separate from the earlier renderer-baseline problem. Keep the target. Review margins/padding become.25rem each and card-grid gaps become.4rem. These changes reduce real content travel without moving the measurement marker or removing any term/control. Fresh evidence uses the `navigation-release-spacing-*` namespace; the first74 raw observations remain intact.
+
+## Complete spacing-follow-up acceptance
+
+Phase20 spacing acceptance: all74 fresh campaigns retain exactly5,517visits/5,103reloads/45,716Tabs/531natural dialogue completions/209UIids. All earlier74 workload/words/controls/resources/media observations remain exact, with native title request-set membership separately disclosed. Independent289-route/20,681-visit/874-media preservation passes. Current actual330-creds task controls improve10.91–24.34%; all12 local Chromium/WebKit same-engine comparisons exceed8% (minimum9.59%) with exact words/type/control inventory. Fresh47-case suites in each browser,1002source tests, security/fivebalance/build/catalog/budgets and four loading samples pass. Keep7308hosted cases/6originalskips, fresh exact-commitCI/READY/public gates and both rejected CI cohorts. Grade8.9provisional; publication proof remains separate.
+
+Fresh raw candidate metadata is actual62cd512/dirty and remains unmodified. Raw original candidate data remains separately archived. Only the three scoped spacing values change; all quoted dialogue, cast and art/audio bytes remain aligned.

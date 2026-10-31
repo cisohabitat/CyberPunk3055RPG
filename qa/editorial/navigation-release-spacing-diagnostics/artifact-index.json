@@ -1,0 +1,57 @@
+{
+  "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+  "runId": 41246613630,
+  "artifactId": 13060066884,
+  "archiveSha256": "f15fe2e56744d1c2da4efba59c576d2e83583dcda4446fa49e39df8706bf0c90",
+  "method": "All new-case failure data and full result retained with raw hashes; text losslessly gzipped, source names remain original, targets use cases/ outside ignored output directories.",
+  "files": [
+    {
+      "source": "result.json",
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/second-phone3-artifact/result.json.gz",
+      "sha256": "76929e9b7f0596ae89110ea023801336c8ad3f6eac9d88cc36f4491223ce8e41",
+      "bytes": 268712
+    },
+    {
+      "source": "test-results/.last-run.json",
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/second-phone3-artifact/cases/.last-run.json.gz",
+      "sha256": "ccb9be9dc2bf7f3bdadf7c83e5e675b7b8e1fedd6a84b5e2ecada01578281ab6",
+      "bytes": 96
+    },
+    {
+      "source": "test-results/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-phone/error-context.md",
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/second-phone3-artifact/cases/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-phone/error-context.md.gz",
+      "sha256": "6eb255a3b640eb8f7950afb502bec131b4aca3dd59f0dad2de7bf5bb3d374f52",
+      "bytes": 20839
+    },
+    {
+      "source": "test-results/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-phone/test-failed-1.png",
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/second-phone3-artifact/cases/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-phone/test-failed-1.png",
+      "sha256": "1e66d917bd38523042febdde3fac6de44215cc82ea6bf1a8736591d1e33a6a0e",
+      "bytes": 133534
+    },
+    {
+      "source": "test-results/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-phone/trace.zip",
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/second-phone3-artifact/cases/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-phone/trace.zip",
+      "sha256": "af54b4e345f59f3cc465518ae1adb3a6db44b50a9e0b482db906752e7187dd32",
+      "bytes": 423242
+    },
+    {
+      "source": "test-results/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-phone-retry1/error-context.md",
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/second-phone3-artifact/cases/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-phone-retry1/error-context.md.gz",
+      "sha256": "6eb255a3b640eb8f7950afb502bec131b4aca3dd59f0dad2de7bf5bb3d374f52",
+      "bytes": 20839
+    },
+    {
+      "source": "test-results/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-phone-retry1/test-failed-1.png",
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/second-phone3-artifact/cases/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-phone-retry1/test-failed-1.png",
+      "sha256": "1e66d917bd38523042febdde3fac6de44215cc82ea6bf1a8736591d1e33a6a0e",
+      "bytes": 133534
+    },
+    {
+      "source": "test-results/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-phone-retry1/trace.zip",
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/second-phone3-artifact/cases/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-phone-retry1/trace.zip",
+      "sha256": "6345e3ae745d5164213e661da0a219da938eacd52a028f4294840d6793a286dd",
+      "bytes": 454267
+    }
+  ]
+}

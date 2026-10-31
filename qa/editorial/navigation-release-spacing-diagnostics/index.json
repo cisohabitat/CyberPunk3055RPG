@@ -1,0 +1,225 @@
+{
+  "method": "Raw rejected second-CI cases and fresh complete follow-up acceptance retained; text/JSON deterministically losslessgzip. No threshold/word/action omission or raw metadata relabeling.",
+  "files": [
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/all74-accepted.log.gz",
+      "bytes": 316,
+      "sha256": "56d2ec90f92e6d6800f2977e7a5ed4e32825109b80cf117ecffd1830538065de"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/artifact-index.json",
+      "bytes": 3470,
+      "sha256": "ac5fa20a78d50c2fa18228bca324865663994e1f090fb69d4b56e6d9130fd0c3"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/balance.log.gz",
+      "bytes": 282,
+      "sha256": "9676245a26921e28d4705b8590aca8bc412284aecdbcc078e8f1516d2e8ec715"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/baseline.log.gz",
+      "bytes": 117,
+      "sha256": "1cce433a14253fb00f82d5f37991799fd540cc835ad726d925183fab0c20dbdb"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/build.log.gz",
+      "bytes": 612,
+      "sha256": "a192d67dce83161f0ebdf43e3d39539218101856582c6c3607a6038a09f26179"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/campaigns-quiet.log.gz",
+      "bytes": 413,
+      "sha256": "3212423343808ef11071d6c24d468d69d6d9b0fba8f0816f2ec83b3e4c2a720d"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/campaigns-sound.log.gz",
+      "bytes": 177,
+      "sha256": "1a259fd368019d5f8ac8d4b9ce24dd6730e0bf65aba37964a9f68a91414b0a2e"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/canonical-built.log.gz",
+      "bytes": 194,
+      "sha256": "13ad53eb584a9a909d0493225bcd3cf117c65a172e3b1286c663a194cb973fa3"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/catalog.log.gz",
+      "bytes": 311,
+      "sha256": "8036d36718df09b626c5c2afb9615bf4f4febf4c41f5781aaeec3191c8d7231f"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/chromium-artifact-index.json",
+      "bytes": 3487,
+      "sha256": "c2413f361723485dab15e6b88bee3675c7b92d6c119c6315125b9f1dd4d12a69"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/chromium-report.json.gz",
+      "bytes": 47235,
+      "sha256": "86eeae76f3fd79ae75aa43c41b9ca187bfbbd41d954b47913f399eb6d8cc16ad"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/chromium.log.gz",
+      "bytes": 1151,
+      "sha256": "5b42cfb22037ff1bf17ae7f0da15d9f17b8a15bd4c4c36398ab900c20a288601"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/economy.log.gz",
+      "bytes": 286,
+      "sha256": "4732acd958dada0b583486825f52286adbaf576af7013a74b9d8ef23c4a52993"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/finish-local.log.gz",
+      "bytes": 222,
+      "sha256": "81a46e4acd4447716c59bbbbbc70b8392da094dff4c9a0f2fe491a1266d417a3"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/layout-built.log.gz",
+      "bytes": 269,
+      "sha256": "2799294ecc63975bcced17e17734e68a6c51e9ebc36a34d895c80f143864866e"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/missions.log.gz",
+      "bytes": 270,
+      "sha256": "1bdbdd4cab4b5b2699585461b4122ba1ad57c6e2e7aa05a28026b9894a8f9301"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/overlap.log.gz",
+      "bytes": 311,
+      "sha256": "78399de8a7ad6b0ffc55095cef81e7efe747eb164cf7d63160bdd3d6626a4951"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/preserve.log.gz",
+      "bytes": 117,
+      "sha256": "1cce433a14253fb00f82d5f37991799fd540cc835ad726d925183fab0c20dbdb"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/prior-accepted.log.gz",
+      "bytes": 206,
+      "sha256": "9665911a3e8ee8c9488034284b812758207e6eaf7f3b8eb72479d4f2ab54292a"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/probe.log.gz",
+      "bytes": 789,
+      "sha256": "d9db88076b8b548c766a49580ea238b838ed9085268e7149c500a1a56c5171bb"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/second-chromium3-artifact/cases/.last-run.json.gz",
+      "bytes": 104,
+      "sha256": "3008459e6519c9d334e8d8a0c3af00cc0bb245d7d589f8c0129c705aa65c97af"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/second-chromium3-artifact/cases/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-chromium/error-context.md.gz",
+      "bytes": 6195,
+      "sha256": "8e34f788d789d8bfcc8a33b59d4f2bebedb1d132ac136b0aa040634bd09a2697"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/second-chromium3-artifact/cases/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-chromium/test-failed-1.png",
+      "bytes": 133534,
+      "sha256": "1e66d917bd38523042febdde3fac6de44215cc82ea6bf1a8736591d1e33a6a0e"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/second-chromium3-artifact/cases/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-chromium/trace.zip",
+      "bytes": 603429,
+      "sha256": "babcffacb3a15459ea94deb74b9ef6cb264c5b2a565506c58b4b6bd019c67305"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/second-chromium3-artifact/cases/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-chromium-retry1/error-context.md.gz",
+      "bytes": 6195,
+      "sha256": "8e34f788d789d8bfcc8a33b59d4f2bebedb1d132ac136b0aa040634bd09a2697"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/second-chromium3-artifact/cases/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-chromium-retry1/test-failed-1.png",
+      "bytes": 133534,
+      "sha256": "1e66d917bd38523042febdde3fac6de44215cc82ea6bf1a8736591d1e33a6a0e"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/second-chromium3-artifact/cases/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-chromium-retry1/trace.zip",
+      "bytes": 607366,
+      "sha256": "35ddb6d6b85fffcc59955659043d9ed02b5f9b33e1685895734b3abdb242de0d"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/second-chromium3-artifact/result.json.gz",
+      "bytes": 19859,
+      "sha256": "bf26dd098ec5e7256c81b5456b85f14b7a4061a4887320a1f9057167a6b0541a"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/second-chromium3.log.gz",
+      "bytes": 17952,
+      "sha256": "564a73105be7617582fcdd1356ed9185b0756209d9fb677bd8fcf18f93d17348"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/second-ci.json",
+      "bytes": 3421,
+      "sha256": "eb9aa6854b1a400c9a016ed4f5263404023e2cd96d5ddbb62f582903b096d29f"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/second-phone3-artifact/cases/.last-run.json.gz",
+      "bytes": 104,
+      "sha256": "4aa40938fd4bb860a25f9302929ab56396a1ebbd0700b6d497e4ef3515de772e"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/second-phone3-artifact/cases/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-phone/error-context.md.gz",
+      "bytes": 6195,
+      "sha256": "8e34f788d789d8bfcc8a33b59d4f2bebedb1d132ac136b0aa040634bd09a2697"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/second-phone3-artifact/cases/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-phone/test-failed-1.png",
+      "bytes": 133534,
+      "sha256": "1e66d917bd38523042febdde3fac6de44215cc82ea6bf1a8736591d1e33a6a0e"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/second-phone3-artifact/cases/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-phone/trace.zip",
+      "bytes": 423242,
+      "sha256": "af54b4e345f59f3cc465518ae1adb3a6db44b50a9e0b482db906752e7187dd32"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/second-phone3-artifact/cases/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-phone-retry1/error-context.md.gz",
+      "bytes": 6195,
+      "sha256": "8e34f788d789d8bfcc8a33b59d4f2bebedb1d132ac136b0aa040634bd09a2697"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/second-phone3-artifact/cases/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-phone-retry1/test-failed-1.png",
+      "bytes": 133534,
+      "sha256": "1e66d917bd38523042febdde3fac6de44215cc82ea6bf1a8736591d1e33a6a0e"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/second-phone3-artifact/cases/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-phone-retry1/trace.zip",
+      "bytes": 454267,
+      "sha256": "6345e3ae745d5164213e661da0a219da938eacd52a028f4294840d6793a286dd"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/second-phone3-artifact/result.json.gz",
+      "bytes": 19849,
+      "sha256": "ca3114365914a4c4df076ee580c5e88a8f17271e4bba610596a1826dd7c9dc34"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/second-phone3.log.gz",
+      "bytes": 17792,
+      "sha256": "3bc08db05f5f68612a2ade6ed5885ac0698feda3d41e9cb671c533c384da5957"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/security.log.gz",
+      "bytes": 210,
+      "sha256": "2d4e7879f9ccc7b1c0639c377ba450913ad72417c2aeb9aab89461aef50f5ce3"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/source-accepted.log.gz",
+      "bytes": 322,
+      "sha256": "b8f7945376b962c010502b3f6eea8d2540ed6f21f0b6c1b5de853c1937a74e33"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/source.log.gz",
+      "bytes": 30725,
+      "sha256": "9ce5c5cf9ecd1d1077fcf84b25ad496623ad7ddf158d0fe9663a6a2fc2091bf3"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/webkit-report.json.gz",
+      "bytes": 48699,
+      "sha256": "2c64c57086b658877aa975221abfd77634964f10eed08736acb76f9799d7aabf"
+    },
+    {
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/webkit.log.gz",
+      "bytes": 1164,
+      "sha256": "7eb74c4d20ef62b6abd740ce9c1812b0b63b3d7b1a5cb8f1aaae2ac21a916170"
+    }
+  ]
+}

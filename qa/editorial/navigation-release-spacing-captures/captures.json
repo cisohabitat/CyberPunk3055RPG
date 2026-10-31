@@ -1,0 +1,27 @@
+{
+  "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+  "dirty": true,
+  "url": "http://127.0.0.1:3134",
+  "sourceCssSha256": "51a0b9517f9c48202e9d21145f3031249cd1508cc6108d789b2b2bfb8399729f",
+  "method": "Actual new-spacing built-server captures from three passing original legal330-creds workshop cases; enlarged type/high contrast/reduced motion. Unedited screenshots.",
+  "rows": [
+    {
+      "width": 320,
+      "source": "/tmp/saint-phase20-spacing/chromium-results/decision-flow-nearby-decis-7d2ff-on-travel-act2-workshop-320-chromium/workshop-review.png",
+      "path": "qa/editorial/navigation-release-spacing-captures/workshop-purchase-320.png",
+      "sha256": "955eb89da1787b61061c856c9f217c0d84d262145691c2bafb610c7c3caa7fe1"
+    },
+    {
+      "width": 390,
+      "source": "/tmp/saint-phase20-spacing/chromium-results/decision-flow-nearby-decis-ebcc1-on-travel-act2-workshop-390-chromium/workshop-review.png",
+      "path": "qa/editorial/navigation-release-spacing-captures/workshop-purchase-390.png",
+      "sha256": "cf2fb38ac5c9ea95b073ca0743768ae40f4bc4f7d65cd01fe006ea7bf0035869"
+    },
+    {
+      "width": 1440,
+      "source": "/tmp/saint-phase20-spacing/chromium-results/decision-flow-nearby-decis-a41da-n-travel-act2-workshop-1440-chromium/workshop-review.png",
+      "path": "qa/editorial/navigation-release-spacing-captures/workshop-purchase-1440.png",
+      "sha256": "60a54fc57bb5411e1dc17c0ca6f9fc51c1058512a1facda945cc444ce41dd507"
+    }
+  ]
+}

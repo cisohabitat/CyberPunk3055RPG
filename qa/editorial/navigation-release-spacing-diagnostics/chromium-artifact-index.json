@@ -1,0 +1,57 @@
+{
+  "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+  "runId": 41246613630,
+  "artifactId": 13060465539,
+  "archiveSha256": "44cbc0958fd0906733324371402ac4b6f98547a335dc88d67c14ed1a360e92a8",
+  "method": "Original full result and new-case failures retained, both attempts; text losslessgzip, targets avoid ignored test-results directories.",
+  "files": [
+    {
+      "source": "test-results/.last-run.json",
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/second-chromium3-artifact/cases/.last-run.json.gz",
+      "bytes": 96,
+      "sha256": "4708f0f5005b3dc2760a00c77f8aafcc423011889bed70babf9088e6a3405818"
+    },
+    {
+      "source": "result.json",
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/second-chromium3-artifact/result.json.gz",
+      "bytes": 271458,
+      "sha256": "cf8b0af8ddb0dc92e3d2875d1e50e93bd53380ca62b08fe7c8a267b473000ceb"
+    },
+    {
+      "source": "test-results/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-chromium/error-context.md",
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/second-chromium3-artifact/cases/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-chromium/error-context.md.gz",
+      "bytes": 20839,
+      "sha256": "6eb255a3b640eb8f7950afb502bec131b4aca3dd59f0dad2de7bf5bb3d374f52"
+    },
+    {
+      "source": "test-results/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-chromium/test-failed-1.png",
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/second-chromium3-artifact/cases/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-chromium/test-failed-1.png",
+      "bytes": 133534,
+      "sha256": "1e66d917bd38523042febdde3fac6de44215cc82ea6bf1a8736591d1e33a6a0e"
+    },
+    {
+      "source": "test-results/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-chromium/trace.zip",
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/second-chromium3-artifact/cases/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-chromium/trace.zip",
+      "bytes": 603429,
+      "sha256": "babcffacb3a15459ea94deb74b9ef6cb264c5b2a565506c58b4b6bd019c67305"
+    },
+    {
+      "source": "test-results/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-chromium-retry1/error-context.md",
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/second-chromium3-artifact/cases/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-chromium-retry1/error-context.md.gz",
+      "bytes": 20839,
+      "sha256": "6eb255a3b640eb8f7950afb502bec131b4aca3dd59f0dad2de7bf5bb3d374f52"
+    },
+    {
+      "source": "test-results/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-chromium-retry1/test-failed-1.png",
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/second-chromium3-artifact/cases/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-chromium-retry1/test-failed-1.png",
+      "bytes": 133534,
+      "sha256": "1e66d917bd38523042febdde3fac6de44215cc82ea6bf1a8736591d1e33a6a0e"
+    },
+    {
+      "source": "test-results/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-chromium-retry1/trace.zip",
+      "path": "qa/editorial/navigation-release-spacing-diagnostics/second-chromium3-artifact/cases/navigation-release-worksho-0d181-ith-less-real-travel-1440-0-chromium-retry1/trace.zip",
+      "bytes": 607366,
+      "sha256": "35ddb6d6b85fffcc59955659043d9ed02b5f9b33e1685895734b3abdb242de0d"
+    }
+  ]
+}

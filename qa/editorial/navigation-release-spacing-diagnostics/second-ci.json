@@ -1,0 +1,141 @@
+{
+  "revision": "62cd5120809ca95ebce61837ef7aaab2edbfc6fd",
+  "runId": 41246613630,
+  "status": "completed",
+  "conclusion": "failure",
+  "reason": "Same-engine1440px zero-credit task improved7.85%, below retained8%target; genuine layout spacing miss, not a platform-baseline exception. Fresh spacing candidate repeats all acceptance.",
+  "jobs": [
+    {
+      "id": 124671473294,
+      "name": "Test",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124672899021,
+      "name": "Browser shard (chromium, 1/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124672899034,
+      "name": "Browser shard (phone, 2/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124672899042,
+      "name": "Browser shard (phone, 1/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124672899045,
+      "name": "Browser shard (webkit, 1/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124672899055,
+      "name": "Browser shard (chromium, 4/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124672899076,
+      "name": "Browser shard (webkit, 3/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124672899088,
+      "name": "Browser shard (firefox, 3/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124672899092,
+      "name": "Browser shard (phone, 4/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124672899093,
+      "name": "Browser shard (chromium, 3/4)",
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    {
+      "id": 124672899109,
+      "name": "Browser shard (webkit, 4/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124672899119,
+      "name": "Browser shard (firefox, 1/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124672899120,
+      "name": "Browser shard (phone, 3/4)",
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    {
+      "id": 124672899124,
+      "name": "Browser shard (firefox, 2/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124672899125,
+      "name": "Browser shard (chromium, 2/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124672899147,
+      "name": "Browser shard (webkit, 2/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124672899223,
+      "name": "Browser shard (firefox, 4/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124677512009,
+      "name": "Browser (chromium)",
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    {
+      "id": 124677512064,
+      "name": "Browser (phone)",
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    {
+      "id": 124677512099,
+      "name": "Browser (firefox)",
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    {
+      "id": 124677512174,
+      "name": "Browser (webkit)",
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    {
+      "id": 124677646720,
+      "name": "Build",
+      "status": "completed",
+      "conclusion": "failure"
+    }
+  ]
+}
