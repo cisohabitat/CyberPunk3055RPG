@@ -1,0 +1,3803 @@
+{
+  "method": "Source-familiar contextual direction and unprompted ASR/signal/timing proxies. No human/blind/independent acting or perceptual listening acceptance.",
+  "before": {
+    "model": "faster-whisper base.en",
+    "method": "Unprompted CPU int8, beam5, no initial prompt, no conditioning on previous text; lowercase/apostrophe/punctuation normalization only",
+    "lines": [
+      {
+        "id": "voice-campaign-kerr-10b6e71a11eb",
+        "text": "A depot reference points to a desk. It doesn't tell me what you kept in your coat. What are you asking me to carry?",
+        "path": "public/audio/voice-campaign-kerr-10b6e71a11eb.mp3",
+        "transcription": "A depot reference points to a desk. It doesn't tell me what you kept in your coat. What are you asking me to carry?",
+        "exactNormalizedWords": true,
+        "sha256": "512593cc157650d5a50be2f01fde4159063ab9c88b10237848f34f9987a41176",
+        "durationSeconds": 6.185375,
+        "words": [
+          {
+            "word": " A",
+            "start": 0.0,
+            "end": 0.16
+          },
+          {
+            "word": " depot",
+            "start": 0.16,
+            "end": 0.32
+          },
+          {
+            "word": " reference",
+            "start": 0.32,
+            "end": 0.78
+          },
+          {
+            "word": " points",
+            "start": 0.78,
+            "end": 1.12
+          },
+          {
+            "word": " to",
+            "start": 1.12,
+            "end": 1.42
+          },
+          {
+            "word": " a",
+            "start": 1.42,
+            "end": 1.52
+          },
+          {
+            "word": " desk.",
+            "start": 1.52,
+            "end": 1.8
+          },
+          {
+            "word": " It",
+            "start": 2.32,
+            "end": 2.36
+          },
+          {
+            "word": " doesn't",
+            "start": 2.36,
+            "end": 2.64
+          },
+          {
+            "word": " tell",
+            "start": 2.64,
+            "end": 2.8
+          },
+          {
+            "word": " me",
+            "start": 2.8,
+            "end": 2.96
+          },
+          {
+            "word": " what",
+            "start": 2.96,
+            "end": 3.12
+          },
+          {
+            "word": " you",
+            "start": 3.12,
+            "end": 3.24
+          },
+          {
+            "word": " kept",
+            "start": 3.24,
+            "end": 3.44
+          },
+          {
+            "word": " in",
+            "start": 3.44,
+            "end": 3.62
+          },
+          {
+            "word": " your",
+            "start": 3.62,
+            "end": 3.7
+          },
+          {
+            "word": " coat.",
+            "start": 3.7,
+            "end": 3.98
+          },
+          {
+            "word": " What",
+            "start": 4.52,
+            "end": 4.64
+          },
+          {
+            "word": " are",
+            "start": 4.64,
+            "end": 4.72
+          },
+          {
+            "word": " you",
+            "start": 4.72,
+            "end": 4.82
+          },
+          {
+            "word": " asking",
+            "start": 4.82,
+            "end": 5.08
+          },
+          {
+            "word": " me",
+            "start": 5.08,
+            "end": 5.3
+          },
+          {
+            "word": " to",
+            "start": 5.3,
+            "end": 5.4
+          },
+          {
+            "word": " carry?",
+            "start": 5.4,
+            "end": 5.68
+          }
+        ]
+      },
+      {
+        "id": "voice-campaign-kerr-899d4ba5ecfb",
+        "text": "You showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.",
+        "path": "public/audio/voice-campaign-kerr-899d4ba5ecfb.mp3",
+        "transcription": "You showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.",
+        "exactNormalizedWords": true,
+        "sha256": "efc7a1dfac22ba92865fc4a7725233f4d4312576b99cb82a7e02ddcaf33b617e",
+        "durationSeconds": 6.942,
+        "words": [
+          {
+            "word": " You",
+            "start": 0.0,
+            "end": 0.18
+          },
+          {
+            "word": " showed",
+            "start": 0.18,
+            "end": 0.36
+          },
+          {
+            "word": " me",
+            "start": 0.36,
+            "end": 0.58
+          },
+          {
+            "word": " the",
+            "start": 0.58,
+            "end": 0.7
+          },
+          {
+            "word": " source",
+            "start": 0.7,
+            "end": 0.88
+          },
+          {
+            "word": " summary.",
+            "start": 0.88,
+            "end": 1.3
+          },
+          {
+            "word": " Leave",
+            "start": 2.14,
+            "end": 2.14
+          },
+          {
+            "word": " the",
+            "start": 2.14,
+            "end": 2.32
+          },
+          {
+            "word": " witness",
+            "start": 2.32,
+            "end": 2.62
+          },
+          {
+            "word": " out",
+            "start": 2.62,
+            "end": 2.9
+          },
+          {
+            "word": " of",
+            "start": 2.9,
+            "end": 3.0
+          },
+          {
+            "word": " my",
+            "start": 3.0,
+            "end": 3.14
+          },
+          {
+            "word": " errands.",
+            "start": 3.14,
+            "end": 3.64
+          },
+          {
+            "word": " I",
+            "start": 4.14,
+            "end": 4.18
+          },
+          {
+            "word": " don't",
+            "start": 4.18,
+            "end": 4.38
+          },
+          {
+            "word": " need",
+            "start": 4.38,
+            "end": 4.48
+          },
+          {
+            "word": " a",
+            "start": 4.48,
+            "end": 4.54
+          },
+          {
+            "word": " person's",
+            "start": 4.54,
+            "end": 4.86
+          },
+          {
+            "word": " address",
+            "start": 4.86,
+            "end": 5.3
+          },
+          {
+            "word": " to",
+            "start": 5.3,
+            "end": 5.5
+          },
+          {
+            "word": " ask",
+            "start": 5.5,
+            "end": 5.7
+          },
+          {
+            "word": " about",
+            "start": 5.7,
+            "end": 5.96
+          },
+          {
+            "word": " a",
+            "start": 5.96,
+            "end": 6.08
+          },
+          {
+            "word": " shift.",
+            "start": 6.08,
+            "end": 6.4
+          }
+        ]
+      },
+      {
+        "id": "voice-campaign-kerr-e8022742ad26",
+        "text": "My name went into their register after you promised it wouldn't. Say that before you ask me for another introduction.",
+        "path": "public/audio/voice-campaign-kerr-e8022742ad26.mp3",
+        "transcription": "My name went into their register after you promised it wouldn't. Say that before you ask me for another introduction.",
+        "exactNormalizedWords": true,
+        "sha256": "1dc1eb6e6e2f1203c290800caedda3a1ea0a5cffa3b59b628f449492f8d5f090",
+        "durationSeconds": 6.506,
+        "words": [
+          {
+            "word": " My",
+            "start": 0.0,
+            "end": 0.2
+          },
+          {
+            "word": " name",
+            "start": 0.2,
+            "end": 0.42
+          },
+          {
+            "word": " went",
+            "start": 0.42,
+            "end": 0.74
+          },
+          {
+            "word": " into",
+            "start": 0.74,
+            "end": 0.92
+          },
+          {
+            "word": " their",
+            "start": 0.92,
+            "end": 1.1
+          },
+          {
+            "word": " register",
+            "start": 1.1,
+            "end": 1.48
+          },
+          {
+            "word": " after",
+            "start": 1.48,
+            "end": 1.88
+          },
+          {
+            "word": " you",
+            "start": 1.88,
+            "end": 2.12
+          },
+          {
+            "word": " promised",
+            "start": 2.12,
+            "end": 2.42
+          },
+          {
+            "word": " it",
+            "start": 2.42,
+            "end": 2.7
+          },
+          {
+            "word": " wouldn't.",
+            "start": 2.7,
+            "end": 3.08
+          },
+          {
+            "word": " Say",
+            "start": 3.48,
+            "end": 3.68
+          },
+          {
+            "word": " that",
+            "start": 3.68,
+            "end": 3.9
+          },
+          {
+            "word": " before",
+            "start": 3.9,
+            "end": 4.18
+          },
+          {
+            "word": " you",
+            "start": 4.18,
+            "end": 4.42
+          },
+          {
+            "word": " ask",
+            "start": 4.42,
+            "end": 4.66
+          },
+          {
+            "word": " me",
+            "start": 4.66,
+            "end": 4.9
+          },
+          {
+            "word": " for",
+            "start": 4.9,
+            "end": 5.08
+          },
+          {
+            "word": " another",
+            "start": 5.08,
+            "end": 5.28
+          },
+          {
+            "word": " introduction.",
+            "start": 5.28,
+            "end": 5.7
+          }
+        ]
+      },
+      {
+        "id": "voice-campaign-kerr-f001a675c451",
+        "text": "Keep the docket beside the promise. Use your own name for anything you sign. Mine stays out of it.",
+        "path": "public/audio/voice-campaign-kerr-f001a675c451.mp3",
+        "transcription": "Keep the docket beside the promise. Use your own name for anything you sign. Mine stays out of it.",
+        "exactNormalizedWords": true,
+        "sha256": "c9cdfb49162cff0a08bb2ab7cddca6a5a1936059832c3e7dbbdb3076daff39c9",
+        "durationSeconds": 6.0146875,
+        "words": [
+          {
+            "word": " Keep",
+            "start": 0.0,
+            "end": 0.22
+          },
+          {
+            "word": " the",
+            "start": 0.22,
+            "end": 0.4
+          },
+          {
+            "word": " docket",
+            "start": 0.4,
+            "end": 0.74
+          },
+          {
+            "word": " beside",
+            "start": 0.74,
+            "end": 0.98
+          },
+          {
+            "word": " the",
+            "start": 0.98,
+            "end": 1.24
+          },
+          {
+            "word": " promise.",
+            "start": 1.24,
+            "end": 1.6
+          },
+          {
+            "word": " Use",
+            "start": 2.24,
+            "end": 2.26
+          },
+          {
+            "word": " your",
+            "start": 2.26,
+            "end": 2.42
+          },
+          {
+            "word": " own",
+            "start": 2.42,
+            "end": 2.58
+          },
+          {
+            "word": " name",
+            "start": 2.58,
+            "end": 2.8
+          },
+          {
+            "word": " for",
+            "start": 2.8,
+            "end": 3.02
+          },
+          {
+            "word": " anything",
+            "start": 3.02,
+            "end": 3.28
+          },
+          {
+            "word": " you",
+            "start": 3.28,
+            "end": 3.54
+          },
+          {
+            "word": " sign.",
+            "start": 3.54,
+            "end": 3.8
+          },
+          {
+            "word": " Mine",
+            "start": 4.42,
+            "end": 4.54
+          },
+          {
+            "word": " stays",
+            "start": 4.54,
+            "end": 4.92
+          },
+          {
+            "word": " out",
+            "start": 4.92,
+            "end": 5.34
+          },
+          {
+            "word": " of",
+            "start": 5.34,
+            "end": 5.48
+          },
+          {
+            "word": " it.",
+            "start": 5.48,
+            "end": 5.62
+          }
+        ]
+      },
+      {
+        "id": "voice-campaign-kerr-f829eb68f234",
+        "text": "Then I know which depot desk you asked for, not what's in your case. Keep those two things separate.",
+        "path": "public/audio/voice-campaign-kerr-f829eb68f234.mp3",
+        "transcription": "Then I know which depot desk you asked for, not what's in your case. Keep those two things separate. for it. . . .",
+        "exactNormalizedWords": false,
+        "sha256": "181bdff21515e3dd7244fc8d2346fdb3125ef84361a6abc88079012fc96d20dd",
+        "durationSeconds": 5.322,
+        "words": [
+          {
+            "word": " Then",
+            "start": 0.0,
+            "end": 0.2
+          },
+          {
+            "word": " I",
+            "start": 0.2,
+            "end": 0.36
+          },
+          {
+            "word": " know",
+            "start": 0.36,
+            "end": 0.54
+          },
+          {
+            "word": " which",
+            "start": 0.54,
+            "end": 0.76
+          },
+          {
+            "word": " depot",
+            "start": 0.76,
+            "end": 0.98
+          },
+          {
+            "word": " desk",
+            "start": 0.98,
+            "end": 1.36
+          },
+          {
+            "word": " you",
+            "start": 1.36,
+            "end": 1.54
+          },
+          {
+            "word": " asked",
+            "start": 1.54,
+            "end": 1.74
+          },
+          {
+            "word": " for,",
+            "start": 1.74,
+            "end": 2.06
+          },
+          {
+            "word": " not",
+            "start": 2.2,
+            "end": 2.28
+          },
+          {
+            "word": " what's",
+            "start": 2.28,
+            "end": 2.56
+          },
+          {
+            "word": " in",
+            "start": 2.56,
+            "end": 2.64
+          },
+          {
+            "word": " your",
+            "start": 2.64,
+            "end": 2.72
+          },
+          {
+            "word": " case.",
+            "start": 2.72,
+            "end": 2.96
+          },
+          {
+            "word": " Keep",
+            "start": 3.48,
+            "end": 3.62
+          },
+          {
+            "word": " those",
+            "start": 3.62,
+            "end": 3.86
+          },
+          {
+            "word": " two",
+            "start": 3.86,
+            "end": 4.12
+          },
+          {
+            "word": " things",
+            "start": 4.12,
+            "end": 4.38
+          },
+          {
+            "word": " separate.",
+            "start": 4.38,
+            "end": 4.84
+          },
+          {
+            "word": " for",
+            "start": 4.84,
+            "end": 4.84
+          },
+          {
+            "word": " it.",
+            "start": 4.84,
+            "end": 4.96
+          },
+          {
+            "word": " .",
+            "start": 4.96,
+            "end": 5.02
+          },
+          {
+            "word": " .",
+            "start": 5.02,
+            "end": 5.2
+          },
+          {
+            "word": " .",
+            "start": 5.2,
+            "end": 5.3
+          }
+        ]
+      },
+      {
+        "id": "voice-campaign-kerr-1903a3d3a421",
+        "text": "Then I won't introduce you. The counter can answer for itself. I won't answer for a promise you won't name.",
+        "path": "public/audio/voice-campaign-kerr-1903a3d3a421.mp3",
+        "transcription": "Then I won't introduce you. The counter can answer for itself. I won't answer for a promise you won't name.",
+        "exactNormalizedWords": true,
+        "sha256": "3ef85b7ef5a09e0a6cb7cbbed23127ba032942a0dd1dc019aaa8b68a49567dc5",
+        "durationSeconds": 7.13,
+        "words": [
+          {
+            "word": " Then",
+            "start": 0.0,
+            "end": 0.24
+          },
+          {
+            "word": " I",
+            "start": 0.24,
+            "end": 0.42
+          },
+          {
+            "word": " won't",
+            "start": 0.42,
+            "end": 0.72
+          },
+          {
+            "word": " introduce",
+            "start": 0.72,
+            "end": 1.02
+          },
+          {
+            "word": " you.",
+            "start": 1.02,
+            "end": 1.4
+          },
+          {
+            "word": " The",
+            "start": 2.14,
+            "end": 2.18
+          },
+          {
+            "word": " counter",
+            "start": 2.18,
+            "end": 2.4
+          },
+          {
+            "word": " can",
+            "start": 2.4,
+            "end": 2.76
+          },
+          {
+            "word": " answer",
+            "start": 2.76,
+            "end": 3.16
+          },
+          {
+            "word": " for",
+            "start": 3.16,
+            "end": 3.38
+          },
+          {
+            "word": " itself.",
+            "start": 3.38,
+            "end": 3.6
+          },
+          {
+            "word": " I",
+            "start": 4.52,
+            "end": 4.62
+          },
+          {
+            "word": " won't",
+            "start": 4.62,
+            "end": 4.88
+          },
+          {
+            "word": " answer",
+            "start": 4.88,
+            "end": 5.18
+          },
+          {
+            "word": " for",
+            "start": 5.18,
+            "end": 5.38
+          },
+          {
+            "word": " a",
+            "start": 5.38,
+            "end": 5.44
+          },
+          {
+            "word": " promise",
+            "start": 5.44,
+            "end": 5.8
+          },
+          {
+            "word": " you",
+            "start": 5.8,
+            "end": 6.02
+          },
+          {
+            "word": " won't",
+            "start": 6.02,
+            "end": 6.32
+          },
+          {
+            "word": " name.",
+            "start": 6.32,
+            "end": 6.52
+          }
+        ]
+      }
+    ]
+  },
+  "beforeLevels": [
+    {
+      "id": "voice-campaign-kerr-10b6e71a11eb",
+      "integratedLufs": -20.01,
+      "truePeakDbtp": -1.8
+    },
+    {
+      "id": "voice-campaign-kerr-899d4ba5ecfb",
+      "integratedLufs": -20.0,
+      "truePeakDbtp": -1.93
+    },
+    {
+      "id": "voice-campaign-kerr-e8022742ad26",
+      "integratedLufs": -19.99,
+      "truePeakDbtp": -1.95
+    },
+    {
+      "id": "voice-campaign-kerr-f001a675c451",
+      "integratedLufs": -20.05,
+      "truePeakDbtp": -1.59
+    },
+    {
+      "id": "voice-campaign-kerr-f829eb68f234",
+      "integratedLufs": -20.0,
+      "truePeakDbtp": -1.69
+    },
+    {
+      "id": "voice-campaign-kerr-1903a3d3a421",
+      "integratedLufs": -20.0,
+      "truePeakDbtp": -1.81
+    }
+  ],
+  "iterations": [
+    {
+      "name": "first",
+      "provenance": {
+        "generatedAt": "2026-10-30T23:50:48.978869+00:00",
+        "source": "scripts/direct-connected-voices.py",
+        "driver": {
+          "name": "kokoro-onnx",
+          "version": "0.6.1",
+          "license": "MIT",
+          "url": "https://github.com/thewh1teagle/kokoro-onnx",
+          "licenseFile": "qa/media/voice-sources/kokoro-onnx-LICENSE.txt"
+        },
+        "model": {
+          "name": "Kokoro-82M v1.0",
+          "license": "Apache-2.0",
+          "card": "https://huggingface.co/hexgrad/Kokoro-82M",
+          "licenseFile": "qa/media/voice-sources/Kokoro-LICENSE.txt",
+          "files": [
+            {
+              "name": "kokoro-v1.0.onnx",
+              "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.onnx",
+              "sha256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+              "bytes": 325505369
+            },
+            {
+              "name": "voices-v1.0.bin",
+              "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin",
+              "sha256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+              "bytes": 28214398
+            }
+          ]
+        },
+        "disclosure": "Stock synthetic voices generated offline with Kokoro v1.0; no actor session or individual voice clone was commissioned. Only the fixed authored quotations below are rendered. No model or speech service ships in the game.",
+        "method": "Exact words and stock identity; phrase speed/pause direction, conservative -60dB-relative model-padding removal with80ms guards/8ms fades, two-pass -23.5LUFS codec matching,96kbps mono MP3. Masters retained outside Git.",
+        "lines": [
+          {
+            "id": "voice-campaign-kerr-10b6e71a11eb",
+            "speaker": "Kerr",
+            "voice": "am_adam",
+            "speed": 0.97,
+            "text": "A depot reference points to a desk. It doesn't tell me what you kept in your coat. What are you asking me to carry?",
+            "direction": "Restrained, personal and clear. Preserve the difference between a request, a task outcome and an inquiry result. No narration.",
+            "loudnessLufs": -20,
+            "previousPath": "public/audio/voice-campaign-kerr-10b6e71a11eb.mp3",
+            "previousSha256": "512593cc157650d5a50be2f01fde4159063ab9c88b10237848f34f9987a41176",
+            "sourceGain": 1,
+            "checkpoint": {
+              "id": "entry",
+              "route": "district-public-work",
+              "scene": "act2_district_kerr",
+              "choice": "district-tell-kerr"
+            },
+            "sceneText": "\u201cA depot reference points to a desk. It doesn't tell me what you kept in your coat. What are you asking me to carry?\u201d\n\nThe posted depot procedure is public. Your case notes are not. If you show Kerr the summary, use the same source scope you gave Edda and include any docket showing a breach of his private collection terms. No witness material will be shared. You can keep the case closed.",
+            "sound": {
+              "mood": "quiet",
+              "district": "street"
+            },
+            "focus": "normal",
+            "segments": [
+              {
+                "text": "A depot reference points to a desk.",
+                "speed": 0.97,
+                "pauseAfter": 0.18
+              },
+              {
+                "text": "It doesn't tell me what you kept in your coat.",
+                "speed": 0.97,
+                "pauseAfter": 0.18
+              },
+              {
+                "text": "What are you asking me to carry?",
+                "speed": 0.97,
+                "pauseAfter": 0
+              }
+            ],
+            "candidateFile": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-10b6e71a11eb.mp3",
+            "sha256": "7a67beb38713e2ac0b79f74f9e3ff22c321a0a05494dc682063db543284c8344",
+            "bytes": 75212,
+            "sourceFile": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-10b6e71a11eb-master.wav",
+            "sourceSha256": "2810e6cd2cb8ce0bd297b2f09a5d63814d2455126880fa43d7d18e9c6a65d12b",
+            "pcmDeliveryFile": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-10b6e71a11eb-pcm.wav",
+            "pcmDeliverySha256": "4d991dfa0481fa9d0cca3aba1d84c702318fb0f65f01e0559a152518e746d488",
+            "parts": [
+              {
+                "text": "A depot reference points to a desk.",
+                "speed": 0.97,
+                "pauseAfter": 0.18,
+                "rawFile": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-10b6e71a11eb-phrase-0.wav",
+                "rawSha256": "58fb3b081d22936f9e1f95566458540a789d09cbc2f6fe99dc278132266030fd",
+                "rawSeconds": 2.1526666666666667,
+                "retainedSeconds": 1.998,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.15466666666666667,
+                "startSeconds": 0.0
+              },
+              {
+                "text": "It doesn't tell me what you kept in your coat.",
+                "speed": 0.97,
+                "pauseAfter": 0.18,
+                "rawFile": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-10b6e71a11eb-phrase-1.wav",
+                "rawSha256": "8f6e6aa36949cf6d023d0e6f8d031bc693149cf963a4b77d504606e890d06b4f",
+                "rawSeconds": 2.260625,
+                "retainedSeconds": 2.1120833333333335,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.14854166666666666,
+                "startSeconds": 2.178
+              },
+              {
+                "text": "What are you asking me to carry?",
+                "speed": 0.97,
+                "pauseAfter": 0,
+                "rawFile": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-10b6e71a11eb-phrase-2.wav",
+                "rawSha256": "691c62c4782792a9b1dca0e9e3484fa5ff7cbc9fd0228d2dd1597f08b23a553b",
+                "rawSeconds": 1.6946666666666668,
+                "retainedSeconds": 1.539625,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.15504166666666666,
+                "startSeconds": 4.470083333333333
+              }
+            ],
+            "integratedLufs": -20.0,
+            "truePeakDbtp": -1.6,
+            "durationSeconds": 6.169958333333334,
+            "sampleRate": 24000,
+            "channels": 1,
+            "peak": 0.8309407234191895,
+            "retainedCandidatePath": "qa/editorial/expressive-performance-candidates/first/voice-campaign-kerr-10b6e71a11eb.mp3"
+          },
+          {
+            "id": "voice-campaign-kerr-899d4ba5ecfb",
+            "speaker": "Kerr",
+            "voice": "am_adam",
+            "speed": 0.97,
+            "text": "You showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.",
+            "direction": "Restrained, personal and clear. Preserve the difference between a request, a task outcome and an inquiry result. No narration.",
+            "loudnessLufs": -20,
+            "previousPath": "public/audio/voice-campaign-kerr-899d4ba5ecfb.mp3",
+            "previousSha256": "efc7a1dfac22ba92865fc4a7725233f4d4312576b99cb82a7e02ddcaf33b617e",
+            "sourceGain": 1,
+            "checkpoint": {
+              "id": "shared-breach",
+              "route": "district-public-work",
+              "scene": "act2_district_kerr_reply",
+              "choice": "district-kerr-acknowledge"
+            },
+            "sceneText": "\u201cYou showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.\u201d\n\n\u201cMy name went into their register after you promised it wouldn't. Say that before you ask me for another introduction.\u201d\n\nThe counter offers registered sorting work under your own handle. An introduction supplies no payment, recovery, treatment or source. Any earlier breach stays recorded.",
+            "sound": {
+              "mood": "quiet",
+              "district": "street"
+            },
+            "focus": "normal",
+            "segments": [
+              {
+                "text": "You showed me the source summary.",
+                "speed": 0.97,
+                "pauseAfter": 0.18
+              },
+              {
+                "text": "Leave the witness out of my errands.",
+                "speed": 0.97,
+                "pauseAfter": 0.18
+              },
+              {
+                "text": "I don't need a person's address to ask about a shift.",
+                "speed": 0.97,
+                "pauseAfter": 0
+              }
+            ],
+            "candidateFile": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-899d4ba5ecfb.mp3",
+            "sha256": "2ba80e2211677269a9ae2140f25b39f4f118521638c9bf0b5f4166a4735a3609",
+            "bytes": 81836,
+            "sourceFile": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-899d4ba5ecfb-master.wav",
+            "sourceSha256": "10ee3643324fe333954eb7807e38535b6b815591db2e0fefb25f0237e54ef536",
+            "pcmDeliveryFile": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-899d4ba5ecfb-pcm.wav",
+            "pcmDeliverySha256": "cce25402a65063fbf187bd31887d2a648b55a8567b5bbd2c3d2e96364d350060",
+            "parts": [
+              {
+                "text": "You showed me the source summary.",
+                "speed": 0.97,
+                "pauseAfter": 0.18,
+                "rawFile": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-899d4ba5ecfb-phrase-0.wav",
+                "rawSha256": "13f47f8c1d1b527e1e6af4dc87cb71f8f568141b865842b1fcaa33f06a88cc9f",
+                "rawSeconds": 1.8326666666666667,
+                "retainedSeconds": 1.6714583333333333,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.16120833333333334,
+                "startSeconds": 0.0
+              },
+              {
+                "text": "Leave the witness out of my errands.",
+                "speed": 0.97,
+                "pauseAfter": 0.18,
+                "rawFile": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-899d4ba5ecfb-phrase-1.wav",
+                "rawSha256": "6a1181799f47c44364abc0c7d5da63ad6cd9482ec0fdb414968d68b83fd7af00",
+                "rawSeconds": 2.1,
+                "retainedSeconds": 1.94975,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.15025,
+                "startSeconds": 1.8514583333333334
+              },
+              {
+                "text": "I don't need a person's address to ask about a shift.",
+                "speed": 0.97,
+                "pauseAfter": 0,
+                "rawFile": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-899d4ba5ecfb-phrase-2.wav",
+                "rawSha256": "45705c316a833fb46faa0709174934e9d147a16db9adaf987021437aac2fc9c7",
+                "rawSeconds": 2.7299583333333333,
+                "retainedSeconds": 2.581625,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.14833333333333334,
+                "startSeconds": 3.9812083333333335
+              }
+            ],
+            "integratedLufs": -20.09,
+            "truePeakDbtp": -1.87,
+            "durationSeconds": 6.722833333333333,
+            "sampleRate": 24000,
+            "channels": 1,
+            "peak": 0.8051124811172485,
+            "retainedCandidatePath": "qa/editorial/expressive-performance-candidates/first/voice-campaign-kerr-899d4ba5ecfb.mp3"
+          },
+          {
+            "id": "voice-campaign-kerr-e8022742ad26",
+            "speaker": "Kerr",
+            "voice": "am_adam",
+            "speed": 0.97,
+            "text": "My name went into their register after you promised it wouldn't. Say that before you ask me for another introduction.",
+            "direction": "Restrained, personal and clear. Preserve the difference between a request, a task outcome and an inquiry result. No narration.",
+            "loudnessLufs": -20,
+            "previousPath": "public/audio/voice-campaign-kerr-e8022742ad26.mp3",
+            "previousSha256": "1dc1eb6e6e2f1203c290800caedda3a1ea0a5cffa3b59b628f449492f8d5f090",
+            "sourceGain": 1,
+            "checkpoint": {
+              "id": "shared-breach",
+              "route": "district-public-work",
+              "scene": "act2_district_kerr_reply",
+              "choice": "district-kerr-acknowledge"
+            },
+            "sceneText": "\u201cYou showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.\u201d\n\n\u201cMy name went into their register after you promised it wouldn't. Say that before you ask me for another introduction.\u201d\n\nThe counter offers registered sorting work under your own handle. An introduction supplies no payment, recovery, treatment or source. Any earlier breach stays recorded.",
+            "sound": {
+              "mood": "quiet",
+              "district": "street"
+            },
+            "focus": "normal",
+            "segments": [
+              {
+                "text": "My name went into their register after you promised it wouldn't.",
+                "speed": 0.97,
+                "pauseAfter": 0.18
+              },
+              {
+                "text": "Say that before you ask me for another introduction.",
+                "speed": 0.97,
+                "pauseAfter": 0
+              }
+            ],
+            "candidateFile": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-e8022742ad26.mp3",
+            "sha256": "abcbec9958765e993e6e10c9eca8f4204440c8f1cf2aa0718ab2d7ff2a754496",
+            "bytes": 76652,
+            "sourceFile": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-e8022742ad26-master.wav",
+            "sourceSha256": "6726d6c387d9556f30d3c5c6364c401a3325f970b7eea3287865f07131180290",
+            "pcmDeliveryFile": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-e8022742ad26-pcm.wav",
+            "pcmDeliverySha256": "9c8a75a5c62436105b7926a9b3255331919f796eee35f3618a6f66b36431ace0",
+            "parts": [
+              {
+                "text": "My name went into their register after you promised it wouldn't.",
+                "speed": 0.97,
+                "pauseAfter": 0.18,
+                "rawFile": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-e8022742ad26-phrase-0.wav",
+                "rawSha256": "bab66a52cc0b43c0cc441d6cc6e0c0d9938d093c6dfa1f703d099a7bfa8fe63e",
+                "rawSeconds": 3.3686666666666665,
+                "retainedSeconds": 3.20175,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.16691666666666666,
+                "startSeconds": 0.0
+              },
+              {
+                "text": "Say that before you ask me for another introduction.",
+                "speed": 0.97,
+                "pauseAfter": 0,
+                "rawFile": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-e8022742ad26-phrase-1.wav",
+                "rawSha256": "200c63c3fd0d0c5c342ee9eaf0eb137130b4a2a275f59fac55e9aad38407a584",
+                "rawSeconds": 2.9106666666666667,
+                "retainedSeconds": 2.762875,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.14779166666666665,
+                "startSeconds": 3.38175
+              }
+            ],
+            "integratedLufs": -20.0,
+            "truePeakDbtp": -1.97,
+            "durationSeconds": 6.304625,
+            "sampleRate": 24000,
+            "channels": 1,
+            "peak": 0.7961410284042358,
+            "retainedCandidatePath": "qa/editorial/expressive-performance-candidates/first/voice-campaign-kerr-e8022742ad26.mp3"
+          },
+          {
+            "id": "voice-campaign-kerr-f001a675c451",
+            "speaker": "Kerr",
+            "voice": "am_adam",
+            "speed": 0.97,
+            "text": "Keep the docket beside the promise. Use your own name for anything you sign. Mine stays out of it.",
+            "direction": "Restrained, personal and clear. Preserve the difference between a request, a task outcome and an inquiry result. No narration.",
+            "loudnessLufs": -20,
+            "previousPath": "public/audio/voice-campaign-kerr-f001a675c451.mp3",
+            "previousSha256": "c9cdfb49162cff0a08bb2ab7cddca6a5a1936059832c3e7dbbdb3076daff39c9",
+            "sourceGain": 1,
+            "checkpoint": {
+              "id": "acknowledged",
+              "route": "district-public-work",
+              "scene": "act2_district_kerr_reply",
+              "choice": "district-kerr-introduce"
+            },
+            "sceneText": "\u201cYou showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.\u201d\n\n\u201cKeep the docket beside the promise. Use your own name for anything you sign. Mine stays out of it.\u201d\n\nThe counter offers registered sorting work under your own handle. An introduction supplies no payment, recovery, treatment or source. Any earlier breach stays recorded.",
+            "sound": {
+              "mood": "quiet",
+              "district": "street"
+            },
+            "focus": "normal",
+            "segments": [
+              {
+                "text": "Keep the docket beside the promise.",
+                "speed": 0.97,
+                "pauseAfter": 0.18
+              },
+              {
+                "text": "Use your own name for anything you sign.",
+                "speed": 0.97,
+                "pauseAfter": 0.18
+              },
+              {
+                "text": "Mine stays out of it.",
+                "speed": 0.97,
+                "pauseAfter": 0
+              }
+            ],
+            "candidateFile": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-f001a675c451.mp3",
+            "sha256": "52c21f94080d198ec08b89ca2c6281de9d3a2ba659dfc7d531790b65105dbe04",
+            "bytes": 73196,
+            "sourceFile": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-f001a675c451-master.wav",
+            "sourceSha256": "c76f24bce6e80e7337ae6285d3c5ded2881555b10f331c9d192796e6c481e02b",
+            "pcmDeliveryFile": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-f001a675c451-pcm.wav",
+            "pcmDeliverySha256": "16ce3023cf17621faa49eeed7a16f1a65df73c57e2a8cde0837b8ca10ee36366",
+            "parts": [
+              {
+                "text": "Keep the docket beside the promise.",
+                "speed": 0.97,
+                "pauseAfter": 0.18,
+                "rawFile": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-f001a675c451-phrase-0.wav",
+                "rawSha256": "186adb99488322909cb92c234eb8624d8c2810eafb0c1a4a27c74ea61b341f5e",
+                "rawSeconds": 2.1426666666666665,
+                "retainedSeconds": 1.9911666666666668,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.1515,
+                "startSeconds": 0.0
+              },
+              {
+                "text": "Use your own name for anything you sign.",
+                "speed": 0.97,
+                "pauseAfter": 0.18,
+                "rawFile": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-f001a675c451-phrase-1.wav",
+                "rawSha256": "69d1a6936d28ba53346baecfc2162f305488e6526870fb5fae17ff312029eff4",
+                "rawSeconds": 2.292,
+                "retainedSeconds": 2.1359583333333334,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.15604166666666666,
+                "startSeconds": 2.1711666666666667
+              },
+              {
+                "text": "Mine stays out of it.",
+                "speed": 0.97,
+                "pauseAfter": 0,
+                "rawFile": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-f001a675c451-phrase-2.wav",
+                "rawSha256": "bf90df3237fcacdf01480c3f5f2a56c8dce0c12f8917317733d35083a717e5c7",
+                "rawSeconds": 1.5026666666666666,
+                "retainedSeconds": 1.3560416666666666,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.146625,
+                "startSeconds": 4.487125
+              }
+            ],
+            "integratedLufs": -20.0,
+            "truePeakDbtp": -1.72,
+            "durationSeconds": 6.003166666666667,
+            "sampleRate": 24000,
+            "channels": 1,
+            "peak": 0.8198766708374023,
+            "retainedCandidatePath": "qa/editorial/expressive-performance-candidates/first/voice-campaign-kerr-f001a675c451.mp3"
+          },
+          {
+            "id": "voice-campaign-kerr-f829eb68f234",
+            "speaker": "Kerr",
+            "voice": "am_adam",
+            "speed": 0.97,
+            "text": "Then I know which depot desk you asked for, not what's in your case. Keep those two things separate.",
+            "direction": "Restrained, personal and clear. Preserve the difference between a request, a task outcome and an inquiry result. No narration.",
+            "loudnessLufs": -20,
+            "previousPath": "public/audio/voice-campaign-kerr-f829eb68f234.mp3",
+            "previousSha256": "181bdff21515e3dd7244fc8d2346fdb3125ef84361a6abc88079012fc96d20dd",
+            "sourceGain": 1,
+            "checkpoint": {
+              "id": "private",
+              "route": "district-private-rest",
+              "scene": "act2_district_kerr_reply",
+              "choice": "district-kerr-introduce"
+            },
+            "sceneText": "\u201cThen I know which depot desk you asked for, not what's in your case. Keep those two things separate.\u201d\n\nHe offers an introduction about your own task. It is not a promise to remove anyone from the recipient register.\n\nThe service desk offers one short rest appointment through the private query. An introduction supplies no payment, recovery, treatment or source. Any earlier breach stays recorded.",
+            "sound": {
+              "mood": "quiet",
+              "district": "street"
+            },
+            "focus": "normal",
+            "segments": [
+              {
+                "text": "Then I know which depot desk you asked for, not what's in your case.",
+                "speed": 0.97,
+                "pauseAfter": 0.18
+              },
+              {
+                "text": "Keep those two things separate.",
+                "speed": 0.97,
+                "pauseAfter": 0
+              }
+            ],
+            "candidateFile": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-f829eb68f234.mp3",
+            "sha256": "0b8e38c9bc1e3af2a0f7e67fb5d0b1574ca47fab13f38dfac1e61c391b689dce",
+            "bytes": 66572,
+            "sourceFile": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-f829eb68f234-master.wav",
+            "sourceSha256": "ded48186c9318f5213d7c2acd1cf1630d59dbafeaf72761a368fb1e0a38052ff",
+            "pcmDeliveryFile": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-f829eb68f234-pcm.wav",
+            "pcmDeliverySha256": "edbdade9b0037b0a03928abaa6caf90b97f4e551b6df23d9ab0575883fca2ac7",
+            "parts": [
+              {
+                "text": "Then I know which depot desk you asked for, not what's in your case.",
+                "speed": 0.97,
+                "pauseAfter": 0.18,
+                "rawFile": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-f829eb68f234-phrase-0.wav",
+                "rawSha256": "0e1369bacdafed098727893944a61ea27a7d51255792177ce919412d382c78f0",
+                "rawSeconds": 3.6133333333333333,
+                "retainedSeconds": 3.454,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.15933333333333333,
+                "startSeconds": 0.0
+              },
+              {
+                "text": "Keep those two things separate.",
+                "speed": 0.97,
+                "pauseAfter": 0,
+                "rawFile": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-f829eb68f234-phrase-1.wav",
+                "rawSha256": "4fa646375f2ac761c60a09c3b46b2ca3b98938dfd0f7144fbad6b92f692f2d91",
+                "rawSeconds": 1.8013333333333332,
+                "retainedSeconds": 1.6572083333333334,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.144125,
+                "startSeconds": 3.634
+              }
+            ],
+            "integratedLufs": -20.0,
+            "truePeakDbtp": -2.25,
+            "durationSeconds": 5.451208333333334,
+            "sampleRate": 24000,
+            "channels": 1,
+            "peak": 0.7713797688484192,
+            "retainedCandidatePath": "qa/editorial/expressive-performance-candidates/first/voice-campaign-kerr-f829eb68f234.mp3"
+          },
+          {
+            "id": "voice-campaign-kerr-1903a3d3a421",
+            "speaker": "Kerr",
+            "voice": "am_adam",
+            "speed": 0.97,
+            "text": "Then I won't introduce you. The counter can answer for itself. I won't answer for a promise you won't name.",
+            "direction": "Restrained, personal and clear. Preserve the difference between a request, a task outcome and an inquiry result. No narration.",
+            "loudnessLufs": -20,
+            "segments": [
+              {
+                "text": "Then I won't introduce you.",
+                "speed": 0.97,
+                "pauseAfter": 0.18
+              },
+              {
+                "text": "The counter can answer for itself.",
+                "speed": 0.97,
+                "pauseAfter": 0.18
+              },
+              {
+                "text": "I won't answer for a promise you won't name.",
+                "speed": 0.97,
+                "pauseAfter": 0
+              }
+            ],
+            "previousPath": "public/audio/voice-campaign-kerr-1903a3d3a421.mp3",
+            "previousSha256": "3ef85b7ef5a09e0a6cb7cbbed23127ba032942a0dd1dc019aaa8b68a49567dc5",
+            "sourceGain": 1,
+            "checkpoint": {
+              "id": "refused",
+              "route": "district-breach-denied",
+              "scene": "act2_district_kerr_reply",
+              "choice": "district-leave-kerr"
+            },
+            "sceneText": "\u201cThen I know which depot desk you asked for, not what's in your case. Keep those two things separate.\u201d\n\n\u201cThen I won't introduce you. The counter can answer for itself. I won't answer for a promise you won't name.\u201d\n\nThe counter offers registered sorting work under your own handle. An introduction supplies no payment, recovery, treatment or source. Any earlier breach stays recorded.",
+            "sound": {
+              "mood": "quiet",
+              "district": "street"
+            },
+            "focus": "normal",
+            "candidateFile": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-1903a3d3a421.mp3",
+            "sha256": "dbb6cb71c81759637a3ec8e82f05023279583bb5133374a4b86dd9e15d7a9b41",
+            "bytes": 76652,
+            "sourceFile": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-1903a3d3a421-master.wav",
+            "sourceSha256": "1027c8065b1cf9d444e14b80eef3b552e60763172955db873303c09c13825a8a",
+            "pcmDeliveryFile": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-1903a3d3a421-pcm.wav",
+            "pcmDeliverySha256": "9ab4caad79cbffa17680e4d7d2e24490f5b5c233c9b77c6194e06c89acc63cf1",
+            "parts": [
+              {
+                "text": "Then I won't introduce you.",
+                "speed": 0.97,
+                "pauseAfter": 0.18,
+                "rawFile": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-1903a3d3a421-phrase-0.wav",
+                "rawSha256": "eb1330fbe28aacbb6c031b4b3fd5fe8a90fd0fe6340de2bdcbd4c050a02f9060",
+                "rawSeconds": 1.7046666666666668,
+                "retainedSeconds": 1.546125,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.15854166666666666,
+                "startSeconds": 0.0
+              },
+              {
+                "text": "The counter can answer for itself.",
+                "speed": 0.97,
+                "pauseAfter": 0.18,
+                "rawFile": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-1903a3d3a421-phrase-1.wav",
+                "rawSha256": "3aa1c0652930647462947edf5cc4933932ff88cb05db3bbce4996ada2665fba0",
+                "rawSeconds": 2.164,
+                "retainedSeconds": 2.0144583333333332,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.14954166666666666,
+                "startSeconds": 1.726125
+              },
+              {
+                "text": "I won't answer for a promise you won't name.",
+                "speed": 0.97,
+                "pauseAfter": 0,
+                "rawFile": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-1903a3d3a421-phrase-2.wav",
+                "rawSha256": "b071ce58dc3ecc5f5869f4b13a964cfad34de16a3b72cf1a0297441c8f533de1",
+                "rawSeconds": 2.376,
+                "retainedSeconds": 2.2121666666666666,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.16383333333333333,
+                "startSeconds": 3.9205833333333335
+              }
+            ],
+            "integratedLufs": -20.0,
+            "truePeakDbtp": -1.76,
+            "durationSeconds": 6.29275,
+            "sampleRate": 24000,
+            "channels": 1,
+            "peak": 0.8167210221290588,
+            "retainedCandidatePath": "qa/editorial/expressive-performance-candidates/first/voice-campaign-kerr-1903a3d3a421.mp3"
+          }
+        ]
+      },
+      "transcripts": {
+        "model": "faster-whisper base.en",
+        "method": "Unprompted CPU int8, beam5, no initial prompt, no conditioning on previous text; lowercase/apostrophe/punctuation normalization only",
+        "lines": [
+          {
+            "id": "voice-campaign-kerr-10b6e71a11eb",
+            "text": "A depot reference points to a desk. It doesn't tell me what you kept in your coat. What are you asking me to carry?",
+            "path": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-10b6e71a11eb.mp3",
+            "transcription": "A depot reference points to a desk, it doesn't tell me what you kept in your coat, what are you asking me to carry?",
+            "exactNormalizedWords": true,
+            "sha256": "7a67beb38713e2ac0b79f74f9e3ff22c321a0a05494dc682063db543284c8344",
+            "durationSeconds": 6.17,
+            "words": [
+              {
+                "word": " A",
+                "start": 0.0,
+                "end": 0.16
+              },
+              {
+                "word": " depot",
+                "start": 0.16,
+                "end": 0.32
+              },
+              {
+                "word": " reference",
+                "start": 0.32,
+                "end": 0.78
+              },
+              {
+                "word": " points",
+                "start": 0.78,
+                "end": 1.12
+              },
+              {
+                "word": " to",
+                "start": 1.12,
+                "end": 1.42
+              },
+              {
+                "word": " a",
+                "start": 1.42,
+                "end": 1.52
+              },
+              {
+                "word": " desk,",
+                "start": 1.52,
+                "end": 1.78
+              },
+              {
+                "word": " it",
+                "start": 2.2,
+                "end": 2.36
+              },
+              {
+                "word": " doesn't",
+                "start": 2.36,
+                "end": 2.66
+              },
+              {
+                "word": " tell",
+                "start": 2.66,
+                "end": 2.84
+              },
+              {
+                "word": " me",
+                "start": 2.84,
+                "end": 3.02
+              },
+              {
+                "word": " what",
+                "start": 3.02,
+                "end": 3.18
+              },
+              {
+                "word": " you",
+                "start": 3.18,
+                "end": 3.32
+              },
+              {
+                "word": " kept",
+                "start": 3.32,
+                "end": 3.52
+              },
+              {
+                "word": " in",
+                "start": 3.52,
+                "end": 3.7
+              },
+              {
+                "word": " your",
+                "start": 3.7,
+                "end": 3.78
+              },
+              {
+                "word": " coat,",
+                "start": 3.78,
+                "end": 4.06
+              },
+              {
+                "word": " what",
+                "start": 4.48,
+                "end": 4.64
+              },
+              {
+                "word": " are",
+                "start": 4.64,
+                "end": 4.76
+              },
+              {
+                "word": " you",
+                "start": 4.76,
+                "end": 4.84
+              },
+              {
+                "word": " asking",
+                "start": 4.84,
+                "end": 5.2
+              },
+              {
+                "word": " me",
+                "start": 5.2,
+                "end": 5.44
+              },
+              {
+                "word": " to",
+                "start": 5.44,
+                "end": 5.52
+              },
+              {
+                "word": " carry?",
+                "start": 5.52,
+                "end": 5.8
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-kerr-899d4ba5ecfb",
+            "text": "You showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.",
+            "path": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-899d4ba5ecfb.mp3",
+            "transcription": "You showed me the sore summary, leave the witness out of my errands. I don't need a person's address to ask about a shift.",
+            "exactNormalizedWords": false,
+            "sha256": "2ba80e2211677269a9ae2140f25b39f4f118521638c9bf0b5f4166a4735a3609",
+            "durationSeconds": 6.722875,
+            "words": [
+              {
+                "word": " You",
+                "start": 0.0,
+                "end": 0.2
+              },
+              {
+                "word": " showed",
+                "start": 0.2,
+                "end": 0.4
+              },
+              {
+                "word": " me",
+                "start": 0.4,
+                "end": 0.64
+              },
+              {
+                "word": " the",
+                "start": 0.64,
+                "end": 0.76
+              },
+              {
+                "word": " sore",
+                "start": 0.76,
+                "end": 0.94
+              },
+              {
+                "word": " summary,",
+                "start": 0.94,
+                "end": 1.46
+              },
+              {
+                "word": " leave",
+                "start": 1.94,
+                "end": 2.1
+              },
+              {
+                "word": " the",
+                "start": 2.1,
+                "end": 2.28
+              },
+              {
+                "word": " witness",
+                "start": 2.28,
+                "end": 2.56
+              },
+              {
+                "word": " out",
+                "start": 2.56,
+                "end": 2.9
+              },
+              {
+                "word": " of",
+                "start": 2.9,
+                "end": 3.0
+              },
+              {
+                "word": " my",
+                "start": 3.0,
+                "end": 3.14
+              },
+              {
+                "word": " errands.",
+                "start": 3.14,
+                "end": 3.64
+              },
+              {
+                "word": " I",
+                "start": 4.1,
+                "end": 4.14
+              },
+              {
+                "word": " don't",
+                "start": 4.14,
+                "end": 4.34
+              },
+              {
+                "word": " need",
+                "start": 4.34,
+                "end": 4.44
+              },
+              {
+                "word": " a",
+                "start": 4.44,
+                "end": 4.52
+              },
+              {
+                "word": " person's",
+                "start": 4.52,
+                "end": 4.98
+              },
+              {
+                "word": " address",
+                "start": 4.98,
+                "end": 5.24
+              },
+              {
+                "word": " to",
+                "start": 5.24,
+                "end": 5.48
+              },
+              {
+                "word": " ask",
+                "start": 5.48,
+                "end": 5.66
+              },
+              {
+                "word": " about",
+                "start": 5.66,
+                "end": 5.94
+              },
+              {
+                "word": " a",
+                "start": 5.94,
+                "end": 6.06
+              },
+              {
+                "word": " shift.",
+                "start": 6.06,
+                "end": 6.32
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-kerr-e8022742ad26",
+            "text": "My name went into their register after you promised it wouldn't. Say that before you ask me for another introduction.",
+            "path": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-e8022742ad26.mp3",
+            "transcription": "My name went into their register after you promised it wouldn't. Say that before you ask me for another introduction.",
+            "exactNormalizedWords": true,
+            "sha256": "abcbec9958765e993e6e10c9eca8f4204440c8f1cf2aa0718ab2d7ff2a754496",
+            "durationSeconds": 6.304625,
+            "words": [
+              {
+                "word": " My",
+                "start": 0.0,
+                "end": 0.2
+              },
+              {
+                "word": " name",
+                "start": 0.2,
+                "end": 0.5
+              },
+              {
+                "word": " went",
+                "start": 0.5,
+                "end": 0.74
+              },
+              {
+                "word": " into",
+                "start": 0.74,
+                "end": 0.92
+              },
+              {
+                "word": " their",
+                "start": 0.92,
+                "end": 1.1
+              },
+              {
+                "word": " register",
+                "start": 1.1,
+                "end": 1.52
+              },
+              {
+                "word": " after",
+                "start": 1.52,
+                "end": 2.0
+              },
+              {
+                "word": " you",
+                "start": 2.0,
+                "end": 2.24
+              },
+              {
+                "word": " promised",
+                "start": 2.24,
+                "end": 2.56
+              },
+              {
+                "word": " it",
+                "start": 2.56,
+                "end": 2.78
+              },
+              {
+                "word": " wouldn't.",
+                "start": 2.78,
+                "end": 3.16
+              },
+              {
+                "word": " Say",
+                "start": 3.5,
+                "end": 3.62
+              },
+              {
+                "word": " that",
+                "start": 3.62,
+                "end": 3.86
+              },
+              {
+                "word": " before",
+                "start": 3.86,
+                "end": 4.04
+              },
+              {
+                "word": " you",
+                "start": 4.04,
+                "end": 4.36
+              },
+              {
+                "word": " ask",
+                "start": 4.36,
+                "end": 4.64
+              },
+              {
+                "word": " me",
+                "start": 4.64,
+                "end": 4.86
+              },
+              {
+                "word": " for",
+                "start": 4.86,
+                "end": 5.02
+              },
+              {
+                "word": " another",
+                "start": 5.02,
+                "end": 5.22
+              },
+              {
+                "word": " introduction.",
+                "start": 5.22,
+                "end": 5.84
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-kerr-f001a675c451",
+            "text": "Keep the docket beside the promise. Use your own name for anything you sign. Mine stays out of it.",
+            "path": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-f001a675c451.mp3",
+            "transcription": "Keep the docket beside the promise, use your own name for anything you sign. Mine stays out of it.",
+            "exactNormalizedWords": true,
+            "sha256": "52c21f94080d198ec08b89ca2c6281de9d3a2ba659dfc7d531790b65105dbe04",
+            "durationSeconds": 6.0031875,
+            "words": [
+              {
+                "word": " Keep",
+                "start": 0.0,
+                "end": 0.24
+              },
+              {
+                "word": " the",
+                "start": 0.24,
+                "end": 0.42
+              },
+              {
+                "word": " docket",
+                "start": 0.42,
+                "end": 0.8
+              },
+              {
+                "word": " beside",
+                "start": 0.8,
+                "end": 1.1
+              },
+              {
+                "word": " the",
+                "start": 1.1,
+                "end": 1.36
+              },
+              {
+                "word": " promise,",
+                "start": 1.36,
+                "end": 1.74
+              },
+              {
+                "word": " use",
+                "start": 2.18,
+                "end": 2.38
+              },
+              {
+                "word": " your",
+                "start": 2.38,
+                "end": 2.54
+              },
+              {
+                "word": " own",
+                "start": 2.54,
+                "end": 2.72
+              },
+              {
+                "word": " name",
+                "start": 2.72,
+                "end": 2.96
+              },
+              {
+                "word": " for",
+                "start": 2.96,
+                "end": 3.2
+              },
+              {
+                "word": " anything",
+                "start": 3.2,
+                "end": 3.48
+              },
+              {
+                "word": " you",
+                "start": 3.48,
+                "end": 3.76
+              },
+              {
+                "word": " sign.",
+                "start": 3.76,
+                "end": 3.98
+              },
+              {
+                "word": " Mine",
+                "start": 4.58,
+                "end": 4.74
+              },
+              {
+                "word": " stays",
+                "start": 4.74,
+                "end": 5.12
+              },
+              {
+                "word": " out",
+                "start": 5.12,
+                "end": 5.44
+              },
+              {
+                "word": " of",
+                "start": 5.44,
+                "end": 5.58
+              },
+              {
+                "word": " it.",
+                "start": 5.58,
+                "end": 5.76
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-kerr-f829eb68f234",
+            "text": "Then I know which depot desk you asked for, not what's in your case. Keep those two things separate.",
+            "path": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-f829eb68f234.mp3",
+            "transcription": "Then I know which depot desk you asked for, not what's in your case. Keep those two things separate.",
+            "exactNormalizedWords": true,
+            "sha256": "0b8e38c9bc1e3af2a0f7e67fb5d0b1574ca47fab13f38dfac1e61c391b689dce",
+            "durationSeconds": 5.45125,
+            "words": [
+              {
+                "word": " Then",
+                "start": 0.0,
+                "end": 0.2
+              },
+              {
+                "word": " I",
+                "start": 0.2,
+                "end": 0.34
+              },
+              {
+                "word": " know",
+                "start": 0.34,
+                "end": 0.52
+              },
+              {
+                "word": " which",
+                "start": 0.52,
+                "end": 0.74
+              },
+              {
+                "word": " depot",
+                "start": 0.74,
+                "end": 0.96
+              },
+              {
+                "word": " desk",
+                "start": 0.96,
+                "end": 1.34
+              },
+              {
+                "word": " you",
+                "start": 1.34,
+                "end": 1.5
+              },
+              {
+                "word": " asked",
+                "start": 1.5,
+                "end": 1.68
+              },
+              {
+                "word": " for,",
+                "start": 1.68,
+                "end": 2.04
+              },
+              {
+                "word": " not",
+                "start": 2.3,
+                "end": 2.52
+              },
+              {
+                "word": " what's",
+                "start": 2.52,
+                "end": 2.8
+              },
+              {
+                "word": " in",
+                "start": 2.8,
+                "end": 2.88
+              },
+              {
+                "word": " your",
+                "start": 2.88,
+                "end": 2.96
+              },
+              {
+                "word": " case.",
+                "start": 2.96,
+                "end": 3.2
+              },
+              {
+                "word": " Keep",
+                "start": 3.84,
+                "end": 3.84
+              },
+              {
+                "word": " those",
+                "start": 3.84,
+                "end": 4.06
+              },
+              {
+                "word": " two",
+                "start": 4.06,
+                "end": 4.28
+              },
+              {
+                "word": " things",
+                "start": 4.28,
+                "end": 4.58
+              },
+              {
+                "word": " separate.",
+                "start": 4.58,
+                "end": 5.06
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-kerr-1903a3d3a421",
+            "text": "Then I won't introduce you. The counter can answer for itself. I won't answer for a promise you won't name.",
+            "path": "/workspace/generated_audio/expressive-performance/first/voice-campaign-kerr-1903a3d3a421.mp3",
+            "transcription": "Then I won't introduce you, the counter can answer for itself, I won't answer for promise you won't name.",
+            "exactNormalizedWords": false,
+            "sha256": "dbb6cb71c81759637a3ec8e82f05023279583bb5133374a4b86dd9e15d7a9b41",
+            "durationSeconds": 6.29275,
+            "words": [
+              {
+                "word": " Then",
+                "start": 0.0,
+                "end": 0.24
+              },
+              {
+                "word": " I",
+                "start": 0.24,
+                "end": 0.42
+              },
+              {
+                "word": " won't",
+                "start": 0.42,
+                "end": 0.72
+              },
+              {
+                "word": " introduce",
+                "start": 0.72,
+                "end": 1.0
+              },
+              {
+                "word": " you,",
+                "start": 1.0,
+                "end": 1.36
+              },
+              {
+                "word": " the",
+                "start": 1.74,
+                "end": 1.88
+              },
+              {
+                "word": " counter",
+                "start": 1.88,
+                "end": 2.12
+              },
+              {
+                "word": " can",
+                "start": 2.12,
+                "end": 2.46
+              },
+              {
+                "word": " answer",
+                "start": 2.46,
+                "end": 2.86
+              },
+              {
+                "word": " for",
+                "start": 2.86,
+                "end": 3.08
+              },
+              {
+                "word": " itself,",
+                "start": 3.08,
+                "end": 3.3
+              },
+              {
+                "word": " I",
+                "start": 3.98,
+                "end": 4.08
+              },
+              {
+                "word": " won't",
+                "start": 4.08,
+                "end": 4.34
+              },
+              {
+                "word": " answer",
+                "start": 4.34,
+                "end": 4.62
+              },
+              {
+                "word": " for",
+                "start": 4.62,
+                "end": 4.82
+              },
+              {
+                "word": " promise",
+                "start": 4.82,
+                "end": 5.2
+              },
+              {
+                "word": " you",
+                "start": 5.2,
+                "end": 5.42
+              },
+              {
+                "word": " won't",
+                "start": 5.42,
+                "end": 5.7
+              },
+              {
+                "word": " name.",
+                "start": 5.7,
+                "end": 5.88
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "directed",
+      "provenance": {
+        "generatedAt": "2026-10-30T23:51:34.074721+00:00",
+        "source": "scripts/direct-connected-voices.py",
+        "driver": {
+          "name": "kokoro-onnx",
+          "version": "0.6.1",
+          "license": "MIT",
+          "url": "https://github.com/thewh1teagle/kokoro-onnx",
+          "licenseFile": "qa/media/voice-sources/kokoro-onnx-LICENSE.txt"
+        },
+        "model": {
+          "name": "Kokoro-82M v1.0",
+          "license": "Apache-2.0",
+          "card": "https://huggingface.co/hexgrad/Kokoro-82M",
+          "licenseFile": "qa/media/voice-sources/Kokoro-LICENSE.txt",
+          "files": [
+            {
+              "name": "kokoro-v1.0.onnx",
+              "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.onnx",
+              "sha256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+              "bytes": 325505369
+            },
+            {
+              "name": "voices-v1.0.bin",
+              "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin",
+              "sha256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+              "bytes": 28214398
+            }
+          ]
+        },
+        "disclosure": "Stock synthetic voices generated offline with Kokoro v1.0; no actor session or individual voice clone was commissioned. Only the fixed authored quotations below are rendered. No model or speech service ships in the game.",
+        "method": "Exact words and stock identity; phrase speed/pause direction, conservative -60dB-relative model-padding removal with80ms guards/8ms fades, two-pass -23.5LUFS codec matching,96kbps mono MP3. Masters retained outside Git.",
+        "lines": [
+          {
+            "id": "voice-campaign-kerr-10b6e71a11eb",
+            "speaker": "Kerr",
+            "voice": "am_adam",
+            "speed": 0.97,
+            "text": "A depot reference points to a desk. It doesn't tell me what you kept in your coat. What are you asking me to carry?",
+            "direction": "A practical request rather than suspicion: connect the desk/coat distinction, then leave room for an answer.",
+            "loudnessLufs": -23.5,
+            "previousPath": "public/audio/voice-campaign-kerr-10b6e71a11eb.mp3",
+            "previousSha256": "512593cc157650d5a50be2f01fde4159063ab9c88b10237848f34f9987a41176",
+            "sourceGain": 1,
+            "checkpoint": {
+              "id": "entry",
+              "route": "district-public-work",
+              "scene": "act2_district_kerr",
+              "choice": "district-tell-kerr"
+            },
+            "sceneText": "\u201cA depot reference points to a desk. It doesn't tell me what you kept in your coat. What are you asking me to carry?\u201d\n\nThe posted depot procedure is public. Your case notes are not. If you show Kerr the summary, use the same source scope you gave Edda and include any docket showing a breach of his private collection terms. No witness material will be shared. You can keep the case closed.",
+            "sound": {
+              "mood": "quiet",
+              "district": "street"
+            },
+            "focus": "normal",
+            "segments": [
+              {
+                "text": "A depot reference points to a desk.",
+                "speed": 0.99,
+                "pauseAfter": 0.17
+              },
+              {
+                "text": "It doesn't tell me what you kept in your coat.",
+                "speed": 0.98,
+                "pauseAfter": 0.32
+              },
+              {
+                "text": "What are you asking me to carry?",
+                "speed": 0.94,
+                "pauseAfter": 0
+              }
+            ],
+            "candidateFile": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-10b6e71a11eb.mp3",
+            "sha256": "4fff91bf11e8a26c06fd9bf4049e6dcb5e93cf338bc17d2765e4c457ebc3d201",
+            "bytes": 76652,
+            "sourceFile": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-10b6e71a11eb-master.wav",
+            "sourceSha256": "e9aafb623a36a0e253a06fe6a079627509ca405da94fc7a9128e192387ec8017",
+            "pcmDeliveryFile": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-10b6e71a11eb-pcm.wav",
+            "pcmDeliverySha256": "b274004f6da24e1c053b4497e08e0daa53eab1b71bd7ec45452a44981189674f",
+            "parts": [
+              {
+                "text": "A depot reference points to a desk.",
+                "speed": 0.99,
+                "pauseAfter": 0.17,
+                "rawFile": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-10b6e71a11eb-phrase-0.wav",
+                "rawSha256": "b28c701790891e9672290d33e3e67274b8ead846348d0bfc4fac2491feec4af0",
+                "rawSeconds": 2.111291666666667,
+                "retainedSeconds": 1.9685,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.14279166666666668,
+                "startSeconds": 0.0
+              },
+              {
+                "text": "It doesn't tell me what you kept in your coat.",
+                "speed": 0.98,
+                "pauseAfter": 0.32,
+                "rawFile": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-10b6e71a11eb-phrase-1.wav",
+                "rawSha256": "4ce265fb139f288d4b0ca6fb9de1506db95ffa4239d1047409c0139ae6c88469",
+                "rawSeconds": 2.259333333333333,
+                "retainedSeconds": 2.10725,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.15208333333333332,
+                "startSeconds": 2.1385
+              },
+              {
+                "text": "What are you asking me to carry?",
+                "speed": 0.94,
+                "pauseAfter": 0,
+                "rawFile": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-10b6e71a11eb-phrase-2.wav",
+                "rawSha256": "e6749a443570cf0585c21089c371462cea4eb9669bc76367f4cbce7fe57f408c",
+                "rawSeconds": 1.726,
+                "retainedSeconds": 1.5724583333333333,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.15354166666666666,
+                "startSeconds": 4.56575
+              }
+            ],
+            "integratedLufs": -23.5,
+            "truePeakDbtp": -3.83,
+            "durationSeconds": 6.298208333333333,
+            "sampleRate": 24000,
+            "channels": 1,
+            "peak": 0.6434784531593323,
+            "retainedCandidatePath": "qa/editorial/expressive-performance-candidates/directed/voice-campaign-kerr-10b6e71a11eb.mp3"
+          },
+          {
+            "id": "voice-campaign-kerr-899d4ba5ecfb",
+            "speaker": "Kerr",
+            "voice": "am_adam",
+            "speed": 0.97,
+            "text": "You showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.",
+            "direction": "Acknowledge the disclosure, then give the witness boundary separate weight; keep the shift request matter-of-fact.",
+            "loudnessLufs": -23.5,
+            "previousPath": "public/audio/voice-campaign-kerr-899d4ba5ecfb.mp3",
+            "previousSha256": "efc7a1dfac22ba92865fc4a7725233f4d4312576b99cb82a7e02ddcaf33b617e",
+            "sourceGain": 1,
+            "checkpoint": {
+              "id": "shared-breach",
+              "route": "district-public-work",
+              "scene": "act2_district_kerr_reply",
+              "choice": "district-kerr-acknowledge"
+            },
+            "sceneText": "\u201cYou showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.\u201d\n\n\u201cMy name went into their register after you promised it wouldn't. Say that before you ask me for another introduction.\u201d\n\nThe counter offers registered sorting work under your own handle. An introduction supplies no payment, recovery, treatment or source. Any earlier breach stays recorded.",
+            "sound": {
+              "mood": "quiet",
+              "district": "street"
+            },
+            "focus": "normal",
+            "segments": [
+              {
+                "text": "You showed me the source summary.",
+                "speed": 0.99,
+                "pauseAfter": 0.3
+              },
+              {
+                "text": "Leave the witness out of my errands.",
+                "speed": 0.94,
+                "pauseAfter": 0.21
+              },
+              {
+                "text": "I don't need a person's address to ask about a shift.",
+                "speed": 0.99,
+                "pauseAfter": 0
+              }
+            ],
+            "candidateFile": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-899d4ba5ecfb.mp3",
+            "sha256": "6d6c7a3fd6b7f4bc95fbf44ec9d8e5a8437dcf769391057bf4a44daad67b4947",
+            "bytes": 82700,
+            "sourceFile": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-899d4ba5ecfb-master.wav",
+            "sourceSha256": "60ea3d9cb683ce1e500c6df1717f8daafee5af73019e696205f9a33473d95b7e",
+            "pcmDeliveryFile": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-899d4ba5ecfb-pcm.wav",
+            "pcmDeliverySha256": "ce6603656f85974f8cda559b28325648c91bcb063d19998fd9397b9044d758d1",
+            "parts": [
+              {
+                "text": "You showed me the source summary.",
+                "speed": 0.99,
+                "pauseAfter": 0.3,
+                "rawFile": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-899d4ba5ecfb-phrase-0.wav",
+                "rawSha256": "e659ab5bf2f0952125bec0b1d012c0c714be3e39a6d5cc793a45f081c357fbfa",
+                "rawSeconds": 1.7573333333333334,
+                "retainedSeconds": 1.5898333333333334,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.1675,
+                "startSeconds": 0.0
+              },
+              {
+                "text": "Leave the witness out of my errands.",
+                "speed": 0.94,
+                "pauseAfter": 0.21,
+                "rawFile": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-899d4ba5ecfb-phrase-1.wav",
+                "rawSha256": "d88f199aa514c42848ee7ca48b36d4444999521a916328b65befd70302ecfa3d",
+                "rawSeconds": 2.1526666666666667,
+                "retainedSeconds": 1.99975,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.15291666666666667,
+                "startSeconds": 1.8898333333333333
+              },
+              {
+                "text": "I don't need a person's address to ask about a shift.",
+                "speed": 0.99,
+                "pauseAfter": 0,
+                "rawFile": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-899d4ba5ecfb-phrase-2.wav",
+                "rawSha256": "a129d03672111dccee100688179088ab6773759e280ae30f14cbc728bd8cda0d",
+                "rawSeconds": 2.707333333333333,
+                "retainedSeconds": 2.55625,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.15108333333333332,
+                "startSeconds": 4.099583333333333
+              }
+            ],
+            "integratedLufs": -23.5,
+            "truePeakDbtp": -4.96,
+            "durationSeconds": 6.815833333333333,
+            "sampleRate": 24000,
+            "channels": 1,
+            "peak": 0.5623980760574341,
+            "retainedCandidatePath": "qa/editorial/expressive-performance-candidates/directed/voice-campaign-kerr-899d4ba5ecfb.mp3"
+          },
+          {
+            "id": "voice-campaign-kerr-e8022742ad26",
+            "speaker": "Kerr",
+            "voice": "am_adam",
+            "speed": 0.97,
+            "text": "My name went into their register after you promised it wouldn't. Say that before you ask me for another introduction.",
+            "direction": "Personal hurt held in check: keep the broken promise together, then require acknowledgement without shouting.",
+            "loudnessLufs": -23.5,
+            "previousPath": "public/audio/voice-campaign-kerr-e8022742ad26.mp3",
+            "previousSha256": "1dc1eb6e6e2f1203c290800caedda3a1ea0a5cffa3b59b628f449492f8d5f090",
+            "sourceGain": 1,
+            "checkpoint": {
+              "id": "shared-breach",
+              "route": "district-public-work",
+              "scene": "act2_district_kerr_reply",
+              "choice": "district-kerr-acknowledge"
+            },
+            "sceneText": "\u201cYou showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.\u201d\n\n\u201cMy name went into their register after you promised it wouldn't. Say that before you ask me for another introduction.\u201d\n\nThe counter offers registered sorting work under your own handle. An introduction supplies no payment, recovery, treatment or source. Any earlier breach stays recorded.",
+            "sound": {
+              "mood": "quiet",
+              "district": "street"
+            },
+            "focus": "normal",
+            "segments": [
+              {
+                "text": "My name went into their register after you promised it wouldn't.",
+                "speed": 0.92,
+                "pauseAfter": 0.48
+              },
+              {
+                "text": "Say that before you ask me for another introduction.",
+                "speed": 0.96,
+                "pauseAfter": 0
+              }
+            ],
+            "candidateFile": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-e8022742ad26.mp3",
+            "sha256": "a541ea49a17e95abf354b20aceaa0e97c47076249a1a071b13b305c3500dded7",
+            "bytes": 82412,
+            "sourceFile": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-e8022742ad26-master.wav",
+            "sourceSha256": "e5723aa983899ab0ab79d17c7c0c35d65558f303b44759a7f7275a0d761366d4",
+            "pcmDeliveryFile": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-e8022742ad26-pcm.wav",
+            "pcmDeliverySha256": "a61319ad53a0b330352343c6d438548a2ccdea85610341f055f1f15ea8a627d2",
+            "parts": [
+              {
+                "text": "My name went into their register after you promised it wouldn't.",
+                "speed": 0.92,
+                "pauseAfter": 0.48,
+                "rawFile": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-e8022742ad26-phrase-0.wav",
+                "rawSha256": "9e4934e4a76d92ae06f19f71ff391bd9b09e0a728225132e591ef97342a86232",
+                "rawSeconds": 3.518,
+                "retainedSeconds": 3.3562916666666665,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.16170833333333334,
+                "startSeconds": 0.0
+              },
+              {
+                "text": "Say that before you ask me for another introduction.",
+                "speed": 0.96,
+                "pauseAfter": 0,
+                "rawFile": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-e8022742ad26-phrase-1.wav",
+                "rawSha256": "1d75dcf5df745519294b475bacf51cb3ac3995abcac72367db9c9ff643895def",
+                "rawSeconds": 2.942,
+                "retainedSeconds": 2.789041666666667,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.15295833333333334,
+                "startSeconds": 3.836291666666667
+              }
+            ],
+            "integratedLufs": -23.49,
+            "truePeakDbtp": -3.02,
+            "durationSeconds": 6.785333333333333,
+            "sampleRate": 24000,
+            "channels": 1,
+            "peak": 0.7049590349197388,
+            "retainedCandidatePath": "qa/editorial/expressive-performance-candidates/directed/voice-campaign-kerr-e8022742ad26.mp3"
+          },
+          {
+            "id": "voice-campaign-kerr-f001a675c451",
+            "speaker": "Kerr",
+            "voice": "am_adam",
+            "speed": 0.97,
+            "text": "Keep the docket beside the promise. Use your own name for anything you sign. Mine stays out of it.",
+            "direction": "An actionable boundary, with the final refusal of borrowed identity distinct from permission to sign.",
+            "loudnessLufs": -23.5,
+            "previousPath": "public/audio/voice-campaign-kerr-f001a675c451.mp3",
+            "previousSha256": "c9cdfb49162cff0a08bb2ab7cddca6a5a1936059832c3e7dbbdb3076daff39c9",
+            "sourceGain": 1,
+            "checkpoint": {
+              "id": "acknowledged",
+              "route": "district-public-work",
+              "scene": "act2_district_kerr_reply",
+              "choice": "district-kerr-introduce"
+            },
+            "sceneText": "\u201cYou showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.\u201d\n\n\u201cKeep the docket beside the promise. Use your own name for anything you sign. Mine stays out of it.\u201d\n\nThe counter offers registered sorting work under your own handle. An introduction supplies no payment, recovery, treatment or source. Any earlier breach stays recorded.",
+            "sound": {
+              "mood": "quiet",
+              "district": "street"
+            },
+            "focus": "normal",
+            "segments": [
+              {
+                "text": "Keep the docket beside the promise.",
+                "speed": 0.98,
+                "pauseAfter": 0.22
+              },
+              {
+                "text": "Use your own name for anything you sign.",
+                "speed": 0.96,
+                "pauseAfter": 0.42
+              },
+              {
+                "text": "Mine stays out of it.",
+                "speed": 0.91,
+                "pauseAfter": 0
+              }
+            ],
+            "candidateFile": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-f001a675c451.mp3",
+            "sha256": "109f90b0698be1df2e844c0213fad49485fea2de7649a68f421b63ce21227c38",
+            "bytes": 76364,
+            "sourceFile": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-f001a675c451-master.wav",
+            "sourceSha256": "a11c0d4ec7c8eed8bd619d868218a1eb9b5eef615d03bce62147c03471c25c7a",
+            "pcmDeliveryFile": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-f001a675c451-pcm.wav",
+            "pcmDeliverySha256": "1e370638efaf9fe195ff202831b88bcd9092eb8cf19b01a0942c228cb429a3ed",
+            "parts": [
+              {
+                "text": "Keep the docket beside the promise.",
+                "speed": 0.98,
+                "pauseAfter": 0.22,
+                "rawFile": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-f001a675c451-phrase-0.wav",
+                "rawSha256": "8118aa5b9c4108bc621d478c04b45041853498a6a931c896b29bfd075a67ac63",
+                "rawSeconds": 2.1213333333333333,
+                "retainedSeconds": 1.9713333333333334,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.15,
+                "startSeconds": 0.0
+              },
+              {
+                "text": "Use your own name for anything you sign.",
+                "speed": 0.96,
+                "pauseAfter": 0.42,
+                "rawFile": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-f001a675c451-phrase-1.wav",
+                "rawSha256": "fdc772e3b4524a6480e517b04e896c0fabb7f6298a2db07ce158cb25842bc219",
+                "rawSeconds": 2.292,
+                "retainedSeconds": 2.1359583333333334,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.15604166666666666,
+                "startSeconds": 2.191333333333333
+              },
+              {
+                "text": "Mine stays out of it.",
+                "speed": 0.91,
+                "pauseAfter": 0,
+                "rawFile": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-f001a675c451-phrase-2.wav",
+                "rawSha256": "aee7dd31e941298bf0c7a1645dcdc494e0c69ec8e0ba996eafe38301b7643ec1",
+                "rawSeconds": 1.504,
+                "retainedSeconds": 1.3645,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.1395,
+                "startSeconds": 4.7472916666666665
+              }
+            ],
+            "integratedLufs": -23.5,
+            "truePeakDbtp": -4.03,
+            "durationSeconds": 6.271791666666667,
+            "sampleRate": 24000,
+            "channels": 1,
+            "peak": 0.6280830502510071,
+            "retainedCandidatePath": "qa/editorial/expressive-performance-candidates/directed/voice-campaign-kerr-f001a675c451.mp3"
+          },
+          {
+            "id": "voice-campaign-kerr-f829eb68f234",
+            "speaker": "Kerr",
+            "voice": "am_adam",
+            "speed": 0.97,
+            "text": "Then I know which depot desk you asked for, not what's in your case. Keep those two things separate.",
+            "direction": "Clarify the limit of knowledge, then a short practical instruction; no accusation.",
+            "loudnessLufs": -23.5,
+            "previousPath": "public/audio/voice-campaign-kerr-f829eb68f234.mp3",
+            "previousSha256": "181bdff21515e3dd7244fc8d2346fdb3125ef84361a6abc88079012fc96d20dd",
+            "sourceGain": 1,
+            "checkpoint": {
+              "id": "private",
+              "route": "district-private-rest",
+              "scene": "act2_district_kerr_reply",
+              "choice": "district-kerr-introduce"
+            },
+            "sceneText": "\u201cThen I know which depot desk you asked for, not what's in your case. Keep those two things separate.\u201d\n\nHe offers an introduction about your own task. It is not a promise to remove anyone from the recipient register.\n\nThe service desk offers one short rest appointment through the private query. An introduction supplies no payment, recovery, treatment or source. Any earlier breach stays recorded.",
+            "sound": {
+              "mood": "quiet",
+              "district": "street"
+            },
+            "focus": "normal",
+            "segments": [
+              {
+                "text": "Then I know which depot desk you asked for, not what's in your case.",
+                "speed": 0.97,
+                "pauseAfter": 0.26
+              },
+              {
+                "text": "Keep those two things separate.",
+                "speed": 0.96,
+                "pauseAfter": 0
+              }
+            ],
+            "candidateFile": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-f829eb68f234.mp3",
+            "sha256": "fe5a2f979f807968e127863fe6a9653aa83c3a5a3d88c8c7d6658489995f020e",
+            "bytes": 67436,
+            "sourceFile": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-f829eb68f234-master.wav",
+            "sourceSha256": "4c124e2f13ace6bdf2ed8e1b97f409f22b52ad044a99b51b2c1cc4b840044ea6",
+            "pcmDeliveryFile": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-f829eb68f234-pcm.wav",
+            "pcmDeliverySha256": "55cb6e506487954661163db07755f43be395bf1270bb4dd4f14fbbb5318751f4",
+            "parts": [
+              {
+                "text": "Then I know which depot desk you asked for, not what's in your case.",
+                "speed": 0.97,
+                "pauseAfter": 0.26,
+                "rawFile": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-f829eb68f234-phrase-0.wav",
+                "rawSha256": "c26b53d19e8c8b3fd4d74bb8e57801666f6cef4681bbb87dd6e1b8ef25b027b5",
+                "rawSeconds": 3.6133333333333333,
+                "retainedSeconds": 3.454,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.15933333333333333,
+                "startSeconds": 0.0
+              },
+              {
+                "text": "Keep those two things separate.",
+                "speed": 0.96,
+                "pauseAfter": 0,
+                "rawFile": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-f829eb68f234-phrase-1.wav",
+                "rawSha256": "92f9d235117df8844c09893e1a8eb0d33c75a3f2f64ea178bba5731dc64a5659",
+                "rawSeconds": 1.8013333333333332,
+                "retainedSeconds": 1.6572083333333334,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.144125,
+                "startSeconds": 3.714
+              }
+            ],
+            "integratedLufs": -23.51,
+            "truePeakDbtp": -5.38,
+            "durationSeconds": 5.531208333333334,
+            "sampleRate": 24000,
+            "channels": 1,
+            "peak": 0.5372167825698853,
+            "retainedCandidatePath": "qa/editorial/expressive-performance-candidates/directed/voice-campaign-kerr-f829eb68f234.mp3"
+          },
+          {
+            "id": "voice-campaign-kerr-1903a3d3a421",
+            "speaker": "Kerr",
+            "voice": "am_adam",
+            "speed": 0.97,
+            "text": "Then I won't introduce you. The counter can answer for itself. I won't answer for a promise you won't name.",
+            "direction": "A settled refusal: distinct opening no, neutral counter instruction, and a deliberate personal boundary.",
+            "loudnessLufs": -23.5,
+            "segments": [
+              {
+                "text": "Then I won't introduce you.",
+                "speed": 0.91,
+                "pauseAfter": 0.34
+              },
+              {
+                "text": "The counter can answer for itself.",
+                "speed": 0.98,
+                "pauseAfter": 0.32
+              },
+              {
+                "text": "I won't answer for a promise you won't name.",
+                "speed": 0.94,
+                "pauseAfter": 0
+              }
+            ],
+            "previousPath": "public/audio/voice-campaign-kerr-1903a3d3a421.mp3",
+            "previousSha256": "3ef85b7ef5a09e0a6cb7cbbed23127ba032942a0dd1dc019aaa8b68a49567dc5",
+            "sourceGain": 1,
+            "checkpoint": {
+              "id": "refused",
+              "route": "district-breach-denied",
+              "scene": "act2_district_kerr_reply",
+              "choice": "district-leave-kerr"
+            },
+            "sceneText": "\u201cThen I know which depot desk you asked for, not what's in your case. Keep those two things separate.\u201d\n\n\u201cThen I won't introduce you. The counter can answer for itself. I won't answer for a promise you won't name.\u201d\n\nThe counter offers registered sorting work under your own handle. An introduction supplies no payment, recovery, treatment or source. Any earlier breach stays recorded.",
+            "sound": {
+              "mood": "quiet",
+              "district": "street"
+            },
+            "focus": "normal",
+            "candidateFile": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-1903a3d3a421.mp3",
+            "sha256": "954d7a8190a8363bb6b6c80ffcc203e4e2e9f19f05fd622356c46ec764d0aed3",
+            "bytes": 81260,
+            "sourceFile": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-1903a3d3a421-master.wav",
+            "sourceSha256": "9a50d946dca43ba3edf5317f32686d69cb433ad30e7246909711b62774487999",
+            "pcmDeliveryFile": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-1903a3d3a421-pcm.wav",
+            "pcmDeliverySha256": "0545b46311e4d4d04a9e455181c9198281d40162aca4aa85ff051b5064449e8f",
+            "parts": [
+              {
+                "text": "Then I won't introduce you.",
+                "speed": 0.91,
+                "pauseAfter": 0.34,
+                "rawFile": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-1903a3d3a421-phrase-0.wav",
+                "rawSha256": "30986200df05507c69c929f0739fa8a1537cadf0fe85f9047f93dfb7dced95af",
+                "rawSeconds": 1.78,
+                "retainedSeconds": 1.627375,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.152625,
+                "startSeconds": 0.0
+              },
+              {
+                "text": "The counter can answer for itself.",
+                "speed": 0.98,
+                "pauseAfter": 0.32,
+                "rawFile": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-1903a3d3a421-phrase-1.wav",
+                "rawSha256": "661b37fb3e071c8213682d1878ddd8c5f77f3bddb79f86a1f4eb5b0a7b3471f9",
+                "rawSeconds": 2.132625,
+                "retainedSeconds": 1.989625,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.143,
+                "startSeconds": 1.967375
+              },
+              {
+                "text": "I won't answer for a promise you won't name.",
+                "speed": 0.94,
+                "pauseAfter": 0,
+                "rawFile": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-1903a3d3a421-phrase-2.wav",
+                "rawSha256": "1cbc1ddab18a19e838b210aff5ad448fe19a2b2527dd43a582226ce75e040058",
+                "rawSeconds": 2.4086666666666665,
+                "retainedSeconds": 2.2390416666666666,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.169625,
+                "startSeconds": 4.277
+              }
+            ],
+            "integratedLufs": -23.51,
+            "truePeakDbtp": -4.82,
+            "durationSeconds": 6.676041666666666,
+            "sampleRate": 24000,
+            "channels": 1,
+            "peak": 0.5736994743347168,
+            "retainedCandidatePath": "qa/editorial/expressive-performance-candidates/directed/voice-campaign-kerr-1903a3d3a421.mp3"
+          }
+        ]
+      },
+      "transcripts": {
+        "model": "faster-whisper base.en",
+        "method": "Unprompted CPU int8, beam5, no initial prompt, no conditioning on previous text; lowercase/apostrophe/punctuation normalization only",
+        "lines": [
+          {
+            "id": "voice-campaign-kerr-10b6e71a11eb",
+            "text": "A depot reference points to a desk. It doesn't tell me what you kept in your coat. What are you asking me to carry?",
+            "path": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-10b6e71a11eb.mp3",
+            "transcription": "A depot reference points to a desk. It doesn't tell me what you kept in your coat. What are you asking me to carry?",
+            "exactNormalizedWords": true,
+            "sha256": "4fff91bf11e8a26c06fd9bf4049e6dcb5e93cf338bc17d2765e4c457ebc3d201",
+            "durationSeconds": 6.29825,
+            "words": [
+              {
+                "word": " A",
+                "start": 0.0,
+                "end": 0.16
+              },
+              {
+                "word": " depot",
+                "start": 0.16,
+                "end": 0.3
+              },
+              {
+                "word": " reference",
+                "start": 0.3,
+                "end": 0.76
+              },
+              {
+                "word": " points",
+                "start": 0.76,
+                "end": 1.1
+              },
+              {
+                "word": " to",
+                "start": 1.1,
+                "end": 1.4
+              },
+              {
+                "word": " a",
+                "start": 1.4,
+                "end": 1.5
+              },
+              {
+                "word": " desk.",
+                "start": 1.5,
+                "end": 1.76
+              },
+              {
+                "word": " It",
+                "start": 2.26,
+                "end": 2.32
+              },
+              {
+                "word": " doesn't",
+                "start": 2.32,
+                "end": 2.62
+              },
+              {
+                "word": " tell",
+                "start": 2.62,
+                "end": 2.8
+              },
+              {
+                "word": " me",
+                "start": 2.8,
+                "end": 2.98
+              },
+              {
+                "word": " what",
+                "start": 2.98,
+                "end": 3.16
+              },
+              {
+                "word": " you",
+                "start": 3.16,
+                "end": 3.28
+              },
+              {
+                "word": " kept",
+                "start": 3.28,
+                "end": 3.48
+              },
+              {
+                "word": " in",
+                "start": 3.48,
+                "end": 3.66
+              },
+              {
+                "word": " your",
+                "start": 3.66,
+                "end": 3.74
+              },
+              {
+                "word": " coat.",
+                "start": 3.74,
+                "end": 4.02
+              },
+              {
+                "word": " What",
+                "start": 4.62,
+                "end": 4.76
+              },
+              {
+                "word": " are",
+                "start": 4.76,
+                "end": 4.86
+              },
+              {
+                "word": " you",
+                "start": 4.86,
+                "end": 4.96
+              },
+              {
+                "word": " asking",
+                "start": 4.96,
+                "end": 5.32
+              },
+              {
+                "word": " me",
+                "start": 5.32,
+                "end": 5.56
+              },
+              {
+                "word": " to",
+                "start": 5.56,
+                "end": 5.64
+              },
+              {
+                "word": " carry?",
+                "start": 5.64,
+                "end": 5.9
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-kerr-899d4ba5ecfb",
+            "text": "You showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.",
+            "path": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-899d4ba5ecfb.mp3",
+            "transcription": "You showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift. lift.",
+            "exactNormalizedWords": false,
+            "sha256": "6d6c7a3fd6b7f4bc95fbf44ec9d8e5a8437dcf769391057bf4a44daad67b4947",
+            "durationSeconds": 6.815875,
+            "words": [
+              {
+                "word": " You",
+                "start": 0.0,
+                "end": 0.18
+              },
+              {
+                "word": " showed",
+                "start": 0.18,
+                "end": 0.36
+              },
+              {
+                "word": " me",
+                "start": 0.36,
+                "end": 0.58
+              },
+              {
+                "word": " the",
+                "start": 0.58,
+                "end": 0.7
+              },
+              {
+                "word": " source",
+                "start": 0.7,
+                "end": 0.88
+              },
+              {
+                "word": " summary.",
+                "start": 0.88,
+                "end": 1.34
+              },
+              {
+                "word": " Leave",
+                "start": 2.12,
+                "end": 2.16
+              },
+              {
+                "word": " the",
+                "start": 2.16,
+                "end": 2.34
+              },
+              {
+                "word": " witness",
+                "start": 2.34,
+                "end": 2.6
+              },
+              {
+                "word": " out",
+                "start": 2.6,
+                "end": 2.96
+              },
+              {
+                "word": " of",
+                "start": 2.96,
+                "end": 3.06
+              },
+              {
+                "word": " my",
+                "start": 3.06,
+                "end": 3.2
+              },
+              {
+                "word": " errands.",
+                "start": 3.2,
+                "end": 3.72
+              },
+              {
+                "word": " I",
+                "start": 4.2,
+                "end": 4.24
+              },
+              {
+                "word": " don't",
+                "start": 4.24,
+                "end": 4.44
+              },
+              {
+                "word": " need",
+                "start": 4.44,
+                "end": 4.54
+              },
+              {
+                "word": " a",
+                "start": 4.54,
+                "end": 4.6
+              },
+              {
+                "word": " person's",
+                "start": 4.6,
+                "end": 5.08
+              },
+              {
+                "word": " address",
+                "start": 5.08,
+                "end": 5.32
+              },
+              {
+                "word": " to",
+                "start": 5.32,
+                "end": 5.58
+              },
+              {
+                "word": " ask",
+                "start": 5.58,
+                "end": 5.76
+              },
+              {
+                "word": " about",
+                "start": 5.76,
+                "end": 6.02
+              },
+              {
+                "word": " a",
+                "start": 6.02,
+                "end": 6.16
+              },
+              {
+                "word": " shift.",
+                "start": 6.16,
+                "end": 6.44
+              },
+              {
+                "word": " lift.",
+                "start": 6.44,
+                "end": 6.6
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-kerr-e8022742ad26",
+            "text": "My name went into their register after you promised it wouldn't. Say that before you ask me for another introduction.",
+            "path": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-e8022742ad26.mp3",
+            "transcription": "My name went into their register after you promised it wouldn't. Say that before you ask me for another introduction.",
+            "exactNormalizedWords": true,
+            "sha256": "a541ea49a17e95abf354b20aceaa0e97c47076249a1a071b13b305c3500dded7",
+            "durationSeconds": 6.785375,
+            "words": [
+              {
+                "word": " My",
+                "start": 0.0,
+                "end": 0.22
+              },
+              {
+                "word": " name",
+                "start": 0.22,
+                "end": 0.54
+              },
+              {
+                "word": " went",
+                "start": 0.54,
+                "end": 0.76
+              },
+              {
+                "word": " into",
+                "start": 0.76,
+                "end": 0.96
+              },
+              {
+                "word": " their",
+                "start": 0.96,
+                "end": 1.14
+              },
+              {
+                "word": " register",
+                "start": 1.14,
+                "end": 1.56
+              },
+              {
+                "word": " after",
+                "start": 1.56,
+                "end": 2.08
+              },
+              {
+                "word": " you",
+                "start": 2.08,
+                "end": 2.32
+              },
+              {
+                "word": " promised",
+                "start": 2.32,
+                "end": 2.66
+              },
+              {
+                "word": " it",
+                "start": 2.66,
+                "end": 2.9
+              },
+              {
+                "word": " wouldn't.",
+                "start": 2.9,
+                "end": 3.3
+              },
+              {
+                "word": " Say",
+                "start": 3.84,
+                "end": 4.08
+              },
+              {
+                "word": " that",
+                "start": 4.08,
+                "end": 4.32
+              },
+              {
+                "word": " before",
+                "start": 4.32,
+                "end": 4.48
+              },
+              {
+                "word": " you",
+                "start": 4.48,
+                "end": 4.82
+              },
+              {
+                "word": " ask",
+                "start": 4.82,
+                "end": 5.08
+              },
+              {
+                "word": " me",
+                "start": 5.08,
+                "end": 5.34
+              },
+              {
+                "word": " for",
+                "start": 5.34,
+                "end": 5.5
+              },
+              {
+                "word": " another",
+                "start": 5.5,
+                "end": 5.7
+              },
+              {
+                "word": " introduction.",
+                "start": 5.7,
+                "end": 6.28
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-kerr-f001a675c451",
+            "text": "Keep the docket beside the promise. Use your own name for anything you sign. Mine stays out of it.",
+            "path": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-f001a675c451.mp3",
+            "transcription": "Keep the docket beside the promise, use your own name for anything you sign. Mine stays out of it.",
+            "exactNormalizedWords": true,
+            "sha256": "109f90b0698be1df2e844c0213fad49485fea2de7649a68f421b63ce21227c38",
+            "durationSeconds": 6.2718125,
+            "words": [
+              {
+                "word": " Keep",
+                "start": 0.0,
+                "end": 0.24
+              },
+              {
+                "word": " the",
+                "start": 0.24,
+                "end": 0.42
+              },
+              {
+                "word": " docket",
+                "start": 0.42,
+                "end": 0.8
+              },
+              {
+                "word": " beside",
+                "start": 0.8,
+                "end": 1.1
+              },
+              {
+                "word": " the",
+                "start": 1.1,
+                "end": 1.36
+              },
+              {
+                "word": " promise,",
+                "start": 1.36,
+                "end": 1.72
+              },
+              {
+                "word": " use",
+                "start": 2.2,
+                "end": 2.4
+              },
+              {
+                "word": " your",
+                "start": 2.4,
+                "end": 2.56
+              },
+              {
+                "word": " own",
+                "start": 2.56,
+                "end": 2.74
+              },
+              {
+                "word": " name",
+                "start": 2.74,
+                "end": 2.96
+              },
+              {
+                "word": " for",
+                "start": 2.96,
+                "end": 3.22
+              },
+              {
+                "word": " anything",
+                "start": 3.22,
+                "end": 3.5
+              },
+              {
+                "word": " you",
+                "start": 3.5,
+                "end": 3.78
+              },
+              {
+                "word": " sign.",
+                "start": 3.78,
+                "end": 4.02
+              },
+              {
+                "word": " Mine",
+                "start": 4.84,
+                "end": 5.0
+              },
+              {
+                "word": " stays",
+                "start": 5.0,
+                "end": 5.38
+              },
+              {
+                "word": " out",
+                "start": 5.38,
+                "end": 5.7
+              },
+              {
+                "word": " of",
+                "start": 5.7,
+                "end": 5.84
+              },
+              {
+                "word": " it.",
+                "start": 5.84,
+                "end": 6.0
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-kerr-f829eb68f234",
+            "text": "Then I know which depot desk you asked for, not what's in your case. Keep those two things separate.",
+            "path": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-f829eb68f234.mp3",
+            "transcription": "Then I know which depot desk you asked for, not what's in your case. Keep those two things separate.",
+            "exactNormalizedWords": true,
+            "sha256": "fe5a2f979f807968e127863fe6a9653aa83c3a5a3d88c8c7d6658489995f020e",
+            "durationSeconds": 5.53125,
+            "words": [
+              {
+                "word": " Then",
+                "start": 0.0,
+                "end": 0.2
+              },
+              {
+                "word": " I",
+                "start": 0.2,
+                "end": 0.34
+              },
+              {
+                "word": " know",
+                "start": 0.34,
+                "end": 0.52
+              },
+              {
+                "word": " which",
+                "start": 0.52,
+                "end": 0.76
+              },
+              {
+                "word": " depot",
+                "start": 0.76,
+                "end": 0.96
+              },
+              {
+                "word": " desk",
+                "start": 0.96,
+                "end": 1.34
+              },
+              {
+                "word": " you",
+                "start": 1.34,
+                "end": 1.5
+              },
+              {
+                "word": " asked",
+                "start": 1.5,
+                "end": 1.7
+              },
+              {
+                "word": " for,",
+                "start": 1.7,
+                "end": 2.04
+              },
+              {
+                "word": " not",
+                "start": 2.3,
+                "end": 2.52
+              },
+              {
+                "word": " what's",
+                "start": 2.52,
+                "end": 2.8
+              },
+              {
+                "word": " in",
+                "start": 2.8,
+                "end": 2.86
+              },
+              {
+                "word": " your",
+                "start": 2.86,
+                "end": 2.94
+              },
+              {
+                "word": " case.",
+                "start": 2.94,
+                "end": 3.2
+              },
+              {
+                "word": " Keep",
+                "start": 3.92,
+                "end": 3.92
+              },
+              {
+                "word": " those",
+                "start": 3.92,
+                "end": 4.14
+              },
+              {
+                "word": " two",
+                "start": 4.14,
+                "end": 4.38
+              },
+              {
+                "word": " things",
+                "start": 4.38,
+                "end": 4.66
+              },
+              {
+                "word": " separate.",
+                "start": 4.66,
+                "end": 5.12
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-kerr-1903a3d3a421",
+            "text": "Then I won't introduce you. The counter can answer for itself. I won't answer for a promise you won't name.",
+            "path": "/workspace/generated_audio/expressive-performance/directed/voice-campaign-kerr-1903a3d3a421.mp3",
+            "transcription": "Then I won't introduce you. The counter can answer for itself. I won't answer for promise you won't name.",
+            "exactNormalizedWords": false,
+            "sha256": "954d7a8190a8363bb6b6c80ffcc203e4e2e9f19f05fd622356c46ec764d0aed3",
+            "durationSeconds": 6.6760625,
+            "words": [
+              {
+                "word": " Then",
+                "start": 0.0,
+                "end": 0.24
+              },
+              {
+                "word": " I",
+                "start": 0.24,
+                "end": 0.42
+              },
+              {
+                "word": " won't",
+                "start": 0.42,
+                "end": 0.74
+              },
+              {
+                "word": " introduce",
+                "start": 0.74,
+                "end": 1.04
+              },
+              {
+                "word": " you.",
+                "start": 1.04,
+                "end": 1.42
+              },
+              {
+                "word": " The",
+                "start": 2.1,
+                "end": 2.12
+              },
+              {
+                "word": " counter",
+                "start": 2.12,
+                "end": 2.32
+              },
+              {
+                "word": " can",
+                "start": 2.32,
+                "end": 2.68
+              },
+              {
+                "word": " answer",
+                "start": 2.68,
+                "end": 3.08
+              },
+              {
+                "word": " for",
+                "start": 3.08,
+                "end": 3.3
+              },
+              {
+                "word": " itself.",
+                "start": 3.3,
+                "end": 3.52
+              },
+              {
+                "word": " I",
+                "start": 4.38,
+                "end": 4.44
+              },
+              {
+                "word": " won't",
+                "start": 4.44,
+                "end": 4.68
+              },
+              {
+                "word": " answer",
+                "start": 4.68,
+                "end": 4.98
+              },
+              {
+                "word": " for",
+                "start": 4.98,
+                "end": 5.18
+              },
+              {
+                "word": " promise",
+                "start": 5.18,
+                "end": 5.52
+              },
+              {
+                "word": " you",
+                "start": 5.52,
+                "end": 5.78
+              },
+              {
+                "word": " won't",
+                "start": 5.78,
+                "end": 6.04
+              },
+              {
+                "word": " name.",
+                "start": 6.04,
+                "end": 6.22
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "retake",
+      "provenance": {
+        "generatedAt": "2026-10-30T23:52:57.738358+00:00",
+        "source": "scripts/direct-connected-voices.py",
+        "driver": {
+          "name": "kokoro-onnx",
+          "version": "0.6.1",
+          "license": "MIT",
+          "url": "https://github.com/thewh1teagle/kokoro-onnx",
+          "licenseFile": "qa/media/voice-sources/kokoro-onnx-LICENSE.txt"
+        },
+        "model": {
+          "name": "Kokoro-82M v1.0",
+          "license": "Apache-2.0",
+          "card": "https://huggingface.co/hexgrad/Kokoro-82M",
+          "licenseFile": "qa/media/voice-sources/Kokoro-LICENSE.txt",
+          "files": [
+            {
+              "name": "kokoro-v1.0.onnx",
+              "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.onnx",
+              "sha256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+              "bytes": 325505369
+            },
+            {
+              "name": "voices-v1.0.bin",
+              "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin",
+              "sha256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+              "bytes": 28214398
+            }
+          ]
+        },
+        "disclosure": "Stock synthetic voices generated offline with Kokoro v1.0; no actor session or individual voice clone was commissioned. Only the fixed authored quotations below are rendered. No model or speech service ships in the game.",
+        "method": "Exact words and stock identity; phrase speed/pause direction, conservative -60dB-relative model-padding removal with80ms guards/8ms fades, two-pass -23.5LUFS codec matching,96kbps mono MP3. Masters retained outside Git.",
+        "lines": [
+          {
+            "id": "voice-campaign-kerr-899d4ba5ecfb",
+            "speaker": "Kerr",
+            "voice": "am_adam",
+            "speed": 0.97,
+            "text": "You showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.",
+            "direction": "Acknowledge the disclosure, then give the witness boundary separate weight; keep the shift request matter-of-fact.",
+            "loudnessLufs": -23.5,
+            "previousPath": "public/audio/voice-campaign-kerr-899d4ba5ecfb.mp3",
+            "previousSha256": "efc7a1dfac22ba92865fc4a7725233f4d4312576b99cb82a7e02ddcaf33b617e",
+            "sourceGain": 1,
+            "checkpoint": {
+              "id": "shared-breach",
+              "route": "district-public-work",
+              "scene": "act2_district_kerr_reply",
+              "choice": "district-kerr-acknowledge"
+            },
+            "sceneText": "\u201cYou showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.\u201d\n\n\u201cMy name went into their register after you promised it wouldn't. Say that before you ask me for another introduction.\u201d\n\nThe counter offers registered sorting work under your own handle. An introduction supplies no payment, recovery, treatment or source. Any earlier breach stays recorded.",
+            "sound": {
+              "mood": "quiet",
+              "district": "street"
+            },
+            "focus": "normal",
+            "segments": [
+              {
+                "text": "You showed me the source summary.",
+                "speed": 0.91,
+                "pauseAfter": 0.36
+              },
+              {
+                "text": "Leave the witness out of my errands.",
+                "speed": 0.94,
+                "pauseAfter": 0.21
+              },
+              {
+                "text": "I don't need a person's address to ask about a shift.",
+                "speed": 1.02,
+                "pauseAfter": 0
+              }
+            ],
+            "candidateFile": "/workspace/generated_audio/expressive-performance/retake/voice-campaign-kerr-899d4ba5ecfb.mp3",
+            "sha256": "8dba184dff263096ed09004afdb2bcf8554a5a3de82a1f83c7afd4e62beed490",
+            "bytes": 84716,
+            "sourceFile": "/workspace/generated_audio/expressive-performance/retake/voice-campaign-kerr-899d4ba5ecfb-master.wav",
+            "sourceSha256": "71f77eeb32a9b42be6629cf808f5a14fb44ff6c59cb28025e3b5148669a728aa",
+            "pcmDeliveryFile": "/workspace/generated_audio/expressive-performance/retake/voice-campaign-kerr-899d4ba5ecfb-pcm.wav",
+            "pcmDeliverySha256": "266a89767c622a0840046e4814bac749cdd1e12a38b30b8929286ec15ccaa9ed",
+            "parts": [
+              {
+                "text": "You showed me the source summary.",
+                "speed": 0.91,
+                "pauseAfter": 0.36,
+                "rawFile": "/workspace/generated_audio/expressive-performance/retake/voice-campaign-kerr-899d4ba5ecfb-phrase-0.wav",
+                "rawSha256": "2b280a36b822e334a7a1e4595de94c1c6e2c617b47a9f87abb7b0cabc747d471",
+                "rawSeconds": 1.854,
+                "retainedSeconds": 1.6935416666666667,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.16045833333333334,
+                "startSeconds": 0.0
+              },
+              {
+                "text": "Leave the witness out of my errands.",
+                "speed": 0.94,
+                "pauseAfter": 0.21,
+                "rawFile": "/workspace/generated_audio/expressive-performance/retake/voice-campaign-kerr-899d4ba5ecfb-phrase-1.wav",
+                "rawSha256": "b32d8c24672c3f216819148a3b9cddd68988ea17bb171d385dacbc59b5f07799",
+                "rawSeconds": 2.1526666666666667,
+                "retainedSeconds": 1.9985,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.15416666666666667,
+                "startSeconds": 2.053541666666667
+              },
+              {
+                "text": "I don't need a person's address to ask about a shift.",
+                "speed": 1.02,
+                "pauseAfter": 0,
+                "rawFile": "/workspace/generated_audio/expressive-performance/retake/voice-campaign-kerr-899d4ba5ecfb-phrase-2.wav",
+                "rawSha256": "5f6e11516593f187b8ccd72d5b55888150a44d0a607c52896c1442ba7fecb013",
+                "rawSeconds": 2.707333333333333,
+                "retainedSeconds": 2.5561666666666665,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.15116666666666667,
+                "startSeconds": 4.262041666666667
+              }
+            ],
+            "integratedLufs": -23.5,
+            "truePeakDbtp": -4.67,
+            "durationSeconds": 6.978208333333333,
+            "sampleRate": 24000,
+            "channels": 1,
+            "peak": 0.5799893140792847,
+            "retainedCandidatePath": "qa/editorial/expressive-performance-candidates/retake/voice-campaign-kerr-899d4ba5ecfb.mp3"
+          },
+          {
+            "id": "voice-campaign-kerr-1903a3d3a421",
+            "speaker": "Kerr",
+            "voice": "am_adam",
+            "speed": 0.97,
+            "text": "Then I won't introduce you. The counter can answer for itself. I won't answer for a promise you won't name.",
+            "direction": "A settled refusal: distinct opening no, neutral counter instruction, and a deliberate personal boundary.",
+            "loudnessLufs": -23.5,
+            "segments": [
+              {
+                "text": "Then I won't introduce you.",
+                "speed": 0.91,
+                "pauseAfter": 0.34
+              },
+              {
+                "text": "The counter can answer for itself.",
+                "speed": 0.98,
+                "pauseAfter": 0.44
+              },
+              {
+                "text": "I won't answer for a promise you won't name.",
+                "speed": 0.86,
+                "pauseAfter": 0
+              }
+            ],
+            "previousPath": "public/audio/voice-campaign-kerr-1903a3d3a421.mp3",
+            "previousSha256": "3ef85b7ef5a09e0a6cb7cbbed23127ba032942a0dd1dc019aaa8b68a49567dc5",
+            "sourceGain": 1,
+            "checkpoint": {
+              "id": "refused",
+              "route": "district-breach-denied",
+              "scene": "act2_district_kerr_reply",
+              "choice": "district-leave-kerr"
+            },
+            "sceneText": "\u201cThen I know which depot desk you asked for, not what's in your case. Keep those two things separate.\u201d\n\n\u201cThen I won't introduce you. The counter can answer for itself. I won't answer for a promise you won't name.\u201d\n\nThe counter offers registered sorting work under your own handle. An introduction supplies no payment, recovery, treatment or source. Any earlier breach stays recorded.",
+            "sound": {
+              "mood": "quiet",
+              "district": "street"
+            },
+            "focus": "normal",
+            "candidateFile": "/workspace/generated_audio/expressive-performance/retake/voice-campaign-kerr-1903a3d3a421.mp3",
+            "sha256": "60c41b9cb0077ff793a52ba14559e97e213d4224e1420ee7133597333e0a3073",
+            "bytes": 85292,
+            "sourceFile": "/workspace/generated_audio/expressive-performance/retake/voice-campaign-kerr-1903a3d3a421-master.wav",
+            "sourceSha256": "3470e8f7b1a7520523ad9387e7510eb26e7845725ef3bed7530ca326a3b6a242",
+            "pcmDeliveryFile": "/workspace/generated_audio/expressive-performance/retake/voice-campaign-kerr-1903a3d3a421-pcm.wav",
+            "pcmDeliverySha256": "1178f6fca2547a99ee9b7f3946ad473543b8ce9391366e647bd3d06b77b3305c",
+            "parts": [
+              {
+                "text": "Then I won't introduce you.",
+                "speed": 0.91,
+                "pauseAfter": 0.34,
+                "rawFile": "/workspace/generated_audio/expressive-performance/retake/voice-campaign-kerr-1903a3d3a421-phrase-0.wav",
+                "rawSha256": "469ff6fc37bab48076884591eb008e1bf127ea0ffc896277976e28d0711eacdf",
+                "rawSeconds": 1.78,
+                "retainedSeconds": 1.627375,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.152625,
+                "startSeconds": 0.0
+              },
+              {
+                "text": "The counter can answer for itself.",
+                "speed": 0.98,
+                "pauseAfter": 0.44,
+                "rawFile": "/workspace/generated_audio/expressive-performance/retake/voice-campaign-kerr-1903a3d3a421-phrase-1.wav",
+                "rawSha256": "7519f02d7e6f1fdeaac177bfc1f6685874efd403ca7d8edc5a019bae65513f89",
+                "rawSeconds": 2.132625,
+                "retainedSeconds": 1.989625,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.143,
+                "startSeconds": 1.967375
+              },
+              {
+                "text": "I won't answer for a promise you won't name.",
+                "speed": 0.86,
+                "pauseAfter": 0,
+                "rawFile": "/workspace/generated_audio/expressive-performance/retake/voice-campaign-kerr-1903a3d3a421-phrase-2.wav",
+                "rawSha256": "7416c437273d424d7d1ee0a84f505ab5e04ff115e86698c9cd4a8a506e41c9d8",
+                "rawSeconds": 2.612,
+                "retainedSeconds": 2.453375,
+                "trimmedHeadSeconds": 0.0,
+                "trimmedTailSeconds": 0.158625,
+                "startSeconds": 4.397
+              }
+            ],
+            "integratedLufs": -23.49,
+            "truePeakDbtp": -4.5,
+            "durationSeconds": 7.010375,
+            "sampleRate": 24000,
+            "channels": 1,
+            "peak": 0.5953609943389893,
+            "retainedCandidatePath": "qa/editorial/expressive-performance-candidates/retake/voice-campaign-kerr-1903a3d3a421.mp3"
+          }
+        ]
+      },
+      "transcripts": {
+        "model": "faster-whisper base.en",
+        "method": "Unprompted CPU int8, beam5, no initial prompt, no conditioning on previous text; lowercase/apostrophe/punctuation normalization only",
+        "lines": [
+          {
+            "id": "voice-campaign-kerr-899d4ba5ecfb",
+            "text": "You showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.",
+            "path": "/workspace/generated_audio/expressive-performance/retake/voice-campaign-kerr-899d4ba5ecfb.mp3",
+            "transcription": "You showed me the sore summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.",
+            "exactNormalizedWords": false,
+            "sha256": "8dba184dff263096ed09004afdb2bcf8554a5a3de82a1f83c7afd4e62beed490",
+            "durationSeconds": 6.97825,
+            "words": [
+              {
+                "word": " You",
+                "start": 0.0,
+                "end": 0.2
+              },
+              {
+                "word": " showed",
+                "start": 0.2,
+                "end": 0.4
+              },
+              {
+                "word": " me",
+                "start": 0.4,
+                "end": 0.64
+              },
+              {
+                "word": " the",
+                "start": 0.64,
+                "end": 0.76
+              },
+              {
+                "word": " sore",
+                "start": 0.76,
+                "end": 0.94
+              },
+              {
+                "word": " summary.",
+                "start": 0.94,
+                "end": 1.48
+              },
+              {
+                "word": " Leave",
+                "start": 2.26,
+                "end": 2.32
+              },
+              {
+                "word": " the",
+                "start": 2.32,
+                "end": 2.52
+              },
+              {
+                "word": " witness",
+                "start": 2.52,
+                "end": 2.78
+              },
+              {
+                "word": " out",
+                "start": 2.78,
+                "end": 3.12
+              },
+              {
+                "word": " of",
+                "start": 3.12,
+                "end": 3.22
+              },
+              {
+                "word": " my",
+                "start": 3.22,
+                "end": 3.36
+              },
+              {
+                "word": " errands.",
+                "start": 3.36,
+                "end": 3.88
+              },
+              {
+                "word": " I",
+                "start": 4.34,
+                "end": 4.4
+              },
+              {
+                "word": " don't",
+                "start": 4.4,
+                "end": 4.6
+              },
+              {
+                "word": " need",
+                "start": 4.6,
+                "end": 4.7
+              },
+              {
+                "word": " a",
+                "start": 4.7,
+                "end": 4.78
+              },
+              {
+                "word": " person's",
+                "start": 4.78,
+                "end": 5.24
+              },
+              {
+                "word": " address",
+                "start": 5.24,
+                "end": 5.46
+              },
+              {
+                "word": " to",
+                "start": 5.46,
+                "end": 5.74
+              },
+              {
+                "word": " ask",
+                "start": 5.74,
+                "end": 5.92
+              },
+              {
+                "word": " about",
+                "start": 5.92,
+                "end": 6.18
+              },
+              {
+                "word": " a",
+                "start": 6.18,
+                "end": 6.32
+              },
+              {
+                "word": " shift.",
+                "start": 6.32,
+                "end": 6.58
+              }
+            ]
+          },
+          {
+            "id": "voice-campaign-kerr-1903a3d3a421",
+            "text": "Then I won't introduce you. The counter can answer for itself. I won't answer for a promise you won't name.",
+            "path": "/workspace/generated_audio/expressive-performance/retake/voice-campaign-kerr-1903a3d3a421.mp3",
+            "transcription": "Then I won't introduce you. The counter can answer for itself. I won't answer for a promise you won't name.",
+            "exactNormalizedWords": true,
+            "sha256": "60c41b9cb0077ff793a52ba14559e97e213d4224e1420ee7133597333e0a3073",
+            "durationSeconds": 7.010375,
+            "words": [
+              {
+                "word": " Then",
+                "start": 0.0,
+                "end": 0.24
+              },
+              {
+                "word": " I",
+                "start": 0.24,
+                "end": 0.42
+              },
+              {
+                "word": " won't",
+                "start": 0.42,
+                "end": 0.74
+              },
+              {
+                "word": " introduce",
+                "start": 0.74,
+                "end": 1.08
+              },
+              {
+                "word": " you.",
+                "start": 1.08,
+                "end": 1.42
+              },
+              {
+                "word": " The",
+                "start": 2.1,
+                "end": 2.12
+              },
+              {
+                "word": " counter",
+                "start": 2.12,
+                "end": 2.32
+              },
+              {
+                "word": " can",
+                "start": 2.32,
+                "end": 2.68
+              },
+              {
+                "word": " answer",
+                "start": 2.68,
+                "end": 3.08
+              },
+              {
+                "word": " for",
+                "start": 3.08,
+                "end": 3.3
+              },
+              {
+                "word": " itself.",
+                "start": 3.3,
+                "end": 3.52
+              },
+              {
+                "word": " I",
+                "start": 4.48,
+                "end": 4.58
+              },
+              {
+                "word": " won't",
+                "start": 4.58,
+                "end": 4.84
+              },
+              {
+                "word": " answer",
+                "start": 4.84,
+                "end": 5.12
+              },
+              {
+                "word": " for",
+                "start": 5.12,
+                "end": 5.34
+              },
+              {
+                "word": " a",
+                "start": 5.34,
+                "end": 5.4
+              },
+              {
+                "word": " promise",
+                "start": 5.4,
+                "end": 5.78
+              },
+              {
+                "word": " you",
+                "start": 5.78,
+                "end": 6.02
+              },
+              {
+                "word": " won't",
+                "start": 6.02,
+                "end": 6.3
+              },
+              {
+                "word": " name.",
+                "start": 6.3,
+                "end": 6.5
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "rejectedFindings": [
+    "Initial uniform cadence is superseded by distinct question/boundary/introduction intentions; initial source-summary and refusal transcripts mismatch.",
+    "Directed source summary has extra trailing lift in ASR; directed refusal loses a. Both retained unchanged as observed.",
+    "Same-word summary retake transcribes sore summary; keep the established original rather than force a replacement.",
+    "Original private-inquiry ASR adds trailing words; do not erase that observation or call it audible extra speech. The accepted private-inquiry alternative matches without a prompt."
+  ],
+  "retainedIds": [
+    "voice-campaign-kerr-899d4ba5ecfb"
+  ],
+  "acceptedIds": [
+    "voice-campaign-kerr-10b6e71a11eb",
+    "voice-campaign-kerr-e8022742ad26",
+    "voice-campaign-kerr-f001a675c451",
+    "voice-campaign-kerr-f829eb68f234",
+    "voice-campaign-kerr-1903a3d3a421"
+  ],
+  "levelDisclosure": "Original six depot MP3s approximately-20LUFS; selected alternatives-23.5LUFS. Same source gain1 and user/bus settings; intentionally not a level-matched experiment. Original fallback remains louder. Summary remains the original-20LUFS recording. No expressive score awarded for attenuation.",
+  "asrModel": {
+    "name": "Systran/faster-whisper-base.en",
+    "revision": "3d3d5dee26484f91867d81cb899cfcf72b96be6c",
+    "files": [
+      {
+        "name": "config.json",
+        "sha256": "f3bc3821e9fc76a27bae538e11ae5b677dcdd352b4600429ce7951d398569aeb"
+      },
+      {
+        "name": "model.bin",
+        "sha256": "2a166925539a16005f14ff328359f9b9adb9dc4fb631bb3b227526862e93e2ef"
+      },
+      {
+        "name": "tokenizer.json",
+        "sha256": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df"
+      },
+      {
+        "name": "vocabulary.txt",
+        "sha256": "ff77588746d3a2595d32ab5b69ffd7b95ce2441ac57533cb66fc3eb575a115cf"
+      }
+    ]
+  },
+  "asrDriver": {
+    "path": "qa/editorial/expressive-performance-asr-driver.py",
+    "sha256": "975f0fbf78c13408b1c90771e49bfd512b903fa5c476f90fcd685ec02ee9a132",
+    "reusableEquivalent": "scripts/transcribe-connected-voices.py"
+  }
+}

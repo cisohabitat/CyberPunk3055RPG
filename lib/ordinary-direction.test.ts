@@ -1,3 +1,4 @@
+import { isConnectedPerformanceFile } from "../qa/production/connected-performance-media";
 import assert from 'node:assert/strict';
 import { it } from 'node:test';
 import { createHash } from 'node:crypto';
@@ -8,7 +9,7 @@ import { sceneIllustration, portraitArt } from './art';
 import { ORDINARY_DIRECTIONS, ordinaryDirection } from './ordinary-direction';
 import baseline from '../qa/editorial/ordinary-direction-baseline.json';
 import manifest from '../qa/media/ordinary-scene-direction.json';
-const files=(d:string):string[]=>readdirSync(d,{withFileTypes:true}).flatMap(r=>r.isDirectory()?files(`${d}/${r.name}`):[`${d}/${r.name}`]);
+const files=(d:string):string[]=>readdirSync(d,{withFileTypes:true}).flatMap(r=>r.isDirectory()?files(`${d}/${r.name}`):[`${d}/${r.name}`]).filter(p=>!isConnectedPerformanceFile(p));
 const hash=(b:string|Buffer)=>createHash('sha256').update(b).digest('hex');
 it('preserves all241 campaigns,17281 full visits,837 media and every preceding manifest exactly',()=>{
  assert.equal(hash(readFileSync('qa/editorial/ordinary-direction-baseline.json')),'9d198af6fdb9684dbfa54db8830da1b2501645793cb6d3982ce71414e4d0e7ef');

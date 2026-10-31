@@ -1,0 +1,238 @@
+[
+  {
+    "id": "voice-campaign-kerr-10b6e71a11eb",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.97,
+    "text": "A depot reference points to a desk. It doesn't tell me what you kept in your coat. What are you asking me to carry?",
+    "direction": "A practical request rather than suspicion: connect the desk/coat distinction, then leave room for an answer.",
+    "loudnessLufs": -23.5,
+    "previousPath": "public/audio/voice-campaign-kerr-10b6e71a11eb.mp3",
+    "previousSha256": "512593cc157650d5a50be2f01fde4159063ab9c88b10237848f34f9987a41176",
+    "sourceGain": 1,
+    "checkpoint": {
+      "id": "entry",
+      "route": "district-public-work",
+      "scene": "act2_district_kerr",
+      "choice": "district-tell-kerr"
+    },
+    "sceneText": "\u201cA depot reference points to a desk. It doesn't tell me what you kept in your coat. What are you asking me to carry?\u201d\n\nThe posted depot procedure is public. Your case notes are not. If you show Kerr the summary, use the same source scope you gave Edda and include any docket showing a breach of his private collection terms. No witness material will be shared. You can keep the case closed.",
+    "sound": {
+      "mood": "quiet",
+      "district": "street"
+    },
+    "focus": "normal",
+    "segments": [
+      {
+        "text": "A depot reference points to a desk.",
+        "speed": 0.99,
+        "pauseAfter": 0.17
+      },
+      {
+        "text": "It doesn't tell me what you kept in your coat.",
+        "speed": 0.98,
+        "pauseAfter": 0.32
+      },
+      {
+        "text": "What are you asking me to carry?",
+        "speed": 0.94,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-kerr-899d4ba5ecfb",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.97,
+    "text": "You showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.",
+    "direction": "Acknowledge the disclosure, then give the witness boundary separate weight; keep the shift request matter-of-fact.",
+    "loudnessLufs": -23.5,
+    "previousPath": "public/audio/voice-campaign-kerr-899d4ba5ecfb.mp3",
+    "previousSha256": "efc7a1dfac22ba92865fc4a7725233f4d4312576b99cb82a7e02ddcaf33b617e",
+    "sourceGain": 1,
+    "checkpoint": {
+      "id": "shared-breach",
+      "route": "district-public-work",
+      "scene": "act2_district_kerr_reply",
+      "choice": "district-kerr-acknowledge"
+    },
+    "sceneText": "\u201cYou showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.\u201d\n\n\u201cMy name went into their register after you promised it wouldn't. Say that before you ask me for another introduction.\u201d\n\nThe counter offers registered sorting work under your own handle. An introduction supplies no payment, recovery, treatment or source. Any earlier breach stays recorded.",
+    "sound": {
+      "mood": "quiet",
+      "district": "street"
+    },
+    "focus": "normal",
+    "segments": [
+      {
+        "text": "You showed me the source summary.",
+        "speed": 0.91,
+        "pauseAfter": 0.36
+      },
+      {
+        "text": "Leave the witness out of my errands.",
+        "speed": 0.94,
+        "pauseAfter": 0.21
+      },
+      {
+        "text": "I don't need a person's address to ask about a shift.",
+        "speed": 1.02,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-kerr-e8022742ad26",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.97,
+    "text": "My name went into their register after you promised it wouldn't. Say that before you ask me for another introduction.",
+    "direction": "Personal hurt held in check: keep the broken promise together, then require acknowledgement without shouting.",
+    "loudnessLufs": -23.5,
+    "previousPath": "public/audio/voice-campaign-kerr-e8022742ad26.mp3",
+    "previousSha256": "1dc1eb6e6e2f1203c290800caedda3a1ea0a5cffa3b59b628f449492f8d5f090",
+    "sourceGain": 1,
+    "checkpoint": {
+      "id": "shared-breach",
+      "route": "district-public-work",
+      "scene": "act2_district_kerr_reply",
+      "choice": "district-kerr-acknowledge"
+    },
+    "sceneText": "\u201cYou showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.\u201d\n\n\u201cMy name went into their register after you promised it wouldn't. Say that before you ask me for another introduction.\u201d\n\nThe counter offers registered sorting work under your own handle. An introduction supplies no payment, recovery, treatment or source. Any earlier breach stays recorded.",
+    "sound": {
+      "mood": "quiet",
+      "district": "street"
+    },
+    "focus": "normal",
+    "segments": [
+      {
+        "text": "My name went into their register after you promised it wouldn't.",
+        "speed": 0.92,
+        "pauseAfter": 0.48
+      },
+      {
+        "text": "Say that before you ask me for another introduction.",
+        "speed": 0.96,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-kerr-f001a675c451",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.97,
+    "text": "Keep the docket beside the promise. Use your own name for anything you sign. Mine stays out of it.",
+    "direction": "An actionable boundary, with the final refusal of borrowed identity distinct from permission to sign.",
+    "loudnessLufs": -23.5,
+    "previousPath": "public/audio/voice-campaign-kerr-f001a675c451.mp3",
+    "previousSha256": "c9cdfb49162cff0a08bb2ab7cddca6a5a1936059832c3e7dbbdb3076daff39c9",
+    "sourceGain": 1,
+    "checkpoint": {
+      "id": "acknowledged",
+      "route": "district-public-work",
+      "scene": "act2_district_kerr_reply",
+      "choice": "district-kerr-introduce"
+    },
+    "sceneText": "\u201cYou showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.\u201d\n\n\u201cKeep the docket beside the promise. Use your own name for anything you sign. Mine stays out of it.\u201d\n\nThe counter offers registered sorting work under your own handle. An introduction supplies no payment, recovery, treatment or source. Any earlier breach stays recorded.",
+    "sound": {
+      "mood": "quiet",
+      "district": "street"
+    },
+    "focus": "normal",
+    "segments": [
+      {
+        "text": "Keep the docket beside the promise.",
+        "speed": 0.98,
+        "pauseAfter": 0.22
+      },
+      {
+        "text": "Use your own name for anything you sign.",
+        "speed": 0.96,
+        "pauseAfter": 0.42
+      },
+      {
+        "text": "Mine stays out of it.",
+        "speed": 0.91,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-kerr-f829eb68f234",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.97,
+    "text": "Then I know which depot desk you asked for, not what's in your case. Keep those two things separate.",
+    "direction": "Clarify the limit of knowledge, then a short practical instruction; no accusation.",
+    "loudnessLufs": -23.5,
+    "previousPath": "public/audio/voice-campaign-kerr-f829eb68f234.mp3",
+    "previousSha256": "181bdff21515e3dd7244fc8d2346fdb3125ef84361a6abc88079012fc96d20dd",
+    "sourceGain": 1,
+    "checkpoint": {
+      "id": "private",
+      "route": "district-private-rest",
+      "scene": "act2_district_kerr_reply",
+      "choice": "district-kerr-introduce"
+    },
+    "sceneText": "\u201cThen I know which depot desk you asked for, not what's in your case. Keep those two things separate.\u201d\n\nHe offers an introduction about your own task. It is not a promise to remove anyone from the recipient register.\n\nThe service desk offers one short rest appointment through the private query. An introduction supplies no payment, recovery, treatment or source. Any earlier breach stays recorded.",
+    "sound": {
+      "mood": "quiet",
+      "district": "street"
+    },
+    "focus": "normal",
+    "segments": [
+      {
+        "text": "Then I know which depot desk you asked for, not what's in your case.",
+        "speed": 0.97,
+        "pauseAfter": 0.26
+      },
+      {
+        "text": "Keep those two things separate.",
+        "speed": 0.96,
+        "pauseAfter": 0
+      }
+    ]
+  },
+  {
+    "id": "voice-campaign-kerr-1903a3d3a421",
+    "speaker": "Kerr",
+    "voice": "am_adam",
+    "speed": 0.97,
+    "text": "Then I won't introduce you. The counter can answer for itself. I won't answer for a promise you won't name.",
+    "direction": "A settled refusal: distinct opening no, neutral counter instruction, and a deliberate personal boundary.",
+    "loudnessLufs": -23.5,
+    "segments": [
+      {
+        "text": "Then I won't introduce you.",
+        "speed": 0.91,
+        "pauseAfter": 0.34
+      },
+      {
+        "text": "The counter can answer for itself.",
+        "speed": 0.98,
+        "pauseAfter": 0.44
+      },
+      {
+        "text": "I won't answer for a promise you won't name.",
+        "speed": 0.86,
+        "pauseAfter": 0
+      }
+    ],
+    "previousPath": "public/audio/voice-campaign-kerr-1903a3d3a421.mp3",
+    "previousSha256": "3ef85b7ef5a09e0a6cb7cbbed23127ba032942a0dd1dc019aaa8b68a49567dc5",
+    "sourceGain": 1,
+    "checkpoint": {
+      "id": "refused",
+      "route": "district-breach-denied",
+      "scene": "act2_district_kerr_reply",
+      "choice": "district-leave-kerr"
+    },
+    "sceneText": "\u201cThen I know which depot desk you asked for, not what's in your case. Keep those two things separate.\u201d\n\n\u201cThen I won't introduce you. The counter can answer for itself. I won't answer for a promise you won't name.\u201d\n\nThe counter offers registered sorting work under your own handle. An introduction supplies no payment, recovery, treatment or source. Any earlier breach stays recorded.",
+    "sound": {
+      "mood": "quiet",
+      "district": "street"
+    },
+    "focus": "normal"
+  }
+]

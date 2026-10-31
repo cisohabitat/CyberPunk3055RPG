@@ -1,0 +1,47 @@
+{
+  "firstRun": {
+    "cases": 32,
+    "passed": 24,
+    "failed": 8,
+    "retries": 0,
+    "workers": 4,
+    "record": "qa/editorial/expressive-performance-browser-failure/first-run.log",
+    "error": "Second-quote assertion used the default5s locator timeout while the preceding real line was still speaking; complete native audio was not skipped.",
+    "correction": "Wait for each preceding natural disposal before checking next mark, retaining quote/actor checks,20s natural completion bound and30s case limit.",
+    "traces": "Original eight binary traces retained under /tmp/saint-phase14/browser-results, not duplicated into Git."
+  },
+  "summaryOriginal": "Retained after both directed and retake ASR mismatch; never remove the observed trailing token to pass.",
+  "retakeRefusal": "Same words and actor, slower last phrase; raw mismatch and successful retake both retained.",
+  "concurrentWebkit": {
+    "status": "Interrupted after multiple30s case timeouts while seven additional campaign browsers were active; not counted as a passing suite.",
+    "log": "qa/editorial/expressive-performance-webkit-concurrent/run.log",
+    "contexts": 6,
+    "traces": "/tmp/saint-phase14/webkit-browser-results; binary traces retained locally",
+    "followup": "Run isolated after complete campaign workers finish; keep four original workers,30s cases and zero retries. Do not infer infrastructure cause until this unchanged run completes."
+  },
+  "supersededCampaigns": {
+    "paths": [
+      "qa/editorial/expressive-performance-superseded/deferred.json",
+      "qa/editorial/expressive-performance-superseded/denied.json"
+    ],
+    "reason": "QA source inventory gained explicit connected map/manifest hashes while these two earlier runs were in progress. Retain actual raw metadata; repeat them with current inventory. No runtime change or relabeling."
+  },
+  "bindingGuard": {
+    "reason": "Tie every accepted candidate text/speaker directly to its current authored binding by id, in addition to active-stage context and ASR checks.",
+    "productionChange": false,
+    "preliminaryAcceptance": "qa/editorial/expressive-performance-preliminary-acceptance.json",
+    "preliminarySourceFingerprint": "43db17ebe2c0d7cdecd318cd5f3ca6b95697674392dca8b5f530e369211c22a1",
+    "finalSourceFingerprint": "5606ffc2b6506722fb3ba775926692c60bc7f611e2279a88661c90d4b7afc336",
+    "rawReports": "Retained unchanged with actual revision/dirty metadata and every tested source hash revalidated."
+  },
+  "isolatedWebkit": {
+    "cases": 69,
+    "passed": 69,
+    "failed": 0,
+    "retries": 0,
+    "workers": 4,
+    "caseSeconds": 30,
+    "elapsed": "3.2m",
+    "method": "Unchanged browser cases after all seven additional campaign browsers finished; same actual headless WPE binary and launch wrapper. Keep preceding concurrent failures separate; isolation supports a shared-load explanation without a runtime workaround."
+  }
+}

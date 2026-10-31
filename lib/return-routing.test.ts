@@ -1,8 +1,9 @@
+import { isConnectedPerformanceFile } from "../qa/production/connected-performance-media";
 import assert from 'node:assert/strict';import{it}from'node:test';import{readFileSync,readdirSync}from'node:fs';import{createHash}from'node:crypto';
 import{createCharacter,getScene,presentChoices,commitChoice,sceneText}from'./engine';import{replayCampaign,type ReplaySpec}from'./story-replay';import{routeCheckpoint}from'../qa/production/route-checkpoint';import{importRun,exportRun}from'./vault';
 import{routingOutcome,routingPrepared,routingRead,routingSceneAvailable,ROUTING_QUOTES,ROUTING_SCENES,ROUTING_RECORDS}from'./return-routing';import{districtRemaining}from'./district-response';import{sceneIllustration,portraitArt}from'./art';import{visibleCampaignDialogue}from'./campaign-dialogue';import{objectives}from'./objectives';import{sceneSoundPlan}from'./sound';
 import phase from'../qa/media/return-routing.json';import bindings from'../qa/media/return-routing-dialogue-bindings.json';import delivery from'../qa/media/return-routing-dialogue-provenance.json';import transcripts from'../qa/media/return-routing-dialogue-transcripts.json';import art from'../qa/media/scene-art.json';import previousArt from'../qa/media/return-routing-preceding-scene-art.json';
-const hash=(b:string|Buffer)=>createHash('sha256').update(b).digest('hex');const files=(d:string):string[]=>readdirSync(d,{withFileTypes:true}).flatMap(r=>r.isDirectory()?files(`${d}/${r.name}`):[`${d}/${r.name}`]);
+const hash=(b:string|Buffer)=>createHash('sha256').update(b).digest('hex');const files=(d:string):string[]=>readdirSync(d,{withFileTypes:true}).flatMap(r=>r.isDirectory()?files(`${d}/${r.name}`):[`${d}/${r.name}`]).filter(p=>!isConnectedPerformanceFile(p));
 const load=(n:string)=>JSON.parse(readFileSync(`qa/routes/return-routing/${n}.json`,'utf8'))as ReplaySpec;
 const checkpoint=(n:string,id:string,choice?:string)=>routeCheckpoint('return-routing/'+n,id,choice);
 const take=(s:ReturnType<typeof createCharacter>,id:string)=>{const c=presentChoices(s,getScene(s.sceneId)).find(c=>c.id===id&&c.enabled);assert.ok(c,`${s.sceneId}/${id}`);return commitChoice(s,c).state;};

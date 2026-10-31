@@ -1,3 +1,4 @@
+import { isConnectedPerformanceFile } from "../qa/production/connected-performance-media";
 import routing from "../qa/media/return-routing.json";
 import freight from "../qa/media/freight-craft.json";
 import assert from "node:assert/strict";
@@ -16,7 +17,7 @@ import review from "../qa/media/aaa-performance-review.json";
 import precedingAsr from "../qa/media/emotional-payoff-dialogue-transcripts.json";
 import audition from "../qa/media/aaa-performance-audition.json";
 const hash = (file: string) => createHash("sha256").update(readFileSync(file)).digest("hex");
-const files = (dir: string): string[] => readdirSync(dir, { withFileTypes: true }).flatMap(row => row.isDirectory() ? files(`${dir}/${row.name}`) : [`${dir}/${row.name}`]).filter(p => !routing.newMedia.includes(p) && !routing.newRoutes.includes(p.replace(/^qa\/routes\//, "")));
+const files = (dir: string): string[] => readdirSync(dir, { withFileTypes: true }).flatMap(row => row.isDirectory() ? files(`${dir}/${row.name}`) : [`${dir}/${row.name}`]).filter(p => !isConnectedPerformanceFile(p) && !routing.newMedia.includes(p) && !routing.newRoutes.includes(p.replace(/^qa\/routes\//, "")));
 const words = (value: string) => value.toLowerCase().replace(/[’']/g, "").match(/[a-z0-9]+/g) ?? [];
 it("retains all807 existing art/audio deliveries and the independently captured219-campaign contract", () => {
   assert.equal(phase.baseline.routes, 219); assert.equal(phase.baseline.visits, 15496);

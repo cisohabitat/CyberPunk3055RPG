@@ -1,0 +1,293 @@
+
+Running 69 tests using 4 workers
+
+(node:190234) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:190232) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:190240) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:190233) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   4 [webkit] › tests/connected-performance.spec.ts:23:70 › connected private: exact complete automatic conversation over actual beds at 390px (16.4s)
+  ✓   2 [webkit] › tests/connected-performance.spec.ts:23:70 › connected entry: exact complete automatic conversation over actual beds at 390px (19.3s)
+  ✓   1 [webkit] › tests/connected-performance.spec.ts:23:70 › connected acknowledged: exact complete automatic conversation over actual beds at 390px (24.9s)
+  ✓   3 [webkit] › tests/connected-performance.spec.ts:23:70 › connected shared-breach: exact complete automatic conversation over actual beds at 390px (24.2s)
+  ✓   5 [webkit] › tests/connected-performance.spec.ts:23:70 › connected known-breach: exact complete automatic conversation over actual beds at 390px (21.6s)
+  ✓   6 [webkit] › tests/connected-performance.spec.ts:23:70 › connected refused: exact complete automatic conversation over actual beds at 390px (27.8s)
+  ✓   7 [webkit] › tests/connected-performance.spec.ts:23:70 › connected entry: exact complete automatic conversation over actual beds at 1440px (24.5s)
+  ✘   8 [webkit] › tests/connected-performance.spec.ts:23:70 › connected shared-breach: exact complete automatic conversation over actual beds at 1440px (32.8s)
+(node:191597) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   9 [webkit] › tests/connected-performance.spec.ts:23:70 › connected acknowledged: exact complete automatic conversation over actual beds at 1440px (24.2s)
+  ✓  10 [webkit] › tests/connected-performance.spec.ts:23:70 › connected private: exact complete automatic conversation over actual beds at 1440px (22.0s)
+  ✓  11 [webkit] › tests/connected-performance.spec.ts:23:70 › connected known-breach: exact complete automatic conversation over actual beds at 1440px (26.9s)
+  ✓  13 [webkit] › tests/connected-performance.spec.ts:31:39 › connected original fallback once: voice-campaign-kerr-10b6e71a11eb (15.6s)
+  ✓  12 [webkit] › tests/connected-performance.spec.ts:23:70 › connected refused: exact complete automatic conversation over actual beds at 1440px (25.8s)
+  ✓  14 [webkit] › tests/connected-performance.spec.ts:31:39 › connected original fallback once: voice-campaign-kerr-e8022742ad26 (22.3s)
+  ✓  16 [webkit] › tests/connected-performance.spec.ts:31:39 › connected original fallback once: voice-campaign-kerr-f829eb68f234 (18.0s)
+  ✓  15 [webkit] › tests/connected-performance.spec.ts:31:39 › connected original fallback once: voice-campaign-kerr-f001a675c451 (25.7s)
+  ✓  18 [webkit] › tests/connected-performance.spec.ts:34:74 › connected undecodable alternative: entry (17.7s)
+  ✓  17 [webkit] › tests/connected-performance.spec.ts:31:39 › connected original fallback once: voice-campaign-kerr-1903a3d3a421 (23.2s)
+  ✓  20 [webkit] › tests/connected-performance.spec.ts:37:5 › connected missing both retains readable story, save and canonical exit (12.2s)
+  ✓  19 [webkit] › tests/connected-performance.spec.ts:34:74 › connected undecodable alternative: refused (24.6s)
+  ✓  21 [webkit] › tests/connected-performance.spec.ts:40:41 › connected paragraph/manual/text-only: entry (16.0s)
+  ✓  22 [webkit] › tests/connected-performance.spec.ts:40:41 › connected paragraph/manual/text-only: shared-breach (18.1s)
+  ✓  23 [webkit] › tests/connected-performance.spec.ts:40:41 › connected paragraph/manual/text-only: acknowledged (16.5s)
+  ✓  27 [webkit] › tests/connected-performance.spec.ts:43:61 › connected respects sound=false, voices=70 (9.8s)
+  ✓  24 [webkit] › tests/connected-performance.spec.ts:40:41 › connected paragraph/manual/text-only: private (20.9s)
+  ✓  25 [webkit] › tests/connected-performance.spec.ts:40:41 › connected paragraph/manual/text-only: known-breach (17.5s)
+  ✓  26 [webkit] › tests/connected-performance.spec.ts:40:41 › connected paragraph/manual/text-only: refused (17.4s)
+  ✓  28 [webkit] › tests/connected-performance.spec.ts:43:61 › connected respects sound=true, voices=0 (11.1s)
+  ✓  29 [webkit] › tests/connected-performance.spec.ts:44:39 › connected Stop cancels late alternative (14.4s)
+  ✓  30 [webkit] › tests/connected-performance.spec.ts:44:39 › connected Stop cancels late original (14.6s)
+  ✓  31 [webkit] › tests/connected-performance.spec.ts:48:39 › connected replay uses settled logical cache, fallback=false (29.2s)
+  ✓  32 [webkit] › tests/connected-performance.spec.ts:48:39 › connected replay uses settled logical cache, fallback=true (27.7s)
+  ✓  33 [webkit] › tests/ordinary-direction.spec.ts:22:74 › ordinary entry: unchanged decisions, one deliberate view and legal exit at 320px (23.7s)
+  ✓  34 [webkit] › tests/ordinary-direction.spec.ts:22:74 › ordinary shared-breach: unchanged decisions, one deliberate view and legal exit at 320px (27.7s)
+  ✓  35 [webkit] › tests/ordinary-direction.spec.ts:22:74 › ordinary acknowledged: unchanged decisions, one deliberate view and legal exit at 320px (24.0s)
+  ✓  37 [webkit] › tests/ordinary-direction.spec.ts:22:74 › ordinary known-breach: unchanged decisions, one deliberate view and legal exit at 320px (22.0s)
+  ✓  36 [webkit] › tests/ordinary-direction.spec.ts:22:74 › ordinary private: unchanged decisions, one deliberate view and legal exit at 320px (27.3s)
+  ✓  38 [webkit] › tests/ordinary-direction.spec.ts:22:74 › ordinary refused: unchanged decisions, one deliberate view and legal exit at 320px (24.4s)
+  ✓  39 [webkit] › tests/ordinary-direction.spec.ts:22:74 › ordinary entry: unchanged decisions, one deliberate view and legal exit at 390px (24.9s)
+  ✓  40 [webkit] › tests/ordinary-direction.spec.ts:22:74 › ordinary shared-breach: unchanged decisions, one deliberate view and legal exit at 390px (27.5s)
+  ✓  41 [webkit] › tests/ordinary-direction.spec.ts:22:74 › ordinary acknowledged: unchanged decisions, one deliberate view and legal exit at 390px (26.1s)
+  ✓  42 [webkit] › tests/ordinary-direction.spec.ts:22:74 › ordinary private: unchanged decisions, one deliberate view and legal exit at 390px (24.1s)
+  ✓  43 [webkit] › tests/ordinary-direction.spec.ts:22:74 › ordinary known-breach: unchanged decisions, one deliberate view and legal exit at 390px (20.6s)
+  ✓  44 [webkit] › tests/ordinary-direction.spec.ts:22:74 › ordinary refused: unchanged decisions, one deliberate view and legal exit at 390px (25.0s)
+  ✓  46 [webkit] › tests/ordinary-direction.spec.ts:22:74 › ordinary shared-breach: unchanged decisions, one deliberate view and legal exit at 1440px (29.7s)
+  ✘  45 [webkit] › tests/ordinary-direction.spec.ts:22:74 › ordinary entry: unchanged decisions, one deliberate view and legal exit at 1440px (32.5s)
+(node:195540) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  47 [webkit] › tests/ordinary-direction.spec.ts:22:74 › ordinary acknowledged: unchanged decisions, one deliberate view and legal exit at 1440px (30.7s)
+  ✘  48 [webkit] › tests/ordinary-direction.spec.ts:22:74 › ordinary private: unchanged decisions, one deliberate view and legal exit at 1440px (32.1s)
+(node:195976) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  49 [webkit] › tests/ordinary-direction.spec.ts:22:74 › ordinary known-breach: unchanged decisions, one deliberate view and legal exit at 1440px (30.0s)
+  ✓  51 [webkit] › tests/ordinary-direction.spec.ts:39:36 › ordinary exact Kerr voice survives views: voice-campaign-kerr-10b6e71a11eb (19.2s)
+  ✓  50 [webkit] › tests/ordinary-direction.spec.ts:22:74 › ordinary refused: unchanged decisions, one deliberate view and legal exit at 1440px (30.3s)
+  ✘  55 [webkit] › tests/ordinary-direction.spec.ts:39:36 › ordinary exact Kerr voice survives views: voice-campaign-kerr-f829eb68f234 (3.9s)
+  ✘  53 [webkit] › tests/ordinary-direction.spec.ts:39:36 › ordinary exact Kerr voice survives views: voice-campaign-kerr-e8022742ad26 (11.5s)
+  ✘  52 [webkit] › tests/ordinary-direction.spec.ts:39:36 › ordinary exact Kerr voice survives views: voice-campaign-kerr-899d4ba5ecfb (14.1s)
+  ✘  54 [webkit] › tests/ordinary-direction.spec.ts:39:36 › ordinary exact Kerr voice survives views: voice-campaign-kerr-f001a675c451 (7.9s)
+
+
+  1) [webkit] › tests/connected-performance.spec.ts:23:70 › connected shared-breach: exact complete automatic conversation over actual beds at 1440px 
+
+    Error: Test timeout of 30000ms exceeded
+
+      20 | }
+      21 | function observe(p:Page){const requests:string[]=[],errors:string[]=[];p.on('request',r=>{const path=new URL(r.url()).pathname;if(path.includes('/voice-'))requests.push(path);});p.on('pageerror',e=>errors.push(e.message));return{requests,errors};}
+    > 22 | async function complete(p:Page,s:GameState){const files=linesFor(s).map(l=>l.id+'.mp3');await expect.poll(async()=>(await audio(p)).disposed.filter(f=>f.startsWith('voice-')),{timeout:20_000}).toEqual(files);const a=await audio(p);expect(a.started.filter(f=>f.startsWith('voice-'))).toEqual(files);expect(a.stoppedSources.filter(f=>f.startsWith('voice-'))).toEqual([]);expect(a.voiceLevels).toEqual(files.map(file=>({file,gain:1})));}
+         |                                                                                                                                                                                                  ^
+      23 | for(const width of[390,1440])for(const c of ORDINARY_CHECKPOINTS)test(`connected ${c.id}: exact complete automatic conversation over actual beds at ${width}px`,async({page})=>{
+      24 |  const s=stateFor(c),o=observe(page),lines=linesFor(s);await open(page,s,{width});const before=await saved(page);
+      25 |  for(const l of lines){await expect(page.getByTestId('spoken-quote')).toContainText(l.text);await expect(page.getByTestId('spoken-quote')).toHaveAttribute('data-speaker','Kerr');await expect(page.locator('.portrait-frame[data-speaking="true"]')).toHaveAttribute('data-speaker','Kerr');await expect.poll(async()=>(await audio(page)).disposed,{timeout:20_000}).toContain(l.id+'.mp3');}
+        at complete (/workspace/saint-shard-fix/tests/connected-performance.spec.ts:22:194)
+        at /workspace/saint-shard-fix/tests/connected-performance.spec.ts:26:8
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../tmp/saint-phase14/webkit-browser-results/connected-performance-conn-6bf2e--over-actual-beds-at-1440px-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../tmp/saint-phase14/webkit-browser-results/connected-performance-conn-6bf2e--over-actual-beds-at-1440px-webkit/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../tmp/saint-phase14/webkit-browser-results/connected-performance-conn-6bf2e--over-actual-beds-at-1440px-webkit/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../tmp/saint-phase14/webkit-browser-results/connected-performance-conn-6bf2e--over-actual-beds-at-1440px-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [webkit] › tests/ordinary-direction.spec.ts:22:74 › ordinary entry: unchanged decisions, one deliberate view and legal exit at 1440px 
+
+    Test timeout of 30000ms exceeded.
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../tmp/saint-phase14/webkit-browser-results/ordinary-direction-ordinar-7a8c8-ew-and-legal-exit-at-1440px-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../tmp/saint-phase14/webkit-browser-results/ordinary-direction-ordinar-7a8c8-ew-and-legal-exit-at-1440px-webkit/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../tmp/saint-phase14/webkit-browser-results/ordinary-direction-ordinar-7a8c8-ew-and-legal-exit-at-1440px-webkit/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../tmp/saint-phase14/webkit-browser-results/ordinary-direction-ordinar-7a8c8-ew-and-legal-exit-at-1440px-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [webkit] › tests/ordinary-direction.spec.ts:22:74 › ordinary private: unchanged decisions, one deliberate view and legal exit at 1440px 
+
+    Test timeout of 30000ms exceeded.
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../tmp/saint-phase14/webkit-browser-results/ordinary-direction-ordinar-775d5-ew-and-legal-exit-at-1440px-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../tmp/saint-phase14/webkit-browser-results/ordinary-direction-ordinar-775d5-ew-and-legal-exit-at-1440px-webkit/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../tmp/saint-phase14/webkit-browser-results/ordinary-direction-ordinar-775d5-ew-and-legal-exit-at-1440px-webkit/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../tmp/saint-phase14/webkit-browser-results/ordinary-direction-ordinar-775d5-ew-and-legal-exit-at-1440px-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [webkit] › tests/ordinary-direction.spec.ts:39:36 › ordinary exact Kerr voice survives views: voice-campaign-kerr-899d4ba5ecfb 
+
+    Test was interrupted.
+
+    Error: page.evaluate: Target page, context or browser has been closed
+
+      13 | import type { GameState } from '../lib/types';
+      14 | const saved=(page:Page)=>page.evaluate(()=>({run:localStorage.getItem('saint-shard-3055-v1'),preferences:localStorage.getItem('saint-shard-preferences'),codex:localStorage.getItem('saint-shard-codex')}));
+    > 15 | const audio=(page:Page)=>page.evaluate(()=>(window as unknown as{audioReview:AudioReview}).audioReview);
+         |                               ^
+      16 | async function open(page:Page,state:GameState,width=390,sound=false,automatic=false,artwork='full',reading='all',voices=100){
+      17 |  await page.setViewportSize({width,height:900});await page.addInitScript(({state,sound,automatic,artwork,reading,voices})=>{if(!localStorage.getItem('saint-shard-3055-v1'))localStorage.setItem('saint-shard-3055-v1',JSON.stringify(state));if(!localStorage.getItem('saint-shard-preferences'))localStorage.setItem('saint-shard-preferences',JSON.stringify({sound,autoVoices:automatic,artwork,reading,textStep:2,contrast:'high',motion:'reduce',voices}));},{state,sound,automatic,artwork,reading,voices});
+      18 |  await page.goto('/');await page.getByTestId('continue-run').click();await page.evaluate(()=>document.fonts.ready);await expect(page.getByTestId('goal')).toBeInViewport();
+        at audio (/workspace/saint-shard-fix/tests/ordinary-direction.spec.ts:15:31)
+        at _test.expect.poll.timeout (/workspace/saint-shard-fix/tests/ordinary-direction.spec.ts:42:36)
+        at /workspace/saint-shard-fix/tests/ordinary-direction.spec.ts:42:2
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../tmp/saint-phase14/webkit-browser-results/ordinary-direction-ordinar-2e7de--campaign-kerr-899d4ba5ecfb-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../tmp/saint-phase14/webkit-browser-results/ordinary-direction-ordinar-2e7de--campaign-kerr-899d4ba5ecfb-webkit/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../tmp/saint-phase14/webkit-browser-results/ordinary-direction-ordinar-2e7de--campaign-kerr-899d4ba5ecfb-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) [webkit] › tests/ordinary-direction.spec.ts:39:36 › ordinary exact Kerr voice survives views: voice-campaign-kerr-e8022742ad26 
+
+    Test was interrupted.
+
+    Error: locator.evaluate: Test ended.
+    Call log:
+      - waiting for getByTestId('ordinary-artwork').locator('img')
+        - locator resolved to visible <img width="1200" height="800" loading="lazy" decoding="async" src="/art/stall-quiet-detail.jpg" srcset="/art/stall-quiet-detail-small.jpg 600w, /art/stall-quiet-detail.jpg 1200w" sizes="(min-width: 1101px) 330px, (min-width: 900px) calc(45vw - 2.5rem), calc(100vw - 4rem)" alt="A chipped cup, its pale ring and a folded blank paper occupy a worn wooden tabletop corner. The floor and case location remain outside the frame; no delivery, recipient entry, payment or treatment is depicted."/>
+
+
+      19 | }
+      20 | async function views(page:Page,scene:string){const panel=page.getByTestId('ordinary-artwork');await keyboardActivate(page,panel.locator('summary').first());await expect(panel).toHaveAttribute('open','');await expect(panel.getByTestId('sequence-shots')).toBeVisible();return ordinaryDirection(scene)!;}
+    > 21 | async function shot(page:Page,name:'Scene'|'Person'|'Detail',src:string){const p=page.getByTestId('ordinary-artwork');await keyboardActivate(page,p.getByRole('button',{name,exact:true}));await expect(p.getByTestId('sequence-shots')).toHaveAttribute('data-view',name.toLowerCase());const image=p.locator('img');await expect(image).toHaveCount(1);await expect(image).toHaveAttribute('src',src);await image.scrollIntoViewIfNeeded();await expect(p.locator('.progressive-art')).toHaveAttribute('data-ready','true');await image.evaluate((img:HTMLImageElement)=>img.decode());expect(await image.evaluate((img:HTMLImageElement)=>img.naturalWidth)).toBeGreaterThan(0);}
+         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^
+      22 | for(const width of[320,390,1440])for(const c of ORDINARY_CHECKPOINTS)test(`ordinary ${c.id}: unchanged decisions, one deliberate view and legal exit at ${width}px`,async({page},info)=>{
+      23 |  const state=routeCheckpoint(c.route,c.scene,c.choice),prior=baseline.rows.find(r=>r.id===c.id&&r.width===width)!;const requests:string[]=[];page.on('request',r=>requests.push(new URL(r.url()).pathname));await open(page,state,width);const before=await saved(page);
+      24 |  await expect(page.getByTestId('scene-text')).toHaveText(sceneText(getScene(state.sceneId),state).split(/\n\n+/).filter(Boolean).join(''));
+        at shot (/workspace/saint-shard-fix/tests/ordinary-direction.spec.ts:21:589)
+        at /workspace/saint-shard-fix/tests/ordinary-direction.spec.ts:41:260
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../tmp/saint-phase14/webkit-browser-results/ordinary-direction-ordinar-f5d39--campaign-kerr-e8022742ad26-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../tmp/saint-phase14/webkit-browser-results/ordinary-direction-ordinar-f5d39--campaign-kerr-e8022742ad26-webkit/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../tmp/saint-phase14/webkit-browser-results/ordinary-direction-ordinar-f5d39--campaign-kerr-e8022742ad26-webkit/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../tmp/saint-phase14/webkit-browser-results/ordinary-direction-ordinar-f5d39--campaign-kerr-e8022742ad26-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6) [webkit] › tests/ordinary-direction.spec.ts:39:36 › ordinary exact Kerr voice survives views: voice-campaign-kerr-f001a675c451 
+
+    Test was interrupted.
+
+    Error: expect(locator).toBeInViewport() failed
+
+    Locator: getByTestId('goal')
+    Expected: in viewport
+    Error: Test ended.
+
+    Call log:
+      - Expect "toBeInViewport" getByTestId('goal') with timeout 5000ms
+      - waiting for getByTestId('goal')
+      - Test ended.
+
+
+      16 | async function open(page:Page,state:GameState,width=390,sound=false,automatic=false,artwork='full',reading='all',voices=100){
+      17 |  await page.setViewportSize({width,height:900});await page.addInitScript(({state,sound,automatic,artwork,reading,voices})=>{if(!localStorage.getItem('saint-shard-3055-v1'))localStorage.setItem('saint-shard-3055-v1',JSON.stringify(state));if(!localStorage.getItem('saint-shard-preferences'))localStorage.setItem('saint-shard-preferences',JSON.stringify({sound,autoVoices:automatic,artwork,reading,textStep:2,contrast:'high',motion:'reduce',voices}));},{state,sound,automatic,artwork,reading,voices});
+    > 18 |  await page.goto('/');await page.getByTestId('continue-run').click();await page.evaluate(()=>document.fonts.ready);await expect(page.getByTestId('goal')).toBeInViewport();
+         |                                                                                                                                                           ^
+      19 | }
+      20 | async function views(page:Page,scene:string){const panel=page.getByTestId('ordinary-artwork');await keyboardActivate(page,panel.locator('summary').first());await expect(panel).toHaveAttribute('open','');await expect(panel.getByTestId('sequence-shots')).toBeVisible();return ordinaryDirection(scene)!;}
+      21 | async function shot(page:Page,name:'Scene'|'Person'|'Detail',src:string){const p=page.getByTestId('ordinary-artwork');await keyboardActivate(page,p.getByRole('button',{name,exact:true}));await expect(p.getByTestId('sequence-shots')).toHaveAttribute('data-view',name.toLowerCase());const image=p.locator('img');await expect(image).toHaveCount(1);await expect(image).toHaveAttribute('src',src);await image.scrollIntoViewIfNeeded();await expect(p.locator('.progressive-art')).toHaveAttribute('data-ready','true');await image.evaluate((img:HTMLImageElement)=>img.decode());expect(await image.evaluate((img:HTMLImageElement)=>img.naturalWidth)).toBeGreaterThan(0);}
+        at open (/workspace/saint-shard-fix/tests/ordinary-direction.spec.ts:18:155)
+        at /workspace/saint-shard-fix/tests/ordinary-direction.spec.ts:40:50
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../tmp/saint-phase14/webkit-browser-results/ordinary-direction-ordinar-afb06--campaign-kerr-f001a675c451-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../tmp/saint-phase14/webkit-browser-results/ordinary-direction-ordinar-afb06--campaign-kerr-f001a675c451-webkit/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../tmp/saint-phase14/webkit-browser-results/ordinary-direction-ordinar-afb06--campaign-kerr-f001a675c451-webkit/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../tmp/saint-phase14/webkit-browser-results/ordinary-direction-ordinar-afb06--campaign-kerr-f001a675c451-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  7) [webkit] › tests/ordinary-direction.spec.ts:39:36 › ordinary exact Kerr voice survives views: voice-campaign-kerr-f829eb68f234 
+
+    Test was interrupted.
+
+    Error: locator.click: Test ended.
+    Call log:
+      - waiting for getByTestId('continue-run')
+        - locator resolved to <button type="button" data-testid="continue-run" class="primary title-run-action">Continue</button>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+
+
+      16 | async function open(page:Page,state:GameState,width=390,sound=false,automatic=false,artwork='full',reading='all',voices=100){
+      17 |  await page.setViewportSize({width,height:900});await page.addInitScript(({state,sound,automatic,artwork,reading,voices})=>{if(!localStorage.getItem('saint-shard-3055-v1'))localStorage.setItem('saint-shard-3055-v1',JSON.stringify(state));if(!localStorage.getItem('saint-shard-preferences'))localStorage.setItem('saint-shard-preferences',JSON.stringify({sound,autoVoices:automatic,artwork,reading,textStep:2,contrast:'high',motion:'reduce',voices}));},{state,sound,automatic,artwork,reading,voices});
+    > 18 |  await page.goto('/');await page.getByTestId('continue-run').click();await page.evaluate(()=>document.fonts.ready);await expect(page.getByTestId('goal')).toBeInViewport();
+         |                                                              ^
+      19 | }
+      20 | async function views(page:Page,scene:string){const panel=page.getByTestId('ordinary-artwork');await keyboardActivate(page,panel.locator('summary').first());await expect(panel).toHaveAttribute('open','');await expect(panel.getByTestId('sequence-shots')).toBeVisible();return ordinaryDirection(scene)!;}
+      21 | async function shot(page:Page,name:'Scene'|'Person'|'Detail',src:string){const p=page.getByTestId('ordinary-artwork');await keyboardActivate(page,p.getByRole('button',{name,exact:true}));await expect(p.getByTestId('sequence-shots')).toHaveAttribute('data-view',name.toLowerCase());const image=p.locator('img');await expect(image).toHaveCount(1);await expect(image).toHaveAttribute('src',src);await image.scrollIntoViewIfNeeded();await expect(p.locator('.progressive-art')).toHaveAttribute('data-ready','true');await image.evaluate((img:HTMLImageElement)=>img.decode());expect(await image.evaluate((img:HTMLImageElement)=>img.naturalWidth)).toBeGreaterThan(0);}
+        at open (/workspace/saint-shard-fix/tests/ordinary-direction.spec.ts:18:62)
+        at /workspace/saint-shard-fix/tests/ordinary-direction.spec.ts:40:50
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../tmp/saint-phase14/webkit-browser-results/ordinary-direction-ordinar-f90bb--campaign-kerr-f829eb68f234-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../tmp/saint-phase14/webkit-browser-results/ordinary-direction-ordinar-f90bb--campaign-kerr-f829eb68f234-webkit/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../tmp/saint-phase14/webkit-browser-results/ordinary-direction-ordinar-f90bb--campaign-kerr-f829eb68f234-webkit/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../tmp/saint-phase14/webkit-browser-results/ordinary-direction-ordinar-f90bb--campaign-kerr-f829eb68f234-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3 failed
+    [webkit] › tests/connected-performance.spec.ts:23:70 › connected shared-breach: exact complete automatic conversation over actual beds at 1440px 
+    [webkit] › tests/ordinary-direction.spec.ts:22:74 › ordinary entry: unchanged decisions, one deliberate view and legal exit at 1440px 
+    [webkit] › tests/ordinary-direction.spec.ts:22:74 › ordinary private: unchanged decisions, one deliberate view and legal exit at 1440px 
+  4 interrupted
+    [webkit] › tests/ordinary-direction.spec.ts:39:36 › ordinary exact Kerr voice survives views: voice-campaign-kerr-899d4ba5ecfb 
+    [webkit] › tests/ordinary-direction.spec.ts:39:36 › ordinary exact Kerr voice survives views: voice-campaign-kerr-e8022742ad26 
+    [webkit] › tests/ordinary-direction.spec.ts:39:36 › ordinary exact Kerr voice survives views: voice-campaign-kerr-f001a675c451 
+    [webkit] › tests/ordinary-direction.spec.ts:39:36 › ordinary exact Kerr voice survives views: voice-campaign-kerr-f829eb68f234 
+  14 did not run
+  48 passed (5.2m)
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice

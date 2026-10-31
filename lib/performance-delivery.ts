@@ -1,3 +1,5 @@
+import { connectedPerformancePath } from "./connected-performance";
+
 /** Reviewed same-word alternatives only. Original files remain the bounded fallback.
  * No actor, binding key, source gain, preference or queue timing changes here.
  */
@@ -12,5 +14,5 @@ export const DIRECTED_VOICE_IDS = [
 ] as const;
 const directed = new Set<string>(DIRECTED_VOICE_IDS);
 export function performanceVoicePath(id: string): string | undefined {
-  return directed.has(id) ? `/audio/performance-direction-v1/${id}.mp3` : undefined;
+  return connectedPerformancePath(id) ?? (directed.has(id) ? `/audio/performance-direction-v1/${id}.mp3` : undefined);
 }

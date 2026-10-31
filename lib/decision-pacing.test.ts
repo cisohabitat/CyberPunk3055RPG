@@ -1,3 +1,4 @@
+import { isConnectedPerformanceFile } from "../qa/production/connected-performance-media";
 import routing from "../qa/media/return-routing.json";
 import freight from "../qa/media/freight-craft.json";
 import performance from "../qa/media/aaa-performance-direction.json";
@@ -14,7 +15,7 @@ import { sceneIllustration, portraitArt } from "./art";
 import { DECISION_FIRST_SCENES, decisionFirstScene } from "./decision-pacing";
 import type { ReplaySpec } from "./story-replay";
 import baseline from "../qa/media/decision-pacing.json";
-const files = (dir: string): string[] => readdirSync(dir, { withFileTypes: true }).flatMap(row => row.isDirectory() ? files(`${dir}/${row.name}`) : [`${dir}/${row.name}`]).filter(p => !routing.newMedia.includes(p) && !routing.newRoutes.includes(p.replace(/^qa\/routes\//, "")));
+const files = (dir: string): string[] => readdirSync(dir, { withFileTypes: true }).flatMap(row => row.isDirectory() ? files(`${dir}/${row.name}`) : [`${dir}/${row.name}`]).filter(p => !isConnectedPerformanceFile(p) && !routing.newMedia.includes(p) && !routing.newRoutes.includes(p.replace(/^qa\/routes\//, "")));
 const hash = (data: string | Buffer) => createHash("sha256").update(data).digest("hex");
 it("preserves all 188 campaigns, 13,154 full visits and all 776 existing art/audio deliveries", () => {
   const routes = files("qa/routes").filter(file => file.endsWith(".json") && ![...craft.newRoutes, ...payoff.newRoutes, ...freight.newRoutes].includes(file.slice("qa/routes/".length))).sort(), rows = [];

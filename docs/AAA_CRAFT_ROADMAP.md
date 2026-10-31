@@ -103,3 +103,7 @@ Phase 12 implements one broader Ghost encounter, before expansion to another bui
 ### Phase 13 ordinary direction
 
 [Kerr’s counter](ORDINARY_SCENE_DIRECTION_PHASE13.md) adds one optional complete entry/disclosure/response visual sequence using reviewed existing setting/person/detail paintings. Art inspection follows canonical decisions and retains default portraits, reading/action paths, exact speech, saves and quiet/text-only behavior. Preserve the complete Phase12 release separately, compare fixed23 plus3 explicit campaigns, and require full exact-commit CI/READY/public verification. Grade remains8.9 provisional; Phase14 is the connected expressive-performance pass.
+
+## Phase 14 — connected Kerr performance
+
+[The expressive-performance pass](EXPRESSIVE_PERFORMANCE_PHASE14.md) reviews all six depot quotations in connected conditional stages over actual quiet/street beds. Five exact-word stock-actor alternatives refine practical questions and personal boundaries; the original source-summary is retained after mismatched retakes. All14 candidates and unprompted negative results remain available. Original fallback, matching art, preferences, saves and rules stay intact. Alternatives target−23.5LUFS against approximately−20LUFS originals; the audition explicitly is not level matched or independent acting acceptance. Grade remains8.9 provisional; Phase15 repeats the existing rubric after exact-commit publication checks.

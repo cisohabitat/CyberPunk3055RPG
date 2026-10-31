@@ -1,0 +1,388 @@
+
+Running 32 tests using 4 workers
+
+(node:182219) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:182222) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:182220) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:182227) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   4 [chromium] › tests/connected-performance.spec.ts:23:70 › connected shared-breach: exact complete automatic conversation over actual beds at 390px (8.7s)
+  ✘   3 [chromium] › tests/connected-performance.spec.ts:23:70 › connected acknowledged: exact complete automatic conversation over actual beds at 390px (9.1s)
+  ✓   1 [chromium] › tests/connected-performance.spec.ts:23:70 › connected entry: exact complete automatic conversation over actual beds at 390px (10.3s)
+(node:182886) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   2 [chromium] › tests/connected-performance.spec.ts:23:70 › connected private: exact complete automatic conversation over actual beds at 390px (10.3s)
+(node:182921) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   7 [chromium] › tests/connected-performance.spec.ts:23:70 › connected shared-breach: exact complete automatic conversation over actual beds at 1440px (7.8s)
+(node:183589) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   5 [chromium] › tests/connected-performance.spec.ts:23:70 › connected entry: exact complete automatic conversation over actual beds at 1440px (10.1s)
+  ✘   6 [chromium] › tests/connected-performance.spec.ts:23:70 › connected known-breach: exact complete automatic conversation over actual beds at 390px (8.9s)
+  ✘   8 [chromium] › tests/connected-performance.spec.ts:23:70 › connected refused: exact complete automatic conversation over actual beds at 390px (8.6s)
+(node:183763) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:183784) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  10 [chromium] › tests/connected-performance.spec.ts:23:70 › connected private: exact complete automatic conversation over actual beds at 1440px (9.3s)
+  ✘   9 [chromium] › tests/connected-performance.spec.ts:23:70 › connected acknowledged: exact complete automatic conversation over actual beds at 1440px (9.2s)
+(node:184118) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  11 [chromium] › tests/connected-performance.spec.ts:23:70 › connected known-breach: exact complete automatic conversation over actual beds at 1440px (9.7s)
+  ✘  12 [chromium] › tests/connected-performance.spec.ts:23:70 › connected refused: exact complete automatic conversation over actual beds at 1440px (9.2s)
+(node:184276) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:184284) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  13 [chromium] › tests/connected-performance.spec.ts:31:39 › connected original fallback once: voice-campaign-kerr-10b6e71a11eb (9.4s)
+  ✓  16 [chromium] › tests/connected-performance.spec.ts:31:39 › connected original fallback once: voice-campaign-kerr-f829eb68f234 (10.0s)
+  ✓  14 [chromium] › tests/connected-performance.spec.ts:31:39 › connected original fallback once: voice-campaign-kerr-e8022742ad26 (17.2s)
+  ✓  17 [chromium] › tests/connected-performance.spec.ts:31:39 › connected original fallback once: voice-campaign-kerr-1903a3d3a421 (16.2s)
+  ✓  15 [chromium] › tests/connected-performance.spec.ts:31:39 › connected original fallback once: voice-campaign-kerr-f001a675c451 (17.4s)
+  ✓  18 [chromium] › tests/connected-performance.spec.ts:34:74 › connected undecodable alternative: entry (8.8s)
+  ✓  20 [chromium] › tests/connected-performance.spec.ts:37:5 › connected missing both retains readable story, save and canonical exit (2.8s)
+  ✓  21 [chromium] › tests/connected-performance.spec.ts:40:41 › connected paragraph/manual/text-only: entry (3.0s)
+  ✓  22 [chromium] › tests/connected-performance.spec.ts:40:41 › connected paragraph/manual/text-only: shared-breach (3.4s)
+  ✓  23 [chromium] › tests/connected-performance.spec.ts:40:41 › connected paragraph/manual/text-only: acknowledged (3.0s)
+  ✓  24 [chromium] › tests/connected-performance.spec.ts:40:41 › connected paragraph/manual/text-only: private (3.2s)
+  ✓  27 [chromium] › tests/connected-performance.spec.ts:43:61 › connected respects sound=false, voices=70 (2.2s)
+  ✓  25 [chromium] › tests/connected-performance.spec.ts:40:41 › connected paragraph/manual/text-only: known-breach (3.5s)
+  ✓  26 [chromium] › tests/connected-performance.spec.ts:40:41 › connected paragraph/manual/text-only: refused (3.4s)
+  ✓  19 [chromium] › tests/connected-performance.spec.ts:34:74 › connected undecodable alternative: refused (16.5s)
+  ✓  28 [chromium] › tests/connected-performance.spec.ts:43:61 › connected respects sound=true, voices=0 (3.1s)
+  ✓  29 [chromium] › tests/connected-performance.spec.ts:44:39 › connected Stop cancels late alternative (3.5s)
+  ✓  30 [chromium] › tests/connected-performance.spec.ts:44:39 › connected Stop cancels late original (3.8s)
+  ✓  32 [chromium] › tests/connected-performance.spec.ts:48:39 › connected replay uses settled logical cache, fallback=true (18.3s)
+  ✓  31 [chromium] › tests/connected-performance.spec.ts:48:39 › connected replay uses settled logical cache, fallback=false (18.7s)
+
+
+  1) [chromium] › tests/connected-performance.spec.ts:23:70 › connected shared-breach: exact complete automatic conversation over actual beds at 390px 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: getByTestId('spoken-quote')
+    Expected substring: "My name went into their register after you promised it wouldn't. Say that before you ask me for another introduction."
+    Received string:    "You showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift."
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" getByTestId('spoken-quote') with timeout 5000ms
+      - waiting for getByTestId('spoken-quote')
+        14 × locator resolved to <mark aria-current="true" data-speaker="Kerr" class="spoken-quote" data-testid="spoken-quote">You showed me the source summary. Leave the witne…</mark>
+           - unexpected value "You showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift."
+
+
+      23 | for(const width of[390,1440])for(const c of ORDINARY_CHECKPOINTS)test(`connected ${c.id}: exact complete automatic conversation over actual beds at ${width}px`,async({page})=>{
+      24 |  const s=stateFor(c),o=observe(page),lines=linesFor(s);await open(page,s,{width});const before=await saved(page);
+    > 25 |  for(const l of lines){await expect(page.getByTestId('spoken-quote')).toContainText(l.text);await expect(page.getByTestId('spoken-quote')).toHaveAttribute('data-speaker','Kerr');await expect(page.locator('.portrait-frame[data-speaking="true"]')).toHaveAttribute('data-speaker','Kerr');}
+         |                                                                       ^
+      26 |  await complete(page,s);expect(o.requests).toEqual(lines.map(l=>performanceVoicePath(l.id)??`/audio/${l.id}.mp3`));expect(o.errors).toEqual([]);expect(await saved(page)).toEqual(before);
+      27 |  await expect(page.getByTestId('scene-text')).toHaveText(sceneText(getScene(s.sceneId),s).split(/\n\n+/).filter(Boolean).join(''));
+      28 |  await expect.poll(async()=>(await mix(page)).music).toBeCloseTo(.6,5);await expect.poll(async()=>(await mix(page)).ambience).toBeCloseTo(.5,5);
+        at /workspace/saint-shard-fix/tests/connected-performance.spec.ts:25:71
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../tmp/saint-phase14/browser-results/connected-performance-conn-41b84-n-over-actual-beds-at-390px-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../tmp/saint-phase14/browser-results/connected-performance-conn-41b84-n-over-actual-beds-at-390px-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../tmp/saint-phase14/browser-results/connected-performance-conn-41b84-n-over-actual-beds-at-390px-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../tmp/saint-phase14/browser-results/connected-performance-conn-41b84-n-over-actual-beds-at-390px-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [chromium] › tests/connected-performance.spec.ts:23:70 › connected acknowledged: exact complete automatic conversation over actual beds at 390px 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: getByTestId('spoken-quote')
+    Expected substring: "Keep the docket beside the promise. Use your own name for anything you sign. Mine stays out of it."
+    Received string:    "You showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift."
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" getByTestId('spoken-quote') with timeout 5000ms
+      - waiting for getByTestId('spoken-quote')
+        14 × locator resolved to <mark aria-current="true" data-speaker="Kerr" class="spoken-quote" data-testid="spoken-quote">You showed me the source summary. Leave the witne…</mark>
+           - unexpected value "You showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift."
+
+
+      23 | for(const width of[390,1440])for(const c of ORDINARY_CHECKPOINTS)test(`connected ${c.id}: exact complete automatic conversation over actual beds at ${width}px`,async({page})=>{
+      24 |  const s=stateFor(c),o=observe(page),lines=linesFor(s);await open(page,s,{width});const before=await saved(page);
+    > 25 |  for(const l of lines){await expect(page.getByTestId('spoken-quote')).toContainText(l.text);await expect(page.getByTestId('spoken-quote')).toHaveAttribute('data-speaker','Kerr');await expect(page.locator('.portrait-frame[data-speaking="true"]')).toHaveAttribute('data-speaker','Kerr');}
+         |                                                                       ^
+      26 |  await complete(page,s);expect(o.requests).toEqual(lines.map(l=>performanceVoicePath(l.id)??`/audio/${l.id}.mp3`));expect(o.errors).toEqual([]);expect(await saved(page)).toEqual(before);
+      27 |  await expect(page.getByTestId('scene-text')).toHaveText(sceneText(getScene(s.sceneId),s).split(/\n\n+/).filter(Boolean).join(''));
+      28 |  await expect.poll(async()=>(await mix(page)).music).toBeCloseTo(.6,5);await expect.poll(async()=>(await mix(page)).ambience).toBeCloseTo(.5,5);
+        at /workspace/saint-shard-fix/tests/connected-performance.spec.ts:25:71
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../tmp/saint-phase14/browser-results/connected-performance-conn-e8271-n-over-actual-beds-at-390px-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../tmp/saint-phase14/browser-results/connected-performance-conn-e8271-n-over-actual-beds-at-390px-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../tmp/saint-phase14/browser-results/connected-performance-conn-e8271-n-over-actual-beds-at-390px-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../tmp/saint-phase14/browser-results/connected-performance-conn-e8271-n-over-actual-beds-at-390px-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [chromium] › tests/connected-performance.spec.ts:23:70 › connected known-breach: exact complete automatic conversation over actual beds at 390px 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: getByTestId('spoken-quote')
+    Expected substring: "My name went into their register after you promised it wouldn't. Say that before you ask me for another introduction."
+    Received string:    "Then I know which depot desk you asked for, not what's in your case. Keep those two things separate."
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" getByTestId('spoken-quote') with timeout 5000ms
+      - waiting for getByTestId('spoken-quote')
+        14 × locator resolved to <mark aria-current="true" data-speaker="Kerr" class="spoken-quote" data-testid="spoken-quote">Then I know which depot desk you asked for, not w…</mark>
+           - unexpected value "Then I know which depot desk you asked for, not what's in your case. Keep those two things separate."
+
+
+      23 | for(const width of[390,1440])for(const c of ORDINARY_CHECKPOINTS)test(`connected ${c.id}: exact complete automatic conversation over actual beds at ${width}px`,async({page})=>{
+      24 |  const s=stateFor(c),o=observe(page),lines=linesFor(s);await open(page,s,{width});const before=await saved(page);
+    > 25 |  for(const l of lines){await expect(page.getByTestId('spoken-quote')).toContainText(l.text);await expect(page.getByTestId('spoken-quote')).toHaveAttribute('data-speaker','Kerr');await expect(page.locator('.portrait-frame[data-speaking="true"]')).toHaveAttribute('data-speaker','Kerr');}
+         |                                                                       ^
+      26 |  await complete(page,s);expect(o.requests).toEqual(lines.map(l=>performanceVoicePath(l.id)??`/audio/${l.id}.mp3`));expect(o.errors).toEqual([]);expect(await saved(page)).toEqual(before);
+      27 |  await expect(page.getByTestId('scene-text')).toHaveText(sceneText(getScene(s.sceneId),s).split(/\n\n+/).filter(Boolean).join(''));
+      28 |  await expect.poll(async()=>(await mix(page)).music).toBeCloseTo(.6,5);await expect.poll(async()=>(await mix(page)).ambience).toBeCloseTo(.5,5);
+        at /workspace/saint-shard-fix/tests/connected-performance.spec.ts:25:71
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../tmp/saint-phase14/browser-results/connected-performance-conn-88474-n-over-actual-beds-at-390px-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../tmp/saint-phase14/browser-results/connected-performance-conn-88474-n-over-actual-beds-at-390px-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../tmp/saint-phase14/browser-results/connected-performance-conn-88474-n-over-actual-beds-at-390px-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../tmp/saint-phase14/browser-results/connected-performance-conn-88474-n-over-actual-beds-at-390px-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [chromium] › tests/connected-performance.spec.ts:23:70 › connected refused: exact complete automatic conversation over actual beds at 390px 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: getByTestId('spoken-quote')
+    Expected substring: "Then I won't introduce you. The counter can answer for itself. I won't answer for a promise you won't name."
+    Received string:    "Then I know which depot desk you asked for, not what's in your case. Keep those two things separate."
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" getByTestId('spoken-quote') with timeout 5000ms
+      - waiting for getByTestId('spoken-quote')
+        14 × locator resolved to <mark aria-current="true" data-speaker="Kerr" class="spoken-quote" data-testid="spoken-quote">Then I know which depot desk you asked for, not w…</mark>
+           - unexpected value "Then I know which depot desk you asked for, not what's in your case. Keep those two things separate."
+
+
+      23 | for(const width of[390,1440])for(const c of ORDINARY_CHECKPOINTS)test(`connected ${c.id}: exact complete automatic conversation over actual beds at ${width}px`,async({page})=>{
+      24 |  const s=stateFor(c),o=observe(page),lines=linesFor(s);await open(page,s,{width});const before=await saved(page);
+    > 25 |  for(const l of lines){await expect(page.getByTestId('spoken-quote')).toContainText(l.text);await expect(page.getByTestId('spoken-quote')).toHaveAttribute('data-speaker','Kerr');await expect(page.locator('.portrait-frame[data-speaking="true"]')).toHaveAttribute('data-speaker','Kerr');}
+         |                                                                       ^
+      26 |  await complete(page,s);expect(o.requests).toEqual(lines.map(l=>performanceVoicePath(l.id)??`/audio/${l.id}.mp3`));expect(o.errors).toEqual([]);expect(await saved(page)).toEqual(before);
+      27 |  await expect(page.getByTestId('scene-text')).toHaveText(sceneText(getScene(s.sceneId),s).split(/\n\n+/).filter(Boolean).join(''));
+      28 |  await expect.poll(async()=>(await mix(page)).music).toBeCloseTo(.6,5);await expect.poll(async()=>(await mix(page)).ambience).toBeCloseTo(.5,5);
+        at /workspace/saint-shard-fix/tests/connected-performance.spec.ts:25:71
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../tmp/saint-phase14/browser-results/connected-performance-conn-ef855-n-over-actual-beds-at-390px-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../tmp/saint-phase14/browser-results/connected-performance-conn-ef855-n-over-actual-beds-at-390px-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../tmp/saint-phase14/browser-results/connected-performance-conn-ef855-n-over-actual-beds-at-390px-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../tmp/saint-phase14/browser-results/connected-performance-conn-ef855-n-over-actual-beds-at-390px-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) [chromium] › tests/connected-performance.spec.ts:23:70 › connected shared-breach: exact complete automatic conversation over actual beds at 1440px 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: getByTestId('spoken-quote')
+    Expected substring: "My name went into their register after you promised it wouldn't. Say that before you ask me for another introduction."
+    Received string:    "You showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift."
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" getByTestId('spoken-quote') with timeout 5000ms
+      - waiting for getByTestId('spoken-quote')
+        14 × locator resolved to <mark aria-current="true" data-speaker="Kerr" class="spoken-quote" data-testid="spoken-quote">You showed me the source summary. Leave the witne…</mark>
+           - unexpected value "You showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift."
+
+
+      23 | for(const width of[390,1440])for(const c of ORDINARY_CHECKPOINTS)test(`connected ${c.id}: exact complete automatic conversation over actual beds at ${width}px`,async({page})=>{
+      24 |  const s=stateFor(c),o=observe(page),lines=linesFor(s);await open(page,s,{width});const before=await saved(page);
+    > 25 |  for(const l of lines){await expect(page.getByTestId('spoken-quote')).toContainText(l.text);await expect(page.getByTestId('spoken-quote')).toHaveAttribute('data-speaker','Kerr');await expect(page.locator('.portrait-frame[data-speaking="true"]')).toHaveAttribute('data-speaker','Kerr');}
+         |                                                                       ^
+      26 |  await complete(page,s);expect(o.requests).toEqual(lines.map(l=>performanceVoicePath(l.id)??`/audio/${l.id}.mp3`));expect(o.errors).toEqual([]);expect(await saved(page)).toEqual(before);
+      27 |  await expect(page.getByTestId('scene-text')).toHaveText(sceneText(getScene(s.sceneId),s).split(/\n\n+/).filter(Boolean).join(''));
+      28 |  await expect.poll(async()=>(await mix(page)).music).toBeCloseTo(.6,5);await expect.poll(async()=>(await mix(page)).ambience).toBeCloseTo(.5,5);
+        at /workspace/saint-shard-fix/tests/connected-performance.spec.ts:25:71
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../tmp/saint-phase14/browser-results/connected-performance-conn-6bf2e--over-actual-beds-at-1440px-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../tmp/saint-phase14/browser-results/connected-performance-conn-6bf2e--over-actual-beds-at-1440px-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../tmp/saint-phase14/browser-results/connected-performance-conn-6bf2e--over-actual-beds-at-1440px-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../tmp/saint-phase14/browser-results/connected-performance-conn-6bf2e--over-actual-beds-at-1440px-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6) [chromium] › tests/connected-performance.spec.ts:23:70 › connected acknowledged: exact complete automatic conversation over actual beds at 1440px 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: getByTestId('spoken-quote')
+    Expected substring: "Keep the docket beside the promise. Use your own name for anything you sign. Mine stays out of it."
+    Received string:    "You showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift."
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" getByTestId('spoken-quote') with timeout 5000ms
+      - waiting for getByTestId('spoken-quote')
+        14 × locator resolved to <mark aria-current="true" data-speaker="Kerr" class="spoken-quote" data-testid="spoken-quote">You showed me the source summary. Leave the witne…</mark>
+           - unexpected value "You showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift."
+
+
+      23 | for(const width of[390,1440])for(const c of ORDINARY_CHECKPOINTS)test(`connected ${c.id}: exact complete automatic conversation over actual beds at ${width}px`,async({page})=>{
+      24 |  const s=stateFor(c),o=observe(page),lines=linesFor(s);await open(page,s,{width});const before=await saved(page);
+    > 25 |  for(const l of lines){await expect(page.getByTestId('spoken-quote')).toContainText(l.text);await expect(page.getByTestId('spoken-quote')).toHaveAttribute('data-speaker','Kerr');await expect(page.locator('.portrait-frame[data-speaking="true"]')).toHaveAttribute('data-speaker','Kerr');}
+         |                                                                       ^
+      26 |  await complete(page,s);expect(o.requests).toEqual(lines.map(l=>performanceVoicePath(l.id)??`/audio/${l.id}.mp3`));expect(o.errors).toEqual([]);expect(await saved(page)).toEqual(before);
+      27 |  await expect(page.getByTestId('scene-text')).toHaveText(sceneText(getScene(s.sceneId),s).split(/\n\n+/).filter(Boolean).join(''));
+      28 |  await expect.poll(async()=>(await mix(page)).music).toBeCloseTo(.6,5);await expect.poll(async()=>(await mix(page)).ambience).toBeCloseTo(.5,5);
+        at /workspace/saint-shard-fix/tests/connected-performance.spec.ts:25:71
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../tmp/saint-phase14/browser-results/connected-performance-conn-3cec8--over-actual-beds-at-1440px-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../tmp/saint-phase14/browser-results/connected-performance-conn-3cec8--over-actual-beds-at-1440px-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../tmp/saint-phase14/browser-results/connected-performance-conn-3cec8--over-actual-beds-at-1440px-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../tmp/saint-phase14/browser-results/connected-performance-conn-3cec8--over-actual-beds-at-1440px-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  7) [chromium] › tests/connected-performance.spec.ts:23:70 › connected known-breach: exact complete automatic conversation over actual beds at 1440px 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: getByTestId('spoken-quote')
+    Expected substring: "My name went into their register after you promised it wouldn't. Say that before you ask me for another introduction."
+    Received string:    "Then I know which depot desk you asked for, not what's in your case. Keep those two things separate."
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" getByTestId('spoken-quote') with timeout 5000ms
+      - waiting for getByTestId('spoken-quote')
+        14 × locator resolved to <mark aria-current="true" data-speaker="Kerr" class="spoken-quote" data-testid="spoken-quote">Then I know which depot desk you asked for, not w…</mark>
+           - unexpected value "Then I know which depot desk you asked for, not what's in your case. Keep those two things separate."
+
+
+      23 | for(const width of[390,1440])for(const c of ORDINARY_CHECKPOINTS)test(`connected ${c.id}: exact complete automatic conversation over actual beds at ${width}px`,async({page})=>{
+      24 |  const s=stateFor(c),o=observe(page),lines=linesFor(s);await open(page,s,{width});const before=await saved(page);
+    > 25 |  for(const l of lines){await expect(page.getByTestId('spoken-quote')).toContainText(l.text);await expect(page.getByTestId('spoken-quote')).toHaveAttribute('data-speaker','Kerr');await expect(page.locator('.portrait-frame[data-speaking="true"]')).toHaveAttribute('data-speaker','Kerr');await expect.poll(async()=>(await audio(page)).disposed,{timeout:20_000}).toContain(l.id+'.mp3');}
+         |                                                                       ^
+      26 |  await complete(page,s);expect(o.requests).toEqual(lines.map(l=>performanceVoicePath(l.id)??`/audio/${l.id}.mp3`));expect(o.errors).toEqual([]);expect(await saved(page)).toEqual(before);
+      27 |  await expect(page.getByTestId('scene-text')).toHaveText(sceneText(getScene(s.sceneId),s).split(/\n\n+/).filter(Boolean).join(''));
+      28 |  await expect.poll(async()=>(await mix(page)).music).toBeCloseTo(.6,5);await expect.poll(async()=>(await mix(page)).ambience).toBeCloseTo(.5,5);
+        at /workspace/saint-shard-fix/tests/connected-performance.spec.ts:25:71
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../tmp/saint-phase14/browser-results/connected-performance-conn-32dee--over-actual-beds-at-1440px-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../tmp/saint-phase14/browser-results/connected-performance-conn-32dee--over-actual-beds-at-1440px-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../tmp/saint-phase14/browser-results/connected-performance-conn-32dee--over-actual-beds-at-1440px-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../tmp/saint-phase14/browser-results/connected-performance-conn-32dee--over-actual-beds-at-1440px-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  8) [chromium] › tests/connected-performance.spec.ts:23:70 › connected refused: exact complete automatic conversation over actual beds at 1440px 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: getByTestId('spoken-quote')
+    Expected substring: "Then I won't introduce you. The counter can answer for itself. I won't answer for a promise you won't name."
+    Received string:    "Then I know which depot desk you asked for, not what's in your case. Keep those two things separate."
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" getByTestId('spoken-quote') with timeout 5000ms
+      - waiting for getByTestId('spoken-quote')
+        14 × locator resolved to <mark aria-current="true" data-speaker="Kerr" class="spoken-quote" data-testid="spoken-quote">Then I know which depot desk you asked for, not w…</mark>
+           - unexpected value "Then I know which depot desk you asked for, not what's in your case. Keep those two things separate."
+
+
+      23 | for(const width of[390,1440])for(const c of ORDINARY_CHECKPOINTS)test(`connected ${c.id}: exact complete automatic conversation over actual beds at ${width}px`,async({page})=>{
+      24 |  const s=stateFor(c),o=observe(page),lines=linesFor(s);await open(page,s,{width});const before=await saved(page);
+    > 25 |  for(const l of lines){await expect(page.getByTestId('spoken-quote')).toContainText(l.text);await expect(page.getByTestId('spoken-quote')).toHaveAttribute('data-speaker','Kerr');await expect(page.locator('.portrait-frame[data-speaking="true"]')).toHaveAttribute('data-speaker','Kerr');await expect.poll(async()=>(await audio(page)).disposed,{timeout:20_000}).toContain(l.id+'.mp3');}
+         |                                                                       ^
+      26 |  await complete(page,s);expect(o.requests).toEqual(lines.map(l=>performanceVoicePath(l.id)??`/audio/${l.id}.mp3`));expect(o.errors).toEqual([]);expect(await saved(page)).toEqual(before);
+      27 |  await expect(page.getByTestId('scene-text')).toHaveText(sceneText(getScene(s.sceneId),s).split(/\n\n+/).filter(Boolean).join(''));
+      28 |  await expect.poll(async()=>(await mix(page)).music).toBeCloseTo(.6,5);await expect.poll(async()=>(await mix(page)).ambience).toBeCloseTo(.5,5);
+        at /workspace/saint-shard-fix/tests/connected-performance.spec.ts:25:71
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../tmp/saint-phase14/browser-results/connected-performance-conn-f3d5c--over-actual-beds-at-1440px-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../tmp/saint-phase14/browser-results/connected-performance-conn-f3d5c--over-actual-beds-at-1440px-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../tmp/saint-phase14/browser-results/connected-performance-conn-f3d5c--over-actual-beds-at-1440px-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../tmp/saint-phase14/browser-results/connected-performance-conn-f3d5c--over-actual-beds-at-1440px-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  8 failed
+    [chromium] › tests/connected-performance.spec.ts:23:70 › connected shared-breach: exact complete automatic conversation over actual beds at 390px 
+    [chromium] › tests/connected-performance.spec.ts:23:70 › connected acknowledged: exact complete automatic conversation over actual beds at 390px 
+    [chromium] › tests/connected-performance.spec.ts:23:70 › connected known-breach: exact complete automatic conversation over actual beds at 390px 
+    [chromium] › tests/connected-performance.spec.ts:23:70 › connected refused: exact complete automatic conversation over actual beds at 390px 
+    [chromium] › tests/connected-performance.spec.ts:23:70 › connected shared-breach: exact complete automatic conversation over actual beds at 1440px 
+    [chromium] › tests/connected-performance.spec.ts:23:70 › connected acknowledged: exact complete automatic conversation over actual beds at 1440px 
+    [chromium] › tests/connected-performance.spec.ts:23:70 › connected known-breach: exact complete automatic conversation over actual beds at 1440px 
+    [chromium] › tests/connected-performance.spec.ts:23:70 › connected refused: exact complete automatic conversation over actual beds at 1440px 
+  24 passed (1.5m)
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice

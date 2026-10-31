@@ -103,3 +103,5 @@ The [Phase 11 equipment/decision-flow update](DECISION_FLOW_PHASE11.md) brings r
 The [return-path encounter](RETURN_ROUTING_PHASE12.md) gives trained Ghost runners an optional inspected routing decision and a Dispatcher with a practical concern: a packet that can find its way back. Six scenes, ten exact-script stock voice clips and explicit reused art accompany success, failed routing, cancellation, refusal and unfinished returns. The catalog contains 260 scenes, 790 raw choices, 241 routes and 164 gallery works. The internal grade stays 8.9 provisional.
 
 Optional **Look closer** views stage Kerr’s depot conversation with its existing setting, listening portrait and neutral counter detail after the story decisions. [Phase13 report](ORDINARY_SCENE_DIRECTION_PHASE13.md).
+
+The [connected Kerr performance pass](EXPRESSIVE_PERFORMANCE_PHASE14.md) adds five directed same-word voice alternatives, retaining the established actor, matching paintings and original fallback recordings.

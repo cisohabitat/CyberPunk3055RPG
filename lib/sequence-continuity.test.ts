@@ -1,3 +1,4 @@
+import { isConnectedPerformanceFile } from "../qa/production/connected-performance-media";
 import routing from "../qa/media/return-routing.json";
 import assert from 'node:assert/strict';
 import {it} from 'node:test';
@@ -12,7 +13,7 @@ import {SCENES} from './story';
 import {actName} from './story/goal';
 import phase from '../qa/media/sequence-continuity.json';
 const hash=(s:string|Buffer)=>createHash('sha256').update(s).digest('hex');
-const files=(d:string):string[]=>readdirSync(d,{withFileTypes:true}).flatMap(r=>r.isDirectory()?files(`${d}/${r.name}`):[`${d}/${r.name}`]).filter(p=>!routing.newMedia.includes(p)&&!routing.newRoutes.includes(p.replace(/^qa\/routes\//,"")));
+const files=(d:string):string[]=>readdirSync(d,{withFileTypes:true}).flatMap(r=>r.isDirectory()?files(`${d}/${r.name}`):[`${d}/${r.name}`]).filter(p=>!isConnectedPerformanceFile(p)&&!routing.newMedia.includes(p)&&!routing.newRoutes.includes(p.replace(/^qa\/routes\//,"")));
 it('preserves all231 campaigns,16441 visits, exact art, actor, dialogue and827 preceding media hashes',()=>{
  const rows=[];const routes=files('qa/routes').filter(f=>f.endsWith('.json')).sort();assert.equal(routes.length,231);
  for(const file of routes){const spec=JSON.parse(readFileSync(file,'utf8'));let state=createCharacter(spec.character);

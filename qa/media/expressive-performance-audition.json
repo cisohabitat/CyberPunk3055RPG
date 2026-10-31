@@ -1,0 +1,424 @@
+{
+  "method": "Six complete conditional conversation stages, before/directed pairs; actual delivered stereo quiet/street beds, normal focus, Voice70/Music60/Ambience50, source gains1/.5/.35, speech duck.22/.44, same-speaker gap120ms, continuous settled beds through each stage and one-second separators. Exact scene context and current art decisions retained.",
+  "limitations": "Offline settled-gain approximation; no browser ramps, download timing, hardware or perceptual listening acceptance. Alternatives are quieter than ~-20LUFS originals; not level matched. Retained summary/fallback keeps its original level. No acting score inferred.",
+  "previewPath": "qa/media/expressive-performance-audition.mp3",
+  "previewSha256": "0909457ea18fbb20c86d89281d6e210a7fa5622b14b8a5fa46a2262c8aa66ec0",
+  "bytes": 1666412,
+  "durationSeconds": 138.78041666666667,
+  "channels": 2,
+  "sampleRate": 24000,
+  "scenes": [
+    {
+      "checkpoint": "entry",
+      "route": "district-public-work",
+      "scene": "act2_district_kerr",
+      "choice": "district-tell-kerr",
+      "sceneText": "\u201cA depot reference points to a desk. It doesn't tell me what you kept in your coat. What are you asking me to carry?\u201d\n\nThe posted depot procedure is public. Your case notes are not. If you show Kerr the summary, use the same source scope you gave Edda and include any docket showing a breach of his private collection terms. No witness material will be shared. You can keep the case closed.",
+      "sound": {
+        "mood": "quiet",
+        "district": "street"
+      },
+      "focus": "normal",
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-street.flac",
+      "ambienceSha256": "61b3bba5d867990b3cb85ef7317d49c3b0465eab2057d44d0a123b53e87cfe0d",
+      "versions": [
+        {
+          "version": "before",
+          "startSeconds": 0.0,
+          "durationSeconds": 6.185333333333333,
+          "clips": [
+            {
+              "id": "voice-campaign-kerr-10b6e71a11eb",
+              "text": "A depot reference points to a desk. It doesn't tell me what you kept in your coat. What are you asking me to carry?",
+              "path": "public/audio/voice-campaign-kerr-10b6e71a11eb.mp3",
+              "sha256": "512593cc157650d5a50be2f01fde4159063ab9c88b10237848f34f9987a41176",
+              "startSeconds": 0.0,
+              "durationSeconds": 6.185333333333333
+            }
+          ],
+          "masterPath": "/workspace/generated_audio/expressive-performance/mixes/entry-before.wav",
+          "masterSha256": "c34e108bb6b48f5b81fc93144325c2b05fec17d926c08378b9f1c9589f6a3dfc",
+          "peak": 0.4028072953224182,
+          "voiceRms": 0.054460663348436356,
+          "bedRms": 0.0017009987495839596
+        },
+        {
+          "version": "directed",
+          "startSeconds": 7.185333333333333,
+          "durationSeconds": 6.298208333333333,
+          "clips": [
+            {
+              "id": "voice-campaign-kerr-10b6e71a11eb",
+              "text": "A depot reference points to a desk. It doesn't tell me what you kept in your coat. What are you asking me to carry?",
+              "path": "public/audio/connected-performance-v1/voice-campaign-kerr-10b6e71a11eb.mp3",
+              "sha256": "4fff91bf11e8a26c06fd9bf4049e6dcb5e93cf338bc17d2765e4c457ebc3d201",
+              "startSeconds": 0.0,
+              "durationSeconds": 6.298208333333333
+            }
+          ],
+          "masterPath": "/workspace/generated_audio/expressive-performance/mixes/entry-directed.wav",
+          "masterSha256": "d54c086330d712ae89d22d4224374624fe5452bce432f8035442604febdc400c",
+          "peak": 0.31936392188072205,
+          "voiceRms": 0.036804985255002975,
+          "bedRms": 0.0016952253645285964
+        }
+      ]
+    },
+    {
+      "checkpoint": "shared-breach",
+      "route": "district-public-work",
+      "scene": "act2_district_kerr_reply",
+      "choice": "district-kerr-acknowledge",
+      "sceneText": "\u201cYou showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.\u201d\n\n\u201cMy name went into their register after you promised it wouldn't. Say that before you ask me for another introduction.\u201d\n\nThe counter offers registered sorting work under your own handle. An introduction supplies no payment, recovery, treatment or source. Any earlier breach stays recorded.",
+      "sound": {
+        "mood": "quiet",
+        "district": "street"
+      },
+      "focus": "normal",
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-street.flac",
+      "ambienceSha256": "61b3bba5d867990b3cb85ef7317d49c3b0465eab2057d44d0a123b53e87cfe0d",
+      "versions": [
+        {
+          "version": "before",
+          "startSeconds": 14.483541666666667,
+          "durationSeconds": 13.567958333333333,
+          "clips": [
+            {
+              "id": "voice-campaign-kerr-899d4ba5ecfb",
+              "text": "You showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.",
+              "path": "public/audio/voice-campaign-kerr-899d4ba5ecfb.mp3",
+              "sha256": "efc7a1dfac22ba92865fc4a7725233f4d4312576b99cb82a7e02ddcaf33b617e",
+              "startSeconds": 0.0,
+              "durationSeconds": 6.942
+            },
+            {
+              "id": "voice-campaign-kerr-e8022742ad26",
+              "text": "My name went into their register after you promised it wouldn't. Say that before you ask me for another introduction.",
+              "path": "public/audio/voice-campaign-kerr-e8022742ad26.mp3",
+              "sha256": "1dc1eb6e6e2f1203c290800caedda3a1ea0a5cffa3b59b628f449492f8d5f090",
+              "startSeconds": 7.062,
+              "durationSeconds": 6.505958333333333
+            }
+          ],
+          "masterPath": "/workspace/generated_audio/expressive-performance/mixes/shared-breach-before.wav",
+          "masterSha256": "decaa99c4f868994b0ed63e66872dd3700a678756490196d0f1e654bd301f01d",
+          "peak": 0.3970450162887573,
+          "voiceRms": 0.05439285933971405,
+          "bedRms": 0.0016271546483039856
+        },
+        {
+          "version": "directed",
+          "startSeconds": 29.0515,
+          "durationSeconds": 13.847333333333333,
+          "clips": [
+            {
+              "id": "voice-campaign-kerr-899d4ba5ecfb",
+              "text": "You showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.",
+              "path": "public/audio/voice-campaign-kerr-899d4ba5ecfb.mp3",
+              "sha256": "efc7a1dfac22ba92865fc4a7725233f4d4312576b99cb82a7e02ddcaf33b617e",
+              "startSeconds": 0.0,
+              "durationSeconds": 6.942
+            },
+            {
+              "id": "voice-campaign-kerr-e8022742ad26",
+              "text": "My name went into their register after you promised it wouldn't. Say that before you ask me for another introduction.",
+              "path": "public/audio/connected-performance-v1/voice-campaign-kerr-e8022742ad26.mp3",
+              "sha256": "a541ea49a17e95abf354b20aceaa0e97c47076249a1a071b13b305c3500dded7",
+              "startSeconds": 7.062,
+              "durationSeconds": 6.785333333333333
+            }
+          ],
+          "masterPath": "/workspace/generated_audio/expressive-performance/mixes/shared-breach-directed.wav",
+          "masterSha256": "04a61073a82d7980dbc96d4e566554ef0bf02d9b273618c095a8732b050e978e",
+          "peak": 0.3952677845954895,
+          "voiceRms": 0.046389080584049225,
+          "bedRms": 0.001623571035452187
+        }
+      ]
+    },
+    {
+      "checkpoint": "acknowledged",
+      "route": "district-public-work",
+      "scene": "act2_district_kerr_reply",
+      "choice": "district-kerr-introduce",
+      "sceneText": "\u201cYou showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.\u201d\n\n\u201cKeep the docket beside the promise. Use your own name for anything you sign. Mine stays out of it.\u201d\n\nThe counter offers registered sorting work under your own handle. An introduction supplies no payment, recovery, treatment or source. Any earlier breach stays recorded.",
+      "sound": {
+        "mood": "quiet",
+        "district": "street"
+      },
+      "focus": "normal",
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-street.flac",
+      "ambienceSha256": "61b3bba5d867990b3cb85ef7317d49c3b0465eab2057d44d0a123b53e87cfe0d",
+      "versions": [
+        {
+          "version": "before",
+          "startSeconds": 43.898833333333336,
+          "durationSeconds": 13.076666666666666,
+          "clips": [
+            {
+              "id": "voice-campaign-kerr-899d4ba5ecfb",
+              "text": "You showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.",
+              "path": "public/audio/voice-campaign-kerr-899d4ba5ecfb.mp3",
+              "sha256": "efc7a1dfac22ba92865fc4a7725233f4d4312576b99cb82a7e02ddcaf33b617e",
+              "startSeconds": 0.0,
+              "durationSeconds": 6.942
+            },
+            {
+              "id": "voice-campaign-kerr-f001a675c451",
+              "text": "Keep the docket beside the promise. Use your own name for anything you sign. Mine stays out of it.",
+              "path": "public/audio/voice-campaign-kerr-f001a675c451.mp3",
+              "sha256": "c9cdfb49162cff0a08bb2ab7cddca6a5a1936059832c3e7dbbdb3076daff39c9",
+              "startSeconds": 7.062,
+              "durationSeconds": 6.014666666666667
+            }
+          ],
+          "masterPath": "/workspace/generated_audio/expressive-performance/mixes/acknowledged-before.wav",
+          "masterSha256": "a4ee2f2d7e8ea5ebbef149d5aee4ef0891363ec6fc12c2c476a2dfc2e2edfb80",
+          "peak": 0.41147536039352417,
+          "voiceRms": 0.054737646132707596,
+          "bedRms": 0.001635322580114007
+        },
+        {
+          "version": "directed",
+          "startSeconds": 57.9755,
+          "durationSeconds": 13.333791666666666,
+          "clips": [
+            {
+              "id": "voice-campaign-kerr-899d4ba5ecfb",
+              "text": "You showed me the source summary. Leave the witness out of my errands. I don't need a person's address to ask about a shift.",
+              "path": "public/audio/voice-campaign-kerr-899d4ba5ecfb.mp3",
+              "sha256": "efc7a1dfac22ba92865fc4a7725233f4d4312576b99cb82a7e02ddcaf33b617e",
+              "startSeconds": 0.0,
+              "durationSeconds": 6.942
+            },
+            {
+              "id": "voice-campaign-kerr-f001a675c451",
+              "text": "Keep the docket beside the promise. Use your own name for anything you sign. Mine stays out of it.",
+              "path": "public/audio/connected-performance-v1/voice-campaign-kerr-f001a675c451.mp3",
+              "sha256": "109f90b0698be1df2e844c0213fad49485fea2de7649a68f421b63ce21227c38",
+              "startSeconds": 7.062,
+              "durationSeconds": 6.271791666666667
+            }
+          ],
+          "masterPath": "/workspace/generated_audio/expressive-performance/mixes/acknowledged-directed.wav",
+          "masterSha256": "cbc6582d697f31b024c552accab2aff644cb81cbb102eeaf98e0e6f6e2be1c67",
+          "peak": 0.3952677845954895,
+          "voiceRms": 0.046935006976127625,
+          "bedRms": 0.0016307842452079058
+        }
+      ]
+    },
+    {
+      "checkpoint": "private",
+      "route": "district-private-rest",
+      "scene": "act2_district_kerr_reply",
+      "choice": "district-kerr-introduce",
+      "sceneText": "\u201cThen I know which depot desk you asked for, not what's in your case. Keep those two things separate.\u201d\n\nHe offers an introduction about your own task. It is not a promise to remove anyone from the recipient register.\n\nThe service desk offers one short rest appointment through the private query. An introduction supplies no payment, recovery, treatment or source. Any earlier breach stays recorded.",
+      "sound": {
+        "mood": "quiet",
+        "district": "street"
+      },
+      "focus": "normal",
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-street.flac",
+      "ambienceSha256": "61b3bba5d867990b3cb85ef7317d49c3b0465eab2057d44d0a123b53e87cfe0d",
+      "versions": [
+        {
+          "version": "before",
+          "startSeconds": 72.30929166666667,
+          "durationSeconds": 5.321958333333333,
+          "clips": [
+            {
+              "id": "voice-campaign-kerr-f829eb68f234",
+              "text": "Then I know which depot desk you asked for, not what's in your case. Keep those two things separate.",
+              "path": "public/audio/voice-campaign-kerr-f829eb68f234.mp3",
+              "sha256": "181bdff21515e3dd7244fc8d2346fdb3125ef84361a6abc88079012fc96d20dd",
+              "startSeconds": 0.0,
+              "durationSeconds": 5.321958333333333
+            }
+          ],
+          "masterPath": "/workspace/generated_audio/expressive-performance/mixes/private-before.wav",
+          "masterSha256": "2b4c4b6ba737db972df09764a7953f73748f48598dc67e365130602fca7942cc",
+          "peak": 0.4091396629810333,
+          "voiceRms": 0.05630932003259659,
+          "bedRms": 0.0017602957086637616
+        },
+        {
+          "version": "directed",
+          "startSeconds": 78.63125,
+          "durationSeconds": 5.531208333333334,
+          "clips": [
+            {
+              "id": "voice-campaign-kerr-f829eb68f234",
+              "text": "Then I know which depot desk you asked for, not what's in your case. Keep those two things separate.",
+              "path": "public/audio/connected-performance-v1/voice-campaign-kerr-f829eb68f234.mp3",
+              "sha256": "fe5a2f979f807968e127863fe6a9653aa83c3a5a3d88c8c7d6658489995f020e",
+              "startSeconds": 0.0,
+              "durationSeconds": 5.531208333333334
+            }
+          ],
+          "masterPath": "/workspace/generated_audio/expressive-performance/mixes/private-directed.wav",
+          "masterSha256": "b619e6b276f54e1efeeec2de1af5f7b310d4a77a60727f2e7a5c5f9035a63d33",
+          "peak": 0.2654009163379669,
+          "voiceRms": 0.03699309751391411,
+          "bedRms": 0.0017435550689697266
+        }
+      ]
+    },
+    {
+      "checkpoint": "known-breach",
+      "route": "district-breach-denied",
+      "scene": "act2_district_kerr_reply",
+      "choice": "district-kerr-deny",
+      "sceneText": "\u201cThen I know which depot desk you asked for, not what's in your case. Keep those two things separate.\u201d\n\n\u201cMy name went into their register after you promised it wouldn't. Say that before you ask me for another introduction.\u201d\n\nThe counter offers registered sorting work under your own handle. An introduction supplies no payment, recovery, treatment or source. Any earlier breach stays recorded.",
+      "sound": {
+        "mood": "quiet",
+        "district": "street"
+      },
+      "focus": "normal",
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-street.flac",
+      "ambienceSha256": "61b3bba5d867990b3cb85ef7317d49c3b0465eab2057d44d0a123b53e87cfe0d",
+      "versions": [
+        {
+          "version": "before",
+          "startSeconds": 85.16245833333333,
+          "durationSeconds": 11.947916666666666,
+          "clips": [
+            {
+              "id": "voice-campaign-kerr-f829eb68f234",
+              "text": "Then I know which depot desk you asked for, not what's in your case. Keep those two things separate.",
+              "path": "public/audio/voice-campaign-kerr-f829eb68f234.mp3",
+              "sha256": "181bdff21515e3dd7244fc8d2346fdb3125ef84361a6abc88079012fc96d20dd",
+              "startSeconds": 0.0,
+              "durationSeconds": 5.321958333333333
+            },
+            {
+              "id": "voice-campaign-kerr-e8022742ad26",
+              "text": "My name went into their register after you promised it wouldn't. Say that before you ask me for another introduction.",
+              "path": "public/audio/voice-campaign-kerr-e8022742ad26.mp3",
+              "sha256": "1dc1eb6e6e2f1203c290800caedda3a1ea0a5cffa3b59b628f449492f8d5f090",
+              "startSeconds": 5.441958333333333,
+              "durationSeconds": 6.505958333333333
+            }
+          ],
+          "masterPath": "/workspace/generated_audio/expressive-performance/mixes/known-breach-before.wav",
+          "masterSha256": "73cb56e26bdc3b2776dc21f29c9ca5c82208f482d420cf8f7494e6ba4eab8b29",
+          "peak": 0.4091396629810333,
+          "voiceRms": 0.05488560348749161,
+          "bedRms": 0.0016590193845331669
+        },
+        {
+          "version": "directed",
+          "startSeconds": 98.110375,
+          "durationSeconds": 12.436541666666667,
+          "clips": [
+            {
+              "id": "voice-campaign-kerr-f829eb68f234",
+              "text": "Then I know which depot desk you asked for, not what's in your case. Keep those two things separate.",
+              "path": "public/audio/connected-performance-v1/voice-campaign-kerr-f829eb68f234.mp3",
+              "sha256": "fe5a2f979f807968e127863fe6a9653aa83c3a5a3d88c8c7d6658489995f020e",
+              "startSeconds": 0.0,
+              "durationSeconds": 5.531208333333334
+            },
+            {
+              "id": "voice-campaign-kerr-e8022742ad26",
+              "text": "My name went into their register after you promised it wouldn't. Say that before you ask me for another introduction.",
+              "path": "public/audio/connected-performance-v1/voice-campaign-kerr-e8022742ad26.mp3",
+              "sha256": "a541ea49a17e95abf354b20aceaa0e97c47076249a1a071b13b305c3500dded7",
+              "startSeconds": 5.651208333333333,
+              "durationSeconds": 6.785333333333333
+            }
+          ],
+          "masterPath": "/workspace/generated_audio/expressive-performance/mixes/known-breach-directed.wav",
+          "masterSha256": "d6e403520bc1e73800540d837a4d49c005ddc996d9d15cc18ab1a4e9ad26bfde",
+          "peak": 0.34868595004081726,
+          "voiceRms": 0.036251671612262726,
+          "bedRms": 0.001645852462388575
+        }
+      ]
+    },
+    {
+      "checkpoint": "refused",
+      "route": "district-breach-denied",
+      "scene": "act2_district_kerr_reply",
+      "choice": "district-leave-kerr",
+      "sceneText": "\u201cThen I know which depot desk you asked for, not what's in your case. Keep those two things separate.\u201d\n\n\u201cThen I won't introduce you. The counter can answer for itself. I won't answer for a promise you won't name.\u201d\n\nThe counter offers registered sorting work under your own handle. An introduction supplies no payment, recovery, treatment or source. Any earlier breach stays recorded.",
+      "sound": {
+        "mood": "quiet",
+        "district": "street"
+      },
+      "focus": "normal",
+      "musicPath": "public/audio/theme-quiet.flac",
+      "musicSha256": "e1180a28dbce73ca959b54c9193f70191882fb8fe37e687524972c5f5782a692",
+      "ambiencePath": "public/audio/ambience-street.flac",
+      "ambienceSha256": "61b3bba5d867990b3cb85ef7317d49c3b0465eab2057d44d0a123b53e87cfe0d",
+      "versions": [
+        {
+          "version": "before",
+          "startSeconds": 111.54691666666666,
+          "durationSeconds": 12.571916666666667,
+          "clips": [
+            {
+              "id": "voice-campaign-kerr-f829eb68f234",
+              "text": "Then I know which depot desk you asked for, not what's in your case. Keep those two things separate.",
+              "path": "public/audio/voice-campaign-kerr-f829eb68f234.mp3",
+              "sha256": "181bdff21515e3dd7244fc8d2346fdb3125ef84361a6abc88079012fc96d20dd",
+              "startSeconds": 0.0,
+              "durationSeconds": 5.321958333333333
+            },
+            {
+              "id": "voice-campaign-kerr-1903a3d3a421",
+              "text": "Then I won't introduce you. The counter can answer for itself. I won't answer for a promise you won't name.",
+              "path": "public/audio/voice-campaign-kerr-1903a3d3a421.mp3",
+              "sha256": "3ef85b7ef5a09e0a6cb7cbbed23127ba032942a0dd1dc019aaa8b68a49567dc5",
+              "startSeconds": 5.441958333333333,
+              "durationSeconds": 7.129958333333334
+            }
+          ],
+          "masterPath": "/workspace/generated_audio/expressive-performance/mixes/refused-before.wav",
+          "masterSha256": "b34cddd4372750101adec43271f44b737907fbab50a6cc39e5364a5373102931",
+          "peak": 0.4091396629810333,
+          "voiceRms": 0.0541948527097702,
+          "bedRms": 0.0016442794585600495
+        },
+        {
+          "version": "directed",
+          "startSeconds": 125.11883333333333,
+          "durationSeconds": 12.661583333333333,
+          "clips": [
+            {
+              "id": "voice-campaign-kerr-f829eb68f234",
+              "text": "Then I know which depot desk you asked for, not what's in your case. Keep those two things separate.",
+              "path": "public/audio/connected-performance-v1/voice-campaign-kerr-f829eb68f234.mp3",
+              "sha256": "fe5a2f979f807968e127863fe6a9653aa83c3a5a3d88c8c7d6658489995f020e",
+              "startSeconds": 0.0,
+              "durationSeconds": 5.531208333333334
+            },
+            {
+              "id": "voice-campaign-kerr-1903a3d3a421",
+              "text": "Then I won't introduce you. The counter can answer for itself. I won't answer for a promise you won't name.",
+              "path": "public/audio/connected-performance-v1/voice-campaign-kerr-1903a3d3a421.mp3",
+              "sha256": "60c41b9cb0077ff793a52ba14559e97e213d4224e1420ee7133597333e0a3073",
+              "startSeconds": 5.651208333333333,
+              "durationSeconds": 7.010375
+            }
+          ],
+          "masterPath": "/workspace/generated_audio/expressive-performance/mixes/refused-directed.wav",
+          "masterSha256": "c1dfc1dabe1ad8206c46c1862c6a597ec728619560ad908675162c59b1a552c5",
+          "peak": 0.296354740858078,
+          "voiceRms": 0.035989657044410706,
+          "bedRms": 0.001643129624426365
+        }
+      ]
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+import { isConnectedPerformanceFile } from "../qa/production/connected-performance-media";
 import routing from "../qa/media/return-routing.json";
 import freight from "../qa/media/freight-craft.json";
 import payoff from "../qa/media/emotional-payoff.json";
@@ -21,7 +22,7 @@ import transcripts from "../qa/media/witness-return-dialogue-transcripts.json";
 
 const hash = (data: string | Buffer) => createHash("sha256").update(data).digest("hex");
 const load = (name: string) => JSON.parse(readFileSync(`qa/routes/${name}`, "utf8")) as ReplaySpec;
-const files = (path: string): string[] => readdirSync(path, { withFileTypes: true }).flatMap(row => row.isDirectory() ? files(`${path}/${row.name}`) : [`${path}/${row.name}`]).filter(p => !routing.newMedia.includes(p) && !routing.newRoutes.includes(p.replace(/^qa\/routes\//, "")));
+const files = (path: string): string[] => readdirSync(path, { withFileTypes: true }).flatMap(row => row.isDirectory() ? files(`${path}/${row.name}`) : [`${path}/${row.name}`]).filter(p => !isConnectedPerformanceFile(p) && !routing.newMedia.includes(p) && !routing.newRoutes.includes(p.replace(/^qa\/routes\//, "")));
 const take = (state: ReturnType<typeof createCharacter>, id: string, roll?: number) => {
   const choice = presentChoices(state, getScene(state.sceneId)).find(c => c.id === id && c.enabled);
   assert.ok(choice, `${state.sceneId}/${id}`); return commitChoice(state, choice, choice.check ? { roll: roll! } : undefined).state;
