@@ -1,0 +1,91 @@
+{
+  "referenceRevision": "10b370648602c7e381df290c53b9ced1a7eeb39a",
+  "method": "Detached git archive of lib/qa-media from the published commit. Newly authored current-feature controls compare every complete state/prose/choice/voice/art visit against that actual preceding runtime. No historical report is rewritten.",
+  "controls": [
+    {
+      "profile": "expansion-chrome-quiet",
+      "control": "qa/editorial/consequential-expansion-controls/chrome-quiet.json",
+      "visits": 83,
+      "sha256": "d9b02c78463913254d1931ff1e63b7ba46840cc7ac25c1dd6f47232884a9caf5"
+    },
+    {
+      "profile": "expansion-chrome-names",
+      "control": "qa/editorial/consequential-expansion-controls/chrome-names.json",
+      "visits": 83,
+      "sha256": "8be684e137ffd7b607789c1ee59f2777ee0650873131e81bffd9401f58d307bd"
+    },
+    {
+      "profile": "expansion-chrome-witness",
+      "control": "qa/editorial/consequential-expansion-controls/chrome-witness.json",
+      "visits": 83,
+      "sha256": "3ac10d99d1257c27c128c2350f805ce3e652292763e23a0998610637d7ec7a79"
+    },
+    {
+      "profile": "expansion-chrome-listed",
+      "control": "qa/editorial/consequential-expansion-controls/chrome-listed.json",
+      "visits": 83,
+      "sha256": "071de471f1004edc7b48112b711d4b75abd196feea0b7bc9d23ac80cf7a2776f"
+    },
+    {
+      "profile": "expansion-face-quiet",
+      "control": "qa/editorial/consequential-expansion-controls/face-quiet.json",
+      "visits": 83,
+      "sha256": "c6bf7f22655962edacf7744302d1c61ac6da5c25bd52bce26ad8480be8447948"
+    },
+    {
+      "profile": "expansion-face-names",
+      "control": "qa/editorial/consequential-expansion-controls/face-names.json",
+      "visits": 83,
+      "sha256": "caf559001859b82f437b900a2c507ac6a88b3ee141764308e15784f4fc1ca881"
+    },
+    {
+      "profile": "expansion-face-witness",
+      "control": "qa/editorial/consequential-expansion-controls/face-witness.json",
+      "visits": 83,
+      "sha256": "3fac5b6af28e7b4c60cc7da16dbe3af1d7ec61e0907fab19cea53a6dc9b9781d"
+    },
+    {
+      "profile": "expansion-face-listed",
+      "control": "qa/editorial/consequential-expansion-controls/face-listed.json",
+      "visits": 83,
+      "sha256": "2463b1903c5aa5a845f4fdcf04e4137cb850fe6af5e92a5fdafcc316a849429c"
+    },
+    {
+      "profile": "expansion-chrome-scarce",
+      "control": "qa/editorial/consequential-expansion-controls/chrome-scarce.json",
+      "visits": 68,
+      "sha256": "cdc39b392c203aae15cba3527da330324c9aee0a609dc61613febd3800d321c9"
+    },
+    {
+      "profile": "expansion-chrome-refused",
+      "control": "qa/editorial/consequential-expansion-controls/chrome-refused.json",
+      "visits": 97,
+      "sha256": "0c076b88bf15679332d63e7bc164b97e8f6073211e75ab2e6ac01e24e4e1a8b5"
+    },
+    {
+      "profile": "expansion-chrome-withheld",
+      "control": "qa/editorial/consequential-expansion-controls/chrome-withheld.json",
+      "visits": 82,
+      "sha256": "f39a74f1ffe826a4857215c46ebc94852aed97fab036b879ada664ef56b4beb2"
+    },
+    {
+      "profile": "expansion-face-scarce",
+      "control": "qa/editorial/consequential-expansion-controls/face-scarce.json",
+      "visits": 71,
+      "sha256": "ee6cc2d0ca905e4d1f4eab6ed2cf003c3f2e7bdcd29d458247f7ae465f3eca1a"
+    },
+    {
+      "profile": "expansion-face-refused",
+      "control": "qa/editorial/consequential-expansion-controls/face-refused.json",
+      "visits": 95,
+      "sha256": "2ef3e29dcf7a8000b08f7e6ed3925ae06c91530417f06c968c25212f4de9c81b"
+    },
+    {
+      "profile": "expansion-face-withheld",
+      "control": "qa/editorial/consequential-expansion-controls/face-withheld.json",
+      "visits": 82,
+      "sha256": "a1a2b870493a2b63ce4031d96061c2d733d507c8754c9a3e0a879986696674eb"
+    }
+  ],
+  "visits": 1159
+}

@@ -33,7 +33,7 @@ Prototype the pilot through actual play. Once it works, apply its dramatic gramm
 
 ## Phase 17 — practical build choices and consequential routes
 
-The [filing-bench pilot](CONSEQUENTIAL_METHODS_PHASE17.md) adds immediate Chrome probe intake and an owned Face public declaration, with a distinct eight-creds short task competing against the existing twenty-creds full shift. This is the first implementation; current-cohort coverage of the other finales and broader scarcity/contact paths remains explicit follow-up work. Grade remains 8.9 provisional.
+The [filing-bench pilot](CONSEQUENTIAL_METHODS_PHASE17.md) and [ending/boundary expansion](CONSEQUENTIAL_EXPANSION_PHASE17.md) cover the two deliberate immediate methods, their eight-versus-twenty wage opportunity, both builds through all four finales, genuine zero-creds/high-strain work and refused/withheld contact paths. New-run Face records now distinguish committed exposure from the actual capped increase. Exact-commit release proof remains separate from candidate checks; Phase 18 follows verified publication. Grade remains 8.9 provisional.
 
 **Purpose:** extend depth beyond changing a success percentage. Nerve freight and Ghost routing provide useful precedents; their presence does not make every encounter equally deep.
 

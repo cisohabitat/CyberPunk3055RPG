@@ -66,6 +66,7 @@ export function createCharacter(input: {
   seraShift?: boolean;
   dramaticBeats?: boolean;
   consequentialMethods?: boolean;
+  consequentialExpansion?: boolean;
 }): GameState {
   const origin = ORIGINS[input.origin];
   const complication = input.complication ?? null;
@@ -105,6 +106,8 @@ export function createCharacter(input: {
   if (input.dramaticBeats) flags.dramatic_beats_enabled = true;
   if (input.consequentialMethods !== undefined && typeof input.consequentialMethods !== "boolean") throw new Error("Invalid consequential methods option");
   if (input.consequentialMethods) flags.consequential_methods_enabled = true;
+  if (input.consequentialExpansion !== undefined && typeof input.consequentialExpansion !== "boolean") throw new Error("Invalid consequential expansion option");
+  if (input.consequentialExpansion) flags.consequential_expansion_enabled = true;
   if (input.returnRouting) flags.return_routing_enabled = true;
   if (complication === "on-file") flags.on_file = true;
   if (complication === "debt") flags.debt = true;

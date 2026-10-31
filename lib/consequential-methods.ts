@@ -6,12 +6,19 @@ const RECORDS = {
   chrome: 'You used your owned Archive Probe to compare three workers with two recipients and observe the bounded heading-correction intake in one depot action. Two strain and a device-service trace were committed; the probe remains yours. A review reference confirms intake, not source authentication or a finding.',
   face: 'You signed and lodged your own public process-only declaration in one depot action. Helion exposure increased by two. Your signature remains; nobody co-signed or waived work for you. A review reference confirms intake, not source authentication or witness permission.',
 } as const;
+const exposureRecord = (amount: number) => `You signed and lodged your own public process-only declaration in one depot action. The filing committed Helion +2 subject to the existing cap; the actual exposure increase was ${amount}. Your signature remains; nobody co-signed or waived work for you. A review reference confirms intake, not source authentication or witness permission.`;
+/** The measured amount is retained at commitment, not inferred from later standing. */
+export function consequentialExposure(s: GameState): number | undefined {
+  if (!s.flags.consequential_expansion_enabled) return;
+  return [0, 1, 2].find(n => s.journal.some(j => j.id === 'consequential-procedure' && j.kind === 'fact' && j.text === exposureRecord(n)));
+}
 
 /** A method flag alone cannot supply an observed procedure or earned wage. */
 export function consequentialMethod(s: GameState): 'chrome' | 'face' | undefined {
   if (!s.flags.consequential_methods_enabled || !s.flags.technique_complete || !s.flags.technique_review_reference) return;
   return (['chrome', 'face'] as const).find(k => s.flags[`consequential_${k}`] && s.flags[`technique_${k}`]
-    && s.journal.some(j => j.id === 'consequential-procedure' && j.kind === 'fact' && j.text === RECORDS[k]));
+    && (s.journal.some(j => j.id === 'consequential-procedure' && j.kind === 'fact' && j.text === RECORDS[k])
+      || k === 'face' && consequentialExposure(s) !== undefined));
 }
 
 function express(s: GameState, stat: 'chrome' | 'face'): Effect {
@@ -19,7 +26,7 @@ function express(s: GameState, stat: 'chrome' | 'face'): Effect {
   return { ...begun, ...(stat === 'chrome' ? { strain: 2 } : {}), factions: { wards: 1, ...(stat === 'face' ? { helion: 2 } : {}) },
     flags: [...begun.flags!, 'technique_complete', 'technique_review_reference', 'district_correction_carried', `consequential_${stat}`,
       stat === 'chrome' ? 'technique_portable_fault' : 'technique_filing_signed'],
-    journal: [{ id: 'consequential-procedure', kind: 'fact', text: RECORDS[stat] },
+    journal: [{ id: 'consequential-procedure', kind: 'fact', text: stat === 'face' && s.flags.consequential_expansion_enabled ? exposureRecord(Math.min(5, s.factions.helion + 2) - s.factions.helion) : RECORDS[stat] },
       { id: 'technique-review', kind: 'fact', text: 'Your bounded procedure obtained a depot review reference. Intake alone settles no correction, issuing key, employment inquiry or witness permission.' }],
   };
 }
@@ -58,7 +65,7 @@ export function consequentialText(s: GameState, id: string, text: string): strin
   if (id === 'act2_technique_face') return `${text}\n\nUnder a public review, trained Face can lodge your own process-only declaration immediately. One action replaces the two-step filing at the cost of two additional Helion exposure and a public signature. Nobody else's signature or time is offered. The private two-step filing remains available. With an eligible introduction, the saved action can fund an eight-creds short sorting task instead of the twenty-creds full shift.`;
   const method = consequentialMethod(s);
   const paid = s.flags.consequential_short_shift && s.journal.some(j => j.id === 'consequential-short-shift');
-  if (method && id === 'act2_technique_result') return `${text}\n\n${method === 'chrome' ? 'The probe is back in its sleeve. Two strain bought an observed one-action intake; the device-service trace remains.' : 'The public docket carries your own signature. The one-action intake added two Helion exposure, subject to the existing cap; nobody co-signed or waived work.'} The reference confirms review intake only.`;
+  if (method && id === 'act2_technique_result') return `${text}\n\n${method === 'chrome' ? 'The probe is back in its sleeve. Two strain bought an observed one-action intake; the device-service trace remains.' : consequentialExposure(s) !== undefined ? `The public docket carries your own signature. The filing committed Helion +2; its actual exposure increase was ${consequentialExposure(s)} after the cap. Nobody co-signed or waived work.` : 'The public docket carries your own signature. The one-action intake added two Helion exposure, subject to the existing cap; nobody co-signed or waived work.'} The reference confirms review intake only.`;
   if (method && id === 'act2_district_canal') return `${text}\n\n${paid ? 'The single dispatch tray is empty. Its eight-creds short-task wage is paid; the full sorting shift was not worked.' : `${districtRemaining(s)} depot actions remain after the immediate intake. No short-task wage is due until you actually sort a tray under an eligible introduction.`}`;
   if (method && id === 'act3_district_return') return `${text}\n\n${method === 'chrome' ? 'Your probe came home; its service trace stayed at the depot.' : 'Your public declaration still carries your signature, without a co-signer.'} ${paid ? 'The separate short dispatch task paid eight creds; it was not the full sorting shift.' : 'You left without a short-task wage.'}`;
   return text;

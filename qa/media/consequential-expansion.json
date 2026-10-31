@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "phase": "17 expansion",
+  "baseline": "qa/editorial/consequential-expansion-baseline.json",
+  "baselineSha256": "797837aed0afdb1e5a48c1a1378ac707448878120517aa9325c407852038a446",
+  "newMedia": [],
+  "newScenes": [],
+  "newRoutes": [
+    "consequential-expansion/chrome-quiet.json",
+    "consequential-expansion/chrome-names.json",
+    "consequential-expansion/chrome-witness.json",
+    "consequential-expansion/chrome-listed.json",
+    "consequential-expansion/face-quiet.json",
+    "consequential-expansion/face-names.json",
+    "consequential-expansion/face-witness.json",
+    "consequential-expansion/face-listed.json",
+    "consequential-expansion/chrome-scarce.json",
+    "consequential-expansion/chrome-refused.json",
+    "consequential-expansion/chrome-withheld.json",
+    "consequential-expansion/face-scarce.json",
+    "consequential-expansion/face-refused.json",
+    "consequential-expansion/face-withheld.json"
+  ],
+  "newManifests": [
+    "qa/media/consequential-expansion.json"
+  ],
+  "newFlags": [
+    "consequential_expansion_enabled"
+  ],
+  "changedScenes": [
+    "act2_technique_result"
+  ],
+  "changedRecords": [
+    "consequential-procedure"
+  ],
+  "artDecision": "Existing neutral correction bench and Dispatcher portrait remain valid. This change measures the actual capped standing difference in written narration and the journal. No new spoken quotation, actor, depicted signature, payment or source outcome; all859 media deliveries and preceding manifests remain exact. Other endings use their existing earned-fact art and voices."
+}

@@ -1,0 +1,198 @@
+{
+  "rows": [
+    {
+      "scene": "ending_quiet",
+      "art": {
+        "src": "/art/finale-quiet.jpg",
+        "small": "/art/finale-quiet-small.jpg",
+        "caption": "Left to the Rain \u00b7 the stair remains",
+        "description": "Rain falls over the empty memorial stair while Sera stands aside with her pencil held still."
+      },
+      "portrait": "/art/sera-attentive.jpg",
+      "voices": [
+        {
+          "key": "bd444ea27e624368",
+          "id": "voice-campaign-emotional-payoff-8b41fca71d2b",
+          "scene": "ending_quiet",
+          "sceneSpeaker": "Sera",
+          "speaker": "Sera",
+          "quote": "Mind the broken step. It's the second one down.",
+          "text": "Mind the broken step. It's the second one down.",
+          "part": 1
+        }
+      ],
+      "reason": "Existing earned-finale composition or neutral filing bench. No new source, signature by another actor, transferred wage or resolved inquiry is depicted; actual quoted words and actor bindings are unchanged."
+    },
+    {
+      "scene": "ending_names",
+      "art": {
+        "src": "/art/finale-names.jpg",
+        "small": "/art/finale-names-small.jpg",
+        "caption": "Said Aloud \u00b7 the pencil moves",
+        "description": "Sera writes indistinct marks on rain-worn memorial concrete, keeping a place for the names without displaying private identities."
+      },
+      "portrait": "/art/sera-attentive.jpg",
+      "voices": [
+        {
+          "key": "42df45964ad11481",
+          "id": "voice-campaign-emotional-payoff-0a1b8bb22589",
+          "scene": "ending_names",
+          "sceneSpeaker": "Sera",
+          "speaker": "Sera",
+          "quote": "Wait. Let me hear that one again.",
+          "text": "Wait. Let me hear that one again.",
+          "part": 1
+        }
+      ],
+      "reason": "Existing earned-finale composition or neutral filing bench. No new source, signature by another actor, transferred wage or resolved inquiry is depicted; actual quoted words and actor bindings are unchanged."
+    },
+    {
+      "scene": "ending_witness",
+      "art": {
+        "src": "/art/finale-witness.jpg",
+        "small": "/art/finale-witness-small.jpg",
+        "caption": "Already Loose \u00b7 a late witness",
+        "description": "Sera listens beside the rain-worn wall, pencil poised over an unmarked notebook; no absolution or inquiry outcome is depicted."
+      },
+      "portrait": "/art/sera-listening.jpg",
+      "voices": [
+        {
+          "key": "4b1845996e82a968",
+          "id": "voice-campaign-emotional-payoff-52ad3344069a",
+          "scene": "ending_witness",
+          "sceneSpeaker": "Sera",
+          "speaker": "Sera",
+          "quote": "Your name can stay. Leave theirs where they are.",
+          "text": "Your name can stay. Leave theirs where they are.",
+          "part": 1
+        }
+      ],
+      "reason": "Existing earned-finale composition or neutral filing bench. No new source, signature by another actor, transferred wage or resolved inquiry is depicted; actual quoted words and actor bindings are unchanged."
+    },
+    {
+      "scene": "ending_listed",
+      "art": {
+        "src": "/art/finale-listed.jpg",
+        "small": "/art/finale-listed-small.jpg",
+        "caption": "On the Folio \u00b7 the page is taken",
+        "description": "Ives closes a black folio at the memorial stair while Sera retains her pencil and watches."
+      },
+      "portrait": "/art/ives.jpg",
+      "voices": [
+        {
+          "key": "dbf061397b330252",
+          "id": "voice-campaign-emotional-payoff-26350d370631",
+          "scene": "ending_listed",
+          "sceneSpeaker": "Ives",
+          "speaker": "Ives",
+          "quote": "Mind the edge. Keep that page in one piece.",
+          "text": "Mind the edge. Keep that page in one piece.",
+          "part": 1
+        }
+      ],
+      "reason": "Existing earned-finale composition or neutral filing bench. No new source, signature by another actor, transferred wage or resolved inquiry is depicted; actual quoted words and actor bindings are unchanged."
+    },
+    {
+      "scene": "act2_technique_result",
+      "art": {
+        "src": "/art/correction-bench.jpg",
+        "small": "/art/correction-bench-small.jpg",
+        "caption": "Canal depot \u00b7 two records stay separate",
+        "description": "A blank comparison sheet and closed opaque sleeve rest in separate trays beside an unpowered reference display on a lamp-lit filing bench. No signature, review receipt, authentication, personal identity or successful outcome is displayed."
+      },
+      "portrait": "/art/dispatcher-portrait.jpg",
+      "voices": [
+        {
+          "id": "voice-campaign-dispatcher-8bf37188cd15",
+          "key": "eb41331eb6629fe6",
+          "scene": "act2_technique_result",
+          "sceneSpeaker": "Dispatcher",
+          "speaker": "Dispatcher",
+          "quote": "Received for review. That's what the reference says. The correction still needs an answer.",
+          "text": "Received for review. That's what the reference says. The correction still needs an answer.",
+          "part": 0
+        }
+      ],
+      "reason": "Existing earned-finale composition or neutral filing bench. No new source, signature by another actor, transferred wage or resolved inquiry is depicted; actual quoted words and actor bindings are unchanged."
+    }
+  ],
+  "paths": [
+    {
+      "path": "/art/correction-bench-small.jpg",
+      "sha256": "3ddac00a6bb46f325776b6bab033c9be6f38433ecdafade78e795e9c257ad653"
+    },
+    {
+      "path": "/art/correction-bench.jpg",
+      "sha256": "736b7458376c81ed74a7ee6ba77b361a8cd84571512b70cc3feefeab547127c6"
+    },
+    {
+      "path": "/art/dispatcher-portrait.jpg",
+      "sha256": "a6f0ab256de0c7506592ab47d7bef73c4bfcba9d820d43f4dc78923aed6d8453"
+    },
+    {
+      "path": "/art/finale-listed-small.jpg",
+      "sha256": "adc674abba2e4e39af79a919cce5bfc5c9d9a4ff74deff6285eed220e7856f37"
+    },
+    {
+      "path": "/art/finale-listed.jpg",
+      "sha256": "097e29b0e4558bcbfccfd9f2431b0cdc80c810d01b313b1a29407df4ebec1954"
+    },
+    {
+      "path": "/art/finale-names-small.jpg",
+      "sha256": "8cd0509d1862947e9fc82878b37f7d48ce76b38bcfaf888eb6a5db314bf6c269"
+    },
+    {
+      "path": "/art/finale-names.jpg",
+      "sha256": "7a22dc054a9e6700b8a688dedc17f02dc672efe4cccaa979082e07ff2153e72c"
+    },
+    {
+      "path": "/art/finale-quiet-small.jpg",
+      "sha256": "4341796646fc70459af7481f8df71720e2f37c304605ec687d09d75bb6b7560c"
+    },
+    {
+      "path": "/art/finale-quiet.jpg",
+      "sha256": "ac9eaf092f9d3e79f6ddc9efdf5b306e0f0838cad1414f21f7159cc7c5061074"
+    },
+    {
+      "path": "/art/finale-witness-small.jpg",
+      "sha256": "5c00c4fd455cc0e3f819c5ca1919a907eeba363838303dba0f7d3679fdb8f719"
+    },
+    {
+      "path": "/art/finale-witness.jpg",
+      "sha256": "08b5ebc44ac43c137ac792901092963f3f21ab35a5ae12f7390a3125f3e66c37"
+    },
+    {
+      "path": "/art/ives.jpg",
+      "sha256": "0fbff0f64074ee10c85fb6e4f475f2c6df11b559b6a1ab11e78af4b4ed5e1fd8"
+    },
+    {
+      "path": "/art/sera-attentive.jpg",
+      "sha256": "a5a6399fa6e6e924b7f97eda2b75d83895ef2500783c52ba5ddfd97b0119ed4a"
+    },
+    {
+      "path": "/art/sera-listening.jpg",
+      "sha256": "2f6f082f184eb1f8bd6e44e64b8a92facde781d1a7f8d572a794a335a87e4369"
+    },
+    {
+      "path": "/audio/voice-campaign-dispatcher-8bf37188cd15.mp3",
+      "sha256": "0426a0650109b78140aec01cf6162f64550092c4194abeedb50da0d033ef3311"
+    },
+    {
+      "path": "/audio/voice-campaign-emotional-payoff-0a1b8bb22589.mp3",
+      "sha256": "74917bdbd4d7b873f2b5871a6cf53aabd5fe416f290c5b72967e87ad1d605de0"
+    },
+    {
+      "path": "/audio/voice-campaign-emotional-payoff-26350d370631.mp3",
+      "sha256": "eefda43383f710b5c096118fca649e26c54dc0fa1cccb2df092ecdfb32f98ab4"
+    },
+    {
+      "path": "/audio/voice-campaign-emotional-payoff-52ad3344069a.mp3",
+      "sha256": "31cc2e900ef1826edfc9414e12e73e75e90a9b495c2d9e036e0175b0831e5cd3"
+    },
+    {
+      "path": "/audio/voice-campaign-emotional-payoff-8b41fca71d2b.mp3",
+      "sha256": "d23aa919bba9c3dc4078e86c135723623961db98b464e0b2e6a947be868feb35"
+    }
+  ],
+  "visualInspection": "The four1200x800 original finale deliveries were viewed at delivery resolution. Visible hands/arms connect to their depicted actors and objects; no additional limb defect was observed. Sera remains the records/wall actor and Ives holds the memorial folio in the listed state. No new artwork is claimed."
+}
