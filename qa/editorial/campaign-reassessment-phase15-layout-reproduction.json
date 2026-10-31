@@ -1,0 +1,1089 @@
+{
+  "revision": "632f29e9d38eb61f86c494f8f7731dff8e555bb0",
+  "dirty": true,
+  "url": "https://cyberpunk3055rpg.vercel.app",
+  "environment": {
+    "browser": "Actual Chromium",
+    "browserVersion": "151.0.7922.173",
+    "viewport": "synthetic",
+    "layout": "enlarged"
+  },
+  "baseline": {
+    "path": "qa/editorial/decision-flow-baseline.json",
+    "sha256": "8df3961cea4acd02d6f04780c7e0a9c1e2045058dfde782a6dfbbdeb69bed026"
+  },
+  "rows": [
+    {
+      "id": "act2_workshop-320",
+      "scene": "act2_workshop",
+      "route": "freight-craft/harness-listed",
+      "choice": "buy-chair-harness",
+      "width": 320,
+      "artwork": "none",
+      "metrics": {
+        "prose": "Quill has laid four cases on the repair bench. None is an all-purpose answer. A probe belongs at a reader, a harness under a chair, a desk guide beside a form, and a shroud on a service route.\n\n'One case in this shipment for you,' he says. 'Keep enough for the person on the other end of the job.'\n\nAn unregistered clinic room for Nia costs ninety creds. Staffed recovery for you costs forty-five. Tools can improve a route; they reserve no room and buy no person's consent. You can leave the cases and come back before the week closes.",
+        "proseToChoiceSectionPx": 249,
+        "proseToFirstFollowingControlPx": 131,
+        "firstFollowingControl": "Voice transcript",
+        "proseToFirstTaskActionPx": 1726,
+        "firstTaskAction": "1\nBuy the Archive Probe.\nDetails\n140 creds. +2 to scanner inspection, archive index preparation, receipt authentication, and the depot sensor ramp. One field kit this week; it stays in your inventory.\nChanges\n-140 cr \u00b7 Gain Archive Probe",
+        "proseToFirstCanonicalButtonPx": 1635,
+        "pageHeight": 8630,
+        "overflow": false,
+        "actions": [
+          {
+            "id": "choice-buy-archive-probe",
+            "text": "1\nBuy the Archive Probe.\nDetails\n140 creds. +2 to scanner inspection, archive index preparation, receipt authentication, and the depot sensor ramp. One field kit this week; it stays in your inventory.\nChanges\n-140 cr \u00b7 Gain Archive Probe",
+            "disabled": false,
+            "gap": 1726,
+            "height": 547.515625
+          },
+          {
+            "id": "choice-buy-chair-harness",
+            "text": "2\nBuy the Chair Harness.\nDetails\n120 creds. +2 to chair preparation, physical witness transfer, archive hatch preparation, physical ledger inspection, carrying sealed clinic cards, the shelter valve, and carrying Kerr\u2019s case. A braced chair permits a no-roll transfer; Steady hands avoids its added strain. One field kit this week; it stays in your inventory.\nChanges\n-120 cr \u00b7 Gain Chair Harness",
+            "disabled": false,
+            "gap": 2966,
+            "height": 839.65625
+          },
+          {
+            "id": "choice-buy-desk-guide",
+            "text": "3\nBuy the Clinic Desk Guide.\nDetails\n100 creds. +2 to arranging a volunteer escort, negotiating a checkpoint transfer, private clinic dispatch, and the depot counter. It supplies procedure, not a forged signature. One field kit this week; it stays in your inventory.\nChanges\n-100 cr \u00b7 Gain Clinic Desk Guide",
+            "disabled": false,
+            "gap": 4372,
+            "height": 671.6875
+          },
+          {
+            "id": "choice-buy-route-shroud",
+            "text": "4\nBuy the Route Shroud.\nDetails\n140 creds. +2 to patrol scouting, service-hatch witness transfer, archive interval preparation, carbon retrieval, and the depot patrol gap. One field kit this week; it stays in your inventory.\nChanges\n-140 cr \u00b7 Gain Route Shroud",
+            "disabled": false,
+            "gap": 5609,
+            "height": 604.5
+          },
+          {
+            "id": "choice-leave-workshop",
+            "text": "5\nKeep the care budget. Return to the district board.",
+            "disabled": false,
+            "gap": 6276,
+            "height": 206.96875
+          }
+        ]
+      },
+      "beforeFirstActionPx": 5541,
+      "firstActionReduction": 0.688503880166035,
+      "violations": [],
+      "errors": [],
+      "captures": {
+        "entry": "/tmp/saint-phase15/reproduction/act2_workshop-320-entry.png",
+        "reading": "/tmp/saint-phase15/reproduction/act2_workshop-320-reading.png",
+        "action": "/tmp/saint-phase15/reproduction/act2_workshop-320-action.png"
+      },
+      "method": "Actual public UI at legal saved checkpoints. Enlarged type/high contrast/reduced motion, full scene; 320px no art, others illustrated. Reading/action captures use diagnostic scrolling; entry goal visibility is checked first. No physical-device, unfamiliar-player, screen-reader listening or reading-speed claim."
+    },
+    {
+      "id": "act2_workshop-390",
+      "scene": "act2_workshop",
+      "route": "freight-craft/harness-listed",
+      "choice": "buy-chair-harness",
+      "width": 390,
+      "artwork": "full",
+      "metrics": {
+        "prose": "Quill has laid four cases on the repair bench. None is an all-purpose answer. A probe belongs at a reader, a harness under a chair, a desk guide beside a form, and a shroud on a service route.\n\n'One case in this shipment for you,' he says. 'Keep enough for the person on the other end of the job.'\n\nAn unregistered clinic room for Nia costs ninety creds. Staffed recovery for you costs forty-five. Tools can improve a route; they reserve no room and buy no person's consent. You can leave the cases and come back before the week closes.",
+        "proseToChoiceSectionPx": 200,
+        "proseToFirstFollowingControlPx": 82,
+        "firstFollowingControl": "Voice transcript",
+        "proseToFirstTaskActionPx": 1409,
+        "firstTaskAction": "1\nBuy the Archive Probe.\nDetails\n140 creds. +2 to scanner inspection, archive index preparation, receipt authentication, and the depot sensor ramp. One field kit this week; it stays in your inventory.\nChanges\n-140 cr \u00b7 Gain Archive Probe",
+        "proseToFirstCanonicalButtonPx": 1317,
+        "pageHeight": 7181,
+        "overflow": false,
+        "actions": [
+          {
+            "id": "choice-buy-archive-probe",
+            "text": "1\nBuy the Archive Probe.\nDetails\n140 creds. +2 to scanner inspection, archive index preparation, receipt authentication, and the depot sensor ramp. One field kit this week; it stays in your inventory.\nChanges\n-140 cr \u00b7 Gain Archive Probe",
+            "disabled": false,
+            "gap": 1409,
+            "height": 446.734375
+          },
+          {
+            "id": "choice-buy-chair-harness",
+            "text": "2\nBuy the Chair Harness.\nDetails\n120 creds. +2 to chair preparation, physical witness transfer, archive hatch preparation, physical ledger inspection, carrying sealed clinic cards, the shelter valve, and carrying Kerr\u2019s case. A braced chair permits a no-roll transfer; Steady hands avoids its added strain. One field kit this week; it stays in your inventory.\nChanges\n-120 cr \u00b7 Gain Chair Harness",
+            "disabled": false,
+            "gap": 2451,
+            "height": 614.703125
+          },
+          {
+            "id": "choice-buy-desk-guide",
+            "text": "3\nBuy the Clinic Desk Guide.\nDetails\n100 creds. +2 to arranging a volunteer escort, negotiating a checkpoint transfer, private clinic dispatch, and the depot counter. It supplies procedure, not a forged signature. One field kit this week; it stays in your inventory.\nChanges\n-100 cr \u00b7 Gain Clinic Desk Guide",
+            "disabled": false,
+            "gap": 3568,
+            "height": 480.328125
+          },
+          {
+            "id": "choice-buy-route-shroud",
+            "text": "4\nBuy the Route Shroud.\nDetails\n140 creds. +2 to patrol scouting, service-hatch witness transfer, archive interval preparation, carbon retrieval, and the depot patrol gap. One field kit this week; it stays in your inventory.\nChanges\n-140 cr \u00b7 Gain Route Shroud",
+            "disabled": false,
+            "gap": 4551,
+            "height": 446.734375
+          },
+          {
+            "id": "choice-leave-workshop",
+            "text": "5\nKeep the care budget. Return to the district board.",
+            "disabled": false,
+            "gap": 5061,
+            "height": 139.78125
+          }
+        ]
+      },
+      "beforeFirstActionPx": 4547,
+      "firstActionReduction": 0.6901253573784913,
+      "violations": [],
+      "errors": [],
+      "captures": {
+        "entry": "/tmp/saint-phase15/reproduction/act2_workshop-390-entry.png",
+        "reading": "/tmp/saint-phase15/reproduction/act2_workshop-390-reading.png",
+        "action": "/tmp/saint-phase15/reproduction/act2_workshop-390-action.png"
+      },
+      "method": "Actual public UI at legal saved checkpoints. Enlarged type/high contrast/reduced motion, full scene; 320px no art, others illustrated. Reading/action captures use diagnostic scrolling; entry goal visibility is checked first. No physical-device, unfamiliar-player, screen-reader listening or reading-speed claim."
+    },
+    {
+      "id": "act2_workshop-1440",
+      "scene": "act2_workshop",
+      "route": "freight-craft/harness-listed",
+      "choice": "buy-chair-harness",
+      "width": 1440,
+      "artwork": "full",
+      "metrics": {
+        "prose": "Quill has laid four cases on the repair bench. None is an all-purpose answer. A probe belongs at a reader, a harness under a chair, a desk guide beside a form, and a shroud on a service route.\n\n'One case in this shipment for you,' he says. 'Keep enough for the person on the other end of the job.'\n\nAn unregistered clinic room for Nia costs ninety creds. Staffed recovery for you costs forty-five. Tools can improve a route; they reserve no room and buy no person's consent. You can leave the cases and come back before the week closes.",
+        "proseToChoiceSectionPx": 130,
+        "proseToFirstFollowingControlPx": 35,
+        "firstFollowingControl": "Voice transcript",
+        "proseToFirstTaskActionPx": 1068,
+        "firstTaskAction": "1\nBuy the Archive Probe.\nDetails\n140 creds. +2 to scanner inspection, archive index preparation, receipt authentication, and the depot sensor ramp. One field kit this week; it stays in your inventory.\nChanges\n-140 cr \u00b7 Gain Archive Probe",
+        "proseToFirstCanonicalButtonPx": 976,
+        "pageHeight": 4615,
+        "overflow": false,
+        "actions": [
+          {
+            "id": "choice-buy-archive-probe",
+            "text": "1\nBuy the Archive Probe.\nDetails\n140 creds. +2 to scanner inspection, archive index preparation, receipt authentication, and the depot sensor ramp. One field kit this week; it stays in your inventory.\nChanges\n-140 cr \u00b7 Gain Archive Probe",
+            "disabled": false,
+            "gap": 1068,
+            "height": 486.3125
+          },
+          {
+            "id": "choice-buy-chair-harness",
+            "text": "2\nBuy the Chair Harness.\nDetails\n120 creds. +2 to chair preparation, physical witness transfer, archive hatch preparation, physical ledger inspection, carrying sealed clinic cards, the shelter valve, and carrying Kerr\u2019s case. A braced chair permits a no-roll transfer; Steady hands avoids its added strain. One field kit this week; it stays in your inventory.\nChanges\n-120 cr \u00b7 Gain Chair Harness",
+            "disabled": false,
+            "gap": 1167,
+            "height": 787.65625
+          },
+          {
+            "id": "choice-buy-desk-guide",
+            "text": "3\nBuy the Clinic Desk Guide.\nDetails\n100 creds. +2 to arranging a volunteer escort, negotiating a checkpoint transfer, private clinic dispatch, and the depot counter. It supplies procedure, not a forged signature. One field kit this week; it stays in your inventory.\nChanges\n-100 cr \u00b7 Gain Clinic Desk Guide",
+            "disabled": false,
+            "gap": 2423,
+            "height": 653.28125
+          },
+          {
+            "id": "choice-buy-route-shroud",
+            "text": "4\nBuy the Route Shroud.\nDetails\n140 creds. +2 to patrol scouting, service-hatch witness transfer, archive interval preparation, carbon retrieval, and the depot patrol gap. One field kit this week; it stays in your inventory.\nChanges\n-140 cr \u00b7 Gain Route Shroud",
+            "disabled": false,
+            "gap": 2423,
+            "height": 519.90625
+          },
+          {
+            "id": "choice-leave-workshop",
+            "text": "5\nKeep the care budget. Return to the district board.",
+            "disabled": false,
+            "gap": 3140,
+            "height": 72.59375
+          }
+        ]
+      },
+      "beforeFirstActionPx": 2421,
+      "firstActionReduction": 0.5588599752168525,
+      "violations": [],
+      "errors": [],
+      "captures": {
+        "entry": "/tmp/saint-phase15/reproduction/act2_workshop-1440-entry.png",
+        "reading": "/tmp/saint-phase15/reproduction/act2_workshop-1440-reading.png",
+        "action": "/tmp/saint-phase15/reproduction/act2_workshop-1440-action.png"
+      },
+      "method": "Actual public UI at legal saved checkpoints. Enlarged type/high contrast/reduced motion, full scene; 320px no art, others illustrated. Reading/action captures use diagnostic scrolling; entry goal visibility is checked first. No physical-device, unfamiliar-player, screen-reader listening or reading-speed claim."
+    },
+    {
+      "id": "act2_craft_archive-320",
+      "scene": "act2_craft_archive",
+      "route": "emotional-payoff/both-returns-listed",
+      "choice": "craft-question-issuer",
+      "width": 320,
+      "artwork": "none",
+      "metrics": {
+        "prose": "Edda puts three headings on separate sheets. Nothing has been extracted from the archive.\n\n\"The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.\"\n\nThe coolant work can remain scheduled while the evacuation instruction changes. Decide which question to put to an actual source.",
+        "proseToChoiceSectionPx": 1269,
+        "proseToFirstFollowingControlPx": 133,
+        "firstFollowingControl": "Voice transcript",
+        "proseToFirstTaskActionPx": 1393,
+        "firstTaskAction": "1\nWhose key canceled evacuation? Test the cancellation's issuer.",
+        "proseToFirstCanonicalButtonPx": 1393,
+        "pageHeight": 4526,
+        "overflow": false,
+        "actions": [
+          {
+            "id": "choice-craft-question-issuer",
+            "text": "1\nWhose key canceled evacuation? Test the cancellation's issuer.",
+            "disabled": false,
+            "gap": 1393,
+            "height": 240.5625
+          },
+          {
+            "id": "choice-craft-question-movement",
+            "text": "2\nDid the shift record the evacuation change? Retrieve the movement page.",
+            "disabled": false,
+            "gap": 1643,
+            "height": 274.15625
+          },
+          {
+            "id": "choice-craft-question-conflate",
+            "text": "3\nTreat the unchanged coolant schedule as proof that evacuation never changed.",
+            "disabled": false,
+            "gap": 1928,
+            "height": 307.75
+          },
+          {
+            "id": "choice-craft-leave-archive",
+            "text": "4\nKeep the draft. Leave without submitting a request.\nDetails\nFree. No retrieved record or authenticated key. Return before the week closes.",
+            "disabled": false,
+            "gap": 2245,
+            "height": 364.921875
+          }
+        ]
+      },
+      "beforeFirstActionPx": 2071,
+      "firstActionReduction": 0.3273780782230806,
+      "violations": [],
+      "errors": [],
+      "captures": {
+        "entry": "/tmp/saint-phase15/reproduction/act2_craft_archive-320-entry.png",
+        "reading": "/tmp/saint-phase15/reproduction/act2_craft_archive-320-reading.png",
+        "action": "/tmp/saint-phase15/reproduction/act2_craft_archive-320-action.png"
+      },
+      "method": "Actual public UI at legal saved checkpoints. Enlarged type/high contrast/reduced motion, full scene; 320px no art, others illustrated. Reading/action captures use diagnostic scrolling; entry goal visibility is checked first. No physical-device, unfamiliar-player, screen-reader listening or reading-speed claim."
+    },
+    {
+      "id": "act2_craft_archive-390",
+      "scene": "act2_craft_archive",
+      "route": "emotional-payoff/both-returns-listed",
+      "choice": "craft-question-issuer",
+      "width": 390,
+      "artwork": "full",
+      "metrics": {
+        "prose": "Edda puts three headings on separate sheets. Nothing has been extracted from the archive.\n\n\"The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.\"\n\nThe coolant work can remain scheduled while the evacuation instruction changes. Decide which question to put to an actual source.",
+        "proseToChoiceSectionPx": 1328,
+        "proseToFirstFollowingControlPx": 282,
+        "firstFollowingControl": "VIEW ARTWORK",
+        "proseToFirstTaskActionPx": 1423,
+        "firstTaskAction": "1\nWhose key canceled evacuation? Test the cancellation's issuer.",
+        "proseToFirstCanonicalButtonPx": 1423,
+        "pageHeight": 3916,
+        "overflow": false,
+        "actions": [
+          {
+            "id": "choice-craft-question-issuer",
+            "text": "1\nWhose key canceled evacuation? Test the cancellation's issuer.",
+            "disabled": false,
+            "gap": 1423,
+            "height": 139.78125
+          },
+          {
+            "id": "choice-craft-question-movement",
+            "text": "2\nDid the shift record the evacuation change? Retrieve the movement page.",
+            "disabled": false,
+            "gap": 1572,
+            "height": 173.375
+          },
+          {
+            "id": "choice-craft-question-conflate",
+            "text": "3\nTreat the unchanged coolant schedule as proof that evacuation never changed.",
+            "disabled": false,
+            "gap": 1756,
+            "height": 206.96875
+          },
+          {
+            "id": "choice-craft-leave-archive",
+            "text": "4\nKeep the draft. Leave without submitting a request.\nDetails\nFree. No retrieved record or authenticated key. Return before the week closes.",
+            "disabled": false,
+            "gap": 1973,
+            "height": 284.546875
+          }
+        ]
+      },
+      "beforeFirstActionPx": 2069,
+      "firstActionReduction": 0.31222812953117446,
+      "violations": [],
+      "errors": [],
+      "captures": {
+        "entry": "/tmp/saint-phase15/reproduction/act2_craft_archive-390-entry.png",
+        "reading": "/tmp/saint-phase15/reproduction/act2_craft_archive-390-reading.png",
+        "action": "/tmp/saint-phase15/reproduction/act2_craft_archive-390-action.png"
+      },
+      "method": "Actual public UI at legal saved checkpoints. Enlarged type/high contrast/reduced motion, full scene; 320px no art, others illustrated. Reading/action captures use diagnostic scrolling; entry goal visibility is checked first. No physical-device, unfamiliar-player, screen-reader listening or reading-speed claim."
+    },
+    {
+      "id": "act2_craft_archive-1440",
+      "scene": "act2_craft_archive",
+      "route": "emotional-payoff/both-returns-listed",
+      "choice": "craft-question-issuer",
+      "width": 1440,
+      "artwork": "full",
+      "metrics": {
+        "prose": "Edda puts three headings on separate sheets. Nothing has been extracted from the archive.\n\n\"The plant stayed on. The workers were meant to leave. Find the line that changed before you ask me to put my name under yours.\"\n\nThe coolant work can remain scheduled while the evacuation instruction changes. Decide which question to put to an actual source.",
+        "proseToChoiceSectionPx": 594,
+        "proseToFirstFollowingControlPx": 86,
+        "firstFollowingControl": "Voice transcript",
+        "proseToFirstTaskActionPx": 689,
+        "firstTaskAction": "1\nWhose key canceled evacuation? Test the cancellation's issuer.",
+        "proseToFirstCanonicalButtonPx": 689,
+        "pageHeight": 2418,
+        "overflow": false,
+        "actions": [
+          {
+            "id": "choice-craft-question-issuer",
+            "text": "1\nWhose key canceled evacuation? Test the cancellation's issuer.",
+            "disabled": false,
+            "gap": 689,
+            "height": 106.1875
+          },
+          {
+            "id": "choice-craft-question-movement",
+            "text": "2\nDid the shift record the evacuation change? Retrieve the movement page.",
+            "disabled": false,
+            "gap": 805,
+            "height": 106.1875
+          },
+          {
+            "id": "choice-craft-question-conflate",
+            "text": "3\nTreat the unchanged coolant schedule as proof that evacuation never changed.",
+            "disabled": false,
+            "gap": 921,
+            "height": 106.1875
+          },
+          {
+            "id": "choice-craft-leave-archive",
+            "text": "4\nKeep the draft. Leave without submitting a request.\nDetails\nFree. No retrieved record or authenticated key. Return before the week closes.",
+            "disabled": false,
+            "gap": 1037,
+            "height": 134.375
+          }
+        ]
+      },
+      "beforeFirstActionPx": 1244,
+      "firstActionReduction": 0.44614147909967844,
+      "violations": [],
+      "errors": [],
+      "captures": {
+        "entry": "/tmp/saint-phase15/reproduction/act2_craft_archive-1440-entry.png",
+        "reading": "/tmp/saint-phase15/reproduction/act2_craft_archive-1440-reading.png",
+        "action": "/tmp/saint-phase15/reproduction/act2_craft_archive-1440-action.png"
+      },
+      "method": "Actual public UI at legal saved checkpoints. Enlarged type/high contrast/reduced motion, full scene; 320px no art, others illustrated. Reading/action captures use diagnostic scrolling; entry goal visibility is checked first. No physical-device, unfamiliar-player, screen-reader listening or reading-speed claim."
+    },
+    {
+      "id": "act2_craft_archive_issuer-320",
+      "scene": "act2_craft_archive_issuer",
+      "route": "emotional-payoff/both-returns-listed",
+      "choice": "craft-target-cancellation",
+      "width": 320,
+      "artwork": "none",
+      "metrics": {
+        "prose": "The reader offers fields for Mara's approval and the later cancellation. You can inspect the target before a real key test.\n\n\"If you want the hand behind the instruction, bring the cancellation to its key. Her approval is a different act.\"\n\nWhich field belongs in the issuing-key test? Selecting a field is free.",
+        "proseToChoiceSectionPx": 251,
+        "proseToFirstFollowingControlPx": 133,
+        "firstFollowingControl": "Voice transcript",
+        "proseToFirstTaskActionPx": 376,
+        "firstTaskAction": "1\nTarget the later evacuation-cancellation receipt.",
+        "proseToFirstCanonicalButtonPx": 376,
+        "pageHeight": 3118,
+        "overflow": false,
+        "actions": [
+          {
+            "id": "choice-craft-target-cancellation",
+            "text": "1\nTarget the later evacuation-cancellation receipt.",
+            "disabled": false,
+            "gap": 376,
+            "height": 206.96875
+          },
+          {
+            "id": "choice-craft-target-approval",
+            "text": "2\nUse Mara's approval signature to identify the later issuer.",
+            "disabled": false,
+            "gap": 593,
+            "height": 206.96875
+          },
+          {
+            "id": "choice-craft-change-question",
+            "text": "3\nChange the question before submitting anything.",
+            "disabled": false,
+            "gap": 810,
+            "height": 206.96875
+          },
+          {
+            "id": "choice-craft-leave-archive",
+            "text": "4\nKeep the draft. Leave without submitting a request.\nDetails\nFree. No retrieved record or authenticated key. Return before the week closes.",
+            "disabled": false,
+            "gap": 1027,
+            "height": 364.921875
+          }
+        ]
+      },
+      "beforeFirstActionPx": 631,
+      "firstActionReduction": 0.4041204437400951,
+      "violations": [],
+      "errors": [],
+      "captures": {
+        "entry": "/tmp/saint-phase15/reproduction/act2_craft_archive_issuer-320-entry.png",
+        "reading": "/tmp/saint-phase15/reproduction/act2_craft_archive_issuer-320-reading.png",
+        "action": "/tmp/saint-phase15/reproduction/act2_craft_archive_issuer-320-action.png"
+      },
+      "method": "Actual public UI at legal saved checkpoints. Enlarged type/high contrast/reduced motion, full scene; 320px no art, others illustrated. Reading/action captures use diagnostic scrolling; entry goal visibility is checked first. No physical-device, unfamiliar-player, screen-reader listening or reading-speed claim."
+    },
+    {
+      "id": "act2_craft_archive_issuer-390",
+      "scene": "act2_craft_archive_issuer",
+      "route": "emotional-payoff/both-returns-listed",
+      "choice": "craft-target-cancellation",
+      "width": 390,
+      "artwork": "full",
+      "metrics": {
+        "prose": "The reader offers fields for Mara's approval and the later cancellation. You can inspect the target before a real key test.\n\n\"If you want the hand behind the instruction, bring the cancellation to its key. Her approval is a different act.\"\n\nWhich field belongs in the issuing-key test? Selecting a field is free.",
+        "proseToChoiceSectionPx": 579,
+        "proseToFirstFollowingControlPx": 282,
+        "firstFollowingControl": "VIEW ARTWORK",
+        "proseToFirstTaskActionPx": 674,
+        "firstTaskAction": "1\nTarget the later evacuation-cancellation receipt.",
+        "proseToFirstCanonicalButtonPx": 674,
+        "pageHeight": 3058,
+        "overflow": false,
+        "actions": [
+          {
+            "id": "choice-craft-target-cancellation",
+            "text": "1\nTarget the later evacuation-cancellation receipt.",
+            "disabled": false,
+            "gap": 674,
+            "height": 139.78125
+          },
+          {
+            "id": "choice-craft-target-approval",
+            "text": "2\nUse Mara's approval signature to identify the later issuer.",
+            "disabled": false,
+            "gap": 824,
+            "height": 173.375
+          },
+          {
+            "id": "choice-craft-change-question",
+            "text": "3\nChange the question before submitting anything.",
+            "disabled": false,
+            "gap": 1007,
+            "height": 173.375
+          },
+          {
+            "id": "choice-craft-leave-archive",
+            "text": "4\nKeep the draft. Leave without submitting a request.\nDetails\nFree. No retrieved record or authenticated key. Return before the week closes.",
+            "disabled": false,
+            "gap": 1191,
+            "height": 284.546875
+          }
+        ]
+      },
+      "beforeFirstActionPx": 929,
+      "firstActionReduction": 0.2744886975242196,
+      "violations": [],
+      "errors": [],
+      "captures": {
+        "entry": "/tmp/saint-phase15/reproduction/act2_craft_archive_issuer-390-entry.png",
+        "reading": "/tmp/saint-phase15/reproduction/act2_craft_archive_issuer-390-reading.png",
+        "action": "/tmp/saint-phase15/reproduction/act2_craft_archive_issuer-390-action.png"
+      },
+      "method": "Actual public UI at legal saved checkpoints. Enlarged type/high contrast/reduced motion, full scene; 320px no art, others illustrated. Reading/action captures use diagnostic scrolling; entry goal visibility is checked first. No physical-device, unfamiliar-player, screen-reader listening or reading-speed claim."
+    },
+    {
+      "id": "act2_craft_archive_issuer-1440",
+      "scene": "act2_craft_archive_issuer",
+      "route": "emotional-payoff/both-returns-listed",
+      "choice": "craft-target-cancellation",
+      "width": 1440,
+      "artwork": "full",
+      "metrics": {
+        "prose": "The reader offers fields for Mara's approval and the later cancellation. You can inspect the target before a real key test.\n\n\"If you want the hand behind the instruction, bring the cancellation to its key. Her approval is a different act.\"\n\nWhich field belongs in the issuing-key test? Selecting a field is free.",
+        "proseToChoiceSectionPx": 181,
+        "proseToFirstFollowingControlPx": 86,
+        "firstFollowingControl": "Voice transcript",
+        "proseToFirstTaskActionPx": 276,
+        "firstTaskAction": "1\nTarget the later evacuation-cancellation receipt.",
+        "proseToFirstCanonicalButtonPx": 276,
+        "pageHeight": 1866,
+        "overflow": false,
+        "actions": [
+          {
+            "id": "choice-craft-target-cancellation",
+            "text": "1\nTarget the later evacuation-cancellation receipt.",
+            "disabled": false,
+            "gap": 276,
+            "height": 72.59375
+          },
+          {
+            "id": "choice-craft-target-approval",
+            "text": "2\nUse Mara's approval signature to identify the later issuer.",
+            "disabled": false,
+            "gap": 359,
+            "height": 72.59375
+          },
+          {
+            "id": "choice-craft-change-question",
+            "text": "3\nChange the question before submitting anything.",
+            "disabled": false,
+            "gap": 441,
+            "height": 72.59375
+          },
+          {
+            "id": "choice-craft-leave-archive",
+            "text": "4\nKeep the draft. Leave without submitting a request.\nDetails\nFree. No retrieved record or authenticated key. Return before the week closes.",
+            "disabled": false,
+            "gap": 524,
+            "height": 134.375
+          }
+        ]
+      },
+      "beforeFirstActionPx": 474,
+      "firstActionReduction": 0.4177215189873418,
+      "violations": [],
+      "errors": [],
+      "captures": {
+        "entry": "/tmp/saint-phase15/reproduction/act2_craft_archive_issuer-1440-entry.png",
+        "reading": "/tmp/saint-phase15/reproduction/act2_craft_archive_issuer-1440-reading.png",
+        "action": "/tmp/saint-phase15/reproduction/act2_craft_archive_issuer-1440-action.png"
+      },
+      "method": "Actual public UI at legal saved checkpoints. Enlarged type/high contrast/reduced motion, full scene; 320px no art, others illustrated. Reading/action captures use diagnostic scrolling; entry goal visibility is checked first. No physical-device, unfamiliar-player, screen-reader listening or reading-speed claim."
+    },
+    {
+      "id": "act2_route_exit-320",
+      "scene": "act2_route_exit",
+      "route": "balance-dustline-nerve-equipped",
+      "choice": "route-exit-walk",
+      "width": 320,
+      "artwork": "none",
+      "metrics": {
+        "prose": "Now choose how to leave the depot with the case. The sensor ramp suits a machine approach, the patrol gap suits timing, and the maintenance stairs suit carrying weight. Negotiation is available at the counter on any plan.\n\nAn anonymous exit cannot erase a name already recorded at entry. A failed sensor or counter approach also records Kerr as the recipient; missing the patrol or failing to carry the case leaves it held without a new entry.",
+        "proseToChoiceSectionPx": 1238,
+        "proseToFirstFollowingControlPx": 1363,
+        "firstFollowingControl": "1\nPlan the sensor ramp.\nDetails\nChrome can suppress the recipient field; Face can negotiate. A failed approach logs the recipient.",
+        "proseToFirstTaskActionPx": 1363,
+        "firstTaskAction": "1\nPlan the sensor ramp.\nDetails\nChrome can suppress the recipient field; Face can negotiate. A failed approach logs the recipient.",
+        "proseToFirstCanonicalButtonPx": 1363,
+        "pageHeight": 4621,
+        "overflow": false,
+        "actions": [
+          {
+            "id": "choice-route-exit-ramp",
+            "text": "1\nPlan the sensor ramp.\nDetails\nChrome can suppress the recipient field; Face can negotiate. A failed approach logs the recipient.",
+            "disabled": false,
+            "gap": 1363,
+            "height": 264.140625
+          },
+          {
+            "id": "choice-route-exit-gap",
+            "text": "2\nPlan the patrol gap.\nDetails\nGhost can time the patrol. A missed gap holds the case without a new entry. A failed Face negotiation registers the recipient.",
+            "disabled": false,
+            "gap": 1637,
+            "height": 310.921875
+          },
+          {
+            "id": "choice-route-exit-walk",
+            "text": "3\nPlan the maintenance stairs.\nDetails\nNerve can carry the case. Add 1 strain on departure; no stairs register. A failed Face negotiation registers the recipient.",
+            "disabled": false,
+            "gap": 1958,
+            "height": 344.515625
+          },
+          {
+            "id": "choice-replan-kerr-entry",
+            "text": "4\nChoose the entry again.",
+            "disabled": false,
+            "gap": 2312,
+            "height": 106.1875
+          },
+          {
+            "id": "choice-pause-kerr-exit",
+            "text": "5\nPause with this entry saved.",
+            "disabled": false,
+            "gap": 2429,
+            "height": 139.78125
+          }
+        ]
+      },
+      "beforeFirstActionPx": 1941,
+      "firstActionReduction": 0.29778464708912933,
+      "violations": [],
+      "errors": [],
+      "captures": {
+        "entry": "/tmp/saint-phase15/reproduction/act2_route_exit-320-entry.png",
+        "reading": "/tmp/saint-phase15/reproduction/act2_route_exit-320-reading.png",
+        "action": "/tmp/saint-phase15/reproduction/act2_route_exit-320-action.png"
+      },
+      "method": "Actual public UI at legal saved checkpoints. Enlarged type/high contrast/reduced motion, full scene; 320px no art, others illustrated. Reading/action captures use diagnostic scrolling; entry goal visibility is checked first. No physical-device, unfamiliar-player, screen-reader listening or reading-speed claim."
+    },
+    {
+      "id": "act2_route_exit-390",
+      "scene": "act2_route_exit",
+      "route": "balance-dustline-nerve-equipped",
+      "choice": "route-exit-walk",
+      "width": 390,
+      "artwork": "full",
+      "metrics": {
+        "prose": "Now choose how to leave the depot with the case. The sensor ramp suits a machine approach, the patrol gap suits timing, and the maintenance stairs suit carrying weight. Negotiation is available at the counter on any plan.\n\nAn anonymous exit cannot erase a name already recorded at entry. A failed sensor or counter approach also records Kerr as the recipient; missing the patrol or failing to carry the case leaves it held without a new entry.",
+        "proseToChoiceSectionPx": 1036,
+        "proseToFirstFollowingControlPx": 1131,
+        "firstFollowingControl": "1\nPlan the sensor ramp.\nDetails\nChrome can suppress the recipient field; Face can negotiate. A failed approach logs the recipient.",
+        "proseToFirstTaskActionPx": 1131,
+        "firstTaskAction": "1\nPlan the sensor ramp.\nDetails\nChrome can suppress the recipient field; Face can negotiate. A failed approach logs the recipient.",
+        "proseToFirstCanonicalButtonPx": 1131,
+        "pageHeight": 4005,
+        "overflow": false,
+        "actions": [
+          {
+            "id": "choice-route-exit-ramp",
+            "text": "1\nPlan the sensor ramp.\nDetails\nChrome can suppress the recipient field; Face can negotiate. A failed approach logs the recipient.",
+            "disabled": false,
+            "gap": 1131,
+            "height": 240.75
+          },
+          {
+            "id": "choice-route-exit-gap",
+            "text": "2\nPlan the patrol gap.\nDetails\nGhost can time the patrol. A missed gap holds the case without a new entry. A failed Face negotiation registers the recipient.",
+            "disabled": false,
+            "gap": 1382,
+            "height": 230.546875
+          },
+          {
+            "id": "choice-route-exit-walk",
+            "text": "3\nPlan the maintenance stairs.\nDetails\nNerve can carry the case. Add 1 strain on departure; no stairs register. A failed Face negotiation registers the recipient.",
+            "disabled": false,
+            "gap": 1622,
+            "height": 264.140625
+          },
+          {
+            "id": "choice-replan-kerr-entry",
+            "text": "4\nChoose the entry again.",
+            "disabled": false,
+            "gap": 1896,
+            "height": 106.1875
+          },
+          {
+            "id": "choice-pause-kerr-exit",
+            "text": "5\nPause with this entry saved.",
+            "disabled": false,
+            "gap": 2013,
+            "height": 106.1875
+          }
+        ]
+      },
+      "beforeFirstActionPx": 1734,
+      "firstActionReduction": 0.3477508650519031,
+      "violations": [],
+      "errors": [],
+      "captures": {
+        "entry": "/tmp/saint-phase15/reproduction/act2_route_exit-390-entry.png",
+        "reading": "/tmp/saint-phase15/reproduction/act2_route_exit-390-reading.png",
+        "action": "/tmp/saint-phase15/reproduction/act2_route_exit-390-action.png"
+      },
+      "method": "Actual public UI at legal saved checkpoints. Enlarged type/high contrast/reduced motion, full scene; 320px no art, others illustrated. Reading/action captures use diagnostic scrolling; entry goal visibility is checked first. No physical-device, unfamiliar-player, screen-reader listening or reading-speed claim."
+    },
+    {
+      "id": "act2_route_exit-1440",
+      "scene": "act2_route_exit",
+      "route": "balance-dustline-nerve-equipped",
+      "choice": "route-exit-walk",
+      "width": 1440,
+      "artwork": "full",
+      "metrics": {
+        "prose": "Now choose how to leave the depot with the case. The sensor ramp suits a machine approach, the patrol gap suits timing, and the maintenance stairs suit carrying weight. Negotiation is available at the counter on any plan.\n\nAn anonymous exit cannot erase a name already recorded at entry. A failed sensor or counter approach also records Kerr as the recipient; missing the patrol or failing to carry the case leaves it held without a new entry.",
+        "proseToChoiceSectionPx": 742,
+        "proseToFirstFollowingControlPx": 837,
+        "firstFollowingControl": "1\nPlan the sensor ramp.\nDetails\nChrome can suppress the recipient field; Face can negotiate. A failed approach logs the recipient.",
+        "proseToFirstTaskActionPx": 837,
+        "firstTaskAction": "1\nPlan the sensor ramp.\nDetails\nChrome can suppress the recipient field; Face can negotiate. A failed approach logs the recipient.",
+        "proseToFirstCanonicalButtonPx": 837,
+        "pageHeight": 2778,
+        "overflow": false,
+        "actions": [
+          {
+            "id": "choice-route-exit-ramp",
+            "text": "1\nPlan the sensor ramp.\nDetails\nChrome can suppress the recipient field; Face can negotiate. A failed approach logs the recipient.",
+            "disabled": false,
+            "gap": 837,
+            "height": 134.375
+          },
+          {
+            "id": "choice-route-exit-gap",
+            "text": "2\nPlan the patrol gap.\nDetails\nGhost can time the patrol. A missed gap holds the case without a new entry. A failed Face negotiation registers the recipient.",
+            "disabled": false,
+            "gap": 981,
+            "height": 134.375
+          },
+          {
+            "id": "choice-route-exit-walk",
+            "text": "3\nPlan the maintenance stairs.\nDetails\nNerve can carry the case. Add 1 strain on departure; no stairs register. A failed Face negotiation registers the recipient.",
+            "disabled": false,
+            "gap": 1125,
+            "height": 134.375
+          },
+          {
+            "id": "choice-replan-kerr-entry",
+            "text": "4\nChoose the entry again.",
+            "disabled": false,
+            "gap": 1270,
+            "height": 72.59375
+          },
+          {
+            "id": "choice-pause-kerr-exit",
+            "text": "5\nPause with this entry saved.",
+            "disabled": false,
+            "gap": 1352,
+            "height": 72.59375
+          }
+        ]
+      },
+      "beforeFirstActionPx": 1190,
+      "firstActionReduction": 0.2966386554621849,
+      "violations": [],
+      "errors": [],
+      "captures": {
+        "entry": "/tmp/saint-phase15/reproduction/act2_route_exit-1440-entry.png",
+        "reading": "/tmp/saint-phase15/reproduction/act2_route_exit-1440-reading.png",
+        "action": "/tmp/saint-phase15/reproduction/act2_route_exit-1440-action.png"
+      },
+      "method": "Actual public UI at legal saved checkpoints. Enlarged type/high contrast/reduced motion, full scene; 320px no art, others illustrated. Reading/action captures use diagnostic scrolling; entry goal visibility is checked first. No physical-device, unfamiliar-player, screen-reader listening or reading-speed claim."
+    },
+    {
+      "id": "act3_testimony_review-320",
+      "scene": "act3_testimony_review",
+      "route": "allocation-dustline",
+      "choice": "scope-bounded",
+      "width": 320,
+      "artwork": "none",
+      "metrics": {
+        "prose": "Sera puts a blank public cover sheet beside the recorder and your sources. 'The names can be spoken either way. This is a different promise: an account someone can question after you leave.'\n\nFirst decide what the sources support. Then decide whose words can appear on the sheet.",
+        "proseToChoiceSectionPx": 1183,
+        "proseToFirstFollowingControlPx": 77,
+        "firstFollowingControl": "CONSULT ACQUIRED SOURCES",
+        "proseToFirstTaskActionPx": 1308,
+        "firstTaskAction": "1\nKeep the cancellation as a question that still needs corroboration.",
+        "proseToFirstCanonicalButtonPx": 1308,
+        "pageHeight": 3808,
+        "overflow": false,
+        "actions": [
+          {
+            "id": "choice-scope-bounded",
+            "text": "1\nKeep the cancellation as a question that still needs corroboration.",
+            "disabled": false,
+            "gap": 1308,
+            "height": 274.15625
+          },
+          {
+            "id": "choice-skip-testimony",
+            "text": "2\nReturn to the names without drafting a public account.",
+            "disabled": false,
+            "gap": 1592,
+            "height": 240.5625
+          }
+        ]
+      },
+      "beforeFirstActionPx": 1860,
+      "firstActionReduction": 0.2967741935483871,
+      "violations": [],
+      "errors": [],
+      "captures": {
+        "entry": "/tmp/saint-phase15/reproduction/act3_testimony_review-320-entry.png",
+        "reading": "/tmp/saint-phase15/reproduction/act3_testimony_review-320-reading.png",
+        "action": "/tmp/saint-phase15/reproduction/act3_testimony_review-320-action.png"
+      },
+      "method": "Actual public UI at legal saved checkpoints. Enlarged type/high contrast/reduced motion, full scene; 320px no art, others illustrated. Reading/action captures use diagnostic scrolling; entry goal visibility is checked first. No physical-device, unfamiliar-player, screen-reader listening or reading-speed claim."
+    },
+    {
+      "id": "act3_testimony_review-390",
+      "scene": "act3_testimony_review",
+      "route": "allocation-dustline",
+      "choice": "scope-bounded",
+      "width": 390,
+      "artwork": "full",
+      "metrics": {
+        "prose": "Sera puts a blank public cover sheet beside the recorder and your sources. 'The names can be spoken either way. This is a different promise: an account someone can question after you leave.'\n\nFirst decide what the sources support. Then decide whose words can appear on the sheet.",
+        "proseToChoiceSectionPx": 1225,
+        "proseToFirstFollowingControlPx": 282,
+        "firstFollowingControl": "VIEW ARTWORK",
+        "proseToFirstTaskActionPx": 1320,
+        "firstTaskAction": "1\nKeep the cancellation as a question that still needs corroboration.",
+        "proseToFirstCanonicalButtonPx": 1320,
+        "pageHeight": 3308,
+        "overflow": false,
+        "actions": [
+          {
+            "id": "choice-scope-bounded",
+            "text": "1\nKeep the cancellation as a question that still needs corroboration.",
+            "disabled": false,
+            "gap": 1320,
+            "height": 206.96875
+          },
+          {
+            "id": "choice-skip-testimony",
+            "text": "2\nReturn to the names without drafting a public account.",
+            "disabled": false,
+            "gap": 1537,
+            "height": 139.78125
+          }
+        ]
+      },
+      "beforeFirstActionPx": 1817,
+      "firstActionReduction": 0.2735277930654926,
+      "violations": [],
+      "errors": [],
+      "captures": {
+        "entry": "/tmp/saint-phase15/reproduction/act3_testimony_review-390-entry.png",
+        "reading": "/tmp/saint-phase15/reproduction/act3_testimony_review-390-reading.png",
+        "action": "/tmp/saint-phase15/reproduction/act3_testimony_review-390-action.png"
+      },
+      "method": "Actual public UI at legal saved checkpoints. Enlarged type/high contrast/reduced motion, full scene; 320px no art, others illustrated. Reading/action captures use diagnostic scrolling; entry goal visibility is checked first. No physical-device, unfamiliar-player, screen-reader listening or reading-speed claim."
+    },
+    {
+      "id": "act3_testimony_review-1440",
+      "scene": "act3_testimony_review",
+      "route": "allocation-dustline",
+      "choice": "scope-bounded",
+      "width": 1440,
+      "artwork": "full",
+      "metrics": {
+        "prose": "Sera puts a blank public cover sheet beside the recorder and your sources. 'The names can be spoken either way. This is a different promise: an account someone can question after you leave.'\n\nFirst decide what the sources support. Then decide whose words can appear on the sheet.",
+        "proseToChoiceSectionPx": 590,
+        "proseToFirstFollowingControlPx": 77,
+        "firstFollowingControl": "CONSULT ACQUIRED SOURCES",
+        "proseToFirstTaskActionPx": 684,
+        "firstTaskAction": "1\nKeep the cancellation as a question that still needs corroboration.",
+        "proseToFirstCanonicalButtonPx": 684,
+        "pageHeight": 2101,
+        "overflow": false,
+        "actions": [
+          {
+            "id": "choice-scope-bounded",
+            "text": "1\nKeep the cancellation as a question that still needs corroboration.",
+            "disabled": false,
+            "gap": 684,
+            "height": 106.1875
+          },
+          {
+            "id": "choice-skip-testimony",
+            "text": "2\nReturn to the names without drafting a public account.",
+            "disabled": false,
+            "gap": 801,
+            "height": 72.59375
+          }
+        ]
+      },
+      "beforeFirstActionPx": 1061,
+      "firstActionReduction": 0.35532516493873706,
+      "violations": [],
+      "errors": [],
+      "captures": {
+        "entry": "/tmp/saint-phase15/reproduction/act3_testimony_review-1440-entry.png",
+        "reading": "/tmp/saint-phase15/reproduction/act3_testimony_review-1440-reading.png",
+        "action": "/tmp/saint-phase15/reproduction/act3_testimony_review-1440-action.png"
+      },
+      "method": "Actual public UI at legal saved checkpoints. Enlarged type/high contrast/reduced motion, full scene; 320px no art, others illustrated. Reading/action captures use diagnostic scrolling; entry goal visibility is checked first. No physical-device, unfamiliar-player, screen-reader listening or reading-speed claim."
+    },
+    {
+      "id": "act3_testimony_hearing-320",
+      "scene": "act3_testimony_hearing",
+      "route": "allocation-dustline",
+      "choice": "claim-key-anyway",
+      "width": 320,
+      "artwork": "none",
+      "metrics": {
+        "prose": "Ives places his folio beside the recorder. 'A maintenance signature isn't an issuing key. A witness isn't a server. What exactly are you asking people to believe?'\n\nSera leaves the recorder running. The mechanic waits for the source you can point to; a witness's address stays off the table.",
+        "proseToChoiceSectionPx": 1183,
+        "proseToFirstFollowingControlPx": 77,
+        "firstFollowingControl": "CONSULT ACQUIRED SOURCES",
+        "proseToFirstTaskActionPx": 1308,
+        "firstTaskAction": "1\nState the cancellation as an open question and preserve the source limits.",
+        "proseToFirstCanonicalButtonPx": 1308,
+        "pageHeight": 4017,
+        "overflow": false,
+        "actions": [
+          {
+            "id": "choice-answer-open-question",
+            "text": "1\nState the cancellation as an open question and preserve the source limits.",
+            "disabled": false,
+            "gap": 1308,
+            "height": 240.5625
+          },
+          {
+            "id": "choice-claim-key-anyway",
+            "text": "2\nCall the issuing key authenticated without a successful key match.\nDetails\nThe mechanic will challenge the claim. Ward trust \u22121; Helion scrutiny +1.\nChanges\nHelion +1 \u00b7 The wards -1",
+            "disabled": false,
+            "gap": 1558,
+            "height": 462.90625
+          }
+        ]
+      },
+      "beforeFirstActionPx": 1860,
+      "firstActionReduction": 0.2967741935483871,
+      "violations": [],
+      "errors": [],
+      "captures": {
+        "entry": "/tmp/saint-phase15/reproduction/act3_testimony_hearing-320-entry.png",
+        "reading": "/tmp/saint-phase15/reproduction/act3_testimony_hearing-320-reading.png",
+        "action": "/tmp/saint-phase15/reproduction/act3_testimony_hearing-320-action.png"
+      },
+      "method": "Actual public UI at legal saved checkpoints. Enlarged type/high contrast/reduced motion, full scene; 320px no art, others illustrated. Reading/action captures use diagnostic scrolling; entry goal visibility is checked first. No physical-device, unfamiliar-player, screen-reader listening or reading-speed claim."
+    },
+    {
+      "id": "act3_testimony_hearing-390",
+      "scene": "act3_testimony_hearing",
+      "route": "allocation-dustline",
+      "choice": "claim-key-anyway",
+      "width": 390,
+      "artwork": "full",
+      "metrics": {
+        "prose": "Ives places his folio beside the recorder. 'A maintenance signature isn't an issuing key. A witness isn't a server. What exactly are you asking people to believe?'\n\nSera leaves the recorder running. The mechanic waits for the source you can point to; a witness's address stays off the table.",
+        "proseToChoiceSectionPx": 1225,
+        "proseToFirstFollowingControlPx": 282,
+        "firstFollowingControl": "VIEW ARTWORK",
+        "proseToFirstTaskActionPx": 1320,
+        "firstTaskAction": "1\nState the cancellation as an open question and preserve the source limits.",
+        "proseToFirstCanonicalButtonPx": 1320,
+        "pageHeight": 3576,
+        "overflow": false,
+        "actions": [
+          {
+            "id": "choice-answer-open-question",
+            "text": "1\nState the cancellation as an open question and preserve the source limits.",
+            "disabled": false,
+            "gap": 1320,
+            "height": 206.96875
+          },
+          {
+            "id": "choice-claim-key-anyway",
+            "text": "2\nCall the issuing key authenticated without a successful key match.\nDetails\nThe mechanic will challenge the claim. Ward trust \u22121; Helion scrutiny +1.\nChanges\nHelion +1 \u00b7 The wards -1",
+            "disabled": false,
+            "gap": 1537,
+            "height": 348.9375
+          }
+        ]
+      },
+      "beforeFirstActionPx": 1817,
+      "firstActionReduction": 0.2735277930654926,
+      "violations": [],
+      "errors": [],
+      "captures": {
+        "entry": "/tmp/saint-phase15/reproduction/act3_testimony_hearing-390-entry.png",
+        "reading": "/tmp/saint-phase15/reproduction/act3_testimony_hearing-390-reading.png",
+        "action": "/tmp/saint-phase15/reproduction/act3_testimony_hearing-390-action.png"
+      },
+      "method": "Actual public UI at legal saved checkpoints. Enlarged type/high contrast/reduced motion, full scene; 320px no art, others illustrated. Reading/action captures use diagnostic scrolling; entry goal visibility is checked first. No physical-device, unfamiliar-player, screen-reader listening or reading-speed claim."
+    },
+    {
+      "id": "act3_testimony_hearing-1440",
+      "scene": "act3_testimony_hearing",
+      "route": "allocation-dustline",
+      "choice": "claim-key-anyway",
+      "width": 1440,
+      "artwork": "full",
+      "metrics": {
+        "prose": "Ives places his folio beside the recorder. 'A maintenance signature isn't an issuing key. A witness isn't a server. What exactly are you asking people to believe?'\n\nSera leaves the recorder running. The mechanic waits for the source you can point to; a witness's address stays off the table.",
+        "proseToChoiceSectionPx": 590,
+        "proseToFirstFollowingControlPx": 77,
+        "firstFollowingControl": "CONSULT ACQUIRED SOURCES",
+        "proseToFirstTaskActionPx": 684,
+        "firstTaskAction": "1\nState the cancellation as an open question and preserve the source limits.",
+        "proseToFirstCanonicalButtonPx": 684,
+        "pageHeight": 2172,
+        "overflow": false,
+        "actions": [
+          {
+            "id": "choice-answer-open-question",
+            "text": "1\nState the cancellation as an open question and preserve the source limits.",
+            "disabled": false,
+            "gap": 684,
+            "height": 106.1875
+          },
+          {
+            "id": "choice-claim-key-anyway",
+            "text": "2\nCall the issuing key authenticated without a successful key match.\nDetails\nThe mechanic will challenge the claim. Ward trust \u22121; Helion scrutiny +1.\nChanges\nHelion +1 \u00b7 The wards -1",
+            "disabled": false,
+            "gap": 801,
+            "height": 182.96875
+          }
+        ]
+      },
+      "beforeFirstActionPx": 1032,
+      "firstActionReduction": 0.3372093023255814,
+      "violations": [],
+      "errors": [],
+      "captures": {
+        "entry": "/tmp/saint-phase15/reproduction/act3_testimony_hearing-1440-entry.png",
+        "reading": "/tmp/saint-phase15/reproduction/act3_testimony_hearing-1440-reading.png",
+        "action": "/tmp/saint-phase15/reproduction/act3_testimony_hearing-1440-action.png"
+      },
+      "method": "Actual public UI at legal saved checkpoints. Enlarged type/high contrast/reduced motion, full scene; 320px no art, others illustrated. Reading/action captures use diagnostic scrolling; entry goal visibility is checked first. No physical-device, unfamiliar-player, screen-reader listening or reading-speed claim."
+    },
+    {
+      "id": "freight-loaded-390",
+      "scene": "act2_ramp_load",
+      "route": "freight-craft/failed-desk",
+      "choice": "ramp-carry-past",
+      "width": 390,
+      "artwork": "full",
+      "metrics": {
+        "prose": "The weight is in your arms. Asa holds the gate by its catch. The broad level landing is before the bend; beyond it, the rail narrows the passage.\n\n\"The gate is mine. The weight is yours. Call down before the bend if you need the landing.\"\n\nYour lifting effort and any blocks are already paid. No second fee or timer advances while you read. A stopped carry returns the still-closed case under the hood; it creates no clinic receipt or recipient entry.",
+        "proseToChoiceSectionPx": 466,
+        "proseToFirstFollowingControlPx": 34,
+        "firstFollowingControl": "Voice transcript",
+        "proseToFirstTaskActionPx": 667,
+        "firstTaskAction": "1\nCall down at the broad landing before the bend.\nDetails\nUse the inspected level rest, then carry through Asa's gate to intake. A stock receipt remains a separate step.",
+        "proseToFirstCanonicalButtonPx": 667,
+        "pageHeight": 2976,
+        "overflow": false,
+        "actions": [
+          {
+            "id": "choice-ramp-rest-before",
+            "text": "1\nCall down at the broad landing before the bend.\nDetails\nUse the inspected level rest, then carry through Asa's gate to intake. A stock receipt remains a separate step.",
+            "disabled": false,
+            "gap": 667,
+            "height": 274.34375
+          },
+          {
+            "id": "choice-ramp-carry-past",
+            "text": "2\nTry to carry past the bend before resting.\nDetails\nThe surveyed rail narrows there; the lift effort stays spent if the carry must stop.",
+            "disabled": false,
+            "gap": 956,
+            "height": 250.953125
+          },
+          {
+            "id": "choice-ramp-pause",
+            "text": "3\nLeave the case under the hood and return to the district board.\nDetails\nKeep the actual plan and any already spent effort. No receipt or automatic cancellation.",
+            "disabled": false,
+            "gap": 1221,
+            "height": 284.546875
+          }
+        ]
+      },
+      "beforeFirstActionPx": null,
+      "firstActionReduction": null,
+      "violations": [],
+      "errors": [],
+      "captures": {
+        "entry": "/tmp/saint-phase15/reproduction/freight-loaded-390-entry.png",
+        "reading": "/tmp/saint-phase15/reproduction/freight-loaded-390-reading.png",
+        "action": "/tmp/saint-phase15/reproduction/freight-loaded-390-action.png"
+      },
+      "method": "Actual public UI at legal saved checkpoints. Enlarged type/high contrast/reduced motion, full scene; 320px no art, others illustrated. Reading/action captures use diagnostic scrolling; entry goal visibility is checked first. No physical-device, unfamiliar-player, screen-reader listening or reading-speed claim."
+    }
+  ]
+}

@@ -107,3 +107,7 @@ Phase 12 implements one broader Ghost encounter, before expansion to another bui
 ## Phase 14 — connected Kerr performance
 
 [The expressive-performance pass](EXPRESSIVE_PERFORMANCE_PHASE14.md) reviews all six depot quotations in connected conditional stages over actual quiet/street beds. Five exact-word stock-actor alternatives refine practical questions and personal boundaries; the original source-summary is retained after mismatched retakes. All14 candidates and unprompted negative results remain available. Original fallback, matching art, preferences, saves and rules stay intact. Alternatives target−23.5LUFS against approximately−20LUFS originals; the audition explicitly is not level matched or independent acting acceptance. Grade remains8.9 provisional; Phase15 repeats the existing rubric after exact-commit publication checks.
+
+## Phase 15 — reassessment and continuation
+
+[The fresh public review](CAMPAIGN_REASSESSMENT_PHASE15.md) retains all 26 campaigns and the original weighted rubric. The estimate is 8.910, displayed 8.9, against the unchanged 9.090 target. Depth and usability improve; narrative, visual and audio limits remain. Continuous runs visit 152 distinct UI scenes, while 241 source fixtures separately visit 248 of 260. Preserve nineteen layout probes, all raw metadata/negative history and the Phase 14 exact release. Continue with [Phases 16–21](AAA_PRODUCTION_ROADMAP_PHASE16_21.md), starting with character-driven drama and practical build choices, with matching art/voice and exact publication gates in every phase.

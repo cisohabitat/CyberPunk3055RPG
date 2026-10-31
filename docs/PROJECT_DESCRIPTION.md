@@ -105,3 +105,5 @@ The [return-path encounter](RETURN_ROUTING_PHASE12.md) gives trained Ghost runne
 Optional **Look closer** views stage Kerr’s depot conversation with its existing setting, listening portrait and neutral counter detail after the story decisions. [Phase13 report](ORDINARY_SCENE_DIRECTION_PHASE13.md).
 
 The [connected Kerr performance pass](EXPRESSIVE_PERFORMANCE_PHASE14.md) adds five directed same-word voice alternatives, retaining the established actor, matching paintings and original fallback recordings.
+
+[Phase 15 reassessment](CAMPAIGN_REASSESSMENT_PHASE15.md) grades the current game at 8.9 provisional, weighted 8.910, and provides a [six-phase production continuation](AAA_PRODUCTION_ROADMAP_PHASE16_21.md) toward the unchanged 9.090 target. This is the accepted AI proxy, not an independent audience or AAA certification.

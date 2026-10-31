@@ -1,0 +1,1547 @@
+{
+  "version": 1,
+  "phase": 15,
+  "reviewedAtUtc": "2026-10-31T01:07:15.058463+00:00",
+  "status": "Reassessment of exact public Phase14 build; separate QA/documentation release still requires full exact-commit CI and public verification",
+  "reviewedRevision": "632f29e9d38eb61f86c494f8f7731dff8e555bb0",
+  "reviewedDeployment": {
+    "id": "dpl_BB93EMMaJwHN69rKNbAdUBXnXSju",
+    "revision": "632f29e9d38eb61f86c494f8f7731dff8e555bb0",
+    "status": "READY",
+    "target": "production",
+    "projectId": "prj_JYHAxYL8onO9SFrvFN0i5q3IepIp",
+    "url": "cyberpunk3055rpg-lh7mx2g2h-cfusion2k-7277s-projects.vercel.app",
+    "aliases": [
+      "cyberpunk3055rpg.vercel.app",
+      "cyberpunk3055rpg-cfusion2k-7277s-projects.vercel.app",
+      "cyberpunk3055rpg-git-main-cfusion2k-7277s-projects.vercel.app"
+    ],
+    "publicAliasVerified": true,
+    "branchAliasVerified": true
+  },
+  "method": "Source-familiar AI proxy:26 fresh complete keyboard campaigns against actual public build, authored dice and synthetic viewports;19 legal enlarged layout probes, six inspected captures, source replay and retained exact media/ASR/audition context. No blind/human/physical-device/screen-reader listening or independent acting acceptance.",
+  "grade": 8.9,
+  "weightedEstimate": 8.91,
+  "previousGrade": 8.9,
+  "previousWeightedEstimate": 8.86,
+  "targetWeightedEstimate": 9.09,
+  "remainingWeightedGap": 0.18,
+  "rubric": [
+    {
+      "area": "Narrative",
+      "weight": 0.2,
+      "previous": 8.9,
+      "current": 8.9,
+      "target": 9.2,
+      "reason": "The Dispatcher has an ordinary practical want and an earned later reply; canonical consequences remain coherent. Midweek/return prose and choice details still repeatedly explain source, permission and reward limits. One bounded optional sequence does not establish a campaign-wide dramatic improvement.",
+      "weightedTargetGap": 0.06
+    },
+    {
+      "area": "RPG depth",
+      "weight": 0.2,
+      "previous": 8.8,
+      "current": 8.9,
+      "target": 9.1,
+      "reason": "Ghost now performs inspected return-routing work with owned-shroud versus own-signature exposure, retained effort, action scarcity and real pause/cancel/failure outcomes. Ten fresh current routing profiles retain those distinctions. Comparable depth remains uneven across other encounter families.",
+      "weightedTargetGap": 0.04
+    },
+    {
+      "area": "Visuals",
+      "weight": 0.15,
+      "previous": 8.8,
+      "current": 8.8,
+      "target": 9.0,
+      "reason": "Optional Kerr place/person/detail views fit the existing identity and actual knowledge. Six freshly inspected captures have clear type and coherent presentation; nineteen layouts preserve the accessibility/overflow checks. Most ordinary presentation remains static and these samples are not an anatomy audit of all164 works.",
+      "weightedTargetGap": 0.03
+    },
+    {
+      "area": "Audio",
+      "weight": 0.1,
+      "previous": 8.6,
+      "current": 8.6,
+      "target": 8.9,
+      "reason": "Five exact-word stock Kerr alternatives, original fallback, natural playback and recorded retake negatives remain verified. Original depot summary/fallback is approximately3.5dB louder than alternatives; the audition is not level matched. Stock expressive range and unestablished perceptual quality still limit the score.",
+      "weightedTargetGap": 0.03
+    },
+    {
+      "area": "Usability",
+      "weight": 0.15,
+      "previous": 8.8,
+      "current": 9.0,
+      "target": 9.0,
+      "reason": "All18 fresh enlarged workspace probes keep first actual actions27.35\u201369.01% closer than the immutable baseline, with full controls/prose/save and axe checks. The same13 campaigns use75 fewer Tabs than Phase10. Later workshop exit travel5061px and first actions above1000px persist; explicit review links mitigate them.",
+      "weightedTargetGap": 0.0
+    },
+    {
+      "area": "Engineering",
+      "weight": 0.2,
+      "previous": 9.1,
+      "current": 9.1,
+      "target": 9.2,
+      "reason": "Full historical source/media contracts,924 source tests, four-profile6392-case exact-commit CI, zero known dependency vulnerabilities and release verification remain strong. The title teardown regression was repaired without relaxing assertions. Twelve scenes remain unvisited and legacy randomized balance cohorts do not cover every newer encounter. More passing cases alone do not increase this score.",
+      "weightedTargetGap": 0.02
+    }
+  ],
+  "sourceFingerprint": "5606ffc2b6506722fb3ba775926692c60bc7f611e2279a88661c90d4b7afc336",
+  "preservedTrees": {
+    "app": "d3c0eae6a07d0c859eba86fbf5737a47b0489f49",
+    "components": "6c1916628285a945ba2c0da818684ae5337d8659",
+    "lib": "722e69b6a800c1cccfa5a1b6b9bb92a55d426d3f",
+    "public": "f0db8fd0aa532d7d8f51246000d87438e90e70f9",
+    "qa/media": "1890d3135bd985291ac0d0c4f32766ee5a6edace",
+    "qa/routes": "c1c2c207c41eae838f2ae6b5137fa7a97337afb5"
+  },
+  "allTotals": {
+    "visits": 2117,
+    "reloads": 1751,
+    "tabs": 17261,
+    "voices": 122,
+    "artViews": 51,
+    "ordinaryArtViews": 18,
+    "interruptions": 6
+  },
+  "fixedTotals": {
+    "browserCampaigns": 10,
+    "visits": 768,
+    "reloads": 571,
+    "tabs": 6429,
+    "completedVoices": 41,
+    "shotReviews": 51
+  },
+  "original13": {
+    "visits": 1016,
+    "reloads": 816,
+    "tabs": 8327,
+    "previousTabs": 8402,
+    "tabReduction": 75
+  },
+  "sourceCoverage": {
+    "routes": 241,
+    "visits": 17281,
+    "visitedScenes": 248,
+    "totalScenes": 260,
+    "unvisitedScenes": [
+      "act2_folio",
+      "act2_heat",
+      "chapel",
+      "ending_exposed",
+      "ending_sainted",
+      "ending_smashed",
+      "ending_taken",
+      "hatch",
+      "hatch_caught",
+      "kerr_fight",
+      "lumen_cold",
+      "why"
+    ],
+    "presentedSceneChoices": 763,
+    "selectedSceneChoices": 602
+  },
+  "campaigns": [
+    {
+      "id": "deferred",
+      "visits": 63,
+      "reloads": 62,
+      "tabs": 567,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 0,
+        "strain": 3,
+        "rolls": [
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "profile": {
+        "id": "deferred",
+        "route": "qa/routes/emotional-payoff/edda-deferred-quiet.json",
+        "width": 320,
+        "artwork": "none",
+        "reading": "paragraph",
+        "sound": false,
+        "shots": false
+      },
+      "revision": "632f29e9d38eb61f86c494f8f7731dff8e555bb0",
+      "dirty": false,
+      "report": "qa/editorial/campaign-reassessment-phase15-runs/deferred.json",
+      "sha256": "22a0aba847ed3f6b498937b1ff32a8a76000a531dcc526f2c419c79b7e8cd9cd",
+      "matchedPhase14": true,
+      "maxChoiceSectionGap": {
+        "scene": "act2_route_map",
+        "step": 33,
+        "pixels": 1485
+      },
+      "proseWordsAcrossVisits": 4163,
+      "visitsWithSectionGapOver1000": 7
+    },
+    {
+      "id": "denied",
+      "visits": 82,
+      "reloads": 81,
+      "tabs": 693,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_witness",
+        "creds": 370,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "profile": {
+        "id": "denied",
+        "route": "qa/routes/emotional-payoff/kerr-contact-denied-witness.json",
+        "width": 1440,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "shots": false
+      },
+      "revision": "632f29e9d38eb61f86c494f8f7731dff8e555bb0",
+      "dirty": false,
+      "report": "qa/editorial/campaign-reassessment-phase15-runs/denied.json",
+      "sha256": "1c58a64a095de48f4674eaaf2a56a5a402f02d4eef30a78bc2c965792c08b5ff",
+      "matchedPhase14": true,
+      "maxChoiceSectionGap": {
+        "scene": "act2_route_map",
+        "step": 39,
+        "pixels": 883
+      },
+      "proseWordsAcrossVisits": 5012,
+      "visitsWithSectionGapOver1000": 0
+    },
+    {
+      "id": "names",
+      "visits": 89,
+      "reloads": 88,
+      "tabs": 747,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 390,
+        "strain": 3,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "profile": {
+        "id": "names",
+        "route": "qa/routes/emotional-payoff/edda-authenticated-names.json",
+        "width": 390,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "shots": false
+      },
+      "revision": "632f29e9d38eb61f86c494f8f7731dff8e555bb0",
+      "dirty": false,
+      "report": "qa/editorial/campaign-reassessment-phase15-runs/names.json",
+      "sha256": "a0c7e5c4341f6a8908ca156bf758387067cbc5c3dab6f9f5d418a0d83118a8f3",
+      "matchedPhase14": true,
+      "maxChoiceSectionGap": {
+        "scene": "act3_testimony_consent",
+        "step": 84,
+        "pixels": 1421
+      },
+      "proseWordsAcrossVisits": 5407,
+      "visitsWithSectionGapOver1000": 17
+    },
+    {
+      "id": "listed-sound",
+      "visits": 87,
+      "reloads": 86,
+      "tabs": 919,
+      "voices": 41,
+      "artViews": 51,
+      "ordinaryArtViews": 0,
+      "interruptions": 2,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_listed",
+        "creds": 470,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "profile": {
+        "id": "listed-sound",
+        "route": "qa/routes/emotional-payoff/both-returns-listed.json",
+        "width": 390,
+        "artwork": "full",
+        "reading": "all",
+        "sound": true,
+        "shots": true
+      },
+      "revision": "632f29e9d38eb61f86c494f8f7731dff8e555bb0",
+      "dirty": false,
+      "report": "qa/editorial/campaign-reassessment-phase15-runs/listed-sound.json",
+      "sha256": "7a7b8e346cf82e0d5617dccdf2699a8094303c7f1aa29257faaed48df1f6344f",
+      "matchedPhase14": true,
+      "maxChoiceSectionGap": {
+        "scene": "act3_testimony_consent",
+        "step": 82,
+        "pixels": 1421
+      },
+      "proseWordsAcrossVisits": 5345,
+      "visitsWithSectionGapOver1000": 15
+    },
+    {
+      "id": "nerve",
+      "visits": 77,
+      "reloads": 30,
+      "tabs": 529,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 350,
+        "strain": 5,
+        "rolls": [
+          1,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "profile": {
+        "id": "nerve",
+        "route": "qa/routes/allocation-gutterwire.json",
+        "width": 390,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "shots": false
+      },
+      "revision": "632f29e9d38eb61f86c494f8f7731dff8e555bb0",
+      "dirty": false,
+      "report": "qa/editorial/campaign-reassessment-phase15-runs/nerve.json",
+      "sha256": "ad7a891a498240e5ad4415c3815689c9ef45e0f7659e2c99cbd8596e2272e8a8",
+      "matchedPhase14": true,
+      "maxChoiceSectionGap": {
+        "scene": "act3_testimony_correction",
+        "step": 73,
+        "pixels": 1735
+      },
+      "proseWordsAcrossVisits": 4943,
+      "visitsWithSectionGapOver1000": 5
+    },
+    {
+      "id": "face-failed",
+      "visits": 75,
+      "reloads": 27,
+      "tabs": 576,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 345,
+        "strain": 0,
+        "rolls": [
+          10,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      "profile": {
+        "id": "face-failed",
+        "route": "qa/routes/depot-build-face-failed.json",
+        "width": 1440,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "shots": false
+      },
+      "revision": "632f29e9d38eb61f86c494f8f7731dff8e555bb0",
+      "dirty": false,
+      "report": "qa/editorial/campaign-reassessment-phase15-runs/face-failed.json",
+      "sha256": "4da03862d9c82787c820a1036f2f3487dc10f1781fdfb9eae20a617ab352ca1d",
+      "matchedPhase14": true,
+      "maxChoiceSectionGap": {
+        "scene": "act3_testimony_consent",
+        "step": 69,
+        "pixels": 980
+      },
+      "proseWordsAcrossVisits": 5027,
+      "visitsWithSectionGapOver1000": 0
+    },
+    {
+      "id": "archive-failed",
+      "visits": 64,
+      "reloads": 63,
+      "tabs": 578,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 0,
+        "strain": 4,
+        "rolls": [
+          1,
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "profile": {
+        "id": "archive-failed",
+        "route": "qa/routes/emotional-payoff/edda-failed-quiet.json",
+        "width": 320,
+        "artwork": "none",
+        "reading": "paragraph",
+        "sound": false,
+        "shots": false
+      },
+      "revision": "632f29e9d38eb61f86c494f8f7731dff8e555bb0",
+      "dirty": false,
+      "report": "qa/editorial/campaign-reassessment-phase15-runs/archive-failed.json",
+      "sha256": "4a2e05d8ff9899fdc386f04431921cea6184de891b534079d13ff210c05026ee",
+      "matchedPhase14": true,
+      "maxChoiceSectionGap": {
+        "scene": "act2_route_map",
+        "step": 33,
+        "pixels": 1485
+      },
+      "proseWordsAcrossVisits": 4269,
+      "visitsWithSectionGapOver1000": 7
+    },
+    {
+      "id": "canceled",
+      "visits": 75,
+      "reloads": 74,
+      "tabs": 616,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 390,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "profile": {
+        "id": "canceled",
+        "route": "qa/routes/emotional-payoff/kerr-canceled-quiet.json",
+        "width": 390,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "shots": false
+      },
+      "revision": "632f29e9d38eb61f86c494f8f7731dff8e555bb0",
+      "dirty": false,
+      "report": "qa/editorial/campaign-reassessment-phase15-runs/canceled.json",
+      "sha256": "d6d17598e6dcf02eee263454a052657fe1c6c17b5c335b3a32ead68373639db9",
+      "matchedPhase14": true,
+      "maxChoiceSectionGap": {
+        "scene": "act3_testimony_consent",
+        "step": 70,
+        "pixels": 1421
+      },
+      "proseWordsAcrossVisits": 4545,
+      "visitsWithSectionGapOver1000": 8
+    },
+    {
+      "id": "nerve-handling-failed",
+      "visits": 76,
+      "reloads": 28,
+      "tabs": 573,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 355,
+        "strain": 3,
+        "rolls": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      "profile": {
+        "id": "nerve-handling-failed",
+        "route": "qa/routes/depot-build-nerve-failed.json",
+        "width": 390,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "shots": false
+      },
+      "revision": "632f29e9d38eb61f86c494f8f7731dff8e555bb0",
+      "dirty": false,
+      "report": "qa/editorial/campaign-reassessment-phase15-runs/nerve-handling-failed.json",
+      "sha256": "2e30f1a44c41d16e1f2b7ef9c1807f7ae86b3153df247acbb869ef5de36a2695",
+      "matchedPhase14": true,
+      "maxChoiceSectionGap": {
+        "scene": "act3_testimony_consent",
+        "step": 70,
+        "pixels": 1672
+      },
+      "proseWordsAcrossVisits": 5097,
+      "visitsWithSectionGapOver1000": 13
+    },
+    {
+      "id": "ghost-routing",
+      "visits": 80,
+      "reloads": 32,
+      "tabs": 631,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_names",
+        "creds": 380,
+        "strain": 2,
+        "rolls": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      "profile": {
+        "id": "ghost-routing",
+        "route": "qa/routes/depot-build-ghost.json",
+        "width": 390,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "shots": false
+      },
+      "revision": "632f29e9d38eb61f86c494f8f7731dff8e555bb0",
+      "dirty": false,
+      "report": "qa/editorial/campaign-reassessment-phase15-runs/ghost-routing.json",
+      "sha256": "fb0a1d9fc2ea4c1df70ca6d172921550e9ded49ce526b16b5b3d8fd1343bdf75",
+      "matchedPhase14": true,
+      "maxChoiceSectionGap": {
+        "scene": "act3_testimony_consent",
+        "step": 74,
+        "pixels": 1672
+      },
+      "proseWordsAcrossVisits": 5244,
+      "visitsWithSectionGapOver1000": 13
+    },
+    {
+      "id": "harness-listed",
+      "visits": 81,
+      "reloads": 80,
+      "tabs": 585,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_listed",
+        "creds": 290,
+        "strain": 4,
+        "rolls": [
+          1,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "profile": {
+        "id": "harness-listed",
+        "route": "qa/routes/freight-craft/harness-listed.json",
+        "width": 390,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "shots": false
+      },
+      "revision": "632f29e9d38eb61f86c494f8f7731dff8e555bb0",
+      "dirty": false,
+      "report": "qa/editorial/campaign-reassessment-phase15-runs/harness-listed.json",
+      "sha256": "a0b8e9dec1849bb91a98caba61b4a65ea910eff8338d219b0e658779ac99af18",
+      "matchedPhase14": true,
+      "maxChoiceSectionGap": {
+        "scene": "act3_testimony_correction",
+        "step": 77,
+        "pixels": 1645
+      },
+      "proseWordsAcrossVisits": 5347,
+      "visitsWithSectionGapOver1000": 7
+    },
+    {
+      "id": "failed-desk",
+      "visits": 79,
+      "reloads": 78,
+      "tabs": 569,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 330,
+        "strain": 5,
+        "rolls": [
+          1,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "profile": {
+        "id": "failed-desk",
+        "route": "qa/routes/freight-craft/failed-desk.json",
+        "width": 390,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "shots": false
+      },
+      "revision": "632f29e9d38eb61f86c494f8f7731dff8e555bb0",
+      "dirty": false,
+      "report": "qa/editorial/campaign-reassessment-phase15-runs/failed-desk.json",
+      "sha256": "9e0582cf1b9b78fcbefad61229774b9d99e4e6e88cb700216418810d88c9a452",
+      "matchedPhase14": true,
+      "maxChoiceSectionGap": {
+        "scene": "act3_testimony_correction",
+        "step": 75,
+        "pixels": 1673
+      },
+      "proseWordsAcrossVisits": 5271,
+      "visitsWithSectionGapOver1000": 5
+    },
+    {
+      "id": "scarce",
+      "visits": 88,
+      "reloads": 87,
+      "tabs": 744,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 0,
+        "strain": 5,
+        "rolls": [
+          1,
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "profile": {
+        "id": "scarce",
+        "route": "qa/routes/freight-craft/scarce.json",
+        "width": 320,
+        "artwork": "none",
+        "reading": "paragraph",
+        "sound": false,
+        "shots": false
+      },
+      "revision": "632f29e9d38eb61f86c494f8f7731dff8e555bb0",
+      "dirty": false,
+      "report": "qa/editorial/campaign-reassessment-phase15-runs/scarce.json",
+      "sha256": "115c1feb5486d6713673abc750f92f6fda0c29dc70e320ffdd263dd7e3674fed",
+      "matchedPhase14": true,
+      "maxChoiceSectionGap": {
+        "scene": "act2_route_map",
+        "step": 48,
+        "pixels": 1485
+      },
+      "proseWordsAcrossVisits": 5923,
+      "visitsWithSectionGapOver1000": 7
+    },
+    {
+      "id": "routing-cancel-after",
+      "visits": 86,
+      "reloads": 85,
+      "tabs": 675,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 165,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "profile": {
+        "id": "routing-cancel-after",
+        "route": "qa/routes/return-routing/cancel-after.json",
+        "width": 1440,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "shots": false
+      },
+      "revision": "632f29e9d38eb61f86c494f8f7731dff8e555bb0",
+      "dirty": false,
+      "report": "qa/editorial/campaign-reassessment-phase15-runs/routing-cancel-after.json",
+      "sha256": "cc490f4c4c2df7d73a77b96f817757901b84cf576769d6b6a4d080f4b9a820fe",
+      "matchedPhase14": true,
+      "maxChoiceSectionGap": {
+        "scene": "act2_archive_compare",
+        "step": 48,
+        "pixels": 2673
+      },
+      "proseWordsAcrossVisits": 5485,
+      "visitsWithSectionGapOver1000": 3
+    },
+    {
+      "id": "routing-cancel-before",
+      "visits": 82,
+      "reloads": 81,
+      "tabs": 656,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 305,
+        "strain": 0,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "profile": {
+        "id": "routing-cancel-before",
+        "route": "qa/routes/return-routing/cancel-before.json",
+        "width": 390,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "shots": false
+      },
+      "revision": "632f29e9d38eb61f86c494f8f7731dff8e555bb0",
+      "dirty": false,
+      "report": "qa/editorial/campaign-reassessment-phase15-runs/routing-cancel-before.json",
+      "sha256": "ea925bb84bcdbdf6022c365a0634519a6c3dd82cb9473b274bab228459eea768",
+      "matchedPhase14": true,
+      "maxChoiceSectionGap": {
+        "scene": "act2_archive_compare",
+        "step": 48,
+        "pixels": 4383
+      },
+      "proseWordsAcrossVisits": 5125,
+      "visitsWithSectionGapOver1000": 8
+    },
+    {
+      "id": "routing-declined",
+      "visits": 83,
+      "reloads": 82,
+      "tabs": 663,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 305,
+        "strain": 0,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "profile": {
+        "id": "routing-declined",
+        "route": "qa/routes/return-routing/declined.json",
+        "width": 1440,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "shots": false
+      },
+      "revision": "632f29e9d38eb61f86c494f8f7731dff8e555bb0",
+      "dirty": false,
+      "report": "qa/editorial/campaign-reassessment-phase15-runs/routing-declined.json",
+      "sha256": "e075f617154b98c338eff4082ce35cb708a4edfb15453a61bcf435e5aa38f8cb",
+      "matchedPhase14": true,
+      "maxChoiceSectionGap": {
+        "scene": "act2_archive_compare",
+        "step": 48,
+        "pixels": 2673
+      },
+      "proseWordsAcrossVisits": 5226,
+      "visitsWithSectionGapOver1000": 3
+    },
+    {
+      "id": "routing-held-hatch",
+      "visits": 87,
+      "reloads": 86,
+      "tabs": 680,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 165,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "profile": {
+        "id": "routing-held-hatch",
+        "route": "qa/routes/return-routing/held-hatch.json",
+        "width": 390,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "shots": false
+      },
+      "revision": "632f29e9d38eb61f86c494f8f7731dff8e555bb0",
+      "dirty": false,
+      "report": "qa/editorial/campaign-reassessment-phase15-runs/routing-held-hatch.json",
+      "sha256": "89c03a0ca8da352e45cccc732b5a80b63bda3d5ffed6e35886279266b50ad3b1",
+      "matchedPhase14": true,
+      "maxChoiceSectionGap": {
+        "scene": "act2_archive_compare",
+        "step": 48,
+        "pixels": 4383
+      },
+      "proseWordsAcrossVisits": 5544,
+      "visitsWithSectionGapOver1000": 8
+    },
+    {
+      "id": "routing-held-strip",
+      "visits": 87,
+      "reloads": 86,
+      "tabs": 677,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 305,
+        "strain": 0,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "profile": {
+        "id": "routing-held-strip",
+        "route": "qa/routes/return-routing/held-strip.json",
+        "width": 1440,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "shots": false
+      },
+      "revision": "632f29e9d38eb61f86c494f8f7731dff8e555bb0",
+      "dirty": false,
+      "report": "qa/editorial/campaign-reassessment-phase15-runs/routing-held-strip.json",
+      "sha256": "a11092124b25f24c3633ea3c1b09d7be306dd25a36d783e842f2b96630f0fe08",
+      "matchedPhase14": true,
+      "maxChoiceSectionGap": {
+        "scene": "act2_archive_compare",
+        "step": 48,
+        "pixels": 2673
+      },
+      "proseWordsAcrossVisits": 5541,
+      "visitsWithSectionGapOver1000": 3
+    },
+    {
+      "id": "routing-scarce",
+      "visits": 76,
+      "reloads": 75,
+      "tabs": 665,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 0,
+        "strain": 4,
+        "rolls": [
+          10,
+          1,
+          8,
+          8,
+          8,
+          1
+        ]
+      },
+      "profile": {
+        "id": "routing-scarce",
+        "route": "qa/routes/return-routing/scarce.json",
+        "width": 320,
+        "artwork": "none",
+        "reading": "paragraph",
+        "sound": false,
+        "shots": false
+      },
+      "revision": "632f29e9d38eb61f86c494f8f7731dff8e555bb0",
+      "dirty": false,
+      "report": "qa/editorial/campaign-reassessment-phase15-runs/routing-scarce.json",
+      "sha256": "ba128faab3be2257df21a3c68bc1f297ac3553576e0b59b145d2232b7655b5ff",
+      "matchedPhase14": true,
+      "maxChoiceSectionGap": {
+        "scene": "act2_route_map",
+        "step": 35,
+        "pixels": 1485
+      },
+      "proseWordsAcrossVisits": 5261,
+      "visitsWithSectionGapOver1000": 6
+    },
+    {
+      "id": "routing-screened",
+      "visits": 87,
+      "reloads": 86,
+      "tabs": 781,
+      "voices": 43,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 2,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 165,
+        "strain": 1,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "profile": {
+        "id": "routing-screened",
+        "route": "qa/routes/return-routing/screened.json",
+        "width": 1440,
+        "artwork": "full",
+        "reading": "all",
+        "sound": true,
+        "shots": false
+      },
+      "revision": "632f29e9d38eb61f86c494f8f7731dff8e555bb0",
+      "dirty": false,
+      "report": "qa/editorial/campaign-reassessment-phase15-runs/routing-screened.json",
+      "sha256": "e225d5777890a1442dc1497206c879b8edb055323a3519df93b5309be0830c9f",
+      "matchedPhase14": true,
+      "maxChoiceSectionGap": {
+        "scene": "act2_archive_compare",
+        "step": 48,
+        "pixels": 2673
+      },
+      "proseWordsAcrossVisits": 5557,
+      "visitsWithSectionGapOver1000": 3
+    },
+    {
+      "id": "routing-signed",
+      "visits": 87,
+      "reloads": 86,
+      "tabs": 678,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 305,
+        "strain": 0,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "profile": {
+        "id": "routing-signed",
+        "route": "qa/routes/return-routing/signed.json",
+        "width": 390,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "shots": false
+      },
+      "revision": "632f29e9d38eb61f86c494f8f7731dff8e555bb0",
+      "dirty": false,
+      "report": "qa/editorial/campaign-reassessment-phase15-runs/routing-signed.json",
+      "sha256": "d8f64254f62462a971db10130991671db1b513d5463f789553c45d667eb44a4f",
+      "matchedPhase14": true,
+      "maxChoiceSectionGap": {
+        "scene": "act2_archive_compare",
+        "step": 48,
+        "pixels": 4383
+      },
+      "proseWordsAcrossVisits": 5554,
+      "visitsWithSectionGapOver1000": 8
+    },
+    {
+      "id": "routing-skipped",
+      "visits": 79,
+      "reloads": 78,
+      "tabs": 634,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 305,
+        "strain": 0,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "profile": {
+        "id": "routing-skipped",
+        "route": "qa/routes/return-routing/skipped.json",
+        "width": 1440,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "shots": false
+      },
+      "revision": "632f29e9d38eb61f86c494f8f7731dff8e555bb0",
+      "dirty": false,
+      "report": "qa/editorial/campaign-reassessment-phase15-runs/routing-skipped.json",
+      "sha256": "51ef9c5b73c2e5b0b6b7476c6d498ee2e6b2fd2257a0e05626fa351eb9bf1459",
+      "matchedPhase14": true,
+      "maxChoiceSectionGap": {
+        "scene": "act2_archive_compare",
+        "step": 48,
+        "pixels": 2673
+      },
+      "proseWordsAcrossVisits": 4963,
+      "visitsWithSectionGapOver1000": 3
+    },
+    {
+      "id": "routing-unfinished",
+      "visits": 86,
+      "reloads": 85,
+      "tabs": 677,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 305,
+        "strain": 0,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "profile": {
+        "id": "routing-unfinished",
+        "route": "qa/routes/return-routing/unfinished.json",
+        "width": 390,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "shots": false
+      },
+      "revision": "632f29e9d38eb61f86c494f8f7731dff8e555bb0",
+      "dirty": false,
+      "report": "qa/editorial/campaign-reassessment-phase15-runs/routing-unfinished.json",
+      "sha256": "774c7d1961830646719f76328277fa3fc5d98cf2630e73520d54e82dcdb0516d",
+      "matchedPhase14": true,
+      "maxChoiceSectionGap": {
+        "scene": "act2_archive_compare",
+        "step": 48,
+        "pixels": 4383
+      },
+      "proseWordsAcrossVisits": 5481,
+      "visitsWithSectionGapOver1000": 8
+    },
+    {
+      "id": "ordinary-shared",
+      "visits": 94,
+      "reloads": 42,
+      "tabs": 717,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 9,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 185,
+        "strain": 1,
+        "rolls": [
+          10,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "profile": {
+        "id": "ordinary-shared",
+        "route": "qa/routes/district-public-work.json",
+        "width": 390,
+        "artwork": "full",
+        "reading": "all",
+        "sound": false,
+        "shots": false,
+        "ordinaryShots": true
+      },
+      "revision": "632f29e9d38eb61f86c494f8f7731dff8e555bb0",
+      "dirty": false,
+      "report": "qa/editorial/campaign-reassessment-phase15-runs/ordinary-shared.json",
+      "sha256": "9afc2c9e017d743dd871ba7c40a9cb84cd7e611939eb2120a50a4f6df1b73da8",
+      "matchedPhase14": true,
+      "maxChoiceSectionGap": {
+        "scene": "act2_archive_compare",
+        "step": 48,
+        "pixels": 4383
+      },
+      "proseWordsAcrossVisits": 6034,
+      "visitsWithSectionGapOver1000": 12
+    },
+    {
+      "id": "ordinary-private",
+      "visits": 80,
+      "reloads": 28,
+      "tabs": 623,
+      "voices": 0,
+      "artViews": 0,
+      "ordinaryArtViews": 0,
+      "interruptions": 0,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 165,
+        "strain": 0,
+        "rolls": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "profile": {
+        "id": "ordinary-private",
+        "route": "qa/routes/district-private-rest.json",
+        "width": 320,
+        "artwork": "none",
+        "reading": "paragraph",
+        "sound": false,
+        "shots": false,
+        "ordinaryShots": false
+      },
+      "revision": "632f29e9d38eb61f86c494f8f7731dff8e555bb0",
+      "dirty": false,
+      "report": "qa/editorial/campaign-reassessment-phase15-runs/ordinary-private.json",
+      "sha256": "35cc8b03703c7acee9c49e51ad69fb000673c4565ddf04b7b2473c2ac7fbd111",
+      "matchedPhase14": true,
+      "maxChoiceSectionGap": {
+        "scene": "act2_archive_compare",
+        "step": 48,
+        "pixels": 5456
+      },
+      "proseWordsAcrossVisits": 4940,
+      "visitsWithSectionGapOver1000": 9
+    },
+    {
+      "id": "ordinary-refused",
+      "visits": 87,
+      "reloads": 35,
+      "tabs": 808,
+      "voices": 38,
+      "artViews": 0,
+      "ordinaryArtViews": 9,
+      "interruptions": 2,
+      "canonicalTextAndActions": true,
+      "final": {
+        "sceneId": "ending_quiet",
+        "creds": 165,
+        "strain": 1,
+        "rolls": [
+          10,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "profile": {
+        "id": "ordinary-refused",
+        "route": "qa/routes/district-breach-denied.json",
+        "width": 390,
+        "artwork": "full",
+        "reading": "all",
+        "sound": true,
+        "shots": false,
+        "ordinaryShots": true
+      },
+      "revision": "632f29e9d38eb61f86c494f8f7731dff8e555bb0",
+      "dirty": false,
+      "report": "qa/editorial/campaign-reassessment-phase15-runs/ordinary-refused.json",
+      "sha256": "9ddb83cb5318da91716e6a68d3a393dbab55074fa3f3fa01ef0c252531454c3f",
+      "matchedPhase14": true,
+      "maxChoiceSectionGap": {
+        "scene": "act2_archive_compare",
+        "step": 48,
+        "pixels": 4383
+      },
+      "proseWordsAcrossVisits": 5481,
+      "visitsWithSectionGapOver1000": 12
+    }
+  ],
+  "layoutEvidence": {
+    "report": "qa/editorial/campaign-reassessment-phase15-layout.json",
+    "cases": 19,
+    "matchedBeforeCases": 18,
+    "minimumFirstActionReduction": 0.2735277930654926,
+    "maximumFirstActionReduction": 0.6901253573784913,
+    "inspectedCaptures": [
+      "qa/editorial/campaign-reassessment-phase15-captures/act2_workshop-390-action.png",
+      "qa/editorial/campaign-reassessment-phase15-captures/act2_craft_archive-390-reading.png",
+      "qa/editorial/campaign-reassessment-phase15-captures/act3_testimony_review-390-reading.png",
+      "qa/editorial/campaign-reassessment-phase15-captures/act2_craft_archive-390-entry.png",
+      "qa/editorial/campaign-reassessment-phase15-captures/act3_testimony_review-390-entry.png",
+      "qa/editorial/campaign-reassessment-phase15-captures/freight-loaded-390-entry.png"
+    ],
+    "actualDriver": "qa/editorial/campaign-reassessment-phase15-capture-driver.ts",
+    "actualDriverSha256": "9ee2d89cc9219ac0a6217a1571f0010bfbb1d24fd0c636e0392cd8401989b608",
+    "inspectedCaptureHashes": [
+      {
+        "path": "qa/editorial/campaign-reassessment-phase15-captures/act2_workshop-390-action.png",
+        "sha256": "162d12c2ba496b56f13737fb6b8974775de2f1e0ba0c765ca59524df52a181bd"
+      },
+      {
+        "path": "qa/editorial/campaign-reassessment-phase15-captures/act2_craft_archive-390-reading.png",
+        "sha256": "f636dd515bcfcd227542b7187b3697fe8dfa9ea26f8acb26e01ba3c7e59b3218"
+      },
+      {
+        "path": "qa/editorial/campaign-reassessment-phase15-captures/act3_testimony_review-390-reading.png",
+        "sha256": "eb3f5fbb312b2685bfd15457cc4deca134d2edf5ebf74440a2909489c513d424"
+      },
+      {
+        "path": "qa/editorial/campaign-reassessment-phase15-captures/act2_craft_archive-390-entry.png",
+        "sha256": "15ccf49071897b60873eeb66bc64364b85b3f39465888e3d66f61f1b19c1ad4b"
+      },
+      {
+        "path": "qa/editorial/campaign-reassessment-phase15-captures/act3_testimony_review-390-entry.png",
+        "sha256": "35b292aa16c1991f98794e6885469cceea6c60ff4d6a43207a7340f434190761"
+      },
+      {
+        "path": "qa/editorial/campaign-reassessment-phase15-captures/freight-loaded-390-entry.png",
+        "sha256": "ca7cec653bc4acb021639b09e07f3f506c699b55a855ba4b57fca40a4c7c46ce"
+      }
+    ]
+  },
+  "priorRelease": "qa/editorial/expressive-performance-release.json",
+  "negativeEvidence": [
+    "qa/editorial/expressive-performance-diagnostics.json",
+    "qa/editorial/ordinary-direction-first-ci.json",
+    "qa/editorial/ordinary-direction-second-ci.json",
+    "qa/editorial/decision-flow-first-ci.json"
+  ],
+  "newScenes": [],
+  "newQuotes": [],
+  "newMedia": [],
+  "report": "docs/CAMPAIGN_REASSESSMENT_PHASE15.md",
+  "roadmap": "docs/AAA_PRODUCTION_ROADMAP_PHASE16_21.md",
+  "nextPhase": "Phase16: a connected character-driven dramatic pilot with exact accompanying art/voice decisions before expanding campaign-wide.",
+  "limitations": [
+    "Technical playback/ASR and signal measurements are not acting ratings. Existing comparison is not level matched.",
+    "Prose and Tab totals reflect fixed review policies and directed dice, not unfamiliar-player comprehension or speed.",
+    "Nineteen enlarged layouts/six inspected screenshots do not establish physical-iPhone or all-art anatomy acceptance.",
+    "Twelve source scenes remain unvisited; all five original randomized balance policy cohorts remain historically scoped."
+  ],
+  "publicUiCoverage": {
+    "campaigns": 26,
+    "uniqueScenes": 152,
+    "scenes": [
+      "act2_archive_brief",
+      "act2_archive_challenge",
+      "act2_archive_compare",
+      "act2_archive_custody",
+      "act2_archive_door",
+      "act2_archive_gap",
+      "act2_archive_prep",
+      "act2_archive_verified",
+      "act2_craft_archive",
+      "act2_craft_archive_challenge",
+      "act2_craft_archive_issuer",
+      "act2_craft_kerr_offer",
+      "act2_craft_kerr_settlement",
+      "act2_depot_carry",
+      "act2_depot_cart_pass",
+      "act2_depot_contract",
+      "act2_depot_liability",
+      "act2_depot_load",
+      "act2_depot_methods",
+      "act2_depot_outer_pass",
+      "act2_depot_return_pass",
+      "act2_district_brief",
+      "act2_district_canal",
+      "act2_district_docket",
+      "act2_district_edda",
+      "act2_district_kerr",
+      "act2_district_kerr_reply",
+      "act2_district_rest",
+      "act2_district_result",
+      "act2_district_work",
+      "act2_freight_brief",
+      "act2_freight_intake",
+      "act2_freight_prep",
+      "act2_freight_result",
+      "act2_freight_sources",
+      "act2_helion",
+      "act2_helion_door",
+      "act2_kerr",
+      "act2_kerr_collection_terms",
+      "act2_kerr_door",
+      "act2_lumen",
+      "act2_lumen_door",
+      "act2_middle",
+      "act2_notice_allocation",
+      "act2_notice_allocation_review",
+      "act2_notice_brief",
+      "act2_notice_methods",
+      "act2_notice_offer",
+      "act2_notice_receipt",
+      "act2_notice_sources",
+      "act2_origin_dustline",
+      "act2_origin_gutterwire",
+      "act2_origin_return",
+      "act2_origin_spire",
+      "act2_public_response",
+      "act2_ramp_arrived",
+      "act2_ramp_gear",
+      "act2_ramp_load",
+      "act2_ramp_stopped",
+      "act2_ramp_survey",
+      "act2_ramp_terms",
+      "act2_recovery",
+      "act2_recovery_after",
+      "act2_return_routing_prepare",
+      "act2_return_routing_read",
+      "act2_return_routing_result",
+      "act2_return_routing_route",
+      "act2_return_routing_terms",
+      "act2_route_crossing",
+      "act2_route_exit",
+      "act2_route_map",
+      "act2_route_receipt",
+      "act2_route_recovery",
+      "act2_route_review",
+      "act2_shelter_brief",
+      "act2_shelter_hall",
+      "act2_shelter_methods",
+      "act2_shelter_prep",
+      "act2_shelter_result",
+      "act2_technique_bench",
+      "act2_technique_ghost",
+      "act2_technique_ghost_route",
+      "act2_technique_result",
+      "act2_training",
+      "act2_witness_arrival",
+      "act2_witness_brief",
+      "act2_witness_door",
+      "act2_witness_plan",
+      "act2_witness_safe",
+      "act2_workshop",
+      "act3_arrival",
+      "act3_district_return",
+      "act3_edda_visit",
+      "act3_freight_reflection",
+      "act3_freight_visit",
+      "act3_kerr_collection",
+      "act3_kerr_collection_response",
+      "act3_kerr_personal_question",
+      "act3_neighborhood",
+      "act3_payoff_edda",
+      "act3_payoff_kerr",
+      "act3_ramp_return",
+      "act3_records_visit",
+      "act3_return_routing_return",
+      "act3_shelter_visit",
+      "act3_testimony_consent",
+      "act3_testimony_correction",
+      "act3_testimony_hearing",
+      "act3_testimony_nia",
+      "act3_testimony_record",
+      "act3_testimony_review",
+      "act3_witness_visit",
+      "after_kerr",
+      "card_wall",
+      "card_week",
+      "chapel_method_review",
+      "chapel_methods",
+      "chapel_window_exit",
+      "chapel_window_plan",
+      "districts",
+      "ending_both",
+      "ending_burned",
+      "ending_listed",
+      "ending_names",
+      "ending_quiet",
+      "ending_sold",
+      "ending_week_deal",
+      "ending_week_wards",
+      "ending_witness",
+      "kerr",
+      "lumen",
+      "lumen_deal",
+      "mara_why",
+      "memo",
+      "memory_challenge",
+      "memory_publication",
+      "memory_reconstruction",
+      "memory_table",
+      "opening_approach",
+      "opening_city",
+      "opening_neighbor",
+      "opening_self",
+      "pay",
+      "pay_no",
+      "pay_yes",
+      "route",
+      "side",
+      "stall",
+      "street_after",
+      "undercroft",
+      "vault_quiet",
+      "ward_wall"
+    ],
+    "method": "Distinct scene ids actually observed in the26 current-UI browser campaigns; separate from241 historical source replays and their248 visited ids."
+  },
+  "localValidation": {
+    "typescript": "passed",
+    "documentationTests": 2,
+    "layoutToolReproduction": {
+      "cases": 19,
+      "metrics": "Exact initial19 match; this is repeat technical validation, not another independent sample.",
+      "report": "qa/editorial/campaign-reassessment-phase15-layout-reproduction.json",
+      "revision": "632f29e9d38eb61f86c494f8f7731dff8e555bb0",
+      "dirty": true,
+      "environment": {
+        "browser": "Actual Chromium",
+        "browserVersion": "151.0.7922.173",
+        "viewport": "synthetic",
+        "layout": "enlarged"
+      },
+      "tool": "qa/production/craft-reassessment.ts",
+      "toolSha256": "a71304f6d5ed13458cc23377ce811b683c094dd7020c87e35ab148c950983e9f"
+    }
+  }
+}

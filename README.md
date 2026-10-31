@@ -1,5 +1,7 @@
 # Saint Shard
 
+Phase 15 reassesses the live game at **8.9/10 provisional**, weighted **8.910** with the unchanged rubric. All 26 fresh public campaigns preserve their preceding outcomes; eighteen enlarged workspace comparisons keep first actual actions 27–69% closer than the preserved baseline. Narrative, practical build depth, visual staging and expressive audio remain the next priorities. See the [review](docs/CAMPAIGN_REASSESSMENT_PHASE15.md) and [detailed Phases 16–21 production roadmap](docs/AAA_PRODUCTION_ROADMAP_PHASE16_21.md).
+
 Phase 14 gives five Kerr depot lines directed same-word alternatives, retaining his established voice, matching art and each original recording as a fallback. The source-summary delivery remains original after its retakes failed word review. See [the performance plan and evidence](docs/EXPRESSIVE_PERFORMANCE_PHASE14.md). The provisional grade remains 8.9. Local validation retains all 26 campaign outcomes and passes 69 playback/art checks in Chromium and WebKit; release requires full exact-commit CI and public verification.
 
 
