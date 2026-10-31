@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "phase": 17,
+  "baseline": "qa/editorial/consequential-methods-baseline.json",
+  "baselineSha256": "00fccb53c0e34925d1e0fa68b5abed7e8650856eea9d3dfc10af702cec561937",
+  "newScenes": [],
+  "newMedia": [],
+  "newManifests": [
+    "qa/media/consequential-methods.json"
+  ],
+  "newRoutes": [
+    "consequential-methods/chrome-public-work.json",
+    "consequential-methods/chrome-public-stop.json",
+    "consequential-methods/chrome-private.json",
+    "consequential-methods/face-public-work.json",
+    "consequential-methods/face-public-stop.json",
+    "consequential-methods/face-private.json"
+  ],
+  "changedScenes": [
+    "act2_technique_chrome",
+    "act2_technique_face",
+    "act2_technique_result",
+    "act2_district_canal",
+    "act3_district_return"
+  ],
+  "newFlags": [
+    "consequential_methods_enabled",
+    "consequential_chrome",
+    "consequential_face",
+    "consequential_short_shift"
+  ],
+  "artDecisions": [
+    {
+      "scene": "act2_technique_chrome",
+      "treatment": "reuse",
+      "reason": "Existing neutral filing bench, canal or records-table setting shows no transferred wage, owned probe, signed form, authenticated source or completed inquiry. Existing actor portraits and exact quotations remain valid; no new quotation, actor or primary image. All859 original media deliveries and prior manifests remain byte-identical."
+    },
+    {
+      "scene": "act2_technique_face",
+      "treatment": "reuse",
+      "reason": "Existing neutral filing bench, canal or records-table setting shows no transferred wage, owned probe, signed form, authenticated source or completed inquiry. Existing actor portraits and exact quotations remain valid; no new quotation, actor or primary image. All859 original media deliveries and prior manifests remain byte-identical."
+    },
+    {
+      "scene": "act2_technique_result",
+      "treatment": "reuse",
+      "reason": "Existing neutral filing bench, canal or records-table setting shows no transferred wage, owned probe, signed form, authenticated source or completed inquiry. Existing actor portraits and exact quotations remain valid; no new quotation, actor or primary image. All859 original media deliveries and prior manifests remain byte-identical."
+    },
+    {
+      "scene": "act2_district_canal",
+      "treatment": "reuse",
+      "reason": "Existing neutral filing bench, canal or records-table setting shows no transferred wage, owned probe, signed form, authenticated source or completed inquiry. Existing actor portraits and exact quotations remain valid; no new quotation, actor or primary image. All859 original media deliveries and prior manifests remain byte-identical."
+    },
+    {
+      "scene": "act3_district_return",
+      "treatment": "reuse",
+      "reason": "Existing neutral filing bench, canal or records-table setting shows no transferred wage, owned probe, signed form, authenticated source or completed inquiry. Existing actor portraits and exact quotations remain valid; no new quotation, actor or primary image. All859 original media deliveries and prior manifests remain byte-identical."
+    }
+  ]
+}

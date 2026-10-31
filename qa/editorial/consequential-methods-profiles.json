@@ -1,0 +1,68 @@
+[
+  {
+    "id": "consequential-chrome-public-work",
+    "route": "qa/routes/consequential-methods/chrome-public-work.json",
+    "precedingRoute": "qa/editorial/consequential-methods-controls/chrome-public-work.json",
+    "historicalRoute": "qa/routes/technique-chrome-portable-label.json",
+    "width": 1440,
+    "artwork": "full",
+    "reading": "all",
+    "sound": false,
+    "shots": false
+  },
+  {
+    "id": "consequential-chrome-public-stop",
+    "route": "qa/routes/consequential-methods/chrome-public-stop.json",
+    "precedingRoute": "qa/editorial/consequential-methods-controls/chrome-public-stop.json",
+    "historicalRoute": "qa/routes/technique-chrome-portable-label.json",
+    "width": 320,
+    "artwork": "none",
+    "reading": "paragraph",
+    "sound": false,
+    "shots": false
+  },
+  {
+    "id": "consequential-chrome-private",
+    "route": "qa/routes/consequential-methods/chrome-private.json",
+    "precedingRoute": "qa/editorial/consequential-methods-controls/chrome-private.json",
+    "historicalRoute": "qa/routes/technique-chrome-portable-label.json",
+    "width": 1440,
+    "artwork": "full",
+    "reading": "all",
+    "sound": false,
+    "shots": false
+  },
+  {
+    "id": "consequential-face-public-work",
+    "route": "qa/routes/consequential-methods/face-public-work.json",
+    "precedingRoute": "qa/editorial/consequential-methods-controls/face-public-work.json",
+    "historicalRoute": "qa/routes/technique-face-self-process.json",
+    "width": 390,
+    "artwork": "full",
+    "reading": "all",
+    "sound": false,
+    "shots": false
+  },
+  {
+    "id": "consequential-face-public-stop",
+    "route": "qa/routes/consequential-methods/face-public-stop.json",
+    "precedingRoute": "qa/editorial/consequential-methods-controls/face-public-stop.json",
+    "historicalRoute": "qa/routes/technique-face-self-process.json",
+    "width": 320,
+    "artwork": "none",
+    "reading": "paragraph",
+    "sound": false,
+    "shots": false
+  },
+  {
+    "id": "consequential-face-private",
+    "route": "qa/routes/consequential-methods/face-private.json",
+    "precedingRoute": "qa/editorial/consequential-methods-controls/face-private.json",
+    "historicalRoute": "qa/routes/technique-face-self-process.json",
+    "width": 390,
+    "artwork": "full",
+    "reading": "all",
+    "sound": false,
+    "shots": false
+  }
+]

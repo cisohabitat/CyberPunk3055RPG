@@ -1,0 +1,157 @@
+{
+  "rows": [
+    {
+      "scene": "act2_technique_chrome",
+      "art": {
+        "src": "/art/correction-bench.jpg",
+        "small": "/art/correction-bench-small.jpg",
+        "caption": "Canal depot · two records stay separate",
+        "description": "A blank comparison sheet and closed opaque sleeve rest in separate trays beside an unpowered reference display on a lamp-lit filing bench. No signature, review receipt, authentication, personal identity or successful outcome is displayed."
+      },
+      "portrait": "/art/dispatcher-portrait.jpg",
+      "voice": [
+        {
+          "id": "voice-campaign-dispatcher-e5e1ea7d5a4a",
+          "key": "ce48af49dfd62329",
+          "scene": "act2_technique_chrome",
+          "sceneSpeaker": "Dispatcher",
+          "speaker": "Dispatcher",
+          "quote": "Three workers, two recipients. Different columns. Don't invent a recipient to make the totals agree.",
+          "text": "Three workers, two recipients. Different columns. Don't invent a recipient to make the totals agree.",
+          "part": 0
+        }
+      ],
+      "reason": "Exact existing neutral setting/portrait and unaltered quoted words; new written choices/narration do not depict or voice an unearned wage, signature by someone else, finding or consent."
+    },
+    {
+      "scene": "act2_technique_face",
+      "art": {
+        "src": "/art/correction-bench.jpg",
+        "small": "/art/correction-bench-small.jpg",
+        "caption": "Canal depot · two records stay separate",
+        "description": "A blank comparison sheet and closed opaque sleeve rest in separate trays beside an unpowered reference display on a lamp-lit filing bench. No signature, review receipt, authentication, personal identity or successful outcome is displayed."
+      },
+      "portrait": "/art/dispatcher-portrait.jpg",
+      "voice": [
+        {
+          "id": "voice-campaign-dispatcher-e8cadae1434a",
+          "key": "322caab2ac013f7f",
+          "scene": "act2_technique_face",
+          "sceneSpeaker": "Dispatcher",
+          "speaker": "Dispatcher",
+          "quote": "Tell me what you want signed. A filing procedure and the truth of a source are different requests.",
+          "text": "Tell me what you want signed. A filing procedure and the truth of a source are different requests.",
+          "part": 0
+        }
+      ],
+      "reason": "Exact existing neutral setting/portrait and unaltered quoted words; new written choices/narration do not depict or voice an unearned wage, signature by someone else, finding or consent."
+    },
+    {
+      "scene": "act2_technique_result",
+      "art": {
+        "src": "/art/correction-bench.jpg",
+        "small": "/art/correction-bench-small.jpg",
+        "caption": "Canal depot · two records stay separate",
+        "description": "A blank comparison sheet and closed opaque sleeve rest in separate trays beside an unpowered reference display on a lamp-lit filing bench. No signature, review receipt, authentication, personal identity or successful outcome is displayed."
+      },
+      "portrait": "/art/dispatcher-portrait.jpg",
+      "voice": [
+        {
+          "id": "voice-campaign-dispatcher-8bf37188cd15",
+          "key": "eb41331eb6629fe6",
+          "scene": "act2_technique_result",
+          "sceneSpeaker": "Dispatcher",
+          "speaker": "Dispatcher",
+          "quote": "Received for review. That's what the reference says. The correction still needs an answer.",
+          "text": "Received for review. That's what the reference says. The correction still needs an answer.",
+          "part": 0
+        }
+      ],
+      "reason": "Exact existing neutral setting/portrait and unaltered quoted words; new written choices/narration do not depict or voice an unearned wage, signature by someone else, finding or consent."
+    },
+    {
+      "scene": "act2_district_canal",
+      "art": {
+        "src": "/art/depot-review.jpg",
+        "small": "/art/depot-review-small.jpg",
+        "caption": "Canal depot · a public request changes the doors",
+        "description": "A queue rail blocks the lowered anonymous hatch beneath a blank audit cover; an open unmarked ledger waits at the accessible lit main counter. No completed review, payment or private identity is shown."
+      },
+      "voice": [],
+      "reason": "Exact existing neutral setting/portrait and unaltered quoted words; new written choices/narration do not depict or voice an unearned wage, signature by someone else, finding or consent."
+    },
+    {
+      "scene": "act3_district_return",
+      "art": {
+        "src": "/art/archive-held-original.jpg",
+        "small": "/art/archive-held-original-small.jpg",
+        "caption": "Ward Nine · the source keeps its own terms",
+        "description": "A closed source ledger in a protective sleeve stays apart from a folded copy and pencil. No inquiry decision or restored shift is depicted."
+      },
+      "portrait": "/art/edda.jpg",
+      "voice": [
+        {
+          "key": "87bd8c9078cb2363",
+          "id": "voice-campaign-edda-f9a9ab61ae78",
+          "scene": "act3_district_return",
+          "sceneSpeaker": "Edda",
+          "speaker": "Edda",
+          "quote": "The depot answered a request. That is not an answer to the records inquiry. Keep both outcomes on the page.",
+          "text": "The depot answered a request. That is not an answer to the records inquiry. Keep both outcomes on the page.",
+          "part": 0
+        }
+      ],
+      "reason": "Exact existing neutral setting/portrait and unaltered quoted words; new written choices/narration do not depict or voice an unearned wage, signature by someone else, finding or consent."
+    }
+  ],
+  "paths": [
+    {
+      "path": "/art/archive-held-original-small.jpg",
+      "sha256": "52394407135df82fe040b3e7b1a63fdf52715de9c58414262242514ee953f1bf"
+    },
+    {
+      "path": "/art/archive-held-original.jpg",
+      "sha256": "4e1dfb9241e74fe5dd8aa82f874af2a51347824ca71f93663aafb6fed737ce71"
+    },
+    {
+      "path": "/art/correction-bench-small.jpg",
+      "sha256": "3ddac00a6bb46f325776b6bab033c9be6f38433ecdafade78e795e9c257ad653"
+    },
+    {
+      "path": "/art/correction-bench.jpg",
+      "sha256": "736b7458376c81ed74a7ee6ba77b361a8cd84571512b70cc3feefeab547127c6"
+    },
+    {
+      "path": "/art/depot-review-small.jpg",
+      "sha256": "e87710688ef41b91ec7ce8a216d21e2bf6859cc1348b59413130f6471c848ca6"
+    },
+    {
+      "path": "/art/depot-review.jpg",
+      "sha256": "32c298366a5b83155832ca5a6d3e35c71845256f45ccba910e0217fbd6e04b4e"
+    },
+    {
+      "path": "/art/dispatcher-portrait.jpg",
+      "sha256": "a6f0ab256de0c7506592ab47d7bef73c4bfcba9d820d43f4dc78923aed6d8453"
+    },
+    {
+      "path": "/art/edda.jpg",
+      "sha256": "6af115f70e05fbf24b71e7dedf74885e774dba1ac75f5d1689f1b66ee4931223"
+    },
+    {
+      "path": "/audio/voice-campaign-dispatcher-8bf37188cd15.mp3",
+      "sha256": "0426a0650109b78140aec01cf6162f64550092c4194abeedb50da0d033ef3311"
+    },
+    {
+      "path": "/audio/voice-campaign-dispatcher-e5e1ea7d5a4a.mp3",
+      "sha256": "891408a196c7e75baf262d2ae4276470eb0c56195348dbb399c4de51f7372fa9"
+    },
+    {
+      "path": "/audio/voice-campaign-dispatcher-e8cadae1434a.mp3",
+      "sha256": "dc49a847e0f1140456b8b0351cdbf596eb3b1bbeb56aa6da7d6b96495a18557a"
+    },
+    {
+      "path": "/audio/voice-campaign-edda-f9a9ab61ae78.mp3",
+      "sha256": "9879a4517243c93a3abaea6f15c30df384bda69457f8a873979e17fe33131853"
+    }
+  ]
+}

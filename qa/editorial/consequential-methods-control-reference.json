@@ -1,0 +1,43 @@
+{
+  "referenceRevision": "b7212015414334675ce8b2c634727ad8f41b561d",
+  "method": "Detached git archive of lib/qa-media from the published commit. Newly authored current-feature controls compare every complete state/prose/choice/voice/art visit against that actual preceding runtime. No historical report is rewritten.",
+  "controls": [
+    {
+      "profile": "consequential-chrome-public-work",
+      "control": "qa/editorial/consequential-methods-controls/chrome-public-work.json",
+      "visits": 83,
+      "sha256": "43b7559cda82a833f468b3ff01b268a4398801a136564a62e2c991e7baeef3b8"
+    },
+    {
+      "profile": "consequential-chrome-public-stop",
+      "control": "qa/editorial/consequential-methods-controls/chrome-public-stop.json",
+      "visits": 83,
+      "sha256": "43b7559cda82a833f468b3ff01b268a4398801a136564a62e2c991e7baeef3b8"
+    },
+    {
+      "profile": "consequential-chrome-private",
+      "control": "qa/editorial/consequential-methods-controls/chrome-private.json",
+      "visits": 83,
+      "sha256": "7aa9eb27f46ac5c7fcdcc247f0062856bbee26a61d463eabc1b5897ef017acad"
+    },
+    {
+      "profile": "consequential-face-public-work",
+      "control": "qa/editorial/consequential-methods-controls/face-public-work.json",
+      "visits": 83,
+      "sha256": "0b555a7bd73c8e71f05e4274599538d9800f0136b2ce5f0d64bd0a1bf8859f75"
+    },
+    {
+      "profile": "consequential-face-public-stop",
+      "control": "qa/editorial/consequential-methods-controls/face-public-stop.json",
+      "visits": 83,
+      "sha256": "0b555a7bd73c8e71f05e4274599538d9800f0136b2ce5f0d64bd0a1bf8859f75"
+    },
+    {
+      "profile": "consequential-face-private",
+      "control": "qa/editorial/consequential-methods-controls/face-private.json",
+      "visits": 83,
+      "sha256": "82e3d8febe074a94a1fc5f0d2ca76183267519885c1b263ccfbc0be4f94236a6"
+    }
+  ],
+  "visits": 498
+}

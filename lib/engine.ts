@@ -1,3 +1,4 @@
+import { consequentialText, consequentialChoices } from './consequential-methods';
 import { dramaticBeatsText, dramaticBeatsChoices } from './dramatic-beats';
 import { seraShiftChoices, seraShiftText } from './sera-shift';
 import { COMPLICATIONS, FACTIONS, FACTION_INFO, ORIGINS, POINTS, STAT_CAP, STATS, STAT_INFO, STRAIN_MAX, isValidName, startingFactions } from "./character";
@@ -44,7 +45,7 @@ export function getScene(id: string): Scene {
 }
 
 export function sceneText(scene: Scene, state: GameState): string {
-  return dramaticBeatsText(state, scene.id, seraShiftText(state, scene.id, routingFinale(state, freightFinale(state, typeof scene.text === "function" ? scene.text(state) : scene.text, scene.finale), scene.finale)));
+  return consequentialText(state, scene.id, dramaticBeatsText(state, scene.id, seraShiftText(state, scene.id, routingFinale(state, freightFinale(state, typeof scene.text === "function" ? scene.text(state) : scene.text, scene.finale), scene.finale))));
 }
 
 export function createCharacter(input: {
@@ -64,6 +65,7 @@ export function createCharacter(input: {
   returnRouting?: boolean;
   seraShift?: boolean;
   dramaticBeats?: boolean;
+  consequentialMethods?: boolean;
 }): GameState {
   const origin = ORIGINS[input.origin];
   const complication = input.complication ?? null;
@@ -101,6 +103,8 @@ export function createCharacter(input: {
   if (input.seraShift) flags.sera_shift_enabled = true;
   if (input.dramaticBeats !== undefined && typeof input.dramaticBeats !== "boolean") throw new Error("Invalid dramatic beats option");
   if (input.dramaticBeats) flags.dramatic_beats_enabled = true;
+  if (input.consequentialMethods !== undefined && typeof input.consequentialMethods !== "boolean") throw new Error("Invalid consequential methods option");
+  if (input.consequentialMethods) flags.consequential_methods_enabled = true;
   if (input.returnRouting) flags.return_routing_enabled = true;
   if (complication === "on-file") flags.on_file = true;
   if (complication === "debt") flags.debt = true;
@@ -169,7 +173,7 @@ function choiceHidden(state: GameState, choice: Choice): boolean {
 }
 
 export function presentChoices(state: GameState, scene: Scene): VisibleChoice[] {
-  return dramaticBeatsChoices(state, scene.id, seraShiftChoices(state, scene.id, returnRoutingChoices(state, scene.id, freightCraftChoices(state, scene.id, payoffChoices(state, scene.id, encounterCraftChoices(state, scene, maraAccountChoices(state, scene, [...techniqueChoices(state, scene, districtChoices(state, scene, archivePlanChoices(state, scene))), ...caseFileChoices(state, scene)]), SCENES)))))).filter((choice) => !choiceHidden(state, choice)).map((choice) => {
+  return consequentialChoices(state, scene.id, dramaticBeatsChoices(state, scene.id, seraShiftChoices(state, scene.id, returnRoutingChoices(state, scene.id, freightCraftChoices(state, scene.id, payoffChoices(state, scene.id, encounterCraftChoices(state, scene, maraAccountChoices(state, scene, [...techniqueChoices(state, scene, districtChoices(state, scene, archivePlanChoices(state, scene))), ...caseFileChoices(state, scene)]), SCENES))))))).filter((choice) => !choiceHidden(state, choice)).map((choice) => {
     if (choice.maxStrain !== undefined && state.strain > choice.maxStrain) {
       return { ...choice, enabled: false, disabledReason: `Need Strain at most ${choice.maxStrain}; recover before this preparation` };
     }

@@ -1,0 +1,4771 @@
+{
+  "method": "Eight complete source-authored policies with fixed original rolls; not randomized balance, browser play, unfamiliar-player evidence or a grade. Full wages and bounded review compete within the original two-action window. Standing effects retain original caps; the public signature remains recorded even at the cap.",
+  "rows": [
+    {
+      "stat": "chrome",
+      "policy": "two-step",
+      "source": "qa/editorial/consequential-methods-controls/chrome-public-stop.json",
+      "visits": 83,
+      "creds": 165,
+      "strain": 1,
+      "factions": {
+        "quill": 4,
+        "lumen": 2,
+        "helion": 5,
+        "wards": 4
+      },
+      "reviewReference": true,
+      "publicSignature": false,
+      "probeOwned": true,
+      "finale": "ending_quiet",
+      "rolls": [
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "trace": [
+        {
+          "scene": "opening_city",
+          "choice": "begin-opening",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "opening_self",
+          "choice": "opening-exit",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "opening_approach",
+          "choice": "hear-stallholder",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "opening_neighbor",
+          "choice": "take-the-stool",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "stall",
+          "choice": "ask-pay",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "pay",
+          "choice": "haggle",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "pay_yes",
+          "choice": "pocket",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "stall",
+          "choice": "accept",
+          "creds": 90,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "route",
+          "choice": "side",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "side",
+          "choice": "spoof-door",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "undercroft",
+          "choice": "go",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "lumen",
+          "choice": "honest",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "lumen_deal",
+          "choice": "pact-copy",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "vault_quiet",
+          "choice": "copy",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memo",
+          "choice": "heard",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "mara_why",
+          "choice": "inspect-hour",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "inspect-signature",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "inspect-order",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "inspect-roster",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "reconstruct",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_reconstruction",
+          "choice": "ignore-order",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_challenge",
+          "choice": "keep-both-decisions",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_publication",
+          "choice": "name-tower",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "seal-full",
+          "creds": 0,
+          "strain": 1,
+          "remaining": 0
+        },
+        {
+          "scene": "kerr",
+          "choice": "talk-leave",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "after_kerr",
+          "choice": "both",
+          "creds": 200,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "ending_both",
+          "choice": "week-after",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "card_week",
+          "choice": "into-week",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "street_after",
+          "choice": "practice",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_training",
+          "choice": "learn-chrome",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "street_after",
+          "choice": "read-board",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "districts",
+          "choice": "origin-contract",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_origin_dustline",
+          "choice": "courier-run",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_origin_return",
+          "choice": "return-board",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "districts",
+          "choice": "visit-workshop",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_workshop",
+          "choice": "buy-archive-probe",
+          "creds": -140,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "districts",
+          "choice": "to-helion",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_helion_door",
+          "choice": "hear-ives",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_helion",
+          "choice": "refuse-ives",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "take-recovery",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_recovery",
+          "choice": "short-recovery",
+          "creds": 0,
+          "strain": -1,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_recovery_after",
+          "choice": "return-after-recovery",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "trace-order",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_brief",
+          "choice": "agree-archive-terms",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_prep",
+          "choice": "skip-archive-prep",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_compare",
+          "choice": "open-archive-catalog",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_compare",
+          "choice": "catalog-inspect-revision",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_compare",
+          "choice": "catalog-request-revision",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_compare",
+          "choice": "catalog-buy-extraction",
+          "creds": -25,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_custody",
+          "choice": "withhold-technician",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_verified",
+          "choice": "keep-chain",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "open-district-response",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_district_brief",
+          "choice": "district-edda-corroboration",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_district_edda",
+          "choice": "district-public-review",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_district_canal",
+          "choice": "district-speak-kerr",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_district_kerr",
+          "choice": "district-tell-kerr",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_district_kerr_reply",
+          "choice": "district-kerr-introduce",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_district_canal",
+          "choice": "open-build-techniques",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_technique_bench",
+          "choice": "plan-technique-chrome",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_technique_chrome",
+          "choice": "prepare-technique-chrome-portable",
+          "creds": 0,
+          "strain": 1,
+          "remaining": 1
+        },
+        {
+          "scene": "act2_technique_chrome_submit",
+          "choice": "submit-technique-chrome-label",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_technique_result",
+          "choice": "leave-technique-result",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_district_canal",
+          "choice": "district-close",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "hear-response",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_public_response",
+          "choice": "answer-with-source",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "stand",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "ending_week_wards",
+          "choice": "back-to-board",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "card_wall",
+          "choice": "to-the-wall",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "districts",
+          "choice": "to-ward-nine",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_neighborhood",
+          "choice": "visit-records",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_records_visit",
+          "choice": "keep-limits",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_neighborhood",
+          "choice": "visit-district-return",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_district_return",
+          "choice": "district-record-return",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_neighborhood",
+          "choice": "go-wall",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "ward_wall",
+          "choice": "face-sera",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_arrival",
+          "choice": "prepare-public-account",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_sera_shift",
+          "choice": "sera-decline",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_testimony_review",
+          "choice": "scope-corroborated",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_testimony_consent",
+          "choice": "keep-recording-private",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_testimony_hearing",
+          "choice": "answer-corroboration",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_testimony_record",
+          "choice": "file-public-account",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_arrival",
+          "choice": "leave-wall",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "stat": "chrome",
+      "policy": "express-stop",
+      "source": "qa/routes/consequential-methods/chrome-public-stop.json",
+      "visits": 82,
+      "creds": 165,
+      "strain": 2,
+      "factions": {
+        "quill": 4,
+        "lumen": 2,
+        "helion": 5,
+        "wards": 4
+      },
+      "reviewReference": true,
+      "publicSignature": false,
+      "probeOwned": true,
+      "finale": "ending_quiet",
+      "rolls": [
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "trace": [
+        {
+          "scene": "opening_city",
+          "choice": "begin-opening",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "opening_self",
+          "choice": "opening-exit",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "opening_approach",
+          "choice": "hear-stallholder",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "opening_neighbor",
+          "choice": "take-the-stool",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "stall",
+          "choice": "ask-pay",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "pay",
+          "choice": "haggle",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "pay_yes",
+          "choice": "pocket",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "stall",
+          "choice": "accept",
+          "creds": 90,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "route",
+          "choice": "side",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "side",
+          "choice": "spoof-door",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "undercroft",
+          "choice": "go",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "lumen",
+          "choice": "honest",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "lumen_deal",
+          "choice": "pact-copy",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "vault_quiet",
+          "choice": "copy",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memo",
+          "choice": "heard",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "mara_why",
+          "choice": "inspect-hour",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "inspect-signature",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "inspect-order",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "inspect-roster",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "reconstruct",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_reconstruction",
+          "choice": "ignore-order",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_challenge",
+          "choice": "keep-both-decisions",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_publication",
+          "choice": "name-tower",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "seal-full",
+          "creds": 0,
+          "strain": 1,
+          "remaining": 0
+        },
+        {
+          "scene": "kerr",
+          "choice": "talk-leave",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "after_kerr",
+          "choice": "both",
+          "creds": 200,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "ending_both",
+          "choice": "week-after",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "card_week",
+          "choice": "into-week",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "street_after",
+          "choice": "practice",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_training",
+          "choice": "learn-chrome",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "street_after",
+          "choice": "read-board",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "districts",
+          "choice": "origin-contract",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_origin_dustline",
+          "choice": "courier-run",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_origin_return",
+          "choice": "return-board",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "districts",
+          "choice": "visit-workshop",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_workshop",
+          "choice": "buy-archive-probe",
+          "creds": -140,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "districts",
+          "choice": "to-helion",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_helion_door",
+          "choice": "hear-ives",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_helion",
+          "choice": "refuse-ives",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "take-recovery",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_recovery",
+          "choice": "short-recovery",
+          "creds": 0,
+          "strain": -1,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_recovery_after",
+          "choice": "return-after-recovery",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "trace-order",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_brief",
+          "choice": "agree-archive-terms",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_prep",
+          "choice": "skip-archive-prep",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_compare",
+          "choice": "open-archive-catalog",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_compare",
+          "choice": "catalog-inspect-revision",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_compare",
+          "choice": "catalog-request-revision",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_compare",
+          "choice": "catalog-buy-extraction",
+          "creds": -25,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_custody",
+          "choice": "withhold-technician",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_verified",
+          "choice": "keep-chain",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "open-district-response",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_district_brief",
+          "choice": "district-edda-corroboration",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_district_edda",
+          "choice": "district-public-review",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_district_canal",
+          "choice": "district-speak-kerr",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_district_kerr",
+          "choice": "district-tell-kerr",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_district_kerr_reply",
+          "choice": "district-kerr-introduce",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_district_canal",
+          "choice": "open-build-techniques",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_technique_bench",
+          "choice": "plan-technique-chrome",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_technique_chrome",
+          "choice": "consequential-probe-intake",
+          "creds": 0,
+          "strain": 2,
+          "remaining": 1
+        },
+        {
+          "scene": "act2_technique_result",
+          "choice": "leave-technique-result",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 1
+        },
+        {
+          "scene": "act2_district_canal",
+          "choice": "district-close",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "hear-response",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_public_response",
+          "choice": "answer-with-source",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "stand",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "ending_week_wards",
+          "choice": "back-to-board",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "card_wall",
+          "choice": "to-the-wall",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "districts",
+          "choice": "to-ward-nine",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_neighborhood",
+          "choice": "visit-records",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_records_visit",
+          "choice": "keep-limits",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_neighborhood",
+          "choice": "visit-district-return",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_district_return",
+          "choice": "district-record-return",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_neighborhood",
+          "choice": "go-wall",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "ward_wall",
+          "choice": "face-sera",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_arrival",
+          "choice": "prepare-public-account",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_sera_shift",
+          "choice": "sera-decline",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_testimony_review",
+          "choice": "scope-corroborated",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_testimony_consent",
+          "choice": "keep-recording-private",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_testimony_hearing",
+          "choice": "answer-corroboration",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_testimony_record",
+          "choice": "file-public-account",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_arrival",
+          "choice": "leave-wall",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "stat": "chrome",
+      "policy": "express-short",
+      "source": "qa/routes/consequential-methods/chrome-public-work.json",
+      "visits": 83,
+      "creds": 173,
+      "strain": 3,
+      "factions": {
+        "quill": 4,
+        "lumen": 2,
+        "helion": 5,
+        "wards": 4
+      },
+      "reviewReference": true,
+      "publicSignature": false,
+      "probeOwned": true,
+      "finale": "ending_quiet",
+      "rolls": [
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "trace": [
+        {
+          "scene": "opening_city",
+          "choice": "begin-opening",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "opening_self",
+          "choice": "opening-exit",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "opening_approach",
+          "choice": "hear-stallholder",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "opening_neighbor",
+          "choice": "take-the-stool",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "stall",
+          "choice": "ask-pay",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "pay",
+          "choice": "haggle",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "pay_yes",
+          "choice": "pocket",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "stall",
+          "choice": "accept",
+          "creds": 90,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "route",
+          "choice": "side",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "side",
+          "choice": "spoof-door",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "undercroft",
+          "choice": "go",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "lumen",
+          "choice": "honest",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "lumen_deal",
+          "choice": "pact-copy",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "vault_quiet",
+          "choice": "copy",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memo",
+          "choice": "heard",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "mara_why",
+          "choice": "inspect-hour",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "inspect-signature",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "inspect-order",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "inspect-roster",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "reconstruct",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_reconstruction",
+          "choice": "ignore-order",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_challenge",
+          "choice": "keep-both-decisions",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_publication",
+          "choice": "name-tower",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "seal-full",
+          "creds": 0,
+          "strain": 1,
+          "remaining": 0
+        },
+        {
+          "scene": "kerr",
+          "choice": "talk-leave",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "after_kerr",
+          "choice": "both",
+          "creds": 200,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "ending_both",
+          "choice": "week-after",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "card_week",
+          "choice": "into-week",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "street_after",
+          "choice": "practice",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_training",
+          "choice": "learn-chrome",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "street_after",
+          "choice": "read-board",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "districts",
+          "choice": "origin-contract",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_origin_dustline",
+          "choice": "courier-run",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_origin_return",
+          "choice": "return-board",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "districts",
+          "choice": "visit-workshop",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_workshop",
+          "choice": "buy-archive-probe",
+          "creds": -140,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "districts",
+          "choice": "to-helion",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_helion_door",
+          "choice": "hear-ives",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_helion",
+          "choice": "refuse-ives",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "take-recovery",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_recovery",
+          "choice": "short-recovery",
+          "creds": 0,
+          "strain": -1,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_recovery_after",
+          "choice": "return-after-recovery",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "trace-order",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_brief",
+          "choice": "agree-archive-terms",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_prep",
+          "choice": "skip-archive-prep",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_compare",
+          "choice": "open-archive-catalog",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_compare",
+          "choice": "catalog-inspect-revision",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_compare",
+          "choice": "catalog-request-revision",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_compare",
+          "choice": "catalog-buy-extraction",
+          "creds": -25,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_custody",
+          "choice": "withhold-technician",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_verified",
+          "choice": "keep-chain",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "open-district-response",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_district_brief",
+          "choice": "district-edda-corroboration",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_district_edda",
+          "choice": "district-public-review",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_district_canal",
+          "choice": "district-speak-kerr",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_district_kerr",
+          "choice": "district-tell-kerr",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_district_kerr_reply",
+          "choice": "district-kerr-introduce",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_district_canal",
+          "choice": "open-build-techniques",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_technique_bench",
+          "choice": "plan-technique-chrome",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_technique_chrome",
+          "choice": "consequential-probe-intake",
+          "creds": 0,
+          "strain": 2,
+          "remaining": 1
+        },
+        {
+          "scene": "act2_technique_result",
+          "choice": "leave-technique-result",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 1
+        },
+        {
+          "scene": "act2_district_canal",
+          "choice": "consequential-short-shift",
+          "creds": 8,
+          "strain": 1,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_district_canal",
+          "choice": "district-close",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "hear-response",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_public_response",
+          "choice": "answer-with-source",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "stand",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "ending_week_wards",
+          "choice": "back-to-board",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "card_wall",
+          "choice": "to-the-wall",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "districts",
+          "choice": "to-ward-nine",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_neighborhood",
+          "choice": "visit-records",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_records_visit",
+          "choice": "keep-limits",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_neighborhood",
+          "choice": "visit-district-return",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_district_return",
+          "choice": "district-record-return",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_neighborhood",
+          "choice": "go-wall",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "ward_wall",
+          "choice": "face-sera",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_arrival",
+          "choice": "prepare-public-account",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_sera_shift",
+          "choice": "sera-decline",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_testimony_review",
+          "choice": "scope-corroborated",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_testimony_consent",
+          "choice": "keep-recording-private",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_testimony_hearing",
+          "choice": "answer-corroboration",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_testimony_record",
+          "choice": "file-public-account",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_arrival",
+          "choice": "leave-wall",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "stat": "chrome",
+      "policy": "full-wage",
+      "source": "qa/editorial/consequential-methods-controls/chrome-public-stop.json",
+      "visits": 81,
+      "creds": 185,
+      "strain": 1,
+      "factions": {
+        "quill": 4,
+        "lumen": 2,
+        "helion": 5,
+        "wards": 4
+      },
+      "reviewReference": false,
+      "publicSignature": false,
+      "probeOwned": true,
+      "finale": "ending_quiet",
+      "rolls": [
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "trace": [
+        {
+          "scene": "opening_city",
+          "choice": "begin-opening",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "opening_self",
+          "choice": "opening-exit",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "opening_approach",
+          "choice": "hear-stallholder",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "opening_neighbor",
+          "choice": "take-the-stool",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "stall",
+          "choice": "ask-pay",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "pay",
+          "choice": "haggle",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "pay_yes",
+          "choice": "pocket",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "stall",
+          "choice": "accept",
+          "creds": 90,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "route",
+          "choice": "side",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "side",
+          "choice": "spoof-door",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "undercroft",
+          "choice": "go",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "lumen",
+          "choice": "honest",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "lumen_deal",
+          "choice": "pact-copy",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "vault_quiet",
+          "choice": "copy",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memo",
+          "choice": "heard",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "mara_why",
+          "choice": "inspect-hour",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "inspect-signature",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "inspect-order",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "inspect-roster",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "reconstruct",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_reconstruction",
+          "choice": "ignore-order",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_challenge",
+          "choice": "keep-both-decisions",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_publication",
+          "choice": "name-tower",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "seal-full",
+          "creds": 0,
+          "strain": 1,
+          "remaining": 0
+        },
+        {
+          "scene": "kerr",
+          "choice": "talk-leave",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "after_kerr",
+          "choice": "both",
+          "creds": 200,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "ending_both",
+          "choice": "week-after",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "card_week",
+          "choice": "into-week",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "street_after",
+          "choice": "practice",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_training",
+          "choice": "learn-chrome",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "street_after",
+          "choice": "read-board",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "districts",
+          "choice": "origin-contract",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_origin_dustline",
+          "choice": "courier-run",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_origin_return",
+          "choice": "return-board",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "districts",
+          "choice": "visit-workshop",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_workshop",
+          "choice": "buy-archive-probe",
+          "creds": -140,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "districts",
+          "choice": "to-helion",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_helion_door",
+          "choice": "hear-ives",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_helion",
+          "choice": "refuse-ives",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "take-recovery",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_recovery",
+          "choice": "short-recovery",
+          "creds": 0,
+          "strain": -1,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_recovery_after",
+          "choice": "return-after-recovery",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "trace-order",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_brief",
+          "choice": "agree-archive-terms",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_prep",
+          "choice": "skip-archive-prep",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_compare",
+          "choice": "open-archive-catalog",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_compare",
+          "choice": "catalog-inspect-revision",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_compare",
+          "choice": "catalog-request-revision",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_compare",
+          "choice": "catalog-buy-extraction",
+          "creds": -25,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_custody",
+          "choice": "withhold-technician",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_verified",
+          "choice": "keep-chain",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "open-district-response",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_district_brief",
+          "choice": "district-edda-corroboration",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_district_edda",
+          "choice": "district-public-review",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_district_canal",
+          "choice": "district-speak-kerr",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_district_kerr",
+          "choice": "district-tell-kerr",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_district_kerr_reply",
+          "choice": "district-kerr-introduce",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_district_canal",
+          "choice": "district-register-work",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 1
+        },
+        {
+          "scene": "act2_district_work",
+          "choice": "district-finish-work",
+          "creds": 20,
+          "strain": 1,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_district_result",
+          "choice": "district-return-result",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_district_canal",
+          "choice": "district-close",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "hear-response",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_public_response",
+          "choice": "answer-with-source",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "stand",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "ending_week_wards",
+          "choice": "back-to-board",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "card_wall",
+          "choice": "to-the-wall",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "districts",
+          "choice": "to-ward-nine",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_neighborhood",
+          "choice": "visit-records",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_records_visit",
+          "choice": "keep-limits",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_neighborhood",
+          "choice": "visit-district-return",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_district_return",
+          "choice": "district-record-return",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_neighborhood",
+          "choice": "go-wall",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "ward_wall",
+          "choice": "face-sera",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_arrival",
+          "choice": "prepare-public-account",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_sera_shift",
+          "choice": "sera-decline",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_testimony_review",
+          "choice": "scope-corroborated",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_testimony_consent",
+          "choice": "keep-recording-private",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_testimony_hearing",
+          "choice": "answer-corroboration",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_testimony_record",
+          "choice": "file-public-account",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_arrival",
+          "choice": "leave-wall",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "stat": "face",
+      "policy": "two-step",
+      "source": "qa/editorial/consequential-methods-controls/face-public-stop.json",
+      "visits": 83,
+      "creds": 305,
+      "strain": 0,
+      "factions": {
+        "quill": 4,
+        "lumen": 2,
+        "helion": 5,
+        "wards": 4
+      },
+      "reviewReference": true,
+      "publicSignature": false,
+      "probeOwned": false,
+      "finale": "ending_quiet",
+      "rolls": [
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "trace": [
+        {
+          "scene": "opening_city",
+          "choice": "begin-opening",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "opening_self",
+          "choice": "opening-exit",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "opening_approach",
+          "choice": "hear-stallholder",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "opening_neighbor",
+          "choice": "take-the-stool",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "stall",
+          "choice": "ask-pay",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "pay",
+          "choice": "haggle",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "pay_yes",
+          "choice": "pocket",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "stall",
+          "choice": "accept",
+          "creds": 90,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "route",
+          "choice": "side",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "side",
+          "choice": "spoof-door",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "undercroft",
+          "choice": "go",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "lumen",
+          "choice": "honest",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "lumen_deal",
+          "choice": "pact-copy",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "vault_quiet",
+          "choice": "copy",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memo",
+          "choice": "heard",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "mara_why",
+          "choice": "inspect-hour",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "inspect-signature",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "inspect-order",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "inspect-roster",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "reconstruct",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_reconstruction",
+          "choice": "ignore-order",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_challenge",
+          "choice": "keep-both-decisions",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_publication",
+          "choice": "name-tower",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "seal-full",
+          "creds": 0,
+          "strain": 1,
+          "remaining": 0
+        },
+        {
+          "scene": "kerr",
+          "choice": "talk-leave",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "after_kerr",
+          "choice": "both",
+          "creds": 200,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "ending_both",
+          "choice": "week-after",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "card_week",
+          "choice": "into-week",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "street_after",
+          "choice": "practice",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_training",
+          "choice": "learn-face",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "street_after",
+          "choice": "read-board",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "districts",
+          "choice": "origin-contract",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_origin_dustline",
+          "choice": "courier-run",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_origin_return",
+          "choice": "return-board",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "districts",
+          "choice": "visit-workshop",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_workshop",
+          "choice": "leave-workshop",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "districts",
+          "choice": "to-helion",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_helion_door",
+          "choice": "hear-ives",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_helion",
+          "choice": "refuse-ives",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "take-recovery",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_recovery",
+          "choice": "short-recovery",
+          "creds": 0,
+          "strain": -1,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_recovery_after",
+          "choice": "return-after-recovery",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "trace-order",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_brief",
+          "choice": "agree-archive-terms",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_prep",
+          "choice": "skip-archive-prep",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_compare",
+          "choice": "open-archive-catalog",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_compare",
+          "choice": "catalog-inspect-revision",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_compare",
+          "choice": "catalog-request-revision",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_compare",
+          "choice": "catalog-buy-extraction",
+          "creds": -25,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_custody",
+          "choice": "withhold-technician",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_verified",
+          "choice": "keep-chain",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "open-district-response",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_district_brief",
+          "choice": "district-edda-corroboration",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_district_edda",
+          "choice": "district-public-review",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_district_canal",
+          "choice": "district-speak-kerr",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_district_kerr",
+          "choice": "district-tell-kerr",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_district_kerr_reply",
+          "choice": "district-kerr-introduce",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_district_canal",
+          "choice": "open-build-techniques",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_technique_bench",
+          "choice": "plan-technique-face",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_technique_face",
+          "choice": "prepare-technique-face-self",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 1
+        },
+        {
+          "scene": "act2_technique_face_scope",
+          "choice": "submit-technique-face-process",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_technique_result",
+          "choice": "leave-technique-result",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_district_canal",
+          "choice": "district-close",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "hear-response",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_public_response",
+          "choice": "answer-with-source",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "stand",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "ending_week_wards",
+          "choice": "back-to-board",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "card_wall",
+          "choice": "to-the-wall",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "districts",
+          "choice": "to-ward-nine",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_neighborhood",
+          "choice": "visit-records",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_records_visit",
+          "choice": "keep-limits",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_neighborhood",
+          "choice": "visit-district-return",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_district_return",
+          "choice": "district-record-return",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_neighborhood",
+          "choice": "go-wall",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "ward_wall",
+          "choice": "face-sera",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_arrival",
+          "choice": "prepare-public-account",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_sera_shift",
+          "choice": "sera-decline",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_testimony_review",
+          "choice": "scope-corroborated",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_testimony_consent",
+          "choice": "keep-recording-private",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_testimony_hearing",
+          "choice": "answer-corroboration",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_testimony_record",
+          "choice": "file-public-account",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_arrival",
+          "choice": "leave-wall",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "stat": "face",
+      "policy": "express-stop",
+      "source": "qa/routes/consequential-methods/face-public-stop.json",
+      "visits": 82,
+      "creds": 305,
+      "strain": 0,
+      "factions": {
+        "quill": 4,
+        "lumen": 2,
+        "helion": 5,
+        "wards": 4
+      },
+      "reviewReference": true,
+      "publicSignature": true,
+      "probeOwned": false,
+      "finale": "ending_quiet",
+      "rolls": [
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "trace": [
+        {
+          "scene": "opening_city",
+          "choice": "begin-opening",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "opening_self",
+          "choice": "opening-exit",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "opening_approach",
+          "choice": "hear-stallholder",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "opening_neighbor",
+          "choice": "take-the-stool",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "stall",
+          "choice": "ask-pay",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "pay",
+          "choice": "haggle",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "pay_yes",
+          "choice": "pocket",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "stall",
+          "choice": "accept",
+          "creds": 90,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "route",
+          "choice": "side",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "side",
+          "choice": "spoof-door",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "undercroft",
+          "choice": "go",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "lumen",
+          "choice": "honest",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "lumen_deal",
+          "choice": "pact-copy",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "vault_quiet",
+          "choice": "copy",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memo",
+          "choice": "heard",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "mara_why",
+          "choice": "inspect-hour",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "inspect-signature",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "inspect-order",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "inspect-roster",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "reconstruct",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_reconstruction",
+          "choice": "ignore-order",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_challenge",
+          "choice": "keep-both-decisions",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_publication",
+          "choice": "name-tower",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "seal-full",
+          "creds": 0,
+          "strain": 1,
+          "remaining": 0
+        },
+        {
+          "scene": "kerr",
+          "choice": "talk-leave",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "after_kerr",
+          "choice": "both",
+          "creds": 200,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "ending_both",
+          "choice": "week-after",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "card_week",
+          "choice": "into-week",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "street_after",
+          "choice": "practice",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_training",
+          "choice": "learn-face",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "street_after",
+          "choice": "read-board",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "districts",
+          "choice": "origin-contract",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_origin_dustline",
+          "choice": "courier-run",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_origin_return",
+          "choice": "return-board",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "districts",
+          "choice": "visit-workshop",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_workshop",
+          "choice": "leave-workshop",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "districts",
+          "choice": "to-helion",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_helion_door",
+          "choice": "hear-ives",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_helion",
+          "choice": "refuse-ives",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "take-recovery",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_recovery",
+          "choice": "short-recovery",
+          "creds": 0,
+          "strain": -1,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_recovery_after",
+          "choice": "return-after-recovery",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "trace-order",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_brief",
+          "choice": "agree-archive-terms",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_prep",
+          "choice": "skip-archive-prep",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_compare",
+          "choice": "open-archive-catalog",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_compare",
+          "choice": "catalog-inspect-revision",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_compare",
+          "choice": "catalog-request-revision",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_compare",
+          "choice": "catalog-buy-extraction",
+          "creds": -25,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_custody",
+          "choice": "withhold-technician",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_verified",
+          "choice": "keep-chain",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "open-district-response",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_district_brief",
+          "choice": "district-edda-corroboration",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_district_edda",
+          "choice": "district-public-review",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_district_canal",
+          "choice": "district-speak-kerr",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_district_kerr",
+          "choice": "district-tell-kerr",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_district_kerr_reply",
+          "choice": "district-kerr-introduce",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_district_canal",
+          "choice": "open-build-techniques",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_technique_bench",
+          "choice": "plan-technique-face",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_technique_face",
+          "choice": "consequential-public-intake",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 1
+        },
+        {
+          "scene": "act2_technique_result",
+          "choice": "leave-technique-result",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 1
+        },
+        {
+          "scene": "act2_district_canal",
+          "choice": "district-close",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "hear-response",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_public_response",
+          "choice": "answer-with-source",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "stand",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "ending_week_wards",
+          "choice": "back-to-board",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "card_wall",
+          "choice": "to-the-wall",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "districts",
+          "choice": "to-ward-nine",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_neighborhood",
+          "choice": "visit-records",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_records_visit",
+          "choice": "keep-limits",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_neighborhood",
+          "choice": "visit-district-return",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_district_return",
+          "choice": "district-record-return",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_neighborhood",
+          "choice": "go-wall",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "ward_wall",
+          "choice": "face-sera",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_arrival",
+          "choice": "prepare-public-account",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_sera_shift",
+          "choice": "sera-decline",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_testimony_review",
+          "choice": "scope-corroborated",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_testimony_consent",
+          "choice": "keep-recording-private",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_testimony_hearing",
+          "choice": "answer-corroboration",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_testimony_record",
+          "choice": "file-public-account",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_arrival",
+          "choice": "leave-wall",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "stat": "face",
+      "policy": "express-short",
+      "source": "qa/routes/consequential-methods/face-public-work.json",
+      "visits": 83,
+      "creds": 313,
+      "strain": 1,
+      "factions": {
+        "quill": 4,
+        "lumen": 2,
+        "helion": 5,
+        "wards": 4
+      },
+      "reviewReference": true,
+      "publicSignature": true,
+      "probeOwned": false,
+      "finale": "ending_quiet",
+      "rolls": [
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "trace": [
+        {
+          "scene": "opening_city",
+          "choice": "begin-opening",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "opening_self",
+          "choice": "opening-exit",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "opening_approach",
+          "choice": "hear-stallholder",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "opening_neighbor",
+          "choice": "take-the-stool",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "stall",
+          "choice": "ask-pay",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "pay",
+          "choice": "haggle",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "pay_yes",
+          "choice": "pocket",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "stall",
+          "choice": "accept",
+          "creds": 90,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "route",
+          "choice": "side",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "side",
+          "choice": "spoof-door",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "undercroft",
+          "choice": "go",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "lumen",
+          "choice": "honest",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "lumen_deal",
+          "choice": "pact-copy",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "vault_quiet",
+          "choice": "copy",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memo",
+          "choice": "heard",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "mara_why",
+          "choice": "inspect-hour",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "inspect-signature",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "inspect-order",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "inspect-roster",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "reconstruct",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_reconstruction",
+          "choice": "ignore-order",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_challenge",
+          "choice": "keep-both-decisions",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_publication",
+          "choice": "name-tower",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "seal-full",
+          "creds": 0,
+          "strain": 1,
+          "remaining": 0
+        },
+        {
+          "scene": "kerr",
+          "choice": "talk-leave",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "after_kerr",
+          "choice": "both",
+          "creds": 200,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "ending_both",
+          "choice": "week-after",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "card_week",
+          "choice": "into-week",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "street_after",
+          "choice": "practice",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_training",
+          "choice": "learn-face",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "street_after",
+          "choice": "read-board",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "districts",
+          "choice": "origin-contract",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_origin_dustline",
+          "choice": "courier-run",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_origin_return",
+          "choice": "return-board",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "districts",
+          "choice": "visit-workshop",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_workshop",
+          "choice": "leave-workshop",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "districts",
+          "choice": "to-helion",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_helion_door",
+          "choice": "hear-ives",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_helion",
+          "choice": "refuse-ives",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "take-recovery",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_recovery",
+          "choice": "short-recovery",
+          "creds": 0,
+          "strain": -1,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_recovery_after",
+          "choice": "return-after-recovery",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "trace-order",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_brief",
+          "choice": "agree-archive-terms",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_prep",
+          "choice": "skip-archive-prep",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_compare",
+          "choice": "open-archive-catalog",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_compare",
+          "choice": "catalog-inspect-revision",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_compare",
+          "choice": "catalog-request-revision",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_compare",
+          "choice": "catalog-buy-extraction",
+          "creds": -25,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_custody",
+          "choice": "withhold-technician",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_verified",
+          "choice": "keep-chain",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "open-district-response",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_district_brief",
+          "choice": "district-edda-corroboration",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_district_edda",
+          "choice": "district-public-review",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_district_canal",
+          "choice": "district-speak-kerr",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_district_kerr",
+          "choice": "district-tell-kerr",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_district_kerr_reply",
+          "choice": "district-kerr-introduce",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_district_canal",
+          "choice": "open-build-techniques",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_technique_bench",
+          "choice": "plan-technique-face",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_technique_face",
+          "choice": "consequential-public-intake",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 1
+        },
+        {
+          "scene": "act2_technique_result",
+          "choice": "leave-technique-result",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 1
+        },
+        {
+          "scene": "act2_district_canal",
+          "choice": "consequential-short-shift",
+          "creds": 8,
+          "strain": 1,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_district_canal",
+          "choice": "district-close",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "hear-response",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_public_response",
+          "choice": "answer-with-source",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "stand",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "ending_week_wards",
+          "choice": "back-to-board",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "card_wall",
+          "choice": "to-the-wall",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "districts",
+          "choice": "to-ward-nine",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_neighborhood",
+          "choice": "visit-records",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_records_visit",
+          "choice": "keep-limits",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_neighborhood",
+          "choice": "visit-district-return",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_district_return",
+          "choice": "district-record-return",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_neighborhood",
+          "choice": "go-wall",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "ward_wall",
+          "choice": "face-sera",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_arrival",
+          "choice": "prepare-public-account",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_sera_shift",
+          "choice": "sera-decline",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_testimony_review",
+          "choice": "scope-corroborated",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_testimony_consent",
+          "choice": "keep-recording-private",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_testimony_hearing",
+          "choice": "answer-corroboration",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_testimony_record",
+          "choice": "file-public-account",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_arrival",
+          "choice": "leave-wall",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "stat": "face",
+      "policy": "full-wage",
+      "source": "qa/editorial/consequential-methods-controls/face-public-stop.json",
+      "visits": 81,
+      "creds": 325,
+      "strain": 1,
+      "factions": {
+        "quill": 4,
+        "lumen": 2,
+        "helion": 5,
+        "wards": 4
+      },
+      "reviewReference": false,
+      "publicSignature": false,
+      "probeOwned": false,
+      "finale": "ending_quiet",
+      "rolls": [
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "trace": [
+        {
+          "scene": "opening_city",
+          "choice": "begin-opening",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "opening_self",
+          "choice": "opening-exit",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "opening_approach",
+          "choice": "hear-stallholder",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "opening_neighbor",
+          "choice": "take-the-stool",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "stall",
+          "choice": "ask-pay",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "pay",
+          "choice": "haggle",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "pay_yes",
+          "choice": "pocket",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "stall",
+          "choice": "accept",
+          "creds": 90,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "route",
+          "choice": "side",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "side",
+          "choice": "spoof-door",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "undercroft",
+          "choice": "go",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "lumen",
+          "choice": "honest",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "lumen_deal",
+          "choice": "pact-copy",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "vault_quiet",
+          "choice": "copy",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memo",
+          "choice": "heard",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "mara_why",
+          "choice": "inspect-hour",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "inspect-signature",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "inspect-order",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "inspect-roster",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "reconstruct",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_reconstruction",
+          "choice": "ignore-order",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_challenge",
+          "choice": "keep-both-decisions",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_publication",
+          "choice": "name-tower",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "memory_table",
+          "choice": "seal-full",
+          "creds": 0,
+          "strain": 1,
+          "remaining": 0
+        },
+        {
+          "scene": "kerr",
+          "choice": "talk-leave",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "after_kerr",
+          "choice": "both",
+          "creds": 200,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "ending_both",
+          "choice": "week-after",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "card_week",
+          "choice": "into-week",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "street_after",
+          "choice": "practice",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_training",
+          "choice": "learn-face",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "street_after",
+          "choice": "read-board",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "districts",
+          "choice": "origin-contract",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_origin_dustline",
+          "choice": "courier-run",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_origin_return",
+          "choice": "return-board",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "districts",
+          "choice": "visit-workshop",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_workshop",
+          "choice": "leave-workshop",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "districts",
+          "choice": "to-helion",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_helion_door",
+          "choice": "hear-ives",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_helion",
+          "choice": "refuse-ives",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "take-recovery",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_recovery",
+          "choice": "short-recovery",
+          "creds": 0,
+          "strain": -1,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_recovery_after",
+          "choice": "return-after-recovery",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "trace-order",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_brief",
+          "choice": "agree-archive-terms",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_prep",
+          "choice": "skip-archive-prep",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_compare",
+          "choice": "open-archive-catalog",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_compare",
+          "choice": "catalog-inspect-revision",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_compare",
+          "choice": "catalog-request-revision",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_compare",
+          "choice": "catalog-buy-extraction",
+          "creds": -25,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_custody",
+          "choice": "withhold-technician",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_archive_verified",
+          "choice": "keep-chain",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "open-district-response",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_district_brief",
+          "choice": "district-edda-corroboration",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_district_edda",
+          "choice": "district-public-review",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_district_canal",
+          "choice": "district-speak-kerr",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_district_kerr",
+          "choice": "district-tell-kerr",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_district_kerr_reply",
+          "choice": "district-kerr-introduce",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 2
+        },
+        {
+          "scene": "act2_district_canal",
+          "choice": "district-register-work",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 1
+        },
+        {
+          "scene": "act2_district_work",
+          "choice": "district-finish-work",
+          "creds": 20,
+          "strain": 1,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_district_result",
+          "choice": "district-return-result",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_district_canal",
+          "choice": "district-close",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "hear-response",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_public_response",
+          "choice": "answer-with-source",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act2_middle",
+          "choice": "stand",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "ending_week_wards",
+          "choice": "back-to-board",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "card_wall",
+          "choice": "to-the-wall",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "districts",
+          "choice": "to-ward-nine",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_neighborhood",
+          "choice": "visit-records",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_records_visit",
+          "choice": "keep-limits",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_neighborhood",
+          "choice": "visit-district-return",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_district_return",
+          "choice": "district-record-return",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_neighborhood",
+          "choice": "go-wall",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "ward_wall",
+          "choice": "face-sera",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_arrival",
+          "choice": "prepare-public-account",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_sera_shift",
+          "choice": "sera-decline",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_testimony_review",
+          "choice": "scope-corroborated",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_testimony_consent",
+          "choice": "keep-recording-private",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_testimony_hearing",
+          "choice": "answer-corroboration",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_testimony_record",
+          "choice": "file-public-account",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        },
+        {
+          "scene": "act3_arrival",
+          "choice": "leave-wall",
+          "creds": 0,
+          "strain": 0,
+          "remaining": 0
+        }
+      ]
+    }
+  ]
+}

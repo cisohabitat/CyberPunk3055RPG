@@ -1,0 +1,366 @@
+{
+  "name": "Consequential methods / face-public-stop / matched two-step control",
+  "character": {
+    "handle": "Replay",
+    "givenName": "Ada",
+    "origin": "dustline",
+    "complication": "on-file",
+    "bonus": {
+      "chrome": 0,
+      "nerve": 0,
+      "face": 2,
+      "ghost": 0
+    },
+    "startWithPrologue": true,
+    "expandedKerr": true,
+    "expandedMara": true,
+    "expandedWitness": true,
+    "craftedEncounters": true,
+    "emotionalPayoffs": true,
+    "freightCraft": true,
+    "returnRouting": true,
+    "seraShift": true,
+    "dramaticBeats": true,
+    "consequentialMethods": false
+  },
+  "steps": [
+    {
+      "choiceId": "begin-opening",
+      "reload": true
+    },
+    {
+      "choiceId": "opening-exit",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-stallholder",
+      "reload": true
+    },
+    {
+      "choiceId": "take-the-stool",
+      "reload": true
+    },
+    {
+      "choiceId": "ask-pay",
+      "reload": true
+    },
+    {
+      "choiceId": "haggle",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "pocket",
+      "reload": true
+    },
+    {
+      "choiceId": "accept",
+      "reload": true
+    },
+    {
+      "choiceId": "side",
+      "reload": true
+    },
+    {
+      "choiceId": "spoof-door",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "go",
+      "reload": true
+    },
+    {
+      "choiceId": "honest",
+      "reload": true
+    },
+    {
+      "choiceId": "pact-copy",
+      "reload": true
+    },
+    {
+      "choiceId": "copy",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "heard",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-hour",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-signature",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-order",
+      "reload": true
+    },
+    {
+      "choiceId": "inspect-roster",
+      "reload": true
+    },
+    {
+      "choiceId": "reconstruct",
+      "reload": true
+    },
+    {
+      "choiceId": "ignore-order",
+      "reload": true
+    },
+    {
+      "choiceId": "keep-both-decisions",
+      "reload": true
+    },
+    {
+      "choiceId": "name-tower",
+      "reload": true
+    },
+    {
+      "choiceId": "seal-full",
+      "reload": true
+    },
+    {
+      "choiceId": "talk-leave",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "both",
+      "reload": true
+    },
+    {
+      "choiceId": "week-after",
+      "reload": true
+    },
+    {
+      "choiceId": "into-week",
+      "reload": true
+    },
+    {
+      "choiceId": "practice",
+      "reload": true
+    },
+    {
+      "choiceId": "learn-face",
+      "reload": true
+    },
+    {
+      "choiceId": "read-board",
+      "reload": true
+    },
+    {
+      "choiceId": "origin-contract",
+      "reload": true
+    },
+    {
+      "choiceId": "courier-run",
+      "roll": 8,
+      "reload": true
+    },
+    {
+      "choiceId": "return-board",
+      "reload": true
+    },
+    {
+      "choiceId": "visit-workshop",
+      "reload": true
+    },
+    {
+      "choiceId": "leave-workshop",
+      "reload": true
+    },
+    {
+      "choiceId": "to-helion",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-ives",
+      "reload": true
+    },
+    {
+      "choiceId": "refuse-ives",
+      "reload": true
+    },
+    {
+      "choiceId": "take-recovery",
+      "reload": true
+    },
+    {
+      "choiceId": "short-recovery",
+      "reload": true
+    },
+    {
+      "choiceId": "return-after-recovery",
+      "reload": true
+    },
+    {
+      "choiceId": "trace-order",
+      "reload": true
+    },
+    {
+      "choiceId": "agree-archive-terms",
+      "reload": true
+    },
+    {
+      "choiceId": "skip-archive-prep",
+      "reload": true
+    },
+    {
+      "choiceId": "open-archive-catalog",
+      "reload": true
+    },
+    {
+      "choiceId": "catalog-inspect-revision",
+      "reload": true
+    },
+    {
+      "choiceId": "catalog-request-revision",
+      "reload": true
+    },
+    {
+      "choiceId": "catalog-buy-extraction",
+      "reload": true
+    },
+    {
+      "choiceId": "withhold-technician",
+      "reload": true
+    },
+    {
+      "choiceId": "keep-chain",
+      "reload": true
+    },
+    {
+      "choiceId": "open-district-response",
+      "reload": true
+    },
+    {
+      "choiceId": "district-edda-corroboration",
+      "reload": true
+    },
+    {
+      "choiceId": "district-public-review",
+      "reload": true
+    },
+    {
+      "choiceId": "district-speak-kerr",
+      "reload": true
+    },
+    {
+      "choiceId": "district-tell-kerr",
+      "reload": true
+    },
+    {
+      "choiceId": "district-kerr-introduce",
+      "reload": true
+    },
+    {
+      "choiceId": "open-build-techniques",
+      "reload": true
+    },
+    {
+      "choiceId": "plan-technique-face",
+      "reload": true
+    },
+    {
+      "choiceId": "prepare-technique-face-self",
+      "reload": true
+    },
+    {
+      "choiceId": "submit-technique-face-process",
+      "reload": true
+    },
+    {
+      "choiceId": "leave-technique-result",
+      "reload": true
+    },
+    {
+      "choiceId": "district-close",
+      "reload": true
+    },
+    {
+      "choiceId": "hear-response",
+      "reload": true
+    },
+    {
+      "choiceId": "answer-with-source",
+      "reload": true
+    },
+    {
+      "choiceId": "stand",
+      "reload": true
+    },
+    {
+      "choiceId": "back-to-board",
+      "reload": true
+    },
+    {
+      "choiceId": "to-the-wall",
+      "reload": true
+    },
+    {
+      "choiceId": "to-ward-nine",
+      "reload": true
+    },
+    {
+      "choiceId": "visit-records",
+      "reload": true
+    },
+    {
+      "choiceId": "keep-limits",
+      "reload": true
+    },
+    {
+      "choiceId": "visit-district-return",
+      "reload": true
+    },
+    {
+      "choiceId": "district-record-return",
+      "reload": true
+    },
+    {
+      "choiceId": "go-wall",
+      "reload": true
+    },
+    {
+      "choiceId": "face-sera",
+      "reload": true
+    },
+    {
+      "choiceId": "prepare-public-account",
+      "reload": true
+    },
+    {
+      "choiceId": "sera-decline",
+      "reload": true
+    },
+    {
+      "choiceId": "scope-corroborated",
+      "reload": true
+    },
+    {
+      "choiceId": "keep-recording-private",
+      "reload": true
+    },
+    {
+      "choiceId": "answer-corroboration",
+      "reload": true
+    },
+    {
+      "choiceId": "file-public-account",
+      "reload": true
+    },
+    {
+      "choiceId": "leave-wall",
+      "reload": true
+    }
+  ],
+  "expected": {
+    "sceneId": "ending_quiet",
+    "creds": 305,
+    "strain": 0
+  }
+}
