@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "phase": 20,
+  "baseline": "qa/editorial/navigation-release-baseline.json",
+  "baselineSha256": "9bc7f22cead6acff96791b35f8e3c919c562fdca6373f430f73c3256a9819dce",
+  "newRoutes": [
+    "qa/routes/navigation-release/route-1.json",
+    "qa/routes/navigation-release/route-2.json",
+    "qa/routes/navigation-release/route-3.json",
+    "qa/routes/navigation-release/route-4.json",
+    "qa/routes/navigation-release/route-5.json",
+    "qa/routes/navigation-release/route-6.json",
+    "qa/routes/navigation-release/route-7.json",
+    "qa/routes/navigation-release/route-8.json"
+  ],
+  "newManifests": [
+    "qa/media/navigation-release.json"
+  ],
+  "newMedia": [],
+  "newScenes": [],
+  "newFlags": [],
+  "layoutBudget": {
+    "rawExitReduction": 0.08,
+    "purchaseTravel": "No increase",
+    "reviewLinkTravel": "No increase",
+    "keyboard": "Exact control order and matched Tab count",
+    "type": "Exact font sizes and line heights"
+  },
+  "artDecision": "No authored scenes, quotations, actor, outcome or art bindings change. Existing scene art and exact voices remain suitable; the added QA routes visit existing scenes."
+}

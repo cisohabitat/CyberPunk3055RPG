@@ -87,6 +87,8 @@ Extend numerical policy coverage only for explicitly named new cohorts. Exercise
 
 **Exit:** the selected real tasks have less travel with no lost terms or larger matched keyboard burden; added UI routes are legal and preserve source/media/save contracts. Coverage classes and remaining gaps are published. No severe observed save, payment, permission, missing-media or audio-cleanup issue remains unresolved in the exercised cohort. More tests alone do not earn engineering 9.2.
 
+Phase20 candidate work is recorded in [the workshop/navigation report](NAVIGATION_RELEASE_PHASE20.md): exact-word full-width purchase facts, measured enlarged-view travel and eight legal current-game coverage routes. Full source/campaign and exact-commit publication evidence are tracked separately; the8.9 provisional grade is unchanged.
+
 ## Phase 21 — repeat the review and decide whether 9+ is supported
 
 Repeat the unchanged rubric, all 26 fixed current campaigns and every new cohort. Replay all historical fixtures, perform fresh public layout/sequence comparisons, examine the four current finales and preserve every negative finding/retry. Report source coverage and continuous UI coverage separately. Count real added story/art interaction costs and actual decision travel rather than only section positions.

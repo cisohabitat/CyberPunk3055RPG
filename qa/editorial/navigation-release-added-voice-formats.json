@@ -1,0 +1,341 @@
+{
+  "method": "Existing exact bound delivery files; ffprobe validates audio stream/format/duration. This is not acting or ASR acceptance.",
+  "files": [
+    {
+      "path": "/audio/voice-campaign-kerr-terms-21d133ddba35.mp3",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "codec_type": "audio",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "4.056000"
+      }
+    },
+    {
+      "path": "/audio/voice-campaign-kerr-terms-3d29183560fe.mp3",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "codec_type": "audio",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "7.824000"
+      }
+    },
+    {
+      "path": "/audio/voice-campaign-kerr-terms-84e2cc909f99.mp3",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "codec_type": "audio",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "5.064000"
+      }
+    },
+    {
+      "path": "/audio/voice-campaign-kerr-terms-9eb4b102fa0b.mp3",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "codec_type": "audio",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "3.936000"
+      }
+    },
+    {
+      "path": "/audio/voice-campaign-kerr-terms-acd344b4f340.mp3",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "codec_type": "audio",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "5.616000"
+      }
+    },
+    {
+      "path": "/audio/voice-campaign-kerr-terms-cae166cd5d8e.mp3",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "codec_type": "audio",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "4.056000"
+      }
+    },
+    {
+      "path": "/audio/voice-campaign-mara-account-766693e6f9ac.mp3",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "codec_type": "audio",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "6.432000"
+      }
+    },
+    {
+      "path": "/audio/voice-campaign-multiline-chapel-1.mp3",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "codec_type": "audio",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "14.952000"
+      }
+    },
+    {
+      "path": "/audio/voice-campaign-multiline-chapel-2.mp3",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "codec_type": "audio",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "12.096000"
+      }
+    },
+    {
+      "path": "/audio/voice-campaign-quill-41a608e4e7c2.mp3",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "codec_type": "audio",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "8.760000"
+      }
+    },
+    {
+      "path": "/audio/voice-campaign-quill-c98855695ec0.mp3",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "codec_type": "audio",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "12.528000"
+      }
+    },
+    {
+      "path": "/audio/voice-campaign-sister-lumen-2f09629a089e.mp3",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "codec_type": "audio",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "1.968000"
+      }
+    },
+    {
+      "path": "/audio/voice-campaign-sister-lumen-3e167d1ff04b.mp3",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "codec_type": "audio",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "3.048000"
+      }
+    },
+    {
+      "path": "/audio/voice-campaign-sister-lumen-bf2d45489211.mp3",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "codec_type": "audio",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "2.616000"
+      }
+    },
+    {
+      "path": "/audio/voice-campaign-witness-return-0bdc858ea31a.mp3",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "codec_type": "audio",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "5.904000"
+      }
+    },
+    {
+      "path": "/audio/voice-campaign-witness-return-29f12b08a1ae.mp3",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "codec_type": "audio",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "12.696000"
+      }
+    },
+    {
+      "path": "/audio/voice-kerr-act2-witness-checkpoint.wav",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "pcm_s16le",
+          "codec_type": "audio",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "7.071292"
+      }
+    },
+    {
+      "path": "/audio/voice-lumen-act2-witness-lost.wav",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "pcm_s16le",
+          "codec_type": "audio",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "4.076000"
+      }
+    },
+    {
+      "path": "/audio/voice-lumen-act2-witness-repair.wav",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "pcm_s16le",
+          "codec_type": "audio",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "7.168000"
+      }
+    },
+    {
+      "path": "/audio/voice-lumen-staying.wav",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "pcm_s16le",
+          "codec_type": "audio",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "6.596625"
+      }
+    },
+    {
+      "path": "/audio/voice-nia-own-work.wav",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "pcm_s16le",
+          "codec_type": "audio",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "2.592000"
+      }
+    }
+  ]
+}

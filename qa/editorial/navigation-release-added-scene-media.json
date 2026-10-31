@@ -1,0 +1,786 @@
+{
+  "method": "Exact current legal-route source text, existing speaker/dialogue/primary-art/portrait bindings and preferred voice byte hashes. Complete exact quotations are compared with their ordered spoken parts; no part may disappear or add words. Unbound quoted text remains explicit.",
+  "sceneIds": [
+    "act2_kerr_terms_owned",
+    "act2_lumen_quiet",
+    "act2_pump_brief",
+    "act2_pump_methods",
+    "act2_pump_report",
+    "act2_pump_triage",
+    "act2_witness_checkpoint",
+    "act2_witness_lost",
+    "act2_witness_repair",
+    "act2_witness_return_private",
+    "act2_witness_support",
+    "act3_mara_account_repair",
+    "chapel",
+    "hatch",
+    "kerr_terms_bluff",
+    "kerr_terms_bluffed",
+    "kerr_terms_exposed",
+    "kerr_terms_named",
+    "kerr_terms_negotiate",
+    "why"
+  ],
+  "rows": [
+    {
+      "route": "qa/routes/navigation-release/route-1.json",
+      "step": 5,
+      "sceneId": "why",
+      "speaker": "Quill",
+      "quotes": [
+        "Because Kerr knows my face from a year I would rather sell than tell. Mara's bodyguard. Helion pays him to keep her hour in the chair room. He does not know your face yet.",
+        "A quiet door gives you time. A loud one brings him. If he finds you, getting out matters more than getting paid."
+      ],
+      "unboundQuotes": [],
+      "dialogue": [
+        {
+          "key": "b87a739318e6d361",
+          "id": "voice-campaign-quill-c98855695ec0",
+          "scene": "why",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "Because Kerr knows my face from a year I would rather sell than tell. Mara's bodyguard. Helion pays him to keep her hour in the chair room. He does not know your face yet.",
+          "text": "Because Kerr knows my face from a year I would rather sell than tell. Mara's bodyguard. Helion pays him to keep her hour in the chair room. He does not know your face yet.",
+          "part": 0,
+          "asset": {
+            "path": "/audio/voice-campaign-quill-c98855695ec0.mp3",
+            "sha256": "7447074b05822f5aaa201309c4c95434ba45706115ae09f666fa8e38cc40e5cc"
+          }
+        },
+        {
+          "key": "6b63e4c704cadc5e",
+          "id": "voice-campaign-quill-41a608e4e7c2",
+          "scene": "why",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "A quiet door gives you time. A loud one brings him. If he finds you, getting out matters more than getting paid.",
+          "text": "A quiet door gives you time. A loud one brings him. If he finds you, getting out matters more than getting paid.",
+          "part": 0,
+          "asset": {
+            "path": "/audio/voice-campaign-quill-41a608e4e7c2.mp3",
+            "sha256": "7f88150386c3930b46fad28c314489419b0a25b19d54a3837c142c9401445d8e"
+          }
+        }
+      ],
+      "art": {
+        "src": "/art/market-counter.jpg",
+        "small": "/art/market-counter-small.jpg",
+        "caption": "Kite City · the sheltered counter",
+        "description": "Steam rises from an unattended copper noodle pot beneath a patched market awning, beside a damp menu and two empty counter seats."
+      },
+      "portrait": "/art/quill-terms.jpg"
+    },
+    {
+      "route": "qa/routes/navigation-release/route-1.json",
+      "step": 7,
+      "sceneId": "chapel",
+      "speaker": "Quill",
+      "quotes": [
+        "Clients call it absolution. The machine reads the hour, files the raw memory, then burns the feeling out and leaves the facts standing there like furniture. The raw file sits in the plinth under the chair.\n\nThat file is the product. Saints keep it. Then they sell it back to the same towers that sent them the clients. Mara's hour is worth more to Helion than Mara is."
+      ],
+      "unboundQuotes": [],
+      "dialogue": [
+        {
+          "key": "multiline-chapel-0",
+          "id": "voice-campaign-multiline-chapel-1",
+          "scene": "chapel",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "Clients call it absolution. The machine reads the hour, files the raw memory, then burns the feeling out and leaves the facts standing there like furniture. The raw file sits in the plinth under the chair.\n\nThat file is the product. Saints keep it. Then they sell it back to the same towers that sent them the clients. Mara's hour is worth more to Helion than Mara is.",
+          "text": "Clients call it absolution. The machine reads the hour, files the raw memory, then burns the feeling out and leaves the facts standing there like furniture. The raw file sits in the plinth under the chair.",
+          "part": 0,
+          "asset": {
+            "path": "/audio/voice-campaign-multiline-chapel-1.mp3",
+            "sha256": "e4c40f81e7762b4347b607a864f91fe1b5dc9f2a5db1cae8632fb6d51df21df5"
+          }
+        },
+        {
+          "key": "multiline-chapel-1",
+          "id": "voice-campaign-multiline-chapel-2",
+          "scene": "chapel",
+          "sceneSpeaker": "Quill",
+          "speaker": "Quill",
+          "quote": "Clients call it absolution. The machine reads the hour, files the raw memory, then burns the feeling out and leaves the facts standing there like furniture. The raw file sits in the plinth under the chair.\n\nThat file is the product. Saints keep it. Then they sell it back to the same towers that sent them the clients. Mara's hour is worth more to Helion than Mara is.",
+          "text": "That file is the product. Saints keep it. Then they sell it back to the same towers that sent them the clients. Mara's hour is worth more to Helion than Mara is.",
+          "part": 1,
+          "asset": {
+            "path": "/audio/voice-campaign-multiline-chapel-2.mp3",
+            "sha256": "6ec77551732e01d5f0e8a3a0b0deb46a4d06aaf327e56e183d16eeacd5b565be"
+          }
+        }
+      ],
+      "art": {
+        "src": "/art/market-counter.jpg",
+        "small": "/art/market-counter-small.jpg",
+        "caption": "Kite City · the sheltered counter",
+        "description": "Steam rises from an unattended copper noodle pot beneath a patched market awning, beside a damp menu and two empty counter seats."
+      },
+      "portrait": "/art/quill.jpg"
+    },
+    {
+      "route": "qa/routes/navigation-release/route-1.json",
+      "step": 13,
+      "sceneId": "hatch",
+      "speaker": null,
+      "quotes": [],
+      "unboundQuotes": [],
+      "dialogue": [],
+      "art": {
+        "src": "/art/incinerator-flue.jpg",
+        "small": "/art/incinerator-flue-small.jpg",
+        "caption": "Glass Chapel · the incinerator vein",
+        "description": "A square closed hatch hangs above a curved incinerator flue, framed by copper ducts, maintenance rails and cold light from a high grille."
+      },
+      "portrait": null
+    },
+    {
+      "route": "qa/routes/navigation-release/route-1.json",
+      "step": 48,
+      "sceneId": "act2_witness_checkpoint",
+      "speaker": "Kerr",
+      "quotes": [
+        "I can keep this off the register if you give me a clinic transfer I can sign. Get the desk to accept it. Then move."
+      ],
+      "unboundQuotes": [],
+      "dialogue": [
+        {
+          "key": "affd54d85f9b68f1",
+          "id": "voice-kerr-act2-witness-checkpoint",
+          "scene": "act2_witness_checkpoint",
+          "sceneSpeaker": "Kerr",
+          "speaker": "Kerr",
+          "quote": "I can keep this off the register if you give me a clinic transfer I can sign. Get the desk to accept it. Then move.",
+          "text": "I can keep this off the register if you give me a clinic transfer I can sign. Get the desk to accept it. Then move.",
+          "part": 0,
+          "asset": {
+            "path": "/audio/voice-kerr-act2-witness-checkpoint.wav",
+            "sha256": "74518b0c9690215af6c2864b88d883d4465fdb68b20f46346a4edb421e7466b5"
+          }
+        }
+      ],
+      "art": {
+        "src": "/art/witness-checkpoint.jpg",
+        "small": "/art/witness-checkpoint-small.jpg",
+        "caption": "City crossing · the inspection point",
+        "description": "An empty inspection booth and a dark scanner face a wet tiled passage beneath amber lamps, with the corridor bending out of view."
+      },
+      "portrait": "/art/kerr.jpg"
+    },
+    {
+      "route": "qa/routes/navigation-release/route-1.json",
+      "step": 49,
+      "sceneId": "act2_witness_lost",
+      "speaker": "Sister Lumen",
+      "quotes": [
+        "We can still keep her account,",
+        "We cannot tell her the room is private. Say exactly what happened."
+      ],
+      "unboundQuotes": [],
+      "dialogue": [
+        {
+          "key": "e3496697a91aba9e",
+          "id": "voice-campaign-sister-lumen-2f09629a089e",
+          "scene": "act2_witness_lost",
+          "sceneSpeaker": "Sister Lumen",
+          "speaker": "Sister Lumen",
+          "quote": "We can still keep her account,",
+          "text": "We can still keep her account,",
+          "part": 0,
+          "asset": {
+            "path": "/audio/voice-campaign-sister-lumen-2f09629a089e.mp3",
+            "sha256": "2363b1870a8389a2ecfaddd03d3b20924b7746262b8e63fdc2fe67bca7e66b88"
+          }
+        },
+        {
+          "key": "4032f13df299bebd",
+          "id": "voice-lumen-act2-witness-lost",
+          "scene": "act2_witness_lost",
+          "sceneSpeaker": "Sister Lumen",
+          "speaker": "Sister Lumen",
+          "quote": "We cannot tell her the room is private. Say exactly what happened.",
+          "text": "We cannot tell her the room is private. Say exactly what happened.",
+          "part": 0,
+          "asset": {
+            "path": "/audio/voice-lumen-act2-witness-lost.wav",
+            "sha256": "7452591700d979b57f270e5d919611b75d3ff808de54c7320aeadd9fb372b1e4"
+          }
+        }
+      ],
+      "art": {
+        "src": "/art/clinic-relay.jpg",
+        "small": "/art/clinic-relay-small.jpg",
+        "caption": "Clinic · the private relay",
+        "description": "An unmarked handset and closed notebook sit beside a privacy curtain and rain-streaked clinic window."
+      },
+      "portrait": "/art/lumen.jpg"
+    },
+    {
+      "route": "qa/routes/navigation-release/route-1.json",
+      "step": 51,
+      "sceneId": "act2_witness_repair",
+      "speaker": "Sister Lumen",
+      "quotes": [
+        "We can move her again. It won't erase the first register entry. Say that to her before you call this repaired."
+      ],
+      "unboundQuotes": [],
+      "dialogue": [
+        {
+          "key": "f7c654dfb2f429bb",
+          "id": "voice-lumen-act2-witness-repair",
+          "scene": "act2_witness_repair",
+          "sceneSpeaker": "Sister Lumen",
+          "speaker": "Sister Lumen",
+          "quote": "We can move her again. It won't erase the first register entry. Say that to her before you call this repaired.",
+          "text": "We can move her again. It won't erase the first register entry. Say that to her before you call this repaired.",
+          "part": 0,
+          "asset": {
+            "path": "/audio/voice-lumen-act2-witness-repair.wav",
+            "sha256": "62660a0678a2f922dea655f49734333989be0534bf1b1c1da3a6783f953b4b32"
+          }
+        }
+      ],
+      "art": {
+        "src": "/art/clinic-relay.jpg",
+        "small": "/art/clinic-relay-small.jpg",
+        "caption": "Clinic · the private relay",
+        "description": "An unmarked handset and closed notebook sit beside a privacy curtain and rain-streaked clinic window."
+      },
+      "portrait": "/art/lumen.jpg"
+    },
+    {
+      "route": "qa/routes/navigation-release/route-1.json",
+      "step": 56,
+      "sceneId": "act2_lumen_quiet",
+      "speaker": "Sister Lumen",
+      "quotes": [
+        "Because somebody should know which cup they take their tea in. Even when the city has made a case file out of them."
+      ],
+      "unboundQuotes": [],
+      "dialogue": [
+        {
+          "key": "d65f9cf43c1ad9fb",
+          "id": "voice-lumen-staying",
+          "scene": "act2_lumen_quiet",
+          "sceneSpeaker": "Sister Lumen",
+          "speaker": "Sister Lumen",
+          "quote": "Because somebody should know which cup they take their tea in. Even when the city has made a case file out of them.",
+          "text": "Because somebody should know which cup they take their tea in. Even when the city has made a case file out of them.",
+          "part": 0,
+          "asset": {
+            "path": "/audio/voice-lumen-staying.wav",
+            "sha256": "70ac47bfa9130e75cbc65c557b5268339f5b5c766c266cb5948854b9937c035e"
+          }
+        }
+      ],
+      "art": {
+        "src": "/art/lumen-cup.jpg",
+        "small": "/art/lumen-cup-small.jpg",
+        "caption": "Ward Four · the ring beneath the cup",
+        "description": "Lumen lifts Mara’s cup to wipe its ring from the clinic table beside the spare chair and rainy window, her magenta optic lit. No signature or endorsement is shown."
+      },
+      "portrait": "/art/lumen.jpg"
+    },
+    {
+      "route": "qa/routes/navigation-release/route-2.json",
+      "step": 22,
+      "sceneId": "kerr_terms_bluff",
+      "speaker": "Kerr",
+      "quotes": [
+        "Then say which desk. Don't look at the glass while you do it."
+      ],
+      "unboundQuotes": [],
+      "dialogue": [
+        {
+          "id": "voice-campaign-kerr-terms-21d133ddba35",
+          "key": "089a8cb45c762523",
+          "scene": "kerr_terms_bluff",
+          "sceneSpeaker": "Kerr",
+          "speaker": "Kerr",
+          "quote": "Then say which desk. Don't look at the glass while you do it.",
+          "text": "Then say which desk. Don't look at the glass while you do it.",
+          "part": 0,
+          "asset": {
+            "path": "/audio/voice-campaign-kerr-terms-21d133ddba35.mp3",
+            "sha256": "549312d0e2b5b47e03aebe8ab05a341a359b39c3a682ca68583173315889d590"
+          }
+        }
+      ],
+      "art": {
+        "src": "/art/kerr-terms.jpg",
+        "small": "/art/kerr-terms-small.jpg",
+        "caption": "Glass Chapel · the price of a doorway",
+        "description": "Kerr, in a dark raincoat, listens against a worn metal chapel doorway; amber light catches his face and the one hand resting on the jamb."
+      },
+      "portrait": "/art/kerr.jpg"
+    },
+    {
+      "route": "qa/routes/navigation-release/route-2.json",
+      "step": 23,
+      "sceneId": "kerr_terms_exposed",
+      "speaker": "Kerr",
+      "quotes": [
+        "There is no clearance. There is you, using one more person as a door."
+      ],
+      "unboundQuotes": [],
+      "dialogue": [
+        {
+          "id": "voice-campaign-kerr-terms-84e2cc909f99",
+          "key": "5d0b6f92203f5e5c",
+          "scene": "kerr_terms_exposed",
+          "sceneSpeaker": "Kerr",
+          "speaker": "Kerr",
+          "quote": "There is no clearance. There is you, using one more person as a door.",
+          "text": "There is no clearance. There is you, using one more person as a door.",
+          "part": 0,
+          "asset": {
+            "path": "/audio/voice-campaign-kerr-terms-84e2cc909f99.mp3",
+            "sha256": "417ad4ca0c452e1b009e4251e29583b66c6d1b1bad4906e66ac78fbbe2550fcd"
+          }
+        }
+      ],
+      "art": {
+        "src": "/art/kerr-terms.jpg",
+        "small": "/art/kerr-terms-small.jpg",
+        "caption": "Glass Chapel · the price of a doorway",
+        "description": "Kerr, in a dark raincoat, listens against a worn metal chapel doorway; amber light catches his face and the one hand resting on the jamb."
+      },
+      "portrait": "/art/kerr.jpg"
+    },
+    {
+      "route": "qa/routes/navigation-release/route-2.json",
+      "step": 30,
+      "sceneId": "act2_kerr_terms_owned",
+      "speaker": "Kerr",
+      "quotes": [
+        "You want me to trust you because you've stopped lying for a minute? Start with the next minute."
+      ],
+      "unboundQuotes": [],
+      "dialogue": [
+        {
+          "id": "voice-campaign-kerr-terms-acd344b4f340",
+          "key": "5471d1816df81d3c",
+          "scene": "act2_kerr_terms_owned",
+          "sceneSpeaker": "Kerr",
+          "speaker": "Kerr",
+          "quote": "You want me to trust you because you've stopped lying for a minute? Start with the next minute.",
+          "text": "You want me to trust you because you've stopped lying for a minute? Start with the next minute.",
+          "part": 0,
+          "asset": {
+            "path": "/audio/voice-campaign-kerr-terms-acd344b4f340.mp3",
+            "sha256": "1e90ea2de492160f2d733b839c26db8ae2156023374e1f4cce66af682f7622ce"
+          }
+        }
+      ],
+      "art": null,
+      "portrait": "/art/kerr.jpg"
+    },
+    {
+      "route": "qa/routes/navigation-release/route-3.json",
+      "step": 42,
+      "sceneId": "act2_pump_brief",
+      "speaker": "Sister Lumen",
+      "quotes": [
+        "Help the room before you make it a sentence,",
+        "If the spare won't start, we move the medicines."
+      ],
+      "unboundQuotes": [],
+      "dialogue": [
+        {
+          "key": "d1aabe5acb441c96",
+          "id": "voice-campaign-sister-lumen-bf2d45489211",
+          "scene": "act2_pump_brief",
+          "sceneSpeaker": "Sister Lumen",
+          "speaker": "Sister Lumen",
+          "quote": "Help the room before you make it a sentence,",
+          "text": "Help the room before you make it a sentence,",
+          "part": 0,
+          "asset": {
+            "path": "/audio/voice-campaign-sister-lumen-bf2d45489211.mp3",
+            "sha256": "0b5ecee400fd05d95fae901f5f9b0206c720a059f191e272e35d5bac797c5d38"
+          }
+        },
+        {
+          "key": "648b5d221d2f18df",
+          "id": "voice-campaign-sister-lumen-3e167d1ff04b",
+          "scene": "act2_pump_brief",
+          "sceneSpeaker": "Sister Lumen",
+          "speaker": "Sister Lumen",
+          "quote": "If the spare won't start, we move the medicines.",
+          "text": "If the spare won't start, we move the medicines.",
+          "part": 0,
+          "asset": {
+            "path": "/audio/voice-campaign-sister-lumen-3e167d1ff04b.mp3",
+            "sha256": "e7627d8bab9c85d79eb648e619409a266ed183057757acf3275ef2bc79168207"
+          }
+        }
+      ],
+      "art": {
+        "src": "/art/clinic-coolant.jpg",
+        "small": "/art/clinic-coolant-small.jpg",
+        "caption": "Ward Nine · the coolant service room",
+        "description": "Closed coolant cabinets, insulated pipes and a portable supply trolley wait beneath a brass service lamp."
+      },
+      "portrait": "/art/lumen.jpg"
+    },
+    {
+      "route": "qa/routes/navigation-release/route-3.json",
+      "step": 43,
+      "sceneId": "act2_pump_methods",
+      "speaker": "Kerr",
+      "quotes": [],
+      "unboundQuotes": [],
+      "dialogue": [],
+      "art": {
+        "src": "/art/clinic-coolant.jpg",
+        "small": "/art/clinic-coolant-small.jpg",
+        "caption": "Ward Nine · the coolant service room",
+        "description": "Closed coolant cabinets, insulated pipes and a portable supply trolley wait beneath a brass service lamp."
+      },
+      "portrait": "/art/kerr.jpg"
+    },
+    {
+      "route": "qa/routes/navigation-release/route-3.json",
+      "step": 44,
+      "sceneId": "act2_pump_triage",
+      "speaker": "Sister Lumen",
+      "quotes": [],
+      "unboundQuotes": [],
+      "dialogue": [],
+      "art": {
+        "src": "/art/clinic-coolant.jpg",
+        "small": "/art/clinic-coolant-small.jpg",
+        "caption": "Ward Nine · the coolant service room",
+        "description": "Closed coolant cabinets, insulated pipes and a portable supply trolley wait beneath a brass service lamp."
+      },
+      "portrait": "/art/lumen.jpg"
+    },
+    {
+      "route": "qa/routes/navigation-release/route-4.json",
+      "step": 12,
+      "sceneId": "kerr_terms_negotiate",
+      "speaker": "Kerr",
+      "quotes": [
+        "Twenty for the clinic. Your name in my report. I let you walk under objection. That is not clearance."
+      ],
+      "unboundQuotes": [],
+      "dialogue": [
+        {
+          "id": "voice-campaign-kerr-terms-3d29183560fe",
+          "key": "9713c3710004f220",
+          "scene": "kerr_terms_negotiate",
+          "sceneSpeaker": "Kerr",
+          "speaker": "Kerr",
+          "quote": "Twenty for the clinic. Your name in my report. I let you walk under objection. That is not clearance.",
+          "text": "Twenty for the clinic. Your name in my report. I let you walk under objection. That is not clearance.",
+          "part": 0,
+          "asset": {
+            "path": "/audio/voice-campaign-kerr-terms-3d29183560fe.mp3",
+            "sha256": "4557a7747acbf489a2268fc4f4d2d0905cd35a7ed9a44c80d1210d5431f50cf6"
+          }
+        }
+      ],
+      "art": {
+        "src": "/art/kerr-terms.jpg",
+        "small": "/art/kerr-terms-small.jpg",
+        "caption": "Glass Chapel · the price of a doorway",
+        "description": "Kerr, in a dark raincoat, listens against a worn metal chapel doorway; amber light catches his face and the one hand resting on the jamb."
+      },
+      "portrait": "/art/kerr.jpg"
+    },
+    {
+      "route": "qa/routes/navigation-release/route-4.json",
+      "step": 13,
+      "sceneId": "kerr_terms_named",
+      "speaker": "Kerr",
+      "quotes": [
+        "I can give you a door. I can't give you a clean name."
+      ],
+      "unboundQuotes": [],
+      "dialogue": [
+        {
+          "id": "voice-campaign-kerr-terms-cae166cd5d8e",
+          "key": "edf4128187075db9",
+          "scene": "kerr_terms_named",
+          "sceneSpeaker": "Kerr",
+          "speaker": "Kerr",
+          "quote": "I can give you a door. I can't give you a clean name.",
+          "text": "I can give you a door. I can't give you a clean name.",
+          "part": 0,
+          "asset": {
+            "path": "/audio/voice-campaign-kerr-terms-cae166cd5d8e.mp3",
+            "sha256": "1ea8d782787706df4e90981a60ba9174ed0bc585b62bba9935cca8e52d2434bd"
+          }
+        }
+      ],
+      "art": {
+        "src": "/art/kerr-terms.jpg",
+        "small": "/art/kerr-terms-small.jpg",
+        "caption": "Glass Chapel · the price of a doorway",
+        "description": "Kerr, in a dark raincoat, listens against a worn metal chapel doorway; amber light catches his face and the one hand resting on the jamb."
+      },
+      "portrait": "/art/kerr.jpg"
+    },
+    {
+      "route": "qa/routes/navigation-release/route-5.json",
+      "step": 40,
+      "sceneId": "act2_witness_support",
+      "speaker": "Nia Pell",
+      "quotes": [
+        "Tell me whose work you're offering."
+      ],
+      "unboundQuotes": [],
+      "dialogue": [
+        {
+          "key": "ae1fa349cb32cd52",
+          "id": "voice-nia-own-work",
+          "scene": "act2_witness_support",
+          "sceneSpeaker": "Nia Pell",
+          "speaker": "Nia Pell",
+          "quote": "Tell me whose work you're offering.",
+          "text": "Tell me whose work you're offering.",
+          "part": 0,
+          "asset": {
+            "path": "/audio/voice-nia-own-work.wav",
+            "sha256": "9ed244c27a9a76099ae1211d02d9541367aa942d9da806c5f1315041e913d0f9"
+          }
+        }
+      ],
+      "art": {
+        "src": "/art/nia-transfer.jpg",
+        "small": "/art/nia-transfer-small.jpg",
+        "caption": "Glass Chapel · Nia sets her own terms",
+        "description": "Nia sits upright beside her clinic bed in her ordinary wheelchair, wearing shoes and resting one hand on its brake; an untouched photograph frame stays on the bedside shelf."
+      },
+      "portrait": "/art/nia.jpg"
+    },
+    {
+      "route": "qa/routes/navigation-release/route-5.json",
+      "step": 43,
+      "sceneId": "act2_witness_return_private",
+      "speaker": "Nia Pell",
+      "quotes": [
+        "I put the photograph on the shelf. I have not decided what I want to say about the night. Leave the recorder off. I need a room that can be quiet without becoming part of your story.",
+        "The volunteer is still waiting for the shift you offered. Do not leave that work beside her bed."
+      ],
+      "unboundQuotes": [],
+      "dialogue": [
+        {
+          "key": "9d449549fad6aad2",
+          "id": "voice-campaign-witness-return-29f12b08a1ae",
+          "scene": "act2_witness_return_private",
+          "sceneSpeaker": "Nia Pell",
+          "speaker": "Nia Pell",
+          "quote": "I put the photograph on the shelf. I have not decided what I want to say about the night. Leave the recorder off. I need a room that can be quiet without becoming part of your story.",
+          "text": "I put the photograph on the shelf. I have not decided what I want to say about the night. Leave the recorder off. I need a room that can be quiet without becoming part of your story.",
+          "part": 1,
+          "asset": {
+            "path": "/audio/voice-campaign-witness-return-29f12b08a1ae.mp3",
+            "sha256": "e8c1e050d7ca12f8e2f749ef63ea3cc2e3c78f7e8250704f1a8a83125cbf974f"
+          }
+        },
+        {
+          "key": "6d56b9b9862cbeb7",
+          "id": "voice-campaign-witness-return-0bdc858ea31a",
+          "scene": "act2_witness_return_private",
+          "sceneSpeaker": "Nia Pell",
+          "speaker": "Sister Lumen",
+          "quote": "The volunteer is still waiting for the shift you offered. Do not leave that work beside her bed.",
+          "text": "The volunteer is still waiting for the shift you offered. Do not leave that work beside her bed.",
+          "part": 1,
+          "attribution": "Lumen",
+          "asset": {
+            "path": "/audio/voice-campaign-witness-return-0bdc858ea31a.mp3",
+            "sha256": "776d5dc20d8959bc5c0d01f8b367a4a4b3d300b58a3f9f12d5f1b6388a0231d9"
+          }
+        }
+      ],
+      "art": {
+        "src": "/art/nia-arrival.jpg",
+        "small": "/art/nia-arrival-small.jpg",
+        "caption": "Ward Nine · the room stays hers",
+        "description": "Nia sits in her chair at a modest lamp-lit room table, one hand beside a closed notebook and the other on her chair arm."
+      },
+      "portrait": "/art/nia.jpg"
+    },
+    {
+      "route": "qa/routes/navigation-release/route-6.json",
+      "step": 25,
+      "sceneId": "kerr_terms_bluff",
+      "speaker": "Kerr",
+      "quotes": [
+        "Then say which desk. Don't look at the glass while you do it."
+      ],
+      "unboundQuotes": [],
+      "dialogue": [
+        {
+          "id": "voice-campaign-kerr-terms-21d133ddba35",
+          "key": "089a8cb45c762523",
+          "scene": "kerr_terms_bluff",
+          "sceneSpeaker": "Kerr",
+          "speaker": "Kerr",
+          "quote": "Then say which desk. Don't look at the glass while you do it.",
+          "text": "Then say which desk. Don't look at the glass while you do it.",
+          "part": 0,
+          "asset": {
+            "path": "/audio/voice-campaign-kerr-terms-21d133ddba35.mp3",
+            "sha256": "549312d0e2b5b47e03aebe8ab05a341a359b39c3a682ca68583173315889d590"
+          }
+        }
+      ],
+      "art": {
+        "src": "/art/kerr-terms.jpg",
+        "small": "/art/kerr-terms-small.jpg",
+        "caption": "Glass Chapel · the price of a doorway",
+        "description": "Kerr, in a dark raincoat, listens against a worn metal chapel doorway; amber light catches his face and the one hand resting on the jamb."
+      },
+      "portrait": "/art/kerr.jpg"
+    },
+    {
+      "route": "qa/routes/navigation-release/route-6.json",
+      "step": 26,
+      "sceneId": "kerr_terms_bluffed",
+      "speaker": "Kerr",
+      "quotes": [
+        "If that desk doesn't answer, I will remember who sent me to it."
+      ],
+      "unboundQuotes": [],
+      "dialogue": [
+        {
+          "id": "voice-campaign-kerr-terms-9eb4b102fa0b",
+          "key": "405e5e4465cd1ab4",
+          "scene": "kerr_terms_bluffed",
+          "sceneSpeaker": "Kerr",
+          "speaker": "Kerr",
+          "quote": "If that desk doesn't answer, I will remember who sent me to it.",
+          "text": "If that desk doesn't answer, I will remember who sent me to it.",
+          "part": 0,
+          "asset": {
+            "path": "/audio/voice-campaign-kerr-terms-9eb4b102fa0b.mp3",
+            "sha256": "dc2b5f08e108928001a48bd7d88bc96289dd62ad5bea48bf865a8797b346ee90"
+          }
+        }
+      ],
+      "art": {
+        "src": "/art/kerr-terms.jpg",
+        "small": "/art/kerr-terms-small.jpg",
+        "caption": "Glass Chapel · the price of a doorway",
+        "description": "Kerr, in a dark raincoat, listens against a worn metal chapel doorway; amber light catches his face and the one hand resting on the jamb."
+      },
+      "portrait": "/art/kerr.jpg"
+    },
+    {
+      "route": "qa/routes/navigation-release/route-7.json",
+      "step": 43,
+      "sceneId": "act3_mara_account_repair",
+      "speaker": "Mara",
+      "quotes": [
+        "I hear the difference. Let it stay different. I don't want to do the rest of this conversation today."
+      ],
+      "unboundQuotes": [],
+      "dialogue": [
+        {
+          "key": "548c04fb0fac5455",
+          "id": "voice-campaign-mara-account-766693e6f9ac",
+          "scene": "act3_mara_account_repair",
+          "sceneSpeaker": "Mara",
+          "speaker": "Mara",
+          "quote": "I hear the difference. Let it stay different. I don't want to do the rest of this conversation today.",
+          "text": "I hear the difference. Let it stay different. I don't want to do the rest of this conversation today.",
+          "part": 1,
+          "asset": {
+            "path": "/audio/voice-campaign-mara-account-766693e6f9ac.mp3",
+            "sha256": "dd46bfddbb1d54b8c50fbedf7036b6eee84c1b6446be6aed39f0548516c370cc"
+          }
+        }
+      ],
+      "art": {
+        "src": "/art/mara-account.jpg",
+        "small": "/art/mara-account-small.jpg",
+        "caption": "Ward Four · a conversation with a past",
+        "description": "Mara listens beside a rainy clinic window, one hand resting on her knee and the other out of view; an untouched ceramic cup stands between her and an empty visitor chair."
+      },
+      "portrait": "/art/mara.jpg"
+    },
+    {
+      "route": "qa/routes/navigation-release/route-8.json",
+      "step": 42,
+      "sceneId": "act2_pump_brief",
+      "speaker": "Sister Lumen",
+      "quotes": [
+        "Help the room before you make it a sentence,",
+        "If the spare won't start, we move the medicines."
+      ],
+      "unboundQuotes": [],
+      "dialogue": [
+        {
+          "key": "d1aabe5acb441c96",
+          "id": "voice-campaign-sister-lumen-bf2d45489211",
+          "scene": "act2_pump_brief",
+          "sceneSpeaker": "Sister Lumen",
+          "speaker": "Sister Lumen",
+          "quote": "Help the room before you make it a sentence,",
+          "text": "Help the room before you make it a sentence,",
+          "part": 0,
+          "asset": {
+            "path": "/audio/voice-campaign-sister-lumen-bf2d45489211.mp3",
+            "sha256": "0b5ecee400fd05d95fae901f5f9b0206c720a059f191e272e35d5bac797c5d38"
+          }
+        },
+        {
+          "key": "648b5d221d2f18df",
+          "id": "voice-campaign-sister-lumen-3e167d1ff04b",
+          "scene": "act2_pump_brief",
+          "sceneSpeaker": "Sister Lumen",
+          "speaker": "Sister Lumen",
+          "quote": "If the spare won't start, we move the medicines.",
+          "text": "If the spare won't start, we move the medicines.",
+          "part": 0,
+          "asset": {
+            "path": "/audio/voice-campaign-sister-lumen-3e167d1ff04b.mp3",
+            "sha256": "e7627d8bab9c85d79eb648e619409a266ed183057757acf3275ef2bc79168207"
+          }
+        }
+      ],
+      "art": {
+        "src": "/art/clinic-coolant.jpg",
+        "small": "/art/clinic-coolant-small.jpg",
+        "caption": "Ward Nine · the coolant service room",
+        "description": "Closed coolant cabinets, insulated pipes and a portable supply trolley wait beneath a brass service lamp."
+      },
+      "portrait": "/art/lumen.jpg"
+    },
+    {
+      "route": "qa/routes/navigation-release/route-8.json",
+      "step": 43,
+      "sceneId": "act2_pump_methods",
+      "speaker": "Kerr",
+      "quotes": [],
+      "unboundQuotes": [],
+      "dialogue": [],
+      "art": {
+        "src": "/art/clinic-coolant.jpg",
+        "small": "/art/clinic-coolant-small.jpg",
+        "caption": "Ward Nine · the coolant service room",
+        "description": "Closed coolant cabinets, insulated pipes and a portable supply trolley wait beneath a brass service lamp."
+      },
+      "portrait": "/art/kerr.jpg"
+    },
+    {
+      "route": "qa/routes/navigation-release/route-8.json",
+      "step": 44,
+      "sceneId": "act2_pump_report",
+      "speaker": "Sister Lumen",
+      "quotes": [],
+      "unboundQuotes": [],
+      "dialogue": [],
+      "art": {
+        "src": "/art/clinic-coolant.jpg",
+        "small": "/art/clinic-coolant-small.jpg",
+        "caption": "Ward Nine · the coolant service room",
+        "description": "Closed coolant cabinets, insulated pipes and a portable supply trolley wait beneath a brass service lamp."
+      },
+      "portrait": "/art/lumen.jpg"
+    }
+  ]
+}

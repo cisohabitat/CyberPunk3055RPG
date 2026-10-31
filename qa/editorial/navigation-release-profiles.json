@@ -1,0 +1,82 @@
+[
+  {
+    "id": "navigation-1",
+    "route": "qa/routes/navigation-release/route-1.json",
+    "width": 390,
+    "artwork": "full",
+    "reading": "all",
+    "sound": true,
+    "shots": false,
+    "precedingRoute": "qa/routes/performance-scarce.json"
+  },
+  {
+    "id": "navigation-2",
+    "route": "qa/routes/navigation-release/route-2.json",
+    "width": 320,
+    "artwork": "full",
+    "reading": "all",
+    "sound": true,
+    "shots": false,
+    "precedingRoute": "qa/routes/kerr/scarce-exposed-owned.json"
+  },
+  {
+    "id": "navigation-3",
+    "route": "qa/routes/navigation-release/route-3.json",
+    "width": 1440,
+    "artwork": "none",
+    "reading": "paragraph",
+    "sound": false,
+    "shots": false,
+    "precedingRoute": "qa/routes/scarce-depot-held.json"
+  },
+  {
+    "id": "navigation-4",
+    "route": "qa/routes/navigation-release/route-4.json",
+    "width": 320,
+    "artwork": "none",
+    "reading": "all",
+    "sound": false,
+    "shots": false,
+    "precedingRoute": "qa/routes/kerr/unheld-named.json"
+  },
+  {
+    "id": "navigation-5",
+    "route": "qa/routes/navigation-release/route-5.json",
+    "width": 1440,
+    "artwork": "none",
+    "reading": "all",
+    "sound": false,
+    "shots": false,
+    "precedingRoute": "qa/routes/witness-return/waiting-unfinished.json"
+  },
+  {
+    "id": "navigation-6",
+    "route": "qa/routes/navigation-release/route-6.json",
+    "width": 320,
+    "artwork": "none",
+    "reading": "all",
+    "sound": false,
+    "shots": false,
+    "precedingRoute": "qa/routes/kerr/bluffed.json"
+  },
+  {
+    "id": "navigation-7",
+    "route": "qa/routes/navigation-release/route-7.json",
+    "width": 1440,
+    "artwork": "none",
+    "reading": "all",
+    "sound": false,
+    "shots": false,
+    "precedingRoute": "qa/routes/mara-account/destroyed-corrected.json"
+  },
+  {
+    "id": "navigation-8",
+    "route": "qa/routes/navigation-release/route-8.json",
+    "width": 320,
+    "artwork": "none",
+    "reading": "all",
+    "sound": false,
+    "shots": false,
+    "precedingRoute": "qa/routes/scarce-depot-courier.json"
+  }
+]

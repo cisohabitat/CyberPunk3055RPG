@@ -1,0 +1,285 @@
+{
+  "method": "Raw initial failures, contexts, screenshots and trace archives retained. Text logs use deterministic lossless gzip; prototype captures are labeled and separate from built capture. Original source test1000 and final1002 runs remain separate. First combined Chromium66pass/1timeout and WebKit64pass/3timeouts; final shortened-task Chromium9 and isolated full WebKit70 pass with deadlines/workers unchanged.",
+  "files": [
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/added-scene-media-first-part-comparison.json",
+      "sha256": "8bc05121ad26694a6409d6d33d8b6568b0d5084ef417a76bd65876b7ed8c3053",
+      "bytes": 33306
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/all74-accepted.log.gz",
+      "sha256": "56d2ec90f92e6d6800f2977e7a5ed4e32825109b80cf117ecffd1830538065de",
+      "bytes": 316
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/balance.log.gz",
+      "sha256": "9676245a26921e28d4705b8590aca8bc412284aecdbcc078e8f1516d2e8ec715",
+      "bytes": 282
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/build.log.gz",
+      "sha256": "e8dbb82fb531bed51357cc628868e8d420e50a0007f0d715606b23dba13504a2",
+      "bytes": 612
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/campaign-scheduling-correction.json.gz",
+      "sha256": "4cda474e224fd44c81b68a85587187c5f86353bdbd783f13aaebc8cfc3f13fb0",
+      "bytes": 194
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/campaigns-final-quiet.log.gz",
+      "sha256": "ef38ee200a2233e4661fc31cbcb0dbba281d62d357a7ecc009b5d7d0848c5b11",
+      "bytes": 408
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/campaigns-final-sound.log.gz",
+      "sha256": "1a259fd368019d5f8ac8d4b9ce24dd6730e0bf65aba37964a9f68a91414b0a2e",
+      "bytes": 177
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/campaigns-quiet.log.gz",
+      "sha256": "f61f27bd17de546264aa58f40f3aafaac7021e0ef69c17f6b1b4cd7664a037ec",
+      "bytes": 20
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/canonical-built.log.gz",
+      "sha256": "ac437f028a55970566ce9076cdfbb59a2328bf0692171ce0377c5f95e0c77919",
+      "bytes": 196
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/canonical-public-baseline.log.gz",
+      "sha256": "5d927db95460dc72cf2564a30151b6b1783ae3a29a01bbd291f86ea5b4f6f83b",
+      "bytes": 197
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/catalog.log.gz",
+      "sha256": "8036d36718df09b626c5c2afb9615bf4f4febf4c41f5781aaeec3191c8d7231f",
+      "bytes": 311
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/chromium-final.log.gz",
+      "sha256": "fc12e54495fab62ce414823764137d2f0060f645cb0531c6eed5de9de90131ac",
+      "bytes": 542
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/chromium-first-results/navigation-release-worksho-0b040-h-less-real-travel-1440-275-chromium/error-context.md.gz",
+      "sha256": "089038400dc4c5fdb7abd490b20dd9edca3b3dd7581a69533eb2bf968fc1249c",
+      "bytes": 4200
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/chromium-first-results/navigation-release-worksho-0b040-h-less-real-travel-1440-275-chromium/test-failed-1.png",
+      "sha256": "de72fc4b181f26eb8ecb01ad659669054792a338ce6c5f9734e6f115fb639a77",
+      "bytes": 156137
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/chromium-first-results/navigation-release-worksho-0b040-h-less-real-travel-1440-275-chromium/trace.zip",
+      "sha256": "89d319d2f18e5e75d56b4ed7530a627bd95b1421f41e5a934cc45138b7192671",
+      "bytes": 5534924
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/chromium-first.log.gz",
+      "sha256": "1ce8d2b8d8752a989b8cc318ca86e5c7846e252aa1b1180d2d5094377d2ca140",
+      "bytes": 2176
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/classification.log.gz",
+      "sha256": "fe2f5583b9c8d36ef39168e35edb0dea7f965eb8dc4d638ce2cdeccf1b65ad05",
+      "bytes": 135
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/economy.log.gz",
+      "sha256": "4732acd958dada0b583486825f52286adbaf576af7013a74b9d8ef23c4a52993",
+      "bytes": 286
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/finish-local.log.gz",
+      "sha256": "a344231ee2cd0a7e94f82cd13ab45a70c8b70ff6cbc995085c855a2a6e577e0a",
+      "bytes": 29115
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/firefox-native-launch/navigation-release-worksho-fa906-th-less-real-travel-390-275-firefox/trace.zip",
+      "sha256": "6994779495308488de51109708dff14985233c3dccec6467046899d5e32ba711",
+      "bytes": 2386
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/firefox-sample.log.gz",
+      "sha256": "d9e4f546f8d85dd4980d79d75a17f01ae1af71bce10d49d401dff2277fe87a24",
+      "bytes": 927
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/inventory.log.gz",
+      "sha256": "98771b8d93fbdf1e3c3e8b47c71cde90da2bb1f3f0965a1c8c2d7510c7277fda",
+      "bytes": 106560
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/layout-baseline.log.gz",
+      "sha256": "ef2dc731d95171eb75465e1c5d007a62d5b8d62c5e7c021937464dc06713460b",
+      "bytes": 272
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/layout-built.log.gz",
+      "sha256": "dd0918575fabbd7bcfcab9e8ecf47af38332b7ff9dcc02c64f46475767dec45e",
+      "bytes": 272
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/layout-current.log.gz",
+      "sha256": "079b347ed766ff1770c83591eb7b9f61fe126d4c01fd4ca0132c2e4748cdf935",
+      "bytes": 262
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/layout-injected-old-server.json",
+      "sha256": "ce74140efc3f455b3bd3afb4b31802f775fd0ea16c84da92f4e802e197cc81eb",
+      "bytes": 156034
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/layout-prototype-wide.json",
+      "sha256": "370708e1a720ff42c9ab6211e13a1458608162d06057417087890279844fb83e",
+      "bytes": 156080
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/layout-prototype-wide.log.gz",
+      "sha256": "dd0918575fabbd7bcfcab9e8ecf47af38332b7ff9dcc02c64f46475767dec45e",
+      "bytes": 272
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/layout-prototype.json",
+      "sha256": "7bb6ddc606ed1a3877f6dffa628071e165ee00f16a26ebb09a17c31b6322d934",
+      "bytes": 156067
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/layout-prototype.log.gz",
+      "sha256": "ded76a188fef678e510a88fd851d83764c56ca7433f27b866aae799654635f01",
+      "bytes": 271
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/media-audit-final.log.gz",
+      "sha256": "f8dca5335634e6c5f3d2a34d38077f41e199a23e7d14b04e704bf1395430013b",
+      "bytes": 71
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/media-audit-first.log.gz",
+      "sha256": "dd12965c850a55c6bef43c30a1b42523045821138cce083c8f9f0619ebec1c10",
+      "bytes": 304
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/missions.log.gz",
+      "sha256": "1bdbdd4cab4b5b2699585461b4122ba1ad57c6e2e7aa05a28026b9894a8f9301",
+      "bytes": 270
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/overlap.log.gz",
+      "sha256": "78399de8a7ad6b0ffc55095cef81e7efe747eb164cf7d63160bdd3d6626a4951",
+      "bytes": 311
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/prepare-before.log.gz",
+      "sha256": "00df5528757253203de3b283ace682eb69f823fc8e0b17b9ff386e9a2c007cb2",
+      "bytes": 96
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/prior-accepted.log.gz",
+      "sha256": "cd79752edb7718c5d83d93ca7bcca8964ba813f59a903e787c55c37037346905",
+      "bytes": 201
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/prior66-immediate.log.gz",
+      "sha256": "09ac0bc7b326bea5cd7bf3b3a8901ebda161ecc1447220a2e30778d4c769ffd1",
+      "bytes": 193
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/probe.log.gz",
+      "sha256": "f8e7af638f460f564c6602e57e9068737033f87275a1abadacbdd20b33509a7a",
+      "bytes": 796
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/security.log.gz",
+      "sha256": "2d4e7879f9ccc7b1c0639c377ba450913ad72417c2aeb9aab89461aef50f5ce3",
+      "bytes": 210
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/source-accepted.log.gz",
+      "sha256": "ef6a0995e3910bb601dc1dd1c32fd41dae573499702efa46a2c04e91a0c6b08a",
+      "bytes": 320
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/source-final.log.gz",
+      "sha256": "008ddd8b6f6679cd283bdcf89dbbe1f59fe85e50b79f4122ab598d737ca1ecb1",
+      "bytes": 30840
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/source.log.gz",
+      "sha256": "b6740a61e5ea830ec765789a657513fbe79052d0d36d87e9484be0159e319190",
+      "bytes": 30673
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/types-complete.log.gz",
+      "sha256": "3666ed3b3c8b06273f9b69296193c08849e73cf9d0ad65c063212687ecf3355d",
+      "bytes": 158
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/types-final.log.gz",
+      "sha256": "3666ed3b3c8b06273f9b69296193c08849e73cf9d0ad65c063212687ecf3355d",
+      "bytes": 158
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/types-first.log.gz",
+      "sha256": "3666ed3b3c8b06273f9b69296193c08849e73cf9d0ad65c063212687ecf3355d",
+      "bytes": 158
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/webkit-first-results/navigation-release-worksho-0b040-h-less-real-travel-1440-275-webkit/error-context.md.gz",
+      "sha256": "389f912954f4f8627cbca56e24a203c7db92e87c5c87214c9874fc1d49dc4522",
+      "bytes": 5439
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/webkit-first-results/navigation-release-worksho-0b040-h-less-real-travel-1440-275-webkit/test-failed-1.png",
+      "sha256": "ff294fe0395a3d402e5a70ac5b6d85f8b77a929b90763c7a095b6909364ce129",
+      "bytes": 380157
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/webkit-first-results/navigation-release-worksho-0b040-h-less-real-travel-1440-275-webkit/trace.zip",
+      "sha256": "5455329659926ef3d9f358a3768e7e0e4dbc277e44e82e2ebafd86fe2febdc1c",
+      "bytes": 3008875
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/webkit-first-results/navigation-release-worksho-fa906-th-less-real-travel-390-275-webkit/error-context.md.gz",
+      "sha256": "3a6b0c4623217fe6009237c81a6628adbef284640215fb15bf47a693cd056692",
+      "bytes": 3879
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/webkit-first-results/navigation-release-worksho-fa906-th-less-real-travel-390-275-webkit/test-failed-1.png",
+      "sha256": "f0a167439aef1c7e608d9a9bd550a7fbe59d4611ac97c9589c97f418aa1ba00d",
+      "bytes": 182063
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/webkit-first-results/navigation-release-worksho-fa906-th-less-real-travel-390-275-webkit/trace.zip",
+      "sha256": "a4d065aa741e40c1ef4c665c569a05e1e07d478aac4409f8fc57283e94f5cca0",
+      "bytes": 2064238
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/webkit-first-results/workspace-flow-workspace-r-c53e6--order-act2-route-exit-1440-webkit/error-context.md.gz",
+      "sha256": "69e6c666bf445b54c9fdec78bf0a1f9c7592284c306a9bf0dd5c39c4041fedb8",
+      "bytes": 2577
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/webkit-first-results/workspace-flow-workspace-r-c53e6--order-act2-route-exit-1440-webkit/test-failed-1.png",
+      "sha256": "1a274eba16eee33ff95bd590585d97369a4ff1b153885a6e2eb0c2cd728fd1a0",
+      "bytes": 1001299
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/webkit-first-results/workspace-flow-workspace-r-c53e6--order-act2-route-exit-1440-webkit/trace.zip",
+      "sha256": "58806e39b43f13fd43a7b7a3c48a3f7c554623d90f2af0f0fd9e95c903ed20e2",
+      "bytes": 2800160
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/webkit-first.log.gz",
+      "sha256": "25a5bdc60167ffc927fc6060777911c093f6e91fd115fcad314ea4509f953d39",
+      "bytes": 2683
+    },
+    {
+      "path": "qa/editorial/navigation-release-diagnostics/webkit-isolated-final.log.gz",
+      "sha256": "8da4cf49a071768ae781dcbdea35ed5bc6584faba528d2c0ad45ef870fc134f2",
+      "bytes": 1657
+    }
+  ]
+}

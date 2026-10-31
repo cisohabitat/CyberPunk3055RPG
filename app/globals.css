@@ -1856,3 +1856,14 @@ html[data-motion="reduce"] .location-entry, html[data-motion="reduce"] .portrait
 .scene[data-decision-flow="nearby"] .testimony-brief > .testimony-sources > div + div { margin-top: .1rem; }
 .scene[data-decision-flow="nearby"] .testimony-brief .source-ledger { margin-top: .25rem; }
 .scene[data-decision-flow="nearby"] .question-desk { margin-inline: -.5rem; }
+
+/* Workshop comparison: give full terms the card width rather than a narrow
+   second column. Keep every fact, native disclosure, font and action in order. */
+.scene[data-decision-flow="nearby"] .kit-shop .choice-fact { grid-template-columns: minmax(0,1fr); gap: 0; }
+.scene[data-decision-flow="nearby"] .kit-shop .choice-fact > .choice-meta { margin-top: .1rem; }
+.scene[data-decision-flow="nearby"] .kit-shop .kit-purchase-review { margin-top: .4rem; padding-top: .35rem; }
+.scene[data-decision-flow="nearby"] .kit-shop .kit-commit { margin-top: .35rem; }
+.scene[data-decision-flow="nearby"] .kit-shop > .testimony-sources { gap: .6rem; align-items: start; }
+.scene[data-decision-flow="nearby"] .kit-shop > .testimony-sources > div + div { margin-top: 0; }
+.scene[data-decision-flow="nearby"] .kit-shop > .testimony-sources > div { padding: .4rem 0; border-inline: 0; }
+.scene[data-decision-flow="nearby"] .kit-shop .kit-commit .choice { padding-inline: .5rem; }

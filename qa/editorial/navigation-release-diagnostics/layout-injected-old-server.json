@@ -1,0 +1,4047 @@
+{
+  "revision": "808b1969904d1987b3b33d4f571ad1c5ae7446db",
+  "dirty": true,
+  "url": "http://127.0.0.1:3130",
+  "css": "/tmp/saint-phase20/prototype.css",
+  "method": "Legal campaign checkpoint with separately labeled imported resource edges; enlarged type, text-only synthetic viewports; no authored action or save mutation.",
+  "rows": [
+    {
+      "width": 320,
+      "creds": 0,
+      "state": {
+        "version": 2,
+        "handle": "Replay",
+        "givenName": "Ada",
+        "origin": "dustline",
+        "complication": "on-file",
+        "stats": {
+          "chrome": 2,
+          "nerve": 2,
+          "face": 1,
+          "ghost": 5
+        },
+        "factions": {
+          "quill": 3,
+          "lumen": 2,
+          "helion": 4,
+          "wards": 1
+        },
+        "creds": 0,
+        "strain": 1,
+        "items": [
+          "spoof-chip"
+        ],
+        "flags": {
+          "kerr_terms_enabled": true,
+          "mara_account_enabled": true,
+          "witness_returns_enabled": true,
+          "encounter_craft_enabled": true,
+          "emotional_payoffs_enabled": true,
+          "freight_craft_enabled": true,
+          "on_file": true,
+          "opening_identity": true,
+          "opening_neighbor_heard": true,
+          "met_stallholder": true,
+          "opening_complete": true,
+          "met_quill": true,
+          "haggled": true,
+          "hired": true,
+          "quiet": true,
+          "knows_truth": true,
+          "honest": true,
+          "met_lumen": true,
+          "pact_copy": true,
+          "lumen_here": true,
+          "copied": true,
+          "met_mara": true,
+          "heard_memo": true,
+          "memory_signature": true,
+          "memory_order": true,
+          "memory_roster": true,
+          "memory_theory_omitted": true,
+          "memory_reconstructed": true,
+          "memory_prepared": true,
+          "memory_public_claim": true,
+          "memory_intact": true,
+          "kerr_talked": true,
+          "met_kerr": true,
+          "act1_done": true,
+          "act1_both": true,
+          "perk_trained": true,
+          "perk_nerve": true
+        },
+        "journal": [
+          {
+            "id": "quill-agreed-to-ninety-up-front",
+            "text": "Quill agreed to ninety up front."
+          },
+          {
+            "id": "quill-hired-you-to-lift-mara-voss-s-unedited-hou",
+            "text": "Quill hired you to lift Mara Voss's unedited hour from Glass Chapel."
+          },
+          {
+            "id": "the-choir-door-accepted-a-name-you-kept-on-a-chi",
+            "text": "The choir door accepted a name you kept on a chip."
+          },
+          {
+            "id": "ward-nine",
+            "text": "Mara Voss signed the Ward Nine coolant dump. Three hundred people, one memo."
+          },
+          {
+            "id": "shard-copy",
+            "text": "A second copy of Mara's hour exists."
+          },
+          {
+            "id": "memory-signature",
+            "text": "Mara authorizes the flush. She says the tower promised an evacuation. The signature proves authorization; her explanation still needs corroboration.",
+            "kind": "claim"
+          },
+          {
+            "id": "memory-order",
+            "text": "The exported receipt records an instruction canceling evacuation while retaining the flush. Its contents are visible; the issuing key still needs independent verification during The Week.",
+            "kind": "fact"
+          },
+          {
+            "id": "memory-roster",
+            "text": "Ivo Pell and Junie Calder were on shift. Nia Pell signed the housing slip and reached a service exit. She can corroborate the receipt, but a public roster would expose where she sleeps.",
+            "kind": "fact"
+          },
+          {
+            "id": "memory-analysis",
+            "text": "The signature and the later evacuation cancellation are separate decisions. Mara's prior knowledge and the receipt's issuer remain questions, not acquittals.",
+            "kind": "claim"
+          },
+          {
+            "id": "public-packet",
+            "text": "The packet accuses Helion of canceling evacuation before the issuing key is authenticated. The allegation is not independent proof.",
+            "kind": "claim"
+          },
+          {
+            "id": "archive-promise",
+            "text": "Trace the tower receipt to corroborate Mara's hour.",
+            "kind": "promise"
+          }
+        ],
+        "chapters": [
+          "Two Fires"
+        ],
+        "rolls": [
+          {
+            "label": "Walk past Kerr",
+            "roll": 8,
+            "total": 12,
+            "dc": 8,
+            "success": true
+          },
+          {
+            "label": "Copy the hour",
+            "roll": 8,
+            "total": 11,
+            "dc": 10,
+            "success": true
+          },
+          {
+            "label": "Spoof the choir door",
+            "roll": 8,
+            "total": 10,
+            "dc": 8,
+            "success": true
+          },
+          {
+            "label": "Push Quill",
+            "roll": 8,
+            "total": 9,
+            "dc": 8,
+            "success": true
+          }
+        ],
+        "log": [
+          "Spoof the choir door.",
+          "Speak the pad's old language.",
+          "Enough. Find the nurse.",
+          "Quill sent me for the Voss shard.",
+          "I'll copy it. You get the leak. I get paid.",
+          "Copy it, then take the original.",
+          "Keep the hour.",
+          "Open the hour on the memory bench.",
+          "Inspect the signature.",
+          "Inspect the counter-order.",
+          "Inspect the living witness.",
+          "Compare the signature with the later order.",
+          "Her signature is enough. Leave the counter-order out.",
+          "Keep both decisions. Mark what remains unknown.",
+          "Accuse Helion publicly before authenticating the key.",
+          "Preserve the complete archive.",
+          "Convince him to let you walk.",
+          "Quill gets the original. The copy gets out.",
+          "The week after.",
+          "Walk out into the week.",
+          "Learn one thing from the night.",
+          "Steady hands",
+          "Read the board.",
+          "Compare field equipment at the repair bench."
+        ],
+        "sceneId": "act2_workshop"
+      },
+      "metrics": {
+        "text": "QuillThe broker\n\nDistrict repair bench · The Week\n\nDistrict repair bench · The Week\n\nThe week wants a buyer or a witness.\n\nDistrict repair bench · The Week. The week wants a buyer or a witness.\n\nThe broker\n\nLoaded Autosave — The Week · District repair bench\n\nQuill has laid four cases on the repair bench. None is an all-purpose answer. A probe belongs at a reader, a harness under a chair, a desk guide beside a form, and a shroud on a service route.\n\n'One case in this shipment for you,' he says. 'Keep enough for the person on the other end of the job.'\n\nAn unregistered clinic room for Nia costs ninety creds. Staffed recovery for you costs forty-five. Tools can improve a route; they reserve no room and buy no person's consent. You can leave the cases and come back before the week closes.\n\nListen to QuillPlay all dialogue\n\nEnable Sound and voice volume in Settings to listen.\n\nVoice transcript\nYour next move\n\nSelecting an option commits it.\n\nCompare field equipment\n\nOne field kit this week · 0 creds available. Private witness care costs 90; staffed recovery costs 45.\n\nOnly the listed checks receive the bonus. Equipment supplies no evidence, safe room, or consent. Cash benchmarks: room 90 + staffed rest 45 = 135; adding private courier dispatch 15 brings the combined cost to 150. These comparisons reserve nothing; earned rooms and other legal methods remain available.\n\nReview leaving without buying\nArchive Probe · 140 creds\n+2 to scanner inspection, archive index preparation, receipt authentication, and the depot sensor ramp. Works without training this skill.\nCompare current check odds\n\nNeed 140 more creds to buy this kit.\n\nReview Archive Probe purchase\n\nNeed 140 creds\n\n1Buy the Archive Probe.Need 140 creds\nChair Harness · 120 creds\n+2 to chair preparation, physical witness transfer, archive hatch preparation, physical ledger inspection, carrying sealed clinic cards, the shelter valve, and carrying Kerr’s case. A braced chair permits a no-roll transfer; Steady hands avoids its added strain. Your practiced skill has its own methods.\nHow the Chair Harness fits your training\nCompare current check odds\n\nNeed 120 more creds to buy this kit.\n\nReview Chair Harness purchase\n\nNeed 120 creds\n\n2Buy the Chair Harness.Need 120 creds\nClinic Desk Guide · 100 creds\n+2 to arranging a volunteer escort, negotiating a checkpoint transfer, private clinic dispatch, and the depot counter. It supplies procedure, not a forged signature. Works without training this skill.\nCompare current check odds\n\nNeed 100 more creds to buy this kit.\n\nReview Clinic Desk Guide purchase\n\nNeed 100 creds\n\n3Buy the Clinic Desk Guide.Need 100 creds\nRoute Shroud · 140 creds\n+2 to patrol scouting, service-hatch witness transfer, archive interval preparation, carbon retrieval, and the depot patrol gap. Works without training this skill.\nCompare current check odds\n\nNeed 140 more creds to buy this kit.\n\nReview Route Shroud purchase\n\nNeed 140 creds\n\n4Buy the Route Shroud.Need 140 creds\n5Keep the care budget. Return to the district board.\n\n Next step Compare one kit against the money needed for care. Tools improve specific checks, not base stats.\n\nMemory commitments · 0/1 complete · 1 open\n\nSelecting an option commits it. For a check, review the odds and costs first; Back leaves it unrolled.\n\nReview unavailable approaches (4)",
+        "actions": [
+          {
+            "id": "choice-buy-archive-probe",
+            "text": "1Buy the Archive Probe.Need 140 creds",
+            "disabled": true,
+            "gap": 761.609375,
+            "height": 276.125
+          },
+          {
+            "id": "choice-buy-chair-harness",
+            "text": "2Buy the Chair Harness.Need 120 creds",
+            "disabled": true,
+            "gap": 1393.109375,
+            "height": 278.328125
+          },
+          {
+            "id": "choice-buy-desk-guide",
+            "text": "3Buy the Clinic Desk Guide.Need 100 creds",
+            "disabled": true,
+            "gap": 1954.8125,
+            "height": 283
+          },
+          {
+            "id": "choice-buy-route-shroud",
+            "text": "4Buy the Route Shroud.Need 140 creds",
+            "disabled": true,
+            "gap": 2503.1875,
+            "height": 275.390625
+          },
+          {
+            "id": "choice-leave-workshop",
+            "text": "5Keep the care budget. Return to the district board.",
+            "disabled": false,
+            "gap": 2800.96875,
+            "height": 327
+          }
+        ],
+        "typography": [
+          {
+            "text": "District repair bench · The Week",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "The week wants a buyer or a witness.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "District repair bench · The Week. The week wants a buyer or a witness.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "The broker",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Loaded Autosave — The Week · District repair bench",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Quill has laid four cases on the repair bench. None is an all-purpose answer. A probe belongs at a reader, a harness under a chair, a desk guide beside a form, and a shroud on a service route.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "'One case in this shipment for you,' he says. 'Keep enough for the person on the other end of the job.'",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "An unregistered clinic room for Nia costs ninety creds. Staffed recovery for you costs forty-five. Tools can improve a route; they reserve no room and buy no person's consent. You can leave the cases and come back before the week closes.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Listen to Quill",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Play all dialogue",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Enable Sound and voice volume in Settings to listen.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Voice transcript",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Your next move",
+            "tag": "H2",
+            "font": "24px",
+            "line": "normal"
+          },
+          {
+            "text": "Selecting an option commits it.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Compare field equipment",
+            "tag": "H2",
+            "font": "24px",
+            "line": "normal"
+          },
+          {
+            "text": "One field kit this week · 0 creds available. Private witness care costs 90; staffed recovery costs 45.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Only the listed checks receive the bonus. Equipment supplies no evidence, safe room, or consent. Cash benchmarks: room 90 + staffed rest 45 = 135; adding private courier dispatch 15 brings the combined cost to 150. These comparisons reserve nothing; earned rooms and other legal methods remain available.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Archive Probe · 140 creds",
+            "tag": "DT",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Compare current check odds",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Need 140 more creds to buy this kit.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Review Archive Probe purchase",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Need 140 creds",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "1Buy the Archive Probe.Need 140 creds",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Chair Harness · 120 creds",
+            "tag": "DT",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "How the Chair Harness fits your training",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Compare current check odds",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Need 120 more creds to buy this kit.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Review Chair Harness purchase",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Need 120 creds",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "2Buy the Chair Harness.Need 120 creds",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Clinic Desk Guide · 100 creds",
+            "tag": "DT",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Compare current check odds",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Need 100 more creds to buy this kit.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Review Clinic Desk Guide purchase",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Need 100 creds",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "3Buy the Clinic Desk Guide.Need 100 creds",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Route Shroud · 140 creds",
+            "tag": "DT",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Compare current check odds",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Need 140 more creds to buy this kit.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Review Route Shroud purchase",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Need 140 creds",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "4Buy the Route Shroud.Need 140 creds",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "5Keep the care budget. Return to the district board.",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": " Next step Compare one kit against the money needed for care. Tools improve specific checks, not base stats.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Memory commitments · 0/1 complete · 1 open",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Selecting an option commits it. For a check, review the odds and costs first; Back leaves it unrolled.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Review unavailable approaches (4)",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          }
+        ],
+        "controls": [
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "text": "Listen to Quill",
+            "disabled": true
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "text": "Play all dialogue",
+            "disabled": true
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Voice transcript",
+            "disabled": false
+          },
+          {
+            "tag": "SELECT",
+            "id": "_r_0_",
+            "text": "",
+            "disabled": false
+          },
+          {
+            "tag": "A",
+            "id": "review-workshop-exit",
+            "text": "Review leaving without buying",
+            "disabled": false
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Compare current check odds",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "review-purchase-archive-probe",
+            "text": "Review Archive Probe purchase",
+            "disabled": true
+          },
+          {
+            "tag": "BUTTON",
+            "id": "choice-buy-archive-probe",
+            "text": "1Buy the Archive Probe.Need 140 creds",
+            "disabled": true
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "How the Chair Harness fits your training",
+            "disabled": false
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Compare current check odds",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "review-purchase-chair-harness",
+            "text": "Review Chair Harness purchase",
+            "disabled": true
+          },
+          {
+            "tag": "BUTTON",
+            "id": "choice-buy-chair-harness",
+            "text": "2Buy the Chair Harness.Need 120 creds",
+            "disabled": true
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Compare current check odds",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "review-purchase-desk-guide",
+            "text": "Review Clinic Desk Guide purchase",
+            "disabled": true
+          },
+          {
+            "tag": "BUTTON",
+            "id": "choice-buy-desk-guide",
+            "text": "3Buy the Clinic Desk Guide.Need 100 creds",
+            "disabled": true
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Compare current check odds",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "review-purchase-route-shroud",
+            "text": "Review Route Shroud purchase",
+            "disabled": true
+          },
+          {
+            "tag": "BUTTON",
+            "id": "choice-buy-route-shroud",
+            "text": "4Buy the Route Shroud.Need 140 creds",
+            "disabled": true
+          },
+          {
+            "tag": "BUTTON",
+            "id": "choice-leave-workshop",
+            "text": "5Keep the care budget. Return to the district board.",
+            "disabled": false
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Memory commitments · 0/1 complete · 1 open",
+            "disabled": false
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Review unavailable approaches (4)",
+            "disabled": false
+          }
+        ],
+        "reviewExitPx": 486.625,
+        "overflow": false,
+        "pageHeight": 5644
+      }
+    },
+    {
+      "width": 320,
+      "creds": 275,
+      "state": {
+        "version": 2,
+        "handle": "Replay",
+        "givenName": "Ada",
+        "origin": "dustline",
+        "complication": "on-file",
+        "stats": {
+          "chrome": 2,
+          "nerve": 2,
+          "face": 1,
+          "ghost": 5
+        },
+        "factions": {
+          "quill": 3,
+          "lumen": 2,
+          "helion": 4,
+          "wards": 1
+        },
+        "creds": 275,
+        "strain": 1,
+        "items": [
+          "spoof-chip"
+        ],
+        "flags": {
+          "kerr_terms_enabled": true,
+          "mara_account_enabled": true,
+          "witness_returns_enabled": true,
+          "encounter_craft_enabled": true,
+          "emotional_payoffs_enabled": true,
+          "freight_craft_enabled": true,
+          "on_file": true,
+          "opening_identity": true,
+          "opening_neighbor_heard": true,
+          "met_stallholder": true,
+          "opening_complete": true,
+          "met_quill": true,
+          "haggled": true,
+          "hired": true,
+          "quiet": true,
+          "knows_truth": true,
+          "honest": true,
+          "met_lumen": true,
+          "pact_copy": true,
+          "lumen_here": true,
+          "copied": true,
+          "met_mara": true,
+          "heard_memo": true,
+          "memory_signature": true,
+          "memory_order": true,
+          "memory_roster": true,
+          "memory_theory_omitted": true,
+          "memory_reconstructed": true,
+          "memory_prepared": true,
+          "memory_public_claim": true,
+          "memory_intact": true,
+          "kerr_talked": true,
+          "met_kerr": true,
+          "act1_done": true,
+          "act1_both": true,
+          "perk_trained": true,
+          "perk_nerve": true
+        },
+        "journal": [
+          {
+            "id": "quill-agreed-to-ninety-up-front",
+            "text": "Quill agreed to ninety up front."
+          },
+          {
+            "id": "quill-hired-you-to-lift-mara-voss-s-unedited-hou",
+            "text": "Quill hired you to lift Mara Voss's unedited hour from Glass Chapel."
+          },
+          {
+            "id": "the-choir-door-accepted-a-name-you-kept-on-a-chi",
+            "text": "The choir door accepted a name you kept on a chip."
+          },
+          {
+            "id": "ward-nine",
+            "text": "Mara Voss signed the Ward Nine coolant dump. Three hundred people, one memo."
+          },
+          {
+            "id": "shard-copy",
+            "text": "A second copy of Mara's hour exists."
+          },
+          {
+            "id": "memory-signature",
+            "text": "Mara authorizes the flush. She says the tower promised an evacuation. The signature proves authorization; her explanation still needs corroboration.",
+            "kind": "claim"
+          },
+          {
+            "id": "memory-order",
+            "text": "The exported receipt records an instruction canceling evacuation while retaining the flush. Its contents are visible; the issuing key still needs independent verification during The Week.",
+            "kind": "fact"
+          },
+          {
+            "id": "memory-roster",
+            "text": "Ivo Pell and Junie Calder were on shift. Nia Pell signed the housing slip and reached a service exit. She can corroborate the receipt, but a public roster would expose where she sleeps.",
+            "kind": "fact"
+          },
+          {
+            "id": "memory-analysis",
+            "text": "The signature and the later evacuation cancellation are separate decisions. Mara's prior knowledge and the receipt's issuer remain questions, not acquittals.",
+            "kind": "claim"
+          },
+          {
+            "id": "public-packet",
+            "text": "The packet accuses Helion of canceling evacuation before the issuing key is authenticated. The allegation is not independent proof.",
+            "kind": "claim"
+          },
+          {
+            "id": "archive-promise",
+            "text": "Trace the tower receipt to corroborate Mara's hour.",
+            "kind": "promise"
+          }
+        ],
+        "chapters": [
+          "Two Fires"
+        ],
+        "rolls": [
+          {
+            "label": "Walk past Kerr",
+            "roll": 8,
+            "total": 12,
+            "dc": 8,
+            "success": true
+          },
+          {
+            "label": "Copy the hour",
+            "roll": 8,
+            "total": 11,
+            "dc": 10,
+            "success": true
+          },
+          {
+            "label": "Spoof the choir door",
+            "roll": 8,
+            "total": 10,
+            "dc": 8,
+            "success": true
+          },
+          {
+            "label": "Push Quill",
+            "roll": 8,
+            "total": 9,
+            "dc": 8,
+            "success": true
+          }
+        ],
+        "log": [
+          "Spoof the choir door.",
+          "Speak the pad's old language.",
+          "Enough. Find the nurse.",
+          "Quill sent me for the Voss shard.",
+          "I'll copy it. You get the leak. I get paid.",
+          "Copy it, then take the original.",
+          "Keep the hour.",
+          "Open the hour on the memory bench.",
+          "Inspect the signature.",
+          "Inspect the counter-order.",
+          "Inspect the living witness.",
+          "Compare the signature with the later order.",
+          "Her signature is enough. Leave the counter-order out.",
+          "Keep both decisions. Mark what remains unknown.",
+          "Accuse Helion publicly before authenticating the key.",
+          "Preserve the complete archive.",
+          "Convince him to let you walk.",
+          "Quill gets the original. The copy gets out.",
+          "The week after.",
+          "Walk out into the week.",
+          "Learn one thing from the night.",
+          "Steady hands",
+          "Read the board.",
+          "Compare field equipment at the repair bench."
+        ],
+        "sceneId": "act2_workshop"
+      },
+      "metrics": {
+        "text": "QuillThe broker\n\nDistrict repair bench · The Week\n\nDistrict repair bench · The Week\n\nThe week wants a buyer or a witness.\n\nDistrict repair bench · The Week. The week wants a buyer or a witness.\n\nThe broker\n\nLoaded Autosave — The Week · District repair bench\n\nQuill has laid four cases on the repair bench. None is an all-purpose answer. A probe belongs at a reader, a harness under a chair, a desk guide beside a form, and a shroud on a service route.\n\n'One case in this shipment for you,' he says. 'Keep enough for the person on the other end of the job.'\n\nAn unregistered clinic room for Nia costs ninety creds. Staffed recovery for you costs forty-five. Tools can improve a route; they reserve no room and buy no person's consent. You can leave the cases and come back before the week closes.\n\nListen to QuillPlay all dialogue\n\nEnable Sound and voice volume in Settings to listen.\n\nVoice transcript\nYour next move\n\nSelecting an option commits it.\n\nCompare field equipment\n\nOne field kit this week · 275 creds available. Private witness care costs 90; staffed recovery costs 45.\n\nOnly the listed checks receive the bonus. Equipment supplies no evidence, safe room, or consent. Cash benchmarks: room 90 + staffed rest 45 = 135; adding private courier dispatch 15 brings the combined cost to 150. These comparisons reserve nothing; earned rooms and other legal methods remain available.\n\nFind the purchase choice and review it. No money is spent until you select that choice.\n\nReview leaving without buying\nArchive Probe · 140 creds\nWorks without training this skill.\nCompare current check odds\n\nAfter purchase: 135 creds. Enough cash remains for a room and staffed rest. Adding a private courier would need 15 more.\n\nReview Archive Probe purchase\n1Buy the Archive Probe. Details140 creds. +2 to scanner inspection, archive index preparation, receipt authentication, and the depot sensor ramp. One field kit this week; it stays in your inventory. Changes-140 cr · Gain Archive Probe\nChair Harness · 120 creds\nYour practiced skill has its own methods.\nHow the Chair Harness fits your training\nCompare current check odds\n\nAfter purchase: 155 creds. Enough cash remains for a room and staffed rest. A private courier also fits that combined budget.\n\nReview Chair Harness purchase\n2Buy the Chair Harness. Details120 creds. +2 to chair preparation, physical witness transfer, archive hatch preparation, physical ledger inspection, carrying sealed clinic cards, the shelter valve, and carrying Kerr’s case. A braced chair permits a no-roll transfer; Steady hands avoids its added strain. One field kit this week; it stays in your inventory. Changes-120 cr · Gain Chair Harness\nClinic Desk Guide · 100 creds\nWorks without training this skill.\nCompare current check odds\n\nAfter purchase: 175 creds. Enough cash remains for a room and staffed rest. A private courier also fits that combined budget.\n\nReview Clinic Desk Guide purchase\n3Buy the Clinic Desk Guide. Details100 creds. +2 to arranging a volunteer escort, negotiating a checkpoint transfer, private clinic dispatch, and the depot counter. It supplies procedure, not a forged signature. One field kit this week; it stays in your inventory. Changes-100 cr · Gain Clinic Desk Guide\nRoute Shroud · 140 creds\nWorks without training this skill.\nCompare current check odds\n\nAfter purchase: 135 creds. Enough cash remains for a room and staffed rest. Adding a private courier would need 15 more.\n\nReview Route Shroud purchase\n4Buy the Route Shroud. Details140 creds. +2 to patrol scouting, service-hatch witness transfer, archive interval preparation, carbon retrieval, and the depot patrol gap. One field kit this week; it stays in your inventory. Changes-140 cr · Gain Route Shroud\n5Keep the care budget. Return to the district board.\n\n Next step Compare one kit against the money needed for care. Tools improve specific checks, not base stats.\n\nMemory commitments · 0/1 complete · 1 open\n\nSelecting an option commits it. For a check, review the odds and costs first; Back leaves it unrolled.",
+        "actions": [
+          {
+            "id": "choice-buy-archive-probe",
+            "text": "1Buy the Archive Probe. Details140 creds. +2 to scanner inspection, archive index preparation, receipt authentication, and the depot sensor ramp. One field kit this week; it stays in your inventory. Changes-140 cr · Gain Archive Probe",
+            "disabled": false,
+            "gap": 769.203125,
+            "height": 358
+          },
+          {
+            "id": "choice-buy-chair-harness",
+            "text": "2Buy the Chair Harness. Details120 creds. +2 to chair preparation, physical witness transfer, archive hatch preparation, physical ledger inspection, carrying sealed clinic cards, the shelter valve, and carrying Kerr’s case. A braced chair permits a no-roll transfer; Steady hands avoids its added strain. One field kit this week; it stays in your inventory. Changes-120 cr · Gain Chair Harness",
+            "disabled": false,
+            "gap": 1366.171875,
+            "height": 418
+          },
+          {
+            "id": "choice-buy-desk-guide",
+            "text": "3Buy the Clinic Desk Guide. Details100 creds. +2 to arranging a volunteer escort, negotiating a checkpoint transfer, private clinic dispatch, and the depot counter. It supplies procedure, not a forged signature. One field kit this week; it stays in your inventory. Changes-100 cr · Gain Clinic Desk Guide",
+            "disabled": false,
+            "gap": 1987.140625,
+            "height": 388
+          },
+          {
+            "id": "choice-buy-route-shroud",
+            "text": "4Buy the Route Shroud. Details140 creds. +2 to patrol scouting, service-hatch witness transfer, archive interval preparation, carbon retrieval, and the depot patrol gap. One field kit this week; it stays in your inventory. Changes-140 cr · Gain Route Shroud",
+            "disabled": false,
+            "gap": 2578.109375,
+            "height": 358
+          },
+          {
+            "id": "choice-leave-workshop",
+            "text": "5Keep the care budget. Return to the district board.",
+            "disabled": false,
+            "gap": 2958.5,
+            "height": 327
+          }
+        ],
+        "typography": [
+          {
+            "text": "District repair bench · The Week",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "The week wants a buyer or a witness.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "District repair bench · The Week. The week wants a buyer or a witness.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "The broker",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Loaded Autosave — The Week · District repair bench",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Quill has laid four cases on the repair bench. None is an all-purpose answer. A probe belongs at a reader, a harness under a chair, a desk guide beside a form, and a shroud on a service route.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "'One case in this shipment for you,' he says. 'Keep enough for the person on the other end of the job.'",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "An unregistered clinic room for Nia costs ninety creds. Staffed recovery for you costs forty-five. Tools can improve a route; they reserve no room and buy no person's consent. You can leave the cases and come back before the week closes.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Listen to Quill",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Play all dialogue",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Enable Sound and voice volume in Settings to listen.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Voice transcript",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Your next move",
+            "tag": "H2",
+            "font": "24px",
+            "line": "normal"
+          },
+          {
+            "text": "Selecting an option commits it.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Compare field equipment",
+            "tag": "H2",
+            "font": "24px",
+            "line": "normal"
+          },
+          {
+            "text": "One field kit this week · 275 creds available. Private witness care costs 90; staffed recovery costs 45.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Only the listed checks receive the bonus. Equipment supplies no evidence, safe room, or consent. Cash benchmarks: room 90 + staffed rest 45 = 135; adding private courier dispatch 15 brings the combined cost to 150. These comparisons reserve nothing; earned rooms and other legal methods remain available.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Find the purchase choice and review it. No money is spent until you select that choice.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Archive Probe · 140 creds",
+            "tag": "DT",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Compare current check odds",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "After purchase: 135 creds. Enough cash remains for a room and staffed rest. Adding a private courier would need 15 more.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Review Archive Probe purchase",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "1Buy the Archive Probe. Details140 creds. +2 to scanner inspection, archive index preparation, receipt authentication, and the depot sensor ramp. One field kit this week; it stays in your inventory. Changes-140 cr · Gain Archive Probe",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Chair Harness · 120 creds",
+            "tag": "DT",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "How the Chair Harness fits your training",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Compare current check odds",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "After purchase: 155 creds. Enough cash remains for a room and staffed rest. A private courier also fits that combined budget.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Review Chair Harness purchase",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "2Buy the Chair Harness. Details120 creds. +2 to chair preparation, physical witness transfer, archive hatch preparation, physical ledger inspection, carrying sealed clinic cards, the shelter valve, and carrying Kerr’s case. A braced chair permits a no-roll transfer; Steady hands avoids its added strain. One field kit this week; it stays in your inventory. Changes-120 cr · Gain Chair Harness",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Clinic Desk Guide · 100 creds",
+            "tag": "DT",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Compare current check odds",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "After purchase: 175 creds. Enough cash remains for a room and staffed rest. A private courier also fits that combined budget.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Review Clinic Desk Guide purchase",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "3Buy the Clinic Desk Guide. Details100 creds. +2 to arranging a volunteer escort, negotiating a checkpoint transfer, private clinic dispatch, and the depot counter. It supplies procedure, not a forged signature. One field kit this week; it stays in your inventory. Changes-100 cr · Gain Clinic Desk Guide",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Route Shroud · 140 creds",
+            "tag": "DT",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Compare current check odds",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "After purchase: 135 creds. Enough cash remains for a room and staffed rest. Adding a private courier would need 15 more.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Review Route Shroud purchase",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "4Buy the Route Shroud. Details140 creds. +2 to patrol scouting, service-hatch witness transfer, archive interval preparation, carbon retrieval, and the depot patrol gap. One field kit this week; it stays in your inventory. Changes-140 cr · Gain Route Shroud",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "5Keep the care budget. Return to the district board.",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": " Next step Compare one kit against the money needed for care. Tools improve specific checks, not base stats.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Memory commitments · 0/1 complete · 1 open",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Selecting an option commits it. For a check, review the odds and costs first; Back leaves it unrolled.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          }
+        ],
+        "controls": [
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "text": "Listen to Quill",
+            "disabled": true
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "text": "Play all dialogue",
+            "disabled": true
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Voice transcript",
+            "disabled": false
+          },
+          {
+            "tag": "SELECT",
+            "id": "_r_0_",
+            "text": "",
+            "disabled": false
+          },
+          {
+            "tag": "A",
+            "id": "review-workshop-exit",
+            "text": "Review leaving without buying",
+            "disabled": false
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Compare current check odds",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "review-purchase-archive-probe",
+            "text": "Review Archive Probe purchase",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "choice-buy-archive-probe",
+            "text": "1Buy the Archive Probe. Details140 creds. +2 to scanner inspection, archive index preparation, receipt authentication, and the depot sensor ramp. One field kit this week; it stays in your inventory. Changes-140 cr · Gain Archive Probe",
+            "disabled": false
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "How the Chair Harness fits your training",
+            "disabled": false
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Compare current check odds",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "review-purchase-chair-harness",
+            "text": "Review Chair Harness purchase",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "choice-buy-chair-harness",
+            "text": "2Buy the Chair Harness. Details120 creds. +2 to chair preparation, physical witness transfer, archive hatch preparation, physical ledger inspection, carrying sealed clinic cards, the shelter valve, and carrying Kerr’s case. A braced chair permits a no-roll transfer; Steady hands avoids its added strain. One field kit this week; it stays in your inventory. Changes-120 cr · Gain Chair Harness",
+            "disabled": false
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Compare current check odds",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "review-purchase-desk-guide",
+            "text": "Review Clinic Desk Guide purchase",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "choice-buy-desk-guide",
+            "text": "3Buy the Clinic Desk Guide. Details100 creds. +2 to arranging a volunteer escort, negotiating a checkpoint transfer, private clinic dispatch, and the depot counter. It supplies procedure, not a forged signature. One field kit this week; it stays in your inventory. Changes-100 cr · Gain Clinic Desk Guide",
+            "disabled": false
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Compare current check odds",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "review-purchase-route-shroud",
+            "text": "Review Route Shroud purchase",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "choice-buy-route-shroud",
+            "text": "4Buy the Route Shroud. Details140 creds. +2 to patrol scouting, service-hatch witness transfer, archive interval preparation, carbon retrieval, and the depot patrol gap. One field kit this week; it stays in your inventory. Changes-140 cr · Gain Route Shroud",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "choice-leave-workshop",
+            "text": "5Keep the care budget. Return to the district board.",
+            "disabled": false
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Memory commitments · 0/1 complete · 1 open",
+            "disabled": false
+          }
+        ],
+        "reviewExitPx": 538.625,
+        "overflow": false,
+        "pageHeight": 5775
+      }
+    },
+    {
+      "width": 390,
+      "creds": 0,
+      "state": {
+        "version": 2,
+        "handle": "Replay",
+        "givenName": "Ada",
+        "origin": "dustline",
+        "complication": "on-file",
+        "stats": {
+          "chrome": 2,
+          "nerve": 2,
+          "face": 1,
+          "ghost": 5
+        },
+        "factions": {
+          "quill": 3,
+          "lumen": 2,
+          "helion": 4,
+          "wards": 1
+        },
+        "creds": 0,
+        "strain": 1,
+        "items": [
+          "spoof-chip"
+        ],
+        "flags": {
+          "kerr_terms_enabled": true,
+          "mara_account_enabled": true,
+          "witness_returns_enabled": true,
+          "encounter_craft_enabled": true,
+          "emotional_payoffs_enabled": true,
+          "freight_craft_enabled": true,
+          "on_file": true,
+          "opening_identity": true,
+          "opening_neighbor_heard": true,
+          "met_stallholder": true,
+          "opening_complete": true,
+          "met_quill": true,
+          "haggled": true,
+          "hired": true,
+          "quiet": true,
+          "knows_truth": true,
+          "honest": true,
+          "met_lumen": true,
+          "pact_copy": true,
+          "lumen_here": true,
+          "copied": true,
+          "met_mara": true,
+          "heard_memo": true,
+          "memory_signature": true,
+          "memory_order": true,
+          "memory_roster": true,
+          "memory_theory_omitted": true,
+          "memory_reconstructed": true,
+          "memory_prepared": true,
+          "memory_public_claim": true,
+          "memory_intact": true,
+          "kerr_talked": true,
+          "met_kerr": true,
+          "act1_done": true,
+          "act1_both": true,
+          "perk_trained": true,
+          "perk_nerve": true
+        },
+        "journal": [
+          {
+            "id": "quill-agreed-to-ninety-up-front",
+            "text": "Quill agreed to ninety up front."
+          },
+          {
+            "id": "quill-hired-you-to-lift-mara-voss-s-unedited-hou",
+            "text": "Quill hired you to lift Mara Voss's unedited hour from Glass Chapel."
+          },
+          {
+            "id": "the-choir-door-accepted-a-name-you-kept-on-a-chi",
+            "text": "The choir door accepted a name you kept on a chip."
+          },
+          {
+            "id": "ward-nine",
+            "text": "Mara Voss signed the Ward Nine coolant dump. Three hundred people, one memo."
+          },
+          {
+            "id": "shard-copy",
+            "text": "A second copy of Mara's hour exists."
+          },
+          {
+            "id": "memory-signature",
+            "text": "Mara authorizes the flush. She says the tower promised an evacuation. The signature proves authorization; her explanation still needs corroboration.",
+            "kind": "claim"
+          },
+          {
+            "id": "memory-order",
+            "text": "The exported receipt records an instruction canceling evacuation while retaining the flush. Its contents are visible; the issuing key still needs independent verification during The Week.",
+            "kind": "fact"
+          },
+          {
+            "id": "memory-roster",
+            "text": "Ivo Pell and Junie Calder were on shift. Nia Pell signed the housing slip and reached a service exit. She can corroborate the receipt, but a public roster would expose where she sleeps.",
+            "kind": "fact"
+          },
+          {
+            "id": "memory-analysis",
+            "text": "The signature and the later evacuation cancellation are separate decisions. Mara's prior knowledge and the receipt's issuer remain questions, not acquittals.",
+            "kind": "claim"
+          },
+          {
+            "id": "public-packet",
+            "text": "The packet accuses Helion of canceling evacuation before the issuing key is authenticated. The allegation is not independent proof.",
+            "kind": "claim"
+          },
+          {
+            "id": "archive-promise",
+            "text": "Trace the tower receipt to corroborate Mara's hour.",
+            "kind": "promise"
+          }
+        ],
+        "chapters": [
+          "Two Fires"
+        ],
+        "rolls": [
+          {
+            "label": "Walk past Kerr",
+            "roll": 8,
+            "total": 12,
+            "dc": 8,
+            "success": true
+          },
+          {
+            "label": "Copy the hour",
+            "roll": 8,
+            "total": 11,
+            "dc": 10,
+            "success": true
+          },
+          {
+            "label": "Spoof the choir door",
+            "roll": 8,
+            "total": 10,
+            "dc": 8,
+            "success": true
+          },
+          {
+            "label": "Push Quill",
+            "roll": 8,
+            "total": 9,
+            "dc": 8,
+            "success": true
+          }
+        ],
+        "log": [
+          "Spoof the choir door.",
+          "Speak the pad's old language.",
+          "Enough. Find the nurse.",
+          "Quill sent me for the Voss shard.",
+          "I'll copy it. You get the leak. I get paid.",
+          "Copy it, then take the original.",
+          "Keep the hour.",
+          "Open the hour on the memory bench.",
+          "Inspect the signature.",
+          "Inspect the counter-order.",
+          "Inspect the living witness.",
+          "Compare the signature with the later order.",
+          "Her signature is enough. Leave the counter-order out.",
+          "Keep both decisions. Mark what remains unknown.",
+          "Accuse Helion publicly before authenticating the key.",
+          "Preserve the complete archive.",
+          "Convince him to let you walk.",
+          "Quill gets the original. The copy gets out.",
+          "The week after.",
+          "Walk out into the week.",
+          "Learn one thing from the night.",
+          "Steady hands",
+          "Read the board.",
+          "Compare field equipment at the repair bench."
+        ],
+        "sceneId": "act2_workshop"
+      },
+      "metrics": {
+        "text": "QuillThe broker\n\nDistrict repair bench · The Week\n\nDistrict repair bench · The Week\n\nThe week wants a buyer or a witness.\n\nDistrict repair bench · The Week. The week wants a buyer or a witness.\n\nThe broker\n\nLoaded Autosave — The Week · District repair bench\n\nQuill has laid four cases on the repair bench. None is an all-purpose answer. A probe belongs at a reader, a harness under a chair, a desk guide beside a form, and a shroud on a service route.\n\n'One case in this shipment for you,' he says. 'Keep enough for the person on the other end of the job.'\n\nAn unregistered clinic room for Nia costs ninety creds. Staffed recovery for you costs forty-five. Tools can improve a route; they reserve no room and buy no person's consent. You can leave the cases and come back before the week closes.\n\nListen to QuillPlay all dialogue\n\nEnable Sound and voice volume in Settings to listen.\n\nVoice transcript\nYour next move\n\nSelecting an option commits it.\n\nCompare field equipment\n\nOne field kit this week · 0 creds available. Private witness care costs 90; staffed recovery costs 45.\n\nOnly the listed checks receive the bonus. Equipment supplies no evidence, safe room, or consent. Cash benchmarks: room 90 + staffed rest 45 = 135; adding private courier dispatch 15 brings the combined cost to 150. These comparisons reserve nothing; earned rooms and other legal methods remain available.\n\nReview leaving without buying\nArchive Probe · 140 creds\n+2 to scanner inspection, archive index preparation, receipt authentication, and the depot sensor ramp. Works without training this skill.\nCompare current check odds\n\nNeed 140 more creds to buy this kit.\n\nReview Archive Probe purchase\n\nNeed 140 creds\n\n1Buy the Archive Probe.Need 140 creds\nChair Harness · 120 creds\n+2 to chair preparation, physical witness transfer, archive hatch preparation, physical ledger inspection, carrying sealed clinic cards, the shelter valve, and carrying Kerr’s case. A braced chair permits a no-roll transfer; Steady hands avoids its added strain. Your practiced skill has its own methods.\nHow the Chair Harness fits your training\nCompare current check odds\n\nNeed 120 more creds to buy this kit.\n\nReview Chair Harness purchase\n\nNeed 120 creds\n\n2Buy the Chair Harness.Need 120 creds\nClinic Desk Guide · 100 creds\n+2 to arranging a volunteer escort, negotiating a checkpoint transfer, private clinic dispatch, and the depot counter. It supplies procedure, not a forged signature. Works without training this skill.\nCompare current check odds\n\nNeed 100 more creds to buy this kit.\n\nReview Clinic Desk Guide purchase\n\nNeed 100 creds\n\n3Buy the Clinic Desk Guide.Need 100 creds\nRoute Shroud · 140 creds\n+2 to patrol scouting, service-hatch witness transfer, archive interval preparation, carbon retrieval, and the depot patrol gap. Works without training this skill.\nCompare current check odds\n\nNeed 140 more creds to buy this kit.\n\nReview Route Shroud purchase\n\nNeed 140 creds\n\n4Buy the Route Shroud.Need 140 creds\n5Keep the care budget. Return to the district board.\n\n Next step Compare one kit against the money needed for care. Tools improve specific checks, not base stats.\n\nMemory commitments · 0/1 complete · 1 open\n\nSelecting an option commits it. For a check, review the odds and costs first; Back leaves it unrolled.\n\nReview unavailable approaches (4)",
+        "actions": [
+          {
+            "id": "choice-buy-archive-probe",
+            "text": "1Buy the Archive Probe.Need 140 creds",
+            "disabled": true,
+            "gap": 689.609375,
+            "height": 276.125
+          },
+          {
+            "id": "choice-buy-chair-harness",
+            "text": "2Buy the Chair Harness.Need 120 creds",
+            "disabled": true,
+            "gap": 1285.109375,
+            "height": 278.328125
+          },
+          {
+            "id": "choice-buy-desk-guide",
+            "text": "3Buy the Clinic Desk Guide.Need 100 creds",
+            "disabled": true,
+            "gap": 1810.8125,
+            "height": 299.0625
+          },
+          {
+            "id": "choice-buy-route-shroud",
+            "text": "4Buy the Route Shroud.Need 140 creds",
+            "disabled": true,
+            "gap": 2357.25,
+            "height": 275.390625
+          },
+          {
+            "id": "choice-leave-workshop",
+            "text": "5Keep the care budget. Return to the district board.",
+            "disabled": false,
+            "gap": 2655.03125,
+            "height": 327.046875
+          }
+        ],
+        "typography": [
+          {
+            "text": "District repair bench · The Week",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "The week wants a buyer or a witness.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "District repair bench · The Week. The week wants a buyer or a witness.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "The broker",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Loaded Autosave — The Week · District repair bench",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Quill has laid four cases on the repair bench. None is an all-purpose answer. A probe belongs at a reader, a harness under a chair, a desk guide beside a form, and a shroud on a service route.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "'One case in this shipment for you,' he says. 'Keep enough for the person on the other end of the job.'",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "An unregistered clinic room for Nia costs ninety creds. Staffed recovery for you costs forty-five. Tools can improve a route; they reserve no room and buy no person's consent. You can leave the cases and come back before the week closes.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Listen to Quill",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Play all dialogue",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Enable Sound and voice volume in Settings to listen.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Voice transcript",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Your next move",
+            "tag": "H2",
+            "font": "24px",
+            "line": "normal"
+          },
+          {
+            "text": "Selecting an option commits it.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Compare field equipment",
+            "tag": "H2",
+            "font": "24px",
+            "line": "normal"
+          },
+          {
+            "text": "One field kit this week · 0 creds available. Private witness care costs 90; staffed recovery costs 45.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Only the listed checks receive the bonus. Equipment supplies no evidence, safe room, or consent. Cash benchmarks: room 90 + staffed rest 45 = 135; adding private courier dispatch 15 brings the combined cost to 150. These comparisons reserve nothing; earned rooms and other legal methods remain available.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Archive Probe · 140 creds",
+            "tag": "DT",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Compare current check odds",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Need 140 more creds to buy this kit.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Review Archive Probe purchase",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Need 140 creds",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "1Buy the Archive Probe.Need 140 creds",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Chair Harness · 120 creds",
+            "tag": "DT",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "How the Chair Harness fits your training",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Compare current check odds",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Need 120 more creds to buy this kit.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Review Chair Harness purchase",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Need 120 creds",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "2Buy the Chair Harness.Need 120 creds",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Clinic Desk Guide · 100 creds",
+            "tag": "DT",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Compare current check odds",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Need 100 more creds to buy this kit.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Review Clinic Desk Guide purchase",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Need 100 creds",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "3Buy the Clinic Desk Guide.Need 100 creds",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Route Shroud · 140 creds",
+            "tag": "DT",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Compare current check odds",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Need 140 more creds to buy this kit.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Review Route Shroud purchase",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Need 140 creds",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "4Buy the Route Shroud.Need 140 creds",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "5Keep the care budget. Return to the district board.",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": " Next step Compare one kit against the money needed for care. Tools improve specific checks, not base stats.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Memory commitments · 0/1 complete · 1 open",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Selecting an option commits it. For a check, review the odds and costs first; Back leaves it unrolled.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Review unavailable approaches (4)",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          }
+        ],
+        "controls": [
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "text": "Listen to Quill",
+            "disabled": true
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "text": "Play all dialogue",
+            "disabled": true
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Voice transcript",
+            "disabled": false
+          },
+          {
+            "tag": "SELECT",
+            "id": "_r_0_",
+            "text": "",
+            "disabled": false
+          },
+          {
+            "tag": "A",
+            "id": "review-workshop-exit",
+            "text": "Review leaving without buying",
+            "disabled": false
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Compare current check odds",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "review-purchase-archive-probe",
+            "text": "Review Archive Probe purchase",
+            "disabled": true
+          },
+          {
+            "tag": "BUTTON",
+            "id": "choice-buy-archive-probe",
+            "text": "1Buy the Archive Probe.Need 140 creds",
+            "disabled": true
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "How the Chair Harness fits your training",
+            "disabled": false
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Compare current check odds",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "review-purchase-chair-harness",
+            "text": "Review Chair Harness purchase",
+            "disabled": true
+          },
+          {
+            "tag": "BUTTON",
+            "id": "choice-buy-chair-harness",
+            "text": "2Buy the Chair Harness.Need 120 creds",
+            "disabled": true
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Compare current check odds",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "review-purchase-desk-guide",
+            "text": "Review Clinic Desk Guide purchase",
+            "disabled": true
+          },
+          {
+            "tag": "BUTTON",
+            "id": "choice-buy-desk-guide",
+            "text": "3Buy the Clinic Desk Guide.Need 100 creds",
+            "disabled": true
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Compare current check odds",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "review-purchase-route-shroud",
+            "text": "Review Route Shroud purchase",
+            "disabled": true
+          },
+          {
+            "tag": "BUTTON",
+            "id": "choice-buy-route-shroud",
+            "text": "4Buy the Route Shroud.Need 140 creds",
+            "disabled": true
+          },
+          {
+            "tag": "BUTTON",
+            "id": "choice-leave-workshop",
+            "text": "5Keep the care budget. Return to the district board.",
+            "disabled": false
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Memory commitments · 0/1 complete · 1 open",
+            "disabled": false
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Review unavailable approaches (4)",
+            "disabled": false
+          }
+        ],
+        "reviewExitPx": 432.625,
+        "overflow": false,
+        "pageHeight": 5722
+      }
+    },
+    {
+      "width": 390,
+      "creds": 275,
+      "state": {
+        "version": 2,
+        "handle": "Replay",
+        "givenName": "Ada",
+        "origin": "dustline",
+        "complication": "on-file",
+        "stats": {
+          "chrome": 2,
+          "nerve": 2,
+          "face": 1,
+          "ghost": 5
+        },
+        "factions": {
+          "quill": 3,
+          "lumen": 2,
+          "helion": 4,
+          "wards": 1
+        },
+        "creds": 275,
+        "strain": 1,
+        "items": [
+          "spoof-chip"
+        ],
+        "flags": {
+          "kerr_terms_enabled": true,
+          "mara_account_enabled": true,
+          "witness_returns_enabled": true,
+          "encounter_craft_enabled": true,
+          "emotional_payoffs_enabled": true,
+          "freight_craft_enabled": true,
+          "on_file": true,
+          "opening_identity": true,
+          "opening_neighbor_heard": true,
+          "met_stallholder": true,
+          "opening_complete": true,
+          "met_quill": true,
+          "haggled": true,
+          "hired": true,
+          "quiet": true,
+          "knows_truth": true,
+          "honest": true,
+          "met_lumen": true,
+          "pact_copy": true,
+          "lumen_here": true,
+          "copied": true,
+          "met_mara": true,
+          "heard_memo": true,
+          "memory_signature": true,
+          "memory_order": true,
+          "memory_roster": true,
+          "memory_theory_omitted": true,
+          "memory_reconstructed": true,
+          "memory_prepared": true,
+          "memory_public_claim": true,
+          "memory_intact": true,
+          "kerr_talked": true,
+          "met_kerr": true,
+          "act1_done": true,
+          "act1_both": true,
+          "perk_trained": true,
+          "perk_nerve": true
+        },
+        "journal": [
+          {
+            "id": "quill-agreed-to-ninety-up-front",
+            "text": "Quill agreed to ninety up front."
+          },
+          {
+            "id": "quill-hired-you-to-lift-mara-voss-s-unedited-hou",
+            "text": "Quill hired you to lift Mara Voss's unedited hour from Glass Chapel."
+          },
+          {
+            "id": "the-choir-door-accepted-a-name-you-kept-on-a-chi",
+            "text": "The choir door accepted a name you kept on a chip."
+          },
+          {
+            "id": "ward-nine",
+            "text": "Mara Voss signed the Ward Nine coolant dump. Three hundred people, one memo."
+          },
+          {
+            "id": "shard-copy",
+            "text": "A second copy of Mara's hour exists."
+          },
+          {
+            "id": "memory-signature",
+            "text": "Mara authorizes the flush. She says the tower promised an evacuation. The signature proves authorization; her explanation still needs corroboration.",
+            "kind": "claim"
+          },
+          {
+            "id": "memory-order",
+            "text": "The exported receipt records an instruction canceling evacuation while retaining the flush. Its contents are visible; the issuing key still needs independent verification during The Week.",
+            "kind": "fact"
+          },
+          {
+            "id": "memory-roster",
+            "text": "Ivo Pell and Junie Calder were on shift. Nia Pell signed the housing slip and reached a service exit. She can corroborate the receipt, but a public roster would expose where she sleeps.",
+            "kind": "fact"
+          },
+          {
+            "id": "memory-analysis",
+            "text": "The signature and the later evacuation cancellation are separate decisions. Mara's prior knowledge and the receipt's issuer remain questions, not acquittals.",
+            "kind": "claim"
+          },
+          {
+            "id": "public-packet",
+            "text": "The packet accuses Helion of canceling evacuation before the issuing key is authenticated. The allegation is not independent proof.",
+            "kind": "claim"
+          },
+          {
+            "id": "archive-promise",
+            "text": "Trace the tower receipt to corroborate Mara's hour.",
+            "kind": "promise"
+          }
+        ],
+        "chapters": [
+          "Two Fires"
+        ],
+        "rolls": [
+          {
+            "label": "Walk past Kerr",
+            "roll": 8,
+            "total": 12,
+            "dc": 8,
+            "success": true
+          },
+          {
+            "label": "Copy the hour",
+            "roll": 8,
+            "total": 11,
+            "dc": 10,
+            "success": true
+          },
+          {
+            "label": "Spoof the choir door",
+            "roll": 8,
+            "total": 10,
+            "dc": 8,
+            "success": true
+          },
+          {
+            "label": "Push Quill",
+            "roll": 8,
+            "total": 9,
+            "dc": 8,
+            "success": true
+          }
+        ],
+        "log": [
+          "Spoof the choir door.",
+          "Speak the pad's old language.",
+          "Enough. Find the nurse.",
+          "Quill sent me for the Voss shard.",
+          "I'll copy it. You get the leak. I get paid.",
+          "Copy it, then take the original.",
+          "Keep the hour.",
+          "Open the hour on the memory bench.",
+          "Inspect the signature.",
+          "Inspect the counter-order.",
+          "Inspect the living witness.",
+          "Compare the signature with the later order.",
+          "Her signature is enough. Leave the counter-order out.",
+          "Keep both decisions. Mark what remains unknown.",
+          "Accuse Helion publicly before authenticating the key.",
+          "Preserve the complete archive.",
+          "Convince him to let you walk.",
+          "Quill gets the original. The copy gets out.",
+          "The week after.",
+          "Walk out into the week.",
+          "Learn one thing from the night.",
+          "Steady hands",
+          "Read the board.",
+          "Compare field equipment at the repair bench."
+        ],
+        "sceneId": "act2_workshop"
+      },
+      "metrics": {
+        "text": "QuillThe broker\n\nDistrict repair bench · The Week\n\nDistrict repair bench · The Week\n\nThe week wants a buyer or a witness.\n\nDistrict repair bench · The Week. The week wants a buyer or a witness.\n\nThe broker\n\nLoaded Autosave — The Week · District repair bench\n\nQuill has laid four cases on the repair bench. None is an all-purpose answer. A probe belongs at a reader, a harness under a chair, a desk guide beside a form, and a shroud on a service route.\n\n'One case in this shipment for you,' he says. 'Keep enough for the person on the other end of the job.'\n\nAn unregistered clinic room for Nia costs ninety creds. Staffed recovery for you costs forty-five. Tools can improve a route; they reserve no room and buy no person's consent. You can leave the cases and come back before the week closes.\n\nListen to QuillPlay all dialogue\n\nEnable Sound and voice volume in Settings to listen.\n\nVoice transcript\nYour next move\n\nSelecting an option commits it.\n\nCompare field equipment\n\nOne field kit this week · 275 creds available. Private witness care costs 90; staffed recovery costs 45.\n\nOnly the listed checks receive the bonus. Equipment supplies no evidence, safe room, or consent. Cash benchmarks: room 90 + staffed rest 45 = 135; adding private courier dispatch 15 brings the combined cost to 150. These comparisons reserve nothing; earned rooms and other legal methods remain available.\n\nFind the purchase choice and review it. No money is spent until you select that choice.\n\nReview leaving without buying\nArchive Probe · 140 creds\nWorks without training this skill.\nCompare current check odds\n\nAfter purchase: 135 creds. Enough cash remains for a room and staffed rest. Adding a private courier would need 15 more.\n\nReview Archive Probe purchase\n1Buy the Archive Probe. Details140 creds. +2 to scanner inspection, archive index preparation, receipt authentication, and the depot sensor ramp. One field kit this week; it stays in your inventory. Changes-140 cr · Gain Archive Probe\nChair Harness · 120 creds\nYour practiced skill has its own methods.\nHow the Chair Harness fits your training\nCompare current check odds\n\nAfter purchase: 155 creds. Enough cash remains for a room and staffed rest. A private courier also fits that combined budget.\n\nReview Chair Harness purchase\n2Buy the Chair Harness. Details120 creds. +2 to chair preparation, physical witness transfer, archive hatch preparation, physical ledger inspection, carrying sealed clinic cards, the shelter valve, and carrying Kerr’s case. A braced chair permits a no-roll transfer; Steady hands avoids its added strain. One field kit this week; it stays in your inventory. Changes-120 cr · Gain Chair Harness\nClinic Desk Guide · 100 creds\nWorks without training this skill.\nCompare current check odds\n\nAfter purchase: 175 creds. Enough cash remains for a room and staffed rest. A private courier also fits that combined budget.\n\nReview Clinic Desk Guide purchase\n3Buy the Clinic Desk Guide. Details100 creds. +2 to arranging a volunteer escort, negotiating a checkpoint transfer, private clinic dispatch, and the depot counter. It supplies procedure, not a forged signature. One field kit this week; it stays in your inventory. Changes-100 cr · Gain Clinic Desk Guide\nRoute Shroud · 140 creds\nWorks without training this skill.\nCompare current check odds\n\nAfter purchase: 135 creds. Enough cash remains for a room and staffed rest. Adding a private courier would need 15 more.\n\nReview Route Shroud purchase\n4Buy the Route Shroud. Details140 creds. +2 to patrol scouting, service-hatch witness transfer, archive interval preparation, carbon retrieval, and the depot patrol gap. One field kit this week; it stays in your inventory. Changes-140 cr · Gain Route Shroud\n5Keep the care budget. Return to the district board.\n\n Next step Compare one kit against the money needed for care. Tools improve specific checks, not base stats.\n\nMemory commitments · 0/1 complete · 1 open\n\nSelecting an option commits it. For a check, review the odds and costs first; Back leaves it unrolled.",
+        "actions": [
+          {
+            "id": "choice-buy-archive-probe",
+            "text": "1Buy the Archive Probe. Details140 creds. +2 to scanner inspection, archive index preparation, receipt authentication, and the depot sensor ramp. One field kit this week; it stays in your inventory. Changes-140 cr · Gain Archive Probe",
+            "disabled": false,
+            "gap": 697.203125,
+            "height": 398
+          },
+          {
+            "id": "choice-buy-chair-harness",
+            "text": "2Buy the Chair Harness. Details120 creds. +2 to chair preparation, physical witness transfer, archive hatch preparation, physical ledger inspection, carrying sealed clinic cards, the shelter valve, and carrying Kerr’s case. A braced chair permits a no-roll transfer; Steady hands avoids its added strain. One field kit this week; it stays in your inventory. Changes-120 cr · Gain Chair Harness",
+            "disabled": false,
+            "gap": 1298.171875,
+            "height": 443
+          },
+          {
+            "id": "choice-buy-desk-guide",
+            "text": "3Buy the Clinic Desk Guide. Details100 creds. +2 to arranging a volunteer escort, negotiating a checkpoint transfer, private clinic dispatch, and the depot counter. It supplies procedure, not a forged signature. One field kit this week; it stays in your inventory. Changes-100 cr · Gain Clinic Desk Guide",
+            "disabled": false,
+            "gap": 1926.140625,
+            "height": 428
+          },
+          {
+            "id": "choice-buy-route-shroud",
+            "text": "4Buy the Route Shroud. Details140 creds. +2 to patrol scouting, service-hatch witness transfer, archive interval preparation, carbon retrieval, and the depot patrol gap. One field kit this week; it stays in your inventory. Changes-140 cr · Gain Route Shroud",
+            "disabled": false,
+            "gap": 2539.109375,
+            "height": 413
+          },
+          {
+            "id": "choice-leave-workshop",
+            "text": "5Keep the care budget. Return to the district board.",
+            "disabled": false,
+            "gap": 2974.5,
+            "height": 327.046875
+          }
+        ],
+        "typography": [
+          {
+            "text": "District repair bench · The Week",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "The week wants a buyer or a witness.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "District repair bench · The Week. The week wants a buyer or a witness.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "The broker",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Loaded Autosave — The Week · District repair bench",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Quill has laid four cases on the repair bench. None is an all-purpose answer. A probe belongs at a reader, a harness under a chair, a desk guide beside a form, and a shroud on a service route.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "'One case in this shipment for you,' he says. 'Keep enough for the person on the other end of the job.'",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "An unregistered clinic room for Nia costs ninety creds. Staffed recovery for you costs forty-five. Tools can improve a route; they reserve no room and buy no person's consent. You can leave the cases and come back before the week closes.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Listen to Quill",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Play all dialogue",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Enable Sound and voice volume in Settings to listen.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Voice transcript",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Your next move",
+            "tag": "H2",
+            "font": "24px",
+            "line": "normal"
+          },
+          {
+            "text": "Selecting an option commits it.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Compare field equipment",
+            "tag": "H2",
+            "font": "24px",
+            "line": "normal"
+          },
+          {
+            "text": "One field kit this week · 275 creds available. Private witness care costs 90; staffed recovery costs 45.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Only the listed checks receive the bonus. Equipment supplies no evidence, safe room, or consent. Cash benchmarks: room 90 + staffed rest 45 = 135; adding private courier dispatch 15 brings the combined cost to 150. These comparisons reserve nothing; earned rooms and other legal methods remain available.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Find the purchase choice and review it. No money is spent until you select that choice.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Archive Probe · 140 creds",
+            "tag": "DT",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Compare current check odds",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "After purchase: 135 creds. Enough cash remains for a room and staffed rest. Adding a private courier would need 15 more.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Review Archive Probe purchase",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "1Buy the Archive Probe. Details140 creds. +2 to scanner inspection, archive index preparation, receipt authentication, and the depot sensor ramp. One field kit this week; it stays in your inventory. Changes-140 cr · Gain Archive Probe",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Chair Harness · 120 creds",
+            "tag": "DT",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "How the Chair Harness fits your training",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Compare current check odds",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "After purchase: 155 creds. Enough cash remains for a room and staffed rest. A private courier also fits that combined budget.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Review Chair Harness purchase",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "2Buy the Chair Harness. Details120 creds. +2 to chair preparation, physical witness transfer, archive hatch preparation, physical ledger inspection, carrying sealed clinic cards, the shelter valve, and carrying Kerr’s case. A braced chair permits a no-roll transfer; Steady hands avoids its added strain. One field kit this week; it stays in your inventory. Changes-120 cr · Gain Chair Harness",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Clinic Desk Guide · 100 creds",
+            "tag": "DT",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Compare current check odds",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "After purchase: 175 creds. Enough cash remains for a room and staffed rest. A private courier also fits that combined budget.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Review Clinic Desk Guide purchase",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "3Buy the Clinic Desk Guide. Details100 creds. +2 to arranging a volunteer escort, negotiating a checkpoint transfer, private clinic dispatch, and the depot counter. It supplies procedure, not a forged signature. One field kit this week; it stays in your inventory. Changes-100 cr · Gain Clinic Desk Guide",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Route Shroud · 140 creds",
+            "tag": "DT",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Compare current check odds",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "After purchase: 135 creds. Enough cash remains for a room and staffed rest. Adding a private courier would need 15 more.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Review Route Shroud purchase",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "4Buy the Route Shroud. Details140 creds. +2 to patrol scouting, service-hatch witness transfer, archive interval preparation, carbon retrieval, and the depot patrol gap. One field kit this week; it stays in your inventory. Changes-140 cr · Gain Route Shroud",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "5Keep the care budget. Return to the district board.",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": " Next step Compare one kit against the money needed for care. Tools improve specific checks, not base stats.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Memory commitments · 0/1 complete · 1 open",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Selecting an option commits it. For a check, review the odds and costs first; Back leaves it unrolled.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          }
+        ],
+        "controls": [
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "text": "Listen to Quill",
+            "disabled": true
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "text": "Play all dialogue",
+            "disabled": true
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Voice transcript",
+            "disabled": false
+          },
+          {
+            "tag": "SELECT",
+            "id": "_r_0_",
+            "text": "",
+            "disabled": false
+          },
+          {
+            "tag": "A",
+            "id": "review-workshop-exit",
+            "text": "Review leaving without buying",
+            "disabled": false
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Compare current check odds",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "review-purchase-archive-probe",
+            "text": "Review Archive Probe purchase",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "choice-buy-archive-probe",
+            "text": "1Buy the Archive Probe. Details140 creds. +2 to scanner inspection, archive index preparation, receipt authentication, and the depot sensor ramp. One field kit this week; it stays in your inventory. Changes-140 cr · Gain Archive Probe",
+            "disabled": false
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "How the Chair Harness fits your training",
+            "disabled": false
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Compare current check odds",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "review-purchase-chair-harness",
+            "text": "Review Chair Harness purchase",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "choice-buy-chair-harness",
+            "text": "2Buy the Chair Harness. Details120 creds. +2 to chair preparation, physical witness transfer, archive hatch preparation, physical ledger inspection, carrying sealed clinic cards, the shelter valve, and carrying Kerr’s case. A braced chair permits a no-roll transfer; Steady hands avoids its added strain. One field kit this week; it stays in your inventory. Changes-120 cr · Gain Chair Harness",
+            "disabled": false
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Compare current check odds",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "review-purchase-desk-guide",
+            "text": "Review Clinic Desk Guide purchase",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "choice-buy-desk-guide",
+            "text": "3Buy the Clinic Desk Guide. Details100 creds. +2 to arranging a volunteer escort, negotiating a checkpoint transfer, private clinic dispatch, and the depot counter. It supplies procedure, not a forged signature. One field kit this week; it stays in your inventory. Changes-100 cr · Gain Clinic Desk Guide",
+            "disabled": false
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Compare current check odds",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "review-purchase-route-shroud",
+            "text": "Review Route Shroud purchase",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "choice-buy-route-shroud",
+            "text": "4Buy the Route Shroud. Details140 creds. +2 to patrol scouting, service-hatch witness transfer, archive interval preparation, carbon retrieval, and the depot patrol gap. One field kit this week; it stays in your inventory. Changes-140 cr · Gain Route Shroud",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "choice-leave-workshop",
+            "text": "5Keep the care budget. Return to the district board.",
+            "disabled": false
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Memory commitments · 0/1 complete · 1 open",
+            "disabled": false
+          }
+        ],
+        "reviewExitPx": 484.625,
+        "overflow": false,
+        "pageHeight": 6015
+      }
+    },
+    {
+      "width": 1440,
+      "creds": 0,
+      "state": {
+        "version": 2,
+        "handle": "Replay",
+        "givenName": "Ada",
+        "origin": "dustline",
+        "complication": "on-file",
+        "stats": {
+          "chrome": 2,
+          "nerve": 2,
+          "face": 1,
+          "ghost": 5
+        },
+        "factions": {
+          "quill": 3,
+          "lumen": 2,
+          "helion": 4,
+          "wards": 1
+        },
+        "creds": 0,
+        "strain": 1,
+        "items": [
+          "spoof-chip"
+        ],
+        "flags": {
+          "kerr_terms_enabled": true,
+          "mara_account_enabled": true,
+          "witness_returns_enabled": true,
+          "encounter_craft_enabled": true,
+          "emotional_payoffs_enabled": true,
+          "freight_craft_enabled": true,
+          "on_file": true,
+          "opening_identity": true,
+          "opening_neighbor_heard": true,
+          "met_stallholder": true,
+          "opening_complete": true,
+          "met_quill": true,
+          "haggled": true,
+          "hired": true,
+          "quiet": true,
+          "knows_truth": true,
+          "honest": true,
+          "met_lumen": true,
+          "pact_copy": true,
+          "lumen_here": true,
+          "copied": true,
+          "met_mara": true,
+          "heard_memo": true,
+          "memory_signature": true,
+          "memory_order": true,
+          "memory_roster": true,
+          "memory_theory_omitted": true,
+          "memory_reconstructed": true,
+          "memory_prepared": true,
+          "memory_public_claim": true,
+          "memory_intact": true,
+          "kerr_talked": true,
+          "met_kerr": true,
+          "act1_done": true,
+          "act1_both": true,
+          "perk_trained": true,
+          "perk_nerve": true
+        },
+        "journal": [
+          {
+            "id": "quill-agreed-to-ninety-up-front",
+            "text": "Quill agreed to ninety up front."
+          },
+          {
+            "id": "quill-hired-you-to-lift-mara-voss-s-unedited-hou",
+            "text": "Quill hired you to lift Mara Voss's unedited hour from Glass Chapel."
+          },
+          {
+            "id": "the-choir-door-accepted-a-name-you-kept-on-a-chi",
+            "text": "The choir door accepted a name you kept on a chip."
+          },
+          {
+            "id": "ward-nine",
+            "text": "Mara Voss signed the Ward Nine coolant dump. Three hundred people, one memo."
+          },
+          {
+            "id": "shard-copy",
+            "text": "A second copy of Mara's hour exists."
+          },
+          {
+            "id": "memory-signature",
+            "text": "Mara authorizes the flush. She says the tower promised an evacuation. The signature proves authorization; her explanation still needs corroboration.",
+            "kind": "claim"
+          },
+          {
+            "id": "memory-order",
+            "text": "The exported receipt records an instruction canceling evacuation while retaining the flush. Its contents are visible; the issuing key still needs independent verification during The Week.",
+            "kind": "fact"
+          },
+          {
+            "id": "memory-roster",
+            "text": "Ivo Pell and Junie Calder were on shift. Nia Pell signed the housing slip and reached a service exit. She can corroborate the receipt, but a public roster would expose where she sleeps.",
+            "kind": "fact"
+          },
+          {
+            "id": "memory-analysis",
+            "text": "The signature and the later evacuation cancellation are separate decisions. Mara's prior knowledge and the receipt's issuer remain questions, not acquittals.",
+            "kind": "claim"
+          },
+          {
+            "id": "public-packet",
+            "text": "The packet accuses Helion of canceling evacuation before the issuing key is authenticated. The allegation is not independent proof.",
+            "kind": "claim"
+          },
+          {
+            "id": "archive-promise",
+            "text": "Trace the tower receipt to corroborate Mara's hour.",
+            "kind": "promise"
+          }
+        ],
+        "chapters": [
+          "Two Fires"
+        ],
+        "rolls": [
+          {
+            "label": "Walk past Kerr",
+            "roll": 8,
+            "total": 12,
+            "dc": 8,
+            "success": true
+          },
+          {
+            "label": "Copy the hour",
+            "roll": 8,
+            "total": 11,
+            "dc": 10,
+            "success": true
+          },
+          {
+            "label": "Spoof the choir door",
+            "roll": 8,
+            "total": 10,
+            "dc": 8,
+            "success": true
+          },
+          {
+            "label": "Push Quill",
+            "roll": 8,
+            "total": 9,
+            "dc": 8,
+            "success": true
+          }
+        ],
+        "log": [
+          "Spoof the choir door.",
+          "Speak the pad's old language.",
+          "Enough. Find the nurse.",
+          "Quill sent me for the Voss shard.",
+          "I'll copy it. You get the leak. I get paid.",
+          "Copy it, then take the original.",
+          "Keep the hour.",
+          "Open the hour on the memory bench.",
+          "Inspect the signature.",
+          "Inspect the counter-order.",
+          "Inspect the living witness.",
+          "Compare the signature with the later order.",
+          "Her signature is enough. Leave the counter-order out.",
+          "Keep both decisions. Mark what remains unknown.",
+          "Accuse Helion publicly before authenticating the key.",
+          "Preserve the complete archive.",
+          "Convince him to let you walk.",
+          "Quill gets the original. The copy gets out.",
+          "The week after.",
+          "Walk out into the week.",
+          "Learn one thing from the night.",
+          "Steady hands",
+          "Read the board.",
+          "Compare field equipment at the repair bench."
+        ],
+        "sceneId": "act2_workshop"
+      },
+      "metrics": {
+        "text": "QuillThe broker\n\nDistrict repair bench · The Week\n\nDistrict repair bench · The Week\n\nThe week wants a buyer or a witness.\n\nDistrict repair bench · The Week. The week wants a buyer or a witness.\n\nThe broker\n\nLoaded Autosave — The Week · District repair bench\n\nQuill has laid four cases on the repair bench. None is an all-purpose answer. A probe belongs at a reader, a harness under a chair, a desk guide beside a form, and a shroud on a service route.\n\n'One case in this shipment for you,' he says. 'Keep enough for the person on the other end of the job.'\n\nAn unregistered clinic room for Nia costs ninety creds. Staffed recovery for you costs forty-five. Tools can improve a route; they reserve no room and buy no person's consent. You can leave the cases and come back before the week closes.\n\nListen to QuillPlay all dialogue\n\nEnable Sound and voice volume in Settings to listen.\n\nVoice transcript\nYour next move\n\nSelecting an option commits it.\n\nCompare field equipment\n\nOne field kit this week · 0 creds available. Private witness care costs 90; staffed recovery costs 45.\n\nOnly the listed checks receive the bonus. Equipment supplies no evidence, safe room, or consent. Cash benchmarks: room 90 + staffed rest 45 = 135; adding private courier dispatch 15 brings the combined cost to 150. These comparisons reserve nothing; earned rooms and other legal methods remain available.\n\nReview leaving without buying\nArchive Probe · 140 creds\n+2 to scanner inspection, archive index preparation, receipt authentication, and the depot sensor ramp. Works without training this skill.\nCompare current check odds\n\nNeed 140 more creds to buy this kit.\n\nReview Archive Probe purchase\n\nNeed 140 creds\n\n1Buy the Archive Probe.Need 140 creds\nChair Harness · 120 creds\n+2 to chair preparation, physical witness transfer, archive hatch preparation, physical ledger inspection, carrying sealed clinic cards, the shelter valve, and carrying Kerr’s case. A braced chair permits a no-roll transfer; Steady hands avoids its added strain. Your practiced skill has its own methods.\nHow the Chair Harness fits your training\nCompare current check odds\n\nNeed 120 more creds to buy this kit.\n\nReview Chair Harness purchase\n\nNeed 120 creds\n\n2Buy the Chair Harness.Need 120 creds\nClinic Desk Guide · 100 creds\n+2 to arranging a volunteer escort, negotiating a checkpoint transfer, private clinic dispatch, and the depot counter. It supplies procedure, not a forged signature. Works without training this skill.\nCompare current check odds\n\nNeed 100 more creds to buy this kit.\n\nReview Clinic Desk Guide purchase\n\nNeed 100 creds\n\n3Buy the Clinic Desk Guide.Need 100 creds\nRoute Shroud · 140 creds\n+2 to patrol scouting, service-hatch witness transfer, archive interval preparation, carbon retrieval, and the depot patrol gap. Works without training this skill.\nCompare current check odds\n\nNeed 140 more creds to buy this kit.\n\nReview Route Shroud purchase\n\nNeed 140 creds\n\n4Buy the Route Shroud.Need 140 creds\n5Keep the care budget. Return to the district board.\n\n Next step Compare one kit against the money needed for care. Tools improve specific checks, not base stats.\n\nMemory commitments · 0/1 complete · 1 open\n\nSelecting an option commits it. For a check, review the odds and costs first; Back leaves it unrolled.\n\nReview unavailable approaches (4)",
+        "actions": [
+          {
+            "id": "choice-buy-archive-probe",
+            "text": "1Buy the Archive Probe.Need 140 creds",
+            "disabled": true,
+            "gap": 563.609375,
+            "height": 276.125
+          },
+          {
+            "id": "choice-buy-chair-harness",
+            "text": "2Buy the Chair Harness.Need 120 creds",
+            "disabled": true,
+            "gap": 1069.109375,
+            "height": 278.328125
+          },
+          {
+            "id": "choice-buy-desk-guide",
+            "text": "3Buy the Clinic Desk Guide.Need 100 creds",
+            "disabled": true,
+            "gap": 1540.8125,
+            "height": 299.0625
+          },
+          {
+            "id": "choice-buy-route-shroud",
+            "text": "4Buy the Route Shroud.Need 140 creds",
+            "disabled": true,
+            "gap": 2033.25,
+            "height": 275.390625
+          },
+          {
+            "id": "choice-leave-workshop",
+            "text": "5Keep the care budget. Return to the district board.",
+            "disabled": false,
+            "gap": 2331.03125,
+            "height": 327.046875
+          }
+        ],
+        "typography": [
+          {
+            "text": "District repair bench · The Week",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "The week wants a buyer or a witness.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "District repair bench · The Week. The week wants a buyer or a witness.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "The broker",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Loaded Autosave — The Week · District repair bench",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Quill has laid four cases on the repair bench. None is an all-purpose answer. A probe belongs at a reader, a harness under a chair, a desk guide beside a form, and a shroud on a service route.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "'One case in this shipment for you,' he says. 'Keep enough for the person on the other end of the job.'",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "An unregistered clinic room for Nia costs ninety creds. Staffed recovery for you costs forty-five. Tools can improve a route; they reserve no room and buy no person's consent. You can leave the cases and come back before the week closes.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Listen to Quill",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Play all dialogue",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Enable Sound and voice volume in Settings to listen.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Voice transcript",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Your next move",
+            "tag": "H2",
+            "font": "24px",
+            "line": "normal"
+          },
+          {
+            "text": "Selecting an option commits it.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Compare field equipment",
+            "tag": "H2",
+            "font": "24px",
+            "line": "normal"
+          },
+          {
+            "text": "One field kit this week · 0 creds available. Private witness care costs 90; staffed recovery costs 45.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Only the listed checks receive the bonus. Equipment supplies no evidence, safe room, or consent. Cash benchmarks: room 90 + staffed rest 45 = 135; adding private courier dispatch 15 brings the combined cost to 150. These comparisons reserve nothing; earned rooms and other legal methods remain available.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Archive Probe · 140 creds",
+            "tag": "DT",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Compare current check odds",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Need 140 more creds to buy this kit.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Review Archive Probe purchase",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Need 140 creds",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "1Buy the Archive Probe.Need 140 creds",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Chair Harness · 120 creds",
+            "tag": "DT",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "How the Chair Harness fits your training",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Compare current check odds",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Need 120 more creds to buy this kit.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Review Chair Harness purchase",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Need 120 creds",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "2Buy the Chair Harness.Need 120 creds",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Clinic Desk Guide · 100 creds",
+            "tag": "DT",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Compare current check odds",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Need 100 more creds to buy this kit.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Review Clinic Desk Guide purchase",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Need 100 creds",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "3Buy the Clinic Desk Guide.Need 100 creds",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Route Shroud · 140 creds",
+            "tag": "DT",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Compare current check odds",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Need 140 more creds to buy this kit.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Review Route Shroud purchase",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Need 140 creds",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "4Buy the Route Shroud.Need 140 creds",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "5Keep the care budget. Return to the district board.",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": " Next step Compare one kit against the money needed for care. Tools improve specific checks, not base stats.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Memory commitments · 0/1 complete · 1 open",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Selecting an option commits it. For a check, review the odds and costs first; Back leaves it unrolled.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Review unavailable approaches (4)",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          }
+        ],
+        "controls": [
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "text": "Listen to Quill",
+            "disabled": true
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "text": "Play all dialogue",
+            "disabled": true
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Voice transcript",
+            "disabled": false
+          },
+          {
+            "tag": "SELECT",
+            "id": "_r_0_",
+            "text": "",
+            "disabled": false
+          },
+          {
+            "tag": "A",
+            "id": "review-workshop-exit",
+            "text": "Review leaving without buying",
+            "disabled": false
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Compare current check odds",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "review-purchase-archive-probe",
+            "text": "Review Archive Probe purchase",
+            "disabled": true
+          },
+          {
+            "tag": "BUTTON",
+            "id": "choice-buy-archive-probe",
+            "text": "1Buy the Archive Probe.Need 140 creds",
+            "disabled": true
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "How the Chair Harness fits your training",
+            "disabled": false
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Compare current check odds",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "review-purchase-chair-harness",
+            "text": "Review Chair Harness purchase",
+            "disabled": true
+          },
+          {
+            "tag": "BUTTON",
+            "id": "choice-buy-chair-harness",
+            "text": "2Buy the Chair Harness.Need 120 creds",
+            "disabled": true
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Compare current check odds",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "review-purchase-desk-guide",
+            "text": "Review Clinic Desk Guide purchase",
+            "disabled": true
+          },
+          {
+            "tag": "BUTTON",
+            "id": "choice-buy-desk-guide",
+            "text": "3Buy the Clinic Desk Guide.Need 100 creds",
+            "disabled": true
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Compare current check odds",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "review-purchase-route-shroud",
+            "text": "Review Route Shroud purchase",
+            "disabled": true
+          },
+          {
+            "tag": "BUTTON",
+            "id": "choice-buy-route-shroud",
+            "text": "4Buy the Route Shroud.Need 140 creds",
+            "disabled": true
+          },
+          {
+            "tag": "BUTTON",
+            "id": "choice-leave-workshop",
+            "text": "5Keep the care budget. Return to the district board.",
+            "disabled": false
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Memory commitments · 0/1 complete · 1 open",
+            "disabled": false
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Review unavailable approaches (4)",
+            "disabled": false
+          }
+        ],
+        "reviewExitPx": 342.625,
+        "overflow": false,
+        "pageHeight": 23850
+      }
+    },
+    {
+      "width": 1440,
+      "creds": 275,
+      "state": {
+        "version": 2,
+        "handle": "Replay",
+        "givenName": "Ada",
+        "origin": "dustline",
+        "complication": "on-file",
+        "stats": {
+          "chrome": 2,
+          "nerve": 2,
+          "face": 1,
+          "ghost": 5
+        },
+        "factions": {
+          "quill": 3,
+          "lumen": 2,
+          "helion": 4,
+          "wards": 1
+        },
+        "creds": 275,
+        "strain": 1,
+        "items": [
+          "spoof-chip"
+        ],
+        "flags": {
+          "kerr_terms_enabled": true,
+          "mara_account_enabled": true,
+          "witness_returns_enabled": true,
+          "encounter_craft_enabled": true,
+          "emotional_payoffs_enabled": true,
+          "freight_craft_enabled": true,
+          "on_file": true,
+          "opening_identity": true,
+          "opening_neighbor_heard": true,
+          "met_stallholder": true,
+          "opening_complete": true,
+          "met_quill": true,
+          "haggled": true,
+          "hired": true,
+          "quiet": true,
+          "knows_truth": true,
+          "honest": true,
+          "met_lumen": true,
+          "pact_copy": true,
+          "lumen_here": true,
+          "copied": true,
+          "met_mara": true,
+          "heard_memo": true,
+          "memory_signature": true,
+          "memory_order": true,
+          "memory_roster": true,
+          "memory_theory_omitted": true,
+          "memory_reconstructed": true,
+          "memory_prepared": true,
+          "memory_public_claim": true,
+          "memory_intact": true,
+          "kerr_talked": true,
+          "met_kerr": true,
+          "act1_done": true,
+          "act1_both": true,
+          "perk_trained": true,
+          "perk_nerve": true
+        },
+        "journal": [
+          {
+            "id": "quill-agreed-to-ninety-up-front",
+            "text": "Quill agreed to ninety up front."
+          },
+          {
+            "id": "quill-hired-you-to-lift-mara-voss-s-unedited-hou",
+            "text": "Quill hired you to lift Mara Voss's unedited hour from Glass Chapel."
+          },
+          {
+            "id": "the-choir-door-accepted-a-name-you-kept-on-a-chi",
+            "text": "The choir door accepted a name you kept on a chip."
+          },
+          {
+            "id": "ward-nine",
+            "text": "Mara Voss signed the Ward Nine coolant dump. Three hundred people, one memo."
+          },
+          {
+            "id": "shard-copy",
+            "text": "A second copy of Mara's hour exists."
+          },
+          {
+            "id": "memory-signature",
+            "text": "Mara authorizes the flush. She says the tower promised an evacuation. The signature proves authorization; her explanation still needs corroboration.",
+            "kind": "claim"
+          },
+          {
+            "id": "memory-order",
+            "text": "The exported receipt records an instruction canceling evacuation while retaining the flush. Its contents are visible; the issuing key still needs independent verification during The Week.",
+            "kind": "fact"
+          },
+          {
+            "id": "memory-roster",
+            "text": "Ivo Pell and Junie Calder were on shift. Nia Pell signed the housing slip and reached a service exit. She can corroborate the receipt, but a public roster would expose where she sleeps.",
+            "kind": "fact"
+          },
+          {
+            "id": "memory-analysis",
+            "text": "The signature and the later evacuation cancellation are separate decisions. Mara's prior knowledge and the receipt's issuer remain questions, not acquittals.",
+            "kind": "claim"
+          },
+          {
+            "id": "public-packet",
+            "text": "The packet accuses Helion of canceling evacuation before the issuing key is authenticated. The allegation is not independent proof.",
+            "kind": "claim"
+          },
+          {
+            "id": "archive-promise",
+            "text": "Trace the tower receipt to corroborate Mara's hour.",
+            "kind": "promise"
+          }
+        ],
+        "chapters": [
+          "Two Fires"
+        ],
+        "rolls": [
+          {
+            "label": "Walk past Kerr",
+            "roll": 8,
+            "total": 12,
+            "dc": 8,
+            "success": true
+          },
+          {
+            "label": "Copy the hour",
+            "roll": 8,
+            "total": 11,
+            "dc": 10,
+            "success": true
+          },
+          {
+            "label": "Spoof the choir door",
+            "roll": 8,
+            "total": 10,
+            "dc": 8,
+            "success": true
+          },
+          {
+            "label": "Push Quill",
+            "roll": 8,
+            "total": 9,
+            "dc": 8,
+            "success": true
+          }
+        ],
+        "log": [
+          "Spoof the choir door.",
+          "Speak the pad's old language.",
+          "Enough. Find the nurse.",
+          "Quill sent me for the Voss shard.",
+          "I'll copy it. You get the leak. I get paid.",
+          "Copy it, then take the original.",
+          "Keep the hour.",
+          "Open the hour on the memory bench.",
+          "Inspect the signature.",
+          "Inspect the counter-order.",
+          "Inspect the living witness.",
+          "Compare the signature with the later order.",
+          "Her signature is enough. Leave the counter-order out.",
+          "Keep both decisions. Mark what remains unknown.",
+          "Accuse Helion publicly before authenticating the key.",
+          "Preserve the complete archive.",
+          "Convince him to let you walk.",
+          "Quill gets the original. The copy gets out.",
+          "The week after.",
+          "Walk out into the week.",
+          "Learn one thing from the night.",
+          "Steady hands",
+          "Read the board.",
+          "Compare field equipment at the repair bench."
+        ],
+        "sceneId": "act2_workshop"
+      },
+      "metrics": {
+        "text": "QuillThe broker\n\nDistrict repair bench · The Week\n\nDistrict repair bench · The Week\n\nThe week wants a buyer or a witness.\n\nDistrict repair bench · The Week. The week wants a buyer or a witness.\n\nThe broker\n\nLoaded Autosave — The Week · District repair bench\n\nQuill has laid four cases on the repair bench. None is an all-purpose answer. A probe belongs at a reader, a harness under a chair, a desk guide beside a form, and a shroud on a service route.\n\n'One case in this shipment for you,' he says. 'Keep enough for the person on the other end of the job.'\n\nAn unregistered clinic room for Nia costs ninety creds. Staffed recovery for you costs forty-five. Tools can improve a route; they reserve no room and buy no person's consent. You can leave the cases and come back before the week closes.\n\nListen to QuillPlay all dialogue\n\nEnable Sound and voice volume in Settings to listen.\n\nVoice transcript\nYour next move\n\nSelecting an option commits it.\n\nCompare field equipment\n\nOne field kit this week · 275 creds available. Private witness care costs 90; staffed recovery costs 45.\n\nOnly the listed checks receive the bonus. Equipment supplies no evidence, safe room, or consent. Cash benchmarks: room 90 + staffed rest 45 = 135; adding private courier dispatch 15 brings the combined cost to 150. These comparisons reserve nothing; earned rooms and other legal methods remain available.\n\nFind the purchase choice and review it. No money is spent until you select that choice.\n\nReview leaving without buying\nArchive Probe · 140 creds\nWorks without training this skill.\nCompare current check odds\n\nAfter purchase: 135 creds. Enough cash remains for a room and staffed rest. Adding a private courier would need 15 more.\n\nReview Archive Probe purchase\n1Buy the Archive Probe. Details140 creds. +2 to scanner inspection, archive index preparation, receipt authentication, and the depot sensor ramp. One field kit this week; it stays in your inventory. Changes-140 cr · Gain Archive Probe\nChair Harness · 120 creds\nYour practiced skill has its own methods.\nHow the Chair Harness fits your training\nCompare current check odds\n\nAfter purchase: 155 creds. Enough cash remains for a room and staffed rest. A private courier also fits that combined budget.\n\nReview Chair Harness purchase\n2Buy the Chair Harness. Details120 creds. +2 to chair preparation, physical witness transfer, archive hatch preparation, physical ledger inspection, carrying sealed clinic cards, the shelter valve, and carrying Kerr’s case. A braced chair permits a no-roll transfer; Steady hands avoids its added strain. One field kit this week; it stays in your inventory. Changes-120 cr · Gain Chair Harness\nClinic Desk Guide · 100 creds\nWorks without training this skill.\nCompare current check odds\n\nAfter purchase: 175 creds. Enough cash remains for a room and staffed rest. A private courier also fits that combined budget.\n\nReview Clinic Desk Guide purchase\n3Buy the Clinic Desk Guide. Details100 creds. +2 to arranging a volunteer escort, negotiating a checkpoint transfer, private clinic dispatch, and the depot counter. It supplies procedure, not a forged signature. One field kit this week; it stays in your inventory. Changes-100 cr · Gain Clinic Desk Guide\nRoute Shroud · 140 creds\nWorks without training this skill.\nCompare current check odds\n\nAfter purchase: 135 creds. Enough cash remains for a room and staffed rest. Adding a private courier would need 15 more.\n\nReview Route Shroud purchase\n4Buy the Route Shroud. Details140 creds. +2 to patrol scouting, service-hatch witness transfer, archive interval preparation, carbon retrieval, and the depot patrol gap. One field kit this week; it stays in your inventory. Changes-140 cr · Gain Route Shroud\n5Keep the care budget. Return to the district board.\n\n Next step Compare one kit against the money needed for care. Tools improve specific checks, not base stats.\n\nMemory commitments · 0/1 complete · 1 open\n\nSelecting an option commits it. For a check, review the odds and costs first; Back leaves it unrolled.",
+        "actions": [
+          {
+            "id": "choice-buy-archive-probe",
+            "text": "1Buy the Archive Probe. Details140 creds. +2 to scanner inspection, archive index preparation, receipt authentication, and the depot sensor ramp. One field kit this week; it stays in your inventory. Changes-140 cr · Gain Archive Probe",
+            "disabled": false,
+            "gap": 553.203125,
+            "height": 1403
+          },
+          {
+            "id": "choice-buy-chair-harness",
+            "text": "2Buy the Chair Harness. Details120 creds. +2 to chair preparation, physical witness transfer, archive hatch preparation, physical ledger inspection, carrying sealed clinic cards, the shelter valve, and carrying Kerr’s case. A braced chair permits a no-roll transfer; Steady hands avoids its added strain. One field kit this week; it stays in your inventory. Changes-120 cr · Gain Chair Harness",
+            "disabled": false,
+            "gap": 2123.171875,
+            "height": 1418
+          },
+          {
+            "id": "choice-buy-desk-guide",
+            "text": "3Buy the Clinic Desk Guide. Details100 creds. +2 to arranging a volunteer escort, negotiating a checkpoint transfer, private clinic dispatch, and the depot counter. It supplies procedure, not a forged signature. One field kit this week; it stays in your inventory. Changes-100 cr · Gain Clinic Desk Guide",
+            "disabled": false,
+            "gap": 3690.140625,
+            "height": 1418
+          },
+          {
+            "id": "choice-buy-route-shroud",
+            "text": "4Buy the Route Shroud. Details140 creds. +2 to patrol scouting, service-hatch witness transfer, archive interval preparation, carbon retrieval, and the depot patrol gap. One field kit this week; it stays in your inventory. Changes-140 cr · Gain Route Shroud",
+            "disabled": false,
+            "gap": 5257.109375,
+            "height": 1403
+          },
+          {
+            "id": "choice-leave-workshop",
+            "text": "5Keep the care budget. Return to the district board.",
+            "disabled": false,
+            "gap": 6682.5,
+            "height": 327.046875
+          }
+        ],
+        "typography": [
+          {
+            "text": "District repair bench · The Week",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "The week wants a buyer or a witness.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "District repair bench · The Week. The week wants a buyer or a witness.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "The broker",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Loaded Autosave — The Week · District repair bench",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Quill has laid four cases on the repair bench. None is an all-purpose answer. A probe belongs at a reader, a harness under a chair, a desk guide beside a form, and a shroud on a service route.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "'One case in this shipment for you,' he says. 'Keep enough for the person on the other end of the job.'",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "An unregistered clinic room for Nia costs ninety creds. Staffed recovery for you costs forty-five. Tools can improve a route; they reserve no room and buy no person's consent. You can leave the cases and come back before the week closes.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Listen to Quill",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Play all dialogue",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Enable Sound and voice volume in Settings to listen.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Voice transcript",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Your next move",
+            "tag": "H2",
+            "font": "24px",
+            "line": "normal"
+          },
+          {
+            "text": "Selecting an option commits it.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Compare field equipment",
+            "tag": "H2",
+            "font": "24px",
+            "line": "normal"
+          },
+          {
+            "text": "One field kit this week · 275 creds available. Private witness care costs 90; staffed recovery costs 45.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Only the listed checks receive the bonus. Equipment supplies no evidence, safe room, or consent. Cash benchmarks: room 90 + staffed rest 45 = 135; adding private courier dispatch 15 brings the combined cost to 150. These comparisons reserve nothing; earned rooms and other legal methods remain available.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Find the purchase choice and review it. No money is spent until you select that choice.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Archive Probe · 140 creds",
+            "tag": "DT",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Compare current check odds",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "After purchase: 135 creds. Enough cash remains for a room and staffed rest. Adding a private courier would need 15 more.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Review Archive Probe purchase",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "1Buy the Archive Probe. Details140 creds. +2 to scanner inspection, archive index preparation, receipt authentication, and the depot sensor ramp. One field kit this week; it stays in your inventory. Changes-140 cr · Gain Archive Probe",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Chair Harness · 120 creds",
+            "tag": "DT",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "How the Chair Harness fits your training",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Compare current check odds",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "After purchase: 155 creds. Enough cash remains for a room and staffed rest. A private courier also fits that combined budget.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Review Chair Harness purchase",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "2Buy the Chair Harness. Details120 creds. +2 to chair preparation, physical witness transfer, archive hatch preparation, physical ledger inspection, carrying sealed clinic cards, the shelter valve, and carrying Kerr’s case. A braced chair permits a no-roll transfer; Steady hands avoids its added strain. One field kit this week; it stays in your inventory. Changes-120 cr · Gain Chair Harness",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Clinic Desk Guide · 100 creds",
+            "tag": "DT",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Compare current check odds",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "After purchase: 175 creds. Enough cash remains for a room and staffed rest. A private courier also fits that combined budget.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Review Clinic Desk Guide purchase",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "3Buy the Clinic Desk Guide. Details100 creds. +2 to arranging a volunteer escort, negotiating a checkpoint transfer, private clinic dispatch, and the depot counter. It supplies procedure, not a forged signature. One field kit this week; it stays in your inventory. Changes-100 cr · Gain Clinic Desk Guide",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "Route Shroud · 140 creds",
+            "tag": "DT",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Compare current check odds",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "After purchase: 135 creds. Enough cash remains for a room and staffed rest. Adding a private courier would need 15 more.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Review Route Shroud purchase",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "4Buy the Route Shroud. Details140 creds. +2 to patrol scouting, service-hatch witness transfer, archive interval preparation, carbon retrieval, and the depot patrol gap. One field kit this week; it stays in your inventory. Changes-140 cr · Gain Route Shroud",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": "5Keep the care budget. Return to the district board.",
+            "tag": "BUTTON",
+            "font": "13.3333px",
+            "line": "normal"
+          },
+          {
+            "text": " Next step Compare one kit against the money needed for care. Tools improve specific checks, not base stats.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Memory commitments · 0/1 complete · 1 open",
+            "tag": "SUMMARY",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          },
+          {
+            "text": "Selecting an option commits it. For a check, review the odds and costs first; Back leaves it unrolled.",
+            "tag": "P",
+            "font": "16px",
+            "line": "normal"
+          }
+        ],
+        "controls": [
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "text": "Listen to Quill",
+            "disabled": true
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "text": "Play all dialogue",
+            "disabled": true
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Voice transcript",
+            "disabled": false
+          },
+          {
+            "tag": "SELECT",
+            "id": "_r_0_",
+            "text": "",
+            "disabled": false
+          },
+          {
+            "tag": "A",
+            "id": "review-workshop-exit",
+            "text": "Review leaving without buying",
+            "disabled": false
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Compare current check odds",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "review-purchase-archive-probe",
+            "text": "Review Archive Probe purchase",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "choice-buy-archive-probe",
+            "text": "1Buy the Archive Probe. Details140 creds. +2 to scanner inspection, archive index preparation, receipt authentication, and the depot sensor ramp. One field kit this week; it stays in your inventory. Changes-140 cr · Gain Archive Probe",
+            "disabled": false
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "How the Chair Harness fits your training",
+            "disabled": false
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Compare current check odds",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "review-purchase-chair-harness",
+            "text": "Review Chair Harness purchase",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "choice-buy-chair-harness",
+            "text": "2Buy the Chair Harness. Details120 creds. +2 to chair preparation, physical witness transfer, archive hatch preparation, physical ledger inspection, carrying sealed clinic cards, the shelter valve, and carrying Kerr’s case. A braced chair permits a no-roll transfer; Steady hands avoids its added strain. One field kit this week; it stays in your inventory. Changes-120 cr · Gain Chair Harness",
+            "disabled": false
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Compare current check odds",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "review-purchase-desk-guide",
+            "text": "Review Clinic Desk Guide purchase",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "choice-buy-desk-guide",
+            "text": "3Buy the Clinic Desk Guide. Details100 creds. +2 to arranging a volunteer escort, negotiating a checkpoint transfer, private clinic dispatch, and the depot counter. It supplies procedure, not a forged signature. One field kit this week; it stays in your inventory. Changes-100 cr · Gain Clinic Desk Guide",
+            "disabled": false
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Compare current check odds",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "review-purchase-route-shroud",
+            "text": "Review Route Shroud purchase",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "choice-buy-route-shroud",
+            "text": "4Buy the Route Shroud. Details140 creds. +2 to patrol scouting, service-hatch witness transfer, archive interval preparation, carbon retrieval, and the depot patrol gap. One field kit this week; it stays in your inventory. Changes-140 cr · Gain Route Shroud",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "choice-leave-workshop",
+            "text": "5Keep the care budget. Return to the district board.",
+            "disabled": false
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Memory commitments · 0/1 complete · 1 open",
+            "disabled": false
+          }
+        ],
+        "reviewExitPx": 376.625,
+        "overflow": false,
+        "pageHeight": 28183
+      }
+    }
+  ]
+}

@@ -1,0 +1,4057 @@
+{
+  "revision": "808b1969904d1987b3b33d4f571ad1c5ae7446db",
+  "dirty": true,
+  "method": "Replay legal route prefixes and one additional enabled action with an actual1/10 die. Exact factory legacy and current UI feature sets are separate. Positive reachability is not complete-campaign browser coverage; unverified is not unreachable. No outcome/state grafting. Planned UI ids require fresh actual browser acceptance.",
+  "currentFeatures": {
+    "startWithPrologue": true,
+    "expandedKerr": true,
+    "expandedMara": true,
+    "expandedWitness": true,
+    "craftedEncounters": true,
+    "emotionalPayoffs": true,
+    "freightCraft": true,
+    "returnRouting": true,
+    "seraShift": true,
+    "dramaticBeats": true,
+    "consequentialMethods": true,
+    "consequentialExpansion": true,
+    "dramaticSequenceArt": true
+  },
+  "routeHashes": {
+    "qa/routes/allocation-dustline.json": "51cd9b9ea9a577b81612bb0943c392ff7fdcbd56453774f023d3bfba3a528969",
+    "qa/routes/allocation-gutterwire.json": "257f728cc9fb33b3eeffc5ccb7a9d235fd42c043913d0b62f29ee580aef5a8d1",
+    "qa/routes/allocation-later-funded.json": "d48f5107dd072bec3676fd2b9fac6ab6302c2f4c2a86877145c1cc9129b728d6",
+    "qa/routes/allocation-later-work.json": "0edfeb0fd0eea370d8766324e0d38d8f7ec8ccbbe144889b77308cc38a3c35f9",
+    "qa/routes/allocation-revised.json": "71fbd06f5f298fa2db06d2be12ff7d461bf54842039619c23d183bb5a4006b54",
+    "qa/routes/allocation-standard.json": "7fee48e2f4a38ae3cfa0e2ad25ec889fca4ba5b9971ebb96d17eacc426892328",
+    "qa/routes/allocation-unresolved.json": "d28e6152182ed267b93189f67736dc4ad53f7afff80b473ecbd0083e39746874",
+    "qa/routes/authenticated.json": "f4a245792920d88eb8d4e9e4948ccea4511c01b0ec03602fcd2a6cd7ffe7173c",
+    "qa/routes/balance-dustline-nerve-equipped.json": "6fadfb395049b69057ff6fd8698856c2134356dcc52eeb38c4c74a5f41a6a53c",
+    "qa/routes/balance-gutterwire-nerve-equipped.json": "f968ce8bdab3ab32c0fbc52d9bb0151df1d2b6a28505f5e3f5681ecf45ef704c",
+    "qa/routes/balance-spire-nerve-equipped.json": "cc5579cbf589e680637c42679799da3da8eb288924588755769b91cf8df56910",
+    "qa/routes/bounded-correction.json": "0a87c58231722bfb6d91585c8f1de6cd90ce18cd64e1717714cc75a8602c70cf",
+    "qa/routes/catalog-badge.json": "1b0b5618531dde25e7ba1e0022bbb9a0064b162a408d884d5278d494525fd783",
+    "qa/routes/catalog-paid.json": "2b9788198a2f0c237cdafdfc2aeee0204e29d4d124d9151896e84fc02d5adb83",
+    "qa/routes/catalog-reader.json": "0f7bb6996b85fac14ad0d552c384da3f58dabb3573c6064c39d3b91116eb64a6",
+    "qa/routes/catalog-scarce-mismatch.json": "5634cd028be84dd364d1cb19e9d455219bd0a104fe49de3c4202c1d260fc2140",
+    "qa/routes/consequential-expansion/chrome-listed.json": "29c8d079901e8b123e75471be7b15736fecae9ec769e2468b7c89aae0b8607c7",
+    "qa/routes/consequential-expansion/chrome-names.json": "ceda7b1822f024538c7356303cf70ae5d192aab087e23e2cd6127772c53c62df",
+    "qa/routes/consequential-expansion/chrome-quiet.json": "9953728d53ae4d6c45348f9a262145882f56c04c774f8c8b52a308066271aca4",
+    "qa/routes/consequential-expansion/chrome-refused.json": "6de3f1010bf8104b7ee8fef260411bcaaf5fc1fac9f0b7310f2a0da532209dba",
+    "qa/routes/consequential-expansion/chrome-scarce.json": "a01c65299a5d2a7864877bad29302bf817d365bbc8ce238ba9bb33bd284a01fc",
+    "qa/routes/consequential-expansion/chrome-withheld.json": "83d25d9812e025204ff98ab134552d5ab6e2454638ed70317c6038f51077311c",
+    "qa/routes/consequential-expansion/chrome-witness.json": "3b9bf7e233975e22014d3c78c69d0a5501ea9118c0f7758cb2ff6e50598589d7",
+    "qa/routes/consequential-expansion/face-listed.json": "fbd162e7fd61f1ac6314ba1fbffe09ac86f0619cf4750380d91842af56594142",
+    "qa/routes/consequential-expansion/face-names.json": "272bc32ac1c492b5a45707bc14ef1b918d9f5f074d54908a208e99b779a5e0d7",
+    "qa/routes/consequential-expansion/face-quiet.json": "d11227ce540a3aac40610f44b121e73596368f2c2b61fb74af25cd85e4ff3c1c",
+    "qa/routes/consequential-expansion/face-refused.json": "a5b036d598c581d420aeb254abd6e6f53be5c9752037dd709e73f4529e241183",
+    "qa/routes/consequential-expansion/face-scarce.json": "48eae564e843ea262fae1dff68be325f5e4341ccad002b550be7d72dc158d908",
+    "qa/routes/consequential-expansion/face-withheld.json": "e24896742a8ab807ba3946cae0136bb59bfc2fb0a65175b71cf05e251ea1fb41",
+    "qa/routes/consequential-expansion/face-witness.json": "c1c5fefeb10f9a9860ac8c5cf9e04ca3a00f47359c8f876fa68f3ac6ca6ed4f3",
+    "qa/routes/consequential-methods/chrome-private.json": "d0cdf8c491debf8e1a4916ff6c55a4dc0a39c1662396cea919c87ab6cae50355",
+    "qa/routes/consequential-methods/chrome-public-stop.json": "018e9c8492c001843d6c7cf4b3fffc3ea2a9509a0ad59edc56f15a0532e92dc9",
+    "qa/routes/consequential-methods/chrome-public-work.json": "1a08fa63945cb5e4da223d2d8020c4acf61cafece37fc1d93647714485452e67",
+    "qa/routes/consequential-methods/face-private.json": "89373b660249883bf40f7135f06a3960e61f566348083f5f388a141e16b73434",
+    "qa/routes/consequential-methods/face-public-stop.json": "2585821286cdaf27658e9aef19114451a7609e92acaca9ed95bf06fcda00f666",
+    "qa/routes/consequential-methods/face-public-work.json": "70839e59c86f920605b669ebd03be547074e28af0bc9c281fa905d6d4ce3d1b4",
+    "qa/routes/courier-motive-exit.json": "c199cf16d3b3a1443c0857e0e2a8338b1127eded6257e6d5504e15e3469af9a9",
+    "qa/routes/courier-motive-survival.json": "59f57ef4ca338000b6a563ab613fba5c87feda69389683dd733ffd9d207f5244",
+    "qa/routes/depot-build-chrome-failed.json": "dbe11065dc422cd44cadebe0e6670ee6b95fe6f6caabf37b9946f8ec8140c9e7",
+    "qa/routes/depot-build-chrome.json": "f6ca0dc4e83ec650c128f291a22bb1354db316982ced383a4fe20341cfc67f3d",
+    "qa/routes/depot-build-face-failed.json": "6b1b5999af8ad693d6a86edd0f687e55be5396eed2441ca716ef920f2b5cdde1",
+    "qa/routes/depot-build-face.json": "cd5da6806f531e46a0a3679ed77f7d7c79b4c2c02a2bb72b085952476b107e4b",
+    "qa/routes/depot-build-ghost-failed.json": "ee601142f7d619b3d5710dac32f5818c7c55b8a3c9f9ec9c5aaccc150dbdad8f",
+    "qa/routes/depot-build-ghost.json": "9b51d98cba011cfcb6425f9883ee62643aced8aaf8d7802db4225ef770e92fd3",
+    "qa/routes/depot-build-nerve-failed.json": "e9c82ca4d27e073ceb61649b0afc1a67e5c5ae97c190bec597f0db9d10971abe",
+    "qa/routes/depot-build-nerve.json": "887f4fe6071df95fc85d973593a8b96960f6154b2bd783df6b33d5cdbffc0998",
+    "qa/routes/district-breach-denied.json": "53a0aa5f4b25a4162850f3d6a012314cf5520cb890ecbab6a4db61eb163d1296",
+    "qa/routes/district-correction-limits.json": "56d55e91d7425ec26f4ad0902d6a3fb295d8f69e3716ee9804614dd7d13dc3e6",
+    "qa/routes/district-private-rest.json": "1ed42edccfc74b368fed47674e9a1412068ede3a605254a76e6ccd930e2182e1",
+    "qa/routes/district-public-work.json": "c26c3c934bb19fe8b72e0eec121a43148155314d6f9ccc8f9a218c04b8a99043",
+    "qa/routes/dramatic-beats/badge-scarce.json": "a18971be0adb5ab5ae5d3d5771f8ba51ccb5a86056bc7fc06c30d8bd7163c579",
+    "qa/routes/dramatic-beats/deferred.json": "006cd78897563be6a0b3ff17ec4968c0404b93d98dc68ff247c9bfa1833b18c2",
+    "qa/routes/dramatic-beats/direct.json": "bfe37112911bbbc97094cf9641921ae36b2c7072657dca24f62638414c886a9b",
+    "qa/routes/dramatic-beats/face.json": "ba3d93e5f0e33797e7b89e42d9c8436320d7ede8d07a7221a11ab81da1d42b16",
+    "qa/routes/dramatic-beats/listed.json": "9fae7a1fcceaff390a7e14fbc6fb7cb32ca3c2ca05019cf99ee6d061be2abe2b",
+    "qa/routes/dramatic-beats/paid.json": "19de48b3022479c81d1893701f5a43452bda543c0ee46ced3c34568d1eaa8b74",
+    "qa/routes/dramatic-beats/scarce.json": "0622cb57b6582dba07fb11e8a4e65ed68266a7b66ee8f10332463075ba3339e0",
+    "qa/routes/dramatic-beats/sera-carry.json": "e2679fd4517fa0274948c00a5222961dca4eac240dffea369f7bcb27379a9dc8",
+    "qa/routes/dramatic-sequences/badge-scarce.json": "3d36f94caa8082739a908818498caabaafcd36b7e866141fc287a560e150f0a6",
+    "qa/routes/dramatic-sequences/both-owned-company.json": "beefbf2552ed30505fa42c2c8d15e476bbc73e9f25d3249aa7053557c89a276c",
+    "qa/routes/dramatic-sequences/face.json": "9c3671f65a40ec5f71b4eac07283b2884733d906df8bf93fe0c1326b6b5b437a",
+    "qa/routes/dramatic-sequences/paid.json": "0b0a84ce94ef451c8a7efbb2cbafad6505a94b81b5943d65410f29358f847c4a",
+    "qa/routes/dramatic-sequences/partial-deflected.json": "7f302af7b9aaed3224d87bec9941936cb41645a2ecb2725926214d5c7844f1eb",
+    "qa/routes/dramatic-sequences/sold-distance.json": "8fbd2de9e2fe5f1ac268b28a83b3d12b9a7d3457272faf891b16fe47ba19286f",
+    "qa/routes/emotional-payoff/both-returns-listed.json": "6302ac7975986a2bd1c04ad068b0b3cc5b6aba835c05b259090825fc54a0d7a2",
+    "qa/routes/emotional-payoff/edda-authenticated-names.json": "056adeb18e1695628b9c24224f6dc012643460e5b4046826d9d7158a3ba3297f",
+    "qa/routes/emotional-payoff/edda-corroborated-witness.json": "99c234e65590dfbba99c49bce7e7c17ad8f4f9e5883cf228188fdc4241892bf8",
+    "qa/routes/emotional-payoff/edda-deferred-quiet.json": "3f36900209840714f5af6df33714b700c8f9efc3368254f8502a883cfc0c156f",
+    "qa/routes/emotional-payoff/edda-failed-quiet.json": "cdb72edfd8e2eefabb457db7e3deb41f10d11e6669e4284d504fbbfabf8e53aa",
+    "qa/routes/emotional-payoff/edda-skipped-names.json": "e476ae0b2fefc29011a5e40db3db1dd3733dc81e2a74fc923af29feedde05c01",
+    "qa/routes/emotional-payoff/finale-listed-unvisited.json": "158aff19bb30d470b20a02f1852eb5f8752886a6129499db60633d223e9f114a",
+    "qa/routes/emotional-payoff/finale-names-unvisited.json": "fc5cbddfb60a3097de7b932efa681d7a6e7329755856afa6fa9e9f43f5746682",
+    "qa/routes/emotional-payoff/finale-quiet-unvisited.json": "9b412021e8269b3a8fd357de824c066f4529d6c5e7c0bf8daa3fc76a5b4e7694",
+    "qa/routes/emotional-payoff/finale-witness-unvisited.json": "0ffa2457ca6a560a51c35696e42333685aaf4a6e9a67885127a34422d1f60ab6",
+    "qa/routes/emotional-payoff/kerr-canceled-quiet.json": "ab3df6314601708fb7c92a21168f167ff0eeff7069681d3c5a5a3e9f91528431",
+    "qa/routes/emotional-payoff/kerr-contact-denied-witness.json": "43488737c7cda86fe8c3b09b8a7af9142025897bbf5239cc930116088cf6564c",
+    "qa/routes/emotional-payoff/kerr-failed-quiet.json": "9e40e55288fd1fac5c6974d15aca99094dd7a8f1db03a78717e14afa3b4f6e74",
+    "qa/routes/emotional-payoff/kerr-private-witness.json": "b024c3241195ad70a83ff685ff18e49aaaeb4800736245820734ccc7596d8c5b",
+    "qa/routes/emotional-payoff/kerr-registered-listed.json": "4580e95704eb61ce8ad5b13470c709f66df194cf94e3d8d96ba54e25c7a15464",
+    "qa/routes/emotional-payoff/kerr-unfinished-names.json": "59808a3dee6b61a854ca8cc3139c7ac9a5806d7d03191a3d8e234720e00eaeb7",
+    "qa/routes/encounter-craft/archive-badge-scarce.json": "7e11ba0ab93dc6faf55b1dda75f6c2d6090e6e9d8667675927ad0ef56533260c",
+    "qa/routes/encounter-craft/archive-face-countersign.json": "2ada6f6c6b6d52edc0366c3d495b1cf470c8bdaf391a5b5c8cdf2f1d1044da8f",
+    "qa/routes/encounter-craft/archive-reader-failure.json": "c1303db74e7261c6b2042aec6667cf21146f7fa8c49431e1176e174256a32cc9",
+    "qa/routes/encounter-craft/archive-reader-success.json": "8f555ba39314ddce24c2d2c1e41318f8a95867e6c038543987e605a975fce3aa",
+    "qa/routes/encounter-craft/archive-staffed-scope.json": "f4f842eadaee516c002367082b374b68d0200ee49160e0070356492d6a952d8a",
+    "qa/routes/encounter-craft/kerr-breached.json": "2a509f470fc44b1097675c17fa0d22dc0e4d2db5ff4077dca3d015e5a91ada57",
+    "qa/routes/encounter-craft/kerr-cancel.json": "a68e2b2a1ecd5a68135359feb4a2df598086348613a4dc1e636c3beb9340b1ed",
+    "qa/routes/encounter-craft/kerr-cash-private.json": "ae6a9dbb7dbf5882a451fe2c34ef31e0fd0a84dedcebdf4f16086b144cc6eb84",
+    "qa/routes/encounter-craft/kerr-failed.json": "ea2b9d5b46636dcc77831ac1367105d1d5514ce465b31e2dfce06e32ae1d1137",
+    "qa/routes/encounter-craft/kerr-late-failed.json": "91751950d6c462988d775ffe6a10e0d4f11c1c812a383818c1d3aff9d0974118",
+    "qa/routes/encounter-craft/kerr-late-settlement.json": "9b48f91024e31e1064db4d576ed0ee1e57addd7fd97659674f4bb4d448e3a4d0",
+    "qa/routes/encounter-craft/kerr-refused.json": "8889121c8e04ccb227e3e73046a93757407d9e974527ebf94c295a60c1f0411b",
+    "qa/routes/encounter-craft/kerr-self-funded.json": "1c5e18de9767c0fe5c102d778b1510bb780d7691150e1a90027213aeb476a3fe",
+    "qa/routes/encounter-craft/kerr-tool-held-archive.json": "bf02a4ff4f18d34c5b47712b92e861bde4f22b3e685779ef2647c5e862708556",
+    "qa/routes/encounter-craft/kerr-tool-private.json": "ccabdb9fd1fe7f36b62d594fea13d626e4b47ffd70cce8f4476a2f04da75b97d",
+    "qa/routes/finale-listed-archive.json": "4b82cf1d3775ce13269b072f13e62211151ee1aa722a2588ebf98234996fcef3",
+    "qa/routes/finale-listed-interrupted.json": "d8e0b173c6909299811798d573ff2bf2d0499eca969f16338961ea47b1f0489d",
+    "qa/routes/finale-listed-private.json": "84cd66fc0864af7a403e787a36d2109d2d162e0ca31b62dd4e4c5ea8b70299d8",
+    "qa/routes/finale-listed.json": "925b2777c72f2a69ea8354be4f063dfe0a9286bd9dede5682b49cb11c74f9969",
+    "qa/routes/finale-names-consent-withdrawn.json": "37ac93cb20e0228462993afe62ae5b34750e9564aed2b753e8a9fbbbf9fe0802",
+    "qa/routes/finale-names-paused.json": "5079e9791ebf0e93889c77581292eb45f5c04611e71f57a7dda28dbb907d4a1d",
+    "qa/routes/finale-quiet-withdrawn.json": "d0d00e8f0665a4f6d243cfa462d468a1e581021556cdb60789ee6c34150724e4",
+    "qa/routes/finale-witness-corrected.json": "40b7cf4b40ffae87e5db21ff35a3eac67b4ab5b3eac62ce6d2c34061a195ad15",
+    "qa/routes/finale-witness.json": "b46317a57e952dbb53d49ddafc59748c1319ad95f903c9885b2aa6c86620abe3",
+    "qa/routes/freight-abandoned.json": "423280b2062472b58de9e8ad70f2465e7e4d5404789d212087f4b7cb3f106257",
+    "qa/routes/freight-chrome.json": "9ca4f2f95b17a166150c8f426aed2afe513b8840a540f7070d3ddb49baf63b5f",
+    "qa/routes/freight-craft/bare-names.json": "3a516abc4c45634e94d496e574b37ec7d72e9b95d76037d2e4e7afbde1dba5ea",
+    "qa/routes/freight-craft/bare-unobserved.json": "d41d5fa4afa1fa8bd22061bd6eeb989ed27ee3e5bff42349dc1e9faff588eefa",
+    "qa/routes/freight-craft/blocks-witness.json": "28e7aae70fe362812cbed1cdd60482e4e861f334926d2b39d6f60986d3459096",
+    "qa/routes/freight-craft/cancel.json": "10b689e9a0269beafbf6a832ca26aeaf935db8cb251b4f3fa6e8eedfa45975f0",
+    "qa/routes/freight-craft/decline-ghost.json": "6943052a6c2c0f9ff0a31740e9d9815433c75b1cd4a82bd739a2a1a06e7a34d8",
+    "qa/routes/freight-craft/failed-courier.json": "767865cea598dbf72d17f56228a57bc3eeb6d32f19d8cc771ad792918dbc4c9c",
+    "qa/routes/freight-craft/failed-desk.json": "ca33e8c56110610c5523473b60b10a53a52b5d8734c47c2aaa15a1a946182857",
+    "qa/routes/freight-craft/harness-listed.json": "77006bf9847e8f1805588d037ae73d30a57cef4ec4ed739aefb2932520817256",
+    "qa/routes/freight-craft/pause-resume.json": "0ab027aa82bf3f856f31c9375c12cb16eb1a67212271159bb62a6925125dd0fa",
+    "qa/routes/freight-craft/scarce.json": "dd49d8c43b7909a0fdb76f77e768e26542ada825d26393143e7da5ca58dea032",
+    "qa/routes/freight-craft/skipped-return.json": "0510d254d9789b2681c5bb7e5547afdb7c9778501933ead76b83811c86837b2d",
+    "qa/routes/freight-craft/unfinished.json": "97e6b3f78046cc5a6689a7e2a4b4286810261766d3fa7d52256a9fc4f8020c69",
+    "qa/routes/freight-declined.json": "778622d9d278ea52bcfca2cb5d3d9b1d0637a1c95a6939b0da7cc3fc46b69f45",
+    "qa/routes/freight-exposed.json": "2cd8bfcce43f4ed60c5c616019ec2d1952dace5c450387aa0ecbec215d5ace43",
+    "qa/routes/freight-face.json": "0c9ee0e9a36ce24f89100ae86565f6792a03ff092f759bb949b62a7cffde33d9",
+    "qa/routes/freight-ghost.json": "aa89a1f2fa55d821a899c860e8c138c31888fd3afb7a04acf6d743c3bb6e080c",
+    "qa/routes/freight-late.json": "f106b7d9aea6a1869d234f38bb2a1eb88781980dd30d684376d85814c79e5675",
+    "qa/routes/freight-nerve.json": "7a7ad80d974614a2fb9b44fccc2f72a78ec701b82fb0a0dba19beff210e09e4f",
+    "qa/routes/freight-registered.json": "b7634da2b7d478d8f941da40e5b5840337d45200d8be7d475150486402e77c58",
+    "qa/routes/funded-checkpoint-room.json": "dbaccbd47771c3faf16b6c0d3de77320346f263bd09d4f6bfc746a7d6e115340",
+    "qa/routes/gutterwire-harness.json": "004279ebf82195b365b84427ee9421e2df73eacff245abc6bd946bc221a11c3a",
+    "qa/routes/integration-listed.json": "a995d65fb1f09c2b9803288149acfbd622130a7d0b539ef0c4172efe43873812",
+    "qa/routes/integration-names.json": "081d1b048ca499d6979c17d6bb1e86c3e47b5cb9e883b2eddcc4eb555733ace7",
+    "qa/routes/integration-quiet.json": "89d4e7a21f8b987154f4609b67c7aa3f198fe5429c619cf0d61c9f746a723ea8",
+    "qa/routes/integration-witness.json": "128e3cc6bf486cd4176267d2c5bc913e6d9ac2bee2ff8c190141dc31f565f387",
+    "qa/routes/kerr-breach-denied.json": "5e531c3efac812426565cf7d25474dc38fa6c4d37bb81703f371d89c9b561c1c",
+    "qa/routes/kerr-breach-repaired.json": "5b6a88e01e27792ff3daba6aea74035d16e5805fed37a34605c561f42a9c2941",
+    "qa/routes/kerr-chrome.json": "db3e63b9fb1bfb2855aff6d0ade9969db4d262a92487978812b586993f6209a4",
+    "qa/routes/kerr-courier.json": "f26932157ac21c6b17a92dccf80b8b51e0e1b4e58c55140f3bf97fe6bc124e46",
+    "qa/routes/kerr-declined.json": "022d40696bd261812c92342d221806dcb7d27a724b670f693a4d4e5c8409d189",
+    "qa/routes/kerr-face.json": "764a947a7a199c52271e234dcdff95afd6af133db8aa02547c08a161fe7343c2",
+    "qa/routes/kerr-ghost.json": "61945411302f77a0aa8f82a70e7ba021be390ae223dd2695fcc10cfaf102a807",
+    "qa/routes/kerr-held.json": "167e088d203e894cc280c2bddf670259209d9c2271ae76f176fb4fc4eb9183ca",
+    "qa/routes/kerr-late-repayment.json": "a1b76f709772161f6aba647d1e133c7075f873998ae20b1c8afb2bc94826f1ab",
+    "qa/routes/kerr-nerve.json": "43c5923a2a6ec0852abd2f5d6abcfaf0945847865864385b0892470243f028cf",
+    "qa/routes/kerr-registered-handover.json": "96a70f875c3ecb3bf8a22a0a08aa09d140b0d91d49f7e05d40cd2c1c0d22cc90",
+    "qa/routes/kerr/bluffed-owned.json": "b5481efb960495619bbc1b71beba843852ba76fdde240f86dd63b38f5533a152",
+    "qa/routes/kerr/bluffed.json": "252758d594cf879d46671f3803fd7d149a20f52dd5e90829b64d251cd2172a36",
+    "qa/routes/kerr/named.json": "eda7c9778f4823a7d2ce4c07e9380c92fb157a978a8ebe079abcf3bd119ed864",
+    "qa/routes/kerr/scarce-exposed-owned.json": "9ff40c3425a5edf9ca15ada90e7ada50fbdf2c73e1760cc3d9af8739ecd43b0f",
+    "qa/routes/kerr/scarce-exposed.json": "af23dd3ad90cfb7d8c2356480256c6f7e31590b09e7752edc554bb3ad5d6dd58",
+    "qa/routes/kerr/scarce-withdrew.json": "33cb67e759e35789d40d13f11e184861cc3a51a1f2d65d46d96cd7cf9a7ece1b",
+    "qa/routes/kerr/unheld-named.json": "07d82a6d572625878cd0ff3eeab8fadd484df5cffa8e6e115c3b7d8fcef31da7",
+    "qa/routes/kit-archive.json": "5f61fd69c82e9dca32784bcb35d22b43a49c8ca3a768d67eb698a64cd3079c54",
+    "qa/routes/kit-guide.json": "334e442f972dd16defad010e286f67875b1f207204b3ee1da6f0233b9302c737",
+    "qa/routes/kit-harness.json": "c5dd6c9fcc9c52953e9653ce1830b18d68d6d345df7b4e2b65a42657a7915875",
+    "qa/routes/kit-shroud.json": "68dd940f18868382e8ec2e70216ee5a507ebd20341202dae1a9805d857ba0a74",
+    "qa/routes/mara-account/both-owned-company.json": "f63254f931f17208a1616a7187a985a1da230a53293bd38b3edf59fa969643e2",
+    "qa/routes/mara-account/company-before-deflection.json": "3f3617a97b0a5a2badd1fcc2512ae9c09e03d5b866350721ff28b030c0d4d8a0",
+    "qa/routes/mara-account/destroyed-corrected.json": "993498fbe1056b20781a6bfb41b09e9c0a76f5041ec0534d5d9355ea9e89e8a5",
+    "qa/routes/mara-account/destroyed-owned.json": "d8baba3476780246a2e9c1552895c1c56d941b5003cecaf7ff179e28a12d420d",
+    "qa/routes/mara-account/left-owned.json": "82d182e3dbd1a5ef29df0a737a96e14a5ac8221e52532f8ff5656777e06d5a30",
+    "qa/routes/mara-account/partial-deflected.json": "0625ad1d881b96be0efd0cb547f09909c6c1f40ccaa19fd0a3a1ef79babce5cf",
+    "qa/routes/mara-account/scarce-company-distance.json": "27f5e83bf6ad6569a5865850ec3288ce0f94e16c1ffd63517edbeb2c43d5db89",
+    "qa/routes/mara-account/sold-deferred-owned.json": "47732c8eddc60b6241518b27ad2fddb384385a744161abf9e114f569c11c5774",
+    "qa/routes/mara-account/sold-distance.json": "2fb092d810e71ee917a0944cece76b1ad17778fdfccc763463b63717f75aacc2",
+    "qa/routes/mara-account/sold-owned.json": "954537d787ad96e857a86b4911c9131fab487397b9e0b7253105de72cdf9ba70",
+    "qa/routes/mara-account/sold-unfinished.json": "bebb7b0e9670864f5ae9347517cf984180d40c660eab9390777c87e92996b503",
+    "qa/routes/mara-company-courier-stay.json": "7b83b0ceb7cca59af9a507d51386f1ff5dc6b85fd48cba11d7feaf219603bdca",
+    "qa/routes/mara-company-decline-company.json": "acb880ffc10c990168ab992f1d6cc53ccbd5b27a0913aaa8e7fdc86a239ed951",
+    "qa/routes/mara-company-scarce-leave.json": "5e0d3fe579579960a8983fa1d484d633bf48e0b6d03bd029a6c7c7a4e1fef39b",
+    "qa/routes/mara-company-scarce-resume.json": "1543fd9135619b1b575fd1dc65abf3580c72cbe6e510efa02c2f33b3b3e7c594",
+    "qa/routes/mara-company-scarce-stay.json": "ac34665cfc1b7d73e1c1db898084496cae7309cf8d931b754cf58367d988dde6",
+    "qa/routes/mara-company-stay-later-courier.json": "b81063075ff6805c3ec2cdc1d6141dcbe28a0f60166116dcdad2a2fd0ba2edd9",
+    "qa/routes/mara-company-walk-leave.json": "08f366cd9afbd48e05b18b55afe3180c223cef29b6952aacce50b92f500b39e2",
+    "qa/routes/mara-questioned.json": "bb94c0bc908e75d18bf3c61aed9883a32180460f7e967516228fce4ab8df82d7",
+    "qa/routes/memory-timeline-bounded.json": "33dfd8c8f157350044dd543f57bcfeabd1aae0a6e1cc5f039c904d4695843dbc",
+    "qa/routes/memory-timeline-corrected.json": "e1a210fc1cdbf07195298ff60a59e34753e0f8ca0e2b30a1347e03dad48508a3",
+    "qa/routes/memory-timeline-repeated.json": "2990cb262b8d3bf94a7340d7418eac43805587bc22e4bad582f9e03ae008c20b",
+    "qa/routes/methods-baffled-transfer.json": "7e1a335ff64f05475e0a2535a40168d72e57ca435cde6e2dd2a687660761236f",
+    "qa/routes/methods-depot-shift.json": "17549c32a686d45ab83361451023fd11c5cb5263d47b1468efc396fc8925f2e1",
+    "qa/routes/methods-harness-transfer.json": "d8e6edddd82d7c2f9d65e073aab4eeab1e8dd1a767b87a644d08afc9196a914f",
+    "qa/routes/methods-isolation-rig.json": "1635b51f9e508bf0b9b31cb43eb76be140328f8c17420e1d6f10b48867a0c4be",
+    "qa/routes/methods-service-rig.json": "0f1e538a3e70b63f0bc1f18ae587845b63e389f1d596cca86a3a4823180de6f1",
+    "qa/routes/methods-volunteer-shift.json": "5aed5e0b1cfbf1cda0a5c073a28596a50cf6912d29771c7babe911634896c627",
+    "qa/routes/navigation-release/route-1.json": "994b0e9e85d13a91f3f560360025615688a2c7820bbc3af5c01e3d64464f0d64",
+    "qa/routes/navigation-release/route-2.json": "d4ea0f53ffe85bad874102513dcdf297530276e87d0f7342d3e0564fe9023884",
+    "qa/routes/navigation-release/route-3.json": "86d46f78ac10eeeb2de7539f3f2f3f202ed0470e6001f86110e0f4907e64b3ad",
+    "qa/routes/navigation-release/route-4.json": "7fee2355855f18d9637a79c225e83bdea1d204c87f30ba5c72f07341c9b59cf8",
+    "qa/routes/navigation-release/route-5.json": "7099abfc07f6136e32cf718a660ace928dbe1fbf6942764beb8bb6bebd5e2890",
+    "qa/routes/navigation-release/route-6.json": "a35ac49278190d24d66c19e92945d0c3dd6a8bfd408198c4e0da91a4cf0be1ae",
+    "qa/routes/navigation-release/route-7.json": "58cf1e5d46b68fc99702bd2cd67b5bd779ec6d193c26f824f083f3a74c2c911c",
+    "qa/routes/navigation-release/route-8.json": "2292da092e932da9bb951d5ce5a70ca08f9d379d96a82eb6d29c2fd351398933",
+    "qa/routes/nia-pause.json": "ae8d557f88b88e0894ae86c8a329708515bfd0e5e63e716851af14beccaa1402",
+    "qa/routes/nia-relay.json": "4b19b39c58a62e9772c1f043c8a7b4b5f70959dd3bf122eadf85bdbf2b2f4c0a",
+    "qa/routes/notice-acknowledged.json": "8e4842ecba9ba814a1b692859bcf56a1ec53c50e4adce60aebcb2b6a07045a63",
+    "qa/routes/notice-carried.json": "fcb0cb76f101f21dfab11c7c3107d3a10a0088bfc61c010e7d6fbe97e3ed017c",
+    "qa/routes/notice-private.json": "0f017825a91fb8ad23892d0750c6b8c070839b60c2ef38f6689cc1b7f2d47564",
+    "qa/routes/notice-public.json": "acd3a88b3d6fd207066d1c6ebb766388cabcbf89d7262c85bb0caab864051084",
+    "qa/routes/notice-refusal.json": "8c3a1ec04a5acf103f6e448828ecf97841de9d3340cb2f57fef847d8285dbf4d",
+    "qa/routes/notice-relay.json": "00a43dd489438a53825bbd19689c8af62c5da6926d4fa103dca6876323ad6b53",
+    "qa/routes/notice-withdrawn.json": "15efce0ab246264e27798be4cc9ed2720d85196c1c27266d56d4dd6d5b8274b4",
+    "qa/routes/opening-full-minimal.json": "d1e17cb484d2401a6e1b8fddcb5efe087b6285fe365bdf1837a6039decf66bad",
+    "qa/routes/opening-skip-investigation.json": "48a16549adbc7b698bf6b5f59c850d6211a4dc59f46dbf6acc6df567d9dc1e21",
+    "qa/routes/opening-skip-minimal.json": "9c576330eb4d2068ac7b6e6f43e6d5f0328497a169cdff0d490cf6405ae40dd6",
+    "qa/routes/pacing-signed-face.json": "5012dcf36a0a7acde14a2fa24102625f09de98ee036745f1573404c63e9ccc9e",
+    "qa/routes/pacing-signed-nerve.json": "c0c862e079451619c215dba57011487c0558e19b58ce5079e1f52253a45fe3e6",
+    "qa/routes/performance-prepared.json": "6f12333be0076e4591fdb882cb4936ef78196dddfcbcb209a4ad89aaffbd0a13",
+    "qa/routes/performance-scarce.json": "e13f4f1149138a17b8287e2b85c878fa82e2b92b02d427ed2ff4194a511eb35d",
+    "qa/routes/pump-brace.json": "ce8d0e7d4be3435460b31b1dfad49ffdc19d499524acfb75c39a4b2e36719455",
+    "qa/routes/pump-inspection.json": "e4f20398ad8a2db8dc25cd6cb24515eebd55337bea91c556c01acc1fd2296bad",
+    "qa/routes/pump-local.json": "4d60c27bac907c7c621d89764c45e6efade795b6272f6e47e7b6ffa8e1a5a7e6",
+    "qa/routes/pump-rebate.json": "bfa0ae0c8ee24bc0da7b89093abba29bfae365cc32a3458b057c65cf7a709e5a",
+    "qa/routes/pump-transfer.json": "91986f68ce773ca89156be6ca5f4b2defb6b985412114a4c840a548ff151dbf8",
+    "qa/routes/response-clinic-revised.json": "1f88b73eda8fdb8ec0e4a6f03dbd49305cf49179489ef5ff6ec87ee7cc41dfb2",
+    "qa/routes/response-declined.json": "02d956c34f3e59c74fc0e8d929ca24c40e62dfe8587f1a12e9d495cc706c8686",
+    "qa/routes/response-deferred.json": "da01e0951a3528fc8c94649f8469ee9e492d6e8789a8dc00b99d625cee43fcaa",
+    "qa/routes/response-private-lumen.json": "e0694e46822d9c541a1a0bcf61c85a1c849b9896d485cf76f10f1d34cee684fc",
+    "qa/routes/response-private-mara.json": "ef349780bdf7c9e8ccff9938966f8cfa99c8b104f19e33448b1b4816742f8fef",
+    "qa/routes/response-public-pending.json": "da30f565eed647c374a4575c168880207c8252045368fbf29c2e3966bdb31d4a",
+    "qa/routes/response-public-revised.json": "9d0fb7fd5715b729907207aae3fbf21d19e3d52c13eb307ac5672f7c9e822e9c",
+    "qa/routes/return-routing/cancel-after.json": "fa9edd0c5e5601a0e709b0e1de841634b86d847a6ad95a9fe5d2c59a286472e8",
+    "qa/routes/return-routing/cancel-before.json": "c0b3633ce1ae02fb7f03be54a25a60d6e94b4fd34b890f90e99abbafbaac8b83",
+    "qa/routes/return-routing/declined.json": "961976f18aaeaa56fe558aa00e42e577ed589d75f0d31f8888c86d84b2d25438",
+    "qa/routes/return-routing/held-hatch.json": "2f75de5a4da37bb462bb1351b2d22a7e169b5a28cbfd8774cdfc2b8765eae91c",
+    "qa/routes/return-routing/held-strip.json": "028a0986137c86a35331c955dc0d7e28219923ccc2b91f855a793c90381af7c1",
+    "qa/routes/return-routing/scarce.json": "3adf5859fef55223c52fec414b09872bd33a29f41ff9b6b931ce978507f03a83",
+    "qa/routes/return-routing/screened.json": "cb08fa13d15bcf3ff4ba7a326b7e102b78ccb4a0338832d6417fb10803e7e079",
+    "qa/routes/return-routing/signed.json": "089ece65e05fa6070fcde0f4a400142e44a5e6fe2c9f439cc421fe0784cb2172",
+    "qa/routes/return-routing/skipped.json": "555d267d9fa11fce3ca678477850e7f114345edb4468ad3bfd43b07af380ddbf",
+    "qa/routes/return-routing/unfinished.json": "4a9df8fc2675bbd126cd393d99557e0983fc8ee90e868e3d7d30c50578bf6e27",
+    "qa/routes/scarce-archive-closed.json": "780e51afeb5fd768587fd91e583a2c5a5dd6e4d465c468ee78845ac6a6e5efaa",
+    "qa/routes/scarce-archive-dustline.json": "7cca9d6ca774870cb4424a7f71c7ecc103644d1de5edce9ba22c03eae7435620",
+    "qa/routes/scarce-archive-gutterwire.json": "9f672278093912bf2a91c9b98828c3a45bcf198196329a963300b6be668f4240",
+    "qa/routes/scarce-archive-open.json": "e697da9c4e6dfe6ec20562b3c0fda46728b939d0e2ad9e26301e728e765229f0",
+    "qa/routes/scarce-archive-spire.json": "8f7d64fe9dc40796403907c37d83bfc4e42fb25ec63f8f7090479700dae91d0f",
+    "qa/routes/scarce-depot-courier.json": "9cb1c0fe06a41eba404dfe72842fe2c6c072ffb60457804156cb728627c28924",
+    "qa/routes/scarce-depot-held.json": "f71c3b944f7298f9055458fe073508844e5919716f04d6632d222fc3671df256",
+    "qa/routes/scarce-depot-open.json": "feafe75045c44fd1537190eb1542b404499fff350b734b74dcfc72a8ad89686b",
+    "qa/routes/scarce-witness-dustline.json": "b40621ea405c8a06dbb7d44834772a4c3183bc90c45fd7f85c1f2534443b5688",
+    "qa/routes/scarce-witness-gutterwire.json": "5c751c61ef881da8a4496cbf8325bf8c2846de6161e6731cab899e5c99658fb2",
+    "qa/routes/scarce-witness-spire.json": "787e8230f85db7f85eac1561b74dea823b49158ae85657d9b954ca061d2191b4",
+    "qa/routes/sera-shift/carry-authenticated.json": "0f14297d46c9ebb0acbea3527b1c86a9423d40ac71683135ab9bc941a84aee12",
+    "qa/routes/sera-shift/carry-failed.json": "022f3788950bd4ef1ab060f9ad5a3606a18bccc89526f0bdd96827960112b6a4",
+    "qa/routes/sera-shift/declined.json": "616516ece813413ec868cd53fa65762f0c812634668073a15bd000ddd7f3de8b",
+    "qa/routes/sera-shift/interrupted-switch.json": "3106c950be0cd5998ca4a717efbff6aa7b02aaf4ecb04b9957a59683aaeeab93",
+    "qa/routes/sera-shift/watch-corrected.json": "ff9396e2d99238b33b22d1fd99793a45fde099e5836a8191260ccd05467edab4",
+    "qa/routes/sera-shift/watch-private.json": "f6da56882d553e4162167c27c3f2ebfbd8bf6418031772909ca676527603edc0",
+    "qa/routes/shelter-chrome.json": "6a297381533e6d72d86a271ae7f1e2a3c632a22b53036924d88d1d072ca34c5a",
+    "qa/routes/shelter-declined.json": "7201d52fe22db70b860c0a00aea345f16ad3141de1e595d0a93bb42e2fbcdfa8",
+    "qa/routes/shelter-face.json": "ac76927c9312bc9434d646a0b8a2ac399e425aae382f1dc8ca3f480532c74345",
+    "qa/routes/shelter-failed.json": "e818e3030e8f9d8d5202089bc7101ba24038902b12d672475d3cff24cd7d502a",
+    "qa/routes/shelter-ghost.json": "a9335d43ee0d64a2a0c98022040702d9ff2848c2c218cc33878c73101b7aa0d5",
+    "qa/routes/shelter-nerve.json": "50df19031d11640341c6b052950733ee9014bb2ceaebc57b6c54546eff700b88",
+    "qa/routes/shelter-residents.json": "7da342bc9dce13a57502754093f904e80b6034e4acaa1b7b3bac2b2b03c4fcc6",
+    "qa/routes/shelter-unobserved.json": "bf025ed588974dcc50da011d510319226cb2ea48a194a27b22f8cb757565f595",
+    "qa/routes/shift-key.json": "02e33797aaec0ecfa892ebf56b0737c65667ec39e52839867e0c009b2e2e8678",
+    "qa/routes/shift-negotiation.json": "bf39dbba3973fc7cc674756416de37b698c35f84f9ecd13134c620eaa36d94ba",
+    "qa/routes/shift-pending.json": "f73e447dc607f4fde453e98de614aea900406fb6241950cf62de6482d33fcd3f",
+    "qa/routes/shift-representative.json": "75e4896d69545cdcfa4d6e47a17c83832b9f57f7a2d3f4873abb0b2b9e96d48d",
+    "qa/routes/spire-chrome.json": "ff6f20e8a53b46ed2be52a6f947792d659acf1e53ad60fcf28e492d501fc2daa",
+    "qa/routes/spire-declined.json": "4d11725c72265e6cd3ca6d761963a515ce0a431d577b8dc89ec0fa552b02d4bc",
+    "qa/routes/spire-face.json": "e443d415342c1f7295795e19db739c93ba60157792984bfbb938857dbde66d22",
+    "qa/routes/spire-ghost.json": "5af4281a105e66370f3f069543af0e9b005b3f83e0af8ba963a4bb6483af670f",
+    "qa/routes/spire-late.json": "2ca2ea4b57c914840ee3a1b3a1bb515d77acc491fbb853ec1902975a51fa211a",
+    "qa/routes/spire-nerve.json": "370c1f68a47122ad84c80b574890b35b45c13eac56127fd47f5f9cb743152e34",
+    "qa/routes/spire-pending.json": "2f6e4824d5a6d0cb3c3dc39e1d8bce2a6a05f4549ea913588f3998e495a8d7e7",
+    "qa/routes/spire-processor.json": "9d4b1fe057699f078aa5da2bcbe9804757600290bda10b6458163c75b9aaf0a3",
+    "qa/routes/spire-recovery.json": "819c227f06a99f898052febf46caa92d01a4c556a79dc792de327e652402580f",
+    "qa/routes/technique-chrome-counter-invent.json": "0139f6b871d66026f3ee3ed96b2ae955d2ce763bcf57c3ec50984349a10c0645",
+    "qa/routes/technique-chrome-counter-label.json": "c0c752fb053f33b7fe423a4e6c9c5ca92bfb3c4341f1cf17708ad981b8263a10",
+    "qa/routes/technique-chrome-portable-label.json": "4a559f57d74502a116053c3b82e218243576a83fb2abb1224fdbffaea557c7df",
+    "qa/routes/technique-face-cosign-process.json": "6a4b410d9d40bf1474a1c1619c86fda8544741d08b1ff8d63a81547c6248f7ad",
+    "qa/routes/technique-face-cosign-truth.json": "c774a9ae8e1c0729b02bcb20aaa487ddeacdf4a7b6f20c836063afd4e85f0cec",
+    "qa/routes/technique-face-self-process.json": "6a33881d5b3ec947402383f6d376239398360cf70783485fb2898758897958f0",
+    "qa/routes/technique-face-self-refusal.json": "2f6fb176448e1eec97d02696284e32aa3df7cce2b6b85b326990fd7675397f08",
+    "qa/routes/technique-ghost-screened-reference.json": "3d4a3ab3578d68a71d0991f0041323068f7bdce32a858c288eac2b3cc8c07390",
+    "qa/routes/technique-ghost-signed-reference.json": "84f8c8deda52a1a236364fc82c8588f8e72d5d31878c00595d4ba6ab0ce54705",
+    "qa/routes/technique-nerve-direct-dry.json": "4b646eabcad40fdad40919dc3833d72a2923cea7ce72e60a452237e0a589e744",
+    "qa/routes/technique-nerve-fast-rest.json": "6ae248b9826591b1c341e7c3e3d78a89efc2db804c1f5cd1375babee52015484",
+    "qa/routes/technique-nerve-supported-dry.json": "7bf44919d69e99f3dbfd7e6e4e0bb7e95213ebfd963ac8742ed241e2ba821baf",
+    "qa/routes/window-failed.json": "09af0c8db137911020b0c132df00f06c1e021bb6dc032b35405dd2f91a9d6886",
+    "qa/routes/window-overprepared.json": "dae62f60f4e302a83174234a1288117204ea2275942a9838b1cf1f2040878ca1",
+    "qa/routes/window-reader.json": "d0c7bbbff17f1cee9a5453d0ec1557a99762e93157a9ab6f59e00a0720199216",
+    "qa/routes/window-scouted.json": "96da69c8d89656825596af73bfe73d8afede2c562e57b5b1145d78fdb856e1e2",
+    "qa/routes/witness-known-room.json": "31cdd22c4328d5f6e380b8a6607f9cec27f08e9ade3601d72091a6879b1af6c0",
+    "qa/routes/witness-permission.json": "b2da3e01d87f4caf2d8d359dca0ef3a40b38e0709fc0dcd874230e8f22e5e5c9",
+    "qa/routes/witness-return/private-paid.json": "ca481c2f1934bab7a7b0351ecd5d93d3e4fc480bb183d8a3cbe791a6fe707680",
+    "qa/routes/witness-return/private-unkept.json": "0d0bfa5ee3fb824b2adb7942da80cdb77eed40800005053855f47c7ba5cfa7b8",
+    "qa/routes/witness-return/private-waiting-kept.json": "a690a895efd661bcff353e5f424e59c83265f9c5dedb72c0ef11bb7cfab54037",
+    "qa/routes/witness-return/registered.json": "07db3fc4b67396662caaa78f48e7a2ef74ee142729b33006d7e67e9d02cac7ce",
+    "qa/routes/witness-return/relocated.json": "5d257ca119f8d88dd0f45cdfa37330c6e7f25e2898c79b72912cb8b246f5f10f",
+    "qa/routes/witness-return/waiting-unfinished.json": "42d50e88fdc7bbab0f3b6b784133019cf2fd7cf2c4a124b41a062ecf1a484976"
+  },
+  "priorContinuousUI": 189,
+  "targetContinuousUI": 209,
+  "additionalTargetIds": [
+    "act2_kerr_terms_owned",
+    "act2_lumen_quiet",
+    "act2_pump_brief",
+    "act2_pump_methods",
+    "act2_pump_report",
+    "act2_pump_triage",
+    "act2_witness_checkpoint",
+    "act2_witness_lost",
+    "act2_witness_repair",
+    "act2_witness_return_private",
+    "act2_witness_support",
+    "act3_mara_account_repair",
+    "chapel",
+    "hatch",
+    "kerr_terms_bluff",
+    "kerr_terms_bluffed",
+    "kerr_terms_exposed",
+    "kerr_terms_named",
+    "kerr_terms_negotiate",
+    "why"
+  ],
+  "classes": {
+    "current reachable": 261,
+    "supported legacy save": 1,
+    "retired/unreachable": 0,
+    "unverified": 2
+  },
+  "rows": [
+    {
+      "id": "act2_archive_brief",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 45,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "trace-order"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_archive_challenge",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 48,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "catalog-is-proof"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_archive_compare",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 47,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "index-archive",
+          "roll": 1
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_archive_custody",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 49,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "trace-receipt",
+          "roll": 10
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_archive_door",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 48,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "separate-source-tests"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_archive_gap",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 49,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "trace-receipt",
+          "roll": 1
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_archive_prep",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 46,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "agree-archive-terms"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_archive_verified",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-later-funded.json",
+        "prefixSteps": 63,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "withhold-technician"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_craft_archive",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 48,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "craft-archive-question"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_craft_archive_challenge",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/dramatic-beats/badge-scarce.json",
+        "prefixSteps": 45,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "craft-question-conflate"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_craft_archive_issuer",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/dramatic-beats/badge-scarce.json",
+        "prefixSteps": 45,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "craft-question-issuer"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_craft_archive_ledger",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/dramatic-beats/badge-scarce.json",
+        "prefixSteps": 45,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "craft-question-movement"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_craft_kerr_offer",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/balance-dustline-nerve-equipped.json",
+        "prefixSteps": 46,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "craft-kerr-bargain"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_craft_kerr_settlement",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/consequential-expansion/chrome-refused.json",
+        "prefixSteps": 43,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "craft-settle-kerr"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_depot_carry",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/balance-dustline-nerve-equipped.json",
+        "prefixSteps": 51,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "begin-depot-nerve"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_depot_cart_pass",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/depot-build-ghost-failed.json",
+        "prefixSteps": 53,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "depot-watch-cart"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_depot_contract",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/depot-build-face-failed.json",
+        "prefixSteps": 51,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "depot-offer-own-liability"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_depot_liability",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/depot-build-face-failed.json",
+        "prefixSteps": 50,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "begin-depot-face"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_depot_load",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/balance-dustline-nerve-equipped.json",
+        "prefixSteps": 52,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "depot-rent-cradle"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_depot_methods",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/balance-dustline-nerve-equipped.json",
+        "prefixSteps": 50,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "compare-trained-depot-methods"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_depot_outer_pass",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/depot-build-ghost-failed.json",
+        "prefixSteps": 52,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "begin-depot-ghost"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_depot_relay",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/depot-build-chrome-failed.json",
+        "prefixSteps": 51,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "begin-depot-chrome"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act2_depot_return",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/depot-build-chrome-failed.json",
+        "prefixSteps": 52,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "depot-fit-buffer"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act2_depot_return_pass",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/depot-build-ghost-failed.json",
+        "prefixSteps": 54,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "depot-wait-return"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_district_brief",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-later-funded.json",
+        "prefixSteps": 65,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "open-district-response"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_district_canal",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/consequential-expansion/chrome-listed.json",
+        "prefixSteps": 53,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "district-public-review"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_district_docket",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/consequential-expansion/chrome-listed.json",
+        "prefixSteps": 54,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "district-read-notice"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_district_edda",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/consequential-expansion/chrome-listed.json",
+        "prefixSteps": 52,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "district-edda-receipt"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_district_kerr",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/consequential-expansion/chrome-listed.json",
+        "prefixSteps": 54,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "district-speak-kerr"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_district_kerr_reply",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/consequential-expansion/chrome-listed.json",
+        "prefixSteps": 55,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "district-tell-kerr"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_district_rest",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/consequential-methods/chrome-private.json",
+        "prefixSteps": 57,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "district-book-rest"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_district_result",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/consequential-expansion/chrome-listed.json",
+        "prefixSteps": 54,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "district-carry-correction"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_district_work",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/consequential-expansion/chrome-listed.json",
+        "prefixSteps": 57,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "district-register-work"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_folio",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 44,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "convince-ives",
+          "roll": 1
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act2_freight_brief",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 32,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "plan-freight"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_freight_crossing",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 38,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "prep-freight-scout"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act2_freight_intake",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 39,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "freight-service-run",
+          "roll": 10
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_freight_prep",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 37,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "prepare-freight"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_freight_recovery",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 39,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "freight-service-run",
+          "roll": 1
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act2_freight_result",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 33,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "decline-freight"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_freight_sources",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 33,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "accept-freight-terms"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_heat",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-later-funded.json",
+        "prefixSteps": 41,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "tell-kerr",
+          "roll": 1
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act2_helion",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 43,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "hear-ives"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_helion_door",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 31,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "to-helion"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_kerr",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-later-funded.json",
+        "prefixSteps": 40,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "hear-kerr"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_kerr_collection_terms",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 45,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "answer-kerr-collection"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_kerr_door",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 31,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "to-kerr"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_kerr_terms_owned",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/kerr/bluffed-owned.json",
+        "prefixSteps": 32,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "kerr-terms-own-lie"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_lumen",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/balance-dustline-nerve-equipped.json",
+        "prefixSteps": 34,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "hear-lumen"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_lumen_door",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 31,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "to-lumen"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_lumen_quiet",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/dramatic-sequences/both-owned-company.json",
+        "prefixSteps": 27,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "ask-lumen-staying"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_mara_account",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/dramatic-sequences/both-owned-company.json",
+        "prefixSteps": 27,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "mara-account-open"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_mara_account_deflected",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/dramatic-sequences/both-owned-company.json",
+        "prefixSteps": 29,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "mara-account-deflect"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_mara_account_distance",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/dramatic-sequences/both-owned-company.json",
+        "prefixSteps": 28,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "mara-account-distance"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_mara_account_owned",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/dramatic-sequences/both-owned-company.json",
+        "prefixSteps": 29,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "mara-account-own"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_mara_account_told",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/dramatic-sequences/both-owned-company.json",
+        "prefixSteps": 28,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "mara-account-disclose"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_mara_company",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/dramatic-sequences/both-owned-company.json",
+        "prefixSteps": 32,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "share-mara-window"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_mara_company_kept",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/dramatic-sequences/both-owned-company.json",
+        "prefixSteps": 33,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "stay-with-mara-courier"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_mara_quiet",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/dramatic-sequences/both-owned-company.json",
+        "prefixSteps": 27,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "ask-mara-tomorrow"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_middle",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 44,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "give-copy"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_notice_allocation",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 57,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "compare-notice-allocation"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_notice_allocation_review",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 58,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "allocate-notice-42"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_notice_brief",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 45,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "help-clinic-notice"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_notice_capacity",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-revised.json",
+        "prefixSteps": 54,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "offer-notice-clinic-contact"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act2_notice_counter",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-later-funded.json",
+        "prefixSteps": 54,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "offer-notice-clinic-contact"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act2_notice_methods",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 56,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "plan-notice"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_notice_offer",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 59,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "offer-notice-clinic-contact"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_notice_privacy_refusal",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 59,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "offer-notice-home-contact"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act2_notice_receipt",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 57,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "courier-notice"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_notice_recovery",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 57,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "negotiate-notice",
+          "roll": 1
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act2_notice_sources",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 52,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "accept-notice"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_origin_dustline",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 31,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "origin-contract"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_origin_gutterwire",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-gutterwire.json",
+        "prefixSteps": 31,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "origin-contract"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_origin_return",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 32,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "courier-run",
+          "roll": 1
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_origin_spire",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-later-funded.json",
+        "prefixSteps": 36,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "origin-contract"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_public_response",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 45,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "hear-response"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_pump_brief",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 45,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "help-clinic-pump"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_pump_methods",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-later-funded.json",
+        "prefixSteps": 43,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "ask-kerr-pump"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_pump_report",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-later-funded.json",
+        "prefixSteps": 44,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "isolate-pump",
+          "roll": 1
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_pump_triage",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-later-funded.json",
+        "prefixSteps": 44,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "dispatch-pump",
+          "roll": 1
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_quill_introduction",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/balance-dustline-nerve-equipped.json",
+        "prefixSteps": 46,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "ask-quill-introduction"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act2_ramp_arrived",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/freight-craft/bare-names.json",
+        "prefixSteps": 44,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "ramp-rest-before"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_ramp_gear",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/freight-craft/bare-names.json",
+        "prefixSteps": 42,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "ramp-choose-support"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_ramp_load",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/freight-craft/bare-names.json",
+        "prefixSteps": 43,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "ramp-lift-blocks"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_ramp_stopped",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/freight-craft/bare-names.json",
+        "prefixSteps": 44,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "ramp-carry-past"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_ramp_survey",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/freight-craft/bare-names.json",
+        "prefixSteps": 39,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "ramp-agree"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_ramp_terms",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 38,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "ramp-open-plan"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_recovery",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 45,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "take-recovery"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_recovery_after",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/catalog-paid.json",
+        "prefixSteps": 40,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "pay-recovery"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_response_agenda",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/dramatic-sequences/both-owned-company.json",
+        "prefixSteps": 25,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "listen-response-terms"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_response_dispatch",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/dramatic-sequences/both-owned-company.json",
+        "prefixSteps": 27,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "arrange-response-dispatch"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_response_invitation",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 45,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "hear-mara-response"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_response_receipt",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/dramatic-sequences/both-owned-company.json",
+        "prefixSteps": 33,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "carry-reply-leave-mara"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_response_refusal",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/dramatic-sequences/both-owned-company.json",
+        "prefixSteps": 26,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "propose-public-response"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act2_response_terms",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/dramatic-sequences/both-owned-company.json",
+        "prefixSteps": 26,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "propose-private-response"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_return_routing_prepare",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/return-routing/cancel-after.json",
+        "prefixSteps": 61,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "routing-choose-preparation"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_return_routing_read",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/return-routing/cancel-after.json",
+        "prefixSteps": 57,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "routing-agree"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_return_routing_result",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/return-routing/cancel-after.json",
+        "prefixSteps": 63,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "routing-submit-counter"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_return_routing_route",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/return-routing/cancel-after.json",
+        "prefixSteps": 62,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "routing-prepare-signed"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_return_routing_terms",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/return-routing/cancel-after.json",
+        "prefixSteps": 56,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "routing-open"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_route_crossing",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/balance-dustline-nerve-equipped.json",
+        "prefixSteps": 49,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "depart-kerr-lift"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_route_exit",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/balance-dustline-nerve-equipped.json",
+        "prefixSteps": 47,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "route-entry-stairs"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_route_handling",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/balance-dustline-nerve-equipped.json",
+        "prefixSteps": 50,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "compare-depot-handling"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act2_route_map",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/balance-dustline-nerve-equipped.json",
+        "prefixSteps": 46,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "promise-private-collection"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_route_receipt",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/balance-dustline-nerve-equipped.json",
+        "prefixSteps": 50,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "route-use-stairs",
+          "roll": 1
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_route_recovery",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/balance-dustline-nerve-equipped.json",
+        "prefixSteps": 50,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "route-negotiate",
+          "roll": 1
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_route_review",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/balance-dustline-nerve-equipped.json",
+        "prefixSteps": 48,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "route-exit-ramp"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_shelter_brief",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-gutterwire.json",
+        "prefixSteps": 32,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "plan-shelter"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_shelter_evacuation",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-gutterwire.json",
+        "prefixSteps": 35,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "shelter-turn-valve",
+          "roll": 1
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act2_shelter_hall",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-gutterwire.json",
+        "prefixSteps": 35,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "shelter-ghost-ramp"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_shelter_methods",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-gutterwire.json",
+        "prefixSteps": 34,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "shelter-prep-brace"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_shelter_prep",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-gutterwire.json",
+        "prefixSteps": 33,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "accept-shelter"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_shelter_result",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-gutterwire.json",
+        "prefixSteps": 33,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "decline-shelter"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_shelter_rooms",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-gutterwire.json",
+        "prefixSteps": 35,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "shelter-turn-valve",
+          "roll": 10
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act2_spire_brief",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-later-funded.json",
+        "prefixSteps": 37,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "plan-spire-key"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act2_spire_methods",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/memory-timeline-bounded.json",
+        "prefixSteps": 47,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "spire-prep-fields"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act2_spire_prep",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/memory-timeline-bounded.json",
+        "prefixSteps": 46,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "plan-spire-key"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act2_spire_receipt",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/memory-timeline-bounded.json",
+        "prefixSteps": 48,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "spire-retire-terminal",
+          "roll": 10
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act2_spire_recovery",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/memory-timeline-bounded.json",
+        "prefixSteps": 48,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "spire-retire-terminal",
+          "roll": 1
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act2_spire_result",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/memory-timeline-bounded.json",
+        "prefixSteps": 42,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "decline-spire-key"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act2_spire_sources",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/memory-timeline-bounded.json",
+        "prefixSteps": 42,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "accept-spire-key"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act2_technique_bench",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/consequential-expansion/chrome-listed.json",
+        "prefixSteps": 54,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "open-build-techniques"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_technique_chrome",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/consequential-expansion/chrome-listed.json",
+        "prefixSteps": 58,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "plan-technique-chrome"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_technique_chrome_submit",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/consequential-expansion/chrome-listed.json",
+        "prefixSteps": 59,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "prepare-technique-chrome-counter"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_technique_face",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/consequential-expansion/face-listed.json",
+        "prefixSteps": 58,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "plan-technique-face"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_technique_face_scope",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/consequential-expansion/face-listed.json",
+        "prefixSteps": 59,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "prepare-technique-face-self"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_technique_ghost",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/return-routing/cancel-after.json",
+        "prefixSteps": 55,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "plan-technique-ghost"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_technique_ghost_route",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/return-routing/cancel-after.json",
+        "prefixSteps": 56,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "prepare-technique-ghost-signed"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_technique_nerve",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/technique-nerve-direct-dry.json",
+        "prefixSteps": 55,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "plan-technique-nerve"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act2_technique_nerve_handover",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/technique-nerve-direct-dry.json",
+        "prefixSteps": 56,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "prepare-technique-nerve-direct"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act2_technique_result",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/consequential-expansion/chrome-listed.json",
+        "prefixSteps": 59,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "consequential-probe-intake"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_training",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 28,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "practice"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_witness_arrival",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/balance-dustline-nerve-equipped.json",
+        "prefixSteps": 39,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "quill-room"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_witness_brief",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/balance-dustline-nerve-equipped.json",
+        "prefixSteps": 36,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "protect-witness"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_witness_checkpoint",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/balance-dustline-nerve-equipped.json",
+        "prefixSteps": 39,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "slip-witness",
+          "roll": 1
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_witness_door",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/balance-dustline-nerve-equipped.json",
+        "prefixSteps": 38,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "read-scanner",
+          "roll": 1
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_witness_lost",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/emotional-payoff/finale-quiet-unvisited.json",
+        "prefixSteps": 42,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "argue-transfer",
+          "roll": 1
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_witness_plan",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/balance-dustline-nerve-equipped.json",
+        "prefixSteps": 37,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "agree-terms"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_witness_repair",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/emotional-payoff/finale-quiet-unvisited.json",
+        "prefixSteps": 44,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "repair-location"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_witness_return_private",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/balance-dustline-nerve-equipped.json",
+        "prefixSteps": 42,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "hear-witness-pause"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_witness_return_registered",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/emotional-payoff/finale-quiet-unvisited.json",
+        "prefixSteps": 44,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "hear-witness-clinic"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act2_witness_return_relocated",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/emotional-payoff/finale-quiet-unvisited.json",
+        "prefixSteps": 46,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "hear-witness-move"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act2_witness_safe",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/balance-dustline-nerve-equipped.json",
+        "prefixSteps": 41,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "review-account"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_witness_support",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/balance-dustline-nerve-equipped.json",
+        "prefixSteps": 39,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "compare-witness-support"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act2_workshop",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 31,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "visit-workshop"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act3_arrival",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 70,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "face-sera"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act3_chapel_return",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/balance-dustline-nerve-equipped.json",
+        "prefixSteps": 63,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "visit-chapel-return"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act3_craft_archive_return",
+      "classification": "supported legacy save",
+      "witness": {
+        "route": "qa/routes/encounter-craft/archive-badge-scarce.json",
+        "prefixSteps": 54,
+        "features": "exact route factory / supported save",
+        "extraStep": null
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act3_craft_kerr_settlement",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/emotional-payoff/kerr-unfinished-names.json",
+        "prefixSteps": 61,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "craft-settle-kerr"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act3_district_return",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/consequential-expansion/chrome-listed.json",
+        "prefixSteps": 69,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "visit-district-return"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act3_edda_methods",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/catalog-badge.json",
+        "prefixSteps": 53,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "authorize-shift-request"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act3_edda_reply",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/catalog-badge.json",
+        "prefixSteps": 54,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "submit-key-closure"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act3_edda_terms",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/catalog-badge.json",
+        "prefixSteps": 52,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "review-edda-shift"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act3_edda_visit",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-later-funded.json",
+        "prefixSteps": 71,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "visit-edda"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act3_freight_query",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/freight-abandoned.json",
+        "prefixSteps": 60,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "query-freight-receipt"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act3_freight_reflection",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 71,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "reflect-freight-motive"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act3_freight_visit",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 68,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "visit-asa"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act3_kerr_collection",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/balance-dustline-nerve-equipped.json",
+        "prefixSteps": 66,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "visit-kerr-collection"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act3_kerr_collection_response",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/consequential-expansion/chrome-refused.json",
+        "prefixSteps": 85,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "answer-kerr-breach"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act3_kerr_personal_question",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/balance-dustline-nerve-equipped.json",
+        "prefixSteps": 68,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "ask-kerr-personal-question"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act3_lumen_boundary",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/dramatic-sequences/both-owned-company.json",
+        "prefixSteps": 41,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "visit-lumen-boundary"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act3_mara_account_question",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/dramatic-sequences/both-owned-company.json",
+        "prefixSteps": 44,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "mara-account-ask"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act3_mara_account_repair",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/dramatic-sequences/partial-deflected.json",
+        "prefixSteps": 42,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "mara-account-correct"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act3_mara_account_return",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/dramatic-sequences/both-owned-company.json",
+        "prefixSteps": 43,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "mara-account-return"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act3_mara_followup",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/dramatic-sequences/both-owned-company.json",
+        "prefixSteps": 42,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "read-response-intake"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act3_neighborhood",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 67,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "to-ward-nine"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act3_nia_contact",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/balance-dustline-nerve-equipped.json",
+        "prefixSteps": 64,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "ask-nia-contact"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act3_notice_repair",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/notice-relay.json",
+        "prefixSteps": 69,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "repair-public-window"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act3_notice_result",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/notice-relay.json",
+        "prefixSteps": 70,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "fund-private-replies"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act3_notice_visit",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 68,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "visit-notice"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act3_payoff_edda",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/dramatic-beats/badge-scarce.json",
+        "prefixSteps": 53,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "craft-return-edda"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act3_payoff_kerr",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/consequential-expansion/chrome-refused.json",
+        "prefixSteps": 85,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "payoff-kerr-moment"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act3_pump_schedule",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-later-funded.json",
+        "prefixSteps": 74,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "book-pump-inspection"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act3_pump_visit",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-later-funded.json",
+        "prefixSteps": 71,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "visit-pump"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act3_quill_introduction",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/kerr-face.json",
+        "prefixSteps": 66,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "visit-quill-introduction"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act3_ramp_return",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/freight-craft/bare-names.json",
+        "prefixSteps": 66,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "ramp-ask-return"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act3_records_visit",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 68,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "visit-records"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act3_response_visit",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/dramatic-sequences/both-owned-company.json",
+        "prefixSteps": 41,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "visit-mara-response"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act3_return_routing_return",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/return-routing/cancel-after.json",
+        "prefixSteps": 71,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "routing-ask-return"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act3_sera_carry",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 75,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "sera-choose-carry"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act3_sera_reply",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/dramatic-beats/sera-carry.json",
+        "prefixSteps": 84,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "sera-carry-cards"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act3_sera_shift",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 74,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "prepare-public-account"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act3_sera_watch",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 75,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "sera-choose-watch"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act3_shelter_visit",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-gutterwire.json",
+        "prefixSteps": 64,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "visit-shelter-neighbors"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act3_spire_reply",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/spire-late.json",
+        "prefixSteps": 59,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "query-spire-reply"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act3_spire_visit",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-later-funded.json",
+        "prefixSteps": 71,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "visit-spire-key"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act3_testimony_consent",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/consequential-expansion/chrome-listed.json",
+        "prefixSteps": 77,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "scope-corroborated"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act3_testimony_correction",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/consequential-expansion/chrome-listed.json",
+        "prefixSteps": 79,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "claim-key-anyway"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act3_testimony_hearing",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/consequential-expansion/chrome-listed.json",
+        "prefixSteps": 78,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "keep-recording-private"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act3_testimony_nia",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/sera-shift/watch-private.json",
+        "prefixSteps": 58,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "ask-public-permission"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act3_testimony_record",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/consequential-expansion/chrome-listed.json",
+        "prefixSteps": 79,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "answer-corroboration"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act3_testimony_review",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 75,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "sera-decline"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "act3_witness_shift_return",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/navigation-release/route-5.json",
+        "prefixSteps": 49,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "hear-unkept-witness-shift"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "act3_witness_visit",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/balance-dustline-nerve-equipped.json",
+        "prefixSteps": 63,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "visit-nia"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "after_kerr",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 24,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "talk-leave",
+          "roll": 10
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "card_wall",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 65,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "back-to-board"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "card_week",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 26,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "week-after"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "chapel",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 4,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "ask-chapel"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "chapel_method_review",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/depot-build-chrome-failed.json",
+        "prefixSteps": 9,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "inspect-chapel-reader",
+          "roll": 1
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "chapel_methods",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 8,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "prepare-chapel-method"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "chapel_window_exit",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/balance-dustline-nerve-equipped.json",
+        "prefixSteps": 9,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "window-force-hatch",
+          "roll": 10
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "chapel_window_expired",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/balance-dustline-nerve-equipped.json",
+        "prefixSteps": 9,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "window-force-hatch",
+          "roll": 1
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "chapel_window_plan",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 8,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "begin-chapel-window"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "districts",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 28,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "read-board"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "ending_ash",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/dramatic-sequences/partial-deflected.json",
+        "prefixSteps": 17,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "deliver-ash"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "ending_both",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 25,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "both"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "ending_burned",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 25,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "destroy"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "ending_exposed",
+      "classification": "unverified",
+      "witness": null,
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "ending_listed",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/consequential-expansion/chrome-listed.json",
+        "prefixSteps": 75,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "let-ives"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "ending_names",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 74,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "read-names"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "ending_quiet",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 74,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "leave-wall"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "ending_sainted",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/catalog-scarce-mismatch.json",
+        "prefixSteps": 23,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "fight",
+          "roll": 1
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "ending_smashed",
+      "classification": "unverified",
+      "witness": null,
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "ending_sold",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 25,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "sell"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "ending_taken",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 24,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "fight",
+          "roll": 1
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "ending_walk",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/dramatic-beats/direct.json",
+        "prefixSteps": 22,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "kerr-terms-withdraw"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "ending_week_deal",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 45,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "deal"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "ending_week_wards",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 45,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "stand"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "ending_witness",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 74,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "confirm-leak"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "front",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 8,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "pass"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "hatch",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 8,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "hatch"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "hatch_caught",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/navigation-release/route-1.json",
+        "prefixSteps": 13,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "slip-hatch",
+          "roll": 1
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "job_owner",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 4,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "ask-owner"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "kerr",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 12,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "fake-pact",
+          "roll": 1
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "kerr_fight",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 24,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "talk-leave",
+          "roll": 1
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "kerr_terms",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 24,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "kerr-open-terms"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "kerr_terms_bluff",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/dramatic-beats/direct.json",
+        "prefixSteps": 21,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "kerr-terms-lie"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "kerr_terms_bluffed",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/kerr/bluffed-owned.json",
+        "prefixSteps": 25,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "kerr-terms-bluff-check",
+          "roll": 10
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "kerr_terms_exposed",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/kerr/bluffed-owned.json",
+        "prefixSteps": 25,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "kerr-terms-bluff-check",
+          "roll": 1
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "kerr_terms_named",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/kerr/named.json",
+        "prefixSteps": 25,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "kerr-terms-pay"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "kerr_terms_negotiate",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/dramatic-beats/direct.json",
+        "prefixSteps": 21,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "kerr-terms-offer"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "kerr_terms_retreat",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/dramatic-beats/direct.json",
+        "prefixSteps": 21,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "kerr-terms-step-back"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "lumen",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 10,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "search",
+          "roll": 1
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "lumen_cold",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 11,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "lie-stop",
+          "roll": 1
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "lumen_deal",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 11,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "honest"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "mara_why",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 14,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "heard"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "memo",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 13,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "take"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "memory_assurance",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-later-funded.json",
+        "prefixSteps": 21,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "ask-evacuation-assurance"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "memory_challenge",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 20,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "clear-mara"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "memory_channel",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-later-funded.json",
+        "prefixSteps": 21,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "ask-command-contact"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "memory_cross_exam",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 20,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "question-mara"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": false
+    },
+    {
+      "id": "memory_model",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/emotional-payoff/finale-witness-unvisited.json",
+        "prefixSteps": 25,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "leave-sequence-open"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "memory_model_result",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/emotional-payoff/finale-witness-unvisited.json",
+        "prefixSteps": 27,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "verdict-supported"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "memory_model_test",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/emotional-payoff/finale-witness-unvisited.json",
+        "prefixSteps": 26,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "model-absolution"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "memory_publication",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 20,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "separate-decisions"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "memory_reconstruction",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 19,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "reconstruct"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "memory_sequence",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 20,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "assemble-timeline"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "memory_sequence_result",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/emotional-payoff/finale-witness-unvisited.json",
+        "prefixSteps": 24,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "test-timeline"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "memory_table",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 15,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "inspect-hour"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "opening_approach",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 1,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "opening-survival"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "opening_city",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 0,
+        "features": "current UI feature set",
+        "extraStep": null
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "opening_neighbor",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 2,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "hear-stallholder"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "opening_self",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 0,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "begin-opening"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "pay",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 4,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "ask-pay"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "pay_no",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 5,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "haggle",
+          "roll": 1
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "pay_yes",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 5,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "haggle",
+          "roll": 10
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "route",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 4,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "accept"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "side",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 8,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "side"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "stall",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 0,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "skip-opening"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "street_after",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 27,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "into-week"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "undercroft",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 9,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "spoof-door",
+          "roll": 1
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "vault_quiet",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 12,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "pact-break"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "ward_wall",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 68,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "go-wall"
+        }
+      },
+      "priorContinuousUI": true,
+      "targetContinuousUI": true
+    },
+    {
+      "id": "why",
+      "classification": "current reachable",
+      "witness": {
+        "route": "qa/routes/allocation-dustline.json",
+        "prefixSteps": 4,
+        "features": "current UI feature set",
+        "extraStep": {
+          "choiceId": "ask-why"
+        }
+      },
+      "priorContinuousUI": false,
+      "targetContinuousUI": true
+    }
+  ]
+}

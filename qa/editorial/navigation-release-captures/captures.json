@@ -1,0 +1,26 @@
+{
+  "revision": "808b1969904d1987b3b33d4f571ad1c5ae7446db",
+  "dirty": true,
+  "url": "http://127.0.0.1:3132",
+  "method": "Actual built current workshop capture from three passing original decision-flow cases, enlarged type/high contrast/reduced motion; initial full suite has a separate retained new-test timeout. No screenshot editing.",
+  "rows": [
+    {
+      "width": 320,
+      "source": "/tmp/saint-phase20/chromium-first-results/decision-flow-nearby-decis-7d2ff-on-travel-act2-workshop-320-chromium/workshop-review.png",
+      "path": "qa/editorial/navigation-release-captures/workshop-purchase-320.png",
+      "sha256": "40c9bc3ca215346000e9c3fb33f9b29af3e608453e6e1a4ba722983d803efaf7"
+    },
+    {
+      "width": 390,
+      "source": "/tmp/saint-phase20/chromium-first-results/decision-flow-nearby-decis-ebcc1-on-travel-act2-workshop-390-chromium/workshop-review.png",
+      "path": "qa/editorial/navigation-release-captures/workshop-purchase-390.png",
+      "sha256": "31b3185bdcd8ce27bd2c98b0a6e4eaef678e890164473cbc84fb58d2b534d1c5"
+    },
+    {
+      "width": 1440,
+      "source": "/tmp/saint-phase20/chromium-first-results/decision-flow-nearby-decis-a41da-n-travel-act2-workshop-1440-chromium/workshop-review.png",
+      "path": "qa/editorial/navigation-release-captures/workshop-purchase-1440.png",
+      "sha256": "2dc4f8eeec712f85951a7d960dcdfcd9db9589ef539e494b28dec0ec6bf3cb0c"
+    }
+  ]
+}
