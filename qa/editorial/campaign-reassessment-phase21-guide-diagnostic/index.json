@@ -1,0 +1,107 @@
+{
+  "revision": "5c2bdd28d3b4df721d0c590bed2d95c1ca510739",
+  "runId": 41270139873,
+  "artifactId": 13069710524,
+  "artifactSha256": "60cc1ef4ac7dc700b7fa0cfe2976ca9c88ff39b424e3c3508a1c29d1c2e059cd",
+  "artifactBytes": 30153723,
+  "fullZipRetainedOutsideGit": "/tmp/saint-phase21-guide/firefox3.zip",
+  "scope": "Relevant original failure case and full root result/manifests retained; other successful case payloads in original ZIP are not claimed as committed.",
+  "observed": "All22 jobs succeed;7305 clean passes,1 Firefox retry,6 original policy skips. Guide390/full first attempt called native img.decode during progressive image loading and raised Invalid image request. Second attempt passed. Existing image-ready marker must precede native decode; no retry/tolerance/deadline/image/runtime change.",
+  "files": [
+    {
+      "source": "result.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-guide-diagnostic/result.json.gz",
+      "bytes": 19921,
+      "sha256": "c5fc9383c78240f67819414dedbbeaa5a4f9180ad56069eb69452ef39c9d4c23",
+      "rawSha256": "24f661b7e89fed8590492784a505451beac99a94538e85f31e45f21744768b36"
+    },
+    {
+      "source": "test-results/guide-direct-guide-at-390p-b22b9-ading-and-truthful-city-art-firefox/error-context.md",
+      "archive": "qa/editorial/campaign-reassessment-phase21-guide-diagnostic/case/error-context.md.gz",
+      "bytes": 7977,
+      "sha256": "c0f197cb00d49cd109ac08c8245414bc6f2b0315bc6ece98e8b61999fecbb400",
+      "rawSha256": "da92f6b4d1843c2cc2662fbc8111c2793175e648fd0add760454776f76f36405"
+    },
+    {
+      "source": "test-results/guide-direct-guide-at-390p-b22b9-ading-and-truthful-city-art-firefox/test-failed-1.png",
+      "archive": "qa/editorial/campaign-reassessment-phase21-guide-diagnostic/case/test-failed-1.png",
+      "bytes": 259751,
+      "sha256": "5aebf906d788b9098ebc581c0c4c9812dc8444756e6207d5591265f5df3873da"
+    },
+    {
+      "source": "test-results/guide-direct-guide-at-390p-b22b9-ading-and-truthful-city-art-firefox/trace.zip",
+      "archive": "qa/editorial/campaign-reassessment-phase21-guide-diagnostic/case/trace.zip",
+      "bytes": 816739,
+      "sha256": "ccf28361343e753466776147c18c800cdff72200c5d7def567c4cceac4ec050f"
+    },
+    {
+      "source": "Original5c2 guide test before readiness correction",
+      "archive": "qa/editorial/campaign-reassessment-phase21-guide-diagnostic/before-guide.spec.ts.txt",
+      "bytes": 7529,
+      "sha256": "db4398686df4be3e05872cbec82c8fb047c8bcf25baa3d5041c43fae198ccfb9"
+    },
+    {
+      "source": "Exact5c2 completed CI; original one Firefox retry retained",
+      "archive": "qa/editorial/campaign-reassessment-phase21-guide-diagnostic/ci-with-retry.json",
+      "bytes": 4218,
+      "sha256": "4d875eb4710aabef6e84c4c97fe9837c75485eef7892af03496ab63cd3ed0695"
+    },
+    {
+      "source": "Original hosted Firefox3 job log",
+      "archive": "qa/editorial/campaign-reassessment-phase21-guide-diagnostic/firefox3.log.gz",
+      "bytes": 17018,
+      "sha256": "52fa785892f91161d23276a6cdcbe8da756fbc55115f45e451a0eaa9cc3f6f76",
+      "rawSha256": "67acd42cdd870345fac48082ced000a3533411c15fc98329645fea289c4b226e"
+    },
+    {
+      "source": "/tmp/saint-phase21-guide/chromium.log",
+      "archive": "qa/editorial/campaign-reassessment-phase21-guide-diagnostic/chromium.log.gz",
+      "sha256": "5a395478ffce57a271b3aa8ad968bbc7ad8c11d92591c4170b59268f4d204da6",
+      "rawSha256": "a91e324124e0a5d075317bdcaa5fa7e87ce946d3a0260dfa997f951d4ba07f8f",
+      "bytes": 434
+    },
+    {
+      "source": "/tmp/saint-phase21-guide/webkit.log",
+      "archive": "qa/editorial/campaign-reassessment-phase21-guide-diagnostic/webkit.log.gz",
+      "sha256": "40d9e3c8cbd5248091039283e5d0859a3dfb44807c50a8359305652b8654acb6",
+      "rawSha256": "4568ed622f955711b8e95b1556bc01336b3576f29634fb994c6a95688aeeb366",
+      "bytes": 435
+    },
+    {
+      "source": "/tmp/saint-phase21-guide/webkit-report.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-guide-diagnostic/webkit-report.json.gz",
+      "sha256": "df60498e12dc27741d1075f5345e0f2a94727635fcf20c5984a0d90b1ecb4eee",
+      "rawSha256": "26e192d01defb2f5fb2ffadddb81608303e8f639ba4db06514d38dc245c749c1",
+      "bytes": 1544
+    },
+    {
+      "source": "/tmp/saint-phase21-guide/public-inventory.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-guide-diagnostic/public-inventory.json.gz",
+      "sha256": "23ab701884650d94954ead25e6f0b96c88332d2d4685c9144645c9f08942e51d",
+      "rawSha256": "bfa51cc3d48f02430149d2a711d1cef2ff8c864d9401d6005475bd4d4056a59e",
+      "bytes": 17420
+    }
+  ],
+  "correction": {
+    "scope": "One existing data-ready wait after viewport entry and before original native decode; original src/accessibility/overflow/navigation/save and negative-lore assertions unchanged. No runtime/source/media or timeout/worker/retry/skip change.",
+    "local": {
+      "chromium": 3,
+      "webkit": 3,
+      "workers": 4,
+      "retries": 0,
+      "sourceHead": "5c2bdd28d3b4df721d0c590bed2d95c1ca510739",
+      "dirty": true,
+      "chromiumTarget": "Actual public deployment with corrected uncommitted test",
+      "webkitTarget": "Local unchanged application build"
+    },
+    "fullInventoryUnchanged": 7312,
+    "newPublicCoverage": 471,
+    "gradeUnchanged": 9.0
+  },
+  "newPublicInventoryVerified": {
+    "total": 471,
+    "guideCases": 7,
+    "precedingCasesRetained": 464,
+    "mediaTargets": 275
+  }
+}

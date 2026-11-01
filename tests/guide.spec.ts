@@ -37,7 +37,7 @@ for(const [width,artwork] of [[390,'full'],[1440,'full'],[320,'none']] as const)
   await expect(page.getByTestId('guide-screen')).not.toContainText('coolant dump');
   await expect(page.getByTestId('guide-screen')).not.toContainText('Three hundred');
   if(artwork==='none'){await expect(page.getByTestId('scene-illustration')).toHaveCount(0);expect(requests).toEqual([]);}
-  else{const image=page.getByTestId('scene-illustration').locator('img');await expect(image).toHaveAttribute('src','/art/opening.jpg');await image.scrollIntoViewIfNeeded();await image.evaluate((image:HTMLImageElement)=>image.decode());}
+  else{const image=page.getByTestId('scene-illustration').locator('img');await expect(image).toHaveAttribute('src','/art/opening.jpg');await image.scrollIntoViewIfNeeded();await expect(image.locator('xpath=..')).toHaveAttribute('data-ready','true');await image.evaluate((image:HTMLImageElement)=>image.decode());}
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
   expect((await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze()).violations).toEqual([]);
   await keyboardActivate(page,page.getByRole('link',{name:'Choices & dice',exact:true}));await expect(page).toHaveURL(/#guide-checks$/);

@@ -1,0 +1,180 @@
+{
+  "revision": "5c2bdd28d3b4df721d0c590bed2d95c1ca510739",
+  "runId": 41270139873,
+  "runAttempt": 1,
+  "status": "completed",
+  "conclusion": "success",
+  "url": "https://github.com/cisohabitat/CyberPunk3055RPG/actions/runs/41270139873",
+  "jobs": [
+    {
+      "id": 124741057341,
+      "name": "Test",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124741776596,
+      "name": "Browser shard (chromium, 3/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124741776606,
+      "name": "Browser shard (chromium, 2/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124741776619,
+      "name": "Browser shard (firefox, 1/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124741776621,
+      "name": "Browser shard (firefox, 4/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124741776630,
+      "name": "Browser shard (webkit, 4/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124741776647,
+      "name": "Browser shard (phone, 4/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124741776649,
+      "name": "Browser shard (chromium, 4/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124741776662,
+      "name": "Browser shard (phone, 2/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124741776672,
+      "name": "Browser shard (webkit, 1/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124741776689,
+      "name": "Browser shard (firefox, 2/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124741776701,
+      "name": "Browser shard (chromium, 1/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124741776702,
+      "name": "Browser shard (webkit, 3/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124741776726,
+      "name": "Browser shard (firefox, 3/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124741776731,
+      "name": "Browser shard (phone, 1/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124741776743,
+      "name": "Browser shard (phone, 3/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124741776762,
+      "name": "Browser shard (webkit, 2/4)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124745684355,
+      "name": "Browser (firefox)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124745684382,
+      "name": "Browser (chromium)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124745684386,
+      "name": "Browser (webkit)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124745684409,
+      "name": "Browser (phone)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124745826145,
+      "name": "Build",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ],
+  "metrics": [
+    {
+      "project": "firefox",
+      "revision": "5c2bdd28d3b4df721d0c590bed2d95c1ca510739",
+      "total": 1828,
+      "passed": 1825,
+      "flaky": 1,
+      "skipped": 2,
+      "longestShardSeconds": 847.1
+    },
+    {
+      "project": "chromium",
+      "revision": "5c2bdd28d3b4df721d0c590bed2d95c1ca510739",
+      "total": 1828,
+      "passed": 1828,
+      "flaky": 0,
+      "skipped": 0,
+      "longestShardSeconds": 611.9
+    },
+    {
+      "project": "webkit",
+      "revision": "5c2bdd28d3b4df721d0c590bed2d95c1ca510739",
+      "total": 1828,
+      "passed": 1826,
+      "flaky": 0,
+      "skipped": 2,
+      "longestShardSeconds": 1190.4
+    },
+    {
+      "project": "phone",
+      "revision": "5c2bdd28d3b4df721d0c590bed2d95c1ca510739",
+      "total": 1828,
+      "passed": 1826,
+      "flaky": 0,
+      "skipped": 2,
+      "longestShardSeconds": 603.3
+    }
+  ]
+}
