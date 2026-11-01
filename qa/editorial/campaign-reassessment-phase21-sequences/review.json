@@ -1,0 +1,2547 @@
+{
+  "revision": "2cc912f55cbf82ce2cffd6d3cb271b5e15a9209f",
+  "dirty": false,
+  "rows": [
+    {
+      "id": "quill-agreement",
+      "width": 320,
+      "sceneId": "pay_yes",
+      "actor": "Quill",
+      "illustration": {
+        "src": "/art/sequence-quill-agreement.jpg",
+        "small": "/art/sequence-quill-agreement-small.jpg",
+        "caption": "Ward Four · an advance, still conditional",
+        "description": "Quill rests two fingertips on a plain chip on his own side of the stall counter; his other hand stays beside the untouched bowl. No payment changes hands."
+      },
+      "state": {
+        "version": 2,
+        "handle": "Replay",
+        "givenName": "Ada",
+        "origin": "spire",
+        "complication": "on-file",
+        "stats": {
+          "chrome": 5,
+          "nerve": 2,
+          "face": 2,
+          "ghost": 1
+        },
+        "factions": {
+          "quill": 0,
+          "lumen": 0,
+          "helion": 3,
+          "wards": 0
+        },
+        "creds": 100,
+        "strain": 0,
+        "items": [],
+        "flags": {
+          "kerr_terms_enabled": true,
+          "mara_account_enabled": true,
+          "witness_returns_enabled": true,
+          "encounter_craft_enabled": true,
+          "emotional_payoffs_enabled": true,
+          "freight_craft_enabled": true,
+          "sera_shift_enabled": true,
+          "dramatic_beats_enabled": true,
+          "consequential_methods_enabled": true,
+          "consequential_expansion_enabled": true,
+          "dramatic_sequence_art_enabled": true,
+          "return_routing_enabled": true,
+          "on_file": true,
+          "opening_survival": true,
+          "opening_neighbor_heard": true,
+          "met_stallholder": true,
+          "opening_complete": true,
+          "dramatic_quill_greeted": true,
+          "met_quill": true,
+          "haggled": true
+        },
+        "journal": [
+          {
+            "id": "quill-agreed-to-ninety-up-front",
+            "text": "Quill agreed to ninety up front."
+          }
+        ],
+        "chapters": [],
+        "rolls": [
+          {
+            "label": "Push Quill",
+            "roll": 8,
+            "total": 10,
+            "dc": 8,
+            "success": true
+          }
+        ],
+        "log": [
+          "Walk toward the stall.",
+          "Keep tomorrow paid for.",
+          "Ask her what she means.",
+          "Sit down and hear Quill’s offer.",
+          "Discuss the advance.",
+          "Push the advance."
+        ],
+        "sceneId": "pay_yes"
+      },
+      "capture": "/tmp/saint-phase21/sequences/quill-agreement-320.png",
+      "errors": [],
+      "overflow": false,
+      "method": "Current public UI at a checkpoint derived through existing legal full-route choices. Enlarged/high-contrast, quiet; artwork explicitly entered viewport and decoded before capture. Diagnostic scroll, not an initial entry or continuous campaign."
+    },
+    {
+      "id": "quill-agreement",
+      "width": 390,
+      "sceneId": "pay_yes",
+      "actor": "Quill",
+      "illustration": {
+        "src": "/art/sequence-quill-agreement.jpg",
+        "small": "/art/sequence-quill-agreement-small.jpg",
+        "caption": "Ward Four · an advance, still conditional",
+        "description": "Quill rests two fingertips on a plain chip on his own side of the stall counter; his other hand stays beside the untouched bowl. No payment changes hands."
+      },
+      "state": {
+        "version": 2,
+        "handle": "Replay",
+        "givenName": "Ada",
+        "origin": "spire",
+        "complication": "on-file",
+        "stats": {
+          "chrome": 5,
+          "nerve": 2,
+          "face": 2,
+          "ghost": 1
+        },
+        "factions": {
+          "quill": 0,
+          "lumen": 0,
+          "helion": 3,
+          "wards": 0
+        },
+        "creds": 100,
+        "strain": 0,
+        "items": [],
+        "flags": {
+          "kerr_terms_enabled": true,
+          "mara_account_enabled": true,
+          "witness_returns_enabled": true,
+          "encounter_craft_enabled": true,
+          "emotional_payoffs_enabled": true,
+          "freight_craft_enabled": true,
+          "sera_shift_enabled": true,
+          "dramatic_beats_enabled": true,
+          "consequential_methods_enabled": true,
+          "consequential_expansion_enabled": true,
+          "dramatic_sequence_art_enabled": true,
+          "return_routing_enabled": true,
+          "on_file": true,
+          "opening_survival": true,
+          "opening_neighbor_heard": true,
+          "met_stallholder": true,
+          "opening_complete": true,
+          "dramatic_quill_greeted": true,
+          "met_quill": true,
+          "haggled": true
+        },
+        "journal": [
+          {
+            "id": "quill-agreed-to-ninety-up-front",
+            "text": "Quill agreed to ninety up front."
+          }
+        ],
+        "chapters": [],
+        "rolls": [
+          {
+            "label": "Push Quill",
+            "roll": 8,
+            "total": 10,
+            "dc": 8,
+            "success": true
+          }
+        ],
+        "log": [
+          "Walk toward the stall.",
+          "Keep tomorrow paid for.",
+          "Ask her what she means.",
+          "Sit down and hear Quill’s offer.",
+          "Discuss the advance.",
+          "Push the advance."
+        ],
+        "sceneId": "pay_yes"
+      },
+      "capture": "/tmp/saint-phase21/sequences/quill-agreement-390.png",
+      "errors": [],
+      "overflow": false,
+      "method": "Current public UI at a checkpoint derived through existing legal full-route choices. Enlarged/high-contrast, quiet; artwork explicitly entered viewport and decoded before capture. Diagnostic scroll, not an initial entry or continuous campaign."
+    },
+    {
+      "id": "quill-agreement",
+      "width": 1440,
+      "sceneId": "pay_yes",
+      "actor": "Quill",
+      "illustration": {
+        "src": "/art/sequence-quill-agreement.jpg",
+        "small": "/art/sequence-quill-agreement-small.jpg",
+        "caption": "Ward Four · an advance, still conditional",
+        "description": "Quill rests two fingertips on a plain chip on his own side of the stall counter; his other hand stays beside the untouched bowl. No payment changes hands."
+      },
+      "state": {
+        "version": 2,
+        "handle": "Replay",
+        "givenName": "Ada",
+        "origin": "spire",
+        "complication": "on-file",
+        "stats": {
+          "chrome": 5,
+          "nerve": 2,
+          "face": 2,
+          "ghost": 1
+        },
+        "factions": {
+          "quill": 0,
+          "lumen": 0,
+          "helion": 3,
+          "wards": 0
+        },
+        "creds": 100,
+        "strain": 0,
+        "items": [],
+        "flags": {
+          "kerr_terms_enabled": true,
+          "mara_account_enabled": true,
+          "witness_returns_enabled": true,
+          "encounter_craft_enabled": true,
+          "emotional_payoffs_enabled": true,
+          "freight_craft_enabled": true,
+          "sera_shift_enabled": true,
+          "dramatic_beats_enabled": true,
+          "consequential_methods_enabled": true,
+          "consequential_expansion_enabled": true,
+          "dramatic_sequence_art_enabled": true,
+          "return_routing_enabled": true,
+          "on_file": true,
+          "opening_survival": true,
+          "opening_neighbor_heard": true,
+          "met_stallholder": true,
+          "opening_complete": true,
+          "dramatic_quill_greeted": true,
+          "met_quill": true,
+          "haggled": true
+        },
+        "journal": [
+          {
+            "id": "quill-agreed-to-ninety-up-front",
+            "text": "Quill agreed to ninety up front."
+          }
+        ],
+        "chapters": [],
+        "rolls": [
+          {
+            "label": "Push Quill",
+            "roll": 8,
+            "total": 10,
+            "dc": 8,
+            "success": true
+          }
+        ],
+        "log": [
+          "Walk toward the stall.",
+          "Keep tomorrow paid for.",
+          "Ask her what she means.",
+          "Sit down and hear Quill’s offer.",
+          "Discuss the advance.",
+          "Push the advance."
+        ],
+        "sceneId": "pay_yes"
+      },
+      "capture": "/tmp/saint-phase21/sequences/quill-agreement-1440.png",
+      "errors": [],
+      "overflow": false,
+      "method": "Current public UI at a checkpoint derived through existing legal full-route choices. Enlarged/high-contrast, quiet; artwork explicitly entered viewport and decoded before capture. Diagnostic scroll, not an initial entry or continuous campaign."
+    },
+    {
+      "id": "quill-refusal",
+      "width": 320,
+      "sceneId": "pay_no",
+      "actor": "Quill",
+      "illustration": {
+        "src": "/art/sequence-quill-refusal.jpg",
+        "small": "/art/sequence-quill-refusal-small.jpg",
+        "caption": "Ward Four · the offer stays at fifty",
+        "description": "Quill holds a guarded posture beside the bowl; the plain chip stays back on his side of the counter. His visible hand and folded arm remain separate, with no transfer."
+      },
+      "state": {
+        "version": 2,
+        "handle": "Low Reserve",
+        "givenName": "Ada",
+        "origin": "spire",
+        "complication": "debt",
+        "stats": {
+          "chrome": 3,
+          "nerve": 2,
+          "face": 2,
+          "ghost": 3
+        },
+        "factions": {
+          "quill": 1,
+          "lumen": 0,
+          "helion": 1,
+          "wards": 0
+        },
+        "creds": 60,
+        "strain": 1,
+        "items": [],
+        "flags": {
+          "kerr_terms_enabled": true,
+          "mara_account_enabled": true,
+          "witness_returns_enabled": true,
+          "encounter_craft_enabled": true,
+          "emotional_payoffs_enabled": true,
+          "freight_craft_enabled": true,
+          "sera_shift_enabled": true,
+          "dramatic_beats_enabled": true,
+          "consequential_methods_enabled": true,
+          "consequential_expansion_enabled": true,
+          "dramatic_sequence_art_enabled": true,
+          "return_routing_enabled": true,
+          "debt": true,
+          "opening_survival": true,
+          "opening_neighbor_heard": true,
+          "met_stallholder": true,
+          "opening_complete": true,
+          "dramatic_quill_greeted": true,
+          "met_quill": true,
+          "haggle_failed": true
+        },
+        "journal": [],
+        "chapters": [],
+        "rolls": [
+          {
+            "label": "Push Quill",
+            "roll": 1,
+            "total": 3,
+            "dc": 8,
+            "success": false
+          }
+        ],
+        "log": [
+          "Walk toward the stall.",
+          "Keep tomorrow paid for.",
+          "Ask her what she means.",
+          "Sit down and hear Quill’s offer.",
+          "Discuss the advance.",
+          "Push the advance."
+        ],
+        "sceneId": "pay_no"
+      },
+      "capture": "/tmp/saint-phase21/sequences/quill-refusal-320.png",
+      "errors": [],
+      "overflow": false,
+      "method": "Current public UI at a checkpoint derived through existing legal full-route choices. Enlarged/high-contrast, quiet; artwork explicitly entered viewport and decoded before capture. Diagnostic scroll, not an initial entry or continuous campaign."
+    },
+    {
+      "id": "quill-refusal",
+      "width": 390,
+      "sceneId": "pay_no",
+      "actor": "Quill",
+      "illustration": {
+        "src": "/art/sequence-quill-refusal.jpg",
+        "small": "/art/sequence-quill-refusal-small.jpg",
+        "caption": "Ward Four · the offer stays at fifty",
+        "description": "Quill holds a guarded posture beside the bowl; the plain chip stays back on his side of the counter. His visible hand and folded arm remain separate, with no transfer."
+      },
+      "state": {
+        "version": 2,
+        "handle": "Low Reserve",
+        "givenName": "Ada",
+        "origin": "spire",
+        "complication": "debt",
+        "stats": {
+          "chrome": 3,
+          "nerve": 2,
+          "face": 2,
+          "ghost": 3
+        },
+        "factions": {
+          "quill": 1,
+          "lumen": 0,
+          "helion": 1,
+          "wards": 0
+        },
+        "creds": 60,
+        "strain": 1,
+        "items": [],
+        "flags": {
+          "kerr_terms_enabled": true,
+          "mara_account_enabled": true,
+          "witness_returns_enabled": true,
+          "encounter_craft_enabled": true,
+          "emotional_payoffs_enabled": true,
+          "freight_craft_enabled": true,
+          "sera_shift_enabled": true,
+          "dramatic_beats_enabled": true,
+          "consequential_methods_enabled": true,
+          "consequential_expansion_enabled": true,
+          "dramatic_sequence_art_enabled": true,
+          "return_routing_enabled": true,
+          "debt": true,
+          "opening_survival": true,
+          "opening_neighbor_heard": true,
+          "met_stallholder": true,
+          "opening_complete": true,
+          "dramatic_quill_greeted": true,
+          "met_quill": true,
+          "haggle_failed": true
+        },
+        "journal": [],
+        "chapters": [],
+        "rolls": [
+          {
+            "label": "Push Quill",
+            "roll": 1,
+            "total": 3,
+            "dc": 8,
+            "success": false
+          }
+        ],
+        "log": [
+          "Walk toward the stall.",
+          "Keep tomorrow paid for.",
+          "Ask her what she means.",
+          "Sit down and hear Quill’s offer.",
+          "Discuss the advance.",
+          "Push the advance."
+        ],
+        "sceneId": "pay_no"
+      },
+      "capture": "/tmp/saint-phase21/sequences/quill-refusal-390.png",
+      "errors": [],
+      "overflow": false,
+      "method": "Current public UI at a checkpoint derived through existing legal full-route choices. Enlarged/high-contrast, quiet; artwork explicitly entered viewport and decoded before capture. Diagnostic scroll, not an initial entry or continuous campaign."
+    },
+    {
+      "id": "quill-refusal",
+      "width": 1440,
+      "sceneId": "pay_no",
+      "actor": "Quill",
+      "illustration": {
+        "src": "/art/sequence-quill-refusal.jpg",
+        "small": "/art/sequence-quill-refusal-small.jpg",
+        "caption": "Ward Four · the offer stays at fifty",
+        "description": "Quill holds a guarded posture beside the bowl; the plain chip stays back on his side of the counter. His visible hand and folded arm remain separate, with no transfer."
+      },
+      "state": {
+        "version": 2,
+        "handle": "Low Reserve",
+        "givenName": "Ada",
+        "origin": "spire",
+        "complication": "debt",
+        "stats": {
+          "chrome": 3,
+          "nerve": 2,
+          "face": 2,
+          "ghost": 3
+        },
+        "factions": {
+          "quill": 1,
+          "lumen": 0,
+          "helion": 1,
+          "wards": 0
+        },
+        "creds": 60,
+        "strain": 1,
+        "items": [],
+        "flags": {
+          "kerr_terms_enabled": true,
+          "mara_account_enabled": true,
+          "witness_returns_enabled": true,
+          "encounter_craft_enabled": true,
+          "emotional_payoffs_enabled": true,
+          "freight_craft_enabled": true,
+          "sera_shift_enabled": true,
+          "dramatic_beats_enabled": true,
+          "consequential_methods_enabled": true,
+          "consequential_expansion_enabled": true,
+          "dramatic_sequence_art_enabled": true,
+          "return_routing_enabled": true,
+          "debt": true,
+          "opening_survival": true,
+          "opening_neighbor_heard": true,
+          "met_stallholder": true,
+          "opening_complete": true,
+          "dramatic_quill_greeted": true,
+          "met_quill": true,
+          "haggle_failed": true
+        },
+        "journal": [],
+        "chapters": [],
+        "rolls": [
+          {
+            "label": "Push Quill",
+            "roll": 1,
+            "total": 3,
+            "dc": 8,
+            "success": false
+          }
+        ],
+        "log": [
+          "Walk toward the stall.",
+          "Keep tomorrow paid for.",
+          "Ask her what she means.",
+          "Sit down and hear Quill’s offer.",
+          "Discuss the advance.",
+          "Push the advance."
+        ],
+        "sceneId": "pay_no"
+      },
+      "capture": "/tmp/saint-phase21/sequences/quill-refusal-1440.png",
+      "errors": [],
+      "overflow": false,
+      "method": "Current public UI at a checkpoint derived through existing legal full-route choices. Enlarged/high-contrast, quiet; artwork explicitly entered viewport and decoded before capture. Diagnostic scroll, not an initial entry or continuous campaign."
+    },
+    {
+      "id": "edda-request",
+      "width": 320,
+      "sceneId": "act2_craft_archive_ledger",
+      "actor": "Edda",
+      "illustration": {
+        "src": "/art/sequence-edda-request.jpg",
+        "small": "/art/sequence-edda-request-small.jpg",
+        "caption": "Helion · before a name goes on the request",
+        "description": "Edda pauses with a pencil above a blank unsigned request sheet, her other hand open beside it. The closed ledger stays separate under the archive lamp."
+      },
+      "state": {
+        "version": 2,
+        "handle": "Replay",
+        "givenName": "Ada",
+        "origin": "spire",
+        "complication": "on-file",
+        "stats": {
+          "chrome": 5,
+          "nerve": 2,
+          "face": 2,
+          "ghost": 1
+        },
+        "factions": {
+          "quill": 2,
+          "lumen": 2,
+          "helion": 2,
+          "wards": 1
+        },
+        "creds": 390,
+        "strain": 1,
+        "items": [
+          "signal-baffle"
+        ],
+        "flags": {
+          "kerr_terms_enabled": true,
+          "mara_account_enabled": true,
+          "witness_returns_enabled": true,
+          "encounter_craft_enabled": true,
+          "emotional_payoffs_enabled": true,
+          "freight_craft_enabled": true,
+          "sera_shift_enabled": true,
+          "dramatic_beats_enabled": true,
+          "consequential_methods_enabled": true,
+          "consequential_expansion_enabled": true,
+          "dramatic_sequence_art_enabled": true,
+          "return_routing_enabled": true,
+          "on_file": true,
+          "opening_survival": true,
+          "opening_neighbor_heard": true,
+          "met_stallholder": true,
+          "opening_complete": true,
+          "dramatic_quill_greeted": true,
+          "met_quill": true,
+          "haggled": true,
+          "hired": true,
+          "chapel_window_started": true,
+          "chapel_window_scouted": true,
+          "chapel_window_entered": true,
+          "chapel_window_ghost": true,
+          "quiet": true,
+          "chapel_window_0": true,
+          "chapel_window_done": true,
+          "chapel_window_quiet_exit": true,
+          "knows_truth": true,
+          "honest": true,
+          "met_lumen": true,
+          "pact_copy": true,
+          "lumen_here": true,
+          "copied": true,
+          "met_mara": true,
+          "heard_memo": true,
+          "memory_signature": true,
+          "memory_order": true,
+          "memory_roster": true,
+          "memory_reconstructed": true,
+          "memory_prepared": true,
+          "memory_intact": true,
+          "kerr_talked": true,
+          "met_kerr": true,
+          "act1_done": true,
+          "act1_both": true,
+          "perk_trained": true,
+          "perk_face": true,
+          "origin_done": true,
+          "origin_helped": true,
+          "met_ives": true,
+          "met_edda": true,
+          "met_ren": true,
+          "archive_briefed": true,
+          "archive_indexed": true,
+          "craft_read_export": true,
+          "craft_read_plant": true,
+          "craft_read_movement": true,
+          "craft_scope_movement": true
+        },
+        "journal": [
+          {
+            "id": "quill-agreed-to-ninety-up-front",
+            "text": "Quill agreed to ninety up front."
+          },
+          {
+            "id": "quill-hired-you-to-lift-mara-voss-s-unedited-hou",
+            "text": "Quill hired you to lift Mara Voss's unedited hour from Glass Chapel."
+          },
+          {
+            "id": "ward-nine",
+            "text": "Mara Voss signed the Ward Nine coolant dump. Three hundred people, one memo."
+          },
+          {
+            "id": "shard-copy",
+            "text": "A second copy of Mara's hour exists."
+          },
+          {
+            "id": "memory-signature",
+            "text": "Mara authorizes the flush. She says the tower promised an evacuation. The signature proves authorization; her explanation still needs corroboration.",
+            "kind": "claim"
+          },
+          {
+            "id": "memory-order",
+            "text": "The exported receipt records an instruction canceling evacuation while retaining the flush. Its contents are visible; the issuing key still needs independent verification during The Week.",
+            "kind": "fact"
+          },
+          {
+            "id": "memory-roster",
+            "text": "Ivo Pell and Junie Calder were on shift. Nia Pell signed the housing slip and reached a service exit. She can corroborate the receipt, but a public roster would expose where she sleeps.",
+            "kind": "fact"
+          },
+          {
+            "id": "memory-analysis",
+            "text": "Mara authorized the flush before the recorded evacuation cancellation. The receipt's issuer needs independent corroboration; her explanation is not absolution.",
+            "kind": "claim"
+          },
+          {
+            "id": "public-packet",
+            "text": "The packet reports an evacuation cancellation after Mara's signature and explicitly marks the issuing key unverified.",
+            "kind": "claim"
+          },
+          {
+            "id": "archive-promise",
+            "text": "Trace the tower receipt to corroborate Mara's hour.",
+            "kind": "promise"
+          }
+        ],
+        "chapters": [
+          "Two Fires"
+        ],
+        "rolls": [
+          {
+            "label": "Map the command index",
+            "roll": 8,
+            "total": 14,
+            "dc": 7,
+            "success": true
+          },
+          {
+            "label": "Close the maintenance key",
+            "roll": 8,
+            "total": 14,
+            "dc": 9,
+            "success": true
+          },
+          {
+            "label": "Walk past Kerr",
+            "roll": 8,
+            "total": 13,
+            "dc": 8,
+            "success": true
+          },
+          {
+            "label": "Copy the hour",
+            "roll": 8,
+            "total": 14,
+            "dc": 10,
+            "success": true
+          },
+          {
+            "label": "Cross the service interval",
+            "roll": 8,
+            "total": 11,
+            "dc": 8,
+            "success": true
+          },
+          {
+            "label": "Push Quill",
+            "roll": 8,
+            "total": 10,
+            "dc": 8,
+            "success": true
+          }
+        ],
+        "log": [
+          "Keep Mara's authorization and the later counter-order separate.",
+          "Describe the cancellation. Mark the issuing key unverified.",
+          "Preserve the complete archive.",
+          "Convince him to let you walk.",
+          "Quill gets the original. The copy gets out.",
+          "The week after.",
+          "Walk out into the week.",
+          "Learn one thing from the night.",
+          "Read the room",
+          "Read the board.",
+          "Call the contact who knew you before this job.",
+          "Revoke Edda's old key.",
+          "Return to the board.",
+          "Helion Spire",
+          "Hear the price.",
+          "Refuse the tower.",
+          "Trace Helion's counter-order.",
+          "Agree to compare sources and decide custody afterward.",
+          "Compare the index against the receipt number.",
+          "Work out which part of the order changed.",
+          "Inspect the export receipt.",
+          "Inspect the plant-service catalog.",
+          "Inspect the shift-movement catalog.",
+          "Did the shift record the evacuation change? Retrieve the movement page."
+        ],
+        "sceneId": "act2_craft_archive_ledger"
+      },
+      "capture": "/tmp/saint-phase21/sequences/edda-request-320.png",
+      "errors": [],
+      "overflow": false,
+      "method": "Current public UI at a checkpoint derived through existing legal full-route choices. Enlarged/high-contrast, quiet; artwork explicitly entered viewport and decoded before capture. Diagnostic scroll, not an initial entry or continuous campaign."
+    },
+    {
+      "id": "edda-request",
+      "width": 390,
+      "sceneId": "act2_craft_archive_ledger",
+      "actor": "Edda",
+      "illustration": {
+        "src": "/art/sequence-edda-request.jpg",
+        "small": "/art/sequence-edda-request-small.jpg",
+        "caption": "Helion · before a name goes on the request",
+        "description": "Edda pauses with a pencil above a blank unsigned request sheet, her other hand open beside it. The closed ledger stays separate under the archive lamp."
+      },
+      "state": {
+        "version": 2,
+        "handle": "Replay",
+        "givenName": "Ada",
+        "origin": "spire",
+        "complication": "on-file",
+        "stats": {
+          "chrome": 5,
+          "nerve": 2,
+          "face": 2,
+          "ghost": 1
+        },
+        "factions": {
+          "quill": 2,
+          "lumen": 2,
+          "helion": 2,
+          "wards": 1
+        },
+        "creds": 390,
+        "strain": 1,
+        "items": [
+          "signal-baffle"
+        ],
+        "flags": {
+          "kerr_terms_enabled": true,
+          "mara_account_enabled": true,
+          "witness_returns_enabled": true,
+          "encounter_craft_enabled": true,
+          "emotional_payoffs_enabled": true,
+          "freight_craft_enabled": true,
+          "sera_shift_enabled": true,
+          "dramatic_beats_enabled": true,
+          "consequential_methods_enabled": true,
+          "consequential_expansion_enabled": true,
+          "dramatic_sequence_art_enabled": true,
+          "return_routing_enabled": true,
+          "on_file": true,
+          "opening_survival": true,
+          "opening_neighbor_heard": true,
+          "met_stallholder": true,
+          "opening_complete": true,
+          "dramatic_quill_greeted": true,
+          "met_quill": true,
+          "haggled": true,
+          "hired": true,
+          "chapel_window_started": true,
+          "chapel_window_scouted": true,
+          "chapel_window_entered": true,
+          "chapel_window_ghost": true,
+          "quiet": true,
+          "chapel_window_0": true,
+          "chapel_window_done": true,
+          "chapel_window_quiet_exit": true,
+          "knows_truth": true,
+          "honest": true,
+          "met_lumen": true,
+          "pact_copy": true,
+          "lumen_here": true,
+          "copied": true,
+          "met_mara": true,
+          "heard_memo": true,
+          "memory_signature": true,
+          "memory_order": true,
+          "memory_roster": true,
+          "memory_reconstructed": true,
+          "memory_prepared": true,
+          "memory_intact": true,
+          "kerr_talked": true,
+          "met_kerr": true,
+          "act1_done": true,
+          "act1_both": true,
+          "perk_trained": true,
+          "perk_face": true,
+          "origin_done": true,
+          "origin_helped": true,
+          "met_ives": true,
+          "met_edda": true,
+          "met_ren": true,
+          "archive_briefed": true,
+          "archive_indexed": true,
+          "craft_read_export": true,
+          "craft_read_plant": true,
+          "craft_read_movement": true,
+          "craft_scope_movement": true
+        },
+        "journal": [
+          {
+            "id": "quill-agreed-to-ninety-up-front",
+            "text": "Quill agreed to ninety up front."
+          },
+          {
+            "id": "quill-hired-you-to-lift-mara-voss-s-unedited-hou",
+            "text": "Quill hired you to lift Mara Voss's unedited hour from Glass Chapel."
+          },
+          {
+            "id": "ward-nine",
+            "text": "Mara Voss signed the Ward Nine coolant dump. Three hundred people, one memo."
+          },
+          {
+            "id": "shard-copy",
+            "text": "A second copy of Mara's hour exists."
+          },
+          {
+            "id": "memory-signature",
+            "text": "Mara authorizes the flush. She says the tower promised an evacuation. The signature proves authorization; her explanation still needs corroboration.",
+            "kind": "claim"
+          },
+          {
+            "id": "memory-order",
+            "text": "The exported receipt records an instruction canceling evacuation while retaining the flush. Its contents are visible; the issuing key still needs independent verification during The Week.",
+            "kind": "fact"
+          },
+          {
+            "id": "memory-roster",
+            "text": "Ivo Pell and Junie Calder were on shift. Nia Pell signed the housing slip and reached a service exit. She can corroborate the receipt, but a public roster would expose where she sleeps.",
+            "kind": "fact"
+          },
+          {
+            "id": "memory-analysis",
+            "text": "Mara authorized the flush before the recorded evacuation cancellation. The receipt's issuer needs independent corroboration; her explanation is not absolution.",
+            "kind": "claim"
+          },
+          {
+            "id": "public-packet",
+            "text": "The packet reports an evacuation cancellation after Mara's signature and explicitly marks the issuing key unverified.",
+            "kind": "claim"
+          },
+          {
+            "id": "archive-promise",
+            "text": "Trace the tower receipt to corroborate Mara's hour.",
+            "kind": "promise"
+          }
+        ],
+        "chapters": [
+          "Two Fires"
+        ],
+        "rolls": [
+          {
+            "label": "Map the command index",
+            "roll": 8,
+            "total": 14,
+            "dc": 7,
+            "success": true
+          },
+          {
+            "label": "Close the maintenance key",
+            "roll": 8,
+            "total": 14,
+            "dc": 9,
+            "success": true
+          },
+          {
+            "label": "Walk past Kerr",
+            "roll": 8,
+            "total": 13,
+            "dc": 8,
+            "success": true
+          },
+          {
+            "label": "Copy the hour",
+            "roll": 8,
+            "total": 14,
+            "dc": 10,
+            "success": true
+          },
+          {
+            "label": "Cross the service interval",
+            "roll": 8,
+            "total": 11,
+            "dc": 8,
+            "success": true
+          },
+          {
+            "label": "Push Quill",
+            "roll": 8,
+            "total": 10,
+            "dc": 8,
+            "success": true
+          }
+        ],
+        "log": [
+          "Keep Mara's authorization and the later counter-order separate.",
+          "Describe the cancellation. Mark the issuing key unverified.",
+          "Preserve the complete archive.",
+          "Convince him to let you walk.",
+          "Quill gets the original. The copy gets out.",
+          "The week after.",
+          "Walk out into the week.",
+          "Learn one thing from the night.",
+          "Read the room",
+          "Read the board.",
+          "Call the contact who knew you before this job.",
+          "Revoke Edda's old key.",
+          "Return to the board.",
+          "Helion Spire",
+          "Hear the price.",
+          "Refuse the tower.",
+          "Trace Helion's counter-order.",
+          "Agree to compare sources and decide custody afterward.",
+          "Compare the index against the receipt number.",
+          "Work out which part of the order changed.",
+          "Inspect the export receipt.",
+          "Inspect the plant-service catalog.",
+          "Inspect the shift-movement catalog.",
+          "Did the shift record the evacuation change? Retrieve the movement page."
+        ],
+        "sceneId": "act2_craft_archive_ledger"
+      },
+      "capture": "/tmp/saint-phase21/sequences/edda-request-390.png",
+      "errors": [],
+      "overflow": false,
+      "method": "Current public UI at a checkpoint derived through existing legal full-route choices. Enlarged/high-contrast, quiet; artwork explicitly entered viewport and decoded before capture. Diagnostic scroll, not an initial entry or continuous campaign."
+    },
+    {
+      "id": "edda-request",
+      "width": 1440,
+      "sceneId": "act2_craft_archive_ledger",
+      "actor": "Edda",
+      "illustration": {
+        "src": "/art/sequence-edda-request.jpg",
+        "small": "/art/sequence-edda-request-small.jpg",
+        "caption": "Helion · before a name goes on the request",
+        "description": "Edda pauses with a pencil above a blank unsigned request sheet, her other hand open beside it. The closed ledger stays separate under the archive lamp."
+      },
+      "state": {
+        "version": 2,
+        "handle": "Replay",
+        "givenName": "Ada",
+        "origin": "spire",
+        "complication": "on-file",
+        "stats": {
+          "chrome": 5,
+          "nerve": 2,
+          "face": 2,
+          "ghost": 1
+        },
+        "factions": {
+          "quill": 2,
+          "lumen": 2,
+          "helion": 2,
+          "wards": 1
+        },
+        "creds": 390,
+        "strain": 1,
+        "items": [
+          "signal-baffle"
+        ],
+        "flags": {
+          "kerr_terms_enabled": true,
+          "mara_account_enabled": true,
+          "witness_returns_enabled": true,
+          "encounter_craft_enabled": true,
+          "emotional_payoffs_enabled": true,
+          "freight_craft_enabled": true,
+          "sera_shift_enabled": true,
+          "dramatic_beats_enabled": true,
+          "consequential_methods_enabled": true,
+          "consequential_expansion_enabled": true,
+          "dramatic_sequence_art_enabled": true,
+          "return_routing_enabled": true,
+          "on_file": true,
+          "opening_survival": true,
+          "opening_neighbor_heard": true,
+          "met_stallholder": true,
+          "opening_complete": true,
+          "dramatic_quill_greeted": true,
+          "met_quill": true,
+          "haggled": true,
+          "hired": true,
+          "chapel_window_started": true,
+          "chapel_window_scouted": true,
+          "chapel_window_entered": true,
+          "chapel_window_ghost": true,
+          "quiet": true,
+          "chapel_window_0": true,
+          "chapel_window_done": true,
+          "chapel_window_quiet_exit": true,
+          "knows_truth": true,
+          "honest": true,
+          "met_lumen": true,
+          "pact_copy": true,
+          "lumen_here": true,
+          "copied": true,
+          "met_mara": true,
+          "heard_memo": true,
+          "memory_signature": true,
+          "memory_order": true,
+          "memory_roster": true,
+          "memory_reconstructed": true,
+          "memory_prepared": true,
+          "memory_intact": true,
+          "kerr_talked": true,
+          "met_kerr": true,
+          "act1_done": true,
+          "act1_both": true,
+          "perk_trained": true,
+          "perk_face": true,
+          "origin_done": true,
+          "origin_helped": true,
+          "met_ives": true,
+          "met_edda": true,
+          "met_ren": true,
+          "archive_briefed": true,
+          "archive_indexed": true,
+          "craft_read_export": true,
+          "craft_read_plant": true,
+          "craft_read_movement": true,
+          "craft_scope_movement": true
+        },
+        "journal": [
+          {
+            "id": "quill-agreed-to-ninety-up-front",
+            "text": "Quill agreed to ninety up front."
+          },
+          {
+            "id": "quill-hired-you-to-lift-mara-voss-s-unedited-hou",
+            "text": "Quill hired you to lift Mara Voss's unedited hour from Glass Chapel."
+          },
+          {
+            "id": "ward-nine",
+            "text": "Mara Voss signed the Ward Nine coolant dump. Three hundred people, one memo."
+          },
+          {
+            "id": "shard-copy",
+            "text": "A second copy of Mara's hour exists."
+          },
+          {
+            "id": "memory-signature",
+            "text": "Mara authorizes the flush. She says the tower promised an evacuation. The signature proves authorization; her explanation still needs corroboration.",
+            "kind": "claim"
+          },
+          {
+            "id": "memory-order",
+            "text": "The exported receipt records an instruction canceling evacuation while retaining the flush. Its contents are visible; the issuing key still needs independent verification during The Week.",
+            "kind": "fact"
+          },
+          {
+            "id": "memory-roster",
+            "text": "Ivo Pell and Junie Calder were on shift. Nia Pell signed the housing slip and reached a service exit. She can corroborate the receipt, but a public roster would expose where she sleeps.",
+            "kind": "fact"
+          },
+          {
+            "id": "memory-analysis",
+            "text": "Mara authorized the flush before the recorded evacuation cancellation. The receipt's issuer needs independent corroboration; her explanation is not absolution.",
+            "kind": "claim"
+          },
+          {
+            "id": "public-packet",
+            "text": "The packet reports an evacuation cancellation after Mara's signature and explicitly marks the issuing key unverified.",
+            "kind": "claim"
+          },
+          {
+            "id": "archive-promise",
+            "text": "Trace the tower receipt to corroborate Mara's hour.",
+            "kind": "promise"
+          }
+        ],
+        "chapters": [
+          "Two Fires"
+        ],
+        "rolls": [
+          {
+            "label": "Map the command index",
+            "roll": 8,
+            "total": 14,
+            "dc": 7,
+            "success": true
+          },
+          {
+            "label": "Close the maintenance key",
+            "roll": 8,
+            "total": 14,
+            "dc": 9,
+            "success": true
+          },
+          {
+            "label": "Walk past Kerr",
+            "roll": 8,
+            "total": 13,
+            "dc": 8,
+            "success": true
+          },
+          {
+            "label": "Copy the hour",
+            "roll": 8,
+            "total": 14,
+            "dc": 10,
+            "success": true
+          },
+          {
+            "label": "Cross the service interval",
+            "roll": 8,
+            "total": 11,
+            "dc": 8,
+            "success": true
+          },
+          {
+            "label": "Push Quill",
+            "roll": 8,
+            "total": 10,
+            "dc": 8,
+            "success": true
+          }
+        ],
+        "log": [
+          "Keep Mara's authorization and the later counter-order separate.",
+          "Describe the cancellation. Mark the issuing key unverified.",
+          "Preserve the complete archive.",
+          "Convince him to let you walk.",
+          "Quill gets the original. The copy gets out.",
+          "The week after.",
+          "Walk out into the week.",
+          "Learn one thing from the night.",
+          "Read the room",
+          "Read the board.",
+          "Call the contact who knew you before this job.",
+          "Revoke Edda's old key.",
+          "Return to the board.",
+          "Helion Spire",
+          "Hear the price.",
+          "Refuse the tower.",
+          "Trace Helion's counter-order.",
+          "Agree to compare sources and decide custody afterward.",
+          "Compare the index against the receipt number.",
+          "Work out which part of the order changed.",
+          "Inspect the export receipt.",
+          "Inspect the plant-service catalog.",
+          "Inspect the shift-movement catalog.",
+          "Did the shift record the evacuation change? Retrieve the movement page."
+        ],
+        "sceneId": "act2_craft_archive_ledger"
+      },
+      "capture": "/tmp/saint-phase21/sequences/edda-request-1440.png",
+      "errors": [],
+      "overflow": false,
+      "method": "Current public UI at a checkpoint derived through existing legal full-route choices. Enlarged/high-contrast, quiet; artwork explicitly entered viewport and decoded before capture. Diagnostic scroll, not an initial entry or continuous campaign."
+    },
+    {
+      "id": "edda-boundary",
+      "width": 320,
+      "sceneId": "act2_archive_custody",
+      "actor": "Edda",
+      "illustration": {
+        "src": "/art/sequence-edda-boundary.jpg",
+        "small": "/art/sequence-edda-boundary-small.jpg",
+        "caption": "Helion · the copy and its limits",
+        "description": "Edda rests one hand on her closed ledger and the other beside a separate folded copy. The pencil is set down; no signature, public name, seal or handover is shown."
+      },
+      "state": {
+        "version": 2,
+        "handle": "Replay",
+        "givenName": "Ada",
+        "origin": "spire",
+        "complication": "on-file",
+        "stats": {
+          "chrome": 5,
+          "nerve": 2,
+          "face": 2,
+          "ghost": 1
+        },
+        "factions": {
+          "quill": 2,
+          "lumen": 2,
+          "helion": 3,
+          "wards": 1
+        },
+        "creds": 390,
+        "strain": 1,
+        "items": [
+          "signal-baffle"
+        ],
+        "flags": {
+          "kerr_terms_enabled": true,
+          "mara_account_enabled": true,
+          "witness_returns_enabled": true,
+          "encounter_craft_enabled": true,
+          "emotional_payoffs_enabled": true,
+          "freight_craft_enabled": true,
+          "sera_shift_enabled": true,
+          "dramatic_beats_enabled": true,
+          "consequential_methods_enabled": true,
+          "consequential_expansion_enabled": true,
+          "dramatic_sequence_art_enabled": true,
+          "return_routing_enabled": true,
+          "on_file": true,
+          "opening_survival": true,
+          "opening_neighbor_heard": true,
+          "met_stallholder": true,
+          "opening_complete": true,
+          "dramatic_quill_greeted": true,
+          "met_quill": true,
+          "haggled": true,
+          "hired": true,
+          "chapel_window_started": true,
+          "chapel_window_scouted": true,
+          "chapel_window_entered": true,
+          "chapel_window_ghost": true,
+          "quiet": true,
+          "chapel_window_0": true,
+          "chapel_window_done": true,
+          "chapel_window_quiet_exit": true,
+          "knows_truth": true,
+          "honest": true,
+          "met_lumen": true,
+          "pact_copy": true,
+          "lumen_here": true,
+          "copied": true,
+          "met_mara": true,
+          "heard_memo": true,
+          "memory_signature": true,
+          "memory_order": true,
+          "memory_roster": true,
+          "memory_reconstructed": true,
+          "memory_prepared": true,
+          "memory_intact": true,
+          "kerr_talked": true,
+          "met_kerr": true,
+          "act1_done": true,
+          "act1_both": true,
+          "perk_trained": true,
+          "perk_face": true,
+          "origin_done": true,
+          "origin_helped": true,
+          "met_ives": true,
+          "met_edda": true,
+          "met_ren": true,
+          "archive_briefed": true,
+          "archive_indexed": true,
+          "craft_read_export": true,
+          "craft_read_plant": true,
+          "craft_read_movement": true,
+          "craft_archive_overreach": true,
+          "craft_scope_movement": true,
+          "archive_done": true,
+          "order_verified": true,
+          "archive_flagged": true,
+          "archive_method_face": true,
+          "craft_archive_attempted": true
+        },
+        "journal": [
+          {
+            "id": "quill-agreed-to-ninety-up-front",
+            "text": "Quill agreed to ninety up front."
+          },
+          {
+            "id": "quill-hired-you-to-lift-mara-voss-s-unedited-hou",
+            "text": "Quill hired you to lift Mara Voss's unedited hour from Glass Chapel."
+          },
+          {
+            "id": "ward-nine",
+            "text": "Mara Voss signed the Ward Nine coolant dump. Three hundred people, one memo."
+          },
+          {
+            "id": "shard-copy",
+            "text": "A second copy of Mara's hour exists."
+          },
+          {
+            "id": "memory-signature",
+            "text": "Mara authorizes the flush. She says the tower promised an evacuation. The signature proves authorization; her explanation still needs corroboration.",
+            "kind": "claim"
+          },
+          {
+            "id": "memory-order",
+            "text": "The exported receipt records an instruction canceling evacuation while retaining the flush. Its contents are visible; the issuing key still needs independent verification during The Week.",
+            "kind": "fact"
+          },
+          {
+            "id": "memory-roster",
+            "text": "Ivo Pell and Junie Calder were on shift. Nia Pell signed the housing slip and reached a service exit. She can corroborate the receipt, but a public roster would expose where she sleeps.",
+            "kind": "fact"
+          },
+          {
+            "id": "memory-analysis",
+            "text": "Mara authorized the flush before the recorded evacuation cancellation. The receipt's issuer needs independent corroboration; her explanation is not absolution.",
+            "kind": "claim"
+          },
+          {
+            "id": "public-packet",
+            "text": "The packet reports an evacuation cancellation after Mara's signature and explicitly marks the issuing key unverified.",
+            "kind": "claim"
+          },
+          {
+            "id": "archive-promise",
+            "text": "Trace the tower receipt to corroborate Mara's hour.",
+            "kind": "promise"
+          },
+          {
+            "id": "verified-order",
+            "kind": "fact",
+            "text": "A targeted staffed WN/SHIFT/REV extraction corroborated cancellation of the evacuation while coolant work remained scheduled. Edda agreed to countersign this bounded movement extraction; her employer can identify the signed shift. No issuing key was authenticated and no worker list or public source-name permission was supplied."
+          },
+          {
+            "id": "craft-archive-request",
+            "kind": "fact",
+            "text": "You submitted a scoped worker-movement extraction request after comparing the export and catalog summaries. The request itself supplied no source, authenticated key, worker list or public permission."
+          }
+        ],
+        "chapters": [
+          "Two Fires"
+        ],
+        "rolls": [
+          {
+            "label": "Map the command index",
+            "roll": 8,
+            "total": 14,
+            "dc": 7,
+            "success": true
+          },
+          {
+            "label": "Close the maintenance key",
+            "roll": 8,
+            "total": 14,
+            "dc": 9,
+            "success": true
+          },
+          {
+            "label": "Walk past Kerr",
+            "roll": 8,
+            "total": 13,
+            "dc": 8,
+            "success": true
+          },
+          {
+            "label": "Copy the hour",
+            "roll": 8,
+            "total": 14,
+            "dc": 10,
+            "success": true
+          },
+          {
+            "label": "Cross the service interval",
+            "roll": 8,
+            "total": 11,
+            "dc": 8,
+            "success": true
+          },
+          {
+            "label": "Push Quill",
+            "roll": 8,
+            "total": 10,
+            "dc": 8,
+            "success": true
+          }
+        ],
+        "log": [
+          "Quill gets the original. The copy gets out.",
+          "The week after.",
+          "Walk out into the week.",
+          "Learn one thing from the night.",
+          "Read the room",
+          "Read the board.",
+          "Call the contact who knew you before this job.",
+          "Revoke Edda's old key.",
+          "Return to the board.",
+          "Helion Spire",
+          "Hear the price.",
+          "Refuse the tower.",
+          "Trace Helion's counter-order.",
+          "Agree to compare sources and decide custody afterward.",
+          "Compare the index against the receipt number.",
+          "Work out which part of the order changed.",
+          "Inspect the export receipt.",
+          "Inspect the plant-service catalog.",
+          "Inspect the shift-movement catalog.",
+          "Did the shift record the evacuation change? Retrieve the movement page.",
+          "Add the worker roster to the request as leverage.",
+          "Review the headings and revise the question.",
+          "Did the shift record the evacuation change? Retrieve the movement page.",
+          "Ask Edda to countersign the bounded extraction. She agrees."
+        ],
+        "sceneId": "act2_archive_custody"
+      },
+      "capture": "/tmp/saint-phase21/sequences/edda-boundary-320.png",
+      "errors": [],
+      "overflow": false,
+      "method": "Current public UI at a checkpoint derived through existing legal full-route choices. Enlarged/high-contrast, quiet; artwork explicitly entered viewport and decoded before capture. Diagnostic scroll, not an initial entry or continuous campaign."
+    },
+    {
+      "id": "edda-boundary",
+      "width": 390,
+      "sceneId": "act2_archive_custody",
+      "actor": "Edda",
+      "illustration": {
+        "src": "/art/sequence-edda-boundary.jpg",
+        "small": "/art/sequence-edda-boundary-small.jpg",
+        "caption": "Helion · the copy and its limits",
+        "description": "Edda rests one hand on her closed ledger and the other beside a separate folded copy. The pencil is set down; no signature, public name, seal or handover is shown."
+      },
+      "state": {
+        "version": 2,
+        "handle": "Replay",
+        "givenName": "Ada",
+        "origin": "spire",
+        "complication": "on-file",
+        "stats": {
+          "chrome": 5,
+          "nerve": 2,
+          "face": 2,
+          "ghost": 1
+        },
+        "factions": {
+          "quill": 2,
+          "lumen": 2,
+          "helion": 3,
+          "wards": 1
+        },
+        "creds": 390,
+        "strain": 1,
+        "items": [
+          "signal-baffle"
+        ],
+        "flags": {
+          "kerr_terms_enabled": true,
+          "mara_account_enabled": true,
+          "witness_returns_enabled": true,
+          "encounter_craft_enabled": true,
+          "emotional_payoffs_enabled": true,
+          "freight_craft_enabled": true,
+          "sera_shift_enabled": true,
+          "dramatic_beats_enabled": true,
+          "consequential_methods_enabled": true,
+          "consequential_expansion_enabled": true,
+          "dramatic_sequence_art_enabled": true,
+          "return_routing_enabled": true,
+          "on_file": true,
+          "opening_survival": true,
+          "opening_neighbor_heard": true,
+          "met_stallholder": true,
+          "opening_complete": true,
+          "dramatic_quill_greeted": true,
+          "met_quill": true,
+          "haggled": true,
+          "hired": true,
+          "chapel_window_started": true,
+          "chapel_window_scouted": true,
+          "chapel_window_entered": true,
+          "chapel_window_ghost": true,
+          "quiet": true,
+          "chapel_window_0": true,
+          "chapel_window_done": true,
+          "chapel_window_quiet_exit": true,
+          "knows_truth": true,
+          "honest": true,
+          "met_lumen": true,
+          "pact_copy": true,
+          "lumen_here": true,
+          "copied": true,
+          "met_mara": true,
+          "heard_memo": true,
+          "memory_signature": true,
+          "memory_order": true,
+          "memory_roster": true,
+          "memory_reconstructed": true,
+          "memory_prepared": true,
+          "memory_intact": true,
+          "kerr_talked": true,
+          "met_kerr": true,
+          "act1_done": true,
+          "act1_both": true,
+          "perk_trained": true,
+          "perk_face": true,
+          "origin_done": true,
+          "origin_helped": true,
+          "met_ives": true,
+          "met_edda": true,
+          "met_ren": true,
+          "archive_briefed": true,
+          "archive_indexed": true,
+          "craft_read_export": true,
+          "craft_read_plant": true,
+          "craft_read_movement": true,
+          "craft_archive_overreach": true,
+          "craft_scope_movement": true,
+          "archive_done": true,
+          "order_verified": true,
+          "archive_flagged": true,
+          "archive_method_face": true,
+          "craft_archive_attempted": true
+        },
+        "journal": [
+          {
+            "id": "quill-agreed-to-ninety-up-front",
+            "text": "Quill agreed to ninety up front."
+          },
+          {
+            "id": "quill-hired-you-to-lift-mara-voss-s-unedited-hou",
+            "text": "Quill hired you to lift Mara Voss's unedited hour from Glass Chapel."
+          },
+          {
+            "id": "ward-nine",
+            "text": "Mara Voss signed the Ward Nine coolant dump. Three hundred people, one memo."
+          },
+          {
+            "id": "shard-copy",
+            "text": "A second copy of Mara's hour exists."
+          },
+          {
+            "id": "memory-signature",
+            "text": "Mara authorizes the flush. She says the tower promised an evacuation. The signature proves authorization; her explanation still needs corroboration.",
+            "kind": "claim"
+          },
+          {
+            "id": "memory-order",
+            "text": "The exported receipt records an instruction canceling evacuation while retaining the flush. Its contents are visible; the issuing key still needs independent verification during The Week.",
+            "kind": "fact"
+          },
+          {
+            "id": "memory-roster",
+            "text": "Ivo Pell and Junie Calder were on shift. Nia Pell signed the housing slip and reached a service exit. She can corroborate the receipt, but a public roster would expose where she sleeps.",
+            "kind": "fact"
+          },
+          {
+            "id": "memory-analysis",
+            "text": "Mara authorized the flush before the recorded evacuation cancellation. The receipt's issuer needs independent corroboration; her explanation is not absolution.",
+            "kind": "claim"
+          },
+          {
+            "id": "public-packet",
+            "text": "The packet reports an evacuation cancellation after Mara's signature and explicitly marks the issuing key unverified.",
+            "kind": "claim"
+          },
+          {
+            "id": "archive-promise",
+            "text": "Trace the tower receipt to corroborate Mara's hour.",
+            "kind": "promise"
+          },
+          {
+            "id": "verified-order",
+            "kind": "fact",
+            "text": "A targeted staffed WN/SHIFT/REV extraction corroborated cancellation of the evacuation while coolant work remained scheduled. Edda agreed to countersign this bounded movement extraction; her employer can identify the signed shift. No issuing key was authenticated and no worker list or public source-name permission was supplied."
+          },
+          {
+            "id": "craft-archive-request",
+            "kind": "fact",
+            "text": "You submitted a scoped worker-movement extraction request after comparing the export and catalog summaries. The request itself supplied no source, authenticated key, worker list or public permission."
+          }
+        ],
+        "chapters": [
+          "Two Fires"
+        ],
+        "rolls": [
+          {
+            "label": "Map the command index",
+            "roll": 8,
+            "total": 14,
+            "dc": 7,
+            "success": true
+          },
+          {
+            "label": "Close the maintenance key",
+            "roll": 8,
+            "total": 14,
+            "dc": 9,
+            "success": true
+          },
+          {
+            "label": "Walk past Kerr",
+            "roll": 8,
+            "total": 13,
+            "dc": 8,
+            "success": true
+          },
+          {
+            "label": "Copy the hour",
+            "roll": 8,
+            "total": 14,
+            "dc": 10,
+            "success": true
+          },
+          {
+            "label": "Cross the service interval",
+            "roll": 8,
+            "total": 11,
+            "dc": 8,
+            "success": true
+          },
+          {
+            "label": "Push Quill",
+            "roll": 8,
+            "total": 10,
+            "dc": 8,
+            "success": true
+          }
+        ],
+        "log": [
+          "Quill gets the original. The copy gets out.",
+          "The week after.",
+          "Walk out into the week.",
+          "Learn one thing from the night.",
+          "Read the room",
+          "Read the board.",
+          "Call the contact who knew you before this job.",
+          "Revoke Edda's old key.",
+          "Return to the board.",
+          "Helion Spire",
+          "Hear the price.",
+          "Refuse the tower.",
+          "Trace Helion's counter-order.",
+          "Agree to compare sources and decide custody afterward.",
+          "Compare the index against the receipt number.",
+          "Work out which part of the order changed.",
+          "Inspect the export receipt.",
+          "Inspect the plant-service catalog.",
+          "Inspect the shift-movement catalog.",
+          "Did the shift record the evacuation change? Retrieve the movement page.",
+          "Add the worker roster to the request as leverage.",
+          "Review the headings and revise the question.",
+          "Did the shift record the evacuation change? Retrieve the movement page.",
+          "Ask Edda to countersign the bounded extraction. She agrees."
+        ],
+        "sceneId": "act2_archive_custody"
+      },
+      "capture": "/tmp/saint-phase21/sequences/edda-boundary-390.png",
+      "errors": [],
+      "overflow": false,
+      "method": "Current public UI at a checkpoint derived through existing legal full-route choices. Enlarged/high-contrast, quiet; artwork explicitly entered viewport and decoded before capture. Diagnostic scroll, not an initial entry or continuous campaign."
+    },
+    {
+      "id": "edda-boundary",
+      "width": 1440,
+      "sceneId": "act2_archive_custody",
+      "actor": "Edda",
+      "illustration": {
+        "src": "/art/sequence-edda-boundary.jpg",
+        "small": "/art/sequence-edda-boundary-small.jpg",
+        "caption": "Helion · the copy and its limits",
+        "description": "Edda rests one hand on her closed ledger and the other beside a separate folded copy. The pencil is set down; no signature, public name, seal or handover is shown."
+      },
+      "state": {
+        "version": 2,
+        "handle": "Replay",
+        "givenName": "Ada",
+        "origin": "spire",
+        "complication": "on-file",
+        "stats": {
+          "chrome": 5,
+          "nerve": 2,
+          "face": 2,
+          "ghost": 1
+        },
+        "factions": {
+          "quill": 2,
+          "lumen": 2,
+          "helion": 3,
+          "wards": 1
+        },
+        "creds": 390,
+        "strain": 1,
+        "items": [
+          "signal-baffle"
+        ],
+        "flags": {
+          "kerr_terms_enabled": true,
+          "mara_account_enabled": true,
+          "witness_returns_enabled": true,
+          "encounter_craft_enabled": true,
+          "emotional_payoffs_enabled": true,
+          "freight_craft_enabled": true,
+          "sera_shift_enabled": true,
+          "dramatic_beats_enabled": true,
+          "consequential_methods_enabled": true,
+          "consequential_expansion_enabled": true,
+          "dramatic_sequence_art_enabled": true,
+          "return_routing_enabled": true,
+          "on_file": true,
+          "opening_survival": true,
+          "opening_neighbor_heard": true,
+          "met_stallholder": true,
+          "opening_complete": true,
+          "dramatic_quill_greeted": true,
+          "met_quill": true,
+          "haggled": true,
+          "hired": true,
+          "chapel_window_started": true,
+          "chapel_window_scouted": true,
+          "chapel_window_entered": true,
+          "chapel_window_ghost": true,
+          "quiet": true,
+          "chapel_window_0": true,
+          "chapel_window_done": true,
+          "chapel_window_quiet_exit": true,
+          "knows_truth": true,
+          "honest": true,
+          "met_lumen": true,
+          "pact_copy": true,
+          "lumen_here": true,
+          "copied": true,
+          "met_mara": true,
+          "heard_memo": true,
+          "memory_signature": true,
+          "memory_order": true,
+          "memory_roster": true,
+          "memory_reconstructed": true,
+          "memory_prepared": true,
+          "memory_intact": true,
+          "kerr_talked": true,
+          "met_kerr": true,
+          "act1_done": true,
+          "act1_both": true,
+          "perk_trained": true,
+          "perk_face": true,
+          "origin_done": true,
+          "origin_helped": true,
+          "met_ives": true,
+          "met_edda": true,
+          "met_ren": true,
+          "archive_briefed": true,
+          "archive_indexed": true,
+          "craft_read_export": true,
+          "craft_read_plant": true,
+          "craft_read_movement": true,
+          "craft_archive_overreach": true,
+          "craft_scope_movement": true,
+          "archive_done": true,
+          "order_verified": true,
+          "archive_flagged": true,
+          "archive_method_face": true,
+          "craft_archive_attempted": true
+        },
+        "journal": [
+          {
+            "id": "quill-agreed-to-ninety-up-front",
+            "text": "Quill agreed to ninety up front."
+          },
+          {
+            "id": "quill-hired-you-to-lift-mara-voss-s-unedited-hou",
+            "text": "Quill hired you to lift Mara Voss's unedited hour from Glass Chapel."
+          },
+          {
+            "id": "ward-nine",
+            "text": "Mara Voss signed the Ward Nine coolant dump. Three hundred people, one memo."
+          },
+          {
+            "id": "shard-copy",
+            "text": "A second copy of Mara's hour exists."
+          },
+          {
+            "id": "memory-signature",
+            "text": "Mara authorizes the flush. She says the tower promised an evacuation. The signature proves authorization; her explanation still needs corroboration.",
+            "kind": "claim"
+          },
+          {
+            "id": "memory-order",
+            "text": "The exported receipt records an instruction canceling evacuation while retaining the flush. Its contents are visible; the issuing key still needs independent verification during The Week.",
+            "kind": "fact"
+          },
+          {
+            "id": "memory-roster",
+            "text": "Ivo Pell and Junie Calder were on shift. Nia Pell signed the housing slip and reached a service exit. She can corroborate the receipt, but a public roster would expose where she sleeps.",
+            "kind": "fact"
+          },
+          {
+            "id": "memory-analysis",
+            "text": "Mara authorized the flush before the recorded evacuation cancellation. The receipt's issuer needs independent corroboration; her explanation is not absolution.",
+            "kind": "claim"
+          },
+          {
+            "id": "public-packet",
+            "text": "The packet reports an evacuation cancellation after Mara's signature and explicitly marks the issuing key unverified.",
+            "kind": "claim"
+          },
+          {
+            "id": "archive-promise",
+            "text": "Trace the tower receipt to corroborate Mara's hour.",
+            "kind": "promise"
+          },
+          {
+            "id": "verified-order",
+            "kind": "fact",
+            "text": "A targeted staffed WN/SHIFT/REV extraction corroborated cancellation of the evacuation while coolant work remained scheduled. Edda agreed to countersign this bounded movement extraction; her employer can identify the signed shift. No issuing key was authenticated and no worker list or public source-name permission was supplied."
+          },
+          {
+            "id": "craft-archive-request",
+            "kind": "fact",
+            "text": "You submitted a scoped worker-movement extraction request after comparing the export and catalog summaries. The request itself supplied no source, authenticated key, worker list or public permission."
+          }
+        ],
+        "chapters": [
+          "Two Fires"
+        ],
+        "rolls": [
+          {
+            "label": "Map the command index",
+            "roll": 8,
+            "total": 14,
+            "dc": 7,
+            "success": true
+          },
+          {
+            "label": "Close the maintenance key",
+            "roll": 8,
+            "total": 14,
+            "dc": 9,
+            "success": true
+          },
+          {
+            "label": "Walk past Kerr",
+            "roll": 8,
+            "total": 13,
+            "dc": 8,
+            "success": true
+          },
+          {
+            "label": "Copy the hour",
+            "roll": 8,
+            "total": 14,
+            "dc": 10,
+            "success": true
+          },
+          {
+            "label": "Cross the service interval",
+            "roll": 8,
+            "total": 11,
+            "dc": 8,
+            "success": true
+          },
+          {
+            "label": "Push Quill",
+            "roll": 8,
+            "total": 10,
+            "dc": 8,
+            "success": true
+          }
+        ],
+        "log": [
+          "Quill gets the original. The copy gets out.",
+          "The week after.",
+          "Walk out into the week.",
+          "Learn one thing from the night.",
+          "Read the room",
+          "Read the board.",
+          "Call the contact who knew you before this job.",
+          "Revoke Edda's old key.",
+          "Return to the board.",
+          "Helion Spire",
+          "Hear the price.",
+          "Refuse the tower.",
+          "Trace Helion's counter-order.",
+          "Agree to compare sources and decide custody afterward.",
+          "Compare the index against the receipt number.",
+          "Work out which part of the order changed.",
+          "Inspect the export receipt.",
+          "Inspect the plant-service catalog.",
+          "Inspect the shift-movement catalog.",
+          "Did the shift record the evacuation change? Retrieve the movement page.",
+          "Add the worker roster to the request as leverage.",
+          "Review the headings and revise the question.",
+          "Did the shift record the evacuation change? Retrieve the movement page.",
+          "Ask Edda to countersign the bounded extraction. She agrees."
+        ],
+        "sceneId": "act2_archive_custody"
+      },
+      "capture": "/tmp/saint-phase21/sequences/edda-boundary-1440.png",
+      "errors": [],
+      "overflow": false,
+      "method": "Current public UI at a checkpoint derived through existing legal full-route choices. Enlarged/high-contrast, quiet; artwork explicitly entered viewport and decoded before capture. Diagnostic scroll, not an initial entry or continuous campaign."
+    },
+    {
+      "id": "mara-return",
+      "width": 320,
+      "sceneId": "act3_mara_account_return",
+      "actor": "Mara",
+      "illustration": {
+        "src": "/art/sequence-mara-return.jpg",
+        "small": "/art/sequence-mara-return-small.jpg",
+        "caption": "Ward Four · room for a private question",
+        "description": "Mara regards the unseen visitor from beside the rainy clinic window. Her own cup and closed envelope remain on her side of the table, with the empty visitor chair separate."
+      },
+      "state": {
+        "version": 2,
+        "handle": "Before Dawn",
+        "givenName": "Jo",
+        "origin": "spire",
+        "complication": "optic",
+        "stats": {
+          "chrome": 3,
+          "nerve": 2,
+          "face": 4,
+          "ghost": 1
+        },
+        "factions": {
+          "quill": 2,
+          "lumen": 3,
+          "helion": 1,
+          "wards": 0
+        },
+        "creds": 375,
+        "strain": 0,
+        "items": [
+          "spoof-chip"
+        ],
+        "flags": {
+          "kerr_terms_enabled": true,
+          "mara_account_enabled": true,
+          "witness_returns_enabled": true,
+          "encounter_craft_enabled": true,
+          "emotional_payoffs_enabled": true,
+          "freight_craft_enabled": true,
+          "sera_shift_enabled": true,
+          "dramatic_beats_enabled": true,
+          "consequential_methods_enabled": true,
+          "consequential_expansion_enabled": true,
+          "dramatic_sequence_art_enabled": true,
+          "return_routing_enabled": true,
+          "optic": true,
+          "opening_identity": true,
+          "opening_neighbor_heard": true,
+          "met_stallholder": true,
+          "opening_complete": true,
+          "dramatic_quill_greeted": true,
+          "met_quill": true,
+          "haggled": true,
+          "hired": true,
+          "quiet": true,
+          "knows_truth": true,
+          "honest": true,
+          "met_lumen": true,
+          "pact_copy": true,
+          "lumen_here": true,
+          "copied": true,
+          "met_mara": true,
+          "heard_memo": true,
+          "kerr_talked": true,
+          "met_kerr": true,
+          "act1_done": true,
+          "act1_both": true,
+          "kerr_week_refused": true,
+          "met_ren": true,
+          "response_started": true,
+          "response_private_consent": true,
+          "mara_account_night_both": true,
+          "mara_account_owned": true,
+          "response_question_done": true,
+          "mara_quiet_heard": true,
+          "mara_company_chosen": true,
+          "mara_company_courier": true,
+          "response_sent": true,
+          "response_courier": true,
+          "mara_company_kept": true,
+          "response_done": true,
+          "act2_stand": true,
+          "act2_done": true,
+          "met_sera": true,
+          "response_received": true,
+          "response_visit": true
+        },
+        "journal": [
+          {
+            "id": "quill-agreed-to-ninety-up-front",
+            "text": "Quill agreed to ninety up front."
+          },
+          {
+            "id": "quill-hired-you-to-lift-mara-voss-s-unedited-hou",
+            "text": "Quill hired you to lift Mara Voss's unedited hour from Glass Chapel."
+          },
+          {
+            "id": "the-choir-door-accepted-a-name-you-kept-on-a-chi",
+            "text": "The choir door accepted a name you kept on a chip."
+          },
+          {
+            "id": "ward-nine",
+            "text": "Mara Voss signed the Ward Nine coolant dump. Three hundred people, one memo."
+          },
+          {
+            "id": "shard-copy",
+            "text": "A second copy of Mara's hour exists."
+          },
+          {
+            "id": "mara-response-terms",
+            "kind": "fact",
+            "text": "Mara authorized her own current statement for the private Ward Nine records desk only. Lumen did not endorse it. No public release, witness permission or historical authentication was supplied."
+          },
+          {
+            "id": "mara-account-night-both",
+            "kind": "fact",
+            "text": "You tell her Quill paid for the original and the other file went into circulation. Mara heard this account from you in the clinic. It supplies no new source or permission."
+          },
+          {
+            "id": "mara-account-owned",
+            "kind": "fact",
+            "text": "After telling Mara what happened to her hour, you acknowledged choosing your part in it. She accepted a personal conversation, without forgiving it or granting public quotation."
+          },
+          {
+            "id": "mara-tomorrow",
+            "kind": "claim",
+            "text": "Mara says she wants a morning in which she chooses what she remembers. This is her present hope, not an observed treatment outcome or an acquittal."
+          },
+          {
+            "id": "mara-window-choice",
+            "kind": "fact",
+            "text": "You paid fifteen creds for private courier dispatch and stayed with Mara while she turned her cup toward the window. The dispatch and shared hour supplied no desk answer, acquittal, clinic endorsement or witness permission."
+          },
+          {
+            "id": "mara-response-dispatch",
+            "kind": "fact",
+            "text": "Mara's separately authorized, named private statement was dispatched to the Ward Nine records desk. It contained no worker list or clinic endorsement. Receipt and any inquiry decision remain unobserved."
+          },
+          {
+            "id": "mara-response-intake",
+            "kind": "fact",
+            "text": "The Ward Nine records desk acknowledged receiving Mara's named private response into an unanswered queue. No inquiry finding, historical authentication, acquittal or public release followed."
+          },
+          {
+            "id": "mara-account-return",
+            "kind": "fact",
+            "text": "You returned to Mara's personal conversation about the hour. This visit supplied no inquiry result or new public permission."
+          }
+        ],
+        "chapters": [
+          "Two Fires",
+          "Open Street"
+        ],
+        "rolls": [
+          {
+            "label": "Walk past Kerr",
+            "roll": 8,
+            "total": 15,
+            "dc": 8,
+            "success": true
+          },
+          {
+            "label": "Copy the hour",
+            "roll": 10,
+            "total": 16,
+            "dc": 10,
+            "success": true
+          },
+          {
+            "label": "Spoof the choir door",
+            "roll": 8,
+            "total": 13,
+            "dc": 8,
+            "success": true
+          },
+          {
+            "label": "Push Quill",
+            "roll": 8,
+            "total": 12,
+            "dc": 8,
+            "success": true
+          }
+        ],
+        "log": [
+          "Read the board.",
+          "Ward Four",
+          "Hear what the week cost.",
+          "Tell him the week is not for sale.",
+          "Hear Mara’s present-day request at the clinic.",
+          "Sit down. Hear what each of them will agree to.",
+          "Mara’s own name. The private records desk. No clinic endorsement.",
+          "Let Mara ask what happened to her hour.",
+          "Tell her what you chose that night.",
+          "Acknowledge your choice. Do not ask her to excuse it.",
+          "Return to the letter’s terms.",
+          "Ask Mara what she wants tomorrow to look like.",
+          "Offer to sit with her by the window.",
+          "Pay the courier. Stay with Mara.",
+          "Keep the hour as it happened. Let the reply keep its own status.",
+          "Keep the dispatch stub. Leave the desk’s answer open.",
+          "Stand where the names are.",
+          "The districts again.",
+          "Go down to Ward Nine.",
+          "Ward Nine",
+          "Tell her why you came.",
+          "Return to Mara about her reply.",
+          "Read the intake slip. Record receipt, with no inquiry decision.",
+          "Return to what you told Mara about the hour."
+        ],
+        "sceneId": "act3_mara_account_return"
+      },
+      "capture": "/tmp/saint-phase21/sequences/mara-return-320.png",
+      "errors": [],
+      "overflow": false,
+      "method": "Current public UI at a checkpoint derived through existing legal full-route choices. Enlarged/high-contrast, quiet; artwork explicitly entered viewport and decoded before capture. Diagnostic scroll, not an initial entry or continuous campaign."
+    },
+    {
+      "id": "mara-return",
+      "width": 390,
+      "sceneId": "act3_mara_account_return",
+      "actor": "Mara",
+      "illustration": {
+        "src": "/art/sequence-mara-return.jpg",
+        "small": "/art/sequence-mara-return-small.jpg",
+        "caption": "Ward Four · room for a private question",
+        "description": "Mara regards the unseen visitor from beside the rainy clinic window. Her own cup and closed envelope remain on her side of the table, with the empty visitor chair separate."
+      },
+      "state": {
+        "version": 2,
+        "handle": "Before Dawn",
+        "givenName": "Jo",
+        "origin": "spire",
+        "complication": "optic",
+        "stats": {
+          "chrome": 3,
+          "nerve": 2,
+          "face": 4,
+          "ghost": 1
+        },
+        "factions": {
+          "quill": 2,
+          "lumen": 3,
+          "helion": 1,
+          "wards": 0
+        },
+        "creds": 375,
+        "strain": 0,
+        "items": [
+          "spoof-chip"
+        ],
+        "flags": {
+          "kerr_terms_enabled": true,
+          "mara_account_enabled": true,
+          "witness_returns_enabled": true,
+          "encounter_craft_enabled": true,
+          "emotional_payoffs_enabled": true,
+          "freight_craft_enabled": true,
+          "sera_shift_enabled": true,
+          "dramatic_beats_enabled": true,
+          "consequential_methods_enabled": true,
+          "consequential_expansion_enabled": true,
+          "dramatic_sequence_art_enabled": true,
+          "return_routing_enabled": true,
+          "optic": true,
+          "opening_identity": true,
+          "opening_neighbor_heard": true,
+          "met_stallholder": true,
+          "opening_complete": true,
+          "dramatic_quill_greeted": true,
+          "met_quill": true,
+          "haggled": true,
+          "hired": true,
+          "quiet": true,
+          "knows_truth": true,
+          "honest": true,
+          "met_lumen": true,
+          "pact_copy": true,
+          "lumen_here": true,
+          "copied": true,
+          "met_mara": true,
+          "heard_memo": true,
+          "kerr_talked": true,
+          "met_kerr": true,
+          "act1_done": true,
+          "act1_both": true,
+          "kerr_week_refused": true,
+          "met_ren": true,
+          "response_started": true,
+          "response_private_consent": true,
+          "mara_account_night_both": true,
+          "mara_account_owned": true,
+          "response_question_done": true,
+          "mara_quiet_heard": true,
+          "mara_company_chosen": true,
+          "mara_company_courier": true,
+          "response_sent": true,
+          "response_courier": true,
+          "mara_company_kept": true,
+          "response_done": true,
+          "act2_stand": true,
+          "act2_done": true,
+          "met_sera": true,
+          "response_received": true,
+          "response_visit": true
+        },
+        "journal": [
+          {
+            "id": "quill-agreed-to-ninety-up-front",
+            "text": "Quill agreed to ninety up front."
+          },
+          {
+            "id": "quill-hired-you-to-lift-mara-voss-s-unedited-hou",
+            "text": "Quill hired you to lift Mara Voss's unedited hour from Glass Chapel."
+          },
+          {
+            "id": "the-choir-door-accepted-a-name-you-kept-on-a-chi",
+            "text": "The choir door accepted a name you kept on a chip."
+          },
+          {
+            "id": "ward-nine",
+            "text": "Mara Voss signed the Ward Nine coolant dump. Three hundred people, one memo."
+          },
+          {
+            "id": "shard-copy",
+            "text": "A second copy of Mara's hour exists."
+          },
+          {
+            "id": "mara-response-terms",
+            "kind": "fact",
+            "text": "Mara authorized her own current statement for the private Ward Nine records desk only. Lumen did not endorse it. No public release, witness permission or historical authentication was supplied."
+          },
+          {
+            "id": "mara-account-night-both",
+            "kind": "fact",
+            "text": "You tell her Quill paid for the original and the other file went into circulation. Mara heard this account from you in the clinic. It supplies no new source or permission."
+          },
+          {
+            "id": "mara-account-owned",
+            "kind": "fact",
+            "text": "After telling Mara what happened to her hour, you acknowledged choosing your part in it. She accepted a personal conversation, without forgiving it or granting public quotation."
+          },
+          {
+            "id": "mara-tomorrow",
+            "kind": "claim",
+            "text": "Mara says she wants a morning in which she chooses what she remembers. This is her present hope, not an observed treatment outcome or an acquittal."
+          },
+          {
+            "id": "mara-window-choice",
+            "kind": "fact",
+            "text": "You paid fifteen creds for private courier dispatch and stayed with Mara while she turned her cup toward the window. The dispatch and shared hour supplied no desk answer, acquittal, clinic endorsement or witness permission."
+          },
+          {
+            "id": "mara-response-dispatch",
+            "kind": "fact",
+            "text": "Mara's separately authorized, named private statement was dispatched to the Ward Nine records desk. It contained no worker list or clinic endorsement. Receipt and any inquiry decision remain unobserved."
+          },
+          {
+            "id": "mara-response-intake",
+            "kind": "fact",
+            "text": "The Ward Nine records desk acknowledged receiving Mara's named private response into an unanswered queue. No inquiry finding, historical authentication, acquittal or public release followed."
+          },
+          {
+            "id": "mara-account-return",
+            "kind": "fact",
+            "text": "You returned to Mara's personal conversation about the hour. This visit supplied no inquiry result or new public permission."
+          }
+        ],
+        "chapters": [
+          "Two Fires",
+          "Open Street"
+        ],
+        "rolls": [
+          {
+            "label": "Walk past Kerr",
+            "roll": 8,
+            "total": 15,
+            "dc": 8,
+            "success": true
+          },
+          {
+            "label": "Copy the hour",
+            "roll": 10,
+            "total": 16,
+            "dc": 10,
+            "success": true
+          },
+          {
+            "label": "Spoof the choir door",
+            "roll": 8,
+            "total": 13,
+            "dc": 8,
+            "success": true
+          },
+          {
+            "label": "Push Quill",
+            "roll": 8,
+            "total": 12,
+            "dc": 8,
+            "success": true
+          }
+        ],
+        "log": [
+          "Read the board.",
+          "Ward Four",
+          "Hear what the week cost.",
+          "Tell him the week is not for sale.",
+          "Hear Mara’s present-day request at the clinic.",
+          "Sit down. Hear what each of them will agree to.",
+          "Mara’s own name. The private records desk. No clinic endorsement.",
+          "Let Mara ask what happened to her hour.",
+          "Tell her what you chose that night.",
+          "Acknowledge your choice. Do not ask her to excuse it.",
+          "Return to the letter’s terms.",
+          "Ask Mara what she wants tomorrow to look like.",
+          "Offer to sit with her by the window.",
+          "Pay the courier. Stay with Mara.",
+          "Keep the hour as it happened. Let the reply keep its own status.",
+          "Keep the dispatch stub. Leave the desk’s answer open.",
+          "Stand where the names are.",
+          "The districts again.",
+          "Go down to Ward Nine.",
+          "Ward Nine",
+          "Tell her why you came.",
+          "Return to Mara about her reply.",
+          "Read the intake slip. Record receipt, with no inquiry decision.",
+          "Return to what you told Mara about the hour."
+        ],
+        "sceneId": "act3_mara_account_return"
+      },
+      "capture": "/tmp/saint-phase21/sequences/mara-return-390.png",
+      "errors": [],
+      "overflow": false,
+      "method": "Current public UI at a checkpoint derived through existing legal full-route choices. Enlarged/high-contrast, quiet; artwork explicitly entered viewport and decoded before capture. Diagnostic scroll, not an initial entry or continuous campaign."
+    },
+    {
+      "id": "mara-return",
+      "width": 1440,
+      "sceneId": "act3_mara_account_return",
+      "actor": "Mara",
+      "illustration": {
+        "src": "/art/sequence-mara-return.jpg",
+        "small": "/art/sequence-mara-return-small.jpg",
+        "caption": "Ward Four · room for a private question",
+        "description": "Mara regards the unseen visitor from beside the rainy clinic window. Her own cup and closed envelope remain on her side of the table, with the empty visitor chair separate."
+      },
+      "state": {
+        "version": 2,
+        "handle": "Before Dawn",
+        "givenName": "Jo",
+        "origin": "spire",
+        "complication": "optic",
+        "stats": {
+          "chrome": 3,
+          "nerve": 2,
+          "face": 4,
+          "ghost": 1
+        },
+        "factions": {
+          "quill": 2,
+          "lumen": 3,
+          "helion": 1,
+          "wards": 0
+        },
+        "creds": 375,
+        "strain": 0,
+        "items": [
+          "spoof-chip"
+        ],
+        "flags": {
+          "kerr_terms_enabled": true,
+          "mara_account_enabled": true,
+          "witness_returns_enabled": true,
+          "encounter_craft_enabled": true,
+          "emotional_payoffs_enabled": true,
+          "freight_craft_enabled": true,
+          "sera_shift_enabled": true,
+          "dramatic_beats_enabled": true,
+          "consequential_methods_enabled": true,
+          "consequential_expansion_enabled": true,
+          "dramatic_sequence_art_enabled": true,
+          "return_routing_enabled": true,
+          "optic": true,
+          "opening_identity": true,
+          "opening_neighbor_heard": true,
+          "met_stallholder": true,
+          "opening_complete": true,
+          "dramatic_quill_greeted": true,
+          "met_quill": true,
+          "haggled": true,
+          "hired": true,
+          "quiet": true,
+          "knows_truth": true,
+          "honest": true,
+          "met_lumen": true,
+          "pact_copy": true,
+          "lumen_here": true,
+          "copied": true,
+          "met_mara": true,
+          "heard_memo": true,
+          "kerr_talked": true,
+          "met_kerr": true,
+          "act1_done": true,
+          "act1_both": true,
+          "kerr_week_refused": true,
+          "met_ren": true,
+          "response_started": true,
+          "response_private_consent": true,
+          "mara_account_night_both": true,
+          "mara_account_owned": true,
+          "response_question_done": true,
+          "mara_quiet_heard": true,
+          "mara_company_chosen": true,
+          "mara_company_courier": true,
+          "response_sent": true,
+          "response_courier": true,
+          "mara_company_kept": true,
+          "response_done": true,
+          "act2_stand": true,
+          "act2_done": true,
+          "met_sera": true,
+          "response_received": true,
+          "response_visit": true
+        },
+        "journal": [
+          {
+            "id": "quill-agreed-to-ninety-up-front",
+            "text": "Quill agreed to ninety up front."
+          },
+          {
+            "id": "quill-hired-you-to-lift-mara-voss-s-unedited-hou",
+            "text": "Quill hired you to lift Mara Voss's unedited hour from Glass Chapel."
+          },
+          {
+            "id": "the-choir-door-accepted-a-name-you-kept-on-a-chi",
+            "text": "The choir door accepted a name you kept on a chip."
+          },
+          {
+            "id": "ward-nine",
+            "text": "Mara Voss signed the Ward Nine coolant dump. Three hundred people, one memo."
+          },
+          {
+            "id": "shard-copy",
+            "text": "A second copy of Mara's hour exists."
+          },
+          {
+            "id": "mara-response-terms",
+            "kind": "fact",
+            "text": "Mara authorized her own current statement for the private Ward Nine records desk only. Lumen did not endorse it. No public release, witness permission or historical authentication was supplied."
+          },
+          {
+            "id": "mara-account-night-both",
+            "kind": "fact",
+            "text": "You tell her Quill paid for the original and the other file went into circulation. Mara heard this account from you in the clinic. It supplies no new source or permission."
+          },
+          {
+            "id": "mara-account-owned",
+            "kind": "fact",
+            "text": "After telling Mara what happened to her hour, you acknowledged choosing your part in it. She accepted a personal conversation, without forgiving it or granting public quotation."
+          },
+          {
+            "id": "mara-tomorrow",
+            "kind": "claim",
+            "text": "Mara says she wants a morning in which she chooses what she remembers. This is her present hope, not an observed treatment outcome or an acquittal."
+          },
+          {
+            "id": "mara-window-choice",
+            "kind": "fact",
+            "text": "You paid fifteen creds for private courier dispatch and stayed with Mara while she turned her cup toward the window. The dispatch and shared hour supplied no desk answer, acquittal, clinic endorsement or witness permission."
+          },
+          {
+            "id": "mara-response-dispatch",
+            "kind": "fact",
+            "text": "Mara's separately authorized, named private statement was dispatched to the Ward Nine records desk. It contained no worker list or clinic endorsement. Receipt and any inquiry decision remain unobserved."
+          },
+          {
+            "id": "mara-response-intake",
+            "kind": "fact",
+            "text": "The Ward Nine records desk acknowledged receiving Mara's named private response into an unanswered queue. No inquiry finding, historical authentication, acquittal or public release followed."
+          },
+          {
+            "id": "mara-account-return",
+            "kind": "fact",
+            "text": "You returned to Mara's personal conversation about the hour. This visit supplied no inquiry result or new public permission."
+          }
+        ],
+        "chapters": [
+          "Two Fires",
+          "Open Street"
+        ],
+        "rolls": [
+          {
+            "label": "Walk past Kerr",
+            "roll": 8,
+            "total": 15,
+            "dc": 8,
+            "success": true
+          },
+          {
+            "label": "Copy the hour",
+            "roll": 10,
+            "total": 16,
+            "dc": 10,
+            "success": true
+          },
+          {
+            "label": "Spoof the choir door",
+            "roll": 8,
+            "total": 13,
+            "dc": 8,
+            "success": true
+          },
+          {
+            "label": "Push Quill",
+            "roll": 8,
+            "total": 12,
+            "dc": 8,
+            "success": true
+          }
+        ],
+        "log": [
+          "Read the board.",
+          "Ward Four",
+          "Hear what the week cost.",
+          "Tell him the week is not for sale.",
+          "Hear Mara’s present-day request at the clinic.",
+          "Sit down. Hear what each of them will agree to.",
+          "Mara’s own name. The private records desk. No clinic endorsement.",
+          "Let Mara ask what happened to her hour.",
+          "Tell her what you chose that night.",
+          "Acknowledge your choice. Do not ask her to excuse it.",
+          "Return to the letter’s terms.",
+          "Ask Mara what she wants tomorrow to look like.",
+          "Offer to sit with her by the window.",
+          "Pay the courier. Stay with Mara.",
+          "Keep the hour as it happened. Let the reply keep its own status.",
+          "Keep the dispatch stub. Leave the desk’s answer open.",
+          "Stand where the names are.",
+          "The districts again.",
+          "Go down to Ward Nine.",
+          "Ward Nine",
+          "Tell her why you came.",
+          "Return to Mara about her reply.",
+          "Read the intake slip. Record receipt, with no inquiry decision.",
+          "Return to what you told Mara about the hour."
+        ],
+        "sceneId": "act3_mara_account_return"
+      },
+      "capture": "/tmp/saint-phase21/sequences/mara-return-1440.png",
+      "errors": [],
+      "overflow": false,
+      "method": "Current public UI at a checkpoint derived through existing legal full-route choices. Enlarged/high-contrast, quiet; artwork explicitly entered viewport and decoded before capture. Diagnostic scroll, not an initial entry or continuous campaign."
+    }
+  ]
+}

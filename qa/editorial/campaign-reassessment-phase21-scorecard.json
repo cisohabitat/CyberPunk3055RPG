@@ -1,0 +1,84 @@
+{
+  "reviewedRevision": "2cc912f55cbf82ce2cffd6d3cb271b5e15a9209f",
+  "method": "Source-familiar authored-dice AI proxy",
+  "status": "Editorial inputs reviewed against fresh public cohorts and retained sequence/audition evidence; technical acceptance and QA/documentation publication remain separate.",
+  "targetWeightedEstimate": 9.09,
+  "limitations": "Accepted source-familiar automated proxy, authored dice, synthetic viewports and legal saved-checkpoint captures. No unfamiliar-human, physical-iPhone, screen-reader listening, blind review, statistical quality estimate or independent acting acceptance. Playback/ASR and signal checks do not prove expressive performance.",
+  "rubric": [
+    {
+      "area": "Narrative",
+      "weight": 0.2,
+      "current": 9.0,
+      "target": 9.2,
+      "reason": "Sera's table task, Quill's immediate need, Edda's bounded shift and Mara's conditional private return provide connected personal wants and later recognition while preserving all four finales. These are several coherent beats rather than one optional example. Explanatory source/permission/result clauses still repeatedly close the emotional moment; much ordinary play remains procedural."
+    },
+    {
+      "area": "RPG depth",
+      "weight": 0.2,
+      "current": 9.0,
+      "target": 9.1,
+      "reason": "Face/Chrome immediate methods make an actual one-action versus two-action trade, with retained public signatures/device traces/strain and an eight-creds dispatch opportunity versus twenty-creds full shift. Owned kit, scarce resources, deliberate stopping and refused contact retain distinct full-campaign outcomes. This extends Ghost/Nerve practical depth, but newer policies remain authored fixed-roll comparisons rather than a broad randomized balance cohort."
+    },
+    {
+      "area": "Visuals",
+      "weight": 0.15,
+      "current": 8.9,
+      "target": 9.0,
+      "reason": "Five state-specific Quill/Edda/Mara paintings form coherent entry/reaction sequences with restrained props and correct knowledge. Full-delivery inspection finds no extra-limb defect in this bounded sample; fresh layouts retain readable type and visible goals. The broader campaign still depends heavily on static portrait/plate compositions, and this is not a fresh 169-entry anatomy audit."
+    },
+    {
+      "area": "Audio",
+      "weight": 0.1,
+      "current": 8.7,
+      "target": 8.9,
+      "reason": "Selective same-word retakes now cover Quill, Mara, Sera and Kerr, and the depot fallback has a measured per-buffer level policy including cached replay. Retained actual-gain and separately loudness-matched complete-sequence comparisons address a real earlier mix ambiguity. Edda's segmented cadence and Mara confession retake disagreements remain; stock expressive range and unestablished independent perceptual quality constrain this modest improvement. Fresh natural completion verifies delivery, not acting."
+    },
+    {
+      "area": "Usability",
+      "weight": 0.15,
+      "current": 9.0,
+      "target": 9.0,
+      "reason": "Fresh enlarged layouts retain complete canonical actions, saves and goals with zero detected axe violations or horizontal overflow. Workshop spacing reduces real purchase/exit travel without smaller type or lost terms, and matched campaign keyboard workload stays exact. At 390 px the first purchase still lies 1344 px below prose and exit 4509 px; the review link mitigates rather than eliminates the comparison burden. Keep the existing 9.0 instead of awarding points solely for another spacing pass."
+    },
+    {
+      "area": "Engineering",
+      "weight": 0.2,
+      "current": 9.1,
+      "target": 9.2,
+      "reason": "Exact-commit fail-closed releases, preserved 874 media hashes, whole-campaign contracts and full four-browser acceptance remain strong. Continuous browser coverage grows 152 to 209 ids and source fixtures separately visit 255 of 264. Two source ids remain unverified, one legacy witness is not current reachability, and Ubuntu package-metadata stalls required same-commit recovery; more tests and green reruns alone do not earn 9.2."
+    }
+  ],
+  "remainingDeficits": [
+    {
+      "priority": 1,
+      "area": "Audio",
+      "finding": "Mara confession and Edda's archive response retain the weaker deliveries after rejected retakes; more total clips would not resolve their cadence.",
+      "nextWork": "Audition at most eight existing quotations across those two actors as complete before/current scenes at actual and separately matched gains. Keep actors/words/fallbacks exact and retain rejected candidates. Select only demonstrably clearer intention/pacing under the accepted proxy; preserve originals if no improvement."
+    },
+    {
+      "priority": 2,
+      "area": "Narrative",
+      "finding": "Personal wants improve several beats, but explanatory clauses repeatedly close emotional responses.",
+      "nextWork": "Review one bounded archive-return conversation for action, interruption and earned consequence; move only redundant explanation into an existing record while preserving all decision-critical source/consent/cost terms. Any changed quotation requires exact matching audio and fitting art in that same phase."
+    },
+    {
+      "priority": 3,
+      "area": "Usability",
+      "finding": "Complete kit comparison remains long at enlarged phone sizes despite Phase 20 travel reductions.",
+      "nextWork": "Prototype a concise shared-rule comparison with all prices, uses, ownership and no-purchase exit retained. Measure actual purchase and exit travel, keyboard burden and full control/term inventory; do not obtain a shorter result by hiding relevant terms or reducing type/targets."
+    },
+    {
+      "priority": 4,
+      "area": "Engineering",
+      "finding": "CI browser system-dependency setup can stall on package mirrors, and source coverage is not complete current UI reachability.",
+      "nextWork": "Capture dependency-install timing, investigate a bounded supported mirror/cache improvement and keep all native system dependencies, four projects, retries, deadlines and 45-minute fail-closed gate. Resolve ending_exposed/ending_smashed classification only with a legal current witness or evidence of retirement; do not graft flags."
+    }
+  ],
+  "nextDecision": {
+    "phase": 22,
+    "name": "Targeted connected-performance pilot",
+    "scope": "Start with the two unresolved Mara/Edda deliveries, maximum eight existing quotations, same cast and exact words, complete legal scene beds/art and actual/matched comparisons. No broad rerecording or new plot in this pilot.",
+    "acceptance": "Retain all original files, raw unprompted transcription disagreements and rejected candidates. Check actual gains/fallback cache/missing both/Stop/mute/manual/paragraph and full campaign/exact-commit publication gates. No perceptual or grade increase inferred from transcription or playback counts alone.",
+    "artAndVoiceRule": "Review existing scene art for every selected delivery. If later work changes a scene or quotation, fitting art and exact actor-matched audio ship together. Completing the pilot does not promise a higher score."
+  }
+}

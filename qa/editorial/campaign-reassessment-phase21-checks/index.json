@@ -1,0 +1,95 @@
+{
+  "method": "Lossless original logs and actual revision/dirty metadata. The first draft-typecheck log is a read-only validation-harness TS5074 configuration diagnostic, not a game failure: incremental cache lacked config path. Final virtual validation suppresses cache writes only; production compiler settings remain unchanged. Both are retained; no failed game case or retry hidden.",
+  "files": [
+    {
+      "path": "qa/editorial/campaign-reassessment-phase21-checks/source.log.gz",
+      "rawBytes": 104650,
+      "rawSha256": "b55abe7e87c0571d128ea1f3143e5114069f9cb1898053eaed20b1b9d9ad9224",
+      "gzipSha256": "82b6cfb61ab30087dd4edc8f1485c62661ae5ed4fb3da881c7953b00b0e107c6"
+    },
+    {
+      "path": "qa/editorial/campaign-reassessment-phase21-checks/build.log.gz",
+      "rawBytes": 1356,
+      "rawSha256": "badde3dae27d63cdd49985f8f8f1a45a64eee60c724c47d3b4ac86254250f805",
+      "gzipSha256": "7de1ceba4e68eda43fc4b1f71008c1e1c10dc2bbd9ebbf0a2645c3f01528d792"
+    },
+    {
+      "path": "qa/editorial/campaign-reassessment-phase21-checks/security.log.gz",
+      "rawBytes": 300,
+      "rawSha256": "6f8631be31b09daf5971cf9568d3dcb852c6d5a4efdc06a7453180b98eb91310",
+      "gzipSha256": "2d4e7879f9ccc7b1c0639c377ba450913ad72417c2aeb9aab89461aef50f5ce3"
+    },
+    {
+      "path": "qa/editorial/campaign-reassessment-phase21-checks/balance.log.gz",
+      "rawBytes": 429,
+      "rawSha256": "a8915b031dfcd95f9170df699a969298810be5391ee79506b4c09367c29fc1e7",
+      "gzipSha256": "9676245a26921e28d4705b8590aca8bc412284aecdbcc078e8f1516d2e8ec715"
+    },
+    {
+      "path": "qa/editorial/campaign-reassessment-phase21-checks/missions.log.gz",
+      "rawBytes": 390,
+      "rawSha256": "1ec4191b47da1075f48331b8815b47613ce683f0859bfbaf4f95b53da3050e3b",
+      "gzipSha256": "1bdbdd4cab4b5b2699585461b4122ba1ad57c6e2e7aa05a28026b9894a8f9301"
+    },
+    {
+      "path": "qa/editorial/campaign-reassessment-phase21-checks/economy.log.gz",
+      "rawBytes": 436,
+      "rawSha256": "6c52dcf2bbebbd1e7287238874e95b0b16741daaa2b17dbf35a7fb389f0ff4fa",
+      "gzipSha256": "4732acd958dada0b583486825f52286adbaf576af7013a74b9d8ef23c4a52993"
+    },
+    {
+      "path": "qa/editorial/campaign-reassessment-phase21-checks/overlap.log.gz",
+      "rawBytes": 584,
+      "rawSha256": "a4e7332a5d3eb2cb315e9af35f097ed3414b8479e4dbc55a8f8b13316be1a5f0",
+      "gzipSha256": "78399de8a7ad6b0ffc55095cef81e7efe747eb164cf7d63160bdd3d6626a4951"
+    },
+    {
+      "path": "qa/editorial/campaign-reassessment-phase21-checks/catalog.log.gz",
+      "rawBytes": 467,
+      "rawSha256": "d95c6de42150d638ef58268bf244b699680035c9eb92b8aebb674d54e68415d3",
+      "gzipSha256": "8036d36718df09b626c5c2afb9615bf4f4febf4c41f5781aaeec3191c8d7231f"
+    },
+    {
+      "path": "qa/editorial/campaign-reassessment-phase21-checks/loading.log.gz",
+      "rawBytes": 2533,
+      "rawSha256": "4792c89da94af180988029432b964f09a96ae23f04c85f0ddc54552a9ff44d79",
+      "gzipSha256": "3ca29ef012dff84fb9ae9f6fe293fd6c3aedcbeaec65d9170c6cbc98350b4e4d"
+    },
+    {
+      "path": "qa/editorial/campaign-reassessment-phase21-checks/acceptance.log.gz",
+      "rawBytes": 363,
+      "rawSha256": "a2102fdf43d16250606736b5f8319027e073757193f0ee7545b7bd7bdc905112",
+      "gzipSha256": "22e2e727a44f48ce9c23a10d4a925926b4bdae92a4db063a3843a91108d5a188"
+    },
+    {
+      "path": "qa/editorial/campaign-reassessment-phase21-checks/preservation.log.gz",
+      "rawBytes": 116,
+      "rawSha256": "142f78463a152b34ba0e8b650ba21c429cd9413a7d1bebf82210395bd1053fe2",
+      "gzipSha256": "1cce433a14253fb00f82d5f37991799fd540cc835ad726d925183fab0c20dbdb"
+    },
+    {
+      "path": "qa/editorial/campaign-reassessment-phase21-checks/sequences.log.gz",
+      "rawBytes": 34,
+      "rawSha256": "0e2cf8ec29fc4fc03fdbf4c327938e3c2ec6cf3573a4ff7d6da517962ea74ac6",
+      "gzipSha256": "59699ea32501742be6abd7db007fc6a9c85229d7cfe778189e73a13c26321d33"
+    },
+    {
+      "path": "qa/editorial/campaign-reassessment-phase21-checks/apply-phase.log.gz",
+      "rawBytes": 233,
+      "rawSha256": "8827611885954871dc31b0dbc396772bfc2dac7a27ff84731d9fe4ca3940a963",
+      "gzipSha256": "5e8bc01340a532b398d14c16971e58aae2b45e076a170725cba8ae40d9027c1b"
+    },
+    {
+      "path": "qa/editorial/campaign-reassessment-phase21-checks/draft-typecheck.log.gz",
+      "rawBytes": 167,
+      "rawSha256": "87ebe9d7c67d062a4d1e25bcdc7279f9d2972042ff6d078d2cbe1fd71a8c9d48",
+      "gzipSha256": "9a53f2dd7e13119bd087872990ce963ae7cab06d06ee2da08a60d3cbe0b1167f"
+    },
+    {
+      "path": "qa/editorial/campaign-reassessment-phase21-checks/draft-typecheck-final.log.gz",
+      "rawBytes": 194,
+      "rawSha256": "689369d03cb650b88665d3e2e0513baaaf393c9c32301fac05b65cd5cc8cd121",
+      "gzipSha256": "fc831a7a990ca9811863e3e0ebb95382d635a8e599c50776e8996dcb4e923f12"
+    }
+  ]
+}

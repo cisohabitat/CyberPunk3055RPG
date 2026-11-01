@@ -1,0 +1,20 @@
+{
+  "reviewedRevision": "2cc912f55cbf82ce2cffd6d3cb271b5e15a9209f",
+  "method": "Source-familiar visual inspection; synthetic enlarged viewports and full delivered paintings. No physical-device or exhaustive gallery audit.",
+  "captures": [
+    {"path":"act2_workshop-390-action.png","finding":"Complete Chair Harness purchase text remains legible and its focused action visible below the header. The long list still fills most of the phone reading area."},
+    {"path":"act2_craft_archive-390-reading.png","finding":"Readable Edda quotation and source distinction. Diagnostic reading scroll partially clips earlier metadata above; this is not an initial-entry capture."},
+    {"path":"act3_testimony_review-1440-reading.png","finding":"Sera portrait and records-table painting fit the written account task; side sheet remains distinct from reading and choices."},
+    {"path":"act2_workshop-320-entry.png","finding":"Goal and controls fit at enlarged320px. Immediate capture contains an unresolved progressive portrait placeholder; it is not evidence of a missing delivered portrait. Confirm readiness separately before final portrait/art judgment."},
+    {"path":"act3_testimony_review-390-entry.png","finding":"Goal remains visible and Sera is identified. Enlarged introductory context occupies much of the first viewport before decisions."},
+    {"path":"freight-loaded-390-entry.png","finding":"Asa identity and neutral landing plate fit the weight/rest decision, with no depicted successful delivery; goal remains visible."}
+  ],
+  "paintings": [
+    {"path":"public/art/sequence-quill-agreement.jpg","finding":"Two connected arms/hands and conditional chip on Quill's side; no payment handoff depicted."},
+    {"path":"public/art/sequence-quill-refusal.jpg","finding":"Withdrawn posture differs from agreement; hands remain on his side, coin untransferred. Identity, stall and rain palette are coherent."},
+    {"path":"public/art/sequence-edda-request.jpg","finding":"Two connected arms/hands, pencil above blank request and closed folder; no signed approval or retrieved roster depicted."},
+    {"path":"public/art/sequence-edda-boundary.jpg","finding":"Both connected hands rest on closed folder/blank paper; firmer posture supports refused scope without inventing permission."},
+    {"path":"public/art/sequence-mara-return.jpg","finding":"Seated Mara with one connected visible hand/arm, blank envelope and empty chair; restrained personal response without forgiveness or a source finding."}
+  ],
+  "limits": "No additional-limb defect observed in these five delivered paintings. This is a bounded anatomy/composition inspection, not a new audit of all169 gallery entries. State binding must also pass the legal-checkpoint capture review."
+}

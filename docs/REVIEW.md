@@ -1,4 +1,10 @@
-# Current internal game review — 27 October 2026
+# Current internal game review — 1 November 2026
+
+**9.0/10 provisional, weighted 8.975.** The [Phase 21 whole-campaign review](CAMPAIGN_REASSESSMENT_PHASE21.md) repeats all 74 public profiles and the unchanged rubric after Phases 16–20. The six-phase 9.090 target remains unearned. Source-familiar AI judgment and technical evidence are explicit; no human, physical-device or independent acting acceptance is claimed. Earlier dated reviews remain below.
+
+---
+
+# Historical internal game review — 27 October 2026
 
 **Provisional internal grade: 8.5/10 as a browser narrative RPG.** The fresh weighted editorial estimate is 8.53. Three source-familiar AI/automation campaigns covered a prepared specialist, a zero-credit paused archive search and an exposed-witness/failure-heavy runner: 203 scene visits, 114 reloads and 71 selected voice plays. They reported no script or media failures. This is the available player proxy, not a participant average, an independently measured gain over the earlier score, or an AAA acceptance rating.
 

@@ -1,0 +1,21 @@
+import {chromium,expect}from'/workspace/saint-shard-fix/node_modules/@playwright/test/index.mjs';
+import {mkdirSync,writeFileSync,existsSync}from'node:fs';
+import {execFileSync}from'node:child_process';
+import {SEQUENCE_CHECKPOINTS}from'/workspace/saint-shard-fix/qa/production/dramatic-sequences-checkpoints';
+import {getScene,sceneText}from'/workspace/saint-shard-fix/lib/engine';
+async function main(){
+const dir='/tmp/saint-phase21/sequences';if(existsSync(dir+'/review.json'))throw Error('Fresh evidence namespace required');mkdirSync(dir,{recursive:true});
+const browser=await chromium.launch({headless:true,executablePath:'/tmp/saint-phase21/chromium-public.sh',proxy:{server:process.env.HTTPS_PROXY??process.env.HTTP_PROXY!}});const rows=[];
+try{for(const {rule,state}of SEQUENCE_CHECKPOINTS)for(const width of[320,390,1440]){
+ const context=await browser.newContext({viewport:{width,height:900},reducedMotion:'reduce'}),page=await context.newPage(),errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.addInitScript({content:'var __name = (fn, name) => Object.defineProperty(fn, "name", { value: name, configurable: true });'});
+ await page.addInitScript(state=>{localStorage.setItem('saint-shard-3055-v1',JSON.stringify(state));localStorage.setItem('saint-shard-preferences',JSON.stringify({artwork:'full',sound:false,reading:'all',textStep:2,contrast:'high',motion:'reduce'}));},state);
+ await page.goto('https://cyberpunk3055rpg.vercel.app');await page.getByTestId('continue-run').click();await page.evaluate(()=>document.fonts.ready);await expect(page.getByTestId('goal')).toBeInViewport();
+ const figure=page.getByTestId('scene-illustration'),im=figure.locator('img');await expect(im).toHaveAttribute('src',rule.illustration.src);await expect(im).toHaveAttribute('alt',rule.illustration.description);await im.scrollIntoViewIfNeeded();await expect(im.locator('xpath=..')).toHaveAttribute('data-ready','true');await im.evaluate((im:HTMLImageElement)=>im.decode());
+ await expect(page.getByTestId('scene-text')).toHaveText(sceneText(getScene(state.sceneId),state).split(/\n\n+/).filter(Boolean).join(''));expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('saint-shard-3055-v1')!))).toEqual(state);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);expect(errors).toEqual([]);
+ const capture=dir+'/'+rule.id+'-'+width+'.png';await page.screenshot({path:capture});rows.push({id:rule.id,width,sceneId:state.sceneId,actor:rule.actor,illustration:rule.illustration,state,capture,errors,overflow:false,method:'Current public UI at a checkpoint derived through existing legal full-route choices. Enlarged/high-contrast, quiet; artwork explicitly entered viewport and decoded before capture. Diagnostic scroll, not an initial entry or continuous campaign.'});await context.close();
+}}finally{await browser.close();}
+writeFileSync(dir+'/review.json',JSON.stringify({revision:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),dirty:Boolean(execFileSync('git',['status','--porcelain'],{encoding:'utf8'}).trim()),rows},null,2)+'\n');console.log('15 legal sequence captures passed');
+
+}
+main().catch(e=>{console.error(e);process.exitCode=1});

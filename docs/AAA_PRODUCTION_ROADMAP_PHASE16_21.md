@@ -102,3 +102,9 @@ Publish the scorecard, exact source/release evidence, remaining deficits and the
 Start **Phase 16**, then 17, 18, 19, 20 and 21, publishing one phase at a time. Matching art and voice ship with every authored phase. Prioritize dramatic and practical decisions before another logo, glow effect or indiscriminate asset expansion.
 
 The [Phase15 report](CAMPAIGN_REASSESSMENT_PHASE15.md), [structured scorecard](../qa/editorial/campaign-reassessment-phase15-review.json), [nineteen layout probes](../qa/editorial/campaign-reassessment-phase15-layout.json) and [Phase14 exact release](../qa/editorial/expressive-performance-release.json) provide the starting point. Preserve each next baseline independently.
+
+## Phase 21 reassessment result
+
+The [complete Phase 21 review](CAMPAIGN_REASSESSMENT_PHASE21.md) repeats all 74 clean public campaigns, 19 enlarged layouts and 15 legal decoded sequence captures. The unchanged rubric estimates **8.975, displayed 9.0 provisional**; the **9.090** target remains unearned. Game/media/rules are unchanged in this QA/documentation phase. Exact-commit publication of this review remains separate from the preceding game observations.
+
+Next is the bounded Phase 22 Mara/Edda connected-performance pilot described in the review: at most eight existing quotations, exact cast/words, complete actual/matched scene comparisons, retained rejections and original fallbacks. Subsequent editorial, complete kit-comparison and CI/reachability work should follow measured findings, with fitting art and matching voices for authored changes. No automatic score increase is promised.

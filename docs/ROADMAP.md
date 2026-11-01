@@ -1,6 +1,6 @@
 # Saint Shard roadmap: 8.2 to a supported 9+ — historical 12 October plan
 
-Historical snapshot; current priorities and the 8.6 internal review are in [AAA craft roadmap](AAA_CRAFT_ROADMAP.md).
+Historical snapshot. The current [Phase 21 review](CAMPAIGN_REASSESSMENT_PHASE21.md) estimates 9.0 provisional (weighted 8.975); the six-phase 9.090 target remains unearned. See the [current production sequence](AAA_PRODUCTION_ROADMAP_PHASE16_21.md). The older targets below remain historical planning context.
 
 Updated 12 October 2026. Candidate at that date: 197 scenes, 587 choices and 133 deterministic replay routes. The **provisional internal weighted grade at that date was 8.2/10**; historical assessments remain in [the review](REVIEW.md). Simulated play is the primary development proxy while independent participants are unavailable. It supports development decisions and provisional grading without inventing human participation.
 

@@ -1,0 +1,845 @@
+{
+  "method": "Lossless raw JSON/driver/media-evidence copies retain original revisions and original embedded paths. Only the21 named current capture images are archived; other successful diagnostic PNGs remain temporary and are not claimed as retained.",
+  "files": [
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/navigation-release-release.json",
+      "archive": "qa/editorial/navigation-release-release.json",
+      "sha256": "1e2d92c41674ccc3e4ae670d5f5681923ce5d95c426824b73323297d095b86b5",
+      "bytes": 505135
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/navigation-release-public-runs/public-expansion-chrome-quiet-quiet.json",
+      "archive": "qa/editorial/navigation-release-public-runs/public-expansion-chrome-quiet-quiet.json",
+      "sha256": "33af58bf5be5998de426602f365ee1c8ef388476e3a0d68215af44463c0aaf48",
+      "bytes": 179143
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/navigation-release-public-runs/public-expansion-chrome-refused-quiet.json",
+      "archive": "qa/editorial/navigation-release-public-runs/public-expansion-chrome-refused-quiet.json",
+      "sha256": "ba26aada4f819271a51c5764ab4713c57dd07af656afa37cffa556d36570e092",
+      "bytes": 212481
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/navigation-release-public-runs/public-expansion-chrome-scarce-quiet.json",
+      "archive": "qa/editorial/navigation-release-public-runs/public-expansion-chrome-scarce-quiet.json",
+      "sha256": "0010d0266e94c56eb244145233d1a92db8c95bf5884e0be1e366d86f9e5b5510",
+      "bytes": 134457
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/navigation-release-public-runs/public-expansion-chrome-witness-quiet.json",
+      "archive": "qa/editorial/navigation-release-public-runs/public-expansion-chrome-witness-quiet.json",
+      "sha256": "060b979e72ef94522c5bfc6270a9c592d87d8a07ad52f491a2656a987a26e7a5",
+      "bytes": 179237
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/navigation-release-public-runs/public-expansion-face-listed-quiet.json",
+      "archive": "qa/editorial/navigation-release-public-runs/public-expansion-face-listed-quiet.json",
+      "sha256": "6a04a02fc25d60d2838d7d062164ba67058a6d69a70eb3cf43503962f1ee5359",
+      "bytes": 160200
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/navigation-release-public-runs/public-expansion-face-names-quiet.json",
+      "archive": "qa/editorial/navigation-release-public-runs/public-expansion-face-names-quiet.json",
+      "sha256": "da63f9a366489fba9687c80fd576246aaf620d3a2f3d6db0b20a965d7423378f",
+      "bytes": 158999
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/navigation-release-public-runs/public-expansion-face-scarce-quiet.json",
+      "archive": "qa/editorial/navigation-release-public-runs/public-expansion-face-scarce-quiet.json",
+      "sha256": "55c38845f25eed5b270bb82d1052d814fc51c1b6988b35870897fbb4986ef984",
+      "bytes": 141276
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/navigation-release-public-runs/public-expansion-face-withheld-quiet.json",
+      "archive": "qa/editorial/navigation-release-public-runs/public-expansion-face-withheld-quiet.json",
+      "sha256": "94a085012a9845664db0182ee2904e9664594ef265e39a2f657908bfca582653",
+      "bytes": 156217
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/navigation-release-public-runs/public-navigation-1-current.json",
+      "archive": "qa/editorial/navigation-release-public-runs/public-navigation-1-current.json",
+      "sha256": "368d21c8c4a9e4c751d46b6c23e806f3c914024a4cd109b1f32202f51e880b54",
+      "bytes": 150690
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/navigation-release-public-runs/public-navigation-2-current.json",
+      "archive": "qa/editorial/navigation-release-public-runs/public-navigation-2-current.json",
+      "sha256": "3b6c73a8a5bb4cf948cad4d93fe34a031c115a83575b3ddf11e1527632b7bda6",
+      "bytes": 87626
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/navigation-release-public-runs/public-navigation-3-current.json",
+      "archive": "qa/editorial/navigation-release-public-runs/public-navigation-3-current.json",
+      "sha256": "dbdd03e56d45e5cb534f44a39c1ca34960b0effcd9b385326005bc75f09e1afd",
+      "bytes": 127543
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/navigation-release-public-runs/public-navigation-4-current.json",
+      "archive": "qa/editorial/navigation-release-public-runs/public-navigation-4-current.json",
+      "sha256": "dd6a9a84009b6a6555d900920bbdebcee2a2e4a16fa220eb9a495a1c6096b26f",
+      "bytes": 60776
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/navigation-release-public-runs/public-navigation-5-current.json",
+      "archive": "qa/editorial/navigation-release-public-runs/public-navigation-5-current.json",
+      "sha256": "96f028f16ff5e21072b178b8134e58f86e4b06cec48b1367650992d5fd76751d",
+      "bytes": 114231
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/navigation-release-public-runs/public-navigation-6-current.json",
+      "archive": "qa/editorial/navigation-release-public-runs/public-navigation-6-current.json",
+      "sha256": "9d3bd2cb048de2856033d43c8ea784f678926dc0acc33cb994dea082ec8ccd4f",
+      "bytes": 80327
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/navigation-release-public-runs/public-navigation-7-current.json",
+      "archive": "qa/editorial/navigation-release-public-runs/public-navigation-7-current.json",
+      "sha256": "807418c0f131e461d354cd04a5acbd60828371f51c4ad374d2d6a4d40213179b",
+      "bytes": 93668
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/navigation-release-public-runs/public-navigation-8-current.json",
+      "archive": "qa/editorial/navigation-release-public-runs/public-navigation-8-current.json",
+      "sha256": "0144e91e1b9fb4d6cad08be4bc95b5ede910888413b709f4c0e06db097a6879e",
+      "bytes": 117529
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/navigation-release-public-runs/public-ordinary-private-quiet.json",
+      "archive": "qa/editorial/navigation-release-public-runs/public-ordinary-private-quiet.json",
+      "sha256": "c58f7232cd4b14960cb88eedf8b8b1ddaf5e24aa34355d2ea493d266ef3ae877",
+      "bytes": 146012
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/navigation-release-public-runs/public-sequence-badge-scarce-quiet.json",
+      "archive": "qa/editorial/navigation-release-public-runs/public-sequence-badge-scarce-quiet.json",
+      "sha256": "4552679292028a0aca32c0d40ad5c622fa3afbc0c70db58062bb6782f2571993",
+      "bytes": 126558
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/navigation-release-public-runs/public-sequence-both-owned-company-quiet.json",
+      "archive": "qa/editorial/navigation-release-public-runs/public-sequence-both-owned-company-quiet.json",
+      "sha256": "376b676ddcf9e762d84b53f18caa3f5ff46d0feb4967787f5f69bf666a9a268a",
+      "bytes": 89787
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/navigation-release-public-runs/public-sequence-both-owned-company-sound.json",
+      "archive": "qa/editorial/navigation-release-public-runs/public-sequence-both-owned-company-sound.json",
+      "sha256": "5200f8701dfcd7623b65232996fd33975256cf8d19fdc02b973988ea72f82139",
+      "bytes": 94320
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/navigation-release-public-runs/public-sequence-face-quiet.json",
+      "archive": "qa/editorial/navigation-release-public-runs/public-sequence-face-quiet.json",
+      "sha256": "ee3c36dcc598781482269bb1239b779e177c00281a1520bb4ac14eed2064fd5c",
+      "bytes": 146342
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/navigation-release-public-runs/public-sequence-face-sound.json",
+      "archive": "qa/editorial/navigation-release-public-runs/public-sequence-face-sound.json",
+      "sha256": "a9b9dc7ced9e1799ed0cd5d857d2fd262df4e36b7fb1e37fcf05d05dbef7df79",
+      "bytes": 151546
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/navigation-release-public-runs/public-sequence-paid-quiet.json",
+      "archive": "qa/editorial/navigation-release-public-runs/public-sequence-paid-quiet.json",
+      "sha256": "16d3a706f50a1ce62e34fe2a2d1d87db058e93d75c60055e9d28e7177d318f55",
+      "bytes": 163336
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/navigation-release-public-runs/public-sequence-partial-deflected-quiet.json",
+      "archive": "qa/editorial/navigation-release-public-runs/public-sequence-partial-deflected-quiet.json",
+      "sha256": "0ab8cd6d92083e05c60adcd009b4cfb8003e2063e7f8b5dffca725d7e55b3fdc",
+      "bytes": 82043
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/navigation-release-public-runs/public-sequence-sold-distance-quiet.json",
+      "archive": "qa/editorial/navigation-release-public-runs/public-sequence-sold-distance-quiet.json",
+      "sha256": "397ce1e1d934ad1ec6f03c77cc3e6c39e7ab42e0de86f6092e23644e6b89b090",
+      "bytes": 93662
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/navigation-release-infrastructure-attempt1.json",
+      "archive": "qa/editorial/navigation-release-infrastructure-attempt1.json",
+      "sha256": "e1ef66e2fc9c000d1f4d7a202514202be7a6d3bbcefaca20e8626fb6549fc931",
+      "bytes": 9659
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/navigation-release-infrastructure-phone.log.gz",
+      "archive": "qa/editorial/navigation-release-infrastructure-phone.log.gz",
+      "sha256": "b56b8c3b0ccf331be4ab709757a61822d0531dae0fa54078ba2cc4da195901d2",
+      "bytes": 5793
+    },
+    {
+      "source": "/tmp/saint-phase20/deployment-infrastructure-attempt1.json",
+      "archive": "qa/editorial/navigation-release-timed-out-deployment.json",
+      "sha256": "897e17ba0b4e294c02347ce94f49bd375feccf6380eded0ad1a8c5407c6f5d1f",
+      "bytes": 171
+    },
+    {
+      "source": "/tmp/saint-phase21/baseline.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-baseline.json",
+      "sha256": "da549d16f66209c258fa46bcc0e58074c4e333f511a706e6433ee8a4a765ff3b",
+      "bytes": 177280
+    },
+    {
+      "source": "/tmp/saint-phase21/preservation.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-preservation.json",
+      "sha256": "da549d16f66209c258fa46bcc0e58074c4e333f511a706e6433ee8a4a765ff3b",
+      "bytes": 177280
+    },
+    {
+      "source": "/tmp/saint-phase21/baseline.ts",
+      "archive": "qa/editorial/campaign-reassessment-phase21-baseline-driver.ts.txt",
+      "sha256": "c50c428693606341f14f532cf90fec6f57f24f150ecaa449b64519325f507abb",
+      "bytes": 2089
+    },
+    {
+      "source": "/tmp/saint-phase21/layout/review.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-layout.json",
+      "sha256": "fbb9a7efba0618eaea9348466824c059095399bfb3b10d6d4797490e6f42ef72",
+      "bytes": 57285
+    },
+    {
+      "source": "/tmp/saint-phase21/visual-notes.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-visual-review.json",
+      "sha256": "c7a71ed9c4bdfdf3dd9609a8cff5bdb9e818eea984c2865c6f454ee5b6f63755",
+      "bytes": 2754
+    },
+    {
+      "source": "/tmp/saint-phase21/reviewed-deployment.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-reviewed-deployment.json",
+      "sha256": "74242682d09c5c2095fccfd7181e2e26a59d3c4b550a89fd5062baf9e2b8e9f3",
+      "bytes": 328
+    },
+    {
+      "source": "/tmp/saint-phase21/layout/act2_workshop-390-action.png",
+      "archive": "qa/editorial/campaign-reassessment-phase21-captures/act2_workshop-390-action.png",
+      "sha256": "6536c41240ff8a8f36e3fd0d2550387d7e7ffa8d3d9404fc2cb7a8d0d0b51fbb",
+      "bytes": 75378
+    },
+    {
+      "source": "/tmp/saint-phase21/layout/act2_craft_archive-390-reading.png",
+      "archive": "qa/editorial/campaign-reassessment-phase21-captures/act2_craft_archive-390-reading.png",
+      "sha256": "f636dd515bcfcd227542b7187b3697fe8dfa9ea26f8acb26e01ba3c7e59b3218",
+      "bytes": 99651
+    },
+    {
+      "source": "/tmp/saint-phase21/layout/act3_testimony_review-1440-reading.png",
+      "archive": "qa/editorial/campaign-reassessment-phase21-captures/act3_testimony_review-1440-reading.png",
+      "sha256": "ad7dcf147401a90bd5a1e27177a5e9ad785578507b603d33bba5f57c6fa3768f",
+      "bytes": 363249
+    },
+    {
+      "source": "/tmp/saint-phase21/layout/act2_workshop-320-entry.png",
+      "archive": "qa/editorial/campaign-reassessment-phase21-captures/act2_workshop-320-entry.png",
+      "sha256": "18a7d59a22c8b9b1ced526e56491338b906758652ed4f060b360065aee8546f7",
+      "bytes": 57589
+    },
+    {
+      "source": "/tmp/saint-phase21/layout/act3_testimony_review-390-entry.png",
+      "archive": "qa/editorial/campaign-reassessment-phase21-captures/act3_testimony_review-390-entry.png",
+      "sha256": "35b292aa16c1991f98794e6885469cceea6c60ff4d6a43207a7340f434190761",
+      "bytes": 102187
+    },
+    {
+      "source": "/tmp/saint-phase21/layout/freight-loaded-390-entry.png",
+      "archive": "qa/editorial/campaign-reassessment-phase21-captures/freight-loaded-390-entry.png",
+      "sha256": "ca7cec653bc4acb021639b09e07f3f506c699b55a855ba4b57fca40a4c7c46ce",
+      "bytes": 102892
+    },
+    {
+      "source": "/tmp/saint-phase21/sequences/edda-boundary-1440.png",
+      "archive": "qa/editorial/campaign-reassessment-phase21-sequences/edda-boundary-1440.png",
+      "sha256": "a314446b302a197b72990b43c08efa938a34010b5c2549616bacc84c35e68a60",
+      "bytes": 380937
+    },
+    {
+      "source": "/tmp/saint-phase21/sequences/edda-boundary-320.png",
+      "archive": "qa/editorial/campaign-reassessment-phase21-sequences/edda-boundary-320.png",
+      "sha256": "e786c6395612cf9365b2b7c39fd7427c1848da5f20975bfa1a78f6662f476098",
+      "bytes": 145483
+    },
+    {
+      "source": "/tmp/saint-phase21/sequences/edda-boundary-390.png",
+      "archive": "qa/editorial/campaign-reassessment-phase21-sequences/edda-boundary-390.png",
+      "sha256": "25eb061b288414b46102abddd4f455056df17cd92c405b72582edddc9ae518cc",
+      "bytes": 203876
+    },
+    {
+      "source": "/tmp/saint-phase21/sequences/edda-request-1440.png",
+      "archive": "qa/editorial/campaign-reassessment-phase21-sequences/edda-request-1440.png",
+      "sha256": "4500b7ef5cde13ccf4227b4965724f8ba09ad798766765c9c77f49d10da3d8a9",
+      "bytes": 348131
+    },
+    {
+      "source": "/tmp/saint-phase21/sequences/edda-request-320.png",
+      "archive": "qa/editorial/campaign-reassessment-phase21-sequences/edda-request-320.png",
+      "sha256": "a4620c1c1d42a6a8613a843570a3b1394e62e1ed8fc0c3b029dd2b56d4730076",
+      "bytes": 135619
+    },
+    {
+      "source": "/tmp/saint-phase21/sequences/edda-request-390.png",
+      "archive": "qa/editorial/campaign-reassessment-phase21-sequences/edda-request-390.png",
+      "sha256": "5c934fcd4d698bbe7b6463632c63b5210d9d50ab01033db000ed5b40fbd8d460",
+      "bytes": 197919
+    },
+    {
+      "source": "/tmp/saint-phase21/sequences/mara-return-1440.png",
+      "archive": "qa/editorial/campaign-reassessment-phase21-sequences/mara-return-1440.png",
+      "sha256": "db2c1199b77fb95cb0d3c7df1f9643659fae7ecd0b5349b1ad425168db06e364",
+      "bytes": 241979
+    },
+    {
+      "source": "/tmp/saint-phase21/sequences/mara-return-320.png",
+      "archive": "qa/editorial/campaign-reassessment-phase21-sequences/mara-return-320.png",
+      "sha256": "8be08caa13e4a798015f99272bfbb6d15a13d11e13e27cf46e767eff803f567d",
+      "bytes": 74007
+    },
+    {
+      "source": "/tmp/saint-phase21/sequences/mara-return-390.png",
+      "archive": "qa/editorial/campaign-reassessment-phase21-sequences/mara-return-390.png",
+      "sha256": "df172ffa626e30c9b11751a03a84087e6d54220b3c91ad21e8e13ef1fff73350",
+      "bytes": 95872
+    },
+    {
+      "source": "/tmp/saint-phase21/sequences/quill-agreement-1440.png",
+      "archive": "qa/editorial/campaign-reassessment-phase21-sequences/quill-agreement-1440.png",
+      "sha256": "bd2382b749ce83a86d677fa154a13b710895c6348c52c93d006998c6d4f8b98d",
+      "bytes": 283390
+    },
+    {
+      "source": "/tmp/saint-phase21/sequences/quill-agreement-320.png",
+      "archive": "qa/editorial/campaign-reassessment-phase21-sequences/quill-agreement-320.png",
+      "sha256": "80ef0629f4a8dab40e441813c90cb5a35c22163714096e27fe7b4f277fa22cc7",
+      "bytes": 74556
+    },
+    {
+      "source": "/tmp/saint-phase21/sequences/quill-agreement-390.png",
+      "archive": "qa/editorial/campaign-reassessment-phase21-sequences/quill-agreement-390.png",
+      "sha256": "816f1b4077ebf4ee36fa1e8a2fb552cae636151ac94e4af508f585dccfc0f90d",
+      "bytes": 86841
+    },
+    {
+      "source": "/tmp/saint-phase21/sequences/quill-refusal-1440.png",
+      "archive": "qa/editorial/campaign-reassessment-phase21-sequences/quill-refusal-1440.png",
+      "sha256": "78839c5a776b265d822ce98bfbb3ce73b5652a38c8539e56a06caa01af846a86",
+      "bytes": 285970
+    },
+    {
+      "source": "/tmp/saint-phase21/sequences/quill-refusal-320.png",
+      "archive": "qa/editorial/campaign-reassessment-phase21-sequences/quill-refusal-320.png",
+      "sha256": "6237cd844a93a8cd253d4c8f1159be7019b4533c8ae53f8b84e781e975e1e065",
+      "bytes": 77975
+    },
+    {
+      "source": "/tmp/saint-phase21/sequences/quill-refusal-390.png",
+      "archive": "qa/editorial/campaign-reassessment-phase21-sequences/quill-refusal-390.png",
+      "sha256": "ff667666cd52704c743142cd29b2ff4ed7407d72feb3ff5cdb673f3533ab44c2",
+      "bytes": 96896
+    },
+    {
+      "source": "/tmp/saint-phase21/sequences/review.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-sequences/review.json",
+      "sha256": "58df85e7f3b7bd494e80e4bf9b30f9f444e0736385441c0afa5eb18110134084",
+      "bytes": 92919
+    },
+    {
+      "source": "/tmp/saint-phase21/sequence-captures.ts",
+      "archive": "qa/editorial/campaign-reassessment-phase21-sequences/capture-driver.ts.txt",
+      "sha256": "a30992fe93f0bb4587a977efd3f49b9e36b392798e74215edfbafdb82cc037e6",
+      "bytes": 3238
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/archive-failed.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/archive-failed.json",
+      "sha256": "1f3f55f646707890515d3735dcd1f3759a4eb0cc447ddcc2b5d0cb924bc5346d",
+      "bytes": 126226
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/canceled.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/canceled.json",
+      "sha256": "946425a61b598a9918ae5bc6aea41bb8a898283a2f40cab00d3831e59fae8e52",
+      "bytes": 139185
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/carry-authenticated.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/carry-authenticated.json",
+      "sha256": "c6e03811196c2fb720e780317dd3859fbdf6497222a59d740c47aaf86c9a1e7e",
+      "bytes": 200767
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/carry-failed.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/carry-failed.json",
+      "sha256": "186c22a599333aca0328be4585d4b6d63d9480ede7f1cc11978b34ef3fad14d5",
+      "bytes": 147777
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/consequential-chrome-private.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/consequential-chrome-private.json",
+      "sha256": "4eea2e31af0cba557d136cc7ce20ad630feee4d72cafb04db2a2d785d7d7b39a",
+      "bytes": 175578
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/consequential-chrome-public-stop.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/consequential-chrome-public-stop.json",
+      "sha256": "dd61f9e9e1101340ee876511439b32300c4890262d52a3a7947192b244120cde",
+      "bytes": 153100
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/consequential-chrome-public-work.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/consequential-chrome-public-work.json",
+      "sha256": "fcf89d07b924c0b9da73bbc5cb1cd13dda0cc78984be4c6fdbe3facfe59b6394",
+      "bytes": 179166
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/consequential-face-private.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/consequential-face-private.json",
+      "sha256": "a9c2da7ca4c4937b0e08c36792ae7f4e00b379a4c36beac2c9334ba7dc313104",
+      "bytes": 157090
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/consequential-face-public-stop.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/consequential-face-public-stop.json",
+      "sha256": "e956e4ebd49eaad01d853efef202fa9ca2b7c548474ae657097ef58e26079bdf",
+      "bytes": 152855
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/consequential-face-public-work.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/consequential-face-public-work.json",
+      "sha256": "23da4b953ed45efa9e1729d0e39c111053e821368dcf31a0d7937c57dae5efa1",
+      "bytes": 159008
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/declined.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/declined.json",
+      "sha256": "8229accbb9b1dfdb15d5dae94ed427ffb9e5536cdcc9a472aced735e187d0a00",
+      "bytes": 114384
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/deferred.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/deferred.json",
+      "sha256": "d50c5fd172179612efaf06f517a5c733ca6742bc1f426956a266131bd3dcbfe0",
+      "bytes": 124082
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/denied.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/denied.json",
+      "sha256": "38b7d211099b20d4e56057c42fb7e9e656450e263bc918d82577519059d61f89",
+      "bytes": 173693
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/dramatic-badge-scarce.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/dramatic-badge-scarce.json",
+      "sha256": "52f33bef24f94dd12c6faceedcf5443a68a3c4d94193cd0b8ec6ddbb72112539",
+      "bytes": 130872
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/dramatic-deferred.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/dramatic-deferred.json",
+      "sha256": "a95d59132883fbfe129125860330f31dbc7d6fb71b5520948ab4e17a99b6dffe",
+      "bytes": 128825
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/dramatic-direct.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/dramatic-direct.json",
+      "sha256": "f8adf348dc29658894c3c34aceecfa7d224f421c0ab050a18e4044f9ac952839",
+      "bytes": 73456
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/dramatic-face.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/dramatic-face.json",
+      "sha256": "b78bfe52ca6c9858fe3dcb7a85b98fd31b0eda85fa27b455a3f8d7fc1730c41d",
+      "bytes": 169329
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/dramatic-listed.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/dramatic-listed.json",
+      "sha256": "a79079a77058ab0064b42fdea199a39cbd2cd5e1a59bf07bdb9a74b9e1e0b517",
+      "bytes": 118316
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/dramatic-paid.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/dramatic-paid.json",
+      "sha256": "2607bc5263024b77bbc87d06022dd3dfcedeb1ff0b7dad931b16388f6b12be50",
+      "bytes": 163111
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/dramatic-scarce.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/dramatic-scarce.json",
+      "sha256": "11e9b1c769886a2e2371c494041792c0c17a80d9ad8cceed05815feb9281795e",
+      "bytes": 124260
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/dramatic-sera-carry.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/dramatic-sera-carry.json",
+      "sha256": "4530a4c166a99d03a436946db55785666c20bfe57b9636780414fb7091d78843",
+      "bytes": 173845
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/expansion-chrome-listed.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/expansion-chrome-listed.json",
+      "sha256": "8c3a30b6ce53eacb2303739d1eb4d349096a2b89cc50e72c5344726168313b6a",
+      "bytes": 180221
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/expansion-chrome-names.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/expansion-chrome-names.json",
+      "sha256": "1a3b14d2f50f734bc2c977db5e5e27506c9c48cd1fbbff98c345dba8fe5ccff1",
+      "bytes": 179021
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/expansion-chrome-quiet.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/expansion-chrome-quiet.json",
+      "sha256": "fba871d715a97ff72cc75ec7c55548296750bb92aab16b9aa294e745320559bc",
+      "bytes": 179013
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/expansion-chrome-refused.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/expansion-chrome-refused.json",
+      "sha256": "36139f47895649bd9496ee84eee22fa4c35452543b63794892128a3c354b93de",
+      "bytes": 212321
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/expansion-chrome-scarce.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/expansion-chrome-scarce.json",
+      "sha256": "7596e7318363d06b22e7784db5877a1bfcd2e8ee30343bf3250d8bf3c2cb692b",
+      "bytes": 134349
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/expansion-chrome-withheld.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/expansion-chrome-withheld.json",
+      "sha256": "b97884b4f6570bed25de9bda671b3c0866d2073228a8cdaf96816e6c70260a30",
+      "bytes": 175977
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/expansion-chrome-witness.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/expansion-chrome-witness.json",
+      "sha256": "e49b359565429d0bd24505ce962fc8565c4f9d7439c6670a79b303a3ef046cce",
+      "bytes": 184387
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/expansion-face-listed.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/expansion-face-listed.json",
+      "sha256": "347537e2b7e325bbe819ab51baf46f4bf07adc0f64ee5c45e8c5192de69bfd03",
+      "bytes": 165311
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/expansion-face-names.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/expansion-face-names.json",
+      "sha256": "455024c5f3f145a756bb856802ed77de2e246096faddbcebda081fcd62eff9ec",
+      "bytes": 158864
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/expansion-face-quiet.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/expansion-face-quiet.json",
+      "sha256": "94718e987e0459711df79e359cba642089bedfb700e2eba4ace55c064237bc30",
+      "bytes": 158853
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/expansion-face-refused.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/expansion-face-refused.json",
+      "sha256": "828f252b33b73446ccfe82e8d4759ee7de5511b3a2dcc5d00399bf3259f46f44",
+      "bytes": 183411
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/expansion-face-scarce.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/expansion-face-scarce.json",
+      "sha256": "ce992cdbf17c3a787c09b8d76129a1dec986afd50491e150b037363afe959ae2",
+      "bytes": 141148
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/expansion-face-withheld.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/expansion-face-withheld.json",
+      "sha256": "42c20d0a10fff2b8140a7cd34a9112f891ea3c443db6a0bfbf960106064671a5",
+      "bytes": 156092
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/expansion-face-witness.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/expansion-face-witness.json",
+      "sha256": "ab325d96b2bfcadfa88965b6b10ada69c6c0917022d71b38fe1981071357dc21",
+      "bytes": 158947
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/face-failed.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/face-failed.json",
+      "sha256": "4912ff7c68e831b64e0a601687a7f5aa5a2764f82746ce46a782827dc21d5218",
+      "bytes": 163518
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/failed-desk.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/failed-desk.json",
+      "sha256": "3aae2ac726d691caef8318040e423b349bcd0902fc356623fa44054f50d2ae8e",
+      "bytes": 142292
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/ghost-routing.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/ghost-routing.json",
+      "sha256": "76dab2a286a4e63e954c56fc6a517b04cbfc46709a5e524b817595df78477783",
+      "bytes": 155280
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/harness-listed.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/harness-listed.json",
+      "sha256": "961f3300c8041d95076654bb452b5d624983ad2194f33868129589f1d3f3022a",
+      "bytes": 146755
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/interrupted-switch.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/interrupted-switch.json",
+      "sha256": "9e205875b4d59cb940bef42b9511f119b5b40ca1865fb8f30b39e7d10a217f43",
+      "bytes": 154623
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/listed-sound.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/listed-sound.json",
+      "sha256": "b5896298c6f453a614da6506a9a6960abe64825cda6db50c1856a9e4fdc52db0",
+      "bytes": 180906
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/names.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/names.json",
+      "sha256": "c87db1cc626bd1302621f6c40cf9d54ee3797caefc0f77fcce1e1a2cacd6b1cc",
+      "bytes": 166893
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/navigation-1.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/navigation-1.json",
+      "sha256": "8146e212026e2af3b48d61a0691d24fdb44e355b94844ebc7040d17aa1f4c7ff",
+      "bytes": 150559
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/navigation-2.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/navigation-2.json",
+      "sha256": "762a431cc6f67c7094496669ad1f728a60e80a499a5bf52bf9bd46e6ec925e96",
+      "bytes": 87504
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/navigation-3.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/navigation-3.json",
+      "sha256": "c0deb17ee93c13b3a4327b5a0494be56a0f55c07465ad0827e42933db19d149c",
+      "bytes": 127432
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/navigation-4.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/navigation-4.json",
+      "sha256": "132f38b167db2e3e3c454f46989ee8f8b3eef1312f15729f5ff6a690e67e515a",
+      "bytes": 60699
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/navigation-5.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/navigation-5.json",
+      "sha256": "4a0bfc22c482df1ee613ef25a761bdb2d010b7483500ecb38281870547c8a454",
+      "bytes": 114165
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/navigation-6.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/navigation-6.json",
+      "sha256": "79188f6af3b235f95db3739125f02cde164fd0395938af4ffb971ac3142a5abf",
+      "bytes": 80239
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/navigation-7.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/navigation-7.json",
+      "sha256": "993accb9ccc12c1326792beef579ed1e0412d630fc603febeba30a29ce9aec59",
+      "bytes": 93603
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/navigation-8.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/navigation-8.json",
+      "sha256": "2843c022ba6ea2a2b10f27906e0e769267d9f66061de365ad30954c303c7ca16",
+      "bytes": 117420
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/nerve-handling-failed.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/nerve-handling-failed.json",
+      "sha256": "c7c446a86c0e2772fa5788a9a95fdde4ecb79fc2f23eaad55208336415bc8606",
+      "bytes": 145585
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/nerve.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/nerve.json",
+      "sha256": "4feecd79ced96614378ffa1b1790606c4b9a48866f7ebb1ffa6b8f2d46f059c9",
+      "bytes": 141118
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/ordinary-private.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/ordinary-private.json",
+      "sha256": "72841564f677c76c9d0e9368abf884f166abe2db45582b805014ac47eda78aad",
+      "bytes": 145886
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/ordinary-refused.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/ordinary-refused.json",
+      "sha256": "d5412b300721b52752a564cc7f49a54b926f025cf0cd5851d5955c2cdedde381",
+      "bytes": 171374
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/ordinary-shared.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/ordinary-shared.json",
+      "sha256": "da349156bbd20919a20f1131540364e92265083d1cf7992ff0981b6f532734b0",
+      "bytes": 180670
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/routing-cancel-after.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/routing-cancel-after.json",
+      "sha256": "549b9d715062ce8030964a98fa12c6fd9387b6cb853bbfcd4881aee432d4c5cc",
+      "bytes": 183658
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/routing-cancel-before.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/routing-cancel-before.json",
+      "sha256": "e1b794f638e55e509cabb488054ee4818e12a4500732bdfed11f18249239b272",
+      "bytes": 154378
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/routing-declined.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/routing-declined.json",
+      "sha256": "14568aa03ab5550c44a1d9735e417505abb0f15c12832404dba54e6bb257b366",
+      "bytes": 175162
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/routing-held-hatch.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/routing-held-hatch.json",
+      "sha256": "cfad5214c636a578b44456785cf1961cc6af190665ec4be335909cc9c5952d62",
+      "bytes": 164431
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/routing-held-strip.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/routing-held-strip.json",
+      "sha256": "9b6840b200326fbc6622ea2566d5119c6fdbbafe3851de32d39d9932868fa482",
+      "bytes": 185067
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/routing-scarce.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/routing-scarce.json",
+      "sha256": "085801e2adccd64773f3f8df1a26e10dd441e8f12984c1c0f6e672ca590ff774",
+      "bytes": 148069
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/routing-screened.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/routing-screened.json",
+      "sha256": "a11a9568809dad6f4c1699b823a53eff710965d9ad50de86382cbefb28e187d3",
+      "bytes": 190567
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/routing-signed.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/routing-signed.json",
+      "sha256": "4c3afedc47e0e747ed6b592f73384d993f342ef3df924a911e8234b44b81e9f0",
+      "bytes": 163453
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/routing-skipped.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/routing-skipped.json",
+      "sha256": "5e977d778bd2cabf595ff791e1c87150e84b51ca821a4167ad5e1555101afd2b",
+      "bytes": 167452
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/routing-unfinished.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/routing-unfinished.json",
+      "sha256": "6bea5fb68f4e7014e73f90cd5ab2a13d75683ae13994925600429b8128bca787",
+      "bytes": 162964
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/scarce.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/scarce.json",
+      "sha256": "e806e3474b240e595acbdfff4e8b143f87fd8f73fb1082b3e7bbfa1c54631476",
+      "bytes": 166129
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/sequence-badge-scarce.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/sequence-badge-scarce.json",
+      "sha256": "d44863697f46e463fd24736250833079c1bf38cef687923796a0a011a388858e",
+      "bytes": 126469
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/sequence-both-owned-company.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/sequence-both-owned-company.json",
+      "sha256": "8d85e28695b20434c116c7819151db05b5beb03151a519da8d142f3380f4b7ef",
+      "bytes": 94297
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/sequence-face.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/sequence-face.json",
+      "sha256": "21fa99747be9631df29e0ad2d5823bf21681c56d8c18ad9b2042c3efea55961a",
+      "bytes": 151448
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/sequence-paid.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/sequence-paid.json",
+      "sha256": "88229166c755ceb18043141c03757319899556dd2635b8e0167cb2967e8a0ac9",
+      "bytes": 163239
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/sequence-partial-deflected.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/sequence-partial-deflected.json",
+      "sha256": "e931a9ec08599244cab48527fb5e7073f01091b5245f51a490d1a8e35b6c61b7",
+      "bytes": 81989
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/sequence-sold-distance.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/sequence-sold-distance.json",
+      "sha256": "98ae8eb0910026f3c336316cfa0e8b44de79bf1240efa3e119096609b3702701",
+      "bytes": 93608
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/watch-corrected.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/watch-corrected.json",
+      "sha256": "b5759ee3886b3ebc705db79c631de4675c4ebf3794ae73d9b6bbbead70fe9aab",
+      "bytes": 134440
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-runs/watch-private.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-runs/watch-private.json",
+      "sha256": "0225e99a42f0ba72fdfe059a316ffd532398e23f97a84f0b8991660ef36e5c40",
+      "bytes": 126470
+    },
+    {
+      "source": "/tmp/saint-phase21/campaign-reassessment.ts",
+      "archive": "qa/production/campaign-reassessment.ts",
+      "sha256": "1166c615aeff630b6fc4f75d2839a273f0ee992d6f2d07b979fa931b53d8d737",
+      "bytes": 8011
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-acceptance/review.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-review.json",
+      "sha256": "22db33a9f0931f310680a855e5675f8d38da9f599fff43da609a2d64428f3f5e",
+      "bytes": 374177
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-acceptance/all74.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-acceptance/all74.json",
+      "sha256": "9de4b2398649e6180314170c4bfaddef6d8dee2207a2a05e64b2e5e4b6d566ab",
+      "bytes": 191226
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-acceptance/all74.log",
+      "archive": "qa/editorial/campaign-reassessment-phase21-acceptance/all74.log",
+      "sha256": "09bac13d6b2764be8173d98f7637cef69749b18dea55e435c8c1ceb08323e218",
+      "bytes": 593
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-acceptance/prior66.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-acceptance/prior66.json",
+      "sha256": "e4c9a6593da532525dcb5f989f7c9b3c2702ac8c746a127de071f104792bb951",
+      "bytes": 173675
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-acceptance/prior66.log",
+      "archive": "qa/editorial/campaign-reassessment-phase21-acceptance/prior66.log",
+      "sha256": "f134f7247d66e45e507b5dcd06c3164a7ae00854b10e91c15da4d2c23a62c950",
+      "bytes": 269
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-acceptance/source.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-acceptance/source.json",
+      "sha256": "b0332dd62f5605f7ba9b7203846f26ce33b84275eabf1b003e47ee52f8ed69ca",
+      "bytes": 504756
+    },
+    {
+      "source": "/workspace/saint-shard-fix/qa/production/reports/campaign-reassessment-phase21-acceptance/source.log",
+      "archive": "qa/editorial/campaign-reassessment-phase21-acceptance/source.log",
+      "sha256": "3dcbf5cfac45c8f57bf98acf512ec6378e7e82708d7a0b389056cc5df370c47f",
+      "bytes": 477
+    }
+  ]
+}

@@ -1,0 +1,326 @@
+{
+  "revision": "2cc912f55cbf82ce2cffd6d3cb271b5e15a9209f",
+  "runId": 41250870324,
+  "attempt": 1,
+  "conclusion": "cancelled",
+  "reason": "Phone3 browser-dependency setup remained active over35minutes; full same-commit workflow rerun, no test/data/threshold change.",
+  "jobs": [
+    {
+      "id": 124683916825,
+      "name": "Test",
+      "status": "completed",
+      "conclusion": "success",
+      "startedAt": "2026-10-31T23:03:21Z",
+      "completedAt": "2026-10-31T23:09:49Z",
+      "setup": []
+    },
+    {
+      "id": 124685344242,
+      "name": "Browser shard (chromium, 1/4)",
+      "status": "completed",
+      "conclusion": "success",
+      "startedAt": "2026-10-31T23:09:52Z",
+      "completedAt": "2026-10-31T23:22:00Z",
+      "setup": [
+        {
+          "name": "Run npx playwright install --with-deps chromium",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-10-31T23:10:21Z",
+          "completed_at": "2026-10-31T23:10:48Z"
+        }
+      ]
+    },
+    {
+      "id": 124685344256,
+      "name": "Browser shard (firefox, 3/4)",
+      "status": "completed",
+      "conclusion": "success",
+      "startedAt": "2026-10-31T23:09:51Z",
+      "completedAt": "2026-10-31T23:25:41Z",
+      "setup": [
+        {
+          "name": "Run npx playwright install --with-deps firefox",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-10-31T23:10:12Z",
+          "completed_at": "2026-10-31T23:10:43Z"
+        }
+      ]
+    },
+    {
+      "id": 124685344258,
+      "name": "Browser shard (firefox, 2/4)",
+      "status": "completed",
+      "conclusion": "success",
+      "startedAt": "2026-10-31T23:09:51Z",
+      "completedAt": "2026-10-31T23:20:51Z",
+      "setup": [
+        {
+          "name": "Run npx playwright install --with-deps firefox",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-10-31T23:10:09Z",
+          "completed_at": "2026-10-31T23:10:35Z"
+        }
+      ]
+    },
+    {
+      "id": 124685344261,
+      "name": "Browser shard (webkit, 4/4)",
+      "status": "completed",
+      "conclusion": "success",
+      "startedAt": "2026-10-31T23:09:52Z",
+      "completedAt": "2026-10-31T23:24:53Z",
+      "setup": [
+        {
+          "name": "Run npx playwright install --with-deps webkit",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-10-31T23:10:08Z",
+          "completed_at": "2026-10-31T23:11:41Z"
+        }
+      ]
+    },
+    {
+      "id": 124685344264,
+      "name": "Browser shard (chromium, 3/4)",
+      "status": "completed",
+      "conclusion": "success",
+      "startedAt": "2026-10-31T23:09:52Z",
+      "completedAt": "2026-10-31T23:22:06Z",
+      "setup": [
+        {
+          "name": "Run npx playwright install --with-deps chromium",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-10-31T23:10:18Z",
+          "completed_at": "2026-10-31T23:10:45Z"
+        }
+      ]
+    },
+    {
+      "id": 124685344268,
+      "name": "Browser shard (webkit, 3/4)",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "startedAt": "2026-10-31T23:09:52Z",
+      "completedAt": "2026-10-31T23:48:24Z",
+      "setup": [
+        {
+          "name": "Run npx playwright install --with-deps webkit",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-10-31T23:10:11Z",
+          "completed_at": "2026-10-31T23:29:35Z"
+        }
+      ]
+    },
+    {
+      "id": 124685344272,
+      "name": "Browser shard (firefox, 4/4)",
+      "status": "completed",
+      "conclusion": "success",
+      "startedAt": "2026-10-31T23:09:52Z",
+      "completedAt": "2026-10-31T23:26:18Z",
+      "setup": [
+        {
+          "name": "Run npx playwright install --with-deps firefox",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-10-31T23:10:20Z",
+          "completed_at": "2026-10-31T23:11:15Z"
+        }
+      ]
+    },
+    {
+      "id": 124685344280,
+      "name": "Browser shard (webkit, 1/4)",
+      "status": "completed",
+      "conclusion": "success",
+      "startedAt": "2026-10-31T23:09:52Z",
+      "completedAt": "2026-10-31T23:31:58Z",
+      "setup": [
+        {
+          "name": "Run npx playwright install --with-deps webkit",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-10-31T23:10:15Z",
+          "completed_at": "2026-10-31T23:11:32Z"
+        }
+      ]
+    },
+    {
+      "id": 124685344281,
+      "name": "Browser shard (phone, 3/4)",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "startedAt": "2026-10-31T23:09:52Z",
+      "completedAt": "2026-10-31T23:46:56Z",
+      "setup": [
+        {
+          "name": "Run npx playwright install --with-deps chromium",
+          "status": "completed",
+          "conclusion": "cancelled",
+          "started_at": "2026-10-31T23:10:12Z",
+          "completed_at": "2026-10-31T23:46:54Z"
+        }
+      ]
+    },
+    {
+      "id": 124685344312,
+      "name": "Browser shard (webkit, 2/4)",
+      "status": "completed",
+      "conclusion": "success",
+      "startedAt": "2026-10-31T23:09:52Z",
+      "completedAt": "2026-10-31T23:30:55Z",
+      "setup": [
+        {
+          "name": "Run npx playwright install --with-deps webkit",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-10-31T23:10:10Z",
+          "completed_at": "2026-10-31T23:11:15Z"
+        }
+      ]
+    },
+    {
+      "id": 124685344313,
+      "name": "Browser shard (phone, 4/4)",
+      "status": "completed",
+      "conclusion": "success",
+      "startedAt": "2026-10-31T23:09:52Z",
+      "completedAt": "2026-10-31T23:23:21Z",
+      "setup": [
+        {
+          "name": "Run npx playwright install --with-deps chromium",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-10-31T23:10:19Z",
+          "completed_at": "2026-10-31T23:11:04Z"
+        }
+      ]
+    },
+    {
+      "id": 124685344317,
+      "name": "Browser shard (chromium, 4/4)",
+      "status": "completed",
+      "conclusion": "success",
+      "startedAt": "2026-10-31T23:09:52Z",
+      "completedAt": "2026-10-31T23:22:33Z",
+      "setup": [
+        {
+          "name": "Run npx playwright install --with-deps chromium",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-10-31T23:10:19Z",
+          "completed_at": "2026-10-31T23:10:48Z"
+        }
+      ]
+    },
+    {
+      "id": 124685344321,
+      "name": "Browser shard (phone, 1/4)",
+      "status": "completed",
+      "conclusion": "success",
+      "startedAt": "2026-10-31T23:09:52Z",
+      "completedAt": "2026-10-31T23:18:15Z",
+      "setup": [
+        {
+          "name": "Run npx playwright install --with-deps chromium",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-10-31T23:10:13Z",
+          "completed_at": "2026-10-31T23:10:23Z"
+        }
+      ]
+    },
+    {
+      "id": 124685344340,
+      "name": "Browser shard (firefox, 1/4)",
+      "status": "completed",
+      "conclusion": "success",
+      "startedAt": "2026-10-31T23:09:52Z",
+      "completedAt": "2026-10-31T23:26:09Z",
+      "setup": [
+        {
+          "name": "Run npx playwright install --with-deps firefox",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-10-31T23:10:11Z",
+          "completed_at": "2026-10-31T23:11:07Z"
+        }
+      ]
+    },
+    {
+      "id": 124685344348,
+      "name": "Browser shard (chromium, 2/4)",
+      "status": "completed",
+      "conclusion": "success",
+      "startedAt": "2026-10-31T23:09:52Z",
+      "completedAt": "2026-10-31T23:20:22Z",
+      "setup": [
+        {
+          "name": "Run npx playwright install --with-deps chromium",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-10-31T23:10:16Z",
+          "completed_at": "2026-10-31T23:10:42Z"
+        }
+      ]
+    },
+    {
+      "id": 124685344387,
+      "name": "Browser shard (phone, 2/4)",
+      "status": "completed",
+      "conclusion": "success",
+      "startedAt": "2026-10-31T23:09:52Z",
+      "completedAt": "2026-10-31T23:21:07Z",
+      "setup": [
+        {
+          "name": "Run npx playwright install --with-deps chromium",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-10-31T23:10:14Z",
+          "completed_at": "2026-10-31T23:10:25Z"
+        }
+      ]
+    },
+    {
+      "id": 124693320147,
+      "name": "Browser (chromium)",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "startedAt": "2026-10-31T23:48:26Z",
+      "completedAt": "2026-10-31T23:48:43Z",
+      "setup": []
+    },
+    {
+      "id": 124693320185,
+      "name": "Browser (webkit)",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "startedAt": "2026-10-31T23:48:26Z",
+      "completedAt": "2026-10-31T23:48:43Z",
+      "setup": []
+    },
+    {
+      "id": 124693320199,
+      "name": "Browser (firefox)",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "startedAt": "2026-10-31T23:48:26Z",
+      "completedAt": "2026-10-31T23:48:43Z",
+      "setup": []
+    },
+    {
+      "id": 124693320202,
+      "name": "Browser (phone)",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "startedAt": "2026-10-31T23:48:26Z",
+      "completedAt": "2026-10-31T23:48:43Z",
+      "setup": []
+    }
+  ]
+}
