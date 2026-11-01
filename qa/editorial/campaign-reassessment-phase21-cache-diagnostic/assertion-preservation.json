@@ -1,0 +1,7 @@
+{
+  "scope": "Exact byte comparison of the original cache-case body after removing only the new background observer and wait. Every original request/gain/natural-completion/save/cleanup assertion remains identical; no deadline or retry/skip setting changes.",
+  "originalCacheBodySha256": "60d0ca1524bbdde139ec044071faf3b18fee3731fa6219b3944adcb811fbefe4",
+  "afterRemovingSetupOnlySha256": "60d0ca1524bbdde139ec044071faf3b18fee3731fa6219b3944adcb811fbefe4",
+  "identical": true,
+  "newProjectInstances": 4
+}

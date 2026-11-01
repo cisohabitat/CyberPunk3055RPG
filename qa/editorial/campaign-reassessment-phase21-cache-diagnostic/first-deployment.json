@@ -1,0 +1,30 @@
+{
+  "id": "dpl_4ziDaUme6YW7P74UPM1WGFo6DSQo",
+  "revision": "22a52d3fa029b79dc8baf93693bb1a6df591ce19",
+  "status": "READY",
+  "target": "production",
+  "projectId": "prj_JYHAxYL8onO9SFrvFN0i5q3IepIp",
+  "url": "cyberpunk3055rpg-gwid079sp-cfusion2k-7277s-projects.vercel.app",
+  "publicAliasVerified": true,
+  "branchAliasVerified": true,
+  "aliases": [
+    {
+      "alias": "cyberpunk3055rpg.vercel.app",
+      "id": "dpl_4ziDaUme6YW7P74UPM1WGFo6DSQo",
+      "revision": "22a52d3fa029b79dc8baf93693bb1a6df591ce19",
+      "status": "READY",
+      "target": "production",
+      "projectId": "prj_JYHAxYL8onO9SFrvFN0i5q3IepIp",
+      "url": "cyberpunk3055rpg-gwid079sp-cfusion2k-7277s-projects.vercel.app"
+    },
+    {
+      "alias": "cyberpunk3055rpg-git-main-cfusion2k-7277s-projects.vercel.app",
+      "id": "dpl_4ziDaUme6YW7P74UPM1WGFo6DSQo",
+      "revision": "22a52d3fa029b79dc8baf93693bb1a6df591ce19",
+      "status": "READY",
+      "target": "production",
+      "projectId": "prj_JYHAxYL8onO9SFrvFN0i5q3IepIp",
+      "url": "cyberpunk3055rpg-gwid079sp-cfusion2k-7277s-projects.vercel.app"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "paths": [
+    "/audio/connected-scenes-v2/voice-campaign-kerr-899d4ba5ecfb.mp3",
+    "/audio/voice-campaign-kerr-899d4ba5ecfb.mp3",
+    "/audio/connected-scenes-v2/voice-campaign-kerr-899d4ba5ecfb.mp3",
+    "/audio/voice-campaign-kerr-899d4ba5ecfb.mp3"
+  ],
+  "decoded": [
+    "theme-quiet.flac",
+    "voice-campaign-kerr-899d4ba5ecfb.mp3",
+    "ambience-street.flac",
+    "theme-title.flac",
+    "voice-campaign-kerr-899d4ba5ecfb.mp3"
+  ],
+  "levels": [
+    0.6683439016342163,
+    0.6683439016342163
+  ],
+  "expected": 0.6683439016342163,
+  "saveUnchanged": true,
+  "errors": []
+}

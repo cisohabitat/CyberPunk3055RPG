@@ -1,0 +1,68 @@
+{
+  "source": "case/trace.zip",
+  "method": "Lossless extraction of changing audio-review decoded lists/levels from serialized trace results. Not a new recording or claim about native sample rate.",
+  "events": [
+    {
+      "time": 519744.745,
+      "decoded": [
+        "theme-quiet.flac",
+        "voice-campaign-mara-account-3aed03ac8227.mp3"
+      ],
+      "levels": [
+        {
+          "file": "voice-campaign-mara-account-3aed03ac8227.mp3",
+          "gain": 1
+        }
+      ]
+    },
+    {
+      "time": 519863.475,
+      "decoded": [
+        "theme-quiet.flac",
+        "voice-campaign-mara-account-3aed03ac8227.mp3",
+        "ambience-clinic.flac"
+      ],
+      "levels": [
+        {
+          "file": "voice-campaign-mara-account-3aed03ac8227.mp3",
+          "gain": 1
+        }
+      ]
+    },
+    {
+      "time": 520135.304,
+      "decoded": [
+        "theme-quiet.flac",
+        "voice-campaign-mara-account-3aed03ac8227.mp3",
+        "ambience-clinic.flac",
+        "theme-title.flac"
+      ],
+      "levels": [
+        {
+          "file": "voice-campaign-mara-account-3aed03ac8227.mp3",
+          "gain": 1
+        }
+      ]
+    },
+    {
+      "time": 527844.541,
+      "decoded": [
+        "theme-quiet.flac",
+        "voice-campaign-mara-account-3aed03ac8227.mp3",
+        "ambience-clinic.flac",
+        "theme-title.flac",
+        "voice-campaign-mara-account-3aed03ac8227.mp3"
+      ],
+      "levels": [
+        {
+          "file": "voice-campaign-mara-account-3aed03ac8227.mp3",
+          "gain": 1
+        },
+        {
+          "file": "voice-campaign-mara-account-3aed03ac8227.mp3",
+          "gain": 1
+        }
+      ]
+    }
+  ]
+}

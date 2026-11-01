@@ -1,0 +1,154 @@
+{
+  "revision": "22a52d3fa029b79dc8baf93693bb1a6df591ce19",
+  "suite": {
+    "total": 463,
+    "passed": 462,
+    "failed": 1,
+    "retries": 0,
+    "workers": 4
+  },
+  "case": "Mara owned-response cached original replay",
+  "observed": "Voice requests contain preferred404/original200 twice. Trace records both gains1 and decoded order quiet theme, first voice, clinic ambience, title theme, second voice. Assertion assumed cache retention while nonvoice decodes were still pending. Original24MiBcache permits eviction; no runtime or volume policy change is authorized by this diagnostic.",
+  "files": [
+    {
+      "source": "/tmp/saint-phase21-release/public-browser-results/scene-performance-scene-pe-85767-tains-cached-original-level-chromium/trace.zip",
+      "archive": "qa/editorial/campaign-reassessment-phase21-cache-diagnostic/case/trace.zip",
+      "sha256": "81416e22d1ee42870a6cbfddd1fa89e3cde691d6470513d25b4326c0d1644888",
+      "bytes": 5812092
+    },
+    {
+      "source": "/tmp/saint-phase21-release/public-browser-results/scene-performance-scene-pe-85767-tains-cached-original-level-chromium/error-context.md",
+      "archive": "qa/editorial/campaign-reassessment-phase21-cache-diagnostic/case/error-context.md.gz",
+      "sha256": "bf8797f4e00849b08124ad2b798165bed8178392f591d90329bcedcb5f873c7c",
+      "bytes": 4367,
+      "rawSha256": "109474260ebb3dcda0425a1c4beb6556b2f6d06d88e2fbf67890e64a6e8ee54e",
+      "storage": "Lossless gzip preserves the original generated trailing whitespace"
+    },
+    {
+      "source": "/tmp/saint-phase21-release/public-browser-results/scene-performance-scene-pe-85767-tains-cached-original-level-chromium/test-failed-1.png",
+      "archive": "qa/editorial/campaign-reassessment-phase21-cache-diagnostic/case/test-failed-1.png",
+      "sha256": "89741c62f49e60d28732a1e9a27c889fe9dc43f0f2ab9ac55c08052cad0e5759",
+      "bytes": 74069
+    },
+    {
+      "source": "/workspace/saint-shard-fix/tests/scene-performance.spec.ts",
+      "archive": "qa/editorial/campaign-reassessment-phase21-cache-diagnostic/before.spec.ts.txt",
+      "sha256": "f2fd9ef9f1521726527ee6c6e3176ec772d83debc6b236f04648a80f1b033a83",
+      "bytes": 9087
+    },
+    {
+      "source": "/tmp/saint-phase21-release/ci-evidence.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-cache-diagnostic/first-ci.json",
+      "sha256": "5d4a82f936050cae637105558c859ecc2bf3d2398e74bffb8a8ff5ebad429398",
+      "bytes": 4216
+    },
+    {
+      "source": "/tmp/saint-phase21-release/deployment-evidence.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-cache-diagnostic/first-deployment.json",
+      "sha256": "1e6fca46e4a4f8fa4ca1522877280532643a6855e882d3ffc7c82fc35bb28fd4",
+      "bytes": 1107
+    },
+    {
+      "source": "/tmp/saint-phase21-release/public-browser-release.log",
+      "archive": "qa/editorial/campaign-reassessment-phase21-cache-diagnostic/first-public-suite.log.gz",
+      "sha256": "de0fefa6003fc225a8f8e3439f45fba0622c2a9d241d639a74e7dc8609bfc5e8",
+      "rawSha256": "2b1294bd170843c8a3ff64b63b169b40e7e58baf4760db3d5e52a0924c8b7528",
+      "bytes": 9729
+    },
+    {
+      "source": "/tmp/saint-phase21-cache/chromium.log",
+      "archive": "qa/editorial/campaign-reassessment-phase21-cache-diagnostic/chromium.log.gz",
+      "sha256": "29d036debdf7b2a1812ff35034462c7135b7c9de756b214a5aa970725e68c7b8",
+      "rawSha256": "515d6ee50ede3a5948ade5c8b8fd07d5f416670a1d44765d86bf162b4fc13a96",
+      "bytes": 631
+    },
+    {
+      "source": "/tmp/saint-phase21-cache/webkit.log",
+      "archive": "qa/editorial/campaign-reassessment-phase21-cache-diagnostic/webkit.log.gz",
+      "sha256": "9dca69daa80222aa77303747455cff10261f4bdeffdc340d7d7f2a43c50fae98",
+      "rawSha256": "3ebf3ca5b2493787ecfa349060d177b8de905aafc8b3ea9c80d3184f3a3034c0",
+      "bytes": 638
+    },
+    {
+      "source": "/tmp/saint-phase21-cache/types.log",
+      "archive": "qa/editorial/campaign-reassessment-phase21-cache-diagnostic/types.log.gz",
+      "sha256": "f61f27bd17de546264aa58f40f3aafaac7021e0ef69c17f6b1b4cd7664a037ec",
+      "rawSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 20
+    },
+    {
+      "source": "/tmp/saint-phase21-cache/webkit-report.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-cache-diagnostic/webkit-report.json.gz",
+      "sha256": "bc12027c0bf338b96be5d92e13752882b91c6af0260274d6a21e407d7e2a1c23",
+      "rawSha256": "7156411e5ec3fc092864f02157abc3cf6109f4eba9f5619ffc65d5dd4770e862",
+      "bytes": 2449
+    },
+    {
+      "source": "Extracted without changing recorded values; original full trace/report retained",
+      "archive": "qa/editorial/campaign-reassessment-phase21-cache-diagnostic/trace-audio-events.json",
+      "sha256": "6180d8d311c524a79db766a9221b653ad4d5d8f75da659c65b4c3baafdb41f69",
+      "bytes": 1661
+    },
+    {
+      "source": "Extracted without changing recorded values; original full trace/report retained",
+      "archive": "qa/editorial/campaign-reassessment-phase21-cache-diagnostic/webkit-late-cache-observation.json",
+      "sha256": "ee61e2437b23fe779e7278e88079af43337fe6a54cbf2348ddf23ab7dacc6c72",
+      "bytes": 588
+    },
+    {
+      "source": "/tmp/saint-phase21-cache/inventory.json",
+      "archive": "qa/editorial/campaign-reassessment-phase21-cache-diagnostic/inventory.json.gz",
+      "sha256": "5b66c894180871688ec1460fb47a43d5e24f77151e10b5913ae623bfe5151a57",
+      "rawSha256": "1d33db6f5d1497893dc033ea2895e1575e85b9bb1a259bfac756e929fee44737",
+      "bytes": 184354
+    },
+    {
+      "source": "Byte-preservation check of existing cache-case assertions after removing only new setup",
+      "archive": "qa/editorial/campaign-reassessment-phase21-cache-diagnostic/assertion-preservation.json",
+      "sha256": "0d7de8186cc2814860a53a117d4e2db207e48d1a5f92e0010edf6eb4cc2f00bd",
+      "bytes": 509
+    }
+  ],
+  "correction": {
+    "scope": "Tests only: steady-cache tasks await actual gameplay beds and all requested background/menu decodes. Exact original cache-hit path inventory, gains, saves, cleanup, default mixes,24MiBbudget and30-second case deadlines retained. One independent delayed-title/ambience replay regression checks nontrivial fallback trim across actual cache pressure; cached or refetched buffers must match.",
+    "local": {
+      "chromium": 11,
+      "webkit": 11,
+      "workers": 4,
+      "retries": 0,
+      "webkitFlaky": 0,
+      "sourceHead": "22a52d3fa029b79dc8baf93693bb1a6df591ce19",
+      "dirty": true,
+      "chromiumTarget": "Actual public22a deployment with corrected uncommitted tests",
+      "webkitTarget": "Fresh local production server; application trees unchanged from published22a",
+      "localBuildId": "mu0fR5-C4-FTDpkCDIjkO",
+      "typescriptExitCode": 0
+    },
+    "inventory": {
+      "precedingFull": 7308,
+      "currentFull": 7312,
+      "perProject": 1828,
+      "originalPolicySkips": 6,
+      "precedingPublic": 463,
+      "currentPublic": 464
+    },
+    "gradeUnchanged": 9.0,
+    "weightedGradeUnchanged": 8.975,
+    "testSourceSha256": "3bc1588f589a8cf713234691642d514ef337989fe46faf1f8f07a886a6940775"
+  },
+  "inventoryVerified": {
+    "projects": {
+      "chromium": 1828,
+      "phone": 1828,
+      "firefox": 1828,
+      "webkit": 1828
+    },
+    "newCaseInstances": {
+      "chromium": 1,
+      "phone": 1,
+      "firefox": 1,
+      "webkit": 1
+    },
+    "total": 7312
+  }
+}
