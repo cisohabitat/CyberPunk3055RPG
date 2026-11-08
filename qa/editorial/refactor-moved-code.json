@@ -1,0 +1,14 @@
+[
+  {
+    "file": "lib/state-effects.ts",
+    "originalRevision": "dfe09485013f95b5d9adc88afdb1224d6edf5b0b",
+    "movedCodeSha256": "4e109a1222a5988a5ecdeb575b6def07725e7bdd4818fe0cb314ffe14b4d73ab",
+    "byteExact": true
+  },
+  {
+    "file": "lib/scene-sound.ts",
+    "originalRevision": "dfe09485013f95b5d9adc88afdb1224d6edf5b0b",
+    "movedCodeSha256": "d740c297932d89687b7db2b672809a430c0891a19bafc00a216143b473f4e04e",
+    "byteExact": true
+  }
+]

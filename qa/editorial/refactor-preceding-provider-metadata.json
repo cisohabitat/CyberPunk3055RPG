@@ -1,0 +1,154 @@
+{
+  "recordedAt": "2026-11-08T17:26:20.898Z",
+  "scope": "Provider metadata recovered after workspace restoration. This is not the missing Phase21 final public-browser proof or 25 raw campaign reports.",
+  "ci": {
+    "runId": 41273074774,
+    "revision": "dfe09485013f95b5d9adc88afdb1224d6edf5b0b",
+    "status": "completed",
+    "conclusion": "success",
+    "attempt": 1,
+    "url": "https://github.com/cisohabitat/CyberPunk3055RPG/actions/runs/41273074774",
+    "jobs": [
+      {
+        "id": 124749647104,
+        "name": "Test",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124750576317,
+        "name": "Browser shard (chromium, 1/4)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124750576339,
+        "name": "Browser shard (webkit, 2/4)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124750576346,
+        "name": "Browser shard (phone, 2/4)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124750576354,
+        "name": "Browser shard (phone, 3/4)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124750576371,
+        "name": "Browser shard (webkit, 4/4)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124750576376,
+        "name": "Browser shard (firefox, 1/4)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124750576387,
+        "name": "Browser shard (phone, 1/4)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124750576399,
+        "name": "Browser shard (chromium, 3/4)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124750576406,
+        "name": "Browser shard (phone, 4/4)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124750576410,
+        "name": "Browser shard (webkit, 1/4)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124750576412,
+        "name": "Browser shard (firefox, 4/4)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124750576422,
+        "name": "Browser shard (firefox, 2/4)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124750576429,
+        "name": "Browser shard (firefox, 3/4)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124750576434,
+        "name": "Browser shard (chromium, 2/4)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124750576473,
+        "name": "Browser shard (chromium, 4/4)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124750576538,
+        "name": "Browser shard (webkit, 3/4)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124754355966,
+        "name": "Browser (webkit)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124754356000,
+        "name": "Browser (firefox)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124754356033,
+        "name": "Browser (chromium)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124754356038,
+        "name": "Browser (phone)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 124754468488,
+        "name": "Build",
+        "status": "completed",
+        "conclusion": "success"
+      }
+    ]
+  },
+  "deployment": {
+    "id": "dpl_HcP2Yz5egyNoQESnheeTeKxoJNTj",
+    "revision": "dfe09485013f95b5d9adc88afdb1224d6edf5b0b",
+    "state": "READY",
+    "projectId": "prj_JYHAxYL8onO9SFrvFN0i5q3IepIp",
+    "target": "production",
+    "alias": "cyberpunk3055rpg.vercel.app"
+  }
+}

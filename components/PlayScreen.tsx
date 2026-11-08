@@ -44,7 +44,11 @@ import { PivotalScene } from "./PivotalScene";
 import { pivotalScene } from "@/lib/pivotal-scenes";
 import { ORIGINS, STRAIN_MAX, STAT_INFO } from "@/lib/character";
 import { commitChoice, effectPreview, checkResourceCosts, getScene, presentChoices, previewCheck, runDelta, sceneText, type VisibleChoice } from "@/lib/engine";
-import { locationCue, playCue, playSceneCue, sceneSoundPlan, setBed } from "@/lib/sound";
+import { playCue, playSceneCue } from "@/lib/sound";
+import { sceneSoundPlan } from "@/lib/scene-sound";
+import { useSceneBed } from "./useSceneBed";
+import { useSceneReading } from "./useSceneReading";
+import { SceneNarrative } from "./SceneNarrative";
 import { sceneInteractionCue, type SceneCueName } from "@/lib/scene-cues";
 import { rememberEnding } from "@/lib/storage";
 import type { Preferences } from "@/lib/preferences";
@@ -55,8 +59,7 @@ import { MemoryPlate } from "./MemoryPlate";
 import { RouteBoard } from "./RouteBoard";
 import { VoiceLine } from "./VoiceLine";
 import { memoryInteractionCue, visibleDialogue } from "@/lib/memory-media";
-import { visibleCampaignDialogue, spokenDialogueRange, type CampaignDialogue } from "@/lib/campaign-dialogue";
-import { SpokenText } from "./SpokenText";
+import { visibleCampaignDialogue, type CampaignDialogue } from "@/lib/campaign-dialogue";
 import { FieldKitBrief } from "./FieldKitBrief";
 import { FIELD_KITS } from "@/lib/loadout";
 import { TestimonyBrief } from "./TestimonyBrief";
@@ -148,19 +151,14 @@ export function PlayScreen({
   const changes = receipt?.state === state ? receipt.values : {};
   const [delta, setDelta] = useState<string[]>([]);
   const [flash, setFlash] = useState(false);
-  const [shown, setShown] = useState<{ sceneId: string; prose: string; count: number } | null>(null);
   const [speaking, setSpeaking] = useState<CampaignDialogue | null>(null);
   const [reduceMotion, setReduceMotion] = useState(false);
   const [decisionReceipt, setDecisionReceipt] = useState<{ state: GameState; lines: string[] } | null>(null);
   const enteredScene = useRef<string | null>(null);
-  const readingFocus = useRef<{ sceneId: string; index: number } | null>(null);
-  const priorSound = useRef<{ location: string; on: boolean; ending: boolean } | null>(null);
   const queuedSceneCue = useRef<{ state: GameState; name: SceneCueName } | null>(null);
   const archiveFocus = useRef<{ state: GameState; id: string } | null>(null);
   const prose = sceneText(scene, state);
-  const paragraphs = prose.split(/\n\n+/).filter((paragraph) => paragraph.length > 0);
-  const visibleCount = preferences.reading === "all" ? paragraphs.length : Math.min(shown?.sceneId === scene.id && shown.prose === prose ? shown.count : 1, paragraphs.length);
-  const visibleText = paragraphs.slice(0, visibleCount).join("\n\n");
+  const { paragraphs, visibleCount, visibleText, revealParagraphs } = useSceneReading(scene.id, prose, preferences.reading);
   const dialogue = visibleDialogue(scene.id, scene.speaker, visibleText);
   const dialogueQueue = visibleCampaignDialogue(scene.id, scene.speaker, visibleText);
   const recordedChoice = state.pendingCheck ? choices.find((choice) => choice.id === state.pendingCheck?.choiceId) : null;
@@ -168,31 +166,9 @@ export function PlayScreen({
   const voicesEnabled = sound && preferences.voices > 0 && !modalOpen && !sheetOpen && !notebookOpen && !mapOpen && !artworkOpen && !confirmAbandon && !activeChoice;
   const sceneCuesEnabled = sound && preferences.effects > 0 && !modalOpen && !sheetOpen && !notebookOpen && !mapOpen && !artworkOpen && !confirmAbandon && !activeChoice;
   const playing = voicesEnabled && speaking?.scene === scene.id && dialogueQueue.some(line => line.key === speaking.key) ? speaking : null;
-  const spokenRange = playing ? spokenDialogueRange(visibleText, playing) : undefined;
-  let paragraphOffset = 0;
-  const visibleParagraphs = paragraphs.slice(0, visibleCount).map(text => { const offset = paragraphOffset; paragraphOffset += text.length + 2; return { text, offset }; });
-  const quotedRanges = direction ? dialogueQueue.map(line => spokenDialogueRange(visibleText, line)).filter(range => range !== undefined) : [];
-  const narrative = <div className="prose" data-testid="scene-text">
-    {visibleParagraphs.map(({ text, offset }, index) => (
-      <p key={`${scene.id}-${index}`} id={`reading-paragraph-${index}`} tabIndex={-1}
-        className={quotedRanges.some(range => range.end > offset && range.start < offset + text.length) ? "pivotal-dialogue" : undefined}>
-        <SpokenText text={text} offset={offset} range={spokenRange} />
-      </p>
-    ))}
-  </div>;
+  const narrative = <SceneNarrative sceneId={scene.id} paragraphs={paragraphs} visibleCount={visibleCount}
+    visibleText={visibleText} dialogueQueue={dialogueQueue} playing={playing} directed={Boolean(direction)} />;
   const unavailableChoices = choices.filter((choice) => !choice.enabled && !(scene.id === "act2_archive_compare" && CATALOG_ACTIONS.has(choice.id)));
-
-  useEffect(() => {
-    const target = readingFocus.current;
-    if (!target) return;
-    readingFocus.current = null;
-    if (target.sceneId === scene.id) document.getElementById(`reading-paragraph-${target.index}`)?.focus();
-  }, [visibleCount, scene.id]);
-
-  function revealParagraphs(count: number) {
-    readingFocus.current = { sceneId: scene.id, index: visibleCount };
-    setShown({ sceneId: scene.id, prose, count });
-  }
 
   useEffect(() => {
     const media = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -201,14 +177,8 @@ export function PlayScreen({
     return () => media.removeEventListener("change", update);
   }, [preferences.motion]);
 
-  useEffect(() => {
-    setBed(sound, mood, district, undefined, bedFocus);
-    const previous = priorSound.current;
-    if (sound && (!previous?.on || previous.location !== scene.location || Boolean(scene.ending) !== previous.ending)) playCue(locationCue(scene.location, Boolean(scene.ending)));
-    priorSound.current = { location: scene.location, on: preferences.sound, ending: Boolean(scene.ending) };
-  }, [sound, preferences.sound, mood, district, bedFocus, scene.id, scene.location, scene.ending]);
-
-  useEffect(() => () => { setBed(false); }, []);
+  useSceneBed({ sound, preferenceSound: preferences.sound, mood, district, focus: bedFocus,
+    sceneId: scene.id, location: scene.location, ending: scene.ending });
 
   useEffect(() => {
     const queued = queuedSceneCue.current;
@@ -246,10 +216,6 @@ export function PlayScreen({
       rememberEnding(scene.id, scene.endingTitle, scene.finale ? state.items : undefined);
     }
   }, [scene.endingTitle, scene.finale, scene.id, state.items]);
-
-  useEffect(() => {
-    setShown(null);
-  }, [state.sceneId, prose]);
 
   useEffect(() => {
     function onKey(event: KeyboardEvent) {

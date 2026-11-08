@@ -1,0 +1,67 @@
+/** Offline before/after refactor contract. No imports from the application. */
+import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
+import { execFileSync } from "node:child_process";
+import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
+import { dirname, join } from "node:path";
+import { createCharacter, getScene, presentChoices, commitChoice, sceneText } from "../../lib/engine";
+import { visibleCampaignDialogue } from "../../lib/campaign-dialogue";
+import { sceneIllustration, portraitArt } from "../../lib/art";
+import { sceneSoundPlan, locationCue } from "../../lib/sound";
+import { actName } from "../../lib/story/goal";
+import { parseSave } from "../../lib/storage";
+import type { ReplaySpec } from "../../lib/story-replay";
+
+const [output, baselineFile] = process.argv.slice(2);
+assert.ok(output && !existsSync(output), "Provide a fresh output filename; never overwrite evidence");
+const files = (directory: string): string[] => readdirSync(directory, { withFileTypes: true })
+  .flatMap(row => row.isDirectory() ? files(join(directory, row.name)) : [join(directory, row.name)]).sort();
+const sha = (bytes: string | Buffer) => createHash("sha256").update(bytes).digest("hex");
+const routes = files("qa/routes").filter(path => path.endsWith(".json"));
+const campaign = createHash("sha256"), audio = createHash("sha256");
+let visits = 0, reloads = 0;
+for (const file of routes) {
+  const spec = JSON.parse(readFileSync(file, "utf8")) as ReplaySpec;
+  let state = createCharacter(spec.character);
+  for (let step = 0; step <= spec.steps.length; step++) {
+    const scene = getScene(state.sceneId), text = sceneText(scene, state), choices = presentChoices(state, scene);
+    campaign.update(JSON.stringify({ file, step, state, text, choices,
+      voice: visibleCampaignDialogue(scene.id, scene.speaker, text), actor: scene.speaker,
+      art: sceneIllustration(scene.id, state.flags), portrait: portraitArt(scene.speaker, scene.id, state.flags) }) + "\n");
+    audio.update(JSON.stringify({ file, step, plan: sceneSoundPlan(state, scene.location, actName(state)),
+      cue: locationCue(scene.location, Boolean(scene.ending)) }) + "\n");
+    visits++;
+    const action = spec.steps[step];
+    if (!action) break;
+    const choice = choices.find(row => row.id === action.choiceId && row.enabled);
+    assert.ok(choice, `${file}/${step}: legal choice`);
+    state = commitChoice(state, choice, choice.check ? { roll: action.roll! } : undefined).state;
+    if (action.reload) {
+      const restored = parseSave(JSON.stringify(state));
+      assert.deepEqual(restored, state, `${file}/${step}: exact save round trip`);
+      state = restored!;
+      reloads++;
+    }
+  }
+  assert.equal(state.sceneId, spec.expected.sceneId, file);
+}
+const inventory = (paths: string[]) => paths.map(path => ({ path, sha256: sha(readFileSync(path)) }));
+const contract = { routes: routes.length, routeFiles: inventory(routes), visits, reloads,
+  campaignSha256: campaign.digest("hex"), audioPlanSha256: audio.digest("hex"),
+  media: inventory([...files("public/art"), ...files("public/audio")].sort()),
+  manifests: inventory(files("qa/media").filter(path => path.endsWith(".json"))) };
+if (baselineFile) {
+  const baseline = JSON.parse(readFileSync(baselineFile, "utf8"));
+  assert.deepEqual(contract, baseline.contract, "Refactor must preserve every campaign, save, sound plan and media byte");
+}
+const result = { version: 1, recordedAt: new Date().toISOString(),
+  revision: execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8" }).trim(),
+  dirty: Boolean(execFileSync("git", ["status", "--porcelain"], { encoding: "utf8" }).trim()),
+  sourceTrees: Object.fromEntries(["app", "components", "lib", "public", "qa/routes", "qa/media"].map(path =>
+    [path, execFileSync("git", ["rev-parse", `HEAD:${path}`], { encoding: "utf8" }).trim()])),
+  baseline: baselineFile ? { path: baselineFile, sha256: sha(readFileSync(baselineFile)) } : null,
+  contract };
+mkdirSync(dirname(output), { recursive: true });
+writeFileSync(output, JSON.stringify(result, null, 2) + "\n");
+console.log(JSON.stringify({ output, routes: contract.routes, visits, reloads, media: contract.media.length,
+  campaignSha256: contract.campaignSha256, audioPlanSha256: contract.audioPlanSha256, matchesBaseline: Boolean(baselineFile) }));

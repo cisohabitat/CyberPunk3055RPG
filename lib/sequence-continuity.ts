@@ -1,5 +1,5 @@
 import type {GameState} from './types';
-import type {SoundMood,SoundDistrict} from './sound';
+import type {SoundMood,SoundDistrict} from './scene-sound';
 import type {BedFocus} from './pivotal-scenes';
 /** Score direction only. The location's ambience, narration, art and rules remain independent. */
 export const CONTINUITY_SEQUENCES = [

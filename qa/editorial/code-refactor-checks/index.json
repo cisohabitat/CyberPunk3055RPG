@@ -1,0 +1,152 @@
+{
+  "scope": "Candidate checks on dfe0948 with actual dirty refactor metadata. Lossless logs; not hosted CI or post-deployment verification. Browser installation warning retains missing native WebKit host libraries; local focused evidence is Chromium only.",
+  "files": [
+    {
+      "original": "/tmp/saint-refactor/source-tests.log",
+      "path": "qa/editorial/code-refactor-checks/source-tests.log.gz",
+      "bytes": 104404,
+      "sha256": "b839d5e2383778f549011923a6af3db9f2e437dcf93178a3f769d7e2f57e2919",
+      "compressedSha256": "fbf61264a31a18dd47684273ca97e559fe166266fba43cb392136917003c82eb"
+    },
+    {
+      "original": "/tmp/saint-refactor/build.log",
+      "path": "qa/editorial/code-refactor-checks/build.log.gz",
+      "bytes": 1471,
+      "sha256": "f494d2d352b3cc1113d09ffc5a2c54878bb99358684f48e1876e289f5fe709fa",
+      "compressedSha256": "47a12a13d2f77671a67545364f90e829dd89078362d8f349337959adb2976d8d"
+    },
+    {
+      "original": "/tmp/saint-refactor/security.log",
+      "path": "qa/editorial/code-refactor-checks/security.log.gz",
+      "bytes": 92,
+      "sha256": "7dd2335d30e93c8f8665b04b176659a701b6319334edb8bd1a792a1b33740b20",
+      "compressedSha256": "76c702f9c0f76d5659de193b40b9e7814d19f796cfb129f258963b47f7db17b1"
+    },
+    {
+      "original": "/tmp/saint-refactor/balance-audit.log",
+      "path": "qa/editorial/code-refactor-checks/balance-audit.log.gz",
+      "bytes": 221,
+      "sha256": "5b6dfb9c2037720dabb6fa68b238b057f947742f46cec5bdd72721be51628d83",
+      "compressedSha256": "0b7f0bba2d442ae69b4e9dcba4928b7b7f29a58c3a95dc29e89e2a46c86e28cd"
+    },
+    {
+      "original": "/tmp/saint-refactor/balance-missions.log",
+      "path": "qa/editorial/code-refactor-checks/balance-missions.log.gz",
+      "bytes": 182,
+      "sha256": "6d9808f3d14543497f0431651baad559a866c9105e9c7bf14093f039918d541a",
+      "compressedSha256": "2b781aca28d4bdb40768e4f919b35aa159e2ce1f87b49aaad57a4f4db03de966"
+    },
+    {
+      "original": "/tmp/saint-refactor/balance-campaigns.log",
+      "path": "qa/editorial/code-refactor-checks/balance-campaigns.log.gz",
+      "bytes": 228,
+      "sha256": "f447518eb7c728946233366a767a3b2d4c5c0d56a2eaf4b58bdbeb661ac93f19",
+      "compressedSha256": "b2b565bddc0618991718e2d98259a3bd9d186388644a8fa34ee8757c965aa2aa"
+    },
+    {
+      "original": "/tmp/saint-refactor/balance-overlap.log",
+      "path": "qa/editorial/code-refactor-checks/balance-overlap.log.gz",
+      "bytes": 376,
+      "sha256": "5344df75fc6a9317aac67a9173d90d8524d885531c2bc1783b19f5b1ca46f2a2",
+      "compressedSha256": "95620f7640a1ebabb6b2b4fdbb35c28b8106b923f96fb2506e5176f3d008b6f1"
+    },
+    {
+      "original": "/tmp/saint-refactor/catalog.log",
+      "path": "qa/editorial/code-refactor-checks/catalog.log.gz",
+      "bytes": 259,
+      "sha256": "fde85f56789509990cd78cb6a8876a6851d1861d6dd98fc6e3b1fbbb3341d60d",
+      "compressedSha256": "a16ef124f72107611bc30c98f20e612f300402b6ae194fbdea197829d7896d4e"
+    },
+    {
+      "original": "/tmp/saint-refactor/loading.log",
+      "path": "qa/editorial/code-refactor-checks/loading.log.gz",
+      "bytes": 2123,
+      "sha256": "d88bc1d360617dad3354d8d357b3912bebac7a538fdb24cd7eba85382870b151",
+      "compressedSha256": "8fd418e86b26300a7bb5ec3bf0f1c43658b58ee83d93787a9522efab5974ee77"
+    },
+    {
+      "original": "/tmp/saint-refactor/browser-focused.log",
+      "path": "qa/editorial/code-refactor-checks/browser-focused.log.gz",
+      "bytes": 21210,
+      "sha256": "6bc46650fad7bb39d542c5230446d62a222c55ccb0f54dfe5e3332fc50e292a6",
+      "compressedSha256": "f7b21e47e25d46352af34b8e0475d81a6f11468903e3bcb865d0cfdbc49aa4ea"
+    },
+    {
+      "original": "/tmp/saint-refactor/types.log",
+      "path": "qa/editorial/code-refactor-checks/types.log.gz",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compressedSha256": "f61f27bd17de546264aa58f40f3aafaac7021e0ef69c17f6b1b4cd7664a037ec"
+    },
+    {
+      "original": "/tmp/saint-refactor/types-final.log",
+      "path": "qa/editorial/code-refactor-checks/types-final.log.gz",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compressedSha256": "f61f27bd17de546264aa58f40f3aafaac7021e0ef69c17f6b1b4cd7664a037ec"
+    },
+    {
+      "original": "/tmp/saint-refactor/preservation.log",
+      "path": "qa/editorial/code-refactor-checks/preservation.log.gz",
+      "bytes": 301,
+      "sha256": "6420fc3af2a517f9d15c15f2cbd168ad6428ed2f79edd99ef8b3871998838680",
+      "compressedSha256": "43b3708fc15caab3bda81d9507ba9a8668a8cc3b6e09ec9b7a645242abce90ea"
+    },
+    {
+      "original": "/tmp/saint-refactor/final-preservation.log",
+      "path": "qa/editorial/code-refactor-checks/final-preservation.log.gz",
+      "bytes": 307,
+      "sha256": "ed3903f374f6002c11a5c36eed4d1fa8a642053676c0c2350230a81b0646b805",
+      "compressedSha256": "ce8af188b5559a8d90582523975ce2b968c19dc5425ff40314a18aa2424b6fc1"
+    },
+    {
+      "original": "/tmp/saint-refactor/browser-inventory.json",
+      "path": "qa/editorial/code-refactor-checks/browser-inventory.json.gz",
+      "bytes": 4596041,
+      "sha256": "f11d48faa68405d3e4f3ed0e1d59c6c56c2b1fae433a290709f25e865683c253",
+      "compressedSha256": "77b739cdcc5a9623d1b759ef11fb21c8155dc8773e6b8ff2938b1549a5ba458a"
+    },
+    {
+      "original": "/tmp/saint-refactor/browser-install.log",
+      "path": "qa/editorial/code-refactor-checks/browser-install.log.gz",
+      "bytes": 12929,
+      "sha256": "fc07474837473f1f87e480148631502e1523e060d70c0854feaea44e2858c80b",
+      "compressedSha256": "aa82cac9d58796f15385c551a162a898ce25c481756120cac3453bb9b0ff8ae5"
+    },
+    {
+      "original": "/tmp/saint-refactor/public-inventory.json",
+      "path": "qa/editorial/code-refactor-checks/public-inventory.json.gz",
+      "bytes": 306443,
+      "sha256": "03d452de6f157fba663a8bf69cd6b71ede4e796e18a59083d059302be5aed743",
+      "compressedSha256": "675c0d5330242af6d50f443783329872707997fd496e75ddad949d54ee29d905"
+    },
+    {
+      "original": "/tmp/saint-refactor/types-acceptance.log",
+      "path": "qa/editorial/code-refactor-checks/types-acceptance.log.gz",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compressedSha256": "f61f27bd17de546264aa58f40f3aafaac7021e0ef69c17f6b1b4cd7664a037ec"
+    },
+    {
+      "original": "/tmp/saint-refactor/campaigns.log",
+      "path": "qa/editorial/code-refactor-checks/campaigns.log.gz",
+      "bytes": 1893,
+      "sha256": "c7a1a4a20bd968010c13da9027a213379bef056610bdcaaabdec7f0720160205",
+      "compressedSha256": "6c361a854fb83c9da59aa949cadeab2f8f9e600dfea2e4f58315c53b0b517e54"
+    },
+    {
+      "original": "/tmp/saint-refactor/campaign-watcher.log",
+      "path": "qa/editorial/code-refactor-checks/campaign-watcher.log.gz",
+      "bytes": 26,
+      "sha256": "d82a374fee6f33a94511855cb1560c1e80e40d72dfa5a18dad6b516e387772f3",
+      "compressedSha256": "9de6b88ac44c00894e807aa0258bc9928b06c1d39196eb110406a7208ab3e4f5"
+    },
+    {
+      "original": "/tmp/saint-refactor/campaign-acceptance.log",
+      "path": "qa/editorial/code-refactor-checks/campaign-acceptance.log.gz",
+      "bytes": 208,
+      "sha256": "a32894346df32a31f265cdaeb187ce3b229acb633c10cd4e9ac5c60be5ba3620",
+      "compressedSha256": "dcc657792807245b8fa548d58ae76e00c1b11880adcaa663329dd91e57341fd7"
+    }
+  ]
+}

@@ -1,9 +1,10 @@
+import { applyEffect } from "./state-effects";
+export { applyEffect } from "./state-effects";
 import { consequentialText, consequentialChoices } from './consequential-methods';
 import { dramaticBeatsText, dramaticBeatsChoices } from './dramatic-beats';
 import { seraShiftChoices, seraShiftText } from './sera-shift';
 import { COMPLICATIONS, FACTIONS, FACTION_INFO, ORIGINS, POINTS, STAT_CAP, STATS, STAT_INFO, STRAIN_MAX, isValidName, startingFactions } from "./character";
 import { ITEMS } from "./items";
-import { mergeJournal } from "./journal";
 import { SCENES } from "./story";
 import { encounteredCast } from "./story/cast";
 import { caseFileChoices } from "./case-file";
@@ -22,19 +23,11 @@ import type {
   Choice,
   ComplicationId,
   Effect,
-  EffectSpec,
   GameState,
   OriginId,
   Scene,
   StatId,
 } from "./types";
-
-const FACTION_MIN = -3;
-const FACTION_MAX = 5;
-
-function clampFaction(value: number): number {
-  return Math.max(FACTION_MIN, Math.min(FACTION_MAX, value));
-}
 
 export type VisibleChoice = Choice & { enabled: boolean; disabledReason?: string };
 
@@ -137,31 +130,6 @@ export function createCharacter(input: {
     log: [],
     sceneId: input.startWithPrologue ? "opening_city" : "stall",
   };
-}
-
-export function applyEffect(state: GameState, spec?: EffectSpec): GameState {
-  if (!spec) return state;
-  const effect: Effect = typeof spec === "function" ? spec(state) : spec;
-  const creds = Math.max(0, state.creds + (effect.creds ?? 0));
-  const strain = Math.max(0, Math.min(STRAIN_MAX, state.strain + (effect.strain ?? 0)));
-  const items = [...state.items];
-  for (const id of effect.itemsRemove ?? []) {
-    const index = items.indexOf(id);
-    if (index >= 0) items.splice(index, 1);
-  }
-  for (const id of effect.itemsAdd ?? []) {
-    if (!items.includes(id)) items.push(id);
-  }
-  const flags = { ...state.flags };
-  for (const flag of effect.flagsOff ?? []) delete flags[flag];
-  for (const flag of effect.flags ?? []) flags[flag] = true;
-  const journal = mergeJournal(state.journal, effect.journal);
-  const factions = { ...state.factions };
-  for (const faction of FACTIONS) {
-    const delta = effect.factions?.[faction];
-    if (delta) factions[faction] = clampFaction((factions[faction] ?? 0) + delta);
-  }
-  return { ...state, creds, strain, items, flags, journal, factions };
 }
 
 function choiceHidden(state: GameState, choice: Choice): boolean {
